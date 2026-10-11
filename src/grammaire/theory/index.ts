@@ -1,5 +1,6 @@
 import type { GrammaireTheoryDoc } from '../types'
 import { sePresenterDocs } from './se-presenter'
+import { presentDocs } from './present'
 import { entrerContactDocs } from './entrer-contact'
 import { questionsDocs } from './questions'
 import { activiteDocs } from './activite'
@@ -20,6 +21,7 @@ import { aideDocs } from './aide'
 
 export const GRAMMAIRE_THEORY_DOCS: GrammaireTheoryDoc[] = [
   ...sePresenterDocs,
+  ...presentDocs,
   ...entrerContactDocs,
   ...questionsDocs,
   ...activiteDocs,

@@ -66,4 +66,42 @@ export const questionsDocs: GrammaireTheoryDoc[] = [
     { kind: 'note', text: 'Attention ! Regarde le genre du nom : activité → quelles activités.' },
     ],
   },
+  {
+    id: 'c4',
+    typeId: 'gram-c4-theorie',
+    index: 4,
+    title: 'La phrase exclamative',
+    topic: 'gram-questions',
+    public: 'A1 / A2',
+    objectif: 'Former une phrase exclamative simple.',
+    blocks: [
+      { kind: 'heading', text: 'La phrase exclamative' },
+      { kind: 'paragraph', text: 'J’exprime un sentiment fort.' },
+      { kind: 'heading', text: 'Je regarde', sub: true },
+      {
+        kind: 'rule',
+        text: 'Exemple',
+        examples: [
+          { correct: 'Quel beau jour !' },
+          { correct: 'Comme c’est bon !' },
+          { correct: 'Qu’il fait froid !' },
+        ],
+      },
+      { kind: 'heading', text: 'J’explique', sub: true },
+      { kind: 'paragraph', text: 'Souvent avec quel / quelle / quels / quelles + nom.' },
+      { kind: 'paragraph', text: 'Aussi avec comme ou que + phrase.' },
+      { kind: 'paragraph', text: 'À l’écrit, j’utilise le point d’exclamation !' },
+      { kind: 'note', text: 'Je retiens : quel + nom. Comme / que + phrase.' },
+      {
+        kind: 'table',
+        headers: ['Forme', 'Exemple'],
+        rows: [
+          ['quel + nom', 'Quelle surprise !'],
+          ['comme…', 'Comme tu es gentil !'],
+          ['que…', 'Que c’est difficile !'],
+        ],
+      },
+      { kind: 'note', text: 'Attention ! Accorde quel avec le nom : quel jour, quelle idée.' },
+    ],
+  }
 ]

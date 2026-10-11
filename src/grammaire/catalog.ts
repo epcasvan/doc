@@ -5,6 +5,7 @@ export const GRAMMAIRE_DOMAIN = 'grammaire' as const
 
 export const GRAMMAIRE_TOPICS: Topic[] = [
   { id: 'gram-se-presenter', label: 'Se présenter', domain: 'grammaire' },
+  { id: 'gram-present', label: 'Conjuguer au présent', domain: 'grammaire' },
   { id: 'gram-entrer-contact', label: 'Entrer en contact', domain: 'grammaire' },
   { id: 'gram-questions', label: 'Poser une question', domain: 'grammaire' },
   { id: 'gram-activite', label: 'Parler d’une activité', domain: 'grammaire' },
@@ -99,6 +100,70 @@ export const GRAMMAIRE_EXERCISE_TYPES: ExerciseType[] = [
     preferredColumns: 1,
   },
   {
+    id: 'gram-m1-theorie',
+    topic: 'gram-present',
+    label: 'Les pronoms sujets',
+    description: 'Théorie FALC — Choisir le pronom sujet. Exercices à venir.',
+    instruction: 'Lisez la théorie.',
+    visual: 'texte',
+    preferredColumns: 1,
+  },
+  {
+    id: 'gram-m2-theorie',
+    topic: 'gram-present',
+    label: 'Le verbe être',
+    description: 'Théorie FALC — Conjuguer être au présent. Exercices à venir.',
+    instruction: 'Lisez la théorie.',
+    visual: 'texte',
+    preferredColumns: 1,
+  },
+  {
+    id: 'gram-m3-theorie',
+    topic: 'gram-present',
+    label: 'Le verbe avoir',
+    description: 'Théorie FALC — Conjuguer avoir au présent. Exercices à venir.',
+    instruction: 'Lisez la théorie.',
+    visual: 'texte',
+    preferredColumns: 1,
+  },
+  {
+    id: 'gram-m4-theorie',
+    topic: 'gram-present',
+    label: 'Les verbes en -er',
+    description: 'Théorie FALC — Conjuguer les verbes en -er. Exercices à venir.',
+    instruction: 'Lisez la théorie.',
+    visual: 'texte',
+    preferredColumns: 1,
+  },
+  {
+    id: 'gram-m5-theorie',
+    topic: 'gram-present',
+    label: 'Les verbes en -er particuliers',
+    description: 'Théorie FALC — Cas particuliers des verbes en -er. Exercices à venir.',
+    instruction: 'Lisez la théorie.',
+    visual: 'texte',
+    preferredColumns: 1,
+  },
+  {
+    id: 'gram-m6-theorie',
+    topic: 'gram-present',
+    label: 'Les verbes en -ir',
+    description: 'Théorie FALC — Modèles des verbes en -ir. Exercices à venir.',
+    instruction: 'Lisez la théorie.',
+    visual: 'texte',
+    preferredColumns: 1,
+  },
+  {
+    id: 'gram-m7-theorie',
+    topic: 'gram-present',
+    label: 'Les verbes en -re et -oir',
+    description: 'Théorie FALC — Modèles fréquents en -re et -oir. Exercices à venir.',
+    instruction: 'Lisez la théorie.',
+    visual: 'texte',
+    preferredColumns: 1,
+  },
+
+  {
     id: 'gram-b1-theorie',
     topic: 'gram-entrer-contact',
     label: 'Tu et vous',
@@ -153,6 +218,16 @@ export const GRAMMAIRE_EXERCISE_TYPES: ExerciseType[] = [
     preferredColumns: 1,
   },
   {
+    id: 'gram-c4-theorie',
+    topic: 'gram-questions',
+    label: 'La phrase exclamative',
+    description: 'Théorie FALC — Former une phrase exclamative. Exercices à venir.',
+    instruction: 'Lisez la théorie.',
+    visual: 'texte',
+    preferredColumns: 1,
+  },
+
+  {
     id: 'gram-d1-theorie',
     topic: 'gram-activite',
     label: 'Faire une activité',
@@ -188,6 +263,25 @@ export const GRAMMAIRE_EXERCISE_TYPES: ExerciseType[] = [
     visual: 'texte',
     preferredColumns: 1,
   },
+  {
+    id: 'gram-e6-theorie',
+    topic: 'gram-espace',
+    label: 'Autres prépositions et adverbes de lieu',
+    description: 'Théorie FALC — Situer avec ici, devant, près de… Exercices à venir.',
+    instruction: 'Lisez la théorie.',
+    visual: 'texte',
+    preferredColumns: 1,
+  },
+  {
+    id: 'gram-e7-theorie',
+    topic: 'gram-espace',
+    label: 'Les articles contractés (lieu)',
+    description: 'Théorie FALC — Former au, aux, du, des. Exercices à venir.',
+    instruction: 'Lisez la théorie.',
+    visual: 'texte',
+    preferredColumns: 1,
+  },
+
   {
     id: 'gram-e2-theorie',
     topic: 'gram-temps',
@@ -306,6 +400,34 @@ export const GRAMMAIRE_EXERCISE_TYPES: ExerciseType[] = [
     preferredColumns: 1,
   },
   {
+    id: 'gram-f12-theorie',
+    topic: 'gram-decrire',
+    label: 'La place de l’adjectif',
+    description: 'Théorie FALC — Placer l’adjectif avant ou après le nom. Exercices à venir.',
+    instruction: 'Lisez la théorie.',
+    visual: 'texte',
+    preferredColumns: 1,
+  },
+  {
+    id: 'gram-f13-theorie',
+    topic: 'gram-decrire',
+    label: 'Le superlatif',
+    description: 'Théorie FALC — Dire le plus / le moins. Exercices à venir.',
+    instruction: 'Lisez la théorie.',
+    visual: 'texte',
+    preferredColumns: 1,
+  },
+  {
+    id: 'gram-f14-theorie',
+    topic: 'gram-decrire',
+    label: 'Comparer un nom ou un verbe',
+    description: 'Théorie FALC — Comparer avec plus de / autant. Exercices à venir.',
+    instruction: 'Lisez la théorie.',
+    visual: 'texte',
+    preferredColumns: 1,
+  },
+
+  {
     id: 'gram-f10-theorie',
     topic: 'gram-conseiller',
     label: 'Devoir et pouvoir au conditionnel',
@@ -369,6 +491,16 @@ export const GRAMMAIRE_EXERCISE_TYPES: ExerciseType[] = [
     preferredColumns: 1,
   },
   {
+    id: 'gram-g6-theorie',
+    topic: 'gram-aliments',
+    label: 'Les articles contractés (quantité et lieu)',
+    description: 'Théorie FALC — Utiliser au, du, des hors du partitif. Exercices à venir.',
+    instruction: 'Lisez la théorie.',
+    visual: 'texte',
+    preferredColumns: 1,
+  },
+
+  {
     id: 'gram-h1-theorie',
     topic: 'gram-passe',
     label: 'Le passé composé (idée)',
@@ -413,6 +545,43 @@ export const GRAMMAIRE_EXERCISE_TYPES: ExerciseType[] = [
     visual: 'texte',
     preferredColumns: 1,
   },
+  {
+    id: 'gram-h6-theorie',
+    topic: 'gram-passe',
+    label: 'Les verbes à double auxiliaire',
+    description: 'Théorie FALC — Choisir être ou avoir selon le sens. Exercices à venir.',
+    instruction: 'Lisez la théorie.',
+    visual: 'texte',
+    preferredColumns: 1,
+  },
+  {
+    id: 'gram-h7-theorie',
+    topic: 'gram-passe',
+    label: 'Les verbes pronominaux au passé composé',
+    description: 'Théorie FALC — Conjuguer un pronominal au passé composé. Exercices à venir.',
+    instruction: 'Lisez la théorie.',
+    visual: 'texte',
+    preferredColumns: 1,
+  },
+  {
+    id: 'gram-h8-theorie',
+    topic: 'gram-passe',
+    label: 'Imparfait ou passé composé ?',
+    description: 'Théorie FALC — Choisir imparfait ou passé composé. Exercices à venir.',
+    instruction: 'Lisez la théorie.',
+    visual: 'texte',
+    preferredColumns: 1,
+  },
+  {
+    id: 'gram-h9-theorie',
+    topic: 'gram-passe',
+    label: 'L’accord du participe passé',
+    description: 'Théorie FALC — Accorder le participe passé. Exercices à venir.',
+    instruction: 'Lisez la théorie.',
+    visual: 'texte',
+    preferredColumns: 1,
+  },
+
   {
     id: 'gram-i1-theorie',
     topic: 'gram-pronoms',
@@ -477,6 +646,25 @@ export const GRAMMAIRE_EXERCISE_TYPES: ExerciseType[] = [
     preferredColumns: 1,
   },
   {
+    id: 'gram-i8-theorie',
+    topic: 'gram-pronoms',
+    label: 'Le pronom relatif dont',
+    description: 'Théorie FALC — Utiliser dont. Exercices à venir.',
+    instruction: 'Lisez la théorie.',
+    visual: 'texte',
+    preferredColumns: 1,
+  },
+  {
+    id: 'gram-i9-theorie',
+    topic: 'gram-pronoms',
+    label: 'Les pronoms relatifs composés',
+    description: 'Théorie FALC — Utiliser lequel, auquel… Exercices à venir.',
+    instruction: 'Lisez la théorie.',
+    visual: 'texte',
+    preferredColumns: 1,
+  },
+
+  {
     id: 'gram-j1-theorie',
     topic: 'gram-action',
     label: 'Le présent progressif',
@@ -522,6 +710,34 @@ export const GRAMMAIRE_EXERCISE_TYPES: ExerciseType[] = [
     preferredColumns: 1,
   },
   {
+    id: 'gram-o1-theorie',
+    topic: 'gram-avenir',
+    label: 'Futur proche ou futur simple ?',
+    description: 'Théorie FALC — Choisir entre futur proche et futur simple. Exercices à venir.',
+    instruction: 'Lisez la théorie.',
+    visual: 'texte',
+    preferredColumns: 1,
+  },
+  {
+    id: 'gram-o2-theorie',
+    topic: 'gram-avenir',
+    label: 'Le futur antérieur',
+    description: 'Théorie FALC — Action future avant une autre. Exercices à venir.',
+    instruction: 'Lisez la théorie.',
+    visual: 'texte',
+    preferredColumns: 1,
+  },
+  {
+    id: 'gram-o3-theorie',
+    topic: 'gram-avenir',
+    label: 'L’hypothèse sur le futur',
+    description: 'Théorie FALC — Si + présent pour l’avenir. Exercices à venir.',
+    instruction: 'Lisez la théorie.',
+    visual: 'texte',
+    preferredColumns: 1,
+  },
+
+  {
     id: 'gram-j6-theorie',
     topic: 'gram-faits',
     label: 'La forme passive',
@@ -557,6 +773,16 @@ export const GRAMMAIRE_EXERCISE_TYPES: ExerciseType[] = [
     visual: 'texte',
     preferredColumns: 1,
   },
+  {
+    id: 'gram-j10-theorie',
+    topic: 'gram-faits',
+    label: 'Le conditionnel passé',
+    description: 'Théorie FALC — Regret ou hypothèse passée. Exercices à venir.',
+    instruction: 'Lisez la théorie.',
+    visual: 'texte',
+    preferredColumns: 1,
+  },
+
   {
     id: 'gram-k1-theorie',
     topic: 'gram-argumenter',
@@ -657,6 +883,25 @@ export const GRAMMAIRE_EXERCISE_TYPES: ExerciseType[] = [
     preferredColumns: 1,
   },
   {
+    id: 'gram-k12-theorie',
+    topic: 'gram-exprimer',
+    label: 'Le subjonctif passé',
+    description: 'Théorie FALC — Former le subjonctif passé. Exercices à venir.',
+    instruction: 'Lisez la théorie.',
+    visual: 'texte',
+    preferredColumns: 1,
+  },
+  {
+    id: 'gram-k13-theorie',
+    topic: 'gram-exprimer',
+    label: 'Subjonctif ou indicatif ?',
+    description: 'Théorie FALC — Choisir subjonctif ou indicatif. Exercices à venir.',
+    instruction: 'Lisez la théorie.',
+    visual: 'texte',
+    preferredColumns: 1,
+  },
+
+  {
     id: 'gram-l1-theorie',
     topic: 'gram-aide',
     label: 'L’apostrophe',
@@ -755,14 +1000,48 @@ export const GRAMMAIRE_EXERCISE_TYPES: ExerciseType[] = [
     visual: 'texte',
     preferredColumns: 1,
   },
+  {
+    id: 'gram-l12-theorie',
+    topic: 'gram-aide',
+    label: 'Les noms composés',
+    description: 'Théorie FALC — Pluriel des noms composés. Exercices à venir.',
+    instruction: 'Lisez la théorie.',
+    visual: 'texte',
+    preferredColumns: 1,
+  },
+  {
+    id: 'gram-l13-theorie',
+    topic: 'gram-aide',
+    label: 'Les adverbes en -ment',
+    description: 'Théorie FALC — Former un adverbe en -ment. Exercices à venir.',
+    instruction: 'Lisez la théorie.',
+    visual: 'texte',
+    preferredColumns: 1,
+  },
+  {
+    id: 'gram-l14-theorie',
+    topic: 'gram-aide',
+    label: 'Les adverbes d’intensité',
+    description: 'Théorie FALC — Renforcer ou atténuer. Exercices à venir.',
+    instruction: 'Lisez la théorie.',
+    visual: 'texte',
+    preferredColumns: 1,
+  },
+
 ]
 
 /** Vérifie la cohérence catalogue ↔ banques théorie. */
 export function assertGrammaireCatalog(): void {
   const typeIds = new Set(GRAMMAIRE_EXERCISE_TYPES.map((t) => t.id))
+  const docIds = new Set(GRAMMAIRE_THEORY_DOCS.map((d) => d.typeId))
   for (const doc of GRAMMAIRE_THEORY_DOCS) {
     if (!typeIds.has(doc.typeId)) {
       throw new Error(`Théorie sans type catalogue: ${doc.typeId}`)
+    }
+  }
+  for (const type of GRAMMAIRE_EXERCISE_TYPES) {
+    if (!docIds.has(type.id)) {
+      throw new Error(`Type catalogue sans théorie: ${type.id}`)
     }
   }
 }

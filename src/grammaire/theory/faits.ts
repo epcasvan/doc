@@ -87,4 +87,41 @@ export const faitsDocs: GrammaireTheoryDoc[] = [
     { kind: 'note', text: 'Attention ! Pas de conditionnel juste après si.' },
     ],
   },
+  {
+    id: 'j10',
+    typeId: 'gram-j10-theorie',
+    index: 5,
+    title: 'Le conditionnel passé',
+    topic: 'gram-faits',
+    public: 'B1',
+    objectif: 'Exprimer un regret ou une hypothèse passée.',
+    blocks: [
+      { kind: 'heading', text: 'Le conditionnel passé' },
+      { kind: 'paragraph', text: 'Je parle d’une action qui n’a pas eu lieu.' },
+      { kind: 'heading', text: 'Je regarde', sub: true },
+      {
+        kind: 'rule',
+        text: 'Exemple',
+        examples: [
+          { correct: 'J’aurais aimé venir.' },
+          { correct: 'Si j’avais su, je serais resté.' },
+        ],
+      },
+      { kind: 'heading', text: 'J’explique', sub: true },
+      { kind: 'paragraph', text: 'Conditionnel passé = avoir / être au conditionnel présent + participe.' },
+      { kind: 'paragraph', text: 'Souvent un regret, un reproche, ou une hypothèse irréelle passée.' },
+      { kind: 'paragraph', text: 'Avec si : si + plus-que-parfait → conditionnel passé.' },
+      { kind: 'note', text: 'Je retiens : j’aurais / je serais + participe.' },
+      {
+        kind: 'table',
+        headers: ['Forme', 'Exemple'],
+        rows: [
+          ['j’aurais + participe', 'j’aurais mangé'],
+          ['elle serait + participe', 'elle serait partie'],
+          ['nous aurions + participe', 'nous aurions compris'],
+        ],
+      },
+      { kind: 'note', text: 'Attention ! Même auxiliaire qu’au passé composé.' },
+    ],
+  },
 ]

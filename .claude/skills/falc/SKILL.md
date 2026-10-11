@@ -70,7 +70,7 @@ Catalogue et contenu FR : `src/grammaire/` (thèmes SCAI + fiches théorie FALC)
 Les **exercices** liés à chaque thème seront ajoutés ensuite (mêmes topics, nouveaux types).  
 **Traductions** : seulement après validation du français (§7).
 
-Repère thèmes : Se présenter → Entrer en contact → Questions → Activité → Espace → Temps → Demander → Décrire → Conseiller → Aliments → Passé → Pronoms → Action → Avenir → Faits divers → Argumenter → Exprimer → Aide-mémoire.
+Repère thèmes : Se présenter → Conjuguer au présent → Entrer en contact → Questions → Activité → Espace → Temps → Demander → Décrire → Conseiller → Aliments → Passé → Pronoms → Action → Avenir → Faits divers → Argumenter → Exprimer → Aide-mémoire.
 
 ---
 
