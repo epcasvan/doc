@@ -108,20 +108,34 @@ function parseDomainList(raw: string | undefined, fallback: Domain[]): Domain[] 
   return domains.length > 0 ? domains : [...fallback]
 }
 
-/** Domaines FULL / PARTIAL : jamais TCF / TCM CSC / TCM CFR / TCM (réservés admin). */
+/**
+ * Domaines FULL / PARTIAL.
+ * - **full** : toujours tous les domaines réguliers du catalogue (alphabetisation,
+ *   grammaire, acm…), même si `VITE_ACCESS_DOMAINS_FULL` est une ancienne liste
+ *   incomplète. Jamais TCF / TCM / TCM CSC / TCM CFR.
+ * - **partial** : liste env (défaut algèbre + géométrie) ; admin-only filtrés.
+ */
 function domainsFromEnv(account: 'full' | 'partial'): Domain[] {
-  const list =
-    account === 'full'
-      ? parseDomainList(import.meta.env.VITE_ACCESS_DOMAINS_FULL, [...REGULAR_DOMAIN_IDS])
-      : parseDomainList(import.meta.env.VITE_ACCESS_DOMAINS_PARTIAL, [
-          'algèbre',
-          'géométrie',
-        ])
+  if (account === 'full') {
+    return [...REGULAR_DOMAIN_IDS]
+  }
+  const list = parseDomainList(import.meta.env.VITE_ACCESS_DOMAINS_PARTIAL, [
+    'algèbre',
+    'géométrie',
+  ])
   return list.filter((d) => !ADMIN_ONLY_DOMAINS.includes(d))
 }
 
+/**
+ * Admin : tous les domaines du catalogue (réguliers + tests).
+ * Si `VITE_ACCESS_DOMAINS_ADMIN` est défini, on fait l’union avec le catalogue
+ * pour ne pas oublier un domaine ajouté récemment (ex. alphabetisation).
+ */
 function adminDomainsFromEnv(): Domain[] {
-  return parseDomainList(import.meta.env.VITE_ACCESS_DOMAINS_ADMIN, [...ALL_DOMAIN_IDS])
+  const fromEnv = parseDomainList(import.meta.env.VITE_ACCESS_DOMAINS_ADMIN, [])
+  if (fromEnv.length === 0) return [...ALL_DOMAIN_IDS]
+  const merged = new Set<Domain>([...ALL_DOMAIN_IDS, ...fromEnv])
+  return [...merged]
 }
 
 /** Réordonne selon `ACCESS_DOMAIN_OPTIONS` (alpha + pin tests en bas). */
