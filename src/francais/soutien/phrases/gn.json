@@ -2298,128 +2298,388 @@
       ]
     }
   ],
-  "type12": [
-    {
-      "level": "a1",
-      "sentence": "Le directeur nourrit un agneau avec Agnès."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le professeur sauve une araignée sans peigne."
-    },
-    {
-      "level": "a1",
-      "sentence": "Lina ouvre la baignoire à la montagne."
-    },
-    {
-      "level": "a1",
-      "sentence": "La maman prépare le beignet avec Agnès."
-    },
+  "type12Stories": [
     {
       "level": "a2",
-      "sentence": "Ce matin, Agnès invite le compagnon sans peigne."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, la maîtresse soigne le cygne à la montagne."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Agnès longe une Espagne sans peigne."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Agnès console un espagnol à la montagne."
+      "sentences": [
+        "Léa et Hugo partent à la campagne.",
+        "Près de la vigne, ils voient un agneau mignon.",
+        "Hugo trouve un champignon sous une châtaigne.",
+        "Léa montre aussi une araignée sur la ligne du mur.",
+        "Ils suivent un signe vers la montagne.",
+        "Sur le chemin, un compagnon apporte des oignons.",
+        "À midi, ils mangent une lasagne et un beignet.",
+        "Un cygne et une cigogne passent au-dessus de la campagne.",
+        "Avant de rentrer, Léa range son peigne près de la baignoire."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand la boulangère range le peigne à la montagne, et Lina accompagne sa compagne."
+      "sentences": [
+        "Ce week-end, Nora visite l’Espagne avec son compagnon.",
+        "Un guide espagnol montre une ligne sur la carte.",
+        "Ils grimpent une montagne et voient une vigne.",
+        "Nora photographie une cigogne et un cygne.",
+        "Plus bas, un agneau mignon mange près d’une châtaigne.",
+        "Le compagnon cueille un champignon avec prudence.",
+        "Au village, ils goûtent un beignet et une lasagne.",
+        "Nora peigne ses cheveux devant la baignoire de l’hôtel.",
+        "Le soir, un signe indique encore la campagne."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Yanis prépare une lasagne pour sa famille à la campagne.",
+        "Il coupe un oignon et un champignon sur la planche.",
+        "Sa sœur apporte un beignet encore chaud.",
+        "Sur le balcon, une araignée tisse une ligne fine.",
+        "Yanis ouvre la baignoire et pose son peigne à côté.",
+        "Dehors, un agneau mignon marche vers la vigne.",
+        "Un compagnon arrive avec des châtaignes de la montagne.",
+        "Ils voient aussi une cigogne près du cygne du lac.",
+        "Après le repas, Yanis lit un signe sur la porte."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Lina lave le poignet avec Agnès, et Lina accompagne sa compagne."
+      "sentences": [
+        "Inès et Omar gagnent un voyage pour la Bretagne.",
+        "Le gagnant reçoit aussi un peigne en bois mignon.",
+        "En Bretagne, ils visitent une campagne verdoyante.",
+        "Omar photographie une cigogne au bord de la vigne.",
+        "Inès découvre un champignon et une châtaigne.",
+        "Un agneau suit la ligne du chemin vers la montagne.",
+        "Le soir, ils mangent une lasagne aux oignons.",
+        "Omar se lave les mains près de la baignoire.",
+        "Inès note chaque signe sur son carnet de voyage."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "À l’école, Maya dessine une araignée et une cigogne.",
+        "Le maître parle de la montagne et de la campagne.",
+        "Maya ajoute un agneau mignon près d’une vigne.",
+        "Son compagnon colorie un champignon et une châtaigne.",
+        "Sur la ligne du tableau, elle écrit le mot Espagne.",
+        "Ils collent aussi un signe avec un cygne blanc.",
+        "À la pause, Maya mange un beignet aux oignons.",
+        "Le soir, elle range son peigne près de la baignoire.",
+        "Avant de dormir, elle rêve d’une lasagne en Bretagne."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand la voisine montre la poignée à la montagne, et Lina accompagne sa compagne."
+      "sentences": [
+        "Karim soigne un agneau blessé au poignet.",
+        "Le compagnon tient la poignée de la porte de l’étable.",
+        "Ils suivent la ligne jusqu’à la campagne.",
+        "Près de la vigne, Karim trouve un peigne perdu.",
+        "Un champignon pousse sous une châtaigne humide.",
+        "Une araignée descend le long d’un signe en bois.",
+        "Plus loin, une cigogne et un cygne regardent la montagne.",
+        "Le soir, Karim prépare une lasagne et un beignet.",
+        "Il se lave dans la baignoire après la journée."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Sofia apprend l’espagnol pour partir en Espagne.",
+        "Son compagnon répète chaque ligne de la leçon.",
+        "Ils parlent d’une campagne et d’une montagne.",
+        "Sofia dessine une cigogne, un cygne et un agneau.",
+        "Sur la table, il y a un oignon et un champignon.",
+        "Elle peigne son chignon devant la baignoire.",
+        "Le week-end, ils mangent une lasagne et un beignet.",
+        "Un signe indique aussi la vigne du voisin.",
+        "Sofia voit une araignée et sourit, sans peur."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand le directeur range le signe à la montagne, et Lina accompagne sa compagne."
+      "sentences": [
+        "Théo et Amira cherchent des champignons à la campagne.",
+        "Ils marchent en ligne le long de la vigne.",
+        "Amira porte un panier et un peigne dans la poche.",
+        "Sous une châtaigne, Théo trouve un champignon mignon.",
+        "Une araignée traverse le poignet d’Amira sans la mordre.",
+        "Plus haut, la montagne montre encore un signe de sentier.",
+        "Ils voient un agneau, une cigogne et un cygne.",
+        "Le soir, Amira prépare une lasagne aux oignons.",
+        "Théo se détend près de la baignoire après la marche."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Emma organise une fête avec lasagne et beignets.",
+        "Ses compagnons apportent des oignons et des champignons.",
+        "Sur la table, un signe indique « campagne espagnole ».",
+        "Emma peigne son chignon et range le peigne.",
+        "Les enfants jouent près de la baignoire vide.",
+        "Dehors, un agneau mignon mange sous la vigne.",
+        "Une cigogne passe au-dessus de la montagne.",
+        "Emma raconte l’Espagne et la Bretagne à ses amis.",
+        "Avant de partir, chacun prend un beignet chaud."
+      ]
+    },
+    {
+      "level": "b1",
+      "sentences": [
+        "Liam et Nora suivent une ligne sur la carte d’Espagne.",
+        "Le guide espagnol parle de la campagne et de la montagne.",
+        "Ils visitent une vigne et goûtent une châtaigne.",
+        "Nora photographie une araignée près d’un champignon.",
+        "Liam caresse un agneau mignon au bord du chemin.",
+        "Un compagnon montre une cigogne et un cygne au lac.",
+        "Le soir, ils mangent une lasagne aux oignons.",
+        "Nora se lave les mains avant d’ouvrir la baignoire.",
+        "Liam range son peigne et lit encore un signe."
+      ]
     }
   ],
-  "type14": [
-    {
-      "level": "a1",
-      "sentence": "La professeure traverse la Bretagne avec Agnès."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le cousin regarde la campagne avec Agnès."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le maître coupe le champignon sans peigne."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le voisin soigne le chignon."
-    },
-    {
-      "level": "a1",
-      "sentence": "La collègue dessine la châtaigne sans peigne."
-    },
-    {
-      "level": "a1",
-      "sentence": "Lina sauve la cigogne sans peigne."
-    },
+  "type14Stories": [
     {
       "level": "a2",
-      "sentence": "À midi, la grand-mère gagne le gagnant à la montagne."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Agnès choisit la lasagne sans peigne."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Agnès recopie la ligne à la montagne."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Agnès nourrit un mignon à la montagne."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Agnès skie dans la montagne à la montagne."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Agnès goûte un oignon à la montagne."
+      "sentences": [
+        "Léa arrive à la campagne avec son compagnon.",
+        "Ils posent les sacs près de la baignoire.",
+        "Léa peigne son chignon avec un peigne neuf.",
+        "Dehors, un agneau mignon marche vers la vigne.",
+        "Hugo trouve un champignon sous une châtaigne.",
+        "Une araignée descend le long d’une ligne du mur.",
+        "Ils suivent un signe vers la montagne.",
+        "Sur le chemin, une cigogne croise un cygne.",
+        "À midi, ils préparent une lasagne aux oignons.",
+        "Hugo coupe aussi un beignet en deux parts.",
+        "Léa parle de l’Espagne et de la Bretagne.",
+        "Le compagnon montre une photo d’un gagnant.",
+        "Après le repas, ils lavent la poignée de la porte.",
+        "Léa se blesse un peu au poignet en rangeant.",
+        "Hugo soigne le poignet avec un bandage simple.",
+        "Le soir, un signe lumineux éclaire la campagne.",
+        "Ils entendent encore l’agneau près de la vigne.",
+        "Léa range le peigne près de la baignoire.",
+        "Avant de dormir, ils rêvent de la montagne."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand le collègue photographie la vigne sans peigne, parce que Agnès est soignée."
+      "sentences": [
+        "Nora prépare un voyage en Espagne avec soin.",
+        "Son compagnon vérifie chaque ligne du billet.",
+        "Ils veulent voir une montagne et une campagne.",
+        "Au marché, Nora achète un oignon et un champignon.",
+        "Elle range aussi un peigne dans son sac.",
+        "Le guide espagnol explique un signe sur la carte.",
+        "Près de la vigne, ils voient un agneau mignon.",
+        "Une araignée traverse la poignée de la porte.",
+        "Nora photographie une cigogne et un cygne.",
+        "Sous une châtaigne, Hugo trouve un autre champignon.",
+        "Le soir, ils mangent une lasagne et un beignet.",
+        "Nora se lave dans la baignoire de l’hôtel.",
+        "Son compagnon peigne ses cheveux devant le miroir.",
+        "Ils parlent encore de la Bretagne et de l’Espagne.",
+        "Un gagnant du concours local offre un panier.",
+        "Dans le panier, il y a des châtaignes de la montagne.",
+        "Nora note chaque signe sur son carnet.",
+        "Avant la nuit, ils ferment la poignée de la fenêtre.",
+        "Le voyage en campagne se termine calmement."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Yanis invite ses amis à manger une lasagne.",
+        "Il coupe un oignon, un champignon et une châtaigne.",
+        "Sa sœur apporte des beignets encore chauds.",
+        "Sur le balcon, une araignée tisse une ligne.",
+        "Yanis ouvre la baignoire pour laver une poêle.",
+        "Son compagnon pose le peigne près du lavabo.",
+        "Dehors, un agneau mignon suit la vigne.",
+        "Une cigogne et un cygne passent au-dessus.",
+        "Un signe indique le chemin de la montagne.",
+        "Les amis parlent de l’Espagne et de la Bretagne.",
+        "Yanis montre une photo d’un gagnant du match.",
+        "Après le repas, il se blesse au poignet.",
+        "Sa sœur soigne le poignet avec un bandage.",
+        "Ils ferment la poignée de la porte de la cuisine.",
+        "Le soir, Yanis peigne son chignon rapidement.",
+        "Il range le peigne près de la baignoire.",
+        "Dehors, la campagne reste calme et sombre.",
+        "Yanis lit encore une ligne dans son livre.",
+        "Avant de dormir, il rêve d’une montagne."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Agnès attrape un agneau sans peigne, parce que Agnès est soignée."
+      "sentences": [
+        "Inès et Omar partent en Bretagne en train.",
+        "Le gagnant du tirage reçoit un peigne mignon.",
+        "En Bretagne, la campagne sent la châtaigne.",
+        "Omar photographie une cigogne près d’une vigne.",
+        "Inès découvre un champignon et un oignon sauvage.",
+        "Un agneau suit la ligne du chemin humide.",
+        "Plus haut, la montagne montre un signe de sentier.",
+        "Ils croisent un compagnon qui porte une lasagne.",
+        "Le soir, ils mangent cette lasagne et un beignet.",
+        "Omar se lave les mains près de la baignoire.",
+        "Inès peigne ses cheveux devant la fenêtre.",
+        "Une araignée descend le long de la poignée.",
+        "Omar éloigne l’araignée sans la blesser.",
+        "Ils parlent aussi de l’Espagne et d’un guide espagnol.",
+        "Un cygne blanc nage près du bord du lac.",
+        "Inès note chaque signe sur son carnet de voyage.",
+        "Omar se frotte le poignet après la marche.",
+        "Avant la nuit, ils rangent le peigne et les sacs.",
+        "La campagne de Bretagne reste dans leur mémoire."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Maya dessine la campagne sur une grande feuille.",
+        "Elle ajoute une montagne, une vigne et un agneau.",
+        "Son compagnon colorie un champignon et une châtaigne.",
+        "Sur la ligne du tableau, Maya écrit Espagne.",
+        "Elle colle un signe avec une cigogne et un cygne.",
+        "Une araignée apparaît près de la baignoire du dessin.",
+        "Les enfants rient et demandent un beignet.",
+        "Maya peigne son chignon avant la récréation.",
+        "Le maître parle aussi de la Bretagne et des oignons.",
+        "À midi, la classe mange une lasagne tiède.",
+        "Maya montre la poignée de la porte sur son dessin.",
+        "Omar mime un gagnant qui lève le poignet.",
+        "Après le cours, Maya range son peigne.",
+        "Elle suit la ligne du couloir jusqu’à la sortie.",
+        "Dehors, un vrai agneau mignon mange près de la vigne.",
+        "Maya photographie un champignon sous une châtaigne.",
+        "Un compagnon indique un signe vers la montagne.",
+        "Le soir, Maya rêve d’une cigogne en Espagne.",
+        "Avant de dormir, elle relit une ligne de son cahier."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand la factrice observe une araignée à la montagne, et Lina accompagne sa compagne."
+      "sentences": [
+        "Karim travaille à la campagne près de la montagne.",
+        "Il tient la poignée de la porte de l’étable.",
+        "Un agneau mignon a mal au poignet.",
+        "Karim soigne l’agneau avec son compagnon.",
+        "Ils suivent la ligne jusqu’à la vigne.",
+        "Sous une châtaigne, ils trouvent un champignon.",
+        "Une araignée traverse le peigne tombé par terre.",
+        "Karim ramasse le peigne et le lave.",
+        "Un signe indique le chemin vers le village.",
+        "Une cigogne et un cygne regardent la campagne.",
+        "Le soir, Karim prépare une lasagne aux oignons.",
+        "Il mange aussi un beignet après le travail.",
+        "Sa sœur parle de l’Espagne et d’un guide espagnol.",
+        "Karim se lave dans la baignoire chaude.",
+        "Il peigne son chignon devant le miroir.",
+        "Puis il ferme la poignée de la fenêtre.",
+        "Dehors, la montagne reste calme sous les étoiles.",
+        "Karim note un signe pour le lendemain.",
+        "Avant de dormir, il pense encore à l’agneau."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Sofia apprend l’espagnol chaque jour après l’école.",
+        "Son compagnon répète chaque ligne à voix haute.",
+        "Ils rêvent d’un voyage en Espagne et en Bretagne.",
+        "Sofia dessine une campagne, une montagne et une vigne.",
+        "Elle ajoute un agneau, une cigogne et un cygne.",
+        "Sur la table, il y a un oignon et un champignon.",
+        "Sofia peigne son chignon devant la baignoire.",
+        "Une araignée descend le long d’un signe en bois.",
+        "Le week-end, ils mangent une lasagne et un beignet.",
+        "Sofia goûte aussi une châtaigne grillée.",
+        "Son compagnon montre une photo d’un gagnant.",
+        "Ils ferment la poignée de la porte du balcon.",
+        "Sofia se frotte le poignet après avoir écrit.",
+        "Puis elle range le peigne près du lavabo.",
+        "Le soir, elle lit encore une ligne en espagnol.",
+        "Dehors, la campagne sent la pluie et la terre.",
+        "Sofia entend un agneau près de la vigne.",
+        "Elle note un signe sur son carnet de voyage.",
+        "Avant de dormir, elle imagine la montagne d’Espagne."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand la collègue quitte la baignoire avec Agnès, parce que Agnès est soignée."
+      "sentences": [
+        "Théo et Amira cherchent des champignons dès le matin.",
+        "Ils marchent en ligne le long de la vigne.",
+        "Amira porte un panier, un peigne et une bouteille.",
+        "Sous une châtaigne, Théo trouve un champignon mignon.",
+        "Une araignée traverse le poignet d’Amira.",
+        "Elle rit et continue vers la montagne.",
+        "Un signe indique le sentier de la campagne.",
+        "Ils voient un agneau, une cigogne et un cygne.",
+        "Un compagnon apporte des oignons du village.",
+        "Le soir, Amira prépare une lasagne aux champignons.",
+        "Théo mange un beignet encore chaud.",
+        "Ils parlent de l’Espagne et d’un guide espagnol.",
+        "Amira se lave dans la baignoire après la marche.",
+        "Théo peigne ses cheveux près de la fenêtre.",
+        "Ils ferment la poignée de la porte du garage.",
+        "Dehors, la campagne devient silencieuse.",
+        "Amira note chaque signe sur son carnet.",
+        "Théo range le peigne près de la baignoire.",
+        "Avant de dormir, ils rêvent de la montagne."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Emma organise une fête « goût de campagne ».",
+        "Ses compagnons apportent des oignons et des champignons.",
+        "Sur la table, un signe annonce lasagne et beignets.",
+        "Emma peigne son chignon avec un peigne doré.",
+        "Les enfants jouent près de la baignoire vide.",
+        "Dehors, un agneau mignon mange sous la vigne.",
+        "Une cigogne passe au-dessus de la montagne.",
+        "Emma raconte l’Espagne, la Bretagne et un cygne blanc.",
+        "Une araignée descend le long d’une ligne du mur.",
+        "Hugo éloigne l’araignée sans paniquer.",
+        "À midi, tout le monde mange la lasagne.",
+        "Chacun prend aussi un beignet et une châtaigne.",
+        "Emma montre la poignée de la porte du jardin.",
+        "Un gagnant du jeu lève le poignet en riant.",
+        "Le soir, Emma range le peigne près du lavabo.",
+        "Ses amis ferment la poignée de la grande porte.",
+        "Dehors, la campagne sent encore le champignon.",
+        "Emma note un signe pour la prochaine fête.",
+        "Avant de dormir, elle pense à la montagne."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand la cousine partage le beignet à la montagne, et Lina accompagne sa compagne."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand la voisine voit la Bretagne sans peigne, parce que Agnès est soignée."
+      "sentences": [
+        "Liam et Nora suivent une ligne sur la carte d’Espagne.",
+        "Le guide espagnol parle de campagne et de montagne.",
+        "Ils visitent une vigne et goûtent une châtaigne.",
+        "Nora photographie une araignée près d’un champignon.",
+        "Liam caresse un agneau mignon au bord du chemin.",
+        "Un compagnon montre une cigogne et un cygne au lac.",
+        "Le soir, ils mangent une lasagne aux oignons.",
+        "Nora se lave les mains avant d’ouvrir la baignoire.",
+        "Liam range son peigne et lit encore un signe.",
+        "Ils ferment la poignée de la porte de la chambre.",
+        "Nora se frotte le poignet après avoir écrit.",
+        "Liam parle aussi de la Bretagne et d’un gagnant.",
+        "Le lendemain, ils grimpent encore la montagne.",
+        "Sous une châtaigne, Nora trouve un autre champignon.",
+        "Un beignet chaud attend dans le sac du compagnon.",
+        "Liam peigne son chignon devant le miroir.",
+        "Nora note chaque signe sur son carnet.",
+        "Le voyage en Espagne se termine près de la vigne.",
+        "Avant de rentrer, ils regardent encore l’agneau."
+      ]
     }
   ]
 }
