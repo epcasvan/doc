@@ -2,906 +2,477 @@
   "type9": [
     {
       "level": "a1",
-      "word": "mère",
-      "sentence": "Hélène voit la mère très bien."
-    },
-    {
-      "level": "a2",
-      "word": "mère",
-      "sentence": "Après le cours, Hélène voit la mère très bien."
-    },
-    {
-      "level": "b1",
-      "word": "mère",
-      "sentence": "Après le cours, quand Hélène voit la mère, Théo est très content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "père",
-      "sentence": "Hélène voit le père très bien."
-    },
-    {
-      "level": "a2",
-      "word": "père",
-      "sentence": "Après le cours, Hélène voit le père très bien."
-    },
-    {
-      "level": "b1",
-      "word": "père",
-      "sentence": "Après le cours, quand Hélène voit le père, Théo est très content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "frère",
-      "sentence": "Hélène voit le frère très bien."
-    },
-    {
-      "level": "a2",
-      "word": "frère",
-      "sentence": "Après le cours, Hélène voit le frère très bien."
-    },
-    {
-      "level": "b1",
-      "word": "frère",
-      "sentence": "Après le cours, quand Hélène voit le frère, Théo est très content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "bébé",
-      "sentence": "Hélène voit un bébé très bien."
-    },
-    {
-      "level": "a2",
-      "word": "bébé",
-      "sentence": "Après le cours, Hélène voit un bébé très bien."
-    },
-    {
-      "level": "b1",
-      "word": "bébé",
-      "sentence": "Après le cours, quand Hélène voit un bébé, Théo est très content aussi."
-    },
-    {
-      "level": "a1",
       "word": "école",
-      "sentence": "Hélène entre dans une école."
+      "sentence": "Hélène marche vers une école."
     },
     {
       "level": "a2",
       "word": "école",
-      "sentence": "Après le cours, Hélène entre dans une école."
+      "sentence": "Ce matin, Théo se rend à une école près de Théo."
     },
     {
       "level": "b1",
       "word": "école",
-      "sentence": "Après le cours, quand Hélène entre dans une école, Théo est très content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "élève",
-      "sentence": "Hélène parle avec un élève."
-    },
-    {
-      "level": "a2",
-      "word": "élève",
-      "sentence": "Après le cours, Hélène parle avec un élève."
-    },
-    {
-      "level": "b1",
-      "word": "élève",
-      "sentence": "Après le cours, quand Hélène parle avec un élève, Théo est très content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "café",
-      "sentence": "Hélène boit un café très chaud."
-    },
-    {
-      "level": "a2",
-      "word": "café",
-      "sentence": "Après le cours, Hélène boit un café très chaud."
-    },
-    {
-      "level": "b1",
-      "word": "café",
-      "sentence": "Après le cours, quand Hélène boit un café, Théo est très content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "télé",
-      "sentence": "Hélène regarde la télé très bien."
-    },
-    {
-      "level": "a2",
-      "word": "télé",
-      "sentence": "Après le cours, Hélène regarde la télé très bien."
-    },
-    {
-      "level": "b1",
-      "word": "télé",
-      "sentence": "Après le cours, quand Hélène regarde la télé, Théo est très content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "fenêtre",
-      "sentence": "Hélène ouvre la fenêtre très tôt."
-    },
-    {
-      "level": "a2",
-      "word": "fenêtre",
-      "sentence": "Après le cours, Hélène ouvre la fenêtre très tôt."
-    },
-    {
-      "level": "b1",
-      "word": "fenêtre",
-      "sentence": "Après le cours, quand Hélène ouvre la fenêtre, Théo est très content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "cheval",
-      "sentence": "Hélène voit le cheval très bien."
-    },
-    {
-      "level": "a2",
-      "word": "cheval",
-      "sentence": "Après le cours, Hélène voit le cheval très bien."
-    },
-    {
-      "level": "b1",
-      "word": "cheval",
-      "sentence": "Après le cours, quand Hélène voit le cheval, Théo est très content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "fête",
-      "sentence": "Hélène aime la fête très bien."
-    },
-    {
-      "level": "a2",
-      "word": "fête",
-      "sentence": "Après le cours, Hélène aime la fête très bien."
-    },
-    {
-      "level": "b1",
-      "word": "fête",
-      "sentence": "Après le cours, quand Hélène aime la fête, Théo est très content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "rêve",
-      "sentence": "Hélène raconte le rêve très bien."
-    },
-    {
-      "level": "a2",
-      "word": "rêve",
-      "sentence": "Après le cours, Hélène raconte le rêve très bien."
-    },
-    {
-      "level": "b1",
-      "word": "rêve",
-      "sentence": "Après le cours, quand Hélène raconte le rêve, Théo est très content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "règle",
-      "sentence": "Hélène pose la règle très bien."
-    },
-    {
-      "level": "a2",
-      "word": "règle",
-      "sentence": "Après le cours, Hélène pose la règle très bien."
-    },
-    {
-      "level": "b1",
-      "word": "règle",
-      "sentence": "Après le cours, quand Hélène pose la règle, Théo est très content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "zéro",
-      "sentence": "Hélène pose le zéro très bien."
-    },
-    {
-      "level": "a2",
-      "word": "zéro",
-      "sentence": "Après le cours, Hélène pose le zéro très bien."
-    },
-    {
-      "level": "b1",
-      "word": "zéro",
-      "sentence": "Après le cours, quand Hélène pose le zéro, Théo est très content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "béret",
-      "sentence": "Hélène porte un béret très bien."
-    },
-    {
-      "level": "a2",
-      "word": "béret",
-      "sentence": "Après le cours, Hélène porte un béret très bien."
-    },
-    {
-      "level": "b1",
-      "word": "béret",
-      "sentence": "Après le cours, quand Hélène porte un béret, Théo est très content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "étoile",
-      "sentence": "Hélène voit une étoile très bien."
-    },
-    {
-      "level": "a2",
-      "word": "étoile",
-      "sentence": "Après le cours, Hélène voit une étoile très bien."
-    },
-    {
-      "level": "b1",
-      "word": "étoile",
-      "sentence": "Après le cours, quand Hélène voit une étoile, Théo est très content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "fée",
-      "sentence": "Hélène voit la fée très bien."
-    },
-    {
-      "level": "a2",
-      "word": "fée",
-      "sentence": "Après le cours, Hélène voit la fée très bien."
-    },
-    {
-      "level": "b1",
-      "word": "fée",
-      "sentence": "Après le cours, quand Hélène voit la fée, Théo est très content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "fève",
-      "sentence": "Hélène mange la fève très bien."
-    },
-    {
-      "level": "a2",
-      "word": "fève",
-      "sentence": "Après le cours, Hélène mange la fève très bien."
-    },
-    {
-      "level": "b1",
-      "word": "fève",
-      "sentence": "Après le cours, quand Hélène mange la fève, Théo est très content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "pré",
-      "sentence": "Hélène marche dans le pré."
-    },
-    {
-      "level": "a2",
-      "word": "pré",
-      "sentence": "Après le cours, Hélène marche dans le pré."
-    },
-    {
-      "level": "b1",
-      "word": "pré",
-      "sentence": "Après le cours, quand Hélène marche dans le pré, Théo est très content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "dé",
-      "sentence": "Hélène lance le dé très bien."
-    },
-    {
-      "level": "a2",
-      "word": "dé",
-      "sentence": "Après le cours, Hélène lance le dé très bien."
-    },
-    {
-      "level": "b1",
-      "word": "dé",
-      "sentence": "Après le cours, quand Hélène lance le dé, Théo est très content aussi."
+      "sentence": "Ce matin, quand René quitte une école, et Théo est très content aussi."
     },
     {
       "level": "a1",
       "word": "été",
-      "sentence": "Hélène part pendant un été."
+      "sentence": "Eve parle avec un été."
     },
     {
       "level": "a2",
       "word": "été",
-      "sentence": "Après le cours, Hélène part pendant un été."
+      "sentence": "Ce soir, Hélène choisit un été près de Théo."
     },
     {
       "level": "b1",
       "word": "été",
-      "sentence": "Après le cours, quand Hélène part pendant un été, Théo est très content aussi."
+      "sentence": "Ce matin, quand Théo aime un été, parce que Hélène est très contente."
+    },
+    {
+      "level": "a1",
+      "word": "bébé",
+      "sentence": "René protège un bébé bien."
+    },
+    {
+      "level": "a2",
+      "word": "bébé",
+      "sentence": "À midi, Eve protège un bébé très vite."
+    },
+    {
+      "level": "b1",
+      "word": "bébé",
+      "sentence": "Ce matin, quand Hélène protège un bébé, et Théo est très content aussi."
+    },
+    {
+      "level": "a1",
+      "word": "mère",
+      "sentence": "Théo aide la mère bien."
+    },
+    {
+      "level": "a2",
+      "word": "mère",
+      "sentence": "Après le cours, René console la mère après le thé."
+    },
+    {
+      "level": "b1",
+      "word": "mère",
+      "sentence": "Quand Eve invite la mère très vite, parce que Hélène est très contente."
+    },
+    {
+      "level": "a1",
+      "word": "père",
+      "sentence": "Hélène remercie le père bien."
+    },
+    {
+      "level": "a2",
+      "word": "père",
+      "sentence": "Avant le repas, Théo aide le père près de Théo."
+    },
+    {
+      "level": "b1",
+      "word": "père",
+      "sentence": "Ce matin, quand René console le père, et Théo est très content aussi."
+    },
+    {
+      "level": "a1",
+      "word": "frère",
+      "sentence": "Eve aide le frère bien."
+    },
+    {
+      "level": "a2",
+      "word": "frère",
+      "sentence": "Ce matin, Hélène s’occupe du frère près de Théo."
+    },
+    {
+      "level": "b1",
+      "word": "frère",
+      "sentence": "Ce matin, quand Théo aide le frère, parce que Hélène est très contente."
+    },
+    {
+      "level": "a1",
+      "word": "élève",
+      "sentence": "René aide un élève bien."
+    },
+    {
+      "level": "a2",
+      "word": "élève",
+      "sentence": "Ce soir, Eve aide un élève très vite."
+    },
+    {
+      "level": "b1",
+      "word": "élève",
+      "sentence": "Ce matin, quand Hélène aide un élève, et Théo est très content aussi."
+    },
+    {
+      "level": "a1",
+      "word": "café",
+      "sentence": "Théo sert un café bien."
+    },
+    {
+      "level": "a2",
+      "word": "café",
+      "sentence": "À midi, René sert un café après le thé."
+    },
+    {
+      "level": "b1",
+      "word": "café",
+      "sentence": "Quand Eve sert un café très vite, parce que Hélène est très contente."
+    },
+    {
+      "level": "a1",
+      "word": "télé",
+      "sentence": "Hélène regarde la télé bien."
+    },
+    {
+      "level": "a2",
+      "word": "télé",
+      "sentence": "Après le cours, Théo éteint la télé près de Théo."
+    },
+    {
+      "level": "b1",
+      "word": "télé",
+      "sentence": "Ce matin, quand René regarde la télé, et Théo est très content aussi."
+    },
+    {
+      "level": "a1",
+      "word": "fenêtre",
+      "sentence": "Eve ferme la fenêtre bien."
+    },
+    {
+      "level": "a2",
+      "word": "fenêtre",
+      "sentence": "Avant le repas, Hélène regarde par la fenêtre près de Théo."
+    },
+    {
+      "level": "b1",
+      "word": "fenêtre",
+      "sentence": "Ce matin, quand Théo ouvre la fenêtre, parce que Hélène est très contente."
+    },
+    {
+      "level": "a1",
+      "word": "cheval",
+      "sentence": "René observe le cheval bien."
+    },
+    {
+      "level": "a2",
+      "word": "cheval",
+      "sentence": "Ce matin, Eve attrape le cheval très vite."
+    },
+    {
+      "level": "b1",
+      "word": "cheval",
+      "sentence": "Ce matin, quand Hélène caresse le cheval, et Théo est très content aussi."
+    },
+    {
+      "level": "a1",
+      "word": "fête",
+      "sentence": "Théo parle de la fête."
+    },
+    {
+      "level": "a2",
+      "word": "fête",
+      "sentence": "Ce soir, René parle de la fête après le thé."
+    },
+    {
+      "level": "b1",
+      "word": "fête",
+      "sentence": "Quand Eve parle de la fête très vite, parce que Hélène est très contente."
+    },
+    {
+      "level": "a1",
+      "word": "rêve",
+      "sentence": "Hélène raconte le rêve bien."
+    },
+    {
+      "level": "a2",
+      "word": "rêve",
+      "sentence": "À midi, Théo vit le rêve près de Théo."
+    },
+    {
+      "level": "b1",
+      "word": "rêve",
+      "sentence": "Ce matin, quand René raconte le rêve, et Théo est très content aussi."
+    },
+    {
+      "level": "a1",
+      "word": "règle",
+      "sentence": "Eve insiste sur la règle."
+    },
+    {
+      "level": "a2",
+      "word": "règle",
+      "sentence": "Après le cours, Hélène explique la règle près de Théo."
+    },
+    {
+      "level": "b1",
+      "word": "règle",
+      "sentence": "Ce matin, quand Théo utilise la règle, parce que Hélène est très contente."
+    },
+    {
+      "level": "a1",
+      "word": "zéro",
+      "sentence": "René écrit le zéro bien."
+    },
+    {
+      "level": "a2",
+      "word": "zéro",
+      "sentence": "Avant le repas, Eve étudie le zéro très vite."
+    },
+    {
+      "level": "b1",
+      "word": "zéro",
+      "sentence": "Ce matin, quand Hélène prépare le zéro, et Théo est très content aussi."
+    },
+    {
+      "level": "a1",
+      "word": "béret",
+      "sentence": "Théo range un béret bien."
+    },
+    {
+      "level": "a2",
+      "word": "béret",
+      "sentence": "Ce matin, René enfile un béret après le thé."
+    },
+    {
+      "level": "b1",
+      "word": "béret",
+      "sentence": "Quand Eve repasse un béret très vite, parce que Hélène est très contente."
+    },
+    {
+      "level": "a1",
+      "word": "étoile",
+      "sentence": "Hélène regarde une étoile bien."
+    },
+    {
+      "level": "a2",
+      "word": "étoile",
+      "sentence": "Ce soir, Théo admire une étoile près de Théo."
+    },
+    {
+      "level": "b1",
+      "word": "étoile",
+      "sentence": "Ce matin, quand René plante une étoile, et Théo est très content aussi."
+    },
+    {
+      "level": "a1",
+      "word": "fève",
+      "sentence": "Eve choisit la fève bien."
+    },
+    {
+      "level": "a2",
+      "word": "fève",
+      "sentence": "À midi, Hélène goûte la fève près de Théo."
+    },
+    {
+      "level": "b1",
+      "word": "fève",
+      "sentence": "Ce matin, quand Théo partage la fève, parce que Hélène est très contente."
+    },
+    {
+      "level": "a1",
+      "word": "pré",
+      "sentence": "René dessine le pré bien."
+    },
+    {
+      "level": "a2",
+      "word": "pré",
+      "sentence": "Après le cours, Eve voit le pré très vite."
+    },
+    {
+      "level": "b1",
+      "word": "pré",
+      "sentence": "Ce matin, quand Hélène observe le pré, et Théo est très content aussi."
+    },
+    {
+      "level": "a1",
+      "word": "fée",
+      "sentence": "Théo joue avec la fée."
+    },
+    {
+      "level": "a2",
+      "word": "fée",
+      "sentence": "Avant le repas, René commence la fée après le thé."
+    },
+    {
+      "level": "b1",
+      "word": "fée",
+      "sentence": "Quand Eve écoute la fée très vite, parce que Hélène est très contente."
+    },
+    {
+      "level": "a1",
+      "word": "dé",
+      "sentence": "Hélène choisit le dé bien."
+    },
+    {
+      "level": "a2",
+      "word": "dé",
+      "sentence": "Ce matin, Théo regarde le dé près de Théo."
+    },
+    {
+      "level": "b1",
+      "word": "dé",
+      "sentence": "Ce matin, quand René joue avec le dé, et Théo est très content aussi."
     }
   ],
   "type10": [
     {
       "level": "a1",
-      "sentence": "Hélène voit la mère très bien.",
+      "sentence": "Théo aide la mère bien.",
       "parts": [
         {
-          "t": "Hélène voit "
+          "t": "Théo aide "
         },
         {
           "blank": "la"
         },
         {
-          "t": " mère très bien."
+          "t": " mère bien."
         }
       ]
     },
     {
-      "level": "a1",
-      "sentence": "Hélène voit le père très bien.",
+      "level": "a2",
+      "sentence": "Après le cours, René console la mère après le thé.",
       "parts": [
         {
-          "t": "Hélène voit "
+          "t": "Après "
         },
         {
           "blank": "le"
         },
         {
-          "t": " père très bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Hélène voit le frère très bien.",
-      "parts": [
-        {
-          "t": "Hélène voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " frère très bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Théo parle avec la mère.",
-      "parts": [
-        {
-          "t": "Théo parle avec "
+          "t": " cours, René console "
         },
         {
           "blank": "la"
         },
         {
-          "t": " mère."
+          "t": " mère après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " thé."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand Eve invite la mère très vite, parce que Hélène est très contente.",
+      "parts": [
+        {
+          "t": "Quand Eve invite "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " mère très vite, parce que Hélène est très contente."
         }
       ]
     },
     {
       "level": "a1",
-      "sentence": "Théo parle avec le père.",
+      "sentence": "Hélène remercie le père bien.",
       "parts": [
         {
-          "t": "Théo parle avec "
+          "t": "Hélène remercie "
         },
         {
           "blank": "le"
         },
         {
-          "t": " père."
+          "t": " père bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le repas, Théo aide le père près de Théo.",
+      "parts": [
+        {
+          "t": "Avant "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " repas, Théo aide "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " père près de Théo."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand René console le père, et Théo est très content aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand René console "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " père, et Théo est très content aussi."
         }
       ]
     },
     {
       "level": "a1",
-      "sentence": "Théo parle avec le frère.",
+      "sentence": "Eve aide le frère bien.",
       "parts": [
         {
-          "t": "Théo parle avec "
+          "t": "Eve aide "
         },
         {
           "blank": "le"
         },
         {
-          "t": " frère."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Hélène voit la mère très bien.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Hélène voit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " mère très bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Hélène voit le père très bien.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Hélène voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " père très bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Hélène voit le frère très bien.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Hélène voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " frère très bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Hélène voit un bébé très bien.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Hélène voit un bébé très bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Théo parle avec la mère.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Théo parle avec "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " mère."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Théo parle avec le père.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Théo parle avec "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " père."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Théo parle avec le frère.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Théo parle avec "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " frère."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Théo parle avec un bébé.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Théo parle avec un bébé."
+          "t": " frère bien."
         }
       ]
     },
     {
       "level": "b1",
-      "sentence": "Après le cours, quand Hélène voit la mère, Théo est très content aussi.",
+      "sentence": "Ce matin, quand Théo aide le frère, parce que Hélène est très contente.",
       "parts": [
         {
-          "t": "Après "
+          "t": "Ce matin, quand Théo aide "
         },
         {
           "blank": "le"
         },
         {
-          "t": " cours, quand Hélène voit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " mère, Théo est très content aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Après le cours, quand Hélène voit le père, Théo est très content aussi.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, quand Hélène voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " père, Théo est très content aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Après le cours, quand Hélène voit le frère, Théo est très content aussi.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, quand Hélène voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " frère, Théo est très content aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Après le cours, quand Hélène voit un bébé, Théo est très content aussi.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, quand Hélène voit un bébé, Théo est très content aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Après le cours, quand Théo parle avec la mère, Hélène est très contente aussi.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, quand Théo parle avec "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " mère, Hélène est très contente aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Après le cours, quand Théo parle avec le père, Hélène est très contente aussi.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, quand Théo parle avec "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " père, Hélène est très contente aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Après le cours, quand Théo parle avec le frère, Hélène est très contente aussi.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, quand Théo parle avec "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " frère, Hélène est très contente aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Après le cours, quand Théo parle avec un bébé, Hélène est très contente aussi.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, quand Théo parle avec un bébé, Hélène est très contente aussi."
+          "t": " frère, parce que Hélène est très contente."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "Après le cours, Hélène entre dans une école.",
+      "sentence": "À midi, René sert un café après le thé.",
       "parts": [
         {
-          "t": "Après "
+          "t": "À midi, René sert un café après "
         },
         {
           "blank": "le"
         },
         {
-          "t": " cours, Hélène entre dans une école."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Théo va dans une école très tôt.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Théo va dans une école très tôt."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Après le cours, quand Hélène entre dans une école, Théo est très content aussi.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, quand Hélène entre dans une école, Théo est très content aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Après le cours, quand Théo va dans une école, Hélène est très contente aussi.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, quand Théo va dans une école, Hélène est très contente aussi."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Hélène parle avec un élève.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Hélène parle avec un élève."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Théo voit un élève très bien.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Théo voit un élève très bien."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Après le cours, quand Hélène parle avec un élève, Théo est très content aussi.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, quand Hélène parle avec un élève, Théo est très content aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Après le cours, quand Théo voit un élève, Hélène est très contente aussi.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, quand Théo voit un élève, Hélène est très contente aussi."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Hélène boit un café très chaud.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Hélène boit un café très chaud."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Théo sert un café très chaud.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Théo sert un café très chaud."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Après le cours, quand Hélène boit un café, Théo est très content aussi.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, quand Hélène boit un café, Théo est très content aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Après le cours, quand Théo sert un café, Hélène est très contente aussi.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, quand Théo sert un café, Hélène est très contente aussi."
+          "t": " thé."
         }
       ]
     },
     {
       "level": "a1",
-      "sentence": "Hélène regarde la télé très bien.",
+      "sentence": "Hélène regarde la télé bien.",
       "parts": [
         {
           "t": "Hélène regarde "
@@ -910,28 +481,13 @@
           "blank": "la"
         },
         {
-          "t": " télé très bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Théo allume la télé très tôt.",
-      "parts": [
-        {
-          "t": "Théo allume "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " télé très tôt."
+          "t": " télé bien."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "Après le cours, Hélène regarde la télé très bien.",
+      "sentence": "Après le cours, Théo éteint la télé près de Théo.",
       "parts": [
         {
           "t": "Après "
@@ -940,424 +496,181 @@
           "blank": "le"
         },
         {
-          "t": " cours, Hélène regarde "
+          "t": " cours, Théo éteint "
         },
         {
           "blank": "la"
         },
         {
-          "t": " télé très bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Théo allume la télé très tôt.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Théo allume "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " télé très tôt."
+          "t": " télé près de Théo."
         }
       ]
     },
     {
       "level": "b1",
-      "sentence": "Après le cours, quand Hélène regarde la télé, Théo est très content aussi.",
+      "sentence": "Ce matin, quand René regarde la télé, et Théo est très content aussi.",
       "parts": [
         {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, quand Hélène regarde "
+          "t": "Ce matin, quand René regarde "
         },
         {
           "blank": "la"
         },
         {
-          "t": " télé, Théo est très content aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Après le cours, quand Théo allume la télé, Hélène est très contente aussi.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, quand Théo allume "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " télé, Hélène est très contente aussi."
+          "t": " télé, et Théo est très content aussi."
         }
       ]
     },
     {
       "level": "a1",
-      "sentence": "Hélène ouvre la fenêtre très tôt.",
+      "sentence": "Eve ferme la fenêtre bien.",
       "parts": [
         {
-          "t": "Hélène ouvre "
+          "t": "Eve ferme "
         },
         {
           "blank": "la"
         },
         {
-          "t": " fenêtre très tôt."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Théo ferme la fenêtre très bien.",
-      "parts": [
-        {
-          "t": "Théo ferme "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " fenêtre très bien."
+          "t": " fenêtre bien."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "Après le cours, Hélène ouvre la fenêtre très tôt.",
+      "sentence": "Avant le repas, Hélène regarde par la fenêtre près de Théo.",
       "parts": [
         {
-          "t": "Après "
+          "t": "Avant "
         },
         {
           "blank": "le"
         },
         {
-          "t": " cours, Hélène ouvre "
+          "t": " repas, Hélène regarde par "
         },
         {
           "blank": "la"
         },
         {
-          "t": " fenêtre très tôt."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Théo ferme la fenêtre très bien.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Théo ferme "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " fenêtre très bien."
+          "t": " fenêtre près de Théo."
         }
       ]
     },
     {
       "level": "b1",
-      "sentence": "Après le cours, quand Hélène ouvre la fenêtre, Théo est très content aussi.",
+      "sentence": "Ce matin, quand Théo ouvre la fenêtre, parce que Hélène est très contente.",
       "parts": [
         {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, quand Hélène ouvre "
+          "t": "Ce matin, quand Théo ouvre "
         },
         {
           "blank": "la"
         },
         {
-          "t": " fenêtre, Théo est très content aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Après le cours, quand Théo ferme la fenêtre, Hélène est très contente aussi.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, quand Théo ferme "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " fenêtre, Hélène est très contente aussi."
+          "t": " fenêtre, parce que Hélène est très contente."
         }
       ]
     },
     {
       "level": "a1",
-      "sentence": "Hélène voit le cheval très bien.",
+      "sentence": "René observe le cheval bien.",
       "parts": [
         {
-          "t": "Hélène voit "
+          "t": "René observe "
         },
         {
           "blank": "le"
         },
         {
-          "t": " cheval très bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Théo sort avec le cheval très tôt.",
-      "parts": [
-        {
-          "t": "Théo sort avec "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cheval très tôt."
+          "t": " cheval bien."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "Après le cours, Hélène voit le cheval très bien.",
+      "sentence": "Ce matin, Eve attrape le cheval très vite.",
       "parts": [
         {
-          "t": "Après "
+          "t": "Ce matin, Eve attrape "
         },
         {
           "blank": "le"
         },
         {
-          "t": " cours, Hélène voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cheval très bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Théo sort avec le cheval très tôt.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Théo sort avec "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cheval très tôt."
+          "t": " cheval très vite."
         }
       ]
     },
     {
       "level": "b1",
-      "sentence": "Après le cours, quand Hélène voit le cheval, Théo est très content aussi.",
+      "sentence": "Ce matin, quand Hélène caresse le cheval, et Théo est très content aussi.",
       "parts": [
         {
-          "t": "Après "
+          "t": "Ce matin, quand Hélène caresse "
         },
         {
           "blank": "le"
         },
         {
-          "t": " cours, quand Hélène voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cheval, Théo est très content aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Après le cours, quand Théo sort avec le cheval, Hélène est très contente aussi.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, quand Théo sort avec "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cheval, Hélène est très contente aussi."
+          "t": " cheval, et Théo est très content aussi."
         }
       ]
     },
     {
       "level": "a1",
-      "sentence": "Hélène aime la fête très bien.",
+      "sentence": "Théo parle de la fête.",
       "parts": [
         {
-          "t": "Hélène aime "
+          "t": "Théo parle de "
         },
         {
           "blank": "la"
         },
         {
-          "t": " fête très bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Théo fait la fête très bien.",
-      "parts": [
-        {
-          "t": "Théo fait "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " fête très bien."
+          "t": " fête."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "Après le cours, Hélène aime la fête très bien.",
+      "sentence": "Ce soir, René parle de la fête après le thé.",
       "parts": [
         {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Hélène aime "
+          "t": "Ce soir, René parle de "
         },
         {
           "blank": "la"
         },
         {
-          "t": " fête très bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Théo fait la fête très bien.",
-      "parts": [
-        {
-          "t": "Après "
+          "t": " fête après "
         },
         {
           "blank": "le"
         },
         {
-          "t": " cours, Théo fait "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " fête très bien."
+          "t": " thé."
         }
       ]
     },
     {
       "level": "b1",
-      "sentence": "Après le cours, quand Hélène aime la fête, Théo est très content aussi.",
+      "sentence": "Quand Eve parle de la fête très vite, parce que Hélène est très contente.",
       "parts": [
         {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, quand Hélène aime "
+          "t": "Quand Eve parle de "
         },
         {
           "blank": "la"
         },
         {
-          "t": " fête, Théo est très content aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Après le cours, quand Théo fait la fête, Hélène est très contente aussi.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, quand Théo fait "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " fête, Hélène est très contente aussi."
+          "t": " fête très vite, parce que Hélène est très contente."
         }
       ]
     },
     {
       "level": "a1",
-      "sentence": "Hélène raconte le rêve très bien.",
+      "sentence": "Hélène raconte le rêve bien.",
       "parts": [
         {
           "t": "Hélène raconte "
@@ -1366,28 +679,58 @@
           "blank": "le"
         },
         {
-          "t": " rêve très bien."
+          "t": " rêve bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Théo vit le rêve près de Théo.",
+      "parts": [
+        {
+          "t": "À midi, Théo vit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " rêve près de Théo."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand René raconte le rêve, et Théo est très content aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand René raconte "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " rêve, et Théo est très content aussi."
         }
       ]
     },
     {
       "level": "a1",
-      "sentence": "Théo aime le rêve très bien.",
+      "sentence": "Eve insiste sur la règle.",
       "parts": [
         {
-          "t": "Théo aime "
+          "t": "Eve insiste sur "
         },
         {
-          "blank": "le"
+          "blank": "la"
         },
         {
-          "t": " rêve très bien."
+          "t": " règle."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "Après le cours, Hélène raconte le rêve très bien.",
+      "sentence": "Après le cours, Hélène explique la règle près de Théo.",
       "parts": [
         {
           "t": "Après "
@@ -1396,415 +739,334 @@
           "blank": "le"
         },
         {
-          "t": " cours, Hélène raconte "
+          "t": " cours, Hélène explique "
         },
         {
-          "blank": "le"
+          "blank": "la"
         },
         {
-          "t": " rêve très bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Théo aime le rêve très bien.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Théo aime "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " rêve très bien."
+          "t": " règle près de Théo."
         }
       ]
     },
     {
       "level": "b1",
-      "sentence": "Après le cours, quand Hélène raconte le rêve, Théo est très content aussi.",
+      "sentence": "Ce matin, quand Théo utilise la règle, parce que Hélène est très contente.",
       "parts": [
         {
-          "t": "Après "
+          "t": "Ce matin, quand Théo utilise "
         },
         {
-          "blank": "le"
+          "blank": "la"
         },
         {
-          "t": " cours, quand Hélène raconte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " rêve, Théo est très content aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Après le cours, quand Théo aime le rêve, Hélène est très contente aussi.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, quand Théo aime "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " rêve, Hélène est très contente aussi."
+          "t": " règle, parce que Hélène est très contente."
         }
       ]
     },
     {
       "level": "a1",
-      "sentence": "Hélène pose la règle très bien.",
+      "sentence": "René écrit le zéro bien.",
       "parts": [
         {
-          "t": "Hélène pose "
+          "t": "René écrit "
         },
         {
-          "blank": "la"
+          "blank": "le"
         },
         {
-          "t": " règle très bien."
+          "t": " zéro bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le repas, Eve étudie le zéro très vite.",
+      "parts": [
+        {
+          "t": "Avant "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " repas, Eve étudie "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " zéro très vite."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Hélène prépare le zéro, et Théo est très content aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Hélène prépare "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " zéro, et Théo est très content aussi."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, René enfile un béret après le thé.",
+      "parts": [
+        {
+          "t": "Ce matin, René enfile un béret après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " thé."
         }
       ]
     },
     {
       "level": "a1",
-      "sentence": "Hélène pose le zéro très bien.",
+      "sentence": "Eve choisit la fève bien.",
       "parts": [
         {
-          "t": "Hélène pose "
+          "t": "Eve choisit "
         },
         {
-          "blank": "le"
+          "blank": "la"
         },
         {
-          "t": " zéro très bien."
+          "t": " fève bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Hélène goûte la fève près de Théo.",
+      "parts": [
+        {
+          "t": "À midi, Hélène goûte "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " fève près de Théo."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Théo partage la fève, parce que Hélène est très contente.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Théo partage "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " fève, parce que Hélène est très contente."
         }
       ]
     },
     {
       "level": "a1",
-      "sentence": "Théo prend la règle très tôt.",
+      "sentence": "René dessine le pré bien.",
       "parts": [
         {
-          "t": "Théo prend "
+          "t": "René dessine "
         },
         {
-          "blank": "la"
+          "blank": "le"
         },
         {
-          "t": " règle très tôt."
+          "t": " pré bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le cours, Eve voit le pré très vite.",
+      "parts": [
+        {
+          "t": "Après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cours, Eve voit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " pré très vite."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Hélène observe le pré, et Théo est très content aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Hélène observe "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " pré, et Théo est très content aussi."
         }
       ]
     },
     {
       "level": "a1",
-      "sentence": "Théo prend le zéro très tôt.",
+      "sentence": "Théo joue avec la fée.",
       "parts": [
         {
-          "t": "Théo prend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " zéro très tôt."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Hélène pose la règle très bien.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Hélène pose "
+          "t": "Théo joue avec "
         },
         {
           "blank": "la"
         },
         {
-          "t": " règle très bien."
+          "t": " fée."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "Après le cours, Hélène pose le zéro très bien.",
+      "sentence": "Avant le repas, René commence la fée après le thé.",
       "parts": [
         {
-          "t": "Après "
+          "t": "Avant "
         },
         {
           "blank": "le"
         },
         {
-          "t": " cours, Hélène pose "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " zéro très bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Théo prend la règle très tôt.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Théo prend "
+          "t": " repas, René commence "
         },
         {
           "blank": "la"
         },
         {
-          "t": " règle très tôt."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Théo prend le zéro très tôt.",
-      "parts": [
-        {
-          "t": "Après "
+          "t": " fée après "
         },
         {
           "blank": "le"
         },
         {
-          "t": " cours, Théo prend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " zéro très tôt."
+          "t": " thé."
         }
       ]
     },
     {
       "level": "b1",
-      "sentence": "Après le cours, quand Hélène pose la règle, Théo est très content aussi.",
+      "sentence": "Quand Eve écoute la fée très vite, parce que Hélène est très contente.",
       "parts": [
         {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, quand Hélène pose "
+          "t": "Quand Eve écoute "
         },
         {
           "blank": "la"
         },
         {
-          "t": " règle, Théo est très content aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Après le cours, quand Hélène pose le zéro, Théo est très content aussi.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, quand Hélène pose "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " zéro, Théo est très content aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Après le cours, quand Théo prend la règle, Hélène est très contente aussi.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, quand Théo prend "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " règle, Hélène est très contente aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Après le cours, quand Théo prend le zéro, Hélène est très contente aussi.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, quand Théo prend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " zéro, Hélène est très contente aussi."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Hélène porte un béret très bien.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Hélène porte un béret très bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Théo pose un béret très tôt.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Théo pose un béret très tôt."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Après le cours, quand Hélène porte un béret, Théo est très content aussi.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, quand Hélène porte un béret, Théo est très content aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Après le cours, quand Théo pose un béret, Hélène est très contente aussi.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, quand Théo pose un béret, Hélène est très contente aussi."
+          "t": " fée très vite, parce que Hélène est très contente."
         }
       ]
     },
     {
       "level": "a1",
-      "sentence": "Hélène voit la fée très bien.",
+      "sentence": "Hélène choisit le dé bien.",
       "parts": [
         {
-          "t": "Hélène voit "
+          "t": "Hélène choisit "
         },
         {
-          "blank": "la"
+          "blank": "le"
         },
         {
-          "t": " fée très bien."
+          "t": " dé bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Théo regarde le dé près de Théo.",
+      "parts": [
+        {
+          "t": "Ce matin, Théo regarde "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " dé près de Théo."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand René joue avec le dé, et Théo est très content aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand René joue avec "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " dé, et Théo est très content aussi."
         }
       ]
     },
     {
       "level": "a1",
-      "sentence": "Théo dessine la fée très bien.",
+      "sentence": "Hélène salue la mère bien.",
       "parts": [
         {
-          "t": "Théo dessine "
+          "t": "Hélène salue "
         },
         {
           "blank": "la"
         },
         {
-          "t": " fée très bien."
+          "t": " mère bien."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "Après le cours, Hélène voit une étoile très bien.",
+      "sentence": "Avant le repas, Hélène caresse le cheval près de Théo.",
       "parts": [
         {
-          "t": "Après "
+          "t": "Avant "
         },
         {
           "blank": "le"
         },
         {
-          "t": " cours, Hélène voit une étoile très bien."
+          "t": " repas, Hélène caresse "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cheval près de Théo."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "Après le cours, Hélène voit la fée très bien.",
+      "sentence": "Après le cours, René se prépare pour la fête après le thé.",
       "parts": [
         {
           "t": "Après "
@@ -1813,385 +1075,157 @@
           "blank": "le"
         },
         {
-          "t": " cours, Hélène voit "
+          "t": " cours, René se prépare pour "
         },
         {
           "blank": "la"
         },
         {
-          "t": " fée très bien."
+          "t": " fête après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " thé."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "Après le cours, Théo dessine une étoile très bien.",
+      "sentence": "À midi, Hélène raconte le rêve près de Théo.",
       "parts": [
         {
-          "t": "Après "
+          "t": "À midi, Hélène raconte "
         },
         {
           "blank": "le"
         },
         {
-          "t": " cours, Théo dessine une étoile très bien."
+          "t": " rêve près de Théo."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "Après le cours, Théo dessine la fée très bien.",
+      "sentence": "Ce soir, René comprend la règle après le thé.",
       "parts": [
         {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Théo dessine "
+          "t": "Ce soir, René comprend "
         },
         {
           "blank": "la"
         },
         {
-          "t": " fée très bien."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Après le cours, quand Hélène voit une étoile, Théo est très content aussi.",
-      "parts": [
-        {
-          "t": "Après "
+          "t": " règle après "
         },
         {
           "blank": "le"
         },
         {
-          "t": " cours, quand Hélène voit une étoile, Théo est très content aussi."
+          "t": " thé."
         }
       ]
     },
     {
       "level": "b1",
-      "sentence": "Après le cours, quand Hélène voit la fée, Théo est très content aussi.",
+      "sentence": "Ce matin, quand René regarde le dé, et Théo est très content aussi.",
       "parts": [
         {
-          "t": "Après "
+          "t": "Ce matin, quand René regarde "
         },
         {
           "blank": "le"
         },
         {
-          "t": " cours, quand Hélène voit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " fée, Théo est très content aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Après le cours, quand Théo dessine une étoile, Hélène est très contente aussi.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, quand Théo dessine une étoile, Hélène est très contente aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Après le cours, quand Théo dessine la fée, Hélène est très contente aussi.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, quand Théo dessine "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " fée, Hélène est très contente aussi."
+          "t": " dé, et Théo est très content aussi."
         }
       ]
     },
     {
       "level": "a1",
-      "sentence": "Hélène mange la fève très bien.",
+      "sentence": "René console le père bien.",
       "parts": [
         {
-          "t": "Hélène mange "
+          "t": "René console "
         },
         {
-          "blank": "la"
+          "blank": "le"
         },
         {
-          "t": " fève très bien."
+          "t": " père bien."
         }
       ]
     },
     {
       "level": "a1",
-      "sentence": "Théo cuit la fève très bien.",
+      "sentence": "Eve éteint la télé bien.",
       "parts": [
         {
-          "t": "Théo cuit "
+          "t": "Eve éteint "
         },
         {
           "blank": "la"
         },
         {
-          "t": " fève très bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Hélène mange la fève très bien.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Hélène mange "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " fève très bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Théo cuit la fève très bien.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Théo cuit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " fève très bien."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Après le cours, quand Hélène mange la fève, Théo est très content aussi.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, quand Hélène mange "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " fève, Théo est très content aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Après le cours, quand Théo cuit la fève, Hélène est très contente aussi.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, quand Théo cuit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " fève, Hélène est très contente aussi."
+          "t": " télé bien."
         }
       ]
     },
     {
       "level": "a1",
-      "sentence": "Hélène marche dans le pré.",
+      "sentence": "Hélène regarde par la fenêtre.",
       "parts": [
         {
-          "t": "Hélène marche dans "
+          "t": "Hélène regarde par "
         },
         {
-          "blank": "le"
+          "blank": "la"
         },
         {
-          "t": " pré."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Théo court dans le pré très tôt.",
-      "parts": [
-        {
-          "t": "Théo court dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pré très tôt."
+          "t": " fenêtre."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "Après le cours, Hélène marche dans le pré.",
+      "sentence": "Ce matin, Hélène lit le zéro près de Théo.",
       "parts": [
         {
-          "t": "Après "
+          "t": "Ce matin, Hélène lit "
         },
         {
           "blank": "le"
         },
         {
-          "t": " cours, Hélène marche dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pré."
+          "t": " zéro près de Théo."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "Après le cours, Théo court dans le pré très tôt.",
+      "sentence": "Avant le repas, René achète un béret après le thé.",
       "parts": [
         {
-          "t": "Après "
+          "t": "Avant "
         },
         {
           "blank": "le"
         },
         {
-          "t": " cours, Théo court dans "
+          "t": " repas, René achète un béret après "
         },
         {
           "blank": "le"
         },
         {
-          "t": " pré très tôt."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Après le cours, quand Hélène marche dans le pré, Théo est très content aussi.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, quand Hélène marche dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pré, Théo est très content aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Après le cours, quand Théo court dans le pré, Hélène est très contente aussi.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, quand Théo court dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pré, Hélène est très contente aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Hélène lance le dé très bien.",
-      "parts": [
-        {
-          "t": "Hélène lance "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " dé très bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Théo pose le dé très bien.",
-      "parts": [
-        {
-          "t": "Théo pose "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " dé très bien."
+          "t": " thé."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "Après le cours, Hélène lance le dé très bien.",
+      "sentence": "Après le cours, Hélène plante une étoile près de Théo.",
       "parts": [
         {
           "t": "Après "
@@ -2200,136 +1234,103 @@
           "blank": "le"
         },
         {
-          "t": " cours, Hélène lance "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " dé très bien."
+          "t": " cours, Hélène plante une étoile près de Théo."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "Après le cours, Théo pose le dé très tôt.",
+      "sentence": "À midi, René partage la fève après le thé.",
       "parts": [
         {
-          "t": "Après "
+          "t": "À midi, René partage "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " fève après "
         },
         {
           "blank": "le"
         },
         {
-          "t": " cours, Théo pose "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " dé très tôt."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Après le cours, quand Hélène lance le dé, Théo est très content aussi.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, quand Hélène lance "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " dé, Théo est très content aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Après le cours, quand Théo pose le dé, Hélène est très contente aussi.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, quand Théo pose "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " dé, Hélène est très contente aussi."
+          "t": " thé."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "Après le cours, Hélène part pendant un été.",
+      "sentence": "Ce soir, Hélène plante le pré près de Théo.",
       "parts": [
         {
-          "t": "Après "
+          "t": "Ce soir, Hélène plante "
         },
         {
           "blank": "le"
         },
         {
-          "t": " cours, Hélène part pendant un été."
+          "t": " pré près de Théo."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "Après le cours, Théo nage pendant un été.",
+      "sentence": "Ce soir, Eve aime la fée près de Théo.",
       "parts": [
         {
-          "t": "Après "
+          "t": "Ce soir, Eve aime "
         },
         {
-          "blank": "le"
+          "blank": "la"
         },
         {
-          "t": " cours, Théo nage pendant un été."
+          "t": " fée près de Théo."
         }
       ]
     },
     {
       "level": "b1",
-      "sentence": "Après le cours, quand Hélène part pendant un été, Théo est très content aussi.",
+      "sentence": "Ce matin, quand René appelle la mère, et Théo est très content aussi.",
       "parts": [
         {
-          "t": "Après "
+          "t": "Ce matin, quand René appelle "
         },
         {
-          "blank": "le"
+          "blank": "la"
         },
         {
-          "t": " cours, quand Hélène part pendant un été, Théo est très content aussi."
+          "t": " mère, et Théo est très content aussi."
         }
       ]
     },
     {
       "level": "b1",
-      "sentence": "Après le cours, quand Théo nage pendant un été, Hélène est très contente aussi.",
+      "sentence": "Ce matin, quand Hélène salue le père, et Théo est très content aussi.",
       "parts": [
         {
-          "t": "Après "
+          "t": "Ce matin, quand Hélène salue "
         },
         {
           "blank": "le"
         },
         {
-          "t": " cours, quand Théo nage pendant un été, Hélène est très contente aussi."
+          "t": " père, et Théo est très content aussi."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Théo éteint la télé, parce que Hélène est très contente.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Théo éteint "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " télé, parce que Hélène est très contente."
         }
       ]
     }
@@ -2337,125 +1338,125 @@
   "type12": [
     {
       "level": "a1",
-      "sentence": "Théo parle avec la mère."
+      "sentence": "René conduit jusqu’à une école."
     },
     {
       "level": "a1",
-      "sentence": "Théo parle avec le père."
+      "sentence": "Hélène choisit un été bien."
     },
     {
       "level": "a1",
-      "sentence": "Théo parle avec le frère."
+      "sentence": "Eve embrasse un bébé bien."
     },
     {
       "level": "a1",
-      "sentence": "Théo parle avec un bébé."
+      "sentence": "Hélène salue la mère bien."
     },
     {
       "level": "a2",
-      "sentence": "Après le cours, Théo parle avec la mère."
+      "sentence": "Avant le repas, Hélène caresse le cheval près de Théo."
     },
     {
       "level": "a2",
-      "sentence": "Après le cours, Théo parle avec le père."
+      "sentence": "Après le cours, René se prépare pour la fête après le thé."
     },
     {
       "level": "a2",
-      "sentence": "Après le cours, Théo parle avec le frère."
+      "sentence": "À midi, Hélène raconte le rêve près de Théo."
     },
     {
       "level": "a2",
-      "sentence": "Après le cours, Théo parle avec un bébé."
+      "sentence": "Ce soir, René comprend la règle après le thé."
     },
     {
       "level": "b1",
-      "sentence": "Après le cours, quand Théo parle avec la mère, Hélène est très contente aussi."
+      "sentence": "Ce matin, quand René regarde le dé, et Théo est très content aussi."
     },
     {
       "level": "b1",
-      "sentence": "Après le cours, quand Théo parle avec le père, Hélène est très contente aussi."
+      "sentence": "Ce matin, quand Hélène marche vers une école, et Théo est très content aussi."
     },
     {
       "level": "b1",
-      "sentence": "Après le cours, quand Théo parle avec le frère, Hélène est très contente aussi."
+      "sentence": "Ce matin, quand René prépare un été, et Théo est très content aussi."
     },
     {
       "level": "b1",
-      "sentence": "Après le cours, quand Théo parle avec un bébé, Hélène est très contente aussi."
+      "sentence": "Ce matin, quand Hélène console un bébé, et Théo est très content aussi."
     }
   ],
   "type14": [
     {
       "level": "a1",
-      "sentence": "Théo va dans une école."
+      "sentence": "René console le père bien."
     },
     {
       "level": "a1",
-      "sentence": "Théo voit un élève très bien."
+      "sentence": "Hélène s’occupe du frère bien."
     },
     {
       "level": "a1",
-      "sentence": "Théo sert un café très chaud."
+      "sentence": "Hélène aide un élève bien."
     },
     {
       "level": "a1",
-      "sentence": "Théo allume la télé très tôt."
+      "sentence": "Théo boit un café bien."
     },
     {
       "level": "a1",
-      "sentence": "Théo ferme la fenêtre très bien."
+      "sentence": "Eve éteint la télé bien."
     },
     {
       "level": "a1",
-      "sentence": "Théo sort avec le cheval très tôt."
+      "sentence": "Hélène regarde par la fenêtre."
     },
     {
       "level": "a2",
-      "sentence": "Après le cours, Théo va dans une école très tôt."
+      "sentence": "Ce matin, Hélène lit le zéro près de Théo."
     },
     {
       "level": "a2",
-      "sentence": "Après le cours, Théo voit un élève très bien."
+      "sentence": "Avant le repas, René achète un béret après le thé."
     },
     {
       "level": "a2",
-      "sentence": "Après le cours, Théo sert un café très chaud."
+      "sentence": "Après le cours, Hélène plante une étoile près de Théo."
     },
     {
       "level": "a2",
-      "sentence": "Après le cours, Théo allume la télé très tôt."
+      "sentence": "À midi, René partage la fève après le thé."
     },
     {
       "level": "a2",
-      "sentence": "Après le cours, Théo ferme la fenêtre très bien."
+      "sentence": "Ce soir, Hélène plante le pré près de Théo."
     },
     {
       "level": "a2",
-      "sentence": "Après le cours, Théo sort avec le cheval très tôt."
+      "sentence": "Ce soir, Eve aime la fée près de Théo."
     },
     {
       "level": "b1",
-      "sentence": "Après le cours, quand Théo va dans une école, Hélène est très contente aussi."
+      "sentence": "Ce matin, quand René appelle la mère, et Théo est très content aussi."
     },
     {
       "level": "b1",
-      "sentence": "Après le cours, quand Théo voit un élève, Hélène est très contente aussi."
+      "sentence": "Ce matin, quand Hélène salue le père, et Théo est très content aussi."
     },
     {
       "level": "b1",
-      "sentence": "Après le cours, quand Théo sert un café, Hélène est très contente aussi."
+      "sentence": "Ce matin, quand René s’occupe du frère, et Théo est très content aussi."
     },
     {
       "level": "b1",
-      "sentence": "Après le cours, quand Théo allume la télé, Hélène est très contente aussi."
+      "sentence": "Ce matin, quand René aide un élève, et Théo est très content aussi."
     },
     {
       "level": "b1",
-      "sentence": "Après le cours, quand Théo ferme la fenêtre, Hélène est très contente aussi."
+      "sentence": "Ce matin, quand René prépare un café, et Théo est très content aussi."
     },
     {
       "level": "b1",
-      "sentence": "Après le cours, quand Théo sort avec le cheval, Hélène est très contente aussi."
+      "sentence": "Ce matin, quand Théo éteint la télé, parce que Hélène est très contente."
     }
   ]
 }

@@ -1,28 +1,10 @@
-Phrases Soutien FR — types 9, 10, 12 et 14
-==========================================
+Phrases Soutien FR (types 9 / 10 / 12 / 14)
+Générées par scripts/build-soutien-sense-phrases.py
+Référence sens : modèles Gattegno (phrase-simple-frames + prépositions).
+Validées par scripts/check-soutien-phrases.mjs
+Export : 2026-10-11
 
-Source : src/francais/soutien/phrases/<banque>.json
-(niveaux a1 / a2 / b1). Le filtre « Tous » mélange les trois.
+Banques (40) : a, an, au, b, c-k, c-s, ch, d, e, f, g-g, g-j, gn, h, i, ill, in, j, k, l, m, n, o, oi, on, ou, p, ph, q, r, s-s, s-z, t, u, v, w, x-gz, x-ks, y, z
 
-Chaque phrase est une scène : un seul mot change, la situation reste vraie.
-Les listes de mots mélangés ne sont plus utilisées.
-
-Chaque fichier de banque :
-  type9  — mot dans la phrase   [{ "level", "word", "sentence" }, …]
-  type10 — déterminants          [{ "level", "sentence", "parts" }, …]
-  type12 — compter le son       [{ "level", "sentence" }, …]
-  type14 — phrases à lire       [{ "level", "sentence" }, …]
-
-Type 10 : trous sur l’ / le / la / les (parts = texte + blank).
-Peut partager le texte d’une phrase type 9 / 12 / 14.
-
-Fichiers regroupés :
-  type9-all.json / type10-all.json / type12-all.json / type14-all.json
-  <banque>.json  (ex. ch.json, a.json, s-z.json)
-
-URL sur le site :
-  /soutien-phrases/type9-all.json
-  /soutien-phrases/type10-all.json
-  /soutien-phrases/type12-all.json
-  /soutien-phrases/type14-all.json
-  /soutien-phrases/ch.json
+Niveaux : A1 5–7 mots ≥2 sons · A2 8–12 ≥3 · B1 13–15 ≥4
+Variété : constructions Gattegno (sujet personne + verbe crédible), pas de scène à un seul slot.

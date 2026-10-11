@@ -2,534 +2,1140 @@
   "type9": [
     {
       "level": "a1",
-      "word": "quiche",
-      "sentence": "Quentin mange la quiche avec Véronique."
-    },
-    {
-      "level": "a2",
-      "word": "quiche",
-      "sentence": "Ce matin, Quentin mange la quiche avec Véronique."
-    },
-    {
-      "level": "b1",
-      "word": "quiche",
-      "sentence": "Ce matin, quand Quentin mange la quiche ici, Véronique est très contente aussi."
-    },
-    {
-      "level": "a1",
-      "word": "quinoa",
-      "sentence": "Quentin mange le quinoa avec Véronique."
-    },
-    {
-      "level": "a2",
-      "word": "quinoa",
-      "sentence": "Ce matin, Quentin mange le quinoa avec Véronique."
-    },
-    {
-      "level": "b1",
-      "word": "quinoa",
-      "sentence": "Ce matin, quand Quentin mange le quinoa ici, Véronique est très contente aussi."
-    },
-    {
-      "level": "a1",
-      "word": "chèque",
-      "sentence": "Quentin prend le chèque quatre fois."
-    },
-    {
-      "level": "a2",
-      "word": "chèque",
-      "sentence": "Ce matin, Quentin prend le chèque quatre fois."
-    },
-    {
-      "level": "b1",
-      "word": "chèque",
-      "sentence": "Ce matin, quand Quentin prend le chèque ici, Véronique est très contente aussi."
-    },
-    {
-      "level": "a1",
-      "word": "paquet",
-      "sentence": "Quentin prend le paquet quatre fois."
-    },
-    {
-      "level": "a2",
-      "word": "paquet",
-      "sentence": "Ce matin, Quentin prend le paquet quatre fois."
-    },
-    {
-      "level": "b1",
-      "word": "paquet",
-      "sentence": "Ce matin, quand Quentin prend le paquet ici, Véronique est très contente aussi."
-    },
-    {
-      "level": "a1",
-      "word": "casquette",
-      "sentence": "Quentin prend la casquette quatre fois."
-    },
-    {
-      "level": "a2",
-      "word": "casquette",
-      "sentence": "Ce matin, Quentin prend la casquette quatre fois."
-    },
-    {
-      "level": "b1",
-      "word": "casquette",
-      "sentence": "Ce matin, quand Quentin prend la casquette ici, Véronique est très contente aussi."
-    },
-    {
-      "level": "a1",
-      "word": "plaque",
-      "sentence": "Quentin prend la plaque quatre fois."
-    },
-    {
-      "level": "a2",
-      "word": "plaque",
-      "sentence": "Ce matin, Quentin prend la plaque quatre fois."
-    },
-    {
-      "level": "b1",
-      "word": "plaque",
-      "sentence": "Ce matin, quand Quentin prend la plaque ici, Véronique est très contente aussi."
-    },
-    {
-      "level": "a1",
-      "word": "disque",
-      "sentence": "Quentin prend le disque quatre fois."
-    },
-    {
-      "level": "a2",
-      "word": "disque",
-      "sentence": "Ce matin, Quentin prend le disque quatre fois."
-    },
-    {
-      "level": "b1",
-      "word": "disque",
-      "sentence": "Ce matin, quand Quentin prend le disque ici, Véronique est très contente aussi."
-    },
-    {
-      "level": "a1",
-      "word": "brique",
-      "sentence": "Quentin prend la brique quatre fois."
-    },
-    {
-      "level": "a2",
-      "word": "brique",
-      "sentence": "Ce matin, Quentin prend la brique quatre fois."
-    },
-    {
-      "level": "b1",
-      "word": "brique",
-      "sentence": "Ce matin, quand Quentin prend la brique ici, Véronique est très contente aussi."
-    },
-    {
-      "level": "a1",
       "word": "musique",
-      "sentence": "Quentin voit la musique quatre fois."
+      "sentence": "Quentin aime la musique bien."
     },
     {
       "level": "a2",
       "word": "musique",
-      "sentence": "Ce matin, Quentin voit la musique quatre fois."
+      "sentence": "Ce matin, Monique aime la musique à la boutique."
     },
     {
       "level": "b1",
       "word": "musique",
-      "sentence": "Ce matin, quand Quentin voit la musique ici, Véronique est très contente aussi."
+      "sentence": "À midi, quand Jacques aime la musique à la boutique, et Quentin est très content."
     },
     {
       "level": "a1",
       "word": "boutique",
-      "sentence": "Quentin voit la boutique quatre fois."
+      "sentence": "Frédéric voit la boutique sans question."
     },
     {
       "level": "a2",
       "word": "boutique",
-      "sentence": "Ce matin, Quentin voit la boutique quatre fois."
+      "sentence": "Ce soir, Quentin trouve la boutique avec Monique."
     },
     {
       "level": "b1",
       "word": "boutique",
-      "sentence": "Ce matin, quand Quentin voit la boutique ici, Véronique est très contente aussi."
+      "sentence": "Ce matin, quand Monique visite la boutique, parce que Monique est contente aussi."
+    },
+    {
+      "level": "a1",
+      "word": "casquette",
+      "sentence": "Jacques achète la casquette bien."
+    },
+    {
+      "level": "a2",
+      "word": "casquette",
+      "sentence": "Après le cours, Quentin achète la casquette à la boutique."
+    },
+    {
+      "level": "b1",
+      "word": "casquette",
+      "sentence": "À midi, quand Quentin porte la casquette avec Monique, et Quentin est très content."
     },
     {
       "level": "a1",
       "word": "équipe",
-      "sentence": "Quentin voit une équipe quatre fois."
+      "sentence": "Monique prépare une équipe bien."
     },
     {
       "level": "a2",
       "word": "équipe",
-      "sentence": "Ce matin, Quentin voit une équipe quatre fois."
+      "sentence": "Après le cours, Jacques attrape une équipe à la boutique."
     },
     {
       "level": "b1",
       "word": "équipe",
-      "sentence": "Ce matin, quand Quentin voit une équipe ici, Véronique est très contente aussi."
+      "sentence": "Quand Frédéric marque une équipe sans question, parce que Monique est contente aussi."
     },
     {
       "level": "a1",
       "word": "quartier",
-      "sentence": "Quentin voit le quartier quatre fois."
+      "sentence": "Quentin connaît le quartier bien."
     },
     {
       "level": "a2",
       "word": "quartier",
-      "sentence": "Ce matin, Quentin voit le quartier quatre fois."
+      "sentence": "Avant le repas, Monique connaît le quartier à la boutique."
     },
     {
       "level": "b1",
       "word": "quartier",
-      "sentence": "Ce matin, quand Quentin voit le quartier ici, Véronique est très contente aussi."
+      "sentence": "À midi, quand Jacques connaît le quartier à la boutique, et Quentin est très content."
     },
     {
       "level": "a1",
       "word": "banque",
-      "sentence": "Quentin voit la banque quatre fois."
+      "sentence": "Frédéric aime la banque sans question."
     },
     {
       "level": "a2",
       "word": "banque",
-      "sentence": "Ce matin, Quentin voit la banque quatre fois."
+      "sentence": "Ce matin, Quentin aime la banque avec Monique."
     },
     {
       "level": "b1",
       "word": "banque",
-      "sentence": "Ce matin, quand Quentin voit la banque ici, Véronique est très contente aussi."
+      "sentence": "Ce matin, quand Monique aime la banque, parce que Monique est contente aussi."
+    },
+    {
+      "level": "a1",
+      "word": "chèque",
+      "sentence": "Jacques range le chèque bien."
+    },
+    {
+      "level": "a2",
+      "word": "chèque",
+      "sentence": "À midi, Quentin range le chèque à la boutique."
+    },
+    {
+      "level": "b1",
+      "word": "chèque",
+      "sentence": "À midi, quand Quentin cherche le chèque avec Monique, et Quentin est très content."
+    },
+    {
+      "level": "a1",
+      "word": "paquet",
+      "sentence": "Monique utilise le paquet bien."
+    },
+    {
+      "level": "a2",
+      "word": "paquet",
+      "sentence": "À midi, Jacques range le paquet à la boutique."
+    },
+    {
+      "level": "b1",
+      "word": "paquet",
+      "sentence": "Quand Frédéric oublie le paquet sans question, parce que Monique est contente aussi."
     },
     {
       "level": "a1",
       "word": "coq",
-      "sentence": "Quentin voit le coq quatre fois."
+      "sentence": "Quentin caresse le coq bien."
     },
     {
       "level": "a2",
       "word": "coq",
-      "sentence": "Ce matin, Quentin voit le coq quatre fois."
+      "sentence": "Après le cours, Monique voit le coq à la boutique."
     },
     {
       "level": "b1",
       "word": "coq",
-      "sentence": "Ce matin, quand Quentin voit le coq ici, Véronique est très contente aussi."
+      "sentence": "À midi, quand Jacques soigne le coq à la boutique, et Quentin est très content."
     },
     {
       "level": "a1",
       "word": "cinq",
-      "sentence": "Quentin voit le cinq quatre fois."
+      "sentence": "Frédéric utilise le cinq sans question."
     },
     {
       "level": "a2",
       "word": "cinq",
-      "sentence": "Ce matin, Quentin voit le cinq quatre fois."
+      "sentence": "Avant le repas, Quentin lit le cinq avec Monique."
     },
     {
       "level": "b1",
       "word": "cinq",
-      "sentence": "Ce matin, quand Quentin voit le cinq ici, Véronique est très contente aussi."
+      "sentence": "Ce matin, quand Monique corrige le cinq, parce que Monique est contente aussi."
     },
     {
       "level": "a1",
       "word": "question",
-      "sentence": "Quentin voit la question quatre fois."
+      "sentence": "Jacques recopie la question bien."
     },
     {
       "level": "a2",
       "word": "question",
-      "sentence": "Ce matin, Quentin voit la question quatre fois."
+      "sentence": "Ce soir, Quentin recopie la question à la boutique."
     },
     {
       "level": "b1",
       "word": "question",
-      "sentence": "Ce matin, quand Quentin voit la question ici, Véronique est très contente aussi."
+      "sentence": "À midi, quand Quentin lit la question avec Monique, et Quentin est très content."
     },
     {
       "level": "a1",
       "word": "risque",
-      "sentence": "Quentin voit le risque quatre fois."
+      "sentence": "Monique pose le risque bien."
     },
     {
       "level": "a2",
       "word": "risque",
-      "sentence": "Ce matin, Quentin voit le risque quatre fois."
+      "sentence": "Ce soir, Jacques montre le risque à la boutique."
     },
     {
       "level": "b1",
       "word": "risque",
-      "sentence": "Ce matin, quand Quentin voit le risque ici, Véronique est très contente aussi."
+      "sentence": "Quand Frédéric trouve le risque sans question, parce que Monique est contente aussi."
     },
     {
       "level": "a1",
       "word": "marque",
-      "sentence": "Quentin voit la marque quatre fois."
+      "sentence": "Quentin cherche la marque bien."
     },
     {
       "level": "a2",
       "word": "marque",
-      "sentence": "Ce matin, Quentin voit la marque quatre fois."
+      "sentence": "À midi, Monique pose la marque à la boutique."
     },
     {
       "level": "b1",
       "word": "marque",
-      "sentence": "Ce matin, quand Quentin voit la marque ici, Véronique est très contente aussi."
+      "sentence": "À midi, quand Jacques montre la marque à la boutique, et Quentin est très content."
+    },
+    {
+      "level": "a1",
+      "word": "quiche",
+      "sentence": "Frédéric partage la quiche sans question."
+    },
+    {
+      "level": "a2",
+      "word": "quiche",
+      "sentence": "Après le cours, Quentin sert la quiche avec Monique."
+    },
+    {
+      "level": "b1",
+      "word": "quiche",
+      "sentence": "Ce matin, quand Monique mange la quiche, parce que Monique est contente aussi."
+    },
+    {
+      "level": "a1",
+      "word": "quinoa",
+      "sentence": "Jacques coupe le quinoa bien."
+    },
+    {
+      "level": "a2",
+      "word": "quinoa",
+      "sentence": "Ce matin, Quentin mange le quinoa à la boutique."
+    },
+    {
+      "level": "b1",
+      "word": "quinoa",
+      "sentence": "À midi, quand Quentin prépare le quinoa avec Monique, et Quentin est très content."
     },
     {
       "level": "a1",
       "word": "quatuor",
-      "sentence": "Quentin voit le quatuor quatre fois."
+      "sentence": "Monique commence le quatuor bien."
     },
     {
       "level": "a2",
       "word": "quatuor",
-      "sentence": "Ce matin, Quentin voit le quatuor quatre fois."
+      "sentence": "Ce matin, Jacques écoute le quatuor à la boutique."
     },
     {
       "level": "b1",
       "word": "quatuor",
-      "sentence": "Ce matin, quand Quentin voit le quatuor ici, Véronique est très contente aussi."
+      "sentence": "Quand Frédéric aime le quatuor sans question, parce que Monique est contente aussi."
     },
     {
       "level": "a1",
       "word": "qualité",
-      "sentence": "Quentin voit la qualité quatre fois."
+      "sentence": "Quentin prend la qualité bien."
     },
     {
       "level": "a2",
       "word": "qualité",
-      "sentence": "Ce matin, Quentin voit la qualité quatre fois."
+      "sentence": "Ce soir, Monique utilise la qualité à la boutique."
     },
     {
       "level": "b1",
       "word": "qualité",
-      "sentence": "Ce matin, quand Quentin voit la qualité ici, Véronique est très contente aussi."
+      "sentence": "À midi, quand Jacques range la qualité à la boutique, et Quentin est très content."
     },
     {
       "level": "a1",
       "word": "cirque",
-      "sentence": "Quentin voit le cirque quatre fois."
+      "sentence": "Frédéric termine le cirque sans question."
     },
     {
       "level": "a2",
       "word": "cirque",
-      "sentence": "Ce matin, Quentin voit le cirque quatre fois."
+      "sentence": "À midi, Quentin choisit le cirque avec Monique."
     },
     {
       "level": "b1",
       "word": "cirque",
-      "sentence": "Ce matin, quand Quentin voit le cirque ici, Véronique est très contente aussi."
+      "sentence": "Ce matin, quand Monique regarde le cirque, parce que Monique est contente aussi."
+    },
+    {
+      "level": "a1",
+      "word": "plaque",
+      "sentence": "Jacques montre la plaque bien."
+    },
+    {
+      "level": "a2",
+      "word": "plaque",
+      "sentence": "Avant le repas, Quentin montre la plaque à la boutique."
+    },
+    {
+      "level": "b1",
+      "word": "plaque",
+      "sentence": "À midi, quand Quentin prend la plaque avec Monique, et Quentin est très content."
+    },
+    {
+      "level": "a1",
+      "word": "disque",
+      "sentence": "Monique joue avec le disque."
+    },
+    {
+      "level": "a2",
+      "word": "disque",
+      "sentence": "Avant le repas, Jacques commence le disque à la boutique."
+    },
+    {
+      "level": "b1",
+      "word": "disque",
+      "sentence": "Quand Frédéric écoute le disque sans question, parce que Monique est contente aussi."
+    },
+    {
+      "level": "a1",
+      "word": "brique",
+      "sentence": "Quentin visite la brique bien."
+    },
+    {
+      "level": "a2",
+      "word": "brique",
+      "sentence": "Ce matin, Monique range la brique à la boutique."
+    },
+    {
+      "level": "b1",
+      "word": "brique",
+      "sentence": "À midi, quand Jacques peint la brique à la boutique, et Quentin est très content."
     }
   ],
   "type10": [
     {
       "level": "a1",
-      "sentence": "Quentin mange la quiche avec Véronique.",
+      "sentence": "Quentin aime la musique bien.",
       "parts": [
         {
-          "t": "Quentin mange "
+          "t": "Quentin aime "
         },
         {
           "blank": "la"
         },
         {
-          "t": " quiche avec Véronique."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Quentin mange le quinoa avec Véronique.",
-      "parts": [
-        {
-          "t": "Quentin mange "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " quinoa avec Véronique."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Véronique sert la quiche à Quentin.",
-      "parts": [
-        {
-          "t": "Véronique sert "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " quiche à Quentin."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Véronique sert le quinoa à Quentin.",
-      "parts": [
-        {
-          "t": "Véronique sert "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " quinoa à Quentin."
+          "t": " musique bien."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "Ce matin, Quentin mange la quiche avec Véronique.",
+      "sentence": "Ce matin, Monique aime la musique à la boutique.",
+      "parts": [
+        {
+          "t": "Ce matin, Monique aime "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " musique à "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " boutique."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Jacques aime la musique à la boutique, et Quentin est très content.",
+      "parts": [
+        {
+          "t": "À midi, quand Jacques aime "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " musique à "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " boutique, et Quentin est très content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Frédéric voit la boutique sans question.",
+      "parts": [
+        {
+          "t": "Frédéric voit "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " boutique sans question."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, Quentin trouve la boutique avec Monique.",
+      "parts": [
+        {
+          "t": "Ce soir, Quentin trouve "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " boutique avec Monique."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Monique visite la boutique, parce que Monique est contente aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Monique visite "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " boutique, parce que Monique est contente aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Jacques achète la casquette bien.",
+      "parts": [
+        {
+          "t": "Jacques achète "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " casquette bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le cours, Quentin achète la casquette à la boutique.",
+      "parts": [
+        {
+          "t": "Après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cours, Quentin achète "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " casquette à "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " boutique."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Quentin porte la casquette avec Monique, et Quentin est très content.",
+      "parts": [
+        {
+          "t": "À midi, quand Quentin porte "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " casquette avec Monique, et Quentin est très content."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le cours, Jacques attrape une équipe à la boutique.",
+      "parts": [
+        {
+          "t": "Après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cours, Jacques attrape une équipe à "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " boutique."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Quentin connaît le quartier bien.",
+      "parts": [
+        {
+          "t": "Quentin connaît "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " quartier bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le repas, Monique connaît le quartier à la boutique.",
+      "parts": [
+        {
+          "t": "Avant "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " repas, Monique connaît "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " quartier à "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " boutique."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Jacques connaît le quartier à la boutique, et Quentin est très content.",
+      "parts": [
+        {
+          "t": "À midi, quand Jacques connaît "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " quartier à "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " boutique, et Quentin est très content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Frédéric aime la banque sans question.",
+      "parts": [
+        {
+          "t": "Frédéric aime "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " banque sans question."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Quentin aime la banque avec Monique.",
+      "parts": [
+        {
+          "t": "Ce matin, Quentin aime "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " banque avec Monique."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Monique aime la banque, parce que Monique est contente aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Monique aime "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " banque, parce que Monique est contente aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Jacques range le chèque bien.",
+      "parts": [
+        {
+          "t": "Jacques range "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chèque bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Quentin range le chèque à la boutique.",
+      "parts": [
+        {
+          "t": "À midi, Quentin range "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chèque à "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " boutique."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Quentin cherche le chèque avec Monique, et Quentin est très content.",
+      "parts": [
+        {
+          "t": "À midi, quand Quentin cherche "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chèque avec Monique, et Quentin est très content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Monique utilise le paquet bien.",
+      "parts": [
+        {
+          "t": "Monique utilise "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " paquet bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Jacques range le paquet à la boutique.",
+      "parts": [
+        {
+          "t": "À midi, Jacques range "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " paquet à "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " boutique."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand Frédéric oublie le paquet sans question, parce que Monique est contente aussi.",
+      "parts": [
+        {
+          "t": "Quand Frédéric oublie "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " paquet sans question, parce que Monique est contente aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Quentin caresse le coq bien.",
+      "parts": [
+        {
+          "t": "Quentin caresse "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " coq bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le cours, Monique voit le coq à la boutique.",
+      "parts": [
+        {
+          "t": "Après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cours, Monique voit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " coq à "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " boutique."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Jacques soigne le coq à la boutique, et Quentin est très content.",
+      "parts": [
+        {
+          "t": "À midi, quand Jacques soigne "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " coq à "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " boutique, et Quentin est très content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Frédéric utilise le cinq sans question.",
+      "parts": [
+        {
+          "t": "Frédéric utilise "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cinq sans question."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le repas, Quentin lit le cinq avec Monique.",
+      "parts": [
+        {
+          "t": "Avant "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " repas, Quentin lit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cinq avec Monique."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Monique corrige le cinq, parce que Monique est contente aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Monique corrige "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cinq, parce que Monique est contente aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Jacques recopie la question bien.",
+      "parts": [
+        {
+          "t": "Jacques recopie "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " question bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, Quentin recopie la question à la boutique.",
+      "parts": [
+        {
+          "t": "Ce soir, Quentin recopie "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " question à "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " boutique."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Quentin lit la question avec Monique, et Quentin est très content.",
+      "parts": [
+        {
+          "t": "À midi, quand Quentin lit "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " question avec Monique, et Quentin est très content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Monique pose le risque bien.",
+      "parts": [
+        {
+          "t": "Monique pose "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " risque bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, Jacques montre le risque à la boutique.",
+      "parts": [
+        {
+          "t": "Ce soir, Jacques montre "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " risque à "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " boutique."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand Frédéric trouve le risque sans question, parce que Monique est contente aussi.",
+      "parts": [
+        {
+          "t": "Quand Frédéric trouve "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " risque sans question, parce que Monique est contente aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Quentin cherche la marque bien.",
+      "parts": [
+        {
+          "t": "Quentin cherche "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " marque bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Monique pose la marque à la boutique.",
+      "parts": [
+        {
+          "t": "À midi, Monique pose "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " marque à "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " boutique."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Jacques montre la marque à la boutique, et Quentin est très content.",
+      "parts": [
+        {
+          "t": "À midi, quand Jacques montre "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " marque à "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " boutique, et Quentin est très content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Frédéric partage la quiche sans question.",
+      "parts": [
+        {
+          "t": "Frédéric partage "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " quiche sans question."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le cours, Quentin sert la quiche avec Monique.",
+      "parts": [
+        {
+          "t": "Après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cours, Quentin sert "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " quiche avec Monique."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Monique mange la quiche, parce que Monique est contente aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Monique mange "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " quiche, parce que Monique est contente aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Jacques coupe le quinoa bien.",
+      "parts": [
+        {
+          "t": "Jacques coupe "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " quinoa bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Quentin mange le quinoa à la boutique.",
       "parts": [
         {
           "t": "Ce matin, Quentin mange "
         },
         {
-          "blank": "la"
-        },
-        {
-          "t": " quiche avec Véronique."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Quentin mange le quinoa avec Véronique.",
-      "parts": [
-        {
-          "t": "Ce matin, Quentin mange "
-        },
-        {
           "blank": "le"
         },
         {
-          "t": " quinoa avec Véronique."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Véronique sert la quiche à Quentin.",
-      "parts": [
-        {
-          "t": "Ce matin, Véronique sert "
+          "t": " quinoa à "
         },
         {
           "blank": "la"
         },
         {
-          "t": " quiche à Quentin."
+          "t": " boutique."
         }
       ]
     },
     {
-      "level": "a2",
-      "sentence": "Ce matin, Véronique sert le quinoa à Quentin.",
+      "level": "b1",
+      "sentence": "À midi, quand Quentin prépare le quinoa avec Monique, et Quentin est très content.",
       "parts": [
         {
-          "t": "Ce matin, Véronique sert "
+          "t": "À midi, quand Quentin prépare "
         },
         {
           "blank": "le"
         },
         {
-          "t": " quinoa à Quentin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Quentin mange la quiche ici, Véronique est très contente aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Quentin mange "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " quiche ici, Véronique est très contente aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Quentin mange le quinoa ici, Véronique est très contente aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Quentin mange "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " quinoa ici, Véronique est très contente aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Véronique sert la quiche ici, Quentin est très content aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Véronique sert "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " quiche ici, Quentin est très content aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Véronique sert le quinoa ici, Quentin est très content aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Véronique sert "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " quinoa ici, Quentin est très content aussi."
+          "t": " quinoa avec Monique, et Quentin est très content."
         }
       ]
     },
     {
       "level": "a1",
-      "sentence": "Quentin prend le chèque quatre fois.",
+      "sentence": "Monique commence le quatuor bien.",
       "parts": [
         {
-          "t": "Quentin prend "
+          "t": "Monique commence "
         },
         {
           "blank": "le"
         },
         {
-          "t": " chèque quatre fois."
+          "t": " quatuor bien."
         }
       ]
     },
     {
-      "level": "a1",
-      "sentence": "Quentin prend le paquet quatre fois.",
+      "level": "a2",
+      "sentence": "Ce matin, Jacques écoute le quatuor à la boutique.",
       "parts": [
         {
-          "t": "Quentin prend "
+          "t": "Ce matin, Jacques écoute "
         },
         {
           "blank": "le"
         },
         {
-          "t": " paquet quatre fois."
+          "t": " quatuor à "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " boutique."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand Frédéric aime le quatuor sans question, parce que Monique est contente aussi.",
+      "parts": [
+        {
+          "t": "Quand Frédéric aime "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " quatuor sans question, parce que Monique est contente aussi."
         }
       ]
     },
     {
       "level": "a1",
-      "sentence": "Quentin prend la casquette quatre fois.",
+      "sentence": "Quentin prend la qualité bien.",
       "parts": [
         {
           "t": "Quentin prend "
@@ -538,1582 +1144,739 @@
           "blank": "la"
         },
         {
-          "t": " casquette quatre fois."
+          "t": " qualité bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, Monique utilise la qualité à la boutique.",
+      "parts": [
+        {
+          "t": "Ce soir, Monique utilise "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " qualité à "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " boutique."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Jacques range la qualité à la boutique, et Quentin est très content.",
+      "parts": [
+        {
+          "t": "À midi, quand Jacques range "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " qualité à "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " boutique, et Quentin est très content."
         }
       ]
     },
     {
       "level": "a1",
-      "sentence": "Quentin prend la plaque quatre fois.",
+      "sentence": "Frédéric termine le cirque sans question.",
+      "parts": [
+        {
+          "t": "Frédéric termine "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cirque sans question."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Quentin choisit le cirque avec Monique.",
+      "parts": [
+        {
+          "t": "À midi, Quentin choisit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cirque avec Monique."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Monique regarde le cirque, parce que Monique est contente aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Monique regarde "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cirque, parce que Monique est contente aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Jacques montre la plaque bien.",
+      "parts": [
+        {
+          "t": "Jacques montre "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " plaque bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le repas, Quentin montre la plaque à la boutique.",
+      "parts": [
+        {
+          "t": "Avant "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " repas, Quentin montre "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " plaque à "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " boutique."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Quentin prend la plaque avec Monique, et Quentin est très content.",
+      "parts": [
+        {
+          "t": "À midi, quand Quentin prend "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " plaque avec Monique, et Quentin est très content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Monique joue avec le disque.",
+      "parts": [
+        {
+          "t": "Monique joue avec "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " disque."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le repas, Jacques commence le disque à la boutique.",
+      "parts": [
+        {
+          "t": "Avant "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " repas, Jacques commence "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " disque à "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " boutique."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand Frédéric écoute le disque sans question, parce que Monique est contente aussi.",
+      "parts": [
+        {
+          "t": "Quand Frédéric écoute "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " disque sans question, parce que Monique est contente aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Quentin visite la brique bien.",
+      "parts": [
+        {
+          "t": "Quentin visite "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " brique bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Monique range la brique à la boutique.",
+      "parts": [
+        {
+          "t": "Ce matin, Monique range "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " brique à "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " boutique."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Jacques peint la brique à la boutique, et Quentin est très content.",
+      "parts": [
+        {
+          "t": "À midi, quand Jacques peint "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " brique à "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " boutique, et Quentin est très content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Quentin aime la musique vite.",
+      "parts": [
+        {
+          "t": "Quentin aime "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " musique vite."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Quentin visite la boutique bien.",
+      "parts": [
+        {
+          "t": "Quentin visite "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " boutique bien."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Jacques enfile la casquette bien.",
+      "parts": [
+        {
+          "t": "Jacques enfile "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " casquette bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le repas, Quentin lit la question avec Monique.",
+      "parts": [
+        {
+          "t": "Avant "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " repas, Quentin lit "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " question avec Monique."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Quentin cherche le risque avec Monique.",
+      "parts": [
+        {
+          "t": "Ce matin, Quentin cherche "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " risque avec Monique."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Quentin cherche la marque avec Monique.",
+      "parts": [
+        {
+          "t": "À midi, Quentin cherche "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " marque avec Monique."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, Jacques achète la quiche à la boutique.",
+      "parts": [
+        {
+          "t": "Ce soir, Jacques achète "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " quiche à "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " boutique."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Jacques ouvre la brique à la boutique, et Quentin est très content.",
+      "parts": [
+        {
+          "t": "À midi, quand Jacques ouvre "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " brique à "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " boutique, et Quentin est très content."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Jacques aime la musique près de Frédéric, et Quentin est très content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Jacques aime "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " musique près de Frédéric, et Quentin est très content."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Jacques cherche la boutique à la boutique, et Quentin est très content.",
+      "parts": [
+        {
+          "t": "À midi, quand Jacques cherche "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " boutique à "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " boutique, et Quentin est très content."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Quentin choisit la casquette avec Monique, et Quentin est très content.",
+      "parts": [
+        {
+          "t": "À midi, quand Quentin choisit "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " casquette avec Monique, et Quentin est très content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Quentin connaît le quartier vite.",
+      "parts": [
+        {
+          "t": "Quentin connaît "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " quartier vite."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Jacques aime la banque bien.",
+      "parts": [
+        {
+          "t": "Jacques aime "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " banque bien."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Frédéric utilise le chèque avec Monique.",
+      "parts": [
+        {
+          "t": "Frédéric utilise "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chèque avec Monique."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Quentin prend le paquet bien.",
       "parts": [
         {
           "t": "Quentin prend "
         },
         {
-          "blank": "la"
+          "blank": "le"
         },
         {
-          "t": " plaque quatre fois."
+          "t": " paquet bien."
         }
       ]
     },
     {
       "level": "a1",
-      "sentence": "Quentin prend le disque quatre fois.",
+      "sentence": "Jacques observe le coq bien.",
       "parts": [
         {
-          "t": "Quentin prend "
+          "t": "Jacques observe "
         },
         {
           "blank": "le"
         },
         {
-          "t": " disque quatre fois."
+          "t": " coq bien."
         }
       ]
     },
     {
       "level": "a1",
-      "sentence": "Quentin prend la brique quatre fois.",
+      "sentence": "Quentin prépare le cinq bien.",
       "parts": [
         {
-          "t": "Quentin prend "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " brique quatre fois."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Véronique pose le chèque quatre fois.",
-      "parts": [
-        {
-          "t": "Véronique pose "
+          "t": "Quentin prépare "
         },
         {
           "blank": "le"
         },
         {
-          "t": " chèque quatre fois."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Véronique pose le paquet quatre fois.",
-      "parts": [
-        {
-          "t": "Véronique pose "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " paquet quatre fois."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Véronique pose la casquette quatre fois.",
-      "parts": [
-        {
-          "t": "Véronique pose "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " casquette quatre fois."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Véronique pose la plaque quatre fois.",
-      "parts": [
-        {
-          "t": "Véronique pose "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " plaque quatre fois."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Véronique pose le disque quatre fois.",
-      "parts": [
-        {
-          "t": "Véronique pose "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " disque quatre fois."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Véronique pose la brique quatre fois.",
-      "parts": [
-        {
-          "t": "Véronique pose "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " brique quatre fois."
+          "t": " cinq bien."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "Ce matin, Quentin prend le chèque quatre fois.",
+      "sentence": "Ce matin, Quentin prépare le quinoa avec Monique.",
       "parts": [
         {
-          "t": "Ce matin, Quentin prend "
+          "t": "Ce matin, Quentin prépare "
         },
         {
           "blank": "le"
         },
         {
-          "t": " chèque quatre fois."
+          "t": " quinoa avec Monique."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "Ce matin, Quentin prend le paquet quatre fois.",
+      "sentence": "Avant le repas, Jacques commence le quatuor à la boutique.",
       "parts": [
         {
-          "t": "Ce matin, Quentin prend "
+          "t": "Avant "
         },
         {
           "blank": "le"
         },
         {
-          "t": " paquet quatre fois."
+          "t": " repas, Jacques commence "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " quatuor à "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " boutique."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "Ce matin, Quentin prend la casquette quatre fois.",
+      "sentence": "Après le cours, Quentin cherche la qualité avec Monique.",
       "parts": [
         {
-          "t": "Ce matin, Quentin prend "
+          "t": "Après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cours, Quentin cherche "
         },
         {
           "blank": "la"
         },
         {
-          "t": " casquette quatre fois."
+          "t": " qualité avec Monique."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "Ce matin, Quentin prend la plaque quatre fois.",
+      "sentence": "À midi, Jacques commence le cirque à la boutique.",
       "parts": [
         {
-          "t": "Ce matin, Quentin prend "
+          "t": "À midi, Jacques commence "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cirque à "
         },
         {
           "blank": "la"
         },
         {
-          "t": " plaque quatre fois."
+          "t": " boutique."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "Ce matin, Quentin prend le disque quatre fois.",
+      "sentence": "Ce soir, Quentin prend la plaque avec Monique.",
       "parts": [
         {
-          "t": "Ce matin, Quentin prend "
+          "t": "Ce soir, Quentin prend "
         },
         {
-          "blank": "le"
+          "blank": "la"
         },
         {
-          "t": " disque quatre fois."
+          "t": " plaque avec Monique."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "Ce matin, Quentin prend la brique quatre fois.",
+      "sentence": "À midi, Quentin choisit le disque avec Monique.",
       "parts": [
         {
-          "t": "Ce matin, Quentin prend "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " brique quatre fois."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Véronique pose le chèque quatre fois.",
-      "parts": [
-        {
-          "t": "Ce matin, Véronique pose "
+          "t": "À midi, Quentin choisit "
         },
         {
           "blank": "le"
         },
         {
-          "t": " chèque quatre fois."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Véronique pose le paquet quatre fois.",
-      "parts": [
-        {
-          "t": "Ce matin, Véronique pose "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " paquet quatre fois."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Véronique pose la casquette quatre fois.",
-      "parts": [
-        {
-          "t": "Ce matin, Véronique pose "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " casquette quatre fois."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Véronique pose la plaque quatre fois.",
-      "parts": [
-        {
-          "t": "Ce matin, Véronique pose "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " plaque quatre fois."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Véronique pose le disque quatre fois.",
-      "parts": [
-        {
-          "t": "Ce matin, Véronique pose "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " disque quatre fois."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Véronique pose la brique quatre fois.",
-      "parts": [
-        {
-          "t": "Ce matin, Véronique pose "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " brique quatre fois."
+          "t": " disque avec Monique."
         }
       ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Quentin prend le chèque ici, Véronique est très contente aussi.",
+      "sentence": "Ce matin, quand Jacques connaît le quartier près de Frédéric, et Quentin est très content.",
       "parts": [
         {
-          "t": "Ce matin, quand Quentin prend "
+          "t": "Ce matin, quand Jacques connaît "
         },
         {
           "blank": "le"
         },
         {
-          "t": " chèque ici, Véronique est très contente aussi."
+          "t": " quartier près de Frédéric, et Quentin est très content."
         }
       ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Quentin prend le paquet ici, Véronique est très contente aussi.",
+      "sentence": "À midi, quand Quentin aime la banque avec Monique, et Quentin est très content.",
       "parts": [
         {
-          "t": "Ce matin, quand Quentin prend "
+          "t": "À midi, quand Quentin aime "
         },
         {
-          "blank": "le"
+          "blank": "la"
         },
         {
-          "t": " paquet ici, Véronique est très contente aussi."
+          "t": " banque avec Monique, et Quentin est très content."
         }
       ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Quentin prend la casquette ici, Véronique est très contente aussi.",
+      "sentence": "Ce matin, quand Monique oublie le chèque, parce que Monique est contente aussi.",
       "parts": [
         {
-          "t": "Ce matin, quand Quentin prend "
+          "t": "Ce matin, quand Monique oublie "
         },
         {
-          "blank": "la"
+          "blank": "le"
         },
         {
-          "t": " casquette ici, Véronique est très contente aussi."
+          "t": " chèque, parce que Monique est contente aussi."
         }
       ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Quentin prend la plaque ici, Véronique est très contente aussi.",
+      "sentence": "À midi, quand Jacques range le paquet à la boutique, et Quentin est très content.",
       "parts": [
         {
-          "t": "Ce matin, quand Quentin prend "
+          "t": "À midi, quand Jacques range "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " paquet à "
         },
         {
           "blank": "la"
         },
         {
-          "t": " plaque ici, Véronique est très contente aussi."
+          "t": " boutique, et Quentin est très content."
         }
       ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Quentin prend le disque ici, Véronique est très contente aussi.",
+      "sentence": "À midi, quand Quentin caresse le coq avec Monique, et Quentin est très content.",
       "parts": [
         {
-          "t": "Ce matin, quand Quentin prend "
+          "t": "À midi, quand Quentin caresse "
         },
         {
           "blank": "le"
         },
         {
-          "t": " disque ici, Véronique est très contente aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Quentin prend la brique ici, Véronique est très contente aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Quentin prend "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " brique ici, Véronique est très contente aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Véronique pose le chèque ici, Quentin est très content aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Véronique pose "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chèque ici, Quentin est très content aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Véronique pose le paquet ici, Quentin est très content aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Véronique pose "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " paquet ici, Quentin est très content aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Véronique pose la casquette ici, Quentin est très content aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Véronique pose "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " casquette ici, Quentin est très content aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Véronique pose la plaque ici, Quentin est très content aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Véronique pose "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " plaque ici, Quentin est très content aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Véronique pose le disque ici, Quentin est très content aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Véronique pose "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " disque ici, Quentin est très content aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Véronique pose la brique ici, Quentin est très content aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Véronique pose "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " brique ici, Quentin est très content aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Quentin voit la musique quatre fois.",
-      "parts": [
-        {
-          "t": "Quentin voit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " musique quatre fois."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Quentin voit la boutique quatre fois.",
-      "parts": [
-        {
-          "t": "Quentin voit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boutique quatre fois."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Quentin voit le quartier quatre fois.",
-      "parts": [
-        {
-          "t": "Quentin voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " quartier quatre fois."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Quentin voit la banque quatre fois.",
-      "parts": [
-        {
-          "t": "Quentin voit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " banque quatre fois."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Quentin voit le coq quatre fois.",
-      "parts": [
-        {
-          "t": "Quentin voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " coq quatre fois."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Quentin voit le cinq quatre fois.",
-      "parts": [
-        {
-          "t": "Quentin voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cinq quatre fois."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Quentin voit la question quatre fois.",
-      "parts": [
-        {
-          "t": "Quentin voit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " question quatre fois."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Quentin voit le risque quatre fois.",
-      "parts": [
-        {
-          "t": "Quentin voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " risque quatre fois."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Quentin voit la marque quatre fois.",
-      "parts": [
-        {
-          "t": "Quentin voit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " marque quatre fois."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Quentin voit le quatuor quatre fois.",
-      "parts": [
-        {
-          "t": "Quentin voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " quatuor quatre fois."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Quentin voit la qualité quatre fois.",
-      "parts": [
-        {
-          "t": "Quentin voit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " qualité quatre fois."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Quentin voit le cirque quatre fois.",
-      "parts": [
-        {
-          "t": "Quentin voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cirque quatre fois."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Véronique montre la musique à Quentin.",
-      "parts": [
-        {
-          "t": "Véronique montre "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " musique à Quentin."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Véronique montre la boutique à Quentin.",
-      "parts": [
-        {
-          "t": "Véronique montre "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boutique à Quentin."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Véronique montre le quartier à Quentin.",
-      "parts": [
-        {
-          "t": "Véronique montre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " quartier à Quentin."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Véronique montre la banque à Quentin.",
-      "parts": [
-        {
-          "t": "Véronique montre "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " banque à Quentin."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Véronique montre le coq à Quentin.",
-      "parts": [
-        {
-          "t": "Véronique montre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " coq à Quentin."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Véronique montre le cinq à Quentin.",
-      "parts": [
-        {
-          "t": "Véronique montre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cinq à Quentin."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Véronique montre la question à Quentin.",
-      "parts": [
-        {
-          "t": "Véronique montre "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " question à Quentin."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Véronique montre le risque à Quentin.",
-      "parts": [
-        {
-          "t": "Véronique montre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " risque à Quentin."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Véronique montre la marque à Quentin.",
-      "parts": [
-        {
-          "t": "Véronique montre "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " marque à Quentin."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Véronique montre le quatuor à Quentin.",
-      "parts": [
-        {
-          "t": "Véronique montre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " quatuor à Quentin."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Véronique montre la qualité à Quentin.",
-      "parts": [
-        {
-          "t": "Véronique montre "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " qualité à Quentin."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Véronique montre le cirque à Quentin.",
-      "parts": [
-        {
-          "t": "Véronique montre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cirque à Quentin."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Quentin voit la musique quatre fois.",
-      "parts": [
-        {
-          "t": "Ce matin, Quentin voit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " musique quatre fois."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Quentin voit la boutique quatre fois.",
-      "parts": [
-        {
-          "t": "Ce matin, Quentin voit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boutique quatre fois."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Quentin voit le quartier quatre fois.",
-      "parts": [
-        {
-          "t": "Ce matin, Quentin voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " quartier quatre fois."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Quentin voit la banque quatre fois.",
-      "parts": [
-        {
-          "t": "Ce matin, Quentin voit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " banque quatre fois."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Quentin voit le coq quatre fois.",
-      "parts": [
-        {
-          "t": "Ce matin, Quentin voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " coq quatre fois."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Quentin voit le cinq quatre fois.",
-      "parts": [
-        {
-          "t": "Ce matin, Quentin voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cinq quatre fois."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Quentin voit la question quatre fois.",
-      "parts": [
-        {
-          "t": "Ce matin, Quentin voit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " question quatre fois."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Quentin voit le risque quatre fois.",
-      "parts": [
-        {
-          "t": "Ce matin, Quentin voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " risque quatre fois."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Quentin voit la marque quatre fois.",
-      "parts": [
-        {
-          "t": "Ce matin, Quentin voit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " marque quatre fois."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Quentin voit le quatuor quatre fois.",
-      "parts": [
-        {
-          "t": "Ce matin, Quentin voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " quatuor quatre fois."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Quentin voit la qualité quatre fois.",
-      "parts": [
-        {
-          "t": "Ce matin, Quentin voit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " qualité quatre fois."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Quentin voit le cirque quatre fois.",
-      "parts": [
-        {
-          "t": "Ce matin, Quentin voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cirque quatre fois."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Véronique montre la musique à Quentin.",
-      "parts": [
-        {
-          "t": "Ce matin, Véronique montre "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " musique à Quentin."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Véronique montre la boutique à Quentin.",
-      "parts": [
-        {
-          "t": "Ce matin, Véronique montre "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boutique à Quentin."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Véronique montre le quartier à Quentin.",
-      "parts": [
-        {
-          "t": "Ce matin, Véronique montre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " quartier à Quentin."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Véronique montre la banque à Quentin.",
-      "parts": [
-        {
-          "t": "Ce matin, Véronique montre "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " banque à Quentin."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Véronique montre le coq à Quentin.",
-      "parts": [
-        {
-          "t": "Ce matin, Véronique montre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " coq à Quentin."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Véronique montre le cinq à Quentin.",
-      "parts": [
-        {
-          "t": "Ce matin, Véronique montre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cinq à Quentin."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Véronique montre la question à Quentin.",
-      "parts": [
-        {
-          "t": "Ce matin, Véronique montre "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " question à Quentin."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Véronique montre le risque à Quentin.",
-      "parts": [
-        {
-          "t": "Ce matin, Véronique montre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " risque à Quentin."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Véronique montre la marque à Quentin.",
-      "parts": [
-        {
-          "t": "Ce matin, Véronique montre "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " marque à Quentin."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Véronique montre le quatuor à Quentin.",
-      "parts": [
-        {
-          "t": "Ce matin, Véronique montre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " quatuor à Quentin."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Véronique montre la qualité à Quentin.",
-      "parts": [
-        {
-          "t": "Ce matin, Véronique montre "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " qualité à Quentin."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Véronique montre le cirque à Quentin.",
-      "parts": [
-        {
-          "t": "Ce matin, Véronique montre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cirque à Quentin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Quentin voit la musique ici, Véronique est très contente aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Quentin voit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " musique ici, Véronique est très contente aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Quentin voit la boutique ici, Véronique est très contente aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Quentin voit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boutique ici, Véronique est très contente aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Quentin voit le quartier ici, Véronique est très contente aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Quentin voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " quartier ici, Véronique est très contente aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Quentin voit la banque ici, Véronique est très contente aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Quentin voit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " banque ici, Véronique est très contente aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Quentin voit le coq ici, Véronique est très contente aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Quentin voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " coq ici, Véronique est très contente aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Quentin voit le cinq ici, Véronique est très contente aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Quentin voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cinq ici, Véronique est très contente aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Quentin voit la question ici, Véronique est très contente aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Quentin voit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " question ici, Véronique est très contente aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Quentin voit le risque ici, Véronique est très contente aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Quentin voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " risque ici, Véronique est très contente aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Quentin voit la marque ici, Véronique est très contente aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Quentin voit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " marque ici, Véronique est très contente aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Quentin voit le quatuor ici, Véronique est très contente aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Quentin voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " quatuor ici, Véronique est très contente aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Quentin voit la qualité ici, Véronique est très contente aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Quentin voit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " qualité ici, Véronique est très contente aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Quentin voit le cirque ici, Véronique est très contente aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Quentin voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cirque ici, Véronique est très contente aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Véronique montre la musique ici, Quentin est très content aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Véronique montre "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " musique ici, Quentin est très content aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Véronique montre la boutique ici, Quentin est très content aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Véronique montre "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boutique ici, Quentin est très content aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Véronique montre le quartier ici, Quentin est très content aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Véronique montre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " quartier ici, Quentin est très content aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Véronique montre la banque ici, Quentin est très content aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Véronique montre "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " banque ici, Quentin est très content aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Véronique montre le coq ici, Quentin est très content aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Véronique montre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " coq ici, Quentin est très content aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Véronique montre le cinq ici, Quentin est très content aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Véronique montre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cinq ici, Quentin est très content aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Véronique montre la question ici, Quentin est très content aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Véronique montre "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " question ici, Quentin est très content aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Véronique montre le risque ici, Quentin est très content aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Véronique montre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " risque ici, Quentin est très content aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Véronique montre la marque ici, Quentin est très content aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Véronique montre "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " marque ici, Quentin est très content aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Véronique montre le quatuor ici, Quentin est très content aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Véronique montre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " quatuor ici, Quentin est très content aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Véronique montre la qualité ici, Quentin est très content aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Véronique montre "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " qualité ici, Quentin est très content aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Véronique montre le cirque ici, Quentin est très content aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Véronique montre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cirque ici, Quentin est très content aussi."
+          "t": " coq avec Monique, et Quentin est très content."
         }
       ]
     }
@@ -2121,125 +1884,125 @@
   "type12": [
     {
       "level": "a1",
-      "sentence": "Véronique sert la quiche à Quentin."
+      "sentence": "Quentin aime la musique vite."
     },
     {
       "level": "a1",
-      "sentence": "Véronique sert le quinoa à Quentin."
+      "sentence": "Quentin visite la boutique bien."
     },
     {
       "level": "a1",
-      "sentence": "Véronique pose le chèque quatre fois."
+      "sentence": "Jacques enfile la casquette bien."
     },
     {
       "level": "a1",
-      "sentence": "Véronique pose le paquet quatre fois."
+      "sentence": "Quentin gagne une équipe bien."
     },
     {
       "level": "a2",
-      "sentence": "Ce matin, Véronique sert la quiche à Quentin."
+      "sentence": "Avant le repas, Quentin lit la question avec Monique."
     },
     {
       "level": "a2",
-      "sentence": "Ce matin, Véronique sert le quinoa à Quentin."
+      "sentence": "Ce matin, Quentin cherche le risque avec Monique."
     },
     {
       "level": "a2",
-      "sentence": "Ce matin, Véronique pose le chèque quatre fois."
+      "sentence": "À midi, Quentin cherche la marque avec Monique."
     },
     {
       "level": "a2",
-      "sentence": "Ce matin, Véronique pose le paquet quatre fois."
+      "sentence": "Ce soir, Jacques achète la quiche à la boutique."
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Véronique sert la quiche ici, Quentin est très content aussi."
+      "sentence": "À midi, quand Jacques ouvre la brique à la boutique, et Quentin est très content."
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Véronique sert le quinoa ici, Quentin est très content aussi."
+      "sentence": "Ce matin, quand Jacques aime la musique près de Frédéric, et Quentin est très content."
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Véronique pose le chèque ici, Quentin est très content aussi."
+      "sentence": "À midi, quand Jacques cherche la boutique à la boutique, et Quentin est très content."
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Véronique pose le paquet ici, Quentin est très content aussi."
+      "sentence": "À midi, quand Quentin choisit la casquette avec Monique, et Quentin est très content."
     }
   ],
   "type14": [
     {
       "level": "a1",
-      "sentence": "Véronique pose la casquette quatre fois."
+      "sentence": "Quentin connaît le quartier vite."
     },
     {
       "level": "a1",
-      "sentence": "Véronique pose la plaque quatre fois."
+      "sentence": "Jacques aime la banque bien."
     },
     {
       "level": "a1",
-      "sentence": "Véronique pose le disque quatre fois."
+      "sentence": "Frédéric utilise le chèque avec Monique."
     },
     {
       "level": "a1",
-      "sentence": "Véronique pose la brique quatre fois."
+      "sentence": "Quentin prend le paquet bien."
     },
     {
       "level": "a1",
-      "sentence": "Véronique montre la musique à Quentin."
+      "sentence": "Jacques observe le coq bien."
     },
     {
       "level": "a1",
-      "sentence": "Véronique montre la boutique à Quentin."
+      "sentence": "Quentin prépare le cinq bien."
     },
     {
       "level": "a2",
-      "sentence": "Ce matin, Véronique pose la casquette quatre fois."
+      "sentence": "Ce matin, Quentin prépare le quinoa avec Monique."
     },
     {
       "level": "a2",
-      "sentence": "Ce matin, Véronique pose la plaque quatre fois."
+      "sentence": "Avant le repas, Jacques commence le quatuor à la boutique."
     },
     {
       "level": "a2",
-      "sentence": "Ce matin, Véronique pose le disque quatre fois."
+      "sentence": "Après le cours, Quentin cherche la qualité avec Monique."
     },
     {
       "level": "a2",
-      "sentence": "Ce matin, Véronique pose la brique quatre fois."
+      "sentence": "À midi, Jacques commence le cirque à la boutique."
     },
     {
       "level": "a2",
-      "sentence": "Ce matin, Véronique montre la musique à Quentin."
+      "sentence": "Ce soir, Quentin prend la plaque avec Monique."
     },
     {
       "level": "a2",
-      "sentence": "Ce matin, Véronique montre la boutique à Quentin."
+      "sentence": "À midi, Quentin choisit le disque avec Monique."
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Véronique pose la casquette ici, Quentin est très content aussi."
+      "sentence": "Quand Frédéric regarde une équipe avec Monique, parce que Monique est contente aussi."
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Véronique pose la plaque ici, Quentin est très content aussi."
+      "sentence": "Ce matin, quand Jacques connaît le quartier près de Frédéric, et Quentin est très content."
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Véronique pose le disque ici, Quentin est très content aussi."
+      "sentence": "À midi, quand Quentin aime la banque avec Monique, et Quentin est très content."
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Véronique pose la brique ici, Quentin est très content aussi."
+      "sentence": "Ce matin, quand Monique oublie le chèque, parce que Monique est contente aussi."
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Véronique montre la musique ici, Quentin est très content aussi."
+      "sentence": "À midi, quand Jacques range le paquet à la boutique, et Quentin est très content."
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Véronique montre la boutique ici, Quentin est très content aussi."
+      "sentence": "À midi, quand Quentin caresse le coq avec Monique, et Quentin est très content."
     }
   ]
 }
