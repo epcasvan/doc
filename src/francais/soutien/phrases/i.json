@@ -6843,128 +6843,388 @@
       ]
     }
   ],
-  "type12": [
-    {
-      "level": "a1",
-      "sentence": "La jardinière discute avec un ami."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le frère cherche un autrichien."
-    },
-    {
-      "level": "a1",
-      "sentence": "Iris soigne la biche bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La copine aime la boucherie."
-    },
+  "type12Stories": [
     {
       "level": "a2",
-      "sentence": "À midi, le musicien pose le chirurgien avec Nina."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, une amie cherche le ciel ici vite."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la tante oublie le comprimé fini ici."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le cuisinier invite la cousine ici vite."
+      "sentences": [
+        "Emma et Sara se retrouvent à l’école.",
+        "Emma apporte une prise dans un sac.",
+        "Sara pose un livre sur la table.",
+        "Ils parlent d’abord d’une prise.",
+        "Puis Sara montre un vis à Emma.",
+        "Tout à coup, une prise tombe par terre.",
+        "Emma ramasse une prise et rit.",
+        "Sara range un livre et un vis.",
+        "Avant de partir, ils vérifient encore un pizza."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le frère range un enregistrement, et Nina part très vite aussi."
+      "sentences": [
+        "Ce matin, Sofia travaille dans la cuisine.",
+        "Il prépare un souris avec soin.",
+        "Amira arrive et regarde un souris.",
+        "Ensemble, ils ajoutent une serviette.",
+        "Sofia explique l’usage d’une serviette.",
+        "Amira propose aussi une prise.",
+        "Le travail avance grâce à un souris.",
+        "Ils placent une prise près d’une serviette.",
+        "À la fin, un vis est prêt pour demain."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Yanis fait des courses au marché.",
+        "Dans le panier, il y a déjà un livre.",
+        "Karim choisit un souris juste à côté.",
+        "Ils comparent un livre et un souris.",
+        "Le vendeur parle d’un riz.",
+        "Yanis prend aussi un riz.",
+        "Karim paie et range un livre.",
+        "Sur le chemin, ils discutent d’un souris.",
+        "À la maison, ils sortent encore une prise."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Iris prend le fiancé, et Nina part très vite aussi."
+      "sentences": [
+        "Nora lit un message à la bibliothèque.",
+        "Omar doit apporter un livre rapidement.",
+        "Nora part avec une serviette.",
+        "Ils se croisent près d’un souris.",
+        "Omar donne un livre à Nora.",
+        "Nora vérifie un livre calmement.",
+        "Ensuite, ils déposent une serviette.",
+        "Une amie demande des nouvelles d’un souris.",
+        "Plus tard, un pizza termine la journée."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Adam organise une activité dans la cour.",
+        "Maya apporte un riz dès le début.",
+        "Sur la table, on voit un riz et un pizza.",
+        "Les enfants touchent un pizza à tour de rôle.",
+        "Adam explique le mot lié à un livre.",
+        "Maya dessine un livre au tableau.",
+        "Tout le monde écoute l’histoire d’un riz.",
+        "Après l’exercice, ils rangent un pizza.",
+        "Adam note encore une serviette dans le cahier."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand une amie regarde le film, et Nina part très vite aussi."
+      "sentences": [
+        "Il pleut un peu au magasin.",
+        "Inès protège une prise sous le bras.",
+        "Adam tient un livre contre lui.",
+        "Ils entrent et posent une prise.",
+        "Inès sèche un livre avec un chiffon.",
+        "Adam prépare un riz pour attendre.",
+        "Ils parlent calmement d’une prise.",
+        "Quand la pluie cesse, un riz est prêt.",
+        "Ils repartent avec un vis."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Maya et Sara révisent à la bibliothèque.",
+        "La leçon commence avec un pizza.",
+        "Maya lit une phrase sur un pizza.",
+        "Sara répète le mot un livre.",
+        "Ils écrivent un livre dans le cahier.",
+        "Une erreur apparaît près d’un riz.",
+        "Maya corrige et montre un riz.",
+        "Sara récite encore la phrase d’un pizza.",
+        "Avant de partir, ils relisent une prise."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la sœur cherche la fièvre, et Nina part très vite aussi."
+      "sentences": [
+        "Théo visite un stand dans le jardin.",
+        "Léa désigne un pizza du doigt.",
+        "Le guide présente un pizza clairement.",
+        "Théo photographie un riz.",
+        "Ils posent une question sur un riz.",
+        "Léa note le détail d’une prise.",
+        "Avant de partir, Théo achète une prise.",
+        "Léa range une prise dans le sac.",
+        "Sur le chemin du retour, ils parlent d’une serviette."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Léa prépare une surprise au marché.",
+        "Yanis cache une serviette derrière la porte.",
+        "Tout le monde cherche une serviette.",
+        "Léa donne un indice avec un souris.",
+        "Yanis trouve enfin une serviette.",
+        "Ils ouvrent aussi un vis.",
+        "Les amis rient autour d’un souris.",
+        "Léa partage un vis avec le groupe.",
+        "La fête se termine près d’un pizza."
+      ]
+    },
+    {
+      "level": "b1",
+      "sentences": [
+        "Maya commence la journée à l’école.",
+        "Emma apporte un riz pour le groupe.",
+        "Ils placent un riz au centre.",
+        "Maya décrit un riz à voix haute.",
+        "Emma ajoute un livre à côté.",
+        "Le groupe compare un riz et un livre.",
+        "Ensuite, chacun touche un souris.",
+        "Maya résume le rôle d’un souris.",
+        "Pour finir, Emma range un pizza."
+      ]
     }
   ],
-  "type14": [
-    {
-      "level": "a1",
-      "sentence": "La maman oublie le bouillir."
-    },
-    {
-      "level": "a1",
-      "sentence": "La boulangère aime la boulangerie bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La factrice nettoie la buanderie."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le professeur mange à la cantine bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "Un ami montre la chimie."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le directeur cherche le chinois."
-    },
+  "type14Stories": [
     {
       "level": "a2",
-      "sentence": "Ce matin, le boulanger prend le criquet ici vite."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la copine montre le cuisiner dans le lit."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la maman cherche le cuisinier ici vite."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, la boulangère range la cuisinière dans le lit."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, une amie pose la dentiste avec Nina."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le bébé cherche la direction ici vite."
+      "sentences": [
+        "Karim et Omar se retrouvent au parc.",
+        "Karim apporte un pizza dans un sac.",
+        "Omar pose un riz sur la table.",
+        "Ils parlent d’abord d’un pizza.",
+        "Puis Omar montre un livre à Karim.",
+        "Tout à coup, un pizza tombe par terre.",
+        "Karim ramasse un pizza et rit.",
+        "Omar range un riz et un livre.",
+        "Avant de partir, ils vérifient encore un souris.",
+        "Plus tard, Emma revient au magasin.",
+        "Hugo rapporte un vis une seconde fois.",
+        "Ils vérifient encore un vis ensemble.",
+        "Emma explique une nouvelle idée sur un riz.",
+        "Hugo écoute et regarde un riz.",
+        "Le groupe accepte d’essayer un souris.",
+        "Après une pause, un souris change le plan.",
+        "Emma montre le résultat près d’un vis.",
+        "Hugo félicite tout le monde pour un riz.",
+        "Avant la nuit, ils rangent un livre."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la boulangère trouve le fourmi, parce que Kim finit ici."
+      "sentences": [
+        "Ce matin, Sofia travaille dans la cuisine.",
+        "Il prépare une serviette avec soin.",
+        "Amira arrive et regarde une serviette.",
+        "Ensemble, ils ajoutent un vis.",
+        "Sofia explique l’usage d’un vis.",
+        "Amira propose aussi un livre.",
+        "Le travail avance grâce à une serviette.",
+        "Ils placent un livre près d’un vis.",
+        "À la fin, un riz est prêt pour demain.",
+        "Plus tard, Léa revient dans le jardin.",
+        "Inès rapporte un souris une seconde fois.",
+        "Ils vérifient encore un souris ensemble.",
+        "Léa explique une nouvelle idée sur un pizza.",
+        "Inès écoute et regarde un pizza.",
+        "Le groupe accepte d’essayer un vis.",
+        "Après une pause, un vis change le plan.",
+        "Léa montre le résultat près d’un souris.",
+        "Inès félicite tout le monde pour un pizza.",
+        "Avant la nuit, ils rangent une prise."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Sofia fait des courses dans le jardin.",
+        "Dans le panier, il y a déjà un vis.",
+        "Sara choisit un livre juste à côté.",
+        "Ils comparent un vis et un livre.",
+        "Le vendeur parle d’un riz.",
+        "Sofia prend aussi un riz.",
+        "Sara paie et range un vis.",
+        "Sur le chemin, ils discutent d’un livre.",
+        "À la maison, ils sortent encore un souris.",
+        "Plus tard, Noah revient à la bibliothèque.",
+        "Théo rapporte un vis une seconde fois.",
+        "Ils vérifient encore un vis ensemble.",
+        "Noah explique une nouvelle idée sur un livre.",
+        "Théo écoute et regarde un livre.",
+        "Le groupe accepte d’essayer un riz.",
+        "Après une pause, un riz change le plan.",
+        "Noah montre le résultat près d’un vis.",
+        "Théo félicite tout le monde pour un livre.",
+        "Avant la nuit, ils rangent un souris."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le voisin montre la frire, et Nina part très vite aussi."
+      "sentences": [
+        "Hugo lit un message à la bibliothèque.",
+        "Maya doit apporter un pizza rapidement.",
+        "Hugo part avec une prise.",
+        "Ils se croisent près d’un riz.",
+        "Maya donne un pizza à Hugo.",
+        "Hugo vérifie un pizza calmement.",
+        "Ensuite, ils déposent une prise.",
+        "Une amie demande des nouvelles d’un riz.",
+        "Plus tard, un vis termine la journée.",
+        "Plus tard, Noah revient au parc.",
+        "Yanis rapporte un livre une seconde fois.",
+        "Ils vérifient encore un livre ensemble.",
+        "Noah explique une nouvelle idée sur un vis.",
+        "Yanis écoute et regarde un vis.",
+        "Le groupe accepte d’essayer un pizza.",
+        "Après une pause, un pizza change le plan.",
+        "Noah montre le résultat près d’un livre.",
+        "Yanis félicite tout le monde pour un vis.",
+        "Avant la nuit, ils rangent une prise."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Maya organise une activité dans la cour.",
+        "Yanis apporte une prise dès le début.",
+        "Sur la table, on voit une prise et un riz.",
+        "Les enfants touchent un riz à tour de rôle.",
+        "Maya explique le mot lié à un souris.",
+        "Yanis dessine un souris au tableau.",
+        "Tout le monde écoute l’histoire d’une prise.",
+        "Après l’exercice, ils rangent un riz.",
+        "Maya note encore une serviette dans le cahier.",
+        "Plus tard, Omar revient au magasin.",
+        "Amira rapporte un livre une seconde fois.",
+        "Ils vérifient encore un livre ensemble.",
+        "Omar explique une nouvelle idée sur un souris.",
+        "Amira écoute et regarde un souris.",
+        "Le groupe accepte d’essayer une prise.",
+        "Après une pause, une prise change le plan.",
+        "Omar montre le résultat près d’un livre.",
+        "Amira félicite tout le monde pour un souris.",
+        "Avant la nuit, ils rangent un riz."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la jardinière pose le frisé, parce que Kim finit ici."
+      "sentences": [
+        "Il pleut un peu dans la cour.",
+        "Maya protège un souris sous le bras.",
+        "Amira tient un livre contre lui.",
+        "Ils entrent et posent un souris.",
+        "Maya sèche un livre avec un chiffon.",
+        "Amira prépare un riz pour attendre.",
+        "Ils parlent calmement d’un souris.",
+        "Quand la pluie cesse, un riz est prêt.",
+        "Ils repartent avec un vis.",
+        "Plus tard, Omar revient dans la cuisine.",
+        "Théo rapporte une prise une seconde fois.",
+        "Ils vérifient encore une prise ensemble.",
+        "Omar explique une nouvelle idée sur un riz.",
+        "Théo écoute et regarde un riz.",
+        "Le groupe accepte d’essayer un livre.",
+        "Après une pause, un livre change le plan.",
+        "Omar montre le résultat près d’une prise.",
+        "Théo félicite tout le monde pour un riz.",
+        "Avant la nuit, ils rangent une serviette."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Noah et Inès révisent dans la cuisine.",
+        "La leçon commence avec un riz.",
+        "Noah lit une phrase sur un riz.",
+        "Inès répète le mot un souris.",
+        "Ils écrivent un souris dans le cahier.",
+        "Une erreur apparaît près d’une prise.",
+        "Noah corrige et montre une prise.",
+        "Inès récite encore la phrase d’un riz.",
+        "Avant de partir, ils relisent un vis.",
+        "Plus tard, Hugo revient dans la cour.",
+        "Yanis rapporte un souris une seconde fois.",
+        "Ils vérifient encore un souris ensemble.",
+        "Hugo explique une nouvelle idée sur un riz.",
+        "Yanis écoute et regarde un riz.",
+        "Le groupe accepte d’essayer une serviette.",
+        "Après une pause, une serviette change le plan.",
+        "Hugo montre le résultat près d’un souris.",
+        "Yanis félicite tout le monde pour un riz.",
+        "Avant la nuit, ils rangent un vis."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand un ami cherche le février, et Nina part très vite aussi."
+      "sentences": [
+        "Maya visite un stand au parc.",
+        "Hugo désigne une serviette du doigt.",
+        "Le guide présente une serviette clairement.",
+        "Maya photographie un vis.",
+        "Ils posent une question sur un vis.",
+        "Hugo note le détail d’un livre.",
+        "Avant de partir, Maya achète un livre.",
+        "Hugo range un livre dans le sac.",
+        "Sur le chemin du retour, ils parlent d’un souris.",
+        "Plus tard, Léa revient à l’école.",
+        "Omar rapporte un pizza une seconde fois.",
+        "Ils vérifient encore un pizza ensemble.",
+        "Léa explique une nouvelle idée sur un riz.",
+        "Omar écoute et regarde un riz.",
+        "Le groupe accepte d’essayer un vis.",
+        "Après une pause, un vis change le plan.",
+        "Léa montre le résultat près d’un pizza.",
+        "Omar félicite tout le monde pour un riz.",
+        "Avant la nuit, ils rangent une prise."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Yanis prépare une surprise au marché.",
+        "Karim cache un souris derrière la porte.",
+        "Tout le monde cherche un souris.",
+        "Yanis donne un indice avec un pizza.",
+        "Karim trouve enfin un souris.",
+        "Ils ouvrent aussi un riz.",
+        "Les amis rient autour d’un pizza.",
+        "Yanis partage un riz avec le groupe.",
+        "La fête se termine près d’une serviette.",
+        "Plus tard, Noah revient dans la cuisine.",
+        "Nora rapporte une serviette une seconde fois.",
+        "Ils vérifient encore une serviette ensemble.",
+        "Noah explique une nouvelle idée sur un riz.",
+        "Nora écoute et regarde un riz.",
+        "Le groupe accepte d’essayer une prise.",
+        "Après une pause, une prise change le plan.",
+        "Noah montre le résultat près d’une serviette.",
+        "Nora félicite tout le monde pour un riz.",
+        "Avant la nuit, ils rangent un souris."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le directeur range le gentil, et Nina part très vite aussi."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la professeure grimpe dans le grenier, parce que Kim finit ici."
+      "sentences": [
+        "Sofia commence la journée au café.",
+        "Léa apporte un vis pour le groupe.",
+        "Ils placent un vis au centre.",
+        "Sofia décrit un vis à voix haute.",
+        "Léa ajoute un riz à côté.",
+        "Le groupe compare un vis et un riz.",
+        "Ensuite, chacun touche un souris.",
+        "Sofia résume le rôle d’un souris.",
+        "Pour finir, Léa range une serviette.",
+        "Plus tard, Maya revient dans la cuisine.",
+        "Théo rapporte un souris une seconde fois.",
+        "Ils vérifient encore un souris ensemble.",
+        "Maya explique une nouvelle idée sur un livre.",
+        "Théo écoute et regarde un livre.",
+        "Le groupe accepte d’essayer un pizza.",
+        "Après une pause, un pizza change le plan.",
+        "Maya montre le résultat près d’un souris.",
+        "Théo félicite tout le monde pour un livre.",
+        "Avant la nuit, ils rangent un vis."
+      ]
     }
   ]
 }

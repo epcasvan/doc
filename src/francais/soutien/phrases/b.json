@@ -2880,128 +2880,388 @@
       ]
     }
   ],
-  "type12": [
-    {
-      "level": "a1",
-      "sentence": "Le directeur plante un arbre bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La maman sert la baguette bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "Barbara ouvre le balai bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le professeur nettoie le balcon bien."
-    },
+  "type12Stories": [
     {
       "level": "a2",
-      "sentence": "Ce soir, le cuisinier achète le biscuit près de Barbara."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le bébé cherche le blanc avec Bruno."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le jardinier oublie le bleu au bal."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, la boulangère utilise le blond bien bas."
+      "sentences": [
+        "Karim et Emma se retrouvent au parc.",
+        "Karim apporte une brosse dans un sac.",
+        "Emma pose un bonnet sur la table.",
+        "Ils parlent d’abord d’une brosse.",
+        "Puis Emma montre un arbre à Karim.",
+        "Tout à coup, une brosse tombe par terre.",
+        "Karim ramasse une brosse et rit.",
+        "Emma range un bonnet et un arbre.",
+        "Avant de partir, ils vérifient encore une robe."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand le médecin enfile le bracelet près de Barbara, et Bruno aime bien ça aussi."
+      "sentences": [
+        "Ce matin, Hugo travaille dans la cuisine.",
+        "Il prépare une banane avec soin.",
+        "Maya arrive et regarde une banane.",
+        "Ensemble, ils ajoutent une brosse.",
+        "Hugo explique l’usage d’une brosse.",
+        "Maya propose aussi une botte.",
+        "Le travail avance grâce à une banane.",
+        "Ils placent une botte près d’une brosse.",
+        "À la fin, un arbre est prêt pour demain."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Adam fait des courses au parc.",
+        "Dans le panier, il y a déjà une brosse.",
+        "Sofia choisit une baguette juste à côté.",
+        "Ils comparent une brosse et une baguette.",
+        "Le vendeur parle d’une boîte.",
+        "Adam prend aussi une boîte.",
+        "Sofia paie et range une brosse.",
+        "Sur le chemin, ils discutent d’une baguette.",
+        "À la maison, ils sortent encore un biscuit."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Barbara nettoie la brosse, et Bruno aime bien ça aussi."
+      "sentences": [
+        "Sofia lit un message au parc.",
+        "Adam doit apporter un bonnet rapidement.",
+        "Sofia part avec une banane.",
+        "Ils se croisent près d’une boîte.",
+        "Adam donne un bonnet à Sofia.",
+        "Sofia vérifie un bonnet calmement.",
+        "Ensuite, ils déposent une banane.",
+        "Une amie demande des nouvelles d’une boîte.",
+        "Plus tard, un arbre termine la journée."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Hugo organise une activité au café.",
+        "Adam apporte un bonbon dès le début.",
+        "Sur la table, on voit un bonbon et une robe.",
+        "Les enfants touchent une robe à tour de rôle.",
+        "Hugo explique le mot lié à une boîte.",
+        "Adam dessine une boîte au tableau.",
+        "Tout le monde écoute l’histoire d’un bonbon.",
+        "Après l’exercice, ils rangent une robe.",
+        "Hugo note encore un concombre dans le cahier."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand le professeur montre le brun près de Barbara, et Bruno aime bien ça aussi."
+      "sentences": [
+        "Il pleut un peu dans la cuisine.",
+        "Léa protège une banane sous le bras.",
+        "Théo tient un arbre contre lui.",
+        "Ils entrent et posent une banane.",
+        "Léa sèche un arbre avec un chiffon.",
+        "Théo prépare une botte pour attendre.",
+        "Ils parlent calmement d’une banane.",
+        "Quand la pluie cesse, une botte est prêt.",
+        "Ils repartent avec un concombre."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Omar et Nora révisent dans la cuisine.",
+        "La leçon commence avec un concombre.",
+        "Omar lit une phrase sur un concombre.",
+        "Nora répète le mot un bonnet.",
+        "Ils écrivent un bonnet dans le cahier.",
+        "Une erreur apparaît près d’un biscuit.",
+        "Omar corrige et montre un biscuit.",
+        "Nora récite encore la phrase d’un concombre.",
+        "Avant de partir, ils relisent une boîte."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le copain travaille dans le bureau, parce que Barbara est bien contente."
+      "sentences": [
+        "Léa visite un stand au magasin.",
+        "Inès désigne une botte du doigt.",
+        "Le guide présente une botte clairement.",
+        "Léa photographie une banane.",
+        "Ils posent une question sur une banane.",
+        "Inès note le détail d’une boîte.",
+        "Avant de partir, Léa achète une boîte.",
+        "Inès range une boîte dans le sac.",
+        "Sur le chemin du retour, ils parlent d’un concombre."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Maya prépare une surprise au magasin.",
+        "Théo cache un biscuit derrière la porte.",
+        "Tout le monde cherche un biscuit.",
+        "Maya donne un indice avec un concombre.",
+        "Théo trouve enfin un biscuit.",
+        "Ils ouvrent aussi une baguette.",
+        "Les amis rient autour d’un concombre.",
+        "Maya partage une baguette avec le groupe.",
+        "La fête se termine près d’une robe."
+      ]
+    },
+    {
+      "level": "b1",
+      "sentences": [
+        "Léa commence la journée au magasin.",
+        "Karim apporte une robe pour le groupe.",
+        "Ils placent une robe au centre.",
+        "Léa décrit une robe à voix haute.",
+        "Karim ajoute un concombre à côté.",
+        "Le groupe compare une robe et un concombre.",
+        "Ensuite, chacun touche un bonnet.",
+        "Léa résume le rôle d’un bonnet.",
+        "Pour finir, Karim range une banane."
+      ]
     }
   ],
-  "type14": [
-    {
-      "level": "a1",
-      "sentence": "Le copain jette la balle bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le collègue aime la banane bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La professeure visite le banc bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La copine prend le bateau bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "Béatrice montre le beau bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La boulangère étudie à la bibliothèque."
-    },
+  "type14Stories": [
     {
       "level": "a2",
-      "sentence": "À midi, le boulanger montre le boisson près de Barbara."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, un ami choisit le bonbon près de Barbara."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la maman achète le bonnet près de Barbara."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le collègue enfile la botte près de Barbara."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le bébé lave la bouche bien bas."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Béatrice ouvre la boîte près de Barbara."
+      "sentences": [
+        "Léa et Nora se retrouvent dans la cour.",
+        "Léa apporte une brosse dans un sac.",
+        "Nora pose une banane sur la table.",
+        "Ils parlent d’abord d’une brosse.",
+        "Puis Nora montre un biscuit à Léa.",
+        "Tout à coup, une brosse tombe par terre.",
+        "Léa ramasse une brosse et rit.",
+        "Nora range une banane et un biscuit.",
+        "Avant de partir, ils vérifient encore un arbre.",
+        "Plus tard, Amira revient dans la cour.",
+        "Hugo rapporte un concombre une seconde fois.",
+        "Ils vérifient encore un concombre ensemble.",
+        "Amira explique une nouvelle idée sur une baguette.",
+        "Hugo écoute et regarde une baguette.",
+        "Le groupe accepte d’essayer une robe.",
+        "Après une pause, une robe change le plan.",
+        "Amira montre le résultat près d’un concombre.",
+        "Hugo félicite tout le monde pour une baguette.",
+        "Avant la nuit, ils rangent un arbre."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la tante monte dans le bus, parce que Barbara est bien contente."
+      "sentences": [
+        "Ce matin, Amira travaille à la bibliothèque.",
+        "Il prépare une robe avec soin.",
+        "Yanis arrive et regarde une robe.",
+        "Ensemble, ils ajoutent un bonbon.",
+        "Amira explique l’usage d’un bonbon.",
+        "Yanis propose aussi une banane.",
+        "Le travail avance grâce à une robe.",
+        "Ils placent une banane près d’un bonbon.",
+        "À la fin, un biscuit est prêt pour demain.",
+        "Plus tard, Noah revient au café.",
+        "Inès rapporte une baguette une seconde fois.",
+        "Ils vérifient encore une baguette ensemble.",
+        "Noah explique une nouvelle idée sur un biscuit.",
+        "Inès écoute et regarde un biscuit.",
+        "Le groupe accepte d’essayer un concombre.",
+        "Après une pause, un concombre change le plan.",
+        "Noah montre le résultat près d’une baguette.",
+        "Inès félicite tout le monde pour un biscuit.",
+        "Avant la nuit, ils rangent un bonbon."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Sofia fait des courses dans la cour.",
+        "Dans le panier, il y a déjà une baguette.",
+        "Omar choisit une robe juste à côté.",
+        "Ils comparent une baguette et une robe.",
+        "Le vendeur parle d’un biscuit.",
+        "Sofia prend aussi un biscuit.",
+        "Omar paie et range une baguette.",
+        "Sur le chemin, ils discutent d’une robe.",
+        "À la maison, ils sortent encore une banane.",
+        "Plus tard, Hugo revient au marché.",
+        "Omar rapporte un arbre une seconde fois.",
+        "Ils vérifient encore un arbre ensemble.",
+        "Hugo explique une nouvelle idée sur une baguette.",
+        "Omar écoute et regarde une baguette.",
+        "Le groupe accepte d’essayer un bonbon.",
+        "Après une pause, un bonbon change le plan.",
+        "Hugo montre le résultat près d’un arbre.",
+        "Omar félicite tout le monde pour une baguette.",
+        "Avant la nuit, ils rangent un bonnet."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la professeure tient le bébé, et Bruno aime bien ça aussi."
+      "sentences": [
+        "Karim lit un message à la bibliothèque.",
+        "Yanis doit apporter un biscuit rapidement.",
+        "Karim part avec une banane.",
+        "Ils se croisent près d’une brosse.",
+        "Yanis donne un biscuit à Karim.",
+        "Karim vérifie un biscuit calmement.",
+        "Ensuite, ils déposent une banane.",
+        "Une amie demande des nouvelles d’une brosse.",
+        "Plus tard, une robe termine la journée.",
+        "Plus tard, Karim revient dans la cuisine.",
+        "Léa rapporte une boîte une seconde fois.",
+        "Ils vérifient encore une boîte ensemble.",
+        "Karim explique une nouvelle idée sur un arbre.",
+        "Léa écoute et regarde un arbre.",
+        "Le groupe accepte d’essayer un biscuit.",
+        "Après une pause, un biscuit change le plan.",
+        "Karim montre le résultat près d’une boîte.",
+        "Léa félicite tout le monde pour un arbre.",
+        "Avant la nuit, ils rangent un bonbon."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Omar organise une activité dans la cour.",
+        "Liam apporte une robe dès le début.",
+        "Sur la table, on voit une robe et un concombre.",
+        "Les enfants touchent un concombre à tour de rôle.",
+        "Omar explique le mot lié à une baguette.",
+        "Liam dessine une baguette au tableau.",
+        "Tout le monde écoute l’histoire d’une robe.",
+        "Après l’exercice, ils rangent un concombre.",
+        "Omar note encore une banane dans le cahier.",
+        "Plus tard, Liam revient au parc.",
+        "Théo rapporte une botte une seconde fois.",
+        "Ils vérifient encore une botte ensemble.",
+        "Liam explique une nouvelle idée sur un bonnet.",
+        "Théo écoute et regarde un bonnet.",
+        "Le groupe accepte d’essayer un concombre.",
+        "Après une pause, un concombre change le plan.",
+        "Liam montre le résultat près d’une botte.",
+        "Théo félicite tout le monde pour un bonnet.",
+        "Avant la nuit, ils rangent un arbre."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la maîtresse range la bûche, parce que Barbara est bien contente."
+      "sentences": [
+        "Il pleut un peu au magasin.",
+        "Léa protège un bonbon sous le bras.",
+        "Hugo tient une boîte contre lui.",
+        "Ils entrent et posent un bonbon.",
+        "Léa sèche une boîte avec un chiffon.",
+        "Hugo prépare une robe pour attendre.",
+        "Ils parlent calmement d’un bonbon.",
+        "Quand la pluie cesse, une robe est prêt.",
+        "Ils repartent avec une banane.",
+        "Plus tard, Yanis revient à la bibliothèque.",
+        "Liam rapporte une banane une seconde fois.",
+        "Ils vérifient encore une banane ensemble.",
+        "Yanis explique une nouvelle idée sur un bonbon.",
+        "Liam écoute et regarde un bonbon.",
+        "Le groupe accepte d’essayer une robe.",
+        "Après une pause, une robe change le plan.",
+        "Yanis montre le résultat près d’une banane.",
+        "Liam félicite tout le monde pour un bonbon.",
+        "Avant la nuit, ils rangent un bonnet."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Noah et Maya révisent au marché.",
+        "La leçon commence avec un arbre.",
+        "Noah lit une phrase sur un arbre.",
+        "Maya répète le mot un bonnet.",
+        "Ils écrivent un bonnet dans le cahier.",
+        "Une erreur apparaît près d’un bonbon.",
+        "Noah corrige et montre un bonbon.",
+        "Maya récite encore la phrase d’un arbre.",
+        "Avant de partir, ils relisent une baguette.",
+        "Plus tard, Sofia revient à l’école.",
+        "Léa rapporte une banane une seconde fois.",
+        "Ils vérifient encore une banane ensemble.",
+        "Sofia explique une nouvelle idée sur une baguette.",
+        "Léa écoute et regarde une baguette.",
+        "Le groupe accepte d’essayer un bonbon.",
+        "Après une pause, un bonbon change le plan.",
+        "Sofia montre le résultat près d’une banane.",
+        "Léa félicite tout le monde pour une baguette.",
+        "Avant la nuit, ils rangent une botte."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Béatrice cherche la concombre, et Bruno aime bien ça aussi."
+      "sentences": [
+        "Noah visite un stand au café.",
+        "Omar désigne une boîte du doigt.",
+        "Le guide présente une boîte clairement.",
+        "Noah photographie une botte.",
+        "Ils posent une question sur une botte.",
+        "Omar note le détail d’une baguette.",
+        "Avant de partir, Noah achète une baguette.",
+        "Omar range une baguette dans le sac.",
+        "Sur le chemin du retour, ils parlent d’un biscuit.",
+        "Plus tard, Maya revient au café.",
+        "Inès rapporte une baguette une seconde fois.",
+        "Ils vérifient encore une baguette ensemble.",
+        "Maya explique une nouvelle idée sur un concombre.",
+        "Inès écoute et regarde un concombre.",
+        "Le groupe accepte d’essayer un biscuit.",
+        "Après une pause, un biscuit change le plan.",
+        "Maya montre le résultat près d’une baguette.",
+        "Inès félicite tout le monde pour un concombre.",
+        "Avant la nuit, ils rangent une banane."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Omar prépare une surprise dans le jardin.",
+        "Maya cache un concombre derrière la porte.",
+        "Tout le monde cherche un concombre.",
+        "Omar donne un indice avec une baguette.",
+        "Maya trouve enfin un concombre.",
+        "Ils ouvrent aussi un bonbon.",
+        "Les amis rient autour d’une baguette.",
+        "Omar partage un bonbon avec le groupe.",
+        "La fête se termine près d’une brosse.",
+        "Plus tard, Amira revient à la bibliothèque.",
+        "Sara rapporte un bonnet une seconde fois.",
+        "Ils vérifient encore un bonnet ensemble.",
+        "Amira explique une nouvelle idée sur un arbre.",
+        "Sara écoute et regarde un arbre.",
+        "Le groupe accepte d’essayer un concombre.",
+        "Après une pause, un concombre change le plan.",
+        "Amira montre le résultat près d’un bonnet.",
+        "Sara félicite tout le monde pour un arbre.",
+        "Avant la nuit, ils rangent une boîte."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand le voisin range la framboise près de Barbara, et Bruno aime bien ça aussi."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la maîtresse choisit la robe, parce que Barbara est bien contente."
+      "sentences": [
+        "Sara commence la journée au magasin.",
+        "Emma apporte une baguette pour le groupe.",
+        "Ils placent une baguette au centre.",
+        "Sara décrit une baguette à voix haute.",
+        "Emma ajoute une boîte à côté.",
+        "Le groupe compare une baguette et une boîte.",
+        "Ensuite, chacun touche une banane.",
+        "Sara résume le rôle d’une banane.",
+        "Pour finir, Emma range une botte.",
+        "Plus tard, Sara revient au magasin.",
+        "Hugo rapporte un biscuit une seconde fois.",
+        "Ils vérifient encore un biscuit ensemble.",
+        "Sara explique une nouvelle idée sur une banane.",
+        "Hugo écoute et regarde une banane.",
+        "Le groupe accepte d’essayer un arbre.",
+        "Après une pause, un arbre change le plan.",
+        "Sara montre le résultat près d’un biscuit.",
+        "Hugo félicite tout le monde pour une banane.",
+        "Avant la nuit, ils rangent un concombre."
+      ]
     }
   ]
 }

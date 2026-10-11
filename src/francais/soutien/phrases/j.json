@@ -1908,128 +1908,388 @@
       ]
     }
   ],
-  "type12": [
-    {
-      "level": "a1",
-      "sentence": "Le professeur montre le bijou un jour."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le médecin coupe le déjeuner avec Julie."
-    },
-    {
-      "level": "a1",
-      "sentence": "La tante montre la jambe avec Jean."
-    },
-    {
-      "level": "a1",
-      "sentence": "La professeure prépare le jambon avec Julie."
-    },
+  "type12Stories": [
     {
       "level": "a2",
-      "sentence": "Ce matin, la jardinière gagne le jogging déjà."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Julien offre au jouet avec Julie."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Jacques se lève avant le jour avec Jean."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Julie prépare le judo un jour."
+      "sentences": [
+        "Liam et Sara se retrouvent dans la cour.",
+        "Liam apporte un jus dans un sac.",
+        "Sara pose un journal sur la table.",
+        "Ils parlent d’abord d’un jus.",
+        "Puis Sara montre une jupe à Liam.",
+        "Tout à coup, un jus tombe par terre.",
+        "Liam ramasse un jus et rit.",
+        "Sara range un journal et une jupe.",
+        "Avant de partir, ils vérifient encore un jambon."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Jean oublie le bijou déjà, parce que Jean est content aussi."
+      "sentences": [
+        "Ce matin, Karim travaille au café.",
+        "Il prépare un journal avec soin.",
+        "Emma arrive et regarde un journal.",
+        "Ensemble, ils ajoutent un jus.",
+        "Karim explique l’usage d’un jus.",
+        "Emma propose aussi une jupe.",
+        "Le travail avance grâce à un journal.",
+        "Ils placent une jupe près d’un jus.",
+        "À la fin, un jambon est prêt pour demain."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Adam fait des courses au marché.",
+        "Dans le panier, il y a déjà un jus.",
+        "Inès choisit un journal juste à côté.",
+        "Ils comparent un jus et un journal.",
+        "Le vendeur parle d’un jambon.",
+        "Adam prend aussi un jambon.",
+        "Inès paie et range un jus.",
+        "Sur le chemin, ils discutent d’un journal.",
+        "À la maison, ils sortent encore une jupe."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Jean mange le déjeuner avec Julie, et Julie est très contente."
+      "sentences": [
+        "Noah lit un message au parc.",
+        "Liam doit apporter un jus rapidement.",
+        "Noah part avec un journal.",
+        "Ils se croisent près d’un jambon.",
+        "Liam donne un jus à Noah.",
+        "Noah vérifie un jus calmement.",
+        "Ensuite, ils déposent un journal.",
+        "Une amie demande des nouvelles d’un jambon.",
+        "Plus tard, une jupe termine la journée."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Maya organise une activité à l’école.",
+        "Noah apporte un journal dès le début.",
+        "Sur la table, on voit un journal et un jus.",
+        "Les enfants touchent un jus à tour de rôle.",
+        "Maya explique le mot lié à une jupe.",
+        "Noah dessine une jupe au tableau.",
+        "Tout le monde écoute l’histoire d’un journal.",
+        "Après l’exercice, ils rangent un jus.",
+        "Maya note encore un jambon dans le cahier."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Jacques regarde la jambe avec Julie, et Julie est très contente."
+      "sentences": [
+        "Il pleut un peu à l’école.",
+        "Emma protège un jambon sous le bras.",
+        "Adam tient une jupe contre lui.",
+        "Ils entrent et posent un jambon.",
+        "Emma sèche une jupe avec un chiffon.",
+        "Adam prépare un jus pour attendre.",
+        "Ils parlent calmement d’un jambon.",
+        "Quand la pluie cesse, un jus est prêt.",
+        "Ils repartent avec un journal."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Noah et Inès révisent au marché.",
+        "La leçon commence avec un jambon.",
+        "Noah lit une phrase sur un jambon.",
+        "Inès répète le mot une jupe.",
+        "Ils écrivent une jupe dans le cahier.",
+        "Une erreur apparaît près d’un journal.",
+        "Noah corrige et montre un journal.",
+        "Inès récite encore la phrase d’un jambon.",
+        "Avant de partir, ils relisent un jus."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Jacques sert le jambon avec Jean, parce que Jean est content aussi."
+      "sentences": [
+        "Adam visite un stand dans la cour.",
+        "Léa désigne un jambon du doigt.",
+        "Le guide présente un jambon clairement.",
+        "Adam photographie un journal.",
+        "Ils posent une question sur un journal.",
+        "Léa note le détail d’un jus.",
+        "Avant de partir, Adam achète un jus.",
+        "Léa range un jus dans le sac.",
+        "Sur le chemin du retour, ils parlent d’une jupe."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Inès prépare une surprise dans la cour.",
+        "Karim cache un jus derrière la porte.",
+        "Tout le monde cherche un jus.",
+        "Inès donne un indice avec une jupe.",
+        "Karim trouve enfin un jus.",
+        "Ils ouvrent aussi un jambon.",
+        "Les amis rient autour d’une jupe.",
+        "Inès partage un jambon avec le groupe.",
+        "La fête se termine près d’un journal."
+      ]
+    },
+    {
+      "level": "b1",
+      "sentences": [
+        "Amira commence la journée au marché.",
+        "Emma apporte une jupe pour le groupe.",
+        "Ils placent une jupe au centre.",
+        "Amira décrit une jupe à voix haute.",
+        "Emma ajoute un jus à côté.",
+        "Le groupe compare une jupe et un jus.",
+        "Ensuite, chacun touche un jambon.",
+        "Amira résume le rôle d’un jambon.",
+        "Pour finir, Emma range un journal."
+      ]
     }
   ],
-  "type14": [
-    {
-      "level": "a1",
-      "sentence": "La sœur joue dans le jardin."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le collègue dessine le jasmin avec Jean."
-    },
-    {
-      "level": "a1",
-      "sentence": "Julie utilise le jaune bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La boulangère nettoie la javel avec Julie."
-    },
-    {
-      "level": "a1",
-      "sentence": "Julien aime le jeton bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "Jean parle avec le jeudi."
-    },
+  "type14Stories": [
     {
       "level": "a2",
-      "sentence": "Après le cours, Julien prépare le juillet un jour."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Jacques note le juin près de la jardinière."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le jardinier sauve la jument déjà."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, la jardinière admire la jungle avec Julie."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le jardinier met la jupe avec Jean."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Jean boit le jus un jour."
+      "sentences": [
+        "Sofia et Théo se retrouvent dans la cuisine.",
+        "Sofia apporte un jambon dans un sac.",
+        "Théo pose un jus sur la table.",
+        "Ils parlent d’abord d’un jambon.",
+        "Puis Théo montre une jupe à Sofia.",
+        "Tout à coup, un jambon tombe par terre.",
+        "Sofia ramasse un jambon et rit.",
+        "Théo range un jus et une jupe.",
+        "Avant de partir, ils vérifient encore un journal.",
+        "Plus tard, Emma revient dans la cour.",
+        "Amira rapporte un journal une seconde fois.",
+        "Ils vérifient encore un journal ensemble.",
+        "Emma explique une nouvelle idée sur un jambon.",
+        "Amira écoute et regarde un jambon.",
+        "Le groupe accepte d’essayer une jupe.",
+        "Après une pause, une jupe change le plan.",
+        "Emma montre le résultat près d’un journal.",
+        "Amira félicite tout le monde pour un jambon.",
+        "Avant la nuit, ils rangent un jus."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand Julien plante dans le jardin avec Jean, parce que Jean est content aussi."
+      "sentences": [
+        "Ce matin, Omar travaille au café.",
+        "Il prépare un journal avec soin.",
+        "Sara arrive et regarde un journal.",
+        "Ensemble, ils ajoutent un jus.",
+        "Omar explique l’usage d’un jus.",
+        "Sara propose aussi un jambon.",
+        "Le travail avance grâce à un journal.",
+        "Ils placent un jambon près d’un jus.",
+        "À la fin, une jupe est prêt pour demain.",
+        "Plus tard, Sara revient au café.",
+        "Hugo rapporte une jupe une seconde fois.",
+        "Ils vérifient encore une jupe ensemble.",
+        "Sara explique une nouvelle idée sur un journal.",
+        "Hugo écoute et regarde un journal.",
+        "Le groupe accepte d’essayer un jus.",
+        "Après une pause, un jus change le plan.",
+        "Sara montre le résultat près d’une jupe.",
+        "Hugo félicite tout le monde pour un journal.",
+        "Avant la nuit, ils rangent un jambon."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Karim fait des courses au parc.",
+        "Dans le panier, il y a déjà un journal.",
+        "Inès choisit un jambon juste à côté.",
+        "Ils comparent un journal et un jambon.",
+        "Le vendeur parle d’une jupe.",
+        "Karim prend aussi une jupe.",
+        "Inès paie et range un journal.",
+        "Sur le chemin, ils discutent d’un jambon.",
+        "À la maison, ils sortent encore un jus.",
+        "Plus tard, Maya revient à la gare.",
+        "Noah rapporte un jambon une seconde fois.",
+        "Ils vérifient encore un jambon ensemble.",
+        "Maya explique une nouvelle idée sur un jus.",
+        "Noah écoute et regarde un jus.",
+        "Le groupe accepte d’essayer un journal.",
+        "Après une pause, un journal change le plan.",
+        "Maya montre le résultat près d’un jambon.",
+        "Noah félicite tout le monde pour un jus.",
+        "Avant la nuit, ils rangent une jupe."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Julie plante le jasmin déjà, parce que Jean est content aussi."
+      "sentences": [
+        "Yanis lit un message dans la cour.",
+        "Hugo doit apporter un jambon rapidement.",
+        "Yanis part avec un journal.",
+        "Ils se croisent près d’une jupe.",
+        "Hugo donne un jambon à Yanis.",
+        "Yanis vérifie un jambon calmement.",
+        "Ensuite, ils déposent un journal.",
+        "Une amie demande des nouvelles d’une jupe.",
+        "Plus tard, un jus termine la journée.",
+        "Plus tard, Liam revient à l’école.",
+        "Yanis rapporte un journal une seconde fois.",
+        "Ils vérifient encore un journal ensemble.",
+        "Liam explique une nouvelle idée sur un jus.",
+        "Yanis écoute et regarde un jus.",
+        "Le groupe accepte d’essayer une jupe.",
+        "Après une pause, une jupe change le plan.",
+        "Liam montre le résultat près d’un journal.",
+        "Yanis félicite tout le monde pour un jus.",
+        "Avant la nuit, ils rangent un jambon."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Omar organise une activité au marché.",
+        "Yanis apporte un jambon dès le début.",
+        "Sur la table, on voit un jambon et un jus.",
+        "Les enfants touchent un jus à tour de rôle.",
+        "Omar explique le mot lié à une jupe.",
+        "Yanis dessine une jupe au tableau.",
+        "Tout le monde écoute l’histoire d’un jambon.",
+        "Après l’exercice, ils rangent un jus.",
+        "Omar note encore un journal dans le cahier.",
+        "Plus tard, Nora revient dans la cuisine.",
+        "Sofia rapporte un journal une seconde fois.",
+        "Ils vérifient encore un journal ensemble.",
+        "Nora explique une nouvelle idée sur une jupe.",
+        "Sofia écoute et regarde une jupe.",
+        "Le groupe accepte d’essayer un jus.",
+        "Après une pause, un jus change le plan.",
+        "Nora montre le résultat près d’un journal.",
+        "Sofia félicite tout le monde pour une jupe.",
+        "Avant la nuit, ils rangent un jambon."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Julien trouve le jaune déjà, parce que Jean est content aussi."
+      "sentences": [
+        "Il pleut un peu dans la cuisine.",
+        "Emma protège un jambon sous le bras.",
+        "Sofia tient un journal contre lui.",
+        "Ils entrent et posent un jambon.",
+        "Emma sèche un journal avec un chiffon.",
+        "Sofia prépare un jus pour attendre.",
+        "Ils parlent calmement d’un jambon.",
+        "Quand la pluie cesse, un jus est prêt.",
+        "Ils repartent avec une jupe.",
+        "Plus tard, Noah revient dans le jardin.",
+        "Inès rapporte une jupe une seconde fois.",
+        "Ils vérifient encore une jupe ensemble.",
+        "Noah explique une nouvelle idée sur un journal.",
+        "Inès écoute et regarde un journal.",
+        "Le groupe accepte d’essayer un jus.",
+        "Après une pause, un jus change le plan.",
+        "Noah montre le résultat près d’une jupe.",
+        "Inès félicite tout le monde pour un journal.",
+        "Avant la nuit, ils rangent un jambon."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Omar et Nora révisent dans le jardin.",
+        "La leçon commence avec un jambon.",
+        "Omar lit une phrase sur un jambon.",
+        "Nora répète le mot un jus.",
+        "Ils écrivent un jus dans le cahier.",
+        "Une erreur apparaît près d’un journal.",
+        "Omar corrige et montre un journal.",
+        "Nora récite encore la phrase d’un jambon.",
+        "Avant de partir, ils relisent une jupe.",
+        "Plus tard, Omar revient dans la cuisine.",
+        "Nora rapporte un jus une seconde fois.",
+        "Ils vérifient encore un jus ensemble.",
+        "Omar explique une nouvelle idée sur un jambon.",
+        "Nora écoute et regarde un jambon.",
+        "Le groupe accepte d’essayer une jupe.",
+        "Après une pause, une jupe change le plan.",
+        "Omar montre le résultat près d’un jus.",
+        "Nora félicite tout le monde pour un jambon.",
+        "Avant la nuit, ils rangent un journal."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Julien visite la javel avec Julie, et Julie est très contente."
+      "sentences": [
+        "Hugo visite un stand dans le jardin.",
+        "Karim désigne un jus du doigt.",
+        "Le guide présente un jus clairement.",
+        "Hugo photographie un journal.",
+        "Ils posent une question sur un journal.",
+        "Karim note le détail d’un jambon.",
+        "Avant de partir, Hugo achète un jambon.",
+        "Karim range un jambon dans le sac.",
+        "Sur le chemin du retour, ils parlent d’une jupe.",
+        "Plus tard, Inès revient au magasin.",
+        "Liam rapporte un jambon une seconde fois.",
+        "Ils vérifient encore un jambon ensemble.",
+        "Inès explique une nouvelle idée sur un jus.",
+        "Liam écoute et regarde un jus.",
+        "Le groupe accepte d’essayer un journal.",
+        "Après une pause, un journal change le plan.",
+        "Inès montre le résultat près d’un jambon.",
+        "Liam félicite tout le monde pour un jus.",
+        "Avant la nuit, ils rangent une jupe."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Maya prépare une surprise dans la cour.",
+        "Yanis cache un journal derrière la porte.",
+        "Tout le monde cherche un journal.",
+        "Maya donne un indice avec un jambon.",
+        "Yanis trouve enfin un journal.",
+        "Ils ouvrent aussi un jus.",
+        "Les amis rient autour d’un jambon.",
+        "Maya partage un jus avec le groupe.",
+        "La fête se termine près d’une jupe.",
+        "Plus tard, Théo revient au marché.",
+        "Léa rapporte une jupe une seconde fois.",
+        "Ils vérifient encore une jupe ensemble.",
+        "Théo explique une nouvelle idée sur un jus.",
+        "Léa écoute et regarde un jus.",
+        "Le groupe accepte d’essayer un jambon.",
+        "Après une pause, un jambon change le plan.",
+        "Théo montre le résultat près d’une jupe.",
+        "Léa félicite tout le monde pour un jus.",
+        "Avant la nuit, ils rangent un journal."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand la jardinière regarde le jeton avec Julie, et Julie est très contente."
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand le jardinier note le jeudi avec Jean, parce que Jean est content aussi."
+      "sentences": [
+        "Omar commence la journée à la gare.",
+        "Liam apporte une jupe pour le groupe.",
+        "Ils placent une jupe au centre.",
+        "Omar décrit une jupe à voix haute.",
+        "Liam ajoute un jus à côté.",
+        "Le groupe compare une jupe et un jus.",
+        "Ensuite, chacun touche un jambon.",
+        "Omar résume le rôle d’un jambon.",
+        "Pour finir, Liam range un journal.",
+        "Plus tard, Adam revient au parc.",
+        "Omar rapporte un jambon une seconde fois.",
+        "Ils vérifient encore un jambon ensemble.",
+        "Adam explique une nouvelle idée sur un journal.",
+        "Omar écoute et regarde un journal.",
+        "Le groupe accepte d’essayer une jupe.",
+        "Après une pause, une jupe change le plan.",
+        "Adam montre le résultat près d’un jambon.",
+        "Omar félicite tout le monde pour un journal.",
+        "Avant la nuit, ils rangent un jus."
+      ]
     }
   ]
 }

@@ -1701,128 +1701,388 @@
       ]
     }
   ],
-  "type12": [
-    {
-      "level": "a1",
-      "sentence": "Le voisin recopie un alphabet une photo."
-    },
-    {
-      "level": "a1",
-      "sentence": "La boulangère aime la biographie avec Philippe."
-    },
-    {
-      "level": "a1",
-      "sentence": "Sophie soigne le dauphin bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La voisine lit le graphique avec Philippe."
-    },
+  "type12Stories": [
     {
       "level": "a2",
-      "sentence": "Ce soir, Joseph longe la pharmacie au téléphone."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le garçon prépare la philosophie avec Philippe."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Stéphane voit le phoque avec Sophie."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Philippe colle la photo une photo."
+      "sentences": [
+        "Liam et Théo se retrouvent dans le jardin.",
+        "Liam apporte un sac dans un sac.",
+        "Théo pose une lampe sur la table.",
+        "Ils parlent d’abord d’un sac.",
+        "Puis Théo montre un livre à Liam.",
+        "Tout à coup, un sac tombe par terre.",
+        "Liam ramasse un sac et rit.",
+        "Théo range une lampe et un livre.",
+        "Avant de partir, ils vérifient encore une chaise."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Sophie sauve un éléphant au téléphone, parce que Sophie est contente."
+      "sentences": [
+        "Ce matin, Liam travaille au magasin.",
+        "Il prépare une porte avec soin.",
+        "Noah arrive et regarde une porte.",
+        "Ensemble, ils ajoutent un livre.",
+        "Liam explique l’usage d’un livre.",
+        "Noah propose aussi une lampe.",
+        "Le travail avance grâce à une porte.",
+        "Ils placent une lampe près d’un livre.",
+        "À la fin, une chaise est prêt pour demain."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Léa fait des courses au marché.",
+        "Dans le panier, il y a déjà un sac.",
+        "Sara choisit une chaise juste à côté.",
+        "Ils comparent un sac et une chaise.",
+        "Le vendeur parle d’une porte.",
+        "Léa prend aussi une porte.",
+        "Sara paie et range un sac.",
+        "Sur le chemin, ils discutent d’une chaise.",
+        "À la maison, ils sortent encore une lampe."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Joseph étudie un alphabet au téléphone, parce que Sophie est contente."
+      "sentences": [
+        "Noah lit un message à la bibliothèque.",
+        "Léa doit apporter un sac rapidement.",
+        "Noah part avec une porte.",
+        "Ils se croisent près d’une chaise.",
+        "Léa donne un sac à Noah.",
+        "Noah vérifie un sac calmement.",
+        "Ensuite, ils déposent une porte.",
+        "Une amie demande des nouvelles d’une chaise.",
+        "Plus tard, un livre termine la journée."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Nora organise une activité à la gare.",
+        "Sara apporte une porte dès le début.",
+        "Sur la table, on voit une porte et une chaise.",
+        "Les enfants touchent une chaise à tour de rôle.",
+        "Nora explique le mot lié à une lampe.",
+        "Sara dessine une lampe au tableau.",
+        "Tout le monde écoute l’histoire d’une porte.",
+        "Après l’exercice, ils rangent une chaise.",
+        "Nora note encore un livre dans le cahier."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Joseph regarde la biographie avec Philippe, et Philippe est très content."
+      "sentences": [
+        "Il pleut un peu au magasin.",
+        "Yanis protège un livre sous le bras.",
+        "Maya tient une chaise contre lui.",
+        "Ils entrent et posent un livre.",
+        "Yanis sèche une chaise avec un chiffon.",
+        "Maya prépare une lampe pour attendre.",
+        "Ils parlent calmement d’un livre.",
+        "Quand la pluie cesse, une lampe est prêt.",
+        "Ils repartent avec une porte."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Théo et Yanis révisent dans le jardin.",
+        "La leçon commence avec une lampe.",
+        "Théo lit une phrase sur une lampe.",
+        "Yanis répète le mot un livre.",
+        "Ils écrivent un livre dans le cahier.",
+        "Une erreur apparaît près d’une porte.",
+        "Théo corrige et montre une porte.",
+        "Yanis récite encore la phrase d’une lampe.",
+        "Avant de partir, ils relisent un sac."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Stéphane nourrit le dauphin avec Sophie, parce que Sophie est contente."
+      "sentences": [
+        "Karim visite un stand au café.",
+        "Emma désigne une chaise du doigt.",
+        "Le guide présente une chaise clairement.",
+        "Karim photographie un sac.",
+        "Ils posent une question sur un sac.",
+        "Emma note le détail d’une porte.",
+        "Avant de partir, Karim achète une porte.",
+        "Emma range une porte dans le sac.",
+        "Sur le chemin du retour, ils parlent d’un livre."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Noah prépare une surprise à la bibliothèque.",
+        "Amira cache une chaise derrière la porte.",
+        "Tout le monde cherche une chaise.",
+        "Noah donne un indice avec une porte.",
+        "Amira trouve enfin une chaise.",
+        "Ils ouvrent aussi un sac.",
+        "Les amis rient autour d’une porte.",
+        "Noah partage un sac avec le groupe.",
+        "La fête se termine près d’un livre."
+      ]
+    },
+    {
+      "level": "b1",
+      "sentences": [
+        "Inès commence la journée dans la cour.",
+        "Karim apporte un livre pour le groupe.",
+        "Ils placent un livre au centre.",
+        "Inès décrit un livre à voix haute.",
+        "Karim ajoute une lampe à côté.",
+        "Le groupe compare un livre et une lampe.",
+        "Ensuite, chacun touche une chaise.",
+        "Inès résume le rôle d’une chaise.",
+        "Pour finir, Karim range une porte."
+      ]
     }
   ],
-  "type14": [
-    {
-      "level": "a1",
-      "sentence": "Le facteur recopie la géographie une photo."
-    },
-    {
-      "level": "a1",
-      "sentence": "Stéphane cherche le microphone bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le cousin voit le nénuphar une photo."
-    },
-    {
-      "level": "a1",
-      "sentence": "La factrice lit une orthographe avec Philippe."
-    },
-    {
-      "level": "a1",
-      "sentence": "Joseph recopie le paragraphe bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La cousine visite le phare avec Philippe."
-    },
+  "type14Stories": [
     {
       "level": "a2",
-      "sentence": "Après le cours, Joseph souligne la phrase une photo."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Joseph admire le phénomène au téléphone."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Joseph termine le saxophone au téléphone."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Philippe pose la sphère avec Sophie."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Sophie marque le trophée une photo."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Joseph range le téléphone une photo."
+      "sentences": [
+        "Liam et Omar se retrouvent dans la cour.",
+        "Liam apporte un sac dans un sac.",
+        "Omar pose une porte sur la table.",
+        "Ils parlent d’abord d’un sac.",
+        "Puis Omar montre une lampe à Liam.",
+        "Tout à coup, un sac tombe par terre.",
+        "Liam ramasse un sac et rit.",
+        "Omar range une porte et une lampe.",
+        "Avant de partir, ils vérifient encore une chaise.",
+        "Plus tard, Yanis revient au magasin.",
+        "Amira rapporte une lampe une seconde fois.",
+        "Ils vérifient encore une lampe ensemble.",
+        "Yanis explique une nouvelle idée sur un sac.",
+        "Amira écoute et regarde un sac.",
+        "Le groupe accepte d’essayer une chaise.",
+        "Après une pause, une chaise change le plan.",
+        "Yanis montre le résultat près d’une lampe.",
+        "Amira félicite tout le monde pour un sac.",
+        "Avant la nuit, ils rangent une porte."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Stéphane écrit le graphique une photo, et Philippe est très content."
+      "sentences": [
+        "Ce matin, Sofia travaille au marché.",
+        "Il prépare une porte avec soin.",
+        "Léa arrive et regarde une porte.",
+        "Ensemble, ils ajoutent une lampe.",
+        "Sofia explique l’usage d’une lampe.",
+        "Léa propose aussi un livre.",
+        "Le travail avance grâce à une porte.",
+        "Ils placent un livre près d’une lampe.",
+        "À la fin, une chaise est prêt pour demain.",
+        "Plus tard, Théo revient dans la cour.",
+        "Amira rapporte une porte une seconde fois.",
+        "Ils vérifient encore une porte ensemble.",
+        "Théo explique une nouvelle idée sur un livre.",
+        "Amira écoute et regarde un livre.",
+        "Le groupe accepte d’essayer un sac.",
+        "Après une pause, un sac change le plan.",
+        "Théo montre le résultat près d’une porte.",
+        "Amira félicite tout le monde pour un livre.",
+        "Avant la nuit, ils rangent une lampe."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Yanis fait des courses à la bibliothèque.",
+        "Dans le panier, il y a déjà un livre.",
+        "Inès choisit une chaise juste à côté.",
+        "Ils comparent un livre et une chaise.",
+        "Le vendeur parle d’une lampe.",
+        "Yanis prend aussi une lampe.",
+        "Inès paie et range un livre.",
+        "Sur le chemin, ils discutent d’une chaise.",
+        "À la maison, ils sortent encore une porte.",
+        "Plus tard, Adam revient dans le jardin.",
+        "Inès rapporte une lampe une seconde fois.",
+        "Ils vérifient encore une lampe ensemble.",
+        "Adam explique une nouvelle idée sur un sac.",
+        "Inès écoute et regarde un sac.",
+        "Le groupe accepte d’essayer une porte.",
+        "Après une pause, une porte change le plan.",
+        "Adam montre le résultat près d’une lampe.",
+        "Inès félicite tout le monde pour un sac.",
+        "Avant la nuit, ils rangent un livre."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Philippe utilise la géographie au téléphone, parce que Sophie est contente."
+      "sentences": [
+        "Adam lit un message au café.",
+        "Yanis doit apporter un livre rapidement.",
+        "Adam part avec une porte.",
+        "Ils se croisent près d’un sac.",
+        "Yanis donne un livre à Adam.",
+        "Adam vérifie un livre calmement.",
+        "Ensuite, ils déposent une porte.",
+        "Une amie demande des nouvelles d’un sac.",
+        "Plus tard, une lampe termine la journée.",
+        "Plus tard, Omar revient dans la cuisine.",
+        "Hugo rapporte une chaise une seconde fois.",
+        "Ils vérifient encore une chaise ensemble.",
+        "Omar explique une nouvelle idée sur un sac.",
+        "Hugo écoute et regarde un sac.",
+        "Le groupe accepte d’essayer une porte.",
+        "Après une pause, une porte change le plan.",
+        "Omar montre le résultat près d’une chaise.",
+        "Hugo félicite tout le monde pour un sac.",
+        "Avant la nuit, ils rangent un livre."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Sara organise une activité au magasin.",
+        "Léa apporte une porte dès le début.",
+        "Sur la table, on voit une porte et une lampe.",
+        "Les enfants touchent une lampe à tour de rôle.",
+        "Sara explique le mot lié à un livre.",
+        "Léa dessine un livre au tableau.",
+        "Tout le monde écoute l’histoire d’une porte.",
+        "Après l’exercice, ils rangent une lampe.",
+        "Sara note encore un sac dans le cahier.",
+        "Plus tard, Emma revient à l’école.",
+        "Inès rapporte un sac une seconde fois.",
+        "Ils vérifient encore un sac ensemble.",
+        "Emma explique une nouvelle idée sur une chaise.",
+        "Inès écoute et regarde une chaise.",
+        "Le groupe accepte d’essayer un livre.",
+        "Après une pause, un livre change le plan.",
+        "Emma montre le résultat près d’un sac.",
+        "Inès félicite tout le monde pour une chaise.",
+        "Avant la nuit, ils rangent une lampe."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Joseph trouve le microphone au téléphone, parce que Sophie est contente."
+      "sentences": [
+        "Il pleut un peu à l’école.",
+        "Liam protège une lampe sous le bras.",
+        "Emma tient un sac contre lui.",
+        "Ils entrent et posent une lampe.",
+        "Liam sèche un sac avec un chiffon.",
+        "Emma prépare une porte pour attendre.",
+        "Ils parlent calmement d’une lampe.",
+        "Quand la pluie cesse, une porte est prêt.",
+        "Ils repartent avec une chaise.",
+        "Plus tard, Hugo revient au marché.",
+        "Noah rapporte une lampe une seconde fois.",
+        "Ils vérifient encore une lampe ensemble.",
+        "Hugo explique une nouvelle idée sur une chaise.",
+        "Noah écoute et regarde une chaise.",
+        "Le groupe accepte d’essayer un sac.",
+        "Après une pause, un sac change le plan.",
+        "Hugo montre le résultat près d’une lampe.",
+        "Noah félicite tout le monde pour une chaise.",
+        "Avant la nuit, ils rangent une porte."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Noah et Yanis révisent à la bibliothèque.",
+        "La leçon commence avec une lampe.",
+        "Noah lit une phrase sur une lampe.",
+        "Yanis répète le mot une chaise.",
+        "Ils écrivent une chaise dans le cahier.",
+        "Une erreur apparaît près d’une porte.",
+        "Noah corrige et montre une porte.",
+        "Yanis récite encore la phrase d’une lampe.",
+        "Avant de partir, ils relisent un livre.",
+        "Plus tard, Théo revient à l’école.",
+        "Sofia rapporte une porte une seconde fois.",
+        "Ils vérifient encore une porte ensemble.",
+        "Théo explique une nouvelle idée sur un livre.",
+        "Sofia écoute et regarde un livre.",
+        "Le groupe accepte d’essayer un sac.",
+        "Après une pause, un sac change le plan.",
+        "Théo montre le résultat près d’une porte.",
+        "Sofia félicite tout le monde pour un livre.",
+        "Avant la nuit, ils rangent une chaise."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Philippe photographie le nénuphar avec Sophie, et Philippe est très content."
+      "sentences": [
+        "Omar visite un stand à l’école.",
+        "Yanis désigne une lampe du doigt.",
+        "Le guide présente une lampe clairement.",
+        "Omar photographie un livre.",
+        "Ils posent une question sur un livre.",
+        "Yanis note le détail d’une chaise.",
+        "Avant de partir, Omar achète une chaise.",
+        "Yanis range une chaise dans le sac.",
+        "Sur le chemin du retour, ils parlent d’un sac.",
+        "Plus tard, Léa revient au marché.",
+        "Sara rapporte une lampe une seconde fois.",
+        "Ils vérifient encore une lampe ensemble.",
+        "Léa explique une nouvelle idée sur un livre.",
+        "Sara écoute et regarde un livre.",
+        "Le groupe accepte d’essayer un sac.",
+        "Après une pause, un sac change le plan.",
+        "Léa montre le résultat près d’une lampe.",
+        "Sara félicite tout le monde pour un livre.",
+        "Avant la nuit, ils rangent une chaise."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Nora prépare une surprise au café.",
+        "Théo cache une chaise derrière la porte.",
+        "Tout le monde cherche une chaise.",
+        "Nora donne un indice avec un livre.",
+        "Théo trouve enfin une chaise.",
+        "Ils ouvrent aussi une porte.",
+        "Les amis rient autour d’un livre.",
+        "Nora partage une porte avec le groupe.",
+        "La fête se termine près d’un sac.",
+        "Plus tard, Amira revient dans la cour.",
+        "Omar rapporte un livre une seconde fois.",
+        "Ils vérifient encore un livre ensemble.",
+        "Amira explique une nouvelle idée sur un sac.",
+        "Omar écoute et regarde un sac.",
+        "Le groupe accepte d’essayer une chaise.",
+        "Après une pause, une chaise change le plan.",
+        "Amira montre le résultat près d’un livre.",
+        "Omar félicite tout le monde pour un sac.",
+        "Avant la nuit, ils rangent une lampe."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Joseph prépare une orthographe avec Philippe, et Philippe est très content."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Sophie corrige le paragraphe une photo, parce que Sophie est contente."
+      "sentences": [
+        "Maya commence la journée dans la cuisine.",
+        "Yanis apporte une chaise pour le groupe.",
+        "Ils placent une chaise au centre.",
+        "Maya décrit une chaise à voix haute.",
+        "Yanis ajoute un sac à côté.",
+        "Le groupe compare une chaise et un sac.",
+        "Ensuite, chacun touche une lampe.",
+        "Maya résume le rôle d’une lampe.",
+        "Pour finir, Yanis range un livre.",
+        "Plus tard, Hugo revient à la bibliothèque.",
+        "Léa rapporte une porte une seconde fois.",
+        "Ils vérifient encore une porte ensemble.",
+        "Hugo explique une nouvelle idée sur un livre.",
+        "Léa écoute et regarde un livre.",
+        "Le groupe accepte d’essayer une chaise.",
+        "Après une pause, une chaise change le plan.",
+        "Hugo montre le résultat près d’une porte.",
+        "Léa félicite tout le monde pour un livre.",
+        "Avant la nuit, ils rangent un sac."
+      ]
     }
   ]
 }

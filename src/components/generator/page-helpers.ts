@@ -181,10 +181,12 @@ export function applyType(type: ExerciseType, prev?: ExerciseBlock): Partial<Exe
                                 : soutienKind === 'determinants' ||
                                     soutienKind === 'ordre'
                                   ? { count: 9 }
-                                : soutienKind === 'dictee' || soutienKind === 'compter'
+                                : soutienKind === 'dictee'
                                   ? { count: 8 }
-                                  : soutienKind === 'lire'
-                                    ? { count: 20 }
+                                  : soutienKind === 'compter'
+                                    ? { count: 9 }
+                                    : soutienKind === 'lire'
+                                      ? { count: 19 }
                                     : soutienKind === 'associer-audio' ||
                                         soutienKind === 'associer-image'
                                       ? { count: 2 }

@@ -2403,128 +2403,388 @@
       ]
     }
   ],
-  "type12": [
-    {
-      "level": "a1",
-      "sentence": "La cousine longe le banc bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La copine prépare le cent bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La jardinière range la chambre."
-    },
-    {
-      "level": "a1",
-      "sentence": "La fille voit le champ bien."
-    },
+  "type12Stories": [
     {
       "level": "a2",
-      "sentence": "Ce matin, le boulanger allume la lampe dans le jardin."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le jardinier téléphone à la maman dans le jardin."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Anne porte le manteau avec Henri."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le papa repasse le pantalon pendant longtemps."
+      "sentences": [
+        "Nora et Inès se retrouvent au parc.",
+        "Nora apporte un hamburger dans un sac.",
+        "Inès pose une lampe sur la table.",
+        "Ils parlent d’abord d’un hamburger.",
+        "Puis Inès montre un gant à Nora.",
+        "Tout à coup, un hamburger tombe par terre.",
+        "Nora ramasse un hamburger et rit.",
+        "Inès range une lampe et un gant.",
+        "Avant de partir, ils vérifient encore un croissan."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la copine écrit le trente, et Jean est très content."
+      "sentences": [
+        "Ce matin, Amira travaille à l’école.",
+        "Il prépare un croissan avec soin.",
+        "Maya arrive et regarde un croissan.",
+        "Ensemble, ils ajoutent un croissant.",
+        "Amira explique l’usage d’un croissant.",
+        "Maya propose aussi une fenêtre.",
+        "Le travail avance grâce à un croissan.",
+        "Ils placent une fenêtre près d’un croissant.",
+        "À la fin, une ampoule est prêt pour demain."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Noah fait des courses au magasin.",
+        "Dans le panier, il y a déjà une chemise.",
+        "Inès choisit un manteau juste à côté.",
+        "Ils comparent une chemise et un manteau.",
+        "Le vendeur parle d’un gant.",
+        "Noah prend aussi un gant.",
+        "Inès paie et range une chemise.",
+        "Sur le chemin, ils discutent d’un manteau.",
+        "À la maison, ils sortent encore une ampoule."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Henri attend le vendredi avec Jean, et Jean est très content."
+      "sentences": [
+        "Sara lit un message au magasin.",
+        "Liam doit apporter une banane rapidement.",
+        "Sara part avec une chemise.",
+        "Ils se croisent près d’une balance.",
+        "Liam donne une banane à Sara.",
+        "Sara vérifie une banane calmement.",
+        "Ensuite, ils déposent une chemise.",
+        "Une amie demande des nouvelles d’une balance.",
+        "Plus tard, un croissant termine la journée."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Omar organise une activité au parc.",
+        "Hugo apporte un croissan dès le début.",
+        "Sur la table, on voit un croissan et une banane.",
+        "Les enfants touchent une banane à tour de rôle.",
+        "Omar explique le mot lié à un manteau.",
+        "Hugo dessine un manteau au tableau.",
+        "Tout le monde écoute l’histoire d’un croissan.",
+        "Après l’exercice, ils rangent une banane.",
+        "Omar note encore une chemise dans le cahier."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la fille regarde le vent, et Jean est très content."
+      "sentences": [
+        "Il pleut un peu au café.",
+        "Noah protège un manteau sous le bras.",
+        "Sofia tient une lampe contre lui.",
+        "Ils entrent et posent un manteau.",
+        "Noah sèche une lampe avec un chiffon.",
+        "Sofia prépare un pantalon pour attendre.",
+        "Ils parlent calmement d’un manteau.",
+        "Quand la pluie cesse, un pantalon est prêt.",
+        "Ils repartent avec un chien."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Maya et Inès révisent au marché.",
+        "La leçon commence avec un croissan.",
+        "Maya lit une phrase sur un croissan.",
+        "Inès répète le mot un gant.",
+        "Ils écrivent un gant dans le cahier.",
+        "Une erreur apparaît près d’une fenêtre.",
+        "Maya corrige et montre une fenêtre.",
+        "Inès récite encore la phrase d’un croissan.",
+        "Avant de partir, ils relisent un pantalon."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le bébé prépare un étudiant, et Jean est très content."
+      "sentences": [
+        "Hugo visite un stand au café.",
+        "Liam désigne une balance du doigt.",
+        "Le guide présente une balance clairement.",
+        "Hugo photographie une chemise.",
+        "Ils posent une question sur une chemise.",
+        "Liam note le détail d’une fenêtre.",
+        "Avant de partir, Hugo achète une fenêtre.",
+        "Liam range une fenêtre dans le sac.",
+        "Sur le chemin du retour, ils parlent d’une ampoule."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Théo prépare une surprise au parc.",
+        "Amira cache un croissan derrière la porte.",
+        "Tout le monde cherche un croissan.",
+        "Théo donne un indice avec une balance.",
+        "Amira trouve enfin un croissan.",
+        "Ils ouvrent aussi un chien.",
+        "Les amis rient autour d’une balance.",
+        "Théo partage un chien avec le groupe.",
+        "La fête se termine près d’un canard."
+      ]
+    },
+    {
+      "level": "b1",
+      "sentences": [
+        "Maya commence la journée au café.",
+        "Sofia apporte une banane pour le groupe.",
+        "Ils placent une banane au centre.",
+        "Maya décrit une banane à voix haute.",
+        "Sofia ajoute une branche à côté.",
+        "Le groupe compare une banane et une branche.",
+        "Ensuite, chacun touche un hamburger.",
+        "Maya résume le rôle d’un hamburger.",
+        "Pour finir, Sofia range une balance."
+      ]
     }
   ],
-  "type14": [
-    {
-      "level": "a1",
-      "sentence": "Le cousin lave la dent bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le copain aime le dimanche bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "Jean suit un enfant bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La cousine perd le gant bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "François lave la jambe bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "Henri parle avec le janvier."
-    },
+  "type14Stories": [
     {
       "level": "a2",
-      "sentence": "Ce soir, la professeure invite le parent pendant longtemps."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, François arrose la plante pendant longtemps."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le maître dîne dans le restaurant avec Henri."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la maman regarde le sang avec Jean."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, un ami aide la tante avec Henri."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, la cousine attend le temps dans le jardin."
+      "sentences": [
+        "Sofia et Adam se retrouvent au marché.",
+        "Sofia apporte une chemise dans un sac.",
+        "Adam pose une branche sur la table.",
+        "Ils parlent d’abord d’une chemise.",
+        "Puis Adam montre un manteau à Sofia.",
+        "Tout à coup, une chemise tombe par terre.",
+        "Sofia ramasse une chemise et rit.",
+        "Adam range une branche et un manteau.",
+        "Avant de partir, ils vérifient encore un croissant.",
+        "Plus tard, Nora revient dans le jardin.",
+        "Adam rapporte un croissan une seconde fois.",
+        "Ils vérifient encore un croissan ensemble.",
+        "Nora explique une nouvelle idée sur une fenêtre.",
+        "Adam écoute et regarde une fenêtre.",
+        "Le groupe accepte d’essayer une balance.",
+        "Après une pause, une balance change le plan.",
+        "Nora montre le résultat près d’un croissan.",
+        "Adam félicite tout le monde pour une fenêtre.",
+        "Avant la nuit, ils rangent un pantalon."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Anne cherche le banc dans le jardin, et Jean est très content."
+      "sentences": [
+        "Ce matin, Inès travaille à la gare.",
+        "Il prépare une ampoule avec soin.",
+        "Maya arrive et regarde une ampoule.",
+        "Ensemble, ils ajoutent une balance.",
+        "Inès explique l’usage d’une balance.",
+        "Maya propose aussi une fenêtre.",
+        "Le travail avance grâce à une ampoule.",
+        "Ils placent une fenêtre près d’une balance.",
+        "À la fin, une chemise est prêt pour demain.",
+        "Plus tard, Sofia revient à la gare.",
+        "Théo rapporte une fenêtre une seconde fois.",
+        "Ils vérifient encore une fenêtre ensemble.",
+        "Sofia explique une nouvelle idée sur un manteau.",
+        "Théo écoute et regarde un manteau.",
+        "Le groupe accepte d’essayer une lampe.",
+        "Après une pause, une lampe change le plan.",
+        "Sofia montre le résultat près d’une fenêtre.",
+        "Théo félicite tout le monde pour un manteau.",
+        "Avant la nuit, ils rangent un chien."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Théo fait des courses au magasin.",
+        "Dans le panier, il y a déjà un gant.",
+        "Adam choisit une chemise juste à côté.",
+        "Ils comparent un gant et une chemise.",
+        "Le vendeur parle d’un croissan.",
+        "Théo prend aussi un croissan.",
+        "Adam paie et range un gant.",
+        "Sur le chemin, ils discutent d’une chemise.",
+        "À la maison, ils sortent encore une lampe.",
+        "Plus tard, Inès revient dans la cuisine.",
+        "Amira rapporte une chemise une seconde fois.",
+        "Ils vérifient encore une chemise ensemble.",
+        "Inès explique une nouvelle idée sur une lampe.",
+        "Amira écoute et regarde une lampe.",
+        "Le groupe accepte d’essayer une ampoule.",
+        "Après une pause, une ampoule change le plan.",
+        "Inès montre le résultat près d’une chemise.",
+        "Amira félicite tout le monde pour une lampe.",
+        "Avant la nuit, ils rangent une branche."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le papa lit le cent, et Jean est très content."
+      "sentences": [
+        "Karim lit un message au café.",
+        "Inès doit apporter un manteau rapidement.",
+        "Karim part avec un pantalon.",
+        "Ils se croisent près d’un croissan.",
+        "Inès donne un manteau à Karim.",
+        "Karim vérifie un manteau calmement.",
+        "Ensuite, ils déposent un pantalon.",
+        "Une amie demande des nouvelles d’un croissan.",
+        "Plus tard, une chemise termine la journée.",
+        "Plus tard, Théo revient à la bibliothèque.",
+        "Léa rapporte une ampoule une seconde fois.",
+        "Ils vérifient encore une ampoule ensemble.",
+        "Théo explique une nouvelle idée sur un croissan.",
+        "Léa écoute et regarde un croissan.",
+        "Le groupe accepte d’essayer un pantalon.",
+        "Après une pause, un pantalon change le plan.",
+        "Théo montre le résultat près d’une ampoule.",
+        "Léa félicite tout le monde pour un croissan.",
+        "Avant la nuit, ils rangent un chien."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Inès organise une activité à la gare.",
+        "Léa apporte une balance dès le début.",
+        "Sur la table, on voit une balance et un hamburger.",
+        "Les enfants touchent un hamburger à tour de rôle.",
+        "Inès explique le mot lié à un chien.",
+        "Léa dessine un chien au tableau.",
+        "Tout le monde écoute l’histoire d’une balance.",
+        "Après l’exercice, ils rangent un hamburger.",
+        "Inès note encore une banane dans le cahier.",
+        "Plus tard, Adam revient dans la cour.",
+        "Sofia rapporte une chemise une seconde fois.",
+        "Ils vérifient encore une chemise ensemble.",
+        "Adam explique une nouvelle idée sur un chien.",
+        "Sofia écoute et regarde un chien.",
+        "Le groupe accepte d’essayer un gant.",
+        "Après une pause, un gant change le plan.",
+        "Adam montre le résultat près d’une chemise.",
+        "Sofia félicite tout le monde pour un chien.",
+        "Avant la nuit, ils rangent un hamburger."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la directrice retourne dans la chambre, et Jean est très content."
+      "sentences": [
+        "Il pleut un peu dans la cuisine.",
+        "Nora protège un pantalon sous le bras.",
+        "Léa tient une fenêtre contre lui.",
+        "Ils entrent et posent un pantalon.",
+        "Nora sèche une fenêtre avec un chiffon.",
+        "Léa prépare un chien pour attendre.",
+        "Ils parlent calmement d’un pantalon.",
+        "Quand la pluie cesse, un chien est prêt.",
+        "Ils repartent avec un canard.",
+        "Plus tard, Inès revient au café.",
+        "Sofia rapporte une banane une seconde fois.",
+        "Ils vérifient encore une banane ensemble.",
+        "Inès explique une nouvelle idée sur une ampoule.",
+        "Sofia écoute et regarde une ampoule.",
+        "Le groupe accepte d’essayer un gant.",
+        "Après une pause, un gant change le plan.",
+        "Inès montre le résultat près d’une banane.",
+        "Sofia félicite tout le monde pour une ampoule.",
+        "Avant la nuit, ils rangent une chemise."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Léa et Théo révisent à la bibliothèque.",
+        "La leçon commence avec une ampoule.",
+        "Léa lit une phrase sur une ampoule.",
+        "Théo répète le mot un manteau.",
+        "Ils écrivent un manteau dans le cahier.",
+        "Une erreur apparaît près d’une balance.",
+        "Léa corrige et montre une balance.",
+        "Théo récite encore la phrase d’une ampoule.",
+        "Avant de partir, ils relisent une fenêtre.",
+        "Plus tard, Amira revient dans la cour.",
+        "Karim rapporte une balance une seconde fois.",
+        "Ils vérifient encore une balance ensemble.",
+        "Amira explique une nouvelle idée sur un hamburger.",
+        "Karim écoute et regarde un hamburger.",
+        "Le groupe accepte d’essayer un pantalon.",
+        "Après une pause, un pantalon change le plan.",
+        "Amira montre le résultat près d’une balance.",
+        "Karim félicite tout le monde pour un hamburger.",
+        "Avant la nuit, ils rangent une lampe."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la copine plante le champ, parce que Henri est content aussi."
+      "sentences": [
+        "Léa visite un stand dans la cuisine.",
+        "Karim désigne un canard du doigt.",
+        "Le guide présente un canard clairement.",
+        "Léa photographie un hamburger.",
+        "Ils posent une question sur un hamburger.",
+        "Karim note le détail d’une balance.",
+        "Avant de partir, Léa achète une balance.",
+        "Karim range une balance dans le sac.",
+        "Sur le chemin du retour, ils parlent d’un chien.",
+        "Plus tard, Hugo revient dans la cour.",
+        "Yanis rapporte une balance une seconde fois.",
+        "Ils vérifient encore une balance ensemble.",
+        "Hugo explique une nouvelle idée sur une lampe.",
+        "Yanis écoute et regarde une lampe.",
+        "Le groupe accepte d’essayer un croissan.",
+        "Après une pause, un croissan change le plan.",
+        "Hugo montre le résultat près d’une balance.",
+        "Yanis félicite tout le monde pour une lampe.",
+        "Avant la nuit, ils rangent une chemise."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Emma prépare une surprise à la gare.",
+        "Hugo cache une lampe derrière la porte.",
+        "Tout le monde cherche une lampe.",
+        "Emma donne un indice avec une ampoule.",
+        "Hugo trouve enfin une lampe.",
+        "Ils ouvrent aussi un croissan.",
+        "Les amis rient autour d’une ampoule.",
+        "Emma partage un croissan avec le groupe.",
+        "La fête se termine près d’un pantalon.",
+        "Plus tard, Sofia revient au parc.",
+        "Léa rapporte un canard une seconde fois.",
+        "Ils vérifient encore un canard ensemble.",
+        "Sofia explique une nouvelle idée sur une fenêtre.",
+        "Léa écoute et regarde une fenêtre.",
+        "Le groupe accepte d’essayer une balance.",
+        "Après une pause, une balance change le plan.",
+        "Sofia montre le résultat près d’un canard.",
+        "Léa félicite tout le monde pour une fenêtre.",
+        "Avant la nuit, ils rangent une banane."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la boulangère lave la dent, parce que Henri est content aussi."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le facteur choisit le dimanche, et Jean est très content."
+      "sentences": [
+        "Liam commence la journée au café.",
+        "Maya apporte un hamburger pour le groupe.",
+        "Ils placent un hamburger au centre.",
+        "Liam décrit un hamburger à voix haute.",
+        "Maya ajoute un pantalon à côté.",
+        "Le groupe compare un hamburger et un pantalon.",
+        "Ensuite, chacun touche une branche.",
+        "Liam résume le rôle d’une branche.",
+        "Pour finir, Maya range une banane.",
+        "Plus tard, Emma revient au parc.",
+        "Liam rapporte un pantalon une seconde fois.",
+        "Ils vérifient encore un pantalon ensemble.",
+        "Emma explique une nouvelle idée sur une fenêtre.",
+        "Liam écoute et regarde une fenêtre.",
+        "Le groupe accepte d’essayer un gant.",
+        "Après une pause, un gant change le plan.",
+        "Emma montre le résultat près d’un pantalon.",
+        "Liam félicite tout le monde pour une fenêtre.",
+        "Avant la nuit, ils rangent une chemise."
+      ]
     }
   ]
 }

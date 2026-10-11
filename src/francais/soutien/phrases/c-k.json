@@ -2160,128 +2160,388 @@
       ]
     }
   ],
-  "type12": [
-    {
-      "level": "a1",
-      "sentence": "La musicienne achète le café."
-    },
-    {
-      "level": "a1",
-      "sentence": "La professeure cherche la caisse."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le bébé prend le camion ici."
-    },
-    {
-      "level": "a1",
-      "sentence": "La jardinière lave la carotte ici."
-    },
+  "type12Stories": [
     {
       "level": "a2",
-      "sentence": "À midi, le collègue nourrit le coq avec Luc."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le cousin choisit le costume avec Claire."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le médecin coupe le couteau avec Claire."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, une amie enfile la cravate au café."
+      "sentences": [
+        "Maya et Inès se retrouvent au marché.",
+        "Maya apporte une caisse dans un sac.",
+        "Inès pose une carotte sur la table.",
+        "Ils parlent d’abord d’une caisse.",
+        "Puis Inès montre un café à Maya.",
+        "Tout à coup, une caisse tombe par terre.",
+        "Maya ramasse une caisse et rit.",
+        "Inès range une carotte et un café.",
+        "Avant de partir, ils vérifient encore un cartable."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la professeure rentre à une école, et Claire est très contente."
+      "sentences": [
+        "Ce matin, Léa travaille au parc.",
+        "Il prépare un café avec soin.",
+        "Théo arrive et regarde un café.",
+        "Ensemble, ils ajoutent un cartable.",
+        "Léa explique l’usage d’un cartable.",
+        "Théo propose aussi une caisse.",
+        "Le travail avance grâce à un café.",
+        "Ils placent une caisse près d’un cartable.",
+        "À la fin, un couteau est prêt pour demain."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Hugo fait des courses dans la cour.",
+        "Dans le panier, il y a déjà une carotte.",
+        "Léa choisit un cartable juste à côté.",
+        "Ils comparent une carotte et un cartable.",
+        "Le vendeur parle d’un café.",
+        "Hugo prend aussi un café.",
+        "Léa paie et range une carotte.",
+        "Sur le chemin, ils discutent d’un cartable.",
+        "À la maison, ils sortent encore une caisse."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le bébé sert le café, parce que Luc est content aussi."
+      "sentences": [
+        "Théo lit un message au magasin.",
+        "Omar doit apporter un collier rapidement.",
+        "Théo part avec une carotte.",
+        "Ils se croisent près d’un crayon.",
+        "Omar donne un collier à Théo.",
+        "Théo vérifie un collier calmement.",
+        "Ensuite, ils déposent une carotte.",
+        "Une amie demande des nouvelles d’un crayon.",
+        "Plus tard, un couteau termine la journée."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Hugo organise une activité dans la cour.",
+        "Théo apporte un sac dès le début.",
+        "Sur la table, on voit un sac et un café.",
+        "Les enfants touchent un café à tour de rôle.",
+        "Hugo explique le mot lié à un crayon.",
+        "Théo dessine un crayon au tableau.",
+        "Tout le monde écoute l’histoire d’un sac.",
+        "Après l’exercice, ils rangent un café.",
+        "Hugo note encore un collier dans le cahier."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le collègue montre la caisse, et Claire est très contente."
+      "sentences": [
+        "Il pleut un peu dans la cour.",
+        "Amira protège un sac sous le bras.",
+        "Hugo tient un couteau contre lui.",
+        "Ils entrent et posent un sac.",
+        "Amira sèche un couteau avec un chiffon.",
+        "Hugo prépare une carotte pour attendre.",
+        "Ils parlent calmement d’un sac.",
+        "Quand la pluie cesse, une carotte est prêt.",
+        "Ils repartent avec un crayon."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Sofia et Nora révisent au magasin.",
+        "La leçon commence avec une carotte.",
+        "Sofia lit une phrase sur une carotte.",
+        "Nora répète le mot un crayon.",
+        "Ils écrivent un crayon dans le cahier.",
+        "Une erreur apparaît près d’un cartable.",
+        "Sofia corrige et montre un cartable.",
+        "Nora récite encore la phrase d’une carotte.",
+        "Avant de partir, ils relisent une caisse."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le papa prend le camion, parce que Luc est content aussi."
+      "sentences": [
+        "Hugo visite un stand à la gare.",
+        "Emma désigne un crayon du doigt.",
+        "Le guide présente un crayon clairement.",
+        "Hugo photographie un café.",
+        "Ils posent une question sur un café.",
+        "Emma note le détail d’une carotte.",
+        "Avant de partir, Hugo achète une carotte.",
+        "Emma range une carotte dans le sac.",
+        "Sur le chemin du retour, ils parlent d’un collier."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Maya prépare une surprise dans le jardin.",
+        "Amira cache un crayon derrière la porte.",
+        "Tout le monde cherche un crayon.",
+        "Maya donne un indice avec une caisse.",
+        "Amira trouve enfin un crayon.",
+        "Ils ouvrent aussi un sac.",
+        "Les amis rient autour d’une caisse.",
+        "Maya partage un sac avec le groupe.",
+        "La fête se termine près d’un cartable."
+      ]
+    },
+    {
+      "level": "b1",
+      "sentences": [
+        "Omar commence la journée à l’école.",
+        "Liam apporte un sac pour le groupe.",
+        "Ils placent un sac au centre.",
+        "Omar décrit un sac à voix haute.",
+        "Liam ajoute un crayon à côté.",
+        "Le groupe compare un sac et un crayon.",
+        "Ensuite, chacun touche un café.",
+        "Omar résume le rôle d’un café.",
+        "Pour finir, Liam range une caisse."
+      ]
     }
   ],
-  "type14": [
-    {
-      "level": "a1",
-      "sentence": "Le papa trouve le cartable ici."
-    },
-    {
-      "level": "a1",
-      "sentence": "Carl gagne le casque bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La collègue décore la classe."
-    },
-    {
-      "level": "a1",
-      "sentence": "La voisine caresse le cochon."
-    },
-    {
-      "level": "a1",
-      "sentence": "Nicolas mange la cocotte bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le directeur choisit le collier."
-    },
+  "type14Stories": [
     {
       "level": "a2",
-      "sentence": "Après le cours, la voisine emprunte le crayon avec Luc."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le facteur choisit la crêpe au café."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le papa cherche le cube avec Claire."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la maîtresse contourne le lac avec Claire."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, la voisine pique-nique dans le parc avec Claire."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la copine emporte le sac avec Luc."
+      "sentences": [
+        "Karim et Sara se retrouvent à la bibliothèque.",
+        "Karim apporte une caisse dans un sac.",
+        "Sara pose un crayon sur la table.",
+        "Ils parlent d’abord d’une caisse.",
+        "Puis Sara montre un couteau à Karim.",
+        "Tout à coup, une caisse tombe par terre.",
+        "Karim ramasse une caisse et rit.",
+        "Sara range un crayon et un couteau.",
+        "Avant de partir, ils vérifient encore un sac.",
+        "Plus tard, Sofia revient au café.",
+        "Maya rapporte un couteau une seconde fois.",
+        "Ils vérifient encore un couteau ensemble.",
+        "Sofia explique une nouvelle idée sur une carotte.",
+        "Maya écoute et regarde une carotte.",
+        "Le groupe accepte d’essayer une caisse.",
+        "Après une pause, une caisse change le plan.",
+        "Sofia montre le résultat près d’un couteau.",
+        "Maya félicite tout le monde pour une carotte.",
+        "Avant la nuit, ils rangent un café."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Carl mange la carotte au café, et Claire est très contente."
+      "sentences": [
+        "Ce matin, Hugo travaille à la bibliothèque.",
+        "Il prépare une caisse avec soin.",
+        "Léa arrive et regarde une caisse.",
+        "Ensemble, ils ajoutent un couteau.",
+        "Hugo explique l’usage d’un couteau.",
+        "Léa propose aussi un collier.",
+        "Le travail avance grâce à une caisse.",
+        "Ils placent un collier près d’un couteau.",
+        "À la fin, une carotte est prêt pour demain.",
+        "Plus tard, Inès revient dans la cuisine.",
+        "Karim rapporte un sac une seconde fois.",
+        "Ils vérifient encore un sac ensemble.",
+        "Inès explique une nouvelle idée sur un couteau.",
+        "Karim écoute et regarde un couteau.",
+        "Le groupe accepte d’essayer un cartable.",
+        "Après une pause, un cartable change le plan.",
+        "Inès montre le résultat près d’un sac.",
+        "Karim félicite tout le monde pour un couteau.",
+        "Avant la nuit, ils rangent un crayon."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Théo fait des courses au marché.",
+        "Dans le panier, il y a déjà une caisse.",
+        "Liam choisit un crayon juste à côté.",
+        "Ils comparent une caisse et un crayon.",
+        "Le vendeur parle d’une carotte.",
+        "Théo prend aussi une carotte.",
+        "Liam paie et range une caisse.",
+        "Sur le chemin, ils discutent d’un crayon.",
+        "À la maison, ils sortent encore un collier.",
+        "Plus tard, Sofia revient au marché.",
+        "Omar rapporte un crayon une seconde fois.",
+        "Ils vérifient encore un crayon ensemble.",
+        "Sofia explique une nouvelle idée sur un sac.",
+        "Omar écoute et regarde un sac.",
+        "Le groupe accepte d’essayer une carotte.",
+        "Après une pause, une carotte change le plan.",
+        "Sofia montre le résultat près d’un crayon.",
+        "Omar félicite tout le monde pour un sac.",
+        "Avant la nuit, ils rangent une caisse."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la factrice trouve le cartable, parce que Luc est content aussi."
+      "sentences": [
+        "Liam lit un message au magasin.",
+        "Théo doit apporter une carotte rapidement.",
+        "Liam part avec un crayon.",
+        "Ils se croisent près d’un sac.",
+        "Théo donne une carotte à Liam.",
+        "Liam vérifie une carotte calmement.",
+        "Ensuite, ils déposent un crayon.",
+        "Une amie demande des nouvelles d’un sac.",
+        "Plus tard, un collier termine la journée.",
+        "Plus tard, Karim revient à l’école.",
+        "Liam rapporte une carotte une seconde fois.",
+        "Ils vérifient encore une carotte ensemble.",
+        "Karim explique une nouvelle idée sur un collier.",
+        "Liam écoute et regarde un collier.",
+        "Le groupe accepte d’essayer un café.",
+        "Après une pause, un café change le plan.",
+        "Karim montre le résultat près d’une carotte.",
+        "Liam félicite tout le monde pour un collier.",
+        "Avant la nuit, ils rangent une caisse."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Maya organise une activité dans la cour.",
+        "Sara apporte un collier dès le début.",
+        "Sur la table, on voit un collier et un cartable.",
+        "Les enfants touchent un cartable à tour de rôle.",
+        "Maya explique le mot lié à un couteau.",
+        "Sara dessine un couteau au tableau.",
+        "Tout le monde écoute l’histoire d’un collier.",
+        "Après l’exercice, ils rangent un cartable.",
+        "Maya note encore une caisse dans le cahier.",
+        "Plus tard, Emma revient à l’école.",
+        "Inès rapporte un café une seconde fois.",
+        "Ils vérifient encore un café ensemble.",
+        "Emma explique une nouvelle idée sur une caisse.",
+        "Inès écoute et regarde une caisse.",
+        "Le groupe accepte d’essayer un collier.",
+        "Après une pause, un collier change le plan.",
+        "Emma montre le résultat près d’un café.",
+        "Inès félicite tout le monde pour une caisse.",
+        "Avant la nuit, ils rangent un sac."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la voisine marque le casque, et Claire est très contente."
+      "sentences": [
+        "Il pleut un peu à l’école.",
+        "Nora protège un collier sous le bras.",
+        "Amira tient un crayon contre lui.",
+        "Ils entrent et posent un collier.",
+        "Nora sèche un crayon avec un chiffon.",
+        "Amira prépare une carotte pour attendre.",
+        "Ils parlent calmement d’un collier.",
+        "Quand la pluie cesse, une carotte est prêt.",
+        "Ils repartent avec un cartable.",
+        "Plus tard, Yanis revient à l’école.",
+        "Sara rapporte un sac une seconde fois.",
+        "Ils vérifient encore un sac ensemble.",
+        "Yanis explique une nouvelle idée sur un collier.",
+        "Sara écoute et regarde un collier.",
+        "Le groupe accepte d’essayer un café.",
+        "Après une pause, un café change le plan.",
+        "Yanis montre le résultat près d’un sac.",
+        "Sara félicite tout le monde pour un collier.",
+        "Avant la nuit, ils rangent un couteau."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Inès et Liam révisent au parc.",
+        "La leçon commence avec un crayon.",
+        "Inès lit une phrase sur un crayon.",
+        "Liam répète le mot une carotte.",
+        "Ils écrivent une carotte dans le cahier.",
+        "Une erreur apparaît près d’un couteau.",
+        "Inès corrige et montre un couteau.",
+        "Liam récite encore la phrase d’un crayon.",
+        "Avant de partir, ils relisent un collier.",
+        "Plus tard, Omar revient au café.",
+        "Yanis rapporte un café une seconde fois.",
+        "Ils vérifient encore un café ensemble.",
+        "Omar explique une nouvelle idée sur un sac.",
+        "Yanis écoute et regarde un sac.",
+        "Le groupe accepte d’essayer un couteau.",
+        "Après une pause, un couteau change le plan.",
+        "Omar montre le résultat près d’un café.",
+        "Yanis félicite tout le monde pour un sac.",
+        "Avant la nuit, ils rangent un crayon."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la professeure rentre dans la classe, parce que Luc est content aussi."
+      "sentences": [
+        "Nora visite un stand au magasin.",
+        "Sara désigne un cartable du doigt.",
+        "Le guide présente un cartable clairement.",
+        "Nora photographie un sac.",
+        "Ils posent une question sur un sac.",
+        "Sara note le détail d’un café.",
+        "Avant de partir, Nora achète un café.",
+        "Sara range un café dans le sac.",
+        "Sur le chemin du retour, ils parlent d’un collier.",
+        "Plus tard, Omar revient dans la cuisine.",
+        "Noah rapporte un crayon une seconde fois.",
+        "Ils vérifient encore un crayon ensemble.",
+        "Omar explique une nouvelle idée sur un cartable.",
+        "Noah écoute et regarde un cartable.",
+        "Le groupe accepte d’essayer un collier.",
+        "Après une pause, un collier change le plan.",
+        "Omar montre le résultat près d’un crayon.",
+        "Noah félicite tout le monde pour un cartable.",
+        "Avant la nuit, ils rangent un sac."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Sofia prépare une surprise à la bibliothèque.",
+        "Amira cache un crayon derrière la porte.",
+        "Tout le monde cherche un crayon.",
+        "Sofia donne un indice avec un cartable.",
+        "Amira trouve enfin un crayon.",
+        "Ils ouvrent aussi un collier.",
+        "Les amis rient autour d’un cartable.",
+        "Sofia partage un collier avec le groupe.",
+        "La fête se termine près d’une carotte.",
+        "Plus tard, Maya revient dans le jardin.",
+        "Sofia rapporte un crayon une seconde fois.",
+        "Ils vérifient encore un crayon ensemble.",
+        "Maya explique une nouvelle idée sur une carotte.",
+        "Sofia écoute et regarde une carotte.",
+        "Le groupe accepte d’essayer un cartable.",
+        "Après une pause, un cartable change le plan.",
+        "Maya montre le résultat près d’un crayon.",
+        "Sofia félicite tout le monde pour une carotte.",
+        "Avant la nuit, ils rangent un café."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le cuisinier attrape le cochon, parce que Luc est content aussi."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le frère sert la cocotte, et Claire est très contente."
+      "sentences": [
+        "Inès commence la journée à la gare.",
+        "Emma apporte une carotte pour le groupe.",
+        "Ils placent une carotte au centre.",
+        "Inès décrit une carotte à voix haute.",
+        "Emma ajoute un couteau à côté.",
+        "Le groupe compare une carotte et un couteau.",
+        "Ensuite, chacun touche un café.",
+        "Inès résume le rôle d’un café.",
+        "Pour finir, Emma range une caisse.",
+        "Plus tard, Emma revient au magasin.",
+        "Inès rapporte un collier une seconde fois.",
+        "Ils vérifient encore un collier ensemble.",
+        "Emma explique une nouvelle idée sur un cartable.",
+        "Inès écoute et regarde un cartable.",
+        "Le groupe accepte d’essayer un café.",
+        "Après une pause, un café change le plan.",
+        "Emma montre le résultat près d’un collier.",
+        "Inès félicite tout le monde pour un cartable.",
+        "Avant la nuit, ils rangent une caisse."
+      ]
     }
   ]
 }

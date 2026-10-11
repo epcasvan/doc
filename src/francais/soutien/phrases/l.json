@@ -2358,128 +2358,388 @@
       ]
     }
   ],
-  "type12": [
-    {
-      "level": "a1",
-      "sentence": "Le cousin montre un ail."
-    },
-    {
-      "level": "a1",
-      "sentence": "La factrice cherche un anglais."
-    },
-    {
-      "level": "a1",
-      "sentence": "Léo ouvre le couloir bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le garçon contourne le lac."
-    },
+  "type12Stories": [
     {
       "level": "a2",
-      "sentence": "Avant le repas, la grand-mère plante le lilas avec Léa."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le garçon regarde le lion avec Léa."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, la jardinière lit dans le lit sous le lit."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, la tante donne au livre là-bas."
+      "sentences": [
+        "Nora et Inès se retrouvent dans la cuisine.",
+        "Nora apporte un pull dans un sac.",
+        "Inès pose un lapin sur la table.",
+        "Ils parlent d’abord d’un pull.",
+        "Puis Inès montre une lampe à Nora.",
+        "Tout à coup, un pull tombe par terre.",
+        "Nora ramasse un pull et rit.",
+        "Inès range un lapin et une lampe.",
+        "Avant de partir, ils vérifient encore un ail."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la sœur porte le pull, et Léa est très contente."
+      "sentences": [
+        "Ce matin, Noah travaille au marché.",
+        "Il prépare un ail avec soin.",
+        "Maya arrive et regarde un ail.",
+        "Ensemble, ils ajoutent une salade.",
+        "Noah explique l’usage d’une salade.",
+        "Maya propose aussi une lampe.",
+        "Le travail avance grâce à un ail.",
+        "Ils placent une lampe près d’une salade.",
+        "À la fin, un pull est prêt pour demain."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Noah fait des courses à la gare.",
+        "Dans le panier, il y a déjà un lapin.",
+        "Hugo choisit un pull juste à côté.",
+        "Ils comparent un lapin et un pull.",
+        "Le vendeur parle d’un lait.",
+        "Noah prend aussi un lait.",
+        "Hugo paie et range un lapin.",
+        "Sur le chemin, ils discutent d’un pull.",
+        "À la maison, ils sortent encore une lampe."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le boulanger mange la salade, parce que Luc est là aussi."
+      "sentences": [
+        "Léa lit un message dans la cuisine.",
+        "Théo doit apporter une lampe rapidement.",
+        "Léa part avec un livre.",
+        "Ils se croisent près d’un lapin.",
+        "Théo donne une lampe à Léa.",
+        "Léa vérifie une lampe calmement.",
+        "Ensuite, ils déposent un livre.",
+        "Une amie demande des nouvelles d’un lapin.",
+        "Plus tard, une salade termine la journée."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Inès organise une activité dans la cuisine.",
+        "Liam apporte un livre dès le début.",
+        "Sur la table, on voit un livre et un pull.",
+        "Les enfants touchent un pull à tour de rôle.",
+        "Inès explique le mot lié à un ail.",
+        "Liam dessine un ail au tableau.",
+        "Tout le monde écoute l’histoire d’un livre.",
+        "Après l’exercice, ils rangent un pull.",
+        "Inès note encore une lampe dans le cahier."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le garçon circule dans la ville, et Léa est très contente."
+      "sentences": [
+        "Il pleut un peu à la bibliothèque.",
+        "Léa protège une lampe sous le bras.",
+        "Liam tient un pull contre lui.",
+        "Ils entrent et posent une lampe.",
+        "Léa sèche un pull avec un chiffon.",
+        "Liam prépare un livre pour attendre.",
+        "Ils parlent calmement d’une lampe.",
+        "Quand la pluie cesse, un livre est prêt.",
+        "Ils repartent avec un ail."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Maya et Liam révisent au parc.",
+        "La leçon commence avec une salade.",
+        "Maya lit une phrase sur une salade.",
+        "Liam répète le mot un lait.",
+        "Ils écrivent un lait dans le cahier.",
+        "Une erreur apparaît près d’un ail.",
+        "Maya corrige et montre un ail.",
+        "Liam récite encore la phrase d’une salade.",
+        "Avant de partir, ils relisent un pull."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand le cuisinier vient de une école avec Léa, et Léa est très contente."
+      "sentences": [
+        "Adam visite un stand à l’école.",
+        "Maya désigne une salade du doigt.",
+        "Le guide présente une salade clairement.",
+        "Adam photographie un livre.",
+        "Ils posent une question sur un livre.",
+        "Maya note le détail d’un ail.",
+        "Avant de partir, Adam achète un ail.",
+        "Maya range un ail dans le sac.",
+        "Sur le chemin du retour, ils parlent d’une lampe."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Nora prépare une surprise au magasin.",
+        "Inès cache une lampe derrière la porte.",
+        "Tout le monde cherche une lampe.",
+        "Nora donne un indice avec un pull.",
+        "Inès trouve enfin une lampe.",
+        "Ils ouvrent aussi un ail.",
+        "Les amis rient autour d’un pull.",
+        "Nora partage un ail avec le groupe.",
+        "La fête se termine près d’une salade."
+      ]
+    },
+    {
+      "level": "b1",
+      "sentences": [
+        "Amira commence la journée dans la cour.",
+        "Yanis apporte un ail pour le groupe.",
+        "Ils placent un ail au centre.",
+        "Amira décrit un ail à voix haute.",
+        "Yanis ajoute un lapin à côté.",
+        "Le groupe compare un ail et un lapin.",
+        "Ensuite, chacun touche un pull.",
+        "Amira résume le rôle d’un pull.",
+        "Pour finir, Yanis range un livre."
+      ]
     }
   ],
-  "type14": [
-    {
-      "level": "a1",
-      "sentence": "Le bébé repasse la laine."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le facteur aime le lait."
-    },
-    {
-      "level": "a1",
-      "sentence": "Léa voit le lama bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La copine allume la lampe."
-    },
-    {
-      "level": "a1",
-      "sentence": "La directrice caresse le lapin."
-    },
-    {
-      "level": "a1",
-      "sentence": "La sœur visite le lavabo."
-    },
+  "type14Stories": [
     {
       "level": "a2",
-      "sentence": "Ce matin, la collègue commence le loto avec Léa."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la maîtresse observe le loup là-bas."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la maman gagne la luge sous le lit."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le directeur prépare le lundi là-bas."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le professeur plante la lune avec Léa."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le médecin mange le légume là-bas."
+      "sentences": [
+        "Léa et Emma se retrouvent au café.",
+        "Léa apporte une lampe dans un sac.",
+        "Emma pose un livre sur la table.",
+        "Ils parlent d’abord d’une lampe.",
+        "Puis Emma montre une salade à Léa.",
+        "Tout à coup, une lampe tombe par terre.",
+        "Léa ramasse une lampe et rit.",
+        "Emma range un livre et une salade.",
+        "Avant de partir, ils vérifient encore un lapin.",
+        "Plus tard, Sofia revient au parc.",
+        "Karim rapporte une salade une seconde fois.",
+        "Ils vérifient encore une salade ensemble.",
+        "Sofia explique une nouvelle idée sur un ail.",
+        "Karim écoute et regarde un ail.",
+        "Le groupe accepte d’essayer un lapin.",
+        "Après une pause, un lapin change le plan.",
+        "Sofia montre le résultat près d’une salade.",
+        "Karim félicite tout le monde pour un ail.",
+        "Avant la nuit, ils rangent un pull."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le directeur trouve un ail, parce que Luc est là aussi."
+      "sentences": [
+        "Ce matin, Sofia travaille dans la cuisine.",
+        "Il prépare une lampe avec soin.",
+        "Théo arrive et regarde une lampe.",
+        "Ensemble, ils ajoutent un lapin.",
+        "Sofia explique l’usage d’un lapin.",
+        "Théo propose aussi un lait.",
+        "Le travail avance grâce à une lampe.",
+        "Ils placent un lait près d’un lapin.",
+        "À la fin, un ail est prêt pour demain.",
+        "Plus tard, Liam revient dans la cuisine.",
+        "Théo rapporte un lait une seconde fois.",
+        "Ils vérifient encore un lait ensemble.",
+        "Liam explique une nouvelle idée sur une salade.",
+        "Théo écoute et regarde une salade.",
+        "Le groupe accepte d’essayer un ail.",
+        "Après une pause, un ail change le plan.",
+        "Liam montre le résultat près d’un lait.",
+        "Théo félicite tout le monde pour une salade.",
+        "Avant la nuit, ils rangent un pull."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Hugo fait des courses dans la cuisine.",
+        "Dans le panier, il y a déjà une lampe.",
+        "Omar choisit un ail juste à côté.",
+        "Ils comparent une lampe et un ail.",
+        "Le vendeur parle d’un livre.",
+        "Hugo prend aussi un livre.",
+        "Omar paie et range une lampe.",
+        "Sur le chemin, ils discutent d’un ail.",
+        "À la maison, ils sortent encore un pull.",
+        "Plus tard, Adam revient à l’école.",
+        "Liam rapporte un pull une seconde fois.",
+        "Ils vérifient encore un pull ensemble.",
+        "Adam explique une nouvelle idée sur un lapin.",
+        "Liam écoute et regarde un lapin.",
+        "Le groupe accepte d’essayer un lait.",
+        "Après une pause, un lait change le plan.",
+        "Adam montre le résultat près d’un pull.",
+        "Liam félicite tout le monde pour un lapin.",
+        "Avant la nuit, ils rangent un ail."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la boulangère montre un anglais, et Léa est très contente."
+      "sentences": [
+        "Liam lit un message à la bibliothèque.",
+        "Sara doit apporter un lait rapidement.",
+        "Liam part avec un lapin.",
+        "Ils se croisent près d’une salade.",
+        "Sara donne un lait à Liam.",
+        "Liam vérifie un lait calmement.",
+        "Ensuite, ils déposent un lapin.",
+        "Une amie demande des nouvelles d’une salade.",
+        "Plus tard, un ail termine la journée.",
+        "Plus tard, Adam revient au café.",
+        "Liam rapporte un lait une seconde fois.",
+        "Ils vérifient encore un lait ensemble.",
+        "Adam explique une nouvelle idée sur un lapin.",
+        "Liam écoute et regarde un lapin.",
+        "Le groupe accepte d’essayer un pull.",
+        "Après une pause, un pull change le plan.",
+        "Adam montre le résultat près d’un lait.",
+        "Liam félicite tout le monde pour un lapin.",
+        "Avant la nuit, ils rangent un livre."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Sara organise une activité au magasin.",
+        "Nora apporte une lampe dès le début.",
+        "Sur la table, on voit une lampe et un pull.",
+        "Les enfants touchent un pull à tour de rôle.",
+        "Sara explique le mot lié à un ail.",
+        "Nora dessine un ail au tableau.",
+        "Tout le monde écoute l’histoire d’une lampe.",
+        "Après l’exercice, ils rangent un pull.",
+        "Sara note encore un livre dans le cahier.",
+        "Plus tard, Maya revient à l’école.",
+        "Inès rapporte une lampe une seconde fois.",
+        "Ils vérifient encore une lampe ensemble.",
+        "Maya explique une nouvelle idée sur un ail.",
+        "Inès écoute et regarde un ail.",
+        "Le groupe accepte d’essayer un livre.",
+        "Après une pause, un livre change le plan.",
+        "Maya montre le résultat près d’une lampe.",
+        "Inès félicite tout le monde pour un ail.",
+        "Avant la nuit, ils rangent un pull."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le cousin range le couloir, parce que Luc est là aussi."
+      "sentences": [
+        "Il pleut un peu au magasin.",
+        "Nora protège un livre sous le bras.",
+        "Inès tient un pull contre lui.",
+        "Ils entrent et posent un livre.",
+        "Nora sèche un pull avec un chiffon.",
+        "Inès prépare une lampe pour attendre.",
+        "Ils parlent calmement d’un livre.",
+        "Quand la pluie cesse, une lampe est prêt.",
+        "Ils repartent avec une salade.",
+        "Plus tard, Yanis revient dans le jardin.",
+        "Liam rapporte une lampe une seconde fois.",
+        "Ils vérifient encore une lampe ensemble.",
+        "Yanis explique une nouvelle idée sur un ail.",
+        "Liam écoute et regarde un ail.",
+        "Le groupe accepte d’essayer une salade.",
+        "Après une pause, une salade change le plan.",
+        "Yanis montre le résultat près d’une lampe.",
+        "Liam félicite tout le monde pour un ail.",
+        "Avant la nuit, ils rangent un lait."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Karim et Maya révisent au marché.",
+        "La leçon commence avec une lampe.",
+        "Karim lit une phrase sur une lampe.",
+        "Maya répète le mot une salade.",
+        "Ils écrivent une salade dans le cahier.",
+        "Une erreur apparaît près d’un lait.",
+        "Karim corrige et montre un lait.",
+        "Maya récite encore la phrase d’une lampe.",
+        "Avant de partir, ils relisent un livre.",
+        "Plus tard, Maya revient à l’école.",
+        "Yanis rapporte un pull une seconde fois.",
+        "Ils vérifient encore un pull ensemble.",
+        "Maya explique une nouvelle idée sur un lapin.",
+        "Yanis écoute et regarde un lapin.",
+        "Le groupe accepte d’essayer une salade.",
+        "Après une pause, une salade change le plan.",
+        "Maya montre le résultat près d’un pull.",
+        "Yanis félicite tout le monde pour un lapin.",
+        "Avant la nuit, ils rangent une lampe."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le musicien contourne le lac, et Léa est très contente."
+      "sentences": [
+        "Yanis visite un stand au marché.",
+        "Karim désigne un lait du doigt.",
+        "Le guide présente un lait clairement.",
+        "Yanis photographie un pull.",
+        "Ils posent une question sur un pull.",
+        "Karim note le détail d’une salade.",
+        "Avant de partir, Yanis achète une salade.",
+        "Karim range une salade dans le sac.",
+        "Sur le chemin du retour, ils parlent d’un livre.",
+        "Plus tard, Yanis revient au parc.",
+        "Omar rapporte un lait une seconde fois.",
+        "Ils vérifient encore un lait ensemble.",
+        "Yanis explique une nouvelle idée sur un ail.",
+        "Omar écoute et regarde un ail.",
+        "Le groupe accepte d’essayer une salade.",
+        "Après une pause, une salade change le plan.",
+        "Yanis montre le résultat près d’un lait.",
+        "Omar félicite tout le monde pour un ail.",
+        "Avant la nuit, ils rangent un pull."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Omar prépare une surprise à l’école.",
+        "Amira cache une salade derrière la porte.",
+        "Tout le monde cherche une salade.",
+        "Omar donne un indice avec un lait.",
+        "Amira trouve enfin une salade.",
+        "Ils ouvrent aussi un ail.",
+        "Les amis rient autour d’un lait.",
+        "Omar partage un ail avec le groupe.",
+        "La fête se termine près d’un pull.",
+        "Plus tard, Omar revient au parc.",
+        "Sara rapporte un lapin une seconde fois.",
+        "Ils vérifient encore un lapin ensemble.",
+        "Omar explique une nouvelle idée sur une salade.",
+        "Sara écoute et regarde une salade.",
+        "Le groupe accepte d’essayer une lampe.",
+        "Après une pause, une lampe change le plan.",
+        "Omar montre le résultat près d’un lapin.",
+        "Sara félicite tout le monde pour une salade.",
+        "Avant la nuit, ils rangent un ail."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la sœur enfile la laine, et Léa est très contente."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand un ami achète le lait là-bas, et Léa est très contente."
+      "sentences": [
+        "Inès commence la journée dans la cour.",
+        "Sofia apporte un ail pour le groupe.",
+        "Ils placent un ail au centre.",
+        "Inès décrit un ail à voix haute.",
+        "Sofia ajoute un lait à côté.",
+        "Le groupe compare un ail et un lait.",
+        "Ensuite, chacun touche une salade.",
+        "Inès résume le rôle d’une salade.",
+        "Pour finir, Sofia range un pull.",
+        "Plus tard, Amira revient dans la cuisine.",
+        "Léa rapporte une lampe une seconde fois.",
+        "Ils vérifient encore une lampe ensemble.",
+        "Amira explique une nouvelle idée sur un ail.",
+        "Léa écoute et regarde un ail.",
+        "Le groupe accepte d’essayer un lapin.",
+        "Après une pause, un lapin change le plan.",
+        "Amira montre le résultat près d’une lampe.",
+        "Léa félicite tout le monde pour un ail.",
+        "Avant la nuit, ils rangent un pull."
+      ]
     }
   ]
 }

@@ -2610,128 +2610,388 @@
       ]
     }
   ],
-  "type12": [
-    {
-      "level": "a1",
-      "sentence": "Le musicien se dépêche pour le bus."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le cuisinier reste dans la classe."
-    },
-    {
-      "level": "a1",
-      "sentence": "La maman renonce au dessert sans stress."
-    },
-    {
-      "level": "a1",
-      "sentence": "La musicienne salue le fils."
-    },
+  "type12Stories": [
     {
       "level": "a2",
-      "sentence": "Ce matin, le professeur aime le samedi sous le sac."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le jardinier plante le sapin sans stress."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, la voisine coupe la sauce avec Sara."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le maître achète la saucisse sans stress."
+      "sentences": [
+        "Adam et Emma se retrouvent dans la cour.",
+        "Adam apporte un poisson dans un sac.",
+        "Emma pose un sel sur la table.",
+        "Ils parlent d’abord d’un poisson.",
+        "Puis Emma montre une soupe à Adam.",
+        "Tout à coup, un poisson tombe par terre.",
+        "Adam ramasse un poisson et rit.",
+        "Emma range un sel et une soupe.",
+        "Avant de partir, ils vérifient encore un sable."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la fille mange la soupe, et Sara reste contente aussi."
+      "sentences": [
+        "Ce matin, Liam travaille au marché.",
+        "Il prépare une saucisse avec soin.",
+        "Hugo arrive et regarde une saucisse.",
+        "Ensemble, ils ajoutent une soupe.",
+        "Liam explique l’usage d’une soupe.",
+        "Hugo propose aussi une tasse.",
+        "Le travail avance grâce à une saucisse.",
+        "Ils placent une tasse près d’une soupe.",
+        "À la fin, un sucre est prêt pour demain."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Hugo fait des courses au marché.",
+        "Dans le panier, il y a déjà une tasse.",
+        "Liam choisit une saucisse juste à côté.",
+        "Ils comparent une tasse et une saucisse.",
+        "Le vendeur parle d’une soupe.",
+        "Hugo prend aussi une soupe.",
+        "Liam paie et range une tasse.",
+        "Sur le chemin, ils discutent d’une saucisse.",
+        "À la maison, ils sortent encore un stylo."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Sam marque le sport avec Sara, et Sara reste contente aussi."
+      "sentences": [
+        "Nora lit un message dans le jardin.",
+        "Karim doit apporter un sel rapidement.",
+        "Nora part avec un savon.",
+        "Ils se croisent près d’un sac.",
+        "Karim donne un sel à Nora.",
+        "Nora vérifie un sel calmement.",
+        "Ensuite, ils déposent un savon.",
+        "Une amie demande des nouvelles d’un sac.",
+        "Plus tard, un stylo termine la journée."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Sofia organise une activité au magasin.",
+        "Nora apporte une tasse dès le début.",
+        "Sur la table, on voit une tasse et un stylo.",
+        "Les enfants touchent un stylo à tour de rôle.",
+        "Sofia explique le mot lié à un sac.",
+        "Nora dessine un sac au tableau.",
+        "Tout le monde écoute l’histoire d’une tasse.",
+        "Après l’exercice, ils rangent un stylo.",
+        "Sofia note encore un sucre dans le cahier."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la maîtresse cherche le stylo, et Sara reste contente aussi."
+      "sentences": [
+        "Il pleut un peu à l’école.",
+        "Sofia protège une soupe sous le bras.",
+        "Adam tient une saucisse contre lui.",
+        "Ils entrent et posent une soupe.",
+        "Sofia sèche une saucisse avec un chiffon.",
+        "Adam prépare un poisson pour attendre.",
+        "Ils parlent calmement d’une soupe.",
+        "Quand la pluie cesse, un poisson est prêt.",
+        "Ils repartent avec un sac."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Sofia et Yanis révisent dans la cuisine.",
+        "La leçon commence avec un sel.",
+        "Sofia lit une phrase sur un sel.",
+        "Yanis répète le mot un sac.",
+        "Ils écrivent un sac dans le cahier.",
+        "Une erreur apparaît près d’un sucre.",
+        "Sofia corrige et montre un sucre.",
+        "Yanis récite encore la phrase d’un sel.",
+        "Avant de partir, ils relisent un poisson."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la cuisinière sert le sucre, parce que Sam reste content aussi."
+      "sentences": [
+        "Inès visite un stand au marché.",
+        "Omar désigne un sac du doigt.",
+        "Le guide présente un sac clairement.",
+        "Inès photographie un stylo.",
+        "Ils posent une question sur un stylo.",
+        "Omar note le détail d’un sable.",
+        "Avant de partir, Inès achète un sable.",
+        "Omar range un sable dans le sac.",
+        "Sur le chemin du retour, ils parlent d’un savon."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Emma prépare une surprise dans le jardin.",
+        "Théo cache une tasse derrière la porte.",
+        "Tout le monde cherche une tasse.",
+        "Emma donne un indice avec une soupe.",
+        "Théo trouve enfin une tasse.",
+        "Ils ouvrent aussi une saucisse.",
+        "Les amis rient autour d’une soupe.",
+        "Emma partage une saucisse avec le groupe.",
+        "La fête se termine près d’un sucre."
+      ]
+    },
+    {
+      "level": "b1",
+      "sentences": [
+        "Liam commence la journée dans la cuisine.",
+        "Karim apporte un sel pour le groupe.",
+        "Ils placent un sel au centre.",
+        "Liam décrit un sel à voix haute.",
+        "Karim ajoute un stylo à côté.",
+        "Le groupe compare un sel et un stylo.",
+        "Ensuite, chacun touche un sucre.",
+        "Liam résume le rôle d’un sucre.",
+        "Pour finir, Karim range un sable."
+      ]
     }
   ],
-  "type14": [
-    {
-      "level": "a1",
-      "sentence": "Le frère sauve un ours."
-    },
-    {
-      "level": "a1",
-      "sentence": "Sophie goûte le poisson bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La cousine passe devant le poste."
-    },
-    {
-      "level": "a1",
-      "sentence": "La directrice admire le sable sans stress."
-    },
-    {
-      "level": "a1",
-      "sentence": "La grand-mère emporte le sac avec Sam."
-    },
-    {
-      "level": "a1",
-      "sentence": "Sara mélange la salade bien."
-    },
+  "type14Stories": [
     {
       "level": "a2",
-      "sentence": "Ce matin, la jardinière nettoie le savon dans la salle."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le cousin choisit le sel sans stress."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le frère regarde le serpent avec Sara."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le collègue soigne le singe sans stress."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, la cousine sert le sirop avec Sara."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, un ami profite le soleil sous le sac."
+      "sentences": [
+        "Inès et Nora se retrouvent au magasin.",
+        "Inès apporte un sel dans un sac.",
+        "Nora pose une saucisse sur la table.",
+        "Ils parlent d’abord d’un sel.",
+        "Puis Nora montre un stylo à Inès.",
+        "Tout à coup, un sel tombe par terre.",
+        "Inès ramasse un sel et rit.",
+        "Nora range une saucisse et un stylo.",
+        "Avant de partir, ils vérifient encore un sable.",
+        "Plus tard, Sofia revient dans le jardin.",
+        "Yanis rapporte une tasse une seconde fois.",
+        "Ils vérifient encore une tasse ensemble.",
+        "Sofia explique une nouvelle idée sur une saucisse.",
+        "Yanis écoute et regarde une saucisse.",
+        "Le groupe accepte d’essayer une salade.",
+        "Après une pause, une salade change le plan.",
+        "Sofia montre le résultat près d’une tasse.",
+        "Yanis félicite tout le monde pour une saucisse.",
+        "Avant la nuit, ils rangent un sable."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Sophie achète la tasse sans stress, et Sara reste contente aussi."
+      "sentences": [
+        "Ce matin, Maya travaille dans la cour.",
+        "Il prépare une saucisse avec soin.",
+        "Léa arrive et regarde une saucisse.",
+        "Ensemble, ils ajoutent un savon.",
+        "Maya explique l’usage d’un savon.",
+        "Léa propose aussi un sel.",
+        "Le travail avance grâce à une saucisse.",
+        "Ils placent un sel près d’un savon.",
+        "À la fin, une soupe est prêt pour demain.",
+        "Plus tard, Emma revient à la gare.",
+        "Inès rapporte un sable une seconde fois.",
+        "Ils vérifient encore un sable ensemble.",
+        "Emma explique une nouvelle idée sur une soupe.",
+        "Inès écoute et regarde une soupe.",
+        "Le groupe accepte d’essayer un sel.",
+        "Après une pause, un sel change le plan.",
+        "Emma montre le résultat près d’un sable.",
+        "Inès félicite tout le monde pour une soupe.",
+        "Avant la nuit, ils rangent un sucre."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Sofia fait des courses au café.",
+        "Dans le panier, il y a déjà une soupe.",
+        "Hugo choisit un savon juste à côté.",
+        "Ils comparent une soupe et un savon.",
+        "Le vendeur parle d’une saucisse.",
+        "Sofia prend aussi une saucisse.",
+        "Hugo paie et range une soupe.",
+        "Sur le chemin, ils discutent d’un savon.",
+        "À la maison, ils sortent encore un stylo.",
+        "Plus tard, Maya revient dans la cuisine.",
+        "Sara rapporte un sac une seconde fois.",
+        "Ils vérifient encore un sac ensemble.",
+        "Maya explique une nouvelle idée sur une tasse.",
+        "Sara écoute et regarde une tasse.",
+        "Le groupe accepte d’essayer un sable.",
+        "Après une pause, un sable change le plan.",
+        "Maya montre le résultat près d’un sac.",
+        "Sara félicite tout le monde pour une tasse.",
+        "Avant la nuit, ils rangent une soupe."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Sara regarde le tennis, parce que Sam reste content aussi."
+      "sentences": [
+        "Nora lit un message au marché.",
+        "Léa doit apporter une saucisse rapidement.",
+        "Nora part avec un savon.",
+        "Ils se croisent près d’un sac.",
+        "Léa donne une saucisse à Nora.",
+        "Nora vérifie une saucisse calmement.",
+        "Ensuite, ils déposent un savon.",
+        "Une amie demande des nouvelles d’un sac.",
+        "Plus tard, un sable termine la journée.",
+        "Plus tard, Sofia revient à l’école.",
+        "Noah rapporte une tasse une seconde fois.",
+        "Ils vérifient encore une tasse ensemble.",
+        "Sofia explique une nouvelle idée sur un savon.",
+        "Noah écoute et regarde un savon.",
+        "Le groupe accepte d’essayer un stylo.",
+        "Après une pause, un stylo change le plan.",
+        "Sofia montre le résultat près d’une tasse.",
+        "Noah félicite tout le monde pour un savon.",
+        "Avant la nuit, ils rangent un sac."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Adam organise une activité au café.",
+        "Noah apporte une soupe dès le début.",
+        "Sur la table, on voit une soupe et un sac.",
+        "Les enfants touchent un sac à tour de rôle.",
+        "Adam explique le mot lié à une salade.",
+        "Noah dessine une salade au tableau.",
+        "Tout le monde écoute l’histoire d’une soupe.",
+        "Après l’exercice, ils rangent un sac.",
+        "Adam note encore un sable dans le cahier.",
+        "Plus tard, Léa revient au parc.",
+        "Théo rapporte une saucisse une seconde fois.",
+        "Ils vérifient encore une saucisse ensemble.",
+        "Léa explique une nouvelle idée sur un sucre.",
+        "Théo écoute et regarde un sucre.",
+        "Le groupe accepte d’essayer une soupe.",
+        "Après une pause, une soupe change le plan.",
+        "Léa montre le résultat près d’une saucisse.",
+        "Théo félicite tout le monde pour un sucre.",
+        "Avant la nuit, ils rangent un poisson."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le copain porte la veste, parce que Sam reste content aussi."
+      "sentences": [
+        "Il pleut un peu au café.",
+        "Inès protège un sable sous le bras.",
+        "Amira tient une salade contre lui.",
+        "Ils entrent et posent un sable.",
+        "Inès sèche une salade avec un chiffon.",
+        "Amira prépare un poisson pour attendre.",
+        "Ils parlent calmement d’un sable.",
+        "Quand la pluie cesse, un poisson est prêt.",
+        "Ils repartent avec un stylo.",
+        "Plus tard, Emma revient au marché.",
+        "Omar rapporte une tasse une seconde fois.",
+        "Ils vérifient encore une tasse ensemble.",
+        "Emma explique une nouvelle idée sur un sel.",
+        "Omar écoute et regarde un sel.",
+        "Le groupe accepte d’essayer un sac.",
+        "Après une pause, un sac change le plan.",
+        "Emma montre le résultat près d’une tasse.",
+        "Omar félicite tout le monde pour un sel.",
+        "Avant la nuit, ils rangent une salade."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Léa et Sofia révisent dans la cour.",
+        "La leçon commence avec une soupe.",
+        "Léa lit une phrase sur une soupe.",
+        "Sofia répète le mot un sable.",
+        "Ils écrivent un sable dans le cahier.",
+        "Une erreur apparaît près d’un sac.",
+        "Léa corrige et montre un sac.",
+        "Sofia récite encore la phrase d’une soupe.",
+        "Avant de partir, ils relisent un stylo.",
+        "Plus tard, Emma revient au café.",
+        "Théo rapporte un poisson une seconde fois.",
+        "Ils vérifient encore un poisson ensemble.",
+        "Emma explique une nouvelle idée sur un sel.",
+        "Théo écoute et regarde un sel.",
+        "Le groupe accepte d’essayer une saucisse.",
+        "Après une pause, une saucisse change le plan.",
+        "Emma montre le résultat près d’un poisson.",
+        "Théo félicite tout le monde pour un sel.",
+        "Avant la nuit, ils rangent un sac."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Cassandre conduit le bus avec Sara, et Sara reste contente aussi."
+      "sentences": [
+        "Karim visite un stand dans la cour.",
+        "Maya désigne un sac du doigt.",
+        "Le guide présente un sac clairement.",
+        "Karim photographie un sable.",
+        "Ils posent une question sur un sable.",
+        "Maya note le détail d’une saucisse.",
+        "Avant de partir, Karim achète une saucisse.",
+        "Maya range une saucisse dans le sac.",
+        "Sur le chemin du retour, ils parlent d’un sucre.",
+        "Plus tard, Liam revient à l’école.",
+        "Karim rapporte un sac une seconde fois.",
+        "Ils vérifient encore un sac ensemble.",
+        "Liam explique une nouvelle idée sur une saucisse.",
+        "Karim écoute et regarde une saucisse.",
+        "Le groupe accepte d’essayer un sel.",
+        "Après une pause, un sel change le plan.",
+        "Liam montre le résultat près d’un sac.",
+        "Karim félicite tout le monde pour une saucisse.",
+        "Avant la nuit, ils rangent une tasse."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Adam prépare une surprise au parc.",
+        "Sara cache un savon derrière la porte.",
+        "Tout le monde cherche un savon.",
+        "Adam donne un indice avec un sable.",
+        "Sara trouve enfin un savon.",
+        "Ils ouvrent aussi une saucisse.",
+        "Les amis rient autour d’un sable.",
+        "Adam partage une saucisse avec le groupe.",
+        "La fête se termine près d’un sel.",
+        "Plus tard, Karim revient dans le jardin.",
+        "Emma rapporte une saucisse une seconde fois.",
+        "Ils vérifient encore une saucisse ensemble.",
+        "Karim explique une nouvelle idée sur une salade.",
+        "Emma écoute et regarde une salade.",
+        "Le groupe accepte d’essayer un sac.",
+        "Après une pause, un sac change le plan.",
+        "Karim montre le résultat près d’une saucisse.",
+        "Emma félicite tout le monde pour une salade.",
+        "Avant la nuit, ils rangent un savon."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la fille range la classe, et Sara reste contente aussi."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la copine renonce au dessert, parce que Sam reste content aussi."
+      "sentences": [
+        "Maya commence la journée au café.",
+        "Karim apporte une saucisse pour le groupe.",
+        "Ils placent une saucisse au centre.",
+        "Maya décrit une saucisse à voix haute.",
+        "Karim ajoute un sac à côté.",
+        "Le groupe compare une saucisse et un sac.",
+        "Ensuite, chacun touche un sel.",
+        "Maya résume le rôle d’un sel.",
+        "Pour finir, Karim range un sucre.",
+        "Plus tard, Liam revient au marché.",
+        "Sara rapporte un sac une seconde fois.",
+        "Ils vérifient encore un sac ensemble.",
+        "Liam explique une nouvelle idée sur un poisson.",
+        "Sara écoute et regarde un poisson.",
+        "Le groupe accepte d’essayer un stylo.",
+        "Après une pause, un stylo change le plan.",
+        "Liam montre le résultat près d’un sac.",
+        "Sara félicite tout le monde pour un poisson.",
+        "Avant la nuit, ils rangent un sel."
+      ]
     }
   ]
 }

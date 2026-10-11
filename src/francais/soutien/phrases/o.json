@@ -6279,128 +6279,388 @@
       ]
     }
   ],
-  "type12": [
-    {
-      "level": "a1",
-      "sentence": "Le papa montre une antibiotique avec Léo."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le frère aime la biologie."
-    },
-    {
-      "level": "a1",
-      "sentence": "Paolo achète le bol bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La maman prend le bordeaux trop tôt."
-    },
+  "type12Stories": [
     {
       "level": "a2",
-      "sentence": "Ce matin, le copain trouve la coccinelle autour du pot."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, la professeure regarde le cochon trop tôt."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le cuisinier bricole le coffre autour du pot."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, la copine utilise le colibri au zoo."
+      "sentences": [
+        "Sofia et Sara se retrouvent dans la cour.",
+        "Sofia apporte un chocolat dans un sac.",
+        "Sara pose une porte sur la table.",
+        "Ils parlent d’abord d’un chocolat.",
+        "Puis Sara montre une poêle à Sofia.",
+        "Tout à coup, un chocolat tombe par terre.",
+        "Sofia ramasse un chocolat et rit.",
+        "Sara range une porte et une poêle.",
+        "Avant de partir, ils vérifient encore une colle."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le médecin range la crocodile, et Léo sort trop tôt aussi."
+      "sentences": [
+        "Ce matin, Nora travaille dans le jardin.",
+        "Il prépare un vélo avec soin.",
+        "Liam arrive et regarde un vélo.",
+        "Ensemble, ils ajoutent une poêle.",
+        "Nora explique l’usage d’une poêle.",
+        "Liam propose aussi une botte.",
+        "Le travail avance grâce à un vélo.",
+        "Ils placent une botte près d’une poêle.",
+        "À la fin, un robinet est prêt pour demain."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Maya fait des courses dans la cuisine.",
+        "Dans le panier, il y a déjà un robinet.",
+        "Omar choisit une colle juste à côté.",
+        "Ils comparent un robinet et une colle.",
+        "Le vendeur parle d’une pomme.",
+        "Maya prend aussi une pomme.",
+        "Omar paie et range un robinet.",
+        "Sur le chemin, ils discutent d’une colle.",
+        "À la maison, ils sortent encore un chocolat."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Paolo prend la culotte, et Léo sort trop tôt aussi."
+      "sentences": [
+        "Yanis lit un message dans la cuisine.",
+        "Maya doit apporter une botte rapidement.",
+        "Yanis part avec un robinet.",
+        "Ils se croisent près d’un chocolat.",
+        "Maya donne une botte à Yanis.",
+        "Yanis vérifie une botte calmement.",
+        "Ensuite, ils déposent un robinet.",
+        "Une amie demande des nouvelles d’un chocolat.",
+        "Plus tard, une colle termine la journée."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Léa organise une activité au café.",
+        "Amira apporte une poêle dès le début.",
+        "Sur la table, on voit une poêle et un short.",
+        "Les enfants touchent un short à tour de rôle.",
+        "Léa explique le mot lié à une botte.",
+        "Amira dessine une botte au tableau.",
+        "Tout le monde écoute l’histoire d’une poêle.",
+        "Après l’exercice, ils rangent un short.",
+        "Léa note encore une colle dans le cahier."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la professeure dessine la côte, et Léo sort trop tôt aussi."
+      "sentences": [
+        "Il pleut un peu au parc.",
+        "Liam protège une porte sous le bras.",
+        "Maya tient un vélo contre lui.",
+        "Ils entrent et posent une porte.",
+        "Liam sèche un vélo avec un chiffon.",
+        "Maya prépare une botte pour attendre.",
+        "Ils parlent calmement d’une porte.",
+        "Quand la pluie cesse, une botte est prêt.",
+        "Ils repartent avec un short."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Liam et Inès révisent à la gare.",
+        "La leçon commence avec un vélo.",
+        "Liam lit une phrase sur un vélo.",
+        "Inès répète le mot une poêle.",
+        "Ils écrivent une poêle dans le cahier.",
+        "Une erreur apparaît près d’un short.",
+        "Liam corrige et montre un short.",
+        "Inès récite encore la phrase d’un vélo.",
+        "Avant de partir, ils relisent une colle."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le boulanger cherche le divorcé, et Léo sort trop tôt aussi."
+      "sentences": [
+        "Adam visite un stand au marché.",
+        "Yanis désigne une pomme du doigt.",
+        "Le guide présente une pomme clairement.",
+        "Adam photographie un short.",
+        "Ils posent une question sur un short.",
+        "Yanis note le détail d’une botte.",
+        "Avant de partir, Adam achète une botte.",
+        "Yanis range une botte dans le sac.",
+        "Sur le chemin du retour, ils parlent d’une poêle."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Sara prépare une surprise au café.",
+        "Yanis cache une porte derrière la porte.",
+        "Tout le monde cherche une porte.",
+        "Sara donne un indice avec un short.",
+        "Yanis trouve enfin une porte.",
+        "Ils ouvrent aussi un robinet.",
+        "Les amis rient autour d’un short.",
+        "Sara partage un robinet avec le groupe.",
+        "La fête se termine près d’un vélo."
+      ]
+    },
+    {
+      "level": "b1",
+      "sentences": [
+        "Hugo commence la journée au magasin.",
+        "Yanis apporte un short pour le groupe.",
+        "Ils placent un short au centre.",
+        "Hugo décrit un short à voix haute.",
+        "Yanis ajoute un chocolat à côté.",
+        "Le groupe compare un short et un chocolat.",
+        "Ensuite, chacun touche une colle.",
+        "Hugo résume le rôle d’une colle.",
+        "Pour finir, Yanis range une botte."
+      ]
     }
   ],
-  "type14": [
-    {
-      "level": "a1",
-      "sentence": "La collègue enfile la botte."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le musicien utilise le bottines au zoo."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le maître partage la brioche avec Léo."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le grand-père coupe le brocoli."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le professeur montre le chausson avec Léo."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le bébé sert le chocolat."
-    },
+  "type14Stories": [
     {
       "level": "a2",
-      "sentence": "Après le cours, la boulangère cherche la colle au zoo."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le professeur descend la colline autour du pot."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la sœur cherche le contrôleur trop tôt."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Léo pose le corbeau au zoo."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, la boulangère cherche la correspondance trop tôt."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le professeur range le coton avec Léo."
+      "sentences": [
+        "Amira et Noah se retrouvent au café.",
+        "Amira apporte un short dans un sac.",
+        "Noah pose une colle sur la table.",
+        "Ils parlent d’abord d’un short.",
+        "Puis Noah montre une botte à Amira.",
+        "Tout à coup, un short tombe par terre.",
+        "Amira ramasse un short et rit.",
+        "Noah range une colle et une botte.",
+        "Avant de partir, ils vérifient encore une pomme.",
+        "Plus tard, Emma revient au magasin.",
+        "Noah rapporte une colle une seconde fois.",
+        "Ils vérifient encore une colle ensemble.",
+        "Emma explique une nouvelle idée sur une pomme.",
+        "Noah écoute et regarde une pomme.",
+        "Le groupe accepte d’essayer un short.",
+        "Après une pause, un short change le plan.",
+        "Emma montre le résultat près d’une colle.",
+        "Noah félicite tout le monde pour une pomme.",
+        "Avant la nuit, ils rangent un robinet."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le frère montre le docteur, et Léo sort trop tôt aussi."
+      "sentences": [
+        "Ce matin, Amira travaille à la gare.",
+        "Il prépare un robinet avec soin.",
+        "Karim arrive et regarde un robinet.",
+        "Ensemble, ils ajoutent une poêle.",
+        "Amira explique l’usage d’une poêle.",
+        "Karim propose aussi une colle.",
+        "Le travail avance grâce à un robinet.",
+        "Ils placent une colle près d’une poêle.",
+        "À la fin, une porte est prêt pour demain.",
+        "Plus tard, Emma revient au café.",
+        "Hugo rapporte un robinet une seconde fois.",
+        "Ils vérifient encore un robinet ensemble.",
+        "Emma explique une nouvelle idée sur une pomme.",
+        "Hugo écoute et regarde une pomme.",
+        "Le groupe accepte d’essayer un short.",
+        "Après une pause, un short change le plan.",
+        "Emma montre le résultat près d’un robinet.",
+        "Hugo félicite tout le monde pour une pomme.",
+        "Avant la nuit, ils rangent un chocolat."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Sara fait des courses au magasin.",
+        "Dans le panier, il y a déjà un vélo.",
+        "Hugo choisit une poêle juste à côté.",
+        "Ils comparent un vélo et une poêle.",
+        "Le vendeur parle d’un chocolat.",
+        "Sara prend aussi un chocolat.",
+        "Hugo paie et range un vélo.",
+        "Sur le chemin, ils discutent d’une poêle.",
+        "À la maison, ils sortent encore un robinet.",
+        "Plus tard, Sofia revient au marché.",
+        "Hugo rapporte un chocolat une seconde fois.",
+        "Ils vérifient encore un chocolat ensemble.",
+        "Sofia explique une nouvelle idée sur une porte.",
+        "Hugo écoute et regarde une porte.",
+        "Le groupe accepte d’essayer une colle.",
+        "Après une pause, une colle change le plan.",
+        "Sofia montre le résultat près d’un chocolat.",
+        "Hugo félicite tout le monde pour une porte.",
+        "Avant la nuit, ils rangent un vélo."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le maître regarde le domino, et Léo sort trop tôt aussi."
+      "sentences": [
+        "Adam lit un message dans la cour.",
+        "Théo doit apporter un chocolat rapidement.",
+        "Adam part avec une botte.",
+        "Ils se croisent près d’un robinet.",
+        "Théo donne un chocolat à Adam.",
+        "Adam vérifie un chocolat calmement.",
+        "Ensuite, ils déposent une botte.",
+        "Une amie demande des nouvelles d’un robinet.",
+        "Plus tard, une poêle termine la journée.",
+        "Plus tard, Hugo revient au magasin.",
+        "Adam rapporte un chocolat une seconde fois.",
+        "Ils vérifient encore un chocolat ensemble.",
+        "Hugo explique une nouvelle idée sur une porte.",
+        "Adam écoute et regarde une porte.",
+        "Le groupe accepte d’essayer une poêle.",
+        "Après une pause, une poêle change le plan.",
+        "Hugo montre le résultat près d’un chocolat.",
+        "Adam félicite tout le monde pour une porte.",
+        "Avant la nuit, ils rangent un robinet."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Karim organise une activité dans la cuisine.",
+        "Inès apporte un chocolat dès le début.",
+        "Sur la table, on voit un chocolat et une botte.",
+        "Les enfants touchent une botte à tour de rôle.",
+        "Karim explique le mot lié à une pomme.",
+        "Inès dessine une pomme au tableau.",
+        "Tout le monde écoute l’histoire d’un chocolat.",
+        "Après l’exercice, ils rangent une botte.",
+        "Karim note encore un short dans le cahier.",
+        "Plus tard, Nora revient dans la cuisine.",
+        "Karim rapporte une poêle une seconde fois.",
+        "Ils vérifient encore une poêle ensemble.",
+        "Nora explique une nouvelle idée sur une porte.",
+        "Karim écoute et regarde une porte.",
+        "Le groupe accepte d’essayer une botte.",
+        "Après une pause, une botte change le plan.",
+        "Nora montre le résultat près d’une poêle.",
+        "Karim félicite tout le monde pour une porte.",
+        "Avant la nuit, ils rangent un chocolat."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand le papa pose le donut au zoo, parce que Tom est trop content."
+      "sentences": [
+        "Il pleut un peu à l’école.",
+        "Adam protège un robinet sous le bras.",
+        "Théo tient un short contre lui.",
+        "Ils entrent et posent un robinet.",
+        "Adam sèche un short avec un chiffon.",
+        "Théo prépare une poêle pour attendre.",
+        "Ils parlent calmement d’un robinet.",
+        "Quand la pluie cesse, une poêle est prêt.",
+        "Ils repartent avec une colle.",
+        "Plus tard, Sara revient à l’école.",
+        "Adam rapporte une botte une seconde fois.",
+        "Ils vérifient encore une botte ensemble.",
+        "Sara explique une nouvelle idée sur une poêle.",
+        "Adam écoute et regarde une poêle.",
+        "Le groupe accepte d’essayer une pomme.",
+        "Après une pause, une pomme change le plan.",
+        "Sara montre le résultat près d’une botte.",
+        "Adam félicite tout le monde pour une poêle.",
+        "Avant la nuit, ils rangent un robinet."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Hugo et Théo révisent à la gare.",
+        "La leçon commence avec un short.",
+        "Hugo lit une phrase sur un short.",
+        "Théo répète le mot un chocolat.",
+        "Ils écrivent un chocolat dans le cahier.",
+        "Une erreur apparaît près d’un robinet.",
+        "Hugo corrige et montre un robinet.",
+        "Théo récite encore la phrase d’un short.",
+        "Avant de partir, ils relisent une botte.",
+        "Plus tard, Emma revient au café.",
+        "Sofia rapporte un chocolat une seconde fois.",
+        "Ils vérifient encore un chocolat ensemble.",
+        "Emma explique une nouvelle idée sur une botte.",
+        "Sofia écoute et regarde une botte.",
+        "Le groupe accepte d’essayer une poêle.",
+        "Après une pause, une poêle change le plan.",
+        "Emma montre le résultat près d’un chocolat.",
+        "Sofia félicite tout le monde pour une botte.",
+        "Avant la nuit, ils rangent un short."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand la musicienne visite le dortoir au zoo, parce que Tom est trop content."
+      "sentences": [
+        "Yanis visite un stand au marché.",
+        "Emma désigne une botte du doigt.",
+        "Le guide présente une botte clairement.",
+        "Yanis photographie une poêle.",
+        "Ils posent une question sur une poêle.",
+        "Emma note le détail d’un robinet.",
+        "Avant de partir, Yanis achète un robinet.",
+        "Emma range un robinet dans le sac.",
+        "Sur le chemin du retour, ils parlent d’un chocolat.",
+        "Plus tard, Yanis revient dans la cuisine.",
+        "Inès rapporte une pomme une seconde fois.",
+        "Ils vérifient encore une pomme ensemble.",
+        "Yanis explique une nouvelle idée sur un vélo.",
+        "Inès écoute et regarde un vélo.",
+        "Le groupe accepte d’essayer une botte.",
+        "Après une pause, une botte change le plan.",
+        "Yanis montre le résultat près d’une pomme.",
+        "Inès félicite tout le monde pour un vélo.",
+        "Avant la nuit, ils rangent une colle."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Karim prépare une surprise au parc.",
+        "Hugo cache un short derrière la porte.",
+        "Tout le monde cherche un short.",
+        "Karim donne un indice avec une porte.",
+        "Hugo trouve enfin un short.",
+        "Ils ouvrent aussi une colle.",
+        "Les amis rient autour d’une porte.",
+        "Karim partage une colle avec le groupe.",
+        "La fête se termine près d’un robinet.",
+        "Plus tard, Sara revient au parc.",
+        "Amira rapporte un vélo une seconde fois.",
+        "Ils vérifient encore un vélo ensemble.",
+        "Sara explique une nouvelle idée sur une poêle.",
+        "Amira écoute et regarde une poêle.",
+        "Le groupe accepte d’essayer un chocolat.",
+        "Après une pause, un chocolat change le plan.",
+        "Sara montre le résultat près d’un vélo.",
+        "Amira félicite tout le monde pour une poêle.",
+        "Avant la nuit, ils rangent un short."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la maîtresse range la dosette, et Léo sort trop tôt aussi."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le facteur prend le doseur, et Léo sort trop tôt aussi."
+      "sentences": [
+        "Yanis commence la journée au magasin.",
+        "Liam apporte un robinet pour le groupe.",
+        "Ils placent un robinet au centre.",
+        "Yanis décrit un robinet à voix haute.",
+        "Liam ajoute un chocolat à côté.",
+        "Le groupe compare un robinet et un chocolat.",
+        "Ensuite, chacun touche une poêle.",
+        "Yanis résume le rôle d’une poêle.",
+        "Pour finir, Liam range un short.",
+        "Plus tard, Inès revient au marché.",
+        "Léa rapporte une poêle une seconde fois.",
+        "Ils vérifient encore une poêle ensemble.",
+        "Inès explique une nouvelle idée sur une botte.",
+        "Léa écoute et regarde une botte.",
+        "Le groupe accepte d’essayer une colle.",
+        "Après une pause, une colle change le plan.",
+        "Inès montre le résultat près d’une poêle.",
+        "Léa félicite tout le monde pour une botte.",
+        "Avant la nuit, ils rangent une pomme."
+      ]
     }
   ]
 }

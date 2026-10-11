@@ -2010,128 +2010,388 @@
       ]
     }
   ],
-  "type12": [
-    {
-      "level": "a1",
-      "sentence": "Le directeur traverse le bazar avec Enzo."
-    },
-    {
-      "level": "a1",
-      "sentence": "La boulangère cherche le bronze avec Zoé."
-    },
-    {
-      "level": "a1",
-      "sentence": "Enzo écrit le douze bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La voisine caresse la gazelle avec Zoé."
-    },
+  "type12Stories": [
     {
       "level": "a2",
-      "sentence": "Après le cours, le garçon attrape le trapèze près de Aziz."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le papa utilise le treize près de Aziz."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le professeur choisit le zeste près de Aziz."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le grand-père range le zigzag au zoo."
+      "sentences": [
+        "Yanis et Maya se retrouvent dans la cour.",
+        "Yanis apporte une chaise dans un sac.",
+        "Maya pose un livre sur la table.",
+        "Ils parlent d’abord d’une chaise.",
+        "Puis Maya montre une lampe à Yanis.",
+        "Tout à coup, une chaise tombe par terre.",
+        "Yanis ramasse une chaise et rit.",
+        "Maya range un livre et une lampe.",
+        "Avant de partir, ils vérifient encore une porte."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Enzo sauve le zébu sans zéro, parce que Enzo reste content."
+      "sentences": [
+        "Ce matin, Omar travaille dans la cuisine.",
+        "Il prépare une porte avec soin.",
+        "Noah arrive et regarde une porte.",
+        "Ensemble, ils ajoutent un sac.",
+        "Omar explique l’usage d’un sac.",
+        "Noah propose aussi un livre.",
+        "Le travail avance grâce à une porte.",
+        "Ils placent un livre près d’un sac.",
+        "À la fin, une chaise est prêt pour demain."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Emma fait des courses dans le jardin.",
+        "Dans le panier, il y a déjà une lampe.",
+        "Inès choisit une chaise juste à côté.",
+        "Ils comparent une lampe et une chaise.",
+        "Le vendeur parle d’un sac.",
+        "Emma prend aussi un sac.",
+        "Inès paie et range une lampe.",
+        "Sur le chemin, ils discutent d’une chaise.",
+        "À la maison, ils sortent encore une porte."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Enzo lit le zéro avec Zoé, et Zoé reste très contente."
+      "sentences": [
+        "Théo lit un message à la bibliothèque.",
+        "Sofia doit apporter un livre rapidement.",
+        "Théo part avec une lampe.",
+        "Ils se croisent près d’une chaise.",
+        "Sofia donne un livre à Théo.",
+        "Théo vérifie un livre calmement.",
+        "Ensuite, ils déposent une lampe.",
+        "Une amie demande des nouvelles d’une chaise.",
+        "Plus tard, un sac termine la journée."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Amira organise une activité dans la cour.",
+        "Sara apporte une lampe dès le début.",
+        "Sur la table, on voit une lampe et une chaise.",
+        "Les enfants touchent une chaise à tour de rôle.",
+        "Amira explique le mot lié à un livre.",
+        "Sara dessine un livre au tableau.",
+        "Tout le monde écoute l’histoire d’une lampe.",
+        "Après l’exercice, ils rangent une chaise.",
+        "Amira note encore une porte dans le cahier."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Suzanne voit le bazar avec Zoé, et Zoé reste très contente."
+      "sentences": [
+        "Il pleut un peu au parc.",
+        "Inès protège une lampe sous le bras.",
+        "Karim tient un livre contre lui.",
+        "Ils entrent et posent une lampe.",
+        "Inès sèche un livre avec un chiffon.",
+        "Karim prépare une porte pour attendre.",
+        "Ils parlent calmement d’une lampe.",
+        "Quand la pluie cesse, une porte est prêt.",
+        "Ils repartent avec un sac."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Liam et Sara révisent dans la cour.",
+        "La leçon commence avec un sac.",
+        "Liam lit une phrase sur un sac.",
+        "Sara répète le mot un livre.",
+        "Ils écrivent un livre dans le cahier.",
+        "Une erreur apparaît près d’une porte.",
+        "Liam corrige et montre une porte.",
+        "Sara récite encore la phrase d’un sac.",
+        "Avant de partir, ils relisent une chaise."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Aziz prend le bronze avec Zoé, et Zoé reste très contente."
+      "sentences": [
+        "Liam visite un stand à l’école.",
+        "Karim désigne une lampe du doigt.",
+        "Le guide présente une lampe clairement.",
+        "Liam photographie un sac.",
+        "Ils posent une question sur un sac.",
+        "Karim note le détail d’une porte.",
+        "Avant de partir, Liam achète une porte.",
+        "Karim range une porte dans le sac.",
+        "Sur le chemin du retour, ils parlent d’un livre."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Karim prépare une surprise à la bibliothèque.",
+        "Sofia cache une porte derrière la porte.",
+        "Tout le monde cherche une porte.",
+        "Karim donne un indice avec un livre.",
+        "Sofia trouve enfin une porte.",
+        "Ils ouvrent aussi une lampe.",
+        "Les amis rient autour d’un livre.",
+        "Karim partage une lampe avec le groupe.",
+        "La fête se termine près d’un sac."
+      ]
+    },
+    {
+      "level": "b1",
+      "sentences": [
+        "Sara commence la journée à la gare.",
+        "Omar apporte un sac pour le groupe.",
+        "Ils placent un sac au centre.",
+        "Sara décrit un sac à voix haute.",
+        "Omar ajoute un livre à côté.",
+        "Le groupe compare un sac et un livre.",
+        "Ensuite, chacun touche une chaise.",
+        "Sara résume le rôle d’une chaise.",
+        "Pour finir, Omar range une porte."
+      ]
     }
   ],
-  "type14": [
-    {
-      "level": "a1",
-      "sentence": "Le facteur observe le lézard au zoo."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le grand-père termine le magazine avec Zoé."
-    },
-    {
-      "level": "a1",
-      "sentence": "Zoé utilise le mazout bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La factrice sert la pizza."
-    },
-    {
-      "level": "a1",
-      "sentence": "Aziz recopie le quinze bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La cousine prépare le seize avec Zoé."
-    },
+  "type14Stories": [
     {
       "level": "a2",
-      "sentence": "Ce soir, le copain trouve le zinc près de Aziz."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Aziz joue avec le zodiaque sans zéro."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Zoé lave le zona avec Enzo."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Aziz quitte la zone avec Zoé."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Enzo cherche le zoo au zoo."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Aziz soigne le zèbre au zoo."
+      "sentences": [
+        "Nora et Noah se retrouvent au parc.",
+        "Nora apporte une chaise dans un sac.",
+        "Noah pose une porte sur la table.",
+        "Ils parlent d’abord d’une chaise.",
+        "Puis Noah montre un sac à Nora.",
+        "Tout à coup, une chaise tombe par terre.",
+        "Nora ramasse une chaise et rit.",
+        "Noah range une porte et un sac.",
+        "Avant de partir, ils vérifient encore une lampe.",
+        "Plus tard, Léa revient à la bibliothèque.",
+        "Liam rapporte une porte une seconde fois.",
+        "Ils vérifient encore une porte ensemble.",
+        "Léa explique une nouvelle idée sur une chaise.",
+        "Liam écoute et regarde une chaise.",
+        "Le groupe accepte d’essayer une lampe.",
+        "Après une pause, une lampe change le plan.",
+        "Léa montre le résultat près d’une porte.",
+        "Liam félicite tout le monde pour une chaise.",
+        "Avant la nuit, ils rangent un sac."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Aziz ouvre le douze avec Enzo, parce que Enzo reste content."
+      "sentences": [
+        "Ce matin, Sofia travaille dans la cour.",
+        "Il prépare un sac avec soin.",
+        "Sara arrive et regarde un sac.",
+        "Ensemble, ils ajoutent une porte.",
+        "Sofia explique l’usage d’une porte.",
+        "Sara propose aussi une chaise.",
+        "Le travail avance grâce à un sac.",
+        "Ils placent une chaise près d’une porte.",
+        "À la fin, une lampe est prêt pour demain.",
+        "Plus tard, Nora revient à la bibliothèque.",
+        "Léa rapporte un livre une seconde fois.",
+        "Ils vérifient encore un livre ensemble.",
+        "Nora explique une nouvelle idée sur une chaise.",
+        "Léa écoute et regarde une chaise.",
+        "Le groupe accepte d’essayer un sac.",
+        "Après une pause, un sac change le plan.",
+        "Nora montre le résultat près d’un livre.",
+        "Léa félicite tout le monde pour une chaise.",
+        "Avant la nuit, ils rangent une lampe."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Hugo fait des courses dans la cour.",
+        "Dans le panier, il y a déjà une chaise.",
+        "Emma choisit un sac juste à côté.",
+        "Ils comparent une chaise et un sac.",
+        "Le vendeur parle d’un livre.",
+        "Hugo prend aussi un livre.",
+        "Emma paie et range une chaise.",
+        "Sur le chemin, ils discutent d’un sac.",
+        "À la maison, ils sortent encore une porte.",
+        "Plus tard, Sara revient au café.",
+        "Léa rapporte une chaise une seconde fois.",
+        "Ils vérifient encore une chaise ensemble.",
+        "Sara explique une nouvelle idée sur une porte.",
+        "Léa écoute et regarde une porte.",
+        "Le groupe accepte d’essayer une lampe.",
+        "Après une pause, une lampe change le plan.",
+        "Sara montre le résultat près d’une chaise.",
+        "Léa félicite tout le monde pour une porte.",
+        "Avant la nuit, ils rangent un sac."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Aziz soigne la gazelle au zoo, et Zoé reste très contente."
+      "sentences": [
+        "Inès lit un message au parc.",
+        "Amira doit apporter une lampe rapidement.",
+        "Inès part avec un sac.",
+        "Ils se croisent près d’un livre.",
+        "Amira donne une lampe à Inès.",
+        "Inès vérifie une lampe calmement.",
+        "Ensuite, ils déposent un sac.",
+        "Une amie demande des nouvelles d’un livre.",
+        "Plus tard, une chaise termine la journée.",
+        "Plus tard, Léa revient à la gare.",
+        "Sara rapporte une chaise une seconde fois.",
+        "Ils vérifient encore une chaise ensemble.",
+        "Léa explique une nouvelle idée sur une lampe.",
+        "Sara écoute et regarde une lampe.",
+        "Le groupe accepte d’essayer un sac.",
+        "Après une pause, un sac change le plan.",
+        "Léa montre le résultat près d’une chaise.",
+        "Sara félicite tout le monde pour une lampe.",
+        "Avant la nuit, ils rangent un livre."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Léa organise une activité à la bibliothèque.",
+        "Sara apporte une porte dès le début.",
+        "Sur la table, on voit une porte et un sac.",
+        "Les enfants touchent un sac à tour de rôle.",
+        "Léa explique le mot lié à une chaise.",
+        "Sara dessine une chaise au tableau.",
+        "Tout le monde écoute l’histoire d’une porte.",
+        "Après l’exercice, ils rangent un sac.",
+        "Léa note encore une lampe dans le cahier.",
+        "Plus tard, Omar revient au café.",
+        "Karim rapporte un sac une seconde fois.",
+        "Ils vérifient encore un sac ensemble.",
+        "Omar explique une nouvelle idée sur un livre.",
+        "Karim écoute et regarde un livre.",
+        "Le groupe accepte d’essayer une lampe.",
+        "Après une pause, une lampe change le plan.",
+        "Omar montre le résultat près d’un sac.",
+        "Karim félicite tout le monde pour un livre.",
+        "Avant la nuit, ils rangent une porte."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Aziz attrape le lézard sans zéro, parce que Enzo reste content."
+      "sentences": [
+        "Il pleut un peu au parc.",
+        "Omar protège une chaise sous le bras.",
+        "Adam tient un livre contre lui.",
+        "Ils entrent et posent une chaise.",
+        "Omar sèche un livre avec un chiffon.",
+        "Adam prépare une lampe pour attendre.",
+        "Ils parlent calmement d’une chaise.",
+        "Quand la pluie cesse, une lampe est prêt.",
+        "Ils repartent avec un sac.",
+        "Plus tard, Amira revient à l’école.",
+        "Adam rapporte un livre une seconde fois.",
+        "Ils vérifient encore un livre ensemble.",
+        "Amira explique une nouvelle idée sur une chaise.",
+        "Adam écoute et regarde une chaise.",
+        "Le groupe accepte d’essayer un sac.",
+        "Après une pause, un sac change le plan.",
+        "Amira montre le résultat près d’un livre.",
+        "Adam félicite tout le monde pour une chaise.",
+        "Avant la nuit, ils rangent une lampe."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Adam et Noah révisent dans la cuisine.",
+        "La leçon commence avec un livre.",
+        "Adam lit une phrase sur un livre.",
+        "Noah répète le mot une porte.",
+        "Ils écrivent une porte dans le cahier.",
+        "Une erreur apparaît près d’une chaise.",
+        "Adam corrige et montre une chaise.",
+        "Noah récite encore la phrase d’un livre.",
+        "Avant de partir, ils relisent un sac.",
+        "Plus tard, Omar revient à l’école.",
+        "Noah rapporte une chaise une seconde fois.",
+        "Ils vérifient encore une chaise ensemble.",
+        "Omar explique une nouvelle idée sur une porte.",
+        "Noah écoute et regarde une porte.",
+        "Le groupe accepte d’essayer une lampe.",
+        "Après une pause, une lampe change le plan.",
+        "Omar montre le résultat près d’une chaise.",
+        "Noah félicite tout le monde pour une porte.",
+        "Avant la nuit, ils rangent un livre."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Aziz regarde le magazine avec Zoé, et Zoé reste très contente."
+      "sentences": [
+        "Omar visite un stand dans le jardin.",
+        "Yanis désigne une lampe du doigt.",
+        "Le guide présente une lampe clairement.",
+        "Omar photographie une chaise.",
+        "Ils posent une question sur une chaise.",
+        "Yanis note le détail d’une porte.",
+        "Avant de partir, Omar achète une porte.",
+        "Yanis range une porte dans le sac.",
+        "Sur le chemin du retour, ils parlent d’un livre.",
+        "Plus tard, Emma revient à la gare.",
+        "Hugo rapporte un livre une seconde fois.",
+        "Ils vérifient encore un livre ensemble.",
+        "Emma explique une nouvelle idée sur un sac.",
+        "Hugo écoute et regarde un sac.",
+        "Le groupe accepte d’essayer une porte.",
+        "Après une pause, une porte change le plan.",
+        "Emma montre le résultat près d’un livre.",
+        "Hugo félicite tout le monde pour un sac.",
+        "Avant la nuit, ils rangent une chaise."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Léa prépare une surprise au parc.",
+        "Adam cache un livre derrière la porte.",
+        "Tout le monde cherche un livre.",
+        "Léa donne un indice avec une lampe.",
+        "Adam trouve enfin un livre.",
+        "Ils ouvrent aussi une chaise.",
+        "Les amis rient autour d’une lampe.",
+        "Léa partage une chaise avec le groupe.",
+        "La fête se termine près d’un sac.",
+        "Plus tard, Yanis revient dans la cuisine.",
+        "Karim rapporte une porte une seconde fois.",
+        "Ils vérifient encore une porte ensemble.",
+        "Yanis explique une nouvelle idée sur un sac.",
+        "Karim écoute et regarde un sac.",
+        "Le groupe accepte d’essayer une lampe.",
+        "Après une pause, une lampe change le plan.",
+        "Yanis montre le résultat près d’une porte.",
+        "Karim félicite tout le monde pour un sac.",
+        "Avant la nuit, ils rangent un livre."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Aziz cherche le mazout avec Zoé, et Zoé reste très contente."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand la voisine choisit la pizza sans zéro, parce que Enzo reste content."
+      "sentences": [
+        "Inès commence la journée dans la cour.",
+        "Adam apporte une porte pour le groupe.",
+        "Ils placent une porte au centre.",
+        "Inès décrit une porte à voix haute.",
+        "Adam ajoute une chaise à côté.",
+        "Le groupe compare une porte et une chaise.",
+        "Ensuite, chacun touche un livre.",
+        "Inès résume le rôle d’un livre.",
+        "Pour finir, Adam range une lampe.",
+        "Plus tard, Théo revient dans la cour.",
+        "Hugo rapporte une chaise une seconde fois.",
+        "Ils vérifient encore une chaise ensemble.",
+        "Théo explique une nouvelle idée sur un livre.",
+        "Hugo écoute et regarde un livre.",
+        "Le groupe accepte d’essayer une porte.",
+        "Après une pause, une porte change le plan.",
+        "Théo montre le résultat près d’une chaise.",
+        "Hugo félicite tout le monde pour un livre.",
+        "Avant la nuit, ils rangent un sac."
+      ]
     }
   ]
 }

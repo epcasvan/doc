@@ -2580,128 +2580,388 @@
       ]
     }
   ],
-  "type12": [
-    {
-      "level": "a1",
-      "sentence": "Philippe allume la lampe bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La boulangère sent le pain avec Paul."
-    },
-    {
-      "level": "a1",
-      "sentence": "La musicienne repasse le pantalon."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le maître salue le papa."
-    },
+  "type12Stories": [
     {
       "level": "a2",
-      "sentence": "À midi, le maître échappe à la pluie avec Pauline."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le papa choisit la poche avec Paul."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la voisine partage la poire pour Papa."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, la professeure utilise le poivron avec Pauline."
+      "sentences": [
+        "Inès et Amira se retrouvent à la bibliothèque.",
+        "Inès apporte une pomme dans un sac.",
+        "Amira pose une porte sur la table.",
+        "Ils parlent d’abord d’une pomme.",
+        "Puis Amira montre un papier à Inès.",
+        "Tout à coup, une pomme tombe par terre.",
+        "Inès ramasse une pomme et rit.",
+        "Amira range une porte et un papier.",
+        "Avant de partir, ils vérifient encore une poule."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le voisin porte le pull, et Paul est content pour Pauline."
+      "sentences": [
+        "Ce matin, Maya travaille dans la cuisine.",
+        "Il prépare une pomme avec soin.",
+        "Emma arrive et regarde une pomme.",
+        "Ensemble, ils ajoutent une soupe.",
+        "Maya explique l’usage d’une soupe.",
+        "Emma propose aussi une poire.",
+        "Le travail avance grâce à une pomme.",
+        "Ils placent une poire près d’une soupe.",
+        "À la fin, une porte est prêt pour demain."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Noah fait des courses au café.",
+        "Dans le panier, il y a déjà un pull.",
+        "Liam choisit un papier juste à côté.",
+        "Ils comparent un pull et un papier.",
+        "Le vendeur parle d’une poule.",
+        "Noah prend aussi une poule.",
+        "Liam paie et range un pull.",
+        "Sur le chemin, ils discutent d’un papier.",
+        "À la maison, ils sortent encore une porte."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le médecin goûte la pâte, parce que Pauline part pour Paris."
+      "sentences": [
+        "Yanis lit un message au café.",
+        "Théo doit apporter une pile rapidement.",
+        "Yanis part avec une poire.",
+        "Ils se croisent près d’une poule.",
+        "Théo donne une pile à Yanis.",
+        "Yanis vérifie une pile calmement.",
+        "Ensuite, ils déposent une poire.",
+        "Une amie demande des nouvelles d’une poule.",
+        "Plus tard, une pomme termine la journée."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Sofia organise une activité dans le jardin.",
+        "Sara apporte un pull dès le début.",
+        "Sur la table, on voit un pull et une poule.",
+        "Les enfants touchent une poule à tour de rôle.",
+        "Sofia explique le mot lié à un pain.",
+        "Sara dessine un pain au tableau.",
+        "Tout le monde écoute l’histoire d’un pull.",
+        "Après l’exercice, ils rangent une poule.",
+        "Sofia note encore un papier dans le cahier."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand le directeur se lave avant le repas, parce que Pauline part pour Paris."
+      "sentences": [
+        "Il pleut un peu au café.",
+        "Adam protège une porte sous le bras.",
+        "Omar tient une poule contre lui.",
+        "Ils entrent et posent une porte.",
+        "Adam sèche une poule avec un chiffon.",
+        "Omar prépare une lampe pour attendre.",
+        "Ils parlent calmement d’une porte.",
+        "Quand la pluie cesse, une lampe est prêt.",
+        "Ils repartent avec une pile."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Inès et Karim révisent à l’école.",
+        "La leçon commence avec un pantalon.",
+        "Inès lit une phrase sur un pantalon.",
+        "Karim répète le mot une poule.",
+        "Ils écrivent une poule dans le cahier.",
+        "Une erreur apparaît près d’une soupe.",
+        "Inès corrige et montre une soupe.",
+        "Karim récite encore la phrase d’un pantalon.",
+        "Avant de partir, ils relisent un pull."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le directeur voit le sapin, et Paul est content pour Pauline."
+      "sentences": [
+        "Hugo visite un stand dans le jardin.",
+        "Emma désigne une pile du doigt.",
+        "Le guide présente une pile clairement.",
+        "Hugo photographie une soupe.",
+        "Ils posent une question sur une soupe.",
+        "Emma note le détail d’un pantalon.",
+        "Avant de partir, Hugo achète un pantalon.",
+        "Emma range un pantalon dans le sac.",
+        "Sur le chemin du retour, ils parlent d’un papier."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Emma prépare une surprise dans la cuisine.",
+        "Sofia cache un pain derrière la porte.",
+        "Tout le monde cherche un pain.",
+        "Emma donne un indice avec une porte.",
+        "Sofia trouve enfin un pain.",
+        "Ils ouvrent aussi une poule.",
+        "Les amis rient autour d’une porte.",
+        "Emma partage une poule avec le groupe.",
+        "La fête se termine près d’une poire."
+      ]
+    },
+    {
+      "level": "b1",
+      "sentences": [
+        "Amira commence la journée dans le jardin.",
+        "Omar apporte une pile pour le groupe.",
+        "Ils placent une pile au centre.",
+        "Amira décrit une pile à voix haute.",
+        "Omar ajoute un pain à côté.",
+        "Le groupe compare une pile et un pain.",
+        "Ensuite, chacun touche une lampe.",
+        "Amira résume le rôle d’une lampe.",
+        "Pour finir, Omar range une poire."
+      ]
     }
   ],
-  "type14": [
-    {
-      "level": "a1",
-      "sentence": "La grand-mère déchire le papier."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le collègue pédale dans le parc."
-    },
-    {
-      "level": "a1",
-      "sentence": "Paul utilise la pile bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La factrice prend le pingouin."
-    },
-    {
-      "level": "a1",
-      "sentence": "La professeure nage dans la piscine."
-    },
-    {
-      "level": "a1",
-      "sentence": "La fille contourne la place avec Pauline."
-    },
+  "type14Stories": [
     {
       "level": "a2",
-      "sentence": "Après le cours, la factrice choisit la pomme avec Pauline."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le jardinier construit le pont avec Pauline."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la grand-mère peint la porte avec Paul."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le collègue soigne la poule pour Papa."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le garçon commence la poupée avec Paul."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, la jardinière cherche le printemps avec Paul."
+      "sentences": [
+        "Noah et Hugo se retrouvent au parc.",
+        "Noah apporte une soupe dans un sac.",
+        "Hugo pose une pile sur la table.",
+        "Ils parlent d’abord d’une soupe.",
+        "Puis Hugo montre un pain à Noah.",
+        "Tout à coup, une soupe tombe par terre.",
+        "Noah ramasse une soupe et rit.",
+        "Hugo range une pile et un pain.",
+        "Avant de partir, ils vérifient encore une pomme.",
+        "Plus tard, Adam revient dans le jardin.",
+        "Sara rapporte un papier une seconde fois.",
+        "Ils vérifient encore un papier ensemble.",
+        "Adam explique une nouvelle idée sur une soupe.",
+        "Sara écoute et regarde une soupe.",
+        "Le groupe accepte d’essayer une pile.",
+        "Après une pause, une pile change le plan.",
+        "Adam montre le résultat près d’un papier.",
+        "Sara félicite tout le monde pour une soupe.",
+        "Avant la nuit, ils rangent une lampe."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la cuisinière mange la soupe, et Paul est content pour Pauline."
+      "sentences": [
+        "Ce matin, Yanis travaille dans le jardin.",
+        "Il prépare une poire avec soin.",
+        "Sara arrive et regarde une poire.",
+        "Ensemble, ils ajoutent une lampe.",
+        "Yanis explique l’usage d’une lampe.",
+        "Sara propose aussi un pain.",
+        "Le travail avance grâce à une poire.",
+        "Ils placent un pain près d’une lampe.",
+        "À la fin, une pile est prêt pour demain.",
+        "Plus tard, Liam revient à la bibliothèque.",
+        "Karim rapporte une poule une seconde fois.",
+        "Ils vérifient encore une poule ensemble.",
+        "Liam explique une nouvelle idée sur un pull.",
+        "Karim écoute et regarde un pull.",
+        "Le groupe accepte d’essayer une pile.",
+        "Après une pause, une pile change le plan.",
+        "Liam montre le résultat près d’une poule.",
+        "Karim félicite tout le monde pour un pull.",
+        "Avant la nuit, ils rangent un pantalon."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Nora fait des courses à la bibliothèque.",
+        "Dans le panier, il y a déjà un papier.",
+        "Amira choisit une soupe juste à côté.",
+        "Ils comparent un papier et une soupe.",
+        "Le vendeur parle d’une lampe.",
+        "Nora prend aussi une lampe.",
+        "Amira paie et range un papier.",
+        "Sur le chemin, ils discutent d’une soupe.",
+        "À la maison, ils sortent encore un pull.",
+        "Plus tard, Emma revient à la gare.",
+        "Omar rapporte un papier une seconde fois.",
+        "Ils vérifient encore un papier ensemble.",
+        "Emma explique une nouvelle idée sur une lampe.",
+        "Omar écoute et regarde une lampe.",
+        "Le groupe accepte d’essayer une soupe.",
+        "Après une pause, une soupe change le plan.",
+        "Emma montre le résultat près d’un papier.",
+        "Omar félicite tout le monde pour une lampe.",
+        "Avant la nuit, ils rangent une poule."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la directrice saute sur le tapis, parce que Pauline part pour Paris."
+      "sentences": [
+        "Hugo lit un message au magasin.",
+        "Adam doit apporter un pantalon rapidement.",
+        "Hugo part avec un pull.",
+        "Ils se croisent près d’une poule.",
+        "Adam donne un pantalon à Hugo.",
+        "Hugo vérifie un pantalon calmement.",
+        "Ensuite, ils déposent un pull.",
+        "Une amie demande des nouvelles d’une poule.",
+        "Plus tard, une porte termine la journée.",
+        "Plus tard, Inès revient à l’école.",
+        "Noah rapporte un pain une seconde fois.",
+        "Ils vérifient encore un pain ensemble.",
+        "Inès explique une nouvelle idée sur une lampe.",
+        "Noah écoute et regarde une lampe.",
+        "Le groupe accepte d’essayer un pull.",
+        "Après une pause, un pull change le plan.",
+        "Inès montre le résultat près d’un pain.",
+        "Noah félicite tout le monde pour une lampe.",
+        "Avant la nuit, ils rangent une pomme."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Adam organise une activité au café.",
+        "Emma apporte un papier dès le début.",
+        "Sur la table, on voit un papier et un pantalon.",
+        "Les enfants touchent un pantalon à tour de rôle.",
+        "Adam explique le mot lié à une soupe.",
+        "Emma dessine une soupe au tableau.",
+        "Tout le monde écoute l’histoire d’un papier.",
+        "Après l’exercice, ils rangent un pantalon.",
+        "Adam note encore une pomme dans le cahier.",
+        "Plus tard, Omar revient dans le jardin.",
+        "Adam rapporte un pantalon une seconde fois.",
+        "Ils vérifient encore un pantalon ensemble.",
+        "Omar explique une nouvelle idée sur une pomme.",
+        "Adam écoute et regarde une pomme.",
+        "Le groupe accepte d’essayer un pain.",
+        "Après une pause, un pain change le plan.",
+        "Omar montre le résultat près d’un pantalon.",
+        "Adam félicite tout le monde pour une pomme.",
+        "Avant la nuit, ils rangent un pull."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le cousin allume la lampe, et Paul est content pour Pauline."
+      "sentences": [
+        "Il pleut un peu au parc.",
+        "Karim protège une poule sous le bras.",
+        "Nora tient un pantalon contre lui.",
+        "Ils entrent et posent une poule.",
+        "Karim sèche un pantalon avec un chiffon.",
+        "Nora prépare un pain pour attendre.",
+        "Ils parlent calmement d’une poule.",
+        "Quand la pluie cesse, un pain est prêt.",
+        "Ils repartent avec une pile.",
+        "Plus tard, Liam revient à la gare.",
+        "Inès rapporte un papier une seconde fois.",
+        "Ils vérifient encore un papier ensemble.",
+        "Liam explique une nouvelle idée sur une poule.",
+        "Inès écoute et regarde une poule.",
+        "Le groupe accepte d’essayer une poire.",
+        "Après une pause, une poire change le plan.",
+        "Liam montre le résultat près d’un papier.",
+        "Inès félicite tout le monde pour une poule.",
+        "Avant la nuit, ils rangent un pull."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Nora et Omar révisent à la bibliothèque.",
+        "La leçon commence avec une soupe.",
+        "Nora lit une phrase sur une soupe.",
+        "Omar répète le mot un pain.",
+        "Ils écrivent un pain dans le cahier.",
+        "Une erreur apparaît près d’un pull.",
+        "Nora corrige et montre un pull.",
+        "Omar récite encore la phrase d’une soupe.",
+        "Avant de partir, ils relisent un papier.",
+        "Plus tard, Maya revient à l’école.",
+        "Hugo rapporte une lampe une seconde fois.",
+        "Ils vérifient encore une lampe ensemble.",
+        "Maya explique une nouvelle idée sur une pile.",
+        "Hugo écoute et regarde une pile.",
+        "Le groupe accepte d’essayer une pomme.",
+        "Après une pause, une pomme change le plan.",
+        "Maya montre le résultat près d’une lampe.",
+        "Hugo félicite tout le monde pour une pile.",
+        "Avant la nuit, ils rangent une poule."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la boulangère coupe le pain, parce que Pauline part pour Paris."
+      "sentences": [
+        "Emma visite un stand à l’école.",
+        "Maya désigne une lampe du doigt.",
+        "Le guide présente une lampe clairement.",
+        "Emma photographie un pain.",
+        "Ils posent une question sur un pain.",
+        "Maya note le détail d’un papier.",
+        "Avant de partir, Emma achète un papier.",
+        "Maya range un papier dans le sac.",
+        "Sur le chemin du retour, ils parlent d’une pomme.",
+        "Plus tard, Liam revient au café.",
+        "Inès rapporte une pomme une seconde fois.",
+        "Ils vérifient encore une pomme ensemble.",
+        "Liam explique une nouvelle idée sur une poire.",
+        "Inès écoute et regarde une poire.",
+        "Le groupe accepte d’essayer une porte.",
+        "Après une pause, une porte change le plan.",
+        "Liam montre le résultat près d’une pomme.",
+        "Inès félicite tout le monde pour une poire.",
+        "Avant la nuit, ils rangent une poule."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Inès prépare une surprise dans la cour.",
+        "Adam cache une lampe derrière la porte.",
+        "Tout le monde cherche une lampe.",
+        "Inès donne un indice avec un pain.",
+        "Adam trouve enfin une lampe.",
+        "Ils ouvrent aussi une pomme.",
+        "Les amis rient autour d’un pain.",
+        "Inès partage une pomme avec le groupe.",
+        "La fête se termine près d’une soupe.",
+        "Plus tard, Noah revient dans la cour.",
+        "Léa rapporte une poire une seconde fois.",
+        "Ils vérifient encore une poire ensemble.",
+        "Noah explique une nouvelle idée sur une poule.",
+        "Léa écoute et regarde une poule.",
+        "Le groupe accepte d’essayer une lampe.",
+        "Après une pause, une lampe change le plan.",
+        "Noah montre le résultat près d’une poire.",
+        "Léa félicite tout le monde pour une poule.",
+        "Avant la nuit, ils rangent un pull."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la fille repasse le pantalon, parce que Pauline part pour Paris."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le garçon remercie le papa, et Paul est content pour Pauline."
+      "sentences": [
+        "Sara commence la journée à l’école.",
+        "Hugo apporte un papier pour le groupe.",
+        "Ils placent un papier au centre.",
+        "Sara décrit un papier à voix haute.",
+        "Hugo ajoute une soupe à côté.",
+        "Le groupe compare un papier et une soupe.",
+        "Ensuite, chacun touche une porte.",
+        "Sara résume le rôle d’une porte.",
+        "Pour finir, Hugo range un pull.",
+        "Plus tard, Sofia revient dans la cuisine.",
+        "Amira rapporte un papier une seconde fois.",
+        "Ils vérifient encore un papier ensemble.",
+        "Sofia explique une nouvelle idée sur une pomme.",
+        "Amira écoute et regarde une pomme.",
+        "Le groupe accepte d’essayer un pain.",
+        "Après une pause, un pain change le plan.",
+        "Sofia montre le résultat près d’un papier.",
+        "Amira félicite tout le monde pour une pomme.",
+        "Avant la nuit, ils rangent un pantalon."
+      ]
     }
   ]
 }

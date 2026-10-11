@@ -2529,128 +2529,388 @@
       ]
     }
   ],
-  "type12": [
-    {
-      "level": "a1",
-      "sentence": "Le copain invite un ami avec Manon."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le bébé remercie la femme."
-    },
-    {
-      "level": "a1",
-      "sentence": "Marc appelle la madame bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le papa prend le mai avec Manon."
-    },
+  "type12Stories": [
     {
       "level": "a2",
-      "sentence": "À midi, le papa pose le maïs avec Marc."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la voisine partage le melon près de Emma."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, la maîtresse coupe le menu avec Manon."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le professeur achète le miel même ici."
+      "sentences": [
+        "Emma et Omar se retrouvent à l’école.",
+        "Emma apporte une pomme dans un sac.",
+        "Omar pose un jambon sur la table.",
+        "Ils parlent d’abord d’une pomme.",
+        "Puis Omar montre une chemise à Emma.",
+        "Tout à coup, une pomme tombe par terre.",
+        "Emma ramasse une pomme et rit.",
+        "Omar range un jambon et une chemise.",
+        "Avant de partir, ils vérifient encore un compas."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le bébé soigne le mouton, et Emma est très contente."
+      "sentences": [
+        "Ce matin, Noah travaille à l’école.",
+        "Il prépare une pomme avec soin.",
+        "Emma arrive et regarde une pomme.",
+        "Ensemble, ils ajoutent un magazine.",
+        "Noah explique l’usage d’un magazine.",
+        "Emma propose aussi un jambon.",
+        "Le travail avance grâce à une pomme.",
+        "Ils placent un jambon près d’un magazine.",
+        "À la fin, une ampoule est prêt pour demain."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Adam fait des courses à l’école.",
+        "Dans le panier, il y a déjà une ampoule.",
+        "Inès choisit un concombre juste à côté.",
+        "Ils comparent une ampoule et un concombre.",
+        "Le vendeur parle d’une lampe.",
+        "Adam prend aussi une lampe.",
+        "Inès paie et range une ampoule.",
+        "Sur le chemin, ils discutent d’un concombre.",
+        "À la maison, ils sortent encore une gomme."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand la copine longe le mur même ici, parce que Marc est content aussi."
+      "sentences": [
+        "Omar lit un message au parc.",
+        "Inès doit apporter une chemise rapidement.",
+        "Omar part avec un hamburger.",
+        "Ils se croisent près d’une lampe.",
+        "Inès donne une chemise à Omar.",
+        "Omar vérifie une chemise calmement.",
+        "Ensuite, ils déposent un hamburger.",
+        "Une amie demande des nouvelles d’une lampe.",
+        "Plus tard, une montre termine la journée."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Léa organise une activité au café.",
+        "Karim apporte un hamburger dès le début.",
+        "Sur la table, on voit un hamburger et une montre.",
+        "Les enfants touchent une montre à tour de rôle.",
+        "Léa explique le mot lié à une ampoule.",
+        "Karim dessine une ampoule au tableau.",
+        "Tout le monde écoute l’histoire d’un hamburger.",
+        "Après l’exercice, ils rangent une montre.",
+        "Léa note encore un magazine dans le cahier."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la grand-mère aime la musique, parce que Marc est content aussi."
+      "sentences": [
+        "Il pleut un peu au café.",
+        "Omar protège un jambon sous le bras.",
+        "Amira tient une lampe contre lui.",
+        "Ils entrent et posent un jambon.",
+        "Omar sèche une lampe avec un chiffon.",
+        "Amira prépare un hamburger pour attendre.",
+        "Ils parlent calmement d’un jambon.",
+        "Quand la pluie cesse, un hamburger est prêt.",
+        "Ils repartent avec un melon."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Hugo et Amira révisent à la gare.",
+        "La leçon commence avec un hamburger.",
+        "Hugo lit une phrase sur un hamburger.",
+        "Amira répète le mot une pomme.",
+        "Ils écrivent une pomme dans le cahier.",
+        "Une erreur apparaît près d’une gomme.",
+        "Hugo corrige et montre une gomme.",
+        "Amira récite encore la phrase d’un hamburger.",
+        "Avant de partir, ils relisent un jambon."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la maîtresse visite le musée, et Emma est très contente."
+      "sentences": [
+        "Emma visite un stand à la gare.",
+        "Inès désigne un jambon du doigt.",
+        "Le guide présente un jambon clairement.",
+        "Emma photographie une chemise.",
+        "Ils posent une question sur une chemise.",
+        "Inès note le détail d’un hamburger.",
+        "Avant de partir, Emma achète un hamburger.",
+        "Inès range un hamburger dans le sac.",
+        "Sur le chemin du retour, ils parlent d’un melon."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Nora prépare une surprise à l’école.",
+        "Sofia cache une lampe derrière la porte.",
+        "Tout le monde cherche une lampe.",
+        "Nora donne un indice avec un melon.",
+        "Sofia trouve enfin une lampe.",
+        "Ils ouvrent aussi une pomme.",
+        "Les amis rient autour d’un melon.",
+        "Nora partage une pomme avec le groupe.",
+        "La fête se termine près d’une ampoule."
+      ]
+    },
+    {
+      "level": "b1",
+      "sentences": [
+        "Nora commence la journée au magasin.",
+        "Amira apporte une gomme pour le groupe.",
+        "Ils placent une gomme au centre.",
+        "Nora décrit une gomme à voix haute.",
+        "Amira ajoute un melon à côté.",
+        "Le groupe compare une gomme et un melon.",
+        "Ensuite, chacun touche un fromage.",
+        "Nora résume le rôle d’un fromage.",
+        "Pour finir, Amira range une montre."
+      ]
     }
   ],
-  "type14": [
-    {
-      "level": "a1",
-      "sentence": "Le garçon téléphone à la maman."
-    },
-    {
-      "level": "a1",
-      "sentence": "La musicienne enfile la manche."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le grand-père prend la mangue avec Manon."
-    },
-    {
-      "level": "a1",
-      "sentence": "La fille note le mardi même ici."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le bébé photographie la mare avec Marc."
-    },
-    {
-      "level": "a1",
-      "sentence": "La professeure remercie le mari."
-    },
+  "type14Stories": [
     {
       "level": "a2",
-      "sentence": "Ce matin, la jardinière plante le monde avec Manon."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Simon porte la montre même ici."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Emma prend la moto avec Manon."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le collègue soigne la mouche à la maison."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le médecin sert la moule avec Manon."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, la maîtresse voit le moulin avec Marc."
+      "sentences": [
+        "Théo et Yanis se retrouvent à l’école.",
+        "Théo apporte une pomme dans un sac.",
+        "Yanis pose une gomme sur la table.",
+        "Ils parlent d’abord d’une pomme.",
+        "Puis Yanis montre un jambon à Théo.",
+        "Tout à coup, une pomme tombe par terre.",
+        "Théo ramasse une pomme et rit.",
+        "Yanis range une gomme et un jambon.",
+        "Avant de partir, ils vérifient encore un hamburger.",
+        "Plus tard, Nora revient dans la cour.",
+        "Adam rapporte une ampoule une seconde fois.",
+        "Ils vérifient encore une ampoule ensemble.",
+        "Nora explique une nouvelle idée sur un jambon.",
+        "Adam écoute et regarde un jambon.",
+        "Le groupe accepte d’essayer un compas.",
+        "Après une pause, un compas change le plan.",
+        "Nora montre le résultat près d’une ampoule.",
+        "Adam félicite tout le monde pour un jambon.",
+        "Avant la nuit, ils rangent une lampe."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Emma achète la mûre à la maison, et Emma est très contente."
+      "sentences": [
+        "Ce matin, Sara travaille à la bibliothèque.",
+        "Il prépare une pomme avec soin.",
+        "Nora arrive et regarde une pomme.",
+        "Ensemble, ils ajoutent un fromage.",
+        "Sara explique l’usage d’un fromage.",
+        "Nora propose aussi une gomme.",
+        "Le travail avance grâce à une pomme.",
+        "Ils placent une gomme près d’un fromage.",
+        "À la fin, un melon est prêt pour demain.",
+        "Plus tard, Adam revient dans le jardin.",
+        "Amira rapporte une pomme une seconde fois.",
+        "Ils vérifient encore une pomme ensemble.",
+        "Adam explique une nouvelle idée sur un magazine.",
+        "Amira écoute et regarde un magazine.",
+        "Le groupe accepte d’essayer un hamburger.",
+        "Après une pause, un hamburger change le plan.",
+        "Adam montre le résultat près d’une pomme.",
+        "Amira félicite tout le monde pour un magazine.",
+        "Avant la nuit, ils rangent un concombre."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Noah fait des courses à l’école.",
+        "Dans le panier, il y a déjà un hamburger.",
+        "Adam choisit un concombre juste à côté.",
+        "Ils comparent un hamburger et un concombre.",
+        "Le vendeur parle d’un fromage.",
+        "Noah prend aussi un fromage.",
+        "Adam paie et range un hamburger.",
+        "Sur le chemin, ils discutent d’un concombre.",
+        "À la maison, ils sortent encore un melon.",
+        "Plus tard, Liam revient au marché.",
+        "Inès rapporte un melon une seconde fois.",
+        "Ils vérifient encore un melon ensemble.",
+        "Liam explique une nouvelle idée sur une lampe.",
+        "Inès écoute et regarde une lampe.",
+        "Le groupe accepte d’essayer une gomme.",
+        "Après une pause, une gomme change le plan.",
+        "Liam montre le résultat près d’un melon.",
+        "Inès félicite tout le monde pour une lampe.",
+        "Avant la nuit, ils rangent un compas."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le grand-père cueille la pomme, et Emma est très contente."
+      "sentences": [
+        "Hugo lit un message au magasin.",
+        "Liam doit apporter une pomme rapidement.",
+        "Hugo part avec une montre.",
+        "Ils se croisent près d’un compas.",
+        "Liam donne une pomme à Hugo.",
+        "Hugo vérifie une pomme calmement.",
+        "Ensuite, ils déposent une montre.",
+        "Une amie demande des nouvelles d’un compas.",
+        "Plus tard, une chemise termine la journée.",
+        "Plus tard, Yanis revient au marché.",
+        "Omar rapporte un concombre une seconde fois.",
+        "Ils vérifient encore un concombre ensemble.",
+        "Yanis explique une nouvelle idée sur un hamburger.",
+        "Omar écoute et regarde un hamburger.",
+        "Le groupe accepte d’essayer un jambon.",
+        "Après une pause, un jambon change le plan.",
+        "Yanis montre le résultat près d’un concombre.",
+        "Omar félicite tout le monde pour un hamburger.",
+        "Avant la nuit, ils rangent une chemise."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Maya organise une activité à la bibliothèque.",
+        "Liam apporte une montre dès le début.",
+        "Sur la table, on voit une montre et un fromage.",
+        "Les enfants touchent un fromage à tour de rôle.",
+        "Maya explique le mot lié à une pomme.",
+        "Liam dessine une pomme au tableau.",
+        "Tout le monde écoute l’histoire d’une montre.",
+        "Après l’exercice, ils rangent un fromage.",
+        "Maya note encore un jambon dans le cahier.",
+        "Plus tard, Sofia revient au magasin.",
+        "Maya rapporte une ampoule une seconde fois.",
+        "Ils vérifient encore une ampoule ensemble.",
+        "Sofia explique une nouvelle idée sur une montre.",
+        "Maya écoute et regarde une montre.",
+        "Le groupe accepte d’essayer un jambon.",
+        "Après une pause, un jambon change le plan.",
+        "Sofia montre le résultat près d’une ampoule.",
+        "Maya félicite tout le monde pour une montre.",
+        "Avant la nuit, ils rangent une pomme."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la boulangère accompagne un ami, et Emma est très contente."
+      "sentences": [
+        "Il pleut un peu à la gare.",
+        "Sara protège une gomme sous le bras.",
+        "Théo tient un concombre contre lui.",
+        "Ils entrent et posent une gomme.",
+        "Sara sèche un concombre avec un chiffon.",
+        "Théo prépare une montre pour attendre.",
+        "Ils parlent calmement d’une gomme.",
+        "Quand la pluie cesse, une montre est prêt.",
+        "Ils repartent avec un compas.",
+        "Plus tard, Nora revient à l’école.",
+        "Léa rapporte une chemise une seconde fois.",
+        "Ils vérifient encore une chemise ensemble.",
+        "Nora explique une nouvelle idée sur un fromage.",
+        "Léa écoute et regarde un fromage.",
+        "Le groupe accepte d’essayer un hamburger.",
+        "Après une pause, un hamburger change le plan.",
+        "Nora montre le résultat près d’une chemise.",
+        "Léa félicite tout le monde pour un fromage.",
+        "Avant la nuit, ils rangent une lampe."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Omar et Nora révisent à l’école.",
+        "La leçon commence avec une ampoule.",
+        "Omar lit une phrase sur une ampoule.",
+        "Nora répète le mot un hamburger.",
+        "Ils écrivent un hamburger dans le cahier.",
+        "Une erreur apparaît près d’un compas.",
+        "Omar corrige et montre un compas.",
+        "Nora récite encore la phrase d’une ampoule.",
+        "Avant de partir, ils relisent une chemise.",
+        "Plus tard, Léa revient à la bibliothèque.",
+        "Nora rapporte un jambon une seconde fois.",
+        "Ils vérifient encore un jambon ensemble.",
+        "Léa explique une nouvelle idée sur une montre.",
+        "Nora écoute et regarde une montre.",
+        "Le groupe accepte d’essayer un hamburger.",
+        "Après une pause, un hamburger change le plan.",
+        "Léa montre le résultat près d’un jambon.",
+        "Nora félicite tout le monde pour une montre.",
+        "Avant la nuit, ils rangent un compas."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le bébé embrasse la femme, parce que Marc est content aussi."
+      "sentences": [
+        "Amira visite un stand au marché.",
+        "Sofia désigne une montre du doigt.",
+        "Le guide présente une montre clairement.",
+        "Amira photographie une chemise.",
+        "Ils posent une question sur une chemise.",
+        "Sofia note le détail d’une gomme.",
+        "Avant de partir, Amira achète une gomme.",
+        "Sofia range une gomme dans le sac.",
+        "Sur le chemin du retour, ils parlent d’un hamburger.",
+        "Plus tard, Karim revient au magasin.",
+        "Sofia rapporte un magazine une seconde fois.",
+        "Ils vérifient encore un magazine ensemble.",
+        "Karim explique une nouvelle idée sur un concombre.",
+        "Sofia écoute et regarde un concombre.",
+        "Le groupe accepte d’essayer une pomme.",
+        "Après une pause, une pomme change le plan.",
+        "Karim montre le résultat près d’un magazine.",
+        "Sofia félicite tout le monde pour un concombre.",
+        "Avant la nuit, ils rangent une lampe."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Omar prépare une surprise au marché.",
+        "Sofia cache un concombre derrière la porte.",
+        "Tout le monde cherche un concombre.",
+        "Omar donne un indice avec une lampe.",
+        "Sofia trouve enfin un concombre.",
+        "Ils ouvrent aussi une chemise.",
+        "Les amis rient autour d’une lampe.",
+        "Omar partage une chemise avec le groupe.",
+        "La fête se termine près d’un compas.",
+        "Plus tard, Nora revient au parc.",
+        "Inès rapporte un magazine une seconde fois.",
+        "Ils vérifient encore un magazine ensemble.",
+        "Nora explique une nouvelle idée sur un concombre.",
+        "Inès écoute et regarde un concombre.",
+        "Le groupe accepte d’essayer un jambon.",
+        "Après une pause, un jambon change le plan.",
+        "Nora montre le résultat près d’un magazine.",
+        "Inès félicite tout le monde pour un concombre.",
+        "Avant la nuit, ils rangent une lampe."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Marc suit la madame, parce que Marc est content aussi."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le médecin cherche le mai, et Emma est très contente."
+      "sentences": [
+        "Inès commence la journée dans la cuisine.",
+        "Nora apporte un hamburger pour le groupe.",
+        "Ils placent un hamburger au centre.",
+        "Inès décrit un hamburger à voix haute.",
+        "Nora ajoute une ampoule à côté.",
+        "Le groupe compare un hamburger et une ampoule.",
+        "Ensuite, chacun touche un compas.",
+        "Inès résume le rôle d’un compas.",
+        "Pour finir, Nora range un melon.",
+        "Plus tard, Yanis revient au café.",
+        "Amira rapporte une pomme une seconde fois.",
+        "Ils vérifient encore une pomme ensemble.",
+        "Yanis explique une nouvelle idée sur un magazine.",
+        "Amira écoute et regarde un magazine.",
+        "Le groupe accepte d’essayer une chemise.",
+        "Après une pause, une chemise change le plan.",
+        "Yanis montre le résultat près d’une pomme.",
+        "Amira félicite tout le monde pour un magazine.",
+        "Avant la nuit, ils rangent une lampe."
+      ]
     }
   ]
 }

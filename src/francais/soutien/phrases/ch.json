@@ -2817,128 +2817,388 @@
       ]
     }
   ],
-  "type12": [
-    {
-      "level": "a1",
-      "sentence": "La jardinière lave la bouche chez Charles."
-    },
-    {
-      "level": "a1",
-      "sentence": "La collègue admire la branche chez Charles."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le médecin quitte la bûche avec Charles."
-    },
-    {
-      "level": "a1",
-      "sentence": "La voisine apporte la chaise avec Chloé."
-    },
+  "type12Stories": [
     {
       "level": "a2",
-      "sentence": "Après le cours, Chloé cherche le chaud avec Charles."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le garçon choisit la chaussure avec Chloé."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Michel explique le chemin avec Charles."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la copine porte la chemise chez Charles."
+      "sentences": [
+        "Inès et Omar se retrouvent dans la cour.",
+        "Inès apporte un chocolat dans un sac.",
+        "Omar pose une chemise sur la table.",
+        "Ils parlent d’abord d’un chocolat.",
+        "Puis Omar montre une chaussure à Inès.",
+        "Tout à coup, un chocolat tombe par terre.",
+        "Inès ramasse un chocolat et rit.",
+        "Omar range une chemise et une chaussure.",
+        "Avant de partir, ils vérifient encore un chat."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le professeur note le dimanche, parce que Charles est chez Chloé."
+      "sentences": [
+        "Ce matin, Inès travaille au parc.",
+        "Il prépare une chemise avec soin.",
+        "Sofia arrive et regarde une chemise.",
+        "Ensemble, ils ajoutent une chaise.",
+        "Inès explique l’usage d’une chaise.",
+        "Sofia propose aussi un chocolat.",
+        "Le travail avance grâce à une chemise.",
+        "Ils placent un chocolat près d’une chaise.",
+        "À la fin, un chapeau est prêt pour demain."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Karim fait des courses au marché.",
+        "Dans le panier, il y a déjà une chaussure.",
+        "Hugo choisit une chaise juste à côté.",
+        "Ils comparent une chaussure et une chaise.",
+        "Le vendeur parle d’un chien.",
+        "Karim prend aussi un chien.",
+        "Hugo paie et range une chaussure.",
+        "Sur le chemin, ils discutent d’une chaise.",
+        "À la maison, ils sortent encore une chemise."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Charles nettoie la douche avec Chloé, et Chloé est chez Charles."
+      "sentences": [
+        "Maya lit un message au magasin.",
+        "Hugo doit apporter un chien rapidement.",
+        "Maya part avec un chocolat.",
+        "Ils se croisent près d’une branche.",
+        "Hugo donne un chien à Maya.",
+        "Maya vérifie un chien calmement.",
+        "Ensuite, ils déposent un chocolat.",
+        "Une amie demande des nouvelles d’une branche.",
+        "Plus tard, un chat termine la journée."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Amira organise une activité au marché.",
+        "Nora apporte un chapeau dès le début.",
+        "Sur la table, on voit un chapeau et un chocolat.",
+        "Les enfants touchent un chocolat à tour de rôle.",
+        "Amira explique le mot lié à une écharpe.",
+        "Nora dessine une écharpe au tableau.",
+        "Tout le monde écoute l’histoire d’un chapeau.",
+        "Après l’exercice, ils rangent un chocolat.",
+        "Amira note encore une branche dans le cahier."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la voisine peint la machine, et Chloé est chez Charles."
+      "sentences": [
+        "Il pleut un peu au café.",
+        "Yanis protège une chemise sous le bras.",
+        "Emma tient une branche contre lui.",
+        "Ils entrent et posent une chemise.",
+        "Yanis sèche une branche avec un chiffon.",
+        "Emma prépare une écharpe pour attendre.",
+        "Ils parlent calmement d’une chemise.",
+        "Quand la pluie cesse, une écharpe est prêt.",
+        "Ils repartent avec un chocolat."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Sara et Théo révisent dans la cuisine.",
+        "La leçon commence avec une écharpe.",
+        "Sara lit une phrase sur une écharpe.",
+        "Théo répète le mot un chapeau.",
+        "Ils écrivent un chapeau dans le cahier.",
+        "Une erreur apparaît près d’une chaussure.",
+        "Sara corrige et montre une chaussure.",
+        "Théo récite encore la phrase d’une écharpe.",
+        "Avant de partir, ils relisent un chat."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le directeur visite le marché, et Chloé est chez Charles."
+      "sentences": [
+        "Karim visite un stand au café.",
+        "Maya désigne un chocolat du doigt.",
+        "Le guide présente un chocolat clairement.",
+        "Karim photographie une chaussure.",
+        "Ils posent une question sur une chaussure.",
+        "Maya note le détail d’une chemise.",
+        "Avant de partir, Karim achète une chemise.",
+        "Maya range une chemise dans le sac.",
+        "Sur le chemin du retour, ils parlent d’une écharpe."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Inès prépare une surprise au marché.",
+        "Nora cache une branche derrière la porte.",
+        "Tout le monde cherche une branche.",
+        "Inès donne un indice avec un chat.",
+        "Nora trouve enfin une branche.",
+        "Ils ouvrent aussi une chemise.",
+        "Les amis rient autour d’un chat.",
+        "Inès partage une chemise avec le groupe.",
+        "La fête se termine près d’une chaise."
+      ]
+    },
+    {
+      "level": "b1",
+      "sentences": [
+        "Hugo commence la journée à la bibliothèque.",
+        "Noah apporte un chocolat pour le groupe.",
+        "Ils placent un chocolat au centre.",
+        "Hugo décrit un chocolat à voix haute.",
+        "Noah ajoute une branche à côté.",
+        "Le groupe compare un chocolat et une branche.",
+        "Ensuite, chacun touche un chat.",
+        "Hugo résume le rôle d’un chat.",
+        "Pour finir, Noah range un chapeau."
+      ]
     }
   ],
-  "type14": [
-    {
-      "level": "a1",
-      "sentence": "La professeure range le chalet avec Charles."
-    },
-    {
-      "level": "a1",
-      "sentence": "Michel retourne dans la chambre."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le cousin voit le champ chez Charles."
-    },
-    {
-      "level": "a1",
-      "sentence": "La factrice écoute la chanson avec Chloé."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le jardinier porte le chapeau avec Chloé."
-    },
-    {
-      "level": "a1",
-      "sentence": "Charles caresse le chat bien."
-    },
+  "type14Stories": [
     {
       "level": "a2",
-      "sentence": "Ce soir, Michel observe le cheval chez Charles."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la maman rêve du chien chez Charles."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le professeur adore le chocolat chez Charles."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le cousin prépare le chou chez Charles."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, la directrice regarde le chêne chez Charles."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Richard soigne le cochon chez Charles."
+      "sentences": [
+        "Théo et Liam se retrouvent à l’école.",
+        "Théo apporte un chocolat dans un sac.",
+        "Liam pose une branche sur la table.",
+        "Ils parlent d’abord d’un chocolat.",
+        "Puis Liam montre un chat à Théo.",
+        "Tout à coup, un chocolat tombe par terre.",
+        "Théo ramasse un chocolat et rit.",
+        "Liam range une branche et un chat.",
+        "Avant de partir, ils vérifient encore une chemise.",
+        "Plus tard, Léa revient à l’école.",
+        "Sofia rapporte un chocolat une seconde fois.",
+        "Ils vérifient encore un chocolat ensemble.",
+        "Léa explique une nouvelle idée sur une chaise.",
+        "Sofia écoute et regarde une chaise.",
+        "Le groupe accepte d’essayer une branche.",
+        "Après une pause, une branche change le plan.",
+        "Léa montre le résultat près d’un chocolat.",
+        "Sofia félicite tout le monde pour une chaise.",
+        "Avant la nuit, ils rangent un chapeau."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le boulanger utilise le mouchoir, parce que Charles est chez Chloé."
+      "sentences": [
+        "Ce matin, Omar travaille au marché.",
+        "Il prépare une écharpe avec soin.",
+        "Adam arrive et regarde une écharpe.",
+        "Ensemble, ils ajoutent une chaise.",
+        "Omar explique l’usage d’une chaise.",
+        "Adam propose aussi une chaussure.",
+        "Le travail avance grâce à une écharpe.",
+        "Ils placent une chaussure près d’une chaise.",
+        "À la fin, un chat est prêt pour demain.",
+        "Plus tard, Yanis revient à l’école.",
+        "Karim rapporte un chapeau une seconde fois.",
+        "Ils vérifient encore un chapeau ensemble.",
+        "Yanis explique une nouvelle idée sur une branche.",
+        "Karim écoute et regarde une branche.",
+        "Le groupe accepte d’essayer un chocolat.",
+        "Après une pause, un chocolat change le plan.",
+        "Yanis montre le résultat près d’un chapeau.",
+        "Karim félicite tout le monde pour une branche.",
+        "Avant la nuit, ils rangent une écharpe."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Maya fait des courses au marché.",
+        "Dans le panier, il y a déjà une branche.",
+        "Sara choisit une chaussure juste à côté.",
+        "Ils comparent une branche et une chaussure.",
+        "Le vendeur parle d’un chien.",
+        "Maya prend aussi un chien.",
+        "Sara paie et range une branche.",
+        "Sur le chemin, ils discutent d’une chaussure.",
+        "À la maison, ils sortent encore un chapeau.",
+        "Plus tard, Karim revient à la gare.",
+        "Amira rapporte un chien une seconde fois.",
+        "Ils vérifient encore un chien ensemble.",
+        "Karim explique une nouvelle idée sur une écharpe.",
+        "Amira écoute et regarde une écharpe.",
+        "Le groupe accepte d’essayer une chemise.",
+        "Après une pause, une chemise change le plan.",
+        "Karim montre le résultat près d’un chien.",
+        "Amira félicite tout le monde pour une écharpe.",
+        "Avant la nuit, ils rangent un chat."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le cousin prend la planche, et Chloé est chez Charles."
+      "sentences": [
+        "Léa lit un message à l’école.",
+        "Amira doit apporter une chaussure rapidement.",
+        "Léa part avec une branche.",
+        "Ils se croisent près d’un chocolat.",
+        "Amira donne une chaussure à Léa.",
+        "Léa vérifie une chaussure calmement.",
+        "Ensuite, ils déposent une branche.",
+        "Une amie demande des nouvelles d’un chocolat.",
+        "Plus tard, une écharpe termine la journée.",
+        "Plus tard, Maya revient au marché.",
+        "Omar rapporte une chemise une seconde fois.",
+        "Ils vérifient encore une chemise ensemble.",
+        "Maya explique une nouvelle idée sur une chaise.",
+        "Omar écoute et regarde une chaise.",
+        "Le groupe accepte d’essayer un chien.",
+        "Après une pause, un chien change le plan.",
+        "Maya montre le résultat près d’une chemise.",
+        "Omar félicite tout le monde pour une chaise.",
+        "Avant la nuit, ils rangent un chapeau."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Théo organise une activité à la gare.",
+        "Liam apporte un chapeau dès le début.",
+        "Sur la table, on voit un chapeau et une chaussure.",
+        "Les enfants touchent une chaussure à tour de rôle.",
+        "Théo explique le mot lié à un chocolat.",
+        "Liam dessine un chocolat au tableau.",
+        "Tout le monde écoute l’histoire d’un chapeau.",
+        "Après l’exercice, ils rangent une chaussure.",
+        "Théo note encore un chat dans le cahier.",
+        "Plus tard, Adam revient à la bibliothèque.",
+        "Maya rapporte un chocolat une seconde fois.",
+        "Ils vérifient encore un chocolat ensemble.",
+        "Adam explique une nouvelle idée sur une chaussure.",
+        "Maya écoute et regarde une chaussure.",
+        "Le groupe accepte d’essayer un chapeau.",
+        "Après une pause, un chapeau change le plan.",
+        "Adam montre le résultat près d’un chocolat.",
+        "Maya félicite tout le monde pour une chaussure.",
+        "Avant la nuit, ils rangent une écharpe."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le voisin met la poche, parce que Charles est chez Chloé."
+      "sentences": [
+        "Il pleut un peu à la gare.",
+        "Sofia protège une branche sous le bras.",
+        "Inès tient un chocolat contre lui.",
+        "Ils entrent et posent une branche.",
+        "Sofia sèche un chocolat avec un chiffon.",
+        "Inès prépare une chemise pour attendre.",
+        "Ils parlent calmement d’une branche.",
+        "Quand la pluie cesse, une chemise est prêt.",
+        "Ils repartent avec une chaussure.",
+        "Plus tard, Léa revient à la gare.",
+        "Sara rapporte une chaussure une seconde fois.",
+        "Ils vérifient encore une chaussure ensemble.",
+        "Léa explique une nouvelle idée sur une chemise.",
+        "Sara écoute et regarde une chemise.",
+        "Le groupe accepte d’essayer un chat.",
+        "Après une pause, un chat change le plan.",
+        "Léa montre le résultat près d’une chaussure.",
+        "Sara félicite tout le monde pour une chemise.",
+        "Avant la nuit, ils rangent un chapeau."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Léa et Inès révisent à la gare.",
+        "La leçon commence avec une branche.",
+        "Léa lit une phrase sur une branche.",
+        "Inès répète le mot un chien.",
+        "Ils écrivent un chien dans le cahier.",
+        "Une erreur apparaît près d’une chemise.",
+        "Léa corrige et montre une chemise.",
+        "Inès récite encore la phrase d’une branche.",
+        "Avant de partir, ils relisent un chocolat.",
+        "Plus tard, Liam revient au café.",
+        "Maya rapporte une chaussure une seconde fois.",
+        "Ils vérifient encore une chaussure ensemble.",
+        "Liam explique une nouvelle idée sur un chocolat.",
+        "Maya écoute et regarde un chocolat.",
+        "Le groupe accepte d’essayer une chemise.",
+        "Après une pause, une chemise change le plan.",
+        "Liam montre le résultat près d’une chaussure.",
+        "Maya félicite tout le monde pour un chocolat.",
+        "Avant la nuit, ils rangent une chaise."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Richard visite le torchon avec Chloé, et Chloé est chez Charles."
+      "sentences": [
+        "Adam visite un stand au marché.",
+        "Omar désigne un chat du doigt.",
+        "Le guide présente un chat clairement.",
+        "Adam photographie une chaussure.",
+        "Ils posent une question sur une chaussure.",
+        "Omar note le détail d’un chocolat.",
+        "Avant de partir, Adam achète un chocolat.",
+        "Omar range un chocolat dans le sac.",
+        "Sur le chemin du retour, ils parlent d’un chien.",
+        "Plus tard, Inès revient dans la cuisine.",
+        "Léa rapporte un chocolat une seconde fois.",
+        "Ils vérifient encore un chocolat ensemble.",
+        "Inès explique une nouvelle idée sur une branche.",
+        "Léa écoute et regarde une branche.",
+        "Le groupe accepte d’essayer un chien.",
+        "Après une pause, un chien change le plan.",
+        "Inès montre le résultat près d’un chocolat.",
+        "Léa félicite tout le monde pour une branche.",
+        "Avant la nuit, ils rangent un chapeau."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Sofia prépare une surprise à la gare.",
+        "Amira cache un chien derrière la porte.",
+        "Tout le monde cherche un chien.",
+        "Sofia donne un indice avec un chapeau.",
+        "Amira trouve enfin un chien.",
+        "Ils ouvrent aussi une chaise.",
+        "Les amis rient autour d’un chapeau.",
+        "Sofia partage une chaise avec le groupe.",
+        "La fête se termine près d’une chaussure.",
+        "Plus tard, Léa revient dans la cour.",
+        "Hugo rapporte un chapeau une seconde fois.",
+        "Ils vérifient encore un chapeau ensemble.",
+        "Léa explique une nouvelle idée sur une écharpe.",
+        "Hugo écoute et regarde une écharpe.",
+        "Le groupe accepte d’essayer une chaise.",
+        "Après une pause, une chaise change le plan.",
+        "Léa montre le résultat près d’un chapeau.",
+        "Hugo félicite tout le monde pour une écharpe.",
+        "Avant la nuit, ils rangent un chocolat."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Charles voit la vache, parce que Charles est chez Chloé."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le copain porte une écharpe, et Chloé est chez Charles."
+      "sentences": [
+        "Théo commence la journée à la gare.",
+        "Sara apporte un chien pour le groupe.",
+        "Ils placent un chien au centre.",
+        "Théo décrit un chien à voix haute.",
+        "Sara ajoute un chapeau à côté.",
+        "Le groupe compare un chien et un chapeau.",
+        "Ensuite, chacun touche un chocolat.",
+        "Théo résume le rôle d’un chocolat.",
+        "Pour finir, Sara range une chemise.",
+        "Plus tard, Yanis revient au marché.",
+        "Liam rapporte une chaise une seconde fois.",
+        "Ils vérifient encore une chaise ensemble.",
+        "Yanis explique une nouvelle idée sur un chapeau.",
+        "Liam écoute et regarde un chapeau.",
+        "Le groupe accepte d’essayer une branche.",
+        "Après une pause, une branche change le plan.",
+        "Yanis montre le résultat près d’une chaise.",
+        "Liam félicite tout le monde pour un chapeau.",
+        "Avant la nuit, ils rangent un chien."
+      ]
     }
   ]
 }

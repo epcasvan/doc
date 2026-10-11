@@ -3108,128 +3108,388 @@
       ]
     }
   ],
-  "type12": [
-    {
-      "level": "a1",
-      "sentence": "Le collègue plante un arbre."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le voisin cherche la barre."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le médecin achète le beurre."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le facteur prend le car."
-    },
+  "type12Stories": [
     {
       "level": "a2",
-      "sentence": "Ce matin, le maître écoute la guerre près du parc."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le bébé prépare un hiver dans la rue."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, la professeure pose le livre avec Marie."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, la directrice attend le mardi dans la rue."
+      "sentences": [
+        "Adam et Inès se retrouvent à la bibliothèque.",
+        "Adam apporte une trousse dans un sac.",
+        "Inès pose un livre sur la table.",
+        "Ils parlent d’abord d’une trousse.",
+        "Puis Inès montre une porte à Adam.",
+        "Tout à coup, une trousse tombe par terre.",
+        "Adam ramasse une trousse et rit.",
+        "Inès range un livre et une porte.",
+        "Avant de partir, ils vérifient encore un riz."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la grand-mère choisit le riz, parce que Roger est très content."
+      "sentences": [
+        "Ce matin, Hugo travaille dans le jardin.",
+        "Il prépare un arbre avec soin.",
+        "Noah arrive et regarde un arbre.",
+        "Ensemble, ils ajoutent un verre.",
+        "Hugo explique l’usage d’un verre.",
+        "Noah propose aussi un riz.",
+        "Le travail avance grâce à un arbre.",
+        "Ils placent un riz près d’un verre.",
+        "À la fin, une trousse est prêt pour demain."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Liam fait des courses à l’école.",
+        "Dans le panier, il y a déjà un croissant.",
+        "Maya choisit une trousse juste à côté.",
+        "Ils comparent un croissant et une trousse.",
+        "Le vendeur parle d’un livre.",
+        "Liam prend aussi un livre.",
+        "Maya paie et range un croissant.",
+        "Sur le chemin, ils discutent d’une trousse.",
+        "À la maison, ils sortent encore un arbre."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Roger prend le robot avec Marie, et Marie est très contente."
+      "sentences": [
+        "Sofia lit un message dans la cour.",
+        "Maya doit apporter une trousse rapidement.",
+        "Sofia part avec un riz.",
+        "Ils se croisent près d’un arbre.",
+        "Maya donne une trousse à Sofia.",
+        "Sofia vérifie une trousse calmement.",
+        "Ensuite, ils déposent un riz.",
+        "Une amie demande des nouvelles d’un arbre.",
+        "Plus tard, un beurre termine la journée."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Amira organise une activité au marché.",
+        "Sofia apporte un beurre dès le début.",
+        "Sur la table, on voit un beurre et un verre.",
+        "Les enfants touchent un verre à tour de rôle.",
+        "Amira explique le mot lié à un arbre.",
+        "Sofia dessine un arbre au tableau.",
+        "Tout le monde écoute l’histoire d’un beurre.",
+        "Après l’exercice, ils rangent un verre.",
+        "Amira note encore un croissant dans le cahier."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le facteur regarde la rose, et Marie est très contente."
+      "sentences": [
+        "Il pleut un peu dans la cuisine.",
+        "Yanis protège un arbre sous le bras.",
+        "Sara tient un beurre contre lui.",
+        "Ils entrent et posent un arbre.",
+        "Yanis sèche un beurre avec un chiffon.",
+        "Sara prépare un croissant pour attendre.",
+        "Ils parlent calmement d’un arbre.",
+        "Quand la pluie cesse, un croissant est prêt.",
+        "Ils repartent avec une porte."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Sara et Léa révisent au parc.",
+        "La leçon commence avec un livre.",
+        "Sara lit une phrase sur un livre.",
+        "Léa répète le mot une porte.",
+        "Ils écrivent une porte dans le cahier.",
+        "Une erreur apparaît près d’un croissant.",
+        "Sara corrige et montre un croissant.",
+        "Léa récite encore la phrase d’un livre.",
+        "Avant de partir, ils relisent un arbre."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la voisine cherche le rouge, et Marie est très contente."
+      "sentences": [
+        "Sara visite un stand au magasin.",
+        "Inès désigne une porte du doigt.",
+        "Le guide présente une porte clairement.",
+        "Sara photographie un verre.",
+        "Ils posent une question sur un verre.",
+        "Inès note le détail d’un beurre.",
+        "Avant de partir, Sara achète un beurre.",
+        "Inès range un beurre dans le sac.",
+        "Sur le chemin du retour, ils parlent d’un livre."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Nora prépare une surprise dans le jardin.",
+        "Emma cache un arbre derrière la porte.",
+        "Tout le monde cherche un arbre.",
+        "Nora donne un indice avec un beurre.",
+        "Emma trouve enfin un arbre.",
+        "Ils ouvrent aussi un verre.",
+        "Les amis rient autour d’un beurre.",
+        "Nora partage un verre avec le groupe.",
+        "La fête se termine près d’une porte."
+      ]
+    },
+    {
+      "level": "b1",
+      "sentences": [
+        "Yanis commence la journée dans la cour.",
+        "Sofia apporte une trousse pour le groupe.",
+        "Ils placent une trousse au centre.",
+        "Yanis décrit une trousse à voix haute.",
+        "Sofia ajoute un croissant à côté.",
+        "Le groupe compare une trousse et un croissant.",
+        "Ensuite, chacun touche une porte.",
+        "Yanis résume le rôle d’une porte.",
+        "Pour finir, Sofia range un verre."
+      ]
     }
   ],
-  "type14": [
-    {
-      "level": "a1",
-      "sentence": "La professeure range le chanteur."
-    },
-    {
-      "level": "a1",
-      "sentence": "La directrice joue dans le cour."
-    },
-    {
-      "level": "a1",
-      "sentence": "Marie prépare le croissant bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le cousin prend le cuir."
-    },
-    {
-      "level": "a1",
-      "sentence": "Pierre mange le fruit bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La maîtresse s’occupe du frère."
-    },
+  "type14Stories": [
     {
       "level": "a2",
-      "sentence": "Ce matin, le médecin préfère la mer avec Marie."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la copine mesure le mur avec Roger."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la fille remercie la mère avec Marie."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le musicien ferme la porte dans la rue."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la jardinière console le père dans la rue."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, la tante regarde le rat avec Marie."
+      "sentences": [
+        "Liam et Noah se retrouvent à la gare.",
+        "Liam apporte un croissant dans un sac.",
+        "Noah pose un verre sur la table.",
+        "Ils parlent d’abord d’un croissant.",
+        "Puis Noah montre une trousse à Liam.",
+        "Tout à coup, un croissant tombe par terre.",
+        "Liam ramasse un croissant et rit.",
+        "Noah range un verre et une trousse.",
+        "Avant de partir, ils vérifient encore un riz.",
+        "Plus tard, Inès revient à l’école.",
+        "Sara rapporte un riz une seconde fois.",
+        "Ils vérifient encore un riz ensemble.",
+        "Inès explique une nouvelle idée sur un verre.",
+        "Sara écoute et regarde un verre.",
+        "Le groupe accepte d’essayer une trousse.",
+        "Après une pause, une trousse change le plan.",
+        "Inès montre le résultat près d’un riz.",
+        "Sara félicite tout le monde pour un verre.",
+        "Avant la nuit, ils rangent un beurre."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le musicien trouve le roux, parce que Roger est très content."
+      "sentences": [
+        "Ce matin, Emma travaille dans la cour.",
+        "Il prépare un arbre avec soin.",
+        "Inès arrive et regarde un arbre.",
+        "Ensemble, ils ajoutent une porte.",
+        "Emma explique l’usage d’une porte.",
+        "Inès propose aussi une trousse.",
+        "Le travail avance grâce à un arbre.",
+        "Ils placent une trousse près d’une porte.",
+        "À la fin, un verre est prêt pour demain.",
+        "Plus tard, Karim revient au café.",
+        "Amira rapporte un beurre une seconde fois.",
+        "Ils vérifient encore un beurre ensemble.",
+        "Karim explique une nouvelle idée sur une trousse.",
+        "Amira écoute et regarde une trousse.",
+        "Le groupe accepte d’essayer un croissant.",
+        "Après une pause, un croissant change le plan.",
+        "Karim montre le résultat près d’un beurre.",
+        "Amira félicite tout le monde pour une trousse.",
+        "Avant la nuit, ils rangent un verre."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Hugo fait des courses au parc.",
+        "Dans le panier, il y a déjà une porte.",
+        "Inès choisit un beurre juste à côté.",
+        "Ils comparent une porte et un beurre.",
+        "Le vendeur parle d’une trousse.",
+        "Hugo prend aussi une trousse.",
+        "Inès paie et range une porte.",
+        "Sur le chemin, ils discutent d’un beurre.",
+        "À la maison, ils sortent encore un verre.",
+        "Plus tard, Omar revient au parc.",
+        "Liam rapporte un croissant une seconde fois.",
+        "Ils vérifient encore un croissant ensemble.",
+        "Omar explique une nouvelle idée sur une porte.",
+        "Liam écoute et regarde une porte.",
+        "Le groupe accepte d’essayer un verre.",
+        "Après une pause, un verre change le plan.",
+        "Omar montre le résultat près d’un croissant.",
+        "Liam félicite tout le monde pour une porte.",
+        "Avant la nuit, ils rangent un livre."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le maître traverse la rue, et Marie est très contente."
+      "sentences": [
+        "Liam lit un message au magasin.",
+        "Sara doit apporter un verre rapidement.",
+        "Liam part avec une porte.",
+        "Ils se croisent près d’un arbre.",
+        "Sara donne un verre à Liam.",
+        "Liam vérifie un verre calmement.",
+        "Ensuite, ils déposent une porte.",
+        "Une amie demande des nouvelles d’un arbre.",
+        "Plus tard, un livre termine la journée.",
+        "Plus tard, Sofia revient à la bibliothèque.",
+        "Liam rapporte une porte une seconde fois.",
+        "Ils vérifient encore une porte ensemble.",
+        "Sofia explique une nouvelle idée sur un croissant.",
+        "Liam écoute et regarde un croissant.",
+        "Le groupe accepte d’essayer un beurre.",
+        "Après une pause, un beurre change le plan.",
+        "Sofia montre le résultat près d’une porte.",
+        "Liam félicite tout le monde pour un croissant.",
+        "Avant la nuit, ils rangent un arbre."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Karim organise une activité au marché.",
+        "Amira apporte un verre dès le début.",
+        "Sur la table, on voit un verre et un arbre.",
+        "Les enfants touchent un arbre à tour de rôle.",
+        "Karim explique le mot lié à une porte.",
+        "Amira dessine une porte au tableau.",
+        "Tout le monde écoute l’histoire d’un verre.",
+        "Après l’exercice, ils rangent un arbre.",
+        "Karim note encore un croissant dans le cahier.",
+        "Plus tard, Amira revient au magasin.",
+        "Yanis rapporte un riz une seconde fois.",
+        "Ils vérifient encore un riz ensemble.",
+        "Amira explique une nouvelle idée sur un beurre.",
+        "Yanis écoute et regarde un beurre.",
+        "Le groupe accepte d’essayer un arbre.",
+        "Après une pause, un arbre change le plan.",
+        "Amira montre le résultat près d’un riz.",
+        "Yanis félicite tout le monde pour un beurre.",
+        "Avant la nuit, ils rangent une trousse."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce soir, quand la collègue invite la sœur, et Marie est très contente."
+      "sentences": [
+        "Il pleut un peu au café.",
+        "Amira protège un arbre sous le bras.",
+        "Sara tient un beurre contre lui.",
+        "Ils entrent et posent un arbre.",
+        "Amira sèche un beurre avec un chiffon.",
+        "Sara prépare un croissant pour attendre.",
+        "Ils parlent calmement d’un arbre.",
+        "Quand la pluie cesse, un croissant est prêt.",
+        "Ils repartent avec un livre.",
+        "Plus tard, Maya revient dans la cuisine.",
+        "Emma rapporte un riz une seconde fois.",
+        "Ils vérifient encore un riz ensemble.",
+        "Maya explique une nouvelle idée sur un beurre.",
+        "Emma écoute et regarde un beurre.",
+        "Le groupe accepte d’essayer un livre.",
+        "Après une pause, un livre change le plan.",
+        "Maya montre le résultat près d’un riz.",
+        "Emma félicite tout le monde pour un beurre.",
+        "Avant la nuit, ils rangent une trousse."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Sofia et Inès révisent dans la cour.",
+        "La leçon commence avec une trousse.",
+        "Sofia lit une phrase sur une trousse.",
+        "Inès répète le mot un verre.",
+        "Ils écrivent un verre dans le cahier.",
+        "Une erreur apparaît près d’un beurre.",
+        "Sofia corrige et montre un beurre.",
+        "Inès récite encore la phrase d’une trousse.",
+        "Avant de partir, ils relisent un arbre.",
+        "Plus tard, Karim revient dans la cour.",
+        "Sofia rapporte un beurre une seconde fois.",
+        "Ils vérifient encore un beurre ensemble.",
+        "Karim explique une nouvelle idée sur une trousse.",
+        "Sofia écoute et regarde une trousse.",
+        "Le groupe accepte d’essayer un croissant.",
+        "Après une pause, un croissant change le plan.",
+        "Karim montre le résultat près d’un beurre.",
+        "Sofia félicite tout le monde pour une trousse.",
+        "Avant la nuit, ils rangent un verre."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le voisin plante la terre, parce que Roger est très content."
+      "sentences": [
+        "Sara visite un stand dans la cour.",
+        "Léa désigne une porte du doigt.",
+        "Le guide présente une porte clairement.",
+        "Sara photographie un beurre.",
+        "Ils posent une question sur un beurre.",
+        "Léa note le détail d’une trousse.",
+        "Avant de partir, Sara achète une trousse.",
+        "Léa range une trousse dans le sac.",
+        "Sur le chemin du retour, ils parlent d’un croissant.",
+        "Plus tard, Sofia revient au magasin.",
+        "Adam rapporte un livre une seconde fois.",
+        "Ils vérifient encore un livre ensemble.",
+        "Sofia explique une nouvelle idée sur une porte.",
+        "Adam écoute et regarde une porte.",
+        "Le groupe accepte d’essayer un croissant.",
+        "Après une pause, un croissant change le plan.",
+        "Sofia montre le résultat près d’un livre.",
+        "Adam félicite tout le monde pour une porte.",
+        "Avant la nuit, ils rangent un verre."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Omar prépare une surprise dans le jardin.",
+        "Hugo cache un verre derrière la porte.",
+        "Tout le monde cherche un verre.",
+        "Omar donne un indice avec un arbre.",
+        "Hugo trouve enfin un verre.",
+        "Ils ouvrent aussi un beurre.",
+        "Les amis rient autour d’un arbre.",
+        "Omar partage un beurre avec le groupe.",
+        "La fête se termine près d’un riz.",
+        "Plus tard, Emma revient dans le jardin.",
+        "Nora rapporte un beurre une seconde fois.",
+        "Ils vérifient encore un beurre ensemble.",
+        "Emma explique une nouvelle idée sur un verre.",
+        "Nora écoute et regarde un verre.",
+        "Le groupe accepte d’essayer une trousse.",
+        "Après une pause, une trousse change le plan.",
+        "Emma montre le résultat près d’un beurre.",
+        "Nora félicite tout le monde pour un verre.",
+        "Avant la nuit, ils rangent un livre."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le grand-père embarque dans le train, parce que Roger est très content."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce soir, quand la cousine attend le tram, et Marie est très contente."
+      "sentences": [
+        "Noah commence la journée au marché.",
+        "Amira apporte un arbre pour le groupe.",
+        "Ils placent un arbre au centre.",
+        "Noah décrit un arbre à voix haute.",
+        "Amira ajoute un livre à côté.",
+        "Le groupe compare un arbre et un livre.",
+        "Ensuite, chacun touche un croissant.",
+        "Noah résume le rôle d’un croissant.",
+        "Pour finir, Amira range un verre.",
+        "Plus tard, Omar revient dans la cuisine.",
+        "Sofia rapporte un riz une seconde fois.",
+        "Ils vérifient encore un riz ensemble.",
+        "Omar explique une nouvelle idée sur une porte.",
+        "Sofia écoute et regarde une porte.",
+        "Le groupe accepte d’essayer un croissant.",
+        "Après une pause, un croissant change le plan.",
+        "Omar montre le résultat près d’un riz.",
+        "Sofia félicite tout le monde pour une porte.",
+        "Avant la nuit, ils rangent un arbre."
+      ]
     }
   ]
 }

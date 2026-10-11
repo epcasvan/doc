@@ -2166,128 +2166,388 @@
       ]
     }
   ],
-  "type12": [
-    {
-      "level": "a1",
-      "sentence": "Le musicien admire un animal."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le copain note une année."
-    },
-    {
-      "level": "a1",
-      "sentence": "La factrice aime la banane."
-    },
-    {
-      "level": "a1",
-      "sentence": "La grand-mère salue une bonne."
-    },
+  "type12Stories": [
     {
       "level": "a2",
-      "sentence": "Avant le repas, la cuisinière plante la lune avec Nina."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le garçon cherche la mine avec Nina."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la sœur voit la nature non loin."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le jardinier lave le nez dans le jardin."
+      "sentences": [
+        "Yanis et Emma se retrouvent au café.",
+        "Yanis apporte une banane dans un sac.",
+        "Emma pose un chien sur la table.",
+        "Ils parlent d’abord d’une banane.",
+        "Puis Emma montre un ballon à Yanis.",
+        "Tout à coup, une banane tombe par terre.",
+        "Yanis ramasse une banane et rit.",
+        "Emma range un chien et un ballon.",
+        "Avant de partir, ils vérifient encore un citron."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le copain choisit la prune, parce que Anne est contente aussi."
+      "sentences": [
+        "Ce matin, Omar travaille à la gare.",
+        "Il prépare un bonbon avec soin.",
+        "Maya arrive et regarde un bonbon.",
+        "Ensemble, ils ajoutent un carton.",
+        "Omar explique l’usage d’un carton.",
+        "Maya propose aussi un ballon.",
+        "Le travail avance grâce à un bonbon.",
+        "Ils placent un ballon près d’un carton.",
+        "À la fin, un citron est prêt pour demain."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Maya fait des courses dans la cour.",
+        "Dans le panier, il y a déjà un citron.",
+        "Yanis choisit un ballon juste à côté.",
+        "Ils comparent un citron et un ballon.",
+        "Le vendeur parle d’un concombre.",
+        "Maya prend aussi un concombre.",
+        "Yanis paie et range un citron.",
+        "Sur le chemin, ils discutent d’un ballon.",
+        "À la maison, ils sortent encore un bonnet."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Anne attend la semaine avec Nina, et Nina est très contente."
+      "sentences": [
+        "Karim lit un message au café.",
+        "Yanis doit apporter un chien rapidement.",
+        "Karim part avec un bonnet.",
+        "Ils se croisent près d’un citron.",
+        "Yanis donne un chien à Karim.",
+        "Karim vérifie un chien calmement.",
+        "Ensuite, ils déposent un bonnet.",
+        "Une amie demande des nouvelles d’un citron.",
+        "Plus tard, un concombre termine la journée."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Inès organise une activité à la gare.",
+        "Sofia apporte un citron dès le début.",
+        "Sur la table, on voit un citron et un carton.",
+        "Les enfants touchent un carton à tour de rôle.",
+        "Inès explique le mot lié à un canard.",
+        "Sofia dessine un canard au tableau.",
+        "Tout le monde écoute l’histoire d’un citron.",
+        "Après l’exercice, ils rangent un carton.",
+        "Inès note encore une banane dans le cahier."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la grand-mère regarde un animal, et Nina est très contente."
+      "sentences": [
+        "Il pleut un peu dans le jardin.",
+        "Sofia protège un chien sous le bras.",
+        "Léa tient un bonnet contre lui.",
+        "Ils entrent et posent un chien.",
+        "Sofia sèche un bonnet avec un chiffon.",
+        "Léa prépare un concombre pour attendre.",
+        "Ils parlent calmement d’un chien.",
+        "Quand la pluie cesse, un concombre est prêt.",
+        "Ils repartent avec une balance."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Emma et Nora révisent à la gare.",
+        "La leçon commence avec une banane.",
+        "Emma lit une phrase sur une banane.",
+        "Nora répète le mot un canard.",
+        "Ils écrivent un canard dans le cahier.",
+        "Une erreur apparaît près d’un chien.",
+        "Emma corrige et montre un chien.",
+        "Nora récite encore la phrase d’une banane.",
+        "Avant de partir, ils relisent un bonnet."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le collègue choisit une année, et Nina est très contente."
+      "sentences": [
+        "Hugo visite un stand dans le jardin.",
+        "Nora désigne un chien du doigt.",
+        "Le guide présente un chien clairement.",
+        "Hugo photographie un bonnet.",
+        "Ils posent une question sur un bonnet.",
+        "Nora note le détail d’un concombre.",
+        "Avant de partir, Hugo achète un concombre.",
+        "Nora range un concombre dans le sac.",
+        "Sur le chemin du retour, ils parlent d’une branche."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Karim prépare une surprise au marché.",
+        "Léa cache un carton derrière la porte.",
+        "Tout le monde cherche un carton.",
+        "Karim donne un indice avec une chaîne.",
+        "Léa trouve enfin un carton.",
+        "Ils ouvrent aussi une banane.",
+        "Les amis rient autour d’une chaîne.",
+        "Karim partage une banane avec le groupe.",
+        "La fête se termine près d’un ballon."
+      ]
+    },
+    {
+      "level": "b1",
+      "sentences": [
+        "Karim commence la journée à la bibliothèque.",
+        "Liam apporte un ballon pour le groupe.",
+        "Ils placent un ballon au centre.",
+        "Karim décrit un ballon à voix haute.",
+        "Liam ajoute une balance à côté.",
+        "Le groupe compare un ballon et une balance.",
+        "Ensuite, chacun touche un carton.",
+        "Karim résume le rôle d’un carton.",
+        "Pour finir, Liam range une branche."
+      ]
     }
   ],
-  "type14": [
-    {
-      "level": "a1",
-      "sentence": "La jardinière oublie la canne."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le frère nettoie la cuisine."
-    },
-    {
-      "level": "a1",
-      "sentence": "Nina arrive avant le dîner."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le grand-père soigne le genou."
-    },
-    {
-      "level": "a1",
-      "sentence": "Fernand achète la laine bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le médecin cherche la lanière."
-    },
+  "type14Stories": [
     {
       "level": "a2",
-      "sentence": "Ce matin, la factrice plante le nid avec Nina."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Fernand paie la note non loin."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la maman voit le nuage non loin."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le collègue range le nuit dans le jardin."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le garçon pose la panne avec Anne."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le bébé regarde le poney avec Nina."
+      "sentences": [
+        "Adam et Omar se retrouvent à la bibliothèque.",
+        "Adam apporte un citron dans un sac.",
+        "Omar pose un bonnet sur la table.",
+        "Ils parlent d’abord d’un citron.",
+        "Puis Omar montre un carton à Adam.",
+        "Tout à coup, un citron tombe par terre.",
+        "Adam ramasse un citron et rit.",
+        "Omar range un bonnet et un carton.",
+        "Avant de partir, ils vérifient encore un ballon.",
+        "Plus tard, Théo revient au café.",
+        "Noah rapporte un bonnet une seconde fois.",
+        "Ils vérifient encore un bonnet ensemble.",
+        "Théo explique une nouvelle idée sur un carton.",
+        "Noah écoute et regarde un carton.",
+        "Le groupe accepte d’essayer un bonbon.",
+        "Après une pause, un bonbon change le plan.",
+        "Théo montre le résultat près d’un bonnet.",
+        "Noah félicite tout le monde pour un carton.",
+        "Avant la nuit, ils rangent une banane."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le collègue aime la banane, parce que Anne est contente aussi."
+      "sentences": [
+        "Ce matin, Karim travaille au magasin.",
+        "Il prépare un chien avec soin.",
+        "Maya arrive et regarde un chien.",
+        "Ensemble, ils ajoutent un bonbon.",
+        "Karim explique l’usage d’un bonbon.",
+        "Maya propose aussi une balance.",
+        "Le travail avance grâce à un chien.",
+        "Ils placent une balance près d’un bonbon.",
+        "À la fin, une banane est prêt pour demain.",
+        "Plus tard, Théo revient dans la cuisine.",
+        "Omar rapporte un chien une seconde fois.",
+        "Ils vérifient encore un chien ensemble.",
+        "Théo explique une nouvelle idée sur un ballon.",
+        "Omar écoute et regarde un ballon.",
+        "Le groupe accepte d’essayer un concombre.",
+        "Après une pause, un concombre change le plan.",
+        "Théo montre le résultat près d’un chien.",
+        "Omar félicite tout le monde pour un ballon.",
+        "Avant la nuit, ils rangent un citron."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Inès fait des courses au marché.",
+        "Dans le panier, il y a déjà un chien.",
+        "Hugo choisit une balance juste à côté.",
+        "Ils comparent un chien et une balance.",
+        "Le vendeur parle d’un bonnet.",
+        "Inès prend aussi un bonnet.",
+        "Hugo paie et range un chien.",
+        "Sur le chemin, ils discutent d’une balance.",
+        "À la maison, ils sortent encore un citron.",
+        "Plus tard, Amira revient au parc.",
+        "Yanis rapporte une branche une seconde fois.",
+        "Ils vérifient encore une branche ensemble.",
+        "Amira explique une nouvelle idée sur une balance.",
+        "Yanis écoute et regarde une balance.",
+        "Le groupe accepte d’essayer une chaîne.",
+        "Après une pause, une chaîne change le plan.",
+        "Amira montre le résultat près d’une branche.",
+        "Yanis félicite tout le monde pour une balance.",
+        "Avant la nuit, ils rangent un ballon."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la factrice remercie une bonne, et Nina est très contente."
+      "sentences": [
+        "Hugo lit un message à la gare.",
+        "Sara doit apporter un concombre rapidement.",
+        "Hugo part avec un chien.",
+        "Ils se croisent près d’un citron.",
+        "Sara donne un concombre à Hugo.",
+        "Hugo vérifie un concombre calmement.",
+        "Ensuite, ils déposent un chien.",
+        "Une amie demande des nouvelles d’un citron.",
+        "Plus tard, un canard termine la journée.",
+        "Plus tard, Adam revient à la bibliothèque.",
+        "Hugo rapporte un bonbon une seconde fois.",
+        "Ils vérifient encore un bonbon ensemble.",
+        "Adam explique une nouvelle idée sur un carton.",
+        "Hugo écoute et regarde un carton.",
+        "Le groupe accepte d’essayer un canard.",
+        "Après une pause, un canard change le plan.",
+        "Adam montre le résultat près d’un bonbon.",
+        "Hugo félicite tout le monde pour un carton.",
+        "Avant la nuit, ils rangent un citron."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Emma organise une activité au parc.",
+        "Adam apporte un concombre dès le début.",
+        "Sur la table, on voit un concombre et un bonnet.",
+        "Les enfants touchent un bonnet à tour de rôle.",
+        "Emma explique le mot lié à un carton.",
+        "Adam dessine un carton au tableau.",
+        "Tout le monde écoute l’histoire d’un concombre.",
+        "Après l’exercice, ils rangent un bonnet.",
+        "Emma note encore une branche dans le cahier.",
+        "Plus tard, Sara revient à la gare.",
+        "Maya rapporte un bonnet une seconde fois.",
+        "Ils vérifient encore un bonnet ensemble.",
+        "Sara explique une nouvelle idée sur un canard.",
+        "Maya écoute et regarde un canard.",
+        "Le groupe accepte d’essayer un bonbon.",
+        "Après une pause, un bonbon change le plan.",
+        "Sara montre le résultat près d’un bonnet.",
+        "Maya félicite tout le monde pour un canard.",
+        "Avant la nuit, ils rangent une chaîne."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la voisine range la canne, et Nina est très contente."
+      "sentences": [
+        "Il pleut un peu à l’école.",
+        "Sara protège un canard sous le bras.",
+        "Omar tient une banane contre lui.",
+        "Ils entrent et posent un canard.",
+        "Sara sèche une banane avec un chiffon.",
+        "Omar prépare un concombre pour attendre.",
+        "Ils parlent calmement d’un canard.",
+        "Quand la pluie cesse, un concombre est prêt.",
+        "Ils repartent avec un bonbon.",
+        "Plus tard, Liam revient à l’école.",
+        "Omar rapporte un canard une seconde fois.",
+        "Ils vérifient encore un canard ensemble.",
+        "Liam explique une nouvelle idée sur un concombre.",
+        "Omar écoute et regarde un concombre.",
+        "Le groupe accepte d’essayer une chaîne.",
+        "Après une pause, une chaîne change le plan.",
+        "Liam montre le résultat près d’un canard.",
+        "Omar félicite tout le monde pour un concombre.",
+        "Avant la nuit, ils rangent une balance."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Léa et Hugo révisent au magasin.",
+        "La leçon commence avec une banane.",
+        "Léa lit une phrase sur une banane.",
+        "Hugo répète le mot un chien.",
+        "Ils écrivent un chien dans le cahier.",
+        "Une erreur apparaît près d’une balance.",
+        "Léa corrige et montre une balance.",
+        "Hugo récite encore la phrase d’une banane.",
+        "Avant de partir, ils relisent un bonnet.",
+        "Plus tard, Amira revient à la gare.",
+        "Léa rapporte un citron une seconde fois.",
+        "Ils vérifient encore un citron ensemble.",
+        "Amira explique une nouvelle idée sur un ballon.",
+        "Léa écoute et regarde un ballon.",
+        "Le groupe accepte d’essayer une branche.",
+        "Après une pause, une branche change le plan.",
+        "Amira montre le résultat près d’un citron.",
+        "Léa félicite tout le monde pour un ballon.",
+        "Avant la nuit, ils rangent une banane."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la sœur nettoie la cuisine, et Nina est très contente."
+      "sentences": [
+        "Sofia visite un stand au parc.",
+        "Yanis désigne un carton du doigt.",
+        "Le guide présente un carton clairement.",
+        "Sofia photographie une balance.",
+        "Ils posent une question sur une balance.",
+        "Yanis note le détail d’un chien.",
+        "Avant de partir, Sofia achète un chien.",
+        "Yanis range un chien dans le sac.",
+        "Sur le chemin du retour, ils parlent d’un bonbon.",
+        "Plus tard, Emma revient dans la cuisine.",
+        "Inès rapporte un citron une seconde fois.",
+        "Ils vérifient encore un citron ensemble.",
+        "Emma explique une nouvelle idée sur un concombre.",
+        "Inès écoute et regarde un concombre.",
+        "Le groupe accepte d’essayer une branche.",
+        "Après une pause, une branche change le plan.",
+        "Emma montre le résultat près d’un citron.",
+        "Inès félicite tout le monde pour un concombre.",
+        "Avant la nuit, ils rangent une balance."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Sara prépare une surprise à la gare.",
+        "Yanis cache un citron derrière la porte.",
+        "Tout le monde cherche un citron.",
+        "Sara donne un indice avec un bonbon.",
+        "Yanis trouve enfin un citron.",
+        "Ils ouvrent aussi un chien.",
+        "Les amis rient autour d’un bonbon.",
+        "Sara partage un chien avec le groupe.",
+        "La fête se termine près d’un ballon.",
+        "Plus tard, Nora revient au café.",
+        "Sara rapporte une branche une seconde fois.",
+        "Ils vérifient encore une branche ensemble.",
+        "Nora explique une nouvelle idée sur un concombre.",
+        "Sara écoute et regarde un concombre.",
+        "Le groupe accepte d’essayer un canard.",
+        "Après une pause, un canard change le plan.",
+        "Nora montre le résultat près d’une branche.",
+        "Sara félicite tout le monde pour un concombre.",
+        "Avant la nuit, ils rangent une balance."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la factrice se couche après le dîner, et Nina est très contente."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le directeur touche le genou, et Nina est très contente."
+      "sentences": [
+        "Hugo commence la journée au marché.",
+        "Léa apporte un carton pour le groupe.",
+        "Ils placent un carton au centre.",
+        "Hugo décrit un carton à voix haute.",
+        "Léa ajoute une banane à côté.",
+        "Le groupe compare un carton et une banane.",
+        "Ensuite, chacun touche une balance.",
+        "Hugo résume le rôle d’une balance.",
+        "Pour finir, Léa range un ballon.",
+        "Plus tard, Omar revient à l’école.",
+        "Hugo rapporte un citron une seconde fois.",
+        "Ils vérifient encore un citron ensemble.",
+        "Omar explique une nouvelle idée sur un canard.",
+        "Hugo écoute et regarde un canard.",
+        "Le groupe accepte d’essayer une balance.",
+        "Après une pause, une balance change le plan.",
+        "Omar montre le résultat près d’un citron.",
+        "Hugo félicite tout le monde pour un canard.",
+        "Avant la nuit, ils rangent un chien."
+      ]
     }
   ]
 }

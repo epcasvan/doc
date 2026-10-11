@@ -2820,128 +2820,388 @@
       ]
     }
   ],
-  "type12": [
-    {
-      "level": "a1",
-      "sentence": "Une amie pense au cadeau dehors."
-    },
-    {
-      "level": "a1",
-      "sentence": "La copine visite la dalle avec Didier."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le boulanger admire la danse."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le papa prend le dard."
-    },
+  "type12Stories": [
     {
       "level": "a2",
-      "sentence": "Avant le repas, le voisin mange la dorade avec Didier."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le cuisinier regarde le dos dehors."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le facteur bricole la douche dans le jardin."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le médecin utilise le douleur devant David."
+      "sentences": [
+        "Sofia et Maya se retrouvent au café.",
+        "Sofia apporte une sandale dans un sac.",
+        "Maya pose un caddie sur la table.",
+        "Ils parlent d’abord d’une sandale.",
+        "Puis Maya montre une sandalette à Sofia.",
+        "Tout à coup, une sandale tombe par terre.",
+        "Sofia ramasse une sandale et rit.",
+        "Maya range un caddie et une sandalette.",
+        "Avant de partir, ils vérifient encore un drapeau."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la copine range le laid, et Didier est devant David."
+      "sentences": [
+        "Ce matin, Amira travaille dans la cour.",
+        "Il prépare un caddy avec soin.",
+        "Léa arrive et regarde un caddy.",
+        "Ensemble, ils ajoutent une sandalette.",
+        "Amira explique l’usage d’une sandalette.",
+        "Léa propose aussi une ardoise.",
+        "Le travail avance grâce à un caddy.",
+        "Ils placent une ardoise près d’une sandalette.",
+        "À la fin, un canard est prêt pour demain."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Emma fait des courses au marché.",
+        "Dans le panier, il y a déjà une ardoise.",
+        "Hugo choisit un canard juste à côté.",
+        "Ils comparent une ardoise et un canard.",
+        "Le vendeur parle d’un caddie.",
+        "Emma prend aussi un caddie.",
+        "Hugo paie et range une ardoise.",
+        "Sur le chemin, ils discutent d’un canard.",
+        "À la maison, ils sortent encore une sandalette."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la sœur aime le mardi, parce que David est devant aussi."
+      "sentences": [
+        "Inès lit un message à la bibliothèque.",
+        "Sofia doit apporter une salade rapidement.",
+        "Inès part avec un canard.",
+        "Ils se croisent près d’un caddie.",
+        "Sofia donne une salade à Inès.",
+        "Inès vérifie une salade calmement.",
+        "Ensuite, ils déposent un canard.",
+        "Une amie demande des nouvelles d’un caddie.",
+        "Plus tard, une sandale termine la journée."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Théo organise une activité au parc.",
+        "Sofia apporte une sandalette dès le début.",
+        "Sur la table, on voit une sandalette et une salade.",
+        "Les enfants touchent une salade à tour de rôle.",
+        "Théo explique le mot lié à une ardoise.",
+        "Sofia dessine une ardoise au tableau.",
+        "Tout le monde écoute l’histoire d’une sandalette.",
+        "Après l’exercice, ils rangent une salade.",
+        "Théo note encore un sandwich dans le cahier."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le papa apporte le pudding, et Didier est devant David."
+      "sentences": [
+        "Il pleut un peu dans le jardin.",
+        "Yanis protège un canard sous le bras.",
+        "Omar tient un drap contre lui.",
+        "Ils entrent et posent un canard.",
+        "Yanis sèche un drap avec un chiffon.",
+        "Omar prépare un caddie pour attendre.",
+        "Ils parlent calmement d’un canard.",
+        "Quand la pluie cesse, un caddie est prêt.",
+        "Ils repartent avec une ardoise."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Emma et Karim révisent à l’école.",
+        "La leçon commence avec un caddie.",
+        "Emma lit une phrase sur un caddie.",
+        "Karim répète le mot une salade.",
+        "Ils écrivent une salade dans le cahier.",
+        "Une erreur apparaît près d’une sandalette.",
+        "Emma corrige et montre une sandalette.",
+        "Karim récite encore la phrase d’un caddie.",
+        "Avant de partir, ils relisent un drapeau."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le collègue prend le radeau, et Didier est devant David."
+      "sentences": [
+        "Nora visite un stand au marché.",
+        "Sofia désigne un sandwich du doigt.",
+        "Le guide présente un sandwich clairement.",
+        "Nora photographie un drapeau.",
+        "Ils posent une question sur un drapeau.",
+        "Sofia note le détail d’un caddy.",
+        "Avant de partir, Nora achète un caddy.",
+        "Sofia range un caddy dans le sac.",
+        "Sur le chemin du retour, ils parlent d’un radio."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Karim prépare une surprise dans le jardin.",
+        "Emma cache un radio derrière la porte.",
+        "Tout le monde cherche un radio.",
+        "Karim donne un indice avec un drap.",
+        "Emma trouve enfin un radio.",
+        "Ils ouvrent aussi un caddy.",
+        "Les amis rient autour d’un drap.",
+        "Karim partage un caddy avec le groupe.",
+        "La fête se termine près d’un caddie."
+      ]
+    },
+    {
+      "level": "b1",
+      "sentences": [
+        "Amira commence la journée au café.",
+        "Inès apporte une ardoise pour le groupe.",
+        "Ils placent une ardoise au centre.",
+        "Amira décrit une ardoise à voix haute.",
+        "Inès ajoute une sandale à côté.",
+        "Le groupe compare une ardoise et une sandale.",
+        "Ensuite, chacun touche une salade.",
+        "Amira résume le rôle d’une salade.",
+        "Pour finir, Inès range un canard."
+      ]
     }
   ],
-  "type14": [
-    {
-      "level": "a1",
-      "sentence": "La jardinière soigne le dauphin."
-    },
-    {
-      "level": "a1",
-      "sentence": "La fille range la demande."
-    },
-    {
-      "level": "a1",
-      "sentence": "La maman prépare le dimanche dehors."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le bébé sert la dinde."
-    },
-    {
-      "level": "a1",
-      "sentence": "André peint le dodo bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le maître aime le domino avec Didier."
-    },
+  "type14Stories": [
     {
       "level": "a2",
-      "sentence": "Ce matin, la cuisinière prend le doux avec Didier."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le directeur choisit la douzaine dehors."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le jardinier aime le dragon dans le jardin."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le voisin visite le drapeau devant David."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, la directrice plante la dune avec Didier."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, la jardinière pose le grand devant David."
+      "sentences": [
+        "Sara et Yanis se retrouvent à la bibliothèque.",
+        "Sara apporte un canard dans un sac.",
+        "Yanis pose une sandale sur la table.",
+        "Ils parlent d’abord d’un canard.",
+        "Puis Yanis montre un drapeau à Sara.",
+        "Tout à coup, un canard tombe par terre.",
+        "Sara ramasse un canard et rit.",
+        "Yanis range une sandale et un drapeau.",
+        "Avant de partir, ils vérifient encore un radio.",
+        "Plus tard, Sara revient à la gare.",
+        "Sofia rapporte un canard une seconde fois.",
+        "Ils vérifient encore un canard ensemble.",
+        "Sara explique une nouvelle idée sur une ardoise.",
+        "Sofia écoute et regarde une ardoise.",
+        "Le groupe accepte d’essayer un radio.",
+        "Après une pause, un radio change le plan.",
+        "Sara montre le résultat près d’un canard.",
+        "Sofia félicite tout le monde pour une ardoise.",
+        "Avant la nuit, ils rangent un sandwich."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le musicien écoute la radio, parce que David est devant aussi."
+      "sentences": [
+        "Ce matin, Adam travaille au marché.",
+        "Il prépare un radio avec soin.",
+        "Emma arrive et regarde un radio.",
+        "Ensemble, ils ajoutent un sandwich.",
+        "Adam explique l’usage d’un sandwich.",
+        "Emma propose aussi une ardoise.",
+        "Le travail avance grâce à un radio.",
+        "Ils placent une ardoise près d’un sandwich.",
+        "À la fin, un caddie est prêt pour demain.",
+        "Plus tard, Hugo revient à la gare.",
+        "Amira rapporte un radio une seconde fois.",
+        "Ils vérifient encore un radio ensemble.",
+        "Hugo explique une nouvelle idée sur une salade.",
+        "Amira écoute et regarde une salade.",
+        "Le groupe accepte d’essayer un caddy.",
+        "Après une pause, un caddy change le plan.",
+        "Hugo montre le résultat près d’un radio.",
+        "Amira félicite tout le monde pour une salade.",
+        "Avant la nuit, ils rangent un drapeau."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Inès fait des courses à la bibliothèque.",
+        "Dans le panier, il y a déjà un drapeau.",
+        "Sofia choisit une salade juste à côté.",
+        "Ils comparent un drapeau et une salade.",
+        "Le vendeur parle d’un caddy.",
+        "Inès prend aussi un caddy.",
+        "Sofia paie et range un drapeau.",
+        "Sur le chemin, ils discutent d’une salade.",
+        "À la maison, ils sortent encore une ardoise.",
+        "Plus tard, Amira revient à la bibliothèque.",
+        "Yanis rapporte un drapeau une seconde fois.",
+        "Ils vérifient encore un drapeau ensemble.",
+        "Amira explique une nouvelle idée sur un drap.",
+        "Yanis écoute et regarde un drap.",
+        "Le groupe accepte d’essayer une sandale.",
+        "Après une pause, une sandale change le plan.",
+        "Amira montre le résultat près d’un drapeau.",
+        "Yanis félicite tout le monde pour un drap.",
+        "Avant la nuit, ils rangent un sandwich."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la grand-mère tire le rideau, et Didier est devant David."
+      "sentences": [
+        "Léa lit un message à la gare.",
+        "Nora doit apporter une sandalette rapidement.",
+        "Léa part avec un drap.",
+        "Ils se croisent près d’une salade.",
+        "Nora donne une sandalette à Léa.",
+        "Léa vérifie une sandalette calmement.",
+        "Ensuite, ils déposent un drap.",
+        "Une amie demande des nouvelles d’une salade.",
+        "Plus tard, une ardoise termine la journée.",
+        "Plus tard, Yanis revient dans la cour.",
+        "Emma rapporte un caddie une seconde fois.",
+        "Ils vérifient encore un caddie ensemble.",
+        "Yanis explique une nouvelle idée sur un sandwich.",
+        "Emma écoute et regarde un sandwich.",
+        "Le groupe accepte d’essayer une salade.",
+        "Après une pause, une salade change le plan.",
+        "Yanis montre le résultat près d’un caddie.",
+        "Emma félicite tout le monde pour un sandwich.",
+        "Avant la nuit, ils rangent un drapeau."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Yanis organise une activité à la bibliothèque.",
+        "Omar apporte un drapeau dès le début.",
+        "Sur la table, on voit un drapeau et un sandwich.",
+        "Les enfants touchent un sandwich à tour de rôle.",
+        "Yanis explique le mot lié à un caddy.",
+        "Omar dessine un caddy au tableau.",
+        "Tout le monde écoute l’histoire d’un drapeau.",
+        "Après l’exercice, ils rangent un sandwich.",
+        "Yanis note encore un drap dans le cahier.",
+        "Plus tard, Sofia revient à l’école.",
+        "Karim rapporte une sandalette une seconde fois.",
+        "Ils vérifient encore une sandalette ensemble.",
+        "Sofia explique une nouvelle idée sur un sandwich.",
+        "Karim écoute et regarde un sandwich.",
+        "Le groupe accepte d’essayer un drapeau.",
+        "Après une pause, un drapeau change le plan.",
+        "Sofia montre le résultat près d’une sandalette.",
+        "Karim félicite tout le monde pour un sandwich.",
+        "Avant la nuit, ils rangent une salade."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand un ami coupe la salade, parce que David est devant aussi."
+      "sentences": [
+        "Il pleut un peu au marché.",
+        "Adam protège un canard sous le bras.",
+        "Emma tient une ardoise contre lui.",
+        "Ils entrent et posent un canard.",
+        "Adam sèche une ardoise avec un chiffon.",
+        "Emma prépare un drap pour attendre.",
+        "Ils parlent calmement d’un canard.",
+        "Quand la pluie cesse, un drap est prêt.",
+        "Ils repartent avec une sandalette.",
+        "Plus tard, Maya revient au marché.",
+        "Adam rapporte une ardoise une seconde fois.",
+        "Ils vérifient encore une ardoise ensemble.",
+        "Maya explique une nouvelle idée sur un caddie.",
+        "Adam écoute et regarde un caddie.",
+        "Le groupe accepte d’essayer une sandalette.",
+        "Après une pause, une sandalette change le plan.",
+        "Maya montre le résultat près d’une ardoise.",
+        "Adam félicite tout le monde pour un caddie.",
+        "Avant la nuit, ils rangent un radio."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Karim et Hugo révisent à la gare.",
+        "La leçon commence avec un caddie.",
+        "Karim lit une phrase sur un caddie.",
+        "Hugo répète le mot une sandale.",
+        "Ils écrivent une sandale dans le cahier.",
+        "Une erreur apparaît près d’un drap.",
+        "Karim corrige et montre un drap.",
+        "Hugo récite encore la phrase d’un caddie.",
+        "Avant de partir, ils relisent une ardoise.",
+        "Plus tard, Adam revient à la gare.",
+        "Liam rapporte un caddy une seconde fois.",
+        "Ils vérifient encore un caddy ensemble.",
+        "Adam explique une nouvelle idée sur un radio.",
+        "Liam écoute et regarde un radio.",
+        "Le groupe accepte d’essayer un drap.",
+        "Après une pause, un drap change le plan.",
+        "Adam montre le résultat près d’un caddy.",
+        "Liam félicite tout le monde pour un radio.",
+        "Avant la nuit, ils rangent un drapeau."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand André cherche le vendeur avec Didier, et Didier est devant David."
+      "sentences": [
+        "Théo visite un stand à la gare.",
+        "Noah désigne une sandale du doigt.",
+        "Le guide présente une sandale clairement.",
+        "Théo photographie un canard.",
+        "Ils posent une question sur un canard.",
+        "Noah note le détail d’un radio.",
+        "Avant de partir, Théo achète un radio.",
+        "Noah range un radio dans le sac.",
+        "Sur le chemin du retour, ils parlent d’un caddy.",
+        "Plus tard, Liam revient à la bibliothèque.",
+        "Adam rapporte un canard une seconde fois.",
+        "Ils vérifient encore un canard ensemble.",
+        "Liam explique une nouvelle idée sur une sandale.",
+        "Adam écoute et regarde une sandale.",
+        "Le groupe accepte d’essayer un sandwich.",
+        "Après une pause, un sandwich change le plan.",
+        "Liam montre le résultat près d’un canard.",
+        "Adam félicite tout le monde pour une sandale.",
+        "Avant la nuit, ils rangent une ardoise."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Noah prépare une surprise dans le jardin.",
+        "Yanis cache un sandwich derrière la porte.",
+        "Tout le monde cherche un sandwich.",
+        "Noah donne un indice avec un radio.",
+        "Yanis trouve enfin un sandwich.",
+        "Ils ouvrent aussi un drapeau.",
+        "Les amis rient autour d’un radio.",
+        "Noah partage un drapeau avec le groupe.",
+        "La fête se termine près d’un caddy.",
+        "Plus tard, Yanis revient à l’école.",
+        "Inès rapporte une sandale une seconde fois.",
+        "Ils vérifient encore une sandale ensemble.",
+        "Yanis explique une nouvelle idée sur un caddy.",
+        "Inès écoute et regarde un caddy.",
+        "Le groupe accepte d’essayer une salade.",
+        "Après une pause, une salade change le plan.",
+        "Yanis montre le résultat près d’une sandale.",
+        "Inès félicite tout le monde pour un caddy.",
+        "Avant la nuit, ils rangent un radio."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand David parle avec le vendredi, parce que David est devant aussi."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la directrice offre au cadeau, et Didier est devant David."
+      "sentences": [
+        "Emma commence la journée dans le jardin.",
+        "Sara apporte un caddy pour le groupe.",
+        "Ils placent un caddy au centre.",
+        "Emma décrit un caddy à voix haute.",
+        "Sara ajoute une sandale à côté.",
+        "Le groupe compare un caddy et une sandale.",
+        "Ensuite, chacun touche une salade.",
+        "Emma résume le rôle d’une salade.",
+        "Pour finir, Sara range un sandwich.",
+        "Plus tard, Hugo revient dans le jardin.",
+        "Sofia rapporte un radio une seconde fois.",
+        "Ils vérifient encore un radio ensemble.",
+        "Hugo explique une nouvelle idée sur une ardoise.",
+        "Sofia écoute et regarde une ardoise.",
+        "Le groupe accepte d’essayer un canard.",
+        "Après une pause, un canard change le plan.",
+        "Hugo montre le résultat près d’un radio.",
+        "Sofia félicite tout le monde pour une ardoise.",
+        "Avant la nuit, ils rangent un caddy."
+      ]
     }
   ]
 }

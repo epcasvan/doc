@@ -2331,128 +2331,388 @@
       ]
     }
   ],
-  "type12": [
-    {
-      "level": "a1",
-      "sentence": "La directrice range une armoire le soir."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le professeur photographie le bois au toit."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le voisin range la croix."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le collègue corrige le devoir avec Antoine."
-    },
+  "type12Stories": [
     {
       "level": "a2",
-      "sentence": "Ce soir, la directrice montre la mémoire le soir."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, la jardinière oublie le noir au toit."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le jardinier prend une oie avec Antoine."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le collègue observe un oiseau avec Antoine."
+      "sentences": [
+        "Inès et Hugo se retrouvent à la gare.",
+        "Inès apporte un poivre dans un sac.",
+        "Hugo pose une poire sur la table.",
+        "Ils parlent d’abord d’un poivre.",
+        "Puis Hugo montre un miroir à Inès.",
+        "Tout à coup, un poivre tombe par terre.",
+        "Inès ramasse un poivre et rit.",
+        "Hugo range une poire et un miroir.",
+        "Avant de partir, ils vérifient encore un oiseau."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand le musicien attend la voile trois fois, et Antoine est très content."
+      "sentences": [
+        "Ce matin, Adam travaille à l’école.",
+        "Il prépare un miroir avec soin.",
+        "Amira arrive et regarde un miroir.",
+        "Ensemble, ils ajoutent une poire.",
+        "Adam explique l’usage d’une poire.",
+        "Amira propose aussi un oiseau.",
+        "Le travail avance grâce à un miroir.",
+        "Ils placent un oiseau près d’une poire.",
+        "À la fin, un poisson est prêt pour demain."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Théo fait des courses à la gare.",
+        "Dans le panier, il y a déjà une poire.",
+        "Léa choisit un poisson juste à côté.",
+        "Ils comparent une poire et un poisson.",
+        "Le vendeur parle d’un oiseau.",
+        "Théo prend aussi un oiseau.",
+        "Léa paie et range une poire.",
+        "Sur le chemin, ils discutent d’un poisson.",
+        "À la maison, ils sortent encore un poivre."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce soir, quand la jardinière invite le voisin, parce que François me revoit aussi."
+      "sentences": [
+        "Karim lit un message à l’école.",
+        "Inès doit apporter une poire rapidement.",
+        "Karim part avec un miroir.",
+        "Ils se croisent près d’un oiseau.",
+        "Inès donne une poire à Karim.",
+        "Karim vérifie une poire calmement.",
+        "Ensuite, ils déposent un miroir.",
+        "Une amie demande des nouvelles d’un oiseau.",
+        "Plus tard, un poivre termine la journée."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Omar organise une activité à l’école.",
+        "Sofia apporte un poivre dès le début.",
+        "Sur la table, on voit un poivre et un miroir.",
+        "Les enfants touchent un miroir à tour de rôle.",
+        "Omar explique le mot lié à un poisson.",
+        "Sofia dessine un poisson au tableau.",
+        "Tout le monde écoute l’histoire d’un poivre.",
+        "Après l’exercice, ils rangent un miroir.",
+        "Omar note encore une poire dans le cahier."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce soir, quand un ami conduit la voiture, parce que François me revoit aussi."
+      "sentences": [
+        "Il pleut un peu dans le jardin.",
+        "Sofia protège un oiseau sous le bras.",
+        "Hugo tient un poisson contre lui.",
+        "Ils entrent et posent un oiseau.",
+        "Sofia sèche un poisson avec un chiffon.",
+        "Hugo prépare un miroir pour attendre.",
+        "Ils parlent calmement d’un oiseau.",
+        "Quand la pluie cesse, un miroir est prêt.",
+        "Ils repartent avec une poire."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Sara et Emma révisent à l’école.",
+        "La leçon commence avec un miroir.",
+        "Sara lit une phrase sur un miroir.",
+        "Emma répète le mot un poisson.",
+        "Ils écrivent un poisson dans le cahier.",
+        "Une erreur apparaît près d’un poivre.",
+        "Sara corrige et montre un poivre.",
+        "Emma récite encore la phrase d’un miroir.",
+        "Avant de partir, ils relisent un oiseau."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce soir, quand la fille voit une étoile, et Antoine est très content."
+      "sentences": [
+        "Amira visite un stand dans la cuisine.",
+        "Nora désigne un poisson du doigt.",
+        "Le guide présente un poisson clairement.",
+        "Amira photographie une poire.",
+        "Ils posent une question sur une poire.",
+        "Nora note le détail d’un oiseau.",
+        "Avant de partir, Amira achète un oiseau.",
+        "Nora range un oiseau dans le sac.",
+        "Sur le chemin du retour, ils parlent d’un poivre."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Sofia prépare une surprise au magasin.",
+        "Liam cache un oiseau derrière la porte.",
+        "Tout le monde cherche un oiseau.",
+        "Sofia donne un indice avec une poire.",
+        "Liam trouve enfin un oiseau.",
+        "Ils ouvrent aussi un poisson.",
+        "Les amis rient autour d’une poire.",
+        "Sofia partage un poisson avec le groupe.",
+        "La fête se termine près d’un poivre."
+      ]
+    },
+    {
+      "level": "b1",
+      "sentences": [
+        "Théo commence la journée à l’école.",
+        "Emma apporte un miroir pour le groupe.",
+        "Ils placent un miroir au centre.",
+        "Théo décrit un miroir à voix haute.",
+        "Emma ajoute un oiseau à côté.",
+        "Le groupe compare un miroir et un oiseau.",
+        "Ensuite, chacun touche une poire.",
+        "Théo résume le rôle d’une poire.",
+        "Pour finir, Emma range un poisson."
+      ]
     }
   ],
-  "type14": [
-    {
-      "level": "a1",
-      "sentence": "Le cuisinier touche le doigt trois fois."
-    },
-    {
-      "level": "a1",
-      "sentence": "Benoît visite la foire avec Antoine."
-    },
-    {
-      "level": "a1",
-      "sentence": "La sœur continue une histoire trois fois."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le voisin longe la loi."
-    },
-    {
-      "level": "a1",
-      "sentence": "La cuisinière range le miroir le soir."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le cuisinier prépare le mois trois fois."
-    },
+  "type14Stories": [
     {
       "level": "a2",
-      "sentence": "Ce matin, Antoine mange la poire le soir."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la professeure choisit le poisson trois fois."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le directeur mange le poivre trois fois."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le voisin prépare le soir trois fois."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le grand-père bricole le toit au toit."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Antoine prépare le trois le soir."
+      "sentences": [
+        "Sara et Sofia se retrouvent au magasin.",
+        "Sara apporte un poisson dans un sac.",
+        "Sofia pose une poire sur la table.",
+        "Ils parlent d’abord d’un poisson.",
+        "Puis Sofia montre un oiseau à Sara.",
+        "Tout à coup, un poisson tombe par terre.",
+        "Sara ramasse un poisson et rit.",
+        "Sofia range une poire et un oiseau.",
+        "Avant de partir, ils vérifient encore un poivre.",
+        "Plus tard, Emma revient au café.",
+        "Yanis rapporte un poisson une seconde fois.",
+        "Ils vérifient encore un poisson ensemble.",
+        "Emma explique une nouvelle idée sur un poivre.",
+        "Yanis écoute et regarde un poivre.",
+        "Le groupe accepte d’essayer une poire.",
+        "Après une pause, une poire change le plan.",
+        "Emma montre le résultat près d’un poisson.",
+        "Yanis félicite tout le monde pour un poivre.",
+        "Avant la nuit, ils rangent un oiseau."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce soir, quand la musicienne quitte une armoire, parce que François me revoit aussi."
+      "sentences": [
+        "Ce matin, Léa travaille dans la cuisine.",
+        "Il prépare un poivre avec soin.",
+        "Yanis arrive et regarde un poivre.",
+        "Ensemble, ils ajoutent un miroir.",
+        "Léa explique l’usage d’un miroir.",
+        "Yanis propose aussi un poisson.",
+        "Le travail avance grâce à un poivre.",
+        "Ils placent un poisson près d’un miroir.",
+        "À la fin, une poire est prêt pour demain.",
+        "Plus tard, Léa revient au café.",
+        "Liam rapporte une poire une seconde fois.",
+        "Ils vérifient encore une poire ensemble.",
+        "Léa explique une nouvelle idée sur un poivre.",
+        "Liam écoute et regarde un poivre.",
+        "Le groupe accepte d’essayer un oiseau.",
+        "Après une pause, un oiseau change le plan.",
+        "Léa montre le résultat près d’une poire.",
+        "Liam félicite tout le monde pour un poivre.",
+        "Avant la nuit, ils rangent un miroir."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Yanis fait des courses à l’école.",
+        "Dans le panier, il y a déjà un poisson.",
+        "Amira choisit un miroir juste à côté.",
+        "Ils comparent un poisson et un miroir.",
+        "Le vendeur parle d’un poivre.",
+        "Yanis prend aussi un poivre.",
+        "Amira paie et range un poisson.",
+        "Sur le chemin, ils discutent d’un miroir.",
+        "À la maison, ils sortent encore une poire.",
+        "Plus tard, Sofia revient au magasin.",
+        "Yanis rapporte un poisson une seconde fois.",
+        "Ils vérifient encore un poisson ensemble.",
+        "Sofia explique une nouvelle idée sur une poire.",
+        "Yanis écoute et regarde une poire.",
+        "Le groupe accepte d’essayer un oiseau.",
+        "Après une pause, un oiseau change le plan.",
+        "Sofia montre le résultat près d’un poisson.",
+        "Yanis félicite tout le monde pour une poire.",
+        "Avant la nuit, ils rangent un poivre."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce soir, quand le bébé regarde le bois avec Antoine, et Antoine est très content."
+      "sentences": [
+        "Emma lit un message à l’école.",
+        "Hugo doit apporter un poisson rapidement.",
+        "Emma part avec une poire.",
+        "Ils se croisent près d’un poivre.",
+        "Hugo donne un poisson à Emma.",
+        "Emma vérifie un poisson calmement.",
+        "Ensuite, ils déposent une poire.",
+        "Une amie demande des nouvelles d’un poivre.",
+        "Plus tard, un oiseau termine la journée.",
+        "Plus tard, Maya revient au parc.",
+        "Noah rapporte un poivre une seconde fois.",
+        "Ils vérifient encore un poivre ensemble.",
+        "Maya explique une nouvelle idée sur une poire.",
+        "Noah écoute et regarde une poire.",
+        "Le groupe accepte d’essayer un poisson.",
+        "Après une pause, un poisson change le plan.",
+        "Maya montre le résultat près d’un poivre.",
+        "Noah félicite tout le monde pour une poire.",
+        "Avant la nuit, ils rangent un oiseau."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Amira organise une activité à l’école.",
+        "Théo apporte un miroir dès le début.",
+        "Sur la table, on voit un miroir et un poisson.",
+        "Les enfants touchent un poisson à tour de rôle.",
+        "Amira explique le mot lié à un poivre.",
+        "Théo dessine un poivre au tableau.",
+        "Tout le monde écoute l’histoire d’un miroir.",
+        "Après l’exercice, ils rangent un poisson.",
+        "Amira note encore un oiseau dans le cahier.",
+        "Plus tard, Yanis revient au marché.",
+        "Noah rapporte un poivre une seconde fois.",
+        "Ils vérifient encore un poivre ensemble.",
+        "Yanis explique une nouvelle idée sur un miroir.",
+        "Noah écoute et regarde un miroir.",
+        "Le groupe accepte d’essayer un oiseau.",
+        "Après une pause, un oiseau change le plan.",
+        "Yanis montre le résultat près d’un poivre.",
+        "Noah félicite tout le monde pour un miroir.",
+        "Avant la nuit, ils rangent une poire."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce soir, quand la tante pose la croix, parce que François me revoit aussi."
+      "sentences": [
+        "Il pleut un peu au magasin.",
+        "Sara protège un miroir sous le bras.",
+        "Karim tient une poire contre lui.",
+        "Ils entrent et posent un miroir.",
+        "Sara sèche une poire avec un chiffon.",
+        "Karim prépare un poisson pour attendre.",
+        "Ils parlent calmement d’un miroir.",
+        "Quand la pluie cesse, un poisson est prêt.",
+        "Ils repartent avec un poivre.",
+        "Plus tard, Sofia revient au marché.",
+        "Amira rapporte un miroir une seconde fois.",
+        "Ils vérifient encore un miroir ensemble.",
+        "Sofia explique une nouvelle idée sur une poire.",
+        "Amira écoute et regarde une poire.",
+        "Le groupe accepte d’essayer un poisson.",
+        "Après une pause, un poisson change le plan.",
+        "Sofia montre le résultat près d’un miroir.",
+        "Amira félicite tout le monde pour une poire.",
+        "Avant la nuit, ils rangent un oiseau."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Maya et Léa révisent à l’école.",
+        "La leçon commence avec un poivre.",
+        "Maya lit une phrase sur un poivre.",
+        "Léa répète le mot un poisson.",
+        "Ils écrivent un poisson dans le cahier.",
+        "Une erreur apparaît près d’une poire.",
+        "Maya corrige et montre une poire.",
+        "Léa récite encore la phrase d’un poivre.",
+        "Avant de partir, ils relisent un miroir.",
+        "Plus tard, Maya revient à la bibliothèque.",
+        "Sofia rapporte un poivre une seconde fois.",
+        "Ils vérifient encore un poivre ensemble.",
+        "Maya explique une nouvelle idée sur une poire.",
+        "Sofia écoute et regarde une poire.",
+        "Le groupe accepte d’essayer un poisson.",
+        "Après une pause, un poisson change le plan.",
+        "Maya montre le résultat près d’un poivre.",
+        "Sofia félicite tout le monde pour une poire.",
+        "Avant la nuit, ils rangent un miroir."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce soir, quand le jardinier corrige le devoir avec Antoine, et Antoine est très content."
+      "sentences": [
+        "Emma visite un stand dans la cour.",
+        "Nora désigne un miroir du doigt.",
+        "Le guide présente un miroir clairement.",
+        "Emma photographie une poire.",
+        "Ils posent une question sur une poire.",
+        "Nora note le détail d’un poivre.",
+        "Avant de partir, Emma achète un poivre.",
+        "Nora range un poivre dans le sac.",
+        "Sur le chemin du retour, ils parlent d’un oiseau.",
+        "Plus tard, Sara revient dans la cour.",
+        "Omar rapporte une poire une seconde fois.",
+        "Ils vérifient encore une poire ensemble.",
+        "Sara explique une nouvelle idée sur un oiseau.",
+        "Omar écoute et regarde un oiseau.",
+        "Le groupe accepte d’essayer un miroir.",
+        "Après une pause, un miroir change le plan.",
+        "Sara montre le résultat près d’une poire.",
+        "Omar félicite tout le monde pour un oiseau.",
+        "Avant la nuit, ils rangent un poivre."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Adam prépare une surprise au parc.",
+        "Hugo cache un poivre derrière la porte.",
+        "Tout le monde cherche un poivre.",
+        "Adam donne un indice avec un miroir.",
+        "Hugo trouve enfin un poivre.",
+        "Ils ouvrent aussi un oiseau.",
+        "Les amis rient autour d’un miroir.",
+        "Adam partage un oiseau avec le groupe.",
+        "La fête se termine près d’un poisson.",
+        "Plus tard, Omar revient dans la cour.",
+        "Adam rapporte un poivre une seconde fois.",
+        "Ils vérifient encore un poivre ensemble.",
+        "Omar explique une nouvelle idée sur un poisson.",
+        "Adam écoute et regarde un poisson.",
+        "Le groupe accepte d’essayer un oiseau.",
+        "Après une pause, un oiseau change le plan.",
+        "Omar montre le résultat près d’un poivre.",
+        "Adam félicite tout le monde pour un poisson.",
+        "Avant la nuit, ils rangent un miroir."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce soir, quand le maître essuie le doigt, parce que François me revoit aussi."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Antoine cherche la foire le soir, et Antoine est très content."
+      "sentences": [
+        "Léa commence la journée au café.",
+        "Théo apporte un oiseau pour le groupe.",
+        "Ils placent un oiseau au centre.",
+        "Léa décrit un oiseau à voix haute.",
+        "Théo ajoute un poivre à côté.",
+        "Le groupe compare un oiseau et un poivre.",
+        "Ensuite, chacun touche un poisson.",
+        "Léa résume le rôle d’un poisson.",
+        "Pour finir, Théo range un miroir.",
+        "Plus tard, Noah revient dans la cuisine.",
+        "Yanis rapporte un oiseau une seconde fois.",
+        "Ils vérifient encore un oiseau ensemble.",
+        "Noah explique une nouvelle idée sur un miroir.",
+        "Yanis écoute et regarde un miroir.",
+        "Le groupe accepte d’essayer un poivre.",
+        "Après une pause, un poivre change le plan.",
+        "Noah montre le résultat près d’un oiseau.",
+        "Yanis félicite tout le monde pour un miroir.",
+        "Avant la nuit, ils rangent une poire."
+      ]
     }
   ]
 }

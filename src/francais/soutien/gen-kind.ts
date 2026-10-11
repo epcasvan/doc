@@ -25,6 +25,7 @@ import { isSoutienType1Word, type1WordPool, type1Words } from './type1-words'
 import type { SoutienGenerateOptions } from './generate-options'
 import {
   filterSoutienLevel,
+  filterSoutienStories,
   soutienPhrasesFor,
   type SoutienLevelFilter,
 } from './phrases-data'
@@ -38,17 +39,30 @@ import {
   syllableBlockRows,
 } from './gen-kind-helpers'
 
-/** Phrases rédigées (types 12 / 14) filtrées par niveau ; `null` si aucune. */
-function curatedPhrases(
+/**
+ * Phrases types 12 / 14 : une histoire tirée (ordre des phrases = ordre des questions).
+ * Repli : listes plates legacy, puis banques `countPhrases` / `readPhrases`.
+ */
+function curatedStoryPhrases(
   bank: SoutienVowelBank,
   kind: 'type12' | 'type14',
   level: SoutienLevelFilter | undefined,
+  rng: Rng,
+  want: number,
 ): string[] | null {
   const data = soutienPhrasesFor(bank.id)
   if (!data) return null
+  const stories = filterSoutienStories(
+    kind === 'type12' ? data.type12Stories : data.type14Stories,
+    level,
+  )
+  if (stories.length > 0) {
+    const story = pick(rng, stories)
+    return story.sentences.slice(0, want)
+  }
   const rows = filterSoutienLevel(data[kind], level)
   if (rows.length === 0) return null
-  return rows.map((r) => r.sentence)
+  return shuffle(rng, rows.map((r) => r.sentence)).slice(0, want)
 }
 
 export function genKind(
@@ -550,10 +564,11 @@ export function genKind(
       }
     }
     case 'compter': {
-      /** Phrases à lire (texte simple) + compter le son ; count réglable. */
+      /** Histoire (9 phrases défaut) + compter le son ; phrases dans l’ordre. */
       const want = Math.max(1, Math.min(12, n))
-      const pool = curatedPhrases(bank, 'type12', options?.level) ?? [...bank.countPhrases]
-      const phrases = shuffle(rng, pool).slice(0, Math.min(want, pool.length))
+      const phrases =
+        curatedStoryPhrases(bank, 'type12', options?.level, rng, want) ??
+        shuffle(rng, [...bank.countPhrases]).slice(0, Math.min(want, bank.countPhrases.length))
       const items = phrases.map((phrase) => ({
         phrase,
         count: countSoundInPhrase(phrase, bank),
@@ -595,10 +610,11 @@ export function genKind(
       }
     }
     case 'lire': {
-      /** Phrases à lire ; voyelle du thème en couleur ; count réglable. */
+      /** Histoire (19 phrases défaut) ; voyelle du thème en couleur ; ordre conservé. */
       const want = Math.max(1, Math.min(20, n))
-      const pool = curatedPhrases(bank, 'type14', options?.level) ?? [...bank.readPhrases]
-      const phrases = shuffle(rng, pool).slice(0, Math.min(want, pool.length))
+      const phrases =
+        curatedStoryPhrases(bank, 'type14', options?.level, rng, want) ??
+        shuffle(rng, [...bank.readPhrases]).slice(0, Math.min(want, bank.readPhrases.length))
       return {
         instruction: 'Lisez les phrases.',
         preferredColumns: 1,

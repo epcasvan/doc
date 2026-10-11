@@ -1,11 +1,11 @@
 /**
  * Phrases didactiques Soutien FR (types 9 / 10 / 12 / 14) par banque et par niveau.
  *
- * Source : `./phrases/<bankId>.json` — rédigées à la main (FLE, phonétique) :
- * - A1 : 5–7 mots, ≥ 2 occurrences du son ;
- * - A2 : 8–12 mots, ≥ 3 occurrences ;
- * - B1 : 13–15 mots, ≥ 4 occurrences.
- * Le filtre `all` mélange les trois niveaux.
+ * Source : `./phrases/<bankId>.json` — rédigées / générées (FLE, phonétique) :
+ * - Types 9 / 10 : listes à niveau a1 / a2 / b1 ;
+ * - Types 12 / 14 : **histoires** A2–B1 (10 par banque) —
+ *   type 12 = 9 phrases / histoire ; type 14 = 19 phrases / histoire.
+ *   La fiche tire une histoire puis utilise les phrases dans l’ordre (Q1 = phrase 1…).
  */
 
 export type SoutienPhraseLevel = 'a1' | 'a2' | 'b1'
@@ -25,20 +25,39 @@ export type SoutienLevelDetPhrase = SoutienLevelPhrase & {
   parts: SoutienDetPart[]
 }
 
+/** Histoire type 12 (9 phrases) ou 14 (19 phrases). */
+export type SoutienPhraseStory = {
+  level: SoutienPhraseLevel
+  sentences: string[]
+}
+
 export type SoutienBankPhrases = {
   /** Type 9 — le mot (tel qu’écrit dans la phrase) et sa phrase. */
   type9: SoutienLevelWordPhrase[]
   /** Type 10 — déterminants l’ / le / la / les. */
   type10: SoutienLevelDetPhrase[]
-  /** Type 12 — compter le son. */
+  /**
+   * Type 12 — compter le son (legacy plat ; utilisé seulement si pas d’histoires).
+   * @deprecated préférer `type12Stories`
+   */
   type12: SoutienLevelPhrase[]
-  /** Type 14 — lire les phrases. */
+  /**
+   * Type 14 — lire les phrases (legacy plat).
+   * @deprecated préférer `type14Stories`
+   */
   type14: SoutienLevelPhrase[]
+  /** Type 12 — 10 histoires × 9 phrases (A2–B1). */
+  type12Stories: SoutienPhraseStory[]
+  /** Type 14 — 10 histoires × 19 phrases (A2–B1). */
+  type14Stories: SoutienPhraseStory[]
 }
 
 const FILES = import.meta.glob('./phrases/*.json', { eager: true, import: 'default' }) as Record<
   string,
-  Partial<SoutienBankPhrases> | undefined
+  Partial<SoutienBankPhrases> & {
+    type12Stories?: unknown
+    type14Stories?: unknown
+  }
 >
 
 const BY_ID = new Map<string, SoutienBankPhrases>()
@@ -50,6 +69,12 @@ for (const [path, raw] of Object.entries(FILES)) {
     type10: Array.isArray(raw.type10) ? raw.type10.filter(isDetPhrase) : [],
     type12: Array.isArray(raw.type12) ? raw.type12.filter(isPhrase) : [],
     type14: Array.isArray(raw.type14) ? raw.type14.filter(isPhrase) : [],
+    type12Stories: Array.isArray(raw.type12Stories)
+      ? raw.type12Stories.filter((s) => isStory(s, 9))
+      : [],
+    type14Stories: Array.isArray(raw.type14Stories)
+      ? raw.type14Stories.filter((s) => isStory(s, 19))
+      : [],
   })
 }
 
@@ -77,6 +102,13 @@ function isDetPhrase(v: unknown): v is SoutienLevelDetPhrase {
   const parts = (v as Record<string, unknown>).parts
   return Array.isArray(parts) && parts.length > 0 && parts.every(isDetPart) && parts.some((p) => 'blank' in (p as object))
 }
+function isStory(v: unknown, wantLen: number): v is SoutienPhraseStory {
+  if (!v || typeof v !== 'object') return false
+  const o = v as Record<string, unknown>
+  if (!isLevel(o.level) || !Array.isArray(o.sentences)) return false
+  if (o.sentences.length !== wantLen) return false
+  return o.sentences.every((s) => typeof s === 'string' && s.trim().length > 0)
+}
 
 /** Phrases rédigées pour une banque (ou `null` si aucun fichier). */
 export function soutienPhrasesFor(bankId: string): SoutienBankPhrases | null {
@@ -90,6 +122,24 @@ export function filterSoutienLevel<T extends { level: SoutienPhraseLevel }>(
 ): T[] {
   if (!level || level === 'all') return [...rows]
   return rows.filter((r) => r.level === level)
+}
+
+/** Histoires filtrées par niveau (A2–B1 ; `all` = les deux). */
+export function filterSoutienStories(
+  stories: readonly SoutienPhraseStory[],
+  level: SoutienLevelFilter | undefined,
+): SoutienPhraseStory[] {
+  if (!level || level === 'all') {
+    // Préférence A2–B1 : ignorer d’éventuels a1
+    const ab = stories.filter((s) => s.level === 'a2' || s.level === 'b1')
+    return ab.length > 0 ? ab : [...stories]
+  }
+  if (level === 'a1') {
+    // Pas d’histoires A1 : repli A2
+    const a2 = stories.filter((s) => s.level === 'a2')
+    return a2.length > 0 ? a2 : [...stories]
+  }
+  return stories.filter((s) => s.level === level)
 }
 
 /** Ids de banques disposant de phrases rédigées. */

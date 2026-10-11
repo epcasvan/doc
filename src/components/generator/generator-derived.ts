@@ -145,7 +145,7 @@ export function maxQuestionsFor({
     return 16
   }
   if (soutienKind === 'compter' || soutienKind === 'ordre') return 12
-  if (soutienKind === 'lire') return 20
+  if (soutienKind === 'lire') return 19
   if (soutienKind === 'associer-audio' || soutienKind === 'associer-image') return 3
   return 30
 }

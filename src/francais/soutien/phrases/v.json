@@ -2316,128 +2316,388 @@
       ]
     }
   ],
-  "type12": [
-    {
-      "level": "a1",
-      "sentence": "La tante longe une avenue vite."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le maître répare un avion vite."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le cuisinier nettoie la cave vite."
-    },
-    {
-      "level": "a1",
-      "sentence": "La professeure caresse le cheval vite."
-    },
+  "type12Stories": [
     {
       "level": "a2",
-      "sentence": "Avant le repas, la copine rapporte le livre avec Vincent."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la tante raconte le rêve avec Vincent."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le jardinier sauve la vache vite."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le cousin pose le vase vite."
+      "sentences": [
+        "Karim et Théo se retrouvent au marché.",
+        "Karim apporte une chaise dans un sac.",
+        "Théo pose un ballon sur la table.",
+        "Ils parlent d’abord d’une chaise.",
+        "Puis Théo montre une pomme à Karim.",
+        "Tout à coup, une chaise tombe par terre.",
+        "Karim ramasse une chaise et rit.",
+        "Théo range un ballon et une pomme.",
+        "Avant de partir, ils vérifient encore un verre."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand la maman prend la voiture avec Véronique, parce que Véronique est contente."
+      "sentences": [
+        "Ce matin, Hugo travaille au parc.",
+        "Il prépare un stylo avec soin.",
+        "Liam arrive et regarde un stylo.",
+        "Ensemble, ils ajoutent un ballon.",
+        "Hugo explique l’usage d’un ballon.",
+        "Liam propose aussi une pomme.",
+        "Le travail avance grâce à un stylo.",
+        "Ils placent une pomme près d’un ballon.",
+        "À la fin, un sac est prêt pour demain."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Léa fait des courses au marché.",
+        "Dans le panier, il y a déjà une pomme.",
+        "Yanis choisit un cahier juste à côté.",
+        "Ils comparent une pomme et un cahier.",
+        "Le vendeur parle d’une chaise.",
+        "Léa prend aussi une chaise.",
+        "Yanis paie et range une pomme.",
+        "Sur le chemin, ils discutent d’un cahier.",
+        "À la maison, ils sortent encore un verre."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Véronique attend le volant avec Vincent, et Vincent est très content."
+      "sentences": [
+        "Hugo lit un message au marché.",
+        "Sofia doit apporter une chaise rapidement.",
+        "Hugo part avec un vélo.",
+        "Ils se croisent près d’un cahier.",
+        "Sofia donne une chaise à Hugo.",
+        "Hugo vérifie une chaise calmement.",
+        "Ensuite, ils déposent un vélo.",
+        "Une amie demande des nouvelles d’un cahier.",
+        "Plus tard, un ballon termine la journée."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Inès organise une activité au magasin.",
+        "Sofia apporte un verre dès le début.",
+        "Sur la table, on voit un verre et une chaise.",
+        "Les enfants touchent une chaise à tour de rôle.",
+        "Inès explique le mot lié à un livre.",
+        "Sofia dessine un livre au tableau.",
+        "Tout le monde écoute l’histoire d’un verre.",
+        "Après l’exercice, ils rangent une chaise.",
+        "Inès note encore un ballon dans le cahier."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand la directrice aide le voleur avec Véronique, parce que Véronique est contente."
+      "sentences": [
+        "Il pleut un peu au parc.",
+        "Inès protège une pomme sous le bras.",
+        "Nora tient un cahier contre lui.",
+        "Ils entrent et posent une pomme.",
+        "Inès sèche un cahier avec un chiffon.",
+        "Nora prépare un stylo pour attendre.",
+        "Ils parlent calmement d’une pomme.",
+        "Quand la pluie cesse, un stylo est prêt.",
+        "Ils repartent avec un vélo."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Liam et Emma révisent au parc.",
+        "La leçon commence avec un stylo.",
+        "Liam lit une phrase sur un stylo.",
+        "Emma répète le mot une pomme.",
+        "Ils écrivent une pomme dans le cahier.",
+        "Une erreur apparaît près d’une chaise.",
+        "Liam corrige et montre une chaise.",
+        "Emma récite encore la phrase d’un stylo.",
+        "Avant de partir, ils relisent un sac."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand le frère rêve du voyage devant, et Vincent est très content."
+      "sentences": [
+        "Karim visite un stand au magasin.",
+        "Adam désigne un cahier du doigt.",
+        "Le guide présente un cahier clairement.",
+        "Karim photographie un verre.",
+        "Ils posent une question sur un verre.",
+        "Adam note le détail d’un sac.",
+        "Avant de partir, Karim achète un sac.",
+        "Adam range un sac dans le sac.",
+        "Sur le chemin du retour, ils parlent d’un vélo."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Sara prépare une surprise au magasin.",
+        "Karim cache une lampe derrière la porte.",
+        "Tout le monde cherche une lampe.",
+        "Sara donne un indice avec un ballon.",
+        "Karim trouve enfin une lampe.",
+        "Ils ouvrent aussi une chaise.",
+        "Les amis rient autour d’un ballon.",
+        "Sara partage une chaise avec le groupe.",
+        "La fête se termine près d’une pomme."
+      ]
+    },
+    {
+      "level": "b1",
+      "sentences": [
+        "Maya commence la journée à la gare.",
+        "Liam apporte un ballon pour le groupe.",
+        "Ils placent un ballon au centre.",
+        "Maya décrit un ballon à voix haute.",
+        "Liam ajoute un sac à côté.",
+        "Le groupe compare un ballon et un sac.",
+        "Ensuite, chacun touche un livre.",
+        "Maya résume le rôle d’un livre.",
+        "Pour finir, Liam range un stylo."
+      ]
     }
   ],
-  "type14": [
-    {
-      "level": "a1",
-      "sentence": "Le facteur touche un cheveu vite."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le maître soigne la chèvre vite."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le médecin porte la cravate vite."
-    },
-    {
-      "level": "a1",
-      "sentence": "La factrice prend une enveloppe vite."
-    },
-    {
-      "level": "a1",
-      "sentence": "Eva attend un hiver bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La cousine visite le lavabo."
-    },
+  "type14Stories": [
     {
       "level": "a2",
-      "sentence": "Ce soir, le copain parle avec le vendredi vite."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, la sœur photographie le vent avec Vincent."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, la cousine essuie le verre avec Véronique."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Vincent aide la vie avec Véronique."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le papa plante la vigne avec Vincent."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, la maîtresse circule dans la ville avec Vincent."
+      "sentences": [
+        "Noah et Amira se retrouvent à l’école.",
+        "Noah apporte un stylo dans un sac.",
+        "Amira pose un cahier sur la table.",
+        "Ils parlent d’abord d’un stylo.",
+        "Puis Amira montre une chaise à Noah.",
+        "Tout à coup, un stylo tombe par terre.",
+        "Noah ramasse un stylo et rit.",
+        "Amira range un cahier et une chaise.",
+        "Avant de partir, ils vérifient encore une pomme.",
+        "Plus tard, Léa revient à la gare.",
+        "Hugo rapporte un vélo une seconde fois.",
+        "Ils vérifient encore un vélo ensemble.",
+        "Léa explique une nouvelle idée sur un ballon.",
+        "Hugo écoute et regarde un ballon.",
+        "Le groupe accepte d’essayer une pomme.",
+        "Après une pause, une pomme change le plan.",
+        "Léa montre le résultat près d’un vélo.",
+        "Hugo félicite tout le monde pour un ballon.",
+        "Avant la nuit, ils rangent un sac."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand le boulanger vend le vélo avec Véronique, parce que Véronique est contente."
+      "sentences": [
+        "Ce matin, Karim travaille à la gare.",
+        "Il prépare un ballon avec soin.",
+        "Maya arrive et regarde un ballon.",
+        "Ensemble, ils ajoutent un livre.",
+        "Karim explique l’usage d’un livre.",
+        "Maya propose aussi un cahier.",
+        "Le travail avance grâce à un ballon.",
+        "Ils placent un cahier près d’un livre.",
+        "À la fin, une pomme est prêt pour demain.",
+        "Plus tard, Emma revient dans la cuisine.",
+        "Hugo rapporte un livre une seconde fois.",
+        "Ils vérifient encore un livre ensemble.",
+        "Emma explique une nouvelle idée sur un verre.",
+        "Hugo écoute et regarde un verre.",
+        "Le groupe accepte d’essayer une pomme.",
+        "Après une pause, une pomme change le plan.",
+        "Emma montre le résultat près d’un livre.",
+        "Hugo félicite tout le monde pour un verre.",
+        "Avant la nuit, ils rangent un sac."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Maya fait des courses à l’école.",
+        "Dans le panier, il y a déjà un verre.",
+        "Théo choisit une pomme juste à côté.",
+        "Ils comparent un verre et une pomme.",
+        "Le vendeur parle d’un stylo.",
+        "Maya prend aussi un stylo.",
+        "Théo paie et range un verre.",
+        "Sur le chemin, ils discutent d’une pomme.",
+        "À la maison, ils sortent encore une chaise.",
+        "Plus tard, Noah revient au café.",
+        "Sara rapporte un ballon une seconde fois.",
+        "Ils vérifient encore un ballon ensemble.",
+        "Noah explique une nouvelle idée sur un verre.",
+        "Sara écoute et regarde un verre.",
+        "Le groupe accepte d’essayer un cahier.",
+        "Après une pause, un cahier change le plan.",
+        "Noah montre le résultat près d’un ballon.",
+        "Sara félicite tout le monde pour un verre.",
+        "Avant la nuit, ils rangent une lampe."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand le papa aide un élève avec Véronique, parce que Véronique est contente."
+      "sentences": [
+        "Yanis lit un message au marché.",
+        "Omar doit apporter un vélo rapidement.",
+        "Yanis part avec une chaise.",
+        "Ils se croisent près d’un livre.",
+        "Omar donne un vélo à Yanis.",
+        "Yanis vérifie un vélo calmement.",
+        "Ensuite, ils déposent une chaise.",
+        "Une amie demande des nouvelles d’un livre.",
+        "Plus tard, un cahier termine la journée.",
+        "Plus tard, Omar revient à l’école.",
+        "Adam rapporte une pomme une seconde fois.",
+        "Ils vérifient encore une pomme ensemble.",
+        "Omar explique une nouvelle idée sur une lampe.",
+        "Adam écoute et regarde une lampe.",
+        "Le groupe accepte d’essayer une chaise.",
+        "Après une pause, une chaise change le plan.",
+        "Omar montre le résultat près d’une pomme.",
+        "Adam félicite tout le monde pour une lampe.",
+        "Avant la nuit, ils rangent un verre."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Maya organise une activité à la bibliothèque.",
+        "Karim apporte un stylo dès le début.",
+        "Sur la table, on voit un stylo et une chaise.",
+        "Les enfants touchent une chaise à tour de rôle.",
+        "Maya explique le mot lié à un ballon.",
+        "Karim dessine un ballon au tableau.",
+        "Tout le monde écoute l’histoire d’un stylo.",
+        "Après l’exercice, ils rangent une chaise.",
+        "Maya note encore un verre dans le cahier.",
+        "Plus tard, Yanis revient au café.",
+        "Noah rapporte une chaise une seconde fois.",
+        "Ils vérifient encore une chaise ensemble.",
+        "Yanis explique une nouvelle idée sur une pomme.",
+        "Noah écoute et regarde une pomme.",
+        "Le groupe accepte d’essayer un stylo.",
+        "Après une pause, un stylo change le plan.",
+        "Yanis montre le résultat près d’une chaise.",
+        "Noah félicite tout le monde pour une pomme.",
+        "Avant la nuit, ils rangent une lampe."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand le professeur voit une avenue avec Véronique, parce que Véronique est contente."
+      "sentences": [
+        "Il pleut un peu au parc.",
+        "Sofia protège une lampe sous le bras.",
+        "Hugo tient un livre contre lui.",
+        "Ils entrent et posent une lampe.",
+        "Sofia sèche un livre avec un chiffon.",
+        "Hugo prépare un stylo pour attendre.",
+        "Ils parlent calmement d’une lampe.",
+        "Quand la pluie cesse, un stylo est prêt.",
+        "Ils repartent avec une pomme.",
+        "Plus tard, Sara revient à l’école.",
+        "Omar rapporte une lampe une seconde fois.",
+        "Ils vérifient encore une lampe ensemble.",
+        "Sara explique une nouvelle idée sur un livre.",
+        "Omar écoute et regarde un livre.",
+        "Le groupe accepte d’essayer un sac.",
+        "Après une pause, un sac change le plan.",
+        "Sara montre le résultat près d’une lampe.",
+        "Omar félicite tout le monde pour un livre.",
+        "Avant la nuit, ils rangent un cahier."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Sofia et Théo révisent dans le jardin.",
+        "La leçon commence avec une lampe.",
+        "Sofia lit une phrase sur une lampe.",
+        "Théo répète le mot un stylo.",
+        "Ils écrivent un stylo dans le cahier.",
+        "Une erreur apparaît près d’une pomme.",
+        "Sofia corrige et montre une pomme.",
+        "Théo récite encore la phrase d’une lampe.",
+        "Avant de partir, ils relisent un vélo.",
+        "Plus tard, Léa revient au marché.",
+        "Emma rapporte un vélo une seconde fois.",
+        "Ils vérifient encore un vélo ensemble.",
+        "Léa explique une nouvelle idée sur un verre.",
+        "Emma écoute et regarde un verre.",
+        "Le groupe accepte d’essayer un livre.",
+        "Après une pause, un livre change le plan.",
+        "Léa montre le résultat près d’un vélo.",
+        "Emma félicite tout le monde pour un verre.",
+        "Avant la nuit, ils rangent un cahier."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Eva attend un avion avec Vincent, et Vincent est très content."
+      "sentences": [
+        "Inès visite un stand à la bibliothèque.",
+        "Yanis désigne une pomme du doigt.",
+        "Le guide présente une pomme clairement.",
+        "Inès photographie une lampe.",
+        "Ils posent une question sur une lampe.",
+        "Yanis note le détail d’un vélo.",
+        "Avant de partir, Inès achète un vélo.",
+        "Yanis range un vélo dans le sac.",
+        "Sur le chemin du retour, ils parlent d’une chaise.",
+        "Plus tard, Amira revient à la bibliothèque.",
+        "Maya rapporte un cahier une seconde fois.",
+        "Ils vérifient encore un cahier ensemble.",
+        "Amira explique une nouvelle idée sur une chaise.",
+        "Maya écoute et regarde une chaise.",
+        "Le groupe accepte d’essayer un sac.",
+        "Après une pause, un sac change le plan.",
+        "Amira montre le résultat près d’un cahier.",
+        "Maya félicite tout le monde pour une chaise.",
+        "Avant la nuit, ils rangent un livre."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Sofia prépare une surprise au café.",
+        "Théo cache une lampe derrière la porte.",
+        "Tout le monde cherche une lampe.",
+        "Sofia donne un indice avec un vélo.",
+        "Théo trouve enfin une lampe.",
+        "Ils ouvrent aussi une pomme.",
+        "Les amis rient autour d’un vélo.",
+        "Sofia partage une pomme avec le groupe.",
+        "La fête se termine près d’une chaise.",
+        "Plus tard, Adam revient au marché.",
+        "Léa rapporte une chaise une seconde fois.",
+        "Ils vérifient encore une chaise ensemble.",
+        "Adam explique une nouvelle idée sur un vélo.",
+        "Léa écoute et regarde un vélo.",
+        "Le groupe accepte d’essayer un cahier.",
+        "Après une pause, un cahier change le plan.",
+        "Adam montre le résultat près d’une chaise.",
+        "Léa félicite tout le monde pour un vélo.",
+        "Avant la nuit, ils rangent une pomme."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand le garçon nettoie la cave avec Vincent, et Vincent est très content."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand le papa regarde le cheval avec Vincent, et Vincent est très content."
+      "sentences": [
+        "Karim commence la journée à l’école.",
+        "Amira apporte un livre pour le groupe.",
+        "Ils placent un livre au centre.",
+        "Karim décrit un livre à voix haute.",
+        "Amira ajoute un verre à côté.",
+        "Le groupe compare un livre et un verre.",
+        "Ensuite, chacun touche une chaise.",
+        "Karim résume le rôle d’une chaise.",
+        "Pour finir, Amira range une pomme.",
+        "Plus tard, Adam revient dans le jardin.",
+        "Nora rapporte une pomme une seconde fois.",
+        "Ils vérifient encore une pomme ensemble.",
+        "Adam explique une nouvelle idée sur un cahier.",
+        "Nora écoute et regarde un cahier.",
+        "Le groupe accepte d’essayer un livre.",
+        "Après une pause, un livre change le plan.",
+        "Adam montre le résultat près d’une pomme.",
+        "Nora félicite tout le monde pour un cahier.",
+        "Avant la nuit, ils rangent un ballon."
+      ]
     }
   ]
 }

@@ -2190,128 +2190,388 @@
       ]
     }
   ],
-  "type12": [
-    {
-      "level": "a1",
-      "sentence": "Le directeur pose le cyan chez Yves."
-    },
-    {
-      "level": "a1",
-      "sentence": "La boulangère regarde le cygne avec Mary."
-    },
-    {
-      "level": "a1",
-      "sentence": "Yves range le cylindre bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La voisine nettoie une hygiène avec Mary."
-    },
+  "type12Stories": [
     {
       "level": "a2",
-      "sentence": "Ce soir, Yann joue avec le mystère au lycée."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Yann joue avec le mythe avec Mary."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Cyril utilise le nylon chez Yves."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Mary quitte le pays près de Cyril."
+      "sentences": [
+        "Sara et Amira se retrouvent dans la cuisine.",
+        "Sara apporte un stylo dans un sac.",
+        "Amira pose un yaourt sur la table.",
+        "Ils parlent d’abord d’un stylo.",
+        "Puis Amira montre un crayon à Sara.",
+        "Tout à coup, un stylo tombe par terre.",
+        "Sara ramasse un stylo et rit.",
+        "Amira range un yaourt et un crayon.",
+        "Avant de partir, ils vérifient encore un rayon."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand la boulangère enfile le style près de Cyril, et Mary sourit près de Cyril."
+      "sentences": [
+        "Ce matin, Noah travaille dans la cour.",
+        "Il prépare un tuyau avec soin.",
+        "Léa arrive et regarde un tuyau.",
+        "Ensemble, ils ajoutent un stylo.",
+        "Noah explique l’usage d’un stylo.",
+        "Léa propose aussi un rayon.",
+        "Le travail avance grâce à un tuyau.",
+        "Ils placent un rayon près d’un stylo.",
+        "À la fin, un crayon est prêt pour demain."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Théo fait des courses dans la cour.",
+        "Dans le panier, il y a déjà un rayon.",
+        "Nora choisit un stylo juste à côté.",
+        "Ils comparent un rayon et un stylo.",
+        "Le vendeur parle d’un yaourt.",
+        "Théo prend aussi un yaourt.",
+        "Nora paie et range un rayon.",
+        "Sur le chemin, ils discutent d’un stylo.",
+        "À la maison, ils sortent encore un caddy."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand le cuisinier cherche le stylo près de Cyril, et Mary sourit près de Cyril."
+      "sentences": [
+        "Omar lit un message au marché.",
+        "Amira doit apporter un yaourt rapidement.",
+        "Omar part avec un stylo.",
+        "Ils se croisent près d’un caddy.",
+        "Amira donne un yaourt à Omar.",
+        "Omar vérifie un yaourt calmement.",
+        "Ensuite, ils déposent un stylo.",
+        "Une amie demande des nouvelles d’un caddy.",
+        "Plus tard, un rayon termine la journée."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Amira organise une activité au magasin.",
+        "Emma apporte un rayon dès le début.",
+        "Sur la table, on voit un rayon et un stylo.",
+        "Les enfants touchent un stylo à tour de rôle.",
+        "Amira explique le mot lié à un tuyau.",
+        "Emma dessine un tuyau au tableau.",
+        "Tout le monde écoute l’histoire d’un rayon.",
+        "Après l’exercice, ils rangent un stylo.",
+        "Amira note encore un crayon dans le cahier."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand la voisine montre le système près de Cyril, et Mary sourit près de Cyril."
+      "sentences": [
+        "Il pleut un peu au parc.",
+        "Karim protège un crayon sous le bras.",
+        "Maya tient un yaourt contre lui.",
+        "Ils entrent et posent un crayon.",
+        "Karim sèche un yaourt avec un chiffon.",
+        "Maya prépare un tuyau pour attendre.",
+        "Ils parlent calmement d’un crayon.",
+        "Quand la pluie cesse, un tuyau est prêt.",
+        "Ils repartent avec un caddy."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Omar et Maya révisent à la bibliothèque.",
+        "La leçon commence avec un crayon.",
+        "Omar lit une phrase sur un crayon.",
+        "Maya répète le mot un tuyau.",
+        "Ils écrivent un tuyau dans le cahier.",
+        "Une erreur apparaît près d’un yaourt.",
+        "Omar corrige et montre un yaourt.",
+        "Maya récite encore la phrase d’un crayon.",
+        "Avant de partir, ils relisent un stylo."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand le directeur range le type près de Cyril, et Mary sourit près de Cyril."
+      "sentences": [
+        "Théo visite un stand à la gare.",
+        "Sara désigne un yaourt du doigt.",
+        "Le guide présente un yaourt clairement.",
+        "Théo photographie un rayon.",
+        "Ils posent une question sur un rayon.",
+        "Sara note le détail d’un crayon.",
+        "Avant de partir, Théo achète un crayon.",
+        "Sara range un crayon dans le sac.",
+        "Sur le chemin du retour, ils parlent d’un stylo."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Maya prépare une surprise au café.",
+        "Théo cache un stylo derrière la porte.",
+        "Tout le monde cherche un stylo.",
+        "Maya donne un indice avec un rayon.",
+        "Théo trouve enfin un stylo.",
+        "Ils ouvrent aussi un yaourt.",
+        "Les amis rient autour d’un rayon.",
+        "Maya partage un yaourt avec le groupe.",
+        "La fête se termine près d’un caddy."
+      ]
+    },
+    {
+      "level": "b1",
+      "sentences": [
+        "Sofia commence la journée dans le jardin.",
+        "Adam apporte un caddy pour le groupe.",
+        "Ils placent un caddy au centre.",
+        "Sofia décrit un caddy à voix haute.",
+        "Adam ajoute un stylo à côté.",
+        "Le groupe compare un caddy et un stylo.",
+        "Ensuite, chacun touche un rayon.",
+        "Sofia résume le rôle d’un rayon.",
+        "Pour finir, Adam range un tuyau."
+      ]
     }
   ],
-  "type14": [
-    {
-      "level": "a1",
-      "sentence": "La professeure aide le jury chez Yves."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le boulanger choisit le labyrinthe au lycée."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le médecin lit le lycée avec Mary."
-    },
-    {
-      "level": "a1",
-      "sentence": "La tante écoute la lyre chez Yves."
-    },
-    {
-      "level": "a1",
-      "sentence": "La boulangère photographie le lys chez Yves."
-    },
-    {
-      "level": "a1",
-      "sentence": "La cousine apporte la myrtille avec Mary."
-    },
+  "type14Stories": [
     {
       "level": "a2",
-      "sentence": "Après le cours, Yann recopie la physique près de Cyril."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Mary repasse le pyjama au lycée."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Yves quitte la pyramide avec Mary."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Mary nourrit le python chez Yves."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Yann trouve le recyclage chez Yves."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Yves regarde le rythme près de Cyril."
+      "sentences": [
+        "Emma et Hugo se retrouvent au café.",
+        "Emma apporte un yaourt dans un sac.",
+        "Hugo pose un stylo sur la table.",
+        "Ils parlent d’abord d’un yaourt.",
+        "Puis Hugo montre un caddy à Emma.",
+        "Tout à coup, un yaourt tombe par terre.",
+        "Emma ramasse un yaourt et rit.",
+        "Hugo range un stylo et un caddy.",
+        "Avant de partir, ils vérifient encore un rayon.",
+        "Plus tard, Sofia revient au marché.",
+        "Nora rapporte un yaourt une seconde fois.",
+        "Ils vérifient encore un yaourt ensemble.",
+        "Sofia explique une nouvelle idée sur un crayon.",
+        "Nora écoute et regarde un crayon.",
+        "Le groupe accepte d’essayer un tuyau.",
+        "Après une pause, un tuyau change le plan.",
+        "Sofia montre le résultat près d’un yaourt.",
+        "Nora félicite tout le monde pour un crayon.",
+        "Avant la nuit, ils rangent un caddy."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand le collègue trouve le cyan au lycée, parce que Yves est chez Mary."
+      "sentences": [
+        "Ce matin, Sofia travaille à l’école.",
+        "Il prépare un yaourt avec soin.",
+        "Emma arrive et regarde un yaourt.",
+        "Ensemble, ils ajoutent un tuyau.",
+        "Sofia explique l’usage d’un tuyau.",
+        "Emma propose aussi un caddy.",
+        "Le travail avance grâce à un yaourt.",
+        "Ils placent un caddy près d’un tuyau.",
+        "À la fin, un stylo est prêt pour demain.",
+        "Plus tard, Léa revient au café.",
+        "Karim rapporte un caddy une seconde fois.",
+        "Ils vérifient encore un caddy ensemble.",
+        "Léa explique une nouvelle idée sur un crayon.",
+        "Karim écoute et regarde un crayon.",
+        "Le groupe accepte d’essayer un yaourt.",
+        "Après une pause, un yaourt change le plan.",
+        "Léa montre le résultat près d’un caddy.",
+        "Karim félicite tout le monde pour un crayon.",
+        "Avant la nuit, ils rangent un rayon."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Inès fait des courses à la gare.",
+        "Dans le panier, il y a déjà un crayon.",
+        "Hugo choisit un tuyau juste à côté.",
+        "Ils comparent un crayon et un tuyau.",
+        "Le vendeur parle d’un stylo.",
+        "Inès prend aussi un stylo.",
+        "Hugo paie et range un crayon.",
+        "Sur le chemin, ils discutent d’un tuyau.",
+        "À la maison, ils sortent encore un yaourt.",
+        "Plus tard, Léa revient au magasin.",
+        "Sofia rapporte un stylo une seconde fois.",
+        "Ils vérifient encore un stylo ensemble.",
+        "Léa explique une nouvelle idée sur un crayon.",
+        "Sofia écoute et regarde un crayon.",
+        "Le groupe accepte d’essayer un yaourt.",
+        "Après une pause, un yaourt change le plan.",
+        "Léa montre le résultat près d’un stylo.",
+        "Sofia félicite tout le monde pour un crayon.",
+        "Avant la nuit, ils rangent un rayon."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand le cousin caresse le cygne avec Mary, et Mary sourit près de Cyril."
+      "sentences": [
+        "Théo lit un message au marché.",
+        "Nora doit apporter un rayon rapidement.",
+        "Théo part avec un crayon.",
+        "Ils se croisent près d’un yaourt.",
+        "Nora donne un rayon à Théo.",
+        "Théo vérifie un rayon calmement.",
+        "Ensuite, ils déposent un crayon.",
+        "Une amie demande des nouvelles d’un yaourt.",
+        "Plus tard, un stylo termine la journée.",
+        "Plus tard, Théo revient au marché.",
+        "Sofia rapporte un tuyau une seconde fois.",
+        "Ils vérifient encore un tuyau ensemble.",
+        "Théo explique une nouvelle idée sur un stylo.",
+        "Sofia écoute et regarde un stylo.",
+        "Le groupe accepte d’essayer un yaourt.",
+        "Après une pause, un yaourt change le plan.",
+        "Théo montre le résultat près d’un tuyau.",
+        "Sofia félicite tout le monde pour un stylo.",
+        "Avant la nuit, ils rangent un caddy."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Sofia organise une activité dans le jardin.",
+        "Emma apporte un tuyau dès le début.",
+        "Sur la table, on voit un tuyau et un crayon.",
+        "Les enfants touchent un crayon à tour de rôle.",
+        "Sofia explique le mot lié à un rayon.",
+        "Emma dessine un rayon au tableau.",
+        "Tout le monde écoute l’histoire d’un tuyau.",
+        "Après l’exercice, ils rangent un crayon.",
+        "Sofia note encore un caddy dans le cahier.",
+        "Plus tard, Théo revient dans la cour.",
+        "Sara rapporte un rayon une seconde fois.",
+        "Ils vérifient encore un rayon ensemble.",
+        "Théo explique une nouvelle idée sur un stylo.",
+        "Sara écoute et regarde un stylo.",
+        "Le groupe accepte d’essayer un crayon.",
+        "Après une pause, un crayon change le plan.",
+        "Théo montre le résultat près d’un rayon.",
+        "Sara félicite tout le monde pour un stylo.",
+        "Avant la nuit, ils rangent un caddy."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand la factrice montre le cylindre près de Cyril, et Mary sourit près de Cyril."
+      "sentences": [
+        "Il pleut un peu à la gare.",
+        "Adam protège un crayon sous le bras.",
+        "Nora tient un tuyau contre lui.",
+        "Ils entrent et posent un crayon.",
+        "Adam sèche un tuyau avec un chiffon.",
+        "Nora prépare un yaourt pour attendre.",
+        "Ils parlent calmement d’un crayon.",
+        "Quand la pluie cesse, un yaourt est prêt.",
+        "Ils repartent avec un rayon.",
+        "Plus tard, Noah revient au marché.",
+        "Hugo rapporte un stylo une seconde fois.",
+        "Ils vérifient encore un stylo ensemble.",
+        "Noah explique une nouvelle idée sur un rayon.",
+        "Hugo écoute et regarde un rayon.",
+        "Le groupe accepte d’essayer un tuyau.",
+        "Après une pause, un tuyau change le plan.",
+        "Noah montre le résultat près d’un stylo.",
+        "Hugo félicite tout le monde pour un rayon.",
+        "Avant la nuit, ils rangent un crayon."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Sara et Yanis révisent au parc.",
+        "La leçon commence avec un crayon.",
+        "Sara lit une phrase sur un crayon.",
+        "Yanis répète le mot un stylo.",
+        "Ils écrivent un stylo dans le cahier.",
+        "Une erreur apparaît près d’un rayon.",
+        "Sara corrige et montre un rayon.",
+        "Yanis récite encore la phrase d’un crayon.",
+        "Avant de partir, ils relisent un yaourt.",
+        "Plus tard, Amira revient au parc.",
+        "Hugo rapporte un yaourt une seconde fois.",
+        "Ils vérifient encore un yaourt ensemble.",
+        "Amira explique une nouvelle idée sur un tuyau.",
+        "Hugo écoute et regarde un tuyau.",
+        "Le groupe accepte d’essayer un stylo.",
+        "Après une pause, un stylo change le plan.",
+        "Amira montre le résultat près d’un yaourt.",
+        "Hugo félicite tout le monde pour un tuyau.",
+        "Avant la nuit, ils rangent un caddy."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Yann visite une hygiène, et Mary sourit près de Cyril."
+      "sentences": [
+        "Yanis visite un stand au parc.",
+        "Liam désigne un caddy du doigt.",
+        "Le guide présente un caddy clairement.",
+        "Yanis photographie un rayon.",
+        "Ils posent une question sur un rayon.",
+        "Liam note le détail d’un tuyau.",
+        "Avant de partir, Yanis achète un tuyau.",
+        "Liam range un tuyau dans le sac.",
+        "Sur le chemin du retour, ils parlent d’un yaourt.",
+        "Plus tard, Omar revient dans la cour.",
+        "Léa rapporte un crayon une seconde fois.",
+        "Ils vérifient encore un crayon ensemble.",
+        "Omar explique une nouvelle idée sur un yaourt.",
+        "Léa écoute et regarde un yaourt.",
+        "Le groupe accepte d’essayer un tuyau.",
+        "Après une pause, un tuyau change le plan.",
+        "Omar montre le résultat près d’un crayon.",
+        "Léa félicite tout le monde pour un yaourt.",
+        "Avant la nuit, ils rangent un rayon."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Karim prépare une surprise au marché.",
+        "Omar cache un yaourt derrière la porte.",
+        "Tout le monde cherche un yaourt.",
+        "Karim donne un indice avec un crayon.",
+        "Omar trouve enfin un yaourt.",
+        "Ils ouvrent aussi un stylo.",
+        "Les amis rient autour d’un crayon.",
+        "Karim partage un stylo avec le groupe.",
+        "La fête se termine près d’un tuyau.",
+        "Plus tard, Théo revient dans la cuisine.",
+        "Emma rapporte un stylo une seconde fois.",
+        "Ils vérifient encore un stylo ensemble.",
+        "Théo explique une nouvelle idée sur un yaourt.",
+        "Emma écoute et regarde un yaourt.",
+        "Le groupe accepte d’essayer un caddy.",
+        "Après une pause, un caddy change le plan.",
+        "Théo montre le résultat près d’un stylo.",
+        "Emma félicite tout le monde pour un yaourt.",
+        "Avant la nuit, ils rangent un crayon."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Yves suit le jury, parce que Yves est chez Mary."
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand le cuisinier regarde le labyrinthe avec Mary, et Mary sourit près de Cyril."
+      "sentences": [
+        "Sara commence la journée au magasin.",
+        "Yanis apporte un yaourt pour le groupe.",
+        "Ils placent un yaourt au centre.",
+        "Sara décrit un yaourt à voix haute.",
+        "Yanis ajoute un tuyau à côté.",
+        "Le groupe compare un yaourt et un tuyau.",
+        "Ensuite, chacun touche un crayon.",
+        "Sara résume le rôle d’un crayon.",
+        "Pour finir, Yanis range un rayon.",
+        "Plus tard, Inès revient dans le jardin.",
+        "Adam rapporte un yaourt une seconde fois.",
+        "Ils vérifient encore un yaourt ensemble.",
+        "Inès explique une nouvelle idée sur un tuyau.",
+        "Adam écoute et regarde un tuyau.",
+        "Le groupe accepte d’essayer un caddy.",
+        "Après une pause, un caddy change le plan.",
+        "Inès montre le résultat près d’un yaourt.",
+        "Adam félicite tout le monde pour un tuyau.",
+        "Avant la nuit, ils rangent un crayon."
+      ]
     }
   ]
 }

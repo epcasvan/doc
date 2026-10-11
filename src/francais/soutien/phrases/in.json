@@ -2430,128 +2430,388 @@
       ]
     }
   ],
-  "type12": [
-    {
-      "level": "a1",
-      "sentence": "Le copain s’habille après le bain."
-    },
-    {
-      "level": "a1",
-      "sentence": "La grand-mère choisit la ceinture avec Inès."
-    },
-    {
-      "level": "a1",
-      "sentence": "La sœur suit le chemin avec Martin."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le garçon lit le cinq avec Inès."
-    },
+  "type12Stories": [
     {
       "level": "a2",
-      "sentence": "Ce matin, la voisine aime le matin dans le jardin."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le voisin photographie le moulin avec Inès."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, la cuisinière va chez le médecin dans le jardin."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Martin sent le pain avec soin."
+      "sentences": [
+        "Théo et Nora se retrouvent dans la cour.",
+        "Théo apporte un timbre dans un sac.",
+        "Nora pose un magazine sur la table.",
+        "Ils parlent d’abord d’un timbre.",
+        "Puis Nora montre un pain à Théo.",
+        "Tout à coup, un timbre tombe par terre.",
+        "Théo ramasse un timbre et rit.",
+        "Nora range un magazine et un pain.",
+        "Avant de partir, ils vérifient encore une chaîne."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la grand-mère range le timbre, et Inès sourit enfin bien."
+      "sentences": [
+        "Ce matin, Sara travaille à la bibliothèque.",
+        "Il prépare un vinaigre avec soin.",
+        "Sofia arrive et regarde un vinaigre.",
+        "Ensemble, ils ajoutent une chaîne.",
+        "Sara explique l’usage d’une chaîne.",
+        "Sofia propose aussi un lapin.",
+        "Le travail avance grâce à un vinaigre.",
+        "Ils placent un lapin près d’une chaîne.",
+        "À la fin, un timbre est prêt pour demain."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Yanis fait des courses à la gare.",
+        "Dans le panier, il y a déjà un timbre.",
+        "Hugo choisit une farine juste à côté.",
+        "Ils comparent un timbre et une farine.",
+        "Le vendeur parle d’une chaîne.",
+        "Yanis prend aussi une chaîne.",
+        "Hugo paie et range un timbre.",
+        "Sur le chemin, ils discutent d’une farine.",
+        "À la maison, ils sortent encore un lapin."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la maman préfère le train, et Inès sourit enfin bien."
+      "sentences": [
+        "Karim lit un message à l’école.",
+        "Inès doit apporter un robinet rapidement.",
+        "Karim part avec un lapin.",
+        "Ils se croisent près d’un timbre.",
+        "Inès donne un robinet à Karim.",
+        "Karim vérifie un robinet calmement.",
+        "Ensuite, ils déposent un lapin.",
+        "Une amie demande des nouvelles d’un timbre.",
+        "Plus tard, un vinaigre termine la journée."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Liam organise une activité au parc.",
+        "Sofia apporte un timbre dès le début.",
+        "Sur la table, on voit un timbre et un robinet.",
+        "Les enfants touchent un robinet à tour de rôle.",
+        "Liam explique le mot lié à une chaîne.",
+        "Sofia dessine une chaîne au tableau.",
+        "Tout le monde écoute l’histoire d’un timbre.",
+        "Après l’exercice, ils rangent un robinet.",
+        "Liam note encore une farine dans le cahier."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le garçon apporte le vin, et Inès sourit enfin bien."
+      "sentences": [
+        "Il pleut un peu au magasin.",
+        "Emma protège une farine sous le bras.",
+        "Maya tient un raisin contre lui.",
+        "Ils entrent et posent une farine.",
+        "Emma sèche un raisin avec un chiffon.",
+        "Maya prépare un lapin pour attendre.",
+        "Ils parlent calmement d’une farine.",
+        "Quand la pluie cesse, un lapin est prêt.",
+        "Ils repartent avec un vinaigre."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Omar et Noah révisent au parc.",
+        "La leçon commence avec une farine.",
+        "Omar lit une phrase sur une farine.",
+        "Noah répète le mot un vinaigre.",
+        "Ils écrivent un vinaigre dans le cahier.",
+        "Une erreur apparaît près d’un raisin.",
+        "Omar corrige et montre un raisin.",
+        "Noah récite encore la phrase d’une farine.",
+        "Avant de partir, ils relisent un timbre."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la cuisinière salue le voisin, parce que Martin sourit aussi."
+      "sentences": [
+        "Maya visite un stand à l’école.",
+        "Emma désigne un magazine du doigt.",
+        "Le guide présente un magazine clairement.",
+        "Maya photographie un pain.",
+        "Ils posent une question sur un pain.",
+        "Emma note le détail d’un lapin.",
+        "Avant de partir, Maya achète un lapin.",
+        "Emma range un lapin dans le sac.",
+        "Sur le chemin du retour, ils parlent d’une farine."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Nora prépare une surprise à la gare.",
+        "Liam cache un robinet derrière la porte.",
+        "Tout le monde cherche un robinet.",
+        "Nora donne un indice avec un lapin.",
+        "Liam trouve enfin un robinet.",
+        "Ils ouvrent aussi une farine.",
+        "Les amis rient autour d’un lapin.",
+        "Nora partage une farine avec le groupe.",
+        "La fête se termine près d’un vinaigre."
+      ]
+    },
+    {
+      "level": "b1",
+      "sentences": [
+        "Léa commence la journée au café.",
+        "Maya apporte une chaîne pour le groupe.",
+        "Ils placent une chaîne au centre.",
+        "Léa décrit une chaîne à voix haute.",
+        "Maya ajoute un lapin à côté.",
+        "Le groupe compare une chaîne et un lapin.",
+        "Ensuite, chacun touche un raisin.",
+        "Léa résume le rôle d’un raisin.",
+        "Pour finir, Maya range une farine."
+      ]
     }
   ],
-  "type14": [
-    {
-      "level": "a1",
-      "sentence": "Le copain soigne le dauphin."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le collègue signe le dessin avec Martin."
-    },
-    {
-      "level": "a1",
-      "sentence": "La fille prend le frein enfin."
-    },
-    {
-      "level": "a1",
-      "sentence": "Christine joue dans le jardin."
-    },
-    {
-      "level": "a1",
-      "sentence": "Quentin entre dans le magasin."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le cuisinier lève la main."
-    },
+  "type14Stories": [
     {
       "level": "a2",
-      "sentence": "Ce matin, la musicienne salue le peintre avec Inès."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Christine joue avec la peinture dans le jardin."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la cousine oublie le plein dans le jardin."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le cousin partage le raisin avec Inès."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le médecin plante le sapin avec Inès."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Christine soigne le singe enfin."
+      "sentences": [
+        "Yanis et Sofia se retrouvent à la bibliothèque.",
+        "Yanis apporte un robinet dans un sac.",
+        "Sofia pose un timbre sur la table.",
+        "Ils parlent d’abord d’un robinet.",
+        "Puis Sofia montre un pain à Yanis.",
+        "Tout à coup, un robinet tombe par terre.",
+        "Yanis ramasse un robinet et rit.",
+        "Sofia range un timbre et un pain.",
+        "Avant de partir, ils vérifient encore un vinaigre.",
+        "Plus tard, Sofia revient dans la cuisine.",
+        "Karim rapporte un pain une seconde fois.",
+        "Ils vérifient encore un pain ensemble.",
+        "Sofia explique une nouvelle idée sur un lapin.",
+        "Karim écoute et regarde un lapin.",
+        "Le groupe accepte d’essayer un vinaigre.",
+        "Après une pause, un vinaigre change le plan.",
+        "Sofia montre le résultat près d’un pain.",
+        "Karim félicite tout le monde pour un lapin.",
+        "Avant la nuit, ils rangent un magazine."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la maîtresse s’habille après le bain, et Inès sourit enfin bien."
+      "sentences": [
+        "Ce matin, Sara travaille à la gare.",
+        "Il prépare un pain avec soin.",
+        "Noah arrive et regarde un pain.",
+        "Ensemble, ils ajoutent un vinaigre.",
+        "Sara explique l’usage d’un vinaigre.",
+        "Noah propose aussi un magazine.",
+        "Le travail avance grâce à un pain.",
+        "Ils placent un magazine près d’un vinaigre.",
+        "À la fin, un raisin est prêt pour demain.",
+        "Plus tard, Hugo revient au café.",
+        "Yanis rapporte un timbre une seconde fois.",
+        "Ils vérifient encore un timbre ensemble.",
+        "Hugo explique une nouvelle idée sur un robinet.",
+        "Yanis écoute et regarde un robinet.",
+        "Le groupe accepte d’essayer un vinaigre.",
+        "Après une pause, un vinaigre change le plan.",
+        "Hugo montre le résultat près d’un timbre.",
+        "Yanis félicite tout le monde pour un robinet.",
+        "Avant la nuit, ils rangent un pain."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Karim fait des courses dans la cour.",
+        "Dans le panier, il y a déjà un vinaigre.",
+        "Hugo choisit un raisin juste à côté.",
+        "Ils comparent un vinaigre et un raisin.",
+        "Le vendeur parle d’un timbre.",
+        "Karim prend aussi un timbre.",
+        "Hugo paie et range un vinaigre.",
+        "Sur le chemin, ils discutent d’un raisin.",
+        "À la maison, ils sortent encore un pain.",
+        "Plus tard, Yanis revient à la gare.",
+        "Liam rapporte un vinaigre une seconde fois.",
+        "Ils vérifient encore un vinaigre ensemble.",
+        "Yanis explique une nouvelle idée sur un raisin.",
+        "Liam écoute et regarde un raisin.",
+        "Le groupe accepte d’essayer une farine.",
+        "Après une pause, une farine change le plan.",
+        "Yanis montre le résultat près d’un vinaigre.",
+        "Liam félicite tout le monde pour un raisin.",
+        "Avant la nuit, ils rangent un timbre."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la sœur achète la ceinture, et Inès sourit enfin bien."
+      "sentences": [
+        "Omar lit un message à l’école.",
+        "Yanis doit apporter une chaîne rapidement.",
+        "Omar part avec un robinet.",
+        "Ils se croisent près d’un magazine.",
+        "Yanis donne une chaîne à Omar.",
+        "Omar vérifie une chaîne calmement.",
+        "Ensuite, ils déposent un robinet.",
+        "Une amie demande des nouvelles d’un magazine.",
+        "Plus tard, un raisin termine la journée.",
+        "Plus tard, Karim revient dans la cour.",
+        "Maya rapporte un pain une seconde fois.",
+        "Ils vérifient encore un pain ensemble.",
+        "Karim explique une nouvelle idée sur un lapin.",
+        "Maya écoute et regarde un lapin.",
+        "Le groupe accepte d’essayer un raisin.",
+        "Après une pause, un raisin change le plan.",
+        "Karim montre le résultat près d’un pain.",
+        "Maya félicite tout le monde pour un lapin.",
+        "Avant la nuit, ils rangent un timbre."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Liam organise une activité au café.",
+        "Emma apporte un magazine dès le début.",
+        "Sur la table, on voit un magazine et un timbre.",
+        "Les enfants touchent un timbre à tour de rôle.",
+        "Liam explique le mot lié à un pain.",
+        "Emma dessine un pain au tableau.",
+        "Tout le monde écoute l’histoire d’un magazine.",
+        "Après l’exercice, ils rangent un timbre.",
+        "Liam note encore un lapin dans le cahier.",
+        "Plus tard, Liam revient au magasin.",
+        "Karim rapporte un vinaigre une seconde fois.",
+        "Ils vérifient encore un vinaigre ensemble.",
+        "Liam explique une nouvelle idée sur une farine.",
+        "Karim écoute et regarde une farine.",
+        "Le groupe accepte d’essayer un pain.",
+        "Après une pause, un pain change le plan.",
+        "Liam montre le résultat près d’un vinaigre.",
+        "Karim félicite tout le monde pour une farine.",
+        "Avant la nuit, ils rangent un magazine."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la jardinière explique le chemin, parce que Martin sourit aussi."
+      "sentences": [
+        "Il pleut un peu au marché.",
+        "Inès protège un timbre sous le bras.",
+        "Adam tient un pain contre lui.",
+        "Ils entrent et posent un timbre.",
+        "Inès sèche un pain avec un chiffon.",
+        "Adam prépare un robinet pour attendre.",
+        "Ils parlent calmement d’un timbre.",
+        "Quand la pluie cesse, un robinet est prêt.",
+        "Ils repartent avec un lapin.",
+        "Plus tard, Noah revient dans le jardin.",
+        "Yanis rapporte un raisin une seconde fois.",
+        "Ils vérifient encore un raisin ensemble.",
+        "Noah explique une nouvelle idée sur un timbre.",
+        "Yanis écoute et regarde un timbre.",
+        "Le groupe accepte d’essayer un vinaigre.",
+        "Après une pause, un vinaigre change le plan.",
+        "Noah montre le résultat près d’un raisin.",
+        "Yanis félicite tout le monde pour un timbre.",
+        "Avant la nuit, ils rangent un pain."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Maya et Inès révisent au marché.",
+        "La leçon commence avec une farine.",
+        "Maya lit une phrase sur une farine.",
+        "Inès répète le mot un timbre.",
+        "Ils écrivent un timbre dans le cahier.",
+        "Une erreur apparaît près d’un lapin.",
+        "Maya corrige et montre un lapin.",
+        "Inès récite encore la phrase d’une farine.",
+        "Avant de partir, ils relisent un robinet.",
+        "Plus tard, Emma revient au café.",
+        "Maya rapporte une chaîne une seconde fois.",
+        "Ils vérifient encore une chaîne ensemble.",
+        "Emma explique une nouvelle idée sur un magazine.",
+        "Maya écoute et regarde un magazine.",
+        "Le groupe accepte d’essayer un vinaigre.",
+        "Après une pause, un vinaigre change le plan.",
+        "Emma montre le résultat près d’une chaîne.",
+        "Maya félicite tout le monde pour un magazine.",
+        "Avant la nuit, ils rangent un timbre."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le jardinier écrit le cinq, et Inès sourit enfin bien."
+      "sentences": [
+        "Noah visite un stand au café.",
+        "Hugo désigne un raisin du doigt.",
+        "Le guide présente un raisin clairement.",
+        "Noah photographie un vinaigre.",
+        "Ils posent une question sur un vinaigre.",
+        "Hugo note le détail d’une chaîne.",
+        "Avant de partir, Noah achète une chaîne.",
+        "Hugo range une chaîne dans le sac.",
+        "Sur le chemin du retour, ils parlent d’un pain.",
+        "Plus tard, Adam revient à la gare.",
+        "Sofia rapporte un timbre une seconde fois.",
+        "Ils vérifient encore un timbre ensemble.",
+        "Adam explique une nouvelle idée sur un vinaigre.",
+        "Sofia écoute et regarde un vinaigre.",
+        "Le groupe accepte d’essayer une chaîne.",
+        "Après une pause, une chaîne change le plan.",
+        "Adam montre le résultat près d’un timbre.",
+        "Sofia félicite tout le monde pour un vinaigre.",
+        "Avant la nuit, ils rangent un robinet."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Amira prépare une surprise dans le jardin.",
+        "Omar cache un timbre derrière la porte.",
+        "Tout le monde cherche un timbre.",
+        "Amira donne un indice avec un raisin.",
+        "Omar trouve enfin un timbre.",
+        "Ils ouvrent aussi un pain.",
+        "Les amis rient autour d’un raisin.",
+        "Amira partage un pain avec le groupe.",
+        "La fête se termine près d’un vinaigre.",
+        "Plus tard, Sara revient au magasin.",
+        "Noah rapporte un magazine une seconde fois.",
+        "Ils vérifient encore un magazine ensemble.",
+        "Sara explique une nouvelle idée sur un raisin.",
+        "Noah écoute et regarde un raisin.",
+        "Le groupe accepte d’essayer un robinet.",
+        "Après une pause, un robinet change le plan.",
+        "Sara montre le résultat près d’un magazine.",
+        "Noah félicite tout le monde pour un raisin.",
+        "Avant la nuit, ils rangent une chaîne."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Martin voit le dauphin enfin, parce que Martin sourit aussi."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le directeur finit le dessin, et Inès sourit enfin bien."
+      "sentences": [
+        "Omar commence la journée dans le jardin.",
+        "Inès apporte un robinet pour le groupe.",
+        "Ils placent un robinet au centre.",
+        "Omar décrit un robinet à voix haute.",
+        "Inès ajoute un raisin à côté.",
+        "Le groupe compare un robinet et un raisin.",
+        "Ensuite, chacun touche un pain.",
+        "Omar résume le rôle d’un pain.",
+        "Pour finir, Inès range une chaîne.",
+        "Plus tard, Yanis revient dans le jardin.",
+        "Liam rapporte une farine une seconde fois.",
+        "Ils vérifient encore une farine ensemble.",
+        "Yanis explique une nouvelle idée sur une chaîne.",
+        "Liam écoute et regarde une chaîne.",
+        "Le groupe accepte d’essayer un vinaigre.",
+        "Après une pause, un vinaigre change le plan.",
+        "Yanis montre le résultat près d’une farine.",
+        "Liam félicite tout le monde pour une chaîne.",
+        "Avant la nuit, ils rangent un raisin."
+      ]
     }
   ]
 }

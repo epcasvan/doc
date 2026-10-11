@@ -2475,128 +2475,388 @@
       ]
     }
   ],
-  "type12": [
-    {
-      "level": "a1",
-      "sentence": "La boulangère porte la bague."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le boulanger sert la figue."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le grand-père perd le gant."
-    },
-    {
-      "level": "a1",
-      "sentence": "La maman nettoie le garage."
-    },
+  "type12Stories": [
     {
       "level": "a2",
-      "sentence": "Après le cours, Hugo regarde le goujon avec Guy."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le garçon photographie la goutte avec Hugo."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le cuisinier sert le goûter dans le garage."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la factrice goûte la grappe avec Hugo."
+      "sentences": [
+        "Léa et Hugo se retrouvent au café.",
+        "Léa apporte une glace dans un sac.",
+        "Hugo pose un gant sur la table.",
+        "Ils parlent d’abord d’une glace.",
+        "Puis Hugo montre une bague à Léa.",
+        "Tout à coup, une glace tombe par terre.",
+        "Léa ramasse une glace et rit.",
+        "Hugo range un gant et une bague.",
+        "Avant de partir, ils vérifient encore un magazine."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand le boulanger choisit le légume à la gare, et Gaston est très content."
+      "sentences": [
+        "Ce matin, Adam travaille à la bibliothèque.",
+        "Il prépare un magazine avec soin.",
+        "Omar arrive et regarde un magazine.",
+        "Ensemble, ils ajoutent une orange.",
+        "Adam explique l’usage d’une orange.",
+        "Omar propose aussi une glace.",
+        "Le travail avance grâce à un magazine.",
+        "Ils placent une glace près d’une orange.",
+        "À la fin, un hamburger est prêt pour demain."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Liam fait des courses dans la cuisine.",
+        "Dans le panier, il y a déjà une gomme.",
+        "Emma choisit un magazine juste à côté.",
+        "Ils comparent une gomme et un magazine.",
+        "Le vendeur parle d’un gant.",
+        "Liam prend aussi un gant.",
+        "Emma paie et range une gomme.",
+        "Sur le chemin, ils discutent d’un magazine.",
+        "À la maison, ils sortent encore un oignon."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand le copain plante la vague dans le garage, parce que Hugo est content aussi."
+      "sentences": [
+        "Maya lit un message à la bibliothèque.",
+        "Sara doit apporter un magazine rapidement.",
+        "Maya part avec un fromage.",
+        "Ils se croisent près d’un peigne.",
+        "Sara donne un magazine à Maya.",
+        "Maya vérifie un magazine calmement.",
+        "Ensuite, ils déposent un fromage.",
+        "Une amie demande des nouvelles d’un peigne.",
+        "Plus tard, une bague termine la journée."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Yanis organise une activité dans la cour.",
+        "Emma apporte une glace dès le début.",
+        "Sur la table, on voit une glace et une règle.",
+        "Les enfants touchent une règle à tour de rôle.",
+        "Yanis explique le mot lié à un chargeur.",
+        "Emma dessine un chargeur au tableau.",
+        "Tout le monde écoute l’histoire d’une glace.",
+        "Après l’exercice, ils rangent une règle.",
+        "Yanis note encore une bague dans le cahier."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand le collègue porte la bague dans le garage, parce que Hugo est content aussi."
+      "sentences": [
+        "Il pleut un peu à la gare.",
+        "Maya protège un peigne sous le bras.",
+        "Sara tient une glace contre lui.",
+        "Ils entrent et posent un peigne.",
+        "Maya sèche une glace avec un chiffon.",
+        "Sara prépare un magazine pour attendre.",
+        "Ils parlent calmement d’un peigne.",
+        "Quand la pluie cesse, un magazine est prêt.",
+        "Ils repartent avec un gâteau."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Inès et Maya révisent à la bibliothèque.",
+        "La leçon commence avec une glace.",
+        "Inès lit une phrase sur une glace.",
+        "Maya répète le mot un magazine.",
+        "Ils écrivent un magazine dans le cahier.",
+        "Une erreur apparaît près d’une orange.",
+        "Inès corrige et montre une orange.",
+        "Maya récite encore la phrase d’une glace.",
+        "Avant de partir, ils relisent une bague."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand le cuisinier choisit la figue dans le garage, parce que Hugo est content aussi."
+      "sentences": [
+        "Maya visite un stand au marché.",
+        "Théo désigne une gomme du doigt.",
+        "Le guide présente une gomme clairement.",
+        "Maya photographie un peigne.",
+        "Ils posent une question sur un peigne.",
+        "Théo note le détail d’un chargeur.",
+        "Avant de partir, Maya achète un chargeur.",
+        "Théo range un chargeur dans le sac.",
+        "Sur le chemin du retour, ils parlent d’un oignon."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Sara prépare une surprise à l’école.",
+        "Inès cache un peigne derrière la porte.",
+        "Tout le monde cherche un peigne.",
+        "Sara donne un indice avec un magazine.",
+        "Inès trouve enfin un peigne.",
+        "Ils ouvrent aussi un chargeur.",
+        "Les amis rient autour d’un magazine.",
+        "Sara partage un chargeur avec le groupe.",
+        "La fête se termine près d’une orange."
+      ]
+    },
+    {
+      "level": "b1",
+      "sentences": [
+        "Théo commence la journée dans la cuisine.",
+        "Amira apporte un chargeur pour le groupe.",
+        "Ils placent un chargeur au centre.",
+        "Théo décrit un chargeur à voix haute.",
+        "Amira ajoute un hamburger à côté.",
+        "Le groupe compare un chargeur et un hamburger.",
+        "Ensuite, chacun touche une règle.",
+        "Théo résume le rôle d’une règle.",
+        "Pour finir, Amira range une bague."
+      ]
     }
   ],
-  "type14": [
-    {
-      "level": "a1",
-      "sentence": "Gaston arrive à la gare."
-    },
-    {
-      "level": "a1",
-      "sentence": "Gaston visite le gaz bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le copain achète la glace avec Hugo."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le médecin sert le gobelet avec Hugo."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le boulanger cherche la gomme."
-    },
-    {
-      "level": "a1",
-      "sentence": "La maîtresse regarde le gorille."
-    },
+  "type14Stories": [
     {
       "level": "a2",
-      "sentence": "Ce soir, le voisin apporte la griotte dans le garage."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le collègue console le groupe à la gare."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Gaston trouve la grue avec Hugo."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la grand-mère répare le guidon avec Hugo."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, la collègue commence la guitare avec Hugo."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, la boulangère goûte le gâteau avec Guy."
+      "sentences": [
+        "Liam et Léa se retrouvent à l’école.",
+        "Liam apporte une gomme dans un sac.",
+        "Léa pose un peigne sur la table.",
+        "Ils parlent d’abord d’une gomme.",
+        "Puis Léa montre une orange à Liam.",
+        "Tout à coup, une gomme tombe par terre.",
+        "Liam ramasse une gomme et rit.",
+        "Léa range un peigne et une orange.",
+        "Avant de partir, ils vérifient encore un magazine.",
+        "Plus tard, Noah revient à la bibliothèque.",
+        "Sofia rapporte un fromage une seconde fois.",
+        "Ils vérifient encore un fromage ensemble.",
+        "Noah explique une nouvelle idée sur un peigne.",
+        "Sofia écoute et regarde un peigne.",
+        "Le groupe accepte d’essayer un gant.",
+        "Après une pause, un gant change le plan.",
+        "Noah montre le résultat près d’un fromage.",
+        "Sofia félicite tout le monde pour un peigne.",
+        "Avant la nuit, ils rangent une glace."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand le musicien perd le gant dans le garage, parce que Hugo est content aussi."
+      "sentences": [
+        "Ce matin, Karim travaille au marché.",
+        "Il prépare une baguette avec soin.",
+        "Noah arrive et regarde une baguette.",
+        "Ensemble, ils ajoutent une glace.",
+        "Karim explique l’usage d’une glace.",
+        "Noah propose aussi un hamburger.",
+        "Le travail avance grâce à une baguette.",
+        "Ils placent un hamburger près d’une glace.",
+        "À la fin, un chargeur est prêt pour demain.",
+        "Plus tard, Adam revient au parc.",
+        "Omar rapporte un gant une seconde fois.",
+        "Ils vérifient encore un gant ensemble.",
+        "Adam explique une nouvelle idée sur un fromage.",
+        "Omar écoute et regarde un fromage.",
+        "Le groupe accepte d’essayer un magazine.",
+        "Après une pause, un magazine change le plan.",
+        "Adam montre le résultat près d’un gant.",
+        "Omar félicite tout le monde pour un fromage.",
+        "Avant la nuit, ils rangent un peigne."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Karim fait des courses dans la cuisine.",
+        "Dans le panier, il y a déjà un gâteau.",
+        "Emma choisit un oignon juste à côté.",
+        "Ils comparent un gâteau et un oignon.",
+        "Le vendeur parle d’une règle.",
+        "Karim prend aussi une règle.",
+        "Emma paie et range un gâteau.",
+        "Sur le chemin, ils discutent d’un oignon.",
+        "À la maison, ils sortent encore un fromage.",
+        "Plus tard, Adam revient dans la cour.",
+        "Hugo rapporte une gomme une seconde fois.",
+        "Ils vérifient encore une gomme ensemble.",
+        "Adam explique une nouvelle idée sur un gâteau.",
+        "Hugo écoute et regarde un gâteau.",
+        "Le groupe accepte d’essayer un peigne.",
+        "Après une pause, un peigne change le plan.",
+        "Adam montre le résultat près d’une gomme.",
+        "Hugo félicite tout le monde pour un gâteau.",
+        "Avant la nuit, ils rangent une baguette."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand la jardinière visite le garage avec Hugo, et Gaston est très content."
+      "sentences": [
+        "Yanis lit un message dans le jardin.",
+        "Emma doit apporter un gâteau rapidement.",
+        "Yanis part avec une bague.",
+        "Ils se croisent près d’un hamburger.",
+        "Emma donne un gâteau à Yanis.",
+        "Yanis vérifie un gâteau calmement.",
+        "Ensuite, ils déposent une bague.",
+        "Une amie demande des nouvelles d’un hamburger.",
+        "Plus tard, une orange termine la journée.",
+        "Plus tard, Maya revient dans la cuisine.",
+        "Nora rapporte une orange une seconde fois.",
+        "Ils vérifient encore une orange ensemble.",
+        "Maya explique une nouvelle idée sur une baguette.",
+        "Nora écoute et regarde une baguette.",
+        "Le groupe accepte d’essayer un peigne.",
+        "Après une pause, un peigne change le plan.",
+        "Maya montre le résultat près d’une orange.",
+        "Nora félicite tout le monde pour une baguette.",
+        "Avant la nuit, ils rangent un oignon."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Karim organise une activité à la bibliothèque.",
+        "Maya apporte un oignon dès le début.",
+        "Sur la table, on voit un oignon et une gomme.",
+        "Les enfants touchent une gomme à tour de rôle.",
+        "Karim explique le mot lié à une orange.",
+        "Maya dessine une orange au tableau.",
+        "Tout le monde écoute l’histoire d’un oignon.",
+        "Après l’exercice, ils rangent une gomme.",
+        "Karim note encore un magazine dans le cahier.",
+        "Plus tard, Hugo revient à la bibliothèque.",
+        "Inès rapporte un gâteau une seconde fois.",
+        "Ils vérifient encore un gâteau ensemble.",
+        "Hugo explique une nouvelle idée sur un fromage.",
+        "Inès écoute et regarde un fromage.",
+        "Le groupe accepte d’essayer une règle.",
+        "Après une pause, une règle change le plan.",
+        "Hugo montre le résultat près d’un gâteau.",
+        "Inès félicite tout le monde pour un fromage.",
+        "Avant la nuit, ils rangent un chargeur."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand Gaston débarque à la gare dans le garage, parce que Hugo est content aussi."
+      "sentences": [
+        "Il pleut un peu au magasin.",
+        "Nora protège un oignon sous le bras.",
+        "Inès tient une orange contre lui.",
+        "Ils entrent et posent un oignon.",
+        "Nora sèche une orange avec un chiffon.",
+        "Inès prépare une gomme pour attendre.",
+        "Ils parlent calmement d’un oignon.",
+        "Quand la pluie cesse, une gomme est prêt.",
+        "Ils repartent avec une glace.",
+        "Plus tard, Emma revient dans la cour.",
+        "Amira rapporte un magazine une seconde fois.",
+        "Ils vérifient encore un magazine ensemble.",
+        "Emma explique une nouvelle idée sur une baguette.",
+        "Amira écoute et regarde une baguette.",
+        "Le groupe accepte d’essayer un chargeur.",
+        "Après une pause, un chargeur change le plan.",
+        "Emma montre le résultat près d’un magazine.",
+        "Amira félicite tout le monde pour une baguette.",
+        "Avant la nuit, ils rangent une orange."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Inès et Hugo révisent au café.",
+        "La leçon commence avec une glace.",
+        "Inès lit une phrase sur une glace.",
+        "Hugo répète le mot un gâteau.",
+        "Ils écrivent un gâteau dans le cahier.",
+        "Une erreur apparaît près d’une bague.",
+        "Inès corrige et montre une bague.",
+        "Hugo récite encore la phrase d’une glace.",
+        "Avant de partir, ils relisent un chargeur.",
+        "Plus tard, Inès revient dans le jardin.",
+        "Adam rapporte un fromage une seconde fois.",
+        "Ils vérifient encore un fromage ensemble.",
+        "Inès explique une nouvelle idée sur un magazine.",
+        "Adam écoute et regarde un magazine.",
+        "Le groupe accepte d’essayer une bague.",
+        "Après une pause, une bague change le plan.",
+        "Inès montre le résultat près d’un fromage.",
+        "Adam félicite tout le monde pour un magazine.",
+        "Avant la nuit, ils rangent une gomme."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand le boulanger ferme le gaz dans le garage, parce que Hugo est content aussi."
+      "sentences": [
+        "Yanis visite un stand dans la cuisine.",
+        "Liam désigne une orange du doigt.",
+        "Le guide présente une orange clairement.",
+        "Yanis photographie un fromage.",
+        "Ils posent une question sur un fromage.",
+        "Liam note le détail d’un magazine.",
+        "Avant de partir, Yanis achète un magazine.",
+        "Liam range un magazine dans le sac.",
+        "Sur le chemin du retour, ils parlent d’un chargeur.",
+        "Plus tard, Inès revient dans le jardin.",
+        "Omar rapporte un hamburger une seconde fois.",
+        "Ils vérifient encore un hamburger ensemble.",
+        "Inès explique une nouvelle idée sur une bague.",
+        "Omar écoute et regarde une bague.",
+        "Le groupe accepte d’essayer un gâteau.",
+        "Après une pause, un gâteau change le plan.",
+        "Inès montre le résultat près d’un hamburger.",
+        "Omar félicite tout le monde pour une bague.",
+        "Avant la nuit, ils rangent une orange."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Inès prépare une surprise dans le jardin.",
+        "Léa cache un magazine derrière la porte.",
+        "Tout le monde cherche un magazine.",
+        "Inès donne un indice avec une gomme.",
+        "Léa trouve enfin un magazine.",
+        "Ils ouvrent aussi une bague.",
+        "Les amis rient autour d’une gomme.",
+        "Inès partage une bague avec le groupe.",
+        "La fête se termine près d’un chargeur.",
+        "Plus tard, Inès revient dans le jardin.",
+        "Léa rapporte un hamburger une seconde fois.",
+        "Ils vérifient encore un hamburger ensemble.",
+        "Inès explique une nouvelle idée sur un magazine.",
+        "Léa écoute et regarde un magazine.",
+        "Le groupe accepte d’essayer un peigne.",
+        "Après une pause, un peigne change le plan.",
+        "Inès montre le résultat près d’un hamburger.",
+        "Léa félicite tout le monde pour un magazine.",
+        "Avant la nuit, ils rangent un gant."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand la jardinière glisse sur la glace à la gare, et Gaston est très content."
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand la maman choisit le gobelet dans le garage, parce que Hugo est content aussi."
+      "sentences": [
+        "Emma commence la journée à l’école.",
+        "Omar apporte un hamburger pour le groupe.",
+        "Ils placent un hamburger au centre.",
+        "Emma décrit un hamburger à voix haute.",
+        "Omar ajoute une bague à côté.",
+        "Le groupe compare un hamburger et une bague.",
+        "Ensuite, chacun touche un gâteau.",
+        "Emma résume le rôle d’un gâteau.",
+        "Pour finir, Omar range un peigne.",
+        "Plus tard, Noah revient au café.",
+        "Emma rapporte une bague une seconde fois.",
+        "Ils vérifient encore une bague ensemble.",
+        "Noah explique une nouvelle idée sur un chargeur.",
+        "Emma écoute et regarde un chargeur.",
+        "Le groupe accepte d’essayer une orange.",
+        "Après une pause, une orange change le plan.",
+        "Noah montre le résultat près d’une bague.",
+        "Emma félicite tout le monde pour un chargeur.",
+        "Avant la nuit, ils rangent une baguette."
+      ]
     }
   ]
 }

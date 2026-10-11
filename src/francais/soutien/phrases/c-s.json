@@ -2193,128 +2193,388 @@
       ]
     }
   ],
-  "type12": [
-    {
-      "level": "a1",
-      "sentence": "La maman joue avec la balançoire."
-    },
-    {
-      "level": "a1",
-      "sentence": "La professeure coupe le cassis."
-    },
-    {
-      "level": "a1",
-      "sentence": "Alice enfile la ceinture bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La musicienne gagne le cerceau."
-    },
+  "type12Stories": [
     {
       "level": "a2",
-      "sentence": "Avant le repas, un ami mange le céleri avec Cécile."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le voisin corrige un exercice merci."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le grand-père visite la façade merci."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, une amie appelle le garçon ici aussi."
+      "sentences": [
+        "Emma et Sara se retrouvent au café.",
+        "Emma apporte un cacao dans un sac.",
+        "Sara pose un caddie sur la table.",
+        "Ils parlent d’abord d’un cacao.",
+        "Puis Sara montre une caisse à Emma.",
+        "Tout à coup, un cacao tombe par terre.",
+        "Emma ramasse un cacao et rit.",
+        "Sara range un caddie et une caisse.",
+        "Avant de partir, ils vérifient encore une balance."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le cuisinier voit la police, parce que Cécile est ici aussi."
+      "sentences": [
+        "Ce matin, Inès travaille dans le jardin.",
+        "Il prépare une caisse avec soin.",
+        "Hugo arrive et regarde une caisse.",
+        "Ensemble, ils ajoutent un cable.",
+        "Inès explique l’usage d’un cable.",
+        "Hugo propose aussi un caddie.",
+        "Le travail avance grâce à une caisse.",
+        "Ils placent un caddie près d’un cable.",
+        "À la fin, une cerise est prêt pour demain."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Hugo fait des courses à l’école.",
+        "Dans le panier, il y a déjà un citron.",
+        "Karim choisit un caddie juste à côté.",
+        "Ils comparent un citron et un caddie.",
+        "Le vendeur parle d’une affiche.",
+        "Hugo prend aussi une affiche.",
+        "Karim paie et range un citron.",
+        "Sur le chemin, ils discutent d’un caddie.",
+        "À la maison, ils sortent encore un café."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Alice prend le reçu, et Alice dit un grand merci."
+      "sentences": [
+        "Léa lit un message au marché.",
+        "Inès doit apporter un citron rapidement.",
+        "Léa part avec un cable.",
+        "Ils se croisent près d’une affiche.",
+        "Inès donne un citron à Léa.",
+        "Léa vérifie un citron calmement.",
+        "Ensuite, ils déposent un cable.",
+        "Une amie demande des nouvelles d’une affiche.",
+        "Plus tard, un cahier termine la journée."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Adam organise une activité à l’école.",
+        "Yanis apporte une affiche dès le début.",
+        "Sur la table, on voit une affiche et un caddy.",
+        "Les enfants touchent un caddy à tour de rôle.",
+        "Adam explique le mot lié à un café.",
+        "Yanis dessine un café au tableau.",
+        "Tout le monde écoute l’histoire d’une affiche.",
+        "Après l’exercice, ils rangent un caddy.",
+        "Adam note encore un citron dans le cahier."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la musicienne regarde la balançoire, et Alice dit un grand merci."
+      "sentences": [
+        "Il pleut un peu au café.",
+        "Amira protège un caddie sous le bras.",
+        "Yanis tient un canard contre lui.",
+        "Ils entrent et posent un caddie.",
+        "Amira sèche un canard avec un chiffon.",
+        "Yanis prépare un cacao pour attendre.",
+        "Ils parlent calmement d’un caddie.",
+        "Quand la pluie cesse, un cacao est prêt.",
+        "Ils repartent avec une glace."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Adam et Karim révisent au parc.",
+        "La leçon commence avec une affiche.",
+        "Adam lit une phrase sur une affiche.",
+        "Karim répète le mot un cahier.",
+        "Ils écrivent un cahier dans le cahier.",
+        "Une erreur apparaît près d’une branche.",
+        "Adam corrige et montre une branche.",
+        "Karim récite encore la phrase d’une affiche.",
+        "Avant de partir, ils relisent un caddy."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la cuisinière sert le cassis, parce que Cécile est ici aussi."
+      "sentences": [
+        "Karim visite un stand au marché.",
+        "Inès désigne un cahier du doigt.",
+        "Le guide présente un cahier clairement.",
+        "Karim photographie un biscuit.",
+        "Ils posent une question sur un biscuit.",
+        "Inès note le détail d’un caddy.",
+        "Avant de partir, Karim achète un caddy.",
+        "Inès range un caddy dans le sac.",
+        "Sur le chemin du retour, ils parlent d’un café."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Yanis prépare une surprise à la gare.",
+        "Sara cache une caisse derrière la porte.",
+        "Tout le monde cherche une caisse.",
+        "Yanis donne un indice avec une balance.",
+        "Sara trouve enfin une caisse.",
+        "Ils ouvrent aussi un citron.",
+        "Les amis rient autour d’une balance.",
+        "Yanis partage un citron avec le groupe.",
+        "La fête se termine près d’un biscuit."
+      ]
+    },
+    {
+      "level": "b1",
+      "sentences": [
+        "Inès commence la journée au café.",
+        "Yanis apporte une caisse pour le groupe.",
+        "Ils placent une caisse au centre.",
+        "Inès décrit une caisse à voix haute.",
+        "Yanis ajoute un biscuit à côté.",
+        "Le groupe compare une caisse et un biscuit.",
+        "Ensuite, chacun touche un café.",
+        "Inès résume le rôle d’un café.",
+        "Pour finir, Yanis range un cahier."
+      ]
     }
   ],
-  "type14": [
-    {
-      "level": "a1",
-      "sentence": "Le papa étudie le cercle."
-    },
-    {
-      "level": "a1",
-      "sentence": "Francis sert la cerise bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le collègue regarde le cerveau."
-    },
-    {
-      "level": "a1",
-      "sentence": "La jardinière joue avec le cinéma."
-    },
-    {
-      "level": "a1",
-      "sentence": "Cyril mange le citron bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La collègue regarde le cygne."
-    },
+  "type14Stories": [
     {
       "level": "a2",
-      "sentence": "Ce soir, la fille patine sur la glace merci."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le médecin choisit le glaçon ici aussi."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le papa sait la leçon avec Cécile."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, un ami visite la pharmacie avec Alice."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, la grand-mère bronze près de la piscine merci."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le directeur contourne la place merci."
+      "sentences": [
+        "Amira et Nora se retrouvent à l’école.",
+        "Amira apporte une balance dans un sac.",
+        "Nora pose une cerise sur la table.",
+        "Ils parlent d’abord d’une balance.",
+        "Puis Nora montre un citron à Amira.",
+        "Tout à coup, une balance tombe par terre.",
+        "Amira ramasse une balance et rit.",
+        "Nora range une cerise et un citron.",
+        "Avant de partir, ils vérifient encore un cable.",
+        "Plus tard, Théo revient dans le jardin.",
+        "Noah rapporte une caisse une seconde fois.",
+        "Ils vérifient encore une caisse ensemble.",
+        "Théo explique une nouvelle idée sur une balance.",
+        "Noah écoute et regarde une balance.",
+        "Le groupe accepte d’essayer un caddie.",
+        "Après une pause, un caddie change le plan.",
+        "Théo montre le résultat près d’une caisse.",
+        "Noah félicite tout le monde pour une balance.",
+        "Avant la nuit, ils rangent une glace."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le professeur range la ceinture, parce que Cécile est ici aussi."
+      "sentences": [
+        "Ce matin, Théo travaille au marché.",
+        "Il prépare un cacao avec soin.",
+        "Liam arrive et regarde un cacao.",
+        "Ensemble, ils ajoutent un citron.",
+        "Théo explique l’usage d’un citron.",
+        "Liam propose aussi une caisse.",
+        "Le travail avance grâce à un cacao.",
+        "Ils placent une caisse près d’un citron.",
+        "À la fin, un biscuit est prêt pour demain.",
+        "Plus tard, Omar revient à l’école.",
+        "Karim rapporte une affiche une seconde fois.",
+        "Ils vérifient encore une affiche ensemble.",
+        "Omar explique une nouvelle idée sur un caddie.",
+        "Karim écoute et regarde un caddie.",
+        "Le groupe accepte d’essayer un caddy.",
+        "Après une pause, un caddy change le plan.",
+        "Omar montre le résultat près d’une affiche.",
+        "Karim félicite tout le monde pour un caddie.",
+        "Avant la nuit, ils rangent une cerise."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Noah fait des courses dans la cour.",
+        "Dans le panier, il y a déjà un cahier.",
+        "Hugo choisit une branche juste à côté.",
+        "Ils comparent un cahier et une branche.",
+        "Le vendeur parle d’un citron.",
+        "Noah prend aussi un citron.",
+        "Hugo paie et range un cahier.",
+        "Sur le chemin, ils discutent d’une branche.",
+        "À la maison, ils sortent encore un café.",
+        "Plus tard, Noah revient à la bibliothèque.",
+        "Yanis rapporte un biscuit une seconde fois.",
+        "Ils vérifient encore un biscuit ensemble.",
+        "Noah explique une nouvelle idée sur une affiche.",
+        "Yanis écoute et regarde une affiche.",
+        "Le groupe accepte d’essayer un cahier.",
+        "Après une pause, un cahier change le plan.",
+        "Noah montre le résultat près d’un biscuit.",
+        "Yanis félicite tout le monde pour une affiche.",
+        "Avant la nuit, ils rangent un cacao."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Cécile regarde le cerceau, parce que Cécile est ici aussi."
+      "sentences": [
+        "Nora lit un message dans la cour.",
+        "Sofia doit apporter un citron rapidement.",
+        "Nora part avec un biscuit.",
+        "Ils se croisent près d’une caisse.",
+        "Sofia donne un citron à Nora.",
+        "Nora vérifie un citron calmement.",
+        "Ensuite, ils déposent un biscuit.",
+        "Une amie demande des nouvelles d’une caisse.",
+        "Plus tard, un cahier termine la journée.",
+        "Plus tard, Théo revient à la gare.",
+        "Emma rapporte une affiche une seconde fois.",
+        "Ils vérifient encore une affiche ensemble.",
+        "Théo explique une nouvelle idée sur un caddy.",
+        "Emma écoute et regarde un caddy.",
+        "Le groupe accepte d’essayer un cacao.",
+        "Après une pause, un cacao change le plan.",
+        "Théo montre le résultat près d’une affiche.",
+        "Emma félicite tout le monde pour un caddy.",
+        "Avant la nuit, ils rangent un cahier."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Emma organise une activité à la gare.",
+        "Sofia apporte un cable dès le début.",
+        "Sur la table, on voit un cable et une caisse.",
+        "Les enfants touchent une caisse à tour de rôle.",
+        "Emma explique le mot lié à une cerise.",
+        "Sofia dessine une cerise au tableau.",
+        "Tout le monde écoute l’histoire d’un cable.",
+        "Après l’exercice, ils rangent une caisse.",
+        "Emma note encore une branche dans le cahier.",
+        "Plus tard, Karim revient dans la cuisine.",
+        "Nora rapporte un cacao une seconde fois.",
+        "Ils vérifient encore un cacao ensemble.",
+        "Karim explique une nouvelle idée sur un citron.",
+        "Nora écoute et regarde un citron.",
+        "Le groupe accepte d’essayer une cerise.",
+        "Après une pause, une cerise change le plan.",
+        "Karim montre le résultat près d’un cacao.",
+        "Nora félicite tout le monde pour un citron.",
+        "Avant la nuit, ils rangent un caddy."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le médecin écrit le cercle, et Alice dit un grand merci."
+      "sentences": [
+        "Il pleut un peu dans la cuisine.",
+        "Nora protège un cable sous le bras.",
+        "Théo tient une glace contre lui.",
+        "Ils entrent et posent un cable.",
+        "Nora sèche une glace avec un chiffon.",
+        "Théo prépare un biscuit pour attendre.",
+        "Ils parlent calmement d’un cable.",
+        "Quand la pluie cesse, un biscuit est prêt.",
+        "Ils repartent avec une cerise.",
+        "Plus tard, Omar revient dans la cour.",
+        "Inès rapporte un cacao une seconde fois.",
+        "Ils vérifient encore un cacao ensemble.",
+        "Omar explique une nouvelle idée sur un cahier.",
+        "Inès écoute et regarde un cahier.",
+        "Le groupe accepte d’essayer un canard.",
+        "Après une pause, un canard change le plan.",
+        "Omar montre le résultat près d’un cacao.",
+        "Inès félicite tout le monde pour un cahier.",
+        "Avant la nuit, ils rangent un citron."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Hugo et Karim révisent au parc.",
+        "La leçon commence avec un caddie.",
+        "Hugo lit une phrase sur un caddie.",
+        "Karim répète le mot une affiche.",
+        "Ils écrivent une affiche dans le cahier.",
+        "Une erreur apparaît près d’un caddy.",
+        "Hugo corrige et montre un caddy.",
+        "Karim récite encore la phrase d’un caddie.",
+        "Avant de partir, ils relisent une caisse.",
+        "Plus tard, Omar revient dans le jardin.",
+        "Nora rapporte un cacao une seconde fois.",
+        "Ils vérifient encore un cacao ensemble.",
+        "Omar explique une nouvelle idée sur un canard.",
+        "Nora écoute et regarde un canard.",
+        "Le groupe accepte d’essayer une glace.",
+        "Après une pause, une glace change le plan.",
+        "Omar montre le résultat près d’un cacao.",
+        "Nora félicite tout le monde pour un canard.",
+        "Avant la nuit, ils rangent une cerise."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Cyril prépare la cerise, et Alice dit un grand merci."
+      "sentences": [
+        "Maya visite un stand dans la cuisine.",
+        "Sofia désigne un cacao du doigt.",
+        "Le guide présente un cacao clairement.",
+        "Maya photographie un citron.",
+        "Ils posent une question sur un citron.",
+        "Sofia note le détail d’un cable.",
+        "Avant de partir, Maya achète un cable.",
+        "Sofia range un cable dans le sac.",
+        "Sur le chemin du retour, ils parlent d’une affiche.",
+        "Plus tard, Emma revient au parc.",
+        "Omar rapporte un citron une seconde fois.",
+        "Ils vérifient encore un citron ensemble.",
+        "Emma explique une nouvelle idée sur un biscuit.",
+        "Omar écoute et regarde un biscuit.",
+        "Le groupe accepte d’essayer un cable.",
+        "Après une pause, un cable change le plan.",
+        "Emma montre le résultat près d’un citron.",
+        "Omar félicite tout le monde pour un biscuit.",
+        "Avant la nuit, ils rangent un canard."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Théo prépare une surprise au marché.",
+        "Emma cache une glace derrière la porte.",
+        "Tout le monde cherche une glace.",
+        "Théo donne un indice avec un caddie.",
+        "Emma trouve enfin une glace.",
+        "Ils ouvrent aussi un caddy.",
+        "Les amis rient autour d’un caddie.",
+        "Théo partage un caddy avec le groupe.",
+        "La fête se termine près d’un cacao.",
+        "Plus tard, Inès revient au marché.",
+        "Amira rapporte une cerise une seconde fois.",
+        "Ils vérifient encore une cerise ensemble.",
+        "Inès explique une nouvelle idée sur un caddie.",
+        "Amira écoute et regarde un caddie.",
+        "Le groupe accepte d’essayer un citron.",
+        "Après une pause, un citron change le plan.",
+        "Inès montre le résultat près d’une cerise.",
+        "Amira félicite tout le monde pour un caddie.",
+        "Avant la nuit, ils rangent une branche."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le maître regarde le cerveau, et Alice dit un grand merci."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le frère regarde le cinéma, et Alice dit un grand merci."
+      "sentences": [
+        "Théo commence la journée dans la cour.",
+        "Inès apporte un caddie pour le groupe.",
+        "Ils placent un caddie au centre.",
+        "Théo décrit un caddie à voix haute.",
+        "Inès ajoute une affiche à côté.",
+        "Le groupe compare un caddie et une affiche.",
+        "Ensuite, chacun touche une cerise.",
+        "Théo résume le rôle d’une cerise.",
+        "Pour finir, Inès range un citron.",
+        "Plus tard, Liam revient dans la cuisine.",
+        "Inès rapporte un biscuit une seconde fois.",
+        "Ils vérifient encore un biscuit ensemble.",
+        "Liam explique une nouvelle idée sur un cahier.",
+        "Inès écoute et regarde un cahier.",
+        "Le groupe accepte d’essayer un cacao.",
+        "Après une pause, un cacao change le plan.",
+        "Liam montre le résultat près d’un biscuit.",
+        "Inès félicite tout le monde pour un cahier.",
+        "Avant la nuit, ils rangent un citron."
+      ]
     }
   ]
 }

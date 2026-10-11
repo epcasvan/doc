@@ -3210,128 +3210,388 @@
       ]
     }
   ],
-  "type12": [
-    {
-      "level": "a1",
-      "sentence": "Le copain admire la bise avec Lise."
-    },
-    {
-      "level": "a1",
-      "sentence": "La tante choisit le blouson."
-    },
-    {
-      "level": "a1",
-      "sentence": "Élise voit la brise bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La copine prépare la cerise sans souci."
-    },
+  "type12Stories": [
     {
       "level": "a2",
-      "sentence": "À midi, la musicienne pose la devise avec Élise."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le jardinier partage la fraise sans souci."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la collègue entre dans le magasin sans souci."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, la professeure retourne à la maison avec Élise."
+      "sentences": [
+        "Inès et Amira se retrouvent à l’école.",
+        "Inès apporte un oiseau dans un sac.",
+        "Amira pose une chemise sur la table.",
+        "Ils parlent d’abord d’un oiseau.",
+        "Puis Amira montre une cerise à Inès.",
+        "Tout à coup, un oiseau tombe par terre.",
+        "Inès ramasse un oiseau et rit.",
+        "Amira range une chemise et une cerise.",
+        "Avant de partir, ils vérifient encore une chaise."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le cuisinier voit la prison, parce que Élise met la musique."
+      "sentences": [
+        "Ce matin, Karim travaille dans la cour.",
+        "Il prépare une chaise avec soin.",
+        "Théo arrive et regarde une chaise.",
+        "Ensemble, ils ajoutent une chemise.",
+        "Karim explique l’usage d’une chemise.",
+        "Théo propose aussi une fraise.",
+        "Le travail avance grâce à une chaise.",
+        "Ils placent une fraise près d’une chemise.",
+        "À la fin, un oiseau est prêt pour demain."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Sofia fait des courses à l’école.",
+        "Dans le panier, il y a déjà une chemise.",
+        "Hugo choisit un raisin juste à côté.",
+        "Ils comparent une chemise et un raisin.",
+        "Le vendeur parle d’une valise.",
+        "Sofia prend aussi une valise.",
+        "Hugo paie et range une chemise.",
+        "Sur le chemin, ils discutent d’un raisin.",
+        "À la maison, ils sortent encore une chaise."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Élise partage le raisin, et Lise met bien la musique."
+      "sentences": [
+        "Hugo lit un message au parc.",
+        "Léa doit apporter une chemise rapidement.",
+        "Hugo part avec une valise.",
+        "Ils se croisent près d’une fraise.",
+        "Léa donne une chemise à Hugo.",
+        "Hugo vérifie une chemise calmement.",
+        "Ensuite, ils déposent une valise.",
+        "Une amie demande des nouvelles d’une fraise.",
+        "Plus tard, un oiseau termine la journée."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Sara organise une activité dans la cuisine.",
+        "Noah apporte une chaise dès le début.",
+        "Sur la table, on voit une chaise et un oiseau.",
+        "Les enfants touchent un oiseau à tour de rôle.",
+        "Sara explique le mot lié à une chemise.",
+        "Noah dessine une chemise au tableau.",
+        "Tout le monde écoute l’histoire d’une chaise.",
+        "Après l’exercice, ils rangent un oiseau.",
+        "Sara note encore un raisin dans le cahier."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la musicienne regarde la rose, et Lise met bien la musique."
+      "sentences": [
+        "Il pleut un peu à l’école.",
+        "Sofia protège une chemise sous le bras.",
+        "Inès tient une valise contre lui.",
+        "Ils entrent et posent une chemise.",
+        "Sofia sèche une valise avec un chiffon.",
+        "Inès prépare un raisin pour attendre.",
+        "Ils parlent calmement d’une chemise.",
+        "Quand la pluie cesse, un raisin est prêt.",
+        "Ils repartent avec un oiseau."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Léa et Liam révisent au marché.",
+        "La leçon commence avec un oiseau.",
+        "Léa lit une phrase sur un oiseau.",
+        "Liam répète le mot une chemise.",
+        "Ils écrivent une chemise dans le cahier.",
+        "Une erreur apparaît près d’un raisin.",
+        "Léa corrige et montre un raisin.",
+        "Liam récite encore la phrase d’un oiseau.",
+        "Avant de partir, ils relisent une valise."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le bébé choisit la saison, et Lise met bien la musique."
+      "sentences": [
+        "Maya visite un stand dans la cuisine.",
+        "Sofia désigne une chemise du doigt.",
+        "Le guide présente une chemise clairement.",
+        "Maya photographie une cerise.",
+        "Ils posent une question sur une cerise.",
+        "Sofia note le détail d’une fraise.",
+        "Avant de partir, Maya achète une fraise.",
+        "Sofia range une fraise dans le sac.",
+        "Sur le chemin du retour, ils parlent d’un oiseau."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Amira prépare une surprise dans la cuisine.",
+        "Yanis cache un raisin derrière la porte.",
+        "Tout le monde cherche un raisin.",
+        "Amira donne un indice avec une cerise.",
+        "Yanis trouve enfin un raisin.",
+        "Ils ouvrent aussi une chaise.",
+        "Les amis rient autour d’une cerise.",
+        "Amira partage une chaise avec le groupe.",
+        "La fête se termine près d’un oiseau."
+      ]
+    },
+    {
+      "level": "b1",
+      "sentences": [
+        "Yanis commence la journée à l’école.",
+        "Maya apporte une valise pour le groupe.",
+        "Ils placent une valise au centre.",
+        "Yanis décrit une valise à voix haute.",
+        "Maya ajoute une chemise à côté.",
+        "Le groupe compare une valise et une chemise.",
+        "Ensuite, chacun touche une fraise.",
+        "Yanis résume le rôle d’une fraise.",
+        "Pour finir, Maya range un raisin."
+      ]
     }
   ],
-  "type14": [
-    {
-      "level": "a1",
-      "sentence": "Rose répare la chaise bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La boulangère porte la chemise sans souci."
-    },
-    {
-      "level": "a1",
-      "sentence": "Lise utilise la chose bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le médecin salue le cousin."
-    },
-    {
-      "level": "a1",
-      "sentence": "Louise montre la crise bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La professeure nettoie la cuisine."
-    },
+  "type14Stories": [
     {
       "level": "a2",
-      "sentence": "Ce matin, la jardinière prend la mesure dans la salle."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Louise visite le musée dans la maison."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le voisin voit un oiseau dans la maison."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le boulanger traduit la phrase dans la maison."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, la cousine commence le plaisir avec Lise."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, la factrice cherche le poison dans la salle."
+      "sentences": [
+        "Amira et Noah se retrouvent au parc.",
+        "Amira apporte une fraise dans un sac.",
+        "Noah pose une chaise sur la table.",
+        "Ils parlent d’abord d’une fraise.",
+        "Puis Noah montre un oiseau à Amira.",
+        "Tout à coup, une fraise tombe par terre.",
+        "Amira ramasse une fraise et rit.",
+        "Noah range une chaise et un oiseau.",
+        "Avant de partir, ils vérifient encore une chemise.",
+        "Plus tard, Noah revient dans la cour.",
+        "Théo rapporte une chaise une seconde fois.",
+        "Ils vérifient encore une chaise ensemble.",
+        "Noah explique une nouvelle idée sur une valise.",
+        "Théo écoute et regarde une valise.",
+        "Le groupe accepte d’essayer une fraise.",
+        "Après une pause, une fraise change le plan.",
+        "Noah montre le résultat près d’une chaise.",
+        "Théo félicite tout le monde pour une valise.",
+        "Avant la nuit, ils rangent une chemise."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce soir, quand le grand-père cache le trésor, parce que Élise met la musique."
+      "sentences": [
+        "Ce matin, Léa travaille à l’école.",
+        "Il prépare une valise avec soin.",
+        "Liam arrive et regarde une valise.",
+        "Ensemble, ils ajoutent une fraise.",
+        "Léa explique l’usage d’une fraise.",
+        "Liam propose aussi une chaise.",
+        "Le travail avance grâce à une valise.",
+        "Ils placent une chaise près d’une fraise.",
+        "À la fin, un oiseau est prêt pour demain.",
+        "Plus tard, Sara revient au parc.",
+        "Karim rapporte un oiseau une seconde fois.",
+        "Ils vérifient encore un oiseau ensemble.",
+        "Sara explique une nouvelle idée sur une valise.",
+        "Karim écoute et regarde une valise.",
+        "Le groupe accepte d’essayer une cerise.",
+        "Après une pause, une cerise change le plan.",
+        "Sara montre le résultat près d’un oiseau.",
+        "Karim félicite tout le monde pour une valise.",
+        "Avant la nuit, ils rangent une fraise."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Liam fait des courses au café.",
+        "Dans le panier, il y a déjà une fraise.",
+        "Sara choisit une chemise juste à côté.",
+        "Ils comparent une fraise et une chemise.",
+        "Le vendeur parle d’une chaise.",
+        "Liam prend aussi une chaise.",
+        "Sara paie et range une fraise.",
+        "Sur le chemin, ils discutent d’une chemise.",
+        "À la maison, ils sortent encore une cerise.",
+        "Plus tard, Sofia revient à l’école.",
+        "Léa rapporte une cerise une seconde fois.",
+        "Ils vérifient encore une cerise ensemble.",
+        "Sofia explique une nouvelle idée sur une chemise.",
+        "Léa écoute et regarde une chemise.",
+        "Le groupe accepte d’essayer un oiseau.",
+        "Après une pause, un oiseau change le plan.",
+        "Sofia montre le résultat près d’une cerise.",
+        "Léa félicite tout le monde pour une chemise.",
+        "Avant la nuit, ils rangent une chaise."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Lise voit une usine, parce que Élise met la musique."
+      "sentences": [
+        "Maya lit un message au marché.",
+        "Karim doit apporter une cerise rapidement.",
+        "Maya part avec une fraise.",
+        "Ils se croisent près d’une chemise.",
+        "Karim donne une cerise à Maya.",
+        "Maya vérifie une cerise calmement.",
+        "Ensuite, ils déposent une fraise.",
+        "Une amie demande des nouvelles d’une chemise.",
+        "Plus tard, un oiseau termine la journée.",
+        "Plus tard, Liam revient au café.",
+        "Noah rapporte une chemise une seconde fois.",
+        "Ils vérifient encore une chemise ensemble.",
+        "Liam explique une nouvelle idée sur une fraise.",
+        "Noah écoute et regarde une fraise.",
+        "Le groupe accepte d’essayer une cerise.",
+        "Après une pause, une cerise change le plan.",
+        "Liam montre le résultat près d’une chemise.",
+        "Noah félicite tout le monde pour une fraise.",
+        "Avant la nuit, ils rangent un oiseau."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Emma organise une activité à la gare.",
+        "Adam apporte un raisin dès le début.",
+        "Sur la table, on voit un raisin et une cerise.",
+        "Les enfants touchent une cerise à tour de rôle.",
+        "Emma explique le mot lié à une chemise.",
+        "Adam dessine une chemise au tableau.",
+        "Tout le monde écoute l’histoire d’un raisin.",
+        "Après l’exercice, ils rangent une cerise.",
+        "Emma note encore une valise dans le cahier.",
+        "Plus tard, Liam revient à la bibliothèque.",
+        "Adam rapporte une cerise une seconde fois.",
+        "Ils vérifient encore une cerise ensemble.",
+        "Liam explique une nouvelle idée sur une fraise.",
+        "Adam écoute et regarde une fraise.",
+        "Le groupe accepte d’essayer un oiseau.",
+        "Après une pause, un oiseau change le plan.",
+        "Liam montre le résultat près d’une cerise.",
+        "Adam félicite tout le monde pour une fraise.",
+        "Avant la nuit, ils rangent un raisin."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce soir, quand une amie porte la valise, et Lise met bien la musique."
+      "sentences": [
+        "Il pleut un peu à l’école.",
+        "Théo protège un oiseau sous le bras.",
+        "Adam tient une chaise contre lui.",
+        "Ils entrent et posent un oiseau.",
+        "Théo sèche une chaise avec un chiffon.",
+        "Adam prépare une fraise pour attendre.",
+        "Ils parlent calmement d’un oiseau.",
+        "Quand la pluie cesse, une fraise est prêt.",
+        "Ils repartent avec un raisin.",
+        "Plus tard, Inès revient au magasin.",
+        "Omar rapporte une chemise une seconde fois.",
+        "Ils vérifient encore une chemise ensemble.",
+        "Inès explique une nouvelle idée sur un oiseau.",
+        "Omar écoute et regarde un oiseau.",
+        "Le groupe accepte d’essayer une chaise.",
+        "Après une pause, une chaise change le plan.",
+        "Inès montre le résultat près d’une chemise.",
+        "Omar félicite tout le monde pour un oiseau.",
+        "Avant la nuit, ils rangent une valise."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Inès et Yanis révisent au magasin.",
+        "La leçon commence avec un oiseau.",
+        "Inès lit une phrase sur un oiseau.",
+        "Yanis répète le mot une valise.",
+        "Ils écrivent une valise dans le cahier.",
+        "Une erreur apparaît près d’une chaise.",
+        "Inès corrige et montre une chaise.",
+        "Yanis récite encore la phrase d’un oiseau.",
+        "Avant de partir, ils relisent une cerise.",
+        "Plus tard, Sara revient à la gare.",
+        "Emma rapporte un raisin une seconde fois.",
+        "Ils vérifient encore un raisin ensemble.",
+        "Sara explique une nouvelle idée sur un oiseau.",
+        "Emma écoute et regarde un oiseau.",
+        "Le groupe accepte d’essayer une cerise.",
+        "Après une pause, une cerise change le plan.",
+        "Sara montre le résultat près d’un raisin.",
+        "Emma félicite tout le monde pour un oiseau.",
+        "Avant la nuit, ils rangent une valise."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la collègue pose le vase, parce que Élise met la musique."
+      "sentences": [
+        "Théo visite un stand dans la cour.",
+        "Karim désigne une chemise du doigt.",
+        "Le guide présente une chemise clairement.",
+        "Théo photographie une cerise.",
+        "Ils posent une question sur une cerise.",
+        "Karim note le détail d’une chaise.",
+        "Avant de partir, Théo achète une chaise.",
+        "Karim range une chaise dans le sac.",
+        "Sur le chemin du retour, ils parlent d’une valise.",
+        "Plus tard, Liam revient dans la cuisine.",
+        "Léa rapporte une valise une seconde fois.",
+        "Ils vérifient encore une valise ensemble.",
+        "Liam explique une nouvelle idée sur une chaise.",
+        "Léa écoute et regarde une chaise.",
+        "Le groupe accepte d’essayer une chemise.",
+        "Après une pause, une chemise change le plan.",
+        "Liam montre le résultat près d’une valise.",
+        "Léa félicite tout le monde pour une chaise.",
+        "Avant la nuit, ils rangent une fraise."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Emma prépare une surprise à la gare.",
+        "Nora cache un oiseau derrière la porte.",
+        "Tout le monde cherche un oiseau.",
+        "Emma donne un indice avec un raisin.",
+        "Nora trouve enfin un oiseau.",
+        "Ils ouvrent aussi une valise.",
+        "Les amis rient autour d’un raisin.",
+        "Emma partage une valise avec le groupe.",
+        "La fête se termine près d’une fraise.",
+        "Plus tard, Omar revient à la gare.",
+        "Inès rapporte une valise une seconde fois.",
+        "Ils vérifient encore une valise ensemble.",
+        "Omar explique une nouvelle idée sur une fraise.",
+        "Inès écoute et regarde une fraise.",
+        "Le groupe accepte d’essayer un oiseau.",
+        "Après une pause, un oiseau change le plan.",
+        "Omar montre le résultat près d’une valise.",
+        "Inès félicite tout le monde pour une fraise.",
+        "Avant la nuit, ils rangent un raisin."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce soir, quand la fille cherche la visite, et Lise met bien la musique."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le musicien salue le voisin, parce que Élise met la musique."
+      "sentences": [
+        "Amira commence la journée à la bibliothèque.",
+        "Karim apporte une fraise pour le groupe.",
+        "Ils placent une fraise au centre.",
+        "Amira décrit une fraise à voix haute.",
+        "Karim ajoute une chemise à côté.",
+        "Le groupe compare une fraise et une chemise.",
+        "Ensuite, chacun touche une cerise.",
+        "Amira résume le rôle d’une cerise.",
+        "Pour finir, Karim range une chaise.",
+        "Plus tard, Hugo revient au café.",
+        "Omar rapporte un raisin une seconde fois.",
+        "Ils vérifient encore un raisin ensemble.",
+        "Hugo explique une nouvelle idée sur une valise.",
+        "Omar écoute et regarde une valise.",
+        "Le groupe accepte d’essayer une chaise.",
+        "Après une pause, une chaise change le plan.",
+        "Hugo montre le résultat près d’un raisin.",
+        "Omar félicite tout le monde pour une valise.",
+        "Avant la nuit, ils rangent une fraise."
+      ]
     }
   ]
 }

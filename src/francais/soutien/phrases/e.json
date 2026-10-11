@@ -6675,128 +6675,388 @@
       ]
     }
   ],
-  "type12": [
-    {
-      "level": "a1",
-      "sentence": "Le cousin montre une aigle."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le cuisinier cherche une ampoule."
-    },
-    {
-      "level": "a1",
-      "sentence": "Théo range la beige bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La cousine prend la belge."
-    },
+  "type12Stories": [
     {
       "level": "a2",
-      "sentence": "À midi, la cousine pose le cerf près de Théo."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le garçon cherche le chaussettes avec Hélène."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la musicienne sauve le cheval très vite."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le bébé range le concert après le thé."
+      "sentences": [
+        "Adam et Amira se retrouvent à la bibliothèque.",
+        "Adam apporte une cuillère dans un sac.",
+        "Amira pose une ampoule sur la table.",
+        "Ils parlent d’abord d’une cuillère.",
+        "Puis Amira montre une règle à Adam.",
+        "Tout à coup, une cuillère tombe par terre.",
+        "Adam ramasse une cuillère et rit.",
+        "Amira range une ampoule et une règle.",
+        "Avant de partir, ils vérifient encore un café."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le cuisinier range la cuire, et Théo est très content aussi."
+      "sentences": [
+        "Ce matin, Liam travaille à la bibliothèque.",
+        "Il prépare une fenêtre avec soin.",
+        "Nora arrive et regarde une fenêtre.",
+        "Ensemble, ils ajoutent une règle.",
+        "Liam explique l’usage d’une règle.",
+        "Nora propose aussi un café.",
+        "Le travail avance grâce à une fenêtre.",
+        "Ils placent un café près d’une règle.",
+        "À la fin, une cuillère est prêt pour demain."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Adam fait des courses à la bibliothèque.",
+        "Dans le panier, il y a déjà une cuillère.",
+        "Léa choisit une règle juste à côté.",
+        "Ils comparent une cuillère et une règle.",
+        "Le vendeur parle d’une fenêtre.",
+        "Adam prend aussi une fenêtre.",
+        "Léa paie et range une cuillère.",
+        "Sur le chemin, ils discutent d’une règle.",
+        "À la maison, ils sortent encore un café."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Théo prend la droite, et Théo est très content aussi."
+      "sentences": [
+        "Omar lit un message dans la cuisine.",
+        "Emma doit apporter un café rapidement.",
+        "Omar part avec une ampoule.",
+        "Ils se croisent près d’une fenêtre.",
+        "Emma donne un café à Omar.",
+        "Omar vérifie un café calmement.",
+        "Ensuite, ils déposent une ampoule.",
+        "Une amie demande des nouvelles d’une fenêtre.",
+        "Plus tard, une cuillère termine la journée."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Liam organise une activité à la gare.",
+        "Maya apporte une fenêtre dès le début.",
+        "Sur la table, on voit une fenêtre et une ampoule.",
+        "Les enfants touchent une ampoule à tour de rôle.",
+        "Liam explique le mot lié à un café.",
+        "Maya dessine un café au tableau.",
+        "Tout le monde écoute l’histoire d’une fenêtre.",
+        "Après l’exercice, ils rangent une ampoule.",
+        "Liam note encore une cuillère dans le cahier."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la cousine regarde le dé, et Théo est très content aussi."
+      "sentences": [
+        "Il pleut un peu au café.",
+        "Inès protège une cuillère sous le bras.",
+        "Léa tient un café contre lui.",
+        "Ils entrent et posent une cuillère.",
+        "Inès sèche un café avec un chiffon.",
+        "Léa prépare une fenêtre pour attendre.",
+        "Ils parlent calmement d’une cuillère.",
+        "Quand la pluie cesse, une fenêtre est prêt.",
+        "Ils repartent avec une règle."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Karim et Sara révisent au parc.",
+        "La leçon commence avec une fenêtre.",
+        "Karim lit une phrase sur une fenêtre.",
+        "Sara répète le mot une règle.",
+        "Ils écrivent une règle dans le cahier.",
+        "Une erreur apparaît près d’un café.",
+        "Karim corrige et montre un café.",
+        "Sara récite encore la phrase d’une fenêtre.",
+        "Avant de partir, ils relisent une ampoule."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la cuisinière cherche une entrée, et Théo est très content aussi."
+      "sentences": [
+        "Maya visite un stand au magasin.",
+        "Yanis désigne un café du doigt.",
+        "Le guide présente un café clairement.",
+        "Maya photographie une règle.",
+        "Ils posent une question sur une règle.",
+        "Yanis note le détail d’une fenêtre.",
+        "Avant de partir, Maya achète une fenêtre.",
+        "Yanis range une fenêtre dans le sac.",
+        "Sur le chemin du retour, ils parlent d’une ampoule."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Inès prépare une surprise dans la cuisine.",
+        "Nora cache une règle derrière la porte.",
+        "Tout le monde cherche une règle.",
+        "Inès donne un indice avec une cuillère.",
+        "Nora trouve enfin une règle.",
+        "Ils ouvrent aussi une fenêtre.",
+        "Les amis rient autour d’une cuillère.",
+        "Inès partage une fenêtre avec le groupe.",
+        "La fête se termine près d’une ampoule."
+      ]
+    },
+    {
+      "level": "b1",
+      "sentences": [
+        "Omar commence la journée à la bibliothèque.",
+        "Inès apporte une fenêtre pour le groupe.",
+        "Ils placent une fenêtre au centre.",
+        "Omar décrit une fenêtre à voix haute.",
+        "Inès ajoute une cuillère à côté.",
+        "Le groupe compare une fenêtre et une cuillère.",
+        "Ensuite, chacun touche une règle.",
+        "Omar résume le rôle d’une règle.",
+        "Pour finir, Inès range une ampoule."
+      ]
     }
   ],
-  "type14": [
-    {
-      "level": "a1",
-      "sentence": "Le médecin oublie le bouclé."
-    },
-    {
-      "level": "a1",
-      "sentence": "La directrice nettoie la bouilloire."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le facteur prend le boulanger."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le boulanger console un bébé."
-    },
-    {
-      "level": "a1",
-      "sentence": "Eve achète un béret bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "Théo aime un café bien."
-    },
+  "type14Stories": [
     {
       "level": "a2",
-      "sentence": "Ce matin, le directeur prend le couper avec Hélène."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Eve coupe la courgette très vite."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le médecin cherche le couvert avec Hélène."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, la directrice range la crevette après le thé."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le garçon cherche la crème près de Théo."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le collègue cherche la cuillère avec Hélène."
+      "sentences": [
+        "Hugo et Yanis se retrouvent au parc.",
+        "Hugo apporte une ampoule dans un sac.",
+        "Yanis pose une règle sur la table.",
+        "Ils parlent d’abord d’une ampoule.",
+        "Puis Yanis montre un café à Hugo.",
+        "Tout à coup, une ampoule tombe par terre.",
+        "Hugo ramasse une ampoule et rit.",
+        "Yanis range une règle et un café.",
+        "Avant de partir, ils vérifient encore une fenêtre.",
+        "Plus tard, Karim revient dans le jardin.",
+        "Liam rapporte une cuillère une seconde fois.",
+        "Ils vérifient encore une cuillère ensemble.",
+        "Karim explique une nouvelle idée sur une ampoule.",
+        "Liam écoute et regarde une ampoule.",
+        "Le groupe accepte d’essayer une règle.",
+        "Après une pause, une règle change le plan.",
+        "Karim montre le résultat près d’une cuillère.",
+        "Liam félicite tout le monde pour une ampoule.",
+        "Avant la nuit, ils rangent un café."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la directrice trouve un est, parce que Hélène est très contente."
+      "sentences": [
+        "Ce matin, Karim travaille au café.",
+        "Il prépare une règle avec soin.",
+        "Théo arrive et regarde une règle.",
+        "Ensemble, ils ajoutent un café.",
+        "Karim explique l’usage d’un café.",
+        "Théo propose aussi une fenêtre.",
+        "Le travail avance grâce à une règle.",
+        "Ils placent une fenêtre près d’un café.",
+        "À la fin, une cuillère est prêt pour demain.",
+        "Plus tard, Théo revient à l’école.",
+        "Omar rapporte une fenêtre une seconde fois.",
+        "Ils vérifient encore une fenêtre ensemble.",
+        "Théo explique une nouvelle idée sur une règle.",
+        "Omar écoute et regarde une règle.",
+        "Le groupe accepte d’essayer une cuillère.",
+        "Après une pause, une cuillère change le plan.",
+        "Théo montre le résultat près d’une fenêtre.",
+        "Omar félicite tout le monde pour une règle.",
+        "Avant la nuit, ils rangent une ampoule."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Sara fait des courses dans la cour.",
+        "Dans le panier, il y a déjà une fenêtre.",
+        "Sofia choisit un café juste à côté.",
+        "Ils comparent une fenêtre et un café.",
+        "Le vendeur parle d’une ampoule.",
+        "Sara prend aussi une ampoule.",
+        "Sofia paie et range une fenêtre.",
+        "Sur le chemin, ils discutent d’un café.",
+        "À la maison, ils sortent encore une règle.",
+        "Plus tard, Inès revient à la bibliothèque.",
+        "Yanis rapporte une ampoule une seconde fois.",
+        "Ils vérifient encore une ampoule ensemble.",
+        "Inès explique une nouvelle idée sur une fenêtre.",
+        "Yanis écoute et regarde une fenêtre.",
+        "Le groupe accepte d’essayer un café.",
+        "Après une pause, un café change le plan.",
+        "Inès montre le résultat près d’une ampoule.",
+        "Yanis félicite tout le monde pour une fenêtre.",
+        "Avant la nuit, ils rangent une règle."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le facteur montre la faible, et Théo est très content aussi."
+      "sentences": [
+        "Liam lit un message au magasin.",
+        "Omar doit apporter une fenêtre rapidement.",
+        "Liam part avec une cuillère.",
+        "Ils se croisent près d’une règle.",
+        "Omar donne une fenêtre à Liam.",
+        "Liam vérifie une fenêtre calmement.",
+        "Ensuite, ils déposent une cuillère.",
+        "Une amie demande des nouvelles d’une règle.",
+        "Plus tard, une ampoule termine la journée.",
+        "Plus tard, Inès revient à la bibliothèque.",
+        "Adam rapporte une cuillère une seconde fois.",
+        "Ils vérifient encore une cuillère ensemble.",
+        "Inès explique une nouvelle idée sur une ampoule.",
+        "Adam écoute et regarde une ampoule.",
+        "Le groupe accepte d’essayer une règle.",
+        "Après une pause, une règle change le plan.",
+        "Inès montre le résultat près d’une cuillère.",
+        "Adam félicite tout le monde pour une ampoule.",
+        "Avant la nuit, ils rangent une fenêtre."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Hugo organise une activité dans le jardin.",
+        "Théo apporte une fenêtre dès le début.",
+        "Sur la table, on voit une fenêtre et une cuillère.",
+        "Les enfants touchent une cuillère à tour de rôle.",
+        "Hugo explique le mot lié à une ampoule.",
+        "Théo dessine une ampoule au tableau.",
+        "Tout le monde écoute l’histoire d’une fenêtre.",
+        "Après l’exercice, ils rangent une cuillère.",
+        "Hugo note encore un café dans le cahier.",
+        "Plus tard, Emma revient au magasin.",
+        "Nora rapporte une ampoule une seconde fois.",
+        "Ils vérifient encore une ampoule ensemble.",
+        "Emma explique une nouvelle idée sur un café.",
+        "Nora écoute et regarde un café.",
+        "Le groupe accepte d’essayer une cuillère.",
+        "Après une pause, une cuillère change le plan.",
+        "Emma montre le résultat près d’une ampoule.",
+        "Nora félicite tout le monde pour un café.",
+        "Avant la nuit, ils rangent une fenêtre."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la voisine ouvre la fenêtre, parce que Hélène est très contente."
+      "sentences": [
+        "Il pleut un peu au marché.",
+        "Sofia protège une règle sous le bras.",
+        "Liam tient une ampoule contre lui.",
+        "Ils entrent et posent une règle.",
+        "Sofia sèche une ampoule avec un chiffon.",
+        "Liam prépare une cuillère pour attendre.",
+        "Ils parlent calmement d’une règle.",
+        "Quand la pluie cesse, une cuillère est prêt.",
+        "Ils repartent avec un café.",
+        "Plus tard, Adam revient à la bibliothèque.",
+        "Sofia rapporte une règle une seconde fois.",
+        "Ils vérifient encore une règle ensemble.",
+        "Adam explique une nouvelle idée sur une cuillère.",
+        "Sofia écoute et regarde une cuillère.",
+        "Le groupe accepte d’essayer une ampoule.",
+        "Après une pause, une ampoule change le plan.",
+        "Adam montre le résultat près d’une règle.",
+        "Sofia félicite tout le monde pour une cuillère.",
+        "Avant la nuit, ils rangent une fenêtre."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Sofia et Inès révisent dans le jardin.",
+        "La leçon commence avec un café.",
+        "Sofia lit une phrase sur un café.",
+        "Inès répète le mot une cuillère.",
+        "Ils écrivent une cuillère dans le cahier.",
+        "Une erreur apparaît près d’une règle.",
+        "Sofia corrige et montre une règle.",
+        "Inès récite encore la phrase d’un café.",
+        "Avant de partir, ils relisent une ampoule.",
+        "Plus tard, Sara revient à la gare.",
+        "Maya rapporte une fenêtre une seconde fois.",
+        "Ils vérifient encore une fenêtre ensemble.",
+        "Sara explique une nouvelle idée sur une cuillère.",
+        "Maya écoute et regarde une cuillère.",
+        "Le groupe accepte d’essayer un café.",
+        "Après une pause, un café change le plan.",
+        "Sara montre le résultat près d’une fenêtre.",
+        "Maya félicite tout le monde pour une cuillère.",
+        "Avant la nuit, ils rangent une ampoule."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand un ami visite la ferme, parce que Hélène est très contente."
+      "sentences": [
+        "Yanis visite un stand au parc.",
+        "Liam désigne une cuillère du doigt.",
+        "Le guide présente une cuillère clairement.",
+        "Yanis photographie une fenêtre.",
+        "Ils posent une question sur une fenêtre.",
+        "Liam note le détail d’un café.",
+        "Avant de partir, Yanis achète un café.",
+        "Liam range un café dans le sac.",
+        "Sur le chemin du retour, ils parlent d’une ampoule.",
+        "Plus tard, Sara revient dans la cour.",
+        "Inès rapporte une règle une seconde fois.",
+        "Ils vérifient encore une règle ensemble.",
+        "Sara explique une nouvelle idée sur une cuillère.",
+        "Inès écoute et regarde une cuillère.",
+        "Le groupe accepte d’essayer une fenêtre.",
+        "Après une pause, une fenêtre change le plan.",
+        "Sara montre le résultat près d’une règle.",
+        "Inès félicite tout le monde pour une cuillère.",
+        "Avant la nuit, ils rangent une ampoule."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Inès prépare une surprise dans la cour.",
+        "Léa cache une règle derrière la porte.",
+        "Tout le monde cherche une règle.",
+        "Inès donne un indice avec une fenêtre.",
+        "Léa trouve enfin une règle.",
+        "Ils ouvrent aussi un café.",
+        "Les amis rient autour d’une fenêtre.",
+        "Inès partage un café avec le groupe.",
+        "La fête se termine près d’une cuillère.",
+        "Plus tard, Adam revient à la bibliothèque.",
+        "Théo rapporte une règle une seconde fois.",
+        "Ils vérifient encore une règle ensemble.",
+        "Adam explique une nouvelle idée sur une cuillère.",
+        "Théo écoute et regarde une cuillère.",
+        "Le groupe accepte d’essayer une ampoule.",
+        "Après une pause, une ampoule change le plan.",
+        "Adam montre le résultat près d’une règle.",
+        "Théo félicite tout le monde pour une cuillère.",
+        "Avant la nuit, ils rangent une fenêtre."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le copain range le ferry, et Théo est très content aussi."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la jardinière prend la fleuve, et Théo est très content aussi."
+      "sentences": [
+        "Maya commence la journée dans la cuisine.",
+        "Léa apporte une fenêtre pour le groupe.",
+        "Ils placent une fenêtre au centre.",
+        "Maya décrit une fenêtre à voix haute.",
+        "Léa ajoute une règle à côté.",
+        "Le groupe compare une fenêtre et une règle.",
+        "Ensuite, chacun touche une ampoule.",
+        "Maya résume le rôle d’une ampoule.",
+        "Pour finir, Léa range un café.",
+        "Plus tard, Amira revient au magasin.",
+        "Léa rapporte une règle une seconde fois.",
+        "Ils vérifient encore une règle ensemble.",
+        "Amira explique une nouvelle idée sur une ampoule.",
+        "Léa écoute et regarde une ampoule.",
+        "Le groupe accepte d’essayer une cuillère.",
+        "Après une pause, une cuillère change le plan.",
+        "Amira montre le résultat près d’une règle.",
+        "Léa félicite tout le monde pour une ampoule.",
+        "Avant la nuit, ils rangent une fenêtre."
+      ]
     }
   ]
 }

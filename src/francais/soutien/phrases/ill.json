@@ -2865,128 +2865,388 @@
       ]
     }
   ],
-  "type12": [
-    {
-      "level": "a1",
-      "sentence": "Le directeur nourrit une abeille avec Guillaume."
-    },
-    {
-      "level": "a1",
-      "sentence": "La boulangère cherche une aiguille avec Camille."
-    },
-    {
-      "level": "a1",
-      "sentence": "Guillaume range un appareil bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La maman montre le billet avec Guillaume."
-    },
+  "type12Stories": [
     {
       "level": "a2",
-      "sentence": "Après le cours, Camille cherche le détail avec Guillaume."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Guillaume remercie la famille avec Camille."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Lucille quitte le fauteuil avec Guillaume."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Camille cherche la feuille sous le soleil."
+      "sentences": [
+        "Théo et Sofia se retrouvent au marché.",
+        "Théo apporte un billet dans un sac.",
+        "Sofia pose une feuille sur la table.",
+        "Ils parlent d’abord d’un billet.",
+        "Puis Sofia montre un maillot à Théo.",
+        "Tout à coup, un billet tombe par terre.",
+        "Théo ramasse un billet et rit.",
+        "Sofia range une feuille et un maillot.",
+        "Avant de partir, ils vérifient encore une abeille."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand Guillaume soigne un orteil près de la fille, parce que Camille est contente."
+      "sentences": [
+        "Ce matin, Omar travaille à la bibliothèque.",
+        "Il prépare une bouteille avec soin.",
+        "Liam arrive et regarde une bouteille.",
+        "Ensemble, ils ajoutent un maillot.",
+        "Omar explique l’usage d’un maillot.",
+        "Liam propose aussi une feuille.",
+        "Le travail avance grâce à une bouteille.",
+        "Ils placent une feuille près d’un maillot.",
+        "À la fin, une abeille est prêt pour demain."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Noah fait des courses à l’école.",
+        "Dans le panier, il y a déjà un maillot.",
+        "Inès choisit une bouteille juste à côté.",
+        "Ils comparent un maillot et une bouteille.",
+        "Le vendeur parle d’un billet.",
+        "Noah prend aussi un billet.",
+        "Inès paie et range un maillot.",
+        "Sur le chemin, ils discutent d’une bouteille.",
+        "À la maison, ils sortent encore une abeille."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Guillaume regarde la paille avec Camille, et la fille est très contente."
+      "sentences": [
+        "Yanis lit un message dans la cour.",
+        "Sara doit apporter un maillot rapidement.",
+        "Yanis part avec une abeille.",
+        "Ils se croisent près d’une feuille.",
+        "Sara donne un maillot à Yanis.",
+        "Yanis vérifie un maillot calmement.",
+        "Ensuite, ils déposent une abeille.",
+        "Une amie demande des nouvelles d’une feuille.",
+        "Plus tard, un billet termine la journée."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Emma organise une activité à la bibliothèque.",
+        "Liam apporte un billet dès le début.",
+        "Sur la table, on voit un billet et une abeille.",
+        "Les enfants touchent une abeille à tour de rôle.",
+        "Emma explique le mot lié à une bouteille.",
+        "Liam dessine une bouteille au tableau.",
+        "Tout le monde écoute l’histoire d’un billet.",
+        "Après l’exercice, ils rangent une abeille.",
+        "Emma note encore un maillot dans le cahier."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand la fille attrape le papillon avec Camille, et la fille est très contente."
+      "sentences": [
+        "Il pleut un peu dans la cour.",
+        "Léa protège une bouteille sous le bras.",
+        "Sofia tient une abeille contre lui.",
+        "Ils entrent et posent une bouteille.",
+        "Léa sèche une abeille avec un chiffon.",
+        "Sofia prépare un billet pour attendre.",
+        "Ils parlent calmement d’une bouteille.",
+        "Quand la pluie cesse, un billet est prêt.",
+        "Ils repartent avec une feuille."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Nora et Adam révisent à la bibliothèque.",
+        "La leçon commence avec une feuille.",
+        "Nora lit une phrase sur une feuille.",
+        "Adam répète le mot une bouteille.",
+        "Ils écrivent une bouteille dans le cahier.",
+        "Une erreur apparaît près d’un billet.",
+        "Nora corrige et montre un billet.",
+        "Adam récite encore la phrase d’une feuille.",
+        "Avant de partir, ils relisent un maillot."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Lucille pose le réveil avec Guillaume, parce que Camille est contente."
+      "sentences": [
+        "Karim visite un stand dans le jardin.",
+        "Maya désigne une bouteille du doigt.",
+        "Le guide présente une bouteille clairement.",
+        "Karim photographie un billet.",
+        "Ils posent une question sur un billet.",
+        "Maya note le détail d’une feuille.",
+        "Avant de partir, Karim achète une feuille.",
+        "Maya range une feuille dans le sac.",
+        "Sur le chemin du retour, ils parlent d’un maillot."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Hugo prépare une surprise dans le jardin.",
+        "Théo cache un billet derrière la porte.",
+        "Tout le monde cherche un billet.",
+        "Hugo donne un indice avec une abeille.",
+        "Théo trouve enfin un billet.",
+        "Ils ouvrent aussi une bouteille.",
+        "Les amis rient autour d’une abeille.",
+        "Hugo partage une bouteille avec le groupe.",
+        "La fête se termine près d’une feuille."
+      ]
+    },
+    {
+      "level": "b1",
+      "sentences": [
+        "Nora commence la journée dans le jardin.",
+        "Léa apporte une abeille pour le groupe.",
+        "Ils placent une abeille au centre.",
+        "Nora décrit une abeille à voix haute.",
+        "Léa ajoute une feuille à côté.",
+        "Le groupe compare une abeille et une feuille.",
+        "Ensuite, chacun touche une bouteille.",
+        "Nora résume le rôle d’une bouteille.",
+        "Pour finir, Léa range un maillot."
+      ]
     }
   ],
-  "type14": [
-    {
-      "level": "a1",
-      "sentence": "Le jardinier emporte la bouteille avec Guillaume."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le collègue dessine le caillou avec Guillaume."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le médecin caresse la chenille avec Camille."
-    },
-    {
-      "level": "a1",
-      "sentence": "La tante soigne la cheville avec Guillaume."
-    },
-    {
-      "level": "a1",
-      "sentence": "Achille mange la citrouille bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "Guillaume oublie le conseil bien."
-    },
+  "type14Stories": [
     {
       "level": "a2",
-      "sentence": "Ce matin, la fille observe la grenouille sous le soleil."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Achille oublie la grille près de la fille."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Lucille achète la lentille avec Camille."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, la fille porte le maillot avec Camille."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la fille gagne la médaille avec Guillaume."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Achille lave une oreille sous le soleil."
+      "sentences": [
+        "Hugo et Sofia se retrouvent à l’école.",
+        "Hugo apporte une abeille dans un sac.",
+        "Sofia pose un maillot sur la table.",
+        "Ils parlent d’abord d’une abeille.",
+        "Puis Sofia montre une feuille à Hugo.",
+        "Tout à coup, une abeille tombe par terre.",
+        "Hugo ramasse une abeille et rit.",
+        "Sofia range un maillot et une feuille.",
+        "Avant de partir, ils vérifient encore un billet.",
+        "Plus tard, Inès revient à la bibliothèque.",
+        "Sara rapporte une abeille une seconde fois.",
+        "Ils vérifient encore une abeille ensemble.",
+        "Inès explique une nouvelle idée sur un billet.",
+        "Sara écoute et regarde un billet.",
+        "Le groupe accepte d’essayer un maillot.",
+        "Après une pause, un maillot change le plan.",
+        "Inès montre le résultat près d’une abeille.",
+        "Sara félicite tout le monde pour un billet.",
+        "Avant la nuit, ils rangent une bouteille."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand Guillaume profite le soleil sous le soleil, et la fille est très contente."
+      "sentences": [
+        "Ce matin, Liam travaille dans la cour.",
+        "Il prépare une abeille avec soin.",
+        "Théo arrive et regarde une abeille.",
+        "Ensemble, ils ajoutent un billet.",
+        "Liam explique l’usage d’un billet.",
+        "Théo propose aussi une bouteille.",
+        "Le travail avance grâce à une abeille.",
+        "Ils placent une bouteille près d’un billet.",
+        "À la fin, une feuille est prêt pour demain.",
+        "Plus tard, Sofia revient au café.",
+        "Emma rapporte une feuille une seconde fois.",
+        "Ils vérifient encore une feuille ensemble.",
+        "Sofia explique une nouvelle idée sur un billet.",
+        "Emma écoute et regarde un billet.",
+        "Le groupe accepte d’essayer un maillot.",
+        "Après une pause, un maillot change le plan.",
+        "Sofia montre le résultat près d’une feuille.",
+        "Emma félicite tout le monde pour un billet.",
+        "Avant la nuit, ils rangent une bouteille."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Inès fait des courses dans la cuisine.",
+        "Dans le panier, il y a déjà une feuille.",
+        "Léa choisit un billet juste à côté.",
+        "Ils comparent une feuille et un billet.",
+        "Le vendeur parle d’une bouteille.",
+        "Inès prend aussi une bouteille.",
+        "Léa paie et range une feuille.",
+        "Sur le chemin, ils discutent d’un billet.",
+        "À la maison, ils sortent encore une abeille.",
+        "Plus tard, Théo revient au parc.",
+        "Nora rapporte un billet une seconde fois.",
+        "Ils vérifient encore un billet ensemble.",
+        "Théo explique une nouvelle idée sur une bouteille.",
+        "Nora écoute et regarde une bouteille.",
+        "Le groupe accepte d’essayer une feuille.",
+        "Après une pause, une feuille change le plan.",
+        "Théo montre le résultat près d’un billet.",
+        "Nora félicite tout le monde pour une bouteille.",
+        "Avant la nuit, ils rangent une abeille."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand Camille ferme le sommeil près de la fille, parce que Camille est contente."
+      "sentences": [
+        "Emma lit un message au magasin.",
+        "Adam doit apporter un maillot rapidement.",
+        "Emma part avec une feuille.",
+        "Ils se croisent près d’une bouteille.",
+        "Adam donne un maillot à Emma.",
+        "Emma vérifie un maillot calmement.",
+        "Ensuite, ils déposent une feuille.",
+        "Une amie demande des nouvelles d’une bouteille.",
+        "Plus tard, un billet termine la journée.",
+        "Plus tard, Adam revient au parc.",
+        "Emma rapporte une bouteille une seconde fois.",
+        "Ils vérifient encore une bouteille ensemble.",
+        "Adam explique une nouvelle idée sur un billet.",
+        "Emma écoute et regarde un billet.",
+        "Le groupe accepte d’essayer un maillot.",
+        "Après une pause, un maillot change le plan.",
+        "Adam montre le résultat près d’une bouteille.",
+        "Emma félicite tout le monde pour un billet.",
+        "Avant la nuit, ils rangent une feuille."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Maya organise une activité au café.",
+        "Liam apporte une feuille dès le début.",
+        "Sur la table, on voit une feuille et un billet.",
+        "Les enfants touchent un billet à tour de rôle.",
+        "Maya explique le mot lié à un maillot.",
+        "Liam dessine un maillot au tableau.",
+        "Tout le monde écoute l’histoire d’une feuille.",
+        "Après l’exercice, ils rangent un billet.",
+        "Maya note encore une bouteille dans le cahier.",
+        "Plus tard, Adam revient au parc.",
+        "Omar rapporte un billet une seconde fois.",
+        "Ils vérifient encore un billet ensemble.",
+        "Adam explique une nouvelle idée sur une bouteille.",
+        "Omar écoute et regarde une bouteille.",
+        "Le groupe accepte d’essayer un maillot.",
+        "Après une pause, un maillot change le plan.",
+        "Adam montre le résultat près d’un billet.",
+        "Omar félicite tout le monde pour une bouteille.",
+        "Avant la nuit, ils rangent une feuille."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand Guillaume soigne la taille près de la fille, parce que Camille est contente."
+      "sentences": [
+        "Il pleut un peu dans la cuisine.",
+        "Emma protège une abeille sous le bras.",
+        "Sara tient un billet contre lui.",
+        "Ils entrent et posent une abeille.",
+        "Emma sèche un billet avec un chiffon.",
+        "Sara prépare une bouteille pour attendre.",
+        "Ils parlent calmement d’une abeille.",
+        "Quand la pluie cesse, une bouteille est prêt.",
+        "Ils repartent avec un maillot.",
+        "Plus tard, Yanis revient à la gare.",
+        "Amira rapporte une bouteille une seconde fois.",
+        "Ils vérifient encore une bouteille ensemble.",
+        "Yanis explique une nouvelle idée sur un maillot.",
+        "Amira écoute et regarde un maillot.",
+        "Le groupe accepte d’essayer un billet.",
+        "Après une pause, un billet change le plan.",
+        "Yanis montre le résultat près d’une bouteille.",
+        "Amira félicite tout le monde pour un maillot.",
+        "Avant la nuit, ils rangent une abeille."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Noah et Léa révisent au café.",
+        "La leçon commence avec un maillot.",
+        "Noah lit une phrase sur un maillot.",
+        "Léa répète le mot une bouteille.",
+        "Ils écrivent une bouteille dans le cahier.",
+        "Une erreur apparaît près d’un billet.",
+        "Noah corrige et montre un billet.",
+        "Léa récite encore la phrase d’un maillot.",
+        "Avant de partir, ils relisent une feuille.",
+        "Plus tard, Noah revient au magasin.",
+        "Adam rapporte une bouteille une seconde fois.",
+        "Ils vérifient encore une bouteille ensemble.",
+        "Noah explique une nouvelle idée sur une abeille.",
+        "Adam écoute et regarde une abeille.",
+        "Le groupe accepte d’essayer un billet.",
+        "Après une pause, un billet change le plan.",
+        "Noah montre le résultat près d’une bouteille.",
+        "Adam félicite tout le monde pour une abeille.",
+        "Avant la nuit, ils rangent une feuille."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Achille prépare le travail avec Camille, et la fille est très contente."
+      "sentences": [
+        "Sara visite un stand dans la cour.",
+        "Amira désigne un maillot du doigt.",
+        "Le guide présente un maillot clairement.",
+        "Sara photographie un billet.",
+        "Ils posent une question sur un billet.",
+        "Amira note le détail d’une feuille.",
+        "Avant de partir, Sara achète une feuille.",
+        "Amira range une feuille dans le sac.",
+        "Sur le chemin du retour, ils parlent d’une abeille.",
+        "Plus tard, Yanis revient au café.",
+        "Léa rapporte une abeille une seconde fois.",
+        "Ils vérifient encore une abeille ensemble.",
+        "Yanis explique une nouvelle idée sur une feuille.",
+        "Léa écoute et regarde une feuille.",
+        "Le groupe accepte d’essayer un maillot.",
+        "Après une pause, un maillot change le plan.",
+        "Yanis montre le résultat près d’une abeille.",
+        "Léa félicite tout le monde pour une feuille.",
+        "Avant la nuit, ils rangent un billet."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Inès prépare une surprise au marché.",
+        "Omar cache une bouteille derrière la porte.",
+        "Tout le monde cherche une bouteille.",
+        "Inès donne un indice avec un maillot.",
+        "Omar trouve enfin une bouteille.",
+        "Ils ouvrent aussi une abeille.",
+        "Les amis rient autour d’un maillot.",
+        "Inès partage une abeille avec le groupe.",
+        "La fête se termine près d’une feuille.",
+        "Plus tard, Sara revient au marché.",
+        "Sofia rapporte un billet une seconde fois.",
+        "Ils vérifient encore un billet ensemble.",
+        "Sara explique une nouvelle idée sur un maillot.",
+        "Sofia écoute et regarde un maillot.",
+        "Le groupe accepte d’essayer une feuille.",
+        "Après une pause, une feuille change le plan.",
+        "Sara montre le résultat près d’un billet.",
+        "Sofia félicite tout le monde pour un maillot.",
+        "Avant la nuit, ils rangent une abeille."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Camille partage la vanille avec Guillaume, parce que Camille est contente."
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand Camille observe un écureuil sous le soleil, et la fille est très contente."
+      "sentences": [
+        "Nora commence la journée au magasin.",
+        "Amira apporte un maillot pour le groupe.",
+        "Ils placent un maillot au centre.",
+        "Nora décrit un maillot à voix haute.",
+        "Amira ajoute une bouteille à côté.",
+        "Le groupe compare un maillot et une bouteille.",
+        "Ensuite, chacun touche un billet.",
+        "Nora résume le rôle d’un billet.",
+        "Pour finir, Amira range une abeille.",
+        "Plus tard, Liam revient au magasin.",
+        "Sara rapporte une bouteille une seconde fois.",
+        "Ils vérifient encore une bouteille ensemble.",
+        "Liam explique une nouvelle idée sur une abeille.",
+        "Sara écoute et regarde une abeille.",
+        "Le groupe accepte d’essayer un billet.",
+        "Après une pause, un billet change le plan.",
+        "Liam montre le résultat près d’une bouteille.",
+        "Sara félicite tout le monde pour une abeille.",
+        "Avant la nuit, ils rangent une feuille."
+      ]
     }
   ]
 }

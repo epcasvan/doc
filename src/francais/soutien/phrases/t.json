@@ -2682,128 +2682,388 @@
       ]
     }
   ],
-  "type12": [
-    {
-      "level": "a1",
-      "sentence": "Une amie achète la botte."
-    },
-    {
-      "level": "a1",
-      "sentence": "La grand-mère partage la carotte."
-    },
-    {
-      "level": "a1",
-      "sentence": "Théo attend la date bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le papa voit la goutte."
-    },
+  "type12Stories": [
     {
       "level": "a2",
-      "sentence": "Avant le repas, le cousin mange la tartine avec Tom."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le voisin partage la tasse avec Théo."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le cuisinier aime la tente sur le toit."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, la maîtresse paie le ticket avec Théo."
+      "sentences": [
+        "Liam et Hugo se retrouvent au parc.",
+        "Liam apporte une carotte dans un sac.",
+        "Hugo pose une tarte sur la table.",
+        "Ils parlent d’abord d’une carotte.",
+        "Puis Hugo montre un ticket à Liam.",
+        "Tout à coup, une carotte tombe par terre.",
+        "Liam ramasse une carotte et rit.",
+        "Hugo range une tarte et un ticket.",
+        "Avant de partir, ils vérifient encore un tiroir."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la grand-mère range le toux, et Tom est très content."
+      "sentences": [
+        "Ce matin, Sara travaille au café.",
+        "Il prépare un ticket avec soin.",
+        "Maya arrive et regarde un ticket.",
+        "Ensemble, ils ajoutent une botte.",
+        "Sara explique l’usage d’une botte.",
+        "Maya propose aussi une carotte.",
+        "Le travail avance grâce à un ticket.",
+        "Ils placent une carotte près d’une botte.",
+        "À la fin, une tarte est prêt pour demain."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Adam fait des courses au magasin.",
+        "Dans le panier, il y a déjà une carotte.",
+        "Yanis choisit un ticket juste à côté.",
+        "Ils comparent une carotte et un ticket.",
+        "Le vendeur parle d’une tasse.",
+        "Adam prend aussi une tasse.",
+        "Yanis paie et range une carotte.",
+        "Sur le chemin, ils discutent d’un ticket.",
+        "À la maison, ils sortent encore une tomate."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Théo préfère le train avec Tom, et Tom est très content."
+      "sentences": [
+        "Emma lit un message à la bibliothèque.",
+        "Amira doit apporter une tarte rapidement.",
+        "Emma part avec une tasse.",
+        "Ils se croisent près d’une botte.",
+        "Amira donne une tarte à Emma.",
+        "Emma vérifie une tarte calmement.",
+        "Ensuite, ils déposent une tasse.",
+        "Une amie demande des nouvelles d’une botte.",
+        "Plus tard, une tomate termine la journée."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Noah organise une activité au parc.",
+        "Adam apporte une tomate dès le début.",
+        "Sur la table, on voit une tomate et un ticket.",
+        "Les enfants touchent un ticket à tour de rôle.",
+        "Noah explique le mot lié à un tiroir.",
+        "Adam dessine un tiroir au tableau.",
+        "Tout le monde écoute l’histoire d’une tomate.",
+        "Après l’exercice, ils rangent un ticket.",
+        "Noah note encore une botte dans le cahier."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le papa cherche le trottoir, et Tom est très content."
+      "sentences": [
+        "Il pleut un peu dans le jardin.",
+        "Noah protège un ticket sous le bras.",
+        "Léa tient une tasse contre lui.",
+        "Ils entrent et posent un ticket.",
+        "Noah sèche une tasse avec un chiffon.",
+        "Léa prépare une tomate pour attendre.",
+        "Ils parlent calmement d’un ticket.",
+        "Quand la pluie cesse, une tomate est prêt.",
+        "Ils repartent avec une tarte."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Léa et Liam révisent au magasin.",
+        "La leçon commence avec un tiroir.",
+        "Léa lit une phrase sur un tiroir.",
+        "Liam répète le mot une carotte.",
+        "Ils écrivent une carotte dans le cahier.",
+        "Une erreur apparaît près d’une tasse.",
+        "Léa corrige et montre une tasse.",
+        "Liam récite encore la phrase d’un tiroir.",
+        "Avant de partir, ils relisent une tarte."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le bébé visite la tuile, et Tom est très content."
+      "sentences": [
+        "Amira visite un stand dans le jardin.",
+        "Hugo désigne une tarte du doigt.",
+        "Le guide présente une tarte clairement.",
+        "Amira photographie une tasse.",
+        "Ils posent une question sur une tasse.",
+        "Hugo note le détail d’une tomate.",
+        "Avant de partir, Amira achète une tomate.",
+        "Hugo range une tomate dans le sac.",
+        "Sur le chemin du retour, ils parlent d’une botte."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Omar prépare une surprise au café.",
+        "Liam cache une tarte derrière la porte.",
+        "Tout le monde cherche une tarte.",
+        "Omar donne un indice avec une tomate.",
+        "Liam trouve enfin une tarte.",
+        "Ils ouvrent aussi un ticket.",
+        "Les amis rient autour d’une tomate.",
+        "Omar partage un ticket avec le groupe.",
+        "La fête se termine près d’une tasse."
+      ]
+    },
+    {
+      "level": "b1",
+      "sentences": [
+        "Nora commence la journée à la bibliothèque.",
+        "Amira apporte une tarte pour le groupe.",
+        "Ils placent une tarte au centre.",
+        "Nora décrit une tarte à voix haute.",
+        "Amira ajoute une tasse à côté.",
+        "Le groupe compare une tarte et une tasse.",
+        "Ensuite, chacun touche un tiroir.",
+        "Nora résume le rôle d’un tiroir.",
+        "Pour finir, Amira range un ticket."
+      ]
     }
   ],
-  "type14": [
-    {
-      "level": "a1",
-      "sentence": "Le frère paie la note vite."
-    },
-    {
-      "level": "a1",
-      "sentence": "La fille soigne la patte."
-    },
-    {
-      "level": "a1",
-      "sentence": "Tom utilise le saignant bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "Une amie essuie la table vite."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le grand-père bat le tapis."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le garçon goûte la tarte."
-    },
+  "type14Stories": [
     {
       "level": "a2",
-      "sentence": "Ce matin, la jardinière caresse le tigre avec Tom."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le directeur peint le tiroir tout de suite."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le frère goûte le toast avec Tom."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la copine coupe la tomate avec Tom."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le maître nourrit la tortue avec Théo."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la professeure oublie le toucan sur le toit."
+      "sentences": [
+        "Théo et Emma se retrouvent dans le jardin.",
+        "Théo apporte une carotte dans un sac.",
+        "Emma pose un tiroir sur la table.",
+        "Ils parlent d’abord d’une carotte.",
+        "Puis Emma montre une tasse à Théo.",
+        "Tout à coup, une carotte tombe par terre.",
+        "Théo ramasse une carotte et rit.",
+        "Emma range un tiroir et une tasse.",
+        "Avant de partir, ils vérifient encore une tomate.",
+        "Plus tard, Adam revient dans le jardin.",
+        "Karim rapporte une botte une seconde fois.",
+        "Ils vérifient encore une botte ensemble.",
+        "Adam explique une nouvelle idée sur une tarte.",
+        "Karim écoute et regarde une tarte.",
+        "Le groupe accepte d’essayer une tomate.",
+        "Après une pause, une tomate change le plan.",
+        "Adam montre le résultat près d’une botte.",
+        "Karim félicite tout le monde pour une tarte.",
+        "Avant la nuit, ils rangent un ticket."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la boulangère regarde la télé, et Tom est très content."
+      "sentences": [
+        "Ce matin, Amira travaille au marché.",
+        "Il prépare un ticket avec soin.",
+        "Inès arrive et regarde un ticket.",
+        "Ensemble, ils ajoutent une tarte.",
+        "Amira explique l’usage d’une tarte.",
+        "Inès propose aussi un tiroir.",
+        "Le travail avance grâce à un ticket.",
+        "Ils placent un tiroir près d’une tarte.",
+        "À la fin, une tomate est prêt pour demain.",
+        "Plus tard, Amira revient au magasin.",
+        "Léa rapporte une tarte une seconde fois.",
+        "Ils vérifient encore une tarte ensemble.",
+        "Amira explique une nouvelle idée sur un ticket.",
+        "Léa écoute et regarde un ticket.",
+        "Le groupe accepte d’essayer une carotte.",
+        "Après une pause, une carotte change le plan.",
+        "Amira montre le résultat près d’une tarte.",
+        "Léa félicite tout le monde pour un ticket.",
+        "Avant la nuit, ils rangent une botte."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Karim fait des courses dans la cour.",
+        "Dans le panier, il y a déjà une carotte.",
+        "Léa choisit une tomate juste à côté.",
+        "Ils comparent une carotte et une tomate.",
+        "Le vendeur parle d’un ticket.",
+        "Karim prend aussi un ticket.",
+        "Léa paie et range une carotte.",
+        "Sur le chemin, ils discutent d’une tomate.",
+        "À la maison, ils sortent encore une tarte.",
+        "Plus tard, Inès revient au parc.",
+        "Yanis rapporte une tarte une seconde fois.",
+        "Ils vérifient encore une tarte ensemble.",
+        "Inès explique une nouvelle idée sur un tiroir.",
+        "Yanis écoute et regarde un tiroir.",
+        "Le groupe accepte d’essayer une carotte.",
+        "Après une pause, une carotte change le plan.",
+        "Inès montre le résultat près d’une tarte.",
+        "Yanis félicite tout le monde pour un tiroir.",
+        "Avant la nuit, ils rangent une tomate."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la copine montre la tétine, et Tom est très content."
+      "sentences": [
+        "Yanis lit un message dans le jardin.",
+        "Liam doit apporter un tiroir rapidement.",
+        "Yanis part avec une carotte.",
+        "Ils se croisent près d’une tasse.",
+        "Liam donne un tiroir à Yanis.",
+        "Yanis vérifie un tiroir calmement.",
+        "Ensuite, ils déposent une carotte.",
+        "Une amie demande des nouvelles d’une tasse.",
+        "Plus tard, une botte termine la journée.",
+        "Plus tard, Hugo revient dans la cour.",
+        "Omar rapporte un tiroir une seconde fois.",
+        "Ils vérifient encore un tiroir ensemble.",
+        "Hugo explique une nouvelle idée sur un ticket.",
+        "Omar écoute et regarde un ticket.",
+        "Le groupe accepte d’essayer une carotte.",
+        "Après une pause, une carotte change le plan.",
+        "Hugo montre le résultat près d’un tiroir.",
+        "Omar félicite tout le monde pour un ticket.",
+        "Avant la nuit, ils rangent une botte."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Omar organise une activité à la bibliothèque.",
+        "Nora apporte une botte dès le début.",
+        "Sur la table, on voit une botte et une tasse.",
+        "Les enfants touchent une tasse à tour de rôle.",
+        "Omar explique le mot lié à une tarte.",
+        "Nora dessine une tarte au tableau.",
+        "Tout le monde écoute l’histoire d’une botte.",
+        "Après l’exercice, ils rangent une tasse.",
+        "Omar note encore un ticket dans le cahier.",
+        "Plus tard, Nora revient au marché.",
+        "Théo rapporte une botte une seconde fois.",
+        "Ils vérifient encore une botte ensemble.",
+        "Nora explique une nouvelle idée sur une tarte.",
+        "Théo écoute et regarde une tarte.",
+        "Le groupe accepte d’essayer une carotte.",
+        "Après une pause, une carotte change le plan.",
+        "Nora montre le résultat près d’une botte.",
+        "Théo félicite tout le monde pour une tarte.",
+        "Avant la nuit, ils rangent une tomate."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand une amie soigne la tête, parce que Théo est très content."
+      "sentences": [
+        "Il pleut un peu à la bibliothèque.",
+        "Léa protège un ticket sous le bras.",
+        "Noah tient une botte contre lui.",
+        "Ils entrent et posent un ticket.",
+        "Léa sèche une botte avec un chiffon.",
+        "Noah prépare une tasse pour attendre.",
+        "Ils parlent calmement d’un ticket.",
+        "Quand la pluie cesse, une tasse est prêt.",
+        "Ils repartent avec un tiroir.",
+        "Plus tard, Liam revient au café.",
+        "Sofia rapporte une tomate une seconde fois.",
+        "Ils vérifient encore une tomate ensemble.",
+        "Liam explique une nouvelle idée sur une tasse.",
+        "Sofia écoute et regarde une tasse.",
+        "Le groupe accepte d’essayer un tiroir.",
+        "Après une pause, un tiroir change le plan.",
+        "Liam montre le résultat près d’une tomate.",
+        "Sofia félicite tout le monde pour une tasse.",
+        "Avant la nuit, ils rangent une carotte."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Emma et Noah révisent dans la cour.",
+        "La leçon commence avec une tomate.",
+        "Emma lit une phrase sur une tomate.",
+        "Noah répète le mot une tarte.",
+        "Ils écrivent une tarte dans le cahier.",
+        "Une erreur apparaît près d’une tasse.",
+        "Emma corrige et montre une tasse.",
+        "Noah récite encore la phrase d’une tomate.",
+        "Avant de partir, ils relisent une carotte.",
+        "Plus tard, Yanis revient dans la cuisine.",
+        "Liam rapporte un ticket une seconde fois.",
+        "Ils vérifient encore un ticket ensemble.",
+        "Yanis explique une nouvelle idée sur une tarte.",
+        "Liam écoute et regarde une tarte.",
+        "Le groupe accepte d’essayer une tomate.",
+        "Après une pause, une tomate change le plan.",
+        "Yanis montre le résultat près d’un ticket.",
+        "Liam félicite tout le monde pour une tarte.",
+        "Avant la nuit, ils rangent une botte."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Antoine choisit la botte avec Tom, et Tom est très content."
+      "sentences": [
+        "Adam visite un stand au café.",
+        "Léa désigne un tiroir du doigt.",
+        "Le guide présente un tiroir clairement.",
+        "Adam photographie une tasse.",
+        "Ils posent une question sur une tasse.",
+        "Léa note le détail d’une tomate.",
+        "Avant de partir, Adam achète une tomate.",
+        "Léa range une tomate dans le sac.",
+        "Sur le chemin du retour, ils parlent d’une botte.",
+        "Plus tard, Adam revient dans la cuisine.",
+        "Noah rapporte une tomate une seconde fois.",
+        "Ils vérifient encore une tomate ensemble.",
+        "Adam explique une nouvelle idée sur une carotte.",
+        "Noah écoute et regarde une carotte.",
+        "Le groupe accepte d’essayer une botte.",
+        "Après une pause, une botte change le plan.",
+        "Adam montre le résultat près d’une tomate.",
+        "Noah félicite tout le monde pour une carotte.",
+        "Avant la nuit, ils rangent une tasse."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Léa prépare une surprise dans la cour.",
+        "Omar cache un tiroir derrière la porte.",
+        "Tout le monde cherche un tiroir.",
+        "Léa donne un indice avec un ticket.",
+        "Omar trouve enfin un tiroir.",
+        "Ils ouvrent aussi une carotte.",
+        "Les amis rient autour d’un ticket.",
+        "Léa partage une carotte avec le groupe.",
+        "La fête se termine près d’une tomate.",
+        "Plus tard, Sofia revient dans la cour.",
+        "Sara rapporte une carotte une seconde fois.",
+        "Ils vérifient encore une carotte ensemble.",
+        "Sofia explique une nouvelle idée sur une botte.",
+        "Sara écoute et regarde une botte.",
+        "Le groupe accepte d’essayer un ticket.",
+        "Après une pause, un ticket change le plan.",
+        "Sofia montre le résultat près d’une carotte.",
+        "Sara félicite tout le monde pour une botte.",
+        "Avant la nuit, ils rangent un tiroir."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Théo lave la carotte, parce que Théo est très content."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le papa note la date, parce que Théo est très content."
+      "sentences": [
+        "Théo commence la journée au marché.",
+        "Liam apporte une tarte pour le groupe.",
+        "Ils placent une tarte au centre.",
+        "Théo décrit une tarte à voix haute.",
+        "Liam ajoute un ticket à côté.",
+        "Le groupe compare une tarte et un ticket.",
+        "Ensuite, chacun touche une tasse.",
+        "Théo résume le rôle d’une tasse.",
+        "Pour finir, Liam range un tiroir.",
+        "Plus tard, Hugo revient au marché.",
+        "Karim rapporte un tiroir une seconde fois.",
+        "Ils vérifient encore un tiroir ensemble.",
+        "Hugo explique une nouvelle idée sur une tomate.",
+        "Karim écoute et regarde une tomate.",
+        "Le groupe accepte d’essayer un ticket.",
+        "Après une pause, un ticket change le plan.",
+        "Hugo montre le résultat près d’un tiroir.",
+        "Karim félicite tout le monde pour une tomate.",
+        "Avant la nuit, ils rangent une tarte."
+      ]
     }
   ]
 }

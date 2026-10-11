@@ -2709,128 +2709,388 @@
       ]
     }
   ],
-  "type12": [
-    {
-      "level": "a1",
-      "sentence": "La tante emprunte un avion avec Simon."
-    },
-    {
-      "level": "a1",
-      "sentence": "La boulangère visite le balcon avec Simon."
-    },
-    {
-      "level": "a1",
-      "sentence": "Manon rapporte le ballon bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La directrice apporte le bonbon."
-    },
+  "type12Stories": [
     {
       "level": "a2",
-      "sentence": "Après le cours, Simon achète la confiture avec Manon."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le garçon photographie le flocon avec Simon."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le jardinier soigne le front selon mon oncle."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le cousin invite le garçon selon mon oncle."
+      "sentences": [
+        "Amira et Adam se retrouvent dans le jardin.",
+        "Amira apporte un citron dans un sac.",
+        "Adam pose une montre sur la table.",
+        "Ils parlent d’abord d’un citron.",
+        "Puis Adam montre un ballon à Amira.",
+        "Tout à coup, un citron tombe par terre.",
+        "Amira ramasse un citron et rit.",
+        "Adam range une montre et un ballon.",
+        "Avant de partir, ils vérifient encore un melon."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand la boulangère regarde une ombre dans le salon, et Simon est très content."
+      "sentences": [
+        "Ce matin, Léa travaille à l’école.",
+        "Il prépare une montre avec soin.",
+        "Emma arrive et regarde une montre.",
+        "Ensemble, ils ajoutent un ballon.",
+        "Léa explique l’usage d’un ballon.",
+        "Emma propose aussi un citron.",
+        "Le travail avance grâce à une montre.",
+        "Ils placent un citron près d’un ballon.",
+        "À la fin, un melon est prêt pour demain."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Yanis fait des courses à la gare.",
+        "Dans le panier, il y a déjà un citron.",
+        "Amira choisit un bonbon juste à côté.",
+        "Ils comparent un citron et un bonbon.",
+        "Le vendeur parle d’un melon.",
+        "Yanis prend aussi un melon.",
+        "Amira paie et range un citron.",
+        "Sur le chemin, ils discutent d’un bonbon.",
+        "À la maison, ils sortent encore un savon."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Manon salue un oncle avec Simon, et Simon est très content."
+      "sentences": [
+        "Hugo lit un message au parc.",
+        "Maya doit apporter un ballon rapidement.",
+        "Hugo part avec une montre.",
+        "Ils se croisent près d’un citron.",
+        "Maya donne un ballon à Hugo.",
+        "Hugo vérifie un ballon calmement.",
+        "Ensuite, ils déposent une montre.",
+        "Une amie demande des nouvelles d’un citron.",
+        "Plus tard, un poisson termine la journée."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Yanis organise une activité à la bibliothèque.",
+        "Maya apporte un bonbon dès le début.",
+        "Sur la table, on voit un bonbon et un melon.",
+        "Les enfants touchent un melon à tour de rôle.",
+        "Yanis explique le mot lié à un savon.",
+        "Maya dessine un savon au tableau.",
+        "Tout le monde écoute l’histoire d’un bonbon.",
+        "Après l’exercice, ils rangent un melon.",
+        "Yanis note encore un poisson dans le cahier."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand la voisine recopie le onze dans le salon, et Simon est très content."
+      "sentences": [
+        "Il pleut un peu au marché.",
+        "Sofia protège un bonbon sous le bras.",
+        "Léa tient une montre contre lui.",
+        "Ils entrent et posent un bonbon.",
+        "Sofia sèche une montre avec un chiffon.",
+        "Léa prépare un citron pour attendre.",
+        "Ils parlent calmement d’un bonbon.",
+        "Quand la pluie cesse, un citron est prêt.",
+        "Ils repartent avec un melon."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Léa et Sofia révisent dans le jardin.",
+        "La leçon commence avec une montre.",
+        "Léa lit une phrase sur une montre.",
+        "Sofia répète le mot un savon.",
+        "Ils écrivent un savon dans le cahier.",
+        "Une erreur apparaît près d’un melon.",
+        "Léa corrige et montre un melon.",
+        "Sofia récite encore la phrase d’une montre.",
+        "Avant de partir, ils relisent un citron."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand la professeure sert le poisson selon mon oncle, parce que Manon est contente."
+      "sentences": [
+        "Sara visite un stand au parc.",
+        "Noah désigne un melon du doigt.",
+        "Le guide présente un melon clairement.",
+        "Sara photographie un bonbon.",
+        "Ils posent une question sur un bonbon.",
+        "Noah note le détail d’un savon.",
+        "Avant de partir, Sara achète un savon.",
+        "Noah range un savon dans le sac.",
+        "Sur le chemin du retour, ils parlent d’un citron."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Liam prépare une surprise à l’école.",
+        "Emma cache un poisson derrière la porte.",
+        "Tout le monde cherche un poisson.",
+        "Liam donne un indice avec un melon.",
+        "Emma trouve enfin un poisson.",
+        "Ils ouvrent aussi un savon.",
+        "Les amis rient autour d’un melon.",
+        "Liam partage un savon avec le groupe.",
+        "La fête se termine près d’une montre."
+      ]
+    },
+    {
+      "level": "b1",
+      "sentences": [
+        "Théo commence la journée à la bibliothèque.",
+        "Omar apporte un poisson pour le groupe.",
+        "Ils placent un poisson au centre.",
+        "Théo décrit un poisson à voix haute.",
+        "Omar ajoute un citron à côté.",
+        "Le groupe compare un poisson et un citron.",
+        "Ensuite, chacun touche un bonbon.",
+        "Théo résume le rôle d’un bonbon.",
+        "Pour finir, Omar range un melon."
+      ]
     }
   ],
-  "type14": [
-    {
-      "level": "a1",
-      "sentence": "La professeure aide le bonjour avec Manon."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le collègue coud le bouton avec Manon."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le copain prend le camion avec Manon."
-    },
-    {
-      "level": "a1",
-      "sentence": "La factrice écoute la chanson avec Simon."
-    },
-    {
-      "level": "a1",
-      "sentence": "La boulangère goûte le citron avec Manon."
-    },
-    {
-      "level": "a1",
-      "sentence": "La cousine apporte la compote avec Simon."
-    },
+  "type14Stories": [
     {
       "level": "a2",
-      "sentence": "Ce soir, le copain plante près de la maison selon mon oncle."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Yvonne choisit le melon selon mon oncle."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, une amie voit le monde selon mon oncle."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le cuisinier skie dans la montagne selon mon oncle."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le garçon porte la montre avec Manon."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Yvonne soigne le mouton dans le salon."
+      "sentences": [
+        "Théo et Sara se retrouvent à la bibliothèque.",
+        "Théo apporte un melon dans un sac.",
+        "Sara pose un ballon sur la table.",
+        "Ils parlent d’abord d’un melon.",
+        "Puis Sara montre une montre à Théo.",
+        "Tout à coup, un melon tombe par terre.",
+        "Théo ramasse un melon et rit.",
+        "Sara range un ballon et une montre.",
+        "Avant de partir, ils vérifient encore un savon.",
+        "Plus tard, Emma revient dans la cuisine.",
+        "Sofia rapporte un citron une seconde fois.",
+        "Ils vérifient encore un citron ensemble.",
+        "Emma explique une nouvelle idée sur une montre.",
+        "Sofia écoute et regarde une montre.",
+        "Le groupe accepte d’essayer un bonbon.",
+        "Après une pause, un bonbon change le plan.",
+        "Emma montre le résultat près d’un citron.",
+        "Sofia félicite tout le monde pour une montre.",
+        "Avant la nuit, ils rangent un poisson."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand le boulanger utilise la pompe avec Manon, parce que Manon est contente."
+      "sentences": [
+        "Ce matin, Sara travaille au magasin.",
+        "Il prépare un ballon avec soin.",
+        "Théo arrive et regarde un ballon.",
+        "Ensemble, ils ajoutent un citron.",
+        "Sara explique l’usage d’un citron.",
+        "Théo propose aussi un savon.",
+        "Le travail avance grâce à un ballon.",
+        "Ils placent un savon près d’un citron.",
+        "À la fin, un bonbon est prêt pour demain.",
+        "Plus tard, Nora revient dans le jardin.",
+        "Maya rapporte un savon une seconde fois.",
+        "Ils vérifient encore un savon ensemble.",
+        "Nora explique une nouvelle idée sur un melon.",
+        "Maya écoute et regarde un melon.",
+        "Le groupe accepte d’essayer un bonbon.",
+        "Après une pause, un bonbon change le plan.",
+        "Nora montre le résultat près d’un savon.",
+        "Maya félicite tout le monde pour un melon.",
+        "Avant la nuit, ils rangent un ballon."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Sara fait des courses dans la cuisine.",
+        "Dans le panier, il y a déjà un melon.",
+        "Liam choisit un savon juste à côté.",
+        "Ils comparent un melon et un savon.",
+        "Le vendeur parle d’un ballon.",
+        "Sara prend aussi un ballon.",
+        "Liam paie et range un melon.",
+        "Sur le chemin, ils discutent d’un savon.",
+        "À la maison, ils sortent encore un poisson.",
+        "Plus tard, Théo revient dans la cuisine.",
+        "Sofia rapporte un poisson une seconde fois.",
+        "Ils vérifient encore un poisson ensemble.",
+        "Théo explique une nouvelle idée sur une montre.",
+        "Sofia écoute et regarde une montre.",
+        "Le groupe accepte d’essayer un ballon.",
+        "Après une pause, un ballon change le plan.",
+        "Théo montre le résultat près d’un poisson.",
+        "Sofia félicite tout le monde pour une montre.",
+        "Avant la nuit, ils rangent un bonbon."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand la directrice passe sous le pont selon mon oncle, parce que Manon est contente."
+      "sentences": [
+        "Karim lit un message dans la cuisine.",
+        "Sofia doit apporter un melon rapidement.",
+        "Karim part avec un citron.",
+        "Ils se croisent près d’un savon.",
+        "Sofia donne un melon à Karim.",
+        "Karim vérifie un melon calmement.",
+        "Ensuite, ils déposent un citron.",
+        "Une amie demande des nouvelles d’un savon.",
+        "Plus tard, une montre termine la journée.",
+        "Plus tard, Léa revient à la bibliothèque.",
+        "Hugo rapporte un bonbon une seconde fois.",
+        "Ils vérifient encore un bonbon ensemble.",
+        "Léa explique une nouvelle idée sur un citron.",
+        "Hugo écoute et regarde un citron.",
+        "Le groupe accepte d’essayer un ballon.",
+        "Après une pause, un ballon change le plan.",
+        "Léa montre le résultat près d’un bonbon.",
+        "Hugo félicite tout le monde pour un citron.",
+        "Avant la nuit, ils rangent un poisson."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Amira organise une activité au marché.",
+        "Adam apporte un ballon dès le début.",
+        "Sur la table, on voit un ballon et un poisson.",
+        "Les enfants touchent un poisson à tour de rôle.",
+        "Amira explique le mot lié à un bonbon.",
+        "Adam dessine un bonbon au tableau.",
+        "Tout le monde écoute l’histoire d’un ballon.",
+        "Après l’exercice, ils rangent un poisson.",
+        "Amira note encore un melon dans le cahier.",
+        "Plus tard, Yanis revient au magasin.",
+        "Adam rapporte un ballon une seconde fois.",
+        "Ils vérifient encore un ballon ensemble.",
+        "Yanis explique une nouvelle idée sur un melon.",
+        "Adam écoute et regarde un melon.",
+        "Le groupe accepte d’essayer un bonbon.",
+        "Après une pause, un bonbon change le plan.",
+        "Yanis montre le résultat près d’un ballon.",
+        "Adam félicite tout le monde pour un melon.",
+        "Avant la nuit, ils rangent un poisson."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand le voisin aide le prénom avec Manon, parce que Manon est contente."
+      "sentences": [
+        "Il pleut un peu au café.",
+        "Inès protège un bonbon sous le bras.",
+        "Omar tient un citron contre lui.",
+        "Ils entrent et posent un bonbon.",
+        "Inès sèche un citron avec un chiffon.",
+        "Omar prépare un savon pour attendre.",
+        "Ils parlent calmement d’un bonbon.",
+        "Quand la pluie cesse, un savon est prêt.",
+        "Ils repartent avec un melon.",
+        "Plus tard, Adam revient au parc.",
+        "Liam rapporte un melon une seconde fois.",
+        "Ils vérifient encore un melon ensemble.",
+        "Adam explique une nouvelle idée sur une montre.",
+        "Liam écoute et regarde une montre.",
+        "Le groupe accepte d’essayer un poisson.",
+        "Après une pause, un poisson change le plan.",
+        "Adam montre le résultat près d’un melon.",
+        "Liam félicite tout le monde pour une montre.",
+        "Avant la nuit, ils rangent un ballon."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Sara et Inès révisent au café.",
+        "La leçon commence avec un citron.",
+        "Sara lit une phrase sur un citron.",
+        "Inès répète le mot un melon.",
+        "Ils écrivent un melon dans le cahier.",
+        "Une erreur apparaît près d’un ballon.",
+        "Sara corrige et montre un ballon.",
+        "Inès récite encore la phrase d’un citron.",
+        "Avant de partir, ils relisent une montre.",
+        "Plus tard, Yanis revient dans la cuisine.",
+        "Liam rapporte un citron une seconde fois.",
+        "Ils vérifient encore un citron ensemble.",
+        "Yanis explique une nouvelle idée sur un savon.",
+        "Liam écoute et regarde un savon.",
+        "Le groupe accepte d’essayer une montre.",
+        "Après une pause, une montre change le plan.",
+        "Yanis montre le résultat près d’un citron.",
+        "Liam félicite tout le monde pour un savon.",
+        "Avant la nuit, ils rangent un bonbon."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Yvonne visite le salon avec Simon, et Simon est très content."
+      "sentences": [
+        "Hugo visite un stand à la gare.",
+        "Yanis désigne un bonbon du doigt.",
+        "Le guide présente un bonbon clairement.",
+        "Hugo photographie une montre.",
+        "Ils posent une question sur une montre.",
+        "Yanis note le détail d’un citron.",
+        "Avant de partir, Hugo achète un citron.",
+        "Yanis range un citron dans le sac.",
+        "Sur le chemin du retour, ils parlent d’un melon.",
+        "Plus tard, Karim revient dans le jardin.",
+        "Inès rapporte un melon une seconde fois.",
+        "Ils vérifient encore un melon ensemble.",
+        "Karim explique une nouvelle idée sur un ballon.",
+        "Inès écoute et regarde un ballon.",
+        "Le groupe accepte d’essayer un poisson.",
+        "Après une pause, un poisson change le plan.",
+        "Karim montre le résultat près d’un melon.",
+        "Inès félicite tout le monde pour un ballon.",
+        "Avant la nuit, ils rangent un citron."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Emma prépare une surprise à la gare.",
+        "Léa cache un citron derrière la porte.",
+        "Tout le monde cherche un citron.",
+        "Emma donne un indice avec un melon.",
+        "Léa trouve enfin un citron.",
+        "Ils ouvrent aussi un poisson.",
+        "Les amis rient autour d’un melon.",
+        "Emma partage un poisson avec le groupe.",
+        "La fête se termine près d’un bonbon.",
+        "Plus tard, Sara revient au parc.",
+        "Yanis rapporte une montre une seconde fois.",
+        "Ils vérifient encore une montre ensemble.",
+        "Sara explique une nouvelle idée sur un melon.",
+        "Yanis écoute et regarde un melon.",
+        "Le groupe accepte d’essayer un ballon.",
+        "Après une pause, un ballon change le plan.",
+        "Sara montre le résultat près d’une montre.",
+        "Yanis félicite tout le monde pour un melon.",
+        "Avant la nuit, ils rangent un poisson."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand la cousine ouvre le savon dans le salon, et Simon est très content."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand le cuisinier attend un avion avec Simon, et Simon est très content."
+      "sentences": [
+        "Omar commence la journée au magasin.",
+        "Léa apporte un bonbon pour le groupe.",
+        "Ils placent un bonbon au centre.",
+        "Omar décrit un bonbon à voix haute.",
+        "Léa ajoute un savon à côté.",
+        "Le groupe compare un bonbon et un savon.",
+        "Ensuite, chacun touche un citron.",
+        "Omar résume le rôle d’un citron.",
+        "Pour finir, Léa range un poisson.",
+        "Plus tard, Yanis revient au parc.",
+        "Maya rapporte un ballon une seconde fois.",
+        "Ils vérifient encore un ballon ensemble.",
+        "Yanis explique une nouvelle idée sur un citron.",
+        "Maya écoute et regarde un citron.",
+        "Le groupe accepte d’essayer un savon.",
+        "Après une pause, un savon change le plan.",
+        "Yanis montre le résultat près d’un ballon.",
+        "Maya félicite tout le monde pour un citron.",
+        "Avant la nuit, ils rangent une montre."
+      ]
     }
   ]
 }

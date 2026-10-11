@@ -2547,128 +2547,388 @@
       ]
     }
   ],
-  "type12": [
-    {
-      "level": "a1",
-      "sentence": "Le directeur nourrit un agneau au château."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le professeur photographie les animaux trop chaud."
-    },
-    {
-      "level": "a1",
-      "sentence": "Claude range un anneau bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La directrice apporte une aubergine trop chaud."
-    },
+  "type12Stories": [
     {
       "level": "a2",
-      "sentence": "Avant le repas, la copine pense au cadeau avec Paul."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le facteur sauve le chameau trop chaud."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la collègue porte le chapeau autour du bateau."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, un ami quitte le chauffage au château."
+      "sentences": [
+        "Yanis et Omar se retrouvent au magasin.",
+        "Yanis apporte une chaussure dans un sac.",
+        "Omar pose un oiseau sur la table.",
+        "Ils parlent d’abord d’une chaussure.",
+        "Puis Omar montre un tableau à Yanis.",
+        "Tout à coup, une chaussure tombe par terre.",
+        "Yanis ramasse une chaussure et rit.",
+        "Omar range un oiseau et un tableau.",
+        "Avant de partir, ils vérifient encore une chaussette."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand le professeur partage le gâteau au château, parce que Claude aime ça aussi."
+      "sentences": [
+        "Ce matin, Omar travaille dans la cuisine.",
+        "Il prépare un drapeau avec soin.",
+        "Liam arrive et regarde un drapeau.",
+        "Ensemble, ils ajoutent un tableau.",
+        "Omar explique l’usage d’un tableau.",
+        "Liam propose aussi une chaussette.",
+        "Le travail avance grâce à un drapeau.",
+        "Ils placent une chaussette près d’un tableau.",
+        "À la fin, un chapeau est prêt pour demain."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Sofia fait des courses au café.",
+        "Dans le panier, il y a déjà une chaussure.",
+        "Amira choisit un gâteau juste à côté.",
+        "Ils comparent une chaussure et un gâteau.",
+        "Le vendeur parle d’une chaussette.",
+        "Sofia prend aussi une chaussette.",
+        "Amira paie et range une chaussure.",
+        "Sur le chemin, ils discutent d’un gâteau.",
+        "À la maison, ils sortent encore un couteau."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Claude prend le jaune, et Paul trouve ça très beau."
+      "sentences": [
+        "Inès lit un message dans la cuisine.",
+        "Emma doit apporter un tableau rapidement.",
+        "Inès part avec un drapeau.",
+        "Ils se croisent près d’un chapeau.",
+        "Emma donne un tableau à Inès.",
+        "Inès vérifie un tableau calmement.",
+        "Ensuite, ils déposent un drapeau.",
+        "Une amie demande des nouvelles d’un chapeau.",
+        "Plus tard, un oiseau termine la journée."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Emma organise une activité au magasin.",
+        "Nora apporte un manteau dès le début.",
+        "Sur la table, on voit un manteau et une chaussette.",
+        "Les enfants touchent une chaussette à tour de rôle.",
+        "Emma explique le mot lié à un oiseau.",
+        "Nora dessine un oiseau au tableau.",
+        "Tout le monde écoute l’histoire d’un manteau.",
+        "Après l’exercice, ils rangent une chaussette.",
+        "Emma note encore un couteau dans le cahier."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand la voisine enfile le manteau autour du bateau, et Paul trouve ça très beau."
+      "sentences": [
+        "Il pleut un peu au parc.",
+        "Sara protège un oiseau sous le bras.",
+        "Omar tient un drapeau contre lui.",
+        "Ils entrent et posent un oiseau.",
+        "Sara sèche un drapeau avec un chiffon.",
+        "Omar prépare un manteau pour attendre.",
+        "Ils parlent calmement d’un oiseau.",
+        "Quand la pluie cesse, un manteau est prêt.",
+        "Ils repartent avec un couteau."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Sofia et Omar révisent au parc.",
+        "La leçon commence avec un oiseau.",
+        "Sofia lit une phrase sur un oiseau.",
+        "Omar répète le mot un manteau.",
+        "Ils écrivent un manteau dans le cahier.",
+        "Une erreur apparaît près d’une chaussette.",
+        "Sofia corrige et montre une chaussette.",
+        "Omar récite encore la phrase d’un oiseau.",
+        "Avant de partir, ils relisent un gâteau."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand la professeure sert le morceau trop chaud, parce que Claude aime ça aussi."
+      "sentences": [
+        "Liam visite un stand dans le jardin.",
+        "Nora désigne un oiseau du doigt.",
+        "Le guide présente un oiseau clairement.",
+        "Liam photographie un drapeau.",
+        "Ils posent une question sur un drapeau.",
+        "Nora note le détail d’un couteau.",
+        "Avant de partir, Liam achète un couteau.",
+        "Nora range un couteau dans le sac.",
+        "Sur le chemin du retour, ils parlent d’un chapeau."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Emma prépare une surprise à l’école.",
+        "Nora cache un couteau derrière la porte.",
+        "Tout le monde cherche un couteau.",
+        "Emma donne un indice avec un oiseau.",
+        "Nora trouve enfin un couteau.",
+        "Ils ouvrent aussi une chaussure.",
+        "Les amis rient autour d’un oiseau.",
+        "Emma partage une chaussure avec le groupe.",
+        "La fête se termine près d’un gâteau."
+      ]
+    },
+    {
+      "level": "b1",
+      "sentences": [
+        "Hugo commence la journée dans le jardin.",
+        "Théo apporte un chapeau pour le groupe.",
+        "Ils placent un chapeau au centre.",
+        "Hugo décrit un chapeau à voix haute.",
+        "Théo ajoute un manteau à côté.",
+        "Le groupe compare un chapeau et un manteau.",
+        "Ensuite, chacun touche un tableau.",
+        "Hugo résume le rôle d’un tableau.",
+        "Pour finir, Théo range un gâteau."
+      ]
     }
   ],
-  "type14": [
-    {
-      "level": "a1",
-      "sentence": "Laura descend de un autobus."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le boulanger aime un automne trop chaud."
-    },
-    {
-      "level": "a1",
-      "sentence": "Paul répare une autoroute bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La factrice caresse une autruche avec Paul."
-    },
-    {
-      "level": "a1",
-      "sentence": "La collègue prend le bateau trop chaud."
-    },
-    {
-      "level": "a1",
-      "sentence": "Paul travaille dans le bureau."
-    },
+  "type14Stories": [
     {
       "level": "a2",
-      "sentence": "À midi, la fille achète la chaussette autour du bateau."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la maman achète la chaussure autour du bateau."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le jardinier traverse le château autour du bateau."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la copine prépare le couteau au château."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le garçon longe le drapeau au château."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Théo range la gauche autour du bateau."
+      "sentences": [
+        "Sofia et Emma se retrouvent au café.",
+        "Sofia apporte un oiseau dans un sac.",
+        "Emma pose un tableau sur la table.",
+        "Ils parlent d’abord d’un oiseau.",
+        "Puis Emma montre un drapeau à Sofia.",
+        "Tout à coup, un oiseau tombe par terre.",
+        "Sofia ramasse un oiseau et rit.",
+        "Emma range un tableau et un drapeau.",
+        "Avant de partir, ils vérifient encore un manteau.",
+        "Plus tard, Liam revient dans le jardin.",
+        "Hugo rapporte un tableau une seconde fois.",
+        "Ils vérifient encore un tableau ensemble.",
+        "Liam explique une nouvelle idée sur un oiseau.",
+        "Hugo écoute et regarde un oiseau.",
+        "Le groupe accepte d’essayer un chapeau.",
+        "Après une pause, un chapeau change le plan.",
+        "Liam montre le résultat près d’un tableau.",
+        "Hugo félicite tout le monde pour un oiseau.",
+        "Avant la nuit, ils rangent un manteau."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand le collègue voit un oiseau trop chaud, parce que Claude aime ça aussi."
+      "sentences": [
+        "Ce matin, Théo travaille à la bibliothèque.",
+        "Il prépare un manteau avec soin.",
+        "Yanis arrive et regarde un manteau.",
+        "Ensemble, ils ajoutent une chaussure.",
+        "Théo explique l’usage d’une chaussure.",
+        "Yanis propose aussi un gâteau.",
+        "Le travail avance grâce à un manteau.",
+        "Ils placent un gâteau près d’une chaussure.",
+        "À la fin, un tableau est prêt pour demain.",
+        "Plus tard, Inès revient à la gare.",
+        "Amira rapporte un manteau une seconde fois.",
+        "Ils vérifient encore un manteau ensemble.",
+        "Inès explique une nouvelle idée sur une chaussette.",
+        "Amira écoute et regarde une chaussette.",
+        "Le groupe accepte d’essayer un gâteau.",
+        "Après une pause, un gâteau change le plan.",
+        "Inès montre le résultat près d’un manteau.",
+        "Amira félicite tout le monde pour une chaussette.",
+        "Avant la nuit, ils rangent un couteau."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Inès fait des courses dans la cour.",
+        "Dans le panier, il y a déjà un manteau.",
+        "Hugo choisit un drapeau juste à côté.",
+        "Ils comparent un manteau et un drapeau.",
+        "Le vendeur parle d’un tableau.",
+        "Inès prend aussi un tableau.",
+        "Hugo paie et range un manteau.",
+        "Sur le chemin, ils discutent d’un drapeau.",
+        "À la maison, ils sortent encore un gâteau.",
+        "Plus tard, Théo revient dans la cour.",
+        "Liam rapporte un chapeau une seconde fois.",
+        "Ils vérifient encore un chapeau ensemble.",
+        "Théo explique une nouvelle idée sur une chaussure.",
+        "Liam écoute et regarde une chaussure.",
+        "Le groupe accepte d’essayer un couteau.",
+        "Après une pause, un couteau change le plan.",
+        "Théo montre le résultat près d’un chapeau.",
+        "Liam félicite tout le monde pour une chaussure.",
+        "Avant la nuit, ils rangent un drapeau."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand la fille tire le rideau autour du bateau, et Paul trouve ça très beau."
+      "sentences": [
+        "Omar lit un message à la bibliothèque.",
+        "Théo doit apporter un couteau rapidement.",
+        "Omar part avec une chaussure.",
+        "Ils se croisent près d’une chaussette.",
+        "Théo donne un couteau à Omar.",
+        "Omar vérifie un couteau calmement.",
+        "Ensuite, ils déposent une chaussure.",
+        "Une amie demande des nouvelles d’une chaussette.",
+        "Plus tard, un drapeau termine la journée.",
+        "Plus tard, Sara revient au café.",
+        "Théo rapporte un gâteau une seconde fois.",
+        "Ils vérifient encore un gâteau ensemble.",
+        "Sara explique une nouvelle idée sur une chaussette.",
+        "Théo écoute et regarde une chaussette.",
+        "Le groupe accepte d’essayer un tableau.",
+        "Après une pause, un tableau change le plan.",
+        "Sara montre le résultat près d’un gâteau.",
+        "Théo félicite tout le monde pour une chaussette.",
+        "Avant la nuit, ils rangent un couteau."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Léa organise une activité au marché.",
+        "Omar apporte une chaussure dès le début.",
+        "Sur la table, on voit une chaussure et un manteau.",
+        "Les enfants touchent un manteau à tour de rôle.",
+        "Léa explique le mot lié à un chapeau.",
+        "Omar dessine un chapeau au tableau.",
+        "Tout le monde écoute l’histoire d’une chaussure.",
+        "Après l’exercice, ils rangent un manteau.",
+        "Léa note encore un tableau dans le cahier.",
+        "Plus tard, Théo revient dans le jardin.",
+        "Sofia rapporte un tableau une seconde fois.",
+        "Ils vérifient encore un tableau ensemble.",
+        "Théo explique une nouvelle idée sur un oiseau.",
+        "Sofia écoute et regarde un oiseau.",
+        "Le groupe accepte d’essayer une chaussette.",
+        "Après une pause, une chaussette change le plan.",
+        "Théo montre le résultat près d’un tableau.",
+        "Sofia félicite tout le monde pour un oiseau.",
+        "Avant la nuit, ils rangent un manteau."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand la factrice choisit la sauce autour du bateau, et Paul trouve ça très beau."
+      "sentences": [
+        "Il pleut un peu dans le jardin.",
+        "Noah protège un drapeau sous le bras.",
+        "Théo tient une chaussure contre lui.",
+        "Ils entrent et posent un drapeau.",
+        "Noah sèche une chaussure avec un chiffon.",
+        "Théo prépare un chapeau pour attendre.",
+        "Ils parlent calmement d’un drapeau.",
+        "Quand la pluie cesse, un chapeau est prêt.",
+        "Ils repartent avec un oiseau.",
+        "Plus tard, Sara revient dans la cour.",
+        "Omar rapporte un couteau une seconde fois.",
+        "Ils vérifient encore un couteau ensemble.",
+        "Sara explique une nouvelle idée sur un gâteau.",
+        "Omar écoute et regarde un gâteau.",
+        "Le groupe accepte d’essayer une chaussure.",
+        "Après une pause, une chaussure change le plan.",
+        "Sara montre le résultat près d’un couteau.",
+        "Omar félicite tout le monde pour un gâteau.",
+        "Avant la nuit, ils rangent un chapeau."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Noah et Karim révisent à la gare.",
+        "La leçon commence avec un manteau.",
+        "Noah lit une phrase sur un manteau.",
+        "Karim répète le mot une chaussette.",
+        "Ils écrivent une chaussette dans le cahier.",
+        "Une erreur apparaît près d’une chaussure.",
+        "Noah corrige et montre une chaussure.",
+        "Karim récite encore la phrase d’un manteau.",
+        "Avant de partir, ils relisent un oiseau.",
+        "Plus tard, Karim revient à la gare.",
+        "Sofia rapporte un tableau une seconde fois.",
+        "Ils vérifient encore un tableau ensemble.",
+        "Karim explique une nouvelle idée sur un oiseau.",
+        "Sofia écoute et regarde un oiseau.",
+        "Le groupe accepte d’essayer une chaussure.",
+        "Après une pause, une chaussure change le plan.",
+        "Karim montre le résultat près d’un tableau.",
+        "Sofia félicite tout le monde pour un oiseau.",
+        "Avant la nuit, ils rangent un manteau."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Théo accroche le tableau avec Paul, et Paul trouve ça très beau."
+      "sentences": [
+        "Amira visite un stand à l’école.",
+        "Théo désigne un manteau du doigt.",
+        "Le guide présente un manteau clairement.",
+        "Amira photographie un oiseau.",
+        "Ils posent une question sur un oiseau.",
+        "Théo note le détail d’un couteau.",
+        "Avant de partir, Amira achète un couteau.",
+        "Théo range un couteau dans le sac.",
+        "Sur le chemin du retour, ils parlent d’une chaussette.",
+        "Plus tard, Liam revient au parc.",
+        "Adam rapporte un couteau une seconde fois.",
+        "Ils vérifient encore un couteau ensemble.",
+        "Liam explique une nouvelle idée sur une chaussure.",
+        "Adam écoute et regarde une chaussure.",
+        "Le groupe accepte d’essayer un gâteau.",
+        "Après une pause, un gâteau change le plan.",
+        "Liam montre le résultat près d’un couteau.",
+        "Adam félicite tout le monde pour une chaussure.",
+        "Avant la nuit, ils rangent un tableau."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Théo prépare une surprise au café.",
+        "Noah cache une chaussure derrière la porte.",
+        "Tout le monde cherche une chaussure.",
+        "Théo donne un indice avec un manteau.",
+        "Noah trouve enfin une chaussure.",
+        "Ils ouvrent aussi un oiseau.",
+        "Les amis rient autour d’un manteau.",
+        "Théo partage un oiseau avec le groupe.",
+        "La fête se termine près d’un gâteau.",
+        "Plus tard, Karim revient à la bibliothèque.",
+        "Théo rapporte un tableau une seconde fois.",
+        "Ils vérifient encore un tableau ensemble.",
+        "Karim explique une nouvelle idée sur un gâteau.",
+        "Théo écoute et regarde un gâteau.",
+        "Le groupe accepte d’essayer une chaussette.",
+        "Après une pause, une chaussette change le plan.",
+        "Karim montre le résultat près d’un tableau.",
+        "Théo félicite tout le monde pour un gâteau.",
+        "Avant la nuit, ils rangent un oiseau."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la cousine soigne le taureau, et Paul trouve ça très beau."
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand le cuisinier caresse le veau avec Paul, et Paul trouve ça très beau."
+      "sentences": [
+        "Inès commence la journée dans la cuisine.",
+        "Adam apporte un chapeau pour le groupe.",
+        "Ils placent un chapeau au centre.",
+        "Inès décrit un chapeau à voix haute.",
+        "Adam ajoute un gâteau à côté.",
+        "Le groupe compare un chapeau et un gâteau.",
+        "Ensuite, chacun touche un manteau.",
+        "Inès résume le rôle d’un manteau.",
+        "Pour finir, Adam range une chaussette.",
+        "Plus tard, Sofia revient au magasin.",
+        "Sara rapporte une chaussette une seconde fois.",
+        "Ils vérifient encore une chaussette ensemble.",
+        "Sofia explique une nouvelle idée sur une chaussure.",
+        "Sara écoute et regarde une chaussure.",
+        "Le groupe accepte d’essayer un tableau.",
+        "Après une pause, un tableau change le plan.",
+        "Sofia montre le résultat près d’une chaussette.",
+        "Sara félicite tout le monde pour une chaussure.",
+        "Avant la nuit, ils rangent un oiseau."
+      ]
     }
   ]
 }

@@ -2679,128 +2679,388 @@
       ]
     }
   ],
-  "type12": [
-    {
-      "level": "a1",
-      "sentence": "Le directeur sert le café avec Fatima."
-    },
-    {
-      "level": "a1",
-      "sentence": "La collègue choisit le chef au café."
-    },
-    {
-      "level": "a1",
-      "sentence": "Fatima ouvre le coffre bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le maître prend le coiffeur."
-    },
+  "type12Stories": [
     {
       "level": "a2",
-      "sentence": "Ce matin, la professeure trouve la feutre près du feu."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le professeur remercie la fille avec Farid."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Frédéric utilise le flan avec Fatima."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Farid cueille la fleur au café."
+      "sentences": [
+        "Noah et Emma se retrouvent dans le jardin.",
+        "Noah apporte un café dans un sac.",
+        "Emma pose un fromage sur la table.",
+        "Ils parlent d’abord d’un café.",
+        "Puis Emma montre une farine à Noah.",
+        "Tout à coup, un café tombe par terre.",
+        "Noah ramasse un café et rit.",
+        "Emma range un fromage et une farine.",
+        "Avant de partir, ils vérifient encore un fleur."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand le facteur peint le frigo au café, et Farid est très content."
+      "sentences": [
+        "Ce matin, Emma travaille au café.",
+        "Il prépare un fromage avec soin.",
+        "Sofia arrive et regarde un fromage.",
+        "Ensemble, ils ajoutent une fenêtre.",
+        "Emma explique l’usage d’une fenêtre.",
+        "Sofia propose aussi une feuille.",
+        "Le travail avance grâce à un fromage.",
+        "Ils placent une feuille près d’une fenêtre.",
+        "À la fin, un fleur est prêt pour demain."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Maya fait des courses à la gare.",
+        "Dans le panier, il y a déjà un café.",
+        "Inès choisit un fleur juste à côté.",
+        "Ils comparent un café et un fleur.",
+        "Le vendeur parle d’un fromage.",
+        "Maya prend aussi un fromage.",
+        "Inès paie et range un café.",
+        "Sur le chemin, ils discutent d’un fleur.",
+        "À la maison, ils sortent encore une fenêtre."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand la professeure déteste le froid près du feu, parce que Fatima est contente."
+      "sentences": [
+        "Théo lit un message dans le jardin.",
+        "Liam doit apporter une fenêtre rapidement.",
+        "Théo part avec un café.",
+        "Ils se croisent près d’un fleur.",
+        "Liam donne une fenêtre à Théo.",
+        "Théo vérifie une fenêtre calmement.",
+        "Ensuite, ils déposent un café.",
+        "Une amie demande des nouvelles d’un fleur.",
+        "Plus tard, un fromage termine la journée."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Sara organise une activité au marché.",
+        "Amira apporte un fromage dès le début.",
+        "Sur la table, on voit un fromage et un café.",
+        "Les enfants touchent un café à tour de rôle.",
+        "Sara explique le mot lié à une fenêtre.",
+        "Amira dessine une fenêtre au tableau.",
+        "Tout le monde écoute l’histoire d’un fromage.",
+        "Après l’exercice, ils rangent un café.",
+        "Sara note encore un œuf dans le cahier."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand le professeur coupe le fromage avec Farid, et Farid est très content."
+      "sentences": [
+        "Il pleut un peu à l’école.",
+        "Léa protège un œuf sous le bras.",
+        "Emma tient une feuille contre lui.",
+        "Ils entrent et posent un œuf.",
+        "Léa sèche une feuille avec un chiffon.",
+        "Emma prépare une fenêtre pour attendre.",
+        "Ils parlent calmement d’un œuf.",
+        "Quand la pluie cesse, une fenêtre est prêt.",
+        "Ils repartent avec un fromage."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Inès et Sara révisent dans la cour.",
+        "La leçon commence avec un œuf.",
+        "Inès lit une phrase sur un œuf.",
+        "Sara répète le mot une feuille.",
+        "Ils écrivent une feuille dans le cahier.",
+        "Une erreur apparaît près d’un café.",
+        "Inès corrige et montre un café.",
+        "Sara récite encore la phrase d’un œuf.",
+        "Avant de partir, ils relisent un fleur."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand la factrice sert le fruit avec Farid, et Farid est très content."
+      "sentences": [
+        "Sara visite un stand à la gare.",
+        "Amira désigne un fleur du doigt.",
+        "Le guide présente un fleur clairement.",
+        "Sara photographie un fromage.",
+        "Ils posent une question sur un fromage.",
+        "Amira note le détail d’une farine.",
+        "Avant de partir, Sara achète une farine.",
+        "Amira range une farine dans le sac.",
+        "Sur le chemin du retour, ils parlent d’un café."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Omar prépare une surprise dans la cour.",
+        "Karim cache une fenêtre derrière la porte.",
+        "Tout le monde cherche une fenêtre.",
+        "Omar donne un indice avec un café.",
+        "Karim trouve enfin une fenêtre.",
+        "Ils ouvrent aussi une farine.",
+        "Les amis rient autour d’un café.",
+        "Omar partage une farine avec le groupe.",
+        "La fête se termine près d’un œuf."
+      ]
+    },
+    {
+      "level": "b1",
+      "sentences": [
+        "Karim commence la journée dans le jardin.",
+        "Nora apporte une fenêtre pour le groupe.",
+        "Ils placent une fenêtre au centre.",
+        "Karim décrit une fenêtre à voix haute.",
+        "Nora ajoute une farine à côté.",
+        "Le groupe compare une fenêtre et une farine.",
+        "Ensuite, chacun touche un œuf.",
+        "Karim résume le rôle d’un œuf.",
+        "Pour finir, Nora range un fleur."
+      ]
     }
   ],
-  "type14": [
-    {
-      "level": "a1",
-      "sentence": "Le boulanger console un enfant au café."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le collègue suit la famille avec Fatima."
-    },
-    {
-      "level": "a1",
-      "sentence": "La professeure mélange la farine."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le directeur ouvre la fenêtre au café."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le médecin pose le fer avec Fatima."
-    },
-    {
-      "level": "a1",
-      "sentence": "Farid dessine sur la feuille."
-    },
+  "type14Stories": [
     {
       "level": "a2",
-      "sentence": "Ce matin, le professeur admire le foin au café."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, la fille repasse le foulard près du feu."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le frère traverse la foule près du feu."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le frère prend le four avec Farid."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le facteur prend le frais avec Farid."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la fille range le français au café."
+      "sentences": [
+        "Léa et Maya se retrouvent au café.",
+        "Léa apporte une farine dans un sac.",
+        "Maya pose un fleur sur la table.",
+        "Ils parlent d’abord d’une farine.",
+        "Puis Maya montre un café à Léa.",
+        "Tout à coup, une farine tombe par terre.",
+        "Léa ramasse une farine et rit.",
+        "Maya range un fleur et un café.",
+        "Avant de partir, ils vérifient encore un œuf.",
+        "Plus tard, Hugo revient à l’école.",
+        "Léa rapporte une feuille une seconde fois.",
+        "Ils vérifient encore une feuille ensemble.",
+        "Hugo explique une nouvelle idée sur un café.",
+        "Léa écoute et regarde un café.",
+        "Le groupe accepte d’essayer un fromage.",
+        "Après une pause, un fromage change le plan.",
+        "Hugo montre le résultat près d’une feuille.",
+        "Léa félicite tout le monde pour un café.",
+        "Avant la nuit, ils rangent une fenêtre."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Frédéric range la fusée au café, et Farid est très content."
+      "sentences": [
+        "Ce matin, Inès travaille dans la cuisine.",
+        "Il prépare un fleur avec soin.",
+        "Amira arrive et regarde un fleur.",
+        "Ensemble, ils ajoutent un café.",
+        "Inès explique l’usage d’un café.",
+        "Amira propose aussi une feuille.",
+        "Le travail avance grâce à un fleur.",
+        "Ils placent une feuille près d’un café.",
+        "À la fin, une farine est prêt pour demain.",
+        "Plus tard, Liam revient dans la cour.",
+        "Noah rapporte une fenêtre une seconde fois.",
+        "Ils vérifient encore une fenêtre ensemble.",
+        "Liam explique une nouvelle idée sur une feuille.",
+        "Noah écoute et regarde une feuille.",
+        "Le groupe accepte d’essayer un café.",
+        "Après une pause, un café change le plan.",
+        "Liam montre le résultat près d’une fenêtre.",
+        "Noah félicite tout le monde pour une feuille.",
+        "Avant la nuit, ils rangent un fleur."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Amira fait des courses au café.",
+        "Dans le panier, il y a déjà une farine.",
+        "Noah choisit un café juste à côté.",
+        "Ils comparent une farine et un café.",
+        "Le vendeur parle d’une feuille.",
+        "Amira prend aussi une feuille.",
+        "Noah paie et range une farine.",
+        "Sur le chemin, ils discutent d’un café.",
+        "À la maison, ils sortent encore une fenêtre.",
+        "Plus tard, Liam revient au café.",
+        "Amira rapporte une fenêtre une seconde fois.",
+        "Ils vérifient encore une fenêtre ensemble.",
+        "Liam explique une nouvelle idée sur un fromage.",
+        "Amira écoute et regarde un fromage.",
+        "Le groupe accepte d’essayer un fleur.",
+        "Après une pause, un fleur change le plan.",
+        "Liam montre le résultat près d’une fenêtre.",
+        "Amira félicite tout le monde pour un fromage.",
+        "Avant la nuit, ils rangent un café."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand Farid participe à la fête près du feu, parce que Fatima est contente."
+      "sentences": [
+        "Théo lit un message dans le jardin.",
+        "Karim doit apporter une fenêtre rapidement.",
+        "Théo part avec un fromage.",
+        "Ils se croisent près d’un œuf.",
+        "Karim donne une fenêtre à Théo.",
+        "Théo vérifie une fenêtre calmement.",
+        "Ensuite, ils déposent un fromage.",
+        "Une amie demande des nouvelles d’un œuf.",
+        "Plus tard, un fleur termine la journée.",
+        "Plus tard, Yanis revient dans la cuisine.",
+        "Adam rapporte un fromage une seconde fois.",
+        "Ils vérifient encore un fromage ensemble.",
+        "Yanis explique une nouvelle idée sur une farine.",
+        "Adam écoute et regarde une farine.",
+        "Le groupe accepte d’essayer une feuille.",
+        "Après une pause, une feuille change le plan.",
+        "Yanis montre le résultat près d’un fromage.",
+        "Adam félicite tout le monde pour une farine.",
+        "Avant la nuit, ils rangent un œuf."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Amira organise une activité à l’école.",
+        "Adam apporte un fromage dès le début.",
+        "Sur la table, on voit un fromage et une fenêtre.",
+        "Les enfants touchent une fenêtre à tour de rôle.",
+        "Amira explique le mot lié à un œuf.",
+        "Adam dessine un œuf au tableau.",
+        "Tout le monde écoute l’histoire d’un fromage.",
+        "Après l’exercice, ils rangent une fenêtre.",
+        "Amira note encore une feuille dans le cahier.",
+        "Plus tard, Liam revient au magasin.",
+        "Sofia rapporte un fleur une seconde fois.",
+        "Ils vérifient encore un fleur ensemble.",
+        "Liam explique une nouvelle idée sur une feuille.",
+        "Sofia écoute et regarde une feuille.",
+        "Le groupe accepte d’essayer un œuf.",
+        "Après une pause, un œuf change le plan.",
+        "Liam montre le résultat près d’un fleur.",
+        "Sofia félicite tout le monde pour une feuille.",
+        "Avant la nuit, ils rangent une fenêtre."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand la factrice range la gaufre au café, et Farid est très content."
+      "sentences": [
+        "Il pleut un peu à l’école.",
+        "Liam protège une farine sous le bras.",
+        "Omar tient une feuille contre lui.",
+        "Ils entrent et posent une farine.",
+        "Liam sèche une feuille avec un chiffon.",
+        "Omar prépare un café pour attendre.",
+        "Ils parlent calmement d’une farine.",
+        "Quand la pluie cesse, un café est prêt.",
+        "Ils repartent avec un œuf.",
+        "Plus tard, Emma revient à l’école.",
+        "Maya rapporte un fleur une seconde fois.",
+        "Ils vérifient encore un fleur ensemble.",
+        "Emma explique une nouvelle idée sur une farine.",
+        "Maya écoute et regarde une farine.",
+        "Le groupe accepte d’essayer un café.",
+        "Après une pause, un café change le plan.",
+        "Emma montre le résultat près d’un fleur.",
+        "Maya félicite tout le monde pour une farine.",
+        "Avant la nuit, ils rangent un œuf."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Karim et Amira révisent au parc.",
+        "La leçon commence avec un fleur.",
+        "Karim lit une phrase sur un fleur.",
+        "Amira répète le mot une feuille.",
+        "Ils écrivent une feuille dans le cahier.",
+        "Une erreur apparaît près d’un œuf.",
+        "Karim corrige et montre un œuf.",
+        "Amira récite encore la phrase d’un fleur.",
+        "Avant de partir, ils relisent un café.",
+        "Plus tard, Théo revient dans le jardin.",
+        "Léa rapporte une farine une seconde fois.",
+        "Ils vérifient encore une farine ensemble.",
+        "Théo explique une nouvelle idée sur un œuf.",
+        "Léa écoute et regarde un œuf.",
+        "Le groupe accepte d’essayer un fromage.",
+        "Après une pause, un fromage change le plan.",
+        "Théo montre le résultat près d’une farine.",
+        "Léa félicite tout le monde pour un œuf.",
+        "Avant la nuit, ils rangent une feuille."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand la fille cherche le veuf avec Farid, et Farid est très content."
+      "sentences": [
+        "Emma visite un stand au marché.",
+        "Sara désigne un œuf du doigt.",
+        "Le guide présente un œuf clairement.",
+        "Emma photographie une feuille.",
+        "Ils posent une question sur une feuille.",
+        "Sara note le détail d’une fenêtre.",
+        "Avant de partir, Emma achète une fenêtre.",
+        "Sara range une fenêtre dans le sac.",
+        "Sur le chemin du retour, ils parlent d’un café.",
+        "Plus tard, Adam revient à l’école.",
+        "Omar rapporte un fleur une seconde fois.",
+        "Ils vérifient encore un fleur ensemble.",
+        "Adam explique une nouvelle idée sur une fenêtre.",
+        "Omar écoute et regarde une fenêtre.",
+        "Le groupe accepte d’essayer une farine.",
+        "Après une pause, une farine change le plan.",
+        "Adam montre le résultat près d’un fleur.",
+        "Omar félicite tout le monde pour une fenêtre.",
+        "Avant la nuit, ils rangent un œuf."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Théo prépare une surprise au café.",
+        "Karim cache un café derrière la porte.",
+        "Tout le monde cherche un café.",
+        "Théo donne un indice avec une feuille.",
+        "Karim trouve enfin un café.",
+        "Ils ouvrent aussi une fenêtre.",
+        "Les amis rient autour d’une feuille.",
+        "Théo partage une fenêtre avec le groupe.",
+        "La fête se termine près d’un fromage.",
+        "Plus tard, Yanis revient à la gare.",
+        "Maya rapporte une feuille une seconde fois.",
+        "Ils vérifient encore une feuille ensemble.",
+        "Yanis explique une nouvelle idée sur une farine.",
+        "Maya écoute et regarde une farine.",
+        "Le groupe accepte d’essayer un œuf.",
+        "Après une pause, un œuf change le plan.",
+        "Yanis montre le résultat près d’une feuille.",
+        "Maya félicite tout le monde pour une farine.",
+        "Avant la nuit, ils rangent un café."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand la factrice trouve le œuf près du feu, parce que Fatima est contente."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Farid prépare le café au café, et Farid est très content."
+      "sentences": [
+        "Inès commence la journée à la gare.",
+        "Adam apporte une fenêtre pour le groupe.",
+        "Ils placent une fenêtre au centre.",
+        "Inès décrit une fenêtre à voix haute.",
+        "Adam ajoute une farine à côté.",
+        "Le groupe compare une fenêtre et une farine.",
+        "Ensuite, chacun touche un fromage.",
+        "Inès résume le rôle d’un fromage.",
+        "Pour finir, Adam range un fleur.",
+        "Plus tard, Nora revient au café.",
+        "Karim rapporte une farine une seconde fois.",
+        "Ils vérifient encore une farine ensemble.",
+        "Nora explique une nouvelle idée sur un café.",
+        "Karim écoute et regarde un café.",
+        "Le groupe accepte d’essayer une feuille.",
+        "Après une pause, une feuille change le plan.",
+        "Nora montre le résultat près d’une farine.",
+        "Karim félicite tout le monde pour un café.",
+        "Avant la nuit, ils rangent un fromage."
+      ]
     }
   ]
 }
