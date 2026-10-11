@@ -74,11 +74,11 @@ EXCLUDE_THEME = {
     'bouche', 'dent', 'nez', 'oeil', 'œil', 'main', 'bras', 'jambe', 'pied',
     'doigt', 'ongle', 'cheveu', 'barbe', 'moustache', 'oreille', 'langue',
     'femme', 'fille', 'mère', 'sœur', 'amie', 'garçon', 'père', 'frère', 'ami',
-    'table', 'poche', 'addition', 'facture', 'recette', 'menu',
-    # trop gros / peu naturels « dans un sac »
+    'table', 'poche', 'addition', 'facture', 'recette', 'menu', 'sac', 'cartable',
+    # trop gros / peu naturels « dans un cartable »
     'canapé', 'fauteuil', 'armoire', 'placard', 'frigo', 'four', 'baignoire',
     'lavabo', 'douche', 'voiture', 'bus', 'train', 'avion', 'bateau', 'cheval',
-    'vache', 'mouton', 'échelle', 'ordinateur', 'télévision',
+    'vache', 'mouton', 'échelle', 'ordinateur', 'télévision', 'passeport',
 }
 
 FEM = {
@@ -196,7 +196,7 @@ def story12(rng: random.Random, words: list[str], plot: int) -> list[str]:
     plots = [
         [
             f'{n1} et {n2} se retrouvent {place}.',
-            f'{n1} apporte {un_une(a)} dans un sac.',
+            f'{n1} apporte {un_une(a)} dans son cartable.',
             f'{n2} pose {un_une(b)} sur la table.',
             f'Ils parlent d’abord {de_det(a)}.',
             f'Puis {n2} montre {un_une(c)} à {n1}.',
