@@ -67,7 +67,7 @@ export const SOUTIEN_KINDS = [
     id: 'lettres-phrase',
     label: '9 · Mot dans la phrase',
     description:
-      '8 phrases par défaut ; lettres sous le trait ; hors mots types 1 et 5 ; phrases éditables.',
+      '8 phrases par défaut ; mot avec image obligatoire ; lettres sous le trait ; hors mots types 1 et 5.',
     instruction: 'Écrivez le mot correct à l’aide des lettres.',
     preferredColumns: 1 as const,
   },

@@ -21,7 +21,7 @@ import {
   wordHasLessonSound,
 } from './phoneme'
 import { buildWordSearch, wordSearchHitCells } from './word-search'
-import { type1WordPool, type1Words } from './type1-words'
+import { isSoutienType1Word, type1WordPool, type1Words } from './type1-words'
 import type { SoutienGenerateOptions } from './generate-options'
 import {
   filterSoutienLevel,
@@ -400,9 +400,9 @@ export function genKind(
       const byWord = new Map<string, ScrambleRow[]>()
       const curated = soutienPhrasesFor(bank.id)
       const curatedRows = curated ? filterSoutienLevel(curated.type9, options?.level) : []
-      /** Phrases rédigées ; image optionnelle (pas de composés). */
+      /** Phrases rédigées ; mot cible avec image obligatoire (pas de composés). */
       for (const row of curatedRows) {
-        if (isCompoundVocabLabel(row.word)) continue
+        if (!isSoutienType1Word(row.word)) continue
         if (exclude.has(displayVocabLabel(row.word).toLowerCase())) continue
         const scramble: ScrambleRow = { sentence: row.sentence, word: row.word, letters: '' }
         const key = displayVocabLabel(row.word).toLowerCase()
@@ -413,7 +413,7 @@ export function genKind(
       if (byWord.size < want) {
         const fromBank = bank.scrambles.filter(
           (row) =>
-            !isCompoundVocabLabel(row.word) &&
+            isSoutienType1Word(row.word) &&
             !exclude.has(displayVocabLabel(row.word).toLowerCase()),
         )
         for (const row of shuffle(rng, fromBank)) {
@@ -424,10 +424,9 @@ export function genKind(
         }
       }
       if (byWord.size < want) {
-        const extraWords = [
-          ...type1WordPool(bank),
-          ...lessonWordsForText(bank).filter((w) => !isCompoundVocabLabel(w)),
-        ].filter((w) => !exclude.has(displayVocabLabel(w).toLowerCase()))
+        const extraWords = type1WordPool(bank).filter(
+          (w) => !exclude.has(displayVocabLabel(w).toLowerCase()),
+        )
         for (const raw of shuffle(rng, extraWords)) {
           if (byWord.size >= want) break
           const key = displayVocabLabel(raw).toLowerCase()

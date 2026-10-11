@@ -6,7 +6,7 @@ import { soutienImageFor } from './images'
 import { lessonWordsByLetter } from './phoneme'
 
 /**
- * Mot type 1 / 5 / 7 / 16 : pas de composé, image vocabulaire réelle (fichier).
+ * Mot type 1 / 5 / 7 / 9 / 16 : pas de composé, image vocabulaire réelle (fichier).
  * Les types sans image (6, 8, 11, 15, 17…) utilisent `lessonWordsForText`.
  */
 export function isSoutienType1Word(raw: string): boolean {
