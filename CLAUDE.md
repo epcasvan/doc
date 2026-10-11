@@ -77,6 +77,7 @@ React + Vite + TypeScript. Styles principaux dans `src/App.css` (variables CSS d
 | Relire énoncés et consignes | `relecture-enonce` |
 | Phrases Gattegno (modèles uniques, français réel) | `phrase-gattegno` |
 | Phrases calligraphie (10/mot, authentiques, une ligne) | `calligraphie-phrases` |
+| Phrases Soutien FR 9/10/12/14 (scènes, A1/A2/B1, son) | `soutien-phrases` |
 | Compréhension écrite A1/A2/B1 (CECRL / FALC) | `comprehension-ecrite` |
 | Cadre FALC (fiches théorie FR + traductions d’aide) | `falc` |
 | CO TCF depuis soutien-scolaire (banques `co.json`) | `comprehension-orale` |
