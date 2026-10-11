@@ -21,6 +21,8 @@ import {
 import { isGrammarTheoryType } from '@/francais/grammar-theory'
 import { soutienBankById } from '@/francais/soutien/banks'
 import { type1WordPool, type1Words } from '@/francais/soutien/generate'
+import { parseAlphaType } from '@/alphabetisation/kinds'
+import { resolveAlphaSelection } from '@/alphabetisation/themes'
 import { parseSoutienType } from '@/francais/soutien/kinds'
 import { resolveSoutienSelection } from '@/francais/soutien/themes'
 import {
@@ -72,6 +74,7 @@ const isPhraseDomain = activePage.domain === 'gattegno'
 const isJeuxDomain = activePage.domain === 'jeux'
 const isCalliDomain = activePage.domain === 'calligraphie'
 const isSoutienFr = activePage.domain === 'soutien-fr'
+const isAlphabetisation = activePage.domain === 'alphabetisation'
 const isTcm = isTcmDomain(activePage.domain)
 const isTcmCfr = isTcmCfrDomain(activePage.domain)
 /** TCM / TCM CFR : test multi-pages packé, UI simplifiée. */
@@ -80,11 +83,18 @@ const isTcf = activePage.domain === TCF_DOMAIN
 /** Page 1 Informations (TCM / CFR / CSC) : pas de Questions ni Colonnes. */
 const isTcmInfoPage = isTcmFamilyConsignesType(activeBlock.exerciseType)
 const tcfNiveau = tcfNiveauFromDifficulty(activeBlock.difficulty)
-const soutienParsed = isSoutienFr ? parseSoutienType(activeBlock.exerciseType) : null
+const soutienParsed = isSoutienFr
+  ? parseSoutienType(activeBlock.exerciseType)
+  : isAlphabetisation
+    ? parseAlphaType(activeBlock.exerciseType)
+    : null
+const alphaParsed = isAlphabetisation ? parseAlphaType(activeBlock.exerciseType) : null
 const soutienKind = soutienParsed?.kind
 const soutienSelection = isSoutienFr
   ? resolveSoutienSelection(activeBlock.topic, activeBlock.exerciseType)
-  : null
+  : isAlphabetisation
+    ? resolveAlphaSelection(activeBlock.topic, activeBlock.exerciseType)
+    : null
 const isSoutienMots = soutienKind === 'mots'
 const isSoutienMotsMeles = soutienKind === 'mots-meles'
 const isSoutienCompleter = soutienKind === 'completer'
@@ -114,9 +124,15 @@ const isSoutienCols123 =
   soutienKind === 'syllabe-son'
 /** Type 7 : grille images 3–5 colonnes (fluide). */
 const isSoutienCols345 = soutienKind === 'ecouter-image'
-const soutienBank = isSoutienFr
-  ? soutienBankById(soutienParsed?.bankId ?? soutienSelection?.sound.bankId ?? 'a')
-  : undefined
+const soutienBank =
+  isSoutienFr || isAlphabetisation
+    ? soutienBankById(
+        soutienParsed?.bankId ??
+          alphaParsed?.bankId ??
+          soutienSelection?.sound.bankId ??
+          'a',
+      )
+    : undefined
 const soutienType1Words = soutienBank ? type1Words(soutienBank) : []
 /** Pool complet du son (au-delà des 16 défauts) pour le mode libre type 1. */
 const soutienType1WordPool = soutienBank ? type1WordPool(soutienBank) : []
@@ -213,6 +229,7 @@ const questionsInputOverflow = questionsOverflow || bankOverflow
     isJeuxDomain,
     isCalliDomain,
     isSoutienFr,
+    isAlphabetisation,
     isTcm,
     isTcmCfr,
     isTcmLike,

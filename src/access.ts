@@ -15,6 +15,7 @@ export type AccessAccount = 'admin' | 'full' | 'partial'
 export const REGULAR_DOMAIN_OPTIONS: readonly { id: Domain; label: string }[] = [
   { id: 'acm', label: 'Activités créatives et manuelles' },
   { id: 'algèbre', label: 'Algèbre' },
+  { id: 'alphabetisation', label: 'Alphabétisation' },
   { id: 'calligraphie', label: 'Calligraphie' },
   { id: 'gattegno', label: 'Gattegno' },
   { id: 'géométrie', label: 'Géométrie' },
@@ -55,6 +56,8 @@ const DOMAIN_ALIASES: Readonly<Record<string, Domain>> = {
   francais: 'français',
   societe: 'société',
   sante: 'santé',
+  lecture: 'alphabetisation',
+  alphabetization: 'alphabetisation',
   'tcm_csc': 'tcm-csc',
   'tcm_cfr': 'tcm-cfr',
 }

@@ -64,6 +64,7 @@ export type SettingsPanelProps = {
   changeTopic: (topic: string) => void
   available: Array<{ id: string; label: string }>
   isSoutienFr: boolean
+  isAlphabetisation: boolean
   changeSoutienLetter: (letterId: string) => void
   changeSoutienSound: (soundId: string) => void
   isPhraseDomain: boolean
@@ -186,6 +187,7 @@ export function SettingsPanel(p: SettingsPanelProps) {
           changeTopic={p.changeTopic}
           available={p.available}
           isSoutienFr={p.isSoutienFr}
+          isAlphabetisation={p.isAlphabetisation}
           changeSoutienLetter={p.changeSoutienLetter}
           changeSoutienSound={p.changeSoutienSound}
           isPhraseDomain={p.isPhraseDomain}

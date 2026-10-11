@@ -18,7 +18,8 @@ React + Vite + TypeScript. Styles principaux dans `src/App.css` (variables CSS d
 | `src/math/` | Générateurs maths purs (algèbre, géométrie, repérage, `rng`, `types`) — **sans TCM** |
 | `src/tcm/` | Test de connaissance de maths (dossier dédié, comme `tcf/`) — `README.md` |
 | `src/tcf/` | Tests TCF (banques JSON, éditeur, rendu) |
-| `src/francais/` | FLE : Voc/Gram/Com, Phrase, Lecture, Soutien |
+| `src/francais/` | FLE : Voc/Gram/Com, Phrase, Soutien |
+| `src/alphabetisation/` | Alphabétisation (ex-Lecture) — lettres, syllabes, mots, phrases |
 | `src/grammaire/` | Théorie FALC (SCAI) — thèmes + fiches ; exercices à venir — `README.md` |
 | `src/vocabulaire/` | Domaine Vocabulaire (squelette) — `README.md` |
 | `src/societe/` | Domaine Société (squelette) — `README.md` |

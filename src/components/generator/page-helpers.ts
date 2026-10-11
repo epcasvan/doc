@@ -48,7 +48,7 @@ export function applyType(type: ExerciseType, prev?: ExerciseBlock): Partial<Exe
   const isLongMul = type.id.startsWith('multiplication-2chiffres')
   const isDivisionCol = type.id.startsWith('division-colonne')
   const isLectureDense = type.id.endsWith('-entourer') || type.id.endsWith('-cocher')
-  const isLecture = type.topic === 'alphabet' || type.topic.startsWith('voyelle-')
+  const isAlphabetisation = type.topic.startsWith('alpha-')
   const isSoutienFr = type.topic.startsWith('soutien-')
   const soutienKind = isSoutienFr ? parseSoutienType(type.id)?.kind : undefined
   const isPhrase = type.topic.startsWith('phrase-')
@@ -188,7 +188,7 @@ export function applyType(type: ExerciseType, prev?: ExerciseBlock): Partial<Exe
                                     : soutienKind === 'associer-audio' ||
                                         soutienKind === 'associer-image'
                                       ? { count: 2 }
-                                        : isLecture || isSoutienFr
+                                        : isAlphabetisation || isSoutienFr
                                           ? { count: 6 }
                                           : isGeoCalc || isCountIcons
                                             ? { count: 2 }

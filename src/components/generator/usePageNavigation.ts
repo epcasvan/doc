@@ -34,6 +34,13 @@ import { frTopicFromCalliTopic } from '@/calligraphie/topics'
 import { defaultVocabSubgroup } from '@/francais/vocab-learn'
 import { isJeuxType } from '@/jeux/templates'
 import { DEFAULT_GAME_FONT_SIZE } from '@/jeux/font-size'
+import { parseAlphaType } from '@/alphabetisation/kinds'
+import {
+  alphaExerciseTypeId,
+  alphaFicheTitle,
+  alphaThemeById,
+  resolveAlphaSelection,
+} from '@/alphabetisation/themes'
 import { parseSoutienType } from '@/francais/soutien/kinds'
 import { soutienFicheTitle } from '@/francais/soutien/series'
 import {
@@ -59,8 +66,10 @@ export type UsePageNavigationParams = {
   pageIndex: number
   pageExerciseBlocks: ExerciseBlock[]
   worksheets: WorksheetPage[]
-  soutienSelection: ReturnType<typeof resolveSoutienSelection>
-  soutienParsed: ReturnType<typeof parseSoutienType>
+  soutienSelection:
+    | ReturnType<typeof resolveSoutienSelection>
+    | ReturnType<typeof resolveAlphaSelection>
+  soutienParsed: ReturnType<typeof parseSoutienType> | ReturnType<typeof parseAlphaType>
   updatePage: (patch: Partial<PageConfig>) => void
   setPages: Dispatch<SetStateAction<PageConfig[]>>
   setSheetIndex: Dispatch<SetStateAction<number>>
@@ -264,7 +273,7 @@ export function usePageNavigation({
     }
     if (
       next === 'français' ||
-      next === 'lecture' ||
+      next === 'alphabetisation' ||
       next === 'soutien-fr' ||
       next === 'gattegno' ||
       next === 'grammaire' ||
@@ -279,7 +288,7 @@ export function usePageNavigation({
         current.course === 'Mathématiques' ? { ...current, course: 'Français' } : current,
       )
     }
-    if (next === 'jeux' || next === 'calligraphie' || next === 'soutien-fr') {
+    if (next === 'jeux' || next === 'calligraphie' || next === 'soutien-fr' || next === 'alphabetisation') {
       setEvalMode(false)
       setMode('student')
     }
@@ -290,6 +299,16 @@ export function usePageNavigation({
           ...current,
           course: 'Français',
           documentTitle: soutienFicheTitle(sel.letter),
+        }))
+      }
+    }
+    if (next === 'alphabetisation') {
+      const sel = resolveAlphaSelection(type.topic, type.id)
+      if (sel) {
+        setInstitutional((current) => ({
+          ...current,
+          course: 'Français',
+          documentTitle: alphaFicheTitle(sel.letter),
         }))
       }
     }
@@ -370,6 +389,38 @@ export function usePageNavigation({
       })
       return
     }
+    if (activePage.domain === 'alphabetisation') {
+      const parsed = parseAlphaType(activeBlock.exerciseType)
+      const theme = alphaThemeById(topic)
+      const firstLetter = theme?.letters[0]
+      const firstSound = firstLetter?.sounds[0]
+      const preferredKind = parsed?.kind ?? 'mots'
+      const candidateId = firstSound
+        ? alphaExerciseTypeId(firstSound.bankId, preferredKind)
+        : undefined
+      const type =
+        (candidateId ? exerciseTypeById[candidateId] : undefined) ??
+        firstTypeFor('alphabetisation', topic)
+      if (firstLetter) {
+        setInstitutional((current) => ({
+          ...current,
+          course: 'Français',
+          documentTitle: alphaFicheTitle(firstLetter),
+        }))
+      }
+      updatePage({
+        topic,
+        ...applyType(type, {
+          ...activeBlock,
+          topic,
+          soutienMotsLibre: false,
+          soutienMotsEntries: undefined,
+          soutienCompleterLibre: false,
+          soutienCompleterEntries: undefined,
+        }),
+      })
+      return
+    }
     const type =
       typesForTopic(topic, activePage.domain === 'français' ? (activeBlock.track ?? 'voc') : undefined)[0] ??
       firstTypeFor(activePage.domain, topic, activeBlock.track)
@@ -382,13 +433,18 @@ export function usePageNavigation({
     if (!letter) return
     const sound = letter.sounds[0]!
     const kind = soutienParsed?.kind ?? 'mots'
-    const nextId = soutienExerciseTypeId(sound.bankId, kind)
-    const type = exerciseTypeById[nextId]
+    const isAlpha = activePage.domain === 'alphabetisation'
+    const nextId = isAlpha
+      ? alphaExerciseTypeId(sound.bankId, kind)
+      : soutienExerciseTypeId(sound.bankId, kind)
+    const type =
+      exerciseTypeById[nextId] ??
+      (isAlpha ? firstTypeFor('alphabetisation', soutienSelection.theme.id) : undefined)
     if (!type) return
     setInstitutional((current) => ({
       ...current,
       course: 'Français',
-      documentTitle: soutienFicheTitle(letter),
+      documentTitle: isAlpha ? alphaFicheTitle(letter) : soutienFicheTitle(letter),
     }))
     updatePage({
       topic: soutienSelection.theme.id,
@@ -408,13 +464,18 @@ export function usePageNavigation({
     const sound = soutienSelection.letter.sounds.find((s) => s.id === soundId)
     if (!sound) return
     const kind = soutienParsed?.kind ?? 'mots'
-    const nextId = soutienExerciseTypeId(sound.bankId, kind)
+    const isAlpha = activePage.domain === 'alphabetisation'
+    const nextId = isAlpha
+      ? alphaExerciseTypeId(sound.bankId, kind)
+      : soutienExerciseTypeId(sound.bankId, kind)
     const type = exerciseTypeById[nextId]
     if (!type) return
     setInstitutional((current) => ({
       ...current,
       course: 'Français',
-      documentTitle: soutienFicheTitle(soutienSelection.letter),
+      documentTitle: isAlpha
+        ? alphaFicheTitle(soutienSelection.letter)
+        : soutienFicheTitle(soutienSelection.letter),
     }))
     updatePage({
       topic: soutienSelection.theme.id,

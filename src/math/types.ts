@@ -2,7 +2,7 @@ export type Domain =
   | 'français'
   | 'algèbre'
   | 'géométrie'
-  | 'lecture'
+  | 'alphabetisation'
   | 'soutien-fr'
   | 'gattegno'
   | 'jeux'

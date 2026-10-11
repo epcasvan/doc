@@ -6,7 +6,7 @@ import {
   gattegnoTopics,
   grammaireTopics,
   jeuxTopics,
-  lectureTopics,
+  alphabetisationTopics,
   santeTopics,
   societeTopics,
   soutienFrTopics,
@@ -20,6 +20,16 @@ import {
 } from '@/math/catalog'
 import { TCF_DOMAIN } from '@/tcf/catalog'
 import { blockPointsTotal, isTcmDomain } from '@/tcm/test'
+import {
+  ALPHA_LETTER_KINDS,
+  ALPHA_SPECIAL_KINDS,
+  parseAlphaType,
+} from '@/alphabetisation/kinds'
+import {
+  alphaExerciseTypeId,
+  alphaThemeById,
+  resolveAlphaSelection,
+} from '@/alphabetisation/themes'
 import { SOUTIEN_KINDS, parseSoutienType } from '@/francais/soutien/kinds'
 import {
   resolveSoutienSelection,
@@ -57,11 +67,13 @@ export function topicsForDomain(domain: Domain) {
                           ? calligraphieTopics
                           : domain === 'soutien-fr'
                             ? soutienFrTopics
-                            : isTcmDomain(domain)
-                              ? tcmTopics
-                              : domain === TCF_DOMAIN
-                                ? tcfTopics
-                                : lectureTopics
+                            : domain === 'alphabetisation'
+                              ? alphabetisationTopics
+                              : isTcmDomain(domain)
+                                ? tcmTopics
+                                : domain === TCF_DOMAIN
+                                  ? tcfTopics
+                                  : algebraTopics
 }
 
 /** Types d’exercice proposés pour le bloc actif. */
@@ -77,6 +89,22 @@ export function typeChoicesForBlock(
     return SOUTIEN_KINDS.map(
       (kind) => exerciseTypeById[soutienExerciseTypeId(bankId, kind.id)],
     ).filter((t): t is NonNullable<typeof t> => Boolean(t))
+  }
+  if (domain === 'alphabetisation') {
+    const bankId =
+      parseAlphaType(block.exerciseType)?.bankId ??
+      resolveAlphaSelection(block.topic, block.exerciseType)?.sound.bankId ??
+      'a'
+    const theme = alphaThemeById(block.topic)
+    const kinds =
+      theme?.mode === 'special'
+        ? ALPHA_SPECIAL_KINDS.filter((k) =>
+            Boolean(exerciseTypeById[alphaExerciseTypeId(bankId, k.id)]),
+          )
+        : ALPHA_LETTER_KINDS
+    return kinds
+      .map((kind) => exerciseTypeById[alphaExerciseTypeId(bankId, kind.id)])
+      .filter((t): t is NonNullable<typeof t> => Boolean(t))
   }
   return typesForTopic(
     block.topic,

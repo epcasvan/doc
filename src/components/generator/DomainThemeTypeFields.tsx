@@ -34,11 +34,9 @@ import type {
   PhraseVerbGroup,
   WorksheetPage,
 } from '@/math/types'
+import { resolveAlphaSelection } from '@/alphabetisation/themes'
 import { resolveSoutienSelection } from '@/francais/soutien/themes'
 import type { InstitutionalHeader } from '@/components/math/PrintDocumentChrome'
-
-/** Remettre à `true` pour réafficher Lecture dans le sélecteur Domaine. */
-const SHOW_LECTURE_DOMAIN = false
 
 export type DomainThemeTypeFieldsProps = {
   isJeuxDomain: boolean
@@ -61,11 +59,14 @@ export type DomainThemeTypeFieldsProps = {
   isTcf: boolean
   tcfNiveau: TcfNiveau
   setPages: Dispatch<SetStateAction<PageConfig[]>>
-  soutienSelection: ReturnType<typeof resolveSoutienSelection>
+  soutienSelection:
+    | ReturnType<typeof resolveSoutienSelection>
+    | ReturnType<typeof resolveAlphaSelection>
   activeBlock: ExerciseBlock
   changeTopic: (topic: string) => void
   available: Array<{ id: string; label: string }>
   isSoutienFr: boolean
+  isAlphabetisation: boolean
   changeSoutienLetter: (letterId: string) => void
   changeSoutienSound: (soundId: string) => void
   isPhraseDomain: boolean
@@ -105,7 +106,6 @@ export function DomainThemeTypeFields(p: DomainThemeTypeFieldsProps) {
     activePage,
     changeDomain,
     allowedDomains,
-    accessAccount,
     isTcf,
     tcfNiveau,
     setPages,
@@ -114,6 +114,7 @@ export function DomainThemeTypeFields(p: DomainThemeTypeFieldsProps) {
     changeTopic,
     available,
     isSoutienFr,
+    isAlphabetisation,
     changeSoutienLetter,
     changeSoutienSound,
     isPhraseDomain,
@@ -192,9 +193,6 @@ export function DomainThemeTypeFields(p: DomainThemeTypeFieldsProps) {
                     </option>
                   ),
                 )}
-                {SHOW_LECTURE_DOMAIN && accessAccount === 'admin' ? (
-                  <option value="lecture">Lecture</option>
-                ) : null}
               </SelectBox>
               {isTcf ? (
                 <SelectBox
@@ -230,20 +228,28 @@ export function DomainThemeTypeFields(p: DomainThemeTypeFieldsProps) {
                   ))}
                 </SelectBox>
               )}
-              {isSoutienFr && soutienSelection ? (
+              {(isSoutienFr || isAlphabetisation) && soutienSelection ? (
                 <SelectBox
-                  label="Lettre"
+                  label={
+                    isAlphabetisation && activePage.topic === 'alpha-phrases'
+                      ? 'Histoire'
+                      : isAlphabetisation && activePage.topic === 'alpha-mots'
+                        ? 'Leçon'
+                        : 'Lettre'
+                  }
                   value={soutienSelection.letter.id}
                   onChange={changeSoutienLetter}
                 >
                   {soutienSelection.theme.letters.map((letter) => (
                     <option value={letter.id} key={letter.id}>
-                      {letter.letterUpper}
+                      {isAlphabetisation ? letter.label : letter.letterUpper}
                     </option>
                   ))}
                 </SelectBox>
               ) : null}
-              {isSoutienFr && soutienSelection && soutienSelection.letter.sounds.length > 1 ? (
+              {(isSoutienFr || isAlphabetisation) &&
+              soutienSelection &&
+              soutienSelection.letter.sounds.length > 1 ? (
                 <div className="mode-toggle-block">
                   <b>Son</b>
                   <div
@@ -408,6 +414,7 @@ export function DomainThemeTypeFields(p: DomainThemeTypeFieldsProps) {
               isVocabLearn ||
               isGramTheory ||
               isSoutienFr ||
+              isAlphabetisation ||
               isTcf ||
               isTcmLike ? null : (
               <>

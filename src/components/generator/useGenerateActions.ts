@@ -1,5 +1,7 @@
 import type { Dispatch, SetStateAction } from 'react'
 import { isPhraseLibreEditable } from '@/francais/PhraseLibreEditor'
+import { buildAlphaSeriesPages } from '@/alphabetisation/series'
+import { alphaFicheTitle, resolveAlphaSelection } from '@/alphabetisation/themes'
 import { buildSoutienSeriesPages, soutienFicheTitle } from '@/francais/soutien/series'
 import { resolveSoutienSelection } from '@/francais/soutien/themes'
 import {
@@ -38,7 +40,6 @@ export type UseGenerateActionsParams = {
   libreMode: boolean
   activeBlock: ExerciseBlock
   tcfNiveau: TcfNiveau
-  soutienSelection: ReturnType<typeof resolveSoutienSelection>
   calliFieldsLength: number
   isPhraseDomain: boolean
   isCalliDomain: boolean
@@ -63,7 +64,6 @@ export function useGenerateActions({
   libreMode,
   activeBlock,
   tcfNiveau,
-  soutienSelection,
   calliFieldsLength,
   isPhraseDomain,
   isCalliDomain,
@@ -171,9 +171,7 @@ export function useGenerateActions({
 
   /** Soutien FR : Générer prépare les 12 fiches du son sélectionné. */
   function drawSoutienSeries() {
-    const sel =
-      soutienSelection ??
-      resolveSoutienSelection(activeBlock.topic, activeBlock.exerciseType)
+    const sel = resolveSoutienSelection(activeBlock.topic, activeBlock.exerciseType)
     if (!sel) {
       generate()
       return
@@ -190,6 +188,27 @@ export function useGenerateActions({
       documentTitle: soutienFicheTitle(sel.letter),
     }))
     setPages(buildSoutienSeriesPages(sel.sound.bankId, sel.theme.id))
+  }
+
+  /** Alphabétisation : Générer prépare toutes les fiches de la leçon / du son. */
+  function drawAlphaSeries() {
+    const sel = resolveAlphaSelection(activeBlock.topic, activeBlock.exerciseType)
+    if (!sel) {
+      generate()
+      return
+    }
+    const nextSeed = randomSeed()
+    setSeed(nextSeed)
+    setMode('student')
+    setEvalMode(false)
+    setSheetIndex(0)
+    setBlockIndex(0)
+    setInstitutional((current) => ({
+      ...current,
+      course: 'Français',
+      documentTitle: alphaFicheTitle(sel.letter),
+    }))
+    setPages(buildAlphaSeriesPages(sel.sound.bankId, sel.theme.id))
   }
 
   function generate() {
@@ -303,6 +322,7 @@ export function useGenerateActions({
     validateManual,
     drawTcfTest,
     drawSoutienSeries,
+    drawAlphaSeries,
     generate,
     regenerateBlock,
   }

@@ -1,4 +1,8 @@
 import type { Difficulty, Domain, ExerciseType, FrenchTrack, Topic } from './types'
+import {
+  ALPHABETISATION_EXERCISE_TYPES,
+  ALPHABETISATION_TOPICS,
+} from '@/alphabetisation/catalog'
 import { SOUTIEN_KINDS } from '@/francais/soutien/kinds'
 import { allSoutienBankDefs } from '@/francais/soutien/themes'
 import { defaultCalliText } from '@/calligraphie/defaults'
@@ -43,13 +47,7 @@ export const topics: Topic[] = [
   { id: 'volumes', label: 'Volumes', domain: 'géométrie' },
   { id: 'reperage', label: 'Repérage dans le plan', domain: 'géométrie' },
   { id: 'transformations', label: 'Transformations géométriques', domain: 'géométrie' },
-  { id: 'alphabet', label: 'L’alphabet', domain: 'lecture' },
-  { id: 'voyelle-a', label: 'Voyelle A · son /a/', domain: 'lecture' },
-  { id: 'voyelle-o', label: 'Voyelle O · son /o/', domain: 'lecture' },
-  { id: 'voyelle-i', label: 'Voyelle I · son /i/', domain: 'lecture' },
-  { id: 'voyelle-u', label: 'Voyelle U · son /y/', domain: 'lecture' },
-  { id: 'voyelle-e', label: 'Voyelle E · son /ə/', domain: 'lecture' },
-  { id: 'voyelle-y', label: 'Voyelle Y · son /i/', domain: 'lecture' },
+  ...ALPHABETISATION_TOPICS,
   { id: 'soutien-voyelles', label: 'Voyelles', domain: 'soutien-fr' },
   { id: 'soutien-consonnes-i', label: 'Consonnes I', domain: 'soutien-fr' },
   { id: 'soutien-consonnes-ii', label: 'Consonnes II', domain: 'soutien-fr' },
@@ -86,7 +84,9 @@ export const topics: Topic[] = [
 export const topicById = Object.fromEntries(topics.map((topic) => [topic.id, topic])) as Record<string, Topic>
 export const algebraTopics = topics.filter((topic) => topic.domain === 'algèbre')
 export const geometryTopics = topics.filter((topic) => topic.domain === 'géométrie')
-export const lectureTopics = topics.filter((topic) => topic.domain === 'lecture')
+export const alphabetisationTopics = topics.filter((topic) => topic.domain === 'alphabetisation')
+/** @deprecated Alias — domaine renommé Alphabétisation. */
+export const lectureTopics = alphabetisationTopics
 export const soutienFrTopics = topics.filter((topic) => topic.domain === 'soutien-fr')
 export const gattegnoTopics = topics.filter((topic) => topic.domain === 'gattegno')
 export const grammaireTopics = topics.filter((topic) => topic.domain === 'grammaire')
@@ -673,10 +673,8 @@ export const exerciseTypes: ExerciseType[] = [
   t('glossaire-algebre-mots', 'glossaire-algebre', 'Mots du glossaire', 'Définitions et schémas des termes d’algèbre (opérations, nombres…).', 'Lisez chaque mot, sa définition et le schéma.', 'texte', { preferredColumns: 2 }),
   t('glossaire-geometrie-mots', 'glossaire-geometrie', 'Mots du glossaire', 'Définitions et schémas des termes de géométrie (droite, segment, angle…).', 'Lisez chaque mot, sa définition et le schéma.', 'texte', { preferredColumns: 2 }),
 
-  // —— Lecture (français / FLE voyelles) ——
-  t('alphabet-classer', 'alphabet', 'Classer les lettres', 'Ranger des lettres dans l’ordre alphabétique.', 'Classez les lettres par ordre alphabétique.', 'suite', { preferredColumns: 1 }),
-  t('alphabet-suivant', 'alphabet', 'Lettre suivante', 'Trouver la lettre qui suit immédiatement.', 'Coloriez la pastille de la lettre qui suit.', 'ligne', { preferredColumns: 2 }),
-  t('alphabet-initiale', 'alphabet', 'Mot d’initiale', 'Proposer un mot qui commence par une lettre donnée.', 'Écrivez un mot qui commence par la lettre demandée.', 'texte', { preferredColumns: 1 }),
+  // —— Alphabétisation (ex-Lecture) ——
+  ...ALPHABETISATION_EXERCISE_TYPES,
 
   // —— Gattegno (grammaire en couleur) ——
   t('phrase-tableau-categories', 'phrase-tableaux', 'Tableau des catégories', 'Tableau Gattegno avec les noms de catégories.', 'Repérez les catégories de la grammaire en couleur.', 'texte', { preferredColumns: 1 }),
@@ -786,76 +784,6 @@ export const exerciseTypes: ExerciseType[] = [
   ...TCM_CSC_EXERCISE_TYPES,
   ...TCM_CFR_EXERCISE_TYPES,
 ]
-
-const VOWEL_TOPICS = [
-  { topic: 'voyelle-a', letter: 'A', sound: '/a/' },
-  { topic: 'voyelle-o', letter: 'O', sound: '/o/' },
-  { topic: 'voyelle-i', letter: 'I', sound: '/i/' },
-  { topic: 'voyelle-u', letter: 'U', sound: '/y/' },
-  { topic: 'voyelle-e', letter: 'E', sound: '/ə/' },
-  { topic: 'voyelle-y', letter: 'Y', sound: '/i/' },
-] as const
-
-for (const v of VOWEL_TOPICS) {
-  const L = v.letter
-  const low = L.toLowerCase()
-  exerciseTypes.push(
-    t(
-      `${v.topic}-entourer`,
-      v.topic,
-      `Entourer ${L} ${low}`,
-      `Repérer la lettre ${L} parmi d’autres lettres.`,
-      `Entourez toutes les lettres ${L} ${low}.`,
-      'ligne',
-      { preferredColumns: 1 },
-    ),
-    t(
-      `${v.topic}-cocher`,
-      v.topic,
-      `Mots avec ${v.sound}`,
-      `Repérer les mots où l’on entend le son ${v.sound}.`,
-      `Cochez les mots où l’on entend le son ${v.sound}.`,
-      'ligne',
-      { preferredColumns: 1 },
-    ),
-    t(
-      `${v.topic}-syllabe`,
-      v.topic,
-      `Syllabe ${v.sound}`,
-      `Indiquer quelle syllabe porte le son ${v.sound}.`,
-      `Indiquez la syllabe qui contient le son ${v.sound}.`,
-      'ligne',
-      { preferredColumns: 2 },
-    ),
-    t(
-      `${v.topic}-former`,
-      v.topic,
-      'Former un mot',
-      'Associer deux parties pour former un mot.',
-      'Associez les parties et écrivez le mot formé.',
-      'texte',
-      { preferredColumns: 1 },
-    ),
-    t(
-      `${v.topic}-lettres`,
-      v.topic,
-      'Lettres mélangées',
-      'Remettre des lettres dans l’ordre pour former un mot.',
-      'Remettez les lettres dans l’ordre pour former le mot.',
-      'texte',
-      { preferredColumns: 1 },
-    ),
-    t(
-      `${v.topic}-compter`,
-      v.topic,
-      `Compter la lettre ${low}`,
-      `Compter les occurrences de la lettre ${low} dans un mot.`,
-      `Comptez combien de fois apparaît la lettre ${low}.`,
-      'texte',
-      { preferredColumns: 2 },
-    ),
-  )
-}
 
 /** Soutien FR : 17 types × chaque lettre / son (thèmes Voyelles → Sons complexes). */
 for (const def of allSoutienBankDefs()) {
@@ -1022,9 +950,11 @@ export function firstTypeFor(domain: Domain, topic?: string, track?: FrenchTrack
                               ? CALLI_LIBRE_TOPIC
                               : domain === 'soutien-fr'
                                 ? 'soutien-voyelles'
-                                : domain === 'tcf'
-                                  ? 'tcf-ce'
-                                  : 'voyelle-a'
+                                : domain === 'alphabetisation'
+                                  ? 'alpha-voyelles'
+                                  : domain === 'tcf'
+                                    ? 'tcf-ce'
+                                    : 'addition'
   return typesForTopic(fallbackTopic)[0]!
 }
 
@@ -1042,7 +972,7 @@ export function defaultPage(domain: Domain = 'algèbre'): PageConfigLike {
     domain === 'tcm-csc' ||
     domain === 'tcm-cfr'
       ? 1
-      : domain === 'lecture' || domain === 'soutien-fr' || domain === 'gattegno'
+      : domain === 'alphabetisation' || domain === 'soutien-fr' || domain === 'gattegno'
         ? 6
         : isDraftPadExercise(type.id)
             ? 2

@@ -12,6 +12,7 @@ import { generateTransformations, isTransformationExercise } from './coord-trans
 import { tryGenerateSoutienBatch } from '@/francais/soutien/generate'
 import { parseSoutienType } from '@/francais/soutien/kinds'
 import { ALGEBRA_GLOSSARY, GEOMETRY_GLOSSARY } from './glossary-banks'
+import { tryGenerateAlphabetisationBatch } from '@/alphabetisation/generate'
 import { tryGenerateLectureBatch } from '@/francais/lecture'
 import { tryGeneratePhraseBatch } from '@/francais/phrase'
 import { tryGenerateCalligraphieBatch } from '@/calligraphie/generate'
@@ -182,6 +183,29 @@ function buildSingleBlock(
       title: fallbackTitle,
       instruction: soutien.instruction ?? type?.instruction ?? 'Complétez.',
       items: soutien.items,
+    }
+  }
+  const alphabetisation = tryGenerateAlphabetisationBatch(
+    config.exerciseType,
+    config.count,
+    rng,
+    difficulty,
+    {
+      soutienMotsLibre: config.soutienMotsLibre,
+      soutienMotsEntries: config.soutienMotsEntries,
+      columns: config.columns,
+      soutienCompleterLibre: config.soutienCompleterLibre,
+      soutienCompleterEntries: config.soutienCompleterEntries,
+      excludeWords: config.soutienExcludeWords,
+      type1Words: config.soutienType1Words,
+      level: config.soutienLevel,
+    },
+  )
+  if (alphabetisation) {
+    return {
+      title: fallbackTitle,
+      instruction: alphabetisation.instruction ?? type?.instruction ?? 'Complétez.',
+      items: alphabetisation.items,
     }
   }
   const lecture = tryGenerateLectureBatch(config.exerciseType, config.count, rng, difficulty)

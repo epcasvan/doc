@@ -17,6 +17,7 @@ export type ResultPanelProps = {
   isTcf: boolean
   isTcmCfr: boolean
   isSoutienFr: boolean
+  isAlphabetisation: boolean
   isSoutienMots: boolean
   isSoutienCompleter: boolean
   isSoutienEcouter: boolean
@@ -29,6 +30,7 @@ export type ResultPanelProps = {
   downloadActiveSoutienPhrases: () => void
   drawTcfTest: () => void
   drawSoutienSeries: () => void
+  drawAlphaSeries: () => void
   generate: () => void
   printAll: () => void
   isCalliDomain: boolean
@@ -77,6 +79,7 @@ export function ResultPanel({
   isTcf,
   isTcmCfr,
   isSoutienFr,
+  isAlphabetisation,
   isSoutienMots,
   isSoutienCompleter,
   isSoutienEcouter,
@@ -89,6 +92,7 @@ export function ResultPanel({
   downloadActiveSoutienPhrases,
   drawTcfTest,
   drawSoutienSeries,
+  drawAlphaSeries,
   generate,
   printAll,
   isCalliDomain,
@@ -218,19 +222,25 @@ export function ResultPanel({
                     className="print-chip is-icon is-generate"
                     type="button"
                     onClick={
-                      isTcf ? drawTcfTest : isSoutienFr ? drawSoutienSeries : generate
+                      isTcf
+                        ? drawTcfTest
+                        : isSoutienFr
+                          ? drawSoutienSeries
+                          : isAlphabetisation
+                            ? drawAlphaSeries
+                            : generate
                     }
                     aria-label={
                       isTcf
                         ? 'Tirer un test au hasard'
-                        : isSoutienFr
+                        : isSoutienFr || isAlphabetisation
                           ? 'Préparer toutes les fiches du son'
                           : 'Générer'
                     }
                     title={
                       isTcf
                         ? 'Tirer un test au hasard'
-                        : isSoutienFr
+                        : isSoutienFr || isAlphabetisation
                           ? 'Préparer toutes les fiches du son'
                           : 'Générer'
                     }
