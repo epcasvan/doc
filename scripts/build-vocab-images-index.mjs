@@ -46,6 +46,7 @@ const THEME_LABELS = {
   orientation: 'Orientation',
   outils: 'Outils',
   pays: 'Pays',
+  presenter: 'Se présenter',
   plantes: 'Plantes',
   sante: 'Santé',
   sports: 'Sports',

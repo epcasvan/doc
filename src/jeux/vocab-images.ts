@@ -5732,6 +5732,444 @@ export const VOCAB_IMAGE_THEMES: VocabImageTheme[] = [
     ]
   },
   {
+    "id": "presenter",
+    "label": "Se présenter",
+    "words": [
+      {
+        "label": "afghan",
+        "src": "/lib/images/vocabulaire/presenter/afghan.webp"
+      },
+      {
+        "label": "afghane",
+        "src": "/lib/images/vocabulaire/presenter/afghane.webp"
+      },
+      {
+        "label": "albanais",
+        "src": "/lib/images/vocabulaire/presenter/albanais.webp"
+      },
+      {
+        "label": "albanaise",
+        "src": "/lib/images/vocabulaire/presenter/albanaise.webp"
+      },
+      {
+        "label": "algérien",
+        "src": "/lib/images/vocabulaire/presenter/algérien.webp"
+      },
+      {
+        "label": "algérienne",
+        "src": "/lib/images/vocabulaire/presenter/algérienne.webp"
+      },
+      {
+        "label": "allemand",
+        "src": "/lib/images/vocabulaire/presenter/allemand.webp"
+      },
+      {
+        "label": "allemande",
+        "src": "/lib/images/vocabulaire/presenter/allemande.webp"
+      },
+      {
+        "label": "américain",
+        "src": "/lib/images/vocabulaire/presenter/américain.webp"
+      },
+      {
+        "label": "américaine",
+        "src": "/lib/images/vocabulaire/presenter/américaine.webp"
+      },
+      {
+        "label": "anglais",
+        "src": "/lib/images/vocabulaire/presenter/anglais.webp"
+      },
+      {
+        "label": "anglaise",
+        "src": "/lib/images/vocabulaire/presenter/anglaise.webp"
+      },
+      {
+        "label": "autrichien",
+        "src": "/lib/images/vocabulaire/presenter/autrichien.webp"
+      },
+      {
+        "label": "autrichienne",
+        "src": "/lib/images/vocabulaire/presenter/autrichienne.webp"
+      },
+      {
+        "label": "bangladais",
+        "src": "/lib/images/vocabulaire/presenter/bangladais.webp"
+      },
+      {
+        "label": "bangladaise",
+        "src": "/lib/images/vocabulaire/presenter/bangladaise.webp"
+      },
+      {
+        "label": "belge",
+        "src": "/lib/images/vocabulaire/presenter/belge.webp"
+      },
+      {
+        "label": "bosniaque",
+        "src": "/lib/images/vocabulaire/presenter/bosniaque.webp"
+      },
+      {
+        "label": "brésilien",
+        "src": "/lib/images/vocabulaire/presenter/brésilien.webp"
+      },
+      {
+        "label": "brésilienne",
+        "src": "/lib/images/vocabulaire/presenter/brésilienne.webp"
+      },
+      {
+        "label": "camerounais",
+        "src": "/lib/images/vocabulaire/presenter/camerounais.webp"
+      },
+      {
+        "label": "camerounaise",
+        "src": "/lib/images/vocabulaire/presenter/camerounaise.webp"
+      },
+      {
+        "label": "canadien",
+        "src": "/lib/images/vocabulaire/presenter/canadien.webp"
+      },
+      {
+        "label": "canadienne",
+        "src": "/lib/images/vocabulaire/presenter/canadienne.webp"
+      },
+      {
+        "label": "chinois",
+        "src": "/lib/images/vocabulaire/presenter/chinois.webp"
+      },
+      {
+        "label": "chinoise",
+        "src": "/lib/images/vocabulaire/presenter/chinoise.webp"
+      },
+      {
+        "label": "colombien",
+        "src": "/lib/images/vocabulaire/presenter/colombien.webp"
+      },
+      {
+        "label": "colombienne",
+        "src": "/lib/images/vocabulaire/presenter/colombienne.webp"
+      },
+      {
+        "label": "congolais",
+        "src": "/lib/images/vocabulaire/presenter/congolais.webp"
+      },
+      {
+        "label": "congolaise",
+        "src": "/lib/images/vocabulaire/presenter/congolaise.webp"
+      },
+      {
+        "label": "coréen",
+        "src": "/lib/images/vocabulaire/presenter/coréen.webp"
+      },
+      {
+        "label": "coréenne",
+        "src": "/lib/images/vocabulaire/presenter/coréenne.webp"
+      },
+      {
+        "label": "croate",
+        "src": "/lib/images/vocabulaire/presenter/croate.webp"
+      },
+      {
+        "label": "danois",
+        "src": "/lib/images/vocabulaire/presenter/danois.webp"
+      },
+      {
+        "label": "danoise",
+        "src": "/lib/images/vocabulaire/presenter/danoise.webp"
+      },
+      {
+        "label": "espagnol",
+        "src": "/lib/images/vocabulaire/presenter/espagnol.webp"
+      },
+      {
+        "label": "espagnole",
+        "src": "/lib/images/vocabulaire/presenter/espagnole.webp"
+      },
+      {
+        "label": "français",
+        "src": "/lib/images/vocabulaire/presenter/français.webp"
+      },
+      {
+        "label": "française",
+        "src": "/lib/images/vocabulaire/presenter/française.webp"
+      },
+      {
+        "label": "grec",
+        "src": "/lib/images/vocabulaire/presenter/grec.webp"
+      },
+      {
+        "label": "grecque",
+        "src": "/lib/images/vocabulaire/presenter/grecque.webp"
+      },
+      {
+        "label": "indien",
+        "src": "/lib/images/vocabulaire/presenter/indien.webp"
+      },
+      {
+        "label": "indienne",
+        "src": "/lib/images/vocabulaire/presenter/indienne.webp"
+      },
+      {
+        "label": "irakien",
+        "src": "/lib/images/vocabulaire/presenter/irakien.webp"
+      },
+      {
+        "label": "irakienne",
+        "src": "/lib/images/vocabulaire/presenter/irakienne.webp"
+      },
+      {
+        "label": "iranien",
+        "src": "/lib/images/vocabulaire/presenter/iranien.webp"
+      },
+      {
+        "label": "iranienne",
+        "src": "/lib/images/vocabulaire/presenter/iranienne.webp"
+      },
+      {
+        "label": "irlandais",
+        "src": "/lib/images/vocabulaire/presenter/irlandais.webp"
+      },
+      {
+        "label": "irlandaise",
+        "src": "/lib/images/vocabulaire/presenter/irlandaise.webp"
+      },
+      {
+        "label": "italien",
+        "src": "/lib/images/vocabulaire/presenter/italien.webp"
+      },
+      {
+        "label": "italienne",
+        "src": "/lib/images/vocabulaire/presenter/italienne.webp"
+      },
+      {
+        "label": "japonais",
+        "src": "/lib/images/vocabulaire/presenter/japonais.webp"
+      },
+      {
+        "label": "japonaise",
+        "src": "/lib/images/vocabulaire/presenter/japonaise.webp"
+      },
+      {
+        "label": "kosovar",
+        "src": "/lib/images/vocabulaire/presenter/kosovar.webp"
+      },
+      {
+        "label": "kosovare",
+        "src": "/lib/images/vocabulaire/presenter/kosovare.webp"
+      },
+      {
+        "label": "libanais",
+        "src": "/lib/images/vocabulaire/presenter/libanais.webp"
+      },
+      {
+        "label": "libanaise",
+        "src": "/lib/images/vocabulaire/presenter/libanaise.webp"
+      },
+      {
+        "label": "malien",
+        "src": "/lib/images/vocabulaire/presenter/malien.webp"
+      },
+      {
+        "label": "malienne",
+        "src": "/lib/images/vocabulaire/presenter/malienne.webp"
+      },
+      {
+        "label": "marocain",
+        "src": "/lib/images/vocabulaire/presenter/marocain.webp"
+      },
+      {
+        "label": "marocaine",
+        "src": "/lib/images/vocabulaire/presenter/marocaine.webp"
+      },
+      {
+        "label": "mexicain",
+        "src": "/lib/images/vocabulaire/presenter/mexicain.webp"
+      },
+      {
+        "label": "mexicaine",
+        "src": "/lib/images/vocabulaire/presenter/mexicaine.webp"
+      },
+      {
+        "label": "nigérian",
+        "src": "/lib/images/vocabulaire/presenter/nigérian.webp"
+      },
+      {
+        "label": "nigériane",
+        "src": "/lib/images/vocabulaire/presenter/nigériane.webp"
+      },
+      {
+        "label": "norvégien",
+        "src": "/lib/images/vocabulaire/presenter/norvégien.webp"
+      },
+      {
+        "label": "norvégienne",
+        "src": "/lib/images/vocabulaire/presenter/norvégienne.webp"
+      },
+      {
+        "label": "néerlandais",
+        "src": "/lib/images/vocabulaire/presenter/néerlandais.webp"
+      },
+      {
+        "label": "néerlandaise",
+        "src": "/lib/images/vocabulaire/presenter/néerlandaise.webp"
+      },
+      {
+        "label": "pakistanais",
+        "src": "/lib/images/vocabulaire/presenter/pakistanais.webp"
+      },
+      {
+        "label": "pakistanaise",
+        "src": "/lib/images/vocabulaire/presenter/pakistanaise.webp"
+      },
+      {
+        "label": "philippin",
+        "src": "/lib/images/vocabulaire/presenter/philippin.webp"
+      },
+      {
+        "label": "philippine",
+        "src": "/lib/images/vocabulaire/presenter/philippine.webp"
+      },
+      {
+        "label": "polonais",
+        "src": "/lib/images/vocabulaire/presenter/polonais.webp"
+      },
+      {
+        "label": "polonaise",
+        "src": "/lib/images/vocabulaire/presenter/polonaise.webp"
+      },
+      {
+        "label": "portugais",
+        "src": "/lib/images/vocabulaire/presenter/portugais.webp"
+      },
+      {
+        "label": "portugaise",
+        "src": "/lib/images/vocabulaire/presenter/portugaise.webp"
+      },
+      {
+        "label": "roumain",
+        "src": "/lib/images/vocabulaire/presenter/roumain.webp"
+      },
+      {
+        "label": "roumaine",
+        "src": "/lib/images/vocabulaire/presenter/roumaine.webp"
+      },
+      {
+        "label": "russe",
+        "src": "/lib/images/vocabulaire/presenter/russe.webp"
+      },
+      {
+        "label": "serbe",
+        "src": "/lib/images/vocabulaire/presenter/serbe.webp"
+      },
+      {
+        "label": "somalien",
+        "src": "/lib/images/vocabulaire/presenter/somalien.webp"
+      },
+      {
+        "label": "somalienne",
+        "src": "/lib/images/vocabulaire/presenter/somalienne.webp"
+      },
+      {
+        "label": "soudanais",
+        "src": "/lib/images/vocabulaire/presenter/soudanais.webp"
+      },
+      {
+        "label": "soudanaise",
+        "src": "/lib/images/vocabulaire/presenter/soudanaise.webp"
+      },
+      {
+        "label": "sri lankais",
+        "src": "/lib/images/vocabulaire/presenter/sri-lankais.webp"
+      },
+      {
+        "label": "sri lankaise",
+        "src": "/lib/images/vocabulaire/presenter/sri-lankaise.webp"
+      },
+      {
+        "label": "suisse",
+        "src": "/lib/images/vocabulaire/presenter/suisse.webp"
+      },
+      {
+        "label": "suédois",
+        "src": "/lib/images/vocabulaire/presenter/suédois.webp"
+      },
+      {
+        "label": "suédoise",
+        "src": "/lib/images/vocabulaire/presenter/suédoise.webp"
+      },
+      {
+        "label": "syrien",
+        "src": "/lib/images/vocabulaire/presenter/syrien.webp"
+      },
+      {
+        "label": "syrienne",
+        "src": "/lib/images/vocabulaire/presenter/syrienne.webp"
+      },
+      {
+        "label": "sénégalais",
+        "src": "/lib/images/vocabulaire/presenter/sénégalais.webp"
+      },
+      {
+        "label": "sénégalaise",
+        "src": "/lib/images/vocabulaire/presenter/sénégalaise.webp"
+      },
+      {
+        "label": "thaïlandais",
+        "src": "/lib/images/vocabulaire/presenter/thaïlandais.webp"
+      },
+      {
+        "label": "thaïlandaise",
+        "src": "/lib/images/vocabulaire/presenter/thaïlandaise.webp"
+      },
+      {
+        "label": "tunisien",
+        "src": "/lib/images/vocabulaire/presenter/tunisien.webp"
+      },
+      {
+        "label": "tunisienne",
+        "src": "/lib/images/vocabulaire/presenter/tunisienne.webp"
+      },
+      {
+        "label": "turc",
+        "src": "/lib/images/vocabulaire/presenter/turc.webp"
+      },
+      {
+        "label": "turque",
+        "src": "/lib/images/vocabulaire/presenter/turque.webp"
+      },
+      {
+        "label": "ukrainien",
+        "src": "/lib/images/vocabulaire/presenter/ukrainien.webp"
+      },
+      {
+        "label": "ukrainienne",
+        "src": "/lib/images/vocabulaire/presenter/ukrainienne.webp"
+      },
+      {
+        "label": "vietnamien",
+        "src": "/lib/images/vocabulaire/presenter/vietnamien.webp"
+      },
+      {
+        "label": "vietnamienne",
+        "src": "/lib/images/vocabulaire/presenter/vietnamienne.webp"
+      },
+      {
+        "label": "érythréen",
+        "src": "/lib/images/vocabulaire/presenter/érythréen.webp"
+      },
+      {
+        "label": "érythréenne",
+        "src": "/lib/images/vocabulaire/presenter/érythréenne.webp"
+      },
+      {
+        "label": "éthiopien",
+        "src": "/lib/images/vocabulaire/presenter/éthiopien.webp"
+      },
+      {
+        "label": "éthiopienne",
+        "src": "/lib/images/vocabulaire/presenter/éthiopienne.webp"
+      }
+    ]
+  },
+  {
     "id": "sports",
     "label": "Sports",
     "words": [
@@ -9378,6 +9816,115 @@ export const VOCAB_IMAGE_BY_LABEL: Record<string, string> = {
   "zinnia": "/lib/images/vocabulaire/plantes/zinnia.webp",
   "érable": "/lib/images/vocabulaire/plantes/érable.webp",
   "œillet": "/lib/images/vocabulaire/plantes/œillet.webp",
+  "afghan": "/lib/images/vocabulaire/presenter/afghan.webp",
+  "afghane": "/lib/images/vocabulaire/presenter/afghane.webp",
+  "albanais": "/lib/images/vocabulaire/presenter/albanais.webp",
+  "albanaise": "/lib/images/vocabulaire/presenter/albanaise.webp",
+  "algérien": "/lib/images/vocabulaire/presenter/algérien.webp",
+  "algérienne": "/lib/images/vocabulaire/presenter/algérienne.webp",
+  "allemand": "/lib/images/vocabulaire/presenter/allemand.webp",
+  "allemande": "/lib/images/vocabulaire/presenter/allemande.webp",
+  "américain": "/lib/images/vocabulaire/presenter/américain.webp",
+  "américaine": "/lib/images/vocabulaire/presenter/américaine.webp",
+  "anglais": "/lib/images/vocabulaire/presenter/anglais.webp",
+  "anglaise": "/lib/images/vocabulaire/presenter/anglaise.webp",
+  "autrichien": "/lib/images/vocabulaire/presenter/autrichien.webp",
+  "autrichienne": "/lib/images/vocabulaire/presenter/autrichienne.webp",
+  "bangladais": "/lib/images/vocabulaire/presenter/bangladais.webp",
+  "bangladaise": "/lib/images/vocabulaire/presenter/bangladaise.webp",
+  "belge": "/lib/images/vocabulaire/presenter/belge.webp",
+  "bosniaque": "/lib/images/vocabulaire/presenter/bosniaque.webp",
+  "brésilien": "/lib/images/vocabulaire/presenter/brésilien.webp",
+  "brésilienne": "/lib/images/vocabulaire/presenter/brésilienne.webp",
+  "camerounais": "/lib/images/vocabulaire/presenter/camerounais.webp",
+  "camerounaise": "/lib/images/vocabulaire/presenter/camerounaise.webp",
+  "canadien": "/lib/images/vocabulaire/presenter/canadien.webp",
+  "canadienne": "/lib/images/vocabulaire/presenter/canadienne.webp",
+  "chinois": "/lib/images/vocabulaire/presenter/chinois.webp",
+  "chinoise": "/lib/images/vocabulaire/presenter/chinoise.webp",
+  "colombien": "/lib/images/vocabulaire/presenter/colombien.webp",
+  "colombienne": "/lib/images/vocabulaire/presenter/colombienne.webp",
+  "congolais": "/lib/images/vocabulaire/presenter/congolais.webp",
+  "congolaise": "/lib/images/vocabulaire/presenter/congolaise.webp",
+  "coréen": "/lib/images/vocabulaire/presenter/coréen.webp",
+  "coréenne": "/lib/images/vocabulaire/presenter/coréenne.webp",
+  "croate": "/lib/images/vocabulaire/presenter/croate.webp",
+  "danois": "/lib/images/vocabulaire/presenter/danois.webp",
+  "danoise": "/lib/images/vocabulaire/presenter/danoise.webp",
+  "espagnol": "/lib/images/vocabulaire/presenter/espagnol.webp",
+  "espagnole": "/lib/images/vocabulaire/presenter/espagnole.webp",
+  "français": "/lib/images/vocabulaire/presenter/français.webp",
+  "française": "/lib/images/vocabulaire/presenter/française.webp",
+  "grec": "/lib/images/vocabulaire/presenter/grec.webp",
+  "grecque": "/lib/images/vocabulaire/presenter/grecque.webp",
+  "indien": "/lib/images/vocabulaire/presenter/indien.webp",
+  "indienne": "/lib/images/vocabulaire/presenter/indienne.webp",
+  "irakien": "/lib/images/vocabulaire/presenter/irakien.webp",
+  "irakienne": "/lib/images/vocabulaire/presenter/irakienne.webp",
+  "iranien": "/lib/images/vocabulaire/presenter/iranien.webp",
+  "iranienne": "/lib/images/vocabulaire/presenter/iranienne.webp",
+  "irlandais": "/lib/images/vocabulaire/presenter/irlandais.webp",
+  "irlandaise": "/lib/images/vocabulaire/presenter/irlandaise.webp",
+  "italien": "/lib/images/vocabulaire/presenter/italien.webp",
+  "italienne": "/lib/images/vocabulaire/presenter/italienne.webp",
+  "japonais": "/lib/images/vocabulaire/presenter/japonais.webp",
+  "japonaise": "/lib/images/vocabulaire/presenter/japonaise.webp",
+  "kosovar": "/lib/images/vocabulaire/presenter/kosovar.webp",
+  "kosovare": "/lib/images/vocabulaire/presenter/kosovare.webp",
+  "libanais": "/lib/images/vocabulaire/presenter/libanais.webp",
+  "libanaise": "/lib/images/vocabulaire/presenter/libanaise.webp",
+  "malien": "/lib/images/vocabulaire/presenter/malien.webp",
+  "malienne": "/lib/images/vocabulaire/presenter/malienne.webp",
+  "marocain": "/lib/images/vocabulaire/presenter/marocain.webp",
+  "marocaine": "/lib/images/vocabulaire/presenter/marocaine.webp",
+  "mexicain": "/lib/images/vocabulaire/presenter/mexicain.webp",
+  "mexicaine": "/lib/images/vocabulaire/presenter/mexicaine.webp",
+  "nigérian": "/lib/images/vocabulaire/presenter/nigérian.webp",
+  "nigériane": "/lib/images/vocabulaire/presenter/nigériane.webp",
+  "norvégien": "/lib/images/vocabulaire/presenter/norvégien.webp",
+  "norvégienne": "/lib/images/vocabulaire/presenter/norvégienne.webp",
+  "néerlandais": "/lib/images/vocabulaire/presenter/néerlandais.webp",
+  "néerlandaise": "/lib/images/vocabulaire/presenter/néerlandaise.webp",
+  "pakistanais": "/lib/images/vocabulaire/presenter/pakistanais.webp",
+  "pakistanaise": "/lib/images/vocabulaire/presenter/pakistanaise.webp",
+  "philippin": "/lib/images/vocabulaire/presenter/philippin.webp",
+  "philippine": "/lib/images/vocabulaire/presenter/philippine.webp",
+  "polonais": "/lib/images/vocabulaire/presenter/polonais.webp",
+  "polonaise": "/lib/images/vocabulaire/presenter/polonaise.webp",
+  "portugais": "/lib/images/vocabulaire/presenter/portugais.webp",
+  "portugaise": "/lib/images/vocabulaire/presenter/portugaise.webp",
+  "roumain": "/lib/images/vocabulaire/presenter/roumain.webp",
+  "roumaine": "/lib/images/vocabulaire/presenter/roumaine.webp",
+  "russe": "/lib/images/vocabulaire/presenter/russe.webp",
+  "serbe": "/lib/images/vocabulaire/presenter/serbe.webp",
+  "somalien": "/lib/images/vocabulaire/presenter/somalien.webp",
+  "somalienne": "/lib/images/vocabulaire/presenter/somalienne.webp",
+  "soudanais": "/lib/images/vocabulaire/presenter/soudanais.webp",
+  "soudanaise": "/lib/images/vocabulaire/presenter/soudanaise.webp",
+  "sri lankais": "/lib/images/vocabulaire/presenter/sri-lankais.webp",
+  "sri-lankais": "/lib/images/vocabulaire/presenter/sri-lankais.webp",
+  "sri lankaise": "/lib/images/vocabulaire/presenter/sri-lankaise.webp",
+  "sri-lankaise": "/lib/images/vocabulaire/presenter/sri-lankaise.webp",
+  "suédois": "/lib/images/vocabulaire/presenter/suédois.webp",
+  "suédoise": "/lib/images/vocabulaire/presenter/suédoise.webp",
+  "syrien": "/lib/images/vocabulaire/presenter/syrien.webp",
+  "syrienne": "/lib/images/vocabulaire/presenter/syrienne.webp",
+  "sénégalais": "/lib/images/vocabulaire/presenter/sénégalais.webp",
+  "sénégalaise": "/lib/images/vocabulaire/presenter/sénégalaise.webp",
+  "thaïlandais": "/lib/images/vocabulaire/presenter/thaïlandais.webp",
+  "thaïlandaise": "/lib/images/vocabulaire/presenter/thaïlandaise.webp",
+  "tunisien": "/lib/images/vocabulaire/presenter/tunisien.webp",
+  "tunisienne": "/lib/images/vocabulaire/presenter/tunisienne.webp",
+  "turc": "/lib/images/vocabulaire/presenter/turc.webp",
+  "turque": "/lib/images/vocabulaire/presenter/turque.webp",
+  "ukrainien": "/lib/images/vocabulaire/presenter/ukrainien.webp",
+  "ukrainienne": "/lib/images/vocabulaire/presenter/ukrainienne.webp",
+  "vietnamien": "/lib/images/vocabulaire/presenter/vietnamien.webp",
+  "vietnamienne": "/lib/images/vocabulaire/presenter/vietnamienne.webp",
+  "érythréen": "/lib/images/vocabulaire/presenter/érythréen.webp",
+  "érythréenne": "/lib/images/vocabulaire/presenter/érythréenne.webp",
+  "éthiopien": "/lib/images/vocabulaire/presenter/éthiopien.webp",
+  "éthiopienne": "/lib/images/vocabulaire/presenter/éthiopienne.webp",
   "allergie": "/lib/images/vocabulaire/sante/allergie.webp",
   "antibiotique": "/lib/images/vocabulaire/sante/antibiotique.webp",
   "blessure": "/lib/images/vocabulaire/sante/blessure.webp",
