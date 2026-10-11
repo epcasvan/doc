@@ -2190,128 +2190,388 @@
       ]
     }
   ],
-  "type12": [
-    {
-      "level": "a1",
-      "sentence": "Le directeur pose le cyan chez Yves."
-    },
-    {
-      "level": "a1",
-      "sentence": "La boulangère regarde le cygne avec Mary."
-    },
-    {
-      "level": "a1",
-      "sentence": "Yves range le cylindre bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La voisine nettoie une hygiène avec Mary."
-    },
+  "type12Stories": [
     {
       "level": "a2",
-      "sentence": "Ce soir, Yann joue avec le mystère au lycée."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Yann joue avec le mythe avec Mary."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Cyril utilise le nylon chez Yves."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Mary quitte le pays près de Cyril."
+      "sentences": [
+        "Léa et Yanis visitent le parc près du lycée.",
+        "Ils voient un grand cygne blanc sur l’eau.",
+        "Yanis prend son stylo pour dessiner le cygne.",
+        "Léa regarde le rythme des ailes du cygne.",
+        "Un ami du lycée s’approche avec un yaourt.",
+        "Ils parlent du mystère de ce cygne silencieux.",
+        "Yanis range son stylo dans le sac.",
+        "Léa photographie encore le cygne.",
+        "Puis ils rentrent vers le lycée ensemble."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand la boulangère enfile le style près de Cyril, et Mary sourit près de Cyril."
+      "sentences": [
+        "Au lycée, le professeur propose un labyrinthe.",
+        "Les élèves cherchent la sortie du labyrinthe.",
+        "Inès note le chemin avec son stylo.",
+        "Un mystère apparaît au centre du labyrinthe.",
+        "Karim lit un mythe collé sur le mur.",
+        "Le groupe discute du style de cette énigme.",
+        "Inès trouve enfin la clé du mystère.",
+        "Ils sortent du labyrinthe sans se perdre.",
+        "Avant de partir, Karim range son stylo."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Maya et Noah cueillent des myrtilles au jardin.",
+        "Maya goûte une myrtille bien mûre.",
+        "Noah met des myrtilles dans un panier.",
+        "Ils parlent du rythme de la récolte.",
+        "Maya tache un peu son pyjama violet.",
+        "Noah rit et prend une autre myrtille.",
+        "Ils lavent les myrtilles avec soin.",
+        "Maya prépare un yaourt aux myrtilles.",
+        "Noah goûte le yaourt et sourit."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand le cuisinier cherche le stylo près de Cyril, et Mary sourit près de Cyril."
+      "sentences": [
+        "En physique, Sara étudie un cylindre en verre.",
+        "Le professeur montre le système du cylindre.",
+        "Sara mesure le cylindre avec une règle.",
+        "Hugo note les résultats au stylo.",
+        "Ils comparent deux types de cylindres.",
+        "Sara explique le système à voix haute.",
+        "Hugo vérifie encore une fois le cylindre.",
+        "Le cours de physique se termine calmement.",
+        "Sara range son stylo avant de partir."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Sofia organise une soirée pyjama chez elle.",
+        "Chacun arrive en pyjama confortable.",
+        "Ils écoutent de la musique au bon rythme.",
+        "Yanis bat le rythme avec ses mains.",
+        "Sofia choisit un style de danse simple.",
+        "Un ami apporte un yaourt pour le goûter.",
+        "Ils rient et suivent encore le rythme.",
+        "Sofia range son pyjama après la fête.",
+        "Yanis écrit un mot de remerciement au stylo."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand la voisine montre le système près de Cyril, et Mary sourit près de Cyril."
+      "sentences": [
+        "Au musée, Amira découvre une pyramide en modèle.",
+        "Le guide raconte un mythe sur la pyramide.",
+        "Amira dessine la pyramide dans son cahier.",
+        "Théo lit le mythe à voix basse.",
+        "Ils comparent ce mythe à un autre pays.",
+        "Amira note le style des dessins anciens.",
+        "Théo photographie encore la pyramide.",
+        "Avant de partir, ils relisent le mythe.",
+        "Amira range son stylo dans la trousse."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Omar et Nora font du recyclage à l’école.",
+        "Omar jette un vieux stylo dans le bac.",
+        "Nora explique le système de recyclage.",
+        "Ils trient aussi du nylon usé.",
+        "Omar trouve un stylo encore utilisable.",
+        "Nora parle du type de plastique.",
+        "Le recyclage avance bien dans la classe.",
+        "Omar note les consignes au stylo.",
+        "Nora range le bac de recyclage."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand le directeur range le type près de Cyril, et Mary sourit près de Cyril."
+      "sentences": [
+        "Au lycée, l’infirmière parle d’hygiène.",
+        "Elle insiste sur l’hygiène des mains.",
+        "Léa écoute et note les conseils au stylo.",
+        "Un affichage montre un système d’hygiène simple.",
+        "Les élèves du lycée posent des questions.",
+        "Léa propose un type d’affiche claire.",
+        "Le professeur valide le style du message.",
+        "Après le cours, Léa range son stylo.",
+        "Elle repart du lycée avec de bonnes idées."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Emma reçoit un lys blanc pour son anniversaire.",
+        "Elle place le lys près de la fenêtre.",
+        "Hugo apporte une petite lyre en bois.",
+        "Emma touche les cordes de la lyre.",
+        "Ils écoutent le rythme doux de la lyre.",
+        "Hugo pose le lys dans un vase.",
+        "Emma dessine le lys avec son stylo.",
+        "La lyre reste sur la table du salon.",
+        "Avant le soir, ils respirent le parfum du lys."
+      ]
+    },
+    {
+      "level": "b1",
+      "sentences": [
+        "Au club info, Karim présente un projet python.",
+        "Le jury écoute son explication avec attention.",
+        "Karim montre le système écrit en python.",
+        "Une membre du jury pose une question.",
+        "Karim répond avec un style clair.",
+        "Il note une idée nouvelle au stylo.",
+        "Le jury félicite le type de démonstration.",
+        "Karim range son stylo après la présentation.",
+        "Il quitte la salle content du jury."
+      ]
     }
   ],
-  "type14": [
-    {
-      "level": "a1",
-      "sentence": "La professeure aide le jury chez Yves."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le boulanger choisit le labyrinthe au lycée."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le médecin lit le lycée avec Mary."
-    },
-    {
-      "level": "a1",
-      "sentence": "La tante écoute la lyre chez Yves."
-    },
-    {
-      "level": "a1",
-      "sentence": "La boulangère photographie le lys chez Yves."
-    },
-    {
-      "level": "a1",
-      "sentence": "La cousine apporte la myrtille avec Mary."
-    },
+  "type14Stories": [
     {
       "level": "a2",
-      "sentence": "Après le cours, Yann recopie la physique près de Cyril."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Mary repasse le pyjama au lycée."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Yves quitte la pyramide avec Mary."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Mary nourrit le python chez Yves."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Yann trouve le recyclage chez Yves."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Yves regarde le rythme près de Cyril."
+      "sentences": [
+        "Léa et Yanis se retrouvent devant le lycée.",
+        "Léa sort un stylo de sa trousse.",
+        "Yanis parle d’un cygne vu près du lac.",
+        "Après les cours, ils vont voir le cygne.",
+        "Le cygne nage calmement sur l’eau.",
+        "Yanis dessine le cygne avec son stylo.",
+        "Léa remarque le rythme lent des mouvements.",
+        "Un ami du lycée arrive avec un yaourt.",
+        "Ils s’asseyent et partagent le yaourt.",
+        "Puis Léa raconte un petit mystère de classe.",
+        "Yanis écoute et sourit près du cygne.",
+        "Ils retournent ensuite vers le lycée.",
+        "Sur le chemin, Léa range son stylo.",
+        "Yanis photographie encore une fois le cygne.",
+        "Devant le lycée, ils parlent du mystère.",
+        "Léa écrit une phrase dans son cahier.",
+        "Yanis vérifie l’orthographe au stylo.",
+        "Le soir tombe sur le parc du lycée.",
+        "Ils se disent au revoir près du cygne."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand le collègue trouve le cyan au lycée, parce que Yves est chez Mary."
+      "sentences": [
+        "Inès organise un labyrinthe géant au lycée.",
+        "Elle trace le plan du labyrinthe au stylo.",
+        "Karim cache un indice au centre du labyrinthe.",
+        "Les élèves cherchent la sortie du labyrinthe.",
+        "Un mystère est écrit sur une feuille jaune.",
+        "Inès lit le mystère à voix haute.",
+        "Karim compare ce mystère à un vieux mythe.",
+        "Le rythme de la recherche devient plus rapide.",
+        "Une équipe trouve enfin la clé du mystère.",
+        "Ils sortent du labyrinthe sans se tromper.",
+        "Inès félicite le style de leur stratégie.",
+        "Karim note les scores avec son stylo.",
+        "Le professeur valide le système du jeu.",
+        "Inès range le plan du labyrinthe.",
+        "Karim parle encore du mythe découvert.",
+        "Les élèves du lycée applaudissent fort.",
+        "Inès propose un autre type de labyrinthe.",
+        "Avant de partir, Karim range son stylo.",
+        "Le lycée reste animé jusqu’au soir."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Maya cueille des myrtilles dans le jardin.",
+        "Noah apporte un panier pour les myrtilles.",
+        "Maya goûte une myrtille sucrée.",
+        "Noah met des myrtilles dans le panier.",
+        "Ils lavent ensuite toutes les myrtilles.",
+        "Maya prépare un yaourt aux myrtilles.",
+        "Noah goûte le yaourt et sourit.",
+        "Maya tache un peu son pyjama violet.",
+        "Noah rit et aide à nettoyer le pyjama.",
+        "Ils parlent du rythme de la cuisine.",
+        "Maya écrit la recette avec un stylo.",
+        "Noah range encore des myrtilles au frigo.",
+        "Le yaourt refroidit sur la table.",
+        "Maya goûte une dernière myrtille.",
+        "Noah propose un autre type de dessert.",
+        "Ils décident de garder le yaourt pour demain.",
+        "Maya range son stylo dans le tiroir.",
+        "Noah plie son pyjama propre.",
+        "La soirée se termine près des myrtilles."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand le cousin caresse le cygne avec Mary, et Mary sourit près de Cyril."
+      "sentences": [
+        "En physique, Sara observe un cylindre métallique.",
+        "Hugo prépare le système de mesure.",
+        "Sara place le cylindre sur la balance.",
+        "Hugo note les chiffres avec son stylo.",
+        "Ils discutent du type de cylindre choisi.",
+        "Sara explique le système à la classe.",
+        "Le professeur valide le style de l’exposé.",
+        "Hugo vérifie encore une fois le cylindre.",
+        "Sara dessine le cylindre au tableau.",
+        "Un élève pose une question sur le système.",
+        "Hugo répond calmement avec des exemples.",
+        "Sara range son stylo après l’exercice.",
+        "Le cours de physique se poursuit.",
+        "Ils comparent un autre type de cylindre.",
+        "Hugo lit un court mythe scientifique.",
+        "Sara sourit et reprend son stylo.",
+        "Le système fonctionne sans erreur.",
+        "Avant la sonnerie, ils rangent le cylindre.",
+        "Sara quitte la salle de physique contente."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Sofia invite ses amis à une soirée pyjama.",
+        "Chacun arrive en pyjama coloré.",
+        "Yanis met un pyjama à rayures.",
+        "Ils écoutent de la musique au bon rythme.",
+        "Sofia bat le rythme avec ses mains.",
+        "Yanis choisit un style de danse amusant.",
+        "Un ami apporte un yaourt pour le goûter.",
+        "Ils mangent le yaourt dans le salon.",
+        "Sofia tache un peu son pyjama.",
+        "Yanis rit et aide à nettoyer.",
+        "Puis ils inventent un petit mystère.",
+        "Sofia écrit les indices au stylo.",
+        "Yanis cherche la solution du mystère.",
+        "Le rythme de la fête reste joyeux.",
+        "Sofia range son stylo après le jeu.",
+        "Yanis plie son pyjama avant de dormir.",
+        "Ils parlent encore du mystère résolu.",
+        "La lumière baisse dans la chambre.",
+        "La soirée pyjama se termine en silence."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand la factrice montre le cylindre près de Cyril, et Mary sourit près de Cyril."
+      "sentences": [
+        "Amira visite un musée avec une pyramide.",
+        "Théo lit un mythe près de la pyramide.",
+        "Amira dessine la pyramide dans son cahier.",
+        "Théo note les détails avec son stylo.",
+        "Le guide explique le style des sculptures.",
+        "Amira pose une question sur le mythe.",
+        "Théo compare ce mythe à un autre pays.",
+        "Ils photographient encore la pyramide.",
+        "Amira remarque un lys peint sur un vase.",
+        "Théo écoute le rythme de la visite guidée.",
+        "Le groupe découvre un petit labyrinthe.",
+        "Amira suit le plan du labyrinthe.",
+        "Théo trouve la sortie du labyrinthe.",
+        "Ils relisent le mythe avant de partir.",
+        "Amira range son stylo dans le sac.",
+        "Théo achète une carte de la pyramide.",
+        "Sur le chemin, ils parlent du mythe.",
+        "Amira propose un autre type de visite.",
+        "La journée au musée se termine bien."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Omar et Nora organisent le recyclage.",
+        "Omar jette un vieux stylo dans le bac.",
+        "Nora explique le système de recyclage.",
+        "Ils trient aussi du nylon usé.",
+        "Omar trouve un stylo encore bon.",
+        "Nora parle du type de plastique.",
+        "Le recyclage avance dans toute l’école.",
+        "Omar écrit les consignes au stylo.",
+        "Nora dessine une affiche de recyclage.",
+        "Ils choisissent un style simple et clair.",
+        "Un ami apporte un yaourt vide à recycler.",
+        "Omar range le yaourt dans le bon bac.",
+        "Nora vérifie encore le système.",
+        "Le professeur félicite leur recyclage.",
+        "Omar note une idée nouvelle au stylo.",
+        "Nora range le bac de recyclage.",
+        "Ils parlent du rythme du tri.",
+        "Omar range son stylo dans la trousse.",
+        "La journée de recyclage se termine."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Yann visite une hygiène, et Mary sourit près de Cyril."
+      "sentences": [
+        "Au lycée, l’infirmière parle d’hygiène.",
+        "Elle insiste sur l’hygiène des mains.",
+        "Léa note les conseils avec son stylo.",
+        "Un affichage montre un système d’hygiène.",
+        "Les élèves du lycée écoutent avec attention.",
+        "Léa propose un type d’affiche plus claire.",
+        "Le professeur valide le style du message.",
+        "Karim lit un texte sur l’hygiène.",
+        "Léa corrige une faute au stylo.",
+        "Ils discutent du rythme des gestes simples.",
+        "Un mystère apparaît sur une affiche abîmée.",
+        "Karim déchiffre le mystère rapidement.",
+        "Léa sourit et range son stylo.",
+        "Le lycée affiche les nouvelles consignes.",
+        "Léa vérifie encore le système proposé.",
+        "Karim parle d’un autre type d’hygiène.",
+        "Avant de partir, Léa range son cahier.",
+        "Elle quitte le lycée avec de bonnes idées.",
+        "Le soir, elle relit ses notes d’hygiène."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Emma reçoit un lys blanc ce matin.",
+        "Elle place le lys près de la fenêtre.",
+        "Hugo apporte une petite lyre en bois.",
+        "Emma touche les cordes de la lyre.",
+        "Ils écoutent le rythme doux de la lyre.",
+        "Hugo pose le lys dans un vase.",
+        "Emma dessine le lys avec son stylo.",
+        "Hugo prépare un yaourt pour le goûter.",
+        "Ils mangent le yaourt près du lys.",
+        "Emma reprend la lyre un instant.",
+        "Hugo bat le rythme avec ses doigts.",
+        "La lyre reste sur la table du salon.",
+        "Emma range son stylo après le dessin.",
+        "Hugo arrose encore un peu le lys.",
+        "Ils parlent du style de la musique.",
+        "Emma plie une note près de la lyre.",
+        "Hugo sourit et range le yaourt vide.",
+        "Le parfum du lys remplit la pièce.",
+        "La journée se termine près du lys."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Yves suit le jury, parce que Yves est chez Mary."
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand le cuisinier regarde le labyrinthe avec Mary, et Mary sourit près de Cyril."
+      "sentences": [
+        "Karim présente un projet python au club.",
+        "Le jury écoute son explication avec soin.",
+        "Karim montre le système écrit en python.",
+        "Une membre du jury pose une question.",
+        "Karim répond avec un style clair.",
+        "Il note une idée nouvelle au stylo.",
+        "Le jury félicite le type de démonstration.",
+        "Karim explique encore le système.",
+        "Un ami demande un mystère dans le code.",
+        "Karim résout le mystère rapidement.",
+        "Le jury sourit devant ce rythme efficace.",
+        "Karim range son stylo après l’exposé.",
+        "Il quitte la salle content du jury.",
+        "Sur le chemin, il pense au python.",
+        "Il imagine un autre type de projet.",
+        "Le soir, il relit les notes du jury.",
+        "Il corrige une ligne de python.",
+        "Puis il range son stylo sur le bureau.",
+        "Le projet python est prêt pour demain."
+      ]
     }
   ]
 }

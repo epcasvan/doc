@@ -2430,128 +2430,388 @@
       ]
     }
   ],
-  "type12": [
-    {
-      "level": "a1",
-      "sentence": "Le copain s’habille après le bain."
-    },
-    {
-      "level": "a1",
-      "sentence": "La grand-mère choisit la ceinture avec Inès."
-    },
-    {
-      "level": "a1",
-      "sentence": "La sœur suit le chemin avec Martin."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le garçon lit le cinq avec Inès."
-    },
+  "type12Stories": [
     {
       "level": "a2",
-      "sentence": "Ce matin, la voisine aime le matin dans le jardin."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le voisin photographie le moulin avec Inès."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, la cuisinière va chez le médecin dans le jardin."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Martin sent le pain avec soin."
+      "sentences": [
+        "Le matin, Léa marche dans le jardin.",
+        "Elle tient un pain dans sa main.",
+        "Un voisin dit bonjour depuis le chemin.",
+        "Léa pose le pain sur le banc du jardin.",
+        "Elle dessine un dessin près du sapin.",
+        "Le matin devient plus clair.",
+        "Léa range le dessin dans son sac.",
+        "Elle repart sur le chemin.",
+        "Le jardin reste calme tout le matin."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la grand-mère range le timbre, et Inès sourit enfin bien."
+      "sentences": [
+        "Inès prend le train vers la mer.",
+        "Dans le train, elle lit un magazine.",
+        "À l’arrivée, elle voit un dauphin.",
+        "Le dauphin saute près du bateau.",
+        "Inès dessine le dauphin dans son carnet.",
+        "Sa main tremble un peu d’émotion.",
+        "Elle montre le dessin à un voisin de voyage.",
+        "Le train repart plus tard dans la journée.",
+        "Inès garde le dessin du dauphin."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Omar entre dans le magasin du village.",
+        "Il achète du pain encore chaud.",
+        "Puis il prend une grappe de raisin.",
+        "Sa main tient le pain et le raisin.",
+        "Le vendeur lui dit cinq euros.",
+        "Omar paie et quitte le magasin.",
+        "Sur le chemin, il mange un raisin.",
+        "À la maison, il partage le pain.",
+        "Le magasin ferme un peu plus tard."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la maman préfère le train, et Inès sourit enfin bien."
+      "sentences": [
+        "Un peintre travaille dans le jardin.",
+        "Il prépare sa peinture près du sapin.",
+        "Sa main tient le pinceau avec soin.",
+        "Il fait un dessin rapide d’abord.",
+        "Puis il ajoute de la peinture bleue.",
+        "Un voisin regarde le peintre travailler.",
+        "Le peintre explique son dessin.",
+        "Le matin avance dans le jardin.",
+        "Avant midi, la peinture est presque finie."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Maya suit le chemin vers le moulin.",
+        "Près du chemin, elle voit un sapin.",
+        "Le moulin tourne lentement ce matin.",
+        "Maya tient du pain dans sa main.",
+        "Elle s’assoit près du moulin.",
+        "Un voisin passe sur le chemin.",
+        "Maya lui montre le sapin.",
+        "Ils mangent un peu de pain.",
+        "Maya reprend le chemin vers la maison."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le garçon apporte le vin, et Inès sourit enfin bien."
+      "sentences": [
+        "Le matin, Adam voit le médecin.",
+        "Il a mal à la main.",
+        "Le médecin examine sa main avec soin.",
+        "Adam retire sa ceinture pour s’asseoir.",
+        "Le médecin parle d’un bain tiède.",
+        "Adam écoute et pose cinq questions.",
+        "Sur le chemin du retour, sa main va mieux.",
+        "Il range sa ceinture dans le sac.",
+        "Le soir, il prépare encore un bain."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Au zoo, Nora voit un singe.",
+        "Le singe mange une banane dans sa main.",
+        "Nora fait un dessin du singe.",
+        "Sa main suit le crayon rapidement.",
+        "Un voisin regarde le dessin.",
+        "Nora montre le singe du doigt.",
+        "Le matin se termine près du jardin du zoo.",
+        "Nora range le dessin dans son sac.",
+        "Elle repart sur le chemin."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la cuisinière salue le voisin, parce que Martin sourit aussi."
+      "sentences": [
+        "Karim achète un timbre au magasin.",
+        "Il prépare une lettre pour un ami.",
+        "Sa main colle le timbre soigneusement.",
+        "Puis il prend le train vers la ville.",
+        "Dans le train, il relit la lettre.",
+        "Un voisin lui parle du chemin.",
+        "Karim montre le timbre coloré.",
+        "À l’arrivée, il poste la lettre.",
+        "Le train repart sans lui."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Dans le train, le frein fait un bruit.",
+        "Léa tient la barre de sa main.",
+        "Le train s’arrête près du jardin.",
+        "Léa descend avec du pain dans le sac.",
+        "Elle suit le chemin vers la maison.",
+        "Un voisin l’attend près du sapin.",
+        "Léa lui donne un peu de pain.",
+        "Sa main est un peu froide.",
+        "Le matin se termine près du train."
+      ]
+    },
+    {
+      "level": "b1",
+      "sentences": [
+        "Au marché, Sofia choisit du raisin.",
+        "Sa main est pleine de raisins.",
+        "Un voisin lui propose aussi du vin.",
+        "Sofia refuse le vin poliment.",
+        "Elle garde le raisin pour le dessert.",
+        "Sur le chemin, son panier est plein.",
+        "Elle croise un peintre près du jardin.",
+        "Le peintre dessine le raisin rapidement.",
+        "Sofia rentre le matin avec son panier plein."
+      ]
     }
   ],
-  "type14": [
-    {
-      "level": "a1",
-      "sentence": "Le copain soigne le dauphin."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le collègue signe le dessin avec Martin."
-    },
-    {
-      "level": "a1",
-      "sentence": "La fille prend le frein enfin."
-    },
-    {
-      "level": "a1",
-      "sentence": "Christine joue dans le jardin."
-    },
-    {
-      "level": "a1",
-      "sentence": "Quentin entre dans le magasin."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le cuisinier lève la main."
-    },
+  "type14Stories": [
     {
       "level": "a2",
-      "sentence": "Ce matin, la musicienne salue le peintre avec Inès."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Christine joue avec la peinture dans le jardin."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la cousine oublie le plein dans le jardin."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le cousin partage le raisin avec Inès."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le médecin plante le sapin avec Inès."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Christine soigne le singe enfin."
+      "sentences": [
+        "Le matin, Léa marche dans le jardin.",
+        "Elle tient un pain dans sa main.",
+        "Un voisin dit bonjour depuis le chemin.",
+        "Léa pose le pain sur le banc du jardin.",
+        "Elle dessine un dessin près du sapin.",
+        "Sa main suit le crayon avec soin.",
+        "Le matin devient plus clair.",
+        "Léa range le dessin dans son sac.",
+        "Elle mange un peu de pain.",
+        "Le voisin passe encore sur le chemin.",
+        "Léa lui montre le sapin du jardin.",
+        "Ils parlent du train du matin.",
+        "Léa reprend le chemin vers la maison.",
+        "Dans le jardin, un oiseau chante.",
+        "Léa lave sa main avant d’entrer.",
+        "Elle place le pain sur la table.",
+        "Le dessin reste près de la fenêtre.",
+        "Le matin se termine dans le jardin.",
+        "Léa sourit près du sapin."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la maîtresse s’habille après le bain, et Inès sourit enfin bien."
+      "sentences": [
+        "Inès prend le train vers la mer.",
+        "Dans le train, elle lit un magazine.",
+        "Sa main tient le billet fermement.",
+        "À l’arrivée, elle voit un dauphin.",
+        "Le dauphin saute près du bateau.",
+        "Inès dessine le dauphin dans son carnet.",
+        "Elle montre le dessin à un voisin de voyage.",
+        "Le voisin admire le dauphin dessiné.",
+        "Inès marche ensuite sur le chemin du port.",
+        "Elle achète du pain dans un magasin.",
+        "Sa main porte le pain et le carnet.",
+        "Elle s’assoit près de l’eau.",
+        "Le dauphin apparaît encore une fois.",
+        "Inès ajoute un détail au dessin.",
+        "Le train du retour part à cinq heures.",
+        "Inès range le dessin dans son sac.",
+        "Sur le chemin, elle mange un peu de pain.",
+        "Le voisin lui dit au revoir.",
+        "Inès garde le souvenir du dauphin."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Omar entre dans le magasin du village.",
+        "Il achète du pain encore chaud.",
+        "Puis il prend une grappe de raisin.",
+        "Sa main tient le pain et le raisin.",
+        "Le vendeur lui dit cinq euros.",
+        "Omar paie et quitte le magasin.",
+        "Sur le chemin, il mange un raisin.",
+        "Il croise un voisin près du jardin.",
+        "Le voisin regarde le pain frais.",
+        "Omar partage un peu de raisin.",
+        "Ils marchent ensemble sur le chemin.",
+        "Près du sapin, ils s’arrêtent.",
+        "Omar pose le pain un moment.",
+        "Sa main est un peu collante.",
+        "Il lave sa main à la fontaine.",
+        "Puis il reprend le chemin.",
+        "À la maison, il coupe le pain.",
+        "Il mange encore un raisin.",
+        "Le magasin ferme un peu plus tard."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la sœur achète la ceinture, et Inès sourit enfin bien."
+      "sentences": [
+        "Un peintre travaille dans le jardin.",
+        "Il prépare sa peinture près du sapin.",
+        "Sa main tient le pinceau avec soin.",
+        "Il fait un dessin rapide d’abord.",
+        "Puis il ajoute de la peinture bleue.",
+        "Un voisin regarde le peintre travailler.",
+        "Le peintre explique son dessin.",
+        "Le matin avance dans le jardin.",
+        "Le peintre boit un verre d’eau.",
+        "Sa main tremble un peu de froid.",
+        "Il remet sa ceinture et son manteau.",
+        "Le voisin apporte du pain pour la pause.",
+        "Ils mangent le pain près du sapin.",
+        "Le peintre reprend la peinture.",
+        "Le dessin devient plus précis.",
+        "Avant midi, la peinture est presque finie.",
+        "Le peintre range ses pinceaux.",
+        "Il quitte le jardin par le chemin.",
+        "Le voisin garde un souvenir du dessin."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Maya suit le chemin vers le moulin.",
+        "Près du chemin, elle voit un sapin.",
+        "Le moulin tourne lentement ce matin.",
+        "Maya tient du pain dans sa main.",
+        "Elle s’assoit près du moulin.",
+        "Un voisin passe sur le chemin.",
+        "Maya lui montre le sapin.",
+        "Ils mangent un peu de pain.",
+        "Maya fait un dessin du moulin.",
+        "Sa main suit les ailes du moulin.",
+        "Le voisin admire le dessin.",
+        "Maya range le dessin dans son sac.",
+        "Elle lave sa main à l’eau froide.",
+        "Puis elle reprend le chemin.",
+        "Près du jardin, elle croise un ami.",
+        "Ils parlent du train du matin.",
+        "Maya donne encore un peu de pain.",
+        "Le moulin tourne toujours derrière eux.",
+        "Maya rentre à la maison le matin."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la jardinière explique le chemin, parce que Martin sourit aussi."
+      "sentences": [
+        "Le matin, Adam voit le médecin.",
+        "Il a mal à la main.",
+        "Le médecin examine sa main avec soin.",
+        "Adam retire sa ceinture pour s’asseoir.",
+        "Le médecin parle d’un bain tiède.",
+        "Adam écoute et pose cinq questions.",
+        "Sur le chemin du retour, sa main va mieux.",
+        "Il range sa ceinture dans le sac.",
+        "Au magasin, il achète du pain.",
+        "Sa main porte le pain sans douleur.",
+        "Un voisin lui demande des nouvelles.",
+        "Adam parle du médecin calmement.",
+        "Il suit le chemin vers le jardin.",
+        "Dans le jardin, il s’assoit un moment.",
+        "Le soir, il prépare encore un bain.",
+        "L’eau du bain est tiède.",
+        "Adam repose sa main sur le bord.",
+        "Il pense au train du lendemain.",
+        "Sa main guérit peu à peu."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Au zoo, Nora voit un singe.",
+        "Le singe mange une banane dans sa main.",
+        "Nora fait un dessin du singe.",
+        "Sa main suit le crayon rapidement.",
+        "Un voisin regarde le dessin.",
+        "Nora montre le singe du doigt.",
+        "Le matin se termine près du jardin du zoo.",
+        "Nora range le dessin dans son sac.",
+        "Elle mange un peu de pain.",
+        "Sur le chemin, elle voit un sapin.",
+        "Le singe n’est plus visible.",
+        "Nora continue sur le chemin.",
+        "Elle croise un ami près du magasin.",
+        "Ils parlent du singe et du dessin.",
+        "Nora lave sa main avant d’entrer.",
+        "Elle achète encore du pain.",
+        "Sa main tient le pain chaud.",
+        "Elle reprend le chemin de la maison.",
+        "Le dessin du singe reste dans le sac."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le jardinier écrit le cinq, et Inès sourit enfin bien."
+      "sentences": [
+        "Karim achète un timbre au magasin.",
+        "Il prépare une lettre pour un ami.",
+        "Sa main colle le timbre soigneusement.",
+        "Puis il prend le train vers la ville.",
+        "Dans le train, il relit la lettre.",
+        "Un voisin lui parle du chemin.",
+        "Karim montre le timbre coloré.",
+        "À l’arrivée, il poste la lettre.",
+        "Le train repart sans lui.",
+        "Karim marche dans un jardin public.",
+        "Il mange du pain sur un banc.",
+        "Sa main est un peu froide.",
+        "Il voit un peintre près du sapin.",
+        "Le peintre fait un dessin du jardin.",
+        "Karim regarde la peinture un moment.",
+        "Sur le chemin du retour, il prend le train.",
+        "Dans le train, il pense au timbre.",
+        "Sa main tient encore le reçu.",
+        "Le soir, il imagine la lettre arrivée."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Dans le train, le frein fait un bruit.",
+        "Léa tient la barre de sa main.",
+        "Le train s’arrête près du jardin.",
+        "Léa descend avec du pain dans le sac.",
+        "Elle suit le chemin vers la maison.",
+        "Un voisin l’attend près du sapin.",
+        "Léa lui donne un peu de pain.",
+        "Sa main est un peu froide.",
+        "Ils s’assoient un moment dans le jardin.",
+        "Léa sort un dessin de son sac.",
+        "Le voisin regarde le dessin.",
+        "Léa parle du train et du frein.",
+        "Le matin avance doucement.",
+        "Léa range le dessin.",
+        "Elle lave sa main à la fontaine.",
+        "Puis elle reprend le chemin.",
+        "Près du magasin, elle achète du raisin.",
+        "Sa main tient le raisin et le pain.",
+        "Léa rentre avant la fin du matin."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Martin voit le dauphin enfin, parce que Martin sourit aussi."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le directeur finit le dessin, et Inès sourit enfin bien."
+      "sentences": [
+        "Au marché, Sofia choisit du raisin.",
+        "Sa main est pleine de raisins.",
+        "Un voisin lui propose aussi du vin.",
+        "Sofia refuse le vin poliment.",
+        "Elle garde le raisin pour le dessert.",
+        "Sur le chemin, son panier est plein.",
+        "Elle croise un peintre près du jardin.",
+        "Le peintre dessine le raisin rapidement.",
+        "Sofia regarde la peinture avec intérêt.",
+        "Sa main tient encore le panier plein.",
+        "Le peintre lui montre un autre dessin.",
+        "Sofia parle du train du matin.",
+        "Elle achète ensuite du pain au magasin.",
+        "Le panier est vraiment plein.",
+        "Sur le chemin, elle mange un raisin.",
+        "Un voisin l’aide à porter le panier.",
+        "Ils passent près d’un sapin.",
+        "Sofia rentre le matin avec son panier plein.",
+        "Le raisin et le pain sont prêts pour le repas."
+      ]
     }
   ]
 }

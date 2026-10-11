@@ -2403,128 +2403,388 @@
       ]
     }
   ],
-  "type12": [
-    {
-      "level": "a1",
-      "sentence": "La cousine longe le banc bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La copine prépare le cent bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La jardinière range la chambre."
-    },
-    {
-      "level": "a1",
-      "sentence": "La fille voit le champ bien."
-    },
+  "type12Stories": [
     {
       "level": "a2",
-      "sentence": "Ce matin, le boulanger allume la lampe dans le jardin."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le jardinier téléphone à la maman dans le jardin."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Anne porte le manteau avec Henri."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le papa repasse le pantalon pendant longtemps."
+      "sentences": [
+        "Le dimanche, maman prépare le petit déjeuner.",
+        "L’enfant s’assoit près de la lampe.",
+        "Maman met des gants pour sortir le pain.",
+        "Ils parlent du temps qu’il fait.",
+        "L’enfant enfile son pantalon rapidement.",
+        "Maman prend son manteau près de la porte.",
+        "Ils partent se promener dans le champ.",
+        "L’enfant court avec une plante à la main.",
+        "Le dimanche se termine près de maman."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la copine écrit le trente, et Jean est très content."
+      "sentences": [
+        "Dans sa chambre, Amira allume la lampe.",
+        "Elle range son pantalon dans l’armoire.",
+        "Un parent frappe doucement à la porte.",
+        "Amira parle du temps de révision.",
+        "Elle place une plante près de la fenêtre.",
+        "La lampe éclaire bien toute la chambre.",
+        "Amira met des gants pour sortir les poubelles.",
+        "Son parent l’aide dans le couloir.",
+        "Avant de dormir, elle éteint la lampe."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Omar marche dans un grand champ.",
+        "Le vent souffle fort sur le champ.",
+        "Omar tient son manteau contre le vent.",
+        "Il voit une plante penchée par le vent.",
+        "Un enfant court loin dans le champ.",
+        "Omar met un gant tombé dans sa poche.",
+        "Ils regardent le temps changer vite.",
+        "Le vent calme un peu le champ.",
+        "Omar rentre avec l’enfant vers la maison."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Henri attend le vendredi avec Jean, et Jean est très content."
+      "sentences": [
+        "Vendredi soir, les parents vont au restaurant.",
+        "L’enfant choisit une place près de la lampe.",
+        "Un parent commande pour toute la famille.",
+        "Ils parlent du temps de la semaine.",
+        "L’enfant montre une plante sur la table.",
+        "La tante arrive au restaurant en retard.",
+        "Elle pose son manteau sur la chaise.",
+        "Tout le monde mange calmement au restaurant.",
+        "Avant de partir, les parents paient l’addition."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "En janvier, Nora met son manteau chaud.",
+        "Elle enfile un gant sur chaque main.",
+        "Nora a mal à la jambe en marchant.",
+        "Maman l’aide à marcher lentement.",
+        "Elles s’assoient sur un banc du parc.",
+        "Nora repose sa jambe un moment.",
+        "Maman range le gant tombé par terre.",
+        "Le vent froid traverse encore le parc.",
+        "Elles rentrent avec le manteau bien fermé."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la fille regarde le vent, et Jean est très content."
+      "sentences": [
+        "L’étudiant révise dans sa petite chambre.",
+        "Il allume la lampe près du bureau.",
+        "Un parent apporte une plante pour décorer.",
+        "L’étudiant parle du temps des examens.",
+        "Il range son pantalon avant de sortir.",
+        "Vendredi, il rencontre sa tante au café.",
+        "La tante lui offre des gants neufs.",
+        "L’étudiant remercie sa tante chaleureusement.",
+        "Le soir, il éteint la lampe de la chambre."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "L’enfant a mal à une dent.",
+        "Maman regarde la dent avec une lampe.",
+        "Il n’y a presque pas de sang.",
+        "Maman rassure l’enfant calmement.",
+        "Ils partent voir le médecin le vendredi.",
+        "L’enfant met son manteau avant de sortir.",
+        "Maman prend des gants dans le sac.",
+        "Dans la salle d’attente, le temps passe.",
+        "Après la visite, l’enfant sourit à maman."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le bébé prépare un étudiant, et Jean est très content."
+      "sentences": [
+        "Karim et sa tante plantent dans le champ.",
+        "Karim prépare la terre avec soin.",
+        "Sa tante apporte une plante après l’autre.",
+        "Le vent secoue un peu les feuilles.",
+        "Karim met des gants pour travailler.",
+        "Ils parlent du temps idéal pour planter.",
+        "Une plante penche vers le bord du champ.",
+        "La tante redresse la plante délicatement.",
+        "Avant le soir, ils quittent le champ."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Léa compte jusqu’à cent dans la cour.",
+        "Son ami compte jusqu’à trente.",
+        "Ils s’assoient sur un banc pour reposer.",
+        "Léa a froid à la jambe.",
+        "Elle met un gant tombé près du banc.",
+        "Le vent souffle sur le banc vide.",
+        "Léa enfile son manteau rapidement.",
+        "Ils repartent après trente minutes.",
+        "Léa sourit encore près du banc."
+      ]
+    },
+    {
+      "level": "b1",
+      "sentences": [
+        "Le dimanche, toute la famille se retrouve.",
+        "Maman invite la tante au restaurant.",
+        "L’enfant porte un pantalon neuf.",
+        "Un parent range les gants dans le sac.",
+        "Au restaurant, la lampe éclaire la table.",
+        "Ils parlent du temps et des vacances.",
+        "L’enfant raconte une histoire du champ.",
+        "La tante rit et pose son manteau.",
+        "Le dimanche se termine au restaurant."
+      ]
     }
   ],
-  "type14": [
-    {
-      "level": "a1",
-      "sentence": "Le cousin lave la dent bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le copain aime le dimanche bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "Jean suit un enfant bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La cousine perd le gant bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "François lave la jambe bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "Henri parle avec le janvier."
-    },
+  "type14Stories": [
     {
       "level": "a2",
-      "sentence": "Ce soir, la professeure invite le parent pendant longtemps."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, François arrose la plante pendant longtemps."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le maître dîne dans le restaurant avec Henri."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la maman regarde le sang avec Jean."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, un ami aide la tante avec Henri."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, la cousine attend le temps dans le jardin."
+      "sentences": [
+        "Le dimanche matin, maman ouvre les volets.",
+        "L’enfant s’habille dans sa chambre.",
+        "Il enfile son pantalon et ses chaussettes.",
+        "Maman allume la lampe du couloir.",
+        "Elle prend son manteau près de la porte.",
+        "L’enfant met un gant sur chaque main.",
+        "Ils partent se promener dans le champ.",
+        "Le vent souffle doucement sur le champ.",
+        "L’enfant court près d’une grande plante.",
+        "Maman s’assoit un moment sur un banc.",
+        "L’enfant repose sa jambe fatiguée.",
+        "Ils regardent le temps devenir plus clair.",
+        "Maman range un gant tombé par terre.",
+        "Puis ils rentrent vers la maison.",
+        "Dans la chambre, l’enfant range son manteau.",
+        "Maman éteint la lampe du salon.",
+        "Le dimanche se termine calmement.",
+        "L’enfant embrasse maman avant de dormir.",
+        "La chambre reste silencieuse toute la nuit."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Anne cherche le banc dans le jardin, et Jean est très content."
+      "sentences": [
+        "Amira révise dans sa chambre le vendredi.",
+        "Elle allume la lampe près du bureau.",
+        "Un parent entre et pose une plante.",
+        "Amira parle du temps des examens.",
+        "Elle range son pantalon dans l’armoire.",
+        "Sa tante arrive avec un manteau neuf.",
+        "Amira essaie le manteau devant le miroir.",
+        "La tante lui offre aussi des gants.",
+        "Amira remercie sa tante avec un sourire.",
+        "Elles parlent du restaurant du dimanche.",
+        "Amira éteint un instant la lampe.",
+        "Le vent frappe à la fenêtre de la chambre.",
+        "Un parent ferme le rideau contre le vent.",
+        "Amira repose sa jambe sur le fauteuil.",
+        "La tante range les gants dans le sac.",
+        "Avant de partir, elles vérifient le temps.",
+        "Amira allume encore la lampe pour lire.",
+        "Sa tante lui souhaite une bonne soirée.",
+        "Amira s’endort dans sa chambre calme."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Omar marche longtemps dans le champ.",
+        "Le vent soulève la poussière du champ.",
+        "Omar serre son manteau contre le vent.",
+        "Il voit une plante penchée par le vent.",
+        "Un enfant court loin dans le champ.",
+        "Omar ramasse un gant tombé par terre.",
+        "Ils s’assoient ensemble sur un banc.",
+        "L’enfant a mal à la jambe.",
+        "Omar regarde le temps changer vite.",
+        "Le vent calme un peu le champ.",
+        "Omar donne le gant à l’enfant.",
+        "Ils repartent vers la maison lentement.",
+        "Devant la porte, maman les attend.",
+        "Elle allume la lampe du couloir.",
+        "L’enfant range son manteau dans la chambre.",
+        "Omar pose la plante sur la table.",
+        "Maman prépare une soupe pour le soir.",
+        "Le vent souffle encore derrière la fenêtre.",
+        "La famille se repose après le champ."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le papa lit le cent, et Jean est très content."
+      "sentences": [
+        "Vendredi soir, les parents réservent un restaurant.",
+        "L’enfant met un pantalon propre.",
+        "Maman prend son manteau et ses gants.",
+        "Un parent vérifie le temps dehors.",
+        "Au restaurant, la lampe éclaire la table.",
+        "La tante arrive un peu en retard.",
+        "Elle pose son manteau sur la chaise.",
+        "Ils parlent du champ derrière la maison.",
+        "L’enfant raconte une histoire de plante.",
+        "Un parent commande pour toute la famille.",
+        "La tante rit et boit de l’eau.",
+        "L’enfant a froid à la jambe.",
+        "Maman lui donne un gant supplémentaire.",
+        "Le temps passe agréablement au restaurant.",
+        "Avant de partir, les parents paient.",
+        "Dehors, le vent est plus fort.",
+        "Ils rentrent vite vers la chambre chaude.",
+        "L’enfant éteint la lampe avant de dormir.",
+        "Le vendredi se termine au calme."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "En janvier, Nora met son manteau épais.",
+        "Elle enfile un gant sur chaque main.",
+        "Nora a mal à la jambe en marchant.",
+        "Maman l’aide à marcher jusqu’au banc.",
+        "Elles s’assoient sur le banc du parc.",
+        "Le vent froid traverse encore le parc.",
+        "Nora repose sa jambe un long moment.",
+        "Maman range le gant tombé par terre.",
+        "Elles regardent le temps devenir gris.",
+        "Une plante tremble près du banc.",
+        "Nora touche la plante avec son gant.",
+        "Maman propose de rentrer à la maison.",
+        "Nora enfile encore son manteau.",
+        "Dans la chambre, maman allume la lampe.",
+        "Nora pose sa jambe sur le lit.",
+        "Maman lui apporte une boisson chaude.",
+        "Le vent tape à la fenêtre.",
+        "Nora sourit près de la lampe.",
+        "La soirée de janvier se termine bien."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la directrice retourne dans la chambre, et Jean est très content."
+      "sentences": [
+        "L’étudiant travaille tard dans sa chambre.",
+        "Il allume la lampe près des livres.",
+        "Un parent apporte une plante verte.",
+        "L’étudiant parle du temps des examens.",
+        "Il range son pantalon avant de sortir.",
+        "Vendredi, il retrouve sa tante au café.",
+        "La tante lui offre des gants neufs.",
+        "L’étudiant remercie sa tante chaleureusement.",
+        "Ils discutent d’un restaurant du quartier.",
+        "Le vent pousse les feuilles dans la rue.",
+        "L’étudiant serre son manteau contre le vent.",
+        "Sa tante marche lentement à cause d’une jambe.",
+        "Ils s’assoient un moment sur un banc.",
+        "L’étudiant allume la lampe de son téléphone.",
+        "La tante parle d’un champ près de chez elle.",
+        "Avant de se séparer, ils vérifient le temps.",
+        "L’étudiant rentre dans sa chambre.",
+        "Il éteint la lampe et s’endort.",
+        "La nuit reste calme pour l’étudiant."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "L’enfant a mal à une dent.",
+        "Maman regarde la dent avec une lampe.",
+        "Il n’y a presque pas de sang.",
+        "Maman rassure l’enfant avec douceur.",
+        "Ils partent chez le médecin le vendredi.",
+        "L’enfant met son manteau avant de sortir.",
+        "Maman prend des gants dans le sac.",
+        "Dans la salle d’attente, le temps passe.",
+        "L’enfant repose sa jambe sur la chaise.",
+        "Le médecin examine encore la dent.",
+        "Il n’y a plus de sang du tout.",
+        "Maman remercie le médecin poliment.",
+        "Dehors, le vent est un peu froid.",
+        "Ils rentrent vite vers la chambre.",
+        "Maman allume la lampe du salon.",
+        "L’enfant enlève son manteau.",
+        "Il pose ses gants près de la porte.",
+        "Maman lui lit une histoire.",
+        "L’enfant s’endort sans mal à la dent."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la copine plante le champ, parce que Henri est content aussi."
+      "sentences": [
+        "Karim et sa tante travaillent dans le champ.",
+        "Karim prépare la terre avec soin.",
+        "Sa tante apporte une plante après l’autre.",
+        "Le vent secoue les feuilles du champ.",
+        "Karim met des gants pour planter.",
+        "Ils parlent du temps idéal pour planter.",
+        "Une plante penche vers le bord du champ.",
+        "La tante redresse la plante délicatement.",
+        "Karim repose sa jambe sur un banc.",
+        "Sa tante s’assoit aussi sur le banc.",
+        "Ils regardent le temps devenir plus doux.",
+        "Karim range ses gants dans le sac.",
+        "La tante parle d’un restaurant pour le soir.",
+        "Karim pense à maman qui les attend.",
+        "Ils quittent le champ avant la nuit.",
+        "Devant la maison, maman allume la lampe.",
+        "Karim pose la plante dans la chambre.",
+        "Sa tante enlève son manteau.",
+        "Le champ reste calme derrière eux."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Léa compte jusqu’à cent dans la cour.",
+        "Son ami compte jusqu’à trente.",
+        "Ils s’assoient sur un banc pour reposer.",
+        "Léa a froid à la jambe.",
+        "Elle met un gant tombé près du banc.",
+        "Le vent souffle sur le banc vide.",
+        "Léa enfile son manteau rapidement.",
+        "Ils repartent après trente minutes.",
+        "Sur le chemin, ils voient un champ.",
+        "Une plante bouge sous le vent.",
+        "Léa touche la plante avec son gant.",
+        "Son ami parle du temps de dimanche.",
+        "Ils rentrent vers la chambre de Léa.",
+        "Maman allume la lampe du couloir.",
+        "Léa range son manteau et ses gants.",
+        "Elle repose sa jambe sur le lit.",
+        "Son ami compte encore jusqu’à trente.",
+        "Léa sourit près de la lampe.",
+        "La soirée se termine près du banc."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la boulangère lave la dent, parce que Henri est content aussi."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le facteur choisit le dimanche, et Jean est très content."
+      "sentences": [
+        "Le dimanche, toute la famille se retrouve.",
+        "Maman invite la tante au restaurant.",
+        "L’enfant porte un pantalon neuf.",
+        "Un parent range les gants dans le sac.",
+        "Au restaurant, la lampe éclaire la table.",
+        "Ils parlent du temps et des vacances.",
+        "L’enfant raconte une histoire du champ.",
+        "La tante rit et pose son manteau.",
+        "Un parent commande pour toute la famille.",
+        "Ils restent longtemps à table ce dimanche.",
+        "L’enfant a froid à la jambe.",
+        "Maman lui donne un gant supplémentaire.",
+        "Le vent frappe la vitre du restaurant.",
+        "Ils finissent le repas sans se presser.",
+        "Avant de partir, les parents paient.",
+        "Dehors, le vent est plus doux.",
+        "Ils rentrent dans la chambre chaude.",
+        "Maman éteint la lampe du salon.",
+        "Le dimanche se termine au restaurant."
+      ]
     }
   ]
 }

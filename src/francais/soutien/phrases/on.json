@@ -2709,128 +2709,388 @@
       ]
     }
   ],
-  "type12": [
-    {
-      "level": "a1",
-      "sentence": "La tante emprunte un avion avec Simon."
-    },
-    {
-      "level": "a1",
-      "sentence": "La boulangère visite le balcon avec Simon."
-    },
-    {
-      "level": "a1",
-      "sentence": "Manon rapporte le ballon bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La directrice apporte le bonbon."
-    },
+  "type12Stories": [
     {
       "level": "a2",
-      "sentence": "Après le cours, Simon achète la confiture avec Manon."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le garçon photographie le flocon avec Simon."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le jardinier soigne le front selon mon oncle."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le cousin invite le garçon selon mon oncle."
+      "sentences": [
+        "Noah joue au ballon dans la cour.",
+        "Omar lance le ballon très haut.",
+        "Noah attrape le ballon avec les mains.",
+        "Après le jeu, ils mangent un bonbon.",
+        "Omar range le ballon près du banc.",
+        "Un garçon demande encore le ballon.",
+        "Noah partage un bonbon avec le garçon.",
+        "Ils chantent une chanson en riant.",
+        "Le ballon reste prêt pour demain."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand la boulangère regarde une ombre dans le salon, et Simon est très content."
+      "sentences": [
+        "Un camion s’arrête devant le pont.",
+        "Karim regarde le camion charger des caisses.",
+        "Le chauffeur salue avec un bonjour.",
+        "Karim répond bonjour poliment.",
+        "Le camion traverse ensuite le pont.",
+        "Sur le pont, une ombre passe vite.",
+        "Karim note le numéro du camion.",
+        "Il raconte la scène à son oncle.",
+        "L’oncle sourit près du pont."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Maya coupe un citron dans la cuisine.",
+        "Elle prépare une compote de pommes.",
+        "Noah ouvre un pot de confiture.",
+        "Maya ajoute un peu de citron.",
+        "La confiture sent très bon.",
+        "Noah goûte la compote chaude.",
+        "Ils rangent le citron dans le frigo.",
+        "Maya ferme le pot de confiture.",
+        "La cuisine sent la compote et le citron."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Manon salue un oncle avec Simon, et Simon est très content."
+      "sentences": [
+        "Depuis le balcon, Inès voit un avion.",
+        "L’avion passe au-dessus de la montagne.",
+        "Inès montre l’avion à son oncle.",
+        "L’oncle parle du monde des voyages.",
+        "Ils restent sur le balcon un moment.",
+        "Un second avion apparaît près de la montagne.",
+        "Inès photographie l’avion rapidement.",
+        "Son oncle range la montre dans sa poche.",
+        "Ils quittent le balcon avant la nuit."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Sofia chante une chanson dans le salon.",
+        "Elle cherche un bouton sur la radio.",
+        "Le bouton est difficile à tourner.",
+        "Sofia trouve enfin le bon bouton.",
+        "La chanson remplit tout le salon.",
+        "Un garçon écoute la chanson près de la porte.",
+        "Sofia lui dit bonjour avec un sourire.",
+        "Ils chantent encore la chanson ensemble.",
+        "Sofia range la radio dans le salon."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand la voisine recopie le onze dans le salon, et Simon est très content."
+      "sentences": [
+        "Sur la montagne, Adam voit un mouton.",
+        "Un flocon tombe près du mouton.",
+        "Adam marche vers le mouton lentement.",
+        "L’ombre du mouton grandit sur la neige.",
+        "Adam dit bonjour à un berger.",
+        "Le berger montre encore un mouton.",
+        "Un flocon se pose sur le front d’Adam.",
+        "Adam regarde la montagne blanche.",
+        "Il rentre ensuite vers la maison."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Léa achète un poisson au marché.",
+        "Omar choisit un melon bien mûr.",
+        "Ils passent devant une pompe à eau.",
+        "Léa lave le melon près de la pompe.",
+        "Omar porte le poisson dans un sac.",
+        "À la maison, Léa ouvre le melon.",
+        "Omar prépare le poisson pour le repas.",
+        "Ils mangent le melon en dessert.",
+        "La pompe du jardin reste ouverte un peu."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand la professeure sert le poisson selon mon oncle, parce que Manon est contente."
+      "sentences": [
+        "Dans la maison, l’oncle lit une lettre.",
+        "Il cherche le prénom sur l’enveloppe.",
+        "Le prénom est écrit en grandes lettres.",
+        "L’oncle dit bonjour en ouvrant la porte.",
+        "Un garçon entre dans la maison.",
+        "Il montre sa montre neuve à l’oncle.",
+        "L’oncle pose la montre sur la table.",
+        "Ils parlent du monde dehors.",
+        "Avant le soir, le garçon quitte la maison."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Emma lave ses mains avec du savon.",
+        "Elle cherche un bouton de la lumière.",
+        "Le bouton est près de la porte.",
+        "Emma appuie sur le bouton.",
+        "Elle range le savon près de l’évier.",
+        "Un garçon dit bonjour depuis le salon.",
+        "Emma répond bonjour et sourit.",
+        "Elle pose encore le savon correctement.",
+        "Le salon reste clair grâce au bouton."
+      ]
+    },
+    {
+      "level": "b1",
+      "sentences": [
+        "Au parc, Karim lance un ballon.",
+        "Un avion passe au-dessus du parc.",
+        "Karim regarde l’avion puis le ballon.",
+        "Un garçon chante une chanson joyeuse.",
+        "Karim reprend la chanson avec lui.",
+        "Le ballon tombe près d’un banc.",
+        "Karim dit bonjour au garçon.",
+        "Ils jouent encore avec le ballon.",
+        "L’avion disparaît derrière les nuages."
+      ]
     }
   ],
-  "type14": [
-    {
-      "level": "a1",
-      "sentence": "La professeure aide le bonjour avec Manon."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le collègue coud le bouton avec Manon."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le copain prend le camion avec Manon."
-    },
-    {
-      "level": "a1",
-      "sentence": "La factrice écoute la chanson avec Simon."
-    },
-    {
-      "level": "a1",
-      "sentence": "La boulangère goûte le citron avec Manon."
-    },
-    {
-      "level": "a1",
-      "sentence": "La cousine apporte la compote avec Simon."
-    },
+  "type14Stories": [
     {
       "level": "a2",
-      "sentence": "Ce soir, le copain plante près de la maison selon mon oncle."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Yvonne choisit le melon selon mon oncle."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, une amie voit le monde selon mon oncle."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le cuisinier skie dans la montagne selon mon oncle."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le garçon porte la montre avec Manon."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Yvonne soigne le mouton dans le salon."
+      "sentences": [
+        "Noah apporte un ballon dans la cour.",
+        "Omar lance le ballon très haut.",
+        "Noah attrape le ballon avec les mains.",
+        "Un garçon demande à jouer aussi.",
+        "Ils se disent bonjour rapidement.",
+        "Après le jeu, Omar offre un bonbon.",
+        "Noah partage le bonbon avec le garçon.",
+        "Ils chantent une chanson en riant.",
+        "Omar range le ballon près du banc.",
+        "Le garçon veut encore un bonbon.",
+        "Noah refuse poliment et sourit.",
+        "Ils rejouent avec le ballon.",
+        "Omar chante encore la chanson.",
+        "Le ballon roule vers la porte.",
+        "Noah ramasse le ballon vite.",
+        "Ils se disent bonjour aux parents.",
+        "Omar range le bonbon dans sa poche.",
+        "La chanson continue dans la cour.",
+        "Le ballon reste prêt pour demain."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand le boulanger utilise la pompe avec Manon, parce que Manon est contente."
+      "sentences": [
+        "Un camion s’arrête devant le pont.",
+        "Karim regarde le camion charger des caisses.",
+        "Le chauffeur salue avec un bonjour.",
+        "Karim répond bonjour poliment.",
+        "Le camion traverse ensuite le pont.",
+        "Sur le pont, une ombre passe vite.",
+        "Karim note le numéro du camion.",
+        "Il raconte la scène à son oncle.",
+        "L’oncle regarde aussi le pont.",
+        "Un second camion arrive au loin.",
+        "Karim montre le camion à son oncle.",
+        "Ils restent près du pont un moment.",
+        "L’oncle regarde sa montre.",
+        "Il est déjà onze heures.",
+        "Karim dit encore bonjour au chauffeur.",
+        "Le camion repart vers la montagne.",
+        "Karim et son oncle quittent le pont.",
+        "Sur le chemin, ils parlent du monde.",
+        "Avant la nuit, ils rentrent à la maison."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Maya coupe un citron dans la cuisine.",
+        "Elle prépare une compote de pommes.",
+        "Noah ouvre un pot de confiture.",
+        "Maya ajoute un peu de citron.",
+        "La confiture sent très bon.",
+        "Noah goûte la compote chaude.",
+        "Ils rangent le citron dans le frigo.",
+        "Maya ferme le pot de confiture.",
+        "Noah dit bonjour à un ami qui arrive.",
+        "L’ami apporte un melon du marché.",
+        "Maya coupe le melon en tranches.",
+        "Ils mangent le melon après la compote.",
+        "Noah range encore la confiture.",
+        "Maya lave le couteau avec du savon.",
+        "La cuisine sent le citron et le melon.",
+        "Ils chantent une petite chanson.",
+        "Noah appuie sur un bouton de la radio.",
+        "La chanson remplit le salon.",
+        "Maya éteint la radio avec le bouton."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand la directrice passe sous le pont selon mon oncle, parce que Manon est contente."
+      "sentences": [
+        "Depuis le balcon, Inès voit un avion.",
+        "L’avion passe au-dessus de la montagne.",
+        "Inès montre l’avion à son oncle.",
+        "L’oncle parle du monde des voyages.",
+        "Ils restent sur le balcon un moment.",
+        "Un second avion apparaît près de la montagne.",
+        "Inès photographie l’avion rapidement.",
+        "Son oncle regarde sa montre.",
+        "Il est presque onze heures.",
+        "Une ombre traverse le balcon.",
+        "Inès dit bonjour à un voisin.",
+        "Le voisin regarde aussi l’avion.",
+        "L’oncle raconte une histoire de montagne.",
+        "Inès écoute depuis le balcon.",
+        "L’avion disparaît derrière la montagne.",
+        "Ils quittent le balcon avant la nuit.",
+        "Dans la maison, Inès range son appareil.",
+        "L’oncle pose sa montre sur la table.",
+        "La soirée se termine sur le balcon."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Sofia chante une chanson dans le salon.",
+        "Elle cherche un bouton sur la radio.",
+        "Le bouton est difficile à tourner.",
+        "Sofia trouve enfin le bon bouton.",
+        "La chanson remplit tout le salon.",
+        "Un garçon écoute près de la porte.",
+        "Sofia lui dit bonjour avec un sourire.",
+        "Ils chantent encore la chanson ensemble.",
+        "Le garçon apporte un ballon.",
+        "Sofia pose le ballon dans le salon.",
+        "Ils dansent un peu sur la chanson.",
+        "Sofia appuie encore sur le bouton.",
+        "La radio change de chanson.",
+        "Le garçon rit dans le salon.",
+        "Sofia offre un bonbon à l’ami.",
+        "Ils mangent le bonbon en écoutant.",
+        "Sofia range la radio dans le salon.",
+        "Le ballon reste près du canapé.",
+        "La chanson s’arrête doucement."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand le voisin aide le prénom avec Manon, parce que Manon est contente."
+      "sentences": [
+        "Sur la montagne, Adam voit un mouton.",
+        "Un flocon tombe près du mouton.",
+        "Adam marche vers le mouton lentement.",
+        "L’ombre du mouton grandit sur la neige.",
+        "Adam dit bonjour à un berger.",
+        "Le berger montre encore un mouton.",
+        "Un flocon se pose sur le front d’Adam.",
+        "Adam regarde la montagne blanche.",
+        "Il sort sa montre de sa poche.",
+        "Il est déjà onze heures.",
+        "Le berger parle du monde des sommets.",
+        "Adam écoute près du mouton.",
+        "Un autre flocon tombe sur son manteau.",
+        "Adam photographie la montagne.",
+        "Le mouton s’éloigne dans l’ombre.",
+        "Adam dit encore bonjour au berger.",
+        "Il redescend de la montagne.",
+        "Devant la maison, son oncle l’attend.",
+        "Adam raconte la journée sur la montagne."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Léa achète un poisson au marché.",
+        "Omar choisit un melon bien mûr.",
+        "Ils passent devant une pompe à eau.",
+        "Léa lave le melon près de la pompe.",
+        "Omar porte le poisson dans un sac.",
+        "À la maison, Léa ouvre le melon.",
+        "Omar prépare le poisson pour le repas.",
+        "Ils mangent le melon en dessert.",
+        "Léa lave ses mains avec du savon.",
+        "Omar dit bonjour à son oncle.",
+        "L’oncle entre dans le salon.",
+        "Il pose une montre sur la table.",
+        "Léa chante une petite chanson.",
+        "Omar coupe encore un peu de melon.",
+        "Le poisson cuit doucement.",
+        "L’oncle goûte le melon.",
+        "Léa range le savon près de l’évier.",
+        "Omar ferme la pompe du jardin.",
+        "Le repas sent le poisson et le melon."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Yvonne visite le salon avec Simon, et Simon est très content."
+      "sentences": [
+        "Dans la maison, l’oncle lit une lettre.",
+        "Il cherche le prénom sur l’enveloppe.",
+        "Le prénom est écrit en grandes lettres.",
+        "L’oncle dit bonjour en ouvrant la porte.",
+        "Un garçon entre dans la maison.",
+        "Il montre sa montre neuve à l’oncle.",
+        "L’oncle pose la montre sur la table.",
+        "Ils parlent du monde dehors.",
+        "Le garçon raconte un voyage en avion.",
+        "L’oncle écoute depuis le salon.",
+        "Il est presque onze heures.",
+        "Le garçon boit un jus de citron.",
+        "L’oncle ouvre un pot de confiture.",
+        "Ils mangent un peu de confiture.",
+        "Le garçon chante une chanson douce.",
+        "L’oncle sourit dans la maison.",
+        "Avant le soir, le garçon part.",
+        "L’oncle range la montre dans un tiroir.",
+        "La maison redevient silencieuse."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Emma lave ses mains avec du savon.",
+        "Elle cherche un bouton de la lumière.",
+        "Le bouton est près de la porte.",
+        "Emma appuie sur le bouton.",
+        "Elle range le savon près de l’évier.",
+        "Un garçon dit bonjour depuis le salon.",
+        "Emma répond bonjour et sourit.",
+        "Elle apporte un ballon dans le salon.",
+        "Le garçon lance le ballon doucement.",
+        "Emma chante une chanson amusante.",
+        "Ils mangent un bonbon après le jeu.",
+        "Emma coupe un citron pour le jus.",
+        "Le garçon goûte le jus de citron.",
+        "Emma range encore le savon.",
+        "Elle appuie une dernière fois sur le bouton.",
+        "Le salon s’éclaire bien.",
+        "Le ballon reste près du canapé.",
+        "Emma dit bonjour aux parents qui rentrent.",
+        "La soirée se termine dans le salon."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand la cousine ouvre le savon dans le salon, et Simon est très content."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand le cuisinier attend un avion avec Simon, et Simon est très content."
+      "sentences": [
+        "Au parc, Karim lance un ballon.",
+        "Un avion passe au-dessus du parc.",
+        "Karim regarde l’avion puis le ballon.",
+        "Un garçon chante une chanson joyeuse.",
+        "Karim reprend la chanson avec lui.",
+        "Le ballon tombe près d’un banc.",
+        "Karim dit bonjour au garçon.",
+        "Ils jouent encore avec le ballon.",
+        "L’avion disparaît derrière les nuages.",
+        "Karim offre un bonbon à son ami.",
+        "Ils mangent le bonbon en riant.",
+        "Le garçon regarde sa montre.",
+        "Il est déjà onze heures.",
+        "Karim parle d’un voyage en camion.",
+        "Ils imaginent une montagne lointaine.",
+        "Le ballon rebondit encore une fois.",
+        "Karim range le ballon dans son sac.",
+        "Ils se disent bonjour aux parents.",
+        "La chanson reste dans leurs têtes."
+      ]
     }
   ]
 }

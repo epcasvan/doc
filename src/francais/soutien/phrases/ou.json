@@ -2583,128 +2583,388 @@
       ]
     }
   ],
-  "type12": [
-    {
-      "level": "a1",
-      "sentence": "Le maître console un amour tout autour."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le médecin cherche le bijou avec Lou."
-    },
-    {
-      "level": "a1",
-      "sentence": "La sœur lave la bouche tout autour."
-    },
-    {
-      "level": "a1",
-      "sentence": "La fille allume la bougie avec Louis."
-    },
+  "type12Stories": [
     {
       "level": "a2",
-      "sentence": "Après le cours, Lou visite la douche avec Louis."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le boulanger prépare la fourchette avec Lou."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le jardinier soigne le genou sous le bouleau."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, la boulangère répare le jouet avec Louis."
+      "sentences": [
+        "Léa entre dans une boutique du centre.",
+        "Elle cherche une bouteille d’eau.",
+        "La vendeuse sourit et ouvre la bouche.",
+        "Léa paie la bouteille à la caisse.",
+        "Elle sort de la boutique avec le sac.",
+        "Sur le chemin, elle boit à la bouteille.",
+        "Un ami lui montre un bijou en vitrine.",
+        "Léa regarde encore la boutique.",
+        "Puis elle rentre avec sa bouteille."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le médecin ouvre la poubelle, et Lou est tout content aussi."
+      "sentences": [
+        "Le jour commence sous la douche.",
+        "Amira lave ses cheveux sous la douche.",
+        "Elle éteint l’eau et prend une bougie.",
+        "La bougie éclaire un peu la salle.",
+        "Amira ouvre la bouche pour chanter.",
+        "Elle range la bougie après la douche.",
+        "Ce jour-là, elle se sent reposée.",
+        "Elle met un bijou avant de sortir.",
+        "La douche a bien commencé le jour."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Omar coupe un chou avec un couteau.",
+        "Il prépare une soupe au chou.",
+        "Le couteau est bien aiguisé.",
+        "Omar goûte la soupe chaude.",
+        "Il ouvre la bouche et souffle.",
+        "Maya apporte une bouteille d’eau.",
+        "Ils mangent la soupe ensemble.",
+        "Omar range le couteau dans le tiroir.",
+        "La soupe au chou est délicieuse."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand la tante goûte la poudre sous le bouleau, parce que Louis est tout content."
+      "sentences": [
+        "Près du moulin, Hugo voit un mouton.",
+        "Un loup apparaît loin sur la colline.",
+        "Le mouton s’éloigne vers le moulin.",
+        "Hugo ouvre la bouche de surprise.",
+        "Le loup disparaît derrière les arbres.",
+        "Hugo rassure le mouton près du moulin.",
+        "Il boit à une bouteille d’eau.",
+        "Le jour avance autour du moulin.",
+        "Hugo quitte le mouton avant la nuit."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Nora achète un jouet dans la boutique.",
+        "Elle jette l’emballage dans la poubelle.",
+        "Le jouet tient dans sa main.",
+        "Nora ouvre la bouche et rit.",
+        "Elle sort de la boutique contente.",
+        "Sur le chemin, elle croise une poule.",
+        "Nora range le jouet dans son sac.",
+        "Elle passe encore devant la poubelle.",
+        "Le jouet reste prêt pour le goûter."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand la maîtresse observe la poule tout autour, et Lou est tout content aussi."
+      "sentences": [
+        "Au restaurant, Karim pose sa fourchette.",
+        "Il coupe le pain avec un couteau.",
+        "La soupe arrive sur la table.",
+        "Karim goûte la soupe avec la fourchette.",
+        "Il ouvre la bouche et sourit.",
+        "Une bouteille d’eau est déjà ouverte.",
+        "Karim range le couteau après le plat.",
+        "Il essuie la fourchette calmement.",
+        "La soupe termine bien le repas."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Au zoo, Emma voit un ours.",
+        "Puis elle regarde un loup.",
+        "Emma tient un jouet dans sa main.",
+        "Elle ouvre la bouche d’étonnement.",
+        "L’ours marche près de la vitre.",
+        "Le loup reste dans l’ombre.",
+        "Emma photographie l’ours.",
+        "Elle range le jouet dans son sac.",
+        "Le jour au zoo se termine bien."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand le facteur cherche le rouge avec Lou, et Lou est tout content aussi."
+      "sentences": [
+        "Un couple se promène dans la rue.",
+        "Ils parlent d’amour près d’une boutique.",
+        "Le garçon offre un bijou à sa compagne.",
+        "Elle ouvre la bouche de joie.",
+        "Ils entrent ensuite dans la boutique.",
+        "Elle essaie encore un bijou.",
+        "Le couple sort avec un sourire.",
+        "Ils boivent à une bouteille partagée.",
+        "Ce jour d’amour reste dans leur mémoire."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Théo a mal au genou.",
+        "Maman met de la poudre sur le genou.",
+        "Théo prend ensuite une douche tiède.",
+        "Sous la douche, il fait attention.",
+        "Il ouvre la bouche et chante un peu.",
+        "Après la douche, le genou va mieux.",
+        "Maman range la poudre dans l’armoire.",
+        "Théo met un jouet près du lit.",
+        "Le jour se termine sans douleur."
+      ]
+    },
+    {
+      "level": "b1",
+      "sentences": [
+        "Depuis la tour, Sofia voit la ville.",
+        "Elle porte une écharpe rouge.",
+        "Sofia descend de la tour vers une boutique.",
+        "Dans la boutique, elle cherche un bijou.",
+        "Elle ouvre la bouche pour demander le prix.",
+        "La vendeuse lui montre un bijou rouge.",
+        "Sofia paie et quitte la boutique.",
+        "Elle boit à sa bouteille près de la tour.",
+        "Le jour finit près de la tour rouge."
+      ]
     }
   ],
-  "type14": [
-    {
-      "level": "a1",
-      "sentence": "Le garçon emporte la bouteille tout autour."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le papa longe la boutique tout autour."
-    },
-    {
-      "level": "a1",
-      "sentence": "Un ami coud le bouton."
-    },
-    {
-      "level": "a1",
-      "sentence": "La factrice sert le chou avec Lou."
-    },
-    {
-      "level": "a1",
-      "sentence": "La cousine console le couple."
-    },
-    {
-      "level": "a1",
-      "sentence": "La professeure apporte le couteau avec Lou."
-    },
+  "type14Stories": [
     {
       "level": "a2",
-      "sentence": "Après le cours, la factrice se lève avant le jour avec Louis."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la fille observe le loup tout autour."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Gustave voit le moulin sous le bouleau."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la sœur prépare la mousse avec Louis."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le boulanger nourrit le mouton avec Louis."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la cousine soigne un ours tout autour."
+      "sentences": [
+        "Léa entre dans une boutique du centre.",
+        "Elle cherche une bouteille d’eau.",
+        "La vendeuse sourit et ouvre la bouche.",
+        "Léa paie la bouteille à la caisse.",
+        "Elle sort de la boutique avec le sac.",
+        "Sur le chemin, elle boit à la bouteille.",
+        "Un ami lui montre un bijou en vitrine.",
+        "Léa regarde encore la boutique.",
+        "Elle rentre et pose la bouteille.",
+        "Puis elle prépare une soupe.",
+        "Elle coupe un chou avec un couteau.",
+        "La soupe au chou sent bon.",
+        "Léa goûte la soupe et ouvre la bouche.",
+        "Elle range le couteau dans le tiroir.",
+        "La bouteille reste sur la table.",
+        "Léa jette les épluchures dans la poubelle.",
+        "Elle allume une bougie pour le soir.",
+        "La bougie éclaire la cuisine.",
+        "Léa range encore la bouteille vide."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand la cuisinière mange la soupe avec Lou, et Lou est tout content aussi."
+      "sentences": [
+        "Le jour commence sous la douche.",
+        "Amira lave ses cheveux sous la douche.",
+        "Elle éteint l’eau et prend une bougie.",
+        "La bougie éclaire un peu la salle.",
+        "Amira ouvre la bouche pour chanter.",
+        "Elle range la bougie après la douche.",
+        "Ce jour-là, elle se sent reposée.",
+        "Elle met un bijou avant de sortir.",
+        "Amira entre dans une boutique.",
+        "Elle cherche une bouteille de parfum.",
+        "La vendeuse ouvre la bouche pour expliquer.",
+        "Amira paie et quitte la boutique.",
+        "Elle boit à une bouteille d’eau.",
+        "Sur le chemin, elle croise un couple.",
+        "Le couple parle d’amour près du café.",
+        "Amira sourit et continue sa route.",
+        "Le soir, elle rallume la bougie.",
+        "Après une dernière douche, elle se couche.",
+        "Le jour s’achève doucement."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Omar coupe un chou avec un couteau.",
+        "Il prépare une soupe au chou.",
+        "Le couteau est bien aiguisé.",
+        "Omar goûte la soupe chaude.",
+        "Il ouvre la bouche et souffle.",
+        "Maya apporte une bouteille d’eau.",
+        "Ils mangent la soupe ensemble.",
+        "Omar range le couteau dans le tiroir.",
+        "Maya pose une fourchette près de l’assiette.",
+        "Ils boivent à la bouteille.",
+        "Omar jette les restes dans la poubelle.",
+        "Maya allume une bougie sur la table.",
+        "La bougie éclaire la soupe.",
+        "Omar ouvre encore la bouche pour rire.",
+        "Ils parlent du jour passé.",
+        "Maya range la fourchette.",
+        "Omar ferme la bouteille.",
+        "La soupe au chou est terminée.",
+        "La bougie brûle encore un peu."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand un ami construit le tour avec Louis, parce que Louis est tout content."
+      "sentences": [
+        "Près du moulin, Hugo voit un mouton.",
+        "Un loup apparaît loin sur la colline.",
+        "Le mouton s’éloigne vers le moulin.",
+        "Hugo ouvre la bouche de surprise.",
+        "Le loup disparaît derrière les arbres.",
+        "Hugo rassure le mouton près du moulin.",
+        "Il boit à une bouteille d’eau.",
+        "Le jour avance autour du moulin.",
+        "Hugo caresse le mouton près du moulin.",
+        "Le loup reste invisible derrière les arbres.",
+        "Hugo marche encore autour du moulin.",
+        "Il range la bouteille dans son sac.",
+        "Un couple passe près du moulin.",
+        "Ils disent bonjour à Hugo.",
+        "Hugo montre le mouton du doigt.",
+        "Le couple photographie le moulin.",
+        "Hugo boit encore un peu d’eau.",
+        "Hugo quitte le mouton avant la nuit.",
+        "Le jour se termine près du moulin."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Nora achète un jouet dans la boutique.",
+        "Elle jette l’emballage dans la poubelle.",
+        "Le jouet tient dans sa main.",
+        "Nora ouvre la bouche et rit.",
+        "Elle sort de la boutique contente.",
+        "Sur le chemin, elle croise une poule.",
+        "Nora range le jouet dans son sac.",
+        "Elle passe encore devant la poubelle.",
+        "À la maison, elle pose le jouet.",
+        "Puis elle prend une douche.",
+        "Sous la douche, elle chante.",
+        "Elle ouvre la bouche sous l’eau.",
+        "Après la douche, elle allume une bougie.",
+        "La bougie éclaire le jouet.",
+        "Nora boit à une bouteille d’eau.",
+        "Elle range la bouteille.",
+        "Le jouet reste près du lit.",
+        "Nora éteint la bougie.",
+        "Le jour se termine avec le jouet."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand le maître aide un amour avec Louis, parce que Louis est tout content."
+      "sentences": [
+        "Au restaurant, Karim pose sa fourchette.",
+        "Il coupe le pain avec un couteau.",
+        "La soupe arrive sur la table.",
+        "Karim goûte la soupe avec la fourchette.",
+        "Il ouvre la bouche et sourit.",
+        "Une bouteille d’eau est déjà ouverte.",
+        "Karim range le couteau après le plat.",
+        "Il essuie la fourchette calmement.",
+        "La soupe termine bien le repas.",
+        "Karim parle à un couple à côté.",
+        "Le couple commande aussi une soupe.",
+        "Karim boit encore à la bouteille.",
+        "Il jette une serviette dans la poubelle.",
+        "Puis il paie et sort.",
+        "Sur le chemin, il entre dans une boutique.",
+        "Il regarde un bijou en vitrine.",
+        "Il ouvre la bouche pour demander le prix.",
+        "Finalement, il quitte la boutique.",
+        "Le jour du restaurant se termine bien."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Au zoo, Emma voit un ours.",
+        "Puis elle regarde un loup.",
+        "Emma tient un jouet dans sa main.",
+        "Elle ouvre la bouche d’étonnement.",
+        "L’ours marche près de la vitre.",
+        "Le loup reste dans l’ombre.",
+        "Emma photographie l’ours.",
+        "Elle range le jouet dans son sac.",
+        "Elle boit à une bouteille d’eau.",
+        "Un ami lui montre encore le loup.",
+        "Emma rit et ouvre encore la bouche.",
+        "Ils passent devant une poule du zoo.",
+        "Emma jette un papier dans la poubelle.",
+        "Elle reprend le jouet un moment.",
+        "L’ours disparaît derrière un rocher.",
+        "Emma quitte le zoo le jour même.",
+        "Sur le chemin, elle parle du loup.",
+        "Elle serre le jouet contre elle.",
+        "Le jour au zoo se termine bien."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le médecin oublie le bijou, parce que Louis est tout content."
+      "sentences": [
+        "Un couple se promène dans la rue.",
+        "Ils parlent d’amour près d’une boutique.",
+        "Le garçon offre un bijou à sa compagne.",
+        "Elle ouvre la bouche de joie.",
+        "Ils entrent ensuite dans la boutique.",
+        "Elle essaie encore un bijou.",
+        "Le couple sort avec un sourire.",
+        "Ils boivent à une bouteille partagée.",
+        "Ce jour d’amour reste dans leur mémoire.",
+        "Ils s’assoient près d’une tour.",
+        "Elle porte une écharpe rouge.",
+        "Le garçon photographie le bijou.",
+        "Ils rient et ouvrent la bouche ensemble.",
+        "Puis ils visitent encore une boutique.",
+        "Elle achète une petite bougie.",
+        "Le couple allume la bougie le soir.",
+        "Ils parlent encore d’amour.",
+        "La bougie éclaire le bijou.",
+        "Le jour finit dans une douce lumière."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Théo a mal au genou.",
+        "Maman met de la poudre sur le genou.",
+        "Théo prend ensuite une douche tiède.",
+        "Sous la douche, il fait attention.",
+        "Il ouvre la bouche et chante un peu.",
+        "Après la douche, le genou va mieux.",
+        "Maman range la poudre dans l’armoire.",
+        "Théo met un jouet près du lit.",
+        "Il boit à une bouteille d’eau.",
+        "Maman prépare une soupe.",
+        "Elle coupe un chou avec un couteau.",
+        "Théo mange la soupe avec une fourchette.",
+        "Il ouvre la bouche et souffle.",
+        "Maman jette les épluchures dans la poubelle.",
+        "Théo range le jouet.",
+        "Il touche encore son genou.",
+        "La douleur diminue ce jour-là.",
+        "Théo éteint la lumière.",
+        "Le jour se termine sans trop de mal."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand une amie lave la bouche sous le bouleau, parce que Louis est tout content."
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand la grand-mère allume la bougie avec Louis, parce que Louis est tout content."
+      "sentences": [
+        "Depuis la tour, Sofia voit la ville.",
+        "Elle porte une écharpe rouge.",
+        "Sofia descend de la tour vers une boutique.",
+        "Dans la boutique, elle cherche un bijou.",
+        "Elle ouvre la bouche pour demander le prix.",
+        "La vendeuse lui montre un bijou rouge.",
+        "Sofia paie et quitte la boutique.",
+        "Elle boit à sa bouteille près de la tour.",
+        "Un couple passe près de la tour.",
+        "Ils parlent d’amour en riant.",
+        "Sofia sourit et range sa bouteille.",
+        "Elle allume une bougie le soir.",
+        "La bougie éclaire le bijou rouge.",
+        "Sofia ouvre la bouche pour souffler.",
+        "Elle range encore le bijou.",
+        "La tour reste visible par la fenêtre.",
+        "Sofia pense à la boutique du jour.",
+        "Elle éteint la bougie.",
+        "Le jour finit près de la tour rouge."
+      ]
     }
   ]
 }
