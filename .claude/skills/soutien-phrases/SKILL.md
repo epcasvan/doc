@@ -81,7 +81,8 @@ node scripts/export-soutien-phrases.mjs
 Les phrases s’appuient sur les **modèles Gattegno**
 (`phrase-simple-frames.ts`, prépositions dans `phrase-theme-frames.ts`) :
 
-- **Sujet = personne** (prénom d’ancre phonétique), jamais un objet.
+- **Sujet = personne** : prénom d’ancre **ou** groupe nominal
+  (*le professeur*, *le garçon*, *la voisine*…) — jamais un objet.
 - **Un verbe = une construction** crédible ; le complément colle au verbe
   (*mange une salade*, *téléphone à la maman*, *retourne dans la chambre*).
 - Conserver la **préposition** du modèle (*à*, *dans*, *avec*…) — interdit

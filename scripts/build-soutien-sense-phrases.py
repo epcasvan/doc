@@ -27,6 +27,47 @@ spec.loader.exec_module(base)
 RANGES = base.RANGES
 DET_RE = re.compile(r"\b([Ll]es|[Ll]e|[Ll]a)\b|([Ll][’'])(?=\S)")
 
+# Groupes nominaux personne (Gattegno COMMON) — pas d’élision l’ (type 10).
+COMMON_SUBJECTS: list[str] = [
+    "Le garçon",
+    "La fille",
+    "Un ami",
+    "Une amie",
+    "Le papa",
+    "La maman",
+    "Le maître",
+    "La maîtresse",
+    "Le professeur",
+    "La professeure",
+    "Le voisin",
+    "La voisine",
+    "Le cousin",
+    "La cousine",
+    "Le frère",
+    "La sœur",
+    "Le copain",
+    "La copine",
+    "Le grand-père",
+    "La grand-mère",
+    "La tante",
+    "Le bébé",
+    "Le médecin",
+    "Le boulanger",
+    "La boulangère",
+    "Le facteur",
+    "La factrice",
+    "Le cuisinier",
+    "La cuisinière",
+    "Le jardinier",
+    "La jardinière",
+    "Le musicien",
+    "La musicienne",
+    "Le collègue",
+    "La collègue",
+    "Le directeur",
+    "La directrice",
+]
+
 # Prénoms / sujets qui portent vraiment le son de la leçon.
 CAST: dict[str, list[str]] = {
     "a": ["Sara", "Lara", "Adam", "Anna"],
@@ -230,6 +271,41 @@ def load_gattegno() -> dict[str, list[tuple[str, str, str]]]:
     return by_noun
 
 
+def subjects_for(bank: str) -> list[str]:
+    """Prénoms d’ancre + GN personne ; priorité aux sujets qui portent le son."""
+    names = list(CAST.get(bank) or ["Léa", "Noah"])
+    # ~ moitié prénoms / moitié GN (ordre : son d’abord)
+    with_sound: list[str] = []
+    without: list[str] = []
+    for subj in names + COMMON_SUBJECTS:
+        if subj in with_sound or subj in without:
+            continue
+        # Au moins 1 occurrence du son dans le sujet seul
+        if base.count_sound(subj, bank) >= 1:
+            with_sound.append(subj)
+        else:
+            without.append(subj)
+    # Alterner un peu : son-bearing first, then others for variety
+    return with_sound + without if with_sound else names + COMMON_SUBJECTS
+
+
+def near_phrase(subject: str) -> str:
+    """« près de + sujet » avec contractions (près du garçon / près de la fille)."""
+    s = subject.strip()
+    low = s.lower()
+    if low.startswith("le "):
+        return f"près du {s.split(' ', 1)[1]}"
+    if low.startswith("la "):
+        return f"près de la {s.split(' ', 1)[1]}"
+    if low.startswith("les "):
+        return f"près des {s.split(' ', 1)[1]}"
+    if low.startswith("un ") or low.startswith("une "):
+        # Évite d’un / d’une (apostrophe) → avec
+        return f"avec {low}"
+    # Prénom
+    return f"près de {s}"
+
+
 def blank_determinants(sentence: str) -> list[dict[str, str]] | None:
     parts: list[dict[str, str]] = []
     i = 0
@@ -401,6 +477,29 @@ def build_core(name: str, verb: str, prep: str, det_noun: str) -> str | None:
     return f"{name} {verb} {det_noun}"
 
 
+def lower_gn_start(core: str) -> str:
+    """Après une virgule / « quand », un GN reprend une minuscule (*la fille*)."""
+    for prefix in ("Le ", "La ", "Un ", "Une ", "Les "):
+        if core.startswith(prefix):
+            return prefix.lower() + core[len(prefix) :]
+    return core
+
+
+def fix_gn_case(sentence: str) -> str:
+    """Minuscule pour GN après virgule ou après « quand »."""
+    sentence = re.sub(
+        r"(,\s+)(Le|La|Un|Une|Les)(\s+)",
+        lambda m: m.group(1) + m.group(2).lower() + m.group(3),
+        sentence,
+    )
+    sentence = re.sub(
+        r"\b([Qq]uand\s+)(Le|La|Un|Une|Les)(\s+)",
+        lambda m: m.group(1) + m.group(2).lower() + m.group(3),
+        sentence,
+    )
+    return sentence
+
+
 def assemble(
     bank: str,
     level: str,
@@ -411,6 +510,7 @@ def assemble(
     seed: int,
 ) -> list[str]:
     """Variantes A1/A2/B1 autour du même noyau Gattegno."""
+    mid = lower_gn_start(core)
     out: list[str] = []
     if level == "a1":
         out.extend(
@@ -427,44 +527,24 @@ def assemble(
         t = times[seed % len(times)]
         out.extend(
             [
-                f"{t} {core} {pad}.",
-                f"{t} {core} avec soin.",
-                f"{t} {core} près de {name2}.",
-                f"{t} {core} à la maison.",
-                f"{t} {core} dans la salle.",
-                f"{t} {core} {pad}.",
+                f"{t} {mid} {pad}.",
+                f"{t} {mid} avec soin.",
+                f"{t} {mid} {near_phrase(name2)}.",
+                f"{t} {mid} à la maison.",
+                f"{t} {mid} dans la salle.",
+                f"{t} {mid} {pad}.",
             ]
         )
     else:  # b1
-        times = ["Ce matin,", "Ce soir,", "À midi,", "Quand"]
-        t = times[seed % len(times)]
-        if t == "Quand":
-            out.extend(
-                [
-                    f"Quand {core.lower() if False else core}, {tail}.",
-                    f"Quand {core} {pad}, {tail}.",
-                    f"Quand {core} près de {name2}, {tail}.",
-                ]
-            )
-            # Fix: "Quand Sara mange…" — core already starts with Name
-            fixed = []
-            for s in out:
-                s = s.replace("Quand " + core[0].lower(), "Quand " + core[0])  # noop
-                # Ensure "Quand Name ..." — core is "Name verb..."
-                if s.startswith("Quand "):
-                    # core has capital name — lower only if we want "quand sara" — keep Name capital OK for pedagogy? 
-                    # French: "Quand Sara mange la salade, …"
-                    fixed.append(s)
-                else:
-                    fixed.append(s)
-            out = fixed
         out.extend(
             [
-                f"Ce matin, quand {core}, {tail}.",
-                f"Ce soir, quand {core}, {tail}.",
-                f"À midi, quand {core} {pad}, {tail}.",
-                f"Ce matin, quand {core} près de {name2}, {tail}.",
-                f"Ce soir, quand {core} {pad}, {tail}.",
+                f"Ce matin, quand {mid}, {tail}.",
+                f"Ce soir, quand {mid}, {tail}.",
+                f"À midi, quand {mid} {pad}, {tail}.",
+                f"Ce matin, quand {mid} {near_phrase(name2)}, {tail}.",
+                f"Ce soir, quand {mid} {pad}, {tail}.",
+                f"Quand {mid}, {tail}.",
+                f"Quand {mid} {pad}, {tail}.",
             ]
         )
     # Normalize: "quand Name" — if core appears after "quand ", keep as is
@@ -492,20 +572,23 @@ def build_one(
     used_verb: set[str],
     by_noun: dict[str, list[tuple[str, str, str]]],
 ) -> str:
-    names = CAST.get(bank) or ["Léa", "Noah"]
+    names = subjects_for(bank)
     pads = SOUND_PAD.get(bank) or ["ici"]
     tails = TAIL.get(bank) or ["et tout le monde est content aussi"]
     verb_pool = pick_verbs_for_word(word, theme, by_noun, art)
     errors: list[str] = []
 
-    for attempt in range(max(80, len(verb_pool) * len(names) * 3)):
+    for attempt in range(max(100, len(verb_pool) * len(names) * 2)):
         vi = (seed + attempt * 3) % len(verb_pool)
-        ni = (seed + attempt * 5) % len(names)
+        # Alterner prénom / GN : pair → début de liste (souvent son), impair → milieu (GN)
+        if attempt % 2 == 0:
+            ni = (seed + attempt * 5) % len(names)
+        else:
+            ni = (seed + attempt * 5 + len(names) // 2) % len(names)
         n2i = (seed + attempt * 7 + 1) % len(names)
         pi = (seed + attempt * 11) % len(pads)
         tai = (seed + attempt * 13) % len(tails)
         verb, prep, _det = verb_pool[vi]
-        # Variété : éviter le même verbe pour ce mot si possible
         # Variété inter-niveaux : ne pas recycler le même verbe pour ce mot.
         vkey = f"{word}:{verb}"
         if vkey in used_verb and attempt < len(verb_pool) * 3:
@@ -514,10 +597,11 @@ def build_one(
         name2 = names[n2i]
         if name == name2:
             name2 = names[(n2i + 1) % len(names)]
-        # Nom ≠ mot cible
-        if word.lower() in name.lower() or name.lower() in word.lower():
+        # Nom cible ≠ sujet / complément de sujet
+        wl = word.lower()
+        if wl in name.lower() or name.lower() in wl:
             continue
-        if word.lower() in name2.lower():
+        if wl in name2.lower():
             continue
         dn = art_word(art, word)
         core = build_core(name, verb, prep, dn)
@@ -528,16 +612,17 @@ def build_one(
         # Verbe montre + mot montre
         if word.lower() == "montre" and verb == "montre":
             continue
-        # Éviter « avec Name » si Name déjà sujet (`avec Lou` après Lou)
+        # Éviter « avec Name » si Name déjà sujet
         pad = pads[pi]
-        if f"avec {name}" in pad:
+        subj_token = name.split()[-1] if " " in name else name
+        if f"avec {subj_token}" in pad or f"avec {name}" in pad:
             pad = pads[(pi + 1) % len(pads)]
         candidates = assemble(bank, level, core, name2, pad, tails[tai], seed + attempt)
         for sentence in candidates:
             sentence = fix_elisions(sentence)
             if not sentence:
                 continue
-            sentence = re.sub(r"\s+", " ", sentence).strip()
+            sentence = fix_gn_case(re.sub(r"\s+", " ", sentence).strip())
             if not sentence.endswith((".", "!", "?")):
                 sentence += "."
             if sentence in used:
@@ -563,26 +648,28 @@ def build_one(
         core = build_core(name, verb, prep, f"{art} {word}")
         if not core:
             continue
+        near = near_phrase(name2)
+        mid = lower_gn_start(core)
         if level == "a1":
             cands = [f"{core} {pad}.", f"{core} bien.", f"{core} {pad2}."]
         elif level == "a2":
             cands = [
-                f"Ce matin, {core} {pad}.",
-                f"Ce soir, {core} près de {name2}.",
-                f"À midi, {core} {pad}.",
-                f"Ce matin, {core} {pad} {pad2}.".replace(f"{pad} {pad}", pad),
+                f"Ce matin, {mid} {pad}.",
+                f"Ce soir, {mid} {near}.",
+                f"À midi, {mid} {pad}.",
+                f"Ce matin, {mid} {pad} {pad2}.".replace(f"{pad} {pad}", pad),
             ]
         else:
             cands = [
-                f"Ce matin, quand {core} {pad}, {tail}.",
-                f"Ce soir, quand {core} près de {name2}, {tail}.",
-                f"À midi, quand {core} {pad}, {tail}.",
+                f"Ce matin, quand {mid} {pad}, {tail}.",
+                f"Ce soir, quand {mid} {near}, {tail}.",
+                f"À midi, quand {mid} {pad}, {tail}.",
             ]
         for sentence in cands:
             sentence = fix_elisions(sentence)
             if not sentence:
                 continue
-            sentence = re.sub(r"\s+", " ", sentence).strip()
+            sentence = fix_gn_case(re.sub(r"\s+", " ", sentence).strip())
             if sentence in used:
                 continue
             err = valid(bank, level, word, sentence)
@@ -736,13 +823,13 @@ def main() -> None:
                     if level == "a1":
                         sentence = f"{core} {pad}."
                     elif level == "a2":
-                        sentence = f"Ce matin, {core} {pad}."
+                        sentence = f"Ce matin, {lower_gn_start(core)} {pad}."
                     else:
-                        sentence = f"Ce matin, quand {core} {pad}, {tail}."
+                        sentence = f"Ce matin, quand {lower_gn_start(core)} {pad}, {tail}."
                     sentence = fix_elisions(sentence)
                     if not sentence:
                         continue
-                    sentence = re.sub(r"\s+", " ", sentence).strip()
+                    sentence = fix_gn_case(re.sub(r"\s+", " ", sentence).strip())
                     err = valid(bank, level, word, sentence)
                     if err:
                         continue
