@@ -6843,128 +6843,388 @@
       ]
     }
   ],
-  "type12": [
-    {
-      "level": "a1",
-      "sentence": "La jardinière discute avec un ami."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le frère cherche un autrichien."
-    },
-    {
-      "level": "a1",
-      "sentence": "Iris soigne la biche bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La copine aime la boucherie."
-    },
+  "type12Stories": [
     {
       "level": "a2",
-      "sentence": "À midi, le musicien pose le chirurgien avec Nina."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, une amie cherche le ciel ici vite."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la tante oublie le comprimé fini ici."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le cuisinier invite la cousine ici vite."
+      "sentences": [
+        "Ce matin, Nina retrouve son ami à la bibliothèque.",
+        "Ils choisissent un livre sur les biches et les tigres.",
+        "Nina lit près de la fenêtre, sous un ciel gris.",
+        "À midi, ils mangent à la cantine de l’école.",
+        "Nina porte une chemise bleue et un petit foulard.",
+        "L’après-midi, elle range les livres sur l’étagère.",
+        "Elle fixe une affiche avec une vis et un marteau.",
+        "Puis elle dit au revoir à son ami.",
+        "Sur le chemin, elle regarde le ciel devenir plus clair."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le frère range un enregistrement, et Nina part très vite aussi."
+      "sentences": [
+        "Ibrahim travaille à la boulangerie depuis février.",
+        "Il arrive tôt, quand le ciel est encore gris.",
+        "Avec le cuisinier, il prépare des viennoiseries et du riz sucré.",
+        "À midi, il déjeune vite à la cantine du quartier.",
+        "Un client timide demande le prix d’une pizza.",
+        "Ibrahim répond gentiment et range la monnaie.",
+        "L’après-midi, sa cousine passe le voir.",
+        "Ils parlent d’un film et d’une île rêvée.",
+        "Le soir, Ibrahim rentre à l’immeuble, fatigué mais content."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "À la librairie, Lili cherche un livre illustré.",
+        "Elle voit une image de biche près d’une rivière.",
+        "Le libraire lui indique le rayon enfants.",
+        "Lili choisit aussi un stylo et un surligneur.",
+        "Elle paie au guichet et range tout dans son sac.",
+        "Dehors, le ciel est bleu et le soleil brille.",
+        "Lili croise son ami près de la boucherie.",
+        "Ils mangent une pizza sur un banc.",
+        "Puis Lili rentre lire son livre sur le lit."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Iris prend le fiancé, et Nina part très vite aussi."
+      "sentences": [
+        "Mardi, Maya a de la fièvre et reste au lit.",
+        "Maman l’emmène à l’infirmerie de l’école.",
+        "L’infirmière vérifie sa température avec soin.",
+        "Elle conseille du repos et un comprimé si besoin.",
+        "Maya boit de l’eau et regarde le ciel par la fenêtre.",
+        "Sa cousine lui apporte un livre et une serviette fraîche.",
+        "Le soir, le dentiste de la famille appelle pour prendre des nouvelles.",
+        "Maya se sent un peu triste, mais elle reste gentille.",
+        "Le lendemain, la fièvre baisse et elle sourit enfin."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "En classe de chimie, Tim observe une expérience.",
+        "Il note les ingrédients dans son livre.",
+        "Le professeur montre une tige et une lime.",
+        "Tim fixe le support avec une petite vis.",
+        "À la pause, il boit un jus à la cantine.",
+        "Son ami lui parle d’un film sur les tigres.",
+        "Tim range sa chemise dans le casier.",
+        "Puis il regarde le ciel gris par la fenêtre.",
+        "Le soir, il raconte la leçon à sa cousine."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand une amie regarde le film, et Nina part très vite aussi."
+      "sentences": [
+        "Pour mercredi, Iris prépare une sortie sur l’île.",
+        "Elle range une serviette, un livre et une gourde dans le sac.",
+        "Sur le voilier, le ciel est clair et le vent léger.",
+        "Iris photographie un pélican et une libellule.",
+        "À midi, le cuisinier sert du riz et une pizza froide.",
+        "Iris lit un peu, allongée près de la rivière.",
+        "Un ami timide lui demande le prix du billet de bateau.",
+        "Le soir, ils rentrent à l’immeuble sous un ciel rose.",
+        "Iris pose son sac près du lit et s’endort vite."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Dimanche, Samir visite le parc avec sa nièce.",
+        "Ils voient une biche et un pigeon gris.",
+        "Samir lit un livre sous un arbre.",
+        "Sa nièce dessine une souris et une fourmi.",
+        "À midi, ils mangent une pizza près de la rivière.",
+        "Le ciel devient un peu humide.",
+        "Ils rentrent à l’immeuble avant la pluie.",
+        "Samir range les dessins dans un livre.",
+        "Puis il fixe le cadre avec une vis."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la sœur cherche la fièvre, et Nina part très vite aussi."
+      "sentences": [
+        "À la direction de l’école, Kim attend son rendez-vous.",
+        "Elle porte une chemise blanche et tient un livre.",
+        "Le secrétaire lui indique le guichet de l’enregistrement.",
+        "Kim explique un problème urgent à l’infirmière.",
+        "Ensuite, elle passe à la cantine pour boire un thé.",
+        "Son ami ingénieur l’appelle pour parler d’un projet.",
+        "Kim note les idées dans un petit carnet.",
+        "Le soir, elle regarde un film sous-titré sur son lit.",
+        "Elle s’endort en regardant le ciel par la fenêtre."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "À la cuisine, Mina apprend à frire des légumes.",
+        "Le cuisinier lui montre chaque ustensile.",
+        "Mina lave l’évier et range la serviette.",
+        "Elle ajoute du piment et du riz dans la poêle.",
+        "À midi, les amis goûtent la pizza.",
+        "Mina sourit et nettoie le plan de travail.",
+        "Elle fixe une étagère avec une vis.",
+        "Puis elle lit un livre de recettes.",
+        "Le soir, elle dit merci au cuisinier."
+      ]
+    },
+    {
+      "level": "b1",
+      "sentences": [
+        "En février, Hugo part skier avec des amis.",
+        "Il prépare son sac : gants, livre et chemise de rechange.",
+        "Sur la piste, le ciel est clair et le vent froid.",
+        "Hugo photographie une biche au bord de la forêt.",
+        "À midi, ils mangent à la cantine de la station.",
+        "Un ami timide demande le prix d’un nouveau ski.",
+        "Le soir, Hugo lit près du lit dans le chalet.",
+        "Il regarde les étoiles et écoute le silence.",
+        "Avant de dormir, il range ses affaires avec soin."
+      ]
     }
   ],
-  "type14": [
-    {
-      "level": "a1",
-      "sentence": "La maman oublie le bouillir."
-    },
-    {
-      "level": "a1",
-      "sentence": "La boulangère aime la boulangerie bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La factrice nettoie la buanderie."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le professeur mange à la cantine bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "Un ami montre la chimie."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le directeur cherche le chinois."
-    },
+  "type14Stories": [
     {
       "level": "a2",
-      "sentence": "Ce matin, le boulanger prend le criquet ici vite."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la copine montre le cuisiner dans le lit."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la maman cherche le cuisinier ici vite."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, la boulangère range la cuisinière dans le lit."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, une amie pose la dentiste avec Nina."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le bébé cherche la direction ici vite."
+      "sentences": [
+        "Samedi, Nina va à la librairie avec son ami.",
+        "Ils cherchent un livre sur les animaux.",
+        "Nina trouve une histoire de biche et de tigre.",
+        "Elle paie au guichet et range le livre.",
+        "Dehors, le ciel est bleu.",
+        "Ils mangent une pizza sur un banc.",
+        "Puis ils vont à la cantine du parc.",
+        "Nina boit un jus et lit quelques pages.",
+        "Son ami dessine une souris grise.",
+        "Ils voient un pigeon près de la rivière.",
+        "Nina photographie une libellule.",
+        "Ensuite, ils rentrent à l’immeuble.",
+        "Nina pose le livre sur le lit.",
+        "Elle lave une serviette dans la buanderie.",
+        "Puis elle fixe un cadre avec une vis.",
+        "Le soir, elle lit encore un peu.",
+        "Elle regarde le ciel par la fenêtre.",
+        "Son ami lui envoie un message gentil.",
+        "Nina s’endort heureuse."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la boulangère trouve le fourmi, parce que Kim finit ici."
+      "sentences": [
+        "Ibrahim commence un stage chez un cuisinier en ville.",
+        "Il arrive à la boulangerie quand le ciel est encore gris.",
+        "Le matin, il apprend à frire et à cuisiner du riz.",
+        "Il note chaque ingrédient dans un petit livre.",
+        "À midi, il déjeune à la cantine avec l’équipe.",
+        "Un client timide demande le prix d’une pizza.",
+        "Ibrahim répond avec le sourire et range la caisse.",
+        "L’après-midi, sa cousine passe avec une serviette de table.",
+        "Ils parlent d’un film et d’une île pour les vacances.",
+        "Le soir, Ibrahim rentre à l’immeuble fatigué.",
+        "Il pose sa chemise propre sur le lit.",
+        "Il lit encore une page de son livre de recettes.",
+        "Le lendemain, il aide à l’enregistrement des commandes.",
+        "Le professeur de cuisine vérifie ses gestes.",
+        "Ibrahim fixe une étagère avec une vis.",
+        "Il nettoie l’évier et range les ustensiles.",
+        "Avant de partir, il dit merci à toute l’équipe.",
+        "Sur le chemin, il regarde le ciel devenir rose.",
+        "Chez lui, il s’endort content de sa journée."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Lundi, Lili prépare son cartable.",
+        "Elle met un livre et une chemise propre.",
+        "À l’école, elle va à la cantine.",
+        "Elle mange du riz et une pizza.",
+        "En classe, elle lit près de la fenêtre.",
+        "Le ciel est gris et un peu humide.",
+        "Lili dessine une biche dans son cahier.",
+        "Son ami lui prête un surligneur.",
+        "À la pause, ils voient un pigeon.",
+        "Lili range ses affaires dans le casier.",
+        "L’après-midi, elle va à la librairie.",
+        "Elle choisit un livre sur les tigres.",
+        "Elle paie au guichet et sort.",
+        "Chez elle, elle pose le livre sur le lit.",
+        "Elle lave une serviette à l’évier.",
+        "Puis elle fixe une photo avec une vis.",
+        "Le soir, elle lit encore un peu.",
+        "Elle regarde le ciel devenir noir.",
+        "Puis elle s’endort."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le voisin montre la frire, et Nina part très vite aussi."
+      "sentences": [
+        "Quand Maya a la grippe, elle reste au lit toute la journée.",
+        "Maman lui apporte une serviette froide et un comprimé.",
+        "Maya regarde le ciel gris par la fenêtre.",
+        "Sa cousine lui lit un livre à voix haute.",
+        "L’infirmière de l’école appelle pour prendre des nouvelles.",
+        "Maya se sent triste, mais elle reste gentille.",
+        "Le soir, elle boit une tisane près du lit.",
+        "Le lendemain, la fièvre baisse un peu.",
+        "Maya met une chemise confortable et s’assoit.",
+        "Elle regarde un film calme avec maman.",
+        "Son ami lui envoie un message depuis la cantine.",
+        "Maya sourit et répond tout de suite.",
+        "Elle note dans un carnet comment elle se sent.",
+        "Quand elle va mieux, elle range sa chambre.",
+        "Elle fixe un cadre avec une petite vis.",
+        "Puis elle lit encore quelques pages.",
+        "Le week-end, elle marche près de la rivière.",
+        "Elle photographie une libellule et un pigeon.",
+        "Enfin, elle rentre se reposer sur le lit."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Au parc, Tim joue avec son ami.",
+        "Ils voient une biche derrière les arbres.",
+        "Un pigeon gris marche près d’eux.",
+        "Tim lit un livre sous un ciel bleu.",
+        "Puis ils mangent une pizza sur l’herbe.",
+        "Tim boit de l’eau à la fontaine.",
+        "Il photographie une libellule.",
+        "Son ami dessine une souris.",
+        "Ils marchent jusqu’à la rivière.",
+        "Tim range le livre dans son sac.",
+        "Sur le chemin, il croise sa cousine.",
+        "Elle porte une chemise verte.",
+        "Ils rentrent ensemble à l’immeuble.",
+        "Tim pose son sac près du lit.",
+        "Il lave une serviette à l’évier.",
+        "Puis il fixe un poster avec une vis.",
+        "Le soir, il lit encore un peu.",
+        "Il regarde le ciel par la fenêtre.",
+        "Il s’endort content."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la jardinière pose le frisé, parce que Kim finit ici."
+      "sentences": [
+        "Iris organise une sortie voilier avec des amis.",
+        "Elle prépare le sac : livre, serviette et gourde.",
+        "Sur le quai, le ciel est clair et le vent léger.",
+        "Le cuisinier du bateau prépare du riz et une pizza.",
+        "Iris photographie un pélican et une libellule.",
+        "Un ami timide demande le prix de la location.",
+        "Ils naviguent vers une petite île.",
+        "À midi, ils mangent près de la rivière.",
+        "Iris lit quelques pages allongée au soleil.",
+        "L’après-midi, le ciel devient un peu gris.",
+        "Ils rentrent avant la pluie vers l’immeuble.",
+        "Iris pose sa chemise mouillée près du lit.",
+        "Elle lave la serviette dans la buanderie.",
+        "Puis elle fixe une carte de l’île avec une vis.",
+        "Le soir, elle regarde un film sur les océans.",
+        "Son ami lui envoie les photos de la journée.",
+        "Iris note les souvenirs dans un carnet.",
+        "Elle éteint la lumière de la chambre.",
+        "Elle s’endort bercée par le souvenir du vent."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Dimanche, Samir aide à la cuisine.",
+        "Le cuisinier lui montre les ustensiles.",
+        "Samir lave l’évier avec une serviette.",
+        "Il coupe un kiwi et prépare du riz.",
+        "Il ajoute un peu de piment.",
+        "À midi, les amis mangent une pizza.",
+        "Samir sourit et range la table.",
+        "Il fixe une étagère avec une vis.",
+        "Puis il lit un livre de recettes.",
+        "Sa nièce dessine une biche.",
+        "Ils regardent le ciel par la fenêtre.",
+        "L’après-midi, Samir va à la librairie.",
+        "Il choisit un livre sur les tigres.",
+        "Il paie au guichet et sort.",
+        "Chez lui, il pose le livre sur le lit.",
+        "Il range sa chemise dans l’armoire.",
+        "Le soir, il mange encore un peu de riz.",
+        "Il dit merci au cuisinier.",
+        "Puis il s’endort."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand un ami cherche le février, et Nina part très vite aussi."
+      "sentences": [
+        "Kim prépare un dossier urgent pour la direction.",
+        "Elle range un livre, une chemise et un badge dans le sac.",
+        "À l’école, elle passe d’abord au guichet d’enregistrement.",
+        "Le secrétaire lui indique le bureau de la sécurité.",
+        "Kim explique calmement le problème à l’infirmière.",
+        "Ensuite, elle boit un thé à la cantine.",
+        "Son ami ingénieur l’appelle pour vérifier un détail.",
+        "Kim note tout dans un carnet gris.",
+        "L’après-midi, elle présente le dossier en réunion.",
+        "Les collègues écoutent et posent des questions.",
+        "Kim reste timide au début, puis plus à l’aise.",
+        "Le soir, elle rentre à l’immeuble sous un ciel rose.",
+        "Elle pose le sac près du lit et soupire.",
+        "Elle regarde un film sous-titré pour se détendre.",
+        "Puis elle lave une serviette à l’évier.",
+        "Elle fixe une photo de l’équipe avec une vis.",
+        "Avant de dormir, elle range sa chemise.",
+        "Elle regarde encore une fois le ciel.",
+        "Elle s’endort soulagée."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "À la ferme, Mina voit une biche.",
+        "Elle photographie aussi un pigeon.",
+        "Son ami lit un livre sous un arbre.",
+        "Le ciel est bleu et clair.",
+        "Ils mangent une pizza près de la rivière.",
+        "Mina boit de l’eau et sourit.",
+        "Elle dessine une souris dans son cahier.",
+        "Puis ils marchent jusqu’à l’île du lac.",
+        "Mina range le livre dans son sac.",
+        "Sur le chemin, elle croise sa cousine.",
+        "Elles parlent d’un film amusant.",
+        "Mina rentre à l’immeuble.",
+        "Elle pose sa chemise sur le lit.",
+        "Elle lave une serviette à l’évier.",
+        "Puis elle fixe un dessin avec une vis.",
+        "Le soir, elle lit encore un peu.",
+        "Elle regarde le ciel devenir sombre.",
+        "Elle dit bonne nuit à son ami.",
+        "Puis elle s’endort."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le directeur range le gentil, et Nina part très vite aussi."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la professeure grimpe dans le grenier, parce que Kim finit ici."
+      "sentences": [
+        "En février, Hugo prépare un séjour de ski avec sa nièce.",
+        "Il vérifie les sacs : gants, livre, chemise et serviette.",
+        "Sur la route, le ciel est gris et la montagne blanche.",
+        "À la station, ils mangent à la cantine.",
+        "Hugo lit le plan des pistes près du lit du chalet.",
+        "Le lendemain, ils skient sous un ciel clair.",
+        "Hugo photographie une biche au bord de la forêt.",
+        "À midi, un ami timide demande le prix d’un forfait.",
+        "L’après-midi, ils se reposent près de la rivière gelée.",
+        "Hugo boit un chocolat et lit quelques pages.",
+        "Le soir, ils regardent un film dans le chalet.",
+        "Hugo range les skis et fixe un crochet avec une vis.",
+        "Il lave la serviette et prépare les sacs.",
+        "Avant de partir, il dit au revoir aux amis.",
+        "Dans le train, sa nièce dessine un tigre.",
+        "Hugo regarde le ciel défiler derrière la vitre.",
+        "Chez lui, il pose le livre sur le lit.",
+        "Il envoie les photos à sa cousine.",
+        "Puis il s’endort, fatigué et heureux."
+      ]
     }
   ]
 }

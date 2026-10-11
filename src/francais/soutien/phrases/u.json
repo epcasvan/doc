@@ -3774,128 +3774,388 @@
       ]
     }
   ],
-  "type12": [
-    {
-      "level": "a1",
-      "sentence": "Le papa montre la blessure plus loin."
-    },
-    {
-      "level": "a1",
-      "sentence": "La jardinière admire la brume plus loin."
-    },
-    {
-      "level": "a1",
-      "sentence": "Julie range la brûlure bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le collègue écoute la bulle."
-    },
+  "type12Stories": [
     {
       "level": "a2",
-      "sentence": "Ce matin, le cuisinier ferme la fumée dans le bus."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, une amie cherche la fusée sur le mur."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Hugo utilise la gélule avec Luc."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, la cuisinière utilise un interrupteur avec Luc."
+      "sentences": [
+        "Ce matin, Luc prend le bus pour aller au bureau.",
+        "Il porte un pull bleu et des chaussures neuves.",
+        "Dans la rue, la brume cache un peu la vue.",
+        "Au bureau, Luc ouvre un dossier sur la table.",
+        "Il boit un jus et mange un muffin.",
+        "À midi, il lit le menu du restaurant.",
+        "L’après-midi, il répare une serrure qui coince.",
+        "Le soir, il regarde la lune depuis la fenêtre.",
+        "Puis il range ses chaussures près du mur."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la fille utilise le muffin, parce que Julie est plus contente."
+      "sentences": [
+        "Une coupure d’électricité arrête le travail de Julie.",
+        "Dans le bureau, plus aucune lumière ne marche.",
+        "Julie cherche l’interrupteur, puis sort une lampe.",
+        "Elle enfile un pull et regarde la rue par la fenêtre.",
+        "Un collègue arrive en bus avec des chaussures mouillées.",
+        "Ils attendent une minute, puis la lumière revient.",
+        "Julie vérifie la serrure du tiroir important.",
+        "Le soir, elle boit un jus et regarde la lune.",
+        "Elle rentre à pied, contente que tout refonctionne."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Dans le jardin, Uma plante une tulipe.",
+        "Elle porte une jupe et un pull léger.",
+        "Une brume légère monte au-dessus du mur.",
+        "Uma boit un jus et regarde la vue.",
+        "Elle trouve une petite statue près du tuyau.",
+        "Puis elle nettoie la serrure du portail.",
+        "Le soir, la lune éclaire le jardin.",
+        "Uma range ses chaussures près de la porte.",
+        "Elle s’endort en pensant à la tulipe."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand la sœur longe le mur dans le bus, parce que Julie est plus contente."
+      "sentences": [
+        "Au musée, Bruno observe une statue turquoise.",
+        "Il lit le programme de la visite en une minute.",
+        "Dans la salle, une brume artificielle crée une belle vue.",
+        "Bruno porte un pull russe et des chaussures confortables.",
+        "Il photographie un cube en verre près du mur.",
+        "Ensuite, il boit un jus au café du musée.",
+        "Sur le chemin du bus, il croise une jupe exposée en vitrine.",
+        "Le soir, il regarde la lune depuis son bureau.",
+        "Il note ses impressions avant d’éteindre la lumière."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Léa a un rhume et reste à la maison.",
+        "Elle met un pull chaud et boit un jus.",
+        "Maman lui donne une gélule avec de l’eau.",
+        "Léa regarde la lune depuis le lit.",
+        "Elle lit un livre près du mur.",
+        "Puis elle mange un muffin au sucre.",
+        "Le chat joue avec un cube sur le sol.",
+        "Léa range ses chaussures sous le lit.",
+        "Elle s’endort après une longue minute de calme."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la directrice essuie le muscle, parce que Julie est plus contente."
+      "sentences": [
+        "Pour soigner une blessure au pied, Hugo va chez le médecin.",
+        "Il prend le bus malgré la brume du matin.",
+        "Dans la salle d’attente, il enfile un pull.",
+        "Le médecin examine la blessure et parle d’une brûlure légère.",
+        "Hugo prend une gélule et note le plan des soins.",
+        "Sur le chemin, il marche lentement dans la rue.",
+        "Chez lui, il pose ses chaussures près du mur.",
+        "Le soir, il regarde la lune et se repose.",
+        "Il s’endort soulagé, la jambe moins douloureuse."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Au marché, Nina achète du sucre et du curry.",
+        "Elle porte une jupe et des chaussures rouges.",
+        "Dans la rue, elle croise un ami au bus.",
+        "Chez elle, elle pose les courses sur le bureau.",
+        "Elle boit un jus et mange un muffin.",
+        "Puis elle épluche des légumes près du mur.",
+        "Le soir, elle regarde la lune.",
+        "Elle ferme la serrure de la porte.",
+        "Enfin, elle range ses chaussures et sourit."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand la grand-mère cherche le musclé sur le mur, et Luc part plus loin aussi."
+      "sentences": [
+        "Sur le chantier, Paul répare un tuyau et une serrure.",
+        "Il porte un pull de travail et des chaussures solides.",
+        "Une brume légère monte depuis le sud de la rue.",
+        "Paul vérifie l’interrupteur avant de brancher l’outil.",
+        "Il boit un jus et reprend le travail une minute plus tard.",
+        "À midi, il lit le menu du restaurant du coin.",
+        "L’après-midi, il pose une statue dans le jardin du client.",
+        "Le soir, il regarde la lune depuis le bus.",
+        "Chez lui, il range ses outils près du mur du bureau."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Dans la chambre, Tom joue avec un cube.",
+        "Il porte un pull et des chaussures de sport.",
+        "Sur le mur, une affiche montre une fusée.",
+        "Tom boit un jus et mange un muffin.",
+        "Il regarde la lune par la fenêtre.",
+        "Puis il range le cube sur le bureau.",
+        "Maman ferme la serrure de la porte.",
+        "Tom éteint l’interrupteur.",
+        "Il s’endort en une minute."
+      ]
+    },
+    {
+      "level": "b1",
+      "sentences": [
+        "Pour un spectacle, Clara prépare une jupe turquoise.",
+        "Elle répète chaque geste une minute devant le miroir.",
+        "Dans la rue, la brume donne une vue mystérieuse.",
+        "Clara prend le bus avec ses chaussures de danse.",
+        "Au théâtre, elle pose son pull dans le bureau des artistes.",
+        "Elle boit un jus et vérifie la serrure de sa valise.",
+        "Sur scène, elle danse sous une lumière douce.",
+        "Le soir, elle regarde la lune depuis le balcon.",
+        "Chez elle, elle range le costume près du mur."
+      ]
     }
   ],
-  "type14": [
-    {
-      "level": "a1",
-      "sentence": "La musicienne travaille dans le bureau."
-    },
-    {
-      "level": "a1",
-      "sentence": "Hugo se dépêche pour le bus."
-    },
-    {
-      "level": "a1",
-      "sentence": "La collègue trouve le chaussures."
-    },
-    {
-      "level": "a1",
-      "sentence": "La directrice montre la coupure plus loin."
-    },
-    {
-      "level": "a1",
-      "sentence": "Brutus montre le cube bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "Julie oublie le curry bien."
-    },
+  "type14Stories": [
     {
       "level": "a2",
-      "sentence": "Ce matin, la factrice porte la jupe sur le mur."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le collègue achète le jus plus loin."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, la cuisinière photographie la lune dans le bus."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Luc termine le lutin plus loin."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, la collègue sert le menu sur le mur."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, la boulangère attend la minute sur le mur."
+      "sentences": [
+        "Samedi, Luc se lève et met un pull.",
+        "Il lace ses chaussures près du mur.",
+        "Puis il prend le bus vers le centre.",
+        "Dans la rue, il y a un peu de brume.",
+        "Luc arrive au bureau et ouvre la porte.",
+        "Il boit un jus et mange un muffin.",
+        "Sur le bureau, il pose un cube en papier.",
+        "Il lit le menu pour le déjeuner.",
+        "À midi, il marche jusqu’à un café.",
+        "Il regarde la vue depuis la terrasse.",
+        "L’après-midi, il répare une serrure.",
+        "Il vérifie aussi l’interrupteur.",
+        "Puis il range ses affaires.",
+        "Le soir, il reprend le bus.",
+        "Dans la rue, il voit la lune.",
+        "Chez lui, il pose ses chaussures.",
+        "Il boit encore un jus.",
+        "Il éteint la lumière du bureau.",
+        "Il s’endort content."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand la fille prend la méduse sur le mur, et Luc part plus loin aussi."
+      "sentences": [
+        "Julie arrive au bureau malgré une coupure annoncée.",
+        "Elle prend le bus sous une brume froide.",
+        "Dans la rue, elle serre son pull contre elle.",
+        "Au bureau, l’interrupteur ne marche pas tout de suite.",
+        "Julie allume une lampe et ouvre un dossier.",
+        "Un collègue arrive avec des chaussures mouillées.",
+        "Ils attendent une minute, puis le courant revient.",
+        "Julie vérifie la serrure du tiroir important.",
+        "À midi, elle lit le menu et commande un jus.",
+        "Elle mange un muffin près de la fenêtre.",
+        "L’après-midi, elle termine son travail calmement.",
+        "Sur le chemin, elle regarde la vue sur la ville.",
+        "Dans le bus, elle pense à la lune du soir.",
+        "Chez elle, elle pose ses chaussures près du mur.",
+        "Elle enfile un pull plus chaud.",
+        "Elle boit un dernier jus à la cuisine.",
+        "Puis elle ferme la serrure de la porte.",
+        "Elle regarde encore la lune une minute.",
+        "Enfin, elle s’endort soulagée."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Uma plante des tulipes dans le jardin.",
+        "Elle porte une jupe et un pull.",
+        "Une brume légère couvre le mur.",
+        "Uma boit un jus et sourit.",
+        "Elle trouve une statue près du tuyau.",
+        "Puis elle nettoie la serrure du portail.",
+        "Elle range ses chaussures sur le paillasson.",
+        "Dans le bureau, elle pose un cube.",
+        "Elle mange un muffin au sucre.",
+        "L’après-midi, elle lit près de la fenêtre.",
+        "Elle regarde la vue sur la rue.",
+        "Le chat joue avec une bulle de savon.",
+        "Uma ferme l’interrupteur de la cave.",
+        "Le soir, la lune éclaire le jardin.",
+        "Uma arrose encore une tulipe.",
+        "Elle rentre et pose son pull.",
+        "Elle boit un dernier jus.",
+        "Puis elle ferme la porte à clé.",
+        "Elle s’endort calmement."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Luc attrape la puce, parce que Julie est plus contente."
+      "sentences": [
+        "Bruno visite un musée du sud de la ville.",
+        "Il prend le bus et marche dans une rue brumeuse.",
+        "Au guichet, il lit le programme de la visite.",
+        "Il porte un pull et des chaussures confortables.",
+        "Dans la salle, une statue turquoise attire son regard.",
+        "Bruno photographie un cube de verre près du mur.",
+        "Il boit un jus au café et mange un muffin.",
+        "Une minute plus tard, il découvre une jupe ancienne.",
+        "La vue depuis la terrasse du musée est belle.",
+        "Bruno note ses impressions dans un carnet.",
+        "Sur le chemin du retour, il croise une fusée en exposition.",
+        "Dans le bus, il regarde déjà la lune se lever.",
+        "Chez lui, il pose ses chaussures près du bureau.",
+        "Il vérifie la serrure et l’interrupteur.",
+        "Le soir, il boit encore un jus.",
+        "Il range le carnet contre le mur.",
+        "Puis il regarde la lune une dernière fois.",
+        "Il éteint la lumière.",
+        "Il s’endort plein d’images."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Léa a un rhume et reste au lit.",
+        "Elle met un pull chaud.",
+        "Maman lui donne une gélule.",
+        "Léa boit un jus lentement.",
+        "Elle mange un muffin au sucre.",
+        "Le chat joue avec un cube.",
+        "Léa regarde la lune par la fenêtre.",
+        "Elle lit un livre près du mur.",
+        "Puis elle range ses chaussures.",
+        "L’après-midi, elle se repose une minute.",
+        "Elle ferme l’interrupteur de la lampe.",
+        "Maman vérifie la serrure de la porte.",
+        "Léa boit encore un peu de jus.",
+        "Elle regarde la vue dans la rue.",
+        "Le soir, elle met un autre pull.",
+        "Elle dit bonne nuit à maman.",
+        "Elle regarde encore la lune.",
+        "Puis elle s’endort.",
+        "Le lendemain, le rhume va mieux."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand la professeure porte le pull sur le mur, et Luc part plus loin aussi."
+      "sentences": [
+        "Hugo se blesse à la main en réparant un tuyau.",
+        "Il nettoie la blessure et prend le bus.",
+        "Dans la rue, la brume rend la vue difficile.",
+        "Au cabinet, le médecin parle aussi d’une petite brûlure.",
+        "Hugo prend une gélule et écoute les conseils.",
+        "Sur le chemin, il marche lentement avec ses chaussures.",
+        "Chez lui, il pose un pull sur le bureau.",
+        "Il boit un jus et mange un muffin.",
+        "Le chat saute près du mur sans le déranger.",
+        "Hugo regarde la lune une minute avant de dormir.",
+        "Le lendemain, il vérifie la serrure du jardin.",
+        "Il répare encore le tuyau avec prudence.",
+        "Il coupe l’interrupteur avant de toucher les fils.",
+        "À midi, il lit le menu et commande du curry.",
+        "L’après-midi, il se repose sur le canapé.",
+        "Le soir, il range ses chaussures près de la porte.",
+        "Il boit un dernier jus.",
+        "Il regarde encore la lune.",
+        "Puis il s’endort, soulagé."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Nina va au marché avec un sac.",
+        "Elle porte une jupe et des chaussures.",
+        "Dans la rue, elle prend le bus.",
+        "Elle achète du sucre et du curry.",
+        "Puis elle boit un jus.",
+        "Elle mange un muffin sur un banc.",
+        "Chez elle, elle pose tout sur le bureau.",
+        "Elle épluche des légumes près du mur.",
+        "Elle met un glaçon dans son thé.",
+        "L’après-midi, elle range la cuisine.",
+        "Elle vérifie la serrure de la porte.",
+        "Elle éteint l’interrupteur inutile.",
+        "Le soir, elle regarde la lune.",
+        "Elle met un pull chaud.",
+        "Elle boit encore un jus.",
+        "Elle pose ses chaussures près du lit.",
+        "Elle ferme la porte.",
+        "Elle regarde la vue une dernière fois.",
+        "Puis elle s’endort."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Quand le grand-père oublie la rhume dans le bus, parce que Julie est plus contente."
+      "sentences": [
+        "Paul passe la journée à réparer des serrures dans la rue.",
+        "Il prend le bus tôt, sous une brume légère.",
+        "Il porte un pull de travail et des chaussures solides.",
+        "Chez le premier client, il change un tuyau.",
+        "Il vérifie l’interrupteur avant de brancher la perceuse.",
+        "À midi, il lit le menu et commande un jus.",
+        "Il mange un muffin et reprend le travail.",
+        "L’après-midi, il pose une statue dans un jardin.",
+        "Il nettoie le mur autour de la nouvelle serrure.",
+        "Une minute plus tard, le client le remercie.",
+        "Sur le chemin, Paul regarde la vue vers le sud.",
+        "Dans le bus, il voit déjà la lune.",
+        "Chez lui, il range ses outils dans le bureau.",
+        "Il pose ses chaussures près de la porte.",
+        "Il boit un dernier jus.",
+        "Il enfile un pull propre.",
+        "Puis il ferme la serrure de l’entrée.",
+        "Il regarde encore la lune.",
+        "Il s’endort fatigué mais satisfait."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Tom construit une fusée en papier.",
+        "Il travaille sur le bureau.",
+        "Il porte un pull et des chaussures.",
+        "Sur le mur, il colle un dessin.",
+        "Il joue aussi avec un cube.",
+        "Il boit un jus et mange un muffin.",
+        "Puis il regarde la lune.",
+        "Maman ferme la serrure.",
+        "Tom éteint l’interrupteur.",
+        "Il range ses affaires une minute.",
+        "Le chat saute près du mur.",
+        "Tom rit et le caresse.",
+        "Il pose ses chaussures sous le lit.",
+        "Il remet son pull.",
+        "Il boit encore un peu de jus.",
+        "Il regarde la vue dans la rue.",
+        "Puis il dit bonne nuit.",
+        "Il regarde encore la lune.",
+        "Il s’endort vite."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la cuisinière traverse la rue, et Luc part plus loin aussi."
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand le bébé prend la russe sur le mur, et Luc part plus loin aussi."
+      "sentences": [
+        "Clara prépare un spectacle de danse pour le sud de la ville.",
+        "Elle essaie une jupe turquoise devant le miroir.",
+        "Dans la rue, la brume donne une vue douce.",
+        "Clara prend le bus avec ses chaussures de scène.",
+        "Au théâtre, elle pose son pull dans le bureau.",
+        "Elle boit un jus et mange un muffin rapidement.",
+        "Elle vérifie la serrure de sa valise une minute.",
+        "Sur scène, elle danse sous une lumière turquoise.",
+        "Le public applaudit et Clara sourit.",
+        "Après le spectacle, elle regarde la lune depuis le balcon.",
+        "Elle range le costume près du mur.",
+        "Dans le bus du retour, elle ferme les yeux.",
+        "Chez elle, elle pose ses chaussures près de la porte.",
+        "Elle enfile un pull confortable.",
+        "Elle boit un dernier jus à la cuisine.",
+        "Elle éteint l’interrupteur du salon.",
+        "Puis elle ferme la serrure.",
+        "Elle regarde encore la lune.",
+        "Elle s’endort heureuse."
+      ]
     }
   ]
 }

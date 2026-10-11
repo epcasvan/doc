@@ -6675,128 +6675,388 @@
       ]
     }
   ],
-  "type12": [
-    {
-      "level": "a1",
-      "sentence": "Le cousin montre une aigle."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le cuisinier cherche une ampoule."
-    },
-    {
-      "level": "a1",
-      "sentence": "Théo range la beige bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La cousine prend la belge."
-    },
+  "type12Stories": [
     {
       "level": "a2",
-      "sentence": "À midi, la cousine pose le cerf près de Théo."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le garçon cherche le chaussettes avec Hélène."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la musicienne sauve le cheval très vite."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le bébé range le concert après le thé."
+      "sentences": [
+        "Ce matin, Hélène prépare un café près de la fenêtre.",
+        "Elle met un béret beige et sort vers l’école.",
+        "Dans la rue, elle croise son frère avec le bébé.",
+        "À l’entrée de l’école, elle salue un élève.",
+        "En classe, elle ouvre son cahier près de la fenêtre.",
+        "À midi, elle mange une crêpe et une pêche.",
+        "L’après-midi, elle aide à ranger la scène pour la fête.",
+        "Le soir, elle boit un thé près de la télé.",
+        "Puis elle s’endort en pensant à l’été."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le cuisinier range la cuire, et Théo est très content aussi."
+      "sentences": [
+        "Théo prépare une recette de crème et de courgettes.",
+        "Il coupe les légumes près de la fenêtre de la cuisine.",
+        "Sa mère lui passe une cuillère et une louche.",
+        "Théo verse la crème avec soin dans la casserole.",
+        "Il goûte, ajoute une pincée de sel, puis laisse cuire.",
+        "Le bébé de sa sœur dort dans la chambre à côté.",
+        "Le soir, toute la famille mange près de la télé.",
+        "Théo range les couverts et essuie la table.",
+        "Avant de dormir, il lit une règle de grammaire pour l’école."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "À la ferme, Léa regarde un cheval et un cerf.",
+        "Elle porte des chaussettes et un béret.",
+        "Son neveu court dans le pré.",
+        "Ils voient une sauterelle près d’une fleur.",
+        "Léa boit un café avec le fermier.",
+        "Ensuite, elle cueille une pêche.",
+        "Le ciel montre une étoile dès le soir.",
+        "Léa rentre à l’école le lendemain.",
+        "Elle raconte la visite à ses amis élèves."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Théo prend la droite, et Théo est très content aussi."
+      "sentences": [
+        "Pour la fête de septembre, Éva organise un concert à l’école.",
+        "Elle prépare la scène et vérifie chaque entrée.",
+        "Son frère apporte des chaises près de la fenêtre.",
+        "Éva porte un béret élégant et une veste beige.",
+        "Les élèves répètent une chanson sur l’été.",
+        "Le soir, les parents arrivent avec le bébé de la voisine.",
+        "Éva présente le spectacle sans être trop nerveuse.",
+        "Après le concert, elle boit un café avec sa mère.",
+        "Chez elle, elle range le matériel et s’endort contente."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Dans la cuisine, Benoît mélange une recette.",
+        "Il coupe une courgette et une fève.",
+        "Sa mère lui donne une cuillère.",
+        "Benoît verse la crème dans le saladier.",
+        "Il laisse cuire le plat près de la fenêtre.",
+        "Le bébé rit dans la chaise haute.",
+        "Benoît pose un couvert pour chacun.",
+        "Le soir, ils mangent et regardent la télé.",
+        "Puis Benoît range et prépare son cartable d’école."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la cousine regarde le dé, et Théo est très content aussi."
+      "sentences": [
+        "Sur le ferry, Hélène regarde le fleuve et les rives.",
+        "Elle porte un béret et tient un café chaud.",
+        "Son père lui montre une mouette près de la voie.",
+        "Hélène photographie un éclair lointain sans être nerveuse.",
+        "À l’arrivée, ils prennent un thé près de la fenêtre.",
+        "Le soir, une fête simple a lieu sur la terrasse.",
+        "Hélène danse un peu, puis s’assoit pour boire.",
+        "Elle pense déjà à l’école du lendemain.",
+        "Chez elle, elle range son béret et s’endort."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Au pré, Rémi court avec son neveu.",
+        "Ils voient une sauterelle et une guêpe.",
+        "Rémi porte un béret et des chaussettes.",
+        "Ils boivent de l’eau près de la ferme.",
+        "Ensuite, ils mangent une pêche.",
+        "Le cheval du fermier s’approche.",
+        "Rémi photographie une étoile le soir.",
+        "Puis il rentre préparer l’école.",
+        "Il range son cahier près de la fenêtre."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la cuisinière cherche une entrée, et Théo est très content aussi."
+      "sentences": [
+        "En septembre, Claire aide sa mère à préparer une fête.",
+        "Elles décorent la scène près de l’entrée.",
+        "Claire verse de la crème sur un gâteau avec une cuillère.",
+        "Le bébé dort pendant qu’elles rangent les chaises.",
+        "Les élèves arrivent avec des bérets et des sourires.",
+        "Claire présente une chanson sans être trop nerveuse.",
+        "Après le concert, elle boit un café près de la fenêtre.",
+        "Sa mère la félicite et range les couverts.",
+        "Le soir, Claire regarde la télé et pense à l’été."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "À l’école, Élise ouvre la fenêtre de la classe.",
+        "Elle pose son béret sur la chaise.",
+        "Le maître écrit une règle au tableau.",
+        "Élise copie la leçon dans son cahier.",
+        "À midi, elle mange une crêpe à la cantine.",
+        "Son frère apporte un café pour la maîtresse.",
+        "L’après-midi, ils préparent la fête.",
+        "Élise range la scène avec les élèves.",
+        "Le soir, elle regarde une étoile près de chez elle."
+      ]
+    },
+    {
+      "level": "b1",
+      "sentences": [
+        "En été, Marc aide à la ferme de son oncle près du fleuve.",
+        "Il met un béret et des chaussettes solides.",
+        "Chaque matin, il ouvre la fenêtre de la grange.",
+        "Il donne à manger au cheval et observe un cerf au loin.",
+        "À midi, il boit un café et mange une pêche.",
+        "Le soir, une petite fête réunit la famille dans le pré.",
+        "Marc n’est pas nerveux : il aime cette vie simple.",
+        "Il révise une règle dans un cahier beige pour l’école.",
+        "Puis il s’endort, fatigué et heureux."
+      ]
     }
   ],
-  "type14": [
-    {
-      "level": "a1",
-      "sentence": "Le médecin oublie le bouclé."
-    },
-    {
-      "level": "a1",
-      "sentence": "La directrice nettoie la bouilloire."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le facteur prend le boulanger."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le boulanger console un bébé."
-    },
-    {
-      "level": "a1",
-      "sentence": "Eve achète un béret bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "Théo aime un café bien."
-    },
+  "type14Stories": [
     {
       "level": "a2",
-      "sentence": "Ce matin, le directeur prend le couper avec Hélène."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Eve coupe la courgette très vite."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le médecin cherche le couvert avec Hélène."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, la directrice range la crevette après le thé."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le garçon cherche la crème près de Théo."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le collègue cherche la cuillère avec Hélène."
+      "sentences": [
+        "Samedi, Hélène se lève et prépare un café.",
+        "Elle s’assoit près de la fenêtre.",
+        "Elle met un béret beige pour sortir.",
+        "Dans la rue, elle croise son frère.",
+        "Il pousse le landau du bébé.",
+        "Hélène va à l’école pour un atelier.",
+        "À l’entrée, elle salue un élève.",
+        "En classe, elle lit près de la fenêtre.",
+        "À midi, elle mange une pêche.",
+        "Elle boit aussi un peu de crème dessert.",
+        "L’après-midi, elle aide pour la fête.",
+        "Elle range des chaises sur la scène.",
+        "Son neveu arrive avec des chaussettes neuves.",
+        "Ils préparent une chanson simple.",
+        "Le soir, Hélène rentre à la maison.",
+        "Elle boit un thé près de la télé.",
+        "Elle regarde une étoile dehors.",
+        "Puis elle range son béret.",
+        "Elle s’endort en pensant à l’été."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la directrice trouve un est, parce que Hélène est très contente."
+      "sentences": [
+        "Théo veut surprendre sa mère avec une nouvelle recette.",
+        "Il coupe des courgettes près de la fenêtre.",
+        "Il mélange la crème avec une cuillère en bois.",
+        "Sa sœur surveille le bébé dans la chambre.",
+        "Théo verse le mélange et laisse cuire doucement.",
+        "Il ajoute une pincée de sel selon la règle du livre.",
+        "Le soir, toute la famille s’assoit pour goûter.",
+        "Même le père, souvent nerveux, sourit enfin.",
+        "Après le repas, Théo range les couverts.",
+        "Il essuie la table et lave la louche.",
+        "Puis il boit un café près de la télé.",
+        "Il révise une leçon d’école pour septembre.",
+        "Sa mère lui prépare une pêche en dessert.",
+        "Théo note la recette dans un cahier beige.",
+        "Avant de dormir, il ouvre un peu la fenêtre.",
+        "Il regarde une étoile dans le ciel d’été.",
+        "Il range son béret sur la chaise.",
+        "Il éteint la télé.",
+        "Il s’endort content d’avoir réussi."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "À la ferme, Léa met un béret.",
+        "Elle porte aussi des chaussettes chaudes.",
+        "Son neveu court dans le pré.",
+        "Ils voient un cheval et un cerf.",
+        "Une sauterelle saute près d’eux.",
+        "Léa boit un café avec le fermier.",
+        "Elle mange une pêche sous un arbre.",
+        "Ensuite, elle regarde la fenêtre de la grange.",
+        "Le bébé de sa sœur rit dans le landau.",
+        "Léa photographie une étoile le soir.",
+        "Puis elle rentre préparer l’école.",
+        "Elle range son cahier près de l’entrée.",
+        "Le lendemain, elle raconte la visite.",
+        "Les élèves écoutent près de la scène.",
+        "Léa dessine le cheval au tableau.",
+        "À midi, elle mange une crêpe.",
+        "Elle boit un thé après les cours.",
+        "Le soir, elle regarde la télé.",
+        "Elle s’endort fatiguée mais heureuse."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le facteur montre la faible, et Théo est très content aussi."
+      "sentences": [
+        "Pour la fête de l’école, Éva organise un petit concert.",
+        "Elle vérifie la scène, l’entrée et les chaises.",
+        "Son frère apporte un café et des gâteaux à la crème.",
+        "Éva porte un béret élégant et une veste beige.",
+        "Les élèves répètent une chanson sur l’été.",
+        "Éva se sent un peu nerveuse, mais elle respire.",
+        "Les parents arrivent avec un bébé endormi.",
+        "Éva présente le spectacle près de la fenêtre ouverte.",
+        "Après le concert, elle boit un thé avec sa mère.",
+        "Elle range les couverts et les décorations.",
+        "Son neveu l’aide à porter une chaise.",
+        "Le soir, Éva regarde la télé pour se détendre.",
+        "Elle note dans un cahier ce qui a bien marché.",
+        "Puis elle prépare son cartable pour l’école.",
+        "Avant de dormir, elle ouvre la fenêtre.",
+        "Elle regarde une étoile dans le ciel.",
+        "Elle pose son béret sur la table.",
+        "Elle éteint la lumière de l’entrée.",
+        "Elle s’endort fière de la fête."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Benoît aide sa mère dans la cuisine.",
+        "Il coupe une courgette et une fève.",
+        "Il mélange la crème avec une cuillère.",
+        "Le bébé rit près de la fenêtre.",
+        "Benoît verse le tout dans la casserole.",
+        "Il laisse cuire le plat.",
+        "Puis il pose un couvert pour chacun.",
+        "À table, ils mangent calmement.",
+        "Benoît boit un café avec son père.",
+        "L’après-midi, il prépare l’école.",
+        "Il range son cahier et son béret.",
+        "Il révise une règle près de la télé.",
+        "Son frère arrive avec une pêche.",
+        "Ils mangent le fruit dans le pré.",
+        "Le soir, Benoît regarde une étoile.",
+        "Il ferme la fenêtre de sa chambre.",
+        "Il dit bonne nuit à sa mère.",
+        "Il pense à la fête de septembre.",
+        "Puis il s’endort."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la voisine ouvre la fenêtre, parce que Hélène est très contente."
+      "sentences": [
+        "Sur le ferry, Hélène voyage avec son père vers l’est.",
+        "Elle tient un café et porte un béret contre le vent.",
+        "Une mouette vole près de la voie d’eau.",
+        "Hélène photographie un éclair lointain sans paniquer.",
+        "À l’arrivée, ils boivent un thé près d’une fenêtre.",
+        "Le soir, une petite fête a lieu sur la terrasse.",
+        "Hélène danse, puis s’assoit pour reprendre son souffle.",
+        "Elle n’est plus nerveuse comme au début.",
+        "Son père lui offre une pêche et un sourire.",
+        "Le lendemain, Hélène pense déjà à l’école.",
+        "Elle range son béret et prépare son cahier.",
+        "Dans le train du retour, elle lit une règle de français.",
+        "Elle regarde le fleuve défiler derrière la vitre.",
+        "Chez elle, elle boit un café près de la télé.",
+        "Elle raconte le voyage à sa mère.",
+        "Le bébé de sa sœur dort pendant la conversation.",
+        "Hélène ouvre la fenêtre une dernière fois.",
+        "Elle regarde une étoile d’été.",
+        "Puis elle s’endort, bercée par le souvenir du ferry."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Rémi court dans le pré avec son neveu.",
+        "Ils voient une sauterelle et une guêpe.",
+        "Rémi porte un béret rouge.",
+        "Ils boivent de l’eau près de la ferme.",
+        "Le cheval s’approche sans peur.",
+        "Rémi mange une pêche sous un arbre.",
+        "Ensuite, ils rentrent près de la fenêtre.",
+        "Rémi prépare son cartable d’école.",
+        "Il range une règle et un cahier.",
+        "Le soir, il boit un café avec sa mère.",
+        "Il regarde la télé un moment.",
+        "Puis il sort voir une étoile.",
+        "Son neveu rit près de l’entrée.",
+        "Rémi ferme la fenêtre.",
+        "Il pose son béret sur la chaise.",
+        "Il dit bonne nuit.",
+        "Il pense à l’été.",
+        "Il éteint la lumière.",
+        "Il s’endort vite."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand un ami visite la ferme, parce que Hélène est très contente."
+      "sentences": [
+        "Claire et sa mère préparent une fête pour septembre.",
+        "Elles décorent la scène près de l’entrée de l’école.",
+        "Claire verse de la crème sur les gâteaux avec une cuillère.",
+        "Le bébé dort pendant qu’elles rangent les chaises.",
+        "Les élèves arrivent avec des bérets et des fleurs.",
+        "Claire se sent nerveuse, puis elle respire profondément.",
+        "Elle présente une chanson sur l’été.",
+        "Après le concert, elle boit un café près de la fenêtre.",
+        "Sa mère la félicite et range les couverts.",
+        "Claire aide encore à nettoyer la scène.",
+        "Son frère apporte une pêche pour le goûter.",
+        "Le soir, Claire regarde la télé pour se détendre.",
+        "Elle note dans un cahier les idées pour l’année.",
+        "Puis elle révise une règle pour l’école.",
+        "Avant de dormir, elle ouvre la fenêtre.",
+        "Elle regarde une étoile dans le ciel.",
+        "Elle pose son béret beige sur la table.",
+        "Elle éteint la lumière de l’entrée.",
+        "Elle s’endort heureuse."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Élise arrive tôt à l’école.",
+        "Elle ouvre la fenêtre de la classe.",
+        "Elle pose son béret sur la chaise.",
+        "Le maître écrit une règle au tableau.",
+        "Élise copie la leçon dans son cahier.",
+        "À midi, elle mange une crêpe.",
+        "Elle boit un thé avec son frère.",
+        "L’après-midi, ils préparent la fête.",
+        "Élise range la scène avec les élèves.",
+        "Elle place des chaises près de l’entrée.",
+        "Le bébé de la voisine dort dans le couloir.",
+        "Élise chante une chanson simple.",
+        "Le soir, elle rentre à la maison.",
+        "Elle boit un café près de la télé.",
+        "Elle mange une pêche en dessert.",
+        "Puis elle regarde une étoile.",
+        "Elle ferme la fenêtre.",
+        "Elle range son béret.",
+        "Elle s’endort contente."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le copain range le ferry, et Théo est très content aussi."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la jardinière prend la fleuve, et Théo est très content aussi."
+      "sentences": [
+        "Marc passe une semaine à la ferme près du fleuve.",
+        "Il met un béret et des chaussettes solides chaque matin.",
+        "Il ouvre la fenêtre de la grange et salue le cheval.",
+        "Dans le pré, il observe un cerf et une sauterelle.",
+        "À midi, il boit un café et mange une pêche.",
+        "Son neveu l’aide à porter une louche et une cuillère.",
+        "Ils préparent une recette de crème et de courgettes.",
+        "Marc verse le mélange et laisse cuire.",
+        "Le soir, une petite fête réunit la famille.",
+        "Marc n’est pas nerveux : il aime cette vie simple.",
+        "Il regarde une étoile avec son père.",
+        "Puis il pense déjà à la rentrée de l’école.",
+        "Il révise une règle dans un cahier beige.",
+        "Sa mère lui prépare un thé près de la télé.",
+        "Marc range son béret près de l’entrée.",
+        "Il ferme la fenêtre de sa chambre.",
+        "Il dit bonne nuit à tout le monde.",
+        "Il écoute encore le silence du pré.",
+        "Puis il s’endort, fatigué et heureux."
+      ]
     }
   ]
 }

@@ -12303,128 +12303,388 @@
       ]
     }
   ],
-  "type12": [
-    {
-      "level": "a1",
-      "sentence": "La cousine montre un abricot."
-    },
-    {
-      "level": "a1",
-      "sentence": "La professeure oublie un acteur."
-    },
-    {
-      "level": "a1",
-      "sentence": "Lara range une addition bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La sœur prend un afghan."
-    },
+  "type12Stories": [
     {
       "level": "a2",
-      "sentence": "Ce soir, le frère montre un août dans la salle."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le voisin habite dans un appartement avec Sara."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le grand-père oublie une arrivée avec Sara."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, la cuisinière ouvre un ascenseur dans la salle."
+      "sentences": [
+        "Ce matin, Sara ouvre l’agenda sur la table de la cuisine.",
+        "Elle prépare une salade d’abricots et de bananes pour le petit déjeuner.",
+        "Papa pose le cartable près du sac, prêt pour l’école.",
+        "Le chat saute sur le tabouret et regarde l’assiette.",
+        "Sara coupe encore un ananas et le range dans le réfrigérateur.",
+        "Maman allume la lampe parce que la salle est un peu sombre.",
+        "Ils mangent calmement, sans se presser.",
+        "Avant de partir, Sara vérifie son agenda et ferme son sac.",
+        "Toute la famille quitte l’appartement en souriant."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la cuisinière décolle de un aéroport, parce que Lara est là aussi."
+      "sentences": [
+        "Yanis arrive à l’aéroport avec une valise trop lourde.",
+        "Il cherche son passeport dans le sac, puis dans la poche de sa veste.",
+        "À la douane, il répond calmement aux questions du contrôleur.",
+        "Dans le terminal, il consulte l’agenda pour noter l’heure d’embarquement.",
+        "Il achète une glace à la mandarine et s’assoit près d’une terrasse.",
+        "Un panneau annonce un petit retard, mais Yanis reste patient.",
+        "Il range la valise près de ses bagages et appelle maman.",
+        "Quand l’avion est annoncé, il traverse la salle d’attente sans courir.",
+        "Finalement, il monte à bord, soulagé d’avoir tout rangé à temps."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Léa marche dans le parc avec son sac à dos.",
+        "Elle s’assoit sur un banc près de la cascade.",
+        "Un canard s’approche et regarde son sandwich.",
+        "Léa sort une pommade de son sac et soigne une petite coupure.",
+        "Elle lit un cahier de mathématiques au calme.",
+        "Le chat du voisin passe et s’allonge au soleil.",
+        "Léa range le cahier et prend une photo de la cascade.",
+        "Elle jette l’emballage de sa glace à la poubelle.",
+        "Puis elle rentre à l’appartement avant l’orage."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Lara prend le bactéries à la table, et Sara est contente aussi."
+      "sentences": [
+        "Au supermarché, Karim pousse le chariot vers le rayon fruits.",
+        "Il choisit des carottes, des tomates et une pastèque bien mûre.",
+        "À la pâtisserie, il prend aussi une madeleine et un macaron.",
+        "Il consulte l’agenda pour ne pas oublier les courses de maman.",
+        "À la caisse, il range tout dans un grand sac solide.",
+        "Dehors, une averse commence et il court vers le garage.",
+        "Dans la voiture, il pose le sac sur le siège arrière.",
+        "Chez lui, il vide les courses sur la table de la cuisine.",
+        "Ensuite, il prépare une salade et allume la radio."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "En classe, Nina pose son cartable sous la table.",
+        "Elle ouvre son cahier et prend son stylo.",
+        "Le maître écrit une addition au tableau.",
+        "Nina range son agenda après avoir noté les devoirs.",
+        "À la récréation, elle partage une banane avec une amie.",
+        "Elles restent dans la salle à cause de la pluie.",
+        "Puis Nina range son sac avant la fin du cours.",
+        "Elle vérifie encore une fois son cartable.",
+        "Enfin, elle rentre à la maison avec maman."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le garçon porte le bagage, et Sara est contente aussi."
+      "sentences": [
+        "Sofia prépare sa valise pour un week-end en vallée.",
+        "Elle plie un débardeur, des sandales et un pull léger.",
+        "Sur la table, elle pose aussi un passeport et un agenda.",
+        "Le chat dort sur le canapé pendant qu’elle range.",
+        "Sofia vérifie la réservation à l’hôtel sur son téléphone.",
+        "Papa l’aide à fermer la valise trop pleine.",
+        "Ils descendent l’ascenseur avec les bagages.",
+        "Dans le garage, ils chargent la voiture sans se presser.",
+        "Sur la route, Sofia consulte la carte et sourit déjà."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Après l’école, Omar achète une glace à la vanille.",
+        "Il s’assoit sur la terrasse du café avec son sac.",
+        "Il ouvre son agenda pour regarder les activités du soir.",
+        "Un ami arrive et pose son cartable près de la table.",
+        "Ils parlent du match de football du week-end.",
+        "Omar partage un abricot et une mandarine.",
+        "Quand la pluie commence, ils rangent leurs sacs.",
+        "Ils courent jusqu’à l’appartement d’Omar.",
+        "Chez lui, ils jouent calmement dans la salle."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le voisin cherche la baleine, et Sara est contente aussi."
+      "sentences": [
+        "À la bibliothèque, Amira cherche un livre sur les animaux.",
+        "Elle s’installe à une table près de la fenêtre.",
+        "Dans son sac, elle a un cahier, un stylo et une lampe de poche.",
+        "Elle note dans l’agenda la date du prochain festival.",
+        "Une averse frappe les vitres, mais la salle reste calme.",
+        "Amira lit un article sur le panda et le flamant rose.",
+        "Avant de partir, elle range ses affaires dans le cartable.",
+        "Elle prend l’ascenseur et traverse le hall.",
+        "Dans l’appartement, elle raconte sa journée à maman."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Dimanche, la famille visite une ferme dans la vallée.",
+        "Les enfants regardent un canard près de l’eau.",
+        "Une vache mange de l’herbe derrière la cabane.",
+        "Papa prend des photos avec son téléphone.",
+        "Sara pose son sac sur un banc et mange une banane.",
+        "Le chat de la ferme s’approche sans peur.",
+        "Ils achètent des carottes et des radis frais.",
+        "Puis ils rangent tout dans la valise du coffre.",
+        "Sur le chemin du retour, tout le monde est content."
+      ]
+    },
+    {
+      "level": "b1",
+      "sentences": [
+        "Pour la fête de l’école, Lina prépare un spectacle simple.",
+        "Elle note les répétitions dans son agenda chaque soir.",
+        "Dans la salle, les élèves rangent les chaises et les tables.",
+        "Lina apporte des macarons et une salade de fruits.",
+        "Papa installe une lampe pour éclairer la scène.",
+        "Quand les parents arrivent, Lina salue calmement.",
+        "Elle joue son rôle sans regarder trop souvent le cahier.",
+        "À la fin, la salle applaudit et Lina sourit.",
+        "En rentrant à l’appartement, elle range son costume dans le sac."
+      ]
     }
   ],
-  "type14": [
-    {
-      "level": "a1",
-      "sentence": "Le jardinier étudie un agenda."
-    },
-    {
-      "level": "a1",
-      "sentence": "La professeure écrit une agrafeuse."
-    },
-    {
-      "level": "a1",
-      "sentence": "Sara utilise un allemand bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La cousine trouve une allergie."
-    },
-    {
-      "level": "a1",
-      "sentence": "Anna montre un américain bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La grand-mère cherche un ananas."
-    },
+  "type14Stories": [
     {
       "level": "a2",
-      "sentence": "Ce matin, le boulanger prend une asperge à la table."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la maman montre un aspirateur dans la salle."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, la grand-mère sèche une assiette à la gare."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le cuisinier range une averse dans la salle."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le maître sert un avocat à la table."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le bébé cherche un avril à la table."
+      "sentences": [
+        "Samedi matin, Hugo se lève tôt dans l’appartement.",
+        "Il ouvre les volets et allume la lampe de la salle.",
+        "Sur la table, maman a posé du pain et des abricots.",
+        "Hugo prépare son cartable pour le cours de natation.",
+        "Il range une serviette, un maillot et une gourde dans le sac.",
+        "Papa vérifie l’agenda et note l’heure du départ.",
+        "Le chat miaule près de l’assiette vide.",
+        "Hugo mange une banane avant de sortir.",
+        "Ils descendent au garage avec la valise de sport.",
+        "Sur la route, Hugo regarde les panneaux du carrefour.",
+        "À la piscine, il pose son sac dans un casier.",
+        "Il nage calmement pendant une demi-heure.",
+        "Ensuite, il prend une douche et range ses affaires.",
+        "Sur la terrasse, il mange une glace avec papa.",
+        "Ils parlent du match de handball du week-end prochain.",
+        "De retour à l’appartement, Hugo ouvre son cahier.",
+        "Il note ses devoirs dans l’agenda.",
+        "Le soir, la famille mange une salade de tomates.",
+        "Hugo s’endort content après cette journée active."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le cuisinier aime la banane, parce que Lara est là aussi."
+      "sentences": [
+        "Clara prépare un voyage pour rendre visite à sa grand-mère.",
+        "Elle étale ses vêtements sur la table du salon.",
+        "Dans la valise, elle place des sandales, un débardeur et un pull.",
+        "Elle glisse aussi l’agenda, le passeport et un médicament.",
+        "Le chat saute dans la valise vide et Clara rit.",
+        "Papa l’aide à fermer le sac trop plein.",
+        "Ils prennent l’ascenseur et chargent la voiture au garage.",
+        "Sur l’autoroute, Clara consulte la carte de la destination.",
+        "Ils s’arrêtent à une aire pour acheter une glace.",
+        "Clara mange une madeleine et boit un peu d’eau.",
+        "À l’arrivée, grand-mère les attend sur la terrasse.",
+        "Dans l’appartement, Clara range ses affaires sur l’étagère.",
+        "Elles préparent une salade d’ananas et de carottes.",
+        "Le soir, Clara allume la lampe et lit un cahier de photos.",
+        "Elle note dans l’agenda les souvenirs de la journée.",
+        "Le lendemain, elles visitent une cascade dans la vallée.",
+        "Clara prend des photos d’un canard près de l’eau.",
+        "Avant de repartir, elle embrasse grand-mère.",
+        "Dans le train du retour, elle range calmement son sac."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Lundi, Maya arrive en retard à l’école.",
+        "Elle court dans le couloir avec son cartable.",
+        "Dans la salle, le maître ouvre l’agenda de la classe.",
+        "Maya s’assoit à sa table et sort son cahier.",
+        "Elle écrit une addition et vérifie le résultat.",
+        "À la pause, elle mange une mandarine dans la cour.",
+        "Son amie lui prête un stylo et un intercalaire.",
+        "L’après-midi, elles vont à la bibliothèque.",
+        "Maya pose son sac sous la table et lit calmement.",
+        "Elle trouve un livre sur les chats et les canards.",
+        "Avant de partir, elle range tout dans le cartable.",
+        "Sur le chemin, elle achète une glace à la fraise.",
+        "Chez elle, maman l’attend dans l’appartement.",
+        "Maya pose le sac près de la porte.",
+        "Elle raconte sa journée à table.",
+        "Le soir, elle allume la lampe de sa chambre.",
+        "Elle note les devoirs dans l’agenda.",
+        "Puis elle range ses livres sur l’étagère.",
+        "Elle s’endort après une longue journée."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand la fille coupe la betterave, et Sara est contente aussi."
+      "sentences": [
+        "Pour son anniversaire, Adam invite des amis à l’appartement.",
+        "Le matin, il range la salle et nettoie la table.",
+        "Maman prépare une salade et une tarte aux abricots.",
+        "Adam sort des assiettes, des verres et des serviettes du placard.",
+        "Il place une lampe près du canapé pour créer une ambiance.",
+        "Dans son agenda, il vérifie l’heure d’arrivée des invités.",
+        "Le chat se cache sous le tabouret pendant les préparatifs.",
+        "Les amis arrivent avec un sac de jeux et une glace.",
+        "Ils s’installent autour de la table et parlent longtemps.",
+        "Adam coupe un ananas et partage des bananes.",
+        "Ensuite, ils jouent à un jeu de société dans la salle.",
+        "Une averse commence, mais personne ne veut partir.",
+        "Adam allume la radio et propose une petite danse.",
+        "Plus tard, ils mangent le gâteau sur la terrasse couverte.",
+        "Avant de partir, chacun range son assiette.",
+        "Adam note les prénoms dans son agenda pour dire merci.",
+        "Le soir, il range les chaises et passe l’aspirateur.",
+        "Papa l’aide à reporter les sacs au garage.",
+        "Adam s’endort fatigué, mais très content."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Au marché, Inès marche avec maman.",
+        "Elles choisissent des tomates et des carottes.",
+        "Inès porte un petit sac avec l’argent.",
+        "Maman achète aussi des abricots et une pastèque.",
+        "Elles s’arrêtent à la pâtisserie pour une madeleine.",
+        "Inès note les courses dans un cahier.",
+        "Puis elles rentrent à l’appartement.",
+        "Sur la table, elles posent tous les sacs.",
+        "Inès range les fruits dans le réfrigérateur.",
+        "Le chat saute près de l’assiette et miaule.",
+        "Maman prépare une salade pour le déjeuner.",
+        "Inès met la table et allume la lampe.",
+        "Elles mangent calmement sur la terrasse.",
+        "Après le repas, Inès lave les assiettes.",
+        "Elle range le cahier dans son cartable.",
+        "L’après-midi, elle lit près de la fenêtre.",
+        "Elle regarde la pluie tomber dans la vallée.",
+        "Le soir, elle écrit dans son agenda.",
+        "Puis elle range son sac pour le lendemain."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand le cousin touche le bras, et Sara est contente aussi."
+      "sentences": [
+        "À la gare, Nora attend le train avec une valise.",
+        "Elle vérifie l’heure sur l’agenda et sur le panneau.",
+        "Dans son sac, elle a un cahier, une glace et une banane.",
+        "Un retard est annoncé, alors elle s’assoit calmement.",
+        "Elle appelle papa pour expliquer la situation.",
+        "Quand le train arrive, elle monte avec sa valise.",
+        "Dans le wagon, elle pose le sac sous la table pliante.",
+        "Elle mange l’abricot et lit un magazine.",
+        "À l’arrivée, sa cousine l’attend près du terminal.",
+        "Elles prennent un taxi jusqu’à l’appartement.",
+        "Nora range ses affaires sur l’étagère de la chambre.",
+        "Le soir, elles préparent une salade de tomates.",
+        "Nora allume la lampe et ouvre son cahier de voyage.",
+        "Elle note les souvenirs de la journée dans l’agenda.",
+        "Le lendemain, elles visitent un théâtre en ville.",
+        "Nora achète une glace sur la terrasse du café.",
+        "Avant de repartir, elle ferme bien sa valise.",
+        "Dans le train, elle regarde la vallée défiler.",
+        "Chez elle, elle range le sac et sourit encore."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Le chat de Samia aime dormir sur le canapé.",
+        "Ce matin, il saute sur la table de la cuisine.",
+        "Samia le pose doucement sur le tabouret.",
+        "Elle prépare une salade et coupe un ananas.",
+        "Papa pose le cartable près de la porte.",
+        "Samia range son agenda dans le sac.",
+        "Ils partent ensemble vers l’école.",
+        "Dans la salle, Samia ouvre son cahier.",
+        "Elle écrit une addition sans erreur.",
+        "À midi, elle mange une banane dans la cour.",
+        "L’après-midi, il y a un cours de yoga.",
+        "Samia pose son sac dans un coin calme.",
+        "Après le cours, elle rentre à l’appartement.",
+        "Le chat l’attend près de la lampe.",
+        "Samia lui donne à manger dans l’assiette.",
+        "Puis elle fait ses devoirs à table.",
+        "Elle note tout dans l’agenda.",
+        "Le soir, la famille mange des carottes et des tomates.",
+        "Samia s’endort avec le chat près d’elle."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Anna cherche le brouillard à la table, et Sara est contente aussi."
+      "sentences": [
+        "Pour un projet d’école, Elias filme un reportage simple.",
+        "Il note le plan dans son agenda avant de sortir.",
+        "Dans le sac, il range un cahier, une lampe et une bouteille d’eau.",
+        "Au parc, il filme un canard près de la cascade.",
+        "Il interviewe une amie assise sur un banc.",
+        "Une averse commence, alors ils courent vers le garage.",
+        "Chez lui, Elias pose la valise de matériel sur la table.",
+        "Il monte le film sur l’ordinateur dans la salle.",
+        "Maman lui apporte une glace et une madeleine.",
+        "Elias ajoute des titres et vérifie le son.",
+        "Le lendemain, il présente le film en classe.",
+        "Les élèves applaudissent dans la salle.",
+        "Le maître note un bon commentaire dans l’agenda.",
+        "Elias range le cartable et sourit.",
+        "Sur le chemin, il achète un abricot au marché.",
+        "Dans l’appartement, il raconte la journée à papa.",
+        "Le soir, il range le matériel sur l’étagère.",
+        "Il écrit encore quelques idées dans le cahier.",
+        "Puis il éteint la lampe et s’endort content."
+      ]
+    },
+    {
+      "level": "a2",
+      "sentences": [
+        "Dimanche, la famille prépare un pique-nique.",
+        "Maman met du pain et des abricots dans un sac.",
+        "Papa range la nappe et les assiettes dans la valise.",
+        "Sara prend l’agenda pour noter le lieu.",
+        "Ils partent en voiture vers la vallée.",
+        "Près de la cascade, ils posent la table pliante.",
+        "Sara partage une banane et une mandarine.",
+        "Un canard s’approche sans peur.",
+        "Le chat reste dans la voiture, au calme.",
+        "Après le repas, ils jouent au ballon.",
+        "Sara lit un cahier sous un arbre.",
+        "Puis ils rangent tout dans les sacs.",
+        "Sur le retour, ils achètent une glace.",
+        "À l’appartement, Sara allume la lampe.",
+        "Elle aide à vider la valise.",
+        "Le soir, elle écrit dans l’agenda.",
+        "Toute la famille est fatiguée mais heureuse.",
+        "Sara range son cartable pour lundi.",
+        "Elle s’endort en pensant à la cascade."
+      ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Sara construit la cabane, parce que Lara est là aussi."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le frère prend la cafetière, et Sara est contente aussi."
+      "sentences": [
+        "À l’automne, Lila déménage dans un nouvel appartement.",
+        "Elle étiquette les cartons avec un marqueur.",
+        "Sur la table, elle pose l’agenda, les clés et le passeport.",
+        "Papa charge la valise et les sacs dans le camion.",
+        "Le chat miaule dans sa cage de transport.",
+        "Dans le nouveau salon, Lila place le canapé près de la fenêtre.",
+        "Elle installe la lampe et range les livres sur l’étagère.",
+        "Maman prépare une salade pendant que Lila ouvre les cartons.",
+        "Lila trouve son cahier et son cartable dans un sac.",
+        "Elle note les courses dans l’agenda : tomates, carottes, ananas.",
+        "Au supermarché, elle achète aussi une glace pour se récompenser.",
+        "Le soir, la famille mange sur la terrasse.",
+        "Lila allume la radio et range encore quelques affaires.",
+        "Le chat explore chaque salle sans se presser.",
+        "Avant de dormir, Lila vérifie les fenêtres.",
+        "Elle pose le sac près de la porte pour le matin.",
+        "Dans son cahier, elle dessine le plan de l’appartement.",
+        "Puis elle éteint la lampe de la chambre.",
+        "Elle s’endort déjà un peu chez elle."
+      ]
     }
   ]
 }
