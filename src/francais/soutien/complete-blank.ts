@@ -1,8 +1,11 @@
 /**
  * Syllabe à trous (type 5) : toujours 2 lettres CV ou VC.
  * Voyelles / Consonnes I–III : pas de digrammes complexes (an, eau, ch…).
+ * Le blanc ne doit pas non plus chevaucher un son complexe voisin
+ * (ex. bouleau → pas [bo]uleau : o fait partie de ou).
  */
 import { displayVocabLabel } from '@/francais/display-vocab-label'
+import { tokenizeAlpha } from '@/jeux/alpha-phonics'
 import type { SoutienComplete, SoutienVowelBank } from './banks'
 
 const VOWEL_RE = /[aeiouyàâäéèêëïîôöùûüœæ]/i
@@ -37,6 +40,27 @@ function isVowel(ch: string): boolean {
 
 function isLetter(ch: string): boolean {
   return /\p{L}/u.test(ch)
+}
+
+/**
+ * True si un segment Alpha multi-lettres (ou, au, on, ch…) chevauche le blanc
+ * sans y être entièrement inclus — l’élève verrait alors une demi-graphie.
+ */
+function blankSpansComplexGrapheme(word: string, blankIndex: number, blankLen: number): boolean {
+  const blankStart = blankIndex
+  const blankEnd = blankIndex + blankLen
+  let pos = 0
+  for (const seg of tokenizeAlpha(word)) {
+    const start = pos
+    const end = pos + seg.text.length
+    pos = end
+    if (seg.text.length <= 1) continue
+    const overlaps = start < blankEnd && end > blankStart
+    if (!overlaps) continue
+    const fullyInside = start >= blankStart && end <= blankEnd
+    if (!fullyInside) return true
+  }
+  return false
 }
 
 function articleFor(word: string): 'Un' | 'Une' {
@@ -108,6 +132,8 @@ export function findCvVcBlank(
     if (!isCV && !isVC) continue
     const blank = word.slice(i, i + 2)
     if (!allowComplex && COMPLEX_BLANKS.has(blank.toLowerCase())) continue
+    // Hors sons complexes : o+u, a+n, c+h… ne doivent pas couper le blanc.
+    if (!allowComplex && blankSpansComplexGrapheme(word, i, 2)) continue
     if (!blankContainsLesson(blank, graphemes, allowComplex)) continue
     // Préférer début de mot, puis CV.
     let score = 0
