@@ -65,12 +65,14 @@ export function PhraseColorBlock({ item, mode }: { item: MathItem; mode: Preview
 export function PhraseOrderBlock({ item, mode }: { item: MathItem; mode: PreviewMode }) {
   const show = mode === 'answers'
   const tokens = item.tokens ?? []
-  const orderedLabels = item.labels ?? []
   const graphemes = item.themeGraphemes ?? []
-  const categoryOf = (text: string): PhraseCategory =>
-    tokens.find((t) => t.text === text)?.category ?? 'nom'
   const labelOf = (text: string) =>
     graphemes.length ? highlightThemeLetters(text, graphemes) : text
+  /** Corrigé = phrase écrite sur la ligne, pas les pastilles colorées. */
+  const answerText =
+    item.responseAnswer ??
+    (item.labels && item.labels.length > 0 ? item.labels.join(' ') : undefined) ??
+    item.answer
   return (
     <div className="phrase-order-block">
       <div className="phrase-bubble-row">
@@ -94,31 +96,7 @@ export function PhraseOrderBlock({ item, mode }: { item: MathItem; mode: Preview
           )
         })}
       </div>
-      {show && orderedLabels.length > 0 ? (
-        <div className="phrase-bubble-row phrase-order-answer" aria-label="Corrigé">
-          {orderedLabels.map((text, i) => {
-            const fill = PHRASE_COLORS[categoryOf(text)]
-            const ink = isDarkPhraseColor(fill) ? '#fff' : '#111'
-            return (
-              <span
-                className="phrase-bubble"
-                key={`ans-${text}-${i}`}
-                style={{
-                  backgroundColor: fill,
-                  borderColor: '#111',
-                  color: ink,
-                  WebkitPrintColorAdjust: 'exact',
-                  printColorAdjust: 'exact',
-                }}
-              >
-                {labelOf(text)}
-              </span>
-            )
-          })}
-        </div>
-      ) : (
-        <PhraseAnswerSlot show={show} answer={item.responseAnswer ?? item.answer} />
-      )}
+      <PhraseAnswerSlot show={show} answer={answerText} />
     </div>
   )
 }
