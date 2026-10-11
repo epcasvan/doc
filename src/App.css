@@ -2523,21 +2523,21 @@ html,body,#root{
 }
 .dictee-write-line.filled{border-bottom-style:solid}
 
-/* Soutien FR type 12 — Playwrite ; prompt aligné au n° ; +15 px / +30 px */
+/* Soutien FR type 12 — n° + « J’entends… » sur une ligne ; Playwrite en dessous ; +30 px */
 .count-sound-block{width:100%;min-width:0}
 .count-sound-table{
   width:100%;border-collapse:collapse;border:none;table-layout:fixed
 }
 .count-sound-table td{
-  border:none;vertical-align:middle;padding:0
+  border:none;vertical-align:top;padding:0
 }
 .count-sound-num{
   width:2em;
-  padding:8px 4px 0;
+  padding:0 4px 0 0;
   font-size:14px;font-weight:700;color:var(--purple);
-  text-align:center;vertical-align:top;line-height:1.35
+  text-align:left;vertical-align:top;line-height:1.35
 }
-.count-sound-prompt-cell{padding:8px 10px 0;vertical-align:top}
+.count-sound-prompt-cell{padding:0 10px 0 0;vertical-align:top}
 .count-sound-prompt{
   font-size:13px;font-weight:400;color:var(--ink);line-height:1.35;
   display:inline-block;vertical-align:top
@@ -2554,7 +2554,8 @@ html,body,#root{
   vertical-align:baseline;
 }
 .count-sound-blank.filled{border-bottom-style:solid}
-.count-sound-phrase-cell{padding:15px 10px 50px} /* +15 entre phrases ; +30 entre questions */
+/* Phrase Playwrite sous le prompt ; 30 px avant la question suivante */
+.count-sound-phrase-cell{padding:6px 10px 30px 0}
 .count-sound-phrase{
   margin:0;
   font-family:'Calli Playwrite',cursive;
