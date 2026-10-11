@@ -867,6 +867,11 @@ export type ExerciseBlock = {
    */
   soutienType1Words?: string[]
   /**
+   * Soutien FR types 9 / 12 / 14 : niveau des phrases
+   * (`all` par défaut = mélange A1 / A2 / B1).
+   */
+  soutienLevel?: 'all' | 'a1' | 'a2' | 'b1'
+  /**
    * Domaine Calligraphie : un mot ou une phrase par ligne
    * (texte brut du panneau enseignant·e).
    */

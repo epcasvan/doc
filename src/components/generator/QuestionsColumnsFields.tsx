@@ -7,6 +7,7 @@ import { isTcmCfrConsignesType } from '@/tcm-cfr/test'
 import { isTcfConsignesType } from '@/tcf/catalog'
 import { isOralComprehensionExercise } from '@/components/generator/page-helpers'
 import type { ExerciseBlock, WorksheetPage } from '@/math/types'
+import { SOUTIEN_LEVEL_FILTERS } from '@/francais/soutien/phrases-data'
 
 export type QuestionsColumnsFieldsProps = {
   activeBlock: ExerciseBlock
@@ -201,7 +202,7 @@ export function QuestionsColumnsFields(props: QuestionsColumnsFieldsProps) {
                 ) : null}
                 {soutienKind === 'associer-image' ? (
                   <small className="muted">
-                    Nombre de séries (5 QR + 5 images type 1 · défaut 1 · max. 3).
+                    Nombre de séries (5 QR + 5 images type 1 · défaut 2 · max. 3).
                   </small>
                 ) : null}
                 {bankOverflow ? (
@@ -288,6 +289,28 @@ export function QuestionsColumnsFields(props: QuestionsColumnsFieldsProps) {
                         : 'Au-delà de 4 questions, une feuille « suite » est ajoutée automatiquement.'}
                     </small>
                   ) : null}
+                </div>
+              ) : null}
+              {soutienKind === 'lettres-phrase' ||
+              soutienKind === 'compter' ||
+              soutienKind === 'lire' ? (
+                <div className="mode-toggle-block">
+                  <b>Niveau des phrases</b>
+                  <div className="mode-toggle is-4" role="group" aria-label="Niveau des phrases">
+                    {SOUTIEN_LEVEL_FILTERS.map((opt) => (
+                      <button
+                        key={opt.id}
+                        type="button"
+                        className={(activeBlock.soutienLevel ?? 'all') === opt.id ? 'active' : ''}
+                        onClick={() => updatePage({ soutienLevel: opt.id })}
+                      >
+                        {opt.label}
+                      </button>
+                    ))}
+                  </div>
+                  <small className="muted">
+                    Tous = mélange A1 / A2 / B1 (A1 : 5–7 mots · A2 : 8–12 · B1 : 13–15).
+                  </small>
                 </div>
               ) : null}
               {isSoutienRelier ? (

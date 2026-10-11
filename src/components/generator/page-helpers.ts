@@ -185,10 +185,9 @@ export function applyType(type: ExerciseType, prev?: ExerciseBlock): Partial<Exe
                                   ? { count: 8 }
                                   : soutienKind === 'lire'
                                     ? { count: 20 }
-                                    : soutienKind === 'associer-audio'
+                                    : soutienKind === 'associer-audio' ||
+                                        soutienKind === 'associer-image'
                                       ? { count: 2 }
-                                      : soutienKind === 'associer-image'
-                                        ? { count: 1 }
                                         : isLecture || isSoutienFr
                                           ? { count: 6 }
                                           : isGeoCalc || isCountIcons

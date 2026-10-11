@@ -23,6 +23,11 @@ import { buildWordSearch, wordSearchHitCells } from './word-search'
 import { type1WordPool, type1Words } from './type1-words'
 import type { SoutienGenerateOptions } from './generate-options'
 import {
+  filterSoutienLevel,
+  soutienPhrasesFor,
+  type SoutienLevelFilter,
+} from './phrases-data'
+import {
   AUDIO_ORDER_CLIPS,
   buildSyllableReadingList,
   countSoundInPhrase,
@@ -31,6 +36,19 @@ import {
   otherWords,
   syllableBlockRows,
 } from './gen-kind-helpers'
+
+/** Phrases rédigées (types 12 / 14) filtrées par niveau ; `null` si aucune. */
+function curatedPhrases(
+  bank: SoutienVowelBank,
+  kind: 'type12' | 'type14',
+  level: SoutienLevelFilter | undefined,
+): string[] | null {
+  const data = soutienPhrasesFor(bank.id)
+  if (!data) return null
+  const rows = filterSoutienLevel(data[kind], level)
+  if (rows.length === 0) return null
+  return rows.map((r) => r.sentence)
+}
 
 export function genKind(
   kind: SoutienKindId,
@@ -378,33 +396,61 @@ export function genKind(
       const exclude = new Set(
         (options?.excludeWords ?? []).map((w) => displayVocabLabel(w).toLowerCase()),
       )
-      const fromBank = bank.scrambles.filter(
-        (row) => !exclude.has(displayVocabLabel(row.word).toLowerCase()),
-      )
-      /** Compléter avec d’autres mots du son (hors exclus), phrases regenerées. */
-      const extraWords = type1WordPool(bank).filter(
-        (w) => !exclude.has(displayVocabLabel(w).toLowerCase()),
-      )
-      const byWord = new Map<string, (typeof fromBank)[number][]>()
-      for (const row of fromBank) {
-        const key = displayVocabLabel(row.word).toLowerCase()
-        const list = byWord.get(key) ?? []
-        list.push(row)
-        byWord.set(key, list)
-      }
-      for (const raw of extraWords) {
-        const key = displayVocabLabel(raw).toLowerCase()
-        if (byWord.has(key)) continue
-        const phrases = buildPhrasesForWord(raw, bank.sound, byWord.size)
-        if (phrases.length === 0) continue
-        byWord.set(
-          key,
-          phrases.map((sentence) => ({
-            sentence,
-            word: displayVocabLabel(raw),
-            letters: '',
-          })),
+      type ScrambleRow = { sentence: string; word: string; letters: string }
+      const byWord = new Map<string, ScrambleRow[]>()
+      const curated = soutienPhrasesFor(bank.id)
+      const curatedRows = curated ? filterSoutienLevel(curated.type9, options?.level) : []
+      if (curatedRows.length > 0) {
+        /** Phrases rédigées (par niveau) ; mots des types 1 / 5 en dernier recours. */
+        const excludedRows: ScrambleRow[] = []
+        for (const row of curatedRows) {
+          const scramble: ScrambleRow = { sentence: row.sentence, word: row.word, letters: '' }
+          if (exclude.has(displayVocabLabel(row.word).toLowerCase())) {
+            excludedRows.push(scramble)
+            continue
+          }
+          const key = displayVocabLabel(row.word).toLowerCase()
+          const list = byWord.get(key) ?? []
+          list.push(scramble)
+          byWord.set(key, list)
+        }
+        if (byWord.size < want) {
+          for (const scramble of shuffle(rng, excludedRows)) {
+            if (byWord.size >= want) break
+            const key = displayVocabLabel(scramble.word).toLowerCase()
+            const list = byWord.get(key) ?? []
+            list.push(scramble)
+            byWord.set(key, list)
+          }
+        }
+      } else {
+        const fromBank = bank.scrambles.filter(
+          (row) => !exclude.has(displayVocabLabel(row.word).toLowerCase()),
         )
+        /** Compléter avec d’autres mots du son (hors exclus), phrases regenerées. */
+        const extraWords = type1WordPool(bank).filter(
+          (w) => !exclude.has(displayVocabLabel(w).toLowerCase()),
+        )
+        for (const row of fromBank) {
+          const key = displayVocabLabel(row.word).toLowerCase()
+          const list = byWord.get(key) ?? []
+          list.push(row)
+          byWord.set(key, list)
+        }
+        for (const raw of extraWords) {
+          const key = displayVocabLabel(raw).toLowerCase()
+          if (byWord.has(key)) continue
+          const phrases = buildPhrasesForWord(raw, bank.sound, byWord.size)
+          if (phrases.length === 0) continue
+          byWord.set(
+            key,
+            phrases.map((sentence) => ({
+              sentence,
+              word: displayVocabLabel(raw),
+              letters: '',
+            })),
+          )
+        }
       }
       const wordKeys = shuffle(rng, [...byWord.keys()])
       const chosenKeys = wordKeys.slice(0, Math.min(want, wordKeys.length))
@@ -502,10 +548,8 @@ export function genKind(
     case 'compter': {
       /** Phrases à lire (texte simple) + compter le son ; count réglable. */
       const want = Math.max(1, Math.min(12, n))
-      const phrases = shuffle(rng, [...bank.countPhrases]).slice(
-        0,
-        Math.min(want, bank.countPhrases.length),
-      )
+      const pool = curatedPhrases(bank, 'type12', options?.level) ?? [...bank.countPhrases]
+      const phrases = shuffle(rng, pool).slice(0, Math.min(want, pool.length))
       const items = phrases.map((phrase) => ({
         phrase,
         count: countSoundInPhrase(phrase, bank),
@@ -549,10 +593,8 @@ export function genKind(
     case 'lire': {
       /** Phrases à lire ; voyelle du thème en couleur ; count réglable. */
       const want = Math.max(1, Math.min(20, n))
-      const phrases = shuffle(rng, [...bank.readPhrases]).slice(
-        0,
-        Math.min(want, bank.readPhrases.length),
-      )
+      const pool = curatedPhrases(bank, 'type14', options?.level) ?? [...bank.readPhrases]
+      const phrases = shuffle(rng, pool).slice(0, Math.min(want, pool.length))
       return {
         instruction: 'Lisez les phrases.',
         preferredColumns: 1,

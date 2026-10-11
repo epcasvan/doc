@@ -2392,9 +2392,10 @@ html,body,#root{
   border-collapse:collapse;border:none;margin:0;width:auto;max-width:100%;
 }
 .syllable-mini-table td{
-  width:1.35em;height:1.35em;
+  /* ≥ 5 lettres par case (« plante », « cloche ») sans débordement */
+  width:auto;min-width:4.2em;height:1.5em;
   border:1.25px solid var(--ink);
-  padding:0;text-align:center;vertical-align:middle;
+  padding:0 4px;text-align:center;vertical-align:middle;white-space:nowrap;
   font-size:10px;font-weight:700;line-height:1;color:var(--ink);
   box-sizing:border-box;background:#fff;
 }
@@ -2624,10 +2625,15 @@ html,body,#root{
 }
 .audio-match-key{font-size:11px;font-weight:700;color:var(--purple);margin-left:4px}
 
-/* Soutien FR types 15 / 16 — classer (QR numérotés + cases cadrées) */
+/* Soutien FR types 15 / 16 — classer : un cadre (type 1) autour de la série (5 QR + 5 cases) */
 .audio-order-block{
-  display:flex;flex-direction:column;gap:14px;width:100%;min-width:0;
-  margin-bottom:18px
+  display:flex;flex-direction:column;gap:12px;width:100%;min-width:0;
+  border:1px solid #d8dde6;
+  border-radius:8px;
+  padding:8px 8px 10px;
+  box-sizing:border-box;
+  background:#fff;
+  margin-bottom:14px
 }
 .audio-order-qr-row{
   display:grid;
@@ -2658,11 +2664,10 @@ html,body,#root{
 }
 .audio-order-slot{
   display:flex;flex-direction:column;
-  border:1px solid #d8dde6; /* cadre type 1 */
-  border-radius:8px;
-  padding:5px 4px 6px;
+  border:none; /* le cadre est sur .audio-order-block */
+  padding:0 4px 2px;
   box-sizing:border-box;
-  background:#fff;
+  background:transparent;
   min-width:0;min-height:0;
   align-items:center;gap:4px
 }

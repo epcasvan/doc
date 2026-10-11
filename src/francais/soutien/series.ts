@@ -57,7 +57,7 @@ export function soutienFicheTitle(letter: SoutienLetterOption): string {
  * 12 pages A4 pour un son (bankId) :
  * 1 mots · 2 lettres+syllabes · 3 relier+compléter · 4 écouter+images ·
  * 5 syllabe-son · 6 phrases · 7 déterminants+dictée · 8 compter ·
- * 9 ordre · 10 lire · 11 classer mots×2 + images×1 · 12 mots mêlés.
+ * 9 ordre · 10 lire · 11 classer mots×2 + images×2 · 12 mots mêlés.
  */
 export function buildSoutienSeriesPages(bankId: string, themeId: string): PageConfig[] {
   const b = (kind: SoutienKindId, count: number, columns = 1) =>
@@ -74,8 +74,8 @@ export function buildSoutienSeriesPages(bankId: string, themeId: string): PageCo
     page(bankId, themeId, 'compter', 8),
     page(bankId, themeId, 'ordre', 9),
     page(bankId, themeId, 'lire', 20),
-    /** 2 séries (type 15 + type 16), 5 QR / mots / images chacune. */
-    page(bankId, themeId, 'associer-audio', 1, 1, [b('associer-image', 1)]),
+    /** Type 15 ×2 séries + type 16 ×2 séries, 5 QR / mots / images chacune. */
+    page(bankId, themeId, 'associer-audio', 2, 1, [b('associer-image', 2)]),
     page(bankId, themeId, 'mots-meles', 12),
   ]
 }

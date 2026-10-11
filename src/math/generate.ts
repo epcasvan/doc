@@ -175,6 +175,7 @@ function buildSingleBlock(
     soutienCompleterEntries: config.soutienCompleterEntries,
     excludeWords: config.soutienExcludeWords,
     type1Words: config.soutienType1Words,
+    level: config.soutienLevel,
   })
   if (soutien) {
     return {

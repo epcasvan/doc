@@ -1,4 +1,5 @@
 import type { MathItem } from '@/math/types'
+import type { SoutienLevelFilter } from './phrases-data'
 
 export type SoutienBatch = {
   items: MathItem[]
@@ -32,4 +33,6 @@ export type SoutienGenerateOptions = {
   excludeWords?: readonly string[]
   /** Type 16 : mots du type 1 de la fiche (images). */
   type1Words?: readonly string[]
+  /** Types 9 / 12 / 14 : niveau des phrases (défaut `all`). */
+  level?: SoutienLevelFilter
 }

@@ -1,5 +1,9 @@
-/** Téléchargement des phrases Soutien (types 9 / 12 / 14) pour édition manuelle. */
+/**
+ * Téléchargement des phrases Soutien (types 9 / 12 / 14) pour édition manuelle.
+ * Source de vérité : `src/francais/soutien/phrases/<bankId>.json` (niveaux a1 / a2 / b1).
+ */
 import type { SoutienVowelBank } from './banks'
+import { soutienPhrasesFor } from './phrases-data'
 
 function triggerDownload(filename: string, content: string, mime = 'application/json') {
   const blob = new Blob([content], { type: `${mime};charset=utf-8` })
@@ -14,32 +18,31 @@ function triggerDownload(filename: string, content: string, mime = 'application/
   URL.revokeObjectURL(url)
 }
 
-/** Type 9 — mot dans la phrase. */
+/** Type 9 — mot dans la phrase (avec niveau si phrases rédigées). */
 export function downloadSoutienType9Phrases(bank: SoutienVowelBank) {
-  const rows = bank.scrambles.map((s) => ({ word: s.word, sentence: s.sentence }))
-  triggerDownload(
-    `soutien-type9-${bank.id}.json`,
-    `${JSON.stringify(rows, null, 2)}\n`,
-  )
+  const curated = soutienPhrasesFor(bank.id)?.type9
+  const rows =
+    curated && curated.length > 0
+      ? curated
+      : bank.scrambles.map((s) => ({ word: s.word, sentence: s.sentence }))
+  triggerDownload(`soutien-type9-${bank.id}.json`, `${JSON.stringify(rows, null, 2)}\n`)
 }
 
 /** Type 12 — compter le son. */
 export function downloadSoutienType12Phrases(bank: SoutienVowelBank) {
-  triggerDownload(
-    `soutien-type12-${bank.id}.json`,
-    `${JSON.stringify([...bank.countPhrases], null, 2)}\n`,
-  )
+  const curated = soutienPhrasesFor(bank.id)?.type12
+  const rows = curated && curated.length > 0 ? curated : [...bank.countPhrases]
+  triggerDownload(`soutien-type12-${bank.id}.json`, `${JSON.stringify(rows, null, 2)}\n`)
 }
 
 /** Type 14 — phrases à lire. */
 export function downloadSoutienType14Phrases(bank: SoutienVowelBank) {
-  triggerDownload(
-    `soutien-type14-${bank.id}.json`,
-    `${JSON.stringify([...bank.readPhrases], null, 2)}\n`,
-  )
+  const curated = soutienPhrasesFor(bank.id)?.type14
+  const rows = curated && curated.length > 0 ? curated : [...bank.readPhrases]
+  triggerDownload(`soutien-type14-${bank.id}.json`, `${JSON.stringify(rows, null, 2)}\n`)
 }
 
-/** Fichiers regroupés déjà servis sous /soutien-phrases/ (voyelles). */
+/** Fichiers regroupés servis sous /soutien-phrases/ (export de `src/francais/soutien/phrases/`). */
 export function soutienPhrasesPublicUrl(
   kind: 'type9' | 'type12' | 'type14',
   all = true,
