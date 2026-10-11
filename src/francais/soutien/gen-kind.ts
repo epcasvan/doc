@@ -2,7 +2,7 @@
 import { pick, shuffle, type Rng } from '@/math/rng'
 import { tagged } from '@/francais/phrase-sentences'
 import type { Difficulty, MathItem, PhraseToken } from '@/math/types'
-import { displayVocabLabel, isCompoundVocabLabel } from '@/francais/display-vocab-label'
+import { displayVocabLabel } from '@/francais/display-vocab-label'
 import type { SoutienVowelBank } from './banks'
 import { soutienAudioFor } from './audio'
 import { completesFromType1Words } from './complete-blank'
