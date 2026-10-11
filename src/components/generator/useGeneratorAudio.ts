@@ -16,6 +16,11 @@ import {
   downloadSoutienCompleterAudio,
   downloadSoutienMotsAudio,
 } from '@/francais/soutien/download-mots-audio'
+import {
+  downloadSoutienType9Phrases,
+  downloadSoutienType12Phrases,
+  downloadSoutienType14Phrases,
+} from '@/francais/soutien/download-phrases'
 import { parseSoutienType } from '@/francais/soutien/kinds'
 import {
   findSoutienByBankId,
@@ -232,11 +237,22 @@ export function useGeneratorAudio({
     }
   }
 
+  function downloadActiveSoutienPhrases() {
+    const parsed = parseSoutienType(activeBlock.exerciseType)
+    if (!parsed) return
+    const bank = soutienBankById(parsed.bankId)
+    if (!bank) return
+    if (parsed.kind === 'lettres-phrase') downloadSoutienType9Phrases(bank)
+    else if (parsed.kind === 'compter') downloadSoutienType12Phrases(bank)
+    else if (parsed.kind === 'lire') downloadSoutienType14Phrases(bank)
+  }
+
   return {
     downloadActiveTcfAudios,
     downloadActiveTcmCfrAudios,
     downloadActiveSoutienMotsAudio,
     downloadActiveSoutienCompleterAudio,
     downloadActiveSoutienEcouterAudio,
+    downloadActiveSoutienPhrases,
   }
 }

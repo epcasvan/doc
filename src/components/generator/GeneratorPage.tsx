@@ -384,6 +384,7 @@ export function GeneratorPage({ onLogout }: { onLogout: () => void }) {
     downloadActiveSoutienCompleterAudio: audio.downloadActiveSoutienCompleterAudio,
     downloadActiveSoutienEcouterAudio: audio.downloadActiveSoutienEcouterAudio,
     downloadActiveSoutienMotsAudio: audio.downloadActiveSoutienMotsAudio,
+    downloadActiveSoutienPhrases: audio.downloadActiveSoutienPhrases,
     drawTcfTest,
     drawSoutienSeries,
     generate,

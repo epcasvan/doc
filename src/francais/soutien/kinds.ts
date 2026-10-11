@@ -67,7 +67,7 @@ export const SOUTIEN_KINDS = [
     id: 'lettres-phrase',
     label: '9 · Mot dans la phrase',
     description:
-      '9 phrases par défaut ; lettres sous le trait ; hors mots types 1 et 5 ; audio phrases.',
+      '8 phrases par défaut ; lettres sous le trait ; hors mots types 1 et 5 ; phrases éditables.',
     instruction: 'Écrivez le mot correct à l’aide des lettres.',
     preferredColumns: 1 as const,
   },
@@ -114,7 +114,7 @@ export const SOUTIEN_KINDS = [
     id: 'associer-audio',
     label: '15 · Classer les mots',
     description:
-      '8 QR numérotés + 8 mots cadrés avec trait ; 1 à 3 séries (défaut 2) ; hors mots type 1.',
+      '5 QR numérotés + 5 mots cadrés avec trait ; 1 à 3 séries (défaut 2) ; hors mots type 1.',
     instruction: 'Écoutez et classez les mots dans l’ordre.',
     preferredColumns: 1 as const,
   },
@@ -122,7 +122,7 @@ export const SOUTIEN_KINDS = [
     id: 'associer-image',
     label: '16 · Classer les images',
     description:
-      'Comme le type 15, avec les images du type 1 de la fiche ; 1 série par défaut (max. 3).',
+      'Comme le type 15 (5 images type 1) ; 1 série par défaut (max. 3).',
     instruction: 'Écoutez et classez les images dans l’ordre.',
     preferredColumns: 1 as const,
   },

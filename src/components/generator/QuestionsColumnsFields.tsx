@@ -170,7 +170,7 @@ export function QuestionsColumnsFields(props: QuestionsColumnsFieldsProps) {
                 ) : null}
                 {soutienKind === 'lettres-phrase' ? (
                   <small className="muted">
-                    Nombre de phrases (défaut 9 · max. 16 · lettres remélangées à chaque tirage).
+                    Nombre de phrases (défaut 8 · max. 16). Téléchargez le JSON pour corriger.
                   </small>
                 ) : null}
                 {soutienKind === 'determinants' ? (
@@ -180,7 +180,9 @@ export function QuestionsColumnsFields(props: QuestionsColumnsFieldsProps) {
                   <small className="muted">Nombre de mots à écrire (défaut 8 · max. 16).</small>
                 ) : null}
                 {soutienKind === 'compter' ? (
-                  <small className="muted">Nombre de phrases à compter (défaut 8 · max. 12).</small>
+                  <small className="muted">
+                    Nombre de phrases (défaut 8 · max. 12). Téléchargez le JSON pour corriger.
+                  </small>
                 ) : null}
                 {soutienKind === 'ordre' ? (
                   <small className="muted">
@@ -188,16 +190,18 @@ export function QuestionsColumnsFields(props: QuestionsColumnsFieldsProps) {
                   </small>
                 ) : null}
                 {soutienKind === 'lire' ? (
-                  <small className="muted">Nombre de phrases à lire (défaut 20 · max. 20).</small>
+                  <small className="muted">
+                    Nombre de phrases (défaut 20 · max. 20). Téléchargez le JSON pour corriger.
+                  </small>
                 ) : null}
                 {soutienKind === 'associer-audio' ? (
                   <small className="muted">
-                    Nombre de séries (8 QR + 8 mots cadrés · défaut 2 · max. 3).
+                    Nombre de séries (5 QR + 5 mots cadrés · défaut 2 · max. 3).
                   </small>
                 ) : null}
                 {soutienKind === 'associer-image' ? (
                   <small className="muted">
-                    Nombre de séries (8 QR + 8 images type 1 · défaut 1 · max. 3).
+                    Nombre de séries (5 QR + 5 images type 1 · défaut 1 · max. 3).
                   </small>
                 ) : null}
                 {bankOverflow ? (

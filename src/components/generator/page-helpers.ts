@@ -176,10 +176,11 @@ export function applyType(type: ExerciseType, prev?: ExerciseBlock): Partial<Exe
                             ? { count: 15 }
                             : soutienKind === 'syllabe-son'
                               ? { count: 18 }
-                              : soutienKind === 'lettres-phrase' ||
-                                  soutienKind === 'determinants' ||
-                                  soutienKind === 'ordre'
-                                ? { count: 9 }
+                              : soutienKind === 'lettres-phrase'
+                                ? { count: 8 }
+                                : soutienKind === 'determinants' ||
+                                    soutienKind === 'ordre'
+                                  ? { count: 9 }
                                 : soutienKind === 'dictee' || soutienKind === 'compter'
                                   ? { count: 8 }
                                   : soutienKind === 'lire'

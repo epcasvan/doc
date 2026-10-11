@@ -69,12 +69,13 @@ export function buildSoutienSeriesPages(bankId: string, themeId: string): PageCo
     page(bankId, themeId, 'relier', 12, 2, [b('completer', 12, 2)]),
     page(bankId, themeId, 'ecouter', 9, 3, [b('ecouter-image', 15, 5)]),
     page(bankId, themeId, 'syllabe-son', 18, 3),
-    page(bankId, themeId, 'lettres-phrase', 9),
+    page(bankId, themeId, 'lettres-phrase', 8),
     page(bankId, themeId, 'determinants', 9, 1, [b('dictee', 8)]),
     page(bankId, themeId, 'compter', 8),
     page(bankId, themeId, 'ordre', 9),
     page(bankId, themeId, 'lire', 20),
-    page(bankId, themeId, 'associer-audio', 2, 1, [b('associer-image', 1)]),
+    /** 2 séries (type 15 + type 16), 5 QR / mots / images chacune. */
+    page(bankId, themeId, 'associer-audio', 1, 1, [b('associer-image', 1)]),
     page(bankId, themeId, 'mots-meles', 12),
   ]
 }

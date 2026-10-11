@@ -26,6 +26,7 @@ export type ResultPanelProps = {
   downloadActiveSoutienCompleterAudio: () => void | Promise<void>
   downloadActiveSoutienEcouterAudio: () => void | Promise<void>
   downloadActiveSoutienMotsAudio: () => void | Promise<void>
+  downloadActiveSoutienPhrases: () => void
   drawTcfTest: () => void
   drawSoutienSeries: () => void
   generate: () => void
@@ -85,6 +86,7 @@ export function ResultPanel({
   downloadActiveSoutienCompleterAudio,
   downloadActiveSoutienEcouterAudio,
   downloadActiveSoutienMotsAudio,
+  downloadActiveSoutienPhrases,
   drawTcfTest,
   drawSoutienSeries,
   generate,
@@ -179,6 +181,31 @@ export function ResultPanel({
                       <path
                         fill="currentColor"
                         d="M12 3a1 1 0 0 1 1 1v9.59l2.3-2.3a1 1 0 1 1 1.4 1.42l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 1 1 1.4-1.42L11 13.59V4a1 1 0 0 1 1-1zM5 18a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1z"
+                      />
+                    </svg>
+                  </button>
+                ) : null}
+                {isSoutienFr &&
+                (soutienKind === 'lettres-phrase' ||
+                  soutienKind === 'compter' ||
+                  soutienKind === 'lire') ? (
+                  <button
+                    className="print-chip is-icon is-generate"
+                    type="button"
+                    onClick={downloadActiveSoutienPhrases}
+                    aria-label="Télécharger les phrases (JSON)"
+                    title={
+                      soutienKind === 'lettres-phrase'
+                        ? 'Télécharger les phrases type 9 (JSON à corriger)'
+                        : soutienKind === 'compter'
+                          ? 'Télécharger les phrases type 12 (JSON à corriger)'
+                          : 'Télécharger les phrases type 14 (JSON à corriger)'
+                    }
+                  >
+                    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden>
+                      <path
+                        fill="currentColor"
+                        d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm1 7V3.5L18.5 9H15zM8 13h8v2H8v-2zm0 4h8v2H8v-2z"
                       />
                     </svg>
                   </button>
