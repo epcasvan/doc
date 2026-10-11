@@ -613,7 +613,8 @@ export function genKind(
     case 'associer-image': {
       /**
        * Type 15 (mots) / 16 (images type 1) :
-       * count = nb de séries (1–3) ; chaque série = 8 QR numérotés + 8 cases réponse.
+       * count = nb de séries (1–3) ; chaque série = 5 QR + 5 cases.
+       * Aucun mot / image répété d’une série à l’autre.
        */
       const seriesCount = Math.max(1, Math.min(3, n))
       const mode = kind === 'associer-image' ? 'images' : 'words'
@@ -627,28 +628,33 @@ export function genKind(
           const key = w.toLowerCase()
           return !used.has(key) && !exclude.has(key)
         })
-        const picked = shuffle(rng, available).slice(0, Math.min(want, available.length))
+        if (available.length < want) return []
+        const picked = shuffle(rng, available).slice(0, want)
         for (const w of picked) used.add(w.toLowerCase())
-        if (picked.length >= want) return picked
-        /** Repli : réutiliser hors déjà tirés dans la série courante. */
-        const refill = shuffle(
-          rng,
-          pool.filter((w) => !picked.some((p) => p.toLowerCase() === w.toLowerCase())),
-        )
-        return [...picked, ...refill].slice(0, want)
+        return picked
       }
 
       let pool: string[]
       if (mode === 'images') {
         const pinned = (options?.type1Words ?? []).filter((w) => Boolean(soutienImageFor(w)))
         const fallback = type1WordPool(bank).filter((w) => Boolean(soutienImageFor(w)))
-        pool = pinned.length >= AUDIO_ORDER_CLIPS ? pinned : fallback
+        /** Pool le plus large possible pour couvrir plusieurs séries sans doublon. */
+        const seen = new Set<string>()
+        pool = []
+        for (const raw of [...pinned, ...fallback]) {
+          const key = raw.toLowerCase()
+          if (seen.has(key) || exclude.has(key)) continue
+          if (!soutienImageFor(raw)) continue
+          seen.add(key)
+          pool.push(raw)
+        }
       } else {
         const candidates = [
           ...bank.audioPairs.map((p) => p.word),
           ...bank.wordSearchWords,
           ...lessonWordsBySound(bank),
           ...bank.words,
+          ...type1WordPool(bank),
         ]
         const seen = new Set<string>()
         pool = []
@@ -659,24 +665,13 @@ export function genKind(
           seen.add(key)
           pool.push(raw)
         }
-        if (pool.length < AUDIO_ORDER_CLIPS) {
-          for (const raw of type1WordPool(bank)) {
-            const key = raw.toLowerCase()
-            if (seen.has(key) || exclude.has(key)) continue
-            if (!soutienAudioFor(raw)) continue
-            seen.add(key)
-            pool.push(raw)
-          }
-        }
       }
 
       const items: MathItem[] = []
       for (let s = 0; s < seriesCount; s++) {
         const rawWords = takeWords(pool, AUDIO_ORDER_CLIPS)
-        while (rawWords.length < AUDIO_ORDER_CLIPS && pool.length > 0) {
-          rawWords.push(pool[rawWords.length % pool.length]!)
-        }
-        const clips = rawWords.slice(0, AUDIO_ORDER_CLIPS).map((word) => ({
+        if (rawWords.length < AUDIO_ORDER_CLIPS) break
+        const clips = rawWords.map((word) => ({
           word: displayVocabLabel(word),
           audioSrc: soutienAudioFor(word) ?? undefined,
         }))
