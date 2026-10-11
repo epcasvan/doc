@@ -31,7 +31,7 @@ export type SoutienGenerateOptions = {
   soutienCompleterEntries?: ReadonlyArray<SoutienCompleterEntry>
   /** Types 9 / 15 : mots déjà tirés (types 1 et 5) à exclure. */
   excludeWords?: readonly string[]
-  /** Type 16 : mots du type 1 de la fiche (images). */
+  /** Types 11 / 16 : mots du type 1 de la fiche (vocabulaire + images). */
   type1Words?: readonly string[]
   /** Types 9 / 12 / 14 : niveau des phrases (défaut `all`). */
   level?: SoutienLevelFilter

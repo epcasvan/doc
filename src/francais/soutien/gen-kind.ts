@@ -530,11 +530,12 @@ export function genKind(
     }
     case 'dictee': {
       /** Grille 2 colonnes ; count = nb de mots ; trait continu, sans bordure.
-       * Pas besoin d’image : bassin texte complet (lecture + Voc A1–B1). */
+       * Même bassin que le type 1 (mots + images de la fiche). */
       const want = Math.max(1, Math.min(16, n))
-      const pool = lessonWordsForText(bank)
-      const words = shuffle(rng, pool.length ? [...pool] : [...bank.words])
-        .slice(0, Math.min(want, pool.length || bank.words.length))
+      const fromFiche = (options?.type1Words ?? []).filter((w) => w.trim())
+      const pool = fromFiche.length > 0 ? fromFiche : type1Words(bank, rng, Math.max(16, want))
+      const words = shuffle(rng, [...pool])
+        .slice(0, Math.min(want, pool.length))
         .map(displayVocabLabel)
       return {
         instruction: 'Dictée. Écrivez les mots correctement !',

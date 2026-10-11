@@ -83,7 +83,7 @@ export const SOUTIEN_KINDS = [
     id: 'dictee',
     label: '11 · Dictée',
     description:
-      'Grille 2 colonnes : n° + trait continu ; 8 mots par défaut ; sans image (Voc A1–B1).',
+      'Grille 2 colonnes : n° + trait continu ; 8 mots par défaut (mots du type 1 de la fiche).',
     instruction: 'Dictée. Écrivez les mots correctement !',
     preferredColumns: 1 as const,
   },
