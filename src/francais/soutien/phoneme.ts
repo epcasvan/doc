@@ -13,11 +13,18 @@ import { tokenizeAlpha } from '@/jeux/alpha-phonics'
 import type { SoutienCompound, SoutienVowelBank } from './banks'
 import { GRAPHEME_WORD_POOLS } from './grapheme-word-pools'
 import { LECTURE_WORD_ITEMS, type LectureWordItem } from './lecture-word-items'
+import { LECTURE_WORD_ITEMS_EXTRA } from './lecture-word-items-extra'
+
+/** Banque lecture + mots Voc courants (A1–B1) pour les exercices sans image. */
+const ALL_LECTURE_WORD_ITEMS: readonly LectureWordItem[] = [
+  ...LECTURE_WORD_ITEMS,
+  ...LECTURE_WORD_ITEMS_EXTRA,
+]
 
 /** Index label minuscule → item lecture. */
 const LECTURE_BY_LABEL: Map<string, LectureWordItem> = (() => {
   const map = new Map<string, LectureWordItem>()
-  for (const item of LECTURE_WORD_ITEMS) {
+  for (const item of ALL_LECTURE_WORD_ITEMS) {
     const key = item.label.trim().toLowerCase()
     if (key && !map.has(key)) map.set(key, item)
   }
@@ -44,6 +51,17 @@ export const ALL_VOCAB_LABELS: readonly string[] = (() => {
 /** Phonème pédagogique de la leçon (ex. `/a/`, `/o/`). */
 export function lessonPhoneme(bank: SoutienVowelBank): string {
   return bank.sound
+}
+
+/**
+ * Phonèmes acceptés pour le filtre (aliases pédagogiques).
+ * La voyelle E est notée `/ə/` en thème mais la banque lecture utilise `/e/` / `/ɛ/`.
+ */
+export function lessonPhonemesAccepted(bank: SoutienVowelBank): readonly string[] {
+  const primary = lessonPhoneme(bank)
+  if (primary === '/ə/') return ['/ə/', '/e/', '/ɛ/']
+  if (primary === '/e/') return ['/e/', '/ɛ/', '/ə/']
+  return [primary]
 }
 
 /** Graphèmes écrits de la leçon (surlignage). */
@@ -73,7 +91,8 @@ function teachingPhonemes(label: string): readonly string[] | null {
 export function wordHasLessonSound(word: string, bank: SoutienVowelBank): boolean {
   const phonemes = teachingPhonemes(word)
   if (!phonemes) return false
-  return phonemes.includes(lessonPhoneme(bank))
+  const accepted = lessonPhonemesAccepted(bank)
+  return accepted.some((p) => phonemes.includes(p))
 }
 
 /** Le mot contient la lettre écrite de la leçon (o / ô, a / à / â…). */
@@ -226,11 +245,11 @@ export function lessonPhonemeSegmentsFromGraphemes(
  * Voc n’est ajouté que s’il figure dans la banque lecture (phonèmes connus).
  */
 function labelsWithPhoneme(bank: SoutienVowelBank): string[] {
-  const phoneme = lessonPhoneme(bank)
+  const accepted = new Set(lessonPhonemesAccepted(bank))
   const seen = new Set<string>()
   const out: string[] = []
-  for (const item of LECTURE_WORD_ITEMS) {
-    if (!item.phonemes.includes(phoneme)) continue
+  for (const item of ALL_LECTURE_WORD_ITEMS) {
+    if (!item.phonemes.some((p) => accepted.has(p))) continue
     const key = item.label.toLowerCase()
     if (seen.has(key)) continue
     seen.add(key)
@@ -241,7 +260,7 @@ function labelsWithPhoneme(bank: SoutienVowelBank): string[] {
     const key = label.toLowerCase()
     if (seen.has(key)) continue
     const item = LECTURE_BY_LABEL.get(key)
-    if (!item || !item.phonemes.includes(phoneme)) continue
+    if (!item || !item.phonemes.some((p) => accepted.has(p))) continue
     seen.add(key)
     out.push(label)
   }
@@ -303,16 +322,40 @@ export function lessonWordsBySound(bank: SoutienVowelBank): string[] {
   const pool = complexPools[complexKey] ?? []
   const seen = new Set(base.map((w) => w.toLowerCase()))
   const out = [...base]
-  const phoneme = lessonPhoneme(bank)
+  const accepted = new Set(lessonPhonemesAccepted(bank))
   for (const w of pool) {
     const key = w.toLowerCase()
     if (seen.has(key)) continue
     const item = LECTURE_BY_LABEL.get(key)
-    if (item && !item.phonemes.includes(phoneme)) continue
+    if (item && !item.phonemes.some((p) => accepted.has(p))) continue
     seen.add(key)
     out.push(w)
   }
   return preferBankOrder(bank, out)
+}
+
+/**
+ * Mots pour exercices **sans image obligatoire** (dictée, mots mêlés, écouter…).
+ * Inclut lecture + Voc + banque, y compris mots non illustrés.
+ */
+export function lessonWordsForText(bank: SoutienVowelBank): string[] {
+  const byLetter = lessonWordsByLetter(bank)
+  const bySound = lessonWordsBySound(bank)
+  const seen = new Set<string>()
+  const out: string[] = []
+  const push = (w: string) => {
+    const key = w.trim().toLowerCase()
+    if (!key || seen.has(key)) return
+    seen.add(key)
+    out.push(w.trim())
+  }
+  for (const w of bank.words) push(w)
+  for (const w of byLetter) push(w)
+  for (const w of bySound) push(w)
+  for (const w of bank.wordSearchWords) push(w)
+  for (const w of bank.completes.map((c) => c.word)) push(w)
+  for (const w of bank.syllableItems.map((s) => s.word)) push(w)
+  return out
 }
 
 /** Banque Soutien d’abord, puis mots lecture / Voc. */

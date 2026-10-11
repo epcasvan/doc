@@ -6,6 +6,9 @@ import { displayVocabLabel } from '@/francais/display-vocab-label'
 import { resolveGameImageSrc } from '@/jeux/image-resolve'
 import { GRAPHEME_WORD_POOLS } from './grapheme-word-pools'
 import { LECTURE_WORD_ITEMS } from './lecture-word-items'
+import { LECTURE_WORD_ITEMS_EXTRA } from './lecture-word-items-extra'
+
+const ALL_LECTURE_FOR_AUTO = [...LECTURE_WORD_ITEMS, ...LECTURE_WORD_ITEMS_EXTRA]
 import type {
   SoutienAudio,
   SoutienComplete,
@@ -42,7 +45,7 @@ function isUsefulWord(word: string): boolean {
   // Verbes conjugués / infinitifs / formes nues issus des pools (alignaient, aligne…).
   if (/(aient|ait|ent|ons|ez)$/i.test(w) && w.length > 4) return false
   if (/er$/i.test(w) && w.length >= 5) {
-    if (!LECTURE_WORD_ITEMS.some((it) => it.label.toLowerCase() === w)) return false
+    if (!ALL_LECTURE_FOR_AUTO.some((it) => it.label.toLowerCase() === w)) return false
   }
   // Adjectifs / mots peu imageables des pools x.
   if (w === 'vexant' || w === 'zonard') return false
@@ -50,7 +53,7 @@ function isUsefulWord(word: string): boolean {
   if (
     /e[s]?$/i.test(w) &&
     w.length >= 5 &&
-    !LECTURE_WORD_ITEMS.some((it) => it.label.toLowerCase() === w) &&
+    !ALL_LECTURE_FOR_AUTO.some((it) => it.label.toLowerCase() === w) &&
     /^(align|assign|gagn)/i.test(w)
   ) {
     return false
@@ -98,9 +101,15 @@ function wordsForSound(sound: SoutienSoundOption, letter: SoutienLetterOption): 
   // 1) Items lecture avec le phonème
   // /gz/ (x) est rare dans la banque lecture : accepter aussi « ex + voyelle » (examen…).
   const acceptExVowelGz = sound.bankId === 'x-gz'
-  for (const item of LECTURE_WORD_ITEMS) {
+  const acceptedPhonemes =
+    sound.phoneme === '/ə/'
+      ? ['/ə/', '/e/', '/ɛ/']
+      : sound.phoneme === '/e/'
+        ? ['/e/', '/ɛ/', '/ə/']
+        : [sound.phoneme]
+  for (const item of ALL_LECTURE_FOR_AUTO) {
     const lower = item.label.toLowerCase()
-    const hasPhoneme = item.phonemes.includes(sound.phoneme)
+    const hasPhoneme = item.phonemes.some((p) => acceptedPhonemes.includes(p))
     const exVowelGz = acceptExVowelGz && /^ex[aeiouyàâäéèêëïîôöùûü]/i.test(lower)
     if (!hasPhoneme && !exVowelGz) continue
     // Pour multi-sons (c/g/s/x) : exiger aussi la lettre écrite
@@ -131,13 +140,19 @@ function wordsForSound(sound: SoutienSoundOption, letter: SoutienLetterOption): 
   if (letterKey) {
     const letterPools = GRAPHEME_WORD_POOLS.letters as Record<string, readonly string[]>
     for (const w of letterPools[letterKey] ?? []) {
-      const item = LECTURE_WORD_ITEMS.find((it) => it.label.toLowerCase() === w.toLowerCase())
-      if (item && !item.phonemes.includes(sound.phoneme) && sound.phoneme !== '/∅/') continue
+      const item = ALL_LECTURE_FOR_AUTO.find((it) => it.label.toLowerCase() === w.toLowerCase())
+      if (
+        item &&
+        !item.phonemes.some((p) => acceptedPhonemes.includes(p)) &&
+        sound.phoneme !== '/∅/'
+      ) {
+        continue
+      }
       push(w)
     }
   }
 
-  // Priorité aux mots déjà illustrés (type 1 / écouter-image).
+  // Illustrés d’abord (types 1 / 7 / 16), puis mots sans image (dictée, mêlés…).
   const withImg: string[] = []
   const without: string[] = []
   for (const w of out) {
@@ -218,7 +233,7 @@ function buildSyllableItems(words: readonly string[]): SoutienSyllableItem[] {
     if (!item) continue
     seen.add(key)
     out.push({ word: raw.trim(), parts: item.parts })
-    if (out.length >= 36) break
+    if (out.length >= 72) break
   }
   return out
 }
@@ -294,7 +309,8 @@ export function buildAutoSoutienBank(
     label: `${letter.label} · ${sound.label}`,
     graphemes: sound.graphemes,
     // Slugs bruts (lookup image / phonème) ; l’affichage fiche applique displayVocabLabel.
-    words: seed.slice(0, 24),
+    // Large bassin : types sans image (dictée, mêlés, écouter) piochent aussi les mots non illustrés.
+    words: seed.slice(0, 96),
     syllables: buildSyllables(letter, sound),
     compounds: buildCompounds(seed),
     completes: buildCompletes(seed, sound.graphemes),
@@ -305,6 +321,6 @@ export function buildAutoSoutienBank(
     audioPairs: buildAudioPairs(seed),
     syllableItems: buildSyllableItems(seed),
     orderSentences: buildOrderSentences(seed),
-    wordSearchWords: seed.slice(0, 12).map(displayVocabLabel),
+    wordSearchWords: seed.slice(0, 24).map(displayVocabLabel),
   }
 }

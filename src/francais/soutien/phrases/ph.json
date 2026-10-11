@@ -2,1086 +2,327 @@
   "type9": [
     {
       "level": "a1",
-      "word": "photo",
-      "sentence": "Philippe accroche la photo bien."
-    },
-    {
-      "level": "a2",
-      "word": "photo",
-      "sentence": "Ce matin, Sophie accroche la photo une photo."
-    },
-    {
-      "level": "b1",
-      "word": "photo",
-      "sentence": "À midi, quand Stéphane accroche la photo une photo, et Philippe est très content."
-    },
-    {
-      "level": "a1",
-      "word": "téléphone",
-      "sentence": "Joseph trouve le téléphone bien."
-    },
-    {
-      "level": "a2",
-      "word": "téléphone",
-      "sentence": "Ce soir, Philippe prend le téléphone avec Sophie."
-    },
-    {
-      "level": "b1",
-      "word": "téléphone",
-      "sentence": "À midi, quand Sophie utilise le téléphone une photo, parce que Sophie est contente."
-    },
-    {
-      "level": "a1",
-      "word": "pharmacie",
-      "sentence": "Stéphane cherche la pharmacie bien."
-    },
-    {
-      "level": "a2",
-      "word": "pharmacie",
-      "sentence": "À midi, Joseph longe la pharmacie au téléphone."
-    },
-    {
-      "level": "b1",
-      "word": "pharmacie",
-      "sentence": "À midi, quand Philippe voit la pharmacie avec Sophie, et Philippe est très content."
-    },
-    {
-      "level": "a1",
-      "word": "phrase",
-      "sentence": "Sophie répète la phrase bien."
-    },
-    {
-      "level": "a2",
-      "word": "phrase",
-      "sentence": "Après le cours, Stéphane souligne la phrase une photo."
-    },
-    {
-      "level": "b1",
-      "word": "phrase",
-      "sentence": "Quand Joseph traduit la phrase près de Philippe, parce que Sophie est contente."
-    },
-    {
-      "level": "a1",
-      "word": "philosophie",
-      "sentence": "Philippe prépare la philosophie bien."
-    },
-    {
-      "level": "a2",
-      "word": "philosophie",
-      "sentence": "Ce matin, Stéphane prépare la philosophie avec Philippe."
-    },
-    {
-      "level": "b1",
-      "word": "philosophie",
-      "sentence": "À midi, quand Stéphane recopie la philosophie une photo, et Philippe est très content."
-    },
-    {
-      "level": "a1",
-      "word": "éléphant",
-      "sentence": "Joseph sauve un éléphant bien."
-    },
-    {
-      "level": "a2",
-      "word": "éléphant",
-      "sentence": "Ce matin, Philippe regarde un éléphant avec Sophie."
-    },
-    {
-      "level": "b1",
-      "word": "éléphant",
-      "sentence": "À midi, quand Sophie nourrit un éléphant une photo, parce que Sophie est contente."
-    },
-    {
-      "level": "a1",
-      "word": "dauphin",
-      "sentence": "Stéphane soigne le dauphin bien."
-    },
-    {
-      "level": "a2",
-      "word": "dauphin",
-      "sentence": "Ce soir, Joseph sauve le dauphin au téléphone."
-    },
-    {
-      "level": "b1",
-      "word": "dauphin",
-      "sentence": "À midi, quand Philippe regarde le dauphin avec Sophie, et Philippe est très content."
-    },
-    {
-      "level": "a1",
-      "word": "phare",
-      "sentence": "Sophie visite le phare bien."
-    },
-    {
-      "level": "a2",
-      "word": "phare",
-      "sentence": "À midi, Stéphane quitte le phare une photo."
-    },
-    {
-      "level": "b1",
-      "word": "phare",
-      "sentence": "Quand Joseph traverse le phare près de Philippe, parce que Sophie est contente."
-    },
-    {
-      "level": "a1",
-      "word": "phoque",
-      "sentence": "Philippe caresse le phoque bien."
-    },
-    {
-      "level": "a2",
-      "word": "phoque",
-      "sentence": "Après le cours, Sophie voit le phoque une photo."
-    },
-    {
-      "level": "b1",
-      "word": "phoque",
-      "sentence": "À midi, quand Stéphane soigne le phoque une photo, et Philippe est très content."
-    },
-    {
-      "level": "a1",
-      "word": "orthographe",
-      "sentence": "Joseph utilise une orthographe bien."
-    },
-    {
-      "level": "a2",
-      "word": "orthographe",
-      "sentence": "Avant le repas, Philippe lit une orthographe avec Sophie."
-    },
-    {
-      "level": "b1",
-      "word": "orthographe",
-      "sentence": "À midi, quand Sophie corrige une orthographe une photo, parce que Sophie est contente."
-    },
-    {
-      "level": "a1",
-      "word": "saxophone",
-      "sentence": "Stéphane termine le saxophone bien."
-    },
-    {
-      "level": "a2",
-      "word": "saxophone",
-      "sentence": "Ce matin, Joseph choisit le saxophone au téléphone."
-    },
-    {
-      "level": "b1",
-      "word": "saxophone",
-      "sentence": "À midi, quand Philippe regarde le saxophone avec Sophie, et Philippe est très content."
-    },
-    {
-      "level": "a1",
-      "word": "microphone",
-      "sentence": "Sophie pose le microphone bien."
-    },
-    {
-      "level": "a2",
-      "word": "microphone",
-      "sentence": "Ce soir, Stéphane montre le microphone une photo."
-    },
-    {
-      "level": "b1",
-      "word": "microphone",
-      "sentence": "Quand Joseph trouve le microphone près de Philippe, parce que Sophie est contente."
-    },
-    {
-      "level": "a1",
-      "word": "trophée",
-      "sentence": "Philippe joue avec le trophée."
-    },
-    {
-      "level": "a2",
-      "word": "trophée",
-      "sentence": "À midi, Sophie regarde le trophée une photo."
-    },
-    {
-      "level": "b1",
-      "word": "trophée",
-      "sentence": "À midi, quand Stéphane lance le trophée une photo, et Philippe est très content."
-    },
-    {
-      "level": "a1",
-      "word": "graphique",
-      "sentence": "Joseph étudie le graphique bien."
-    },
-    {
-      "level": "a2",
-      "word": "graphique",
-      "sentence": "Après le cours, Philippe prépare le graphique avec Sophie."
-    },
-    {
-      "level": "b1",
-      "word": "graphique",
-      "sentence": "À midi, quand Sophie ouvre le graphique une photo, parce que Sophie est contente."
-    },
-    {
-      "level": "a1",
-      "word": "nénuphar",
-      "sentence": "Stéphane voit le nénuphar bien."
-    },
-    {
-      "level": "a2",
-      "word": "nénuphar",
-      "sentence": "Avant le repas, Joseph observe le nénuphar au téléphone."
-    },
-    {
-      "level": "b1",
-      "word": "nénuphar",
-      "sentence": "À midi, quand Philippe photographie le nénuphar avec Sophie, et Philippe est très content."
-    },
-    {
-      "level": "a1",
-      "word": "paragraphe",
-      "sentence": "Sophie corrige le paragraphe bien."
-    },
-    {
-      "level": "a2",
-      "word": "paragraphe",
-      "sentence": "Ce matin, Stéphane écrit le paragraphe une photo."
-    },
-    {
-      "level": "b1",
-      "word": "paragraphe",
-      "sentence": "Quand Joseph étudie le paragraphe près de Philippe, parce que Sophie est contente."
-    },
-    {
-      "level": "a1",
-      "word": "sphère",
-      "sentence": "Philippe prend la sphère bien."
-    },
-    {
-      "level": "a2",
-      "word": "sphère",
-      "sentence": "Ce soir, Sophie utilise la sphère une photo."
-    },
-    {
-      "level": "b1",
-      "word": "sphère",
-      "sentence": "À midi, quand Stéphane range la sphère une photo, et Philippe est très content."
-    },
-    {
-      "level": "a1",
-      "word": "phénomène",
-      "sentence": "Joseph observe le phénomène bien."
-    },
-    {
-      "level": "a2",
-      "word": "phénomène",
-      "sentence": "À midi, Philippe photographie le phénomène avec Sophie."
-    },
-    {
-      "level": "b1",
-      "word": "phénomène",
-      "sentence": "À midi, quand Sophie regarde le phénomène une photo, parce que Sophie est contente."
-    },
-    {
-      "level": "a1",
-      "word": "biographie",
-      "sentence": "Stéphane écoute la biographie bien."
-    },
-    {
-      "level": "a2",
-      "word": "biographie",
-      "sentence": "Après le cours, Joseph aime la biographie au téléphone."
-    },
-    {
-      "level": "b1",
-      "word": "biographie",
-      "sentence": "À midi, quand Philippe termine la biographie avec Sophie, et Philippe est très content."
-    },
-    {
-      "level": "a1",
-      "word": "géographie",
-      "sentence": "Sophie ouvre la géographie bien."
-    },
-    {
-      "level": "a2",
-      "word": "géographie",
-      "sentence": "Avant le repas, Stéphane recopie la géographie une photo."
-    },
-    {
-      "level": "b1",
-      "word": "géographie",
-      "sentence": "Quand Joseph utilise la géographie près de Philippe, parce que Sophie est contente."
-    },
-    {
-      "level": "a1",
       "word": "alphabet",
-      "sentence": "Philippe prépare un alphabet bien."
+      "sentence": "Philippe lit un alphabet bien."
     },
     {
       "level": "a2",
       "word": "alphabet",
-      "sentence": "Ce matin, Sophie ouvre un alphabet une photo."
+      "sentence": "Ce matin, Sophie corrige un alphabet une photo."
     },
     {
       "level": "b1",
       "word": "alphabet",
-      "sentence": "À midi, quand Stéphane recopie un alphabet une photo, et Philippe est très content."
+      "sentence": "À midi, quand Stéphane écrit un alphabet une photo, et Philippe est très content."
+    },
+    {
+      "level": "a1",
+      "word": "biographie",
+      "sentence": "Joseph commence la biographie bien."
+    },
+    {
+      "level": "a2",
+      "word": "biographie",
+      "sentence": "Ce soir, Philippe écoute la biographie avec Sophie."
+    },
+    {
+      "level": "b1",
+      "word": "biographie",
+      "sentence": "À midi, quand Sophie aime la biographie une photo, parce que Sophie est contente."
+    },
+    {
+      "level": "a1",
+      "word": "dauphin",
+      "sentence": "Stéphane observe le dauphin bien."
+    },
+    {
+      "level": "a2",
+      "word": "dauphin",
+      "sentence": "À midi, Joseph attrape le dauphin au téléphone."
+    },
+    {
+      "level": "b1",
+      "word": "dauphin",
+      "sentence": "À midi, quand Philippe caresse le dauphin avec Sophie, et Philippe est très content."
+    },
+    {
+      "level": "a1",
+      "word": "graphique",
+      "sentence": "Sophie ouvre le graphique bien."
+    },
+    {
+      "level": "a2",
+      "word": "graphique",
+      "sentence": "Après le cours, Stéphane recopie le graphique une photo."
+    },
+    {
+      "level": "b1",
+      "word": "graphique",
+      "sentence": "Quand Joseph utilise le graphique près de Philippe, parce que Sophie est contente."
+    },
+    {
+      "level": "a1",
+      "word": "géographie",
+      "sentence": "Philippe prépare la géographie bien."
+    },
+    {
+      "level": "a2",
+      "word": "géographie",
+      "sentence": "Avant le repas, Sophie ouvre la géographie une photo."
+    },
+    {
+      "level": "b1",
+      "word": "géographie",
+      "sentence": "À midi, quand Stéphane recopie la géographie une photo, et Philippe est très content."
+    },
+    {
+      "level": "a1",
+      "word": "microphone",
+      "sentence": "Joseph oublie le microphone bien."
+    },
+    {
+      "level": "a2",
+      "word": "microphone",
+      "sentence": "Ce matin, Philippe cherche le microphone avec Sophie."
+    },
+    {
+      "level": "b1",
+      "word": "microphone",
+      "sentence": "À midi, quand Sophie pose le microphone une photo, parce que Sophie est contente."
+    },
+    {
+      "level": "a1",
+      "word": "nénuphar",
+      "sentence": "Stéphane photographie le nénuphar bien."
+    },
+    {
+      "level": "a2",
+      "word": "nénuphar",
+      "sentence": "Ce soir, Joseph regarde le nénuphar au téléphone."
+    },
+    {
+      "level": "b1",
+      "word": "nénuphar",
+      "sentence": "À midi, quand Philippe admire le nénuphar avec Sophie, et Philippe est très content."
+    },
+    {
+      "level": "a1",
+      "word": "orthographe",
+      "sentence": "Sophie corrige une orthographe bien."
+    },
+    {
+      "level": "a2",
+      "word": "orthographe",
+      "sentence": "À midi, Stéphane écrit une orthographe une photo."
+    },
+    {
+      "level": "b1",
+      "word": "orthographe",
+      "sentence": "Quand Joseph étudie une orthographe près de Philippe, parce que Sophie est contente."
+    },
+    {
+      "level": "a1",
+      "word": "paragraphe",
+      "sentence": "Philippe lit le paragraphe bien."
+    },
+    {
+      "level": "a2",
+      "word": "paragraphe",
+      "sentence": "Après le cours, Sophie corrige le paragraphe une photo."
+    },
+    {
+      "level": "b1",
+      "word": "paragraphe",
+      "sentence": "À midi, quand Stéphane écrit le paragraphe une photo, et Philippe est très content."
+    },
+    {
+      "level": "a1",
+      "word": "phare",
+      "sentence": "Joseph cherche le phare bien."
+    },
+    {
+      "level": "a2",
+      "word": "phare",
+      "sentence": "Avant le repas, Philippe longe le phare avec Sophie."
+    },
+    {
+      "level": "b1",
+      "word": "phare",
+      "sentence": "À midi, quand Sophie voit le phare une photo, parce que Sophie est contente."
+    },
+    {
+      "level": "a1",
+      "word": "pharmacie",
+      "sentence": "Stéphane quitte la pharmacie bien."
+    },
+    {
+      "level": "a2",
+      "word": "pharmacie",
+      "sentence": "Ce matin, Joseph traverse la pharmacie au téléphone."
+    },
+    {
+      "level": "b1",
+      "word": "pharmacie",
+      "sentence": "À midi, quand Philippe cherche la pharmacie avec Sophie, et Philippe est très content."
+    },
+    {
+      "level": "a1",
+      "word": "philosophie",
+      "sentence": "Stéphane prépare la philosophie bien."
+    },
+    {
+      "level": "a2",
+      "word": "philosophie",
+      "sentence": "Ce soir, Stéphane recopie la philosophie une photo."
+    },
+    {
+      "level": "b1",
+      "word": "philosophie",
+      "sentence": "Quand Joseph utilise la philosophie près de Philippe, parce que Sophie est contente."
+    },
+    {
+      "level": "a1",
+      "word": "phoque",
+      "sentence": "Philippe regarde le phoque bien."
+    },
+    {
+      "level": "a2",
+      "word": "phoque",
+      "sentence": "À midi, Sophie nourrit le phoque une photo."
+    },
+    {
+      "level": "b1",
+      "word": "phoque",
+      "sentence": "À midi, quand Stéphane observe le phoque une photo, et Philippe est très content."
+    },
+    {
+      "level": "a1",
+      "word": "photo",
+      "sentence": "Joseph prend la photo bien."
+    },
+    {
+      "level": "a2",
+      "word": "photo",
+      "sentence": "Avant le repas, Sophie montre la photo au téléphone."
+    },
+    {
+      "level": "b1",
+      "word": "photo",
+      "sentence": "Quand Joseph joint la photo près de Philippe, parce que Sophie est contente."
+    },
+    {
+      "level": "a1",
+      "word": "phrase",
+      "sentence": "Stéphane souligne la phrase bien."
+    },
+    {
+      "level": "a2",
+      "word": "phrase",
+      "sentence": "Avant le repas, Joseph traduit la phrase au téléphone."
+    },
+    {
+      "level": "b1",
+      "word": "phrase",
+      "sentence": "À midi, quand Philippe recopie la phrase avec Sophie, et Philippe est très content."
+    },
+    {
+      "level": "a1",
+      "word": "phénomène",
+      "sentence": "Sophie plante le phénomène bien."
+    },
+    {
+      "level": "a2",
+      "word": "phénomène",
+      "sentence": "Ce matin, Stéphane dessine le phénomène une photo."
+    },
+    {
+      "level": "b1",
+      "word": "phénomène",
+      "sentence": "Quand Joseph voit le phénomène près de Philippe, parce que Sophie est contente."
+    },
+    {
+      "level": "a1",
+      "word": "saxophone",
+      "sentence": "Philippe regarde le saxophone bien."
+    },
+    {
+      "level": "a2",
+      "word": "saxophone",
+      "sentence": "Ce soir, Sophie joue avec le saxophone une photo."
+    },
+    {
+      "level": "b1",
+      "word": "saxophone",
+      "sentence": "À midi, quand Stéphane commence le saxophone une photo, et Philippe est très content."
+    },
+    {
+      "level": "a1",
+      "word": "sphère",
+      "sentence": "Joseph trouve la sphère bien."
+    },
+    {
+      "level": "a2",
+      "word": "sphère",
+      "sentence": "À midi, Philippe prend la sphère avec Sophie."
+    },
+    {
+      "level": "b1",
+      "word": "sphère",
+      "sentence": "À midi, quand Sophie utilise la sphère une photo, parce que Sophie est contente."
+    },
+    {
+      "level": "a1",
+      "word": "trophée",
+      "sentence": "Stéphane lance le trophée bien."
+    },
+    {
+      "level": "a2",
+      "word": "trophée",
+      "sentence": "Après le cours, Joseph gagne le trophée au téléphone."
+    },
+    {
+      "level": "b1",
+      "word": "trophée",
+      "sentence": "À midi, quand Philippe prépare le trophée avec Sophie, et Philippe est très content."
+    },
+    {
+      "level": "a1",
+      "word": "téléphone",
+      "sentence": "Sophie pose le téléphone bien."
+    },
+    {
+      "level": "a2",
+      "word": "téléphone",
+      "sentence": "Avant le repas, Stéphane montre le téléphone une photo."
+    },
+    {
+      "level": "b1",
+      "word": "téléphone",
+      "sentence": "Quand Joseph trouve le téléphone près de Philippe, parce que Sophie est contente."
+    },
+    {
+      "level": "a1",
+      "word": "éléphant",
+      "sentence": "Philippe regarde un éléphant bien."
+    },
+    {
+      "level": "a2",
+      "word": "éléphant",
+      "sentence": "Ce matin, Sophie nourrit un éléphant une photo."
+    },
+    {
+      "level": "b1",
+      "word": "éléphant",
+      "sentence": "À midi, quand Stéphane observe un éléphant une photo, et Philippe est très content."
     }
   ],
   "type10": [
     {
       "level": "a1",
-      "sentence": "Philippe accroche la photo bien.",
+      "sentence": "Joseph commence la biographie bien.",
       "parts": [
         {
-          "t": "Philippe accroche "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " photo bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Sophie accroche la photo une photo.",
-      "parts": [
-        {
-          "t": "Ce matin, Sophie accroche "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " photo une photo."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Stéphane accroche la photo une photo, et Philippe est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Stéphane accroche "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " photo une photo, et Philippe est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Joseph trouve le téléphone bien.",
-      "parts": [
-        {
-          "t": "Joseph trouve "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " téléphone bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Philippe prend le téléphone avec Sophie.",
-      "parts": [
-        {
-          "t": "Ce soir, Philippe prend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " téléphone avec Sophie."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Sophie utilise le téléphone une photo, parce que Sophie est contente.",
-      "parts": [
-        {
-          "t": "À midi, quand Sophie utilise "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " téléphone une photo, parce que Sophie est contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Stéphane cherche la pharmacie bien.",
-      "parts": [
-        {
-          "t": "Stéphane cherche "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " pharmacie bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Joseph longe la pharmacie au téléphone.",
-      "parts": [
-        {
-          "t": "À midi, Joseph longe "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " pharmacie au téléphone."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Philippe voit la pharmacie avec Sophie, et Philippe est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Philippe voit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " pharmacie avec Sophie, et Philippe est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Sophie répète la phrase bien.",
-      "parts": [
-        {
-          "t": "Sophie répète "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " phrase bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Stéphane souligne la phrase une photo.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Stéphane souligne "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " phrase une photo."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand Joseph traduit la phrase près de Philippe, parce que Sophie est contente.",
-      "parts": [
-        {
-          "t": "Quand Joseph traduit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " phrase près de Philippe, parce que Sophie est contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Philippe prépare la philosophie bien.",
-      "parts": [
-        {
-          "t": "Philippe prépare "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " philosophie bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Stéphane prépare la philosophie avec Philippe.",
-      "parts": [
-        {
-          "t": "Ce matin, Stéphane prépare "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " philosophie avec Philippe."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Stéphane recopie la philosophie une photo, et Philippe est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Stéphane recopie "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " philosophie une photo, et Philippe est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Stéphane soigne le dauphin bien.",
-      "parts": [
-        {
-          "t": "Stéphane soigne "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " dauphin bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Joseph sauve le dauphin au téléphone.",
-      "parts": [
-        {
-          "t": "Ce soir, Joseph sauve "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " dauphin au téléphone."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Philippe regarde le dauphin avec Sophie, et Philippe est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Philippe regarde "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " dauphin avec Sophie, et Philippe est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Sophie visite le phare bien.",
-      "parts": [
-        {
-          "t": "Sophie visite "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " phare bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Stéphane quitte le phare une photo.",
-      "parts": [
-        {
-          "t": "À midi, Stéphane quitte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " phare une photo."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand Joseph traverse le phare près de Philippe, parce que Sophie est contente.",
-      "parts": [
-        {
-          "t": "Quand Joseph traverse "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " phare près de Philippe, parce que Sophie est contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Philippe caresse le phoque bien.",
-      "parts": [
-        {
-          "t": "Philippe caresse "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " phoque bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Sophie voit le phoque une photo.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Sophie voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " phoque une photo."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Stéphane soigne le phoque une photo, et Philippe est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Stéphane soigne "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " phoque une photo, et Philippe est très content."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Philippe lit une orthographe avec Sophie.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, Philippe lit une orthographe avec Sophie."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Stéphane termine le saxophone bien.",
-      "parts": [
-        {
-          "t": "Stéphane termine "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " saxophone bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Joseph choisit le saxophone au téléphone.",
-      "parts": [
-        {
-          "t": "Ce matin, Joseph choisit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " saxophone au téléphone."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Philippe regarde le saxophone avec Sophie, et Philippe est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Philippe regarde "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " saxophone avec Sophie, et Philippe est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Sophie pose le microphone bien.",
-      "parts": [
-        {
-          "t": "Sophie pose "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " microphone bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Stéphane montre le microphone une photo.",
-      "parts": [
-        {
-          "t": "Ce soir, Stéphane montre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " microphone une photo."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand Joseph trouve le microphone près de Philippe, parce que Sophie est contente.",
-      "parts": [
-        {
-          "t": "Quand Joseph trouve "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " microphone près de Philippe, parce que Sophie est contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Philippe joue avec le trophée.",
-      "parts": [
-        {
-          "t": "Philippe joue avec "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " trophée."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Sophie regarde le trophée une photo.",
-      "parts": [
-        {
-          "t": "À midi, Sophie regarde "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " trophée une photo."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Stéphane lance le trophée une photo, et Philippe est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Stéphane lance "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " trophée une photo, et Philippe est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Joseph étudie le graphique bien.",
-      "parts": [
-        {
-          "t": "Joseph étudie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " graphique bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Philippe prépare le graphique avec Sophie.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Philippe prépare "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " graphique avec Sophie."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Sophie ouvre le graphique une photo, parce que Sophie est contente.",
-      "parts": [
-        {
-          "t": "À midi, quand Sophie ouvre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " graphique une photo, parce que Sophie est contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Stéphane voit le nénuphar bien.",
-      "parts": [
-        {
-          "t": "Stéphane voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " nénuphar bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Joseph observe le nénuphar au téléphone.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, Joseph observe "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " nénuphar au téléphone."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Philippe photographie le nénuphar avec Sophie, et Philippe est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Philippe photographie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " nénuphar avec Sophie, et Philippe est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Sophie corrige le paragraphe bien.",
-      "parts": [
-        {
-          "t": "Sophie corrige "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " paragraphe bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Stéphane écrit le paragraphe une photo.",
-      "parts": [
-        {
-          "t": "Ce matin, Stéphane écrit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " paragraphe une photo."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand Joseph étudie le paragraphe près de Philippe, parce que Sophie est contente.",
-      "parts": [
-        {
-          "t": "Quand Joseph étudie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " paragraphe près de Philippe, parce que Sophie est contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Philippe prend la sphère bien.",
-      "parts": [
-        {
-          "t": "Philippe prend "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " sphère bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Sophie utilise la sphère une photo.",
-      "parts": [
-        {
-          "t": "Ce soir, Sophie utilise "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " sphère une photo."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Stéphane range la sphère une photo, et Philippe est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Stéphane range "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " sphère une photo, et Philippe est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Joseph observe le phénomène bien.",
-      "parts": [
-        {
-          "t": "Joseph observe "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " phénomène bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Philippe photographie le phénomène avec Sophie.",
-      "parts": [
-        {
-          "t": "À midi, Philippe photographie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " phénomène avec Sophie."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Sophie regarde le phénomène une photo, parce que Sophie est contente.",
-      "parts": [
-        {
-          "t": "À midi, quand Sophie regarde "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " phénomène une photo, parce que Sophie est contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Stéphane écoute la biographie bien.",
-      "parts": [
-        {
-          "t": "Stéphane écoute "
+          "t": "Joseph commence "
         },
         {
           "blank": "la"
@@ -1093,196 +334,97 @@
     },
     {
       "level": "a2",
-      "sentence": "Après le cours, Joseph aime la biographie au téléphone.",
+      "sentence": "Ce soir, Philippe écoute la biographie avec Sophie.",
       "parts": [
         {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Joseph aime "
+          "t": "Ce soir, Philippe écoute "
         },
         {
           "blank": "la"
         },
         {
-          "t": " biographie au téléphone."
+          "t": " biographie avec Sophie."
         }
       ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Philippe termine la biographie avec Sophie, et Philippe est très content.",
+      "sentence": "À midi, quand Sophie aime la biographie une photo, parce que Sophie est contente.",
       "parts": [
         {
-          "t": "À midi, quand Philippe termine "
+          "t": "À midi, quand Sophie aime "
         },
         {
           "blank": "la"
         },
         {
-          "t": " biographie avec Sophie, et Philippe est très content."
+          "t": " biographie une photo, parce que Sophie est contente."
         }
       ]
     },
     {
       "level": "a1",
-      "sentence": "Sophie ouvre la géographie bien.",
+      "sentence": "Stéphane observe le dauphin bien.",
+      "parts": [
+        {
+          "t": "Stéphane observe "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " dauphin bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Joseph attrape le dauphin au téléphone.",
+      "parts": [
+        {
+          "t": "À midi, Joseph attrape "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " dauphin au téléphone."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Philippe caresse le dauphin avec Sophie, et Philippe est très content.",
+      "parts": [
+        {
+          "t": "À midi, quand Philippe caresse "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " dauphin avec Sophie, et Philippe est très content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Sophie ouvre le graphique bien.",
       "parts": [
         {
           "t": "Sophie ouvre "
         },
         {
-          "blank": "la"
+          "blank": "le"
         },
         {
-          "t": " géographie bien."
+          "t": " graphique bien."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "Avant le repas, Stéphane recopie la géographie une photo.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, Stéphane recopie "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " géographie une photo."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand Joseph utilise la géographie près de Philippe, parce que Sophie est contente.",
-      "parts": [
-        {
-          "t": "Quand Joseph utilise "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " géographie près de Philippe, parce que Sophie est contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Stéphane joint la photo bien.",
-      "parts": [
-        {
-          "t": "Stéphane joint "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " photo bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Philippe cherche le téléphone bien.",
-      "parts": [
-        {
-          "t": "Philippe cherche "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " téléphone bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Stéphane visite la pharmacie bien.",
-      "parts": [
-        {
-          "t": "Stéphane visite "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " pharmacie bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Philippe recopie la phrase bien.",
-      "parts": [
-        {
-          "t": "Philippe recopie "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " phrase bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Philippe commence le saxophone avec Sophie.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, Philippe commence "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " saxophone avec Sophie."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Joseph pose le microphone avec Sophie.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, Joseph pose "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " microphone avec Sophie."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Sophie gagne le trophée au téléphone.",
+      "sentence": "Après le cours, Stéphane recopie le graphique une photo.",
       "parts": [
         {
           "t": "Après "
@@ -1291,22 +433,7 @@
           "blank": "le"
         },
         {
-          "t": " cours, Sophie gagne "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " trophée au téléphone."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Stéphane écrit le graphique une photo.",
-      "parts": [
-        {
-          "t": "Ce soir, Stéphane écrit "
+          "t": " cours, Stéphane recopie "
         },
         {
           "blank": "le"
@@ -1318,31 +445,289 @@
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Philippe prend la photo avec Sophie, et Philippe est très content.",
+      "sentence": "Quand Joseph utilise le graphique près de Philippe, parce que Sophie est contente.",
       "parts": [
         {
-          "t": "À midi, quand Philippe prend "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " photo avec Sophie, et Philippe est très content."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Stéphane montre le téléphone une photo, et Philippe est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Stéphane montre "
+          "t": "Quand Joseph utilise "
         },
         {
           "blank": "le"
         },
         {
-          "t": " téléphone une photo, et Philippe est très content."
+          "t": " graphique près de Philippe, parce que Sophie est contente."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Philippe prépare la géographie bien.",
+      "parts": [
+        {
+          "t": "Philippe prépare "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " géographie bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le repas, Sophie ouvre la géographie une photo.",
+      "parts": [
+        {
+          "t": "Avant "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " repas, Sophie ouvre "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " géographie une photo."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Stéphane recopie la géographie une photo, et Philippe est très content.",
+      "parts": [
+        {
+          "t": "À midi, quand Stéphane recopie "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " géographie une photo, et Philippe est très content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Joseph oublie le microphone bien.",
+      "parts": [
+        {
+          "t": "Joseph oublie "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " microphone bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Philippe cherche le microphone avec Sophie.",
+      "parts": [
+        {
+          "t": "Ce matin, Philippe cherche "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " microphone avec Sophie."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Sophie pose le microphone une photo, parce que Sophie est contente.",
+      "parts": [
+        {
+          "t": "À midi, quand Sophie pose "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " microphone une photo, parce que Sophie est contente."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Stéphane photographie le nénuphar bien.",
+      "parts": [
+        {
+          "t": "Stéphane photographie "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " nénuphar bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, Joseph regarde le nénuphar au téléphone.",
+      "parts": [
+        {
+          "t": "Ce soir, Joseph regarde "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " nénuphar au téléphone."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Philippe admire le nénuphar avec Sophie, et Philippe est très content.",
+      "parts": [
+        {
+          "t": "À midi, quand Philippe admire "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " nénuphar avec Sophie, et Philippe est très content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Philippe lit le paragraphe bien.",
+      "parts": [
+        {
+          "t": "Philippe lit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " paragraphe bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le cours, Sophie corrige le paragraphe une photo.",
+      "parts": [
+        {
+          "t": "Après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cours, Sophie corrige "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " paragraphe une photo."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Stéphane écrit le paragraphe une photo, et Philippe est très content.",
+      "parts": [
+        {
+          "t": "À midi, quand Stéphane écrit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " paragraphe une photo, et Philippe est très content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Joseph cherche le phare bien.",
+      "parts": [
+        {
+          "t": "Joseph cherche "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " phare bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le repas, Philippe longe le phare avec Sophie.",
+      "parts": [
+        {
+          "t": "Avant "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " repas, Philippe longe "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " phare avec Sophie."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Sophie voit le phare une photo, parce que Sophie est contente.",
+      "parts": [
+        {
+          "t": "À midi, quand Sophie voit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " phare une photo, parce que Sophie est contente."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Stéphane quitte la pharmacie bien.",
+      "parts": [
+        {
+          "t": "Stéphane quitte "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " pharmacie bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Joseph traverse la pharmacie au téléphone.",
+      "parts": [
+        {
+          "t": "Ce matin, Joseph traverse "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " pharmacie au téléphone."
         }
       ]
     },
@@ -1363,10 +748,10 @@
     },
     {
       "level": "a1",
-      "sentence": "Stéphane recopie la philosophie bien.",
+      "sentence": "Stéphane prépare la philosophie bien.",
       "parts": [
         {
-          "t": "Stéphane recopie "
+          "t": "Stéphane prépare "
         },
         {
           "blank": "la"
@@ -1377,41 +762,41 @@
       ]
     },
     {
-      "level": "a1",
-      "sentence": "Joseph voit le dauphin bien.",
+      "level": "a2",
+      "sentence": "Ce soir, Stéphane recopie la philosophie une photo.",
       "parts": [
         {
-          "t": "Joseph voit "
+          "t": "Ce soir, Stéphane recopie "
         },
         {
-          "blank": "le"
+          "blank": "la"
         },
         {
-          "t": " dauphin bien."
+          "t": " philosophie une photo."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand Joseph utilise la philosophie près de Philippe, parce que Sophie est contente.",
+      "parts": [
+        {
+          "t": "Quand Joseph utilise "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " philosophie près de Philippe, parce que Sophie est contente."
         }
       ]
     },
     {
       "level": "a1",
-      "sentence": "Sophie traverse le phare bien.",
+      "sentence": "Philippe regarde le phoque bien.",
       "parts": [
         {
-          "t": "Sophie traverse "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " phare bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Stéphane observe le phoque bien.",
-      "parts": [
-        {
-          "t": "Stéphane observe "
+          "t": "Philippe regarde "
         },
         {
           "blank": "le"
@@ -1423,22 +808,52 @@
     },
     {
       "level": "a2",
-      "sentence": "Ce matin, Philippe plante le nénuphar avec Sophie.",
+      "sentence": "À midi, Sophie nourrit le phoque une photo.",
       "parts": [
         {
-          "t": "Ce matin, Philippe plante "
+          "t": "À midi, Sophie nourrit "
         },
         {
           "blank": "le"
         },
         {
-          "t": " nénuphar avec Sophie."
+          "t": " phoque une photo."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Stéphane observe le phoque une photo, et Philippe est très content.",
+      "parts": [
+        {
+          "t": "À midi, quand Stéphane observe "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " phoque une photo, et Philippe est très content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Joseph prend la photo bien.",
+      "parts": [
+        {
+          "t": "Joseph prend "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " photo bien."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "Avant le repas, Stéphane recopie le paragraphe une photo.",
+      "sentence": "Avant le repas, Sophie montre la photo au téléphone.",
       "parts": [
         {
           "t": "Avant "
@@ -1447,43 +862,103 @@
           "blank": "le"
         },
         {
-          "t": " repas, Stéphane recopie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " paragraphe une photo."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Philippe cherche la sphère avec Sophie.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Philippe cherche "
+          "t": " repas, Sophie montre "
         },
         {
           "blank": "la"
         },
         {
-          "t": " sphère avec Sophie."
+          "t": " photo au téléphone."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand Joseph joint la photo près de Philippe, parce que Sophie est contente.",
+      "parts": [
+        {
+          "t": "Quand Joseph joint "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " photo près de Philippe, parce que Sophie est contente."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Stéphane souligne la phrase bien.",
+      "parts": [
+        {
+          "t": "Stéphane souligne "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " phrase bien."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "À midi, Stéphane plante le phénomène une photo.",
+      "sentence": "Avant le repas, Joseph traduit la phrase au téléphone.",
       "parts": [
         {
-          "t": "À midi, Stéphane plante "
+          "t": "Avant "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " repas, Joseph traduit "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " phrase au téléphone."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Philippe recopie la phrase avec Sophie, et Philippe est très content.",
+      "parts": [
+        {
+          "t": "À midi, quand Philippe recopie "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " phrase avec Sophie, et Philippe est très content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Sophie plante le phénomène bien.",
+      "parts": [
+        {
+          "t": "Sophie plante "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " phénomène bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Stéphane dessine le phénomène une photo.",
+      "parts": [
+        {
+          "t": "Ce matin, Stéphane dessine "
         },
         {
           "blank": "le"
@@ -1494,53 +969,566 @@
       ]
     },
     {
-      "level": "a2",
-      "sentence": "Ce soir, Philippe commence la biographie avec Sophie.",
+      "level": "b1",
+      "sentence": "Quand Joseph voit le phénomène près de Philippe, parce que Sophie est contente.",
       "parts": [
         {
-          "t": "Ce soir, Philippe commence "
+          "t": "Quand Joseph voit "
         },
         {
-          "blank": "la"
+          "blank": "le"
         },
         {
-          "t": " biographie avec Sophie."
+          "t": " phénomène près de Philippe, parce que Sophie est contente."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Philippe regarde le saxophone bien.",
+      "parts": [
+        {
+          "t": "Philippe regarde "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " saxophone bien."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "Ce soir, Joseph ouvre la géographie avec Sophie.",
+      "sentence": "Ce soir, Sophie joue avec le saxophone une photo.",
       "parts": [
         {
-          "t": "Ce soir, Joseph ouvre "
+          "t": "Ce soir, Sophie joue avec "
         },
         {
-          "blank": "la"
+          "blank": "le"
         },
         {
-          "t": " géographie avec Sophie."
+          "t": " saxophone une photo."
         }
       ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Stéphane souligne la phrase une photo, et Philippe est très content.",
+      "sentence": "À midi, quand Stéphane commence le saxophone une photo, et Philippe est très content.",
       "parts": [
         {
-          "t": "À midi, quand Stéphane souligne "
+          "t": "À midi, quand Stéphane commence "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " saxophone une photo, et Philippe est très content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Joseph trouve la sphère bien.",
+      "parts": [
+        {
+          "t": "Joseph trouve "
         },
         {
           "blank": "la"
         },
         {
-          "t": " phrase une photo, et Philippe est très content."
+          "t": " sphère bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Philippe prend la sphère avec Sophie.",
+      "parts": [
+        {
+          "t": "À midi, Philippe prend "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " sphère avec Sophie."
         }
       ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Philippe lit la philosophie avec Sophie, et Philippe est très content.",
+      "sentence": "À midi, quand Sophie utilise la sphère une photo, parce que Sophie est contente.",
+      "parts": [
+        {
+          "t": "À midi, quand Sophie utilise "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " sphère une photo, parce que Sophie est contente."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Stéphane lance le trophée bien.",
+      "parts": [
+        {
+          "t": "Stéphane lance "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " trophée bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le cours, Joseph gagne le trophée au téléphone.",
+      "parts": [
+        {
+          "t": "Après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cours, Joseph gagne "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " trophée au téléphone."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Philippe prépare le trophée avec Sophie, et Philippe est très content.",
+      "parts": [
+        {
+          "t": "À midi, quand Philippe prépare "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " trophée avec Sophie, et Philippe est très content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Sophie pose le téléphone bien.",
+      "parts": [
+        {
+          "t": "Sophie pose "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " téléphone bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le repas, Stéphane montre le téléphone une photo.",
+      "parts": [
+        {
+          "t": "Avant "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " repas, Stéphane montre "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " téléphone une photo."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand Joseph trouve le téléphone près de Philippe, parce que Sophie est contente.",
+      "parts": [
+        {
+          "t": "Quand Joseph trouve "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " téléphone près de Philippe, parce que Sophie est contente."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Sophie choisit la biographie bien.",
+      "parts": [
+        {
+          "t": "Sophie choisit "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " biographie bien."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Stéphane soigne le dauphin bien.",
+      "parts": [
+        {
+          "t": "Stéphane soigne "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " dauphin bien."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Philippe lit le graphique bien.",
+      "parts": [
+        {
+          "t": "Philippe lit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " graphique bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le repas, Philippe voit la pharmacie avec Sophie.",
+      "parts": [
+        {
+          "t": "Avant "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " repas, Philippe voit "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " pharmacie avec Sophie."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le repas, Joseph ouvre la philosophie avec Sophie.",
+      "parts": [
+        {
+          "t": "Avant "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " repas, Joseph ouvre "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " philosophie avec Sophie."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le cours, Sophie sauve le phoque au téléphone.",
+      "parts": [
+        {
+          "t": "Après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cours, Sophie sauve "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " phoque au téléphone."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le cours, Philippe colle la photo avec Sophie.",
+      "parts": [
+        {
+          "t": "Après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cours, Philippe colle "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " photo avec Sophie."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Stéphane regarde la biographie une photo, et Philippe est très content.",
+      "parts": [
+        {
+          "t": "À midi, quand Stéphane regarde "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " biographie une photo, et Philippe est très content."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Philippe regarde le dauphin avec Sophie, et Philippe est très content.",
+      "parts": [
+        {
+          "t": "À midi, quand Philippe regarde "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " dauphin avec Sophie, et Philippe est très content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Sophie étudie la géographie bien.",
+      "parts": [
+        {
+          "t": "Sophie étudie "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " géographie bien."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Stéphane range le microphone bien.",
+      "parts": [
+        {
+          "t": "Stéphane range "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " microphone bien."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Stéphane voit le nénuphar bien.",
+      "parts": [
+        {
+          "t": "Stéphane voit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " nénuphar bien."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Stéphane recopie le paragraphe bien.",
+      "parts": [
+        {
+          "t": "Stéphane recopie "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " paragraphe bien."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Philippe visite le phare bien.",
+      "parts": [
+        {
+          "t": "Philippe visite "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " phare bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le cours, Joseph répète la phrase avec Sophie.",
+      "parts": [
+        {
+          "t": "Après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cours, Joseph répète "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " phrase avec Sophie."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, Philippe photographie le phénomène avec Sophie.",
+      "parts": [
+        {
+          "t": "Ce soir, Philippe photographie "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " phénomène avec Sophie."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le repas, Sophie aime le saxophone au téléphone.",
+      "parts": [
+        {
+          "t": "Avant "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " repas, Sophie aime "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " saxophone au téléphone."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Stéphane range la sphère une photo.",
+      "parts": [
+        {
+          "t": "À midi, Stéphane range "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " sphère une photo."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, Philippe regarde le trophée avec Sophie.",
+      "parts": [
+        {
+          "t": "Ce soir, Philippe regarde "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " trophée avec Sophie."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Philippe cherche le téléphone avec Sophie.",
+      "parts": [
+        {
+          "t": "À midi, Philippe cherche "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " téléphone avec Sophie."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Stéphane écrit le graphique une photo, et Philippe est très content.",
+      "parts": [
+        {
+          "t": "À midi, quand Stéphane écrit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " graphique une photo, et Philippe est très content."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Philippe lit la géographie avec Sophie, et Philippe est très content.",
       "parts": [
         {
           "t": "À midi, quand Philippe lit "
@@ -1549,52 +1537,52 @@
           "blank": "la"
         },
         {
-          "t": " philosophie avec Sophie, et Philippe est très content."
+          "t": " géographie avec Sophie, et Philippe est très content."
         }
       ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Sophie sauve le dauphin au téléphone, parce que Sophie est contente.",
+      "sentence": "À midi, quand Stéphane montre le microphone une photo, et Philippe est très content.",
       "parts": [
         {
-          "t": "À midi, quand Sophie sauve "
+          "t": "À midi, quand Stéphane montre "
         },
         {
           "blank": "le"
         },
         {
-          "t": " dauphin au téléphone, parce que Sophie est contente."
+          "t": " microphone une photo, et Philippe est très content."
         }
       ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Stéphane cherche le phare une photo, et Philippe est très content.",
+      "sentence": "À midi, quand Sophie plante le nénuphar au téléphone, parce que Sophie est contente.",
       "parts": [
         {
-          "t": "À midi, quand Stéphane cherche "
+          "t": "À midi, quand Sophie plante "
         },
         {
           "blank": "le"
         },
         {
-          "t": " phare une photo, et Philippe est très content."
+          "t": " nénuphar au téléphone, parce que Sophie est contente."
         }
       ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Philippe caresse le phoque avec Sophie, et Philippe est très content.",
+      "sentence": "À midi, quand Sophie utilise le paragraphe au téléphone, parce que Sophie est contente.",
       "parts": [
         {
-          "t": "À midi, quand Philippe caresse "
+          "t": "À midi, quand Sophie utilise "
         },
         {
           "blank": "le"
         },
         {
-          "t": " phoque avec Sophie, et Philippe est très content."
+          "t": " paragraphe au téléphone, parce que Sophie est contente."
         }
       ]
     }
@@ -1602,125 +1590,125 @@
   "type12": [
     {
       "level": "a1",
-      "sentence": "Stéphane joint la photo bien."
+      "sentence": "Stéphane recopie un alphabet bien."
     },
     {
       "level": "a1",
-      "sentence": "Philippe cherche le téléphone bien."
+      "sentence": "Sophie choisit la biographie bien."
     },
     {
       "level": "a1",
-      "sentence": "Stéphane visite la pharmacie bien."
+      "sentence": "Stéphane soigne le dauphin bien."
     },
     {
       "level": "a1",
-      "sentence": "Philippe recopie la phrase bien."
+      "sentence": "Philippe lit le graphique bien."
     },
     {
       "level": "a2",
-      "sentence": "Avant le repas, Philippe commence le saxophone avec Sophie."
+      "sentence": "Avant le repas, Philippe voit la pharmacie avec Sophie."
     },
     {
       "level": "a2",
-      "sentence": "Avant le repas, Joseph pose le microphone avec Sophie."
+      "sentence": "Avant le repas, Joseph ouvre la philosophie avec Sophie."
     },
     {
       "level": "a2",
-      "sentence": "Après le cours, Sophie gagne le trophée au téléphone."
+      "sentence": "Après le cours, Sophie sauve le phoque au téléphone."
     },
     {
       "level": "a2",
-      "sentence": "Ce soir, Stéphane écrit le graphique une photo."
+      "sentence": "Après le cours, Philippe colle la photo avec Sophie."
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Stéphane écrit un alphabet une photo, et Philippe est très content."
+      "sentence": "À midi, quand Stéphane soigne un éléphant une photo, et Philippe est très content."
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Philippe prend la photo avec Sophie, et Philippe est très content."
+      "sentence": "À midi, quand Sophie utilise un alphabet au téléphone, parce que Sophie est contente."
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Stéphane montre le téléphone une photo, et Philippe est très content."
+      "sentence": "À midi, quand Stéphane regarde la biographie une photo, et Philippe est très content."
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Philippe cherche la pharmacie avec Sophie, et Philippe est très content."
+      "sentence": "À midi, quand Philippe regarde le dauphin avec Sophie, et Philippe est très content."
     }
   ],
   "type14": [
     {
       "level": "a1",
-      "sentence": "Stéphane recopie la philosophie bien."
+      "sentence": "Sophie étudie la géographie bien."
     },
     {
       "level": "a1",
-      "sentence": "Philippe regarde un éléphant bien."
+      "sentence": "Stéphane range le microphone bien."
     },
     {
       "level": "a1",
-      "sentence": "Joseph voit le dauphin bien."
+      "sentence": "Stéphane voit le nénuphar bien."
     },
     {
       "level": "a1",
-      "sentence": "Sophie traverse le phare bien."
+      "sentence": "Philippe lit une orthographe bien."
     },
     {
       "level": "a1",
-      "sentence": "Stéphane observe le phoque bien."
+      "sentence": "Stéphane recopie le paragraphe bien."
     },
     {
       "level": "a1",
-      "sentence": "Philippe prépare une orthographe bien."
+      "sentence": "Philippe visite le phare bien."
     },
     {
       "level": "a2",
-      "sentence": "Ce matin, Philippe plante le nénuphar avec Sophie."
+      "sentence": "Après le cours, Joseph répète la phrase avec Sophie."
     },
     {
       "level": "a2",
-      "sentence": "Avant le repas, Stéphane recopie le paragraphe une photo."
+      "sentence": "Ce soir, Philippe photographie le phénomène avec Sophie."
     },
     {
       "level": "a2",
-      "sentence": "Après le cours, Philippe cherche la sphère avec Sophie."
+      "sentence": "Avant le repas, Sophie aime le saxophone au téléphone."
     },
     {
       "level": "a2",
-      "sentence": "À midi, Stéphane plante le phénomène une photo."
+      "sentence": "À midi, Stéphane range la sphère une photo."
     },
     {
       "level": "a2",
-      "sentence": "Ce soir, Philippe commence la biographie avec Sophie."
+      "sentence": "Ce soir, Philippe regarde le trophée avec Sophie."
     },
     {
       "level": "a2",
-      "sentence": "Ce soir, Joseph ouvre la géographie avec Sophie."
+      "sentence": "À midi, Philippe cherche le téléphone avec Sophie."
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Stéphane souligne la phrase une photo, et Philippe est très content."
+      "sentence": "À midi, quand Stéphane écrit le graphique une photo, et Philippe est très content."
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Philippe lit la philosophie avec Sophie, et Philippe est très content."
+      "sentence": "À midi, quand Philippe lit la géographie avec Sophie, et Philippe est très content."
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Stéphane observe un éléphant une photo, et Philippe est très content."
+      "sentence": "À midi, quand Stéphane montre le microphone une photo, et Philippe est très content."
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Sophie sauve le dauphin au téléphone, parce que Sophie est contente."
+      "sentence": "À midi, quand Sophie plante le nénuphar au téléphone, parce que Sophie est contente."
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Stéphane cherche le phare une photo, et Philippe est très content."
+      "sentence": "À midi, quand Sophie utilise une orthographe au téléphone, parce que Sophie est contente."
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Philippe caresse le phoque avec Sophie, et Philippe est très content."
+      "sentence": "À midi, quand Sophie utilise le paragraphe au téléphone, parce que Sophie est contente."
     }
   ]
 }

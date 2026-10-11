@@ -2,18 +2,318 @@
   "type9": [
     {
       "level": "a1",
+      "word": "bain",
+      "sentence": "Inès s’habille après le bain."
+    },
+    {
+      "level": "a2",
+      "word": "bain",
+      "sentence": "Après le cours, Inès s’habille après le bain enfin."
+    },
+    {
+      "level": "b1",
+      "word": "bain",
+      "sentence": "Ce matin, quand Martin s’habille après le bain, parce que Martin sourit aussi."
+    },
+    {
+      "level": "a1",
+      "word": "ceinture",
+      "sentence": "Christine lave la ceinture bien."
+    },
+    {
+      "level": "a2",
+      "word": "ceinture",
+      "sentence": "Ce soir, Inès porte la ceinture avec Martin."
+    },
+    {
+      "level": "b1",
+      "word": "ceinture",
+      "sentence": "À midi, quand Martin range la ceinture enfin, parce que Martin sourit aussi."
+    },
+    {
+      "level": "a1",
+      "word": "chemin",
+      "sentence": "Quentin connaît le chemin bien."
+    },
+    {
+      "level": "a2",
+      "word": "chemin",
+      "sentence": "À midi, Christine suit le chemin dans le jardin."
+    },
+    {
+      "level": "b1",
+      "word": "chemin",
+      "sentence": "À midi, quand Inès continue le chemin avec Martin, et Inès sourit enfin bien."
+    },
+    {
+      "level": "a1",
+      "word": "cinq",
+      "sentence": "Martin ouvre le cinq bien."
+    },
+    {
+      "level": "a2",
+      "word": "cinq",
+      "sentence": "Après le cours, Quentin recopie le cinq enfin."
+    },
+    {
+      "level": "b1",
+      "word": "cinq",
+      "sentence": "Quand Christine utilise le cinq dans le jardin, parce que Martin sourit aussi."
+    },
+    {
+      "level": "a1",
+      "word": "dauphin",
+      "sentence": "Inès regarde le dauphin bien."
+    },
+    {
+      "level": "a2",
+      "word": "dauphin",
+      "sentence": "Avant le repas, Martin nourrit le dauphin enfin."
+    },
+    {
+      "level": "b1",
+      "word": "dauphin",
+      "sentence": "À midi, quand Quentin observe le dauphin enfin, et Inès sourit enfin bien."
+    },
+    {
+      "level": "a1",
+      "word": "dessin",
+      "sentence": "Christine colorie le dessin bien."
+    },
+    {
+      "level": "a2",
+      "word": "dessin",
+      "sentence": "Ce matin, Inès montre le dessin avec Martin."
+    },
+    {
+      "level": "b1",
+      "word": "dessin",
+      "sentence": "À midi, quand Martin finit le dessin enfin, parce que Martin sourit aussi."
+    },
+    {
+      "level": "a1",
+      "word": "frein",
+      "sentence": "Quentin répare le frein bien."
+    },
+    {
+      "level": "a2",
+      "word": "frein",
+      "sentence": "Ce soir, Christine attend le frein dans le jardin."
+    },
+    {
+      "level": "b1",
+      "word": "frein",
+      "sentence": "À midi, quand Inès emprunte le frein avec Martin, et Inès sourit enfin bien."
+    },
+    {
+      "level": "a1",
+      "word": "jardin",
+      "sentence": "Martin sort dans le jardin."
+    },
+    {
+      "level": "a2",
+      "word": "jardin",
+      "sentence": "À midi, Quentin est dans le jardin enfin."
+    },
+    {
+      "level": "b1",
+      "word": "jardin",
+      "sentence": "Quand Christine plante dans le jardin dans le jardin, parce que Martin sourit aussi."
+    },
+    {
+      "level": "a1",
+      "word": "magasin",
+      "sentence": "Inès entre dans le magasin."
+    },
+    {
+      "level": "a2",
+      "word": "magasin",
+      "sentence": "Après le cours, Martin s’arrête devant le magasin enfin."
+    },
+    {
+      "level": "b1",
+      "word": "magasin",
+      "sentence": "Ce matin, quand Inès entre dans le magasin, et Inès sourit enfin bien."
+    },
+    {
+      "level": "a1",
       "word": "main",
-      "sentence": "Inès lève la main bien."
+      "sentence": "Christine lève la main bien."
     },
     {
       "level": "a2",
       "word": "main",
-      "sentence": "Ce matin, Martin lève la main avec soin."
+      "sentence": "À midi, Christine lève la main avec Martin."
     },
     {
       "level": "b1",
       "word": "main",
-      "sentence": "À midi, quand Quentin lève la main enfin, et Inès sourit enfin bien."
+      "sentence": "À midi, quand Inès lève la main enfin, et Inès sourit enfin bien."
+    },
+    {
+      "level": "a1",
+      "word": "matin",
+      "sentence": "Quentin prépare le matin bien."
+    },
+    {
+      "level": "a2",
+      "word": "matin",
+      "sentence": "Ce matin, Christine note le matin dans le jardin."
+    },
+    {
+      "level": "b1",
+      "word": "matin",
+      "sentence": "À midi, quand Inès attend le matin avec Martin, et Inès sourit enfin bien."
+    },
+    {
+      "level": "a1",
+      "word": "moulin",
+      "sentence": "Martin dessine le moulin bien."
+    },
+    {
+      "level": "a2",
+      "word": "moulin",
+      "sentence": "Ce soir, Quentin voit le moulin avec soin."
+    },
+    {
+      "level": "b1",
+      "word": "moulin",
+      "sentence": "Quand Christine observe le moulin dans le jardin, parce que Martin sourit aussi."
+    },
+    {
+      "level": "a1",
+      "word": "médecin",
+      "sentence": "Inès appelle le médecin bien."
+    },
+    {
+      "level": "a2",
+      "word": "médecin",
+      "sentence": "À midi, Martin téléphone chez le médecin enfin."
+    },
+    {
+      "level": "b1",
+      "word": "médecin",
+      "sentence": "Ce matin, quand Quentin se rend chez le médecin, et Inès sourit enfin bien."
+    },
+    {
+      "level": "a1",
+      "word": "pain",
+      "sentence": "Christine sent le pain bien."
+    },
+    {
+      "level": "a2",
+      "word": "pain",
+      "sentence": "Avant le repas, Martin grille le pain dans le jardin."
+    },
+    {
+      "level": "b1",
+      "word": "pain",
+      "sentence": "Quand Christine met le pain dans le jardin, parce que Martin sourit aussi."
+    },
+    {
+      "level": "a1",
+      "word": "peintre",
+      "sentence": "Quentin appelle le peintre bien."
+    },
+    {
+      "level": "a2",
+      "word": "peintre",
+      "sentence": "Avant le repas, Christine embrasse le peintre dans le jardin."
+    },
+    {
+      "level": "b1",
+      "word": "peintre",
+      "sentence": "À midi, quand Inès remercie le peintre avec Martin, et Inès sourit enfin bien."
+    },
+    {
+      "level": "a1",
+      "word": "peinture",
+      "sentence": "Martin commence la peinture bien."
+    },
+    {
+      "level": "a2",
+      "word": "peinture",
+      "sentence": "Ce matin, Quentin écoute la peinture avec soin."
+    },
+    {
+      "level": "b1",
+      "word": "peinture",
+      "sentence": "Quand Christine aime la peinture dans le jardin, parce que Martin sourit aussi."
+    },
+    {
+      "level": "a1",
+      "word": "plein",
+      "sentence": "Inès prend le plein bien."
+    },
+    {
+      "level": "a2",
+      "word": "plein",
+      "sentence": "Ce soir, Martin utilise le plein avec soin."
+    },
+    {
+      "level": "b1",
+      "word": "plein",
+      "sentence": "À midi, quand Quentin range le plein enfin, et Inès sourit enfin bien."
+    },
+    {
+      "level": "a1",
+      "word": "raisin",
+      "sentence": "Christine choisit le raisin bien."
+    },
+    {
+      "level": "a2",
+      "word": "raisin",
+      "sentence": "À midi, Inès prépare le raisin avec Martin."
+    },
+    {
+      "level": "b1",
+      "word": "raisin",
+      "sentence": "À midi, quand Quentin mange le raisin avec Inès, et Inès sourit enfin bien."
+    },
+    {
+      "level": "a1",
+      "word": "sapin",
+      "sentence": "Quentin dessine le sapin bien."
+    },
+    {
+      "level": "a2",
+      "word": "sapin",
+      "sentence": "Après le cours, Christine voit le sapin dans le jardin."
+    },
+    {
+      "level": "b1",
+      "word": "sapin",
+      "sentence": "À midi, quand Inès observe le sapin avec Martin, et Inès sourit enfin bien."
+    },
+    {
+      "level": "a1",
+      "word": "singe",
+      "sentence": "Martin nourrit le singe bien."
+    },
+    {
+      "level": "a2",
+      "word": "singe",
+      "sentence": "Avant le repas, Quentin observe le singe enfin."
+    },
+    {
+      "level": "b1",
+      "word": "singe",
+      "sentence": "Quand Christine attrape le singe dans le jardin, parce que Martin sourit aussi."
+    },
+    {
+      "level": "a1",
+      "word": "timbre",
+      "sentence": "Inès cherche le timbre bien."
+    },
+    {
+      "level": "a2",
+      "word": "timbre",
+      "sentence": "Ce matin, Martin pose le timbre avec soin."
+    },
+    {
+      "level": "b1",
+      "word": "timbre",
+      "sentence": "À midi, quand Quentin montre le timbre enfin, et Inès sourit enfin bien."
     },
     {
       "level": "a1",
@@ -32,342 +332,495 @@
     },
     {
       "level": "a1",
-      "word": "matin",
-      "sentence": "Quentin choisit le matin bien."
-    },
-    {
-      "level": "a2",
-      "word": "matin",
-      "sentence": "À midi, Christine aime le matin dans le jardin."
-    },
-    {
-      "level": "b1",
-      "word": "matin",
-      "sentence": "À midi, quand Inès prépare le matin avec Martin, et Inès sourit enfin bien."
-    },
-    {
-      "level": "a1",
-      "word": "jardin",
-      "sentence": "Martin plante dans le jardin."
-    },
-    {
-      "level": "a2",
-      "word": "jardin",
-      "sentence": "Après le cours, Quentin déjeune dans le jardin enfin."
-    },
-    {
-      "level": "b1",
-      "word": "jardin",
-      "sentence": "Quand Christine joue dans le jardin dans le jardin, parce que Martin sourit aussi."
-    },
-    {
-      "level": "a1",
-      "word": "pain",
-      "sentence": "Inès met le pain bien."
-    },
-    {
-      "level": "a2",
-      "word": "pain",
-      "sentence": "Avant le repas, Martin met le pain enfin."
-    },
-    {
-      "level": "b1",
-      "word": "pain",
-      "sentence": "À midi, quand Quentin met le pain enfin, et Inès sourit enfin bien."
-    },
-    {
-      "level": "a1",
-      "word": "cinq",
-      "sentence": "Christine étudie le cinq bien."
-    },
-    {
-      "level": "a2",
-      "word": "cinq",
-      "sentence": "Ce matin, Inès prépare le cinq avec Martin."
-    },
-    {
-      "level": "b1",
-      "word": "cinq",
-      "sentence": "À midi, quand Martin ouvre le cinq enfin, parce que Martin sourit aussi."
-    },
-    {
-      "level": "a1",
       "word": "vin",
-      "sentence": "Quentin goûte le vin bien."
+      "sentence": "Quentin partage le vin bien."
     },
     {
       "level": "a2",
       "word": "vin",
-      "sentence": "Ce soir, Christine partage le vin dans le jardin."
+      "sentence": "À midi, Christine sert le vin dans le jardin."
     },
     {
       "level": "b1",
       "word": "vin",
-      "sentence": "À midi, quand Inès sert le vin avec Martin, et Inès sourit enfin bien."
-    },
-    {
-      "level": "a1",
-      "word": "singe",
-      "sentence": "Martin voit le singe bien."
-    },
-    {
-      "level": "a2",
-      "word": "singe",
-      "sentence": "À midi, Quentin soigne le singe avec soin."
-    },
-    {
-      "level": "b1",
-      "word": "singe",
-      "sentence": "Quand Christine sauve le singe dans le jardin, parce que Martin sourit aussi."
-    },
-    {
-      "level": "a1",
-      "word": "timbre",
-      "sentence": "Inès prend le timbre bien."
-    },
-    {
-      "level": "a2",
-      "word": "timbre",
-      "sentence": "Après le cours, Martin utilise le timbre enfin."
-    },
-    {
-      "level": "b1",
-      "word": "timbre",
-      "sentence": "À midi, quand Quentin range le timbre enfin, et Inès sourit enfin bien."
-    },
-    {
-      "level": "a1",
-      "word": "peinture",
-      "sentence": "Christine regarde la peinture bien."
-    },
-    {
-      "level": "a2",
-      "word": "peinture",
-      "sentence": "Avant le repas, Inès joue avec la peinture avec Martin."
-    },
-    {
-      "level": "b1",
-      "word": "peinture",
-      "sentence": "À midi, quand Martin commence la peinture enfin, parce que Martin sourit aussi."
-    },
-    {
-      "level": "a1",
-      "word": "ceinture",
-      "sentence": "Quentin achète la ceinture bien."
-    },
-    {
-      "level": "a2",
-      "word": "ceinture",
-      "sentence": "Ce matin, Christine lave la ceinture dans le jardin."
-    },
-    {
-      "level": "b1",
-      "word": "ceinture",
-      "sentence": "À midi, quand Inès porte la ceinture avec Martin, et Inès sourit enfin bien."
-    },
-    {
-      "level": "a1",
-      "word": "plein",
-      "sentence": "Martin pose le plein bien."
-    },
-    {
-      "level": "a2",
-      "word": "plein",
-      "sentence": "Ce soir, Quentin montre le plein avec soin."
-    },
-    {
-      "level": "b1",
-      "word": "plein",
-      "sentence": "Quand Christine trouve le plein dans le jardin, parce que Martin sourit aussi."
-    },
-    {
-      "level": "a1",
-      "word": "peintre",
-      "sentence": "Inès remercie le peintre bien."
-    },
-    {
-      "level": "a2",
-      "word": "peintre",
-      "sentence": "À midi, Martin aide le peintre avec soin."
-    },
-    {
-      "level": "b1",
-      "word": "peintre",
-      "sentence": "À midi, quand Quentin console le peintre enfin, et Inès sourit enfin bien."
-    },
-    {
-      "level": "a1",
-      "word": "bain",
-      "sentence": "Christine s’habille après le bain."
-    },
-    {
-      "level": "a2",
-      "word": "bain",
-      "sentence": "Après le cours, Inès s’habille après le bain avec Martin."
-    },
-    {
-      "level": "b1",
-      "word": "bain",
-      "sentence": "Ce matin, quand Martin s’habille après le bain, parce que Martin sourit aussi."
+      "sentence": "À midi, quand Inès mange le vin avec Martin, et Inès sourit enfin bien."
     },
     {
       "level": "a1",
       "word": "voisin",
-      "sentence": "Quentin salue le voisin bien."
+      "sentence": "Martin salue le voisin bien."
     },
     {
       "level": "a2",
       "word": "voisin",
-      "sentence": "Avant le repas, Christine invite le voisin dans le jardin."
+      "sentence": "Après le cours, Quentin invite le voisin enfin."
     },
     {
       "level": "b1",
       "word": "voisin",
-      "sentence": "Ce matin, quand Inès passe chez le voisin, et Inès sourit enfin bien."
-    },
-    {
-      "level": "a1",
-      "word": "dessin",
-      "sentence": "Martin signe le dessin bien."
-    },
-    {
-      "level": "a2",
-      "word": "dessin",
-      "sentence": "Ce matin, Quentin commence le dessin avec soin."
-    },
-    {
-      "level": "b1",
-      "word": "dessin",
-      "sentence": "Quand Christine colorie le dessin dans le jardin, parce que Martin sourit aussi."
-    },
-    {
-      "level": "a1",
-      "word": "chemin",
-      "sentence": "Inès continue le chemin bien."
-    },
-    {
-      "level": "a2",
-      "word": "chemin",
-      "sentence": "Ce soir, Martin explique le chemin avec soin."
-    },
-    {
-      "level": "b1",
-      "word": "chemin",
-      "sentence": "À midi, quand Quentin montre le chemin enfin, et Inès sourit enfin bien."
-    },
-    {
-      "level": "a1",
-      "word": "médecin",
-      "sentence": "Christine va chez le médecin."
-    },
-    {
-      "level": "a2",
-      "word": "médecin",
-      "sentence": "À midi, Inès appelle le médecin avec Martin."
-    },
-    {
-      "level": "b1",
-      "word": "médecin",
-      "sentence": "Ce matin, quand Martin téléphone chez le médecin, parce que Martin sourit aussi."
-    },
-    {
-      "level": "a1",
-      "word": "magasin",
-      "sentence": "Quentin entre dans le magasin."
-    },
-    {
-      "level": "a2",
-      "word": "magasin",
-      "sentence": "Après le cours, Christine s’arrête devant le magasin dans le jardin."
-    },
-    {
-      "level": "b1",
-      "word": "magasin",
-      "sentence": "Ce matin, quand Inès entre dans le magasin, et Inès sourit enfin bien."
-    },
-    {
-      "level": "a1",
-      "word": "moulin",
-      "sentence": "Martin admire le moulin bien."
-    },
-    {
-      "level": "a2",
-      "word": "moulin",
-      "sentence": "Avant le repas, Quentin plante le moulin enfin."
-    },
-    {
-      "level": "b1",
-      "word": "moulin",
-      "sentence": "Quand Christine dessine le moulin dans le jardin, parce que Martin sourit aussi."
-    },
-    {
-      "level": "a1",
-      "word": "raisin",
-      "sentence": "Inès mange le raisin bien."
-    },
-    {
-      "level": "a2",
-      "word": "raisin",
-      "sentence": "Ce matin, Martin apporte le raisin avec soin."
-    },
-    {
-      "level": "b1",
-      "word": "raisin",
-      "sentence": "À midi, quand Quentin mange le raisin enfin, et Inès sourit enfin bien."
-    },
-    {
-      "level": "a1",
-      "word": "sapin",
-      "sentence": "Christine voit le sapin bien."
-    },
-    {
-      "level": "a2",
-      "word": "sapin",
-      "sentence": "Ce soir, Inès observe le sapin avec Martin."
-    },
-    {
-      "level": "b1",
-      "word": "sapin",
-      "sentence": "À midi, quand Martin photographie le sapin enfin, parce que Martin sourit aussi."
-    },
-    {
-      "level": "a1",
-      "word": "dauphin",
-      "sentence": "Quentin soigne le dauphin bien."
-    },
-    {
-      "level": "a2",
-      "word": "dauphin",
-      "sentence": "À midi, Christine sauve le dauphin dans le jardin."
-    },
-    {
-      "level": "b1",
-      "word": "dauphin",
-      "sentence": "À midi, quand Inès regarde le dauphin avec Martin, et Inès sourit enfin bien."
-    },
-    {
-      "level": "a1",
-      "word": "frein",
-      "sentence": "Martin attend le frein bien."
-    },
-    {
-      "level": "a2",
-      "word": "frein",
-      "sentence": "Après le cours, Quentin emprunte le frein enfin."
-    },
-    {
-      "level": "b1",
-      "word": "frein",
-      "sentence": "Quand Christine regarde le frein dans le jardin, parce que Martin sourit aussi."
+      "sentence": "Quand Christine passe chez le voisin dans le jardin, parce que Martin sourit aussi."
     }
   ],
   "type10": [
     {
       "level": "a1",
-      "sentence": "Inès lève la main bien.",
+      "sentence": "Inès s’habille après le bain.",
       "parts": [
         {
-          "t": "Inès lève "
+          "t": "Inès s’habille après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " bain."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le cours, Inès s’habille après le bain enfin.",
+      "parts": [
+        {
+          "t": "Après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cours, Inès s’habille après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " bain enfin."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Martin s’habille après le bain, parce que Martin sourit aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Martin s’habille après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " bain, parce que Martin sourit aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Christine lave la ceinture bien.",
+      "parts": [
+        {
+          "t": "Christine lave "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " ceinture bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, Inès porte la ceinture avec Martin.",
+      "parts": [
+        {
+          "t": "Ce soir, Inès porte "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " ceinture avec Martin."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Martin range la ceinture enfin, parce que Martin sourit aussi.",
+      "parts": [
+        {
+          "t": "À midi, quand Martin range "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " ceinture enfin, parce que Martin sourit aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Quentin connaît le chemin bien.",
+      "parts": [
+        {
+          "t": "Quentin connaît "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chemin bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Christine suit le chemin dans le jardin.",
+      "parts": [
+        {
+          "t": "À midi, Christine suit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chemin dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " jardin."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Inès continue le chemin avec Martin, et Inès sourit enfin bien.",
+      "parts": [
+        {
+          "t": "À midi, quand Inès continue "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chemin avec Martin, et Inès sourit enfin bien."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Martin ouvre le cinq bien.",
+      "parts": [
+        {
+          "t": "Martin ouvre "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cinq bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le cours, Quentin recopie le cinq enfin.",
+      "parts": [
+        {
+          "t": "Après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cours, Quentin recopie "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cinq enfin."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand Christine utilise le cinq dans le jardin, parce que Martin sourit aussi.",
+      "parts": [
+        {
+          "t": "Quand Christine utilise "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cinq dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " jardin, parce que Martin sourit aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Inès regarde le dauphin bien.",
+      "parts": [
+        {
+          "t": "Inès regarde "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " dauphin bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le repas, Martin nourrit le dauphin enfin.",
+      "parts": [
+        {
+          "t": "Avant "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " repas, Martin nourrit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " dauphin enfin."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Quentin observe le dauphin enfin, et Inès sourit enfin bien.",
+      "parts": [
+        {
+          "t": "À midi, quand Quentin observe "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " dauphin enfin, et Inès sourit enfin bien."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Christine colorie le dessin bien.",
+      "parts": [
+        {
+          "t": "Christine colorie "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " dessin bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Inès montre le dessin avec Martin.",
+      "parts": [
+        {
+          "t": "Ce matin, Inès montre "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " dessin avec Martin."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Martin finit le dessin enfin, parce que Martin sourit aussi.",
+      "parts": [
+        {
+          "t": "À midi, quand Martin finit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " dessin enfin, parce que Martin sourit aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Quentin répare le frein bien.",
+      "parts": [
+        {
+          "t": "Quentin répare "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " frein bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, Christine attend le frein dans le jardin.",
+      "parts": [
+        {
+          "t": "Ce soir, Christine attend "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " frein dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " jardin."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Inès emprunte le frein avec Martin, et Inès sourit enfin bien.",
+      "parts": [
+        {
+          "t": "À midi, quand Inès emprunte "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " frein avec Martin, et Inès sourit enfin bien."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Martin sort dans le jardin.",
+      "parts": [
+        {
+          "t": "Martin sort dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " jardin."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Quentin est dans le jardin enfin.",
+      "parts": [
+        {
+          "t": "À midi, Quentin est dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " jardin enfin."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand Christine plante dans le jardin dans le jardin, parce que Martin sourit aussi.",
+      "parts": [
+        {
+          "t": "Quand Christine plante dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " jardin dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " jardin, parce que Martin sourit aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Inès entre dans le magasin.",
+      "parts": [
+        {
+          "t": "Inès entre dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " magasin."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le cours, Martin s’arrête devant le magasin enfin.",
+      "parts": [
+        {
+          "t": "Après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cours, Martin s’arrête devant "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " magasin enfin."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Inès entre dans le magasin, et Inès sourit enfin bien.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Inès entre dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " magasin, et Inès sourit enfin bien."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Christine lève la main bien.",
+      "parts": [
+        {
+          "t": "Christine lève "
         },
         {
           "blank": "la"
@@ -379,31 +832,598 @@
     },
     {
       "level": "a2",
-      "sentence": "Ce matin, Martin lève la main avec soin.",
+      "sentence": "À midi, Christine lève la main avec Martin.",
       "parts": [
         {
-          "t": "Ce matin, Martin lève "
+          "t": "À midi, Christine lève "
         },
         {
           "blank": "la"
         },
         {
-          "t": " main avec soin."
+          "t": " main avec Martin."
         }
       ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Quentin lève la main enfin, et Inès sourit enfin bien.",
+      "sentence": "À midi, quand Inès lève la main enfin, et Inès sourit enfin bien.",
       "parts": [
         {
-          "t": "À midi, quand Quentin lève "
+          "t": "À midi, quand Inès lève "
         },
         {
           "blank": "la"
         },
         {
           "t": " main enfin, et Inès sourit enfin bien."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Quentin prépare le matin bien.",
+      "parts": [
+        {
+          "t": "Quentin prépare "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " matin bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Christine note le matin dans le jardin.",
+      "parts": [
+        {
+          "t": "Ce matin, Christine note "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " matin dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " jardin."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Inès attend le matin avec Martin, et Inès sourit enfin bien.",
+      "parts": [
+        {
+          "t": "À midi, quand Inès attend "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " matin avec Martin, et Inès sourit enfin bien."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Martin dessine le moulin bien.",
+      "parts": [
+        {
+          "t": "Martin dessine "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " moulin bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, Quentin voit le moulin avec soin.",
+      "parts": [
+        {
+          "t": "Ce soir, Quentin voit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " moulin avec soin."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand Christine observe le moulin dans le jardin, parce que Martin sourit aussi.",
+      "parts": [
+        {
+          "t": "Quand Christine observe "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " moulin dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " jardin, parce que Martin sourit aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Inès appelle le médecin bien.",
+      "parts": [
+        {
+          "t": "Inès appelle "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " médecin bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Martin téléphone chez le médecin enfin.",
+      "parts": [
+        {
+          "t": "À midi, Martin téléphone chez "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " médecin enfin."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Quentin se rend chez le médecin, et Inès sourit enfin bien.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Quentin se rend chez "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " médecin, et Inès sourit enfin bien."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Christine sent le pain bien.",
+      "parts": [
+        {
+          "t": "Christine sent "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " pain bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le repas, Martin grille le pain dans le jardin.",
+      "parts": [
+        {
+          "t": "Avant "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " repas, Martin grille "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " pain dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " jardin."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand Christine met le pain dans le jardin, parce que Martin sourit aussi.",
+      "parts": [
+        {
+          "t": "Quand Christine met "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " pain dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " jardin, parce que Martin sourit aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Quentin appelle le peintre bien.",
+      "parts": [
+        {
+          "t": "Quentin appelle "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " peintre bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le repas, Christine embrasse le peintre dans le jardin.",
+      "parts": [
+        {
+          "t": "Avant "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " repas, Christine embrasse "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " peintre dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " jardin."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Inès remercie le peintre avec Martin, et Inès sourit enfin bien.",
+      "parts": [
+        {
+          "t": "À midi, quand Inès remercie "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " peintre avec Martin, et Inès sourit enfin bien."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Martin commence la peinture bien.",
+      "parts": [
+        {
+          "t": "Martin commence "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " peinture bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Quentin écoute la peinture avec soin.",
+      "parts": [
+        {
+          "t": "Ce matin, Quentin écoute "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " peinture avec soin."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand Christine aime la peinture dans le jardin, parce que Martin sourit aussi.",
+      "parts": [
+        {
+          "t": "Quand Christine aime "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " peinture dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " jardin, parce que Martin sourit aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Inès prend le plein bien.",
+      "parts": [
+        {
+          "t": "Inès prend "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " plein bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, Martin utilise le plein avec soin.",
+      "parts": [
+        {
+          "t": "Ce soir, Martin utilise "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " plein avec soin."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Quentin range le plein enfin, et Inès sourit enfin bien.",
+      "parts": [
+        {
+          "t": "À midi, quand Quentin range "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " plein enfin, et Inès sourit enfin bien."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Christine choisit le raisin bien.",
+      "parts": [
+        {
+          "t": "Christine choisit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " raisin bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Inès prépare le raisin avec Martin.",
+      "parts": [
+        {
+          "t": "À midi, Inès prépare "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " raisin avec Martin."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Quentin mange le raisin avec Inès, et Inès sourit enfin bien.",
+      "parts": [
+        {
+          "t": "À midi, quand Quentin mange "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " raisin avec Inès, et Inès sourit enfin bien."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Quentin dessine le sapin bien.",
+      "parts": [
+        {
+          "t": "Quentin dessine "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " sapin bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le cours, Christine voit le sapin dans le jardin.",
+      "parts": [
+        {
+          "t": "Après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cours, Christine voit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " sapin dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " jardin."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Inès observe le sapin avec Martin, et Inès sourit enfin bien.",
+      "parts": [
+        {
+          "t": "À midi, quand Inès observe "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " sapin avec Martin, et Inès sourit enfin bien."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Martin nourrit le singe bien.",
+      "parts": [
+        {
+          "t": "Martin nourrit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " singe bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le repas, Quentin observe le singe enfin.",
+      "parts": [
+        {
+          "t": "Avant "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " repas, Quentin observe "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " singe enfin."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand Christine attrape le singe dans le jardin, parce que Martin sourit aussi.",
+      "parts": [
+        {
+          "t": "Quand Christine attrape "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " singe dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " jardin, parce que Martin sourit aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Inès cherche le timbre bien.",
+      "parts": [
+        {
+          "t": "Inès cherche "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " timbre bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Martin pose le timbre avec soin.",
+      "parts": [
+        {
+          "t": "Ce matin, Martin pose "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " timbre avec soin."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Quentin montre le timbre enfin, et Inès sourit enfin bien.",
+      "parts": [
+        {
+          "t": "À midi, quand Quentin montre "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " timbre enfin, et Inès sourit enfin bien."
         }
       ]
     },
@@ -454,214 +1474,10 @@
     },
     {
       "level": "a1",
-      "sentence": "Quentin choisit le matin bien.",
+      "sentence": "Quentin partage le vin bien.",
       "parts": [
         {
-          "t": "Quentin choisit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " matin bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Christine aime le matin dans le jardin.",
-      "parts": [
-        {
-          "t": "À midi, Christine aime "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " matin dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Inès prépare le matin avec Martin, et Inès sourit enfin bien.",
-      "parts": [
-        {
-          "t": "À midi, quand Inès prépare "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " matin avec Martin, et Inès sourit enfin bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Martin plante dans le jardin.",
-      "parts": [
-        {
-          "t": "Martin plante dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardin."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Quentin déjeune dans le jardin enfin.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Quentin déjeune dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardin enfin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand Christine joue dans le jardin dans le jardin, parce que Martin sourit aussi.",
-      "parts": [
-        {
-          "t": "Quand Christine joue dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardin dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardin, parce que Martin sourit aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Inès met le pain bien.",
-      "parts": [
-        {
-          "t": "Inès met "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pain bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Martin met le pain enfin.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, Martin met "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pain enfin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Quentin met le pain enfin, et Inès sourit enfin bien.",
-      "parts": [
-        {
-          "t": "À midi, quand Quentin met "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pain enfin, et Inès sourit enfin bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Christine étudie le cinq bien.",
-      "parts": [
-        {
-          "t": "Christine étudie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cinq bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Inès prépare le cinq avec Martin.",
-      "parts": [
-        {
-          "t": "Ce matin, Inès prépare "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cinq avec Martin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Martin ouvre le cinq enfin, parce que Martin sourit aussi.",
-      "parts": [
-        {
-          "t": "À midi, quand Martin ouvre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cinq enfin, parce que Martin sourit aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Quentin goûte le vin bien.",
-      "parts": [
-        {
-          "t": "Quentin goûte "
+          "t": "Quentin partage "
         },
         {
           "blank": "le"
@@ -673,10 +1489,10 @@
     },
     {
       "level": "a2",
-      "sentence": "Ce soir, Christine partage le vin dans le jardin.",
+      "sentence": "À midi, Christine sert le vin dans le jardin.",
       "parts": [
         {
-          "t": "Ce soir, Christine partage "
+          "t": "À midi, Christine sert "
         },
         {
           "blank": "le"
@@ -694,10 +1510,10 @@
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Inès sert le vin avec Martin, et Inès sourit enfin bien.",
+      "sentence": "À midi, quand Inès mange le vin avec Martin, et Inès sourit enfin bien.",
       "parts": [
         {
-          "t": "À midi, quand Inès sert "
+          "t": "À midi, quand Inès mange "
         },
         {
           "blank": "le"
@@ -709,46 +1525,52 @@
     },
     {
       "level": "a1",
-      "sentence": "Martin voit le singe bien.",
+      "sentence": "Martin salue le voisin bien.",
       "parts": [
         {
-          "t": "Martin voit "
+          "t": "Martin salue "
         },
         {
           "blank": "le"
         },
         {
-          "t": " singe bien."
+          "t": " voisin bien."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "À midi, Quentin soigne le singe avec soin.",
+      "sentence": "Après le cours, Quentin invite le voisin enfin.",
       "parts": [
         {
-          "t": "À midi, Quentin soigne "
+          "t": "Après "
         },
         {
           "blank": "le"
         },
         {
-          "t": " singe avec soin."
+          "t": " cours, Quentin invite "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " voisin enfin."
         }
       ]
     },
     {
       "level": "b1",
-      "sentence": "Quand Christine sauve le singe dans le jardin, parce que Martin sourit aussi.",
+      "sentence": "Quand Christine passe chez le voisin dans le jardin, parce que Martin sourit aussi.",
       "parts": [
         {
-          "t": "Quand Christine sauve "
+          "t": "Quand Christine passe chez "
         },
         {
           "blank": "le"
         },
         {
-          "t": " singe dans "
+          "t": " voisin dans "
         },
         {
           "blank": "le"
@@ -760,22 +1582,88 @@
     },
     {
       "level": "a1",
-      "sentence": "Inès prend le timbre bien.",
+      "sentence": "Martin s’habille après le bain.",
       "parts": [
         {
-          "t": "Inès prend "
+          "t": "Martin s’habille après "
         },
         {
           "blank": "le"
         },
         {
-          "t": " timbre bien."
+          "t": " bain."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Inès choisit la ceinture bien.",
+      "parts": [
+        {
+          "t": "Inès choisit "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " ceinture bien."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Quentin montre le chemin bien.",
+      "parts": [
+        {
+          "t": "Quentin montre "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chemin bien."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Inès lit le cinq bien.",
+      "parts": [
+        {
+          "t": "Inès lit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cinq bien."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "Après le cours, Martin utilise le timbre enfin.",
+      "sentence": "Ce matin, Martin aime le matin dans le jardin.",
+      "parts": [
+        {
+          "t": "Ce matin, Martin aime "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " matin dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " jardin."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le cours, Quentin plante le moulin enfin.",
       "parts": [
         {
           "t": "Après "
@@ -784,13 +1672,61 @@
           "blank": "le"
         },
         {
-          "t": " cours, Martin utilise "
+          "t": " cours, Quentin plante "
         },
         {
           "blank": "le"
         },
         {
-          "t": " timbre enfin."
+          "t": " moulin enfin."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le cours, Martin va chez le médecin dans le jardin.",
+      "parts": [
+        {
+          "t": "Après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cours, Martin va chez "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " médecin dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " jardin."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le cours, Inès achète le pain avec Martin.",
+      "parts": [
+        {
+          "t": "Après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cours, Inès achète "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " pain avec Martin."
         }
       ]
     },
@@ -810,281 +1746,41 @@
       ]
     },
     {
-      "level": "a1",
-      "sentence": "Christine regarde la peinture bien.",
+      "level": "b1",
+      "sentence": "À midi, quand Quentin attend le train enfin, et Inès sourit enfin bien.",
       "parts": [
         {
-          "t": "Christine regarde "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " peinture bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Inès joue avec la peinture avec Martin.",
-      "parts": [
-        {
-          "t": "Avant "
+          "t": "À midi, quand Quentin attend "
         },
         {
           "blank": "le"
         },
         {
-          "t": " repas, Inès joue avec "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " peinture avec Martin."
+          "t": " train enfin, et Inès sourit enfin bien."
         }
       ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Martin commence la peinture enfin, parce que Martin sourit aussi.",
+      "sentence": "À midi, quand Quentin apporte le vin enfin, et Inès sourit enfin bien.",
       "parts": [
         {
-          "t": "À midi, quand Martin commence "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " peinture enfin, parce que Martin sourit aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Quentin achète la ceinture bien.",
-      "parts": [
-        {
-          "t": "Quentin achète "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " ceinture bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Christine lave la ceinture dans le jardin.",
-      "parts": [
-        {
-          "t": "Ce matin, Christine lave "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " ceinture dans "
+          "t": "À midi, quand Quentin apporte "
         },
         {
           "blank": "le"
         },
         {
-          "t": " jardin."
+          "t": " vin enfin, et Inès sourit enfin bien."
         }
       ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Inès porte la ceinture avec Martin, et Inès sourit enfin bien.",
+      "sentence": "À midi, quand Martin salue le voisin dans le jardin, parce que Martin sourit aussi.",
       "parts": [
         {
-          "t": "À midi, quand Inès porte "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " ceinture avec Martin, et Inès sourit enfin bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Martin pose le plein bien.",
-      "parts": [
-        {
-          "t": "Martin pose "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " plein bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Quentin montre le plein avec soin.",
-      "parts": [
-        {
-          "t": "Ce soir, Quentin montre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " plein avec soin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand Christine trouve le plein dans le jardin, parce que Martin sourit aussi.",
-      "parts": [
-        {
-          "t": "Quand Christine trouve "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " plein dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardin, parce que Martin sourit aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Inès remercie le peintre bien.",
-      "parts": [
-        {
-          "t": "Inès remercie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " peintre bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Martin aide le peintre avec soin.",
-      "parts": [
-        {
-          "t": "À midi, Martin aide "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " peintre avec soin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Quentin console le peintre enfin, et Inès sourit enfin bien.",
-      "parts": [
-        {
-          "t": "À midi, quand Quentin console "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " peintre enfin, et Inès sourit enfin bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Christine s’habille après le bain.",
-      "parts": [
-        {
-          "t": "Christine s’habille après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bain."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Inès s’habille après le bain avec Martin.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Inès s’habille après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bain avec Martin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Martin s’habille après le bain, parce que Martin sourit aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Martin s’habille après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bain, parce que Martin sourit aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Quentin salue le voisin bien.",
-      "parts": [
-        {
-          "t": "Quentin salue "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " voisin bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Christine invite le voisin dans le jardin.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, Christine invite "
+          "t": "À midi, quand Martin salue "
         },
         {
           "blank": "le"
@@ -1096,22 +1792,22 @@
           "blank": "le"
         },
         {
-          "t": " jardin."
+          "t": " jardin, parce que Martin sourit aussi."
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "Ce matin, quand Inès passe chez le voisin, et Inès sourit enfin bien.",
+      "level": "a1",
+      "sentence": "Martin sauve le dauphin bien.",
       "parts": [
         {
-          "t": "Ce matin, quand Inès passe chez "
+          "t": "Martin sauve "
         },
         {
           "blank": "le"
         },
         {
-          "t": " voisin, et Inès sourit enfin bien."
+          "t": " dauphin bien."
         }
       ]
     },
@@ -1131,392 +1827,11 @@
       ]
     },
     {
-      "level": "a2",
-      "sentence": "Ce matin, Quentin commence le dessin avec soin.",
-      "parts": [
-        {
-          "t": "Ce matin, Quentin commence "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " dessin avec soin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand Christine colorie le dessin dans le jardin, parce que Martin sourit aussi.",
-      "parts": [
-        {
-          "t": "Quand Christine colorie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " dessin dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardin, parce que Martin sourit aussi."
-        }
-      ]
-    },
-    {
       "level": "a1",
-      "sentence": "Inès continue le chemin bien.",
+      "sentence": "Quentin prend le frein bien.",
       "parts": [
         {
-          "t": "Inès continue "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chemin bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Martin explique le chemin avec soin.",
-      "parts": [
-        {
-          "t": "Ce soir, Martin explique "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chemin avec soin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Quentin montre le chemin enfin, et Inès sourit enfin bien.",
-      "parts": [
-        {
-          "t": "À midi, quand Quentin montre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chemin enfin, et Inès sourit enfin bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Christine va chez le médecin.",
-      "parts": [
-        {
-          "t": "Christine va chez "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " médecin."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Inès appelle le médecin avec Martin.",
-      "parts": [
-        {
-          "t": "À midi, Inès appelle "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " médecin avec Martin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Martin téléphone chez le médecin, parce que Martin sourit aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Martin téléphone chez "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " médecin, parce que Martin sourit aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Quentin entre dans le magasin.",
-      "parts": [
-        {
-          "t": "Quentin entre dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " magasin."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Christine s’arrête devant le magasin dans le jardin.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Christine s’arrête devant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " magasin dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Inès entre dans le magasin, et Inès sourit enfin bien.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Inès entre dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " magasin, et Inès sourit enfin bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Martin admire le moulin bien.",
-      "parts": [
-        {
-          "t": "Martin admire "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " moulin bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Quentin plante le moulin enfin.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, Quentin plante "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " moulin enfin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand Christine dessine le moulin dans le jardin, parce que Martin sourit aussi.",
-      "parts": [
-        {
-          "t": "Quand Christine dessine "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " moulin dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardin, parce que Martin sourit aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Inès mange le raisin bien.",
-      "parts": [
-        {
-          "t": "Inès mange "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " raisin bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Martin apporte le raisin avec soin.",
-      "parts": [
-        {
-          "t": "Ce matin, Martin apporte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " raisin avec soin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Quentin mange le raisin enfin, et Inès sourit enfin bien.",
-      "parts": [
-        {
-          "t": "À midi, quand Quentin mange "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " raisin enfin, et Inès sourit enfin bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Christine voit le sapin bien.",
-      "parts": [
-        {
-          "t": "Christine voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sapin bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Inès observe le sapin avec Martin.",
-      "parts": [
-        {
-          "t": "Ce soir, Inès observe "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sapin avec Martin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Martin photographie le sapin enfin, parce que Martin sourit aussi.",
-      "parts": [
-        {
-          "t": "À midi, quand Martin photographie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sapin enfin, parce que Martin sourit aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Quentin soigne le dauphin bien.",
-      "parts": [
-        {
-          "t": "Quentin soigne "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " dauphin bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Christine sauve le dauphin dans le jardin.",
-      "parts": [
-        {
-          "t": "À midi, Christine sauve "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " dauphin dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Inès regarde le dauphin avec Martin, et Inès sourit enfin bien.",
-      "parts": [
-        {
-          "t": "À midi, quand Inès regarde "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " dauphin avec Martin, et Inès sourit enfin bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Martin attend le frein bien.",
-      "parts": [
-        {
-          "t": "Martin attend "
+          "t": "Quentin prend "
         },
         {
           "blank": "le"
@@ -1527,98 +1842,11 @@
       ]
     },
     {
-      "level": "a2",
-      "sentence": "Après le cours, Quentin emprunte le frein enfin.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Quentin emprunte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " frein enfin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand Christine regarde le frein dans le jardin, parce que Martin sourit aussi.",
-      "parts": [
-        {
-          "t": "Quand Christine regarde "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " frein dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardin, parce que Martin sourit aussi."
-        }
-      ]
-    },
-    {
       "level": "a1",
-      "sentence": "Inès lève la main vite.",
+      "sentence": "Martin joue dans le jardin.",
       "parts": [
         {
-          "t": "Inès lève "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " main vite."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Inès préfère le train bien.",
-      "parts": [
-        {
-          "t": "Inès préfère "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " train bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Quentin attend le matin bien.",
-      "parts": [
-        {
-          "t": "Quentin attend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " matin bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Inès déjeune dans le jardin.",
-      "parts": [
-        {
-          "t": "Inès déjeune dans "
+          "t": "Martin joue dans "
         },
         {
           "blank": "le"
@@ -1629,53 +1857,41 @@
       ]
     },
     {
-      "level": "a2",
-      "sentence": "Avant le repas, Inès porte la ceinture avec Martin.",
+      "level": "a1",
+      "sentence": "Inès entre dans le magasin bien.",
       "parts": [
         {
-          "t": "Avant "
+          "t": "Inès entre dans "
         },
         {
           "blank": "le"
         },
         {
-          "t": " repas, Inès porte "
+          "t": " magasin bien."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Christine lève la main vite.",
+      "parts": [
+        {
+          "t": "Christine lève "
         },
         {
           "blank": "la"
         },
         {
-          "t": " ceinture avec Martin."
+          "t": " main vite."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "Avant le repas, Christine pose le plein avec Martin.",
+      "sentence": "Ce matin, Inès salue le peintre avec Martin.",
       "parts": [
         {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, Christine pose "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " plein avec Martin."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Inès remercie le peintre avec Martin.",
-      "parts": [
-        {
-          "t": "À midi, Inès remercie "
+          "t": "Ce matin, Inès salue "
         },
         {
           "blank": "le"
@@ -1687,7 +1903,22 @@
     },
     {
       "level": "a2",
-      "sentence": "Après le cours, Inès s’habille après le bain avec soin.",
+      "sentence": "Ce soir, Inès choisit la peinture avec Martin.",
+      "parts": [
+        {
+          "t": "Ce soir, Inès choisit "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " peinture avec Martin."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le cours, Inès cherche le plein avec Martin.",
       "parts": [
         {
           "t": "Après "
@@ -1696,52 +1927,133 @@
           "blank": "le"
         },
         {
-          "t": " cours, Inès s’habille après "
+          "t": " cours, Inès cherche "
         },
         {
           "blank": "le"
         },
         {
-          "t": " bain avec soin."
+          "t": " plein avec Martin."
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "À midi, quand Quentin sert le raisin enfin, et Inès sourit enfin bien.",
+      "level": "a2",
+      "sentence": "Après le cours, Christine apporte le raisin avec Martin.",
       "parts": [
         {
-          "t": "À midi, quand Quentin sert "
+          "t": "Après "
         },
         {
           "blank": "le"
         },
         {
-          "t": " raisin enfin, et Inès sourit enfin bien."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Inès regarde le sapin avec Martin, et Inès sourit enfin bien.",
-      "parts": [
-        {
-          "t": "À midi, quand Inès regarde "
+          "t": " cours, Christine apporte "
         },
         {
           "blank": "le"
         },
         {
-          "t": " sapin avec Martin, et Inès sourit enfin bien."
+          "t": " raisin avec Martin."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, Inès plante le sapin avec Martin.",
+      "parts": [
+        {
+          "t": "Ce soir, Inès plante "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " sapin avec Martin."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Inès regarde le singe avec Martin.",
+      "parts": [
+        {
+          "t": "À midi, Inès regarde "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " singe avec Martin."
         }
       ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Quentin observe le dauphin enfin, et Inès sourit enfin bien.",
+      "sentence": "Ce matin, quand Quentin s’habille après le bain, et Inès sourit enfin bien.",
       "parts": [
         {
-          "t": "À midi, quand Quentin observe "
+          "t": "Ce matin, quand Quentin s’habille après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " bain, et Inès sourit enfin bien."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Quentin achète la ceinture enfin, et Inès sourit enfin bien.",
+      "parts": [
+        {
+          "t": "À midi, quand Quentin achète "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " ceinture enfin, et Inès sourit enfin bien."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand Christine explique le chemin près de Quentin, parce que Martin sourit aussi.",
+      "parts": [
+        {
+          "t": "Quand Christine explique "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chemin près de Quentin, parce que Martin sourit aussi."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Inès prépare le cinq avec Martin, et Inès sourit enfin bien.",
+      "parts": [
+        {
+          "t": "À midi, quand Inès prépare "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cinq avec Martin, et Inès sourit enfin bien."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Quentin soigne le dauphin enfin, et Inès sourit enfin bien.",
+      "parts": [
+        {
+          "t": "À midi, quand Quentin soigne "
         },
         {
           "blank": "le"
@@ -1753,298 +2065,16 @@
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Inès attend le frein avec Martin, et Inès sourit enfin bien.",
+      "sentence": "À midi, quand Quentin finit le dessin enfin, et Inès sourit enfin bien.",
       "parts": [
         {
-          "t": "À midi, quand Inès attend "
+          "t": "À midi, quand Quentin finit "
         },
         {
           "blank": "le"
         },
         {
-          "t": " frein avec Martin, et Inès sourit enfin bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Quentin coupe le pain bien.",
-      "parts": [
-        {
-          "t": "Quentin coupe "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pain bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Inès prépare le cinq bien.",
-      "parts": [
-        {
-          "t": "Inès prépare "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cinq bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Quentin partage le vin bien.",
-      "parts": [
-        {
-          "t": "Quentin partage "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " vin bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Inès caresse le singe bien.",
-      "parts": [
-        {
-          "t": "Inès caresse "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " singe bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Quentin montre le timbre bien.",
-      "parts": [
-        {
-          "t": "Quentin montre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " timbre bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Inès aime la peinture bien.",
-      "parts": [
-        {
-          "t": "Inès aime "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " peinture bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Inès passe chez le voisin avec Martin.",
-      "parts": [
-        {
-          "t": "Ce matin, Inès passe chez "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " voisin avec Martin."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Quentin finit le dessin enfin.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, Quentin finit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " dessin enfin."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Inès montre le chemin avec Martin.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Inès montre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chemin avec Martin."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Quentin se rend chez le médecin enfin.",
-      "parts": [
-        {
-          "t": "À midi, Quentin se rend chez "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " médecin enfin."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Inès entre dans le magasin avec Martin.",
-      "parts": [
-        {
-          "t": "Ce soir, Inès entre dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " magasin avec Martin."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Christine voit le moulin avec Martin.",
-      "parts": [
-        {
-          "t": "Ce soir, Christine voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " moulin avec Martin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Inès lève la main avec Martin, et Inès sourit enfin bien.",
-      "parts": [
-        {
-          "t": "À midi, quand Inès lève "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " main avec Martin, et Inès sourit enfin bien."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Inès préfère le train avec Martin, et Inès sourit enfin bien.",
-      "parts": [
-        {
-          "t": "À midi, quand Inès préfère "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " train avec Martin, et Inès sourit enfin bien."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Quentin choisit le matin enfin, et Inès sourit enfin bien.",
-      "parts": [
-        {
-          "t": "À midi, quand Quentin choisit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " matin enfin, et Inès sourit enfin bien."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Inès arrose le jardin avec Martin, et Inès sourit enfin bien.",
-      "parts": [
-        {
-          "t": "À midi, quand Inès arrose "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardin avec Martin, et Inès sourit enfin bien."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Quentin grille le pain enfin, et Inès sourit enfin bien.",
-      "parts": [
-        {
-          "t": "À midi, quand Quentin grille "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pain enfin, et Inès sourit enfin bien."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Inès lit le cinq avec Martin, et Inès sourit enfin bien.",
-      "parts": [
-        {
-          "t": "À midi, quand Inès lit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cinq avec Martin, et Inès sourit enfin bien."
+          "t": " dessin enfin, et Inès sourit enfin bien."
         }
       ]
     }
@@ -2052,125 +2082,125 @@
   "type12": [
     {
       "level": "a1",
-      "sentence": "Inès lève la main vite."
+      "sentence": "Martin s’habille après le bain."
     },
     {
       "level": "a1",
-      "sentence": "Inès préfère le train bien."
+      "sentence": "Inès choisit la ceinture bien."
     },
     {
       "level": "a1",
-      "sentence": "Quentin attend le matin bien."
+      "sentence": "Quentin montre le chemin bien."
     },
     {
       "level": "a1",
-      "sentence": "Inès déjeune dans le jardin."
+      "sentence": "Inès lit le cinq bien."
     },
     {
       "level": "a2",
-      "sentence": "Avant le repas, Inès porte la ceinture avec Martin."
+      "sentence": "Ce matin, Martin aime le matin dans le jardin."
     },
     {
       "level": "a2",
-      "sentence": "Avant le repas, Christine pose le plein avec Martin."
+      "sentence": "Après le cours, Quentin plante le moulin enfin."
     },
     {
       "level": "a2",
-      "sentence": "À midi, Inès remercie le peintre avec Martin."
+      "sentence": "Après le cours, Martin va chez le médecin dans le jardin."
     },
     {
       "level": "a2",
-      "sentence": "Après le cours, Inès s’habille après le bain avec soin."
+      "sentence": "Après le cours, Inès achète le pain avec Martin."
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Quentin sert le raisin enfin, et Inès sourit enfin bien."
+      "sentence": "À midi, quand Quentin range le timbre enfin, et Inès sourit enfin bien."
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Inès regarde le sapin avec Martin, et Inès sourit enfin bien."
+      "sentence": "À midi, quand Quentin attend le train enfin, et Inès sourit enfin bien."
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Quentin observe le dauphin enfin, et Inès sourit enfin bien."
+      "sentence": "À midi, quand Quentin apporte le vin enfin, et Inès sourit enfin bien."
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Inès attend le frein avec Martin, et Inès sourit enfin bien."
+      "sentence": "À midi, quand Martin salue le voisin dans le jardin, parce que Martin sourit aussi."
     }
   ],
   "type14": [
     {
       "level": "a1",
-      "sentence": "Quentin coupe le pain bien."
+      "sentence": "Martin sauve le dauphin bien."
     },
     {
       "level": "a1",
-      "sentence": "Inès prépare le cinq bien."
+      "sentence": "Martin signe le dessin bien."
     },
     {
       "level": "a1",
-      "sentence": "Quentin partage le vin bien."
+      "sentence": "Quentin prend le frein bien."
     },
     {
       "level": "a1",
-      "sentence": "Inès caresse le singe bien."
+      "sentence": "Martin joue dans le jardin."
     },
     {
       "level": "a1",
-      "sentence": "Quentin montre le timbre bien."
+      "sentence": "Inès entre dans le magasin bien."
     },
     {
       "level": "a1",
-      "sentence": "Inès aime la peinture bien."
+      "sentence": "Christine lève la main vite."
     },
     {
       "level": "a2",
-      "sentence": "Ce matin, Inès passe chez le voisin avec Martin."
+      "sentence": "Ce matin, Inès salue le peintre avec Martin."
     },
     {
       "level": "a2",
-      "sentence": "Avant le repas, Quentin finit le dessin enfin."
+      "sentence": "Ce soir, Inès choisit la peinture avec Martin."
     },
     {
       "level": "a2",
-      "sentence": "Après le cours, Inès montre le chemin avec Martin."
+      "sentence": "Après le cours, Inès cherche le plein avec Martin."
     },
     {
       "level": "a2",
-      "sentence": "À midi, Quentin se rend chez le médecin enfin."
+      "sentence": "Après le cours, Christine apporte le raisin avec Martin."
     },
     {
       "level": "a2",
-      "sentence": "Ce soir, Inès entre dans le magasin avec Martin."
+      "sentence": "Ce soir, Inès plante le sapin avec Martin."
     },
     {
       "level": "a2",
-      "sentence": "Ce soir, Christine voit le moulin avec Martin."
+      "sentence": "À midi, Inès regarde le singe avec Martin."
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Inès lève la main avec Martin, et Inès sourit enfin bien."
+      "sentence": "Ce matin, quand Quentin s’habille après le bain, et Inès sourit enfin bien."
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Inès préfère le train avec Martin, et Inès sourit enfin bien."
+      "sentence": "À midi, quand Quentin achète la ceinture enfin, et Inès sourit enfin bien."
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Quentin choisit le matin enfin, et Inès sourit enfin bien."
+      "sentence": "Quand Christine explique le chemin près de Quentin, parce que Martin sourit aussi."
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Inès arrose le jardin avec Martin, et Inès sourit enfin bien."
+      "sentence": "À midi, quand Inès prépare le cinq avec Martin, et Inès sourit enfin bien."
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Quentin grille le pain enfin, et Inès sourit enfin bien."
+      "sentence": "À midi, quand Quentin soigne le dauphin enfin, et Inès sourit enfin bien."
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Inès lit le cinq avec Martin, et Inès sourit enfin bien."
+      "sentence": "À midi, quand Quentin finit le dessin enfin, et Inès sourit enfin bien."
     }
   ]
 }

@@ -2,288 +2,108 @@
   "type9": [
     {
       "level": "a1",
-      "word": "enfant",
-      "sentence": "Jean salue un enfant bien."
-    },
-    {
-      "level": "a2",
-      "word": "enfant",
-      "sentence": "Ce matin, Henri suit un enfant dans le jardin."
-    },
-    {
-      "level": "b1",
-      "word": "enfant",
-      "sentence": "À midi, quand Anne appelle un enfant dans le jardin, et Jean est très content."
-    },
-    {
-      "level": "a1",
-      "word": "maman",
-      "sentence": "François embrasse la maman bien."
-    },
-    {
-      "level": "a2",
-      "word": "maman",
-      "sentence": "Ce soir, Jean embrasse la maman avec Henri."
-    },
-    {
-      "level": "b1",
-      "word": "maman",
-      "sentence": "Ce matin, quand Henri embrasse la maman, parce que Henri est content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "vent",
-      "sentence": "Anne regarde le vent bien."
-    },
-    {
-      "level": "a2",
-      "word": "vent",
-      "sentence": "À midi, François admire le vent pendant longtemps."
-    },
-    {
-      "level": "b1",
-      "word": "vent",
-      "sentence": "À midi, quand Jean plante le vent avec Henri, et Jean est très content."
-    },
-    {
-      "level": "a1",
-      "word": "dent",
-      "sentence": "Henri lave la dent bien."
-    },
-    {
-      "level": "a2",
-      "word": "dent",
-      "sentence": "Après le cours, Anne lave la dent dans le jardin."
-    },
-    {
-      "level": "b1",
-      "word": "dent",
-      "sentence": "Quand François lave la dent pendant longtemps, parce que Henri est content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "temps",
-      "sentence": "Jean prépare le temps bien."
-    },
-    {
-      "level": "a2",
-      "word": "temps",
-      "sentence": "Avant le repas, Henri note le temps dans le jardin."
-    },
-    {
-      "level": "b1",
-      "word": "temps",
-      "sentence": "À midi, quand Anne attend le temps dans le jardin, et Jean est très content."
-    },
-    {
-      "level": "a1",
-      "word": "champ",
-      "sentence": "François admire le champ bien."
-    },
-    {
-      "level": "a2",
-      "word": "champ",
-      "sentence": "Ce matin, Jean plante le champ avec Henri."
-    },
-    {
-      "level": "b1",
-      "word": "champ",
-      "sentence": "Ce matin, quand Henri dessine le champ, parce que Henri est content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "lampe",
-      "sentence": "Anne allume la lampe bien."
-    },
-    {
-      "level": "a2",
-      "word": "lampe",
-      "sentence": "Ce soir, François éteint la lampe pendant longtemps."
-    },
-    {
-      "level": "b1",
-      "word": "lampe",
-      "sentence": "À midi, quand Jean allume la lampe avec Henri, et Jean est très content."
-    },
-    {
-      "level": "a1",
-      "word": "jambe",
-      "sentence": "Henri essuie la jambe bien."
-    },
-    {
-      "level": "a2",
-      "word": "jambe",
-      "sentence": "À midi, Anne touche la jambe dans le jardin."
-    },
-    {
-      "level": "b1",
-      "word": "jambe",
-      "sentence": "Quand François montre la jambe pendant longtemps, parce que Henri est content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "manteau",
-      "sentence": "Jean accroche le manteau bien."
-    },
-    {
-      "level": "a2",
-      "word": "manteau",
-      "sentence": "Après le cours, Henri porte le manteau dans le jardin."
-    },
-    {
-      "level": "b1",
-      "word": "manteau",
-      "sentence": "À midi, quand Anne enfile le manteau dans le jardin, et Jean est très content."
-    },
-    {
-      "level": "a1",
-      "word": "parent",
-      "sentence": "François invite le parent bien."
-    },
-    {
-      "level": "a2",
-      "word": "parent",
-      "sentence": "Avant le repas, Jean salue le parent avec Henri."
-    },
-    {
-      "level": "b1",
-      "word": "parent",
-      "sentence": "Ce matin, quand Henri suit le parent, parce que Henri est content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "cent",
-      "sentence": "Anne recopie le cent bien."
-    },
-    {
-      "level": "a2",
-      "word": "cent",
-      "sentence": "Ce matin, François utilise le cent pendant longtemps."
-    },
-    {
-      "level": "b1",
-      "word": "cent",
-      "sentence": "À midi, quand Jean lit le cent avec Henri, et Jean est très content."
-    },
-    {
-      "level": "a1",
-      "word": "trente",
-      "sentence": "Henri ouvre le trente bien."
-    },
-    {
-      "level": "a2",
-      "word": "trente",
-      "sentence": "Ce soir, Anne recopie le trente dans le jardin."
-    },
-    {
-      "level": "b1",
-      "word": "trente",
-      "sentence": "Quand François utilise le trente pendant longtemps, parce que Henri est content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "vendredi",
-      "sentence": "Jean attend le vendredi bien."
-    },
-    {
-      "level": "a2",
-      "word": "vendredi",
-      "sentence": "À midi, Henri parle avec le vendredi dans le jardin."
-    },
-    {
-      "level": "b1",
-      "word": "vendredi",
-      "sentence": "À midi, quand Anne choisit le vendredi dans le jardin, et Jean est très content."
-    },
-    {
-      "level": "a1",
-      "word": "janvier",
-      "sentence": "François parle avec le janvier."
-    },
-    {
-      "level": "a2",
-      "word": "janvier",
-      "sentence": "Après le cours, Jean choisit le janvier avec Henri."
-    },
-    {
-      "level": "b1",
-      "word": "janvier",
-      "sentence": "Ce matin, quand Henri aime le janvier, parce que Henri est content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "restaurant",
-      "sentence": "Anne dîne dans le restaurant."
-    },
-    {
-      "level": "a2",
-      "word": "restaurant",
-      "sentence": "Avant le repas, François dîne dans le restaurant pendant longtemps."
-    },
-    {
-      "level": "b1",
-      "word": "restaurant",
-      "sentence": "Ce matin, quand Jean dîne dans le restaurant, et Jean est très content."
-    },
-    {
-      "level": "a1",
-      "word": "étudiant",
-      "sentence": "Henri corrige un étudiant bien."
-    },
-    {
-      "level": "a2",
-      "word": "étudiant",
-      "sentence": "Ce matin, Anne écrit un étudiant dans le jardin."
-    },
-    {
-      "level": "b1",
-      "word": "étudiant",
-      "sentence": "Quand François étudie un étudiant pendant longtemps, parce que Henri est content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "pantalon",
-      "sentence": "Jean repasse le pantalon bien."
-    },
-    {
-      "level": "a2",
-      "word": "pantalon",
-      "sentence": "Ce soir, Henri repasse le pantalon dans le jardin."
-    },
-    {
-      "level": "b1",
-      "word": "pantalon",
-      "sentence": "À midi, quand Anne repasse le pantalon dans le jardin, et Jean est très content."
-    },
-    {
-      "level": "a1",
       "word": "banc",
-      "sentence": "François quitte le banc bien."
+      "sentence": "Jean visite le banc bien."
     },
     {
       "level": "a2",
       "word": "banc",
-      "sentence": "À midi, Jean traverse le banc avec Henri."
+      "sentence": "Ce matin, Henri quitte le banc dans le jardin."
     },
     {
       "level": "b1",
       "word": "banc",
-      "sentence": "Ce matin, quand Henri cherche le banc, parce que Henri est content aussi."
+      "sentence": "À midi, quand Anne traverse le banc dans le jardin, et Jean est très content."
     },
     {
       "level": "a1",
-      "word": "sang",
-      "sentence": "Anne lave le sang bien."
+      "word": "cent",
+      "sentence": "François utilise le cent bien."
     },
     {
       "level": "a2",
-      "word": "sang",
-      "sentence": "Après le cours, François essuie le sang pendant longtemps."
+      "word": "cent",
+      "sentence": "Ce soir, Jean lit le cent avec Henri."
     },
     {
       "level": "b1",
-      "word": "sang",
-      "sentence": "À midi, quand Jean touche le sang avec Henri, et Jean est très content."
+      "word": "cent",
+      "sentence": "Ce matin, quand Henri corrige le cent, parce que Henri est content aussi."
+    },
+    {
+      "level": "a1",
+      "word": "chambre",
+      "sentence": "Anne visite la chambre bien."
+    },
+    {
+      "level": "a2",
+      "word": "chambre",
+      "sentence": "Après le cours, Jean nettoie la chambre dans le jardin."
+    },
+    {
+      "level": "b1",
+      "word": "chambre",
+      "sentence": "Ce matin, quand Anne étudie dans la chambre, et Jean est très content."
+    },
+    {
+      "level": "a1",
+      "word": "champ",
+      "sentence": "Henri observe le champ bien."
+    },
+    {
+      "level": "a2",
+      "word": "champ",
+      "sentence": "Après le cours, Anne photographie le champ dans le jardin."
+    },
+    {
+      "level": "b1",
+      "word": "champ",
+      "sentence": "Quand François regarde le champ pendant longtemps, parce que Henri est content aussi."
+    },
+    {
+      "level": "a1",
+      "word": "dent",
+      "sentence": "Jean lave la dent bien."
+    },
+    {
+      "level": "a2",
+      "word": "dent",
+      "sentence": "À midi, Jean lave la dent dans le jardin."
+    },
+    {
+      "level": "b1",
+      "word": "dent",
+      "sentence": "Ce matin, quand Henri lave la dent, parce que Henri est content aussi."
+    },
+    {
+      "level": "a1",
+      "word": "dimanche",
+      "sentence": "François note le dimanche bien."
+    },
+    {
+      "level": "a2",
+      "word": "dimanche",
+      "sentence": "Ce matin, Jean attend le dimanche avec Henri."
+    },
+    {
+      "level": "b1",
+      "word": "dimanche",
+      "sentence": "Ce matin, quand Henri parle avec le dimanche, parce que Henri est content aussi."
+    },
+    {
+      "level": "a1",
+      "word": "enfant",
+      "sentence": "Anne appelle un enfant bien."
+    },
+    {
+      "level": "a2",
+      "word": "enfant",
+      "sentence": "Ce soir, François embrasse un enfant pendant longtemps."
+    },
+    {
+      "level": "b1",
+      "word": "enfant",
+      "sentence": "À midi, quand Jean remercie un enfant avec Henri, et Jean est très content."
     },
     {
       "level": "a1",
@@ -293,81 +113,282 @@
     {
       "level": "a2",
       "word": "gant",
-      "sentence": "Avant le repas, Anne perd le gant dans le jardin."
+      "sentence": "Ce matin, Henri perd le gant pendant longtemps."
     },
     {
       "level": "b1",
       "word": "gant",
-      "sentence": "Quand François perd le gant pendant longtemps, parce que Henri est content aussi."
+      "sentence": "À midi, quand Anne perd le gant avec Jean, et Jean est très content."
     },
     {
       "level": "a1",
-      "word": "tante",
-      "sentence": "Jean remercie la tante bien."
+      "word": "jambe",
+      "sentence": "Jean touche la jambe bien."
     },
     {
       "level": "a2",
-      "word": "tante",
-      "sentence": "Ce matin, Henri aide la tante dans le jardin."
+      "word": "jambe",
+      "sentence": "Après le cours, Henri montre la jambe dans le jardin."
     },
     {
       "level": "b1",
-      "word": "tante",
-      "sentence": "À midi, quand Anne console la tante dans le jardin, et Jean est très content."
+      "word": "jambe",
+      "sentence": "À midi, quand Anne regarde la jambe dans le jardin, et Jean est très content."
+    },
+    {
+      "level": "a1",
+      "word": "janvier",
+      "sentence": "François aime le janvier bien."
+    },
+    {
+      "level": "a2",
+      "word": "janvier",
+      "sentence": "Avant le repas, Jean prépare le janvier avec Henri."
+    },
+    {
+      "level": "b1",
+      "word": "janvier",
+      "sentence": "Ce matin, quand Henri note le janvier, parce que Henri est content aussi."
+    },
+    {
+      "level": "a1",
+      "word": "lampe",
+      "sentence": "Anne allume la lampe bien."
+    },
+    {
+      "level": "a2",
+      "word": "lampe",
+      "sentence": "Ce matin, François éteint la lampe pendant longtemps."
+    },
+    {
+      "level": "b1",
+      "word": "lampe",
+      "sentence": "À midi, quand Anne allume la lampe dans le jardin, et Jean est très content."
+    },
+    {
+      "level": "a1",
+      "word": "maman",
+      "sentence": "Henri embrasse la maman bien."
+    },
+    {
+      "level": "a2",
+      "word": "maman",
+      "sentence": "À midi, François aide la maman avec Henri."
+    },
+    {
+      "level": "b1",
+      "word": "maman",
+      "sentence": "Ce matin, quand Henri rentre chez la maman, parce que Henri est content aussi."
+    },
+    {
+      "level": "a1",
+      "word": "manteau",
+      "sentence": "Jean accroche le manteau bien."
+    },
+    {
+      "level": "a2",
+      "word": "manteau",
+      "sentence": "À midi, Henri porte le manteau dans le jardin."
+    },
+    {
+      "level": "b1",
+      "word": "manteau",
+      "sentence": "À midi, quand Anne enfile le manteau dans le jardin, et Jean est très content."
+    },
+    {
+      "level": "a1",
+      "word": "pantalon",
+      "sentence": "François repasse le pantalon bien."
+    },
+    {
+      "level": "a2",
+      "word": "pantalon",
+      "sentence": "Ce soir, François repasse le pantalon avec Henri."
+    },
+    {
+      "level": "b1",
+      "word": "pantalon",
+      "sentence": "À midi, quand Jean repasse le pantalon dans le jardin, et Jean est très content."
+    },
+    {
+      "level": "a1",
+      "word": "parent",
+      "sentence": "Anne appelle le parent bien."
+    },
+    {
+      "level": "a2",
+      "word": "parent",
+      "sentence": "Avant le repas, François embrasse le parent pendant longtemps."
+    },
+    {
+      "level": "b1",
+      "word": "parent",
+      "sentence": "À midi, quand Jean remercie le parent avec Henri, et Jean est très content."
     },
     {
       "level": "a1",
       "word": "plante",
-      "sentence": "François arrose la plante bien."
+      "sentence": "Henri arrose la plante bien."
     },
     {
       "level": "a2",
       "word": "plante",
-      "sentence": "Ce soir, Jean arrose la plante avec Henri."
+      "sentence": "Après le cours, Henri arrose la plante pendant longtemps."
     },
     {
       "level": "b1",
       "word": "plante",
-      "sentence": "Ce matin, quand Henri arrose la plante, parce que Henri est content aussi."
+      "sentence": "À midi, quand Anne arrose la plante avec Jean, et Jean est très content."
     },
     {
       "level": "a1",
-      "word": "dimanche",
-      "sentence": "Anne prépare le dimanche bien."
+      "word": "restaurant",
+      "sentence": "Jean dîne dans le restaurant."
     },
     {
       "level": "a2",
-      "word": "dimanche",
-      "sentence": "À midi, François note le dimanche pendant longtemps."
+      "word": "restaurant",
+      "sentence": "Avant le repas, Jean dîne dans le restaurant dans le jardin."
     },
     {
       "level": "b1",
-      "word": "dimanche",
-      "sentence": "À midi, quand Jean attend le dimanche avec Henri, et Jean est très content."
+      "word": "restaurant",
+      "sentence": "Ce matin, quand Henri dîne dans le restaurant, parce que Henri est content aussi."
     },
     {
       "level": "a1",
-      "word": "chambre",
-      "sentence": "Henri étudie dans la chambre."
+      "word": "sang",
+      "sentence": "François soigne le sang bien."
     },
     {
       "level": "a2",
-      "word": "chambre",
-      "sentence": "Après le cours, Anne étudie dans la chambre dans le jardin."
+      "word": "sang",
+      "sentence": "À midi, Jean lave le sang avec Henri."
     },
     {
       "level": "b1",
-      "word": "chambre",
-      "sentence": "Quand François étudie dans la chambre pendant longtemps, parce que Henri est content aussi."
+      "word": "sang",
+      "sentence": "Ce matin, quand Henri essuie le sang, parce que Henri est content aussi."
+    },
+    {
+      "level": "a1",
+      "word": "tante",
+      "sentence": "Anne console la tante bien."
+    },
+    {
+      "level": "a2",
+      "word": "tante",
+      "sentence": "Après le cours, François invite la tante pendant longtemps."
+    },
+    {
+      "level": "b1",
+      "word": "tante",
+      "sentence": "À midi, quand Jean salue la tante avec Henri, et Jean est très content."
+    },
+    {
+      "level": "a1",
+      "word": "temps",
+      "sentence": "Henri parle avec le temps."
+    },
+    {
+      "level": "a2",
+      "word": "temps",
+      "sentence": "Avant le repas, Anne choisit le temps dans le jardin."
+    },
+    {
+      "level": "b1",
+      "word": "temps",
+      "sentence": "Quand François aime le temps pendant longtemps, parce que Henri est content aussi."
+    },
+    {
+      "level": "a1",
+      "word": "trente",
+      "sentence": "Jean prépare le trente bien."
+    },
+    {
+      "level": "a2",
+      "word": "trente",
+      "sentence": "Ce matin, Henri ouvre le trente dans le jardin."
+    },
+    {
+      "level": "b1",
+      "word": "trente",
+      "sentence": "À midi, quand Anne recopie le trente dans le jardin, et Jean est très content."
+    },
+    {
+      "level": "a1",
+      "word": "vendredi",
+      "sentence": "François aime le vendredi bien."
+    },
+    {
+      "level": "a2",
+      "word": "vendredi",
+      "sentence": "Ce soir, Jean prépare le vendredi avec Henri."
+    },
+    {
+      "level": "b1",
+      "word": "vendredi",
+      "sentence": "Ce matin, quand Henri note le vendredi, parce que Henri est content aussi."
+    },
+    {
+      "level": "a1",
+      "word": "vent",
+      "sentence": "Anne plante le vent bien."
+    },
+    {
+      "level": "a2",
+      "word": "vent",
+      "sentence": "À midi, François dessine le vent pendant longtemps."
+    },
+    {
+      "level": "b1",
+      "word": "vent",
+      "sentence": "À midi, quand Jean voit le vent avec Henri, et Jean est très content."
+    },
+    {
+      "level": "a1",
+      "word": "étudiant",
+      "sentence": "Henri corrige un étudiant bien."
+    },
+    {
+      "level": "a2",
+      "word": "étudiant",
+      "sentence": "Après le cours, Anne écrit un étudiant dans le jardin."
+    },
+    {
+      "level": "b1",
+      "word": "étudiant",
+      "sentence": "Quand François étudie un étudiant pendant longtemps, parce que Henri est content aussi."
     }
   ],
   "type10": [
     {
-      "level": "a2",
-      "sentence": "Ce matin, Henri suit un enfant dans le jardin.",
+      "level": "a1",
+      "sentence": "Jean visite le banc bien.",
       "parts": [
         {
-          "t": "Ce matin, Henri suit un enfant dans "
+          "t": "Jean visite "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " banc bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Henri quitte le banc dans le jardin.",
+      "parts": [
+        {
+          "t": "Ce matin, Henri quitte "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " banc dans "
         },
         {
           "blank": "le"
@@ -379,10 +400,16 @@
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Anne appelle un enfant dans le jardin, et Jean est très content.",
+      "sentence": "À midi, quand Anne traverse le banc dans le jardin, et Jean est très content.",
       "parts": [
         {
-          "t": "À midi, quand Anne appelle un enfant dans "
+          "t": "À midi, quand Anne traverse "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " banc dans "
         },
         {
           "blank": "le"
@@ -394,100 +421,169 @@
     },
     {
       "level": "a1",
-      "sentence": "François embrasse la maman bien.",
+      "sentence": "François utilise le cent bien.",
       "parts": [
         {
-          "t": "François embrasse "
+          "t": "François utilise "
         },
         {
-          "blank": "la"
+          "blank": "le"
         },
         {
-          "t": " maman bien."
+          "t": " cent bien."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "Ce soir, Jean embrasse la maman avec Henri.",
+      "sentence": "Ce soir, Jean lit le cent avec Henri.",
       "parts": [
         {
-          "t": "Ce soir, Jean embrasse "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maman avec Henri."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Henri embrasse la maman, parce que Henri est content aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Henri embrasse "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maman, parce que Henri est content aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Anne regarde le vent bien.",
-      "parts": [
-        {
-          "t": "Anne regarde "
+          "t": "Ce soir, Jean lit "
         },
         {
           "blank": "le"
         },
         {
-          "t": " vent bien."
+          "t": " cent avec Henri."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Henri corrige le cent, parce que Henri est content aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Henri corrige "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cent, parce que Henri est content aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Anne visite la chambre bien.",
+      "parts": [
+        {
+          "t": "Anne visite "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " chambre bien."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "À midi, François admire le vent pendant longtemps.",
+      "sentence": "Après le cours, Jean nettoie la chambre dans le jardin.",
       "parts": [
         {
-          "t": "À midi, François admire "
+          "t": "Après "
         },
         {
           "blank": "le"
         },
         {
-          "t": " vent pendant longtemps."
+          "t": " cours, Jean nettoie "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " chambre dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " jardin."
         }
       ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Jean plante le vent avec Henri, et Jean est très content.",
+      "sentence": "Ce matin, quand Anne étudie dans la chambre, et Jean est très content.",
       "parts": [
         {
-          "t": "À midi, quand Jean plante "
+          "t": "Ce matin, quand Anne étudie dans "
         },
         {
-          "blank": "le"
+          "blank": "la"
         },
         {
-          "t": " vent avec Henri, et Jean est très content."
+          "t": " chambre, et Jean est très content."
         }
       ]
     },
     {
       "level": "a1",
-      "sentence": "Henri lave la dent bien.",
+      "sentence": "Henri observe le champ bien.",
       "parts": [
         {
-          "t": "Henri lave "
+          "t": "Henri observe "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " champ bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le cours, Anne photographie le champ dans le jardin.",
+      "parts": [
+        {
+          "t": "Après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cours, Anne photographie "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " champ dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " jardin."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand François regarde le champ pendant longtemps, parce que Henri est content aussi.",
+      "parts": [
+        {
+          "t": "Quand François regarde "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " champ pendant longtemps, parce que Henri est content aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Jean lave la dent bien.",
+      "parts": [
+        {
+          "t": "Jean lave "
         },
         {
           "blank": "la"
@@ -499,16 +595,10 @@
     },
     {
       "level": "a2",
-      "sentence": "Après le cours, Anne lave la dent dans le jardin.",
+      "sentence": "À midi, Jean lave la dent dans le jardin.",
       "parts": [
         {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Anne lave "
+          "t": "À midi, Jean lave "
         },
         {
           "blank": "la"
@@ -526,52 +616,142 @@
     },
     {
       "level": "b1",
-      "sentence": "Quand François lave la dent pendant longtemps, parce que Henri est content aussi.",
+      "sentence": "Ce matin, quand Henri lave la dent, parce que Henri est content aussi.",
       "parts": [
         {
-          "t": "Quand François lave "
+          "t": "Ce matin, quand Henri lave "
         },
         {
           "blank": "la"
         },
         {
-          "t": " dent pendant longtemps, parce que Henri est content aussi."
+          "t": " dent, parce que Henri est content aussi."
         }
       ]
     },
     {
       "level": "a1",
-      "sentence": "Jean prépare le temps bien.",
+      "sentence": "François note le dimanche bien.",
       "parts": [
         {
-          "t": "Jean prépare "
+          "t": "François note "
         },
         {
           "blank": "le"
         },
         {
-          "t": " temps bien."
+          "t": " dimanche bien."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "Avant le repas, Henri note le temps dans le jardin.",
+      "sentence": "Ce matin, Jean attend le dimanche avec Henri.",
       "parts": [
         {
-          "t": "Avant "
+          "t": "Ce matin, Jean attend "
         },
         {
           "blank": "le"
         },
         {
-          "t": " repas, Henri note "
+          "t": " dimanche avec Henri."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Henri parle avec le dimanche, parce que Henri est content aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Henri parle avec "
         },
         {
           "blank": "le"
         },
         {
-          "t": " temps dans "
+          "t": " dimanche, parce que Henri est content aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Henri perd le gant bien.",
+      "parts": [
+        {
+          "t": "Henri perd "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " gant bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Henri perd le gant pendant longtemps.",
+      "parts": [
+        {
+          "t": "Ce matin, Henri perd "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " gant pendant longtemps."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Anne perd le gant avec Jean, et Jean est très content.",
+      "parts": [
+        {
+          "t": "À midi, quand Anne perd "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " gant avec Jean, et Jean est très content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Jean touche la jambe bien.",
+      "parts": [
+        {
+          "t": "Jean touche "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " jambe bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le cours, Henri montre la jambe dans le jardin.",
+      "parts": [
+        {
+          "t": "Après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cours, Henri montre "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " jambe dans "
         },
         {
           "blank": "le"
@@ -583,16 +763,16 @@
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Anne attend le temps dans le jardin, et Jean est très content.",
+      "sentence": "À midi, quand Anne regarde la jambe dans le jardin, et Jean est très content.",
       "parts": [
         {
-          "t": "À midi, quand Anne attend "
+          "t": "À midi, quand Anne regarde "
         },
         {
-          "blank": "le"
+          "blank": "la"
         },
         {
-          "t": " temps dans "
+          "t": " jambe dans "
         },
         {
           "blank": "le"
@@ -604,46 +784,52 @@
     },
     {
       "level": "a1",
-      "sentence": "François admire le champ bien.",
+      "sentence": "François aime le janvier bien.",
       "parts": [
         {
-          "t": "François admire "
+          "t": "François aime "
         },
         {
           "blank": "le"
         },
         {
-          "t": " champ bien."
+          "t": " janvier bien."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "Ce matin, Jean plante le champ avec Henri.",
+      "sentence": "Avant le repas, Jean prépare le janvier avec Henri.",
       "parts": [
         {
-          "t": "Ce matin, Jean plante "
+          "t": "Avant "
         },
         {
           "blank": "le"
         },
         {
-          "t": " champ avec Henri."
+          "t": " repas, Jean prépare "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " janvier avec Henri."
         }
       ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Henri dessine le champ, parce que Henri est content aussi.",
+      "sentence": "Ce matin, quand Henri note le janvier, parce que Henri est content aussi.",
       "parts": [
         {
-          "t": "Ce matin, quand Henri dessine "
+          "t": "Ce matin, quand Henri note "
         },
         {
           "blank": "le"
         },
         {
-          "t": " champ, parce que Henri est content aussi."
+          "t": " janvier, parce que Henri est content aussi."
         }
       ]
     },
@@ -664,10 +850,10 @@
     },
     {
       "level": "a2",
-      "sentence": "Ce soir, François éteint la lampe pendant longtemps.",
+      "sentence": "Ce matin, François éteint la lampe pendant longtemps.",
       "parts": [
         {
-          "t": "Ce soir, François éteint "
+          "t": "Ce matin, François éteint "
         },
         {
           "blank": "la"
@@ -679,67 +865,67 @@
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Jean allume la lampe avec Henri, et Jean est très content.",
+      "sentence": "À midi, quand Anne allume la lampe dans le jardin, et Jean est très content.",
       "parts": [
         {
-          "t": "À midi, quand Jean allume "
+          "t": "À midi, quand Anne allume "
         },
         {
           "blank": "la"
         },
         {
-          "t": " lampe avec Henri, et Jean est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Henri essuie la jambe bien.",
-      "parts": [
-        {
-          "t": "Henri essuie "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " jambe bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Anne touche la jambe dans le jardin.",
-      "parts": [
-        {
-          "t": "À midi, Anne touche "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " jambe dans "
+          "t": " lampe dans "
         },
         {
           "blank": "le"
         },
         {
-          "t": " jardin."
+          "t": " jardin, et Jean est très content."
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "Quand François montre la jambe pendant longtemps, parce que Henri est content aussi.",
+      "level": "a1",
+      "sentence": "Henri embrasse la maman bien.",
       "parts": [
         {
-          "t": "Quand François montre "
+          "t": "Henri embrasse "
         },
         {
           "blank": "la"
         },
         {
-          "t": " jambe pendant longtemps, parce que Henri est content aussi."
+          "t": " maman bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, François aide la maman avec Henri.",
+      "parts": [
+        {
+          "t": "À midi, François aide "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " maman avec Henri."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Henri rentre chez la maman, parce que Henri est content aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Henri rentre chez "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " maman, parce que Henri est content aussi."
         }
       ]
     },
@@ -760,16 +946,10 @@
     },
     {
       "level": "a2",
-      "sentence": "Après le cours, Henri porte le manteau dans le jardin.",
+      "sentence": "À midi, Henri porte le manteau dans le jardin.",
       "parts": [
         {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Henri porte "
+          "t": "À midi, Henri porte "
         },
         {
           "blank": "le"
@@ -808,10 +988,61 @@
     },
     {
       "level": "a1",
-      "sentence": "François invite le parent bien.",
+      "sentence": "François repasse le pantalon bien.",
       "parts": [
         {
-          "t": "François invite "
+          "t": "François repasse "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " pantalon bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, François repasse le pantalon avec Henri.",
+      "parts": [
+        {
+          "t": "Ce soir, François repasse "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " pantalon avec Henri."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Jean repasse le pantalon dans le jardin, et Jean est très content.",
+      "parts": [
+        {
+          "t": "À midi, quand Jean repasse "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " pantalon dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " jardin, et Jean est très content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Anne appelle le parent bien.",
+      "parts": [
+        {
+          "t": "Anne appelle "
         },
         {
           "blank": "le"
@@ -823,7 +1054,7 @@
     },
     {
       "level": "a2",
-      "sentence": "Avant le repas, Jean salue le parent avec Henri.",
+      "sentence": "Avant le repas, François embrasse le parent pendant longtemps.",
       "parts": [
         {
           "t": "Avant "
@@ -832,82 +1063,298 @@
           "blank": "le"
         },
         {
-          "t": " repas, Jean salue "
+          "t": " repas, François embrasse "
         },
         {
           "blank": "le"
         },
         {
-          "t": " parent avec Henri."
+          "t": " parent pendant longtemps."
         }
       ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Henri suit le parent, parce que Henri est content aussi.",
+      "sentence": "À midi, quand Jean remercie le parent avec Henri, et Jean est très content.",
       "parts": [
         {
-          "t": "Ce matin, quand Henri suit "
+          "t": "À midi, quand Jean remercie "
         },
         {
           "blank": "le"
         },
         {
-          "t": " parent, parce que Henri est content aussi."
+          "t": " parent avec Henri, et Jean est très content."
         }
       ]
     },
     {
       "level": "a1",
-      "sentence": "Anne recopie le cent bien.",
+      "sentence": "Henri arrose la plante bien.",
       "parts": [
         {
-          "t": "Anne recopie "
+          "t": "Henri arrose "
         },
         {
-          "blank": "le"
+          "blank": "la"
         },
         {
-          "t": " cent bien."
+          "t": " plante bien."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "Ce matin, François utilise le cent pendant longtemps.",
+      "sentence": "Après le cours, Henri arrose la plante pendant longtemps.",
       "parts": [
         {
-          "t": "Ce matin, François utilise "
+          "t": "Après "
         },
         {
           "blank": "le"
         },
         {
-          "t": " cent pendant longtemps."
+          "t": " cours, Henri arrose "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " plante pendant longtemps."
         }
       ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Jean lit le cent avec Henri, et Jean est très content.",
+      "sentence": "À midi, quand Anne arrose la plante avec Jean, et Jean est très content.",
       "parts": [
         {
-          "t": "À midi, quand Jean lit "
+          "t": "À midi, quand Anne arrose "
         },
         {
-          "blank": "le"
+          "blank": "la"
         },
         {
-          "t": " cent avec Henri, et Jean est très content."
+          "t": " plante avec Jean, et Jean est très content."
         }
       ]
     },
     {
       "level": "a1",
-      "sentence": "Henri ouvre le trente bien.",
+      "sentence": "Jean dîne dans le restaurant.",
       "parts": [
         {
-          "t": "Henri ouvre "
+          "t": "Jean dîne dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " restaurant."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le repas, Jean dîne dans le restaurant dans le jardin.",
+      "parts": [
+        {
+          "t": "Avant "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " repas, Jean dîne dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " restaurant dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " jardin."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Henri dîne dans le restaurant, parce que Henri est content aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Henri dîne dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " restaurant, parce que Henri est content aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "François soigne le sang bien.",
+      "parts": [
+        {
+          "t": "François soigne "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " sang bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Jean lave le sang avec Henri.",
+      "parts": [
+        {
+          "t": "À midi, Jean lave "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " sang avec Henri."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Henri essuie le sang, parce que Henri est content aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Henri essuie "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " sang, parce que Henri est content aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Anne console la tante bien.",
+      "parts": [
+        {
+          "t": "Anne console "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " tante bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le cours, François invite la tante pendant longtemps.",
+      "parts": [
+        {
+          "t": "Après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cours, François invite "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " tante pendant longtemps."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Jean salue la tante avec Henri, et Jean est très content.",
+      "parts": [
+        {
+          "t": "À midi, quand Jean salue "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " tante avec Henri, et Jean est très content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Henri parle avec le temps.",
+      "parts": [
+        {
+          "t": "Henri parle avec "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " temps."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le repas, Anne choisit le temps dans le jardin.",
+      "parts": [
+        {
+          "t": "Avant "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " repas, Anne choisit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " temps dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " jardin."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand François aime le temps pendant longtemps, parce que Henri est content aussi.",
+      "parts": [
+        {
+          "t": "Quand François aime "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " temps pendant longtemps, parce que Henri est content aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Jean prépare le trente bien.",
+      "parts": [
+        {
+          "t": "Jean prépare "
         },
         {
           "blank": "le"
@@ -919,10 +1366,10 @@
     },
     {
       "level": "a2",
-      "sentence": "Ce soir, Anne recopie le trente dans le jardin.",
+      "sentence": "Ce matin, Henri ouvre le trente dans le jardin.",
       "parts": [
         {
-          "t": "Ce soir, Anne recopie "
+          "t": "Ce matin, Henri ouvre "
         },
         {
           "blank": "le"
@@ -940,25 +1387,31 @@
     },
     {
       "level": "b1",
-      "sentence": "Quand François utilise le trente pendant longtemps, parce que Henri est content aussi.",
+      "sentence": "À midi, quand Anne recopie le trente dans le jardin, et Jean est très content.",
       "parts": [
         {
-          "t": "Quand François utilise "
+          "t": "À midi, quand Anne recopie "
         },
         {
           "blank": "le"
         },
         {
-          "t": " trente pendant longtemps, parce que Henri est content aussi."
+          "t": " trente dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " jardin, et Jean est très content."
         }
       ]
     },
     {
       "level": "a1",
-      "sentence": "Jean attend le vendredi bien.",
+      "sentence": "François aime le vendredi bien.",
       "parts": [
         {
-          "t": "Jean attend "
+          "t": "François aime "
         },
         {
           "blank": "le"
@@ -970,670 +1423,10 @@
     },
     {
       "level": "a2",
-      "sentence": "À midi, Henri parle avec le vendredi dans le jardin.",
+      "sentence": "Ce soir, Jean prépare le vendredi avec Henri.",
       "parts": [
         {
-          "t": "À midi, Henri parle avec "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " vendredi dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Anne choisit le vendredi dans le jardin, et Jean est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Anne choisit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " vendredi dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardin, et Jean est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "François parle avec le janvier.",
-      "parts": [
-        {
-          "t": "François parle avec "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " janvier."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Jean choisit le janvier avec Henri.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Jean choisit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " janvier avec Henri."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Henri aime le janvier, parce que Henri est content aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Henri aime "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " janvier, parce que Henri est content aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Anne dîne dans le restaurant.",
-      "parts": [
-        {
-          "t": "Anne dîne dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " restaurant."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, François dîne dans le restaurant pendant longtemps.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, François dîne dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " restaurant pendant longtemps."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Jean dîne dans le restaurant, et Jean est très content.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Jean dîne dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " restaurant, et Jean est très content."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Anne écrit un étudiant dans le jardin.",
-      "parts": [
-        {
-          "t": "Ce matin, Anne écrit un étudiant dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardin."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Jean repasse le pantalon bien.",
-      "parts": [
-        {
-          "t": "Jean repasse "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pantalon bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Henri repasse le pantalon dans le jardin.",
-      "parts": [
-        {
-          "t": "Ce soir, Henri repasse "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pantalon dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Anne repasse le pantalon dans le jardin, et Jean est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Anne repasse "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pantalon dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardin, et Jean est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "François quitte le banc bien.",
-      "parts": [
-        {
-          "t": "François quitte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " banc bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Jean traverse le banc avec Henri.",
-      "parts": [
-        {
-          "t": "À midi, Jean traverse "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " banc avec Henri."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Henri cherche le banc, parce que Henri est content aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Henri cherche "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " banc, parce que Henri est content aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Anne lave le sang bien.",
-      "parts": [
-        {
-          "t": "Anne lave "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sang bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, François essuie le sang pendant longtemps.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, François essuie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sang pendant longtemps."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Jean touche le sang avec Henri, et Jean est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Jean touche "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sang avec Henri, et Jean est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Henri perd le gant bien.",
-      "parts": [
-        {
-          "t": "Henri perd "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " gant bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Anne perd le gant dans le jardin.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, Anne perd "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " gant dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand François perd le gant pendant longtemps, parce que Henri est content aussi.",
-      "parts": [
-        {
-          "t": "Quand François perd "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " gant pendant longtemps, parce que Henri est content aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Jean remercie la tante bien.",
-      "parts": [
-        {
-          "t": "Jean remercie "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " tante bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Henri aide la tante dans le jardin.",
-      "parts": [
-        {
-          "t": "Ce matin, Henri aide "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " tante dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Anne console la tante dans le jardin, et Jean est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Anne console "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " tante dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardin, et Jean est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "François arrose la plante bien.",
-      "parts": [
-        {
-          "t": "François arrose "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " plante bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Jean arrose la plante avec Henri.",
-      "parts": [
-        {
-          "t": "Ce soir, Jean arrose "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " plante avec Henri."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Henri arrose la plante, parce que Henri est content aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Henri arrose "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " plante, parce que Henri est content aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Anne prépare le dimanche bien.",
-      "parts": [
-        {
-          "t": "Anne prépare "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " dimanche bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, François note le dimanche pendant longtemps.",
-      "parts": [
-        {
-          "t": "À midi, François note "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " dimanche pendant longtemps."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Jean attend le dimanche avec Henri, et Jean est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Jean attend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " dimanche avec Henri, et Jean est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Henri étudie dans la chambre.",
-      "parts": [
-        {
-          "t": "Henri étudie dans "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " chambre."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Anne étudie dans la chambre dans le jardin.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Anne étudie dans "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " chambre dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand François étudie dans la chambre pendant longtemps, parce que Henri est content aussi.",
-      "parts": [
-        {
-          "t": "Quand François étudie dans "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " chambre pendant longtemps, parce que Henri est content aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Jean téléphone à la maman.",
-      "parts": [
-        {
-          "t": "Jean téléphone à "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maman."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Anne voit le vent bien.",
-      "parts": [
-        {
-          "t": "Anne voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " vent bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Anne lave la dent bien.",
-      "parts": [
-        {
-          "t": "Anne lave "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " dent bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Jean lit le cent avec Henri.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, Jean lit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cent avec Henri."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, François ouvre le trente avec Henri.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, François ouvre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " trente avec Henri."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Jean choisit le vendredi avec Henri.",
-      "parts": [
-        {
-          "t": "À midi, Jean choisit "
+          "t": "Ce soir, Jean prépare "
         },
         {
           "blank": "le"
@@ -1644,17 +1437,77 @@
       ]
     },
     {
-      "level": "a2",
-      "sentence": "Ce soir, Anne attend le janvier dans le jardin.",
+      "level": "b1",
+      "sentence": "Ce matin, quand Henri note le vendredi, parce que Henri est content aussi.",
       "parts": [
         {
-          "t": "Ce soir, Anne attend "
+          "t": "Ce matin, quand Henri note "
         },
         {
           "blank": "le"
         },
         {
-          "t": " janvier dans "
+          "t": " vendredi, parce que Henri est content aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Anne plante le vent bien.",
+      "parts": [
+        {
+          "t": "Anne plante "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " vent bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, François dessine le vent pendant longtemps.",
+      "parts": [
+        {
+          "t": "À midi, François dessine "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " vent pendant longtemps."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Jean voit le vent avec Henri, et Jean est très content.",
+      "parts": [
+        {
+          "t": "À midi, quand Jean voit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " vent avec Henri, et Jean est très content."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le cours, Anne écrit un étudiant dans le jardin.",
+      "parts": [
+        {
+          "t": "Après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cours, Anne écrit un étudiant dans "
         },
         {
           "blank": "le"
@@ -1665,95 +1518,47 @@
       ]
     },
     {
-      "level": "b1",
-      "sentence": "À midi, quand Anne appelle la tante dans le jardin, et Jean est très content.",
+      "level": "a1",
+      "sentence": "Jean longe le banc bien.",
       "parts": [
         {
-          "t": "À midi, quand Anne appelle "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " tante dans "
+          "t": "Jean longe "
         },
         {
           "blank": "le"
         },
         {
-          "t": " jardin, et Jean est très content."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Anne arrose la plante dans le jardin, et Jean est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Anne arrose "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " plante dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardin, et Jean est très content."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Anne prépare le dimanche dans le jardin, et Jean est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Anne prépare "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " dimanche dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardin, et Jean est très content."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Jean range la chambre avec Henri, et Jean est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Jean range "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " chambre avec Henri, et Jean est très content."
+          "t": " banc bien."
         }
       ]
     },
     {
       "level": "a1",
-      "sentence": "Anne choisit le temps bien.",
+      "sentence": "Jean prépare le cent bien.",
       "parts": [
         {
-          "t": "Anne choisit "
+          "t": "Jean prépare "
         },
         {
           "blank": "le"
         },
         {
-          "t": " temps bien."
+          "t": " cent bien."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Henri range la chambre bien.",
+      "parts": [
+        {
+          "t": "Henri range "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " chambre bien."
         }
       ]
     },
@@ -1773,77 +1578,17 @@
       ]
     },
     {
-      "level": "a1",
-      "sentence": "François éteint la lampe bien.",
-      "parts": [
-        {
-          "t": "François éteint "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " lampe bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Jean touche la jambe bien.",
-      "parts": [
-        {
-          "t": "Jean touche "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " jambe bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Anne enfile le manteau bien.",
-      "parts": [
-        {
-          "t": "Anne enfile "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " manteau bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Jean remercie le parent bien.",
-      "parts": [
-        {
-          "t": "Jean remercie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " parent bien."
-        }
-      ]
-    },
-    {
       "level": "a2",
-      "sentence": "À midi, Anne dîne dans le restaurant dans le jardin.",
+      "sentence": "Ce matin, Anne allume la lampe dans le jardin.",
       "parts": [
         {
-          "t": "À midi, Anne dîne dans "
+          "t": "Ce matin, Anne allume "
         },
         {
-          "blank": "le"
+          "blank": "la"
         },
         {
-          "t": " restaurant dans "
+          "t": " lampe dans "
         },
         {
           "blank": "le"
@@ -1855,7 +1600,55 @@
     },
     {
       "level": "a2",
-      "sentence": "Avant le repas, Anne recopie un étudiant dans le jardin.",
+      "sentence": "Après le cours, Anne téléphone à la maman dans le jardin.",
+      "parts": [
+        {
+          "t": "Après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cours, Anne téléphone à "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " maman dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " jardin."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le cours, Henri met le manteau pendant longtemps.",
+      "parts": [
+        {
+          "t": "Après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cours, Henri met "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " manteau pendant longtemps."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le repas, Henri repasse le pantalon pendant longtemps.",
       "parts": [
         {
           "t": "Avant "
@@ -1864,100 +1657,49 @@
           "blank": "le"
         },
         {
-          "t": " repas, Anne recopie un étudiant dans "
+          "t": " repas, Henri repasse "
         },
         {
           "blank": "le"
         },
         {
-          "t": " jardin."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Anne repasse le pantalon dans le jardin.",
-      "parts": [
-        {
-          "t": "Ce matin, Anne repasse "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pantalon dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardin."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Anne voit le banc dans le jardin.",
-      "parts": [
-        {
-          "t": "À midi, Anne voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " banc dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardin."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Jean touche le sang avec Henri.",
-      "parts": [
-        {
-          "t": "Ce soir, Jean touche "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sang avec Henri."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Jean perd le gant avec Henri.",
-      "parts": [
-        {
-          "t": "À midi, Jean perd "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " gant avec Henri."
+          "t": " pantalon pendant longtemps."
         }
       ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Jean aide la maman avec Henri, et Jean est très content.",
+      "sentence": "À midi, quand Anne écrit le trente dans le jardin, et Jean est très content.",
       "parts": [
         {
-          "t": "À midi, quand Jean aide "
+          "t": "À midi, quand Anne écrit "
         },
         {
-          "blank": "la"
+          "blank": "le"
         },
         {
-          "t": " maman avec Henri, et Jean est très content."
+          "t": " trente dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " jardin, et Jean est très content."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Jean attend le vendredi avec Henri, et Jean est très content.",
+      "parts": [
+        {
+          "t": "À midi, quand Jean attend "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " vendredi avec Henri, et Jean est très content."
         }
       ]
     },
@@ -1983,32 +1725,173 @@
       ]
     },
     {
-      "level": "b1",
-      "sentence": "À midi, quand Anne lave la dent dans le jardin, et Jean est très content.",
+      "level": "a1",
+      "sentence": "Henri lave la dent bien.",
       "parts": [
         {
-          "t": "À midi, quand Anne lave "
+          "t": "Henri lave "
         },
         {
           "blank": "la"
         },
         {
-          "t": " dent dans "
+          "t": " dent bien."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Henri aime le dimanche bien.",
+      "parts": [
+        {
+          "t": "Henri aime "
         },
         {
           "blank": "le"
         },
         {
-          "t": " jardin, et Jean est très content."
+          "t": " dimanche bien."
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "À midi, quand Anne prépare le temps dans le jardin, et Jean est très content.",
+      "level": "a1",
+      "sentence": "François perd le gant bien.",
       "parts": [
         {
-          "t": "À midi, quand Anne prépare "
+          "t": "François perd "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " gant bien."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Anne lave la jambe bien.",
+      "parts": [
+        {
+          "t": "Anne lave "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " jambe bien."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Henri parle avec le janvier.",
+      "parts": [
+        {
+          "t": "Henri parle avec "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " janvier."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Jean salue le parent avec Henri.",
+      "parts": [
+        {
+          "t": "Ce matin, Jean salue "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " parent avec Henri."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Henri arrose la plante pendant longtemps.",
+      "parts": [
+        {
+          "t": "À midi, Henri arrose "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " plante pendant longtemps."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, François dîne dans le restaurant avec Henri.",
+      "parts": [
+        {
+          "t": "Ce soir, François dîne dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " restaurant avec Henri."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Anne regarde le sang dans le jardin.",
+      "parts": [
+        {
+          "t": "À midi, Anne regarde "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " sang dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " jardin."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le repas, François aide la tante avec Henri.",
+      "parts": [
+        {
+          "t": "Avant "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " repas, François aide "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " tante avec Henri."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Anne attend le temps dans le jardin.",
+      "parts": [
+        {
+          "t": "Ce matin, Anne attend "
         },
         {
           "blank": "le"
@@ -2020,22 +1903,109 @@
           "blank": "le"
         },
         {
+          "t": " jardin."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Anne cherche le banc dans le jardin, et Jean est très content.",
+      "parts": [
+        {
+          "t": "À midi, quand Anne cherche "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " banc dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
           "t": " jardin, et Jean est très content."
         }
       ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Jean regarde le champ avec Henri, et Jean est très content.",
+      "sentence": "À midi, quand Anne recopie le cent dans le jardin, et Jean est très content.",
       "parts": [
         {
-          "t": "À midi, quand Jean regarde "
+          "t": "À midi, quand Anne recopie "
         },
         {
           "blank": "le"
         },
         {
-          "t": " champ avec Henri, et Jean est très content."
+          "t": " cent dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " jardin, et Jean est très content."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Jean retourne dans la chambre, et Jean est très content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Jean retourne dans "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " chambre, et Jean est très content."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Henri plante le champ, parce que Henri est content aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Henri plante "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " champ, parce que Henri est content aussi."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce soir, quand Henri lave la dent, parce que Henri est content aussi.",
+      "parts": [
+        {
+          "t": "Ce soir, quand Henri lave "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " dent, parce que Henri est content aussi."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Jean choisit le dimanche avec Henri, et Jean est très content.",
+      "parts": [
+        {
+          "t": "À midi, quand Jean choisit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " dimanche avec Henri, et Jean est très content."
         }
       ]
     }
@@ -2043,109 +2013,43 @@
   "type12": [
     {
       "level": "a1",
-      "sentence": "Anne console un enfant bien."
+      "sentence": "Jean longe le banc bien."
     },
     {
       "level": "a1",
-      "sentence": "Jean téléphone à la maman."
+      "sentence": "Jean prépare le cent bien."
     },
     {
       "level": "a1",
-      "sentence": "Anne voit le vent bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "Anne lave la dent bien."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Jean lit le cent avec Henri."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, François ouvre le trente avec Henri."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Jean choisit le vendredi avec Henri."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Anne attend le janvier dans le jardin."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Anne appelle la tante dans le jardin, et Jean est très content."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Anne arrose la plante dans le jardin, et Jean est très content."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Anne prépare le dimanche dans le jardin, et Jean est très content."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Jean range la chambre avec Henri, et Jean est très content."
-    }
-  ],
-  "type14": [
-    {
-      "level": "a1",
-      "sentence": "Anne choisit le temps bien."
+      "sentence": "Henri range la chambre bien."
     },
     {
       "level": "a1",
       "sentence": "Jean voit le champ bien."
     },
     {
-      "level": "a1",
-      "sentence": "François éteint la lampe bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "Jean touche la jambe bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "Anne enfile le manteau bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "Jean remercie le parent bien."
+      "level": "a2",
+      "sentence": "Ce matin, Anne allume la lampe dans le jardin."
     },
     {
       "level": "a2",
-      "sentence": "À midi, Anne dîne dans le restaurant dans le jardin."
+      "sentence": "Après le cours, Anne téléphone à la maman dans le jardin."
     },
     {
       "level": "a2",
-      "sentence": "Avant le repas, Anne recopie un étudiant dans le jardin."
+      "sentence": "Après le cours, Henri met le manteau pendant longtemps."
     },
     {
       "level": "a2",
-      "sentence": "Ce matin, Anne repasse le pantalon dans le jardin."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Anne voit le banc dans le jardin."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Jean touche le sang avec Henri."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Jean perd le gant avec Henri."
+      "sentence": "Avant le repas, Henri repasse le pantalon pendant longtemps."
     },
     {
       "level": "b1",
-      "sentence": "Quand François suit un enfant avec Henri, parce que Henri est content aussi."
+      "sentence": "À midi, quand Anne écrit le trente dans le jardin, et Jean est très content."
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Jean aide la maman avec Henri, et Jean est très content."
+      "sentence": "À midi, quand Jean attend le vendredi avec Henri, et Jean est très content."
     },
     {
       "level": "b1",
@@ -2153,15 +2057,81 @@
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Anne lave la dent dans le jardin, et Jean est très content."
+      "sentence": "À midi, quand Jean prépare un étudiant avec Henri, et Jean est très content."
+    }
+  ],
+  "type14": [
+    {
+      "level": "a1",
+      "sentence": "Henri lave la dent bien."
+    },
+    {
+      "level": "a1",
+      "sentence": "Henri aime le dimanche bien."
+    },
+    {
+      "level": "a1",
+      "sentence": "François suit un enfant bien."
+    },
+    {
+      "level": "a1",
+      "sentence": "François perd le gant bien."
+    },
+    {
+      "level": "a1",
+      "sentence": "Anne lave la jambe bien."
+    },
+    {
+      "level": "a1",
+      "sentence": "Henri parle avec le janvier."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Jean salue le parent avec Henri."
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Henri arrose la plante pendant longtemps."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, François dîne dans le restaurant avec Henri."
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Anne regarde le sang dans le jardin."
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le repas, François aide la tante avec Henri."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Anne attend le temps dans le jardin."
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Anne prépare le temps dans le jardin, et Jean est très content."
+      "sentence": "À midi, quand Anne cherche le banc dans le jardin, et Jean est très content."
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Jean regarde le champ avec Henri, et Jean est très content."
+      "sentence": "À midi, quand Anne recopie le cent dans le jardin, et Jean est très content."
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Jean retourne dans la chambre, et Jean est très content."
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Henri plante le champ, parce que Henri est content aussi."
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce soir, quand Henri lave la dent, parce que Henri est content aussi."
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Jean choisit le dimanche avec Henri, et Jean est très content."
     }
   ]
 }

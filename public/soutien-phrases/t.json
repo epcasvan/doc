@@ -2,78 +2,138 @@
   "type9": [
     {
       "level": "a1",
+      "word": "botte",
+      "sentence": "Tom porte la botte bien."
+    },
+    {
+      "level": "a2",
+      "word": "botte",
+      "sentence": "Ce matin, Théo range la botte tout de suite."
+    },
+    {
+      "level": "b1",
+      "word": "botte",
+      "sentence": "À midi, quand Martine enfile la botte tout de suite, et Tom est très content."
+    },
+    {
+      "level": "a1",
+      "word": "carotte",
+      "sentence": "Antoine coupe la carotte bien."
+    },
+    {
+      "level": "a2",
+      "word": "carotte",
+      "sentence": "Ce soir, Tom achète la carotte avec Théo."
+    },
+    {
+      "level": "b1",
+      "word": "carotte",
+      "sentence": "À midi, quand Martine sert la carotte avec Tom, et Tom est très content."
+    },
+    {
+      "level": "a1",
+      "word": "date",
+      "sentence": "Martine choisit la date bien."
+    },
+    {
+      "level": "a2",
+      "word": "date",
+      "sentence": "À midi, Antoine aime la date sur le toit."
+    },
+    {
+      "level": "b1",
+      "word": "date",
+      "sentence": "À midi, quand Tom prépare la date avec Théo, et Tom est très content."
+    },
+    {
+      "level": "a1",
+      "word": "goutte",
+      "sentence": "Théo observe la goutte bien."
+    },
+    {
+      "level": "a2",
+      "word": "goutte",
+      "sentence": "Après le cours, Martine photographie la goutte tout de suite."
+    },
+    {
+      "level": "b1",
+      "word": "goutte",
+      "sentence": "Quand Antoine regarde la goutte sur le toit, parce que Théo est très content."
+    },
+    {
+      "level": "a1",
+      "word": "note",
+      "sentence": "Tom paie la note bien."
+    },
+    {
+      "level": "a2",
+      "word": "note",
+      "sentence": "À midi, Tom paie la note tout de suite."
+    },
+    {
+      "level": "b1",
+      "word": "note",
+      "sentence": "Ce matin, quand Théo paie la note, parce que Théo est très content."
+    },
+    {
+      "level": "a1",
+      "word": "patte",
+      "sentence": "Antoine sauve la patte bien."
+    },
+    {
+      "level": "a2",
+      "word": "patte",
+      "sentence": "Ce matin, Tom regarde la patte avec Théo."
+    },
+    {
+      "level": "b1",
+      "word": "patte",
+      "sentence": "Ce matin, quand Théo nourrit la patte, parce que Théo est très content."
+    },
+    {
+      "level": "a1",
+      "word": "saignant",
+      "sentence": "Martine range le saignant bien."
+    },
+    {
+      "level": "a2",
+      "word": "saignant",
+      "sentence": "Ce soir, Antoine oublie le saignant sur le toit."
+    },
+    {
+      "level": "b1",
+      "word": "saignant",
+      "sentence": "À midi, quand Tom cherche le saignant avec Théo, et Tom est très content."
+    },
+    {
+      "level": "a1",
       "word": "table",
-      "sentence": "Tom nettoie la table bien."
+      "sentence": "Théo se cache sous la table."
     },
     {
       "level": "a2",
       "word": "table",
-      "sentence": "Ce matin, Théo se cache sous la table tout de suite."
+      "sentence": "À midi, Martine couvre la table tout de suite."
     },
     {
       "level": "b1",
       "word": "table",
-      "sentence": "À midi, quand Martine couvre la table tout de suite, et Tom est très content."
+      "sentence": "Quand Antoine met la table sur le toit, parce que Théo est très content."
     },
     {
       "level": "a1",
-      "word": "tomate",
-      "sentence": "Antoine coupe la tomate bien."
+      "word": "tapis",
+      "sentence": "Tom tombe sur le tapis."
     },
     {
       "level": "a2",
-      "word": "tomate",
-      "sentence": "À midi, Théo coupe la tomate sur le toit."
+      "word": "tapis",
+      "sentence": "Après le cours, Théo bat le tapis tout de suite."
     },
     {
       "level": "b1",
-      "word": "tomate",
-      "sentence": "Ce matin, quand Théo coupe la tomate, parce que Théo est très content."
-    },
-    {
-      "level": "a1",
-      "word": "tasse",
-      "sentence": "Martine sert la tasse bien."
-    },
-    {
-      "level": "a2",
-      "word": "tasse",
-      "sentence": "À midi, Antoine mange la tasse sur le toit."
-    },
-    {
-      "level": "b1",
-      "word": "tasse",
-      "sentence": "À midi, quand Tom apporte la tasse avec Théo, et Tom est très content."
-    },
-    {
-      "level": "a1",
-      "word": "tête",
-      "sentence": "Théo montre la tête bien."
-    },
-    {
-      "level": "a2",
-      "word": "tête",
-      "sentence": "Après le cours, Martine regarde la tête tout de suite."
-    },
-    {
-      "level": "b1",
-      "word": "tête",
-      "sentence": "Quand Antoine soigne la tête sur le toit, parce que Théo est très content."
-    },
-    {
-      "level": "a1",
-      "word": "tigre",
-      "sentence": "Tom regarde le tigre bien."
-    },
-    {
-      "level": "a2",
-      "word": "tigre",
-      "sentence": "Avant le repas, Théo nourrit le tigre tout de suite."
-    },
-    {
-      "level": "b1",
-      "word": "tigre",
-      "sentence": "À midi, quand Martine observe le tigre tout de suite, et Tom est très content."
+      "word": "tapis",
+      "sentence": "Ce matin, quand Martine saute sur le tapis, et Tom est très content."
     },
     {
       "level": "a1",
@@ -83,117 +143,57 @@
     {
       "level": "a2",
       "word": "tarte",
-      "sentence": "Ce matin, Tom goûte la tarte avec Théo."
+      "sentence": "À midi, Antoine goûte la tarte avec Théo."
     },
     {
       "level": "b1",
       "word": "tarte",
-      "sentence": "Ce matin, quand Théo goûte la tarte, parce que Théo est très content."
-    },
-    {
-      "level": "a1",
-      "word": "tapis",
-      "sentence": "Martine bat le tapis bien."
-    },
-    {
-      "level": "a2",
-      "word": "tapis",
-      "sentence": "Ce soir, Antoine saute sur le tapis sur le toit."
-    },
-    {
-      "level": "b1",
-      "word": "tapis",
-      "sentence": "Ce matin, quand Tom tombe sur le tapis, et Tom est très content."
-    },
-    {
-      "level": "a1",
-      "word": "télé",
-      "sentence": "Théo éteint la télé bien."
-    },
-    {
-      "level": "a2",
-      "word": "télé",
-      "sentence": "À midi, Martine regarde la télé tout de suite."
-    },
-    {
-      "level": "b1",
-      "word": "télé",
-      "sentence": "Quand Antoine éteint la télé sur le toit, parce que Théo est très content."
-    },
-    {
-      "level": "a1",
-      "word": "tuile",
-      "sentence": "Tom nettoie la tuile bien."
-    },
-    {
-      "level": "a2",
-      "word": "tuile",
-      "sentence": "Après le cours, Théo quitte la tuile tout de suite."
-    },
-    {
-      "level": "b1",
-      "word": "tuile",
-      "sentence": "À midi, quand Martine ouvre la tuile tout de suite, et Tom est très content."
-    },
-    {
-      "level": "a1",
-      "word": "trottoir",
-      "sentence": "Antoine cherche le trottoir bien."
-    },
-    {
-      "level": "a2",
-      "word": "trottoir",
-      "sentence": "Avant le repas, Tom longe le trottoir avec Théo."
-    },
-    {
-      "level": "b1",
-      "word": "trottoir",
-      "sentence": "Ce matin, quand Théo voit le trottoir, parce que Théo est très content."
-    },
-    {
-      "level": "a1",
-      "word": "tortue",
-      "sentence": "Martine observe la tortue bien."
-    },
-    {
-      "level": "a2",
-      "word": "tortue",
-      "sentence": "Ce matin, Antoine attrape la tortue sur le toit."
-    },
-    {
-      "level": "b1",
-      "word": "tortue",
-      "sentence": "À midi, quand Tom caresse la tortue avec Théo, et Tom est très content."
-    },
-    {
-      "level": "a1",
-      "word": "tente",
-      "sentence": "Théo écoute la tente bien."
-    },
-    {
-      "level": "a2",
-      "word": "tente",
-      "sentence": "Ce soir, Martine aime la tente tout de suite."
-    },
-    {
-      "level": "b1",
-      "word": "tente",
-      "sentence": "Quand Antoine termine la tente sur le toit, parce que Théo est très content."
+      "sentence": "À midi, quand Tom goûte la tarte tout de suite, et Tom est très content."
     },
     {
       "level": "a1",
       "word": "tartine",
-      "sentence": "Tom achète la tartine bien."
+      "sentence": "Martine prépare la tartine bien."
     },
     {
       "level": "a2",
       "word": "tartine",
-      "sentence": "À midi, Théo prépare la tartine tout de suite."
+      "sentence": "Ce matin, Antoine choisit la tartine sur le toit."
     },
     {
       "level": "b1",
       "word": "tartine",
-      "sentence": "À midi, quand Martine choisit la tartine tout de suite, et Tom est très content."
+      "sentence": "À midi, quand Tom goûte la tartine avec Théo, et Tom est très content."
+    },
+    {
+      "level": "a1",
+      "word": "tasse",
+      "sentence": "Théo sert la tasse bien."
+    },
+    {
+      "level": "a2",
+      "word": "tasse",
+      "sentence": "Ce soir, Martine mange la tasse tout de suite."
+    },
+    {
+      "level": "b1",
+      "word": "tasse",
+      "sentence": "Quand Antoine apporte la tasse sur le toit, parce que Théo est très content."
+    },
+    {
+      "level": "a1",
+      "word": "tente",
+      "sentence": "Tom joue avec la tente."
+    },
+    {
+      "level": "a2",
+      "word": "tente",
+      "sentence": "À midi, Théo commence la tente tout de suite."
+    },
+    {
+      "level": "b1",
+      "word": "tente",
+      "sentence": "À midi, quand Martine écoute la tente tout de suite, et Tom est très content."
     },
     {
       "level": "a1",
@@ -212,204 +212,249 @@
     },
     {
       "level": "a1",
+      "word": "tigre",
+      "sentence": "Martine soigne le tigre bien."
+    },
+    {
+      "level": "a2",
+      "word": "tigre",
+      "sentence": "Avant le repas, Antoine sauve le tigre sur le toit."
+    },
+    {
+      "level": "b1",
+      "word": "tigre",
+      "sentence": "À midi, quand Tom regarde le tigre avec Théo, et Tom est très content."
+    },
+    {
+      "level": "a1",
       "word": "tiroir",
-      "sentence": "Martine ouvre le tiroir bien."
+      "sentence": "Théo quitte le tiroir bien."
     },
     {
       "level": "a2",
       "word": "tiroir",
-      "sentence": "Avant le repas, Antoine bricole le tiroir sur le toit."
+      "sentence": "Ce matin, Martine ouvre le tiroir tout de suite."
     },
     {
       "level": "b1",
       "word": "tiroir",
-      "sentence": "À midi, quand Tom visite le tiroir avec Théo, et Tom est très content."
-    },
-    {
-      "level": "a1",
-      "word": "botte",
-      "sentence": "Théo range la botte bien."
-    },
-    {
-      "level": "a2",
-      "word": "botte",
-      "sentence": "Ce matin, Martine enfile la botte tout de suite."
-    },
-    {
-      "level": "b1",
-      "word": "botte",
-      "sentence": "Quand Antoine repasse la botte sur le toit, parce que Théo est très content."
-    },
-    {
-      "level": "a1",
-      "word": "carotte",
-      "sentence": "Tom achète la carotte bien."
-    },
-    {
-      "level": "a2",
-      "word": "carotte",
-      "sentence": "Ce soir, Théo coupe la carotte tout de suite."
-    },
-    {
-      "level": "b1",
-      "word": "carotte",
-      "sentence": "À midi, quand Martine achète la carotte tout de suite, et Tom est très content."
-    },
-    {
-      "level": "a1",
-      "word": "date",
-      "sentence": "Antoine note la date bien."
-    },
-    {
-      "level": "a2",
-      "word": "date",
-      "sentence": "À midi, Tom attend la date avec Théo."
-    },
-    {
-      "level": "b1",
-      "word": "date",
-      "sentence": "Ce matin, quand Théo parle avec la date, parce que Théo est très content."
-    },
-    {
-      "level": "a1",
-      "word": "note",
-      "sentence": "Martine paie la note bien."
-    },
-    {
-      "level": "a2",
-      "word": "note",
-      "sentence": "Après le cours, Antoine paie la note sur le toit."
-    },
-    {
-      "level": "b1",
-      "word": "note",
-      "sentence": "À midi, quand Tom paie la note avec Théo, et Tom est très content."
-    },
-    {
-      "level": "a1",
-      "word": "patte",
-      "sentence": "Théo nourrit la patte bien."
-    },
-    {
-      "level": "a2",
-      "word": "patte",
-      "sentence": "Avant le repas, Martine observe la patte tout de suite."
-    },
-    {
-      "level": "b1",
-      "word": "patte",
-      "sentence": "Quand Antoine attrape la patte sur le toit, parce que Théo est très content."
-    },
-    {
-      "level": "a1",
-      "word": "goutte",
-      "sentence": "Tom photographie la goutte bien."
-    },
-    {
-      "level": "a2",
-      "word": "goutte",
-      "sentence": "Ce matin, Théo regarde la goutte tout de suite."
-    },
-    {
-      "level": "b1",
-      "word": "goutte",
-      "sentence": "À midi, quand Martine admire la goutte tout de suite, et Tom est très content."
+      "sentence": "Quand Antoine bricole le tiroir sur le toit, parce que Théo est très content."
     },
     {
       "level": "a1",
       "word": "toast",
-      "sentence": "Antoine achète le toast bien."
+      "sentence": "Tom apporte le toast bien."
     },
     {
       "level": "a2",
       "word": "toast",
-      "sentence": "Ce soir, Tom prépare le toast avec Théo."
+      "sentence": "Ce soir, Théo coupe le toast tout de suite."
     },
     {
       "level": "b1",
       "word": "toast",
-      "sentence": "Ce matin, quand Théo choisit le toast, parce que Théo est très content."
+      "sentence": "À midi, quand Martine achète le toast tout de suite, et Tom est très content."
+    },
+    {
+      "level": "a1",
+      "word": "tomate",
+      "sentence": "Antoine coupe la tomate bien."
+    },
+    {
+      "level": "a2",
+      "word": "tomate",
+      "sentence": "Après le cours, Martine coupe la tomate tout de suite."
+    },
+    {
+      "level": "b1",
+      "word": "tomate",
+      "sentence": "Quand Antoine coupe la tomate sur le toit, parce que Théo est très content."
+    },
+    {
+      "level": "a1",
+      "word": "tortue",
+      "sentence": "Martine observe la tortue bien."
+    },
+    {
+      "level": "a2",
+      "word": "tortue",
+      "sentence": "Après le cours, Antoine attrape la tortue sur le toit."
+    },
+    {
+      "level": "b1",
+      "word": "tortue",
+      "sentence": "À midi, quand Tom caresse la tortue avec Théo, et Tom est très content."
+    },
+    {
+      "level": "a1",
+      "word": "toucan",
+      "sentence": "Théo pose le toucan bien."
+    },
+    {
+      "level": "a2",
+      "word": "toucan",
+      "sentence": "Avant le repas, Martine montre le toucan tout de suite."
+    },
+    {
+      "level": "b1",
+      "word": "toucan",
+      "sentence": "Quand Antoine trouve le toucan sur le toit, parce que Théo est très content."
+    },
+    {
+      "level": "a1",
+      "word": "toux",
+      "sentence": "Tom cherche le toux bien."
+    },
+    {
+      "level": "a2",
+      "word": "toux",
+      "sentence": "Ce matin, Théo pose le toux tout de suite."
+    },
+    {
+      "level": "b1",
+      "word": "toux",
+      "sentence": "À midi, quand Martine montre le toux tout de suite, et Tom est très content."
     },
     {
       "level": "a1",
       "word": "train",
-      "sentence": "Martine attend le train bien."
+      "sentence": "Antoine embarque dans le train."
     },
     {
       "level": "a2",
       "word": "train",
-      "sentence": "À midi, Antoine embarque dans le train sur le toit."
+      "sentence": "Ce soir, Tom préfère le train avec Théo."
     },
     {
       "level": "b1",
       "word": "train",
-      "sentence": "À midi, quand Tom préfère le train avec Théo, et Tom est très content."
+      "sentence": "Ce matin, quand Théo prend le train, parce que Théo est très content."
+    },
+    {
+      "level": "a1",
+      "word": "trottoir",
+      "sentence": "Martine voit le trottoir bien."
+    },
+    {
+      "level": "a2",
+      "word": "trottoir",
+      "sentence": "À midi, Antoine trouve le trottoir sur le toit."
+    },
+    {
+      "level": "b1",
+      "word": "trottoir",
+      "sentence": "À midi, quand Tom visite le trottoir avec Théo, et Tom est très content."
+    },
+    {
+      "level": "a1",
+      "word": "tuile",
+      "sentence": "Théo quitte la tuile bien."
+    },
+    {
+      "level": "a2",
+      "word": "tuile",
+      "sentence": "Après le cours, Martine ouvre la tuile tout de suite."
+    },
+    {
+      "level": "b1",
+      "word": "tuile",
+      "sentence": "Quand Antoine bricole la tuile sur le toit, parce que Théo est très content."
+    },
+    {
+      "level": "a1",
+      "word": "télé",
+      "sentence": "Tom regarde la télé bien."
+    },
+    {
+      "level": "a2",
+      "word": "télé",
+      "sentence": "Avant le repas, Théo éteint la télé tout de suite."
+    },
+    {
+      "level": "b1",
+      "word": "télé",
+      "sentence": "À midi, quand Tom regarde la télé avec Théo, et Tom est très content."
     },
     {
       "level": "a1",
       "word": "tétine",
-      "sentence": "Théo utilise la tétine bien."
+      "sentence": "Antoine trouve la tétine bien."
     },
     {
       "level": "a2",
       "word": "tétine",
-      "sentence": "Après le cours, Martine range la tétine tout de suite."
+      "sentence": "Ce matin, Tom prend la tétine avec Théo."
     },
     {
       "level": "b1",
       "word": "tétine",
-      "sentence": "Quand Antoine oublie la tétine sur le toit, parce que Théo est très content."
+      "sentence": "Ce matin, quand Théo utilise la tétine, parce que Théo est très content."
+    },
+    {
+      "level": "a1",
+      "word": "tête",
+      "sentence": "Martine touche la tête bien."
+    },
+    {
+      "level": "a2",
+      "word": "tête",
+      "sentence": "Ce soir, Antoine montre la tête sur le toit."
+    },
+    {
+      "level": "b1",
+      "word": "tête",
+      "sentence": "À midi, quand Tom regarde la tête avec Théo, et Tom est très content."
     }
   ],
   "type10": [
     {
       "level": "a1",
-      "sentence": "Tom nettoie la table bien.",
+      "sentence": "Tom porte la botte bien.",
       "parts": [
         {
-          "t": "Tom nettoie "
+          "t": "Tom porte "
         },
         {
           "blank": "la"
         },
         {
-          "t": " table bien."
+          "t": " botte bien."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "Ce matin, Théo se cache sous la table tout de suite.",
+      "sentence": "Ce matin, Théo range la botte tout de suite.",
       "parts": [
         {
-          "t": "Ce matin, Théo se cache sous "
+          "t": "Ce matin, Théo range "
         },
         {
           "blank": "la"
         },
         {
-          "t": " table tout de suite."
+          "t": " botte tout de suite."
         }
       ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Martine couvre la table tout de suite, et Tom est très content.",
+      "sentence": "À midi, quand Martine enfile la botte tout de suite, et Tom est très content.",
       "parts": [
         {
-          "t": "À midi, quand Martine couvre "
+          "t": "À midi, quand Martine enfile "
         },
         {
           "blank": "la"
         },
         {
-          "t": " table tout de suite, et Tom est très content."
+          "t": " botte tout de suite, et Tom est très content."
         }
       ]
     },
     {
       "level": "a1",
-      "sentence": "Antoine coupe la tomate bien.",
+      "sentence": "Antoine coupe la carotte bien.",
       "parts": [
         {
           "t": "Antoine coupe "
@@ -418,22 +463,67 @@
           "blank": "la"
         },
         {
-          "t": " tomate bien."
+          "t": " carotte bien."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "À midi, Théo coupe la tomate sur le toit.",
+      "sentence": "Ce soir, Tom achète la carotte avec Théo.",
       "parts": [
         {
-          "t": "À midi, Théo coupe "
+          "t": "Ce soir, Tom achète "
         },
         {
           "blank": "la"
         },
         {
-          "t": " tomate sur "
+          "t": " carotte avec Théo."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Martine sert la carotte avec Tom, et Tom est très content.",
+      "parts": [
+        {
+          "t": "À midi, quand Martine sert "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " carotte avec Tom, et Tom est très content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Martine choisit la date bien.",
+      "parts": [
+        {
+          "t": "Martine choisit "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " date bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Antoine aime la date sur le toit.",
+      "parts": [
+        {
+          "t": "À midi, Antoine aime "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " date sur "
         },
         {
           "blank": "le"
@@ -445,88 +535,37 @@
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Théo coupe la tomate, parce que Théo est très content.",
+      "sentence": "À midi, quand Tom prépare la date avec Théo, et Tom est très content.",
       "parts": [
         {
-          "t": "Ce matin, quand Théo coupe "
+          "t": "À midi, quand Tom prépare "
         },
         {
           "blank": "la"
         },
         {
-          "t": " tomate, parce que Théo est très content."
+          "t": " date avec Théo, et Tom est très content."
         }
       ]
     },
     {
       "level": "a1",
-      "sentence": "Martine sert la tasse bien.",
+      "sentence": "Théo observe la goutte bien.",
       "parts": [
         {
-          "t": "Martine sert "
+          "t": "Théo observe "
         },
         {
           "blank": "la"
         },
         {
-          "t": " tasse bien."
+          "t": " goutte bien."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "À midi, Antoine mange la tasse sur le toit.",
-      "parts": [
-        {
-          "t": "À midi, Antoine mange "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " tasse sur "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " toit."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Tom apporte la tasse avec Théo, et Tom est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Tom apporte "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " tasse avec Théo, et Tom est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Théo montre la tête bien.",
-      "parts": [
-        {
-          "t": "Théo montre "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " tête bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Martine regarde la tête tout de suite.",
+      "sentence": "Après le cours, Martine photographie la goutte tout de suite.",
       "parts": [
         {
           "t": "Après "
@@ -535,28 +574,28 @@
           "blank": "le"
         },
         {
-          "t": " cours, Martine regarde "
+          "t": " cours, Martine photographie "
         },
         {
           "blank": "la"
         },
         {
-          "t": " tête tout de suite."
+          "t": " goutte tout de suite."
         }
       ]
     },
     {
       "level": "b1",
-      "sentence": "Quand Antoine soigne la tête sur le toit, parce que Théo est très content.",
+      "sentence": "Quand Antoine regarde la goutte sur le toit, parce que Théo est très content.",
       "parts": [
         {
-          "t": "Quand Antoine soigne "
+          "t": "Quand Antoine regarde "
         },
         {
           "blank": "la"
         },
         {
-          "t": " tête sur "
+          "t": " goutte sur "
         },
         {
           "blank": "le"
@@ -568,52 +607,244 @@
     },
     {
       "level": "a1",
-      "sentence": "Tom regarde le tigre bien.",
+      "sentence": "Tom paie la note bien.",
       "parts": [
         {
-          "t": "Tom regarde "
+          "t": "Tom paie "
         },
         {
-          "blank": "le"
+          "blank": "la"
         },
         {
-          "t": " tigre bien."
+          "t": " note bien."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "Avant le repas, Théo nourrit le tigre tout de suite.",
+      "sentence": "À midi, Tom paie la note tout de suite.",
       "parts": [
         {
-          "t": "Avant "
+          "t": "À midi, Tom paie "
         },
         {
-          "blank": "le"
+          "blank": "la"
         },
         {
-          "t": " repas, Théo nourrit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " tigre tout de suite."
+          "t": " note tout de suite."
         }
       ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Martine observe le tigre tout de suite, et Tom est très content.",
+      "sentence": "Ce matin, quand Théo paie la note, parce que Théo est très content.",
       "parts": [
         {
-          "t": "À midi, quand Martine observe "
+          "t": "Ce matin, quand Théo paie "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " note, parce que Théo est très content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Antoine sauve la patte bien.",
+      "parts": [
+        {
+          "t": "Antoine sauve "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " patte bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Tom regarde la patte avec Théo.",
+      "parts": [
+        {
+          "t": "Ce matin, Tom regarde "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " patte avec Théo."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Théo nourrit la patte, parce que Théo est très content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Théo nourrit "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " patte, parce que Théo est très content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Martine range le saignant bien.",
+      "parts": [
+        {
+          "t": "Martine range "
         },
         {
           "blank": "le"
         },
         {
-          "t": " tigre tout de suite, et Tom est très content."
+          "t": " saignant bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, Antoine oublie le saignant sur le toit.",
+      "parts": [
+        {
+          "t": "Ce soir, Antoine oublie "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " saignant sur "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " toit."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Tom cherche le saignant avec Théo, et Tom est très content.",
+      "parts": [
+        {
+          "t": "À midi, quand Tom cherche "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " saignant avec Théo, et Tom est très content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Théo se cache sous la table.",
+      "parts": [
+        {
+          "t": "Théo se cache sous "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " table."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Martine couvre la table tout de suite.",
+      "parts": [
+        {
+          "t": "À midi, Martine couvre "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " table tout de suite."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand Antoine met la table sur le toit, parce que Théo est très content.",
+      "parts": [
+        {
+          "t": "Quand Antoine met "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " table sur "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " toit, parce que Théo est très content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Tom tombe sur le tapis.",
+      "parts": [
+        {
+          "t": "Tom tombe sur "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " tapis."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le cours, Théo bat le tapis tout de suite.",
+      "parts": [
+        {
+          "t": "Après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cours, Théo bat "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " tapis tout de suite."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Martine saute sur le tapis, et Tom est très content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Martine saute sur "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " tapis, et Tom est très content."
         }
       ]
     },
@@ -634,10 +865,10 @@
     },
     {
       "level": "a2",
-      "sentence": "Ce matin, Tom goûte la tarte avec Théo.",
+      "sentence": "À midi, Antoine goûte la tarte avec Théo.",
       "parts": [
         {
-          "t": "Ce matin, Tom goûte "
+          "t": "À midi, Antoine goûte "
         },
         {
           "blank": "la"
@@ -649,331 +880,25 @@
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Théo goûte la tarte, parce que Théo est très content.",
+      "sentence": "À midi, quand Tom goûte la tarte tout de suite, et Tom est très content.",
       "parts": [
         {
-          "t": "Ce matin, quand Théo goûte "
+          "t": "À midi, quand Tom goûte "
         },
         {
           "blank": "la"
         },
         {
-          "t": " tarte, parce que Théo est très content."
+          "t": " tarte tout de suite, et Tom est très content."
         }
       ]
     },
     {
       "level": "a1",
-      "sentence": "Martine bat le tapis bien.",
+      "sentence": "Martine prépare la tartine bien.",
       "parts": [
         {
-          "t": "Martine bat "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " tapis bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Antoine saute sur le tapis sur le toit.",
-      "parts": [
-        {
-          "t": "Ce soir, Antoine saute sur "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " tapis sur "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " toit."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Tom tombe sur le tapis, et Tom est très content.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Tom tombe sur "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " tapis, et Tom est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Théo éteint la télé bien.",
-      "parts": [
-        {
-          "t": "Théo éteint "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " télé bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Martine regarde la télé tout de suite.",
-      "parts": [
-        {
-          "t": "À midi, Martine regarde "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " télé tout de suite."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand Antoine éteint la télé sur le toit, parce que Théo est très content.",
-      "parts": [
-        {
-          "t": "Quand Antoine éteint "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " télé sur "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " toit, parce que Théo est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Tom nettoie la tuile bien.",
-      "parts": [
-        {
-          "t": "Tom nettoie "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " tuile bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Théo quitte la tuile tout de suite.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Théo quitte "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " tuile tout de suite."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Martine ouvre la tuile tout de suite, et Tom est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Martine ouvre "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " tuile tout de suite, et Tom est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Antoine cherche le trottoir bien.",
-      "parts": [
-        {
-          "t": "Antoine cherche "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " trottoir bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Tom longe le trottoir avec Théo.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, Tom longe "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " trottoir avec Théo."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Théo voit le trottoir, parce que Théo est très content.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Théo voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " trottoir, parce que Théo est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Martine observe la tortue bien.",
-      "parts": [
-        {
-          "t": "Martine observe "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " tortue bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Antoine attrape la tortue sur le toit.",
-      "parts": [
-        {
-          "t": "Ce matin, Antoine attrape "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " tortue sur "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " toit."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Tom caresse la tortue avec Théo, et Tom est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Tom caresse "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " tortue avec Théo, et Tom est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Théo écoute la tente bien.",
-      "parts": [
-        {
-          "t": "Théo écoute "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " tente bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Martine aime la tente tout de suite.",
-      "parts": [
-        {
-          "t": "Ce soir, Martine aime "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " tente tout de suite."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand Antoine termine la tente sur le toit, parce que Théo est très content.",
-      "parts": [
-        {
-          "t": "Quand Antoine termine "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " tente sur "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " toit, parce que Théo est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Tom achète la tartine bien.",
-      "parts": [
-        {
-          "t": "Tom achète "
+          "t": "Martine prépare "
         },
         {
           "blank": "la"
@@ -985,31 +910,133 @@
     },
     {
       "level": "a2",
-      "sentence": "À midi, Théo prépare la tartine tout de suite.",
+      "sentence": "Ce matin, Antoine choisit la tartine sur le toit.",
       "parts": [
         {
-          "t": "À midi, Théo prépare "
+          "t": "Ce matin, Antoine choisit "
         },
         {
           "blank": "la"
         },
         {
-          "t": " tartine tout de suite."
+          "t": " tartine sur "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " toit."
         }
       ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Martine choisit la tartine tout de suite, et Tom est très content.",
+      "sentence": "À midi, quand Tom goûte la tartine avec Théo, et Tom est très content.",
       "parts": [
         {
-          "t": "À midi, quand Martine choisit "
+          "t": "À midi, quand Tom goûte "
         },
         {
           "blank": "la"
         },
         {
-          "t": " tartine tout de suite, et Tom est très content."
+          "t": " tartine avec Théo, et Tom est très content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Théo sert la tasse bien.",
+      "parts": [
+        {
+          "t": "Théo sert "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " tasse bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, Martine mange la tasse tout de suite.",
+      "parts": [
+        {
+          "t": "Ce soir, Martine mange "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " tasse tout de suite."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand Antoine apporte la tasse sur le toit, parce que Théo est très content.",
+      "parts": [
+        {
+          "t": "Quand Antoine apporte "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " tasse sur "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " toit, parce que Théo est très content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Tom joue avec la tente.",
+      "parts": [
+        {
+          "t": "Tom joue avec "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " tente."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Théo commence la tente tout de suite.",
+      "parts": [
+        {
+          "t": "À midi, Théo commence "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " tente tout de suite."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Martine écoute la tente tout de suite, et Tom est très content.",
+      "parts": [
+        {
+          "t": "À midi, quand Martine écoute "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " tente tout de suite, et Tom est très content."
         }
       ]
     },
@@ -1066,10 +1093,67 @@
     },
     {
       "level": "a1",
-      "sentence": "Martine ouvre le tiroir bien.",
+      "sentence": "Martine soigne le tigre bien.",
       "parts": [
         {
-          "t": "Martine ouvre "
+          "t": "Martine soigne "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " tigre bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le repas, Antoine sauve le tigre sur le toit.",
+      "parts": [
+        {
+          "t": "Avant "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " repas, Antoine sauve "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " tigre sur "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " toit."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Tom regarde le tigre avec Théo, et Tom est très content.",
+      "parts": [
+        {
+          "t": "À midi, quand Tom regarde "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " tigre avec Théo, et Tom est très content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Théo quitte le tiroir bien.",
+      "parts": [
+        {
+          "t": "Théo quitte "
         },
         {
           "blank": "le"
@@ -1081,16 +1165,25 @@
     },
     {
       "level": "a2",
-      "sentence": "Avant le repas, Antoine bricole le tiroir sur le toit.",
+      "sentence": "Ce matin, Martine ouvre le tiroir tout de suite.",
       "parts": [
         {
-          "t": "Avant "
+          "t": "Ce matin, Martine ouvre "
         },
         {
           "blank": "le"
         },
         {
-          "t": " repas, Antoine bricole "
+          "t": " tiroir tout de suite."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand Antoine bricole le tiroir sur le toit, parce que Théo est très content.",
+      "parts": [
+        {
+          "t": "Quand Antoine bricole "
         },
         {
           "blank": "le"
@@ -1102,331 +1195,16 @@
           "blank": "le"
         },
         {
-          "t": " toit."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Tom visite le tiroir avec Théo, et Tom est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Tom visite "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " tiroir avec Théo, et Tom est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Théo range la botte bien.",
-      "parts": [
-        {
-          "t": "Théo range "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " botte bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Martine enfile la botte tout de suite.",
-      "parts": [
-        {
-          "t": "Ce matin, Martine enfile "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " botte tout de suite."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand Antoine repasse la botte sur le toit, parce que Théo est très content.",
-      "parts": [
-        {
-          "t": "Quand Antoine repasse "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " botte sur "
-        },
-        {
-          "blank": "le"
-        },
-        {
           "t": " toit, parce que Théo est très content."
         }
       ]
     },
     {
       "level": "a1",
-      "sentence": "Tom achète la carotte bien.",
+      "sentence": "Tom apporte le toast bien.",
       "parts": [
         {
-          "t": "Tom achète "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " carotte bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Théo coupe la carotte tout de suite.",
-      "parts": [
-        {
-          "t": "Ce soir, Théo coupe "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " carotte tout de suite."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Martine achète la carotte tout de suite, et Tom est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Martine achète "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " carotte tout de suite, et Tom est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Antoine note la date bien.",
-      "parts": [
-        {
-          "t": "Antoine note "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " date bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Tom attend la date avec Théo.",
-      "parts": [
-        {
-          "t": "À midi, Tom attend "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " date avec Théo."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Théo parle avec la date, parce que Théo est très content.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Théo parle avec "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " date, parce que Théo est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Martine paie la note bien.",
-      "parts": [
-        {
-          "t": "Martine paie "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " note bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Antoine paie la note sur le toit.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Antoine paie "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " note sur "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " toit."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Tom paie la note avec Théo, et Tom est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Tom paie "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " note avec Théo, et Tom est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Théo nourrit la patte bien.",
-      "parts": [
-        {
-          "t": "Théo nourrit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " patte bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Martine observe la patte tout de suite.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, Martine observe "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " patte tout de suite."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand Antoine attrape la patte sur le toit, parce que Théo est très content.",
-      "parts": [
-        {
-          "t": "Quand Antoine attrape "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " patte sur "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " toit, parce que Théo est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Tom photographie la goutte bien.",
-      "parts": [
-        {
-          "t": "Tom photographie "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " goutte bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Théo regarde la goutte tout de suite.",
-      "parts": [
-        {
-          "t": "Ce matin, Théo regarde "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " goutte tout de suite."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Martine admire la goutte tout de suite, et Tom est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Martine admire "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " goutte tout de suite, et Tom est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Antoine achète le toast bien.",
-      "parts": [
-        {
-          "t": "Antoine achète "
+          "t": "Tom apporte "
         },
         {
           "blank": "le"
@@ -1438,103 +1216,52 @@
     },
     {
       "level": "a2",
-      "sentence": "Ce soir, Tom prépare le toast avec Théo.",
+      "sentence": "Ce soir, Théo coupe le toast tout de suite.",
       "parts": [
         {
-          "t": "Ce soir, Tom prépare "
+          "t": "Ce soir, Théo coupe "
         },
         {
           "blank": "le"
         },
         {
-          "t": " toast avec Théo."
+          "t": " toast tout de suite."
         }
       ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Théo choisit le toast, parce que Théo est très content.",
+      "sentence": "À midi, quand Martine achète le toast tout de suite, et Tom est très content.",
       "parts": [
         {
-          "t": "Ce matin, quand Théo choisit "
+          "t": "À midi, quand Martine achète "
         },
         {
           "blank": "le"
         },
         {
-          "t": " toast, parce que Théo est très content."
+          "t": " toast tout de suite, et Tom est très content."
         }
       ]
     },
     {
       "level": "a1",
-      "sentence": "Martine attend le train bien.",
+      "sentence": "Antoine coupe la tomate bien.",
       "parts": [
         {
-          "t": "Martine attend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " train bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Antoine embarque dans le train sur le toit.",
-      "parts": [
-        {
-          "t": "À midi, Antoine embarque dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " train sur "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " toit."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Tom préfère le train avec Théo, et Tom est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Tom préfère "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " train avec Théo, et Tom est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Théo utilise la tétine bien.",
-      "parts": [
-        {
-          "t": "Théo utilise "
+          "t": "Antoine coupe "
         },
         {
           "blank": "la"
         },
         {
-          "t": " tétine bien."
+          "t": " tomate bien."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "Après le cours, Martine range la tétine tout de suite.",
+      "sentence": "Après le cours, Martine coupe la tomate tout de suite.",
       "parts": [
         {
           "t": "Après "
@@ -1543,28 +1270,28 @@
           "blank": "le"
         },
         {
-          "t": " cours, Martine range "
+          "t": " cours, Martine coupe "
         },
         {
           "blank": "la"
         },
         {
-          "t": " tétine tout de suite."
+          "t": " tomate tout de suite."
         }
       ]
     },
     {
       "level": "b1",
-      "sentence": "Quand Antoine oublie la tétine sur le toit, parce que Théo est très content.",
+      "sentence": "Quand Antoine coupe la tomate sur le toit, parce que Théo est très content.",
       "parts": [
         {
-          "t": "Quand Antoine oublie "
+          "t": "Quand Antoine coupe "
         },
         {
           "blank": "la"
         },
         {
-          "t": " tétine sur "
+          "t": " tomate sur "
         },
         {
           "blank": "le"
@@ -1576,55 +1303,418 @@
     },
     {
       "level": "a1",
-      "sentence": "Martine mesure la table bien.",
+      "sentence": "Martine observe la tortue bien.",
       "parts": [
         {
-          "t": "Martine mesure "
+          "t": "Martine observe "
         },
         {
           "blank": "la"
         },
         {
-          "t": " table bien."
+          "t": " tortue bien."
         }
       ]
     },
     {
-      "level": "a1",
-      "sentence": "Théo coupe la tomate bien.",
+      "level": "a2",
+      "sentence": "Après le cours, Antoine attrape la tortue sur le toit.",
       "parts": [
         {
-          "t": "Théo coupe "
+          "t": "Après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cours, Antoine attrape "
         },
         {
           "blank": "la"
         },
         {
-          "t": " tomate bien."
+          "t": " tortue sur "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " toit."
         }
       ]
     },
     {
-      "level": "a1",
-      "sentence": "Martine achète la tasse bien.",
+      "level": "b1",
+      "sentence": "À midi, quand Tom caresse la tortue avec Théo, et Tom est très content.",
       "parts": [
         {
-          "t": "Martine achète "
+          "t": "À midi, quand Tom caresse "
         },
         {
           "blank": "la"
         },
         {
-          "t": " tasse bien."
+          "t": " tortue avec Théo, et Tom est très content."
         }
       ]
     },
     {
       "level": "a1",
-      "sentence": "Tom regarde la tête bien.",
+      "sentence": "Théo pose le toucan bien.",
+      "parts": [
+        {
+          "t": "Théo pose "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " toucan bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le repas, Martine montre le toucan tout de suite.",
+      "parts": [
+        {
+          "t": "Avant "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " repas, Martine montre "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " toucan tout de suite."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand Antoine trouve le toucan sur le toit, parce que Théo est très content.",
+      "parts": [
+        {
+          "t": "Quand Antoine trouve "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " toucan sur "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " toit, parce que Théo est très content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Tom cherche le toux bien.",
+      "parts": [
+        {
+          "t": "Tom cherche "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " toux bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Théo pose le toux tout de suite.",
+      "parts": [
+        {
+          "t": "Ce matin, Théo pose "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " toux tout de suite."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Martine montre le toux tout de suite, et Tom est très content.",
+      "parts": [
+        {
+          "t": "À midi, quand Martine montre "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " toux tout de suite, et Tom est très content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Antoine embarque dans le train.",
+      "parts": [
+        {
+          "t": "Antoine embarque dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " train."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, Tom préfère le train avec Théo.",
+      "parts": [
+        {
+          "t": "Ce soir, Tom préfère "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " train avec Théo."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Théo prend le train, parce que Théo est très content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Théo prend "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " train, parce que Théo est très content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Martine voit le trottoir bien.",
+      "parts": [
+        {
+          "t": "Martine voit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " trottoir bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Antoine trouve le trottoir sur le toit.",
+      "parts": [
+        {
+          "t": "À midi, Antoine trouve "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " trottoir sur "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " toit."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Tom visite le trottoir avec Théo, et Tom est très content.",
+      "parts": [
+        {
+          "t": "À midi, quand Tom visite "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " trottoir avec Théo, et Tom est très content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Théo quitte la tuile bien.",
+      "parts": [
+        {
+          "t": "Théo quitte "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " tuile bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le cours, Martine ouvre la tuile tout de suite.",
+      "parts": [
+        {
+          "t": "Après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cours, Martine ouvre "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " tuile tout de suite."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand Antoine bricole la tuile sur le toit, parce que Théo est très content.",
+      "parts": [
+        {
+          "t": "Quand Antoine bricole "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " tuile sur "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " toit, parce que Théo est très content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Tom regarde la télé bien.",
       "parts": [
         {
           "t": "Tom regarde "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " télé bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le repas, Théo éteint la télé tout de suite.",
+      "parts": [
+        {
+          "t": "Avant "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " repas, Théo éteint "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " télé tout de suite."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Tom regarde la télé avec Théo, et Tom est très content.",
+      "parts": [
+        {
+          "t": "À midi, quand Tom regarde "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " télé avec Théo, et Tom est très content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Antoine trouve la tétine bien.",
+      "parts": [
+        {
+          "t": "Antoine trouve "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " tétine bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Tom prend la tétine avec Théo.",
+      "parts": [
+        {
+          "t": "Ce matin, Tom prend "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " tétine avec Théo."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Théo utilise la tétine, parce que Théo est très content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Théo utilise "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " tétine, parce que Théo est très content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Martine touche la tête bien.",
+      "parts": [
+        {
+          "t": "Martine touche "
         },
         {
           "blank": "la"
@@ -1636,7 +1726,103 @@
     },
     {
       "level": "a2",
-      "sentence": "Avant le repas, Tom caresse la tortue avec Théo.",
+      "sentence": "Ce soir, Antoine montre la tête sur le toit.",
+      "parts": [
+        {
+          "t": "Ce soir, Antoine montre "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " tête sur "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " toit."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Tom regarde la tête avec Théo, et Tom est très content.",
+      "parts": [
+        {
+          "t": "À midi, quand Tom regarde "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " tête avec Théo, et Tom est très content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Martine achète la botte bien.",
+      "parts": [
+        {
+          "t": "Martine achète "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " botte bien."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Tom partage la carotte bien.",
+      "parts": [
+        {
+          "t": "Tom partage "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " carotte bien."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Martine attend la date bien.",
+      "parts": [
+        {
+          "t": "Martine attend "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " date bien."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Tom voit la goutte bien.",
+      "parts": [
+        {
+          "t": "Tom voit "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " goutte bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le repas, Tom mange la tartine avec Théo.",
       "parts": [
         {
           "t": "Avant "
@@ -1645,43 +1831,7 @@
           "blank": "le"
         },
         {
-          "t": " repas, Tom caresse "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " tortue avec Théo."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Martine commence la tente tout de suite.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Martine commence "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " tente tout de suite."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Tom coupe la tartine avec Théo.",
-      "parts": [
-        {
-          "t": "À midi, Tom coupe "
+          "t": " repas, Tom mange "
         },
         {
           "blank": "la"
@@ -1693,46 +1843,79 @@
     },
     {
       "level": "a2",
-      "sentence": "Ce soir, Martine paie le ticket tout de suite.",
+      "sentence": "Avant le repas, Antoine partage la tasse avec Théo.",
       "parts": [
         {
-          "t": "Ce soir, Martine paie "
+          "t": "Avant "
         },
         {
           "blank": "le"
         },
         {
-          "t": " ticket tout de suite."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Martine regarde la goutte tout de suite, et Tom est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Martine regarde "
+          "t": " repas, Antoine partage "
         },
         {
           "blank": "la"
         },
         {
-          "t": " goutte tout de suite, et Tom est très content."
+          "t": " tasse avec Théo."
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "À midi, quand Tom mange le toast avec Théo, et Tom est très content.",
+      "level": "a2",
+      "sentence": "Après le cours, Théo aime la tente sur le toit.",
       "parts": [
         {
-          "t": "À midi, quand Tom mange "
+          "t": "Après "
         },
         {
           "blank": "le"
         },
         {
-          "t": " toast avec Théo, et Tom est très content."
+          "t": " cours, Théo aime "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " tente sur "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " toit."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Antoine paie le ticket avec Théo.",
+      "parts": [
+        {
+          "t": "Ce matin, Antoine paie "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " ticket avec Théo."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Martine range le toux tout de suite, et Tom est très content.",
+      "parts": [
+        {
+          "t": "À midi, quand Martine range "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " toux tout de suite, et Tom est très content."
         }
       ]
     },
@@ -1753,127 +1936,142 @@
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Tom cherche la tétine avec Théo, et Tom est très content.",
+      "sentence": "À midi, quand Martine cherche le trottoir tout de suite, et Tom est très content.",
       "parts": [
         {
-          "t": "À midi, quand Tom cherche "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " tétine avec Théo, et Tom est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Martine observe le tigre bien.",
-      "parts": [
-        {
-          "t": "Martine observe "
+          "t": "À midi, quand Martine cherche "
         },
         {
           "blank": "le"
         },
         {
-          "t": " tigre bien."
+          "t": " trottoir tout de suite, et Tom est très content."
         }
       ]
     },
     {
-      "level": "a1",
-      "sentence": "Martine goûte la tarte bien.",
+      "level": "b1",
+      "sentence": "À midi, quand Tom visite la tuile avec Théo, et Tom est très content.",
       "parts": [
         {
-          "t": "Martine goûte "
+          "t": "À midi, quand Tom visite "
         },
         {
           "blank": "la"
         },
         {
-          "t": " tarte bien."
+          "t": " tuile avec Théo, et Tom est très content."
         }
       ]
     },
     {
       "level": "a1",
-      "sentence": "Martine saute sur le tapis.",
+      "sentence": "Théo paie la note bien.",
       "parts": [
         {
-          "t": "Martine saute sur "
+          "t": "Théo paie "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " note bien."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Martine soigne la patte bien.",
+      "parts": [
+        {
+          "t": "Martine soigne "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " patte bien."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Antoine utilise le saignant bien.",
+      "parts": [
+        {
+          "t": "Antoine utilise "
         },
         {
           "blank": "le"
         },
         {
-          "t": " tapis."
+          "t": " saignant bien."
         }
       ]
     },
     {
       "level": "a1",
-      "sentence": "Tom regarde la télé bien.",
+      "sentence": "Théo essuie la table bien.",
       "parts": [
         {
-          "t": "Tom regarde "
+          "t": "Théo essuie "
         },
         {
           "blank": "la"
         },
         {
-          "t": " télé bien."
+          "t": " table bien."
         }
       ]
     },
     {
       "level": "a1",
-      "sentence": "Martine peint la tuile bien.",
+      "sentence": "Antoine bat le tapis bien.",
       "parts": [
         {
-          "t": "Martine peint "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " tuile bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Tom visite le trottoir bien.",
-      "parts": [
-        {
-          "t": "Tom visite "
+          "t": "Antoine bat "
         },
         {
           "blank": "le"
         },
         {
-          "t": " trottoir bien."
+          "t": " tapis bien."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Antoine goûte la tarte vite.",
+      "parts": [
+        {
+          "t": "Antoine goûte "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " tarte vite."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "Ce matin, Tom nettoie le tiroir avec Théo.",
+      "sentence": "Ce matin, Tom caresse le tigre avec Théo.",
       "parts": [
         {
-          "t": "Ce matin, Tom nettoie "
+          "t": "Ce matin, Tom caresse "
         },
         {
           "blank": "le"
         },
         {
-          "t": " tiroir avec Théo."
+          "t": " tigre avec Théo."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "Avant le repas, Martine achète la botte tout de suite.",
+      "sentence": "Avant le repas, Martine peint le tiroir tout de suite.",
       "parts": [
         {
           "t": "Avant "
@@ -1882,19 +2080,19 @@
           "blank": "le"
         },
         {
-          "t": " repas, Martine achète "
+          "t": " repas, Martine peint "
         },
         {
-          "blank": "la"
+          "blank": "le"
         },
         {
-          "t": " botte tout de suite."
+          "t": " tiroir tout de suite."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "Après le cours, Tom partage la carotte avec Théo.",
+      "sentence": "Après le cours, Tom goûte le toast avec Théo.",
       "parts": [
         {
           "t": "Après "
@@ -1903,154 +2101,166 @@
           "blank": "le"
         },
         {
-          "t": " cours, Tom partage "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " carotte avec Théo."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Martine prépare la date tout de suite.",
-      "parts": [
-        {
-          "t": "À midi, Martine prépare "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " date tout de suite."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Martine paie la note tout de suite.",
-      "parts": [
-        {
-          "t": "Après "
+          "t": " cours, Tom goûte "
         },
         {
           "blank": "le"
         },
         {
-          "t": " cours, Martine paie "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " note tout de suite."
+          "t": " toast avec Théo."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "Ce soir, Antoine nourrit la patte avec Théo.",
+      "sentence": "Avant le repas, Théo coupe la tomate sur le toit.",
       "parts": [
         {
-          "t": "Ce soir, Antoine nourrit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " patte avec Théo."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Martine nettoie la table tout de suite, et Tom est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Martine nettoie "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " table tout de suite, et Tom est très content."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce soir, quand Théo coupe la tomate, parce que Théo est très content.",
-      "parts": [
-        {
-          "t": "Ce soir, quand Théo coupe "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " tomate, parce que Théo est très content."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Martine choisit la tasse tout de suite, et Tom est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Martine choisit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " tasse tout de suite, et Tom est très content."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Tom lave la tête avec Théo, et Tom est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Tom lave "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " tête avec Théo, et Tom est très content."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Martine soigne le tigre tout de suite, et Tom est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Martine soigne "
+          "t": "Avant "
         },
         {
           "blank": "le"
         },
         {
-          "t": " tigre tout de suite, et Tom est très content."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Martine goûte la tarte tout de suite, et Tom est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Martine goûte "
+          "t": " repas, Théo coupe "
         },
         {
           "blank": "la"
         },
         {
-          "t": " tarte tout de suite, et Tom est très content."
+          "t": " tomate sur "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " toit."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le repas, Antoine nourrit la tortue avec Théo.",
+      "parts": [
+        {
+          "t": "Avant "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " repas, Antoine nourrit "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " tortue avec Théo."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Tom cherche le toucan avec Théo.",
+      "parts": [
+        {
+          "t": "À midi, Tom cherche "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " toucan avec Théo."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Tom regarde la télé près de Théo, et Tom est très content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Tom regarde "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " télé près de Théo, et Tom est très content."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Martine montre la tétine tout de suite, et Tom est très content.",
+      "parts": [
+        {
+          "t": "À midi, quand Martine montre "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " tétine tout de suite, et Tom est très content."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand Antoine soigne la tête avec Théo, parce que Théo est très content.",
+      "parts": [
+        {
+          "t": "Quand Antoine soigne "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " tête avec Théo, parce que Théo est très content."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Tom choisit la botte avec Théo, et Tom est très content.",
+      "parts": [
+        {
+          "t": "À midi, quand Tom choisit "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " botte avec Théo, et Tom est très content."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand Antoine lave la carotte avec Théo, parce que Théo est très content.",
+      "parts": [
+        {
+          "t": "Quand Antoine lave "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " carotte avec Théo, parce que Théo est très content."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Théo note la date, parce que Théo est très content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Théo note "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " date, parce que Théo est très content."
         }
       ]
     }
@@ -2058,43 +2268,39 @@
   "type12": [
     {
       "level": "a1",
-      "sentence": "Martine mesure la table bien."
+      "sentence": "Martine achète la botte bien."
     },
     {
       "level": "a1",
-      "sentence": "Théo coupe la tomate bien."
+      "sentence": "Tom partage la carotte bien."
     },
     {
       "level": "a1",
-      "sentence": "Martine achète la tasse bien."
+      "sentence": "Martine attend la date bien."
     },
     {
       "level": "a1",
-      "sentence": "Tom regarde la tête bien."
+      "sentence": "Tom voit la goutte bien."
     },
     {
       "level": "a2",
-      "sentence": "Avant le repas, Tom caresse la tortue avec Théo."
+      "sentence": "Avant le repas, Tom mange la tartine avec Théo."
     },
     {
       "level": "a2",
-      "sentence": "Après le cours, Martine commence la tente tout de suite."
+      "sentence": "Avant le repas, Antoine partage la tasse avec Théo."
     },
     {
       "level": "a2",
-      "sentence": "À midi, Tom coupe la tartine avec Théo."
+      "sentence": "Après le cours, Théo aime la tente sur le toit."
     },
     {
       "level": "a2",
-      "sentence": "Ce soir, Martine paie le ticket tout de suite."
+      "sentence": "Ce matin, Antoine paie le ticket avec Théo."
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Martine regarde la goutte tout de suite, et Tom est très content."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Tom mange le toast avec Théo, et Tom est très content."
+      "sentence": "À midi, quand Martine range le toux tout de suite, et Tom est très content."
     },
     {
       "level": "b1",
@@ -2102,81 +2308,85 @@
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Tom cherche la tétine avec Théo, et Tom est très content."
+      "sentence": "À midi, quand Martine cherche le trottoir tout de suite, et Tom est très content."
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Tom visite la tuile avec Théo, et Tom est très content."
     }
   ],
   "type14": [
     {
       "level": "a1",
-      "sentence": "Martine observe le tigre bien."
+      "sentence": "Théo paie la note bien."
     },
     {
       "level": "a1",
-      "sentence": "Martine goûte la tarte bien."
+      "sentence": "Martine soigne la patte bien."
     },
     {
       "level": "a1",
-      "sentence": "Martine saute sur le tapis."
+      "sentence": "Antoine utilise le saignant bien."
     },
     {
       "level": "a1",
-      "sentence": "Tom regarde la télé bien."
+      "sentence": "Théo essuie la table bien."
     },
     {
       "level": "a1",
-      "sentence": "Martine peint la tuile bien."
+      "sentence": "Antoine bat le tapis bien."
     },
     {
       "level": "a1",
-      "sentence": "Tom visite le trottoir bien."
+      "sentence": "Antoine goûte la tarte vite."
     },
     {
       "level": "a2",
-      "sentence": "Ce matin, Tom nettoie le tiroir avec Théo."
+      "sentence": "Ce matin, Tom caresse le tigre avec Théo."
     },
     {
       "level": "a2",
-      "sentence": "Avant le repas, Martine achète la botte tout de suite."
+      "sentence": "Avant le repas, Martine peint le tiroir tout de suite."
     },
     {
       "level": "a2",
-      "sentence": "Après le cours, Tom partage la carotte avec Théo."
+      "sentence": "Après le cours, Tom goûte le toast avec Théo."
     },
     {
       "level": "a2",
-      "sentence": "À midi, Martine prépare la date tout de suite."
+      "sentence": "Avant le repas, Théo coupe la tomate sur le toit."
     },
     {
       "level": "a2",
-      "sentence": "Après le cours, Martine paie la note tout de suite."
+      "sentence": "Avant le repas, Antoine nourrit la tortue avec Théo."
     },
     {
       "level": "a2",
-      "sentence": "Ce soir, Antoine nourrit la patte avec Théo."
+      "sentence": "À midi, Tom cherche le toucan avec Théo."
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Martine nettoie la table tout de suite, et Tom est très content."
+      "sentence": "Ce matin, quand Tom regarde la télé près de Théo, et Tom est très content."
     },
     {
       "level": "b1",
-      "sentence": "Ce soir, quand Théo coupe la tomate, parce que Théo est très content."
+      "sentence": "À midi, quand Martine montre la tétine tout de suite, et Tom est très content."
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Martine choisit la tasse tout de suite, et Tom est très content."
+      "sentence": "Quand Antoine soigne la tête avec Théo, parce que Théo est très content."
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Tom lave la tête avec Théo, et Tom est très content."
+      "sentence": "À midi, quand Tom choisit la botte avec Théo, et Tom est très content."
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Martine soigne le tigre tout de suite, et Tom est très content."
+      "sentence": "Quand Antoine lave la carotte avec Théo, parce que Théo est très content."
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Martine goûte la tarte tout de suite, et Tom est très content."
+      "sentence": "Ce matin, quand Théo note la date, parce que Théo est très content."
     }
   ]
 }

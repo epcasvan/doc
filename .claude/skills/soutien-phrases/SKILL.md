@@ -28,7 +28,9 @@ dans le sens.
 
 | Fichier | Rôle |
 |---|---|
-| `scripts/soutien-phrase-nouns.txt` | Lexique `article mot thème` (pas de sous-chaînes) |
+| `scripts/soutien-phrase-nouns.txt` | Lexique `article mot thème` (Voc A1–B1, pas de sous-chaînes) |
+| `scripts/build-soutien-lecture-extra.py` | Complète la banque lecture avec les mots Voc courants |
+| `src/francais/soutien/lecture-word-items-extra.ts` | Mots Voc sans image (filtrés par phonème) |
 | `scripts/build-soutien-sense-phrases.py` | **Générateur** : phrases sensées + variées |
 | `scripts/check-soutien-phrases.mjs` | Validation (compteur site + niveaux) |
 | `scripts/export-soutien-phrases.mjs` | → `public/soutien-phrases/` + `type*-all.json` |

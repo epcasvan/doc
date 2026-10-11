@@ -82,7 +82,8 @@ export const SOUTIEN_KINDS = [
   {
     id: 'dictee',
     label: '11 · Dictée',
-    description: 'Grille 2 colonnes : n° + trait continu ; 8 mots par défaut.',
+    description:
+      'Grille 2 colonnes : n° + trait continu ; 8 mots par défaut ; sans image (Voc A1–B1).',
     instruction: 'Dictée. Écrivez les mots correctement !',
     preferredColumns: 1 as const,
   },
@@ -130,7 +131,7 @@ export const SOUTIEN_KINDS = [
     id: 'mots-meles',
     label: '17 · Mots mêlés',
     description:
-      'Liste de 12 mots (sans bordure) + grille 15×15 ; lettres agrandies ; pas de ligatures Æ/Œ.',
+      'Liste de 12 mots (sans bordure) + grille 15×15 ; sans image (Voc A1–B1) ; pas de ligatures Æ/Œ.',
     instruction: 'Entourez les mots dans la grille.',
     preferredColumns: 1 as const,
   },

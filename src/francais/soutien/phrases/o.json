@@ -2,123 +2,543 @@
   "type9": [
     {
       "level": "a1",
-      "word": "vélo",
-      "sentence": "Léo a le vélo bien."
+      "word": "antibiotique",
+      "sentence": "Léo prend une antibiotique bien."
     },
     {
       "level": "a2",
-      "word": "vélo",
-      "sentence": "Ce matin, Paolo monte sur le vélo au zoo."
+      "word": "antibiotique",
+      "sentence": "Ce matin, Paolo utilise une antibiotique au zoo."
     },
     {
       "level": "b1",
-      "word": "vélo",
-      "sentence": "Ce matin, quand Tom veut le vélo, et Léo sort trop tôt aussi."
+      "word": "antibiotique",
+      "sentence": "Ce matin, quand Tom range une antibiotique, et Léo sort trop tôt aussi."
     },
     {
       "level": "a1",
-      "word": "moto",
-      "sentence": "Noa prend la moto bien."
+      "word": "biologie",
+      "sentence": "Noa aime la biologie bien."
     },
     {
       "level": "a2",
-      "word": "moto",
-      "sentence": "Ce soir, Léo prend la moto trop tôt."
+      "word": "biologie",
+      "sentence": "Avant le repas, Noa aime la biologie au zoo."
     },
     {
       "level": "b1",
-      "word": "moto",
-      "sentence": "Ce matin, quand Paolo prend la moto, parce que Tom est trop content."
+      "word": "biologie",
+      "sentence": "Ce matin, quand Léo aime la biologie, et Léo sort trop tôt aussi."
     },
     {
       "level": "a1",
-      "word": "robot",
-      "sentence": "Tom montre le robot bien."
+      "word": "bol",
+      "sentence": "Tom sert le bol avec Léo."
     },
     {
       "level": "a2",
-      "word": "robot",
-      "sentence": "À midi, Noa trouve le robot autour du pot."
+      "word": "bol",
+      "sentence": "À midi, Noa mange le bol autour du pot."
     },
     {
       "level": "b1",
-      "word": "robot",
-      "sentence": "Ce matin, quand Léo prend le robot, et Léo sort trop tôt aussi."
+      "word": "bol",
+      "sentence": "Ce matin, quand Léo apporte le bol, et Léo sort trop tôt aussi."
     },
     {
       "level": "a1",
-      "word": "polo",
-      "sentence": "Paolo met le polo bien."
+      "word": "bordeaux",
+      "sentence": "Paolo pose le bordeaux bien."
     },
     {
       "level": "a2",
-      "word": "polo",
-      "sentence": "Après le cours, Tom achète le polo avec Léo."
+      "word": "bordeaux",
+      "sentence": "Ce matin, Léo cherche le bordeaux trop tôt."
     },
     {
       "level": "b1",
-      "word": "polo",
-      "sentence": "Quand Noa lave le polo autour du pot, parce que Tom est trop content."
+      "word": "bordeaux",
+      "sentence": "Quand Noa trouve le bordeaux autour du pot, parce que Tom est trop content."
+    },
+    {
+      "level": "a1",
+      "word": "botte",
+      "sentence": "Léo choisit la botte bien."
+    },
+    {
+      "level": "a2",
+      "word": "botte",
+      "sentence": "Avant le repas, Paolo met la botte au zoo."
+    },
+    {
+      "level": "b1",
+      "word": "botte",
+      "sentence": "Ce matin, quand Tom achète la botte, et Léo sort trop tôt aussi."
+    },
+    {
+      "level": "a1",
+      "word": "bottines",
+      "sentence": "Noa oublie le bottines bien."
+    },
+    {
+      "level": "a2",
+      "word": "bottines",
+      "sentence": "Ce matin, Léo cherche le bottines trop tôt."
+    },
+    {
+      "level": "b1",
+      "word": "bottines",
+      "sentence": "Ce matin, quand Paolo pose le bottines, parce que Tom est trop content."
+    },
+    {
+      "level": "a1",
+      "word": "brioche",
+      "sentence": "Tom goûte la brioche bien."
+    },
+    {
+      "level": "a2",
+      "word": "brioche",
+      "sentence": "Ce soir, Noa partage la brioche autour du pot."
+    },
+    {
+      "level": "b1",
+      "word": "brioche",
+      "sentence": "Ce matin, quand Léo sert la brioche, et Léo sort trop tôt aussi."
+    },
+    {
+      "level": "a1",
+      "word": "brocoli",
+      "sentence": "Paolo coupe le brocoli bien."
+    },
+    {
+      "level": "a2",
+      "word": "brocoli",
+      "sentence": "Ce matin, Paolo coupe le brocoli autour du pot."
+    },
+    {
+      "level": "b1",
+      "word": "brocoli",
+      "sentence": "Ce matin, quand Tom coupe le brocoli, et Léo sort trop tôt aussi."
+    },
+    {
+      "level": "a1",
+      "word": "chausson",
+      "sentence": "Léo prend le chausson trop tôt."
+    },
+    {
+      "level": "a2",
+      "word": "chausson",
+      "sentence": "Après le cours, Paolo utilise le chausson au zoo."
+    },
+    {
+      "level": "b1",
+      "word": "chausson",
+      "sentence": "Ce matin, quand Tom range le chausson, et Léo sort trop tôt aussi."
+    },
+    {
+      "level": "a1",
+      "word": "chocolat",
+      "sentence": "Noa aime le chocolat bien."
+    },
+    {
+      "level": "a2",
+      "word": "chocolat",
+      "sentence": "Avant le repas, Léo boit le chocolat trop tôt."
+    },
+    {
+      "level": "b1",
+      "word": "chocolat",
+      "sentence": "Ce matin, quand Paolo achète le chocolat, parce que Tom est trop content."
+    },
+    {
+      "level": "a1",
+      "word": "coccinelle",
+      "sentence": "Tom montre la coccinelle avec Léo."
+    },
+    {
+      "level": "a2",
+      "word": "coccinelle",
+      "sentence": "Ce matin, Noa trouve la coccinelle autour du pot."
+    },
+    {
+      "level": "b1",
+      "word": "coccinelle",
+      "sentence": "Ce matin, quand Léo prend la coccinelle, et Léo sort trop tôt aussi."
+    },
+    {
+      "level": "a1",
+      "word": "cochon",
+      "sentence": "Paolo nourrit le cochon bien."
+    },
+    {
+      "level": "a2",
+      "word": "cochon",
+      "sentence": "Ce soir, Tom observe le cochon avec Léo."
+    },
+    {
+      "level": "b1",
+      "word": "cochon",
+      "sentence": "Quand Noa attrape le cochon autour du pot, parce que Tom est trop content."
+    },
+    {
+      "level": "a1",
+      "word": "coffre",
+      "sentence": "Léo visite le coffre bien."
+    },
+    {
+      "level": "a2",
+      "word": "coffre",
+      "sentence": "À midi, Paolo range le coffre au zoo."
+    },
+    {
+      "level": "b1",
+      "word": "coffre",
+      "sentence": "Ce matin, quand Tom peint le coffre, et Léo sort trop tôt aussi."
+    },
+    {
+      "level": "a1",
+      "word": "colibri",
+      "sentence": "Noa oublie le colibri bien."
+    },
+    {
+      "level": "a2",
+      "word": "colibri",
+      "sentence": "Après le cours, Léo cherche le colibri trop tôt."
+    },
+    {
+      "level": "b1",
+      "word": "colibri",
+      "sentence": "Ce matin, quand Paolo pose le colibri, parce que Tom est trop content."
+    },
+    {
+      "level": "a1",
+      "word": "colle",
+      "sentence": "Tom cherche la colle avec Léo."
+    },
+    {
+      "level": "a2",
+      "word": "colle",
+      "sentence": "À midi, Tom cherche la colle trop tôt."
+    },
+    {
+      "level": "b1",
+      "word": "colle",
+      "sentence": "Quand Noa cherche la colle au zoo, parce que Tom est trop content."
+    },
+    {
+      "level": "a1",
+      "word": "colline",
+      "sentence": "Paolo regarde la colline bien."
+    },
+    {
+      "level": "a2",
+      "word": "colline",
+      "sentence": "À midi, Léo dessine la colline trop tôt."
+    },
+    {
+      "level": "b1",
+      "word": "colline",
+      "sentence": "Quand Noa descend la colline autour du pot, parce que Tom est trop content."
+    },
+    {
+      "level": "a1",
+      "word": "contrôleur",
+      "sentence": "Léo prend le contrôleur bien."
+    },
+    {
+      "level": "a2",
+      "word": "contrôleur",
+      "sentence": "Ce soir, Paolo utilise le contrôleur au zoo."
+    },
+    {
+      "level": "b1",
+      "word": "contrôleur",
+      "sentence": "Ce matin, quand Tom range le contrôleur, et Léo sort trop tôt aussi."
+    },
+    {
+      "level": "a1",
+      "word": "corbeau",
+      "sentence": "Noa trouve le corbeau bien."
+    },
+    {
+      "level": "a2",
+      "word": "corbeau",
+      "sentence": "À midi, Léo prend le corbeau trop tôt."
+    },
+    {
+      "level": "b1",
+      "word": "corbeau",
+      "sentence": "Ce matin, quand Paolo utilise le corbeau, parce que Tom est trop content."
+    },
+    {
+      "level": "a1",
+      "word": "correspondance",
+      "sentence": "Tom montre la correspondance avec Léo."
+    },
+    {
+      "level": "a2",
+      "word": "correspondance",
+      "sentence": "Après le cours, Noa trouve la correspondance autour du pot."
+    },
+    {
+      "level": "b1",
+      "word": "correspondance",
+      "sentence": "Ce matin, quand Léo prend la correspondance, et Léo sort trop tôt aussi."
+    },
+    {
+      "level": "a1",
+      "word": "coton",
+      "sentence": "Paolo pose le coton bien."
+    },
+    {
+      "level": "a2",
+      "word": "coton",
+      "sentence": "Ce soir, Léo cherche le coton trop tôt."
+    },
+    {
+      "level": "b1",
+      "word": "coton",
+      "sentence": "Quand Noa trouve le coton autour du pot, parce que Tom est trop content."
+    },
+    {
+      "level": "a1",
+      "word": "crocodile",
+      "sentence": "Léo cherche la crocodile bien."
+    },
+    {
+      "level": "a2",
+      "word": "crocodile",
+      "sentence": "Ce matin, Paolo pose la crocodile au zoo."
+    },
+    {
+      "level": "b1",
+      "word": "crocodile",
+      "sentence": "Ce matin, quand Tom montre la crocodile, et Léo sort trop tôt aussi."
+    },
+    {
+      "level": "a1",
+      "word": "culotte",
+      "sentence": "Noa oublie la culotte bien."
+    },
+    {
+      "level": "a2",
+      "word": "culotte",
+      "sentence": "Ce soir, Léo cherche la culotte trop tôt."
+    },
+    {
+      "level": "b1",
+      "word": "culotte",
+      "sentence": "Ce matin, quand Paolo pose la culotte, parce que Tom est trop content."
+    },
+    {
+      "level": "a1",
+      "word": "côte",
+      "sentence": "Tom dessine la côte avec Léo."
+    },
+    {
+      "level": "a2",
+      "word": "côte",
+      "sentence": "À midi, Noa regarde la côte autour du pot."
+    },
+    {
+      "level": "b1",
+      "word": "côte",
+      "sentence": "Ce matin, quand Tom dessine la côte, et Léo sort trop tôt aussi."
+    },
+    {
+      "level": "a1",
+      "word": "divorcé",
+      "sentence": "Paolo utilise le divorcé bien."
+    },
+    {
+      "level": "a2",
+      "word": "divorcé",
+      "sentence": "Ce matin, Léo prend le divorcé trop tôt."
+    },
+    {
+      "level": "b1",
+      "word": "divorcé",
+      "sentence": "Quand Noa oublie le divorcé autour du pot, parce que Tom est trop content."
+    },
+    {
+      "level": "a1",
+      "word": "docteur",
+      "sentence": "Léo prend le docteur bien."
+    },
+    {
+      "level": "a2",
+      "word": "docteur",
+      "sentence": "Avant le repas, Paolo utilise le docteur au zoo."
+    },
+    {
+      "level": "b1",
+      "word": "docteur",
+      "sentence": "Ce matin, quand Tom range le docteur, et Léo sort trop tôt aussi."
     },
     {
       "level": "a1",
       "word": "domino",
-      "sentence": "Léo écoute le domino bien."
+      "sentence": "Noa écoute le domino bien."
     },
     {
       "level": "a2",
       "word": "domino",
-      "sentence": "Avant le repas, Paolo aime le domino au zoo."
+      "sentence": "Ce matin, Léo aime le domino trop tôt."
     },
     {
       "level": "b1",
       "word": "domino",
-      "sentence": "Ce matin, quand Tom termine le domino, et Léo sort trop tôt aussi."
+      "sentence": "Ce matin, quand Paolo termine le domino, parce que Tom est trop content."
     },
     {
       "level": "a1",
-      "word": "kilo",
-      "sentence": "Noa coupe le kilo bien."
+      "word": "donut",
+      "sentence": "Tom montre le donut avec Léo."
     },
     {
       "level": "a2",
-      "word": "kilo",
-      "sentence": "Ce matin, Léo achète le kilo trop tôt."
+      "word": "donut",
+      "sentence": "Ce soir, Noa trouve le donut autour du pot."
     },
     {
       "level": "b1",
-      "word": "kilo",
-      "sentence": "Ce matin, quand Paolo prépare le kilo, parce que Tom est trop content."
+      "word": "donut",
+      "sentence": "Ce matin, quand Léo prend le donut, et Léo sort trop tôt aussi."
     },
     {
       "level": "a1",
-      "word": "métro",
-      "sentence": "Tom répare le métro avec Léo."
+      "word": "dortoir",
+      "sentence": "Paolo visite le dortoir bien."
     },
     {
       "level": "a2",
-      "word": "métro",
-      "sentence": "Ce soir, Noa attend le métro autour du pot."
+      "word": "dortoir",
+      "sentence": "Ce matin, Paolo visite le dortoir autour du pot."
     },
     {
       "level": "b1",
-      "word": "métro",
-      "sentence": "Ce matin, quand Léo emprunte le métro, et Léo sort trop tôt aussi."
+      "word": "dortoir",
+      "sentence": "Ce matin, quand Tom visite le dortoir, et Léo sort trop tôt aussi."
     },
     {
       "level": "a1",
-      "word": "hôtel",
-      "sentence": "Paolo visite un hôtel bien."
+      "word": "dosette",
+      "sentence": "Léo cherche la dosette bien."
     },
     {
       "level": "a2",
-      "word": "hôtel",
-      "sentence": "Après le cours, Noa cherche un hôtel au zoo."
+      "word": "dosette",
+      "sentence": "Après le cours, Paolo pose la dosette au zoo."
     },
     {
       "level": "b1",
-      "word": "hôtel",
-      "sentence": "Quand Noa traverse un hôtel autour du pot, parce que Tom est trop content."
+      "word": "dosette",
+      "sentence": "Ce matin, quand Tom montre la dosette, et Léo sort trop tôt aussi."
+    },
+    {
+      "level": "a1",
+      "word": "doseur",
+      "sentence": "Noa oublie le doseur bien."
+    },
+    {
+      "level": "a2",
+      "word": "doseur",
+      "sentence": "Avant le repas, Léo cherche le doseur trop tôt."
+    },
+    {
+      "level": "b1",
+      "word": "doseur",
+      "sentence": "Ce matin, quand Paolo pose le doseur, parce que Tom est trop content."
+    },
+    {
+      "level": "a1",
+      "word": "faucon",
+      "sentence": "Noa utilise le faucon au zoo."
+    },
+    {
+      "level": "a2",
+      "word": "faucon",
+      "sentence": "Ce soir, Paolo pose le faucon au zoo."
+    },
+    {
+      "level": "b1",
+      "word": "faucon",
+      "sentence": "Ce matin, quand Léo cherche le faucon, et Léo sort trop tôt aussi."
+    },
+    {
+      "level": "a1",
+      "word": "fort",
+      "sentence": "Paolo utilise le fort bien."
+    },
+    {
+      "level": "a2",
+      "word": "fort",
+      "sentence": "Après le cours, Léo prend le fort trop tôt."
+    },
+    {
+      "level": "b1",
+      "word": "fort",
+      "sentence": "Quand Noa oublie le fort autour du pot, parce que Tom est trop content."
+    },
+    {
+      "level": "a1",
+      "word": "forêt",
+      "sentence": "Léo dessine le forêt bien."
+    },
+    {
+      "level": "a2",
+      "word": "forêt",
+      "sentence": "À midi, Paolo regarde le forêt au zoo."
+    },
+    {
+      "level": "b1",
+      "word": "forêt",
+      "sentence": "Ce matin, quand Tom protège le forêt, et Léo sort trop tôt aussi."
+    },
+    {
+      "level": "a1",
+      "word": "gros",
+      "sentence": "Noa trouve le gros bien."
+    },
+    {
+      "level": "a2",
+      "word": "gros",
+      "sentence": "Après le cours, Léo prend le gros trop tôt."
+    },
+    {
+      "level": "b1",
+      "word": "gros",
+      "sentence": "Ce matin, quand Paolo utilise le gros, parce que Tom est trop content."
+    },
+    {
+      "level": "a1",
+      "word": "grotte",
+      "sentence": "Tom dessine la grotte avec Léo."
+    },
+    {
+      "level": "a2",
+      "word": "grotte",
+      "sentence": "Avant le repas, Noa découvre la grotte autour du pot."
+    },
+    {
+      "level": "b1",
+      "word": "grotte",
+      "sentence": "Ce matin, quand Tom dessine la grotte, et Léo sort trop tôt aussi."
+    },
+    {
+      "level": "a1",
+      "word": "hippocampe",
+      "sentence": "Paolo pose la hippocampe bien."
+    },
+    {
+      "level": "a2",
+      "word": "hippocampe",
+      "sentence": "À midi, Léo cherche la hippocampe trop tôt."
+    },
+    {
+      "level": "b1",
+      "word": "hippocampe",
+      "sentence": "Quand Noa trouve la hippocampe autour du pot, parce que Tom est trop content."
     },
     {
       "level": "a1",
@@ -128,7 +548,7 @@
     {
       "level": "a2",
       "word": "hôpital",
-      "sentence": "Après le cours, Paolo trouve un hôpital au zoo."
+      "sentence": "Ce soir, Paolo trouve un hôpital au zoo."
     },
     {
       "level": "b1",
@@ -137,63 +557,243 @@
     },
     {
       "level": "a1",
-      "word": "rose",
-      "sentence": "Noa regarde la rose bien."
+      "word": "hôtel",
+      "sentence": "Noa cherche un hôtel bien."
     },
     {
       "level": "a2",
-      "word": "rose",
-      "sentence": "Avant le repas, Léo admire la rose trop tôt."
+      "word": "hôtel",
+      "sentence": "À midi, Léo longe un hôtel trop tôt."
     },
     {
       "level": "b1",
-      "word": "rose",
-      "sentence": "Ce matin, quand Paolo plante la rose, parce que Tom est trop content."
+      "word": "hôtel",
+      "sentence": "Ce matin, quand Paolo voit un hôtel, parce que Tom est trop content."
     },
     {
       "level": "a1",
-      "word": "pomme",
-      "sentence": "Tom cueille la pomme avec Léo."
+      "word": "impoli",
+      "sentence": "Tom range un impoli avec Léo."
     },
     {
       "level": "a2",
-      "word": "pomme",
-      "sentence": "Ce matin, Noa veut la pomme autour du pot."
+      "word": "impoli",
+      "sentence": "Après le cours, Noa oublie un impoli autour du pot."
     },
     {
       "level": "b1",
-      "word": "pomme",
-      "sentence": "Ce matin, quand Léo mange la pomme, et Léo sort trop tôt aussi."
+      "word": "impoli",
+      "sentence": "Ce matin, quand Léo cherche un impoli, et Léo sort trop tôt aussi."
     },
     {
       "level": "a1",
-      "word": "porte",
-      "sentence": "Paolo tire la porte bien."
+      "word": "joyeux",
+      "sentence": "Paolo utilise le joyeux bien."
     },
     {
       "level": "a2",
-      "word": "porte",
-      "sentence": "Ce soir, Tom s’approche de la porte avec Léo."
+      "word": "joyeux",
+      "sentence": "Ce soir, Léo prend le joyeux trop tôt."
     },
     {
       "level": "b1",
-      "word": "porte",
-      "sentence": "Quand Noa ouvre la porte autour du pot, parce que Tom est trop content."
+      "word": "joyeux",
+      "sentence": "Quand Noa oublie le joyeux autour du pot, parce que Tom est trop content."
     },
     {
       "level": "a1",
-      "word": "robe",
-      "sentence": "Léo repasse la robe bien."
+      "word": "kilo",
+      "sentence": "Léo partage le kilo bien."
     },
     {
       "level": "a2",
-      "word": "robe",
-      "sentence": "À midi, Paolo coud la robe au zoo."
+      "word": "kilo",
+      "sentence": "Ce matin, Paolo sert le kilo au zoo."
     },
     {
       "level": "b1",
-      "word": "robe",
-      "sentence": "Ce matin, quand Tom choisit la robe, et Léo sort trop tôt aussi."
+      "word": "kilo",
+      "sentence": "Ce matin, quand Tom mange le kilo, et Léo sort trop tôt aussi."
+    },
+    {
+      "level": "a1",
+      "word": "logement",
+      "sentence": "Noa visite le logement bien."
+    },
+    {
+      "level": "a2",
+      "word": "logement",
+      "sentence": "Avant le repas, Noa visite le logement au zoo."
+    },
+    {
+      "level": "b1",
+      "word": "logement",
+      "sentence": "Ce matin, quand Léo visite le logement, et Léo sort trop tôt aussi."
+    },
+    {
+      "level": "a1",
+      "word": "microbe",
+      "sentence": "Tom montre la microbe avec Léo."
+    },
+    {
+      "level": "a2",
+      "word": "microbe",
+      "sentence": "À midi, Noa trouve la microbe autour du pot."
+    },
+    {
+      "level": "b1",
+      "word": "microbe",
+      "sentence": "Ce matin, quand Léo prend la microbe, et Léo sort trop tôt aussi."
+    },
+    {
+      "level": "a1",
+      "word": "montgolfière",
+      "sentence": "Paolo prend la montgolfière bien."
+    },
+    {
+      "level": "a2",
+      "word": "montgolfière",
+      "sentence": "Ce soir, Paolo prend la montgolfière autour du pot."
+    },
+    {
+      "level": "b1",
+      "word": "montgolfière",
+      "sentence": "Ce matin, quand Tom prend la montgolfière, et Léo sort trop tôt aussi."
+    },
+    {
+      "level": "a1",
+      "word": "moto",
+      "sentence": "Léo prend la moto bien."
+    },
+    {
+      "level": "a2",
+      "word": "moto",
+      "sentence": "À midi, Léo prend la moto autour du pot."
+    },
+    {
+      "level": "b1",
+      "word": "moto",
+      "sentence": "Ce matin, quand Paolo prend la moto, parce que Tom est trop content."
+    },
+    {
+      "level": "a1",
+      "word": "métro",
+      "sentence": "Noa vend le métro bien."
+    },
+    {
+      "level": "a2",
+      "word": "métro",
+      "sentence": "Ce matin, Léo répare le métro trop tôt."
+    },
+    {
+      "level": "b1",
+      "word": "métro",
+      "sentence": "Ce matin, quand Paolo attend le métro, parce que Tom est trop content."
+    },
+    {
+      "level": "a1",
+      "word": "météo",
+      "sentence": "Tom range le météo avec Léo."
+    },
+    {
+      "level": "a2",
+      "word": "météo",
+      "sentence": "Ce soir, Noa oublie le météo autour du pot."
+    },
+    {
+      "level": "b1",
+      "word": "météo",
+      "sentence": "Ce matin, quand Léo cherche le météo, et Léo sort trop tôt aussi."
+    },
+    {
+      "level": "a1",
+      "word": "nord",
+      "sentence": "Paolo utilise le nord bien."
+    },
+    {
+      "level": "a2",
+      "word": "nord",
+      "sentence": "Avant le repas, Léo prend le nord trop tôt."
+    },
+    {
+      "level": "b1",
+      "word": "nord",
+      "sentence": "Quand Noa oublie le nord autour du pot, parce que Tom est trop content."
+    },
+    {
+      "level": "a1",
+      "word": "novembre",
+      "sentence": "Léo prend la novembre bien."
+    },
+    {
+      "level": "a2",
+      "word": "novembre",
+      "sentence": "Après le cours, Paolo utilise la novembre au zoo."
+    },
+    {
+      "level": "b1",
+      "word": "novembre",
+      "sentence": "Ce matin, quand Tom range la novembre, et Léo sort trop tôt aussi."
+    },
+    {
+      "level": "a1",
+      "word": "octobre",
+      "sentence": "Noa trouve une octobre bien."
+    },
+    {
+      "level": "a2",
+      "word": "octobre",
+      "sentence": "Avant le repas, Léo prend une octobre trop tôt."
+    },
+    {
+      "level": "b1",
+      "word": "octobre",
+      "sentence": "Ce matin, quand Paolo utilise une octobre, parce que Tom est trop content."
+    },
+    {
+      "level": "a1",
+      "word": "océan",
+      "sentence": "Tom montre un océan avec Léo."
+    },
+    {
+      "level": "a2",
+      "word": "océan",
+      "sentence": "Ce matin, Noa trouve un océan autour du pot."
+    },
+    {
+      "level": "b1",
+      "word": "océan",
+      "sentence": "Ce matin, quand Léo prend un océan, et Léo sort trop tôt aussi."
+    },
+    {
+      "level": "a1",
+      "word": "ordonnance",
+      "sentence": "Paolo pose une ordonnance bien."
+    },
+    {
+      "level": "a2",
+      "word": "ordonnance",
+      "sentence": "Ce soir, Tom montre une ordonnance avec Léo."
+    },
+    {
+      "level": "b1",
+      "word": "ordonnance",
+      "sentence": "Quand Noa trouve une ordonnance autour du pot, parce que Tom est trop content."
+    },
+    {
+      "level": "a1",
+      "word": "perroquet",
+      "sentence": "Léo cherche le perroquet bien."
+    },
+    {
+      "level": "a2",
+      "word": "perroquet",
+      "sentence": "À midi, Paolo pose le perroquet au zoo."
+    },
+    {
+      "level": "b1",
+      "word": "perroquet",
+      "sentence": "Ce matin, quand Tom montre le perroquet, et Léo sort trop tôt aussi."
     },
     {
       "level": "a1",
@@ -212,147 +812,2265 @@
     },
     {
       "level": "a1",
-      "word": "botte",
-      "sentence": "Tom enfile la botte avec Léo."
+      "word": "polo",
+      "sentence": "Tom enfile le polo bien."
     },
     {
       "level": "a2",
-      "word": "botte",
-      "sentence": "Avant le repas, Noa repasse la botte autour du pot."
+      "word": "polo",
+      "sentence": "Avant le repas, Noa repasse le polo autour du pot."
     },
     {
       "level": "b1",
-      "word": "botte",
-      "sentence": "Ce matin, quand Léo choisit la botte, et Léo sort trop tôt aussi."
+      "word": "polo",
+      "sentence": "Ce matin, quand Léo choisit le polo, et Léo sort trop tôt aussi."
     },
     {
       "level": "a1",
-      "word": "chocolat",
-      "sentence": "Paolo achète le chocolat bien."
+      "word": "pomme",
+      "sentence": "Paolo choisit la pomme bien."
     },
     {
       "level": "a2",
-      "word": "chocolat",
-      "sentence": "Ce matin, Tom sert le chocolat avec Léo."
+      "word": "pomme",
+      "sentence": "À midi, Léo mange la pomme trop tôt."
     },
     {
       "level": "b1",
-      "word": "chocolat",
-      "sentence": "Quand Noa boit le chocolat autour du pot, parce que Tom est trop content."
+      "word": "pomme",
+      "sentence": "Quand Noa veut la pomme autour du pot, parce que Tom est trop content."
     },
     {
       "level": "a1",
-      "word": "coffre",
-      "sentence": "Léo nettoie le coffre bien."
+      "word": "porte",
+      "sentence": "Léo pousse la porte bien."
     },
     {
       "level": "a2",
-      "word": "coffre",
-      "sentence": "Ce soir, Paolo quitte le coffre au zoo."
+      "word": "porte",
+      "sentence": "Ce soir, Paolo entre par la porte au zoo."
     },
     {
       "level": "b1",
-      "word": "coffre",
-      "sentence": "Ce matin, quand Tom ouvre le coffre, et Léo sort trop tôt aussi."
+      "word": "porte",
+      "sentence": "Ce matin, quand Tom ferme la porte, et Léo sort trop tôt aussi."
     },
     {
       "level": "a1",
-      "word": "cochon",
-      "sentence": "Noa attrape le cochon bien."
+      "word": "portugais",
+      "sentence": "Noa trouve le portugais bien."
     },
     {
       "level": "a2",
-      "word": "cochon",
-      "sentence": "À midi, Léo caresse le cochon trop tôt."
+      "word": "portugais",
+      "sentence": "À midi, Léo prend le portugais trop tôt."
     },
     {
       "level": "b1",
-      "word": "cochon",
-      "sentence": "Ce matin, quand Paolo voit le cochon, parce que Tom est trop content."
+      "word": "portugais",
+      "sentence": "Ce matin, quand Paolo utilise le portugais, parce que Tom est trop content."
     },
     {
       "level": "a1",
-      "word": "bol",
-      "sentence": "Tom mange le bol avec Léo."
+      "word": "poêle",
+      "sentence": "Tom montre la poêle avec Léo."
     },
     {
       "level": "a2",
-      "word": "bol",
-      "sentence": "Après le cours, Noa apporte le bol autour du pot."
+      "word": "poêle",
+      "sentence": "Après le cours, Noa trouve la poêle autour du pot."
     },
     {
       "level": "b1",
-      "word": "bol",
-      "sentence": "Ce matin, quand Léo coupe le bol, et Léo sort trop tôt aussi."
+      "word": "poêle",
+      "sentence": "Ce matin, quand Léo prend la poêle, et Léo sort trop tôt aussi."
+    },
+    {
+      "level": "a1",
+      "word": "professeur",
+      "sentence": "Paolo pose le professeur bien."
+    },
+    {
+      "level": "a2",
+      "word": "professeur",
+      "sentence": "Ce soir, Léo cherche le professeur trop tôt."
+    },
+    {
+      "level": "b1",
+      "word": "professeur",
+      "sentence": "Quand Noa trouve le professeur autour du pot, parce que Tom est trop content."
+    },
+    {
+      "level": "a1",
+      "word": "randonnée",
+      "sentence": "Léo cherche la randonnée bien."
+    },
+    {
+      "level": "a2",
+      "word": "randonnée",
+      "sentence": "Ce matin, Paolo pose la randonnée au zoo."
+    },
+    {
+      "level": "b1",
+      "word": "randonnée",
+      "sentence": "Ce matin, quand Tom montre la randonnée, et Léo sort trop tôt aussi."
+    },
+    {
+      "level": "a1",
+      "word": "robinet",
+      "sentence": "Noa oublie le robinet bien."
+    },
+    {
+      "level": "a2",
+      "word": "robinet",
+      "sentence": "Ce soir, Léo cherche le robinet trop tôt."
+    },
+    {
+      "level": "b1",
+      "word": "robinet",
+      "sentence": "Ce matin, quand Paolo pose le robinet, parce que Tom est trop content."
+    },
+    {
+      "level": "a1",
+      "word": "robot",
+      "sentence": "Tom range le robot bien."
+    },
+    {
+      "level": "a2",
+      "word": "robot",
+      "sentence": "À midi, Noa oublie le robot autour du pot."
+    },
+    {
+      "level": "b1",
+      "word": "robot",
+      "sentence": "Ce matin, quand Léo cherche le robot, et Léo sort trop tôt aussi."
+    },
+    {
+      "level": "a1",
+      "word": "rose",
+      "sentence": "Paolo voit la rose bien."
+    },
+    {
+      "level": "a2",
+      "word": "rose",
+      "sentence": "Après le cours, Tom observe la rose avec Léo."
+    },
+    {
+      "level": "b1",
+      "word": "rose",
+      "sentence": "Quand Noa photographie la rose autour du pot, parce que Tom est trop content."
+    },
+    {
+      "level": "a1",
+      "word": "rouleau",
+      "sentence": "Léo prend le rouleau trop tôt."
+    },
+    {
+      "level": "a2",
+      "word": "rouleau",
+      "sentence": "Avant le repas, Paolo utilise le rouleau au zoo."
+    },
+    {
+      "level": "b1",
+      "word": "rouleau",
+      "sentence": "Ce matin, quand Tom range le rouleau, et Léo sort trop tôt aussi."
+    },
+    {
+      "level": "a1",
+      "word": "réceptionniste",
+      "sentence": "Noa trouve la réceptionniste bien."
+    },
+    {
+      "level": "a2",
+      "word": "réceptionniste",
+      "sentence": "Ce matin, Léo prend la réceptionniste trop tôt."
+    },
+    {
+      "level": "b1",
+      "word": "réceptionniste",
+      "sentence": "Ce matin, quand Paolo utilise la réceptionniste, parce que Tom est trop content."
+    },
+    {
+      "level": "a1",
+      "word": "rôtir",
+      "sentence": "Tom montre le rôtir avec Léo."
+    },
+    {
+      "level": "a2",
+      "word": "rôtir",
+      "sentence": "Ce soir, Noa trouve le rôtir autour du pot."
+    },
+    {
+      "level": "b1",
+      "word": "rôtir",
+      "sentence": "Ce matin, quand Léo prend le rôtir, et Léo sort trop tôt aussi."
+    },
+    {
+      "level": "a1",
+      "word": "scooter",
+      "sentence": "Paolo conduit le scooter bien."
+    },
+    {
+      "level": "a2",
+      "word": "scooter",
+      "sentence": "À midi, Tom prend le scooter avec Léo."
+    },
+    {
+      "level": "b1",
+      "word": "scooter",
+      "sentence": "Quand Noa vend le scooter autour du pot, parce que Tom est trop content."
+    },
+    {
+      "level": "a1",
+      "word": "short",
+      "sentence": "Léo choisit le short bien."
+    },
+    {
+      "level": "a2",
+      "word": "short",
+      "sentence": "Après le cours, Paolo met le short au zoo."
+    },
+    {
+      "level": "b1",
+      "word": "short",
+      "sentence": "Ce matin, quand Tom achète le short, et Léo sort trop tôt aussi."
     },
     {
       "level": "a1",
       "word": "sol",
-      "sentence": "Paolo nettoie le sol bien."
+      "sentence": "Noa nettoie le sol bien."
     },
     {
       "level": "a2",
       "word": "sol",
-      "sentence": "Ce matin, Noa nettoie le sol au zoo."
+      "sentence": "À midi, Noa nettoie le sol au zoo."
     },
     {
       "level": "b1",
       "word": "sol",
-      "sentence": "Quand Noa nettoie le sol autour du pot, parce que Tom est trop content."
+      "sentence": "Ce matin, quand Léo nettoie le sol, et Léo sort trop tôt aussi."
+    },
+    {
+      "level": "a1",
+      "word": "sonnerie",
+      "sentence": "Tom range la sonnerie avec Léo."
+    },
+    {
+      "level": "a2",
+      "word": "sonnerie",
+      "sentence": "Ce matin, Noa oublie la sonnerie autour du pot."
+    },
+    {
+      "level": "b1",
+      "word": "sonnerie",
+      "sentence": "Ce matin, quand Léo cherche la sonnerie, et Léo sort trop tôt aussi."
+    },
+    {
+      "level": "a1",
+      "word": "studio",
+      "sentence": "Paolo visite le studio bien."
+    },
+    {
+      "level": "a2",
+      "word": "studio",
+      "sentence": "Avant le repas, Paolo visite le studio autour du pot."
+    },
+    {
+      "level": "b1",
+      "word": "studio",
+      "sentence": "Ce matin, quand Tom visite le studio, et Léo sort trop tôt aussi."
+    },
+    {
+      "level": "a1",
+      "word": "thermomètre",
+      "sentence": "Léo prend la thermomètre bien."
+    },
+    {
+      "level": "a2",
+      "word": "thermomètre",
+      "sentence": "À midi, Paolo utilise la thermomètre au zoo."
+    },
+    {
+      "level": "b1",
+      "word": "thermomètre",
+      "sentence": "Ce matin, quand Tom range la thermomètre, et Léo sort trop tôt aussi."
+    },
+    {
+      "level": "a1",
+      "word": "trottinette",
+      "sentence": "Noa prend la trottinette bien."
+    },
+    {
+      "level": "a2",
+      "word": "trottinette",
+      "sentence": "Ce soir, Noa prend la trottinette au zoo."
+    },
+    {
+      "level": "b1",
+      "word": "trottinette",
+      "sentence": "Ce matin, quand Léo prend la trottinette, et Léo sort trop tôt aussi."
+    },
+    {
+      "level": "a1",
+      "word": "uniforme",
+      "sentence": "Tom montre une uniforme avec Léo."
+    },
+    {
+      "level": "a2",
+      "word": "uniforme",
+      "sentence": "Avant le repas, Noa trouve une uniforme autour du pot."
+    },
+    {
+      "level": "b1",
+      "word": "uniforme",
+      "sentence": "Ce matin, quand Léo prend une uniforme, et Léo sort trop tôt aussi."
+    },
+    {
+      "level": "a1",
+      "word": "violet",
+      "sentence": "Paolo pose le violet bien."
+    },
+    {
+      "level": "a2",
+      "word": "violet",
+      "sentence": "À midi, Léo cherche le violet trop tôt."
+    },
+    {
+      "level": "b1",
+      "word": "violet",
+      "sentence": "Quand Noa trouve le violet autour du pot, parce que Tom est trop content."
+    },
+    {
+      "level": "a1",
+      "word": "vol",
+      "sentence": "Léo cherche le vol bien."
+    },
+    {
+      "level": "a2",
+      "word": "vol",
+      "sentence": "Ce soir, Paolo pose le vol au zoo."
+    },
+    {
+      "level": "b1",
+      "word": "vol",
+      "sentence": "Ce matin, quand Tom montre le vol, et Léo sort trop tôt aussi."
+    },
+    {
+      "level": "a1",
+      "word": "vélo",
+      "sentence": "Noa répare le vélo bien."
+    },
+    {
+      "level": "a2",
+      "word": "vélo",
+      "sentence": "À midi, Léo a le vélo trop tôt."
+    },
+    {
+      "level": "b1",
+      "word": "vélo",
+      "sentence": "Ce matin, quand Paolo monte sur le vélo, parce que Tom est trop content."
     }
   ],
   "type10": [
     {
       "level": "a1",
-      "sentence": "Léo a le vélo bien.",
+      "sentence": "Noa aime la biologie bien.",
       "parts": [
         {
-          "t": "Léo a "
+          "t": "Noa aime "
         },
         {
-          "blank": "le"
+          "blank": "la"
         },
         {
-          "t": " vélo bien."
+          "t": " biologie bien."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "Ce matin, Paolo monte sur le vélo au zoo.",
+      "sentence": "Avant le repas, Noa aime la biologie au zoo.",
       "parts": [
         {
-          "t": "Ce matin, Paolo monte sur "
+          "t": "Avant "
         },
         {
           "blank": "le"
         },
         {
-          "t": " vélo au zoo."
+          "t": " repas, Noa aime "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " biologie au zoo."
         }
       ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Tom veut le vélo, et Léo sort trop tôt aussi.",
+      "sentence": "Ce matin, quand Léo aime la biologie, et Léo sort trop tôt aussi.",
       "parts": [
         {
-          "t": "Ce matin, quand Tom veut "
+          "t": "Ce matin, quand Léo aime "
         },
         {
-          "blank": "le"
+          "blank": "la"
         },
         {
-          "t": " vélo, et Léo sort trop tôt aussi."
+          "t": " biologie, et Léo sort trop tôt aussi."
         }
       ]
     },
     {
       "level": "a1",
-      "sentence": "Noa prend la moto bien.",
+      "sentence": "Tom sert le bol avec Léo.",
       "parts": [
         {
-          "t": "Noa prend "
+          "t": "Tom sert "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " bol avec Léo."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Noa mange le bol autour du pot.",
+      "parts": [
+        {
+          "t": "À midi, Noa mange "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " bol autour du pot."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Léo apporte le bol, et Léo sort trop tôt aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Léo apporte "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " bol, et Léo sort trop tôt aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Paolo pose le bordeaux bien.",
+      "parts": [
+        {
+          "t": "Paolo pose "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " bordeaux bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Léo cherche le bordeaux trop tôt.",
+      "parts": [
+        {
+          "t": "Ce matin, Léo cherche "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " bordeaux trop tôt."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand Noa trouve le bordeaux autour du pot, parce que Tom est trop content.",
+      "parts": [
+        {
+          "t": "Quand Noa trouve "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " bordeaux autour du pot, parce que Tom est trop content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Léo choisit la botte bien.",
+      "parts": [
+        {
+          "t": "Léo choisit "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " botte bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le repas, Paolo met la botte au zoo.",
+      "parts": [
+        {
+          "t": "Avant "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " repas, Paolo met "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " botte au zoo."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Tom achète la botte, et Léo sort trop tôt aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Tom achète "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " botte, et Léo sort trop tôt aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Noa oublie le bottines bien.",
+      "parts": [
+        {
+          "t": "Noa oublie "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " bottines bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Léo cherche le bottines trop tôt.",
+      "parts": [
+        {
+          "t": "Ce matin, Léo cherche "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " bottines trop tôt."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Paolo pose le bottines, parce que Tom est trop content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Paolo pose "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " bottines, parce que Tom est trop content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Tom goûte la brioche bien.",
+      "parts": [
+        {
+          "t": "Tom goûte "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " brioche bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, Noa partage la brioche autour du pot.",
+      "parts": [
+        {
+          "t": "Ce soir, Noa partage "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " brioche autour du pot."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Léo sert la brioche, et Léo sort trop tôt aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Léo sert "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " brioche, et Léo sort trop tôt aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Paolo coupe le brocoli bien.",
+      "parts": [
+        {
+          "t": "Paolo coupe "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " brocoli bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Paolo coupe le brocoli autour du pot.",
+      "parts": [
+        {
+          "t": "Ce matin, Paolo coupe "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " brocoli autour du pot."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Tom coupe le brocoli, et Léo sort trop tôt aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Tom coupe "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " brocoli, et Léo sort trop tôt aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Léo prend le chausson trop tôt.",
+      "parts": [
+        {
+          "t": "Léo prend "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chausson trop tôt."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le cours, Paolo utilise le chausson au zoo.",
+      "parts": [
+        {
+          "t": "Après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cours, Paolo utilise "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chausson au zoo."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Tom range le chausson, et Léo sort trop tôt aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Tom range "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chausson, et Léo sort trop tôt aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Noa aime le chocolat bien.",
+      "parts": [
+        {
+          "t": "Noa aime "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chocolat bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le repas, Léo boit le chocolat trop tôt.",
+      "parts": [
+        {
+          "t": "Avant "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " repas, Léo boit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chocolat trop tôt."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Paolo achète le chocolat, parce que Tom est trop content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Paolo achète "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chocolat, parce que Tom est trop content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Tom montre la coccinelle avec Léo.",
+      "parts": [
+        {
+          "t": "Tom montre "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " coccinelle avec Léo."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Noa trouve la coccinelle autour du pot.",
+      "parts": [
+        {
+          "t": "Ce matin, Noa trouve "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " coccinelle autour du pot."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Léo prend la coccinelle, et Léo sort trop tôt aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Léo prend "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " coccinelle, et Léo sort trop tôt aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Paolo nourrit le cochon bien.",
+      "parts": [
+        {
+          "t": "Paolo nourrit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cochon bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, Tom observe le cochon avec Léo.",
+      "parts": [
+        {
+          "t": "Ce soir, Tom observe "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cochon avec Léo."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand Noa attrape le cochon autour du pot, parce que Tom est trop content.",
+      "parts": [
+        {
+          "t": "Quand Noa attrape "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cochon autour du pot, parce que Tom est trop content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Léo visite le coffre bien.",
+      "parts": [
+        {
+          "t": "Léo visite "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " coffre bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Paolo range le coffre au zoo.",
+      "parts": [
+        {
+          "t": "À midi, Paolo range "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " coffre au zoo."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Tom peint le coffre, et Léo sort trop tôt aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Tom peint "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " coffre, et Léo sort trop tôt aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Noa oublie le colibri bien.",
+      "parts": [
+        {
+          "t": "Noa oublie "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " colibri bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le cours, Léo cherche le colibri trop tôt.",
+      "parts": [
+        {
+          "t": "Après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cours, Léo cherche "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " colibri trop tôt."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Paolo pose le colibri, parce que Tom est trop content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Paolo pose "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " colibri, parce que Tom est trop content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Tom cherche la colle avec Léo.",
+      "parts": [
+        {
+          "t": "Tom cherche "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " colle avec Léo."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Tom cherche la colle trop tôt.",
+      "parts": [
+        {
+          "t": "À midi, Tom cherche "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " colle trop tôt."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand Noa cherche la colle au zoo, parce que Tom est trop content.",
+      "parts": [
+        {
+          "t": "Quand Noa cherche "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " colle au zoo, parce que Tom est trop content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Paolo regarde la colline bien.",
+      "parts": [
+        {
+          "t": "Paolo regarde "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " colline bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Léo dessine la colline trop tôt.",
+      "parts": [
+        {
+          "t": "À midi, Léo dessine "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " colline trop tôt."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand Noa descend la colline autour du pot, parce que Tom est trop content.",
+      "parts": [
+        {
+          "t": "Quand Noa descend "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " colline autour du pot, parce que Tom est trop content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Léo prend le contrôleur bien.",
+      "parts": [
+        {
+          "t": "Léo prend "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " contrôleur bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, Paolo utilise le contrôleur au zoo.",
+      "parts": [
+        {
+          "t": "Ce soir, Paolo utilise "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " contrôleur au zoo."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Tom range le contrôleur, et Léo sort trop tôt aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Tom range "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " contrôleur, et Léo sort trop tôt aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Noa trouve le corbeau bien.",
+      "parts": [
+        {
+          "t": "Noa trouve "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " corbeau bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Léo prend le corbeau trop tôt.",
+      "parts": [
+        {
+          "t": "À midi, Léo prend "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " corbeau trop tôt."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Paolo utilise le corbeau, parce que Tom est trop content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Paolo utilise "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " corbeau, parce que Tom est trop content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Tom montre la correspondance avec Léo.",
+      "parts": [
+        {
+          "t": "Tom montre "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " correspondance avec Léo."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le cours, Noa trouve la correspondance autour du pot.",
+      "parts": [
+        {
+          "t": "Après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cours, Noa trouve "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " correspondance autour du pot."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Léo prend la correspondance, et Léo sort trop tôt aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Léo prend "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " correspondance, et Léo sort trop tôt aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Paolo pose le coton bien.",
+      "parts": [
+        {
+          "t": "Paolo pose "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " coton bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, Léo cherche le coton trop tôt.",
+      "parts": [
+        {
+          "t": "Ce soir, Léo cherche "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " coton trop tôt."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand Noa trouve le coton autour du pot, parce que Tom est trop content.",
+      "parts": [
+        {
+          "t": "Quand Noa trouve "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " coton autour du pot, parce que Tom est trop content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Léo cherche la crocodile bien.",
+      "parts": [
+        {
+          "t": "Léo cherche "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " crocodile bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Paolo pose la crocodile au zoo.",
+      "parts": [
+        {
+          "t": "Ce matin, Paolo pose "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " crocodile au zoo."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Tom montre la crocodile, et Léo sort trop tôt aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Tom montre "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " crocodile, et Léo sort trop tôt aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Noa oublie la culotte bien.",
+      "parts": [
+        {
+          "t": "Noa oublie "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " culotte bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, Léo cherche la culotte trop tôt.",
+      "parts": [
+        {
+          "t": "Ce soir, Léo cherche "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " culotte trop tôt."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Paolo pose la culotte, parce que Tom est trop content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Paolo pose "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " culotte, parce que Tom est trop content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Tom dessine la côte avec Léo.",
+      "parts": [
+        {
+          "t": "Tom dessine "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " côte avec Léo."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Noa regarde la côte autour du pot.",
+      "parts": [
+        {
+          "t": "À midi, Noa regarde "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " côte autour du pot."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Tom dessine la côte, et Léo sort trop tôt aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Tom dessine "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " côte, et Léo sort trop tôt aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Paolo utilise le divorcé bien.",
+      "parts": [
+        {
+          "t": "Paolo utilise "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " divorcé bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Léo prend le divorcé trop tôt.",
+      "parts": [
+        {
+          "t": "Ce matin, Léo prend "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " divorcé trop tôt."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand Noa oublie le divorcé autour du pot, parce que Tom est trop content.",
+      "parts": [
+        {
+          "t": "Quand Noa oublie "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " divorcé autour du pot, parce que Tom est trop content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Léo prend le docteur bien.",
+      "parts": [
+        {
+          "t": "Léo prend "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " docteur bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le repas, Paolo utilise le docteur au zoo.",
+      "parts": [
+        {
+          "t": "Avant "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " repas, Paolo utilise "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " docteur au zoo."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Tom range le docteur, et Léo sort trop tôt aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Tom range "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " docteur, et Léo sort trop tôt aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Noa écoute le domino bien.",
+      "parts": [
+        {
+          "t": "Noa écoute "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " domino bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Léo aime le domino trop tôt.",
+      "parts": [
+        {
+          "t": "Ce matin, Léo aime "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " domino trop tôt."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Paolo termine le domino, parce que Tom est trop content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Paolo termine "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " domino, parce que Tom est trop content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Tom montre le donut avec Léo.",
+      "parts": [
+        {
+          "t": "Tom montre "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " donut avec Léo."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, Noa trouve le donut autour du pot.",
+      "parts": [
+        {
+          "t": "Ce soir, Noa trouve "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " donut autour du pot."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Léo prend le donut, et Léo sort trop tôt aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Léo prend "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " donut, et Léo sort trop tôt aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Paolo visite le dortoir bien.",
+      "parts": [
+        {
+          "t": "Paolo visite "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " dortoir bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Paolo visite le dortoir autour du pot.",
+      "parts": [
+        {
+          "t": "Ce matin, Paolo visite "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " dortoir autour du pot."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Tom visite le dortoir, et Léo sort trop tôt aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Tom visite "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " dortoir, et Léo sort trop tôt aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Léo cherche la dosette bien.",
+      "parts": [
+        {
+          "t": "Léo cherche "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " dosette bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le cours, Paolo pose la dosette au zoo.",
+      "parts": [
+        {
+          "t": "Après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cours, Paolo pose "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " dosette au zoo."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Tom montre la dosette, et Léo sort trop tôt aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Tom montre "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " dosette, et Léo sort trop tôt aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Noa oublie le doseur bien.",
+      "parts": [
+        {
+          "t": "Noa oublie "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " doseur bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le repas, Léo cherche le doseur trop tôt.",
+      "parts": [
+        {
+          "t": "Avant "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " repas, Léo cherche "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " doseur trop tôt."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Paolo pose le doseur, parce que Tom est trop content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Paolo pose "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " doseur, parce que Tom est trop content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Noa utilise le faucon au zoo.",
+      "parts": [
+        {
+          "t": "Noa utilise "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " faucon au zoo."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, Paolo pose le faucon au zoo.",
+      "parts": [
+        {
+          "t": "Ce soir, Paolo pose "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " faucon au zoo."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Léo cherche le faucon, et Léo sort trop tôt aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Léo cherche "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " faucon, et Léo sort trop tôt aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Paolo utilise le fort bien.",
+      "parts": [
+        {
+          "t": "Paolo utilise "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " fort bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le cours, Léo prend le fort trop tôt.",
+      "parts": [
+        {
+          "t": "Après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cours, Léo prend "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " fort trop tôt."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand Noa oublie le fort autour du pot, parce que Tom est trop content.",
+      "parts": [
+        {
+          "t": "Quand Noa oublie "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " fort autour du pot, parce que Tom est trop content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Léo dessine le forêt bien.",
+      "parts": [
+        {
+          "t": "Léo dessine "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " forêt bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Paolo regarde le forêt au zoo.",
+      "parts": [
+        {
+          "t": "À midi, Paolo regarde "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " forêt au zoo."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Tom protège le forêt, et Léo sort trop tôt aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Tom protège "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " forêt, et Léo sort trop tôt aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Noa trouve le gros bien.",
+      "parts": [
+        {
+          "t": "Noa trouve "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " gros bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le cours, Léo prend le gros trop tôt.",
+      "parts": [
+        {
+          "t": "Après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cours, Léo prend "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " gros trop tôt."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Paolo utilise le gros, parce que Tom est trop content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Paolo utilise "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " gros, parce que Tom est trop content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Tom dessine la grotte avec Léo.",
+      "parts": [
+        {
+          "t": "Tom dessine "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " grotte avec Léo."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le repas, Noa découvre la grotte autour du pot.",
+      "parts": [
+        {
+          "t": "Avant "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " repas, Noa découvre "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " grotte autour du pot."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Tom dessine la grotte, et Léo sort trop tôt aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Tom dessine "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " grotte, et Léo sort trop tôt aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Paolo pose la hippocampe bien.",
+      "parts": [
+        {
+          "t": "Paolo pose "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " hippocampe bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Léo cherche la hippocampe trop tôt.",
+      "parts": [
+        {
+          "t": "À midi, Léo cherche "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " hippocampe trop tôt."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand Noa trouve la hippocampe autour du pot, parce que Tom est trop content.",
+      "parts": [
+        {
+          "t": "Quand Noa trouve "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " hippocampe autour du pot, parce que Tom est trop content."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le cours, Noa oublie un impoli autour du pot.",
+      "parts": [
+        {
+          "t": "Après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cours, Noa oublie un impoli autour du pot."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Paolo utilise le joyeux bien.",
+      "parts": [
+        {
+          "t": "Paolo utilise "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " joyeux bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, Léo prend le joyeux trop tôt.",
+      "parts": [
+        {
+          "t": "Ce soir, Léo prend "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " joyeux trop tôt."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand Noa oublie le joyeux autour du pot, parce que Tom est trop content.",
+      "parts": [
+        {
+          "t": "Quand Noa oublie "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " joyeux autour du pot, parce que Tom est trop content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Léo partage le kilo bien.",
+      "parts": [
+        {
+          "t": "Léo partage "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " kilo bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Paolo sert le kilo au zoo.",
+      "parts": [
+        {
+          "t": "Ce matin, Paolo sert "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " kilo au zoo."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Tom mange le kilo, et Léo sort trop tôt aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Tom mange "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " kilo, et Léo sort trop tôt aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Noa visite le logement bien.",
+      "parts": [
+        {
+          "t": "Noa visite "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " logement bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le repas, Noa visite le logement au zoo.",
+      "parts": [
+        {
+          "t": "Avant "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " repas, Noa visite "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " logement au zoo."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Léo visite le logement, et Léo sort trop tôt aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Léo visite "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " logement, et Léo sort trop tôt aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Tom montre la microbe avec Léo.",
+      "parts": [
+        {
+          "t": "Tom montre "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " microbe avec Léo."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Noa trouve la microbe autour du pot.",
+      "parts": [
+        {
+          "t": "À midi, Noa trouve "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " microbe autour du pot."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Léo prend la microbe, et Léo sort trop tôt aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Léo prend "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " microbe, et Léo sort trop tôt aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Paolo prend la montgolfière bien.",
+      "parts": [
+        {
+          "t": "Paolo prend "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " montgolfière bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, Paolo prend la montgolfière autour du pot.",
+      "parts": [
+        {
+          "t": "Ce soir, Paolo prend "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " montgolfière autour du pot."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Tom prend la montgolfière, et Léo sort trop tôt aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Tom prend "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " montgolfière, et Léo sort trop tôt aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Léo prend la moto bien.",
+      "parts": [
+        {
+          "t": "Léo prend "
         },
         {
           "blank": "la"
@@ -364,16 +3082,16 @@
     },
     {
       "level": "a2",
-      "sentence": "Ce soir, Léo prend la moto trop tôt.",
+      "sentence": "À midi, Léo prend la moto autour du pot.",
       "parts": [
         {
-          "t": "Ce soir, Léo prend "
+          "t": "À midi, Léo prend "
         },
         {
           "blank": "la"
         },
         {
-          "t": " moto trop tôt."
+          "t": " moto autour du pot."
         }
       ]
     },
@@ -394,118 +3112,112 @@
     },
     {
       "level": "a1",
-      "sentence": "Tom montre le robot bien.",
+      "sentence": "Noa vend le métro bien.",
       "parts": [
         {
-          "t": "Tom montre "
+          "t": "Noa vend "
         },
         {
           "blank": "le"
         },
         {
-          "t": " robot bien."
+          "t": " métro bien."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "À midi, Noa trouve le robot autour du pot.",
+      "sentence": "Ce matin, Léo répare le métro trop tôt.",
       "parts": [
         {
-          "t": "À midi, Noa trouve "
+          "t": "Ce matin, Léo répare "
         },
         {
           "blank": "le"
         },
         {
-          "t": " robot autour du pot."
+          "t": " métro trop tôt."
         }
       ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Léo prend le robot, et Léo sort trop tôt aussi.",
+      "sentence": "Ce matin, quand Paolo attend le métro, parce que Tom est trop content.",
       "parts": [
         {
-          "t": "Ce matin, quand Léo prend "
+          "t": "Ce matin, quand Paolo attend "
         },
         {
           "blank": "le"
         },
         {
-          "t": " robot, et Léo sort trop tôt aussi."
+          "t": " métro, parce que Tom est trop content."
         }
       ]
     },
     {
       "level": "a1",
-      "sentence": "Paolo met le polo bien.",
+      "sentence": "Tom range le météo avec Léo.",
       "parts": [
         {
-          "t": "Paolo met "
+          "t": "Tom range "
         },
         {
           "blank": "le"
         },
         {
-          "t": " polo bien."
+          "t": " météo avec Léo."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "Après le cours, Tom achète le polo avec Léo.",
+      "sentence": "Ce soir, Noa oublie le météo autour du pot.",
       "parts": [
         {
-          "t": "Après "
+          "t": "Ce soir, Noa oublie "
         },
         {
           "blank": "le"
         },
         {
-          "t": " cours, Tom achète "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " polo avec Léo."
+          "t": " météo autour du pot."
         }
       ]
     },
     {
       "level": "b1",
-      "sentence": "Quand Noa lave le polo autour du pot, parce que Tom est trop content.",
+      "sentence": "Ce matin, quand Léo cherche le météo, et Léo sort trop tôt aussi.",
       "parts": [
         {
-          "t": "Quand Noa lave "
+          "t": "Ce matin, quand Léo cherche "
         },
         {
           "blank": "le"
         },
         {
-          "t": " polo autour du pot, parce que Tom est trop content."
+          "t": " météo, et Léo sort trop tôt aussi."
         }
       ]
     },
     {
       "level": "a1",
-      "sentence": "Léo écoute le domino bien.",
+      "sentence": "Paolo utilise le nord bien.",
       "parts": [
         {
-          "t": "Léo écoute "
+          "t": "Paolo utilise "
         },
         {
           "blank": "le"
         },
         {
-          "t": " domino bien."
+          "t": " nord bien."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "Avant le repas, Paolo aime le domino au zoo.",
+      "sentence": "Avant le repas, Léo prend le nord trop tôt.",
       "parts": [
         {
           "t": "Avant "
@@ -514,169 +3226,85 @@
           "blank": "le"
         },
         {
-          "t": " repas, Paolo aime "
+          "t": " repas, Léo prend "
         },
         {
           "blank": "le"
         },
         {
-          "t": " domino au zoo."
+          "t": " nord trop tôt."
         }
       ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Tom termine le domino, et Léo sort trop tôt aussi.",
+      "sentence": "Quand Noa oublie le nord autour du pot, parce que Tom est trop content.",
       "parts": [
         {
-          "t": "Ce matin, quand Tom termine "
+          "t": "Quand Noa oublie "
         },
         {
           "blank": "le"
         },
         {
-          "t": " domino, et Léo sort trop tôt aussi."
+          "t": " nord autour du pot, parce que Tom est trop content."
         }
       ]
     },
     {
       "level": "a1",
-      "sentence": "Noa coupe le kilo bien.",
+      "sentence": "Léo prend la novembre bien.",
       "parts": [
         {
-          "t": "Noa coupe "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " kilo bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Léo achète le kilo trop tôt.",
-      "parts": [
-        {
-          "t": "Ce matin, Léo achète "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " kilo trop tôt."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Paolo prépare le kilo, parce que Tom est trop content.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Paolo prépare "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " kilo, parce que Tom est trop content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Tom répare le métro avec Léo.",
-      "parts": [
-        {
-          "t": "Tom répare "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " métro avec Léo."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Noa attend le métro autour du pot.",
-      "parts": [
-        {
-          "t": "Ce soir, Noa attend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " métro autour du pot."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Léo emprunte le métro, et Léo sort trop tôt aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Léo emprunte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " métro, et Léo sort trop tôt aussi."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Noa cherche un hôtel au zoo.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Noa cherche un hôtel au zoo."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Paolo trouve un hôpital au zoo.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Paolo trouve un hôpital au zoo."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Noa regarde la rose bien.",
-      "parts": [
-        {
-          "t": "Noa regarde "
+          "t": "Léo prend "
         },
         {
           "blank": "la"
         },
         {
-          "t": " rose bien."
+          "t": " novembre bien."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "Avant le repas, Léo admire la rose trop tôt.",
+      "sentence": "Après le cours, Paolo utilise la novembre au zoo.",
+      "parts": [
+        {
+          "t": "Après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cours, Paolo utilise "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " novembre au zoo."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Tom range la novembre, et Léo sort trop tôt aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Tom range "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " novembre, et Léo sort trop tôt aussi."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le repas, Léo prend une octobre trop tôt.",
       "parts": [
         {
           "t": "Avant "
@@ -685,163 +3313,52 @@
           "blank": "le"
         },
         {
-          "t": " repas, Léo admire "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " rose trop tôt."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Paolo plante la rose, parce que Tom est trop content.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Paolo plante "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " rose, parce que Tom est trop content."
+          "t": " repas, Léo prend une octobre trop tôt."
         }
       ]
     },
     {
       "level": "a1",
-      "sentence": "Tom cueille la pomme avec Léo.",
+      "sentence": "Léo cherche le perroquet bien.",
       "parts": [
         {
-          "t": "Tom cueille "
+          "t": "Léo cherche "
         },
         {
-          "blank": "la"
+          "blank": "le"
         },
         {
-          "t": " pomme avec Léo."
+          "t": " perroquet bien."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "Ce matin, Noa veut la pomme autour du pot.",
+      "sentence": "À midi, Paolo pose le perroquet au zoo.",
       "parts": [
         {
-          "t": "Ce matin, Noa veut "
+          "t": "À midi, Paolo pose "
         },
         {
-          "blank": "la"
+          "blank": "le"
         },
         {
-          "t": " pomme autour du pot."
+          "t": " perroquet au zoo."
         }
       ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Léo mange la pomme, et Léo sort trop tôt aussi.",
+      "sentence": "Ce matin, quand Tom montre le perroquet, et Léo sort trop tôt aussi.",
       "parts": [
         {
-          "t": "Ce matin, quand Léo mange "
+          "t": "Ce matin, quand Tom montre "
         },
         {
-          "blank": "la"
+          "blank": "le"
         },
         {
-          "t": " pomme, et Léo sort trop tôt aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Paolo tire la porte bien.",
-      "parts": [
-        {
-          "t": "Paolo tire "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " porte bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Tom s’approche de la porte avec Léo.",
-      "parts": [
-        {
-          "t": "Ce soir, Tom s’approche de "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " porte avec Léo."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand Noa ouvre la porte autour du pot, parce que Tom est trop content.",
-      "parts": [
-        {
-          "t": "Quand Noa ouvre "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " porte autour du pot, parce que Tom est trop content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Léo repasse la robe bien.",
-      "parts": [
-        {
-          "t": "Léo repasse "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " robe bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Paolo coud la robe au zoo.",
-      "parts": [
-        {
-          "t": "À midi, Paolo coud "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " robe au zoo."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Tom choisit la robe, et Léo sort trop tôt aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Tom choisit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " robe, et Léo sort trop tôt aussi."
+          "t": " perroquet, et Léo sort trop tôt aussi."
         }
       ]
     },
@@ -898,337 +3415,10 @@
     },
     {
       "level": "a1",
-      "sentence": "Tom enfile la botte avec Léo.",
+      "sentence": "Tom enfile le polo bien.",
       "parts": [
         {
           "t": "Tom enfile "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " botte avec Léo."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Noa repasse la botte autour du pot.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, Noa repasse "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " botte autour du pot."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Léo choisit la botte, et Léo sort trop tôt aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Léo choisit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " botte, et Léo sort trop tôt aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Paolo achète le chocolat bien.",
-      "parts": [
-        {
-          "t": "Paolo achète "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chocolat bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Tom sert le chocolat avec Léo.",
-      "parts": [
-        {
-          "t": "Ce matin, Tom sert "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chocolat avec Léo."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand Noa boit le chocolat autour du pot, parce que Tom est trop content.",
-      "parts": [
-        {
-          "t": "Quand Noa boit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chocolat autour du pot, parce que Tom est trop content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Léo nettoie le coffre bien.",
-      "parts": [
-        {
-          "t": "Léo nettoie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " coffre bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Paolo quitte le coffre au zoo.",
-      "parts": [
-        {
-          "t": "Ce soir, Paolo quitte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " coffre au zoo."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Tom ouvre le coffre, et Léo sort trop tôt aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Tom ouvre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " coffre, et Léo sort trop tôt aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Noa attrape le cochon bien.",
-      "parts": [
-        {
-          "t": "Noa attrape "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cochon bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Léo caresse le cochon trop tôt.",
-      "parts": [
-        {
-          "t": "À midi, Léo caresse "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cochon trop tôt."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Paolo voit le cochon, parce que Tom est trop content.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Paolo voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cochon, parce que Tom est trop content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Tom mange le bol avec Léo.",
-      "parts": [
-        {
-          "t": "Tom mange "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bol avec Léo."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Noa apporte le bol autour du pot.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Noa apporte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bol autour du pot."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Léo coupe le bol, et Léo sort trop tôt aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Léo coupe "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bol, et Léo sort trop tôt aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Paolo nettoie le sol bien.",
-      "parts": [
-        {
-          "t": "Paolo nettoie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sol bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Noa nettoie le sol au zoo.",
-      "parts": [
-        {
-          "t": "Ce matin, Noa nettoie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sol au zoo."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand Noa nettoie le sol autour du pot, parce que Tom est trop content.",
-      "parts": [
-        {
-          "t": "Quand Noa nettoie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sol autour du pot, parce que Tom est trop content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Tom emprunte le vélo avec Léo.",
-      "parts": [
-        {
-          "t": "Tom emprunte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " vélo avec Léo."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Tom prend la moto bien.",
-      "parts": [
-        {
-          "t": "Tom prend "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " moto bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Tom range le robot bien.",
-      "parts": [
-        {
-          "t": "Tom range "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " robot bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Léo porte le polo bien.",
-      "parts": [
-        {
-          "t": "Léo porte "
         },
         {
           "blank": "le"
@@ -1240,7 +3430,7 @@
     },
     {
       "level": "a2",
-      "sentence": "Avant le repas, Léo mange la pomme trop tôt.",
+      "sentence": "Avant le repas, Noa repasse le polo autour du pot.",
       "parts": [
         {
           "t": "Avant "
@@ -1249,109 +3439,13 @@
           "blank": "le"
         },
         {
-          "t": " repas, Léo mange "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " pomme trop tôt."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Noa tire la porte au zoo.",
-      "parts": [
-        {
-          "t": "Avant "
+          "t": " repas, Noa repasse "
         },
         {
           "blank": "le"
         },
         {
-          "t": " repas, Noa tire "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " porte au zoo."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Léo choisit la robe trop tôt.",
-      "parts": [
-        {
-          "t": "À midi, Léo choisit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " robe trop tôt."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Noa range la poche au zoo.",
-      "parts": [
-        {
-          "t": "À midi, Noa range "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " poche au zoo."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand Noa répare le vélo au zoo, parce que Tom est trop content.",
-      "parts": [
-        {
-          "t": "Quand Noa répare "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " vélo au zoo, parce que Tom est trop content."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Tom prend la moto, et Léo sort trop tôt aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Tom prend "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " moto, et Léo sort trop tôt aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Tom montre le robot, et Léo sort trop tôt aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Tom montre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " robot, et Léo sort trop tôt aussi."
+          "t": " polo autour du pot."
         }
       ]
     },
@@ -1372,55 +3466,376 @@
     },
     {
       "level": "a1",
-      "sentence": "Tom aime le domino bien.",
+      "sentence": "Paolo choisit la pomme bien.",
       "parts": [
         {
-          "t": "Tom aime "
+          "t": "Paolo choisit "
         },
         {
-          "blank": "le"
+          "blank": "la"
         },
         {
-          "t": " domino bien."
+          "t": " pomme bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Léo mange la pomme trop tôt.",
+      "parts": [
+        {
+          "t": "À midi, Léo mange "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " pomme trop tôt."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand Noa veut la pomme autour du pot, parce que Tom est trop content.",
+      "parts": [
+        {
+          "t": "Quand Noa veut "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " pomme autour du pot, parce que Tom est trop content."
         }
       ]
     },
     {
       "level": "a1",
-      "sentence": "Léo goûte le kilo bien.",
+      "sentence": "Léo pousse la porte bien.",
       "parts": [
         {
-          "t": "Léo goûte "
+          "t": "Léo pousse "
         },
         {
-          "blank": "le"
+          "blank": "la"
         },
         {
-          "t": " kilo bien."
+          "t": " porte bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, Paolo entre par la porte au zoo.",
+      "parts": [
+        {
+          "t": "Ce soir, Paolo entre par "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " porte au zoo."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Tom ferme la porte, et Léo sort trop tôt aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Tom ferme "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " porte, et Léo sort trop tôt aussi."
         }
       ]
     },
     {
       "level": "a1",
-      "sentence": "Tom prend le métro avec Léo.",
+      "sentence": "Noa trouve le portugais bien.",
       "parts": [
         {
-          "t": "Tom prend "
+          "t": "Noa trouve "
         },
         {
           "blank": "le"
         },
         {
-          "t": " métro avec Léo."
+          "t": " portugais bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Léo prend le portugais trop tôt.",
+      "parts": [
+        {
+          "t": "À midi, Léo prend "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " portugais trop tôt."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Paolo utilise le portugais, parce que Tom est trop content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Paolo utilise "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " portugais, parce que Tom est trop content."
         }
       ]
     },
     {
       "level": "a1",
-      "sentence": "Léo voit la rose bien.",
+      "sentence": "Tom montre la poêle avec Léo.",
       "parts": [
         {
-          "t": "Léo voit "
+          "t": "Tom montre "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " poêle avec Léo."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le cours, Noa trouve la poêle autour du pot.",
+      "parts": [
+        {
+          "t": "Après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cours, Noa trouve "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " poêle autour du pot."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Léo prend la poêle, et Léo sort trop tôt aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Léo prend "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " poêle, et Léo sort trop tôt aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Paolo pose le professeur bien.",
+      "parts": [
+        {
+          "t": "Paolo pose "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " professeur bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, Léo cherche le professeur trop tôt.",
+      "parts": [
+        {
+          "t": "Ce soir, Léo cherche "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " professeur trop tôt."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand Noa trouve le professeur autour du pot, parce que Tom est trop content.",
+      "parts": [
+        {
+          "t": "Quand Noa trouve "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " professeur autour du pot, parce que Tom est trop content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Léo cherche la randonnée bien.",
+      "parts": [
+        {
+          "t": "Léo cherche "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " randonnée bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Paolo pose la randonnée au zoo.",
+      "parts": [
+        {
+          "t": "Ce matin, Paolo pose "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " randonnée au zoo."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Tom montre la randonnée, et Léo sort trop tôt aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Tom montre "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " randonnée, et Léo sort trop tôt aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Noa oublie le robinet bien.",
+      "parts": [
+        {
+          "t": "Noa oublie "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " robinet bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, Léo cherche le robinet trop tôt.",
+      "parts": [
+        {
+          "t": "Ce soir, Léo cherche "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " robinet trop tôt."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Paolo pose le robinet, parce que Tom est trop content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Paolo pose "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " robinet, parce que Tom est trop content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Tom range le robot bien.",
+      "parts": [
+        {
+          "t": "Tom range "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " robot bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Noa oublie le robot autour du pot.",
+      "parts": [
+        {
+          "t": "À midi, Noa oublie "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " robot autour du pot."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Léo cherche le robot, et Léo sort trop tôt aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Léo cherche "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " robot, et Léo sort trop tôt aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Paolo voit la rose bien.",
+      "parts": [
+        {
+          "t": "Paolo voit "
         },
         {
           "blank": "la"
@@ -1432,22 +3847,58 @@
     },
     {
       "level": "a2",
-      "sentence": "Ce matin, Léo porte la botte trop tôt.",
+      "sentence": "Après le cours, Tom observe la rose avec Léo.",
       "parts": [
         {
-          "t": "Ce matin, Léo porte "
+          "t": "Après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cours, Tom observe "
         },
         {
           "blank": "la"
         },
         {
-          "t": " botte trop tôt."
+          "t": " rose avec Léo."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand Noa photographie la rose autour du pot, parce que Tom est trop content.",
+      "parts": [
+        {
+          "t": "Quand Noa photographie "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " rose autour du pot, parce que Tom est trop content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Léo prend le rouleau trop tôt.",
+      "parts": [
+        {
+          "t": "Léo prend "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " rouleau trop tôt."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "Avant le repas, Tom adore le chocolat avec Léo.",
+      "sentence": "Avant le repas, Paolo utilise le rouleau au zoo.",
       "parts": [
         {
           "t": "Avant "
@@ -1456,94 +3907,994 @@
           "blank": "le"
         },
         {
-          "t": " repas, Tom adore "
+          "t": " repas, Paolo utilise "
         },
         {
           "blank": "le"
         },
         {
-          "t": " chocolat avec Léo."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Léo visite le coffre trop tôt.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Léo visite "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " coffre trop tôt."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Noa voit le cochon au zoo.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Noa voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cochon au zoo."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Léo sert le bol trop tôt.",
-      "parts": [
-        {
-          "t": "Ce soir, Léo sert "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bol trop tôt."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Léo nettoie le sol trop tôt.",
-      "parts": [
-        {
-          "t": "À midi, Léo nettoie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sol trop tôt."
+          "t": " rouleau au zoo."
         }
       ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Tom regarde le domino, et Léo sort trop tôt aussi.",
+      "sentence": "Ce matin, quand Tom range le rouleau, et Léo sort trop tôt aussi.",
       "parts": [
         {
-          "t": "Ce matin, quand Tom regarde "
+          "t": "Ce matin, quand Tom range "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " rouleau, et Léo sort trop tôt aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Noa trouve la réceptionniste bien.",
+      "parts": [
+        {
+          "t": "Noa trouve "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " réceptionniste bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Léo prend la réceptionniste trop tôt.",
+      "parts": [
+        {
+          "t": "Ce matin, Léo prend "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " réceptionniste trop tôt."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Paolo utilise la réceptionniste, parce que Tom est trop content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Paolo utilise "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " réceptionniste, parce que Tom est trop content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Tom montre le rôtir avec Léo.",
+      "parts": [
+        {
+          "t": "Tom montre "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " rôtir avec Léo."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, Noa trouve le rôtir autour du pot.",
+      "parts": [
+        {
+          "t": "Ce soir, Noa trouve "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " rôtir autour du pot."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Léo prend le rôtir, et Léo sort trop tôt aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Léo prend "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " rôtir, et Léo sort trop tôt aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Paolo conduit le scooter bien.",
+      "parts": [
+        {
+          "t": "Paolo conduit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " scooter bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Tom prend le scooter avec Léo.",
+      "parts": [
+        {
+          "t": "À midi, Tom prend "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " scooter avec Léo."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand Noa vend le scooter autour du pot, parce que Tom est trop content.",
+      "parts": [
+        {
+          "t": "Quand Noa vend "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " scooter autour du pot, parce que Tom est trop content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Léo choisit le short bien.",
+      "parts": [
+        {
+          "t": "Léo choisit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " short bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le cours, Paolo met le short au zoo.",
+      "parts": [
+        {
+          "t": "Après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cours, Paolo met "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " short au zoo."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Tom achète le short, et Léo sort trop tôt aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Tom achète "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " short, et Léo sort trop tôt aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Noa nettoie le sol bien.",
+      "parts": [
+        {
+          "t": "Noa nettoie "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " sol bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Noa nettoie le sol au zoo.",
+      "parts": [
+        {
+          "t": "À midi, Noa nettoie "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " sol au zoo."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Léo nettoie le sol, et Léo sort trop tôt aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Léo nettoie "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " sol, et Léo sort trop tôt aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Tom range la sonnerie avec Léo.",
+      "parts": [
+        {
+          "t": "Tom range "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " sonnerie avec Léo."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Noa oublie la sonnerie autour du pot.",
+      "parts": [
+        {
+          "t": "Ce matin, Noa oublie "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " sonnerie autour du pot."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Léo cherche la sonnerie, et Léo sort trop tôt aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Léo cherche "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " sonnerie, et Léo sort trop tôt aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Paolo visite le studio bien.",
+      "parts": [
+        {
+          "t": "Paolo visite "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " studio bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le repas, Paolo visite le studio autour du pot.",
+      "parts": [
+        {
+          "t": "Avant "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " repas, Paolo visite "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " studio autour du pot."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Tom visite le studio, et Léo sort trop tôt aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Tom visite "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " studio, et Léo sort trop tôt aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Léo prend la thermomètre bien.",
+      "parts": [
+        {
+          "t": "Léo prend "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " thermomètre bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Paolo utilise la thermomètre au zoo.",
+      "parts": [
+        {
+          "t": "À midi, Paolo utilise "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " thermomètre au zoo."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Tom range la thermomètre, et Léo sort trop tôt aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Tom range "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " thermomètre, et Léo sort trop tôt aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Noa prend la trottinette bien.",
+      "parts": [
+        {
+          "t": "Noa prend "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " trottinette bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, Noa prend la trottinette au zoo.",
+      "parts": [
+        {
+          "t": "Ce soir, Noa prend "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " trottinette au zoo."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Léo prend la trottinette, et Léo sort trop tôt aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Léo prend "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " trottinette, et Léo sort trop tôt aussi."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le repas, Noa trouve une uniforme autour du pot.",
+      "parts": [
+        {
+          "t": "Avant "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " repas, Noa trouve une uniforme autour du pot."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Paolo pose le violet bien.",
+      "parts": [
+        {
+          "t": "Paolo pose "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " violet bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Léo cherche le violet trop tôt.",
+      "parts": [
+        {
+          "t": "À midi, Léo cherche "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " violet trop tôt."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand Noa trouve le violet autour du pot, parce que Tom est trop content.",
+      "parts": [
+        {
+          "t": "Quand Noa trouve "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " violet autour du pot, parce que Tom est trop content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Léo cherche le vol bien.",
+      "parts": [
+        {
+          "t": "Léo cherche "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " vol bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, Paolo pose le vol au zoo.",
+      "parts": [
+        {
+          "t": "Ce soir, Paolo pose "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " vol au zoo."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Tom montre le vol, et Léo sort trop tôt aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Tom montre "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " vol, et Léo sort trop tôt aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Noa répare le vélo bien.",
+      "parts": [
+        {
+          "t": "Noa répare "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " vélo bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Léo a le vélo trop tôt.",
+      "parts": [
+        {
+          "t": "À midi, Léo a "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " vélo trop tôt."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Paolo monte sur le vélo, parce que Tom est trop content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Paolo monte sur "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " vélo, parce que Tom est trop content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Noa aime la biologie vite.",
+      "parts": [
+        {
+          "t": "Noa aime "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " biologie vite."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Tom achète le bol avec Léo.",
+      "parts": [
+        {
+          "t": "Tom achète "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " bol avec Léo."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Léo prend le bordeaux bien.",
+      "parts": [
+        {
+          "t": "Léo prend "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " bordeaux bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Noa pose la coccinelle au zoo.",
+      "parts": [
+        {
+          "t": "À midi, Noa pose "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " coccinelle au zoo."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Léo regarde le cochon trop tôt.",
+      "parts": [
+        {
+          "t": "Ce matin, Léo regarde "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cochon trop tôt."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le cours, Paolo bricole le coffre autour du pot.",
+      "parts": [
+        {
+          "t": "Après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cours, Paolo bricole "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " coffre autour du pot."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Noa utilise le colibri au zoo.",
+      "parts": [
+        {
+          "t": "À midi, Noa utilise "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " colibri au zoo."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Tom range la crocodile, et Léo sort trop tôt aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Tom range "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " crocodile, et Léo sort trop tôt aussi."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Léo prend la culotte, et Léo sort trop tôt aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Léo prend "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " culotte, et Léo sort trop tôt aussi."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Léo dessine la côte, et Léo sort trop tôt aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Léo dessine "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " côte, et Léo sort trop tôt aussi."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Léo cherche le divorcé, et Léo sort trop tôt aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Léo cherche "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " divorcé, et Léo sort trop tôt aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Paolo repasse la botte bien.",
+      "parts": [
+        {
+          "t": "Paolo repasse "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " botte bien."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Tom range le bottines avec Léo.",
+      "parts": [
+        {
+          "t": "Tom range "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " bottines avec Léo."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Noa prépare la brioche bien.",
+      "parts": [
+        {
+          "t": "Noa prépare "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " brioche bien."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Noa coupe le brocoli bien.",
+      "parts": [
+        {
+          "t": "Noa coupe "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " brocoli bien."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Noa pose le chausson bien.",
+      "parts": [
+        {
+          "t": "Noa pose "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chausson bien."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Tom sert le chocolat bien.",
+      "parts": [
+        {
+          "t": "Tom sert "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chocolat bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le cours, Noa cherche la colle au zoo.",
+      "parts": [
+        {
+          "t": "Après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cours, Noa cherche "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " colle au zoo."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Noa regarde la colline au zoo.",
+      "parts": [
+        {
+          "t": "À midi, Noa regarde "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " colline au zoo."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le cours, Léo cherche le contrôleur trop tôt.",
+      "parts": [
+        {
+          "t": "Après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cours, Léo cherche "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " contrôleur trop tôt."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Noa pose le corbeau au zoo.",
+      "parts": [
+        {
+          "t": "À midi, Noa pose "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " corbeau au zoo."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le repas, Noa pose la correspondance au zoo.",
+      "parts": [
+        {
+          "t": "Avant "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " repas, Noa pose "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " correspondance au zoo."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le cours, Paolo oublie le coton autour du pot.",
+      "parts": [
+        {
+          "t": "Après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cours, Paolo oublie "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " coton autour du pot."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Paolo trouve le docteur, parce que Tom est trop content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Paolo trouve "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " docteur, parce que Tom est trop content."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Léo regarde le domino, et Léo sort trop tôt aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Léo regarde "
         },
         {
           "blank": "le"
@@ -1555,46 +4906,61 @@
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Paolo apporte le kilo, parce que Tom est trop content.",
+      "sentence": "Quand Noa pose le donut au zoo, parce que Tom est trop content.",
       "parts": [
         {
-          "t": "Ce matin, quand Paolo apporte "
+          "t": "Quand Noa pose "
         },
         {
           "blank": "le"
         },
         {
-          "t": " kilo, parce que Tom est trop content."
+          "t": " donut au zoo, parce que Tom est trop content."
         }
       ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Tom attend le métro, et Léo sort trop tôt aussi.",
+      "sentence": "Quand Noa visite le dortoir au zoo, parce que Tom est trop content.",
       "parts": [
         {
-          "t": "Ce matin, quand Tom attend "
+          "t": "Quand Noa visite "
         },
         {
           "blank": "le"
         },
         {
-          "t": " métro, et Léo sort trop tôt aussi."
+          "t": " dortoir au zoo, parce que Tom est trop content."
         }
       ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Léo regarde la rose, et Léo sort trop tôt aussi.",
+      "sentence": "Ce matin, quand Tom range la dosette, et Léo sort trop tôt aussi.",
       "parts": [
         {
-          "t": "Ce matin, quand Léo regarde "
+          "t": "Ce matin, quand Tom range "
         },
         {
           "blank": "la"
         },
         {
-          "t": " rose, et Léo sort trop tôt aussi."
+          "t": " dosette, et Léo sort trop tôt aussi."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Léo prend le doseur, et Léo sort trop tôt aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Léo prend "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " doseur, et Léo sort trop tôt aussi."
         }
       ]
     }
@@ -1602,125 +4968,125 @@
   "type12": [
     {
       "level": "a1",
-      "sentence": "Tom emprunte le vélo avec Léo."
+      "sentence": "Tom montre une antibiotique avec Léo."
     },
     {
       "level": "a1",
-      "sentence": "Tom prend la moto bien."
+      "sentence": "Noa aime la biologie vite."
     },
     {
       "level": "a1",
-      "sentence": "Tom range le robot bien."
+      "sentence": "Tom achète le bol avec Léo."
     },
     {
       "level": "a1",
-      "sentence": "Léo porte le polo bien."
+      "sentence": "Léo prend le bordeaux bien."
     },
     {
       "level": "a2",
-      "sentence": "Avant le repas, Léo mange la pomme trop tôt."
+      "sentence": "À midi, Noa pose la coccinelle au zoo."
     },
     {
       "level": "a2",
-      "sentence": "Avant le repas, Noa tire la porte au zoo."
+      "sentence": "Ce matin, Léo regarde le cochon trop tôt."
     },
     {
       "level": "a2",
-      "sentence": "À midi, Léo choisit la robe trop tôt."
+      "sentence": "Après le cours, Paolo bricole le coffre autour du pot."
     },
     {
       "level": "a2",
-      "sentence": "À midi, Noa range la poche au zoo."
+      "sentence": "À midi, Noa utilise le colibri au zoo."
     },
     {
       "level": "b1",
-      "sentence": "Quand Noa répare le vélo au zoo, parce que Tom est trop content."
+      "sentence": "Ce matin, quand Tom range la crocodile, et Léo sort trop tôt aussi."
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Tom prend la moto, et Léo sort trop tôt aussi."
+      "sentence": "Ce matin, quand Léo prend la culotte, et Léo sort trop tôt aussi."
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Tom montre le robot, et Léo sort trop tôt aussi."
+      "sentence": "Ce matin, quand Léo dessine la côte, et Léo sort trop tôt aussi."
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Léo choisit le polo, et Léo sort trop tôt aussi."
+      "sentence": "Ce matin, quand Léo cherche le divorcé, et Léo sort trop tôt aussi."
     }
   ],
   "type14": [
     {
       "level": "a1",
-      "sentence": "Tom aime le domino bien."
+      "sentence": "Paolo repasse la botte bien."
     },
     {
       "level": "a1",
-      "sentence": "Léo goûte le kilo bien."
+      "sentence": "Tom range le bottines avec Léo."
     },
     {
       "level": "a1",
-      "sentence": "Tom prend le métro avec Léo."
+      "sentence": "Noa prépare la brioche bien."
     },
     {
       "level": "a1",
-      "sentence": "Paolo traverse un hôtel bien."
+      "sentence": "Noa coupe le brocoli bien."
     },
     {
       "level": "a1",
-      "sentence": "Tom visite un hôpital avec Léo."
+      "sentence": "Noa pose le chausson bien."
     },
     {
       "level": "a1",
-      "sentence": "Léo voit la rose bien."
+      "sentence": "Tom sert le chocolat bien."
     },
     {
       "level": "a2",
-      "sentence": "Ce matin, Léo porte la botte trop tôt."
+      "sentence": "Après le cours, Noa cherche la colle au zoo."
     },
     {
       "level": "a2",
-      "sentence": "Avant le repas, Tom adore le chocolat avec Léo."
+      "sentence": "À midi, Noa regarde la colline au zoo."
     },
     {
       "level": "a2",
-      "sentence": "Après le cours, Léo visite le coffre trop tôt."
+      "sentence": "Après le cours, Léo cherche le contrôleur trop tôt."
     },
     {
       "level": "a2",
-      "sentence": "Après le cours, Noa voit le cochon au zoo."
+      "sentence": "À midi, Noa pose le corbeau au zoo."
     },
     {
       "level": "a2",
-      "sentence": "Ce soir, Léo sert le bol trop tôt."
+      "sentence": "Avant le repas, Noa pose la correspondance au zoo."
     },
     {
       "level": "a2",
-      "sentence": "À midi, Léo nettoie le sol trop tôt."
+      "sentence": "Après le cours, Paolo oublie le coton autour du pot."
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Tom regarde le domino, et Léo sort trop tôt aussi."
+      "sentence": "Ce matin, quand Paolo trouve le docteur, parce que Tom est trop content."
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Paolo apporte le kilo, parce que Tom est trop content."
+      "sentence": "Ce matin, quand Léo regarde le domino, et Léo sort trop tôt aussi."
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Tom attend le métro, et Léo sort trop tôt aussi."
+      "sentence": "Quand Noa pose le donut au zoo, parce que Tom est trop content."
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Léo cherche un hôtel, et Léo sort trop tôt aussi."
+      "sentence": "Quand Noa visite le dortoir au zoo, parce que Tom est trop content."
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Tom cherche un hôpital, et Léo sort trop tôt aussi."
+      "sentence": "Ce matin, quand Tom range la dosette, et Léo sort trop tôt aussi."
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Léo regarde la rose, et Léo sort trop tôt aussi."
+      "sentence": "Ce matin, quand Léo prend le doseur, et Léo sort trop tôt aussi."
     }
   ]
 }

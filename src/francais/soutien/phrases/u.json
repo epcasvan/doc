@@ -2,93 +2,393 @@
   "type9": [
     {
       "level": "a1",
-      "word": "rue",
-      "sentence": "Luc traverse la rue bien."
+      "word": "blessure",
+      "sentence": "Luc prend la blessure bien."
     },
     {
       "level": "a2",
-      "word": "rue",
-      "sentence": "Ce matin, Julie descend la rue avec Luc."
+      "word": "blessure",
+      "sentence": "Ce matin, Julie utilise la blessure avec Luc."
     },
     {
       "level": "b1",
-      "word": "rue",
-      "sentence": "Ce matin, quand Hugo traverse la rue, et Luc part plus loin aussi."
+      "word": "blessure",
+      "sentence": "Ce matin, quand Hugo range la blessure, et Luc part plus loin aussi."
     },
     {
       "level": "a1",
-      "word": "jupe",
-      "sentence": "Brutus lave la jupe bien."
+      "word": "brume",
+      "sentence": "Brutus plante la brume bien."
     },
     {
       "level": "a2",
-      "word": "jupe",
-      "sentence": "Ce soir, Luc porte la jupe sur le mur."
+      "word": "brume",
+      "sentence": "Ce soir, Luc dessine la brume sur le mur."
     },
     {
       "level": "b1",
-      "word": "jupe",
-      "sentence": "Ce matin, quand Julie range la jupe, parce que Julie est plus contente."
+      "word": "brume",
+      "sentence": "Ce matin, quand Julie voit la brume, parce que Julie est plus contente."
+    },
+    {
+      "level": "a1",
+      "word": "brûlure",
+      "sentence": "Hugo montre la brûlure bien."
+    },
+    {
+      "level": "a2",
+      "word": "brûlure",
+      "sentence": "À midi, Brutus trouve la brûlure dans le bus."
+    },
+    {
+      "level": "b1",
+      "word": "brûlure",
+      "sentence": "Ce matin, quand Luc prend la brûlure, et Luc part plus loin aussi."
+    },
+    {
+      "level": "a1",
+      "word": "bulle",
+      "sentence": "Julie termine la bulle bien."
+    },
+    {
+      "level": "a2",
+      "word": "bulle",
+      "sentence": "Après le cours, Hugo choisit la bulle plus loin."
+    },
+    {
+      "level": "b1",
+      "word": "bulle",
+      "sentence": "Quand Brutus regarde la bulle dans le bus, parce que Julie est plus contente."
+    },
+    {
+      "level": "a1",
+      "word": "bureau",
+      "sentence": "Luc travaille dans le bureau."
+    },
+    {
+      "level": "a2",
+      "word": "bureau",
+      "sentence": "À midi, Luc travaille dans le bureau plus loin."
+    },
+    {
+      "level": "b1",
+      "word": "bureau",
+      "sentence": "Ce matin, quand Julie travaille dans le bureau, parce que Julie est plus contente."
     },
     {
       "level": "a1",
       "word": "bus",
-      "sentence": "Hugo conduit le bus bien."
+      "sentence": "Brutus prend le bus bien."
     },
     {
       "level": "a2",
       "word": "bus",
-      "sentence": "À midi, Brutus conduit le bus dans le bus."
+      "sentence": "Ce soir, Julie monte dans le bus dans le bus."
     },
     {
       "level": "b1",
       "word": "bus",
-      "sentence": "Ce matin, quand Luc conduit le bus, et Luc part plus loin aussi."
+      "sentence": "Quand Brutus attend le bus dans le bus, parce que Julie est plus contente."
     },
     {
       "level": "a1",
-      "word": "lune",
-      "sentence": "Julie observe la lune bien."
+      "word": "chaussures",
+      "sentence": "Hugo range le chaussures bien."
     },
     {
       "level": "a2",
-      "word": "lune",
-      "sentence": "Après le cours, Hugo photographie la lune plus loin."
+      "word": "chaussures",
+      "sentence": "Ce soir, Brutus oublie le chaussures dans le bus."
     },
     {
       "level": "b1",
-      "word": "lune",
-      "sentence": "Quand Brutus regarde la lune dans le bus, parce que Julie est plus contente."
+      "word": "chaussures",
+      "sentence": "Ce matin, quand Luc cherche le chaussures, et Luc part plus loin aussi."
     },
     {
       "level": "a1",
-      "word": "mur",
-      "sentence": "Luc peint le mur bien."
+      "word": "coupure",
+      "sentence": "Julie utilise la coupure bien."
     },
     {
       "level": "a2",
-      "word": "mur",
-      "sentence": "Avant le repas, Julie mesure le mur avec Luc."
+      "word": "coupure",
+      "sentence": "À midi, Hugo range la coupure plus loin."
     },
     {
       "level": "b1",
-      "word": "mur",
-      "sentence": "Ce matin, quand Hugo longe le mur, et Luc part plus loin aussi."
+      "word": "coupure",
+      "sentence": "Quand Brutus oublie la coupure dans le bus, parce que Julie est plus contente."
+    },
+    {
+      "level": "a1",
+      "word": "cube",
+      "sentence": "Luc prend le cube bien."
+    },
+    {
+      "level": "a2",
+      "word": "cube",
+      "sentence": "Après le cours, Julie utilise le cube avec Luc."
+    },
+    {
+      "level": "b1",
+      "word": "cube",
+      "sentence": "Ce matin, quand Hugo range le cube, et Luc part plus loin aussi."
+    },
+    {
+      "level": "a1",
+      "word": "curry",
+      "sentence": "Brutus trouve le curry bien."
+    },
+    {
+      "level": "a2",
+      "word": "curry",
+      "sentence": "Avant le repas, Luc prend le curry sur le mur."
+    },
+    {
+      "level": "b1",
+      "word": "curry",
+      "sentence": "Ce matin, quand Julie utilise le curry, parce que Julie est plus contente."
+    },
+    {
+      "level": "a1",
+      "word": "fumée",
+      "sentence": "Hugo peint la fumée bien."
+    },
+    {
+      "level": "a2",
+      "word": "fumée",
+      "sentence": "Ce matin, Brutus ferme la fumée dans le bus."
+    },
+    {
+      "level": "b1",
+      "word": "fumée",
+      "sentence": "Ce matin, quand Luc nettoie la fumée, et Luc part plus loin aussi."
+    },
+    {
+      "level": "a1",
+      "word": "fusée",
+      "sentence": "Julie pose la fusée bien."
+    },
+    {
+      "level": "a2",
+      "word": "fusée",
+      "sentence": "Ce soir, Hugo montre la fusée plus loin."
+    },
+    {
+      "level": "b1",
+      "word": "fusée",
+      "sentence": "Quand Brutus trouve la fusée dans le bus, parce que Julie est plus contente."
+    },
+    {
+      "level": "a1",
+      "word": "gélule",
+      "sentence": "Luc cherche la gélule bien."
+    },
+    {
+      "level": "a2",
+      "word": "gélule",
+      "sentence": "À midi, Julie pose la gélule avec Luc."
+    },
+    {
+      "level": "b1",
+      "word": "gélule",
+      "sentence": "Ce matin, quand Hugo montre la gélule, et Luc part plus loin aussi."
+    },
+    {
+      "level": "a1",
+      "word": "interrupteur",
+      "sentence": "Brutus oublie un interrupteur bien."
+    },
+    {
+      "level": "a2",
+      "word": "interrupteur",
+      "sentence": "Après le cours, Luc cherche un interrupteur sur le mur."
+    },
+    {
+      "level": "b1",
+      "word": "interrupteur",
+      "sentence": "Ce matin, quand Julie pose un interrupteur, parce que Julie est plus contente."
+    },
+    {
+      "level": "a1",
+      "word": "jupe",
+      "sentence": "Hugo enfile la jupe bien."
+    },
+    {
+      "level": "a2",
+      "word": "jupe",
+      "sentence": "Avant le repas, Brutus repasse la jupe dans le bus."
+    },
+    {
+      "level": "b1",
+      "word": "jupe",
+      "sentence": "Ce matin, quand Luc choisit la jupe, et Luc part plus loin aussi."
     },
     {
       "level": "a1",
       "word": "jus",
-      "sentence": "Brutus prépare le jus bien."
+      "sentence": "Julie aime le jus bien."
     },
     {
       "level": "a2",
       "word": "jus",
-      "sentence": "Ce matin, Luc boit le jus sur le mur."
+      "sentence": "Ce matin, Hugo sert le jus plus loin."
     },
     {
       "level": "b1",
       "word": "jus",
-      "sentence": "Ce matin, quand Julie boit le jus, parce que Julie est plus contente."
+      "sentence": "Quand Brutus prépare le jus dans le bus, parce que Julie est plus contente."
+    },
+    {
+      "level": "a1",
+      "word": "lune",
+      "sentence": "Luc regarde la lune bien."
+    },
+    {
+      "level": "a2",
+      "word": "lune",
+      "sentence": "Ce soir, Julie admire la lune avec Luc."
+    },
+    {
+      "level": "b1",
+      "word": "lune",
+      "sentence": "Ce matin, quand Hugo plante la lune, et Luc part plus loin aussi."
+    },
+    {
+      "level": "a1",
+      "word": "lutin",
+      "sentence": "Brutus termine le lutin bien."
+    },
+    {
+      "level": "a2",
+      "word": "lutin",
+      "sentence": "À midi, Luc choisit le lutin sur le mur."
+    },
+    {
+      "level": "b1",
+      "word": "lutin",
+      "sentence": "Ce matin, quand Julie regarde le lutin, parce que Julie est plus contente."
+    },
+    {
+      "level": "a1",
+      "word": "menu",
+      "sentence": "Hugo mange le menu bien."
+    },
+    {
+      "level": "a2",
+      "word": "menu",
+      "sentence": "Après le cours, Brutus apporte le menu dans le bus."
+    },
+    {
+      "level": "b1",
+      "word": "menu",
+      "sentence": "Ce matin, quand Luc coupe le menu, et Luc part plus loin aussi."
+    },
+    {
+      "level": "a1",
+      "word": "minute",
+      "sentence": "Julie parle avec la minute."
+    },
+    {
+      "level": "a2",
+      "word": "minute",
+      "sentence": "Avant le repas, Hugo choisit la minute plus loin."
+    },
+    {
+      "level": "b1",
+      "word": "minute",
+      "sentence": "Quand Brutus aime la minute dans le bus, parce que Julie est plus contente."
+    },
+    {
+      "level": "a1",
+      "word": "muffin",
+      "sentence": "Luc cherche le muffin bien."
+    },
+    {
+      "level": "a2",
+      "word": "muffin",
+      "sentence": "Ce matin, Julie pose le muffin avec Luc."
+    },
+    {
+      "level": "b1",
+      "word": "muffin",
+      "sentence": "Ce matin, quand Hugo montre le muffin, et Luc part plus loin aussi."
+    },
+    {
+      "level": "a1",
+      "word": "mur",
+      "sentence": "Brutus longe le mur bien."
+    },
+    {
+      "level": "a2",
+      "word": "mur",
+      "sentence": "Ce soir, Luc peint le mur sur le mur."
+    },
+    {
+      "level": "b1",
+      "word": "mur",
+      "sentence": "Ce matin, quand Julie mesure le mur, parce que Julie est plus contente."
+    },
+    {
+      "level": "a1",
+      "word": "muscle",
+      "sentence": "Hugo regarde le muscle bien."
+    },
+    {
+      "level": "a2",
+      "word": "muscle",
+      "sentence": "À midi, Brutus soigne le muscle dans le bus."
+    },
+    {
+      "level": "b1",
+      "word": "muscle",
+      "sentence": "Ce matin, quand Luc lave le muscle, et Luc part plus loin aussi."
+    },
+    {
+      "level": "a1",
+      "word": "musclé",
+      "sentence": "Julie utilise le musclé bien."
+    },
+    {
+      "level": "a2",
+      "word": "musclé",
+      "sentence": "Après le cours, Hugo range le musclé plus loin."
+    },
+    {
+      "level": "b1",
+      "word": "musclé",
+      "sentence": "Quand Brutus oublie le musclé dans le bus, parce que Julie est plus contente."
+    },
+    {
+      "level": "a1",
+      "word": "méduse",
+      "sentence": "Luc prend la méduse bien."
+    },
+    {
+      "level": "a2",
+      "word": "méduse",
+      "sentence": "Avant le repas, Julie utilise la méduse avec Luc."
+    },
+    {
+      "level": "b1",
+      "word": "méduse",
+      "sentence": "Ce matin, quand Hugo range la méduse, et Luc part plus loin aussi."
+    },
+    {
+      "level": "a1",
+      "word": "puce",
+      "sentence": "Brutus attrape la puce bien."
+    },
+    {
+      "level": "a2",
+      "word": "puce",
+      "sentence": "Ce matin, Luc caresse la puce sur le mur."
+    },
+    {
+      "level": "b1",
+      "word": "puce",
+      "sentence": "Ce matin, quand Julie voit la puce, parce que Julie est plus contente."
     },
     {
       "level": "a1",
@@ -103,307 +403,277 @@
     {
       "level": "b1",
       "word": "pull",
-      "sentence": "Ce matin, quand Luc porte le pull, et Luc part plus loin aussi."
+      "sentence": "Ce matin, quand Hugo porte le pull, et Luc part plus loin aussi."
     },
     {
       "level": "a1",
-      "word": "vue",
-      "sentence": "Julie voit la vue bien."
+      "word": "rhume",
+      "sentence": "Julie pose la rhume bien."
     },
     {
       "level": "a2",
-      "word": "vue",
-      "sentence": "À midi, Hugo observe la vue plus loin."
+      "word": "rhume",
+      "sentence": "À midi, Hugo montre la rhume plus loin."
     },
     {
       "level": "b1",
-      "word": "vue",
-      "sentence": "Quand Brutus photographie la vue dans le bus, parce que Julie est plus contente."
+      "word": "rhume",
+      "sentence": "Quand Brutus trouve la rhume dans le bus, parce que Julie est plus contente."
     },
     {
       "level": "a1",
-      "word": "sucre",
-      "sentence": "Luc choisit le sucre bien."
+      "word": "rue",
+      "sentence": "Luc traverse la rue bien."
     },
     {
       "level": "a2",
-      "word": "sucre",
-      "sentence": "Après le cours, Julie goûte le sucre avec Luc."
+      "word": "rue",
+      "sentence": "Après le cours, Julie descend la rue avec Luc."
     },
     {
       "level": "b1",
-      "word": "sucre",
-      "sentence": "Ce matin, quand Hugo partage le sucre, et Luc part plus loin aussi."
+      "word": "rue",
+      "sentence": "Ce matin, quand Luc traverse la rue, et Luc part plus loin aussi."
     },
     {
       "level": "a1",
-      "word": "bulle",
-      "sentence": "Brutus regarde la bulle bien."
+      "word": "russe",
+      "sentence": "Brutus oublie la russe bien."
     },
     {
       "level": "a2",
-      "word": "bulle",
-      "sentence": "Avant le repas, Luc joue avec la bulle sur le mur."
+      "word": "russe",
+      "sentence": "Avant le repas, Luc cherche la russe sur le mur."
     },
     {
       "level": "b1",
-      "word": "bulle",
-      "sentence": "Ce matin, quand Julie commence la bulle, parce que Julie est plus contente."
+      "word": "russe",
+      "sentence": "Ce matin, quand Julie pose la russe, parce que Julie est plus contente."
     },
     {
       "level": "a1",
-      "word": "menu",
-      "sentence": "Hugo prépare le menu bien."
+      "word": "serrure",
+      "sentence": "Hugo range la serrure bien."
     },
     {
       "level": "a2",
-      "word": "menu",
-      "sentence": "Ce matin, Brutus choisit le menu dans le bus."
+      "word": "serrure",
+      "sentence": "Ce matin, Brutus oublie la serrure dans le bus."
     },
     {
       "level": "b1",
-      "word": "menu",
-      "sentence": "Ce matin, quand Luc goûte le menu, et Luc part plus loin aussi."
-    },
-    {
-      "level": "a1",
-      "word": "puce",
-      "sentence": "Julie nourrit la puce bien."
-    },
-    {
-      "level": "a2",
-      "word": "puce",
-      "sentence": "Ce soir, Hugo observe la puce plus loin."
-    },
-    {
-      "level": "b1",
-      "word": "puce",
-      "sentence": "Quand Brutus attrape la puce dans le bus, parce que Julie est plus contente."
-    },
-    {
-      "level": "a1",
-      "word": "cube",
-      "sentence": "Luc cherche le cube bien."
-    },
-    {
-      "level": "a2",
-      "word": "cube",
-      "sentence": "À midi, Julie pose le cube avec Luc."
-    },
-    {
-      "level": "b1",
-      "word": "cube",
-      "sentence": "Ce matin, quand Hugo montre le cube, et Luc part plus loin aussi."
-    },
-    {
-      "level": "a1",
-      "word": "tulipe",
-      "sentence": "Brutus photographie la tulipe bien."
-    },
-    {
-      "level": "a2",
-      "word": "tulipe",
-      "sentence": "Après le cours, Luc regarde la tulipe sur le mur."
-    },
-    {
-      "level": "b1",
-      "word": "tulipe",
-      "sentence": "Ce matin, quand Julie admire la tulipe, parce que Julie est plus contente."
-    },
-    {
-      "level": "a1",
-      "word": "bureau",
-      "sentence": "Hugo travaille dans le bureau."
-    },
-    {
-      "level": "a2",
-      "word": "bureau",
-      "sentence": "Avant le repas, Brutus travaille dans le bureau dans le bus."
-    },
-    {
-      "level": "b1",
-      "word": "bureau",
-      "sentence": "Ce matin, quand Luc travaille dans le bureau, et Luc part plus loin aussi."
-    },
-    {
-      "level": "a1",
-      "word": "fumée",
-      "sentence": "Julie quitte la fumée bien."
-    },
-    {
-      "level": "a2",
-      "word": "fumée",
-      "sentence": "Ce matin, Hugo ouvre la fumée plus loin."
-    },
-    {
-      "level": "b1",
-      "word": "fumée",
-      "sentence": "Quand Brutus bricole la fumée dans le bus, parce que Julie est plus contente."
-    },
-    {
-      "level": "a1",
-      "word": "fusée",
-      "sentence": "Luc prend la fusée bien."
-    },
-    {
-      "level": "a2",
-      "word": "fusée",
-      "sentence": "Ce soir, Julie utilise la fusée avec Luc."
-    },
-    {
-      "level": "b1",
-      "word": "fusée",
-      "sentence": "Ce matin, quand Hugo range la fusée, et Luc part plus loin aussi."
-    },
-    {
-      "level": "a1",
-      "word": "minute",
-      "sentence": "Brutus note la minute bien."
-    },
-    {
-      "level": "a2",
-      "word": "minute",
-      "sentence": "À midi, Luc attend la minute sur le mur."
-    },
-    {
-      "level": "b1",
-      "word": "minute",
-      "sentence": "Ce matin, quand Julie parle avec la minute, parce que Julie est plus contente."
-    },
-    {
-      "level": "a1",
-      "word": "muscle",
-      "sentence": "Hugo lave le muscle bien."
-    },
-    {
-      "level": "a2",
-      "word": "muscle",
-      "sentence": "Après le cours, Brutus essuie le muscle dans le bus."
-    },
-    {
-      "level": "b1",
-      "word": "muscle",
-      "sentence": "Ce matin, quand Luc touche le muscle, et Luc part plus loin aussi."
-    },
-    {
-      "level": "a1",
-      "word": "brume",
-      "sentence": "Julie admire la brume bien."
-    },
-    {
-      "level": "a2",
-      "word": "brume",
-      "sentence": "Avant le repas, Hugo plante la brume plus loin."
-    },
-    {
-      "level": "b1",
-      "word": "brume",
-      "sentence": "Quand Brutus dessine la brume dans le bus, parce que Julie est plus contente."
+      "word": "serrure",
+      "sentence": "Ce matin, quand Luc cherche la serrure, et Luc part plus loin aussi."
     },
     {
       "level": "a1",
       "word": "statue",
-      "sentence": "Luc traverse la statue bien."
+      "sentence": "Julie quitte la statue bien."
     },
     {
       "level": "a2",
       "word": "statue",
-      "sentence": "Ce matin, Julie cherche la statue avec Luc."
+      "sentence": "Ce soir, Hugo traverse la statue plus loin."
     },
     {
       "level": "b1",
       "word": "statue",
-      "sentence": "Ce matin, quand Hugo longe la statue, et Luc part plus loin aussi."
+      "sentence": "Quand Brutus cherche la statue dans le bus, parce que Julie est plus contente."
     },
     {
       "level": "a1",
-      "word": "lutin",
-      "sentence": "Brutus aime le lutin bien."
+      "word": "sucre",
+      "sentence": "Luc coupe le sucre bien."
     },
     {
       "level": "a2",
-      "word": "lutin",
-      "sentence": "Ce soir, Luc termine le lutin sur le mur."
+      "word": "sucre",
+      "sentence": "À midi, Julie achète le sucre avec Luc."
     },
     {
       "level": "b1",
-      "word": "lutin",
-      "sentence": "Ce matin, quand Julie choisit le lutin, parce que Julie est plus contente."
+      "word": "sucre",
+      "sentence": "Ce matin, quand Hugo prépare le sucre, et Luc part plus loin aussi."
+    },
+    {
+      "level": "a1",
+      "word": "sud",
+      "sentence": "Brutus trouve le sud bien."
+    },
+    {
+      "level": "a2",
+      "word": "sud",
+      "sentence": "Après le cours, Luc prend le sud sur le mur."
+    },
+    {
+      "level": "b1",
+      "word": "sud",
+      "sentence": "Ce matin, quand Julie utilise le sud, parce que Julie est plus contente."
+    },
+    {
+      "level": "a1",
+      "word": "tulipe",
+      "sentence": "Hugo photographie la tulipe bien."
+    },
+    {
+      "level": "a2",
+      "word": "tulipe",
+      "sentence": "Avant le repas, Brutus regarde la tulipe dans le bus."
+    },
+    {
+      "level": "b1",
+      "word": "tulipe",
+      "sentence": "Ce matin, quand Luc admire la tulipe, et Luc part plus loin aussi."
+    },
+    {
+      "level": "a1",
+      "word": "turc",
+      "sentence": "Julie pose le turc bien."
+    },
+    {
+      "level": "a2",
+      "word": "turc",
+      "sentence": "Ce matin, Hugo montre le turc plus loin."
+    },
+    {
+      "level": "b1",
+      "word": "turc",
+      "sentence": "Quand Brutus trouve le turc dans le bus, parce que Julie est plus contente."
+    },
+    {
+      "level": "a1",
+      "word": "turquoise",
+      "sentence": "Luc cherche la turquoise bien."
+    },
+    {
+      "level": "a2",
+      "word": "turquoise",
+      "sentence": "Ce soir, Julie pose la turquoise avec Luc."
+    },
+    {
+      "level": "b1",
+      "word": "turquoise",
+      "sentence": "Ce matin, quand Hugo montre la turquoise, et Luc part plus loin aussi."
+    },
+    {
+      "level": "a1",
+      "word": "tuyau",
+      "sentence": "Brutus oublie le tuyau bien."
+    },
+    {
+      "level": "a2",
+      "word": "tuyau",
+      "sentence": "À midi, Luc cherche le tuyau sur le mur."
+    },
+    {
+      "level": "b1",
+      "word": "tuyau",
+      "sentence": "Ce matin, quand Julie pose le tuyau, parce que Julie est plus contente."
+    },
+    {
+      "level": "a1",
+      "word": "vue",
+      "sentence": "Hugo observe la vue bien."
+    },
+    {
+      "level": "a2",
+      "word": "vue",
+      "sentence": "Après le cours, Brutus photographie la vue dans le bus."
+    },
+    {
+      "level": "b1",
+      "word": "vue",
+      "sentence": "Ce matin, quand Luc regarde la vue, et Luc part plus loin aussi."
+    },
+    {
+      "level": "a1",
+      "word": "éplucher",
+      "sentence": "Julie utilise un éplucher bien."
+    },
+    {
+      "level": "a2",
+      "word": "éplucher",
+      "sentence": "Avant le repas, Hugo range un éplucher plus loin."
+    },
+    {
+      "level": "b1",
+      "word": "éplucher",
+      "sentence": "Quand Brutus oublie un éplucher dans le bus, parce que Julie est plus contente."
     }
   ],
   "type10": [
     {
       "level": "a1",
-      "sentence": "Luc traverse la rue bien.",
+      "sentence": "Luc prend la blessure bien.",
       "parts": [
         {
-          "t": "Luc traverse "
+          "t": "Luc prend "
         },
         {
           "blank": "la"
         },
         {
-          "t": " rue bien."
+          "t": " blessure bien."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "Ce matin, Julie descend la rue avec Luc.",
+      "sentence": "Ce matin, Julie utilise la blessure avec Luc.",
       "parts": [
         {
-          "t": "Ce matin, Julie descend "
+          "t": "Ce matin, Julie utilise "
         },
         {
           "blank": "la"
         },
         {
-          "t": " rue avec Luc."
+          "t": " blessure avec Luc."
         }
       ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Hugo traverse la rue, et Luc part plus loin aussi.",
+      "sentence": "Ce matin, quand Hugo range la blessure, et Luc part plus loin aussi.",
       "parts": [
         {
-          "t": "Ce matin, quand Hugo traverse "
+          "t": "Ce matin, quand Hugo range "
         },
         {
           "blank": "la"
         },
         {
-          "t": " rue, et Luc part plus loin aussi."
+          "t": " blessure, et Luc part plus loin aussi."
         }
       ]
     },
     {
       "level": "a1",
-      "sentence": "Brutus lave la jupe bien.",
+      "sentence": "Brutus plante la brume bien.",
       "parts": [
         {
-          "t": "Brutus lave "
+          "t": "Brutus plante "
         },
         {
           "blank": "la"
         },
         {
-          "t": " jupe bien."
+          "t": " brume bien."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "Ce soir, Luc porte la jupe sur le mur.",
+      "sentence": "Ce soir, Luc dessine la brume sur le mur.",
       "parts": [
         {
-          "t": "Ce soir, Luc porte "
+          "t": "Ce soir, Luc dessine "
         },
         {
           "blank": "la"
         },
         {
-          "t": " jupe sur "
+          "t": " brume sur "
         },
         {
           "blank": "le"
@@ -415,25 +685,178 @@
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Julie range la jupe, parce que Julie est plus contente.",
+      "sentence": "Ce matin, quand Julie voit la brume, parce que Julie est plus contente.",
       "parts": [
         {
-          "t": "Ce matin, quand Julie range "
+          "t": "Ce matin, quand Julie voit "
         },
         {
           "blank": "la"
         },
         {
-          "t": " jupe, parce que Julie est plus contente."
+          "t": " brume, parce que Julie est plus contente."
         }
       ]
     },
     {
       "level": "a1",
-      "sentence": "Hugo conduit le bus bien.",
+      "sentence": "Hugo montre la brûlure bien.",
       "parts": [
         {
-          "t": "Hugo conduit "
+          "t": "Hugo montre "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " brûlure bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Brutus trouve la brûlure dans le bus.",
+      "parts": [
+        {
+          "t": "À midi, Brutus trouve "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " brûlure dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " bus."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Luc prend la brûlure, et Luc part plus loin aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Luc prend "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " brûlure, et Luc part plus loin aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Julie termine la bulle bien.",
+      "parts": [
+        {
+          "t": "Julie termine "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " bulle bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le cours, Hugo choisit la bulle plus loin.",
+      "parts": [
+        {
+          "t": "Après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cours, Hugo choisit "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " bulle plus loin."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand Brutus regarde la bulle dans le bus, parce que Julie est plus contente.",
+      "parts": [
+        {
+          "t": "Quand Brutus regarde "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " bulle dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " bus, parce que Julie est plus contente."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Luc travaille dans le bureau.",
+      "parts": [
+        {
+          "t": "Luc travaille dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " bureau."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Luc travaille dans le bureau plus loin.",
+      "parts": [
+        {
+          "t": "À midi, Luc travaille dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " bureau plus loin."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Julie travaille dans le bureau, parce que Julie est plus contente.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Julie travaille dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " bureau, parce que Julie est plus contente."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Brutus prend le bus bien.",
+      "parts": [
+        {
+          "t": "Brutus prend "
         },
         {
           "blank": "le"
@@ -445,10 +868,10 @@
     },
     {
       "level": "a2",
-      "sentence": "À midi, Brutus conduit le bus dans le bus.",
+      "sentence": "Ce soir, Julie monte dans le bus dans le bus.",
       "parts": [
         {
-          "t": "À midi, Brutus conduit "
+          "t": "Ce soir, Julie monte dans "
         },
         {
           "blank": "le"
@@ -466,67 +889,16 @@
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Luc conduit le bus, et Luc part plus loin aussi.",
+      "sentence": "Quand Brutus attend le bus dans le bus, parce que Julie est plus contente.",
       "parts": [
         {
-          "t": "Ce matin, quand Luc conduit "
+          "t": "Quand Brutus attend "
         },
         {
           "blank": "le"
         },
         {
-          "t": " bus, et Luc part plus loin aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Julie observe la lune bien.",
-      "parts": [
-        {
-          "t": "Julie observe "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " lune bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Hugo photographie la lune plus loin.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Hugo photographie "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " lune plus loin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand Brutus regarde la lune dans le bus, parce que Julie est plus contente.",
-      "parts": [
-        {
-          "t": "Quand Brutus regarde "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " lune dans "
+          "t": " bus dans "
         },
         {
           "blank": "le"
@@ -538,22 +910,175 @@
     },
     {
       "level": "a1",
-      "sentence": "Luc peint le mur bien.",
+      "sentence": "Hugo range le chaussures bien.",
       "parts": [
         {
-          "t": "Luc peint "
+          "t": "Hugo range "
         },
         {
           "blank": "le"
         },
         {
-          "t": " mur bien."
+          "t": " chaussures bien."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "Avant le repas, Julie mesure le mur avec Luc.",
+      "sentence": "Ce soir, Brutus oublie le chaussures dans le bus.",
+      "parts": [
+        {
+          "t": "Ce soir, Brutus oublie "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chaussures dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " bus."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Luc cherche le chaussures, et Luc part plus loin aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Luc cherche "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chaussures, et Luc part plus loin aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Julie utilise la coupure bien.",
+      "parts": [
+        {
+          "t": "Julie utilise "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " coupure bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Hugo range la coupure plus loin.",
+      "parts": [
+        {
+          "t": "À midi, Hugo range "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " coupure plus loin."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand Brutus oublie la coupure dans le bus, parce que Julie est plus contente.",
+      "parts": [
+        {
+          "t": "Quand Brutus oublie "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " coupure dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " bus, parce que Julie est plus contente."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Luc prend le cube bien.",
+      "parts": [
+        {
+          "t": "Luc prend "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cube bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le cours, Julie utilise le cube avec Luc.",
+      "parts": [
+        {
+          "t": "Après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cours, Julie utilise "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cube avec Luc."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Hugo range le cube, et Luc part plus loin aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Hugo range "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cube, et Luc part plus loin aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Brutus trouve le curry bien.",
+      "parts": [
+        {
+          "t": "Brutus trouve "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " curry bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le repas, Luc prend le curry sur le mur.",
       "parts": [
         {
           "t": "Avant "
@@ -562,58 +1087,13 @@
           "blank": "le"
         },
         {
-          "t": " repas, Julie mesure "
+          "t": " repas, Luc prend "
         },
         {
           "blank": "le"
         },
         {
-          "t": " mur avec Luc."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Hugo longe le mur, et Luc part plus loin aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Hugo longe "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " mur, et Luc part plus loin aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Brutus prépare le jus bien.",
-      "parts": [
-        {
-          "t": "Brutus prépare "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jus bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Luc boit le jus sur le mur.",
-      "parts": [
-        {
-          "t": "Ce matin, Luc boit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jus sur "
+          "t": " curry sur "
         },
         {
           "blank": "le"
@@ -625,16 +1105,808 @@
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Julie boit le jus, parce que Julie est plus contente.",
+      "sentence": "Ce matin, quand Julie utilise le curry, parce que Julie est plus contente.",
       "parts": [
         {
-          "t": "Ce matin, quand Julie boit "
+          "t": "Ce matin, quand Julie utilise "
         },
         {
           "blank": "le"
         },
         {
-          "t": " jus, parce que Julie est plus contente."
+          "t": " curry, parce que Julie est plus contente."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Hugo peint la fumée bien.",
+      "parts": [
+        {
+          "t": "Hugo peint "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " fumée bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Brutus ferme la fumée dans le bus.",
+      "parts": [
+        {
+          "t": "Ce matin, Brutus ferme "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " fumée dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " bus."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Luc nettoie la fumée, et Luc part plus loin aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Luc nettoie "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " fumée, et Luc part plus loin aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Julie pose la fusée bien.",
+      "parts": [
+        {
+          "t": "Julie pose "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " fusée bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, Hugo montre la fusée plus loin.",
+      "parts": [
+        {
+          "t": "Ce soir, Hugo montre "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " fusée plus loin."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand Brutus trouve la fusée dans le bus, parce que Julie est plus contente.",
+      "parts": [
+        {
+          "t": "Quand Brutus trouve "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " fusée dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " bus, parce que Julie est plus contente."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Luc cherche la gélule bien.",
+      "parts": [
+        {
+          "t": "Luc cherche "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " gélule bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Julie pose la gélule avec Luc.",
+      "parts": [
+        {
+          "t": "À midi, Julie pose "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " gélule avec Luc."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Hugo montre la gélule, et Luc part plus loin aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Hugo montre "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " gélule, et Luc part plus loin aussi."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le cours, Luc cherche un interrupteur sur le mur.",
+      "parts": [
+        {
+          "t": "Après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cours, Luc cherche un interrupteur sur "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " mur."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Hugo enfile la jupe bien.",
+      "parts": [
+        {
+          "t": "Hugo enfile "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " jupe bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le repas, Brutus repasse la jupe dans le bus.",
+      "parts": [
+        {
+          "t": "Avant "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " repas, Brutus repasse "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " jupe dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " bus."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Luc choisit la jupe, et Luc part plus loin aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Luc choisit "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " jupe, et Luc part plus loin aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Julie aime le jus bien.",
+      "parts": [
+        {
+          "t": "Julie aime "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " jus bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Hugo sert le jus plus loin.",
+      "parts": [
+        {
+          "t": "Ce matin, Hugo sert "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " jus plus loin."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand Brutus prépare le jus dans le bus, parce que Julie est plus contente.",
+      "parts": [
+        {
+          "t": "Quand Brutus prépare "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " jus dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " bus, parce que Julie est plus contente."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Luc regarde la lune bien.",
+      "parts": [
+        {
+          "t": "Luc regarde "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " lune bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, Julie admire la lune avec Luc.",
+      "parts": [
+        {
+          "t": "Ce soir, Julie admire "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " lune avec Luc."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Hugo plante la lune, et Luc part plus loin aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Hugo plante "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " lune, et Luc part plus loin aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Brutus termine le lutin bien.",
+      "parts": [
+        {
+          "t": "Brutus termine "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " lutin bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Luc choisit le lutin sur le mur.",
+      "parts": [
+        {
+          "t": "À midi, Luc choisit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " lutin sur "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " mur."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Julie regarde le lutin, parce que Julie est plus contente.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Julie regarde "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " lutin, parce que Julie est plus contente."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Hugo mange le menu bien.",
+      "parts": [
+        {
+          "t": "Hugo mange "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " menu bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le cours, Brutus apporte le menu dans le bus.",
+      "parts": [
+        {
+          "t": "Après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cours, Brutus apporte "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " menu dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " bus."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Luc coupe le menu, et Luc part plus loin aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Luc coupe "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " menu, et Luc part plus loin aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Julie parle avec la minute.",
+      "parts": [
+        {
+          "t": "Julie parle avec "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " minute."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le repas, Hugo choisit la minute plus loin.",
+      "parts": [
+        {
+          "t": "Avant "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " repas, Hugo choisit "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " minute plus loin."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand Brutus aime la minute dans le bus, parce que Julie est plus contente.",
+      "parts": [
+        {
+          "t": "Quand Brutus aime "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " minute dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " bus, parce que Julie est plus contente."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Luc cherche le muffin bien.",
+      "parts": [
+        {
+          "t": "Luc cherche "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " muffin bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Julie pose le muffin avec Luc.",
+      "parts": [
+        {
+          "t": "Ce matin, Julie pose "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " muffin avec Luc."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Hugo montre le muffin, et Luc part plus loin aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Hugo montre "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " muffin, et Luc part plus loin aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Brutus longe le mur bien.",
+      "parts": [
+        {
+          "t": "Brutus longe "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " mur bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, Luc peint le mur sur le mur.",
+      "parts": [
+        {
+          "t": "Ce soir, Luc peint "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " mur sur "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " mur."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Julie mesure le mur, parce que Julie est plus contente.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Julie mesure "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " mur, parce que Julie est plus contente."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Hugo regarde le muscle bien.",
+      "parts": [
+        {
+          "t": "Hugo regarde "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " muscle bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Brutus soigne le muscle dans le bus.",
+      "parts": [
+        {
+          "t": "À midi, Brutus soigne "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " muscle dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " bus."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Luc lave le muscle, et Luc part plus loin aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Luc lave "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " muscle, et Luc part plus loin aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Julie utilise le musclé bien.",
+      "parts": [
+        {
+          "t": "Julie utilise "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " musclé bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le cours, Hugo range le musclé plus loin.",
+      "parts": [
+        {
+          "t": "Après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cours, Hugo range "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " musclé plus loin."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand Brutus oublie le musclé dans le bus, parce que Julie est plus contente.",
+      "parts": [
+        {
+          "t": "Quand Brutus oublie "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " musclé dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " bus, parce que Julie est plus contente."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Luc prend la méduse bien.",
+      "parts": [
+        {
+          "t": "Luc prend "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " méduse bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le repas, Julie utilise la méduse avec Luc.",
+      "parts": [
+        {
+          "t": "Avant "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " repas, Julie utilise "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " méduse avec Luc."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Hugo range la méduse, et Luc part plus loin aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Hugo range "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " méduse, et Luc part plus loin aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Brutus attrape la puce bien.",
+      "parts": [
+        {
+          "t": "Brutus attrape "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " puce bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Luc caresse la puce sur le mur.",
+      "parts": [
+        {
+          "t": "Ce matin, Luc caresse "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " puce sur "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " mur."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Julie voit la puce, parce que Julie est plus contente.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Julie voit "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " puce, parce que Julie est plus contente."
         }
       ]
     },
@@ -676,10 +1948,10 @@
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Luc porte le pull, et Luc part plus loin aussi.",
+      "sentence": "Ce matin, quand Hugo porte le pull, et Luc part plus loin aussi.",
       "parts": [
         {
-          "t": "Ce matin, quand Luc porte "
+          "t": "Ce matin, quand Hugo porte "
         },
         {
           "blank": "le"
@@ -691,46 +1963,46 @@
     },
     {
       "level": "a1",
-      "sentence": "Julie voit la vue bien.",
+      "sentence": "Julie pose la rhume bien.",
       "parts": [
         {
-          "t": "Julie voit "
+          "t": "Julie pose "
         },
         {
           "blank": "la"
         },
         {
-          "t": " vue bien."
+          "t": " rhume bien."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "À midi, Hugo observe la vue plus loin.",
+      "sentence": "À midi, Hugo montre la rhume plus loin.",
       "parts": [
         {
-          "t": "À midi, Hugo observe "
+          "t": "À midi, Hugo montre "
         },
         {
           "blank": "la"
         },
         {
-          "t": " vue plus loin."
+          "t": " rhume plus loin."
         }
       ]
     },
     {
       "level": "b1",
-      "sentence": "Quand Brutus photographie la vue dans le bus, parce que Julie est plus contente.",
+      "sentence": "Quand Brutus trouve la rhume dans le bus, parce que Julie est plus contente.",
       "parts": [
         {
-          "t": "Quand Brutus photographie "
+          "t": "Quand Brutus trouve "
         },
         {
           "blank": "la"
         },
         {
-          "t": " vue dans "
+          "t": " rhume dans "
         },
         {
           "blank": "le"
@@ -742,640 +2014,169 @@
     },
     {
       "level": "a1",
-      "sentence": "Luc choisit le sucre bien.",
-      "parts": [
-        {
-          "t": "Luc choisit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sucre bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Julie goûte le sucre avec Luc.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Julie goûte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sucre avec Luc."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Hugo partage le sucre, et Luc part plus loin aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Hugo partage "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sucre, et Luc part plus loin aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Brutus regarde la bulle bien.",
-      "parts": [
-        {
-          "t": "Brutus regarde "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " bulle bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Luc joue avec la bulle sur le mur.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, Luc joue avec "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " bulle sur "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " mur."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Julie commence la bulle, parce que Julie est plus contente.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Julie commence "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " bulle, parce que Julie est plus contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Hugo prépare le menu bien.",
-      "parts": [
-        {
-          "t": "Hugo prépare "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " menu bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Brutus choisit le menu dans le bus.",
-      "parts": [
-        {
-          "t": "Ce matin, Brutus choisit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " menu dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bus."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Luc goûte le menu, et Luc part plus loin aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Luc goûte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " menu, et Luc part plus loin aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Julie nourrit la puce bien.",
-      "parts": [
-        {
-          "t": "Julie nourrit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " puce bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Hugo observe la puce plus loin.",
-      "parts": [
-        {
-          "t": "Ce soir, Hugo observe "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " puce plus loin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand Brutus attrape la puce dans le bus, parce que Julie est plus contente.",
-      "parts": [
-        {
-          "t": "Quand Brutus attrape "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " puce dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bus, parce que Julie est plus contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Luc cherche le cube bien.",
-      "parts": [
-        {
-          "t": "Luc cherche "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cube bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Julie pose le cube avec Luc.",
-      "parts": [
-        {
-          "t": "À midi, Julie pose "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cube avec Luc."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Hugo montre le cube, et Luc part plus loin aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Hugo montre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cube, et Luc part plus loin aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Brutus photographie la tulipe bien.",
-      "parts": [
-        {
-          "t": "Brutus photographie "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " tulipe bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Luc regarde la tulipe sur le mur.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Luc regarde "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " tulipe sur "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " mur."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Julie admire la tulipe, parce que Julie est plus contente.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Julie admire "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " tulipe, parce que Julie est plus contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Hugo travaille dans le bureau.",
-      "parts": [
-        {
-          "t": "Hugo travaille dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bureau."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Brutus travaille dans le bureau dans le bus.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, Brutus travaille dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bureau dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bus."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Luc travaille dans le bureau, et Luc part plus loin aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Luc travaille dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bureau, et Luc part plus loin aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Julie quitte la fumée bien.",
-      "parts": [
-        {
-          "t": "Julie quitte "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " fumée bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Hugo ouvre la fumée plus loin.",
-      "parts": [
-        {
-          "t": "Ce matin, Hugo ouvre "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " fumée plus loin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand Brutus bricole la fumée dans le bus, parce que Julie est plus contente.",
-      "parts": [
-        {
-          "t": "Quand Brutus bricole "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " fumée dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bus, parce que Julie est plus contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Luc prend la fusée bien.",
-      "parts": [
-        {
-          "t": "Luc prend "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " fusée bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Julie utilise la fusée avec Luc.",
-      "parts": [
-        {
-          "t": "Ce soir, Julie utilise "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " fusée avec Luc."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Hugo range la fusée, et Luc part plus loin aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Hugo range "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " fusée, et Luc part plus loin aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Brutus note la minute bien.",
-      "parts": [
-        {
-          "t": "Brutus note "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " minute bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Luc attend la minute sur le mur.",
-      "parts": [
-        {
-          "t": "À midi, Luc attend "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " minute sur "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " mur."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Julie parle avec la minute, parce que Julie est plus contente.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Julie parle avec "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " minute, parce que Julie est plus contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Hugo lave le muscle bien.",
-      "parts": [
-        {
-          "t": "Hugo lave "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " muscle bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Brutus essuie le muscle dans le bus.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Brutus essuie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " muscle dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bus."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Luc touche le muscle, et Luc part plus loin aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Luc touche "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " muscle, et Luc part plus loin aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Julie admire la brume bien.",
-      "parts": [
-        {
-          "t": "Julie admire "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " brume bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Hugo plante la brume plus loin.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, Hugo plante "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " brume plus loin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand Brutus dessine la brume dans le bus, parce que Julie est plus contente.",
-      "parts": [
-        {
-          "t": "Quand Brutus dessine "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " brume dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bus, parce que Julie est plus contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Luc traverse la statue bien.",
+      "sentence": "Luc traverse la rue bien.",
       "parts": [
         {
           "t": "Luc traverse "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " rue bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le cours, Julie descend la rue avec Luc.",
+      "parts": [
+        {
+          "t": "Après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cours, Julie descend "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " rue avec Luc."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Luc traverse la rue, et Luc part plus loin aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Luc traverse "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " rue, et Luc part plus loin aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Brutus oublie la russe bien.",
+      "parts": [
+        {
+          "t": "Brutus oublie "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " russe bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le repas, Luc cherche la russe sur le mur.",
+      "parts": [
+        {
+          "t": "Avant "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " repas, Luc cherche "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " russe sur "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " mur."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Julie pose la russe, parce que Julie est plus contente.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Julie pose "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " russe, parce que Julie est plus contente."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Hugo range la serrure bien.",
+      "parts": [
+        {
+          "t": "Hugo range "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " serrure bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Brutus oublie la serrure dans le bus.",
+      "parts": [
+        {
+          "t": "Ce matin, Brutus oublie "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " serrure dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " bus."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Luc cherche la serrure, et Luc part plus loin aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Luc cherche "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " serrure, et Luc part plus loin aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Julie quitte la statue bien.",
+      "parts": [
+        {
+          "t": "Julie quitte "
         },
         {
           "blank": "la"
@@ -1387,61 +2188,118 @@
     },
     {
       "level": "a2",
-      "sentence": "Ce matin, Julie cherche la statue avec Luc.",
+      "sentence": "Ce soir, Hugo traverse la statue plus loin.",
       "parts": [
         {
-          "t": "Ce matin, Julie cherche "
+          "t": "Ce soir, Hugo traverse "
         },
         {
           "blank": "la"
         },
         {
-          "t": " statue avec Luc."
+          "t": " statue plus loin."
         }
       ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Hugo longe la statue, et Luc part plus loin aussi.",
+      "sentence": "Quand Brutus cherche la statue dans le bus, parce que Julie est plus contente.",
       "parts": [
         {
-          "t": "Ce matin, quand Hugo longe "
+          "t": "Quand Brutus cherche "
         },
         {
           "blank": "la"
         },
         {
-          "t": " statue, et Luc part plus loin aussi."
+          "t": " statue dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " bus, parce que Julie est plus contente."
         }
       ]
     },
     {
       "level": "a1",
-      "sentence": "Brutus aime le lutin bien.",
+      "sentence": "Luc coupe le sucre bien.",
       "parts": [
         {
-          "t": "Brutus aime "
+          "t": "Luc coupe "
         },
         {
           "blank": "le"
         },
         {
-          "t": " lutin bien."
+          "t": " sucre bien."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "Ce soir, Luc termine le lutin sur le mur.",
+      "sentence": "À midi, Julie achète le sucre avec Luc.",
       "parts": [
         {
-          "t": "Ce soir, Luc termine "
+          "t": "À midi, Julie achète "
         },
         {
           "blank": "le"
         },
         {
-          "t": " lutin sur "
+          "t": " sucre avec Luc."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Hugo prépare le sucre, et Luc part plus loin aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Hugo prépare "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " sucre, et Luc part plus loin aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Brutus trouve le sud bien.",
+      "parts": [
+        {
+          "t": "Brutus trouve "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " sud bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le cours, Luc prend le sud sur le mur.",
+      "parts": [
+        {
+          "t": "Après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cours, Luc prend "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " sud sur "
         },
         {
           "blank": "le"
@@ -1453,82 +2311,37 @@
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Julie choisit le lutin, parce que Julie est plus contente.",
+      "sentence": "Ce matin, quand Julie utilise le sud, parce que Julie est plus contente.",
       "parts": [
         {
-          "t": "Ce matin, quand Julie choisit "
+          "t": "Ce matin, quand Julie utilise "
         },
         {
           "blank": "le"
         },
         {
-          "t": " lutin, parce que Julie est plus contente."
+          "t": " sud, parce que Julie est plus contente."
         }
       ]
     },
     {
       "level": "a1",
-      "sentence": "Brutus descend la rue bien.",
+      "sentence": "Hugo photographie la tulipe bien.",
       "parts": [
         {
-          "t": "Brutus descend "
+          "t": "Hugo photographie "
         },
         {
           "blank": "la"
         },
         {
-          "t": " rue bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Luc choisit la jupe bien.",
-      "parts": [
-        {
-          "t": "Luc choisit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " jupe bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Brutus prend le bus bien.",
-      "parts": [
-        {
-          "t": "Brutus prend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bus bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Luc voit la lune bien.",
-      "parts": [
-        {
-          "t": "Luc voit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " lune bien."
+          "t": " tulipe bien."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "Avant le repas, Luc mange le menu sur le mur.",
+      "sentence": "Avant le repas, Brutus regarde la tulipe dans le bus.",
       "parts": [
         {
           "t": "Avant "
@@ -1537,46 +2350,151 @@
           "blank": "le"
         },
         {
-          "t": " repas, Luc mange "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " menu sur "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " mur."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Brutus nourrit la puce avec Luc.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, Brutus nourrit "
+          "t": " repas, Brutus regarde "
         },
         {
           "blank": "la"
         },
         {
-          "t": " puce avec Luc."
+          "t": " tulipe dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " bus."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Luc admire la tulipe, et Luc part plus loin aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Luc admire "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " tulipe, et Luc part plus loin aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Julie pose le turc bien.",
+      "parts": [
+        {
+          "t": "Julie pose "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " turc bien."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "À midi, Luc cherche le cube sur le mur.",
+      "sentence": "Ce matin, Hugo montre le turc plus loin.",
+      "parts": [
+        {
+          "t": "Ce matin, Hugo montre "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " turc plus loin."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand Brutus trouve le turc dans le bus, parce que Julie est plus contente.",
+      "parts": [
+        {
+          "t": "Quand Brutus trouve "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " turc dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " bus, parce que Julie est plus contente."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Luc cherche la turquoise bien.",
+      "parts": [
+        {
+          "t": "Luc cherche "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " turquoise bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, Julie pose la turquoise avec Luc.",
+      "parts": [
+        {
+          "t": "Ce soir, Julie pose "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " turquoise avec Luc."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Hugo montre la turquoise, et Luc part plus loin aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Hugo montre "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " turquoise, et Luc part plus loin aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Brutus oublie le tuyau bien.",
+      "parts": [
+        {
+          "t": "Brutus oublie "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " tuyau bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Luc cherche le tuyau sur le mur.",
       "parts": [
         {
           "t": "À midi, Luc cherche "
@@ -1585,7 +2503,7 @@
           "blank": "le"
         },
         {
-          "t": " cube sur "
+          "t": " tuyau sur "
         },
         {
           "blank": "le"
@@ -1596,131 +2514,26 @@
       ]
     },
     {
-      "level": "a2",
-      "sentence": "Ce soir, Hugo plante la tulipe plus loin.",
-      "parts": [
-        {
-          "t": "Ce soir, Hugo plante "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " tulipe plus loin."
-        }
-      ]
-    },
-    {
       "level": "b1",
-      "sentence": "Ce matin, quand Hugo cherche la statue, et Luc part plus loin aussi.",
+      "sentence": "Ce matin, quand Julie pose le tuyau, parce que Julie est plus contente.",
       "parts": [
         {
-          "t": "Ce matin, quand Hugo cherche "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " statue, et Luc part plus loin aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Luc regarde le lutin, et Luc part plus loin aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Luc regarde "
+          "t": "Ce matin, quand Julie pose "
         },
         {
           "blank": "le"
         },
         {
-          "t": " lutin, et Luc part plus loin aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand Brutus descend la rue avec Luc, parce que Julie est plus contente.",
-      "parts": [
-        {
-          "t": "Quand Brutus descend "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " rue avec Luc, parce que Julie est plus contente."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Luc choisit la jupe, et Luc part plus loin aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Luc choisit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " jupe, et Luc part plus loin aussi."
+          "t": " tuyau, parce que Julie est plus contente."
         }
       ]
     },
     {
       "level": "a1",
-      "sentence": "Hugo mesure le mur bien.",
+      "sentence": "Hugo observe la vue bien.",
       "parts": [
         {
-          "t": "Hugo mesure "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " mur bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Luc boit le jus bien.",
-      "parts": [
-        {
-          "t": "Luc boit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jus bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Brutus enfile le pull bien.",
-      "parts": [
-        {
-          "t": "Brutus enfile "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pull bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Julie photographie la vue bien.",
-      "parts": [
-        {
-          "t": "Julie photographie "
+          "t": "Hugo observe "
         },
         {
           "blank": "la"
@@ -1731,17 +2544,119 @@
       ]
     },
     {
-      "level": "a1",
-      "sentence": "Hugo mange le sucre bien.",
+      "level": "a2",
+      "sentence": "Après le cours, Brutus photographie la vue dans le bus.",
       "parts": [
         {
-          "t": "Hugo mange "
+          "t": "Après "
         },
         {
           "blank": "le"
         },
         {
-          "t": " sucre bien."
+          "t": " cours, Brutus photographie "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " vue dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " bus."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Luc regarde la vue, et Luc part plus loin aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Luc regarde "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " vue, et Luc part plus loin aussi."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le repas, Hugo range un éplucher plus loin.",
+      "parts": [
+        {
+          "t": "Avant "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " repas, Hugo range un éplucher plus loin."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand Brutus oublie un éplucher dans le bus, parce que Julie est plus contente.",
+      "parts": [
+        {
+          "t": "Quand Brutus oublie un éplucher dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " bus, parce que Julie est plus contente."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Hugo montre la blessure bien.",
+      "parts": [
+        {
+          "t": "Hugo montre "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " blessure bien."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Julie photographie la brume bien.",
+      "parts": [
+        {
+          "t": "Julie photographie "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " brume bien."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Hugo range la brûlure bien.",
+      "parts": [
+        {
+          "t": "Hugo range "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " brûlure bien."
         }
       ]
     },
@@ -1762,52 +2677,25 @@
     },
     {
       "level": "a2",
-      "sentence": "À midi, Hugo travaille dans le bureau plus loin.",
+      "sentence": "À midi, Brutus range la fumée avec Luc.",
       "parts": [
         {
-          "t": "À midi, Hugo travaille dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bureau plus loin."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Hugo peint la fumée plus loin.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, Hugo peint "
+          "t": "À midi, Brutus range "
         },
         {
           "blank": "la"
         },
         {
-          "t": " fumée plus loin."
+          "t": " fumée avec Luc."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "Après le cours, Luc cherche la fusée sur le mur.",
+      "sentence": "Ce matin, Luc cherche la fusée sur le mur.",
       "parts": [
         {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Luc cherche "
+          "t": "Ce matin, Luc cherche "
         },
         {
           "blank": "la"
@@ -1825,31 +2713,193 @@
     },
     {
       "level": "a2",
-      "sentence": "À midi, Hugo prépare la minute plus loin.",
+      "sentence": "Après le cours, Julie oublie la gélule dans le bus.",
       "parts": [
         {
-          "t": "À midi, Hugo prépare "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " minute plus loin."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Luc touche le muscle sur le mur.",
-      "parts": [
-        {
-          "t": "Ce soir, Luc touche "
+          "t": "Après "
         },
         {
           "blank": "le"
         },
         {
-          "t": " muscle sur "
+          "t": " cours, Julie oublie "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " gélule dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " bus."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Hugo range le muffin, et Luc part plus loin aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Hugo range "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " muffin, et Luc part plus loin aussi."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Julie longe le mur, parce que Julie est plus contente.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Julie longe "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " mur, parce que Julie est plus contente."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand Brutus essuie le muscle avec Luc, parce que Julie est plus contente.",
+      "parts": [
+        {
+          "t": "Quand Brutus essuie "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " muscle avec Luc, parce que Julie est plus contente."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Luc cherche le musclé, et Luc part plus loin aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Luc cherche "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " musclé, et Luc part plus loin aussi."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Julie travaille dans le bureau.",
+      "parts": [
+        {
+          "t": "Julie travaille dans "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " bureau."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Luc se dépêche pour le bus.",
+      "parts": [
+        {
+          "t": "Luc se dépêche pour "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " bus."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Brutus utilise le chaussures bien.",
+      "parts": [
+        {
+          "t": "Brutus utilise "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chaussures bien."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Luc prend la coupure bien.",
+      "parts": [
+        {
+          "t": "Luc prend "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " coupure bien."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Hugo montre le cube bien.",
+      "parts": [
+        {
+          "t": "Hugo montre "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cube bien."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Luc cherche le curry bien.",
+      "parts": [
+        {
+          "t": "Luc cherche "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " curry bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Luc porte la jupe sur le mur.",
+      "parts": [
+        {
+          "t": "Ce matin, Luc porte "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " jupe sur "
         },
         {
           "blank": "le"
@@ -1861,106 +2911,190 @@
     },
     {
       "level": "a2",
-      "sentence": "Ce soir, Brutus voit la brume avec Luc.",
+      "sentence": "Avant le repas, Hugo achète le jus plus loin.",
       "parts": [
         {
-          "t": "Ce soir, Brutus voit "
+          "t": "Avant "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " repas, Hugo achète "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " jus plus loin."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le repas, Julie voit la lune dans le bus.",
+      "parts": [
+        {
+          "t": "Avant "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " repas, Julie voit "
         },
         {
           "blank": "la"
         },
         {
-          "t": " brume avec Luc."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Hugo prend le bus, et Luc part plus loin aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Hugo prend "
+          "t": " lune dans "
         },
         {
           "blank": "le"
         },
         {
-          "t": " bus, et Luc part plus loin aussi."
+          "t": " bus."
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "Ce matin, quand Julie plante la lune, parce que Julie est plus contente.",
+      "level": "a2",
+      "sentence": "À midi, Hugo commence le lutin plus loin.",
       "parts": [
         {
-          "t": "Ce matin, quand Julie plante "
+          "t": "À midi, Hugo commence "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " lutin plus loin."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, Luc sert le menu sur le mur.",
+      "parts": [
+        {
+          "t": "Ce soir, Luc sert "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " menu sur "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " mur."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Hugo attend la minute plus loin.",
+      "parts": [
+        {
+          "t": "Ce matin, Hugo attend "
         },
         {
           "blank": "la"
         },
         {
-          "t": " lune, parce que Julie est plus contente."
+          "t": " minute plus loin."
         }
       ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Hugo mesure le mur, et Luc part plus loin aussi.",
+      "sentence": "Ce matin, quand Julie trouve la méduse, parce que Julie est plus contente.",
       "parts": [
         {
-          "t": "Ce matin, quand Hugo mesure "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " mur, et Luc part plus loin aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Julie aime le jus, parce que Julie est plus contente.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Julie aime "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jus, parce que Julie est plus contente."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand Brutus enfile le pull avec Luc, parce que Julie est plus contente.",
-      "parts": [
-        {
-          "t": "Quand Brutus enfile "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pull avec Luc, parce que Julie est plus contente."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Luc regarde la vue, et Luc part plus loin aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Luc regarde "
+          "t": "Ce matin, quand Julie trouve "
         },
         {
           "blank": "la"
         },
         {
-          "t": " vue, et Luc part plus loin aussi."
+          "t": " méduse, parce que Julie est plus contente."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Hugo observe la puce, et Luc part plus loin aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Hugo observe "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " puce, et Luc part plus loin aussi."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Luc porte le pull, et Luc part plus loin aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Luc porte "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " pull, et Luc part plus loin aussi."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Luc cherche la rhume, et Luc part plus loin aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Luc cherche "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " rhume, et Luc part plus loin aussi."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce soir, quand Luc traverse la rue, et Luc part plus loin aussi.",
+      "parts": [
+        {
+          "t": "Ce soir, quand Luc traverse "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " rue, et Luc part plus loin aussi."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Luc prend la russe, et Luc part plus loin aussi.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Luc prend "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " russe, et Luc part plus loin aussi."
         }
       ]
     }
@@ -1968,73 +3102,15 @@
   "type12": [
     {
       "level": "a1",
-      "sentence": "Brutus descend la rue bien."
+      "sentence": "Hugo montre la blessure bien."
     },
     {
       "level": "a1",
-      "sentence": "Luc choisit la jupe bien."
+      "sentence": "Julie photographie la brume bien."
     },
     {
       "level": "a1",
-      "sentence": "Brutus prend le bus bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "Luc voit la lune bien."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Luc mange le menu sur le mur."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Brutus nourrit la puce avec Luc."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Luc cherche le cube sur le mur."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Hugo plante la tulipe plus loin."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Hugo cherche la statue, et Luc part plus loin aussi."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Luc regarde le lutin, et Luc part plus loin aussi."
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand Brutus descend la rue avec Luc, parce que Julie est plus contente."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Luc choisit la jupe, et Luc part plus loin aussi."
-    }
-  ],
-  "type14": [
-    {
-      "level": "a1",
-      "sentence": "Hugo mesure le mur bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "Luc boit le jus bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "Brutus enfile le pull bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "Julie photographie la vue bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "Hugo mange le sucre bien."
+      "sentence": "Hugo range la brûlure bien."
     },
     {
       "level": "a1",
@@ -2042,51 +3118,109 @@
     },
     {
       "level": "a2",
-      "sentence": "À midi, Hugo travaille dans le bureau plus loin."
+      "sentence": "À midi, Brutus range la fumée avec Luc."
     },
     {
       "level": "a2",
-      "sentence": "Avant le repas, Hugo peint la fumée plus loin."
+      "sentence": "Ce matin, Luc cherche la fusée sur le mur."
     },
     {
       "level": "a2",
-      "sentence": "Après le cours, Luc cherche la fusée sur le mur."
+      "sentence": "Après le cours, Julie oublie la gélule dans le bus."
     },
     {
       "level": "a2",
-      "sentence": "À midi, Hugo prépare la minute plus loin."
+      "sentence": "Ce soir, Hugo range un interrupteur plus loin."
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Hugo range le muffin, et Luc part plus loin aussi."
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Julie longe le mur, parce que Julie est plus contente."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand Brutus essuie le muscle avec Luc, parce que Julie est plus contente."
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Luc cherche le musclé, et Luc part plus loin aussi."
+    }
+  ],
+  "type14": [
+    {
+      "level": "a1",
+      "sentence": "Julie travaille dans le bureau."
+    },
+    {
+      "level": "a1",
+      "sentence": "Luc se dépêche pour le bus."
+    },
+    {
+      "level": "a1",
+      "sentence": "Brutus utilise le chaussures bien."
+    },
+    {
+      "level": "a1",
+      "sentence": "Luc prend la coupure bien."
+    },
+    {
+      "level": "a1",
+      "sentence": "Hugo montre le cube bien."
+    },
+    {
+      "level": "a1",
+      "sentence": "Luc cherche le curry bien."
     },
     {
       "level": "a2",
-      "sentence": "Ce soir, Luc touche le muscle sur le mur."
+      "sentence": "Ce matin, Luc porte la jupe sur le mur."
     },
     {
       "level": "a2",
-      "sentence": "Ce soir, Brutus voit la brume avec Luc."
+      "sentence": "Avant le repas, Hugo achète le jus plus loin."
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le repas, Julie voit la lune dans le bus."
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Hugo commence le lutin plus loin."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, Luc sert le menu sur le mur."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Hugo attend la minute plus loin."
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Hugo prend le bus, et Luc part plus loin aussi."
+      "sentence": "Ce matin, quand Julie trouve la méduse, parce que Julie est plus contente."
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Julie plante la lune, parce que Julie est plus contente."
+      "sentence": "Ce matin, quand Hugo observe la puce, et Luc part plus loin aussi."
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Hugo mesure le mur, et Luc part plus loin aussi."
+      "sentence": "Ce matin, quand Luc porte le pull, et Luc part plus loin aussi."
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Julie aime le jus, parce que Julie est plus contente."
+      "sentence": "Ce matin, quand Luc cherche la rhume, et Luc part plus loin aussi."
     },
     {
       "level": "b1",
-      "sentence": "Quand Brutus enfile le pull avec Luc, parce que Julie est plus contente."
+      "sentence": "Ce soir, quand Luc traverse la rue, et Luc part plus loin aussi."
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Luc regarde la vue, et Luc part plus loin aussi."
+      "sentence": "Ce matin, quand Luc prend la russe, et Luc part plus loin aussi."
     }
   ]
 }

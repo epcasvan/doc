@@ -1489,7 +1489,15 @@ export const GRAPHEME_WORD_POOLS = {
       "jungle",
       "jupe",
       "jus",
-      "pyjama"
+      "pyjama",
+      "janvier",
+      "jaune",
+      "jeudi",
+      "jour",
+      "joyeux",
+      "juillet",
+      "juin",
+      "jusqu'à",
     ],
     "k": [
       "basketball",
@@ -1516,7 +1524,15 @@ export const GRAPHEME_WORD_POOLS = {
       "teckel",
       "ukulele",
       "wok",
-      "yak"
+      "yak",
+      "cookie",
+      "cupcake",
+      "kilogramme",
+      "kinésithérapeute",
+      "paprika",
+      "parking",
+      "ski",
+      "ukrainien",
     ],
     "w": [
       "clown",
@@ -1565,7 +1581,15 @@ export const GRAPHEME_WORD_POOLS = {
       "vexant",
       "vortex",
       "xylophone",
-      "yeux"
+      "yeux",
+      "bordeaux",
+      "doux",
+      "exposition",
+      "joyeux",
+      "nerveux",
+      "paresseux",
+      "roux",
+      "toux",
     ],
     "z": [
       "azote",
@@ -1597,7 +1621,8 @@ export const GRAPHEME_WORD_POOLS = {
       "zoo",
       "zoologie",
       "zouave",
-      "zut"
+      "zut",
+      "nez",
     ],
     "y": [
       "ayant",
@@ -1645,7 +1670,18 @@ export const GRAPHEME_WORD_POOLS = {
       "yeux",
       "yoga",
       "yoyo",
-      "yucca"
+      "yucca",
+      "curry",
+      "cyan",
+      "cygne",
+      "ferry",
+      "gymnastique",
+      "joyeux",
+      "nylon",
+      "physique",
+      "spray",
+      "syrien",
+      "érythréen",
     ]
   }
 } as const

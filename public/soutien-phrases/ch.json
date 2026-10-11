@@ -2,408 +2,108 @@
   "type9": [
     {
       "level": "a1",
-      "word": "chat",
-      "sentence": "Chloé cherche le chat bien."
-    },
-    {
-      "level": "a2",
-      "word": "chat",
-      "sentence": "Ce matin, Charles voit le chat chez Charles."
-    },
-    {
-      "level": "b1",
-      "word": "chat",
-      "sentence": "À midi, quand Michel caresse le chat chez Charles, et Chloé est chez Charles."
-    },
-    {
-      "level": "a1",
-      "word": "chaise",
-      "sentence": "Richard répare la chaise bien."
-    },
-    {
-      "level": "a2",
-      "word": "chaise",
-      "sentence": "Ce soir, Chloé apporte la chaise avec Charles."
-    },
-    {
-      "level": "b1",
-      "word": "chaise",
-      "sentence": "Ce matin, quand Charles nettoie la chaise, parce que Charles est chez Chloé."
-    },
-    {
-      "level": "a1",
-      "word": "chambre",
-      "sentence": "Michel visite la chambre bien."
-    },
-    {
-      "level": "a2",
-      "word": "chambre",
-      "sentence": "À midi, Richard visite la chambre sur le chemin."
-    },
-    {
-      "level": "b1",
-      "word": "chambre",
-      "sentence": "À midi, quand Chloé visite la chambre avec Charles, et Chloé est chez Charles."
-    },
-    {
-      "level": "a1",
-      "word": "chemise",
-      "sentence": "Charles repasse la chemise bien."
-    },
-    {
-      "level": "a2",
-      "word": "chemise",
-      "sentence": "Après le cours, Michel porte la chemise chez Charles."
-    },
-    {
-      "level": "b1",
-      "word": "chemise",
-      "sentence": "Quand Richard repasse la chemise sur le chemin, parce que Charles est chez Chloé."
-    },
-    {
-      "level": "a1",
-      "word": "cheval",
-      "sentence": "Chloé regarde le cheval bien."
-    },
-    {
-      "level": "a2",
-      "word": "cheval",
-      "sentence": "Avant le repas, Charles nourrit le cheval chez Charles."
-    },
-    {
-      "level": "b1",
-      "word": "cheval",
-      "sentence": "À midi, quand Michel observe le cheval chez Charles, et Chloé est chez Charles."
-    },
-    {
-      "level": "a1",
-      "word": "chaussure",
-      "sentence": "Richard repasse la chaussure bien."
-    },
-    {
-      "level": "a2",
-      "word": "chaussure",
-      "sentence": "Ce matin, Chloé choisit la chaussure avec Charles."
-    },
-    {
-      "level": "b1",
-      "word": "chaussure",
-      "sentence": "Ce matin, quand Charles met la chaussure, parce que Charles est chez Chloé."
-    },
-    {
-      "level": "a1",
-      "word": "chocolat",
-      "sentence": "Michel sert le chocolat bien."
-    },
-    {
-      "level": "a2",
-      "word": "chocolat",
-      "sentence": "Ce soir, Richard boit le chocolat sur le chemin."
-    },
-    {
-      "level": "b1",
-      "word": "chocolat",
-      "sentence": "À midi, quand Chloé achète le chocolat avec Charles, et Chloé est chez Charles."
-    },
-    {
-      "level": "a1",
-      "word": "douche",
-      "sentence": "Charles quitte la douche bien."
-    },
-    {
-      "level": "a2",
-      "word": "douche",
-      "sentence": "À midi, Michel ouvre la douche chez Charles."
-    },
-    {
-      "level": "b1",
-      "word": "douche",
-      "sentence": "Quand Richard bricole la douche sur le chemin, parce que Charles est chez Chloé."
-    },
-    {
-      "level": "a1",
-      "word": "vache",
-      "sentence": "Chloé caresse la vache bien."
-    },
-    {
-      "level": "a2",
-      "word": "vache",
-      "sentence": "Après le cours, Charles voit la vache chez Charles."
-    },
-    {
-      "level": "b1",
-      "word": "vache",
-      "sentence": "À midi, quand Michel soigne la vache chez Charles, et Chloé est chez Charles."
-    },
-    {
-      "level": "a1",
-      "word": "cochon",
-      "sentence": "Richard attrape le cochon bien."
-    },
-    {
-      "level": "a2",
-      "word": "cochon",
-      "sentence": "Avant le repas, Chloé caresse le cochon avec Charles."
-    },
-    {
-      "level": "b1",
-      "word": "cochon",
-      "sentence": "Ce matin, quand Charles voit le cochon, parce que Charles est chez Chloé."
-    },
-    {
-      "level": "a1",
-      "word": "chapeau",
-      "sentence": "Michel porte le chapeau bien."
-    },
-    {
-      "level": "a2",
-      "word": "chapeau",
-      "sentence": "Ce matin, Richard met le chapeau sur le chemin."
-    },
-    {
-      "level": "b1",
-      "word": "chapeau",
-      "sentence": "À midi, quand Chloé porte le chapeau avec Charles, et Chloé est chez Charles."
-    },
-    {
-      "level": "a1",
-      "word": "chien",
-      "sentence": "Charles caresse le chien bien."
-    },
-    {
-      "level": "a2",
-      "word": "chien",
-      "sentence": "Ce soir, Michel a le chien chez Charles."
-    },
-    {
-      "level": "b1",
-      "word": "chien",
-      "sentence": "Quand Richard s’occupe le chien sur le chemin, parce que Charles est chez Chloé."
-    },
-    {
-      "level": "a1",
-      "word": "chou",
-      "sentence": "Chloé achète le chou bien."
-    },
-    {
-      "level": "a2",
-      "word": "chou",
-      "sentence": "À midi, Charles prépare le chou chez Charles."
-    },
-    {
-      "level": "b1",
-      "word": "chou",
-      "sentence": "À midi, quand Michel choisit le chou chez Charles, et Chloé est chez Charles."
-    },
-    {
-      "level": "a1",
-      "word": "poche",
-      "sentence": "Richard repasse la poche bien."
-    },
-    {
-      "level": "a2",
-      "word": "poche",
-      "sentence": "Après le cours, Chloé choisit la poche avec Charles."
-    },
-    {
-      "level": "b1",
-      "word": "poche",
-      "sentence": "Ce matin, quand Charles met la poche, parce que Charles est chez Chloé."
-    },
-    {
-      "level": "a1",
       "word": "bouche",
-      "sentence": "Michel lave la bouche bien."
+      "sentence": "Chloé lave la bouche bien."
     },
     {
       "level": "a2",
       "word": "bouche",
-      "sentence": "Avant le repas, Richard lave la bouche sur le chemin."
+      "sentence": "Après le cours, Chloé lave la bouche chez Charles."
     },
     {
       "level": "b1",
       "word": "bouche",
-      "sentence": "À midi, quand Chloé lave la bouche avec Charles, et Chloé est chez Charles."
-    },
-    {
-      "level": "a1",
-      "word": "marché",
-      "sentence": "Charles voit le marché bien."
-    },
-    {
-      "level": "a2",
-      "word": "marché",
-      "sentence": "Ce matin, Michel trouve le marché chez Charles."
-    },
-    {
-      "level": "b1",
-      "word": "marché",
-      "sentence": "Quand Richard visite le marché sur le chemin, parce que Charles est chez Chloé."
-    },
-    {
-      "level": "a1",
-      "word": "dimanche",
-      "sentence": "Chloé prépare le dimanche bien."
-    },
-    {
-      "level": "a2",
-      "word": "dimanche",
-      "sentence": "Ce soir, Charles note le dimanche chez Charles."
-    },
-    {
-      "level": "b1",
-      "word": "dimanche",
-      "sentence": "À midi, quand Michel attend le dimanche chez Charles, et Chloé est chez Charles."
-    },
-    {
-      "level": "a1",
-      "word": "machine",
-      "sentence": "Richard ferme la machine bien."
-    },
-    {
-      "level": "a2",
-      "word": "machine",
-      "sentence": "À midi, Chloé nettoie la machine avec Charles."
-    },
-    {
-      "level": "b1",
-      "word": "machine",
-      "sentence": "Ce matin, quand Charles quitte la machine, parce que Charles est chez Chloé."
-    },
-    {
-      "level": "a1",
-      "word": "planche",
-      "sentence": "Michel montre la planche bien."
-    },
-    {
-      "level": "a2",
-      "word": "planche",
-      "sentence": "Après le cours, Richard trouve la planche sur le chemin."
-    },
-    {
-      "level": "b1",
-      "word": "planche",
-      "sentence": "À midi, quand Chloé prend la planche avec Charles, et Chloé est chez Charles."
+      "sentence": "Ce matin, quand Charles lave la bouche, parce que Charles est chez Chloé."
     },
     {
       "level": "a1",
       "word": "branche",
-      "sentence": "Charles admire la branche bien."
+      "sentence": "Richard plante la branche bien."
     },
     {
       "level": "a2",
       "word": "branche",
-      "sentence": "Avant le repas, Michel plante la branche chez Charles."
+      "sentence": "Ce soir, Chloé dessine la branche avec Charles."
     },
     {
       "level": "b1",
       "word": "branche",
-      "sentence": "Quand Richard dessine la branche sur le chemin, parce que Charles est chez Chloé."
-    },
-    {
-      "level": "a1",
-      "word": "écharpe",
-      "sentence": "Chloé porte une écharpe bien."
-    },
-    {
-      "level": "a2",
-      "word": "écharpe",
-      "sentence": "Ce matin, Charles met une écharpe chez Charles."
-    },
-    {
-      "level": "b1",
-      "word": "écharpe",
-      "sentence": "À midi, quand Michel porte une écharpe chez Charles, et Chloé est chez Charles."
-    },
-    {
-      "level": "a1",
-      "word": "mouchoir",
-      "sentence": "Richard oublie le mouchoir bien."
-    },
-    {
-      "level": "a2",
-      "word": "mouchoir",
-      "sentence": "Ce soir, Chloé cherche le mouchoir avec Charles."
-    },
-    {
-      "level": "b1",
-      "word": "mouchoir",
-      "sentence": "Ce matin, quand Charles pose le mouchoir, parce que Charles est chez Chloé."
-    },
-    {
-      "level": "a1",
-      "word": "torchon",
-      "sentence": "Michel ouvre le torchon bien."
-    },
-    {
-      "level": "a2",
-      "word": "torchon",
-      "sentence": "À midi, Richard bricole le torchon sur le chemin."
-    },
-    {
-      "level": "b1",
-      "word": "torchon",
-      "sentence": "À midi, quand Chloé visite le torchon avec Charles, et Chloé est chez Charles."
+      "sentence": "Ce matin, quand Charles voit la branche, parce que Charles est chez Chloé."
     },
     {
       "level": "a1",
       "word": "bûche",
-      "sentence": "Charles quitte la bûche bien."
+      "sentence": "Michel peint la bûche bien."
     },
     {
       "level": "a2",
       "word": "bûche",
-      "sentence": "Après le cours, Michel ouvre la bûche chez Charles."
+      "sentence": "À midi, Richard ferme la bûche sur le chemin."
     },
     {
       "level": "b1",
       "word": "bûche",
-      "sentence": "Quand Richard bricole la bûche sur le chemin, parce que Charles est chez Chloé."
+      "sentence": "À midi, quand Chloé nettoie la bûche avec Charles, et Chloé est chez Charles."
     },
     {
       "level": "a1",
-      "word": "chêne",
-      "sentence": "Chloé observe le chêne bien."
+      "word": "chaise",
+      "sentence": "Charles nettoie la chaise bien."
     },
     {
       "level": "a2",
-      "word": "chêne",
-      "sentence": "Avant le repas, Charles photographie le chêne chez Charles."
+      "word": "chaise",
+      "sentence": "Après le cours, Michel pousse la chaise chez Charles."
     },
     {
       "level": "b1",
-      "word": "chêne",
-      "sentence": "À midi, quand Michel regarde le chêne chez Charles, et Chloé est chez Charles."
+      "word": "chaise",
+      "sentence": "Quand Richard répare la chaise sur le chemin, parce que Charles est chez Chloé."
     },
     {
       "level": "a1",
-      "word": "chemin",
-      "sentence": "Richard suit le chemin bien."
+      "word": "chalet",
+      "sentence": "Chloé visite le chalet bien."
     },
     {
       "level": "a2",
-      "word": "chemin",
-      "sentence": "Ce matin, Chloé connaît le chemin avec Charles."
+      "word": "chalet",
+      "sentence": "Avant le repas, Charles range le chalet chez Charles."
     },
     {
       "level": "b1",
-      "word": "chemin",
-      "sentence": "Ce matin, quand Charles suit le chemin, parce que Charles est chez Chloé."
+      "word": "chalet",
+      "sentence": "À midi, quand Michel peint le chalet chez Charles, et Chloé est chez Charles."
+    },
+    {
+      "level": "a1",
+      "word": "chambre",
+      "sentence": "Richard nettoie la chambre bien."
+    },
+    {
+      "level": "a2",
+      "word": "chambre",
+      "sentence": "Ce soir, Charles étudie dans la chambre sur le chemin."
+    },
+    {
+      "level": "b1",
+      "word": "chambre",
+      "sentence": "Quand Richard range la chambre sur le chemin, parce que Charles est chez Chloé."
     },
     {
       "level": "a1",
       "word": "champ",
-      "sentence": "Michel admire le champ bien."
+      "sentence": "Michel photographie le champ bien."
     },
     {
       "level": "a2",
       "word": "champ",
-      "sentence": "Ce soir, Richard plante le champ sur le chemin."
+      "sentence": "Ce soir, Richard regarde le champ sur le chemin."
     },
     {
       "level": "b1",
       "word": "champ",
-      "sentence": "À midi, quand Chloé dessine le champ avec Charles, et Chloé est chez Charles."
+      "sentence": "À midi, quand Chloé admire le champ avec Charles, et Chloé est chez Charles."
     },
     {
       "level": "a1",
@@ -422,72 +122,489 @@
     },
     {
       "level": "a1",
-      "word": "chalet",
-      "sentence": "Chloé visite le chalet bien."
+      "word": "chapeau",
+      "sentence": "Chloé porte le chapeau bien."
     },
     {
       "level": "a2",
-      "word": "chalet",
-      "sentence": "Après le cours, Charles range le chalet chez Charles."
+      "word": "chapeau",
+      "sentence": "Après le cours, Charles met le chapeau chez Charles."
     },
     {
       "level": "b1",
-      "word": "chalet",
-      "sentence": "À midi, quand Michel peint le chalet chez Charles, et Chloé est chez Charles."
+      "word": "chapeau",
+      "sentence": "À midi, quand Chloé porte le chapeau avec Charles, et Chloé est chez Charles."
+    },
+    {
+      "level": "a1",
+      "word": "chat",
+      "sentence": "Richard attrape le chat bien."
+    },
+    {
+      "level": "a2",
+      "word": "chat",
+      "sentence": "Avant le repas, Chloé s’approche du chat avec Charles."
+    },
+    {
+      "level": "b1",
+      "word": "chat",
+      "sentence": "Ce matin, quand Charles sauve le chat, parce que Charles est chez Chloé."
+    },
+    {
+      "level": "a1",
+      "word": "chaud",
+      "sentence": "Michel montre le chaud bien."
+    },
+    {
+      "level": "a2",
+      "word": "chaud",
+      "sentence": "Ce matin, Richard trouve le chaud sur le chemin."
+    },
+    {
+      "level": "b1",
+      "word": "chaud",
+      "sentence": "À midi, quand Chloé prend le chaud avec Charles, et Chloé est chez Charles."
+    },
+    {
+      "level": "a1",
+      "word": "chaussure",
+      "sentence": "Charles met la chaussure bien."
+    },
+    {
+      "level": "a2",
+      "word": "chaussure",
+      "sentence": "Ce soir, Michel achète la chaussure chez Charles."
+    },
+    {
+      "level": "b1",
+      "word": "chaussure",
+      "sentence": "Quand Richard lave la chaussure sur le chemin, parce que Charles est chez Chloé."
+    },
+    {
+      "level": "a1",
+      "word": "chemin",
+      "sentence": "Chloé montre le chemin bien."
+    },
+    {
+      "level": "a2",
+      "word": "chemin",
+      "sentence": "À midi, Charles suit le chemin chez Charles."
+    },
+    {
+      "level": "b1",
+      "word": "chemin",
+      "sentence": "À midi, quand Michel connaît le chemin chez Charles, et Chloé est chez Charles."
+    },
+    {
+      "level": "a1",
+      "word": "chemise",
+      "sentence": "Richard repasse la chemise bien."
+    },
+    {
+      "level": "a2",
+      "word": "chemise",
+      "sentence": "Après le cours, Chloé porte la chemise avec Charles."
+    },
+    {
+      "level": "b1",
+      "word": "chemise",
+      "sentence": "Quand Richard repasse la chemise sur le chemin, parce que Charles est chez Chloé."
+    },
+    {
+      "level": "a1",
+      "word": "cheval",
+      "sentence": "Michel soigne le cheval bien."
+    },
+    {
+      "level": "a2",
+      "word": "cheval",
+      "sentence": "Avant le repas, Richard sauve le cheval sur le chemin."
+    },
+    {
+      "level": "b1",
+      "word": "cheval",
+      "sentence": "À midi, quand Chloé regarde le cheval avec Charles, et Chloé est chez Charles."
+    },
+    {
+      "level": "a1",
+      "word": "chien",
+      "sentence": "Charles tient le chien bien."
+    },
+    {
+      "level": "a2",
+      "word": "chien",
+      "sentence": "Ce matin, Michel soigne le chien chez Charles."
+    },
+    {
+      "level": "b1",
+      "word": "chien",
+      "sentence": "Quand Richard caresse le chien sur le chemin, parce que Charles est chez Chloé."
+    },
+    {
+      "level": "a1",
+      "word": "chocolat",
+      "sentence": "Chloé boit le chocolat bien."
+    },
+    {
+      "level": "a2",
+      "word": "chocolat",
+      "sentence": "Ce soir, Charles achète le chocolat chez Charles."
+    },
+    {
+      "level": "b1",
+      "word": "chocolat",
+      "sentence": "À midi, quand Michel sert le chocolat chez Charles, et Chloé est chez Charles."
+    },
+    {
+      "level": "a1",
+      "word": "chou",
+      "sentence": "Richard choisit le chou bien."
+    },
+    {
+      "level": "a2",
+      "word": "chou",
+      "sentence": "À midi, Chloé goûte le chou avec Charles."
+    },
+    {
+      "level": "b1",
+      "word": "chou",
+      "sentence": "Ce matin, quand Charles partage le chou, parce que Charles est chez Chloé."
+    },
+    {
+      "level": "a1",
+      "word": "chêne",
+      "sentence": "Michel dessine le chêne bien."
+    },
+    {
+      "level": "a2",
+      "word": "chêne",
+      "sentence": "Après le cours, Richard voit le chêne sur le chemin."
+    },
+    {
+      "level": "b1",
+      "word": "chêne",
+      "sentence": "À midi, quand Chloé observe le chêne avec Charles, et Chloé est chez Charles."
+    },
+    {
+      "level": "a1",
+      "word": "cochon",
+      "sentence": "Charles nourrit le cochon bien."
+    },
+    {
+      "level": "a2",
+      "word": "cochon",
+      "sentence": "Avant le repas, Michel observe le cochon chez Charles."
+    },
+    {
+      "level": "b1",
+      "word": "cochon",
+      "sentence": "Quand Richard attrape le cochon sur le chemin, parce que Charles est chez Chloé."
+    },
+    {
+      "level": "a1",
+      "word": "dimanche",
+      "sentence": "Chloé choisit le dimanche bien."
+    },
+    {
+      "level": "a2",
+      "word": "dimanche",
+      "sentence": "Ce matin, Charles aime le dimanche chez Charles."
+    },
+    {
+      "level": "b1",
+      "word": "dimanche",
+      "sentence": "À midi, quand Michel prépare le dimanche chez Charles, et Chloé est chez Charles."
+    },
+    {
+      "level": "a1",
+      "word": "douche",
+      "sentence": "Richard bricole la douche bien."
+    },
+    {
+      "level": "a2",
+      "word": "douche",
+      "sentence": "Ce soir, Chloé visite la douche avec Charles."
+    },
+    {
+      "level": "b1",
+      "word": "douche",
+      "sentence": "Ce matin, quand Charles range la douche, parce que Charles est chez Chloé."
+    },
+    {
+      "level": "a1",
+      "word": "machine",
+      "sentence": "Michel ouvre la machine bien."
+    },
+    {
+      "level": "a2",
+      "word": "machine",
+      "sentence": "À midi, Richard bricole la machine sur le chemin."
+    },
+    {
+      "level": "b1",
+      "word": "machine",
+      "sentence": "À midi, quand Chloé visite la machine avec Charles, et Chloé est chez Charles."
+    },
+    {
+      "level": "a1",
+      "word": "marché",
+      "sentence": "Charles cherche le marché bien."
+    },
+    {
+      "level": "a2",
+      "word": "marché",
+      "sentence": "Après le cours, Michel longe le marché chez Charles."
+    },
+    {
+      "level": "b1",
+      "word": "marché",
+      "sentence": "Quand Richard voit le marché sur le chemin, parce que Charles est chez Chloé."
+    },
+    {
+      "level": "a1",
+      "word": "mouchoir",
+      "sentence": "Chloé prend le mouchoir bien."
+    },
+    {
+      "level": "a2",
+      "word": "mouchoir",
+      "sentence": "Avant le repas, Charles utilise le mouchoir chez Charles."
+    },
+    {
+      "level": "b1",
+      "word": "mouchoir",
+      "sentence": "À midi, quand Michel range le mouchoir chez Charles, et Chloé est chez Charles."
+    },
+    {
+      "level": "a1",
+      "word": "planche",
+      "sentence": "Richard trouve la planche bien."
+    },
+    {
+      "level": "a2",
+      "word": "planche",
+      "sentence": "Ce matin, Chloé prend la planche avec Charles."
+    },
+    {
+      "level": "b1",
+      "word": "planche",
+      "sentence": "Ce matin, quand Charles utilise la planche, parce que Charles est chez Chloé."
+    },
+    {
+      "level": "a1",
+      "word": "poche",
+      "sentence": "Michel achète la poche bien."
+    },
+    {
+      "level": "a2",
+      "word": "poche",
+      "sentence": "Ce soir, Richard lave la poche sur le chemin."
+    },
+    {
+      "level": "b1",
+      "word": "poche",
+      "sentence": "À midi, quand Chloé porte la poche avec Charles, et Chloé est chez Charles."
+    },
+    {
+      "level": "a1",
+      "word": "torchon",
+      "sentence": "Charles range le torchon bien."
+    },
+    {
+      "level": "a2",
+      "word": "torchon",
+      "sentence": "À midi, Michel peint le torchon chez Charles."
+    },
+    {
+      "level": "b1",
+      "word": "torchon",
+      "sentence": "Quand Richard ferme le torchon sur le chemin, parce que Charles est chez Chloé."
+    },
+    {
+      "level": "a1",
+      "word": "vache",
+      "sentence": "Chloé regarde la vache bien."
+    },
+    {
+      "level": "a2",
+      "word": "vache",
+      "sentence": "Après le cours, Charles nourrit la vache chez Charles."
+    },
+    {
+      "level": "b1",
+      "word": "vache",
+      "sentence": "À midi, quand Michel observe la vache chez Charles, et Chloé est chez Charles."
+    },
+    {
+      "level": "a1",
+      "word": "écharpe",
+      "sentence": "Richard met une écharpe bien."
+    },
+    {
+      "level": "a2",
+      "word": "écharpe",
+      "sentence": "Avant le repas, Chloé porte une écharpe avec Charles."
+    },
+    {
+      "level": "b1",
+      "word": "écharpe",
+      "sentence": "Quand Richard met une écharpe sur le chemin, parce que Charles est chez Chloé."
     }
   ],
   "type10": [
     {
       "level": "a1",
-      "sentence": "Chloé cherche le chat bien.",
+      "sentence": "Chloé lave la bouche bien.",
       "parts": [
         {
-          "t": "Chloé cherche "
+          "t": "Chloé lave "
         },
         {
-          "blank": "le"
+          "blank": "la"
         },
         {
-          "t": " chat bien."
+          "t": " bouche bien."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "Ce matin, Charles voit le chat chez Charles.",
+      "sentence": "Après le cours, Chloé lave la bouche chez Charles.",
       "parts": [
         {
-          "t": "Ce matin, Charles voit "
+          "t": "Après "
         },
         {
           "blank": "le"
         },
         {
-          "t": " chat chez Charles."
+          "t": " cours, Chloé lave "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " bouche chez Charles."
         }
       ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Michel caresse le chat chez Charles, et Chloé est chez Charles.",
+      "sentence": "Ce matin, quand Charles lave la bouche, parce que Charles est chez Chloé.",
       "parts": [
         {
-          "t": "À midi, quand Michel caresse "
+          "t": "Ce matin, quand Charles lave "
         },
         {
-          "blank": "le"
+          "blank": "la"
         },
         {
-          "t": " chat chez Charles, et Chloé est chez Charles."
+          "t": " bouche, parce que Charles est chez Chloé."
         }
       ]
     },
     {
       "level": "a1",
-      "sentence": "Richard répare la chaise bien.",
+      "sentence": "Richard plante la branche bien.",
       "parts": [
         {
-          "t": "Richard répare "
+          "t": "Richard plante "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " branche bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, Chloé dessine la branche avec Charles.",
+      "parts": [
+        {
+          "t": "Ce soir, Chloé dessine "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " branche avec Charles."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Charles voit la branche, parce que Charles est chez Chloé.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Charles voit "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " branche, parce que Charles est chez Chloé."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Michel peint la bûche bien.",
+      "parts": [
+        {
+          "t": "Michel peint "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " bûche bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Richard ferme la bûche sur le chemin.",
+      "parts": [
+        {
+          "t": "À midi, Richard ferme "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " bûche sur "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chemin."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Chloé nettoie la bûche avec Charles, et Chloé est chez Charles.",
+      "parts": [
+        {
+          "t": "À midi, quand Chloé nettoie "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " bûche avec Charles, et Chloé est chez Charles."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Charles nettoie la chaise bien.",
+      "parts": [
+        {
+          "t": "Charles nettoie "
         },
         {
           "blank": "la"
@@ -499,40 +616,103 @@
     },
     {
       "level": "a2",
-      "sentence": "Ce soir, Chloé apporte la chaise avec Charles.",
+      "sentence": "Après le cours, Michel pousse la chaise chez Charles.",
       "parts": [
         {
-          "t": "Ce soir, Chloé apporte "
+          "t": "Après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cours, Michel pousse "
         },
         {
           "blank": "la"
         },
         {
-          "t": " chaise avec Charles."
+          "t": " chaise chez Charles."
         }
       ]
     },
     {
       "level": "b1",
-      "sentence": "Ce matin, quand Charles nettoie la chaise, parce que Charles est chez Chloé.",
+      "sentence": "Quand Richard répare la chaise sur le chemin, parce que Charles est chez Chloé.",
       "parts": [
         {
-          "t": "Ce matin, quand Charles nettoie "
+          "t": "Quand Richard répare "
         },
         {
           "blank": "la"
         },
         {
-          "t": " chaise, parce que Charles est chez Chloé."
+          "t": " chaise sur "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chemin, parce que Charles est chez Chloé."
         }
       ]
     },
     {
       "level": "a1",
-      "sentence": "Michel visite la chambre bien.",
+      "sentence": "Chloé visite le chalet bien.",
       "parts": [
         {
-          "t": "Michel visite "
+          "t": "Chloé visite "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chalet bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le repas, Charles range le chalet chez Charles.",
+      "parts": [
+        {
+          "t": "Avant "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " repas, Charles range "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chalet chez Charles."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Michel peint le chalet chez Charles, et Chloé est chez Charles.",
+      "parts": [
+        {
+          "t": "À midi, quand Michel peint "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chalet chez Charles, et Chloé est chez Charles."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Richard nettoie la chambre bien.",
+      "parts": [
+        {
+          "t": "Richard nettoie "
         },
         {
           "blank": "la"
@@ -544,10 +724,10 @@
     },
     {
       "level": "a2",
-      "sentence": "À midi, Richard visite la chambre sur le chemin.",
+      "sentence": "Ce soir, Charles étudie dans la chambre sur le chemin.",
       "parts": [
         {
-          "t": "À midi, Richard visite "
+          "t": "Ce soir, Charles étudie dans "
         },
         {
           "blank": "la"
@@ -565,67 +745,16 @@
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Chloé visite la chambre avec Charles, et Chloé est chez Charles.",
+      "sentence": "Quand Richard range la chambre sur le chemin, parce que Charles est chez Chloé.",
       "parts": [
         {
-          "t": "À midi, quand Chloé visite "
+          "t": "Quand Richard range "
         },
         {
           "blank": "la"
         },
         {
-          "t": " chambre avec Charles, et Chloé est chez Charles."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Charles repasse la chemise bien.",
-      "parts": [
-        {
-          "t": "Charles repasse "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " chemise bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Michel porte la chemise chez Charles.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Michel porte "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " chemise chez Charles."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand Richard repasse la chemise sur le chemin, parce que Charles est chez Chloé.",
-      "parts": [
-        {
-          "t": "Quand Richard repasse "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " chemise sur "
+          "t": " chambre sur "
         },
         {
           "blank": "le"
@@ -637,1069 +766,10 @@
     },
     {
       "level": "a1",
-      "sentence": "Chloé regarde le cheval bien.",
+      "sentence": "Michel photographie le champ bien.",
       "parts": [
         {
-          "t": "Chloé regarde "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cheval bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Charles nourrit le cheval chez Charles.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, Charles nourrit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cheval chez Charles."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Michel observe le cheval chez Charles, et Chloé est chez Charles.",
-      "parts": [
-        {
-          "t": "À midi, quand Michel observe "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cheval chez Charles, et Chloé est chez Charles."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Richard repasse la chaussure bien.",
-      "parts": [
-        {
-          "t": "Richard repasse "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " chaussure bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Chloé choisit la chaussure avec Charles.",
-      "parts": [
-        {
-          "t": "Ce matin, Chloé choisit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " chaussure avec Charles."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Charles met la chaussure, parce que Charles est chez Chloé.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Charles met "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " chaussure, parce que Charles est chez Chloé."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Michel sert le chocolat bien.",
-      "parts": [
-        {
-          "t": "Michel sert "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chocolat bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Richard boit le chocolat sur le chemin.",
-      "parts": [
-        {
-          "t": "Ce soir, Richard boit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chocolat sur "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chemin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Chloé achète le chocolat avec Charles, et Chloé est chez Charles.",
-      "parts": [
-        {
-          "t": "À midi, quand Chloé achète "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chocolat avec Charles, et Chloé est chez Charles."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Charles quitte la douche bien.",
-      "parts": [
-        {
-          "t": "Charles quitte "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " douche bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Michel ouvre la douche chez Charles.",
-      "parts": [
-        {
-          "t": "À midi, Michel ouvre "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " douche chez Charles."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand Richard bricole la douche sur le chemin, parce que Charles est chez Chloé.",
-      "parts": [
-        {
-          "t": "Quand Richard bricole "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " douche sur "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chemin, parce que Charles est chez Chloé."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Chloé caresse la vache bien.",
-      "parts": [
-        {
-          "t": "Chloé caresse "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " vache bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Charles voit la vache chez Charles.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Charles voit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " vache chez Charles."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Michel soigne la vache chez Charles, et Chloé est chez Charles.",
-      "parts": [
-        {
-          "t": "À midi, quand Michel soigne "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " vache chez Charles, et Chloé est chez Charles."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Richard attrape le cochon bien.",
-      "parts": [
-        {
-          "t": "Richard attrape "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cochon bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Chloé caresse le cochon avec Charles.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, Chloé caresse "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cochon avec Charles."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Charles voit le cochon, parce que Charles est chez Chloé.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Charles voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cochon, parce que Charles est chez Chloé."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Michel porte le chapeau bien.",
-      "parts": [
-        {
-          "t": "Michel porte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chapeau bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Richard met le chapeau sur le chemin.",
-      "parts": [
-        {
-          "t": "Ce matin, Richard met "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chapeau sur "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chemin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Chloé porte le chapeau avec Charles, et Chloé est chez Charles.",
-      "parts": [
-        {
-          "t": "À midi, quand Chloé porte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chapeau avec Charles, et Chloé est chez Charles."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Charles caresse le chien bien.",
-      "parts": [
-        {
-          "t": "Charles caresse "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chien bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Michel a le chien chez Charles.",
-      "parts": [
-        {
-          "t": "Ce soir, Michel a "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chien chez Charles."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand Richard s’occupe le chien sur le chemin, parce que Charles est chez Chloé.",
-      "parts": [
-        {
-          "t": "Quand Richard s’occupe "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chien sur "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chemin, parce que Charles est chez Chloé."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Chloé achète le chou bien.",
-      "parts": [
-        {
-          "t": "Chloé achète "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chou bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Charles prépare le chou chez Charles.",
-      "parts": [
-        {
-          "t": "À midi, Charles prépare "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chou chez Charles."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Michel choisit le chou chez Charles, et Chloé est chez Charles.",
-      "parts": [
-        {
-          "t": "À midi, quand Michel choisit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chou chez Charles, et Chloé est chez Charles."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Richard repasse la poche bien.",
-      "parts": [
-        {
-          "t": "Richard repasse "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " poche bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Chloé choisit la poche avec Charles.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Chloé choisit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " poche avec Charles."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Charles met la poche, parce que Charles est chez Chloé.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Charles met "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " poche, parce que Charles est chez Chloé."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Michel lave la bouche bien.",
-      "parts": [
-        {
-          "t": "Michel lave "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " bouche bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Richard lave la bouche sur le chemin.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, Richard lave "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " bouche sur "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chemin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Chloé lave la bouche avec Charles, et Chloé est chez Charles.",
-      "parts": [
-        {
-          "t": "À midi, quand Chloé lave "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " bouche avec Charles, et Chloé est chez Charles."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Charles voit le marché bien.",
-      "parts": [
-        {
-          "t": "Charles voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " marché bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Michel trouve le marché chez Charles.",
-      "parts": [
-        {
-          "t": "Ce matin, Michel trouve "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " marché chez Charles."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand Richard visite le marché sur le chemin, parce que Charles est chez Chloé.",
-      "parts": [
-        {
-          "t": "Quand Richard visite "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " marché sur "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chemin, parce que Charles est chez Chloé."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Chloé prépare le dimanche bien.",
-      "parts": [
-        {
-          "t": "Chloé prépare "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " dimanche bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Charles note le dimanche chez Charles.",
-      "parts": [
-        {
-          "t": "Ce soir, Charles note "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " dimanche chez Charles."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Michel attend le dimanche chez Charles, et Chloé est chez Charles.",
-      "parts": [
-        {
-          "t": "À midi, quand Michel attend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " dimanche chez Charles, et Chloé est chez Charles."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Richard ferme la machine bien.",
-      "parts": [
-        {
-          "t": "Richard ferme "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " machine bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Chloé nettoie la machine avec Charles.",
-      "parts": [
-        {
-          "t": "À midi, Chloé nettoie "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " machine avec Charles."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Charles quitte la machine, parce que Charles est chez Chloé.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Charles quitte "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " machine, parce que Charles est chez Chloé."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Michel montre la planche bien.",
-      "parts": [
-        {
-          "t": "Michel montre "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " planche bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Richard trouve la planche sur le chemin.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Richard trouve "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " planche sur "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chemin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Chloé prend la planche avec Charles, et Chloé est chez Charles.",
-      "parts": [
-        {
-          "t": "À midi, quand Chloé prend "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " planche avec Charles, et Chloé est chez Charles."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Charles admire la branche bien.",
-      "parts": [
-        {
-          "t": "Charles admire "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " branche bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Michel plante la branche chez Charles.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, Michel plante "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " branche chez Charles."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand Richard dessine la branche sur le chemin, parce que Charles est chez Chloé.",
-      "parts": [
-        {
-          "t": "Quand Richard dessine "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " branche sur "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chemin, parce que Charles est chez Chloé."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Richard oublie le mouchoir bien.",
-      "parts": [
-        {
-          "t": "Richard oublie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " mouchoir bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Chloé cherche le mouchoir avec Charles.",
-      "parts": [
-        {
-          "t": "Ce soir, Chloé cherche "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " mouchoir avec Charles."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Charles pose le mouchoir, parce que Charles est chez Chloé.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Charles pose "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " mouchoir, parce que Charles est chez Chloé."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Michel ouvre le torchon bien.",
-      "parts": [
-        {
-          "t": "Michel ouvre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " torchon bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Richard bricole le torchon sur le chemin.",
-      "parts": [
-        {
-          "t": "À midi, Richard bricole "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " torchon sur "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chemin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Chloé visite le torchon avec Charles, et Chloé est chez Charles.",
-      "parts": [
-        {
-          "t": "À midi, quand Chloé visite "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " torchon avec Charles, et Chloé est chez Charles."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Charles quitte la bûche bien.",
-      "parts": [
-        {
-          "t": "Charles quitte "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " bûche bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Michel ouvre la bûche chez Charles.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Michel ouvre "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " bûche chez Charles."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand Richard bricole la bûche sur le chemin, parce que Charles est chez Chloé.",
-      "parts": [
-        {
-          "t": "Quand Richard bricole "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " bûche sur "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chemin, parce que Charles est chez Chloé."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Chloé observe le chêne bien.",
-      "parts": [
-        {
-          "t": "Chloé observe "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chêne bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Charles photographie le chêne chez Charles.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, Charles photographie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chêne chez Charles."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Michel regarde le chêne chez Charles, et Chloé est chez Charles.",
-      "parts": [
-        {
-          "t": "À midi, quand Michel regarde "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chêne chez Charles, et Chloé est chez Charles."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Richard suit le chemin bien.",
-      "parts": [
-        {
-          "t": "Richard suit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chemin bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Chloé connaît le chemin avec Charles.",
-      "parts": [
-        {
-          "t": "Ce matin, Chloé connaît "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chemin avec Charles."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Charles suit le chemin, parce que Charles est chez Chloé.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Charles suit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chemin, parce que Charles est chez Chloé."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Michel admire le champ bien.",
-      "parts": [
-        {
-          "t": "Michel admire "
+          "t": "Michel photographie "
         },
         {
           "blank": "le"
@@ -1711,10 +781,10 @@
     },
     {
       "level": "a2",
-      "sentence": "Ce soir, Richard plante le champ sur le chemin.",
+      "sentence": "Ce soir, Richard regarde le champ sur le chemin.",
       "parts": [
         {
-          "t": "Ce soir, Richard plante "
+          "t": "Ce soir, Richard regarde "
         },
         {
           "blank": "le"
@@ -1732,10 +802,10 @@
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Chloé dessine le champ avec Charles, et Chloé est chez Charles.",
+      "sentence": "À midi, quand Chloé admire le champ avec Charles, et Chloé est chez Charles.",
       "parts": [
         {
-          "t": "À midi, quand Chloé dessine "
+          "t": "À midi, quand Chloé admire "
         },
         {
           "blank": "le"
@@ -1798,22 +868,22 @@
     },
     {
       "level": "a1",
-      "sentence": "Chloé visite le chalet bien.",
+      "sentence": "Chloé porte le chapeau bien.",
       "parts": [
         {
-          "t": "Chloé visite "
+          "t": "Chloé porte "
         },
         {
           "blank": "le"
         },
         {
-          "t": " chalet bien."
+          "t": " chapeau bien."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "Après le cours, Charles range le chalet chez Charles.",
+      "sentence": "Après le cours, Charles met le chapeau chez Charles.",
       "parts": [
         {
           "t": "Après "
@@ -1822,43 +892,1111 @@
           "blank": "le"
         },
         {
-          "t": " cours, Charles range "
+          "t": " cours, Charles met "
         },
         {
           "blank": "le"
         },
         {
-          "t": " chalet chez Charles."
+          "t": " chapeau chez Charles."
         }
       ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Michel peint le chalet chez Charles, et Chloé est chez Charles.",
+      "sentence": "À midi, quand Chloé porte le chapeau avec Charles, et Chloé est chez Charles.",
       "parts": [
         {
-          "t": "À midi, quand Michel peint "
+          "t": "À midi, quand Chloé porte "
         },
         {
           "blank": "le"
         },
         {
-          "t": " chalet chez Charles, et Chloé est chez Charles."
+          "t": " chapeau avec Charles, et Chloé est chez Charles."
         }
       ]
     },
     {
       "level": "a1",
-      "sentence": "Richard caresse le chat bien.",
+      "sentence": "Richard attrape le chat bien.",
       "parts": [
         {
-          "t": "Richard caresse "
+          "t": "Richard attrape "
         },
         {
           "blank": "le"
         },
         {
           "t": " chat bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le repas, Chloé s’approche du chat avec Charles.",
+      "parts": [
+        {
+          "t": "Avant "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " repas, Chloé s’approche du chat avec Charles."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Charles sauve le chat, parce que Charles est chez Chloé.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Charles sauve "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chat, parce que Charles est chez Chloé."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Michel montre le chaud bien.",
+      "parts": [
+        {
+          "t": "Michel montre "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chaud bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Richard trouve le chaud sur le chemin.",
+      "parts": [
+        {
+          "t": "Ce matin, Richard trouve "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chaud sur "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chemin."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Chloé prend le chaud avec Charles, et Chloé est chez Charles.",
+      "parts": [
+        {
+          "t": "À midi, quand Chloé prend "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chaud avec Charles, et Chloé est chez Charles."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Charles met la chaussure bien.",
+      "parts": [
+        {
+          "t": "Charles met "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " chaussure bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, Michel achète la chaussure chez Charles.",
+      "parts": [
+        {
+          "t": "Ce soir, Michel achète "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " chaussure chez Charles."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand Richard lave la chaussure sur le chemin, parce que Charles est chez Chloé.",
+      "parts": [
+        {
+          "t": "Quand Richard lave "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " chaussure sur "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chemin, parce que Charles est chez Chloé."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Chloé montre le chemin bien.",
+      "parts": [
+        {
+          "t": "Chloé montre "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chemin bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Charles suit le chemin chez Charles.",
+      "parts": [
+        {
+          "t": "À midi, Charles suit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chemin chez Charles."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Michel connaît le chemin chez Charles, et Chloé est chez Charles.",
+      "parts": [
+        {
+          "t": "À midi, quand Michel connaît "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chemin chez Charles, et Chloé est chez Charles."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Richard repasse la chemise bien.",
+      "parts": [
+        {
+          "t": "Richard repasse "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " chemise bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le cours, Chloé porte la chemise avec Charles.",
+      "parts": [
+        {
+          "t": "Après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cours, Chloé porte "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " chemise avec Charles."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand Richard repasse la chemise sur le chemin, parce que Charles est chez Chloé.",
+      "parts": [
+        {
+          "t": "Quand Richard repasse "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " chemise sur "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chemin, parce que Charles est chez Chloé."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Michel soigne le cheval bien.",
+      "parts": [
+        {
+          "t": "Michel soigne "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cheval bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le repas, Richard sauve le cheval sur le chemin.",
+      "parts": [
+        {
+          "t": "Avant "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " repas, Richard sauve "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cheval sur "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chemin."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Chloé regarde le cheval avec Charles, et Chloé est chez Charles.",
+      "parts": [
+        {
+          "t": "À midi, quand Chloé regarde "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cheval avec Charles, et Chloé est chez Charles."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Charles tient le chien bien.",
+      "parts": [
+        {
+          "t": "Charles tient "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chien bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Michel soigne le chien chez Charles.",
+      "parts": [
+        {
+          "t": "Ce matin, Michel soigne "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chien chez Charles."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand Richard caresse le chien sur le chemin, parce que Charles est chez Chloé.",
+      "parts": [
+        {
+          "t": "Quand Richard caresse "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chien sur "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chemin, parce que Charles est chez Chloé."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Chloé boit le chocolat bien.",
+      "parts": [
+        {
+          "t": "Chloé boit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chocolat bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, Charles achète le chocolat chez Charles.",
+      "parts": [
+        {
+          "t": "Ce soir, Charles achète "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chocolat chez Charles."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Michel sert le chocolat chez Charles, et Chloé est chez Charles.",
+      "parts": [
+        {
+          "t": "À midi, quand Michel sert "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chocolat chez Charles, et Chloé est chez Charles."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Richard choisit le chou bien.",
+      "parts": [
+        {
+          "t": "Richard choisit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chou bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Chloé goûte le chou avec Charles.",
+      "parts": [
+        {
+          "t": "À midi, Chloé goûte "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chou avec Charles."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Charles partage le chou, parce que Charles est chez Chloé.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Charles partage "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chou, parce que Charles est chez Chloé."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Michel dessine le chêne bien.",
+      "parts": [
+        {
+          "t": "Michel dessine "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chêne bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le cours, Richard voit le chêne sur le chemin.",
+      "parts": [
+        {
+          "t": "Après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cours, Richard voit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chêne sur "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chemin."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Chloé observe le chêne avec Charles, et Chloé est chez Charles.",
+      "parts": [
+        {
+          "t": "À midi, quand Chloé observe "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chêne avec Charles, et Chloé est chez Charles."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Charles nourrit le cochon bien.",
+      "parts": [
+        {
+          "t": "Charles nourrit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cochon bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le repas, Michel observe le cochon chez Charles.",
+      "parts": [
+        {
+          "t": "Avant "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " repas, Michel observe "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cochon chez Charles."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand Richard attrape le cochon sur le chemin, parce que Charles est chez Chloé.",
+      "parts": [
+        {
+          "t": "Quand Richard attrape "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cochon sur "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chemin, parce que Charles est chez Chloé."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Chloé choisit le dimanche bien.",
+      "parts": [
+        {
+          "t": "Chloé choisit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " dimanche bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Charles aime le dimanche chez Charles.",
+      "parts": [
+        {
+          "t": "Ce matin, Charles aime "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " dimanche chez Charles."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Michel prépare le dimanche chez Charles, et Chloé est chez Charles.",
+      "parts": [
+        {
+          "t": "À midi, quand Michel prépare "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " dimanche chez Charles, et Chloé est chez Charles."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Richard bricole la douche bien.",
+      "parts": [
+        {
+          "t": "Richard bricole "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " douche bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, Chloé visite la douche avec Charles.",
+      "parts": [
+        {
+          "t": "Ce soir, Chloé visite "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " douche avec Charles."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Charles range la douche, parce que Charles est chez Chloé.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Charles range "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " douche, parce que Charles est chez Chloé."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Michel ouvre la machine bien.",
+      "parts": [
+        {
+          "t": "Michel ouvre "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " machine bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Richard bricole la machine sur le chemin.",
+      "parts": [
+        {
+          "t": "À midi, Richard bricole "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " machine sur "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chemin."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Chloé visite la machine avec Charles, et Chloé est chez Charles.",
+      "parts": [
+        {
+          "t": "À midi, quand Chloé visite "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " machine avec Charles, et Chloé est chez Charles."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Charles cherche le marché bien.",
+      "parts": [
+        {
+          "t": "Charles cherche "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " marché bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le cours, Michel longe le marché chez Charles.",
+      "parts": [
+        {
+          "t": "Après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cours, Michel longe "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " marché chez Charles."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand Richard voit le marché sur le chemin, parce que Charles est chez Chloé.",
+      "parts": [
+        {
+          "t": "Quand Richard voit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " marché sur "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chemin, parce que Charles est chez Chloé."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Chloé prend le mouchoir bien.",
+      "parts": [
+        {
+          "t": "Chloé prend "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " mouchoir bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le repas, Charles utilise le mouchoir chez Charles.",
+      "parts": [
+        {
+          "t": "Avant "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " repas, Charles utilise "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " mouchoir chez Charles."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Michel range le mouchoir chez Charles, et Chloé est chez Charles.",
+      "parts": [
+        {
+          "t": "À midi, quand Michel range "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " mouchoir chez Charles, et Chloé est chez Charles."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Richard trouve la planche bien.",
+      "parts": [
+        {
+          "t": "Richard trouve "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " planche bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Chloé prend la planche avec Charles.",
+      "parts": [
+        {
+          "t": "Ce matin, Chloé prend "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " planche avec Charles."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Charles utilise la planche, parce que Charles est chez Chloé.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Charles utilise "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " planche, parce que Charles est chez Chloé."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Michel achète la poche bien.",
+      "parts": [
+        {
+          "t": "Michel achète "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " poche bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, Richard lave la poche sur le chemin.",
+      "parts": [
+        {
+          "t": "Ce soir, Richard lave "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " poche sur "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chemin."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Chloé porte la poche avec Charles, et Chloé est chez Charles.",
+      "parts": [
+        {
+          "t": "À midi, quand Chloé porte "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " poche avec Charles, et Chloé est chez Charles."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Charles range le torchon bien.",
+      "parts": [
+        {
+          "t": "Charles range "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " torchon bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Michel peint le torchon chez Charles.",
+      "parts": [
+        {
+          "t": "À midi, Michel peint "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " torchon chez Charles."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand Richard ferme le torchon sur le chemin, parce que Charles est chez Chloé.",
+      "parts": [
+        {
+          "t": "Quand Richard ferme "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " torchon sur "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chemin, parce que Charles est chez Chloé."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Chloé regarde la vache bien.",
+      "parts": [
+        {
+          "t": "Chloé regarde "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " vache bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le cours, Charles nourrit la vache chez Charles.",
+      "parts": [
+        {
+          "t": "Après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cours, Charles nourrit "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " vache chez Charles."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Michel observe la vache chez Charles, et Chloé est chez Charles.",
+      "parts": [
+        {
+          "t": "À midi, quand Michel observe "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " vache chez Charles, et Chloé est chez Charles."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le repas, Chloé porte une écharpe avec Charles.",
+      "parts": [
+        {
+          "t": "Avant "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " repas, Chloé porte une écharpe avec Charles."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand Richard met une écharpe sur le chemin, parce que Charles est chez Chloé.",
+      "parts": [
+        {
+          "t": "Quand Richard met une écharpe sur "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chemin, parce que Charles est chez Chloé."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Charles lave la bouche bien.",
+      "parts": [
+        {
+          "t": "Charles lave "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " bouche bien."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Charles photographie la branche bien.",
+      "parts": [
+        {
+          "t": "Charles photographie "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " branche bien."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Michel ouvre la bûche bien.",
+      "parts": [
+        {
+          "t": "Michel ouvre "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " bûche bien."
         }
       ]
     },
@@ -1878,59 +2016,38 @@
       ]
     },
     {
-      "level": "a1",
-      "sentence": "Richard nettoie la chambre bien.",
-      "parts": [
-        {
-          "t": "Richard nettoie "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " chambre bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Chloé porte la chemise bien.",
-      "parts": [
-        {
-          "t": "Chloé porte "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " chemise bien."
-        }
-      ]
-    },
-    {
       "level": "a2",
-      "sentence": "Avant le repas, Chloé porte le chapeau avec Charles.",
+      "sentence": "À midi, Richard pose le chaud avec Charles.",
       "parts": [
         {
-          "t": "Avant "
+          "t": "À midi, Richard pose "
         },
         {
           "blank": "le"
         },
         {
-          "t": " repas, Chloé porte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chapeau avec Charles."
+          "t": " chaud avec Charles."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "Après le cours, Michel soigne le chien chez Charles.",
+      "sentence": "Ce matin, Chloé choisit la chaussure avec Charles.",
+      "parts": [
+        {
+          "t": "Ce matin, Chloé choisit "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " chaussure avec Charles."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le cours, Charles explique le chemin sur le chemin.",
       "parts": [
         {
           "t": "Après "
@@ -1939,22 +2056,256 @@
           "blank": "le"
         },
         {
-          "t": " cours, Michel soigne "
+          "t": " cours, Charles explique "
         },
         {
           "blank": "le"
         },
         {
-          "t": " chien chez Charles."
+          "t": " chemin sur "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chemin."
         }
       ]
     },
     {
       "level": "a2",
-      "sentence": "À midi, Chloé coupe le chou avec Charles.",
+      "sentence": "À midi, Chloé porte la chemise avec Charles.",
       "parts": [
         {
-          "t": "À midi, Chloé coupe "
+          "t": "À midi, Chloé porte "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " chemise avec Charles."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand Richard note le dimanche avec Charles, parce que Charles est chez Chloé.",
+      "parts": [
+        {
+          "t": "Quand Richard note "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " dimanche avec Charles, parce que Charles est chez Chloé."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Chloé nettoie la douche avec Charles, et Chloé est chez Charles.",
+      "parts": [
+        {
+          "t": "À midi, quand Chloé nettoie "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " douche avec Charles, et Chloé est chez Charles."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Michel peint la machine chez Charles, et Chloé est chez Charles.",
+      "parts": [
+        {
+          "t": "À midi, quand Michel peint "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " machine chez Charles, et Chloé est chez Charles."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Michel visite le marché chez Charles, et Chloé est chez Charles.",
+      "parts": [
+        {
+          "t": "À midi, quand Michel visite "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " marché chez Charles, et Chloé est chez Charles."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Charles bricole le chalet bien.",
+      "parts": [
+        {
+          "t": "Charles bricole "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chalet bien."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Chloé retourne dans la chambre.",
+      "parts": [
+        {
+          "t": "Chloé retourne dans "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " chambre."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Michel voit le champ bien.",
+      "parts": [
+        {
+          "t": "Michel voit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " champ bien."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Chloé écoute la chanson bien.",
+      "parts": [
+        {
+          "t": "Chloé écoute "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " chanson bien."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Chloé porte le chapeau vite.",
+      "parts": [
+        {
+          "t": "Chloé porte "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chapeau vite."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Chloé cherche le chat bien.",
+      "parts": [
+        {
+          "t": "Chloé cherche "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chat bien."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Chloé caresse le cheval avec Charles.",
+      "parts": [
+        {
+          "t": "Ce matin, Chloé caresse "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cheval avec Charles."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le repas, Michel rêve du chien chez Charles.",
+      "parts": [
+        {
+          "t": "Avant "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " repas, Michel rêve du chien chez Charles."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le cours, Charles aime le chocolat sur le chemin.",
+      "parts": [
+        {
+          "t": "Après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cours, Charles aime "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chocolat sur "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chemin."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le cours, Richard prépare le chou avec Charles.",
+      "parts": [
+        {
+          "t": "Après "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cours, Richard prépare "
         },
         {
           "blank": "le"
@@ -1966,343 +2317,106 @@
     },
     {
       "level": "a2",
-      "sentence": "Ce soir, Michel enfile la poche chez Charles.",
+      "sentence": "Ce soir, Chloé plante le chêne avec Charles.",
       "parts": [
         {
-          "t": "Ce soir, Michel enfile "
+          "t": "Ce soir, Chloé plante "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " chêne avec Charles."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, Chloé regarde le cochon avec Charles.",
+      "parts": [
+        {
+          "t": "À midi, Chloé regarde "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cochon avec Charles."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Charles trouve le mouchoir, parce que Charles est chez Chloé.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Charles trouve "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " mouchoir, parce que Charles est chez Chloé."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "À midi, quand Michel montre la planche chez Charles, et Chloé est chez Charles.",
+      "parts": [
+        {
+          "t": "À midi, quand Michel montre "
         },
         {
           "blank": "la"
         },
         {
-          "t": " poche chez Charles."
+          "t": " planche chez Charles, et Chloé est chez Charles."
         }
       ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Chloé prend le mouchoir avec Charles, et Chloé est chez Charles.",
+      "sentence": "Quand Richard met la poche avec Charles, parce que Charles est chez Chloé.",
       "parts": [
         {
-          "t": "À midi, quand Chloé prend "
+          "t": "Quand Richard met "
         },
         {
-          "blank": "le"
+          "blank": "la"
         },
         {
-          "t": " mouchoir avec Charles, et Chloé est chez Charles."
+          "t": " poche avec Charles, parce que Charles est chez Chloé."
         }
       ]
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Michel peint le torchon chez Charles, et Chloé est chez Charles.",
-      "parts": [
-        {
-          "t": "À midi, quand Michel peint "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " torchon chez Charles, et Chloé est chez Charles."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Chloé visite la bûche avec Charles, et Chloé est chez Charles.",
+      "sentence": "À midi, quand Chloé visite le torchon avec Charles, et Chloé est chez Charles.",
       "parts": [
         {
           "t": "À midi, quand Chloé visite "
         },
         {
-          "blank": "la"
-        },
-        {
-          "t": " bûche avec Charles, et Chloé est chez Charles."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Michel observe le cheval bien.",
-      "parts": [
-        {
-          "t": "Michel observe "
-        },
-        {
           "blank": "le"
         },
         {
-          "t": " cheval bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Chloé choisit la chaussure bien.",
-      "parts": [
-        {
-          "t": "Chloé choisit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " chaussure bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Richard achète le chocolat bien.",
-      "parts": [
-        {
-          "t": "Richard achète "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chocolat bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Chloé nettoie la douche bien.",
-      "parts": [
-        {
-          "t": "Chloé nettoie "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " douche bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Michel observe la vache bien.",
-      "parts": [
-        {
-          "t": "Michel observe "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " vache bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Chloé regarde le cochon bien.",
-      "parts": [
-        {
-          "t": "Chloé regarde "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cochon bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Michel lave la bouche chez Charles.",
-      "parts": [
-        {
-          "t": "À midi, Michel lave "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " bouche chez Charles."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Michel voit le marché chez Charles.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, Michel voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " marché chez Charles."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Chloé attend le dimanche avec Charles.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Chloé attend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " dimanche avec Charles."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Michel ouvre la machine chez Charles.",
-      "parts": [
-        {
-          "t": "À midi, Michel ouvre "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " machine chez Charles."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Chloé prend la planche avec Charles.",
-      "parts": [
-        {
-          "t": "Ce soir, Chloé prend "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " planche avec Charles."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Richard voit la branche avec Charles.",
-      "parts": [
-        {
-          "t": "Ce soir, Richard voit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " branche avec Charles."
+          "t": " torchon avec Charles, et Chloé est chez Charles."
         }
       ]
     },
     {
       "level": "b1",
-      "sentence": "Quand Richard plante le chêne avec Charles, parce que Charles est chez Chloé.",
+      "sentence": "À midi, quand Michel soigne la vache chez Charles, et Chloé est chez Charles.",
       "parts": [
         {
-          "t": "Quand Richard plante "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chêne avec Charles, parce que Charles est chez Chloé."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Chloé continue le chemin avec Charles, et Chloé est chez Charles.",
-      "parts": [
-        {
-          "t": "À midi, quand Chloé continue "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chemin avec Charles, et Chloé est chez Charles."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Michel regarde le champ chez Charles, et Chloé est chez Charles.",
-      "parts": [
-        {
-          "t": "À midi, quand Michel regarde "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " champ chez Charles, et Chloé est chez Charles."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Chloé écoute la chanson avec Charles, et Chloé est chez Charles.",
-      "parts": [
-        {
-          "t": "À midi, quand Chloé écoute "
+          "t": "À midi, quand Michel soigne "
         },
         {
           "blank": "la"
         },
         {
-          "t": " chanson avec Charles, et Chloé est chez Charles."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Michel ouvre le chalet chez Charles, et Chloé est chez Charles.",
-      "parts": [
-        {
-          "t": "À midi, quand Michel ouvre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chalet chez Charles, et Chloé est chez Charles."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Chloé attrape le chat avec Charles, et Chloé est chez Charles.",
-      "parts": [
-        {
-          "t": "À midi, quand Chloé attrape "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chat avec Charles, et Chloé est chez Charles."
+          "t": " vache chez Charles, et Chloé est chez Charles."
         }
       ]
     }
@@ -2310,125 +2424,125 @@
   "type12": [
     {
       "level": "a1",
-      "sentence": "Richard caresse le chat bien."
+      "sentence": "Charles lave la bouche bien."
+    },
+    {
+      "level": "a1",
+      "sentence": "Charles photographie la branche bien."
+    },
+    {
+      "level": "a1",
+      "sentence": "Michel ouvre la bûche bien."
     },
     {
       "level": "a1",
       "sentence": "Chloé apporte la chaise bien."
     },
     {
-      "level": "a1",
-      "sentence": "Richard nettoie la chambre bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "Chloé porte la chemise bien."
+      "level": "a2",
+      "sentence": "À midi, Richard pose le chaud avec Charles."
     },
     {
       "level": "a2",
-      "sentence": "Avant le repas, Chloé porte le chapeau avec Charles."
+      "sentence": "Ce matin, Chloé choisit la chaussure avec Charles."
     },
     {
       "level": "a2",
-      "sentence": "Après le cours, Michel soigne le chien chez Charles."
+      "sentence": "Après le cours, Charles explique le chemin sur le chemin."
     },
     {
       "level": "a2",
-      "sentence": "À midi, Chloé coupe le chou avec Charles."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Michel enfile la poche chez Charles."
+      "sentence": "À midi, Chloé porte la chemise avec Charles."
     },
     {
       "level": "b1",
-      "sentence": "Quand Richard met une écharpe avec Charles, parce que Charles est chez Chloé."
+      "sentence": "Quand Richard note le dimanche avec Charles, parce que Charles est chez Chloé."
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Chloé prend le mouchoir avec Charles, et Chloé est chez Charles."
+      "sentence": "À midi, quand Chloé nettoie la douche avec Charles, et Chloé est chez Charles."
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Michel peint le torchon chez Charles, et Chloé est chez Charles."
+      "sentence": "À midi, quand Michel peint la machine chez Charles, et Chloé est chez Charles."
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Chloé visite la bûche avec Charles, et Chloé est chez Charles."
+      "sentence": "À midi, quand Michel visite le marché chez Charles, et Chloé est chez Charles."
     }
   ],
   "type14": [
     {
       "level": "a1",
-      "sentence": "Michel observe le cheval bien."
+      "sentence": "Charles bricole le chalet bien."
     },
     {
       "level": "a1",
-      "sentence": "Chloé choisit la chaussure bien."
+      "sentence": "Chloé retourne dans la chambre."
     },
     {
       "level": "a1",
-      "sentence": "Richard achète le chocolat bien."
+      "sentence": "Michel voit le champ bien."
     },
     {
       "level": "a1",
-      "sentence": "Chloé nettoie la douche bien."
+      "sentence": "Chloé écoute la chanson bien."
     },
     {
       "level": "a1",
-      "sentence": "Michel observe la vache bien."
+      "sentence": "Chloé porte le chapeau vite."
     },
     {
       "level": "a1",
-      "sentence": "Chloé regarde le cochon bien."
+      "sentence": "Chloé cherche le chat bien."
     },
     {
       "level": "a2",
-      "sentence": "À midi, Michel lave la bouche chez Charles."
+      "sentence": "Ce matin, Chloé caresse le cheval avec Charles."
     },
     {
       "level": "a2",
-      "sentence": "Avant le repas, Michel voit le marché chez Charles."
+      "sentence": "Avant le repas, Michel rêve du chien chez Charles."
     },
     {
       "level": "a2",
-      "sentence": "Après le cours, Chloé attend le dimanche avec Charles."
+      "sentence": "Après le cours, Charles aime le chocolat sur le chemin."
     },
     {
       "level": "a2",
-      "sentence": "À midi, Michel ouvre la machine chez Charles."
+      "sentence": "Après le cours, Richard prépare le chou avec Charles."
     },
     {
       "level": "a2",
-      "sentence": "Ce soir, Chloé prend la planche avec Charles."
+      "sentence": "Ce soir, Chloé plante le chêne avec Charles."
     },
     {
       "level": "a2",
-      "sentence": "Ce soir, Richard voit la branche avec Charles."
+      "sentence": "À midi, Chloé regarde le cochon avec Charles."
     },
     {
       "level": "b1",
-      "sentence": "Quand Richard plante le chêne avec Charles, parce que Charles est chez Chloé."
+      "sentence": "Ce matin, quand Charles trouve le mouchoir, parce que Charles est chez Chloé."
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Chloé continue le chemin avec Charles, et Chloé est chez Charles."
+      "sentence": "À midi, quand Michel montre la planche chez Charles, et Chloé est chez Charles."
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Michel regarde le champ chez Charles, et Chloé est chez Charles."
+      "sentence": "Quand Richard met la poche avec Charles, parce que Charles est chez Chloé."
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Chloé écoute la chanson avec Charles, et Chloé est chez Charles."
+      "sentence": "À midi, quand Chloé visite le torchon avec Charles, et Chloé est chez Charles."
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Michel ouvre le chalet chez Charles, et Chloé est chez Charles."
+      "sentence": "À midi, quand Michel soigne la vache chez Charles, et Chloé est chez Charles."
     },
     {
       "level": "b1",
-      "sentence": "À midi, quand Chloé attrape le chat avec Charles, et Chloé est chez Charles."
+      "sentence": "À midi, quand Michel porte une écharpe chez Charles, et Chloé est chez Charles."
     }
   ]
 }

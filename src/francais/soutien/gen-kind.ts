@@ -2,7 +2,7 @@
 import { pick, shuffle, type Rng } from '@/math/rng'
 import { tagged } from '@/francais/phrase-sentences'
 import type { Difficulty, MathItem, PhraseToken } from '@/math/types'
-import { displayVocabLabel } from '@/francais/display-vocab-label'
+import { displayVocabLabel, isCompoundVocabLabel } from '@/francais/display-vocab-label'
 import type { SoutienVowelBank } from './banks'
 import { soutienAudioFor } from './audio'
 import { completesFromType1Words } from './complete-blank'
@@ -16,11 +16,12 @@ import {
   compoundsForType1Words,
   lessonSoundGraphemes,
   lessonWordsBySound,
+  lessonWordsForText,
   wordHasLessonLetter,
   wordHasLessonSound,
 } from './phoneme'
 import { buildWordSearch, wordSearchHitCells } from './word-search'
-import { isSoutienType1Word, type1WordPool, type1Words } from './type1-words'
+import { type1WordPool, type1Words } from './type1-words'
 import type { SoutienGenerateOptions } from './generate-options'
 import {
   filterSoutienLevel,
@@ -399,9 +400,9 @@ export function genKind(
       const byWord = new Map<string, ScrambleRow[]>()
       const curated = soutienPhrasesFor(bank.id)
       const curatedRows = curated ? filterSoutienLevel(curated.type9, options?.level) : []
-      /** Phrases rédigées avec image ; pas de composés. */
+      /** Phrases rédigées ; image optionnelle (pas de composés). */
       for (const row of curatedRows) {
-        if (!isSoutienType1Word(row.word)) continue
+        if (isCompoundVocabLabel(row.word)) continue
         if (exclude.has(displayVocabLabel(row.word).toLowerCase())) continue
         const scramble: ScrambleRow = { sentence: row.sentence, word: row.word, letters: '' }
         const key = displayVocabLabel(row.word).toLowerCase()
@@ -412,7 +413,7 @@ export function genKind(
       if (byWord.size < want) {
         const fromBank = bank.scrambles.filter(
           (row) =>
-            isSoutienType1Word(row.word) &&
+            !isCompoundVocabLabel(row.word) &&
             !exclude.has(displayVocabLabel(row.word).toLowerCase()),
         )
         for (const row of shuffle(rng, fromBank)) {
@@ -423,9 +424,10 @@ export function genKind(
         }
       }
       if (byWord.size < want) {
-        const extraWords = type1WordPool(bank).filter(
-          (w) => !exclude.has(displayVocabLabel(w).toLowerCase()),
-        )
+        const extraWords = [
+          ...type1WordPool(bank),
+          ...lessonWordsForText(bank).filter((w) => !isCompoundVocabLabel(w)),
+        ].filter((w) => !exclude.has(displayVocabLabel(w).toLowerCase()))
         for (const raw of shuffle(rng, extraWords)) {
           if (byWord.size >= want) break
           const key = displayVocabLabel(raw).toLowerCase()
@@ -527,10 +529,11 @@ export function genKind(
       }
     }
     case 'dictee': {
-      /** Grille 2 colonnes ; count = nb de mots ; trait continu, sans bordure. */
+      /** Grille 2 colonnes ; count = nb de mots ; trait continu, sans bordure.
+       * Pas besoin d’image : bassin texte complet (lecture + Voc A1–B1). */
       const want = Math.max(1, Math.min(16, n))
-      const pool = type1Words(bank, rng)
-      const words = shuffle(rng, pool.length ? pool : [...bank.words])
+      const pool = lessonWordsForText(bank)
+      const words = shuffle(rng, pool.length ? [...pool] : [...bank.words])
         .slice(0, Math.min(want, pool.length || bank.words.length))
         .map(displayVocabLabel)
       return {
@@ -649,22 +652,27 @@ export function genKind(
           pool.push(raw)
         }
       } else {
+        /** Type 15 : mots (audio si dispo) — image non requise. */
         const candidates = [
           ...bank.audioPairs.map((p) => p.word),
           ...bank.wordSearchWords,
+          ...lessonWordsForText(bank),
           ...lessonWordsBySound(bank),
           ...bank.words,
           ...type1WordPool(bank),
         ]
         const seen = new Set<string>()
         pool = []
+        const withAudio: string[] = []
+        const withoutAudio: string[] = []
         for (const raw of candidates) {
           const key = raw.toLowerCase()
           if (seen.has(key) || exclude.has(key)) continue
-          if (!soutienAudioFor(raw)) continue
           seen.add(key)
-          pool.push(raw)
+          if (soutienAudioFor(raw)) withAudio.push(raw)
+          else withoutAudio.push(raw)
         }
+        pool = [...withAudio, ...withoutAudio]
       }
 
       const items: MathItem[] = []
@@ -702,13 +710,14 @@ export function genKind(
       }
     }
     case 'mots-meles': {
-      /** Liste 12 mots + grille 15×15 (H/V) ; lettres sans accents ni ligatures. */
-      const puzzle = buildWordSearch(
-        rng,
-        bank.wordSearchWords.map(displayVocabLabel),
-        15,
-        12,
-      )
+      /** Liste 12 mots + grille 15×15 (H/V) ; lettres sans accents ni ligatures.
+       * Image non requise : bassin texte (banque + lecture + Voc). */
+      const textPool = lessonWordsForText(bank).map(displayVocabLabel)
+      const searchPool = [
+        ...bank.wordSearchWords.map(displayVocabLabel),
+        ...textPool,
+      ]
+      const puzzle = buildWordSearch(rng, searchPool, 15, 12)
       const hits = [...wordSearchHitCells(puzzle.placements)]
       return {
         instruction: 'Entourez les mots dans la grille.',
