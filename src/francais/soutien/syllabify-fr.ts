@@ -28,6 +28,8 @@ const ORAL_VOWEL_GROUPS = [
   'eil',
   'euil',
   'ueil',
+  'ère',
+  'ére',
   'au',
   'eu',
   'œu',

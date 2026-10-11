@@ -1,4 +1,4 @@
-/** 16 types d’exercice Soutien FR — identiques pour chaque document (lettre / son). */
+/** 17 types d’exercice Soutien FR — identiques pour chaque document (lettre / son). */
 export const SOUTIEN_KINDS = [
   {
     id: 'mots',
@@ -35,7 +35,7 @@ export const SOUTIEN_KINDS = [
     id: 'completer',
     label: '5 · Compléter les mots',
     description:
-      'Mots type 1 ; blanc CV/VC 2 lettres + QR ; cadre type 1 ; audio téléchargeable.',
+      'Mots type 1 ; 12 mots / 2 colonnes par défaut ; blanc CV/VC + QR ; cadre type 1.',
     instruction: 'Écoutez et Complétez les mots.',
     preferredColumns: 1 as const,
   },
@@ -43,7 +43,7 @@ export const SOUTIEN_KINDS = [
     id: 'ecouter',
     label: '6 · Entendre le son',
     description:
-      'Grille (1–3 col.) + QR ; 9 mots par défaut (max. 30) ; corrigé thème ; audio téléchargeable.',
+      'Grille (1–3 col.) + QR ; 9 mots / 3 colonnes par défaut (max. 30) ; audio téléchargeable.',
     instruction: 'Écoutez les mots et cochez quand vous entendez le son.',
     preferredColumns: 1 as const,
   },
@@ -51,7 +51,7 @@ export const SOUTIEN_KINDS = [
     id: 'ecouter-image',
     label: '7 · Entendre avec image',
     description:
-      'Grille images (3–5 col.) ; cadre type 1 ; 20 par défaut (max. 30) ; audio téléchargeable.',
+      'Grille images (3–5 col.) ; 15 mots / 5 colonnes par défaut (max. 30) ; cadre type 1.',
     instruction: 'Écoutez. Cochez quand vous entendez le son (regardez l’image).',
     preferredColumns: 1 as const,
   },
@@ -59,7 +59,7 @@ export const SOUTIEN_KINDS = [
     id: 'syllabe-son',
     label: '8 · Syllabe du son',
     description:
-      'Grille (1–3 col.) ; mots ≥ 2 syllabes ; découpe scolaire ; audio téléchargeable.',
+      'Grille (1–3 col.) ; 18 mots par défaut ; mots ≥ 2 syllabes ; découpe scolaire.',
     instruction: 'À quelle syllabe entendez-vous le son ?',
     preferredColumns: 1 as const,
   },
@@ -67,7 +67,7 @@ export const SOUTIEN_KINDS = [
     id: 'lettres-phrase',
     label: '9 · Mot dans la phrase',
     description:
-      'Phrases illustratives ; lettres sous le trait ; hors mots types 1 et 5 ; audio phrases.',
+      '9 phrases par défaut ; lettres sous le trait ; hors mots types 1 et 5 ; audio phrases.',
     instruction: 'Écrivez le mot correct à l’aide des lettres.',
     preferredColumns: 1 as const,
   },
@@ -75,14 +75,14 @@ export const SOUTIEN_KINDS = [
     id: 'determinants',
     label: '10 · Déterminants',
     description:
-      'Phrases à trous ; l’ / le / la / les ; voyelle simple colorée (Alpha : pas an/au/eau…).',
+      '9 phrases par défaut ; l’ / le / la / les ; voyelle simple colorée (Alpha).',
     instruction: 'Complétez avec les déterminants l’, le, la ou les.',
     preferredColumns: 1 as const,
   },
   {
     id: 'dictee',
     label: '11 · Dictée',
-    description: 'Grille 2 colonnes : n° + trait continu ; nombre de mots réglable.',
+    description: 'Grille 2 colonnes : n° + trait continu ; 8 mots par défaut.',
     instruction: 'Dictée. Écrivez les mots correctement !',
     preferredColumns: 1 as const,
   },
@@ -90,7 +90,7 @@ export const SOUTIEN_KINDS = [
     id: 'compter',
     label: '12 · Compter le son',
     description:
-      'Phrases en Playwrite (sans lignes) + compter le phonème simple ; écart questions ×2.',
+      '8 phrases par défaut en Playwrite + compter le phonème ; trait de réponse plein.',
     instruction: 'Combien de fois entendez-vous le son ?',
     preferredColumns: 1 as const,
   },
@@ -98,7 +98,7 @@ export const SOUTIEN_KINDS = [
     id: 'ordre',
     label: '13 · Remettre en ordre',
     description:
-      'Remettre les mots dans l’ordre — pastilles Gattegno ; sans coloriage des lettres du son.',
+      '9 phrases par défaut — pastilles Gattegno ; sans coloriage des lettres du son.',
     instruction: 'Mettez les mots dans l’ordre.',
     preferredColumns: 1 as const,
   },
@@ -106,21 +106,29 @@ export const SOUTIEN_KINDS = [
     id: 'lire',
     label: '14 · Phrases à lire',
     description:
-      'Phrases à lire ; voyelle simple colorée (Alpha : pas an/au/eau…) ; 10 à 20 questions.',
+      '20 phrases par défaut ; voyelle simple colorée (Alpha : pas an/au/eau…).',
     instruction: 'Lisez les phrases.',
     preferredColumns: 1 as const,
   },
   {
     id: 'associer-audio',
-    label: '15 · Écouter et associer',
+    label: '15 · Classer les mots',
     description:
-      'QR audio + mots à relier ; sans bordure ni soulignement ; jusqu’à 10 mots.',
-    instruction: 'Écoutez (QR) et reliez au bon mot.',
+      '8 QR numérotés + 8 mots cadrés avec trait ; 1 à 3 séries (défaut 2) ; hors mots type 1.',
+    instruction: 'Écoutez et classez les mots dans l’ordre.',
+    preferredColumns: 1 as const,
+  },
+  {
+    id: 'associer-image',
+    label: '16 · Classer les images',
+    description:
+      'Comme le type 15, avec les images du type 1 de la fiche ; 1 série par défaut (max. 3).',
+    instruction: 'Écoutez et classez les images dans l’ordre.',
     preferredColumns: 1 as const,
   },
   {
     id: 'mots-meles',
-    label: '16 · Mots mêlés',
+    label: '17 · Mots mêlés',
     description:
       'Liste de 12 mots (sans bordure) + grille 15×15 ; lettres agrandies ; pas de ligatures Æ/Œ.',
     instruction: 'Entourez les mots dans la grille.',

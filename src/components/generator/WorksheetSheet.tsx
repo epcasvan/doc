@@ -121,7 +121,8 @@ export function WorksheetSheet({
     (page.blocks?.length ?? 0) > 1 ||
     isTcmDomain(page.domain) ||
     isTcmCfrDomain(page.domain) ||
-    page.domain === TCF_DOMAIN
+    page.domain === TCF_DOMAIN ||
+    page.domain === 'soutien-fr'
   const showHeader = pageNumber === 1 && !isJeuxSheet
   const parity = sheetIndex % 2 === 1 ? 'sheet-odd' : 'sheet-even'
   const isDraftPadPage = page.items.some(
@@ -147,6 +148,7 @@ export function WorksheetSheet({
       'count-sound',
       'read-phrases',
       'audio-match',
+      'audio-order',
       'word-search',
     ].includes(item.layout),
   )
@@ -265,6 +267,7 @@ export function WorksheetSheet({
                         'count-sound',
                         'read-phrases',
                         'audio-match',
+                        'audio-order',
                         'word-search',
                       ].includes(item.layout),
                     )

@@ -292,7 +292,7 @@ export function resolveSoutienSelection(
 
   // bankId depuis le type : soutien-{bankId}-{kind}
   const kindMatch =
-    /-(mots|lettres|syllabes|relier|completer|ecouter-image|ecouter|syllabe-son|lettres-phrase|determinants|dictee|compter|ordre|lire|associer-audio|mots-meles)$/.exec(
+    /-(mots|lettres|syllabes|relier|completer|ecouter-image|ecouter|syllabe-son|lettres-phrase|determinants|dictee|compter|ordre|lire|associer-image|associer-audio|mots-meles)$/.exec(
       exerciseType,
     )
   if (kindMatch && exerciseType.startsWith('soutien-')) {

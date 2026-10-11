@@ -36,6 +36,7 @@ import {
   PhraseWriteBlock,
 } from './item-view/phrase'
 import {
+  AudioOrderBlock,
   CountIconsBlock,
   CountSoundBlock,
   DeterminantFillBlock,
@@ -139,6 +140,7 @@ export function ItemView({
     item.layout === 'count-sound' ||
     item.layout === 'read-phrases' ||
     item.layout === 'audio-match' ||
+    item.layout === 'audio-order' ||
     item.layout === 'word-search' ||
     item.layout === 'theory' ||
     item.layout === 'glossary' ||
@@ -285,6 +287,9 @@ export function ItemView({
         {item.layout === 'read-phrases' && <ReadPhrasesBlock item={item} />}
         {item.layout === 'audio-match' && (
           <AudioMatchBlock item={item} mode={mode} />
+        )}
+        {item.layout === 'audio-order' && (
+          <AudioOrderBlock item={item} mode={mode} />
         )}
         {item.layout === 'word-search' && (
           <WordSearchBlock item={item} mode={mode} />

@@ -144,6 +144,7 @@ import {
 } from '@/francais/soutien/download-mots-audio'
 import { type1WordPool, type1Words } from '@/francais/soutien/generate'
 import { parseSoutienType, SOUTIEN_KINDS } from '@/francais/soutien/kinds'
+import { buildSoutienSeriesPages, soutienFicheTitle } from '@/francais/soutien/series'
 import {
   findSoutienByBankId,
   resolveSoutienSelection,
@@ -895,69 +896,8 @@ export function GeneratorPage({ onLogout }: { onLogout: () => void }) {
     soutienKind === 'lettres-phrase' ||
     soutienKind === 'determinants' ||
     soutienKind === 'dictee' ||
-    soutienKind === 'associer-audio'
-  /** Type 5 de la fiche (même thème) — fixe le nb de questions du type 10. */
-  const soutienType5Count = (() => {
-    if (!isSoutienFr) return undefined
-    for (const page of pages) {
-      for (const block of pageBlocks(page)) {
-        if (
-          parseSoutienType(block.exerciseType)?.kind === 'completer' &&
-          block.topic === activeBlock.topic
-        ) {
-          return block.count
-        }
-      }
-    }
-    return undefined
-  })()
-  const isSoutienDetLocked =
-    soutienKind === 'determinants' && soutienType5Count != null
-  /** Aligne le type 10 sur le nombre de mots du type 5 (même thème). */
-  const soutienDetSyncKey = useMemo(() => {
-    if (!isSoutienFr) return ''
-    return pages
-      .flatMap((page) =>
-        pageBlocks(page).map((block) => {
-          const kind = parseSoutienType(block.exerciseType)?.kind
-          if (kind === 'completer' || kind === 'determinants') {
-            return `${block.topic}:${kind}:${block.count}`
-          }
-          return ''
-        }),
-      )
-      .filter(Boolean)
-      .join('|')
-  }, [isSoutienFr, pages])
-  useEffect(() => {
-    if (!soutienDetSyncKey) return
-    setPages((current) => {
-      const type5ByTopic = new Map<string, number>()
-      for (const page of current) {
-        for (const block of pageBlocks(page)) {
-          if (parseSoutienType(block.exerciseType)?.kind !== 'completer') continue
-          if (!type5ByTopic.has(block.topic)) {
-            type5ByTopic.set(block.topic, block.count)
-          }
-        }
-      }
-      if (type5ByTopic.size === 0) return current
-      let changed = false
-      const next = current.map((page) => {
-        const blocks = pageBlocks(page)
-        let updated = page
-        blocks.forEach((block, bi) => {
-          if (parseSoutienType(block.exerciseType)?.kind !== 'determinants') return
-          const want = type5ByTopic.get(block.topic)
-          if (want == null || block.count === want) return
-          changed = true
-          updated = setPageBlock(updated, bi, { ...block, count: want })
-        })
-        return updated
-      })
-      return changed ? next : current
-    })
-  }, [soutienDetSyncKey])
+    soutienKind === 'associer-audio' ||
+    soutienKind === 'associer-image'
   /** Types 5 / 6 / 8 : grille 1–3 colonnes. */
   const isSoutienCols123 =
     soutienKind === 'completer' ||
@@ -1056,8 +996,9 @@ export function GeneratorPage({ onLogout }: { onLogout: () => void }) {
                         ? 12
                         : soutienKind === 'lire'
                           ? 20
-                          : soutienKind === 'associer-audio'
-                            ? 10
+                          : soutienKind === 'associer-audio' ||
+                              soutienKind === 'associer-image'
+                            ? 3
                             : 30
   const activeSheetBlock = worksheets[safeSheetIndex]?.blocks[safeBlockIndex]
   const bankQuestionCap = activeSheetBlock?.bankQuestionCap
@@ -1284,7 +1225,10 @@ export function GeneratorPage({ onLogout }: { onLogout: () => void }) {
       firstTypeFor(activePage.domain, activeBlock.topic, activeBlock.track)
     if (!nextType) return null
     const fields = applyType(nextType, activeBlock)
-    const count = Math.min(fields.count ?? 4, 4)
+    const isSoutienNext = nextType.topic.startsWith('soutien-')
+    const count = isSoutienNext
+      ? (fields.count ?? 6)
+      : Math.min(fields.count ?? 4, 4)
     return {
       topic: nextType.topic,
       exerciseType: nextType.id,
@@ -1457,9 +1401,19 @@ export function GeneratorPage({ onLogout }: { onLogout: () => void }) {
         current.course === 'Mathématiques' ? { ...current, course: 'Français' } : current,
       )
     }
-    if (next === 'jeux' || next === 'calligraphie') {
+    if (next === 'jeux' || next === 'calligraphie' || next === 'soutien-fr') {
       setEvalMode(false)
       setMode('student')
+    }
+    if (next === 'soutien-fr') {
+      const sel = resolveSoutienSelection(type.topic, type.id)
+      if (sel) {
+        setInstitutional((current) => ({
+          ...current,
+          course: 'Français',
+          documentTitle: soutienFicheTitle(sel.letter),
+        }))
+      }
     }
   }
 
@@ -1511,11 +1465,19 @@ export function GeneratorPage({ onLogout }: { onLogout: () => void }) {
       const parsed = parseSoutienType(activeBlock.exerciseType)
       const kind = parsed?.kind ?? 'mots'
       const theme = soutienThemeById(topic)
-      const firstSound = theme?.letters[0]?.sounds[0]
+      const firstLetter = theme?.letters[0]
+      const firstSound = firstLetter?.sounds[0]
       const nextId = firstSound
         ? soutienExerciseTypeId(firstSound.bankId, kind)
         : `soutien-a-${kind}`
       const type = exerciseTypeById[nextId] ?? firstTypeFor('soutien-fr', topic)
+      if (firstLetter) {
+        setInstitutional((current) => ({
+          ...current,
+          course: 'Français',
+          documentTitle: soutienFicheTitle(firstLetter),
+        }))
+      }
       // Changer de thème : première lettre, repartir de la banque.
       updatePage({
         topic,
@@ -1545,6 +1507,11 @@ export function GeneratorPage({ onLogout }: { onLogout: () => void }) {
     const nextId = soutienExerciseTypeId(sound.bankId, kind)
     const type = exerciseTypeById[nextId]
     if (!type) return
+    setInstitutional((current) => ({
+      ...current,
+      course: 'Français',
+      documentTitle: soutienFicheTitle(letter),
+    }))
     updatePage({
       topic: soutienSelection.theme.id,
       ...applyType(type, {
@@ -1566,6 +1533,11 @@ export function GeneratorPage({ onLogout }: { onLogout: () => void }) {
     const nextId = soutienExerciseTypeId(sound.bankId, kind)
     const type = exerciseTypeById[nextId]
     if (!type) return
+    setInstitutional((current) => ({
+      ...current,
+      course: 'Français',
+      documentTitle: soutienFicheTitle(soutienSelection.letter),
+    }))
     updatePage({
       topic: soutienSelection.theme.id,
       ...applyType(type, {
@@ -1675,6 +1647,29 @@ export function GeneratorPage({ onLogout }: { onLogout: () => void }) {
     setSheetIndex(0)
     setBlockIndex(0)
     setPages(buildTcfRandomTestPages(tcfNiveau, nextSeed))
+  }
+
+  /** Soutien FR : Générer prépare les 12 fiches du son sélectionné. */
+  function drawSoutienSeries() {
+    const sel =
+      soutienSelection ??
+      resolveSoutienSelection(activeBlock.topic, activeBlock.exerciseType)
+    if (!sel) {
+      generate()
+      return
+    }
+    const nextSeed = randomSeed()
+    setSeed(nextSeed)
+    setMode('student')
+    setEvalMode(false)
+    setSheetIndex(0)
+    setBlockIndex(0)
+    setInstitutional((current) => ({
+      ...current,
+      course: 'Français',
+      documentTitle: soutienFicheTitle(sel.letter),
+    }))
+    setPages(buildSoutienSeriesPages(sel.sound.bankId, sel.theme.id))
   }
 
   function generate() {
@@ -2820,24 +2815,18 @@ export function GeneratorPage({ onLogout }: { onLogout: () => void }) {
                   }
                   aria-invalid={questionsInputOverflow}
                   title={
-                    isSoutienDetLocked
-                      ? 'Aligné sur le nombre de mots du type 5 (même thème).'
-                      : bankOverflow
-                        ? `La banque de cet enregistrement ne contient que ${bankQuestionCap} questions.`
-                        : questionsOverflow
-                          ? 'Trop de questions pour une seule fiche A4. Réduisez le nombre ou ajoutez une page.'
-                          : undefined
+                    bankOverflow
+                      ? `La banque de cet enregistrement ne contient que ${bankQuestionCap} questions.`
+                      : questionsOverflow
+                        ? 'Trop de questions pour une seule fiche A4. Réduisez le nombre ou ajoutez une page.'
+                        : undefined
                   }
                   type="number"
                   min={1}
                   max={maxQuestions}
                   step={1}
-                  value={
-                    isSoutienDetLocked ? (soutienType5Count as number) : activeBlock.count
-                  }
-                  readOnly={isSoutienDetLocked}
+                  value={activeBlock.count}
                   onChange={(event) => {
-                    if (isSoutienDetLocked) return
                     const next = Math.max(
                       1,
                       Math.min(maxQuestions, Number(event.target.value) || 1),
@@ -2861,7 +2850,9 @@ export function GeneratorPage({ onLogout }: { onLogout: () => void }) {
                   </small>
                 ) : null}
                 {isSoutienCompleter && !activeBlock.soutienCompleterLibre ? (
-                  <small className="muted">Nombre de mots à compléter (max. 18).</small>
+                  <small className="muted">
+                    Nombre de mots à compléter (défaut 12 · 2 colonnes · max. 18).
+                  </small>
                 ) : null}
                 {soutienKind === 'ecouter' ? (
                   <small className="muted">
@@ -2870,40 +2861,45 @@ export function GeneratorPage({ onLogout }: { onLogout: () => void }) {
                 ) : null}
                 {soutienKind === 'ecouter-image' ? (
                   <small className="muted">
-                    Images à écouter / cocher (défaut 20 · max. 30).
+                    Images à écouter / cocher (défaut 15 · 5 colonnes · max. 30).
                   </small>
                 ) : null}
                 {soutienKind === 'syllabe-son' ? (
                   <small className="muted">
-                    Cartes (mots ≥ 2 syllabes · max. 18 · audio téléchargeable).
+                    Cartes (défaut 18 · mots ≥ 2 syllabes · max. 18 · audio téléchargeable).
                   </small>
                 ) : null}
                 {soutienKind === 'lettres-phrase' ? (
                   <small className="muted">
-                    Nombre de phrases (max. 16 · lettres remélangées à chaque tirage).
+                    Nombre de phrases (défaut 9 · max. 16 · lettres remélangées à chaque tirage).
                   </small>
                 ) : null}
                 {soutienKind === 'determinants' ? (
-                  <small className="muted">
-                    {isSoutienDetLocked
-                      ? 'Nombre de phrases aligné sur les mots du type 5 (même thème).'
-                      : 'Nombre de phrases (max. 16 · ajoutez un type 5 pour l’aligner).'}
-                  </small>
+                  <small className="muted">Nombre de phrases (défaut 9 · max. 16).</small>
                 ) : null}
                 {soutienKind === 'dictee' ? (
-                  <small className="muted">Nombre de mots à écrire (max. 16).</small>
+                  <small className="muted">Nombre de mots à écrire (défaut 8 · max. 16).</small>
                 ) : null}
                 {soutienKind === 'compter' ? (
-                  <small className="muted">Nombre de phrases à compter (max. 12).</small>
+                  <small className="muted">Nombre de phrases à compter (défaut 8 · max. 12).</small>
                 ) : null}
                 {soutienKind === 'ordre' ? (
-                  <small className="muted">Nombre de phrases à remettre en ordre (max. 12).</small>
+                  <small className="muted">
+                    Nombre de phrases à remettre en ordre (défaut 9 · max. 12).
+                  </small>
                 ) : null}
                 {soutienKind === 'lire' ? (
-                  <small className="muted">Nombre de phrases à lire (défaut 10, max. 20).</small>
+                  <small className="muted">Nombre de phrases à lire (défaut 20 · max. 20).</small>
                 ) : null}
                 {soutienKind === 'associer-audio' ? (
-                  <small className="muted">Nombre de mots à associer (max. 10).</small>
+                  <small className="muted">
+                    Nombre de séries (8 QR + 8 mots cadrés · défaut 2 · max. 3).
+                  </small>
+                ) : null}
+                {soutienKind === 'associer-image' ? (
+                  <small className="muted">
+                    Nombre de séries (8 QR + 8 images type 1 · défaut 1 · max. 3).
+                  </small>
                 ) : null}
                 {bankOverflow ? (
                   <p className="questions-overflow-hint" role="status">
@@ -3675,9 +3671,23 @@ export function GeneratorPage({ onLogout }: { onLogout: () => void }) {
                   <button
                     className="print-chip is-icon is-generate"
                     type="button"
-                    onClick={isTcf ? drawTcfTest : generate}
-                    aria-label={isTcf ? 'Tirer un test au hasard' : 'Générer'}
-                    title={isTcf ? 'Tirer un test au hasard' : 'Générer'}
+                    onClick={
+                      isTcf ? drawTcfTest : isSoutienFr ? drawSoutienSeries : generate
+                    }
+                    aria-label={
+                      isTcf
+                        ? 'Tirer un test au hasard'
+                        : isSoutienFr
+                          ? 'Préparer toutes les fiches du son'
+                          : 'Générer'
+                    }
+                    title={
+                      isTcf
+                        ? 'Tirer un test au hasard'
+                        : isSoutienFr
+                          ? 'Préparer toutes les fiches du son'
+                          : 'Générer'
+                    }
                   >
                     <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden>
                       <path

@@ -168,50 +168,43 @@ export function applyType(type: ExerciseType, prev?: ExerciseBlock): Partial<Exe
                     ? { count: 5 }
                     : soutienKind === 'syllabes'
                       ? { count: 3 }
-                      : soutienKind === 'relier'
+                      : soutienKind === 'relier' || soutienKind === 'completer'
                         ? { count: 12 }
-                        : soutienKind === 'completer' ||
-                            soutienKind === 'ecouter' ||
-                            soutienKind === 'ecouter-image' ||
-                            soutienKind === 'syllabe-son' ||
-                            soutienKind === 'lettres-phrase' ||
-                            soutienKind === 'determinants' ||
-                            soutienKind === 'dictee' ||
-                            soutienKind === 'compter' ||
-                            soutienKind === 'ordre' ||
-                            soutienKind === 'lire' ||
-                            soutienKind === 'associer-audio'
-                          ? {
-                              count:
-                                soutienKind === 'lettres-phrase' || soutienKind === 'ordre'
-                                  ? 6
-                                  : soutienKind === 'ecouter'
-                                    ? 9
-                                    : soutienKind === 'ecouter-image'
-                                      ? 20
-                                      : soutienKind === 'compter'
-                                        ? 5
-                                        : soutienKind === 'lire'
-                                          ? 10
-                                          : 8,
-                            }
-                        : isLecture || isSoutienFr
-                          ? { count: 6 }
-                        : isGeoCalc || isCountIcons
-                          ? { count: 2 }
-                          : isFrenchCom
-                            ? { count: 4 }
-                            : isFrenchLang
-                              ? { count: 6 }
-                              : isFormes
-                                ? { count: 5 }
-                                : isCadrans
-                                  ? { count: 6 }
-                                  : isDroites || isConstruire
-                                    ? { count: 5 }
-                                    : isTransform
-                                      ? { count: 4 }
-                                      : {}),
+                        : soutienKind === 'ecouter'
+                          ? { count: 9 }
+                          : soutienKind === 'ecouter-image'
+                            ? { count: 15 }
+                            : soutienKind === 'syllabe-son'
+                              ? { count: 18 }
+                              : soutienKind === 'lettres-phrase' ||
+                                  soutienKind === 'determinants' ||
+                                  soutienKind === 'ordre'
+                                ? { count: 9 }
+                                : soutienKind === 'dictee' || soutienKind === 'compter'
+                                  ? { count: 8 }
+                                  : soutienKind === 'lire'
+                                    ? { count: 20 }
+                                    : soutienKind === 'associer-audio'
+                                      ? { count: 2 }
+                                      : soutienKind === 'associer-image'
+                                        ? { count: 1 }
+                                        : isLecture || isSoutienFr
+                                          ? { count: 6 }
+                                          : isGeoCalc || isCountIcons
+                                            ? { count: 2 }
+                                            : isFrenchCom
+                                              ? { count: 4 }
+                                              : isFrenchLang
+                                                ? { count: 6 }
+                                                : isFormes
+                                                  ? { count: 5 }
+                                                  : isCadrans
+                                                    ? { count: 6 }
+                                                    : isDroites || isConstruire
+                                                      ? { count: 5 }
+                                                      : isTransform
+                                                        ? { count: 4 }
+                                                        : {}),
     ...(isVocabPool
       ? {
           columns: 1,
@@ -301,30 +294,26 @@ export function applyType(type: ExerciseType, prev?: ExerciseBlock): Partial<Exe
           soutienCompleterLibre: undefined,
           soutienCompleterEntries: undefined,
         }),
-    ...(soutienKind === 'relier'
+    ...(soutienKind === 'relier' || soutienKind === 'completer'
       ? {
           columns:
             prev?.exerciseType === type.id
               ? Math.min(2, Math.max(1, prev.columns ?? 2))
               : 2,
         }
-      : soutienKind === 'completer' ||
-          soutienKind === 'ecouter' ||
-          soutienKind === 'syllabe-son'
+      : soutienKind === 'ecouter' || soutienKind === 'syllabe-son'
         ? {
             columns:
               prev?.exerciseType === type.id
                 ? Math.min(3, Math.max(1, prev.columns ?? 3))
-                : soutienKind === 'completer'
-                  ? 2
-                  : 3,
+                : 3,
           }
         : soutienKind === 'ecouter-image'
           ? {
               columns:
                 prev?.exerciseType === type.id
-                  ? Math.min(5, Math.max(3, prev.columns ?? 3))
-                  : 3,
+                  ? Math.min(5, Math.max(3, prev.columns ?? 5))
+                  : 5,
             }
           : {}),
     ...(isCalli

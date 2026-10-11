@@ -92,6 +92,7 @@ export type Layout =
   | 'count-sound'
   | 'read-phrases'
   | 'audio-match'
+  | 'audio-order'
   | 'word-search'
   | 'theory'
   | 'glossary'
@@ -553,7 +554,7 @@ export type MathItem = {
   }>
   /** Soutien FR type 14 : phrases à lire (voyelle colorée). */
   readPhrases?: string[]
-  /** Soutien FR type 15 : QR audio à gauche + mots à relier à droite. */
+  /** Soutien FR type 15 (ancien) : QR audio + mots à relier. */
   audioMatchRows?: Array<{
     /** Mot entendu (ordre d’écoute / QR). */
     listenWord: string
@@ -561,7 +562,24 @@ export type MathItem = {
     /** Mot affiché sur la même ligne (mélangé). */
     showWord: string
   }>
-  /** Soutien FR type 16 : mots mêlés. */
+  /**
+   * Soutien FR types 15 / 16 : classer dans l’ordre.
+   * 8 QR numérotés + 8 cases réponse (mots ou images).
+   */
+  audioOrder?: {
+    mode: 'words' | 'images'
+    clips: Array<{
+      word: string
+      audioSrc?: string
+    }>
+    slots: Array<{
+      word?: string
+      imageSrc?: string
+      /** Numéro d’écoute correct (1–8). */
+      correctNum: number
+    }>
+  }
+  /** Soutien FR type 17 : mots mêlés. */
   wordSearch?: {
     size: number
     grid: string[][]
@@ -839,10 +857,15 @@ export type ExerciseBlock = {
     imageSrc?: string
   }>
   /**
-   * Soutien FR type 9 : mots à exclure (déjà tirés en types 1 et 5
+   * Soutien FR type 9 / 15 : mots à exclure (déjà tirés en types 1 et 5
    * sur la fiche / la série). Rempli par `buildWorksheets`.
    */
   soutienExcludeWords?: string[]
+  /**
+   * Soutien FR type 16 : mots / images du type 1 de la fiche.
+   * Rempli par `buildWorksheets` (même tirage que la page type 1).
+   */
+  soutienType1Words?: string[]
   /**
    * Domaine Calligraphie : un mot ou une phrase par ligne
    * (texte brut du panneau enseignant·e).

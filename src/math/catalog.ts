@@ -857,7 +857,7 @@ for (const v of VOWEL_TOPICS) {
   )
 }
 
-/** Soutien FR : 16 types × chaque lettre / son (thèmes Voyelles → Sons complexes). */
+/** Soutien FR : 17 types × chaque lettre / son (thèmes Voyelles → Sons complexes). */
 for (const def of allSoutienBankDefs()) {
   for (const kind of SOUTIEN_KINDS) {
     exerciseTypes.push(

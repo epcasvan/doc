@@ -1384,6 +1384,7 @@ function buildSingleBlock(
     soutienCompleterLibre: config.soutienCompleterLibre,
     soutienCompleterEntries: config.soutienCompleterEntries,
     excludeWords: config.soutienExcludeWords,
+    type1Words: config.soutienType1Words,
   })
   if (soutien) {
     return {
@@ -1568,8 +1569,13 @@ export function buildPage(
 }
 
 /** Mots déjà tirés en types 1 (vocab) et 5 (compléter) sur toute la série. */
-function collectSoutienReservedWords(pages: PageConfig[], seed: number): string[] {
+function collectSoutienReservedWords(pages: PageConfig[], seed: number): {
+  reserved: string[]
+  type1Words: string[]
+} {
   const reserved = new Set<string>()
+  const type1Words: string[] = []
+  const type1Seen = new Set<string>()
   pages.forEach((page, pageIndex) => {
     const pageSeed = seed + pageIndex * 7919
     pageBlocks(page).forEach((block, blockIndex) => {
@@ -1582,7 +1588,12 @@ function collectSoutienReservedWords(pages: PageConfig[], seed: number): string[
         if (kind === 'mots' && item.layout === 'vocab-table') {
           for (const entry of item.vocabEntries ?? []) {
             const label = entry.label?.trim()
-            if (label) reserved.add(label.toLowerCase())
+            if (!label) continue
+            reserved.add(label.toLowerCase())
+            if (!type1Seen.has(label.toLowerCase())) {
+              type1Seen.add(label.toLowerCase())
+              type1Words.push(label)
+            }
           }
         }
         if (kind === 'completer' && item.layout === 'syllable-complete') {
@@ -1594,16 +1605,20 @@ function collectSoutienReservedWords(pages: PageConfig[], seed: number): string[
       }
     })
   })
-  return [...reserved]
+  return { reserved: [...reserved], type1Words }
 }
 
 export function buildWorksheets(pages: PageConfig[], seed: number): WorksheetPage[] {
   let exerciseNo = 1
   const out: WorksheetPage[] = []
-  const reserved = collectSoutienReservedWords(pages, seed)
+  const { reserved, type1Words } = collectSoutienReservedWords(pages, seed)
   const pagesWithExclude =
-    reserved.length > 0
-      ? pages.map((page) => ({ ...page, soutienExcludeWords: reserved }))
+    reserved.length > 0 || type1Words.length > 0
+      ? pages.map((page) => ({
+          ...page,
+          soutienExcludeWords: reserved.length > 0 ? reserved : page.soutienExcludeWords,
+          soutienType1Words: type1Words.length > 0 ? type1Words : page.soutienType1Words,
+        }))
       : pages
 
   pagesWithExclude.forEach((page, index) => {

@@ -85,9 +85,13 @@ export type SoutienGenerateOptions = {
   /** Type 5 : mode libre. */
   soutienCompleterLibre?: boolean
   soutienCompleterEntries?: ReadonlyArray<SoutienCompleterEntry>
-  /** Type 9 : mots déjà tirés (types 1 et 5) à exclure. */
+  /** Types 9 / 15 : mots déjà tirés (types 1 et 5) à exclure. */
   excludeWords?: readonly string[]
+  /** Type 16 : mots du type 1 de la fiche (images). */
+  type1Words?: readonly string[]
 }
+
+const AUDIO_ORDER_CLIPS = 8
 
 const DISTRACTOR_LETTERS = 'bcdfghjklmnpqrstvwxzBCDFGHIJKLMNPQRSTVWXZ'.split('')
 
@@ -811,30 +815,101 @@ function genKind(
         ],
       }
     }
-    case 'associer-audio': {
-      /** QR audio (gauche) + mots mélangés à relier (droite) ; count ≤ 10. */
-      const want = Math.max(1, Math.min(10, n))
-      const pairs = shuffle(rng, [...bank.audioPairs]).slice(
-        0,
-        Math.min(want, bank.audioPairs.length),
+    case 'associer-audio':
+    case 'associer-image': {
+      /**
+       * Type 15 (mots) / 16 (images type 1) :
+       * count = nb de séries (1–3) ; chaque série = 8 QR numérotés + 8 cases réponse.
+       */
+      const seriesCount = Math.max(1, Math.min(3, n))
+      const mode = kind === 'associer-image' ? 'images' : 'words'
+      const exclude = new Set(
+        (options?.excludeWords ?? []).map((w) => w.toLowerCase()),
       )
-      const listenWords = pairs.map((p) => displayVocabLabel(p.word))
-      const showWords = shuffle(rng, [...listenWords])
+      const used = new Set<string>()
+
+      const takeWords = (pool: string[], want: number): string[] => {
+        const available = pool.filter((w) => {
+          const key = w.toLowerCase()
+          return !used.has(key) && !exclude.has(key)
+        })
+        const picked = shuffle(rng, available).slice(0, Math.min(want, available.length))
+        for (const w of picked) used.add(w.toLowerCase())
+        if (picked.length >= want) return picked
+        /** Repli : réutiliser hors déjà tirés dans la série courante. */
+        const refill = shuffle(
+          rng,
+          pool.filter((w) => !picked.some((p) => p.toLowerCase() === w.toLowerCase())),
+        )
+        return [...picked, ...refill].slice(0, want)
+      }
+
+      let pool: string[]
+      if (mode === 'images') {
+        const pinned = (options?.type1Words ?? []).filter((w) => Boolean(soutienImageFor(w)))
+        const fallback = type1WordPool(bank).filter((w) => Boolean(soutienImageFor(w)))
+        pool = pinned.length >= AUDIO_ORDER_CLIPS ? pinned : fallback
+      } else {
+        const candidates = [
+          ...bank.audioPairs.map((p) => p.word),
+          ...bank.wordSearchWords,
+          ...lessonWordsBySound(bank),
+          ...bank.words,
+        ]
+        const seen = new Set<string>()
+        pool = []
+        for (const raw of candidates) {
+          const key = raw.toLowerCase()
+          if (seen.has(key) || exclude.has(key)) continue
+          if (!soutienAudioFor(raw)) continue
+          seen.add(key)
+          pool.push(raw)
+        }
+        if (pool.length < AUDIO_ORDER_CLIPS) {
+          for (const raw of type1WordPool(bank)) {
+            const key = raw.toLowerCase()
+            if (seen.has(key) || exclude.has(key)) continue
+            if (!soutienAudioFor(raw)) continue
+            seen.add(key)
+            pool.push(raw)
+          }
+        }
+      }
+
+      const items: MathItem[] = []
+      for (let s = 0; s < seriesCount; s++) {
+        const rawWords = takeWords(pool, AUDIO_ORDER_CLIPS)
+        while (rawWords.length < AUDIO_ORDER_CLIPS && pool.length > 0) {
+          rawWords.push(pool[rawWords.length % pool.length]!)
+        }
+        const clips = rawWords.slice(0, AUDIO_ORDER_CLIPS).map((word) => ({
+          word: displayVocabLabel(word),
+          audioSrc: soutienAudioFor(word) ?? undefined,
+        }))
+        const slotSource = clips.map((clip, i) => ({
+          word: mode === 'words' ? clip.word : undefined,
+          imageSrc:
+            mode === 'images'
+              ? soutienImageFor(rawWords[i]!) || undefined
+              : undefined,
+          correctNum: i + 1,
+        }))
+        const slots = shuffle(rng, slotSource)
+        items.push({
+          layout: 'audio-order',
+          audioOrder: { mode, clips, slots },
+          answer: clips.map((c, i) => `${i + 1} → ${c.word}`).join(' · '),
+          themeGraphemes: [...bank.graphemes],
+        })
+      }
+
       return {
-        instruction: 'Écoutez (QR) et reliez au bon mot.',
+        instruction:
+          mode === 'images'
+            ? 'Écoutez et classez les images dans l’ordre.'
+            : 'Écoutez et classez les mots dans l’ordre.',
         preferredColumns: 1,
-        items: [
-          {
-            layout: 'audio-match',
-            audioMatchRows: listenWords.map((listenWord, i) => ({
-              listenWord,
-              audioSrc: soutienAudioFor(pairs[i]!.word) ?? soutienAudioFor(listenWord),
-              showWord: showWords[i] ?? listenWord,
-            })),
-            answer: listenWords.map((w, i) => `${i + 1} → ${w}`).join(' · '),
-            themeGraphemes: [...bank.graphemes],
-          },
-        ],
+        items,
       }
     }
     case 'mots-meles': {

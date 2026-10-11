@@ -52,7 +52,7 @@ export type SoutienVowelBank = {
    * Chaque jeton : `mot/catégorie` (couleurs Gattegno).
    */
   orderSentences: readonly (readonly string[])[]
-  /** Type 16 — mots mêlés (12 mots, grille 15×15). */
+  /** Type 17 — mots mêlés (12 mots, grille 15×15). */
   wordSearchWords: readonly string[]
 }
 

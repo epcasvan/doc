@@ -582,3 +582,85 @@ export function SyllableCompleteBlock({ item, mode }: { item: MathItem; mode: Pr
     </div>
   )
 }
+
+/** Types 15 / 16 — 8 QR numérotés + 8 cases (mots ou images) avec trait. */
+export function AudioOrderBlock({ item, mode }: { item: MathItem; mode: PreviewMode }) {
+  const data = item.audioOrder
+  const show = mode === 'answers'
+  const clips = data?.clips ?? []
+  const slots = data?.slots ?? []
+  const modeKind = data?.mode ?? 'words'
+  const [qrSrcs, setQrSrcs] = useState<string[]>(() => clips.map(() => ''))
+
+  const audioKey = clips.map((c) => c.audioSrc ?? '').join('|')
+  useEffect(() => {
+    let cancelled = false
+    const srcs = audioKey.split('|')
+    const run = async () => {
+      const next = await Promise.all(
+        srcs.map(async (audioSrc) => {
+          if (!audioSrc) return ''
+          try {
+            return await QRCode.toDataURL(soutienAudioAbsoluteUrl(audioSrc), {
+              margin: 1,
+              width: 96,
+              errorCorrectionLevel: 'M',
+              color: { dark: '#111111', light: '#ffffff' },
+            })
+          } catch {
+            return ''
+          }
+        }),
+      )
+      if (!cancelled) setQrSrcs(next)
+    }
+    void run()
+    return () => {
+      cancelled = true
+    }
+  }, [audioKey])
+
+  if (!data) return null
+
+  return (
+    <div
+      className={`audio-order-block audio-order-block--${modeKind}`}
+      aria-label={modeKind === 'images' ? 'Classer les images' : 'Classer les mots'}
+    >
+      <div className="audio-order-qr-row">
+        {clips.map((clip, index) => (
+          <div className="audio-order-qr-cell" key={`ao-qr-${index}-${clip.word}`}>
+            <span className="audio-order-qr-num">{index + 1}</span>
+            <div className="audio-order-qr">
+              {qrSrcs[index] ? (
+                <img src={qrSrcs[index]} alt={`Audio ${index + 1}`} />
+              ) : (
+                <span className="audio-order-qr-ph" aria-hidden />
+              )}
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className="audio-order-answer-row">
+        {slots.map((slot, index) => (
+          <div className="audio-order-slot" key={`ao-slot-${index}-${slot.word ?? slot.correctNum}`}>
+            {modeKind === 'images' ? (
+              <div className="audio-order-slot-image">
+                {slot.imageSrc ? (
+                  <img src={slot.imageSrc} alt="" />
+                ) : (
+                  <span className="vocab-card-empty" aria-hidden />
+                )}
+              </div>
+            ) : (
+              <div className="audio-order-slot-word">{slot.word ?? ''}</div>
+            )}
+            <div className={`audio-order-slot-line${show ? ' filled' : ''}`}>
+              {show ? String(slot.correctNum) : '\u00a0'}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}

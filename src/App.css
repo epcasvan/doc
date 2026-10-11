@@ -1490,6 +1490,7 @@ html,body,#root{
 .worksheet-sheet .exercise-grid:has(.layout-count-sound),
 .worksheet-sheet .exercise-grid:has(.layout-read-phrases),
 .worksheet-sheet .exercise-grid:has(.layout-audio-match),
+.worksheet-sheet .exercise-grid:has(.layout-audio-order),
 .worksheet-sheet .exercise-grid:has(.layout-word-search){
   grid-template-columns:minmax(0,1fr)!important;
 }
@@ -1605,6 +1606,9 @@ html,body,#root{
   .audio-match-table,.audio-match-table td{border:none!important}
   .audio-match-num,.audio-match-key{color:var(--purple)!important}
   .audio-match-word-text .syllable-vowel{color:var(--purple)!important;text-decoration:none!important}
+  .audio-order-slot{border-color:#d8dde6!important}
+  .audio-order-qr-num,.audio-order-slot-line{color:var(--purple)!important}
+  .audio-order-slot-line{border-bottom-color:var(--purple)!important}
   .word-search-list,.word-search-list-cell{border:none!important}
   .word-search-list-word{border-bottom:none!important}
   .word-search-cell.is-hit{
@@ -2292,7 +2296,7 @@ html,body,#root{
   width:100%!important;
   max-width:100%;
   border:none;
-  gap:0 12px; /* padding inter-lignes réduit (−10 px vs avant) */
+  gap:30px 12px; /* +30 px vertical entre cadres image */
   align-items:stretch;
   justify-items:stretch;
   grid-auto-rows:1fr;
@@ -2343,7 +2347,7 @@ html,body,#root{
   grid-template-columns:repeat(var(--ss-cols,3),minmax(0,1fr));
   width:100%;
   border:none;
-  gap:8px 14px;
+  gap:3px 14px; /* −5 px vertical entre lignes */
   align-items:stretch;
 }
 .syllable-sound-card{
@@ -2398,17 +2402,17 @@ html,body,#root{
   height:auto
 }
 .phrase-scramble-table td{
-  border:none;padding:6px 6px;vertical-align:middle;box-sizing:border-box
+  border:none;padding:11px 6px;vertical-align:middle;box-sizing:border-box /* +10 px vertical entre mots */
 }
 .phrase-scramble-num{
   width:1.8em;font-size:14px;font-weight:700;color:var(--purple);
   text-align:left;white-space:nowrap;vertical-align:top;padding-top:10px
 }
 .phrase-scramble-image{
-  width:32mm;text-align:center;vertical-align:middle
+  width:35mm;text-align:center;vertical-align:middle
 }
 .phrase-scramble-image img{
-  max-width:27mm;max-height:27mm;object-fit:contain;display:inline-block /* +50 % vs 18 mm */
+  max-width:30mm;max-height:30mm;object-fit:contain;display:inline-block /* +10 % vs 27 mm */
 }
 .phrase-scramble-text{
   font-size:13px;font-weight:400;line-height:1.35;color:var(--ink);
@@ -2423,7 +2427,7 @@ html,body,#root{
 .phrase-scramble-blank{
   display:inline-block;
   min-width:5ch;
-  border-bottom:2px dotted var(--purple);
+  border-bottom:2px solid var(--purple); /* trait plein (pas de points) */
   text-align:center;
   margin:0 3px;
   padding:0 2px;
@@ -2506,7 +2510,7 @@ html,body,#root{
 }
 .dictee-write-line.filled{border-bottom-style:solid}
 
-/* Soutien FR type 12 — Playwrite (police seule, sans lignes calli) ; écart questions ×2 */
+/* Soutien FR type 12 — Playwrite ; prompt aligné au n° ; +15 px / +30 px */
 .count-sound-block{width:100%;min-width:0}
 .count-sound-table{
   width:100%;border-collapse:collapse;border:none;table-layout:fixed
@@ -2516,13 +2520,14 @@ html,body,#root{
 }
 .count-sound-num{
   width:2em;
-  padding:12px 4px;
+  padding:8px 4px 0;
   font-size:14px;font-weight:700;color:var(--purple);
-  text-align:center;vertical-align:top
+  text-align:center;vertical-align:top;line-height:1.35
 }
-.count-sound-prompt-cell{padding:8px 10px 2px}
+.count-sound-prompt-cell{padding:8px 10px 0;vertical-align:top}
 .count-sound-prompt{
-  font-size:13px;font-weight:400;color:var(--ink)
+  font-size:13px;font-weight:400;color:var(--ink);line-height:1.35;
+  display:inline-block;vertical-align:top
 }
 .count-sound-blank{
   display:inline-block;
@@ -2536,7 +2541,7 @@ html,body,#root{
   vertical-align:baseline;
 }
 .count-sound-blank.filled{border-bottom-style:solid}
-.count-sound-phrase-cell{padding:2px 10px 20px}
+.count-sound-phrase-cell{padding:15px 10px 50px} /* +15 entre phrases ; +30 entre questions */
 .count-sound-phrase{
   margin:0;
   font-family:'Calli Playwrite',cursive;
@@ -2607,7 +2612,71 @@ html,body,#root{
 }
 .audio-match-key{font-size:11px;font-weight:700;color:var(--purple);margin-left:4px}
 
-/* Soutien FR type 16 — mots mêlés ; sans bordure liste ; lettres ×2 ; gap −25 % (ex-30px) */
+/* Soutien FR types 15 / 16 — classer (QR numérotés + cases cadrées) */
+.audio-order-block{
+  display:flex;flex-direction:column;gap:14px;width:100%;min-width:0;
+  margin-bottom:18px
+}
+.audio-order-qr-row{
+  display:grid;
+  grid-template-columns:repeat(8,minmax(0,1fr));
+  gap:6px 4px;
+  width:100%;
+  align-items:start
+}
+.audio-order-qr-cell{
+  display:flex;flex-direction:column;align-items:center;gap:3px;min-width:0
+}
+.audio-order-qr-num{
+  font-size:12px;font-weight:700;color:var(--purple);line-height:1
+}
+.audio-order-qr{
+  width:14mm;height:14mm;display:flex;align-items:center;justify-content:center
+}
+.audio-order-qr img{width:100%;height:100%;object-fit:contain;display:block}
+.audio-order-qr-ph{
+  display:block;width:100%;height:100%;border:1px solid #ddd;border-radius:2px;background:#f7f7f7
+}
+.audio-order-answer-row{
+  display:grid;
+  grid-template-columns:repeat(8,minmax(0,1fr));
+  gap:8px 6px;
+  width:100%;
+  align-items:stretch
+}
+.audio-order-slot{
+  display:flex;flex-direction:column;
+  border:1px solid #d8dde6; /* cadre type 1 */
+  border-radius:8px;
+  padding:5px 4px 6px;
+  box-sizing:border-box;
+  background:#fff;
+  min-width:0;min-height:0;
+  align-items:center;gap:4px
+}
+.audio-order-slot-word{
+  font-size:11px;font-weight:400;color:var(--ink);text-align:center;
+  line-height:1.2;width:100%;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-height:1.2em
+}
+.audio-order-slot-image{
+  display:flex;align-items:center;justify-content:center;
+  width:100%;min-height:16mm;padding:2px
+}
+.audio-order-slot-image img{
+  max-width:100%;max-height:16mm;object-fit:contain;display:block
+}
+.audio-order-slot-line{
+  display:block;width:100%;
+  min-height:1.25em;line-height:1.25em;
+  border-bottom:2px solid var(--purple);
+  text-align:center;
+  color:var(--purple);font-weight:700;font-size:12px;
+  box-sizing:border-box
+}
+.audio-order-slot-line.filled{border-bottom-style:solid}
+
+/* Soutien FR type 17 — mots mêlés ; sans bordure liste ; lettres ×2 ; gap −25 % (ex-30px) */
 .word-search-block{
   display:flex;flex-direction:column;gap:22.5px;width:100%;min-width:0
 }
@@ -4233,6 +4302,7 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
 .worksheet-sheet.is-soutien-fr .read-phrases-text,
 .worksheet-sheet.is-soutien-fr .audio-match-word,
 .worksheet-sheet.is-soutien-fr .audio-match-word-text,
+.worksheet-sheet.is-soutien-fr .audio-order-slot-word,
 .worksheet-sheet.is-soutien-fr .word-search-list-cell,
 .worksheet-sheet.is-soutien-fr .word-search-list-word,
 .worksheet-sheet.is-soutien-fr .letter-table-cell,
@@ -4266,6 +4336,7 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
 .worksheet-sheet.is-soutien-fr .read-phrases-text,
 .worksheet-sheet.is-soutien-fr .audio-match-word,
 .worksheet-sheet.is-soutien-fr .audio-match-word-text,
+.worksheet-sheet.is-soutien-fr .audio-order-slot-word,
 .worksheet-sheet.is-soutien-fr .word-search-list-cell,
 .worksheet-sheet.is-soutien-fr .word-search-list-word,
 .worksheet-sheet.is-soutien-fr .letter-table-cell,
