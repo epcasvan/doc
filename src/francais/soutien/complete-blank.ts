@@ -4,7 +4,7 @@
  * Le blanc ne doit pas non plus chevaucher un son complexe voisin
  * (ex. bouleau → pas [bo]uleau : o fait partie de ou).
  */
-import { displayVocabLabel } from '@/francais/display-vocab-label'
+import { displayVocabLabel, isCompoundVocabLabel } from '@/francais/display-vocab-label'
 import { tokenizeAlpha } from '@/jeux/alpha-phonics'
 import type { SoutienComplete, SoutienVowelBank } from './banks'
 
@@ -178,9 +178,8 @@ export function completesFromType1Words(
   const out: SoutienComplete[] = []
   const seen = new Set<string>()
   for (const raw of words) {
+    if (isCompoundVocabLabel(raw)) continue
     const word = displayVocabLabel(raw)
-    // Mots composés multi-mots : pas de trous fiables (ex. table de nuit).
-    if (/\s/.test(word)) continue
     const key = word.toLowerCase()
     if (!key || seen.has(key)) continue
     const found = findCvVcBlank(word, bank.graphemes, allowComplex)

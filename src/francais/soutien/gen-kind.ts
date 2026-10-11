@@ -20,7 +20,7 @@ import {
   wordHasLessonSound,
 } from './phoneme'
 import { buildWordSearch, wordSearchHitCells } from './word-search'
-import { type1WordPool, type1Words } from './type1-words'
+import { isSoutienType1Word, type1WordPool, type1Words } from './type1-words'
 import type { SoutienGenerateOptions } from './generate-options'
 import {
   filterSoutienLevel,
@@ -151,8 +151,7 @@ export function genKind(
       const colCount = options?.columns === 1 ? 1 : 2
       // Tirage type 1 élargi, puis composés seulement sur ces mots (pas d’autres).
       const type1 = type1Words(bank, rng, Math.max(16, want))
-      const singleToken = type1.filter((w) => !/\s/.test(displayVocabLabel(w)))
-      const pool = compoundsForType1Words(bank, singleToken)
+      const pool = compoundsForType1Words(bank, type1)
       const compounds = shuffle(rng, pool).slice(0, Math.min(want, pool.length))
       const mid = colCount === 2 ? Math.ceil(compounds.length / 2) : compounds.length
       const groups =
@@ -400,44 +399,35 @@ export function genKind(
       const byWord = new Map<string, ScrambleRow[]>()
       const curated = soutienPhrasesFor(bank.id)
       const curatedRows = curated ? filterSoutienLevel(curated.type9, options?.level) : []
-      if (curatedRows.length > 0) {
-        /** Phrases rédigées (par niveau) ; mots des types 1 / 5 en dernier recours. */
-        const excludedRows: ScrambleRow[] = []
-        for (const row of curatedRows) {
-          const scramble: ScrambleRow = { sentence: row.sentence, word: row.word, letters: '' }
-          if (exclude.has(displayVocabLabel(row.word).toLowerCase())) {
-            excludedRows.push(scramble)
-            continue
-          }
-          const key = displayVocabLabel(row.word).toLowerCase()
-          const list = byWord.get(key) ?? []
-          list.push(scramble)
-          byWord.set(key, list)
-        }
-        if (byWord.size < want) {
-          for (const scramble of shuffle(rng, excludedRows)) {
-            if (byWord.size >= want) break
-            const key = displayVocabLabel(scramble.word).toLowerCase()
-            const list = byWord.get(key) ?? []
-            list.push(scramble)
-            byWord.set(key, list)
-          }
-        }
-      } else {
+      /** Phrases rédigées avec image ; pas de composés. */
+      for (const row of curatedRows) {
+        if (!isSoutienType1Word(row.word)) continue
+        if (exclude.has(displayVocabLabel(row.word).toLowerCase())) continue
+        const scramble: ScrambleRow = { sentence: row.sentence, word: row.word, letters: '' }
+        const key = displayVocabLabel(row.word).toLowerCase()
+        const list = byWord.get(key) ?? []
+        list.push(scramble)
+        byWord.set(key, list)
+      }
+      if (byWord.size < want) {
         const fromBank = bank.scrambles.filter(
-          (row) => !exclude.has(displayVocabLabel(row.word).toLowerCase()),
+          (row) =>
+            isSoutienType1Word(row.word) &&
+            !exclude.has(displayVocabLabel(row.word).toLowerCase()),
         )
-        /** Compléter avec d’autres mots du son (hors exclus), phrases regenerées. */
+        for (const row of shuffle(rng, fromBank)) {
+          if (byWord.size >= want) break
+          const key = displayVocabLabel(row.word).toLowerCase()
+          if (byWord.has(key)) continue
+          byWord.set(key, [row])
+        }
+      }
+      if (byWord.size < want) {
         const extraWords = type1WordPool(bank).filter(
           (w) => !exclude.has(displayVocabLabel(w).toLowerCase()),
         )
-        for (const row of fromBank) {
-          const key = displayVocabLabel(row.word).toLowerCase()
-          const list = byWord.get(key) ?? []
-          list.push(row)
-          byWord.set(key, list)
-        }
-        for (const raw of extraWords) {
+        for (const raw of shuffle(rng, extraWords)) {
+          if (byWord.size >= want) break
           const key = displayVocabLabel(raw).toLowerCase()
           if (byWord.has(key)) continue
           const phrases = buildPhrasesForWord(raw, bank.sound, byWord.size)

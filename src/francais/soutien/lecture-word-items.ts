@@ -13,7 +13,7 @@ export const LECTURE_WORD_ITEMS: readonly LectureWordItem[] = [
   { label: "actrice", phonemes: ["/a/", "/k/", "/t/", "/r/", "/i/", "/s/"] },
   { label: "addition", phonemes: ["/a/", "/d/", "/i/", "/sjɔ̃/"] },
   { label: "agenda", phonemes: ["/a/", "/ʒ/", "/ɑ̃/", "/d/"] },
-  { label: "agente-entretien", phonemes: ["/a/", "/ʒ/", "/ɑ̃/", "/t/", "/e/", "/r/", "/jɛ̃/"] },
+  { label: "agente-d-entretien", phonemes: ["/a/", "/ʒ/", "/ɑ̃/", "/t/", "/e/", "/r/", "/jɛ̃/"] },
   { label: "agricultrice", phonemes: ["/a/", "/g/", "/r/", "/i/", "/k/", "/y/", "/l/", "/t/", "/s/"] },
   { label: "aigle", phonemes: ["/ɛ/", "/g/", "/l/"] },
   { label: "ail", phonemes: ["/ɛ/", "/l/"] },

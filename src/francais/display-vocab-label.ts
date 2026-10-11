@@ -25,3 +25,11 @@ export function displayVocabLabel(raw: string): string {
   s = s.replace(/([dlmnstc])'\s+/gi, "$1'")
   return s
 }
+
+/**
+ * Mot composé / multi-mots (ex. machine à laver, agente d’entretien).
+ * Soutien types 1 / 5 / 9 : un seul mot simple.
+ */
+export function isCompoundVocabLabel(raw: string): boolean {
+  return /\s/.test(displayVocabLabel(raw))
+}

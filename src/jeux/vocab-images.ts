@@ -3766,8 +3766,8 @@ export const VOCAB_IMAGE_THEMES: VocabImageTheme[] = [
         "src": "/lib/images/vocabulaire/metiers/actrice.webp"
       },
       {
-        "label": "agente entretien",
-        "src": "/lib/images/vocabulaire/metiers/agente-entretien.webp"
+        "label": "agente d'entretien",
+        "src": "/lib/images/vocabulaire/metiers/agente-d-entretien.webp"
       },
       {
         "label": "agriculteur",
@@ -8902,8 +8902,8 @@ export const VOCAB_IMAGE_BY_LABEL: Record<string, string> = {
   "zéphyr": "/lib/images/vocabulaire/meteo/zéphyr.webp",
   "éclaircie": "/lib/images/vocabulaire/meteo/éclaircie.webp",
   "actrice": "/lib/images/vocabulaire/metiers/actrice.webp",
-  "agente entretien": "/lib/images/vocabulaire/metiers/agente-entretien.webp",
-  "agente-entretien": "/lib/images/vocabulaire/metiers/agente-entretien.webp",
+  "agente d'entretien": "/lib/images/vocabulaire/metiers/agente-d-entretien.webp",
+  "agente-d-entretien": "/lib/images/vocabulaire/metiers/agente-d-entretien.webp",
   "agriculteur": "/lib/images/vocabulaire/metiers/agriculteur.webp",
   "agricultrice": "/lib/images/vocabulaire/metiers/agricultrice.webp",
   "aide soignante": "/lib/images/vocabulaire/metiers/aide-soignante.webp",
