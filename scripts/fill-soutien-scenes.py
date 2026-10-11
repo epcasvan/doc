@@ -18,6 +18,30 @@ spec.loader.exec_module(mod)
 
 RANGES = mod.RANGES
 
+# le / la / les / l’ (apostrophe typographique ou droite) — type 10.
+DET_RE = re.compile(r"\b([Ll]es|[Ll]e|[Ll]a)\b|([Ll][’'])(?=\S)")
+
+
+def blank_determinants(sentence: str) -> list[dict[str, str]] | None:
+    """Découpe la phrase en parts texte / trous le·la·les·l’."""
+    parts: list[dict[str, str]] = []
+    i = 0
+    for m in DET_RE.finditer(sentence):
+        if m.start() > i:
+            parts.append({"t": sentence[i : m.start()]})
+        raw = m.group(0)
+        if raw.lower().startswith("l'") or raw.lower().startswith("l’"):
+            blank = "L’" if raw[0].isupper() else "l’"
+        else:
+            blank = raw
+        parts.append({"blank": blank})
+        i = m.end()
+    if i == 0:
+        return None
+    if i < len(sentence):
+        parts.append({"t": sentence[i:]})
+    return parts
+
 
 def load_articles() -> dict[str, dict[str, str]]:
     nouns = mod.load_nouns()
@@ -154,11 +178,31 @@ def main() -> None:
 
         type12 = [{"level": level, "sentence": s} for level in ("a1", "a2", "b1") for s in take(level, 4, "type12")]
         type14 = [{"level": level, "sentence": s} for level in ("a1", "a2", "b1") for s in take(level, 6, "type14")]
+
+        # Type 10 : mêmes scènes, trous sur le / la / les / l’ (peut partager le texte avec 9/12/14).
+        type10: list[dict] = []
+        seen_det: set[str] = set()
+        by_level_det: dict[str, list[str]] = {"a1": [], "a2": [], "b1": []}
+        for level, _word, sentence in candidates:
+            if sentence in seen_det:
+                continue
+            parts = blank_determinants(sentence)
+            if not parts:
+                continue
+            seen_det.add(sentence)
+            by_level_det[level].append(sentence)
+            type10.append({"level": level, "sentence": sentence, "parts": parts})
+        for level in ("a1", "a2", "b1"):
+            if len(by_level_det[level]) < 3:
+                failures.append(
+                    f"{bank}: seulement {len(by_level_det[level])}/3 phrases type10 {level}"
+                )
+
         if any(f.startswith(f"{bank}:") or f.startswith(f"{bank} ") for f in failures):
             continue
-        payload = {"type9": type9, "type12": type12, "type14": type14}
+        payload = {"type9": type9, "type10": type10, "type12": type12, "type14": type14}
         (OUT / f"{bank}.json").write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-        print(f"{bank}: {len(order)} mots")
+        print(f"{bank}: {len(order)} mots · type10 {len(type10)}")
 
     if failures:
         print("\n".join(failures[:80]))

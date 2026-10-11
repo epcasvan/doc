@@ -187,6 +187,7 @@ export function ResultPanel({
                 ) : null}
                 {isSoutienFr &&
                 (soutienKind === 'lettres-phrase' ||
+                  soutienKind === 'determinants' ||
                   soutienKind === 'compter' ||
                   soutienKind === 'lire') ? (
                   <button
@@ -197,9 +198,11 @@ export function ResultPanel({
                     title={
                       soutienKind === 'lettres-phrase'
                         ? 'Télécharger les phrases type 9 (JSON à corriger)'
-                        : soutienKind === 'compter'
-                          ? 'Télécharger les phrases type 12 (JSON à corriger)'
-                          : 'Télécharger les phrases type 14 (JSON à corriger)'
+                        : soutienKind === 'determinants'
+                          ? 'Télécharger les phrases type 10 (JSON à corriger)'
+                          : soutienKind === 'compter'
+                            ? 'Télécharger les phrases type 12 (JSON à corriger)'
+                            : 'Télécharger les phrases type 14 (JSON à corriger)'
                     }
                   >
                     <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden>

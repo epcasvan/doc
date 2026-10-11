@@ -1,5 +1,5 @@
 /**
- * Téléchargement des phrases Soutien (types 9 / 12 / 14) pour édition manuelle.
+ * Téléchargement des phrases Soutien (types 9 / 10 / 12 / 14) pour édition manuelle.
  * Source de vérité : `src/francais/soutien/phrases/<bankId>.json` (niveaux a1 / a2 / b1).
  */
 import type { SoutienVowelBank } from './banks'
@@ -28,6 +28,19 @@ export function downloadSoutienType9Phrases(bank: SoutienVowelBank) {
   triggerDownload(`soutien-type9-${bank.id}.json`, `${JSON.stringify(rows, null, 2)}\n`)
 }
 
+/** Type 10 — déterminants l’ / le / la / les. */
+export function downloadSoutienType10Phrases(bank: SoutienVowelBank) {
+  const curated = soutienPhrasesFor(bank.id)?.type10
+  const rows =
+    curated && curated.length > 0
+      ? curated
+      : bank.determinants.map((d) => ({
+          sentence: d.sentence,
+          parts: d.parts,
+        }))
+  triggerDownload(`soutien-type10-${bank.id}.json`, `${JSON.stringify(rows, null, 2)}\n`)
+}
+
 /** Type 12 — compter le son. */
 export function downloadSoutienType12Phrases(bank: SoutienVowelBank) {
   const curated = soutienPhrasesFor(bank.id)?.type12
@@ -44,7 +57,7 @@ export function downloadSoutienType14Phrases(bank: SoutienVowelBank) {
 
 /** Fichiers regroupés servis sous /soutien-phrases/ (export de `src/francais/soutien/phrases/`). */
 export function soutienPhrasesPublicUrl(
-  kind: 'type9' | 'type12' | 'type14',
+  kind: 'type9' | 'type10' | 'type12' | 'type14',
   all = true,
 ): string {
   if (all) return `/soutien-phrases/${kind}-all.json`

@@ -391,6 +391,1808 @@
       "sentence": "Ce matin, quand Vincent voit la vigne avec Véronique, il est très content."
     }
   ],
+  "type10": [
+    {
+      "level": "a1",
+      "sentence": "Vincent voit la vache avec Véronique.",
+      "parts": [
+        {
+          "t": "Vincent voit "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " vache avec Véronique."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Vincent voit le cheval avec Véronique.",
+      "parts": [
+        {
+          "t": "Vincent voit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cheval avec Véronique."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Vincent voit la chèvre avec Véronique.",
+      "parts": [
+        {
+          "t": "Vincent voit "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " chèvre avec Véronique."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Véronique nourrit la vache avec Vincent.",
+      "parts": [
+        {
+          "t": "Véronique nourrit "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " vache avec Vincent."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Véronique nourrit le cheval avec Vincent.",
+      "parts": [
+        {
+          "t": "Véronique nourrit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cheval avec Vincent."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Véronique nourrit la chèvre avec Vincent.",
+      "parts": [
+        {
+          "t": "Véronique nourrit "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " chèvre avec Vincent."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Vincent voit la vache avec Véronique.",
+      "parts": [
+        {
+          "t": "Ce matin, Vincent voit "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " vache avec Véronique."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Vincent voit le cheval avec Véronique.",
+      "parts": [
+        {
+          "t": "Ce matin, Vincent voit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cheval avec Véronique."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Vincent voit la chèvre avec Véronique.",
+      "parts": [
+        {
+          "t": "Ce matin, Vincent voit "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " chèvre avec Véronique."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Véronique nourrit la vache avec Vincent.",
+      "parts": [
+        {
+          "t": "Ce matin, Véronique nourrit "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " vache avec Vincent."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Véronique nourrit le cheval avec Vincent.",
+      "parts": [
+        {
+          "t": "Ce matin, Véronique nourrit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cheval avec Vincent."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Véronique nourrit la chèvre avec Vincent.",
+      "parts": [
+        {
+          "t": "Ce matin, Véronique nourrit "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " chèvre avec Vincent."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Vincent voit la vache avec Véronique, il est très content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Vincent voit "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " vache avec Véronique, il est très content."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Vincent voit le cheval avec Véronique, il est très content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Vincent voit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cheval avec Véronique, il est très content."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Vincent voit la chèvre avec Véronique, il est très content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Vincent voit "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " chèvre avec Véronique, il est très content."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Véronique nourrit la vache avec Vincent, il est très content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Véronique nourrit "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " vache avec Vincent, il est très content."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Véronique nourrit le cheval avec Vincent, il est très content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Véronique nourrit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " cheval avec Vincent, il est très content."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Véronique nourrit la chèvre avec Vincent, il est très content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Véronique nourrit "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " chèvre avec Vincent, il est très content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Vincent porte la cravate avec Véronique.",
+      "parts": [
+        {
+          "t": "Vincent porte "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " cravate avec Véronique."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Véronique range la cravate avec Vincent.",
+      "parts": [
+        {
+          "t": "Véronique range "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " cravate avec Vincent."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Vincent porte la cravate avec Véronique.",
+      "parts": [
+        {
+          "t": "Ce matin, Vincent porte "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " cravate avec Véronique."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Véronique range la cravate avec Vincent.",
+      "parts": [
+        {
+          "t": "Ce matin, Véronique range "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " cravate avec Vincent."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Vincent porte la cravate avec Véronique, il est très content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Vincent porte "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " cravate avec Véronique, il est très content."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Véronique range la cravate avec Vincent, il est très content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Véronique range "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " cravate avec Vincent, il est très content."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Vincent voit le vélo avec Véronique.",
+      "parts": [
+        {
+          "t": "Vincent voit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " vélo avec Véronique."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Vincent voit la voiture avec Véronique.",
+      "parts": [
+        {
+          "t": "Vincent voit "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " voiture avec Véronique."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Vincent voit la ville avec Véronique.",
+      "parts": [
+        {
+          "t": "Vincent voit "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " ville avec Véronique."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Vincent voit le vendredi avec Véronique.",
+      "parts": [
+        {
+          "t": "Vincent voit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " vendredi avec Véronique."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Vincent voit le lavabo avec Véronique.",
+      "parts": [
+        {
+          "t": "Vincent voit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " lavabo avec Véronique."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Vincent voit le rêve avec Véronique.",
+      "parts": [
+        {
+          "t": "Vincent voit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " rêve avec Véronique."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Vincent voit le livre avec Véronique.",
+      "parts": [
+        {
+          "t": "Vincent voit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " livre avec Véronique."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Vincent voit le vase avec Véronique.",
+      "parts": [
+        {
+          "t": "Vincent voit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " vase avec Véronique."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Vincent voit la cave avec Véronique.",
+      "parts": [
+        {
+          "t": "Vincent voit "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " cave avec Véronique."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Vincent voit le verre avec Véronique.",
+      "parts": [
+        {
+          "t": "Vincent voit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " verre avec Véronique."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Vincent voit le voyage avec Véronique.",
+      "parts": [
+        {
+          "t": "Vincent voit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " voyage avec Véronique."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Vincent voit la vie avec Véronique.",
+      "parts": [
+        {
+          "t": "Vincent voit "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " vie avec Véronique."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Vincent voit le vent avec Véronique.",
+      "parts": [
+        {
+          "t": "Vincent voit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " vent avec Véronique."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Vincent voit le voleur avec Véronique.",
+      "parts": [
+        {
+          "t": "Vincent voit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " voleur avec Véronique."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Vincent voit le volant avec Véronique.",
+      "parts": [
+        {
+          "t": "Vincent voit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " volant avec Véronique."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Vincent voit la vigne avec Véronique.",
+      "parts": [
+        {
+          "t": "Vincent voit "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " vigne avec Véronique."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Véronique montre le vélo à Vincent.",
+      "parts": [
+        {
+          "t": "Véronique montre "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " vélo à Vincent."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Véronique montre la voiture à Vincent.",
+      "parts": [
+        {
+          "t": "Véronique montre "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " voiture à Vincent."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Véronique montre la ville à Vincent.",
+      "parts": [
+        {
+          "t": "Véronique montre "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " ville à Vincent."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Véronique montre le vendredi à Vincent.",
+      "parts": [
+        {
+          "t": "Véronique montre "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " vendredi à Vincent."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Véronique montre le lavabo à Vincent.",
+      "parts": [
+        {
+          "t": "Véronique montre "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " lavabo à Vincent."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Véronique montre le rêve à Vincent.",
+      "parts": [
+        {
+          "t": "Véronique montre "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " rêve à Vincent."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Véronique montre le livre à Vincent.",
+      "parts": [
+        {
+          "t": "Véronique montre "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " livre à Vincent."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Véronique montre le vase à Vincent.",
+      "parts": [
+        {
+          "t": "Véronique montre "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " vase à Vincent."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Véronique montre la cave à Vincent.",
+      "parts": [
+        {
+          "t": "Véronique montre "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " cave à Vincent."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Véronique montre le verre à Vincent.",
+      "parts": [
+        {
+          "t": "Véronique montre "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " verre à Vincent."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Véronique montre le voyage à Vincent.",
+      "parts": [
+        {
+          "t": "Véronique montre "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " voyage à Vincent."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Véronique montre la vie à Vincent.",
+      "parts": [
+        {
+          "t": "Véronique montre "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " vie à Vincent."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Véronique montre le vent à Vincent.",
+      "parts": [
+        {
+          "t": "Véronique montre "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " vent à Vincent."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Véronique montre le voleur à Vincent.",
+      "parts": [
+        {
+          "t": "Véronique montre "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " voleur à Vincent."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Véronique montre le volant à Vincent.",
+      "parts": [
+        {
+          "t": "Véronique montre "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " volant à Vincent."
+        }
+      ]
+    },
+    {
+      "level": "a1",
+      "sentence": "Véronique montre la vigne à Vincent.",
+      "parts": [
+        {
+          "t": "Véronique montre "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " vigne à Vincent."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Vincent voit le vélo avec Véronique.",
+      "parts": [
+        {
+          "t": "Ce matin, Vincent voit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " vélo avec Véronique."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Vincent voit la voiture avec Véronique.",
+      "parts": [
+        {
+          "t": "Ce matin, Vincent voit "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " voiture avec Véronique."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Vincent voit la ville avec Véronique.",
+      "parts": [
+        {
+          "t": "Ce matin, Vincent voit "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " ville avec Véronique."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Vincent voit le vendredi avec Véronique.",
+      "parts": [
+        {
+          "t": "Ce matin, Vincent voit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " vendredi avec Véronique."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Vincent voit le lavabo avec Véronique.",
+      "parts": [
+        {
+          "t": "Ce matin, Vincent voit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " lavabo avec Véronique."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Vincent voit le rêve avec Véronique.",
+      "parts": [
+        {
+          "t": "Ce matin, Vincent voit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " rêve avec Véronique."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Vincent voit le livre avec Véronique.",
+      "parts": [
+        {
+          "t": "Ce matin, Vincent voit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " livre avec Véronique."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Vincent voit le vase avec Véronique.",
+      "parts": [
+        {
+          "t": "Ce matin, Vincent voit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " vase avec Véronique."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Vincent voit la cave avec Véronique.",
+      "parts": [
+        {
+          "t": "Ce matin, Vincent voit "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " cave avec Véronique."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Vincent voit le verre avec Véronique.",
+      "parts": [
+        {
+          "t": "Ce matin, Vincent voit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " verre avec Véronique."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Vincent voit le voyage avec Véronique.",
+      "parts": [
+        {
+          "t": "Ce matin, Vincent voit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " voyage avec Véronique."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Vincent voit la vie avec Véronique.",
+      "parts": [
+        {
+          "t": "Ce matin, Vincent voit "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " vie avec Véronique."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Vincent voit le vent avec Véronique.",
+      "parts": [
+        {
+          "t": "Ce matin, Vincent voit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " vent avec Véronique."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Vincent voit le voleur avec Véronique.",
+      "parts": [
+        {
+          "t": "Ce matin, Vincent voit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " voleur avec Véronique."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Vincent voit le volant avec Véronique.",
+      "parts": [
+        {
+          "t": "Ce matin, Vincent voit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " volant avec Véronique."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Vincent voit la vigne avec Véronique.",
+      "parts": [
+        {
+          "t": "Ce matin, Vincent voit "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " vigne avec Véronique."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Véronique montre le vélo à Vincent.",
+      "parts": [
+        {
+          "t": "Ce matin, Véronique montre "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " vélo à Vincent."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Véronique montre la voiture à Vincent.",
+      "parts": [
+        {
+          "t": "Ce matin, Véronique montre "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " voiture à Vincent."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Véronique montre la ville à Vincent.",
+      "parts": [
+        {
+          "t": "Ce matin, Véronique montre "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " ville à Vincent."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Véronique montre le vendredi à Vincent.",
+      "parts": [
+        {
+          "t": "Ce matin, Véronique montre "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " vendredi à Vincent."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Véronique montre le lavabo à Vincent.",
+      "parts": [
+        {
+          "t": "Ce matin, Véronique montre "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " lavabo à Vincent."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Véronique montre le rêve à Vincent.",
+      "parts": [
+        {
+          "t": "Ce matin, Véronique montre "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " rêve à Vincent."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Véronique montre le livre à Vincent.",
+      "parts": [
+        {
+          "t": "Ce matin, Véronique montre "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " livre à Vincent."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Véronique montre le vase à Vincent.",
+      "parts": [
+        {
+          "t": "Ce matin, Véronique montre "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " vase à Vincent."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Véronique montre la cave à Vincent.",
+      "parts": [
+        {
+          "t": "Ce matin, Véronique montre "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " cave à Vincent."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Véronique montre le verre à Vincent.",
+      "parts": [
+        {
+          "t": "Ce matin, Véronique montre "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " verre à Vincent."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Véronique montre le voyage à Vincent.",
+      "parts": [
+        {
+          "t": "Ce matin, Véronique montre "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " voyage à Vincent."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Véronique montre la vie à Vincent.",
+      "parts": [
+        {
+          "t": "Ce matin, Véronique montre "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " vie à Vincent."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Véronique montre le vent à Vincent.",
+      "parts": [
+        {
+          "t": "Ce matin, Véronique montre "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " vent à Vincent."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Véronique montre le voleur à Vincent.",
+      "parts": [
+        {
+          "t": "Ce matin, Véronique montre "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " voleur à Vincent."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Véronique montre le volant à Vincent.",
+      "parts": [
+        {
+          "t": "Ce matin, Véronique montre "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " volant à Vincent."
+        }
+      ]
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, Véronique montre la vigne à Vincent.",
+      "parts": [
+        {
+          "t": "Ce matin, Véronique montre "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " vigne à Vincent."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Vincent voit le vélo avec Véronique, il est très content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Vincent voit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " vélo avec Véronique, il est très content."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Vincent voit la voiture avec Véronique, il est très content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Vincent voit "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " voiture avec Véronique, il est très content."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Vincent voit la ville avec Véronique, il est très content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Vincent voit "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " ville avec Véronique, il est très content."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Vincent voit le vendredi avec Véronique, il est très content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Vincent voit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " vendredi avec Véronique, il est très content."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Vincent voit le lavabo avec Véronique, il est très content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Vincent voit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " lavabo avec Véronique, il est très content."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Vincent voit le rêve avec Véronique, il est très content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Vincent voit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " rêve avec Véronique, il est très content."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Vincent voit le livre avec Véronique, il est très content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Vincent voit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " livre avec Véronique, il est très content."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Vincent voit le vase avec Véronique, il est très content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Vincent voit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " vase avec Véronique, il est très content."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Vincent voit la cave avec Véronique, il est très content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Vincent voit "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " cave avec Véronique, il est très content."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Vincent voit le verre avec Véronique, il est très content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Vincent voit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " verre avec Véronique, il est très content."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Vincent voit le voyage avec Véronique, il est très content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Vincent voit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " voyage avec Véronique, il est très content."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Vincent voit la vie avec Véronique, il est très content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Vincent voit "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " vie avec Véronique, il est très content."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Vincent voit le vent avec Véronique, il est très content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Vincent voit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " vent avec Véronique, il est très content."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Vincent voit le voleur avec Véronique, il est très content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Vincent voit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " voleur avec Véronique, il est très content."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Vincent voit le volant avec Véronique, il est très content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Vincent voit "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " volant avec Véronique, il est très content."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Vincent voit la vigne avec Véronique, il est très content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Vincent voit "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " vigne avec Véronique, il est très content."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Véronique montre le vélo avec Vincent, il est très content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Véronique montre "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " vélo avec Vincent, il est très content."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Véronique montre la voiture avec Vincent, il est très content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Véronique montre "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " voiture avec Vincent, il est très content."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Véronique montre la ville avec Vincent, il est très content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Véronique montre "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " ville avec Vincent, il est très content."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Véronique montre le vendredi avec Vincent, il est très content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Véronique montre "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " vendredi avec Vincent, il est très content."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Véronique montre le lavabo avec Vincent, il est très content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Véronique montre "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " lavabo avec Vincent, il est très content."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Véronique montre le rêve avec Vincent, il est très content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Véronique montre "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " rêve avec Vincent, il est très content."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Véronique montre le livre avec Vincent, il est très content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Véronique montre "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " livre avec Vincent, il est très content."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Véronique montre le vase avec Vincent, il est très content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Véronique montre "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " vase avec Vincent, il est très content."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Véronique montre la cave avec Vincent, il est très content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Véronique montre "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " cave avec Vincent, il est très content."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Véronique montre le verre avec Vincent, il est très content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Véronique montre "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " verre avec Vincent, il est très content."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Véronique montre le voyage avec Vincent, il est très content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Véronique montre "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " voyage avec Vincent, il est très content."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Véronique montre la vie avec Vincent, il est très content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Véronique montre "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " vie avec Vincent, il est très content."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Véronique montre le vent avec Vincent, il est très content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Véronique montre "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " vent avec Vincent, il est très content."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Véronique montre le voleur avec Vincent, il est très content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Véronique montre "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " voleur avec Vincent, il est très content."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Véronique montre le volant avec Vincent, il est très content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Véronique montre "
+        },
+        {
+          "blank": "le"
+        },
+        {
+          "t": " volant avec Vincent, il est très content."
+        }
+      ]
+    },
+    {
+      "level": "b1",
+      "sentence": "Ce matin, quand Véronique montre la vigne avec Vincent, il est très content.",
+      "parts": [
+        {
+          "t": "Ce matin, quand Véronique montre "
+        },
+        {
+          "blank": "la"
+        },
+        {
+          "t": " vigne avec Vincent, il est très content."
+        }
+      ]
+    }
+  ],
   "type12": [
     {
       "level": "a1",

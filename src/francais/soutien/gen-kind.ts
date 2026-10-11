@@ -499,14 +499,27 @@ export function genKind(
     }
     case 'determinants': {
       /**
-       * Phrases à trous (banque liée aux mots type 5) ; count = nb de questions.
+       * Phrases à trous (scènes rédigées type 10, sinon banque) ; count = nb de questions.
        * Consigne unique en en-tête (l’ / le / la / les stylés).
        */
       const want = Math.max(1, Math.min(16, n))
-      const rows = shuffle(rng, [...bank.determinants]).slice(
-        0,
-        Math.min(want, bank.determinants.length),
-      )
+      const curated = soutienPhrasesFor(bank.id)
+      const curatedRows = curated ? filterSoutienLevel(curated.type10, options?.level) : []
+      const pool =
+        curatedRows.length > 0
+          ? curatedRows.map((row) => ({
+              parts: row.parts.map((p) =>
+                'blank' in p ? { blank: p.blank } : { t: p.t },
+              ),
+              sentence: row.sentence,
+            }))
+          : bank.determinants.map((row) => ({
+              parts: row.parts.map((p) =>
+                'blank' in p ? { blank: p.blank } : { t: p.t },
+              ),
+              sentence: row.sentence,
+            }))
+      const rows = shuffle(rng, pool).slice(0, Math.min(want, pool.length))
       return {
         instruction: 'Complétez avec les déterminants l’, le, la ou les.',
         preferredColumns: 1,
@@ -514,9 +527,7 @@ export function genKind(
           {
             layout: 'determinant-fill',
             determinantFills: rows.map((row) => ({
-              parts: row.parts.map((p) =>
-                'blank' in p ? { blank: p.blank } : { t: p.t },
-              ),
+              parts: row.parts,
               sentence: row.sentence,
             })),
             answer: rows.map((row) => row.sentence).join(' · '),

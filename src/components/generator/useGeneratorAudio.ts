@@ -18,6 +18,7 @@ import {
 } from '@/francais/soutien/download-mots-audio'
 import {
   downloadSoutienType9Phrases,
+  downloadSoutienType10Phrases,
   downloadSoutienType12Phrases,
   downloadSoutienType14Phrases,
 } from '@/francais/soutien/download-phrases'
@@ -243,6 +244,7 @@ export function useGeneratorAudio({
     const bank = soutienBankById(parsed.bankId)
     if (!bank) return
     if (parsed.kind === 'lettres-phrase') downloadSoutienType9Phrases(bank)
+    else if (parsed.kind === 'determinants') downloadSoutienType10Phrases(bank)
     else if (parsed.kind === 'compter') downloadSoutienType12Phrases(bank)
     else if (parsed.kind === 'lire') downloadSoutienType14Phrases(bank)
   }

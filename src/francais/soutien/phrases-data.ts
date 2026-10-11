@@ -1,5 +1,5 @@
 /**
- * Phrases didactiques Soutien FR (types 9 / 12 / 14) par banque et par niveau.
+ * Phrases didactiques Soutien FR (types 9 / 10 / 12 / 14) par banque et par niveau.
  *
  * Source : `./phrases/<bankId>.json` — rédigées à la main (FLE, phonétique) :
  * - A1 : 5–7 mots, ≥ 2 occurrences du son ;
@@ -20,10 +20,16 @@ export const SOUTIEN_LEVEL_FILTERS: ReadonlyArray<{ id: SoutienLevelFilter; labe
 
 export type SoutienLevelPhrase = { level: SoutienPhraseLevel; sentence: string }
 export type SoutienLevelWordPhrase = SoutienLevelPhrase & { word: string }
+export type SoutienDetPart = { t: string } | { blank: string }
+export type SoutienLevelDetPhrase = SoutienLevelPhrase & {
+  parts: SoutienDetPart[]
+}
 
 export type SoutienBankPhrases = {
   /** Type 9 — le mot (tel qu’écrit dans la phrase) et sa phrase. */
   type9: SoutienLevelWordPhrase[]
+  /** Type 10 — déterminants l’ / le / la / les. */
+  type10: SoutienLevelDetPhrase[]
   /** Type 12 — compter le son. */
   type12: SoutienLevelPhrase[]
   /** Type 14 — lire les phrases. */
@@ -41,6 +47,7 @@ for (const [path, raw] of Object.entries(FILES)) {
   if (!raw) continue
   BY_ID.set(id, {
     type9: Array.isArray(raw.type9) ? raw.type9.filter(isWordPhrase) : [],
+    type10: Array.isArray(raw.type10) ? raw.type10.filter(isDetPhrase) : [],
     type12: Array.isArray(raw.type12) ? raw.type12.filter(isPhrase) : [],
     type14: Array.isArray(raw.type14) ? raw.type14.filter(isPhrase) : [],
   })
@@ -58,6 +65,17 @@ function isWordPhrase(v: unknown): v is SoutienLevelWordPhrase {
   if (!isPhrase(v)) return false
   const w = (v as Record<string, unknown>).word
   return typeof w === 'string' && w.trim().length > 0
+}
+function isDetPart(v: unknown): v is SoutienDetPart {
+  if (!v || typeof v !== 'object') return false
+  const o = v as Record<string, unknown>
+  if (typeof o.blank === 'string' && o.blank.trim()) return true
+  return typeof o.t === 'string'
+}
+function isDetPhrase(v: unknown): v is SoutienLevelDetPhrase {
+  if (!isPhrase(v)) return false
+  const parts = (v as Record<string, unknown>).parts
+  return Array.isArray(parts) && parts.length > 0 && parts.every(isDetPart) && parts.some((p) => 'blank' in (p as object))
 }
 
 /** Phrases rédigées pour une banque (ou `null` si aucun fichier). */

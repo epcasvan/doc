@@ -75,7 +75,7 @@ export const SOUTIEN_KINDS = [
     id: 'determinants',
     label: '10 · Déterminants',
     description:
-      '9 phrases par défaut ; l’ / le / la / les ; voyelle simple colorée (Alpha).',
+      '9 phrases par défaut ; l’ / le / la / les ; scènes rédigées (niveaux A1/A2/B1) ; voyelle simple colorée (Alpha).',
     instruction: 'Complétez avec les déterminants l’, le, la ou les.',
     preferredColumns: 1 as const,
   },

@@ -175,7 +175,9 @@ export function QuestionsColumnsFields(props: QuestionsColumnsFieldsProps) {
                   </small>
                 ) : null}
                 {soutienKind === 'determinants' ? (
-                  <small className="muted">Nombre de phrases (défaut 9 · max. 16).</small>
+                  <small className="muted">
+                    Nombre de phrases (défaut 9 · max. 16). Téléchargez le JSON pour corriger.
+                  </small>
                 ) : null}
                 {soutienKind === 'dictee' ? (
                   <small className="muted">Nombre de mots à écrire (défaut 8 · max. 16).</small>
@@ -292,6 +294,7 @@ export function QuestionsColumnsFields(props: QuestionsColumnsFieldsProps) {
                 </div>
               ) : null}
               {soutienKind === 'lettres-phrase' ||
+              soutienKind === 'determinants' ||
               soutienKind === 'compter' ||
               soutienKind === 'lire' ? (
                 <div className="mode-toggle-block">
