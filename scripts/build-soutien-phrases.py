@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Génère src/francais/soutien/phrases/<banque>.json (types 9 / 12 / 14, A1/A2/B1).
 
-Chaque nom porte le son (liste curée). Les phrases sont des phrases du quotidien
-assemblées par thème, avec le bon nombre de mots et d'occurrences :
-  A1 : 6–7 mots, 2 noms · A2 : 11–12 mots, 3 noms · B1 : 15 mots, 4 noms.
+Les phrases viennent de scènes (`soutien-scenes.txt`) : un seul mot variable
+dans une phrase déjà sensée (repas, famille, animaux, maison…).
+  A1 : 5–7 mots, ≥ 2 sons · A2 : 8–12 mots, ≥ 3 · B1 : 13–15 mots, ≥ 4.
 """
 from __future__ import annotations
 
@@ -15,6 +15,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "src" / "francais" / "soutien" / "phrases"
 DATA = Path(__file__).with_name("soutien-phrase-nouns.txt")
+SCENES = Path(__file__).with_name("soutien-scenes.txt")
 
 VOWELS = {
     "a": set("aàâ"),
@@ -94,9 +95,9 @@ CONS_GROUPS = ["ch", "gn", "ph", "qu"]
 VOWEL_RE = re.compile(r"[aeiouyàâäéèêëïîôöùûüÿœæ]", re.I)
 
 RANGES = {"a1": (5, 7, 2), "a2": (8, 12, 3), "b1": (13, 15, 4)}
-NEED = {"a1": 2, "a2": 3, "b1": 4}
 
-TEMPLATES = {
+def _legacy_templates_removed():
+    return {
     "a1": [
         "{p1} et {p2} sont là.",
         "{p1} et {p2} vont bien.",
@@ -213,11 +214,6 @@ def cap_first(sentence: str) -> str:
     return sentence[0].upper() + sentence[1:]
 
 
-def glue_tokens(template: str) -> list[str]:
-    masked = re.sub(r"\{p\d\}", " ", template)
-    return [re.sub(r"^[^\wÀ-ÿ]+|[^\wÀ-ÿ]+$", "", t, flags=re.U) for t in masked.split() if re.search(r"\w", t, re.U)]
-
-
 def load_nouns() -> dict[str, list[tuple[str, str, str]]]:
     banks: dict[str, list[tuple[str, str, str]]] = {}
     current = None
@@ -234,7 +230,7 @@ def load_nouns() -> dict[str, list[tuple[str, str, str]]]:
     return banks
 
 
-def ok_pair(a: str, b: str) -> bool:
+def _retired_ok_pair(a: str, b: str) -> bool:
     al, bl = a.lower(), b.lower()
     if al == bl:
         return False
@@ -331,6 +327,10 @@ def first_hit_is_whole(sentence: str, word: str) -> bool:
 
 
 def main():
+    raise SystemExit(
+        "Les phrases viennent de scripts/soutien-scenes.txt. "
+        "Lancer : python3 scripts/fill-soutien-scenes.py"
+    )
     nouns = load_nouns()
     OUT.mkdir(parents=True, exist_ok=True)
     problems = []
