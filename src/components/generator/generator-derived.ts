@@ -1,0 +1,143 @@
+import {
+  algebraTopics,
+  calligraphieTopics,
+  exerciseTypeById,
+  geometryTopics,
+  gattegnoTopics,
+  grammaireTopics,
+  jeuxTopics,
+  lectureTopics,
+  santeTopics,
+  societeTopics,
+  soutienFrTopics,
+  acmTopics,
+  tcmCscTopics,
+  tcmCfrTopics,
+  tcfTopics,
+  tcmTopics,
+  typesForTopic,
+  vocabulaireTopics,
+} from '@/math/catalog'
+import { TCF_DOMAIN } from '@/tcf/catalog'
+import { blockPointsTotal, isTcmDomain } from '@/tcm/test'
+import { SOUTIEN_KINDS, parseSoutienType } from '@/francais/soutien/kinds'
+import {
+  resolveSoutienSelection,
+  soutienExerciseTypeId,
+} from '@/francais/soutien/themes'
+import { COORD_LETTER_MAX, COORD_SHAPES } from '@/math/coord-reperage'
+import { TRANSFORM_MAX_POINTS } from '@/math/coord-transformations'
+import type { Domain, ExerciseBlock, WorksheetPage } from '@/math/types'
+
+/** Thèmes du sélecteur selon le domaine actif. */
+export function topicsForDomain(domain: Domain) {
+  return domain === 'algèbre'
+    ? algebraTopics
+    : domain === 'géométrie'
+      ? geometryTopics
+      : domain === 'gattegno'
+        ? gattegnoTopics
+        : domain === 'grammaire'
+          ? grammaireTopics
+          : domain === 'vocabulaire'
+            ? vocabulaireTopics
+            : domain === 'société'
+              ? societeTopics
+              : domain === 'santé'
+                ? santeTopics
+                : domain === 'acm'
+                  ? acmTopics
+                  : domain === 'tcm-csc'
+                    ? tcmCscTopics
+                    : domain === 'tcm-cfr'
+                      ? tcmCfrTopics
+                      : domain === 'jeux'
+                        ? jeuxTopics
+                        : domain === 'calligraphie'
+                          ? calligraphieTopics
+                          : domain === 'soutien-fr'
+                            ? soutienFrTopics
+                            : isTcmDomain(domain)
+                              ? tcmTopics
+                              : domain === TCF_DOMAIN
+                                ? tcfTopics
+                                : lectureTopics
+}
+
+/** Types d’exercice proposés pour le bloc actif. */
+export function typeChoicesForBlock(
+  domain: Domain,
+  block: Pick<ExerciseBlock, 'exerciseType' | 'topic' | 'track'>,
+) {
+  if (domain === 'soutien-fr') {
+    const bankId =
+      parseSoutienType(block.exerciseType)?.bankId ??
+      resolveSoutienSelection(block.topic, block.exerciseType)?.sound.bankId ??
+      'a'
+    return SOUTIEN_KINDS.map(
+      (kind) => exerciseTypeById[soutienExerciseTypeId(bankId, kind.id)],
+    ).filter((t): t is NonNullable<typeof t> => Boolean(t))
+  }
+  return typesForTopic(
+    block.topic,
+    domain === 'français' ? (block.track ?? 'voc') : undefined,
+  )
+}
+
+type MaxQuestionsFlags = {
+  isComposer: boolean
+  isFormes: boolean
+  isTransform: boolean
+  isReperage: boolean
+  soutienKind: string | undefined
+}
+
+/** Plafond du champ Questions / Mots / Lignes selon le type. */
+export function maxQuestionsFor({
+  isComposer,
+  isFormes,
+  isTransform,
+  isReperage,
+  soutienKind,
+}: MaxQuestionsFlags): number {
+  if (isComposer) return COORD_LETTER_MAX - 1
+  if (isFormes) return COORD_SHAPES.length
+  if (isTransform) return TRANSFORM_MAX_POINTS
+  if (isReperage) return COORD_LETTER_MAX
+  if (soutienKind === 'lettres') return 15
+  if (soutienKind === 'syllabes') return 10
+  if (soutienKind === 'relier') return 16
+  if (soutienKind === 'completer' || soutienKind === 'syllabe-son') return 18
+  if (soutienKind === 'ecouter' || soutienKind === 'ecouter-image') return 30
+  if (
+    soutienKind === 'lettres-phrase' ||
+    soutienKind === 'determinants' ||
+    soutienKind === 'dictee'
+  ) {
+    return 16
+  }
+  if (soutienKind === 'compter' || soutienKind === 'ordre') return 12
+  if (soutienKind === 'lire') return 20
+  if (soutienKind === 'associer-audio' || soutienKind === 'associer-image') return 3
+  return 30
+}
+
+/** Total des points du document (toutes les feuilles de l’aperçu). */
+export function sheetTotalPoints(
+  previewWorksheets: WorksheetPage[],
+  pointsPerQuestion: number,
+): number {
+  return previewWorksheets.reduce(
+    (sum, page) =>
+      sum +
+      (page.blocks?.length
+        ? page.blocks.reduce(
+            (blockSum, block) =>
+              blockSum +
+              blockPointsTotal(block.items, block.pointsPerQuestion ?? pointsPerQuestion),
+            0,
+          )
+        : blockPointsTotal(page.items, page.pointsPerQuestion ?? pointsPerQuestion)),
+    0,
+  )
+}
