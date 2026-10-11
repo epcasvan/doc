@@ -1,32 +1,36 @@
+/**
+ * Exporte les phrases Soutien FR (types 9 / 12 / 14, niveaux a1 / a2 / b1)
+ * de `src/francais/soutien/phrases/*.json` vers `public/soutien-phrases/` :
+ *   - `<bankId>.json` (copie par banque) ;
+ *   - `type9-all.json`, `type12-all.json`, `type14-all.json` (regroupés par banque).
+ *
+ *   node scripts/export-soutien-phrases.mjs
+ */
+import { mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'fs'
+import { join } from 'path'
 
-import { createServer } from 'vite'
-import { writeFileSync, mkdirSync } from 'fs'
+const SRC = 'src/francais/soutien/phrases'
+const OUT = 'public/soutien-phrases'
 
-const server = await createServer({
-  server: { middlewareMode: true },
-  appType: 'custom',
-})
-try {
-  const { soutienBankById } = await server.ssrLoadModule('/src/francais/soutien/banks.ts')
-  const ids = `a,o,i,u,e,y,b,c-k,c-s,d,g-g,g-j,k,p,q,t,f,j,l,m,n,r,s-s,s-z,v,z,w,x-ks,x-gz,h,ch,ph,ou,oi,an,in,on,au,gn,ill`.split(',')
-  mkdirSync('public/soutien-phrases/type9', { recursive: true })
-  mkdirSync('public/soutien-phrases/type12', { recursive: true })
-  mkdirSync('public/soutien-phrases/type14', { recursive: true })
-  const type9={}, type12={}, type14={}
-  for (const id of ids) {
-    const bank = soutienBankById(id)
-    if (!bank) { console.log('missing', id); continue }
-    type9[id] = bank.scrambles.map(s => ({ word: s.word, sentence: s.sentence }))
-    type12[id] = [...bank.countPhrases]
-    type14[id] = [...bank.readPhrases]
-    writeFileSync(`public/soutien-phrases/type9/${id}.json`, JSON.stringify(type9[id], null, 2)+'\n')
-    writeFileSync(`public/soutien-phrases/type12/${id}.json`, JSON.stringify(type12[id], null, 2)+'\n')
-    writeFileSync(`public/soutien-phrases/type14/${id}.json`, JSON.stringify(type14[id], null, 2)+'\n')
-  }
-  writeFileSync('public/soutien-phrases/type9-all.json', JSON.stringify(type9, null, 2)+'\n')
-  writeFileSync('public/soutien-phrases/type12-all.json', JSON.stringify(type12, null, 2)+'\n')
-  writeFileSync('public/soutien-phrases/type14-all.json', JSON.stringify(type14, null, 2)+'\n')
-  console.log('exported', Object.keys(type9).length)
-} finally {
-  await server.close()
+rmSync(OUT, { recursive: true, force: true })
+mkdirSync(OUT, { recursive: true })
+
+const type9 = {}
+const type12 = {}
+const type14 = {}
+const ids = readdirSync(SRC)
+  .filter((f) => f.endsWith('.json'))
+  .map((f) => f.replace(/\.json$/, ''))
+  .sort()
+
+for (const id of ids) {
+  const data = JSON.parse(readFileSync(join(SRC, `${id}.json`), 'utf8'))
+  type9[id] = data.type9 ?? []
+  type12[id] = data.type12 ?? []
+  type14[id] = data.type14 ?? []
+  writeFileSync(join(OUT, `${id}.json`), `${JSON.stringify(data, null, 2)}\n`)
 }
+writeFileSync(join(OUT, 'type9-all.json'), `${JSON.stringify(type9, null, 2)}\n`)
+writeFileSync(join(OUT, 'type12-all.json'), `${JSON.stringify(type12, null, 2)}\n`)
+writeFileSync(join(OUT, 'type14-all.json'), `${JSON.stringify(type14, null, 2)}\n`)
+console.log(`exporté ${ids.length} banque(s) → ${OUT}/`)

@@ -1,18 +1,20 @@
-Phrases Soutien FR — édition manuelle
-=====================================
+Phrases Soutien FR — types 9, 12 et 14
+=======================================
 
-Téléchargez, corrigez, puis renvoyez les fichiers corrigés pour intégration.
+Source : src/francais/soutien/phrases/<banque>.json
+(niveaux a1 / a2 / b1). Le filtre « Tous » mélange les trois.
 
-Types :
-  type9/   — Mot dans la phrase  [{ "word", "sentence" }, …]
-  type12/  — Compter le son      [ "phrase", … ]
-  type14/  — Phrases à lire      [ "phrase", … ]
+Chaque fichier de banque :
+  type9  — mot dans la phrase   [{ "level", "word", "sentence" }, …]
+  type12 — compter le son       [{ "level", "sentence" }, …]
+  type14 — phrases à lire       [{ "level", "sentence" }, …]
 
 Fichiers regroupés :
   type9-all.json / type12-all.json / type14-all.json
+  <banque>.json  (ex. ch.json, a.json, s-z.json)
 
 URL sur le site :
   /soutien-phrases/type9-all.json
   /soutien-phrases/type12-all.json
   /soutien-phrases/type14-all.json
-  /soutien-phrases/type9/a.json
+  /soutien-phrases/ch.json

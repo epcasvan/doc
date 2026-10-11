@@ -1,922 +1,2962 @@
 {
   "a": [
-    "Je m’appelle Anastasia.",
-    "Le chat dort sur le canapé.",
-    "Maman prépare une salade.",
-    "Ma famille chante à la maison.",
-    "J’achète des carottes et des patates.",
-    "Le samedi, je vais au marché.",
-    "Alicia joue au football avec mes amis.",
-    "Adna va au théâtre regarder un spectacle.",
-    "J’aime les animaux.",
-    "Nous allons au parc avec Max.",
-    "Je suis l’amie d’Alexandre.",
-    "Monica va au cinéma.",
-    "Sara lave sa voiture.",
-    "Marc un sac à la main.",
-    "Le papa va à la gare.",
-    "Le garçon joue avec sa balle.",
-    "Anna range sa valise avant le départ.",
-    "Le bateau avance lentement sur le lac.",
-    "La table est prête pour le repas.",
-    "Papa coupe un ananas bien mûr.",
-    "Le ballon rouge roule dans la cour.",
-    "Sara achète une salade au marché.",
-    "Le chat noir marche près de la plage.",
-    "Ma girafe mange des feuilles vertes.",
-    "Clara habite dans une maison calme.",
-    "Le train part de la gare à midi.",
-    "Lara dessine une carte de la Suisse.",
-    "Le panda mange du bambou au zoo.",
-    "Une caravane est garée devant la maison.",
-    "Le marathon traverse toute la ville.",
-    "Paul mange une pomme dans le jardin.",
-    "La valise est trop lourde à porter.",
-    "Le café est encore trop chaud.",
-    "Un papillon jaune se pose sur la table.",
-    "Le canard nage près du rivage.",
-    "Maman range le cartable à l’école.",
-    "Le rat court sous le placard.",
-    "Anita lit un magazine sur le sofa.",
-    "La famille part en vacances demain.",
-    "Le parapluie est dans le placard.",
-    "Ada lave la casserole après le repas.",
-    "Le garage est fermé le samedi.",
-    "Ma tante apporte un gâteau à la fête.",
-    "Le chaton dort dans le panier.",
-    "Sandra appelle sa maman au téléphone.",
-    "Le bateau jaune quitte le port.",
-    "La classe chante une chanson à l’école.",
-    "Adam marche jusqu’à la place du village.",
-    "Le vase est plein d’eau fraîche.",
-    "Nadia range les cartables dans le placard."
-  ],
-  "o": [
-    "Après le loto, Tom boit un soda et fait dodo.",
-    "Le parasol est posé près du vélo.",
-    "Le métro ne passe pas à Vétroz.",
-    "Paul porte le javelot jusqu’au rocher.",
-    "L’homme va à l’hôpital avec sa moto.",
-    "Je mets ma culotte et mon maillot.",
-    "Le pilote joue du piano avant le vol.",
-    "Le crocodile dort au bord de l’eau.",
-    "Hugo vole des brocolis et des abricots.",
-    "La brosse est dans le bocal.",
-    "Rosa croque le chocolat devant le zoo.",
-    "Le koala mange du fromage orange.",
-    "Le rocher rose est au bord de l’océan.",
-    "L’otarie montre son oreille au docteur.",
-    "Le lavabo n’est pas propre.",
-    "Le professeur donne une limonade à Noé.",
-    "Le robot marche tout seul dans le salon.",
-    "Olivia pose son manteau près de la porte.",
-    "Le poisson orange tourne autour du rocher.",
-    "Tom mange une tomate dans le jardin.",
-    "La moto file sur la route du village.",
-    "Nora ouvre la boîte de chocolats.",
-    "Le cochon rose porte un bonnet.",
-    "Le soleil brille fort sur le zoo.",
-    "Le docteur regarde le dossier du patient.",
-    "Le motard prend des photos de son vélo.",
-    "Le flocon tombe sur le manteau.",
-    "Le losange est dessiné au tableau.",
-    "L’orange est juteuse et ronde.",
-    "Le cobra se cache sous la pierre.",
-    "Le fromage est dans le frigo.",
-    "La robe bleue est dans l’armoire.",
-    "La coccinelle marche sur la rose.",
-    "Le piano est trop lourd à porter.",
-    "Le donut est sur l’assiette.",
-    "Le portail du zoo est encore ouvert.",
-    "Noé range ses photos dans le tiroir.",
-    "Le bol de riz est sur la table ronde.",
-    "Le clown jette des bonbons dans la foule.",
-    "Le mot « photo » est écrit au tableau.",
-    "Le coco tombe près du tronc.",
-    "Rosa boit un soda après le sport.",
-    "Le robot range les bols dans le frigo.",
-    "Le pont enjambe le cours d’eau.",
-    "Olivia lit un roman au bord de l’eau.",
-    "Le corbeau vole au-dessus du toit.",
-    "La moto file dans le pré.",
-    "Le chocolat fond dans la casserole.",
-    "Tom pose son vélo contre le mur.",
-    "Le globe tourne dans le bureau du prof."
-  ],
-  "i": [
-    "Elle fait un exercice difficile.",
-    "Lili choisit une jolie tulipe.",
-    "Le cuisinier prépare du riz et des épinards.",
-    "J’admire les photographies.",
-    "Iris lit un livre illustré.",
-    "La jolie fille colorie une image.",
-    "Dimitri finit son dîner dans huit minutes.",
-    "La petite souris grignote du riz.",
-    "Il choisit des lilas et des jonquilles.",
-    "Nina a mis une liste sur la vitre.",
-    "Le pirate visite une île.",
-    "La souris file dans la cuisine.",
-    "Mimi porte un costume gris.",
-    "Emilie dessine une pie et un dinosaure.",
-    "La rapide fourmi transporte des sucreries.",
-    "Rémi est timide quand il imite le tigre.",
-    "Le tigre dort dans la jungle silencieuse.",
-    "Iris lit une histoire dans son lit.",
-    "Le kiwi vert est trop acide pour Julie.",
-    "Philippe range six livres sur l’étagère.",
-    "La cerise tombe vite de l’arbre.",
-    "Le mini robot vibre près de la pile.",
-    "Le briquet est sur la table grise.",
-    "Le cookie est trop sucré pour Lili.",
-    "Le canari chante près de la fenêtre.",
-    "L’épinard est dans le panier.",
-    "Le citron est très acide.",
-    "La viande est dans le frigo.",
-    "Le hérisson se cache sous les feuilles.",
-    "Le navire avance sur la mer.",
-    "Le hibou crie dans la nuit.",
-    "Nina visite la ville avec son ami.",
-    "Le piano joue une jolie mélodie.",
-    "Qui a mis le crayon ici ?",
-    "La vitrine est remplie de figurines.",
-    "Michel n’a pas fini son bol de riz.",
-    "Emilie partage le cookie avec son ami.",
-    "Le pirate cherche une île déserte.",
-    "Iris choisit une chemise grise.",
-    "La fille visite la piscine le midi.",
-    "Dimitri imite le cri du tigre.",
-    "Le livre illustré est sur le lit.",
-    "Mimi finit son exercice difficile.",
-    "La souris file vite dans le nid.",
-    "Philippe lit six pages du livre.",
-    "Le citron vert est dans l’assiette.",
-    "Iris range sa chemise dans la valise.",
-    "Le kiwi est posé près du riz.",
-    "La pie vole au-dessus de la ville.",
-    "Rémi visite le musée avec Iris."
-  ],
-  "u": [
-    "Ursula porte une jupe sur mesure.",
-    "Le début du film surprend le public.",
-    "Le costume du danseur est de couleur prune.",
-    "Luc ajoute du sucre dans son jus.",
-    "La bûche brûle dans la cheminée.",
-    "Un curieux étudiant observe la plume tomber.",
-    "Julie écoute de la musique dans sa voiture.",
-    "Il cherche une solution pour aller sur la lune.",
-    "Les cuisiniers épluchent des légumes.",
-    "La pluie tombe sur les tuiles.",
-    "Le futur médecin étudie beaucoup.",
-    "Une tortue se réfugie sous un buisson.",
-    "Au menu, il y a des fruits et des légumes.",
-    "Le bus passe dans un tunnel.",
-    "La lumière du soleil illumine la clôture.",
-    "Lucie ne met pas sa couverture la nuit.",
-    "La prune mûre tombe du prunier.",
-    "Luc range son pull turquoise dans l’armoire.",
-    "Une plume flotte au-dessus du mur.",
-    "Le biscuit sucré fond dans la bouche.",
-    "La dune surplombe le rivage.",
-    "Une huile parfumée coule dans la casserole.",
-    "L’uniforme est propre et rangé.",
-    "La sucette est trop sucrée.",
-    "Le nuage cache le soleil.",
-    "Le muguet parfumé pousse au jardin.",
-    "La luciole brille dans la nuit.",
-    "La peinture est encore fraîche.",
-    "Le pull turquoise est unique.",
-    "La fusée monte au-dessus des nuages.",
-    "Le juge écoute le début du procès.",
-    "Le curé discute avec plusieurs habitants.",
-    "Une tortue avance doucement sous la pluie.",
-    "La musique résonne dans la rue.",
-    "Julie boit son jus dans la cuisine.",
-    "Luc pose la plume sur le bureau.",
-    "Le bus s’arrête près du parc public.",
-    "Ursula lit un livre sous la lune.",
-    "La jupe bleue est sur le lit.",
-    "Le sucre fond dans le jus chaud.",
-    "Lucie range les légumes dans le frigo.",
-    "Une dune de sable borde la plage.",
-    "Le nuage gris passe au-dessus du mur.",
-    "Julie porte une jupe prune.",
-    "Le tunnel est long et obscur.",
-    "Luc écoute la musique du futur.",
-    "La tortue nage sous le buisson d’eau.",
-    "Ursula ajoute du sucre dans le pudding.",
-    "Le public applaudit le début du spectacle.",
-    "Julie observe la plume tomber du nid."
-  ],
-  "e": [
-    "Le petit cheval regarde la grenouille.",
-    "Je me demande ce que je vais faire ce soir.",
-    "Le renard se promène le long de la rivière.",
-    "Ce que tu me dis me semble étrange.",
-    "Le redoutable chevalier se repose sur le sol.",
-    "Le second chat retourne sur la pelouse.",
-    "Je le retrouve devant le magasin de fleurs.",
-    "Ne me dérange pas, je regarde le ciel se colorer.",
-    "Que ferons-nous demain, se demande le fermier ?",
-    "Le chemin de terre mène vers le reposant village.",
-    "Ce remède laisse un léger regret.",
-    "Le refuge du chevreau velu est près de la colline.",
-    "Les revenants se retrouvent chaque nuit.",
-    "Après le repas, le renard retourne à son refuge.",
-    "Elle se remet de son retard.",
-    "Je regarde le reflet de ma femme dans l’eau.",
-    "Je veux acheter deux œufs.",
-    "Ma mère mesure le niveau de l’eau.",
-    "Vous semez les graines sur la pelouse ?",
-    "Je peux mettre le jeu sur la table.",
-    "Le cheval peut venir avec nous.",
-    "Alicia n’est pas heureuse quand elle regarde le feu.",
-    "Le repas est prêt pour le déjeuner.",
-    "La fenêtre reste ouverte sur le jardin.",
-    "Une crevette rose est dans l’assiette.",
-    "Le chemin mène vers l’école du village.",
-    "Elle prépare une recette avec des œufs.",
-    "Le bébé regarde le feu dans la cheminée.",
-    "La pelote de laine est sur la table.",
-    "Le requin nage dans la mer.",
-    "La chemise bleue est pliée.",
-    "La peluche est sur le lit.",
-    "La grenade est un fruit juteux.",
-    "Le melon n’est pas pour eux.",
-    "Le bébé dort dans son berceau.",
-    "Le renard court dans le pré.",
-    "Elle prépare le repas du soir.",
-    "La fenêtre est ouverte sur le jardin.",
-    "Je mets le jeu près de la fenêtre.",
-    "Le cheval vient avec le fermier.",
-    "Le chemin de terre est encore humide.",
-    "Elle se lève tôt pour le repas.",
-    "Le refuge est près de la rivière.",
-    "Je regarde le ciel se colorer.",
-    "Le remède est sur la table.",
-    "La grenouille saute près de la pelouse.",
-    "Le fermier sème les graines ce matin.",
-    "Elle retrouve son ami devant le magasin.",
-    "Le chevalier se repose après le repas.",
-    "Je me demande ce que fera le renard."
-  ],
-  "y": [
-    "Il y a un stylo, un livre et un pyjama ici.",
-    "Mon ami a remis sa bicyclette à minuit.",
-    "Le jury analyse le mystère de ce crime.",
-    "À midi, il y a un joli cygne dans la ville.",
-    "Le physicien étudie le système avec un style précis.",
-    "Six amis roulent à motocyclette.",
-    "Ce polygone a une belle symétrie.",
-    "La cycliste et l’infirmière habitent près du lycée.",
-    "La pyramide est immense et ancienne.",
-    "Qui a pris mon cylindre gris ?",
-    "Ils ont pris rapidement un tricycle.",
-    "Son hobby favori, c’est la dactylo.",
-    "La syllabe finale est difficile à lire.",
-    "La fille lit un mythe ancien dans son lit.",
-    "Quel type de films aimes-tu ?",
-    "Le rythme de sa vie est calme.",
-    "Le gymnase est fermé aujourd’hui.",
-    "Ce type d’oiseau vole trop vite.",
-    "La glycémie de l’infirmière est stable.",
-    "Ce polyglotte parle six langues différentes.",
-    "Voici les règles d’hygiène du lycée.",
-    "Je n’aime pas du tout la gymnastique.",
-    "Le stylo jaune est près du pyjama.",
-    "La bicyclette rouge reste dans le garage.",
-    "Le cygne nage sur l’étang du parc.",
-    "La pyramide est dessinée dans le livre.",
-    "Le cyclone approche de la côte.",
-    "Yves range l’encyclopédie sur l’étagère.",
-    "La myrtille est bleue et sucrée.",
-    "Le gymnaste saute très haut.",
-    "L’hydravion atterrit à midi.",
-    "Le kayak glisse sur le lac.",
-    "Yves lit un mythe dans son lit.",
-    "Le lycée ouvre ses portes à huit heures.",
-    "La syllabe « ly » est dans le mot lycée.",
-    "Le rythme du tambour est rapide.",
-    "Yves porte son pyjama le soir.",
-    "La cycliste roule près du lycée.",
-    "Le physicien mesure le système.",
-    "Un tricycle est garé devant le gymnase.",
-    "La dactylo travaille avec précision.",
-    "Yves étudie la mythologie au lycée.",
-    "Le cylindre gris est sur la table.",
-    "La myrtille pousse près du chemin.",
-    "Le type de stylo est important.",
-    "Yves analyse le mystère du crime.",
-    "La bicyclette est trop petite pour Yves.",
-    "Le cygne blanc nage près du kayak.",
-    "Yves range son stylo dans le pyjama.",
-    "Le polygone a une symétrie parfaite."
-  ],
-  "b": [
-    "Je vois une abeille ici.",
-    "Je vois un abricot ici.",
-    "Je vois un album ici.",
-    "Je vois un alphabet ici.",
-    "Je vois une ambulance ici.",
-    "Je vois une arbre ici.",
-    "Je vois une aubergine ici.",
-    "Je vois un autobus ici.",
-    "Je vois une bague ici.",
-    "Je vois une baignoire ici.",
-    "Je vois un balai ici.",
-    "Je vois une balance ici.",
-    "Je vois une baleine ici.",
-    "Je vois une balle ici.",
-    "Je vois un ballon ici.",
-    "Je vois un bambou ici."
-  ],
-  "c-k": [
-    "Je vois un abricot ici.",
-    "Je vois un accordéon ici.",
-    "Je vois une acrylique ici.",
-    "Je vois un activité ici.",
-    "Je vois une actrice ici.",
-    "Je vois une agricultrice ici.",
-    "Je vois un arc ici.",
-    "Je vois une architecte ici.",
-    "Je vois un avocat ici.",
-    "Je vois une avocate ici.",
-    "Je vois un banc ici.",
-    "Je vois un basilic ici.",
-    "Je vois une bicyclette ici.",
-    "Je vois un biscuit ici.",
-    "Je vois un blanc ici.",
-    "Je vois un bocal ici."
-  ],
-  "c-s": [
-    "Je vois une actrice ici.",
-    "Je vois une agricultrice ici.",
-    "Je vois une ambulance ici.",
-    "Je vois une balance ici.",
-    "Je vois un berceau ici.",
-    "Je vois une bicyclette ici.",
-    "Je vois un biscuit ici.",
-    "Je vois un boucles d'oreilles ici.",
-    "Je vois un bracelet ici.",
-    "Je vois une caissière ici.",
-    "Je vois une calculatrice ici.",
-    "Je vois une casque ici.",
-    "Je vois une casquette ici.",
-    "Je vois un cassis ici.",
-    "Je vois une ceinture ici.",
-    "Je vois un cerceau ici."
-  ],
-  "d": [
-    "Je vois un accordéon ici.",
-    "Je vois une addition ici.",
-    "Je vois un agenda ici.",
-    "Je vois une ardoise ici.",
-    "Je vois une astéroïde ici.",
-    "Je vois un bordeaux ici.",
-    "Je vois un boucles d'oreilles ici.",
-    "Je vois un bouteille deau ici.",
-    "Je vois un brosse à dents ici.",
-    "Je vois un bulldozer ici.",
-    "Je vois un cadeau ici.",
-    "Je vois un cadenas ici.",
-    "Je vois un carte de credit ici.",
-    "Je vois un carte detudiant ici.",
-    "Je vois une carte didentite ici.",
-    "Je vois une chrysalide ici."
-  ],
-  "g-g": [
-    "Je vois une agricultrice ici.",
-    "Je vois une aigle ici.",
-    "Je vois une bague ici.",
-    "Je vois un bungalow ici.",
-    "Je vois une cigogne ici.",
-    "Je vois un dragon ici.",
-    "Je vois un escargot ici.",
-    "Je vois une figue ici.",
-    "Je vois une galaxie ici.",
-    "Je vois un gants ici.",
-    "Je vois une gare ici.",
-    "Je vois un garçon ici.",
-    "Je vois une gauffre ici.",
-    "Je vois une gaufre ici.",
-    "Je vois un gaz ici.",
-    "Je vois une gazelle ici."
-  ],
-  "g-j": [
-    "Je vois un agenda ici.",
-    "Je vois un agente entretien ici.",
-    "Je vois une asperge ici.",
-    "Je vois une aubergine ici.",
-    "Je vois une beige ici.",
-    "Je vois une bougie ici.",
-    "Je vois une boulangère ici.",
-    "Je vois un chargeur ici.",
-    "Je vois une coton tige ici.",
-    "Je vois une courgette ici.",
-    "Je vois un fromage ici.",
-    "Je vois un gecko ici.",
-    "Je vois un genou ici.",
-    "Je vois une girafe ici.",
-    "Je vois une grange ici.",
-    "Je vois une gymnase ici."
-  ],
-  "k": [
-    "Je vois un basketball ici.",
-    "Je vois un baskets ici.",
-    "Je vois une cookie ici.",
-    "Je vois une cupcake ici.",
-    "Je vois un gecko ici.",
-    "Je vois un hockey ici.",
-    "Je vois un jockey ici.",
-    "Je vois un kaki ici.",
-    "Je vois une kaléidoscope ici.",
-    "Je vois un kangourou ici.",
-    "Je vois un kayak ici.",
-    "Je vois un kazoo ici.",
-    "Je vois un kiwi ici.",
-    "Je vois un klaxon ici.",
-    "Je vois un koala ici.",
-    "Je vois une milkshake ici."
-  ],
-  "p": [
-    "Je vois un appareil photo ici.",
-    "Je vois une asperge ici.",
-    "Je vois une campagne ici.",
-    "Je vois un champignon ici.",
-    "Je vois un chapeau ici.",
-    "Je vois une charpentière ici.",
-    "Je vois un chips ici.",
-    "Je vois un compas ici.",
-    "Je vois une comptoire ici.",
-    "Je vois un crapaud ici.",
-    "Je vois une crêpe ici.",
-    "Je vois une cupcake ici.",
-    "Je vois un cypres ici.",
-    "Je vois un drapeau ici.",
-    "Je vois une encyclopédie ici.",
-    "Je vois une enveloppe ici."
-  ],
-  "q": [
-    "Je vois une acrylique ici.",
-    "Je vois un bouquet ici.",
-    "Je vois une boutique ici.",
-    "Je vois un briquet ici.",
-    "Je vois une casque ici.",
-    "Je vois une casquette ici.",
-    "Je vois un coq ici.",
-    "Je vois un coquelicot ici.",
-    "Je vois un criquet ici.",
-    "Je vois une gymnastique ici.",
-    "Je vois une jonquille ici.",
-    "Je vois un marqueur ici.",
-    "Je vois une moustique ici.",
-    "Je vois une olympique ici.",
-    "Je vois un paquebot ici.",
-    "Je vois une paquerette ici."
-  ],
-  "t": [
-    "Je vois un activité ici.",
-    "Je vois une actrice ici.",
-    "Je vois un agente entretien ici.",
-    "Je vois une agricultrice ici.",
-    "Je vois une alimentation ici.",
-    "Je vois un aliments ici.",
-    "Je vois une allumette ici.",
-    "Je vois un appareil photo ici.",
-    "Je vois une architecte ici.",
-    "Je vois un artichaut ici.",
-    "Je vois une astronaute ici.",
-    "Je vois une astéroïde ici.",
-    "Je vois un atlas ici.",
-    "Je vois un autobus ici.",
-    "Je vois une autruche ici.",
-    "Je vois une avocate ici."
-  ],
-  "f": [
-    "Je vois un buffet ici.",
-    "Je vois un café ici.",
-    "Je vois un cerf ici.",
-    "Je vois un cerf volant ici.",
-    "Je vois une chauffeuse ici.",
-    "Je vois un chou fleur ici.",
-    "Je vois une coffre ici.",
-    "Je vois une coiffeuse ici.",
-    "Je vois une confiture ici.",
-    "Je vois une dentifrice ici.",
-    "Je vois une factrice ici.",
-    "Je vois une falaise ici.",
-    "Je vois une farine ici.",
-    "Je vois un faucon ici.",
-    "Je vois un fauteuil ici.",
-    "Je vois un fax ici."
-  ],
-  "j": [
-    "Je vois un banjo ici.",
-    "Je vois un bijou ici.",
-    "Je vois une jacinthe ici.",
-    "Je vois une jambe ici.",
-    "Je vois un jardin ici.",
-    "Je vois un jardinier ici.",
-    "Je vois une jardinière ici.",
-    "Je vois une jaune ici.",
-    "Je vois un javelot ici.",
-    "Je vois un jazz ici.",
-    "Je vois un jeu ici.",
-    "Je vois un jeudi ici.",
-    "Je vois un jockey ici.",
-    "Je vois un joint ici.",
-    "Je vois une jonquille ici.",
-    "Je vois un jouet ici."
-  ],
-  "l": [
-    "Je vois une acrylique ici.",
-    "Je vois une agricultrice ici.",
-    "Je vois une aigle ici.",
-    "Je vois un ail ici.",
-    "Je vois un album ici.",
-    "Je vois une alimentation ici.",
-    "Je vois un aliments ici.",
-    "Je vois une allumette ici.",
-    "Je vois un alphabet ici.",
-    "Je vois une ambulance ici.",
-    "Je vois un animal ici.",
-    "Je vois un atlas ici.",
-    "Je vois une azalée ici.",
-    "Je vois un balai ici.",
-    "Je vois une balance ici.",
-    "Je vois une baleine ici."
-  ],
-  "m": [
-    "Je vois une alimentation ici.",
-    "Je vois un aliments ici.",
-    "Je vois une allumette ici.",
-    "Je vois une amazone ici.",
-    "Je vois un ami ici.",
-    "Je vois un animal ici.",
-    "Je vois un animaux ici.",
-    "Je vois une armoire ici.",
-    "Je vois une camion ici.",
-    "Je vois un caméléon ici.",
-    "Je vois une cheminée ici.",
-    "Je vois une chemise ici.",
-    "Je vois une chronomètre ici.",
-    "Je vois une chrysanthème ici.",
-    "Je vois un climatiseur ici.",
-    "Je vois une clémentine ici."
-  ],
-  "n": [
-    "Je vois une amazone ici.",
-    "Je vois un ananas ici.",
-    "Je vois un animal ici.",
-    "Je vois un animaux ici.",
-    "Je vois une annexe ici.",
-    "Je vois une astronaute ici.",
-    "Je vois une aubergine ici.",
-    "Je vois une baleine ici.",
-    "Je vois une banane ici.",
-    "Je vois un bonnet ici.",
-    "Je vois un bottines ici.",
-    "Je vois une brownie ici.",
-    "Je vois un cadenas ici.",
-    "Je vois un canard ici.",
-    "Je vois un canari ici.",
-    "Je vois un canyon ici."
-  ],
-  "r": [
-    "Je vois un abricot ici.",
-    "Je vois un accordéon ici.",
-    "Je vois une acrylique ici.",
-    "Je vois une actrice ici.",
-    "Je vois un agente entretien ici.",
-    "Je vois une agricultrice ici.",
-    "Je vois un appareil photo ici.",
-    "Je vois une araignée ici.",
-    "Je vois une arbre ici.",
-    "Je vois un arc ici.",
-    "Je vois une architecte ici.",
-    "Je vois une ardoise ici.",
-    "Je vois une armoire ici.",
-    "Je vois un arrosoir ici.",
-    "Je vois un artichaut ici.",
-    "Je vois une asperge ici."
-  ],
-  "s-s": [
-    "Je vois un ananas ici.",
-    "Je vois une asperge ici.",
-    "Je vois une astronaute ici.",
-    "Je vois une astéroïde ici.",
-    "Je vois un autobus ici.",
-    "Je vois un basketball ici.",
-    "Je vois un baskets ici.",
-    "Je vois un biscuit ici.",
-    "Je vois un boisson ici.",
-    "Je vois un boucles d'oreilles ici.",
-    "Je vois une boussole ici.",
-    "Je vois une brosse ici.",
-    "Je vois un brosse à dents ici.",
-    "Je vois un bus ici.",
-    "Je vois une caissière ici.",
-    "Je vois une casque ici."
-  ],
-  "s-z": [
-    "Je vois une ardoise ici.",
-    "Je vois un arrosoir ici.",
-    "Je vois un basilic ici.",
-    "Je vois un blouson ici.",
-    "Je vois une cerise ici.",
-    "Je vois un cerisier ici.",
-    "Je vois une chaise ici.",
-    "Je vois une chanteuse ici.",
-    "Je vois une chauffeuse ici.",
-    "Je vois une chemise ici.",
-    "Je vois une chrysalide ici.",
-    "Je vois une chrysanthème ici.",
-    "Je vois un ciseaux ici.",
-    "Je vois un climatiseur ici.",
-    "Je vois une coiffeuse ici.",
-    "Je vois un cuisinier ici."
-  ],
-  "v": [
-    "Je vois un activité ici.",
-    "Je vois une avion ici.",
-    "Je vois un avocat ici.",
-    "Je vois une avocate ici.",
-    "Je vois une betterave ici.",
-    "Je vois une caravane ici.",
-    "Je vois un cerf volant ici.",
-    "Je vois un cerveau ici.",
-    "Je vois un cheval ici.",
-    "Je vois un cheveux ici.",
-    "Je vois une chèvre ici.",
-    "Je vois un clavier ici.",
-    "Je vois une cravate ici.",
-    "Je vois une crevette ici.",
-    "Je vois une enveloppe ici.",
-    "Je vois une goyave ici."
-  ],
-  "z": [
-    "Je vois une amazone ici.",
-    "Je vois une azalée ici.",
-    "Je vois un azur ici.",
-    "Je vois un bazar ici.",
-    "Je vois un blizzard ici.",
-    "Je vois une bronze ici.",
-    "Je vois un bulldozer ici.",
-    "Je vois un chorizo ici.",
-    "Je vois une douze ici.",
-    "Je vois un gaz ici.",
-    "Je vois une gazelle ici.",
-    "Je vois un gazoduc ici.",
-    "Je vois un gazon ici.",
-    "Je vois un grizzly ici.",
-    "Je vois un horizon ici.",
-    "Je vois un jazz ici."
-  ],
-  "w": [
-    "Je vois un bowling ici.",
-    "Je vois une brownie ici.",
-    "Je vois un bungalow ici.",
-    "Je vois un clown ici.",
-    "Je vois un cow boy ici.",
-    "Je vois un edelweiss ici.",
-    "Je vois un interview ici.",
-    "Je vois un kiwi ici.",
-    "Je vois un sandwich ici.",
-    "Je vois un snowboard ici.",
-    "Je vois un steward ici.",
-    "Je vois un tramway ici.",
-    "Je vois un wagon ici.",
-    "Je vois un wagonnet ici.",
-    "Je vois un wakeboard ici.",
-    "Je vois une walkie talkie ici."
-  ],
-  "x-ks": [
-    "Je vois une annexe ici.",
-    "Je vois une boxe ici.",
-    "Je vois un boxeur ici.",
-    "Je vois un extincteur ici.",
-    "Je vois une galaxie ici.",
-    "Je vois une hexagone ici.",
-    "Je vois un klaxon ici.",
-    "Je vois un mixeur ici.",
-    "Je vois un noix de coco ici.",
-    "Je vois une oxygène ici.",
-    "Je vois un pixel ici.",
-    "Je vois une réflexe ici.",
-    "Je vois une saxophone ici.",
-    "Je vois un taxi ici.",
-    "Je vois une xylophone ici.",
-    "Je vois une axe ici."
-  ],
-  "x-gz": [
-    "Je vois une axe ici.",
-    "Je vois une exercice ici.",
-    "Je vois une fixe ici.",
-    "Je vois une luxe ici.",
-    "Je vois un maximum ici.",
-    "Je vois une mixte ici.",
-    "Je vois une oxygene ici.",
-    "Je vois une prefixe ici.",
-    "Je vois un relax ici.",
-    "Je vois une taxe ici.",
-    "Je vois une texte ici.",
-    "Je vois un yeux ici."
-  ],
-  "h": [
-    "Je vois un cahier ici.",
-    "Je vois une hache ici.",
-    "Je vois une haltère ici.",
-    "Je vois un hamac ici.",
-    "Je vois un hamburger ici.",
-    "Je vois un handball ici.",
-    "Je vois un hanneton ici.",
-    "Je vois un haricot ici.",
-    "Je vois un harmonica ici.",
-    "Je vois une harpe ici.",
-    "Je vois une herbe ici.",
-    "Je vois une hexagone ici.",
-    "Je vois un hibou ici.",
-    "Je vois une hippocampe ici.",
-    "Je vois une hirondelle ici.",
-    "Je vois un hiver ici."
-  ],
-  "ch": [
-    "Je vois une architecte ici.",
-    "Je vois un artichaut ici.",
-    "Je vois une autruche ici.",
-    "Je vois une bouche ici.",
-    "Je vois une bouchère ici.",
-    "Je vois une chaise ici.",
-    "Je vois un chalet ici.",
-    "Je vois un champ ici.",
-    "Je vois un champignon ici.",
-    "Je vois une chanteuse ici.",
-    "Je vois un chapeau ici.",
-    "Je vois un chargeur ici.",
-    "Je vois une charpentière ici.",
-    "Je vois un chat ici.",
-    "Je vois un chataignier ici.",
-    "Je vois un chaud ici."
-  ],
-  "ph": [
-    "Je vois un alphabet ici.",
-    "Je vois un appareil photo ici.",
-    "Je vois un buffet ici.",
-    "Je vois un café ici.",
-    "Je vois un cerf ici.",
-    "Je vois un cerf volant ici.",
-    "Je vois une chauffeuse ici.",
-    "Je vois un chou fleur ici.",
-    "Je vois une coffre ici.",
-    "Je vois une coiffeuse ici.",
-    "Je vois une confiture ici.",
-    "Je vois un dauphin ici.",
-    "Je vois une dentifrice ici.",
-    "Je vois une factrice ici.",
-    "Je vois une falaise ici.",
-    "Je vois une farine ici."
-  ],
-  "ou": [
-    "Je vois un bambou ici.",
-    "Je vois un bijou ici.",
-    "Je vois un blouson ici.",
-    "Je vois une bouche ici.",
-    "Je vois une bouchère ici.",
-    "Je vois un boucles d'oreilles ici.",
-    "Je vois une bougie ici.",
-    "Je vois une boulangère ici.",
-    "Je vois un bouleau ici.",
-    "Je vois un bouquet ici.",
-    "Je vois une boussole ici.",
-    "Je vois une bouteille ici.",
-    "Je vois un bouteille deau ici.",
-    "Je vois une boutique ici.",
-    "Je vois un chou ici.",
-    "Je vois un chou fleur ici."
-  ],
-  "oi": [
-    "Je vois une ardoise ici.",
-    "Je vois une armoire ici.",
-    "Je vois un arrosoir ici.",
-    "Je vois une astéroïde ici.",
-    "Je vois une baignoire ici.",
-    "Je vois un boisson ici.",
-    "Je vois une boîte ici.",
-    "Je vois un choix ici.",
-    "Je vois une coiffeuse ici.",
-    "Je vois une comptoire ici.",
-    "Je vois un croissant ici.",
-    "Je vois un croix ici.",
-    "Je vois un doigt ici.",
-    "Je vois un entonnoir ici.",
-    "Je vois une framboise ici.",
-    "Je vois un froid ici."
+    {
+      "level": "a1",
+      "sentence": "Prenez la valise et la cabane."
+    },
+    {
+      "level": "a1",
+      "sentence": "Où sont le papa et la maman ?"
+    },
+    {
+      "level": "a1",
+      "sentence": "Voici la tomate et la banane."
+    },
+    {
+      "level": "a1",
+      "sentence": "Regardez la table et la vache."
+    },
+    {
+      "level": "a1",
+      "sentence": "Le canard et le lama sont là."
+    },
+    {
+      "level": "a1",
+      "sentence": "Le sac est près de le rat."
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, la table, la vache et le chat sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le repas, le canard, le lama et le panda restent là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, le sac, le rat et le plat sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Dans la rue, la glace, un avocat et le garage sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le cours, la valise, la cabane et la radio sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, le papa, la maman et la salade vont bien."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit la glace et un avocat, on cherche le garage et la valise."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on voit la valise et la cabane, on cherche la radio et le papa."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit le papa et la maman mais aussi la salade et la tomate."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on prend la tomate et la banane, on trouve la carotte et la table."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit la table et la vache, on trouve le chat et le canard."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on cherche le canard et le lama, on trouve le panda et le sac."
+    }
   ],
   "an": [
-    "Je vois un agenda ici.",
-    "Je vois un agente entretien ici.",
-    "Je vois une alimentation ici.",
-    "Je vois un aliments ici.",
-    "Je vois une ambulance ici.",
-    "Je vois une balance ici.",
-    "Je vois un bambou ici.",
-    "Je vois un banc ici.",
-    "Je vois un banjo ici.",
-    "Je vois un blanc ici.",
-    "Je vois une boulangère ici.",
-    "Je vois un brosse à dents ici.",
-    "Je vois une campagne ici.",
-    "Je vois un carte detudiant ici.",
-    "Je vois une carte didentite ici.",
-    "Je vois un cerf volant ici."
-  ],
-  "in": [
-    "Je vois un bowling ici.",
-    "Je vois une ceinture ici.",
-    "Je vois une cylindre ici.",
-    "Je vois un dauphin ici.",
-    "Je vois une dinde ici.",
-    "Je vois une enceinte ici.",
-    "Je vois un extincteur ici.",
-    "Je vois un gratin ici.",
-    "Je vois une imprimante ici.",
-    "Je vois un index ici.",
-    "Je vois une infirmière ici.",
-    "Je vois une infusion ici.",
-    "Je vois une ingénieure ici.",
-    "Je vois une intercalaire ici.",
-    "Je vois un interview ici.",
-    "Je vois une jacinthe ici."
-  ],
-  "on": [
-    "Je vois un accordéon ici.",
-    "Je vois une avion ici.",
-    "Je vois un ballon ici.",
-    "Je vois un biberon ici.",
-    "Je vois un blouson ici.",
-    "Je vois un boisson ici.",
-    "Je vois un bonbon ici.",
-    "Je vois une bronze ici.",
-    "Je vois un caleçon ici.",
-    "Je vois une camion ici.",
-    "Je vois un caméléon ici.",
-    "Je vois un canyon ici.",
-    "Je vois un champignon ici.",
-    "Je vois un citron ici.",
-    "Je vois un cochon ici.",
-    "Je vois une colombe ici."
+    {
+      "level": "a1",
+      "sentence": "Regardez le restaurant et un étudiant."
+    },
+    {
+      "level": "a1",
+      "sentence": "Où sont le restaurant et un étudiant ?"
+    },
+    {
+      "level": "a1",
+      "sentence": "Voici le banc et le sang."
+    },
+    {
+      "level": "a1",
+      "sentence": "Regardez la plante et le dimanche."
+    },
+    {
+      "level": "a1",
+      "sentence": "Voici le temps et le champ."
+    },
+    {
+      "level": "a1",
+      "sentence": "La tante est près de le vent."
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, le banc, le sang et le gant sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le repas, la plante, le dimanche et la chambre restent là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, la tante, le vent et la dent vont bien."
+    },
+    {
+      "level": "a2",
+      "sentence": "Dans la rue, la tante, le vent et la dent sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le cours, le temps, le champ et la lampe sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, la jambe, le manteau et le cent vont bien."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on prend la tante et le vent, on trouve la dent et le temps."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on voit la tante et le vent, on cherche la dent et le temps."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit le temps et le champ mais aussi la lampe et la jambe."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on prend la jambe et le manteau, on trouve le cent et le trente."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit le trente et le vendredi, on trouve le janvier et le restaurant."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on cherche le restaurant et un étudiant, on trouve le pantalon et le banc."
+    }
   ],
   "au": [
-    "Je vois un abricot ici.",
-    "Je vois un accordéon ici.",
-    "Je vois une amazone ici.",
-    "Je vois un animaux ici.",
-    "Je vois un appareil photo ici.",
-    "Je vois un arrosoir ici.",
-    "Je vois un artichaut ici.",
-    "Je vois une astronaute ici.",
-    "Je vois une aubergine ici.",
-    "Je vois un autobus ici.",
-    "Je vois une autruche ici.",
-    "Je vois un avocat ici.",
-    "Je vois une avocate ici.",
-    "Je vois un banjo ici.",
-    "Je vois un basketball ici.",
-    "Je vois un bateau ici."
+    {
+      "level": "a1",
+      "sentence": "Prenez le taureau et les animaux."
+    },
+    {
+      "level": "a1",
+      "sentence": "Où sont un autobus et une autoroute ?"
+    },
+    {
+      "level": "a1",
+      "sentence": "Voici le château et le chapeau."
+    },
+    {
+      "level": "a1",
+      "sentence": "Regardez un oiseau et le bureau."
+    },
+    {
+      "level": "a1",
+      "sentence": "Le couteau et le drapeau sont là."
+    },
+    {
+      "level": "a1",
+      "sentence": "Le rideau est près de le morceau."
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, une épaule, le taureau et les animaux sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le repas, le bateau, un autobus et une autoroute restent là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, le gâteau, le château et le chapeau sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Dans la rue, le manteau, un oiseau et le bureau sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le cours, le cadeau, le couteau et le drapeau sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, le tableau, le rideau et le morceau vont bien."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit la chaussure et une épaule, on cherche le taureau et les animaux."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on voit les animaux et le bateau, on cherche un autobus et une autoroute."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit une autoroute et le gâteau mais aussi le château et le chapeau."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on prend le chapeau et le manteau, on trouve un oiseau et le bureau."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit le bureau et le cadeau, on trouve le couteau et le drapeau."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on cherche le drapeau et le tableau, on trouve le rideau et le morceau."
+    }
+  ],
+  "b": [
+    {
+      "level": "a1",
+      "sentence": "Prenez la brosse et la bûche."
+    },
+    {
+      "level": "a1",
+      "sentence": "Où sont le balcon et le biscuit ?"
+    },
+    {
+      "level": "a1",
+      "sentence": "Voici le bus et le bateau."
+    },
+    {
+      "level": "a1",
+      "sentence": "Regardez la balle et le banc."
+    },
+    {
+      "level": "a1",
+      "sentence": "La table et un arbre sont là."
+    },
+    {
+      "level": "a1",
+      "sentence": "Le balai est près de le bureau."
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, le bébé, la balle et le banc sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le repas, la robe, la table et un arbre restent là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, la botte, le balai et le bureau sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Dans la rue, le bonbon, la bibliothèque et la baguette sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le cours, la banane, la bouche et la brosse sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, la bûche, le bonnet et le balcon vont bien."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit le bureau et le bonbon, on cherche la bibliothèque et la baguette."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on voit la baguette et la banane, on cherche la bouche et la brosse."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit la brosse et la bûche mais aussi le bonnet et le balcon."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on prend le balcon et le biscuit, on trouve le bracelet et le bus."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on cherche la balle et le banc, on prend la robe et la table."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on cherche la balle et le banc, on trouve la robe et la table."
+    }
+  ],
+  "c-k": [
+    {
+      "level": "a1",
+      "sentence": "Prenez la caisse et le casque."
+    },
+    {
+      "level": "a1",
+      "sentence": "Où sont le café et la crêpe ?"
+    },
+    {
+      "level": "a1",
+      "sentence": "Voici le couteau et la cocotte."
+    },
+    {
+      "level": "a1",
+      "sentence": "Regardez une école et la classe."
+    },
+    {
+      "level": "a1",
+      "sentence": "Le lac et le parc sont là."
+    },
+    {
+      "level": "a1",
+      "sentence": "Le camion est près de le cartable."
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, une école, la classe et le cube sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le repas, le lac, le parc et le coq restent là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, le camion, le cartable et le crayon sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Dans la rue, la cravate, le collier et le costume sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le cours, la caisse, le casque et le cochon sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, le café, la crêpe et la carotte vont bien."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit la cravate et le collier, on cherche le costume et la caisse."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on voit la caisse et le casque, on cherche le cochon et le café."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit le café et la crêpe mais aussi la carotte et le couteau."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on prend le couteau et la cocotte, on trouve le sac et une école."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit une école et la classe, on trouve le cube et le lac."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on cherche le lac et le parc, on trouve le coq et le camion."
+    }
+  ],
+  "c-s": [
+    {
+      "level": "a1",
+      "sentence": "Prenez la ceinture et le cerceau."
+    },
+    {
+      "level": "a1",
+      "sentence": "Où sont la façade et la balançoire ?"
+    },
+    {
+      "level": "a1",
+      "sentence": "Voici la cerise et le citron."
+    },
+    {
+      "level": "a1",
+      "sentence": "Regardez le cassis et le céleri."
+    },
+    {
+      "level": "a1",
+      "sentence": "La place et le garçon sont là."
+    },
+    {
+      "level": "a1",
+      "sentence": "Le cinéma est près de la police."
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, la glace, le cassis et le céleri sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le repas, le glaçon, la place et le garçon restent là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, la leçon, le cinéma et la police sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Dans la rue, un exercice, la pharmacie et la piscine sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le cours, le cygne, le cercle et la ceinture sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, le cerceau, le cerveau et la façade vont bien."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit la police et un exercice, on cherche la pharmacie et la piscine."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on voit la piscine et le cygne, on cherche le cercle et la ceinture."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit la ceinture et le cerceau mais aussi le cerveau et la façade."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on prend la façade et la balançoire, on trouve le reçu et la cerise."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on cherche le cassis et le céleri, on prend le glaçon et la place."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on cherche le cassis et le céleri, on trouve le glaçon et la place."
+    }
+  ],
+  "ch": [
+    {
+      "level": "a1",
+      "sentence": "Prenez la vache et le cochon."
+    },
+    {
+      "level": "a1",
+      "sentence": "Où sont la chaise et la chambre ?"
+    },
+    {
+      "level": "a1",
+      "sentence": "Voici la chaussure et le chocolat."
+    },
+    {
+      "level": "a1",
+      "sentence": "Regardez le chapeau et le chou."
+    },
+    {
+      "level": "a1",
+      "sentence": "La bouche et le marché sont là."
+    },
+    {
+      "level": "a1",
+      "sentence": "La machine est près de la planche."
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, le cochon, le chien et la chaise sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le repas, la chambre, la chemise et la chaussure restent là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, le chocolat, la douche et le chapeau sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Dans la rue, le chou, la poche et la bouche sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le cours, le marché, le dimanche et la machine sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, la planche, la branche et une écharpe vont bien."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit le chien et la chaise, on cherche la chambre et la chemise."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on voit la chemise et la chaussure, on cherche le chocolat et la douche."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit la douche et le chapeau mais aussi le chou et la poche."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on prend la poche et la bouche, on trouve le marché et le dimanche."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit le dimanche et la machine, on trouve la planche et la branche."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on cherche la branche et une écharpe, on trouve le mouchoir et le torchon."
+    }
+  ],
+  "d": [
+    {
+      "level": "a1",
+      "sentence": "Prenez la dinde et le dard."
+    },
+    {
+      "level": "a1",
+      "sentence": "Où sont le dauphin et le drapeau ?"
+    },
+    {
+      "level": "a1",
+      "sentence": "Voici la douzaine et le pudding."
+    },
+    {
+      "level": "a1",
+      "sentence": "Regardez le dimanche et le vendredi."
+    },
+    {
+      "level": "a1",
+      "sentence": "La salade et la radio sont là."
+    },
+    {
+      "level": "a1",
+      "sentence": "Le dos est près de le rideau."
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, le pudding, le domino et le dimanche sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le repas, le vendredi, le mardi et la salade restent là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, la radio, le dodo et le dos sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Dans la rue, le rideau, le radeau et la demande sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le cours, la dorade, la dalle et la dune sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, la douche, la dinde et le dard vont bien."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit le dodo et le dos, on cherche le rideau et le radeau."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on voit le radeau et la demande, on cherche la dorade et la dalle."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit la dalle et la dune mais aussi la douche et la dinde."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on prend la dinde et le dard, on trouve le cadeau et le dauphin."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit le dauphin et le drapeau, on trouve le dragon et la douzaine."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on cherche la douzaine et le pudding, on trouve le domino et le dimanche."
+    }
+  ],
+  "e": [
+    {
+      "level": "a1",
+      "sentence": "Prenez le pré et la fée."
+    },
+    {
+      "level": "a1",
+      "sentence": "Où sont une école et un élève ?"
+    },
+    {
+      "level": "a1",
+      "sentence": "Voici le zéro et un été."
+    },
+    {
+      "level": "a1",
+      "sentence": "Regardez la mère et le père."
+    },
+    {
+      "level": "a1",
+      "sentence": "Un café et la télé sont là."
+    },
+    {
+      "level": "a1",
+      "sentence": "Le cheval est près de la fête."
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, la mère, le père et le frère sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le repas, un café, la télé et la fenêtre restent là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, le cheval, la fête et le rêve sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Dans la rue, un béret, une étoile et la fève sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le cours, le pré, la fée et le dé sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, une école, un élève et la règle vont bien."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit un béret et une étoile, on cherche la fève et le pré."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on voit le pré et la fée, on cherche le dé et une école."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit une école et un élève mais aussi la règle et le zéro."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on prend le zéro et un été, on trouve un bébé et la mère."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit la mère et le père, on trouve le frère et un café."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on cherche un café et la télé, on trouve la fenêtre et le cheval."
+    }
+  ],
+  "f": [
+    {
+      "level": "a1",
+      "sentence": "Prenez le café et le chef."
+    },
+    {
+      "level": "a1",
+      "sentence": "Où sont le fruit et la fourchette ?"
+    },
+    {
+      "level": "a1",
+      "sentence": "Voici la fraise et un enfant."
+    },
+    {
+      "level": "a1",
+      "sentence": "Regardez la famille et le coffre."
+    },
+    {
+      "level": "a1",
+      "sentence": "Le fer et la fête sont là."
+    },
+    {
+      "level": "a1",
+      "sentence": "La feuille est près de le foin."
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, le coffre, la fleur et le fer sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le repas, la fête, le frigo et la feuille restent là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, le foin, la foule et le foulard sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Dans la rue, la fusée, le café et le chef sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le cours, le fromage, le fruit et la fourchette sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, la farine, la fraise et un enfant vont bien."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on prend le fruit et la fourchette, on trouve la farine et la fraise."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on voit le fruit et la fourchette, on cherche la farine et la fraise."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit la fraise et un enfant mais aussi la fenêtre et la famille."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on prend la famille et le coffre, on trouve la fleur et le fer."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on cherche la feuille et le foin, on prend la foule et le foulard."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on cherche la feuille et le foin, on trouve la foule et le foulard."
+    }
+  ],
+  "g-g": [
+    {
+      "level": "a1",
+      "sentence": "Prenez la goutte et le goûter."
+    },
+    {
+      "level": "a1",
+      "sentence": "Où sont la grappe et le goujon ?"
+    },
+    {
+      "level": "a1",
+      "sentence": "Voici la gare et la grue."
+    },
+    {
+      "level": "a1",
+      "sentence": "Regardez la gomme et le légume."
+    },
+    {
+      "level": "a1",
+      "sentence": "Le gant et la glace sont là."
+    },
+    {
+      "level": "a1",
+      "sentence": "La figue est près de la vague."
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, le gâteau, la gomme et le légume sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le repas, la guitare, le gant et la glace restent là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, la bague, la figue et la vague sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Dans la rue, le gaz, le garage et le guidon sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le cours, le gorille, le gobelet et la goutte sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, le goûter, le groupe et la grappe vont bien."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit la vague et le gaz, on cherche le garage et le guidon."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on voit le guidon et le gorille, on cherche le gobelet et la goutte."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit la goutte et le goûter mais aussi le groupe et la grappe."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on prend la grappe et le goujon, on trouve la griotte et la gare."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on cherche la gomme et le légume, on prend la guitare et le gant."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on cherche la gomme et le légume, on trouve la guitare et le gant."
+    }
+  ],
+  "g-j": [
+    {
+      "level": "a1",
+      "sentence": "Prenez le gigot et la bougie."
+    },
+    {
+      "level": "a1",
+      "sentence": "Où sont la tige et un singe ?"
+    },
+    {
+      "level": "a1",
+      "sentence": "Voici un piège et une horloge."
+    },
+    {
+      "level": "a1",
+      "sentence": "Regardez le genou et la girafe."
+    },
+    {
+      "level": "a1",
+      "sentence": "Une image et une orange sont là."
+    },
+    {
+      "level": "a1",
+      "sentence": "Le gilet est près de la plage."
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, une horloge, la gymnastique et le genou sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le repas, la girafe, le fromage et une image restent là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, une orange, le village et le gilet sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Dans la rue, la plage, un étage et la page sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le cours, la neige, un âge et le nuage sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, le voyage, le gigot et la bougie vont bien."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit le village et le gilet, on cherche la plage et un étage."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on voit un étage et la page, on cherche la neige et un âge."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit un âge et le nuage mais aussi le voyage et le gigot."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on prend le gigot et la bougie, on trouve la cage et la tige."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit la tige et un singe, on trouve le linge et un piège."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on cherche un piège et une horloge, on trouve la gymnastique et le genou."
+    }
   ],
   "gn": [
-    "Je vois une araignée ici.",
-    "Je vois une baignoire ici.",
-    "Je vois un beignet ici.",
-    "Je vois une campagne ici.",
-    "Je vois un champignon ici.",
-    "Je vois un chataignier ici.",
-    "Je vois une cigogne ici.",
-    "Je vois une cygne ici.",
-    "Je vois une montagne ici.",
-    "Je vois un oignon ici.",
-    "Je vois une peigne ici.",
-    "Je vois un surligneur ici.",
-    "Je vois un agneau ici.",
-    "Je vois un agneaux ici.",
-    "Je vois une bagne ici.",
-    "Je vois un campagnes ici."
+    {
+      "level": "a1",
+      "sentence": "Prenez la ligne et le peigne."
+    },
+    {
+      "level": "a1",
+      "sentence": "Où sont un espagnol et la poignée ?"
+    },
+    {
+      "level": "a1",
+      "sentence": "Voici la Bretagne et une Espagne."
+    },
+    {
+      "level": "a1",
+      "sentence": "Regardez le beignet et le poignet."
+    },
+    {
+      "level": "a1",
+      "sentence": "Le compagnon et la lasagne sont là."
+    },
+    {
+      "level": "a1",
+      "sentence": "Un agneau est près de une araignée."
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, la vigne, la Bretagne et une Espagne sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le repas, la châtaigne, le beignet et le poignet restent là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, le chignon, le compagnon et la lasagne sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Dans la rue, le gagnant, un agneau et une araignée sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le cours, la cigogne, un mignon et le cygne sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, la montagne, le champignon et un oignon vont bien."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit le poignet et le chignon, on cherche le compagnon et la lasagne."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on voit la lasagne et le gagnant, on cherche un agneau et une araignée."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit une araignée et la cigogne mais aussi un mignon et le cygne."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on prend le cygne et la montagne, on trouve le champignon et un oignon."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit un oignon et la campagne, on trouve le signe et la ligne."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on cherche la ligne et le peigne, on trouve la baignoire et un espagnol."
+    }
+  ],
+  "h": [
+    {
+      "level": "a1",
+      "sentence": "Prenez une herbe et une huile."
+    },
+    {
+      "level": "a1",
+      "sentence": "Où sont le huit et le hamster ?"
+    },
+    {
+      "level": "a1",
+      "sentence": "Voici une hirondelle et le hélicoptère."
+    },
+    {
+      "level": "a1",
+      "sentence": "Regardez une hache et un hamac."
+    },
+    {
+      "level": "a1",
+      "sentence": "Le homard et un horaire sont là."
+    },
+    {
+      "level": "a1",
+      "sentence": "Un hôpital est près de un hôtel."
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, le hérisson, une hirondelle et le hélicoptère sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le repas, une horloge, une hache et un hamac restent là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, la harpe, le homard et un horaire sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Dans la rue, un horizon, un hôpital et un hôtel sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le cours, un hiver, un homme et une histoire sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, une heure, le haricot et le hibou vont bien."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit un hamac et la harpe, on cherche le homard et un horaire."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on voit un horaire et un horizon, on cherche un hôpital et un hôtel."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit un hôtel et un hiver mais aussi un homme et une histoire."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on prend une histoire et une heure, on trouve le haricot et le hibou."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit le hibou et le hamburger, on trouve le hockey et une herbe."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on cherche une herbe et une huile, on trouve un hasard et le huit."
+    }
+  ],
+  "i": [
+    {
+      "level": "a1",
+      "sentence": "Prenez le tigre et le kiwi."
+    },
+    {
+      "level": "a1",
+      "sentence": "Où sont le midi et le livre ?"
+    },
+    {
+      "level": "a1",
+      "sentence": "Voici le pic et la biche."
+    },
+    {
+      "level": "a1",
+      "sentence": "Regardez un ami et le riz."
+    },
+    {
+      "level": "a1",
+      "sentence": "La vis et le nid sont là."
+    },
+    {
+      "level": "a1",
+      "sentence": "Le prix est près de la lime."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, le nid, le film et le prix restent là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Dans la rue, la lime, le tigre et le kiwi sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le cours, la pizza, le midi et le livre sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, la tige, le pic et la biche vont bien."
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le repas, le lit, un ami et le riz restent là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, le ski, la vis et le nid sont là."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit un ami et le riz, on cherche le ski et la vis."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on voit la vis et le nid, on cherche le film et le prix."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit le prix et la lime mais aussi le tigre et le kiwi."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on prend le kiwi et la pizza, on trouve le midi et le livre."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit le livre et la tige, on trouve le pic et la biche."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on cherche la biche et le lit, on trouve un ami et le riz."
+    }
   ],
   "ill": [
-    "Je vois une abeille ici.",
-    "Je vois un appareil photo ici.",
-    "Je vois un billard ici.",
-    "Je vois une bille ici.",
-    "Je vois un boucles d'oreilles ici.",
-    "Je vois une bouteille ici.",
-    "Je vois un bouteille deau ici.",
-    "Je vois un cahier ici.",
-    "Je vois un cerisier ici.",
-    "Je vois un chataignier ici.",
-    "Je vois une chenille ici.",
-    "Je vois une citrouille ici.",
-    "Je vois un clavier ici.",
-    "Je vois un collier ici.",
-    "Je vois un crayon ici.",
-    "Je vois un cuisinier ici."
+    {
+      "level": "a1",
+      "sentence": "Prenez un éventail et la grille."
+    },
+    {
+      "level": "a1",
+      "sentence": "Où sont le papillon et le soleil ?"
+    },
+    {
+      "level": "a1",
+      "sentence": "Voici la feuille et la bouteille."
+    },
+    {
+      "level": "a1",
+      "sentence": "Regardez le réveil et une oreille."
+    },
+    {
+      "level": "a1",
+      "sentence": "La chenille et le billet sont là."
+    },
+    {
+      "level": "a1",
+      "sentence": "La paille est près de la taille."
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, le détail, un éventail et la grille sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le repas, la famille, le papillon et le soleil restent là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, le travail, la feuille et la bouteille sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Dans la rue, une abeille, le réveil et une oreille sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le cours, la grenouille, la chenille et le billet sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, le maillot, la paille et la taille vont bien."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit un orteil et le détail, on cherche un éventail et la grille."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on voit la grille et la famille, on cherche le papillon et le soleil."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit le soleil et le travail mais aussi la feuille et la bouteille."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on prend la bouteille et une abeille, on trouve le réveil et une oreille."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit une oreille et la grenouille, on trouve la chenille et le billet."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on cherche le billet et le maillot, on trouve la paille et la taille."
+    }
+  ],
+  "in": [
+    {
+      "level": "a1",
+      "sentence": "Le magasin est avec le moulin."
+    },
+    {
+      "level": "a1",
+      "sentence": "Où sont le dessin et le chemin ?"
+    },
+    {
+      "level": "a1",
+      "sentence": "Voici le magasin et le moulin."
+    },
+    {
+      "level": "a1",
+      "sentence": "Regardez le sapin et le dauphin."
+    },
+    {
+      "level": "a1",
+      "sentence": "Voici le vin et le singe."
+    },
+    {
+      "level": "a1",
+      "sentence": "Le jardin est près de le pain."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, le magasin, le moulin et le raisin restent là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Dans la rue, le sapin, le dauphin et le frein sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le cours, la main, le train et le matin sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, le jardin, le pain et le cinq sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le repas, le vin, le singe et le timbre restent là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, la peinture, la ceinture et le plein sont là."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on prend le jardin et le pain, on trouve le cinq et le vin."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on voit le jardin et le pain, on cherche le cinq et le vin."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit le vin et le singe mais aussi le timbre et la peinture."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on prend la peinture et la ceinture, on trouve le plein et le peintre."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit le peintre et le bain, on trouve le voisin et le dessin."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on cherche le dessin et le chemin, on trouve le médecin et le magasin."
+    }
+  ],
+  "j": [
+    {
+      "level": "a1",
+      "sentence": "Prenez le jour et le jeudi."
+    },
+    {
+      "level": "a1",
+      "sentence": "Où sont le juillet et le jardin ?"
+    },
+    {
+      "level": "a1",
+      "sentence": "Voici le jus et le jaune."
+    },
+    {
+      "level": "a1",
+      "sentence": "Regardez le déjeuner et le jouet."
+    },
+    {
+      "level": "a1",
+      "sentence": "Le jambon et le jeton sont là."
+    },
+    {
+      "level": "a1",
+      "sentence": "La jument est près de la jungle."
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, le jouet, la jambe et le jambon sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le repas, le jeton, le judo et la jument restent là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, la jungle, la javel et le jogging sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Dans la rue, le jasmin, le jour et le jeudi sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le cours, le juin, le juillet et le jardin sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, la jupe, le jus et le jaune vont bien."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on prend le juillet et le jardin, on trouve la jupe et le jus."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on voit le juillet et le jardin, on cherche la jupe et le jus."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit le jus et le jaune mais aussi le bijou et le déjeuner."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on prend le déjeuner et le jouet, on trouve la jambe et le jambon."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on cherche la jument et la jungle, on prend la javel et le jogging."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on cherche la jument et la jungle, on trouve la javel et le jogging."
+    }
+  ],
+  "k": [
+    {
+      "level": "a1",
+      "sentence": "Regardez un anorak et le ticket."
+    },
+    {
+      "level": "a1",
+      "sentence": "Où sont un anorak et le ticket ?"
+    },
+    {
+      "level": "a1",
+      "sentence": "Voici la kermesse et le klaxon."
+    },
+    {
+      "level": "a1",
+      "sentence": "Regardez le bikini et le kit."
+    },
+    {
+      "level": "a1",
+      "sentence": "Voici le moka et le koala."
+    },
+    {
+      "level": "a1",
+      "sentence": "Le steak est près de le cookie."
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, la kermesse, le klaxon et le kaki sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le repas, le bikini, le kit et le hockey restent là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, le steak, le cookie et le kebab vont bien."
+    },
+    {
+      "level": "a2",
+      "sentence": "Dans la rue, le steak, le cookie et le kebab sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le cours, le moka, le koala et le kangourou sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, le karaté, le kayak et le kiosque vont bien."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on prend le steak et le cookie, on trouve le kebab et le moka."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on voit le steak et le cookie, on cherche le kebab et le moka."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit le moka et le koala mais aussi le kangourou et le karaté."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on prend le karaté et le kayak, on trouve le kiosque et le parking."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit le parking et le ski, on trouve le basket et un anorak."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on cherche un anorak et le ticket, on trouve le kimono et la kermesse."
+    }
+  ],
+  "l": [
+    {
+      "level": "a1",
+      "sentence": "Prenez le lavabo et la laine."
+    },
+    {
+      "level": "a1",
+      "sentence": "Où sont le lait et la salade ?"
+    },
+    {
+      "level": "a1",
+      "sentence": "Voici une école et la ville."
+    },
+    {
+      "level": "a1",
+      "sentence": "Regardez le livre et la lampe."
+    },
+    {
+      "level": "a1",
+      "sentence": "Le lac et le lit sont là."
+    },
+    {
+      "level": "a1",
+      "sentence": "Le loup est près de le lapin."
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, le livre, la lampe et le pull sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le repas, le lac, le lit et la lune restent là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, le loup, le lapin et le lilas sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Dans la rue, le lion, la luge et le loto sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le cours, le lavabo, la laine et le lama sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, le lait, la salade et le légume vont bien."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit le lion et la luge, on cherche le loto et le lavabo."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on voit le lavabo et la laine, on cherche le lama et le lait."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit le lait et la salade mais aussi le légume et une école."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on prend une école et la ville, on trouve le lundi et le livre."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit le livre et la lampe, on trouve le pull et le lac."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on cherche le lac et le lit, on trouve la lune et le loup."
+    }
+  ],
+  "m": [
+    {
+      "level": "a1",
+      "sentence": "Prenez le mur et la main."
+    },
+    {
+      "level": "a1",
+      "sentence": "Où sont le mouton et le melon ?"
+    },
+    {
+      "level": "a1",
+      "sentence": "Voici la moule et la mouche."
+    },
+    {
+      "level": "a1",
+      "sentence": "Regardez le monde et la manche."
+    },
+    {
+      "level": "a1",
+      "sentence": "Le musée et la mare sont là."
+    },
+    {
+      "level": "a1",
+      "sentence": "La maman est près de la madame."
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, le miel, la moule et la mouche sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le repas, la montre, le monde et la manche restent là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, la mûre, le musée et la mare sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Dans la rue, le menu, la maman et la madame sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le cours, un ami, le mari et la femme sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, la maison, le mardi et la pomme vont bien."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit la manche et la mûre, on cherche le musée et la mare."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on voit la mare et le menu, on cherche la maman et la madame."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit la madame et un ami mais aussi le mari et la femme."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on prend la femme et la maison, on trouve le mardi et la pomme."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit la pomme et la musique, on trouve la moto et le mur."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on cherche le mur et la main, on trouve le moulin et le mouton."
+    }
+  ],
+  "n": [
+    {
+      "level": "a1",
+      "sentence": "Regardez le nuage et le poney."
+    },
+    {
+      "level": "a1",
+      "sentence": "Voici le dîner et la semaine."
+    },
+    {
+      "level": "a1",
+      "sentence": "La banane est près de un animal."
+    },
+    {
+      "level": "a1",
+      "sentence": "Où sont le dîner et la semaine ?"
+    },
+    {
+      "level": "a1",
+      "sentence": "Voici la panne et la nature."
+    },
+    {
+      "level": "a1",
+      "sentence": "Où sont la mine et le nid ?"
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, le dîner, la semaine et la cuisine sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le repas, la panne, la nature et la canne restent là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, la lune, la laine et la prune sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Dans la rue, la mine, le nid et la note sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le cours, le nuage, le poney et la lanière sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, le nez, le genou et une année vont bien."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit la mine et le nid, on cherche la note et le nuage."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on voit le nuage et le poney, on cherche la lanière et le nez."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit le nez et le genou mais aussi une année et la banane."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on prend la banane et un animal, on trouve une bonne et le dîner."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit le dîner et la semaine, on trouve la cuisine et la panne."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on cherche la panne et la nature, on trouve la canne et la lune."
+    }
+  ],
+  "o": [
+    {
+      "level": "a1",
+      "sentence": "Prenez le vélo et la moto."
+    },
+    {
+      "level": "a1",
+      "sentence": "Où sont le robot et le polo ?"
+    },
+    {
+      "level": "a1",
+      "sentence": "Voici le kilo et un hôtel."
+    },
+    {
+      "level": "a1",
+      "sentence": "Regardez la rose et la pomme."
+    },
+    {
+      "level": "a1",
+      "sentence": "La robe et la poche sont là."
+    },
+    {
+      "level": "a1",
+      "sentence": "Le chocolat est près de le coffre."
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, la pomme, la porte et la robe sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le repas, la poche, la botte et le chocolat restent là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, le coffre, le cochon et le bol sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Dans la rue, le sol, le vélo et la moto sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le cours, le métro, le robot et le polo sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, le domino, le kilo et un hôtel vont bien."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on prend le robot et le polo, on trouve le domino et le kilo."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on voit le robot et le polo, on cherche le domino et le kilo."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit le kilo et un hôtel mais aussi un hôpital et la rose."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on prend la rose et la pomme, on trouve la porte et la robe."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on cherche le chocolat et le coffre, on prend le cochon et le bol."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on cherche le chocolat et le coffre, on trouve le cochon et le bol."
+    }
+  ],
+  "oi": [
+    {
+      "level": "a1",
+      "sentence": "Regardez la loi et la foire."
+    },
+    {
+      "level": "a1",
+      "sentence": "Où sont la loi et la foire ?"
+    },
+    {
+      "level": "a1",
+      "sentence": "Voici le poivre et le doigt."
+    },
+    {
+      "level": "a1",
+      "sentence": "Regardez la voile et le devoir."
+    },
+    {
+      "level": "a1",
+      "sentence": "Voici une étoile et un oiseau."
+    },
+    {
+      "level": "a1",
+      "sentence": "Le trois est près de la voiture."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, le poivre, le doigt et la croix vont bien."
+    },
+    {
+      "level": "a2",
+      "sentence": "Pour le cours, la voile, le devoir et la mémoire sont utiles."
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, le trois, la voiture et le poisson sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Pour le cours, le trois, la voiture et le poisson sont utiles."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, une étoile, un oiseau et la poire vont bien."
+    },
+    {
+      "level": "a2",
+      "sentence": "Pour le cours, le voisin, une armoire et le miroir sont utiles."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on prend le trois et la voiture, on trouve le poisson et une étoile."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on voit le trois et la voiture, on cherche le poisson et une étoile."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit une étoile et un oiseau mais aussi la poire et le voisin."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on prend le voisin et une armoire, on trouve le miroir et une histoire."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit une histoire et le toit, on trouve le bois et la loi."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on cherche la loi et la foire, on trouve la soie et le poivre."
+    }
+  ],
+  "on": [
+    {
+      "level": "a1",
+      "sentence": "Prenez une ombre et le bonbon."
+    },
+    {
+      "level": "a1",
+      "sentence": "Où sont le bouton et le mouton ?"
+    },
+    {
+      "level": "a1",
+      "sentence": "Voici la maison et le garçon."
+    },
+    {
+      "level": "a1",
+      "sentence": "Regardez le balcon et un avion."
+    },
+    {
+      "level": "a1",
+      "sentence": "Le ballon et le salon sont là."
+    },
+    {
+      "level": "a1",
+      "sentence": "Le citron est près de le savon."
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, le bonbon, le bonjour et le bouton sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le repas, le mouton, le poisson et la maison restent là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, le garçon, la chanson et le balcon sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Dans la rue, un avion, le camion et le ballon sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le cours, le salon, le melon et le citron sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, le savon, un oncle et le monde vont bien."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit le bonjour et le bouton, on cherche le mouton et le poisson."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on voit le poisson et la maison, on cherche le garçon et la chanson."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit la chanson et le balcon mais aussi un avion et le camion."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on prend le camion et le ballon, on trouve le salon et le melon."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit le melon et le citron, on trouve le savon et un oncle."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on cherche un oncle et le monde, on trouve la montre et la montagne."
+    }
+  ],
+  "ou": [
+    {
+      "level": "a1",
+      "sentence": "Prenez la bougie et le mouton."
+    },
+    {
+      "level": "a1",
+      "sentence": "Où sont la poubelle et la douche ?"
+    },
+    {
+      "level": "a1",
+      "sentence": "Voici la fourchette et le jouet."
+    },
+    {
+      "level": "a1",
+      "sentence": "Regardez un amour et le bijou."
+    },
+    {
+      "level": "a1",
+      "sentence": "Un ours et le bouton sont là."
+    },
+    {
+      "level": "a1",
+      "sentence": "La mousse est près de le couple."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, la douche, le couteau et la fourchette sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Dans la rue, le jouet, le tour et un amour sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, le bijou, le loup et un ours sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Dans la rue, le bouton, le moulin et la mousse sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, le genou, le rouge et la poule vont bien."
+    },
+    {
+      "level": "a2",
+      "sentence": "Dans la rue, le genou, le rouge et la poule sont là."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit le tour et un amour, on cherche le bijou et le loup."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on voit le loup et un ours, on cherche le bouton et le moulin."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit le moulin et la mousse mais aussi le couple et la poudre."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on prend la poudre et la bouche, on trouve le genou et le rouge."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit le rouge et la poule, on trouve le jour et la soupe."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on cherche la soupe et la boutique, on trouve la bouteille et la bougie."
+    }
+  ],
+  "p": [
+    {
+      "level": "a1",
+      "sentence": "Prenez le tapis et le pantalon."
+    },
+    {
+      "level": "a1",
+      "sentence": "Où sont la pile et le sapin ?"
+    },
+    {
+      "level": "a1",
+      "sentence": "Voici la pluie et le pont."
+    },
+    {
+      "level": "a1",
+      "sentence": "Regardez le pain et la pomme."
+    },
+    {
+      "level": "a1",
+      "sentence": "Le repas et la pâte sont là."
+    },
+    {
+      "level": "a1",
+      "sentence": "Le papa est près de la porte."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, le pont, le papier et le pain restent là."
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, la pomme, la soupe et le repas sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le cours, la pâte, la poire et le papa sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, la porte, le pull et la piscine vont bien."
+    },
+    {
+      "level": "a2",
+      "sentence": "Pour le cours, la place, la poule et la poche sont utiles."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, la lampe, le tapis et le pantalon sont là."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit la poire et le papa, on cherche la porte et le pull."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on voit le pull et la piscine, on cherche la place et la poule."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit la poule et la poche mais aussi la lampe et le tapis."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on prend le tapis et le pantalon, on trouve la poupée et la pile."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit la pile et le sapin, on trouve le parc et la pluie."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on cherche la pluie et le pont, on trouve le papier et le pain."
+    }
+  ],
+  "ph": [
+    {
+      "level": "a1",
+      "sentence": "Prenez la biographie et la géographie."
+    },
+    {
+      "level": "a1",
+      "sentence": "Où sont la photo et le téléphone ?"
+    },
+    {
+      "level": "a1",
+      "sentence": "Voici la sphère et la pharmacie."
+    },
+    {
+      "level": "a1",
+      "sentence": "Regardez la philosophie et un éléphant."
+    },
+    {
+      "level": "a1",
+      "sentence": "Le phare et le phoque sont là."
+    },
+    {
+      "level": "a1",
+      "sentence": "Le saxophone est près de le trophée."
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, la philosophie, un éléphant et le dauphin sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le repas, le phare, le phoque et une orthographe restent là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, le saxophone, le trophée et le graphique sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Dans la rue, le nénuphar, le paragraphe et le phénomène sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le cours, la biographie, la géographie et un alphabet sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, la photo, le téléphone et le microphone vont bien."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit le nénuphar et le paragraphe, on cherche le phénomène et la biographie."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on voit la biographie et la géographie, on cherche un alphabet et la photo."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit la photo et le téléphone mais aussi le microphone et la sphère."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on prend la sphère et la pharmacie, on trouve la phrase et la philosophie."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit la philosophie et un éléphant, on trouve le dauphin et le phare."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on cherche le phare et le phoque, on trouve une orthographe et le saxophone."
+    }
+  ],
+  "q": [
+    {
+      "level": "a1",
+      "sentence": "Prenez la qualité et la plaque."
+    },
+    {
+      "level": "a1",
+      "sentence": "Où sont la musique et le quatuor ?"
+    },
+    {
+      "level": "a1",
+      "sentence": "Voici le disque et la boutique."
+    },
+    {
+      "level": "a1",
+      "sentence": "Regardez une équipe et le quartier."
+    },
+    {
+      "level": "a1",
+      "sentence": "Le chèque et le paquet sont là."
+    },
+    {
+      "level": "a1",
+      "sentence": "Le cinq est près de la question."
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, une équipe, le quartier et la banque sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le repas, le chèque, le paquet et le coq restent là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, le cinq, la question et le risque sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Dans la rue, la marque, la quiche et le quinoa sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le cours, la qualité, la plaque et la brique sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, la musique, le quatuor et le cirque vont bien."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit la marque et la quiche, on cherche le quinoa et la qualité."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on voit la qualité et la plaque, on cherche la brique et la musique."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit la musique et le quatuor mais aussi le cirque et le disque."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on prend le disque et la boutique, on trouve la casquette et une équipe."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit une équipe et le quartier, on trouve la banque et le chèque."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on cherche le chèque et le paquet, on trouve le coq et le cinq."
+    }
+  ],
+  "r": [
+    {
+      "level": "a1",
+      "sentence": "Prenez le car et la barre."
+    },
+    {
+      "level": "a1",
+      "sentence": "Où sont la guerre et le beurre ?"
+    },
+    {
+      "level": "a1",
+      "sentence": "Voici le père et la mère."
+    },
+    {
+      "level": "a1",
+      "sentence": "Regardez le fruit et le train."
+    },
+    {
+      "level": "a1",
+      "sentence": "Le rat et la rose sont là."
+    },
+    {
+      "level": "a1",
+      "sentence": "La rue est près de le rouge."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, le frère, le père et la mère restent là."
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, le livre, le fruit et le train sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le cours, le riz, le rat et la rose sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, le robot, la rue et le rouge vont bien."
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le repas, le mardi, un arbre et la terre restent là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, la mer, le mur et la porte sont là."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit le train et le riz, on cherche le rat et la rose."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on voit la rose et le robot, on cherche la rue et le rouge."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit le rouge et le mardi mais aussi un arbre et la terre."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on prend la terre et la mer, on trouve le mur et la porte."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit la porte et la sœur, on trouve un hiver et le car."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on cherche le car et la barre, on trouve le verre et la guerre."
+    }
+  ],
+  "s-s": [
+    {
+      "level": "a1",
+      "sentence": "Prenez le sucre et le sel."
+    },
+    {
+      "level": "a1",
+      "sentence": "Où sont la saucisse et le sac ?"
+    },
+    {
+      "level": "a1",
+      "sentence": "Voici le sport et la classe."
+    },
+    {
+      "level": "a1",
+      "sentence": "Regardez la veste et le bus."
+    },
+    {
+      "level": "a1",
+      "sentence": "Le fils et le tennis sont là."
+    },
+    {
+      "level": "a1",
+      "sentence": "Le singe est près de le savon."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, la saucisse, le sac et le samedi sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Dans la rue, le sport, la classe et le poste sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, la veste, le bus et un ours sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Dans la rue, le fils, le tennis et le soleil sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, le singe, le savon et le stylo sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Dans la rue, le serpent, le sable et le sapin sont là."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit le sport et la classe, on cherche le poste et la veste."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on voit la veste et le bus, on cherche un ours et le fils."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit le fils et le tennis mais aussi le soleil et le singe."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on prend le singe et le savon, on trouve le stylo et le serpent."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit le serpent et le sable, on trouve le sapin et la salade."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on cherche la salade et la soupe, on trouve le poisson et la tasse."
+    }
+  ],
+  "s-z": [
+    {
+      "level": "a1",
+      "sentence": "Prenez la devise et la crise."
+    },
+    {
+      "level": "a1",
+      "sentence": "Où sont la chaise et la cuisine ?"
+    },
+    {
+      "level": "a1",
+      "sentence": "Voici la rose et la visite."
+    },
+    {
+      "level": "a1",
+      "sentence": "Regardez la fraise et la cerise."
+    },
+    {
+      "level": "a1",
+      "sentence": "Le poison et la saison sont là."
+    },
+    {
+      "level": "a1",
+      "sentence": "Une usine est près de un oiseau."
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, la mesure, la devise et la crise sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le repas, la maison, la chaise et la cuisine restent là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, le cousin, la rose et la visite sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Dans la rue, la valise, la fraise et la cerise sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le cours, le raisin, le poison et la saison sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, le magasin, une usine et un oiseau vont bien."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit le plaisir et la mesure, on cherche la devise et la crise."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on voit la crise et la maison, on cherche la chaise et la cuisine."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit la cuisine et le cousin mais aussi la rose et la visite."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on prend la visite et la valise, on trouve la fraise et la cerise."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit la cerise et le raisin, on trouve le poison et la saison."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on cherche la saison et le magasin, on trouve une usine et un oiseau."
+    }
+  ],
+  "t": [
+    {
+      "level": "a1",
+      "sentence": "Regardez la botte et la carotte."
+    },
+    {
+      "level": "a1",
+      "sentence": "Où sont la botte et la carotte ?"
+    },
+    {
+      "level": "a1",
+      "sentence": "Voici la note et la patte."
+    },
+    {
+      "level": "a1",
+      "sentence": "Regardez le toast et le train."
+    },
+    {
+      "level": "a1",
+      "sentence": "Voici la tasse et la tête."
+    },
+    {
+      "level": "a1",
+      "sentence": "La tuile est près de le tiroir."
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, la note, la patte et la goutte sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le repas, le toast, le train et la tétine restent là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, la tuile, le tiroir et la tomate vont bien."
+    },
+    {
+      "level": "a2",
+      "sentence": "Dans la rue, la tuile, le tiroir et la tomate sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le cours, la tasse, la tête et le tigre sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, la tarte, le trottoir et la tortue vont bien."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on prend la tuile et le tiroir, on trouve la tomate et la tasse."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on voit la tuile et le tiroir, on cherche la tomate et la tasse."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit la tasse et la tête mais aussi le tigre et la tarte."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on prend la tarte et le trottoir, on trouve la tortue et la tente."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit la tente et la tartine, on trouve le ticket et la botte."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on cherche la botte et la carotte, on trouve la date et la note."
+    }
+  ],
+  "u": [
+    {
+      "level": "a1",
+      "sentence": "Prenez la fumée et la fusée."
+    },
+    {
+      "level": "a1",
+      "sentence": "Où sont le muscle et la brume ?"
+    },
+    {
+      "level": "a1",
+      "sentence": "Voici la rue et la statue."
+    },
+    {
+      "level": "a1",
+      "sentence": "Regardez le bus et la lune."
+    },
+    {
+      "level": "a1",
+      "sentence": "Le jus et le pull sont là."
+    },
+    {
+      "level": "a1",
+      "sentence": "Le sucre est près de la bulle."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, la jupe, le bus et la lune restent là."
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, le mur, le jus et le pull sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le cours, la vue, le sucre et la bulle sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, le menu, la puce et le cube vont bien."
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le repas, la tulipe, le bureau et la fumée restent là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, la fusée, la minute et le muscle sont là."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit la bulle et le menu, on cherche la puce et le cube."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on voit le cube et la tulipe, on cherche le bureau et la fumée."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit la fumée et la fusée mais aussi la minute et le muscle."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on prend le muscle et la brume, on trouve le lutin et la rue."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on cherche le bus et la lune, on prend le mur et le jus."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on cherche le bus et la lune, on trouve le mur et le jus."
+    }
+  ],
+  "v": [
+    {
+      "level": "a1",
+      "sentence": "Prenez un hiver et le lavabo."
+    },
+    {
+      "level": "a1",
+      "sentence": "Où sont le livre et la vache ?"
+    },
+    {
+      "level": "a1",
+      "sentence": "Voici la cave et le verre."
+    },
+    {
+      "level": "a1",
+      "sentence": "Regardez une avenue et le cheval."
+    },
+    {
+      "level": "a1",
+      "sentence": "La cravate et une enveloppe sont là."
+    },
+    {
+      "level": "a1",
+      "sentence": "Le vent est près de le voleur."
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, la vache, le vase et la cave sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le repas, le verre, un élève et une avenue restent là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, le cheval, la chèvre et la cravate sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Dans la rue, une enveloppe, la vie et le vent sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le cours, le voleur, la vigne et le vélo sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, la voiture, un avion et le voyage vont bien."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit un élève et une avenue, on cherche le cheval et la chèvre."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on voit la chèvre et la cravate, on cherche une enveloppe et la vie."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit la vie et le vent mais aussi le voleur et la vigne."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on prend la vigne et le vélo, on trouve la voiture et un avion."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit un avion et le voyage, on trouve le volant et la ville."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on cherche la ville et le vendredi, on trouve un cheveu et un hiver."
+    }
+  ],
+  "w": [
+    {
+      "level": "a1",
+      "sentence": "Prenez le wallaby et le wapiti."
+    },
+    {
+      "level": "a1",
+      "sentence": "Où sont le swing et le show ?"
+    },
+    {
+      "level": "a1",
+      "sentence": "Voici le week-end et le wifi."
+    },
+    {
+      "level": "a1",
+      "sentence": "Regardez le sandwich et le tramway."
+    },
+    {
+      "level": "a1",
+      "sentence": "La webcam et le bowling sont là."
+    },
+    {
+      "level": "a1",
+      "sentence": "Le western est près de le snowboard."
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, le kiwi, le sandwich et le tramway sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le repas, le clown, la webcam et le bowling restent là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, le wok, le western et le snowboard sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Dans la rue, une interview, le steward et le walkman sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le cours, le water-polo, le wasabi et le wallaby sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, le wapiti, le twist et le swing vont bien."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit le snowboard et une interview, on cherche le steward et le walkman."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on voit le walkman et le water-polo, on cherche le wasabi et le wallaby."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit le wallaby et le wapiti mais aussi le twist et le swing."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on prend le swing et le show, on trouve le sweat et le week-end."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on cherche le sandwich et le tramway, on prend le clown et la webcam."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on cherche le sandwich et le tramway, on trouve le clown et la webcam."
+    }
+  ],
+  "x-gz": [
+    {
+      "level": "a1",
+      "sentence": "Une exhibition est avec un exutoire."
+    },
+    {
+      "level": "a1",
+      "sentence": "Où sont une existence et une exigence ?"
+    },
+    {
+      "level": "a1",
+      "sentence": "Une exubérance est près de un exercice."
+    },
+    {
+      "level": "a1",
+      "sentence": "Regardez une exubérance et un exercice."
+    },
+    {
+      "level": "a1",
+      "sentence": "Un exemple et un hexagone sont là."
+    },
+    {
+      "level": "a1",
+      "sentence": "Un exil est près de un exode."
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, un exode, une existence et une exigence sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le repas, une exagération, une exhibition et un exutoire restent là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, un exorcisme, une exubérance et un exercice sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Dans la rue, un examen, un exemple et un hexagone sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le cours, un exemplaire, un exil et un exode sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, une existence, une exigence et une exagération vont bien."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit une exigence et une exagération, on cherche une exhibition et un exutoire."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on voit un exutoire et un exorcisme, on cherche une exubérance et un exercice."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit un exercice et un examen mais aussi un exemple et un hexagone."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on prend un hexagone et un exemplaire, on trouve un exil et un exode."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit un exode et une existence, on trouve une exigence et une exagération."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on cherche une exagération et une exhibition, on trouve un exutoire et un exorcisme."
+    }
+  ],
+  "x-ks": [
+    {
+      "level": "a1",
+      "sentence": "Regardez une exposition et un extra."
+    },
+    {
+      "level": "a1",
+      "sentence": "Où sont une exposition et un extra ?"
+    },
+    {
+      "level": "a1",
+      "sentence": "Voici le thorax et le fax."
+    },
+    {
+      "level": "a1",
+      "sentence": "Regardez le xylophone et une expérience."
+    },
+    {
+      "level": "a1",
+      "sentence": "Voici un axe et le saxophone."
+    },
+    {
+      "level": "a1",
+      "sentence": "Une excuse est près de le maximum."
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, le thorax, le fax et le texto sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le repas, le xylophone, une expérience et le lynx restent là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, une excuse, le maximum et le luxe vont bien."
+    },
+    {
+      "level": "a2",
+      "sentence": "Dans la rue, une excuse, le maximum et le luxe sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le cours, un axe, le saxophone et un oxygène sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, la galaxie, un extincteur et le pixel vont bien."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on prend une excuse et le maximum, on trouve le luxe et un axe."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on voit une excuse et le maximum, on cherche le luxe et un axe."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit un axe et le saxophone mais aussi un oxygène et la galaxie."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on prend la galaxie et un extincteur, on trouve le pixel et le réflexe."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit le réflexe et le mixeur, on trouve le boxeur et une exposition."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on cherche une exposition et un extra, on trouve un index et le thorax."
+    }
+  ],
+  "y": [
+    {
+      "level": "a1",
+      "sentence": "Prenez le recyclage et le labyrinthe."
+    },
+    {
+      "level": "a1",
+      "sentence": "Où sont une hygiène et le pays ?"
+    },
+    {
+      "level": "a1",
+      "sentence": "Voici le lys et le jury."
+    },
+    {
+      "level": "a1",
+      "sentence": "Regardez le stylo et le lycée."
+    },
+    {
+      "level": "a1",
+      "sentence": "Le pyjama et le type sont là."
+    },
+    {
+      "level": "a1",
+      "sentence": "Le mystère est près de la pyramide."
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, le jury, le nylon et le stylo sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le repas, le lycée, la physique et le pyjama restent là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, le type, le cygne et le mystère sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Dans la rue, la pyramide, le cylindre et le rythme sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le cours, la lyre, la myrtille et le système sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, le python, le recyclage et le labyrinthe vont bien."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit le cygne et le mystère, on cherche la pyramide et le cylindre."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on voit le cylindre et le rythme, on cherche la lyre et la myrtille."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit la myrtille et le système mais aussi le python et le recyclage."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on prend le recyclage et le labyrinthe, on trouve le style et une hygiène."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit une hygiène et le pays, on trouve le mythe et le lys."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on cherche le lys et le jury, on trouve le nylon et le stylo."
+    }
+  ],
+  "z": [
+    {
+      "level": "a1",
+      "sentence": "Prenez le bazar et le zinc."
+    },
+    {
+      "level": "a1",
+      "sentence": "Où sont le magazine et le mazout ?"
+    },
+    {
+      "level": "a1",
+      "sentence": "Voici le zéro et le douze."
+    },
+    {
+      "level": "a1",
+      "sentence": "Regardez le quinze et le seize."
+    },
+    {
+      "level": "a1",
+      "sentence": "La zone et le zèbre sont là."
+    },
+    {
+      "level": "a1",
+      "sentence": "La pizza est près de le bronze."
+    },
+    {
+      "level": "a2",
+      "sentence": "À midi, le treize, le quinze et le seize sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Après le repas, le zoo, la zone et le zèbre restent là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce soir, le lézard, la pizza et le bronze sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Dans la rue, la gazelle, le zeste et le zébu sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Avant le cours, le zigzag, le trapèze et le bazar sont là."
+    },
+    {
+      "level": "a2",
+      "sentence": "Ce matin, le zinc, le zodiaque et le magazine vont bien."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit le bronze et la gazelle, on cherche le zeste et le zébu."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on voit le zébu et le zigzag, on cherche le trapèze et le bazar."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on voit le bazar et le zinc mais aussi le zodiaque et le magazine."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on prend le magazine et le mazout, on trouve le zona et le zéro."
+    },
+    {
+      "level": "b1",
+      "sentence": "Quand on cherche le quinze et le seize, on prend le zoo et la zone."
+    },
+    {
+      "level": "b1",
+      "sentence": "Si on cherche le quinze et le seize, on trouve le zoo et la zone."
+    }
   ]
 }
