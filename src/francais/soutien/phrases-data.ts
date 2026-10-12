@@ -1,11 +1,12 @@
 /**
  * Phrases didactiques Soutien FR (types 9 / 10 / 12 / 14) par banque et par niveau.
  *
- * Source : `./phrases/<bankId>.json` — rédigées / générées (FLE, phonétique) :
+ * Source : `./phrases/<bankId>.json` — à remplir (FLE, phonétique) :
  * - Types 9 / 10 : listes à niveau a1 / a2 / b1 ;
- * - Types 12 / 14 : **histoires** A2–B1 (10 par banque) —
+ * - Types 12 / 14 : histoires A2–B1 (10 par banque) —
  *   type 12 = 9 phrases / histoire ; type 14 = 19 phrases / histoire.
  *   La fiche tire une histoire puis utilise les phrases dans l’ordre (Q1 = phrase 1…).
+ * Banques actuellement vides : repli sur `countPhrases` / `readPhrases` / banques mot.
  */
 
 export type SoutienPhraseLevel = 'a1' | 'a2' | 'b1'
