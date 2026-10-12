@@ -360,8 +360,17 @@ export function SyllablePronounceBlock({ item }: { item: MathItem }) {
     }
   }, [audioKey])
 
+  const cols = Math.max(1, Math.min(2, item.letterGridCols ?? 1))
   return (
-    <div className="syllable-pronounce-block" aria-label="Prononcer les syllabes">
+    <div
+      className={`syllable-pronounce-block${cols === 2 ? ' is-2col' : ''}`}
+      style={
+        cols === 2
+          ? ({ gridTemplateColumns: 'repeat(2, minmax(0, 1fr))' } as CSSProperties)
+          : undefined
+      }
+      aria-label="Prononcer les syllabes"
+    >
       {rows.map((row, index) => (
         <div className="syllable-pronounce-row" key={`sp-${index}-${row.word}`}>
           <span className="syllable-pronounce-num">{row.index}.</span>
@@ -374,7 +383,7 @@ export function SyllablePronounceBlock({ item }: { item: MathItem }) {
           </div>
           <div className="syllable-pronounce-cells">
             {row.parts.map((part, pIdx) => (
-              <span className="syllable-pronounce-cell" key={`${row.word}-${pIdx}`}>
+              <span className="syllable-pronounce-cell is-framed" key={`${row.word}-${pIdx}`}>
                 {part}
               </span>
             ))}
@@ -532,7 +541,7 @@ export function ListenCheckBlock({ item, mode }: { item: MathItem; mode: Preview
 
   return (
     <div
-      className={`listen-check-block${withImages ? ' listen-check-block--images' : ''}${withAudio ? ' listen-check-block--audio' : ''}`}
+      className={`listen-check-block${withImages ? ' listen-check-block--images' : ''}${withAudio ? ' listen-check-block--audio' : ''}${withImages ? (show ? ' is-answers' : ' is-exercise') : ''}`}
       aria-label="Entendre le son"
     >
       {item.prompt ? <p className="column-prompt">{item.prompt}</p> : null}

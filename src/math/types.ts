@@ -534,6 +534,8 @@ export type MathItem = {
   }>
   /** Syllabes : une seule table script (pas de Playwrite). */
   syllableTableScriptOnly?: boolean
+  /** Cadre arrondi autour de chaque syllabe (pas autour du bloc). */
+  syllableTableCellFrames?: boolean
   /** Soutien FR type 8 : image + mini-tableau (une case par syllabe). */
   syllableSoundItems?: Array<{
     word: string

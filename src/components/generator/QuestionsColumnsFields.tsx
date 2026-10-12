@@ -20,6 +20,11 @@ export type QuestionsColumnsFieldsProps = {
   isSoutienCompleter: boolean
   isSoutienCols123: boolean
   isSoutienCols345: boolean
+  isAlphaMotsCols: boolean
+  isAlphaSyllabeTableCols: boolean
+  isAlphaPrononcerCols: boolean
+  hideColumnsOption: boolean
+  isAlphabetisation: boolean
   soutienKind: string | undefined
   questionsInputOverflow: boolean
   bankOverflow: boolean
@@ -57,6 +62,11 @@ export function QuestionsColumnsFields(props: QuestionsColumnsFieldsProps) {
     isSoutienCompleter,
     isSoutienCols123,
     isSoutienCols345,
+    isAlphaMotsCols,
+    isAlphaSyllabeTableCols,
+    isAlphaPrononcerCols,
+    hideColumnsOption,
+    isAlphabetisation,
     soutienKind,
     questionsInputOverflow,
     bankOverflow,
@@ -336,17 +346,81 @@ export function QuestionsColumnsFields(props: QuestionsColumnsFieldsProps) {
                   </small>
                 </div>
               ) : null}
-              {isSoutienCols123 ? (
+              {isAlphaMotsCols ? (
+                <div className="mode-toggle-block">
+                  <b>Colonnes</b>
+                  <div className="mode-toggle is-2" role="group" aria-label="Nombre de colonnes">
+                    {[2, 3].map((value) => (
+                      <button
+                        key={value}
+                        type="button"
+                        className={(activeBlock.columns ?? 2) === value ? 'active' : ''}
+                        onClick={() =>
+                          updatePage({ columns: value, count: value * 2 })
+                        }
+                      >
+                        {value}
+                      </button>
+                    ))}
+                  </div>
+                  <small className="muted">
+                    2 colonnes = 4 mots · 3 colonnes = 6 mots.
+                  </small>
+                </div>
+              ) : null}
+              {isAlphaSyllabeTableCols ? (
                 <div className="mode-toggle-block">
                   <b>Colonnes</b>
                   <div className="mode-toggle is-3" role="group" aria-label="Nombre de colonnes">
-                    {[1, 2, 3].map((value) => (
+                    {[4, 5, 6].map((value) => (
+                      <button
+                        key={value}
+                        type="button"
+                        className={(activeBlock.columns ?? 5) === value ? 'active' : ''}
+                        onClick={() => updatePage({ columns: value })}
+                      >
+                        {value}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              ) : null}
+              {isAlphaPrononcerCols ? (
+                <div className="mode-toggle-block">
+                  <b>Colonnes</b>
+                  <div className="mode-toggle is-2" role="group" aria-label="Nombre de colonnes">
+                    {[1, 2].map((value) => (
+                      <button
+                        key={value}
+                        type="button"
+                        className={(activeBlock.columns ?? 1) === value ? 'active' : ''}
+                        onClick={() => updatePage({ columns: value })}
+                      >
+                        {value}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              ) : null}
+              {isSoutienCols123 &&
+              !isAlphaMotsCols &&
+              !isAlphaSyllabeTableCols &&
+              !isAlphaPrononcerCols &&
+              !hideColumnsOption ? (
+                <div className="mode-toggle-block">
+                  <b>Colonnes</b>
+                  <div className="mode-toggle is-3" role="group" aria-label="Nombre de colonnes">
+                    {(soutienKind === 'ecouter' ? [2, 3] : [1, 2, 3]).map((value) => (
                       <button
                         key={value}
                         type="button"
                         className={
-                          (activeBlock.columns ?? (soutienKind === 'completer' ? 2 : 3)) ===
-                          value
+                          (activeBlock.columns ??
+                            (soutienKind === 'completer'
+                              ? 2
+                              : soutienKind === 'ecouter'
+                                ? 3
+                                : 3)) === value
                             ? 'active'
                             : ''
                         }
@@ -356,7 +430,6 @@ export function QuestionsColumnsFields(props: QuestionsColumnsFieldsProps) {
                       </button>
                     ))}
                   </div>
-                  <small className="muted">Grille fluide : 1, 2 ou 3 colonnes.</small>
                 </div>
               ) : null}
               {isSoutienCols345 ? (
@@ -367,19 +440,31 @@ export function QuestionsColumnsFields(props: QuestionsColumnsFieldsProps) {
                       <button
                         key={value}
                         type="button"
-                        className={(activeBlock.columns ?? 3) === value ? 'active' : ''}
+                        className={(activeBlock.columns ?? 5) === value ? 'active' : ''}
                         onClick={() => updatePage({ columns: value })}
                       >
                         {value}
                       </button>
                     ))}
                   </div>
-                  <small className="muted">
-                    Grille fluide (pas un tableau fixe) : 3, 4 ou 5 colonnes.
-                  </small>
                 </div>
               ) : null}
-              {isPhraseChart || isVocabLearn || isVocabPool || isGramTheory || isJeuxDomain || isCalliDomain || isSoutienFr || isTcf || isTcmInfoPage ? null : (
+              {isPhraseChart ||
+              isVocabLearn ||
+              isVocabPool ||
+              isGramTheory ||
+              isJeuxDomain ||
+              isCalliDomain ||
+              isSoutienFr ||
+              isAlphabetisation ||
+              isTcf ||
+              isTcmInfoPage ||
+              hideColumnsOption ||
+              isSoutienCols123 ||
+              isSoutienCols345 ||
+              isAlphaMotsCols ||
+              isAlphaSyllabeTableCols ||
+              isAlphaPrononcerCols ? null : (
               <div className="mode-toggle-block">
                 <b>Colonnes</b>
                 <div className="mode-toggle is-3" role="group" aria-label="Nombre de colonnes">

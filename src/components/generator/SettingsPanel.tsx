@@ -112,6 +112,10 @@ export type SettingsPanelProps = {
   isSoutienRelier: boolean
   isSoutienCols123: boolean
   isSoutienCols345: boolean
+  isAlphaMotsCols: boolean
+  isAlphaSyllabeTableCols: boolean
+  isAlphaPrononcerCols: boolean
+  hideColumnsOption: boolean
   soutienKind: string | undefined
   questionsInputOverflow: boolean
   bankOverflow: boolean
@@ -254,6 +258,11 @@ export function SettingsPanel(p: SettingsPanelProps) {
           isSoutienCompleter={p.isSoutienCompleter}
           isSoutienCols123={p.isSoutienCols123}
           isSoutienCols345={p.isSoutienCols345}
+          isAlphaMotsCols={p.isAlphaMotsCols}
+          isAlphaSyllabeTableCols={p.isAlphaSyllabeTableCols}
+          isAlphaPrononcerCols={p.isAlphaPrononcerCols}
+          hideColumnsOption={p.hideColumnsOption}
+          isAlphabetisation={p.isAlphabetisation}
           soutienKind={p.soutienKind}
           questionsInputOverflow={p.questionsInputOverflow}
           bankOverflow={p.bankOverflow}

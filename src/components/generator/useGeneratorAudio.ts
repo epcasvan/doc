@@ -27,6 +27,8 @@ import {
   findSoutienByBankId,
   resolveSoutienSelection,
 } from '@/francais/soutien/themes'
+import { parseAlphaType } from '@/alphabetisation/kinds'
+import { resolveAlphaSelection } from '@/alphabetisation/themes'
 import type { ExerciseBlock, WorksheetPage } from '@/math/types'
 
 export type UseGeneratorAudioParams = {
@@ -122,17 +124,21 @@ export function useGeneratorAudio({
     return soutienType1Words
   }
 
-  /** Métadonnées pour le nom de fichier audio Soutien FR. */
+  /** Métadonnées pour le nom de fichier audio Soutien FR / Alphabétisation. */
   function soutienAudioFileMeta(): {
     themeLabel: string
     letterLabel: string
     exerciseNo: number
   } {
+    const alphaSel = resolveAlphaSelection(activeBlock.topic, activeBlock.exerciseType)
     const sel =
       resolveSoutienSelection(activeBlock.topic, activeBlock.exerciseType) ??
+      alphaSel ??
       (activeBlock.exerciseType
         ? (() => {
-            const bankId = parseSoutienType(activeBlock.exerciseType)?.bankId
+            const bankId =
+              parseSoutienType(activeBlock.exerciseType)?.bankId ??
+              parseAlphaType(activeBlock.exerciseType)?.bankId
             return bankId ? findSoutienByBankId(bankId) : null
           })()
         : null)
@@ -141,8 +147,13 @@ export function useGeneratorAudio({
       activeBlock.exerciseNo ??
       firstExerciseNo + safeBlockIndex
     return {
-      themeLabel: sel?.theme.label ?? 'Soutien',
-      letterLabel: sel?.letter.letterUpper ?? sel?.letter.label ?? 'X',
+      themeLabel: sel?.theme.label ?? alphaSel?.theme.label ?? 'Soutien',
+      letterLabel:
+        sel?.letter.letterUpper ??
+        sel?.letter.label ??
+        alphaSel?.letter.letterUpper ??
+        alphaSel?.letter.label ??
+        'X',
       exerciseNo,
     }
   }
@@ -213,18 +224,20 @@ export function useGeneratorAudio({
   async function downloadActiveSoutienEcouterAudio() {
     const { words, audioSrcs } = currentSoutienEcouterWords()
     if (words.length === 0) return
-    const parsed = parseSoutienType(activeBlock.exerciseType)
+    const parsed =
+      parseSoutienType(activeBlock.exerciseType) ?? parseAlphaType(activeBlock.exerciseType)
     const bankId = parsed?.bankId ?? 'ecouter'
     const bank = soutienBankById(bankId)
     const meta = soutienAudioFileMeta()
+    const kind = parsed && 'kind' in parsed ? parsed.kind : undefined
     const consigneSrc =
-      parsed?.kind === 'syllabe-son'
+      kind === 'syllabe-son' || kind === 'syllabe-son-qr'
         ? SOUTIEN_SYLLABE_SON_CONSIGNE
-        : parsed?.kind === 'lettres-phrase'
+        : kind === 'lettres-phrase'
           ? SOUTIEN_LETTRES_PHRASE_CONSIGNE
           : undefined
     /** Types 6–8 : annoncer le son après la consigne ; type 9 = phrases seules. */
-    const withSon = parsed?.kind !== 'lettres-phrase'
+    const withSon = kind !== 'lettres-phrase'
     try {
       await downloadSoutienEcouterAudio({
         words,

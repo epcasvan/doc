@@ -432,15 +432,16 @@ export function SyllableTableBlock({ item }: { item: MathItem }) {
   const options = item.options ?? []
   const graphemes = item.labels ?? []
   const cols = Math.max(1, item.letterGridCols ?? 5)
+  const cellFrames = Boolean(item.syllableTableCellFrames)
   const rows: string[][] = []
   for (let i = 0; i < options.length; i += cols) {
     rows.push(options.slice(i, i + cols))
   }
 
   const renderTable = (variant: 'script' | 'playwrite') => (
-    <div className="syllable-table-frame">
+    <div className={cellFrames ? 'syllable-table-cells' : 'syllable-table-frame'}>
       <table
-        className={`syllable-table syllable-table--${variant}`}
+        className={`syllable-table syllable-table--${variant}${cellFrames ? ' syllable-table--cell-frames' : ''}`}
         aria-label={variant === 'script' ? 'Syllabes en script' : 'Syllabes en écriture Playwrite'}
       >
         <tbody>
@@ -448,7 +449,7 @@ export function SyllableTableBlock({ item }: { item: MathItem }) {
             <tr key={`${variant}-r-${rIdx}`}>
               {row.map((syllable, cIdx) => (
                 <td key={`${variant}-${rIdx}-${cIdx}-${syllable}`}>
-                  <span className="syllable-table-cell">
+                  <span className={`syllable-table-cell${cellFrames ? ' is-framed' : ''}`}>
                     {highlightThemeLetters(syllable, graphemes)}
                   </span>
                 </td>
@@ -462,7 +463,10 @@ export function SyllableTableBlock({ item }: { item: MathItem }) {
 
   const scriptOnly = Boolean(item.syllableTableScriptOnly)
   return (
-    <div className="syllable-table-block" aria-label="Lecture de syllabes">
+    <div
+      className={`syllable-table-block${cellFrames ? ' syllable-table-block--cell-frames' : ''}`}
+      aria-label="Lecture de syllabes"
+    >
       {item.prompt && <p className="column-prompt">{item.prompt}</p>}
       {renderTable('script')}
       {!scriptOnly ? renderTable('playwrite') : null}

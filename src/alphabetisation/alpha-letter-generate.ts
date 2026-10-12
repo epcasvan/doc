@@ -54,13 +54,31 @@ function soulignerWords(
   }
 }
 
-function syllabesCvVc(bank: SoutienVowelBank, rng: Rng, lineCount: number): AlphaBatch {
-  const cols = 5
+/** Syllabes sans son complexe (an, am, en, on…). */
+function isSimpleCvVcSyllable(s: string): boolean {
+  const lo = s.toLocaleLowerCase('fr-FR')
+  if (lo.length !== 2) return false
+  if (/^(an|am|en|em|in|im|on|om|un|um|ain|ein|oin)$/i.test(lo)) return false
+  // Voyelle + consonne ou consonne + voyelle, hors nasales graphiques.
+  return /^[bcdfghjklmnpqrstvwxz][aeiouyàâäéèêëïîôöùûü]$/i.test(lo) ||
+    /^[aeiouyàâäéèêëïîôöùûü][bcdfghjklmpqrstvwxz]$/i.test(lo)
+}
+
+function syllabesCvVc(
+  bank: SoutienVowelBank,
+  rng: Rng,
+  lineCount: number,
+  columns: number,
+): AlphaBatch {
+  const cols = Math.max(4, Math.min(6, Math.round(columns) || 5))
   const rows = syllableBlockRows(lineCount)
   const total = cols * rows
-  const all = buildSyllableReadingList(rng, bank, total * 2)
-  const cvvc = all.filter((s) => s.length === 2)
-  const list = shuffle(rng, cvvc.length >= total ? cvvc : all).slice(0, total)
+  const all = buildSyllableReadingList(rng, bank, total * 4)
+  const cvvc = all.filter(isSimpleCvVcSyllable)
+  const list = shuffle(rng, cvvc.length >= total ? cvvc : all.filter((s) => s.length === 2)).slice(
+    0,
+    total,
+  )
   return {
     instruction: 'Lisez les syllabes ci-dessous.',
     preferredColumns: 1,
@@ -72,18 +90,32 @@ function syllabesCvVc(bank: SoutienVowelBank, rng: Rng, lineCount: number): Alph
         answer: list.join(' · '),
         letterGridCols: cols,
         syllableTableScriptOnly: true,
+        syllableTableCellFrames: true,
       },
     ],
   }
 }
 
-function syllabesLong(bank: SoutienVowelBank, rng: Rng, lineCount: number): AlphaBatch {
-  const cols = 5
+function syllabesLong(
+  bank: SoutienVowelBank,
+  rng: Rng,
+  lineCount: number,
+  columns: number,
+): AlphaBatch {
+  const cols = Math.max(4, Math.min(6, Math.round(columns) || 5))
   const rows = syllableBlockRows(lineCount)
   const total = cols * rows
   const all = buildSyllableReadingList(rng, bank, total * 3)
-  const long = all.filter((s) => s.length >= 3 && s.length <= 4)
-  const list = shuffle(rng, long.length >= total ? long : all).slice(0, total)
+  const long = all.filter(
+    (s) =>
+      s.length >= 3 &&
+      s.length <= 4 &&
+      !/(an|am|en|em|in|im|on|om|un|um|ain|ein|oin)/i.test(s),
+  )
+  const list = shuffle(rng, long.length >= total ? long : all.filter((s) => s.length >= 3)).slice(
+    0,
+    total,
+  )
   return {
     instruction: 'Lisez les syllabes ci-dessous.',
     preferredColumns: 1,
@@ -95,6 +127,7 @@ function syllabesLong(bank: SoutienVowelBank, rng: Rng, lineCount: number): Alph
         answer: list.join(' · '),
         letterGridCols: cols,
         syllableTableScriptOnly: true,
+        syllableTableCellFrames: true,
       },
     ],
   }
@@ -104,7 +137,9 @@ function syllabesPrononcer(
   bank: SoutienVowelBank,
   rng: Rng,
   count: number,
+  columns: number,
 ): AlphaBatch {
+  const cols = Math.max(1, Math.min(2, Math.round(columns) || 1))
   const words = shuffle(
     rng,
     type1Words(bank, rng, Math.max(count, 12)).filter((w) => syllabifyFr(w).length >= 2),
@@ -128,6 +163,7 @@ function syllabesPrononcer(
         syllablePronounceRows: rows,
         answer: rows.map((r) => `${r.index}. ${r.parts.join('-')}`).join(' · '),
         themeGraphemes: [...bank.graphemes],
+        letterGridCols: cols,
       },
     ],
   }
@@ -274,11 +310,11 @@ export function generateAlphaLetterKind(
     case 'associer-syllabe':
       return associerSyllabes(bank, rng, Math.max(1, Math.min(3, n)))
     case 'syllabes-cv':
-      return syllabesCvVc(bank, rng, n)
+      return syllabesCvVc(bank, rng, n, options?.columns ?? 5)
     case 'syllabes-long':
-      return syllabesLong(bank, rng, n)
+      return syllabesLong(bank, rng, n, options?.columns ?? 5)
     case 'syllabes-prononcer':
-      return syllabesPrononcer(bank, rng, Math.min(16, n))
+      return syllabesPrononcer(bank, rng, Math.min(16, n), options?.columns ?? 1)
     case 'mots':
     case 'ecouter':
     case 'ecouter-image':
@@ -286,9 +322,16 @@ export function generateAlphaLetterKind(
     case 'associer-audio':
     case 'associer-image': {
       const soutienKind = kind
+      const alphaCols =
+        kind === 'mots' ? Math.max(2, Math.min(3, Math.round(options?.columns ?? 2) || 2)) : null
       const merged: SoutienGenerateOptions = {
         ...options,
-        alphaVocabCount: kind === 'mots' ? 4 : options?.alphaVocabCount,
+        columns:
+          kind === 'ecouter'
+            ? Math.max(2, Math.min(3, Math.round(options?.columns ?? 3) || 3))
+            : options?.columns,
+        alphaVocabCount:
+          kind === 'mots' ? (alphaCols ?? 2) * 2 : options?.alphaVocabCount,
       }
       return genKind(soutienKind, bank, n, rng, difficulty, merged)
     }

@@ -90,22 +90,35 @@ export function genKind(
               }
             })
         : null
-      /** Tirage aléatoire 16 mots (image prioritaire) — se régénère avec la graine. */
+      /** Alphabétisation : 2 col. → 4 mots, 3 col. → 6 mots ; Soutien : jusqu’à 16. */
+      const alphaCols = options?.alphaVocabCount != null
+        ? Math.max(2, Math.min(3, Math.round(options.columns ?? 2) || 2))
+        : null
+      const vocabCap =
+        options?.alphaVocabCount ??
+        (alphaCols != null ? alphaCols * 2 : 16)
+      const want = Math.max(1, Math.min(16, vocabCap))
       const rawWords = libreEntries
         ? libreEntries.map((e) => e.label)
-        : type1Words(bank, rng)
-      const entries =
+        : type1Words(bank, rng, want)
+      const entries = (
         libreEntries ??
         soutienEntriesWithImages(rawWords).map((e) => ({
           ...e,
           audioSrc: soutienAudioFor(e.label),
           label: displayVocabLabel(e.label),
         }))
+      ).slice(0, want)
       const words = entries.map((e) => e.label)
-      const vocabCap = options?.alphaVocabCount ?? 16
-      const total = Math.max(1, Math.min(vocabCap, entries.length))
-      /** 4 mots → 2×2 (images plus grandes) ; sinon 4×4. */
-      const cols = total <= 4 ? 2 : 4
+      const total = Math.max(1, Math.min(want, entries.length))
+      const cols =
+        alphaCols != null
+          ? alphaCols
+          : total <= 4
+            ? 2
+            : total <= 6
+              ? 3
+              : 4
       const rows = Math.max(1, Math.ceil(total / cols))
       return {
         instruction: `On entend le son ${bank.sound} dans ces mots.`,

@@ -8,9 +8,9 @@ export const ALPHA_LETTER_KINDS = [
   {
     id: 'mots',
     label: '1 · Mots et images',
-    description: '4 mots (lecture + Voc) avec image agrandie.',
+    description: '2 ou 3 colonnes (4 ou 6 mots) avec image ; audio téléchargeable.',
     instruction: 'Observez les images et lisez les mots où l’on entend le son.',
-    preferredColumns: 1 as const,
+    preferredColumns: 2 as const,
   },
   {
     id: 'lettres-maj',
@@ -44,17 +44,17 @@ export const ALPHA_LETTER_KINDS = [
     id: 'ecouter',
     label: '6 · Entendre le son',
     description:
-      'Grille (1–3 col.) + QR ; 9 mots / 3 colonnes par défaut (max. 30) ; audio téléchargeable.',
+      'Grille 2–3 col. + QR ; 9 mots / 3 colonnes par défaut (max. 30) ; audio téléchargeable.',
     instruction: 'Écoutez les mots et cochez quand vous entendez le son.',
-    preferredColumns: 1 as const,
+    preferredColumns: 3 as const,
   },
   {
     id: 'ecouter-image',
     label: '7 · Entendre avec image',
     description:
-      'Grille images (3–5 col.) ; 15 mots / 5 colonnes par défaut (max. 30) ; cadre type 1.',
+      'Grille images 3–5 col. ; 15 mots / 5 colonnes ; cadre adaptatif exercice / corrigé.',
     instruction: 'Écoutez. Cochez quand vous entendez le son (regardez l’image).',
-    preferredColumns: 1 as const,
+    preferredColumns: 5 as const,
   },
   {
     id: 'syllabe-son-qr',
@@ -81,21 +81,21 @@ export const ALPHA_LETTER_KINDS = [
   {
     id: 'syllabes-cv',
     label: '11 · Syllabes CV / VC',
-    description: 'Syllabes simples (2 lettres) : 5 par ligne, 4 lignes.',
+    description: 'CV / VC sans son complexe (an, am…) ; 4–6 colonnes ; cadre par syllabe.',
     instruction: 'Lisez les syllabes ci-dessous.',
-    preferredColumns: 1 as const,
+    preferredColumns: 5 as const,
   },
   {
     id: 'syllabes-long',
     label: '12 · Syllabes 3–4 lettres',
-    description: 'Syllabes plus longues (3–4 lettres) : 5 par ligne, 4 lignes.',
+    description: 'Syllabes 3–4 lettres ; 4–6 colonnes ; cadre par syllabe.',
     instruction: 'Lisez les syllabes ci-dessous.',
-    preferredColumns: 1 as const,
+    preferredColumns: 5 as const,
   },
   {
     id: 'syllabes-prononcer',
     label: '13 · Prononcer les syllabes',
-    description: 'Mot découpé en syllabes orales + QR ; page avec le type 10.',
+    description: '7 mots par défaut ; 1–2 colonnes ; cadre type 1 autour des syllabes.',
     instruction: 'Prononcez les syllabes des mots.',
     preferredColumns: 1 as const,
   },

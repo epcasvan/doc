@@ -575,6 +575,7 @@ html,body,#root{
   padding:8px 10px;
   overflow:hidden;
 }
+.syllable-table-cells{width:100%;box-sizing:border-box;overflow:hidden}
 .syllable-table{
   width:100%;
   border-collapse:collapse;
@@ -588,6 +589,9 @@ html,body,#root{
   text-align:center;
   vertical-align:middle;
 }
+.syllable-table-block--cell-frames .syllable-table td{
+  padding:calc(16px + 5px) 4px; /* +5 px entre lignes */
+}
 .syllable-table-cell{
   display:inline-block;
   font-size:17px;
@@ -595,6 +599,14 @@ html,body,#root{
   line-height:1.25;
   color:var(--ink);
   white-space:nowrap;
+}
+.syllable-table-cell.is-framed{
+  border:1px solid #d8dde6;
+  border-radius:8px;
+  background:#fff;
+  padding:4px 8px;
+  box-sizing:border-box;
+  min-width:2.4em;
 }
 .syllable-table--script .syllable-table-cell{
   font-family:'DM Sans',sans-serif;
@@ -2320,13 +2332,38 @@ html,body,#root{
 .listen-check-image img{
   max-width:100%;max-height:24mm;object-fit:contain;display:block
 }
+/* Type 7 : cadre plus bas en exercice, s’agrandit en corrigé (légende visible). */
+.listen-check-block--images.is-exercise .listen-check-image{
+  min-height:16mm;
+}
+.listen-check-block--images.is-exercise .listen-check-image img{
+  max-height:18mm;
+}
+.listen-check-block--images.is-exercise .listen-check-image-foot{
+  grid-template-rows:1.5em 0;
+  gap:0;padding:2px 4px 4px;min-height:0;
+}
+.listen-check-block--images.is-exercise .listen-check-caption{
+  height:0;overflow:hidden;opacity:0;
+}
+.listen-check-block--images.is-answers .listen-check-image{
+  min-height:22mm;
+}
+.listen-check-block--images.is-answers .listen-check-image img{
+  max-height:26mm;
+}
+.listen-check-block--images.is-answers .listen-check-image-foot{
+  grid-template-rows:1.5em 1.35em;
+  gap:3px;padding:4px 4px 8px;
+}
 .listen-check-image-foot{
   display:grid;
-  grid-template-rows:1.5em 1.2em; /* contrôles + légende : hauteurs fixes (ne monte pas en corrigé) */
+  grid-template-rows:1.5em 1.2em;
   align-items:center;
   justify-items:center;
   gap:2px;padding:4px 4px 6px;width:100%;
   box-sizing:border-box;
+  transition:grid-template-rows .15s ease,padding .15s ease;
 }
 .listen-check-image-controls{
   display:flex;align-items:center;justify-content:center;gap:6px;
@@ -4392,20 +4429,36 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
 }
 .worksheet-sheet.is-alphabetisation .vocab-table{
   --vocab-card-w:58mm;
-  --vocab-card-h:64mm;
+  --vocab-card-h:calc(64mm - 20px);
   --vocab-card-gap:2.5mm
 }
 .worksheet-sheet.is-alphabetisation .vocab-card-image{
-  flex:1 1 auto;min-height:32mm
+  flex:1 1 auto;min-height:calc(32mm - 10px)
 }
 .worksheet-sheet.is-alphabetisation .vocab-card-image img{
-  max-height:44mm
+  max-height:calc(44mm - 20px)
 }
 .worksheet-sheet.is-alphabetisation .vocab-card-qr{
   width:8mm;height:8mm
 }
 .worksheet-sheet.is-alphabetisation .vocab-card-word{
   text-align:center
+}
+/* Types 11–12 Alpha : +2 pt, cadre par syllabe, +5 px entre lignes */
+.worksheet-sheet.is-alphabetisation .syllable-table-block--cell-frames .syllable-table--script .syllable-table-cell{
+  font-size:18pt
+}
+.worksheet-sheet.is-alphabetisation .syllable-pronounce-cell.is-framed{
+  border:1px solid #d8dde6;
+  border-radius:8px;
+  background:#fff;
+  padding:3px 6px;
+}
+.worksheet-sheet.is-alphabetisation .syllable-pronounce-block.is-2col{
+  display:grid;gap:8px 14px;align-items:start
+}
+.worksheet-sheet.is-alphabetisation .syllable-pronounce-block.is-2col .syllable-pronounce-row{
+  width:100%
 }
 .mark-letter-block{display:flex;flex-direction:column;gap:6px;width:100%}
 .mark-letter-grid{
@@ -4417,6 +4470,7 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
   letter-spacing:10px
 }
 .syllable-pronounce-block{display:flex;flex-direction:column;gap:5px;width:100%}
+.syllable-pronounce-block.is-2col{display:grid}
 .syllable-pronounce-row{
   display:flex;align-items:center;gap:6px;flex-wrap:wrap;width:100%
 }
@@ -4427,6 +4481,9 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
 .syllable-pronounce-cell{
   border:1.25px solid var(--ink);min-width:3.35em;max-width:3.65em;
   padding:2px 4px;text-align:center;font-weight:700;line-height:1.2;background:#fff
+}
+.syllable-pronounce-cell.is-framed{
+  border:1px solid #d8dde6;border-radius:8px
 }
 .syllable-sound-qr-img{width:100%;height:100%;object-fit:contain}
 /* End */

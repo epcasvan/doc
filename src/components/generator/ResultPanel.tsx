@@ -148,7 +148,7 @@ export function ResultPanel({
                 )}
                 {isTcf ||
                 isTcmCfr ||
-                (isSoutienFr &&
+                ((isSoutienFr || isAlphabetisation) &&
                   (isSoutienMots || isSoutienCompleter || isSoutienEcouter)) ? (
                   <button
                     className="print-chip is-icon is-generate"
@@ -173,12 +173,13 @@ export function ResultPanel({
                           : isSoutienCompleter
                             ? 'Télécharger l’audio (Écoutez et complétez + mots, 6 s)'
                             : isSoutienEcouter
-                              ? soutienKind === 'syllabe-son'
+                              ? soutienKind === 'syllabe-son' ||
+                                soutienKind === 'syllabe-son-qr'
                                 ? 'Télécharger l’audio (syllabe du son + Numéro + mots, 6 s)'
                                 : soutienKind === 'lettres-phrase'
                                   ? 'Télécharger l’audio (phrases + Numéro, 6 s)'
                                   : 'Télécharger l’audio (consigne + Numéro + mots, 6 s)'
-                              : 'Télécharger l’audio (consigne + 16 mots)'
+                              : 'Télécharger l’audio (consigne + mots, 6 s)'
                     }
                   >
                     <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden>

@@ -167,26 +167,26 @@ export function applyType(type: ExerciseType, prev?: ExerciseBlock): Partial<Exe
                 : isLectureDense
                   ? { count: 4 }
                   : alphaKind === 'mots'
-                    ? { count: 4 }
+                    ? { count: 4, columns: 2 }
                     : alphaKind === 'lettres-maj' || alphaKind === 'lettres-min'
-                      ? { count: 5 }
+                      ? { count: 5, columns: 1 }
                       : alphaKind === 'souligner-maj' || alphaKind === 'souligner-min'
-                        ? { count: 10 }
+                        ? { count: 10, columns: 1 }
                         : alphaKind === 'ecouter'
-                          ? { count: 9 }
+                          ? { count: 9, columns: 3 }
                           : alphaKind === 'ecouter-image'
-                            ? { count: 15 }
+                            ? { count: 15, columns: 5 }
                             : alphaKind === 'syllabe-son-qr' || alphaKind === 'syllabe-son'
                               ? { count: 18 }
                               : alphaKind === 'associer-syllabe' ||
                                   alphaKind === 'associer-audio' ||
                                   alphaKind === 'associer-image'
-                                ? { count: 2 }
+                                ? { count: 2, columns: 1 }
                                 : alphaKind === 'syllabes-cv' ||
                                     alphaKind === 'syllabes-long'
-                                  ? { count: 4 }
+                                  ? { count: 4, columns: 5 }
                                   : alphaKind === 'syllabes-prononcer'
-                                    ? { count: 8 }
+                                    ? { count: 7, columns: 1 }
                                     : soutienKind === 'lettres'
                                       ? { count: 5 }
                                       : soutienKind === 'syllabes'
