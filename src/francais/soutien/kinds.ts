@@ -91,7 +91,7 @@ export const SOUTIEN_KINDS = [
     id: 'compter',
     label: '12 · Compter le son',
     description:
-      '9 phrases par défaut (une histoire A2–B1) + compter le phonème ; trait de réponse plein.',
+      '9 phrases par défaut + compter le phonème ; trait de réponse plein.',
     instruction: 'Combien de fois entendez-vous le son ?',
     preferredColumns: 1 as const,
   },
@@ -107,7 +107,7 @@ export const SOUTIEN_KINDS = [
     id: 'lire',
     label: '14 · Phrases à lire',
     description:
-      '19 phrases par défaut (une histoire A2–B1) ; voyelle simple colorée (Alpha : pas an/au/eau…).',
+      '19 phrases par défaut ; voyelle simple colorée (Alpha : pas an/au/eau…).',
     instruction: 'Lisez les phrases.',
     preferredColumns: 1 as const,
   },

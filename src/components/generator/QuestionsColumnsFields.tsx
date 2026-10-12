@@ -184,8 +184,7 @@ export function QuestionsColumnsFields(props: QuestionsColumnsFieldsProps) {
                 ) : null}
                 {soutienKind === 'compter' ? (
                   <small className="muted">
-                    Nombre de phrases (défaut 9 · max. 12) — une histoire A2–B1. Téléchargez le JSON
-                    pour corriger.
+                    Nombre de phrases (défaut 9 · max. 12). Téléchargez le JSON pour corriger.
                   </small>
                 ) : null}
                 {soutienKind === 'ordre' ? (
@@ -195,8 +194,7 @@ export function QuestionsColumnsFields(props: QuestionsColumnsFieldsProps) {
                 ) : null}
                 {soutienKind === 'lire' ? (
                   <small className="muted">
-                    Nombre de phrases (défaut 19 · max. 20) — une histoire A2–B1. Téléchargez le JSON
-                    pour corriger.
+                    Nombre de phrases (défaut 19 · max. 20). Téléchargez le JSON pour corriger.
                   </small>
                 ) : null}
                 {soutienKind === 'associer-audio' ? (

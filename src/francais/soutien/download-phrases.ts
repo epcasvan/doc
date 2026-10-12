@@ -41,28 +41,16 @@ export function downloadSoutienType10Phrases(bank: SoutienVowelBank) {
   triggerDownload(`soutien-type10-${bank.id}.json`, `${JSON.stringify(rows, null, 2)}\n`)
 }
 
-/** Type 12 — compter le son (histoires 9 phrases). */
+/** Type 12 — compter le son. */
 export function downloadSoutienType12Phrases(bank: SoutienVowelBank) {
-  const data = soutienPhrasesFor(bank.id)
-  const stories = data?.type12Stories
-  if (stories && stories.length > 0) {
-    triggerDownload(`soutien-type12-${bank.id}.json`, `${JSON.stringify(stories, null, 2)}\n`)
-    return
-  }
-  const curated = data?.type12
+  const curated = soutienPhrasesFor(bank.id)?.type12
   const rows = curated && curated.length > 0 ? curated : [...bank.countPhrases]
   triggerDownload(`soutien-type12-${bank.id}.json`, `${JSON.stringify(rows, null, 2)}\n`)
 }
 
-/** Type 14 — phrases à lire (histoires 19 phrases). */
+/** Type 14 — phrases à lire. */
 export function downloadSoutienType14Phrases(bank: SoutienVowelBank) {
-  const data = soutienPhrasesFor(bank.id)
-  const stories = data?.type14Stories
-  if (stories && stories.length > 0) {
-    triggerDownload(`soutien-type14-${bank.id}.json`, `${JSON.stringify(stories, null, 2)}\n`)
-    return
-  }
-  const curated = data?.type14
+  const curated = soutienPhrasesFor(bank.id)?.type14
   const rows = curated && curated.length > 0 ? curated : [...bank.readPhrases]
   triggerDownload(`soutien-type14-${bank.id}.json`, `${JSON.stringify(rows, null, 2)}\n`)
 }
