@@ -1,2737 +1,882 @@
 {
-  "type9": [
+  "son": "s-s",
+  "phrases": [
     {
-      "level": "a1",
+      "word": "ananas",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Sacha mange un ananas sucré.",
+            "Sam mange un ananas sucré."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Simon sert un ananas sucré à Sophie et à Sacha samedi.",
+            "Sophie sert un ananas frais avec la salade samedi soir."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Samedi soir, Sophie sert un ananas bien sucré parce que ses amis adorent le dessert.",
+            "Samuel sert un ananas sucré à Sophie, mais Simon et Sacha préfèrent un sorbet."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "asperge",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Sam épluche une asperge sans sel.",
+            "Sophie sert une asperge salée."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Simon sert une asperge sautée à Sophie et à Sacha samedi."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Samuel saisit une asperge, mais Simon et Sophie préfèrent une salade sans sauce."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "asperges",
+      "variants": [
+        {
+          "level": "a2",
+          "number": "plur",
+          "sentences": [
+            "Sophie sert des asperges avec une sauce simple et du sel."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "astéroïde",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Sam observe un astéroïde ce soir.",
+            "Sophie observe un astéroïde seul."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Simon observe un astéroïde avec Sophie et Sacha samedi soir.",
+            "Un astéroïde passe très près de la Terre samedi soir."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand un astéroïde s’approche, les scientifiques surveillent sa position et sonnent aussitôt l’alerte.",
+            "Samuel pense qu’un astéroïde se rapproche, mais Simon et Sophie sont sûrs du contraire."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "astronaute",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Sophie est une astronaute suisse."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Simon salue l’astronaute Sophie qui part samedi dans l’espace."
+          ]
+        },
+        {
+          "level": "b1",
+          "sentences": [
+            "Samuel rêve d’être astronaute, mais Simon et Sophie sont sûrs du contraire."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand l’astronaute sort, il reste attaché toujours parce que la sécurité est essentielle."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "autobus",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "L’autobus passe à six heures.",
+            "Sophie attend l’autobus sans Simon."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Samedi, Sophie prend l’autobus pour aller voir sa sœur à Sierre.",
+            "Simon sort de l’autobus avec Sophie et Sacha samedi soir."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Comme l’autobus est souvent plein, Simon part tôt pour trouver une place assise.",
+            "Samuel saute dans l’autobus, mais Simon et Sophie sont déjà assis sur le siège."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "basketball",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Sophie joue au basketball samedi."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Simon regarde le basketball avec Sophie et Sacha samedi soir."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand le basketball commence, Simon sort son sac et son short sans attendre.",
+            "Samuel adore le basketball, mais Simon et Sophie préfèrent le ski sans le saut."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "baskets",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Sophie met ses baskets sales."
+          ]
+        },
+        {
+          "level": "a2",
+          "sentences": [
+            "Simon sort ses baskets pour Sophie et Sacha samedi soir."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "plur",
+          "sentences": [
+            "Samuel cherche ses baskets sales, mais Simon et Sophie les ont mises sur la chaise."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "biscuit",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Sam mange un biscuit sucré.",
+            "Sophie mange un biscuit sucré."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Simon sert un biscuit sucré à Sophie et à Sacha samedi.",
+            "Sophie sert un biscuit avec son thé samedi après-midi."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Comme Simon ne veut pas de dessert, il choisit un biscuit sec et sans sucre.",
+            "Samuel sert un biscuit sucré, mais Simon et Sophie préfèrent un gâteau sans sucre."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "boisson",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Sam boit une boisson sucrée.",
+            "Sophie boit une boisson sucrée."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Simon sert une boisson sucrée à Sophie et à Sacha samedi.",
+            "Sophie sert une boisson chaude à ses amis samedi soir."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand il fait chaud, Simon choisit une boisson fraîche sans sucre et sans alcool.",
+            "Samuel sert une boisson fraîche, mais Simon et Sophie préfèrent la boisson sans sucre."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "boucles d'oreilles",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Sophie perd ses boucles d’oreilles."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "plur",
+          "sentences": [
+            "Simon cherche les boucles d’oreilles de Sophie sur la chaise."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "plur",
+          "sentences": [
+            "Samuel trouve les boucles d’oreilles de Sophie, mais Simon sait qu’elles sont sales."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "boussole",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Sam a une boussole sur son sac.",
+            "Sophie sort la boussole sans Simon."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Simon suit la boussole avec Sophie et Sacha samedi soir.",
+            "Sophie regarde la boussole pour savoir où est le sud."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Samuel sort la boussole, mais Simon et Sophie savent déjà que le sud est ici."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "brosse",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Sam a une brosse à dents.",
+            "Sam a une brosse sale.",
+            "Sophie prend la brosse de Simon."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Simon brosse le sol avec la brosse de Sophie et de Sacha.",
+            "Sophie nettoie la brosse avec du savon et de l’eau."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand la brosse est sale, Simon la lave sous le robinet et la sèche.",
+            "Samuel prend la brosse sale, mais Simon et Sophie la lavent sous le robinet."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "brosse à dents",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Sophie prend sa brosse à dents."
+          ]
+        },
+        {
+          "level": "a2",
+          "sentences": [
+            "Simon sort sa brosse à dents pour Sophie et Sacha samedi."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Samuel range sa brosse à dents, mais Simon et Sophie la mettent sur le lavabo."
+          ]
+        }
+      ]
+    },
+    {
       "word": "bus",
-      "sentence": "Sara prend le bus bien."
-    },
-    {
-      "level": "a2",
-      "word": "bus",
-      "sentence": "Ce soir, le médecin monte dans le bus avec Sara."
-    },
-    {
-      "level": "b1",
-      "word": "bus",
-      "sentence": "Ce matin, quand le papa attend le bus, et Sara reste contente aussi."
-    },
-    {
-      "level": "a1",
-      "word": "classe",
-      "sentence": "La sœur rentre dans la classe."
-    },
-    {
-      "level": "a2",
-      "word": "classe",
-      "sentence": "Ce soir, le garçon surveille la classe avec Sara."
-    },
-    {
-      "level": "b1",
-      "word": "classe",
-      "sentence": "Ce matin, quand la maman décore la classe, parce que Sam reste content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "dessert",
-      "sentence": "Le maître renonce au dessert sans stress."
-    },
-    {
-      "level": "a2",
-      "word": "dessert",
-      "sentence": "Ce matin, la maman renonce au dessert près de la voisine."
-    },
-    {
-      "level": "b1",
-      "word": "dessert",
-      "sentence": "Ce matin, quand le grand-père renonce au dessert, parce que Sam reste content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "fils",
-      "sentence": "Le facteur aide le fils avec Sam."
-    },
-    {
-      "level": "a2",
-      "word": "fils",
-      "sentence": "Après le cours, la collègue console le fils sans stress."
-    },
-    {
-      "level": "b1",
-      "word": "fils",
-      "sentence": "Ce matin, quand Sophie invite le fils, parce que Sam reste content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "ours",
-      "sentence": "Cassandre regarde un ours bien."
-    },
-    {
-      "level": "a2",
-      "word": "ours",
-      "sentence": "Avant le repas, la voisine nourrit un ours avec Sam."
-    },
-    {
-      "level": "b1",
-      "word": "ours",
-      "sentence": "Ce matin, quand la cuisinière observe un ours, et Sara reste contente aussi."
-    },
-    {
-      "level": "a1",
-      "word": "poisson",
-      "sentence": "Le musicien coupe le poisson."
-    },
-    {
-      "level": "a2",
-      "word": "poisson",
-      "sentence": "Ce matin, une amie achète le poisson dans la salle."
-    },
-    {
-      "level": "b1",
-      "word": "poisson",
-      "sentence": "Ce matin, quand le copain prépare le poisson, parce que Sam reste content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "poste",
-      "sentence": "La copine passe devant le poste."
-    },
-    {
-      "level": "a2",
-      "word": "poste",
-      "sentence": "Avant le repas, le copain passe devant le poste avec Sara."
-    },
-    {
-      "level": "b1",
-      "word": "poste",
-      "sentence": "Ce matin, quand le bébé passe devant le poste, parce que Sam reste content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "sable",
-      "sentence": "La jardinière voit le sable avec Sam."
-    },
-    {
-      "level": "a2",
-      "word": "sable",
-      "sentence": "À midi, Sara observe le sable sans stress."
-    },
-    {
-      "level": "b1",
-      "word": "sable",
-      "sentence": "Ce matin, quand le professeur photographie le sable, parce que Sam reste content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "sac",
-      "sentence": "La professeure pose le sac."
-    },
-    {
-      "level": "a2",
-      "word": "sac",
-      "sentence": "Après le cours, la sœur emporte le sac avec Sam."
-    },
-    {
-      "level": "b1",
-      "word": "sac",
-      "sentence": "Ce matin, quand le garçon oublie le sac, et Sara reste contente aussi."
-    },
-    {
-      "level": "a1",
-      "word": "salade",
-      "sentence": "Sam mange la salade bien."
-    },
-    {
-      "level": "a2",
-      "word": "salade",
-      "sentence": "Avant le repas, le maître mélange la salade avec Sara."
-    },
-    {
-      "level": "b1",
-      "word": "salade",
-      "sentence": "Ce matin, quand la grand-mère coupe la salade, parce que Sam reste content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "samedi",
-      "sentence": "La tante prépare le samedi sans stress."
-    },
-    {
-      "level": "a2",
-      "word": "samedi",
-      "sentence": "Ce matin, le facteur note le samedi sous le sac."
-    },
-    {
-      "level": "b1",
-      "word": "samedi",
-      "sentence": "Ce matin, quand la collègue attend le samedi, et Sara reste contente aussi."
-    },
-    {
-      "level": "a1",
-      "word": "sapin",
-      "sentence": "Le directeur dessine le sapin."
-    },
-    {
-      "level": "a2",
-      "word": "sapin",
-      "sentence": "Ce soir, Cassandre voit le sapin sans stress."
-    },
-    {
-      "level": "b1",
-      "word": "sapin",
-      "sentence": "Ce matin, quand la voisine observe le sapin, parce que Sam reste content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "sauce",
-      "sentence": "Le cousin achète la sauce."
-    },
-    {
-      "level": "a2",
-      "word": "sauce",
-      "sentence": "À midi, le musicien prépare la sauce avec Sam."
-    },
-    {
-      "level": "b1",
-      "word": "sauce",
-      "sentence": "Ce matin, quand une amie choisit la sauce, et Sara reste contente aussi."
-    },
-    {
-      "level": "a1",
-      "word": "saucisse",
-      "sentence": "Le papa partage la saucisse."
-    },
-    {
-      "level": "a2",
-      "word": "saucisse",
-      "sentence": "Après le cours, la copine sert la saucisse avec Sara."
-    },
-    {
-      "level": "b1",
-      "word": "saucisse",
-      "sentence": "Ce matin, quand le médecin mange la saucisse, parce que Sam reste content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "savon",
-      "sentence": "Le boulanger ouvre le savon sans stress."
-    },
-    {
-      "level": "a2",
-      "word": "savon",
-      "sentence": "Avant le repas, la jardinière bricole le savon sous le sac."
-    },
-    {
-      "level": "b1",
-      "word": "savon",
-      "sentence": "À midi, quand Sara visite le savon avec Sam, et Sara reste contente aussi."
-    },
-    {
-      "level": "a1",
-      "word": "sel",
-      "sentence": "Sam goûte le sel bien."
-    },
-    {
-      "level": "a2",
-      "word": "sel",
-      "sentence": "Ce matin, la professeure partage le sel sans stress."
-    },
-    {
-      "level": "b1",
-      "word": "sel",
-      "sentence": "Ce matin, quand la sœur sert le sel, parce que Sam reste content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "serpent",
-      "sentence": "Le cuisinier caresse le serpent."
-    },
-    {
-      "level": "a2",
-      "word": "serpent",
-      "sentence": "Ce soir, la fille voit le serpent avec Sam."
-    },
-    {
-      "level": "b1",
-      "word": "serpent",
-      "sentence": "Ce matin, quand le maître soigne le serpent, et Sara reste contente aussi."
-    },
-    {
-      "level": "a1",
-      "word": "singe",
-      "sentence": "Le voisin observe le singe."
-    },
-    {
-      "level": "a2",
-      "word": "singe",
-      "sentence": "À midi, la tante caresse le singe avec Sara."
-    },
-    {
-      "level": "b1",
-      "word": "singe",
-      "sentence": "Ce matin, quand le facteur voit le singe, parce que Sam reste content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "sirop",
-      "sentence": "La factrice mange le sirop sans stress."
-    },
-    {
-      "level": "a2",
-      "word": "sirop",
-      "sentence": "Après le cours, le directeur apporte le sirop sous le sac."
-    },
-    {
-      "level": "b1",
-      "word": "sirop",
-      "sentence": "À midi, quand Cassandre coupe le sirop avec Sara, et Sara reste contente aussi."
-    },
-    {
-      "level": "a1",
-      "word": "soleil",
-      "sentence": "La maîtresse profite le soleil."
-    },
-    {
-      "level": "a2",
-      "word": "soleil",
-      "sentence": "À midi, Cassandre profite le soleil sous le sac."
-    },
-    {
-      "level": "b1",
-      "word": "soleil",
-      "sentence": "Ce matin, quand la voisine profite le soleil, et Sara reste contente aussi."
-    },
-    {
-      "level": "a1",
-      "word": "soupe",
-      "sentence": "La musicienne mange la soupe."
-    },
-    {
-      "level": "a2",
-      "word": "soupe",
-      "sentence": "Ce matin, le papa cuisine la soupe avec Sam."
-    },
-    {
-      "level": "b1",
-      "word": "soupe",
-      "sentence": "Ce matin, quand le musicien mange la soupe, et Sara reste contente aussi."
-    },
-    {
-      "level": "a1",
-      "word": "sport",
-      "sentence": "La cousine attrape le sport."
-    },
-    {
-      "level": "a2",
-      "word": "sport",
-      "sentence": "Ce soir, le boulanger prépare le sport avec Sara."
-    },
-    {
-      "level": "b1",
-      "word": "sport",
-      "sentence": "Ce matin, quand le papa joue avec le sport, et Sara reste contente aussi."
-    },
-    {
-      "level": "a1",
-      "word": "stylo",
-      "sentence": "Le collègue cherche le stylo sans stress."
-    },
-    {
-      "level": "a2",
-      "word": "stylo",
-      "sentence": "À midi, Sam prête le stylo sous le sac."
-    },
-    {
-      "level": "b1",
-      "word": "stylo",
-      "sentence": "Ce matin, quand la jardinière cherche le stylo, et Sara reste contente aussi."
-    },
-    {
-      "level": "a1",
-      "word": "sucre",
-      "sentence": "Le voisin coupe le sucre."
-    },
-    {
-      "level": "a2",
-      "word": "sucre",
-      "sentence": "Après le cours, le cuisinier achète le sucre sans stress."
-    },
-    {
-      "level": "b1",
-      "word": "sucre",
-      "sentence": "Ce matin, quand la fille prépare le sucre, parce que Sam reste content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "tasse",
-      "sentence": "Un ami goûte la tasse avec Sara."
-    },
-    {
-      "level": "a2",
-      "word": "tasse",
-      "sentence": "Avant le repas, le frère partage la tasse avec Sam."
-    },
-    {
-      "level": "b1",
-      "word": "tasse",
-      "sentence": "Ce matin, quand la tante sert la tasse, et Sara reste contente aussi."
-    },
-    {
-      "level": "a1",
-      "word": "tennis",
-      "sentence": "La cuisinière prépare le tennis."
-    },
-    {
-      "level": "a2",
-      "word": "tennis",
-      "sentence": "Ce matin, la factrice gagne le tennis dans la salle."
-    },
-    {
-      "level": "b1",
-      "word": "tennis",
-      "sentence": "Ce matin, quand le frère marque le tennis, et Sara reste contente aussi."
-    },
-    {
-      "level": "a1",
-      "word": "veste",
-      "sentence": "La directrice porte la veste sans stress."
-    },
-    {
-      "level": "a2",
-      "word": "veste",
-      "sentence": "Avant le repas, le directeur porte la veste avec Sara."
-    },
-    {
-      "level": "b1",
-      "word": "veste",
-      "sentence": "Ce matin, quand Cassandre porte la veste, parce que Sam reste content aussi."
-    }
-  ],
-  "type10": [
-    {
-      "level": "a1",
-      "sentence": "Sara prend le bus bien.",
-      "parts": [
-        {
-          "t": "Sara prend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bus bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le médecin monte dans le bus avec Sara.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " médecin monte dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bus avec Sara."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le papa attend le bus, et Sara reste contente aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " papa attend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bus, et Sara reste contente aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La sœur rentre dans la classe.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " sœur rentre dans "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " classe."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le garçon surveille la classe avec Sara.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garçon surveille "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " classe avec Sara."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la maman décore la classe, parce que Sam reste content aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maman décore "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " classe, parce que Sam reste content aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le maître renonce au dessert sans stress.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " maître renonce au dessert sans stress."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, la maman renonce au dessert près de la voisine.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maman renonce au dessert près de "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " voisine."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le grand-père renonce au dessert, parce que Sam reste content aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " grand-père renonce au dessert, parce que Sam reste content aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le facteur aide le fils avec Sam.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " facteur aide "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " fils avec Sam."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la collègue console le fils sans stress.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " collègue console "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " fils sans stress."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Sophie invite le fils, parce que Sam reste content aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Sophie invite "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " fils, parce que Sam reste content aussi."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la voisine nourrit un ours avec Sam.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " voisine nourrit un ours avec Sam."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la cuisinière observe un ours, et Sara reste contente aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cuisinière observe un ours, et Sara reste contente aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le musicien coupe le poisson.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " musicien coupe "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " poisson."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, une amie achète le poisson dans la salle.",
-      "parts": [
-        {
-          "t": "Ce matin, une amie achète "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " poisson dans "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " salle."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le copain prépare le poisson, parce que Sam reste content aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " copain prépare "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " poisson, parce que Sam reste content aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La copine passe devant le poste.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " copine passe devant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " poste."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le copain passe devant le poste avec Sara.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " copain passe devant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " poste avec Sara."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le bébé passe devant le poste, parce que Sam reste content aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bébé passe devant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " poste, parce que Sam reste content aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La jardinière voit le sable avec Sam.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " jardinière voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sable avec Sam."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Sara observe le sable sans stress.",
-      "parts": [
-        {
-          "t": "À midi, Sara observe "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sable sans stress."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le professeur photographie le sable, parce que Sam reste content aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " professeur photographie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sable, parce que Sam reste content aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La professeure pose le sac.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " professeure pose "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sac."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la sœur emporte le sac avec Sam.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " sœur emporte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sac avec Sam."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le garçon oublie le sac, et Sara reste contente aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garçon oublie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sac, et Sara reste contente aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Sam mange la salade bien.",
-      "parts": [
-        {
-          "t": "Sam mange "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " salade bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le maître mélange la salade avec Sara.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " maître mélange "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " salade avec Sara."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la grand-mère coupe la salade, parce que Sam reste content aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " grand-mère coupe "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " salade, parce que Sam reste content aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La tante prépare le samedi sans stress.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " tante prépare "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " samedi sans stress."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le facteur note le samedi sous le sac.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " facteur note "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " samedi sous "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sac."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la collègue attend le samedi, et Sara reste contente aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " collègue attend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " samedi, et Sara reste contente aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le directeur dessine le sapin.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " directeur dessine "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sapin."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Cassandre voit le sapin sans stress.",
-      "parts": [
-        {
-          "t": "Ce soir, Cassandre voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sapin sans stress."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la voisine observe le sapin, parce que Sam reste content aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " voisine observe "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sapin, parce que Sam reste content aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le cousin achète la sauce.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " cousin achète "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " sauce."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le musicien prépare la sauce avec Sam.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " musicien prépare "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " sauce avec Sam."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand une amie choisit la sauce, et Sara reste contente aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand une amie choisit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " sauce, et Sara reste contente aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le papa partage la saucisse.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " papa partage "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " saucisse."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la copine sert la saucisse avec Sara.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " copine sert "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " saucisse avec Sara."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le médecin mange la saucisse, parce que Sam reste content aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " médecin mange "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " saucisse, parce que Sam reste content aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le boulanger ouvre le savon sans stress.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " boulanger ouvre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " savon sans stress."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la jardinière bricole le savon sous le sac.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " jardinière bricole "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " savon sous "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sac."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Sara visite le savon avec Sam, et Sara reste contente aussi.",
-      "parts": [
-        {
-          "t": "À midi, quand Sara visite "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " savon avec Sam, et Sara reste contente aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Sam goûte le sel bien.",
-      "parts": [
-        {
-          "t": "Sam goûte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sel bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, la professeure partage le sel sans stress.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " professeure partage "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sel sans stress."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la sœur sert le sel, parce que Sam reste content aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " sœur sert "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sel, parce que Sam reste content aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le cuisinier caresse le serpent.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " cuisinier caresse "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " serpent."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, la fille voit le serpent avec Sam.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " fille voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " serpent avec Sam."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le maître soigne le serpent, et Sara reste contente aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " maître soigne "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " serpent, et Sara reste contente aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le voisin observe le singe.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " voisin observe "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " singe."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, la tante caresse le singe avec Sara.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " tante caresse "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " singe avec Sara."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le facteur voit le singe, parce que Sam reste content aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " facteur voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " singe, parce que Sam reste content aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La factrice mange le sirop sans stress.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " factrice mange "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sirop sans stress."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le directeur apporte le sirop sous le sac.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " directeur apporte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sirop sous "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sac."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Cassandre coupe le sirop avec Sara, et Sara reste contente aussi.",
-      "parts": [
-        {
-          "t": "À midi, quand Cassandre coupe "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sirop avec Sara, et Sara reste contente aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La maîtresse profite le soleil.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " maîtresse profite "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " soleil."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Cassandre profite le soleil sous le sac.",
-      "parts": [
-        {
-          "t": "À midi, Cassandre profite "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " soleil sous "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sac."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la voisine profite le soleil, et Sara reste contente aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " voisine profite "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " soleil, et Sara reste contente aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La musicienne mange la soupe.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " musicienne mange "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " soupe."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le papa cuisine la soupe avec Sam.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " papa cuisine "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " soupe avec Sam."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le musicien mange la soupe, et Sara reste contente aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " musicien mange "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " soupe, et Sara reste contente aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La cousine attrape le sport.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " cousine attrape "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sport."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le boulanger prépare le sport avec Sara.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " boulanger prépare "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sport avec Sara."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le papa joue avec le sport, et Sara reste contente aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " papa joue avec "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sport, et Sara reste contente aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le collègue cherche le stylo sans stress.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " collègue cherche "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " stylo sans stress."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Sam prête le stylo sous le sac.",
-      "parts": [
-        {
-          "t": "À midi, Sam prête "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " stylo sous "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sac."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la jardinière cherche le stylo, et Sara reste contente aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " jardinière cherche "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " stylo, et Sara reste contente aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le voisin coupe le sucre.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " voisin coupe "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sucre."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le cuisinier achète le sucre sans stress.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cuisinier achète "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sucre sans stress."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la fille prépare le sucre, parce que Sam reste content aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " fille prépare "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sucre, parce que Sam reste content aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Un ami goûte la tasse avec Sara.",
-      "parts": [
-        {
-          "t": "Un ami goûte "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " tasse avec Sara."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le frère partage la tasse avec Sam.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " frère partage "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " tasse avec Sam."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la tante sert la tasse, et Sara reste contente aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " tante sert "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " tasse, et Sara reste contente aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La cuisinière prépare le tennis.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " cuisinière prépare "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " tennis."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, la factrice gagne le tennis dans la salle.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " factrice gagne "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " tennis dans "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " salle."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le frère marque le tennis, et Sara reste contente aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " frère marque "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " tennis, et Sara reste contente aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La directrice porte la veste sans stress.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " directrice porte "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " veste sans stress."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le directeur porte la veste avec Sara.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " directeur porte "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " veste avec Sara."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Cassandre porte la veste, parce que Sam reste content aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Cassandre porte "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " veste, parce que Sam reste content aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le musicien se dépêche pour le bus.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " musicien se dépêche pour "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bus."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le cuisinier reste dans la classe.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " cuisinier reste dans "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " classe."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La maman renonce au dessert sans stress.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " maman renonce au dessert sans stress."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La musicienne salue le fils.",
-      "parts": [
+      "variants": [
         {
-          "blank": "La"
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Sam prend le bus à six heures.",
+            "Sophie attend le bus sans Simon."
+          ]
         },
         {
-          "t": " musicienne salue "
+          "level": "a2",
+          "sentences": [
+            "Simon sort du bus avec Sophie et Sacha samedi soir."
+          ]
         },
         {
-          "blank": "le"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Samedi, Sophie prend le bus pour aller au stade avec sa sœur."
+          ]
         },
         {
-          "t": " fils."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Comme le bus est souvent en retard, Simon part plus tôt pour son cours.",
+            "Samuel court pour le bus, mais Simon et Sophie sont déjà assis dedans sans lui."
+          ]
         }
       ]
     },
     {
-      "level": "a2",
-      "sentence": "Ce matin, le professeur aime le samedi sous le sac.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "le"
-        },
+      "word": "caissière",
+      "variants": [
         {
-          "t": " professeur aime "
+          "level": "a1",
+          "sentences": [
+            "Sophie est caissière sans souci."
+          ]
         },
         {
-          "blank": "le"
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "La caissière sourit à Sam."
+          ]
         },
         {
-          "t": " samedi sous "
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Simon salue la caissière Sophie qui sert Sacha samedi.",
+            "Sophie paie ses courses à la caissière samedi matin."
+          ]
         },
         {
-          "blank": "le"
-        },
-        {
-          "t": " sac."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand la caissière scanne les produits, Simon sort sa carte et paie sans attendre.",
+            "Samuel remercie la caissière, car Simon et Sophie sont sans monnaie ce soir."
+          ]
         }
       ]
     },
     {
-      "level": "a2",
-      "sentence": "Après le cours, le jardinier plante le sapin sans stress.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
+      "word": "casque",
+      "variants": [
         {
-          "blank": "le"
+          "level": "a1",
+          "sentences": [
+            "Sophie met son casque sans Simon."
+          ]
         },
         {
-          "t": " jardinier plante "
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Simon sort le casque de Sophie et de Sacha samedi soir."
+          ]
         },
         {
-          "blank": "le"
-        },
-        {
-          "t": " sapin sans stress."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Samuel pose son casque sur le sol, mais Simon et Sophie le trouvent sale."
+          ]
         }
       ]
     },
     {
-      "level": "a2",
-      "sentence": "À midi, la voisine coupe la sauce avec Sara.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
+      "word": "casquette",
+      "variants": [
         {
-          "blank": "la"
+          "level": "a1",
+          "sentences": [
+            "Sophie porte sa casquette sale."
+          ]
         },
         {
-          "t": " voisine coupe "
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Simon sort la casquette de Sophie et de Sacha samedi soir."
+          ]
         },
         {
-          "blank": "la"
-        },
-        {
-          "t": " sauce avec Sara."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Samuel perd sa casquette sale, mais Simon et Sophie la trouvent sous le siège."
+          ]
         }
       ]
     },
     {
-      "level": "a2",
-      "sentence": "Ce soir, le maître achète la saucisse sans stress.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
+      "word": "cassis",
+      "variants": [
         {
-          "blank": "le"
+          "level": "a1",
+          "sentences": [
+            "Sophie boit du cassis sucré."
+          ]
         },
         {
-          "t": " maître achète "
+          "level": "a2",
+          "sentences": [
+            "Simon sert du cassis sucré à Sophie et à Sacha samedi."
+          ]
         },
         {
-          "blank": "la"
-        },
-        {
-          "t": " saucisse sans stress."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Samuel cueille du cassis, mais Simon et Sophie préfèrent le sirop de sureau."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "Ce matin, quand la fille mange la soupe, et Sara reste contente aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
+      "word": "cerise",
+      "variants": [
         {
-          "blank": "la"
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Sophie mange une cerise sucrée."
+          ]
         },
         {
-          "t": " fille mange "
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Simon sert une cerise sucrée à Sophie et à Sacha samedi."
+          ]
         },
         {
-          "blank": "la"
-        },
-        {
-          "t": " soupe, et Sara reste contente aussi."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Samuel cueille une cerise, mais Simon et Sophie sont sûrs qu’elle est trop sucrée."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "À midi, quand Sam marque le sport avec Sara, et Sara reste contente aussi.",
-      "parts": [
+      "word": "cerisier",
+      "variants": [
         {
-          "t": "À midi, quand Sam marque "
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Sophie grimpe sur le cerisier."
+          ]
         },
         {
-          "blank": "le"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Simon suit Sophie et Sacha sous le cerisier samedi soir."
+          ]
         },
         {
-          "t": " sport avec Sara, et Sara reste contente aussi."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Samuel s’assoit sous le cerisier, mais Simon et Sophie restent sur le sol."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "Ce matin, quand la maîtresse cherche le stylo, et Sara reste contente aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
+      "word": "chaussettes",
+      "variants": [
         {
-          "blank": "la"
+          "level": "a1",
+          "sentences": [
+            "Sophie met ses chaussettes sales."
+          ]
         },
         {
-          "t": " maîtresse cherche "
+          "level": "a2",
+          "number": "plur",
+          "sentences": [
+            "Simon sort les chaussettes de Sophie et de Sacha samedi soir."
+          ]
         },
         {
-          "blank": "le"
-        },
-        {
-          "t": " stylo, et Sara reste contente aussi."
+          "level": "b1",
+          "number": "plur",
+          "sentences": [
+            "Samuel cherche ses chaussettes sales, mais Simon et Sophie les trouvent sous le lit."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "Ce matin, quand la cuisinière sert le sucre, parce que Sam reste content aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cuisinière sert "
-        },
+      "word": "chaussures",
+      "variants": [
         {
-          "blank": "le"
+          "level": "a1",
+          "sentences": [
+            "Sophie met ses chaussures sales."
+          ]
         },
         {
-          "t": " sucre, parce que Sam reste content aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le frère sauve un ours.",
-      "parts": [
-        {
-          "blank": "Le"
+          "level": "a2",
+          "number": "plur",
+          "sentences": [
+            "Simon sort les chaussures de Sophie et de Sacha samedi soir."
+          ]
         },
         {
-          "t": " frère sauve un ours."
+          "level": "b1",
+          "sentences": [
+            "Samuel nettoie ses chaussures sales, mais Simon et Sophie sont sûrs qu’elles seront sales."
+          ]
         }
       ]
     },
     {
-      "level": "a1",
-      "sentence": "Sophie goûte le poisson bien.",
-      "parts": [
+      "word": "ciseaux",
+      "variants": [
         {
-          "t": "Sophie goûte "
+          "level": "a1",
+          "number": "plur",
+          "sentences": [
+            "Sophie prend les ciseaux de Simon."
+          ]
         },
         {
-          "blank": "le"
+          "level": "a2",
+          "number": "plur",
+          "sentences": [
+            "Simon coupe le papier avec les ciseaux de Sophie et de Sacha."
+          ]
         },
         {
-          "t": " poisson bien."
+          "level": "b1",
+          "number": "plur",
+          "sentences": [
+            "Samuel range les ciseaux dans le tiroir, mais Simon et Sophie les sortent samedi."
+          ]
         }
       ]
     },
     {
-      "level": "a1",
-      "sentence": "La cousine passe devant le poste.",
-      "parts": [
-        {
-          "blank": "La"
-        },
+      "word": "classeur",
+      "variants": [
         {
-          "t": " cousine passe devant "
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Sophie ouvre le classeur de Simon."
+          ]
         },
         {
-          "blank": "le"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Simon sort le classeur de Sophie et de Sacha samedi soir."
+          ]
         },
         {
-          "t": " poste."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Samuel cherche le classeur de Simon, mais Sophie sait qu’il est sous le bureau."
+          ]
         }
       ]
     },
     {
-      "level": "a1",
-      "sentence": "La directrice admire le sable sans stress.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " directrice admire "
-        },
-        {
-          "blank": "le"
-        },
+      "word": "descente",
+      "variants": [
         {
-          "t": " sable sans stress."
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Sophie sort son casque du sac avant la descente de samedi."
+          ]
         }
       ]
     },
     {
-      "level": "a1",
-      "sentence": "La grand-mère emporte le sac avec Sam.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " grand-mère emporte "
-        },
-        {
-          "blank": "le"
-        },
+      "word": "nouvelle",
+      "variants": [
         {
-          "t": " sac avec Sam."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Parce que ses baskets sont usées, Simon s’achète une nouvelle paire dès samedi."
+          ]
         }
       ]
     },
     {
-      "level": "a1",
-      "sentence": "Sara mélange la salade bien.",
-      "parts": [
-        {
-          "t": "Sara mélange "
-        },
-        {
-          "blank": "la"
-        },
+      "word": "Quand",
+      "variants": [
         {
-          "t": " salade bien."
+          "level": "b1",
+          "sentences": [
+            "Quand Simon voyage, il emporte toujours sa brosse à dents et son savon."
+          ]
         }
       ]
     },
     {
-      "level": "a2",
-      "sentence": "Ce matin, la jardinière nettoie le savon dans la salle.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " jardinière nettoie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " savon dans "
-        },
-        {
-          "blank": "la"
-        },
+      "word": "saison",
+      "variants": [
         {
-          "t": " salle."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand la saison des asperges commence, Simon en achète car sa sœur les adore."
+          ]
         }
       ]
     },
     {
-      "level": "a2",
-      "sentence": "Avant le repas, le cousin choisit le sel sans stress.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cousin choisit "
-        },
-        {
-          "blank": "le"
-        },
+      "word": "Sam",
+      "variants": [
         {
-          "t": " sel sans stress."
+          "level": "a1",
+          "sentences": [
+            "Sam est astronaute à Sion.",
+            "Sam joue au basketball samedi.",
+            "Sam met ses baskets sales.",
+            "Sam met son casque de ski."
+          ]
         }
       ]
     },
     {
-      "level": "a2",
-      "sentence": "Après le cours, le frère regarde le serpent avec Sara.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " frère regarde "
-        },
-        {
-          "blank": "le"
-        },
+      "word": "samedis",
+      "variants": [
         {
-          "t": " serpent avec Sara."
+          "level": "a2",
+          "number": "plur",
+          "sentences": [
+            "Sophie s’entraîne au basketball tous les samedis dans la salle."
+          ]
         }
       ]
     },
     {
-      "level": "a2",
-      "sentence": "À midi, le collègue soigne le singe sans stress.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " collègue soigne "
-        },
-        {
-          "blank": "le"
-        },
+      "word": "sécurité",
+      "variants": [
         {
-          "t": " singe sans stress."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand Simon fait du ski, il met son casque car la sécurité est essentielle."
+          ]
         }
       ]
     },
     {
-      "level": "a2",
-      "sentence": "Ce soir, la cousine sert le sirop avec Sara.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cousine sert "
-        },
-        {
-          "blank": "le"
-        },
+      "word": "sentier",
+      "variants": [
         {
-          "t": " sirop avec Sara."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand Simon se perd, il sort sa boussole et suit le sentier vers le sud."
+          ]
         }
       ]
     },
     {
-      "level": "a2",
-      "sentence": "Après le cours, un ami profite le soleil sous le sac.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, un ami profite "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " soleil sous "
-        },
-        {
-          "blank": "le"
-        },
+      "word": "sirène",
+      "variants": [
         {
-          "t": " sac."
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Je rêve d’être une sirène."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "À midi, quand Sophie achète la tasse sans stress, et Sara reste contente aussi.",
-      "parts": [
-        {
-          "t": "À midi, quand Sophie achète "
-        },
+      "word": "soir",
+      "variants": [
         {
-          "blank": "la"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Ce soir, nous mangerons du potage, du gigot avec des girolles.",
+            "Le soir, je regarde les étoiles dans le ciel."
+          ]
         },
         {
-          "t": " tasse sans stress, et Sara reste contente aussi."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand Sophie sort le soir, elle met toujours ses jolies boucles d’oreilles dorées."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "Ce matin, quand Sara regarde le tennis, parce que Sam reste content aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Sara regarde "
-        },
-        {
-          "blank": "le"
-        },
+      "word": "soirée",
+      "variants": [
         {
-          "t": " tennis, parce que Sam reste content aussi."
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Samedi, Sophie sort ses boucles d’oreilles pour la soirée."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "Ce matin, quand le copain porte la veste, parce que Sam reste content aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " copain porte "
-        },
-        {
-          "blank": "la"
-        },
+      "word": "sole",
+      "variants": [
         {
-          "t": " veste, parce que Sam reste content aussi."
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Salima a salé la sole."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "À midi, quand Cassandre conduit le bus avec Sara, et Sara reste contente aussi.",
-      "parts": [
+      "word": "Sophie",
+      "variants": [
         {
-          "t": "À midi, quand Cassandre conduit "
+          "level": "a1",
+          "sentences": [
+            "Sophie cherche ses boucles d’oreilles."
+          ]
         },
         {
-          "blank": "le"
+          "level": "a2",
+          "sentences": [
+            "Sophie sort ses baskets du placard pour courir samedi matin."
+          ]
         },
         {
-          "t": " bus avec Sara, et Sara reste contente aussi."
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Sophie joue du xylophone avec son ami Philippe.",
+            "Sophie regarde un film sur les éléphants d’Afrique."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "Ce matin, quand la fille range la classe, et Sara reste contente aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " fille range "
-        },
-        {
-          "blank": "la"
-        },
+      "word": "station",
+      "variants": [
         {
-          "t": " classe, et Sara reste contente aussi."
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Cet astronaute passe six mois dans la station spatiale."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "Ce matin, quand la copine renonce au dessert, parce que Sam reste content aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
+      "word": "trois",
+      "variants": [
         {
-          "blank": "la"
+          "level": "a2",
+          "number": "plur",
+          "sentences": [
+            "Sophie change sa brosse à dents tous les trois mois."
+          ]
         },
         {
-          "t": " copine renonce au dessert, parce que Sam reste content aussi."
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "J’ai pêché trois brochets, je les mets dans le filet."
+          ]
         }
       ]
-    }
-  ],
-  "type12": [
-    {
-      "level": "a1",
-      "sentence": "Le musicien se dépêche pour le bus."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le cuisinier reste dans la classe."
-    },
-    {
-      "level": "a1",
-      "sentence": "La maman renonce au dessert sans stress."
-    },
-    {
-      "level": "a1",
-      "sentence": "La musicienne salue le fils."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le professeur aime le samedi sous le sac."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le jardinier plante le sapin sans stress."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, la voisine coupe la sauce avec Sara."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le maître achète la saucisse sans stress."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la fille mange la soupe, et Sara reste contente aussi."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Sam marque le sport avec Sara, et Sara reste contente aussi."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la maîtresse cherche le stylo, et Sara reste contente aussi."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la cuisinière sert le sucre, parce que Sam reste content aussi."
-    }
-  ],
-  "type14": [
-    {
-      "level": "a1",
-      "sentence": "Le frère sauve un ours."
-    },
-    {
-      "level": "a1",
-      "sentence": "Sophie goûte le poisson bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La cousine passe devant le poste."
-    },
-    {
-      "level": "a1",
-      "sentence": "La directrice admire le sable sans stress."
-    },
-    {
-      "level": "a1",
-      "sentence": "La grand-mère emporte le sac avec Sam."
-    },
-    {
-      "level": "a1",
-      "sentence": "Sara mélange la salade bien."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, la jardinière nettoie le savon dans la salle."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le cousin choisit le sel sans stress."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le frère regarde le serpent avec Sara."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le collègue soigne le singe sans stress."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, la cousine sert le sirop avec Sara."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, un ami profite le soleil sous le sac."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Sophie achète la tasse sans stress, et Sara reste contente aussi."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Sara regarde le tennis, parce que Sam reste content aussi."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le copain porte la veste, parce que Sam reste content aussi."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Cassandre conduit le bus avec Sara, et Sara reste contente aussi."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la fille range la classe, et Sara reste contente aussi."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la copine renonce au dessert, parce que Sam reste content aussi."
     }
   ]
 }

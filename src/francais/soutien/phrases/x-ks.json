@@ -1,1999 +1,805 @@
 {
-  "type9": [
+  "son": "x-ks",
+  "phrases": [
     {
-      "level": "a1",
+      "word": "annexe",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Alex nettoie l’annexe de Maxime.",
+            "Max travaille dans l’annexe de Félix."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alexandre joue du saxophone dans l’annexe avec Maxime et Félix.",
+            "Alexandre range ses textes dans l’annexe avec Maxime et Alexis.",
+            "Xavier range le matériel dans l’annexe avec Alex et Maxime."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Alexandre ouvre l’annexe, mais Xavier et Maxime préfèrent la boxe dans le grand gymnase.",
+            "Quand l’annexe est ouverte, Alexis fait une exposition de textes et Max explique tout."
+          ]
+        }
+      ]
+    },
+    {
       "word": "axe",
-      "sentence": "Max prend un axe bien."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Alex trace un axe avec Maxime.",
+            "Max dessine un axe pour Alexis."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alexis trace un axe sur le texte avec Maxime.",
+            "Xavier dessine un axe sur le graphique de Maxime et d’Alex."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Alexandre trace un axe vertical, mais Xavier et Maxime préfèrent l’axe horizontal du texte.",
+            "Quand Max dessine l’axe, Alexandre vérifie la ligne et explique tout à Alexis."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "axe",
-      "sentence": "Ce soir, Alexis utilise un axe avec Félix."
+      "word": "boxe",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Alex fait de la boxe.",
+            "Max fait de la boxe."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alexis fait de la boxe avec Maxime dans une salle de Sion.",
+            "Xavier fait de la boxe avec Maxime et Alex le mardi."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Alexandre adore la boxe, mais Xavier et Maxime préfèrent le judo comme Félix.",
+            "Quand Max fait de la boxe, il suit un programme extrême avec Alexandre."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "axe",
-      "sentence": "À midi, quand le maître range un axe sans excuse, et Félix explique très bien."
-    },
-    {
-      "level": "a1",
       "word": "boxeur",
-      "sentence": "La maîtresse regarde le boxeur au maximum."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Alex regarde le boxeur de Maxime."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Le boxeur Alexis s’entraîne avec Maxime et un expert de Mexico.",
+            "Xavier applaudit le boxeur avec Maxime et Alex à la salle."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Alexandre admire le boxeur, mais Xavier et Maxime préfèrent le judoka comme Félix.",
+            "Quand le boxeur Alexandre perd, il s’excuse toujours auprès de Max et d’Alexis."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "boxeur",
-      "sentence": "À midi, Max prépare le boxeur au maximum."
+      "word": "bruit",
+      "variants": [
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand Max entend un bruit, son réflexe est de se protéger, comme l’explique Alexis."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "boxeur",
-      "sentence": "À midi, quand la fille attrape le boxeur avec Max, et Félix explique très bien."
+      "word": "cerveau",
+      "variants": [
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alexandre explique à Maxime que le cerveau a besoin d’oxygène."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
-      "word": "excuse",
-      "sentence": "Le grand-père montre une excuse sans excuse."
+      "word": "écran",
+      "variants": [
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand l’écran est excellent, Max remarque chaque pixel et Alexandre explique la technique."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "excuse",
-      "sentence": "Avant le repas, Max prend une excuse avec Félix."
+      "word": "excellent",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Max est un excellent boxeur."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "excuse",
-      "sentence": "À midi, quand la maîtresse cherche une excuse avec Max, et Félix explique très bien."
+      "word": "exercice",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Alex fait un exercice avec Maxime."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Xavier corrige l’exercice de Maxime et d’Alex dans la classe."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Alexandre trouve l’exercice facile, mais Xavier et Maxime préfèrent un exercice plus long."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
-      "word": "exposition",
-      "sentence": "Le jardinier quitte une exposition avec Félix."
-    },
-    {
-      "level": "a2",
-      "word": "exposition",
-      "sentence": "Après le cours, Félix voit une exposition sans excuse."
-    },
-    {
-      "level": "b1",
-      "word": "exposition",
-      "sentence": "À midi, quand Alex cherche une exposition au maximum, parce que Max est très content."
-    },
-    {
-      "level": "a1",
-      "word": "expérience",
-      "sentence": "Alexis prépare une expérience bien."
-    },
-    {
-      "level": "a2",
-      "word": "expérience",
-      "sentence": "À midi, Alex écrit une expérience sans excuse."
-    },
-    {
-      "level": "b1",
-      "word": "expérience",
-      "sentence": "À midi, quand la professeure recopie une expérience sans excuse, et Félix explique très bien."
-    },
-    {
-      "level": "a1",
       "word": "extincteur",
-      "sentence": "Le voisin bricole un extincteur au maximum."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Alex prend l’extincteur de Maxime.",
+            "Max prend l’extincteur avec Alexis."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alexandre vérifie l’extincteur de l’annexe avec Maxime chaque mois.",
+            "Xavier vérifie l’extincteur avec Maxime et Alex dans le couloir."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Alexandre utilise l’extincteur, mais Xavier et Maxime préfèrent appeler les pompiers tout de suite."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "extincteur",
-      "sentence": "Ce matin, Max bricole un extincteur au maximum."
+      "word": "feu",
+      "variants": [
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand il y a un feu, Max prend l’extincteur et Alexis explique comment faire."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "extincteur",
-      "sentence": "À midi, quand le papa visite un extincteur avec Max, et Félix explique très bien."
+      "word": "fixe",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Alex a un prix fixe."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Xavier paie un prix fixe pour Maxime et pour Alex."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Alexandre paie un tarif fixe, mais Xavier et Maxime préfèrent le prix variable."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
-      "word": "extra",
-      "sentence": "Le bébé range un extra sans excuse."
-    },
-    {
-      "level": "a2",
-      "word": "extra",
-      "sentence": "Après le cours, Alexis cherche un extra avec Max."
-    },
-    {
-      "level": "b1",
-      "word": "extra",
-      "sentence": "À midi, quand le voisin prend un extra avec Max, et Félix explique très bien."
-    },
-    {
-      "level": "a1",
-      "word": "fax",
-      "sentence": "La musicienne utilise le fax avec Félix."
-    },
-    {
-      "level": "a2",
-      "word": "fax",
-      "sentence": "À midi, Max range le fax sans excuse."
-    },
-    {
-      "level": "b1",
-      "word": "fax",
-      "sentence": "À midi, quand la directrice prend le fax avec Max, et Félix explique très bien."
-    },
-    {
-      "level": "a1",
       "word": "galaxie",
-      "sentence": "Un ami plante la galaxie avec Max."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Alex observe la galaxie de Maxime.",
+            "Max regarde la galaxie avec Alexis."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alexandre explique la galaxie à Maxime avec une belle exposition.",
+            "Xavier regarde la galaxie avec Maxime et Alex ce mardi."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Alexandre dessine la galaxie, mais Xavier et Maxime préfèrent regarder les étoiles de Félix.",
+            "Quand Max regarde la galaxie, il explique à Félix que l’espace est extraordinaire."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "galaxie",
-      "sentence": "Avant le repas, Max admire la galaxie au maximum."
+      "word": "hexagone",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Alex dessine un hexagone avec Maxime.",
+            "Max dessine un hexagone pour Alexis."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alexandre trace un hexagone sur le texte avec l’expert de Maxime.",
+            "Xavier trace un hexagone pour Maxime et pour Alex ce mardi."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Alexandre dessine un hexagone, mais Xavier et Maxime préfèrent dessiner un carré comme Félix.",
+            "Quand Alexis explique l’hexagone, Max écoute avec attention et Félix trouve cela excellent."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "galaxie",
-      "sentence": "À midi, quand le cousin voit la galaxie sans excuse, et Félix explique très bien."
+      "word": "image",
+      "variants": [
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alexis agrandit l’image pour voir chaque pixel avec Maxime."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
-      "word": "index",
-      "sentence": "La cousine utilise un index au maximum."
+      "word": "jus",
+      "variants": [
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alexis trouve le jus de noix de coco excellent avec Max."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "index",
-      "sentence": "Après le cours, Félix prépare un index avec Max."
-    },
-    {
-      "level": "b1",
-      "word": "index",
-      "sentence": "À midi, quand la maîtresse lit un index avec Max, et Félix explique très bien."
-    },
-    {
-      "level": "a1",
       "word": "klaxon",
-      "sentence": "La boulangère vend le klaxon sans excuse."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Alex entend le klaxon de Maxime.",
+            "Max entend le klaxon du taxi."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alexis appuie sur le klaxon du taxi devant l’annexe de Max.",
+            "Xavier appuie sur le klaxon pour saluer Maxime et Alex."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Alexandre tape sur le klaxon, mais Xavier et Maxime préfèrent le silence comme Félix.",
+            "Quand Max appuie sur le klaxon du taxi, Alexis sursaute et s’excuse aussitôt."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "klaxon",
-      "sentence": "À midi, Alex conduit le klaxon avec Félix."
-    },
-    {
-      "level": "b1",
-      "word": "klaxon",
-      "sentence": "À midi, quand la collègue attend le klaxon avec Max, et Félix explique très bien."
-    },
-    {
-      "level": "a1",
       "word": "luxe",
-      "sentence": "Le directeur pose le luxe avec Félix."
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Alex rêve de luxe avec Maxime."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Xavier loue une suite de luxe pour Maxime et pour Alex."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Alexandre dort dans un hôtel de luxe, mais Xavier et Maxime préfèrent le camping simple."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "luxe",
-      "sentence": "Ce soir, Alexis montre le luxe sans excuse."
+      "word": "Max",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Max a de bons réflexes.",
+            "Max compte chaque pixel avec Alex.",
+            "Max joue du saxophone avec Alexis.",
+            "Max joue du xylophone avec Alexis."
+          ]
+        },
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Max expédie un colis pour Alexis."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "luxe",
-      "sentence": "À midi, quand Alex cherche le luxe avec Max, et Félix explique très bien."
-    },
-    {
-      "level": "a1",
-      "word": "lynx",
-      "sentence": "La maman regarde le lynx avec Max."
-    },
-    {
-      "level": "a2",
-      "word": "lynx",
-      "sentence": "Après le cours, Alexis attrape le lynx au maximum."
-    },
-    {
-      "level": "b1",
-      "word": "lynx",
-      "sentence": "À midi, quand la sœur observe le lynx sans excuse, et Félix explique très bien."
-    },
-    {
-      "level": "a1",
       "word": "maximum",
-      "sentence": "Le copain oublie le maximum au maximum."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Alex veut le maximum de Maxime."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Xavier donne le maximum pour Maxime et pour Alex ce mardi."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Alexandre atteint le maximum, mais Xavier et Maxime préfèrent le minimum comme Félix."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "maximum",
-      "sentence": "Ce matin, Alexis prend le maximum avec Max."
+      "word": "mélodie",
+      "variants": [
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand Max joue du xylophone, Alexandre trouve la mélodie excellente et Félix chante."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "maximum",
-      "sentence": "À midi, quand le voisin cherche le maximum avec Max, et Félix explique très bien."
-    },
-    {
-      "level": "a1",
       "word": "mixeur",
-      "sentence": "Le cuisinier coupe le mixeur sans excuse."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Alex utilise le mixeur de Maxime.",
+            "Max prend le mixeur de Félix."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alexis utilise le mixeur pour faire un jus extra avec Maxime.",
+            "Xavier nettoie le mixeur de Maxime et d’Alex ce mardi."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Alexandre prépare une soupe au mixeur, mais Xavier et Maxime préfèrent la manger en morceaux.",
+            "Quand le mixeur fait trop de bruit, Max l’éteint et Alexandre s’excuse vite."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "mixeur",
-      "sentence": "À midi, Alexis achète le mixeur avec Félix."
+      "word": "mixte",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Alex va en classe mixte."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Xavier choisit une classe mixte pour Maxime et pour Alex."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Alexandre choisit une salade mixte, mais Xavier et Maxime préfèrent la salade verte comme Félix."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "mixeur",
-      "sentence": "À midi, quand Max prépare le mixeur avec Félix, et Félix explique très bien."
+      "word": "noix",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Max ouvre une noix de coco extra."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand Max ouvre une noix de coco, Alexis explique bien la technique excellente."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
+      "word": "noix de coco",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Alex mange une noix de coco."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Xavier ouvre une noix de coco pour Maxime et pour Alex."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Alexandre casse une noix de coco, mais Xavier et Maxime préfèrent boire le lait."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "oxygene",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Alex respire l’oxygène avec Maxime."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Xavier explique l’oxygène à Maxime et à Alex ce mardi."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Alexandre lit un livre sur l’oxygène, mais Xavier et Maxime préfèrent l’azote."
+          ]
+        }
+      ]
+    },
+    {
       "word": "oxygène",
-      "sentence": "Félix plante un oxygène bien."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Alex mesure l’oxygène de Maxime.",
+            "Max prend de l’oxygène avec Alexis."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Xavier vérifie l’oxygène dans la salle avec Maxime et Alex."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Alexandre ouvre la fenêtre pour l’oxygène, mais Xavier et Maxime ouvrent la porte.",
+            "Quand Alexis explique à Max que l’oxygène est vital, Alexandre prend des notes."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "oxygène",
-      "sentence": "Avant le repas, Alexis plante un oxygène sans excuse."
-    },
-    {
-      "level": "b1",
-      "word": "oxygène",
-      "sentence": "À midi, quand la musicienne photographie un oxygène sans excuse, et Félix explique très bien."
-    },
-    {
-      "level": "a1",
       "word": "pixel",
-      "sentence": "Le professeur prend le pixel avec Max."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Alex agrandit un pixel de Maxime."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Xavier regarde le pixel sur l’écran de Maxime et d’Alex."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Alexandre compte chaque pixel, mais Xavier et Maxime préfèrent regarder l’image entière comme Félix."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "pixel",
-      "sentence": "Ce soir, Alexis oublie le pixel au maximum."
+      "word": "prefixe",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Alex écrit un préfixe avec Maxime."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Xavier explique le préfixe à Maxime et à Alex ce mardi."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Alexandre ajoute un préfixe au mot, mais Xavier et Maxime préfèrent le suffixe comme Félix."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "pixel",
-      "sentence": "À midi, quand le grand-père range le pixel sans excuse, et Félix explique très bien."
-    },
-    {
-      "level": "a1",
       "word": "réflexe",
-      "sentence": "La grand-mère soigne le réflexe au maximum."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Alex a un bon réflexe."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alexis a un réflexe extra quand Maxime lance la balle.",
+            "Xavier admire le réflexe de Maxime et d’Alex au match."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Alexandre a un excellent réflexe, mais Xavier et Maxime préfèrent la prudence comme Félix."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "réflexe",
-      "sentence": "Avant le repas, Félix montre le réflexe sans excuse."
+      "word": "relax",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Alex reste relax avec Maxime."
+          ]
+        },
+        {
+          "level": "a2",
+          "sentences": [
+            "Xavier se sent relax avec Maxime et Alex ce mardi."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Alexandre reste relax, mais Xavier et Maxime stressent avant le match comme Félix."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "réflexe",
-      "sentence": "À midi, quand la cousine regarde le réflexe avec Max, et Félix explique très bien."
-    },
-    {
-      "level": "a1",
       "word": "saxophone",
-      "sentence": "La jardinière écoute le saxophone sans excuse."
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Alex joue du saxophone avec Maxime."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Xavier écoute le saxophone de Maxime et d’Alex ce mardi."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Alexandre joue du saxophone, mais Xavier et Maxime préfèrent la trompette comme Félix."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "saxophone",
-      "sentence": "Après le cours, Alex regarde le saxophone sans excuse."
-    },
-    {
-      "level": "b1",
-      "word": "saxophone",
-      "sentence": "À midi, quand Alexis termine le saxophone avec Max, et Félix explique très bien."
-    },
-    {
-      "level": "a1",
       "word": "taxi",
-      "sentence": "Le garçon emprunte le taxi avec Félix."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Alex prend un taxi avec Maxime.",
+            "Max prend un taxi express."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alexis prend un taxi pour aller à l’exposition avec Maxime.",
+            "Xavier appelle un taxi pour Maxime et pour Alex ce mardi."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Alexandre prend un taxi, mais Xavier et Maxime préfèrent le bus, comme leur ami Félix.",
+            "Comme le taxi est en retard, Max s’excuse auprès de Maxime et d’Alexis."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "taxi",
-      "sentence": "Ce matin, Alex conduit le taxi au maximum."
-    },
-    {
-      "level": "b1",
-      "word": "taxi",
-      "sentence": "À midi, quand le directeur vend le taxi sans excuse, et Félix explique très bien."
-    },
-    {
-      "level": "a1",
       "word": "texte",
-      "sentence": "La voisine recopie le texte avec Max."
+      "variants": [
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand Max joue du saxophone, Alexis trouve cela excellent et Félix demande un texte extra."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "texte",
-      "sentence": "Avant le repas, Alexis recopie le texte avec Max."
-    },
-    {
-      "level": "b1",
-      "word": "texte",
-      "sentence": "À midi, quand le voisin recopie le texte avec Max, et Félix explique très bien."
-    },
-    {
-      "level": "a1",
-      "word": "texto",
-      "sentence": "Le médecin oublie le texto au maximum."
-    },
-    {
-      "level": "a2",
-      "word": "texto",
-      "sentence": "Après le cours, Max range le texto sans excuse."
-    },
-    {
-      "level": "b1",
-      "word": "texto",
-      "sentence": "À midi, quand le copain cherche le texto avec Max, et Félix explique très bien."
-    },
-    {
-      "level": "a1",
-      "word": "thorax",
-      "sentence": "Le collègue regarde le thorax sans excuse."
-    },
-    {
-      "level": "a2",
-      "word": "thorax",
-      "sentence": "À midi, Félix soigne le thorax au maximum."
-    },
-    {
-      "level": "b1",
-      "word": "thorax",
-      "sentence": "À midi, quand un ami lave le thorax avec Max, et Félix explique très bien."
-    },
-    {
-      "level": "a1",
       "word": "xylophone",
-      "sentence": "Une amie regarde le xylophone avec Félix."
-    },
-    {
-      "level": "a2",
-      "word": "xylophone",
-      "sentence": "Avant le repas, Félix choisit le xylophone avec Max."
-    },
-    {
-      "level": "b1",
-      "word": "xylophone",
-      "sentence": "À midi, quand Félix aime le xylophone sans excuse, et Félix explique très bien."
-    }
-  ],
-  "type10": [
-    {
-      "level": "b1",
-      "sentence": "À midi, quand le maître range un axe sans excuse, et Félix explique très bien.",
-      "parts": [
+      "variants": [
         {
-          "t": "À midi, quand "
+          "level": "a1",
+          "sentences": [
+            "Alex joue du xylophone avec Maxime."
+          ]
         },
         {
-          "blank": "le"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alexis apprend le xylophone avec Maxime dans une classe extra.",
+            "Sophie joue du xylophone avec son ami Philippe.",
+            "Xavier écoute le xylophone de Maxime et d’Alex ce mardi."
+          ]
         },
         {
-          "t": " maître range un axe sans excuse, et Félix explique très bien."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Alexandre joue du xylophone, mais Xavier et Maxime préfèrent la flûte comme leur ami Félix."
+          ]
         }
       ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La maîtresse regarde le boxeur au maximum.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " maîtresse regarde "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " boxeur au maximum."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Max prépare le boxeur au maximum.",
-      "parts": [
-        {
-          "t": "À midi, Max prépare "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " boxeur au maximum."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand la fille attrape le boxeur avec Max, et Félix explique très bien.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " fille attrape "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " boxeur avec Max, et Félix explique très bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le grand-père montre une excuse sans excuse.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " grand-père montre une excuse sans excuse."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Max prend une excuse avec Félix.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, Max prend une excuse avec Félix."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand la maîtresse cherche une excuse avec Max, et Félix explique très bien.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maîtresse cherche une excuse avec Max, et Félix explique très bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le jardinier quitte une exposition avec Félix.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " jardinier quitte une exposition avec Félix."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Félix voit une exposition sans excuse.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Félix voit une exposition sans excuse."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand la professeure recopie une expérience sans excuse, et Félix explique très bien.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " professeure recopie une expérience sans excuse, et Félix explique très bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le voisin bricole un extincteur au maximum.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " voisin bricole un extincteur au maximum."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand le papa visite un extincteur avec Max, et Félix explique très bien.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " papa visite un extincteur avec Max, et Félix explique très bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le bébé range un extra sans excuse.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " bébé range un extra sans excuse."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Alexis cherche un extra avec Max.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Alexis cherche un extra avec Max."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand le voisin prend un extra avec Max, et Félix explique très bien.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " voisin prend un extra avec Max, et Félix explique très bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La musicienne utilise le fax avec Félix.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " musicienne utilise "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " fax avec Félix."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Max range le fax sans excuse.",
-      "parts": [
-        {
-          "t": "À midi, Max range "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " fax sans excuse."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand la directrice prend le fax avec Max, et Félix explique très bien.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " directrice prend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " fax avec Max, et Félix explique très bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Un ami plante la galaxie avec Max.",
-      "parts": [
-        {
-          "t": "Un ami plante "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " galaxie avec Max."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Max admire la galaxie au maximum.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, Max admire "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " galaxie au maximum."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand le cousin voit la galaxie sans excuse, et Félix explique très bien.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cousin voit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " galaxie sans excuse, et Félix explique très bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La cousine utilise un index au maximum.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " cousine utilise un index au maximum."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Félix prépare un index avec Max.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Félix prépare un index avec Max."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand la maîtresse lit un index avec Max, et Félix explique très bien.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maîtresse lit un index avec Max, et Félix explique très bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La boulangère vend le klaxon sans excuse.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " boulangère vend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " klaxon sans excuse."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Alex conduit le klaxon avec Félix.",
-      "parts": [
-        {
-          "t": "À midi, Alex conduit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " klaxon avec Félix."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand la collègue attend le klaxon avec Max, et Félix explique très bien.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " collègue attend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " klaxon avec Max, et Félix explique très bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le directeur pose le luxe avec Félix.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " directeur pose "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " luxe avec Félix."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Alexis montre le luxe sans excuse.",
-      "parts": [
-        {
-          "t": "Ce soir, Alexis montre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " luxe sans excuse."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Alex cherche le luxe avec Max, et Félix explique très bien.",
-      "parts": [
-        {
-          "t": "À midi, quand Alex cherche "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " luxe avec Max, et Félix explique très bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La maman regarde le lynx avec Max.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " maman regarde "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " lynx avec Max."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Alexis attrape le lynx au maximum.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Alexis attrape "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " lynx au maximum."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand la sœur observe le lynx sans excuse, et Félix explique très bien.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " sœur observe "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " lynx sans excuse, et Félix explique très bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le copain oublie le maximum au maximum.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " copain oublie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " maximum au maximum."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Alexis prend le maximum avec Max.",
-      "parts": [
-        {
-          "t": "Ce matin, Alexis prend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " maximum avec Max."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand le voisin cherche le maximum avec Max, et Félix explique très bien.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " voisin cherche "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " maximum avec Max, et Félix explique très bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le cuisinier coupe le mixeur sans excuse.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " cuisinier coupe "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " mixeur sans excuse."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Alexis achète le mixeur avec Félix.",
-      "parts": [
-        {
-          "t": "À midi, Alexis achète "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " mixeur avec Félix."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Max prépare le mixeur avec Félix, et Félix explique très bien.",
-      "parts": [
-        {
-          "t": "À midi, quand Max prépare "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " mixeur avec Félix, et Félix explique très bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Alexis plante un oxygène sans excuse.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, Alexis plante un oxygène sans excuse."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand la musicienne photographie un oxygène sans excuse, et Félix explique très bien.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " musicienne photographie un oxygène sans excuse, et Félix explique très bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le professeur prend le pixel avec Max.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " professeur prend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pixel avec Max."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Alexis oublie le pixel au maximum.",
-      "parts": [
-        {
-          "t": "Ce soir, Alexis oublie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pixel au maximum."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand le grand-père range le pixel sans excuse, et Félix explique très bien.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " grand-père range "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pixel sans excuse, et Félix explique très bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La grand-mère soigne le réflexe au maximum.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " grand-mère soigne "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " réflexe au maximum."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Félix montre le réflexe sans excuse.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, Félix montre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " réflexe sans excuse."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand la cousine regarde le réflexe avec Max, et Félix explique très bien.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cousine regarde "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " réflexe avec Max, et Félix explique très bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La jardinière écoute le saxophone sans excuse.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " jardinière écoute "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " saxophone sans excuse."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Alex regarde le saxophone sans excuse.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Alex regarde "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " saxophone sans excuse."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Alexis termine le saxophone avec Max, et Félix explique très bien.",
-      "parts": [
-        {
-          "t": "À midi, quand Alexis termine "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " saxophone avec Max, et Félix explique très bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le garçon emprunte le taxi avec Félix.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " garçon emprunte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " taxi avec Félix."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Alex conduit le taxi au maximum.",
-      "parts": [
-        {
-          "t": "Ce matin, Alex conduit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " taxi au maximum."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand le directeur vend le taxi sans excuse, et Félix explique très bien.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " directeur vend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " taxi sans excuse, et Félix explique très bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La voisine recopie le texte avec Max.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " voisine recopie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " texte avec Max."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Alexis recopie le texte avec Max.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, Alexis recopie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " texte avec Max."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand le voisin recopie le texte avec Max, et Félix explique très bien.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " voisin recopie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " texte avec Max, et Félix explique très bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le médecin oublie le texto au maximum.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " médecin oublie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " texto au maximum."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Max range le texto sans excuse.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Max range "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " texto sans excuse."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand le copain cherche le texto avec Max, et Félix explique très bien.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " copain cherche "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " texto avec Max, et Félix explique très bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le collègue regarde le thorax sans excuse.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " collègue regarde "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " thorax sans excuse."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Félix soigne le thorax au maximum.",
-      "parts": [
-        {
-          "t": "À midi, Félix soigne "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " thorax au maximum."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand un ami lave le thorax avec Max, et Félix explique très bien.",
-      "parts": [
-        {
-          "t": "À midi, quand un ami lave "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " thorax avec Max, et Félix explique très bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Une amie regarde le xylophone avec Félix.",
-      "parts": [
-        {
-          "t": "Une amie regarde "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " xylophone avec Félix."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Félix choisit le xylophone avec Max.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, Félix choisit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " xylophone avec Max."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Félix aime le xylophone sans excuse, et Félix explique très bien.",
-      "parts": [
-        {
-          "t": "À midi, quand Félix aime "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " xylophone sans excuse, et Félix explique très bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le voisin montre un axe sans excuse.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " voisin montre un axe sans excuse."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La boulangère gagne le boxeur avec Max.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " boulangère gagne "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " boxeur avec Max."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La voisine visite une exposition avec Max.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " voisine visite une exposition avec Max."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Alexis emprunte le klaxon au maximum.",
-      "parts": [
-        {
-          "t": "Ce soir, Alexis emprunte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " klaxon au maximum."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Félix cherche le luxe avec Max.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, Félix cherche "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " luxe avec Max."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Alex voit le lynx avec Félix.",
-      "parts": [
-        {
-          "t": "Ce matin, Alex voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " lynx avec Félix."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Félix montre le maximum sans excuse.",
-      "parts": [
-        {
-          "t": "Ce matin, Félix montre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " maximum sans excuse."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand la cousine recopie le texte avec Max, et Félix explique très bien.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cousine recopie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " texte avec Max, et Félix explique très bien."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Félix prend le texto avec Max, et Félix explique très bien.",
-      "parts": [
-        {
-          "t": "À midi, quand Félix prend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " texto avec Max, et Félix explique très bien."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand la grand-mère regarde le thorax avec Max, et Félix explique très bien.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " grand-mère regarde "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " thorax avec Max, et Félix explique très bien."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand le papa joue avec le xylophone avec Max, et Félix explique très bien.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " papa joue avec "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " xylophone avec Max, et Félix explique très bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La professeure ouvre une expérience avec Félix.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " professeure ouvre une expérience avec Félix."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le professeur ouvre un extincteur sans excuse.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " professeur ouvre un extincteur sans excuse."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le voisin trouve le fax au maximum.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " voisin trouve "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " fax au maximum."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La boulangère photographie la galaxie avec Félix.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " boulangère photographie "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " galaxie avec Félix."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Alex partage le mixeur sans excuse.",
-      "parts": [
-        {
-          "t": "Ce soir, Alex partage "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " mixeur sans excuse."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Alex oublie le pixel au maximum.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, Alex oublie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pixel au maximum."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Max essuie le réflexe avec Félix.",
-      "parts": [
-        {
-          "t": "À midi, Max essuie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " réflexe avec Félix."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Félix regarde le saxophone sans excuse.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Félix regarde "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " saxophone sans excuse."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Félix attend le taxi sans excuse.",
-      "parts": [
-        {
-          "t": "Ce matin, Félix attend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " taxi sans excuse."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand la cuisinière cherche un axe avec Max, et Félix explique très bien.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cuisinière cherche un axe avec Max, et Félix explique très bien."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand le cousin marque le boxeur avec Max, et Félix explique très bien.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cousin marque "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " boxeur avec Max, et Félix explique très bien."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand la grand-mère longe une exposition avec Max, et Félix explique très bien.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " grand-mère longe une exposition avec Max, et Félix explique très bien."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand le cuisinier nettoie un extincteur avec Max, et Félix explique très bien.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cuisinier nettoie un extincteur avec Max, et Félix explique très bien."
-        }
-      ]
-    }
-  ],
-  "type12": [
-    {
-      "level": "a1",
-      "sentence": "Le voisin montre un axe sans excuse."
-    },
-    {
-      "level": "a1",
-      "sentence": "La boulangère gagne le boxeur avec Max."
-    },
-    {
-      "level": "a1",
-      "sentence": "Félix range une excuse bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La voisine visite une exposition avec Max."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Alexis emprunte le klaxon au maximum."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Félix cherche le luxe avec Max."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Alex voit le lynx avec Félix."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Félix montre le maximum sans excuse."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand la cousine recopie le texte avec Max, et Félix explique très bien."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Félix prend le texto avec Max, et Félix explique très bien."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand la grand-mère regarde le thorax avec Max, et Félix explique très bien."
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand le papa joue avec le xylophone avec Max, et Félix explique très bien."
-    }
-  ],
-  "type14": [
-    {
-      "level": "a1",
-      "sentence": "La professeure ouvre une expérience avec Félix."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le professeur ouvre un extincteur sans excuse."
-    },
-    {
-      "level": "a1",
-      "sentence": "Max utilise un extra bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le voisin trouve le fax au maximum."
-    },
-    {
-      "level": "a1",
-      "sentence": "La boulangère photographie la galaxie avec Félix."
-    },
-    {
-      "level": "a1",
-      "sentence": "Félix étudie un index bien."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Alex partage le mixeur sans excuse."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Alexis admire un oxygène au maximum."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Alex oublie le pixel au maximum."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Max essuie le réflexe avec Félix."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Félix regarde le saxophone sans excuse."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Félix attend le taxi sans excuse."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand la cuisinière cherche un axe avec Max, et Félix explique très bien."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand le cousin marque le boxeur avec Max, et Félix explique très bien."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Alexis trouve une excuse au maximum, parce que Max est très content."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand la grand-mère longe une exposition avec Max, et Félix explique très bien."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Félix corrige une expérience sans excuse, parce que Max est très content."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand le cuisinier nettoie un extincteur avec Max, et Félix explique très bien."
     }
   ]
 }

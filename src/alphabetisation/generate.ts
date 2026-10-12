@@ -1,5 +1,5 @@
 import { ALPHABET, WORDS_BY_INITIAL } from '@/francais/lecture-banks'
-import { tryGenerateSoutienBatch } from '@/francais/soutien/generate'
+import { soutienBankById } from '@/francais/soutien/banks'
 import type { SoutienGenerateOptions } from '@/francais/soutien/generate-options'
 import { LECTURE_WORD_ITEMS } from '@/francais/soutien/lecture-word-items'
 import { syllabifyFr } from '@/francais/soutien/syllabify-fr'
@@ -8,13 +8,10 @@ import type { Difficulty, MathItem } from '@/math/types'
 import { ALPHA_STORIES } from './data/stories'
 import { parseSyllBankId, syllableGridsFor } from './data/syllables'
 import { ALL_TOOL_WORDS, toolWordsForCategory } from './data/tool-words'
+import { generateAlphaLetterKind, type AlphaBatch } from './alpha-letter-generate'
 import { isAlphaLetterKind, parseAlphaType, type AlphaSpecialKindId } from './kinds'
 
-export type AlphaBatch = {
-  items: MathItem[]
-  instruction: string
-  preferredColumns?: number
-}
+export type { AlphaBatch }
 
 const STORIES = ALPHA_STORIES
 
@@ -387,34 +384,22 @@ export function tryGenerateAlphabetisationBatch(
   const parsed = parseAlphaType(exerciseType)
   if (!parsed) return null
 
-  // Leçons lettre / son : même générateur que Soutien FR.
-  if (isAlphaLetterKind(parsed.kind) && !parsed.bankId.startsWith('syll-') && !parsed.bankId.startsWith('mots-') && !parsed.bankId.startsWith('phrase-') && parsed.bankId !== 'alphabet') {
-    const soutien = tryGenerateSoutienBatch(
-      `soutien-${parsed.bankId}-${parsed.kind}`,
-      count,
-      rng,
-      difficulty,
-      options,
-    )
-    if (soutien) return soutien
+  // Leçons lettre / son (types 1–15).
+  if (
+    isAlphaLetterKind(parsed.kind) &&
+    !parsed.bankId.startsWith('syll-') &&
+    !parsed.bankId.startsWith('mots-') &&
+    !parsed.bankId.startsWith('phrase-') &&
+    parsed.bankId !== 'alphabet'
+  ) {
+    const bank = soutienBankById(parsed.bankId)
+    if (bank) {
+      return generateAlphaLetterKind(parsed.kind, bank, count, rng, difficulty, options)
+    }
   }
 
   if (!isAlphaLetterKind(parsed.kind)) {
     return genSpecial(parsed.bankId, parsed.kind, count, rng, difficulty)
-  }
-
-  // Kinds Soutien demandés sur un bank spécial → adaptation minimale.
-  if (parsed.kind === 'lire' && parsed.bankId.startsWith('phrase-')) {
-    return genLirePhrases(parsed.bankId)
-  }
-  if (parsed.kind === 'syllabes' || parsed.kind === 'lettres') {
-    return genLireGrille(parsed.bankId, count, rng, parsed.kind === 'syllabes')
-  }
-  if (parsed.kind === 'dictee') {
-    return genDictee(parsed.bankId, count, rng)
-  }
-  if (parsed.kind === 'ordre') {
-    return genOrdrePhrases(parsed.bankId, count, rng)
   }
 
   return genLireGrille(parsed.bankId, count, rng, false)

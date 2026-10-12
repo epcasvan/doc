@@ -102,9 +102,16 @@ const isSoutienEcouter =
   soutienKind === 'ecouter' ||
   soutienKind === 'ecouter-image' ||
   soutienKind === 'syllabe-son' ||
+  soutienKind === 'syllabe-son-qr' ||
   soutienKind === 'lettres-phrase'
 const isSoutienRelier = soutienKind === 'relier'
-const isSoutienLignes = soutienKind === 'lettres' || soutienKind === 'syllabes'
+const isSoutienLignes =
+  soutienKind === 'lettres' ||
+  soutienKind === 'lettres-maj' ||
+  soutienKind === 'lettres-min' ||
+  soutienKind === 'syllabes' ||
+  soutienKind === 'syllabes-cv' ||
+  soutienKind === 'syllabes-long'
 /** Types 4–11 / 15 : le champ compte des mots (pas des « questions » génériques). */
 const isSoutienMotsCount =
   soutienKind === 'relier' ||
@@ -112,16 +119,20 @@ const isSoutienMotsCount =
   soutienKind === 'ecouter' ||
   soutienKind === 'ecouter-image' ||
   soutienKind === 'syllabe-son' ||
+  soutienKind === 'syllabe-son-qr' ||
   soutienKind === 'lettres-phrase' ||
   soutienKind === 'determinants' ||
   soutienKind === 'dictee' ||
   soutienKind === 'associer-audio' ||
-  soutienKind === 'associer-image'
+  soutienKind === 'associer-image' ||
+  soutienKind === 'associer-syllabe' ||
+  soutienKind === 'syllabes-prononcer'
 /** Types 5 / 6 / 8 : grille 1–3 colonnes. */
 const isSoutienCols123 =
   soutienKind === 'completer' ||
   soutienKind === 'ecouter' ||
-  soutienKind === 'syllabe-son'
+  soutienKind === 'syllabe-son' ||
+  soutienKind === 'syllabe-son-qr'
 /** Type 7 : grille images 3–5 colonnes (fluide). */
 const isSoutienCols345 = soutienKind === 'ecouter-image'
 const soutienBank =

@@ -1,2443 +1,900 @@
 {
-  "type9": [
+  "son": "v",
+  "phrases": [
     {
-      "level": "a1",
-      "word": "avenue",
-      "sentence": "Vincent visite une avenue bien."
+      "word": "activité",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Victor a une activité avec Eva."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Vanessa vérifie l’activité de Victor avec Valentin vendredi.",
+            "Victor choisit une activité pour les vacances avec son voisin."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand Valérie a du temps, elle choisit une activité qui lui donne envie de vivre.",
+            "Vincent a trouvé une activité pour Victor, mais Vanessa et Eva préfèrent le vélo."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "avenue",
-      "sentence": "Ce matin, la voisine quitte une avenue avec Véronique."
+      "word": "adresse",
+      "variants": [
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Valérie écrit l’adresse de Vevey sur l’enveloppe violette."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "avenue",
-      "sentence": "À midi, quand le papa traverse une avenue devant, et Vincent est très content."
-    },
-    {
-      "level": "a1",
       "word": "avion",
-      "sentence": "La maman regarde un avion vite."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Victor voit un avion vers Venise.",
+            "Victor voit un avion vert."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Vanessa prend l’avion avec Victor et Valentin vendredi.",
+            "Vendredi, Valérie prend l’avion pour aller en vacances à Valence."
+          ]
+        },
+        {
+          "level": "b1",
+          "sentences": [
+            "Vincent arrive en avion, mais Victor et Vanessa viennent à vélo avec Eva."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand l’avion arrive à Venise, les voyageurs sortent vite et vont voir la ville."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "avion",
-      "sentence": "Ce soir, le cousin conduit un avion avec Vincent."
+      "word": "avocat",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Victor voit son avocat vendredi."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "L’avocat de Valérie prépare le dossier avec beaucoup de soin vendredi.",
+            "Vanessa voit l’avocat de Victor avec Valentin vendredi."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Vincent a vu l’avocat de Victor, mais Vanessa et Eva viennent à vélo vendredi."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "avion",
-      "sentence": "À midi, quand la copine prend un avion avec Véronique, parce que Véronique est contente."
+      "word": "avocate",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Victor voit son avocate vendredi."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Vanessa vérifie l’avocate de Victor avec Valentin vendredi."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand l’avocate arrive au tribunal, elle vérifie ses notes avec une grande vivacité.",
+            "Vincent a vu l’avocate de Victor, mais Vanessa et Eva viennent à vélo vendredi."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
-      "word": "cave",
-      "sentence": "Le grand-père nettoie la cave vite."
+      "word": "betterave",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Victor coupe la betterave vite.",
+            "Victor lave une betterave violette."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Vanessa cuit la betterave avec Victor et Valentin vendredi."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand Victor cuisine la betterave, il la lave bien et la sert avec du vinaigre.",
+            "Vincent vend de la betterave, mais Victor et Vanessa préfèrent le navet à Vevey."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "cave",
-      "sentence": "Avant le repas, le collègue descend dans la cave avec Véronique."
+      "word": "caravane",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Victor gare la caravane vite."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Vanessa vend la caravane de Victor avec Valentin vendredi."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand la caravane arrive, Victor vérifie la porte avant de visiter le village.",
+            "Vincent voit la caravane de Victor, mais Vanessa et Eva viennent à vélo vendredi."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "cave",
-      "sentence": "Quand la voisine descend dans la cave avec Véronique, parce que Véronique est contente."
+      "word": "cerf volant",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Victor lance un cerf volant."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Vanessa vérifie le cerf volant de Victor et de Valentin vendredi."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Vincent lance un cerf volant avec Victor, mais Vanessa et Eva préfèrent le vélo."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
+      "word": "cerf-volant",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Victor a un cerf-volant violet."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "cerveau",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Le cerveau travaille très vite.",
+            "Victor étudie le cerveau vite."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Valérie apprend que le cerveau travaille aussi pendant le sommeil.",
+            "Vanessa explique le cerveau à Victor et à Valentin vendredi."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Vincent lit un livre sur le cerveau, mais Victor et Vanessa préfèrent le vélo."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "Cette",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Cette activité va vous plaire."
+          ]
+        },
+        {
+          "level": "a2",
+          "sentences": [
+            "Cette avocate vend sa voiture avant de partir en vacances."
+          ]
+        }
+      ]
+    },
+    {
       "word": "cheval",
-      "sentence": "Le jardinier nourrit le cheval vite."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Victor voit le cheval de Valérie.",
+            "Victor voit un cheval vif."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Vanessa soigne le cheval de Victor avec Valentin vendredi."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand le cheval galope vite dans la vallée, Victor sent le vent sur son visage.",
+            "Vincent vend un cheval, mais Victor et Vanessa préfèrent garder leur vélo vendredi."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "cheval",
-      "sentence": "Après le cours, la collègue observe le cheval devant."
+      "word": "cheveux",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Victor lave ses cheveux vite."
+          ]
+        },
+        {
+          "level": "a1",
+          "number": "plur",
+          "sentences": [
+            "Valérie a les cheveux longs."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "plur",
+          "sentences": [
+            "Vanessa coiffe les cheveux de Victor avec Valentin vendredi."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "plur",
+          "sentences": [
+            "Vincent a les cheveux très longs, mais Victor et Vanessa préfèrent les voir courts."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "cheval",
-      "sentence": "À midi, quand Olivier attrape le cheval vite, parce que Véronique est contente."
-    },
-    {
-      "level": "a1",
-      "word": "cheveu",
-      "sentence": "Eva regarde un cheveu bien."
-    },
-    {
-      "level": "a2",
-      "word": "cheveu",
-      "sentence": "Avant le repas, un ami soigne un cheveu avec Véronique."
-    },
-    {
-      "level": "b1",
-      "word": "cheveu",
-      "sentence": "À midi, quand la maîtresse lave un cheveu devant, et Vincent est très content."
-    },
-    {
-      "level": "a1",
       "word": "chèvre",
-      "sentence": "Le professeur sauve la chèvre."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "plur",
+          "sentences": [
+            "Des chèvres marchent dans le pré."
+          ]
+        },
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "La chèvre est dans le pré.",
+            "Victor voit la chèvre de Valérie.",
+            "Victor voit une chèvre vive."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "La chèvre de Valérie mange de l’herbe verte près du voisin.",
+            "La chèvre et le chevreau sont dans le pré.",
+            "Vanessa nourrit la chèvre de Victor avec Valentin vendredi."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand la chèvre s’échappe, Victor court vers le pré avec une vieille corde.",
+            "Vincent vend une chèvre, mais Victor et Vanessa préfèrent garder la vache vendredi."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "chèvre",
-      "sentence": "Ce matin, la sœur regarde la chèvre avec Vincent."
+      "word": "chiffon",
+      "variants": [
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Victor nettoie son clavier avec un chiffon avant de travailler vendredi."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "chèvre",
-      "sentence": "À midi, quand la tante nourrit la chèvre avec Véronique, parce que Véronique est contente."
+      "word": "clavier",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Valérie tape sur le clavier.",
+            "Victor tape sur le clavier."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Vanessa nettoie le clavier de Victor avec Valentin vendredi."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand le clavier ne fonctionne plus, Valérie en achète un nouveau dès vendredi.",
+            "Vincent a un clavier neuf, mais Victor et Vanessa préfèrent le vieux clavier vert."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
+      "word": "client",
+      "variants": [
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand le client vient voir l’avocat, il apporte ses papiers pour éviter de revenir."
+          ]
+        }
+      ]
+    },
+    {
       "word": "cravate",
-      "sentence": "Le bébé enfile la cravate vite."
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Victor met sa cravate verte."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Valérie offre une cravate verte à son voisin pour son anniversaire.",
+            "Vanessa choisit la cravate de Victor avec Valentin vendredi."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Vincent a une cravate verte, mais Victor et Vanessa préfèrent la vieille cravate."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "cravate",
-      "sentence": "Après le cours, la directrice range la cravate avec Véronique."
+      "word": "crevette",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Victor mange une crevette avec du riz.",
+            "Victor mange une crevette vive."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Vanessa cuit la crevette de Victor avec Valentin vendredi."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Vincent vend une crevette fraîche, mais Victor et Vanessa préfèrent le poisson vendredi."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "cravate",
-      "sentence": "À midi, quand le musicien choisit la cravate avec Vincent, et Vincent est très content."
+      "word": "crevettes",
+      "variants": [
+        {
+          "level": "a2",
+          "number": "plur",
+          "sentences": [
+            "Valérie sert des crevettes avec une salade verte et du vinaigre."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "plur",
+          "sentences": [
+            "Quand Victor achète des crevettes, il vérifie qu’elles sont fraîches avant de les servir."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
+      "word": "entretien",
+      "variants": [
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand Victor va à un entretien, il choisit une cravate vive pour faire bonne impression."
+          ]
+        }
+      ]
+    },
+    {
       "word": "enveloppe",
-      "sentence": "La musicienne utilise une enveloppe vite."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Victor ouvre l’enveloppe de Vanessa.",
+            "Victor ouvre une enveloppe verte."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Vanessa envoie l’enveloppe de Victor avec Valentin vendredi."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand Victor reçoit une enveloppe, il vérifie bien le nom avant de l’ouvrir.",
+            "Vincent a vu l’enveloppe verte, mais Victor et Vanessa préfèrent l’ouvrir vendredi."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "enveloppe",
-      "sentence": "À midi, Vincent range une enveloppe avec soin."
+      "word": "goyave",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Victor mange une goyave verte."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Valérie achète une goyave au marché de Vevey avec ses voisins.",
+            "Vanessa coupe la goyave de Victor avec Valentin vendredi."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand Victor goûte une goyave, il trouve que le goût est vraiment nouveau.",
+            "Vincent vend une goyave verte, mais Victor et Vanessa préfèrent la vanille vendredi."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "enveloppe",
-      "sentence": "À midi, quand la voisine oublie une enveloppe vite, parce que Véronique est contente."
-    },
-    {
-      "level": "a1",
       "word": "hiver",
-      "sentence": "Le garçon choisit un hiver vite."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Victor voit la neige en hiver."
+          ]
+        },
+        {
+          "level": "a2",
+          "sentences": [
+            "Vanessa vit en Valais avec Victor et Valentin en hiver."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Vincent aime l’hiver, mais Victor et Vanessa préfèrent l’été, avec leur vélo vert."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "hiver",
-      "sentence": "Après le cours, la maman aime un hiver avec Véronique."
+      "word": "hydravion",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Victor voit un hydravion vert."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Vanessa prend l’hydravion de Victor avec Valentin vendredi."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Vincent vole en hydravion avec Eva, mais Victor et Vanessa préfèrent le vélo vendredi."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "hiver",
-      "sentence": "Ce matin, quand Vincent parle avec un hiver, parce que Véronique est contente."
+      "word": "interview",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Victor passe une interview vendredi."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Vanessa prépare l’interview de Victor avec Valentin vendredi."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Vincent a vu l’interview de Victor, mais Vanessa et Eva préfèrent la vidéo vendredi."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
+      "word": "javelot",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Victor lance le javelot vite."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Vanessa vérifie le javelot de Victor avec Valentin vendredi."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Vincent lance le javelot très vite, mais Victor et Vanessa préfèrent le vélo vendredi."
+          ]
+        }
+      ]
+    },
+    {
       "word": "lavabo",
-      "sentence": "La cousine ferme le lavabo vite."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Victor lave le lavabo vite."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Vanessa nettoie le lavabo de Victor avec Valentin vendredi."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Vincent a un lavabo neuf, mais Victor et Vanessa préfèrent le vieux lavabo vert."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "lavabo",
-      "sentence": "Avant le repas, le grand-père nettoie le lavabo avec Vincent."
+      "word": "lavande",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Victor sent la lavande violette."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Vanessa cueille la lavande de Victor avec Valentin vendredi."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Vincent vend de la lavande, mais Victor et Vanessa préfèrent la vanille vendredi soir."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "lavabo",
-      "sentence": "À midi, quand le boulanger quitte le lavabo avec Véronique, parce que Véronique est contente."
+      "word": "lave vaisselle",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Victor ouvre le lave vaisselle."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Vanessa vide le lave vaisselle de Victor avec Valentin vendredi."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Vincent a un lave vaisselle neuf, mais Victor et Vanessa préfèrent laver à la main."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
       "word": "livre",
-      "sentence": "La boulangère emprunte le livre vite."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Victor lit un livre vert."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alun regarde un livre sur la vie d’un ours brun.",
+            "Vanessa vend le livre de Victor avec Valentin vendredi."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Vincent a un livre neuf, mais Victor et Vanessa préfèrent le vieux livre vert."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "livre",
-      "sentence": "À midi, Olivier enveloppe le livre avec Véronique."
+      "word": "Quand",
+      "variants": [
+        {
+          "level": "b1",
+          "sentences": [
+            "Quand Victor fait du vélo, son cerveau reçoit plus d’oxygène et se réveille."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "livre",
-      "sentence": "À midi, quand la collègue prête le livre avec Vincent, et Vincent est très content."
+      "word": "radio",
+      "variants": [
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand Valérie sèche ses cheveux, elle écoute la radio avec une vive attention."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
-      "word": "rêve",
-      "sentence": "Le directeur vit le rêve."
+      "word": "salade",
+      "variants": [
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Valérie sert une salade de betterave avec du vinaigre."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "rêve",
-      "sentence": "Ce soir, Eva raconte le rêve avec soin."
+      "word": "vacances",
+      "variants": [
+        {
+          "level": "a2",
+          "number": "plur",
+          "sentences": [
+            "Valérie voyage en caravane avec ses voisins pendant les vacances de février."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "rêve",
-      "sentence": "À midi, quand la collègue vit le rêve avec Véronique, parce que Véronique est contente."
+      "word": "Valérie",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Valérie est avocate à Vevey."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Papa a acheté un beau vélo violet à Valérie."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
-      "word": "vache",
-      "sentence": "Une amie regarde la vache vite."
+      "word": "vallée",
+      "variants": [
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Valérie monte son cheval chaque vendredi dans la vallée avec son voisin."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "vache",
-      "sentence": "À midi, le professeur nourrit la vache avec Véronique."
-    },
-    {
-      "level": "b1",
-      "word": "vache",
-      "sentence": "À midi, quand la sœur observe la vache devant, et Vincent est très content."
-    },
-    {
-      "level": "a1",
-      "word": "vase",
-      "sentence": "Le copain pose le vase vite."
-    },
-    {
-      "level": "a2",
-      "word": "vase",
-      "sentence": "Ce soir, la sœur pose le vase avec Véronique."
-    },
-    {
-      "level": "b1",
-      "word": "vase",
-      "sentence": "À midi, quand une amie pose le vase avec Véronique, parce que Véronique est contente."
-    },
-    {
-      "level": "a1",
       "word": "vendredi",
-      "sentence": "Le cuisinier choisit le vendredi vite."
+      "variants": [
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Victor lave ses cheveux avec du shampoing le vendredi."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "vendredi",
-      "sentence": "Avant le repas, la musicienne aime le vendredi vite."
-    },
-    {
-      "level": "b1",
-      "word": "vendredi",
-      "sentence": "À midi, quand Vincent prépare le vendredi avec Véronique, et Vincent est très content."
-    },
-    {
-      "level": "a1",
       "word": "vent",
-      "sentence": "Véronique plante le vent bien."
+      "variants": [
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand le vent se lève, Victor court vite pour faire voler son cerf-volant."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "vent",
-      "sentence": "Ce soir, le cuisinier observe le vent avec Véronique."
+      "word": "Victor",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Victor est avocat à Vevey.",
+            "Victor met sa cravate violette.",
+            "Victor vend sa caravane en avril."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Maman a offert une voiture mauve à Victor."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "vent",
-      "sentence": "À midi, quand la maman voit le vent vite, parce que Véronique est contente."
-    },
-    {
-      "level": "a1",
-      "word": "verre",
-      "sentence": "Le maître essuie le verre vite."
-    },
-    {
-      "level": "a2",
-      "word": "verre",
-      "sentence": "Avant le repas, la maman essuie le verre devant."
-    },
-    {
-      "level": "b1",
-      "word": "verre",
-      "sentence": "À midi, quand Véronique essuie le verre devant, et Vincent est très content."
-    },
-    {
-      "level": "a1",
-      "word": "vie",
-      "sentence": "La grand-mère invite la vie."
-    },
-    {
-      "level": "a2",
-      "word": "vie",
-      "sentence": "À midi, la boulangère salue la vie avec Vincent."
-    },
-    {
-      "level": "b1",
-      "word": "vie",
-      "sentence": "À midi, quand le jardinier suit la vie avec Véronique, parce que Véronique est contente."
-    },
-    {
-      "level": "a1",
-      "word": "vigne",
-      "sentence": "La jardinière dessine la vigne vite."
-    },
-    {
-      "level": "a2",
-      "word": "vigne",
-      "sentence": "Après le cours, le directeur voit la vigne vite."
-    },
-    {
-      "level": "b1",
-      "word": "vigne",
-      "sentence": "À midi, quand Eva observe la vigne avec Vincent, et Vincent est très content."
-    },
-    {
-      "level": "a1",
       "word": "ville",
-      "sentence": "Le voisin conduit vers la ville."
-    },
-    {
-      "level": "a2",
-      "word": "ville",
-      "sentence": "Avant le repas, une amie circule dans la ville devant."
-    },
-    {
-      "level": "b1",
-      "word": "ville",
-      "sentence": "Ce matin, quand Eva conduit vers la ville, parce que Véronique est contente."
-    },
-    {
-      "level": "a1",
-      "word": "voiture",
-      "sentence": "La professeure prend la voiture vite."
-    },
-    {
-      "level": "a2",
-      "word": "voiture",
-      "sentence": "Ce matin, le copain lave la voiture avec Véronique."
-    },
-    {
-      "level": "b1",
-      "word": "voiture",
-      "sentence": "À midi, quand une amie conduit la voiture avec Véronique, parce que Véronique est contente."
-    },
-    {
-      "level": "a1",
-      "word": "volant",
-      "sentence": "Le médecin prend le volant vite."
-    },
-    {
-      "level": "a2",
-      "word": "volant",
-      "sentence": "Ce soir, le cuisinier vend le volant avec Vincent."
-    },
-    {
-      "level": "b1",
-      "word": "volant",
-      "sentence": "À midi, quand la musicienne répare le volant avec Véronique, parce que Véronique est contente."
-    },
-    {
-      "level": "a1",
-      "word": "voleur",
-      "sentence": "Le collègue appelle le voleur vite."
-    },
-    {
-      "level": "a2",
-      "word": "voleur",
-      "sentence": "À midi, Véronique embrasse le voleur avec soin."
-    },
-    {
-      "level": "b1",
-      "word": "voleur",
-      "sentence": "À midi, quand le garçon remercie le voleur avec Vincent, et Vincent est très content."
-    },
-    {
-      "level": "a1",
-      "word": "voyage",
-      "sentence": "La fille embarque pour le voyage vite."
-    },
-    {
-      "level": "a2",
-      "word": "voyage",
-      "sentence": "Après le cours, le maître rêve du voyage devant."
-    },
-    {
-      "level": "b1",
-      "word": "voyage",
-      "sentence": "Quand le garçon embarque pour le voyage avec Véronique, parce que Véronique est contente."
-    },
-    {
-      "level": "a1",
-      "word": "vélo",
-      "sentence": "Le frère a le vélo vite."
-    },
-    {
-      "level": "a2",
-      "word": "vélo",
-      "sentence": "Avant le repas, la grand-mère monte sur le vélo avec Véronique."
-    },
-    {
-      "level": "b1",
-      "word": "vélo",
-      "sentence": "À midi, quand la boulangère veut le vélo devant, et Vincent est très content."
-    },
-    {
-      "level": "a1",
-      "word": "élève",
-      "sentence": "Le facteur aide un élève vite."
-    },
-    {
-      "level": "a2",
-      "word": "élève",
-      "sentence": "Après le cours, la boulangère aide un élève avec Véronique."
-    },
-    {
-      "level": "b1",
-      "word": "élève",
-      "sentence": "À midi, quand le frère aide un élève avec Véronique, parce que Véronique est contente."
-    }
-  ],
-  "type10": [
-    {
-      "level": "a2",
-      "sentence": "Ce matin, la voisine quitte une avenue avec Véronique.",
-      "parts": [
+      "variants": [
         {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " voisine quitte une avenue avec Véronique."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand le papa traverse une avenue devant, et Vincent est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " papa traverse une avenue devant, et Vincent est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La maman regarde un avion vite.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " maman regarde un avion vite."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le cousin conduit un avion avec Vincent.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cousin conduit un avion avec Vincent."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand la copine prend un avion avec Véronique, parce que Véronique est contente.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " copine prend un avion avec Véronique, parce que Véronique est contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le grand-père nettoie la cave vite.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " grand-père nettoie "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cave vite."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le collègue descend dans la cave avec Véronique.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " collègue descend dans "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cave avec Véronique."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand la voisine descend dans la cave avec Véronique, parce que Véronique est contente.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " voisine descend dans "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cave avec Véronique, parce que Véronique est contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le jardinier nourrit le cheval vite.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " jardinier nourrit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cheval vite."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la collègue observe le cheval devant.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " collègue observe "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cheval devant."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Olivier attrape le cheval vite, parce que Véronique est contente.",
-      "parts": [
-        {
-          "t": "À midi, quand Olivier attrape "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cheval vite, parce que Véronique est contente."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, un ami soigne un cheveu avec Véronique.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, un ami soigne un cheveu avec Véronique."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand la maîtresse lave un cheveu devant, et Vincent est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maîtresse lave un cheveu devant, et Vincent est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le professeur sauve la chèvre.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " professeur sauve "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " chèvre."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, la sœur regarde la chèvre avec Vincent.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " sœur regarde "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " chèvre avec Vincent."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand la tante nourrit la chèvre avec Véronique, parce que Véronique est contente.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " tante nourrit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " chèvre avec Véronique, parce que Véronique est contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le bébé enfile la cravate vite.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " bébé enfile "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cravate vite."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la directrice range la cravate avec Véronique.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " directrice range "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cravate avec Véronique."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand le musicien choisit la cravate avec Vincent, et Vincent est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " musicien choisit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cravate avec Vincent, et Vincent est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La musicienne utilise une enveloppe vite.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " musicienne utilise une enveloppe vite."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand la voisine oublie une enveloppe vite, parce que Véronique est contente.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " voisine oublie une enveloppe vite, parce que Véronique est contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le garçon choisit un hiver vite.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " garçon choisit un hiver vite."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la maman aime un hiver avec Véronique.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maman aime un hiver avec Véronique."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La cousine ferme le lavabo vite.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " cousine ferme "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " lavabo vite."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le grand-père nettoie le lavabo avec Vincent.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " grand-père nettoie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " lavabo avec Vincent."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand le boulanger quitte le lavabo avec Véronique, parce que Véronique est contente.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " boulanger quitte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " lavabo avec Véronique, parce que Véronique est contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La boulangère emprunte le livre vite.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " boulangère emprunte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " livre vite."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Olivier enveloppe le livre avec Véronique.",
-      "parts": [
-        {
-          "t": "À midi, Olivier enveloppe "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " livre avec Véronique."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand la collègue prête le livre avec Vincent, et Vincent est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " collègue prête "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " livre avec Vincent, et Vincent est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le directeur vit le rêve.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " directeur vit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " rêve."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Eva raconte le rêve avec soin.",
-      "parts": [
-        {
-          "t": "Ce soir, Eva raconte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " rêve avec soin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand la collègue vit le rêve avec Véronique, parce que Véronique est contente.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " collègue vit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " rêve avec Véronique, parce que Véronique est contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Une amie regarde la vache vite.",
-      "parts": [
-        {
-          "t": "Une amie regarde "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " vache vite."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le professeur nourrit la vache avec Véronique.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " professeur nourrit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " vache avec Véronique."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand la sœur observe la vache devant, et Vincent est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " sœur observe "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " vache devant, et Vincent est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le copain pose le vase vite.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " copain pose "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " vase vite."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, la sœur pose le vase avec Véronique.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " sœur pose "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " vase avec Véronique."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand une amie pose le vase avec Véronique, parce que Véronique est contente.",
-      "parts": [
-        {
-          "t": "À midi, quand une amie pose "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " vase avec Véronique, parce que Véronique est contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le cuisinier choisit le vendredi vite.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " cuisinier choisit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " vendredi vite."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la musicienne aime le vendredi vite.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " musicienne aime "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " vendredi vite."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Vincent prépare le vendredi avec Véronique, et Vincent est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Vincent prépare "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " vendredi avec Véronique, et Vincent est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Véronique plante le vent bien.",
-      "parts": [
-        {
-          "t": "Véronique plante "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " vent bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le cuisinier observe le vent avec Véronique.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cuisinier observe "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " vent avec Véronique."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand la maman voit le vent vite, parce que Véronique est contente.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maman voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " vent vite, parce que Véronique est contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le maître essuie le verre vite.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " maître essuie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " verre vite."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la maman essuie le verre devant.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maman essuie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " verre devant."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Véronique essuie le verre devant, et Vincent est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Véronique essuie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " verre devant, et Vincent est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La grand-mère invite la vie.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " grand-mère invite "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " vie."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, la boulangère salue la vie avec Vincent.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boulangère salue "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " vie avec Vincent."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand le jardinier suit la vie avec Véronique, parce que Véronique est contente.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardinier suit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " vie avec Véronique, parce que Véronique est contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La jardinière dessine la vigne vite.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " jardinière dessine "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " vigne vite."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le directeur voit la vigne vite.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " directeur voit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " vigne vite."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Eva observe la vigne avec Vincent, et Vincent est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Eva observe "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " vigne avec Vincent, et Vincent est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le voisin conduit vers la ville.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " voisin conduit vers "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " ville."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, une amie circule dans la ville devant.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, une amie circule dans "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " ville devant."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Eva conduit vers la ville, parce que Véronique est contente.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Eva conduit vers "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " ville, parce que Véronique est contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La professeure prend la voiture vite.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " professeure prend "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " voiture vite."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le copain lave la voiture avec Véronique.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " copain lave "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " voiture avec Véronique."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand une amie conduit la voiture avec Véronique, parce que Véronique est contente.",
-      "parts": [
-        {
-          "t": "À midi, quand une amie conduit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " voiture avec Véronique, parce que Véronique est contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le médecin prend le volant vite.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " médecin prend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " volant vite."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le cuisinier vend le volant avec Vincent.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cuisinier vend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " volant avec Vincent."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand la musicienne répare le volant avec Véronique, parce que Véronique est contente.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " musicienne répare "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " volant avec Véronique, parce que Véronique est contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le collègue appelle le voleur vite.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " collègue appelle "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " voleur vite."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Véronique embrasse le voleur avec soin.",
-      "parts": [
-        {
-          "t": "À midi, Véronique embrasse "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " voleur avec soin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand le garçon remercie le voleur avec Vincent, et Vincent est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garçon remercie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " voleur avec Vincent, et Vincent est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La fille embarque pour le voyage vite.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " fille embarque pour "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " voyage vite."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le maître rêve du voyage devant.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " maître rêve du voyage devant."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand le garçon embarque pour le voyage avec Véronique, parce que Véronique est contente.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garçon embarque pour "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " voyage avec Véronique, parce que Véronique est contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le frère a le vélo vite.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " frère a "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " vélo vite."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la grand-mère monte sur le vélo avec Véronique.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " grand-mère monte sur "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " vélo avec Véronique."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand la boulangère veut le vélo devant, et Vincent est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boulangère veut "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " vélo devant, et Vincent est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le facteur aide un élève vite.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " facteur aide un élève vite."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la boulangère aide un élève avec Véronique.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boulangère aide un élève avec Véronique."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand le frère aide un élève avec Véronique, parce que Véronique est contente.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " frère aide un élève avec Véronique, parce que Véronique est contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La tante longe une avenue vite.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " tante longe une avenue vite."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le maître répare un avion vite.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " maître répare un avion vite."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le cuisinier nettoie la cave vite.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " cuisinier nettoie "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cave vite."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La professeure caresse le cheval vite.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " professeure caresse "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cheval vite."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la copine rapporte le livre avec Vincent.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " copine rapporte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " livre avec Vincent."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la tante raconte le rêve avec Vincent.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " tante raconte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " rêve avec Vincent."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le jardinier sauve la vache vite.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardinier sauve "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " vache vite."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le cousin pose le vase vite.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cousin pose "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " vase vite."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand la maman prend la voiture avec Véronique, parce que Véronique est contente.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maman prend "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " voiture avec Véronique, parce que Véronique est contente."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Véronique attend le volant avec Vincent, et Vincent est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Véronique attend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " volant avec Vincent, et Vincent est très content."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand la directrice aide le voleur avec Véronique, parce que Véronique est contente.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " directrice aide "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " voleur avec Véronique, parce que Véronique est contente."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand le frère rêve du voyage devant, et Vincent est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " frère rêve du voyage devant, et Vincent est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le facteur touche un cheveu vite.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " facteur touche un cheveu vite."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le maître soigne la chèvre vite.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " maître soigne "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " chèvre vite."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le médecin porte la cravate vite.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " médecin porte "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cravate vite."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La factrice prend une enveloppe vite.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " factrice prend une enveloppe vite."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La cousine visite le lavabo.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " cousine visite "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " lavabo."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le copain parle avec le vendredi vite.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " copain parle avec "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " vendredi vite."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, la sœur photographie le vent avec Vincent.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " sœur photographie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " vent avec Vincent."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, la cousine essuie le verre avec Véronique.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cousine essuie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " verre avec Véronique."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Vincent aide la vie avec Véronique.",
-      "parts": [
-        {
-          "t": "À midi, Vincent aide "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " vie avec Véronique."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le papa plante la vigne avec Vincent.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " papa plante "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " vigne avec Vincent."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, la maîtresse circule dans la ville avec Vincent.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maîtresse circule dans "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " ville avec Vincent."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand le boulanger vend le vélo avec Véronique, parce que Véronique est contente.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " boulanger vend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " vélo avec Véronique, parce que Véronique est contente."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand le papa aide un élève avec Véronique, parce que Véronique est contente.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " papa aide un élève avec Véronique, parce que Véronique est contente."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand le professeur voit une avenue avec Véronique, parce que Véronique est contente.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " professeur voit une avenue avec Véronique, parce que Véronique est contente."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand le garçon nettoie la cave avec Vincent, et Vincent est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garçon nettoie "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cave avec Vincent, et Vincent est très content."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand le papa regarde le cheval avec Vincent, et Vincent est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " papa regarde "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cheval avec Vincent, et Vincent est très content."
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Valérie fait voler son cerf-volant devant la ville avec beaucoup de vent."
+          ]
         }
       ]
-    }
-  ],
-  "type12": [
-    {
-      "level": "a1",
-      "sentence": "La tante longe une avenue vite."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le maître répare un avion vite."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le cuisinier nettoie la cave vite."
-    },
-    {
-      "level": "a1",
-      "sentence": "La professeure caresse le cheval vite."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la copine rapporte le livre avec Vincent."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la tante raconte le rêve avec Vincent."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le jardinier sauve la vache vite."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le cousin pose le vase vite."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand la maman prend la voiture avec Véronique, parce que Véronique est contente."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Véronique attend le volant avec Vincent, et Vincent est très content."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand la directrice aide le voleur avec Véronique, parce que Véronique est contente."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand le frère rêve du voyage devant, et Vincent est très content."
-    }
-  ],
-  "type14": [
-    {
-      "level": "a1",
-      "sentence": "Le facteur touche un cheveu vite."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le maître soigne la chèvre vite."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le médecin porte la cravate vite."
-    },
-    {
-      "level": "a1",
-      "sentence": "La factrice prend une enveloppe vite."
-    },
-    {
-      "level": "a1",
-      "sentence": "Eva attend un hiver bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La cousine visite le lavabo."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le copain parle avec le vendredi vite."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, la sœur photographie le vent avec Vincent."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, la cousine essuie le verre avec Véronique."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Vincent aide la vie avec Véronique."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le papa plante la vigne avec Vincent."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, la maîtresse circule dans la ville avec Vincent."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand le boulanger vend le vélo avec Véronique, parce que Véronique est contente."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand le papa aide un élève avec Véronique, parce que Véronique est contente."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand le professeur voit une avenue avec Véronique, parce que Véronique est contente."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Eva attend un avion avec Vincent, et Vincent est très content."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand le garçon nettoie la cave avec Vincent, et Vincent est très content."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand le papa regarde le cheval avec Vincent, et Vincent est très content."
     }
   ]
 }

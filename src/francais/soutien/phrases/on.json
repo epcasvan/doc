@@ -1,3095 +1,856 @@
 {
-  "type9": [
+  "son": "on",
+  "phrases": [
     {
-      "level": "a1",
+      "word": "accordéon",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Léon joue de l’accordéon avec Simon.",
+            "Léon joue de l’accordéon ce soir."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Raymond joue de l’accordéon pour Léon, Simon et Gaston.",
+            "Simon joue de l’accordéon dans le salon avec Léon et Manon."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Gaston joue de l’accordéon, mais Simon et Léon pensent que Raymond a raison.",
+            "Quand Raymond joue de l’accordéon, on fait un rond et on chante une chanson."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "astronaute",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Léon est astronaute avec Simon."
+          ]
+        },
+        {
+          "level": "a2",
+          "sentences": [
+            "Raymond est astronaute pour Léon, Simon et Gaston."
+          ]
+        },
+        {
+          "level": "b1",
+          "sentences": [
+            "Gaston est astronaute, mais Simon et Léon pensent que Raymond a toujours raison."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "atome",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Léon étudie l’atome avec Simon."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Raymond étudie l’atome pour Léon, Simon et Gaston."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Gaston étudie l’atome, mais Simon et Léon pensent que Raymond a raison."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "automne",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Léon aime l’automne avec Simon."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Raymond aime l’automne pour Léon, Simon et Gaston."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Gaston aime l’automne, mais Simon et Léon pensent que Raymond a raison."
+          ]
+        }
+      ]
+    },
+    {
       "word": "avion",
-      "sentence": "Simon prend un avion bien."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Léon prend l’avion avec Simon.",
+            "Simon prend l’avion ce soir."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Léon montre un avion à Manon près du pont.",
+            "Mon ami a construit son avion avec du carton.",
+            "Raymond prend l’avion pour Léon, Simon et Gaston."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Gaston prend l’avion, mais Simon et Léon pensent que Raymond a raison.",
+            "Quand l’avion décolle, Raymond ferme les yeux et Gaston compte onze longues secondes."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "avion",
-      "sentence": "À midi, la voisine regarde un avion selon mon oncle."
-    },
-    {
-      "level": "b1",
-      "word": "avion",
-      "sentence": "Quand le maître répare un avion dans le salon, et Simon est très content."
-    },
-    {
-      "level": "a1",
-      "word": "balcon",
-      "sentence": "La copine range le balcon avec Manon."
-    },
-    {
-      "level": "a2",
-      "word": "balcon",
-      "sentence": "À midi, Simon ferme le balcon selon mon oncle."
-    },
-    {
-      "level": "b1",
-      "word": "balcon",
-      "sentence": "À midi, quand la copine quitte le balcon avec Manon, parce que Manon est contente."
-    },
-    {
-      "level": "a1",
       "word": "ballon",
-      "sentence": "Un ami attrape le ballon avec Manon."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Léon lance le ballon avec Simon.",
+            "Simon lance le ballon rond."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Léon tape dans le ballon et Manon le rattrape près du pont.",
+            "Raymond lance le ballon pour Léon, Simon et Gaston."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Gaston lance le ballon, mais Simon et Léon pensent que Raymond a raison.",
+            "Quand le ballon tombe dans le salon, Raymond le ramasse et Simon dit non."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "ballon",
-      "sentence": "À midi, le boulanger a le ballon selon mon oncle."
+      "word": "biberon",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Benoit boit son biberon.",
+            "Léon donne le biberon avec Simon.",
+            "Manon donne le biberon à Léon."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Raymond donne le biberon pour Léon, Simon et Gaston.",
+            "Simon prépare le biberon de Léon et le pose sur le comptoir."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Gaston donne le biberon, mais Simon et Léon pensent que Raymond a raison.",
+            "Quand le biberon est trop chaud, Raymond attend, Manon vérifie et Simon compte."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "ballon",
-      "sentence": "À midi, quand la cuisinière lance le ballon avec Simon, et Simon est très content."
+      "word": "blouson",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Léon met un blouson avec Simon."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Mets ton blouson noir et ton pantalon à rayures.",
+            "Raymond met un blouson pour Léon, Simon et Gaston."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Gaston met un blouson, mais Simon et Léon pensent que Raymond a raison."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
+      "word": "boisson",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Léon boit une boisson avec Simon."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Léon sert une boisson fraîche à Manon dans le salon.",
+            "Raymond boit une boisson pour Léon, Simon et Gaston."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Gaston boit une boisson, mais Simon et Léon pensent que Raymond a raison.",
+            "Quand Raymond prépare une boisson, Simon compte les glaçons et Manon goûte avec attention."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "boîte",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Mes bonbons sont dans la boîte noire."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand Raymond ouvre la boîte, il compte les bonbons et Manon dit onze."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "bon",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Léon est bon avec Simon."
+          ]
+        },
+        {
+          "level": "a2",
+          "sentences": [
+            "Raymond est bon pour Léon, Simon et Gaston."
+          ]
+        },
+        {
+          "level": "b1",
+          "sentences": [
+            "Gaston est bon, mais Simon et Léon pensent que Raymond a toujours raison."
+          ]
+        }
+      ]
+    },
+    {
       "word": "bonbon",
-      "sentence": "Le jardinier achète le bonbon."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Léon mange un bonbon avec Simon.",
+            "Léon mange un bonbon rond.",
+            "Mes bonbons sont dans la boîte noire."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Manon cache un bonbon dans le salon pour Simon.",
+            "Raymond mange un bonbon pour Léon, Simon et Gaston."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Gaston mange un bonbon, mais Simon et Léon pensent que Raymond a raison."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "bonbon",
-      "sentence": "Après le cours, la collègue prépare le bonbon dans le salon."
-    },
-    {
-      "level": "b1",
-      "word": "bonbon",
-      "sentence": "À midi, quand Gaston choisit le bonbon selon mon oncle, parce que Manon est contente."
-    },
-    {
-      "level": "a1",
       "word": "bonjour",
-      "sentence": "Yvonne remercie le bonjour bien."
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Léon dit bonjour avec Simon."
+          ]
+        },
+        {
+          "level": "a2",
+          "sentences": [
+            "Raymond dit bonjour pour Léon, Simon et Gaston."
+          ]
+        },
+        {
+          "level": "b1",
+          "sentences": [
+            "Gaston dit bonjour, mais Simon et Léon pensent que Raymond a toujours raison."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "bonjour",
-      "sentence": "Ce soir, le frère embrasse le bonjour selon mon oncle."
+      "word": "bonne",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Léon a une bonne idée avec Simon.",
+            "Simon boit une bonne boisson."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Raymond a une bonne idée pour Léon, Simon et Gaston."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Gaston a une bonne idée, mais Simon et Léon pensent que Raymond a raison."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "bonjour",
-      "sentence": "Ce matin, quand la professeure console le bonjour, et Simon est très content."
+      "word": "bonnet",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Léon porte un bonnet avec Simon."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Raymond porte un bonnet pour Léon, Simon et Gaston."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Gaston porte un bonnet, mais Simon et Léon pensent que Raymond a raison."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
+      "word": "bouchon",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Léon ferme le bouchon avec Simon."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Le chat de Charles joue avec un bouchon attaché à un fil.",
+            "Le chat joue avec un bouchon puis il se couche sur le coussin.",
+            "Raymond ferme le bouchon pour Léon, Simon et Gaston."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Gaston ferme le bouchon, mais Simon et Léon pensent que Raymond a raison."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "bourdon",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Léon voit un bourdon avec Simon."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Raymond voit un bourdon pour Léon, Simon et Gaston."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Gaston voit un bourdon, mais Simon et Léon pensent que Raymond a raison."
+          ]
+        }
+      ]
+    },
+    {
       "word": "bouton",
-      "sentence": "La tante coud le bouton avec Manon."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Léon presse le bouton avec Simon."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Le bébé a la rougeole, il pleure, il gratte ses boutons.",
+            "Raymond presse le bouton pour Léon, Simon et Gaston."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Gaston presse le bouton, mais Simon et Léon pensent que Raymond a raison."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "bouton",
-      "sentence": "Ce matin, la grand-mère coud le bouton selon mon oncle."
+      "word": "bronze",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Léon gagne le bronze avec Simon."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Raymond gagne le bronze pour Léon, Simon et Gaston."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Gaston gagne le bronze, mais Simon et Léon pensent que Raymond a raison.",
+            "Quand Raymond gagne le bronze, Simon applaudit longtemps et Manon chante une chanson."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "bouton",
-      "sentence": "Quand le frère coud le bouton dans le salon, et Simon est très content."
+      "word": "bucheron",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Léon est bûcheron avec Simon."
+          ]
+        },
+        {
+          "level": "a2",
+          "sentences": [
+            "Raymond est bûcheron pour Léon, Simon et Gaston."
+          ]
+        },
+        {
+          "level": "b1",
+          "sentences": [
+            "Gaston est bûcheron, mais Simon et Léon pensent que Raymond a toujours raison."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
+      "word": "buisson",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Léon taille un buisson avec Simon."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Raymond taille un buisson pour Léon, Simon et Gaston."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Gaston taille un buisson, mais Simon et Léon pensent que Raymond a raison."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "caleçon",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Léon met un caleçon avec Simon.",
+            "Léon met un caleçon long."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Raymond met un caleçon pour Léon, Simon et Gaston.",
+            "Simon achète un caleçon et un pantalon dans la maison de Léon."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Gaston met un caleçon, mais Simon et Léon pensent que Raymond a raison."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "caméléon",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Léon voit un caméléon avec Simon.",
+            "Léon voit un caméléon sur le pont."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Raymond voit un caméléon pour Léon, Simon et Gaston."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Gaston voit un caméléon, mais Simon et Léon pensent que Raymond a raison.",
+            "Quand le caméléon change de couleur, Simon compte les teintes et Raymond prend une photo."
+          ]
+        }
+      ]
+    },
+    {
       "word": "camion",
-      "sentence": "La maman prend le camion avec Manon."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Léon conduit le camion avec Simon.",
+            "Simon conduit le camion de Léon."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Léon charge le camion avec Manon et le conduit près du pont.",
+            "Raymond conduit le camion pour Léon, Simon et Gaston."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Gaston conduit le camion, mais Simon et Léon pensent que Raymond a raison.",
+            "Quand le camion arrive, Raymond ouvre le portail et Simon compte les cartons."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "camion",
-      "sentence": "Ce matin, la maman prend le camion selon mon oncle."
+      "word": "canyon",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Léon visite le canyon avec Simon.",
+            "Léon visite un canyon profond."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Raymond visite le canyon pour Léon, Simon et Gaston.",
+            "Simon descend dans le canyon avec Manon et Léon."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Gaston visite le canyon, mais Simon et Léon pensent que Raymond a raison.",
+            "Quand le canyon devient sombre, Raymond allume sa lampe et Simon compte les pas."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "camion",
-      "sentence": "À midi, quand le facteur prend le camion avec Manon, parce que Manon est contente."
+      "word": "champignon",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Léon cueille un champignon rond."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Manon trouve un champignon sous le sapin près du pont."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand Raymond voit un champignon, il le compte et Simon dit toujours non."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
-      "word": "chanson",
-      "sentence": "La musicienne chante la chanson avec Manon."
+      "word": "chaussettes",
+      "variants": [
+        {
+          "level": "b1",
+          "number": "plur",
+          "sentences": [
+            "Quand Raymond lave son caleçon, Manon compte les chaussettes et Simon range le salon."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "chanson",
-      "sentence": "À midi, Simon apprend la chanson dans le salon."
-    },
-    {
-      "level": "b1",
-      "word": "chanson",
-      "sentence": "Ce matin, quand la fille connaît la chanson, parce que Manon est contente."
-    },
-    {
-      "level": "a1",
       "word": "citron",
-      "sentence": "Un ami choisit le citron avec Simon."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Léon presse un citron rond."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Manon coupe un citron et le pose sur le comptoir de Simon."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand Raymond presse un citron, Manon compte les pépins et Simon prépare une bonne limonade."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "citron",
-      "sentence": "Ce matin, la copine mange le citron selon mon oncle."
+      "word": "cochon",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Simon voit un cochon rose."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand le cochon sort, Raymond le ramène et Simon compte les autres animaux."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "citron",
-      "sentence": "Quand le cousin partage le citron dans le salon, et Simon est très content."
+      "word": "colombe",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Léon voit une colombe blanche."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Manon donne du pain à la colombe près du pont avec Simon."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand la colombe vole au-dessus du pont, Raymond sourit et Simon compte les plumes blanches."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
-      "word": "compote",
-      "sentence": "Manon goûte la compote bien."
+      "word": "froid",
+      "variants": [
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand Raymond sent le froid, il ferme son blouson et Simon lui prête son bonnet."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "compote",
-      "sentence": "Ce matin, un ami partage la compote selon mon oncle."
+      "word": "insectes",
+      "variants": [
+        {
+          "level": "a2",
+          "number": "plur",
+          "sentences": [
+            "Manon nourrit son caméléon avec des insectes dans le salon."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "compote",
-      "sentence": "À midi, quand le boulanger coupe la compote avec Manon, parce que Manon est contente."
+      "word": "Manon",
+      "variants": [
+        {
+          "level": "a2",
+          "sentences": [
+            "Manon donne du maïs au cochon de Léon près du pont."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
-      "word": "confiture",
-      "sentence": "Le professeur achète la confiture avec Manon."
+      "word": "médaille",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Léon gagne une médaille de bronze."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Simon montre la médaille de bronze à Manon dans le salon."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "confiture",
-      "sentence": "Avant le repas, le professeur achète la confiture selon mon oncle."
-    },
-    {
-      "level": "b1",
-      "word": "confiture",
-      "sentence": "À midi, quand la cuisinière achète la confiture avec Manon, parce que Manon est contente."
-    },
-    {
-      "level": "a1",
-      "word": "flocon",
-      "sentence": "Le directeur dessine le flocon avec Manon."
-    },
-    {
-      "level": "a2",
-      "word": "flocon",
-      "sentence": "Ce soir, Yvonne voit le flocon dans le salon."
-    },
-    {
-      "level": "b1",
-      "word": "flocon",
-      "sentence": "Quand le papa observe le flocon selon mon oncle, parce que Manon est contente."
-    },
-    {
-      "level": "a1",
-      "word": "front",
-      "sentence": "La maman lave le front avec Simon."
-    },
-    {
-      "level": "a2",
-      "word": "front",
-      "sentence": "Avant le repas, la tante essuie le front selon mon oncle."
-    },
-    {
-      "level": "b1",
-      "word": "front",
-      "sentence": "Quand la sœur touche le front dans le salon, et Simon est très content."
-    },
-    {
-      "level": "a1",
-      "word": "garçon",
-      "sentence": "La factrice suit le garçon avec Manon."
-    },
-    {
-      "level": "a2",
-      "word": "garçon",
-      "sentence": "Avant le repas, la maman embrasse le garçon selon mon oncle."
-    },
-    {
-      "level": "b1",
-      "word": "garçon",
-      "sentence": "À midi, quand la factrice aide le garçon avec Manon, parce que Manon est contente."
-    },
-    {
-      "level": "a1",
-      "word": "maison",
-      "sentence": "Simon dessine la maison bien."
-    },
-    {
-      "level": "a2",
-      "word": "maison",
-      "sentence": "Avant le repas, la musicienne part de la maison selon mon oncle."
-    },
-    {
-      "level": "b1",
-      "word": "maison",
-      "sentence": "À midi, quand Simon quitte la maison avec Manon, et Simon est très content."
-    },
-    {
-      "level": "a1",
-      "word": "melon",
-      "sentence": "Manon goûte le melon bien."
-    },
-    {
-      "level": "a2",
-      "word": "melon",
-      "sentence": "Après le cours, Simon partage le melon selon mon oncle."
-    },
-    {
-      "level": "b1",
-      "word": "melon",
-      "sentence": "Quand la maîtresse sert le melon selon mon oncle, parce que Manon est contente."
-    },
-    {
-      "level": "a1",
-      "word": "monde",
-      "sentence": "Le professeur regarde le monde avec Simon."
-    },
-    {
-      "level": "a2",
-      "word": "monde",
-      "sentence": "À midi, Manon dessine le monde avec Simon."
-    },
-    {
-      "level": "b1",
-      "word": "monde",
-      "sentence": "Quand le grand-père plante le monde dans le salon, et Simon est très content."
-    },
-    {
-      "level": "a1",
-      "word": "montagne",
-      "sentence": "Gaston skie dans la montagne."
-    },
-    {
-      "level": "a2",
-      "word": "montagne",
-      "sentence": "À midi, la cuisinière skie dans la montagne selon mon oncle."
-    },
-    {
-      "level": "b1",
-      "word": "montagne",
-      "sentence": "Quand le boulanger skie dans la montagne dans le salon, et Simon est très content."
-    },
-    {
-      "level": "a1",
-      "word": "montre",
-      "sentence": "Le frère porte la montre avec Manon."
-    },
-    {
-      "level": "a2",
-      "word": "montre",
-      "sentence": "À midi, le frère porte la montre selon mon oncle."
-    },
-    {
-      "level": "b1",
-      "word": "montre",
-      "sentence": "À midi, quand la collègue porte la montre avec Manon, parce que Manon est contente."
-    },
-    {
-      "level": "a1",
-      "word": "mouton",
-      "sentence": "Le garçon nourrit le mouton."
-    },
-    {
-      "level": "a2",
-      "word": "mouton",
-      "sentence": "À midi, Yvonne sauve le mouton selon mon oncle."
-    },
-    {
-      "level": "b1",
-      "word": "mouton",
-      "sentence": "Quand le voisin attrape le mouton selon mon oncle, parce que Manon est contente."
-    },
-    {
-      "level": "a1",
-      "word": "ombre",
-      "sentence": "La voisine photographie une ombre avec Simon."
-    },
-    {
-      "level": "a2",
-      "word": "ombre",
-      "sentence": "Ce soir, le garçon plante une ombre avec Simon."
-    },
-    {
-      "level": "b1",
-      "word": "ombre",
-      "sentence": "Quand le bébé admire une ombre dans le salon, et Simon est très content."
-    },
-    {
-      "level": "a1",
-      "word": "oncle",
-      "sentence": "La musicienne suit un oncle avec Manon."
-    },
-    {
-      "level": "a2",
-      "word": "oncle",
-      "sentence": "À midi, la voisine embrasse un oncle selon mon oncle."
-    },
-    {
-      "level": "b1",
-      "word": "oncle",
-      "sentence": "À midi, quand la musicienne aide un oncle avec Manon, parce que Manon est contente."
-    },
-    {
-      "level": "a1",
-      "word": "onze",
-      "sentence": "La copine corrige le onze avec Manon."
-    },
-    {
-      "level": "a2",
-      "word": "onze",
-      "sentence": "À midi, Manon étudie le onze selon mon oncle."
-    },
-    {
-      "level": "b1",
-      "word": "onze",
-      "sentence": "À midi, quand un ami prépare le onze avec Simon, et Simon est très content."
-    },
-    {
-      "level": "a1",
-      "word": "poisson",
-      "sentence": "Une amie coupe le poisson avec Manon."
-    },
-    {
-      "level": "a2",
-      "word": "poisson",
-      "sentence": "Ce soir, un ami achète le poisson selon mon oncle."
-    },
-    {
-      "level": "b1",
-      "word": "poisson",
-      "sentence": "Quand la cousine prépare le poisson selon mon oncle, parce que Manon est contente."
-    },
-    {
-      "level": "a1",
-      "word": "pompe",
-      "sentence": "Le frère prend la pompe avec Simon."
-    },
-    {
-      "level": "a2",
-      "word": "pompe",
-      "sentence": "Ce soir, le jardinier trouve la pompe selon mon oncle."
-    },
-    {
-      "level": "b1",
-      "word": "pompe",
-      "sentence": "Quand la boulangère range la pompe dans le salon, et Simon est très content."
-    },
-    {
-      "level": "a1",
       "word": "pont",
-      "sentence": "Gaston passe sous le pont."
-    },
-    {
-      "level": "a2",
-      "word": "pont",
-      "sentence": "Ce matin, la jardinière construit le pont avec Simon."
-    },
-    {
-      "level": "b1",
-      "word": "pont",
-      "sentence": "À midi, quand le directeur traverse le pont avec Manon, parce que Manon est contente."
-    },
-    {
-      "level": "a1",
-      "word": "prénom",
-      "sentence": "La directrice console le prénom."
-    },
-    {
-      "level": "a2",
-      "word": "prénom",
-      "sentence": "Ce soir, le garçon invite le prénom selon mon oncle."
-    },
-    {
-      "level": "b1",
-      "word": "prénom",
-      "sentence": "À midi, quand la maman salue le prénom avec Simon, et Simon est très content."
-    },
-    {
-      "level": "a1",
-      "word": "salon",
-      "sentence": "Le maître range le salon avec Manon."
-    },
-    {
-      "level": "a2",
-      "word": "salon",
-      "sentence": "Ce matin, la maman bricole le salon selon mon oncle."
-    },
-    {
-      "level": "b1",
-      "word": "salon",
-      "sentence": "Quand le copain ferme le salon selon mon oncle, parce que Manon est contente."
-    },
-    {
-      "level": "a1",
-      "word": "savon",
-      "sentence": "La copine visite le savon avec Simon."
-    },
-    {
-      "level": "a2",
-      "word": "savon",
-      "sentence": "Ce matin, la musicienne bricole le savon selon mon oncle."
-    },
-    {
-      "level": "b1",
-      "word": "savon",
-      "sentence": "Quand le cuisinier peint le savon dans le salon, et Simon est très content."
-    }
-  ],
-  "type10": [
-    {
-      "level": "a2",
-      "sentence": "À midi, la voisine regarde un avion selon mon oncle.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " voisine regarde un avion selon mon oncle."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand le maître répare un avion dans le salon, et Simon est très content.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " maître répare un avion dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " salon, et Simon est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La copine range le balcon avec Manon.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " copine range "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " balcon avec Manon."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Simon ferme le balcon selon mon oncle.",
-      "parts": [
-        {
-          "t": "À midi, Simon ferme "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " balcon selon mon oncle."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand la copine quitte le balcon avec Manon, parce que Manon est contente.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " copine quitte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " balcon avec Manon, parce que Manon est contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Un ami attrape le ballon avec Manon.",
-      "parts": [
-        {
-          "t": "Un ami attrape "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " ballon avec Manon."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le boulanger a le ballon selon mon oncle.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " boulanger a "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " ballon selon mon oncle."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand la cuisinière lance le ballon avec Simon, et Simon est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cuisinière lance "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " ballon avec Simon, et Simon est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le jardinier achète le bonbon.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " jardinier achète "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bonbon."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la collègue prépare le bonbon dans le salon.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " collègue prépare "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bonbon dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " salon."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Gaston choisit le bonbon selon mon oncle, parce que Manon est contente.",
-      "parts": [
-        {
-          "t": "À midi, quand Gaston choisit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bonbon selon mon oncle, parce que Manon est contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Yvonne remercie le bonjour bien.",
-      "parts": [
-        {
-          "t": "Yvonne remercie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bonjour bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le frère embrasse le bonjour selon mon oncle.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " frère embrasse "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bonjour selon mon oncle."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la professeure console le bonjour, et Simon est très content.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " professeure console "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bonjour, et Simon est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La tante coud le bouton avec Manon.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " tante coud "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bouton avec Manon."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, la grand-mère coud le bouton selon mon oncle.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " grand-mère coud "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bouton selon mon oncle."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand le frère coud le bouton dans le salon, et Simon est très content.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " frère coud "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bouton dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " salon, et Simon est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La maman prend le camion avec Manon.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " maman prend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " camion avec Manon."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, la maman prend le camion selon mon oncle.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maman prend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " camion selon mon oncle."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand le facteur prend le camion avec Manon, parce que Manon est contente.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " facteur prend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " camion avec Manon, parce que Manon est contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La musicienne chante la chanson avec Manon.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " musicienne chante "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " chanson avec Manon."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Simon apprend la chanson dans le salon.",
-      "parts": [
-        {
-          "t": "À midi, Simon apprend "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " chanson dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " salon."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la fille connaît la chanson, parce que Manon est contente.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " fille connaît "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " chanson, parce que Manon est contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Un ami choisit le citron avec Simon.",
-      "parts": [
-        {
-          "t": "Un ami choisit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " citron avec Simon."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, la copine mange le citron selon mon oncle.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " copine mange "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " citron selon mon oncle."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand le cousin partage le citron dans le salon, et Simon est très content.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cousin partage "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " citron dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " salon, et Simon est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Manon goûte la compote bien.",
-      "parts": [
-        {
-          "t": "Manon goûte "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " compote bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, un ami partage la compote selon mon oncle.",
-      "parts": [
-        {
-          "t": "Ce matin, un ami partage "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " compote selon mon oncle."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand le boulanger coupe la compote avec Manon, parce que Manon est contente.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " boulanger coupe "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " compote avec Manon, parce que Manon est contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le professeur achète la confiture avec Manon.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " professeur achète "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " confiture avec Manon."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le professeur achète la confiture selon mon oncle.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " professeur achète "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " confiture selon mon oncle."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand la cuisinière achète la confiture avec Manon, parce que Manon est contente.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cuisinière achète "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " confiture avec Manon, parce que Manon est contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le directeur dessine le flocon avec Manon.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " directeur dessine "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " flocon avec Manon."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Yvonne voit le flocon dans le salon.",
-      "parts": [
-        {
-          "t": "Ce soir, Yvonne voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " flocon dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " salon."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand le papa observe le flocon selon mon oncle, parce que Manon est contente.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " papa observe "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " flocon selon mon oncle, parce que Manon est contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La maman lave le front avec Simon.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " maman lave "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " front avec Simon."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la tante essuie le front selon mon oncle.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " tante essuie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " front selon mon oncle."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand la sœur touche le front dans le salon, et Simon est très content.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " sœur touche "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " front dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " salon, et Simon est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La factrice suit le garçon avec Manon.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " factrice suit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garçon avec Manon."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la maman embrasse le garçon selon mon oncle.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maman embrasse "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garçon selon mon oncle."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand la factrice aide le garçon avec Manon, parce que Manon est contente.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " factrice aide "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garçon avec Manon, parce que Manon est contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Simon dessine la maison bien.",
-      "parts": [
-        {
-          "t": "Simon dessine "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maison bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la musicienne part de la maison selon mon oncle.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " musicienne part de "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maison selon mon oncle."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Simon quitte la maison avec Manon, et Simon est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Simon quitte "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maison avec Manon, et Simon est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Manon goûte le melon bien.",
-      "parts": [
-        {
-          "t": "Manon goûte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " melon bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Simon partage le melon selon mon oncle.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Simon partage "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " melon selon mon oncle."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand la maîtresse sert le melon selon mon oncle, parce que Manon est contente.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maîtresse sert "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " melon selon mon oncle, parce que Manon est contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le professeur regarde le monde avec Simon.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " professeur regarde "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " monde avec Simon."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Manon dessine le monde avec Simon.",
-      "parts": [
-        {
-          "t": "À midi, Manon dessine "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " monde avec Simon."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand le grand-père plante le monde dans le salon, et Simon est très content.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " grand-père plante "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " monde dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " salon, et Simon est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Gaston skie dans la montagne.",
-      "parts": [
-        {
-          "t": "Gaston skie dans "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " montagne."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, la cuisinière skie dans la montagne selon mon oncle.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cuisinière skie dans "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " montagne selon mon oncle."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand le boulanger skie dans la montagne dans le salon, et Simon est très content.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " boulanger skie dans "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " montagne dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " salon, et Simon est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le frère porte la montre avec Manon.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " frère porte "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " montre avec Manon."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le frère porte la montre selon mon oncle.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " frère porte "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " montre selon mon oncle."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand la collègue porte la montre avec Manon, parce que Manon est contente.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " collègue porte "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " montre avec Manon, parce que Manon est contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le garçon nourrit le mouton.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " garçon nourrit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " mouton."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Yvonne sauve le mouton selon mon oncle.",
-      "parts": [
-        {
-          "t": "À midi, Yvonne sauve "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " mouton selon mon oncle."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand le voisin attrape le mouton selon mon oncle, parce que Manon est contente.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " voisin attrape "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " mouton selon mon oncle, parce que Manon est contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La voisine photographie une ombre avec Simon.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " voisine photographie une ombre avec Simon."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le garçon plante une ombre avec Simon.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garçon plante une ombre avec Simon."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand le bébé admire une ombre dans le salon, et Simon est très content.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bébé admire une ombre dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " salon, et Simon est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La musicienne suit un oncle avec Manon.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " musicienne suit un oncle avec Manon."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, la voisine embrasse un oncle selon mon oncle.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " voisine embrasse un oncle selon mon oncle."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand la musicienne aide un oncle avec Manon, parce que Manon est contente.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " musicienne aide un oncle avec Manon, parce que Manon est contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La copine corrige le onze avec Manon.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " copine corrige "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " onze avec Manon."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Manon étudie le onze selon mon oncle.",
-      "parts": [
-        {
-          "t": "À midi, Manon étudie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " onze selon mon oncle."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand un ami prépare le onze avec Simon, et Simon est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand un ami prépare "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " onze avec Simon, et Simon est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Une amie coupe le poisson avec Manon.",
-      "parts": [
-        {
-          "t": "Une amie coupe "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " poisson avec Manon."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, un ami achète le poisson selon mon oncle.",
-      "parts": [
-        {
-          "t": "Ce soir, un ami achète "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " poisson selon mon oncle."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand la cousine prépare le poisson selon mon oncle, parce que Manon est contente.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cousine prépare "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " poisson selon mon oncle, parce que Manon est contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le frère prend la pompe avec Simon.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " frère prend "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " pompe avec Simon."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le jardinier trouve la pompe selon mon oncle.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardinier trouve "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " pompe selon mon oncle."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand la boulangère range la pompe dans le salon, et Simon est très content.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boulangère range "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " pompe dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " salon, et Simon est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Gaston passe sous le pont.",
-      "parts": [
-        {
-          "t": "Gaston passe sous "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pont."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, la jardinière construit le pont avec Simon.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " jardinière construit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pont avec Simon."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand le directeur traverse le pont avec Manon, parce que Manon est contente.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " directeur traverse "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pont avec Manon, parce que Manon est contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La directrice console le prénom.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " directrice console "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " prénom."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le garçon invite le prénom selon mon oncle.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garçon invite "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " prénom selon mon oncle."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand la maman salue le prénom avec Simon, et Simon est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maman salue "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " prénom avec Simon, et Simon est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le maître range le salon avec Manon.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " maître range "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " salon avec Manon."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, la maman bricole le salon selon mon oncle.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maman bricole "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " salon selon mon oncle."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand le copain ferme le salon selon mon oncle, parce que Manon est contente.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " copain ferme "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " salon selon mon oncle, parce que Manon est contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La copine visite le savon avec Simon.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " copine visite "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " savon avec Simon."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, la musicienne bricole le savon selon mon oncle.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " musicienne bricole "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " savon selon mon oncle."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand le cuisinier peint le savon dans le salon, et Simon est très content.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cuisinier peint "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " savon dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " salon, et Simon est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La tante emprunte un avion avec Simon.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " tante emprunte un avion avec Simon."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La boulangère visite le balcon avec Simon.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " boulangère visite "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " balcon avec Simon."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Manon rapporte le ballon bien.",
-      "parts": [
-        {
-          "t": "Manon rapporte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " ballon bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La directrice apporte le bonbon.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " directrice apporte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bonbon."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Simon achète la confiture avec Manon.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Simon achète "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " confiture avec Manon."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le garçon photographie le flocon avec Simon.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garçon photographie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " flocon avec Simon."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le jardinier soigne le front selon mon oncle.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardinier soigne "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " front selon mon oncle."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le cousin invite le garçon selon mon oncle.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cousin invite "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garçon selon mon oncle."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand la boulangère regarde une ombre dans le salon, et Simon est très content.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boulangère regarde une ombre dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " salon, et Simon est très content."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand la voisine recopie le onze dans le salon, et Simon est très content.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " voisine recopie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " onze dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " salon, et Simon est très content."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand la professeure sert le poisson selon mon oncle, parce que Manon est contente.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " professeure sert "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " poisson selon mon oncle, parce que Manon est contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La professeure aide le bonjour avec Manon.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " professeure aide "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bonjour avec Manon."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le collègue coud le bouton avec Manon.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " collègue coud "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bouton avec Manon."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le copain prend le camion avec Manon.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " copain prend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " camion avec Manon."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La factrice écoute la chanson avec Simon.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " factrice écoute "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " chanson avec Simon."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La boulangère goûte le citron avec Manon.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " boulangère goûte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " citron avec Manon."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La cousine apporte la compote avec Simon.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " cousine apporte "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " compote avec Simon."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le copain plante près de la maison selon mon oncle.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " copain plante près de "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maison selon mon oncle."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Yvonne choisit le melon selon mon oncle.",
-      "parts": [
-        {
-          "t": "À midi, Yvonne choisit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " melon selon mon oncle."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, une amie voit le monde selon mon oncle.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, une amie voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " monde selon mon oncle."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le cuisinier skie dans la montagne selon mon oncle.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "le"
-        },
+      "variants": [
         {
-          "t": " cuisinier skie dans "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " montagne selon mon oncle."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le garçon porte la montre avec Manon.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garçon porte "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " montre avec Manon."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Yvonne soigne le mouton dans le salon.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, Yvonne soigne "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " mouton dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " salon."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand le boulanger utilise la pompe avec Manon, parce que Manon est contente.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " boulanger utilise "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " pompe avec Manon, parce que Manon est contente."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand la directrice passe sous le pont selon mon oncle, parce que Manon est contente.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " directrice passe sous "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pont selon mon oncle, parce que Manon est contente."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand le voisin aide le prénom avec Manon, parce que Manon est contente.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " voisin aide "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " prénom avec Manon, parce que Manon est contente."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Yvonne visite le salon avec Simon, et Simon est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Yvonne visite "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " salon avec Simon, et Simon est très content."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand la cousine ouvre le savon dans le salon, et Simon est très content.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cousine ouvre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " savon dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " salon, et Simon est très content."
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Léon enfile son blouson et part avec Manon sur le pont."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "À midi, quand le cuisinier attend un avion avec Simon, et Simon est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
+      "word": "Simon",
+      "variants": [
         {
-          "blank": "le"
-        },
-        {
-          "t": " cuisinier attend un avion avec Simon, et Simon est très content."
+          "level": "a1",
+          "sentences": [
+            "Simon met son blouson long."
+          ]
         }
-      ]
-    }
-  ],
-  "type12Stories": [
-    {
-      "level": "a2",
-      "sentences": [
-        "Noah joue au ballon dans la cour.",
-        "Omar lance le ballon très haut.",
-        "Noah attrape le ballon avec les mains.",
-        "Après le jeu, ils mangent un bonbon.",
-        "Omar range le ballon près du banc.",
-        "Un garçon demande encore le ballon.",
-        "Noah partage un bonbon avec le garçon.",
-        "Ils chantent une chanson en riant.",
-        "Le ballon reste prêt pour demain."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Un camion s’arrête devant le pont.",
-        "Karim regarde le camion charger des caisses.",
-        "Le chauffeur salue avec un bonjour.",
-        "Karim répond bonjour poliment.",
-        "Le camion traverse ensuite le pont.",
-        "Sur le pont, une ombre passe vite.",
-        "Karim note le numéro du camion.",
-        "Il raconte la scène à son oncle.",
-        "L’oncle sourit près du pont."
-      ]
-    },
-    {
-      "level": "a2",
-      "sentences": [
-        "Maya coupe un citron dans la cuisine.",
-        "Elle prépare une compote de pommes.",
-        "Noah ouvre un pot de confiture.",
-        "Maya ajoute un peu de citron.",
-        "La confiture sent très bon.",
-        "Noah goûte la compote chaude.",
-        "Ils rangent le citron dans le frigo.",
-        "Maya ferme le pot de confiture.",
-        "La cuisine sent la compote et le citron."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Depuis le balcon, Inès voit un avion.",
-        "L’avion passe au-dessus de la montagne.",
-        "Inès montre l’avion à son oncle.",
-        "L’oncle parle du monde des voyages.",
-        "Ils restent sur le balcon un moment.",
-        "Un second avion apparaît près de la montagne.",
-        "Inès photographie l’avion rapidement.",
-        "Son oncle range la montre dans sa poche.",
-        "Ils quittent le balcon avant la nuit."
-      ]
-    },
-    {
-      "level": "a2",
-      "sentences": [
-        "Sofia chante une chanson dans le salon.",
-        "Elle cherche un bouton sur la radio.",
-        "Le bouton est difficile à tourner.",
-        "Sofia trouve enfin le bon bouton.",
-        "La chanson remplit tout le salon.",
-        "Un garçon écoute la chanson près de la porte.",
-        "Sofia lui dit bonjour avec un sourire.",
-        "Ils chantent encore la chanson ensemble.",
-        "Sofia range la radio dans le salon."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Sur la montagne, Adam voit un mouton.",
-        "Un flocon tombe près du mouton.",
-        "Adam marche vers le mouton lentement.",
-        "L’ombre du mouton grandit sur la neige.",
-        "Adam dit bonjour à un berger.",
-        "Le berger montre encore un mouton.",
-        "Un flocon se pose sur le front d’Adam.",
-        "Adam regarde la montagne blanche.",
-        "Il rentre ensuite vers la maison."
-      ]
-    },
-    {
-      "level": "a2",
-      "sentences": [
-        "Léa achète un poisson au marché.",
-        "Omar choisit un melon bien mûr.",
-        "Ils passent devant une pompe à eau.",
-        "Léa lave le melon près de la pompe.",
-        "Omar porte le poisson dans un sac.",
-        "À la maison, Léa ouvre le melon.",
-        "Omar prépare le poisson pour le repas.",
-        "Ils mangent le melon en dessert.",
-        "La pompe du jardin reste ouverte un peu."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Dans la maison, l’oncle lit une lettre.",
-        "Il cherche le prénom sur l’enveloppe.",
-        "Le prénom est écrit en grandes lettres.",
-        "L’oncle dit bonjour en ouvrant la porte.",
-        "Un garçon entre dans la maison.",
-        "Il montre sa montre neuve à l’oncle.",
-        "L’oncle pose la montre sur la table.",
-        "Ils parlent du monde dehors.",
-        "Avant le soir, le garçon quitte la maison."
-      ]
-    },
-    {
-      "level": "a2",
-      "sentences": [
-        "Emma lave ses mains avec du savon.",
-        "Elle cherche un bouton de la lumière.",
-        "Le bouton est près de la porte.",
-        "Emma appuie sur le bouton.",
-        "Elle range le savon près de l’évier.",
-        "Un garçon dit bonjour depuis le salon.",
-        "Emma répond bonjour et sourit.",
-        "Elle pose encore le savon correctement.",
-        "Le salon reste clair grâce au bouton."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Au parc, Karim lance un ballon.",
-        "Un avion passe au-dessus du parc.",
-        "Karim regarde l’avion puis le ballon.",
-        "Un garçon chante une chanson joyeuse.",
-        "Karim reprend la chanson avec lui.",
-        "Le ballon tombe près d’un banc.",
-        "Karim dit bonjour au garçon.",
-        "Ils jouent encore avec le ballon.",
-        "L’avion disparaît derrière les nuages."
-      ]
-    }
-  ],
-  "type14Stories": [
-    {
-      "level": "a2",
-      "sentences": [
-        "Noah apporte un ballon dans la cour.",
-        "Omar lance le ballon très haut.",
-        "Noah attrape le ballon avec les mains.",
-        "Un garçon demande à jouer aussi.",
-        "Ils se disent bonjour rapidement.",
-        "Après le jeu, Omar offre un bonbon.",
-        "Noah partage le bonbon avec le garçon.",
-        "Ils chantent une chanson en riant.",
-        "Omar range le ballon près du banc.",
-        "Le garçon veut encore un bonbon.",
-        "Noah refuse poliment et sourit.",
-        "Ils rejouent avec le ballon.",
-        "Omar chante encore la chanson.",
-        "Le ballon roule vers la porte.",
-        "Noah ramasse le ballon vite.",
-        "Ils se disent bonjour aux parents.",
-        "Omar range le bonbon dans sa poche.",
-        "La chanson continue dans la cour.",
-        "Le ballon reste prêt pour demain."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Un camion s’arrête devant le pont.",
-        "Karim regarde le camion charger des caisses.",
-        "Le chauffeur salue avec un bonjour.",
-        "Karim répond bonjour poliment.",
-        "Le camion traverse ensuite le pont.",
-        "Sur le pont, une ombre passe vite.",
-        "Karim note le numéro du camion.",
-        "Il raconte la scène à son oncle.",
-        "L’oncle regarde aussi le pont.",
-        "Un second camion arrive au loin.",
-        "Karim montre le camion à son oncle.",
-        "Ils restent près du pont un moment.",
-        "L’oncle regarde sa montre.",
-        "Il est déjà onze heures.",
-        "Karim dit encore bonjour au chauffeur.",
-        "Le camion repart vers la montagne.",
-        "Karim et son oncle quittent le pont.",
-        "Sur le chemin, ils parlent du monde.",
-        "Avant la nuit, ils rentrent à la maison."
-      ]
-    },
-    {
-      "level": "a2",
-      "sentences": [
-        "Maya coupe un citron dans la cuisine.",
-        "Elle prépare une compote de pommes.",
-        "Noah ouvre un pot de confiture.",
-        "Maya ajoute un peu de citron.",
-        "La confiture sent très bon.",
-        "Noah goûte la compote chaude.",
-        "Ils rangent le citron dans le frigo.",
-        "Maya ferme le pot de confiture.",
-        "Noah dit bonjour à un ami qui arrive.",
-        "L’ami apporte un melon du marché.",
-        "Maya coupe le melon en tranches.",
-        "Ils mangent le melon après la compote.",
-        "Noah range encore la confiture.",
-        "Maya lave le couteau avec du savon.",
-        "La cuisine sent le citron et le melon.",
-        "Ils chantent une petite chanson.",
-        "Noah appuie sur un bouton de la radio.",
-        "La chanson remplit le salon.",
-        "Maya éteint la radio avec le bouton."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Depuis le balcon, Inès voit un avion.",
-        "L’avion passe au-dessus de la montagne.",
-        "Inès montre l’avion à son oncle.",
-        "L’oncle parle du monde des voyages.",
-        "Ils restent sur le balcon un moment.",
-        "Un second avion apparaît près de la montagne.",
-        "Inès photographie l’avion rapidement.",
-        "Son oncle regarde sa montre.",
-        "Il est presque onze heures.",
-        "Une ombre traverse le balcon.",
-        "Inès dit bonjour à un voisin.",
-        "Le voisin regarde aussi l’avion.",
-        "L’oncle raconte une histoire de montagne.",
-        "Inès écoute depuis le balcon.",
-        "L’avion disparaît derrière la montagne.",
-        "Ils quittent le balcon avant la nuit.",
-        "Dans la maison, Inès range son appareil.",
-        "L’oncle pose sa montre sur la table.",
-        "La soirée se termine sur le balcon."
-      ]
-    },
-    {
-      "level": "a2",
-      "sentences": [
-        "Sofia chante une chanson dans le salon.",
-        "Elle cherche un bouton sur la radio.",
-        "Le bouton est difficile à tourner.",
-        "Sofia trouve enfin le bon bouton.",
-        "La chanson remplit tout le salon.",
-        "Un garçon écoute près de la porte.",
-        "Sofia lui dit bonjour avec un sourire.",
-        "Ils chantent encore la chanson ensemble.",
-        "Le garçon apporte un ballon.",
-        "Sofia pose le ballon dans le salon.",
-        "Ils dansent un peu sur la chanson.",
-        "Sofia appuie encore sur le bouton.",
-        "La radio change de chanson.",
-        "Le garçon rit dans le salon.",
-        "Sofia offre un bonbon à l’ami.",
-        "Ils mangent le bonbon en écoutant.",
-        "Sofia range la radio dans le salon.",
-        "Le ballon reste près du canapé.",
-        "La chanson s’arrête doucement."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Sur la montagne, Adam voit un mouton.",
-        "Un flocon tombe près du mouton.",
-        "Adam marche vers le mouton lentement.",
-        "L’ombre du mouton grandit sur la neige.",
-        "Adam dit bonjour à un berger.",
-        "Le berger montre encore un mouton.",
-        "Un flocon se pose sur le front d’Adam.",
-        "Adam regarde la montagne blanche.",
-        "Il sort sa montre de sa poche.",
-        "Il est déjà onze heures.",
-        "Le berger parle du monde des sommets.",
-        "Adam écoute près du mouton.",
-        "Un autre flocon tombe sur son manteau.",
-        "Adam photographie la montagne.",
-        "Le mouton s’éloigne dans l’ombre.",
-        "Adam dit encore bonjour au berger.",
-        "Il redescend de la montagne.",
-        "Devant la maison, son oncle l’attend.",
-        "Adam raconte la journée sur la montagne."
-      ]
-    },
-    {
-      "level": "a2",
-      "sentences": [
-        "Léa achète un poisson au marché.",
-        "Omar choisit un melon bien mûr.",
-        "Ils passent devant une pompe à eau.",
-        "Léa lave le melon près de la pompe.",
-        "Omar porte le poisson dans un sac.",
-        "À la maison, Léa ouvre le melon.",
-        "Omar prépare le poisson pour le repas.",
-        "Ils mangent le melon en dessert.",
-        "Léa lave ses mains avec du savon.",
-        "Omar dit bonjour à son oncle.",
-        "L’oncle entre dans le salon.",
-        "Il pose une montre sur la table.",
-        "Léa chante une petite chanson.",
-        "Omar coupe encore un peu de melon.",
-        "Le poisson cuit doucement.",
-        "L’oncle goûte le melon.",
-        "Léa range le savon près de l’évier.",
-        "Omar ferme la pompe du jardin.",
-        "Le repas sent le poisson et le melon."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Dans la maison, l’oncle lit une lettre.",
-        "Il cherche le prénom sur l’enveloppe.",
-        "Le prénom est écrit en grandes lettres.",
-        "L’oncle dit bonjour en ouvrant la porte.",
-        "Un garçon entre dans la maison.",
-        "Il montre sa montre neuve à l’oncle.",
-        "L’oncle pose la montre sur la table.",
-        "Ils parlent du monde dehors.",
-        "Le garçon raconte un voyage en avion.",
-        "L’oncle écoute depuis le salon.",
-        "Il est presque onze heures.",
-        "Le garçon boit un jus de citron.",
-        "L’oncle ouvre un pot de confiture.",
-        "Ils mangent un peu de confiture.",
-        "Le garçon chante une chanson douce.",
-        "L’oncle sourit dans la maison.",
-        "Avant le soir, le garçon part.",
-        "L’oncle range la montre dans un tiroir.",
-        "La maison redevient silencieuse."
-      ]
-    },
-    {
-      "level": "a2",
-      "sentences": [
-        "Emma lave ses mains avec du savon.",
-        "Elle cherche un bouton de la lumière.",
-        "Le bouton est près de la porte.",
-        "Emma appuie sur le bouton.",
-        "Elle range le savon près de l’évier.",
-        "Un garçon dit bonjour depuis le salon.",
-        "Emma répond bonjour et sourit.",
-        "Elle apporte un ballon dans le salon.",
-        "Le garçon lance le ballon doucement.",
-        "Emma chante une chanson amusante.",
-        "Ils mangent un bonbon après le jeu.",
-        "Emma coupe un citron pour le jus.",
-        "Le garçon goûte le jus de citron.",
-        "Emma range encore le savon.",
-        "Elle appuie une dernière fois sur le bouton.",
-        "Le salon s’éclaire bien.",
-        "Le ballon reste près du canapé.",
-        "Emma dit bonjour aux parents qui rentrent.",
-        "La soirée se termine dans le salon."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Au parc, Karim lance un ballon.",
-        "Un avion passe au-dessus du parc.",
-        "Karim regarde l’avion puis le ballon.",
-        "Un garçon chante une chanson joyeuse.",
-        "Karim reprend la chanson avec lui.",
-        "Le ballon tombe près d’un banc.",
-        "Karim dit bonjour au garçon.",
-        "Ils jouent encore avec le ballon.",
-        "L’avion disparaît derrière les nuages.",
-        "Karim offre un bonbon à son ami.",
-        "Ils mangent le bonbon en riant.",
-        "Le garçon regarde sa montre.",
-        "Il est déjà onze heures.",
-        "Karim parle d’un voyage en camion.",
-        "Ils imaginent une montagne lointaine.",
-        "Le ballon rebondit encore une fois.",
-        "Karim range le ballon dans son sac.",
-        "Ils se disent bonjour aux parents.",
-        "La chanson reste dans leurs têtes."
       ]
     }
   ]

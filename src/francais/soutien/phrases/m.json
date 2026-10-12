@@ -1,3039 +1,954 @@
 {
-  "type9": [
+  "son": "m",
+  "phrases": [
     {
-      "level": "a1",
+      "word": "alimentation",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Ma mère a une alimentation saine.",
+            "Maman étudie l’alimentation de Mia."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Manon mange mieux grâce à l’alimentation de Maxime et de Mia.",
+            "Mon frère Marc choisit une alimentation simple avec beaucoup de fruits."
+          ]
+        },
+        {
+          "level": "b1",
+          "sentences": [
+            "Maxime modifie son alimentation, mais Manon et Mia mangent déjà moins de sucre à midi."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Comme Marie fait du sport, elle mange une alimentation équilibrée avec des fruits."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "aliments",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "plur",
+          "sentences": [
+            "Maman achète les aliments au marché.",
+            "Maman range les aliments de Mia."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "plur",
+          "sentences": [
+            "Manon mélange les aliments pour Maxime et pour Mia à midi.",
+            "Mathieu mélange les aliments dans un grand plat avec une cuillère."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "plur",
+          "sentences": [
+            "Maxime met les aliments dans le meuble, mais Manon et Mia mangent déjà dehors."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "allumette",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Maman allume une allumette pour Mia."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Manon allume la mèche avec une allumette de Maxime et de Mia.",
+            "Marc craque une allumette pour éclairer la cave et mieux voir."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Maxime allume une allumette, mais Manon et Mia ont peur du feu dans la maison."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "amazone",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Mathilde est une amazone à Martigny.",
+            "Mia est une amazone moderne."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Manon admire l’amazone Mia qui monte à cheval avec Maxime."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Mélanie est une amazone, mais Manon et Mia préfèrent monter à poney avec Maxime.",
+            "Quand l’amazone monte, elle met son casque parce que le moindre accident est grave."
+          ]
+        }
+      ]
+    },
+    {
       "word": "ami",
-      "sentence": "Manon photographie un ami bien."
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Mon ami Maxime mange ici."
+          ]
+        },
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Je vais goûter et jouer chez mon ami."
+          ]
+        },
+        {
+          "level": "a2",
+          "sentences": [
+            "Mon ami Mathieu mange midi et soir chez Manon."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Mon ami Maxime a mis du miel dans mon thé, mais Manon préfère le citron."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "ami",
-      "sentence": "Ce soir, la boulangère marche avec un ami avec Manon."
+      "word": "animal",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Mia aime cet animal mignon."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Manon montre l’animal à Maxime et à Mia au marché."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Maxime a trouvé un animal mouillé, mais Manon et Mia le mettent au chaud."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "ami",
-      "sentence": "Ce matin, quand le médecin téléphone à un ami, et Emma est très contente."
+      "word": "animaux",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Mia aime ces animaux mignons."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "plur",
+          "sentences": [
+            "Manon nourrit les animaux de Maxime et de Mia le matin."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "plur",
+          "sentences": [
+            "Maxime montre les animaux à Mia, mais Manon préfère rester à la maison mardi."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
+      "word": "armoire",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "L’armoire est dans ma chambre.",
+            "Mia ouvre l’armoire de Manon."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Manon range le manteau de Maxime dans l’armoire de Mia."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Maxime met le linge dans l’armoire, mais Manon et Mia le mettent ailleurs.",
+            "Quand Marc déménage, il démonte l’armoire pour mieux la mettre dans le camion."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "autre",
+      "variants": [
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Comme Marc a taché sa chemise, il en met une autre avant de monter."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "bougie",
+      "variants": [
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand Mathilde manque d’électricité, elle allume la bougie avec une allumette et attend."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "bûche",
+      "variants": [
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Mathieu met une bûche dans la cheminée pour mieux chauffer la maison."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "caméléon",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Max regarde un caméléon au zoo.",
+            "Mia regarde le caméléon de Manon."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Manon montre le caméléon à Maxime et à Mia mardi."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Comme le caméléon change de couleur, même Marc ne le remarque pas dans les feuilles.",
+            "Maxime dessine un caméléon, mais Manon et Mia préfèrent mimer cet animal mignon."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "camion",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Le camion de Marc est ici.",
+            "Mia regarde le camion de Manon."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Manon conduit le camion de Maxime et de Mia mardi matin.",
+            "Marc conduit le camion à Monthey tous les mardis matin."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Maxime monte dans le camion, mais Manon et Mia ne mettent pas la ceinture.",
+            "Quand le camion tombe en panne, Mathieu appelle le mécanicien et attend tranquillement."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "caresse",
+      "variants": [
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Mon caméléon change de couleur quand Marie le caresse."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Comme Marie aime son animal, elle le caresse matin et soir et lui parle doucement."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "cheminée",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Mia allume la cheminée de Manon."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Manon met du bois dans la cheminée de Maxime et de Mia."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Maxime ramone la cheminée, mais Manon et Mia mettent déjà du bois dans la maison.",
+            "Quand il fait froid, nous allumons la cheminée et mangeons des marrons chauds."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "chemise",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Mia met une chemise mauve."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Manon repasse la chemise de Maxime et de Mia mardi matin.",
+            "Mathilde repasse la chemise de Marc avant la réunion du mercredi."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Maxime met sa chemise mauve, mais Manon et Mia préfèrent la mettre demain matin."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "chronomètre",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Marc lance le chronomètre du match.",
+            "Mia prend le chronomètre de Manon."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Manon règle le chronomètre pour Maxime et pour Mia mardi."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Maxime mesure le temps au chronomètre, mais Manon et Mia comptent à la main."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "chrysanthème",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Maman offre un chrysanthème à Mamie.",
+            "Mia offre un chrysanthème mauve."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "En automne, Marie plante un chrysanthème jaune dans le massif.",
+            "Manon met un chrysanthème dans le vase de Maxime et de Mia."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Maxime plante un chrysanthème mauve, mais Manon et Mia préfèrent les roses de mai.",
+            "Quand le chrysanthème fleurit en automne, Mathilde le met près de la maison."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "clémentine",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Maman mange une clémentine mûre.",
+            "Mia mange une clémentine mûre."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Manon mange une clémentine avec Maxime et Mia à midi.",
+            "Mathilde épluche une clémentine et la partage avec Marc."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Maxime épluche une clémentine pour Mia, mais Manon et Mélanie préfèrent des mandarines.",
+            "Quand Marc a faim à midi, il mange une clémentine, mais Maman préfère une mandarine."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "climatiseur",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Le climatiseur marche très bien.",
+            "Mia règle le climatiseur de Manon."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Manon met le climatiseur en marche pour Maxime et pour Mia.",
+            "Marc met le climatiseur en marche parce qu’il fait chaud."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Maxime coupe le climatiseur, mais Manon et Mia trouvent qu’il fait trop chaud.",
+            "Quand le climatiseur tombe en panne, Mathieu met un ventilateur dans la maison."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "coach",
+      "variants": [
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Le coach de Mathieu arrête le chronomètre à la minute exacte."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "comète",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Mia regarde la comète de Manon."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Manon montre la comète à Maxime et à Mia ce mardi."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Maxime a vu une comète, mais Manon et Mia ne l’ont pas aperçue."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "commode",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Mia ouvre la commode de Manon."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Manon range le maillot de Maxime dans la commode de Mia."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Maxime met le linge dans la commode, mais Manon et Mia le mettent ailleurs."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "dimanche",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Mia mange chez Manon dimanche."
+          ]
+        },
+        {
+          "level": "a2",
+          "sentences": [
+            "Manon invite Maxime et Mia à manger chez elle dimanche."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Maxime mange chez Manon dimanche, mais Mia préfère rester à la maison avec Mélanie."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "domino",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Mia joue au domino avec Manon."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Manon montre le domino à Maxime et à Mia mardi matin."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Maxime pose un domino, mais Manon et Mia préfèrent jouer aux cartes à minuit."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "dynamite",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Mia voit de la dynamite."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Manon montre la dynamite à Maxime et à Mia dans le musée."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Maxime lit une histoire de dynamite, mais Manon et Mia préfèrent le film de mercredi."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "dynamo",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Mia répare la dynamo de Manon."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Manon monte la dynamo sur le vélo de Maxime et de Mia."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Maxime vérifie la dynamo, mais Manon et Mia ne mettent pas la lumière à minuit."
+          ]
+        }
+      ]
+    },
+    {
       "word": "femme",
-      "sentence": "Le musicien invite la femme."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Mia aide la femme de Manon."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Manon parle à la femme de Maxime et de Mia mardi."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Maxime aide la femme de Manon, mais Mia et Mélanie mangent déjà à la maison."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "femme",
-      "sentence": "Ce soir, le professeur salue la femme avec Manon."
+      "word": "ferme",
+      "variants": [
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand Mathieu visite la ferme, il montre les animaux à tous ses amis."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "femme",
-      "sentence": "Ce matin, quand la cousine suit la femme, parce que Marc est content aussi."
+      "word": "fermière",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Mia est fermière à Morges."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "La fermière Manon vend du miel à Maxime et à Mia."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Maxime remercie la fermière, car Manon et Mia ont mis du lait à la maison."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
-      "word": "madame",
-      "sentence": "Le frère console la madame."
+      "word": "feu",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Maman allume le feu dans la cheminée."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "madame",
-      "sentence": "À midi, la tante invite la madame même ici."
+      "word": "lampe",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Maman allume la lampe avec une allumette."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "madame",
-      "sentence": "Ce matin, quand la factrice salue la madame, et Emma est très contente."
+      "word": "maison",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Mes animaux dorment dans la maison."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
-      "word": "mai",
-      "sentence": "Le cuisinier pose le mai avec Marc."
+      "word": "maîtresse",
+      "variants": [
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "La maîtresse perd patience face à son élève."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "mai",
-      "sentence": "Après le cours, la collègue montre le mai à la maison."
-    },
-    {
-      "level": "b1",
-      "word": "mai",
-      "sentence": "Ce matin, quand Emma trouve le mai, parce que Marc est content aussi."
-    },
-    {
-      "level": "a1",
       "word": "maman",
-      "sentence": "Simon aide la maman bien."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Ils ont peur et appellent leur maman."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "maman",
-      "sentence": "Ce matin, le cuisinier rentre chez la maman avec Manon."
+      "word": "manège",
+      "variants": [
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Cette amazone monte son cheval chaque matin dans le manège de Monthey."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "maman",
-      "sentence": "Ce matin, quand la sœur appelle la maman, et Emma est très contente."
+      "word": "marathon",
+      "variants": [
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand Marie court le marathon, elle regarde son chronomètre pour mieux mesurer le temps."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
-      "word": "manche",
-      "sentence": "La fille repasse la manche même ici."
+      "word": "Marc",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Marc met sa chemise grise."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Marc et Caroline partent à l’école avec papa."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "manche",
-      "sentence": "Ce matin, la voisine choisit la manche avec Manon."
+      "word": "marché",
+      "variants": [
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Chantal va au marché pour acheter des choux et des artichauts."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand Margot fait le marché, elle choisit des aliments frais pour mieux manger."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "manche",
-      "sentence": "Ce matin, quand le copain met la manche, parce que Marc est content aussi."
+      "word": "Marie",
+      "variants": [
+        {
+          "level": "a2",
+          "sentences": [
+            "Marie nourrit ses animaux chaque matin avec du maïs et du foin."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Rémi et Marie se promènent près de la mare aux canards."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
-      "word": "mangue",
-      "sentence": "La grand-mère utilise la mangue."
+      "word": "mercredis",
+      "variants": [
+        {
+          "level": "a2",
+          "number": "plur",
+          "sentences": [
+            "Mon meilleur ami Marc me téléphone tous les mercredis soir."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "mangue",
-      "sentence": "Ce soir, la boulangère oublie la mangue même ici."
+      "word": "Mon",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Mon ami habite à Martigny.",
+            "Mon animal préféré s’appelle Max."
+          ]
+        },
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Je vais goûter et jouer chez mon ami.",
+            "Le docteur examine mon frère.",
+            "Mon chien est un joyeux compagnon.",
+            "Mon frère va devenir pompier."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Mon amie Prune a une belle chevelure brune."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "mangue",
-      "sentence": "Ce matin, quand le jardinier cherche la mangue, et Emma est très contente."
+      "word": "morceaux",
+      "variants": [
+        {
+          "level": "a2",
+          "number": "plur",
+          "sentences": [
+            "Mon animal mange du maïs et des morceaux de pomme le matin."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
-      "word": "mardi",
-      "sentence": "Le cousin prépare le mardi avec Manon."
-    },
-    {
-      "level": "a2",
-      "word": "mardi",
-      "sentence": "À midi, Manon choisit le mardi à la maison."
-    },
-    {
-      "level": "b1",
-      "word": "mardi",
-      "sentence": "Ce matin, quand une amie aime le mardi, parce que Marc est content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "mare",
-      "sentence": "La maman plante la mare."
-    },
-    {
-      "level": "a2",
-      "word": "mare",
-      "sentence": "Après le cours, le musicien dessine la mare avec Marc."
-    },
-    {
-      "level": "b1",
-      "word": "mare",
-      "sentence": "Ce matin, quand le professeur voit la mare, et Emma est très contente."
-    },
-    {
-      "level": "a1",
-      "word": "mari",
-      "sentence": "La professeure invite le mari même ici."
-    },
-    {
-      "level": "a2",
-      "word": "mari",
-      "sentence": "À midi, le professeur aide le mari avec Marc."
-    },
-    {
-      "level": "b1",
-      "word": "mari",
-      "sentence": "Ce matin, quand le musicien salue le mari, et Emma est très contente."
-    },
-    {
-      "level": "a1",
-      "word": "maïs",
-      "sentence": "Le bébé montre le maïs."
-    },
-    {
-      "level": "a2",
-      "word": "maïs",
-      "sentence": "Ce matin, le cuisinier trouve le maïs même ici."
-    },
-    {
-      "level": "b1",
-      "word": "maïs",
-      "sentence": "Ce matin, quand la collègue prend le maïs, et Emma est très contente."
-    },
-    {
-      "level": "a1",
-      "word": "melon",
-      "sentence": "Le directeur sert le melon avec Marc."
-    },
-    {
-      "level": "a2",
-      "word": "melon",
-      "sentence": "Ce soir, Simon mange le melon à la maison."
-    },
-    {
-      "level": "b1",
-      "word": "melon",
-      "sentence": "Ce matin, quand la maîtresse apporte le melon, parce que Marc est content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "menu",
-      "sentence": "La grand-mère achète le menu."
-    },
-    {
-      "level": "a2",
-      "word": "menu",
-      "sentence": "À midi, la fille prépare le menu avec Marc."
-    },
-    {
-      "level": "b1",
-      "word": "menu",
-      "sentence": "Ce matin, quand la voisine choisit le menu, et Emma est très contente."
-    },
-    {
-      "level": "a1",
-      "word": "miel",
-      "sentence": "Le cousin partage le miel même ici."
-    },
-    {
-      "level": "a2",
-      "word": "miel",
-      "sentence": "Avant le repas, la grand-mère choisit le miel même ici."
-    },
-    {
-      "level": "b1",
-      "word": "miel",
-      "sentence": "Ce matin, quand la boulangère mange le miel, parce que Marc est content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "monde",
-      "sentence": "Le papa photographie le monde avec Marc."
-    },
-    {
-      "level": "a2",
-      "word": "monde",
-      "sentence": "Avant le repas, la jardinière observe le monde même ici."
-    },
-    {
-      "level": "b1",
-      "word": "monde",
-      "sentence": "Ce matin, quand la copine admire le monde, parce que Marc est content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "montre",
-      "sentence": "Marc porte la montre bien."
-    },
-    {
-      "level": "a2",
-      "word": "montre",
-      "sentence": "Après le cours, Manon porte la montre même ici."
-    },
-    {
-      "level": "b1",
-      "word": "montre",
-      "sentence": "Ce matin, quand une amie porte la montre, et Emma est très contente."
-    },
-    {
-      "level": "a1",
-      "word": "moto",
-      "sentence": "La musicienne prend la moto."
-    },
-    {
-      "level": "a2",
-      "word": "moto",
-      "sentence": "Avant le repas, le musicien prend la moto à la maison."
-    },
-    {
-      "level": "b1",
-      "word": "moto",
-      "sentence": "Quand le professeur prend la moto même ici, parce que Marc est content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "mouche",
-      "sentence": "La sœur attrape la mouche même ici."
-    },
-    {
-      "level": "a2",
-      "word": "mouche",
-      "sentence": "À midi, le bébé caresse la mouche avec Manon."
-    },
-    {
-      "level": "b1",
-      "word": "mouche",
-      "sentence": "Ce matin, quand la tante observe la mouche, et Emma est très contente."
-    },
-    {
-      "level": "a1",
-      "word": "moule",
-      "sentence": "La cuisinière mange la moule."
-    },
-    {
-      "level": "a2",
-      "word": "moule",
-      "sentence": "Après le cours, le directeur apporte la moule même ici."
-    },
-    {
-      "level": "b1",
-      "word": "moule",
-      "sentence": "À midi, quand Simon coupe la moule avec Manon, et Emma est très contente."
-    },
-    {
-      "level": "a1",
-      "word": "moulin",
-      "sentence": "Un ami admire le moulin."
-    },
-    {
-      "level": "a2",
-      "word": "moulin",
-      "sentence": "Avant le repas, la grand-mère plante le moulin à la maison."
-    },
-    {
-      "level": "b1",
-      "word": "moulin",
-      "sentence": "Quand la fille dessine le moulin même ici, parce que Marc est content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "mouton",
-      "sentence": "Le papa regarde le mouton avec Manon."
-    },
-    {
-      "level": "a2",
-      "word": "mouton",
-      "sentence": "Ce matin, le cousin nourrit le mouton avec Marc."
-    },
-    {
-      "level": "b1",
-      "word": "mouton",
-      "sentence": "Ce matin, quand la copine observe le mouton, et Emma est très contente."
-    },
-    {
-      "level": "a1",
-      "word": "mur",
-      "sentence": "Le grand-père longe le mur même ici."
-    },
-    {
-      "level": "a2",
-      "word": "mur",
-      "sentence": "À midi, le papa peint le mur même ici."
-    },
-    {
-      "level": "b1",
-      "word": "mur",
-      "sentence": "Ce matin, quand la jardinière mesure le mur, parce que Marc est content aussi."
-    },
-    {
-      "level": "a1",
       "word": "musique",
-      "sentence": "Le collègue aime la musique."
-    },
-    {
-      "level": "a2",
-      "word": "musique",
-      "sentence": "Ce matin, la jardinière aime la musique avec Manon."
-    },
-    {
-      "level": "b1",
-      "word": "musique",
-      "sentence": "Ce matin, quand Manon aime la musique, parce que Marc est content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "musée",
-      "sentence": "Le maître visite le musée."
-    },
-    {
-      "level": "a2",
-      "word": "musée",
-      "sentence": "Ce soir, la maman visite le musée même ici."
-    },
-    {
-      "level": "b1",
-      "word": "musée",
-      "sentence": "Ce matin, quand le musicien visite le musée, et Emma est très contente."
-    },
-    {
-      "level": "a1",
-      "word": "mûre",
-      "sentence": "Le voisin goûte la mûre avec Manon."
-    },
-    {
-      "level": "a2",
-      "word": "mûre",
-      "sentence": "Ce matin, le maître prépare la mûre avec Manon."
-    },
-    {
-      "level": "b1",
-      "word": "mûre",
-      "sentence": "Ce matin, quand le bébé sert la mûre, et Emma est très contente."
-    },
-    {
-      "level": "a1",
-      "word": "pomme",
-      "sentence": "Le boulanger veut la pomme."
-    },
-    {
-      "level": "a2",
-      "word": "pomme",
-      "sentence": "Ce matin, la cuisinière mange la pomme avec Manon."
-    },
-    {
-      "level": "b1",
-      "word": "pomme",
-      "sentence": "Ce matin, quand le directeur choisit la pomme, parce que Marc est content aussi."
-    }
-  ],
-  "type10": [
-    {
-      "level": "a2",
-      "sentence": "Ce soir, la boulangère marche avec un ami avec Manon.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boulangère marche avec un ami avec Manon."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le médecin téléphone à un ami, et Emma est très contente.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " médecin téléphone à un ami, et Emma est très contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le musicien invite la femme.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " musicien invite "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " femme."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le professeur salue la femme avec Manon.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " professeur salue "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " femme avec Manon."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la cousine suit la femme, parce que Marc est content aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cousine suit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " femme, parce que Marc est content aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le frère console la madame.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " frère console "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " madame."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, la tante invite la madame même ici.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " tante invite "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " madame même ici."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la factrice salue la madame, et Emma est très contente.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " factrice salue "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " madame, et Emma est très contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le cuisinier pose le mai avec Marc.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " cuisinier pose "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " mai avec Marc."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la collègue montre le mai à la maison.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " collègue montre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " mai à "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maison."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Emma trouve le mai, parce que Marc est content aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Emma trouve "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " mai, parce que Marc est content aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Simon aide la maman bien.",
-      "parts": [
-        {
-          "t": "Simon aide "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maman bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le cuisinier rentre chez la maman avec Manon.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cuisinier rentre chez "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maman avec Manon."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la sœur appelle la maman, et Emma est très contente.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " sœur appelle "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maman, et Emma est très contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La fille repasse la manche même ici.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " fille repasse "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " manche même ici."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, la voisine choisit la manche avec Manon.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " voisine choisit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " manche avec Manon."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le copain met la manche, parce que Marc est content aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " copain met "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " manche, parce que Marc est content aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La grand-mère utilise la mangue.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " grand-mère utilise "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " mangue."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, la boulangère oublie la mangue même ici.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boulangère oublie "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " mangue même ici."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le jardinier cherche la mangue, et Emma est très contente.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardinier cherche "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " mangue, et Emma est très contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le cousin prépare le mardi avec Manon.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " cousin prépare "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " mardi avec Manon."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Manon choisit le mardi à la maison.",
-      "parts": [
-        {
-          "t": "À midi, Manon choisit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " mardi à "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maison."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand une amie aime le mardi, parce que Marc est content aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand une amie aime "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " mardi, parce que Marc est content aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La maman plante la mare.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " maman plante "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " mare."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le musicien dessine la mare avec Marc.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " musicien dessine "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " mare avec Marc."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le professeur voit la mare, et Emma est très contente.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " professeur voit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " mare, et Emma est très contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La professeure invite le mari même ici.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " professeure invite "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " mari même ici."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le professeur aide le mari avec Marc.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " professeur aide "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " mari avec Marc."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le musicien salue le mari, et Emma est très contente.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " musicien salue "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " mari, et Emma est très contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le bébé montre le maïs.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " bébé montre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " maïs."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le cuisinier trouve le maïs même ici.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cuisinier trouve "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " maïs même ici."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la collègue prend le maïs, et Emma est très contente.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " collègue prend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " maïs, et Emma est très contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le directeur sert le melon avec Marc.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " directeur sert "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " melon avec Marc."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Simon mange le melon à la maison.",
-      "parts": [
-        {
-          "t": "Ce soir, Simon mange "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " melon à "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maison."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la maîtresse apporte le melon, parce que Marc est content aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maîtresse apporte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " melon, parce que Marc est content aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La grand-mère achète le menu.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " grand-mère achète "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " menu."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, la fille prépare le menu avec Marc.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " fille prépare "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " menu avec Marc."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la voisine choisit le menu, et Emma est très contente.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " voisine choisit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " menu, et Emma est très contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le cousin partage le miel même ici.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " cousin partage "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " miel même ici."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la grand-mère choisit le miel même ici.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " grand-mère choisit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " miel même ici."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la boulangère mange le miel, parce que Marc est content aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boulangère mange "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " miel, parce que Marc est content aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le papa photographie le monde avec Marc.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " papa photographie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " monde avec Marc."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la jardinière observe le monde même ici.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " jardinière observe "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " monde même ici."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la copine admire le monde, parce que Marc est content aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " copine admire "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " monde, parce que Marc est content aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Marc porte la montre bien.",
-      "parts": [
-        {
-          "t": "Marc porte "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " montre bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Manon porte la montre même ici.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Manon porte "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " montre même ici."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand une amie porte la montre, et Emma est très contente.",
-      "parts": [
-        {
-          "t": "Ce matin, quand une amie porte "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " montre, et Emma est très contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La musicienne prend la moto.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " musicienne prend "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " moto."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le musicien prend la moto à la maison.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " musicien prend "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " moto à "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maison."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand le professeur prend la moto même ici, parce que Marc est content aussi.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " professeur prend "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " moto même ici, parce que Marc est content aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La sœur attrape la mouche même ici.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " sœur attrape "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " mouche même ici."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le bébé caresse la mouche avec Manon.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bébé caresse "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " mouche avec Manon."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la tante observe la mouche, et Emma est très contente.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " tante observe "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " mouche, et Emma est très contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La cuisinière mange la moule.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " cuisinière mange "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " moule."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le directeur apporte la moule même ici.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " directeur apporte "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " moule même ici."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Simon coupe la moule avec Manon, et Emma est très contente.",
-      "parts": [
-        {
-          "t": "À midi, quand Simon coupe "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " moule avec Manon, et Emma est très contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Un ami admire le moulin.",
-      "parts": [
-        {
-          "t": "Un ami admire "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " moulin."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la grand-mère plante le moulin à la maison.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " grand-mère plante "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " moulin à "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maison."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand la fille dessine le moulin même ici, parce que Marc est content aussi.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " fille dessine "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " moulin même ici, parce que Marc est content aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le papa regarde le mouton avec Manon.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " papa regarde "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " mouton avec Manon."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le cousin nourrit le mouton avec Marc.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cousin nourrit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " mouton avec Marc."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la copine observe le mouton, et Emma est très contente.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " copine observe "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " mouton, et Emma est très contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le grand-père longe le mur même ici.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " grand-père longe "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " mur même ici."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le papa peint le mur même ici.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " papa peint "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " mur même ici."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la jardinière mesure le mur, parce que Marc est content aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " jardinière mesure "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " mur, parce que Marc est content aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le collègue aime la musique.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " collègue aime "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " musique."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, la jardinière aime la musique avec Manon.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " jardinière aime "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " musique avec Manon."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Manon aime la musique, parce que Marc est content aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Manon aime "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " musique, parce que Marc est content aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le maître visite le musée.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " maître visite "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " musée."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, la maman visite le musée même ici.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maman visite "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " musée même ici."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le musicien visite le musée, et Emma est très contente.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " musicien visite "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " musée, et Emma est très contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le voisin goûte la mûre avec Manon.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " voisin goûte "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " mûre avec Manon."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le maître prépare la mûre avec Manon.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " maître prépare "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " mûre avec Manon."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le bébé sert la mûre, et Emma est très contente.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bébé sert "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " mûre, et Emma est très contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le boulanger veut la pomme.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " boulanger veut "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " pomme."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, la cuisinière mange la pomme avec Manon.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cuisinière mange "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " pomme avec Manon."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le directeur choisit la pomme, parce que Marc est content aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " directeur choisit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " pomme, parce que Marc est content aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le copain invite un ami avec Manon.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " copain invite un ami avec Manon."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le bébé remercie la femme.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " bébé remercie "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " femme."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Marc appelle la madame bien.",
-      "parts": [
-        {
-          "t": "Marc appelle "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " madame bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le papa prend le mai avec Manon.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " papa prend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " mai avec Manon."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le papa pose le maïs avec Marc.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " papa pose "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " maïs avec Marc."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la voisine partage le melon près de Emma.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " voisine partage "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " melon près de Emma."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, la maîtresse coupe le menu avec Manon.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maîtresse coupe "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " menu avec Manon."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le professeur achète le miel même ici.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " professeur achète "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " miel même ici."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le bébé soigne le mouton, et Emma est très contente.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bébé soigne "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " mouton, et Emma est très contente."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand la copine longe le mur même ici, parce que Marc est content aussi.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " copine longe "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " mur même ici, parce que Marc est content aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la grand-mère aime la musique, parce que Marc est content aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " grand-mère aime "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " musique, parce que Marc est content aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la maîtresse visite le musée, et Emma est très contente.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maîtresse visite "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " musée, et Emma est très contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le garçon téléphone à la maman.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " garçon téléphone à "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maman."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La musicienne enfile la manche.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " musicienne enfile "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " manche."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le grand-père prend la mangue avec Manon.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " grand-père prend "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " mangue avec Manon."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La fille note le mardi même ici.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " fille note "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " mardi même ici."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le bébé photographie la mare avec Marc.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " bébé photographie "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " mare avec Marc."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La professeure remercie le mari.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " professeure remercie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " mari."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, la jardinière plante le monde avec Manon.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " jardinière plante "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " monde avec Manon."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Simon porte la montre même ici.",
-      "parts": [
-        {
-          "t": "À midi, Simon porte "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " montre même ici."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Emma prend la moto avec Manon.",
-      "parts": [
-        {
-          "t": "À midi, Emma prend "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " moto avec Manon."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le collègue soigne la mouche à la maison.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " collègue soigne "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " mouche à "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maison."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le médecin sert la moule avec Manon.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " médecin sert "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " moule avec Manon."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, la maîtresse voit le moulin avec Marc.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maîtresse voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " moulin avec Marc."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Emma achète la mûre à la maison, et Emma est très contente.",
-      "parts": [
-        {
-          "t": "À midi, quand Emma achète "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " mûre à "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maison, et Emma est très contente."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le grand-père cueille la pomme, et Emma est très contente.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " grand-père cueille "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " pomme, et Emma est très contente."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la boulangère accompagne un ami, et Emma est très contente.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boulangère accompagne un ami, et Emma est très contente."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le bébé embrasse la femme, parce que Marc est content aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
+      "variants": [
         {
-          "t": " bébé embrasse "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " femme, parce que Marc est content aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Marc suit la madame, parce que Marc est content aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Marc suit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " madame, parce que Marc est content aussi."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand mon ami Mathieu vient chez moi, nous mangeons ensemble et faisons de la musique."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "Ce matin, quand le médecin cherche le mai, et Emma est très contente.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " médecin cherche "
-        },
+      "word": "vêtements",
+      "variants": [
         {
-          "blank": "le"
-        },
-        {
-          "t": " mai, et Emma est très contente."
+          "level": "a2",
+          "number": "plur",
+          "sentences": [
+            "Maman range les vêtements dans la grande armoire de la chambre."
+          ]
         }
-      ]
-    }
-  ],
-  "type12": [
-    {
-      "level": "a1",
-      "sentence": "Le copain invite un ami avec Manon."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le bébé remercie la femme."
-    },
-    {
-      "level": "a1",
-      "sentence": "Marc appelle la madame bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le papa prend le mai avec Manon."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le papa pose le maïs avec Marc."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la voisine partage le melon près de Emma."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, la maîtresse coupe le menu avec Manon."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le professeur achète le miel même ici."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le bébé soigne le mouton, et Emma est très contente."
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand la copine longe le mur même ici, parce que Marc est content aussi."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la grand-mère aime la musique, parce que Marc est content aussi."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la maîtresse visite le musée, et Emma est très contente."
-    }
-  ],
-  "type14": [
-    {
-      "level": "a1",
-      "sentence": "Le garçon téléphone à la maman."
-    },
-    {
-      "level": "a1",
-      "sentence": "La musicienne enfile la manche."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le grand-père prend la mangue avec Manon."
-    },
-    {
-      "level": "a1",
-      "sentence": "La fille note le mardi même ici."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le bébé photographie la mare avec Marc."
-    },
-    {
-      "level": "a1",
-      "sentence": "La professeure remercie le mari."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, la jardinière plante le monde avec Manon."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Simon porte la montre même ici."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Emma prend la moto avec Manon."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le collègue soigne la mouche à la maison."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le médecin sert la moule avec Manon."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, la maîtresse voit le moulin avec Marc."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Emma achète la mûre à la maison, et Emma est très contente."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le grand-père cueille la pomme, et Emma est très contente."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la boulangère accompagne un ami, et Emma est très contente."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le bébé embrasse la femme, parce que Marc est content aussi."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Marc suit la madame, parce que Marc est content aussi."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le médecin cherche le mai, et Emma est très contente."
-    }
-  ],
-  "type12Stories": [
-    {
-      "level": "a2",
-      "sentences": [
-        "Manon appelle sa maman le mardi.",
-        "Elles préparent un melon et une mangue.",
-        "Maman pose aussi une pomme sur la table.",
-        "Manon met de la musique douce.",
-        "Son ami Marc arrive avec du miel.",
-        "Ils mangent le melon près de la mare.",
-        "Marc montre sa montre neuve à Manon.",
-        "Puis ils regardent un mouton dans le pré.",
-        "Avant de partir, Manon embrasse sa maman."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Mardi matin, Marc range le menu de la semaine.",
-        "Sa maman lui demande d’acheter un melon et une mangue.",
-        "Au marché, il croise une madame qui vend du miel.",
-        "Marc choisit aussi une pomme et un peu de maïs.",
-        "Sur le chemin, il écoute de la musique dans ses écouteurs.",
-        "Chez lui, il pose les sacs près du mur de la cuisine.",
-        "Sa maman coupe le melon pendant qu’il lave la pomme.",
-        "Ensemble, ils parlent du musée prévu le mois prochain.",
-        "Le soir, Marc remet sa montre et range le menu."
-      ]
-    },
-    {
-      "level": "a2",
-      "sentences": [
-        "Emma monte sur la moto avec son mari.",
-        "Ils roulent jusqu’à la mare du village.",
-        "Emma apporte une mangue et une pomme.",
-        "Son mari ouvre un pot de miel.",
-        "Ils écoutent de la musique dehors.",
-        "Un mouton passe près du mur bas.",
-        "Emma regarde l’heure à sa montre.",
-        "Puis ils mangent le melon partagé.",
-        "Ils rentrent contents chez maman Emma."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Manon visite le musée avec son ami Mohamed.",
-        "Dans la salle, une madame explique une montre ancienne.",
-        "Manon prend des notes sur le monde d’autrefois.",
-        "Mohamed photographie un mural et un moulin miniature.",
-        "À midi, ils mangent une pomme et un morceau de melon.",
-        "Manon verse un peu de miel sur une mûre.",
-        "Ils parlent musique, moto et voyages de mai.",
-        "Sur le chemin, ils s’arrêtent devant une mare calme.",
-        "Manon appelle sa maman pour raconter la journée."
-      ]
-    },
-    {
-      "level": "a2",
-      "sentences": [
-        "Mardi, Marc aide sa maman.",
-        "Il lit le menu collé au mur.",
-        "Maman veut une soupe et une pomme.",
-        "Marc coupe le melon et la mangue.",
-        "Il ajoute une cuillère de miel.",
-        "La musique joue dans la maison.",
-        "Son ami arrive avec une montre cassée.",
-        "Marc la pose près du mur, prudemment.",
-        "Ils mangent ensemble, puis Marc dit merci à maman."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "En mai, Emma prépare un pique-nique près de la mare.",
-        "Elle met dans le panier un melon, une mangue et une pomme.",
-        "Son mari apporte du miel et une enceinte pour la musique.",
-        "Leur ami Mohamed arrive en moto, un peu en retard.",
-        "Ils s’asseyent sur une manche de couverture contre le mur bas.",
-        "Emma lit le menu improvisé : fruits, miel, pain.",
-        "Mohamed montre sa montre et rit de l’heure déjà tardive.",
-        "Un mouton s’approche, puis repart vers le moulin.",
-        "Avant la nuit, Emma envoie un message à sa maman."
-      ]
-    },
-    {
-      "level": "a2",
-      "sentences": [
-        "Manon va au marché avec maman.",
-        "Elles choisissent un melon bien mûr.",
-        "Manon prend aussi une mangue.",
-        "Maman achète du miel et une pomme.",
-        "Sur le chemin, elles voient une mare.",
-        "Un mouton dort près du mur.",
-        "Manon écoute de la musique.",
-        "À la maison, elles mangent le melon.",
-        "Manon embrasse maman et dit merci."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Marc travaille au musée le mardi après-midi.",
-        "Il accueille une madame et lui donne le menu de la visite.",
-        "Dans la salle, on entend une musique calme.",
-        "Marc explique un moulin, une montre et une moto anciennes.",
-        "La madame pose des questions sur le monde d’hier.",
-        "Pendant la pause, Marc mange une pomme et un peu de melon.",
-        "Il verse du miel sur une mûre trouvée dans son sac.",
-        "Le soir, il raconte tout à sa maman au téléphone.",
-        "Sa maman lui rappelle le rendez-vous de mai au marché."
-      ]
-    },
-    {
-      "level": "a2",
-      "sentences": [
-        "Emma met de la musique le mardi.",
-        "Elle coupe une mangue et un melon.",
-        "Son ami apporte une pomme et du miel.",
-        "Ils mangent près de la fenêtre.",
-        "Emma regarde sa montre : il est midi.",
-        "Puis ils marchent jusqu’à la mare.",
-        "Un mouton boit l’eau calmement.",
-        "Emma appelle sa maman pour dire bonjour.",
-        "Le soir, elle range le menu du dîner."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Mohamed et Manon préparent un goûter pour la maman de Manon.",
-        "Ils choisissent un melon parfumé, une mangue et des mûres.",
-        "Manon ajoute du miel et une pomme coupée en morceaux.",
-        "Mohamed colle le menu sur le mur de la cuisine.",
-        "Ils mettent une musique légère pendant qu’ils dressent la table.",
-        "Quand maman arrive, elle admire la montre neuve de Mohamed.",
-        "Ils parlent du musée, de la moto et du mois de mai.",
-        "Après le goûter, ils se promènent jusqu’à la mare.",
-        "Un mouton les regarde depuis le pré, immobile."
-      ]
-    }
-  ],
-  "type14Stories": [
-    {
-      "level": "a2",
-      "sentences": [
-        "Manon se lève tôt le mardi.",
-        "Sa maman prépare le menu du jour.",
-        "Elles mettent un melon sur la table.",
-        "Manon lave une mangue et une pomme.",
-        "Maman ouvre un pot de miel.",
-        "Une musique douce remplit la maison.",
-        "L’ami de Manon sonne à la porte.",
-        "Il montre sa montre et sourit.",
-        "Ils mangent le melon ensemble.",
-        "Puis ils partent vers la mare.",
-        "Un mouton marche près du mur.",
-        "Manon prend une photo du mouton.",
-        "Maman les attend avec une mûre.",
-        "Ils rentrent et rangent le menu.",
-        "Manon éteint la musique un moment.",
-        "Son ami parle d’une moto rouge.",
-        "Manon rêve d’aller au musée.",
-        "Le soir, elle embrasse sa maman.",
-        "Elle s’endort contente de sa journée."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Marc doit écrire le menu du restaurant pour mardi.",
-        "Sa maman lui suggère melon, mangue, miel et pomme.",
-        "Au marché, une madame lui vend du maïs et des mûres.",
-        "Marc note tout sur son téléphone, montre au poignet.",
-        "Dans la rue, une musique sort d’un magasin.",
-        "Il croise son ami Mohamed qui arrive en moto.",
-        "Ensemble, ils passent devant la mare du parc.",
-        "Un mouton d’une ferme voisine lève la tête.",
-        "Au musée d’à côté, une expo parle du monde rural.",
-        "Marc photographie un vieux moulin en maquette.",
-        "Mohamed préfère une montre exposée sous verre.",
-        "À midi, ils partagent le melon et la mangue.",
-        "Marc verse du miel sur un morceau de pomme.",
-        "Ils discutent du mois de mai et des projets.",
-        "Le soir, Marc colle le menu final au mur.",
-        "Sa maman goûte et sourit, fière de lui.",
-        "Marc range sa montre près du lit.",
-        "Il envoie un message à Mohamed.",
-        "Puis il s’endort, la musique encore en tête."
-      ]
-    },
-    {
-      "level": "a2",
-      "sentences": [
-        "Emma et son mari vont au marché.",
-        "Emma choisit un melon et une mangue.",
-        "Son mari prend une pomme et du miel.",
-        "Ils écoutent de la musique dehors.",
-        "Emma regarde l’heure à sa montre.",
-        "Ils s’arrêtent près d’une mare.",
-        "Un mouton passe le long du mur.",
-        "Emma appelle sa maman pour raconter.",
-        "Maman propose un menu simple le soir.",
-        "À la maison, Emma coupe le melon.",
-        "Son mari ouvre le pot de miel.",
-        "Ils mangent la mangue et la pomme.",
-        "Puis Emma range les fruits restants.",
-        "Son mari parle d’une moto à réparer.",
-        "Emma veut visiter le musée demain.",
-        "Ils collent le menu sur le mur.",
-        "La musique s’arrête doucement.",
-        "Emma dit merci à son mari.",
-        "Ils se reposent après la journée."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Le mardi de mai, Manon emmène sa maman au musée.",
-        "Elles regardent d’abord une montre et un moulin anciens.",
-        "Une madame guide le groupe d’une voix calme.",
-        "Manon écoute une musique enregistrée dans la salle.",
-        "Sa maman parle du monde d’avant, plein de souvenirs.",
-        "À la sortie, elles achètent un melon et une mangue.",
-        "Manon glisse aussi une pomme et un pot de miel dans le sac.",
-        "Sur un banc près de la mare, elles goûtent les fruits.",
-        "Un mouton s’approche du mur bas du parc.",
-        "Manon montre sa montre : il est déjà tard.",
-        "Elles rentrent à pied en parlant de moto et de voyages.",
-        "À la maison, Manon écrit le menu du dîner.",
-        "Sa maman coupe le melon pendant que Manon met de la musique.",
-        "Elles ajoutent du miel sur des mûres.",
-        "Après le repas, Manon range les assiettes près du mur.",
-        "Sa maman lui raconte une histoire de son mari.",
-        "Manon rit et pose sa tête sur son épaule.",
-        "Le soir, elle éteint la musique.",
-        "Elle s’endort en pensant au musée."
-      ]
-    },
-    {
-      "level": "a2",
-      "sentences": [
-        "Marc lit le menu du mardi.",
-        "Il veut du melon et du miel.",
-        "Sa maman coupe aussi une mangue.",
-        "Marc lave une pomme sous l’eau.",
-        "Ils mettent de la musique.",
-        "L’ami de Marc arrive souriant.",
-        "Il a une montre et une moto.",
-        "Ils mangent près de la fenêtre.",
-        "Puis ils vont voir la mare.",
-        "Un mouton dort contre le mur.",
-        "Marc prend une photo du mouton.",
-        "Sa maman les appelle pour le dîner.",
-        "Le menu parle aussi de maïs.",
-        "Marc goûte une mûre sucrée.",
-        "Il parle du musée avec son ami.",
-        "Le soir, il range sa montre.",
-        "La musique s’arrête dans la maison.",
-        "Marc dit bonne nuit à maman.",
-        "Il rêve d’une moto rouge."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Mohamed prépare une sortie à la mare avec ses amis.",
-        "Il vérifie sa montre, sa moto et le menu du pique-nique.",
-        "Manon apporte un melon, une mangue et une pomme.",
-        "Emma ajoute du miel, des mûres et un peu de maïs grillé.",
-        "Ils mettent une musique légère dans une enceinte.",
-        "Près du mur, un mouton observe le groupe sans bouger.",
-        "Mohamed coupe le melon pendant que Manon ouvre le miel.",
-        "Ils parlent du musée vu en mai et du monde à découvrir.",
-        "Emma montre une photo de son mari devant un moulin.",
-        "Quand le soleil baisse, Mohamed regarde sa montre.",
-        "Ils rangent les restes et éteignent la musique.",
-        "Sur le retour, la moto de Mohamed démarre au premier essai.",
-        "Manon appelle sa maman pour dire qu’elle rentre.",
-        "À la maison, elle colle le menu souvenir au mur.",
-        "Emma envoie un message à tout le monde.",
-        "Mohamed pose sa montre sur la table.",
-        "Il mange encore une mûre avant de dormir.",
-        "La nuit est calme autour de la mare lointaine.",
-        "Chacun s’endort avec la musique en mémoire."
-      ]
-    },
-    {
-      "level": "a2",
-      "sentences": [
-        "Maman prépare une mangue pour Manon.",
-        "Elle pose aussi un melon sur la table.",
-        "Manon apporte une pomme et du miel.",
-        "Elles écoutent de la musique ensemble.",
-        "Marc arrive avec sa montre neuve.",
-        "Il parle d’une moto et d’un musée.",
-        "Ils mangent le melon près du mur.",
-        "Puis ils marchent jusqu’à la mare.",
-        "Un mouton boit l’eau lentement.",
-        "Manon rit et prend une photo.",
-        "Maman lit le menu du soir.",
-        "Il y a du maïs et une mûre.",
-        "Marc dit merci à maman.",
-        "Manon range les fruits restants.",
-        "La musique continue un moment.",
-        "Marc regarde l’heure à sa montre.",
-        "Il doit partir en moto.",
-        "Manon embrasse sa maman.",
-        "Le mardi se termine doucement."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "En mai, une madame ouvre un petit stand près de la mare.",
-        "Elle vend du melon, de la mangue, du miel et des pommes.",
-        "Marc vient chaque mardi pour choisir les meilleurs fruits.",
-        "Sa maman lui a demandé aussi du maïs et des mûres.",
-        "Pendant qu’il paie, une musique sort d’une radio.",
-        "Marc croise Manon et Mohamed devant le mur du parc.",
-        "Ils parlent du musée, d’une moto et du monde à voir.",
-        "Manon montre sa montre : le temps passe vite.",
-        "Ils mangent une pomme ensemble avant de se séparer.",
-        "Le soir, Marc écrit le menu de la semaine au mur.",
-        "Sa maman coupe le melon pendant qu’il ouvre le miel.",
-        "Ils ajoutent la mangue et une mûre dans le saladier.",
-        "Marc raconte la madame du stand et le mouton du pré.",
-        "Sa maman rit et met une musique douce.",
-        "Après le repas, Marc range sa montre près du lit.",
-        "Il envoie un message à Mohamed.",
-        "Puis il pense encore au musée du week-end.",
-        "La nuit tombe sur la mare et sur la ville.",
-        "Marc s’endort, fatigué mais content."
-      ]
-    },
-    {
-      "level": "a2",
-      "sentences": [
-        "Emma met le melon dans un panier.",
-        "Elle ajoute une mangue et une pomme.",
-        "Son mari apporte du miel et du pain.",
-        "Ils partent vers la mare à pied.",
-        "Emma écoute de la musique en marchant.",
-        "Un mouton les regarde près du mur.",
-        "Ils s’assoient et mangent le melon.",
-        "Emma regarde sa montre : il est tard.",
-        "Elle appelle sa maman pour rassurer.",
-        "Maman propose un menu pour le soir.",
-        "Sur le retour, ils parlent du musée.",
-        "Le mari d’Emma veut une moto un jour.",
-        "À la maison, Emma range le panier.",
-        "Elle pose une mûre sur la table.",
-        "Son mari ouvre encore le pot de miel.",
-        "Ils mangent la pomme en silence.",
-        "Emma éteint la musique.",
-        "Elle dit bonne nuit à son mari.",
-        "Le mardi finit dans le calme."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Manon organise un goûter surprise pour sa maman un mardi de mai.",
-        "Elle demande à Marc d’apporter un melon et une mangue.",
-        "Mohamed vient en moto avec du miel et des mûres.",
-        "Emma colle le menu décoré au mur de la cuisine.",
-        "Ils mettent une musique joyeuse avant l’arrivée de maman.",
-        "Quand elle ouvre la porte, tout le monde crie « surprise ».",
-        "Maman rit, embrasse Manon et regarde la montre de Marc.",
-        "Ils parlent du musée, du monde et des projets d’été.",
-        "Manon coupe le melon pendant que Mohamed ouvre le miel.",
-        "Emma partage une pomme et raconte une histoire de mouton.",
-        "Après le goûter, ils se promènent jusqu’à la mare.",
-        "Un mouton vrai les suit un moment le long du mur.",
-        "Maman prend une photo de tout le groupe.",
-        "Sur le chemin du retour, la musique joue encore bas.",
-        "À la maison, Manon range les assiettes.",
-        "Marc vérifie l’heure et démarre sa moto.",
-        "Mohamed salue tout le monde et part aussi.",
-        "Manon reste seule un instant avec sa maman.",
-        "Elles s’endorment le cœur léger."
       ]
     }
   ]

@@ -1,1993 +1,799 @@
 {
-  "type9": [
+  "son": "w",
+  "phrases": [
     {
-      "level": "a1",
       "word": "bowling",
-      "sentence": "William gagne le bowling bien."
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Walter joue au bowling ce week-end."
+          ]
+        },
+        {
+          "level": "a2",
+          "sentences": [
+            "Wendy joue au bowling avec William et Walter ce week-end."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "William gagne au bowling ce week-end, mais Wendy et Walter préfèrent le wakeboard."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "bowling",
-      "sentence": "Ce soir, Owen regarde le bowling avec Wendy."
+      "word": "brownie",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Walter mange un brownie ce week-end.",
+            "Wendy mange un brownie le week-end."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Wendy prépare un brownie pour William et Walter ce week-end.",
+            "William prépare un brownie pour Wendy et Walter pendant le week-end."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand le brownie sort du four, Walter et Wendy le mangent avec William ce week-end.",
+            "William mange un brownie, mais Wendy et Walter préfèrent le kiwi ce week-end."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "bowling",
-      "sentence": "À midi, quand Owen marque le bowling au wifi, parce que Wendy est contente."
+      "word": "bungalow",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Walter loue un bungalow ce week-end."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Wendy dort dans le bungalow de William et Walter ce week-end.",
+            "William réserve un bungalow avec le wifi pour Wendy et Walter."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Comme le bungalow n’a pas de wifi, Wendy regarde un western avec Walter.",
+            "William loue un bungalow, mais Wendy et Walter préfèrent le wagon ce week-end."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
       "word": "clown",
-      "sentence": "La maîtresse commence le clown au wifi."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Le clown de Walter mange un sandwich.",
+            "Walter voit un clown ce week-end."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Wendy rit avec le clown de William et Walter ce week-end.",
+            "Wendy rit quand le clown mange un kiwi pendant le week-end."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand le clown arrive ce week-end, William et Wendy rient et Walter filme.",
+            "William joue le clown, mais Wendy et Walter préfèrent le western ce week-end."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "clown",
-      "sentence": "À midi, William termine le clown au wifi."
+      "word": "cow boy",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Walter déguise William en cow boy."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Wendy porte un chapeau de cow boy avec William et Walter."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "William regarde un western avec un cow boy, mais Wendy et Walter préfèrent le walkman."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "clown",
-      "sentence": "À midi, quand Owen écoute le clown avec William, et William est très content."
+      "word": "cow-boy",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Le cow-boy de Walter mange un kiwi."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
+      "word": "edelweiss",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Walter cueille un edelweiss ce week-end.",
+            "Wendy et Walter regardent un edelweiss."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Wendy trouve un edelweiss avec William et Walter ce week-end.",
+            "William cherche un edelweiss en montagne pendant le week-end avec Wendy."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand Walter trouve un edelweiss, il l’envoie à Wendy et à William ce week-end.",
+            "William photographie un edelweiss, mais Wendy et Walter préfèrent le kiwi ce week-end."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "gros",
+      "variants": [
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Il y a un gros escargot qui glisse sur l’escalier."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand Walter a faim, il partage un gros sandwich avec William et Wendy."
+          ]
+        }
+      ]
+    },
+    {
       "word": "interview",
-      "sentence": "Le grand-père regarde une interview ce week-end."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Walter passe une interview ce week-end.",
+            "Walter prépare une interview pour William."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Wendy fait une interview sur le web avec William ce week-end.",
+            "Wendy prépare l’interview de William et Walter ce week-end."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand l’interview commence, Walter se connecte au wifi et William allume la webcam.",
+            "William lit l’interview, mais Wendy et Walter préfèrent le western ce week-end."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "interview",
-      "sentence": "Avant le repas, William joue avec une interview avec Wendy."
-    },
-    {
-      "level": "b1",
-      "word": "interview",
-      "sentence": "À midi, quand Wendy choisit une interview ce week-end, et William est très content."
-    },
-    {
-      "level": "a1",
       "word": "kiwi",
-      "sentence": "Le jardinier achète le kiwi avec Wendy."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Walter mange un kiwi ce week-end.",
+            "Wendy donne un kiwi à Walter."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Wendy coupe un kiwi pour William et Walter ce week-end.",
+            "William coupe un kiwi pour la salade de Walter ce week-end."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand Wendy goûte un kiwi mûr, elle en offre un à Walter et William.",
+            "William mange un kiwi, mais Wendy et Walter préfèrent le wasabi ce week-end."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "kiwi",
-      "sentence": "Après le cours, Wendy partage le kiwi ce week-end."
+      "word": "lac",
+      "variants": [
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "William fait du wakeboard sur le lac avec Wendy et Walter."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand le lac est calme, Wendy fait du wakeboard et Walter filme avec la webcam."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "kiwi",
-      "sentence": "À midi, quand Edward choisit le kiwi au wifi, parce que Wendy est contente."
+      "word": "mine",
+      "variants": [
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Dans la mine, William remplit le wagonnet avec Walter pendant le week-end."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
+      "word": "Quand",
+      "variants": [
+        {
+          "level": "b1",
+          "sentences": [
+            "Quand William arrive au bowling ce week-end, il écrit à Walter et à Wendy."
+          ]
+        }
+      ]
+    },
+    {
       "word": "sandwich",
-      "sentence": "Owen enveloppe le sandwich bien."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Walter mange un sandwich au bowling.",
+            "Walter mange un sandwich avec Wendy.",
+            "Walter mange un sandwich ce week-end."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Wendy prépare un sandwich pour William et Walter ce week-end.",
+            "William prend un sandwich dans le wagon pendant le week-end.",
+            "William prépare un sandwich au thon pour Wendy ce week-end."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand il neige, Wendy fait du snowboard et Walter prépare un sandwich pour William.",
+            "William mange un sandwich, mais Wendy et Walter préfèrent le kiwi ce week-end."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "sandwich",
-      "sentence": "À midi, Edward emporte le sandwich ce week-end."
-    },
-    {
-      "level": "b1",
-      "word": "sandwich",
-      "sentence": "À midi, quand Edward mange le sandwich avec William, et William est très content."
-    },
-    {
-      "level": "a1",
-      "word": "show",
-      "sentence": "Le directeur écoute le show ce week-end."
-    },
-    {
-      "level": "a2",
-      "word": "show",
-      "sentence": "Ce soir, Owen aime le show au wifi."
-    },
-    {
-      "level": "b1",
-      "word": "show",
-      "sentence": "À midi, quand Edward choisit le show avec Wendy, parce que Wendy est contente."
-    },
-    {
-      "level": "a1",
       "word": "snowboard",
-      "sentence": "Le bébé attrape le snowboard ce week-end."
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Walter fait du snowboard ce week-end."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Wendy loue un snowboard pour William et Walter ce week-end."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "William fait du snowboard, mais Wendy et Walter préfèrent le wakeboard ce week-end."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "snowboard",
-      "sentence": "Après le cours, Owen marque le snowboard avec William."
-    },
-    {
-      "level": "b1",
-      "word": "snowboard",
-      "sentence": "À midi, quand Edward regarde le snowboard ce week-end, et William est très content."
-    },
-    {
-      "level": "a1",
       "word": "steward",
-      "sentence": "La musicienne prend le steward avec Wendy."
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Walter parle au steward ce week-end."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Le steward de Wendy sert un kiwi et un sandwich.",
+            "Wendy salue le steward avec William et Walter ce week-end."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand le steward arrive, Wendy et William demandent un sandwich et Walter prend un kiwi.",
+            "William remercie le steward, mais Wendy et Walter préfèrent le wagon ce week-end."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "steward",
-      "sentence": "À midi, William vend le steward ce week-end."
-    },
-    {
-      "level": "b1",
-      "word": "steward",
-      "sentence": "À midi, quand Owen conduit le steward au wifi, parce que Wendy est contente."
-    },
-    {
-      "level": "a1",
-      "word": "sweat",
-      "sentence": "Un ami porte le sweat avec William."
-    },
-    {
-      "level": "a2",
-      "word": "sweat",
-      "sentence": "Avant le repas, William repasse le sweat au wifi."
-    },
-    {
-      "level": "b1",
-      "word": "sweat",
-      "sentence": "À midi, quand William range le sweat avec Wendy, parce que Wendy est contente."
-    },
-    {
-      "level": "a1",
-      "word": "swing",
-      "sentence": "La cousine regarde le swing au wifi."
-    },
-    {
-      "level": "a2",
-      "word": "swing",
-      "sentence": "Après le cours, Wendy commence le swing avec William."
-    },
-    {
-      "level": "b1",
-      "word": "swing",
-      "sentence": "À midi, quand Owen commence le swing avec Wendy, parce que Wendy est contente."
-    },
-    {
-      "level": "a1",
       "word": "tramway",
-      "sentence": "La boulangère vend le tramway ce week-end."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Walter prend le tramway avec Wendy.",
+            "Walter prend le tramway ce week-end."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Wendy attend le tramway avec William et Walter ce week-end."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Comme le tramway est en retard, Walter écrit à Wendy et prévient William.",
+            "William prend le tramway, mais Wendy et Walter préfèrent le wagon ce week-end."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "tramway",
-      "sentence": "À midi, Edward conduit le tramway avec Wendy."
+      "word": "wagon",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Walter monte dans le wagon ce week-end.",
+            "Wendy et Walter montent dans le wagon."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Wendy attend le wagon avec William et Walter ce week-end."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand le wagon quitte la gare, Wendy, Walter et William se connectent au wifi.",
+            "William prend le wagon, mais Wendy et Walter préfèrent le tramway ce week-end."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "tramway",
-      "sentence": "À midi, quand Owen vend le tramway ce week-end, et William est très content."
+      "word": "wagonnet",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Walter pousse le wagonnet ce week-end.",
+            "Wendy et Walter poussent le wagonnet."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Wendy conduit le wagonnet avec William et Walter ce week-end."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand le wagonnet roule, Wendy filme et William l’envoie par wifi à Walter.",
+            "William regarde le wagonnet, mais Wendy et Walter préfèrent le wagon ce week-end."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
-      "word": "twist",
-      "sentence": "Le directeur écoute le twist avec Wendy."
+      "word": "wakeboard",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Walter fait du wakeboard ce week-end."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Wendy loue un wakeboard pour William et Walter ce week-end."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "William fait du wakeboard, mais Wendy et Walter préfèrent le snowboard ce week-end."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "twist",
-      "sentence": "Ce soir, Owen aime le twist ce week-end."
+      "word": "walkie talkie",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Walter prend le walkie talkie ce week-end."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Wendy utilise le walkie talkie avec William et Walter ce week-end."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "William perd le walkie talkie, mais Wendy et Walter préfèrent la webcam ce week-end."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "twist",
-      "sentence": "À midi, quand Wendy choisit le twist avec William, et William est très content."
+      "word": "walkie-talkie",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Walter a un walkie-talkie jaune."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "William parle à Wendy avec un walkie-talkie pendant le week-end."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
       "word": "walkman",
-      "sentence": "La jardinière écoute le walkman au wifi."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Walter écoute le walkman ce week-end."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Wendy prête le walkman à William et Walter ce week-end."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "William perd le walkman, mais Wendy et Walter préfèrent le walkie talkie ce week-end."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "walkman",
-      "sentence": "Après le cours, Owen regarde le walkman au wifi."
-    },
-    {
-      "level": "b1",
-      "word": "walkman",
-      "sentence": "À midi, quand Owen termine le walkman avec Wendy, parce que Wendy est contente."
-    },
-    {
-      "level": "a1",
       "word": "wallaby",
-      "sentence": "Le copain sauve le wallaby au wifi."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Walter voit un wallaby ce week-end."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Wendy dessine un wallaby avec William et Walter ce week-end."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "William photographie un wallaby, mais Wendy et Walter préfèrent le kiwi ce week-end."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "wallaby",
-      "sentence": "Ce matin, Owen caresse le wallaby avec William."
+      "word": "walrus",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Walter voit un walrus ce week-end."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Wendy dessine un walrus avec William et Walter ce week-end."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "William photographie un walrus, mais Wendy et Walter préfèrent le wallaby ce week-end."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "wallaby",
-      "sentence": "À midi, quand Owen observe le wallaby ce week-end, et William est très content."
+      "word": "Walter",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Walter est steward à Genève.",
+            "Walter fait du snowboard avec Wendy."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
       "word": "wapiti",
-      "sentence": "Le cuisinier soigne le wapiti ce week-end."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Walter voit un wapiti ce week-end."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Wendy dessine un wapiti avec William et Walter ce week-end."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "William photographie un wapiti, mais Wendy et Walter préfèrent le wallaby ce week-end."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "wapiti",
-      "sentence": "À midi, Owen voit le wapiti avec Wendy."
-    },
-    {
-      "level": "b1",
-      "word": "wapiti",
-      "sentence": "À midi, quand William regarde le wapiti avec Wendy, et William est très content."
-    },
-    {
-      "level": "a1",
       "word": "wasabi",
-      "sentence": "Wendy goûte le wasabi bien."
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Walter mange du wasabi ce week-end."
+          ]
+        },
+        {
+          "level": "a2",
+          "sentences": [
+            "Wendy achète du wasabi pour William et Walter ce week-end."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "William mange du wasabi, mais Wendy et Walter préfèrent le kiwi ce week-end."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "wasabi",
-      "sentence": "Après le cours, William partage le wasabi au wifi."
+      "word": "water polo",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Walter joue au water polo ce week-end."
+          ]
+        },
+        {
+          "level": "a2",
+          "sentences": [
+            "Wendy joue au water polo avec William et Walter ce week-end."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "William gagne au water polo, mais Wendy et Walter préfèrent le wakeboard ce week-end."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "wasabi",
-      "sentence": "À midi, quand William sert le wasabi avec Wendy, parce que Wendy est contente."
-    },
-    {
-      "level": "a1",
-      "word": "water-polo",
-      "sentence": "Le professeur marque le water-polo avec William."
-    },
-    {
-      "level": "a2",
-      "word": "water-polo",
-      "sentence": "À midi, Wendy lance le water-polo avec William."
-    },
-    {
-      "level": "b1",
-      "word": "water-polo",
-      "sentence": "À midi, quand William prépare le water-polo ce week-end, et William est très content."
-    },
-    {
-      "level": "a1",
       "word": "webcam",
-      "sentence": "La grand-mère trouve la webcam au wifi."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Walter allume la webcam ce week-end."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Wendy règle la webcam de William et Walter ce week-end."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "William teste la webcam, mais Wendy et Walter préfèrent le walkman ce week-end."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "webcam",
-      "sentence": "Avant le repas, Wendy utilise la webcam ce week-end."
-    },
-    {
-      "level": "b1",
-      "word": "webcam",
-      "sentence": "À midi, quand Owen range la webcam ce week-end, et William est très content."
-    },
-    {
-      "level": "a1",
       "word": "week-end",
-      "sentence": "La jardinière attend le week-end ce week-end."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Walter fait du wakeboard le week-end."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Le week-end, William joue au bowling avec Wendy et mange un kiwi.",
+            "Le week-end, William prend le tramway pour aller au cinéma avec Wendy.",
+            "William glisse en snowboard pendant le week-end avec Wendy et Walter."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "week-end",
-      "sentence": "Après le cours, Edward prépare le week-end ce week-end."
-    },
-    {
-      "level": "b1",
-      "word": "week-end",
-      "sentence": "À midi, quand Owen choisit le week-end avec William, et William est très content."
-    },
-    {
-      "level": "a1",
       "word": "western",
-      "sentence": "Le facteur écoute le western avec William."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Walter regarde un western ce week-end."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Walter regarde un western avec un cow-boy et mange un sandwich.",
+            "Wendy regarde un western avec William et Walter ce week-end."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "William regarde un western, mais Wendy et Walter préfèrent le walkman ce week-end."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "western",
-      "sentence": "À midi, Owen joue avec le western au wifi."
+      "word": "westerns",
+      "variants": [
+        {
+          "level": "b1",
+          "number": "plur",
+          "sentences": [
+            "Comme Walter adore les westerns, il regarde un cow-boy sur le web chaque week-end."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "western",
-      "sentence": "À midi, quand Wendy termine le western ce week-end, parce que Wendy est contente."
-    },
-    {
-      "level": "a1",
       "word": "wifi",
-      "sentence": "La voisine cherche le wifi avec William."
-    },
-    {
-      "level": "a2",
-      "word": "wifi",
-      "sentence": "Ce matin, Wendy cherche le wifi avec William."
-    },
-    {
-      "level": "b1",
-      "word": "wifi",
-      "sentence": "À midi, quand Owen range le wifi ce week-end, et William est très content."
-    },
-    {
-      "level": "a1",
-      "word": "wok",
-      "sentence": "Le médecin achète le wok au wifi."
-    },
-    {
-      "level": "a2",
-      "word": "wok",
-      "sentence": "Après le cours, William partage le wok ce week-end."
-    },
-    {
-      "level": "b1",
-      "word": "wok",
-      "sentence": "À midi, quand Owen choisit le wok au wifi, parce que Wendy est contente."
-    }
-  ],
-  "type10": [
-    {
-      "level": "a1",
-      "sentence": "William gagne le bowling bien.",
-      "parts": [
+      "variants": [
         {
-          "t": "William gagne "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bowling bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Owen regarde le bowling avec Wendy.",
-      "parts": [
-        {
-          "t": "Ce soir, Owen regarde "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bowling avec Wendy."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Owen marque le bowling au wifi, parce que Wendy est contente.",
-      "parts": [
-        {
-          "t": "À midi, quand Owen marque "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bowling au wifi, parce que Wendy est contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La maîtresse commence le clown au wifi.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " maîtresse commence "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " clown au wifi."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, William termine le clown au wifi.",
-      "parts": [
-        {
-          "t": "À midi, William termine "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " clown au wifi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Owen écoute le clown avec William, et William est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Owen écoute "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " clown avec William, et William est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le grand-père regarde une interview ce week-end.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " grand-père regarde une interview ce week-end."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, William joue avec une interview avec Wendy.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, William joue avec une interview avec Wendy."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le jardinier achète le kiwi avec Wendy.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " jardinier achète "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " kiwi avec Wendy."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Wendy partage le kiwi ce week-end.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Wendy partage "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " kiwi ce week-end."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Edward choisit le kiwi au wifi, parce que Wendy est contente.",
-      "parts": [
-        {
-          "t": "À midi, quand Edward choisit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " kiwi au wifi, parce que Wendy est contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Owen enveloppe le sandwich bien.",
-      "parts": [
-        {
-          "t": "Owen enveloppe "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sandwich bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Edward emporte le sandwich ce week-end.",
-      "parts": [
-        {
-          "t": "À midi, Edward emporte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sandwich ce week-end."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Edward mange le sandwich avec William, et William est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Edward mange "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sandwich avec William, et William est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le directeur écoute le show ce week-end.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " directeur écoute "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " show ce week-end."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Owen aime le show au wifi.",
-      "parts": [
-        {
-          "t": "Ce soir, Owen aime "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " show au wifi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Edward choisit le show avec Wendy, parce que Wendy est contente.",
-      "parts": [
-        {
-          "t": "À midi, quand Edward choisit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " show avec Wendy, parce que Wendy est contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le bébé attrape le snowboard ce week-end.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " bébé attrape "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " snowboard ce week-end."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Owen marque le snowboard avec William.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Owen marque "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " snowboard avec William."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Edward regarde le snowboard ce week-end, et William est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Edward regarde "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " snowboard ce week-end, et William est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La musicienne prend le steward avec Wendy.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " musicienne prend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " steward avec Wendy."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, William vend le steward ce week-end.",
-      "parts": [
-        {
-          "t": "À midi, William vend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " steward ce week-end."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Owen conduit le steward au wifi, parce que Wendy est contente.",
-      "parts": [
-        {
-          "t": "À midi, quand Owen conduit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " steward au wifi, parce que Wendy est contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Un ami porte le sweat avec William.",
-      "parts": [
-        {
-          "t": "Un ami porte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sweat avec William."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, William repasse le sweat au wifi.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, William repasse "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sweat au wifi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand William range le sweat avec Wendy, parce que Wendy est contente.",
-      "parts": [
-        {
-          "t": "À midi, quand William range "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sweat avec Wendy, parce que Wendy est contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La cousine regarde le swing au wifi.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " cousine regarde "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " swing au wifi."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Wendy commence le swing avec William.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Wendy commence "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " swing avec William."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Owen commence le swing avec Wendy, parce que Wendy est contente.",
-      "parts": [
-        {
-          "t": "À midi, quand Owen commence "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " swing avec Wendy, parce que Wendy est contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La boulangère vend le tramway ce week-end.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " boulangère vend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " tramway ce week-end."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Edward conduit le tramway avec Wendy.",
-      "parts": [
-        {
-          "t": "À midi, Edward conduit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " tramway avec Wendy."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Owen vend le tramway ce week-end, et William est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Owen vend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " tramway ce week-end, et William est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le directeur écoute le twist avec Wendy.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " directeur écoute "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " twist avec Wendy."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Owen aime le twist ce week-end.",
-      "parts": [
-        {
-          "t": "Ce soir, Owen aime "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " twist ce week-end."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Wendy choisit le twist avec William, et William est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Wendy choisit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " twist avec William, et William est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La jardinière écoute le walkman au wifi.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " jardinière écoute "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " walkman au wifi."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Owen regarde le walkman au wifi.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Owen regarde "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " walkman au wifi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Owen termine le walkman avec Wendy, parce que Wendy est contente.",
-      "parts": [
-        {
-          "t": "À midi, quand Owen termine "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " walkman avec Wendy, parce que Wendy est contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le copain sauve le wallaby au wifi.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " copain sauve "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " wallaby au wifi."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Owen caresse le wallaby avec William.",
-      "parts": [
-        {
-          "t": "Ce matin, Owen caresse "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " wallaby avec William."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Owen observe le wallaby ce week-end, et William est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Owen observe "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " wallaby ce week-end, et William est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le cuisinier soigne le wapiti ce week-end.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " cuisinier soigne "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " wapiti ce week-end."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Owen voit le wapiti avec Wendy.",
-      "parts": [
-        {
-          "t": "À midi, Owen voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " wapiti avec Wendy."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand William regarde le wapiti avec Wendy, et William est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand William regarde "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " wapiti avec Wendy, et William est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Wendy goûte le wasabi bien.",
-      "parts": [
-        {
-          "t": "Wendy goûte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " wasabi bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, William partage le wasabi au wifi.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, William partage "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " wasabi au wifi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand William sert le wasabi avec Wendy, parce que Wendy est contente.",
-      "parts": [
-        {
-          "t": "À midi, quand William sert "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " wasabi avec Wendy, parce que Wendy est contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le professeur marque le water-polo avec William.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " professeur marque "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " water-polo avec William."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Wendy lance le water-polo avec William.",
-      "parts": [
-        {
-          "t": "À midi, Wendy lance "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " water-polo avec William."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand William prépare le water-polo ce week-end, et William est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand William prépare "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " water-polo ce week-end, et William est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La grand-mère trouve la webcam au wifi.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " grand-mère trouve "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " webcam au wifi."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Wendy utilise la webcam ce week-end.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, Wendy utilise "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " webcam ce week-end."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Owen range la webcam ce week-end, et William est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Owen range "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " webcam ce week-end, et William est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La jardinière attend le week-end ce week-end.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " jardinière attend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " week-end ce week-end."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Edward prépare le week-end ce week-end.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Edward prépare "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " week-end ce week-end."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Owen choisit le week-end avec William, et William est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Owen choisit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " week-end avec William, et William est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le facteur écoute le western avec William.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " facteur écoute "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " western avec William."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Owen joue avec le western au wifi.",
-      "parts": [
-        {
-          "t": "À midi, Owen joue avec "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " western au wifi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Wendy termine le western ce week-end, parce que Wendy est contente.",
-      "parts": [
-        {
-          "t": "À midi, quand Wendy termine "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " western ce week-end, parce que Wendy est contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La voisine cherche le wifi avec William.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " voisine cherche "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " wifi avec William."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Wendy cherche le wifi avec William.",
-      "parts": [
-        {
-          "t": "Ce matin, Wendy cherche "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " wifi avec William."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Owen range le wifi ce week-end, et William est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Owen range "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " wifi ce week-end, et William est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le médecin achète le wok au wifi.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " médecin achète "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " wok au wifi."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, William partage le wok ce week-end.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, William partage "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " wok ce week-end."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Owen choisit le wok au wifi, parce que Wendy est contente.",
-      "parts": [
-        {
-          "t": "À midi, quand Owen choisit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " wok au wifi, parce que Wendy est contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le directeur attrape le bowling avec Wendy.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " directeur attrape "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bowling avec Wendy."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La boulangère aime le clown avec William.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " boulangère aime "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " clown avec William."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La voisine prépare le kiwi avec William.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " voisine prépare "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " kiwi avec William."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Owen emprunte le tramway au wifi.",
-      "parts": [
-        {
-          "t": "Ce soir, Owen emprunte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " tramway au wifi."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Owen joue avec le twist avec William.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Owen joue avec "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " twist avec William."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Edward joue avec le walkman avec Wendy.",
-      "parts": [
-        {
-          "t": "Ce matin, Edward joue avec "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " walkman avec Wendy."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Owen voit le wallaby avec Wendy.",
-      "parts": [
-        {
-          "t": "Ce soir, Owen voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " wallaby avec Wendy."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Wendy oublie le wifi au wifi, parce que Wendy est contente.",
-      "parts": [
-        {
-          "t": "À midi, quand Wendy oublie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " wifi au wifi, parce que Wendy est contente."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Wendy mange le wok avec William, et William est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Wendy mange "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " wok avec William, et William est très content."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Edward regarde le bowling avec William, et William est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Edward regarde "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bowling avec William, et William est très content."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Edward regarde le clown avec Wendy, parce que Wendy est contente.",
-      "parts": [
-        {
-          "t": "À midi, quand Edward regarde "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " clown avec Wendy, parce que Wendy est contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le professeur emporte le sandwich avec Wendy.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " professeur emporte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sandwich avec Wendy."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le grand-père termine le show avec William.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " grand-père termine "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " show avec William."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le cousin gagne le snowboard ce week-end.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " cousin gagne "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " snowboard ce week-end."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le voisin répare le steward au wifi.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " voisin répare "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " steward au wifi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Owen achète le sweat bien.",
-      "parts": [
-        {
-          "t": "Owen achète "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sweat bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La cousine aime le swing avec William.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " cousine aime "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " swing avec William."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Owen observe le wapiti ce week-end.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Owen observe "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " wapiti ce week-end."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Owen choisit le wasabi au wifi.",
-      "parts": [
-        {
-          "t": "À midi, Owen choisit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " wasabi au wifi."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Owen prépare le water-polo au wifi.",
-      "parts": [
-        {
-          "t": "Ce soir, Owen prépare "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " water-polo au wifi."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, William pose la webcam avec Wendy.",
-      "parts": [
-        {
-          "t": "À midi, William pose "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " webcam avec Wendy."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Owen note le week-end avec Wendy.",
-      "parts": [
-        {
-          "t": "À midi, Owen note "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " week-end avec Wendy."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Wendy regarde le western ce week-end.",
-      "parts": [
-        {
-          "t": "Ce matin, Wendy regarde "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " western ce week-end."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand William apporte le kiwi au wifi, parce que Wendy est contente.",
-      "parts": [
-        {
-          "t": "À midi, quand William apporte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " kiwi au wifi, parce que Wendy est contente."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Edward emporte le sandwich au wifi, parce que Wendy est contente.",
-      "parts": [
-        {
-          "t": "À midi, quand Edward emporte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sandwich au wifi, parce que Wendy est contente."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Owen regarde le show avec William, et William est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Owen regarde "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " show avec William, et William est très content."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Owen gagne le snowboard avec William, et William est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Owen gagne "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " snowboard avec William, et William est très content."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Owen regarde le steward avec Wendy, parce que Wendy est contente.",
-      "parts": [
-        {
-          "t": "À midi, quand Owen regarde "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " steward avec Wendy, parce que Wendy est contente."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand le wifi ne marche plus, Walter utilise son walkie-talkie pour parler à William."
+          ]
         }
       ]
-    }
-  ],
-  "type12": [
-    {
-      "level": "a1",
-      "sentence": "Le directeur attrape le bowling avec Wendy."
-    },
-    {
-      "level": "a1",
-      "sentence": "La boulangère aime le clown avec William."
-    },
-    {
-      "level": "a1",
-      "sentence": "Wendy aime une interview bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La voisine prépare le kiwi avec William."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Owen emprunte le tramway au wifi."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Owen joue avec le twist avec William."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Edward joue avec le walkman avec Wendy."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Owen voit le wallaby avec Wendy."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Wendy oublie le wifi au wifi, parce que Wendy est contente."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Wendy mange le wok avec William, et William est très content."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Edward regarde le bowling avec William, et William est très content."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Edward regarde le clown avec Wendy, parce que Wendy est contente."
-    }
-  ],
-  "type14": [
-    {
-      "level": "a1",
-      "sentence": "Le professeur emporte le sandwich avec Wendy."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le grand-père termine le show avec William."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le cousin gagne le snowboard ce week-end."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le voisin répare le steward au wifi."
-    },
-    {
-      "level": "a1",
-      "sentence": "Owen achète le sweat bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La cousine aime le swing avec William."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Owen observe le wapiti ce week-end."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Owen choisit le wasabi au wifi."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Owen prépare le water-polo au wifi."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, William pose la webcam avec Wendy."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Owen note le week-end avec Wendy."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Wendy regarde le western ce week-end."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Wendy commence une interview ce week-end, et William est très content."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand William apporte le kiwi au wifi, parce que Wendy est contente."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Edward emporte le sandwich au wifi, parce que Wendy est contente."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Owen regarde le show avec William, et William est très content."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Owen gagne le snowboard avec William, et William est très content."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Owen regarde le steward avec Wendy, parce que Wendy est contente."
     }
   ]
 }

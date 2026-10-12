@@ -1,2816 +1,980 @@
 {
-  "type9": [
+  "son": "in",
+  "phrases": [
     {
-      "level": "a1",
+      "word": "aimant",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Martin prend un aimant ce matin."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alain prend un aimant avec Martin dans le jardin ce matin."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quentin prend un aimant, mais Valentin et Alain préfèrent attendre demain matin avec Martin."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "animal",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Martin nourrit un animal ce matin."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alain nourrit un animal avec Martin dans le jardin ce matin."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quentin nourrit un animal, mais Valentin et Alain préfèrent attendre demain matin avec Martin."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "arlequin",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Martin est arlequin ce matin."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alain porte un costume d’arlequin avec Martin et Quentin ce matin."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quentin porte un costume d’arlequin, mais Valentin et Alain préfèrent attendre demain matin."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "aubergine",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Martin cuit une aubergine ce matin."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alain cuit une aubergine avec Martin dans le jardin ce matin."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quentin cuit une aubergine, mais Valentin et Alain préfèrent attendre demain matin avec Martin."
+          ]
+        }
+      ]
+    },
+    {
       "word": "bain",
-      "sentence": "Inès s’habille après le bain."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Martin prend un bain ce matin."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alain prend un bain avec Martin dans le jardin ce matin."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quentin prend un bain, mais Valentin et Alain préfèrent attendre demain matin avec Martin."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "bain",
-      "sentence": "Ce matin, la copine s’habille après le bain avec Inès."
+      "word": "baleine",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Il n’y a pas de baleine dans la Seine.",
+            "Martin voit une baleine ce matin."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alain voit une baleine avec Martin dans le jardin ce matin."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quentin voit une baleine, mais Valentin et Alain préfèrent attendre demain matin avec Martin."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "bain",
-      "sentence": "Ce matin, quand le voisin s’habille après le bain, parce que Martin sourit aussi."
+      "word": "bin",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Martin dit « bin oui » ce matin."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alain dit « bin oui » avec Martin dans le jardin ce matin."
+          ]
+        },
+        {
+          "level": "b1",
+          "sentences": [
+            "Quentin dit « bin oui », mais Valentin et Alain préfèrent attendre demain matin avec Martin."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
+      "word": "bobine",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Martin prend une bobine ce matin."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alain prend une bobine avec Martin dans le jardin ce matin."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quentin prend une bobine, mais Valentin et Alain préfèrent attendre demain matin avec Martin."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "bowling",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Martin joue au bowling ce matin."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alain joue au bowling avec Martin dans le jardin ce matin."
+          ]
+        },
+        {
+          "level": "b1",
+          "sentences": [
+            "Quentin joue au bowling, mais Valentin et Alain préfèrent attendre demain matin avec Martin."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "brindille",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Martin ramasse une brindille ce matin."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alain ramasse une brindille avec Martin dans le jardin ce matin."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quentin ramasse une brindille, mais Valentin et Alain préfèrent attendre demain matin avec Martin."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "cabine",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Martin ferme la cabine ce matin."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alain ferme la cabine avec Martin dans le jardin ce matin."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quentin ferme la cabine, mais Valentin et Alain préfèrent attendre demain matin avec Martin."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "calin",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Martin fait un câlin ce matin."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alain fait un câlin avec Martin dans le jardin ce matin."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quentin fait un câlin, mais Valentin et Alain préfèrent attendre demain matin avec Martin."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "capitaine",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Martin salue le capitaine ce matin."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alain salue le capitaine avec Martin dans le jardin ce matin."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quentin salue le capitaine, mais Valentin et Alain préfèrent attendre demain matin avec Martin."
+          ]
+        }
+      ]
+    },
+    {
       "word": "ceinture",
-      "sentence": "Le cuisinier lave la ceinture."
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Martin met sa ceinture ce matin."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alain achète une ceinture et un pull pour son voisin Quentin.",
+            "Alain met sa ceinture avec Martin dans le jardin ce matin."
+          ]
+        },
+        {
+          "level": "b1",
+          "sentences": [
+            "Quentin met sa ceinture, mais Valentin et Alain préfèrent attendre demain matin avec Martin."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "ceinture",
-      "sentence": "Avant le repas, le médecin met la ceinture avec Martin."
+      "word": "certain",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Martin est certain ce matin."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alain est certain avec Martin dans le jardin ce matin."
+          ]
+        },
+        {
+          "level": "b1",
+          "sentences": [
+            "Quentin est certain, mais Valentin et Alain préfèrent attendre demain matin avec Martin."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "ceinture",
-      "sentence": "Ce matin, quand la voisine porte la ceinture, et Inès sourit enfin bien."
+      "word": "chagrin",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Martin a du chagrin ce matin."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alain a du chagrin avec Martin dans le jardin ce matin."
+          ]
+        },
+        {
+          "level": "b1",
+          "sentences": [
+            "Quentin a du chagrin, mais Valentin et Alain préfèrent attendre demain matin avec Martin."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
       "word": "chemin",
-      "sentence": "La maîtresse connaît le chemin enfin."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Martin prend le chemin ce matin."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alain prend le chemin avec Martin dans le jardin ce matin."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quentin prend le chemin, mais Valentin et Alain préfèrent attendre demain matin avec Martin."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "chemin",
-      "sentence": "Après le cours, le cuisinier montre le chemin enfin."
+      "word": "chimie",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Martin étudie la chimie ce matin."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alain étudie la chimie avec Martin dans le jardin ce matin."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quentin étudie la chimie, mais Valentin et Alain préfèrent attendre demain matin avec Martin."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "chemin",
-      "sentence": "Ce matin, quand la boulangère continue le chemin, et Inès sourit enfin bien."
+      "word": "cinquante",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Martin a cinquante ans ce matin."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alain a cinquante ans avec Martin dans le jardin ce matin."
+          ]
+        },
+        {
+          "level": "b1",
+          "sentences": [
+            "Quentin a cinquante ans, mais Valentin et Alain préfèrent attendre demain matin avec Martin."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
-      "word": "cinq",
-      "sentence": "Le facteur ouvre le cinq avec Martin."
+      "word": "clin",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Martin fait un clin d’œil."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alain fait un clin d’œil avec Martin et Quentin ce matin."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quentin fait un clin d’œil, mais Valentin et Alain préfèrent attendre demain matin."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "cinq",
-      "sentence": "Ce matin, la cousine prépare le cinq avec Inès."
+      "word": "cylindre",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Martin dessine un cylindre ce matin.",
+            "Martin dessine un cylindre demain."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alain dessine un cylindre avec Martin dans le jardin ce matin.",
+            "Alain remplit un cylindre avec du sable fin pour son copain."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand Quentin dessine un cylindre, il mesure plein de lignes avec son copain Alain.",
+            "Quentin dessine un cylindre, mais Valentin et Alain préfèrent attendre demain matin avec Martin."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "cinq",
-      "sentence": "À midi, quand Quentin utilise le cinq dans le jardin, parce que Martin sourit aussi."
-    },
-    {
-      "level": "a1",
       "word": "dauphin",
-      "sentence": "Christine regarde le dauphin bien."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Le dauphin nage avec Martin.",
+            "Martin voit un dauphin ce matin."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alain regarde un dauphin sauter le matin avec son copain.",
+            "Alain voit un dauphin avec Martin dans le jardin ce matin."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand le dauphin saute, Martin applaudit plein de joie avec son copain Alain.",
+            "Quentin voit un dauphin, mais Valentin et Alain préfèrent attendre demain matin avec Martin."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "dauphin",
-      "sentence": "Avant le repas, le copain nourrit le dauphin avec Martin."
+      "word": "dinde",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Martin mange de la dinde ce matin.",
+            "Martin mange de la dinde."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alain mange de la dinde avec Martin dans le jardin ce matin.",
+            "Alain prépare une dinde avec du vin et du pain."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand la dinde est cuite, Quentin la sert à son voisin Martin avec du pain.",
+            "Quentin mange de la dinde, mais Valentin et Alain préfèrent attendre demain matin."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "dauphin",
-      "sentence": "Ce matin, quand le jardinier observe le dauphin, et Inès sourit enfin bien."
+      "word": "enceinte",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Martin achète une enceinte demain.",
+            "Martin aide une femme enceinte ce matin."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alain aide une femme enceinte avec Martin dans le jardin ce matin.",
+            "Alain branche l’enceinte de son copain sur le téléphone de Quentin."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quentin aide une femme enceinte, mais Valentin et Alain préfèrent attendre demain matin."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
-      "word": "dessin",
-      "sentence": "La jardinière colorie le dessin."
+      "word": "extincteur",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Martin prend l’extincteur au matin."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alain vérifie l’extincteur avec son voisin Quentin le matin."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "dessin",
-      "sentence": "Ce matin, le papa montre le dessin avec Inès."
+      "word": "feu",
+      "variants": [
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand le feu prend, Martin attrape l’extincteur et son copain Alain appelle les pompiers."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "dessin",
-      "sentence": "Ce matin, quand la professeure finit le dessin, parce que Martin sourit aussi."
+      "word": "gratin",
+      "variants": [
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alain prépare un gratin avec du pain et du fromage pour Quentin."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand le gratin est prêt, Martin appelle son copain Alain et son voisin pour dîner."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
-      "word": "frein",
-      "sentence": "Le frère répare le frein enfin."
+      "word": "imprimante",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Martin répare l’imprimante demain matin."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alain installe une imprimante simple pour son voisin Quentin."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand l’imprimante tombe en panne, Martin appelle son copain Alain sans plus attendre."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "frein",
-      "sentence": "À midi, la jardinière regarde le frein enfin."
+      "word": "index",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Martin lève l’index droit demain."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "frein",
-      "sentence": "Ce matin, quand le musicien emprunte le frein, et Inès sourit enfin bien."
+      "word": "infirmière",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Martin voit l’infirmière demain matin."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "L’infirmière d’Alain prépare un bain tiède pour son voisin Quentin."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand l’infirmière arrive le matin, Martin la remercie et son voisin Alain sourit."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
-      "word": "jardin",
-      "sentence": "La voisine sort dans le jardin."
+      "word": "infusion",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Martin boit une infusion demain."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alain prépare une infusion de romarin pour son voisin Quentin."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand Martin boit une infusion le matin, il se sent toujours plein d’énergie."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "jardin",
-      "sentence": "À midi, Inès est dans le jardin enfin."
+      "word": "ingénieure",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Martin voit une ingénieure demain."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "L’ingénieure d’Alain dessine un plan simple pour son voisin Quentin."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand l’ingénieure arrive le matin, Martin lui montre tout et son voisin Alain explique."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "jardin",
-      "sentence": "Ce matin, quand la voisine plante dans le jardin, parce que Martin sourit aussi."
+      "word": "intercalaire",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Martin ajoute un intercalaire demain."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alain colle un intercalaire dans le classeur de son voisin Quentin."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand Martin range son classeur, il met un intercalaire et son copain Alain l’aide."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
-      "word": "magasin",
-      "sentence": "Le cousin entre dans le magasin."
+      "word": "interview",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Martin prépare l’interview demain matin."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alain fait une interview simple avec son voisin Quentin le matin."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand Martin commence l’interview, son copain Alain filme et son voisin prend des notes."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "magasin",
-      "sentence": "Après le cours, le cuisinier s’arrête devant le magasin avec Martin."
+      "word": "jacinthe",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Martin cueille une jacinthe demain."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alain plante une jacinthe dans le jardin de son voisin Quentin."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand la jacinthe fleurit le matin, Martin la montre à son copain Alain avec plaisir."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "magasin",
-      "sentence": "Ce matin, quand la voisine entre dans le magasin, et Inès sourit enfin bien."
-    },
-    {
-      "level": "a1",
       "word": "main",
-      "sentence": "Martin lève la main bien."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "plur",
+          "sentences": [
+            "Elle a de la peinture plein les mains."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand Martin gagne au bowling, son copain Alain lui serre la main et sourit."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "main",
-      "sentence": "Après le cours, Martin lève la main avec Inès."
+      "word": "Martin",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Martin attache sa ceinture au matin.",
+            "Martin joue au bowling demain.",
+            "Martin mange du gratin demain."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "main",
-      "sentence": "Ce matin, quand le maître lève la main, et Inès sourit enfin bien."
-    },
-    {
-      "level": "a1",
       "word": "matin",
-      "sentence": "La grand-mère prépare le matin enfin."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Ce matin, le réveil a sonné très tôt."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alain et Quentin jouent au bowling le matin avec leur copain.",
+            "Ce matin, il gèle, nous ne sortirons pas.",
+            "Ce matin, Pimpin le lapin saute et court dans le jardin.",
+            "Ce matin, Youna a balayé la terrasse et essuyé la table du jardin."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand Martin lit le matin, il suit le texte avec son index et sourit enfin."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "matin",
-      "sentence": "Ce matin, le facteur note le matin dans le jardin."
+      "word": "musique",
+      "variants": [
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand Martin met de la musique, il règle l’enceinte pour son voisin Alain."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "matin",
-      "sentence": "Ce matin, quand la collègue attend le matin, et Inès sourit enfin bien."
-    },
-    {
-      "level": "a1",
-      "word": "moulin",
-      "sentence": "Le directeur dessine le moulin."
-    },
-    {
-      "level": "a2",
-      "word": "moulin",
-      "sentence": "Ce soir, Christine voit le moulin avec soin."
-    },
-    {
-      "level": "b1",
-      "word": "moulin",
-      "sentence": "Ce matin, quand le copain observe le moulin, parce que Martin sourit aussi."
-    },
-    {
-      "level": "a1",
-      "word": "médecin",
-      "sentence": "Christine téléphone chez le médecin."
-    },
-    {
-      "level": "a2",
-      "word": "médecin",
-      "sentence": "Ce matin, le copain se rend chez le médecin enfin."
-    },
-    {
-      "level": "b1",
-      "word": "médecin",
-      "sentence": "Ce matin, quand la tante appelle le médecin, et Inès sourit enfin bien."
-    },
-    {
-      "level": "a1",
       "word": "pain",
-      "sentence": "Le voisin grille le pain."
-    },
-    {
-      "level": "a2",
-      "word": "pain",
-      "sentence": "Ce matin, le musicien met le pain enfin."
-    },
-    {
-      "level": "b1",
-      "word": "pain",
-      "sentence": "Ce matin, quand la professeure achète le pain, et Inès sourit enfin bien."
-    },
-    {
-      "level": "a1",
-      "word": "peintre",
-      "sentence": "Le boulanger appelle le peintre enfin."
-    },
-    {
-      "level": "a2",
-      "word": "peintre",
-      "sentence": "Ce soir, la voisine suit le peintre avec Martin."
-    },
-    {
-      "level": "b1",
-      "word": "peintre",
-      "sentence": "À midi, quand Inès remercie le peintre avec Martin, et Inès sourit enfin bien."
-    },
-    {
-      "level": "a1",
-      "word": "peinture",
-      "sentence": "Martin commence la peinture bien."
-    },
-    {
-      "level": "a2",
-      "word": "peinture",
-      "sentence": "Ce matin, le cousin écoute la peinture enfin."
-    },
-    {
-      "level": "b1",
-      "word": "peinture",
-      "sentence": "Ce matin, quand le cuisinier aime la peinture, parce que Martin sourit aussi."
-    },
-    {
-      "level": "a1",
-      "word": "plein",
-      "sentence": "La cuisinière prend le plein."
-    },
-    {
-      "level": "a2",
-      "word": "plein",
-      "sentence": "Avant le repas, le cuisinier montre le plein enfin."
-    },
-    {
-      "level": "b1",
-      "word": "plein",
-      "sentence": "Ce matin, quand la maîtresse range le plein, et Inès sourit enfin bien."
-    },
-    {
-      "level": "a1",
-      "word": "raisin",
-      "sentence": "La cousine mange le raisin."
-    },
-    {
-      "level": "a2",
-      "word": "raisin",
-      "sentence": "Après le cours, la cuisinière apporte le raisin dans le jardin."
-    },
-    {
-      "level": "b1",
-      "word": "raisin",
-      "sentence": "À midi, quand Quentin goûte le raisin dans le jardin, parce que Martin sourit aussi."
-    },
-    {
-      "level": "a1",
-      "word": "sapin",
-      "sentence": "La factrice dessine le sapin."
-    },
-    {
-      "level": "a2",
-      "word": "sapin",
-      "sentence": "Ce matin, le copain admire le sapin avec Martin."
-    },
-    {
-      "level": "b1",
-      "word": "sapin",
-      "sentence": "À midi, quand Christine observe le sapin avec Inès, et Inès sourit enfin bien."
-    },
-    {
-      "level": "a1",
-      "word": "singe",
-      "sentence": "Le voisin nourrit le singe."
-    },
-    {
-      "level": "a2",
-      "word": "singe",
-      "sentence": "Avant le repas, la copine observe le singe enfin."
-    },
-    {
-      "level": "b1",
-      "word": "singe",
-      "sentence": "Ce matin, quand la jardinière attrape le singe, parce que Martin sourit aussi."
-    },
-    {
-      "level": "a1",
-      "word": "timbre",
-      "sentence": "Le garçon cherche le timbre avec Inès."
-    },
-    {
-      "level": "a2",
-      "word": "timbre",
-      "sentence": "Ce matin, la maman pose le timbre avec Martin."
-    },
-    {
-      "level": "b1",
-      "word": "timbre",
-      "sentence": "Ce matin, quand le frère montre le timbre, et Inès sourit enfin bien."
-    },
-    {
-      "level": "a1",
-      "word": "train",
-      "sentence": "Le médecin attend le train."
-    },
-    {
-      "level": "a2",
-      "word": "train",
-      "sentence": "Ce matin, le médecin préfère le train avec Inès."
-    },
-    {
-      "level": "b1",
-      "word": "train",
-      "sentence": "Ce matin, quand la voisine embarque dans le train, parce que Martin sourit aussi."
-    },
-    {
-      "level": "a1",
-      "word": "vin",
-      "sentence": "Le collègue partage le vin enfin."
-    },
-    {
-      "level": "a2",
-      "word": "vin",
-      "sentence": "À midi, Martin sert le vin dans le jardin."
-    },
-    {
-      "level": "b1",
-      "word": "vin",
-      "sentence": "Ce matin, quand le cousin mange le vin, et Inès sourit enfin bien."
-    },
-    {
-      "level": "a1",
-      "word": "voisin",
-      "sentence": "La cousine salue le voisin."
-    },
-    {
-      "level": "a2",
-      "word": "voisin",
-      "sentence": "Après le cours, la cuisinière invite le voisin enfin."
-    },
-    {
-      "level": "b1",
-      "word": "voisin",
-      "sentence": "Ce matin, quand Martin passe chez le voisin, et Inès sourit enfin bien."
-    }
-  ],
-  "type10": [
-    {
-      "level": "a1",
-      "sentence": "Inès s’habille après le bain.",
-      "parts": [
-        {
-          "t": "Inès s’habille après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bain."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, la copine s’habille après le bain avec Inès.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " copine s’habille après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bain avec Inès."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le voisin s’habille après le bain, parce que Martin sourit aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " voisin s’habille après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bain, parce que Martin sourit aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le cuisinier lave la ceinture.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " cuisinier lave "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " ceinture."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le médecin met la ceinture avec Martin.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " médecin met "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " ceinture avec Martin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la voisine porte la ceinture, et Inès sourit enfin bien.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " voisine porte "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " ceinture, et Inès sourit enfin bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La maîtresse connaît le chemin enfin.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " maîtresse connaît "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chemin enfin."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le cuisinier montre le chemin enfin.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cuisinier montre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chemin enfin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la boulangère continue le chemin, et Inès sourit enfin bien.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boulangère continue "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chemin, et Inès sourit enfin bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le facteur ouvre le cinq avec Martin.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " facteur ouvre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cinq avec Martin."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, la cousine prépare le cinq avec Inès.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cousine prépare "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cinq avec Inès."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Quentin utilise le cinq dans le jardin, parce que Martin sourit aussi.",
-      "parts": [
-        {
-          "t": "À midi, quand Quentin utilise "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cinq dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardin, parce que Martin sourit aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Christine regarde le dauphin bien.",
-      "parts": [
-        {
-          "t": "Christine regarde "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " dauphin bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le copain nourrit le dauphin avec Martin.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " copain nourrit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " dauphin avec Martin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le jardinier observe le dauphin, et Inès sourit enfin bien.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardinier observe "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " dauphin, et Inès sourit enfin bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La jardinière colorie le dessin.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " jardinière colorie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " dessin."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le papa montre le dessin avec Inès.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " papa montre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " dessin avec Inès."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la professeure finit le dessin, parce que Martin sourit aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " professeure finit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " dessin, parce que Martin sourit aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le frère répare le frein enfin.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " frère répare "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " frein enfin."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, la jardinière regarde le frein enfin.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " jardinière regarde "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " frein enfin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le musicien emprunte le frein, et Inès sourit enfin bien.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " musicien emprunte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " frein, et Inès sourit enfin bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La voisine sort dans le jardin.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " voisine sort dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardin."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Inès est dans le jardin enfin.",
-      "parts": [
-        {
-          "t": "À midi, Inès est dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardin enfin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la voisine plante dans le jardin, parce que Martin sourit aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " voisine plante dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardin, parce que Martin sourit aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le cousin entre dans le magasin.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " cousin entre dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " magasin."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le cuisinier s’arrête devant le magasin avec Martin.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cuisinier s’arrête devant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " magasin avec Martin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la voisine entre dans le magasin, et Inès sourit enfin bien.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " voisine entre dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " magasin, et Inès sourit enfin bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Martin lève la main bien.",
-      "parts": [
-        {
-          "t": "Martin lève "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " main bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Martin lève la main avec Inès.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Martin lève "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " main avec Inès."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le maître lève la main, et Inès sourit enfin bien.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " maître lève "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " main, et Inès sourit enfin bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La grand-mère prépare le matin enfin.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " grand-mère prépare "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " matin enfin."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le facteur note le matin dans le jardin.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " facteur note "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " matin dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la collègue attend le matin, et Inès sourit enfin bien.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " collègue attend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " matin, et Inès sourit enfin bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le directeur dessine le moulin.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " directeur dessine "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " moulin."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Christine voit le moulin avec soin.",
-      "parts": [
-        {
-          "t": "Ce soir, Christine voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " moulin avec soin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le copain observe le moulin, parce que Martin sourit aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " copain observe "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " moulin, parce que Martin sourit aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Christine téléphone chez le médecin.",
-      "parts": [
-        {
-          "t": "Christine téléphone chez "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " médecin."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le copain se rend chez le médecin enfin.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " copain se rend chez "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " médecin enfin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la tante appelle le médecin, et Inès sourit enfin bien.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " tante appelle "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " médecin, et Inès sourit enfin bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le voisin grille le pain.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " voisin grille "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pain."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le musicien met le pain enfin.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " musicien met "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pain enfin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la professeure achète le pain, et Inès sourit enfin bien.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " professeure achète "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pain, et Inès sourit enfin bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le boulanger appelle le peintre enfin.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " boulanger appelle "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " peintre enfin."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, la voisine suit le peintre avec Martin.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " voisine suit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " peintre avec Martin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Inès remercie le peintre avec Martin, et Inès sourit enfin bien.",
-      "parts": [
-        {
-          "t": "À midi, quand Inès remercie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " peintre avec Martin, et Inès sourit enfin bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Martin commence la peinture bien.",
-      "parts": [
-        {
-          "t": "Martin commence "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " peinture bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le cousin écoute la peinture enfin.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cousin écoute "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " peinture enfin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le cuisinier aime la peinture, parce que Martin sourit aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cuisinier aime "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " peinture, parce que Martin sourit aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La cuisinière prend le plein.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " cuisinière prend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " plein."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le cuisinier montre le plein enfin.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cuisinier montre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " plein enfin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la maîtresse range le plein, et Inès sourit enfin bien.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maîtresse range "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " plein, et Inès sourit enfin bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La cousine mange le raisin.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " cousine mange "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " raisin."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la cuisinière apporte le raisin dans le jardin.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cuisinière apporte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " raisin dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Quentin goûte le raisin dans le jardin, parce que Martin sourit aussi.",
-      "parts": [
-        {
-          "t": "À midi, quand Quentin goûte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " raisin dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardin, parce que Martin sourit aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La factrice dessine le sapin.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " factrice dessine "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sapin."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le copain admire le sapin avec Martin.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " copain admire "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sapin avec Martin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Christine observe le sapin avec Inès, et Inès sourit enfin bien.",
-      "parts": [
-        {
-          "t": "À midi, quand Christine observe "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sapin avec Inès, et Inès sourit enfin bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le voisin nourrit le singe.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " voisin nourrit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " singe."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la copine observe le singe enfin.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " copine observe "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " singe enfin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la jardinière attrape le singe, parce que Martin sourit aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " jardinière attrape "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " singe, parce que Martin sourit aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le garçon cherche le timbre avec Inès.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " garçon cherche "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " timbre avec Inès."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, la maman pose le timbre avec Martin.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maman pose "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " timbre avec Martin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le frère montre le timbre, et Inès sourit enfin bien.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " frère montre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " timbre, et Inès sourit enfin bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le médecin attend le train.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " médecin attend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " train."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le médecin préfère le train avec Inès.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " médecin préfère "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " train avec Inès."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la voisine embarque dans le train, parce que Martin sourit aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " voisine embarque dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " train, parce que Martin sourit aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le collègue partage le vin enfin.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " collègue partage "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " vin enfin."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Martin sert le vin dans le jardin.",
-      "parts": [
-        {
-          "t": "À midi, Martin sert "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " vin dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le cousin mange le vin, et Inès sourit enfin bien.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cousin mange "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " vin, et Inès sourit enfin bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La cousine salue le voisin.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " cousine salue "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " voisin."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la cuisinière invite le voisin enfin.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cuisinière invite "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " voisin enfin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Martin passe chez le voisin, et Inès sourit enfin bien.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Martin passe chez "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " voisin, et Inès sourit enfin bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le copain s’habille après le bain.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " copain s’habille après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bain."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La grand-mère choisit la ceinture avec Inès.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " grand-mère choisit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " ceinture avec Inès."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La sœur suit le chemin avec Martin.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " sœur suit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chemin avec Martin."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le garçon lit le cinq avec Inès.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " garçon lit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cinq avec Inès."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, la voisine aime le matin dans le jardin.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " voisine aime "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " matin dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardin."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le voisin photographie le moulin avec Inès.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " voisin photographie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " moulin avec Inès."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, la cuisinière va chez le médecin dans le jardin.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cuisinière va chez "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " médecin dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardin."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Martin sent le pain avec soin.",
-      "parts": [
-        {
-          "t": "Ce matin, Martin sent "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pain avec soin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la grand-mère range le timbre, et Inès sourit enfin bien.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " grand-mère range "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " timbre, et Inès sourit enfin bien."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la maman préfère le train, et Inès sourit enfin bien.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maman préfère "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " train, et Inès sourit enfin bien."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le garçon apporte le vin, et Inès sourit enfin bien.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garçon apporte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " vin, et Inès sourit enfin bien."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la cuisinière salue le voisin, parce que Martin sourit aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cuisinière salue "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " voisin, parce que Martin sourit aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le copain soigne le dauphin.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " copain soigne "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " dauphin."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le collègue signe le dessin avec Martin.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " collègue signe "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " dessin avec Martin."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La fille prend le frein enfin.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " fille prend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " frein enfin."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Christine joue dans le jardin.",
-      "parts": [
-        {
-          "t": "Christine joue dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardin."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Quentin entre dans le magasin.",
-      "parts": [
-        {
-          "t": "Quentin entre dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " magasin."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le cuisinier lève la main.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " cuisinier lève "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " main."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, la musicienne salue le peintre avec Inès.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " musicienne salue "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " peintre avec Inès."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Christine joue avec la peinture dans le jardin.",
-      "parts": [
-        {
-          "t": "À midi, Christine joue avec "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " peinture dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardin."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la cousine oublie le plein dans le jardin.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cousine oublie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " plein dans "
-        },
-        {
-          "blank": "le"
-        },
+      "variants": [
         {
-          "t": " jardin."
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Veux-tu du pain et de la confiture de coings ?"
+          ]
         }
       ]
     },
     {
-      "level": "a2",
-      "sentence": "Avant le repas, le cousin partage le raisin avec Inès.",
-      "parts": [
+      "word": "plan",
+      "variants": [
         {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cousin partage "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " raisin avec Inès."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le médecin plante le sapin avec Inès.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " médecin plante "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sapin avec Inès."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Christine soigne le singe enfin.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, Christine soigne "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " singe enfin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la maîtresse s’habille après le bain, et Inès sourit enfin bien.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maîtresse s’habille après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bain, et Inès sourit enfin bien."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la sœur achète la ceinture, et Inès sourit enfin bien.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " sœur achète "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " ceinture, et Inès sourit enfin bien."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la jardinière explique le chemin, parce que Martin sourit aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " jardinière explique "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chemin, parce que Martin sourit aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le jardinier écrit le cinq, et Inès sourit enfin bien.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardinier écrit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cinq, et Inès sourit enfin bien."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Martin voit le dauphin enfin, parce que Martin sourit aussi.",
-      "parts": [
-        {
-          "t": "À midi, quand Martin voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " dauphin enfin, parce que Martin sourit aussi."
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alain pointe son index vers le plan de son voisin Quentin."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "Ce matin, quand le directeur finit le dessin, et Inès sourit enfin bien.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
+      "word": "Quand",
+      "variants": [
         {
-          "blank": "le"
-        },
-        {
-          "t": " directeur finit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " dessin, et Inès sourit enfin bien."
+          "level": "b1",
+          "sentences": [
+            "Quand Martin roule en voiture, il attache sa ceinture et son copain Alain fait pareil."
+          ]
         }
-      ]
-    }
-  ],
-  "type12Stories": [
-    {
-      "level": "a2",
-      "sentences": [
-        "Le matin, Léa marche dans le jardin.",
-        "Elle tient un pain dans sa main.",
-        "Un voisin dit bonjour depuis le chemin.",
-        "Léa pose le pain sur le banc du jardin.",
-        "Elle dessine un dessin près du sapin.",
-        "Le matin devient plus clair.",
-        "Léa range le dessin dans son sac.",
-        "Elle repart sur le chemin.",
-        "Le jardin reste calme tout le matin."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Inès prend le train vers la mer.",
-        "Dans le train, elle lit un magazine.",
-        "À l’arrivée, elle voit un dauphin.",
-        "Le dauphin saute près du bateau.",
-        "Inès dessine le dauphin dans son carnet.",
-        "Sa main tremble un peu d’émotion.",
-        "Elle montre le dessin à un voisin de voyage.",
-        "Le train repart plus tard dans la journée.",
-        "Inès garde le dessin du dauphin."
-      ]
-    },
-    {
-      "level": "a2",
-      "sentences": [
-        "Omar entre dans le magasin du village.",
-        "Il achète du pain encore chaud.",
-        "Puis il prend une grappe de raisin.",
-        "Sa main tient le pain et le raisin.",
-        "Le vendeur lui dit cinq euros.",
-        "Omar paie et quitte le magasin.",
-        "Sur le chemin, il mange un raisin.",
-        "À la maison, il partage le pain.",
-        "Le magasin ferme un peu plus tard."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Un peintre travaille dans le jardin.",
-        "Il prépare sa peinture près du sapin.",
-        "Sa main tient le pinceau avec soin.",
-        "Il fait un dessin rapide d’abord.",
-        "Puis il ajoute de la peinture bleue.",
-        "Un voisin regarde le peintre travailler.",
-        "Le peintre explique son dessin.",
-        "Le matin avance dans le jardin.",
-        "Avant midi, la peinture est presque finie."
-      ]
-    },
-    {
-      "level": "a2",
-      "sentences": [
-        "Maya suit le chemin vers le moulin.",
-        "Près du chemin, elle voit un sapin.",
-        "Le moulin tourne lentement ce matin.",
-        "Maya tient du pain dans sa main.",
-        "Elle s’assoit près du moulin.",
-        "Un voisin passe sur le chemin.",
-        "Maya lui montre le sapin.",
-        "Ils mangent un peu de pain.",
-        "Maya reprend le chemin vers la maison."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Le matin, Adam voit le médecin.",
-        "Il a mal à la main.",
-        "Le médecin examine sa main avec soin.",
-        "Adam retire sa ceinture pour s’asseoir.",
-        "Le médecin parle d’un bain tiède.",
-        "Adam écoute et pose cinq questions.",
-        "Sur le chemin du retour, sa main va mieux.",
-        "Il range sa ceinture dans le sac.",
-        "Le soir, il prépare encore un bain."
-      ]
-    },
-    {
-      "level": "a2",
-      "sentences": [
-        "Au zoo, Nora voit un singe.",
-        "Le singe mange une banane dans sa main.",
-        "Nora fait un dessin du singe.",
-        "Sa main suit le crayon rapidement.",
-        "Un voisin regarde le dessin.",
-        "Nora montre le singe du doigt.",
-        "Le matin se termine près du jardin du zoo.",
-        "Nora range le dessin dans son sac.",
-        "Elle repart sur le chemin."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Karim achète un timbre au magasin.",
-        "Il prépare une lettre pour un ami.",
-        "Sa main colle le timbre soigneusement.",
-        "Puis il prend le train vers la ville.",
-        "Dans le train, il relit la lettre.",
-        "Un voisin lui parle du chemin.",
-        "Karim montre le timbre coloré.",
-        "À l’arrivée, il poste la lettre.",
-        "Le train repart sans lui."
-      ]
-    },
-    {
-      "level": "a2",
-      "sentences": [
-        "Dans le train, le frein fait un bruit.",
-        "Léa tient la barre de sa main.",
-        "Le train s’arrête près du jardin.",
-        "Léa descend avec du pain dans le sac.",
-        "Elle suit le chemin vers la maison.",
-        "Un voisin l’attend près du sapin.",
-        "Léa lui donne un peu de pain.",
-        "Sa main est un peu froide.",
-        "Le matin se termine près du train."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Au marché, Sofia choisit du raisin.",
-        "Sa main est pleine de raisins.",
-        "Un voisin lui propose aussi du vin.",
-        "Sofia refuse le vin poliment.",
-        "Elle garde le raisin pour le dessert.",
-        "Sur le chemin, son panier est plein.",
-        "Elle croise un peintre près du jardin.",
-        "Le peintre dessine le raisin rapidement.",
-        "Sofia rentre le matin avec son panier plein."
-      ]
-    }
-  ],
-  "type14Stories": [
-    {
-      "level": "a2",
-      "sentences": [
-        "Le matin, Léa marche dans le jardin.",
-        "Elle tient un pain dans sa main.",
-        "Un voisin dit bonjour depuis le chemin.",
-        "Léa pose le pain sur le banc du jardin.",
-        "Elle dessine un dessin près du sapin.",
-        "Sa main suit le crayon avec soin.",
-        "Le matin devient plus clair.",
-        "Léa range le dessin dans son sac.",
-        "Elle mange un peu de pain.",
-        "Le voisin passe encore sur le chemin.",
-        "Léa lui montre le sapin du jardin.",
-        "Ils parlent du train du matin.",
-        "Léa reprend le chemin vers la maison.",
-        "Dans le jardin, un oiseau chante.",
-        "Léa lave sa main avant d’entrer.",
-        "Elle place le pain sur la table.",
-        "Le dessin reste près de la fenêtre.",
-        "Le matin se termine dans le jardin.",
-        "Léa sourit près du sapin."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Inès prend le train vers la mer.",
-        "Dans le train, elle lit un magazine.",
-        "Sa main tient le billet fermement.",
-        "À l’arrivée, elle voit un dauphin.",
-        "Le dauphin saute près du bateau.",
-        "Inès dessine le dauphin dans son carnet.",
-        "Elle montre le dessin à un voisin de voyage.",
-        "Le voisin admire le dauphin dessiné.",
-        "Inès marche ensuite sur le chemin du port.",
-        "Elle achète du pain dans un magasin.",
-        "Sa main porte le pain et le carnet.",
-        "Elle s’assoit près de l’eau.",
-        "Le dauphin apparaît encore une fois.",
-        "Inès ajoute un détail au dessin.",
-        "Le train du retour part à cinq heures.",
-        "Inès range le dessin dans son sac.",
-        "Sur le chemin, elle mange un peu de pain.",
-        "Le voisin lui dit au revoir.",
-        "Inès garde le souvenir du dauphin."
-      ]
-    },
-    {
-      "level": "a2",
-      "sentences": [
-        "Omar entre dans le magasin du village.",
-        "Il achète du pain encore chaud.",
-        "Puis il prend une grappe de raisin.",
-        "Sa main tient le pain et le raisin.",
-        "Le vendeur lui dit cinq euros.",
-        "Omar paie et quitte le magasin.",
-        "Sur le chemin, il mange un raisin.",
-        "Il croise un voisin près du jardin.",
-        "Le voisin regarde le pain frais.",
-        "Omar partage un peu de raisin.",
-        "Ils marchent ensemble sur le chemin.",
-        "Près du sapin, ils s’arrêtent.",
-        "Omar pose le pain un moment.",
-        "Sa main est un peu collante.",
-        "Il lave sa main à la fontaine.",
-        "Puis il reprend le chemin.",
-        "À la maison, il coupe le pain.",
-        "Il mange encore un raisin.",
-        "Le magasin ferme un peu plus tard."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Un peintre travaille dans le jardin.",
-        "Il prépare sa peinture près du sapin.",
-        "Sa main tient le pinceau avec soin.",
-        "Il fait un dessin rapide d’abord.",
-        "Puis il ajoute de la peinture bleue.",
-        "Un voisin regarde le peintre travailler.",
-        "Le peintre explique son dessin.",
-        "Le matin avance dans le jardin.",
-        "Le peintre boit un verre d’eau.",
-        "Sa main tremble un peu de froid.",
-        "Il remet sa ceinture et son manteau.",
-        "Le voisin apporte du pain pour la pause.",
-        "Ils mangent le pain près du sapin.",
-        "Le peintre reprend la peinture.",
-        "Le dessin devient plus précis.",
-        "Avant midi, la peinture est presque finie.",
-        "Le peintre range ses pinceaux.",
-        "Il quitte le jardin par le chemin.",
-        "Le voisin garde un souvenir du dessin."
-      ]
-    },
-    {
-      "level": "a2",
-      "sentences": [
-        "Maya suit le chemin vers le moulin.",
-        "Près du chemin, elle voit un sapin.",
-        "Le moulin tourne lentement ce matin.",
-        "Maya tient du pain dans sa main.",
-        "Elle s’assoit près du moulin.",
-        "Un voisin passe sur le chemin.",
-        "Maya lui montre le sapin.",
-        "Ils mangent un peu de pain.",
-        "Maya fait un dessin du moulin.",
-        "Sa main suit les ailes du moulin.",
-        "Le voisin admire le dessin.",
-        "Maya range le dessin dans son sac.",
-        "Elle lave sa main à l’eau froide.",
-        "Puis elle reprend le chemin.",
-        "Près du jardin, elle croise un ami.",
-        "Ils parlent du train du matin.",
-        "Maya donne encore un peu de pain.",
-        "Le moulin tourne toujours derrière eux.",
-        "Maya rentre à la maison le matin."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Le matin, Adam voit le médecin.",
-        "Il a mal à la main.",
-        "Le médecin examine sa main avec soin.",
-        "Adam retire sa ceinture pour s’asseoir.",
-        "Le médecin parle d’un bain tiède.",
-        "Adam écoute et pose cinq questions.",
-        "Sur le chemin du retour, sa main va mieux.",
-        "Il range sa ceinture dans le sac.",
-        "Au magasin, il achète du pain.",
-        "Sa main porte le pain sans douleur.",
-        "Un voisin lui demande des nouvelles.",
-        "Adam parle du médecin calmement.",
-        "Il suit le chemin vers le jardin.",
-        "Dans le jardin, il s’assoit un moment.",
-        "Le soir, il prépare encore un bain.",
-        "L’eau du bain est tiède.",
-        "Adam repose sa main sur le bord.",
-        "Il pense au train du lendemain.",
-        "Sa main guérit peu à peu."
-      ]
-    },
-    {
-      "level": "a2",
-      "sentences": [
-        "Au zoo, Nora voit un singe.",
-        "Le singe mange une banane dans sa main.",
-        "Nora fait un dessin du singe.",
-        "Sa main suit le crayon rapidement.",
-        "Un voisin regarde le dessin.",
-        "Nora montre le singe du doigt.",
-        "Le matin se termine près du jardin du zoo.",
-        "Nora range le dessin dans son sac.",
-        "Elle mange un peu de pain.",
-        "Sur le chemin, elle voit un sapin.",
-        "Le singe n’est plus visible.",
-        "Nora continue sur le chemin.",
-        "Elle croise un ami près du magasin.",
-        "Ils parlent du singe et du dessin.",
-        "Nora lave sa main avant d’entrer.",
-        "Elle achète encore du pain.",
-        "Sa main tient le pain chaud.",
-        "Elle reprend le chemin de la maison.",
-        "Le dessin du singe reste dans le sac."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Karim achète un timbre au magasin.",
-        "Il prépare une lettre pour un ami.",
-        "Sa main colle le timbre soigneusement.",
-        "Puis il prend le train vers la ville.",
-        "Dans le train, il relit la lettre.",
-        "Un voisin lui parle du chemin.",
-        "Karim montre le timbre coloré.",
-        "À l’arrivée, il poste la lettre.",
-        "Le train repart sans lui.",
-        "Karim marche dans un jardin public.",
-        "Il mange du pain sur un banc.",
-        "Sa main est un peu froide.",
-        "Il voit un peintre près du sapin.",
-        "Le peintre fait un dessin du jardin.",
-        "Karim regarde la peinture un moment.",
-        "Sur le chemin du retour, il prend le train.",
-        "Dans le train, il pense au timbre.",
-        "Sa main tient encore le reçu.",
-        "Le soir, il imagine la lettre arrivée."
-      ]
-    },
-    {
-      "level": "a2",
-      "sentences": [
-        "Dans le train, le frein fait un bruit.",
-        "Léa tient la barre de sa main.",
-        "Le train s’arrête près du jardin.",
-        "Léa descend avec du pain dans le sac.",
-        "Elle suit le chemin vers la maison.",
-        "Un voisin l’attend près du sapin.",
-        "Léa lui donne un peu de pain.",
-        "Sa main est un peu froide.",
-        "Ils s’assoient un moment dans le jardin.",
-        "Léa sort un dessin de son sac.",
-        "Le voisin regarde le dessin.",
-        "Léa parle du train et du frein.",
-        "Le matin avance doucement.",
-        "Léa range le dessin.",
-        "Elle lave sa main à la fontaine.",
-        "Puis elle reprend le chemin.",
-        "Près du magasin, elle achète du raisin.",
-        "Sa main tient le raisin et le pain.",
-        "Léa rentre avant la fin du matin."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Au marché, Sofia choisit du raisin.",
-        "Sa main est pleine de raisins.",
-        "Un voisin lui propose aussi du vin.",
-        "Sofia refuse le vin poliment.",
-        "Elle garde le raisin pour le dessert.",
-        "Sur le chemin, son panier est plein.",
-        "Elle croise un peintre près du jardin.",
-        "Le peintre dessine le raisin rapidement.",
-        "Sofia regarde la peinture avec intérêt.",
-        "Sa main tient encore le panier plein.",
-        "Le peintre lui montre un autre dessin.",
-        "Sofia parle du train du matin.",
-        "Elle achète ensuite du pain au magasin.",
-        "Le panier est vraiment plein.",
-        "Sur le chemin, elle mange un raisin.",
-        "Un voisin l’aide à porter le panier.",
-        "Ils passent près d’un sapin.",
-        "Sofia rentre le matin avec son panier plein.",
-        "Le raisin et le pain sont prêts pour le repas."
       ]
     }
   ]

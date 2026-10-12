@@ -1,2320 +1,1095 @@
 {
-  "type9": [
+  "son": "c-s",
+  "phrases": [
     {
-      "level": "a1",
-      "word": "balançoire",
-      "sentence": "Cécile aime la balançoire bien."
+      "word": "actrice",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Cécile est une actrice célèbre."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Célia admire l’actrice Cécile dans ce film de cinéma."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Cédric a vu l’actrice Cécile à Genève, et Cyril l’a citée aussitôt."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "balançoire",
-      "sentence": "Ce matin, le cousin termine la balançoire avec Alice."
+      "word": "agricultrice",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Cécile est agricultrice dans la Cité."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "L’agricultrice Célia cultive du céleri pour Cécile et Cyril."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Cédric félicite l’agricultrice Cécile, car son céleri est le meilleur de la ville."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "balançoire",
-      "sentence": "Ce matin, quand le facteur choisit la balançoire, et Alice dit un grand merci."
+      "word": "ambulance",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "L’ambulance de Cécile arrive ici."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Cédric voit l’ambulance de Célia devant la cité."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Cécile appelle l’ambulance, car Cyril a un malaise près de la cité."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
+      "word": "balance",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "La balance de Cécile est précise."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Cédric pèse du sucre sur la balance de Cécile et Célia."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Célia pose la balance sur la cuisinière, mais Cyril préfère celle de Cécile."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "bébé",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Cécile met le bébé dans le berceau."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Parce que Cécile attend un bébé, elle choisit un joli berceau au centre."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "berceau",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Le berceau de Cécile est ici."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Ce soir, cet enfant dort dans le berceau.",
+            "Cédric repeint le berceau de Célia avec un pinceau bleu."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Cécile berce le bébé dans le berceau et Cyril chante une vieille chanson."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "bicyclette",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Cyril a une bicyclette ici."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Cécile répare la bicyclette de Cyril avec Célia, ce soir."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Cédric cherche la bicyclette de Cécile, mais Cyril a cru qu’elle était ici."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "biscuit",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Cécile mange un biscuit ici."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Célia et Cédric partagent un biscuit pour le dessert de Cécile."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Cyril offre un biscuit à Cécile, mais Célia préfère le gâteau de Cédric ce soir."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "boucles",
+      "variants": [
+        {
+          "level": "a2",
+          "number": "plur",
+          "sentences": [
+            "Cette cliente essaie des boucles d’oreilles en argent au centre commercial."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "boucles d'oreilles",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Cécile perd ses boucles d’oreilles ici."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "plur",
+          "sentences": [
+            "Célia cherche les boucles d’oreilles de Cécile dans la cité."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "plur",
+          "sentences": [
+            "Cédric a trouvé les boucles d’oreilles de Cécile, mais Cyril les a cachées ici."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "boule",
+      "variants": [
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Ce biscuit est délicieux avec une boule de glace."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "bracelet",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Le bracelet de Cécile brille ici."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Cédric offre un bracelet à Célia et à Cécile ce soir."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Cyril a acheté un bracelet à la cité pour Cécile et un collier pour Célia."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "cadeau",
+      "variants": [
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Parce que ce bracelet est un cadeau de sa grand-mère, Cécile le porte souvent."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "caissière",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Cécile est caissière à la cité."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "La caissière Célia sert Cécile, Cédric et Cyril à midi."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Cécile remercie la caissière, car Cyril a oublié sa carte et Célia a payé ici."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "calculatrice",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "La calculatrice de Cécile est ici."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Cédric utilise la calculatrice de Célia et de Cécile ce soir."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Cyril a perdu la calculatrice de Cécile, mais Célia l’a retrouvée dans la cité."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "casque",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Cécile met un casque ici."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Cédric achète un casque pour Célia et Cécile ce soir."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Cyril porte un casque quand il roule, mais Cécile et Célia oublient le leur."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "casquette",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Cécile porte une casquette ici."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Cédric a perdu sa casquette dans la cité de Célia."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Cyril cherche sa casquette dans la cité, mais Cécile l’a vue chez Célia."
+          ]
+        }
+      ]
+    },
+    {
       "word": "cassis",
-      "sentence": "La factrice prépare le cassis."
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Cécile boit du cassis ici."
+          ]
+        },
+        {
+          "level": "a2",
+          "sentences": [
+            "Célia cueille du cassis pour Cécile et Cédric ce soir."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Cyril prépare une glace au cassis pour Cécile, mais Célia préfère celle au citron."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "cassis",
-      "sentence": "Ce soir, le collègue choisit le cassis avec Cécile."
+      "word": "Ce",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Ce bracelet est très joli."
+          ]
+        },
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Ce gryphon a une queue de serpent.",
+            "Ce matin, le réveil a sonné très tôt.",
+            "Ce tableau est une merveille.",
+            "Ces opérations sont difficiles.",
+            "Que ce film est ennuyeux !"
+          ]
+        },
+        {
+          "level": "a2",
+          "sentences": [
+            "Ce casque est obligatoire pour circuler à vélo dans cette ville."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Ce matin, il gèle, nous ne sortirons pas.",
+            "Ce matin, Pimpin le lapin saute et court dans le jardin.",
+            "Ce matin, Youna a balayé la terrasse et essuyé la table du jardin.",
+            "Ce soir, nous mangerons du potage, du gigot avec des girolles.",
+            "Ces sirops guérissent les enfants qui toussent."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "cassis",
-      "sentence": "Ce matin, quand un ami goûte le cassis, parce que Cécile est ici aussi."
+      "word": "Cécile",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Cécile adore ce sirop de cassis.",
+            "Cécile cherche ces boucles d’oreilles.",
+            "Cécile mange ce biscuit ici."
+          ]
+        },
+        {
+          "level": "a2",
+          "sentences": [
+            "Cécile reçoit ce bracelet en argent pour son anniversaire."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Cécile et Cyril achètent une glace au citron."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
+      "word": "Cédric",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Cédric porte cette casquette rouge."
+          ]
+        },
+        {
+          "level": "a2",
+          "sentences": [
+            "Cédric attache sa ceinture de sécurité dans cette voiture."
+          ]
+        }
+      ]
+    },
+    {
       "word": "ceinture",
-      "sentence": "Une amie achète la ceinture."
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Cécile met sa ceinture ici."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Cédric attache la ceinture de Célia et de Cécile."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Comme ce pantalon est trop large, Cédric cherche une ceinture et la trouve ici.",
+            "Cyril a mis la ceinture de Cécile dans la cité, mais Célia l’a retrouvée."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "ceinture",
-      "sentence": "Avant le repas, le boulanger met la ceinture avec Alice."
-    },
-    {
-      "level": "b1",
-      "word": "ceinture",
-      "sentence": "Ce matin, quand la sœur porte la ceinture, et Alice dit un grand merci."
-    },
-    {
-      "level": "a1",
-      "word": "cerceau",
-      "sentence": "Le grand-père prépare le cerceau."
-    },
-    {
-      "level": "a2",
-      "word": "cerceau",
-      "sentence": "Après le cours, la boulangère attrape le cerceau ici aussi."
-    },
-    {
-      "level": "b1",
-      "word": "cerceau",
-      "sentence": "Ce matin, quand Francis marque le cerceau, parce que Cécile est ici aussi."
-    },
-    {
-      "level": "a1",
-      "word": "cercle",
-      "sentence": "Cyril prépare le cercle bien."
-    },
-    {
-      "level": "a2",
-      "word": "cercle",
-      "sentence": "Avant le repas, la copine ouvre le cercle avec Alice."
-    },
-    {
-      "level": "b1",
-      "word": "cercle",
-      "sentence": "Ce matin, quand la cuisinière recopie le cercle, et Alice dit un grand merci."
-    },
-    {
-      "level": "a1",
-      "word": "cerise",
-      "sentence": "Le musicien apporte la cerise."
-    },
-    {
-      "level": "a2",
-      "word": "cerise",
-      "sentence": "Ce matin, la directrice mange la cerise avec Cécile."
-    },
-    {
-      "level": "b1",
-      "word": "cerise",
-      "sentence": "Ce matin, quand la copine partage la cerise, et Alice dit un grand merci."
-    },
-    {
-      "level": "a1",
-      "word": "cerveau",
-      "sentence": "Le maître lave le cerveau ici."
-    },
-    {
-      "level": "a2",
-      "word": "cerveau",
-      "sentence": "Ce soir, la voisine essuie le cerveau merci."
-    },
-    {
-      "level": "b1",
-      "word": "cerveau",
-      "sentence": "Ce matin, quand la tante touche le cerveau, et Alice dit un grand merci."
-    },
-    {
-      "level": "a1",
-      "word": "cinéma",
-      "sentence": "Le bébé aime le cinéma ici."
-    },
-    {
-      "level": "a2",
-      "word": "cinéma",
-      "sentence": "À midi, Cécile termine le cinéma ici aussi."
-    },
-    {
-      "level": "b1",
-      "word": "cinéma",
-      "sentence": "Ce matin, quand le cousin choisit le cinéma, parce que Cécile est ici aussi."
-    },
-    {
-      "level": "a1",
-      "word": "citron",
-      "sentence": "La cousine choisit le citron."
-    },
-    {
-      "level": "a2",
-      "word": "citron",
-      "sentence": "Après le cours, la factrice goûte le citron avec Alice."
-    },
-    {
-      "level": "b1",
-      "word": "citron",
-      "sentence": "Ce matin, quand le collègue partage le citron, et Alice dit un grand merci."
-    },
-    {
-      "level": "a1",
-      "word": "cygne",
-      "sentence": "La collègue attrape le cygne."
-    },
-    {
-      "level": "a2",
-      "word": "cygne",
-      "sentence": "Avant le repas, une amie caresse le cygne avec Cécile."
-    },
-    {
-      "level": "b1",
-      "word": "cygne",
-      "sentence": "Ce matin, quand le professeur voit le cygne, parce que Cécile est ici aussi."
-    },
-    {
-      "level": "a1",
       "word": "céleri",
-      "sentence": "La professeure prépare le céleri ici."
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Cécile mange du céleri ici."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Célia coupe le céleri pour Cécile et Cédric ce soir."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Cyril ajoute du céleri dans la soupe de Cécile, mais Célia préfère le citron."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "céleri",
-      "sentence": "Ce matin, le grand-père choisit le céleri merci."
+      "word": "Céline",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Céline met ce casque de vélo."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Céline mange des fraises et des framboises."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "céleri",
-      "sentence": "Ce matin, quand la boulangère goûte le céleri, et Alice dit un grand merci."
+      "word": "cerceau",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Cécile joue avec le cerceau.",
+            "Cécile joue avec un cerceau."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Célia lance un cerceau à Cécile, Cédric et Cyril."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Cyril fait tourner un cerceau autour de Cécile, mais Célia préfère celui de Cédric."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
-      "word": "exercice",
-      "sentence": "Le jardinier corrige un exercice."
+      "word": "cercle",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Cécile dessine un cercle ici."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Célia trace un cercle pour Cécile, Cédric et Cyril."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Cyril dessine un cercle parfait sur la page de Cécile, mais Célia efface tout."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "exercice",
-      "sentence": "Avant le repas, la boulangère corrige un exercice merci."
+      "word": "cerf",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Le cerf de Cécile court ici."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Célia voit un cerf près de la cité de Cécile."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Cédric a vu un cerf dans la forêt, mais Cécile a cru à un cercle."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "exercice",
-      "sentence": "Ce matin, quand Francis corrige un exercice, et Alice dit un grand merci."
+      "word": "cerf volant",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Cécile lance un cerf volant ici."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Célia et Cédric lancent un cerf volant pour Cécile ce soir."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Cyril a fabriqué un cerf volant, mais Cécile et Célia ont peur du vent."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
-      "word": "façade",
-      "sentence": "Le médecin longe la façade."
+      "word": "cerise",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Cécile mange une cerise ici."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Célia cueille une cerise pour Cécile, Cédric et Cyril."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Cyril a cueilli une cerise pour Cécile, mais Célia a mangé toutes les autres."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "façade",
-      "sentence": "À midi, le musicien voit la façade avec Alice."
+      "word": "cerises",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "plur",
+          "sentences": [
+            "Cette agricultrice cultive des cerises."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "plur",
+          "sentences": [
+            "Cette agricultrice vend des cerises et des citrons sur la place."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "façade",
-      "sentence": "Ce matin, quand la directrice trouve la façade, et Alice dit un grand merci."
+      "word": "cerisier",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Le cerisier de Cécile est ici."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Célia grimpe dans le cerisier de Cécile et de Cyril."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Cédric a planté un cerisier dans la cité, et Cécile le regarde avec Cyril."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
-      "word": "garçon",
-      "sentence": "La fille embrasse le garçon ici."
+      "word": "cerveau",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Le cerveau de Cécile réfléchit ici."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Célia étudie le cerveau avec Cécile, Cédric et Cyril."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Cyril explique à Cécile comment fonctionne le cerveau, mais Célia préfère l’exercice."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "garçon",
-      "sentence": "Après le cours, le maître remercie le garçon avec Cécile."
+      "word": "Cette",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Cette actrice est très gentille.",
+            "Cette bicyclette est très ancienne.",
+            "Cette calculatrice est à Cécile.",
+            "Cette ceinture est en cuir."
+          ]
+        },
+        {
+          "level": "a2",
+          "sentences": [
+            "Cette actrice habite en France, mais elle voyage cent jours par an.",
+            "Cette caissière rend cinq francs de monnaie à ce client.",
+            "Cette tarte au cassis est délicieuse, et cent personnes en ont mangé."
+          ]
+        },
+        {
+          "level": "b1",
+          "sentences": [
+            "Cette agricultrice est contente parce que ses cerises sont très belles cette année."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "garçon",
-      "sentence": "Ce matin, quand la voisine aide le garçon, parce que Cécile est ici aussi."
+      "word": "chaussettes",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Cécile met ses chaussettes ici."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "plur",
+          "sentences": [
+            "Célia cherche les chaussettes de Cécile et de Cédric."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "plur",
+          "sentences": [
+            "Cyril trouve les chaussettes de Cécile dans la cité, mais Célia en cherche d’autres."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
+      "word": "circulation",
+      "variants": [
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Cyril prend sa bicyclette pour aller au centre-ville parce que la circulation est difficile."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "cirque",
+      "variants": [
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Comme le cirque arrive ici, Cécile s’entraîne avec un cerceau pour la grande cérémonie."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "cuisine",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Cette balance est dans la cuisine."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "cyclisme",
+      "variants": [
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Parce que Céline veut rouler en sécurité, elle achète ce casque spécial pour le cyclisme."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "division",
+      "variants": [
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Avec cette calculatrice, la division devient très facile."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "enfants",
+      "variants": [
+        {
+          "level": "a2",
+          "number": "plur",
+          "sentences": [
+            "Les enfants sautent dans le cerceau pour cet exercice de gymnastique."
+          ]
+        }
+      ]
+    },
+    {
       "word": "glace",
-      "sentence": "Le frère glisse sur la glace ici."
-    },
-    {
-      "level": "a2",
-      "word": "glace",
-      "sentence": "Ce soir, le cousin veut la glace avec Alice."
-    },
-    {
-      "level": "b1",
-      "word": "glace",
-      "sentence": "Ce matin, quand Cécile achète la glace, et Alice dit un grand merci."
-    },
-    {
-      "level": "a1",
-      "word": "glaçon",
-      "sentence": "Alice goûte le glaçon bien."
-    },
-    {
-      "level": "a2",
-      "word": "glaçon",
-      "sentence": "Ce matin, la cousine partage le glaçon ici aussi."
-    },
-    {
-      "level": "b1",
-      "word": "glaçon",
-      "sentence": "Ce matin, quand la factrice sert le glaçon, parce que Cécile est ici aussi."
-    },
-    {
-      "level": "a1",
-      "word": "leçon",
-      "sentence": "Le cuisinier révise la leçon."
-    },
-    {
-      "level": "a2",
-      "word": "leçon",
-      "sentence": "À midi, Alice pense à la leçon avec Cécile."
-    },
-    {
-      "level": "b1",
-      "word": "leçon",
-      "sentence": "Ce matin, quand la sœur apprend la leçon, et Alice dit un grand merci."
-    },
-    {
-      "level": "a1",
-      "word": "pharmacie",
-      "sentence": "Le papa quitte la pharmacie ici."
-    },
-    {
-      "level": "a2",
-      "word": "pharmacie",
-      "sentence": "À midi, la professeure traverse la pharmacie avec Cécile."
-    },
-    {
-      "level": "b1",
-      "word": "pharmacie",
-      "sentence": "Ce matin, quand le grand-père cherche la pharmacie, parce que Cécile est ici aussi."
-    },
-    {
-      "level": "a1",
-      "word": "piscine",
-      "sentence": "La grand-mère nage dans la piscine ici."
-    },
-    {
-      "level": "a2",
-      "word": "piscine",
-      "sentence": "Après le cours, le jardinier va à la piscine merci."
-    },
-    {
-      "level": "b1",
-      "word": "piscine",
-      "sentence": "Ce matin, quand Cyril bronze près de la piscine, et Alice dit un grand merci."
-    },
-    {
-      "level": "a1",
-      "word": "place",
-      "sentence": "Le garçon contourne la place."
-    },
-    {
-      "level": "a2",
-      "word": "place",
-      "sentence": "À midi, Cyril contourne la place avec soin."
-    },
-    {
-      "level": "b1",
-      "word": "place",
-      "sentence": "Ce matin, quand la copine contourne la place, et Alice dit un grand merci."
-    },
-    {
-      "level": "a1",
-      "word": "police",
-      "sentence": "La musicienne traverse la police."
-    },
-    {
-      "level": "a2",
-      "word": "police",
-      "sentence": "Ce matin, la fille cherche la police avec Alice."
-    },
-    {
-      "level": "b1",
-      "word": "police",
-      "sentence": "Ce matin, quand le maître longe la police, et Alice dit un grand merci."
-    },
-    {
-      "level": "a1",
-      "word": "reçu",
-      "sentence": "La maîtresse oublie le reçu ici."
-    },
-    {
-      "level": "a2",
-      "word": "reçu",
-      "sentence": "Ce soir, le frère cherche le reçu avec Cécile."
-    },
-    {
-      "level": "b1",
-      "word": "reçu",
-      "sentence": "Ce matin, quand le bébé pose le reçu, parce que Cécile est ici aussi."
-    }
-  ],
-  "type10": [
-    {
-      "level": "a1",
-      "sentence": "Cécile aime la balançoire bien.",
-      "parts": [
-        {
-          "t": "Cécile aime "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " balançoire bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le cousin termine la balançoire avec Alice.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cousin termine "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " balançoire avec Alice."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le facteur choisit la balançoire, et Alice dit un grand merci.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " facteur choisit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " balançoire, et Alice dit un grand merci."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La factrice prépare le cassis.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " factrice prépare "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cassis."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le collègue choisit le cassis avec Cécile.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " collègue choisit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cassis avec Cécile."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand un ami goûte le cassis, parce que Cécile est ici aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand un ami goûte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cassis, parce que Cécile est ici aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Une amie achète la ceinture.",
-      "parts": [
-        {
-          "t": "Une amie achète "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " ceinture."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le boulanger met la ceinture avec Alice.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " boulanger met "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " ceinture avec Alice."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la sœur porte la ceinture, et Alice dit un grand merci.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " sœur porte "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " ceinture, et Alice dit un grand merci."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le grand-père prépare le cerceau.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " grand-père prépare "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cerceau."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la boulangère attrape le cerceau ici aussi.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boulangère attrape "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cerceau ici aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Francis marque le cerceau, parce que Cécile est ici aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Francis marque "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cerceau, parce que Cécile est ici aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Cyril prépare le cercle bien.",
-      "parts": [
-        {
-          "t": "Cyril prépare "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cercle bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la copine ouvre le cercle avec Alice.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " copine ouvre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cercle avec Alice."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la cuisinière recopie le cercle, et Alice dit un grand merci.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cuisinière recopie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cercle, et Alice dit un grand merci."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le musicien apporte la cerise.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " musicien apporte "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cerise."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, la directrice mange la cerise avec Cécile.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " directrice mange "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cerise avec Cécile."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la copine partage la cerise, et Alice dit un grand merci.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " copine partage "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cerise, et Alice dit un grand merci."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le maître lave le cerveau ici.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " maître lave "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cerveau ici."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, la voisine essuie le cerveau merci.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " voisine essuie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cerveau merci."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la tante touche le cerveau, et Alice dit un grand merci.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " tante touche "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cerveau, et Alice dit un grand merci."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le bébé aime le cinéma ici.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " bébé aime "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cinéma ici."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Cécile termine le cinéma ici aussi.",
-      "parts": [
-        {
-          "t": "À midi, Cécile termine "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cinéma ici aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le cousin choisit le cinéma, parce que Cécile est ici aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cousin choisit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cinéma, parce que Cécile est ici aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La cousine choisit le citron.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " cousine choisit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " citron."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la factrice goûte le citron avec Alice.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " factrice goûte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " citron avec Alice."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le collègue partage le citron, et Alice dit un grand merci.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " collègue partage "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " citron, et Alice dit un grand merci."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La collègue attrape le cygne.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " collègue attrape "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cygne."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, une amie caresse le cygne avec Cécile.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, une amie caresse "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cygne avec Cécile."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le professeur voit le cygne, parce que Cécile est ici aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " professeur voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cygne, parce que Cécile est ici aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La professeure prépare le céleri ici.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " professeure prépare "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " céleri ici."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le grand-père choisit le céleri merci.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " grand-père choisit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " céleri merci."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la boulangère goûte le céleri, et Alice dit un grand merci.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boulangère goûte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " céleri, et Alice dit un grand merci."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le jardinier corrige un exercice.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " jardinier corrige un exercice."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la boulangère corrige un exercice merci.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boulangère corrige un exercice merci."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le médecin longe la façade.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " médecin longe "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " façade."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le musicien voit la façade avec Alice.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " musicien voit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " façade avec Alice."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la directrice trouve la façade, et Alice dit un grand merci.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " directrice trouve "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " façade, et Alice dit un grand merci."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La fille embrasse le garçon ici.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " fille embrasse "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garçon ici."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le maître remercie le garçon avec Cécile.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " maître remercie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garçon avec Cécile."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la voisine aide le garçon, parce que Cécile est ici aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " voisine aide "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garçon, parce que Cécile est ici aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le frère glisse sur la glace ici.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " frère glisse sur "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " glace ici."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le cousin veut la glace avec Alice.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cousin veut "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " glace avec Alice."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Cécile achète la glace, et Alice dit un grand merci.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Cécile achète "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " glace, et Alice dit un grand merci."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Alice goûte le glaçon bien.",
-      "parts": [
-        {
-          "t": "Alice goûte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " glaçon bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, la cousine partage le glaçon ici aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cousine partage "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " glaçon ici aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la factrice sert le glaçon, parce que Cécile est ici aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " factrice sert "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " glaçon, parce que Cécile est ici aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le cuisinier révise la leçon.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " cuisinier révise "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " leçon."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Alice pense à la leçon avec Cécile.",
-      "parts": [
-        {
-          "t": "À midi, Alice pense à "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " leçon avec Cécile."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la sœur apprend la leçon, et Alice dit un grand merci.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " sœur apprend "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " leçon, et Alice dit un grand merci."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le papa quitte la pharmacie ici.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " papa quitte "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " pharmacie ici."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, la professeure traverse la pharmacie avec Cécile.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " professeure traverse "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " pharmacie avec Cécile."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le grand-père cherche la pharmacie, parce que Cécile est ici aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " grand-père cherche "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " pharmacie, parce que Cécile est ici aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La grand-mère nage dans la piscine ici.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " grand-mère nage dans "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " piscine ici."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le jardinier va à la piscine merci.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardinier va à "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " piscine merci."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Cyril bronze près de la piscine, et Alice dit un grand merci.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Cyril bronze près de "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " piscine, et Alice dit un grand merci."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le garçon contourne la place.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " garçon contourne "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " place."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Cyril contourne la place avec soin.",
-      "parts": [
-        {
-          "t": "À midi, Cyril contourne "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " place avec soin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la copine contourne la place, et Alice dit un grand merci.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " copine contourne "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " place, et Alice dit un grand merci."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La musicienne traverse la police.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " musicienne traverse "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " police."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, la fille cherche la police avec Alice.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " fille cherche "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " police avec Alice."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le maître longe la police, et Alice dit un grand merci.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " maître longe "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " police, et Alice dit un grand merci."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La maîtresse oublie le reçu ici.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " maîtresse oublie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " reçu ici."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le frère cherche le reçu avec Cécile.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " frère cherche "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " reçu avec Cécile."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le bébé pose le reçu, parce que Cécile est ici aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bébé pose "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " reçu, parce que Cécile est ici aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La maman joue avec la balançoire.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " maman joue avec "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " balançoire."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La professeure coupe le cassis.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " professeure coupe "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cassis."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Alice enfile la ceinture bien.",
-      "parts": [
-        {
-          "t": "Alice enfile "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " ceinture bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La musicienne gagne le cerceau.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " musicienne gagne "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cerceau."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, un ami mange le céleri avec Cécile.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, un ami mange "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " céleri avec Cécile."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le voisin corrige un exercice merci.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " voisin corrige un exercice merci."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le grand-père visite la façade merci.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " grand-père visite "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " façade merci."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, une amie appelle le garçon ici aussi.",
-      "parts": [
-        {
-          "t": "Ce soir, une amie appelle "
-        },
+      "variants": [
         {
-          "blank": "le"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Cécile et Cyril achètent une glace au citron."
+          ]
         },
         {
-          "t": " garçon ici aussi."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand Cédric prépare une glace, il ajoute du cassis parce que ce fruit est délicieux."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "Ce matin, quand le cuisinier voit la police, parce que Cécile est ici aussi.",
-      "parts": [
+      "word": "hôpital",
+      "variants": [
         {
-          "t": "Ce matin, quand "
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Cette ambulance roule vers l’hôpital."
+          ]
         },
         {
-          "blank": "le"
-        },
-        {
-          "t": " cuisinier voit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " police, parce que Cécile est ici aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Alice prend le reçu, et Alice dit un grand merci.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Alice prend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " reçu, et Alice dit un grand merci."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la musicienne regarde la balançoire, et Alice dit un grand merci.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " musicienne regarde "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " balançoire, et Alice dit un grand merci."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la cuisinière sert le cassis, parce que Cécile est ici aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cuisinière sert "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cassis, parce que Cécile est ici aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le papa étudie le cercle.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " papa étudie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cercle."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Francis sert la cerise bien.",
-      "parts": [
-        {
-          "t": "Francis sert "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cerise bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le collègue regarde le cerveau.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " collègue regarde "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cerveau."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La jardinière joue avec le cinéma.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " jardinière joue avec "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cinéma."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Cyril mange le citron bien.",
-      "parts": [
-        {
-          "t": "Cyril mange "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " citron bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La collègue regarde le cygne.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " collègue regarde "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cygne."
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Cette ambulance arrive à l’hôpital en cinq minutes."
+          ]
         }
       ]
     },
     {
-      "level": "a2",
-      "sentence": "Ce soir, la fille patine sur la glace merci.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " fille patine sur "
-        },
-        {
-          "blank": "la"
-        },
+      "word": "journalistes",
+      "variants": [
         {
-          "t": " glace merci."
+          "level": "b1",
+          "number": "plur",
+          "sentences": [
+            "Parce que cette actrice a du succès, les journalistes la suivent partout, même à Paris."
+          ]
         }
       ]
     },
     {
-      "level": "a2",
-      "sentence": "Avant le repas, le médecin choisit le glaçon ici aussi.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " médecin choisit "
-        },
-        {
-          "blank": "le"
-        },
+      "word": "monnaie",
+      "variants": [
         {
-          "t": " glaçon ici aussi."
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Cette caissière rend la monnaie ici."
+          ]
         }
       ]
     },
     {
-      "level": "a2",
-      "sentence": "Après le cours, le papa sait la leçon avec Cécile.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " papa sait "
-        },
-        {
-          "blank": "la"
-        },
+      "word": "nouvelle",
+      "variants": [
         {
-          "t": " leçon avec Cécile."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Comme cette balance est trop ancienne, Cécile décide d’en acheter une nouvelle cette semaine."
+          ]
         }
       ]
     },
     {
-      "level": "a2",
-      "sentence": "Après le cours, un ami visite la pharmacie avec Alice.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, un ami visite "
-        },
-        {
-          "blank": "la"
-        },
+      "word": "Parce",
+      "variants": [
         {
-          "t": " pharmacie avec Alice."
+          "level": "b1",
+          "sentences": [
+            "Parce que cette caissière est très gentille, Cécile revient souvent dans ce commerce du centre."
+          ]
         }
       ]
     },
     {
-      "level": "a2",
-      "sentence": "Ce matin, la grand-mère bronze près de la piscine merci.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " grand-mère bronze près de "
-        },
+      "word": "porte",
+      "variants": [
         {
-          "blank": "la"
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Les dames bavardent à la porte."
+          ]
         },
         {
-          "t": " piscine merci."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Parce que Cécile a reçu cette casquette en cadeau, elle la porte pendant ses vacances."
+          ]
         }
       ]
     },
     {
-      "level": "a2",
-      "sentence": "Après le cours, le directeur contourne la place merci.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " directeur contourne "
-        },
+      "word": "prendre",
+      "variants": [
         {
-          "blank": "la"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Je ne te permets pas de prendre le briquet."
+          ]
         },
         {
-          "t": " place merci."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Comme ce biscuit coûte seulement cinq francs, Cécile décide de le prendre ici."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "Ce matin, quand le professeur range la ceinture, parce que Cécile est ici aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " professeur range "
-        },
-        {
-          "blank": "la"
-        },
+      "word": "récente",
+      "variants": [
         {
-          "t": " ceinture, parce que Cécile est ici aussi."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Parce que cette calculatrice est trop ancienne, Cécile en achète une récente à la place."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "Ce matin, quand Cécile regarde le cerceau, parce que Cécile est ici aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Cécile regarde "
-        },
-        {
-          "blank": "le"
-        },
+      "word": "recette",
+      "variants": [
         {
-          "t": " cerceau, parce que Cécile est ici aussi."
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Cette balance indique cent grammes de farine pour la recette."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "Ce matin, quand le médecin écrit le cercle, et Alice dit un grand merci.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " médecin écrit "
-        },
-        {
-          "blank": "le"
-        },
+      "word": "semaine",
+      "variants": [
         {
-          "t": " cercle, et Alice dit un grand merci."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Si ces boucles d’oreilles coûtent cinq cents francs, Cécile préfère patienter encore une semaine."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "Ce matin, quand Cyril prépare la cerise, et Alice dit un grand merci.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Cyril prépare "
-        },
-        {
-          "blank": "la"
-        },
+      "word": "vacances",
+      "variants": [
         {
-          "t": " cerise, et Alice dit un grand merci."
+          "level": "a2",
+          "number": "plur",
+          "sentences": [
+            "Cette casquette protège Cyril du soleil pendant les vacances en France."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "Ce matin, quand le maître regarde le cerveau, et Alice dit un grand merci.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " maître regarde "
-        },
-        {
-          "blank": "le"
-        },
+      "word": "ville",
+      "variants": [
         {
-          "t": " cerveau, et Alice dit un grand merci."
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Cécile roule à bicyclette dans la ville depuis cinq ans."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "Ce matin, quand le frère regarde le cinéma, et Alice dit un grand merci.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " frère regarde "
-        },
-        {
-          "blank": "le"
-        },
+      "word": "voisins",
+      "variants": [
         {
-          "t": " cinéma, et Alice dit un grand merci."
+          "level": "b1",
+          "number": "plur",
+          "sentences": [
+            "Quand cette ambulance arrive ici, les voisins s’écartent et laissent toute la place."
+          ]
         }
       ]
-    }
-  ],
-  "type12": [
-    {
-      "level": "a1",
-      "sentence": "La maman joue avec la balançoire."
-    },
-    {
-      "level": "a1",
-      "sentence": "La professeure coupe le cassis."
-    },
-    {
-      "level": "a1",
-      "sentence": "Alice enfile la ceinture bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La musicienne gagne le cerceau."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, un ami mange le céleri avec Cécile."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le voisin corrige un exercice merci."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le grand-père visite la façade merci."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, une amie appelle le garçon ici aussi."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le cuisinier voit la police, parce que Cécile est ici aussi."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Alice prend le reçu, et Alice dit un grand merci."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la musicienne regarde la balançoire, et Alice dit un grand merci."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la cuisinière sert le cassis, parce que Cécile est ici aussi."
-    }
-  ],
-  "type14": [
-    {
-      "level": "a1",
-      "sentence": "Le papa étudie le cercle."
-    },
-    {
-      "level": "a1",
-      "sentence": "Francis sert la cerise bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le collègue regarde le cerveau."
-    },
-    {
-      "level": "a1",
-      "sentence": "La jardinière joue avec le cinéma."
-    },
-    {
-      "level": "a1",
-      "sentence": "Cyril mange le citron bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La collègue regarde le cygne."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, la fille patine sur la glace merci."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le médecin choisit le glaçon ici aussi."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le papa sait la leçon avec Cécile."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, un ami visite la pharmacie avec Alice."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, la grand-mère bronze près de la piscine merci."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le directeur contourne la place merci."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le professeur range la ceinture, parce que Cécile est ici aussi."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Cécile regarde le cerceau, parce que Cécile est ici aussi."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le médecin écrit le cercle, et Alice dit un grand merci."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Cyril prépare la cerise, et Alice dit un grand merci."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le maître regarde le cerveau, et Alice dit un grand merci."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le frère regarde le cinéma, et Alice dit un grand merci."
     }
   ]
 }

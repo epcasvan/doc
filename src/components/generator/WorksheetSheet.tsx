@@ -142,6 +142,8 @@ export function WorksheetSheet({
       'syllable-complete',
       'listen-check',
       'syllable-sound',
+      'syllable-pronounce',
+      'mark-letter',
       'phrase-scramble',
       'determinant-fill',
       'dictee-grid',
@@ -155,9 +157,10 @@ export function WorksheetSheet({
     ? 1
     : page.columns
   const isSoutienFr = page.domain === 'soutien-fr'
+  const isAlphabetisation = page.domain === 'alphabetisation'
   return (
     <article
-      className={`worksheet-sheet ${parity}${isJeuxSheet ? ' is-jeux' : ''}${isSoutienFr ? ' is-soutien-fr' : ''}${evalMode ? ' is-eval' : ''}`}
+      className={`worksheet-sheet ${parity}${isJeuxSheet ? ' is-jeux' : ''}${isSoutienFr ? ' is-soutien-fr' : ''}${isAlphabetisation ? ' is-alphabetisation' : ''}${evalMode ? ' is-eval' : ''}`}
       style={{ '--sheet-columns': sheetColumns } as CSSProperties}
     >
       {showHeader ? (
@@ -261,6 +264,8 @@ export function WorksheetSheet({
                         'syllable-complete',
                         'listen-check',
                         'syllable-sound',
+      'syllable-pronounce',
+      'mark-letter',
                         'phrase-scramble',
                         'determinant-fill',
                         'dictee-grid',

@@ -1,2234 +1,749 @@
 {
-  "type9": [
+  "son": "h",
+  "phrases": [
     {
-      "level": "a1",
+      "word": "cahier",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Hélène a un cahier bleu.",
+            "Hugo ouvre le cahier d’Hélène."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Hamid prête le cahier d’Hugo à Hélène pour l’histoire.",
+            "Hugo écrit son histoire dans un cahier avec Hélène."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Hector a oublié son cahier d’histoire, mais Hugo et Hélène lui prêtent le leur."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "cherche",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Je cherche un ver de terre."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand Hugo perd son cahier, il le cherche hier et aujourd’hui avec Hélène."
+          ]
+        }
+      ]
+    },
+    {
       "word": "hache",
-      "sentence": "Hugo prend une hache bien."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Henri prend la hache d’Hugo.",
+            "Hugo prend la hache d’Hélène."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Hamid range la hache d’Hugo dans le hangar d’Hélène.",
+            "Hugo range la hache dans le hangar avec Henri hier soir."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Hector coupe du bois avec la hache d’Hugo, mais Hélène préfère la scie.",
+            "Quand Henri coupe du bois, il prend la hache et Hélène regarde depuis l’hôtel."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "hache",
-      "sentence": "Ce matin, la fille utilise une hache avec Henri."
+      "word": "halle",
+      "variants": [
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Hélène joue au handball avec Henri dans la halle du village."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "hache",
-      "sentence": "Quand le maître range une hache hors de la maison, et Hugo est très content."
+      "word": "haltère",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Hugo soulève un haltère d’Hélène.",
+            "Hugo soulève une haltère huit fois."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Hamid soulève un haltère de huit kilos pour Hélène.",
+            "Hélène range une haltère dans le hangar de l’hôtel."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Hector range son haltère dans le hangar, mais Hugo et Hélène s’entraînent encore.",
+            "Quand Hugo s’entraîne, il soulève une haltère pendant une heure, mais Hélène court."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
       "word": "hamac",
-      "sentence": "La maîtresse commence un hamac là-haut."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Hugo dort dans le hamac.",
+            "Hugo dort dans un hamac."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Hélène accroche le hamac d’Hugo près de la haie.",
+            "Hélène installe un hamac entre deux arbres derrière l’hôtel."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Hector installe un hamac dans le hangar, mais Hugo et Hélène préfèrent le jardin."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "hamac",
-      "sentence": "Ce soir, le copain choisit un hamac là-haut."
-    },
-    {
-      "level": "b1",
-      "word": "hamac",
-      "sentence": "À midi, quand Hugo termine un hamac avec Henri, parce que Hélène est contente."
-    },
-    {
-      "level": "a1",
       "word": "hamburger",
-      "sentence": "Un ami choisit le hamburger."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Hugo mange un hamburger à midi.",
+            "Hugo mange un hamburger chaud."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Hélène achète un hamburger pour Hugo et Hamid hier.",
+            "Hélène commande un hamburger à l’hôtel hier soir avec Hugo."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Hector commande un hamburger, mais Hugo et Hélène préfèrent la salade du hall d’hôtel.",
+            "Quand Henri a faim, il mange un hamburger à l’hôtel avant huit heures."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "hamburger",
-      "sentence": "Avant le repas, le collègue achète le hamburger avec Henri."
+      "word": "handball",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Hugo joue au handball hier."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Hélène regarde le handball avec Hugo et Hamid hier."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Hector joue au handball, mais Hugo et Hélène préfèrent le hockey comme Hamid."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "hamburger",
-      "sentence": "Quand Henri prépare le hamburger hors de la maison, et Hugo est très content."
+      "word": "hanneton",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Hugo voit un hanneton hier."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Hélène attrape un hanneton dans la haie d’Hugo.",
+            "Hélène observe un hanneton sur l’herbe devant l’hôtel."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Hector regarde le hanneton, mais Hugo et Hélène préfèrent observer le hérisson comme Hamid.",
+            "Quand le hanneton vole dans la haie, Henri recule car Hugo a horreur des insectes."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
-      "word": "hamster",
-      "sentence": "Le jardinier nourrit le hamster avec Henri."
-    },
-    {
-      "level": "a2",
-      "word": "hamster",
-      "sentence": "Après le cours, Henri voit le hamster hors de la maison."
-    },
-    {
-      "level": "b1",
-      "word": "hamster",
-      "sentence": "À midi, quand Hélène attrape le hamster là-haut, parce que Hélène est contente."
-    },
-    {
-      "level": "a1",
       "word": "haricot",
-      "sentence": "Thomas partage le haricot bien."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Hugo cuit un haricot vert.",
+            "Hugo mange un haricot hier."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Hélène coupe un haricot pour Hugo et Hamid hier."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Hector cuit un haricot, mais Hugo et Hélène préfèrent manger le hamburger comme Hamid.",
+            "Quand Henri cuit un haricot, Hugo goûte l’huile et Hélène hésite encore longtemps."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "haricot",
-      "sentence": "Ce matin, le jardinier choisit le haricot avec Hugo."
+      "word": "haricots",
+      "variants": [
+        {
+          "level": "a2",
+          "number": "plur",
+          "sentences": [
+            "Hélène cuisine des haricots avec de l’huile et de l’herbe."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Hector ajoute de l’huile dans sa salade de haricots."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "haricot",
-      "sentence": "À midi, quand la grand-mère achète le haricot avec Hugo, et Hugo est très content."
+      "word": "harmonica",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Hugo joue de l’harmonica hier."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Hélène écoute l’harmonica d’Hugo et de Hamid hier.",
+            "Henri apprend l’harmonica à l’hôtel avec Hélène chaque dimanche."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Hector joue de l’harmonica, mais Hugo et Hélène préfèrent la harpe comme Hamid.",
+            "Quand Hugo joue de l’harmonica, Hélène chante et Henri applaudit avec beaucoup d’humour."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
       "word": "harpe",
-      "sentence": "Le voisin joue avec la harpe là-haut."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Hélène joue de la harpe.",
+            "Hugo joue de la harpe."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Hélène écoute la harpe d’Hugo et de Hamid hier.",
+            "Hugo écoute la harpe d’Hélène chaque jeudi à l’hôtel."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Hector joue de la harpe, mais Hugo et Hélène préfèrent l’harmonica comme Hamid.",
+            "Quand Hélène joue de la harpe, Hugo ferme les yeux et il oublie son humeur."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "harpe",
-      "sentence": "À midi, le facteur choisit la harpe hors de la maison."
-    },
-    {
-      "level": "b1",
-      "word": "harpe",
-      "sentence": "À midi, quand Thomas aime la harpe avec Henri, parce que Hélène est contente."
-    },
-    {
-      "level": "a1",
-      "word": "hasard",
-      "sentence": "La maman utilise un hasard avec Henri."
-    },
-    {
-      "level": "a2",
-      "word": "hasard",
-      "sentence": "Après le cours, Thomas cherche un hasard avec Hugo."
-    },
-    {
-      "level": "b1",
-      "word": "hasard",
-      "sentence": "Quand Thomas range un hasard hors de la maison, et Hugo est très content."
-    },
-    {
-      "level": "a1",
-      "word": "herbe",
-      "sentence": "La musicienne voit une herbe avec Henri."
-    },
-    {
-      "level": "a2",
-      "word": "herbe",
-      "sentence": "À midi, Hugo observe une herbe hors de la maison."
-    },
-    {
-      "level": "b1",
-      "word": "herbe",
-      "sentence": "Ce matin, quand la fille photographie une herbe, parce que Hélène est contente."
-    },
-    {
-      "level": "a1",
-      "word": "heure",
-      "sentence": "Un ami choisit une heure."
-    },
-    {
-      "level": "a2",
-      "word": "heure",
-      "sentence": "Avant le repas, Hugo aime une heure là-haut."
-    },
-    {
-      "level": "b1",
-      "word": "heure",
-      "sentence": "À midi, quand Hugo parle avec une heure avec Henri, parce que Hélène est contente."
-    },
-    {
-      "level": "a1",
-      "word": "hibou",
-      "sentence": "La cousine attrape le hibou là-haut."
-    },
-    {
-      "level": "a2",
-      "word": "hibou",
-      "sentence": "Après le cours, Henri regarde le hibou avec Hugo."
-    },
-    {
-      "level": "b1",
-      "word": "hibou",
-      "sentence": "Quand Hugo soigne le hibou hors de la maison, et Hugo est très content."
-    },
-    {
-      "level": "a1",
-      "word": "hirondelle",
-      "sentence": "Le professeur nourrit une hirondelle avec Henri."
-    },
-    {
-      "level": "a2",
-      "word": "hirondelle",
-      "sentence": "Ce soir, Thomas caresse une hirondelle avec Hugo."
-    },
-    {
-      "level": "b1",
-      "word": "hirondelle",
-      "sentence": "À midi, quand Henri sauve une hirondelle là-haut, parce que Hélène est contente."
-    },
-    {
-      "level": "a1",
-      "word": "histoire",
-      "sentence": "Le directeur raconte une histoire avec Henri."
-    },
-    {
-      "level": "a2",
-      "word": "histoire",
-      "sentence": "Avant le repas, Hélène écoute une histoire hors de la maison."
-    },
-    {
-      "level": "b1",
-      "word": "histoire",
-      "sentence": "À midi, quand Henri vit une histoire avec Hugo, et Hugo est très content."
-    },
-    {
-      "level": "a1",
-      "word": "hiver",
-      "sentence": "La maman attend un hiver avec Hugo."
-    },
-    {
-      "level": "a2",
-      "word": "hiver",
-      "sentence": "Après le cours, Thomas parle avec un hiver là-haut."
-    },
-    {
-      "level": "b1",
-      "word": "hiver",
-      "sentence": "Quand la sœur choisit un hiver hors de la maison, et Hugo est très content."
-    },
-    {
-      "level": "a1",
-      "word": "hockey",
-      "sentence": "Le copain attrape le hockey là-haut."
-    },
-    {
-      "level": "a2",
-      "word": "hockey",
-      "sentence": "Ce matin, Thomas lance le hockey avec Hugo."
-    },
-    {
-      "level": "b1",
-      "word": "hockey",
-      "sentence": "Quand Thomas joue avec le hockey hors de la maison, et Hugo est très content."
-    },
-    {
-      "level": "a1",
-      "word": "homard",
-      "sentence": "La voisine sert le homard avec Henri."
-    },
-    {
-      "level": "a2",
-      "word": "homard",
-      "sentence": "Avant le repas, la musicienne achète le homard là-haut."
-    },
-    {
-      "level": "b1",
-      "word": "homard",
-      "sentence": "À midi, quand Hugo prépare le homard avec Henri, et Hugo est très content."
-    },
-    {
-      "level": "a1",
-      "word": "homme",
-      "sentence": "Henri suit un homme bien."
-    },
-    {
-      "level": "a2",
-      "word": "homme",
-      "sentence": "Après le cours, Hugo invite un homme là-haut."
-    },
-    {
-      "level": "b1",
-      "word": "homme",
-      "sentence": "À midi, quand Hugo aide un homme avec Henri, parce que Hélène est contente."
-    },
-    {
-      "level": "a1",
-      "word": "horaire",
-      "sentence": "Le professeur prépare un horaire avec Hugo."
-    },
-    {
-      "level": "a2",
-      "word": "horaire",
-      "sentence": "À midi, Henri choisit un horaire avec Hugo."
-    },
-    {
-      "level": "b1",
-      "word": "horaire",
-      "sentence": "Quand Henri attend un horaire hors de la maison, et Hugo est très content."
-    },
-    {
-      "level": "a1",
-      "word": "horizon",
-      "sentence": "La grand-mère observe un horizon là-haut."
-    },
-    {
-      "level": "a2",
-      "word": "horizon",
-      "sentence": "À midi, la boulangère photographie un horizon avec Hugo."
-    },
-    {
-      "level": "b1",
-      "word": "horizon",
-      "sentence": "À midi, quand Hélène voit un horizon là-haut, parce que Hélène est contente."
-    },
-    {
-      "level": "a1",
-      "word": "horloge",
-      "sentence": "Le frère range une horloge avec Henri."
-    },
-    {
-      "level": "a2",
-      "word": "horloge",
-      "sentence": "Après le cours, Hélène ouvre une horloge hors de la maison."
-    },
-    {
-      "level": "b1",
-      "word": "horloge",
-      "sentence": "À midi, quand Thomas nettoie une horloge avec Hugo, et Hugo est très content."
-    },
-    {
-      "level": "a1",
-      "word": "huile",
-      "sentence": "Le garçon prépare une huile avec Henri."
-    },
-    {
-      "level": "a2",
-      "word": "huile",
-      "sentence": "Avant le repas, la maman choisit une huile hors de la maison."
-    },
-    {
-      "level": "b1",
-      "word": "huile",
-      "sentence": "Quand le directeur achète une huile hors de la maison, et Hugo est très content."
-    },
-    {
-      "level": "a1",
-      "word": "huit",
-      "sentence": "La voisine prépare le huit avec Hugo."
-    },
-    {
-      "level": "a2",
-      "word": "huit",
-      "sentence": "Ce matin, Henri prépare le huit avec Hugo."
-    },
-    {
-      "level": "b1",
-      "word": "huit",
-      "sentence": "Quand Thomas écrit le huit hors de la maison, et Hugo est très content."
-    },
-    {
-      "level": "a1",
       "word": "hélicoptère",
-      "sentence": "Le médecin prend le hélicoptère là-haut."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Hugo voit un hélicoptère hier."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Hélène prend l’hélicoptère avec Hugo et Hamid hier."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Hector pilote l’hélicoptère, mais Hugo et Hélène préfèrent rester à l’hôtel comme Hamid."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "hélicoptère",
-      "sentence": "Après le cours, Hugo regarde le hélicoptère hors de la maison."
+      "word": "herbe",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Hugo coupe l’herbe hier.",
+            "Hugo marche dans l’herbe haute."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Hélène coupe l’herbe derrière l’hôtel avec Henri hier matin.",
+            "Hélène marche dans l’herbe avec Hugo et Hamid hier."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Hector tond l’herbe, mais Hugo et Hélène préfèrent la laisser haute comme Hamid.",
+            "Quand l’herbe devient trop haute, Hugo la coupe et Hélène range ensuite l’outil."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "hélicoptère",
-      "sentence": "À midi, quand Thomas attend le hélicoptère là-haut, parce que Hélène est contente."
-    },
-    {
-      "level": "a1",
       "word": "hérisson",
-      "sentence": "La copine voit le hérisson avec Henri."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Hugo voit un hérisson hier."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Hélène nourrit un hérisson avec Hugo et Hamid hier."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Hector regarde le hérisson, mais Hugo et Hélène préfèrent l’hibou comme Hamid."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "hérisson",
-      "sentence": "À midi, Henri sauve le hérisson près de Hélène."
+      "word": "hêtre",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Hugo grimpe sur un hêtre."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Hélène plante un hêtre avec Hugo et Hamid hier."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Hector taille le hêtre, mais Hugo et Hélène préfèrent le chêne du hameau comme Hamid."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "hérisson",
-      "sentence": "À midi, quand Thomas regarde le hérisson avec Hugo, et Hugo est très content."
+      "word": "hexagone",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Hugo dessine un hexagone hier."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Hélène trace un hexagone avec Henri sur une feuille hier.",
+            "Hélène trace un hexagone avec Hugo et Hamid hier."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Hector dessine un hexagone, mais Hugo et Hélène préfèrent dessiner un carré comme Hamid.",
+            "Quand Hugo apprend l’hexagone, il compte les côtés et Hélène vérifie à huit heures."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
+      "word": "hibou",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Hugo voit un hibou hier soir.",
+            "Hugo voit un hibou hier.",
+            "Un hibou se cache sous le houx."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Hélène écoute un hibou avec Hugo et Hamid hier.",
+            "Le hibou habite dans la haie derrière l’hôtel d’Hélène."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Hector regarde le hibou, mais Hugo et Hélène préfèrent la hulotte comme Hamid.",
+            "Quand le hibou hulule la nuit, Hélène ouvre la fenêtre et Hugo écoute avec bonheur."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "hippocampe",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Hugo dessine un hippocampe hier."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Hélène regarde un hippocampe avec Henri dans l’aquarium de l’hôtel.",
+            "Hélène voit un hippocampe avec Hugo et Hamid hier."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Hector dessine un hippocampe, mais Hugo et Hélène préfèrent le hérisson comme Hamid.",
+            "Quand l’hippocampe nage dans l’herbe, Hugo retient son souffle et Hélène sourit enfin."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "hirondelle",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Hugo voit une hirondelle hier."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Hélène regarde l’hirondelle avec Hugo et Hamid hier.",
+            "Hugo voit l’hirondelle construire son nid sous le toit d’Henri."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Hector photographie une hirondelle, mais Hugo et Hélène préfèrent le hibou comme Hamid.",
+            "Quand l’hirondelle part en hiver, Hélène ferme la fenêtre et Hugo regarde le ciel."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "hiver",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Hugo aime l’hiver à Hérémence.",
+            "Hugo aime l’hiver, Hélène aussi."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Hélène habite en hiver à la montagne avec Hugo et Hamid."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Hector adore l’hiver, mais Hugo et Hélène préfèrent l’été, comme Hamid et Henri.",
+            "Quand l’hiver arrive, Hugo met son manteau, mais Hélène reste tranquille à l’hôtel."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "hobby",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Hugo a un nouveau hobby."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Hélène a le même hobby que Hugo et Hamid."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Hector a un hobby original, mais Hugo et Hélène préfèrent le hockey comme Hamid."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "hockey",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Hugo joue au hockey hier."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Hélène regarde le hockey avec Hugo et Hamid hier."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Hector joue au hockey, mais Hugo et Hélène préfèrent le handball comme Hamid et Henri."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "homard",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Hugo mange un homard hier."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Hélène cuit un homard pour Hugo et Hamid hier."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Hector achète un homard, mais Hugo et Hélène préfèrent le hareng comme Hamid et Henri."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "homme",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Cet homme est un grand magicien.",
+            "Hugo aide un homme hier."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Hélène parle à un homme avec Hugo et Hamid hier."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Hector croise un homme, mais Hugo et Hélène préfèrent lui parler comme Hamid."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "hopital",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Hugo visite l’hôpital hier."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Hélène travaille à l’hôpital avec Hugo et Hamid hier."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Hector arrive à l’hôpital, mais Hugo et Hélène préfèrent rester à l’hôtel."
+          ]
+        }
+      ]
+    },
+    {
       "word": "hôpital",
-      "sentence": "Une amie cherche un hôpital."
+      "variants": [
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand Henri rentre de l’hôpital, il se repose dans le hamac avec Hugo."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "hôpital",
-      "sentence": "Avant le repas, Henri traverse un hôpital avec Hugo."
-    },
-    {
-      "level": "b1",
-      "word": "hôpital",
-      "sentence": "Quand Henri visite un hôpital hors de la maison, et Hugo est très content."
-    },
-    {
-      "level": "a1",
       "word": "hôtel",
-      "sentence": "Le frère quitte un hôtel avec Hugo."
-    },
-    {
-      "level": "a2",
-      "word": "hôtel",
-      "sentence": "Après le cours, Hélène cherche un hôtel avec Henri."
-    },
-    {
-      "level": "b1",
-      "word": "hôtel",
-      "sentence": "À midi, quand Hugo voit un hôtel là-haut, parce que Hélène est contente."
-    }
-  ],
-  "type10": [
-    {
-      "level": "a2",
-      "sentence": "Ce matin, la fille utilise une hache avec Henri.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " fille utilise une hache avec Henri."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand le maître range une hache hors de la maison, et Hugo est très content.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " maître range une hache hors de "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maison, et Hugo est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La maîtresse commence un hamac là-haut.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " maîtresse commence un hamac là-haut."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le copain choisit un hamac là-haut.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " copain choisit un hamac là-haut."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Un ami choisit le hamburger.",
-      "parts": [
-        {
-          "t": "Un ami choisit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " hamburger."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le collègue achète le hamburger avec Henri.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " collègue achète "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " hamburger avec Henri."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand Henri prépare le hamburger hors de la maison, et Hugo est très content.",
-      "parts": [
-        {
-          "t": "Quand Henri prépare "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " hamburger hors de "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maison, et Hugo est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le jardinier nourrit le hamster avec Henri.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " jardinier nourrit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " hamster avec Henri."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Henri voit le hamster hors de la maison.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Henri voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " hamster hors de "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maison."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Hélène attrape le hamster là-haut, parce que Hélène est contente.",
-      "parts": [
-        {
-          "t": "À midi, quand Hélène attrape "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " hamster là-haut, parce que Hélène est contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Thomas partage le haricot bien.",
-      "parts": [
-        {
-          "t": "Thomas partage "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " haricot bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le jardinier choisit le haricot avec Hugo.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardinier choisit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " haricot avec Hugo."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand la grand-mère achète le haricot avec Hugo, et Hugo est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " grand-mère achète "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " haricot avec Hugo, et Hugo est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le voisin joue avec la harpe là-haut.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " voisin joue avec "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " harpe là-haut."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le facteur choisit la harpe hors de la maison.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " facteur choisit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " harpe hors de "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maison."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Thomas aime la harpe avec Henri, parce que Hélène est contente.",
-      "parts": [
-        {
-          "t": "À midi, quand Thomas aime "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " harpe avec Henri, parce que Hélène est contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La maman utilise un hasard avec Henri.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " maman utilise un hasard avec Henri."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Thomas cherche un hasard avec Hugo.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Thomas cherche un hasard avec Hugo."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand Thomas range un hasard hors de la maison, et Hugo est très content.",
-      "parts": [
-        {
-          "t": "Quand Thomas range un hasard hors de "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maison, et Hugo est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La musicienne voit une herbe avec Henri.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " musicienne voit une herbe avec Henri."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Hugo observe une herbe hors de la maison.",
-      "parts": [
-        {
-          "t": "À midi, Hugo observe une herbe hors de "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maison."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la fille photographie une herbe, parce que Hélène est contente.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " fille photographie une herbe, parce que Hélène est contente."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Hugo aime une heure là-haut.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, Hugo aime une heure là-haut."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La cousine attrape le hibou là-haut.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " cousine attrape "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " hibou là-haut."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Henri regarde le hibou avec Hugo.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Henri regarde "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " hibou avec Hugo."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand Hugo soigne le hibou hors de la maison, et Hugo est très content.",
-      "parts": [
-        {
-          "t": "Quand Hugo soigne "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " hibou hors de "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maison, et Hugo est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le professeur nourrit une hirondelle avec Henri.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " professeur nourrit une hirondelle avec Henri."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le directeur raconte une histoire avec Henri.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " directeur raconte une histoire avec Henri."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Hélène écoute une histoire hors de la maison.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, Hélène écoute une histoire hors de "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maison."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La maman attend un hiver avec Hugo.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " maman attend un hiver avec Hugo."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Thomas parle avec un hiver là-haut.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Thomas parle avec un hiver là-haut."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand la sœur choisit un hiver hors de la maison, et Hugo est très content.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " sœur choisit un hiver hors de "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maison, et Hugo est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le copain attrape le hockey là-haut.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " copain attrape "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " hockey là-haut."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Thomas lance le hockey avec Hugo.",
-      "parts": [
-        {
-          "t": "Ce matin, Thomas lance "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " hockey avec Hugo."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand Thomas joue avec le hockey hors de la maison, et Hugo est très content.",
-      "parts": [
-        {
-          "t": "Quand Thomas joue avec "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " hockey hors de "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maison, et Hugo est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La voisine sert le homard avec Henri.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " voisine sert "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " homard avec Henri."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la musicienne achète le homard là-haut.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " musicienne achète "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " homard là-haut."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Hugo prépare le homard avec Henri, et Hugo est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Hugo prépare "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " homard avec Henri, et Hugo est très content."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Hugo invite un homme là-haut.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Hugo invite un homme là-haut."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le professeur prépare un horaire avec Hugo.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " professeur prépare un horaire avec Hugo."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand Henri attend un horaire hors de la maison, et Hugo est très content.",
-      "parts": [
-        {
-          "t": "Quand Henri attend un horaire hors de "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maison, et Hugo est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La grand-mère observe un horizon là-haut.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " grand-mère observe un horizon là-haut."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, la boulangère photographie un horizon avec Hugo.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boulangère photographie un horizon avec Hugo."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le frère range une horloge avec Henri.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " frère range une horloge avec Henri."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Hélène ouvre une horloge hors de la maison.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Hélène ouvre une horloge hors de "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maison."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le garçon prépare une huile avec Henri.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " garçon prépare une huile avec Henri."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la maman choisit une huile hors de la maison.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maman choisit une huile hors de "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maison."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand le directeur achète une huile hors de la maison, et Hugo est très content.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " directeur achète une huile hors de "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maison, et Hugo est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La voisine prépare le huit avec Hugo.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " voisine prépare "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " huit avec Hugo."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Henri prépare le huit avec Hugo.",
-      "parts": [
-        {
-          "t": "Ce matin, Henri prépare "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " huit avec Hugo."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand Thomas écrit le huit hors de la maison, et Hugo est très content.",
-      "parts": [
-        {
-          "t": "Quand Thomas écrit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " huit hors de "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maison, et Hugo est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le médecin prend le hélicoptère là-haut.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " médecin prend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " hélicoptère là-haut."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Hugo regarde le hélicoptère hors de la maison.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Hugo regarde "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " hélicoptère hors de "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maison."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Thomas attend le hélicoptère là-haut, parce que Hélène est contente.",
-      "parts": [
-        {
-          "t": "À midi, quand Thomas attend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " hélicoptère là-haut, parce que Hélène est contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La copine voit le hérisson avec Henri.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " copine voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " hérisson avec Henri."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Henri sauve le hérisson près de Hélène.",
-      "parts": [
-        {
-          "t": "À midi, Henri sauve "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " hérisson près de Hélène."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Thomas regarde le hérisson avec Hugo, et Hugo est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Thomas regarde "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " hérisson avec Hugo, et Hugo est très content."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Henri traverse un hôpital avec Hugo.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, Henri traverse un hôpital avec Hugo."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand Henri visite un hôpital hors de la maison, et Hugo est très content.",
-      "parts": [
-        {
-          "t": "Quand Henri visite un hôpital hors de "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maison, et Hugo est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le frère quitte un hôtel avec Hugo.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " frère quitte un hôtel avec Hugo."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Hélène cherche un hôtel avec Henri.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Hélène cherche un hôtel avec Henri."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le voisin montre une hache.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " voisin montre une hache."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La boulangère aime un hamac avec Hugo.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " boulangère aime un hamac avec Hugo."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le médecin mange le hamburger avec Henri.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " médecin mange "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " hamburger avec Henri."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La voisine caresse le hamster avec Hugo.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " voisine caresse "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " hamster avec Hugo."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Hugo regarde une hirondelle avec Henri.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Hugo regarde une hirondelle avec Henri."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Thomas continue une histoire avec Hugo.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Thomas continue une histoire avec Hugo."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Hugo prépare le hockey hors de la maison.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Hugo prépare "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " hockey hors de "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maison."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Henri étudie le huit là-haut, parce que Hélène est contente.",
-      "parts": [
-        {
-          "t": "À midi, quand Henri étudie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " huit là-haut, parce que Hélène est contente."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce soir, quand Thomas attend le hélicoptère là-haut, parce que Hélène est contente.",
-      "parts": [
-        {
-          "t": "Ce soir, quand Thomas attend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " hélicoptère là-haut, parce que Hélène est contente."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Thomas caresse le hérisson avec Hugo, et Hugo est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Thomas caresse "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " hérisson avec Hugo, et Hugo est très content."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand Henri voit un hôpital hors de la maison, parce que Hélène est contente.",
-      "parts": [
-        {
-          "t": "Quand Henri voit un hôpital hors de "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maison, parce que Hélène est contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La professeure coupe le haricot avec Henri.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " professeure coupe "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " haricot avec Henri."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le collègue écoute la harpe avec Henri.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " collègue écoute "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " harpe avec Henri."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le médecin prend un hasard avec Hugo.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " médecin prend un hasard avec Hugo."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La tante dessine une herbe avec Henri.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " tante dessine une herbe avec Henri."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Henri sauve le hibou bien.",
-      "parts": [
-        {
-          "t": "Henri sauve "
-        },
-        {
-          "blank": "le"
-        },
+      "variants": [
         {
-          "t": " hibou bien."
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "En hiver, Hélène habite dans un hôtel de Verbier avec Henri."
+          ]
         }
       ]
     },
     {
-      "level": "a2",
-      "sentence": "Ce soir, Hélène partage le homard hors de la maison.",
-      "parts": [
+      "word": "Quand",
+      "variants": [
         {
-          "t": "Ce soir, Hélène partage "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " homard hors de "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maison."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Henri embrasse un homme là-haut.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Henri embrasse un homme là-haut."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Hugo attend un horaire avec Henri.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Hugo attend un horaire avec Henri."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le papa photographie un horizon là-haut.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " papa photographie un horizon là-haut."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Henri range une horloge hors de la maison.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Henri range une horloge hors de "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maison."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Thomas goûte une huile hors de la maison.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, Thomas goûte une huile hors de "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maison."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand Hugo visite un hôtel hors de la maison, et Hugo est très content.",
-      "parts": [
-        {
-          "t": "Quand Hugo visite un hôtel hors de "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maison, et Hugo est très content."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Thomas goûte le hamburger avec Hugo, et Hugo est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Thomas goûte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " hamburger avec Hugo, et Hugo est très content."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Thomas regarde le hamster avec Hugo, et Hugo est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Thomas regarde "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " hamster avec Hugo, et Hugo est très content."
+          "level": "b1",
+          "sentences": [
+            "Quand Hugo joue au handball, il court vite, mais Hélène saute plus haut que lui."
+          ]
         }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Thomas sert le haricot avec Henri, parce que Hélène est contente.",
-      "parts": [
-        {
-          "t": "À midi, quand Thomas sert "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " haricot avec Henri, parce que Hélène est contente."
-        }
-      ]
-    }
-  ],
-  "type12Stories": [
-    {
-      "level": "a2",
-      "sentences": [
-        "Hugo raconte une histoire sous un hamac.",
-        "Il mange un hamburger et regarde l’herbe.",
-        "Un hibou et un hérisson passent près de l’homme.",
-        "Hugo compte huit haricots dans un bol.",
-        "À cette heure, l’horloge sonne dans l’hôtel.",
-        "L’horizon est rose en hiver, dit l’histoire.",
-        "Hugo pose de l’huile sur le pain du hamburger.",
-        "Un hamster court vers le hamac par hasard.",
-        "Avant de dormir, Hugo écoute encore l’histoire."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Ce matin, Amira lit une histoire à l’hôpital.",
-        "Un homme apporte un hamburger et des haricots.",
-        "À huit heures, l’horloge indique l’horaire exact.",
-        "Amira regarde l’horizon depuis la fenêtre.",
-        "Dehors, l’herbe est mouillée par l’hiver.",
-        "Un hibou et une hirondelle croisent le ciel.",
-        "Amira parle d’un hérisson et d’un hamster.",
-        "Le hasard amène un hélicoptère au-dessus de l’hôtel.",
-        "Avant de partir, elle range l’huile et le livre."
-      ]
-    },
-    {
-      "level": "a2",
-      "sentences": [
-        "Karim joue au hockey près de l’hôtel.",
-        "À huit heures, l’horloge sonne fort.",
-        "Un homme apporte un hamburger après le match.",
-        "Karim s’assoit sur l’herbe et regarde l’horizon.",
-        "Il raconte une histoire à son ami Hasan.",
-        "Un hibou crie depuis un arbre en hiver.",
-        "Karim mange aussi des haricots avec de l’huile.",
-        "Le hasard lui offre un billet pour l’hôpital.",
-        "Le soir, il dort dans un hamac à l’hôtel."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Léa découvre un hérisson dans l’herbe.",
-        "L’homme du jardin apporte une hache et un hamac.",
-        "À cette heure, une hirondelle vole vers l’horizon.",
-        "Léa raconte l’histoire à sa sœur à l’hôtel.",
-        "Elles mangent un hamburger et des haricots.",
-        "L’horloge de l’hiver sonne huit fois.",
-        "Léa verse de l’huile dans la poêle avec soin.",
-        "Un hibou et un hamster apparaissent par hasard.",
-        "Avant la nuit, Léa vérifie l’horaire du bus."
-      ]
-    },
-    {
-      "level": "a2",
-      "sentences": [
-        "Noah visite un hôtel près de l’hôpital.",
-        "Il lit une histoire dans le hall à huit heures.",
-        "L’horloge et l’horaire sont affichés près de la porte.",
-        "Un homme sert un hamburger et des haricots.",
-        "Noah regarde l’herbe et l’horizon en hiver.",
-        "Il voit un hibou, un hérisson et une hirondelle.",
-        "Le hasard place un hamster sous le hamac.",
-        "Noah verse de l’huile sur son assiette.",
-        "Le soir, un hélicoptère passe au-dessus de l’hôtel."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Sara apprend une histoire sur le homard et le haricot.",
-        "L’homme de la cuisine ajoute de l’huile.",
-        "À huit heures, l’horloge sonne dans l’hôtel.",
-        "Sara mange un hamburger après la leçon.",
-        "Elle s’assoit sur l’herbe et regarde l’horizon.",
-        "Un hibou et un hérisson apparaissent en hiver.",
-        "Sara voit aussi une hirondelle et un hamster.",
-        "Le hasard lui offre un hamac près de l’hôpital.",
-        "Avant de dormir, elle vérifie encore l’horaire."
-      ]
-    },
-    {
-      "level": "a2",
-      "sentences": [
-        "Yanis coupe l’herbe avec une hache légère.",
-        "Un homme l’aide près du hamac du jardin.",
-        "À cette heure, l’horloge de l’hôtel sonne.",
-        "Yanis raconte une histoire à voix haute.",
-        "Il mange un hamburger et des haricots chauds.",
-        "Un hibou, un hérisson et un hamster écoutent.",
-        "En hiver, l’horizon devient gris et froid.",
-        "Yanis verse de l’huile et compte jusqu’à huit.",
-        "Le hasard amène un hélicoptère vers l’hôpital."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Inès joue de la harpe dans l’hôtel.",
-        "À huit heures, l’homme ouvre la grande porte.",
-        "Inès raconte une histoire entre deux morceaux.",
-        "Elle boit de l’eau et mange un hamburger.",
-        "Dehors, l’herbe brille et l’horizon est bleu.",
-        "Un hibou et une hirondelle passent en hiver.",
-        "Inès voit un hérisson et un hamster par hasard.",
-        "Elle verse de l’huile sur des haricots.",
-        "Le soir, elle lit l’horaire pour l’hôpital."
-      ]
-    },
-    {
-      "level": "a2",
-      "sentences": [
-        "Omar arrive à l’hôpital avec un homme.",
-        "À huit heures, l’horloge indique l’horaire.",
-        "Omar lit une histoire dans la salle d’attente.",
-        "Il mange un hamburger froid près de la fenêtre.",
-        "Dehors, l’herbe est blanche en hiver.",
-        "Un hibou crie et une hirondelle disparaît.",
-        "Omar pense à son hamster et à son hamac.",
-        "Le hasard lui fait rencontrer un ami de l’hôtel.",
-        "Avant de partir, il achète de l’huile et des haricots."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Maya et Hugo préparent un pique-nique sur l’herbe.",
-        "Ils apportent un hamburger, des haricots et de l’huile.",
-        "À huit heures, l’horloge de l’hôtel sonne loin.",
-        "Maya raconte une histoire sous le hamac.",
-        "Un homme regarde l’horizon en hiver.",
-        "Un hibou, un hérisson et un hamster s’approchent.",
-        "Une hirondelle passe au-dessus par hasard.",
-        "Hugo vérifie l’horaire pour rentrer à l’hôpital.",
-        "Le soir, un hélicoptère traverse encore le ciel."
-      ]
-    }
-  ],
-  "type14Stories": [
-    {
-      "level": "a2",
-      "sentences": [
-        "Hugo raconte une histoire sous un hamac.",
-        "Il mange un hamburger et regarde l’herbe.",
-        "Un hibou et un hérisson passent près de l’homme.",
-        "Hugo compte huit haricots dans un bol.",
-        "À cette heure, l’horloge sonne dans l’hôtel.",
-        "L’horizon est rose en hiver, dit l’histoire.",
-        "Hugo pose de l’huile sur le pain du hamburger.",
-        "Un hamster court vers le hamac par hasard.",
-        "Avant de dormir, Hugo écoute encore l’histoire.",
-        "Hugo continue l’histoire à voix haute.",
-        "L’homme écoute et sourit près de l’herbe.",
-        "Plus tard, un hélicoptère vole vers l’hôpital.",
-        "Hugo vérifie l’horaire sur son téléphone.",
-        "Il range l’huile et ferme le livre.",
-        "Le hamster dort sous le hamac.",
-        "Le hérisson disparaît dans l’herbe haute.",
-        "Hugo compte encore jusqu’à huit.",
-        "Avant la nuit, l’hôtel allume ses lumières.",
-        "Hugo termine l’histoire sous les étoiles."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Ce matin, Amira lit une histoire à l’hôpital.",
-        "Un homme apporte un hamburger et des haricots.",
-        "À huit heures, l’horloge indique l’horaire exact.",
-        "Amira regarde l’horizon depuis la fenêtre.",
-        "Dehors, l’herbe est mouillée par l’hiver.",
-        "Un hibou et une hirondelle croisent le ciel.",
-        "Amira parle d’un hérisson et d’un hamster.",
-        "Le hasard amène un hélicoptère au-dessus de l’hôtel.",
-        "Avant de partir, elle range l’huile et le livre.",
-        "Amira repose le livre d’histoire sur la table.",
-        "L’homme du service vérifie encore l’horaire.",
-        "Amira verse un peu d’huile sur des haricots.",
-        "Elle compte huit grains dans son assiette.",
-        "Plus tard, elle téléphone à l’hôtel du centre.",
-        "Son ami rêve d’un hamac au soleil.",
-        "Amira décrit l’herbe verte de son jardin.",
-        "Avant de partir, elle range l’huile et le pain.",
-        "L’horloge sonne encore une fois dans le couloir.",
-        "Amira quitte l’hôpital avec un sourire."
-      ]
-    },
-    {
-      "level": "a2",
-      "sentences": [
-        "Karim joue au hockey près de l’hôtel.",
-        "À huit heures, l’horloge sonne fort.",
-        "Un homme apporte un hamburger après le match.",
-        "Karim s’assoit sur l’herbe et regarde l’horizon.",
-        "Il raconte une histoire à son ami Hasan.",
-        "Un hibou crie depuis un arbre en hiver.",
-        "Karim mange aussi des haricots avec de l’huile.",
-        "Le hasard lui offre un billet pour l’hôpital.",
-        "Le soir, il dort dans un hamac à l’hôtel.",
-        "Karim pose son casque de hockey près du hamac.",
-        "L’homme de l’hôtel ouvre la grande porte.",
-        "Karim continue l’histoire sous le hamac.",
-        "Il compte jusqu’à huit avant de se lever.",
-        "Une hirondelle passe au-dessus du terrain.",
-        "Un hérisson et un hamster apparaissent dans l’herbe.",
-        "Un hélicoptère traverse le ciel gris.",
-        "Karim range l’huile et les restes du repas.",
-        "Le soir, l’horloge de l’hôtel sonne encore.",
-        "Karim dort bien après cette longue journée."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Léa découvre un hérisson dans l’herbe.",
-        "L’homme du jardin apporte une hache et un hamac.",
-        "À cette heure, une hirondelle vole vers l’horizon.",
-        "Léa raconte l’histoire à sa sœur à l’hôtel.",
-        "Elles mangent un hamburger et des haricots.",
-        "L’horloge de l’hiver sonne huit fois.",
-        "Léa verse de l’huile dans la poêle avec soin.",
-        "Un hibou et un hamster apparaissent par hasard.",
-        "Avant la nuit, Léa vérifie l’horaire du bus.",
-        "Sa sœur parle aussi de l’hôpital du quartier.",
-        "Un hélicoptère passe au-dessus de l’hôtel.",
-        "Léa pose le livre d’histoire sur le hamac.",
-        "L’homme range la hache près de la porte.",
-        "Le hérisson revient dans l’herbe humide.",
-        "Léa compte huit haricots dans le bol.",
-        "Elle regarde encore l’horizon en hiver.",
-        "Le hamster dort sous une chaise de l’hôtel.",
-        "Léa ferme le livre et sourit.",
-        "Avant de dormir, elle écoute l’horloge."
-      ]
-    },
-    {
-      "level": "a2",
-      "sentences": [
-        "Noah visite un hôtel près de l’hôpital.",
-        "Il lit une histoire dans le hall à huit heures.",
-        "L’horloge et l’horaire sont affichés près de la porte.",
-        "Un homme sert un hamburger et des haricots.",
-        "Noah regarde l’herbe et l’horizon en hiver.",
-        "Il voit un hibou, un hérisson et une hirondelle.",
-        "Le hasard place un hamster sous le hamac.",
-        "Noah verse de l’huile sur son assiette.",
-        "Le soir, un hélicoptère passe au-dessus de l’hôtel.",
-        "Noah téléphone à un ami pour raconter l’histoire.",
-        "L’homme du hall vérifie encore l’horaire.",
-        "Noah compte jusqu’à huit avant de monter.",
-        "Dans sa chambre, il ouvre le hamac près de la fenêtre.",
-        "Il écoute le hibou pendant l’hiver froid.",
-        "Le hérisson disparaît dans l’herbe du jardin.",
-        "Noah range l’huile et les restes du hamburger.",
-        "Il pense aussi à l’hôpital de sa ville.",
-        "L’horloge sonne une dernière fois.",
-        "Noah termine sa journée avec une courte histoire."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Sara apprend une histoire sur le homard et le haricot.",
-        "L’homme de la cuisine ajoute de l’huile.",
-        "À huit heures, l’horloge sonne dans l’hôtel.",
-        "Sara mange un hamburger après la leçon.",
-        "Elle s’assoit sur l’herbe et regarde l’horizon.",
-        "Un hibou et un hérisson apparaissent en hiver.",
-        "Sara voit aussi une hirondelle et un hamster.",
-        "Le hasard lui offre un hamac près de l’hôpital.",
-        "Avant de dormir, elle vérifie encore l’horaire.",
-        "Sara pose le livre d’histoire sur ses genoux.",
-        "L’homme apporte encore des haricots chauds.",
-        "Sara verse un peu d’huile et sourit.",
-        "Elle compte huit grains dans son assiette.",
-        "Un hélicoptère traverse le ciel au-dessus de l’hôtel.",
-        "Sara décrit l’herbe verte à son ami.",
-        "Le hamster court sous le hamac.",
-        "Sara écoute l’horloge pendant une minute.",
-        "Elle range l’huile près de la fenêtre.",
-        "Avant la nuit, elle termine l’histoire."
-      ]
-    },
-    {
-      "level": "a2",
-      "sentences": [
-        "Yanis coupe l’herbe avec une hache légère.",
-        "Un homme l’aide près du hamac du jardin.",
-        "À cette heure, l’horloge de l’hôtel sonne.",
-        "Yanis raconte une histoire à voix haute.",
-        "Il mange un hamburger et des haricots chauds.",
-        "Un hibou, un hérisson et un hamster écoutent.",
-        "En hiver, l’horizon devient gris et froid.",
-        "Yanis verse de l’huile et compte jusqu’à huit.",
-        "Le hasard amène un hélicoptère vers l’hôpital.",
-        "Yanis vérifie l’horaire sur son téléphone.",
-        "Une hirondelle passe au-dessus de l’herbe.",
-        "L’homme range la hache près de la porte.",
-        "Yanis s’assoit dans le hamac pour lire.",
-        "Il continue l’histoire sous les arbres.",
-        "Le hamster dort près du hérisson.",
-        "Yanis regarde encore l’horizon en hiver.",
-        "L’horloge de l’hôtel sonne une seconde fois.",
-        "Yanis range l’huile et le livre.",
-        "Avant de dormir, il pense à l’hôpital."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Inès joue de la harpe dans l’hôtel.",
-        "À huit heures, l’homme ouvre la grande porte.",
-        "Inès raconte une histoire entre deux morceaux.",
-        "Elle boit de l’eau et mange un hamburger.",
-        "Dehors, l’herbe brille et l’horizon est bleu.",
-        "Un hibou et une hirondelle passent en hiver.",
-        "Inès voit un hérisson et un hamster par hasard.",
-        "Elle verse de l’huile sur des haricots.",
-        "Le soir, elle lit l’horaire pour l’hôpital.",
-        "Un hélicoptère traverse le ciel au loin.",
-        "Inès pose la harpe près du hamac.",
-        "L’homme de l’hôtel applaudit doucement.",
-        "Inès compte jusqu’à huit avant de rejouer.",
-        "Elle regarde l’horloge et sourit.",
-        "Le hamster court sous une chaise.",
-        "Inès termine l’histoire pour les enfants.",
-        "Elle range l’huile dans la cuisine.",
-        "Dehors, l’herbe bouge dans le vent d’hiver.",
-        "Avant la nuit, Inès ferme le livre."
-      ]
-    },
-    {
-      "level": "a2",
-      "sentences": [
-        "Omar arrive à l’hôpital avec un homme.",
-        "À huit heures, l’horloge indique l’horaire.",
-        "Omar lit une histoire dans la salle d’attente.",
-        "Il mange un hamburger froid près de la fenêtre.",
-        "Dehors, l’herbe est blanche en hiver.",
-        "Un hibou crie et une hirondelle disparaît.",
-        "Omar pense à son hamster et à son hamac.",
-        "Le hasard lui fait rencontrer un ami de l’hôtel.",
-        "Avant de partir, il achète de l’huile et des haricots.",
-        "Omar verse l’huile dans un petit flacon.",
-        "Il compte huit haricots dans le sac.",
-        "L’homme vérifie encore l’horaire du bus.",
-        "Omar raconte l’histoire à son ami.",
-        "Un hélicoptère atterrit près de l’hôpital.",
-        "Omar regarde l’horizon depuis le parking.",
-        "Il rêve d’un hamac sur l’herbe verte.",
-        "Le hérisson de son jardin lui manque.",
-        "Omar range le livre d’histoire dans son sac.",
-        "Avant la nuit, il rentre à l’hôtel."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Maya et Hugo préparent un pique-nique sur l’herbe.",
-        "Ils apportent un hamburger, des haricots et de l’huile.",
-        "À huit heures, l’horloge de l’hôtel sonne loin.",
-        "Maya raconte une histoire sous le hamac.",
-        "Un homme regarde l’horizon en hiver.",
-        "Un hibou, un hérisson et un hamster s’approchent.",
-        "Une hirondelle passe au-dessus par hasard.",
-        "Hugo vérifie l’horaire pour rentrer à l’hôpital.",
-        "Le soir, un hélicoptère traverse encore le ciel.",
-        "Maya verse de l’huile sur les haricots.",
-        "Hugo compte jusqu’à huit avant de manger.",
-        "L’homme de l’hôtel leur apporte de l’eau.",
-        "Maya continue l’histoire à voix douce.",
-        "Le hamster dort sous le hamac.",
-        "Le hérisson disparaît dans l’herbe haute.",
-        "Hugo regarde l’horloge une dernière fois.",
-        "Ils rangent l’huile et les restes du repas.",
-        "Maya ferme le livre d’histoire.",
-        "Avant de partir, ils saluent l’horizon d’hiver."
       ]
     }
   ]

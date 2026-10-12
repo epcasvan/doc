@@ -20,6 +20,7 @@ import {
   vocabLearnWordsFor,
 } from '@/francais/vocab-learn'
 import { isGrammarTheoryType } from '@/francais/grammar-theory'
+import { parseAlphaType } from '@/alphabetisation/kinds'
 import { parseSoutienType } from '@/francais/soutien/kinds'
 import { defaultThemeGameContent, isGameBankType } from '@/jeux/bank'
 import { defaultEntriesFor } from '@/jeux/defaults'
@@ -50,6 +51,7 @@ export function applyType(type: ExerciseType, prev?: ExerciseBlock): Partial<Exe
   const isLectureDense = type.id.endsWith('-entourer') || type.id.endsWith('-cocher')
   const isAlphabetisation = type.topic.startsWith('alpha-')
   const isSoutienFr = type.topic.startsWith('soutien-')
+  const alphaKind = isAlphabetisation ? parseAlphaType(type.id)?.kind : undefined
   const soutienKind = isSoutienFr ? parseSoutienType(type.id)?.kind : undefined
   const isPhrase = type.topic.startsWith('phrase-')
   const isPhraseChart = type.id.startsWith('phrase-tableau-')
@@ -164,32 +166,57 @@ export function applyType(type: ExerciseType, prev?: ExerciseBlock): Partial<Exe
                 ? { count: 6 }
                 : isLectureDense
                   ? { count: 4 }
-                  : soutienKind === 'lettres'
-                    ? { count: 5 }
-                    : soutienKind === 'syllabes'
-                      ? { count: 3 }
-                      : soutienKind === 'relier' || soutienKind === 'completer'
-                        ? { count: 12 }
-                        : soutienKind === 'ecouter'
+                  : alphaKind === 'mots'
+                    ? { count: 4 }
+                    : alphaKind === 'lettres-maj' || alphaKind === 'lettres-min'
+                      ? { count: 5 }
+                      : alphaKind === 'souligner-maj' || alphaKind === 'souligner-min'
+                        ? { count: 8 }
+                        : alphaKind === 'ecouter'
                           ? { count: 9 }
-                          : soutienKind === 'ecouter-image'
+                          : alphaKind === 'ecouter-image'
                             ? { count: 15 }
-                            : soutienKind === 'syllabe-son'
+                            : alphaKind === 'syllabe-son-qr' || alphaKind === 'syllabe-son'
                               ? { count: 18 }
-                              : soutienKind === 'lettres-phrase'
-                                ? { count: 8 }
-                                : soutienKind === 'determinants' ||
-                                    soutienKind === 'ordre'
-                                  ? { count: 9 }
-                                : soutienKind === 'dictee' || soutienKind === 'compter'
-                                  ? { count: 8 }
-                                  : soutienKind === 'lire'
-                                    ? { count: 20 }
-                                    : soutienKind === 'associer-audio' ||
-                                        soutienKind === 'associer-image'
-                                      ? { count: 2 }
-                                        : isAlphabetisation || isSoutienFr
-                                          ? { count: 6 }
+                              : alphaKind === 'associer-syllabe' ||
+                                  alphaKind === 'associer-audio' ||
+                                  alphaKind === 'associer-image'
+                                ? { count: 2 }
+                                : alphaKind === 'syllabes-cv' ||
+                                    alphaKind === 'syllabes-long'
+                                  ? { count: 4 }
+                                  : alphaKind === 'syllabes-prononcer'
+                                    ? { count: 8 }
+                                    : soutienKind === 'lettres'
+                                      ? { count: 5 }
+                                      : soutienKind === 'syllabes'
+                                        ? { count: 3 }
+                                        : soutienKind === 'relier' ||
+                                            soutienKind === 'completer'
+                                          ? { count: 12 }
+                                          : soutienKind === 'ecouter'
+                                            ? { count: 9 }
+                                            : soutienKind === 'ecouter-image'
+                                              ? { count: 15 }
+                                              : soutienKind === 'syllabe-son'
+                                                ? { count: 18 }
+                                                : soutienKind === 'lettres-phrase'
+                                                  ? { count: 8 }
+                                                  : soutienKind === 'determinants'
+                                                    ? { count: 8 }
+                                                    : soutienKind === 'ordre'
+                                                    ? { count: 9 }
+                                                  : soutienKind === 'dictee'
+                                                    ? { count: 8 }
+                                                    : soutienKind === 'compter'
+                                                      ? { count: 9 }
+                                                      : soutienKind === 'lire'
+                                                        ? { count: 19 }
+                                                      : soutienKind === 'associer-audio' ||
+                                                          soutienKind === 'associer-image'
+                                                        ? { count: 2 }
+                                                        : isAlphabetisation || isSoutienFr
+                                                          ? { count: 6 }
                                           : isGeoCalc || isCountIcons
                                             ? { count: 2 }
                                             : isFrenchCom

@@ -1,2242 +1,815 @@
 {
-  "type9": [
+  "son": "q",
+  "phrases": [
     {
-      "level": "a1",
-      "word": "banque",
-      "sentence": "Quentin aime la banque bien."
+      "word": "acrylique",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Quentin utilise de la peinture acrylique."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Jacques achète de la peinture acrylique pour Quentin et pour Enrique."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand Jacques peint avec l’acrylique, il lave son pinceau parce qu’elle sèche vite.",
+            "Quentin dit que la peinture acrylique sèche vite, mais Jacques préfère l’huile."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "banque",
-      "sentence": "Avant le repas, Jacques aime la banque avec Monique."
+      "word": "beau",
+      "variants": [
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Comme Quentin cherche un beau bouquet, il visite la boutique du quartier avec Jacqueline."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "banque",
-      "sentence": "Ce matin, quand le garçon aime la banque, parce que Monique est contente aussi."
+      "word": "bouquet",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Quentin offre un bouquet à Jacques.",
+            "Quentin offre un bouquet à Pascale."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Jacques achète un bouquet pour Quentin quand il quitte la boutique.",
+            "Quand Pascal arrive, il offre un bouquet de coquelicots à sa mère."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quentin dit que le bouquet de Jacques est magnifique, mais Enrique préfère les roses."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
       "word": "boutique",
-      "sentence": "La maîtresse voit la boutique sans question."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "La boutique ferme à quatre heures.",
+            "Quentin cherche son briquet dans la boutique.",
+            "Quentin entre dans la boutique."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Jacques achète un casque dans la boutique de Quentin et d’Enrique.",
+            "Quentin travaille dans une boutique de musique près du quai."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand la boutique ouvre, quelques clients posent toujours la même question à Jacques.",
+            "Quentin ouvre la boutique à neuf heures, mais Jacques et Enrique arrivent quand il ferme."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "boutique",
-      "sentence": "À midi, Quentin quitte la boutique sans question."
+      "word": "briquet",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Quentin cherche son briquet chez Jacques."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Jacques prête son briquet à Quentin quand il allume la bougie."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quentin cherche son briquet, mais Jacques dit qu’il l’a vu chez Enrique."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "boutique",
-      "sentence": "Ce matin, quand la copine visite la boutique, parce que Monique est contente aussi."
+      "word": "casque",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Quentin met son casque chez Jacques."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Jacques achète un casque dans la boutique de sport du quartier.",
+            "Jacques achète un casque pour Quentin quand il fait du vélo."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand Quentin roule à vélo, il porte un casque, car quelqu’un peut tomber.",
+            "Quentin porte un casque quand il roule, mais Jacques et Enrique l’oublient chaque fois."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
-      "word": "brique",
-      "sentence": "Un ami range la brique avec Monique."
-    },
-    {
-      "level": "a2",
-      "word": "brique",
-      "sentence": "Après le cours, le cousin quitte la brique avec Monique."
-    },
-    {
-      "level": "b1",
-      "word": "brique",
-      "sentence": "À midi, quand la cuisinière nettoie la brique avec Quentin, et Quentin est très content."
-    },
-    {
-      "level": "a1",
       "word": "casquette",
-      "sentence": "Le jardinier met la casquette avec Monique."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Quentin porte la casquette de Jacques.",
+            "Quentin porte une casquette bleue."
+          ]
+        },
+        {
+          "level": "a2",
+          "sentences": [
+            "Jacques perd sa casquette quand il joue avec Quentin."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Jacques a acheté une casquette dans la boutique du quartier."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quentin cherche la casquette de Jacques, mais Enrique dit qu’elle est restée ici."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "casquette",
-      "sentence": "Après le cours, Monique range la casquette à la boutique."
-    },
-    {
-      "level": "b1",
-      "word": "casquette",
-      "sentence": "Ce matin, quand Jacques lave la casquette, parce que Monique est contente aussi."
-    },
-    {
-      "level": "a1",
-      "word": "chèque",
-      "sentence": "Frédéric cherche le chèque avec Quentin."
-    },
-    {
-      "level": "a2",
-      "word": "chèque",
-      "sentence": "À midi, Jacques range le chèque à la boutique."
-    },
-    {
-      "level": "b1",
-      "word": "chèque",
-      "sentence": "Quand la professeure montre le chèque à la boutique, et Quentin est très content."
-    },
-    {
-      "level": "a1",
-      "word": "cinq",
-      "sentence": "Le voisin étudie le cinq sans question."
-    },
-    {
-      "level": "a2",
-      "word": "cinq",
-      "sentence": "Ce matin, Quentin étudie le cinq sans question."
-    },
-    {
-      "level": "b1",
-      "word": "cinq",
-      "sentence": "Ce matin, quand la tante ouvre le cinq, parce que Monique est contente aussi."
-    },
-    {
-      "level": "a1",
-      "word": "cirque",
-      "sentence": "Le musicien écoute le cirque avec Quentin."
-    },
-    {
-      "level": "a2",
-      "word": "cirque",
-      "sentence": "Ce soir, Jacques commence le cirque avec Quentin."
-    },
-    {
-      "level": "b1",
-      "word": "cirque",
-      "sentence": "Quand le musicien joue avec le cirque avec Quentin, et Quentin est très content."
-    },
-    {
-      "level": "a1",
       "word": "coq",
-      "sentence": "La musicienne voit le coq avec Monique."
-    },
-    {
-      "level": "a2",
-      "word": "coq",
-      "sentence": "À midi, Quentin soigne le coq à la boutique."
-    },
-    {
-      "level": "b1",
-      "word": "coq",
-      "sentence": "Ce matin, quand la fille sauve le coq, parce que Monique est contente aussi."
-    },
-    {
-      "level": "a1",
-      "word": "disque",
-      "sentence": "Un ami commence le disque avec Quentin."
-    },
-    {
-      "level": "a2",
-      "word": "disque",
-      "sentence": "Avant le repas, Quentin joue avec le disque sans question."
-    },
-    {
-      "level": "b1",
-      "word": "disque",
-      "sentence": "Quand le cousin aime le disque à la boutique, et Quentin est très content."
-    },
-    {
-      "level": "a1",
-      "word": "marque",
-      "sentence": "La cousine trouve la marque sans question."
-    },
-    {
-      "level": "a2",
-      "word": "marque",
-      "sentence": "Après le cours, Monique cherche la marque avec Quentin."
-    },
-    {
-      "level": "b1",
-      "word": "marque",
-      "sentence": "Ce matin, quand le boulanger utilise la marque, parce que Monique est contente aussi."
-    },
-    {
-      "level": "a1",
-      "word": "musique",
-      "sentence": "Le professeur aime la musique avec Monique."
-    },
-    {
-      "level": "a2",
-      "word": "musique",
-      "sentence": "Ce matin, Monique aime la musique à la boutique."
-    },
-    {
-      "level": "b1",
-      "word": "musique",
-      "sentence": "Ce matin, quand la cuisinière aime la musique, parce que Monique est contente aussi."
-    },
-    {
-      "level": "a1",
-      "word": "paquet",
-      "sentence": "Le directeur pose le paquet avec Monique."
-    },
-    {
-      "level": "a2",
-      "word": "paquet",
-      "sentence": "Avant le repas, Jacques montre le paquet à la boutique."
-    },
-    {
-      "level": "b1",
-      "word": "paquet",
-      "sentence": "Ce matin, quand le papa trouve le paquet, parce que Monique est contente aussi."
-    },
-    {
-      "level": "a1",
-      "word": "plaque",
-      "sentence": "La maman cherche la plaque avec Quentin."
-    },
-    {
-      "level": "a2",
-      "word": "plaque",
-      "sentence": "Ce soir, Jacques trouve la plaque sans question."
-    },
-    {
-      "level": "b1",
-      "word": "plaque",
-      "sentence": "Quand la sœur montre la plaque à la boutique, et Quentin est très content."
-    },
-    {
-      "level": "a1",
-      "word": "qualité",
-      "sentence": "Le copain oublie la qualité sans question."
-    },
-    {
-      "level": "a2",
-      "word": "qualité",
-      "sentence": "Après le cours, Jacques prend la qualité avec Quentin."
-    },
-    {
-      "level": "b1",
-      "word": "qualité",
-      "sentence": "Ce matin, quand la factrice pose la qualité, parce que Monique est contente aussi."
-    },
-    {
-      "level": "a1",
-      "word": "quartier",
-      "sentence": "La voisine connaît le quartier avec Monique."
-    },
-    {
-      "level": "a2",
-      "word": "quartier",
-      "sentence": "Ce matin, Jacques connaît le quartier avec Monique."
-    },
-    {
-      "level": "b1",
-      "word": "quartier",
-      "sentence": "Ce matin, quand le musicien connaît le quartier, parce que Monique est contente aussi."
-    },
-    {
-      "level": "a1",
-      "word": "quatuor",
-      "sentence": "Monique commence le quatuor bien."
-    },
-    {
-      "level": "a2",
-      "word": "quatuor",
-      "sentence": "À midi, Jacques aime le quatuor à la boutique."
-    },
-    {
-      "level": "b1",
-      "word": "quatuor",
-      "sentence": "Quand la musicienne choisit le quatuor à la boutique, et Quentin est très content."
-    },
-    {
-      "level": "a1",
-      "word": "question",
-      "sentence": "Le professeur lit la question avec Quentin."
-    },
-    {
-      "level": "a2",
-      "word": "question",
-      "sentence": "Avant le repas, Jacques étudie la question sans question."
-    },
-    {
-      "level": "b1",
-      "word": "question",
-      "sentence": "Quand le grand-père écrit la question à la boutique, et Quentin est très content."
-    },
-    {
-      "level": "a1",
-      "word": "quiche",
-      "sentence": "La grand-mère choisit la quiche sans question."
-    },
-    {
-      "level": "a2",
-      "word": "quiche",
-      "sentence": "Avant le repas, Monique achète la quiche à la boutique."
-    },
-    {
-      "level": "b1",
-      "word": "quiche",
-      "sentence": "Ce matin, quand le jardinier partage la quiche, parce que Monique est contente aussi."
-    },
-    {
-      "level": "a1",
-      "word": "quinoa",
-      "sentence": "Le frère goûte le quinoa avec Monique."
-    },
-    {
-      "level": "a2",
-      "word": "quinoa",
-      "sentence": "Après le cours, Jacques prépare le quinoa à la boutique."
-    },
-    {
-      "level": "b1",
-      "word": "quinoa",
-      "sentence": "À midi, quand Frédéric coupe le quinoa avec Quentin, et Quentin est très content."
-    },
-    {
-      "level": "a1",
-      "word": "risque",
-      "sentence": "Le garçon pose le risque avec Monique."
-    },
-    {
-      "level": "a2",
-      "word": "risque",
-      "sentence": "Ce matin, Jacques oublie le risque sans question."
-    },
-    {
-      "level": "b1",
-      "word": "risque",
-      "sentence": "Ce matin, quand le voisin trouve le risque, parce que Monique est contente aussi."
-    },
-    {
-      "level": "a1",
-      "word": "équipe",
-      "sentence": "La voisine attrape une équipe avec Quentin."
-    },
-    {
-      "level": "a2",
-      "word": "équipe",
-      "sentence": "Ce matin, le copain marque une équipe avec Monique."
-    },
-    {
-      "level": "b1",
-      "word": "équipe",
-      "sentence": "Quand le bébé joue avec une équipe à la boutique, et Quentin est très content."
-    }
-  ],
-  "type10": [
-    {
-      "level": "a1",
-      "sentence": "Quentin aime la banque bien.",
-      "parts": [
-        {
-          "t": "Quentin aime "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " banque bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Jacques aime la banque avec Monique.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, Jacques aime "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " banque avec Monique."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le garçon aime la banque, parce que Monique est contente aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garçon aime "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " banque, parce que Monique est contente aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La maîtresse voit la boutique sans question.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " maîtresse voit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boutique sans question."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Quentin quitte la boutique sans question.",
-      "parts": [
-        {
-          "t": "À midi, Quentin quitte "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boutique sans question."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la copine visite la boutique, parce que Monique est contente aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " copine visite "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boutique, parce que Monique est contente aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Un ami range la brique avec Monique.",
-      "parts": [
-        {
-          "t": "Un ami range "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " brique avec Monique."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le cousin quitte la brique avec Monique.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cousin quitte "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " brique avec Monique."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand la cuisinière nettoie la brique avec Quentin, et Quentin est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cuisinière nettoie "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " brique avec Quentin, et Quentin est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le jardinier met la casquette avec Monique.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " jardinier met "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " casquette avec Monique."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Monique range la casquette à la boutique.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Monique range "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " casquette à "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boutique."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Jacques lave la casquette, parce que Monique est contente aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Jacques lave "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " casquette, parce que Monique est contente aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Frédéric cherche le chèque avec Quentin.",
-      "parts": [
-        {
-          "t": "Frédéric cherche "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chèque avec Quentin."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Jacques range le chèque à la boutique.",
-      "parts": [
-        {
-          "t": "À midi, Jacques range "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chèque à "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boutique."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand la professeure montre le chèque à la boutique, et Quentin est très content.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " professeure montre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chèque à "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boutique, et Quentin est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le voisin étudie le cinq sans question.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " voisin étudie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cinq sans question."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Quentin étudie le cinq sans question.",
-      "parts": [
-        {
-          "t": "Ce matin, Quentin étudie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cinq sans question."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la tante ouvre le cinq, parce que Monique est contente aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " tante ouvre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cinq, parce que Monique est contente aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le musicien écoute le cirque avec Quentin.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " musicien écoute "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cirque avec Quentin."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Jacques commence le cirque avec Quentin.",
-      "parts": [
-        {
-          "t": "Ce soir, Jacques commence "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cirque avec Quentin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand le musicien joue avec le cirque avec Quentin, et Quentin est très content.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " musicien joue avec "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cirque avec Quentin, et Quentin est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La musicienne voit le coq avec Monique.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " musicienne voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " coq avec Monique."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Quentin soigne le coq à la boutique.",
-      "parts": [
-        {
-          "t": "À midi, Quentin soigne "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " coq à "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boutique."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la fille sauve le coq, parce que Monique est contente aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " fille sauve "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " coq, parce que Monique est contente aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Un ami commence le disque avec Quentin.",
-      "parts": [
-        {
-          "t": "Un ami commence "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " disque avec Quentin."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Quentin joue avec le disque sans question.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, Quentin joue avec "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " disque sans question."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand le cousin aime le disque à la boutique, et Quentin est très content.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cousin aime "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " disque à "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boutique, et Quentin est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La cousine trouve la marque sans question.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " cousine trouve "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " marque sans question."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Monique cherche la marque avec Quentin.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Monique cherche "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " marque avec Quentin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le boulanger utilise la marque, parce que Monique est contente aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " boulanger utilise "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " marque, parce que Monique est contente aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le professeur aime la musique avec Monique.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " professeur aime "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " musique avec Monique."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Monique aime la musique à la boutique.",
-      "parts": [
-        {
-          "t": "Ce matin, Monique aime "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " musique à "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boutique."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la cuisinière aime la musique, parce que Monique est contente aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cuisinière aime "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " musique, parce que Monique est contente aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le directeur pose le paquet avec Monique.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " directeur pose "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " paquet avec Monique."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Jacques montre le paquet à la boutique.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, Jacques montre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " paquet à "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boutique."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le papa trouve le paquet, parce que Monique est contente aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " papa trouve "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " paquet, parce que Monique est contente aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La maman cherche la plaque avec Quentin.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " maman cherche "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " plaque avec Quentin."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Jacques trouve la plaque sans question.",
-      "parts": [
-        {
-          "t": "Ce soir, Jacques trouve "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " plaque sans question."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand la sœur montre la plaque à la boutique, et Quentin est très content.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " sœur montre "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " plaque à "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boutique, et Quentin est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le copain oublie la qualité sans question.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " copain oublie "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " qualité sans question."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Jacques prend la qualité avec Quentin.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Jacques prend "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " qualité avec Quentin."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la factrice pose la qualité, parce que Monique est contente aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " factrice pose "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " qualité, parce que Monique est contente aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La voisine connaît le quartier avec Monique.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " voisine connaît "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " quartier avec Monique."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Jacques connaît le quartier avec Monique.",
-      "parts": [
-        {
-          "t": "Ce matin, Jacques connaît "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " quartier avec Monique."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le musicien connaît le quartier, parce que Monique est contente aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " musicien connaît "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " quartier, parce que Monique est contente aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Monique commence le quatuor bien.",
-      "parts": [
-        {
-          "t": "Monique commence "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " quatuor bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Jacques aime le quatuor à la boutique.",
-      "parts": [
-        {
-          "t": "À midi, Jacques aime "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " quatuor à "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boutique."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand la musicienne choisit le quatuor à la boutique, et Quentin est très content.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " musicienne choisit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " quatuor à "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boutique, et Quentin est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le professeur lit la question avec Quentin.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " professeur lit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " question avec Quentin."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Jacques étudie la question sans question.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, Jacques étudie "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " question sans question."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand le grand-père écrit la question à la boutique, et Quentin est très content.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " grand-père écrit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " question à "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boutique, et Quentin est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La grand-mère choisit la quiche sans question.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " grand-mère choisit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " quiche sans question."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Monique achète la quiche à la boutique.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, Monique achète "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " quiche à "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boutique."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le jardinier partage la quiche, parce que Monique est contente aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardinier partage "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " quiche, parce que Monique est contente aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le frère goûte le quinoa avec Monique.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " frère goûte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " quinoa avec Monique."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Jacques prépare le quinoa à la boutique.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Jacques prépare "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " quinoa à "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boutique."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Frédéric coupe le quinoa avec Quentin, et Quentin est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Frédéric coupe "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " quinoa avec Quentin, et Quentin est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le garçon pose le risque avec Monique.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " garçon pose "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " risque avec Monique."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Jacques oublie le risque sans question.",
-      "parts": [
-        {
-          "t": "Ce matin, Jacques oublie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " risque sans question."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le voisin trouve le risque, parce que Monique est contente aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
+      "variants": [
         {
-          "t": " voisin trouve "
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Il y a cinq coqs dans la cour.",
+            "Le coq chante quand il fait jour.",
+            "Quentin entend le coq de Jacques."
+          ]
         },
         {
-          "blank": "le"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Jacques nourrit le coq de Quentin quand il part chez Enrique.",
+            "Quand le coq chante, Jacques quitte la maison pour la boutique."
+          ]
         },
         {
-          "t": " risque, parce que Monique est contente aussi."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Parce que le coq chante dès quatre heures, Jacques dort quelques heures de moins.",
+            "Quentin écoute le coq chanter tous les matins, mais Jacques et Enrique dorment encore."
+          ]
         }
       ]
     },
     {
-      "level": "a1",
-      "sentence": "La voisine attrape une équipe avec Quentin.",
-      "parts": [
-        {
-          "blank": "La"
-        },
+      "word": "coquelicot",
+      "variants": [
         {
-          "t": " voisine attrape une équipe avec Quentin."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le copain marque une équipe avec Monique.",
-      "parts": [
-        {
-          "t": "Ce matin, "
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Quentin cueille un coquelicot pour Jacques.",
+            "Quentin cueille un coquelicot rouge."
+          ]
         },
         {
-          "blank": "le"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Jacques regarde un coquelicot quand il marche avec Quentin.",
+            "Quand Pascale regarde un coquelicot, Jacques prend une photo."
+          ]
         },
         {
-          "t": " copain marque une équipe avec Monique."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand Quentin cueille un coquelicot, il en prend quelques autres pour faire un bouquet.",
+            "Quentin dessine un coquelicot rouge, mais Jacques et Enrique préfèrent les bouquets de marguerites."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "Quand le bébé joue avec une équipe à la boutique, et Quentin est très content.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "le"
-        },
+      "word": "criquet",
+      "variants": [
         {
-          "t": " bébé joue avec une équipe à "
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Le criquet saute quand Quentin arrive.",
+            "Quentin attrape un criquet chez Jacques."
+          ]
         },
         {
-          "blank": "la"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Jacques regarde un criquet quand il joue avec Quentin.",
+            "Quand Jacques attrape un criquet, il le regarde quelques secondes."
+          ]
         },
         {
-          "t": " boutique, et Quentin est très content."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Parce que le criquet chante la nuit, Quentin cherche quel arbre il habite.",
+            "Quentin écoute le criquet dans l’herbe, mais Jacques et Enrique dorment dans la caravane."
+          ]
         }
       ]
     },
     {
-      "level": "a1",
-      "sentence": "Le papa aime la banque sans question.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
+      "word": "élastique",
+      "variants": [
         {
-          "t": " papa aime "
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Quentin tire l’élastique de Jacques."
+          ]
         },
         {
-          "blank": "la"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Jacques attache les papiers avec un élastique pour Quentin."
+          ]
         },
         {
-          "t": " banque sans question."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quentin casse un élastique quand il ouvre la boîte, mais Jacques en a un autre."
+          ]
         }
       ]
     },
     {
-      "level": "a1",
-      "sentence": "Le professeur traverse la boutique sans question.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
+      "word": "équerre",
+      "variants": [
         {
-          "t": " professeur traverse "
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Quentin trace avec l’équerre de Jacques."
+          ]
         },
         {
-          "blank": "la"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Jacques prend l’équerre pour tracer un angle droit quand Quentin dessine."
+          ]
         },
         {
-          "t": " boutique sans question."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quentin cherche son équerre, mais Jacques dit qu’elle est dans la trousse d’Enrique."
+          ]
         }
       ]
     },
     {
-      "level": "a1",
-      "sentence": "Monique ouvre la brique bien.",
-      "parts": [
-        {
-          "t": "Monique ouvre "
-        },
+      "word": "fenêtre",
+      "variants": [
         {
-          "blank": "la"
-        },
-        {
-          "t": " brique bien."
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Quand Jacques ouvre la fenêtre, un moustique entre et pique quelqu’un."
+          ]
         }
       ]
     },
     {
-      "level": "a1",
-      "sentence": "La voisine porte la casquette avec Quentin.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " voisine porte "
-        },
-        {
-          "blank": "la"
-        },
+      "word": "feu",
+      "variants": [
         {
-          "t": " casquette avec Quentin."
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Quand il fait froid, Jacques prend son briquet pour allumer le feu."
+          ]
         }
       ]
     },
     {
-      "level": "a2",
-      "sentence": "Après le cours, Quentin aime la musique avec Monique.",
-      "parts": [
-        {
-          "t": "Après "
-        },
+      "word": "gymnastique",
+      "variants": [
         {
-          "blank": "le"
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Quentin fait de la gymnastique."
+          ]
         },
         {
-          "t": " cours, Quentin aime "
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Jacqueline fait de la gymnastique chaque jeudi dans le gymnase du quartier.",
+            "Jacques adore la gymnastique quand il va au cours avec Quentin."
+          ]
         },
         {
-          "blank": "la"
-        },
-        {
-          "t": " musique avec Monique."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand Quentin a quarante ans, il décide enfin de faire de la gymnastique.",
+            "Quentin fait de la gymnastique chaque jeudi, mais Jacques et Enrique préfèrent le football."
+          ]
         }
       ]
     },
     {
-      "level": "a2",
-      "sentence": "Ce soir, Jacques cherche le paquet avec Quentin.",
-      "parts": [
-        {
-          "t": "Ce soir, Jacques cherche "
-        },
-        {
-          "blank": "le"
-        },
+      "word": "jonquille",
+      "variants": [
         {
-          "t": " paquet avec Quentin."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Jacques utilise la plaque avec Monique.",
-      "parts": [
-        {
-          "t": "Ce matin, Jacques utilise "
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Quentin cueille une jonquille jaune."
+          ]
         },
         {
-          "blank": "la"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Jacques offre une jonquille à Quentin quand il passe devant la boutique."
+          ]
         },
         {
-          "t": " plaque avec Monique."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand Jacqueline voit une jonquille, elle sait que le froid quitte enfin la région.",
+            "Quentin plante une jonquille dans le jardin, mais Jacques et Enrique préfèrent les tulipes."
+          ]
         }
       ]
     },
     {
-      "level": "a2",
-      "sentence": "Ce matin, Monique montre la qualité à la boutique.",
-      "parts": [
-        {
-          "t": "Ce matin, Monique montre "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " qualité à "
-        },
-        {
-          "blank": "la"
-        },
+      "word": "marqueur",
+      "variants": [
         {
-          "t": " boutique."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le professeur regarde une équipe, parce que Monique est contente aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Quentin prend un marqueur noir."
+          ]
         },
         {
-          "blank": "le"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Jacques écrit au marqueur sur le tableau de Quentin.",
+            "Jacques écrit au tableau avec un marqueur quand le professeur arrive."
+          ]
         },
         {
-          "t": " professeur regarde une équipe, parce que Monique est contente aussi."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Parce que le marqueur ne marque plus, Quentin demande à Jacqueline quelque chose pour écrire.",
+            "Quentin cherche son marqueur, mais Jacques dit qu’il l’a prêté à Enrique."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "Ce matin, quand la musicienne aime la banque, parce que Monique est contente aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
+      "word": "moustique",
+      "variants": [
         {
-          "t": " musicienne aime "
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Le moustique a piqué la jambe de Kally.",
+            "Quentin chasse le moustique de Jacques.",
+            "Un moustique pique Quentin la nuit."
+          ]
         },
         {
-          "blank": "la"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Un moustique pique Jacques quand il dort dans la tente de Quentin."
+          ]
         },
         {
-          "t": " banque, parce que Monique est contente aussi."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Comme un moustique pique Quentin chaque soir, Jacqueline lui conseille d’acheter une moustiquaire.",
+            "Quentin tue le moustique avec son journal, mais Jacques et Enrique ont déjà piqué."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "Quand la voisine cherche la boutique à la boutique, et Quentin est très content.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
+      "word": "olympique",
+      "variants": [
         {
-          "blank": "la"
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Quentin nage dans la piscine olympique."
+          ]
         },
         {
-          "t": " voisine cherche "
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Jacques gagne la médaille olympique quand Quentin applaudit à la télé."
+          ]
         },
         {
-          "blank": "la"
-        },
-        {
-          "t": " boutique à "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boutique, et Quentin est très content."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quentin rêve d’une médaille olympique, mais Jacques et Enrique préfèrent le foot."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "À midi, quand le facteur visite la brique avec Quentin, et Quentin est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "le"
-        },
+      "word": "paquebot",
+      "variants": [
         {
-          "t": " facteur visite "
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Le paquebot quitte le quai.",
+            "Quentin voit un paquebot blanc."
+          ]
         },
         {
-          "blank": "la"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Jacques regarde le paquebot quand il passe devant le quai de Quentin.",
+            "Quentin voyage sur un paquebot avec quelques amis pour Pâques."
+          ]
         },
         {
-          "t": " brique avec Quentin, et Quentin est très content."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand le paquebot quitte le port, Jacqueline salue le quai et quelques amis qui restent.",
+            "Quentin prend un paquebot pour la Corse, mais Jacques et Enrique préfèrent l’avion."
+          ]
         }
       ]
     },
     {
-      "level": "a1",
-      "sentence": "La professeure pose le chèque avec Monique.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " professeure pose "
-        },
+      "word": "paquerette",
+      "variants": [
         {
-          "blank": "le"
-        },
-        {
-          "t": " chèque avec Monique."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Jacques prépare le cinq bien.",
-      "parts": [
-        {
-          "t": "Jacques prépare "
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Quentin cueille une pâquerette blanche."
+          ]
         },
         {
-          "blank": "le"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Jacques regarde une pâquerette quand il marche avec Quentin."
+          ]
         },
         {
-          "t": " cinq bien."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quentin offre une pâquerette à Jacques, mais Enrique dit qu’il préfère les coquelicots."
+          ]
         }
       ]
     },
     {
-      "level": "a1",
-      "sentence": "Quentin choisit le cirque bien.",
-      "parts": [
-        {
-          "t": "Quentin choisit "
-        },
+      "word": "pâquerette",
+      "variants": [
         {
-          "blank": "le"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Quand Jacqueline arrive au parc, elle voit une pâquerette dans l’herbe."
+          ]
         },
         {
-          "t": " cirque bien."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Comme la pâquerette pousse partout, Quentin en cueille quelques-unes pour faire un joli bouquet."
+          ]
         }
       ]
     },
     {
-      "level": "a1",
-      "sentence": "La factrice caresse le coq avec Quentin.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " factrice caresse "
-        },
-        {
-          "blank": "le"
-        },
+      "word": "Parce",
+      "variants": [
         {
-          "t": " coq avec Quentin."
+          "level": "b1",
+          "sentences": [
+            "Parce que Quentin cherche son briquet, il vide ses poches devant Jacques et quelques amis."
+          ]
         }
       ]
     },
     {
-      "level": "a1",
-      "sentence": "La boulangère choisit le disque avec Monique.",
-      "parts": [
-        {
-          "blank": "La"
-        },
+      "word": "pastèque",
+      "variants": [
         {
-          "t": " boulangère choisit "
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Quentin mange une pastèque fraîche."
+          ]
         },
         {
-          "blank": "le"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Jacques coupe une pastèque quand Quentin invite Enrique."
+          ]
         },
         {
-          "t": " disque avec Monique."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quentin achète une pastèque à la boutique, mais Jacques et Enrique préfèrent le melon."
+          ]
         }
       ]
     },
     {
-      "level": "a1",
-      "sentence": "Monique oublie la marque bien.",
-      "parts": [
-        {
-          "t": "Monique oublie "
-        },
+      "word": "peinture",
+      "variants": [
         {
-          "blank": "la"
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Quentin utilise une peinture acrylique."
+          ]
         },
         {
-          "t": " marque bien."
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Quentin achète de la peinture acrylique à la boutique du quartier."
+          ]
         }
       ]
     },
     {
-      "level": "a2",
-      "sentence": "Ce soir, Jacques connaît le quartier à la boutique.",
-      "parts": [
-        {
-          "t": "Ce soir, Jacques connaît "
-        },
-        {
-          "blank": "le"
-        },
+      "word": "perroquet",
+      "variants": [
         {
-          "t": " quartier à "
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Quentin nourrit le perroquet de Jacques."
+          ]
         },
         {
-          "blank": "la"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Le perroquet de Jacques répète toujours ce que dit Quentin."
+          ]
         },
         {
-          "t": " boutique."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quentin parle avec le perroquet, mais Jacques et Enrique disent qu’il ne comprend rien."
+          ]
         }
       ]
     },
     {
-      "level": "a2",
-      "sentence": "Ce matin, Jacques écoute le quatuor sans question.",
-      "parts": [
-        {
-          "t": "Ce matin, Jacques écoute "
-        },
-        {
-          "blank": "le"
-        },
+      "word": "phoque",
+      "variants": [
         {
-          "t": " quatuor sans question."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Monique étudie la question sans question.",
-      "parts": [
-        {
-          "t": "À midi, Monique étudie "
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Quentin voit un phoque gris."
+          ]
         },
         {
-          "blank": "la"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Jacques regarde le phoque quand il nage près de Quentin."
+          ]
         },
         {
-          "t": " question sans question."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quentin nourrit le phoque au zoo, mais Jacques et Enrique préfèrent regarder les pingouins."
+          ]
         }
       ]
     },
     {
-      "level": "a2",
-      "sentence": "À midi, Quentin apporte la quiche avec Monique.",
-      "parts": [
-        {
-          "t": "À midi, Quentin apporte "
-        },
-        {
-          "blank": "la"
-        },
+      "word": "piscine",
+      "variants": [
         {
-          "t": " quiche avec Monique."
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Jacques nage dans la piscine olympique avec quelques amis du quartier."
+          ]
         }
       ]
     },
     {
-      "level": "a2",
-      "sentence": "Ce matin, Jacques choisit le quinoa avec Monique.",
-      "parts": [
-        {
-          "t": "Ce matin, Jacques choisit "
-        },
+      "word": "printemps",
+      "variants": [
         {
-          "blank": "le"
-        },
-        {
-          "t": " quinoa avec Monique."
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Quand le printemps arrive, Pascale plante une jonquille devant la boutique."
+          ]
         }
       ]
     },
     {
-      "level": "a2",
-      "sentence": "À midi, Jacques range le risque à la boutique.",
-      "parts": [
-        {
-          "t": "À midi, Jacques range "
-        },
-        {
-          "blank": "le"
-        },
+      "word": "quatorze",
+      "variants": [
         {
-          "t": " risque à "
+          "level": "a1",
+          "sentences": [
+            "Quentin compte quatorze élèves chez Jacques."
+          ]
         },
         {
-          "blank": "la"
+          "level": "a2",
+          "sentences": [
+            "Jacques a quatorze billes quand il joue avec Quentin."
+          ]
         },
         {
-          "t": " boutique."
+          "level": "b1",
+          "number": "plur",
+          "sentences": [
+            "Quentin invite quatorze amis, mais Jacques et Enrique disent qu’il manque des chaises."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "À midi, quand Jacques enfile la casquette à la boutique, et Quentin est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Jacques enfile "
-        },
-        {
-          "blank": "la"
-        },
+      "word": "Quentin",
+      "variants": [
         {
-          "t": " casquette à "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boutique, et Quentin est très content."
+          "level": "a1",
+          "sentences": [
+            "Quentin met son casque de moto."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "À midi, quand le cousin prend le chèque avec Quentin, et Quentin est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "le"
-        },
+      "word": "quetzal",
+      "variants": [
         {
-          "t": " cousin prend "
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Quentin dessine un quetzal vert."
+          ]
         },
         {
-          "blank": "le"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Jacques regarde le quetzal quand il vole au-dessus de Quentin."
+          ]
         },
         {
-          "t": " chèque avec Quentin, et Quentin est très content."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quentin photographie un quetzal, mais Jacques et Enrique disent que l’oiseau est magnifique."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "Quand la factrice recopie le cinq à la boutique, et Quentin est très content.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
+      "word": "quinze",
+      "variants": [
         {
-          "blank": "la"
+          "level": "a1",
+          "sentences": [
+            "Quentin a quinze billes chez Jacques."
+          ]
         },
         {
-          "t": " factrice recopie "
+          "level": "a2",
+          "sentences": [
+            "Jacques compte quinze billes quand il joue avec Quentin."
+          ]
         },
         {
-          "blank": "le"
-        },
-        {
-          "t": " cinq à "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boutique, et Quentin est très content."
+          "level": "b1",
+          "sentences": [
+            "Quentin a quinze ans demain, mais Jacques et Enrique pensent qu’il en a seize."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "À midi, quand Frédéric regarde le cirque avec Quentin, et Quentin est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Frédéric regarde "
-        },
-        {
-          "blank": "le"
-        },
+      "word": "soleil",
+      "variants": [
         {
-          "t": " cirque avec Quentin, et Quentin est très content."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Comme Quentin craint le soleil, il met sa casquette quand il va chez Jacqueline."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "Ce matin, quand la maîtresse attrape le coq, parce que Monique est contente aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maîtresse attrape "
-        },
-        {
-          "blank": "le"
-        },
+      "word": "sport",
+      "variants": [
         {
-          "t": " coq, parce que Monique est contente aussi."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand Quentin regarde le sport olympique, il rêve de devenir un champion unique."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "À midi, quand le cuisinier regarde le disque avec Quentin, et Quentin est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cuisinier regarde "
-        },
-        {
-          "blank": "le"
-        },
+      "word": "stade",
+      "variants": [
         {
-          "t": " disque avec Quentin, et Quentin est très content."
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Quentin regarde le stade olympique."
+          ]
         }
       ]
-    }
-  ],
-  "type12": [
-    {
-      "level": "a1",
-      "sentence": "Le papa aime la banque sans question."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le professeur traverse la boutique sans question."
-    },
-    {
-      "level": "a1",
-      "sentence": "Monique ouvre la brique bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La voisine porte la casquette avec Quentin."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Quentin aime la musique avec Monique."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Jacques cherche le paquet avec Quentin."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Jacques utilise la plaque avec Monique."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Monique montre la qualité à la boutique."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le professeur regarde une équipe, parce que Monique est contente aussi."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la musicienne aime la banque, parce que Monique est contente aussi."
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand la voisine cherche la boutique à la boutique, et Quentin est très content."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand le facteur visite la brique avec Quentin, et Quentin est très content."
-    }
-  ],
-  "type14": [
-    {
-      "level": "a1",
-      "sentence": "La professeure pose le chèque avec Monique."
-    },
-    {
-      "level": "a1",
-      "sentence": "Jacques prépare le cinq bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "Quentin choisit le cirque bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La factrice caresse le coq avec Quentin."
-    },
-    {
-      "level": "a1",
-      "sentence": "La boulangère choisit le disque avec Monique."
-    },
-    {
-      "level": "a1",
-      "sentence": "Monique oublie la marque bien."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Jacques connaît le quartier à la boutique."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Jacques écoute le quatuor sans question."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Monique étudie la question sans question."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Quentin apporte la quiche avec Monique."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Jacques choisit le quinoa avec Monique."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Jacques range le risque à la boutique."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Jacques enfile la casquette à la boutique, et Quentin est très content."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand le cousin prend le chèque avec Quentin, et Quentin est très content."
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand la factrice recopie le cinq à la boutique, et Quentin est très content."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Frédéric regarde le cirque avec Quentin, et Quentin est très content."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la maîtresse attrape le coq, parce que Monique est contente aussi."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand le cuisinier regarde le disque avec Quentin, et Quentin est très content."
     }
   ]
 }

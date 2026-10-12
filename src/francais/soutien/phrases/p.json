@@ -1,3090 +1,993 @@
 {
-  "type9": [
+  "son": "p",
+  "phrases": [
     {
-      "level": "a1",
-      "word": "lampe",
-      "sentence": "Paul allume la lampe bien."
+      "word": "adresse",
+      "variants": [
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Pauline écrit l’adresse de Paul sur l’enveloppe en lettres capitales."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "lampe",
-      "sentence": "Ce matin, le professeur éteint la lampe avec Pauline."
+      "word": "appareil",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Papa a un appareil photo."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "lampe",
-      "sentence": "Ce matin, quand la directrice allume la lampe, et Paul est content pour Pauline."
+      "word": "appareil photo",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Paul prend un appareil photo."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Pauline prête son appareil photo à Pierre pour la petite promenade."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Pierre répare l’appareil photo de Pauline, mais Paul préfère prendre le portable."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
-      "word": "pain",
-      "sentence": "La musicienne met le pain pour Papa."
+      "word": "asperge",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Papa épluche une asperge pour Pierre.",
+            "Paul épluche une asperge pour Pauline."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Pauline prépare une asperge avec du poivre pour Pierre."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "plur",
+          "sentences": [
+            "Pierre épluche les asperges, mais Pauline préfère les petits pois du potager de Paul."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "pain",
-      "sentence": "Après le cours, le médecin achète le pain pour Papa."
+      "word": "calme",
+      "variants": [
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Parce que Paul préfère le calme, il passe ses vacances à la campagne."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "pain",
-      "sentence": "Ce matin, quand le frère grille le pain, parce que Pauline part pour Paris."
+      "word": "campagne",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Papa habite à la campagne.",
+            "Paul passe à la campagne."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Pauline pique-nique à la campagne avec Pierre et Patrick."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Pierre propose un pique-nique à la campagne, mais Pauline préfère passer le dimanche chez Paul."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
-      "word": "pantalon",
-      "sentence": "La sœur repasse le pantalon."
+      "word": "champignon",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Papa cueille un champignon près du pont.",
+            "Paul cueille un champignon pour Pauline."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Pauline pose un champignon dans la poêle de Pierre."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Pierre prépare une poêlée de champignons, mais Pauline préfère la purée de pommes de terre."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "pantalon",
-      "sentence": "Ce matin, le frère repasse le pantalon avec Paul."
+      "word": "chapeau",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Papa porte un chapeau pointu.",
+            "Paul porte un chapeau pointu."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Pauline pose le chapeau de Pierre sur la petite table."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Pierre perd son chapeau pendant la promenade, mais Paul le repère près du pont."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "pantalon",
-      "sentence": "Ce matin, quand le médecin repasse le pantalon, parce que Pauline part pour Paris."
+      "word": "charpentière",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Pauline est charpentière à Payerne."
+          ]
+        },
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "La charpentière pose un panneau."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "La charpentière Pauline pose le plafond pour Pierre et Paul.",
+            "La charpentière prépare une planche pour réparer le plafond."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Pierre parle à la charpentière, mais Pauline préfère poser elle-même les planches du plafond.",
+            "Quand la charpentière arrive, elle prend ses outils et pose les poutres avec patience."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
-      "word": "papa",
-      "sentence": "Le jardinier aide le papa."
+      "word": "chips",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "plur",
+          "sentences": [
+            "Papa mange des chips au paprika.",
+            "Paul mange des chips piquantes."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "plur",
+          "sentences": [
+            "Pauline apporte des chips et du pain pour Pierre et Paul.",
+            "Pierre apporte des chips et du pain pour le pique-nique de Pauline."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "plur",
+          "sentences": [
+            "Comme Paul n’aime pas les chips, il prépare plutôt des pommes pour le pique-nique."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Pierre prend un paquet de chips, mais Pauline préfère les cacahuètes de Paul."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "papa",
-      "sentence": "Après le cours, la collègue console le papa pour Papa."
+      "word": "compas",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Paul prend le compas pour dessiner.",
+            "Paul prend un compas pointu."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Pauline pique le papier avec la pointe du compas de Pierre."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Pierre perd son compas, mais Pauline lui prête le sien pour tracer le plan."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "papa",
-      "sentence": "Ce matin, quand Pierre invite le papa, parce que Pauline part pour Paris."
+      "word": "comptoire",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Paul paie au comptoir pour Pauline."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Pauline pose le plateau sur le comptoir de Pierre et de Paul."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Pierre prépare le café derrière le comptoir, mais Pauline préfère servir les clients plus vite."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
-      "word": "papier",
-      "sentence": "Philippe ramasse le papier bien."
+      "word": "crapaud",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Il voit un crapaud au bord de l’eau.",
+            "Le crapaud saute près de la porte.",
+            "Paul voit un petit crapaud."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Pauline attrape un crapaud près de la pompe de Pierre."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Pierre pose le crapaud près de la mare, mais Pauline préfère le rapporter chez Paul.",
+            "Quand il pleut, le crapaud saute vite près de la piscine de Paul."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "papier",
-      "sentence": "Avant le repas, la copine jette le papier avec Pauline."
+      "word": "crêpe",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Papa prépare une crêpe pour Paul.",
+            "Paul mange une crêpe plate."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Pauline mange une crêpe au sucre dans la petite place du village.",
+            "Pauline prépare une crêpe pour Pierre et pour Paul."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Pierre retourne la crêpe dans la poêle, mais Pauline préfère la pâte épaisse.",
+            "Quand Pierre prépare une crêpe, il ajoute du sucre parce que Paul adore ça."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "papier",
-      "sentence": "Ce matin, quand une amie colle le papier, et Paul est content pour Pauline."
+      "word": "cupcake",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Papa mange un cupcake rose.",
+            "Paul prépare un cupcake sucré."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Pauline pose un cupcake sur la petite assiette de Pierre.",
+            "Pauline pose un cupcake sur la table pour le petit Paul."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Pierre prépare un cupcake pour Pauline, mais Paul préfère le petit gâteau à la pomme."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
-      "word": "parc",
-      "sentence": "Le directeur se promène dans le parc."
+      "word": "cypres",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Paul plante un cyprès pointu."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Pauline plante un cyprès près de la porte de Pierre."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Pierre taille le cyprès, mais Pauline préfère planter des peupliers près du portail de Paul."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "parc",
-      "sentence": "Ce matin, le cousin pique-nique dans le parc avec Paul."
+      "word": "cyprès",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Le cyprès pousse près du parc."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Paul plante un cyprès à côté de la porte du petit jardin."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Parce que le cyprès protège du vent, Pierre en plante plusieurs près de la porte."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "parc",
-      "sentence": "Ce matin, quand la tante marche dans le parc, parce que Pauline part pour Paris."
+      "word": "drapeau",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Le drapeau flotte sur le pont.",
+            "Paul porte le drapeau rouge."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Pauline plante le drapeau près de la porte de Pierre.",
+            "Pierre plante le drapeau suisse sur le pic de la montagne."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Pierre pose le drapeau sur le podium, mais Pauline préfère le planter près du pont."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
-      "word": "pile",
-      "sentence": "Le bébé range la pile pour Papa."
+      "word": "écharpe",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Paul perd son écharpe rouge."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Pauline prête son écharpe à Pierre pour la promenade."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Pierre porte une écharpe épaisse pendant la promenade, mais Pauline préfère son petit foulard."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "pile",
-      "sentence": "Ce soir, la factrice oublie la pile près du pont."
+      "word": "encyclopédie",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Papa lit l’encyclopédie de Paul.",
+            "Paul prend l’encyclopédie de Pierre."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Pauline pose l’encyclopédie sur la petite table de Pierre."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Comme Paul veut comprendre, il consulte l’encyclopédie et prend des notes pour le professeur.",
+            "Pierre cherche un mot dans l’encyclopédie, mais Pauline préfère poser la question à Paul."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "pile",
-      "sentence": "Ce matin, quand le musicien cherche la pile, et Paul est content pour Pauline."
+      "word": "enveloppe",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Papa met une enveloppe sur la table.",
+            "Paul ouvre l’enveloppe de Pauline."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Pauline met la photo dans l’enveloppe pour Pierre et Paul."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Comme l’enveloppe est trop petite, Paul plie la lettre avant de la poster.",
+            "Pierre pose l’enveloppe sur le piano, mais Pauline préfère la poster plus tard."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
-      "word": "pingouin",
-      "sentence": "La musicienne utilise le pingouin avec Pauline."
+      "word": "épaule",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Paul a mal à l’épaule."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Pauline pose sa main sur l’épaule de Pierre et de Paul."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Pierre se plaint de son épaule, mais Pauline préfère appeler le docteur plutôt que Paul."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "pingouin",
-      "sentence": "À midi, Paul range le pingouin pour Papa."
+      "word": "épicière",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Pauline est épicière à Pully."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "L’épicière Pauline vend des pommes et du poivre à Pierre."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Pierre parle à l’épicière, mais Pauline préfère acheter ses produits chez Paul."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "pingouin",
-      "sentence": "Ce matin, quand le professeur oublie le pingouin, parce que Pauline part pour Paris."
+      "word": "épinard",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Paul cuit l’épinard de Pauline."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Pauline prépare l’épinard avec du poivre pour Pierre et Paul."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Pierre achète un épinard, mais Pauline préfère les petits pois du potager de Paul."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
-      "word": "piscine",
-      "sentence": "La professeure bronze près de la piscine."
+      "word": "forêt",
+      "variants": [
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand il pleut dans la forêt, Paul peut trouver un champignon sous les pins."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "piscine",
-      "sentence": "Après le cours, la fille nage dans la piscine avec Pauline."
+      "word": "guêpe",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Paul voit une petite guêpe."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Pauline a peur de la guêpe qui pique Pierre et Paul."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Pierre chasse la guêpe près de la porte, mais Pauline préfère la piéger pour Paul."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "piscine",
-      "sentence": "Ce matin, quand la maîtresse va à la piscine, et Paul est content pour Pauline."
+      "word": "harpe",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Paul joue de la harpe."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Pauline apprend la harpe avec Pierre et Paul le lundi."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Pierre écoute la harpe de Pauline, mais Paul préfère le piano de papa."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
-      "word": "place",
-      "sentence": "Pauline contourne la place bien."
+      "word": "hélicoptère",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Paul prend un hélicoptère rouge."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Pauline pilote un hélicoptère pour Pierre et Paul près du pont."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Pierre prend l’hélicoptère pour partir plus vite, mais Pauline préfère le train de Paul."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "place",
-      "sentence": "À midi, la maîtresse contourne la place près de Philippe."
+      "word": "hippocampe",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Paul dessine un petit hippocampe."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Pauline peint un hippocampe pour Pierre et Paul."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Pierre dessine un hippocampe, mais Pauline préfère peindre des poissons pour le plafond de Paul."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "place",
-      "sentence": "Ce matin, quand le frère contourne la place, et Paul est content pour Pauline."
+      "word": "page",
+      "variants": [
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Pauline cherche une page dans l’encyclopédie pour le projet."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
-      "word": "pluie",
-      "sentence": "La boulangère échappe à la pluie."
+      "word": "palais",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "La reine et le roi sont dans le palais."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "pluie",
-      "sentence": "Après le cours, le boulanger échappe à la pluie avec Paul."
+      "word": "Papa",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Papa paie au comptoir du café."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Marc et Caroline partent à l’école avec papa.",
+            "Papa a acheté un beau vélo violet à Valérie."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "pluie",
-      "sentence": "Ce matin, quand la cuisinière échappe à la pluie, parce que Pauline part pour Paris."
+      "word": "patron",
+      "variants": [
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand le patron prépare le café, Paul attend près du comptoir et paie ensuite."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
-      "word": "poche",
-      "sentence": "Le directeur met la poche avec Pauline."
+      "word": "paysages",
+      "variants": [
+        {
+          "level": "b1",
+          "number": "plur",
+          "sentences": [
+            "Quand Pauline part en vacances, elle emporte son appareil photo pour prendre des paysages."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "poche",
-      "sentence": "Ce soir, Philippe achète la poche pour Papa."
+      "word": "petit",
+      "variants": [
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Le petit veau maladroit court et saute dans le pré, près du ruisseau.",
+            "Un petit crapaud passe sous la pierre pendant la pluie."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "poche",
-      "sentence": "Ce matin, quand la copine lave la poche, parce que Pauline part pour Paris."
+      "word": "pied",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Pouvez-vous sauter sur un pied ?"
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
-      "word": "poire",
-      "sentence": "Le grand-père prépare la poire."
+      "word": "Pierre",
+      "variants": [
+        {
+          "level": "a2",
+          "sentences": [
+            "Pierre met son chapeau parce qu’il y a trop de soleil."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "poire",
-      "sentence": "Après le cours, le directeur mange la poire avec Paul."
+      "word": "plateau",
+      "variants": [
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Pierre pose le plateau sur le comptoir pour le petit déjeuner."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "poire",
-      "sentence": "Ce matin, quand Philippe apporte la poire, parce que Pauline part pour Paris."
+      "word": "poêle",
+      "variants": [
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Pauline prépare une poêle de champignons avec du persil et du poulet."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
-      "word": "poivron",
-      "sentence": "Le papa range le poivron."
+      "word": "pointe",
+      "variants": [
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Pierre pose la pointe du compas sur la page blanche."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "poivron",
-      "sentence": "Après le cours, le bébé cherche le poivron avec Paul."
+      "word": "poisson",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Le poisson a une nageoire abîmée."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "poivron",
-      "sentence": "Ce matin, quand la factrice pose le poivron, parce que Pauline part pour Paris."
+      "word": "portrait",
+      "variants": [
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Pierre prend un portrait de Paul avec son appareil photo."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
-      "word": "pomme",
-      "sentence": "Le cuisinier cueille la pomme pour Papa."
-    },
-    {
-      "level": "a2",
-      "word": "pomme",
-      "sentence": "Avant le repas, la musicienne veut la pomme près du pont."
-    },
-    {
-      "level": "b1",
-      "word": "pomme",
-      "sentence": "Ce matin, quand Paul mange la pomme, et Paul est content pour Pauline."
-    },
-    {
-      "level": "a1",
-      "word": "pont",
-      "sentence": "Pauline traverse le pont bien."
-    },
-    {
-      "level": "a2",
-      "word": "pont",
-      "sentence": "Ce matin, la professeure passe sous le pont pour Papa."
-    },
-    {
-      "level": "b1",
-      "word": "pont",
-      "sentence": "Ce matin, quand la fille construit le pont, parce que Pauline part pour Paris."
-    },
-    {
-      "level": "a1",
-      "word": "porte",
-      "sentence": "Un ami pousse la porte."
-    },
-    {
-      "level": "a2",
-      "word": "porte",
-      "sentence": "Ce soir, le voisin entre par la porte avec Pauline."
-    },
-    {
-      "level": "b1",
-      "word": "porte",
-      "sentence": "Ce matin, quand la sœur ferme la porte, et Paul est content pour Pauline."
-    },
-    {
-      "level": "a1",
-      "word": "poule",
-      "sentence": "La grand-mère attrape la poule."
-    },
-    {
-      "level": "a2",
-      "word": "poule",
-      "sentence": "Avant le repas, la collègue observe la poule pour Papa."
-    },
-    {
-      "level": "b1",
-      "word": "poule",
-      "sentence": "Ce matin, quand le jardinier voit la poule, parce que Pauline part pour Paris."
-    },
-    {
-      "level": "a1",
-      "word": "poupée",
-      "sentence": "La jardinière écoute la poupée."
-    },
-    {
-      "level": "a2",
-      "word": "poupée",
-      "sentence": "Après le cours, le directeur aime la poupée près du pont."
-    },
-    {
-      "level": "b1",
-      "word": "poupée",
-      "sentence": "Ce matin, quand Philippe termine la poupée, et Paul est content pour Pauline."
-    },
-    {
-      "level": "a1",
       "word": "printemps",
-      "sentence": "Le papa pose le printemps."
+      "variants": [
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Parce que le printemps est la saison des asperges, Pauline en prépare plus souvent."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "printemps",
-      "sentence": "Avant le repas, le grand-père montre le printemps pour Papa."
+      "word": "prix",
+      "variants": [
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Comme Paul a gagné un prix, Pauline lui offre un cupcake avec une petite bougie."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "printemps",
-      "sentence": "Ce matin, quand la maman trouve le printemps, parce que Pauline part pour Paris."
+      "word": "professeur",
+      "variants": [
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand le professeur explique la géométrie, Paul prend son compas et trace plusieurs cercles parfaits."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
-      "word": "pull",
-      "sentence": "Le maître porte le pull."
+      "word": "public",
+      "variants": [
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand le public applaudit, Paul agite le drapeau pour montrer qu’il est très fier."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "pull",
-      "sentence": "À midi, la factrice enfile le pull près du pont."
+      "word": "punition",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Ils vont avoir une punition."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "pull",
-      "sentence": "Ce matin, quand la maman porte le pull, et Paul est content pour Pauline."
+      "word": "Quand",
+      "variants": [
+        {
+          "level": "b1",
+          "sentences": [
+            "Quand Pauline part en promenade, elle prend son chapeau pour protéger sa peau du soleil."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
-      "word": "pâte",
-      "sentence": "Le garçon mange la pâte pour Papa."
-    },
-    {
-      "level": "a2",
-      "word": "pâte",
-      "sentence": "Ce soir, le cuisinier prépare la pâte avec Paul."
-    },
-    {
-      "level": "b1",
-      "word": "pâte",
-      "sentence": "Ce matin, quand la musicienne choisit la pâte, parce que Pauline part pour Paris."
-    },
-    {
-      "level": "a1",
-      "word": "repas",
-      "sentence": "La professeure se lave avant le repas."
-    },
-    {
-      "level": "a2",
-      "word": "repas",
-      "sentence": "À midi, Pauline prépare le repas près du pont."
-    },
-    {
-      "level": "b1",
-      "word": "repas",
-      "sentence": "Ce matin, quand la professeure sert le repas, et Paul est content pour Pauline."
-    },
-    {
-      "level": "a1",
-      "word": "sapin",
-      "sentence": "Le copain regarde le sapin."
-    },
-    {
-      "level": "a2",
-      "word": "sapin",
-      "sentence": "Après le cours, un ami admire le sapin pour Papa."
-    },
-    {
-      "level": "b1",
-      "word": "sapin",
-      "sentence": "Ce matin, quand le voisin plante le sapin, parce que Pauline part pour Paris."
-    },
-    {
-      "level": "a1",
       "word": "soupe",
-      "sentence": "La voisine mange la soupe avec Paul."
-    },
-    {
-      "level": "a2",
-      "word": "soupe",
-      "sentence": "Avant le repas, la grand-mère cuisine la soupe avec Pauline."
-    },
-    {
-      "level": "b1",
-      "word": "soupe",
-      "sentence": "Ce matin, quand le voisin mange la soupe, et Paul est content pour Pauline."
-    },
-    {
-      "level": "a1",
-      "word": "tapis",
-      "sentence": "La copine saute sur le tapis."
-    },
-    {
-      "level": "a2",
-      "word": "tapis",
-      "sentence": "Ce soir, la voisine tombe sur le tapis près du pont."
-    },
-    {
-      "level": "b1",
-      "word": "tapis",
-      "sentence": "Ce matin, quand le directeur bat le tapis, parce que Pauline part pour Paris."
-    }
-  ],
-  "type10": [
-    {
-      "level": "a1",
-      "sentence": "Paul allume la lampe bien.",
-      "parts": [
-        {
-          "t": "Paul allume "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " lampe bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le professeur éteint la lampe avec Pauline.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " professeur éteint "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " lampe avec Pauline."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la directrice allume la lampe, et Paul est content pour Pauline.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " directrice allume "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " lampe, et Paul est content pour Pauline."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La musicienne met le pain pour Papa.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " musicienne met "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pain pour Papa."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le médecin achète le pain pour Papa.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " médecin achète "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pain pour Papa."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le frère grille le pain, parce que Pauline part pour Paris.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " frère grille "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pain, parce que Pauline part pour Paris."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La sœur repasse le pantalon.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " sœur repasse "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pantalon."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le frère repasse le pantalon avec Paul.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " frère repasse "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pantalon avec Paul."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le médecin repasse le pantalon, parce que Pauline part pour Paris.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " médecin repasse "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pantalon, parce que Pauline part pour Paris."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le jardinier aide le papa.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " jardinier aide "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " papa."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la collègue console le papa pour Papa.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " collègue console "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " papa pour Papa."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Pierre invite le papa, parce que Pauline part pour Paris.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Pierre invite "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " papa, parce que Pauline part pour Paris."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Philippe ramasse le papier bien.",
-      "parts": [
-        {
-          "t": "Philippe ramasse "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " papier bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la copine jette le papier avec Pauline.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " copine jette "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " papier avec Pauline."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand une amie colle le papier, et Paul est content pour Pauline.",
-      "parts": [
-        {
-          "t": "Ce matin, quand une amie colle "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " papier, et Paul est content pour Pauline."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le directeur se promène dans le parc.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " directeur se promène dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " parc."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le cousin pique-nique dans le parc avec Paul.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cousin pique-nique dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " parc avec Paul."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la tante marche dans le parc, parce que Pauline part pour Paris.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " tante marche dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " parc, parce que Pauline part pour Paris."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le bébé range la pile pour Papa.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " bébé range "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " pile pour Papa."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, la factrice oublie la pile près du pont.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " factrice oublie "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " pile près du pont."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le musicien cherche la pile, et Paul est content pour Pauline.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " musicien cherche "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " pile, et Paul est content pour Pauline."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La musicienne utilise le pingouin avec Pauline.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " musicienne utilise "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pingouin avec Pauline."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Paul range le pingouin pour Papa.",
-      "parts": [
-        {
-          "t": "À midi, Paul range "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pingouin pour Papa."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le professeur oublie le pingouin, parce que Pauline part pour Paris.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " professeur oublie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pingouin, parce que Pauline part pour Paris."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La professeure bronze près de la piscine.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " professeure bronze près de "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " piscine."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la fille nage dans la piscine avec Pauline.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " fille nage dans "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " piscine avec Pauline."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la maîtresse va à la piscine, et Paul est content pour Pauline.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maîtresse va à "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " piscine, et Paul est content pour Pauline."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Pauline contourne la place bien.",
-      "parts": [
-        {
-          "t": "Pauline contourne "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " place bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, la maîtresse contourne la place près de Philippe.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maîtresse contourne "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " place près de Philippe."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le frère contourne la place, et Paul est content pour Pauline.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " frère contourne "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " place, et Paul est content pour Pauline."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La boulangère échappe à la pluie.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " boulangère échappe à "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " pluie."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le boulanger échappe à la pluie avec Paul.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " boulanger échappe à "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " pluie avec Paul."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la cuisinière échappe à la pluie, parce que Pauline part pour Paris.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cuisinière échappe à "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " pluie, parce que Pauline part pour Paris."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le directeur met la poche avec Pauline.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " directeur met "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " poche avec Pauline."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Philippe achète la poche pour Papa.",
-      "parts": [
-        {
-          "t": "Ce soir, Philippe achète "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " poche pour Papa."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la copine lave la poche, parce que Pauline part pour Paris.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " copine lave "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " poche, parce que Pauline part pour Paris."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le grand-père prépare la poire.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " grand-père prépare "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " poire."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le directeur mange la poire avec Paul.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " directeur mange "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " poire avec Paul."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Philippe apporte la poire, parce que Pauline part pour Paris.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Philippe apporte "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " poire, parce que Pauline part pour Paris."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le papa range le poivron.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " papa range "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " poivron."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le bébé cherche le poivron avec Paul.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bébé cherche "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " poivron avec Paul."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la factrice pose le poivron, parce que Pauline part pour Paris.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " factrice pose "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " poivron, parce que Pauline part pour Paris."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le cuisinier cueille la pomme pour Papa.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " cuisinier cueille "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " pomme pour Papa."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la musicienne veut la pomme près du pont.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " musicienne veut "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " pomme près du pont."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Paul mange la pomme, et Paul est content pour Pauline.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Paul mange "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " pomme, et Paul est content pour Pauline."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Pauline traverse le pont bien.",
-      "parts": [
-        {
-          "t": "Pauline traverse "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pont bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, la professeure passe sous le pont pour Papa.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " professeure passe sous "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pont pour Papa."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la fille construit le pont, parce que Pauline part pour Paris.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " fille construit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pont, parce que Pauline part pour Paris."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Un ami pousse la porte.",
-      "parts": [
-        {
-          "t": "Un ami pousse "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " porte."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le voisin entre par la porte avec Pauline.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " voisin entre par "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " porte avec Pauline."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la sœur ferme la porte, et Paul est content pour Pauline.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " sœur ferme "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " porte, et Paul est content pour Pauline."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La grand-mère attrape la poule.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " grand-mère attrape "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " poule."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la collègue observe la poule pour Papa.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " collègue observe "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " poule pour Papa."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le jardinier voit la poule, parce que Pauline part pour Paris.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardinier voit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " poule, parce que Pauline part pour Paris."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La jardinière écoute la poupée.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " jardinière écoute "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " poupée."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le directeur aime la poupée près du pont.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " directeur aime "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " poupée près du pont."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Philippe termine la poupée, et Paul est content pour Pauline.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Philippe termine "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " poupée, et Paul est content pour Pauline."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le papa pose le printemps.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " papa pose "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " printemps."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le grand-père montre le printemps pour Papa.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " grand-père montre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " printemps pour Papa."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la maman trouve le printemps, parce que Pauline part pour Paris.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maman trouve "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " printemps, parce que Pauline part pour Paris."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le maître porte le pull.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " maître porte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pull."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, la factrice enfile le pull près du pont.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " factrice enfile "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pull près du pont."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la maman porte le pull, et Paul est content pour Pauline.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maman porte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pull, et Paul est content pour Pauline."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le garçon mange la pâte pour Papa.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " garçon mange "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " pâte pour Papa."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le cuisinier prépare la pâte avec Paul.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cuisinier prépare "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " pâte avec Paul."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la musicienne choisit la pâte, parce que Pauline part pour Paris.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " musicienne choisit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " pâte, parce que Pauline part pour Paris."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La professeure se lave avant le repas.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " professeure se lave avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Pauline prépare le repas près du pont.",
-      "parts": [
-        {
-          "t": "À midi, Pauline prépare "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas près du pont."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la professeure sert le repas, et Paul est content pour Pauline.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " professeure sert "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, et Paul est content pour Pauline."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le copain regarde le sapin.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " copain regarde "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sapin."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, un ami admire le sapin pour Papa.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, un ami admire "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sapin pour Papa."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le voisin plante le sapin, parce que Pauline part pour Paris.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " voisin plante "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sapin, parce que Pauline part pour Paris."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La voisine mange la soupe avec Paul.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " voisine mange "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " soupe avec Paul."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la grand-mère cuisine la soupe avec Pauline.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " grand-mère cuisine "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " soupe avec Pauline."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le voisin mange la soupe, et Paul est content pour Pauline.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " voisin mange "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " soupe, et Paul est content pour Pauline."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La copine saute sur le tapis.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " copine saute sur "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " tapis."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, la voisine tombe sur le tapis près du pont.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " voisine tombe sur "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " tapis près du pont."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le directeur bat le tapis, parce que Pauline part pour Paris.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " directeur bat "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " tapis, parce que Pauline part pour Paris."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Philippe allume la lampe bien.",
-      "parts": [
-        {
-          "t": "Philippe allume "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " lampe bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La boulangère sent le pain avec Paul.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " boulangère sent "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pain avec Paul."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La musicienne repasse le pantalon.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " musicienne repasse "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pantalon."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le maître salue le papa.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " maître salue "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " papa."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le maître échappe à la pluie avec Pauline.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " maître échappe à "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " pluie avec Pauline."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le papa choisit la poche avec Paul.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " papa choisit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " poche avec Paul."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la voisine partage la poire pour Papa.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " voisine partage "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " poire pour Papa."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, la professeure utilise le poivron avec Pauline.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " professeure utilise "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " poivron avec Pauline."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le voisin porte le pull, et Paul est content pour Pauline.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " voisin porte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pull, et Paul est content pour Pauline."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le médecin goûte la pâte, parce que Pauline part pour Paris.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " médecin goûte "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " pâte, parce que Pauline part pour Paris."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand le directeur se lave avant le repas, parce que Pauline part pour Paris.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " directeur se lave avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, parce que Pauline part pour Paris."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le directeur voit le sapin, et Paul est content pour Pauline.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " directeur voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sapin, et Paul est content pour Pauline."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La grand-mère déchire le papier.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " grand-mère déchire "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " papier."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le collègue pédale dans le parc.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " collègue pédale dans "
-        },
+      "variants": [
         {
-          "blank": "le"
-        },
-        {
-          "t": " parc."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Paul utilise la pile bien.",
-      "parts": [
-        {
-          "t": "Paul utilise "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " pile bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La factrice prend le pingouin.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " factrice prend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pingouin."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La professeure nage dans la piscine.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " professeure nage dans "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " piscine."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La fille contourne la place avec Pauline.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " fille contourne "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " place avec Pauline."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la factrice choisit la pomme avec Pauline.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " factrice choisit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " pomme avec Pauline."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le jardinier construit le pont avec Pauline.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardinier construit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pont avec Pauline."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la grand-mère peint la porte avec Paul.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " grand-mère peint "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " porte avec Paul."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le collègue soigne la poule pour Papa.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " collègue soigne "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " poule pour Papa."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le garçon commence la poupée avec Paul.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garçon commence "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " poupée avec Paul."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, la jardinière cherche le printemps avec Paul.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " jardinière cherche "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " printemps avec Paul."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la cuisinière mange la soupe, et Paul est content pour Pauline.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cuisinière mange "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " soupe, et Paul est content pour Pauline."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la directrice saute sur le tapis, parce que Pauline part pour Paris.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " directrice saute sur "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " tapis, parce que Pauline part pour Paris."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le cousin allume la lampe, et Paul est content pour Pauline.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cousin allume "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " lampe, et Paul est content pour Pauline."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la boulangère coupe le pain, parce que Pauline part pour Paris.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boulangère coupe "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pain, parce que Pauline part pour Paris."
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Pauline prépare une soupe d’asperges avec des pommes de terre."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "Ce matin, quand la fille repasse le pantalon, parce que Pauline part pour Paris.",
-      "parts": [
+      "word": "week-end",
+      "variants": [
         {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " fille repasse "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pantalon, parce que Pauline part pour Paris."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le garçon remercie le papa, et Paul est content pour Pauline.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garçon remercie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " papa, et Paul est content pour Pauline."
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Pierre passe le week-end à la campagne avec ses parents."
+          ]
         }
-      ]
-    }
-  ],
-  "type12": [
-    {
-      "level": "a1",
-      "sentence": "Philippe allume la lampe bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La boulangère sent le pain avec Paul."
-    },
-    {
-      "level": "a1",
-      "sentence": "La musicienne repasse le pantalon."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le maître salue le papa."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le maître échappe à la pluie avec Pauline."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le papa choisit la poche avec Paul."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la voisine partage la poire pour Papa."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, la professeure utilise le poivron avec Pauline."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le voisin porte le pull, et Paul est content pour Pauline."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le médecin goûte la pâte, parce que Pauline part pour Paris."
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand le directeur se lave avant le repas, parce que Pauline part pour Paris."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le directeur voit le sapin, et Paul est content pour Pauline."
-    }
-  ],
-  "type14": [
-    {
-      "level": "a1",
-      "sentence": "La grand-mère déchire le papier."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le collègue pédale dans le parc."
-    },
-    {
-      "level": "a1",
-      "sentence": "Paul utilise la pile bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La factrice prend le pingouin."
-    },
-    {
-      "level": "a1",
-      "sentence": "La professeure nage dans la piscine."
-    },
-    {
-      "level": "a1",
-      "sentence": "La fille contourne la place avec Pauline."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la factrice choisit la pomme avec Pauline."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le jardinier construit le pont avec Pauline."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la grand-mère peint la porte avec Paul."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le collègue soigne la poule pour Papa."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le garçon commence la poupée avec Paul."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, la jardinière cherche le printemps avec Paul."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la cuisinière mange la soupe, et Paul est content pour Pauline."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la directrice saute sur le tapis, parce que Pauline part pour Paris."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le cousin allume la lampe, et Paul est content pour Pauline."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la boulangère coupe le pain, parce que Pauline part pour Paris."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la fille repasse le pantalon, parce que Pauline part pour Paris."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le garçon remercie le papa, et Paul est content pour Pauline."
-    }
-  ],
-  "type12Stories": [
-    {
-      "level": "a2",
-      "sentences": [
-        "Papa et Paul partent au parc.",
-        "Paul met du pain dans sa poche.",
-        "Il porte aussi une pomme et une poire.",
-        "Au parc, la pluie commence.",
-        "Ils se mettent sous le pont.",
-        "Papa ouvre la porte d’un abri.",
-        "Paul mange le pain et la pomme.",
-        "Puis la pluie s’arrête.",
-        "Ils rentrent pour le repas du soir."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Pauline prépare un repas simple pour papa.",
-        "Elle sort le pain, la pomme et un poivron.",
-        "Sur la table, elle pose du papier et une pile de recettes.",
-        "Papa arrive du parc, trempé par la pluie.",
-        "Il laisse son pull et son pantalon près de la porte.",
-        "Pauline allume la lampe et ouvre la soupe.",
-        "Pendant le repas, ils parlent de la piscine et du printemps.",
-        "Papa range ensuite le papier dans sa poche.",
-        "Avant de dormir, Pauline ferme la porte du salon."
-      ]
-    },
-    {
-      "level": "a2",
-      "sentences": [
-        "Pierre joue au parc avec une poule en peluche.",
-        "Il met une poupée dans sa poche.",
-        "Papa lui donne du pain et une pomme.",
-        "La pluie tombe sur la place.",
-        "Ils courent sous le pont.",
-        "Pierre frappe à la porte d’un abri.",
-        "Papa ouvre et sourit.",
-        "Ils mangent la poire en attendant.",
-        "Puis ils rentrent pour la soupe."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Au printemps, Pauline emmène Paul à la piscine.",
-        "Paul met son pantalon, son pull et une pile dans le sac.",
-        "Sur le papier d’inscription, papa signe près de la porte.",
-        "Après la piscine, ils passent au parc malgré la pluie légère.",
-        "Paul mange une pomme, Pauline une poire, papa du pain.",
-        "Ils s’abritent un moment sous le pont.",
-        "Sur la place, une poule traverse et les fait rire.",
-        "Le soir, Pauline prépare une soupe au poivron.",
-        "Après le repas, Paul range le papier dans sa poche."
-      ]
-    },
-    {
-      "level": "a2",
-      "sentences": [
-        "Papa achète du pain à la boulangerie.",
-        "Paul choisit une pomme et une poire.",
-        "Ils marchent jusqu’au parc.",
-        "La place est pleine de monde.",
-        "Paul met le pain dans sa poche.",
-        "Une pluie fine commence.",
-        "Ils passent sous le pont.",
-        "Papa ouvre la porte de la maison.",
-        "Le repas est prêt : soupe et pain."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Pauline peint une porte avec papa un après-midi de printemps.",
-        "Sur le papier au sol, ils posent le pantalon et le pull tachés.",
-        "Paul apporte une pile, une lampe et une pomme pour la pause.",
-        "Dehors, la pluie frappe la place et le parc.",
-        "Ils boivent une soupe chaude près de la fenêtre.",
-        "Papa raconte une histoire de pingouin et de poule.",
-        "Pauline rit et range le pinceau dans sa poche.",
-        "Quand la pluie cesse, ils vont jusqu’au pont.",
-        "Le soir, après le repas, Pauline ferme la porte à clé."
-      ]
-    },
-    {
-      "level": "a2",
-      "sentences": [
-        "Paul met une poupée près de la porte.",
-        "Papa lit le journal sur du papier.",
-        "Il mange du pain et une pomme.",
-        "Paul veut aller au parc.",
-        "La pluie tombe encore un peu.",
-        "Ils prennent un pull et partent.",
-        "Sur la place, Paul voit une poule.",
-        "Sous le pont, ils attendent.",
-        "Puis ils rentrent pour le repas."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Papa prépare un pique-nique pour la place du village.",
-        "Pauline coupe du pain, une pomme, une poire et un poivron.",
-        "Paul glisse une pile et du papier dans la poche du sac.",
-        "Au parc, le printemps sent bon malgré un peu de pluie.",
-        "Ils s’installent sous le pont un moment, puis ressortent.",
-        "Une poule s’approche, attirée par le pain.",
-        "Papa raconte une blague sur un pingouin à la piscine.",
-        "Après le repas, Pauline range les restes près de la porte.",
-        "Le soir, Paul pose son pantalon humide sur le radiateur."
-      ]
-    },
-    {
-      "level": "a2",
-      "sentences": [
-        "Pierre porte un pull et un pantalon.",
-        "Il met une pomme dans sa poche.",
-        "Papa ouvre la porte du garage.",
-        "Ils vont au parc à pied.",
-        "Sur la place, il y a une poule.",
-        "La pluie commence tout à coup.",
-        "Ils courent sous le pont.",
-        "Pierre mange du pain en attendant.",
-        "Puis ils rentrent pour la soupe."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Au printemps, Paul aide papa à réparer la porte du parc.",
-        "Ils posent du papier au sol et une pile pour la visseuse.",
-        "Pauline apporte du pain, une pomme et une poire pour le repas.",
-        "La pluie arrive, alors ils se mettent sous le pont.",
-        "Papa porte un pull ; Paul a mis un pantalon chaud.",
-        "Sur la place, une poule picore près d’une poupée oubliée.",
-        "Quand la pluie cesse, ils finissent la porte ensemble.",
-        "Le soir, Pauline sert une soupe au poivron.",
-        "Après le repas, Paul range le papier dans sa poche."
-      ]
-    }
-  ],
-  "type14Stories": [
-    {
-      "level": "a2",
-      "sentences": [
-        "Papa prépare le pain le matin.",
-        "Paul met une pomme dans sa poche.",
-        "Il prend aussi une poire.",
-        "Ils partent ensemble vers le parc.",
-        "Sur la place, Paul voit une poule.",
-        "La pluie commence à tomber.",
-        "Papa ouvre un parapluie.",
-        "Ils courent sous le pont.",
-        "Paul mange le pain en attendant.",
-        "Puis la pluie s’arrête.",
-        "Ils rentrent et ouvrent la porte.",
-        "Pauline a préparé une soupe.",
-        "Le repas est simple et bon.",
-        "Papa pose le papier sur la table.",
-        "Paul range son pull.",
-        "Il enlève son pantalon mouillé.",
-        "Pauline allume la lampe.",
-        "Paul parle de la piscine.",
-        "Le soir, tout le monde se couche."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Au printemps, Pauline organise un repas au parc pour papa et Paul.",
-        "Elle prépare du pain, une pomme, une poire et un poivron grillé.",
-        "Paul glisse une pile, du papier et une poupée dans le sac.",
-        "Sur la place, la pluie menace déjà derrière les nuages.",
-        "Ils s’installent un moment sous le pont, près de la porte d’un local.",
-        "Papa raconte une histoire de pingouin à la piscine.",
-        "Une poule s’approche et picore une miette de pain.",
-        "Quand la pluie cesse, ils sortent au soleil du printemps.",
-        "Paul mange la pomme pendant que Pauline coupe la poire.",
-        "Papa boit la soupe thermos et sourit.",
-        "Sur le chemin du retour, Paul range le papier dans sa poche.",
-        "À la maison, il enlève son pull et son pantalon humides.",
-        "Pauline allume la lampe près de la porte.",
-        "Ils parlent encore de la place et du parc.",
-        "Papa pose une note sur le papier du frigo.",
-        "Paul range la poupée dans sa chambre.",
-        "Le soir, après le repas, tout devient calme.",
-        "Pauline ferme la porte du salon.",
-        "Paul s’endort en pensant à la piscine."
-      ]
-    },
-    {
-      "level": "a2",
-      "sentences": [
-        "Pierre veut aller à la piscine.",
-        "Papa prépare le pull et le pantalon.",
-        "Pauline donne du pain et une pomme.",
-        "Pierre met la poire dans sa poche.",
-        "Sur la place, il y a un peu de pluie.",
-        "Ils passent sous le pont.",
-        "Puis ils ouvrent la porte de la piscine.",
-        "Pierre nage et rit beaucoup.",
-        "Papa regarde l’heure sur le papier d’entrée.",
-        "Après, ils vont au parc.",
-        "Une poule marche près du banc.",
-        "Pierre mange le pain restant.",
-        "Pauline parle d’une poupée perdue.",
-        "Ils rentrent avant la grosse pluie.",
-        "À la maison, la soupe est prête.",
-        "Le repas sent le poivron.",
-        "Pierre range sa pile dans le tiroir.",
-        "Papa ferme la porte.",
-        "Tout le monde se repose."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Papa et Pauline peignent la porte de la cuisine au printemps.",
-        "Paul étale du papier au sol et prépare une pile neuve.",
-        "Dehors, la pluie mouille la place et ferme le parc.",
-        "Ils mettent un pull et un pantalon de travail.",
-        "À la pause, Pauline sert du pain, une pomme et une poire.",
-        "Papa raconte une blague sur une poule et un pingouin.",
-        "Paul rit et range le pinceau dans sa poche.",
-        "Quand la pluie faiblit, ils ouvrent la fenêtre sur le pont.",
-        "Le soir, Pauline prépare une soupe au poivron.",
-        "Après le repas, Paul écrit une liste sur le papier.",
-        "Il note : piscine, parc, pain, piles.",
-        "Papa signe en bas de la page.",
-        "Pauline allume la lampe près de la porte.",
-        "Paul pose sa poupée préférée sur la chaise.",
-        "Ils parlent encore du printemps et des projets.",
-        "Avant de dormir, papa vérifie la porte.",
-        "Paul range son pantalon.",
-        "Pauline éteint la lampe.",
-        "La maison reste calme sous la pluie fine."
-      ]
-    },
-    {
-      "level": "a2",
-      "sentences": [
-        "Paul met du pain dans sa poche.",
-        "Il prend une pomme et une poire.",
-        "Papa ouvre la porte.",
-        "Ils vont au parc à pied.",
-        "Sur la place, Paul voit une poule.",
-        "La pluie tombe tout à coup.",
-        "Ils courent sous le pont.",
-        "Papa partage le pain.",
-        "Paul mange la pomme.",
-        "Puis ils rentrent à la maison.",
-        "Pauline a fait une soupe.",
-        "Le repas est prêt.",
-        "Paul pose le papier sur la table.",
-        "Il range son pull mouillé.",
-        "Papa change de pantalon.",
-        "Pauline parle de la piscine.",
-        "Paul veut y aller au printemps.",
-        "Le soir, papa ferme la porte.",
-        "Paul s’endort vite."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Pauline écrit sur un papier le menu du repas de printemps.",
-        "Elle prévoit du pain, une soupe au poivron, une pomme et une poire.",
-        "Papa revient du parc avec Paul, trempés par la pluie.",
-        "Ils laissent pull et pantalon près de la porte.",
-        "Paul sort une pile de sa poche pour la radio.",
-        "Pendant le repas, ils parlent de la piscine et de la place.",
-        "Papa imite une poule, puis un pingouin, et tout le monde rit.",
-        "Pauline range le papier du menu dans un tiroir.",
-        "Après le café, la pluie s’arrête enfin.",
-        "Ils marchent jusqu’au pont pour voir l’eau monter.",
-        "Sur le chemin du parc, Paul ramasse une poupée oubliée.",
-        "Il la met dans sa poche avec soin.",
-        "À la maison, papa ouvre la porte et allume la lampe.",
-        "Pauline prépare encore un peu de pain grillé.",
-        "Paul pose la poupée près de son lit.",
-        "Ils regardent le printemps par la fenêtre.",
-        "Avant la nuit, papa vérifie les piles de la lampe.",
-        "Pauline ferme la porte du salon.",
-        "Paul s’endort, la poche encore pleine de miettes."
-      ]
-    },
-    {
-      "level": "a2",
-      "sentences": [
-        "Papa coupe une pomme et une poire.",
-        "Pauline prépare le pain et la soupe.",
-        "Paul met une pile dans la radio.",
-        "Ils écoutent de la musique.",
-        "Puis ils partent au parc.",
-        "Sur la place, il y a une poule.",
-        "La pluie commence doucement.",
-        "Ils se mettent sous le pont.",
-        "Paul mange le pain de sa poche.",
-        "Papa ouvre la porte de l’abri.",
-        "Pauline parle de la piscine.",
-        "Paul veut y aller au printemps.",
-        "Quand la pluie cesse, ils rentrent.",
-        "Le repas attend sur la table.",
-        "Paul range son pull.",
-        "Papa change de pantalon.",
-        "Pauline pose le papier des courses.",
-        "Paul ferme la porte.",
-        "Tout le monde va dormir."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Un jour de printemps, papa emmène Paul et Pauline au parc.",
-        "Dans le sac : pain, pomme, poire, papier, pile et une poupée.",
-        "Sur la place, une poule marche comme si elle était chez elle.",
-        "La pluie arrive, alors ils courent sous le pont.",
-        "Papa ouvre la porte d’un local et ils s’abritent.",
-        "Paul mange la pomme pendant que Pauline coupe la poire.",
-        "Ils parlent de la piscine, du pantalon neuf et du pull perdu.",
-        "Quand le ciel s’éclaircit, ils ressortent sur la place.",
-        "Papa photographie le pont et le parc encore mouillés.",
-        "Le soir, Pauline prépare une soupe au poivron.",
-        "Après le repas, Paul range le papier dans sa poche.",
-        "Il pose la pile près de la lampe.",
-        "Papa ferme la porte et vérrouille.",
-        "Pauline plie le pull séché.",
-        "Paul range son pantalon.",
-        "Ils rient encore de la poule du parc.",
-        "Avant de dormir, Paul pose la poupée sur l’oreiller.",
-        "La pluie reprend tout bas.",
-        "La maison reste chaude et calme."
-      ]
-    },
-    {
-      "level": "a2",
-      "sentences": [
-        "Pauline ouvre la porte le matin.",
-        "Papa prépare le pain du petit déjeuner.",
-        "Paul prend une pomme dans sa poche.",
-        "Il veut aussi une poire.",
-        "Ils vont d’abord à la place.",
-        "Puis ils entrent dans le parc.",
-        "Une poule traverse le chemin.",
-        "La pluie commence sans bruit.",
-        "Ils courent sous le pont.",
-        "Papa partage le pain.",
-        "Pauline parle de la piscine.",
-        "Paul rêve du printemps.",
-        "À la maison, la soupe est chaude.",
-        "Le repas sent le poivron.",
-        "Paul pose du papier sur la table.",
-        "Il range une pile dans le tiroir.",
-        "Papa change de pull.",
-        "Pauline ferme la porte.",
-        "Ils se couchent tôt."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Pauline et papa prévoient un grand ménage de printemps.",
-        "Paul doit ranger le papier, les piles et les pulls.",
-        "Ils commencent par la porte du garage, puis le pont de jouets.",
-        "Dehors, la pluie mouille le parc et la place.",
-        "À midi, le repas est simple : pain, soupe, pomme et poire.",
-        "Papa met un pantalon de travail et un vieux pull.",
-        "Pauline coupe un poivron pour le soir.",
-        "Paul raconte qu’il a vu une poule et une poupée au parc.",
-        "Quand la pluie s’arrête, ils sortent vérifier la porte.",
-        "Sur le chemin, Paul glisse une pile dans sa poche.",
-        "Ils passent sous le pont pour éviter les flaques.",
-        "Le soir, Pauline allume la lampe près de la table.",
-        "Papa lit le papier des courses à voix haute.",
-        "Paul parle encore de la piscine du printemps.",
-        "Après le repas, ils rangent tout en silence.",
-        "Pauline ferme la porte du salon.",
-        "Papa pose son pull sur la chaise.",
-        "Paul s’endort, une pomme oubliée sur la table.",
-        "La pluie chante dehors toute la nuit."
       ]
     }
   ]

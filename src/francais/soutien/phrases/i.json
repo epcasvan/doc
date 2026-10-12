@@ -1,7229 +1,941 @@
 {
-  "type9": [
+  "son": "i",
+  "phrases": [
     {
-      "level": "a1",
       "word": "ami",
-      "sentence": "Nina photographie un ami bien."
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Mon ami Michel arrive ici."
+          ]
+        },
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Je vais goûter et jouer chez mon ami."
+          ]
+        },
+        {
+          "level": "a2",
+          "sentences": [
+            "Mon ami Eric habite près de Nice et il visite Lyon."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Sophie joue du xylophone avec son ami Philippe."
+          ]
+        },
+        {
+          "level": "b1",
+          "sentences": [
+            "Mon ami Dimitri invite Lili et Mia à dîner, mais ils arrivent tard."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "basilic",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Le basilic de Lili est joli."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Mimi cultive du basilic dans un petit pot près de la cuisine."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "plur",
+          "sentences": [
+            "Michel cultive du basilic et du persil dans son jardin et Lili les vend."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "biberon",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Le biberon de Mimi est vide."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Cécile chauffe le biberon de Mimi dans la cuisine."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Le soir, Cécile prépare un biberon pour Mimi, puis elle lit une histoire à Lili."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "bijou",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Le bijou de Lili brille."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Cécile offre un joli bijou à sa copine Mimi pour son anniversaire."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Dimitri vend un bijou ancien à Nicolas, mais Lili préfère un petit bijou rigolo."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "bille",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Mimi a une bille rouge."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Dans la cour, Mimi lance sa bille vers Cyril qui sourit."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "plur",
+          "sentences": [
+            "À midi, Mimi et Cyril jouent aux billes et Lili compte les points."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "billet",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Mimi achète un billet de train."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Cyril prend un billet de bus pour aller à Nice avec Mimi."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Mimi a acheté un billet de train à Lille, mais Cyril a oublié son billet."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "briquet",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Le briquet de Lili brille."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Cyril cherche son briquet dans le tiroir de la cuisine."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Mimi trouve un briquet dans le tiroir et Lili dit qu’il est vide."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "brocoli",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Lili cuit du brocoli ici."
+          ]
+        },
+        {
+          "level": "a2",
+          "sentences": [
+            "Mimi cuisine du brocoli et du riz, puis Cyril dit merci."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Dimitri mange du brocoli à midi, mais Lili préfère le riz avec du fromage."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "cahier",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Le cahier de Lili est joli."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Mimi écrit son prénom sur le cahier de Cyril qui sourit."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Lili range son cahier dans le tiroir, mais Cyril oublie le sien sur la chaise."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "canari",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Le canari de Lili chante."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "plur",
+          "sentences": [
+            "Mimi nourrit son canari avec du riz et des graines à midi."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Le canari de Cyril chante très joliment dès midi, mais Lili dit qu’il crie."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "cerise",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Mimi mange une cerise rouge."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Cyril pose une cerise sur le gâteau de Mimi et de Lili."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Dans le jardin de Lili, il y a une cerise que Mimi cueille avec Cyril."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "cerisier",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Le cerisier de Lili est joli."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Au printemps, le cerisier de Mimi a des fleurs roses."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Mimi cueille des cerises dans le cerisier de Cyril, puis Lili fait une tarte."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "chemise",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "La chemise de Mimi est jolie."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Cyril lave la chemise de Lili avant midi, puis il la repasse.",
+            "Emilie repasse la chemise de Cyril dans la petite cuisine."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Mimi a mis une chemise blanche pour aller à son premier rendez-vous avec Cyril."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "chien",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Le chien et le chiot sont dans la niche.",
+            "Mon chien est un joyeux compagnon."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Combien vois-tu de chiens dans le jardin ?",
+            "Je tiens mon chien en laisse ; il voudrais bien courir seul."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "citron",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Le citron de Mimi est vert."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Cécile et Cyril achètent une glace au citron.",
+            "Lili presse un citron dans l’eau de Mimi et de Cyril."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Cyril ajoute du citron dans la soupe de Lili, mais Mimi n’aime pas."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "cookie",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Mimi mange un cookie ici."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Cyril achète un cookie à midi pour Mimi et pour Lili."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Lili a fait un cookie pour Mimi, mais Cyril l’a mangé avant midi."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "crocodile",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Le crocodile de Mimi est vert."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Au zoo, Mimi et Cyril visitent le crocodile avec Lili."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Mimi dessine un crocodile, et Cyril dit qu’il ressemble à un lézard."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "Cyril",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Cyril met sa chemise à midi."
+          ]
+        },
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Il y a des lys et des cygnes chez Cyril."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Cécile et Cyril achètent une glace au citron."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "épinard",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Lili cuisine l’épinard de Mimi."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Cyril lit la recette et il cuit l’épinard dans du riz."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Mimi achète un épinard frais pour Cyril, mais Lili dit qu’elle préfère le riz."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "escaliers",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "plur",
+          "sentences": [
+            "Les escaliers de Lili brillent."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "plur",
+          "sentences": [
+            "Cyril monte les escaliers et Mimi attend dans le hall."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "plur",
+          "sentences": [
+            "Dans l’immeuble de Lili, les escaliers sont raides, alors Mimi prend l’ascenseur."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "fille",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "La fille de Lili est jolie.",
+            "La fille déguste une glace à la vanille."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Ma fille Mimi dessine un lapin sur la table de Cyril."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "La fille de Cyril sourit à midi, mais Lili dit qu’elle est timide."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "ami",
-      "sentence": "Ce matin, le maître attend un ami avec Nina."
-    },
-    {
-      "level": "b1",
-      "word": "ami",
-      "sentence": "Ce matin, quand la factrice téléphone à un ami, et Nina part très vite aussi."
-    },
-    {
-      "level": "a1",
-      "word": "autrichien",
-      "sentence": "Le cuisinier trouve un autrichien."
-    },
-    {
-      "level": "a2",
-      "word": "autrichien",
-      "sentence": "Ce soir, la musicienne prend un autrichien ici vite."
-    },
-    {
-      "level": "b1",
-      "word": "autrichien",
-      "sentence": "Ce matin, quand le garçon utilise un autrichien, parce que Kim finit ici."
-    },
-    {
-      "level": "a1",
-      "word": "biche",
-      "sentence": "Le papa observe la biche bien."
-    },
-    {
-      "level": "a2",
-      "word": "biche",
-      "sentence": "À midi, le cousin attrape la biche fini ici."
-    },
-    {
-      "level": "b1",
-      "word": "biche",
-      "sentence": "Ce matin, quand la grand-mère caresse la biche, et Nina part très vite aussi."
-    },
-    {
-      "level": "a1",
-      "word": "boucherie",
-      "sentence": "La tante aime la boucherie bien."
-    },
-    {
-      "level": "a2",
-      "word": "boucherie",
-      "sentence": "Ce soir, la grand-mère aime la boucherie fini ici."
-    },
-    {
-      "level": "b1",
-      "word": "boucherie",
-      "sentence": "Ce matin, quand la boulangère aime la boucherie, et Nina part très vite aussi."
-    },
-    {
-      "level": "a1",
-      "word": "bouillir",
-      "sentence": "Un ami cherche le bouillir."
-    },
-    {
-      "level": "a2",
-      "word": "bouillir",
-      "sentence": "Avant le repas, la cousine pose le bouillir avec Nina."
-    },
-    {
-      "level": "b1",
-      "word": "bouillir",
-      "sentence": "Ce matin, quand le jardinier montre le bouillir, et Nina part très vite aussi."
-    },
-    {
-      "level": "a1",
-      "word": "boulangerie",
-      "sentence": "La jardinière aime la boulangerie."
-    },
-    {
-      "level": "a2",
-      "word": "boulangerie",
-      "sentence": "Après le cours, le jardinier aime la boulangerie avec Nina."
-    },
-    {
-      "level": "b1",
-      "word": "boulangerie",
-      "sentence": "Ce matin, quand la directrice aime la boulangerie, et Nina part très vite aussi."
-    },
-    {
-      "level": "a1",
-      "word": "buanderie",
-      "sentence": "La professeure nettoie la buanderie bien."
-    },
-    {
-      "level": "a2",
-      "word": "buanderie",
-      "sentence": "Avant le repas, le professeur nettoie la buanderie ici vite."
-    },
-    {
-      "level": "b1",
-      "word": "buanderie",
-      "sentence": "Ce matin, quand la sœur nettoie la buanderie, parce que Kim finit ici."
-    },
-    {
-      "level": "a1",
-      "word": "cantine",
-      "sentence": "Le boulanger mange à la cantine bien."
-    },
-    {
-      "level": "a2",
-      "word": "cantine",
-      "sentence": "Ce matin, le médecin mange à la cantine fini ici."
-    },
-    {
-      "level": "b1",
-      "word": "cantine",
-      "sentence": "Ce matin, quand la collègue mange à la cantine, et Nina part très vite aussi."
-    },
-    {
-      "level": "a1",
-      "word": "chimie",
-      "sentence": "La maîtresse prend la chimie."
-    },
-    {
-      "level": "a2",
-      "word": "chimie",
-      "sentence": "Après le cours, le cuisinier utilise la chimie avec Nina."
-    },
-    {
-      "level": "b1",
-      "word": "chimie",
-      "sentence": "Ce matin, quand la musicienne range la chimie, et Nina part très vite aussi."
-    },
-    {
-      "level": "a1",
-      "word": "chinois",
-      "sentence": "Le directeur trouve le chinois."
-    },
-    {
-      "level": "a2",
-      "word": "chinois",
-      "sentence": "Avant le repas, le papa prend le chinois ici vite."
-    },
-    {
-      "level": "b1",
-      "word": "chinois",
-      "sentence": "Ce matin, quand le cousin utilise le chinois, parce que Kim finit ici."
-    },
-    {
-      "level": "a1",
-      "word": "chirurgien",
-      "sentence": "Le frère montre le chirurgien."
-    },
-    {
-      "level": "a2",
-      "word": "chirurgien",
-      "sentence": "Ce matin, la tante trouve le chirurgien fini ici."
-    },
-    {
-      "level": "b1",
-      "word": "chirurgien",
-      "sentence": "Ce matin, quand le facteur prend le chirurgien, et Nina part très vite aussi."
-    },
-    {
-      "level": "a1",
-      "word": "ciel",
-      "sentence": "Le collègue pose le ciel bien."
-    },
-    {
-      "level": "a2",
-      "word": "ciel",
-      "sentence": "Ce soir, un ami montre le ciel dans le lit."
-    },
-    {
-      "level": "b1",
-      "word": "ciel",
-      "sentence": "Ce matin, quand la cousine trouve le ciel, parce que Kim finit ici."
-    },
-    {
-      "level": "a1",
-      "word": "comprimé",
-      "sentence": "La copine cherche le comprimé."
-    },
-    {
-      "level": "a2",
-      "word": "comprimé",
-      "sentence": "À midi, la jardinière pose le comprimé avec Nina."
-    },
-    {
-      "level": "b1",
-      "word": "comprimé",
-      "sentence": "Ce matin, quand Kim montre le comprimé, et Nina part très vite aussi."
-    },
-    {
-      "level": "a1",
-      "word": "cousine",
-      "sentence": "Tim écrit à la cousine."
-    },
-    {
-      "level": "a2",
-      "word": "cousine",
-      "sentence": "Après le cours, la professeure invite la cousine ici vite."
-    },
-    {
-      "level": "b1",
-      "word": "cousine",
-      "sentence": "Ce matin, quand Kim écrit à la cousine, parce que Kim finit ici."
-    },
-    {
-      "level": "a1",
-      "word": "criquet",
-      "sentence": "Le grand-père range le criquet bien."
-    },
-    {
-      "level": "a2",
-      "word": "criquet",
-      "sentence": "Avant le repas, le boulanger oublie le criquet fini ici."
-    },
-    {
-      "level": "b1",
-      "word": "criquet",
-      "sentence": "Ce matin, quand Nina cherche le criquet, et Nina part très vite aussi."
-    },
-    {
-      "level": "a1",
-      "word": "cuisiner",
-      "sentence": "Iris utilise le cuisiner bien."
-    },
-    {
-      "level": "a2",
-      "word": "cuisiner",
-      "sentence": "Ce matin, la maîtresse range le cuisiner dans le lit."
-    },
-    {
-      "level": "b1",
-      "word": "cuisiner",
-      "sentence": "Ce matin, quand le cuisinier oublie le cuisiner, parce que Kim finit ici."
-    },
-    {
-      "level": "a1",
-      "word": "cuisinier",
-      "sentence": "La cuisinière prend le cuisinier."
-    },
-    {
-      "level": "a2",
-      "word": "cuisinier",
-      "sentence": "Ce soir, le directeur utilise le cuisinier avec Nina."
-    },
-    {
-      "level": "b1",
-      "word": "cuisinier",
-      "sentence": "Ce matin, quand le papa range le cuisinier, et Nina part très vite aussi."
-    },
-    {
-      "level": "a1",
-      "word": "cuisinière",
-      "sentence": "La maman trouve la cuisinière."
-    },
-    {
-      "level": "a2",
-      "word": "cuisinière",
-      "sentence": "À midi, le frère prend la cuisinière ici vite."
-    },
-    {
-      "level": "b1",
-      "word": "cuisinière",
-      "sentence": "Ce matin, quand la tante utilise la cuisinière, parce que Kim finit ici."
-    },
-    {
-      "level": "a1",
-      "word": "dentiste",
-      "sentence": "Le bébé montre la dentiste bien."
-    },
-    {
-      "level": "a2",
-      "word": "dentiste",
-      "sentence": "Après le cours, le collègue trouve la dentiste fini ici."
-    },
-    {
-      "level": "b1",
-      "word": "dentiste",
-      "sentence": "Ce matin, quand un ami prend la dentiste, et Nina part très vite aussi."
-    },
-    {
-      "level": "a1",
-      "word": "direction",
-      "sentence": "Une amie pose la direction."
-    },
-    {
-      "level": "a2",
-      "word": "direction",
-      "sentence": "Avant le repas, la copine montre la direction dans le lit."
-    },
-    {
-      "level": "b1",
-      "word": "direction",
-      "sentence": "Ce matin, quand la jardinière trouve la direction, parce que Kim finit ici."
-    },
-    {
-      "level": "a1",
-      "word": "enregistrement",
-      "sentence": "Le musicien cherche un enregistrement."
-    },
-    {
-      "level": "a2",
-      "word": "enregistrement",
-      "sentence": "À midi, le copain oublie un enregistrement fini ici."
-    },
-    {
-      "level": "b1",
-      "word": "enregistrement",
-      "sentence": "Ce matin, quand la professeure montre un enregistrement, et Nina part très vite aussi."
-    },
-    {
-      "level": "a1",
-      "word": "fiancé",
-      "sentence": "Le voisin oublie le fiancé."
-    },
-    {
-      "level": "a2",
-      "word": "fiancé",
-      "sentence": "Ce soir, le grand-père cherche le fiancé ici vite."
-    },
-    {
-      "level": "b1",
-      "word": "fiancé",
-      "sentence": "Ce matin, quand le boulanger pose le fiancé, parce que Kim finit ici."
-    },
-    {
-      "level": "a1",
-      "word": "film",
-      "sentence": "La boulangère regarde le film bien."
-    },
-    {
-      "level": "a2",
-      "word": "film",
-      "sentence": "À midi, Iris choisit le film fini ici."
-    },
-    {
-      "level": "b1",
-      "word": "film",
-      "sentence": "Ce matin, quand le boulanger regarde le film, et Nina part très vite aussi."
-    },
-    {
-      "level": "a1",
-      "word": "fièvre",
-      "sentence": "La voisine utilise la fièvre."
-    },
-    {
-      "level": "a2",
-      "word": "fièvre",
-      "sentence": "Après le cours, la cuisinière range la fièvre dans le lit."
-    },
-    {
-      "level": "b1",
-      "word": "fièvre",
-      "sentence": "Ce matin, quand le directeur oublie la fièvre, parce que Kim finit ici."
-    },
-    {
-      "level": "a1",
       "word": "fourmi",
-      "sentence": "La directrice prend le fourmi."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "La fourmi de Lili marche."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Mimi voit une fourmi qui marche sur le sucre de Cyril."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Dans la cuisine de Lili, une fourmi traverse le riz, puis Mimi la sort ici."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "fourmi",
-      "sentence": "Avant le repas, la maman utilise le fourmi avec Nina."
+      "word": "frigo",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Le frigo de Lili est vide."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Mimi a mis du riz dans le frigo de Cyril."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Le frigo de Lili est vide, alors Mimi file acheter du riz au marché."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "fourmi",
-      "sentence": "Ce matin, quand le frère range le fourmi, et Nina part très vite aussi."
+      "word": "girafe",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "La girafe de Lili est jolie."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Au zoo, Mimi dit qu’elle adore la girafe de Cyril."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Mimi dessine une girafe sur le mur de la chambre de Lili, mais Cyril rit."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
-      "word": "frire",
-      "sentence": "La sœur trouve la frire bien."
-    },
-    {
-      "level": "a2",
-      "word": "frire",
-      "sentence": "Ce matin, le bébé prend la frire ici vite."
-    },
-    {
-      "level": "b1",
-      "word": "frire",
-      "sentence": "Ce matin, quand le collègue utilise la frire, parce que Kim finit ici."
-    },
-    {
-      "level": "a1",
-      "word": "frisé",
-      "sentence": "La collègue montre le frisé bien."
-    },
-    {
-      "level": "a2",
-      "word": "frisé",
-      "sentence": "Ce soir, une amie trouve le frisé fini ici."
-    },
-    {
-      "level": "b1",
-      "word": "frisé",
-      "sentence": "Ce matin, quand la copine prend le frisé, et Nina part très vite aussi."
-    },
-    {
-      "level": "a1",
-      "word": "février",
-      "sentence": "La factrice pose le février."
-    },
-    {
-      "level": "a2",
-      "word": "février",
-      "sentence": "À midi, le musicien montre le février dans le lit."
-    },
-    {
-      "level": "b1",
-      "word": "février",
-      "sentence": "À midi, quand Tim trouve le février fini ici, parce que Kim finit ici."
-    },
-    {
-      "level": "a1",
-      "word": "gentil",
-      "sentence": "Le garçon cherche le gentil bien."
-    },
-    {
-      "level": "a2",
-      "word": "gentil",
-      "sentence": "Ce matin, le boulanger oublie le gentil fini ici."
-    },
-    {
-      "level": "b1",
-      "word": "gentil",
-      "sentence": "Ce matin, quand le grand-père montre le gentil, et Nina part très vite aussi."
-    },
-    {
-      "level": "a1",
-      "word": "grenier",
-      "sentence": "La grand-mère grimpe dans le grenier bien."
-    },
-    {
-      "level": "a2",
-      "word": "grenier",
-      "sentence": "À midi, le grand-père grimpe dans le grenier avec Nina."
-    },
-    {
-      "level": "b1",
-      "word": "grenier",
-      "sentence": "Ce matin, quand le boulanger grimpe dans le grenier, et Nina part très vite aussi."
-    },
-    {
-      "level": "a1",
-      "word": "grippe",
-      "sentence": "La fille range la grippe."
-    },
-    {
-      "level": "a2",
-      "word": "grippe",
-      "sentence": "Ce matin, la voisine oublie la grippe fini ici."
-    },
-    {
-      "level": "b1",
-      "word": "grippe",
-      "sentence": "Ce matin, quand la cuisinière cherche la grippe, et Nina part très vite aussi."
-    },
-    {
-      "level": "a1",
       "word": "gris",
-      "sentence": "Le jardinier utilise le gris."
+      "variants": [
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand Cyril choisit sa chemise, il aime le gris et Lili lui dit oui."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "gris",
-      "sentence": "Ce soir, la directrice range le gris dans le lit."
+      "word": "guitare",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "plur",
+          "sentences": [
+            "Léo a des guitares."
+          ]
+        },
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Cyril joue de la guitare ici."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Mimi apprend la guitare avec Cyril, qui joue très bien."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Le dimanche, Lili écoute Cyril qui joue de la guitare, et Mimi chante avec lui."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "gris",
-      "sentence": "Ce matin, quand la maman oublie le gris, parce que Kim finit ici."
+      "word": "hérisson",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Le hérisson de Lili dort."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Mimi voit un hérisson qui passe dans le jardin de Cyril."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Le hérisson de Lili a mangé du riz, mais Mimi dit qu’il a mal."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
-      "word": "guichet",
-      "sentence": "Le professeur prend le guichet bien."
+      "word": "histoire",
+      "variants": [
+        {
+          "level": "a2",
+          "number": "plur",
+          "sentences": [
+            "Exerce-toi à lire des histoires à ta sœur."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "guichet",
-      "sentence": "À midi, la sœur utilise le guichet avec Nina."
+      "word": "imperméable",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Albert a un imperméable vert."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "guichet",
-      "sentence": "Ce matin, quand le bébé range le guichet, et Nina part très vite aussi."
+      "word": "informaticien",
+      "variants": [
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Je voudrais être informaticien ou chirurgien."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
-      "word": "humide",
-      "sentence": "Le médecin trouve la humide bien."
+      "word": "italien",
+      "variants": [
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Olaf est Norvégien, Said est Algérien et moi, je suis Italien."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "humide",
-      "sentence": "Après le cours, la collègue prend la humide ici vite."
+      "word": "jolie",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Julie a acheté une jolie jupe jaune."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Cyril écrit une jolie mélodie pour Lili dans la petite cuisine."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "humide",
-      "sentence": "Ce matin, quand une amie utilise la humide, parce que Kim finit ici."
-    },
-    {
-      "level": "a1",
-      "word": "ibis",
-      "sentence": "Le maître montre un ibis."
-    },
-    {
-      "level": "a2",
-      "word": "ibis",
-      "sentence": "Avant le repas, la factrice trouve un ibis fini ici."
-    },
-    {
-      "level": "b1",
-      "word": "ibis",
-      "sentence": "Ce matin, quand le musicien prend un ibis, et Nina part très vite aussi."
-    },
-    {
-      "level": "a1",
-      "word": "ici",
-      "sentence": "Nina cherche un ici bien."
-    },
-    {
-      "level": "a2",
-      "word": "ici",
-      "sentence": "Ce matin, le garçon montre un ici dans le lit."
-    },
-    {
-      "level": "b1",
-      "word": "ici",
-      "sentence": "Ce matin, quand le voisin trouve un ici, parce que Kim finit ici."
-    },
-    {
-      "level": "a1",
-      "word": "immeuble",
-      "sentence": "Le cousin cherche une immeuble bien."
-    },
-    {
-      "level": "a2",
-      "word": "immeuble",
-      "sentence": "Après le cours, Iris oublie une immeuble fini ici."
-    },
-    {
-      "level": "b1",
-      "word": "immeuble",
-      "sentence": "Ce matin, quand la boulangère montre une immeuble, et Nina part très vite aussi."
-    },
-    {
-      "level": "a1",
-      "word": "infection",
-      "sentence": "Le facteur oublie une infection."
-    },
-    {
-      "level": "a2",
-      "word": "infection",
-      "sentence": "À midi, la fille cherche une infection ici vite."
-    },
-    {
-      "level": "b1",
-      "word": "infection",
-      "sentence": "Ce matin, quand la voisine pose une infection, parce que Kim finit ici."
-    },
-    {
-      "level": "a1",
-      "word": "infirmerie",
-      "sentence": "La cousine range une infirmerie."
-    },
-    {
-      "level": "a2",
-      "word": "infirmerie",
-      "sentence": "Après le cours, le jardinier oublie une infirmerie fini ici."
-    },
-    {
-      "level": "b1",
-      "word": "infirmerie",
-      "sentence": "Ce matin, quand la directrice cherche une infirmerie, et Nina part très vite aussi."
-    },
-    {
-      "level": "a1",
-      "word": "infirmier",
-      "sentence": "Kim utilise un infirmier bien."
-    },
-    {
-      "level": "a2",
-      "word": "infirmier",
-      "sentence": "Avant le repas, le professeur range un infirmier dans le lit."
-    },
-    {
-      "level": "b1",
-      "word": "infirmier",
-      "sentence": "Ce matin, quand la sœur oublie un infirmier, parce que Kim finit ici."
-    },
-    {
-      "level": "a1",
-      "word": "ingrédient",
-      "sentence": "Le copain prend un ingrédient bien."
-    },
-    {
-      "level": "a2",
-      "word": "ingrédient",
-      "sentence": "Ce matin, le médecin utilise un ingrédient avec Nina."
-    },
-    {
-      "level": "b1",
-      "word": "ingrédient",
-      "sentence": "Ce matin, quand la collègue range un ingrédient, et Nina part très vite aussi."
-    },
-    {
-      "level": "a1",
-      "word": "ingénieur",
-      "sentence": "Nina trouve un ingénieur bien."
-    },
-    {
-      "level": "a2",
-      "word": "ingénieur",
-      "sentence": "Ce soir, le maître prend un ingénieur ici vite."
-    },
-    {
-      "level": "b1",
-      "word": "ingénieur",
-      "sentence": "Ce matin, quand la factrice utilise un ingénieur, parce que Kim finit ici."
-    },
-    {
-      "level": "a1",
-      "word": "kiwi",
-      "sentence": "Le cuisinier goûte le kiwi."
-    },
-    {
-      "level": "a2",
-      "word": "kiwi",
-      "sentence": "À midi, la musicienne partage le kiwi fini ici."
-    },
-    {
-      "level": "b1",
-      "word": "kiwi",
-      "sentence": "Ce matin, quand le garçon sert le kiwi, et Nina part très vite aussi."
-    },
-    {
-      "level": "a1",
-      "word": "libellule",
-      "sentence": "Le papa pose la libellule bien."
-    },
-    {
-      "level": "a2",
-      "word": "libellule",
-      "sentence": "Ce matin, la boulangère cherche la libellule ici vite."
-    },
-    {
-      "level": "b1",
-      "word": "libellule",
-      "sentence": "Ce matin, quand la grand-mère trouve la libellule, parce que Kim finit ici."
-    },
-    {
-      "level": "a1",
-      "word": "librairie",
-      "sentence": "La tante cherche la librairie."
-    },
-    {
-      "level": "a2",
-      "word": "librairie",
-      "sentence": "Avant le repas, le facteur pose la librairie avec Nina."
-    },
-    {
-      "level": "b1",
-      "word": "librairie",
-      "sentence": "Ce matin, quand la fille montre la librairie, et Nina part très vite aussi."
-    },
-    {
-      "level": "a1",
-      "word": "lime",
-      "sentence": "Un ami mange la lime."
-    },
-    {
-      "level": "a2",
-      "word": "lime",
-      "sentence": "Ce matin, la cousine apporte la lime ici vite."
-    },
-    {
-      "level": "b1",
-      "word": "lime",
-      "sentence": "Ce matin, quand le jardinier coupe la lime, parce que Kim finit ici."
-    },
-    {
-      "level": "a1",
       "word": "lit",
-      "sentence": "La jardinière dort sur le lit."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Léon est tombé de son lit.",
+            "Lola est dans son lit.",
+            "Tous les jours, Jules lit le journal."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Dimitri lit un livre sur un petit dragon."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "lit",
-      "sentence": "Ce soir, Kim lit dans le lit fini ici."
-    },
-    {
-      "level": "b1",
-      "word": "lit",
-      "sentence": "Quand le professeur se couche dans le lit, et Nina part très vite aussi."
-    },
-    {
-      "level": "a1",
       "word": "livre",
-      "sentence": "La professeure enveloppe le livre bien."
+      "variants": [
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alun regarde un livre sur la vie d’un ours brun.",
+            "Dimitri lit un livre sur un petit dragon.",
+            "Dimitri regarde un livre sur la vie des dinosaures.",
+            "Elle regarde un livre sur les libellules."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand mon ami Cyril arrive, il sourit, dit bonjour à Lili et lit un livre."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "livre",
-      "sentence": "À midi, le copain rapporte le livre dans le lit."
+      "word": "mélodie",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Mimi chante la mélodie de Lili."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand Emilie entend la mélodie, elle sourit, dit merci à Cyril et chante avec Sophie."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "livre",
-      "sentence": "Ce matin, quand le médecin cherche le livre, parce que Kim finit ici."
+      "word": "Mimi",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Mimi dit bonjour à son ami.",
+            "Mimi mange du riz avec Lili."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
-      "word": "mercredi",
-      "sentence": "Le boulanger prend le mercredi bien."
+      "word": "petite",
+      "variants": [
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Emilie visite la petite ville de Sion avec Cyril et Julie.",
+            "Ryri la petite souris trotte dans la rue."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "mercredi",
-      "sentence": "Après le cours, Nina utilise le mercredi dans le lit."
-    },
-    {
-      "level": "b1",
-      "word": "mercredi",
-      "sentence": "Ce matin, quand le maître range le mercredi, et Nina part très vite aussi."
-    },
-    {
-      "level": "a1",
-      "word": "midi",
-      "sentence": "La maîtresse parle avec le midi."
-    },
-    {
-      "level": "a2",
-      "word": "midi",
-      "sentence": "Avant le repas, le cuisinier choisit le midi ici vite."
-    },
-    {
-      "level": "b1",
-      "word": "midi",
-      "sentence": "Ce matin, quand la musicienne aime le midi, parce que Kim finit ici."
-    },
-    {
-      "level": "a1",
-      "word": "minuit",
-      "sentence": "Le directeur montre le minuit."
-    },
-    {
-      "level": "a2",
-      "word": "minuit",
-      "sentence": "Ce matin, le papa trouve le minuit fini ici."
-    },
-    {
-      "level": "b1",
-      "word": "minuit",
-      "sentence": "Ce matin, quand le cousin prend le minuit, et Nina part très vite aussi."
-    },
-    {
-      "level": "a1",
-      "word": "moustique",
-      "sentence": "Le frère pose la moustique bien."
-    },
-    {
-      "level": "a2",
-      "word": "moustique",
-      "sentence": "Après le cours, la fille cherche la moustique ici vite."
-    },
-    {
-      "level": "b1",
-      "word": "moustique",
-      "sentence": "Ce matin, quand le facteur trouve la moustique, parce que Kim finit ici."
-    },
-    {
-      "level": "a1",
-      "word": "nid",
-      "sentence": "Le collègue observe le nid bien."
-    },
-    {
-      "level": "a2",
-      "word": "nid",
-      "sentence": "À midi, un ami photographie le nid avec Nina."
-    },
-    {
-      "level": "b1",
-      "word": "nid",
-      "sentence": "Ce matin, quand la cousine regarde le nid, et Nina part très vite aussi."
-    },
-    {
-      "level": "a1",
-      "word": "nièce",
-      "sentence": "La copine oublie la nièce."
-    },
-    {
-      "level": "a2",
-      "word": "nièce",
-      "sentence": "Après le cours, la jardinière cherche la nièce ici vite."
-    },
-    {
-      "level": "b1",
-      "word": "nièce",
-      "sentence": "À midi, quand Kim pose la nièce avec Nina, parce que Kim finit ici."
-    },
-    {
-      "level": "a1",
-      "word": "petit",
-      "sentence": "Tim range le petit bien."
-    },
-    {
-      "level": "a2",
-      "word": "petit",
-      "sentence": "Avant le repas, la professeure oublie le petit fini ici."
-    },
-    {
-      "level": "b1",
-      "word": "petit",
-      "sentence": "Ce matin, quand le copain cherche le petit, et Nina part très vite aussi."
-    },
-    {
-      "level": "a1",
-      "word": "pic",
-      "sentence": "Le grand-père photographie le pic."
-    },
-    {
-      "level": "a2",
-      "word": "pic",
-      "sentence": "À midi, le maître voit le pic ici vite."
-    },
-    {
-      "level": "b1",
-      "word": "pic",
-      "sentence": "À midi, quand Nina admire le pic fini ici, parce que Kim finit ici."
-    },
-    {
-      "level": "a1",
-      "word": "pie",
-      "sentence": "Iris prend la pie bien."
-    },
-    {
-      "level": "a2",
-      "word": "pie",
-      "sentence": "Ce soir, la maîtresse utilise la pie avec Nina."
-    },
-    {
-      "level": "b1",
-      "word": "pie",
-      "sentence": "Ce matin, quand le cuisinier range la pie, et Nina part très vite aussi."
-    },
-    {
-      "level": "a1",
-      "word": "pigeon",
-      "sentence": "La cuisinière trouve le pigeon."
-    },
-    {
-      "level": "a2",
-      "word": "pigeon",
-      "sentence": "À midi, le directeur prend le pigeon ici vite."
-    },
-    {
-      "level": "b1",
-      "word": "pigeon",
-      "sentence": "Ce matin, quand le papa utilise le pigeon, parce que Kim finit ici."
-    },
-    {
-      "level": "a1",
-      "word": "piment",
-      "sentence": "La maman montre le piment bien."
-    },
-    {
-      "level": "a2",
-      "word": "piment",
-      "sentence": "Après le cours, le frère trouve le piment fini ici."
-    },
-    {
-      "level": "b1",
-      "word": "piment",
-      "sentence": "Ce matin, quand la tante prend le piment, et Nina part très vite aussi."
-    },
-    {
-      "level": "a1",
       "word": "pizza",
-      "sentence": "Le bébé coupe la pizza bien."
+      "variants": [
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Titi a étalé la tomate sur la pâte à pizza."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "pizza",
-      "sentence": "Ce soir, la cousine goûte la pizza ici vite."
-    },
-    {
-      "level": "b1",
-      "word": "pizza",
-      "sentence": "Ce matin, quand un ami prépare la pizza, parce que Kim finit ici."
-    },
-    {
-      "level": "a1",
-      "word": "plombier",
-      "sentence": "Une amie cherche le plombier."
-    },
-    {
-      "level": "a2",
-      "word": "plombier",
-      "sentence": "Ce matin, la copine pose le plombier avec Nina."
-    },
-    {
-      "level": "b1",
-      "word": "plombier",
-      "sentence": "Ce matin, quand la jardinière montre le plombier, et Nina part très vite aussi."
-    },
-    {
-      "level": "a1",
-      "word": "prise",
-      "sentence": "Le musicien oublie la prise."
-    },
-    {
-      "level": "a2",
-      "word": "prise",
-      "sentence": "Ce soir, Tim cherche la prise ici vite."
-    },
-    {
-      "level": "b1",
-      "word": "prise",
-      "sentence": "Ce matin, quand la professeure pose la prise, parce que Kim finit ici."
-    },
-    {
-      "level": "a1",
       "word": "prix",
-      "sentence": "Le voisin calcule le prix bien."
+      "variants": [
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Cyril lit le prix dans la vitrine de la petite boutique."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "prix",
-      "sentence": "À midi, le grand-père gagne le prix fini ici."
-    },
-    {
-      "level": "b1",
-      "word": "prix",
-      "sentence": "Ce matin, quand la professeure calcule le prix, et Nina part très vite aussi."
-    },
-    {
-      "level": "a1",
-      "word": "pélican",
-      "sentence": "La boulangère utilise le pélican."
-    },
-    {
-      "level": "a2",
-      "word": "pélican",
-      "sentence": "Après le cours, Iris range le pélican dans le lit."
-    },
-    {
-      "level": "b1",
-      "word": "pélican",
-      "sentence": "Ce matin, quand la maîtresse oublie le pélican, parce que Kim finit ici."
-    },
-    {
-      "level": "a1",
-      "word": "rivière",
-      "sentence": "La voisine campe près de la rivière."
-    },
-    {
-      "level": "a2",
-      "word": "rivière",
-      "sentence": "Ce matin, la boulangère se promène près de la rivière ici vite."
-    },
-    {
-      "level": "b1",
-      "word": "rivière",
-      "sentence": "Ce matin, quand le directeur longe la rivière, et Nina part très vite aussi."
-    },
-    {
-      "level": "a1",
       "word": "riz",
-      "sentence": "La directrice sert le riz."
-    },
-    {
-      "level": "a2",
-      "word": "riz",
-      "sentence": "Ce matin, la maman mange le riz ici vite."
-    },
-    {
-      "level": "b1",
-      "word": "riz",
-      "sentence": "Ce matin, quand le frère apporte le riz, parce que Kim finit ici."
-    },
-    {
-      "level": "a1",
-      "word": "serrurier",
-      "sentence": "La sœur montre le serrurier bien."
-    },
-    {
-      "level": "a2",
-      "word": "serrurier",
-      "sentence": "Ce soir, le bébé trouve le serrurier fini ici."
-    },
-    {
-      "level": "b1",
-      "word": "serrurier",
-      "sentence": "Ce matin, quand le collègue prend le serrurier, et Nina part très vite aussi."
-    },
-    {
-      "level": "a1",
-      "word": "serviette",
-      "sentence": "La collègue pose la serviette bien."
-    },
-    {
-      "level": "a2",
-      "word": "serviette",
-      "sentence": "À midi, une amie montre la serviette dans le lit."
-    },
-    {
-      "level": "b1",
-      "word": "serviette",
-      "sentence": "Ce matin, quand la copine trouve la serviette, parce que Kim finit ici."
-    },
-    {
-      "level": "a1",
-      "word": "ski",
-      "sentence": "La factrice joue avec le ski."
-    },
-    {
-      "level": "a2",
-      "word": "ski",
-      "sentence": "Après le cours, le musicien regarde le ski avec Nina."
-    },
-    {
-      "level": "b1",
-      "word": "ski",
-      "sentence": "Ce matin, quand Tim lance le ski, et Nina part très vite aussi."
-    },
-    {
-      "level": "a1",
-      "word": "souris",
-      "sentence": "Le garçon sauve le souris bien."
-    },
-    {
-      "level": "a2",
-      "word": "souris",
-      "sentence": "Avant le repas, le voisin regarde le souris ici vite."
-    },
-    {
-      "level": "b1",
-      "word": "souris",
-      "sentence": "Ce matin, quand le grand-père nourrit le souris, parce que Kim finit ici."
-    },
-    {
-      "level": "a1",
-      "word": "surligneur",
-      "sentence": "La grand-mère range le surligneur bien."
-    },
-    {
-      "level": "a2",
-      "word": "surligneur",
-      "sentence": "Ce matin, la boulangère oublie le surligneur fini ici."
-    },
-    {
-      "level": "b1",
-      "word": "surligneur",
-      "sentence": "Ce matin, quand Iris cherche le surligneur, et Nina part très vite aussi."
-    },
-    {
-      "level": "a1",
-      "word": "syrien",
-      "sentence": "La fille utilise le syrien."
-    },
-    {
-      "level": "a2",
-      "word": "syrien",
-      "sentence": "Ce soir, la voisine range le syrien dans le lit."
-    },
-    {
-      "level": "b1",
-      "word": "syrien",
-      "sentence": "Ce matin, quand la cuisinière oublie le syrien, parce que Kim finit ici."
-    },
-    {
-      "level": "a1",
-      "word": "sécurité",
-      "sentence": "Le jardinier prend le sécurité."
-    },
-    {
-      "level": "a2",
-      "word": "sécurité",
-      "sentence": "À midi, la directrice utilise le sécurité avec Nina."
-    },
-    {
-      "level": "b1",
-      "word": "sécurité",
-      "sentence": "Ce matin, quand la maman range le sécurité, et Nina part très vite aussi."
-    },
-    {
-      "level": "a1",
-      "word": "tige",
-      "sentence": "Le professeur observe la tige bien."
-    },
-    {
-      "level": "a2",
-      "word": "tige",
-      "sentence": "Après le cours, la sœur photographie la tige ici vite."
-    },
-    {
-      "level": "b1",
-      "word": "tige",
-      "sentence": "Ce matin, quand le bébé regarde la tige, parce que Kim finit ici."
-    },
-    {
-      "level": "a1",
-      "word": "tigre",
-      "sentence": "Le médecin observe le tigre bien."
-    },
-    {
-      "level": "a2",
-      "word": "tigre",
-      "sentence": "Avant le repas, la collègue attrape le tigre fini ici."
-    },
-    {
-      "level": "b1",
-      "word": "tigre",
-      "sentence": "Ce matin, quand une amie caresse le tigre, et Nina part très vite aussi."
-    },
-    {
-      "level": "a1",
-      "word": "timide",
-      "sentence": "Le maître pose la timide."
-    },
-    {
-      "level": "a2",
-      "word": "timide",
-      "sentence": "Ce matin, la factrice montre la timide dans le lit."
-    },
-    {
-      "level": "b1",
-      "word": "timide",
-      "sentence": "Ce matin, quand le musicien trouve la timide, parce que Kim finit ici."
-    },
-    {
-      "level": "a1",
-      "word": "triste",
-      "sentence": "La musicienne cherche la triste."
-    },
-    {
-      "level": "a2",
-      "word": "triste",
-      "sentence": "Après le cours, le grand-père oublie la triste fini ici."
-    },
-    {
-      "level": "b1",
-      "word": "triste",
-      "sentence": "Ce matin, quand le voisin montre la triste, et Nina part très vite aussi."
-    },
-    {
-      "level": "a1",
-      "word": "ukrainien",
-      "sentence": "Le cousin oublie un ukrainien."
-    },
-    {
-      "level": "a2",
-      "word": "ukrainien",
-      "sentence": "À midi, la grand-mère cherche un ukrainien ici vite."
-    },
-    {
-      "level": "b1",
-      "word": "ukrainien",
-      "sentence": "Ce matin, quand la boulangère pose un ukrainien, parce que Kim finit ici."
-    },
-    {
-      "level": "a1",
-      "word": "urgentiste",
-      "sentence": "Le facteur range une urgentiste bien."
-    },
-    {
-      "level": "a2",
-      "word": "urgentiste",
-      "sentence": "Après le cours, la fille oublie une urgentiste fini ici."
-    },
-    {
-      "level": "b1",
-      "word": "urgentiste",
-      "sentence": "Ce matin, quand la voisine cherche une urgentiste, et Nina part très vite aussi."
-    },
-    {
-      "level": "a1",
-      "word": "ustensile",
-      "sentence": "La cousine utilise une ustensile."
-    },
-    {
-      "level": "a2",
-      "word": "ustensile",
-      "sentence": "Avant le repas, le jardinier range une ustensile dans le lit."
-    },
-    {
-      "level": "b1",
-      "word": "ustensile",
-      "sentence": "Ce matin, quand la directrice oublie une ustensile, parce que Kim finit ici."
-    },
-    {
-      "level": "a1",
-      "word": "viennoiserie",
-      "sentence": "Kim prend la viennoiserie bien."
-    },
-    {
-      "level": "a2",
-      "word": "viennoiserie",
-      "sentence": "Ce matin, le professeur utilise la viennoiserie avec Nina."
-    },
-    {
-      "level": "b1",
-      "word": "viennoiserie",
-      "sentence": "Ce matin, quand la sœur range la viennoiserie, et Nina part très vite aussi."
-    },
-    {
-      "level": "a1",
-      "word": "virus",
-      "sentence": "Le copain trouve le virus bien."
-    },
-    {
-      "level": "a2",
-      "word": "virus",
-      "sentence": "Ce soir, le médecin prend le virus ici vite."
-    },
-    {
-      "level": "b1",
-      "word": "virus",
-      "sentence": "Ce matin, quand la collègue utilise le virus, parce que Kim finit ici."
-    },
-    {
-      "level": "a1",
-      "word": "vis",
-      "sentence": "Nina montre la vis bien."
-    },
-    {
-      "level": "a2",
-      "word": "vis",
-      "sentence": "À midi, le maître trouve la vis fini ici."
-    },
-    {
-      "level": "b1",
-      "word": "vis",
-      "sentence": "Ce matin, quand la factrice prend la vis, et Nina part très vite aussi."
-    },
-    {
-      "level": "a1",
-      "word": "voilier",
-      "sentence": "Le cuisinier pose le voilier."
-    },
-    {
-      "level": "a2",
-      "word": "voilier",
-      "sentence": "Après le cours, la musicienne montre le voilier dans le lit."
-    },
-    {
-      "level": "b1",
-      "word": "voilier",
-      "sentence": "Ce matin, quand le garçon trouve le voilier, parce que Kim finit ici."
-    },
-    {
-      "level": "a1",
-      "word": "évier",
-      "sentence": "Le papa cherche un évier bien."
-    },
-    {
-      "level": "a2",
-      "word": "évier",
-      "sentence": "Ce soir, la boulangère oublie un évier fini ici."
-    },
-    {
-      "level": "b1",
-      "word": "évier",
-      "sentence": "Ce matin, quand la grand-mère montre un évier, et Nina part très vite aussi."
-    },
-    {
-      "level": "a1",
-      "word": "île",
-      "sentence": "La tante navigue vers la île."
-    },
-    {
-      "level": "a2",
-      "word": "île",
-      "sentence": "Ce matin, le facteur visite la île ici vite."
-    },
-    {
-      "level": "b1",
-      "word": "île",
-      "sentence": "Ce matin, quand la grand-mère navigue vers la île, parce que Kim finit ici."
-    }
-  ],
-  "type10": [
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le maître attend un ami avec Nina.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " maître attend un ami avec Nina."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la factrice téléphone à un ami, et Nina part très vite aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " factrice téléphone à un ami, et Nina part très vite aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le cuisinier trouve un autrichien.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " cuisinier trouve un autrichien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, la musicienne prend un autrichien ici vite.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " musicienne prend un autrichien ici vite."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le garçon utilise un autrichien, parce que Kim finit ici.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garçon utilise un autrichien, parce que Kim finit ici."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le papa observe la biche bien.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " papa observe "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " biche bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le cousin attrape la biche fini ici.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cousin attrape "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " biche fini ici."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la grand-mère caresse la biche, et Nina part très vite aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " grand-mère caresse "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " biche, et Nina part très vite aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La tante aime la boucherie bien.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " tante aime "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boucherie bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, la grand-mère aime la boucherie fini ici.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " grand-mère aime "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boucherie fini ici."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la boulangère aime la boucherie, et Nina part très vite aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boulangère aime "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boucherie, et Nina part très vite aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Un ami cherche le bouillir.",
-      "parts": [
-        {
-          "t": "Un ami cherche "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bouillir."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la cousine pose le bouillir avec Nina.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cousine pose "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bouillir avec Nina."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le jardinier montre le bouillir, et Nina part très vite aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardinier montre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bouillir, et Nina part très vite aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La jardinière aime la boulangerie.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " jardinière aime "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boulangerie."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le jardinier aime la boulangerie avec Nina.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardinier aime "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boulangerie avec Nina."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la directrice aime la boulangerie, et Nina part très vite aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " directrice aime "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boulangerie, et Nina part très vite aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La professeure nettoie la buanderie bien.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " professeure nettoie "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " buanderie bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le professeur nettoie la buanderie ici vite.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " professeur nettoie "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " buanderie ici vite."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la sœur nettoie la buanderie, parce que Kim finit ici.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " sœur nettoie "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " buanderie, parce que Kim finit ici."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le boulanger mange à la cantine bien.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " boulanger mange à "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cantine bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le médecin mange à la cantine fini ici.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " médecin mange à "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cantine fini ici."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la collègue mange à la cantine, et Nina part très vite aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " collègue mange à "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cantine, et Nina part très vite aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La maîtresse prend la chimie.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " maîtresse prend "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " chimie."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le cuisinier utilise la chimie avec Nina.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cuisinier utilise "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " chimie avec Nina."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la musicienne range la chimie, et Nina part très vite aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " musicienne range "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " chimie, et Nina part très vite aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le directeur trouve le chinois.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " directeur trouve "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chinois."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le papa prend le chinois ici vite.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " papa prend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chinois ici vite."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le cousin utilise le chinois, parce que Kim finit ici.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cousin utilise "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chinois, parce que Kim finit ici."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le frère montre le chirurgien.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " frère montre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chirurgien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, la tante trouve le chirurgien fini ici.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " tante trouve "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chirurgien fini ici."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le facteur prend le chirurgien, et Nina part très vite aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " facteur prend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chirurgien, et Nina part très vite aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le collègue pose le ciel bien.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " collègue pose "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " ciel bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, un ami montre le ciel dans le lit.",
-      "parts": [
-        {
-          "t": "Ce soir, un ami montre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " ciel dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " lit."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la cousine trouve le ciel, parce que Kim finit ici.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cousine trouve "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " ciel, parce que Kim finit ici."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La copine cherche le comprimé.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " copine cherche "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " comprimé."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, la jardinière pose le comprimé avec Nina.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " jardinière pose "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " comprimé avec Nina."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Kim montre le comprimé, et Nina part très vite aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Kim montre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " comprimé, et Nina part très vite aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Tim écrit à la cousine.",
-      "parts": [
-        {
-          "t": "Tim écrit à "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cousine."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la professeure invite la cousine ici vite.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " professeure invite "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cousine ici vite."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Kim écrit à la cousine, parce que Kim finit ici.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Kim écrit à "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cousine, parce que Kim finit ici."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le grand-père range le criquet bien.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " grand-père range "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " criquet bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le boulanger oublie le criquet fini ici.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " boulanger oublie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " criquet fini ici."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Nina cherche le criquet, et Nina part très vite aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Nina cherche "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " criquet, et Nina part très vite aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Iris utilise le cuisiner bien.",
-      "parts": [
-        {
-          "t": "Iris utilise "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cuisiner bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, la maîtresse range le cuisiner dans le lit.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maîtresse range "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cuisiner dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " lit."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le cuisinier oublie le cuisiner, parce que Kim finit ici.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cuisinier oublie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cuisiner, parce que Kim finit ici."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La cuisinière prend le cuisinier.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " cuisinière prend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cuisinier."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le directeur utilise le cuisinier avec Nina.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " directeur utilise "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cuisinier avec Nina."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le papa range le cuisinier, et Nina part très vite aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " papa range "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cuisinier, et Nina part très vite aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La maman trouve la cuisinière.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " maman trouve "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cuisinière."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le frère prend la cuisinière ici vite.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " frère prend "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cuisinière ici vite."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la tante utilise la cuisinière, parce que Kim finit ici.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " tante utilise "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cuisinière, parce que Kim finit ici."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le bébé montre la dentiste bien.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " bébé montre "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " dentiste bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le collègue trouve la dentiste fini ici.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " collègue trouve "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " dentiste fini ici."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand un ami prend la dentiste, et Nina part très vite aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand un ami prend "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " dentiste, et Nina part très vite aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Une amie pose la direction.",
-      "parts": [
-        {
-          "t": "Une amie pose "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " direction."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la copine montre la direction dans le lit.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " copine montre "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " direction dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " lit."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la jardinière trouve la direction, parce que Kim finit ici.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " jardinière trouve "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " direction, parce que Kim finit ici."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le musicien cherche un enregistrement.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " musicien cherche un enregistrement."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le copain oublie un enregistrement fini ici.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " copain oublie un enregistrement fini ici."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la professeure montre un enregistrement, et Nina part très vite aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " professeure montre un enregistrement, et Nina part très vite aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le voisin oublie le fiancé.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " voisin oublie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " fiancé."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le grand-père cherche le fiancé ici vite.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " grand-père cherche "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " fiancé ici vite."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le boulanger pose le fiancé, parce que Kim finit ici.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " boulanger pose "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " fiancé, parce que Kim finit ici."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La boulangère regarde le film bien.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " boulangère regarde "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " film bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Iris choisit le film fini ici.",
-      "parts": [
-        {
-          "t": "À midi, Iris choisit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " film fini ici."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le boulanger regarde le film, et Nina part très vite aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " boulanger regarde "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " film, et Nina part très vite aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La voisine utilise la fièvre.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " voisine utilise "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " fièvre."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la cuisinière range la fièvre dans le lit.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cuisinière range "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " fièvre dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " lit."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le directeur oublie la fièvre, parce que Kim finit ici.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " directeur oublie "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " fièvre, parce que Kim finit ici."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La directrice prend le fourmi.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " directrice prend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " fourmi."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la maman utilise le fourmi avec Nina.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maman utilise "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " fourmi avec Nina."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le frère range le fourmi, et Nina part très vite aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " frère range "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " fourmi, et Nina part très vite aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La sœur trouve la frire bien.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " sœur trouve "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " frire bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le bébé prend la frire ici vite.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bébé prend "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " frire ici vite."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le collègue utilise la frire, parce que Kim finit ici.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " collègue utilise "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " frire, parce que Kim finit ici."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La collègue montre le frisé bien.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " collègue montre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " frisé bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, une amie trouve le frisé fini ici.",
-      "parts": [
-        {
-          "t": "Ce soir, une amie trouve "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " frisé fini ici."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la copine prend le frisé, et Nina part très vite aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " copine prend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " frisé, et Nina part très vite aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La factrice pose le février.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " factrice pose "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " février."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le musicien montre le février dans le lit.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " musicien montre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " février dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " lit."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Tim trouve le février fini ici, parce que Kim finit ici.",
-      "parts": [
-        {
-          "t": "À midi, quand Tim trouve "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " février fini ici, parce que Kim finit ici."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le garçon cherche le gentil bien.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " garçon cherche "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " gentil bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le boulanger oublie le gentil fini ici.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " boulanger oublie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " gentil fini ici."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le grand-père montre le gentil, et Nina part très vite aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " grand-père montre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " gentil, et Nina part très vite aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La grand-mère grimpe dans le grenier bien.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " grand-mère grimpe dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " grenier bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le grand-père grimpe dans le grenier avec Nina.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " grand-père grimpe dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " grenier avec Nina."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le boulanger grimpe dans le grenier, et Nina part très vite aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " boulanger grimpe dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " grenier, et Nina part très vite aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La fille range la grippe.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " fille range "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " grippe."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, la voisine oublie la grippe fini ici.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " voisine oublie "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " grippe fini ici."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la cuisinière cherche la grippe, et Nina part très vite aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cuisinière cherche "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " grippe, et Nina part très vite aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le jardinier utilise le gris.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " jardinier utilise "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " gris."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, la directrice range le gris dans le lit.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " directrice range "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " gris dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " lit."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la maman oublie le gris, parce que Kim finit ici.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maman oublie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " gris, parce que Kim finit ici."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le professeur prend le guichet bien.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " professeur prend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " guichet bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, la sœur utilise le guichet avec Nina.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " sœur utilise "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " guichet avec Nina."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le bébé range le guichet, et Nina part très vite aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bébé range "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " guichet, et Nina part très vite aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le médecin trouve la humide bien.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " médecin trouve "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " humide bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la collègue prend la humide ici vite.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " collègue prend "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " humide ici vite."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand une amie utilise la humide, parce que Kim finit ici.",
-      "parts": [
-        {
-          "t": "Ce matin, quand une amie utilise "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " humide, parce que Kim finit ici."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le maître montre un ibis.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " maître montre un ibis."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la factrice trouve un ibis fini ici.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " factrice trouve un ibis fini ici."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le musicien prend un ibis, et Nina part très vite aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " musicien prend un ibis, et Nina part très vite aussi."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le garçon montre un ici dans le lit.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garçon montre un ici dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " lit."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le voisin trouve un ici, parce que Kim finit ici.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " voisin trouve un ici, parce que Kim finit ici."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le cousin cherche une immeuble bien.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " cousin cherche une immeuble bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Iris oublie une immeuble fini ici.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Iris oublie une immeuble fini ici."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la boulangère montre une immeuble, et Nina part très vite aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boulangère montre une immeuble, et Nina part très vite aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le facteur oublie une infection.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " facteur oublie une infection."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, la fille cherche une infection ici vite.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " fille cherche une infection ici vite."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la voisine pose une infection, parce que Kim finit ici.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " voisine pose une infection, parce que Kim finit ici."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La cousine range une infirmerie.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " cousine range une infirmerie."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le jardinier oublie une infirmerie fini ici.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardinier oublie une infirmerie fini ici."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la directrice cherche une infirmerie, et Nina part très vite aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " directrice cherche une infirmerie, et Nina part très vite aussi."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le professeur range un infirmier dans le lit.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " professeur range un infirmier dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " lit."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la sœur oublie un infirmier, parce que Kim finit ici.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " sœur oublie un infirmier, parce que Kim finit ici."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le copain prend un ingrédient bien.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " copain prend un ingrédient bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le médecin utilise un ingrédient avec Nina.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " médecin utilise un ingrédient avec Nina."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la collègue range un ingrédient, et Nina part très vite aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " collègue range un ingrédient, et Nina part très vite aussi."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le maître prend un ingénieur ici vite.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " maître prend un ingénieur ici vite."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la factrice utilise un ingénieur, parce que Kim finit ici.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " factrice utilise un ingénieur, parce que Kim finit ici."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le cuisinier goûte le kiwi.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " cuisinier goûte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " kiwi."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, la musicienne partage le kiwi fini ici.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " musicienne partage "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " kiwi fini ici."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le garçon sert le kiwi, et Nina part très vite aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garçon sert "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " kiwi, et Nina part très vite aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le papa pose la libellule bien.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " papa pose "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " libellule bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, la boulangère cherche la libellule ici vite.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boulangère cherche "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " libellule ici vite."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la grand-mère trouve la libellule, parce que Kim finit ici.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " grand-mère trouve "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " libellule, parce que Kim finit ici."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La tante cherche la librairie.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " tante cherche "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " librairie."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le facteur pose la librairie avec Nina.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " facteur pose "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " librairie avec Nina."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la fille montre la librairie, et Nina part très vite aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " fille montre "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " librairie, et Nina part très vite aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Un ami mange la lime.",
-      "parts": [
-        {
-          "t": "Un ami mange "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " lime."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, la cousine apporte la lime ici vite.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cousine apporte "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " lime ici vite."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le jardinier coupe la lime, parce que Kim finit ici.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardinier coupe "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " lime, parce que Kim finit ici."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La jardinière dort sur le lit.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " jardinière dort sur "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " lit."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Kim lit dans le lit fini ici.",
-      "parts": [
-        {
-          "t": "Ce soir, Kim lit dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " lit fini ici."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand le professeur se couche dans le lit, et Nina part très vite aussi.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " professeur se couche dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " lit, et Nina part très vite aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La professeure enveloppe le livre bien.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " professeure enveloppe "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " livre bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le copain rapporte le livre dans le lit.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " copain rapporte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " livre dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " lit."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le médecin cherche le livre, parce que Kim finit ici.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " médecin cherche "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " livre, parce que Kim finit ici."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le boulanger prend le mercredi bien.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " boulanger prend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " mercredi bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Nina utilise le mercredi dans le lit.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Nina utilise "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " mercredi dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " lit."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le maître range le mercredi, et Nina part très vite aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " maître range "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " mercredi, et Nina part très vite aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La maîtresse parle avec le midi.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " maîtresse parle avec "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " midi."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le cuisinier choisit le midi ici vite.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cuisinier choisit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " midi ici vite."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la musicienne aime le midi, parce que Kim finit ici.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " musicienne aime "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " midi, parce que Kim finit ici."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le directeur montre le minuit.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " directeur montre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " minuit."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le papa trouve le minuit fini ici.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " papa trouve "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " minuit fini ici."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le cousin prend le minuit, et Nina part très vite aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cousin prend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " minuit, et Nina part très vite aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le frère pose la moustique bien.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " frère pose "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " moustique bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la fille cherche la moustique ici vite.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " fille cherche "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " moustique ici vite."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le facteur trouve la moustique, parce que Kim finit ici.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " facteur trouve "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " moustique, parce que Kim finit ici."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le collègue observe le nid bien.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " collègue observe "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " nid bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, un ami photographie le nid avec Nina.",
-      "parts": [
-        {
-          "t": "À midi, un ami photographie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " nid avec Nina."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la cousine regarde le nid, et Nina part très vite aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cousine regarde "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " nid, et Nina part très vite aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La copine oublie la nièce.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " copine oublie "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " nièce."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la jardinière cherche la nièce ici vite.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " jardinière cherche "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " nièce ici vite."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Kim pose la nièce avec Nina, parce que Kim finit ici.",
-      "parts": [
-        {
-          "t": "À midi, quand Kim pose "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " nièce avec Nina, parce que Kim finit ici."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Tim range le petit bien.",
-      "parts": [
-        {
-          "t": "Tim range "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " petit bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la professeure oublie le petit fini ici.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " professeure oublie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " petit fini ici."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le copain cherche le petit, et Nina part très vite aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " copain cherche "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " petit, et Nina part très vite aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le grand-père photographie le pic.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " grand-père photographie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pic."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le maître voit le pic ici vite.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " maître voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pic ici vite."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Nina admire le pic fini ici, parce que Kim finit ici.",
-      "parts": [
-        {
-          "t": "À midi, quand Nina admire "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pic fini ici, parce que Kim finit ici."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Iris prend la pie bien.",
-      "parts": [
-        {
-          "t": "Iris prend "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " pie bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, la maîtresse utilise la pie avec Nina.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maîtresse utilise "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " pie avec Nina."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le cuisinier range la pie, et Nina part très vite aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cuisinier range "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " pie, et Nina part très vite aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La cuisinière trouve le pigeon.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " cuisinière trouve "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pigeon."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le directeur prend le pigeon ici vite.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " directeur prend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pigeon ici vite."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le papa utilise le pigeon, parce que Kim finit ici.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " papa utilise "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pigeon, parce que Kim finit ici."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La maman montre le piment bien.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " maman montre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " piment bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le frère trouve le piment fini ici.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " frère trouve "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " piment fini ici."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la tante prend le piment, et Nina part très vite aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " tante prend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " piment, et Nina part très vite aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le bébé coupe la pizza bien.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " bébé coupe "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " pizza bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, la cousine goûte la pizza ici vite.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cousine goûte "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " pizza ici vite."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand un ami prépare la pizza, parce que Kim finit ici.",
-      "parts": [
-        {
-          "t": "Ce matin, quand un ami prépare "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " pizza, parce que Kim finit ici."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Une amie cherche le plombier.",
-      "parts": [
-        {
-          "t": "Une amie cherche "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " plombier."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, la copine pose le plombier avec Nina.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " copine pose "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " plombier avec Nina."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la jardinière montre le plombier, et Nina part très vite aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " jardinière montre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " plombier, et Nina part très vite aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le musicien oublie la prise.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " musicien oublie "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " prise."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Tim cherche la prise ici vite.",
-      "parts": [
-        {
-          "t": "Ce soir, Tim cherche "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " prise ici vite."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la professeure pose la prise, parce que Kim finit ici.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " professeure pose "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " prise, parce que Kim finit ici."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le voisin calcule le prix bien.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " voisin calcule "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " prix bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le grand-père gagne le prix fini ici.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " grand-père gagne "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " prix fini ici."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la professeure calcule le prix, et Nina part très vite aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " professeure calcule "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " prix, et Nina part très vite aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La boulangère utilise le pélican.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " boulangère utilise "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pélican."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Iris range le pélican dans le lit.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Iris range "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pélican dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " lit."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la maîtresse oublie le pélican, parce que Kim finit ici.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maîtresse oublie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " pélican, parce que Kim finit ici."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La voisine campe près de la rivière.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " voisine campe près de "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " rivière."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, la boulangère se promène près de la rivière ici vite.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boulangère se promène près de "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " rivière ici vite."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le directeur longe la rivière, et Nina part très vite aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " directeur longe "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " rivière, et Nina part très vite aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La directrice sert le riz.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " directrice sert "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " riz."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, la maman mange le riz ici vite.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maman mange "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " riz ici vite."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le frère apporte le riz, parce que Kim finit ici.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " frère apporte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " riz, parce que Kim finit ici."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La sœur montre le serrurier bien.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " sœur montre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " serrurier bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le bébé trouve le serrurier fini ici.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bébé trouve "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " serrurier fini ici."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le collègue prend le serrurier, et Nina part très vite aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " collègue prend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " serrurier, et Nina part très vite aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La collègue pose la serviette bien.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " collègue pose "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " serviette bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, une amie montre la serviette dans le lit.",
-      "parts": [
-        {
-          "t": "À midi, une amie montre "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " serviette dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " lit."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la copine trouve la serviette, parce que Kim finit ici.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " copine trouve "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " serviette, parce que Kim finit ici."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La factrice joue avec le ski.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " factrice joue avec "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " ski."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le musicien regarde le ski avec Nina.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " musicien regarde "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " ski avec Nina."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Tim lance le ski, et Nina part très vite aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Tim lance "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " ski, et Nina part très vite aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le garçon sauve le souris bien.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " garçon sauve "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " souris bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le voisin regarde le souris ici vite.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " voisin regarde "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " souris ici vite."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le grand-père nourrit le souris, parce que Kim finit ici.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " grand-père nourrit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " souris, parce que Kim finit ici."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La grand-mère range le surligneur bien.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " grand-mère range "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " surligneur bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, la boulangère oublie le surligneur fini ici.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boulangère oublie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " surligneur fini ici."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Iris cherche le surligneur, et Nina part très vite aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Iris cherche "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " surligneur, et Nina part très vite aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La fille utilise le syrien.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " fille utilise "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " syrien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, la voisine range le syrien dans le lit.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " voisine range "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " syrien dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " lit."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la cuisinière oublie le syrien, parce que Kim finit ici.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cuisinière oublie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " syrien, parce que Kim finit ici."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le jardinier prend le sécurité.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " jardinier prend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sécurité."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, la directrice utilise le sécurité avec Nina.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " directrice utilise "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sécurité avec Nina."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la maman range le sécurité, et Nina part très vite aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maman range "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " sécurité, et Nina part très vite aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le professeur observe la tige bien.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " professeur observe "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " tige bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la sœur photographie la tige ici vite.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " sœur photographie "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " tige ici vite."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le bébé regarde la tige, parce que Kim finit ici.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bébé regarde "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " tige, parce que Kim finit ici."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le médecin observe le tigre bien.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " médecin observe "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " tigre bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la collègue attrape le tigre fini ici.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " collègue attrape "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " tigre fini ici."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand une amie caresse le tigre, et Nina part très vite aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand une amie caresse "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " tigre, et Nina part très vite aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le maître pose la timide.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " maître pose "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " timide."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, la factrice montre la timide dans le lit.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " factrice montre "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " timide dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " lit."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le musicien trouve la timide, parce que Kim finit ici.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " musicien trouve "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " timide, parce que Kim finit ici."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La musicienne cherche la triste.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " musicienne cherche "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " triste."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le grand-père oublie la triste fini ici.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " grand-père oublie "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " triste fini ici."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le voisin montre la triste, et Nina part très vite aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " voisin montre "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " triste, et Nina part très vite aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le cousin oublie un ukrainien.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " cousin oublie un ukrainien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, la grand-mère cherche un ukrainien ici vite.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " grand-mère cherche un ukrainien ici vite."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la boulangère pose un ukrainien, parce que Kim finit ici.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boulangère pose un ukrainien, parce que Kim finit ici."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le facteur range une urgentiste bien.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " facteur range une urgentiste bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la fille oublie une urgentiste fini ici.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " fille oublie une urgentiste fini ici."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la voisine cherche une urgentiste, et Nina part très vite aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " voisine cherche une urgentiste, et Nina part très vite aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La cousine utilise une ustensile.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " cousine utilise une ustensile."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le jardinier range une ustensile dans le lit.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardinier range une ustensile dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " lit."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la directrice oublie une ustensile, parce que Kim finit ici.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " directrice oublie une ustensile, parce que Kim finit ici."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Kim prend la viennoiserie bien.",
-      "parts": [
-        {
-          "t": "Kim prend "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " viennoiserie bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le professeur utilise la viennoiserie avec Nina.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " professeur utilise "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " viennoiserie avec Nina."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la sœur range la viennoiserie, et Nina part très vite aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " sœur range "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " viennoiserie, et Nina part très vite aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le copain trouve le virus bien.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " copain trouve "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " virus bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le médecin prend le virus ici vite.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " médecin prend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " virus ici vite."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la collègue utilise le virus, parce que Kim finit ici.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " collègue utilise "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " virus, parce que Kim finit ici."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Nina montre la vis bien.",
-      "parts": [
-        {
-          "t": "Nina montre "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " vis bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le maître trouve la vis fini ici.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " maître trouve "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " vis fini ici."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la factrice prend la vis, et Nina part très vite aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " factrice prend "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " vis, et Nina part très vite aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le cuisinier pose le voilier.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " cuisinier pose "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " voilier."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la musicienne montre le voilier dans le lit.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " musicienne montre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " voilier dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " lit."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le garçon trouve le voilier, parce que Kim finit ici.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garçon trouve "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " voilier, parce que Kim finit ici."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le papa cherche un évier bien.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " papa cherche un évier bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, la boulangère oublie un évier fini ici.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boulangère oublie un évier fini ici."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la grand-mère montre un évier, et Nina part très vite aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " grand-mère montre un évier, et Nina part très vite aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La tante navigue vers la île.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " tante navigue vers "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " île."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le facteur visite la île ici vite.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " facteur visite "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " île ici vite."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la grand-mère navigue vers la île, parce que Kim finit ici.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " grand-mère navigue vers "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " île, parce que Kim finit ici."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La jardinière discute avec un ami.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " jardinière discute avec un ami."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le frère cherche un autrichien.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " frère cherche un autrichien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Iris soigne la biche bien.",
-      "parts": [
-        {
-          "t": "Iris soigne "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " biche bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La copine aime la boucherie.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " copine aime "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boucherie."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le musicien pose le chirurgien avec Nina.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " musicien pose "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chirurgien avec Nina."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, une amie cherche le ciel ici vite.",
-      "parts": [
-        {
-          "t": "Ce matin, une amie cherche "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " ciel ici vite."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la tante oublie le comprimé fini ici.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " tante oublie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " comprimé fini ici."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le cuisinier invite la cousine ici vite.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cuisinier invite "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cousine ici vite."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le frère range un enregistrement, et Nina part très vite aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " frère range un enregistrement, et Nina part très vite aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Iris prend le fiancé, et Nina part très vite aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Iris prend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " fiancé, et Nina part très vite aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand une amie regarde le film, et Nina part très vite aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand une amie regarde "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " film, et Nina part très vite aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la sœur cherche la fièvre, et Nina part très vite aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " sœur cherche "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " fièvre, et Nina part très vite aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La maman oublie le bouillir.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " maman oublie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bouillir."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La boulangère aime la boulangerie bien.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " boulangère aime "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boulangerie bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La factrice nettoie la buanderie.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " factrice nettoie "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " buanderie."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le professeur mange à la cantine bien.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " professeur mange à "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cantine bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Un ami montre la chimie.",
-      "parts": [
-        {
-          "t": "Un ami montre "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " chimie."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le directeur cherche le chinois.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " directeur cherche "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chinois."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le boulanger prend le criquet ici vite.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " boulanger prend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " criquet ici vite."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la copine montre le cuisiner dans le lit.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " copine montre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cuisiner dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " lit."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la maman cherche le cuisinier ici vite.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maman cherche "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cuisinier ici vite."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, la boulangère range la cuisinière dans le lit.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boulangère range "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cuisinière dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " lit."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, une amie pose la dentiste avec Nina.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, une amie pose "
-        },
-        {
-          "blank": "la"
-        },
+      "variants": [
         {
-          "t": " dentiste avec Nina."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le bébé cherche la direction ici vite.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bébé cherche "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " direction ici vite."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la boulangère trouve le fourmi, parce que Kim finit ici.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boulangère trouve "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " fourmi, parce que Kim finit ici."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le voisin montre la frire, et Nina part très vite aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " voisin montre "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " frire, et Nina part très vite aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la jardinière pose le frisé, parce que Kim finit ici.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " jardinière pose "
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Cyril cuit le riz dans la petite cuisine d’Emilie."
+          ]
         },
         {
-          "blank": "le"
-        },
-        {
-          "t": " frisé, parce que Kim finit ici."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand un ami cherche le février, et Nina part très vite aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand un ami cherche "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " février, et Nina part très vite aussi."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand le riz est cuit, Cyril dit à Lili de venir et Emilie sourit."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "Ce matin, quand le directeur range le gentil, et Nina part très vite aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " directeur range "
-        },
+      "word": "ville",
+      "variants": [
         {
-          "blank": "le"
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Mimi visite la ville avec Lili."
+          ]
         },
         {
-          "t": " gentil, et Nina part très vite aussi."
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Cyril invite son ami Émile dans la ville de Lili."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "Ce matin, quand la professeure grimpe dans le grenier, parce que Kim finit ici.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " professeure grimpe dans "
-        },
+      "word": "vitrine",
+      "variants": [
         {
-          "blank": "le"
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Mimi regarde la vitrine de Lili."
+          ]
         },
         {
-          "t": " grenier, parce que Kim finit ici."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand Cyril arrive en ville, il rit, dit bonjour à Lili et visite la vitrine.",
+            "Quand Emilie passe devant la vitrine, elle sourit à Cyril et lit le prix."
+          ]
         }
-      ]
-    }
-  ],
-  "type12Stories": [
-    {
-      "level": "a2",
-      "sentences": [
-        "Ce matin, Nina retrouve son ami à la bibliothèque.",
-        "Ils choisissent un livre sur les biches et les tigres.",
-        "Nina lit près de la fenêtre, sous un ciel gris.",
-        "À midi, ils mangent à la cantine de l’école.",
-        "Nina porte une chemise bleue et un petit foulard.",
-        "L’après-midi, elle range les livres sur l’étagère.",
-        "Elle fixe une affiche avec une vis et un marteau.",
-        "Puis elle dit au revoir à son ami.",
-        "Sur le chemin, elle regarde le ciel devenir plus clair."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Ibrahim travaille à la boulangerie depuis février.",
-        "Il arrive tôt, quand le ciel est encore gris.",
-        "Avec le cuisinier, il prépare des viennoiseries et du riz sucré.",
-        "À midi, il déjeune vite à la cantine du quartier.",
-        "Un client timide demande le prix d’une pizza.",
-        "Ibrahim répond gentiment et range la monnaie.",
-        "L’après-midi, sa cousine passe le voir.",
-        "Ils parlent d’un film et d’une île rêvée.",
-        "Le soir, Ibrahim rentre à l’immeuble, fatigué mais content."
-      ]
-    },
-    {
-      "level": "a2",
-      "sentences": [
-        "À la librairie, Lili cherche un livre illustré.",
-        "Elle voit une image de biche près d’une rivière.",
-        "Le libraire lui indique le rayon enfants.",
-        "Lili choisit aussi un stylo et un surligneur.",
-        "Elle paie au guichet et range tout dans son sac.",
-        "Dehors, le ciel est bleu et le soleil brille.",
-        "Lili croise son ami près de la boucherie.",
-        "Ils mangent une pizza sur un banc.",
-        "Puis Lili rentre lire son livre sur le lit."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Mardi, Maya a de la fièvre et reste au lit.",
-        "Maman l’emmène à l’infirmerie de l’école.",
-        "L’infirmière vérifie sa température avec soin.",
-        "Elle conseille du repos et un comprimé si besoin.",
-        "Maya boit de l’eau et regarde le ciel par la fenêtre.",
-        "Sa cousine lui apporte un livre et une serviette fraîche.",
-        "Le soir, le dentiste de la famille appelle pour prendre des nouvelles.",
-        "Maya se sent un peu triste, mais elle reste gentille.",
-        "Le lendemain, la fièvre baisse et elle sourit enfin."
-      ]
-    },
-    {
-      "level": "a2",
-      "sentences": [
-        "En classe de chimie, Tim observe une expérience.",
-        "Il note les ingrédients dans son livre.",
-        "Le professeur montre une tige et une lime.",
-        "Tim fixe le support avec une petite vis.",
-        "À la pause, il boit un jus à la cantine.",
-        "Son ami lui parle d’un film sur les tigres.",
-        "Tim range sa chemise dans le casier.",
-        "Puis il regarde le ciel gris par la fenêtre.",
-        "Le soir, il raconte la leçon à sa cousine."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Pour mercredi, Iris prépare une sortie sur l’île.",
-        "Elle range une serviette, un livre et une gourde dans le sac.",
-        "Sur le voilier, le ciel est clair et le vent léger.",
-        "Iris photographie un pélican et une libellule.",
-        "À midi, le cuisinier sert du riz et une pizza froide.",
-        "Iris lit un peu, allongée près de la rivière.",
-        "Un ami timide lui demande le prix du billet de bateau.",
-        "Le soir, ils rentrent à l’immeuble sous un ciel rose.",
-        "Iris pose son sac près du lit et s’endort vite."
-      ]
-    },
-    {
-      "level": "a2",
-      "sentences": [
-        "Dimanche, Samir visite le parc avec sa nièce.",
-        "Ils voient une biche et un pigeon gris.",
-        "Samir lit un livre sous un arbre.",
-        "Sa nièce dessine une souris et une fourmi.",
-        "À midi, ils mangent une pizza près de la rivière.",
-        "Le ciel devient un peu humide.",
-        "Ils rentrent à l’immeuble avant la pluie.",
-        "Samir range les dessins dans un livre.",
-        "Puis il fixe le cadre avec une vis."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "À la direction de l’école, Kim attend son rendez-vous.",
-        "Elle porte une chemise blanche et tient un livre.",
-        "Le secrétaire lui indique le guichet de l’enregistrement.",
-        "Kim explique un problème urgent à l’infirmière.",
-        "Ensuite, elle passe à la cantine pour boire un thé.",
-        "Son ami ingénieur l’appelle pour parler d’un projet.",
-        "Kim note les idées dans un petit carnet.",
-        "Le soir, elle regarde un film sous-titré sur son lit.",
-        "Elle s’endort en regardant le ciel par la fenêtre."
-      ]
-    },
-    {
-      "level": "a2",
-      "sentences": [
-        "À la cuisine, Mina apprend à frire des légumes.",
-        "Le cuisinier lui montre chaque ustensile.",
-        "Mina lave l’évier et range la serviette.",
-        "Elle ajoute du piment et du riz dans la poêle.",
-        "À midi, les amis goûtent la pizza.",
-        "Mina sourit et nettoie le plan de travail.",
-        "Elle fixe une étagère avec une vis.",
-        "Puis elle lit un livre de recettes.",
-        "Le soir, elle dit merci au cuisinier."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "En février, Hugo part skier avec des amis.",
-        "Il prépare son sac : gants, livre et chemise de rechange.",
-        "Sur la piste, le ciel est clair et le vent froid.",
-        "Hugo photographie une biche au bord de la forêt.",
-        "À midi, ils mangent à la cantine de la station.",
-        "Un ami timide demande le prix d’un nouveau ski.",
-        "Le soir, Hugo lit près du lit dans le chalet.",
-        "Il regarde les étoiles et écoute le silence.",
-        "Avant de dormir, il range ses affaires avec soin."
-      ]
-    }
-  ],
-  "type14Stories": [
-    {
-      "level": "a2",
-      "sentences": [
-        "Samedi, Nina va à la librairie avec son ami.",
-        "Ils cherchent un livre sur les animaux.",
-        "Nina trouve une histoire de biche et de tigre.",
-        "Elle paie au guichet et range le livre.",
-        "Dehors, le ciel est bleu.",
-        "Ils mangent une pizza sur un banc.",
-        "Puis ils vont à la cantine du parc.",
-        "Nina boit un jus et lit quelques pages.",
-        "Son ami dessine une souris grise.",
-        "Ils voient un pigeon près de la rivière.",
-        "Nina photographie une libellule.",
-        "Ensuite, ils rentrent à l’immeuble.",
-        "Nina pose le livre sur le lit.",
-        "Elle lave une serviette dans la buanderie.",
-        "Puis elle fixe un cadre avec une vis.",
-        "Le soir, elle lit encore un peu.",
-        "Elle regarde le ciel par la fenêtre.",
-        "Son ami lui envoie un message gentil.",
-        "Nina s’endort heureuse."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Ibrahim commence un stage chez un cuisinier en ville.",
-        "Il arrive à la boulangerie quand le ciel est encore gris.",
-        "Le matin, il apprend à frire et à cuisiner du riz.",
-        "Il note chaque ingrédient dans un petit livre.",
-        "À midi, il déjeune à la cantine avec l’équipe.",
-        "Un client timide demande le prix d’une pizza.",
-        "Ibrahim répond avec le sourire et range la caisse.",
-        "L’après-midi, sa cousine passe avec une serviette de table.",
-        "Ils parlent d’un film et d’une île pour les vacances.",
-        "Le soir, Ibrahim rentre à l’immeuble fatigué.",
-        "Il pose sa chemise propre sur le lit.",
-        "Il lit encore une page de son livre de recettes.",
-        "Le lendemain, il aide à l’enregistrement des commandes.",
-        "Le professeur de cuisine vérifie ses gestes.",
-        "Ibrahim fixe une étagère avec une vis.",
-        "Il nettoie l’évier et range les ustensiles.",
-        "Avant de partir, il dit merci à toute l’équipe.",
-        "Sur le chemin, il regarde le ciel devenir rose.",
-        "Chez lui, il s’endort content de sa journée."
-      ]
-    },
-    {
-      "level": "a2",
-      "sentences": [
-        "Lundi, Lili prépare son cartable.",
-        "Elle met un livre et une chemise propre.",
-        "À l’école, elle va à la cantine.",
-        "Elle mange du riz et une pizza.",
-        "En classe, elle lit près de la fenêtre.",
-        "Le ciel est gris et un peu humide.",
-        "Lili dessine une biche dans son cahier.",
-        "Son ami lui prête un surligneur.",
-        "À la pause, ils voient un pigeon.",
-        "Lili range ses affaires dans le casier.",
-        "L’après-midi, elle va à la librairie.",
-        "Elle choisit un livre sur les tigres.",
-        "Elle paie au guichet et sort.",
-        "Chez elle, elle pose le livre sur le lit.",
-        "Elle lave une serviette à l’évier.",
-        "Puis elle fixe une photo avec une vis.",
-        "Le soir, elle lit encore un peu.",
-        "Elle regarde le ciel devenir noir.",
-        "Puis elle s’endort."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Quand Maya a la grippe, elle reste au lit toute la journée.",
-        "Maman lui apporte une serviette froide et un comprimé.",
-        "Maya regarde le ciel gris par la fenêtre.",
-        "Sa cousine lui lit un livre à voix haute.",
-        "L’infirmière de l’école appelle pour prendre des nouvelles.",
-        "Maya se sent triste, mais elle reste gentille.",
-        "Le soir, elle boit une tisane près du lit.",
-        "Le lendemain, la fièvre baisse un peu.",
-        "Maya met une chemise confortable et s’assoit.",
-        "Elle regarde un film calme avec maman.",
-        "Son ami lui envoie un message depuis la cantine.",
-        "Maya sourit et répond tout de suite.",
-        "Elle note dans un carnet comment elle se sent.",
-        "Quand elle va mieux, elle range sa chambre.",
-        "Elle fixe un cadre avec une petite vis.",
-        "Puis elle lit encore quelques pages.",
-        "Le week-end, elle marche près de la rivière.",
-        "Elle photographie une libellule et un pigeon.",
-        "Enfin, elle rentre se reposer sur le lit."
-      ]
-    },
-    {
-      "level": "a2",
-      "sentences": [
-        "Au parc, Tim joue avec son ami.",
-        "Ils voient une biche derrière les arbres.",
-        "Un pigeon gris marche près d’eux.",
-        "Tim lit un livre sous un ciel bleu.",
-        "Puis ils mangent une pizza sur l’herbe.",
-        "Tim boit de l’eau à la fontaine.",
-        "Il photographie une libellule.",
-        "Son ami dessine une souris.",
-        "Ils marchent jusqu’à la rivière.",
-        "Tim range le livre dans son sac.",
-        "Sur le chemin, il croise sa cousine.",
-        "Elle porte une chemise verte.",
-        "Ils rentrent ensemble à l’immeuble.",
-        "Tim pose son sac près du lit.",
-        "Il lave une serviette à l’évier.",
-        "Puis il fixe un poster avec une vis.",
-        "Le soir, il lit encore un peu.",
-        "Il regarde le ciel par la fenêtre.",
-        "Il s’endort content."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Iris organise une sortie voilier avec des amis.",
-        "Elle prépare le sac : livre, serviette et gourde.",
-        "Sur le quai, le ciel est clair et le vent léger.",
-        "Le cuisinier du bateau prépare du riz et une pizza.",
-        "Iris photographie un pélican et une libellule.",
-        "Un ami timide demande le prix de la location.",
-        "Ils naviguent vers une petite île.",
-        "À midi, ils mangent près de la rivière.",
-        "Iris lit quelques pages allongée au soleil.",
-        "L’après-midi, le ciel devient un peu gris.",
-        "Ils rentrent avant la pluie vers l’immeuble.",
-        "Iris pose sa chemise mouillée près du lit.",
-        "Elle lave la serviette dans la buanderie.",
-        "Puis elle fixe une carte de l’île avec une vis.",
-        "Le soir, elle regarde un film sur les océans.",
-        "Son ami lui envoie les photos de la journée.",
-        "Iris note les souvenirs dans un carnet.",
-        "Elle éteint la lumière de la chambre.",
-        "Elle s’endort bercée par le souvenir du vent."
-      ]
-    },
-    {
-      "level": "a2",
-      "sentences": [
-        "Dimanche, Samir aide à la cuisine.",
-        "Le cuisinier lui montre les ustensiles.",
-        "Samir lave l’évier avec une serviette.",
-        "Il coupe un kiwi et prépare du riz.",
-        "Il ajoute un peu de piment.",
-        "À midi, les amis mangent une pizza.",
-        "Samir sourit et range la table.",
-        "Il fixe une étagère avec une vis.",
-        "Puis il lit un livre de recettes.",
-        "Sa nièce dessine une biche.",
-        "Ils regardent le ciel par la fenêtre.",
-        "L’après-midi, Samir va à la librairie.",
-        "Il choisit un livre sur les tigres.",
-        "Il paie au guichet et sort.",
-        "Chez lui, il pose le livre sur le lit.",
-        "Il range sa chemise dans l’armoire.",
-        "Le soir, il mange encore un peu de riz.",
-        "Il dit merci au cuisinier.",
-        "Puis il s’endort."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Kim prépare un dossier urgent pour la direction.",
-        "Elle range un livre, une chemise et un badge dans le sac.",
-        "À l’école, elle passe d’abord au guichet d’enregistrement.",
-        "Le secrétaire lui indique le bureau de la sécurité.",
-        "Kim explique calmement le problème à l’infirmière.",
-        "Ensuite, elle boit un thé à la cantine.",
-        "Son ami ingénieur l’appelle pour vérifier un détail.",
-        "Kim note tout dans un carnet gris.",
-        "L’après-midi, elle présente le dossier en réunion.",
-        "Les collègues écoutent et posent des questions.",
-        "Kim reste timide au début, puis plus à l’aise.",
-        "Le soir, elle rentre à l’immeuble sous un ciel rose.",
-        "Elle pose le sac près du lit et soupire.",
-        "Elle regarde un film sous-titré pour se détendre.",
-        "Puis elle lave une serviette à l’évier.",
-        "Elle fixe une photo de l’équipe avec une vis.",
-        "Avant de dormir, elle range sa chemise.",
-        "Elle regarde encore une fois le ciel.",
-        "Elle s’endort soulagée."
-      ]
-    },
-    {
-      "level": "a2",
-      "sentences": [
-        "À la ferme, Mina voit une biche.",
-        "Elle photographie aussi un pigeon.",
-        "Son ami lit un livre sous un arbre.",
-        "Le ciel est bleu et clair.",
-        "Ils mangent une pizza près de la rivière.",
-        "Mina boit de l’eau et sourit.",
-        "Elle dessine une souris dans son cahier.",
-        "Puis ils marchent jusqu’à l’île du lac.",
-        "Mina range le livre dans son sac.",
-        "Sur le chemin, elle croise sa cousine.",
-        "Elles parlent d’un film amusant.",
-        "Mina rentre à l’immeuble.",
-        "Elle pose sa chemise sur le lit.",
-        "Elle lave une serviette à l’évier.",
-        "Puis elle fixe un dessin avec une vis.",
-        "Le soir, elle lit encore un peu.",
-        "Elle regarde le ciel devenir sombre.",
-        "Elle dit bonne nuit à son ami.",
-        "Puis elle s’endort."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "En février, Hugo prépare un séjour de ski avec sa nièce.",
-        "Il vérifie les sacs : gants, livre, chemise et serviette.",
-        "Sur la route, le ciel est gris et la montagne blanche.",
-        "À la station, ils mangent à la cantine.",
-        "Hugo lit le plan des pistes près du lit du chalet.",
-        "Le lendemain, ils skient sous un ciel clair.",
-        "Hugo photographie une biche au bord de la forêt.",
-        "À midi, un ami timide demande le prix d’un forfait.",
-        "L’après-midi, ils se reposent près de la rivière gelée.",
-        "Hugo boit un chocolat et lit quelques pages.",
-        "Le soir, ils regardent un film dans le chalet.",
-        "Hugo range les skis et fixe un crochet avec une vis.",
-        "Il lave la serviette et prépare les sacs.",
-        "Avant de partir, il dit au revoir aux amis.",
-        "Dans le train, sa nièce dessine un tigre.",
-        "Hugo regarde le ciel défiler derrière la vitre.",
-        "Chez lui, il pose le livre sur le lit.",
-        "Il envoie les photos à sa cousine.",
-        "Puis il s’endort, fatigué et heureux."
       ]
     }
   ]

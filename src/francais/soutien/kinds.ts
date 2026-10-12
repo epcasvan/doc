@@ -67,7 +67,7 @@ export const SOUTIEN_KINDS = [
     id: 'lettres-phrase',
     label: '9 · Mot dans la phrase',
     description:
-      '8 phrases par défaut ; mot avec image obligatoire ; lettres sous le trait ; hors mots types 1 et 5.',
+      '8 phrases ; fichier phrases/<son>.json ; hors mots types 1 et 5 ; image obligatoire.',
     instruction: 'Écrivez le mot correct à l’aide des lettres.',
     preferredColumns: 1 as const,
   },
@@ -75,7 +75,7 @@ export const SOUTIEN_KINDS = [
     id: 'determinants',
     label: '10 · Déterminants',
     description:
-      '9 phrases par défaut ; l’ / le / la / les ; scènes rédigées (niveaux A1/A2/B1) ; voyelle simple colorée (Alpha).',
+      '8 phrases ; mots type 5 dans banque 9+12 ; trait sur det ([sing]/[plur]) ; ≥ 5 sing. / ≥ 2 plur.',
     instruction: 'Complétez avec les déterminants l’, le, la ou les.',
     preferredColumns: 1 as const,
   },
@@ -91,7 +91,7 @@ export const SOUTIEN_KINDS = [
     id: 'compter',
     label: '12 · Compter le son',
     description:
-      '8 phrases par défaut en Playwrite + compter le phonème ; trait de réponse plein.',
+      '9 phrases ; fichier phrases/<son>.json ; ≥ 3 fois le son de la fiche.',
     instruction: 'Combien de fois entendez-vous le son ?',
     preferredColumns: 1 as const,
   },
@@ -107,7 +107,7 @@ export const SOUTIEN_KINDS = [
     id: 'lire',
     label: '14 · Phrases à lire',
     description:
-      '20 phrases par défaut ; voyelle simple colorée (Alpha : pas an/au/eau…).',
+      '19 phrases par défaut ; banque commune ; ≥ 3 fois le son ; voyelle colorée (Alpha).',
     instruction: 'Lisez les phrases.',
     preferredColumns: 1 as const,
   },

@@ -1,961 +1,487 @@
 {
-  "type9": [
+  "son": "x-gz",
+  "phrases": [
     {
-      "level": "a1",
-      "word": "exagération",
-      "sentence": "Xavier prend une exagération bien."
+      "word": "axe",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Cet exemple montre l’axe exact.",
+            "Xavier trace un axe exact."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Pour cet exercice, trace l’axe en suivant l’exemple exact.",
+            "Xavier donne un exemple d’axe exact à Alex dans l’examen."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Alexandre trace un axe exact pour l’examen, mais Xavier préfère un exemple.",
+            "Quand Lou trace un axe, elle copie l’exemple exact de cet exercice d’examen."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "exagération",
-      "sentence": "Après le cours, Xavier montre une exagération exactement."
+      "word": "bon",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Cet exercice est un bon exemple."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "exagération",
-      "sentence": "À midi, quand la maîtresse range une exagération avec Xavier, et Xavier reste très exact."
+      "word": "Cet",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Cet exemple est fixe et exact.",
+            "Cet exemple exact parle d’oxygène.",
+            "Cet exemple exotique est relax."
+          ]
+        },
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Cet homme est un grand magicien."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
+      "word": "classe",
+      "variants": [
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand la classe est mixte, Lou exige un exemple exact et un exercice."
+          ]
+        }
+      ]
+    },
+    {
       "word": "examen",
-      "sentence": "Le professeur utilise un examen exactement."
+      "variants": [
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Lou fait cet exercice et prépare l’examen avec un exemple.",
+            "Lou reste relax pendant l’examen et donne un exemple exact.",
+            "Pendant l’examen, garde les yeux sur cet exercice et cet exemple."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand Lou est relax, elle réussit l’examen avec un exemple exact et un exercice."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "examen",
-      "sentence": "Avant le repas, Alexandre utilise un examen exactement."
-    },
-    {
-      "level": "b1",
-      "word": "examen",
-      "sentence": "À midi, quand la cousine recopie un examen avec Xavier, et Xavier reste très exact."
-    },
-    {
-      "level": "a1",
-      "word": "exemplaire",
-      "sentence": "La grand-mère montre un exemplaire avec Xavier."
-    },
-    {
-      "level": "a2",
-      "word": "exemplaire",
-      "sentence": "Ce soir, Xavier utilise un exemplaire près de Alexandre."
-    },
-    {
-      "level": "b1",
-      "word": "exemplaire",
-      "sentence": "À midi, quand le frère trouve un exemplaire exactement, parce que Alexandre est exact aussi."
-    },
-    {
-      "level": "a1",
       "word": "exemple",
-      "sentence": "Le garçon étudie un exemple exactement."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Ce groupe mixte exige un exemple.",
+            "Ce luxe est un exemple exotique.",
+            "Ce préfixe est un exemple exact.",
+            "Ce texte est un exemple exact."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Comme ce texte est difficile, Lou exige un exemple exact et un exercice.",
+            "Quand cet exercice devient difficile, Lou regarde bien un exemple exact avant l’examen.",
+            "Quand Lou rêve de luxe, elle exige un exemple exact de chaque hôtel exotique."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "exemple",
-      "sentence": "Ce soir, Xavier écrit un exemple près de Alexandre."
-    },
-    {
-      "level": "b1",
-      "word": "exemple",
-      "sentence": "À midi, quand le garçon utilise un exemple exactement, parce que Alexandre est exact aussi."
-    },
-    {
-      "level": "a1",
       "word": "exercice",
-      "sentence": "La factrice corrige un exercice exactement."
-    },
-    {
-      "level": "a2",
-      "word": "exercice",
-      "sentence": "Ce soir, Xavier étudie un exercice près de Alexandre."
-    },
-    {
-      "level": "b1",
-      "word": "exercice",
-      "sentence": "À midi, quand le maître corrige un exercice exactement, parce que Alexandre est exact aussi."
-    },
-    {
-      "level": "a1",
-      "word": "exhibition",
-      "sentence": "Le cousin joue avec une exhibition exactement."
-    },
-    {
-      "level": "a2",
-      "word": "exhibition",
-      "sentence": "Ce matin, Xavier regarde une exhibition près de Alexandre."
-    },
-    {
-      "level": "b1",
-      "word": "exhibition",
-      "sentence": "À midi, quand la copine commence une exhibition avec Xavier, et Xavier reste très exact."
-    },
-    {
-      "level": "a1",
-      "word": "exigence",
-      "sentence": "Le boulanger range une exigence avec Xavier."
-    },
-    {
-      "level": "a2",
-      "word": "exigence",
-      "sentence": "Ce soir, Xavier pose une exigence près de Alexandre."
-    },
-    {
-      "level": "b1",
-      "word": "exigence",
-      "sentence": "À midi, quand le grand-père oublie une exigence exactement, parce que Alexandre est exact aussi."
-    },
-    {
-      "level": "a1",
-      "word": "exil",
-      "sentence": "Le papa invite un exil exactement."
-    },
-    {
-      "level": "a2",
-      "word": "exil",
-      "sentence": "À midi, Alexia appelle un exil avec Xavier."
-    },
-    {
-      "level": "b1",
-      "word": "exil",
-      "sentence": "À midi, quand le papa embrasse un exil exactement, parce que Alexandre est exact aussi."
-    },
-    {
-      "level": "a1",
-      "word": "existence",
-      "sentence": "La jardinière invite une existence exactement."
-    },
-    {
-      "level": "a2",
-      "word": "existence",
-      "sentence": "Ce soir, Xavier invite une existence près de Alexandre."
-    },
-    {
-      "level": "b1",
-      "word": "existence",
-      "sentence": "À midi, quand la sœur appelle une existence avec Xavier, et Xavier reste très exact."
-    },
-    {
-      "level": "a1",
-      "word": "exode",
-      "sentence": "Le copain écoute un exode exactement."
-    },
-    {
-      "level": "a2",
-      "word": "exode",
-      "sentence": "Ce soir, Xavier commence un exode près de Alexandre."
-    },
-    {
-      "level": "b1",
-      "word": "exode",
-      "sentence": "À midi, quand la directrice raconte un exode exactement, parce que Alexandre est exact aussi."
-    },
-    {
-      "level": "a1",
-      "word": "exorcisme",
-      "sentence": "Le cuisinier termine un exorcisme avec Xavier."
-    },
-    {
-      "level": "a2",
-      "word": "exorcisme",
-      "sentence": "Après le cours, Xavier aime un exorcisme exactement."
-    },
-    {
-      "level": "b1",
-      "word": "exorcisme",
-      "sentence": "À midi, quand Xavier regarde un exorcisme dans la classe, et Xavier reste très exact."
-    },
-    {
-      "level": "a1",
-      "word": "exubérance",
-      "sentence": "Alexandre aide une exubérance bien."
-    },
-    {
-      "level": "a2",
-      "word": "exubérance",
-      "sentence": "Avant le repas, Alexandre embrasse une exubérance exactement."
-    },
-    {
-      "level": "b1",
-      "word": "exubérance",
-      "sentence": "À midi, quand le professeur invite une exubérance exactement, parce que Alexandre est exact aussi."
-    },
-    {
-      "level": "a1",
-      "word": "exutoire",
-      "sentence": "La collègue oublie un exutoire exactement."
-    },
-    {
-      "level": "a2",
-      "word": "exutoire",
-      "sentence": "Ce soir, Alexia cherche un exutoire près de Alexandre."
-    },
-    {
-      "level": "b1",
-      "word": "exutoire",
-      "sentence": "À midi, quand la grand-mère montre un exutoire avec Xavier, et Xavier reste très exact."
-    },
-    {
-      "level": "a1",
-      "word": "hexagone",
-      "sentence": "La tante étudie un hexagone exactement."
-    },
-    {
-      "level": "a2",
-      "word": "hexagone",
-      "sentence": "Ce soir, Xavier prépare un hexagone près de Alexandre."
-    },
-    {
-      "level": "b1",
-      "word": "hexagone",
-      "sentence": "À midi, quand le facteur écrit un hexagone avec Xavier, et Xavier reste très exact."
-    }
-  ],
-  "type10": [
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Xavier montre une exagération exactement.",
-      "parts": [
+      "variants": [
         {
-          "t": "Après "
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Xavier fait un exercice exact."
+          ]
         },
         {
-          "blank": "le"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alex fait un exercice d’examen avec Xavier et Max.",
+            "Dans ce cours mixte, Lou fait un exercice et un exemple exact."
+          ]
         },
         {
-          "t": " cours, Xavier montre une exagération exactement."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Alexandre trouve l’exercice exact, mais Xavier préfère un autre exemple pour Max."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "À midi, quand la maîtresse range une exagération avec Xavier, et Xavier reste très exact.",
-      "parts": [
+      "word": "fixe",
+      "variants": [
         {
-          "t": "À midi, quand "
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Xavier a un prix fixe exact."
+          ]
         },
         {
-          "blank": "la"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alex paie un prix fixe exact pour l’examen de Xavier."
+          ]
         },
         {
-          "t": " maîtresse range une exagération avec Xavier, et Xavier reste très exact."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Alexandre voit un prix fixe dans l’exemple, mais Xavier préfère le tarif exact."
+          ]
         }
       ]
     },
     {
-      "level": "a1",
-      "sentence": "Le professeur utilise un examen exactement.",
-      "parts": [
+      "word": "hôtel",
+      "variants": [
         {
-          "blank": "Le"
-        },
-        {
-          "t": " professeur utilise un examen exactement."
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Lou exige un hôtel de luxe exotique pour cet exemple."
+          ]
         }
       ]
     },
     {
-      "level": "a2",
-      "sentence": "Avant le repas, Alexandre utilise un examen exactement.",
-      "parts": [
+      "word": "luxe",
+      "variants": [
         {
-          "t": "Avant "
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Xavier voit un luxe excessif."
+          ]
         },
         {
-          "blank": "le"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alex trouve un exemple de luxe dans l’examen de Xavier."
+          ]
         },
         {
-          "t": " repas, Alexandre utilise un examen exactement."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Alexandre étudie le luxe dans un examen, mais Xavier préfère le texte exact."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "À midi, quand la cousine recopie un examen avec Xavier, et Xavier reste très exact.",
-      "parts": [
+      "word": "maximum",
+      "variants": [
         {
-          "t": "À midi, quand "
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Le maximum de cet exemple est exact.",
+            "Xavier donne le maximum exact."
+          ]
         },
         {
-          "blank": "la"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alex donne le maximum pour l’examen de Xavier.",
+            "Lou donne le maximum pour chaque exercice, chaque examen et chaque exemple."
+          ]
         },
         {
-          "t": " cousine recopie un examen avec Xavier, et Xavier reste très exact."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Alexandre atteint le maximum à l’examen, mais Xavier préfère un exemple exact.",
+            "Quand Lou veut le maximum, elle exige un exemple exact de chaque exercice d’examen."
+          ]
         }
       ]
     },
     {
-      "level": "a1",
-      "sentence": "La grand-mère montre un exemplaire avec Xavier.",
-      "parts": [
+      "word": "mixte",
+      "variants": [
         {
-          "blank": "La"
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Xavier choisit une classe mixte."
+          ]
         },
         {
-          "t": " grand-mère montre un exemplaire avec Xavier."
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alex choisit une classe mixte pour l’examen de Xavier."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Alexandre prépare une salade mixte pour l’examen, mais Xavier préfère une salade verte."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "À midi, quand le frère trouve un exemplaire exactement, parce que Alexandre est exact aussi.",
-      "parts": [
+      "word": "oxygene",
+      "variants": [
         {
-          "t": "À midi, quand "
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Xavier mesure l’oxygène exact."
+          ]
         },
         {
-          "blank": "le"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alex donne un exemple d’oxygène pour l’examen de Xavier."
+          ]
         },
         {
-          "t": " frère trouve un exemplaire exactement, parce que Alexandre est exact aussi."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Alexandre étudie l’oxygène pour l’examen, mais Xavier préfère un exemple exact."
+          ]
         }
       ]
     },
     {
-      "level": "a1",
-      "sentence": "Le garçon étudie un exemple exactement.",
-      "parts": [
+      "word": "oxygène",
+      "variants": [
         {
-          "blank": "Le"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Lou explique l’oxygène avec un exemple exact pendant l’examen."
+          ]
         },
         {
-          "t": " garçon étudie un exemple exactement."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand Lou étudie l’oxygène, elle exige un exemple exact pour réussir cet examen."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "À midi, quand le garçon utilise un exemple exactement, parce que Alexandre est exact aussi.",
-      "parts": [
+      "word": "prefixe",
+      "variants": [
         {
-          "t": "À midi, quand "
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Xavier écrit un préfixe exact."
+          ]
         },
         {
-          "blank": "le"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alex explique un préfixe dans l’examen de Xavier."
+          ]
         },
         {
-          "t": " garçon utilise un exemple exactement, parce que Alexandre est exact aussi."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Alexandre ajoute un préfixe exact à l’exemple, mais Xavier préfère le suffixe."
+          ]
         }
       ]
     },
     {
-      "level": "a1",
-      "sentence": "La factrice corrige un exercice exactement.",
-      "parts": [
+      "word": "préfixe",
+      "variants": [
         {
-          "blank": "La"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Lou cherche un préfixe dans cet exercice et donne un exemple exact."
+          ]
         },
         {
-          "t": " factrice corrige un exercice exactement."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand Lou apprend un préfixe, elle exige un exemple exact et refait cet exercice."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "À midi, quand le maître corrige un exercice exactement, parce que Alexandre est exact aussi.",
-      "parts": [
+      "word": "prix",
+      "variants": [
         {
-          "t": "À midi, quand "
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Lou exige un prix fixe et exact pour cet exemple."
+          ]
         },
         {
-          "blank": "le"
-        },
-        {
-          "t": " maître corrige un exercice exactement, parce que Alexandre est exact aussi."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Si le prix reste fixe, Lou peut exiger un exemple exact avant l’examen."
+          ]
         }
       ]
     },
     {
-      "level": "a1",
-      "sentence": "Le cousin joue avec une exhibition exactement.",
-      "parts": [
+      "word": "relax",
+      "variants": [
         {
-          "blank": "Le"
+          "level": "a1",
+          "sentences": [
+            "Xavier reste relax et exact."
+          ]
         },
         {
-          "t": " cousin joue avec une exhibition exactement."
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alex reste relax avant l’examen de Xavier et de Max."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Alexandre reste relax pendant l’examen, mais Xavier préfère un exemple exact pour Max."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "À midi, quand la copine commence une exhibition avec Xavier, et Xavier reste très exact.",
-      "parts": [
+      "word": "taxe",
+      "variants": [
         {
-          "t": "À midi, quand "
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "La taxe est un exemple exact.",
+            "Xavier paie une taxe exacte."
+          ]
         },
         {
-          "blank": "la"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alex paie la taxe dans l’exemple de l’examen de Xavier.",
+            "Lou paie une taxe et vérifie l’exemple exact de l’exercice."
+          ]
         },
         {
-          "t": " copine commence une exhibition avec Xavier, et Xavier reste très exact."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Alexandre calcule la taxe pour l’examen, mais Xavier préfère un exemple exact.",
+            "Quand la taxe augmente, Lou exige un exemple exact et refuse toute exagération."
+          ]
         }
       ]
     },
     {
-      "level": "a1",
-      "sentence": "Le boulanger range une exigence avec Xavier.",
-      "parts": [
+      "word": "texte",
+      "variants": [
         {
-          "blank": "Le"
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Xavier lit un texte exact."
+          ]
         },
         {
-          "t": " boulanger range une exigence avec Xavier."
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alex lit un texte dans l’examen de Xavier et de Max.",
+            "Lou lit le texte et fait l’exercice avec un exemple exact."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Alexandre relit le texte pour l’examen, mais Xavier préfère un exemple exact de Max."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "À midi, quand le grand-père oublie une exigence exactement, parce que Alexandre est exact aussi.",
-      "parts": [
+      "word": "yeux",
+      "variants": [
         {
-          "t": "À midi, quand "
+          "level": "a1",
+          "number": "plur",
+          "sentences": [
+            "Ferme les yeux pour cet exercice exact.",
+            "Xavier ferme les yeux exprès."
+          ]
         },
         {
-          "blank": "le"
+          "level": "a2",
+          "number": "plur",
+          "sentences": [
+            "Alex ferme les yeux pour l’examen de Xavier et de Max."
+          ]
         },
         {
-          "t": " grand-père oublie une exigence exactement, parce que Alexandre est exact aussi."
+          "level": "b1",
+          "number": "plur",
+          "sentences": [
+            "Alexandre ouvre les yeux avant l’examen, mais Xavier préfère un exemple exact pour Max.",
+            "Quand Lou ferme les yeux, elle imagine un exemple exotique et un exercice exact."
+          ]
         }
       ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le papa invite un exil exactement.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " papa invite un exil exactement."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand le papa embrasse un exil exactement, parce que Alexandre est exact aussi.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " papa embrasse un exil exactement, parce que Alexandre est exact aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La jardinière invite une existence exactement.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " jardinière invite une existence exactement."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand la sœur appelle une existence avec Xavier, et Xavier reste très exact.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " sœur appelle une existence avec Xavier, et Xavier reste très exact."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le copain écoute un exode exactement.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " copain écoute un exode exactement."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand la directrice raconte un exode exactement, parce que Alexandre est exact aussi.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " directrice raconte un exode exactement, parce que Alexandre est exact aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le cuisinier termine un exorcisme avec Xavier.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " cuisinier termine un exorcisme avec Xavier."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Xavier aime un exorcisme exactement.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Xavier aime un exorcisme exactement."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Xavier regarde un exorcisme dans la classe, et Xavier reste très exact.",
-      "parts": [
-        {
-          "t": "À midi, quand Xavier regarde un exorcisme dans "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " classe, et Xavier reste très exact."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Alexandre embrasse une exubérance exactement.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, Alexandre embrasse une exubérance exactement."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand le professeur invite une exubérance exactement, parce que Alexandre est exact aussi.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " professeur invite une exubérance exactement, parce que Alexandre est exact aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La collègue oublie un exutoire exactement.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " collègue oublie un exutoire exactement."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand la grand-mère montre un exutoire avec Xavier, et Xavier reste très exact.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " grand-mère montre un exutoire avec Xavier, et Xavier reste très exact."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La tante étudie un hexagone exactement.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " tante étudie un hexagone exactement."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand le facteur écrit un hexagone avec Xavier, et Xavier reste très exact.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " facteur écrit un hexagone avec Xavier, et Xavier reste très exact."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le maître oublie une exagération exactement.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " maître oublie une exagération exactement."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le voisin étudie un examen exactement.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " voisin étudie un examen exactement."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le boulanger recopie un exemple avec Xavier.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " boulanger recopie un exemple avec Xavier."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Alexandre étudie un hexagone exactement.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Alexandre étudie un hexagone exactement."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand la voisine montre une exigence avec Xavier, et Xavier reste très exact.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " voisine montre une exigence avec Xavier, et Xavier reste très exact."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand la jardinière invite un exil exactement, parce que Alexandre est exact aussi.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " jardinière invite un exil exactement, parce que Alexandre est exact aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand le frère embrasse une existence exactement, parce que Alexandre est exact aussi.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " frère embrasse une existence exactement, parce que Alexandre est exact aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le médecin corrige un exercice exactement.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " médecin corrige un exercice exactement."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La factrice choisit une exhibition exactement.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " factrice choisit une exhibition exactement."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le voisin trouve une exigence exactement.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " voisin trouve une exigence exactement."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand le musicien console une exubérance avec Xavier, et Xavier reste très exact.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " musicien console une exubérance avec Xavier, et Xavier reste très exact."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand la sœur range un exutoire avec Xavier, et Xavier reste très exact.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " sœur range un exutoire avec Xavier, et Xavier reste très exact."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand le frère utilise un hexagone exactement, parce que Alexandre est exact aussi.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " frère utilise un hexagone exactement, parce que Alexandre est exact aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand le grand-père trouve une exagération exactement, parce que Alexandre est exact aussi.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " grand-père trouve une exagération exactement, parce que Alexandre est exact aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Xavier lit un examen dans la classe, et Xavier reste très exact.",
-      "parts": [
-        {
-          "t": "À midi, quand Xavier lit un examen dans "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " classe, et Xavier reste très exact."
-        }
-      ]
-    }
-  ],
-  "type12": [
-    {
-      "level": "a1",
-      "sentence": "Le maître oublie une exagération exactement."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le voisin étudie un examen exactement."
-    },
-    {
-      "level": "a1",
-      "sentence": "Alexia range un exemplaire bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le boulanger recopie un exemple avec Xavier."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Xavier écoute un exorcisme près de Alexandre."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Xavier appelle une exubérance près de Alexandre."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Alexia montre un exutoire avec Xavier."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Alexandre étudie un hexagone exactement."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand la voisine montre une exigence avec Xavier, et Xavier reste très exact."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand la jardinière invite un exil exactement, parce que Alexandre est exact aussi."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand le frère embrasse une existence exactement, parce que Alexandre est exact aussi."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand une amie commence un exode avec Xavier, et Xavier reste très exact."
-    }
-  ],
-  "type14": [
-    {
-      "level": "a1",
-      "sentence": "Le médecin corrige un exercice exactement."
-    },
-    {
-      "level": "a1",
-      "sentence": "La factrice choisit une exhibition exactement."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le voisin trouve une exigence exactement."
-    },
-    {
-      "level": "a1",
-      "sentence": "Alexia console un exil bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "Une amie console une existence avec Xavier."
-    },
-    {
-      "level": "a1",
-      "sentence": "Un ami termine un exode exactement."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Xavier prend une exagération près de Alexandre."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Xavier écrit un examen près de Alexandre."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Xavier cherche un exemplaire près de Alexandre."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Alexia écrit un exemple avec Xavier."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, Alexandre corrige un exercice près de Xavier."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Xavier choisit une exhibition près de Alexandre."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand un ami choisit un exorcisme exactement, parce que Alexandre est exact aussi."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand le musicien console une exubérance avec Xavier, et Xavier reste très exact."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand la sœur range un exutoire avec Xavier, et Xavier reste très exact."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand le frère utilise un hexagone exactement, parce que Alexandre est exact aussi."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand le grand-père trouve une exagération exactement, parce que Alexandre est exact aussi."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Xavier lit un examen dans la classe, et Xavier reste très exact."
     }
   ]
 }

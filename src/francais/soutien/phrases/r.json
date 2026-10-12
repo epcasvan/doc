@@ -1,3235 +1,949 @@
 {
-  "type9": [
+  "son": "r",
+  "phrases": [
     {
-      "level": "a1",
+      "word": "abricot",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Rose mange un abricot rouge."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Romain rapporte un abricot rond pour Rose et Rita."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Rémi a rangé un abricot dans le frigo, mais Rose et Romain préfèrent les raisins."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "accordéon",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Rémi joue de l’accordéon rouge.",
+            "Rose joue de l’accordéon."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Romain écoute l’accordéon de Rose et de Rita à la radio."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand Rémi entend l’accordéon, il rit et se rappelle les fêtes de son grand-père.",
+            "Rémi apprend l’accordéon, mais Rose et Romain préfèrent la guitare rouge de Rita."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "acrylique",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Rose utilise la peinture acrylique."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Romain repeint la rue en rouge avec de la peinture acrylique."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Rémi dit que la peinture acrylique sèche très vite, mais Rose préfère la gouache."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "actrice",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Rose est une actrice célèbre."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Romain rencontre l’actrice Rose au restaurant avec Rita."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand l’actrice est fatiguée, elle rentre pour se reposer et regarder un film.",
+            "Rémi regarde l’actrice dans un film, mais Rose et Romain préfèrent lire un roman."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "agente",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "L’agente d’entretien range la salle."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "L’agente d’entretien rentre tard le soir après son travail."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand l’agente d’entretien arrive, elle ouvre les rideaux et range tous les papiers."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "agente entretien",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Rose est agente d’entretien."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "L’agente d’entretien Rose répare le robinet de Romain."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Rémi remercie l’agente d’entretien Rose, car elle a rangé tout le bureau."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "agricultrice",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "L’agricultrice rentre ses vaches tard.",
+            "Rose est une agricultrice rurale."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "L’agricultrice Rose récolte des carottes rouges pour Romain et Rita."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand l’agricultrice traverse le pré, ses vaches la suivent partout et rentrent avec elle.",
+            "Rémi aide l’agricultrice Rose à récolter les raisins, mais Romain préfère garder le troupeau."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "appareil",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Robert a un appareil photo rouge."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "appareil photo",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Rose prend un appareil photo."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Romain répare l’appareil photo de Rose et de Rita."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Rémi rapporte l’appareil photo à Rose, mais Romain préfère prendre un portrait."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "araignée",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Rose a peur d’une araignée.",
+            "Rose voit une araignée noire."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Romain regarde l’araignée sur le rideau de Rose et de Rita.",
+            "Une araignée construit sa toile près de la rivière."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand Robert aperçoit une araignée, il reste calme parce qu’elle ne représente aucun danger.",
+            "Rémi trouve une araignée sur le mur, mais Rose et Romain préfèrent la regarder."
+          ]
+        }
+      ]
+    },
+    {
       "word": "arbre",
-      "sentence": "Marie dessine un arbre bien."
-    },
-    {
-      "level": "a2",
-      "word": "arbre",
-      "sentence": "Ce soir, le cousin se cache derrière un arbre avec Marie."
-    },
-    {
-      "level": "b1",
-      "word": "arbre",
-      "sentence": "Ce matin, quand la jardinière grimpe un arbre, et Marie est très contente."
-    },
-    {
-      "level": "a1",
-      "word": "barre",
-      "sentence": "Le grand-père trouve la barre."
-    },
-    {
-      "level": "a2",
-      "word": "barre",
-      "sentence": "Ce soir, la factrice prend la barre avec Marie."
-    },
-    {
-      "level": "b1",
-      "word": "barre",
-      "sentence": "Ce matin, quand le directeur utilise la barre, parce que Roger est très content."
-    },
-    {
-      "level": "a1",
-      "word": "beurre",
-      "sentence": "La directrice achète le beurre."
-    },
-    {
-      "level": "a2",
-      "word": "beurre",
-      "sentence": "Ce matin, le directeur achète le beurre avec Marie."
-    },
-    {
-      "level": "b1",
-      "word": "beurre",
-      "sentence": "Ce matin, quand le papa achète le beurre, parce que Roger est très content."
-    },
-    {
-      "level": "a1",
-      "word": "car",
-      "sentence": "La copine vend le car avec Roger."
-    },
-    {
-      "level": "a2",
-      "word": "car",
-      "sentence": "Après le cours, la musicienne répare le car dans la rue."
-    },
-    {
-      "level": "b1",
-      "word": "car",
-      "sentence": "Ce matin, quand Claire attend le car, parce que Roger est très content."
-    },
-    {
-      "level": "a1",
-      "word": "chanteur",
-      "sentence": "Pierre cherche le chanteur bien."
-    },
-    {
-      "level": "a2",
-      "word": "chanteur",
-      "sentence": "Avant le repas, la professeure pose le chanteur avec Roger."
-    },
-    {
-      "level": "b1",
-      "word": "chanteur",
-      "sentence": "Ce matin, quand le boulanger montre le chanteur, et Marie est très contente."
-    },
-    {
-      "level": "a1",
-      "word": "cour",
-      "sentence": "La boulangère joue dans le cour."
-    },
-    {
-      "level": "a2",
-      "word": "cour",
-      "sentence": "Avant le repas, le collègue joue dans le cour avec Marie."
-    },
-    {
-      "level": "b1",
-      "word": "cour",
-      "sentence": "Ce matin, quand la cuisinière joue dans le cour, et Marie est très contente."
-    },
-    {
-      "level": "a1",
-      "word": "croissant",
-      "sentence": "Le frère achète le croissant."
-    },
-    {
-      "level": "a2",
-      "word": "croissant",
-      "sentence": "Ce soir, le cousin partage le croissant près du parc."
-    },
-    {
-      "level": "b1",
-      "word": "croissant",
-      "sentence": "Ce matin, quand le bébé sert le croissant, et Marie est très contente."
-    },
-    {
-      "level": "a1",
-      "word": "cuir",
-      "sentence": "Le médecin utilise le cuir avec Roger."
-    },
-    {
-      "level": "a2",
-      "word": "cuir",
-      "sentence": "À midi, Marie range le cuir dans la rue."
-    },
-    {
-      "level": "b1",
-      "word": "cuir",
-      "sentence": "Ce matin, quand le maître oublie le cuir, parce que Roger est très content."
-    },
-    {
-      "level": "a1",
-      "word": "fruit",
-      "sentence": "La maîtresse choisit le fruit."
-    },
-    {
-      "level": "a2",
-      "word": "fruit",
-      "sentence": "Après le cours, le grand-père goûte le fruit avec Roger."
-    },
-    {
-      "level": "b1",
-      "word": "fruit",
-      "sentence": "Ce matin, quand la factrice partage le fruit, et Marie est très contente."
-    },
-    {
-      "level": "a1",
-      "word": "frère",
-      "sentence": "Le cuisinier aide le frère."
-    },
-    {
-      "level": "a2",
-      "word": "frère",
-      "sentence": "Avant le repas, la directrice s’occupe du frère avec Marie."
-    },
-    {
-      "level": "b1",
-      "word": "frère",
-      "sentence": "Ce matin, quand la factrice aide le frère, parce que Roger est très content."
-    },
-    {
-      "level": "a1",
-      "word": "guerre",
-      "sentence": "Le voisin écrit la guerre."
-    },
-    {
-      "level": "a2",
-      "word": "guerre",
-      "sentence": "Ce matin, la copine raconte la guerre près du parc."
-    },
-    {
-      "level": "b1",
-      "word": "guerre",
-      "sentence": "Ce matin, quand la musicienne lit la guerre, et Marie est très contente."
-    },
-    {
-      "level": "a1",
-      "word": "hiver",
-      "sentence": "Le collègue note un hiver avec Roger."
-    },
-    {
-      "level": "a2",
-      "word": "hiver",
-      "sentence": "Ce soir, Pierre attend un hiver dans la rue."
-    },
-    {
-      "level": "b1",
-      "word": "hiver",
-      "sentence": "Ce matin, quand la professeure parle avec un hiver, parce que Roger est très content."
-    },
-    {
-      "level": "a1",
-      "word": "livre",
-      "sentence": "Le frère donne au livre."
-    },
-    {
-      "level": "a2",
-      "word": "livre",
-      "sentence": "À midi, la boulangère emprunte le livre avec Roger."
-    },
-    {
-      "level": "b1",
-      "word": "livre",
-      "sentence": "Ce matin, quand le jardinier prend le livre, et Marie est très contente."
-    },
-    {
-      "level": "a1",
-      "word": "mardi",
-      "sentence": "La jardinière parle avec le mardi."
-    },
-    {
-      "level": "a2",
-      "word": "mardi",
-      "sentence": "Après le cours, une amie choisit le mardi avec Marie."
-    },
-    {
-      "level": "b1",
-      "word": "mardi",
-      "sentence": "Ce matin, quand le cousin aime le mardi, parce que Roger est très content."
-    },
-    {
-      "level": "a1",
-      "word": "mer",
-      "sentence": "La cousine regarde vers la mer."
-    },
-    {
-      "level": "a2",
-      "word": "mer",
-      "sentence": "Avant le repas, le médecin part vers la mer près du parc."
-    },
-    {
-      "level": "b1",
-      "word": "mer",
-      "sentence": "Quand une amie pique-nique près de la mer, parce que Roger est très content."
-    },
-    {
-      "level": "a1",
-      "word": "mur",
-      "sentence": "Roger longe le mur bien."
-    },
-    {
-      "level": "a2",
-      "word": "mur",
-      "sentence": "Ce matin, la maîtresse peint le mur dans la rue."
-    },
-    {
-      "level": "b1",
-      "word": "mur",
-      "sentence": "Ce matin, quand le grand-père mesure le mur, parce que Roger est très content."
-    },
-    {
-      "level": "a1",
-      "word": "mère",
-      "sentence": "La directrice console la mère."
-    },
-    {
-      "level": "a2",
-      "word": "mère",
-      "sentence": "Ce soir, le cuisinier suit la mère avec Roger."
-    },
-    {
-      "level": "b1",
-      "word": "mère",
-      "sentence": "Ce matin, quand la directrice appelle la mère, et Marie est très contente."
-    },
-    {
-      "level": "a1",
-      "word": "porte",
-      "sentence": "La fille ouvre la porte."
-    },
-    {
-      "level": "a2",
-      "word": "porte",
-      "sentence": "Avant le repas, la musicienne s’approche de la porte dans la rue."
-    },
-    {
-      "level": "b1",
-      "word": "porte",
-      "sentence": "Ce matin, quand la copine entre par la porte, parce que Roger est très content."
-    },
-    {
-      "level": "a1",
-      "word": "père",
-      "sentence": "La cuisinière aide le père."
-    },
-    {
-      "level": "a2",
-      "word": "père",
-      "sentence": "Après le cours, le collègue invite le père près du parc."
-    },
-    {
-      "level": "b1",
-      "word": "père",
-      "sentence": "À midi, quand Pierre salue le père avec Marie, et Marie est très contente."
-    },
-    {
-      "level": "a1",
-      "word": "rat",
-      "sentence": "Le garçon nourrit le rat."
-    },
-    {
-      "level": "a2",
-      "word": "rat",
-      "sentence": "Avant le repas, le frère observe le rat dans la rue."
-    },
-    {
-      "level": "b1",
-      "word": "rat",
-      "sentence": "Ce matin, quand la boulangère attrape le rat, parce que Roger est très content."
-    },
-    {
-      "level": "a1",
-      "word": "riz",
-      "sentence": "Le facteur sert le riz."
-    },
-    {
-      "level": "a2",
-      "word": "riz",
-      "sentence": "Ce matin, la jardinière mange le riz avec Roger."
-    },
-    {
-      "level": "b1",
-      "word": "riz",
-      "sentence": "Ce matin, quand une amie apporte le riz, et Marie est très contente."
-    },
-    {
-      "level": "a1",
-      "word": "robot",
-      "sentence": "La sœur range le robot."
-    },
-    {
-      "level": "a2",
-      "word": "robot",
-      "sentence": "Ce soir, la cousine cherche le robot avec Marie."
-    },
-    {
-      "level": "b1",
-      "word": "robot",
-      "sentence": "Ce matin, quand le médecin pose le robot, parce que Roger est très content."
-    },
-    {
-      "level": "a1",
-      "word": "rose",
-      "sentence": "Le directeur voit la rose."
-    },
-    {
-      "level": "a2",
-      "word": "rose",
-      "sentence": "À midi, Roger dessine la rose près du parc."
-    },
-    {
-      "level": "b1",
-      "word": "rose",
-      "sentence": "Ce matin, quand la cousine photographie la rose, parce que Roger est très content."
-    },
-    {
-      "level": "a1",
-      "word": "rouge",
-      "sentence": "Le professeur utilise le rouge."
-    },
-    {
-      "level": "a2",
-      "word": "rouge",
-      "sentence": "Après le cours, la grand-mère range le rouge dans la rue."
-    },
-    {
-      "level": "b1",
-      "word": "rouge",
-      "sentence": "Ce matin, quand le cuisinier oublie le rouge, parce que Roger est très content."
-    },
-    {
-      "level": "a1",
-      "word": "roux",
-      "sentence": "La cuisinière prend le roux."
-    },
-    {
-      "level": "a2",
-      "word": "roux",
-      "sentence": "Avant le repas, la fille utilise le roux avec Roger."
-    },
-    {
-      "level": "b1",
-      "word": "roux",
-      "sentence": "Ce matin, quand le voisin range le roux, et Marie est très contente."
-    },
-    {
-      "level": "a1",
-      "word": "rue",
-      "sentence": "Le boulanger traverse la rue."
-    },
-    {
-      "level": "a2",
-      "word": "rue",
-      "sentence": "Ce soir, la cuisinière descend la rue près du parc."
-    },
-    {
-      "level": "b1",
-      "word": "rue",
-      "sentence": "Ce matin, quand le voisin descend la rue, parce que Roger est très content."
-    },
-    {
-      "level": "a1",
-      "word": "sœur",
-      "sentence": "La collègue compte sur la sœur."
-    },
-    {
-      "level": "a2",
-      "word": "sœur",
-      "sentence": "Ce soir, le garçon chante avec la sœur près du parc."
-    },
-    {
-      "level": "b1",
-      "word": "sœur",
-      "sentence": "Ce matin, quand Pierre embrasse la sœur, parce que Roger est très content."
-    },
-    {
-      "level": "a1",
-      "word": "terre",
-      "sentence": "La sœur photographie la terre."
-    },
-    {
-      "level": "a2",
-      "word": "terre",
-      "sentence": "À midi, le facteur regarde la terre dans la rue."
-    },
-    {
-      "level": "b1",
-      "word": "terre",
-      "sentence": "Ce matin, quand la jardinière admire la terre, parce que Roger est très content."
-    },
-    {
-      "level": "a1",
-      "word": "train",
-      "sentence": "Le directeur préfère le train."
-    },
-    {
-      "level": "a2",
-      "word": "train",
-      "sentence": "Après le cours, le papa prend le train avec Roger."
-    },
-    {
-      "level": "b1",
-      "word": "train",
-      "sentence": "Ce soir, quand la cousine attend le train, et Marie est très contente."
-    },
-    {
-      "level": "a1",
-      "word": "tram",
-      "sentence": "Le copain regarde le tram."
-    },
-    {
-      "level": "a2",
-      "word": "tram",
-      "sentence": "Avant le repas, le musicien conduit le tram avec Marie."
-    },
-    {
-      "level": "b1",
-      "word": "tram",
-      "sentence": "Ce matin, quand Roger prend le tram, parce que Roger est très content."
-    },
-    {
-      "level": "a1",
-      "word": "trousse",
-      "sentence": "Claire écrit la trousse bien."
-    },
-    {
-      "level": "a2",
-      "word": "trousse",
-      "sentence": "Ce matin, le professeur étudie la trousse près du parc."
-    },
-    {
-      "level": "b1",
-      "word": "trousse",
-      "sentence": "Ce matin, quand la grand-mère prépare la trousse, et Marie est très contente."
-    },
-    {
-      "level": "a1",
-      "word": "ventre",
-      "sentence": "Le boulanger essuie la ventre."
-    },
-    {
-      "level": "a2",
-      "word": "ventre",
-      "sentence": "Ce soir, la cuisinière touche la ventre dans la rue."
-    },
-    {
-      "level": "b1",
-      "word": "ventre",
-      "sentence": "Ce matin, quand la fille montre la ventre, parce que Roger est très content."
-    },
-    {
-      "level": "a1",
-      "word": "verre",
-      "sentence": "Un ami essuie le verre."
-    },
-    {
-      "level": "a2",
-      "word": "verre",
-      "sentence": "Ce matin, la fille essuie le verre dans la rue."
-    },
-    {
-      "level": "b1",
-      "word": "verre",
-      "sentence": "Ce matin, quand le voisin essuie le verre, parce que Roger est très content."
-    }
-  ],
-  "type10": [
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le cousin se cache derrière un arbre avec Marie.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cousin se cache derrière un arbre avec Marie."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la jardinière grimpe un arbre, et Marie est très contente.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " jardinière grimpe un arbre, et Marie est très contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le grand-père trouve la barre.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " grand-père trouve "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " barre."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, la factrice prend la barre avec Marie.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " factrice prend "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " barre avec Marie."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le directeur utilise la barre, parce que Roger est très content.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " directeur utilise "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " barre, parce que Roger est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La directrice achète le beurre.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " directrice achète "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " beurre."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le directeur achète le beurre avec Marie.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " directeur achète "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " beurre avec Marie."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le papa achète le beurre, parce que Roger est très content.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " papa achète "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " beurre, parce que Roger est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La copine vend le car avec Roger.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " copine vend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " car avec Roger."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la musicienne répare le car dans la rue.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " musicienne répare "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " car dans "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " rue."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Claire attend le car, parce que Roger est très content.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Claire attend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " car, parce que Roger est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Pierre cherche le chanteur bien.",
-      "parts": [
-        {
-          "t": "Pierre cherche "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chanteur bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la professeure pose le chanteur avec Roger.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " professeure pose "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chanteur avec Roger."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le boulanger montre le chanteur, et Marie est très contente.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " boulanger montre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " chanteur, et Marie est très contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La boulangère joue dans le cour.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " boulangère joue dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cour."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le collègue joue dans le cour avec Marie.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " collègue joue dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cour avec Marie."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la cuisinière joue dans le cour, et Marie est très contente.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cuisinière joue dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cour, et Marie est très contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le frère achète le croissant.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " frère achète "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " croissant."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le cousin partage le croissant près du parc.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cousin partage "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " croissant près du parc."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le bébé sert le croissant, et Marie est très contente.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bébé sert "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " croissant, et Marie est très contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le médecin utilise le cuir avec Roger.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " médecin utilise "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cuir avec Roger."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Marie range le cuir dans la rue.",
-      "parts": [
-        {
-          "t": "À midi, Marie range "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cuir dans "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " rue."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le maître oublie le cuir, parce que Roger est très content.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " maître oublie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cuir, parce que Roger est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La maîtresse choisit le fruit.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " maîtresse choisit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " fruit."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le grand-père goûte le fruit avec Roger.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " grand-père goûte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " fruit avec Roger."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la factrice partage le fruit, et Marie est très contente.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " factrice partage "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " fruit, et Marie est très contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le cuisinier aide le frère.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " cuisinier aide "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " frère."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la directrice s’occupe du frère avec Marie.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " directrice s’occupe du frère avec Marie."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la factrice aide le frère, parce que Roger est très content.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " factrice aide "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " frère, parce que Roger est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le voisin écrit la guerre.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " voisin écrit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " guerre."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, la copine raconte la guerre près du parc.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " copine raconte "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " guerre près du parc."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la musicienne lit la guerre, et Marie est très contente.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " musicienne lit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " guerre, et Marie est très contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le collègue note un hiver avec Roger.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " collègue note un hiver avec Roger."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Pierre attend un hiver dans la rue.",
-      "parts": [
-        {
-          "t": "Ce soir, Pierre attend un hiver dans "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " rue."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la professeure parle avec un hiver, parce que Roger est très content.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " professeure parle avec un hiver, parce que Roger est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le frère donne au livre.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " frère donne au livre."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, la boulangère emprunte le livre avec Roger.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boulangère emprunte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " livre avec Roger."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le jardinier prend le livre, et Marie est très contente.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardinier prend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " livre, et Marie est très contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La jardinière parle avec le mardi.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " jardinière parle avec "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " mardi."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, une amie choisit le mardi avec Marie.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, une amie choisit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " mardi avec Marie."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le cousin aime le mardi, parce que Roger est très content.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cousin aime "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " mardi, parce que Roger est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La cousine regarde vers la mer.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " cousine regarde vers "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " mer."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le médecin part vers la mer près du parc.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " médecin part vers "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " mer près du parc."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand une amie pique-nique près de la mer, parce que Roger est très content.",
-      "parts": [
-        {
-          "t": "Quand une amie pique-nique près de "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " mer, parce que Roger est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Roger longe le mur bien.",
-      "parts": [
-        {
-          "t": "Roger longe "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " mur bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, la maîtresse peint le mur dans la rue.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maîtresse peint "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " mur dans "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " rue."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le grand-père mesure le mur, parce que Roger est très content.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " grand-père mesure "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " mur, parce que Roger est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La directrice console la mère.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " directrice console "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " mère."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le cuisinier suit la mère avec Roger.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cuisinier suit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " mère avec Roger."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la directrice appelle la mère, et Marie est très contente.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " directrice appelle "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " mère, et Marie est très contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La fille ouvre la porte.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " fille ouvre "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " porte."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la musicienne s’approche de la porte dans la rue.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " musicienne s’approche de "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " porte dans "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " rue."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la copine entre par la porte, parce que Roger est très content.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " copine entre par "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " porte, parce que Roger est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La cuisinière aide le père.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " cuisinière aide "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " père."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le collègue invite le père près du parc.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " collègue invite "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " père près du parc."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Pierre salue le père avec Marie, et Marie est très contente.",
-      "parts": [
-        {
-          "t": "À midi, quand Pierre salue "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " père avec Marie, et Marie est très contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le garçon nourrit le rat.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " garçon nourrit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " rat."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le frère observe le rat dans la rue.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " frère observe "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " rat dans "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " rue."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la boulangère attrape le rat, parce que Roger est très content.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boulangère attrape "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " rat, parce que Roger est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le facteur sert le riz.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " facteur sert "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " riz."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, la jardinière mange le riz avec Roger.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " jardinière mange "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " riz avec Roger."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand une amie apporte le riz, et Marie est très contente.",
-      "parts": [
-        {
-          "t": "Ce matin, quand une amie apporte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " riz, et Marie est très contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La sœur range le robot.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " sœur range "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " robot."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, la cousine cherche le robot avec Marie.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cousine cherche "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " robot avec Marie."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le médecin pose le robot, parce que Roger est très content.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " médecin pose "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " robot, parce que Roger est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le directeur voit la rose.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " directeur voit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " rose."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Roger dessine la rose près du parc.",
-      "parts": [
-        {
-          "t": "À midi, Roger dessine "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " rose près du parc."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la cousine photographie la rose, parce que Roger est très content.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cousine photographie "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " rose, parce que Roger est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le professeur utilise le rouge.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " professeur utilise "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " rouge."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la grand-mère range le rouge dans la rue.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " grand-mère range "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " rouge dans "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " rue."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le cuisinier oublie le rouge, parce que Roger est très content.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cuisinier oublie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " rouge, parce que Roger est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La cuisinière prend le roux.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " cuisinière prend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " roux."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la fille utilise le roux avec Roger.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " fille utilise "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " roux avec Roger."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le voisin range le roux, et Marie est très contente.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " voisin range "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " roux, et Marie est très contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le boulanger traverse la rue.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " boulanger traverse "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " rue."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, la cuisinière descend la rue près du parc.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cuisinière descend "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " rue près du parc."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le voisin descend la rue, parce que Roger est très content.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " voisin descend "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " rue, parce que Roger est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La collègue compte sur la sœur.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " collègue compte sur "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " sœur."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le garçon chante avec la sœur près du parc.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garçon chante avec "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " sœur près du parc."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Pierre embrasse la sœur, parce que Roger est très content.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Pierre embrasse "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " sœur, parce que Roger est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La sœur photographie la terre.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " sœur photographie "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " terre."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le facteur regarde la terre dans la rue.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " facteur regarde "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " terre dans "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " rue."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la jardinière admire la terre, parce que Roger est très content.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " jardinière admire "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " terre, parce que Roger est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le directeur préfère le train.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " directeur préfère "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " train."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le papa prend le train avec Roger.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " papa prend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " train avec Roger."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce soir, quand la cousine attend le train, et Marie est très contente.",
-      "parts": [
-        {
-          "t": "Ce soir, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cousine attend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " train, et Marie est très contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le copain regarde le tram.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " copain regarde "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " tram."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le musicien conduit le tram avec Marie.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " musicien conduit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " tram avec Marie."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Roger prend le tram, parce que Roger est très content.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Roger prend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " tram, parce que Roger est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Claire écrit la trousse bien.",
-      "parts": [
-        {
-          "t": "Claire écrit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " trousse bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le professeur étudie la trousse près du parc.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " professeur étudie "
-        },
-        {
-          "blank": "la"
-        },
+      "variants": [
         {
-          "t": " trousse près du parc."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la grand-mère prépare la trousse, et Marie est très contente.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Le colimaçon est sur l’arbre.",
+            "Le singe grimpe à l’arbre.",
+            "Rose grimpe sur l’arbre.",
+            "Rose grimpe sur un arbre."
+          ]
         },
         {
-          "blank": "la"
+          "level": "a2",
+          "number": "plur",
+          "sentences": [
+            "Au printemps, il y a des bourgeons sur les arbres."
+          ]
         },
         {
-          "t": " grand-mère prépare "
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Il entend un pinson chanter dans l'arbre.",
+            "Robert plante un arbre dans le jardin de ses grands-parents.",
+            "Romain regarde l’arbre rouge de Rose dans le parc."
+          ]
         },
         {
-          "blank": "la"
-        },
-        {
-          "t": " trousse, et Marie est très contente."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Rémi grimpe sur l’arbre, mais Rose et Romain préfèrent rester sur le gazon."
+          ]
         }
       ]
     },
     {
-      "level": "a1",
-      "sentence": "Le boulanger essuie la ventre.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
+      "word": "arc",
+      "variants": [
         {
-          "t": " boulanger essuie "
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Robert tire à l’arc le mardi.",
+            "Rose tire à l’arc."
+          ]
         },
         {
-          "blank": "la"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Romain tire à l’arc sur la cible rouge de Rose."
+          ]
         },
         {
-          "t": " ventre."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand Rémi tire à l’arc, il respire doucement et regarde bien la cible.",
+            "Rémi range l’arc dans la remise, mais Rose et Romain préfèrent le tir."
+          ]
         }
       ]
     },
     {
-      "level": "a2",
-      "sentence": "Ce soir, la cuisinière touche la ventre dans la rue.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
+      "word": "architecte",
+      "variants": [
         {
-          "blank": "la"
+          "level": "a1",
+          "sentences": [
+            "Rose est architecte à Rolle."
+          ]
         },
         {
-          "t": " cuisinière touche "
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "L’architecte dessine le plan d’une grande ferme rouge.",
+            "L’architecte Rose dessine un grand projet pour Romain et Rita."
+          ]
         },
         {
-          "blank": "la"
-        },
-        {
-          "t": " ventre dans "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " rue."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand l’architecte présente son projet, les habitants regardent tout le plan avec curiosité.",
+            "Rémi remercie l’architecte Rose, car elle a rendu le projet avant mardi à Romain."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "Ce matin, quand la fille montre la ventre, parce que Roger est très content.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " fille montre "
-        },
-        {
-          "blank": "la"
-        },
+      "word": "ardoise",
+      "variants": [
         {
-          "t": " ventre, parce que Roger est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Un ami essuie le verre.",
-      "parts": [
-        {
-          "t": "Un ami essuie "
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Rose écrit sur l’ardoise grise.",
+            "Rose écrit sur l’ardoise."
+          ]
         },
         {
-          "blank": "le"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Romain efface l’ardoise de Rose avec un chiffon rouge."
+          ]
         },
         {
-          "t": " verre."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand l’ardoise est pleine, Rémi l’efface vite et recommence à écrire une phrase.",
+            "Rémi écrit un mot sur l’ardoise, mais Rose et Romain préfèrent le dessiner."
+          ]
         }
       ]
     },
     {
-      "level": "a2",
-      "sentence": "Ce matin, la fille essuie le verre dans la rue.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " fille essuie "
-        },
-        {
-          "blank": "le"
-        },
+      "word": "armoire",
+      "variants": [
         {
-          "t": " verre dans "
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "L’armoire est dans la chambre.",
+            "Rose ouvre l’armoire de Rita."
+          ]
         },
         {
-          "blank": "la"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Romain range le manteau de Rose dans l’armoire de Rita.",
+            "Rose range ses robes rouges dans l’armoire de la chambre.",
+            "Rose range son arc et ses flèches dans une armoire du garage."
+          ]
         },
         {
-          "t": " rue."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand Rémi déménage, il démonte l’armoire et la porte dans le camion avec Robert.",
+            "Rémi remplit l’armoire de vêtements propres, mais Rose et Romain préfèrent la commode."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "Ce matin, quand le voisin essuie le verre, parce que Roger est très content.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " voisin essuie "
-        },
+      "word": "arrosoir",
+      "variants": [
         {
-          "blank": "le"
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Rose remplit l’arrosoir de Rita.",
+            "Rose remplit l’arrosoir rouge d’eau."
+          ]
         },
         {
-          "t": " verre, parce que Roger est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le collègue plante un arbre.",
-      "parts": [
-        {
-          "blank": "Le"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Romain porte l’arrosoir rouge de Rose dans le jardin."
+          ]
         },
         {
-          "t": " collègue plante un arbre."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Rémi remplit l’arrosoir, mais Rose et Romain préfèrent arroser les rosiers avec le tuyau."
+          ]
         }
       ]
     },
     {
-      "level": "a1",
-      "sentence": "Le voisin cherche la barre.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
+      "word": "artichaut",
+      "variants": [
         {
-          "t": " voisin cherche "
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Rose épluche un artichaut rond.",
+            "Rose mange un artichaut rond."
+          ]
         },
         {
-          "blank": "la"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Robert mange un artichaut avec de la sauce rose et du poivre.",
+            "Romain prépare un artichaut pour Rose et pour Rita ce soir."
+          ]
         },
         {
-          "t": " barre."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand l’artichaut est trop dur, Rémi le fait cuire longtemps dans une grande marmite.",
+            "Rémi cuit un artichaut dans la marmite, mais Rose et Romain préfèrent le manger cru."
+          ]
         }
       ]
     },
     {
-      "level": "a1",
-      "sentence": "Le médecin achète le beurre.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
+      "word": "asperge",
+      "variants": [
         {
-          "t": " médecin achète "
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Rose épluche une asperge verte.",
+            "Rose mange une asperge rare."
+          ]
         },
         {
-          "blank": "le"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Romain prépare une asperge pour Rose et pour Rita ce soir."
+          ]
         },
         {
-          "t": " beurre."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Rémi cuit une asperge dans la marmite, mais Rose et Romain préfèrent la manger crue."
+          ]
         }
       ]
     },
     {
-      "level": "a1",
-      "sentence": "Le facteur prend le car.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " facteur prend "
-        },
-        {
-          "blank": "le"
-        },
+      "word": "asperges",
+      "variants": [
         {
-          "t": " car."
+          "level": "a2",
+          "number": "plur",
+          "sentences": [
+            "Robert prépare des asperges avec du beurre fondu et du riz."
+          ]
         }
       ]
     },
     {
-      "level": "a2",
-      "sentence": "Ce matin, le maître écoute la guerre près du parc.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "le"
-        },
+      "word": "astéroïde",
+      "variants": [
         {
-          "t": " maître écoute "
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Rose regarde un astéroïde rare."
+          ]
         },
         {
-          "blank": "la"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Romain regarde l’astéroïde avec Rose et Rita près de la rivière."
+          ]
         },
         {
-          "t": " guerre près du parc."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Rémi pense qu’un astéroïde va tomber, mais Rose et Romain restent très calmes."
+          ]
         }
       ]
     },
     {
-      "level": "a2",
-      "sentence": "Après le cours, le bébé prépare un hiver dans la rue.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
+      "word": "astronaute",
+      "variants": [
         {
-          "blank": "le"
+          "level": "a1",
+          "sentences": [
+            "Rose rêve d’être astronaute."
+          ]
         },
         {
-          "t": " bébé prépare un hiver dans "
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Romain regarde l’astronaute Rose qui part vers la Lune avec Rita."
+          ]
         },
         {
-          "blank": "la"
-        },
-        {
-          "t": " rue."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Rémi rêve de devenir astronaute, mais Rose et Romain préfèrent rester sur la Terre."
+          ]
         }
       ]
     },
     {
-      "level": "a2",
-      "sentence": "À midi, la professeure pose le livre avec Marie.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "la"
-        },
+      "word": "aubergine",
+      "variants": [
         {
-          "t": " professeure pose "
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Rose cuit une aubergine rôtie."
+          ]
         },
         {
-          "blank": "le"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Romain prépare une aubergine rôtie pour Rose et pour Rita."
+          ]
         },
         {
-          "t": " livre avec Marie."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Rémi rôtit une aubergine, mais Rose et Romain préfèrent la manger crue avec du riz."
+          ]
         }
       ]
     },
     {
-      "level": "a2",
-      "sentence": "Ce soir, la directrice attend le mardi dans la rue.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "la"
-        },
+      "word": "autruche",
+      "variants": [
         {
-          "t": " directrice attend "
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Rose regarde une autruche rare."
+          ]
         },
         {
-          "blank": "le"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Romain dessine une autruche pour Rose et pour Rita ce soir."
+          ]
         },
         {
-          "t": " mardi dans "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " rue."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Rémi regarde une autruche au zoo, mais Rose et Romain préfèrent regarder les girafes."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "Ce matin, quand la grand-mère choisit le riz, parce que Roger est très content.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " grand-mère choisit "
-        },
-        {
-          "blank": "le"
-        },
+      "word": "azur",
+      "variants": [
         {
-          "t": " riz, parce que Roger est très content."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Roger prend le robot avec Marie, et Marie est très contente.",
-      "parts": [
-        {
-          "t": "À midi, quand Roger prend "
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Rose regarde l’azur de la mer."
+          ]
         },
         {
-          "blank": "le"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Romain regarde l’azur de la mer avec Rose et Rita."
+          ]
         },
         {
-          "t": " robot avec Marie, et Marie est très contente."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Rémi rêve d’un ciel d’azur, mais Rose et Romain restent au chaud."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "Ce matin, quand le facteur regarde la rose, et Marie est très contente.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
+      "word": "baignoire",
+      "variants": [
         {
-          "blank": "le"
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Rose remplit la baignoire de Rita."
+          ]
         },
         {
-          "t": " facteur regarde "
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Romain rince la baignoire de Rose avec de l’eau."
+          ]
         },
         {
-          "blank": "la"
-        },
-        {
-          "t": " rose, et Marie est très contente."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Rémi remplit la baignoire, mais Rose et Romain préfèrent prendre une douche rapide."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "Ce matin, quand la voisine cherche le rouge, et Marie est très contente.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
+      "word": "batterie",
+      "variants": [
         {
-          "t": " voisine cherche "
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Rose recharge la batterie de Rita."
+          ]
         },
         {
-          "blank": "le"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Romain remplace la batterie de Rose et de Rita à la rentrée."
+          ]
         },
         {
-          "t": " rouge, et Marie est très contente."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Rémi recharge la batterie du portable, mais Rose et Romain préfèrent la remplacer."
+          ]
         }
       ]
     },
     {
-      "level": "a1",
-      "sentence": "La professeure range le chanteur.",
-      "parts": [
-        {
-          "blank": "La"
-        },
+      "word": "bazar",
+      "variants": [
         {
-          "t": " professeure range "
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Rose range le bazar de Rita."
+          ]
         },
         {
-          "blank": "le"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Romain trouve un grand bazar dans la chambre de Rose."
+          ]
         },
         {
-          "t": " chanteur."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Rémi range le bazar du garage, mais Rose et Romain préfèrent tout jeter."
+          ]
         }
       ]
     },
     {
-      "level": "a1",
-      "sentence": "La directrice joue dans le cour.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " directrice joue dans "
-        },
-        {
-          "blank": "le"
-        },
+      "word": "chanson",
+      "variants": [
         {
-          "t": " cour."
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Robert répète une chanson d’accordéon avec ses frères tous les mardis."
+          ]
         }
       ]
     },
     {
-      "level": "a1",
-      "sentence": "Marie prépare le croissant bien.",
-      "parts": [
-        {
-          "t": "Marie prépare "
-        },
+      "word": "été",
+      "variants": [
         {
-          "blank": "le"
-        },
-        {
-          "t": " croissant bien."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand l’été arrive, Rose rapporte des abricots du marché et prépare une grande confiture."
+          ]
         }
       ]
     },
     {
-      "level": "a1",
-      "sentence": "Le cousin prend le cuir.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " cousin prend "
-        },
-        {
-          "blank": "le"
-        },
+      "word": "fleurs",
+      "variants": [
         {
-          "t": " cuir."
+          "level": "a2",
+          "number": "plur",
+          "sentences": [
+            "Robert arrose les fleurs du jardin avec un arrosoir en fer."
+          ]
         }
       ]
     },
     {
-      "level": "a1",
-      "sentence": "Pierre mange le fruit bien.",
-      "parts": [
-        {
-          "t": "Pierre mange "
-        },
+      "word": "foin",
+      "variants": [
         {
-          "blank": "le"
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "La poule couve dans le foin."
+          ]
         },
         {
-          "t": " fruit bien."
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Cette agricultrice rentre le foin dans la grange avant l’orage."
+          ]
         }
       ]
     },
     {
-      "level": "a1",
-      "sentence": "La maîtresse s’occupe du frère.",
-      "parts": [
-        {
-          "blank": "La"
+      "word": "grand",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Le Sahara est un grand désert."
+          ]
         },
         {
-          "t": " maîtresse s’occupe du frère."
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Robert dessine un grand arbre rouge avec de la peinture acrylique."
+          ]
         }
       ]
     },
     {
-      "level": "a2",
-      "sentence": "Ce matin, le médecin préfère la mer avec Marie.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "le"
-        },
+      "word": "maître",
+      "variants": [
         {
-          "t": " médecin préfère "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " mer avec Marie."
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Le maître regarde l’ardoise de Robert et corrige la dernière ligne."
+          ]
         }
       ]
     },
     {
-      "level": "a2",
-      "sentence": "Après le cours, la copine mesure le mur avec Roger.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " copine mesure "
-        },
-        {
-          "blank": "le"
-        },
+      "word": "matins",
+      "variants": [
         {
-          "t": " mur avec Roger."
+          "level": "a2",
+          "number": "plur",
+          "sentences": [
+            "Cette actrice répète son rôle tous les matins au théâtre de Rome."
+          ]
         }
       ]
     },
     {
-      "level": "a2",
-      "sentence": "Après le cours, la fille remercie la mère avec Marie.",
-      "parts": [
-        {
-          "t": "Après "
-        },
+      "word": "peinture",
+      "variants": [
         {
-          "blank": "le"
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Cette peinture est une merveille.",
+            "Rose achète de la peinture acrylique."
+          ]
         },
         {
-          "t": " cours, "
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Maxime va voir une exposition de peinture."
+          ]
         },
         {
-          "blank": "la"
-        },
-        {
-          "t": " fille remercie "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " mère avec Marie."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Parce que la peinture acrylique sèche rapidement, Rose termine son travail avant la fin."
+          ]
         }
       ]
     },
     {
-      "level": "a2",
-      "sentence": "À midi, le musicien ferme la porte dans la rue.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " musicien ferme "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " porte dans "
-        },
+      "word": "printemps",
+      "variants": [
         {
-          "blank": "la"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Au printemps, il y a des bourgeons sur les arbres."
+          ]
         },
         {
-          "t": " rue."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand le printemps arrive, Rémi cuisine l’asperge avec du fromage râpé et du riz."
+          ]
         }
       ]
     },
     {
-      "level": "a2",
-      "sentence": "Après le cours, la jardinière console le père dans la rue.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " jardinière console "
-        },
+      "word": "rhume",
+      "variants": [
         {
-          "blank": "le"
-        },
-        {
-          "t": " père dans "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " rue."
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Hélène a un rhume."
+          ]
         }
       ]
     },
     {
-      "level": "a2",
-      "sentence": "À midi, la tante regarde le rat avec Marie.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " tante regarde "
-        },
-        {
-          "blank": "le"
-        },
+      "word": "Robert",
+      "variants": [
         {
-          "t": " rat avec Marie."
+          "level": "a1",
+          "sentences": [
+            "Robert est architecte à Rome."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "Ce matin, quand le musicien trouve le roux, parce que Roger est très content.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
+      "word": "Rose",
+      "variants": [
         {
-          "t": " musicien trouve "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " roux, parce que Roger est très content."
+          "level": "a1",
+          "sentences": [
+            "Rose est actrice à Paris."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "Ce matin, quand le maître traverse la rue, et Marie est très contente.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " maître traverse "
-        },
-        {
-          "blank": "la"
-        },
+      "word": "soleil",
+      "variants": [
         {
-          "t": " rue, et Marie est très contente."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand le soleil brille, Rémi remplit l’arrosoir et arrose les rosiers avant la nuit."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "Ce soir, quand la collègue invite la sœur, et Marie est très contente.",
-      "parts": [
-        {
-          "t": "Ce soir, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " collègue invite "
-        },
+      "word": "souvenirs",
+      "variants": [
         {
-          "blank": "la"
-        },
-        {
-          "t": " sœur, et Marie est très contente."
+          "level": "b1",
+          "number": "plur",
+          "sentences": [
+            "Quand Robert part en voyage, il emporte son appareil photo pour garder tous les souvenirs."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "Ce matin, quand le voisin plante la terre, parce que Roger est très content.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " voisin plante "
-        },
-        {
-          "blank": "la"
-        },
+      "word": "tarte",
+      "variants": [
         {
-          "t": " terre, parce que Roger est très content."
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Robert prépare une tarte aux abricots pour le dîner de mardi."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "Ce matin, quand le grand-père embarque dans le train, parce que Roger est très content.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " grand-père embarque dans "
-        },
-        {
-          "blank": "le"
-        },
+      "word": "tiroir",
+      "variants": [
         {
-          "t": " train, parce que Roger est très content."
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Rose range son appareil photo dans le tiroir de la bibliothèque."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "Ce soir, quand la cousine attend le tram, et Marie est très contente.",
-      "parts": [
-        {
-          "t": "Ce soir, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cousine attend "
-        },
-        {
-          "blank": "le"
-        },
+      "word": "vent",
+      "variants": [
         {
-          "t": " tram, et Marie est très contente."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand le vent souffle, les feuilles de l’arbre tombent et Rémi ramasse les branches."
+          ]
         }
       ]
-    }
-  ],
-  "type12": [
-    {
-      "level": "a1",
-      "sentence": "Le collègue plante un arbre."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le voisin cherche la barre."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le médecin achète le beurre."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le facteur prend le car."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le maître écoute la guerre près du parc."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le bébé prépare un hiver dans la rue."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, la professeure pose le livre avec Marie."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, la directrice attend le mardi dans la rue."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la grand-mère choisit le riz, parce que Roger est très content."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Roger prend le robot avec Marie, et Marie est très contente."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le facteur regarde la rose, et Marie est très contente."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la voisine cherche le rouge, et Marie est très contente."
-    }
-  ],
-  "type14": [
-    {
-      "level": "a1",
-      "sentence": "La professeure range le chanteur."
-    },
-    {
-      "level": "a1",
-      "sentence": "La directrice joue dans le cour."
-    },
-    {
-      "level": "a1",
-      "sentence": "Marie prépare le croissant bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le cousin prend le cuir."
-    },
-    {
-      "level": "a1",
-      "sentence": "Pierre mange le fruit bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La maîtresse s’occupe du frère."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le médecin préfère la mer avec Marie."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la copine mesure le mur avec Roger."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la fille remercie la mère avec Marie."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le musicien ferme la porte dans la rue."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la jardinière console le père dans la rue."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, la tante regarde le rat avec Marie."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le musicien trouve le roux, parce que Roger est très content."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le maître traverse la rue, et Marie est très contente."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce soir, quand la collègue invite la sœur, et Marie est très contente."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le voisin plante la terre, parce que Roger est très content."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le grand-père embarque dans le train, parce que Roger est très content."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce soir, quand la cousine attend le tram, et Marie est très contente."
     }
   ]
 }

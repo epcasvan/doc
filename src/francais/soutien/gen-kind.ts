@@ -23,11 +23,8 @@ import {
 import { buildWordSearch, wordSearchHitCells } from './word-search'
 import { isSoutienType1Word, type1WordPool, type1Words } from './type1-words'
 import type { SoutienGenerateOptions } from './generate-options'
-import {
-  filterSoutienLevel,
-  soutienPhrasesFor,
-  type SoutienLevelFilter,
-} from './phrases-data'
+import { soutienPhrasesForSonOrAll, type SoutienLevelFilter } from './phrases-data'
+import { buildType10DetsFromWords } from './det-plurals'
 import {
   AUDIO_ORDER_CLIPS,
   buildSyllableReadingList,
@@ -38,17 +35,27 @@ import {
   syllableBlockRows,
 } from './gen-kind-helpers'
 
-/** Phrases rédigées (types 12 / 14) filtrées par niveau ; `null` si aucune. */
+/**
+ * Types 12 / 14 : banque commune ; phrases avec au moins 3 fois le son de la fiche.
+ * Repli : phrases banque locale / countPhrases / readPhrases.
+ */
 function curatedPhrases(
   bank: SoutienVowelBank,
-  kind: 'type12' | 'type14',
   level: SoutienLevelFilter | undefined,
+  rng: Rng,
+  want: number,
 ): string[] | null {
-  const data = soutienPhrasesFor(bank.id)
-  if (!data) return null
-  const rows = filterSoutienLevel(data[kind], level)
-  if (rows.length === 0) return null
-  return rows.map((r) => r.sentence)
+  const minHits = 3
+  /** Uniquement le fichier `phrases/<son>.json` de la fiche. */
+  const pool = soutienPhrasesForSonOrAll(bank.id, level)
+  const rich = pool.filter((r) => countSoundInPhrase(r.sentence, bank) >= minHits)
+  const source = rich.length > 0 ? rich : pool.filter((r) => countSoundInPhrase(r.sentence, bank) >= 1)
+  if (source.length === 0) return null
+  const unique = new Map<string, string>()
+  for (const row of source) {
+    if (!unique.has(row.sentence)) unique.set(row.sentence, row.sentence)
+  }
+  return shuffle(rng, [...unique.values()]).slice(0, want)
 }
 
 export function genKind(
@@ -93,9 +100,10 @@ export function genKind(
           label: displayVocabLabel(e.label),
         }))
       const words = entries.map((e) => e.label)
-      const total = Math.max(1, Math.min(16, entries.length))
-      /** Grille 4×4 pour tenir sur l’A4 avec en-tête et pied. */
-      const cols = 4
+      const vocabCap = options?.alphaVocabCount ?? 16
+      const total = Math.max(1, Math.min(vocabCap, entries.length))
+      /** 4 mots → 2×2 (images plus grandes) ; sinon 4×4. */
+      const cols = total <= 4 ? 2 : 4
       const rows = Math.max(1, Math.ceil(total / cols))
       return {
         instruction: `On entend le son ${bank.sound} dans ces mots.`,
@@ -367,13 +375,18 @@ export function genKind(
             syllableSoundItems: chosen.map((item) => {
               const parts = [...item.parts]
               const hitIndex = parts.findIndex((p) => wordHasLessonLetter(p, bank))
-              const word = displayVocabLabel(item.word)
+              const raw = item.word.trim()
+              const word = displayVocabLabel(raw)
+              const imageSrc =
+                soutienImageFor(raw) ||
+                soutienImageFor(word) ||
+                soutienImageFor(raw.toLowerCase())
               return {
                 word,
                 parts,
                 hitIndex: hitIndex >= 0 ? hitIndex : -1,
-                imageSrc: soutienImageFor(item.word) || soutienImageFor(word),
-                audioSrc: soutienAudioFor(item.word) ?? soutienAudioFor(word),
+                imageSrc,
+                audioSrc: soutienAudioFor(raw) ?? soutienAudioFor(word),
               }
             }),
             answer: chosen
@@ -398,9 +411,8 @@ export function genKind(
       )
       type ScrambleRow = { sentence: string; word: string; letters: string }
       const byWord = new Map<string, ScrambleRow[]>()
-      const curated = soutienPhrasesFor(bank.id)
-      const curatedRows = curated ? filterSoutienLevel(curated.type9, options?.level) : []
-      /** Phrases rédigées ; mot cible avec image obligatoire (pas de composés). */
+      /** Fichier `phrases/<son>.json` du son de la fiche uniquement. */
+      const curatedRows = soutienPhrasesForSonOrAll(bank.id, options?.level)
       for (const row of curatedRows) {
         if (!isSoutienType1Word(row.word)) continue
         if (exclude.has(displayVocabLabel(row.word).toLowerCase())) continue
@@ -490,27 +502,25 @@ export function genKind(
     }
     case 'determinants': {
       /**
-       * Phrases à trous (scènes rédigées type 10, sinon banque) ; count = nb de questions.
-       * Consigne unique en en-tête (l’ / le / la / les stylés).
+       * Type 10 : mots du type 5 → phrases banque 9+12.
+       * Trait seulement sur le déterminant du mot type 5 ([sing] / [plur]).
+       * Sur 8 : ≥ 5 singulier, ≥ 2 pluriel, reste aléatoire.
        */
       const want = Math.max(1, Math.min(16, n))
-      const curated = soutienPhrasesFor(bank.id)
-      const curatedRows = curated ? filterSoutienLevel(curated.type10, options?.level) : []
-      const pool =
-        curatedRows.length > 0
-          ? curatedRows.map((row) => ({
-              parts: row.parts.map((p) =>
-                'blank' in p ? { blank: p.blank } : { t: p.t },
-              ),
-              sentence: row.sentence,
+      const articleByWord = new Map(
+        bank.completes.map((c) => [displayVocabLabel(c.word).toLowerCase(), c.article as string]),
+      )
+      const fromType5 = (options?.type5Words ?? []).filter((w) => w.trim())
+      const poolWords =
+        fromType5.length > 0
+          ? fromType5.map((word) => ({
+              word,
+              article: articleByWord.get(displayVocabLabel(word).toLowerCase()),
             }))
-          : bank.determinants.map((row) => ({
-              parts: row.parts.map((p) =>
-                'blank' in p ? { blank: p.blank } : { t: p.t },
-              ),
-              sentence: row.sentence,
-            }))
-      const rows = shuffle(rng, pool).slice(0, Math.min(want, pool.length))
+          : bank.completes.map((c) => ({ word: c.word, article: c.article as string }))
+      /** Type 10 : phrases du son de la fiche (mot type 5) ; repli tous sons si vide. */
+      const bankPhrases = soutienPhrasesForSonOrAll(bank.id, options?.level)
+      const rows = buildType10DetsFromWords(poolWords, rng, want, bankPhrases)
       return {
         instruction: 'Complétez avec les déterminants l’, le, la ou les.',
         preferredColumns: 1,
@@ -550,11 +560,19 @@ export function genKind(
       }
     }
     case 'compter': {
-      /** Phrases à lire (texte simple) + compter le son ; count réglable. */
+      /** Phrases (9 par défaut) + compter le son (≥ 3 fois le son de la fiche). */
       const want = Math.max(1, Math.min(12, n))
-      const pool = curatedPhrases(bank, 'type12', options?.level) ?? [...bank.countPhrases]
-      const phrases = shuffle(rng, pool).slice(0, Math.min(want, pool.length))
-      const items = phrases.map((phrase) => ({
+      const phrases =
+        curatedPhrases(bank, options?.level, rng, want) ??
+        shuffle(
+          rng,
+          bank.countPhrases.filter((p) => countSoundInPhrase(p, bank) >= 3),
+        ).slice(0, Math.min(want, bank.countPhrases.length))
+      const fallback =
+        phrases.length > 0
+          ? phrases
+          : shuffle(rng, [...bank.countPhrases]).slice(0, Math.min(want, bank.countPhrases.length))
+      const items = fallback.map((phrase) => ({
         phrase,
         count: countSoundInPhrase(phrase, bank),
       }))
@@ -595,10 +613,19 @@ export function genKind(
       }
     }
     case 'lire': {
-      /** Phrases à lire ; voyelle du thème en couleur ; count réglable. */
+      /** Phrases (19 par défaut) ; ≥ 3 fois le son ; voyelle du thème en couleur. */
       const want = Math.max(1, Math.min(20, n))
-      const pool = curatedPhrases(bank, 'type14', options?.level) ?? [...bank.readPhrases]
-      const phrases = shuffle(rng, pool).slice(0, Math.min(want, pool.length))
+      const curated = curatedPhrases(bank, options?.level, rng, want)
+      const fromBank = shuffle(
+        rng,
+        bank.readPhrases.filter((p) => countSoundInPhrase(p, bank) >= 3),
+      ).slice(0, want)
+      const phrases =
+        curated && curated.length > 0
+          ? curated
+          : fromBank.length > 0
+            ? fromBank
+            : shuffle(rng, [...bank.readPhrases]).slice(0, Math.min(want, bank.readPhrases.length))
       return {
         instruction: 'Lisez les phrases.',
         preferredColumns: 1,

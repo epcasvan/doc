@@ -1,2985 +1,856 @@
 {
-  "type9": [
+  "son": "g-g",
+  "phrases": [
     {
-      "level": "a1",
+      "word": "agricultrice",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Gloria est agricultrice à Gruyères."
+          ]
+        },
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "L’agricultrice garde ses grosses vaches."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "L’agricultrice Gaëlle garde ses gros légumes dans le grenier."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Gabriel aide l’agricultrice Gloria à garder les gros sacs de grains dorés.",
+            "Quand l’agricultrice gagne beaucoup, elle achète un grand tracteur et garde le reste."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "aigle",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "L’aigle de Gaspard vole.",
+            "Un aigle gris vole au-dessus du glacier."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Gloria regarde un grand aigle gris qui garde son nid."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Gabriel a vu un aigle gris dans la montagne, mais Gaspard garde ses jumelles.",
+            "Quand l’aigle glisse au-dessus du glacier, les gens le regardent avec un grand sourire."
+          ]
+        }
+      ]
+    },
+    {
       "word": "bague",
-      "sentence": "Hugo porte la bague bien."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Gabrielle porte une bague en argent.",
+            "La bague de Gloria brille."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Gaspard garde la bague de Gloria dans une grande boîte.",
+            "Gaston achète une bague gravée pour Margot au grand magasin."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Gabriel a gravé son nom sur la bague de Gloria, mais Gaspard l’a gardée."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "bague",
-      "sentence": "Ce matin, le collègue porte la bague avec Hugo."
+      "word": "bungalow",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Gaston loue un bungalow près du golf.",
+            "Le bungalow de Gaspard est grand."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Gabrielle réserve un bungalow au bord du lac pour les grandes vacances.",
+            "Gloria loue un bungalow gris près du golf de Gabriel."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Gaspard a garé sa voiture devant le bungalow, mais Gloria garde la grille fermée."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "bague",
-      "sentence": "Quand le garçon porte la bague dans le garage, parce que Hugo est content aussi."
+      "word": "camping",
+      "variants": [
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Comme le camping est complet, Grégoire loue un bungalow près du grand golf."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
+      "word": "ciel",
+      "variants": [
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Le soir, je regarde les étoiles dans le ciel."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand le ciel est clair, Gaspard regarde la galaxie et rêve de grands voyages."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "cigogne",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "La cigogne de Gaspard est grande.",
+            "La cigogne regarde le grand lac."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Gloria regarde la cigogne qui garde son nid sur le garage.",
+            "Une cigogne grise garde son nid sur le toit de la grange."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Gabriel regarde la cigogne sur le grand toit, mais Gaspard garde ses gants.",
+            "Quand la cigogne revient, les gamins crient de joie et regardent le grand nid."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "Comme",
+      "variants": [
+        {
+          "level": "b1",
+          "sentences": [
+            "Comme il gèle, Grégoire garde ses mains au chaud dans de grands gants."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "dragon",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Le dragon de Gaspard est grand.",
+            "Le dragon garde un grand trésor."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Dans ce conte, le dragon gris garde la grotte de la princesse.",
+            "Dimitri lit un livre sur un petit dragon.",
+            "Diton le petit dragon a des griffes de lion et des grandes ailes.",
+            "Gloria dessine un dragon gris qui garde le gâteau de Gabriel."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Gabriel raconte une histoire de dragon à Gaspard, mais Gloria garde la fin secrète.",
+            "Quand le dragon agite sa grande queue, il gâche la fête et casse le gâteau."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "escargot",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "L’escargot de Gaspard grimpe."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Gloria regarde un escargot gris qui grimpe sur le gazon.",
+            "Il y a un gros escargot qui glisse sur l’escalier."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Gabriel garde un escargot dans sa grande boîte, mais Gaspard le rend au gazon.",
+            "Quand l’escargot grimpe sur la grille, il glisse souvent, mais il garde courage."
+          ]
+        }
+      ]
+    },
+    {
       "word": "figue",
-      "sentence": "La voisine partage la figue."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Gaston mange une figue verte.",
+            "La figue de Gaspard est grosse."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Gloria goûte une figue grosse et sucrée dans le jardin de Gabriel."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Gaspard garde une figue pour Gloria, mais Gabriel a gobé la grande figue.",
+            "Quand la figue est mûre, Gabriel la goûte avec un gros morceau de gruyère."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "figue",
-      "sentence": "À midi, Hugo coupe la figue dans le garage."
+      "word": "galaxie",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "La galaxie de Gaspard est grande."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Gabriel regarde la galaxie avec un gros télescope dans le grenier.",
+            "Gloria regarde la galaxie avec le grand télescope de Gabriel."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Gabriel étudie la galaxie avec Gloria, mais Gaspard gagne le grand prix de géographie."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "figue",
-      "sentence": "Quand la voisine goûte la figue avec Guy, parce que Hugo est content aussi."
+      "word": "gants",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Gaspard met ses gants gris."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "plur",
+          "sentences": [
+            "Gabrielle porte des gants en laine pour garder les mains au chaud."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Gloria garde ses gants dans le garage de Gabriel."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "plur",
+          "sentences": [
+            "Gabriel gagne des gants au grand jeu, mais Gaspard garde ses gants gris."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
-      "word": "gant",
-      "sentence": "La grand-mère perd le gant."
-    },
-    {
-      "level": "a2",
-      "word": "gant",
-      "sentence": "Ce soir, la grand-mère perd le gant dans le garage."
-    },
-    {
-      "level": "b1",
-      "word": "gant",
-      "sentence": "Quand la jardinière perd le gant dans le garage, parce que Hugo est content aussi."
-    },
-    {
-      "level": "a1",
       "word": "garage",
-      "sentence": "Le cuisinier range le garage."
+      "variants": [
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand Margot perd sa bague, elle regarde dans le garage et le grenier."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "garage",
-      "sentence": "Après le cours, la musicienne peint le garage à la gare."
+      "word": "garçon",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Le garçon de Gaspard est grand.",
+            "Le garçon joue au golf."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Gloria garde le garçon de Gabriel dans la grande cour.",
+            "Le garçon gagne un gros gâteau au grand jeu de la fête."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Gabriel gronde le garçon qui gribouille sur le grand mur, mais Gaspard rit.",
+            "Quand le garçon rentre à la gare, sa grand-mère l’attend avec un gros gâteau."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "garage",
-      "sentence": "Ce matin, quand Gaston ferme le garage, parce que Hugo est content aussi."
-    },
-    {
-      "level": "a1",
       "word": "gare",
-      "sentence": "Magalie attend dans la gare."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Gaston attend à la gare.",
+            "La gare de Gaspard est grande."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Gloria attend Gabriel à la gare avec une grande valise grise."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Gaspard arrive à la gare en retard, mais Gloria garde sa place à Gabriel."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "gare",
-      "sentence": "Ce soir, le professeur cherche la gare dans le garage."
+      "word": "Gaston",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Gaston met ses gants gris."
+          ]
+        },
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Gaston a cassé la pompe de son vélo."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "gare",
-      "sentence": "À midi, quand Gaston s’arrête à la gare avec Hugo, et Gaston est très content."
-    },
-    {
-      "level": "a1",
-      "word": "gaz",
-      "sentence": "Le frère quitte le gaz avec Guy."
-    },
-    {
-      "level": "a2",
-      "word": "gaz",
-      "sentence": "Ce soir, Magalie bricole le gaz dans le garage."
-    },
-    {
-      "level": "b1",
-      "word": "gaz",
-      "sentence": "Quand le frère range le gaz avec Guy, parce que Hugo est content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "glace",
-      "sentence": "La sœur glisse sur la glace."
-    },
-    {
-      "level": "a2",
-      "word": "glace",
-      "sentence": "Ce soir, le médecin patine sur la glace dans le garage."
-    },
-    {
-      "level": "b1",
-      "word": "glace",
-      "sentence": "Quand la boulangère veut la glace avec Guy, parce que Hugo est content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "gobelet",
-      "sentence": "La jardinière apporte le gobelet avec Guy."
-    },
-    {
-      "level": "a2",
-      "word": "gobelet",
-      "sentence": "À midi, Hugo coupe le gobelet à la gare."
-    },
-    {
-      "level": "b1",
-      "word": "gobelet",
-      "sentence": "Quand le grand-père achète le gobelet dans le garage, parce que Hugo est content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "gomme",
-      "sentence": "La grand-mère cherche la gomme."
-    },
-    {
-      "level": "a2",
-      "word": "gomme",
-      "sentence": "Ce soir, le grand-père cherche la gomme à la gare."
-    },
-    {
-      "level": "b1",
-      "word": "gomme",
-      "sentence": "Quand la collègue cherche la gomme dans le garage, parce que Hugo est content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "gorille",
-      "sentence": "Guy observe le gorille bien."
-    },
-    {
-      "level": "a2",
-      "word": "gorille",
-      "sentence": "Ce matin, la grand-mère attrape le gorille dans le garage."
-    },
-    {
-      "level": "b1",
-      "word": "gorille",
-      "sentence": "Quand la grand-mère nourrit le gorille avec Guy, parce que Hugo est content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "goujon",
-      "sentence": "Un ami nourrit le goujon avec Guy."
-    },
-    {
-      "level": "a2",
-      "word": "goujon",
-      "sentence": "Ce matin, le cuisinier attrape le goujon dans le garage."
-    },
-    {
-      "level": "b1",
-      "word": "goujon",
-      "sentence": "Quand le boulanger observe le goujon à la gare, et Gaston est très content."
-    },
-    {
-      "level": "a1",
-      "word": "goutte",
-      "sentence": "Le directeur dessine la goutte avec Guy."
-    },
-    {
-      "level": "a2",
-      "word": "goutte",
-      "sentence": "Ce soir, Magalie voit la goutte à la gare."
-    },
-    {
-      "level": "b1",
-      "word": "goutte",
-      "sentence": "Quand la boulangère observe la goutte dans le garage, parce que Hugo est content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "goûter",
-      "sentence": "Le collègue achète le goûter."
-    },
-    {
-      "level": "a2",
-      "word": "goûter",
-      "sentence": "Avant le repas, le frère partage le goûter dans le garage."
-    },
-    {
-      "level": "b1",
-      "word": "goûter",
-      "sentence": "À midi, quand Magalie coupe le goûter avec Guy, parce que Hugo est content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "grappe",
-      "sentence": "Le voisin partage la grappe."
-    },
-    {
-      "level": "a2",
-      "word": "grappe",
-      "sentence": "Avant le repas, le collègue choisit la grappe dans le garage."
-    },
-    {
-      "level": "b1",
-      "word": "grappe",
-      "sentence": "Quand le médecin mange la grappe avec Guy, parce que Hugo est content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "griotte",
-      "sentence": "La maman sert la griotte avec Guy."
-    },
-    {
-      "level": "a2",
-      "word": "griotte",
-      "sentence": "Avant le repas, la jardinière achète la griotte dans le garage."
-    },
-    {
-      "level": "b1",
-      "word": "griotte",
-      "sentence": "À midi, quand Hugo prépare la griotte avec Guy, et Gaston est très content."
-    },
-    {
-      "level": "a1",
-      "word": "groupe",
-      "sentence": "Guy suit le groupe bien."
-    },
-    {
-      "level": "a2",
-      "word": "groupe",
-      "sentence": "Ce matin, la grand-mère appelle le groupe à la gare."
-    },
-    {
-      "level": "b1",
-      "word": "groupe",
-      "sentence": "Quand la fille embrasse le groupe dans le garage, parce que Hugo est content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "grue",
-      "sentence": "Un ami cherche la grue avec Hugo."
-    },
-    {
-      "level": "a2",
-      "word": "grue",
-      "sentence": "Ce soir, la maîtresse longe la grue avec Guy."
-    },
-    {
-      "level": "b1",
-      "word": "grue",
-      "sentence": "Quand la grand-mère visite la grue avec Guy, parce que Hugo est content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "guidon",
-      "sentence": "Le boulanger attend le guidon."
-    },
-    {
-      "level": "a2",
-      "word": "guidon",
-      "sentence": "Après le cours, un ami emprunte le guidon dans le garage."
-    },
-    {
-      "level": "b1",
-      "word": "guidon",
-      "sentence": "À midi, quand la maîtresse regarde le guidon avec Hugo, et Gaston est très content."
-    },
-    {
-      "level": "a1",
-      "word": "guitare",
-      "sentence": "Le professeur termine la guitare avec Guy."
-    },
-    {
-      "level": "a2",
-      "word": "guitare",
-      "sentence": "Après le cours, le directeur aime la guitare dans le garage."
-    },
-    {
-      "level": "b1",
-      "word": "guitare",
-      "sentence": "Quand la tante regarde la guitare dans le garage, parce que Hugo est content aussi."
-    },
-    {
-      "level": "a1",
       "word": "gâteau",
-      "sentence": "Le garçon sert le gâteau."
-    },
-    {
-      "level": "a2",
-      "word": "gâteau",
-      "sentence": "Avant le repas, le collègue partage le gâteau à la gare."
-    },
-    {
-      "level": "b1",
-      "word": "gâteau",
-      "sentence": "Quand le papa décore le gâteau dans le garage, parce que Hugo est content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "légume",
-      "sentence": "La maman sert le légume avec Hugo."
-    },
-    {
-      "level": "a2",
-      "word": "légume",
-      "sentence": "Ce matin, le voisin mange le légume avec Guy."
-    },
-    {
-      "level": "b1",
-      "word": "légume",
-      "sentence": "Ce matin, quand le collègue partage le légume, parce que Hugo est content aussi."
-    },
-    {
-      "level": "a1",
-      "word": "vague",
-      "sentence": "La collègue photographie la vague."
-    },
-    {
-      "level": "a2",
-      "word": "vague",
-      "sentence": "À midi, la maman regarde la vague dans le garage."
-    },
-    {
-      "level": "b1",
-      "word": "vague",
-      "sentence": "Quand le grand-père dessine la vague dans le garage, parce que Hugo est content aussi."
-    }
-  ],
-  "type10": [
-    {
-      "level": "a1",
-      "sentence": "Hugo porte la bague bien.",
-      "parts": [
-        {
-          "t": "Hugo porte "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " bague bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le collègue porte la bague avec Hugo.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " collègue porte "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " bague avec Hugo."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand le garçon porte la bague dans le garage, parce que Hugo est content aussi.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garçon porte "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " bague dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garage, parce que Hugo est content aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La voisine partage la figue.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " voisine partage "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " figue."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Hugo coupe la figue dans le garage.",
-      "parts": [
-        {
-          "t": "À midi, Hugo coupe "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " figue dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garage."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand la voisine goûte la figue avec Guy, parce que Hugo est content aussi.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " voisine goûte "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " figue avec Guy, parce que Hugo est content aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La grand-mère perd le gant.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " grand-mère perd "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " gant."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, la grand-mère perd le gant dans le garage.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " grand-mère perd "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " gant dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garage."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand la jardinière perd le gant dans le garage, parce que Hugo est content aussi.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " jardinière perd "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " gant dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garage, parce que Hugo est content aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le cuisinier range le garage.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " cuisinier range "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garage."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la musicienne peint le garage à la gare.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " musicienne peint "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garage à "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " gare."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Gaston ferme le garage, parce que Hugo est content aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Gaston ferme "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garage, parce que Hugo est content aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Magalie attend dans la gare.",
-      "parts": [
-        {
-          "t": "Magalie attend dans "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " gare."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le professeur cherche la gare dans le garage.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " professeur cherche "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " gare dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garage."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Gaston s’arrête à la gare avec Hugo, et Gaston est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Gaston s’arrête à "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " gare avec Hugo, et Gaston est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le frère quitte le gaz avec Guy.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " frère quitte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " gaz avec Guy."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Magalie bricole le gaz dans le garage.",
-      "parts": [
-        {
-          "t": "Ce soir, Magalie bricole "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " gaz dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garage."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand le frère range le gaz avec Guy, parce que Hugo est content aussi.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " frère range "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " gaz avec Guy, parce que Hugo est content aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La sœur glisse sur la glace.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " sœur glisse sur "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " glace."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le médecin patine sur la glace dans le garage.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " médecin patine sur "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " glace dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garage."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand la boulangère veut la glace avec Guy, parce que Hugo est content aussi.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boulangère veut "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " glace avec Guy, parce que Hugo est content aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La jardinière apporte le gobelet avec Guy.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " jardinière apporte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " gobelet avec Guy."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Hugo coupe le gobelet à la gare.",
-      "parts": [
-        {
-          "t": "À midi, Hugo coupe "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " gobelet à "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " gare."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand le grand-père achète le gobelet dans le garage, parce que Hugo est content aussi.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " grand-père achète "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " gobelet dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garage, parce que Hugo est content aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La grand-mère cherche la gomme.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " grand-mère cherche "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " gomme."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le grand-père cherche la gomme à la gare.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " grand-père cherche "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " gomme à "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " gare."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand la collègue cherche la gomme dans le garage, parce que Hugo est content aussi.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " collègue cherche "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " gomme dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garage, parce que Hugo est content aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Guy observe le gorille bien.",
-      "parts": [
-        {
-          "t": "Guy observe "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " gorille bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, la grand-mère attrape le gorille dans le garage.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " grand-mère attrape "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " gorille dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garage."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand la grand-mère nourrit le gorille avec Guy, parce que Hugo est content aussi.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " grand-mère nourrit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " gorille avec Guy, parce que Hugo est content aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Un ami nourrit le goujon avec Guy.",
-      "parts": [
-        {
-          "t": "Un ami nourrit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " goujon avec Guy."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le cuisinier attrape le goujon dans le garage.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cuisinier attrape "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " goujon dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garage."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand le boulanger observe le goujon à la gare, et Gaston est très content.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " boulanger observe "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " goujon à "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " gare, et Gaston est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le directeur dessine la goutte avec Guy.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " directeur dessine "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " goutte avec Guy."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Magalie voit la goutte à la gare.",
-      "parts": [
-        {
-          "t": "Ce soir, Magalie voit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " goutte à "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " gare."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand la boulangère observe la goutte dans le garage, parce que Hugo est content aussi.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boulangère observe "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " goutte dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garage, parce que Hugo est content aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le collègue achète le goûter.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " collègue achète "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " goûter."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le frère partage le goûter dans le garage.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " frère partage "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " goûter dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garage."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Magalie coupe le goûter avec Guy, parce que Hugo est content aussi.",
-      "parts": [
-        {
-          "t": "À midi, quand Magalie coupe "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " goûter avec Guy, parce que Hugo est content aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le voisin partage la grappe.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " voisin partage "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " grappe."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le collègue choisit la grappe dans le garage.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " collègue choisit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " grappe dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garage."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand le médecin mange la grappe avec Guy, parce que Hugo est content aussi.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " médecin mange "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " grappe avec Guy, parce que Hugo est content aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La maman sert la griotte avec Guy.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " maman sert "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " griotte avec Guy."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la jardinière achète la griotte dans le garage.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " jardinière achète "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " griotte dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garage."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand Hugo prépare la griotte avec Guy, et Gaston est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand Hugo prépare "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " griotte avec Guy, et Gaston est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Guy suit le groupe bien.",
-      "parts": [
-        {
-          "t": "Guy suit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " groupe bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, la grand-mère appelle le groupe à la gare.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " grand-mère appelle "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " groupe à "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " gare."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand la fille embrasse le groupe dans le garage, parce que Hugo est content aussi.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " fille embrasse "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " groupe dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garage, parce que Hugo est content aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Un ami cherche la grue avec Hugo.",
-      "parts": [
-        {
-          "t": "Un ami cherche "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " grue avec Hugo."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, la maîtresse longe la grue avec Guy.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maîtresse longe "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " grue avec Guy."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand la grand-mère visite la grue avec Guy, parce que Hugo est content aussi.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " grand-mère visite "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " grue avec Guy, parce que Hugo est content aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le boulanger attend le guidon.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " boulanger attend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " guidon."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, un ami emprunte le guidon dans le garage.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, un ami emprunte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " guidon dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garage."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand la maîtresse regarde le guidon avec Hugo, et Gaston est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maîtresse regarde "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " guidon avec Hugo, et Gaston est très content."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le professeur termine la guitare avec Guy.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " professeur termine "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " guitare avec Guy."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le directeur aime la guitare dans le garage.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " directeur aime "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " guitare dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garage."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand la tante regarde la guitare dans le garage, parce que Hugo est content aussi.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " tante regarde "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " guitare dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garage, parce que Hugo est content aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le garçon sert le gâteau.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " garçon sert "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " gâteau."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le collègue partage le gâteau à la gare.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " collègue partage "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " gâteau à "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " gare."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand le papa décore le gâteau dans le garage, parce que Hugo est content aussi.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " papa décore "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " gâteau dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garage, parce que Hugo est content aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La maman sert le légume avec Hugo.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " maman sert "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " légume avec Hugo."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le voisin mange le légume avec Guy.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " voisin mange "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " légume avec Guy."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le collègue partage le légume, parce que Hugo est content aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " collègue partage "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " légume, parce que Hugo est content aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La collègue photographie la vague.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " collègue photographie "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " vague."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, la maman regarde la vague dans le garage.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maman regarde "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " vague dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garage."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand le grand-père dessine la vague dans le garage, parce que Hugo est content aussi.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " grand-père dessine "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " vague dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garage, parce que Hugo est content aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La boulangère porte la bague.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " boulangère porte "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " bague."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le boulanger sert la figue.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " boulanger sert "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " figue."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le grand-père perd le gant.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " grand-père perd "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " gant."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La maman nettoie le garage.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " maman nettoie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garage."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Hugo regarde le goujon avec Guy.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Hugo regarde "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " goujon avec Guy."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le garçon photographie la goutte avec Hugo.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garçon photographie "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " goutte avec Hugo."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le cuisinier sert le goûter dans le garage.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cuisinier sert "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " goûter dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garage."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la factrice goûte la grappe avec Hugo.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " factrice goûte "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " grappe avec Hugo."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand le boulanger choisit le légume à la gare, et Gaston est très content.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " boulanger choisit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " légume à "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " gare, et Gaston est très content."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand le copain plante la vague dans le garage, parce que Hugo est content aussi.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "le"
-        },
+      "variants": [
         {
-          "t": " copain plante "
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Gaspard goûte le gâteau de Gloria."
+          ]
         },
         {
-          "blank": "la"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Gloria garde un gros gâteau au gingembre pour Gabriel."
+          ]
         },
         {
-          "t": " vague dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garage, parce que Hugo est content aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand le collègue porte la bague dans le garage, parce que Hugo est content aussi.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " collègue porte "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " bague dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garage, parce que Hugo est content aussi."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Gabriel goûte le gâteau de Gloria, mais Gaspard garde la dernière part pour Margot."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "Quand le cuisinier choisit la figue dans le garage, parce que Hugo est content aussi.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cuisinier choisit "
-        },
-        {
-          "blank": "la"
-        },
+      "word": "gauffre",
+      "variants": [
         {
-          "t": " figue dans "
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Gaspard mange une grande gaufre."
+          ]
         },
         {
-          "blank": "le"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Gloria gagne une gaufre grâce au grand jeu de Gabriel."
+          ]
         },
         {
-          "t": " garage, parce que Hugo est content aussi."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Gabriel garde une gaufre pour Gaspard, mais Gloria la goûte avant le grand repas."
+          ]
         }
       ]
     },
     {
-      "level": "a1",
-      "sentence": "Gaston arrive à la gare.",
-      "parts": [
+      "word": "gaufre",
+      "variants": [
         {
-          "t": "Gaston arrive à "
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Gabriel mange une gaufre au sucre.",
+            "Gloria goûte la gaufre sucrée."
+          ]
         },
         {
-          "blank": "la"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Gaspard achète une gaufre au goûter dans la grande galerie.",
+            "Gaspard garde une gaufre dans la grande poche de Gabriel."
+          ]
         },
         {
-          "t": " gare."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Comme Gabriel gagne souvent au golf, il fête ça avec une gaufre et une glace.",
+            "Gabriel gagne une gaufre grâce à Gloria, mais Gaspard grogne et garde la dernière."
+          ]
         }
       ]
     },
     {
-      "level": "a1",
-      "sentence": "Gaston visite le gaz bien.",
-      "parts": [
+      "word": "gaz",
+      "variants": [
         {
-          "t": "Gaston visite "
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Le gaz arrive dans la grande cuisine.",
+            "Le gaz de Gaspard est coupé."
+          ]
         },
         {
-          "blank": "le"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Gloria ferme le gaz et garde le gros paquet de Gabriel."
+          ]
         },
         {
-          "t": " gaz bien."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Gabriel sent le gaz dans la cuisine, alors Gaspard ferme la grande vanne avec Gloria.",
+            "Si le gaz fuit dans le garage, ouvre la grande porte et garde ton calme."
+          ]
         }
       ]
     },
     {
-      "level": "a1",
-      "sentence": "Le copain achète la glace avec Hugo.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
+      "word": "gazelle",
+      "variants": [
         {
-          "t": " copain achète "
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "La gazelle court dans la grande plaine.",
+            "La gazelle de Gaspard court."
+          ]
         },
         {
-          "blank": "la"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Au zoo, Gabrielle regarde une gazelle dans le grand enclos.",
+            "Gloria regarde la gazelle gracieuse qui garde son petit."
+          ]
         },
         {
-          "t": " glace avec Hugo."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Gabriel voit une gazelle dans la grande savane, mais Gaspard garde la caméra."
+          ]
         }
       ]
     },
     {
-      "level": "a1",
-      "sentence": "Le médecin sert le gobelet avec Hugo.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
+      "word": "gazoduc",
+      "variants": [
         {
-          "t": " médecin sert "
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Le gazoduc de Gaspard est grand."
+          ]
         },
         {
-          "blank": "le"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Gloria regarde le gazoduc qui traverse le grand champ de Gabriel."
+          ]
         },
         {
-          "t": " gobelet avec Hugo."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Gabriel garde le gazoduc pendant la nuit, mais Gaspard et Gloria gagnent le gros contrat."
+          ]
         }
       ]
     },
     {
-      "level": "a1",
-      "sentence": "Le boulanger cherche la gomme.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
+      "word": "gazon",
+      "variants": [
         {
-          "t": " boulanger cherche "
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Le gazon de Gaspard est vert."
+          ]
         },
         {
-          "blank": "la"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Gloria tond le gazon de Gabriel dans le grand jardin."
+          ]
         },
         {
-          "t": " gomme."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Gabriel regarde le gazon que Gaspard arrose, mais Gloria garde le grand tuyau."
+          ]
         }
       ]
     },
     {
-      "level": "a1",
-      "sentence": "La maîtresse regarde le gorille.",
-      "parts": [
-        {
-          "blank": "La"
-        },
+      "word": "glace",
+      "variants": [
         {
-          "t": " maîtresse regarde "
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "La fille déguste une glace à la vanille.",
+            "La glace de Gaspard fond."
+          ]
         },
         {
-          "blank": "le"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Gloria mange une glace à la fraise avec Gabriel et Gaspard."
+          ]
         },
         {
-          "t": " gorille."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Gabriel mange une glace au gingembre, mais Gaspard garde la grande glace de Gloria."
+          ]
         }
       ]
     },
     {
-      "level": "a2",
-      "sentence": "Ce soir, le voisin apporte la griotte dans le garage.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " voisin apporte "
-        },
-        {
-          "blank": "la"
-        },
+      "word": "glacier",
+      "variants": [
         {
-          "t": " griotte dans "
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Le glacier de Gaspard est grand."
+          ]
         },
         {
-          "blank": "le"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Gloria regarde le glacier avec le guide de Gabriel et Gaspard."
+          ]
         },
         {
-          "t": " garage."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Gabriel grimpe sur le glacier avec Gaspard, mais Gloria garde le grand sac au camp."
+          ]
         }
       ]
     },
     {
-      "level": "a2",
-      "sentence": "Avant le repas, le collègue console le groupe à la gare.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " collègue console "
-        },
-        {
-          "blank": "le"
-        },
+      "word": "globe",
+      "variants": [
         {
-          "t": " groupe à "
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Le globe de Gaspard est grand."
+          ]
         },
         {
-          "blank": "la"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Gloria tourne le globe de Gabriel et regarde la grande Afrique."
+          ]
         },
         {
-          "t": " gare."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Gabriel regarde le globe avec Gaspard, mais Gloria garde le grand atlas dans le garage."
+          ]
         }
       ]
     },
     {
-      "level": "a2",
-      "sentence": "À midi, Gaston trouve la grue avec Hugo.",
-      "parts": [
+      "word": "glycine",
+      "variants": [
         {
-          "t": "À midi, Gaston trouve "
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "La glycine de Gaspard grimpe."
+          ]
         },
         {
-          "blank": "la"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Gloria taille la glycine qui grimpe sur le grand mur de Gabriel."
+          ]
         },
         {
-          "t": " grue avec Hugo."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Gabriel plante une glycine contre le mur du garage, mais Gaspard garde ses gros sécateurs."
+          ]
         }
       ]
     },
     {
-      "level": "a2",
-      "sentence": "Avant le repas, la grand-mère répare le guidon avec Hugo.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "la"
-        },
+      "word": "gomme",
+      "variants": [
         {
-          "t": " grand-mère répare "
+          "level": "a1",
+          "sentences": [
+            "Gaspard prend sa gomme grise."
+          ]
         },
         {
-          "blank": "le"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Gloria garde la gomme de Gabriel dans sa grande trousse."
+          ]
         },
         {
-          "t": " guidon avec Hugo."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Gabriel cherche sa gomme partout, mais Gaspard l’a gardée dans la grande poche."
+          ]
         }
       ]
     },
     {
-      "level": "a2",
-      "sentence": "Ce soir, la collègue commence la guitare avec Hugo.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " collègue commence "
-        },
-        {
-          "blank": "la"
-        },
+      "word": "grand",
+      "variants": [
         {
-          "t": " guitare avec Hugo."
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Gabrielle est agricultrice, et elle garde ses vaches dans un grand pré.",
+            "Gabrielle regarde le grand tableau des départs dans la gare.",
+            "Le grand aigle guette sa proie depuis la grotte."
+          ]
         }
       ]
     },
     {
-      "level": "a2",
-      "sentence": "Ce soir, la boulangère goûte le gâteau avec Guy.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boulangère goûte "
-        },
-        {
-          "blank": "le"
-        },
+      "word": "grosse",
+      "variants": [
         {
-          "t": " gâteau avec Guy."
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Grégoire cueille une grosse figue mûre sur le grand figuier."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "Quand le musicien perd le gant dans le garage, parce que Hugo est content aussi.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " musicien perd "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " gant dans "
-        },
-        {
-          "blank": "le"
-        },
+      "word": "guide",
+      "variants": [
         {
-          "t": " garage, parce que Hugo est content aussi."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand le guide montre la gazelle, les gamins se taisent et regardent avec grand intérêt."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "À midi, quand la jardinière visite le garage avec Hugo, et Gaston est très content.",
-      "parts": [
-        {
-          "t": "À midi, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " jardinière visite "
-        },
-        {
-          "blank": "le"
-        },
+      "word": "Notre",
+      "variants": [
         {
-          "t": " garage avec Hugo, et Gaston est très content."
+          "level": "a1",
+          "sentences": [
+            "Notre galaxie est très grande."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "Quand Gaston débarque à la gare dans le garage, parce que Hugo est content aussi.",
-      "parts": [
-        {
-          "t": "Quand Gaston débarque à "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " gare dans "
-        },
-        {
-          "blank": "le"
-        },
+      "word": "odeur",
+      "variants": [
         {
-          "t": " garage, parce que Hugo est content aussi."
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Gabrielle sent une odeur de gaz dans le garage."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "Quand le boulanger ferme le gaz dans le garage, parce que Hugo est content aussi.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " boulanger ferme "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " gaz dans "
-        },
+      "word": "petit",
+      "variants": [
         {
-          "blank": "le"
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Le petit escargot grimpe sur un galet."
+          ]
         },
         {
-          "t": " garage, parce que Hugo est content aussi."
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Diton le petit dragon a des griffes de lion et des grandes ailes.",
+            "Je gagne à la loterie un mignon petit champignon."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "Quand la jardinière glisse sur la glace à la gare, et Gaston est très content.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " jardinière glisse sur "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " glace à "
-        },
-        {
-          "blank": "la"
-        },
+      "word": "pluie",
+      "variants": [
         {
-          "t": " gare, et Gaston est très content."
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Après la pluie, un gros escargot glisse doucement sur la grille.",
+            "La pluie tombe, je m’abrite sous le parapluie."
+          ]
         }
       ]
     },
     {
-      "level": "b1",
-      "sentence": "Quand la maman choisit le gobelet dans le garage, parce que Hugo est content aussi.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maman choisit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " gobelet dans "
-        },
+      "word": "train",
+      "variants": [
         {
-          "blank": "le"
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Attention, au signal, le train va partir."
+          ]
         },
         {
-          "t": " garage, parce que Hugo est content aussi."
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand le train est en retard, Gaspard garde son calme dans la grande gare."
+          ]
         }
-      ]
-    }
-  ],
-  "type12": [
-    {
-      "level": "a1",
-      "sentence": "La boulangère porte la bague."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le boulanger sert la figue."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le grand-père perd le gant."
-    },
-    {
-      "level": "a1",
-      "sentence": "La maman nettoie le garage."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Hugo regarde le goujon avec Guy."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le garçon photographie la goutte avec Hugo."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le cuisinier sert le goûter dans le garage."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la factrice goûte la grappe avec Hugo."
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand le boulanger choisit le légume à la gare, et Gaston est très content."
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand le copain plante la vague dans le garage, parce que Hugo est content aussi."
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand le collègue porte la bague dans le garage, parce que Hugo est content aussi."
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand le cuisinier choisit la figue dans le garage, parce que Hugo est content aussi."
-    }
-  ],
-  "type14": [
-    {
-      "level": "a1",
-      "sentence": "Gaston arrive à la gare."
-    },
-    {
-      "level": "a1",
-      "sentence": "Gaston visite le gaz bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le copain achète la glace avec Hugo."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le médecin sert le gobelet avec Hugo."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le boulanger cherche la gomme."
-    },
-    {
-      "level": "a1",
-      "sentence": "La maîtresse regarde le gorille."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le voisin apporte la griotte dans le garage."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le collègue console le groupe à la gare."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Gaston trouve la grue avec Hugo."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la grand-mère répare le guidon avec Hugo."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, la collègue commence la guitare avec Hugo."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, la boulangère goûte le gâteau avec Guy."
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand le musicien perd le gant dans le garage, parce que Hugo est content aussi."
-    },
-    {
-      "level": "b1",
-      "sentence": "À midi, quand la jardinière visite le garage avec Hugo, et Gaston est très content."
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand Gaston débarque à la gare dans le garage, parce que Hugo est content aussi."
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand le boulanger ferme le gaz dans le garage, parce que Hugo est content aussi."
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand la jardinière glisse sur la glace à la gare, et Gaston est très content."
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand la maman choisit le gobelet dans le garage, parce que Hugo est content aussi."
-    }
-  ],
-  "type12Stories": [
-    {
-      "level": "a2",
-      "sentences": [
-        "Ce matin, Hugo va à la gare avec sa sœur.",
-        "Il met ses gants parce qu’il fait froid.",
-        "Dans le train, il mange une glace et une figue.",
-        "Sa sœur dessine un gorille avec sa gomme à côté.",
-        "À l’arrivée, ils passent devant un garage.",
-        "Hugo boit une goutte d’eau dans son gobelet.",
-        "Ils achètent un gâteau pour le goûter.",
-        "Sur le guidon du vélo, Hugo pose sa bague.",
-        "Le soir, le groupe rentre content à la maison."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Quand le groupe arrive à la gare, Guy cherche ses gants.",
-        "Il a laissé sa gomme et son gobelet dans le garage.",
-        "Sa fille tient une glace et une grappe de raisin.",
-        "Ensemble, ils évitent une goutte d’eau qui tombe du toit.",
-        "Devant la gare, une grue soulève une grande caisse.",
-        "Guy explique le rôle de la grue à sa fille.",
-        "Ils achètent un gâteau pour le goûter du retour.",
-        "Dans le train, sa fille dessine un gorille et une vague.",
-        "Avant de dormir, Guy range la bague près du guidon du vélo."
-      ]
-    },
-    {
-      "level": "a2",
-      "sentences": [
-        "Léa range le garage avec son père.",
-        "Elle trouve une gomme et un gant.",
-        "Son père répare le guidon du vélo.",
-        "Léa pose un gobelet sur l’étagère.",
-        "Ils écoutent de la guitare à la radio.",
-        "Ensuite, Léa mange une glace.",
-        "Son père coupe une grappe de raisin.",
-        "Ils gardent un gâteau pour le goûter.",
-        "Le soir, Léa dessine un gorille."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Au garage, Gabriel répare le guidon d’un vélo du groupe.",
-        "Il porte des gants et garde une gomme dans sa poche.",
-        "Sa collègue apporte un gobelet et une goutte d’huile.",
-        "Ils écoutent de la guitare pendant le travail.",
-        "Une grue passe devant la porte du garage.",
-        "Gabriel photographie la grue pour le journal de la gare.",
-        "À midi, ils partagent un gâteau et une glace.",
-        "Sa collègue mange une figue et une griotte.",
-        "Avant de partir, Gabriel range la bague trouvée près du gaz."
-      ]
-    },
-    {
-      "level": "a2",
-      "sentences": [
-        "Maya mange une glace au parc.",
-        "Elle porte des gants roses.",
-        "Son ami joue de la guitare.",
-        "Maya dessine un gorille.",
-        "Elle utilise une gomme.",
-        "Ils boivent dans un gobelet.",
-        "Ensuite, ils vont à la gare.",
-        "Maya achète un gâteau.",
-        "Le goûter est très bon."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Près de la gare, le groupe prépare un goûter.",
-        "Inès apporte un gâteau, une glace et une grappe.",
-        "Guy pose les gobelets sur la table et cherche ses gants.",
-        "Une goutte tombe, alors Inès essuie avec une feuille.",
-        "Les enfants dessinent un gorille et une vague.",
-        "Inès corrige un dessin avec sa gomme.",
-        "Plus tard, ils visitent le garage à côté de la gare.",
-        "Guy montre le guidon et la guitare rangée au fond.",
-        "Avant la nuit, Inès range sa bague et ferme le garage."
-      ]
-    },
-    {
-      "level": "a2",
-      "sentences": [
-        "Omar attend le train à la gare.",
-        "Il met ses gants noirs.",
-        "Il mange une figue.",
-        "Sa sœur tient une glace.",
-        "Ils voient une grue dehors.",
-        "Omar boit dans son gobelet.",
-        "Ils achètent un gâteau.",
-        "Le goûter commence dans le train.",
-        "Omar range sa gomme dans le sac."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Ce soir, Gaël range le garage avant le départ à la gare.",
-        "Il retrouve ses gants, sa gomme et un gobelet sous une étagère.",
-        "Sa fille pose une guitare près du guidon du vélo.",
-        "Ils évitent une goutte d’eau qui tombe du toit.",
-        "Gaël ferme le gaz et vérifie encore une fois.",
-        "Sur le chemin de la gare, ils partagent une glace.",
-        "Dans le train, sa fille mange une grappe et une figue.",
-        "Elle dessine un gorille pendant que Gaël lit.",
-        "Au goûter, tout le groupe mange enfin le gâteau."
-      ]
-    },
-    {
-      "level": "a2",
-      "sentences": [
-        "Sofia joue de la guitare.",
-        "Le groupe écoute en silence.",
-        "Sofia porte des gants.",
-        "Elle boit dans un gobelet.",
-        "Ensuite, elle mange une glace.",
-        "Son ami lui donne une gomme.",
-        "Ils vont vers la gare.",
-        "Sofia achète un gâteau.",
-        "Le goûter a lieu près du garage."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Après le cours de guitare, le groupe se retrouve à la gare.",
-        "Guy a oublié ses gants dans le garage de l’école.",
-        "Inès lui prête une gomme et un gobelet pour le trajet.",
-        "Dans le train, les enfants mangent une glace et une grappe.",
-        "Une goutte tombe du plafond, et tout le monde rit.",
-        "Guy dessine une grue et un gorille sur une feuille.",
-        "À l’arrivée, ils achètent un gâteau pour le goûter.",
-        "Inès range sa bague et vérifie le guidon du vélo.",
-        "Avant de dormir, Guy ferme le garage et coupe le gaz."
-      ]
-    }
-  ],
-  "type14Stories": [
-    {
-      "level": "a2",
-      "sentences": [
-        "Ce matin, Hugo va à la gare avec sa sœur.",
-        "Il met ses gants parce qu’il fait froid.",
-        "Dans le train, il mange une glace et une figue.",
-        "Sa sœur dessine un gorille avec sa gomme à côté.",
-        "À l’arrivée, ils passent devant un garage.",
-        "Hugo boit une goutte d’eau dans son gobelet.",
-        "Ils achètent un gâteau pour le goûter.",
-        "Sur le guidon du vélo, Hugo pose sa bague.",
-        "Le soir, le groupe rentre content à la maison.",
-        "Le goûter commence tout de suite.",
-        "Hugo pose sa bague sur la table.",
-        "Sa sœur touche le guidon du vélo.",
-        "Ils écoutent de la guitare.",
-        "Une goutte tombe dehors.",
-        "Hugo ferme la fenêtre.",
-        "Le groupe rit ensemble.",
-        "Hugo range la gomme.",
-        "Sa sœur range les gants.",
-        "Le soir, ils rentrent contents."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Quand le groupe arrive à la gare, Guy cherche ses gants.",
-        "Il a laissé sa gomme et son gobelet dans le garage.",
-        "Sa fille tient une glace et une grappe de raisin.",
-        "Ensemble, ils évitent une goutte d’eau qui tombe du toit.",
-        "Devant la gare, une grue soulève une grande caisse.",
-        "Guy explique le rôle de la grue à sa fille.",
-        "Ils achètent un gâteau pour le goûter du retour.",
-        "Dans le train, sa fille dessine un gorille et une vague.",
-        "Avant de dormir, Guy range la bague près du guidon du vélo.",
-        "Guy range sa bague dans sa poche.",
-        "À l’arrivée, ils passent devant un garage.",
-        "Guy vérifie le guidon du vélo.",
-        "Sa fille joue un peu de guitare.",
-        "Ils boivent encore une goutte d’eau.",
-        "Le groupe partage le gâteau.",
-        "Guy remet ses gants parce qu’il fait froid.",
-        "Sa fille range la gomme dans le sac.",
-        "Avant la nuit, Guy ferme le garage.",
-        "Il coupe aussi le gaz avec soin."
-      ]
-    },
-    {
-      "level": "a2",
-      "sentences": [
-        "Léa range le garage avec son père.",
-        "Elle trouve une gomme et un gant.",
-        "Son père répare le guidon du vélo.",
-        "Léa pose un gobelet sur l’étagère.",
-        "Ils écoutent de la guitare à la radio.",
-        "Ensuite, Léa mange une glace.",
-        "Son père coupe une grappe de raisin.",
-        "Ils gardent un gâteau pour le goûter.",
-        "Le soir, Léa dessine un gorille.",
-        "Le goûter arrive bientôt.",
-        "Léa dessine un gorille.",
-        "Elle utilise encore la gomme.",
-        "Son père parle de la gare.",
-        "Demain, ils prendront le train.",
-        "Léa prépare ses gants.",
-        "Elle range sa bague.",
-        "Une goutte tombe sur la porte.",
-        "Son père ferme le garage.",
-        "Le soir, Léa est contente."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Au garage, Gabriel répare le guidon d’un vélo du groupe.",
-        "Il porte des gants et garde une gomme dans sa poche.",
-        "Sa collègue apporte un gobelet et une goutte d’huile.",
-        "Ils écoutent de la guitare pendant le travail.",
-        "Une grue passe devant la porte du garage.",
-        "Gabriel photographie la grue pour le journal de la gare.",
-        "À midi, ils partagent un gâteau et une glace.",
-        "Sa collègue mange une figue et une griotte.",
-        "Avant de partir, Gabriel range la bague trouvée près du gaz.",
-        "Plus tard, le groupe se retrouve à la gare.",
-        "Gabriel remet ses gants pour le trajet.",
-        "Dans le train, il boit dans son gobelet.",
-        "Sa collègue dessine un gorille sur une feuille.",
-        "Elle corrige le dessin avec la gomme.",
-        "À l’arrivée, ils voient encore la grue.",
-        "Gabriel vérifie le guidon une dernière fois.",
-        "Le goûter se termine près du garage.",
-        "Avant la nuit, Gabriel ferme le gaz.",
-        "Il laisse la guitare au sec dans le garage."
-      ]
-    },
-    {
-      "level": "a2",
-      "sentences": [
-        "Maya mange une glace au parc.",
-        "Elle porte des gants roses.",
-        "Son ami joue de la guitare.",
-        "Maya dessine un gorille.",
-        "Elle utilise une gomme.",
-        "Ils boivent dans un gobelet.",
-        "Ensuite, ils vont à la gare.",
-        "Maya achète un gâteau.",
-        "Le goûter est très bon.",
-        "Maya pose sa bague.",
-        "Son ami touche le guidon.",
-        "Ils voient une grue.",
-        "Une goutte tombe.",
-        "Maya rit.",
-        "Ils passent devant un garage.",
-        "Maya range la gomme.",
-        "Son ami range les gants.",
-        "Le groupe rentre à la maison.",
-        "Le soir, Maya dessine encore."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Près de la gare, le groupe prépare un goûter.",
-        "Inès apporte un gâteau, une glace et une grappe.",
-        "Guy pose les gobelets sur la table et cherche ses gants.",
-        "Une goutte tombe, alors Inès essuie avec une feuille.",
-        "Les enfants dessinent un gorille et une vague.",
-        "Inès corrige un dessin avec sa gomme.",
-        "Plus tard, ils visitent le garage à côté de la gare.",
-        "Guy montre le guidon et la guitare rangée au fond.",
-        "Avant la nuit, Inès range sa bague et ferme le garage.",
-        "Inès range sa bague dans sa poche.",
-        "Ils ferment le gaz avant de partir.",
-        "Sur le chemin, Guy mange une figue.",
-        "Inès boit encore une goutte d’eau.",
-        "À la gare, le groupe attend le train.",
-        "Guy remet ses gants parce qu’il fait froid.",
-        "Dans le train, les enfants partagent la glace.",
-        "Inès pose le gâteau sur ses genoux.",
-        "Avant la nuit, Guy ferme le garage.",
-        "Le goûter du jour reste un bon souvenir."
-      ]
-    },
-    {
-      "level": "a2",
-      "sentences": [
-        "Omar attend le train à la gare.",
-        "Il met ses gants noirs.",
-        "Il mange une figue.",
-        "Sa sœur tient une glace.",
-        "Ils voient une grue dehors.",
-        "Omar boit dans son gobelet.",
-        "Ils achètent un gâteau.",
-        "Le goûter commence dans le train.",
-        "Omar range sa gomme dans le sac.",
-        "Sa sœur joue de la guitare.",
-        "Omar touche le guidon.",
-        "Ils passent devant un garage.",
-        "Une goutte tombe sur le sol.",
-        "Omar rit avec sa sœur.",
-        "Le groupe attend le train.",
-        "Omar pose sa bague.",
-        "Sa sœur range les gants.",
-        "Dans le train, ils mangent le gâteau.",
-        "Le soir, Omar est fatigué."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Ce soir, Gaël range le garage avant le départ à la gare.",
-        "Il retrouve ses gants, sa gomme et un gobelet sous une étagère.",
-        "Sa fille pose une guitare près du guidon du vélo.",
-        "Ils évitent une goutte d’eau qui tombe du toit.",
-        "Gaël ferme le gaz et vérifie encore une fois.",
-        "Sur le chemin de la gare, ils partagent une glace.",
-        "Dans le train, sa fille mange une grappe et une figue.",
-        "Elle dessine un gorille pendant que Gaël lit.",
-        "Au goûter, tout le groupe mange enfin le gâteau.",
-        "Gaël pose sa bague sur la table pliante.",
-        "Sa fille boit dans le gobelet.",
-        "À l’arrivée, ils voient une grue près du quai.",
-        "Gaël remet ses gants pour sortir.",
-        "Ils passent devant un garage éclairé.",
-        "Sa fille range la gomme dans le sac.",
-        "Gaël vérifie encore le guidon du vélo.",
-        "Avant la nuit, il range la guitare.",
-        "Il ferme le garage une dernière fois.",
-        "Toute la famille s’endort tranquille."
-      ]
-    },
-    {
-      "level": "a2",
-      "sentences": [
-        "Sofia joue de la guitare.",
-        "Le groupe écoute en silence.",
-        "Sofia porte des gants.",
-        "Elle boit dans un gobelet.",
-        "Ensuite, elle mange une glace.",
-        "Son ami lui donne une gomme.",
-        "Ils vont vers la gare.",
-        "Sofia achète un gâteau.",
-        "Le goûter a lieu près du garage.",
-        "Sofia pose sa bague.",
-        "Son ami touche le guidon.",
-        "Ils voient une grue.",
-        "Une goutte tombe.",
-        "Sofia dessine un gorille.",
-        "Elle utilise la gomme.",
-        "Le groupe rit.",
-        "Sofia range les gants.",
-        "Son ami range le gobelet.",
-        "Le soir, tout le monde est content."
-      ]
-    },
-    {
-      "level": "b1",
-      "sentences": [
-        "Après le cours de guitare, le groupe se retrouve à la gare.",
-        "Guy a oublié ses gants dans le garage de l’école.",
-        "Inès lui prête une gomme et un gobelet pour le trajet.",
-        "Dans le train, les enfants mangent une glace et une grappe.",
-        "Une goutte tombe du plafond, et tout le monde rit.",
-        "Guy dessine une grue et un gorille sur une feuille.",
-        "À l’arrivée, ils achètent un gâteau pour le goûter.",
-        "Inès range sa bague et vérifie le guidon du vélo.",
-        "Avant de dormir, Guy ferme le garage et coupe le gaz.",
-        "Le lendemain, le groupe revient à la gare.",
-        "Guy a retrouvé ses gants.",
-        "Inès apporte encore un gobelet et une figue.",
-        "Les enfants partagent une glace sur le quai.",
-        "Guy joue un peu de guitare en attendant.",
-        "Une grue travaille près des voies.",
-        "Inès photographie la grue.",
-        "Le goûter se termine avec le gâteau.",
-        "Guy range la gomme dans sa poche.",
-        "Le groupe repart content vers le garage."
       ]
     }
   ]

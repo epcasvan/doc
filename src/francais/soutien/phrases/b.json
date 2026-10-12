@@ -1,3007 +1,842 @@
 {
-  "type9": [
+  "son": "b",
+  "phrases": [
     {
-      "level": "a1",
+      "word": "abeille",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "L’abeille butine le bouquet.",
+            "Une abeille vole sur le bouquet."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Barbara a vu une abeille bleue sur un bouton blanc.",
+            "Une abeille bourdonne autour du bouquet de bleuets sur la table."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Bastien a peur de l’abeille qui bourdonne près du bébé de Barbara.",
+            "Quand une abeille bourdonne près du balcon, mon bébé pleure parce qu’il a peur."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "abricot",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Bruno a un abricot bien mûr."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Barbara achète un bel abricot et un bouquet de basilic."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Bastien mange un abricot bien mûr, puis Barbara boit un bol de bouillon.",
+            "Mon bébé boude l’abricot, mais il boit toujours beaucoup de jus de banane."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "album",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "L’album de Bruno est bleu."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Barbara regarde un album de photos bien rangé sur son banc."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Bastien offre un album à Barbara, mais Bruno préfère le grand livre bleu."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "alphabet",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Bruno apprend l’alphabet bien vite."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Barbara apprend l’alphabet avec un beau livre bleu.",
+            "Barbara chante l’alphabet avec Bastien et Bruno dans le bus."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Bastien écrit l’alphabet sur le tableau blanc, mais Barbara bavarde avec Bruno.",
+            "Comme Bruno a beaucoup de mal à lire, il répète bien l’alphabet chaque soir."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "ambulance",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "L’ambulance arrive bientôt devant la boulangerie.",
+            "L’ambulance bleue arrive bientôt."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Barbara appelle l’ambulance parce que Bastien a mal au bras.",
+            "Une ambulance blanche arrive devant le bâtiment de la banque."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "L’ambulance de Bruno transporte le blessé blond à l’hôpital, et Barbara le suit.",
+            "Si une ambulance bloque la rue, les bus et les voitures attendent beaucoup trop longtemps."
+          ]
+        }
+      ]
+    },
+    {
       "word": "arbre",
-      "sentence": "Bruno dessine un arbre bien."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Bruno grimpe sur l’arbre."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Barbara bavarde sous l’arbre avec Bastien et Bruno."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Bastien a installé un banc sous l’arbre, et Barbara boit un bon café.",
+            "Comme l’arbre cache le soleil, nous mettons le banc au bord du lac bleu."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "arbre",
-      "sentence": "Après le cours, la directrice grimpe sur un arbre près de Barbara."
+      "word": "aubergine",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Bruno cuit l’aubergine bleue.",
+            "J’aime l’aubergine avec du beurre."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Barbara achète une aubergine bien brillante au marché de Bastien."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Bastien coupe une aubergine en bandes, puis Barbara les cuit avec du beurre."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "arbre",
-      "sentence": "Quand le musicien se cache derrière un arbre, parce que Barbara est bien contente."
+      "word": "autobus",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "L’autobus bleu passe devant la boutique.",
+            "L’autobus de Bruno arrive."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Barbara attend l’autobus avec Bastien sur le banc.",
+            "Beaucoup de gens attendent l’autobus devant la banque, car il pleut."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Bruno rate l’autobus, mais Barbara et Bastien lui gardent une place au bord.",
+            "Comme mon bureau est loin du boulevard, je prends l’autobus bleu tous les jours."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
-      "word": "baguette",
-      "sentence": "Le papa prépare la baguette bien."
+      "word": "bague",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "La bague de Barbara brille."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Bruno achète une bague en or à la boutique de bijoux.",
+            "Bruno offre une bague à Barbara pour son anniversaire."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Bastien a perdu la bague de Barbara, mais Bruno l’a retrouvée sous le banc."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "baguette",
-      "sentence": "À midi, Bruno coupe la baguette au bal."
+      "word": "baignoire",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "La baignoire de Bruno est blanche.",
+            "Mon petit bateau flotte dans la baignoire."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Barbara baigne le bébé dans la baignoire bleue.",
+            "Béa remplit la baignoire d’eau bien chaude avec du bain moussant."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Bastien remplit la baignoire et Barbara baigne le bébé avec un bol d’eau."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "baguette",
-      "sentence": "Ce matin, quand le frère goûte la baguette, parce que Barbara est bien contente."
-    },
-    {
-      "level": "a1",
       "word": "balai",
-      "sentence": "La sœur peint le balai bien."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Bruno range le balai bleu.",
+            "Le balai est dans le bureau."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Barbara balaie le balcon avec le balai de Bastien.",
+            "Bernard utilise un balai pour nettoyer le balcon après la tempête."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Bastien prend le balai pour balayer le bureau, mais Barbara préfère un aspirateur."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "balai",
-      "sentence": "Avant le repas, le collègue range le balai bien bas."
+      "word": "balance",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "La balance blanche est sur le banc.",
+            "La balance de Bruno est bleue."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Barbara pèse les bananes sur la balance de Bastien."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Bastien met le bébé sur la balance, mais Barbara bouge un peu le bras."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "balai",
-      "sentence": "Quand la cuisinière nettoie le balai avec Bruno, et Bruno aime bien ça aussi."
-    },
-    {
-      "level": "a1",
       "word": "balcon",
-      "sentence": "Le jardinier range le balcon bien."
+      "variants": [
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Si mon ballon tombe sur le balcon du voisin, je sonne bien poliment."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "balcon",
-      "sentence": "Après le cours, la collègue peint le balcon près de Barbara."
+      "word": "baleine",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "La baleine bleue nage bien.",
+            "La baleine bleue nage dans la mer."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Barbara regarde la baleine bleue avec Bastien sur le bateau."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Bruno voit une baleine près du bateau, et Barbara filme le bébé baleineau.",
+            "Quand une baleine apparaît près du bateau, tout le monde à bord se tait bien."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "balcon",
-      "sentence": "Ce matin, quand Bob ferme le balcon, parce que Barbara est bien contente."
-    },
-    {
-      "level": "a1",
       "word": "balle",
-      "sentence": "Béatrice jette la balle bien."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Bruno lance la balle bleue.",
+            "La balle bleue roule sous le banc."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Barbara attrape la balle de Bastien avec un bras.",
+            "Basile lance la balle au bout du couloir, et le chien court."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Bastien a perdu la balle de Barbara, mais Bruno l’a rattrapée au bord.",
+            "Quand la balle rebondit sur le balcon, le petit garçon la rattrape bien et sourit."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "balle",
-      "sentence": "À midi, Bob jette la balle près de Barbara."
+      "word": "ballon",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Le ballon blanc roule vers le bébé.",
+            "Le ballon de Bruno est bleu."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Barbara tape dans le ballon bleu avec Bastien."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Bastien botte le ballon vers Barbara, mais Bruno le bloque avec le bras."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "balle",
-      "sentence": "Ce matin, quand le garçon jette la balle, parce que Barbara est bien contente."
+      "word": "bambou",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Le bambou de Bruno est beau."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Barbara plante un bambou près de la barrière de Bastien."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Bastien bricole une cabane en bambou pour Bruno, et Barbara la peint en bleu.",
+            "Brigitte garde un bambou dans un bol bleu parce que la plante aime l’eau."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
       "word": "banane",
-      "sentence": "La maîtresse aime la banane bien."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Bruno mange une banane bien mûre."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Barbara pèle une banane pour le bébé de Bastien.",
+            "Barnabé, le bébé, mâche un biscuit puis une banane."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Bastien achète une banane à Bruno, mais Barbara préfère le gâteau à la banane."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "banane",
-      "sentence": "Après le cours, le maître aime la banane bien bas."
-    },
-    {
-      "level": "b1",
-      "word": "banane",
-      "sentence": "Quand la voisine aime la banane près de Barbara, et Bruno aime bien ça aussi."
-    },
-    {
-      "level": "a1",
       "word": "banc",
-      "sentence": "Le grand-père traverse le banc bien."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Bruno s’assoit sur le banc."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Barbara et Bastien bavardent sur un banc bleu."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Bastien a peint le banc en bleu, mais Barbara et Bruno ont préféré le blanc."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "banc",
-      "sentence": "À midi, la maîtresse voit le banc près de Barbara."
+      "word": "banjo",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Bruno joue bien du banjo."
+          ]
+        },
+        {
+          "level": "a2",
+          "sentences": [
+            "Barbara écoute Bastien qui joue du banjo avec Bruno."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Bastien apprend le banjo avec Bruno, mais Barbara préfère la basse et le bugle."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "banc",
-      "sentence": "Quand le musicien longe le banc avec Bruno, et Bruno aime bien ça aussi."
+      "word": "basilic",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Bruno arrose bien le basilic."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Barbara met du basilic dans le bol de bouillon de Bastien."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Bastien cultive du basilic sur le balcon, et Barbara l’arrose avec un bidon."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
+      "word": "basketball",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Bruno joue bien au basketball."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Barbara regarde le basketball avec Bastien et Bruno."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Bastien joue au basketball avec Bruno, mais Barbara préfère rester sur le banc."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "baskets",
+      "variants": [
+        {
+          "level": "a1",
+          "sentences": [
+            "Bruno met ses baskets bleues."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "plur",
+          "sentences": [
+            "Barbara achète des baskets blanches pour Bastien et Bruno."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "plur",
+          "sentences": [
+            "Bastien cherche ses baskets partout, mais Barbara les a rangées dans le bureau."
+          ]
+        }
+      ]
+    },
+    {
       "word": "bateau",
-      "sentence": "La musicienne prend le bateau bien."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Bruno monte sur le bateau."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Barbara et Bastien voient un bateau blanc sur le bord du lac.",
+            "Sur le bateau, les touristes regardent une baleine bleue."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Bastien a construit un bateau en bois, et Barbara le teint en bleu avec Bruno."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "bateau",
-      "sentence": "Ce soir, la cousine prend le bateau près de Barbara."
+      "word": "batte",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Bruno tient bien la batte."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Barbara frappe la balle avec la batte de Bastien."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Bastien range la batte dans le bac, mais Barbara et Bruno la reprennent aussitôt."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "bateau",
-      "sentence": "Quand la directrice prend le bateau avec Bruno, et Bruno aime bien ça aussi."
-    },
-    {
-      "level": "a1",
-      "word": "beau",
-      "sentence": "La boulangère prend le beau."
-    },
-    {
-      "level": "a2",
-      "word": "beau",
-      "sentence": "Après le cours, le papa utilise le beau bien bas."
-    },
-    {
-      "level": "b1",
-      "word": "beau",
-      "sentence": "Quand la professeure range le beau près de Barbara, et Bruno aime bien ça aussi."
-    },
-    {
-      "level": "a1",
-      "word": "bibliothèque",
-      "sentence": "Le voisin lit à la bibliothèque."
-    },
-    {
-      "level": "a2",
-      "word": "bibliothèque",
-      "sentence": "Avant le repas, la sœur étudie à la bibliothèque avec Bruno."
-    },
-    {
-      "level": "b1",
-      "word": "bibliothèque",
-      "sentence": "Ce matin, quand la professeure lit à la bibliothèque, parce que Barbara est bien contente."
-    },
-    {
-      "level": "a1",
-      "word": "biscuit",
-      "sentence": "Le médecin prépare le biscuit bien."
-    },
-    {
-      "level": "a2",
-      "word": "biscuit",
-      "sentence": "Ce soir, le voisin coupe le biscuit près de Barbara."
-    },
-    {
-      "level": "b1",
-      "word": "biscuit",
-      "sentence": "Quand la collègue goûte le biscuit avec Bruno, et Bruno aime bien ça aussi."
-    },
-    {
-      "level": "a1",
-      "word": "blanc",
-      "sentence": "Le directeur pose le blanc bien."
-    },
-    {
-      "level": "a2",
-      "word": "blanc",
-      "sentence": "Ce soir, Béatrice montre le blanc près de Barbara."
-    },
-    {
-      "level": "b1",
-      "word": "blanc",
-      "sentence": "Ce matin, quand la fille trouve le blanc, parce que Barbara est bien contente."
-    },
-    {
-      "level": "a1",
-      "word": "bleu",
-      "sentence": "Un ami cherche le bleu bien."
-    },
-    {
-      "level": "a2",
-      "word": "bleu",
-      "sentence": "À midi, la maîtresse pose le bleu bien bas."
-    },
-    {
-      "level": "b1",
-      "word": "bleu",
-      "sentence": "Quand le cousin montre le bleu près de Barbara, et Bruno aime bien ça aussi."
-    },
-    {
-      "level": "a1",
-      "word": "blond",
-      "sentence": "La cousine oublie le blond."
-    },
-    {
-      "level": "a2",
-      "word": "blond",
-      "sentence": "Ce matin, le musicien range le blond près de Barbara."
-    },
-    {
-      "level": "b1",
-      "word": "blond",
-      "sentence": "Ce matin, quand la factrice pose le blond, parce que Barbara est bien contente."
-    },
-    {
-      "level": "a1",
-      "word": "boisson",
-      "sentence": "Le cuisinier range le boisson bien."
-    },
-    {
-      "level": "a2",
-      "word": "boisson",
-      "sentence": "Avant le repas, la musicienne oublie le boisson au bal."
-    },
-    {
-      "level": "b1",
-      "word": "boisson",
-      "sentence": "Ce matin, quand Bruno cherche le boisson, et Bruno aime bien ça aussi."
-    },
-    {
-      "level": "a1",
-      "word": "bonbon",
-      "sentence": "Barbara goûte le bonbon bien."
-    },
-    {
-      "level": "a2",
-      "word": "bonbon",
-      "sentence": "Ce matin, la boulangère partage le bonbon près de Barbara."
-    },
-    {
-      "level": "b1",
-      "word": "bonbon",
-      "sentence": "Ce matin, quand le papa sert le bonbon, parce que Barbara est bien contente."
-    },
-    {
-      "level": "a1",
-      "word": "bonnet",
-      "sentence": "La maman porte le bonnet bien."
-    },
-    {
-      "level": "a2",
-      "word": "bonnet",
-      "sentence": "Ce soir, le voisin range le bonnet bien bas."
-    },
-    {
-      "level": "b1",
-      "word": "bonnet",
-      "sentence": "Quand la sœur enfile le bonnet près de Barbara, et Bruno aime bien ça aussi."
-    },
-    {
-      "level": "a1",
-      "word": "botte",
-      "sentence": "Le copain lave la botte bien."
-    },
-    {
-      "level": "a2",
-      "word": "botte",
-      "sentence": "Avant le repas, la collègue achète la botte près de Barbara."
-    },
-    {
-      "level": "b1",
-      "word": "botte",
-      "sentence": "Ce matin, quand le jardinier range la botte, parce que Barbara est bien contente."
-    },
-    {
-      "level": "a1",
-      "word": "bouche",
-      "sentence": "La jardinière lave la bouche bien."
-    },
-    {
-      "level": "a2",
-      "word": "bouche",
-      "sentence": "Après le cours, Bob lave la bouche près de Barbara."
-    },
-    {
-      "level": "b1",
-      "word": "bouche",
-      "sentence": "Ce matin, quand la collègue lave la bouche, parce que Barbara est bien contente."
-    },
-    {
-      "level": "a1",
-      "word": "boîte",
-      "sentence": "Le bébé ouvre la boîte."
-    },
-    {
-      "level": "a2",
-      "word": "boîte",
-      "sentence": "À midi, Béatrice ouvre la boîte au bal."
-    },
-    {
-      "level": "b1",
-      "word": "boîte",
-      "sentence": "Quand la fille ouvre la boîte avec Bruno, et Bruno aime bien ça aussi."
-    },
-    {
-      "level": "a1",
-      "word": "bracelet",
-      "sentence": "Le professeur choisit le bracelet bien."
-    },
-    {
-      "level": "a2",
-      "word": "bracelet",
-      "sentence": "Ce matin, la cousine met le bracelet bien bas."
-    },
-    {
-      "level": "b1",
-      "word": "bracelet",
-      "sentence": "Quand le grand-père achète le bracelet près de Barbara, et Bruno aime bien ça aussi."
-    },
-    {
-      "level": "a1",
-      "word": "brosse",
-      "sentence": "La grand-mère bricole la brosse."
-    },
-    {
-      "level": "a2",
-      "word": "brosse",
-      "sentence": "Après le cours, Bruno ouvre la brosse près de Barbara."
-    },
-    {
-      "level": "b1",
-      "word": "brosse",
-      "sentence": "Ce matin, quand la musicienne range la brosse, parce que Barbara est bien contente."
-    },
-    {
-      "level": "a1",
-      "word": "brun",
-      "sentence": "Le collègue range le brun bien."
-    },
-    {
-      "level": "a2",
-      "word": "brun",
-      "sentence": "À midi, Barbara oublie le brun au bal."
-    },
-    {
-      "level": "b1",
-      "word": "brun",
-      "sentence": "Ce matin, quand la boulangère cherche le brun, et Bruno aime bien ça aussi."
-    },
-    {
-      "level": "a1",
-      "word": "bureau",
-      "sentence": "Le garçon travaille dans le bureau bien."
-    },
-    {
-      "level": "a2",
-      "word": "bureau",
-      "sentence": "Ce soir, la boulangère travaille dans le bureau au bal."
-    },
-    {
-      "level": "b1",
-      "word": "bureau",
-      "sentence": "Quand le papa travaille dans le bureau avec Bruno, et Bruno aime bien ça aussi."
-    },
-    {
-      "level": "a1",
-      "word": "bus",
-      "sentence": "Bob conduit le bus bien."
-    },
-    {
-      "level": "a2",
-      "word": "bus",
-      "sentence": "Avant le repas, le copain se dépêche pour le bus bien bas."
-    },
-    {
-      "level": "b1",
-      "word": "bus",
-      "sentence": "Quand la collègue prend le bus avec Bruno, et Bruno aime bien ça aussi."
-    },
-    {
-      "level": "a1",
       "word": "bébé",
-      "sentence": "Le facteur embrasse le bébé."
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Le bébé est tombé.",
+            "Le bébé mange un abricot bien mûr.",
+            "Le bébé panda mange du bambou."
+          ]
+        },
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Comme le bébé n’aime pas le bain, papa reste au bord de la baignoire.",
+            "Quand le bébé dort, je passe le balai bien doucement, mais sans bruit."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "bébé",
-      "sentence": "Ce soir, la voisine couvre le bébé au bal."
+      "word": "bel",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Papa a un bel album de bateaux."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "bébé",
-      "sentence": "Ce matin, quand la fille console le bébé, parce que Barbara est bien contente."
+      "word": "belle",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Maman porte une belle bague."
+          ]
+        },
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Au marché, Béa achète une belle aubergine et des bananes.",
+            "Beaucoup de garçons jouent au ballon sur la belle plage."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
-      "word": "bûche",
-      "sentence": "La directrice peint la bûche bien."
+      "word": "bibliothèque",
+      "variants": [
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Dans la bibliothèque, Benoît cherche un vieil album de bande dessinée."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "bûche",
-      "sentence": "Ce soir, le bébé ferme la bûche au bal."
+      "word": "bon",
+      "variants": [
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Pour réussir un bon gâteau, je pèse bien le beurre sur la balance.",
+            "Quand je prépare un bon gratin, j’ajoute une aubergine et beaucoup de basilic."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "bûche",
-      "sentence": "Quand un ami nettoie la bûche avec Bruno, et Bruno aime bien ça aussi."
+      "word": "boucher",
+      "variants": [
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Le boucher pèse la viande sur la balance avec beaucoup de soin."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
-      "word": "concombre",
-      "sentence": "Une amie pose la concombre bien."
+      "word": "branche",
+      "variants": [
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Le geai bleu est sur la branche du cerisier.",
+            "Mon beau-frère coupe une branche de l’arbre avec une scie."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "concombre",
-      "sentence": "À midi, le professeur montre la concombre près de Barbara."
+      "word": "cherche",
+      "variants": [
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Béatrice a perdu sa bague, mais elle la cherche bien dans la boîte à bijoux."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "concombre",
-      "sentence": "Ce matin, quand la cousine trouve la concombre, parce que Barbara est bien contente."
+      "word": "grand",
+      "variants": [
+        {
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Quand Bastien vient, nous regardons le grand album de bateaux sur le balcon."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
-      "word": "framboise",
-      "sentence": "Le frère cherche la framboise bien."
+      "word": "maître",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Le maître écrit l’alphabet au tableau."
+          ]
+        }
+      ]
     },
     {
-      "level": "a2",
-      "word": "framboise",
-      "sentence": "Après le cours, la grand-mère pose la framboise bien bas."
+      "word": "oiseau",
+      "variants": [
+        {
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Un oiseau bleu est sur l’arbre."
+          ]
+        }
+      ]
     },
     {
-      "level": "b1",
-      "word": "framboise",
-      "sentence": "Quand le cuisinier montre la framboise près de Barbara, et Bruno aime bien ça aussi."
+      "word": "panda",
+      "variants": [
+        {
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Au zoo de Bâle, le panda mange beaucoup de bambou."
+          ]
+        }
+      ]
     },
     {
-      "level": "a1",
-      "word": "robe",
-      "sentence": "La cuisinière choisit la robe bien."
-    },
-    {
-      "level": "a2",
-      "word": "robe",
-      "sentence": "Ce matin, le frère repasse la robe près du bébé."
-    },
-    {
-      "level": "b1",
-      "word": "robe",
-      "sentence": "Ce matin, quand Barbara coud la robe, parce que Barbara est bien contente."
-    },
-    {
-      "level": "a1",
       "word": "table",
-      "sentence": "Bob nettoie la table bien."
-    },
-    {
-      "level": "a2",
-      "word": "table",
-      "sentence": "Ce soir, la cuisinière mesure la table près de Barbara."
-    },
-    {
-      "level": "b1",
-      "word": "table",
-      "sentence": "Quand la maman couvre la table avec Bruno, et Bruno aime bien ça aussi."
-    }
-  ],
-  "type10": [
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la directrice grimpe sur un arbre près de Barbara.",
-      "parts": [
+      "variants": [
         {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " directrice grimpe sur un arbre près de Barbara."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand le musicien se cache derrière un arbre, parce que Barbara est bien contente.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " musicien se cache derrière un arbre, parce que Barbara est bien contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le papa prépare la baguette bien.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " papa prépare "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " baguette bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Bruno coupe la baguette au bal.",
-      "parts": [
-        {
-          "t": "À midi, Bruno coupe "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " baguette au bal."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le frère goûte la baguette, parce que Barbara est bien contente.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " frère goûte "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " baguette, parce que Barbara est bien contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La sœur peint le balai bien.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " sœur peint "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " balai bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le collègue range le balai bien bas.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " collègue range "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " balai bien bas."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand la cuisinière nettoie le balai avec Bruno, et Bruno aime bien ça aussi.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cuisinière nettoie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " balai avec Bruno, et Bruno aime bien ça aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le jardinier range le balcon bien.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " jardinier range "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " balcon bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la collègue peint le balcon près de Barbara.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " collègue peint "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " balcon près de Barbara."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Bob ferme le balcon, parce que Barbara est bien contente.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Bob ferme "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " balcon, parce que Barbara est bien contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Béatrice jette la balle bien.",
-      "parts": [
-        {
-          "t": "Béatrice jette "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " balle bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Bob jette la balle près de Barbara.",
-      "parts": [
-        {
-          "t": "À midi, Bob jette "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " balle près de Barbara."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le garçon jette la balle, parce que Barbara est bien contente.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " garçon jette "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " balle, parce que Barbara est bien contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La maîtresse aime la banane bien.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " maîtresse aime "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " banane bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le maître aime la banane bien bas.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " maître aime "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " banane bien bas."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand la voisine aime la banane près de Barbara, et Bruno aime bien ça aussi.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " voisine aime "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " banane près de Barbara, et Bruno aime bien ça aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le grand-père traverse le banc bien.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " grand-père traverse "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " banc bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, la maîtresse voit le banc près de Barbara.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maîtresse voit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " banc près de Barbara."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand le musicien longe le banc avec Bruno, et Bruno aime bien ça aussi.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " musicien longe "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " banc avec Bruno, et Bruno aime bien ça aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La musicienne prend le bateau bien.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " musicienne prend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bateau bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, la cousine prend le bateau près de Barbara.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cousine prend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bateau près de Barbara."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand la directrice prend le bateau avec Bruno, et Bruno aime bien ça aussi.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " directrice prend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bateau avec Bruno, et Bruno aime bien ça aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La boulangère prend le beau.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " boulangère prend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " beau."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le papa utilise le beau bien bas.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " papa utilise "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " beau bien bas."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand la professeure range le beau près de Barbara, et Bruno aime bien ça aussi.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " professeure range "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " beau près de Barbara, et Bruno aime bien ça aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le voisin lit à la bibliothèque.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " voisin lit à "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " bibliothèque."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la sœur étudie à la bibliothèque avec Bruno.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " sœur étudie à "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " bibliothèque avec Bruno."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la professeure lit à la bibliothèque, parce que Barbara est bien contente.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " professeure lit à "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " bibliothèque, parce que Barbara est bien contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le médecin prépare le biscuit bien.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " médecin prépare "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " biscuit bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le voisin coupe le biscuit près de Barbara.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " voisin coupe "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " biscuit près de Barbara."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand la collègue goûte le biscuit avec Bruno, et Bruno aime bien ça aussi.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " collègue goûte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " biscuit avec Bruno, et Bruno aime bien ça aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le directeur pose le blanc bien.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " directeur pose "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " blanc bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, Béatrice montre le blanc près de Barbara.",
-      "parts": [
-        {
-          "t": "Ce soir, Béatrice montre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " blanc près de Barbara."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la fille trouve le blanc, parce que Barbara est bien contente.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " fille trouve "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " blanc, parce que Barbara est bien contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Un ami cherche le bleu bien.",
-      "parts": [
-        {
-          "t": "Un ami cherche "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bleu bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, la maîtresse pose le bleu bien bas.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maîtresse pose "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bleu bien bas."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand le cousin montre le bleu près de Barbara, et Bruno aime bien ça aussi.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cousin montre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bleu près de Barbara, et Bruno aime bien ça aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La cousine oublie le blond.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " cousine oublie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " blond."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le musicien range le blond près de Barbara.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " musicien range "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " blond près de Barbara."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la factrice pose le blond, parce que Barbara est bien contente.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " factrice pose "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " blond, parce que Barbara est bien contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le cuisinier range le boisson bien.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " cuisinier range "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " boisson bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la musicienne oublie le boisson au bal.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " musicienne oublie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " boisson au bal."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Bruno cherche le boisson, et Bruno aime bien ça aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Bruno cherche "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " boisson, et Bruno aime bien ça aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Barbara goûte le bonbon bien.",
-      "parts": [
-        {
-          "t": "Barbara goûte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bonbon bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, la boulangère partage le bonbon près de Barbara.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boulangère partage "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bonbon près de Barbara."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le papa sert le bonbon, parce que Barbara est bien contente.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " papa sert "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bonbon, parce que Barbara est bien contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La maman porte le bonnet bien.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " maman porte "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bonnet bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le voisin range le bonnet bien bas.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " voisin range "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bonnet bien bas."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand la sœur enfile le bonnet près de Barbara, et Bruno aime bien ça aussi.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " sœur enfile "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bonnet près de Barbara, et Bruno aime bien ça aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le copain lave la botte bien.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " copain lave "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " botte bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la collègue achète la botte près de Barbara.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " collègue achète "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " botte près de Barbara."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le jardinier range la botte, parce que Barbara est bien contente.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardinier range "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " botte, parce que Barbara est bien contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La jardinière lave la bouche bien.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " jardinière lave "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " bouche bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Bob lave la bouche près de Barbara.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Bob lave "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " bouche près de Barbara."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la collègue lave la bouche, parce que Barbara est bien contente.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " collègue lave "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " bouche, parce que Barbara est bien contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le bébé ouvre la boîte.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " bébé ouvre "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boîte."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Béatrice ouvre la boîte au bal.",
-      "parts": [
-        {
-          "t": "À midi, Béatrice ouvre "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boîte au bal."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand la fille ouvre la boîte avec Bruno, et Bruno aime bien ça aussi.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " fille ouvre "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boîte avec Bruno, et Bruno aime bien ça aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le professeur choisit le bracelet bien.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " professeur choisit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bracelet bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, la cousine met le bracelet bien bas.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cousine met "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bracelet bien bas."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand le grand-père achète le bracelet près de Barbara, et Bruno aime bien ça aussi.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " grand-père achète "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bracelet près de Barbara, et Bruno aime bien ça aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La grand-mère bricole la brosse.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " grand-mère bricole "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " brosse."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, Bruno ouvre la brosse près de Barbara.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, Bruno ouvre "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " brosse près de Barbara."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la musicienne range la brosse, parce que Barbara est bien contente.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " musicienne range "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " brosse, parce que Barbara est bien contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le collègue range le brun bien.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " collègue range "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " brun bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, Barbara oublie le brun au bal.",
-      "parts": [
-        {
-          "t": "À midi, Barbara oublie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " brun au bal."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la boulangère cherche le brun, et Bruno aime bien ça aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boulangère cherche "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " brun, et Bruno aime bien ça aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le garçon travaille dans le bureau bien.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " garçon travaille dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bureau bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, la boulangère travaille dans le bureau au bal.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boulangère travaille dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bureau au bal."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand le papa travaille dans le bureau avec Bruno, et Bruno aime bien ça aussi.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " papa travaille dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bureau avec Bruno, et Bruno aime bien ça aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Bob conduit le bus bien.",
-      "parts": [
-        {
-          "t": "Bob conduit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bus bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le copain se dépêche pour le bus bien bas.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " copain se dépêche pour "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bus bien bas."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand la collègue prend le bus avec Bruno, et Bruno aime bien ça aussi.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " collègue prend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bus avec Bruno, et Bruno aime bien ça aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le facteur embrasse le bébé.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " facteur embrasse "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bébé."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, la voisine couvre le bébé au bal.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " voisine couvre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bébé au bal."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la fille console le bébé, parce que Barbara est bien contente.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " fille console "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bébé, parce que Barbara est bien contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La directrice peint la bûche bien.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " directrice peint "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " bûche bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le bébé ferme la bûche au bal.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bébé ferme "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " bûche au bal."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand un ami nettoie la bûche avec Bruno, et Bruno aime bien ça aussi.",
-      "parts": [
-        {
-          "t": "Quand un ami nettoie "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " bûche avec Bruno, et Bruno aime bien ça aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Une amie pose la concombre bien.",
-      "parts": [
-        {
-          "t": "Une amie pose "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " concombre bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le professeur montre la concombre près de Barbara.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " professeur montre "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " concombre près de Barbara."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la cousine trouve la concombre, parce que Barbara est bien contente.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cousine trouve "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " concombre, parce que Barbara est bien contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le frère cherche la framboise bien.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " frère cherche "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " framboise bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, la grand-mère pose la framboise bien bas.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " grand-mère pose "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " framboise bien bas."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand le cuisinier montre la framboise près de Barbara, et Bruno aime bien ça aussi.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cuisinier montre "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " framboise près de Barbara, et Bruno aime bien ça aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La cuisinière choisit la robe bien.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " cuisinière choisit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " robe bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le frère repasse la robe près du bébé.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " frère repasse "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " robe près du bébé."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Barbara coud la robe, parce que Barbara est bien contente.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Barbara coud "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " robe, parce que Barbara est bien contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Bob nettoie la table bien.",
-      "parts": [
-        {
-          "t": "Bob nettoie "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " table bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, la cuisinière mesure la table près de Barbara.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " cuisinière mesure "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " table près de Barbara."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand la maman couvre la table avec Bruno, et Bruno aime bien ça aussi.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maman couvre "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " table avec Bruno, et Bruno aime bien ça aussi."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le directeur plante un arbre bien.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " directeur plante un arbre bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La maman sert la baguette bien.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " maman sert "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " baguette bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Barbara ouvre le balai bien.",
-      "parts": [
-        {
-          "t": "Barbara ouvre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " balai bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le professeur nettoie le balcon bien.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " professeur nettoie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " balcon bien."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le cuisinier achète le biscuit près de Barbara.",
-      "parts": [
-        {
-          "t": "Ce soir, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cuisinier achète "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " biscuit près de Barbara."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le bébé cherche le blanc avec Bruno.",
-      "parts": [
-        {
-          "t": "Ce matin, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bébé cherche "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " blanc avec Bruno."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le jardinier oublie le bleu au bal.",
-      "parts": [
-        {
-          "t": "Après "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " cours, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " jardinier oublie "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bleu au bal."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, la boulangère utilise le blond bien bas.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boulangère utilise "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " blond bien bas."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand le médecin enfile le bracelet près de Barbara, et Bruno aime bien ça aussi.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " médecin enfile "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bracelet près de Barbara, et Bruno aime bien ça aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Barbara nettoie la brosse, et Bruno aime bien ça aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Barbara nettoie "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " brosse, et Bruno aime bien ça aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand le professeur montre le brun près de Barbara, et Bruno aime bien ça aussi.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " professeur montre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " brun près de Barbara, et Bruno aime bien ça aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le copain travaille dans le bureau, parce que Barbara est bien contente.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " copain travaille dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bureau, parce que Barbara est bien contente."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le copain jette la balle bien.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " copain jette "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " balle bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Le collègue aime la banane bien.",
-      "parts": [
-        {
-          "blank": "Le"
-        },
-        {
-          "t": " collègue aime "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " banane bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La professeure visite le banc bien.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " professeure visite "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " banc bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La copine prend le bateau bien.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " copine prend "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bateau bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "Béatrice montre le beau bien.",
-      "parts": [
-        {
-          "t": "Béatrice montre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " beau bien."
-        }
-      ]
-    },
-    {
-      "level": "a1",
-      "sentence": "La boulangère étudie à la bibliothèque.",
-      "parts": [
-        {
-          "blank": "La"
-        },
-        {
-          "t": " boulangère étudie à "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " bibliothèque."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le boulanger montre le boisson près de Barbara.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " boulanger montre "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " boisson près de Barbara."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, un ami choisit le bonbon près de Barbara.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, un ami choisit "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bonbon près de Barbara."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la maman achète le bonnet près de Barbara.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maman achète "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bonnet près de Barbara."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le collègue enfile la botte près de Barbara.",
-      "parts": [
-        {
-          "t": "À midi, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " collègue enfile "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " botte près de Barbara."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le bébé lave la bouche bien bas.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bébé lave "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " bouche bien bas."
-        }
-      ]
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Béatrice ouvre la boîte près de Barbara.",
-      "parts": [
-        {
-          "t": "Avant "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " repas, Béatrice ouvre "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " boîte près de Barbara."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la tante monte dans le bus, parce que Barbara est bien contente.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " tante monte dans "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bus, parce que Barbara est bien contente."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la professeure tient le bébé, et Bruno aime bien ça aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " professeure tient "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " bébé, et Bruno aime bien ça aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la maîtresse range la bûche, parce que Barbara est bien contente.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maîtresse range "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " bûche, parce que Barbara est bien contente."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Béatrice cherche la concombre, et Bruno aime bien ça aussi.",
-      "parts": [
-        {
-          "t": "Ce matin, quand Béatrice cherche "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " concombre, et Bruno aime bien ça aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand le voisin range la framboise près de Barbara, et Bruno aime bien ça aussi.",
-      "parts": [
-        {
-          "t": "Quand "
-        },
-        {
-          "blank": "le"
-        },
-        {
-          "t": " voisin range "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " framboise près de Barbara, et Bruno aime bien ça aussi."
-        }
-      ]
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la maîtresse choisit la robe, parce que Barbara est bien contente.",
-      "parts": [
-        {
-          "t": "Ce matin, quand "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " maîtresse choisit "
-        },
-        {
-          "blank": "la"
-        },
-        {
-          "t": " robe, parce que Barbara est bien contente."
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Sur la table, il y a un bol d’abricots bien mûrs."
+          ]
         }
       ]
-    }
-  ],
-  "type12": [
-    {
-      "level": "a1",
-      "sentence": "Le directeur plante un arbre bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La maman sert la baguette bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "Barbara ouvre le balai bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le professeur nettoie le balcon bien."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce soir, le cuisinier achète le biscuit près de Barbara."
-    },
-    {
-      "level": "a2",
-      "sentence": "Ce matin, le bébé cherche le blanc avec Bruno."
-    },
-    {
-      "level": "a2",
-      "sentence": "Après le cours, le jardinier oublie le bleu au bal."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, la boulangère utilise le blond bien bas."
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand le médecin enfile le bracelet près de Barbara, et Bruno aime bien ça aussi."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Barbara nettoie la brosse, et Bruno aime bien ça aussi."
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand le professeur montre le brun près de Barbara, et Bruno aime bien ça aussi."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand le copain travaille dans le bureau, parce que Barbara est bien contente."
-    }
-  ],
-  "type14": [
-    {
-      "level": "a1",
-      "sentence": "Le copain jette la balle bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "Le collègue aime la banane bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La professeure visite le banc bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La copine prend le bateau bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "Béatrice montre le beau bien."
-    },
-    {
-      "level": "a1",
-      "sentence": "La boulangère étudie à la bibliothèque."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le boulanger montre le boisson près de Barbara."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, un ami choisit le bonbon près de Barbara."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, la maman achète le bonnet près de Barbara."
-    },
-    {
-      "level": "a2",
-      "sentence": "À midi, le collègue enfile la botte près de Barbara."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, le bébé lave la bouche bien bas."
-    },
-    {
-      "level": "a2",
-      "sentence": "Avant le repas, Béatrice ouvre la boîte près de Barbara."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la tante monte dans le bus, parce que Barbara est bien contente."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la professeure tient le bébé, et Bruno aime bien ça aussi."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la maîtresse range la bûche, parce que Barbara est bien contente."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand Béatrice cherche la concombre, et Bruno aime bien ça aussi."
-    },
-    {
-      "level": "b1",
-      "sentence": "Quand le voisin range la framboise près de Barbara, et Bruno aime bien ça aussi."
-    },
-    {
-      "level": "b1",
-      "sentence": "Ce matin, quand la maîtresse choisit la robe, parce que Barbara est bien contente."
     }
   ]
 }

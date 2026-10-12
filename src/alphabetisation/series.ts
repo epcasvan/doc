@@ -39,23 +39,25 @@ function page(
   }
 }
 
-/** Même enchaînement que Soutien FR pour les leçons lettre / son. */
+/** Fiche lettre / son — 9 pages (types 1 à 15). */
 export function buildAlphaLetterSeriesPages(bankId: string, themeId: string): PageConfig[] {
   const b = (kind: AlphaKindId, count: number, columns = 1) =>
     block(bankId, themeId, kind, count, columns)
   return [
-    page(bankId, themeId, 'mots', 16),
-    page(bankId, themeId, 'lettres', 5, 1, [b('syllabes', 3)]),
-    page(bankId, themeId, 'relier', 12, 2, [b('completer', 12, 2)]),
+    page(bankId, themeId, 'mots', 4),
+    page(bankId, themeId, 'lettres-maj', 5, 1, [b('lettres-min', 5)]),
+    page(bankId, themeId, 'souligner-maj', 8, 1, [b('souligner-min', 8)]),
     page(bankId, themeId, 'ecouter', 9, 3, [b('ecouter-image', 15, 5)]),
+    page(bankId, themeId, 'syllabe-son-qr', 18, 3),
     page(bankId, themeId, 'syllabe-son', 18, 3),
-    page(bankId, themeId, 'lettres-phrase', 8),
-    page(bankId, themeId, 'determinants', 9, 1, [b('dictee', 8)]),
-    page(bankId, themeId, 'compter', 8),
-    page(bankId, themeId, 'ordre', 9),
-    page(bankId, themeId, 'lire', 20),
-    page(bankId, themeId, 'associer-audio', 2, 1, [b('associer-image', 2)]),
-    page(bankId, themeId, 'mots-meles', 12),
+    page(bankId, themeId, 'associer-syllabe', 2, 1, [
+      b('syllabes-cv', 4),
+      b('syllabes-long', 4),
+    ]),
+    page(bankId, themeId, 'syllabes-prononcer', 8, 1, [
+      b('associer-audio', 2),
+      b('associer-image', 2),
+    ]),
   ]
 }
 

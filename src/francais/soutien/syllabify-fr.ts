@@ -326,11 +326,19 @@ export function isMultisyllableFr(raw: string): boolean {
   return syllabifyFr(raw).length >= 2
 }
 
+/** Découpages scolaires imposés (exceptions). */
+const SYLLABLE_OVERRIDES: Record<string, string[]> = {
+  calculatrice: ['cal', 'cu', 'la', 'trice'],
+  chandelier: ['chan', 'de', 'lier'],
+}
+
 /** Construit un item type 8, ou `null` si monosyllabe. */
 export function syllableItemFr(raw: string): { word: string; parts: string[] } | null {
   const word = raw.trim()
   if (!word) return null
-  const parts = syllabifyFr(word)
+  const key = word.toLowerCase()
+  const override = SYLLABLE_OVERRIDES[key]
+  const parts = override ?? syllabifyFr(word)
   if (parts.length < 2) return null
   return { word, parts }
 }

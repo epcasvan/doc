@@ -1,9 +1,14 @@
 /**
- * Téléchargement des phrases Soutien (types 9 / 10 / 12 / 14) pour édition manuelle.
- * Source de vérité : `src/francais/soutien/phrases/<bankId>.json` (niveaux a1 / a2 / b1).
+ * Téléchargement des phrases Soutien pour édition manuelle.
+ * Un fichier par son : `phrases/<son>.json`.
  */
 import type { SoutienVowelBank } from './banks'
-import { soutienPhrasesFor } from './phrases-data'
+import {
+  serializeSonFile,
+  soutienPhrasesCommon,
+  soutienPhrasesFor,
+  soutienPhrasesGrouped,
+} from './phrases-data'
 
 function triggerDownload(filename: string, content: string, mime = 'application/json') {
   const blob = new Blob([content], { type: `${mime};charset=utf-8` })
@@ -18,48 +23,49 @@ function triggerDownload(filename: string, content: string, mime = 'application/
   URL.revokeObjectURL(url)
 }
 
-/** Type 9 — mot dans la phrase (avec niveau si phrases rédigées). */
+/** Export du fichier son de la fiche (word → variants → sentences). */
 export function downloadSoutienType9Phrases(bank: SoutienVowelBank) {
-  const curated = soutienPhrasesFor(bank.id)?.type9
-  const rows =
-    curated && curated.length > 0
-      ? curated
-      : bank.scrambles.map((s) => ({ word: s.word, sentence: s.sentence }))
-  triggerDownload(`soutien-type9-${bank.id}.json`, `${JSON.stringify(rows, null, 2)}\n`)
+  const local = soutienPhrasesFor(bank.id)?.phrases ?? []
+  const rows = local.length > 0 ? local : soutienPhrasesCommon().phrases
+  const payload = serializeSonFile(bank.id, rows)
+  triggerDownload(`soutien-phrases-${bank.id}.json`, `${JSON.stringify(payload, null, 2)}\n`)
 }
 
-/** Type 10 — déterminants l’ / le / la / les. */
+/** Type 10 — déterminants (souvent générés depuis le type 5). */
 export function downloadSoutienType10Phrases(bank: SoutienVowelBank) {
-  const curated = soutienPhrasesFor(bank.id)?.type10
+  const common = soutienPhrasesCommon().type10
+  const local = soutienPhrasesFor(bank.id)?.type10
   const rows =
-    curated && curated.length > 0
-      ? curated
-      : bank.determinants.map((d) => ({
-          sentence: d.sentence,
-          parts: d.parts,
-        }))
-  triggerDownload(`soutien-type10-${bank.id}.json`, `${JSON.stringify(rows, null, 2)}\n`)
+    common.length > 0
+      ? common
+      : local && local.length > 0
+        ? local
+        : bank.determinants.map((d) => ({
+            sentence: d.sentence,
+            parts: d.parts,
+          }))
+  triggerDownload(`soutien-type10-all.json`, `${JSON.stringify(rows, null, 2)}\n`)
 }
 
-/** Type 12 — compter le son. */
+/** Même export que type 9 : fichier du son courant. */
 export function downloadSoutienType12Phrases(bank: SoutienVowelBank) {
-  const curated = soutienPhrasesFor(bank.id)?.type12
-  const rows = curated && curated.length > 0 ? curated : [...bank.countPhrases]
-  triggerDownload(`soutien-type12-${bank.id}.json`, `${JSON.stringify(rows, null, 2)}\n`)
+  downloadSoutienType9Phrases(bank)
 }
 
-/** Type 14 — phrases à lire. */
+/** Type 14 — fichier du son courant. */
 export function downloadSoutienType14Phrases(bank: SoutienVowelBank) {
-  const curated = soutienPhrasesFor(bank.id)?.type14
-  const rows = curated && curated.length > 0 ? curated : [...bank.readPhrases]
-  triggerDownload(`soutien-type14-${bank.id}.json`, `${JSON.stringify(rows, null, 2)}\n`)
+  const payload = {
+    son: bank.id,
+    phrases: soutienPhrasesGrouped(bank.id),
+  }
+  triggerDownload(`soutien-phrases-${bank.id}.json`, `${JSON.stringify(payload, null, 2)}\n`)
 }
 
-/** Fichiers regroupés servis sous /soutien-phrases/ (export de `src/francais/soutien/phrases/`). */
+/** Fichiers regroupés servis sous /soutien-phrases/. */
 export function soutienPhrasesPublicUrl(
   kind: 'type9' | 'type10' | 'type12' | 'type14',
   all = true,
 ): string {
-  if (all) return `/soutien-phrases/${kind}-all.json`
+  if (all) return `/soutien-phrases/${kind === 'type10' ? 'type10' : 'phrases'}-all.json`
   return `/soutien-phrases/${kind}/`
 }

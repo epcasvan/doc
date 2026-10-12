@@ -460,11 +460,12 @@ export function SyllableTableBlock({ item }: { item: MathItem }) {
     </div>
   )
 
+  const scriptOnly = Boolean(item.syllableTableScriptOnly)
   return (
     <div className="syllable-table-block" aria-label="Lecture de syllabes">
       {item.prompt && <p className="column-prompt">{item.prompt}</p>}
       {renderTable('script')}
-      {renderTable('playwrite')}
+      {!scriptOnly ? renderTable('playwrite') : null}
     </div>
   )
 }
