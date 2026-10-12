@@ -25,6 +25,7 @@ import { isSoutienType1Word, type1WordPool, type1Words } from './type1-words'
 import type { SoutienGenerateOptions } from './generate-options'
 import {
   filterSoutienLevel,
+  filterSoutienSon,
   soutienAllFlatPhrases,
   soutienPhrasesCommon,
   soutienPhrasesType9And12,
@@ -52,7 +53,9 @@ function curatedPhrases(
   want: number,
 ): string[] | null {
   const minHits = 3
-  const pool = soutienAllFlatPhrases(level)
+  const all = soutienAllFlatPhrases(level)
+  const forSon = filterSoutienSon(all, bank.id)
+  const pool = forSon.length > 0 ? forSon : all
   const rich = pool.filter((r) => countSoundInPhrase(r.sentence, bank) >= minHits)
   const source = rich.length > 0 ? rich : pool.filter((r) => countSoundInPhrase(r.sentence, bank) >= 1)
   if (source.length === 0) return null
@@ -416,8 +419,12 @@ export function genKind(
       )
       type ScrambleRow = { sentence: string; word: string; letters: string }
       const byWord = new Map<string, ScrambleRow[]>()
-      /** Banque commune ; hors mots types 1 et 5 de la fiche ; image obligatoire. */
-      const curatedRows = filterSoutienLevel(soutienPhrasesCommon().type9, options?.level)
+      /** Banque unique (word/son/sentences) ; priorité au son de la fiche. */
+      const bySon = filterSoutienSon(soutienPhrasesCommon().phrases, bank.id)
+      const curatedRows = filterSoutienLevel(
+        bySon.length > 0 ? bySon : soutienPhrasesCommon().phrases,
+        options?.level,
+      )
       for (const row of curatedRows) {
         if (!isSoutienType1Word(row.word)) continue
         if (exclude.has(displayVocabLabel(row.word).toLowerCase())) continue
@@ -523,7 +530,7 @@ export function genKind(
               article: articleByWord.get(displayVocabLabel(word).toLowerCase()),
             }))
           : bank.completes.map((c) => ({ word: c.word, article: c.article as string }))
-      const bankPhrases = soutienPhrasesType9And12(options?.level)
+      const bankPhrases = soutienPhrasesType9And12(options?.level) // vivier 9+12, tous sons
       const rows = buildType10DetsFromWords(poolWords, rng, want, bankPhrases)
       return {
         instruction: 'Complétez avec les déterminants l’, le, la ou les.',

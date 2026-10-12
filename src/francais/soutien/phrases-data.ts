@@ -1,11 +1,12 @@
 /**
  * Phrases didactiques Soutien FR (types 9 / 10 / 12 / 14).
  *
- * Banque **commune** : tous les fichiers `./phrases/<bankId>.json` sont fusionnés.
- * Syntaxe identique type 9 et type 12 :
- * `{ "level", "number"?, "word", "sentence" }`
+ * Fichier unique `./phrases.json` :
+ * `{ word, sounds: [{ son, level, number?, sentences: string[] }] }`
+ * — un mot, plusieurs sons, plusieurs phrases par son.
  */
 
+import phrasesFile from './phrases.json'
 import {
   inferFirstNoun,
   inferNumberForSentence,
@@ -25,16 +26,30 @@ export const SOUTIEN_LEVEL_FILTERS: ReadonlyArray<{ id: SoutienLevelFilter; labe
   { id: 'b1', label: 'B1' },
 ]
 
-/** Entrée banque type 9 / 12 (même syntaxe). */
+/** Bloc son + phrases (dans le JSON). */
+export type SoutienSoundBlock = {
+  son: string
+  level: SoutienPhraseLevel
+  number?: SoutienPhraseNumber
+  sentences: string[]
+}
+
+/** Entrée banque : un mot, un ou plusieurs sons. */
+export type SoutienWordPhrases = {
+  word: string
+  sounds: SoutienSoundBlock[]
+}
+
+/** Ligne plate pour les générateurs (une phrase). */
 export type SoutienLevelWordPhrase = {
   level: SoutienPhraseLevel
-  /** Nombre : singulier / pluriel. */
   number?: SoutienPhraseNumber
   word: string
+  son: string
   sentence: string
 }
 
-/** Alias rétrocompat — même forme que type 9. */
+/** Alias — même forme plate. */
 export type SoutienLevelPhrase = SoutienLevelWordPhrase
 
 export type SoutienDetPart = { t: string } | { blank: string }
@@ -46,172 +61,181 @@ export type SoutienLevelDetPhrase = {
 }
 
 export type SoutienBankPhrases = {
+  /** Vivier unique (ex-type 9 + 12). */
+  phrases: SoutienLevelWordPhrase[]
+  /** @deprecated alias de `phrases` */
   type9: SoutienLevelWordPhrase[]
   type10: SoutienLevelDetPhrase[]
+  /** @deprecated alias de `phrases` */
   type12: SoutienLevelWordPhrase[]
   type14: SoutienLevelWordPhrase[]
 }
-
-const FILES = import.meta.glob('./phrases/*.json', { eager: true, import: 'default' }) as Record<
-  string,
-  Partial<SoutienBankPhrases>
->
 
 function isLevel(v: unknown): v is SoutienPhraseLevel {
   return v === 'a1' || v === 'a2' || v === 'b1'
 }
 
-function isPhraseRaw(
-  v: unknown,
-): v is { level?: unknown; sentence: string; word?: unknown; number?: unknown } {
-  if (!v || typeof v !== 'object') return false
-  const o = v as Record<string, unknown>
-  if (typeof o.sentence !== 'string' || !o.sentence.trim()) return false
-  if (o.level !== undefined && !isLevel(o.level)) return false
-  if (o.number !== undefined && parsePhraseNumber(o.number) === undefined) return false
-  if (o.word !== undefined && (typeof o.word !== 'string' || !o.word.trim())) return false
-  return true
-}
-
-function isDetPart(v: unknown): v is SoutienDetPart {
-  if (!v || typeof v !== 'object') return false
-  const o = v as Record<string, unknown>
-  if (typeof o.blank === 'string' && o.blank.trim()) return true
-  return typeof o.t === 'string'
-}
-
-function isDetPhrase(v: unknown): v is SoutienLevelDetPhrase {
-  if (!v || typeof v !== 'object') return false
-  const o = v as Record<string, unknown>
-  if (typeof o.sentence !== 'string' || !o.sentence.trim()) return false
-  if (o.level !== undefined && !isLevel(o.level)) return false
-  const parts = o.parts
-  return (
-    Array.isArray(parts) &&
-    parts.length > 0 &&
-    parts.every(isDetPart) &&
-    parts.some((p) => 'blank' in (p as object))
-  )
-}
-
-function firstLetterWord(sentence: string): string | undefined {
-  const m = sentence.match(/\p{L}[\p{L}'’-]*/u)
-  return m?.[0]
-}
-
-/** Normalise une entrée type 9 / 12 / 14 — syntaxe unique. */
-export function normalizeWordPhrase(row: {
-  level?: unknown
-  number?: unknown
-  word?: unknown
-  sentence: string
-}): SoutienLevelWordPhrase | null {
-  const sentence = String(row.sentence).trim()
-  if (!sentence) return null
-  const word =
-    (typeof row.word === 'string' && row.word.trim()
-      ? row.word.trim()
-      : inferFirstNoun(sentence) ?? firstLetterWord(sentence)) ?? ''
-  if (!word) return null
-  const number =
-    parsePhraseNumber(row.number) ??
-    inferNumberForWordPhrase(sentence, word) ??
-    inferNumberForSentence(sentence)
-  // Ordre canonique JSON : level, number, word, sentence
+function normalizeSoundBlock(raw: unknown, fallbackSon: string): SoutienSoundBlock | null {
+  if (!raw || typeof raw !== 'object') return null
+  const o = raw as Record<string, unknown>
+  const son = typeof o.son === 'string' && o.son.trim() ? o.son.trim() : fallbackSon
+  if (!son) return null
+  const level = (isLevel(o.level) ? o.level : 'a2') as SoutienPhraseLevel
+  const number = parsePhraseNumber(o.number)
+  const sentencesRaw = o.sentences
+  const sentences: string[] = []
+  if (Array.isArray(sentencesRaw)) {
+    for (const s of sentencesRaw) {
+      if (typeof s === 'string' && s.trim()) sentences.push(s.trim())
+      else if (s && typeof s === 'object' && typeof (s as { text?: unknown }).text === 'string') {
+        const t = String((s as { text: string }).text).trim()
+        if (t) sentences.push(t)
+      }
+    }
+  }
+  // Rétrocompat : une seule `sentence`
+  if (sentences.length === 0 && typeof o.sentence === 'string' && o.sentence.trim()) {
+    sentences.push(o.sentence.trim())
+  }
+  if (sentences.length === 0) return null
   return {
-    level: (isLevel(row.level) ? row.level : 'a2') as SoutienPhraseLevel,
+    son,
+    level,
     ...(number ? { number } : {}),
-    word,
-    sentence,
+    sentences,
   }
 }
 
-function normalizeBank(raw: Partial<SoutienBankPhrases> | undefined): SoutienBankPhrases {
-  if (!raw) {
-    return { type9: [], type10: [], type12: [], type14: [] }
+function normalizeWordEntry(raw: unknown): SoutienWordPhrases | null {
+  if (!raw || typeof raw !== 'object') return null
+  const o = raw as Record<string, unknown>
+  const word =
+    typeof o.word === 'string' && o.word.trim()
+      ? o.word.trim()
+      : typeof o.sentence === 'string'
+        ? inferFirstNoun(o.sentence) ?? ''
+        : ''
+  if (!word) return null
+
+  const sounds: SoutienSoundBlock[] = []
+  if (Array.isArray(o.sounds)) {
+    for (const block of o.sounds) {
+      const n = normalizeSoundBlock(block, '')
+      if (n) sounds.push(n)
+    }
+  } else {
+    // Rétrocompat ligne plate : { word, son, level, number, sentence(s) }
+    const n = normalizeSoundBlock(o, typeof o.son === 'string' ? o.son : '')
+    if (n) sounds.push(n)
   }
-  const mapRows = (rows: unknown): SoutienLevelWordPhrase[] =>
-    Array.isArray(rows)
-      ? rows
-          .filter(isPhraseRaw)
-          .map((row) => normalizeWordPhrase(row))
-          .filter((row): row is SoutienLevelWordPhrase => Boolean(row))
+  if (sounds.length === 0) return null
+  return { word, sounds }
+}
+
+function expandWordEntry(entry: SoutienWordPhrases): SoutienLevelWordPhrase[] {
+  const rows: SoutienLevelWordPhrase[] = []
+  for (const block of entry.sounds) {
+    for (const sentence of block.sentences) {
+      const number =
+        block.number ??
+        inferNumberForWordPhrase(sentence, entry.word) ??
+        inferNumberForSentence(sentence)
+      rows.push({
+        level: block.level,
+        ...(number ? { number } : {}),
+        word: entry.word,
+        son: block.son,
+        sentence,
+      })
+    }
+  }
+  return rows
+}
+
+function loadGroupedPhrases(): SoutienWordPhrases[] {
+  const root = phrasesFile as { phrases?: unknown } | unknown[]
+  const list = Array.isArray(root)
+    ? root
+    : Array.isArray((root as { phrases?: unknown }).phrases)
+      ? (root as { phrases: unknown[] }).phrases
       : []
+  const out: SoutienWordPhrases[] = []
+  for (const raw of list) {
+    const n = normalizeWordEntry(raw)
+    if (n) out.push(n)
+  }
+  return out
+}
 
+const GROUPED = loadGroupedPhrases()
+
+const ALL_FLAT: SoutienLevelWordPhrase[] = (() => {
+  const rows: SoutienLevelWordPhrase[] = []
+  const seen = new Set<string>()
+  for (const entry of GROUPED) {
+    for (const row of expandWordEntry(entry)) {
+      const key = `${row.son}|${row.level}|${row.word.toLowerCase()}|${row.sentence}`
+      if (seen.has(key)) continue
+      seen.add(key)
+      rows.push(row)
+    }
+  }
+  return rows
+})()
+
+function bankBundle(rows: SoutienLevelWordPhrase[]): SoutienBankPhrases {
   return {
-    type9: mapRows(raw.type9),
-    type10: Array.isArray(raw.type10) ? raw.type10.filter(isDetPhrase) : [],
-    type12: mapRows(raw.type12),
-    type14: mapRows(raw.type14),
+    phrases: rows,
+    type9: rows,
+    type10: [],
+    type12: rows,
+    type14: rows,
   }
 }
 
-const BY_ID = new Map<string, SoutienBankPhrases>()
-for (const [path, raw] of Object.entries(FILES)) {
-  const id = path.replace(/^.*\//, '').replace(/\.json$/, '')
-  if (!raw) continue
-  BY_ID.set(id, normalizeBank(raw))
+const BY_SON = new Map<string, SoutienBankPhrases>()
+for (const row of ALL_FLAT) {
+  const cur = BY_SON.get(row.son)
+  if (cur) {
+    cur.phrases.push(row)
+  } else {
+    BY_SON.set(row.son, bankBundle([row]))
+  }
+}
+// Re-alias type9/12/14 arrays to same phrases ref per son
+for (const [son, bundle] of BY_SON) {
+  BY_SON.set(son, bankBundle([...bundle.phrases]))
 }
 
-/** Phrases d’un fichier banque (rétrocompat). */
+const COMMON = bankBundle(ALL_FLAT)
+
+/** Entrées groupées (édition / export). */
+export function soutienPhrasesGrouped(): readonly SoutienWordPhrases[] {
+  return GROUPED
+}
+
+/** Phrases d’un son / banque (filtre `son`). */
 export function soutienPhrasesFor(bankId: string): SoutienBankPhrases | null {
-  return BY_ID.get(bankId) ?? null
+  return BY_SON.get(bankId) ?? null
 }
 
-/** Banque commune : union de toutes les banques JSON (dédupliquée). */
+/** Banque commune : toutes les phrases (tous sons). */
 export function soutienPhrasesCommon(): SoutienBankPhrases {
-  const type9: SoutienLevelWordPhrase[] = []
-  const type10: SoutienLevelDetPhrase[] = []
-  const type12: SoutienLevelWordPhrase[] = []
-  const type14: SoutienLevelWordPhrase[] = []
-  const seen9 = new Set<string>()
-  const seen10 = new Set<string>()
-  const seen12 = new Set<string>()
-  const seen14 = new Set<string>()
-  for (const bank of BY_ID.values()) {
-    for (const row of bank.type9) {
-      const key = `${row.level}|${row.word.toLowerCase()}|${row.sentence}`
-      if (seen9.has(key)) continue
-      seen9.add(key)
-      type9.push(row)
-    }
-    for (const row of bank.type10) {
-      const key = `${row.level}|${row.sentence}`
-      if (seen10.has(key)) continue
-      seen10.add(key)
-      type10.push(row)
-    }
-    for (const row of bank.type12) {
-      const key = `${row.level}|${row.word.toLowerCase()}|${row.sentence}`
-      if (seen12.has(key)) continue
-      seen12.add(key)
-      type12.push(row)
-    }
-    for (const row of bank.type14) {
-      const key = `${row.level}|${row.word.toLowerCase()}|${row.sentence}`
-      if (seen14.has(key)) continue
-      seen14.add(key)
-      type14.push(row)
-    }
-  }
-  return { type9, type10, type12, type14 }
+  return COMMON
 }
 
-/** Toutes les phrases plates (9 + 12 + 14) pour types 12 / 14 / 10. */
+/** Toutes les phrases plates pour types 12 / 14 / 10. */
 export function soutienAllFlatPhrases(
   level: SoutienLevelFilter | undefined,
 ): SoutienLevelPhrase[] {
-  const common = soutienPhrasesCommon()
-  const rows = [...common.type9, ...common.type12, ...common.type14]
-  return filterSoutienLevel(rows, level)
+  return filterSoutienLevel(ALL_FLAT, level)
 }
 
-/** Banque commune type 9 + 12 (même syntaxe). */
+/** Banque commune type 9 + 12 (même vivier). */
 export function soutienPhrasesType9And12(
   level: SoutienLevelFilter | undefined,
 ): SoutienLevelWordPhrase[] {
-  const common = soutienPhrasesCommon()
-  return filterSoutienLevel([...common.type9, ...common.type12], level)
+  return filterSoutienLevel(ALL_FLAT, level)
 }
 
 /** Filtre par niveau ; `all` / `undefined` → tout. */
@@ -223,7 +247,48 @@ export function filterSoutienLevel<T extends { level: SoutienPhraseLevel }>(
   return rows.filter((r) => r.level === level)
 }
 
-/** Ids de banques disposant d’un fichier. */
+/** Filtre optionnel par son travaillé. */
+export function filterSoutienSon<T extends { son: string }>(
+  rows: readonly T[],
+  son: string | undefined,
+): T[] {
+  if (!son) return [...rows]
+  return rows.filter((r) => r.son === son)
+}
+
+/** Ids de sons présents dans la banque. */
 export function soutienPhraseBankIds(): string[] {
-  return [...BY_ID.keys()].sort()
+  return [...BY_SON.keys()].sort()
+}
+
+/** Sérialise au format groupé (word → sounds → sentences). */
+export function serializeGroupedPhrases(
+  rows: readonly SoutienLevelWordPhrase[],
+): SoutienWordPhrases[] {
+  const byWord = new Map<string, SoutienWordPhrases>()
+  for (const row of rows) {
+    const key = row.word.toLowerCase()
+    let entry = byWord.get(key)
+    if (!entry) {
+      entry = { word: row.word, sounds: [] }
+      byWord.set(key, entry)
+    }
+    let block = entry.sounds.find(
+      (s) =>
+        s.son === row.son &&
+        s.level === row.level &&
+        (s.number ?? '') === (row.number ?? ''),
+    )
+    if (!block) {
+      block = {
+        son: row.son,
+        level: row.level,
+        ...(row.number ? { number: row.number } : {}),
+        sentences: [],
+      }
+      entry.sounds.push(block)
+    }
+    if (!block.sentences.includes(row.sentence)) block.sentences.push(row.sentence)
+  }
+  return [...byWord.values()].sort((a, b) => a.word.localeCompare(b.word, 'fr'))
 }

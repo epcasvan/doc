@@ -1,9 +1,14 @@
 /**
  * Téléchargement des phrases Soutien (types 9 / 10 / 12 / 14) pour édition manuelle.
- * Banque commune : `soutienPhrasesCommon()` (tous les `phrases/<bankId>.json`).
+ * Fichier unique groupé : `soutienPhrasesGrouped()` / `phrases.json`.
  */
 import type { SoutienVowelBank } from './banks'
-import { soutienPhrasesCommon, soutienPhrasesFor } from './phrases-data'
+import {
+  serializeGroupedPhrases,
+  soutienPhrasesCommon,
+  soutienPhrasesFor,
+  soutienPhrasesGrouped,
+} from './phrases-data'
 
 function triggerDownload(filename: string, content: string, mime = 'application/json') {
   const blob = new Blob([content], { type: `${mime};charset=utf-8` })
@@ -18,33 +23,31 @@ function triggerDownload(filename: string, content: string, mime = 'application/
   URL.revokeObjectURL(url)
 }
 
-/** Syntaxe canonique partagée type 9 / 12 : level, number?, word, sentence. */
-function serializeWordPhrases(
-  rows: ReadonlyArray<{ level?: string; number?: string; word: string; sentence: string }>,
-): string {
-  const out = rows.map((r) => ({
-    level: r.level ?? 'a2',
-    ...(r.number ? { number: r.number } : {}),
-    word: r.word,
-    sentence: r.sentence,
-  }))
-  return `${JSON.stringify(out, null, 2)}\n`
+function downloadGrouped(
+  filename: string,
+  rows: Parameters<typeof serializeGroupedPhrases>[0],
+) {
+  const phrases = serializeGroupedPhrases(rows)
+  triggerDownload(filename, `${JSON.stringify({ phrases }, null, 2)}\n`)
 }
 
-/** Type 9 — banque commune (même syntaxe que type 12). */
+/** Banque complète groupée (word → sounds → sentences). */
 export function downloadSoutienType9Phrases(bank: SoutienVowelBank) {
-  const common = soutienPhrasesCommon().type9
-  const local = soutienPhrasesFor(bank.id)?.type9
-  const rows =
-    common.length > 0
-      ? common
-      : local && local.length > 0
-        ? local
-        : bank.scrambles.map((s) => ({ word: s.word, sentence: s.sentence, level: 'a2' as const }))
-  triggerDownload(`soutien-type9-all.json`, serializeWordPhrases(rows))
+  const common = soutienPhrasesCommon().phrases
+  const local = soutienPhrasesFor(bank.id)?.phrases
+  const rows = common.length > 0 ? common : local && local.length > 0 ? local : []
+  if (rows.length === 0) {
+    // Repli : export groupé actuel
+    triggerDownload(
+      `soutien-phrases-all.json`,
+      `${JSON.stringify({ phrases: soutienPhrasesGrouped() }, null, 2)}\n`,
+    )
+    return
+  }
+  downloadGrouped(`soutien-phrases-all.json`, rows)
 }
 
-/** Type 10 — déterminants (souvent générés au pluriel depuis le type 5). */
+/** Type 10 — déterminants (souvent générés depuis le type 5). */
 export function downloadSoutienType10Phrases(bank: SoutienVowelBank) {
   const common = soutienPhrasesCommon().type10
   const local = soutienPhrasesFor(bank.id)?.type10
@@ -60,16 +63,20 @@ export function downloadSoutienType10Phrases(bank: SoutienVowelBank) {
   triggerDownload(`soutien-type10-all.json`, `${JSON.stringify(rows, null, 2)}\n`)
 }
 
-/** Type 12 — compter le son (même syntaxe que type 9). */
+/** Même fichier groupé que type 9 (vivier unique). */
 export function downloadSoutienType12Phrases(_bank: SoutienVowelBank) {
-  const rows = soutienPhrasesCommon().type12
-  triggerDownload(`soutien-type12-all.json`, serializeWordPhrases(rows))
+  triggerDownload(
+    `soutien-phrases-all.json`,
+    `${JSON.stringify({ phrases: soutienPhrasesGrouped() }, null, 2)}\n`,
+  )
 }
 
-/** Type 14 — phrases à lire (même syntaxe que type 9 / 12). */
+/** Type 14 — même vivier groupé. */
 export function downloadSoutienType14Phrases(_bank: SoutienVowelBank) {
-  const rows = soutienPhrasesCommon().type14
-  triggerDownload(`soutien-type14-all.json`, serializeWordPhrases(rows))
+  triggerDownload(
+    `soutien-phrases-all.json`,
+    `${JSON.stringify({ phrases: soutienPhrasesGrouped() }, null, 2)}\n`,
+  )
 }
 
 /** Fichiers regroupés servis sous /soutien-phrases/. */
@@ -77,6 +84,6 @@ export function soutienPhrasesPublicUrl(
   kind: 'type9' | 'type10' | 'type12' | 'type14',
   all = true,
 ): string {
-  if (all) return `/soutien-phrases/${kind}-all.json`
+  if (all) return `/soutien-phrases/${kind === 'type10' ? 'type10' : 'phrases'}-all.json`
   return `/soutien-phrases/${kind}/`
 }
