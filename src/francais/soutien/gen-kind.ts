@@ -21,7 +21,9 @@ import {
   wordHasLessonSound,
 } from './phoneme'
 import { buildWordSearch, wordSearchHitCells } from './word-search'
+import { resolveGameImageSrc } from '@/jeux/image-resolve'
 import { isSoutienType1Word, type1WordPool, type1Words } from './type1-words'
+import { syllabifyFr } from './syllabify-fr'
 import type { SoutienGenerateOptions } from './generate-options'
 import { soutienPhrasesForSonOrAll, type SoutienLevelFilter } from './phrases-data'
 import { buildType10DetsFromWords } from './det-plurals'
@@ -293,11 +295,10 @@ export function genKind(
       }
     }
     case 'ecouter-image': {
-      /** Grille images fluide ; positifs = son (au/eau admis pour /o/). */
+      /** Grille images fluide ; positifs = son (au/eau admis pour /o/). Uniquement mots avec image fichier. */
       const cols = Math.max(3, Math.min(5, Math.round(options?.columns ?? 3) || 3))
       const need = Math.max(1, Math.min(30, n))
-      const withImg = (list: readonly string[]) =>
-        list.filter((w) => Boolean(soutienImageFor(w)))
+      const withImg = (list: readonly string[]) => list.filter((w) => isSoutienType1Word(w))
       const soundPool = lessonWordsBySound(bank)
       const posPool = withImg(soundPool)
       const negPool = withImg([
@@ -320,8 +321,17 @@ export function genKind(
         )
         pool = [...pool, ...shuffle(rng, extra)].slice(0, need)
       }
-      pool = pool.slice(0, need)
-      const images = pool.map((w) => soutienImageFor(w)!)
+      // Alignement strict : un mot = une image fichier (sinon on retire le couple).
+      const paired = pool
+        .filter((w) => isSoutienType1Word(w))
+        .map((w) => ({
+          w,
+          img: resolveGameImageSrc(w) || soutienImageFor(w) || '',
+        }))
+        .filter((row): row is { w: string; img: string } => Boolean(row.img))
+        .slice(0, need)
+      pool = paired.map((p) => p.w)
+      const finalImages = paired.map((p) => p.img)
       const audios = pool.map((w) => soutienAudioFor(w))
       const positiveSet = new Set(positives.map((w) => w.toLowerCase()))
       const checked = pool.filter((w) => positiveSet.has(w.toLowerCase()))
@@ -334,7 +344,7 @@ export function genKind(
           {
             layout: 'listen-check',
             options: shown,
-            optionImages: images,
+            optionImages: finalImages,
             optionAudioSrcs: audios.map((a) => a ?? ''),
             imagesAvailable: true,
             labels: shownChecked,
@@ -346,14 +356,14 @@ export function genKind(
       }
     }
     case 'syllabe-son': {
-      /** Grille fluide ; count = nb de cartes ; colonnes 1–3 ; ≥ 2 syllabes avec le son. */
+      /** Grille fluide ; count = nb de cartes ; colonnes 1–3 ; ≥ 2 syllabes orales avec le son. */
       const cols = Math.max(1, Math.min(3, Math.round(options?.columns ?? 3) || 3))
       const need = Math.max(1, Math.min(18, n))
       const pool = shuffle(
         rng,
         bank.syllableItems.filter(
           (item) =>
-            item.parts.length >= 2 &&
+            syllabifyFr(item.word).length >= 2 &&
             (wordHasLessonLetter(item.word, bank) || wordHasLessonSound(item.word, bank)),
         ),
       )
@@ -361,7 +371,7 @@ export function genKind(
       if (chosen.length < need) {
         const rest = bank.syllableItems.filter(
           (item) =>
-            item.parts.length >= 2 &&
+            syllabifyFr(item.word).length >= 2 &&
             !chosen.some((t) => t.word.toLowerCase() === item.word.toLowerCase()),
         )
         chosen = [...chosen, ...shuffle(rng, rest)].slice(0, need)
@@ -373,28 +383,32 @@ export function genKind(
           {
             layout: 'syllable-sound',
             syllableSoundItems: chosen.map((item) => {
-              const parts = [...item.parts]
-              const hitIndex = parts.findIndex((p) => wordHasLessonLetter(p, bank))
               const raw = item.word.trim()
               const word = displayVocabLabel(raw)
+              const parts = syllabifyFr(word)
+              const hitIndices = parts
+                .map((p, i) => (wordHasLessonLetter(p, bank) ? i : -1))
+                .filter((i) => i >= 0)
               const imageSrc =
+                resolveGameImageSrc(raw) ||
                 soutienImageFor(raw) ||
                 soutienImageFor(word) ||
                 soutienImageFor(raw.toLowerCase())
               return {
                 word,
                 parts,
-                hitIndex: hitIndex >= 0 ? hitIndex : -1,
+                hitIndex: hitIndices[0] ?? -1,
+                hitIndices,
                 imageSrc,
                 audioSrc: soutienAudioFor(raw) ?? soutienAudioFor(word),
               }
             }),
             answer: chosen
               .map((item) => {
-                const parts = item.parts
-                const hit = parts.find((p) => wordHasLessonLetter(p, bank))
                 const word = displayVocabLabel(item.word)
-                return hit ? `${word} → ${hit}` : word
+                const parts = syllabifyFr(word)
+                const hits = parts.filter((p) => wordHasLessonLetter(p, bank))
+                return hits.length ? `${word} → ${hits.join(' · ')}` : word
               })
               .join(' · '),
             letterGridCols: cols,

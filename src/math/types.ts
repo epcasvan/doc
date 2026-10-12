@@ -540,6 +540,8 @@ export type MathItem = {
     parts: string[]
     /** Index de la syllabe qui porte le son (−1 si aucune). */
     hitIndex: number
+    /** Toutes les syllabes qui portent le son (corrigé multi-hits). */
+    hitIndices?: number[]
     imageSrc?: string
     audioSrc?: string
   }>

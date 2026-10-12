@@ -171,7 +171,7 @@ export function applyType(type: ExerciseType, prev?: ExerciseBlock): Partial<Exe
                     : alphaKind === 'lettres-maj' || alphaKind === 'lettres-min'
                       ? { count: 5 }
                       : alphaKind === 'souligner-maj' || alphaKind === 'souligner-min'
-                        ? { count: 8 }
+                        ? { count: 10 }
                         : alphaKind === 'ecouter'
                           ? { count: 9 }
                           : alphaKind === 'ecouter-image'

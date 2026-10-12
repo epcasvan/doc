@@ -50,14 +50,7 @@ export function VocabTable({ item }: { item: MathItem }) {
     >
       {cells.map((entry, index) => (
         <div className="vocab-card" key={`card-${index}`}>
-          <div className="vocab-card-image">
-            {entry?.imageSrc ? (
-              <img src={entry.imageSrc} alt="" />
-            ) : (
-              <span className="vocab-card-empty" aria-hidden />
-            )}
-          </div>
-          <div className="vocab-card-footer">
+          <div className="vocab-card-top">
             <div className="vocab-card-qr">
               {qrSrcs[index] ? (
                 <img src={qrSrcs[index]} alt={entry?.label ? `Audio ${entry.label}` : ''} />
@@ -65,16 +58,23 @@ export function VocabTable({ item }: { item: MathItem }) {
                 <span className="vocab-card-qr-ph" aria-hidden />
               )}
             </div>
-            <div className="vocab-card-word">
-              {entry?.label
-                ? (() => {
-                    const label = displayVocabLabel(entry.label)
-                    return highlight
-                      ? highlightThemeLetters(label, themeLetters)
-                      : label
-                  })()
-                : ''}
-            </div>
+          </div>
+          <div className="vocab-card-image">
+            {entry?.imageSrc ? (
+              <img src={entry.imageSrc} alt="" />
+            ) : (
+              <span className="vocab-card-empty" aria-hidden />
+            )}
+          </div>
+          <div className="vocab-card-word">
+            {entry?.label
+              ? (() => {
+                  const label = displayVocabLabel(entry.label)
+                  return highlight
+                    ? highlightThemeLetters(label, themeLetters)
+                    : label
+                })()
+              : ''}
           </div>
         </div>
       ))}

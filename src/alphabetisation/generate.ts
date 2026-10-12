@@ -394,7 +394,20 @@ export function tryGenerateAlphabetisationBatch(
   ) {
     const bank = soutienBankById(parsed.bankId)
     if (bank) {
-      return generateAlphaLetterKind(parsed.kind, bank, count, rng, difficulty, options)
+      const batch = generateAlphaLetterKind(
+        parsed.kind,
+        bank,
+        count,
+        rng,
+        difficulty,
+        options,
+      )
+      if (!batch) return null
+      // Consigne une seule fois (sous le titre d’exercice) — pas de prompt dupliqué.
+      return {
+        ...batch,
+        items: batch.items.map((item) => ({ ...item, prompt: undefined })),
+      }
     }
   }
 

@@ -59,7 +59,7 @@ export const SOUTIEN_KINDS = [
     id: 'syllabe-son',
     label: '8 · Syllabe du son',
     description:
-      'Grille (1–3 col.) ; 18 mots par défaut ; mots ≥ 2 syllabes ; découpe scolaire.',
+      'Grille (1–3 col.) ; 18 mots par défaut ; mots ≥ 2 syllabes orales.',
     instruction: 'À quelle syllabe entendez-vous le son ?',
     preferredColumns: 1 as const,
   },

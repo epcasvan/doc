@@ -35,20 +35,18 @@ function soulignerWords(
   upper: boolean,
 ): AlphaBatch {
   const pool = shuffle(rng, type1Words(bank, rng, Math.max(count, 12))).slice(0, count)
-  const letter = bank.letterUpper
-  const letterLo = bank.letterLower
+  const letter = upper ? bank.letterUpper : bank.letterLower
   const words = pool.map((w) => {
     const d = displayVocabLabel(w)
     return upper ? d.toLocaleUpperCase('fr-FR') : d.toLocaleLowerCase('fr-FR')
   })
-  const instruction = `Soulignez la lettre ${letter} ${letterLo} dans les mots.`
+  const instruction = `Soulignez la lettre ${letter} dans les mots.`
   return {
     instruction,
     preferredColumns: 1,
     items: [
       {
         layout: 'mark-letter',
-        prompt: instruction,
         markLetterWords: words,
         answer: words.join(' · '),
       },
@@ -69,7 +67,6 @@ function syllabesCvVc(bank: SoutienVowelBank, rng: Rng, lineCount: number): Alph
     items: [
       {
         layout: 'syllable-table',
-        prompt: 'Syllabes simples (2 lettres) :',
         options: list,
         labels: [...bank.graphemes],
         answer: list.join(' · '),
@@ -93,7 +90,6 @@ function syllabesLong(bank: SoutienVowelBank, rng: Rng, lineCount: number): Alph
     items: [
       {
         layout: 'syllable-table',
-        prompt: 'Syllabes (3 à 4 lettres) :',
         options: list,
         labels: [...bank.graphemes],
         answer: list.join(' · '),
@@ -185,17 +181,19 @@ function associerSyllabes(
 function syllablePool(bank: SoutienVowelBank, rng: Rng, need: number) {
   const pool = shuffle(
     rng,
-    bank.syllableItems.filter(
-      (item) =>
-        item.parts.length >= 2 &&
-        (wordHasLessonLetter(item.word, bank) || wordHasLessonSound(item.word, bank)),
-    ),
+    bank.syllableItems.filter((item) => {
+      const parts = syllabifyFr(item.word)
+      return (
+        parts.length >= 2 &&
+        (wordHasLessonLetter(item.word, bank) || wordHasLessonSound(item.word, bank))
+      )
+    }),
   )
   let chosen = pool.slice(0, need)
   if (chosen.length < need) {
     const rest = bank.syllableItems.filter(
       (item) =>
-        item.parts.length >= 2 &&
+        syllabifyFr(item.word).length >= 2 &&
         !chosen.some((t) => t.word.toLowerCase() === item.word.toLowerCase()),
     )
     chosen = [...chosen, ...shuffle(rng, rest)].slice(0, need)
@@ -213,18 +211,22 @@ export function generateAlphaLetterKind(
 ): AlphaBatch | null {
   const n = Math.max(1, count)
   switch (kind) {
-    case 'lettres-maj':
+    case 'lettres-maj': {
+      const item = letterGrid(rng, bank, n, 'upper')
       return {
         instruction: `Entourez les lettres ${bank.letterUpper}.`,
         preferredColumns: 1,
-        items: [letterGrid(rng, bank, n, 'upper')],
+        items: [{ ...item, prompt: undefined }],
       }
-    case 'lettres-min':
+    }
+    case 'lettres-min': {
+      const item = letterGrid(rng, bank, n, 'lower')
       return {
         instruction: `Entourez les lettres ${bank.letterLower}.`,
         preferredColumns: 1,
-        items: [letterGrid(rng, bank, n, 'lower')],
+        items: [{ ...item, prompt: undefined }],
       }
+    }
     case 'souligner-maj':
       return soulignerWords(bank, rng, Math.min(16, n), true)
     case 'souligner-min':
@@ -240,24 +242,27 @@ export function generateAlphaLetterKind(
           {
             layout: 'syllable-sound',
             syllableSoundItems: chosen.map((item) => {
-              const parts = [...item.parts]
-              const hitIndex = parts.findIndex((p) => wordHasLessonLetter(p, bank))
               const raw = item.word
               const word = displayVocabLabel(raw)
+              const parts = syllabifyFr(word)
+              const hitIndices = parts
+                .map((p, i) => (wordHasLessonLetter(p, bank) ? i : -1))
+                .filter((i) => i >= 0)
               return {
                 word,
                 parts,
-                hitIndex: hitIndex >= 0 ? hitIndex : -1,
+                hitIndex: hitIndices[0] ?? -1,
+                hitIndices,
                 audioSrc: soutienAudioFor(raw) ?? soutienAudioFor(word),
               }
             }),
             syllableSoundQrOnly: true,
             answer: chosen
               .map((item) => {
-                const parts = item.parts
-                const hit = parts.find((p) => wordHasLessonLetter(p, bank))
                 const word = displayVocabLabel(item.word)
-                return hit ? `${word} → ${hit}` : word
+                const parts = syllabifyFr(word)
+                const hits = parts.filter((p) => wordHasLessonLetter(p, bank))
+                return hits.length ? `${word} → ${hits.join(' · ')}` : word
               })
               .join(' · '),
             letterGridCols: cols,

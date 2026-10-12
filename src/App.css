@@ -2018,7 +2018,13 @@ html,body,#root{
   display:flex;flex-direction:column;align-items:stretch;
   border-radius:8px;background:#fff;
   border:1px solid #d8dde6;
-  overflow:hidden;padding:1.5mm 1.5mm 1mm
+  overflow:hidden;padding:1.5mm 1.5mm 1mm;
+  position:relative
+}
+.vocab-card-top{
+  flex:0 0 auto;
+  display:flex;justify-content:flex-start;align-items:flex-start;
+  min-height:0;margin-bottom:0.5mm
 }
 .vocab-card-image{
   flex:1 1 auto;min-height:0;
@@ -2031,16 +2037,6 @@ html,body,#root{
 }
 .vocab-card-empty{
   display:block;width:100%;height:100%;min-height:8mm
-}
-/* Ligne 2 : QR (écoute) | mot */
-.vocab-card-footer{
-  flex:0 0 auto;
-  display:grid;
-  grid-template-columns:9mm minmax(0,1fr);
-  gap:1.5mm;
-  align-items:center;
-  margin-top:1mm;
-  min-height:9mm
 }
 .vocab-card-qr{
   width:9mm;height:9mm;
@@ -2055,11 +2051,11 @@ html,body,#root{
   border:1px dashed #c5cad3;border-radius:2px;box-sizing:border-box
 }
 .vocab-card-word{
-  flex:0 0 auto;margin:0;
+  flex:0 0 auto;margin:1mm 0 0;
   font-family:'DM Sans',sans-serif;font-size:10px;font-weight:400;
-  line-height:1.15;color:var(--ink);text-align:left;
+  line-height:1.15;color:var(--ink);text-align:center;
   white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
-  min-width:0
+  min-width:0;width:100%
 }
 /* Type 1 : seul le graphème du thème est en gras (+ couleur). */
 .vocab-card-word .syllable-vowel{
@@ -4385,27 +4381,40 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
 .worksheet-sheet.is-alphabetisation .letter-table-cell,
 .worksheet-sheet.is-alphabetisation .syllable-table--script .syllable-table-cell,
 .worksheet-sheet.is-alphabetisation .listen-check-line,
-.worksheet-sheet.is-alphabetisation .syllable-mini-table td,
 .worksheet-sheet.is-alphabetisation .mark-letter-cell,
 .worksheet-sheet.is-alphabetisation .syllable-pronounce-cell,
 .worksheet-sheet.is-alphabetisation .audio-order-slot-word{
   font-size:16pt
 }
+/* Types 8 / 9 : taille corrigé = Soutien FR (pas le +2 pt Alphabétisation). */
+.worksheet-sheet.is-alphabetisation .syllable-mini-table td{
+  font-size:10px
+}
 .worksheet-sheet.is-alphabetisation .vocab-table{
-  --vocab-card-w:52mm;
-  --vocab-card-h:58mm;
-  --vocab-card-gap:3mm
+  --vocab-card-w:58mm;
+  --vocab-card-h:64mm;
+  --vocab-card-gap:2.5mm
+}
+.worksheet-sheet.is-alphabetisation .vocab-card-image{
+  flex:1 1 auto;min-height:32mm
 }
 .worksheet-sheet.is-alphabetisation .vocab-card-image img{
-  max-height:38mm
+  max-height:44mm
+}
+.worksheet-sheet.is-alphabetisation .vocab-card-qr{
+  width:8mm;height:8mm
+}
+.worksheet-sheet.is-alphabetisation .vocab-card-word{
+  text-align:center
 }
 .mark-letter-block{display:flex;flex-direction:column;gap:6px;width:100%}
 .mark-letter-grid{
   display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4mm 6mm;width:100%
 }
 .mark-letter-cell{
-  border:1.25px solid var(--ink);padding:3mm 4mm;text-align:center;
-  font-weight:700;line-height:1.25;background:#fff
+  border:1px solid #d8dde6;padding:3mm 4mm;text-align:center;
+  font-weight:700;line-height:1.25;background:#fff;
+  letter-spacing:10px
 }
 .syllable-pronounce-block{display:flex;flex-direction:column;gap:5px;width:100%}
 .syllable-pronounce-row{

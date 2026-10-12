@@ -29,15 +29,15 @@ export const ALPHA_LETTER_KINDS = [
   {
     id: 'souligner-maj',
     label: '4 · Souligner la lettre (majuscules)',
-    description: '8 mots encadrés (majuscules) ; souligner la lettre du son à la main.',
-    instruction: 'Soulignez la lettre du son dans les mots.',
+    description: '10 mots encadrés (majuscules) ; souligner la lettre du son à la main.',
+    instruction: 'Soulignez la lettre majuscule du son dans les mots.',
     preferredColumns: 1 as const,
   },
   {
     id: 'souligner-min',
     label: '5 · Souligner la lettre (minuscules)',
-    description: '8 mots encadrés (minuscules) ; souligner la lettre du son à la main.',
-    instruction: 'Soulignez la lettre du son dans les mots.',
+    description: '10 mots encadrés (minuscules) ; souligner la lettre du son à la main.',
+    instruction: 'Soulignez la lettre minuscule du son dans les mots.',
     preferredColumns: 1 as const,
   },
   {
@@ -67,14 +67,14 @@ export const ALPHA_LETTER_KINDS = [
     id: 'syllabe-son',
     label: '9 · Syllabe du son',
     description:
-      'Grille (1–3 col.) ; 18 mots par défaut ; mots ≥ 2 syllabes ; découpe scolaire.',
+      'Grille (1–3 col.) ; 18 mots par défaut ; mots ≥ 2 syllabes orales.',
     instruction: 'À quelle syllabe entendez-vous le son ?',
     preferredColumns: 1 as const,
   },
   {
     id: 'associer-syllabe',
     label: '10 · Classer les syllabes',
-    description: '5 QR + 5 syllabes cadrées ; 2 séries (défaut).',
+    description: '5 QR + 5 syllabes cadrées ; 2 séries (défaut) ; page avec le type 13.',
     instruction: 'Écoutez et classez les syllabes dans l’ordre.',
     preferredColumns: 1 as const,
   },
@@ -95,7 +95,7 @@ export const ALPHA_LETTER_KINDS = [
   {
     id: 'syllabes-prononcer',
     label: '13 · Prononcer les syllabes',
-    description: 'Mot découpé en syllabes + QR avant chaque ligne.',
+    description: 'Mot découpé en syllabes orales + QR ; page avec le type 10.',
     instruction: 'Prononcez les syllabes des mots.',
     preferredColumns: 1 as const,
   },
@@ -103,14 +103,14 @@ export const ALPHA_LETTER_KINDS = [
     id: 'associer-audio',
     label: '14 · Classer les mots',
     description:
-      '5 QR numérotés + 5 mots cadrés avec trait ; 1 à 3 séries (défaut 2) ; hors mots type 1.',
+      '5 QR numérotés + 5 mots cadrés avec trait ; 1 à 3 séries (défaut 2) ; page 9 avec le type 15.',
     instruction: 'Écoutez et classez les mots dans l’ordre.',
     preferredColumns: 1 as const,
   },
   {
     id: 'associer-image',
     label: '15 · Classer les images',
-    description: 'Comme le type 14 (5 images type 1) ; 1 série par défaut (max. 3).',
+    description: 'Comme le type 14 (5 images type 1) ; page 9 avec le type 14.',
     instruction: 'Écoutez et classez les images dans l’ordre.',
     preferredColumns: 1 as const,
   },

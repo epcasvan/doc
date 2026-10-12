@@ -455,7 +455,13 @@ export function SyllableSoundBlock({ item, mode }: { item: MathItem; mode: Previ
                 <tbody>
                   <tr>
                     {row.parts.map((part, pIdx) => {
-                      const hit = show && pIdx === row.hitIndex
+                      const hits =
+                        row.hitIndices && row.hitIndices.length > 0
+                          ? row.hitIndices
+                          : row.hitIndex >= 0
+                            ? [row.hitIndex]
+                            : []
+                      const hit = show && hits.includes(pIdx)
                       return (
                         <td
                           key={`${row.word}-${pIdx}`}
