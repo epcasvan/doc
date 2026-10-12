@@ -29,7 +29,7 @@ import {
   soutienPhrasesCommon,
   type SoutienLevelFilter,
 } from './phrases-data'
-import { buildPluralDetsFromWords } from './det-plurals'
+import { buildType10DetsFromWords } from './det-plurals'
 import {
   AUDIO_ORDER_CLIPS,
   buildSyllableReadingList,
@@ -506,16 +506,23 @@ export function genKind(
     }
     case 'determinants': {
       /**
-       * Type 10 : mots du type 5 de la fiche → phrases au pluriel (trou « Les »).
-       * Conversion article indéfini (type 5) → défini pluriel.
+       * Type 10 : uniquement les mots du type 5 ont le trait (Le/La/L’/Les).
+       * Autres déterminants de la phrase écrits en toutes lettres.
+       * Sur 8 : ≥ 5 singulier, ≥ 2 pluriel, reste aléatoire.
        */
       const want = Math.max(1, Math.min(16, n))
+      const articleByWord = new Map(
+        bank.completes.map((c) => [displayVocabLabel(c.word).toLowerCase(), c.article as string]),
+      )
       const fromType5 = (options?.type5Words ?? []).filter((w) => w.trim())
       const poolWords =
         fromType5.length > 0
-          ? fromType5
-          : bank.completes.map((c) => c.word).filter(Boolean)
-      const rows = buildPluralDetsFromWords(poolWords, rng, Math.min(want, poolWords.length))
+          ? fromType5.map((word) => ({
+              word,
+              article: articleByWord.get(displayVocabLabel(word).toLowerCase()),
+            }))
+          : bank.completes.map((c) => ({ word: c.word, article: c.article as string }))
+      const rows = buildType10DetsFromWords(poolWords, rng, want)
       return {
         instruction: 'Complétez avec les déterminants l’, le, la ou les.',
         preferredColumns: 1,

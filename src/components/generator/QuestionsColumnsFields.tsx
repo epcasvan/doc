@@ -176,7 +176,7 @@ export function QuestionsColumnsFields(props: QuestionsColumnsFieldsProps) {
                 ) : null}
                 {soutienKind === 'determinants' ? (
                   <small className="muted">
-                    Nombre de phrases (défaut 8 · max. 16) — mots du type 5 au pluriel (les).
+                    Nombre de phrases (défaut 8 · max. 16) — trait seulement sur les mots du type 5 (≥ 5 sing. / ≥ 2 plur.).
                   </small>
                 ) : null}
                 {soutienKind === 'dictee' ? (
