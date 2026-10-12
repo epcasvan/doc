@@ -86,6 +86,8 @@ export type Layout =
   | 'syllable-complete'
   | 'listen-check'
   | 'syllable-sound'
+  | 'syllable-pronounce'
+  | 'mark-letter'
   | 'phrase-scramble'
   | 'determinant-fill'
   | 'dictee-grid'
@@ -519,6 +521,19 @@ export type MathItem = {
     imageSrc?: string
     audioSrc?: string
   }>
+  /** Type 8 variante QR : pas d’image, QR audio à la place. */
+  syllableSoundQrOnly?: boolean
+  /** Alphabétisation : mots encadrés à souligner (sans coloriage du son). */
+  markLetterWords?: string[]
+  /** Alphabétisation type 13 : mot + syllabes + QR. */
+  syllablePronounceRows?: Array<{
+    index: number
+    word: string
+    parts: string[]
+    audioSrc?: string
+  }>
+  /** Syllabes : une seule table script (pas de Playwrite). */
+  syllableTableScriptOnly?: boolean
   /** Soutien FR type 8 : image + mini-tableau (une case par syllabe). */
   syllableSoundItems?: Array<{
     word: string
@@ -790,6 +805,7 @@ export type ExerciseBlock = {
     id: string
     label: string
     imageSrc?: string
+    audio?: string
     definition: string
     syllables: string[]
     synonym?: string
@@ -800,7 +816,7 @@ export type ExerciseBlock = {
     sentences: {
       trous: { a1: string[]; a2: string[]; b1: string[] }
       phrase: { a1: string[]; a2: string[]; b1: string[] }
-      dictee: { a1: string[]; a2: string[]; b1: string[] }
+      dictee?: { a1: string[]; a2: string[]; b1: string[] }
     }
   }>
   /** Longueur du trait de réponse (production écrite Voc), en caractères. */

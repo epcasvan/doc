@@ -39,7 +39,12 @@ export function otherWords(bank: SoutienVowelBank): string[] {
 }
 
 /** Type 2 : tableau cols×rows ; le nombre de questions = nombre de lignes (max 15). */
-export function letterGrid(rng: Rng, bank: SoutienVowelBank, rowCount: number): MathItem {
+export function letterGrid(
+  rng: Rng,
+  bank: SoutienVowelBank,
+  rowCount: number,
+  caseMode: 'both' | 'upper' | 'lower' = 'both',
+): MathItem {
   /** 8 colonnes : cercles + padding 10 px tiennent sur l’A4. */
   const cols = 8
   const rows = Math.max(1, Math.min(15, Math.round(rowCount) || 5))
@@ -49,7 +54,9 @@ export function letterGrid(rng: Rng, bank: SoutienVowelBank, rowCount: number): 
   const isDigraph = bank.letterLower.length > 1
   const cells: string[] = []
   for (let i = 0; i < targetCount; i++) {
-    cells.push(pick(rng, [bank.letterUpper, bank.letterLower]))
+    if (caseMode === 'upper') cells.push(bank.letterUpper)
+    else if (caseMode === 'lower') cells.push(bank.letterLower)
+    else cells.push(pick(rng, [bank.letterUpper, bank.letterLower]))
   }
   const digraphDistractors = ['ch', 'ph', 'ou', 'oi', 'an', 'in', 'on', 'au', 'gn', 'ill', 'qu', 'eu']
   while (cells.length < size) {
@@ -58,17 +65,32 @@ export function letterGrid(rng: Rng, bank: SoutienVowelBank, rowCount: number): 
       while (d.toLowerCase() === bank.letterLower.toLowerCase()) {
         d = pick(rng, digraphDistractors)
       }
-      // Mélanger maj / min
-      cells.push(int(rng, 0, 1) === 0 ? d.toLocaleUpperCase('fr-FR') : d)
+      cells.push(
+        caseMode === 'upper'
+          ? d.toLocaleUpperCase('fr-FR')
+          : caseMode === 'lower'
+            ? d.toLocaleLowerCase('fr-FR')
+            : int(rng, 0, 1) === 0
+              ? d.toLocaleUpperCase('fr-FR')
+              : d,
+      )
     } else {
       let d = pick(rng, DISTRACTOR_LETTERS)
       while (d.toLowerCase() === bank.letterLower) d = pick(rng, DISTRACTOR_LETTERS)
-      cells.push(d)
+      if (caseMode === 'upper') cells.push(d.toLocaleUpperCase('fr-FR'))
+      else if (caseMode === 'lower') cells.push(d.toLocaleLowerCase('fr-FR'))
+      else cells.push(d)
     }
   }
+  const prompt =
+    caseMode === 'upper'
+      ? `Entourez les lettres ${bank.letterUpper}.`
+      : caseMode === 'lower'
+        ? `Entourez les lettres ${bank.letterLower}.`
+        : `Entourez les lettres ${bank.letterUpper} ${bank.letterLower}.`
   return {
     layout: 'letter-grid',
-    prompt: `Entourez les lettres ${bank.letterUpper} ${bank.letterLower}.`,
+    prompt,
     options: shuffle(rng, cells),
     answer: `${bank.letterUpper}${bank.letterLower}`,
     labels: [bank.letterLower],

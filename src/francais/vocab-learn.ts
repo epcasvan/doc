@@ -10,6 +10,7 @@ export type VocabWordEntry = {
   id: string
   label: string
   imageSrc?: string
+  audio?: string
   definition: string
   syllables: string[]
   synonym?: string
@@ -17,7 +18,11 @@ export type VocabWordEntry = {
   masculine?: string
   feminine?: string
   subgroup?: string
-  sentences: Record<VocabSentenceKind, Record<VocabLevel, string[]>>
+  sentences: {
+    trous: Record<VocabLevel, string[]>
+    phrase: Record<VocabLevel, string[]>
+    dictee?: Record<VocabLevel, string[]>
+  }
 }
 
 /** Alias historique pour le tableau « Mots à apprendre ». */

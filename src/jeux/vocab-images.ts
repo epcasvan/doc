@@ -9257,6 +9257,7 @@ export const VOCAB_IMAGE_BY_LABEL: Record<string, string> = {
   "interrupteur": "/lib/images/vocabulaire/maison/interrupteur.webp",
   "jardin": "/lib/images/vocabulaire/maison/jardin.webp",
   "lampe": "/lib/images/vocabulaire/maison/lampe.webp",
+  "chandelier": "/lib/images/vocabulaire/maison/chandelier.webp",
   "lit": "/lib/images/vocabulaire/maison/lit.webp",
   "maison": "/lib/images/vocabulaire/maison/maison.webp",
   "meubles": "/lib/images/vocabulaire/maison/meubles.webp",

@@ -344,7 +344,7 @@ export const SOUTIEN_VOWEL_BANKS: readonly SoutienVowelBank[] = [
       { word: 'Caméra', parts: ['Ca', 'mé', 'ra'] },
       { word: 'Château', parts: ['Châ', 'teau'] },
       { word: 'Matelas', parts: ['Ma', 'te', 'las'] },
-      { word: 'Chandelier', parts: ['Chan', 'de', 'lier'] },
+      { word: 'chandelier', parts: ['chan', 'de', 'lier'] },
       { word: 'Magasin', parts: ['Ma', 'ga', 'sin'] },
       { word: 'Caneton', parts: ['Ca', 'ne', 'ton'] },
       { word: 'Papillon', parts: ['Pa', 'pil', 'lon'] },

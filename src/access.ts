@@ -13,7 +13,7 @@ export type AccessAccount = 'admin' | 'full' | 'partial'
  * (Les tests TCF / TCM CSC / TCM CFR / TCM sont pinés en bas de liste.)
  */
 export const REGULAR_DOMAIN_OPTIONS: readonly { id: Domain; label: string }[] = [
-  { id: 'acm', label: 'Activités créatives et manuelles' },
+  { id: 'acm', label: 'ACM' },
   { id: 'algèbre', label: 'Algèbre' },
   { id: 'alphabetisation', label: 'Alphabétisation' },
   { id: 'calligraphie', label: 'Calligraphie' },

@@ -107,9 +107,10 @@ export function genKind(
           label: displayVocabLabel(e.label),
         }))
       const words = entries.map((e) => e.label)
-      const total = Math.max(1, Math.min(16, entries.length))
-      /** Grille 4×4 pour tenir sur l’A4 avec en-tête et pied. */
-      const cols = 4
+      const vocabCap = options?.alphaVocabCount ?? 16
+      const total = Math.max(1, Math.min(vocabCap, entries.length))
+      /** 4 mots → 2×2 (images plus grandes) ; sinon 4×4. */
+      const cols = total <= 4 ? 2 : 4
       const rows = Math.max(1, Math.ceil(total / cols))
       return {
         instruction: `On entend le son ${bank.sound} dans ces mots.`,
@@ -381,13 +382,18 @@ export function genKind(
             syllableSoundItems: chosen.map((item) => {
               const parts = [...item.parts]
               const hitIndex = parts.findIndex((p) => wordHasLessonLetter(p, bank))
-              const word = displayVocabLabel(item.word)
+              const raw = item.word.trim()
+              const word = displayVocabLabel(raw)
+              const imageSrc =
+                soutienImageFor(raw) ||
+                soutienImageFor(word) ||
+                soutienImageFor(raw.toLowerCase())
               return {
                 word,
                 parts,
                 hitIndex: hitIndex >= 0 ? hitIndex : -1,
-                imageSrc: soutienImageFor(item.word) || soutienImageFor(word),
-                audioSrc: soutienAudioFor(item.word) ?? soutienAudioFor(word),
+                imageSrc,
+                audioSrc: soutienAudioFor(raw) ?? soutienAudioFor(word),
               }
             }),
             answer: chosen

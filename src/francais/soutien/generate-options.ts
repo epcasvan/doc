@@ -35,4 +35,6 @@ export type SoutienGenerateOptions = {
   type1Words?: readonly string[]
   /** Types 9 / 12 / 14 : niveau des phrases (défaut `all`). */
   level?: SoutienLevelFilter
+  /** Alphabétisation type 1 : nombre de mots (défaut 4 sur la fiche). */
+  alphaVocabCount?: number
 }

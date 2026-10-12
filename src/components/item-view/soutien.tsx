@@ -312,11 +312,116 @@ export function PhraseScrambleBlock({ item, mode }: { item: MathItem; mode: Prev
   )
 }
 
+export function MarkLetterBlock({ item }: { item: MathItem }) {
+  const words = item.markLetterWords ?? []
+  return (
+    <div className="mark-letter-block" aria-label="Souligner la lettre">
+      {item.prompt ? <p className="column-prompt">{item.prompt}</p> : null}
+      <div className="mark-letter-grid">
+        {words.map((word, index) => (
+          <div className="mark-letter-cell" key={`ml-${index}-${word}`}>
+            {word}
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}
+
+export function SyllablePronounceBlock({ item }: { item: MathItem }) {
+  const rows = item.syllablePronounceRows ?? []
+  const [qrSrcs, setQrSrcs] = useState<string[]>(() => rows.map(() => ''))
+  const audioKey = rows.map((r) => r.audioSrc ?? '').join('|')
+
+  useEffect(() => {
+    let cancelled = false
+    const srcs = audioKey.split('|')
+    const run = async () => {
+      const next = await Promise.all(
+        srcs.map(async (audioSrc) => {
+          if (!audioSrc) return ''
+          try {
+            return await QRCode.toDataURL(soutienAudioAbsoluteUrl(audioSrc), {
+              margin: 0,
+              width: 56,
+              errorCorrectionLevel: 'M',
+              color: { dark: '#111111', light: '#ffffff' },
+            })
+          } catch {
+            return ''
+          }
+        }),
+      )
+      if (!cancelled) setQrSrcs(next)
+    }
+    void run()
+    return () => {
+      cancelled = true
+    }
+  }, [audioKey])
+
+  return (
+    <div className="syllable-pronounce-block" aria-label="Prononcer les syllabes">
+      {rows.map((row, index) => (
+        <div className="syllable-pronounce-row" key={`sp-${index}-${row.word}`}>
+          <span className="syllable-pronounce-num">{row.index}.</span>
+          <div className="syllable-pronounce-qr">
+            {qrSrcs[index] ? (
+              <img src={qrSrcs[index]} alt="" />
+            ) : (
+              <span className="audio-order-qr-ph" aria-hidden />
+            )}
+          </div>
+          <div className="syllable-pronounce-cells">
+            {row.parts.map((part, pIdx) => (
+              <span className="syllable-pronounce-cell" key={`${row.word}-${pIdx}`}>
+                {part}
+              </span>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  )
+}
+
 export function SyllableSoundBlock({ item, mode }: { item: MathItem; mode: PreviewMode }) {
   const rows = item.syllableSoundItems ?? []
   const cols = Math.max(1, item.letterGridCols ?? 3)
   const graphemes = item.themeGraphemes ?? []
+  const qrOnly = Boolean(item.syllableSoundQrOnly)
   const show = mode === 'answers'
+  const [qrSrcs, setQrSrcs] = useState<string[]>(() => rows.map(() => ''))
+  const audioKey = qrOnly ? rows.map((r) => r.audioSrc ?? '').join('|') : ''
+
+  useEffect(() => {
+    if (!qrOnly) return
+    let cancelled = false
+    const srcs = audioKey.split('|')
+    const run = async () => {
+      const next = await Promise.all(
+        srcs.map(async (audioSrc) => {
+          if (!audioSrc) return ''
+          try {
+            return await QRCode.toDataURL(soutienAudioAbsoluteUrl(audioSrc), {
+              margin: 0,
+              width: 72,
+              errorCorrectionLevel: 'M',
+              color: { dark: '#111111', light: '#ffffff' },
+            })
+          } catch {
+            return ''
+          }
+        }),
+      )
+      if (!cancelled) setQrSrcs(next)
+    }
+    void run()
+    return () => {
+      cancelled = true
+    }
+  }, [audioKey, qrOnly])
+
   return (
     <div className="syllable-sound-block" aria-label="Syllabe du son">
       {item.prompt ? <p className="column-prompt">{item.prompt}</p> : null}
@@ -332,7 +437,13 @@ export function SyllableSoundBlock({ item, mode }: { item: MathItem; mode: Previ
         {rows.map((row, index) => (
           <div className="syllable-sound-card" key={`ss-${index}-${row.word}`}>
             <div className="syllable-sound-image">
-              {row.imageSrc ? (
+              {qrOnly ? (
+                qrSrcs[index] ? (
+                  <img src={qrSrcs[index]} alt="" className="syllable-sound-qr-img" />
+                ) : (
+                  <span className="vocab-card-empty" aria-hidden />
+                )
+              ) : row.imageSrc ? (
                 <img src={row.imageSrc} alt="" />
               ) : (
                 <span className="vocab-card-empty" aria-hidden />

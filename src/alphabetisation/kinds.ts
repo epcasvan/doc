@@ -1,13 +1,14 @@
 /**
  * Types d’exercice Alphabétisation.
- * Les kinds lettre/son reprennent ceux de Soutien FR ; Syllabes / Mots / Phrases
- * ont des kinds propres.
+ * Leçons lettre/son : `ALPHA_LETTER_KINDS` ; Syllabes / Mots / Phrases / Alphabet : kinds propres.
  */
-import { SOUTIEN_KINDS, type SoutienKindId } from '@/francais/soutien/kinds'
+import {
+  ALPHA_LETTER_KINDS,
+  isAlphaLetterKind,
+  type AlphaLetterKindId,
+} from './letter-kinds'
 
-export const ALPHA_LETTER_KINDS = SOUTIEN_KINDS
-
-export type AlphaLetterKindId = SoutienKindId
+export { ALPHA_LETTER_KINDS, isAlphaLetterKind, type AlphaLetterKindId }
 
 /** Kinds pour les thèmes Syllabes, Mots, Phrases, Alphabet. */
 export const ALPHA_SPECIAL_KINDS = [
@@ -114,10 +115,6 @@ export function parseAlphaType(
     return { bankId, kind: kind as AlphaKindId }
   }
   return null
-}
-
-export function isAlphaLetterKind(kind: string): kind is AlphaLetterKindId {
-  return ALPHA_LETTER_KINDS.some((k) => k.id === kind)
 }
 
 export function isAlphaSpecialKind(kind: string): kind is AlphaSpecialKindId {

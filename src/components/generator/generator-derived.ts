@@ -132,10 +132,25 @@ export function maxQuestionsFor({
   if (isFormes) return COORD_SHAPES.length
   if (isTransform) return TRANSFORM_MAX_POINTS
   if (isReperage) return COORD_LETTER_MAX
-  if (soutienKind === 'lettres') return 15
-  if (soutienKind === 'syllabes') return 10
+  if (soutienKind === 'lettres' || soutienKind === 'lettres-maj' || soutienKind === 'lettres-min')
+    return 15
+  if (soutienKind === 'syllabes' || soutienKind === 'syllabes-cv' || soutienKind === 'syllabes-long')
+    return 10
+  if (
+    soutienKind === 'souligner-maj' ||
+    soutienKind === 'souligner-min' ||
+    soutienKind === 'syllabes-prononcer'
+  ) {
+    return 16
+  }
   if (soutienKind === 'relier') return 16
-  if (soutienKind === 'completer' || soutienKind === 'syllabe-son') return 18
+  if (
+    soutienKind === 'completer' ||
+    soutienKind === 'syllabe-son' ||
+    soutienKind === 'syllabe-son-qr'
+  ) {
+    return 18
+  }
   if (soutienKind === 'ecouter' || soutienKind === 'ecouter-image') return 30
   if (
     soutienKind === 'lettres-phrase' ||
@@ -146,7 +161,13 @@ export function maxQuestionsFor({
   }
   if (soutienKind === 'compter' || soutienKind === 'ordre') return 12
   if (soutienKind === 'lire') return 19
-  if (soutienKind === 'associer-audio' || soutienKind === 'associer-image') return 3
+  if (
+    soutienKind === 'associer-audio' ||
+    soutienKind === 'associer-image' ||
+    soutienKind === 'associer-syllabe'
+  ) {
+    return 3
+  }
   return 30
 }
 

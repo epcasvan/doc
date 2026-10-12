@@ -37,6 +37,8 @@ import {
 } from './item-view/phrase'
 import {
   AudioOrderBlock,
+  MarkLetterBlock,
+  SyllablePronounceBlock,
   CountIconsBlock,
   CountSoundBlock,
   DeterminantFillBlock,
@@ -134,6 +136,8 @@ export function ItemView({
     item.layout === 'syllable-table' ||
     item.layout === 'listen-check' ||
     item.layout === 'syllable-sound' ||
+    item.layout === 'syllable-pronounce' ||
+    item.layout === 'mark-letter' ||
     item.layout === 'phrase-scramble' ||
     item.layout === 'determinant-fill' ||
     item.layout === 'dictee-grid' ||
@@ -271,6 +275,10 @@ export function ItemView({
         {item.layout === 'listen-check' && <ListenCheckBlock item={item} mode={mode} />}
         {item.layout === 'syllable-sound' && (
           <SyllableSoundBlock item={item} mode={mode} />
+        )}
+        {item.layout === 'mark-letter' && <MarkLetterBlock item={item} />}
+        {item.layout === 'syllable-pronounce' && (
+          <SyllablePronounceBlock item={item} />
         )}
         {item.layout === 'phrase-scramble' && (
           <PhraseScrambleBlock item={item} mode={mode} />
