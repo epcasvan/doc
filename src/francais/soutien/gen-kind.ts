@@ -27,6 +27,7 @@ import {
   filterSoutienLevel,
   soutienAllFlatPhrases,
   soutienPhrasesCommon,
+  soutienPhrasesType9And12,
   type SoutienLevelFilter,
 } from './phrases-data'
 import { buildType10DetsFromWords } from './det-plurals'
@@ -506,8 +507,8 @@ export function genKind(
     }
     case 'determinants': {
       /**
-       * Type 10 : uniquement les mots du type 5 ont le trait (Le/La/L’/Les).
-       * Autres déterminants de la phrase écrits en toutes lettres.
+       * Type 10 : mots du type 5 → phrases banque 9+12.
+       * Trait seulement sur le déterminant du mot type 5 ([sing] / [plur]).
        * Sur 8 : ≥ 5 singulier, ≥ 2 pluriel, reste aléatoire.
        */
       const want = Math.max(1, Math.min(16, n))
@@ -522,7 +523,8 @@ export function genKind(
               article: articleByWord.get(displayVocabLabel(word).toLowerCase()),
             }))
           : bank.completes.map((c) => ({ word: c.word, article: c.article as string }))
-      const rows = buildType10DetsFromWords(poolWords, rng, want)
+      const bankPhrases = soutienPhrasesType9And12(options?.level)
+      const rows = buildType10DetsFromWords(poolWords, rng, want, bankPhrases)
       return {
         instruction: 'Complétez avec les déterminants l’, le, la ou les.',
         preferredColumns: 1,

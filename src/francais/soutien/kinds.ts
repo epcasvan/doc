@@ -75,7 +75,7 @@ export const SOUTIEN_KINDS = [
     id: 'determinants',
     label: '10 · Déterminants',
     description:
-      '8 phrases ; mots du type 5 uniquement en trait (Le/La/L’/Les) ; ≥ 5 singulier, ≥ 2 pluriel.',
+      '8 phrases ; mots type 5 dans banque 9+12 ; trait sur det ([sing]/[plur]) ; ≥ 5 sing. / ≥ 2 plur.',
     instruction: 'Complétez avec les déterminants l’, le, la ou les.',
     preferredColumns: 1 as const,
   },

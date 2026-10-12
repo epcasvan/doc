@@ -5,8 +5,16 @@
  * La sélection par exercice filtre ensuite (exclusion mots fiche, ≥3 sons, etc.).
  */
 
+import {
+  inferNumberForSentence,
+  inferNumberForWordPhrase,
+  parsePhraseNumber,
+  type SoutienPhraseNumber,
+} from './phrase-number'
+
 export type SoutienPhraseLevel = 'a1' | 'a2' | 'b1'
 export type SoutienLevelFilter = SoutienPhraseLevel | 'all'
+export type { SoutienPhraseNumber }
 
 export const SOUTIEN_LEVEL_FILTERS: ReadonlyArray<{ id: SoutienLevelFilter; label: string }> = [
   { id: 'all', label: 'Tous' },
@@ -15,7 +23,12 @@ export const SOUTIEN_LEVEL_FILTERS: ReadonlyArray<{ id: SoutienLevelFilter; labe
   { id: 'b1', label: 'B1' },
 ]
 
-export type SoutienLevelPhrase = { level: SoutienPhraseLevel; sentence: string }
+export type SoutienLevelPhrase = {
+  level: SoutienPhraseLevel
+  sentence: string
+  /** Nombre : singulier / pluriel (critère banque, ex. type 10). */
+  number?: SoutienPhraseNumber
+}
 export type SoutienLevelWordPhrase = SoutienLevelPhrase & { word: string }
 export type SoutienDetPart = { t: string } | { blank: string }
 export type SoutienLevelDetPhrase = SoutienLevelPhrase & {
@@ -42,16 +55,19 @@ function isPhrase(v: unknown): v is SoutienLevelPhrase {
   const o = v as Record<string, unknown>
   return isLevel(o.level) && typeof o.sentence === 'string' && o.sentence.trim().length > 0
 }
-function isPhraseRaw(v: unknown): v is { level?: unknown; sentence: string } {
+function isPhraseRaw(
+  v: unknown,
+): v is { level?: unknown; sentence: string; number?: unknown } {
   if (!v || typeof v !== 'object') return false
   const o = v as Record<string, unknown>
   if (typeof o.sentence !== 'string' || !o.sentence.trim()) return false
   if (o.level !== undefined && !isLevel(o.level)) return false
+  if (o.number !== undefined && parsePhraseNumber(o.number) === undefined) return false
   return true
 }
 function isWordPhraseRaw(
   v: unknown,
-): v is { level?: unknown; word: string; sentence: string } {
+): v is { level?: unknown; word: string; sentence: string; number?: unknown } {
   if (!isPhraseRaw(v)) return false
   const w = (v as Record<string, unknown>).word
   return typeof w === 'string' && w.trim().length > 0
@@ -79,24 +95,43 @@ function normalizeBank(raw: Partial<SoutienBankPhrases> | undefined): SoutienBan
   }
   return {
     type9: Array.isArray(raw.type9)
-      ? raw.type9.filter(isWordPhraseRaw).map((row) => ({
-          level: (isLevel(row.level) ? row.level : 'a2') as SoutienPhraseLevel,
-          word: String(row.word).trim(),
-          sentence: String(row.sentence).trim(),
-        }))
+      ? raw.type9.filter(isWordPhraseRaw).map((row) => {
+          const word = String(row.word).trim()
+          const sentence = String(row.sentence).trim()
+          const number =
+            parsePhraseNumber(row.number) ?? inferNumberForWordPhrase(sentence, word)
+          return {
+            level: (isLevel(row.level) ? row.level : 'a2') as SoutienPhraseLevel,
+            word,
+            sentence,
+            ...(number ? { number } : {}),
+          }
+        })
       : [],
     type10: Array.isArray(raw.type10) ? raw.type10.filter(isDetPhrase) : [],
     type12: Array.isArray(raw.type12)
-      ? raw.type12.filter(isPhraseRaw).map((row) => ({
-          level: (isLevel(row.level) ? row.level : 'a2') as SoutienPhraseLevel,
-          sentence: String(row.sentence).trim(),
-        }))
+      ? raw.type12.filter(isPhraseRaw).map((row) => {
+          const sentence = String(row.sentence).trim()
+          const number =
+            parsePhraseNumber(row.number) ?? inferNumberForSentence(sentence)
+          return {
+            level: (isLevel(row.level) ? row.level : 'a2') as SoutienPhraseLevel,
+            sentence,
+            ...(number ? { number } : {}),
+          }
+        })
       : [],
     type14: Array.isArray(raw.type14)
-      ? raw.type14.filter(isPhraseRaw).map((row) => ({
-          level: (isLevel(row.level) ? row.level : 'a2') as SoutienPhraseLevel,
-          sentence: String(row.sentence).trim(),
-        }))
+      ? raw.type14.filter(isPhraseRaw).map((row) => {
+          const sentence = String(row.sentence).trim()
+          const number =
+            parsePhraseNumber(row.number) ?? inferNumberForSentence(sentence)
+          return {
+            level: (isLevel(row.level) ? row.level : 'a2') as SoutienPhraseLevel,
+            sentence,
+            ...(number ? { number } : {}),
+          }
+        })
       : [],
   }
 }
@@ -152,14 +187,37 @@ export function soutienPhrasesCommon(): SoutienBankPhrases {
   return { type9, type10, type12, type14 }
 }
 
-/** Toutes les phrases plates (9 + 12 + 14) pour types 12 / 14. */
+/** Toutes les phrases plates (9 + 12 + 14) pour types 12 / 14 / 10. */
 export function soutienAllFlatPhrases(
   level: SoutienLevelFilter | undefined,
 ): SoutienLevelPhrase[] {
   const common = soutienPhrasesCommon()
-  const from9 = common.type9.map((r) => ({ level: r.level, sentence: r.sentence }))
+  const from9 = common.type9.map((r) => ({
+    level: r.level,
+    sentence: r.sentence,
+    ...(r.number ? { number: r.number } : {}),
+  }))
   const rows = [...from9, ...common.type12, ...common.type14]
   return filterSoutienLevel(rows, level)
+}
+
+/** Banque commune type 9 + 12 (même vivier de phrases, avec mot si type 9). */
+export function soutienPhrasesType9And12(
+  level: SoutienLevelFilter | undefined,
+): Array<SoutienLevelPhrase & { word?: string }> {
+  const common = soutienPhrasesCommon()
+  const from9 = common.type9.map((r) => ({
+    level: r.level,
+    sentence: r.sentence,
+    word: r.word,
+    ...(r.number ? { number: r.number } : {}),
+  }))
+  const from12 = common.type12.map((r) => ({
+    level: r.level,
+    sentence: r.sentence,
+    ...(r.number ? { number: r.number } : {}),
+  }))
+  return filterSoutienLevel([...from9, ...from12], level)
 }
 
 /** Filtre par niveau ; `all` / `undefined` → tout. */
