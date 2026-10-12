@@ -67,7 +67,7 @@ export const SOUTIEN_KINDS = [
     id: 'lettres-phrase',
     label: '9 · Mot dans la phrase',
     description:
-      '8 phrases ; banque unique (word/son/sentences) ; hors mots types 1 et 5 ; image obligatoire.',
+      '8 phrases ; fichier phrases/<son>.json ; hors mots types 1 et 5 ; image obligatoire.',
     instruction: 'Écrivez le mot correct à l’aide des lettres.',
     preferredColumns: 1 as const,
   },
@@ -91,7 +91,7 @@ export const SOUTIEN_KINDS = [
     id: 'compter',
     label: '12 · Compter le son',
     description:
-      '9 phrases ; banque unique filtrée par son ; ≥ 3 fois le son de la fiche.',
+      '9 phrases ; fichier phrases/<son>.json ; ≥ 3 fois le son de la fiche.',
     instruction: 'Combien de fois entendez-vous le son ?',
     preferredColumns: 1 as const,
   },
