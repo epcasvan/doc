@@ -176,7 +176,7 @@ export function QuestionsColumnsFields(props: QuestionsColumnsFieldsProps) {
                 ) : null}
                 {soutienKind === 'determinants' ? (
                   <small className="muted">
-                    Nombre de phrases (défaut 9 · max. 16). Téléchargez le JSON pour corriger.
+                    Nombre de phrases (défaut 8 · max. 16) — mots du type 5 au pluriel (les).
                   </small>
                 ) : null}
                 {soutienKind === 'dictee' ? (
@@ -184,7 +184,7 @@ export function QuestionsColumnsFields(props: QuestionsColumnsFieldsProps) {
                 ) : null}
                 {soutienKind === 'compter' ? (
                   <small className="muted">
-                    Nombre de phrases (défaut 9 · max. 12). Téléchargez le JSON pour corriger.
+                    Nombre de phrases (défaut 9 · max. 12) — banque commune, ≥ 3 fois le son.
                   </small>
                 ) : null}
                 {soutienKind === 'ordre' ? (
@@ -194,7 +194,7 @@ export function QuestionsColumnsFields(props: QuestionsColumnsFieldsProps) {
                 ) : null}
                 {soutienKind === 'lire' ? (
                   <small className="muted">
-                    Nombre de phrases (défaut 19 · max. 20). Téléchargez le JSON pour corriger.
+                    Nombre de phrases (défaut 19 · max. 20) — banque commune, ≥ 3 fois le son.
                   </small>
                 ) : null}
                 {soutienKind === 'associer-audio' ? (

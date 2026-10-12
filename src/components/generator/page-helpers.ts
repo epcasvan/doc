@@ -202,8 +202,9 @@ export function applyType(type: ExerciseType, prev?: ExerciseBlock): Partial<Exe
                                                 ? { count: 18 }
                                                 : soutienKind === 'lettres-phrase'
                                                   ? { count: 8 }
-                                                  : soutienKind === 'determinants' ||
-                                                      soutienKind === 'ordre'
+                                                  : soutienKind === 'determinants'
+                                                    ? { count: 8 }
+                                                    : soutienKind === 'ordre'
                                                     ? { count: 9 }
                                                   : soutienKind === 'dictee'
                                                     ? { count: 8 }

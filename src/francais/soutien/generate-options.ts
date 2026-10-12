@@ -33,6 +33,8 @@ export type SoutienGenerateOptions = {
   excludeWords?: readonly string[]
   /** Types 11 / 16 : mots du type 1 de la fiche (vocabulaire + images). */
   type1Words?: readonly string[]
+  /** Type 10 : mots du type 5 (compléter) de la fiche → pluriel « les ». */
+  type5Words?: readonly string[]
   /** Types 9 / 12 / 14 : niveau des phrases (défaut `all`). */
   level?: SoutienLevelFilter
   /** Alphabétisation type 1 : nombre de mots (défaut 4 sur la fiche). */

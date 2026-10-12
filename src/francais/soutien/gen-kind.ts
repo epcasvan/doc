@@ -25,9 +25,11 @@ import { isSoutienType1Word, type1WordPool, type1Words } from './type1-words'
 import type { SoutienGenerateOptions } from './generate-options'
 import {
   filterSoutienLevel,
-  soutienPhrasesFor,
+  soutienAllFlatPhrases,
+  soutienPhrasesCommon,
   type SoutienLevelFilter,
 } from './phrases-data'
+import { buildPluralDetsFromWords } from './det-plurals'
 import {
   AUDIO_ORDER_CLIPS,
   buildSyllableReadingList,
@@ -38,19 +40,26 @@ import {
   syllableBlockRows,
 } from './gen-kind-helpers'
 
-/** Phrases types 12 / 14 : liste plate par niveau, puis banques `countPhrases` / `readPhrases`. */
+/**
+ * Types 12 / 14 : banque commune ; phrases avec au moins 3 fois le son de la fiche.
+ * Repli : phrases banque locale / countPhrases / readPhrases.
+ */
 function curatedPhrases(
   bank: SoutienVowelBank,
-  kind: 'type12' | 'type14',
   level: SoutienLevelFilter | undefined,
   rng: Rng,
   want: number,
 ): string[] | null {
-  const data = soutienPhrasesFor(bank.id)
-  if (!data) return null
-  const rows = filterSoutienLevel(data[kind], level)
-  if (rows.length === 0) return null
-  return shuffle(rng, rows.map((r) => r.sentence)).slice(0, want)
+  const minHits = 3
+  const pool = soutienAllFlatPhrases(level)
+  const rich = pool.filter((r) => countSoundInPhrase(r.sentence, bank) >= minHits)
+  const source = rich.length > 0 ? rich : pool.filter((r) => countSoundInPhrase(r.sentence, bank) >= 1)
+  if (source.length === 0) return null
+  const unique = new Map<string, string>()
+  for (const row of source) {
+    if (!unique.has(row.sentence)) unique.set(row.sentence, row.sentence)
+  }
+  return shuffle(rng, [...unique.values()]).slice(0, want)
 }
 
 export function genKind(
@@ -406,9 +415,8 @@ export function genKind(
       )
       type ScrambleRow = { sentence: string; word: string; letters: string }
       const byWord = new Map<string, ScrambleRow[]>()
-      const curated = soutienPhrasesFor(bank.id)
-      const curatedRows = curated ? filterSoutienLevel(curated.type9, options?.level) : []
-      /** Phrases rédigées ; mot cible avec image obligatoire (pas de composés). */
+      /** Banque commune ; hors mots types 1 et 5 de la fiche ; image obligatoire. */
+      const curatedRows = filterSoutienLevel(soutienPhrasesCommon().type9, options?.level)
       for (const row of curatedRows) {
         if (!isSoutienType1Word(row.word)) continue
         if (exclude.has(displayVocabLabel(row.word).toLowerCase())) continue
@@ -498,27 +506,16 @@ export function genKind(
     }
     case 'determinants': {
       /**
-       * Phrases à trous (scènes rédigées type 10, sinon banque) ; count = nb de questions.
-       * Consigne unique en en-tête (l’ / le / la / les stylés).
+       * Type 10 : mots du type 5 de la fiche → phrases au pluriel (trou « Les »).
+       * Conversion article indéfini (type 5) → défini pluriel.
        */
       const want = Math.max(1, Math.min(16, n))
-      const curated = soutienPhrasesFor(bank.id)
-      const curatedRows = curated ? filterSoutienLevel(curated.type10, options?.level) : []
-      const pool =
-        curatedRows.length > 0
-          ? curatedRows.map((row) => ({
-              parts: row.parts.map((p) =>
-                'blank' in p ? { blank: p.blank } : { t: p.t },
-              ),
-              sentence: row.sentence,
-            }))
-          : bank.determinants.map((row) => ({
-              parts: row.parts.map((p) =>
-                'blank' in p ? { blank: p.blank } : { t: p.t },
-              ),
-              sentence: row.sentence,
-            }))
-      const rows = shuffle(rng, pool).slice(0, Math.min(want, pool.length))
+      const fromType5 = (options?.type5Words ?? []).filter((w) => w.trim())
+      const poolWords =
+        fromType5.length > 0
+          ? fromType5
+          : bank.completes.map((c) => c.word).filter(Boolean)
+      const rows = buildPluralDetsFromWords(poolWords, rng, Math.min(want, poolWords.length))
       return {
         instruction: 'Complétez avec les déterminants l’, le, la ou les.',
         preferredColumns: 1,
@@ -558,12 +555,19 @@ export function genKind(
       }
     }
     case 'compter': {
-      /** Phrases (9 par défaut) + compter le son. */
+      /** Phrases (9 par défaut) + compter le son (≥ 3 fois le son de la fiche). */
       const want = Math.max(1, Math.min(12, n))
       const phrases =
-        curatedPhrases(bank, 'type12', options?.level, rng, want) ??
-        shuffle(rng, [...bank.countPhrases]).slice(0, Math.min(want, bank.countPhrases.length))
-      const items = phrases.map((phrase) => ({
+        curatedPhrases(bank, options?.level, rng, want) ??
+        shuffle(
+          rng,
+          bank.countPhrases.filter((p) => countSoundInPhrase(p, bank) >= 3),
+        ).slice(0, Math.min(want, bank.countPhrases.length))
+      const fallback =
+        phrases.length > 0
+          ? phrases
+          : shuffle(rng, [...bank.countPhrases]).slice(0, Math.min(want, bank.countPhrases.length))
+      const items = fallback.map((phrase) => ({
         phrase,
         count: countSoundInPhrase(phrase, bank),
       }))
@@ -604,11 +608,19 @@ export function genKind(
       }
     }
     case 'lire': {
-      /** Phrases (19 par défaut) ; voyelle du thème en couleur. */
+      /** Phrases (19 par défaut) ; ≥ 3 fois le son ; voyelle du thème en couleur. */
       const want = Math.max(1, Math.min(20, n))
+      const curated = curatedPhrases(bank, options?.level, rng, want)
+      const fromBank = shuffle(
+        rng,
+        bank.readPhrases.filter((p) => countSoundInPhrase(p, bank) >= 3),
+      ).slice(0, want)
       const phrases =
-        curatedPhrases(bank, 'type14', options?.level, rng, want) ??
-        shuffle(rng, [...bank.readPhrases]).slice(0, Math.min(want, bank.readPhrases.length))
+        curated && curated.length > 0
+          ? curated
+          : fromBank.length > 0
+            ? fromBank
+            : shuffle(rng, [...bank.readPhrases]).slice(0, Math.min(want, bank.readPhrases.length))
       return {
         instruction: 'Lisez les phrases.',
         preferredColumns: 1,

@@ -70,7 +70,7 @@ export function buildSoutienSeriesPages(bankId: string, themeId: string): PageCo
     page(bankId, themeId, 'ecouter', 9, 3, [b('ecouter-image', 15, 5)]),
     page(bankId, themeId, 'syllabe-son', 18, 3),
     page(bankId, themeId, 'lettres-phrase', 8),
-    page(bankId, themeId, 'determinants', 9, 1, [b('dictee', 8)]),
+    page(bankId, themeId, 'determinants', 8, 1, [b('dictee', 8)]),
     page(bankId, themeId, 'compter', 9),
     page(bankId, themeId, 'ordre', 9),
     page(bankId, themeId, 'lire', 19),

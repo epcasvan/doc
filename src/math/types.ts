@@ -883,6 +883,11 @@ export type ExerciseBlock = {
    */
   soutienType1Words?: string[]
   /**
+   * Soutien FR type 10 : mots du type 5 (compléter) de la fiche.
+   * Rempli par `buildWorksheets`.
+   */
+  soutienType5Words?: string[]
+  /**
    * Soutien FR types 9 / 12 / 14 : niveau des phrases
    * (`all` par défaut = mélange A1 / A2 / B1).
    */

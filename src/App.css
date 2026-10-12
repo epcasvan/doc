@@ -2499,7 +2499,7 @@ html,body,#root{
   width:100%;border-collapse:collapse;border:none;table-layout:fixed
 }
 .dictee-grid-table td{
-  border:none;padding:18px 8px;vertical-align:middle
+  border:none;padding:13px 8px;vertical-align:middle
 }
 .dictee-grid-num{
   width:1.8em;font-size:14px;font-weight:700;color:var(--purple);

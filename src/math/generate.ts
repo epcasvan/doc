@@ -11,6 +11,7 @@ import { tryGenerateReperage } from './coord-reperage'
 import { generateTransformations, isTransformationExercise } from './coord-transformations'
 import { tryGenerateSoutienBatch } from '@/francais/soutien/generate'
 import { parseSoutienType } from '@/francais/soutien/kinds'
+import { parseAlphaType } from '@/alphabetisation/kinds'
 import { ALGEBRA_GLOSSARY, GEOMETRY_GLOSSARY } from './glossary-banks'
 import { tryGenerateAlphabetisationBatch } from '@/alphabetisation/generate'
 import { tryGenerateLectureBatch } from '@/francais/lecture'
@@ -176,6 +177,7 @@ function buildSingleBlock(
     soutienCompleterEntries: config.soutienCompleterEntries,
     excludeWords: config.soutienExcludeWords,
     type1Words: config.soutienType1Words,
+    type5Words: config.soutienType5Words,
     level: config.soutienLevel,
   })
   if (soutien) {
@@ -198,6 +200,7 @@ function buildSingleBlock(
       soutienCompleterEntries: config.soutienCompleterEntries,
       excludeWords: config.soutienExcludeWords,
       type1Words: config.soutienType1Words,
+      type5Words: config.soutienType5Words,
       level: config.soutienLevel,
     },
   )
@@ -387,14 +390,19 @@ export function buildPage(
 function collectSoutienReservedWords(pages: PageConfig[], seed: number): {
   reserved: string[]
   type1Words: string[]
+  type5Words: string[]
 } {
   const reserved = new Set<string>()
   const type1Words: string[] = []
   const type1Seen = new Set<string>()
+  const type5Words: string[] = []
+  const type5Seen = new Set<string>()
   pages.forEach((page, pageIndex) => {
     const pageSeed = seed + pageIndex * 7919
     pageBlocks(page).forEach((block, blockIndex) => {
-      const kind = parseSoutienType(block.exerciseType)?.kind
+      const kind =
+        parseSoutienType(block.exerciseType)?.kind ??
+        parseAlphaType(block.exerciseType)?.kind
       if (kind !== 'mots' && kind !== 'completer') return
       const single = pageAsConfig(page, block)
       const local = block.contentSeed ?? 0
@@ -414,25 +422,31 @@ function collectSoutienReservedWords(pages: PageConfig[], seed: number): {
         if (kind === 'completer' && item.layout === 'syllable-complete') {
           for (const row of item.syllableCompletes ?? []) {
             const word = row.word?.trim()
-            if (word) reserved.add(word.toLowerCase())
+            if (!word) continue
+            reserved.add(word.toLowerCase())
+            if (!type5Seen.has(word.toLowerCase())) {
+              type5Seen.add(word.toLowerCase())
+              type5Words.push(word)
+            }
           }
         }
       }
     })
   })
-  return { reserved: [...reserved], type1Words }
+  return { reserved: [...reserved], type1Words, type5Words }
 }
 
 export function buildWorksheets(pages: PageConfig[], seed: number): WorksheetPage[] {
   let exerciseNo = 1
   const out: WorksheetPage[] = []
-  const { reserved, type1Words } = collectSoutienReservedWords(pages, seed)
+  const { reserved, type1Words, type5Words } = collectSoutienReservedWords(pages, seed)
   const pagesWithExclude =
-    reserved.length > 0 || type1Words.length > 0
+    reserved.length > 0 || type1Words.length > 0 || type5Words.length > 0
       ? pages.map((page) => ({
           ...page,
           soutienExcludeWords: reserved.length > 0 ? reserved : page.soutienExcludeWords,
           soutienType1Words: type1Words.length > 0 ? type1Words : page.soutienType1Words,
+          soutienType5Words: type5Words.length > 0 ? type5Words : page.soutienType5Words,
         }))
       : pages
 
