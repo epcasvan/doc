@@ -25,11 +25,13 @@
     },
     {
       "level": "a2",
+      "number": "sing",
       "word": "amour",
       "sentence": "Mounir écrit un poème d’amour pour Louis et pour Youssef."
     },
     {
       "level": "b1",
+      "number": "plur",
       "word": "amour",
       "sentence": "Youssef parle d’amour tous les jours, mais Louis et Mounir préfèrent parler de foot."
     },
@@ -94,6 +96,7 @@
     },
     {
       "level": "a2",
+      "number": "sing",
       "word": "blouson",
       "sentence": "Mounir cherche son blouson pour Louis et pour Youssef toute la journée."
     },
@@ -115,6 +118,7 @@
     },
     {
       "level": "b1",
+      "number": "plur",
       "word": "bou",
       "sentence": "Mounir dit « bou ! » tous les jours, mais Louis et Youssef n’ont jamais peur."
     },
@@ -156,16 +160,19 @@
     },
     {
       "level": "a1",
+      "number": "plur",
       "word": "boucles d'oreilles",
       "sentence": "Louis offre des boucles d’oreilles."
     },
     {
       "level": "a2",
+      "number": "plur",
       "word": "boucles d'oreilles",
       "sentence": "Mounir cherche les boucles d’oreilles de Louis pour Youssef."
     },
     {
       "level": "b1",
+      "number": "plur",
       "word": "boucles d'oreilles",
       "sentence": "Youssef trouve les boucles d’oreilles de Louis, mais Mounir préfère les boucles de Lou."
     },
@@ -333,16 +340,19 @@
     },
     {
       "level": "a1",
+      "number": "sing",
       "word": "bouteille deau",
       "sentence": "Louis boit une bouteille d’eau."
     },
     {
       "level": "a2",
+      "number": "sing",
       "word": "bouteille deau",
       "sentence": "Mounir cherche la bouteille d’eau de Louis pour Youssef."
     },
     {
       "level": "b1",
+      "number": "sing",
       "word": "bouteille deau",
       "sentence": "Youssef perd la bouteille d’eau de Louis, mais Mounir trouve toujours une autre."
     },
@@ -422,236 +432,284 @@
     {
       "level": "a1",
       "number": "sing",
+      "word": "bambou",
       "sentence": "Mounir coupe le bambou doucement."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "bambou",
       "sentence": "Youssef trouve un bambou tout près de la route."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "bambou",
       "sentence": "Quand Mounir coupe un bambou, il fait doucement un trou pour que l’eau coule."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "bijou",
       "sentence": "Nour trouve un bijou rouge."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "bijou",
       "sentence": "Youssef offre un bijou rouge à Nour pour sa fête."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "bijou",
       "sentence": "Quand Mounir trouve un bijou dans la cour, il le montre tout de suite."
     },
     {
       "level": "a1",
+      "word": "Mounir",
       "sentence": "Mounir met son blouson rouge."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "coussin",
       "sentence": "Nour cherche son blouson sous le coussin du fauteuil rouge."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "porte",
       "sentence": "Quand il fait froid, Mounir enfile son blouson et ferme tout doucement la porte."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "bouche",
       "sentence": "Mounir ouvre la bouche doucement."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "bouche",
       "sentence": "Mounir ouvre la bouche pour goûter la soupe de Nour."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "bouche",
       "sentence": "Quand Mounir a trop chaud, il ouvre la bouche et souffle doucement sur sa soupe."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "bouchère",
       "sentence": "La bouchère coupe la viande."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "bouchère",
       "sentence": "Nour parle à la bouchère pour trouver un bon morceau."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "bouchère",
       "sentence": "Quand la bouchère coupe le rôti, Mounir attend sagement et regarde tout le travail."
     },
     {
       "level": "a1",
+      "word": "Nour",
       "sentence": "Nour perd ses boucles d’oreilles."
     },
     {
       "level": "a2",
       "number": "plur",
+      "word": "boucles",
       "sentence": "Youssef offre à Nour des boucles d’oreilles pour la fête."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "monde",
       "sentence": "Quand Nour met ses boucles d’oreilles rouges, tout le monde la trouve douce."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "bougie",
       "sentence": "Mounir allume une bougie rouge."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "jour",
       "sentence": "Nour souffle sa bougie pour le jour de son anniversaire."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "bougie",
       "sentence": "Quand Mounir allume la bougie, la lumière douce remplit toute la cour et le jardin."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "boulangère",
       "sentence": "La boulangère coupe le pain."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "boulangère",
       "sentence": "Nour achète du pain chez la boulangère tous les jours."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "boulangère",
       "sentence": "Quand la boulangère ouvre la boutique, Mounir arrive toujours en premier pour acheter du pain."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "bouleau",
       "sentence": "Le bouleau pousse sous le soleil."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "bouleau",
       "sentence": "Mounir coupe un bouleau tout près de la route."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "bouleau",
       "sentence": "Quand le bouleau perd ses feuilles, Nour les ramasse toutes doucement dans la cour."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "bouquet",
       "sentence": "Mounir offre un bouquet rouge."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "bouquet",
       "sentence": "Nour pose un bouquet de roses sous la fenêtre pour Youssef."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "bouquet",
       "sentence": "Quand Mounir arrive, il tient un bouquet rouge et tout le monde sourit doucement."
     },
     {
       "level": "a1",
+      "word": "Mounir",
       "sentence": "Mounir regarde sa boussole rouge."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "route",
       "sentence": "Youssef trouve la route avec la boussole pendant la tournée."
     },
     {
       "level": "b1",
+      "word": "Quand",
       "sentence": "Quand Mounir se perd, il sort sa boussole et tourne doucement jusqu’au nord."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "bouteille",
       "sentence": "Mounir remplit la bouteille d’eau."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "bouteille",
       "sentence": "Nour pose la bouteille sous la table pour la fête de Youssef."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "bouteille",
       "sentence": "Quand la bouteille est vide, Mounir la jette doucement dans le bac pour tout trier."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "bouteille",
       "sentence": "Mounir a une bouteille d’eau."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "siège",
       "sentence": "Nour range sa bouteille d’eau sous le siège rouge."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "soleil",
       "sentence": "Quand Youssef court sous le soleil, il boit toujours toute sa bouteille d’eau."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "boutique",
       "sentence": "Mounir entre dans la boutique."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "blouson",
       "sentence": "Nour trouve un blouson rouge dans cette boutique du centre-ville."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "boutique",
       "sentence": "Quand la boutique ouvre, Mounir arrive toujours en avance pour trouver le meilleur prix."
     },
     {
       "level": "a1",
+      "word": "Mounir",
       "sentence": "Mounir mange du chou rouge."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "chou",
       "sentence": "Nour coupe le chou rouge pour la soupe de tous les jours."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "chou",
       "sentence": "Quand le chou est dur, Mounir le coupe doucement et le cuit pour la soupe."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "chou-fleur",
       "sentence": "Mounir coupe le chou-fleur doucement."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "chou-fleur",
       "sentence": "Nour trouve un chou-fleur frais tout près de la route."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "chou-fleur",
       "sentence": "Quand le chou-fleur est cuit, Youssef le sert doucement avec du fromage pour tous."
     }
   ],

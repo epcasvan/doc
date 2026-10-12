@@ -49,6 +49,7 @@
     },
     {
       "level": "b1",
+      "number": "sing",
       "word": "agenda",
       "sentence": "Dylan demande à Daniel son agenda, mais Dina l’a déjà donné à Didier."
     },
@@ -72,6 +73,7 @@
     },
     {
       "level": "a1",
+      "number": "sing",
       "word": "astéroïde",
       "sentence": "Daniel dessine un grand astéroïde."
     },
@@ -94,11 +96,13 @@
     },
     {
       "level": "a2",
+      "number": "sing",
       "word": "bordeaux",
       "sentence": "Dina porte un manteau bordeaux dimanche avec Daniel et Didier."
     },
     {
       "level": "b1",
+      "number": "sing",
       "word": "bordeaux",
       "sentence": "Didier a peint la porte en bordeaux, mais Daniel dit que Dina préfère le bleu."
     },
@@ -109,26 +113,31 @@
     },
     {
       "level": "a2",
+      "number": "plur",
       "word": "boucles d'oreilles",
       "sentence": "Daniel offre des boucles d’oreilles dorées à Dina et à Dylan."
     },
     {
       "level": "b1",
+      "number": "plur",
       "word": "boucles d'oreilles",
       "sentence": "Didier dit que les boucles d’oreilles de Dina sont dorées, mais Daniel doute."
     },
     {
       "level": "a1",
+      "number": "sing",
       "word": "bouteille deau",
       "sentence": "Daniel boit la bouteille d’eau."
     },
     {
       "level": "a2",
+      "number": "sing",
       "word": "bouteille deau",
       "sentence": "Dina donne une bouteille d’eau à Daniel dimanche après le déjeuner."
     },
     {
       "level": "b1",
+      "number": "sing",
       "word": "bouteille deau",
       "sentence": "Didier a oublié sa bouteille d’eau, mais Daniel lui donne la sienne."
     },
@@ -193,6 +202,7 @@
     },
     {
       "level": "a2",
+      "number": "sing",
       "word": "cadenas",
       "sentence": "Dina demande à Daniel la clé du cadenas de Didier."
     },
@@ -214,6 +224,7 @@
     },
     {
       "level": "b1",
+      "number": "sing",
       "word": "carte de credit",
       "sentence": "Didier dit que sa carte de crédit est dans le dossier de Daniel."
     },
@@ -224,11 +235,13 @@
     },
     {
       "level": "a2",
+      "number": "sing",
       "word": "carte detudiant",
       "sentence": "Dina donne sa carte d’étudiant à Daniel pour la bibliothèque."
     },
     {
       "level": "b1",
+      "number": "sing",
       "word": "carte detudiant",
       "sentence": "Didier a perdu sa carte d’étudiant dimanche, mais Daniel va la redemander."
     },
@@ -356,6 +369,7 @@
     },
     {
       "level": "a1",
+      "number": "sing",
       "word": "crocodile",
       "sentence": "Daniel dessine un grand crocodile."
     },
@@ -373,6 +387,7 @@
     },
     {
       "level": "a1",
+      "number": "sing",
       "word": "cylindre",
       "sentence": "Daniel dessine un grand cylindre."
     },
@@ -395,11 +410,13 @@
     },
     {
       "level": "a2",
+      "number": "sing",
       "word": "danse",
       "sentence": "Dina danse avec Daniel dimanche dans la salle de Didier."
     },
     {
       "level": "b1",
+      "number": "sing",
       "word": "danse",
       "sentence": "Didier donne un cours de danse dimanche, mais Daniel et Dina dansent déjà très bien."
     }
@@ -409,230 +426,278 @@
     {
       "level": "a1",
       "number": "sing",
+      "word": "accordéon",
       "sentence": "Denis joue de l’accordéon dimanche."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "accordéon",
       "sentence": "Dimanche dernier, Daniel a joué de l’accordéon devant tout le monde."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "accordéon",
       "sentence": "Quand Didier joue de l’accordéon dans la rue, les gens s’arrêtent pour danser."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "addition",
       "sentence": "Denis demande l’addition au serveur."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "dîner",
       "sentence": "Après le dîner, Damien paye l’addition et dit merci au serveur."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "dîner",
       "sentence": "Comme le dîner était délicieux, Dora laisse un pourboire quand elle paye l’addition."
     },
     {
       "level": "a1",
+      "word": "Mon",
       "sentence": "Mon agenda est dans mon sac."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "rendez-vous",
       "sentence": "Denise note le rendez-vous du docteur dans son agenda."
     },
     {
       "level": "b1",
+      "word": "Comme",
       "sentence": "Comme je dois penser à tout, j’écris chaque rendez-vous dans mon agenda dès demain."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "ardoise",
       "sentence": "Dora écrit sur une ardoise."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "maître",
       "sentence": "Le maître dessine un dindon sur l’ardoise avec une craie."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "ardoise",
       "sentence": "Quand Daniel arrive en classe, il efface d’abord l’ardoise avec une grande éponge."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "astéroïde",
       "sentence": "Un astéroïde passe dans le ciel."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "astéroïde",
       "sentence": "Un astéroïde passe près de la Terre dans deux jours."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "astéroïde",
       "sentence": "Quand un astéroïde approche de la Terre, les savants calculent sa distance dans la journée."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "verre",
       "sentence": "Papa boit un verre de bordeaux."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "robe",
       "sentence": "Denise porte une robe bordeaux pour dîner avec sa cousine."
     },
     {
       "level": "b1",
+      "word": "Quand",
       "sentence": "Quand Didier a goûté ce vin de bordeaux, il a décidé d’en acheter deux."
     },
     {
       "level": "a1",
+      "word": "Dora",
       "sentence": "Dora cherche ses boucles d’oreilles."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "boîte",
       "sentence": "Denise range ses boucles d’oreilles dans la boîte de sa grand-mère."
     },
     {
       "level": "b1",
+      "word": "Quand",
       "sentence": "Quand Dora danse, elle porte ses jolies boucles d’oreilles dorées, car elles brillent."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "bouteille",
       "sentence": "Dora a une bouteille d’eau."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "bouteille",
       "sentence": "Denis met une bouteille d’eau dans son sac avant de descendre."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "bouteille",
       "sentence": "Quand il fait chaud, Dimitri dépose une bouteille d’eau dans le congélateur pour demain."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "brosse",
       "sentence": "Dora a une brosse à dents."
     },
     {
       "level": "a2",
+      "word": "Denis",
       "sentence": "Denis met du dentifrice sur sa brosse à dents."
     },
     {
       "level": "b1",
       "number": "plur",
+      "word": "dentistes",
       "sentence": "Comme les dentistes disent de changer de brosse à dents, Dora en achète une demain."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "bulldozer",
       "sentence": "Le bulldozer déplace de la terre."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "bulldozer",
       "sentence": "Le bulldozer démolit le vieux mur dans la cour de l’usine."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "conducteur",
       "sentence": "Quand le conducteur du bulldozer descend, il décide de déplacer toute la terre."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "cadeau",
       "sentence": "Papa donne un cadeau à Daniel."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "cadeau",
       "sentence": "Pour son anniversaire, Didier a reçu un cadeau de ses amis."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "écharpe",
       "sentence": "Quand Dominique ouvre son cadeau, elle découvre une écharpe douce, mais elle dit merci."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "cadenas",
       "sentence": "Le cadenas est dans le tiroir."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "cadenas",
       "sentence": "Denis ferme son vélo avec un cadenas devant la gare du village."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "clé",
       "sentence": "Comme Dora a perdu la clé de son cadenas, elle doit demander de l’aide."
     },
     {
       "level": "a1",
+      "word": "Dora",
       "sentence": "Dora paie avec sa carte de crédit."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "bus",
       "sentence": "Denis a perdu sa carte de crédit dans le bus hier soir."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "magasin",
       "sentence": "Comme le magasin refuse l’argent liquide, Didier doit payer avec sa carte de crédit."
     },
     {
       "level": "a1",
+      "word": "Dora",
       "sentence": "Dora montre sa carte d’étudiant."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "train",
       "sentence": "Avec sa carte d’étudiant, Denis paie moins cher dans le train."
     },
     {
       "level": "b1",
+      "word": "Quand",
       "sentence": "Quand Dominique va au cinéma, elle doit montrer sa carte d’étudiant pour payer demi-tarif."
     },
     {
       "level": "a1",
+      "word": "Dora",
       "sentence": "Dora cherche sa carte d’identité."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "douane",
       "sentence": "Denis doit montrer sa carte d’identité à la douane demain."
     },
     {
       "level": "b1",
+      "word": "Comme",
       "sentence": "Comme Dimitri a oublié sa carte d’identité, il doit retourner dans son bureau."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "chrysalide",
       "sentence": "La chrysalide est dans le jardin."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "chrysalide",
       "sentence": "Dans la chrysalide, la chenille devient doucement un beau papillon."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "papillon",
       "sentence": "Quand le papillon sort de la chrysalide, il déploie lentement ses ailes dorées."
     }
   ],

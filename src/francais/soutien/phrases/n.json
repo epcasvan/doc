@@ -97,11 +97,13 @@
     },
     {
       "level": "a2",
+      "number": "sing",
       "word": "astronaute",
       "sentence": "Noah est astronaute, et Nina nage avec Nolan dans la piscine."
     },
     {
       "level": "b1",
+      "number": "sing",
       "word": "astronaute",
       "sentence": "Nolan veut devenir astronaute, mais Noah et Nina pensent qu’il a un peu peur."
     },
@@ -226,6 +228,7 @@
     },
     {
       "level": "b1",
+      "number": "sing",
       "word": "cadenas",
       "sentence": "Nadia a perdu la clé du cadenas, mais Noah et Nina ne la cherchent pas."
     },
@@ -433,235 +436,283 @@
     {
       "level": "a1",
       "number": "sing",
+      "word": "amazone",
       "sentence": "L’amazone monte un cheval noir."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "leçon",
       "sentence": "Cette amazone nettoie son cheval noir avant la leçon de neuf heures."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "amazone",
       "sentence": "Quand l’amazone nettoie enfin son cheval noir, nous la regardons tous avec admiration."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "ananas",
       "sentence": "Nina mange un ananas bien mûr."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "ananas",
       "sentence": "Nathan coupe un ananas dans la cuisine pour le dessert de dimanche."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "ananas",
       "sentence": "Quand Nina ouvre un ananas, elle sent l’odeur sucrée et goûte une tranche fine."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "animal",
       "sentence": "Un animal noir dort ici."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "nourriture",
       "sentence": "Nina nourrit son animal avec de la nourriture naturelle."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "bouteille",
       "sentence": "Quand Nathan promène son animal, il prend une bouteille d’eau pour la route."
     },
     {
       "level": "a1",
       "number": "plur",
+      "word": "animaux",
       "sentence": "Les animaux dorment la nuit."
     },
     {
       "level": "a2",
       "number": "plur",
+      "word": "animaux",
       "sentence": "Nina nourrit les animaux de la ferme tous les jeudis matin."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "ferme",
       "sentence": "Quand Nathan visite la ferme, il nourrit les animaux et caresse le nouveau veau."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "annexe",
       "sentence": "Nina travaille dans l’annexe nord."
     },
     {
       "level": "a2",
       "number": "plur",
+      "word": "anciens",
       "sentence": "Nathan range les anciens dossiers dans l’annexe du bâtiment numéro neuf."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "bureau",
       "sentence": "Comme le bureau est trop petit, Nina installe une nouvelle imprimante dans l’annexe."
     },
     {
       "level": "a1",
+      "word": "Nina",
       "sentence": "Nina est astronaute à Houston."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "navette",
       "sentence": "Cet astronaute prend une navette pour aller sur la station."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "astronaute",
       "sentence": "Quand l’astronaute revient sur Terre, la planète lui semble minuscule, mais aussi nouvelle."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "aubergine",
       "sentence": "Nina mange une aubergine noire."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "aubergine",
       "sentence": "Nathan prépare une aubergine au four pour dîner avec Nina."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "aubergine",
       "sentence": "Quand l’aubergine est noire, Nina la nettoie et la cuisine dans une poêle."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "baleine",
       "sentence": "La baleine nage dans l’océan."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "baleine",
       "sentence": "Nina photographie une baleine bleue près d’une île de Norvège."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "baleine",
       "sentence": "Quand une baleine nage près du bateau, Nathan retient son souffle et ne bouge plus."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "banane",
       "sentence": "Nina mange une banane mûre."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "banane",
       "sentence": "Nathan coupe une banane dans son bol de céréales."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "banane",
       "sentence": "Quand Nina a faim, elle mange une banane et boit un thé noir."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "bonnet",
       "sentence": "Nina porte un bonnet noir."
     },
     {
       "level": "a2",
+      "word": "Nathan",
       "sentence": "Nathan met son bonnet de laine quand il neige en janvier."
     },
     {
       "level": "b1",
+      "word": "Comme",
       "sentence": "Comme il neige, Nina met son bonnet et ses gants pour ne pas avoir froid."
     },
     {
       "level": "a1",
+      "word": "Nina",
       "sentence": "Nina met ses bottines noires."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "brosse",
       "sentence": "Nathan nettoie ses bottines avec une brosse avant la randonnée."
     },
     {
       "level": "b1",
+      "word": "Quand",
       "sentence": "Quand il pleut, Nina enfile ses bottines pour ne pas mouiller ses chaussettes neuves."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "brownie",
       "sentence": "Nina mange un brownie noir."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "brownie",
       "sentence": "Nathan prépare un brownie au chocolat noir pour l’anniversaire de Nina."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "brownie",
       "sentence": "Quand le brownie sort du four, Nina ne résiste pas, même si Nathan dit non."
     },
     {
       "level": "a1",
+      "word": "Nina",
       "sentence": "Nina ferme son cadenas noir."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "cadenas",
       "sentence": "Nathan met un cadenas neuf sur la porte du garage de Nina."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "cadenas",
       "sentence": "Comme le cadenas est bloqué, Nina ne peut pas ouvrir sa nouvelle valise."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "canard",
       "sentence": "Le canard nage dans la rivière."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "bord",
       "sentence": "Nina donne du pain au canard sur le bord de l’étang."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "canard",
       "sentence": "Quand le canard nage, Nathan ne bouge plus du tout pour ne pas l’effrayer."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "canari",
       "sentence": "Nina a un canari jaune."
     },
     {
       "level": "a2",
       "number": "plur",
+      "word": "graines",
       "sentence": "Nathan donne des graines au canari de Nina chaque matin."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "canari",
       "sentence": "Quand le canari jaune chante, Nina ne fait aucun bruit parce qu’elle l’écoute."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "canyon",
       "sentence": "Nina visite un canyon profond."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "canyon",
       "sentence": "Nathan descend dans le canyon avec une corde et des chaussures neuves."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "nature",
       "sentence": "Comme Nathan aime la nature, il descend dans le canyon avec une carte."
     }
   ],

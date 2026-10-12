@@ -5,9 +5,12 @@ import { displayVocabLabel } from '@/francais/display-vocab-label'
 
 export type SoutienPhraseNumber = 'sing' | 'plur'
 
-/** L’/l’ collé au nom ; le/la/les/un/une/des + espace. */
+/**
+ * Premier déterminant + nom.
+ * Groupes : 1=L’/l’, 2=nom collé | 3=le/la/les/un/une/des, 4=nom.
+ */
 const DET_RE =
-  /(?:^|[\s«"'‘’(])(([Ll]['’])(\p{L}[\p{L}'’-]*)|(([Ll]es|[Ll]e|[Ll]a|[Uu]ne|[Uu]n|[Dd]es))\s+(\p{L}[\p{L}'’-]*))/gu
+  /(?:^|[\s«"'‘’(])(?:([Ll]['’])(\p{L}[\p{L}'’-]*)|([Ll]es|[Ll]e|[Ll]a|[Uu]ne|[Uu]n|[Dd]es)\s+(\p{L}[\p{L}'’-]*))/gu
 
 function escapeRe(s: string): string {
   return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
@@ -51,6 +54,15 @@ export function inferNumberForWordPhrase(
   return numberFromDet(hit.det, hit.nounForm, word)
 }
 
+/** Premier nom précédé d’un déterminant (pour aligner la syntaxe type 12 sur type 9). */
+export function inferFirstNoun(sentence: string): string | undefined {
+  DET_RE.lastIndex = 0
+  const m = DET_RE.exec(sentence)
+  if (!m) return undefined
+  const noun = (m[2] ?? m[4])?.trim()
+  return noun || undefined
+}
+
 /**
  * Infère sing/plur pour une phrase sans mot cible :
  * premier déterminant de la phrase (Les… → plur, sinon sing si trouvé).
@@ -59,7 +71,7 @@ export function inferNumberForSentence(sentence: string): SoutienPhraseNumber | 
   DET_RE.lastIndex = 0
   const m = DET_RE.exec(sentence)
   if (!m) return undefined
-  const det = (m[2] ?? m[4])!
+  const det = (m[1] ?? m[3])!
   if (/^(les|des)$/i.test(det)) return 'plur'
   return 'sing'
 }

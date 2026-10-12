@@ -86,6 +86,7 @@
     },
     {
       "level": "b1",
+      "number": "sing",
       "word": "avoine",
       "sentence": "Benoît voit trois sacs d’avoine, mais Antoine et Françoise nourrissent déjà le cheval noir."
     },
@@ -134,6 +135,7 @@
     },
     {
       "level": "b1",
+      "number": "sing",
       "word": "bois",
       "sentence": "Benoît coupe du bois pour Antoine, mais Françoise voit trois arbres noirs dans le froid."
     },
@@ -185,6 +187,7 @@
     },
     {
       "level": "b1",
+      "number": "sing",
       "word": "choisir",
       "sentence": "Benoît doit choisir trois films, mais Antoine et Françoise voient déjà le noir ce soir."
     },
@@ -247,11 +250,13 @@
     },
     {
       "level": "a2",
+      "number": "sing",
       "word": "comptoire",
       "sentence": "Françoise pose trois verres sur le comptoir de Benoît."
     },
     {
       "level": "b1",
+      "number": "sing",
       "word": "comptoire",
       "sentence": "Benoît essuie le comptoir noir, mais Antoine et Françoise voient trois verres ce soir."
     },
@@ -281,6 +286,7 @@
     },
     {
       "level": "a2",
+      "number": "sing",
       "word": "croix",
       "sentence": "Françoise fait trois croix sur la carte de Benoît."
     },
@@ -369,11 +375,13 @@
     },
     {
       "level": "a2",
+      "number": "plur",
       "word": "froid",
       "sentence": "Françoise a froid dans les bras de Benoît ce soir."
     },
     {
       "level": "b1",
+      "number": "sing",
       "word": "froid",
       "sentence": "Benoît a froid, mais Antoine et Françoise voient trois couvertures noires dans l’armoire."
     },
@@ -417,234 +425,282 @@
     {
       "level": "a1",
       "number": "sing",
+      "word": "ardoise",
       "sentence": "Françoise écrit sur l’ardoise noire."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "ardoise",
       "sentence": "Benoît écrit trois mots sur l’ardoise avec une craie blanche."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "ardoise",
       "sentence": "Quand Françoise efface l’ardoise, elle voit trois mots noirs et sourit avec joie."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "armoire",
       "sentence": "Antoine ouvre l’armoire de Benoît."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "armoire",
       "sentence": "Françoise range trois boîtes dans l’armoire de la chambre de Benoît."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "armoire",
       "sentence": "Quand Antoine ouvre l’armoire, il voit trois vestes et choisit toujours la noire."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "arrosoir",
       "sentence": "Françoise remplit l’arrosoir noir ce soir."
     },
     {
       "level": "a2",
       "number": "plur",
+      "word": "fleurs",
       "sentence": "Antoine arrose les fleurs avec l’arrosoir trois fois par mois."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "terre",
       "sentence": "Quand Benoît voit la terre sèche, il prend l’arrosoir et arrose trois fois."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "astéroïde",
       "sentence": "Benoît voit un astéroïde ce soir."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "astéroïde",
       "sentence": "Françoise regarde l’astéroïde trois fois dans le noir avec Antoine."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "astéroïde",
       "sentence": "Quand l’astéroïde passe dans le noir, Benoît voit la lumière et Françoise a froid."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "baignoire",
       "sentence": "Françoise remplit la baignoire ce soir."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "baignoire",
       "sentence": "Antoine met trois jouets dans la baignoire de Benoît."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "eau",
       "sentence": "Quand l’eau est froide, Françoise sort de la baignoire et prend une serviette noire."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "boisson",
       "sentence": "Antoine boit une boisson froide."
     },
     {
       "level": "a2",
+      "word": "Françoise",
       "sentence": "Françoise sert trois boissons chaudes à Benoît ce soir."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "boisson",
       "sentence": "Quand il a soif, Benoît choisit une boisson froide et boit trois verres."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "boîte",
       "sentence": "Antoine ouvre la boîte noire."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "boîte",
       "sentence": "Françoise trouve trois jouets dans la boîte de Benoît."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "boîte",
       "sentence": "Quand Benoît ouvre la boîte, il voit trois bonbons noirs et Antoine lui dit merci."
     },
     {
       "level": "a1",
+      "word": "Françoise",
       "sentence": "Françoise fait trois choix ce soir."
     },
     {
       "level": "a2",
+      "word": "Antoine",
       "sentence": "Antoine hésite sur son choix de voiture noire pour Benoît."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "noire",
       "sentence": "Quand Françoise voit trois robes, elle fait son choix et prend la noire."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "coiffeuse",
       "sentence": "La coiffeuse de Françoise voit trois clients."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "coiffeuse",
       "sentence": "La coiffeuse de Benoît voit Antoine trois fois par mois."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "coiffeuse",
       "sentence": "Quand la coiffeuse a fini, Françoise voit son visage dans le miroir avec joie."
     },
     {
       "level": "a1",
+      "word": "Antoine",
       "sentence": "Antoine boit au comptoir ce soir."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "comptoir",
       "sentence": "Françoise pose trois verres sur le comptoir pour Benoît."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "café",
       "sentence": "Quand Benoît entre dans le café, il voit déjà trois clients au comptoir."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "croissant",
       "sentence": "Antoine mange un croissant à trois heures."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "boulangerie",
       "sentence": "Françoise achète trois croissants pour Benoît à la boulangerie."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "croissant",
       "sentence": "Quand Benoît a faim, il mange un croissant et boit du lait froid."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "croix",
       "sentence": "Antoine voit une croix noire."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "feuille",
       "sentence": "Françoise dessine trois croix sur la feuille de Benoît."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "croix",
       "sentence": "Quand Benoît voit la croix sur le toit, il sait que le village est proche."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "doigt",
       "sentence": "Antoine lève le doigt trois fois."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "voiture",
       "sentence": "Françoise montre du doigt la voiture noire de Benoît."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "doigt",
       "sentence": "Quand Benoît pointe le doigt vers le toit, tout le monde voit la croix noire."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "entonnoir",
       "sentence": "Antoine prend un entonnoir noir."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "huile",
       "sentence": "Françoise verse l’huile dans la bouteille avec un entonnoir pour Benoît."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "bouteille",
       "sentence": "Quand Benoît remplit la bouteille, il prend l’entonnoir noir et verse trois litres."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "framboise",
       "sentence": "Antoine mange une framboise noire."
     },
     {
       "level": "a2",
+      "word": "Françoise",
       "sentence": "Françoise achète trois pots de framboises pour Benoît."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "framboise",
       "sentence": "Quand Benoît cueille une framboise, il en voit trois autres et les mange avec joie."
     },
     {
       "level": "a1",
+      "word": "Antoine",
       "sentence": "Antoine a froid ce soir."
     },
     {
       "level": "a2",
+      "word": "Il",
       "sentence": "Il fait froid, Françoise met trois vestes noires."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "plus",
       "sentence": "Quand il fait froid, Benoît voit trois pulls noirs et choisit le plus chaud."
     }
   ],

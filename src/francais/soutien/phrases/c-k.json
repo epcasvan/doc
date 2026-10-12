@@ -38,16 +38,19 @@
     },
     {
       "level": "a1",
+      "number": "sing",
       "word": "acrylique",
       "sentence": "Camille utilise de la peinture acrylique."
     },
     {
       "level": "a2",
+      "number": "sing",
       "word": "acrylique",
       "sentence": "Carole colle un carton avec de la peinture acrylique."
     },
     {
       "level": "b1",
+      "number": "sing",
       "word": "acrylique",
       "sentence": "Colette peint son cadre avec de la peinture acrylique, puis Claude colle un carton."
     },
@@ -200,11 +203,13 @@
     },
     {
       "level": "a2",
+      "number": "sing",
       "word": "basilic",
       "sentence": "Colette cultive du basilic dans un coin calme du balcon."
     },
     {
       "level": "b1",
+      "number": "sing",
       "word": "basilic",
       "sentence": "Claude cueille du basilic pour la salade, puis Camille coupe les carottes avec Colette."
     },
@@ -222,6 +227,7 @@
     },
     {
       "level": "b1",
+      "number": "sing",
       "word": "bicyclette",
       "sentence": "Claude cherche sa bicyclette, mais Camille croit qu’elle est dans la cave."
     },
@@ -245,16 +251,19 @@
     },
     {
       "level": "a1",
+      "number": "sing",
       "word": "blanc",
       "sentence": "Camille porte un pull blanc."
     },
     {
       "level": "a2",
+      "number": "sing",
       "word": "blanc",
       "sentence": "Colette colle un papier blanc sur le carton de Camille."
     },
     {
       "level": "b1",
+      "number": "sing",
       "word": "blanc",
       "sentence": "Claude a acheté un cahier blanc pour Camille, mais Colette préfère le carnet beige."
     },
@@ -278,16 +287,19 @@
     },
     {
       "level": "a1",
+      "number": "plur",
       "word": "boucles d'oreilles",
       "sentence": "Camille porte des boucles d’oreilles."
     },
     {
       "level": "a2",
+      "number": "plur",
       "word": "boucles d'oreilles",
       "sentence": "Colette achète des boucles d’oreilles en cuivre pour Camille."
     },
     {
       "level": "b1",
+      "number": "plur",
       "word": "boucles d'oreilles",
       "sentence": "Claude cherche les boucles d’oreilles de Camille, mais Carole les a cachées."
     },
@@ -305,6 +317,7 @@
     },
     {
       "level": "b1",
+      "number": "plur",
       "word": "brocoli",
       "sentence": "Claude cuisine du brocoli et des carottes, puis Camille cuit des courgettes avec Colette."
     },
@@ -334,6 +347,7 @@
     },
     {
       "level": "a2",
+      "number": "sing",
       "word": "cadenas",
       "sentence": "Colette cherche la clé du cadenas de Camille dans le coffre."
     },
@@ -374,6 +388,7 @@
     },
     {
       "level": "b1",
+      "number": "sing",
       "word": "cahier",
       "sentence": "Claude écrit dans son cahier de classe, mais Camille copie le calcul de Colette."
     },
@@ -417,238 +432,286 @@
     {
       "level": "a1",
       "number": "sing",
+      "word": "cousin",
       "sentence": "Le cousin mange un abricot."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "jus",
       "sentence": "Au café, Camille commande un jus d’abricot et un croissant."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "docteur",
       "sentence": "Comme le docteur conseille de manger des fruits, Caroline achète un kilo d’abricots."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "accordéon",
       "sentence": "Colin joue de l’accordéon au café."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "accordéon",
       "sentence": "Mon cousin Marc joue de l’accordéon dans un café."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "accordéon",
       "sentence": "Quand Camille écoute l’accordéon, elle chante avec le cœur et tape dans ses mains."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "peinture",
       "sentence": "Carole achète de la peinture acrylique."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "peinture",
       "sentence": "Au cours de dessin, Colette utilise de la peinture acrylique."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "peinture",
       "sentence": "Comme la peinture acrylique sèche vite, Claude couvre la palette avec un couvercle."
     },
     {
       "level": "a1",
+      "word": "Cette",
       "sentence": "Cette activité est très calme."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "cuisine",
       "sentence": "Notre activité préférée au camping, c’est la cuisine sur le feu."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "activité",
       "sentence": "Quand il fait beau, Colin choisit une activité qu’il connaît bien, comme le vélo."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "film",
       "sentence": "Carine est actrice dans un film."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "actrice",
       "sentence": "L’actrice répète son rôle dans un costume de cuir."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "comédie",
       "sentence": "Quand cette actrice joue dans une comédie, le public crie de joie et applaudit."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "Valais",
       "sentence": "Carole est agricultrice dans le Valais."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "agricultrice",
       "sentence": "L’agricultrice cultive des carottes et des courgettes dans son champ."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "agricultrice",
       "sentence": "Quand l’agricultrice conduit son tracteur, elle écoute la radio et coupe toute l’herbe."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "arc",
       "sentence": "L’arc est dans le sac."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "garçon",
       "sentence": "Le garçon tire à l’arc dans le parc avec son cousin."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "arc",
       "sentence": "Comme Corentin tire à l’arc, il regarde la cible avec beaucoup de calme."
     },
     {
       "level": "a1",
+      "word": "Corinne",
       "sentence": "Corinne est architecte à Sion."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "architecte",
       "sentence": "L’architecte dessine un plan pour la nouvelle école du canton."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "client",
       "sentence": "Parce que le client veut une cuisine claire, l’architecte change complètement le plan."
     },
     {
       "level": "a1",
+      "word": "Mon",
       "sentence": "Mon cousin est avocat à Sierre."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "avocat",
       "sentence": "L’avocat prépare un dossier pour un client dans son cabinet."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "client",
       "sentence": "Quand le client a un problème, il consulte un avocat qui connaît bien la loi."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "avocate",
       "sentence": "L’avocate parle au client calmement."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "grand",
       "sentence": "Ma cousine est avocate et elle travaille dans un grand cabinet."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "avocate",
       "sentence": "Comme l’avocate connaît bien le dossier, elle explique tout au client avec calme."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "banc",
       "sentence": "Le banc du parc est cassé."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "banc",
       "sentence": "Mon copain Marc s’assoit sur le banc devant la cabane."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "parc",
       "sentence": "Comme le parc est calme, Colin boit tranquillement un café sur le banc."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "basilic",
       "sentence": "Le basilic sent bon dans la cuisine."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "cuisine",
       "sentence": "Dans la cuisine, Claude coupe le basilic pour la salade de tomates."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "met",
       "sentence": "Comme Colette cuisine du poulet, elle coupe du basilic et le met dans la casserole."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "bicyclette",
       "sentence": "Carole a une bicyclette rouge."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "garage",
       "sentence": "Mon copain Marc répare sa bicyclette dans le garage."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "campagne",
       "sentence": "Comme Camille aime la campagne, elle prend sa bicyclette quand il fait beau."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "biscuit",
       "sentence": "Le biscuit est dans le sac."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "biscuit",
       "sentence": "Mon copain mange un biscuit au chocolat avec un café."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "pique-nique",
       "sentence": "Quand nous faisons un pique-nique, mon cousin apporte toujours des biscuits secs et du cola."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "canard",
       "sentence": "Le canard blanc nage dans le lac."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "pantalon",
       "sentence": "Colin porte un pantalon blanc et un joli collier de coquillages."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "neige",
       "sentence": "Quand la neige couvre le parc, tout devient blanc et calme comme dans un conte."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "bocal",
       "sentence": "Le bocal est sur le comptoir."
     },
     {
       "level": "a2",
       "number": "plur",
+      "word": "cornichons",
       "sentence": "Colette range des cornichons dans un bocal au fond du placard."
     },
     {
       "level": "b1",
       "number": "plur",
+      "word": "confitures",
       "sentence": "Comme Carole aime les confitures, elle remplit un bocal avec des fraises cueillies hier."
     }
   ],

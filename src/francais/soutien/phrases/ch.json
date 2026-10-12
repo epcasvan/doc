@@ -185,11 +185,13 @@
     },
     {
       "level": "a2",
+      "number": "sing",
       "word": "bucheron",
       "sentence": "Le bûcheron Charles coupe un chêne chez Chantal et Chloé."
     },
     {
       "level": "b1",
+      "number": "sing",
       "word": "bucheron",
       "sentence": "Chantal cherche un bûcheron, mais Charles et Chloé coupent déjà le chêne de Rachel."
     },
@@ -206,6 +208,7 @@
     },
     {
       "level": "b1",
+      "number": "sing",
       "word": "capuchon",
       "sentence": "Chantal cherche son capuchon, mais Charles et Chloé ont déjà le chapeau de Rachel."
     },
@@ -311,6 +314,7 @@
     },
     {
       "level": "b1",
+      "number": "sing",
       "word": "champagne",
       "sentence": "Chantal cherche du champagne, mais Charles et Chloé ont déjà le chocolat de Rachel."
     },
@@ -424,239 +428,287 @@
   "type12": [
     {
       "level": "a1",
+      "word": "Charles",
       "sentence": "Charles est architecte à Chamoson."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "architecte",
       "sentence": "L’architecte cherche un chalet charmant pour Charlotte à Champéry."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "architecte",
       "sentence": "Quand l’architecte change le plan du chalet, Charles cherche le chemin pour le chantier."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "artichaut",
       "sentence": "Charles mange un artichaut chaud."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "artichaut",
       "sentence": "Charlotte cherche un artichaut frais au marché de Chamoson."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "artichaut",
       "sentence": "Quand Charles fait cuire un artichaut, il change l’eau chaude et cherche une sauce."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "autruche",
       "sentence": "L’autruche court dans le champ."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "autruche",
       "sentence": "Charles regarde l’autruche courir dans un grand champ chaud."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "autruche",
       "sentence": "Quand l’autruche cherche de l’eau, elle marche dans le champ sans se cacher."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "bouche",
       "sentence": "Charles ouvre grand la bouche."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "chat",
       "sentence": "Le chat de Charlotte a un biscuit dans la bouche."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "bouche",
       "sentence": "Quand Charles ouvre la bouche, le chat de Charlotte se cache sous une chaise."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "bouchère",
       "sentence": "La bouchère de Charles est chic."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "bouchère",
       "sentence": "La bouchère de Charlotte coupe chaque morceau de viande avec une machine."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "bouchère",
       "sentence": "Quand la bouchère change de couteau, Charles attend et cherche un petit chariot."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "chaise",
       "sentence": "Charles s’assoit sur la chaise."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "chaise",
       "sentence": "Charlotte met son chapeau sur la chaise de la chambre."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "chat",
       "sentence": "Quand le chat dort sur la chaise, Charles cherche une autre place chaude."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "chalet",
       "sentence": "Charles loue un chalet à Champéry."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "chalet",
       "sentence": "Charlotte cherche un chalet charmant près de Champéry pour les vacances."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "cheminée",
       "sentence": "Quand il fait froid, Charles allume la cheminée du chalet et prépare du chocolat chaud."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "chat",
       "sentence": "Le chat court dans le champ."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "champ",
       "sentence": "Charles cherche son chien dans le champ derrière le chalet."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "champ",
       "sentence": "Quand le champ est couvert de neige, Charlotte marche lentement et cherche un chemin sûr."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "champignon",
       "sentence": "Charles cherche un champignon blanc."
     },
     {
       "level": "a2",
       "number": "plur",
+      "word": "champignons",
       "sentence": "Charlotte cherche des champignons dans la forêt avec son chien."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "champignon",
       "sentence": "Quand Charles trouve un champignon, il le cache dans son panier et cherche un chemin."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "chanteuse",
       "sentence": "La chanteuse chante chez Charles."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "château",
       "sentence": "Charlotte est chanteuse et elle chante dans un château."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "chanteuse",
       "sentence": "Quand la chanteuse arrive, Charles applaudit et cherche une place pour la chanson."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "chapeau",
       "sentence": "Charles porte un chapeau chic."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "chapeau",
       "sentence": "Charlotte achète un chapeau chaud pour la marche de dimanche."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "vent",
       "sentence": "Quand le vent souffle, Charles tient son chapeau et cherche un endroit chaud."
     },
     {
       "level": "a1",
+      "word": "Charles",
       "sentence": "Charles cherche son chargeur chez Charlotte."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "chargeur",
       "sentence": "Charlotte branche le chargeur dans la chambre avant de chanter."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "chargeur",
       "sentence": "Comme le chargeur de Charles ne marche plus, il cherche une machine chez le marchand."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "charpentière",
       "sentence": "La charpentière cherche son chat."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "chalet",
       "sentence": "Charlotte est charpentière et elle construit un chalet à Champéry."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "charpentière",
       "sentence": "Quand la charpentière arrive au chantier, elle cherche ses outils et change de chaussures."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "chat",
       "sentence": "Le chat dort chez Charles."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "chaise",
       "sentence": "Charlotte cherche son chat sous la chaise de la chambre."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "chat",
       "sentence": "Quand le chat a chaud, il cherche un coin frais près de la chaise."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "châtaignier",
       "sentence": "Charles plante un châtaignier chez nous."
     },
     {
       "level": "a2",
       "number": "plur",
+      "word": "châtaignes",
       "sentence": "Charlotte cherche des châtaignes sous le châtaignier près du chalet."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "châtaignier",
       "sentence": "Quand le châtaignier perd ses feuilles, Charles ramasse les châtaignes et les fait cuire chaudes."
     },
     {
       "level": "a1",
+      "word": "Il",
       "sentence": "Il fait chaud chez Charles."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "chocolat",
       "sentence": "Charlotte boit un chocolat chaud dans le chalet de Champéry."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "coin",
       "sentence": "Quand il fait chaud, Charles cherche un coin frais et boit une boisson fraîche."
     }
   ],

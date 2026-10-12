@@ -83,6 +83,7 @@
     },
     {
       "level": "b1",
+      "number": "sing",
       "word": "ami",
       "sentence": "Mon ami Maxime a mis du miel dans mon thé, mais Manon préfère le citron."
     },
@@ -206,6 +207,7 @@
     },
     {
       "level": "b1",
+      "number": "sing",
       "word": "chemise",
       "sentence": "Maxime met sa chemise mauve, mais Manon et Mia préfèrent la mettre demain matin."
     },
@@ -223,6 +225,7 @@
     },
     {
       "level": "b1",
+      "number": "sing",
       "word": "chronomètre",
       "sentence": "Maxime mesure le temps au chronomètre, mais Manon et Mia comptent à la main."
     },
@@ -328,6 +331,7 @@
     },
     {
       "level": "b1",
+      "number": "sing",
       "word": "dimanche",
       "sentence": "Maxime mange chez Manon dimanche, mais Mia préfère rester à la maison avec Mélanie."
     },
@@ -362,6 +366,7 @@
     },
     {
       "level": "b1",
+      "number": "sing",
       "word": "dynamite",
       "sentence": "Maxime lit une histoire de dynamite, mais Manon et Mia préfèrent le film de mercredi."
     },
@@ -424,237 +429,285 @@
     {
       "level": "a1",
       "number": "sing",
+      "word": "alimentation",
       "sentence": "Ma mère a une alimentation saine."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "alimentation",
       "sentence": "Mon frère Marc choisit une alimentation simple avec beaucoup de fruits."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "alimentation",
       "sentence": "Comme Marie fait du sport, elle mange une alimentation équilibrée avec des fruits."
     },
     {
       "level": "a1",
       "number": "plur",
+      "word": "aliments",
       "sentence": "Maman achète les aliments au marché."
     },
     {
       "level": "a2",
       "number": "plur",
+      "word": "aliments",
       "sentence": "Mathieu mélange les aliments dans un grand plat avec une cuillère."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "marché",
       "sentence": "Quand Margot fait le marché, elle choisit des aliments frais pour mieux manger."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "lampe",
       "sentence": "Maman allume la lampe avec une allumette."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "allumette",
       "sentence": "Marc craque une allumette pour éclairer la cave et mieux voir."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "bougie",
       "sentence": "Quand Mathilde manque d’électricité, elle allume la bougie avec une allumette et attend."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "amazone",
       "sentence": "Mathilde est une amazone à Martigny."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "manège",
       "sentence": "Cette amazone monte son cheval chaque matin dans le manège de Monthey."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "amazone",
       "sentence": "Quand l’amazone monte, elle met son casque parce que le moindre accident est grave."
     },
     {
       "level": "a1",
+      "word": "Mon",
       "sentence": "Mon ami habite à Martigny."
     },
     {
       "level": "a2",
       "number": "plur",
+      "word": "mercredis",
       "sentence": "Mon meilleur ami Marc me téléphone tous les mercredis soir."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "musique",
       "sentence": "Quand mon ami Mathieu vient chez moi, nous mangeons ensemble et faisons de la musique."
     },
     {
       "level": "a1",
+      "word": "Mon",
       "sentence": "Mon animal préféré s’appelle Max."
     },
     {
       "level": "a2",
       "number": "plur",
+      "word": "morceaux",
       "sentence": "Mon animal mange du maïs et des morceaux de pomme le matin."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "caresse",
       "sentence": "Comme Marie aime son animal, elle le caresse matin et soir et lui parle doucement."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "maison",
       "sentence": "Mes animaux dorment dans la maison."
     },
     {
       "level": "a2",
+      "word": "Marie",
       "sentence": "Marie nourrit ses animaux chaque matin avec du maïs et du foin."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "ferme",
       "sentence": "Quand Mathieu visite la ferme, il montre les animaux à tous ses amis."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "armoire",
       "sentence": "L’armoire est dans ma chambre."
     },
     {
       "level": "a2",
       "number": "plur",
+      "word": "vêtements",
       "sentence": "Maman range les vêtements dans la grande armoire de la chambre."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "armoire",
       "sentence": "Quand Marc déménage, il démonte l’armoire pour mieux la mettre dans le camion."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "camion",
       "sentence": "Le camion de Marc est ici."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "camion",
       "sentence": "Marc conduit le camion à Monthey tous les mardis matin."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "camion",
       "sentence": "Quand le camion tombe en panne, Mathieu appelle le mécanicien et attend tranquillement."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "caméléon",
       "sentence": "Max regarde un caméléon au zoo."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "caresse",
       "sentence": "Mon caméléon change de couleur quand Marie le caresse."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "caméléon",
       "sentence": "Comme le caméléon change de couleur, même Marc ne le remarque pas dans les feuilles."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "feu",
       "sentence": "Maman allume le feu dans la cheminée."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "bûche",
       "sentence": "Mathieu met une bûche dans la cheminée pour mieux chauffer la maison."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "cheminée",
       "sentence": "Quand il fait froid, nous allumons la cheminée et mangeons des marrons chauds."
     },
     {
       "level": "a1",
+      "word": "Marc",
       "sentence": "Marc met sa chemise grise."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "chemise",
       "sentence": "Mathilde repasse la chemise de Marc avant la réunion du mercredi."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "autre",
       "sentence": "Comme Marc a taché sa chemise, il en met une autre avant de monter."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "chronomètre",
       "sentence": "Marc lance le chronomètre du match."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "coach",
       "sentence": "Le coach de Mathieu arrête le chronomètre à la minute exacte."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "marathon",
       "sentence": "Quand Marie court le marathon, elle regarde son chronomètre pour mieux mesurer le temps."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "chrysanthème",
       "sentence": "Maman offre un chrysanthème à Mamie."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "chrysanthème",
       "sentence": "En automne, Marie plante un chrysanthème jaune dans le massif."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "chrysanthème",
       "sentence": "Quand le chrysanthème fleurit en automne, Mathilde le met près de la maison."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "climatiseur",
       "sentence": "Le climatiseur marche très bien."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "climatiseur",
       "sentence": "Marc met le climatiseur en marche parce qu’il fait chaud."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "climatiseur",
       "sentence": "Quand le climatiseur tombe en panne, Mathieu met un ventilateur dans la maison."
     },
     {
       "level": "a1",
       "number": "sing",
+      "word": "clémentine",
       "sentence": "Maman mange une clémentine mûre."
     },
     {
       "level": "a2",
       "number": "sing",
+      "word": "clémentine",
       "sentence": "Mathilde épluche une clémentine et la partage avec Marc."
     },
     {
       "level": "b1",
       "number": "sing",
+      "word": "clémentine",
       "sentence": "Quand Marc a faim à midi, il mange une clémentine, mais Maman préfère une mandarine."
     }
   ],
