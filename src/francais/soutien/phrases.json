@@ -55,12 +55,21 @@
           ]
         },
         {
+          "son": "e",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "L’abeille se pose sur la fleur."
+          ]
+        },
+        {
           "son": "ill",
           "level": "a1",
           "number": "sing",
           "sentences": [
             "Camille regarde l’abeille avec Cyrille.",
-            "Camille voit une abeille hier."
+            "Camille voit une abeille hier.",
+            "L’abeille se pose sur la fleur."
           ]
         },
         {
@@ -2159,10 +2168,36 @@
       "word": "ami",
       "sounds": [
         {
+          "son": "a",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Je vais goûter et jouer chez mon ami."
+          ]
+        },
+        {
+          "son": "a",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Avec sa moto marron, Matteo va voir son ami Mario.",
+            "Mon ami a construit son avion avec du carton."
+          ]
+        },
+        {
           "son": "an",
           "level": "a1",
           "sentences": [
             "Armand attend son ami maintenant."
+          ]
+        },
+        {
+          "son": "an",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Je vais goûter et jouer chez mon ami.",
+            "Tes amis arrivent tard."
           ]
         },
         {
@@ -2189,9 +2224,25 @@
         },
         {
           "son": "i",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Je vais goûter et jouer chez mon ami."
+          ]
+        },
+        {
+          "son": "i",
           "level": "a2",
           "sentences": [
             "Mon ami Eric habite près de Nice et il visite Lyon."
+          ]
+        },
+        {
+          "son": "i",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Sophie joue du xylophone avec son ami Philippe."
           ]
         },
         {
@@ -2206,6 +2257,14 @@
           "level": "a1",
           "sentences": [
             "Mon ami Maxime mange ici."
+          ]
+        },
+        {
+          "son": "m",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Je vais goûter et jouer chez mon ami."
           ]
         },
         {
@@ -3219,6 +3278,7 @@
           "level": "a1",
           "number": "sing",
           "sentences": [
+            "Koa le koala est dans l’arbre.",
             "L’arbre a beaucoup de branches.",
             "Papa plante un arbre à la gare."
           ]
@@ -3228,6 +3288,7 @@
           "level": "a2",
           "number": "sing",
           "sentences": [
+            "Il entend un pinson chanter dans l'arbre.",
             "Le chat saute dans l’arbre pour attraper un oiseau.",
             "Sara se repose sous l’arbre près de la gare avec Papa."
           ]
@@ -3271,6 +3332,8 @@
           "level": "a1",
           "number": "sing",
           "sentences": [
+            "Le colimaçon est sur l’arbre.",
+            "Le singe grimpe à l’arbre.",
             "Rose grimpe sur l’arbre.",
             "Rose grimpe sur un arbre."
           ]
@@ -3278,8 +3341,17 @@
         {
           "son": "r",
           "level": "a2",
+          "number": "plur",
+          "sentences": [
+            "Au printemps, il y a des bourgeons sur les arbres."
+          ]
+        },
+        {
+          "son": "r",
+          "level": "a2",
           "number": "sing",
           "sentences": [
+            "Il entend un pinson chanter dans l'arbre.",
             "Robert plante un arbre dans le jardin de ses grands-parents.",
             "Romain regarde l’arbre rouge de Rose dans le parc."
           ]
@@ -3936,6 +4008,14 @@
           "sentences": [
             "Charles cherche un artichaut chaud.",
             "Charles mange un artichaut chaud."
+          ]
+        },
+        {
+          "son": "ch",
+          "level": "a2",
+          "number": "plur",
+          "sentences": [
+            "Chantal va au marché pour acheter des choux et des artichauts."
           ]
         },
         {
@@ -5078,6 +5158,7 @@
           "number": "sing",
           "sentences": [
             "Léon montre un avion à Manon près du pont.",
+            "Mon ami a construit son avion avec du carton.",
             "Raymond prend l’avion pour Léon, Simon et Gaston."
           ]
         },
@@ -6012,6 +6093,7 @@
           "level": "a1",
           "number": "sing",
           "sentences": [
+            "Il n’y a pas de baleine dans la Seine.",
             "Martin voit une baleine ce matin."
           ]
         },
@@ -6370,7 +6452,8 @@
           "level": "a2",
           "number": "sing",
           "sentences": [
-            "Barbara pèle une banane pour le bébé de Bastien."
+            "Barbara pèle une banane pour le bébé de Bastien.",
+            "Barnabé, le bébé, mâche un biscuit puis une banane."
           ]
         },
         {
@@ -7005,6 +7088,7 @@
           "level": "a2",
           "number": "sing",
           "sentences": [
+            "Paul s’amuse avec ses autos et ses bateaux.",
             "Pauline monte sur le bateau avec Claude et Laure aujourd’hui.",
             "Pauline prend le bateau au bureau avec Paul et Aurélie."
           ]
@@ -7273,6 +7357,7 @@
           "level": "a2",
           "number": "sing",
           "sentences": [
+            "Papa a acheté un beau vélo violet à Valérie.",
             "Pauline prend un beau château en photo avec son appareil photo."
           ]
         },
@@ -7390,9 +7475,18 @@
         {
           "son": "e",
           "level": "a1",
+          "number": "plur",
+          "sentences": [
+            "Les bébés ne parlent pas."
+          ]
+        },
+        {
+          "son": "e",
+          "level": "a1",
           "number": "sing",
           "sentences": [
-            "Le bébé de René dort."
+            "Le bébé de René dort.",
+            "Le bébé est tombé."
           ]
         },
         {
@@ -7400,7 +7494,9 @@
           "level": "a2",
           "number": "sing",
           "sentences": [
-            "Hélène berce le bébé dans la chambre de René."
+            "Barnabé, le bébé, mâche un biscuit puis une banane.",
+            "Hélène berce le bébé dans la chambre de René.",
+            "Le bébé a la rougeole, il pleure, il gratte ses boutons."
           ]
         },
         {
@@ -7508,10 +7604,20 @@
         },
         {
           "son": "l",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Léon a une belle collection de timbres."
+          ]
+        },
+        {
+          "son": "l",
           "level": "a2",
           "number": "sing",
           "sentences": [
-            "Lucas colle une belle photo dans l’album de la famille."
+            "Elle était plus belle que la vilaine reine.",
+            "Lucas colle une belle photo dans l’album de la famille.",
+            "Mon amie Prune a une belle chevelure brune."
           ]
         }
       ]
@@ -7705,6 +7811,7 @@
           "level": "a1",
           "number": "sing",
           "sentences": [
+            "Benoit boit son biberon.",
             "Léon donne le biberon avec Simon.",
             "Manon donne le biberon à Léon."
           ]
@@ -8260,6 +8367,7 @@
           "level": "a2",
           "number": "sing",
           "sentences": [
+            "Barnabé, le bébé, mâche un biscuit puis une banane.",
             "Julie mange un biscuit sucré avant son cours de musique."
           ]
         },
@@ -8305,7 +8413,8 @@
           "level": "a1",
           "number": "sing",
           "sentences": [
-            "Camille porte un pull blanc."
+            "Camille porte un pull blanc.",
+            "Karim et Dominique ont un kimono blanc."
           ]
         },
         {
@@ -8366,6 +8475,7 @@
           "level": "a2",
           "number": "sing",
           "sentences": [
+            "Le geai bleu est sur la branche du cerisier.",
             "Louis colle le papier bleu sur le mur de Léa."
           ]
         },
@@ -8382,7 +8492,8 @@
           "level": "a1",
           "number": "sing",
           "sentences": [
-            "Luc porte un pull bleu."
+            "Luc porte un pull bleu.",
+            "Ma sœur a un nœud bleu dans les cheveux."
           ]
         },
         {
@@ -8390,7 +8501,8 @@
           "level": "a2",
           "number": "sing",
           "sentences": [
-            "Julie a une jupe bleu foncé et un pull blanc dessus."
+            "Julie a une jupe bleu foncé et un pull blanc dessus.",
+            "Le geai bleu est sur la branche du cerisier."
           ]
         },
         {
@@ -8478,6 +8590,7 @@
           "level": "a2",
           "number": "sing",
           "sentences": [
+            "Mets ton blouson noir et ton pantalon à rayures.",
             "Raymond met un blouson pour Léon, Simon et Gaston."
           ]
         },
@@ -8797,6 +8910,14 @@
         },
         {
           "son": "on",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Mes bonbons sont dans la boîte noire."
+          ]
+        },
+        {
+          "son": "on",
           "level": "b1",
           "number": "sing",
           "sentences": [
@@ -8857,7 +8978,8 @@
           "number": "sing",
           "sentences": [
             "Léon mange un bonbon avec Simon.",
-            "Léon mange un bonbon rond."
+            "Léon mange un bonbon rond.",
+            "Mes bonbons sont dans la boîte noire."
           ]
         },
         {
@@ -9049,6 +9171,14 @@
       "sounds": [
         {
           "son": "n",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Il voit un crapaud au bord de l’eau."
+          ]
+        },
+        {
+          "son": "n",
           "level": "a2",
           "number": "sing",
           "sentences": [
@@ -9103,6 +9233,27 @@
           "number": "sing",
           "sentences": [
             "Didier a peint la porte en bordeaux, mais Daniel dit que Dina préfère le bleu."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "bosse",
+      "sounds": [
+        {
+          "son": "b",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Boris a une bosse à dents."
+          ]
+        },
+        {
+          "son": "o",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Boris a une bosse à dents."
           ]
         }
       ]
@@ -9366,6 +9517,8 @@
           "level": "a2",
           "number": "sing",
           "sentences": [
+            "Le chat de Charles joue avec un bouchon attaché à un fil.",
+            "Le chat joue avec un bouchon puis il se couche sur le coussin.",
             "Raymond ferme le bouchon pour Léon, Simon et Gaston."
           ]
         },
@@ -10039,6 +10192,7 @@
           "number": "sing",
           "sentences": [
             "Guillaume pose la bouteille sur la paille devant sa famille.",
+            "La bouteille est pleine de sirop de groseilles.",
             "Mireille boit la bouteille dans le jardin avec Camille et Cyrille."
           ]
         },
@@ -10278,6 +10432,7 @@
           "level": "a2",
           "number": "sing",
           "sentences": [
+            "Le bébé a la rougeole, il pleure, il gratte ses boutons.",
             "Raymond presse le bouton pour Léon, Simon et Gaston."
           ]
         },
@@ -10440,6 +10595,7 @@
           "level": "a2",
           "number": "sing",
           "sentences": [
+            "Le geai bleu est sur la branche du cerisier.",
             "Mon beau-frère coupe une branche de l’arbre avec une scie."
           ]
         },
@@ -10456,7 +10612,8 @@
           "level": "a2",
           "number": "sing",
           "sentences": [
-            "Chloé coupe la branche de Charles chez Chantal."
+            "Chloé coupe la branche de Charles chez Chantal.",
+            "Le geai bleu est sur la branche du cerisier."
           ]
         },
         {
@@ -10465,6 +10622,19 @@
           "number": "sing",
           "sentences": [
             "Chantal cherche une branche, mais Charles et Chloé grimpent déjà sur l’arche de Rachel."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "bras",
+      "sounds": [
+        {
+          "son": "a",
+          "level": "a1",
+          "number": "plur",
+          "sentences": [
+            "Tu lèves la tête et les bras."
           ]
         }
       ]
@@ -10584,6 +10754,14 @@
       "word": "briquet",
       "sounds": [
         {
+          "son": "e",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Je ne te permets pas de prendre le briquet."
+          ]
+        },
+        {
           "son": "i",
           "level": "a1",
           "number": "sing",
@@ -10648,7 +10826,8 @@
           "level": "a2",
           "number": "sing",
           "sentences": [
-            "Chloé cherche un brochet dans la rivière avec Charles et Chantal."
+            "Chloé cherche un brochet dans la rivière avec Charles et Chantal.",
+            "J’ai pêché trois brochets, je les mets dans le filet."
           ]
         },
         {
@@ -11397,6 +11576,19 @@
       ]
     },
     {
+      "word": "cabane",
+      "sounds": [
+        {
+          "son": "a",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Sabine a bâti une cabane."
+          ]
+        }
+      ]
+    },
+    {
       "word": "cabine",
       "sounds": [
         {
@@ -11805,6 +11997,14 @@
         },
         {
           "son": "e",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Ouvrez vos cahiers et écrivez la date."
+          ]
+        },
+        {
+          "son": "e",
           "level": "a2",
           "number": "plur",
           "sentences": [
@@ -11817,6 +12017,19 @@
           "number": "plur",
           "sentences": [
             "Stéphane a rendu les cahiers aux élèves, mais René a oublié le sien."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "caille",
+      "sounds": [
+        {
+          "son": "ill",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "La caille dort dans la paille."
           ]
         }
       ]
@@ -12163,6 +12376,7 @@
           "level": "a2",
           "number": "sing",
           "sentences": [
+            "À la campagne, les vignes sont plantées en ligne.",
             "Laurent passe ses vacances à la campagne avec ses enfants."
           ]
         },
@@ -12188,6 +12402,7 @@
           "level": "a2",
           "number": "sing",
           "sentences": [
+            "À la campagne, les vignes sont plantées en ligne.",
             "Ignace aime la campagne dans la campagne avec Agnès."
           ]
         },
@@ -12279,6 +12494,7 @@
           "level": "a1",
           "number": "sing",
           "sentences": [
+            "Le canard nage à côté du canot.",
             "Le canard nage dans la mare."
           ]
         },
@@ -12287,6 +12503,14 @@
           "level": "a2",
           "sentences": [
             "Ce canard attend du pain, il a faim."
+          ]
+        },
+        {
+          "son": "a",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Rémi et Marie se promènent près de la mare aux canards."
           ]
         },
         {
@@ -12384,6 +12608,32 @@
           "sentences": [
             "Nadia nourrit un canari noir, mais Noah et Nina n’aiment pas son chant nocturne.",
             "Quand le canari jaune chante, Nina ne fait aucun bruit parce qu’elle l’écoute."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "caneton",
+      "sounds": [
+        {
+          "son": "a",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "La cane et le caneton nagent sur le lac."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "caniche",
+      "sounds": [
+        {
+          "son": "ch",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "La nuit, Nini le caniche dort près de sa niche."
           ]
         }
       ]
@@ -12499,6 +12749,19 @@
           "number": "sing",
           "sentences": [
             "Chantal cherche son capuchon, mais Charles et Chloé ont déjà le chapeau de Rachel."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "caramel",
+      "sounds": [
+        {
+          "son": "c-k",
+          "level": "a2",
+          "number": "plur",
+          "sentences": [
+            "Mercredi, nous ferons des caramels dans un moule en fer."
           ]
         }
       ]
@@ -12981,6 +13244,19 @@
       ]
     },
     {
+      "word": "cave",
+      "sounds": [
+        {
+          "son": "a",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Les rats se cachent à la cave."
+          ]
+        }
+      ]
+    },
+    {
       "word": "Ce",
       "sounds": [
         {
@@ -12992,9 +13268,33 @@
         },
         {
           "son": "c-s",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Ce gryphon a une queue de serpent.",
+            "Ce matin, le réveil a sonné très tôt.",
+            "Ce tableau est une merveille.",
+            "Ces opérations sont difficiles.",
+            "Que ce film est ennuyeux !"
+          ]
+        },
+        {
+          "son": "c-s",
           "level": "a2",
           "sentences": [
             "Ce casque est obligatoire pour circuler à vélo dans cette ville."
+          ]
+        },
+        {
+          "son": "c-s",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Ce matin, il gèle, nous ne sortirons pas.",
+            "Ce matin, Pimpin le lapin saute et court dans le jardin.",
+            "Ce matin, Youna a balayé la terrasse et essuyé la table du jardin.",
+            "Ce soir, nous mangerons du potage, du gigot avec des girolles.",
+            "Ces sirops guérissent les enfants qui toussent."
           ]
         }
       ]
@@ -13016,6 +13316,14 @@
           "level": "a2",
           "sentences": [
             "Cécile reçoit ce bracelet en argent pour son anniversaire."
+          ]
+        },
+        {
+          "son": "c-s",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Cécile et Cyril achètent une glace au citron."
           ]
         }
       ]
@@ -13127,6 +13435,14 @@
           "level": "a1",
           "sentences": [
             "Céline met ce casque de vélo."
+          ]
+        },
+        {
+          "son": "c-s",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Céline mange des fraises et des framboises."
           ]
         }
       ]
@@ -13604,6 +13920,14 @@
           ]
         },
         {
+          "son": "e",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Le geai bleu est sur la branche du cerisier."
+          ]
+        },
+        {
           "son": "i",
           "level": "a1",
           "number": "sing",
@@ -13819,6 +14143,14 @@
             "Cet exemple exact parle d’oxygène.",
             "Cet exemple exotique est relax."
           ]
+        },
+        {
+          "son": "x-gz",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Cet homme est un grand magicien."
+          ]
         }
       ]
     },
@@ -13863,6 +14195,23 @@
           "level": "a1",
           "sentences": [
             "Cette activité est très utile."
+          ]
+        },
+        {
+          "son": "t",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Attention, cette plante est du poison !",
+            "Cette peinture est une merveille."
+          ]
+        },
+        {
+          "son": "t",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Cette nuit, il a neigé, nous pourrons faire de la luge."
           ]
         },
         {
@@ -14183,7 +14532,8 @@
           "number": "sing",
           "sentences": [
             "Agnès cueille un champignon dans la vigne près de la montagne.",
-            "Ignace cueille un champignon dans la campagne avec Agnès."
+            "Ignace cueille un champignon dans la campagne avec Agnès.",
+            "Je gagne à la loterie un mignon petit champignon."
           ]
         },
         {
@@ -14378,7 +14728,8 @@
           "number": "sing",
           "sentences": [
             "Charles met un chapeau chez Chantal.",
-            "Charles porte un chapeau chic."
+            "Charles porte un chapeau chic.",
+            "Léo le robot a un chapeau jaune."
           ]
         },
         {
@@ -14492,6 +14843,14 @@
             "Charles cherche son chargeur chez Charlotte.",
             "Charles est architecte à Chamoson."
           ]
+        },
+        {
+          "son": "ch",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Le chat de Charles joue avec un bouchon attaché à un fil."
+          ]
         }
       ]
     },
@@ -14573,8 +14932,15 @@
           "level": "a1",
           "number": "sing",
           "sentences": [
+            "La chatte va sur le tapis.",
             "Le chat a mal à la patte.",
-            "Sara voit le chat à la gare."
+            "Le chat est sur le tapis violet.",
+            "Le chat et la chatte sont sur le tapis.",
+            "Le rat a vu le chat et il a fui.",
+            "Rachat le chat ne l’a pas vue.",
+            "Sara voit le chat à la gare.",
+            "Ses chats dorment sur le tapis.",
+            "Un chat a vu un rat sur un mur."
           ]
         },
         {
@@ -14598,10 +14964,21 @@
         {
           "son": "ch",
           "level": "a1",
+          "number": "plur",
+          "sentences": [
+            "Les chats se lèchent les pattes."
+          ]
+        },
+        {
+          "son": "ch",
+          "level": "a1",
           "number": "sing",
           "sentences": [
             "Le chat court dans le champ.",
-            "Le chat dort chez Charles."
+            "Le chat dort chez Charles.",
+            "Le chat est sur le tapis violet.",
+            "Le chat et la chatte sont sur le tapis.",
+            "Ses chats dorment sur le tapis."
           ]
         },
         {
@@ -14609,7 +14986,9 @@
           "level": "a2",
           "number": "sing",
           "sentences": [
-            "Le chat de Charlotte a un biscuit dans la bouche."
+            "Le chat de Charles joue avec un bouchon attaché à un fil.",
+            "Le chat de Charlotte a un biscuit dans la bouche.",
+            "Le chat joue avec un bouchon puis il se couche sur le coussin."
           ]
         },
         {
@@ -14767,6 +15146,19 @@
           "number": "sing",
           "sentences": [
             "Charlotte est chanteuse et elle chante dans un château."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "chatte",
+      "sounds": [
+        {
+          "son": "a",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "La chatte va sur le tapis."
           ]
         }
       ]
@@ -15377,6 +15769,14 @@
         },
         {
           "son": "h",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Je cherche un ver de terre."
+          ]
+        },
+        {
+          "son": "h",
           "level": "b1",
           "number": "sing",
           "sentences": [
@@ -15394,7 +15794,9 @@
           "number": "sing",
           "sentences": [
             "Le cheval de René est beau.",
-            "Le cheval est très fort."
+            "Le cheval est très fort.",
+            "Le cheval et la jument sont à l’écurie.",
+            "Le cheval va à la mare."
           ]
         },
         {
@@ -15451,7 +15853,8 @@
           "level": "a1",
           "number": "plur",
           "sentences": [
-            "Les cheveux de René sont bruns."
+            "Les cheveux de René sont bruns.",
+            "Ma sœur a un nœud bleu dans les cheveux."
           ]
         },
         {
@@ -15509,8 +15912,17 @@
         {
           "son": "v",
           "level": "a1",
+          "number": "plur",
+          "sentences": [
+            "Des chèvres marchent dans le pré."
+          ]
+        },
+        {
+          "son": "v",
+          "level": "a1",
           "number": "sing",
           "sentences": [
+            "La chèvre est dans le pré.",
             "Victor voit la chèvre de Valérie.",
             "Victor voit une chèvre vive."
           ]
@@ -15521,6 +15933,7 @@
           "number": "sing",
           "sentences": [
             "La chèvre de Valérie mange de l’herbe verte près du voisin.",
+            "La chèvre et le chevreau sont dans le pré.",
             "Vanessa nourrit la chèvre de Victor avec Valentin vendredi."
           ]
         },
@@ -15531,6 +15944,30 @@
           "sentences": [
             "Quand la chèvre s’échappe, Victor court vers le pré avec une vieille corde.",
             "Vincent vend une chèvre, mais Victor et Vanessa préfèrent garder la vache vendredi."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "chien",
+      "sounds": [
+        {
+          "son": "i",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Le chien et le chiot sont dans la niche.",
+            "Le chiot est dans la niche.",
+            "Mon chien est un joyeux compagnon."
+          ]
+        },
+        {
+          "son": "i",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Combien vois-tu de chiens dans le jardin ?",
+            "Je tiens mon chien en laisse ; il voudrais bien courir seul."
           ]
         }
       ]
@@ -15612,6 +16049,19 @@
           "number": "sing",
           "sentences": [
             "Pierre prend un paquet de chips, mais Pauline préfère les cacahuètes de Paul."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "chirurgien",
+      "sounds": [
+        {
+          "son": "ch",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Je voudrais être informaticien ou chirurgien."
           ]
         }
       ]
@@ -16070,6 +16520,14 @@
       "sounds": [
         {
           "son": "g-g",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Le soir, je regarde les étoiles dans le ciel."
+          ]
+        },
+        {
+          "son": "g-g",
           "level": "b1",
           "number": "sing",
           "sentences": [
@@ -16285,6 +16743,7 @@
           "level": "a2",
           "number": "sing",
           "sentences": [
+            "Cécile et Cyril achètent une glace au citron.",
             "Lili presse un citron dans l’eau de Mimi et de Cyril."
           ]
         },
@@ -16401,6 +16860,7 @@
           "level": "b1",
           "number": "sing",
           "sentences": [
+            "Fripouille la grenouille saute de citrouille en citrouille et atterrit dans le fenouil.",
             "Guillaume coupe la citrouille dans le jardin, mais Camille et Mireille préfèrent rester avec Cyrille.",
             "Quand la citrouille est grosse, Mireille la coupe et Guillaume prépare la soupe de famille."
           ]
@@ -16463,6 +16923,22 @@
     {
       "word": "classe",
       "sounds": [
+        {
+          "son": "l",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "La maîtresse est dans la classe."
+          ]
+        },
+        {
+          "son": "l",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "L’élève et la maîtresse sont dans la classe."
+          ]
+        },
         {
           "son": "l",
           "level": "b1",
@@ -16599,7 +17075,8 @@
           "level": "a1",
           "number": "sing",
           "sentences": [
-            "La clé de René est perdue."
+            "La clé de René est perdue.",
+            "Mercredi, Bertrand a perdu ses clés."
           ]
         },
         {
@@ -17586,6 +18063,14 @@
             "Quand Philippe fait de la confiture, Stéphane lit la phrase et prend une photo.",
             "Raphaël offre un pot de confiture à Philippe, mais Delphine et Sophie préfèrent le miel."
           ]
+        },
+        {
+          "son": "u",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Veux-tu du pain et de la confiture de coings ?"
+          ]
         }
       ]
     },
@@ -17666,6 +18151,7 @@
           "level": "a1",
           "number": "sing",
           "sentences": [
+            "Il y a cinq coqs dans la cour.",
             "Le coq chante très fort."
           ]
         },
@@ -17690,6 +18176,7 @@
           "level": "a1",
           "number": "sing",
           "sentences": [
+            "Il y a cinq coqs dans la cour.",
             "Le coq chante quand il fait jour.",
             "Quentin entend le coq de Jacques."
           ]
@@ -17969,13 +18456,35 @@
       ]
     },
     {
+      "word": "coude",
+      "sounds": [
+        {
+          "son": "c-k",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Je suis tombé, je me suis égratigné le coude."
+          ]
+        }
+      ]
+    },
+    {
       "word": "cour",
       "sounds": [
+        {
+          "son": "a",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Il y a cinq coqs dans la cour."
+          ]
+        },
         {
           "son": "a",
           "level": "a2",
           "number": "sing",
           "sentences": [
+            "Lundi, nous aurons un cours de géographie puis d’éducation physique.",
             "Papa lave sa voiture dans la cour avec Maman et Anna."
           ]
         }
@@ -18047,6 +18556,7 @@
           "level": "a1",
           "number": "sing",
           "sentences": [
+            "Guy joue avec son cousin.",
             "Le cousin mange un abricot."
           ]
         }
@@ -18057,9 +18567,18 @@
       "sounds": [
         {
           "son": "ou",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Maman brode un joli coussin."
+          ]
+        },
+        {
+          "son": "ou",
           "level": "a2",
           "number": "sing",
           "sentences": [
+            "Le chat joue avec un bouchon puis il se couche sur le coussin.",
             "Nour cherche son blouson sous le coussin du fauteuil rouge."
           ]
         }
@@ -18114,6 +18633,7 @@
           "level": "a1",
           "number": "sing",
           "sentences": [
+            "Il voit un crapaud au bord de l’eau.",
             "Le crapaud saute près de la porte.",
             "Paul voit un petit crapaud."
           ]
@@ -18175,7 +18695,8 @@
           "number": "sing",
           "sentences": [
             "Camille prend un crayon avec Cyrille.",
-            "Camille prend un crayon et un papier."
+            "Camille prend un crayon et un papier.",
+            "Ton crayon est très mal taillé."
           ]
         },
         {
@@ -18785,7 +19306,8 @@
           "number": "sing",
           "sentences": [
             "Agnès voit un cygne en Bretagne.",
-            "Le cygne nage en Bretagne."
+            "Le cygne nage en Bretagne.",
+            "Tu regardes un cygne sur la rivière."
           ]
         },
         {
@@ -18805,6 +19327,14 @@
           "sentences": [
             "Agnès voit un cygne dans la montagne, mais Ignace préfère rester dans la campagne.",
             "Quand le cygne soigne ses plumes, Agnès signe sa photo et gagne un prix."
+          ]
+        },
+        {
+          "son": "y",
+          "level": "a1",
+          "number": "plur",
+          "sentences": [
+            "Il y a des lys et des cygnes chez Cyril."
           ]
         },
         {
@@ -18982,6 +19512,22 @@
           ]
         },
         {
+          "son": "i",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Il y a des lys et des cygnes chez Cyril."
+          ]
+        },
+        {
+          "son": "i",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Cécile et Cyril achètent une glace au citron."
+          ]
+        },
+        {
           "son": "y",
           "level": "a2",
           "sentences": [
@@ -19134,6 +19680,19 @@
       ]
     },
     {
+      "word": "dé",
+      "sounds": [
+        {
+          "son": "e",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Léo a lancé le dé."
+          ]
+        }
+      ]
+    },
+    {
       "word": "Denis",
       "sounds": [
         {
@@ -19141,6 +19700,19 @@
           "level": "a2",
           "sentences": [
             "Denis met du dentifrice sur sa brosse à dents."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "dent",
+      "sounds": [
+        {
+          "son": "d",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Boris a une bosse à dents."
           ]
         }
       ]
@@ -19237,6 +19809,7 @@
           "level": "a1",
           "number": "sing",
           "sentences": [
+            "Le Sahara est un grand désert.",
             "Rosa visite le désert de Louise."
           ]
         },
@@ -19274,6 +19847,7 @@
           "level": "a2",
           "number": "sing",
           "sentences": [
+            "Elle leur dit de rentrer préparer un dessert pour le dîner.",
             "Hélène prépare le dessert de René et le sert très frais."
           ]
         },
@@ -19479,7 +20053,8 @@
           "level": "a2",
           "number": "sing",
           "sentences": [
-            "Après le dîner, Damien paye l’addition et dit merci au serveur."
+            "Après le dîner, Damien paye l’addition et dit merci au serveur.",
+            "Elle leur dit de rentrer préparer un dessert pour le dîner."
           ]
         },
         {
@@ -19521,7 +20096,9 @@
           "level": "a1",
           "number": "sing",
           "sentences": [
-            "Le docteur de Léo est fort."
+            "Le docteur de Léo est fort.",
+            "Le docteur examine mon frère.",
+            "Le docteur m’a soigné."
           ]
         },
         {
@@ -19572,7 +20149,8 @@
           "number": "sing",
           "sentences": [
             "Antoine lève le doigt trois fois.",
-            "Antoine lève un doigt noir."
+            "Antoine lève un doigt noir.",
+            "Lève le doigt et pas le poing !"
           ]
         },
         {
@@ -19724,6 +20302,8 @@
           "number": "sing",
           "sentences": [
             "Dans ce conte, le dragon gris garde la grotte de la princesse.",
+            "Dimitri lit un livre sur un petit dragon.",
+            "Diton le petit dragon a des griffes de lion et des grandes ailes.",
             "Gloria dessine un dragon gris qui garde le gâteau de Gabriel."
           ]
         },
@@ -19914,10 +20494,20 @@
       "sounds": [
         {
           "son": "au",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Il voit un crapaud au bord de l’eau."
+          ]
+        },
+        {
+          "son": "au",
           "level": "a2",
           "number": "sing",
           "sentences": [
+            "Blanche-Neige se regardait dans l’eau claire de la fontaine.",
             "Claude donne de l’eau aux animaux du château avec Pauline.",
+            "Le petit veau se rue vers lui et tombe dans l’eau.",
             "Pauline donne de l’eau à l’autruche avec un seau jaune."
           ]
         },
@@ -19979,6 +20569,19 @@
           "number": "sing",
           "sentences": [
             "Pierre porte une écharpe épaisse pendant la promenade, mais Pauline préfère son petit foulard."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "école",
+      "sounds": [
+        {
+          "son": "e",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Ton école n’est pas très loin."
           ]
         }
       ]
@@ -20165,6 +20768,14 @@
         {
           "son": "e",
           "level": "a2",
+          "number": "plur",
+          "sentences": [
+            "Sophie regarde un film sur les éléphants d’Afrique."
+          ]
+        },
+        {
+          "son": "e",
+          "level": "a2",
           "number": "sing",
           "sentences": [
             "Au zoo, Hélène regarde l’éléphant de René avec Léa."
@@ -20212,7 +20823,8 @@
           "level": "a1",
           "number": "sing",
           "sentences": [
-            "L’élève de René est très gentil."
+            "L’élève de René est très gentil.",
+            "L’élève est à l’école de Synecom."
           ]
         },
         {
@@ -20220,7 +20832,8 @@
           "level": "a2",
           "number": "sing",
           "sentences": [
-            "Hélène aide l’élève de René avec le devoir de lecture."
+            "Hélène aide l’élève de René avec le devoir de lecture.",
+            "L’élève et la maîtresse sont dans la classe."
           ]
         },
         {
@@ -20242,6 +20855,22 @@
           "number": "plur",
           "sentences": [
             "Quand il neige, les élèves du collège font de la gymnastique dans le gymnase."
+          ]
+        },
+        {
+          "son": "l",
+          "level": "a1",
+          "number": "plur",
+          "sentences": [
+            "Les élèves bavardent."
+          ]
+        },
+        {
+          "son": "l",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Mes élèves écrivent vite."
           ]
         },
         {
@@ -20370,8 +20999,29 @@
       ]
     },
     {
+      "word": "enfant",
+      "sounds": [
+        {
+          "son": "an",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "L’enfant a mal à l’oreille."
+          ]
+        }
+      ]
+    },
+    {
       "word": "enfants",
       "sounds": [
+        {
+          "son": "an",
+          "level": "a2",
+          "number": "plur",
+          "sentences": [
+            "Ces sirops guérissent les enfants qui toussent."
+          ]
+        },
         {
           "son": "an",
           "level": "b1",
@@ -20758,6 +21408,7 @@
           "level": "a2",
           "number": "sing",
           "sentences": [
+            "Il y a un gros escargot qui glisse sur l’escalier.",
             "Mireille monte l’escalier dans le jardin avec Camille et Cyrille."
           ]
         },
@@ -20816,7 +21467,8 @@
           "level": "a2",
           "number": "sing",
           "sentences": [
-            "Gloria regarde un escargot gris qui grimpe sur le gazon."
+            "Gloria regarde un escargot gris qui grimpe sur le gazon.",
+            "Il y a un gros escargot qui glisse sur l’escalier."
           ]
         },
         {
@@ -20973,6 +21625,7 @@
           "level": "a2",
           "number": "plur",
           "sentences": [
+            "Le soir, je regarde les étoiles dans le ciel.",
             "Pauline rêve de devenir astronaute et regarde les étoiles au-dessus du château."
           ]
         }
@@ -21237,8 +21890,30 @@
       ]
     },
     {
+      "word": "faim",
+      "sounds": [
+        {
+          "son": "f",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "As-tu faim ?"
+          ]
+        }
+      ]
+    },
+    {
       "word": "fais",
       "sounds": [
+        {
+          "son": "e",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Écoute mon conseil, fais bien les gestes en lisant.",
+            "Tu fais exprès de me donner des coups de pied."
+          ]
+        },
         {
           "son": "e",
           "level": "b1",
@@ -21628,6 +22303,19 @@
       ]
     },
     {
+      "word": "fée",
+      "sounds": [
+        {
+          "son": "f",
+          "level": "a2",
+          "number": "plur",
+          "sentences": [
+            "Élodie et Michèle rêvent d’être des fées."
+          ]
+        }
+      ]
+    },
+    {
       "word": "Félix",
       "sounds": [
         {
@@ -21802,6 +22490,7 @@
           "level": "b1",
           "number": "sing",
           "sentences": [
+            "Fripouille la grenouille saute de citrouille en citrouille et atterrit dans le fenouil.",
             "Stéphane prépare un fenouil rôti avec des herbes et René ajoute de la crème."
           ]
         },
@@ -21826,6 +22515,19 @@
           "number": "sing",
           "sentences": [
             "Félix fait cuire le fenouil avec du fromage, mais Fanny et Fabien préfèrent le cru."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "fer",
+      "sounds": [
+        {
+          "son": "f",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Mercredi, nous ferons des caramels dans un moule en fer."
           ]
         }
       ]
@@ -22155,7 +22857,8 @@
           "level": "a1",
           "number": "sing",
           "sentences": [
-            "La fille de Lili est jolie."
+            "La fille de Lili est jolie.",
+            "La fille déguste une glace à la vanille."
           ]
         },
         {
@@ -22184,7 +22887,17 @@
           "level": "a1",
           "number": "sing",
           "sentences": [
-            "Carine est actrice dans un film."
+            "Carine est actrice dans un film.",
+            "Que ce film est ennuyeux !"
+          ]
+        },
+        {
+          "son": "c-k",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Je viens de voir un film, je me suis bien amusé.",
+            "Sophie regarde un film sur les éléphants d’Afrique."
           ]
         },
         {
@@ -22192,7 +22905,9 @@
           "level": "a2",
           "number": "sing",
           "sentences": [
-            "Cette actrice tourne un film dans une petite ville de Toscane."
+            "Cette actrice tourne un film dans une petite ville de Toscane.",
+            "Je viens de voir un film, je me suis bien amusé.",
+            "Sophie regarde un film sur les éléphants d’Afrique."
           ]
         }
       ]
@@ -22424,7 +23139,16 @@
           "level": "a1",
           "number": "sing",
           "sentences": [
-            "Gilles range le foin dans la grange."
+            "Gilles range le foin dans la grange.",
+            "La poule couve dans le foin."
+          ]
+        },
+        {
+          "son": "r",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "La poule couve dans le foin."
           ]
         },
         {
@@ -22440,6 +23164,15 @@
     {
       "word": "forêt",
       "sounds": [
+        {
+          "son": "o",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Je me promène dans la forêt.",
+            "La fée se promène dans la forêt."
+          ]
+        },
         {
           "son": "p",
           "level": "b1",
@@ -22501,6 +23234,14 @@
         {
           "son": "s-z",
           "level": "a2",
+          "number": "plur",
+          "sentences": [
+            "Céline mange des fraises et des framboises."
+          ]
+        },
+        {
+          "son": "s-z",
+          "level": "a2",
           "number": "sing",
           "sentences": [
             "Louise pose une fraise sur la chaise de Rosa et d’Élise."
@@ -22550,6 +23291,14 @@
           "number": "sing",
           "sentences": [
             "Rosa mange une framboise de Louise."
+          ]
+        },
+        {
+          "son": "s-z",
+          "level": "a2",
+          "number": "plur",
+          "sentences": [
+            "Céline mange des fraises et des framboises."
           ]
         },
         {
@@ -22687,6 +23436,7 @@
           "level": "a2",
           "number": "sing",
           "sentences": [
+            "Elle n'aime pas du tout le fromage et les oranges.",
             "Georges achète un fromage suisse à la fromagerie du village.",
             "Gilles coupe le fromage pour Régine et Gérard ce jeudi."
           ]
@@ -22756,6 +23506,14 @@
     {
       "word": "fruits",
       "sounds": [
+        {
+          "son": "f",
+          "level": "a1",
+          "number": "plur",
+          "sentences": [
+            "Les fruits sont dans la corbeille."
+          ]
+        },
         {
           "son": "f",
           "level": "b1",
@@ -23054,6 +23812,14 @@
           "level": "a1",
           "sentences": [
             "Gaston met ses gants gris."
+          ]
+        },
+        {
+          "son": "g-g",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Gaston a cassé la pompe de son vélo."
           ]
         }
       ]
@@ -23627,7 +24393,8 @@
           "number": "sing",
           "sentences": [
             "La girafe a un long visage.",
-            "La girafe de Gérard est géante."
+            "La girafe de Gérard est géante.",
+            "La girafe regarde son girafon manger."
           ]
         },
         {
@@ -23679,6 +24446,14 @@
       "sounds": [
         {
           "son": "c-s",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Cécile et Cyril achètent une glace au citron."
+          ]
+        },
+        {
+          "son": "c-s",
           "level": "b1",
           "number": "sing",
           "sentences": [
@@ -23690,6 +24465,7 @@
           "level": "a1",
           "number": "sing",
           "sentences": [
+            "La fille déguste une glace à la vanille.",
             "La glace de Gaspard fond."
           ]
         },
@@ -23933,6 +24709,7 @@
           "level": "a1",
           "number": "sing",
           "sentences": [
+            "Cet homme est un grand magicien.",
             "Jean a un grand cerf-volant."
           ]
         },
@@ -23980,6 +24757,14 @@
         },
         {
           "son": "r",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Le Sahara est un grand désert."
+          ]
+        },
+        {
+          "son": "r",
           "level": "a2",
           "number": "sing",
           "sentences": [
@@ -23997,6 +24782,14 @@
           "number": "sing",
           "sentences": [
             "Papa a une grande cave."
+          ]
+        },
+        {
+          "son": "a",
+          "level": "a2",
+          "number": "plur",
+          "sentences": [
+            "Diton le petit dragon a des griffes de lion et des grandes ailes."
           ]
         }
       ]
@@ -24052,6 +24845,27 @@
       ]
     },
     {
+      "word": "grenouille",
+      "sounds": [
+        {
+          "son": "e",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Dans le jardin de Madame Redouille, il y a une grenouille."
+          ]
+        },
+        {
+          "son": "e",
+          "level": "b1",
+          "number": "sing",
+          "sentences": [
+            "Fripouille la grenouille saute de citrouille en citrouille et atterrit dans le fenouil."
+          ]
+        }
+      ]
+    },
+    {
       "word": "gris",
       "sounds": [
         {
@@ -24098,6 +24912,14 @@
     {
       "word": "gros",
       "sounds": [
+        {
+          "son": "w",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Il y a un gros escargot qui glisse sur l’escalier."
+          ]
+        },
         {
           "son": "w",
           "level": "b1",
@@ -24182,6 +25004,14 @@
     {
       "word": "guitare",
       "sounds": [
+        {
+          "son": "i",
+          "level": "a1",
+          "number": "plur",
+          "sentences": [
+            "Léo a des guitares."
+          ]
+        },
         {
           "son": "i",
           "level": "a1",
@@ -24699,6 +25529,14 @@
           "sentences": [
             "Hélène cuisine des haricots avec de l’huile et de l’herbe."
           ]
+        },
+        {
+          "son": "h",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Hector ajoute de l’huile dans sa salade de haricots."
+          ]
         }
       ]
     },
@@ -25023,7 +25861,8 @@
           "number": "sing",
           "sentences": [
             "Hugo voit un hibou hier soir.",
-            "Hugo voit un hibou hier."
+            "Hugo voit un hibou hier.",
+            "Un hibou se cache sous le houx."
           ]
         },
         {
@@ -25128,6 +25967,19 @@
           "sentences": [
             "Hector photographie une hirondelle, mais Hugo et Hélène préfèrent le hibou comme Hamid.",
             "Quand l’hirondelle part en hiver, Hélène ferme la fenêtre et Hugo regarde le ciel."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "histoire",
+      "sounds": [
+        {
+          "son": "i",
+          "level": "a2",
+          "number": "plur",
+          "sentences": [
+            "Exerce-toi à lire des histoires à ta sœur."
           ]
         }
       ]
@@ -25303,6 +26155,7 @@
           "level": "a1",
           "number": "sing",
           "sentences": [
+            "Cet homme est un grand magicien.",
             "Hugo aide un homme hier."
           ]
         },
@@ -25458,6 +26311,7 @@
           "level": "a2",
           "number": "sing",
           "sentences": [
+            "Hector ajoute de l’huile dans sa salade de haricots.",
             "Julie utilise de l’huile pour cuire la purée de Luc."
           ]
         },
@@ -25636,25 +26490,6 @@
       ]
     },
     {
-      "word": "Il",
-      "sounds": [
-        {
-          "son": "ch",
-          "level": "a1",
-          "sentences": [
-            "Il fait chaud chez Charles."
-          ]
-        },
-        {
-          "son": "oi",
-          "level": "a2",
-          "sentences": [
-            "Il fait froid, Françoise met trois vestes noires."
-          ]
-        }
-      ]
-    },
-    {
       "word": "image",
       "sounds": [
         {
@@ -25687,6 +26522,19 @@
           "number": "sing",
           "sentences": [
             "Alexis agrandit l’image pour voir chaque pixel avec Maxime."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "imperméable",
+      "sounds": [
+        {
+          "son": "i",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Albert a un imperméable vert."
           ]
         }
       ]
@@ -25766,6 +26614,19 @@
           "number": "sing",
           "sentences": [
             "Quand l’infirmière mesure la glycémie, Cyril la regarde et Sylvie écrit avec un stylo."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "informaticien",
+      "sounds": [
+        {
+          "son": "i",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Je voudrais être informaticien ou chirurgien."
           ]
         }
       ]
@@ -26096,7 +26957,8 @@
           "number": "sing",
           "sentences": [
             "Jean plie la jambe gauche.",
-            "Julien a mal à la jambe."
+            "Julien a mal à la jambe.",
+            "Le moustique a piqué la jambe de Kally."
           ]
         },
         {
@@ -26182,6 +27044,7 @@
           "level": "a1",
           "number": "sing",
           "sentences": [
+            "Dans le jardin, le pigeon roucoule.",
             "Jean est dans le jardin.",
             "Julien joue dans le jardin."
           ]
@@ -26191,6 +27054,7 @@
           "level": "a2",
           "number": "sing",
           "sentences": [
+            "Dans le jardin de Madame Redouille, il y a une grenouille.",
             "Jade plante des jacinthes dans le jardin de Julien et de Jules.",
             "Julie joue dans le jardin avec ses jouets tous les jours.",
             "Julie joue du banjo dans le jardin toute la journée."
@@ -26203,6 +27067,25 @@
           "sentences": [
             "Jules joue dans le jardin, mais Jade et Julien préfèrent jardiner jeudi prochain.",
             "Quand le jardin est sec, Jacques arrose les plantes tous les jours, même le jeudi."
+          ]
+        },
+        {
+          "son": "s-z",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Dans le jardin, le pigeon roucoule."
+          ]
+        },
+        {
+          "son": "s-z",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Ce matin, Pimpin le lapin saute et court dans le jardin.",
+            "Ce matin, Youna a balayé la terrasse et essuyé la table du jardin.",
+            "Combien vois-tu de chiens dans le jardin ?",
+            "Dans le jardin de Madame Redouille, il y a une grenouille."
           ]
         },
         {
@@ -26312,7 +27195,9 @@
           "level": "a1",
           "number": "sing",
           "sentences": [
-            "Julien porte un pull jaune."
+            "Julie a acheté une jolie jupe jaune.",
+            "Julien porte un pull jaune.",
+            "Léo le robot a un chapeau jaune."
           ]
         },
         {
@@ -26790,6 +27675,14 @@
       "sounds": [
         {
           "son": "j",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Maman brode un joli coussin."
+          ]
+        },
+        {
+          "son": "j",
           "level": "a2",
           "number": "sing",
           "sentences": [
@@ -26801,6 +27694,14 @@
     {
       "word": "jolie",
       "sounds": [
+        {
+          "son": "i",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Julie a acheté une jolie jupe jaune."
+          ]
+        },
         {
           "son": "i",
           "level": "a2",
@@ -26883,6 +27784,7 @@
           "level": "a1",
           "number": "sing",
           "sentences": [
+            "Elle a mis un jouet dans le paquet.",
             "Jean a un jouet jaune."
           ]
         },
@@ -26967,6 +27869,14 @@
     {
       "word": "jours",
       "sounds": [
+        {
+          "son": "t",
+          "level": "a1",
+          "number": "plur",
+          "sentences": [
+            "Tous les jours, Jules lit le journal."
+          ]
+        },
         {
           "son": "t",
           "level": "a2",
@@ -27102,6 +28012,7 @@
           "level": "a1",
           "number": "sing",
           "sentences": [
+            "Julie a acheté une jolie jupe jaune.",
             "La jupe de Julie est brune."
           ]
         },
@@ -27295,6 +28206,14 @@
           "level": "a1",
           "sentences": [
             "Karim joue au basketball avec Kevin."
+          ]
+        },
+        {
+          "son": "k",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Karim et Dominique ont un kimono blanc."
           ]
         },
         {
@@ -27614,6 +28533,7 @@
           "level": "a1",
           "number": "sing",
           "sentences": [
+            "Karim et Dominique ont un kimono blanc.",
             "Kim porte un kimono blanc."
           ]
         },
@@ -27761,7 +28681,8 @@
           "number": "sing",
           "sentences": [
             "Kim regarde le koala de Karim.",
-            "Kim regarde un koala au zoo."
+            "Kim regarde un koala au zoo.",
+            "Koa le koala est dans l’arbre."
           ]
         },
         {
@@ -27787,6 +28708,7 @@
           "level": "a1",
           "number": "sing",
           "sentences": [
+            "Koa le koala est dans l’arbre.",
             "Le koala dort dans le zoo."
           ]
         },
@@ -27845,6 +28767,8 @@
           "level": "a1",
           "number": "sing",
           "sentences": [
+            "La cane et le caneton nagent sur le lac.",
+            "Noé rame sur le lac.",
             "Papa nage dans le lac."
           ]
         },
@@ -27853,7 +28777,8 @@
           "level": "a2",
           "number": "sing",
           "sentences": [
-            "Anna se baigne dans le lac avec Papa et Sara."
+            "Anna se baigne dans le lac avec Papa et Sara.",
+            "Après l’école, ils iront faire du canot sur le lac."
           ]
         },
         {
@@ -27896,6 +28821,14 @@
         {
           "son": "u",
           "level": "a1",
+          "number": "plur",
+          "sentences": [
+            "Aline et Émilie plantent des laitues."
+          ]
+        },
+        {
+          "son": "u",
+          "level": "a1",
           "number": "sing",
           "sentences": [
             "Julie lave la laitue de Luc."
@@ -27928,6 +28861,19 @@
           "number": "sing",
           "sentences": [
             "Maman allume la lampe avec une allumette."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "lapin",
+      "sounds": [
+        {
+          "son": "a",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Ce matin, Pimpin le lapin saute et court dans le jardin."
           ]
         }
       ]
@@ -28027,6 +28973,15 @@
           "level": "a1",
           "sentences": [
             "Léa aime beaucoup cet animal."
+          ]
+        },
+        {
+          "son": "l",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Léa a une poupée.",
+            "Léa joue à la poupée."
           ]
         }
       ]
@@ -28132,6 +29087,19 @@
       ]
     },
     {
+      "word": "libellule",
+      "sounds": [
+        {
+          "son": "u",
+          "level": "a2",
+          "number": "plur",
+          "sentences": [
+            "Elle regarde un livre sur les libellules."
+          ]
+        }
+      ]
+    },
+    {
       "word": "ligne",
       "sounds": [
         {
@@ -28139,7 +29107,31 @@
           "level": "a2",
           "number": "sing",
           "sentences": [
+            "À la campagne, les vignes sont plantées en ligne.",
             "Agnès souligne la ligne avec un surligneur et gagne du temps."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "lit",
+      "sounds": [
+        {
+          "son": "i",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Léon est tombé de son lit.",
+            "Lola est dans son lit.",
+            "Tous les jours, Jules lit le journal."
+          ]
+        },
+        {
+          "son": "i",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Dimitri lit un livre sur un petit dragon."
           ]
         }
       ]
@@ -28153,6 +29145,17 @@
           "number": "sing",
           "sentences": [
             "Fanny lit un livre fantastique dans le fauteuil du salon."
+          ]
+        },
+        {
+          "son": "i",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alun regarde un livre sur la vie d’un ours brun.",
+            "Dimitri lit un livre sur un petit dragon.",
+            "Dimitri regarde un livre sur la vie des dinosaures.",
+            "Elle regarde un livre sur les libellules."
           ]
         },
         {
@@ -28176,6 +29179,7 @@
           "level": "a2",
           "number": "sing",
           "sentences": [
+            "Alun regarde un livre sur la vie d’un ours brun.",
             "Vanessa vend le livre de Victor avec Valentin vendredi."
           ]
         },
@@ -28479,6 +29483,19 @@
       ]
     },
     {
+      "word": "lys",
+      "sounds": [
+        {
+          "son": "y",
+          "level": "a1",
+          "number": "plur",
+          "sentences": [
+            "Il y a des lys et des cygnes chez Cyril."
+          ]
+        }
+      ]
+    },
+    {
       "word": "Ma",
       "sounds": [
         {
@@ -28486,6 +29503,23 @@
           "level": "a1",
           "sentences": [
             "Ma mère est très gentille."
+          ]
+        },
+        {
+          "son": "e",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Le lilas de ma mamie est sur l’îlot.",
+            "Ma sœur a un nœud bleu dans les cheveux."
+          ]
+        },
+        {
+          "son": "e",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "En septembre, nous irons camper avec ma tante."
           ]
         }
       ]
@@ -28508,6 +29542,14 @@
       "sounds": [
         {
           "son": "in",
+          "level": "a1",
+          "number": "plur",
+          "sentences": [
+            "Elle a de la peinture plein les mains."
+          ]
+        },
+        {
+          "son": "in",
           "level": "b1",
           "number": "sing",
           "sentences": [
@@ -28519,6 +29561,14 @@
     {
       "word": "maison",
       "sounds": [
+        {
+          "son": "a",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "La façade de la maison est blanche, colorie-la."
+          ]
+        },
         {
           "son": "a",
           "level": "b1",
@@ -28591,6 +29641,19 @@
       ]
     },
     {
+      "word": "maîtresse",
+      "sounds": [
+        {
+          "son": "m",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "La maîtresse perd patience."
+          ]
+        }
+      ]
+    },
+    {
       "word": "manège",
       "sounds": [
         {
@@ -28637,12 +29700,28 @@
           "sentences": [
             "Marc met sa chemise grise."
           ]
+        },
+        {
+          "son": "m",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Marc et Caroline partent à l’école avec papa."
+          ]
         }
       ]
     },
     {
       "word": "marché",
       "sounds": [
+        {
+          "son": "m",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Chantal va au marché pour acheter des choux et des artichauts."
+          ]
+        },
         {
           "son": "m",
           "level": "b1",
@@ -28661,6 +29740,14 @@
           "level": "a2",
           "sentences": [
             "Marie nourrit ses animaux chaque matin avec du maïs et du foin."
+          ]
+        },
+        {
+          "son": "m",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Rémi et Marie se promènent près de la mare aux canards."
           ]
         }
       ]
@@ -28728,10 +29815,21 @@
       "sounds": [
         {
           "son": "in",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Ce matin, le réveil a sonné très tôt."
+          ]
+        },
+        {
+          "son": "in",
           "level": "a2",
           "number": "sing",
           "sentences": [
-            "Alain et Quentin jouent au bowling le matin avec leur copain."
+            "Alain et Quentin jouent au bowling le matin avec leur copain.",
+            "Ce matin, il gèle, nous ne sortirons pas.",
+            "Ce matin, Pimpin le lapin saute et court dans le jardin.",
+            "Ce matin, Youna a balayé la terrasse et essuyé la table du jardin."
           ]
         },
         {
@@ -28776,6 +29874,14 @@
             "Max compte chaque pixel avec Alex.",
             "Max joue du saxophone avec Alexis.",
             "Max joue du xylophone avec Alexis."
+          ]
+        },
+        {
+          "son": "x-ks",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Max expédie un colis pour Alexis."
           ]
         }
       ]
@@ -28946,6 +30052,22 @@
       "sounds": [
         {
           "son": "c-k",
+          "level": "a2",
+          "number": "plur",
+          "sentences": [
+            "J’ai pêché trois brochets, je les mets dans le filet."
+          ]
+        },
+        {
+          "son": "c-k",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Mets ton blouson noir et ton pantalon à rayures."
+          ]
+        },
+        {
+          "son": "c-k",
           "level": "b1",
           "number": "sing",
           "sentences": [
@@ -29021,6 +30143,14 @@
           "level": "a1",
           "sentences": [
             "Antoine voit son miroir noir."
+          ]
+        },
+        {
+          "son": "oi",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Tu te coiffes devant le miroir."
           ]
         },
         {
@@ -29164,6 +30294,23 @@
           ]
         },
         {
+          "son": "c-k",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Mon chien est un joyeux compagnon."
+          ]
+        },
+        {
+          "son": "c-k",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Je tiens mon chien en laisse ; il voudrais bien courir seul.",
+            "Mon ami a construit son avion avec du carton."
+          ]
+        },
+        {
           "son": "d",
           "level": "a1",
           "sentences": [
@@ -29178,11 +30325,38 @@
           ]
         },
         {
+          "son": "g-j",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Écoute mon conseil, fais bien les gestes en lisant."
+          ]
+        },
+        {
           "son": "m",
           "level": "a1",
           "sentences": [
             "Mon ami habite à Martigny.",
             "Mon animal préféré s’appelle Max."
+          ]
+        },
+        {
+          "son": "m",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Je vais goûter et jouer chez mon ami.",
+            "Le docteur examine mon frère.",
+            "Mon chien est un joyeux compagnon.",
+            "Mon frère va devenir pompier."
+          ]
+        },
+        {
+          "son": "m",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Mon amie Prune a une belle chevelure brune."
           ]
         }
       ]
@@ -29246,7 +30420,9 @@
           "level": "a2",
           "number": "sing",
           "sentences": [
-            "Ignace monte la montagne dans la campagne avec Agnès."
+            "Ignace monte la montagne dans la campagne avec Agnès.",
+            "Nous dormirons sous une tente dans la montagne.",
+            "Pendant les vacances, je suis allé à la montagne pour skier."
           ]
         },
         {
@@ -29331,7 +30507,8 @@
           "level": "a1",
           "number": "sing",
           "sentences": [
-            "Léo a une grosse moto."
+            "Léo a une grosse moto.",
+            "Théo a une moto."
           ]
         },
         {
@@ -29339,6 +30516,7 @@
           "level": "a2",
           "number": "sing",
           "sentences": [
+            "Avec sa moto marron, Matteo va voir son ami Mario.",
             "Rosa roule en moto sur la route de Nora."
           ]
         },
@@ -29381,6 +30559,19 @@
       ]
     },
     {
+      "word": "moule",
+      "sounds": [
+        {
+          "son": "m",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Mercredi, nous ferons des caramels dans un moule en fer."
+          ]
+        }
+      ]
+    },
+    {
       "word": "Mounir",
       "sounds": [
         {
@@ -29402,6 +30593,7 @@
           "level": "a1",
           "number": "sing",
           "sentences": [
+            "Le moustique a piqué la jambe de Kally.",
             "Quentin chasse le moustique de Jacques.",
             "Un moustique pique Quentin la nuit."
           ]
@@ -29421,6 +30613,19 @@
           "sentences": [
             "Comme un moustique pique Quentin chaque soir, Jacqueline lui conseille d’acheter une moustiquaire.",
             "Quentin tue le moustique avec son journal, mais Jacques et Enrique ont déjà piqué."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "mur",
+      "sounds": [
+        {
+          "son": "u",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Un chat a vu un rat sur un mur."
           ]
         }
       ]
@@ -29529,6 +30734,32 @@
       ]
     },
     {
+      "word": "nage",
+      "sounds": [
+        {
+          "son": "a",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Le canard nage à côté du canot."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "nageoire",
+      "sounds": [
+        {
+          "son": "n",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Le poisson a une nageoire abîmée."
+          ]
+        }
+      ]
+    },
+    {
       "word": "Nathan",
       "sounds": [
         {
@@ -29569,6 +30800,14 @@
     {
       "word": "neige",
       "sounds": [
+        {
+          "son": "an",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Blanche-Neige se regardait dans l’eau claire de la fontaine."
+          ]
+        },
         {
           "son": "an",
           "level": "b1",
@@ -29617,6 +30856,43 @@
       ]
     },
     {
+      "word": "niche",
+      "sounds": [
+        {
+          "son": "i",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Le chiot est dans la niche."
+          ]
+        },
+        {
+          "son": "i",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "La nuit, Nini le caniche dort près de sa niche."
+          ]
+        },
+        {
+          "son": "n",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Le chiot est dans la niche."
+          ]
+        },
+        {
+          "son": "n",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "La nuit, Nini le caniche dort près de sa niche."
+          ]
+        }
+      ]
+    },
+    {
       "word": "Nina",
       "sounds": [
         {
@@ -29632,6 +30908,14 @@
     {
       "word": "noire",
       "sounds": [
+        {
+          "son": "oi",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Mes bonbons sont dans la boîte noire."
+          ]
+        },
         {
           "son": "oi",
           "level": "b1",
@@ -30051,6 +31335,14 @@
         {
           "son": "o",
           "level": "a2",
+          "number": "plur",
+          "sentences": [
+            "Elle n'aime pas du tout le fromage et les oranges."
+          ]
+        },
+        {
+          "son": "o",
+          "level": "a2",
           "number": "sing",
           "sentences": [
             "Nicole presse une orange dans la cuisine de Sophie pour le docteur."
@@ -30062,6 +31354,32 @@
           "number": "sing",
           "sentences": [
             "Quand Léo mange une orange, Nicole ouvre le robinet et Sophie porte le sac."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "oreille",
+      "sounds": [
+        {
+          "son": "ill",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "L’enfant a mal à l’oreille."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "orteil",
+      "sounds": [
+        {
+          "son": "o",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Je me suis cassé l’orteil."
           ]
         }
       ]
@@ -30217,6 +31535,32 @@
       ]
     },
     {
+      "word": "paille",
+      "sounds": [
+        {
+          "son": "ill",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "La caille dort dans la paille."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "palais",
+      "sounds": [
+        {
+          "son": "p",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "La reine et le roi sont dans le palais."
+          ]
+        }
+      ]
+    },
+    {
       "word": "panda",
       "sounds": [
         {
@@ -30268,6 +31612,14 @@
           "sentences": [
             "Kader porte un pantalon kaki."
           ]
+        },
+        {
+          "son": "o",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Mets ton blouson noir et ton pantalon à rayures."
+          ]
         }
       ]
     },
@@ -30280,12 +31632,29 @@
           "sentences": [
             "Papa paie au comptoir du café."
           ]
+        },
+        {
+          "son": "p",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Marc et Caroline partent à l’école avec papa.",
+            "Papa a acheté un beau vélo violet à Valérie."
+          ]
         }
       ]
     },
     {
       "word": "papillon",
       "sounds": [
+        {
+          "son": "a",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Pipo le papillon vole et se pose sur le parasol de Paola."
+          ]
+        },
         {
           "son": "d",
           "level": "b1",
@@ -30379,6 +31748,32 @@
       ]
     },
     {
+      "word": "parapluie",
+      "sounds": [
+        {
+          "son": "a",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "La pluie tombe, je m’abrite sous le parapluie."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "parasol",
+      "sounds": [
+        {
+          "son": "o",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Pipo le papillon vole et se pose sur le parasol de Paola."
+          ]
+        }
+      ]
+    },
+    {
       "word": "parc",
       "sounds": [
         {
@@ -30435,6 +31830,19 @@
           "number": "sing",
           "sentences": [
             "Quentin achète une pastèque à la boutique, mais Jacques et Enrique préfèrent le melon."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "patience",
+      "sounds": [
+        {
+          "son": "p",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "La maîtresse perd patience."
           ]
         }
       ]
@@ -30548,6 +31956,8 @@
           "level": "a1",
           "number": "sing",
           "sentences": [
+            "Cette peinture est une merveille.",
+            "Elle a de la peinture plein les mains.",
             "Léa utilise de la peinture acrylique."
           ]
         },
@@ -30572,7 +31982,16 @@
           "level": "a1",
           "number": "sing",
           "sentences": [
+            "Cette peinture est une merveille.",
             "Rose achète de la peinture acrylique."
+          ]
+        },
+        {
+          "son": "r",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Maxime va voir une exposition de peinture."
           ]
         },
         {
@@ -30581,6 +32000,35 @@
           "number": "sing",
           "sentences": [
             "Parce que la peinture acrylique sèche rapidement, Rose termine son travail avant la fin."
+          ]
+        },
+        {
+          "son": "u",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Cette peinture est une merveille."
+          ]
+        },
+        {
+          "son": "u",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Maxime va voir une exposition de peinture."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "pelote",
+      "sounds": [
+        {
+          "son": "e",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "La chatte attrape la pelote de laine."
           ]
         }
       ]
@@ -30655,6 +32103,15 @@
           ]
         },
         {
+          "son": "g-g",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Diton le petit dragon a des griffes de lion et des grandes ailes.",
+            "Je gagne à la loterie un mignon petit champignon."
+          ]
+        },
+        {
           "son": "j",
           "level": "a2",
           "number": "sing",
@@ -30667,7 +32124,11 @@
           "level": "a2",
           "number": "sing",
           "sentences": [
-            "Le petit animal dort dans la cabane, loin de la lumière."
+            "Dimitri lit un livre sur un petit dragon.",
+            "Diton le petit dragon a des griffes de lion et des grandes ailes.",
+            "Le petit animal dort dans la cabane, loin de la lumière.",
+            "Le petit veau maladroit court et saute dans le pré, près du ruisseau.",
+            "Le petit veau se rue vers lui et tombe dans l’eau."
           ]
         },
         {
@@ -30675,6 +32136,7 @@
           "level": "a2",
           "number": "sing",
           "sentences": [
+            "Le petit veau maladroit court et saute dans le pré, près du ruisseau.",
             "Un petit crapaud passe sous la pierre pendant la pluie."
           ]
         }
@@ -30688,7 +32150,8 @@
           "level": "a2",
           "number": "sing",
           "sentences": [
-            "Emilie visite la petite ville de Sion avec Cyril et Julie."
+            "Emilie visite la petite ville de Sion avec Cyril et Julie.",
+            "Ryri la petite souris trotte dans la rue."
           ]
         }
       ]
@@ -30727,6 +32190,14 @@
           "level": "a1",
           "sentences": [
             "Philippe et Stéphane mangent du chou-fleur."
+          ]
+        },
+        {
+          "son": "ph",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Sophie joue du xylophone avec son ami Philippe."
           ]
         }
       ]
@@ -30818,6 +32289,32 @@
       ]
     },
     {
+      "word": "physique",
+      "sounds": [
+        {
+          "son": "y",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Lundi, nous aurons un cours de géographie puis d’éducation physique."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "pied",
+      "sounds": [
+        {
+          "son": "p",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Pouvez-vous sauter sur un pied ?"
+          ]
+        }
+      ]
+    },
+    {
       "word": "Pierre",
       "sounds": [
         {
@@ -30888,6 +32385,22 @@
       "word": "pizza",
       "sounds": [
         {
+          "son": "i",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Titi a étalé la tomate sur la pâte à pizza."
+          ]
+        },
+        {
+          "son": "s-z",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Titi a étalé la tomate sur la pâte à pizza."
+          ]
+        },
+        {
           "son": "s-z",
           "level": "b1",
           "number": "sing",
@@ -30906,6 +32419,19 @@
           "number": "sing",
           "sentences": [
             "Alain pointe son index vers le plan de son voisin Quentin."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "plante",
+      "sounds": [
+        {
+          "son": "a",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Attention, cette plante est du poison !"
           ]
         }
       ]
@@ -30931,7 +32457,8 @@
           "level": "a2",
           "number": "sing",
           "sentences": [
-            "Après la pluie, un gros escargot glisse doucement sur la grille."
+            "Après la pluie, un gros escargot glisse doucement sur la grille.",
+            "La pluie tombe, je m’abrite sous le parapluie."
           ]
         }
       ]
@@ -30970,6 +32497,14 @@
       "sounds": [
         {
           "son": "oi",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Elle était plus belle que la vilaine reine."
+          ]
+        },
+        {
+          "son": "oi",
           "level": "b1",
           "number": "sing",
           "sentences": [
@@ -31000,6 +32535,19 @@
           "number": "sing",
           "sentences": [
             "Pierre pose la pointe du compas sur la page blanche."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "poisson",
+      "sounds": [
+        {
+          "son": "oi",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Le poisson a une nageoire abîmée."
           ]
         }
       ]
@@ -31048,6 +32596,14 @@
       "sounds": [
         {
           "son": "c-s",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Les dames bavardent à la porte."
+          ]
+        },
+        {
+          "son": "c-s",
           "level": "b1",
           "number": "sing",
           "sentences": [
@@ -31056,10 +32612,26 @@
         },
         {
           "son": "j",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Les dames bavardent à la porte."
+          ]
+        },
+        {
+          "son": "j",
           "level": "a2",
           "number": "sing",
           "sentences": [
             "Julie peint la porte du jardin en jaune."
+          ]
+        },
+        {
+          "son": "ou",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Les dames bavardent à la porte."
           ]
         },
         {
@@ -31164,6 +32736,14 @@
       "sounds": [
         {
           "son": "c-s",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Je ne te permets pas de prendre le briquet."
+          ]
+        },
+        {
+          "son": "c-s",
           "level": "b1",
           "number": "sing",
           "sentences": [
@@ -31189,6 +32769,14 @@
           "number": "sing",
           "sentences": [
             "Quand le printemps arrive, Pascale plante une jonquille devant la boutique."
+          ]
+        },
+        {
+          "son": "r",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Au printemps, il y a des bourgeons sur les arbres."
           ]
         },
         {
@@ -31271,6 +32859,19 @@
           "number": "sing",
           "sentences": [
             "Quand le professeur explique la géométrie, Paul prend son compas et trace plusieurs cercles parfaits."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "prune",
+      "sounds": [
+        {
+          "son": "u",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Mon amie Prune a une belle chevelure brune."
           ]
         }
       ]
@@ -31537,6 +33138,19 @@
       ]
     },
     {
+      "word": "rat",
+      "sounds": [
+        {
+          "son": "a",
+          "level": "a1",
+          "number": "plur",
+          "sentences": [
+            "Les rats se cachent à la cave."
+          ]
+        }
+      ]
+    },
+    {
       "word": "récente",
       "sounds": [
         {
@@ -31588,6 +33202,47 @@
           "number": "sing",
           "sentences": [
             "Alexandre a un excellent réflexe, mais Xavier et Maxime préfèrent la prudence comme Félix."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "regarde",
+      "sounds": [
+        {
+          "son": "e",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Guy regarde un catalogue.",
+            "La girafe regarde son girafon manger.",
+            "Tu regardes un cygne sur la rivière."
+          ]
+        },
+        {
+          "son": "e",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Alun regarde un livre sur la vie d’un ours brun.",
+            "Dimitri regarde un livre sur la vie des dinosaures.",
+            "Elle regarde un livre sur les libellules.",
+            "Le soir, je regarde les étoiles dans le ciel.",
+            "Regarde, Théophile, il y a des nénuphars sur l’étang.",
+            "Sophie regarde un film sur les éléphants d’Afrique."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "reine",
+      "sounds": [
+        {
+          "son": "r",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "La reine et le roi sont dans le palais."
           ]
         }
       ]
@@ -31647,6 +33302,14 @@
       "sounds": [
         {
           "son": "an",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Xavier est exact à son rendez-vous."
+          ]
+        },
+        {
+          "son": "an",
           "level": "a2",
           "number": "sing",
           "sentences": [
@@ -31693,6 +33356,19 @@
       ]
     },
     {
+      "word": "rhume",
+      "sounds": [
+        {
+          "son": "r",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Hélène a un rhume."
+          ]
+        }
+      ]
+    },
+    {
       "word": "riz",
       "sounds": [
         {
@@ -31734,6 +33410,19 @@
           "level": "a1",
           "sentences": [
             "Robert est architecte à Rome."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "robot",
+      "sounds": [
+        {
+          "son": "o",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Léo le robot a un chapeau jaune."
           ]
         }
       ]
@@ -31802,6 +33491,50 @@
       ]
     },
     {
+      "word": "rue",
+      "sounds": [
+        {
+          "son": "u",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Dans la rue, Lulu la tortue a vu Nunu.",
+            "La jument rue dans le box."
+          ]
+        },
+        {
+          "son": "u",
+          "level": "a2",
+          "number": "plur",
+          "sentences": [
+            "Hélène et Nicolas se promènent dans les rues."
+          ]
+        },
+        {
+          "son": "u",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Le petit veau se rue vers lui et tombe dans l’eau.",
+            "Ryri la petite souris trotte dans la rue."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "ruisseau",
+      "sounds": [
+        {
+          "son": "u",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Le petit veau maladroit court et saute dans le pré, près du ruisseau."
+          ]
+        }
+      ]
+    },
+    {
       "word": "sac",
       "sounds": [
         {
@@ -31830,6 +33563,14 @@
     {
       "word": "salade",
       "sounds": [
+        {
+          "son": "a",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Hector ajoute de l’huile dans sa salade de haricots."
+          ]
+        },
         {
           "son": "s-z",
           "level": "a2",
@@ -31991,6 +33732,27 @@
       ]
     },
     {
+      "word": "serpent",
+      "sounds": [
+        {
+          "son": "e",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Ce gryphon a une queue de serpent."
+          ]
+        },
+        {
+          "son": "e",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Le serpent à sonnettes siffle et sort de sa cachette."
+          ]
+        }
+      ]
+    },
+    {
       "word": "siège",
       "sounds": [
         {
@@ -32011,6 +33773,27 @@
           "level": "a1",
           "sentences": [
             "Simon met son blouson long."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "sirène",
+      "sounds": [
+        {
+          "son": "i",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Je rêve d’être une sirène."
+          ]
+        },
+        {
+          "son": "s-s",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Je rêve d’être une sirène."
           ]
         }
       ]
@@ -32044,8 +33827,30 @@
       ]
     },
     {
+      "word": "sœur",
+      "sounds": [
+        {
+          "son": "s-s",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Exerce-toi à lire des histoires à ta sœur."
+          ]
+        }
+      ]
+    },
+    {
       "word": "soir",
       "sounds": [
+        {
+          "son": "s-s",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Ce soir, nous mangerons du potage, du gigot avec des girolles.",
+            "Le soir, je regarde les étoiles dans le ciel."
+          ]
+        },
         {
           "son": "s-s",
           "level": "b1",
@@ -32065,6 +33870,19 @@
           "number": "sing",
           "sentences": [
             "Samedi, Sophie sort ses boucles d’oreilles pour la soirée."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "sole",
+      "sounds": [
+        {
+          "son": "s-s",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Salima a salé la sole."
           ]
         }
       ]
@@ -32147,6 +33965,15 @@
           "level": "a2",
           "sentences": [
             "Sophie sort ses baskets du placard pour courir samedi matin."
+          ]
+        },
+        {
+          "son": "s-s",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Sophie joue du xylophone avec son ami Philippe.",
+            "Sophie regarde un film sur les éléphants d’Afrique."
           ]
         }
       ]
@@ -32333,11 +34160,32 @@
       "word": "table",
       "sounds": [
         {
+          "son": "a",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Ce matin, Youna a balayé la terrasse et essuyé la table du jardin."
+          ]
+        },
+        {
           "son": "b",
           "level": "a2",
           "number": "sing",
           "sentences": [
             "Sur la table, il y a un bol d’abricots bien mûrs."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "tapis",
+      "sounds": [
+        {
+          "son": "a",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "La chatte va sur le tapis."
           ]
         }
       ]
@@ -32450,6 +34298,23 @@
       "sounds": [
         {
           "son": "oi",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Je cherche un ver de terre.",
+            "Le ver de terre se cache sous le persil."
+          ]
+        },
+        {
+          "son": "oi",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "La poule déterre le ver de terre avec son bec."
+          ]
+        },
+        {
+          "son": "oi",
           "level": "b1",
           "number": "sing",
           "sentences": [
@@ -32497,6 +34362,34 @@
       ]
     },
     {
+      "word": "thé",
+      "sounds": [
+        {
+          "son": "e",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Bernard a renversé la tasse de thé.",
+            "Catherine a bu un thé très chaud.",
+            "François a cassé sa tasse de thé."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "thym",
+      "sounds": [
+        {
+          "son": "y",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Il va vite se cacher dans le thym derrière le sapin."
+          ]
+        }
+      ]
+    },
+    {
       "word": "tiroir",
       "sounds": [
         {
@@ -32530,6 +34423,27 @@
       ]
     },
     {
+      "word": "tomate",
+      "sounds": [
+        {
+          "son": "o",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Ses tomates mûrissent vite."
+          ]
+        },
+        {
+          "son": "o",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Titi a étalé la tomate sur la pâte à pizza."
+          ]
+        }
+      ]
+    },
+    {
       "word": "tortue",
       "sounds": [
         {
@@ -32537,6 +34451,7 @@
           "level": "a1",
           "number": "sing",
           "sentences": [
+            "Dans la rue, Lulu la tortue a vu Nunu.",
             "La tortue est sur le mur."
           ]
         },
@@ -32559,6 +34474,19 @@
       ]
     },
     {
+      "word": "tour",
+      "sounds": [
+        {
+          "son": "t",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Du haut de la tour Eiffel, nous voyons très loin."
+          ]
+        }
+      ]
+    },
+    {
       "word": "train",
       "sounds": [
         {
@@ -32566,7 +34494,16 @@
           "level": "a2",
           "number": "sing",
           "sentences": [
-            "Avec sa carte d’étudiant, Denis paie moins cher dans le train."
+            "Avec sa carte d’étudiant, Denis paie moins cher dans le train.",
+            "Le mois prochain, je prendrai le train pour partir en vacances."
+          ]
+        },
+        {
+          "son": "g-g",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Attention, au signal, le train va partir."
           ]
         },
         {
@@ -32632,6 +34569,14 @@
           "number": "plur",
           "sentences": [
             "Sophie change sa brosse à dents tous les trois mois."
+          ]
+        },
+        {
+          "son": "s-s",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "J’ai pêché trois brochets, je les mets dans le filet."
           ]
         }
       ]
@@ -32719,7 +34664,16 @@
           "sentences": [
             "Laurent change son alimentation pendant les vacances avec sa tante.",
             "Laurent joue du banjo devant ses enfants pendant les vacances.",
-            "Laurent perd sa carte d’identité pendant les vacances en France."
+            "Laurent perd sa carte d’identité pendant les vacances en France.",
+            "Pendant les vacances, je suis allé à la montagne pour skier."
+          ]
+        },
+        {
+          "son": "an",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Le mois prochain, je prendrai le train pour partir en vacances."
           ]
         },
         {
@@ -32762,6 +34716,14 @@
           "sentences": [
             "Valérie est avocate à Vevey."
           ]
+        },
+        {
+          "son": "v",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Papa a acheté un beau vélo violet à Valérie."
+          ]
         }
       ]
     },
@@ -32787,6 +34749,37 @@
           "number": "sing",
           "sentences": [
             "Valérie monte son cheval chaque vendredi dans la vallée avec son voisin."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "vélo",
+      "sounds": [
+        {
+          "son": "e",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Gaston a cassé la pompe de son vélo.",
+            "Théo a un vélo."
+          ]
+        },
+        {
+          "son": "e",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Papa a acheté un beau vélo violet à Valérie."
+          ]
+        },
+        {
+          "son": "o",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Gaston a cassé la pompe de son vélo.",
+            "Théo a un vélo."
           ]
         }
       ]
@@ -32867,7 +34860,21 @@
           "level": "a1",
           "number": "sing",
           "sentences": [
-            "Papa boit un verre de bordeaux."
+            "Papa boit un verre de bordeaux.",
+            "Tu as cassé le verre en l’essuyant."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "vert",
+      "sounds": [
+        {
+          "son": "v",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Albert a un imperméable vert."
           ]
         }
       ]
@@ -32875,6 +34882,14 @@
     {
       "word": "veste",
       "sounds": [
+        {
+          "son": "s-z",
+          "level": "a1",
+          "number": "sing",
+          "sentences": [
+            "Philibert a une veste de velours vert."
+          ]
+        },
         {
           "son": "s-z",
           "level": "b1",
@@ -32909,12 +34924,28 @@
             "Victor met sa cravate violette.",
             "Victor vend sa caravane en avril."
           ]
+        },
+        {
+          "son": "v",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Maman a offert une voiture mauve à Victor."
+          ]
         }
       ]
     },
     {
       "word": "vigne",
       "sounds": [
+        {
+          "son": "gn",
+          "level": "a2",
+          "number": "plur",
+          "sentences": [
+            "À la campagne, les vignes sont plantées en ligne."
+          ]
+        },
         {
           "son": "gn",
           "level": "b1",
@@ -33005,7 +35036,30 @@
           "level": "a2",
           "number": "sing",
           "sentences": [
-            "Françoise montre du doigt la voiture noire de Benoît."
+            "Benoit a besoin de la voiture de son père.",
+            "Françoise montre du doigt la voiture noire de Benoît.",
+            "Le mécanicien répare les freins de la voiture."
+          ]
+        },
+        {
+          "son": "u",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Maman a offert une voiture mauve à Victor."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "voyage",
+      "sounds": [
+        {
+          "son": "y",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Demain, Yann va partir en voyage à Londres."
           ]
         }
       ]
@@ -33482,6 +35536,7 @@
           "number": "sing",
           "sentences": [
             "Alexis apprend le xylophone avec Maxime dans une classe extra.",
+            "Sophie joue du xylophone avec son ami Philippe.",
             "Xavier écoute le xylophone de Maxime et d’Alex ce mardi."
           ]
         },
@@ -33491,6 +35546,14 @@
           "number": "sing",
           "sentences": [
             "Alexandre joue du xylophone, mais Xavier et Maxime préfèrent la flûte comme leur ami Félix."
+          ]
+        },
+        {
+          "son": "y",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Sophie joue du xylophone avec son ami Philippe."
           ]
         }
       ]
@@ -33566,6 +35629,14 @@
           "sentences": [
             "Zoé achète douze œufs à Zurich."
           ]
+        },
+        {
+          "son": "z",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Au zoo, Zoé a vu des zèbres et des zébus."
+          ]
         }
       ]
     },
@@ -33587,6 +35658,14 @@
     {
       "word": "zoo",
       "sounds": [
+        {
+          "son": "k",
+          "level": "a2",
+          "number": "sing",
+          "sentences": [
+            "Au zoo, Zoé a vu des zèbres et des zébus."
+          ]
+        },
         {
           "son": "k",
           "level": "b1",
