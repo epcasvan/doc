@@ -1,4 +1,48 @@
-/** Index des images Voc par thème (dossiers public/lib/images/vocabulaire). */
+/** Index 
+      {
+        "label": "caille",
+        "src": "/lib/images/vocabulaire/oiseaux/caille.webp"
+      },
+      {
+        "label": "histoire",
+        "src": "/lib/images/vocabulaire/ecole-bureau/histoire.webp"
+      },
+      {
+        "label": "maîtresse",
+        "src": "/lib/images/vocabulaire/metiers/maîtresse.webp"
+      },
+      {
+        "label": "caramel",
+        "src": "/lib/images/vocabulaire/desserts/caramel.webp"
+      },
+      {
+        "label": "tour eiffel",
+        "src": "/lib/images/vocabulaire/ville/tour-eiffel.webp"
+      },
+      {
+        "label": "palais",
+        "src": "/lib/images/vocabulaire/ville/palais.webp"
+      },
+      {
+        "label": "fée",
+        "src": "/lib/images/vocabulaire/autre/fée.webp"
+      },
+      {
+        "label": "sirène",
+        "src": "/lib/images/vocabulaire/autre/sirène.webp"
+      },
+      {
+        "label": "cabane",
+        "src": "/lib/images/vocabulaire/maison/cabane.webp"
+      },
+      {
+        "label": "niche",
+        "src": "/lib/images/vocabulaire/animaux-ferme-compagnie/niche.webp"
+      },
+      {
+        "label": "sole",
+        "src": "/lib/images/vocabulaire/animaux-aquatiques/sole.webp"
+      },des images Voc par thème (dossiers public/lib/images/vocabulaire). */
 export type VocabImageWord = { label: string; src: string }
 export type VocabImageTheme = { id: string; label: string; words: VocabImageWord[] }
 
@@ -8097,6 +8141,20 @@ export const VOCAB_IMAGE_THEMES: VocabImageTheme[] = [
 
 /** label (minuscule) → src, première occurrence. */
 export const VOCAB_IMAGE_BY_LABEL: Record<string, string> = {
+  "caille": "/lib/images/vocabulaire/oiseaux/caille.webp",
+  "tour eiffel": "/lib/images/vocabulaire/ville/tour-eiffel.webp",
+  "eiffel": "/lib/images/vocabulaire/ville/tour-eiffel.webp",
+  "tour-eiffel": "/lib/images/vocabulaire/ville/tour-eiffel.webp",
+  "histoire": "/lib/images/vocabulaire/ecole-bureau/histoire.webp",
+  "maîtresse": "/lib/images/vocabulaire/metiers/maîtresse.webp",
+  "caramel": "/lib/images/vocabulaire/desserts/caramel.webp",
+  "palais": "/lib/images/vocabulaire/ville/palais.webp",
+  "fée": "/lib/images/vocabulaire/autre/fée.webp",
+  "fées": "/lib/images/vocabulaire/autre/fée.webp",
+  "sirène": "/lib/images/vocabulaire/autre/sirène.webp",
+  "cabane": "/lib/images/vocabulaire/maison/cabane.webp",
+  "niche": "/lib/images/vocabulaire/animaux-ferme-compagnie/niche.webp",
+  "sole": "/lib/images/vocabulaire/animaux-aquatiques/sole.webp",
   "alliances": "/lib/images/vocabulaire/accessoires/alliances.webp",
   "bague": "/lib/images/vocabulaire/accessoires/bague.webp",
   "bandeau": "/lib/images/vocabulaire/accessoires/bandeau.webp",

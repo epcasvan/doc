@@ -1682,6 +1682,48 @@ export const GRAPHEME_WORD_POOLS = {
       "spray",
       "syrien",
       "érythréen",
+    ],
+    "c": [
+      "cabane",
+      "caille",
+      "caramel",
+    ],
+    "d": [
+      "dos",
+      "dé",
+    ],
+    "e": [
+      "école",
+    ],
+    "f": [
+      "fée",
+    ],
+    "i": [
+      "histoire",
+    ],
+    "m": [
+      "maîtresse",
+    ],
+    "n": [
+      "niche",
+    ],
+    "o": [
+      "oreille",
+      "orteil",
+    ],
+    "p": [
+      "palais",
+    ],
+    "r": [
+      "rhume",
+    ],
+    "s": [
+      "sirène",
+      "sole",
+    ],
+    "t": [
+      "tapis",
+      "tour eiffel",
     ]
   }
 } as const
