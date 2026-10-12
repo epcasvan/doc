@@ -1,5 +1,366 @@
 {
-  "type9": [],
+  "type9": [
+    {
+      "level": "a1",
+      "word": "alphabet",
+      "sentence": "Philippe écrit l’alphabet de Sophie."
+    },
+    {
+      "level": "a2",
+      "word": "alphabet",
+      "sentence": "Delphine fait réciter l’alphabet à Philippe et à Sophie."
+    },
+    {
+      "level": "b1",
+      "word": "alphabet",
+      "sentence": "Raphaël affiche l’alphabet pour Philippe, mais Delphine fait chanter Sophie en famille."
+    },
+    {
+      "level": "a1",
+      "word": "amphibie",
+      "sentence": "Philippe photographie un amphibie fragile."
+    },
+    {
+      "level": "a2",
+      "word": "amphibie",
+      "sentence": "Delphine fait un dessin d’amphibie pour Philippe et Sophie."
+    },
+    {
+      "level": "b1",
+      "word": "amphibie",
+      "sentence": "Raphaël observe un amphibie, mais Delphine et Sophie préfèrent photographier la forêt avec Philippe."
+    },
+    {
+      "level": "a1",
+      "word": "appareil photo",
+      "sentence": "Philippe prend un appareil photo."
+    },
+    {
+      "level": "a2",
+      "word": "appareil photo",
+      "sentence": "Delphine offre un appareil photo à Philippe et à Sophie."
+    },
+    {
+      "level": "b1",
+      "word": "appareil photo",
+      "sentence": "Raphaël fait réparer l’appareil photo de Philippe, mais Delphine préfère le téléphone de Sophie."
+    },
+    {
+      "level": "a1",
+      "word": "biographie",
+      "sentence": "Philippe lit une biographie fascinante."
+    },
+    {
+      "level": "a2",
+      "word": "biographie",
+      "sentence": "Delphine offre une biographie à Philippe et à Sophie."
+    },
+    {
+      "level": "b1",
+      "word": "biographie",
+      "sentence": "Raphaël fait lire la biographie de Joséphine à Philippe, mais Sophie préfère un roman fantastique."
+    },
+    {
+      "level": "a1",
+      "word": "buffet",
+      "sentence": "Philippe prépare le buffet froid."
+    },
+    {
+      "level": "a2",
+      "word": "buffet",
+      "sentence": "Delphine fait le buffet pour Philippe et pour Sophie."
+    },
+    {
+      "level": "b1",
+      "word": "buffet",
+      "sentence": "Raphaël offre un buffet froid à Philippe, mais Delphine et Sophie préfèrent un buffet chaud."
+    },
+    {
+      "level": "a1",
+      "word": "café",
+      "sentence": "Philippe boit un café froid."
+    },
+    {
+      "level": "a2",
+      "word": "café",
+      "sentence": "Delphine offre un café à Philippe et à Sophie à la fin."
+    },
+    {
+      "level": "b1",
+      "word": "café",
+      "sentence": "Raphaël fait un café fort pour Philippe, mais Delphine et Sophie préfèrent le thé frais."
+    },
+    {
+      "level": "a1",
+      "word": "cerf",
+      "sentence": "Philippe photographie un cerf fier."
+    },
+    {
+      "level": "a2",
+      "word": "cerf",
+      "sentence": "Delphine voit un cerf dans la forêt avec Philippe et Sophie."
+    },
+    {
+      "level": "b1",
+      "word": "cerf",
+      "sentence": "Raphaël photographie un cerf dans la forêt, mais Philippe et Delphine préfèrent la faune."
+    },
+    {
+      "level": "a1",
+      "word": "cerf volant",
+      "sentence": "Philippe fabrique un cerf volant."
+    },
+    {
+      "level": "a2",
+      "word": "cerf volant",
+      "sentence": "Delphine offre un cerf volant à Philippe et à Sophie."
+    },
+    {
+      "level": "b1",
+      "word": "cerf volant",
+      "sentence": "Raphaël fait voler un cerf volant avec Philippe, mais Delphine et Sophie préfèrent la plage."
+    },
+    {
+      "level": "a1",
+      "word": "chauffeuse",
+      "sentence": "Sophie est chauffeuse chez Philippe."
+    },
+    {
+      "level": "a2",
+      "word": "chauffeuse",
+      "sentence": "La chauffeuse Sophie fait le trajet avec Philippe et Delphine."
+    },
+    {
+      "level": "b1",
+      "word": "chauffeuse",
+      "sentence": "Raphaël félicite la chauffeuse Sophie, car elle fait le trajet de Philippe en famille."
+    },
+    {
+      "level": "a1",
+      "word": "chou fleur",
+      "sentence": "Philippe mange du chou fleur."
+    },
+    {
+      "level": "a2",
+      "word": "chou fleur",
+      "sentence": "Delphine fait cuire le chou fleur pour Philippe et Sophie."
+    },
+    {
+      "level": "b1",
+      "word": "chou fleur",
+      "sentence": "Raphaël offre un chou fleur à Philippe, mais Delphine et Sophie préfèrent le brocoli frais."
+    },
+    {
+      "level": "a1",
+      "word": "coffre",
+      "sentence": "Philippe ouvre le coffre fort."
+    },
+    {
+      "level": "a2",
+      "word": "coffre",
+      "sentence": "Delphine ferme le coffre de Philippe et de Sophie."
+    },
+    {
+      "level": "b1",
+      "word": "coffre",
+      "sentence": "Raphaël offre un coffre à Philippe, mais Delphine et Sophie préfèrent le coffre fort."
+    },
+    {
+      "level": "a1",
+      "word": "coiffeuse",
+      "sentence": "Sophie est coiffeuse chez Philippe."
+    },
+    {
+      "level": "a2",
+      "word": "coiffeuse",
+      "sentence": "La coiffeuse Sophie fait une coupe à Philippe et à Delphine."
+    },
+    {
+      "level": "b1",
+      "word": "coiffeuse",
+      "sentence": "Raphaël félicite la coiffeuse Sophie, car elle fait de belles coupes pour Philippe et Delphine."
+    },
+    {
+      "level": "a1",
+      "word": "confiture",
+      "sentence": "Philippe mange de la confiture."
+    },
+    {
+      "level": "a2",
+      "word": "confiture",
+      "sentence": "Delphine fait de la confiture pour Philippe et pour Sophie."
+    },
+    {
+      "level": "b1",
+      "word": "confiture",
+      "sentence": "Raphaël offre un pot de confiture à Philippe, mais Delphine et Sophie préfèrent le miel."
+    },
+    {
+      "level": "a1",
+      "word": "dauphin",
+      "sentence": "Philippe photographie un joli dauphin."
+    },
+    {
+      "level": "a2",
+      "word": "dauphin",
+      "sentence": "Delphine regarde un dauphin avec Philippe et Sophie en mer."
+    },
+    {
+      "level": "b1",
+      "word": "dauphin",
+      "sentence": "Raphaël photographie un dauphin, mais Delphine et Sophie préfèrent regarder la baleine avec Philippe."
+    },
+    {
+      "level": "a1",
+      "word": "dentifrice",
+      "sentence": "Philippe achète du dentifrice fruité."
+    },
+    {
+      "level": "a2",
+      "word": "dentifrice",
+      "sentence": "Delphine offre du dentifrice à Philippe et à Sophie."
+    },
+    {
+      "level": "b1",
+      "word": "dentifrice",
+      "sentence": "Raphaël fait ranger le dentifrice par Philippe, mais Delphine et Sophie préfèrent le leur."
+    },
+    {
+      "level": "a1",
+      "word": "éléphant",
+      "sentence": "Philippe photographie un éléphant fort."
+    },
+    {
+      "level": "a2",
+      "word": "éléphant",
+      "sentence": "Delphine regarde l’éléphant avec Philippe et Sophie au zoo."
+    },
+    {
+      "level": "b1",
+      "word": "éléphant",
+      "sentence": "Raphaël photographie un éléphant, mais Delphine et Sophie préfèrent regarder la girafe avec Philippe."
+    },
+    {
+      "level": "a1",
+      "word": "ephemere",
+      "sentence": "Philippe étudie un insecte éphémère."
+    },
+    {
+      "level": "a2",
+      "word": "ephemere",
+      "sentence": "Delphine admire une vie éphémère avec Philippe et Sophie."
+    },
+    {
+      "level": "b1",
+      "word": "ephemere",
+      "sentence": "Raphaël trouve la beauté éphémère, mais Delphine et Sophie préfèrent photographier la fleur avec Philippe."
+    },
+    {
+      "level": "a1",
+      "word": "factrice",
+      "sentence": "Sophie est factrice chez Philippe."
+    },
+    {
+      "level": "a2",
+      "word": "factrice",
+      "sentence": "La factrice Sophie fait la tournée avec Philippe et Delphine."
+    },
+    {
+      "level": "b1",
+      "word": "factrice",
+      "sentence": "Raphaël félicite la factrice Sophie, car elle fait la tournée de Philippe en famille."
+    },
+    {
+      "level": "a1",
+      "word": "falaise",
+      "sentence": "Philippe regarde la falaise fragile."
+    },
+    {
+      "level": "a2",
+      "word": "falaise",
+      "sentence": "Delphine marche près de la falaise avec Philippe et Sophie."
+    },
+    {
+      "level": "b1",
+      "word": "falaise",
+      "sentence": "Raphaël photographie la falaise, mais Delphine et Sophie préfèrent regarder la forêt avec Philippe."
+    },
+    {
+      "level": "a1",
+      "word": "farine",
+      "sentence": "Philippe achète de la farine."
+    },
+    {
+      "level": "a2",
+      "word": "farine",
+      "sentence": "Delphine verse la farine pour Philippe et pour Sophie."
+    },
+    {
+      "level": "b1",
+      "word": "farine",
+      "sentence": "Raphaël offre un sac de farine à Philippe, mais Delphine et Sophie préfèrent la fine."
+    },
+    {
+      "level": "a1",
+      "word": "faucon",
+      "sentence": "Philippe photographie un faucon fier."
+    },
+    {
+      "level": "a2",
+      "word": "faucon",
+      "sentence": "Delphine regarde le faucon avec Philippe et Sophie en forêt."
+    },
+    {
+      "level": "b1",
+      "word": "faucon",
+      "sentence": "Raphaël photographie un faucon, mais Delphine et Sophie préfèrent regarder la forêt avec Philippe."
+    },
+    {
+      "level": "a1",
+      "word": "fauteuil",
+      "sentence": "Philippe s’assoit dans le fauteuil."
+    },
+    {
+      "level": "a2",
+      "word": "fauteuil",
+      "sentence": "Delphine offre un fauteuil à Philippe et à Sophie en famille."
+    },
+    {
+      "level": "b1",
+      "word": "fauteuil",
+      "sentence": "Raphaël fait réparer le fauteuil de Philippe, mais Delphine et Sophie préfèrent le canapé."
+    },
+    {
+      "level": "a1",
+      "word": "fax",
+      "sentence": "Philippe envoie un fax à Sophie."
+    },
+    {
+      "level": "a2",
+      "word": "fax",
+      "sentence": "Delphine envoie un fax à Philippe et à Sophie en février."
+    },
+    {
+      "level": "b1",
+      "word": "fax",
+      "sentence": "Raphaël fait un fax pour Philippe, mais Delphine et Sophie préfèrent le téléphone."
+    },
+    {
+      "level": "a1",
+      "word": "femme",
+      "sentence": "Philippe aide la femme de Sophie."
+    },
+    {
+      "level": "a2",
+      "word": "femme",
+      "sentence": "Delphine parle à une femme avec Philippe et Sophie en forêt."
+    },
+    {
+      "level": "b1",
+      "word": "femme",
+      "sentence": "Raphaël photographie une femme fière, mais Delphine et Sophie préfèrent regarder la forêt avec Philippe."
+    }
+  ],
   "type10": [],
   "type12": [],
   "type14": [],

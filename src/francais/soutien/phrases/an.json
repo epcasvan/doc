@@ -1,5 +1,366 @@
 {
-  "type9": [],
+  "type9": [
+    {
+      "level": "a1",
+      "word": "agenda",
+      "sentence": "Armand ouvre l’agenda maintenant."
+    },
+    {
+      "level": "a2",
+      "word": "agenda",
+      "sentence": "Sandra ouvre l’agenda dans le grand salon avec Armand."
+    },
+    {
+      "level": "b1",
+      "word": "agenda",
+      "sentence": "Laurent ouvre l’agenda, mais Amandine et Jean attendent encore maintenant avant Clément."
+    },
+    {
+      "level": "a1",
+      "word": "agente entretien",
+      "sentence": "Armand est agente d’entretien maintenant."
+    },
+    {
+      "level": "a2",
+      "word": "agente entretien",
+      "sentence": "Sandra est agente d’entretien dans le grand salon avec Armand."
+    },
+    {
+      "level": "b1",
+      "word": "agente entretien",
+      "sentence": "Laurent est agente d’entretien, mais Amandine et Jean attendent encore maintenant avant Clément."
+    },
+    {
+      "level": "a1",
+      "word": "aimant",
+      "sentence": "Armand prend un aimant maintenant."
+    },
+    {
+      "level": "a2",
+      "word": "aimant",
+      "sentence": "Sandra prend un aimant dans le grand salon avec Armand."
+    },
+    {
+      "level": "b1",
+      "word": "aimant",
+      "sentence": "Laurent prend un aimant, mais Amandine et Jean attendent encore maintenant avant Clément."
+    },
+    {
+      "level": "a1",
+      "word": "alimentation",
+      "sentence": "Armand change l’alimentation maintenant."
+    },
+    {
+      "level": "a2",
+      "word": "alimentation",
+      "sentence": "Sandra change l’alimentation dans le grand salon avec Armand."
+    },
+    {
+      "level": "b1",
+      "word": "alimentation",
+      "sentence": "Laurent change l’alimentation, mais Amandine et Jean attendent encore maintenant avant Clément."
+    },
+    {
+      "level": "a1",
+      "word": "aliments",
+      "sentence": "Armand trie les aliments maintenant."
+    },
+    {
+      "level": "a2",
+      "word": "aliments",
+      "sentence": "Sandra trie les aliments dans le grand salon avec Armand."
+    },
+    {
+      "level": "b1",
+      "word": "aliments",
+      "sentence": "Laurent trie les aliments, mais Amandine et Jean attendent encore maintenant avant Clément."
+    },
+    {
+      "level": "a1",
+      "word": "ambulance",
+      "sentence": "Armand appelle l’ambulance maintenant."
+    },
+    {
+      "level": "a2",
+      "word": "ambulance",
+      "sentence": "Sandra appelle l’ambulance dans le grand salon avec Armand."
+    },
+    {
+      "level": "b1",
+      "word": "ambulance",
+      "sentence": "Laurent appelle l’ambulance, mais Amandine et Jean attendent encore maintenant avant Clément."
+    },
+    {
+      "level": "a1",
+      "word": "ami",
+      "sentence": "Armand attend son ami maintenant."
+    },
+    {
+      "level": "a2",
+      "word": "ami",
+      "sentence": "Sandra attend son ami dans le grand salon avec Armand."
+    },
+    {
+      "level": "b1",
+      "word": "ami",
+      "sentence": "Laurent attend son ami, mais Amandine et Jean attendent encore maintenant avant Clément."
+    },
+    {
+      "level": "a1",
+      "word": "ampoule",
+      "sentence": "Armand change l’ampoule maintenant."
+    },
+    {
+      "level": "a2",
+      "word": "ampoule",
+      "sentence": "Sandra change l’ampoule dans le grand salon avec Armand."
+    },
+    {
+      "level": "b1",
+      "word": "ampoule",
+      "sentence": "Laurent change l’ampoule, mais Amandine et Jean attendent encore maintenant avant Clément."
+    },
+    {
+      "level": "a1",
+      "word": "ananas",
+      "sentence": "Armand coupe un ananas maintenant."
+    },
+    {
+      "level": "a2",
+      "word": "ananas",
+      "sentence": "Sandra coupe un ananas dans le grand salon avec Armand."
+    },
+    {
+      "level": "b1",
+      "word": "ananas",
+      "sentence": "Laurent coupe un ananas, mais Amandine et Jean attendent encore maintenant avant Clément."
+    },
+    {
+      "level": "a1",
+      "word": "ancre",
+      "sentence": "Armand lève l’ancre maintenant."
+    },
+    {
+      "level": "a2",
+      "word": "ancre",
+      "sentence": "Sandra lève l’ancre dans le grand salon avec Armand."
+    },
+    {
+      "level": "b1",
+      "word": "ancre",
+      "sentence": "Laurent lève l’ancre, mais Amandine et Jean attendent encore maintenant avant Clément."
+    },
+    {
+      "level": "a1",
+      "word": "animal",
+      "sentence": "Armand nourrit un animal maintenant."
+    },
+    {
+      "level": "a2",
+      "word": "animal",
+      "sentence": "Sandra nourrit un animal dans le grand salon avec Armand."
+    },
+    {
+      "level": "b1",
+      "word": "animal",
+      "sentence": "Laurent nourrit un animal, mais Amandine et Jean attendent encore maintenant avant Clément."
+    },
+    {
+      "level": "a1",
+      "word": "anneau",
+      "sentence": "Armand perd un anneau maintenant."
+    },
+    {
+      "level": "a2",
+      "word": "anneau",
+      "sentence": "Sandra perd un anneau dans le grand salon avec Armand."
+    },
+    {
+      "level": "b1",
+      "word": "anneau",
+      "sentence": "Laurent perd un anneau, mais Amandine et Jean attendent encore maintenant avant Clément."
+    },
+    {
+      "level": "a1",
+      "word": "antenne",
+      "sentence": "Armand répare l’antenne maintenant."
+    },
+    {
+      "level": "a2",
+      "word": "antenne",
+      "sentence": "Sandra répare l’antenne dans le grand salon avec Armand."
+    },
+    {
+      "level": "b1",
+      "word": "antenne",
+      "sentence": "Laurent répare l’antenne, mais Amandine et Jean attendent encore maintenant avant Clément."
+    },
+    {
+      "level": "a1",
+      "word": "antilope",
+      "sentence": "Armand voit une antilope maintenant."
+    },
+    {
+      "level": "a2",
+      "word": "antilope",
+      "sentence": "Sandra voit une antilope dans le grand salon avec Armand."
+    },
+    {
+      "level": "b1",
+      "word": "antilope",
+      "sentence": "Laurent voit une antilope, mais Amandine et Jean attendent encore maintenant avant Clément."
+    },
+    {
+      "level": "a1",
+      "word": "arene",
+      "sentence": "Armand entre dans l’arène maintenant."
+    },
+    {
+      "level": "a2",
+      "word": "arene",
+      "sentence": "Sandra entre dans l’arène dans le grand salon avec Armand."
+    },
+    {
+      "level": "b1",
+      "word": "arene",
+      "sentence": "Laurent entre dans l’arène, mais Amandine et Jean attendent encore maintenant avant Clément."
+    },
+    {
+      "level": "a1",
+      "word": "avalanche",
+      "sentence": "Armand fuit l’avalanche maintenant."
+    },
+    {
+      "level": "a2",
+      "word": "avalanche",
+      "sentence": "Sandra fuit l’avalanche dans le grand salon avec Armand."
+    },
+    {
+      "level": "b1",
+      "word": "avalanche",
+      "sentence": "Laurent fuit l’avalanche, mais Amandine et Jean attendent encore maintenant avant Clément."
+    },
+    {
+      "level": "a1",
+      "word": "ayant",
+      "sentence": "Armand mange, ayant faim, maintenant."
+    },
+    {
+      "level": "a2",
+      "word": "ayant",
+      "sentence": "Sandra mange, ayant faim, dans le grand salon avec Armand."
+    },
+    {
+      "level": "b1",
+      "word": "ayant",
+      "sentence": "Laurent mange, ayant faim,, mais Amandine et Jean attendent encore maintenant avant Clément."
+    },
+    {
+      "level": "a1",
+      "word": "balance",
+      "sentence": "Armand pose la balance maintenant."
+    },
+    {
+      "level": "a2",
+      "word": "balance",
+      "sentence": "Sandra pose la balance dans le grand salon avec Armand."
+    },
+    {
+      "level": "b1",
+      "word": "balance",
+      "sentence": "Laurent pose la balance, mais Amandine et Jean attendent encore maintenant avant Clément."
+    },
+    {
+      "level": "a1",
+      "word": "bambou",
+      "sentence": "Armand coupe un bambou maintenant."
+    },
+    {
+      "level": "a2",
+      "word": "bambou",
+      "sentence": "Sandra coupe un bambou dans le grand salon avec Armand."
+    },
+    {
+      "level": "b1",
+      "word": "bambou",
+      "sentence": "Laurent coupe un bambou, mais Amandine et Jean attendent encore maintenant avant Clément."
+    },
+    {
+      "level": "a1",
+      "word": "banane",
+      "sentence": "Armand mange une banane maintenant."
+    },
+    {
+      "level": "a2",
+      "word": "banane",
+      "sentence": "Sandra mange une banane dans le grand salon avec Armand."
+    },
+    {
+      "level": "b1",
+      "word": "banane",
+      "sentence": "Laurent mange une banane, mais Amandine et Jean attendent encore maintenant avant Clément."
+    },
+    {
+      "level": "a1",
+      "word": "banc",
+      "sentence": "Armand peint le banc maintenant."
+    },
+    {
+      "level": "a2",
+      "word": "banc",
+      "sentence": "Sandra peint le banc dans le grand salon avec Armand."
+    },
+    {
+      "level": "b1",
+      "word": "banc",
+      "sentence": "Laurent peint le banc, mais Amandine et Jean attendent encore maintenant avant Clément."
+    },
+    {
+      "level": "a1",
+      "word": "banjo",
+      "sentence": "Armand joue du banjo maintenant."
+    },
+    {
+      "level": "a2",
+      "word": "banjo",
+      "sentence": "Sandra joue du banjo dans le grand salon avec Armand."
+    },
+    {
+      "level": "b1",
+      "word": "banjo",
+      "sentence": "Laurent joue du banjo, mais Amandine et Jean attendent encore maintenant avant Clément."
+    },
+    {
+      "level": "a1",
+      "word": "blanc",
+      "sentence": "Armand porte un pull blanc maintenant."
+    },
+    {
+      "level": "a2",
+      "word": "blanc",
+      "sentence": "Sandra porte un pull blanc dans le grand salon avec Armand."
+    },
+    {
+      "level": "b1",
+      "word": "blanc",
+      "sentence": "Laurent porte un pull blanc, mais Amandine et Jean attendent encore maintenant avant Clément."
+    },
+    {
+      "level": "a1",
+      "word": "boulangère",
+      "sentence": "Armand parle à la boulangère maintenant."
+    },
+    {
+      "level": "a2",
+      "word": "boulangère",
+      "sentence": "Sandra parle à la boulangère dans le grand salon avec Armand."
+    },
+    {
+      "level": "b1",
+      "word": "boulangère",
+      "sentence": "Laurent parle à la boulangère, mais Amandine et Jean attendent encore maintenant avant Clément."
+    }
+  ],
   "type10": [],
   "type12": [],
   "type14": [],

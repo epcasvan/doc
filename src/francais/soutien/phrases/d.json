@@ -1,5 +1,366 @@
 {
-  "type9": [],
+  "type9": [
+    {
+      "level": "a1",
+      "word": "accordéon",
+      "sentence": "Daniel joue de l’accordéon."
+    },
+    {
+      "level": "a2",
+      "word": "accordéon",
+      "sentence": "Dina écoute Daniel qui joue de l’accordéon dimanche."
+    },
+    {
+      "level": "b1",
+      "word": "accordéon",
+      "sentence": "Didier apprend l’accordéon à Dylan, mais Daniel dit que Dina joue déjà mieux."
+    },
+    {
+      "level": "a1",
+      "word": "addition",
+      "sentence": "Daniel demande déjà l’addition."
+    },
+    {
+      "level": "a2",
+      "word": "addition",
+      "sentence": "Dina demande l’addition au serveur, puis Daniel dit merci."
+    },
+    {
+      "level": "b1",
+      "word": "addition",
+      "sentence": "Didier regarde l’addition, mais Dylan dit que Daniel doit déjà payer le dessert."
+    },
+    {
+      "level": "a1",
+      "word": "agenda",
+      "sentence": "Daniel écrit dans son agenda."
+    },
+    {
+      "level": "a2",
+      "word": "agenda",
+      "sentence": "Dina note le dimanche dans l’agenda de Daniel et de Didier."
+    },
+    {
+      "level": "b1",
+      "word": "agenda",
+      "sentence": "Dylan demande à Daniel son agenda, mais Dina l’a déjà donné à Didier."
+    },
+    {
+      "level": "a1",
+      "word": "ardoise",
+      "sentence": "Daniel écrit sur l’ardoise."
+    },
+    {
+      "level": "a2",
+      "word": "ardoise",
+      "sentence": "Dina dessine un dauphin sur l’ardoise de Daniel et Didier."
+    },
+    {
+      "level": "b1",
+      "word": "ardoise",
+      "sentence": "Didier efface l’ardoise de Dylan, mais Daniel redessine un dragon avec Dina."
+    },
+    {
+      "level": "a1",
+      "word": "astéroïde",
+      "sentence": "Daniel dessine un grand astéroïde."
+    },
+    {
+      "level": "a2",
+      "word": "astéroïde",
+      "sentence": "Dina observe un astéroïde dans le ciel avec Daniel et Didier."
+    },
+    {
+      "level": "b1",
+      "word": "astéroïde",
+      "sentence": "Didier dit qu’un astéroïde peut tomber, mais Daniel et Dina doutent de la date."
+    },
+    {
+      "level": "a1",
+      "word": "bordeaux",
+      "sentence": "Daniel boit du vin de Bordeaux."
+    },
+    {
+      "level": "a2",
+      "word": "bordeaux",
+      "sentence": "Dina porte un manteau bordeaux dimanche avec Daniel et Didier."
+    },
+    {
+      "level": "b1",
+      "word": "bordeaux",
+      "sentence": "Didier a peint la porte en bordeaux, mais Daniel dit que Dina préfère le bleu."
+    },
+    {
+      "level": "a1",
+      "word": "boucles d'oreilles",
+      "sentence": "Dina perd ses boucles d’oreilles dimanche."
+    },
+    {
+      "level": "a2",
+      "word": "boucles d'oreilles",
+      "sentence": "Daniel offre des boucles d’oreilles dorées à Dina et à Dylan."
+    },
+    {
+      "level": "b1",
+      "word": "boucles d'oreilles",
+      "sentence": "Didier dit que les boucles d’oreilles de Dina sont dorées, mais Daniel doute."
+    },
+    {
+      "level": "a1",
+      "word": "bouteille deau",
+      "sentence": "Daniel boit la bouteille d’eau."
+    },
+    {
+      "level": "a2",
+      "word": "bouteille deau",
+      "sentence": "Dina donne une bouteille d’eau à Daniel dimanche après le déjeuner."
+    },
+    {
+      "level": "b1",
+      "word": "bouteille deau",
+      "sentence": "Didier a oublié sa bouteille d’eau, mais Daniel lui donne la sienne."
+    },
+    {
+      "level": "a1",
+      "word": "brosse à dents",
+      "sentence": "Daniel prend sa brosse à dents."
+    },
+    {
+      "level": "a2",
+      "word": "brosse à dents",
+      "sentence": "Dina range la brosse à dents de Daniel dans le tiroir."
+    },
+    {
+      "level": "b1",
+      "word": "brosse à dents",
+      "sentence": "Didier donne une brosse à dents à Dylan, mais Daniel en a déjà une."
+    },
+    {
+      "level": "a1",
+      "word": "bulldozer",
+      "sentence": "Daniel conduit un bulldozer jaune."
+    },
+    {
+      "level": "a2",
+      "word": "bulldozer",
+      "sentence": "Didier conduit le bulldozer dans la cour de Daniel."
+    },
+    {
+      "level": "b1",
+      "word": "bulldozer",
+      "sentence": "Dylan démolit le mur avec le bulldozer, mais Daniel dit que Dina doit déjà partir."
+    },
+    {
+      "level": "a1",
+      "word": "cadeau",
+      "sentence": "Daniel ouvre le cadeau de Dina."
+    },
+    {
+      "level": "a2",
+      "word": "cadeau",
+      "sentence": "Dina donne un cadeau à Daniel dimanche avec Didier."
+    },
+    {
+      "level": "b1",
+      "word": "cadeau",
+      "sentence": "Didier dépose le cadeau devant la porte de Dylan, mais Daniel le découvre déjà."
+    },
+    {
+      "level": "a1",
+      "word": "cadenas",
+      "sentence": "Daniel ouvre le cadenas du dépôt."
+    },
+    {
+      "level": "a2",
+      "word": "cadenas",
+      "sentence": "Dina demande à Daniel la clé du cadenas de Didier."
+    },
+    {
+      "level": "b1",
+      "word": "cadenas",
+      "sentence": "Didier a cassé le cadenas du dépôt, mais Dina a déjà un double."
+    },
+    {
+      "level": "a1",
+      "word": "carte de credit",
+      "sentence": "Daniel perd sa carte de crédit."
+    },
+    {
+      "level": "a2",
+      "word": "carte de credit",
+      "sentence": "Dina donne sa carte de crédit à Daniel dimanche."
+    },
+    {
+      "level": "b1",
+      "word": "carte de credit",
+      "sentence": "Didier dit que sa carte de crédit est dans le dossier de Daniel."
+    },
+    {
+      "level": "a1",
+      "word": "carte detudiant",
+      "sentence": "Daniel montre sa carte d’étudiant."
+    },
+    {
+      "level": "a2",
+      "word": "carte detudiant",
+      "sentence": "Dina donne sa carte d’étudiant à Daniel pour la bibliothèque."
+    },
+    {
+      "level": "b1",
+      "word": "carte detudiant",
+      "sentence": "Didier a perdu sa carte d’étudiant dimanche, mais Daniel va la redemander."
+    },
+    {
+      "level": "a1",
+      "word": "carte didentite",
+      "sentence": "Daniel montre sa carte d’identité."
+    },
+    {
+      "level": "a2",
+      "word": "carte didentite",
+      "sentence": "Dina présente sa carte d’identité à Daniel au douanier."
+    },
+    {
+      "level": "b1",
+      "word": "carte didentite",
+      "sentence": "Didier a oublié sa carte d’identité, mais Daniel et Dina sont déjà là."
+    },
+    {
+      "level": "a1",
+      "word": "chrysalide",
+      "sentence": "Dina regarde la chrysalide de Daniel."
+    },
+    {
+      "level": "a2",
+      "word": "chrysalide",
+      "sentence": "Didier dessine une chrysalide pour Daniel dans le cahier de Dina."
+    },
+    {
+      "level": "b1",
+      "word": "chrysalide",
+      "sentence": "Daniel regarde la chrysalide dans le jardin, mais Dylan dit qu’elle est déjà vide."
+    },
+    {
+      "level": "a1",
+      "word": "citronnade",
+      "sentence": "Daniel boit la citronnade de Dina."
+    },
+    {
+      "level": "a2",
+      "word": "citronnade",
+      "sentence": "Dina prépare une citronnade pour Daniel dimanche dans la cour."
+    },
+    {
+      "level": "b1",
+      "word": "citronnade",
+      "sentence": "Didier dilue la citronnade avec de l’eau, mais Daniel la trouve déjà douce."
+    },
+    {
+      "level": "a1",
+      "word": "commode",
+      "sentence": "Daniel range la commode de Dina."
+    },
+    {
+      "level": "a2",
+      "word": "commode",
+      "sentence": "Dina dépose le dossier sur la commode de Daniel dimanche."
+    },
+    {
+      "level": "b1",
+      "word": "commode",
+      "sentence": "Didier déplace la commode dans le salon, mais Daniel dit que Dina doit décider."
+    },
+    {
+      "level": "a1",
+      "word": "corde",
+      "sentence": "Daniel tire sur la corde."
+    },
+    {
+      "level": "a2",
+      "word": "corde",
+      "sentence": "Dina attache la corde de Daniel dans la cour de Didier."
+    },
+    {
+      "level": "b1",
+      "word": "corde",
+      "sentence": "Didier tire sur la corde, mais Daniel dit que Dina doit défaire le nœud."
+    },
+    {
+      "level": "a1",
+      "word": "corde à sauter",
+      "sentence": "Daniel prend sa corde à sauter."
+    },
+    {
+      "level": "a2",
+      "word": "corde à sauter",
+      "sentence": "Dina saute à la corde à sauter de Daniel dans la cour."
+    },
+    {
+      "level": "b1",
+      "word": "corde à sauter",
+      "sentence": "Didier a acheté une corde à sauter pour Dylan, mais Dina préfère le vélo."
+    },
+    {
+      "level": "a1",
+      "word": "coriandre",
+      "sentence": "Daniel hache la coriandre de Dina."
+    },
+    {
+      "level": "a2",
+      "word": "coriandre",
+      "sentence": "Dina ajoute de la coriandre dans la salade de Daniel."
+    },
+    {
+      "level": "b1",
+      "word": "coriandre",
+      "sentence": "Didier déteste la coriandre, mais Daniel dit que Dina doit en mettre dans la soupe."
+    },
+    {
+      "level": "a1",
+      "word": "crocodile",
+      "sentence": "Daniel dessine un grand crocodile."
+    },
+    {
+      "level": "a2",
+      "word": "crocodile",
+      "sentence": "Dina dessine un crocodile pour Daniel dans le cahier de Didier."
+    },
+    {
+      "level": "b1",
+      "word": "crocodile",
+      "sentence": "Didier regarde le crocodile du zoo, mais Daniel dit que Dina préfère le dauphin."
+    },
+    {
+      "level": "a1",
+      "word": "cylindre",
+      "sentence": "Daniel dessine un grand cylindre."
+    },
+    {
+      "level": "a2",
+      "word": "cylindre",
+      "sentence": "Dina mesure le cylindre de Daniel dans le cahier de Didier."
+    },
+    {
+      "level": "b1",
+      "word": "cylindre",
+      "sentence": "Didier dessine un cylindre doré, mais Daniel et Dina préfèrent dessiner un dôme."
+    },
+    {
+      "level": "a1",
+      "word": "danse",
+      "sentence": "Daniel danse dimanche avec Dina."
+    },
+    {
+      "level": "a2",
+      "word": "danse",
+      "sentence": "Dina danse avec Daniel dimanche dans la salle de Didier."
+    },
+    {
+      "level": "b1",
+      "word": "danse",
+      "sentence": "Didier donne un cours de danse dimanche, mais Daniel et Dina dansent déjà très bien."
+    }
+  ],
   "type10": [],
   "type12": [],
   "type14": [],

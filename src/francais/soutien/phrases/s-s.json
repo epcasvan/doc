@@ -1,5 +1,366 @@
 {
-  "type9": [],
+  "type9": [
+    {
+      "level": "a1",
+      "word": "ananas",
+      "sentence": "Sacha mange un ananas sucré."
+    },
+    {
+      "level": "a2",
+      "word": "ananas",
+      "sentence": "Simon sert un ananas sucré à Sophie et à Sacha samedi."
+    },
+    {
+      "level": "b1",
+      "word": "ananas",
+      "sentence": "Samuel sert un ananas sucré à Sophie, mais Simon et Sacha préfèrent un sorbet."
+    },
+    {
+      "level": "a1",
+      "word": "asperge",
+      "sentence": "Sophie sert une asperge salée."
+    },
+    {
+      "level": "a2",
+      "word": "asperge",
+      "sentence": "Simon sert une asperge sautée à Sophie et à Sacha samedi."
+    },
+    {
+      "level": "b1",
+      "word": "asperge",
+      "sentence": "Samuel saisit une asperge, mais Simon et Sophie préfèrent une salade sans sauce."
+    },
+    {
+      "level": "a1",
+      "word": "astéroïde",
+      "sentence": "Sophie observe un astéroïde seul."
+    },
+    {
+      "level": "a2",
+      "word": "astéroïde",
+      "sentence": "Simon observe un astéroïde avec Sophie et Sacha samedi soir."
+    },
+    {
+      "level": "b1",
+      "word": "astéroïde",
+      "sentence": "Samuel pense qu’un astéroïde se rapproche, mais Simon et Sophie sont sûrs du contraire."
+    },
+    {
+      "level": "a1",
+      "word": "astronaute",
+      "sentence": "Sophie est une astronaute suisse."
+    },
+    {
+      "level": "a2",
+      "word": "astronaute",
+      "sentence": "Simon salue l’astronaute Sophie qui part samedi dans l’espace."
+    },
+    {
+      "level": "b1",
+      "word": "astronaute",
+      "sentence": "Samuel rêve d’être astronaute, mais Simon et Sophie sont sûrs du contraire."
+    },
+    {
+      "level": "a1",
+      "word": "autobus",
+      "sentence": "Sophie attend l’autobus sans Simon."
+    },
+    {
+      "level": "a2",
+      "word": "autobus",
+      "sentence": "Simon sort de l’autobus avec Sophie et Sacha samedi soir."
+    },
+    {
+      "level": "b1",
+      "word": "autobus",
+      "sentence": "Samuel saute dans l’autobus, mais Simon et Sophie sont déjà assis sur le siège."
+    },
+    {
+      "level": "a1",
+      "word": "basketball",
+      "sentence": "Sophie joue au basketball samedi."
+    },
+    {
+      "level": "a2",
+      "word": "basketball",
+      "sentence": "Simon regarde le basketball avec Sophie et Sacha samedi soir."
+    },
+    {
+      "level": "b1",
+      "word": "basketball",
+      "sentence": "Samuel adore le basketball, mais Simon et Sophie préfèrent le ski sans le saut."
+    },
+    {
+      "level": "a1",
+      "word": "baskets",
+      "sentence": "Sophie met ses baskets sales."
+    },
+    {
+      "level": "a2",
+      "word": "baskets",
+      "sentence": "Simon sort ses baskets pour Sophie et Sacha samedi soir."
+    },
+    {
+      "level": "b1",
+      "word": "baskets",
+      "sentence": "Samuel cherche ses baskets sales, mais Simon et Sophie les ont mises sur la chaise."
+    },
+    {
+      "level": "a1",
+      "word": "biscuit",
+      "sentence": "Sophie mange un biscuit sucré."
+    },
+    {
+      "level": "a2",
+      "word": "biscuit",
+      "sentence": "Simon sert un biscuit sucré à Sophie et à Sacha samedi."
+    },
+    {
+      "level": "b1",
+      "word": "biscuit",
+      "sentence": "Samuel sert un biscuit sucré, mais Simon et Sophie préfèrent un gâteau sans sucre."
+    },
+    {
+      "level": "a1",
+      "word": "boisson",
+      "sentence": "Sophie boit une boisson sucrée."
+    },
+    {
+      "level": "a2",
+      "word": "boisson",
+      "sentence": "Simon sert une boisson sucrée à Sophie et à Sacha samedi."
+    },
+    {
+      "level": "b1",
+      "word": "boisson",
+      "sentence": "Samuel sert une boisson fraîche, mais Simon et Sophie préfèrent la boisson sans sucre."
+    },
+    {
+      "level": "a1",
+      "word": "boucles d'oreilles",
+      "sentence": "Sophie perd ses boucles d’oreilles."
+    },
+    {
+      "level": "a2",
+      "word": "boucles d'oreilles",
+      "sentence": "Simon cherche les boucles d’oreilles de Sophie sur la chaise."
+    },
+    {
+      "level": "b1",
+      "word": "boucles d'oreilles",
+      "sentence": "Samuel trouve les boucles d’oreilles de Sophie, mais Simon sait qu’elles sont sales."
+    },
+    {
+      "level": "a1",
+      "word": "boussole",
+      "sentence": "Sophie sort la boussole sans Simon."
+    },
+    {
+      "level": "a2",
+      "word": "boussole",
+      "sentence": "Simon suit la boussole avec Sophie et Sacha samedi soir."
+    },
+    {
+      "level": "b1",
+      "word": "boussole",
+      "sentence": "Samuel sort la boussole, mais Simon et Sophie savent déjà que le sud est ici."
+    },
+    {
+      "level": "a1",
+      "word": "brosse",
+      "sentence": "Sophie prend la brosse de Simon."
+    },
+    {
+      "level": "a2",
+      "word": "brosse",
+      "sentence": "Simon brosse le sol avec la brosse de Sophie et de Sacha."
+    },
+    {
+      "level": "b1",
+      "word": "brosse",
+      "sentence": "Samuel prend la brosse sale, mais Simon et Sophie la lavent sous le robinet."
+    },
+    {
+      "level": "a1",
+      "word": "brosse à dents",
+      "sentence": "Sophie prend sa brosse à dents."
+    },
+    {
+      "level": "a2",
+      "word": "brosse à dents",
+      "sentence": "Simon sort sa brosse à dents pour Sophie et Sacha samedi."
+    },
+    {
+      "level": "b1",
+      "word": "brosse à dents",
+      "sentence": "Samuel range sa brosse à dents, mais Simon et Sophie la mettent sur le lavabo."
+    },
+    {
+      "level": "a1",
+      "word": "bus",
+      "sentence": "Sophie attend le bus sans Simon."
+    },
+    {
+      "level": "a2",
+      "word": "bus",
+      "sentence": "Simon sort du bus avec Sophie et Sacha samedi soir."
+    },
+    {
+      "level": "b1",
+      "word": "bus",
+      "sentence": "Samuel court pour le bus, mais Simon et Sophie sont déjà assis dedans sans lui."
+    },
+    {
+      "level": "a1",
+      "word": "caissière",
+      "sentence": "Sophie est caissière sans souci."
+    },
+    {
+      "level": "a2",
+      "word": "caissière",
+      "sentence": "Simon salue la caissière Sophie qui sert Sacha samedi."
+    },
+    {
+      "level": "b1",
+      "word": "caissière",
+      "sentence": "Samuel remercie la caissière, car Simon et Sophie sont sans monnaie ce soir."
+    },
+    {
+      "level": "a1",
+      "word": "casque",
+      "sentence": "Sophie met son casque sans Simon."
+    },
+    {
+      "level": "a2",
+      "word": "casque",
+      "sentence": "Simon sort le casque de Sophie et de Sacha samedi soir."
+    },
+    {
+      "level": "b1",
+      "word": "casque",
+      "sentence": "Samuel pose son casque sur le sol, mais Simon et Sophie le trouvent sale."
+    },
+    {
+      "level": "a1",
+      "word": "casquette",
+      "sentence": "Sophie porte sa casquette sale."
+    },
+    {
+      "level": "a2",
+      "word": "casquette",
+      "sentence": "Simon sort la casquette de Sophie et de Sacha samedi soir."
+    },
+    {
+      "level": "b1",
+      "word": "casquette",
+      "sentence": "Samuel perd sa casquette sale, mais Simon et Sophie la trouvent sous le siège."
+    },
+    {
+      "level": "a1",
+      "word": "cassis",
+      "sentence": "Sophie boit du cassis sucré."
+    },
+    {
+      "level": "a2",
+      "word": "cassis",
+      "sentence": "Simon sert du cassis sucré à Sophie et à Sacha samedi."
+    },
+    {
+      "level": "b1",
+      "word": "cassis",
+      "sentence": "Samuel cueille du cassis, mais Simon et Sophie préfèrent le sirop de sureau."
+    },
+    {
+      "level": "a1",
+      "word": "cerise",
+      "sentence": "Sophie mange une cerise sucrée."
+    },
+    {
+      "level": "a2",
+      "word": "cerise",
+      "sentence": "Simon sert une cerise sucrée à Sophie et à Sacha samedi."
+    },
+    {
+      "level": "b1",
+      "word": "cerise",
+      "sentence": "Samuel cueille une cerise, mais Simon et Sophie sont sûrs qu’elle est trop sucrée."
+    },
+    {
+      "level": "a1",
+      "word": "cerisier",
+      "sentence": "Sophie grimpe sur le cerisier."
+    },
+    {
+      "level": "a2",
+      "word": "cerisier",
+      "sentence": "Simon suit Sophie et Sacha sous le cerisier samedi soir."
+    },
+    {
+      "level": "b1",
+      "word": "cerisier",
+      "sentence": "Samuel s’assoit sous le cerisier, mais Simon et Sophie restent sur le sol."
+    },
+    {
+      "level": "a1",
+      "word": "chaussettes",
+      "sentence": "Sophie met ses chaussettes sales."
+    },
+    {
+      "level": "a2",
+      "word": "chaussettes",
+      "sentence": "Simon sort les chaussettes de Sophie et de Sacha samedi soir."
+    },
+    {
+      "level": "b1",
+      "word": "chaussettes",
+      "sentence": "Samuel cherche ses chaussettes sales, mais Simon et Sophie les trouvent sous le lit."
+    },
+    {
+      "level": "a1",
+      "word": "chaussures",
+      "sentence": "Sophie met ses chaussures sales."
+    },
+    {
+      "level": "a2",
+      "word": "chaussures",
+      "sentence": "Simon sort les chaussures de Sophie et de Sacha samedi soir."
+    },
+    {
+      "level": "b1",
+      "word": "chaussures",
+      "sentence": "Samuel nettoie ses chaussures sales, mais Simon et Sophie sont sûrs qu’elles seront sales."
+    },
+    {
+      "level": "a1",
+      "word": "ciseaux",
+      "sentence": "Sophie prend les ciseaux de Simon."
+    },
+    {
+      "level": "a2",
+      "word": "ciseaux",
+      "sentence": "Simon coupe le papier avec les ciseaux de Sophie et de Sacha."
+    },
+    {
+      "level": "b1",
+      "word": "ciseaux",
+      "sentence": "Samuel range les ciseaux dans le tiroir, mais Simon et Sophie les sortent samedi."
+    },
+    {
+      "level": "a1",
+      "word": "classeur",
+      "sentence": "Sophie ouvre le classeur de Simon."
+    },
+    {
+      "level": "a2",
+      "word": "classeur",
+      "sentence": "Simon sort le classeur de Sophie et de Sacha samedi soir."
+    },
+    {
+      "level": "b1",
+      "word": "classeur",
+      "sentence": "Samuel cherche le classeur de Simon, mais Sophie sait qu’il est sous le bureau."
+    }
+  ],
   "type10": [],
   "type12": [],
   "type14": [],

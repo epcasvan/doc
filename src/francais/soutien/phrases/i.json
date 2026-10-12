@@ -1,5 +1,366 @@
 {
-  "type9": [],
+  "type9": [
+    {
+      "level": "a1",
+      "word": "ami",
+      "sentence": "Mon ami Michel arrive ici."
+    },
+    {
+      "level": "a2",
+      "word": "ami",
+      "sentence": "Mon ami Eric habite près de Nice et il visite Lyon."
+    },
+    {
+      "level": "b1",
+      "word": "ami",
+      "sentence": "Mon ami Dimitri invite Lili et Mia à dîner, mais ils arrivent tard."
+    },
+    {
+      "level": "a1",
+      "word": "basilic",
+      "sentence": "Le basilic de Lili est joli."
+    },
+    {
+      "level": "a2",
+      "word": "basilic",
+      "sentence": "Mimi cultive du basilic dans un petit pot près de la cuisine."
+    },
+    {
+      "level": "b1",
+      "word": "basilic",
+      "sentence": "Michel cultive du basilic et du persil dans son jardin et Lili les vend."
+    },
+    {
+      "level": "a1",
+      "word": "biberon",
+      "sentence": "Le biberon de Mimi est vide."
+    },
+    {
+      "level": "a2",
+      "word": "biberon",
+      "sentence": "Cécile chauffe le biberon de Mimi dans la cuisine."
+    },
+    {
+      "level": "b1",
+      "word": "biberon",
+      "sentence": "Le soir, Cécile prépare un biberon pour Mimi, puis elle lit une histoire à Lili."
+    },
+    {
+      "level": "a1",
+      "word": "bijou",
+      "sentence": "Le bijou de Lili brille."
+    },
+    {
+      "level": "a2",
+      "word": "bijou",
+      "sentence": "Cécile offre un joli bijou à sa copine Mimi pour son anniversaire."
+    },
+    {
+      "level": "b1",
+      "word": "bijou",
+      "sentence": "Dimitri vend un bijou ancien à Nicolas, mais Lili préfère un petit bijou rigolo."
+    },
+    {
+      "level": "a1",
+      "word": "bille",
+      "sentence": "Mimi a une bille rouge."
+    },
+    {
+      "level": "a2",
+      "word": "bille",
+      "sentence": "Dans la cour, Mimi lance sa bille vers Cyril qui sourit."
+    },
+    {
+      "level": "b1",
+      "word": "bille",
+      "sentence": "À midi, Mimi et Cyril jouent aux billes et Lili compte les points."
+    },
+    {
+      "level": "a1",
+      "word": "billet",
+      "sentence": "Mimi achète un billet de train."
+    },
+    {
+      "level": "a2",
+      "word": "billet",
+      "sentence": "Cyril prend un billet de bus pour aller à Nice avec Mimi."
+    },
+    {
+      "level": "b1",
+      "word": "billet",
+      "sentence": "Mimi a acheté un billet de train à Lille, mais Cyril a oublié son billet."
+    },
+    {
+      "level": "a1",
+      "word": "briquet",
+      "sentence": "Le briquet de Lili brille."
+    },
+    {
+      "level": "a2",
+      "word": "briquet",
+      "sentence": "Cyril cherche son briquet dans le tiroir de la cuisine."
+    },
+    {
+      "level": "b1",
+      "word": "briquet",
+      "sentence": "Mimi trouve un briquet dans le tiroir et Lili dit qu’il est vide."
+    },
+    {
+      "level": "a1",
+      "word": "brocoli",
+      "sentence": "Lili cuit du brocoli ici."
+    },
+    {
+      "level": "a2",
+      "word": "brocoli",
+      "sentence": "Mimi cuisine du brocoli et du riz, puis Cyril dit merci."
+    },
+    {
+      "level": "b1",
+      "word": "brocoli",
+      "sentence": "Dimitri mange du brocoli à midi, mais Lili préfère le riz avec du fromage."
+    },
+    {
+      "level": "a1",
+      "word": "cahier",
+      "sentence": "Le cahier de Lili est joli."
+    },
+    {
+      "level": "a2",
+      "word": "cahier",
+      "sentence": "Mimi écrit son prénom sur le cahier de Cyril qui sourit."
+    },
+    {
+      "level": "b1",
+      "word": "cahier",
+      "sentence": "Lili range son cahier dans le tiroir, mais Cyril oublie le sien sur la chaise."
+    },
+    {
+      "level": "a1",
+      "word": "canari",
+      "sentence": "Le canari de Lili chante."
+    },
+    {
+      "level": "a2",
+      "word": "canari",
+      "sentence": "Mimi nourrit son canari avec du riz et des graines à midi."
+    },
+    {
+      "level": "b1",
+      "word": "canari",
+      "sentence": "Le canari de Cyril chante très joliment dès midi, mais Lili dit qu’il crie."
+    },
+    {
+      "level": "a1",
+      "word": "cerise",
+      "sentence": "Mimi mange une cerise rouge."
+    },
+    {
+      "level": "a2",
+      "word": "cerise",
+      "sentence": "Cyril pose une cerise sur le gâteau de Mimi et de Lili."
+    },
+    {
+      "level": "b1",
+      "word": "cerise",
+      "sentence": "Dans le jardin de Lili, il y a une cerise que Mimi cueille avec Cyril."
+    },
+    {
+      "level": "a1",
+      "word": "cerisier",
+      "sentence": "Le cerisier de Lili est joli."
+    },
+    {
+      "level": "a2",
+      "word": "cerisier",
+      "sentence": "Au printemps, le cerisier de Mimi a des fleurs roses."
+    },
+    {
+      "level": "b1",
+      "word": "cerisier",
+      "sentence": "Mimi cueille des cerises dans le cerisier de Cyril, puis Lili fait une tarte."
+    },
+    {
+      "level": "a1",
+      "word": "chemise",
+      "sentence": "La chemise de Mimi est jolie."
+    },
+    {
+      "level": "a2",
+      "word": "chemise",
+      "sentence": "Cyril lave la chemise de Lili avant midi, puis il la repasse."
+    },
+    {
+      "level": "b1",
+      "word": "chemise",
+      "sentence": "Mimi a mis une chemise blanche pour aller à son premier rendez-vous avec Cyril."
+    },
+    {
+      "level": "a1",
+      "word": "citron",
+      "sentence": "Le citron de Mimi est vert."
+    },
+    {
+      "level": "a2",
+      "word": "citron",
+      "sentence": "Lili presse un citron dans l’eau de Mimi et de Cyril."
+    },
+    {
+      "level": "b1",
+      "word": "citron",
+      "sentence": "Cyril ajoute du citron dans la soupe de Lili, mais Mimi n’aime pas."
+    },
+    {
+      "level": "a1",
+      "word": "cookie",
+      "sentence": "Mimi mange un cookie ici."
+    },
+    {
+      "level": "a2",
+      "word": "cookie",
+      "sentence": "Cyril achète un cookie à midi pour Mimi et pour Lili."
+    },
+    {
+      "level": "b1",
+      "word": "cookie",
+      "sentence": "Lili a fait un cookie pour Mimi, mais Cyril l’a mangé avant midi."
+    },
+    {
+      "level": "a1",
+      "word": "crocodile",
+      "sentence": "Le crocodile de Mimi est vert."
+    },
+    {
+      "level": "a2",
+      "word": "crocodile",
+      "sentence": "Au zoo, Mimi et Cyril visitent le crocodile avec Lili."
+    },
+    {
+      "level": "b1",
+      "word": "crocodile",
+      "sentence": "Mimi dessine un crocodile, et Cyril dit qu’il ressemble à un lézard."
+    },
+    {
+      "level": "a1",
+      "word": "épinard",
+      "sentence": "Lili cuisine l’épinard de Mimi."
+    },
+    {
+      "level": "a2",
+      "word": "épinard",
+      "sentence": "Cyril lit la recette et il cuit l’épinard dans du riz."
+    },
+    {
+      "level": "b1",
+      "word": "épinard",
+      "sentence": "Mimi achète un épinard frais pour Cyril, mais Lili dit qu’elle préfère le riz."
+    },
+    {
+      "level": "a1",
+      "word": "escaliers",
+      "sentence": "Les escaliers de Lili brillent."
+    },
+    {
+      "level": "a2",
+      "word": "escaliers",
+      "sentence": "Cyril monte les escaliers et Mimi attend dans le hall."
+    },
+    {
+      "level": "b1",
+      "word": "escaliers",
+      "sentence": "Dans l’immeuble de Lili, les escaliers sont raides, alors Mimi prend l’ascenseur."
+    },
+    {
+      "level": "a1",
+      "word": "fille",
+      "sentence": "La fille de Lili est jolie."
+    },
+    {
+      "level": "a2",
+      "word": "fille",
+      "sentence": "Ma fille Mimi dessine un lapin sur la table de Cyril."
+    },
+    {
+      "level": "b1",
+      "word": "fille",
+      "sentence": "La fille de Cyril sourit à midi, mais Lili dit qu’elle est timide."
+    },
+    {
+      "level": "a1",
+      "word": "fourmi",
+      "sentence": "La fourmi de Lili marche."
+    },
+    {
+      "level": "a2",
+      "word": "fourmi",
+      "sentence": "Mimi voit une fourmi qui marche sur le sucre de Cyril."
+    },
+    {
+      "level": "b1",
+      "word": "fourmi",
+      "sentence": "Dans la cuisine de Lili, une fourmi traverse le riz, puis Mimi la sort ici."
+    },
+    {
+      "level": "a1",
+      "word": "frigo",
+      "sentence": "Le frigo de Lili est vide."
+    },
+    {
+      "level": "a2",
+      "word": "frigo",
+      "sentence": "Mimi a mis du riz dans le frigo de Cyril."
+    },
+    {
+      "level": "b1",
+      "word": "frigo",
+      "sentence": "Le frigo de Lili est vide, alors Mimi file acheter du riz au marché."
+    },
+    {
+      "level": "a1",
+      "word": "girafe",
+      "sentence": "La girafe de Lili est jolie."
+    },
+    {
+      "level": "a2",
+      "word": "girafe",
+      "sentence": "Au zoo, Mimi dit qu’elle adore la girafe de Cyril."
+    },
+    {
+      "level": "b1",
+      "word": "girafe",
+      "sentence": "Mimi dessine une girafe sur le mur de la chambre de Lili, mais Cyril rit."
+    },
+    {
+      "level": "a1",
+      "word": "guitare",
+      "sentence": "Cyril joue de la guitare ici."
+    },
+    {
+      "level": "a2",
+      "word": "guitare",
+      "sentence": "Mimi apprend la guitare avec Cyril, qui joue très bien."
+    },
+    {
+      "level": "b1",
+      "word": "guitare",
+      "sentence": "Le dimanche, Lili écoute Cyril qui joue de la guitare, et Mimi chante avec lui."
+    },
+    {
+      "level": "a1",
+      "word": "hérisson",
+      "sentence": "Le hérisson de Lili dort."
+    },
+    {
+      "level": "a2",
+      "word": "hérisson",
+      "sentence": "Mimi voit un hérisson qui passe dans le jardin de Cyril."
+    },
+    {
+      "level": "b1",
+      "word": "hérisson",
+      "sentence": "Le hérisson de Lili a mangé du riz, mais Mimi dit qu’il a mal."
+    }
+  ],
   "type10": [],
   "type12": [],
   "type14": [],

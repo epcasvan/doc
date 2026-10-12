@@ -1,5 +1,366 @@
 {
-  "type9": [],
+  "type9": [
+    {
+      "level": "a1",
+      "word": "abeille",
+      "sentence": "Camille regarde l’abeille avec Cyrille."
+    },
+    {
+      "level": "a2",
+      "word": "abeille",
+      "sentence": "Mireille regarde l’abeille dans le jardin avec Camille et Cyrille."
+    },
+    {
+      "level": "b1",
+      "word": "abeille",
+      "sentence": "Guillaume regarde l’abeille dans le jardin, mais Camille et Mireille préfèrent rester avec Cyrille."
+    },
+    {
+      "level": "a1",
+      "word": "abeilles",
+      "sentence": "Camille regarde les abeilles avec Cyrille."
+    },
+    {
+      "level": "a2",
+      "word": "abeilles",
+      "sentence": "Mireille regarde les abeilles dans le jardin avec Camille et Cyrille."
+    },
+    {
+      "level": "b1",
+      "word": "abeilles",
+      "sentence": "Guillaume regarde les abeilles dans le jardin, mais Camille et Mireille préfèrent rester avec Cyrille."
+    },
+    {
+      "level": "a1",
+      "word": "appareil photo",
+      "sentence": "Camille prend l’appareil photo avec Cyrille."
+    },
+    {
+      "level": "a2",
+      "word": "appareil photo",
+      "sentence": "Mireille prend l’appareil photo dans le jardin avec Camille et Cyrille."
+    },
+    {
+      "level": "b1",
+      "word": "appareil photo",
+      "sentence": "Guillaume prend l’appareil photo dans le jardin, mais Camille et Mireille préfèrent Cyrille."
+    },
+    {
+      "level": "a1",
+      "word": "billard",
+      "sentence": "Camille joue au billard avec Cyrille."
+    },
+    {
+      "level": "a2",
+      "word": "billard",
+      "sentence": "Mireille joue au billard dans le jardin avec Camille et Cyrille."
+    },
+    {
+      "level": "b1",
+      "word": "billard",
+      "sentence": "Guillaume joue au billard dans le jardin, mais Camille et Mireille préfèrent rester avec Cyrille."
+    },
+    {
+      "level": "a1",
+      "word": "bille",
+      "sentence": "Camille lance une bille avec Cyrille."
+    },
+    {
+      "level": "a2",
+      "word": "bille",
+      "sentence": "Mireille lance une bille dans le jardin avec Camille et Cyrille."
+    },
+    {
+      "level": "b1",
+      "word": "bille",
+      "sentence": "Guillaume lance une bille dans le jardin, mais Camille et Mireille préfèrent rester avec Cyrille."
+    },
+    {
+      "level": "a1",
+      "word": "billes",
+      "sentence": "Camille perd des billes avec Cyrille."
+    },
+    {
+      "level": "a2",
+      "word": "billes",
+      "sentence": "Mireille perd des billes dans le jardin avec Camille et Cyrille."
+    },
+    {
+      "level": "b1",
+      "word": "billes",
+      "sentence": "Guillaume perd des billes dans le jardin, mais Camille et Mireille préfèrent rester avec Cyrille."
+    },
+    {
+      "level": "a1",
+      "word": "boucles d'oreilles",
+      "sentence": "Camille perd ses boucles d’oreilles."
+    },
+    {
+      "level": "a2",
+      "word": "boucles d'oreilles",
+      "sentence": "Mireille perd ses boucles d’oreilles dans le jardin avec Camille."
+    },
+    {
+      "level": "b1",
+      "word": "boucles d'oreilles",
+      "sentence": "Guillaume perd ses boucles d’oreilles dans le jardin, mais Camille et Mireille préfèrent Cyrille."
+    },
+    {
+      "level": "a1",
+      "word": "bouteille",
+      "sentence": "Camille boit la bouteille avec Cyrille."
+    },
+    {
+      "level": "a2",
+      "word": "bouteille",
+      "sentence": "Mireille boit la bouteille dans le jardin avec Camille et Cyrille."
+    },
+    {
+      "level": "b1",
+      "word": "bouteille",
+      "sentence": "Guillaume boit la bouteille dans le jardin, mais Camille et Mireille préfèrent rester avec Cyrille."
+    },
+    {
+      "level": "a1",
+      "word": "bouteille deau",
+      "sentence": "Camille boit la bouteille d’eau."
+    },
+    {
+      "level": "a2",
+      "word": "bouteille deau",
+      "sentence": "Mireille boit la bouteille d’eau dans le jardin avec Camille."
+    },
+    {
+      "level": "b1",
+      "word": "bouteille deau",
+      "sentence": "Guillaume boit la bouteille d’eau dans le jardin, mais Camille et Mireille préfèrent Cyrille."
+    },
+    {
+      "level": "a1",
+      "word": "bouteilles",
+      "sentence": "Camille range les bouteilles avec Cyrille."
+    },
+    {
+      "level": "a2",
+      "word": "bouteilles",
+      "sentence": "Mireille range les bouteilles dans le jardin avec Camille et Cyrille."
+    },
+    {
+      "level": "b1",
+      "word": "bouteilles",
+      "sentence": "Guillaume range les bouteilles dans le jardin, mais Camille et Mireille préfèrent rester avec Cyrille."
+    },
+    {
+      "level": "a1",
+      "word": "brindille",
+      "sentence": "Camille ramasse une brindille avec Cyrille."
+    },
+    {
+      "level": "a2",
+      "word": "brindille",
+      "sentence": "Mireille ramasse une brindille dans le jardin avec Camille et Cyrille."
+    },
+    {
+      "level": "b1",
+      "word": "brindille",
+      "sentence": "Guillaume ramasse une brindille dans le jardin, mais Camille et Mireille préfèrent rester avec Cyrille."
+    },
+    {
+      "level": "a1",
+      "word": "brindilles",
+      "sentence": "Camille ramasse des brindilles avec Cyrille."
+    },
+    {
+      "level": "a2",
+      "word": "brindilles",
+      "sentence": "Mireille ramasse des brindilles dans le jardin avec Camille et Cyrille."
+    },
+    {
+      "level": "b1",
+      "word": "brindilles",
+      "sentence": "Guillaume ramasse des brindilles dans le jardin, mais Camille et Mireille préfèrent rester avec Cyrille."
+    },
+    {
+      "level": "a1",
+      "word": "cahier",
+      "sentence": "Camille ouvre son cahier avec Cyrille."
+    },
+    {
+      "level": "a2",
+      "word": "cahier",
+      "sentence": "Mireille ouvre son cahier dans le jardin avec Camille et Cyrille."
+    },
+    {
+      "level": "b1",
+      "word": "cahier",
+      "sentence": "Guillaume ouvre son cahier dans le jardin, mais Camille et Mireille préfèrent rester avec Cyrille."
+    },
+    {
+      "level": "a1",
+      "word": "cerisier",
+      "sentence": "Camille grimpe au cerisier avec Cyrille."
+    },
+    {
+      "level": "a2",
+      "word": "cerisier",
+      "sentence": "Mireille grimpe au cerisier dans le jardin avec Camille et Cyrille."
+    },
+    {
+      "level": "b1",
+      "word": "cerisier",
+      "sentence": "Guillaume grimpe au cerisier dans le jardin, mais Camille et Mireille préfèrent rester avec Cyrille."
+    },
+    {
+      "level": "a1",
+      "word": "chataignier",
+      "sentence": "Camille voit un châtaignier avec Cyrille."
+    },
+    {
+      "level": "a2",
+      "word": "chataignier",
+      "sentence": "Mireille voit un châtaignier dans le jardin avec Camille et Cyrille."
+    },
+    {
+      "level": "b1",
+      "word": "chataignier",
+      "sentence": "Guillaume voit un châtaignier dans le jardin, mais Camille et Mireille préfèrent rester avec Cyrille."
+    },
+    {
+      "level": "a1",
+      "word": "chenille",
+      "sentence": "Camille voit une chenille avec Cyrille."
+    },
+    {
+      "level": "a2",
+      "word": "chenille",
+      "sentence": "Mireille voit une chenille dans le jardin avec Camille et Cyrille."
+    },
+    {
+      "level": "b1",
+      "word": "chenille",
+      "sentence": "Guillaume voit une chenille dans le jardin, mais Camille et Mireille préfèrent rester avec Cyrille."
+    },
+    {
+      "level": "a1",
+      "word": "chenilles",
+      "sentence": "Camille voit les chenilles avec Cyrille."
+    },
+    {
+      "level": "a2",
+      "word": "chenilles",
+      "sentence": "Mireille voit les chenilles dans le jardin avec Camille et Cyrille."
+    },
+    {
+      "level": "b1",
+      "word": "chenilles",
+      "sentence": "Guillaume voit les chenilles dans le jardin, mais Camille et Mireille préfèrent rester avec Cyrille."
+    },
+    {
+      "level": "a1",
+      "word": "citrouille",
+      "sentence": "Camille coupe la citrouille avec Cyrille."
+    },
+    {
+      "level": "a2",
+      "word": "citrouille",
+      "sentence": "Mireille coupe la citrouille dans le jardin avec Camille et Cyrille."
+    },
+    {
+      "level": "b1",
+      "word": "citrouille",
+      "sentence": "Guillaume coupe la citrouille dans le jardin, mais Camille et Mireille préfèrent rester avec Cyrille."
+    },
+    {
+      "level": "a1",
+      "word": "clavier",
+      "sentence": "Camille tape sur le clavier avec Cyrille."
+    },
+    {
+      "level": "a2",
+      "word": "clavier",
+      "sentence": "Mireille tape sur le clavier dans le jardin avec Camille et Cyrille."
+    },
+    {
+      "level": "b1",
+      "word": "clavier",
+      "sentence": "Guillaume tape sur le clavier dans le jardin, mais Camille et Mireille préfèrent Cyrille."
+    },
+    {
+      "level": "a1",
+      "word": "collier",
+      "sentence": "Camille porte un collier avec Cyrille."
+    },
+    {
+      "level": "a2",
+      "word": "collier",
+      "sentence": "Mireille porte un collier dans le jardin avec Camille et Cyrille."
+    },
+    {
+      "level": "b1",
+      "word": "collier",
+      "sentence": "Guillaume porte un collier dans le jardin, mais Camille et Mireille préfèrent rester avec Cyrille."
+    },
+    {
+      "level": "a1",
+      "word": "crayon",
+      "sentence": "Camille prend un crayon avec Cyrille."
+    },
+    {
+      "level": "a2",
+      "word": "crayon",
+      "sentence": "Mireille prend un crayon dans le jardin avec Camille et Cyrille."
+    },
+    {
+      "level": "b1",
+      "word": "crayon",
+      "sentence": "Guillaume prend un crayon dans le jardin, mais Camille et Mireille préfèrent rester avec Cyrille."
+    },
+    {
+      "level": "a1",
+      "word": "cuisinier",
+      "sentence": "Camille parle au cuisinier avec Cyrille."
+    },
+    {
+      "level": "a2",
+      "word": "cuisinier",
+      "sentence": "Mireille parle au cuisinier dans le jardin avec Camille et Cyrille."
+    },
+    {
+      "level": "b1",
+      "word": "cuisinier",
+      "sentence": "Guillaume parle au cuisinier dans le jardin, mais Camille et Mireille préfèrent rester avec Cyrille."
+    },
+    {
+      "level": "a1",
+      "word": "escalier",
+      "sentence": "Camille monte l’escalier avec Cyrille."
+    },
+    {
+      "level": "a2",
+      "word": "escalier",
+      "sentence": "Mireille monte l’escalier dans le jardin avec Camille et Cyrille."
+    },
+    {
+      "level": "b1",
+      "word": "escalier",
+      "sentence": "Guillaume monte l’escalier dans le jardin, mais Camille et Mireille préfèrent rester avec Cyrille."
+    },
+    {
+      "level": "a1",
+      "word": "fauteuil",
+      "sentence": "Camille s’assoit dans le fauteuil."
+    },
+    {
+      "level": "a2",
+      "word": "fauteuil",
+      "sentence": "Mireille s’assoit dans le fauteuil dans le jardin avec Camille."
+    },
+    {
+      "level": "b1",
+      "word": "fauteuil",
+      "sentence": "Guillaume s’assoit dans le fauteuil dans le jardin, mais Camille et Mireille préfèrent Cyrille."
+    }
+  ],
   "type10": [],
   "type12": [],
   "type14": [],

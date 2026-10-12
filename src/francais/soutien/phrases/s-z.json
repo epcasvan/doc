@@ -1,5 +1,366 @@
 {
-  "type9": [],
+  "type9": [
+    {
+      "level": "a1",
+      "word": "ardoise",
+      "sentence": "Louise écrit sur l’ardoise."
+    },
+    {
+      "level": "a2",
+      "word": "ardoise",
+      "sentence": "Rosa pose l’ardoise sur la chaise de Louise et d’Élise."
+    },
+    {
+      "level": "b1",
+      "word": "ardoise",
+      "sentence": "Isabelle efface l’ardoise avec une éponge, mais Rosa et Louise la trouvent déjà grise."
+    },
+    {
+      "level": "a1",
+      "word": "arrosoir",
+      "sentence": "Rosa remplit l’arrosoir de Louise."
+    },
+    {
+      "level": "a2",
+      "word": "arrosoir",
+      "sentence": "Élise utilise l’arrosoir de Rosa dans la maison de Louise."
+    },
+    {
+      "level": "b1",
+      "word": "arrosoir",
+      "sentence": "Isabelle prend l’arrosoir de Rosa, mais Louise et Élise arrosent déjà la rose."
+    },
+    {
+      "level": "a1",
+      "word": "basilic",
+      "sentence": "Rosa cultive du basilic à la maison."
+    },
+    {
+      "level": "a2",
+      "word": "basilic",
+      "sentence": "Louise pose le basilic sur la chaise de Rosa et d’Élise."
+    },
+    {
+      "level": "b1",
+      "word": "basilic",
+      "sentence": "Isabelle arrose le basilic avec de l’eau, mais Rosa et Louise préfèrent la rose."
+    },
+    {
+      "level": "a1",
+      "word": "blouson",
+      "sentence": "Rosa met son blouson de Louise."
+    },
+    {
+      "level": "a2",
+      "word": "blouson",
+      "sentence": "Louise prend le blouson de Rosa dans la maison d’Élise."
+    },
+    {
+      "level": "b1",
+      "word": "blouson",
+      "sentence": "Isabelle cherche le blouson de Rosa, mais Louise et Élise le trouvent sur la chaise."
+    },
+    {
+      "level": "a1",
+      "word": "cerise",
+      "sentence": "Rosa mange une cerise de Louise."
+    },
+    {
+      "level": "a2",
+      "word": "cerise",
+      "sentence": "Louise pose une cerise sur la chaise de Rosa et d’Élise."
+    },
+    {
+      "level": "b1",
+      "word": "cerise",
+      "sentence": "Isabelle cueille une cerise bien mûre, mais Rosa et Louise préfèrent la framboise."
+    },
+    {
+      "level": "a1",
+      "word": "cerisier",
+      "sentence": "Rosa grimpe au cerisier de Louise."
+    },
+    {
+      "level": "a2",
+      "word": "cerisier",
+      "sentence": "Louise pose la chaise sous le cerisier de Rosa et d’Élise."
+    },
+    {
+      "level": "b1",
+      "word": "cerisier",
+      "sentence": "Isabelle cueille des cerises dans le cerisier, mais Rosa et Louise préfèrent la framboise."
+    },
+    {
+      "level": "a1",
+      "word": "chaise",
+      "sentence": "Rosa pose la chaise de Louise."
+    },
+    {
+      "level": "a2",
+      "word": "chaise",
+      "sentence": "Louise pose la chaise de Rosa dans la maison d’Élise."
+    },
+    {
+      "level": "b1",
+      "word": "chaise",
+      "sentence": "Isabelle repose la chaise sur le sol, mais Rosa et Louise préfèrent la mettre ailleurs."
+    },
+    {
+      "level": "a1",
+      "word": "chanteuse",
+      "sentence": "Rosa est chanteuse à Lausanne."
+    },
+    {
+      "level": "a2",
+      "word": "chanteuse",
+      "sentence": "La chanteuse Rosa chante pour Louise et Élise dans la maison."
+    },
+    {
+      "level": "b1",
+      "word": "chanteuse",
+      "sentence": "Isabelle écoute la chanteuse Rosa, mais Louise et Élise préfèrent la musique classique."
+    },
+    {
+      "level": "a1",
+      "word": "chauffeuse",
+      "sentence": "Rosa est chauffeuse de bus."
+    },
+    {
+      "level": "a2",
+      "word": "chauffeuse",
+      "sentence": "La chauffeuse Rosa conduit le bus de Louise et d’Élise."
+    },
+    {
+      "level": "b1",
+      "word": "chauffeuse",
+      "sentence": "Isabelle remercie la chauffeuse Rosa, car Louise et Élise ont raté leur arrêt."
+    },
+    {
+      "level": "a1",
+      "word": "chemise",
+      "sentence": "Rosa porte une chemise de Louise."
+    },
+    {
+      "level": "a2",
+      "word": "chemise",
+      "sentence": "Louise repasse la chemise de Rosa dans la maison d’Élise."
+    },
+    {
+      "level": "b1",
+      "word": "chemise",
+      "sentence": "Isabelle choisit une chemise grise, mais Rosa et Louise préfèrent la chemise rose."
+    },
+    {
+      "level": "a1",
+      "word": "chrysalide",
+      "sentence": "Rosa regarde la chrysalide de Louise."
+    },
+    {
+      "level": "a2",
+      "word": "chrysalide",
+      "sentence": "Louise pose la chrysalide sur la chaise de Rosa et d’Élise."
+    },
+    {
+      "level": "b1",
+      "word": "chrysalide",
+      "sentence": "Isabelle observe la chrysalide dans la maison, mais Rosa et Louise la trouvent vide."
+    },
+    {
+      "level": "a1",
+      "word": "chrysanthème",
+      "sentence": "Rosa offre un chrysanthème à Louise."
+    },
+    {
+      "level": "a2",
+      "word": "chrysanthème",
+      "sentence": "Louise pose le chrysanthème sur la chaise de Rosa et d’Élise."
+    },
+    {
+      "level": "b1",
+      "word": "chrysanthème",
+      "sentence": "Isabelle cueille un chrysanthème, mais Rosa et Louise préfèrent la rose de la maison."
+    },
+    {
+      "level": "a1",
+      "word": "ciseaux",
+      "sentence": "Rosa prend les ciseaux de Louise."
+    },
+    {
+      "level": "a2",
+      "word": "ciseaux",
+      "sentence": "Louise range les ciseaux de Rosa dans la maison d’Élise."
+    },
+    {
+      "level": "b1",
+      "word": "ciseaux",
+      "sentence": "Isabelle coupe la rose avec les ciseaux, mais Rosa et Louise préfèrent un sécateur."
+    },
+    {
+      "level": "a1",
+      "word": "climatiseur",
+      "sentence": "Rosa règle le climatiseur de Louise."
+    },
+    {
+      "level": "a2",
+      "word": "climatiseur",
+      "sentence": "Louise éteint le climatiseur de Rosa dans la maison d’Élise."
+    },
+    {
+      "level": "b1",
+      "word": "climatiseur",
+      "sentence": "Isabelle règle le climatiseur, mais Rosa et Louise trouvent que la maison est trop froide."
+    },
+    {
+      "level": "a1",
+      "word": "coiffeuse",
+      "sentence": "Rosa est coiffeuse à Lausanne."
+    },
+    {
+      "level": "a2",
+      "word": "coiffeuse",
+      "sentence": "La coiffeuse Rosa coiffe Louise et Élise dans la maison."
+    },
+    {
+      "level": "b1",
+      "word": "coiffeuse",
+      "sentence": "Isabelle remercie la coiffeuse Rosa, car Louise et Élise sont ravies de leur coupe."
+    },
+    {
+      "level": "a1",
+      "word": "cuisinier",
+      "sentence": "Rosa parle au cuisinier de Louise."
+    },
+    {
+      "level": "a2",
+      "word": "cuisinier",
+      "sentence": "Le cuisinier prépare une rose en sucre pour Rosa et pour Louise."
+    },
+    {
+      "level": "b1",
+      "word": "cuisinier",
+      "sentence": "Isabelle félicite le cuisinier, car Rosa et Louise ont aimé la mousse rose."
+    },
+    {
+      "level": "a1",
+      "word": "cuisinière",
+      "sentence": "Rosa est cuisinière à Lausanne."
+    },
+    {
+      "level": "a2",
+      "word": "cuisinière",
+      "sentence": "La cuisinière Rosa prépare une rose en sucre pour Louise."
+    },
+    {
+      "level": "b1",
+      "word": "cuisinière",
+      "sentence": "Isabelle félicite la cuisinière Rosa, car Louise et Élise ont aimé la mousse rose."
+    },
+    {
+      "level": "a1",
+      "word": "danseuse",
+      "sentence": "Rosa est danseuse à Lausanne."
+    },
+    {
+      "level": "a2",
+      "word": "danseuse",
+      "sentence": "La danseuse Rosa danse pour Louise et Élise dans la maison."
+    },
+    {
+      "level": "b1",
+      "word": "danseuse",
+      "sentence": "Isabelle admire la danseuse Rosa, mais Louise et Élise préfèrent la musique de la maison."
+    },
+    {
+      "level": "a1",
+      "word": "désert",
+      "sentence": "Rosa visite le désert de Louise."
+    },
+    {
+      "level": "a2",
+      "word": "désert",
+      "sentence": "Louise visite le désert avec Rosa et Élise en Tunisie."
+    },
+    {
+      "level": "b1",
+      "word": "désert",
+      "sentence": "Isabelle rêve du désert, mais Rosa et Louise préfèrent la maison de Denise."
+    },
+    {
+      "level": "a1",
+      "word": "falaise",
+      "sentence": "Rosa regarde la falaise de Louise."
+    },
+    {
+      "level": "a2",
+      "word": "falaise",
+      "sentence": "Louise visite la falaise avec Rosa et Élise en Tunisie."
+    },
+    {
+      "level": "b1",
+      "word": "falaise",
+      "sentence": "Isabelle regarde la falaise, mais Rosa et Louise préfèrent la plage de la maison."
+    },
+    {
+      "level": "a1",
+      "word": "flamant rose",
+      "sentence": "Rosa regarde un flamant rose."
+    },
+    {
+      "level": "a2",
+      "word": "flamant rose",
+      "sentence": "Louise voit un flamant rose avec Rosa et Élise."
+    },
+    {
+      "level": "b1",
+      "word": "flamant rose",
+      "sentence": "Isabelle prend en photo un flamant rose, mais Rosa et Louise préfèrent la maison."
+    },
+    {
+      "level": "a1",
+      "word": "fraise",
+      "sentence": "Rosa mange une fraise de Louise."
+    },
+    {
+      "level": "a2",
+      "word": "fraise",
+      "sentence": "Louise pose une fraise sur la chaise de Rosa et d’Élise."
+    },
+    {
+      "level": "b1",
+      "word": "fraise",
+      "sentence": "Isabelle cueille une fraise, mais Rosa et Louise préfèrent la framboise de la maison."
+    },
+    {
+      "level": "a1",
+      "word": "framboise",
+      "sentence": "Rosa mange une framboise de Louise."
+    },
+    {
+      "level": "a2",
+      "word": "framboise",
+      "sentence": "Louise pose une framboise sur la chaise de Rosa et d’Élise."
+    },
+    {
+      "level": "b1",
+      "word": "framboise",
+      "sentence": "Isabelle cueille une framboise, mais Rosa et Louise préfèrent la fraise de la maison."
+    },
+    {
+      "level": "a1",
+      "word": "fusée",
+      "sentence": "Rosa regarde la fusée de Louise."
+    },
+    {
+      "level": "a2",
+      "word": "fusée",
+      "sentence": "Louise lance la fusée avec Rosa et Élise à Zürich."
+    },
+    {
+      "level": "b1",
+      "word": "fusée",
+      "sentence": "Isabelle regarde la fusée, mais Rosa et Louise préfèrent la rose de la maison."
+    }
+  ],
   "type10": [],
   "type12": [],
   "type14": [],

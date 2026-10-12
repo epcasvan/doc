@@ -1,5 +1,366 @@
 {
-  "type9": [],
+  "type9": [
+    {
+      "level": "a1",
+      "word": "ardoise",
+      "sentence": "Antoine écrit trois mots sur l’ardoise."
+    },
+    {
+      "level": "a2",
+      "word": "ardoise",
+      "sentence": "Françoise efface l’ardoise noire de Benoît avant le soir."
+    },
+    {
+      "level": "b1",
+      "word": "ardoise",
+      "sentence": "Benoît lit trois mots sur l’ardoise, mais Antoine et Françoise voient le noir."
+    },
+    {
+      "level": "a1",
+      "word": "armoire",
+      "sentence": "Antoine ouvre l’armoire noire."
+    },
+    {
+      "level": "a2",
+      "word": "armoire",
+      "sentence": "Françoise range trois draps dans l’armoire de Benoît ce soir."
+    },
+    {
+      "level": "b1",
+      "word": "armoire",
+      "sentence": "Benoît voit trois pulls noirs dans l’armoire, mais Antoine et Françoise cherchent le bleu."
+    },
+    {
+      "level": "a1",
+      "word": "arrosoir",
+      "sentence": "Antoine remplit l’arrosoir noir."
+    },
+    {
+      "level": "a2",
+      "word": "arrosoir",
+      "sentence": "Françoise porte l’arrosoir de Benoît ce soir."
+    },
+    {
+      "level": "b1",
+      "word": "arrosoir",
+      "sentence": "Benoît voit trois roses et prend l’arrosoir, mais Antoine et Françoise arrosent déjà."
+    },
+    {
+      "level": "a1",
+      "word": "astéroïde",
+      "sentence": "Antoine voit un astéroïde noir."
+    },
+    {
+      "level": "a2",
+      "word": "astéroïde",
+      "sentence": "Françoise voit un astéroïde noir et trois étoiles avant le soir."
+    },
+    {
+      "level": "b1",
+      "word": "astéroïde",
+      "sentence": "Benoît voit un astéroïde noir ce soir, mais Antoine et Françoise ne le voient pas."
+    },
+    {
+      "level": "a1",
+      "word": "avoine",
+      "sentence": "Antoine donne de l’avoine à Benoît."
+    },
+    {
+      "level": "a2",
+      "word": "avoine",
+      "sentence": "Françoise donne de l’avoine au cheval de Benoît ce soir."
+    },
+    {
+      "level": "b1",
+      "word": "avoine",
+      "sentence": "Benoît voit trois sacs d’avoine, mais Antoine et Françoise nourrissent déjà le cheval noir."
+    },
+    {
+      "level": "a1",
+      "word": "baignoire",
+      "sentence": "Antoine remplit la baignoire noire."
+    },
+    {
+      "level": "a2",
+      "word": "baignoire",
+      "sentence": "Françoise voit trois canards dans la baignoire de Benoît."
+    },
+    {
+      "level": "b1",
+      "word": "baignoire",
+      "sentence": "Benoît lave la baignoire noire, mais Antoine et Françoise voient trois taches ce soir."
+    },
+    {
+      "level": "a1",
+      "word": "boire",
+      "sentence": "Antoine veut boire ce soir."
+    },
+    {
+      "level": "a2",
+      "word": "boire",
+      "sentence": "Françoise donne à boire à Benoît trois fois ce soir."
+    },
+    {
+      "level": "b1",
+      "word": "boire",
+      "sentence": "Benoît veut boire trois verres, mais Antoine et Françoise boivent du thé ce soir."
+    },
+    {
+      "level": "a1",
+      "word": "bois",
+      "sentence": "Antoine coupe du bois noir."
+    },
+    {
+      "level": "a2",
+      "word": "bois",
+      "sentence": "Françoise voit trois tas de bois chez Benoît ce soir."
+    },
+    {
+      "level": "b1",
+      "word": "bois",
+      "sentence": "Benoît coupe du bois pour Antoine, mais Françoise voit trois arbres noirs dans le froid."
+    },
+    {
+      "level": "a1",
+      "word": "boisson",
+      "sentence": "Antoine boit une boisson noire."
+    },
+    {
+      "level": "a2",
+      "word": "boisson",
+      "sentence": "Françoise prépare une boisson froide pour Benoît ce soir."
+    },
+    {
+      "level": "b1",
+      "word": "boisson",
+      "sentence": "Benoît voit une boisson noire, mais Antoine et Françoise préfèrent la boisson froide."
+    },
+    {
+      "level": "a1",
+      "word": "boîte",
+      "sentence": "Antoine ouvre la boîte noire."
+    },
+    {
+      "level": "a2",
+      "word": "boîte",
+      "sentence": "Françoise voit trois jouets dans la boîte de Benoît."
+    },
+    {
+      "level": "b1",
+      "word": "boîte",
+      "sentence": "Benoît cherche la boîte noire, mais Antoine et Françoise voient trois boîtes dans le noir."
+    },
+    {
+      "level": "a1",
+      "word": "choisir",
+      "sentence": "Antoine doit choisir ce soir."
+    },
+    {
+      "level": "a2",
+      "word": "choisir",
+      "sentence": "Françoise veut choisir trois films avec Benoît ce soir."
+    },
+    {
+      "level": "b1",
+      "word": "choisir",
+      "sentence": "Benoît doit choisir trois films, mais Antoine et Françoise voient déjà le noir ce soir."
+    },
+    {
+      "level": "a1",
+      "word": "choix",
+      "sentence": "Antoine fait un choix de trois."
+    },
+    {
+      "level": "a2",
+      "word": "choix",
+      "sentence": "Françoise voit trois choix pour Benoît ce soir."
+    },
+    {
+      "level": "b1",
+      "word": "choix",
+      "sentence": "Benoît fait un choix, mais Antoine et Françoise voient trois autres choix ce soir."
+    },
+    {
+      "level": "a1",
+      "word": "cloison",
+      "sentence": "Antoine perce la cloison noire."
+    },
+    {
+      "level": "a2",
+      "word": "cloison",
+      "sentence": "Françoise voit trois trous dans la cloison de Benoît."
+    },
+    {
+      "level": "b1",
+      "word": "cloison",
+      "sentence": "Benoît peint la cloison en noir, mais Antoine et Françoise voient trois traces ce soir."
+    },
+    {
+      "level": "a1",
+      "word": "coiffeuse",
+      "sentence": "Françoise est coiffeuse chez Antoine."
+    },
+    {
+      "level": "a2",
+      "word": "coiffeuse",
+      "sentence": "La coiffeuse Françoise coiffe trois clients chez Benoît."
+    },
+    {
+      "level": "b1",
+      "word": "coiffeuse",
+      "sentence": "Benoît voit la coiffeuse Françoise ce soir, mais Antoine préfère voir trois coiffeurs."
+    },
+    {
+      "level": "a1",
+      "word": "comptoire",
+      "sentence": "Antoine paie au comptoir noir."
+    },
+    {
+      "level": "a2",
+      "word": "comptoire",
+      "sentence": "Françoise pose trois verres sur le comptoir de Benoît."
+    },
+    {
+      "level": "b1",
+      "word": "comptoire",
+      "sentence": "Benoît essuie le comptoir noir, mais Antoine et Françoise voient trois verres ce soir."
+    },
+    {
+      "level": "a1",
+      "word": "croissant",
+      "sentence": "Antoine mange un croissant ce soir."
+    },
+    {
+      "level": "a2",
+      "word": "croissant",
+      "sentence": "Françoise offre un croissant à Benoît ce soir."
+    },
+    {
+      "level": "b1",
+      "word": "croissant",
+      "sentence": "Benoît voit un croissant chaud, mais Antoine et Françoise préfèrent trois croissants froids."
+    },
+    {
+      "level": "a1",
+      "word": "croix",
+      "sentence": "Antoine dessine une croix noire."
+    },
+    {
+      "level": "a2",
+      "word": "croix",
+      "sentence": "Françoise fait trois croix sur la carte de Benoît."
+    },
+    {
+      "level": "b1",
+      "word": "croix",
+      "sentence": "Benoît voit une croix noire, mais Antoine et Françoise font trois croix avant le soir."
+    },
+    {
+      "level": "a1",
+      "word": "doigt",
+      "sentence": "Antoine lève un doigt noir."
+    },
+    {
+      "level": "a2",
+      "word": "doigt",
+      "sentence": "Françoise pose un doigt sur la carte de Benoît ce soir."
+    },
+    {
+      "level": "b1",
+      "word": "doigt",
+      "sentence": "Benoît se blesse le doigt, mais Antoine et Françoise voient trois pansements dans le noir."
+    },
+    {
+      "level": "a1",
+      "word": "endroit",
+      "sentence": "Antoine cherche un endroit noir."
+    },
+    {
+      "level": "a2",
+      "word": "endroit",
+      "sentence": "Françoise trouve un endroit froid chez Benoît ce soir."
+    },
+    {
+      "level": "b1",
+      "word": "endroit",
+      "sentence": "Benoît cherche un endroit, mais Antoine et Françoise voient trois places libres ce soir."
+    },
+    {
+      "level": "a1",
+      "word": "entonnoir",
+      "sentence": "Antoine prend l’entonnoir noir."
+    },
+    {
+      "level": "a2",
+      "word": "entonnoir",
+      "sentence": "Françoise verse trois litres avec l’entonnoir de Benoît."
+    },
+    {
+      "level": "b1",
+      "word": "entonnoir",
+      "sentence": "Benoît cherche l’entonnoir noir, mais Antoine et Françoise voient trois bouteilles ce soir."
+    },
+    {
+      "level": "a1",
+      "word": "framboise",
+      "sentence": "Antoine mange une framboise noire."
+    },
+    {
+      "level": "a2",
+      "word": "framboise",
+      "sentence": "Françoise cueille une framboise pour Benoît ce soir."
+    },
+    {
+      "level": "b1",
+      "word": "framboise",
+      "sentence": "Benoît mange une framboise, mais Antoine et Françoise voient trois fraises dans le noir."
+    },
+    {
+      "level": "a1",
+      "word": "froid",
+      "sentence": "Antoine a très froid ce soir."
+    },
+    {
+      "level": "a2",
+      "word": "froid",
+      "sentence": "Françoise a froid dans les bras de Benoît ce soir."
+    },
+    {
+      "level": "b1",
+      "word": "froid",
+      "sentence": "Benoît a froid, mais Antoine et Françoise voient trois couvertures noires dans l’armoire."
+    },
+    {
+      "level": "a1",
+      "word": "miroir",
+      "sentence": "Antoine voit son miroir noir."
+    },
+    {
+      "level": "a2",
+      "word": "miroir",
+      "sentence": "Françoise pose un miroir noir chez Benoît ce soir."
+    },
+    {
+      "level": "b1",
+      "word": "miroir",
+      "sentence": "Benoît casse le miroir, mais Antoine et Françoise voient trois morceaux dans le noir."
+    },
+    {
+      "level": "a1",
+      "word": "moineau",
+      "sentence": "Antoine voit un moineau noir."
+    },
+    {
+      "level": "a2",
+      "word": "moineau",
+      "sentence": "Françoise donne trois graines au moineau de Benoît."
+    },
+    {
+      "level": "b1",
+      "word": "moineau",
+      "sentence": "Benoît regarde un moineau, mais Antoine et Françoise voient trois oiseaux noirs dans le froid."
+    }
+  ],
   "type10": [],
   "type12": [],
   "type14": [],

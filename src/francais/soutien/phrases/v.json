@@ -1,5 +1,366 @@
 {
-  "type9": [],
+  "type9": [
+    {
+      "level": "a1",
+      "word": "activité",
+      "sentence": "Victor a une activité avec Eva."
+    },
+    {
+      "level": "a2",
+      "word": "activité",
+      "sentence": "Vanessa vérifie l’activité de Victor avec Valentin vendredi."
+    },
+    {
+      "level": "b1",
+      "word": "activité",
+      "sentence": "Vincent a trouvé une activité pour Victor, mais Vanessa et Eva préfèrent le vélo."
+    },
+    {
+      "level": "a1",
+      "word": "avion",
+      "sentence": "Victor voit un avion vert."
+    },
+    {
+      "level": "a2",
+      "word": "avion",
+      "sentence": "Vanessa prend l’avion avec Victor et Valentin vendredi."
+    },
+    {
+      "level": "b1",
+      "word": "avion",
+      "sentence": "Vincent arrive en avion, mais Victor et Vanessa viennent à vélo avec Eva."
+    },
+    {
+      "level": "a1",
+      "word": "avocat",
+      "sentence": "Victor voit son avocat vendredi."
+    },
+    {
+      "level": "a2",
+      "word": "avocat",
+      "sentence": "Vanessa voit l’avocat de Victor avec Valentin vendredi."
+    },
+    {
+      "level": "b1",
+      "word": "avocat",
+      "sentence": "Vincent a vu l’avocat de Victor, mais Vanessa et Eva viennent à vélo vendredi."
+    },
+    {
+      "level": "a1",
+      "word": "avocate",
+      "sentence": "Victor voit son avocate vendredi."
+    },
+    {
+      "level": "a2",
+      "word": "avocate",
+      "sentence": "Vanessa vérifie l’avocate de Victor avec Valentin vendredi."
+    },
+    {
+      "level": "b1",
+      "word": "avocate",
+      "sentence": "Vincent a vu l’avocate de Victor, mais Vanessa et Eva viennent à vélo vendredi."
+    },
+    {
+      "level": "a1",
+      "word": "betterave",
+      "sentence": "Victor coupe la betterave vite."
+    },
+    {
+      "level": "a2",
+      "word": "betterave",
+      "sentence": "Vanessa cuit la betterave avec Victor et Valentin vendredi."
+    },
+    {
+      "level": "b1",
+      "word": "betterave",
+      "sentence": "Vincent vend de la betterave, mais Victor et Vanessa préfèrent le navet à Vevey."
+    },
+    {
+      "level": "a1",
+      "word": "caravane",
+      "sentence": "Victor gare la caravane vite."
+    },
+    {
+      "level": "a2",
+      "word": "caravane",
+      "sentence": "Vanessa vend la caravane de Victor avec Valentin vendredi."
+    },
+    {
+      "level": "b1",
+      "word": "caravane",
+      "sentence": "Vincent voit la caravane de Victor, mais Vanessa et Eva viennent à vélo vendredi."
+    },
+    {
+      "level": "a1",
+      "word": "cerf volant",
+      "sentence": "Victor lance un cerf volant."
+    },
+    {
+      "level": "a2",
+      "word": "cerf volant",
+      "sentence": "Vanessa vérifie le cerf volant de Victor et de Valentin vendredi."
+    },
+    {
+      "level": "b1",
+      "word": "cerf volant",
+      "sentence": "Vincent lance un cerf volant avec Victor, mais Vanessa et Eva préfèrent le vélo."
+    },
+    {
+      "level": "a1",
+      "word": "cerveau",
+      "sentence": "Victor étudie le cerveau vite."
+    },
+    {
+      "level": "a2",
+      "word": "cerveau",
+      "sentence": "Vanessa explique le cerveau à Victor et à Valentin vendredi."
+    },
+    {
+      "level": "b1",
+      "word": "cerveau",
+      "sentence": "Vincent lit un livre sur le cerveau, mais Victor et Vanessa préfèrent le vélo."
+    },
+    {
+      "level": "a1",
+      "word": "cheval",
+      "sentence": "Victor voit un cheval vif."
+    },
+    {
+      "level": "a2",
+      "word": "cheval",
+      "sentence": "Vanessa soigne le cheval de Victor avec Valentin vendredi."
+    },
+    {
+      "level": "b1",
+      "word": "cheval",
+      "sentence": "Vincent vend un cheval, mais Victor et Vanessa préfèrent garder leur vélo vendredi."
+    },
+    {
+      "level": "a1",
+      "word": "cheveux",
+      "sentence": "Victor lave ses cheveux vite."
+    },
+    {
+      "level": "a2",
+      "word": "cheveux",
+      "sentence": "Vanessa coiffe les cheveux de Victor avec Valentin vendredi."
+    },
+    {
+      "level": "b1",
+      "word": "cheveux",
+      "sentence": "Vincent a les cheveux très longs, mais Victor et Vanessa préfèrent les voir courts."
+    },
+    {
+      "level": "a1",
+      "word": "chèvre",
+      "sentence": "Victor voit une chèvre vive."
+    },
+    {
+      "level": "a2",
+      "word": "chèvre",
+      "sentence": "Vanessa nourrit la chèvre de Victor avec Valentin vendredi."
+    },
+    {
+      "level": "b1",
+      "word": "chèvre",
+      "sentence": "Vincent vend une chèvre, mais Victor et Vanessa préfèrent garder la vache vendredi."
+    },
+    {
+      "level": "a1",
+      "word": "clavier",
+      "sentence": "Victor tape sur le clavier."
+    },
+    {
+      "level": "a2",
+      "word": "clavier",
+      "sentence": "Vanessa nettoie le clavier de Victor avec Valentin vendredi."
+    },
+    {
+      "level": "b1",
+      "word": "clavier",
+      "sentence": "Vincent a un clavier neuf, mais Victor et Vanessa préfèrent le vieux clavier vert."
+    },
+    {
+      "level": "a1",
+      "word": "cravate",
+      "sentence": "Victor met sa cravate verte."
+    },
+    {
+      "level": "a2",
+      "word": "cravate",
+      "sentence": "Vanessa choisit la cravate de Victor avec Valentin vendredi."
+    },
+    {
+      "level": "b1",
+      "word": "cravate",
+      "sentence": "Vincent a une cravate verte, mais Victor et Vanessa préfèrent la vieille cravate."
+    },
+    {
+      "level": "a1",
+      "word": "crevette",
+      "sentence": "Victor mange une crevette vive."
+    },
+    {
+      "level": "a2",
+      "word": "crevette",
+      "sentence": "Vanessa cuit la crevette de Victor avec Valentin vendredi."
+    },
+    {
+      "level": "b1",
+      "word": "crevette",
+      "sentence": "Vincent vend une crevette fraîche, mais Victor et Vanessa préfèrent le poisson vendredi."
+    },
+    {
+      "level": "a1",
+      "word": "enveloppe",
+      "sentence": "Victor ouvre l’enveloppe de Vanessa."
+    },
+    {
+      "level": "a2",
+      "word": "enveloppe",
+      "sentence": "Vanessa envoie l’enveloppe de Victor avec Valentin vendredi."
+    },
+    {
+      "level": "b1",
+      "word": "enveloppe",
+      "sentence": "Vincent a vu l’enveloppe verte, mais Victor et Vanessa préfèrent l’ouvrir vendredi."
+    },
+    {
+      "level": "a1",
+      "word": "goyave",
+      "sentence": "Victor mange une goyave verte."
+    },
+    {
+      "level": "a2",
+      "word": "goyave",
+      "sentence": "Vanessa coupe la goyave de Victor avec Valentin vendredi."
+    },
+    {
+      "level": "b1",
+      "word": "goyave",
+      "sentence": "Vincent vend une goyave verte, mais Victor et Vanessa préfèrent la vanille vendredi."
+    },
+    {
+      "level": "a1",
+      "word": "hiver",
+      "sentence": "Victor voit la neige en hiver."
+    },
+    {
+      "level": "a2",
+      "word": "hiver",
+      "sentence": "Vanessa vit en Valais avec Victor et Valentin en hiver."
+    },
+    {
+      "level": "b1",
+      "word": "hiver",
+      "sentence": "Vincent aime l’hiver, mais Victor et Vanessa préfèrent l’été, avec leur vélo vert."
+    },
+    {
+      "level": "a1",
+      "word": "hydravion",
+      "sentence": "Victor voit un hydravion vert."
+    },
+    {
+      "level": "a2",
+      "word": "hydravion",
+      "sentence": "Vanessa prend l’hydravion de Victor avec Valentin vendredi."
+    },
+    {
+      "level": "b1",
+      "word": "hydravion",
+      "sentence": "Vincent vole en hydravion avec Eva, mais Victor et Vanessa préfèrent le vélo vendredi."
+    },
+    {
+      "level": "a1",
+      "word": "interview",
+      "sentence": "Victor passe une interview vendredi."
+    },
+    {
+      "level": "a2",
+      "word": "interview",
+      "sentence": "Vanessa prépare l’interview de Victor avec Valentin vendredi."
+    },
+    {
+      "level": "b1",
+      "word": "interview",
+      "sentence": "Vincent a vu l’interview de Victor, mais Vanessa et Eva préfèrent la vidéo vendredi."
+    },
+    {
+      "level": "a1",
+      "word": "javelot",
+      "sentence": "Victor lance le javelot vite."
+    },
+    {
+      "level": "a2",
+      "word": "javelot",
+      "sentence": "Vanessa vérifie le javelot de Victor avec Valentin vendredi."
+    },
+    {
+      "level": "b1",
+      "word": "javelot",
+      "sentence": "Vincent lance le javelot très vite, mais Victor et Vanessa préfèrent le vélo vendredi."
+    },
+    {
+      "level": "a1",
+      "word": "lavabo",
+      "sentence": "Victor lave le lavabo vite."
+    },
+    {
+      "level": "a2",
+      "word": "lavabo",
+      "sentence": "Vanessa nettoie le lavabo de Victor avec Valentin vendredi."
+    },
+    {
+      "level": "b1",
+      "word": "lavabo",
+      "sentence": "Vincent a un lavabo neuf, mais Victor et Vanessa préfèrent le vieux lavabo vert."
+    },
+    {
+      "level": "a1",
+      "word": "lavande",
+      "sentence": "Victor sent la lavande violette."
+    },
+    {
+      "level": "a2",
+      "word": "lavande",
+      "sentence": "Vanessa cueille la lavande de Victor avec Valentin vendredi."
+    },
+    {
+      "level": "b1",
+      "word": "lavande",
+      "sentence": "Vincent vend de la lavande, mais Victor et Vanessa préfèrent la vanille vendredi soir."
+    },
+    {
+      "level": "a1",
+      "word": "lave vaisselle",
+      "sentence": "Victor ouvre le lave vaisselle."
+    },
+    {
+      "level": "a2",
+      "word": "lave vaisselle",
+      "sentence": "Vanessa vide le lave vaisselle de Victor avec Valentin vendredi."
+    },
+    {
+      "level": "b1",
+      "word": "lave vaisselle",
+      "sentence": "Vincent a un lave vaisselle neuf, mais Victor et Vanessa préfèrent laver à la main."
+    },
+    {
+      "level": "a1",
+      "word": "livre",
+      "sentence": "Victor lit un livre vert."
+    },
+    {
+      "level": "a2",
+      "word": "livre",
+      "sentence": "Vanessa vend le livre de Victor avec Valentin vendredi."
+    },
+    {
+      "level": "b1",
+      "word": "livre",
+      "sentence": "Vincent a un livre neuf, mais Victor et Vanessa préfèrent le vieux livre vert."
+    }
+  ],
   "type10": [],
   "type12": [],
   "type14": [],

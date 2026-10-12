@@ -1,5 +1,366 @@
 {
-  "type9": [],
+  "type9": [
+    {
+      "level": "a1",
+      "word": "basketball",
+      "sentence": "Karim joue au basketball avec Kim."
+    },
+    {
+      "level": "a2",
+      "word": "basketball",
+      "sentence": "Kim et Karim jouent au basketball avec Kévin le kiné."
+    },
+    {
+      "level": "b1",
+      "word": "basketball",
+      "sentence": "Kévin et Kim regardent le basketball à la télé, mais Karim préfère le karaté."
+    },
+    {
+      "level": "a1",
+      "word": "baskets",
+      "sentence": "Kim met ses baskets noires."
+    },
+    {
+      "level": "a2",
+      "word": "baskets",
+      "sentence": "Karim achète des baskets pour Kim et pour Kévin."
+    },
+    {
+      "level": "b1",
+      "word": "baskets",
+      "sentence": "Kévin range ses baskets dans le placard, mais Kim et Karim les cherchent partout."
+    },
+    {
+      "level": "a1",
+      "word": "cookie",
+      "sentence": "Kim mange un cookie sucré."
+    },
+    {
+      "level": "a2",
+      "word": "cookie",
+      "sentence": "Karim achète un cookie pour Kim et un kiwi pour Kévin."
+    },
+    {
+      "level": "b1",
+      "word": "cookie",
+      "sentence": "Kévin donne un cookie à Kim, mais Karim préfère le kiwi et le kaki."
+    },
+    {
+      "level": "a1",
+      "word": "cupcake",
+      "sentence": "Kim mange un gros cupcake."
+    },
+    {
+      "level": "a2",
+      "word": "cupcake",
+      "sentence": "Karim prépare un cupcake pour Kim et Kévin ce week-end."
+    },
+    {
+      "level": "b1",
+      "word": "cupcake",
+      "sentence": "Kévin glace le cupcake de Kim, mais Karim préfère le kiwi et le kaki."
+    },
+    {
+      "level": "a1",
+      "word": "gecko",
+      "sentence": "Kim regarde le gecko de Karim."
+    },
+    {
+      "level": "a2",
+      "word": "gecko",
+      "sentence": "Karim nourrit le gecko de Kim avec des grillons et des kiwis."
+    },
+    {
+      "level": "b1",
+      "word": "gecko",
+      "sentence": "Kévin garde le gecko de Kim dans un terrarium, mais Karim lui donne un kiwi."
+    },
+    {
+      "level": "a1",
+      "word": "hockey",
+      "sentence": "Kim joue au hockey avec Karim."
+    },
+    {
+      "level": "a2",
+      "word": "hockey",
+      "sentence": "Karim et Kévin jouent au hockey avec Kim ce week-end."
+    },
+    {
+      "level": "b1",
+      "word": "hockey",
+      "sentence": "Kévin regarde le hockey à la télé, mais Kim et Karim préfèrent le karaté."
+    },
+    {
+      "level": "a1",
+      "word": "jockey",
+      "sentence": "Kim regarde le jockey de Karim."
+    },
+    {
+      "level": "a2",
+      "word": "jockey",
+      "sentence": "Karim parle au jockey de Kim et de Kévin à la kermesse."
+    },
+    {
+      "level": "b1",
+      "word": "jockey",
+      "sentence": "Kévin applaudit le jockey qui galope, mais Kim et Karim regardent le kangourou."
+    },
+    {
+      "level": "a1",
+      "word": "kaki",
+      "sentence": "Kim mange un kaki mûr."
+    },
+    {
+      "level": "a2",
+      "word": "kaki",
+      "sentence": "Karim achète un kaki pour Kim et un kiwi pour Kévin."
+    },
+    {
+      "level": "b1",
+      "word": "kaki",
+      "sentence": "Kévin coupe un kaki en deux, mais Kim et Karim préfèrent manger le kiwi."
+    },
+    {
+      "level": "a1",
+      "word": "kaléidoscope",
+      "sentence": "Kim regarde le kaléidoscope de Karim."
+    },
+    {
+      "level": "a2",
+      "word": "kaléidoscope",
+      "sentence": "Karim offre un kaléidoscope à Kim et à Kévin ce week-end."
+    },
+    {
+      "level": "b1",
+      "word": "kaléidoscope",
+      "sentence": "Kévin tourne le kaléidoscope pour Kim, mais Karim préfère regarder la kermesse du kiosque."
+    },
+    {
+      "level": "a1",
+      "word": "kangourou",
+      "sentence": "Kim voit un kangourou gris."
+    },
+    {
+      "level": "a2",
+      "word": "kangourou",
+      "sentence": "Karim dessine un kangourou pour Kim et pour Kévin."
+    },
+    {
+      "level": "b1",
+      "word": "kangourou",
+      "sentence": "Kévin regarde le kangourou au zoo, mais Kim et Karim préfèrent le koala."
+    },
+    {
+      "level": "a1",
+      "word": "karate",
+      "sentence": "Kim fait du karaté avec Karim."
+    },
+    {
+      "level": "a2",
+      "word": "karate",
+      "sentence": "Karim et Kévin font du karaté avec Kim chaque jeudi."
+    },
+    {
+      "level": "b1",
+      "word": "karate",
+      "sentence": "Kévin apprend le karaté à Kim, mais Karim préfère le hockey ou le basketball."
+    },
+    {
+      "level": "a1",
+      "word": "kart",
+      "sentence": "Kim conduit un petit kart."
+    },
+    {
+      "level": "a2",
+      "word": "kart",
+      "sentence": "Karim et Kévin font du kart avec Kim ce week-end."
+    },
+    {
+      "level": "b1",
+      "word": "kart",
+      "sentence": "Kévin gagne la course de kart, mais Kim et Karim préfèrent faire du kayak."
+    },
+    {
+      "level": "a1",
+      "word": "kayak",
+      "sentence": "Kim fait du kayak avec Karim."
+    },
+    {
+      "level": "a2",
+      "word": "kayak",
+      "sentence": "Karim loue un kayak pour Kim et pour Kévin ce week-end."
+    },
+    {
+      "level": "b1",
+      "word": "kayak",
+      "sentence": "Kévin pagaie dans son kayak jaune, mais Kim et Karim préfèrent faire du kart."
+    },
+    {
+      "level": "a1",
+      "word": "kazoo",
+      "sentence": "Kim joue du kazoo avec Karim."
+    },
+    {
+      "level": "a2",
+      "word": "kazoo",
+      "sentence": "Karim offre un kazoo à Kim et à Kévin ce week-end."
+    },
+    {
+      "level": "b1",
+      "word": "kazoo",
+      "sentence": "Kévin joue du kazoo à la kermesse, mais Kim et Karim préfèrent écouter le piano."
+    },
+    {
+      "level": "a1",
+      "word": "kepi",
+      "sentence": "Kim porte un képi kaki."
+    },
+    {
+      "level": "a2",
+      "word": "kepi",
+      "sentence": "Karim achète un képi pour Kim et pour Kévin ce week-end."
+    },
+    {
+      "level": "b1",
+      "word": "kepi",
+      "sentence": "Kévin porte un képi kaki, mais Kim et Karim préfèrent la casquette de Kelly."
+    },
+    {
+      "level": "a1",
+      "word": "kermesse",
+      "sentence": "Kim visite la kermesse avec Karim."
+    },
+    {
+      "level": "a2",
+      "word": "kermesse",
+      "sentence": "Karim et Kévin vendent des gâteaux à la kermesse de Kim."
+    },
+    {
+      "level": "b1",
+      "word": "kermesse",
+      "sentence": "Kévin organise la kermesse, mais Kim et Karim préfèrent vendre des gâteaux au kiosque."
+    },
+    {
+      "level": "a1",
+      "word": "kerosene",
+      "sentence": "Kim sent le kérosène de Karim."
+    },
+    {
+      "level": "a2",
+      "word": "kerosene",
+      "sentence": "Karim verse le kérosène dans le kart de Kim et de Kévin."
+    },
+    {
+      "level": "b1",
+      "word": "kerosene",
+      "sentence": "Kévin sent le kérosène dans le hangar, mais Kim et Karim ouvrent la porte."
+    },
+    {
+      "level": "a1",
+      "word": "ketchup",
+      "sentence": "Kim met du ketchup sur son kebab."
+    },
+    {
+      "level": "a2",
+      "word": "ketchup",
+      "sentence": "Karim ajoute du ketchup sur le kebab de Kim et de Kévin."
+    },
+    {
+      "level": "b1",
+      "word": "ketchup",
+      "sentence": "Kévin préfère le ketchup, mais Kim et Karim mettent de la moutarde sur le kebab."
+    },
+    {
+      "level": "a1",
+      "word": "kilo",
+      "sentence": "Kim pèse un kilo de kiwis."
+    },
+    {
+      "level": "a2",
+      "word": "kilo",
+      "sentence": "Karim achète un kilo de kaki pour Kim et pour Kévin."
+    },
+    {
+      "level": "b1",
+      "word": "kilo",
+      "sentence": "Kévin pèse un kilo de kiwis, mais Kim et Karim achètent un kilo de kakis."
+    },
+    {
+      "level": "a1",
+      "word": "kimono",
+      "sentence": "Kim porte un kimono blanc."
+    },
+    {
+      "level": "a2",
+      "word": "kimono",
+      "sentence": "Karim achète un kimono pour Kim et pour Kévin ce week-end."
+    },
+    {
+      "level": "b1",
+      "word": "kimono",
+      "sentence": "Kévin porte un kimono au karaté, mais Kim et Karim préfèrent le kimono blanc."
+    },
+    {
+      "level": "a1",
+      "word": "kiwi",
+      "sentence": "Kim mange un kiwi mûr."
+    },
+    {
+      "level": "a2",
+      "word": "kiwi",
+      "sentence": "Karim coupe un kiwi pour Kim et un kaki pour Kévin."
+    },
+    {
+      "level": "b1",
+      "word": "kiwi",
+      "sentence": "Kévin pèse un kiwi sur la balance, mais Kim et Karim préfèrent manger un kaki."
+    },
+    {
+      "level": "a1",
+      "word": "klaxon",
+      "sentence": "Kim entend le klaxon de Karim."
+    },
+    {
+      "level": "a2",
+      "word": "klaxon",
+      "sentence": "Karim appuie sur le klaxon pour saluer Kim et Kévin."
+    },
+    {
+      "level": "b1",
+      "word": "klaxon",
+      "sentence": "Kévin tape sur le klaxon devant le kiosque, mais Kim et Karim dorment."
+    },
+    {
+      "level": "a1",
+      "word": "koala",
+      "sentence": "Kim regarde le koala de Karim."
+    },
+    {
+      "level": "a2",
+      "word": "koala",
+      "sentence": "Karim donne une feuille au koala de Kim et de Kévin."
+    },
+    {
+      "level": "b1",
+      "word": "koala",
+      "sentence": "Kévin regarde le koala au zoo, mais Kim et Karim préfèrent voir le kangourou."
+    },
+    {
+      "level": "a1",
+      "word": "milkshake",
+      "sentence": "Kim boit un milkshake froid."
+    },
+    {
+      "level": "a2",
+      "word": "milkshake",
+      "sentence": "Karim commande un milkshake pour Kim et un kebab pour Kévin."
+    },
+    {
+      "level": "b1",
+      "word": "milkshake",
+      "sentence": "Kévin prépare un milkshake au kiwi, mais Kim et Karim préfèrent le milkshake au chocolat."
+    }
+  ],
   "type10": [],
   "type12": [],
   "type14": [],

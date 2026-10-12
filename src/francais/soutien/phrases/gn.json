@@ -1,5 +1,366 @@
 {
-  "type9": [],
+  "type9": [
+    {
+      "level": "a1",
+      "word": "agneau",
+      "sentence": "Agnès voit un agneau en Bretagne."
+    },
+    {
+      "level": "a2",
+      "word": "agneau",
+      "sentence": "Ignace voit un agneau dans la campagne avec Agnès."
+    },
+    {
+      "level": "b1",
+      "word": "agneau",
+      "sentence": "Agnès voit un agneau dans la montagne, mais Ignace préfère rester dans la campagne."
+    },
+    {
+      "level": "a1",
+      "word": "agneaux",
+      "sentence": "Agnès soigne les agneaux en Bretagne."
+    },
+    {
+      "level": "a2",
+      "word": "agneaux",
+      "sentence": "Ignace soigne les agneaux dans la campagne avec Agnès."
+    },
+    {
+      "level": "b1",
+      "word": "agneaux",
+      "sentence": "Agnès soigne les agneaux dans la montagne, mais Ignace préfère rester dans la campagne."
+    },
+    {
+      "level": "a1",
+      "word": "araignée",
+      "sentence": "Agnès voit une araignée en Bretagne."
+    },
+    {
+      "level": "a2",
+      "word": "araignée",
+      "sentence": "Ignace voit une araignée dans la campagne avec Agnès."
+    },
+    {
+      "level": "b1",
+      "word": "araignée",
+      "sentence": "Agnès voit une araignée dans la montagne, mais Ignace préfère rester dans la campagne."
+    },
+    {
+      "level": "a1",
+      "word": "bagne",
+      "sentence": "Agnès visite le bagne en Bretagne."
+    },
+    {
+      "level": "a2",
+      "word": "bagne",
+      "sentence": "Ignace visite le bagne dans la campagne avec Agnès."
+    },
+    {
+      "level": "b1",
+      "word": "bagne",
+      "sentence": "Agnès visite le bagne dans la montagne, mais Ignace préfère rester dans la campagne."
+    },
+    {
+      "level": "a1",
+      "word": "baignoire",
+      "sentence": "Agnès remplit la baignoire en Bretagne."
+    },
+    {
+      "level": "a2",
+      "word": "baignoire",
+      "sentence": "Ignace remplit la baignoire dans la campagne avec Agnès."
+    },
+    {
+      "level": "b1",
+      "word": "baignoire",
+      "sentence": "Agnès remplit la baignoire dans la montagne, mais Ignace préfère rester dans la campagne."
+    },
+    {
+      "level": "a1",
+      "word": "beignet",
+      "sentence": "Agnès mange un beignet en Bretagne."
+    },
+    {
+      "level": "a2",
+      "word": "beignet",
+      "sentence": "Ignace mange un beignet dans la campagne avec Agnès."
+    },
+    {
+      "level": "b1",
+      "word": "beignet",
+      "sentence": "Agnès mange un beignet dans la montagne, mais Ignace préfère rester dans la campagne."
+    },
+    {
+      "level": "a1",
+      "word": "campagne",
+      "sentence": "Agnès aime la campagne en Bretagne."
+    },
+    {
+      "level": "a2",
+      "word": "campagne",
+      "sentence": "Ignace aime la campagne dans la campagne avec Agnès."
+    },
+    {
+      "level": "b1",
+      "word": "campagne",
+      "sentence": "Agnès aime la campagne dans la montagne, mais Ignace préfère rester dans la campagne."
+    },
+    {
+      "level": "a1",
+      "word": "campagnes",
+      "sentence": "Agnès visite les campagnes en Bretagne."
+    },
+    {
+      "level": "a2",
+      "word": "campagnes",
+      "sentence": "Ignace visite les campagnes dans la campagne avec Agnès."
+    },
+    {
+      "level": "b1",
+      "word": "campagnes",
+      "sentence": "Agnès visite les campagnes dans la montagne, mais Ignace préfère rester dans la campagne."
+    },
+    {
+      "level": "a1",
+      "word": "champignon",
+      "sentence": "Agnès cueille un champignon en Bretagne."
+    },
+    {
+      "level": "a2",
+      "word": "champignon",
+      "sentence": "Ignace cueille un champignon dans la campagne avec Agnès."
+    },
+    {
+      "level": "b1",
+      "word": "champignon",
+      "sentence": "Agnès cueille un champignon dans la montagne, mais Ignace préfère rester dans la campagne."
+    },
+    {
+      "level": "a1",
+      "word": "chataignier",
+      "sentence": "Agnès voit un châtaignier en Bretagne."
+    },
+    {
+      "level": "a2",
+      "word": "chataignier",
+      "sentence": "Ignace voit un châtaignier dans la campagne avec Agnès."
+    },
+    {
+      "level": "b1",
+      "word": "chataignier",
+      "sentence": "Agnès voit un châtaignier dans la montagne, mais Ignace préfère rester dans la campagne."
+    },
+    {
+      "level": "a1",
+      "word": "cigogne",
+      "sentence": "Agnès voit une cigogne en Bretagne."
+    },
+    {
+      "level": "a2",
+      "word": "cigogne",
+      "sentence": "Ignace voit une cigogne dans la campagne avec Agnès."
+    },
+    {
+      "level": "b1",
+      "word": "cigogne",
+      "sentence": "Agnès voit une cigogne dans la montagne, mais Ignace préfère rester dans la campagne."
+    },
+    {
+      "level": "a1",
+      "word": "cognac",
+      "sentence": "Agnès boit du cognac en Bretagne."
+    },
+    {
+      "level": "a2",
+      "word": "cognac",
+      "sentence": "Ignace boit du cognac dans la campagne avec Agnès."
+    },
+    {
+      "level": "b1",
+      "word": "cognac",
+      "sentence": "Agnès boit du cognac dans la montagne, mais Ignace préfère rester dans la campagne."
+    },
+    {
+      "level": "a1",
+      "word": "cognacs",
+      "sentence": "Agnès goûte les cognacs en Bretagne."
+    },
+    {
+      "level": "a2",
+      "word": "cognacs",
+      "sentence": "Ignace goûte les cognacs dans la campagne avec Agnès."
+    },
+    {
+      "level": "b1",
+      "word": "cognacs",
+      "sentence": "Agnès goûte les cognacs dans la montagne, mais Ignace préfère rester dans la campagne."
+    },
+    {
+      "level": "a1",
+      "word": "cygne",
+      "sentence": "Agnès voit un cygne en Bretagne."
+    },
+    {
+      "level": "a2",
+      "word": "cygne",
+      "sentence": "Ignace voit un cygne dans la campagne avec Agnès."
+    },
+    {
+      "level": "b1",
+      "word": "cygne",
+      "sentence": "Agnès voit un cygne dans la montagne, mais Ignace préfère rester dans la campagne."
+    },
+    {
+      "level": "a1",
+      "word": "digne",
+      "sentence": "Agnès reste digne en Bretagne."
+    },
+    {
+      "level": "a2",
+      "word": "digne",
+      "sentence": "Ignace reste digne dans la campagne avec Agnès."
+    },
+    {
+      "level": "b1",
+      "word": "digne",
+      "sentence": "Agnès reste digne dans la montagne, mais Ignace préfère rester dans la campagne."
+    },
+    {
+      "level": "a1",
+      "word": "dignes",
+      "sentence": "Agnès et Ignace sont dignes."
+    },
+    {
+      "level": "a2",
+      "word": "dignes",
+      "sentence": "Agnès et Ignace restent dignes en Bretagne avec Régine."
+    },
+    {
+      "level": "b1",
+      "word": "dignes",
+      "sentence": "Agnès et Ignace restent dignes dans la montagne, mais Régine préfère rester en Bretagne."
+    },
+    {
+      "level": "a1",
+      "word": "dignite",
+      "sentence": "Agnès garde sa dignité en Bretagne."
+    },
+    {
+      "level": "a2",
+      "word": "dignite",
+      "sentence": "Ignace garde sa dignité dans la campagne avec Agnès."
+    },
+    {
+      "level": "b1",
+      "word": "dignite",
+      "sentence": "Agnès garde sa dignité dans la montagne, mais Ignace préfère rester dans la campagne."
+    },
+    {
+      "level": "a1",
+      "word": "dignites",
+      "sentence": "Agnès respecte les dignités en Bretagne."
+    },
+    {
+      "level": "a2",
+      "word": "dignites",
+      "sentence": "Ignace respecte les dignités dans la campagne avec Agnès."
+    },
+    {
+      "level": "b1",
+      "word": "dignites",
+      "sentence": "Agnès respecte les dignités dans la montagne, mais Ignace préfère rester dans la campagne."
+    },
+    {
+      "level": "a1",
+      "word": "espagnol",
+      "sentence": "Agnès parle espagnol en Bretagne."
+    },
+    {
+      "level": "a2",
+      "word": "espagnol",
+      "sentence": "Ignace parle espagnol dans la campagne avec Agnès."
+    },
+    {
+      "level": "b1",
+      "word": "espagnol",
+      "sentence": "Agnès parle espagnol dans la montagne, mais Ignace préfère rester dans la campagne."
+    },
+    {
+      "level": "a1",
+      "word": "espagnole",
+      "sentence": "Agnès est espagnole en Bretagne."
+    },
+    {
+      "level": "a2",
+      "word": "espagnole",
+      "sentence": "Ignace est espagnole dans la campagne avec Agnès."
+    },
+    {
+      "level": "b1",
+      "word": "espagnole",
+      "sentence": "Agnès est espagnole dans la montagne, mais Ignace préfère rester dans la campagne."
+    },
+    {
+      "level": "a1",
+      "word": "montagne",
+      "sentence": "Agnès monte la montagne en Bretagne."
+    },
+    {
+      "level": "a2",
+      "word": "montagne",
+      "sentence": "Ignace monte la montagne dans la campagne avec Agnès."
+    },
+    {
+      "level": "b1",
+      "word": "montagne",
+      "sentence": "Agnès monte la montagne dans la montagne, mais Ignace préfère rester dans la campagne."
+    },
+    {
+      "level": "a1",
+      "word": "montagnes",
+      "sentence": "Agnès voit les montagnes en Bretagne."
+    },
+    {
+      "level": "a2",
+      "word": "montagnes",
+      "sentence": "Ignace voit les montagnes dans la campagne avec Agnès."
+    },
+    {
+      "level": "b1",
+      "word": "montagnes",
+      "sentence": "Agnès voit les montagnes dans la montagne, mais Ignace préfère rester dans la campagne."
+    },
+    {
+      "level": "a1",
+      "word": "oignon",
+      "sentence": "Agnès coupe un oignon en Bretagne."
+    },
+    {
+      "level": "a2",
+      "word": "oignon",
+      "sentence": "Ignace coupe un oignon dans la campagne avec Agnès."
+    },
+    {
+      "level": "b1",
+      "word": "oignon",
+      "sentence": "Agnès coupe un oignon dans la montagne, mais Ignace préfère rester dans la campagne."
+    },
+    {
+      "level": "a1",
+      "word": "peigne",
+      "sentence": "Agnès prend le peigne en Bretagne."
+    },
+    {
+      "level": "a2",
+      "word": "peigne",
+      "sentence": "Ignace prend le peigne dans la campagne avec Agnès."
+    },
+    {
+      "level": "b1",
+      "word": "peigne",
+      "sentence": "Agnès prend le peigne dans la montagne, mais Ignace préfère rester dans la campagne."
+    }
+  ],
   "type10": [],
   "type12": [],
   "type14": [],

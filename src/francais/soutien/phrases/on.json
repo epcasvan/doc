@@ -1,5 +1,366 @@
 {
-  "type9": [],
+  "type9": [
+    {
+      "level": "a1",
+      "word": "accordéon",
+      "sentence": "Léon joue de l’accordéon avec Simon."
+    },
+    {
+      "level": "a2",
+      "word": "accordéon",
+      "sentence": "Raymond joue de l’accordéon pour Léon, Simon et Gaston."
+    },
+    {
+      "level": "b1",
+      "word": "accordéon",
+      "sentence": "Gaston joue de l’accordéon, mais Simon et Léon pensent que Raymond a raison."
+    },
+    {
+      "level": "a1",
+      "word": "astronaute",
+      "sentence": "Léon est astronaute avec Simon."
+    },
+    {
+      "level": "a2",
+      "word": "astronaute",
+      "sentence": "Raymond est astronaute pour Léon, Simon et Gaston."
+    },
+    {
+      "level": "b1",
+      "word": "astronaute",
+      "sentence": "Gaston est astronaute, mais Simon et Léon pensent que Raymond a toujours raison."
+    },
+    {
+      "level": "a1",
+      "word": "atome",
+      "sentence": "Léon étudie l’atome avec Simon."
+    },
+    {
+      "level": "a2",
+      "word": "atome",
+      "sentence": "Raymond étudie l’atome pour Léon, Simon et Gaston."
+    },
+    {
+      "level": "b1",
+      "word": "atome",
+      "sentence": "Gaston étudie l’atome, mais Simon et Léon pensent que Raymond a raison."
+    },
+    {
+      "level": "a1",
+      "word": "automne",
+      "sentence": "Léon aime l’automne avec Simon."
+    },
+    {
+      "level": "a2",
+      "word": "automne",
+      "sentence": "Raymond aime l’automne pour Léon, Simon et Gaston."
+    },
+    {
+      "level": "b1",
+      "word": "automne",
+      "sentence": "Gaston aime l’automne, mais Simon et Léon pensent que Raymond a raison."
+    },
+    {
+      "level": "a1",
+      "word": "avion",
+      "sentence": "Léon prend l’avion avec Simon."
+    },
+    {
+      "level": "a2",
+      "word": "avion",
+      "sentence": "Raymond prend l’avion pour Léon, Simon et Gaston."
+    },
+    {
+      "level": "b1",
+      "word": "avion",
+      "sentence": "Gaston prend l’avion, mais Simon et Léon pensent que Raymond a raison."
+    },
+    {
+      "level": "a1",
+      "word": "ballon",
+      "sentence": "Léon lance le ballon avec Simon."
+    },
+    {
+      "level": "a2",
+      "word": "ballon",
+      "sentence": "Raymond lance le ballon pour Léon, Simon et Gaston."
+    },
+    {
+      "level": "b1",
+      "word": "ballon",
+      "sentence": "Gaston lance le ballon, mais Simon et Léon pensent que Raymond a raison."
+    },
+    {
+      "level": "a1",
+      "word": "biberon",
+      "sentence": "Léon donne le biberon avec Simon."
+    },
+    {
+      "level": "a2",
+      "word": "biberon",
+      "sentence": "Raymond donne le biberon pour Léon, Simon et Gaston."
+    },
+    {
+      "level": "b1",
+      "word": "biberon",
+      "sentence": "Gaston donne le biberon, mais Simon et Léon pensent que Raymond a raison."
+    },
+    {
+      "level": "a1",
+      "word": "blouson",
+      "sentence": "Léon met un blouson avec Simon."
+    },
+    {
+      "level": "a2",
+      "word": "blouson",
+      "sentence": "Raymond met un blouson pour Léon, Simon et Gaston."
+    },
+    {
+      "level": "b1",
+      "word": "blouson",
+      "sentence": "Gaston met un blouson, mais Simon et Léon pensent que Raymond a raison."
+    },
+    {
+      "level": "a1",
+      "word": "boisson",
+      "sentence": "Léon boit une boisson avec Simon."
+    },
+    {
+      "level": "a2",
+      "word": "boisson",
+      "sentence": "Raymond boit une boisson pour Léon, Simon et Gaston."
+    },
+    {
+      "level": "b1",
+      "word": "boisson",
+      "sentence": "Gaston boit une boisson, mais Simon et Léon pensent que Raymond a raison."
+    },
+    {
+      "level": "a1",
+      "word": "bon",
+      "sentence": "Léon est bon avec Simon."
+    },
+    {
+      "level": "a2",
+      "word": "bon",
+      "sentence": "Raymond est bon pour Léon, Simon et Gaston."
+    },
+    {
+      "level": "b1",
+      "word": "bon",
+      "sentence": "Gaston est bon, mais Simon et Léon pensent que Raymond a toujours raison."
+    },
+    {
+      "level": "a1",
+      "word": "bonbon",
+      "sentence": "Léon mange un bonbon avec Simon."
+    },
+    {
+      "level": "a2",
+      "word": "bonbon",
+      "sentence": "Raymond mange un bonbon pour Léon, Simon et Gaston."
+    },
+    {
+      "level": "b1",
+      "word": "bonbon",
+      "sentence": "Gaston mange un bonbon, mais Simon et Léon pensent que Raymond a raison."
+    },
+    {
+      "level": "a1",
+      "word": "bonjour",
+      "sentence": "Léon dit bonjour avec Simon."
+    },
+    {
+      "level": "a2",
+      "word": "bonjour",
+      "sentence": "Raymond dit bonjour pour Léon, Simon et Gaston."
+    },
+    {
+      "level": "b1",
+      "word": "bonjour",
+      "sentence": "Gaston dit bonjour, mais Simon et Léon pensent que Raymond a toujours raison."
+    },
+    {
+      "level": "a1",
+      "word": "bonne",
+      "sentence": "Léon a une bonne idée avec Simon."
+    },
+    {
+      "level": "a2",
+      "word": "bonne",
+      "sentence": "Raymond a une bonne idée pour Léon, Simon et Gaston."
+    },
+    {
+      "level": "b1",
+      "word": "bonne",
+      "sentence": "Gaston a une bonne idée, mais Simon et Léon pensent que Raymond a raison."
+    },
+    {
+      "level": "a1",
+      "word": "bonnet",
+      "sentence": "Léon porte un bonnet avec Simon."
+    },
+    {
+      "level": "a2",
+      "word": "bonnet",
+      "sentence": "Raymond porte un bonnet pour Léon, Simon et Gaston."
+    },
+    {
+      "level": "b1",
+      "word": "bonnet",
+      "sentence": "Gaston porte un bonnet, mais Simon et Léon pensent que Raymond a raison."
+    },
+    {
+      "level": "a1",
+      "word": "bouchon",
+      "sentence": "Léon ferme le bouchon avec Simon."
+    },
+    {
+      "level": "a2",
+      "word": "bouchon",
+      "sentence": "Raymond ferme le bouchon pour Léon, Simon et Gaston."
+    },
+    {
+      "level": "b1",
+      "word": "bouchon",
+      "sentence": "Gaston ferme le bouchon, mais Simon et Léon pensent que Raymond a raison."
+    },
+    {
+      "level": "a1",
+      "word": "bourdon",
+      "sentence": "Léon voit un bourdon avec Simon."
+    },
+    {
+      "level": "a2",
+      "word": "bourdon",
+      "sentence": "Raymond voit un bourdon pour Léon, Simon et Gaston."
+    },
+    {
+      "level": "b1",
+      "word": "bourdon",
+      "sentence": "Gaston voit un bourdon, mais Simon et Léon pensent que Raymond a raison."
+    },
+    {
+      "level": "a1",
+      "word": "bouton",
+      "sentence": "Léon presse le bouton avec Simon."
+    },
+    {
+      "level": "a2",
+      "word": "bouton",
+      "sentence": "Raymond presse le bouton pour Léon, Simon et Gaston."
+    },
+    {
+      "level": "b1",
+      "word": "bouton",
+      "sentence": "Gaston presse le bouton, mais Simon et Léon pensent que Raymond a raison."
+    },
+    {
+      "level": "a1",
+      "word": "bronze",
+      "sentence": "Léon gagne le bronze avec Simon."
+    },
+    {
+      "level": "a2",
+      "word": "bronze",
+      "sentence": "Raymond gagne le bronze pour Léon, Simon et Gaston."
+    },
+    {
+      "level": "b1",
+      "word": "bronze",
+      "sentence": "Gaston gagne le bronze, mais Simon et Léon pensent que Raymond a raison."
+    },
+    {
+      "level": "a1",
+      "word": "bucheron",
+      "sentence": "Léon est bûcheron avec Simon."
+    },
+    {
+      "level": "a2",
+      "word": "bucheron",
+      "sentence": "Raymond est bûcheron pour Léon, Simon et Gaston."
+    },
+    {
+      "level": "b1",
+      "word": "bucheron",
+      "sentence": "Gaston est bûcheron, mais Simon et Léon pensent que Raymond a toujours raison."
+    },
+    {
+      "level": "a1",
+      "word": "buisson",
+      "sentence": "Léon taille un buisson avec Simon."
+    },
+    {
+      "level": "a2",
+      "word": "buisson",
+      "sentence": "Raymond taille un buisson pour Léon, Simon et Gaston."
+    },
+    {
+      "level": "b1",
+      "word": "buisson",
+      "sentence": "Gaston taille un buisson, mais Simon et Léon pensent que Raymond a raison."
+    },
+    {
+      "level": "a1",
+      "word": "caleçon",
+      "sentence": "Léon met un caleçon avec Simon."
+    },
+    {
+      "level": "a2",
+      "word": "caleçon",
+      "sentence": "Raymond met un caleçon pour Léon, Simon et Gaston."
+    },
+    {
+      "level": "b1",
+      "word": "caleçon",
+      "sentence": "Gaston met un caleçon, mais Simon et Léon pensent que Raymond a raison."
+    },
+    {
+      "level": "a1",
+      "word": "caméléon",
+      "sentence": "Léon voit un caméléon avec Simon."
+    },
+    {
+      "level": "a2",
+      "word": "caméléon",
+      "sentence": "Raymond voit un caméléon pour Léon, Simon et Gaston."
+    },
+    {
+      "level": "b1",
+      "word": "caméléon",
+      "sentence": "Gaston voit un caméléon, mais Simon et Léon pensent que Raymond a raison."
+    },
+    {
+      "level": "a1",
+      "word": "camion",
+      "sentence": "Léon conduit le camion avec Simon."
+    },
+    {
+      "level": "a2",
+      "word": "camion",
+      "sentence": "Raymond conduit le camion pour Léon, Simon et Gaston."
+    },
+    {
+      "level": "b1",
+      "word": "camion",
+      "sentence": "Gaston conduit le camion, mais Simon et Léon pensent que Raymond a raison."
+    },
+    {
+      "level": "a1",
+      "word": "canyon",
+      "sentence": "Léon visite le canyon avec Simon."
+    },
+    {
+      "level": "a2",
+      "word": "canyon",
+      "sentence": "Raymond visite le canyon pour Léon, Simon et Gaston."
+    },
+    {
+      "level": "b1",
+      "word": "canyon",
+      "sentence": "Gaston visite le canyon, mais Simon et Léon pensent que Raymond a raison."
+    }
+  ],
   "type10": [],
   "type12": [],
   "type14": [],

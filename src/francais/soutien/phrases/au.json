@@ -1,5 +1,366 @@
 {
-  "type9": [],
+  "type9": [
+    {
+      "level": "a1",
+      "word": "abricot",
+      "sentence": "Paul mange un abricot aussi."
+    },
+    {
+      "level": "a2",
+      "word": "abricot",
+      "sentence": "Pauline mange un abricot au bureau avec Paul et Aurélie."
+    },
+    {
+      "level": "b1",
+      "word": "abricot",
+      "sentence": "Maurice mange un abricot, mais Laura et Claude préfèrent aussi l’autre côté."
+    },
+    {
+      "level": "a1",
+      "word": "accordéon",
+      "sentence": "Paul joue de l’accordéon aussi."
+    },
+    {
+      "level": "a2",
+      "word": "accordéon",
+      "sentence": "Pauline joue de l’accordéon au bureau avec Paul et Aurélie."
+    },
+    {
+      "level": "b1",
+      "word": "accordéon",
+      "sentence": "Maurice joue de l’accordéon, mais Laura et Claude préfèrent aussi l’autre."
+    },
+    {
+      "level": "a1",
+      "word": "amazone",
+      "sentence": "Paul voit une amazone aussi."
+    },
+    {
+      "level": "a2",
+      "word": "amazone",
+      "sentence": "Pauline voit une amazone au bureau avec Paul et Aurélie."
+    },
+    {
+      "level": "b1",
+      "word": "amazone",
+      "sentence": "Maurice voit une amazone, mais Laura et Claude préfèrent aussi l’autre côté."
+    },
+    {
+      "level": "a1",
+      "word": "animaux",
+      "sentence": "Paul nourrit les animaux aussi."
+    },
+    {
+      "level": "a2",
+      "word": "animaux",
+      "sentence": "Pauline nourrit les animaux au bureau avec Paul et Aurélie."
+    },
+    {
+      "level": "b1",
+      "word": "animaux",
+      "sentence": "Maurice nourrit les animaux, mais Laura et Claude préfèrent aussi l’autre côté."
+    },
+    {
+      "level": "a1",
+      "word": "anneau",
+      "sentence": "Paul perd un anneau aussi."
+    },
+    {
+      "level": "a2",
+      "word": "anneau",
+      "sentence": "Pauline perd un anneau au bureau avec Paul et Aurélie."
+    },
+    {
+      "level": "b1",
+      "word": "anneau",
+      "sentence": "Maurice perd un anneau, mais Laura et Claude préfèrent aussi l’autre côté."
+    },
+    {
+      "level": "a1",
+      "word": "appareil photo",
+      "sentence": "Paul prend un appareil photo aussi."
+    },
+    {
+      "level": "a2",
+      "word": "appareil photo",
+      "sentence": "Pauline prend un appareil photo au bureau avec Paul et Aurélie."
+    },
+    {
+      "level": "b1",
+      "word": "appareil photo",
+      "sentence": "Maurice prend un appareil photo, mais Laura et Claude préfèrent aussi l’autre."
+    },
+    {
+      "level": "a1",
+      "word": "arrosoir",
+      "sentence": "Paul remplit l’arrosoir aussi."
+    },
+    {
+      "level": "a2",
+      "word": "arrosoir",
+      "sentence": "Pauline remplit l’arrosoir au bureau avec Paul et Aurélie."
+    },
+    {
+      "level": "b1",
+      "word": "arrosoir",
+      "sentence": "Maurice remplit l’arrosoir, mais Laura et Claude préfèrent aussi l’autre côté."
+    },
+    {
+      "level": "a1",
+      "word": "artichaut",
+      "sentence": "Paul mange un artichaut aussi."
+    },
+    {
+      "level": "a2",
+      "word": "artichaut",
+      "sentence": "Pauline mange un artichaut au bureau avec Paul et Aurélie."
+    },
+    {
+      "level": "b1",
+      "word": "artichaut",
+      "sentence": "Maurice mange un artichaut, mais Laura et Claude préfèrent aussi l’autre côté."
+    },
+    {
+      "level": "a1",
+      "word": "astronaute",
+      "sentence": "Paul est astronaute aussi à Laura."
+    },
+    {
+      "level": "a2",
+      "word": "astronaute",
+      "sentence": "Pauline est astronaute au bureau avec Paul et Aurélie."
+    },
+    {
+      "level": "b1",
+      "word": "astronaute",
+      "sentence": "Maurice est astronaute, mais Laura et Claude préfèrent aussi l’autre grand métier."
+    },
+    {
+      "level": "a1",
+      "word": "aubergine",
+      "sentence": "Paul cuit une aubergine aussi."
+    },
+    {
+      "level": "a2",
+      "word": "aubergine",
+      "sentence": "Pauline cuit une aubergine au bureau avec Paul et Aurélie."
+    },
+    {
+      "level": "b1",
+      "word": "aubergine",
+      "sentence": "Maurice cuit une aubergine, mais Laura et Claude préfèrent aussi l’autre côté."
+    },
+    {
+      "level": "a1",
+      "word": "autobus",
+      "sentence": "Paul attend l’autobus aussi."
+    },
+    {
+      "level": "a2",
+      "word": "autobus",
+      "sentence": "Pauline attend l’autobus au bureau avec Paul et Aurélie."
+    },
+    {
+      "level": "b1",
+      "word": "autobus",
+      "sentence": "Maurice attend l’autobus, mais Laura et Claude préfèrent aussi l’autre côté."
+    },
+    {
+      "level": "a1",
+      "word": "autruche",
+      "sentence": "Paul voit une autruche aussi."
+    },
+    {
+      "level": "a2",
+      "word": "autruche",
+      "sentence": "Pauline voit une autruche au bureau avec Paul et Aurélie."
+    },
+    {
+      "level": "b1",
+      "word": "autruche",
+      "sentence": "Maurice voit une autruche, mais Laura et Claude préfèrent aussi l’autre côté."
+    },
+    {
+      "level": "a1",
+      "word": "avocat",
+      "sentence": "Paul consulte l’avocat aussi."
+    },
+    {
+      "level": "a2",
+      "word": "avocat",
+      "sentence": "Pauline consulte l’avocat au bureau avec Paul et Aurélie."
+    },
+    {
+      "level": "b1",
+      "word": "avocat",
+      "sentence": "Maurice consulte l’avocat, mais Laura et Claude préfèrent aussi l’autre côté."
+    },
+    {
+      "level": "a1",
+      "word": "avocate",
+      "sentence": "Paul consulte l’avocate aussi."
+    },
+    {
+      "level": "a2",
+      "word": "avocate",
+      "sentence": "Pauline consulte l’avocate au bureau avec Paul et Aurélie."
+    },
+    {
+      "level": "b1",
+      "word": "avocate",
+      "sentence": "Maurice consulte l’avocate, mais Laura et Claude préfèrent aussi l’autre côté."
+    },
+    {
+      "level": "a1",
+      "word": "banjo",
+      "sentence": "Paul joue du banjo aussi."
+    },
+    {
+      "level": "a2",
+      "word": "banjo",
+      "sentence": "Pauline joue du banjo au bureau avec Paul et Aurélie."
+    },
+    {
+      "level": "b1",
+      "word": "banjo",
+      "sentence": "Maurice joue du banjo, mais Laura et Claude préfèrent aussi l’autre côté."
+    },
+    {
+      "level": "a1",
+      "word": "basketball",
+      "sentence": "Paul joue au basketball aussi."
+    },
+    {
+      "level": "a2",
+      "word": "basketball",
+      "sentence": "Pauline joue au basketball au bureau avec Paul et Aurélie."
+    },
+    {
+      "level": "b1",
+      "word": "basketball",
+      "sentence": "Maurice joue au basketball, mais Laura et Claude préfèrent aussi l’autre côté."
+    },
+    {
+      "level": "a1",
+      "word": "bateau",
+      "sentence": "Paul prend le bateau aussi."
+    },
+    {
+      "level": "a2",
+      "word": "bateau",
+      "sentence": "Pauline prend le bateau au bureau avec Paul et Aurélie."
+    },
+    {
+      "level": "b1",
+      "word": "bateau",
+      "sentence": "Maurice prend le bateau, mais Laura et Claude préfèrent aussi l’autre côté."
+    },
+    {
+      "level": "a1",
+      "word": "beau",
+      "sentence": "Paul est beau aussi à Laura."
+    },
+    {
+      "level": "a2",
+      "word": "beau",
+      "sentence": "Pauline est beau au bureau avec Paul et Aurélie."
+    },
+    {
+      "level": "b1",
+      "word": "beau",
+      "sentence": "Maurice est beau, mais Laura et Claude préfèrent aussi l’autre beau garçon."
+    },
+    {
+      "level": "a1",
+      "word": "beaucoup",
+      "sentence": "Paul mange beaucoup aussi à Laura."
+    },
+    {
+      "level": "a2",
+      "word": "beaucoup",
+      "sentence": "Pauline mange beaucoup au bureau avec Paul et Aurélie."
+    },
+    {
+      "level": "b1",
+      "word": "beaucoup",
+      "sentence": "Maurice mange beaucoup, mais Laura et Claude préfèrent aussi l’autre grand repas."
+    },
+    {
+      "level": "a1",
+      "word": "beaute",
+      "sentence": "Paul admire la beauté aussi."
+    },
+    {
+      "level": "a2",
+      "word": "beaute",
+      "sentence": "Pauline admire la beauté au bureau avec Paul et Aurélie."
+    },
+    {
+      "level": "b1",
+      "word": "beaute",
+      "sentence": "Maurice admire la beauté, mais Laura et Claude préfèrent aussi l’autre côté."
+    },
+    {
+      "level": "a1",
+      "word": "berceau",
+      "sentence": "Paul pousse le berceau aussi."
+    },
+    {
+      "level": "a2",
+      "word": "berceau",
+      "sentence": "Pauline pousse le berceau au bureau avec Paul et Aurélie."
+    },
+    {
+      "level": "b1",
+      "word": "berceau",
+      "sentence": "Maurice pousse le berceau, mais Laura et Claude préfèrent aussi l’autre côté."
+    },
+    {
+      "level": "a1",
+      "word": "bocal",
+      "sentence": "Paul ouvre le bocal aussi."
+    },
+    {
+      "level": "a2",
+      "word": "bocal",
+      "sentence": "Pauline ouvre le bocal au bureau avec Paul et Aurélie."
+    },
+    {
+      "level": "b1",
+      "word": "bocal",
+      "sentence": "Maurice ouvre le bocal, mais Laura et Claude préfèrent aussi l’autre côté."
+    },
+    {
+      "level": "a1",
+      "word": "bonnet",
+      "sentence": "Paul porte un bonnet aussi."
+    },
+    {
+      "level": "a2",
+      "word": "bonnet",
+      "sentence": "Pauline porte un bonnet au bureau avec Paul et Aurélie."
+    },
+    {
+      "level": "b1",
+      "word": "bonnet",
+      "sentence": "Maurice porte un bonnet, mais Laura et Claude préfèrent aussi l’autre côté."
+    },
+    {
+      "level": "a1",
+      "word": "bordeaux",
+      "sentence": "Paul boit du bordeaux aussi."
+    },
+    {
+      "level": "a2",
+      "word": "bordeaux",
+      "sentence": "Pauline boit du bordeaux au bureau avec Paul et Aurélie."
+    },
+    {
+      "level": "b1",
+      "word": "bordeaux",
+      "sentence": "Maurice boit du bordeaux, mais Laura et Claude préfèrent aussi l’autre côté."
+    }
+  ],
   "type10": [],
   "type12": [],
   "type14": [],

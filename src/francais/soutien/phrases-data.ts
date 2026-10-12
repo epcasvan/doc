@@ -66,10 +66,24 @@ for (const [path, raw] of Object.entries(FILES)) {
   const id = path.replace(/^.*\//, '').replace(/\.json$/, '')
   if (!raw) continue
   BY_ID.set(id, {
-    type9: Array.isArray(raw.type9) ? raw.type9.filter(isWordPhrase) : [],
+    type9: Array.isArray(raw.type9)
+      ? raw.type9.filter(isWordPhrase).map((row) => ({
+          level: row.level ?? 'a2',
+          word: row.word.trim(),
+          sentence: row.sentence.trim(),
+        }))
+      : [],
     type10: Array.isArray(raw.type10) ? raw.type10.filter(isDetPhrase) : [],
-    type12: Array.isArray(raw.type12) ? raw.type12.filter(isPhrase) : [],
-    type14: Array.isArray(raw.type14) ? raw.type14.filter(isPhrase) : [],
+    type12: Array.isArray(raw.type12)
+      ? raw.type12
+          .filter(isPhrase)
+          .map((row) => ({ level: row.level ?? 'a2', sentence: row.sentence.trim() }))
+      : [],
+    type14: Array.isArray(raw.type14)
+      ? raw.type14
+          .filter(isPhrase)
+          .map((row) => ({ level: row.level ?? 'a2', sentence: row.sentence.trim() }))
+      : [],
     type12Stories: Array.isArray(raw.type12Stories)
       ? raw.type12Stories.filter((s) => isStory(s, 9))
       : [],
@@ -85,12 +99,16 @@ function isLevel(v: unknown): v is SoutienPhraseLevel {
 function isPhrase(v: unknown): v is SoutienLevelPhrase {
   if (!v || typeof v !== 'object') return false
   const o = v as Record<string, unknown>
-  return isLevel(o.level) && typeof o.sentence === 'string' && o.sentence.trim().length > 0
+  const levelOk = o.level === undefined || isLevel(o.level)
+  return levelOk && typeof o.sentence === 'string' && o.sentence.trim().length > 0
 }
 function isWordPhrase(v: unknown): v is SoutienLevelWordPhrase {
-  if (!isPhrase(v)) return false
-  const w = (v as Record<string, unknown>).word
-  return typeof w === 'string' && w.trim().length > 0
+  if (!v || typeof v !== 'object') return false
+  const o = v as Record<string, unknown>
+  if (typeof o.sentence !== 'string' || !o.sentence.trim()) return false
+  if (typeof o.word !== 'string' || !o.word.trim()) return false
+  if (o.level !== undefined && !isLevel(o.level)) return false
+  return true
 }
 function isDetPart(v: unknown): v is SoutienDetPart {
   if (!v || typeof v !== 'object') return false
