@@ -1,10 +1,10 @@
 /**
- * Téléchargement des phrases Soutien (types 9 / 10 / 12 / 14) pour édition manuelle.
- * Fichier unique groupé : `soutienPhrasesGrouped()` / `phrases.json`.
+ * Téléchargement des phrases Soutien pour édition manuelle.
+ * Un fichier par son : `phrases/<son>.json`.
  */
 import type { SoutienVowelBank } from './banks'
 import {
-  serializeGroupedPhrases,
+  serializeSonFile,
   soutienPhrasesCommon,
   soutienPhrasesFor,
   soutienPhrasesGrouped,
@@ -23,28 +23,12 @@ function triggerDownload(filename: string, content: string, mime = 'application/
   URL.revokeObjectURL(url)
 }
 
-function downloadGrouped(
-  filename: string,
-  rows: Parameters<typeof serializeGroupedPhrases>[0],
-) {
-  const phrases = serializeGroupedPhrases(rows)
-  triggerDownload(filename, `${JSON.stringify({ phrases }, null, 2)}\n`)
-}
-
-/** Banque complète groupée (word → sounds → sentences). */
+/** Export du fichier son de la fiche (word → variants → sentences). */
 export function downloadSoutienType9Phrases(bank: SoutienVowelBank) {
-  const common = soutienPhrasesCommon().phrases
-  const local = soutienPhrasesFor(bank.id)?.phrases
-  const rows = common.length > 0 ? common : local && local.length > 0 ? local : []
-  if (rows.length === 0) {
-    // Repli : export groupé actuel
-    triggerDownload(
-      `soutien-phrases-all.json`,
-      `${JSON.stringify({ phrases: soutienPhrasesGrouped() }, null, 2)}\n`,
-    )
-    return
-  }
-  downloadGrouped(`soutien-phrases-all.json`, rows)
+  const local = soutienPhrasesFor(bank.id)?.phrases ?? []
+  const rows = local.length > 0 ? local : soutienPhrasesCommon().phrases
+  const payload = serializeSonFile(bank.id, rows)
+  triggerDownload(`soutien-phrases-${bank.id}.json`, `${JSON.stringify(payload, null, 2)}\n`)
 }
 
 /** Type 10 — déterminants (souvent générés depuis le type 5). */
@@ -63,20 +47,18 @@ export function downloadSoutienType10Phrases(bank: SoutienVowelBank) {
   triggerDownload(`soutien-type10-all.json`, `${JSON.stringify(rows, null, 2)}\n`)
 }
 
-/** Même fichier groupé que type 9 (vivier unique). */
-export function downloadSoutienType12Phrases(_bank: SoutienVowelBank) {
-  triggerDownload(
-    `soutien-phrases-all.json`,
-    `${JSON.stringify({ phrases: soutienPhrasesGrouped() }, null, 2)}\n`,
-  )
+/** Même export que type 9 : fichier du son courant. */
+export function downloadSoutienType12Phrases(bank: SoutienVowelBank) {
+  downloadSoutienType9Phrases(bank)
 }
 
-/** Type 14 — même vivier groupé. */
-export function downloadSoutienType14Phrases(_bank: SoutienVowelBank) {
-  triggerDownload(
-    `soutien-phrases-all.json`,
-    `${JSON.stringify({ phrases: soutienPhrasesGrouped() }, null, 2)}\n`,
-  )
+/** Type 14 — fichier du son courant. */
+export function downloadSoutienType14Phrases(bank: SoutienVowelBank) {
+  const payload = {
+    son: bank.id,
+    phrases: soutienPhrasesGrouped(bank.id),
+  }
+  triggerDownload(`soutien-phrases-${bank.id}.json`, `${JSON.stringify(payload, null, 2)}\n`)
 }
 
 /** Fichiers regroupés servis sous /soutien-phrases/. */

@@ -23,14 +23,7 @@ import {
 import { buildWordSearch, wordSearchHitCells } from './word-search'
 import { isSoutienType1Word, type1WordPool, type1Words } from './type1-words'
 import type { SoutienGenerateOptions } from './generate-options'
-import {
-  filterSoutienLevel,
-  filterSoutienSon,
-  soutienAllFlatPhrases,
-  soutienPhrasesCommon,
-  soutienPhrasesType9And12,
-  type SoutienLevelFilter,
-} from './phrases-data'
+import { soutienPhrasesForSonOrAll, type SoutienLevelFilter } from './phrases-data'
 import { buildType10DetsFromWords } from './det-plurals'
 import {
   AUDIO_ORDER_CLIPS,
@@ -53,9 +46,8 @@ function curatedPhrases(
   want: number,
 ): string[] | null {
   const minHits = 3
-  const all = soutienAllFlatPhrases(level)
-  const forSon = filterSoutienSon(all, bank.id)
-  const pool = forSon.length > 0 ? forSon : all
+  /** Uniquement le fichier `phrases/<son>.json` de la fiche. */
+  const pool = soutienPhrasesForSonOrAll(bank.id, level)
   const rich = pool.filter((r) => countSoundInPhrase(r.sentence, bank) >= minHits)
   const source = rich.length > 0 ? rich : pool.filter((r) => countSoundInPhrase(r.sentence, bank) >= 1)
   if (source.length === 0) return null
@@ -419,12 +411,8 @@ export function genKind(
       )
       type ScrambleRow = { sentence: string; word: string; letters: string }
       const byWord = new Map<string, ScrambleRow[]>()
-      /** Banque unique (word/son/sentences) ; priorité au son de la fiche. */
-      const bySon = filterSoutienSon(soutienPhrasesCommon().phrases, bank.id)
-      const curatedRows = filterSoutienLevel(
-        bySon.length > 0 ? bySon : soutienPhrasesCommon().phrases,
-        options?.level,
-      )
+      /** Fichier `phrases/<son>.json` du son de la fiche uniquement. */
+      const curatedRows = soutienPhrasesForSonOrAll(bank.id, options?.level)
       for (const row of curatedRows) {
         if (!isSoutienType1Word(row.word)) continue
         if (exclude.has(displayVocabLabel(row.word).toLowerCase())) continue
@@ -530,7 +518,8 @@ export function genKind(
               article: articleByWord.get(displayVocabLabel(word).toLowerCase()),
             }))
           : bank.completes.map((c) => ({ word: c.word, article: c.article as string }))
-      const bankPhrases = soutienPhrasesType9And12(options?.level) // vivier 9+12, tous sons
+      /** Type 10 : phrases du son de la fiche (mot type 5) ; repli tous sons si vide. */
+      const bankPhrases = soutienPhrasesForSonOrAll(bank.id, options?.level)
       const rows = buildType10DetsFromWords(poolWords, rng, want, bankPhrases)
       return {
         instruction: 'Complétez avec les déterminants l’, le, la ou les.',
