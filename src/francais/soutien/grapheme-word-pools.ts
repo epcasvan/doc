@@ -1687,6 +1687,8 @@ export const GRAPHEME_WORD_POOLS = {
       "cabane",
       "caille",
       "caramel",
+      "cave",
+      "coude",
     ],
     "d": [
       "dos",
@@ -1694,18 +1696,26 @@ export const GRAPHEME_WORD_POOLS = {
     ],
     "e": [
       "école",
+      "eiffel",
     ],
     "f": [
       "fée",
+      "fées",
     ],
     "i": [
       "histoire",
+      "imperméable",
+      "informaticien",
+      "italien",
+      "italie",
     ],
     "m": [
       "maîtresse",
     ],
     "n": [
       "niche",
+      "norvégien",
+      "norvège",
     ],
     "o": [
       "oreille",
@@ -1713,6 +1723,8 @@ export const GRAPHEME_WORD_POOLS = {
     ],
     "p": [
       "palais",
+      "pied",
+      "poisson",
     ],
     "r": [
       "rhume",
@@ -1724,6 +1736,11 @@ export const GRAPHEME_WORD_POOLS = {
     "t": [
       "tapis",
       "tour eiffel",
+      "eiffel",
+    ],
+    "a": [
+      "algérien",
+      "algérie",
     ]
   }
 } as const
