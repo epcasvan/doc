@@ -867,7 +867,8 @@ function generateTcmSuites6Batch(rng: Rng): MathItem[] {
     const blanks = makeBlanks()
     return {
       layout: 'sequence',
-      sequence: seq.map((v, k) => (blanks.includes(k) ? '□' : String(v))),
+      // Valeurs réelles conservées ; trous via blankIndexes (mode libre, comme ex. 3 / 8).
+      sequence: seq.map((v) => String(v)),
       blankIndexes: blanks,
       sequenceDigits: 5,
       answer: blanks.map((k) => String(seq[k]!)).join(' ; '),
@@ -888,7 +889,7 @@ function generateTcmSuites6Batch(rng: Rng): MathItem[] {
     const show = (n: number) => fmt(n)
     return {
       layout: 'sequence',
-      sequence: seq.map((v, k) => (blanks.includes(k) ? '□' : show(v))),
+      sequence: seq.map((v) => show(v)),
       blankIndexes: blanks,
       sequenceDigits: 5,
       answer: blanks.map((k) => show(seq[k]!)).join(' ; '),

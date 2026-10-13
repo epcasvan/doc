@@ -768,9 +768,16 @@ function renderFields(
       return undefined
     }
     const clampB = (op: ArithOp, b: number) => (isMulEx910(op) && b > 99 ? 99 : b)
+    // TCM ex. 5 / 11 : a op b = corrigé sur une ligne.
+    const sameLineCorrige =
+      exerciseType === 'tcm-add-sub-col-3' || exerciseType === 'tcm-add-sub-col-4'
     return (
       <>
-        <div className="libre-inline-triple is-op">
+        <div
+          className={`libre-inline-triple is-op${sameLineCorrige ? ' is-eq-line' : ''}`}
+          role="group"
+          aria-label={`Calcul colonne ${index + 1}`}
+        >
           <NumInput
             compact
             value={item.a != null ? fmt(item.a) : ''}
@@ -828,15 +835,25 @@ function renderFields(
               })
             }}
           />
+          {sameLineCorrige ? (
+            <>
+              <span className="libre-mul-sign" aria-hidden>
+                =
+              </span>
+              <CorrigeBox compact value={item.answer ?? ''} ariaLabel={`Corrigé ${index + 1}`} />
+            </>
+          ) : null}
         </div>
         {item.libreError ? (
           <p className="libre-field-error" role="alert">
             {item.libreError}
           </p>
         ) : null}
-        <Field label="Corrigé">
-          <CorrigeBox value={item.answer ?? ''} ariaLabel={`Corrigé ${index + 1}`} />
-        </Field>
+        {!sameLineCorrige ? (
+          <Field label="Corrigé">
+            <CorrigeBox value={item.answer ?? ''} ariaLabel={`Corrigé ${index + 1}`} />
+          </Field>
+        ) : null}
       </>
     )
   }

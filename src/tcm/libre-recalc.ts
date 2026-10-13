@@ -126,6 +126,13 @@ function isCfrColSeven(exerciseType: string): boolean {
   )
 }
 
+/** TCM normal ex. 5 / 11 : largeur de grille imposée (4 ou 5 col.). */
+function tcmAddSubColWidth(exerciseType: string): 4 | 5 | null {
+  if (exerciseType === 'tcm-add-sub-col-3') return 4
+  if (exerciseType === 'tcm-add-sub-col-4') return 5
+  return null
+}
+
 function recalcColumn(item: MathItem, exerciseType = ''): MathItem {
   const a = typeof item.a === 'number' ? item.a : parseFrNumber(String(item.a ?? ''))
   let b = typeof item.b === 'number' ? item.b : parseFrNumber(String(item.b ?? ''))
@@ -172,6 +179,11 @@ function recalcColumn(item: MathItem, exerciseType = ''): MathItem {
   // Ex. 7–10 : grille toujours 7 colonnes (ne suit pas le nombre de chiffres).
   if (isCfrColSeven(exerciseType)) {
     next = withFixedColumnWidth(next, 7)
+  }
+  // TCM ex. 5 / 11 : conserver 4 ou 5 colonnes après édition libre.
+  const tcmWidth = tcmAddSubColWidth(exerciseType)
+  if (tcmWidth != null) {
+    next = withFixedColumnWidth(next, tcmWidth)
   }
   return next
 }
