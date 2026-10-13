@@ -44,11 +44,16 @@ export function SymmetryGridBlock({
     if (!tpl) return []
     return tpl.polylines.map((poly) => poly.map((p) => mirrorPoint(p, tpl.axisX)))
   }, [tpl])
+  const mirrorDots = useMemo(() => {
+    if (!tpl?.dots) return []
+    return tpl.dots.map((p) => mirrorPoint(p, tpl.axisX))
+  }, [tpl])
   if (!tpl) return null
   const size = 280
   const pad = 12
   const cell = (size - 2 * pad) / Math.max(tpl.cols, tpl.rows)
   const axisColor = 'var(--purple, #5b3a8c)'
+  const dotR = Math.max(2.2, cell * 0.18)
 
   const drawPoly = (poly: GridPt[], key: string, className: string) => {
     if (poly.length === 0) return null
@@ -59,6 +64,11 @@ export function SymmetryGridBlock({
       })
       .join(' ')
     return <path key={key} d={d} className={className} fill="none" />
+  }
+
+  const drawDot = (p: GridPt, key: string, className: string) => {
+    const s = toSvg(p, tpl.cols, tpl.rows, size, pad)
+    return <circle key={key} cx={s.x} cy={s.y} r={dotR} className={className} />
   }
 
   return (
@@ -105,8 +115,12 @@ export function SymmetryGridBlock({
           strokeWidth={2.5}
         />
         {tpl.polylines.map((poly, i) => drawPoly(poly, `src-${i}`, 'tcm-cfr-figure-line'))}
+        {(tpl.dots ?? []).map((p, i) => drawDot(p, `src-dot-${i}`, 'tcm-cfr-figure-dot'))}
         {show
           ? mirrorPolys.map((poly, i) => drawPoly(poly, `img-${i}`, 'tcm-cfr-figure-image'))
+          : null}
+        {show
+          ? mirrorDots.map((p, i) => drawDot(p, `img-dot-${i}`, 'tcm-cfr-figure-dot-image'))
           : null}
       </svg>
     </div>

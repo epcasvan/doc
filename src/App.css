@@ -4434,6 +4434,8 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
 .tcm-cfr-grid-line{stroke:#c8c4d0;stroke-width:0.7}
 .tcm-cfr-figure-line{stroke:var(--ink,#222);stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
 .tcm-cfr-figure-image{stroke:var(--purple,#5b3a8c);stroke-width:2;stroke-dasharray:4 3;stroke-linejoin:round;stroke-linecap:round}
+.tcm-cfr-figure-dot{fill:var(--ink,#222);stroke:none}
+.tcm-cfr-figure-dot-image{fill:var(--purple,#5b3a8c);stroke:none}
 .tcm-cfr-segments{width:100%}
 .tcm-cfr-segment-frame{border:1px solid #c8c4d0;padding:10px 12px;display:flex;flex-direction:column;gap:10px}
 .tcm-cfr-segment-row{

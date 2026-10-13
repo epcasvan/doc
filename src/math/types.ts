@@ -480,6 +480,8 @@ export type MathItem = {
     /** Rotation horaire de la silhouette (0 = sens normal). */
     rotation?: 0 | 90 | 180 | 270
     polylines: Array<Array<{ x: number; y: number }>>
+    /** Points marqués (œil, pompon…) sur des intersections. */
+    dots?: Array<{ x: number; y: number }>
   }
   /** Segments à mesurer (TCM CFR). */
   segments?: Array<{ mm: number; unit: 'mm' | 'cm'; display: string }>
