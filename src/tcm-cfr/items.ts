@@ -868,7 +868,7 @@ const FIG_RECT: NamedFigure = {
 const FIG_RHOMBUS: NamedFigure = {
   figure: 'rhombus',
   name: 'losange',
-  props: ['4 côtés égaux', 'diagonales perpendiculaires'],
+  props: ['4 côtés égaux', 'angles opposés égaux'],
   dims: { ...BARE },
 }
 const FIG_PARA: NamedFigure = {

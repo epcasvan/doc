@@ -77,8 +77,9 @@ const isSoutienFr = activePage.domain === 'soutien-fr'
 const isAlphabetisation = activePage.domain === 'alphabetisation'
 const isTcm = isTcmDomain(activePage.domain)
 const isTcmCfr = isTcmCfrDomain(activePage.domain)
-/** TCM / TCM CFR : test multi-pages packé, UI simplifiée. */
-const isTcmLike = isTcm || isTcmCfr
+const isTcmCsc = activePage.domain === 'tcm-csc'
+/** TCM / TCM CFR / TCM CSC : test multi-pages packé, UI simplifiée + mode libre dédié. */
+const isTcmLike = isTcm || isTcmCfr || isTcmCsc
 const isTcf = activePage.domain === TCF_DOMAIN
 /** Page 1 Informations (TCM / CFR / CSC) : pas de Questions ni Colonnes. */
 const isTcmInfoPage = isTcmFamilyConsignesType(activeBlock.exerciseType)

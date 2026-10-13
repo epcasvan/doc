@@ -543,12 +543,13 @@ export function GeometryFigure({ type, dims }: { type?: Figure; dims?: FigureDim
 
         {type === 'rhombus' && !rhombusPlacement && (
           <>
-            <polygon points="130,28 200,95 130,162 60,95" />
+            {/* Diagonales inégales (170 × 90) : losange distinct du carré. */}
+            <polygon points="130,50 215,95 130,140 45,95" />
             {hasHeight && (
               <line
-                x1="200"
+                x1="215"
                 y1="95"
-                x2="60"
+                x2="45"
                 y2="95"
                 fill="none"
                 strokeDasharray="5 4"
@@ -557,12 +558,12 @@ export function GeometryFigure({ type, dims }: { type?: Figure; dims?: FigureDim
               />
             )}
             {(d.side != null || d.ask === 'side') && (
-              <L x={130} y={180}>
+              <L x={130} y={168}>
                 {d.ask === 'side' ? '?' : `${fmt(d.side!)} ${unit}`}
               </L>
             )}
             {(d.height != null || d.ask === 'height') && (
-              <L x={210} y={92} anchor="start">
+              <L x={222} y={92} anchor="start">
                 {d.ask === 'height' ? 'h = ?' : `h = ${fmt(d.height!)} ${unit}`}
               </L>
             )}

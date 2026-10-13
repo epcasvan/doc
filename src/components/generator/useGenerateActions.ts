@@ -23,6 +23,7 @@ import type {
   PreviewMode,
 } from '@/math/types'
 import type { InstitutionalHeader } from '@/components/math/PrintDocumentChrome'
+import { isTcmFamilyExercise, recalcTcmLibreItems } from '@/tcm/libre-recalc'
 
 export type UseGenerateActionsParams = {
   pages: PageConfig[]
@@ -105,13 +106,17 @@ export function useGenerateActions({
       }
 
       // Contenu libre déjà saisi : on le fige explicitement (nouvelles refs) pour forcer l’aperçu.
+      // TCM / TCM CFR : recalcule les réponses à partir des valeurs éditées.
       if (libreMode && Array.isArray(block.libreItems) && block.libreItems.length > 0) {
+        const frozen = isTcmFamilyExercise(block.exerciseType)
+          ? recalcTcmLibreItems(block.libreItems, block.exerciseType)
+          : block.libreItems.map((item) => ({ ...item }))
         return current.map((p, i) =>
           i !== pageIndex
             ? p
             : setPageBlock(p, safeBlockIndex, {
                 contentSeed: nextLocal,
-                libreItems: block.libreItems!.map((item) => ({ ...item })),
+                libreItems: frozen,
                 libreInstruction: block.libreInstruction,
               }),
         )

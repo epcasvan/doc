@@ -49,7 +49,7 @@ const PROPERTIES: { figure: Figure; dims?: FigureDims; rows: Line[] }[] = [
     rows: [
       { label: 'Nom', answer: 'losange' },
       { label: 'Côtés égaux', answer: '4' },
-      { label: 'Angles droits', answer: '0' },
+      { label: 'Angles opposés', answer: 'égaux' },
       { label: 'Axes de symétrie', answer: '2' },
     ],
   },

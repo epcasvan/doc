@@ -4223,6 +4223,7 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
   .side-tool-panel-body{padding:12px 16px 20px;display:flex;flex-direction:column;gap:12px}
 }
 .libre-field{display:flex;flex-direction:column;gap:6px;font-size:12px;color:var(--muted)}
+.libre-field.is-line>span{font-size:11px;font-weight:600;color:var(--muted);letter-spacing:.02em}
 .libre-textarea{border-radius:14px!important;min-height:64px;resize:vertical}
 .libre-item-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
 .libre-item-card{
@@ -4230,20 +4231,47 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
   border-radius:14px;background:#faf9f6;position:relative
 }
 .libre-item-num{font-size:12px;font-weight:700;color:var(--ink)}
+.libre-item-num.is-accent{color:var(--purple);font-size:14px}
 .libre-options{display:flex;flex-direction:column;gap:6px}
 .libre-options>b{font-size:12px;color:var(--ink)}
+/* TCM libre : n° à gauche, champs à droite ; traits (pas pastilles). */
+.libre-item-list.is-tcm{display:flex!important;flex-direction:column;gap:10px}
+.libre-item-card.is-tcm-row{
+  display:grid!important;grid-template-columns:2.2em minmax(0,1fr);gap:8px 10px;
+  align-items:start;padding:8px 10px
+}
+.libre-item-card.is-tcm-row>.libre-item-num{grid-column:1;padding-top:6px;line-height:1.2}
+.libre-item-body{display:flex;flex-direction:column;gap:8px;min-width:0}
+.libre-inline-triple{display:flex;flex-wrap:wrap;gap:8px;align-items:end}
+.libre-inline-triple>.libre-field{flex:1 1 72px;min-width:64px}
+.libre-line-input{
+  width:100%;min-width:0;box-sizing:border-box;
+  border:0;border-bottom:1.5px solid var(--ink);border-radius:0;
+  background:transparent;padding:4px 2px 3px;font:inherit;font-size:14px;
+  color:var(--ink);outline:none;min-height:28px
+}
+.libre-line-input:focus{border-bottom-color:var(--purple)}
+.libre-line-input.is-wide{min-width:12em}
+.libre-line-input.is-select{
+  appearance:auto;cursor:pointer;background:#fff;
+  border:1px solid var(--line);border-radius:6px;padding:4px 6px;min-height:32px
+}
+.libre-line-input.is-textarea{
+  border:1px solid var(--line);border-radius:8px;padding:6px 8px;
+  resize:vertical;min-height:56px;background:#fff
+}
 /* Mode libre (panneau de droite) : les champs suivent la largeur disponible.
    Listes de questions en grille auto (2, 3… colonnes), champs côte à côte s’il y a la place. */
 .side-tool-panel.is-libre .side-tool-panel-body{container-type:inline-size;container-name:libre}
-.side-tool-panel.is-libre :is(.libre-item-list,.phrase-libre-list,.calli-fields,.tcf-choix-list){
+.side-tool-panel.is-libre :is(.libre-item-list:not(.is-tcm),.phrase-libre-list,.calli-fields,.tcf-choix-list){
   display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,260px),1fr));gap:10px 12px;align-items:start
 }
 .side-tool-panel.is-libre .phrase-libre-list{max-height:none;overflow:visible}
-.side-tool-panel.is-libre .libre-item-card{
+.side-tool-panel.is-libre .libre-item-card:not(.is-tcm-row){
   display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;align-items:end
 }
-.side-tool-panel.is-libre .libre-item-card>.libre-item-num,
-.side-tool-panel.is-libre .libre-item-card>.libre-options{grid-column:1 / -1}
+.side-tool-panel.is-libre .libre-item-card:not(.is-tcm-row)>.libre-item-num,
+.side-tool-panel.is-libre .libre-item-card:not(.is-tcm-row)>.libre-options{grid-column:1 / -1}
 .side-tool-panel.is-libre .libre-options{
   display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:6px 8px
 }

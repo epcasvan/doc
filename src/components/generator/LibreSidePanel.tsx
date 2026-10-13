@@ -19,6 +19,7 @@ import { DEFAULT_GAME_FONT_SIZE } from '@/jeux/font-size'
 import { TcfExerciseEditor } from '@/tcf/TcfExerciseEditor'
 import type { TcfNiveau } from '@/tcf/types'
 import { GenericLibreEditor } from '@/components/generator/GenericLibreEditor'
+import { TcmLibreEditor } from '@/components/generator/TcmLibreEditor'
 import { VocabAddWordRow } from '@/components/generator/VocabAddWordRow'
 import type { VocabWordEntry } from '@/francais/vocab-learn'
 
@@ -31,6 +32,7 @@ export type LibreSidePanelProps = {
   isCalliDomain: boolean
   isJeuxDomain: boolean
   isTcf: boolean
+  isTcmLike: boolean
   isDroites: boolean
   isConstruire: boolean
   soutienKind: string | undefined
@@ -59,6 +61,7 @@ export function LibreSidePanel({
   isCalliDomain,
   isJeuxDomain,
   isTcf,
+  isTcmLike,
   isDroites,
   isConstruire,
   soutienKind,
@@ -252,8 +255,33 @@ export function LibreSidePanel({
             onChange={(patch) => updatePage(patch)}
           />
         ) : null}
+        {/* TCM / TCM CFR / CSC : éditeur spécialisé (sélecteurs + recalcul). */}
+        {isTcmLike &&
+        !isPhraseDomain &&
+        !isCalliDomain &&
+        !isJeuxDomain &&
+        !isTcf ? (
+          <TcmLibreEditor
+            exerciseType={activeBlock.exerciseType}
+            instruction={
+              activeBlock.libreInstruction ??
+              activeSheet?.blocks[safeBlockIndex]?.instruction ??
+              ''
+            }
+            items={
+              activeBlock.libreItems ??
+              activeSheet?.blocks[safeBlockIndex]?.items ??
+              []
+            }
+            onChangeInstruction={(libreInstruction) =>
+              updatePage({ libreInstruction })
+            }
+            onChangeItems={(libreItems) => updatePage({ libreItems })}
+          />
+        ) : null}
         {/* Un seul éditeur générique — évite le doublon (ex. domaines nombres). */}
-        {!isPhraseDomain &&
+        {!isTcmLike &&
+        !isPhraseDomain &&
         !isCalliDomain &&
         !isJeuxDomain &&
         !isTcf &&

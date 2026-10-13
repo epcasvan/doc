@@ -504,6 +504,7 @@ export function GeneratorPage({ onLogout }: { onLogout: () => void }) {
               isCalliDomain={ctx.isCalliDomain}
               isJeuxDomain={ctx.isJeuxDomain}
               isTcf={ctx.isTcf}
+              isTcmLike={ctx.isTcmLike}
               isDroites={ctx.isDroites}
               isConstruire={ctx.isConstruire}
               soutienKind={ctx.soutienKind}
