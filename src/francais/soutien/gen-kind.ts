@@ -669,9 +669,10 @@ export function genKind(
     case 'associer-audio':
     case 'associer-image': {
       /**
-       * Type 15 (mots) / 16 (images type 1) :
-       * count = nb de séries (1–3) ; chaque série = 5 QR + 5 cases.
+       * Types 14 (mots) / 15 (images) :
+       * count = nb de séries (1–3) ; chaque série = 4 QR + 4 cases.
        * Aucun mot / image répété d’une série à l’autre.
+       * Type 14 : uniquement des mots avec audio (QR).
        */
       const seriesCount = Math.max(1, Math.min(3, n))
       const mode = kind === 'associer-image' ? 'images' : 'words'
@@ -693,20 +694,24 @@ export function genKind(
 
       let pool: string[]
       if (mode === 'images') {
-        const pinned = (options?.type1Words ?? []).filter((w) => Boolean(soutienImageFor(w)))
-        const fallback = type1WordPool(bank).filter((w) => Boolean(soutienImageFor(w)))
+        const pinned = (options?.type1Words ?? []).filter(
+          (w) => Boolean(soutienImageFor(w)) && Boolean(soutienAudioFor(w)),
+        )
+        const fallback = type1WordPool(bank).filter(
+          (w) => Boolean(soutienImageFor(w)) && Boolean(soutienAudioFor(w)),
+        )
         /** Pool le plus large possible pour couvrir plusieurs séries sans doublon. */
         const seen = new Set<string>()
         pool = []
         for (const raw of [...pinned, ...fallback]) {
           const key = raw.toLowerCase()
           if (seen.has(key) || exclude.has(key)) continue
-          if (!soutienImageFor(raw)) continue
+          if (!soutienImageFor(raw) || !soutienAudioFor(raw)) continue
           seen.add(key)
           pool.push(raw)
         }
       } else {
-        /** Type 15 : mots (audio si dispo) — image non requise. */
+        /** Type 14 : mots avec audio uniquement (QR obligatoire). */
         const candidates = [
           ...bank.audioPairs.map((p) => p.word),
           ...bank.wordSearchWords,
@@ -717,16 +722,13 @@ export function genKind(
         ]
         const seen = new Set<string>()
         pool = []
-        const withAudio: string[] = []
-        const withoutAudio: string[] = []
         for (const raw of candidates) {
           const key = raw.toLowerCase()
           if (seen.has(key) || exclude.has(key)) continue
+          if (!soutienAudioFor(raw)) continue
           seen.add(key)
-          if (soutienAudioFor(raw)) withAudio.push(raw)
-          else withoutAudio.push(raw)
+          pool.push(raw)
         }
-        pool = [...withAudio, ...withoutAudio]
       }
 
       const items: MathItem[] = []

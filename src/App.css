@@ -2678,7 +2678,7 @@ html,body,#root{
 }
 .audio-order-qr-row{
   display:grid;
-  grid-template-columns:repeat(5,minmax(0,1fr));
+  grid-template-columns:repeat(var(--ao-cols,4),minmax(0,1fr));
   gap:3px 4px;
   width:100%;
   align-items:start
@@ -2698,7 +2698,7 @@ html,body,#root{
 }
 .audio-order-answer-row{
   display:grid;
-  grid-template-columns:repeat(5,minmax(0,1fr));
+  grid-template-columns:repeat(var(--ao-cols,4),minmax(0,1fr));
   gap:4px 6px;
   width:100%;
   align-items:stretch
@@ -4431,13 +4431,37 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
 .worksheet-sheet.is-alphabetisation .syllable-pronounce-num{
   font-size:14px
 }
-/* Corrigé type 7 : place pour la légende 16 pt, peu de vide sous le mot. */
+/* Type 7 + type 6 sur la même page : densifier le corrigé (3 lignes). */
+.worksheet-sheet.is-alphabetisation .listen-check-grid--images{
+  gap:10px 8px
+}
+.worksheet-sheet.is-alphabetisation .listen-check-image-controls{
+  height:1.15em;gap:3px
+}
+.worksheet-sheet.is-alphabetisation .listen-check-image-foot{
+  gap:0;padding:1px 2px 0
+}
+.worksheet-sheet.is-alphabetisation .listen-check-block--images.is-exercise .listen-check-image{
+  min-height:12mm
+}
+.worksheet-sheet.is-alphabetisation .listen-check-block--images.is-exercise .listen-check-image img{
+  max-height:14mm
+}
+.worksheet-sheet.is-alphabetisation .listen-check-block--images.is-exercise .listen-check-image-foot{
+  grid-template-rows:1.15em 0;padding:1px 2px 1px
+}
+.worksheet-sheet.is-alphabetisation .listen-check-block--images.is-answers .listen-check-image{
+  min-height:14mm
+}
+.worksheet-sheet.is-alphabetisation .listen-check-block--images.is-answers .listen-check-image img{
+  max-height:16mm
+}
 .worksheet-sheet.is-alphabetisation .listen-check-block--images.is-answers .listen-check-image-foot{
-  grid-template-rows:1.5em 1.45em;
-  gap:1px;padding:2px 2px 1px;
+  grid-template-rows:1.15em 1.25em;
+  gap:0;padding:0 2px 0
 }
 .worksheet-sheet.is-alphabetisation .listen-check-caption{
-  height:auto;min-height:1.2em;line-height:1.15
+  height:auto;min-height:1.1em;line-height:1.1
 }
 /* Types 8 / 9 : taille corrigé inchangée (pas le +2 pt Alphabétisation). */
 .worksheet-sheet.is-alphabetisation .syllable-mini-table td{
@@ -4448,17 +4472,21 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
   --vocab-card-h:calc(64mm - 25px);
   --vocab-card-gap:2.5mm
 }
+/* Type 1 : mot collé sous l’image (pas poussé en bas du cadre). */
+.worksheet-sheet.is-alphabetisation .vocab-card{
+  justify-content:flex-start
+}
 .worksheet-sheet.is-alphabetisation .vocab-card-image{
-  flex:1 1 auto;min-height:calc(32mm - 15px)
+  flex:0 1 auto;min-height:0;max-height:calc(44mm - 25px)
 }
 .worksheet-sheet.is-alphabetisation .vocab-card-image img{
-  max-height:calc(44mm - 25px)
+  max-height:calc(40mm - 25px)
 }
 .worksheet-sheet.is-alphabetisation .vocab-card-qr{
   width:8mm;height:8mm
 }
 .worksheet-sheet.is-alphabetisation .vocab-card-word{
-  text-align:center
+  text-align:center;margin-top:1mm;margin-bottom:0
 }
 /* Types 10–11 Alpha : +2 pt, cadre par syllabe */
 .worksheet-sheet.is-alphabetisation .syllable-table-block--cell-frames .syllable-table--script .syllable-table-cell{
@@ -4470,8 +4498,11 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
   background:#fff;
   padding:3px 6px;
 }
+.worksheet-sheet.is-alphabetisation .syllable-pronounce-block{
+  gap:25px /* +20 px entre mots */
+}
 .worksheet-sheet.is-alphabetisation .syllable-pronounce-block.is-2col{
-  display:grid;gap:8px 14px;align-items:start
+  display:grid;gap:25px 14px;align-items:start
 }
 .worksheet-sheet.is-alphabetisation .syllable-pronounce-block.is-2col .syllable-pronounce-row{
   width:100%

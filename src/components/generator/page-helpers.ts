@@ -171,22 +171,23 @@ export function applyType(type: ExerciseType, prev?: ExerciseBlock): Partial<Exe
                     : alphaKind === 'lettres-maj' || alphaKind === 'lettres-min'
                       ? { count: 5, columns: 1 }
                       : alphaKind === 'souligner-maj' || alphaKind === 'souligner-min'
-                        ? { count: 10, columns: 1 }
+                        ? { count: 12, columns: 1 }
                         : alphaKind === 'ecouter'
-                          ? { count: 9, columns: 3 }
+                          ? { count: 8, columns: 2 }
                           : alphaKind === 'ecouter-image'
-                            ? { count: 15, columns: 5 }
+                            ? { count: 12, columns: 4 }
                             : alphaKind === 'syllabe-son-qr' || alphaKind === 'syllabe-son'
                               ? { count: 18 }
-                              : alphaKind === 'associer-syllabe' ||
-                                  alphaKind === 'associer-audio' ||
-                                  alphaKind === 'associer-image'
-                                ? { count: 2, columns: 1 }
-                                : alphaKind === 'syllabes-cv' ||
-                                    alphaKind === 'syllabes-long'
-                                  ? { count: 5, columns: 5 }
-                                  : alphaKind === 'syllabes-prononcer'
-                                    ? { count: 7, columns: 1 }
+                              : alphaKind === 'associer-syllabe'
+                                ? { count: 1, columns: 1 }
+                                : alphaKind === 'associer-audio' ||
+                                    alphaKind === 'associer-image'
+                                  ? { count: 2, columns: 1 }
+                                  : alphaKind === 'syllabes-cv' ||
+                                      alphaKind === 'syllabes-long'
+                                    ? { count: 6, columns: 5 }
+                                    : alphaKind === 'syllabes-prononcer'
+                                      ? { count: 10, columns: 2 }
                                     : soutienKind === 'lettres'
                                       ? { count: 5 }
                                       : soutienKind === 'syllabes'

@@ -9,8 +9,8 @@ import {
   wordHasLessonSound,
 } from './phoneme'
 
-/** Types 15 / 16 : 5 QR + 5 mots/images par série. */
-export const AUDIO_ORDER_CLIPS = 5
+/** Types 13–15 : 4 QR + 4 cases par série (une ligne). */
+export const AUDIO_ORDER_CLIPS = 4
 
 export const DISTRACTOR_LETTERS = 'bcdfghjklmnpqrstvwxzBCDFGHIJKLMNPQRSTVWXZ'.split('')
 

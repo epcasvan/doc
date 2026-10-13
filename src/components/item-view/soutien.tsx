@@ -748,9 +748,11 @@ export function AudioOrderBlock({ item, mode }: { item: MathItem; mode: PreviewM
 
   if (!data) return null
 
+  const cols = Math.max(1, clips.length || slots.length || 4)
   return (
     <div
       className={`audio-order-block audio-order-block--${modeKind}`}
+      style={{ '--ao-cols': cols } as CSSProperties}
       aria-label={modeKind === 'images' ? 'Classer les images' : 'Classer les mots'}
     >
       <div className="audio-order-qr-row">

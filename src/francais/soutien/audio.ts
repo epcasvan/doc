@@ -1,8 +1,14 @@
 import { VOCAB_TOPIC_BANKS } from '@/francais/vocab-registry'
 import { soutienImageFor } from './images'
+import audioStemIndex from './audio-stem-index.json' with { type: 'json' }
 
 /** Origine publique des MP3 (QR imprimés). */
 export const SOUTIEN_AUDIO_ORIGIN = 'https://doc-prof.vercel.app'
+
+/** Fichiers MP3 réellement présents (slug → chemin). */
+const AUDIO_BY_STEM: Map<string, string> = new Map(
+  Object.entries(audioStemIndex as Record<string, string>),
+)
 
 /** Index libellé → chemin audio vocabulaire. */
 const AUDIO_BY_LABEL: Map<string, string> = (() => {
@@ -42,18 +48,41 @@ function slugLabel(label: string): string {
     .replace(/^-|-$/g, '')
 }
 
-/** Chemin relatif `/lib/audio/vocabulaire/...` pour un mot Soutien. */
+/** Préfère un fichier présent sur disque (même slug), sinon le chemin banque. */
+function resolveExistingAudio(candidate: string | undefined, label: string): string | undefined {
+  const slug = slugLabel(label)
+  const byStem = AUDIO_BY_STEM.get(slug)
+  if (byStem) return byStem
+  if (candidate) {
+    const m = candidate.match(/\/([^/]+)\.mp3$/i)
+    const stem = m?.[1]?.toLowerCase()
+    if (stem) {
+      const alt = AUDIO_BY_STEM.get(stem)
+      if (alt) return alt
+    }
+  }
+  return undefined
+}
+
+/** Chemin relatif `/lib/audio/vocabulaire/...` pour un mot Soutien (fichier existant). */
 export function soutienAudioFor(label: string): string | undefined {
   const key = label.trim().toLowerCase()
   if (!key) return undefined
-  if (AUDIO_BY_LABEL.has(key)) return AUDIO_BY_LABEL.get(key)
+  const fromLabel = AUDIO_BY_LABEL.get(key)
+  const resolved = resolveExistingAudio(fromLabel, key)
+  if (resolved) return resolved
   // Dériver du chemin image si connu
   const image = soutienImageFor(label)
   if (image) {
     const m = image.match(/^\/lib\/images\/vocabulaire\/([^/]+)\/([^/]+)\.[^.]+$/i)
-    if (m) return `/lib/audio/vocabulaire/${m[1]}/${stripExt(m[2]!)}.mp3`
+    if (m) {
+      return resolveExistingAudio(
+        `/lib/audio/vocabulaire/${m[1]}/${stripExt(m[2]!)}.mp3`,
+        key,
+      )
+    }
   }
-  return undefined
+  return resolveExistingAudio(undefined, key)
 }
 
 /** URL absolue pour QR (téléphone). */

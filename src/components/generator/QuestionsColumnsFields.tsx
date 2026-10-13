@@ -166,12 +166,12 @@ export function QuestionsColumnsFields(props: QuestionsColumnsFieldsProps) {
                 ) : null}
                 {soutienKind === 'ecouter' ? (
                   <small className="muted">
-                    Mots à écouter / écrire (défaut 9 · max. 30).
+                    Mots à écouter / écrire (défaut 8 · 2 colonnes · max. 30).
                   </small>
                 ) : null}
                 {soutienKind === 'ecouter-image' ? (
                   <small className="muted">
-                    Images à écouter / cocher (défaut 15 · 5 colonnes · max. 30).
+                    Images à écouter / cocher (défaut 12 · 4 colonnes · max. 30).
                   </small>
                 ) : null}
                 {soutienKind === 'syllabe-son' ? (
@@ -209,12 +209,12 @@ export function QuestionsColumnsFields(props: QuestionsColumnsFieldsProps) {
                 ) : null}
                 {soutienKind === 'associer-audio' ? (
                   <small className="muted">
-                    Nombre de séries (5 QR + 5 mots cadrés · défaut 2 · max. 3).
+                    Nombre de séries (4 QR + 4 mots cadrés · défaut 2 · max. 3).
                   </small>
                 ) : null}
                 {soutienKind === 'associer-image' ? (
                   <small className="muted">
-                    Nombre de séries (5 QR + 5 images type 1 · défaut 2 · max. 3).
+                    Nombre de séries (4 QR + 4 images type 1 · défaut 2 · max. 3).
                   </small>
                 ) : null}
                 {bankOverflow ? (
@@ -396,7 +396,7 @@ export function QuestionsColumnsFields(props: QuestionsColumnsFieldsProps) {
                       <button
                         key={value}
                         type="button"
-                        className={(activeBlock.columns ?? 1) === value ? 'active' : ''}
+                        className={(activeBlock.columns ?? 2) === value ? 'active' : ''}
                         onClick={() => updatePage({ columns: value })}
                       >
                         {value}
@@ -426,7 +426,7 @@ export function QuestionsColumnsFields(props: QuestionsColumnsFieldsProps) {
                             (soutienKind === 'completer'
                               ? 2
                               : soutienKind === 'ecouter'
-                                ? 3
+                                ? 2
                                 : 3)) === value
                             ? 'active'
                             : ''
@@ -447,7 +447,7 @@ export function QuestionsColumnsFields(props: QuestionsColumnsFieldsProps) {
                       <button
                         key={value}
                         type="button"
-                        className={(activeBlock.columns ?? 5) === value ? 'active' : ''}
+                        className={(activeBlock.columns ?? 4) === value ? 'active' : ''}
                         onClick={() => updatePage({ columns: value })}
                       >
                         {value}

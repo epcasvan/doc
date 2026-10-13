@@ -181,10 +181,13 @@ function syllabesPrononcer(
   count: number,
   columns: number,
 ): AlphaBatch {
-  const cols = Math.max(1, Math.min(2, Math.round(columns) || 1))
+  const cols = Math.max(1, Math.min(2, Math.round(columns) || 2))
   const words = shuffle(
     rng,
-    type1Words(bank, rng, Math.max(count, 12)).filter((w) => syllabifyFr(w).length >= 2),
+    type1Words(bank, rng, Math.max(count, 16)).filter((w) => {
+      const n = syllabifyFr(w).length
+      return n >= 2 && n <= 3
+    }),
   ).slice(0, count)
   const rows = words.map((raw, index) => {
     const word = displayVocabLabel(raw)
@@ -356,7 +359,7 @@ export function generateAlphaLetterKind(
     case 'syllabes-long':
       return syllabesLong(bank, rng, n, options?.columns ?? 5)
     case 'syllabes-prononcer':
-      return syllabesPrononcer(bank, rng, Math.min(16, n), options?.columns ?? 1)
+      return syllabesPrononcer(bank, rng, Math.min(16, n), options?.columns ?? 2)
     case 'mots':
     case 'ecouter':
     case 'ecouter-image':

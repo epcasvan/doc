@@ -46,12 +46,12 @@ export function buildAlphaLetterSeriesPages(bankId: string, themeId: string): Pa
   return [
     page(bankId, themeId, 'mots', 6, 3),
     page(bankId, themeId, 'lettres-maj', 5, 1, [b('lettres-min', 5)]),
-    page(bankId, themeId, 'souligner-maj', 10, 1, [b('souligner-min', 10)]),
-    page(bankId, themeId, 'ecouter', 9, 3, [b('ecouter-image', 15, 5)]),
+    page(bankId, themeId, 'souligner-maj', 12, 1, [b('souligner-min', 12)]),
+    page(bankId, themeId, 'ecouter', 8, 2, [b('ecouter-image', 12, 4)]),
     page(bankId, themeId, 'syllabe-son-qr', 18, 3),
     page(bankId, themeId, 'syllabe-son', 18, 3),
-    page(bankId, themeId, 'syllabes-cv', 5, 5, [b('syllabes-long', 5, 5)]),
-    page(bankId, themeId, 'syllabes-prononcer', 7, 1, [b('associer-syllabe', 2)]),
+    page(bankId, themeId, 'syllabes-cv', 6, 5, [b('syllabes-long', 6, 5)]),
+    page(bankId, themeId, 'syllabes-prononcer', 10, 2, [b('associer-syllabe', 1)]),
     page(bankId, themeId, 'associer-audio', 2, 1, [b('associer-image', 2)]),
   ]
 }
