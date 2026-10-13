@@ -524,7 +524,7 @@ function renderFields(
   ) {
     const checkSubOrder =
       (exerciseType.includes('ex07') || exerciseType.includes('ex08')) &&
-      (item.op === '−' || item.op === '-')
+      item.op === '−'
     return (
       <>
         <div className="libre-inline-triple is-op">
