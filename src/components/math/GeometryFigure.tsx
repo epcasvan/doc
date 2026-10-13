@@ -131,7 +131,7 @@ export function GeometryFigure({ type, dims }: { type?: Figure; dims?: FigureDim
   const viewBox = paraPlacement
     ? '0 0 350 168'
     : triPlacement
-      ? '0 0 390 180'
+      ? '0 0 450 200' /* 9:4 = même ratio que le cadre brouillon */
       : rhombusPlacement
         ? '0 0 340 200'
         : trapPlacement
@@ -228,23 +228,22 @@ export function GeometryFigure({ type, dims }: { type?: Figure; dims?: FigureDim
 
         {triPlacement && (
           <>
-            {/* Scalène + a / b / c / h — b hors figure, h décalé vers la droite (cadre). */}
-            <polygon points="72,28 22,122 185,122" />
-            <L x={(22 + 185) / 2} y={148} baseline="hanging">
+            {/* Scalène a/b/c/h — polygone pleine hauteur du viewBox 9:4 (= cadre brouillon). */}
+            <polygon points="110,2 28,198 228,198" />
+            <L x={(28 + 228) / 2} y={216} baseline="hanging">
               a = {fmt(d.a!)} {unit}
             </L>
-            {/* Cote b à l’extérieur du côté droit (hors polygone). */}
-            <L x={(72 + 185) / 2 + 28} y={(28 + 122) / 2 - 14} anchor="start">
+            <L x={(110 + 228) / 2 + 34} y={(2 + 198) / 2 - 6} anchor="start">
               b = {fmt(d.b!)} {unit}
             </L>
-            <L x={(72 + 22) / 2 - 20} y={(28 + 122) / 2 - 4} anchor="end">
+            <L x={(110 + 28) / 2 - 16} y={(2 + 198) / 2} anchor="end">
               c = {fmt(d.c!)} {unit}
             </L>
             <HeightBracket
-              shapeRightX={185}
-              yTop={28}
-              yBot={122}
-              bracketX={300}
+              shapeRightX={228}
+              yTop={2}
+              yBot={198}
+              bracketX={310}
               label={`h = ${fmt(d.height!)} ${unit}`}
             />
           </>

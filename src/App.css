@@ -1205,7 +1205,7 @@ html,body,#root{
   display:flex;justify-content:center;align-items:center;width:100%;min-width:0;margin:0
 }
 .geo-dual.is-tight .geo-dual-figure{
-  aspect-ratio:9 / 4;min-height:0;max-height:100%;overflow:hidden;align-self:stretch
+  aspect-ratio:9 / 4;min-height:0;max-height:100%;overflow:visible;align-self:stretch
 }
 .geo-dual-pad{min-width:0;width:100%;align-self:start}
 .geo-dual.is-tight .geo-dual-pad{align-self:stretch;display:flex;flex-direction:column}
@@ -1221,12 +1221,10 @@ html,body,#root{
   padding-top:30px
 }
 .geo-dual.is-tight .geo-dual-answers{padding-top:30px}
-/* TCM ex. 13 : rectangle −25 % (forme seule) ; cotes gardent 10 pt. */
+/* Ex. 22–26 : figure = même hauteur que le cadre de développement. */
 .geo-dual.is-tight .geo-dual-figure .geometry-figure{
-  width:75%;max-width:75%;max-height:100%;height:auto;margin-inline:auto
-}
-.geo-dual.is-tight .geo-dual-figure .geometry-figure .dim-label{
-  font-size:4.704mm /* 3,528 mm / 0,75 → taille visuelle inchangée après scale CSS */
+  width:100%;max-width:100%;height:100%;max-height:100%;margin-inline:auto;
+  overflow:visible
 }
 .geo-dual-answer{
   display:grid;grid-template-columns:max-content minmax(4em,1fr);
@@ -1244,9 +1242,10 @@ html,body,#root{
   fill:var(--purple);fill-opacity:1;stroke:none;font-size:13pt;font-weight:600;
   font-family:'DM Sans',sans-serif
 }
-/* TCM dual (ex. 13 / 23–25 / 36–37) : cotes exactement 10 pt (= 3,528 mm). */
-.geo-dual-figure .geometry-figure .dim-label{
-  font-size:3.528mm
+/* Ex. 22–26 : cotes = même corps que le texte de la fiche (13 pt). */
+.geo-dual-figure .geometry-figure .dim-label,
+.geo-dual.is-tight .geo-dual-figure .geometry-figure .dim-label{
+  font-size:13pt
 }
 .algebra-dev-columns{
   display:grid;gap:2px 10px;width:100%;height:100%;
