@@ -1224,8 +1224,8 @@ html,body,#root{
 /* Ex. 22–26 : figure = même hauteur que le cadre de développement. */
 .geo-dual.is-tight .geo-dual-figure .geometry-figure{
   width:100%;max-width:100%;height:100%;max-height:100%;margin-inline:auto;
-  /* Contenu (cotes) doit rester dans le cadre = hauteur du brouillon. */
-  overflow:hidden
+  /* Cotes (h, côtés) doivent rester visibles — pas de rognage. */
+  overflow:visible
 }
 .geo-dual-answer{
   display:grid;grid-template-columns:max-content minmax(4em,1fr);
@@ -1240,13 +1240,13 @@ html,body,#root{
   width:100%;max-width:100%;height:auto
 }
 .geometry-figure .dim-label{
-  fill:var(--purple);fill-opacity:1;stroke:none;font-size:13pt;font-weight:600;
+  fill:var(--purple);fill-opacity:1;stroke:none;font-size:12pt;font-weight:600;
   font-family:'DM Sans',sans-serif
 }
-/* Ex. 22–26 : cotes = même corps que le texte de la fiche (13 pt). */
+/* Cotes = même corps que le texte de la fiche (12 pt), indépendant du resize SVG. */
 .geo-dual-figure .geometry-figure .dim-label,
 .geo-dual.is-tight .geo-dual-figure .geometry-figure .dim-label{
-  font-size:13pt
+  font-size:12pt
 }
 .algebra-dev-columns{
   display:grid;gap:2px 10px;width:100%;height:100%;
@@ -1271,7 +1271,7 @@ html,body,#root{
 }
 .geometry-figure.cotee{overflow:visible}
 .geometry-figure.composite-figure{width:min(100%,56mm)}
-.geometry-figure.composite-figure .dim-label{font-size:13pt}
+.geometry-figure.composite-figure .dim-label{font-size:12pt}
 .geo-block:has(.composite-figure){gap:5px}
 .coord-grid{width:min(130px,100%);height:auto;aspect-ratio:1;color:var(--ink)}
 .coord-grid.scene-polygon,.coord-grid.scene-polar{
@@ -4278,8 +4278,33 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
   align-items:start;padding:8px 10px;
   background:#fff;border:1px solid var(--line);border-radius:10px
 }
-.libre-item-card.is-tcm-row>.libre-item-num{grid-column:1;padding-top:6px;line-height:1.2}
+.libre-item-card.is-tcm-row>.libre-item-num-col{
+  grid-column:1;display:flex;flex-direction:column;align-items:center;gap:6px;padding-top:4px
+}
+.libre-item-card.is-tcm-row>.libre-item-num-col>.libre-item-num{padding-top:0;line-height:1.2}
+.libre-item-reroll{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:28px;height:28px;padding:0;border:1px solid var(--line);border-radius:8px;
+  background:#fff;color:var(--muted);cursor:pointer
+}
+.libre-item-reroll:hover{border-color:var(--purple);color:var(--purple)}
+.libre-item-reroll:focus-visible{outline:2px solid var(--purple);outline-offset:2px}
+.libre-item-reroll svg{width:14px;height:14px;display:block}
 .libre-item-body{display:flex;flex-direction:column;gap:8px;min-width:0}
+.libre-frac-stack-v{
+  display:flex;flex-direction:column;align-items:center;gap:4px;min-width:4.5em
+}
+.libre-frac-stack-v>.libre-line-input.is-num{width:4.5em;max-width:5.5em;text-align:center}
+.libre-frac-stack-v>.libre-line-input.is-select{width:100%;min-width:8em;max-width:14em}
+.libre-frac-bar{
+  display:block;width:3.2em;height:0;border-top:2px solid var(--ink);margin:1px 0
+}
+.libre-frac-op-row{
+  display:flex;flex-wrap:wrap;align-items:center;gap:10px 12px
+}
+.libre-frac-op-row>.libre-line-input.is-select{align-self:center;min-width:3.2em;max-width:4.5em}
+.libre-frac-op-row>.libre-mul-sign{align-self:center}
+.libre-frac-op-row>.libre-corrige-box{align-self:center;min-width:3.5em}
 .libre-inline-triple{display:flex;flex-wrap:wrap;gap:8px;align-items:end}
 .libre-inline-triple>.libre-field{flex:1 1 72px;min-width:64px}
 /* Ex. 28 métro : plan, ordre des questions, sélecteurs. */

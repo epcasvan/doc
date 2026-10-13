@@ -82,6 +82,7 @@ export function WorksheetSheet({
   onSelectTcfForm,
   onToggleTcfPageBreak,
   onRegenerateBlock,
+  showExerciseRefresh = true,
   coordEdit,
 }: {
   page: WorksheetPage
@@ -107,6 +108,8 @@ export function WorksheetSheet({
   onToggleTcfPageBreak?: (index: number, blockIndex?: number) => void
   /** Bouton refresh : régénère uniquement cet exercice. */
   onRegenerateBlock?: (blockIndex: number) => void
+  /** Afficher le refresh à côté du titre (désactivé en mode libre). */
+  showExerciseRefresh?: boolean
   coordEdit?: {
     selectedKind: CoordShape | null
     placingOrigin?: boolean
@@ -197,7 +200,7 @@ export function WorksheetSheet({
                 <div className="exercise-heading-main">
                   <div className="exercise-heading-title-row">
                     <h3>{blockHeading}</h3>
-                    {onRegenerateBlock ? (
+                    {onRegenerateBlock && showExerciseRefresh ? (
                       <button
                         type="button"
                         className="no-print exercise-refresh-btn"

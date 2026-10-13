@@ -50,6 +50,8 @@ export type LibreSidePanelProps = {
   tcfNiveau: TcfNiveau
   updatePage: (patch: Partial<ExerciseBlock>) => void
   onClose: () => void
+  /** Régénère l’exercice actif (autres nombres / autre tirage banque). */
+  onRegenerateBlock?: (blockIndex: number) => void
 }
 
 export function LibreSidePanel({
@@ -79,6 +81,7 @@ export function LibreSidePanel({
   tcfNiveau,
   updatePage,
   onClose,
+  onRegenerateBlock,
 }: LibreSidePanelProps) {
   return (
     <aside className="side-tool-panel is-libre no-print" aria-label="Mode libre">
@@ -253,6 +256,9 @@ export function LibreSidePanel({
             bankId={activeBlock.tcfBankId}
             shownId={activeSheet?.blocks[safeBlockIndex]?.items.find((item) => item.tcfExerciseId)?.tcfExerciseId}
             onChange={(patch) => updatePage(patch)}
+            onReroll={
+              onRegenerateBlock ? () => onRegenerateBlock(safeBlockIndex) : undefined
+            }
           />
         ) : null}
         {/* TCM / TCM CFR / CSC : éditeur spécialisé (sélecteurs + recalcul). */}

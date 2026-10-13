@@ -32,8 +32,10 @@ import {
   countIconMeta,
   rebuildCountIconsItem,
 } from '@/math/count-icons'
-import { createRng } from '@/math/rng'
+import { createRng, randomSeed } from '@/math/rng'
+import { generateItems } from '@/math/generate-items'
 import type { CountIconKind } from '@/math/types'
+import { RefreshIcon } from '@/components/generator/WorksheetSheet'
 import { fractionPartsFromItem, fractionTermFr } from '@/tcm/fraction-words'
 import { mulAudioParts, numberAudioParts } from '@/tcm-cfr/audio-nombres'
 import { clampFracShapeCfr } from '@/math/fraction-shapes'
@@ -534,6 +536,14 @@ export function TcmLibreEditor({
     onChangeItems(items.map((item, i) => (i === index ? next : item)))
   }
 
+  const rerollItem = (index: number) => {
+    const seed = randomSeed()
+    const batch = generateItems(exerciseType, Math.max(items.length, index + 1), createRng(seed), 'moyen', undefined, undefined, seed)
+    const next = batch[index]
+    if (!next) return
+    onChangeItems(items.map((item, i) => (i === index ? next : item)))
+  }
+
   // Hydrate ex.28 / 32–34 : modèle + variables visibles dès l’ouverture du mode libre.
   useEffect(() => {
     if (
@@ -560,7 +570,8 @@ export function TcmLibreEditor({
       <b>Contenu de la fiche (mode libre)</b>
       <p className="type-hint muted">
         Modifiez les nombres puis validez (✓) : les corrigés (cadre gris) se recalculent seuls et
-        ne sont pas modifiables. Un champ nombre laissé vide retrouve sa valeur précédente.
+        ne sont pas modifiables. Un champ nombre laissé vide retrouve sa valeur précédente. Le
+        bouton sous le n° tire d’autres nombres au hasard pour cette question.
       </p>
       <datalist id={NUM_1_100_LIST_ID}>
         {NUM_1_100_OPTIONS.map((n) => (
@@ -584,7 +595,18 @@ export function TcmLibreEditor({
       <ul className="libre-item-list is-tcm" aria-label="Questions">
         {items.map((item, index) => (
           <li key={`tcm-libre-${index}`} className="libre-item-card is-tcm-row">
-            <span className="libre-item-num is-accent">{index + 1}.</span>
+            <div className="libre-item-num-col">
+              <span className="libre-item-num is-accent">{index + 1}.</span>
+              <button
+                type="button"
+                className="libre-item-reroll no-print"
+                aria-label={`Autres nombres pour la question ${index + 1}`}
+                title="Autres nombres au hasard"
+                onClick={() => rerollItem(index)}
+              >
+                <RefreshIcon />
+              </button>
+            </div>
             <div className="libre-item-body">
               {renderFields(item, index, patch, withProps, exerciseType, onChangeItems, items)}
             </div>
@@ -753,46 +775,54 @@ function renderFields(
     if (kind === 'power') {
       return (
         <div className="libre-frac-stack">
-          <Field label="Base">
-            <NumInput
-              value={fmt(a)}
-              ariaLabel={`Base ${index + 1}`}
-              onCommit={(raw) => {
-                const base = parseFrNumber(raw)
-                if (base == null) return
-                const exp = Math.max(2, Math.min(4, Math.round(b)))
-                const safeBase = exp === 4 ? Math.max(1, Math.min(5, Math.round(base))) : Math.max(1, Math.min(9, Math.round(base)))
-                patch(index, {
-                  ...item,
-                  a: safeBase,
-                  b: exp,
-                  labels: ['power'],
-                  prompt: `${safeBase}${POW_SUP[exp] ?? ''} =`,
-                  answer: String(safeBase ** exp),
-                })
-              }}
-            />
-          </Field>
-          <Field label="Exposant">
-            <LineSelect
-              value={String(Math.max(2, Math.min(4, Math.round(b))))}
-              ariaLabel={`Exposant ${index + 1}`}
-              options={POW_EXP_OPTS.filter((o) => o.value !== '1')}
-              onChange={(raw) => {
-                const exp = Math.max(2, Math.min(4, Number(raw)))
-                const safeBase =
-                  exp === 4 ? Math.max(1, Math.min(5, Math.round(a))) : Math.max(1, Math.min(9, Math.round(a)))
-                patch(index, {
-                  ...item,
-                  a: safeBase,
-                  b: exp,
-                  labels: ['power'],
-                  prompt: `${safeBase}${POW_SUP[exp] ?? ''} =`,
-                  answer: String(safeBase ** exp),
-                })
-              }}
-            />
-          </Field>
+          <div className="libre-inline-triple is-op">
+            <Field label="Base">
+              <NumInput
+                compact
+                value={fmt(a)}
+                ariaLabel={`Base ${index + 1}`}
+                onCommit={(raw) => {
+                  const base = parseFrNumber(raw)
+                  if (base == null) return
+                  const exp = Math.max(2, Math.min(4, Math.round(b)))
+                  const safeBase =
+                    exp === 4
+                      ? Math.max(1, Math.min(5, Math.round(base)))
+                      : Math.max(1, Math.min(9, Math.round(base)))
+                  patch(index, {
+                    ...item,
+                    a: safeBase,
+                    b: exp,
+                    labels: ['power'],
+                    prompt: `${safeBase}${POW_SUP[exp] ?? ''} =`,
+                    answer: String(safeBase ** exp),
+                  })
+                }}
+              />
+            </Field>
+            <Field label="Exposant">
+              <LineSelect
+                value={String(Math.max(2, Math.min(4, Math.round(b))))}
+                ariaLabel={`Exposant ${index + 1}`}
+                options={POW_EXP_OPTS.filter((o) => o.value !== '1')}
+                onChange={(raw) => {
+                  const exp = Math.max(2, Math.min(4, Number(raw)))
+                  const safeBase =
+                    exp === 4
+                      ? Math.max(1, Math.min(5, Math.round(a)))
+                      : Math.max(1, Math.min(9, Math.round(a)))
+                  patch(index, {
+                    ...item,
+                    a: safeBase,
+                    b: exp,
+                    labels: ['power'],
+                    prompt: `${safeBase}${POW_SUP[exp] ?? ''} =`,
+                    answer: String(safeBase ** exp),
+                  })
+                }}
+              />
+            </Field>
+          </div>
           <Field label="Corrigé">
             <CorrigeBox value={item.answer ?? ''} ariaLabel={`Corrigé ${index + 1}`} />
           </Field>
@@ -832,22 +862,75 @@ function renderFields(
     if (kind === 'sci-mul') {
       return (
         <div className="libre-frac-stack">
-          <Field label="Nombre décimal">
+          <div className="libre-inline-triple is-op">
+            <Field label="Nombre décimal">
+              <NumInput
+                compact
+                value={fmt(a)}
+                ariaLabel={`Décimal ${index + 1}`}
+                onCommit={(raw) => {
+                  const dec = parseFrNumber(raw)
+                  if (dec == null) return
+                  const exp = Math.max(1, Math.min(4, Math.round(b)))
+                  const tenths = Math.round(dec * 10)
+                  patch(index, {
+                    ...item,
+                    a: tenths / 10,
+                    b: exp,
+                    labels: ['sci-mul'],
+                    prompt: `${fmt(tenths / 10)} × 10${POW_SUP[exp] ?? ''} =`,
+                    answer: fmt(tenths * 10 ** (exp - 1)),
+                  })
+                }}
+              />
+            </Field>
+            <Field label="Exposant de 10">
+              <LineSelect
+                value={String(Math.max(1, Math.min(4, Math.round(b))))}
+                ariaLabel={`Exposant 10 ${index + 1}`}
+                options={POW_EXP_OPTS}
+                onChange={(raw) => {
+                  const exp = Math.max(1, Math.min(4, Number(raw)))
+                  const tenths = Math.round(a * 10)
+                  patch(index, {
+                    ...item,
+                    a: tenths / 10,
+                    b: exp,
+                    labels: ['sci-mul'],
+                    prompt: `${fmt(tenths / 10)} × 10${POW_SUP[exp] ?? ''} =`,
+                    answer: fmt(tenths * 10 ** (exp - 1)),
+                  })
+                }}
+              />
+            </Field>
+          </div>
+          <Field label="Corrigé">
+            <CorrigeBox value={item.answer ?? ''} ariaLabel={`Corrigé ${index + 1}`} />
+          </Field>
+        </div>
+      )
+    }
+    // sci-div
+    return (
+      <div className="libre-frac-stack">
+        <div className="libre-inline-triple is-op">
+          <Field label="Nombre entier">
             <NumInput
+              compact
               value={fmt(a)}
-              ariaLabel={`Décimal ${index + 1}`}
+              ariaLabel={`Entier ${index + 1}`}
               onCommit={(raw) => {
-                const dec = parseFrNumber(raw)
-                if (dec == null) return
+                const whole = parseFrNumber(raw)
+                if (whole == null) return
                 const exp = Math.max(1, Math.min(4, Math.round(b)))
-                const tenths = Math.round(dec * 10)
+                const w = Math.max(100, Math.min(9999, Math.round(whole)))
                 patch(index, {
                   ...item,
-                  a: tenths / 10,
+                  a: w,
                   b: exp,
-                  labels: ['sci-mul'],
-                  prompt: `${fmt(tenths / 10)} × 10${POW_SUP[exp] ?? ''} =`,
-                  answer: fmt(tenths * 10 ** (exp - 1)),
+                  labels: ['sci-div'],
+                  prompt: `${w} ÷ 10${POW_SUP[exp] ?? ''} =`,
+                  answer: fmt(Number((w / 10 ** exp).toFixed(exp))),
                 })
               }}
             />
@@ -859,66 +942,19 @@ function renderFields(
               options={POW_EXP_OPTS}
               onChange={(raw) => {
                 const exp = Math.max(1, Math.min(4, Number(raw)))
-                const tenths = Math.round(a * 10)
+                const w = Math.max(100, Math.min(9999, Math.round(a)))
                 patch(index, {
                   ...item,
-                  a: tenths / 10,
+                  a: w,
                   b: exp,
-                  labels: ['sci-mul'],
-                  prompt: `${fmt(tenths / 10)} × 10${POW_SUP[exp] ?? ''} =`,
-                  answer: fmt(tenths * 10 ** (exp - 1)),
+                  labels: ['sci-div'],
+                  prompt: `${w} ÷ 10${POW_SUP[exp] ?? ''} =`,
+                  answer: fmt(Number((w / 10 ** exp).toFixed(exp))),
                 })
               }}
             />
           </Field>
-          <Field label="Corrigé">
-            <CorrigeBox value={item.answer ?? ''} ariaLabel={`Corrigé ${index + 1}`} />
-          </Field>
         </div>
-      )
-    }
-    // sci-div
-    return (
-      <div className="libre-frac-stack">
-        <Field label="Nombre entier">
-          <NumInput
-            value={fmt(a)}
-            ariaLabel={`Entier ${index + 1}`}
-            onCommit={(raw) => {
-              const whole = parseFrNumber(raw)
-              if (whole == null) return
-              const exp = Math.max(1, Math.min(4, Math.round(b)))
-              const w = Math.max(100, Math.min(9999, Math.round(whole)))
-              patch(index, {
-                ...item,
-                a: w,
-                b: exp,
-                labels: ['sci-div'],
-                prompt: `${w} ÷ 10${POW_SUP[exp] ?? ''} =`,
-                answer: fmt(Number((w / 10 ** exp).toFixed(exp))),
-              })
-            }}
-          />
-        </Field>
-        <Field label="Exposant de 10">
-          <LineSelect
-            value={String(Math.max(1, Math.min(4, Math.round(b))))}
-            ariaLabel={`Exposant 10 ${index + 1}`}
-            options={POW_EXP_OPTS}
-            onChange={(raw) => {
-              const exp = Math.max(1, Math.min(4, Number(raw)))
-              const w = Math.max(100, Math.min(9999, Math.round(a)))
-              patch(index, {
-                ...item,
-                a: w,
-                b: exp,
-                labels: ['sci-div'],
-                prompt: `${w} ÷ 10${POW_SUP[exp] ?? ''} =`,
-                answer: fmt(Number((w / 10 ** exp).toFixed(exp))),
-              })
-            }}
-          />
-        </Field>
         <Field label="Corrigé">
           <CorrigeBox value={item.answer ?? ''} ariaLabel={`Corrigé ${index + 1}`} />
         </Field>
@@ -1496,13 +1532,11 @@ function renderFields(
       return undefined
     }
     const clampB = (op: ArithOp, b: number) => (capsMulB && op === '×' && b > 99 ? 99 : b)
-    // TCM ex. 5 / 11 : a op b = corrigé sur une ligne.
-    const sameLineCorrige =
-      exerciseType === 'tcm-add-sub-col-3' || exerciseType === 'tcm-add-sub-col-4'
+    // Aligné comme ex. 12 : a · op · b, corrigé en dessous.
     return (
       <>
         <div
-          className={`libre-inline-triple is-op${sameLineCorrige ? ' is-eq-line' : ''}`}
+          className="libre-inline-triple is-op"
           role="group"
           aria-label={`Calcul colonne ${index + 1}`}
         >
@@ -1602,25 +1636,15 @@ function renderFields(
               })
             }}
           />
-          {sameLineCorrige ? (
-            <>
-              <span className="libre-mul-sign" aria-hidden>
-                =
-              </span>
-              <CorrigeBox value={item.answer ?? ''} ariaLabel={`Corrigé ${index + 1}`} />
-            </>
-          ) : null}
         </div>
         {item.libreError ? (
           <p className="libre-field-error" role="alert">
             {item.libreError}
           </p>
         ) : null}
-        {!sameLineCorrige ? (
-          <Field label="Corrigé">
-            <CorrigeBox value={item.answer ?? ''} ariaLabel={`Corrigé ${index + 1}`} />
-          </Field>
-        ) : null}
+        <Field label="Corrigé">
+          <CorrigeBox value={item.answer ?? ''} ariaLabel={`Corrigé ${index + 1}`} />
+        </Field>
       </>
     )
   }
@@ -1651,28 +1675,32 @@ function renderFields(
             onChange={(kind) => applyFrac(kind as ShapeKind, fs.n, fs.d)}
           />
         </Field>
-        <Field label="Parts colorées (n)">
-          <NumInput
-            value={String(fs.n)}
-            ariaLabel={`Numérateur ${index + 1}`}
-            onCommit={(raw) => {
-              const n = Math.round(Number(raw.replace(',', '.')))
-              if (!Number.isFinite(n)) return
-              applyFrac(fs.kind, n, fs.d)
-            }}
-          />
-        </Field>
-        <Field label="Parts totales (d)">
-          <NumInput
-            value={String(fs.d)}
-            ariaLabel={`Dénominateur ${index + 1}`}
-            onCommit={(raw) => {
-              const d = Math.round(Number(raw.replace(',', '.')))
-              if (!Number.isFinite(d)) return
-              applyFrac(fs.kind, fs.n, d)
-            }}
-          />
-        </Field>
+        <div className="libre-inline-triple is-frac">
+          <Field label="Parts colorées">
+            <NumInput
+              compact
+              value={String(fs.n)}
+              ariaLabel={`Parts colorées ${index + 1}`}
+              onCommit={(raw) => {
+                const n = Math.round(Number(raw.replace(',', '.')))
+                if (!Number.isFinite(n)) return
+                applyFrac(fs.kind, n, fs.d)
+              }}
+            />
+          </Field>
+          <Field label="Parts totales">
+            <NumInput
+              compact
+              value={String(fs.d)}
+              ariaLabel={`Parts totales ${index + 1}`}
+              onCommit={(raw) => {
+                const d = Math.round(Number(raw.replace(',', '.')))
+                if (!Number.isFinite(d)) return
+                applyFrac(fs.kind, fs.n, d)
+              }}
+            />
+          </Field>
+        </div>
         <Field label="Corrigé">
           <CorrigeBox value={item.answer ?? ''} ariaLabel={`Corrigé ${index + 1}`} />
         </Field>
@@ -2009,21 +2037,24 @@ function renderFields(
     }
     return (
       <div className="libre-frac-stack" role="group" aria-label={`Conversion ${index + 1}`}>
-        <Field label="Unité">
-          <LineSelect
-            value={family}
-            ariaLabel={`Famille d’unités ${index + 1}`}
-            options={[...CONVERT_FAMILY_OPTIONS]}
-            onChange={(fam) => applyConvert({ family: fam as ConvertFamily })}
-          />
-        </Field>
-        <Field label="Valeur">
-          <NumInput
-            value={item.convert.value}
-            ariaLabel={`Valeur ${index + 1}`}
-            onCommit={(value) => applyConvert({ value })}
-          />
-        </Field>
+        <div className="libre-inline-triple is-op">
+          <Field label="Valeur">
+            <NumInput
+              compact
+              value={item.convert.value}
+              ariaLabel={`Valeur ${index + 1}`}
+              onCommit={(value) => applyConvert({ value })}
+            />
+          </Field>
+          <Field label="Unité">
+            <LineSelect
+              value={family}
+              ariaLabel={`Famille d’unités ${index + 1}`}
+              options={[...CONVERT_FAMILY_OPTIONS]}
+              onChange={(fam) => applyConvert({ family: fam as ConvertFamily })}
+            />
+          </Field>
+        </div>
         <div className="libre-inline-triple is-op">
           <Field label="De">
             <LineSelect
@@ -3123,46 +3154,38 @@ function renderFields(
     }
     return (
       <div className="libre-frac-stack">
-        <div className="libre-inline-triple is-op is-eq-line">
-          <Field label="1ʳᵉ valeur">
-            <NumInput
-              compact
-              value={fmt(a)}
-              ariaLabel={`1ʳᵉ valeur ${index + 1}`}
-              onCommit={(raw) => {
-                const n = parseRelatifNumber(raw) ?? parseFrNumber(raw)
-                if (n == null) return
-                applyRel(n, op, b)
-              }}
-            />
-          </Field>
-          <Field label="Opération">
-            <LineSelect
-              value={OPS.includes(op) ? op : '+'}
-              ariaLabel={`Opération ${index + 1}`}
-              options={OPS.map((o) => ({ value: o, label: o }))}
-              onChange={(nextOp) => applyRel(a, nextOp as ArithOp, b)}
-            />
-          </Field>
-          <Field label="2ᵉ valeur">
-            <NumInput
-              compact
-              value={fmt(b)}
-              ariaLabel={`2ᵉ valeur ${index + 1}`}
-              onCommit={(raw) => {
-                const n = parseRelatifNumber(raw) ?? parseFrNumber(raw)
-                if (n == null) return
-                applyRel(a, op, n)
-              }}
-            />
-          </Field>
-        </div>
-        <Field label="Énoncé">
-          <CorrigeBox value={`${fmtR(a)} ${op} ${fmtR(b)} =`} ariaLabel={`Énoncé ${index + 1}`} />
-        </Field>
-        <Field label="Corrigé">
+        <div className="libre-inline-triple is-op is-eq-line" role="group" aria-label={`Relatif ${index + 1}`}>
+          <NumInput
+            compact
+            value={fmt(a)}
+            ariaLabel={`1ʳᵉ valeur ${index + 1}`}
+            onCommit={(raw) => {
+              const n = parseRelatifNumber(raw) ?? parseFrNumber(raw)
+              if (n == null) return
+              applyRel(n, op, b)
+            }}
+          />
+          <LineSelect
+            value={OPS.includes(op) ? op : '+'}
+            ariaLabel={`Opération ${index + 1}`}
+            options={OPS.map((o) => ({ value: o, label: o }))}
+            onChange={(nextOp) => applyRel(a, nextOp as ArithOp, b)}
+          />
+          <NumInput
+            compact
+            value={fmt(b)}
+            ariaLabel={`2ᵉ valeur ${index + 1}`}
+            onCommit={(raw) => {
+              const n = parseRelatifNumber(raw) ?? parseFrNumber(raw)
+              if (n == null) return
+              applyRel(a, op, n)
+            }}
+          />
+          <span className="libre-mul-sign" aria-hidden>
+            =
+          </span>
           <CorrigeBox value={item.answer ?? ''} ariaLabel={`Corrigé ${index + 1}`} />
-        </Field>
+        </div>
       </div>
     )
   }
@@ -3185,20 +3208,17 @@ function renderFields(
     if (kind === 'frac-reduce-partial' || kind === 'frac-reduce') {
       const n = item.a ?? 2
       const d = Math.max(1, item.b ?? 4)
-      const gg0 = gcdFr(n, d)
-      const sn0 = n / gg0
-      const sd0 = d / gg0
-      // Q1 : toujours une case (num ou den de la réponse) à saisir.
-      const isPartial = kind === 'frac-reduce-partial' || index === 0 || /□/.test(item.prompt ?? '')
+      const isPartial = kind === 'frac-reduce-partial' || /□/.test(item.prompt ?? '')
       const missNum =
         item.missing === 'a' ||
         (item.missing !== 'b' && (item.prompt ?? '').includes('□/'))
-      const applyReduce = (nn: number, dd: number, partial: boolean, missIsNum: boolean) => {
+      const formeValue = !isPartial ? 'full' : missNum ? 'partial-num' : 'partial-den'
+      const applyReduce = (nn: number, dd: number, mode: 'full' | 'partial-num' | 'partial-den') => {
         const safeD = Math.max(1, dd)
         const g = gcdFr(nn, safeD)
         const sn = nn / g
         const sd = safeD / g
-        if (!partial) {
+        if (mode === 'full') {
           patch(index, {
             ...item,
             a: nn,
@@ -3213,6 +3233,7 @@ function renderFields(
           })
           return
         }
+        const missIsNum = mode === 'partial-num'
         patch(index, {
           ...item,
           a: nn,
@@ -3229,82 +3250,48 @@ function renderFields(
       }
       return (
         <div className="libre-frac-stack">
-          <div className="libre-inline-triple is-frac">
-            <Field label="Numérateur">
-              <NumInput
-                compact
-                value={String(n)}
-                ariaLabel={`Numérateur ${index + 1}`}
-                onCommit={(raw) => {
-                  const nn = Math.round(Number(raw.replace(',', '.')))
-                  if (!Number.isFinite(nn)) return
-                  applyReduce(nn, d, isPartial, missNum)
-                }}
-              />
-            </Field>
-            <Field label="Dénominateur">
-              <NumInput
-                compact
-                value={String(d)}
-                ariaLabel={`Dénominateur ${index + 1}`}
-                onCommit={(raw) => {
-                  const dd = Math.max(1, Math.round(Number(raw.replace(',', '.'))))
-                  if (!Number.isFinite(dd)) return
-                  applyReduce(n, dd, isPartial, missNum)
-                }}
-              />
-            </Field>
+          <div className="libre-frac-stack-v" aria-label={`Fraction ${index + 1}`}>
+            <NumInput
+              compact
+              value={String(n)}
+              ariaLabel={`Numérateur ${index + 1}`}
+              onCommit={(raw) => {
+                const nn = Math.round(Number(raw.replace(',', '.')))
+                if (!Number.isFinite(nn)) return
+                applyReduce(nn, d, formeValue as 'full' | 'partial-num' | 'partial-den')
+              }}
+            />
+            <span className="libre-frac-bar" aria-hidden />
+            <NumInput
+              compact
+              value={String(d)}
+              ariaLabel={`Dénominateur ${index + 1}`}
+              onCommit={(raw) => {
+                const dd = Math.max(1, Math.round(Number(raw.replace(',', '.'))))
+                if (!Number.isFinite(dd)) return
+                applyReduce(n, dd, formeValue as 'full' | 'partial-num' | 'partial-den')
+              }}
+            />
+            <LineSelect
+              value={formeValue}
+              ariaLabel={`Forme ${index + 1}`}
+              options={[
+                { value: 'full', label: 'Réduction sans case' },
+                { value: 'partial-num', label: 'Case numérateur (□ / den)' },
+                { value: 'partial-den', label: 'Case dénominateur (num / □)' },
+              ]}
+              onChange={(raw) =>
+                applyReduce(n, d, raw as 'full' | 'partial-num' | 'partial-den')
+              }
+            />
           </div>
-          {isPartial ? (
-            <>
-              <Field label="Case à saisir (réponse)">
-                <LineSelect
-                  value={missNum ? 'a' : 'b'}
-                  ariaLabel={`Case à saisir ${index + 1}`}
-                  options={[
-                    { value: 'a', label: 'Numérateur de la réponse (□ / den)' },
-                    { value: 'b', label: 'Dénominateur de la réponse (num / □)' },
-                  ]}
-                  onChange={(raw) => applyReduce(n, d, true, raw === 'a')}
-                />
-              </Field>
-              <div className="libre-inline-triple is-frac">
-                <Field label={missNum ? 'Réponse □' : 'Réponse num.'}>
-                  {missNum ? (
-                    <CorrigeBox value="□" ariaLabel={`Case numérateur ${index + 1}`} />
-                  ) : (
-                    <CorrigeBox value={String(sn0)} ariaLabel={`Numérateur réponse ${index + 1}`} />
-                  )}
-                </Field>
-                <Field label={missNum ? 'Réponse den.' : 'Réponse □'}>
-                  {missNum ? (
-                    <CorrigeBox value={String(sd0)} ariaLabel={`Dénominateur réponse ${index + 1}`} />
-                  ) : (
-                    <CorrigeBox value="□" ariaLabel={`Case dénominateur ${index + 1}`} />
-                  )}
-                </Field>
-              </div>
-            </>
-          ) : (
-            <Field label="Forme">
-              <LineSelect
-                value="full"
-                ariaLabel={`Forme ${index + 1}`}
-                options={[
-                  { value: 'full', label: 'Réduction sans case' },
-                  { value: 'partial', label: 'Réduction avec case (num ou den)' },
-                ]}
-                onChange={(raw) => applyReduce(n, d, raw === 'partial', false)}
-              />
-            </Field>
-          )}
           <Field label="Corrigé">
             <CorrigeBox value={item.answer ?? ''} ariaLabel={`Corrigé ${index + 1}`} />
           </Field>
         </div>
       )
     }
-    // frac-op — opération au choix (+ − × ÷).
+    // frac-op — fraction · op · fraction = réponse
     const op = (item.op ?? '+') as ArithOp
     const n1 = item.a ?? 1
     const n2 = item.b ?? 1
@@ -3352,8 +3339,8 @@ function renderFields(
     }
     return (
       <div className="libre-frac-stack">
-        <div className="libre-inline-triple is-frac">
-          <Field label="Num. 1">
+        <div className="libre-frac-op-row" role="group" aria-label={`Opération fraction ${index + 1}`}>
+          <div className="libre-frac-stack-v">
             <NumInput
               compact
               value={String(n1)}
@@ -3364,8 +3351,7 @@ function renderFields(
                 applyFracOp(n, d1, op, n2, d2)
               }}
             />
-          </Field>
-          <Field label="Dén. 1">
+            <span className="libre-frac-bar" aria-hidden />
             <NumInput
               compact
               value={String(d1)}
@@ -3376,18 +3362,14 @@ function renderFields(
                 applyFracOp(n1, n, op, n2, d2)
               }}
             />
-          </Field>
-        </div>
-        <Field label="Opération">
+          </div>
           <LineSelect
             value={OPS.includes(op) ? op : '+'}
             ariaLabel={`Opération ${index + 1}`}
             options={OPS.map((o) => ({ value: o, label: o }))}
             onChange={(nextOp) => applyFracOp(n1, d1, nextOp as ArithOp, n2, d2)}
           />
-        </Field>
-        <div className="libre-inline-triple is-frac">
-          <Field label="Num. 2">
+          <div className="libre-frac-stack-v">
             <NumInput
               compact
               value={String(n2)}
@@ -3398,8 +3380,7 @@ function renderFields(
                 applyFracOp(n1, d1, op, n, d2)
               }}
             />
-          </Field>
-          <Field label="Dén. 2">
+            <span className="libre-frac-bar" aria-hidden />
             <NumInput
               compact
               value={String(d2)}
@@ -3410,11 +3391,12 @@ function renderFields(
                 applyFracOp(n1, d1, op, n2, n)
               }}
             />
-          </Field>
-        </div>
-        <Field label="Corrigé">
+          </div>
+          <span className="libre-mul-sign" aria-hidden>
+            =
+          </span>
           <CorrigeBox value={item.answer ?? ''} ariaLabel={`Corrigé ${index + 1}`} />
-        </Field>
+        </div>
       </div>
     )
   }

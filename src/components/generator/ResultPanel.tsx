@@ -46,6 +46,7 @@ export type ResultPanelProps = {
     documentTotalPoints: number
     pointsPerQuestion: number
     onRegenerateBlock: (targetBlock: number) => void
+    showExerciseRefresh?: boolean
   }
   chromeProps: {
     institutional: InstitutionalHeader

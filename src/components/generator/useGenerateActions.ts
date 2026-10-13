@@ -310,8 +310,14 @@ export function useGenerateActions({
             gameText: reshuffled.gameText,
             gameSelectedIds: reshuffled.gameSelectedIds,
           }
-        } else if (page.domain === TCF_DOMAIN) {
-          // Relâche le tirage figé pour re-mélanger (ex. 3 thèmes PO).
+        } else if (
+          page.domain === TCF_DOMAIN ||
+          isTcmFamilyExercise(block.exerciseType) ||
+          page.domain === 'tcm' ||
+          page.domain === 'tcm-cfr' ||
+          page.domain === 'tcm-csc'
+        ) {
+          // Relâche le tirage figé pour re-mélanger (libre inclus).
           patch = {
             ...patch,
             libreItems: undefined,

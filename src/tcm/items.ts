@@ -1201,7 +1201,7 @@ function tcmSignedFracPair(rng: Rng): [{ n: number; d: number }, { n: number; d:
 }
 
 /**
- * TCM ex. 30 — six questions fractions :
+ * TCM fractions mixte — six questions :
  * 1) réduire avec num ou den déjà affiché (□) ;
  * 2) réduire sans trou partiel ;
  * 3) +  4) −  (fractions positives) ;

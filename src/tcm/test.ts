@@ -1,6 +1,6 @@
 /**
  * Test de placement mathématiques (TCM) — chronologie calquée sur
- * soutien-scolaire `PLACEMENT_MATH_EXERCISES` (35 exercices).
+ * soutien-scolaire `PLACEMENT_MATH_EXERCISES` (36 exercices).
  * Chaque étape réutilise un type déjà présent en algèbre / géométrie
  * (ou un type TCM dédié pour les premiers exercices).
  */
@@ -22,7 +22,7 @@ type TcmBlockSpec = {
 }
 
 type TcmStepSpec = {
-  /** N° d’exercice dans le TCM (1–37 ; le 14 est sauté comme en soutien). */
+  /** N° d’exercice dans le TCM (1–36, suite continue). */
   id: number
   label: string
   blocks: readonly TcmBlockSpec[]
@@ -92,117 +92,117 @@ export const TCM_STEPS: readonly TcmStepSpec[] = [
     blocks: [{ exerciseType: 'tcm-rect-peri-aire', count: 1, columns: 1, pointsPerQuestion: 2 }],
   },
   {
-    id: 15,
+    id: 14,
     label: 'Suites (6 termes)',
     blocks: [{ exerciseType: 'tcm-suites-6', count: 2, columns: 1 }],
   },
   {
-    id: 16,
+    id: 15,
     label: 'Trier des nombres',
     blocks: [{ exerciseType: 'tcm-ranger', count: 2, columns: 1 }],
   },
   {
-    id: 17,
+    id: 16,
     label: 'Additions et soustractions décimales',
     blocks: [{ exerciseType: 'tcm-dec-add-sub', count: 2, columns: 2 }],
   },
   {
-    id: 18,
+    id: 17,
     label: 'Multiplications posées (entier et décimal)',
     blocks: [{ exerciseType: 'tcm-mul-mixte', count: 2, columns: 2 }],
   },
   {
-    id: 19,
+    id: 18,
     label: 'Divisions posées (entier et décimal)',
     blocks: [{ exerciseType: 'tcm-div-mixte', count: 2, columns: 2 }],
   },
   {
-    id: 20,
+    id: 19,
     label: 'Colorier les fractions',
     blocks: [{ exerciseType: 'tcm-frac-color', count: 2, columns: 2, pointsPerQuestion: 1 }],
   },
   {
-    id: 21,
+    id: 20,
     label: 'Lire les fractions',
     blocks: [{ exerciseType: 'tcm-frac-read', count: 2, columns: 2, pointsPerQuestion: 1 }],
   },
   {
-    id: 22,
+    id: 21,
     label: 'Conversions de longueur',
     blocks: [{ exerciseType: 'conversions-longueur', count: 6, columns: 2 }],
   },
   {
-    id: 23,
+    id: 22,
     label: 'Parallélogramme (périmètre et aire)',
     blocks: [{ exerciseType: 'tcm-para-peri-aire', count: 1, columns: 1, pointsPerQuestion: 2 }],
   },
   {
-    id: 24,
+    id: 23,
     label: 'Triangle (périmètre et aire)',
     blocks: [{ exerciseType: 'tcm-tri-peri-aire', count: 1, columns: 1, pointsPerQuestion: 2 }],
   },
   {
-    id: 25,
+    id: 24,
     label: 'Losange (périmètre et aire)',
     blocks: [{ exerciseType: 'tcm-rhombus-peri-aire', count: 1, columns: 1, pointsPerQuestion: 2 }],
   },
   {
-    id: 26,
+    id: 25,
     label: 'Opérations décimales',
     blocks: [{ exerciseType: 'tcm-ops-decimales', count: 6, columns: 2 }],
   },
   {
-    id: 27,
+    id: 26,
     label: 'Puissances et racines',
     blocks: [{ exerciseType: 'tcm-puissances-mixte', count: 4, columns: 2 }],
   },
   {
-    id: 28,
+    id: 27,
     label: 'Priorité des opérations',
     blocks: [{ exerciseType: 'tcm-priorite-ops', count: 2, columns: 1, pointsPerQuestion: 1.5 }],
   },
   {
-    id: 29,
+    id: 28,
     label: 'Nombres relatifs',
     blocks: [{ exerciseType: 'tcm-relatifs-ops', count: 4, columns: 2 }],
   },
   {
-    id: 30,
+    id: 29,
     label: 'Fractions',
     blocks: [{ exerciseType: 'tcm-fractions-mixte', count: 6, columns: 2 }],
   },
   {
-    id: 31,
+    id: 30,
     label: 'Pourcentage et règle de trois',
     blocks: [{ exerciseType: 'tcm-proportion-kg', count: 2, columns: 1, pointsPerQuestion: 1 }],
   },
   {
-    id: 32,
+    id: 31,
     label: 'Simplification algébrique',
     blocks: [{ exerciseType: 'tcm-expressions-reduire', count: 2, columns: 1, pointsPerQuestion: 1 }],
   },
   {
-    id: 33,
+    id: 32,
     label: 'Évaluer des expressions',
     blocks: [{ exerciseType: 'tcm-expressions-evaluer', count: 2, columns: 1, pointsPerQuestion: 2 }],
   },
   {
-    id: 34,
+    id: 33,
     label: 'Résoudre des équations',
     blocks: [{ exerciseType: 'tcm-equations', count: 2, columns: 1, pointsPerQuestion: 2 }],
   },
   {
-    id: 35,
+    id: 34,
     label: 'Conversions d’unités',
     blocks: [{ exerciseType: 'tcm-conversions-mixte', count: 4, columns: 2 }],
   },
   {
-    id: 36,
+    id: 35,
     label: 'Trapèze (périmètre et aire)',
     blocks: [{ exerciseType: 'tcm-trap-peri-aire', count: 1, columns: 1, pointsPerQuestion: 2 }],
   },
   {
-    id: 37,
+    id: 36,
     label: 'Cercle (périmètre et aire)',
     blocks: [{ exerciseType: 'tcm-circle-peri-aire', count: 1, columns: 1, pointsPerQuestion: 2 }],
   },
@@ -226,25 +226,24 @@ export const TCM_MAX_SCORE = computeTcmMaxScore()
 
 /**
  * Étapes regroupées sur une même feuille A4 (après la page consignes).
- * Page 2 : 1–4 · Page 3 : 5–8 · Page 4 : 9–11 · Page 5 : 12+13+15 ·
- * Page 6 : 16+17+18 · Page 7 : 19+20 · Page 8 : 21+22+23 ·
- * Page 9 : 24+25 · Page 10 : 26+27+28 · Page 11 : 29+30+31 ·
- * Page 12 : 32+33 · Page 13 : 34+35 · Page 14 : 36+37.
- * (Le 14 est sauté comme en soutien ; 15 rejoint 13 sur la page 5.)
+ * Page 2 : 1–4 · Page 3 : 5–8 · Page 4 : 9–11 · Page 5 : 12+13+14 ·
+ * Page 6 : 15+16+17 · Page 7 : 18+19+20 · Page 8 : 21+22+23 ·
+ * Page 9 : 24+25+26 · Page 10 : 27+28+29 · Page 11 : 30+31 ·
+ * Page 12 : 32+33 · Page 13 : 34+35+36.
  */
 const TCM_PACKED_PAGES: readonly (readonly number[])[] = [
   [1, 2, 3, 4],
   [5, 6, 7, 8],
   [9, 10, 11],
-  [12, 13, 15],
-  [16, 17, 18],
-  [19, 20, 21],
-  [22, 23, 24],
-  [25, 26, 27],
-  [28, 29, 30],
-  [31, 32],
-  [33, 34],
-  [35, 36, 37],
+  [12, 13, 14],
+  [15, 16, 17],
+  [18, 19, 20],
+  [21, 22, 23],
+  [24, 25, 26],
+  [27, 28, 29],
+  [30, 31],
+  [32, 33],
+  [34, 35, 36],
 ]
 
 function blockFromSpec(

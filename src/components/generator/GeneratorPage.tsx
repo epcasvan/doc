@@ -318,6 +318,8 @@ export function GeneratorPage({ onLogout }: { onLogout: () => void }) {
     mode,
     ...chromeProps,
     onRegenerateBlock: regenerateBlock,
+    // En mode libre : refresh sous la numérotation du panneau (pas sur le titre Exercice).
+    showExerciseRefresh: !libreMode,
   } as const
 
   const settingsPanelProps = {
@@ -521,6 +523,7 @@ export function GeneratorPage({ onLogout }: { onLogout: () => void }) {
               jeuxText={ctx.jeuxText}
               tcfNiveau={ctx.tcfNiveau}
               updatePage={updatePage}
+              onRegenerateBlock={regenerateBlock}
               onClose={() => {
                 // Ferme le panneau sans effacer le contenu libre ni régénérer la fiche.
                 setLibreMode(false)

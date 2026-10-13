@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { RefreshIcon } from '@/components/generator/WorksheetSheet'
 import { applyExerciseFromAudioBank, tcfAudioEntries, type TcfAudioEntry } from './audio-bank'
 import { TCF_TYPES, tcfSlotByTypeId, tcfTypeMeta } from './catalog'
 import { AudioField, ImageField, LinesField, NumberField, TextField } from './fields'
@@ -797,6 +798,7 @@ export function TcfExerciseEditor({
   bankId,
   shownId,
   onChange,
+  onReroll,
 }: {
   niveau: TcfNiveau
   typeId: string
@@ -805,6 +807,8 @@ export function TcfExerciseEditor({
   /** Exercice de banque affiché sur la fiche (tirage selon la graine). */
   shownId?: string
   onChange: (patch: EditorPatch) => void
+  /** Tire un autre exercice / autres contenus au hasard. */
+  onReroll?: () => void
 }) {
   const slot = tcfSlotByTypeId[typeId]
   const bank = useMemo(() => (slot ? tcfSlotBank(niveau, slot) : []), [slot, niveau])
@@ -873,7 +877,20 @@ export function TcfExerciseEditor({
 
   return (
     <div className="quad-libre-block tcf-editor">
-      <b>Exercice TCF</b>
+      <div className="libre-item-num-col" style={{ alignItems: 'flex-start', marginBottom: 8 }}>
+        <b>Exercice TCF</b>
+        {onReroll ? (
+          <button
+            type="button"
+            className="libre-item-reroll no-print"
+            aria-label="Autre exercice au hasard"
+            title="Autre exercice au hasard"
+            onClick={onReroll}
+          >
+            <RefreshIcon />
+          </button>
+        ) : null}
+      </div>
       <div className="tcf-row">
         <button type="button" className="tcf-btn" disabled={!edited} onClick={() => onChange({ tcfExercise: undefined })}>
           Revenir à la banque

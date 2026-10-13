@@ -91,7 +91,7 @@ function HeightBracket({
       <line x1={bracketX} y1={yTop} x2={bracketX} y2={yBot} strokeWidth={1.5} />
       <line x1={bracketX - tick} y1={yTop} x2={bracketX + tick} y2={yTop} strokeWidth={1.5} />
       <line x1={bracketX - tick} y1={yBot} x2={bracketX + tick} y2={yBot} strokeWidth={1.5} />
-      <L x={bracketX + tick + 14} y={(yTop + yBot) / 2} anchor="start" baseline="middle">
+      <L x={bracketX + tick + 8} y={(yTop + yBot) / 2} anchor="start" baseline="middle">
         {label}
       </L>
     </g>
@@ -129,13 +129,13 @@ export function GeometryFigure({ type, dims }: { type?: Figure; dims?: FigureDim
     !bare && type === 'circle' && (d.diameter != null || (d.length != null && d.radius == null))
 
   const viewBox = paraPlacement
-    ? '0 0 350 168'
+    ? '0 0 360 168'
     : triPlacement
-      ? '0 0 450 200' /* 9:4 = même ratio que le cadre brouillon */
+      ? '0 0 420 200' /* place pour h à droite ; forme plus étroite */
       : rhombusPlacement
         ? '0 0 340 200'
         : trapPlacement
-          ? '0 0 370 178'
+          ? '0 0 380 178'
           : '0 0 260 190'
 
   return (
@@ -175,19 +175,19 @@ export function GeometryFigure({ type, dims }: { type?: Figure; dims?: FigureDim
 
         {paraPlacement && (
           <>
-            {/* Coords placement soutien Ex. 25 */}
-            <polygon points="76,118 216,118 248,38 108,38" />
-            <L x={(108 + 248) / 2} y={18}>
+            {/* Parallélogramme plus étroit : place pour « h = … » à droite (cotes hors resize). */}
+            <polygon points="70,118 178,118 204,38 96,38" />
+            <L x={(96 + 204) / 2} y={18}>
               {fmt(d.base!)} {unit}
             </L>
-            <L x={50} y={(118 + 38) / 2} anchor="end" baseline="middle">
+            <L x={48} y={(118 + 38) / 2} anchor="end" baseline="middle">
               {fmt(d.side!)} {unit}
             </L>
             <HeightBracket
-              shapeRightX={248}
+              shapeRightX={204}
               yTop={38}
               yBot={118}
-              bracketX={286}
+              bracketX={248}
               label={`h = ${fmt(d.height!)} ${unit}`}
             />
           </>
@@ -228,25 +228,22 @@ export function GeometryFigure({ type, dims }: { type?: Figure; dims?: FigureDim
 
         {triPlacement && (
           <>
-            {/*
-              Scalène a/b/c/h dans le viewBox 450×200 (= hauteur grille brouillon).
-              Base un peu plus haute pour que la cote du bas tienne dans le cadre.
-            */}
-            <polygon points="110,6 36,168 220,168" />
-            <L x={(36 + 220) / 2} y={188} baseline="middle">
+            {/* Triangle plus étroit : crochet h entièrement dans le viewBox. */}
+            <polygon points="100,10 40,168 190,168" />
+            <L x={(40 + 190) / 2} y={188} baseline="middle">
               {fmt(d.a!)} {unit}
             </L>
-            <L x={(110 + 220) / 2 + 30} y={(6 + 168) / 2 - 4} anchor="start">
+            <L x={(100 + 190) / 2 + 22} y={(10 + 168) / 2 - 4} anchor="start">
               {fmt(d.b!)} {unit}
             </L>
-            <L x={(110 + 36) / 2 - 14} y={(6 + 168) / 2} anchor="end">
+            <L x={(100 + 40) / 2 - 12} y={(10 + 168) / 2} anchor="end">
               {fmt(d.c!)} {unit}
             </L>
             <HeightBracket
-              shapeRightX={220}
-              yTop={6}
+              shapeRightX={190}
+              yTop={10}
               yBot={168}
-              bracketX={300}
+              bracketX={250}
               label={`h = ${fmt(d.height!)} ${unit}`}
             />
           </>
@@ -436,22 +433,22 @@ export function GeometryFigure({ type, dims }: { type?: Figure; dims?: FigureDim
 
         {trapPlacement && (
           <>
-            {/* Coords placement soutien Ex. 37 — a / b / c / h */}
-            <polygon points="92,32 202,32 244,120 54,120" />
-            <L x={(92 + 202) / 2} y={16}>
+            {/* Trapèze plus étroit : place pour h à droite. */}
+            <polygon points="88,32 178,32 214,120 58,120" />
+            <L x={(88 + 178) / 2} y={16}>
               a = {fmt(d.top!)} {unit}
             </L>
-            <L x={(54 + 244) / 2} y={146} baseline="hanging">
+            <L x={(58 + 214) / 2} y={146} baseline="hanging">
               b = {fmt(d.bottom!)} {unit}
             </L>
-            <L x={(54 + 92) / 2 - 20} y={(120 + 32) / 2} anchor="end" baseline="middle">
+            <L x={(58 + 88) / 2 - 18} y={(120 + 32) / 2} anchor="end" baseline="middle">
               c = {fmt(d.c ?? d.side!)} {unit}
             </L>
             <HeightBracket
-              shapeRightX={244}
+              shapeRightX={214}
               yTop={32}
               yBot={120}
-              bracketX={270}
+              bracketX={250}
               label={`h = ${fmt(d.height!)} ${unit}`}
             />
           </>

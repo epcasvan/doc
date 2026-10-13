@@ -365,7 +365,11 @@ export function InlinePrompt({ item, mode }: { item: MathItem; mode: PreviewMode
   const prompt = item.prompt ?? ''
   const show = mode === 'answers'
 
-  if (item.op && item.a != null && item.b != null) {
+  // Fractions (TCM ex. 30) : ne pas passer par EquationRow (qui n’affiche que a op b).
+  const isFracItem =
+    item.labels?.some((l) => l.startsWith('frac-')) ||
+    /[-−]?\d+\s*\/\s*[-−]?\d+/.test(prompt)
+  if (item.op && item.a != null && item.b != null && !isFracItem) {
     return <EquationRow item={item} mode={mode} />
   }
 
