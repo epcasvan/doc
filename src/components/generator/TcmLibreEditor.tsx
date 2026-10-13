@@ -360,7 +360,6 @@ function hydrateAlgebraTemplateItem(item: MathItem, exerciseType: string, index:
       const tpl = reduireTemplateById(item.problemTemplateId ?? '') ?? TCM_REDUIRE_Q2[index % TCM_REDUIRE_Q2.length]!
       return (
         fillReduireQ2WithVars(tpl, {
-          ...(item.problemVars ?? {}),
           k0: tpl.slots[0] === 'paren' ? 1 : 0,
           k1: tpl.slots[1] === 'paren' ? 1 : 0,
           k2: tpl.slots[2] === 'paren' ? 1 : 0,
@@ -380,6 +379,7 @@ function hydrateAlgebraTemplateItem(item: MathItem, exerciseType: string, index:
           L0: 0,
           L1: 1,
           L2: 2,
+          ...(item.problemVars ?? {}),
         }) ?? item
       )
     }
@@ -3018,17 +3018,61 @@ function renderFields(
     exerciseType === 'tcm-fractions-mixte' ||
     item.labels?.some((l) => l.startsWith('frac-'))
   ) {
+    const gcdFr = (x: number, y: number): number => (y ? gcdFr(y, x % y) : Math.abs(x) || 1)
     const kind =
       item.labels?.find((l) => l.startsWith('frac-')) ??
       (/□/.test(item.prompt ?? '')
         ? 'frac-reduce-partial'
         : item.op
           ? 'frac-op'
-          : 'frac-reduce')
+          : index === 0
+            ? 'frac-reduce-partial'
+            : 'frac-reduce')
     if (kind === 'frac-reduce-partial' || kind === 'frac-reduce') {
       const n = item.a ?? 2
-      const d = item.b ?? 4
-      const missNum = item.missing === 'a' || (item.prompt ?? '').includes('□/')
+      const d = Math.max(1, item.b ?? 4)
+      const gg0 = gcdFr(n, d)
+      const sn0 = n / gg0
+      const sd0 = d / gg0
+      // Q1 : toujours une case (num ou den de la réponse) à saisir.
+      const isPartial = kind === 'frac-reduce-partial' || index === 0 || /□/.test(item.prompt ?? '')
+      const missNum =
+        item.missing === 'a' ||
+        (item.missing !== 'b' && (item.prompt ?? '').includes('□/'))
+      const applyReduce = (nn: number, dd: number, partial: boolean, missIsNum: boolean) => {
+        const safeD = Math.max(1, dd)
+        const g = gcdFr(nn, safeD)
+        const sn = nn / g
+        const sd = safeD / g
+        if (!partial) {
+          patch(index, {
+            ...item,
+            a: nn,
+            b: safeD,
+            op: undefined,
+            missing: undefined,
+            labels: ['frac-reduce'],
+            left: String(sn),
+            right: String(sd),
+            prompt: `${nn}/${safeD} =`,
+            answer: sd === 1 ? String(sn) : `${sn}/${sd}`,
+          })
+          return
+        }
+        patch(index, {
+          ...item,
+          a: nn,
+          b: safeD,
+          op: undefined,
+          missing: missIsNum ? 'a' : 'b',
+          labels: ['frac-reduce-partial'],
+          left: String(sn),
+          right: String(sd),
+          prompt: missIsNum ? `${nn}/${safeD} = □/${sd}` : `${nn}/${safeD} = ${sn}/□`,
+          answer: missIsNum ? String(sn) : String(sd),
+          result: missIsNum ? sn : sd,
+        })
+      }
       return (
         <div className="libre-frac-stack">
           <div className="libre-inline-triple is-frac">
@@ -3040,32 +3084,7 @@ function renderFields(
                 onCommit={(raw) => {
                   const nn = Math.round(Number(raw.replace(',', '.')))
                   if (!Number.isFinite(nn)) return
-                  const g = (x: number, y: number): number => (y ? g(y, x % y) : Math.abs(x) || 1)
-                  const gg = g(nn, d)
-                  const sn = nn / gg
-                  const sd = d / gg
-                  if (kind === 'frac-reduce') {
-                    patch(index, {
-                      ...item,
-                      a: nn,
-                      b: d,
-                      labels: ['frac-reduce'],
-                      prompt: `${nn}/${d} =`,
-                      answer: sd === 1 ? String(sn) : `${sn}/${sd}`,
-                    })
-                    return
-                  }
-                  patch(index, {
-                    ...item,
-                    a: nn,
-                    b: d,
-                    missing: missNum ? 'a' : 'b',
-                    labels: ['frac-reduce-partial'],
-                    left: String(sn),
-                    right: String(sd),
-                    prompt: missNum ? `${nn}/${d} = □/${sd}` : `${nn}/${d} = ${sn}/□`,
-                    answer: missNum ? String(sn) : String(sd),
-                  })
+                  applyReduce(nn, d, isPartial, missNum)
                 }}
               />
             </Field>
@@ -3077,111 +3096,103 @@ function renderFields(
                 onCommit={(raw) => {
                   const dd = Math.max(1, Math.round(Number(raw.replace(',', '.'))))
                   if (!Number.isFinite(dd)) return
-                  const g = (x: number, y: number): number => (y ? g(y, x % y) : Math.abs(x) || 1)
-                  const gg = g(n, dd)
-                  const sn = n / gg
-                  const sd = dd / gg
-                  if (kind === 'frac-reduce') {
-                    patch(index, {
-                      ...item,
-                      a: n,
-                      b: dd,
-                      labels: ['frac-reduce'],
-                      prompt: `${n}/${dd} =`,
-                      answer: sd === 1 ? String(sn) : `${sn}/${sd}`,
-                    })
-                    return
-                  }
-                  patch(index, {
-                    ...item,
-                    a: n,
-                    b: dd,
-                    missing: missNum ? 'a' : 'b',
-                    labels: ['frac-reduce-partial'],
-                    left: String(sn),
-                    right: String(sd),
-                    prompt: missNum ? `${n}/${dd} = □/${sd}` : `${n}/${dd} = ${sn}/□`,
-                    answer: missNum ? String(sn) : String(sd),
-                  })
+                  applyReduce(n, dd, isPartial, missNum)
                 }}
               />
             </Field>
           </div>
-          {kind === 'frac-reduce-partial' ? (
-            <Field label="Case à saisir">
+          {isPartial ? (
+            <>
+              <Field label="Case à saisir (réponse)">
+                <LineSelect
+                  value={missNum ? 'a' : 'b'}
+                  ariaLabel={`Case à saisir ${index + 1}`}
+                  options={[
+                    { value: 'a', label: 'Numérateur de la réponse (□ / den)' },
+                    { value: 'b', label: 'Dénominateur de la réponse (num / □)' },
+                  ]}
+                  onChange={(raw) => applyReduce(n, d, true, raw === 'a')}
+                />
+              </Field>
+              <div className="libre-inline-triple is-frac">
+                <Field label={missNum ? 'Réponse □' : 'Réponse num.'}>
+                  {missNum ? (
+                    <CorrigeBox value="□" ariaLabel={`Case numérateur ${index + 1}`} />
+                  ) : (
+                    <CorrigeBox value={String(sn0)} ariaLabel={`Numérateur réponse ${index + 1}`} />
+                  )}
+                </Field>
+                <Field label={missNum ? 'Réponse den.' : 'Réponse □'}>
+                  {missNum ? (
+                    <CorrigeBox value={String(sd0)} ariaLabel={`Dénominateur réponse ${index + 1}`} />
+                  ) : (
+                    <CorrigeBox value="□" ariaLabel={`Case dénominateur ${index + 1}`} />
+                  )}
+                </Field>
+              </div>
+            </>
+          ) : (
+            <Field label="Forme">
               <LineSelect
-                value={missNum ? 'a' : 'b'}
-                ariaLabel={`Case à saisir ${index + 1}`}
+                value="full"
+                ariaLabel={`Forme ${index + 1}`}
                 options={[
-                  { value: 'a', label: 'Numérateur de la réponse' },
-                  { value: 'b', label: 'Dénominateur de la réponse' },
+                  { value: 'full', label: 'Réduction sans case' },
+                  { value: 'partial', label: 'Réduction avec case (num ou den)' },
                 ]}
-                onChange={(raw) => {
-                  const nextMiss = raw === 'a'
-                  const g = (x: number, y: number): number => (y ? g(y, x % y) : Math.abs(x) || 1)
-                  const gg = g(n, d)
-                  const sn = n / gg
-                  const sd = d / gg
-                  patch(index, {
-                    ...item,
-                    missing: nextMiss ? 'a' : 'b',
-                    labels: ['frac-reduce-partial'],
-                    left: String(sn),
-                    right: String(sd),
-                    prompt: nextMiss ? `${n}/${d} = □/${sd}` : `${n}/${d} = ${sn}/□`,
-                    answer: nextMiss ? String(sn) : String(sd),
-                  })
-                }}
+                onChange={(raw) => applyReduce(n, d, raw === 'partial', false)}
               />
             </Field>
-          ) : null}
+          )}
           <Field label="Corrigé">
             <CorrigeBox value={item.answer ?? ''} ariaLabel={`Corrigé ${index + 1}`} />
           </Field>
         </div>
       )
     }
-    // frac-op
+    // frac-op — opération au choix (+ − × ÷).
     const op = (item.op ?? '+') as ArithOp
     const n1 = item.a ?? 1
     const n2 = item.b ?? 1
     const d1 = parseFrNumber(item.left ?? '') ?? 2
     const d2 = parseFrNumber(item.right ?? '') ?? 2
     const applyFracOp = (nn1: number, dd1: number, nop: ArithOp, nn2: number, dd2: number) => {
-      const g = (x: number, y: number): number => (y ? g(y, x % y) : Math.abs(x) || 1)
+      const safeD1 = Math.max(1, dd1)
+      const safeD2 = Math.max(1, dd2)
       let rn = 0
       let rd = 1
       if (nop === '+') {
-        rn = nn1 * dd2 + nn2 * dd1
-        rd = dd1 * dd2
+        rn = nn1 * safeD2 + nn2 * safeD1
+        rd = safeD1 * safeD2
       } else if (nop === '−') {
-        rn = nn1 * dd2 - nn2 * dd1
-        rd = dd1 * dd2
+        rn = nn1 * safeD2 - nn2 * safeD1
+        rd = safeD1 * safeD2
       } else if (nop === '×') {
         rn = nn1 * nn2
-        rd = dd1 * dd2
+        rd = safeD1 * safeD2
       } else {
-        rn = nn1 * dd2
-        rd = dd1 * nn2
+        rn = nn1 * safeD2
+        rd = safeD1 * nn2
       }
+      if (rd === 0) rd = 1
       if (rd < 0) {
         rn = -rn
         rd = -rd
       }
-      const gg = g(rn, rd)
+      const gg = gcdFr(rn, rd)
       const sn = rn / gg
       const sd = rd / gg
       const show = (num: number, den: number) =>
-        num < 0 ? `-${Math.abs(num)}/${den}` : `${num}/${den}`
+        num < 0 ? `−${Math.abs(num)}/${den}` : `${num}/${den}`
       patch(index, {
         ...item,
         op: nop,
         a: nn1,
         b: nn2,
-        left: String(dd1),
-        right: String(dd2),
+        left: String(safeD1),
+        right: String(safeD2),
         labels: ['frac-op'],
-        prompt: `${show(nn1, dd1)} ${nop} ${show(nn2, dd2)} =`,
+        prompt: `${show(nn1, safeD1)} ${nop} ${show(nn2, safeD2)} =`,
         answer: sd === 1 ? String(sn) : show(sn, sd),
       })
     }
@@ -3215,7 +3226,7 @@ function renderFields(
         </div>
         <Field label="Opération">
           <LineSelect
-            value={op}
+            value={OPS.includes(op) ? op : '+'}
             ariaLabel={`Opération ${index + 1}`}
             options={OPS.map((o) => ({ value: o, label: o }))}
             onChange={(nextOp) => applyFracOp(n1, d1, nextOp as ArithOp, n2, d2)}

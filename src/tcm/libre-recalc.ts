@@ -324,6 +324,117 @@ function recalcConvert(item: MathItem): MathItem {
   }
 }
 
+function gcdFr(a: number, b: number): number {
+  let x = Math.abs(a)
+  let y = Math.abs(b)
+  while (y) {
+    const t = y
+    y = x % y
+    x = t
+  }
+  return x || 1
+}
+
+function formatFracSigned(n: number, d: number): string {
+  if (d < 0) {
+    n = -n
+    d = -d
+  }
+  if (d === 1) return n < 0 ? `−${Math.abs(n)}` : String(n)
+  return n < 0 ? `−${Math.abs(n)}/${d}` : `${n}/${d}`
+}
+
+/** TCM ex. 30 : reduce-partial, reduce, frac-op. */
+function recalcFractionsMixte(item: MathItem): MathItem {
+  const kind =
+    item.labels?.find((l) => l.startsWith('frac-')) ??
+    (/□/.test(item.prompt ?? '')
+      ? 'frac-reduce-partial'
+      : item.op
+        ? 'frac-op'
+        : 'frac-reduce')
+
+  if (kind === 'frac-op') {
+    const op = (item.op ?? '+') as ArithOp
+    const n1 = typeof item.a === 'number' ? item.a : parseFrNumber(String(item.a ?? '')) ?? 1
+    const n2 = typeof item.b === 'number' ? item.b : parseFrNumber(String(item.b ?? '')) ?? 1
+    const d1 = parseFrNumber(item.left ?? '') ?? 2
+    const d2 = parseFrNumber(item.right ?? '') ?? 2
+    const safeD1 = Math.max(1, Math.round(d1))
+    const safeD2 = Math.max(1, Math.round(d2))
+    let rn = 0
+    let rd = 1
+    if (op === '+') {
+      rn = n1 * safeD2 + n2 * safeD1
+      rd = safeD1 * safeD2
+    } else if (op === '−') {
+      rn = n1 * safeD2 - n2 * safeD1
+      rd = safeD1 * safeD2
+    } else if (op === '×') {
+      rn = n1 * n2
+      rd = safeD1 * safeD2
+    } else {
+      rn = n1 * safeD2
+      rd = safeD1 * (n2 === 0 ? 1 : n2)
+    }
+    if (rd < 0) {
+      rn = -rn
+      rd = -rd
+    }
+    const g = gcdFr(rn, rd)
+    const sn = rn / g
+    const sd = rd / g
+    const show = (num: number, den: number) => formatFracSigned(num, den)
+    return {
+      ...item,
+      op,
+      a: n1,
+      b: n2,
+      left: String(safeD1),
+      right: String(safeD2),
+      labels: ['frac-op'],
+      prompt: `${show(n1, safeD1)} ${op} ${show(n2, safeD2)} =`,
+      answer: sd === 1 ? (sn < 0 ? `−${Math.abs(sn)}` : String(sn)) : show(sn, sd),
+    }
+  }
+
+  const n = typeof item.a === 'number' ? item.a : parseFrNumber(String(item.a ?? '')) ?? 2
+  const d = Math.max(
+    1,
+    typeof item.b === 'number' ? item.b : parseFrNumber(String(item.b ?? '')) ?? 4,
+  )
+  const g = gcdFr(n, d)
+  const sn = n / g
+  const sd = d / g
+  if (kind === 'frac-reduce-partial') {
+    const missNum =
+      item.missing === 'a' ||
+      (item.missing !== 'b' && (item.prompt ?? '').includes('□/'))
+    return {
+      ...item,
+      a: n,
+      b: d,
+      missing: missNum ? 'a' : 'b',
+      labels: ['frac-reduce-partial'],
+      left: String(sn),
+      right: String(sd),
+      result: missNum ? sn : sd,
+      prompt: missNum ? `${n}/${d} = □/${sd}` : `${n}/${d} = ${sn}/□`,
+      answer: missNum ? String(sn) : String(sd),
+    }
+  }
+  return {
+    ...item,
+    a: n,
+    b: d,
+    labels: ['frac-reduce'],
+    left: String(sn),
+    right: String(sd),
+    prompt: `${n}/${d} =`,
+    answer: sd === 1 ? String(sn) : `${sn}/${sd}`,
+  }
+}
+
 function recalcFractionDecimal(item: MathItem): MathItem {
   const m = String(item.prompt ?? '').match(/(-?\d+)\s*\/\s*(-?\d+)/)
   if (!m) return item
@@ -1003,6 +1114,13 @@ export function recalcTcmLibreItem(item: MathItem, exerciseType: string): MathIt
   // Ex. 11 CFR : n/d → texte français + fraction.
   if (next.layout === 'inline' && exerciseType.includes('ex11')) {
     return recalcFractionWord(next)
+  }
+  // TCM ex. 30 — réduction partielle / complète / opérations sur fractions.
+  if (
+    exerciseType === 'tcm-fractions-mixte' ||
+    next.labels?.some((l) => l.startsWith('frac-'))
+  ) {
+    return recalcFractionsMixte(next)
   }
   if (
     next.layout === 'inline' &&
