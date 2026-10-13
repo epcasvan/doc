@@ -1166,6 +1166,8 @@ function genEx27(rng: Rng): MathItem[] {
   // Le nombre de cases positives reste fixe ; seule l’échelle change.
   const unitSquares = rng() < 0.5 ? 1 : 2
   const maxUnit = positiveCells / unitSquares
+  // 1 u/case → entiers ; 1 u/2 cases → demis (ex. 5,5) sur chaque intersection.
+  const step = unitSquares === 2 ? 0.5 : 1
   // Marge négative (−1) toujours 2 cases + trait à −1 + « 0 » au centre — identique
   // pour les deux graduations (1 u/case et 1 u/2 cases). Ne pas lier à unitSquares.
   const originCol = 2
@@ -1189,6 +1191,12 @@ function genEx27(rng: Rng): MathItem[] {
     'ABCDEGHJKLMNPQRSTUVWXYZ'.split('').filter((l) => !placeLetters.includes(l)),
   ).slice(0, 3)
 
+  const maxSteps = Math.round(maxUnit / step)
+  const pickUnit = (allowZero: boolean): number => {
+    const minSteps = allowZero ? 0 : 1
+    return Math.round(int(rng, minSteps, maxSteps) * step * 1000) / 1000
+  }
+
   type Pt = { x: number; y: number; label: string }
   const used = new Set<string>()
   const take = (label: string, onAxis: boolean): Pt => {
@@ -1198,15 +1206,15 @@ function genEx27(rng: Rng): MathItem[] {
     do {
       if (onAxis) {
         if (rng() < 0.5) {
-          x = int(rng, 1, maxUnit)
+          x = pickUnit(false)
           y = 0
         } else {
           x = 0
-          y = int(rng, 1, maxUnit)
+          y = pickUnit(false)
         }
       } else {
-        x = int(rng, 1, maxUnit)
-        y = int(rng, 1, maxUnit)
+        x = pickUnit(false)
+        y = pickUnit(false)
       }
       g++
     } while (used.has(`${x},${y}`) && g < 60)
@@ -1220,6 +1228,7 @@ function genEx27(rng: Rng): MathItem[] {
   const ptsRead: Pt[] = readLetters.map((label, i) =>
     take(label, placeLetters.length + i === axisIndex),
   )
+  const pair = (x: number, y: number) => `(${fmt(x)} ; ${fmt(y)})`
 
   return [
     {
@@ -1244,6 +1253,7 @@ function genEx27(rng: Rng): MathItem[] {
         cellMm,
         unitSquares,
         labelStep,
+        step,
         marks: [
           ...ptsPlace.map((p) => ({
             x: p.x,
@@ -1263,17 +1273,17 @@ function genEx27(rng: Rng): MathItem[] {
       },
       coordQuestions: [
         ...ptsPlace.map((p) => ({
-          prompt: `Placez ${p.label}(${p.x} ; ${p.y})`,
-          answer: `(${p.x} ; ${p.y})`,
+          prompt: `Placez ${p.label}${pair(p.x, p.y)}`,
+          answer: pair(p.x, p.y),
           reply: 'pair' as const,
         })),
         ...ptsRead.map((p) => ({
           prompt: `Écrivez les coordonnées du point ${p.label}.`,
-          answer: `(${p.x} ; ${p.y})`,
+          answer: pair(p.x, p.y),
           reply: 'pair' as const,
         })),
       ],
-      answer: [...ptsPlace, ...ptsRead].map((p) => `${p.label}(${p.x};${p.y})`).join(' ; '),
+      answer: [...ptsPlace, ...ptsRead].map((p) => `${p.label}${pair(p.x, p.y)}`).join(' ; '),
     },
   ]
 }

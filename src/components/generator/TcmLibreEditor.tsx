@@ -1041,27 +1041,38 @@ function renderFields(
   if (item.layout === 'coord' && item.coordScene) {
     const scene = item.coordScene
     const unitSquares = scene.unitSquares === 2 ? 2 : 1
+    const positiveCells = 24
+    const maxUnit = positiveCells / unitSquares
+    const step = unitSquares === 2 ? 0.5 : 1
+    const clampAxis = (n: number) => {
+      const snapped = Math.round(n / step) * step
+      return Math.round(Math.max(0, Math.min(maxUnit, snapped)) * 1000) / 1000
+    }
+    const pair = (x: number, y: number) => `(${fmt(x)} ; ${fmt(y)})`
     const marks = scene.marks ?? []
-    const syncFromMarks = (nextMarks: NonNullable<typeof scene.marks>) => {
+    const syncFromMarks = (
+      nextMarks: NonNullable<typeof scene.marks>,
+      scenePatch?: Partial<typeof scene>,
+    ) => {
       const place = nextMarks.filter((m) => m.reveal === 'answer')
       const read = nextMarks.filter((m) => m.reveal !== 'answer')
       const coordQuestions = [
         ...place.map((p) => ({
-          prompt: `Placez ${p.label ?? ''}(${p.x} ; ${p.y})`,
-          answer: `(${p.x} ; ${p.y})`,
+          prompt: `Placez ${p.label ?? ''}${pair(p.x, p.y)}`,
+          answer: pair(p.x, p.y),
           reply: 'pair' as const,
         })),
         ...read.map((p) => ({
           prompt: `Écrivez les coordonnées du point ${p.label ?? ''}.`,
-          answer: `(${p.x} ; ${p.y})`,
+          answer: pair(p.x, p.y),
           reply: 'pair' as const,
         })),
       ]
       patch(index, {
         ...item,
-        coordScene: { ...scene, marks: nextMarks },
+        coordScene: { ...scene, ...scenePatch, marks: nextMarks },
         coordQuestions,
-        answer: nextMarks.map((p) => `${p.label}(${p.x};${p.y})`).join(' ; '),
+        answer: nextMarks.map((p) => `${p.label ?? ''}${pair(p.x, p.y)}`).join(' ; '),
       })
     }
     return (
@@ -1076,13 +1087,19 @@ function renderFields(
             ]}
             onChange={(v) => {
               const us = Number(v) as 1 | 2
-              patch(index, {
-                ...item,
-                coordScene: {
-                  ...scene,
-                  unitSquares: us,
-                  labelStep: us === 1 ? 2 : 1,
-                },
+              const nextMax = positiveCells / us
+              const nextStep = us === 2 ? 0.5 : 1
+              const snap = (n: number) => {
+                const s = Math.round(n / nextStep) * nextStep
+                return Math.round(Math.max(0, Math.min(nextMax, s)) * 1000) / 1000
+              }
+              const nextMarks = marks.map((p) => ({ ...p, x: snap(p.x), y: snap(p.y) }))
+              syncFromMarks(nextMarks, {
+                unitSquares: us,
+                labelStep: us === 1 ? 2 : 1,
+                step: nextStep,
+                rangeX: nextMax + 1,
+                rangeY: nextMax + 1,
               })
             }}
           />
@@ -1101,11 +1118,12 @@ function renderFields(
             </Field>
             <Field label="x">
               <NumInput
-                value={String(m.x)}
+                value={fmt(m.x)}
                 ariaLabel={`x ${mi + 1}`}
                 onCommit={(raw) => {
-                  const x = Number(raw.replace(',', '.'))
-                  if (!Number.isFinite(x)) return
+                  const parsed = parseFrNumber(raw)
+                  if (parsed == null) return
+                  const x = clampAxis(parsed)
                   const next = marks.map((p, j) => (j === mi ? { ...p, x } : p))
                   syncFromMarks(next)
                 }}
@@ -1113,11 +1131,12 @@ function renderFields(
             </Field>
             <Field label="y">
               <NumInput
-                value={String(m.y)}
+                value={fmt(m.y)}
                 ariaLabel={`y ${mi + 1}`}
                 onCommit={(raw) => {
-                  const y = Number(raw.replace(',', '.'))
-                  if (!Number.isFinite(y)) return
+                  const parsed = parseFrNumber(raw)
+                  if (parsed == null) return
+                  const y = clampAxis(parsed)
                   const next = marks.map((p, j) => (j === mi ? { ...p, y } : p))
                   syncFromMarks(next)
                 }}
