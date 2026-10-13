@@ -429,6 +429,14 @@ export type MathItem = {
   /** Second calcul (layout geo dual : aire à droite). */
   calcAnswerSecondary?: string
   responseAnswer?: string
+  /** Problème CFR (ex. 15–16) : id du modèle pour reconstruire l’énoncé. */
+  problemTemplateId?: string
+  /** Variables numériques du problème (partagées entre les deux parties). */
+  problemVars?: Record<string, number>
+  /** Métadonnées des champs éditables (libellé + partie). */
+  problemVarDefs?: Array<{ key: string; label: string; editOn: 0 | 1 | 'both' }>
+  /** Index de la partie (0 = 1ʳᵉ question, 1 = 2ᵉ). */
+  problemPart?: 0 | 1
   /** Inconnues à afficher sur les lignes de réponse (équations). */
   unknowns?: string[]
   /** Lignes de développement (corrigé équations, style soutien-scolaire). */

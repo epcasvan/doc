@@ -30,6 +30,7 @@ import { createRng } from '@/math/rng'
 import { fractionPartsFromItem, fractionTermFr } from '@/tcm/fraction-words'
 import { mulAudioParts, numberAudioParts } from '@/tcm-cfr/audio-nombres'
 import { parseFrNumber } from '@/tcm/libre-parse'
+import { rebuildProblemItems } from '@/tcm-cfr/problems'
 import {
   applyNamedFigure,
   NAMED_FIGURE_OPTIONS,
@@ -328,7 +329,9 @@ export function TcmLibreEditor({
         {items.map((item, index) => (
           <li key={`tcm-libre-${index}`} className="libre-item-card is-tcm-row">
             <span className="libre-item-num is-accent">{index + 1}.</span>
-            <div className="libre-item-body">{renderFields(item, index, patch, withProps, exerciseType)}</div>
+            <div className="libre-item-body">
+              {renderFields(item, index, patch, withProps, exerciseType, onChangeItems)}
+            </div>
           </li>
         ))}
       </ul>
@@ -345,6 +348,7 @@ function renderFields(
   patch: (i: number, next: MathItem) => void,
   withProps: boolean,
   exerciseType: string,
+  onChangeItems: (items: MathItem[]) => void,
 ) {
   if (item.layout === 'audio-dictation') {
     if (exerciseType.includes('ex02')) {
@@ -724,42 +728,54 @@ function renderFields(
   }
 
   if (item.layout === 'text') {
+    const defs = item.problemVarDefs ?? []
+    const part = item.problemPart ?? 0
+    const editDefs = defs.filter((d) => d.editOn === 'both' || d.editOn === part)
+    const vars = item.problemVars ?? {}
+    const commitVar = (key: string, raw: string) => {
+      const n = parseFrNumber(raw)
+      if (n == null || !item.problemTemplateId) return
+      const nextVars = { ...vars, [key]: n }
+      const rebuilt = rebuildProblemItems(item.problemTemplateId, nextVars)
+      if (rebuilt) onChangeItems(rebuilt)
+    }
     return (
       <>
+        {editDefs.length > 0 ? (
+          <div className="libre-inline-triple is-op">
+            {editDefs.map((d) => (
+              <Field key={d.key} label={d.label}>
+                <NumInput
+                  compact
+                  value={vars[d.key] != null ? fmt(vars[d.key]!) : ''}
+                  ariaLabel={`${d.label} ${index + 1}`}
+                  onCommit={(raw) => commitVar(d.key, raw)}
+                />
+              </Field>
+            ))}
+          </div>
+        ) : null}
         <Field label="Problème / question">
           <textarea
             className="libre-line-input is-textarea"
             rows={3}
             value={item.prompt ?? ''}
             aria-label={`Problème ${index + 1}`}
-            onChange={(e) => patch(index, { ...item, prompt: e.target.value })}
+            readOnly={editDefs.length > 0}
+            onChange={(e) => {
+              if (editDefs.length > 0) return
+              patch(index, { ...item, prompt: e.target.value })
+            }}
           />
         </Field>
         <Field label="Calcul (corrigé)">
-          <LineInput
-            answer
-            wide
-            value={item.calcAnswer ?? ''}
-            ariaLabel={`Calcul ${index + 1}`}
-            onChange={(calcAnswer) => patch(index, { ...item, calcAnswer })}
-          />
+          <CorrigeBox value={item.calcAnswer ?? ''} ariaLabel={`Calcul ${index + 1}`} wide />
         </Field>
         <Field label="Phrase réponse">
-          <LineInput
-            answer
-            wide
-            value={item.responseAnswer ?? ''}
-            ariaLabel={`Phrase ${index + 1}`}
-            onChange={(responseAnswer) => patch(index, { ...item, responseAnswer })}
-          />
+          <CorrigeBox value={item.responseAnswer ?? ''} ariaLabel={`Phrase ${index + 1}`} wide />
         </Field>
         <Field label="Réponse">
-          <LineInput
-            answer
-            value={item.answer ?? ''}
-            ariaLabel={`Réponse ${index + 1}`}
-            onChange={(answer) => patch(index, { ...item, answer })}
-          />
+          <CorrigeBox value={item.answer ?? ''} ariaLabel={`Réponse ${index + 1}`} />
         </Field>
       </>
     )

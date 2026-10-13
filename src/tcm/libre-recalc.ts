@@ -7,6 +7,7 @@ import type { ArithOp, Figure, MathItem } from '@/math/types'
 import { mulAudioParts, numberAudioParts } from '@/tcm-cfr/audio-nombres'
 import { fractionPartsFromItem, fractionTermFr } from '@/tcm/fraction-words'
 import { columnItem, divisionColumnItem, withFixedColumnWidth } from '@/tcm/items'
+import { isCfrProblemExercise, rebuildProblemItems } from '@/tcm-cfr/problems'
 import { parseFrInt, parseFrNumber, parseOrderSequence } from './libre-parse'
 
 const NAMED_FIGS: Record<
@@ -608,6 +609,17 @@ export function recalcTcmLibreItem(item: MathItem, exerciseType: string): MathIt
 }
 
 export function recalcTcmLibreItems(items: MathItem[], exerciseType: string): MathItem[] {
+  if (isCfrProblemExercise(exerciseType) && items.some((it) => it.problemTemplateId)) {
+    const templateId = items.find((it) => it.problemTemplateId)?.problemTemplateId
+    if (templateId) {
+      const merged: Record<string, number> = {}
+      for (const it of items) {
+        if (it.problemVars) Object.assign(merged, it.problemVars)
+      }
+      const rebuilt = rebuildProblemItems(templateId, merged)
+      if (rebuilt) return rebuilt
+    }
+  }
   return items.map((item) => recalcTcmLibreItem(item, exerciseType))
 }
 
