@@ -384,9 +384,28 @@ export function labelCell(line: MetroLine): MetroCell {
   return line.cells[0]!
 }
 
-function findIntersections(a: MetroLine, b: MetroLine): MetroCell[] {
+export function findIntersections(a: MetroLine, b: MetroLine): MetroCell[] {
   const setB = new Set(b.cells)
   return a.cells.filter((c) => setB.has(c))
+}
+
+/** Message si la paire ne convient pas pour une question de croisement. */
+export function metroCrossingWarning(
+  map: MetroMap,
+  nameA: string,
+  nameB: string,
+): string | undefined {
+  const a = lineByName(map, nameA)
+  const b = lineByName(map, nameB)
+  if (!a || !b) return undefined
+  if (a.id === b.id) {
+    return 'Choisissez deux métros différents.'
+  }
+  const cells = findIntersections(a, b)
+  if (cells.length === 0) {
+    return `Les métros de ${a.name} et de ${b.name} ne se croisent pas sur ce plan.`
+  }
+  return undefined
 }
 
 type Crossing = { a: MetroLine; b: MetroLine; cell: MetroCell }

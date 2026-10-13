@@ -22,6 +22,7 @@ import {
   generateMetroQuestions,
   hydrateMetroQuestion,
   inferMetroQuestionKind,
+  metroCrossingWarning,
   metroMapLabel,
   type MetroQuestion,
   type MetroQuestionKind,
@@ -1397,6 +1398,10 @@ function renderFields(
         {questions.map((q, qi) => {
           const kind = inferMetroQuestionKind(q)
           const names = q.lineNames ?? []
+          const crossingWarn =
+            kind === 'crossing'
+              ? metroCrossingWarning(map, names[0] ?? '', names[1] ?? '')
+              : undefined
           return (
             <div
               key={`mq-${qi}`}
@@ -1531,6 +1536,11 @@ function renderFields(
                     <CorrigeBox value={q.answer ?? ''} ariaLabel={`Corrigé métro ${qi + 1}`} />
                   </Field>
                 </div>
+                {crossingWarn ? (
+                  <p className="libre-field-error" role="alert">
+                    {crossingWarn}
+                  </p>
+                ) : null}
               </div>
             </div>
           )
