@@ -1582,6 +1582,9 @@ html,body,#root{
   .syllable-table-frame{border-color:#d8dde6!important}
   .syllable-table,.syllable-table td{border:none!important}
   .syllable-vowel{color:var(--purple)!important}
+  .mark-letter-block.is-answers .mark-letter-cell .syllable-vowel{
+    color:inherit!important;text-decoration:underline!important;font-weight:700!important
+  }
   .syllable-cons{color:#000!important}
   .syllable-match-table,.syllable-match-table td{border:none!important}
   .syllable-match-table td.syllable-match-num{color:var(--purple)!important}
