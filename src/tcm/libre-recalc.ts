@@ -4,6 +4,7 @@
  */
 import { fmt, sanitizeFrNumberNoise } from '@/math/column-arith'
 import type { ArithOp, Figure, MathItem } from '@/math/types'
+import { fractionPartsFromItem, fractionTermFr } from '@/tcm/fraction-words'
 import { columnItem, divisionColumnItem } from '@/tcm/items'
 import { parseFrInt, parseFrNumber, parseOrderSequence } from './libre-parse'
 
@@ -445,6 +446,22 @@ function recalcPlaceValue(item: MathItem): MathItem {
   }
 }
 
+/** Ex. 11 : numérateur / dénominateur → terme français + réponse n/d. */
+function recalcFractionWord(item: MathItem): MathItem {
+  const parts = fractionPartsFromItem(item)
+  if (!parts) return item
+  const { n, d } = parts
+  const term = fractionTermFr(n, d)
+  if (!term) return item
+  return {
+    ...item,
+    a: n,
+    b: d,
+    prompt: `${term} =`,
+    answer: `${n}/${d}`,
+  }
+}
+
 /** Calcul en ligne « a op b = □ » (ou a/b/result déjà stockés). */
 function recalcInlineOp(item: MathItem): MathItem {
   const fromPrompt = String(item.prompt ?? '').match(
@@ -492,6 +509,10 @@ export function recalcTcmLibreItem(item: MathItem, exerciseType: string): MathIt
   }
   if (next.convert) return recalcConvert(next)
   if (next.layout === 'place-value') return recalcPlaceValue(next)
+  // Ex. 11 CFR : n/d → texte français + fraction.
+  if (next.layout === 'inline' && exerciseType.includes('ex11')) {
+    return recalcFractionWord(next)
+  }
   if (next.layout === 'inline' && /\/\s*\d/.test(next.prompt ?? '')) return recalcFractionDecimal(next)
   if (
     next.layout === 'inline' &&

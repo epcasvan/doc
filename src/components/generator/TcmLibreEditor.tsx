@@ -8,6 +8,7 @@ import type { ArithOp, MathItem } from '@/math/types'
 import { fmt } from '@/math/column-arith'
 import type { ShapeKind } from '@/components/math/FractionShape'
 import { SYMMETRY_TEMPLATES } from '@/tcm-cfr/symetrie'
+import { fractionPartsFromItem, fractionTermFr } from '@/tcm/fraction-words'
 import {
   applyNamedFigure,
   NAMED_FIGURE_OPTIONS,
@@ -607,6 +608,75 @@ function renderFields(
             answer
             value={item.answer ?? ''}
             ariaLabel={`Corrigé segments ${index + 1}`}
+            onChange={(answer) => patch(index, { ...item, answer })}
+          />
+        </Field>
+      </>
+    )
+  }
+
+  // Ex. 11 — fractions en lettres : n et d sur une ligne → texte FR + fraction.
+  if (item.layout === 'inline' && exerciseType.includes('ex11')) {
+    const parts = fractionPartsFromItem(item)
+    const n = parts?.n ?? 1
+    const d = parts?.d ?? 2
+    const term = (item.prompt ?? '').replace(/\s*=\s*$/, '') || fractionTermFr(n, d)
+    const applyNd = (nn: number, dd: number) => {
+      const safeN = Math.max(1, Math.round(nn) || 1)
+      const safeD = Math.max(2, Math.round(dd) || 2)
+      const nextTerm = fractionTermFr(safeN, safeD)
+      patch(index, {
+        ...item,
+        a: safeN,
+        b: safeD,
+        prompt: `${nextTerm} =`,
+        answer: `${safeN}/${safeD}`,
+      })
+    }
+    return (
+      <>
+        <div className="libre-inline-triple is-frac">
+          <Field label="Numérateur">
+            <LineInput
+              compact
+              value={String(n)}
+              ariaLabel={`Numérateur ${index + 1}`}
+              onChange={(raw) => {
+                const nn = Number(raw.replace(',', '.'))
+                applyNd(Number.isFinite(nn) ? nn : n, d)
+              }}
+            />
+          </Field>
+          <Field label="Dénominateur">
+            <LineInput
+              compact
+              value={String(d)}
+              ariaLabel={`Dénominateur ${index + 1}`}
+              onChange={(raw) => {
+                const dd = Number(raw.replace(',', '.'))
+                applyNd(n, Number.isFinite(dd) ? dd : d)
+              }}
+            />
+          </Field>
+        </div>
+        <Field label="Texte">
+          <LineInput
+            wide
+            value={term}
+            ariaLabel={`Texte ${index + 1}`}
+            onChange={(texte) =>
+              patch(index, {
+                ...item,
+                prompt: `${texte.replace(/\s*=\s*$/, '').trim()} =`,
+              })
+            }
+          />
+        </Field>
+        <Field label="Corrigé">
+          <LineInput
+            answer
+            value={item.answer ?? `${n}/${d}`}
+            ariaLabel={`Corrigé ${index + 1}`}
             onChange={(answer) => patch(index, { ...item, answer })}
           />
         </Field>

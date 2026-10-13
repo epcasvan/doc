@@ -5,6 +5,7 @@ import { genFracSingleItems } from '@/math/fraction-shapes'
 import { createRng, int, pick, shuffle, type Rng } from '@/math/rng'
 import type { ArithOp, Figure, MathItem } from '@/math/types'
 import { fmt, sanitizeItemNumberNoise } from '@/math/column-arith'
+import { FRACTION_WORDS } from '@/tcm/fraction-words'
 import {
   columnItem,
   divisionColumnItem,
@@ -291,44 +292,11 @@ function genEx10(rng: Rng): MathItem[] {
   return genMulDivPair(rng, true)
 }
 
-const FRACTION_WORDS: Array<{ term: string; n: number; d: number }> = [
-  { term: 'un demi', n: 1, d: 2 },
-  { term: 'trois demis', n: 3, d: 2 },
-  { term: 'cinq demis', n: 5, d: 2 },
-  { term: 'un tiers', n: 1, d: 3 },
-  { term: 'deux tiers', n: 2, d: 3 },
-  { term: 'quatre tiers', n: 4, d: 3 },
-  { term: 'cinq tiers', n: 5, d: 3 },
-  { term: 'un quart', n: 1, d: 4 },
-  { term: 'trois quarts', n: 3, d: 4 },
-  { term: 'cinq quarts', n: 5, d: 4 },
-  { term: 'sept quarts', n: 7, d: 4 },
-  { term: 'un cinquième', n: 1, d: 5 },
-  { term: 'deux cinquièmes', n: 2, d: 5 },
-  { term: 'trois cinquièmes', n: 3, d: 5 },
-  { term: 'quatre cinquièmes', n: 4, d: 5 },
-  { term: 'six cinquièmes', n: 6, d: 5 },
-  { term: 'sept cinquièmes', n: 7, d: 5 },
-  { term: 'un sixième', n: 1, d: 6 },
-  { term: 'cinq sixièmes', n: 5, d: 6 },
-  { term: 'sept sixièmes', n: 7, d: 6 },
-  { term: 'un huitième', n: 1, d: 8 },
-  { term: 'trois huitièmes', n: 3, d: 8 },
-  { term: 'cinq huitièmes', n: 5, d: 8 },
-  { term: 'neuf huitièmes', n: 9, d: 8 },
-  { term: 'un dixième', n: 1, d: 10 },
-  { term: 'trois dixièmes', n: 3, d: 10 },
-  { term: 'sept dixièmes', n: 7, d: 10 },
-  { term: 'neuf dixièmes', n: 9, d: 10 },
-  { term: 'onze dixièmes', n: 11, d: 10 },
-  { term: 'treize dixièmes', n: 13, d: 10 },
-]
-
 /** Ex. 11 — termes → fraction verticale (numérateurs et dénominateurs tous distincts). */
 function genEx11(rng: Rng, count: number): MathItem[] {
   const need = Math.max(1, count)
-  const pool = shuffle(rng, FRACTION_WORDS)
-  const picked: typeof FRACTION_WORDS = []
+  const pool = shuffle(rng, [...FRACTION_WORDS])
+  const picked: Array<(typeof FRACTION_WORDS)[number]> = []
   const usedN = new Set<number>()
   const usedD = new Set<number>()
   for (const entry of pool) {
@@ -352,6 +320,8 @@ function genEx11(rng: Rng, count: number): MathItem[] {
   return picked.map(({ term, n, d }) => ({
     layout: 'inline' as const,
     prompt: `${term} =`,
+    a: n,
+    b: d,
     answer: `${n}/${d}`,
   }))
 }
