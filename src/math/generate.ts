@@ -33,6 +33,7 @@ import { tryGenerateTcmCscBlock } from '@/tcm-csc/generate'
 import { isTcmCscConsignesType } from '@/tcm-csc/test'
 import { tryGenerateVocabulaireBlock } from '@/vocabulaire/generate'
 import { isGrammarTheoryType } from '@/francais/grammar-theory'
+import { sanitizeItemNumberNoise } from './column-arith'
 import { createRng, shuffle } from './rng'
 import type {
   AlgebraGiven,
@@ -341,6 +342,7 @@ export function buildPage(
         exerciseIndex = exerciseCursor++
       }
     }
+    const rawItems = libre?.items ?? result.items
     return {
       exerciseIndex,
       title: isTcmConsignes
@@ -351,7 +353,8 @@ export function buildPage(
             ? (exerciseTypeById[block.exerciseType]?.label ?? `Jeu ${exerciseIndex}`)
             : `Exercice ${exerciseIndex}`,
       instruction: libre?.instruction ?? result.instruction,
-      items: libre?.items ?? result.items,
+      // Filet anti bruit binaire (7,2700000000000005) sur toutes les fiches.
+      items: rawItems.map((item) => sanitizeItemNumberNoise(item as Record<string, unknown>) as MathItem),
       columns: block.columns,
       exerciseType: block.exerciseType,
       pointsPerQuestion: block.pointsPerQuestion,

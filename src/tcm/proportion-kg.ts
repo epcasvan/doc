@@ -5,6 +5,7 @@
  * 2) Règle de trois kg → francs : « n kg de … → p francs » / « m kg → ____ »
  *    25 produits ; n, m, p ∈ [10 ; 99] ; ni n|m ni m|n ; réponse exacte.
  */
+import { fmt } from '@/math/column-arith'
 import { int, pick, type Rng } from '@/math/rng'
 import type { MathItem } from '@/math/types'
 
@@ -63,8 +64,7 @@ function divides(a: number, b: number): boolean {
 }
 
 function fmtAnswer(n: number): string {
-  if (Number.isInteger(n)) return String(n)
-  return String(Math.round(n * 1000) / 1000).replace('.', ',')
+  return fmt(n)
 }
 
 /** n ∈ [101 ; 999], non multiple de 10 (pas une « dizaine » ronde). */

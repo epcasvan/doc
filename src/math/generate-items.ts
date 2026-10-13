@@ -707,9 +707,9 @@ function generateOne(
       if (!mul && a % b !== 0) {
         const bb = pick(rng, [-4, -3, -2, 2, 3, 4])
         const aa = bb * int(rng, -6, 6) || bb * 2
-        return { layout: 'inline', prompt: `(${aa}) ÷ (${bb}) =`, answer: String(aa / bb) }
+        return { layout: 'inline', prompt: `(${aa}) ÷ (${bb}) =`, answer: fmt(aa / bb) }
       }
-      return { layout: 'inline', prompt: mul ? `(${a}) × (${b}) =` : `(${a}) ÷ (${b}) =`, answer: String(result) }
+      return { layout: 'inline', prompt: mul ? `(${a}) × (${b}) =` : `(${a}) ÷ (${b}) =`, answer: fmt(result) }
     }
     case 'puissances-calcul': {
       const a = range ? pickInRange(rng, range) : int(rng, 2, 9)

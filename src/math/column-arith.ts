@@ -17,20 +17,38 @@ export function fmt(n: number): string {
     .replace('.', ',')
 }
 
-/** Nettoie `7,2700000000000005` / `7.2700000000000005` dans une chaîne affichée. */
+/**
+ * Nettoie le bruit binaire dans une chaîne affichée
+ * (`7,2700000000000005`, `0.30000000000000004`, etc.).
+ */
 export function sanitizeFrNumberNoise(text: string): string {
-  return text
-    .replace(/(-?\d+)[.,](\d*?)0{4,}\d*/g, (_, a: string, b: string) => {
-      const frac = b.replace(/0+$/, '')
-      return frac ? `${a},${frac}` : a
-    })
-    .replace(/(-?\d+)\.(\d+)/g, (_, a: string, b: string) => `${a},${b}`)
+  return text.replace(/-?\d+[.,]\d+/g, (raw) => {
+    const normalized = raw.replace(',', '.')
+    const n = Number(normalized)
+    if (!Number.isFinite(n)) return raw.replace('.', ',')
+    // Trop de décimales ou longue suite de 0 → reformater via fmt
+    const frac = normalized.split('.')[1] ?? ''
+    if (frac.length > 6 || /0{4,}/.test(frac) || /9999/.test(frac)) return fmt(n)
+    return fmt(n)
+  })
 }
+
+const TEXT_KEYS = [
+  'answer',
+  'prompt',
+  'calcAnswer',
+  'calcAnswerSecondary',
+  'left',
+  'right',
+  'responseAnswer',
+  'response',
+  'expression',
+] as const
 
 /** Applique `fmt` / nettoyage de bruit binaire sur les champs texte d’un item. */
 export function sanitizeItemNumberNoise<T extends Record<string, unknown>>(item: T): T {
   const out: Record<string, unknown> = { ...item }
-  for (const key of ['answer', 'prompt', 'calcAnswer', 'calcAnswerSecondary', 'left', 'right'] as const) {
+  for (const key of TEXT_KEYS) {
     const v = out[key]
     if (typeof v === 'string') out[key] = sanitizeFrNumberNoise(v)
   }
@@ -46,6 +64,20 @@ export function sanitizeItemNumberNoise<T extends Record<string, unknown>>(item:
   }
   if (Array.isArray(out.order)) {
     out.order = out.order.map((x) => (typeof x === 'string' ? sanitizeFrNumberNoise(x) : x))
+  }
+  if (Array.isArray(out.sequence)) {
+    out.sequence = out.sequence.map((x) => (typeof x === 'string' ? sanitizeFrNumberNoise(x) : x))
+  }
+  if (Array.isArray(out.questions)) {
+    out.questions = out.questions.map((q) => {
+      if (!q || typeof q !== 'object') return q
+      const row = q as { prompt?: string; answer?: string }
+      return {
+        ...row,
+        ...(typeof row.prompt === 'string' ? { prompt: sanitizeFrNumberNoise(row.prompt) } : {}),
+        ...(typeof row.answer === 'string' ? { answer: sanitizeFrNumberNoise(row.answer) } : {}),
+      }
+    })
   }
   return out as T
 }
