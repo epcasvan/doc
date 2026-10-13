@@ -48,23 +48,26 @@ function slugLabel(label: string): string {
     .replace(/^-|-$/g, '')
 }
 
-/** Préfère un fichier présent sur disque (même slug), sinon le chemin banque. */
+/** Préfère un fichier présent sur disque (slug ASCII ou brut), sinon rien. */
 function resolveExistingAudio(candidate: string | undefined, label: string): string | undefined {
+  const key = label.trim().toLowerCase()
   const slug = slugLabel(label)
-  const byStem = AUDIO_BY_STEM.get(slug)
-  if (byStem) return byStem
+  const hits = [AUDIO_BY_STEM.get(slug), AUDIO_BY_STEM.get(key), AUDIO_BY_STEM.get(`syll:${slug}`)]
+  for (const hit of hits) {
+    if (hit) return hit
+  }
   if (candidate) {
     const m = candidate.match(/\/([^/]+)\.mp3$/i)
     const stem = m?.[1]?.toLowerCase()
     if (stem) {
-      const alt = AUDIO_BY_STEM.get(stem)
+      const alt = AUDIO_BY_STEM.get(stem) ?? AUDIO_BY_STEM.get(slugLabel(stem))
       if (alt) return alt
     }
   }
   return undefined
 }
 
-/** Chemin relatif `/lib/audio/vocabulaire/...` pour un mot Soutien (fichier existant). */
+/** Chemin relatif `/lib/audio/...` pour un mot ou une syllabe (fichier existant). */
 export function soutienAudioFor(label: string): string | undefined {
   const key = label.trim().toLowerCase()
   if (!key) return undefined
@@ -81,6 +84,11 @@ export function soutienAudioFor(label: string): string | undefined {
         key,
       )
     }
+  }
+  // Syllabes courtes : dossier dédié
+  if (key.length <= 4 && !/\s/.test(key)) {
+    const syll = AUDIO_BY_STEM.get(`syll:${slugLabel(key)}`) ?? AUDIO_BY_STEM.get(slugLabel(key))
+    if (syll?.includes('/syllabes/')) return syll
   }
   return resolveExistingAudio(undefined, key)
 }

@@ -179,7 +179,7 @@ export function applyType(type: ExerciseType, prev?: ExerciseBlock): Partial<Exe
                             : alphaKind === 'syllabe-son-qr' || alphaKind === 'syllabe-son'
                               ? { count: 18 }
                               : alphaKind === 'associer-syllabe'
-                                ? { count: 1, columns: 1 }
+                                ? { count: 2, columns: 1 }
                                 : alphaKind === 'associer-audio' ||
                                     alphaKind === 'associer-image'
                                   ? { count: 2, columns: 1 }

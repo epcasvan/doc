@@ -4431,9 +4431,9 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
 .worksheet-sheet.is-alphabetisation .syllable-pronounce-num{
   font-size:14px
 }
-/* Type 7 + type 6 sur la même page : densifier le corrigé (3 lignes). */
+/* Type 7 : images plus grandes · 10 px entre cadres (V/H). */
 .worksheet-sheet.is-alphabetisation .listen-check-grid--images{
-  gap:10px 8px
+  gap:10px 10px
 }
 .worksheet-sheet.is-alphabetisation .listen-check-image-controls{
   height:1.15em;gap:3px
@@ -4442,19 +4442,19 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
   gap:0;padding:1px 2px 0
 }
 .worksheet-sheet.is-alphabetisation .listen-check-block--images.is-exercise .listen-check-image{
-  min-height:12mm
+  min-height:18mm
 }
 .worksheet-sheet.is-alphabetisation .listen-check-block--images.is-exercise .listen-check-image img{
-  max-height:14mm
+  max-height:20mm
 }
 .worksheet-sheet.is-alphabetisation .listen-check-block--images.is-exercise .listen-check-image-foot{
   grid-template-rows:1.15em 0;padding:1px 2px 1px
 }
 .worksheet-sheet.is-alphabetisation .listen-check-block--images.is-answers .listen-check-image{
-  min-height:14mm
+  min-height:20mm
 }
 .worksheet-sheet.is-alphabetisation .listen-check-block--images.is-answers .listen-check-image img{
-  max-height:16mm
+  max-height:22mm
 }
 .worksheet-sheet.is-alphabetisation .listen-check-block--images.is-answers .listen-check-image-foot{
   grid-template-rows:1.15em 1.25em;
@@ -4467,20 +4467,34 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
 .worksheet-sheet.is-alphabetisation .syllable-mini-table td{
   font-size:10px
 }
+/* Type 1 Alpha : cadres adaptés au contenu (QR + image + mot), 30 px entre lignes. */
+.worksheet-sheet.is-alphabetisation .sheet-body:has(.layout-vocab-table)>.exercise-block,
+.worksheet-sheet.is-alphabetisation .sheet-body:has(.layout-vocab-table) .exercise-grid,
+.worksheet-sheet.is-alphabetisation .exercise-item.layout-vocab-table,
+.worksheet-sheet.is-alphabetisation .exercise-item.layout-vocab-table .item-content{
+  flex:0 0 auto;height:auto;min-height:0;align-self:start
+}
+.worksheet-sheet.is-alphabetisation .sheet-body:has(.layout-vocab-table) .exercise-grid{
+  grid-template-rows:auto;grid-auto-rows:auto;align-content:start
+}
 .worksheet-sheet.is-alphabetisation .vocab-table{
   --vocab-card-w:58mm;
-  --vocab-card-h:calc(64mm - 25px);
-  --vocab-card-gap:2.5mm
+  --vocab-card-h:auto;
+  --vocab-card-gap:30px;
+  height:auto;min-height:0;
+  align-content:start;
+  grid-template-rows:repeat(var(--vocab-rows),auto);
+  row-gap:30px;
+  column-gap:2.5mm
 }
-/* Type 1 : mot collé sous l’image (pas poussé en bas du cadre). */
 .worksheet-sheet.is-alphabetisation .vocab-card{
-  justify-content:flex-start
+  height:auto;justify-content:flex-start
 }
 .worksheet-sheet.is-alphabetisation .vocab-card-image{
-  flex:0 1 auto;min-height:0;max-height:calc(44mm - 25px)
+  flex:0 0 auto;min-height:0;max-height:38mm;height:auto
 }
 .worksheet-sheet.is-alphabetisation .vocab-card-image img{
-  max-height:calc(40mm - 25px)
+  max-height:36mm;height:auto;width:auto;max-width:100%;margin:0 auto
 }
 .worksheet-sheet.is-alphabetisation .vocab-card-qr{
   width:8mm;height:8mm

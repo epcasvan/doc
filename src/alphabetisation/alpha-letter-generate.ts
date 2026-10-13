@@ -233,10 +233,13 @@ function associerSyllabes(
       const syll = parts[hitIdx]!
       const key = syll.toLowerCase()
       if (used.has(key)) continue
+      const audioSrc = soutienAudioFor(syll) ?? soutienAudioFor(raw)
+      if (!audioSrc) continue
       used.add(key)
       clips.push({
         word: syll,
-        audioSrc: soutienAudioFor(raw) ?? undefined,
+        // Audio de la syllabe si dispo, sinon le mot source (QR).
+        audioSrc,
       })
     }
     if (clips.length < AUDIO_ORDER_CLIPS) break
