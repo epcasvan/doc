@@ -619,8 +619,8 @@ export function recalcTcmLibreItem(item: MathItem, exerciseType: string): MathIt
       const a = parseFrNumber(next.left ?? '')
       const b = parseFrNumber(next.right ?? '')
       if (a == null || b == null) return next
-      const aa = Math.max(1, Math.min(100, Math.round(a)))
-      const bb = Math.max(1, Math.min(100, Math.round(b)))
+      const aa = Math.max(1, Math.min(12, Math.round(a)))
+      const bb = Math.max(1, Math.min(12, Math.round(b)))
       const parts = mulAudioParts(aa, bb)
       return {
         ...next,

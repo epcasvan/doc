@@ -66,8 +66,8 @@ function genEx01(rng: Rng, count: number): MathItem[] {
 /** Ex. 2 — 5 multiplications orales 2–12 × 2–12. */
 function genEx02(rng: Rng, count: number): MathItem[] {
   return Array.from({ length: Math.max(1, count) }, () => {
-    const a = int(rng, 2, 12)
-    const b = int(rng, 2, 12)
+    const a = int(rng, 1, 12)
+    const b = int(rng, 1, 12)
     const parts = mulAudioParts(a, b)
     return {
       layout: 'audio-dictation' as const,

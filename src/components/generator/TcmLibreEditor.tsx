@@ -40,24 +40,30 @@ import {
 
 const NUM_1_100_LIST_ID = 'tcm-libre-num-1-100'
 const NUM_1_100_OPTIONS = Array.from({ length: 100 }, (_, i) => String(i + 1))
+const NUM_1_12_LIST_ID = 'tcm-libre-num-1-12'
+const NUM_1_12_OPTIONS = Array.from({ length: 12 }, (_, i) => String(i + 1))
 
 function clampInt1to100(n: number): number {
   return Math.max(1, Math.min(100, Math.round(n)))
 }
 
-/** Facteurs a×b depuis left/right ou les fichiers audio. */
+function clampInt1to12(n: number): number {
+  return Math.max(1, Math.min(12, Math.round(n)))
+}
+
+/** Facteurs a×b (ex. 2 : tables 1–12) depuis left/right ou les fichiers audio. */
 function mulFactorsFromItem(item: MathItem): { a: number; b: number } {
   const left = parseFrNumber(item.left ?? '')
   const right = parseFrNumber(item.right ?? '')
   if (left != null && right != null) {
-    return { a: clampInt1to100(left), b: clampInt1to100(right) }
+    return { a: clampInt1to12(left), b: clampInt1to12(right) }
   }
   const nums = (item.audioParts ?? [])
     .map((p) => {
       const m = /\/nombre\/(\d+)\.mp3$/.exec(p)
       return m ? Number(m[1]) : null
     })
-    .filter((n): n is number => n != null && n >= 1 && n <= 100)
+    .filter((n): n is number => n != null && n >= 1 && n <= 12)
   if (nums.length >= 2) return { a: nums[0]!, b: nums[nums.length - 1]! }
   return { a: 2, b: 2 }
 }
@@ -317,6 +323,11 @@ export function TcmLibreEditor({
           <option key={n} value={n} />
         ))}
       </datalist>
+      <datalist id={NUM_1_12_LIST_ID}>
+        {NUM_1_12_OPTIONS.map((n) => (
+          <option key={n} value={n} />
+        ))}
+      </datalist>
       <label className="libre-field is-line">
         <span>Consigne</span>
         <textarea
@@ -366,33 +377,30 @@ function renderFields(
         })
       }
       return (
-        <div className="libre-inline-triple is-op">
-          <Field label="Nombre 1">
+        <div className="libre-inline-triple">
+          <Field label="Nombre 1 (1–12)">
             <NumInput
               compact
-              listId={NUM_1_100_LIST_ID}
+              listId={NUM_1_12_LIST_ID}
               value={String(a)}
               ariaLabel={`Facteur 1 question ${index + 1}`}
               onCommit={(raw) => {
                 const parsed = parseFrNumber(raw)
                 if (parsed == null) return
-                commitMul(clampInt1to100(parsed), b)
+                commitMul(clampInt1to12(parsed), b)
               }}
             />
           </Field>
-          <span className="libre-mul-sign" aria-hidden>
-            ×
-          </span>
-          <Field label="Nombre 2">
+          <Field label="Nombre 2 (1–12)">
             <NumInput
               compact
-              listId={NUM_1_100_LIST_ID}
+              listId={NUM_1_12_LIST_ID}
               value={String(b)}
               ariaLabel={`Facteur 2 question ${index + 1}`}
               onCommit={(raw) => {
                 const parsed = parseFrNumber(raw)
                 if (parsed == null) return
-                commitMul(a, clampInt1to100(parsed))
+                commitMul(a, clampInt1to12(parsed))
               }}
             />
           </Field>
