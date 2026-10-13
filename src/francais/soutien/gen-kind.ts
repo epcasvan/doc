@@ -90,13 +90,15 @@ export function genKind(
               }
             })
         : null
-      /** Alphabétisation : 2→4, 3→6, 4→12 mots ; Soutien : jusqu’à 16. */
+      /** Alphabétisation : 2→4, 3→9, 4→12 mots ; Soutien : jusqu’à 16. */
       const alphaCols = options?.alphaVocabCount != null
         ? Math.max(2, Math.min(4, Math.round(options.columns ?? 3) || 3))
         : null
+      const alphaDefaultCount =
+        alphaCols === 2 ? 4 : alphaCols === 3 ? 9 : alphaCols === 4 ? 12 : null
       const vocabCap =
         options?.alphaVocabCount ??
-        (alphaCols != null ? (alphaCols === 4 ? 12 : alphaCols * 2) : 16)
+        (alphaDefaultCount != null ? alphaDefaultCount : 16)
       const want = Math.max(1, Math.min(16, vocabCap))
       const rawWords = libreEntries
         ? libreEntries.map((e) => e.label)

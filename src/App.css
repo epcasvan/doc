@@ -4467,7 +4467,10 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
 .worksheet-sheet.is-alphabetisation .syllable-mini-table td{
   font-size:10px
 }
-/* Type 1 Alpha : cadres adaptés au contenu (QR + image + mot), 30 px entre lignes. */
+/* Type 1 Alpha : cadres au contenu ; 3×3 (9 mots) tient sur l’A4 avec ≥10 px avant le pied. */
+.worksheet-sheet.is-alphabetisation .sheet-body:has(.layout-vocab-table){
+  padding-bottom:10px
+}
 .worksheet-sheet.is-alphabetisation .sheet-body:has(.layout-vocab-table)>.exercise-block,
 .worksheet-sheet.is-alphabetisation .sheet-body:has(.layout-vocab-table) .exercise-grid,
 .worksheet-sheet.is-alphabetisation .exercise-item.layout-vocab-table,
@@ -4480,27 +4483,29 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
 .worksheet-sheet.is-alphabetisation .vocab-table{
   --vocab-card-w:58mm;
   --vocab-card-h:auto;
-  --vocab-card-gap:30px;
+  --vocab-card-gap:8px;
   height:auto;min-height:0;
   align-content:start;
   grid-template-rows:repeat(var(--vocab-rows),auto);
-  row-gap:30px;
-  column-gap:2.5mm
+  row-gap:8px; /* densifié pour 3 lignes + pied */
+  column-gap:2.5mm;
+  padding-bottom:0
 }
 .worksheet-sheet.is-alphabetisation .vocab-card{
-  height:auto;justify-content:flex-start
+  height:auto;justify-content:flex-start;
+  padding:1mm 1.5mm 0.5mm
 }
 .worksheet-sheet.is-alphabetisation .vocab-card-image{
-  flex:0 0 auto;min-height:0;max-height:38mm;height:auto
+  flex:0 0 auto;min-height:0;max-height:28mm;height:auto
 }
 .worksheet-sheet.is-alphabetisation .vocab-card-image img{
-  max-height:36mm;height:auto;width:auto;max-width:100%;margin:0 auto
+  max-height:26mm;height:auto;width:auto;max-width:100%;margin:0 auto
 }
 .worksheet-sheet.is-alphabetisation .vocab-card-qr{
-  width:8mm;height:8mm
+  width:7mm;height:7mm
 }
 .worksheet-sheet.is-alphabetisation .vocab-card-word{
-  text-align:center;margin-top:1mm;margin-bottom:0
+  text-align:center;margin-top:0.5mm;margin-bottom:0;line-height:1.1
 }
 /* Types 10–11 Alpha : +2 pt, cadre par syllabe */
 .worksheet-sheet.is-alphabetisation .syllable-table-block--cell-frames .syllable-table--script .syllable-table-cell{

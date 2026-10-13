@@ -358,7 +358,7 @@ export function QuestionsColumnsFields(props: QuestionsColumnsFieldsProps) {
                         onClick={() =>
                           updatePage({
                             columns: value,
-                            count: value === 4 ? 12 : value * 2,
+                            count: value === 2 ? 4 : value === 3 ? 9 : 12,
                           })
                         }
                       >
@@ -367,7 +367,7 @@ export function QuestionsColumnsFields(props: QuestionsColumnsFieldsProps) {
                     ))}
                   </div>
                   <small className="muted">
-                    2 colonnes = 4 mots · 3 colonnes = 6 mots · 4 colonnes = 12 mots.
+                    2 colonnes = 4 mots · 3 colonnes = 9 mots · 4 colonnes = 12 mots.
                   </small>
                 </div>
               ) : null}
