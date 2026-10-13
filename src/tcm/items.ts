@@ -372,6 +372,9 @@ export function divisionColumnItem(dividend: number, divisor: number, empty: boo
     layout: 'division-column',
     op: '÷',
     prompt: empty ? `${fmt(dividend)} ÷ ${fmt(divisor)}` : undefined,
+    // a / b : édition libre (même UX que CFR ex. 9–10 / TCM ex. 19).
+    a: dividend,
+    b: divisor,
     dividend,
     divisor,
     quotient,

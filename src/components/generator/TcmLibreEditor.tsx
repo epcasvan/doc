@@ -753,11 +753,19 @@ function renderFields(
     item.layout === 'column-empty' ||
     item.layout === 'division-column'
   ) {
-    const isMulEx910 = (op: ArithOp) =>
-      (exerciseType.includes('ex09') || exerciseType.includes('ex10')) && op === '×'
+    // CFR 9–10 / TCM 18 : multiplicateur ≤ 99.
+    const capsMulB =
+      exerciseType.includes('ex09') ||
+      exerciseType.includes('ex10') ||
+      exerciseType === 'tcm-mul-mixte'
+    // CFR 7–8 / TCM 17 : soustraction a > b.
+    const requiresSubAgtB =
+      exerciseType.includes('ex07') ||
+      exerciseType.includes('ex08') ||
+      exerciseType === 'tcm-dec-add-sub'
     const columnError = (op: ArithOp, a: number | undefined, b: number | undefined) => {
       if (
-        (exerciseType.includes('ex07') || exerciseType.includes('ex08')) &&
+        requiresSubAgtB &&
         op === '−' &&
         typeof a === 'number' &&
         typeof b === 'number' &&
@@ -767,7 +775,7 @@ function renderFields(
       }
       return undefined
     }
-    const clampB = (op: ArithOp, b: number) => (isMulEx910(op) && b > 99 ? 99 : b)
+    const clampB = (op: ArithOp, b: number) => (capsMulB && op === '×' && b > 99 ? 99 : b)
     // TCM ex. 5 / 11 : a op b = corrigé sur une ligne.
     const sameLineCorrige =
       exerciseType === 'tcm-add-sub-col-3' || exerciseType === 'tcm-add-sub-col-4'
@@ -780,17 +788,30 @@ function renderFields(
         >
           <NumInput
             compact
-            value={item.a != null ? fmt(item.a) : ''}
+            value={
+              item.a != null
+                ? fmt(item.a)
+                : item.dividend != null
+                  ? fmt(item.dividend)
+                  : ''
+            }
             ariaLabel={`Operande A ${index + 1}`}
             onCommit={(raw) => {
               const a = Number(raw.replace(',', '.'))
               if (!Number.isFinite(a)) return
               const op = (item.op ?? '+') as ArithOp
-              const b = typeof item.b === 'number' ? clampB(op, item.b) : item.b
+              const bSrc =
+                typeof item.b === 'number'
+                  ? item.b
+                  : typeof item.divisor === 'number'
+                    ? item.divisor
+                    : undefined
+              const b = typeof bSrc === 'number' ? clampB(op, bSrc) : bSrc
               patch(index, {
                 ...item,
                 a,
-                ...(typeof b === 'number' ? { b } : {}),
+                ...(op === '÷' ? { dividend: a } : {}),
+                ...(typeof b === 'number' ? { b, ...(op === '÷' ? { divisor: b } : {}) } : {}),
                 libreError: columnError(op, a, typeof b === 'number' ? b : undefined),
                 prompt:
                   item.layout === 'column-empty' || item.blankOperands
@@ -805,32 +826,58 @@ function renderFields(
             options={OPS.map((op) => ({ value: op, label: op }))}
             onChange={(opRaw) => {
               const op = opRaw as ArithOp
-              const b = typeof item.b === 'number' ? clampB(op, item.b) : item.b
+              const a =
+                typeof item.a === 'number'
+                  ? item.a
+                  : typeof item.dividend === 'number'
+                    ? item.dividend
+                    : undefined
+              const bSrc =
+                typeof item.b === 'number'
+                  ? item.b
+                  : typeof item.divisor === 'number'
+                    ? item.divisor
+                    : undefined
+              const b = typeof bSrc === 'number' ? clampB(op, bSrc) : bSrc
               patch(index, {
                 ...item,
                 op,
+                ...(typeof a === 'number' ? { a } : {}),
                 ...(typeof b === 'number' ? { b } : {}),
-                libreError: columnError(op, item.a, typeof b === 'number' ? b : undefined),
+                libreError: columnError(op, a, typeof b === 'number' ? b : undefined),
               })
             }}
           />
           <NumInput
             compact
-            value={item.b != null ? fmt(item.b) : ''}
+            value={
+              item.b != null
+                ? fmt(item.b)
+                : item.divisor != null
+                  ? fmt(item.divisor)
+                  : ''
+            }
             ariaLabel={`Operande B ${index + 1}`}
             onCommit={(raw) => {
               const parsed = Number(raw.replace(',', '.'))
               if (!Number.isFinite(parsed)) return
               const op = (item.op ?? '+') as ArithOp
               const b = clampB(op, parsed)
-              const a = item.a
+              const a =
+                typeof item.a === 'number'
+                  ? item.a
+                  : typeof item.dividend === 'number'
+                    ? item.dividend
+                    : undefined
               patch(index, {
                 ...item,
                 b,
+                ...(op === '÷' ? { divisor: b } : {}),
+                ...(typeof a === 'number' && op === '÷' ? { a, dividend: a } : {}),
                 libreError: columnError(op, typeof a === 'number' ? a : undefined, b),
                 prompt:
                   item.layout === 'column-empty' || item.blankOperands
-                    ? `${item.a != null ? fmt(item.a) : ''} ${item.op ?? '+'} ${fmt(b)}`
+                    ? `${a != null ? fmt(a) : ''} ${item.op ?? '+'} ${fmt(b)}`
                     : item.prompt,
               })
             }}

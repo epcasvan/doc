@@ -433,6 +433,8 @@ export function divisionColumnItem(dividend: number, divisor: number, empty: boo
     layout: 'division-column',
     op: '÷',
     prompt: empty ? `${fmt(dividend)} ÷ ${fmt(divisor)}` : undefined,
+    a: dividend,
+    b: divisor,
     dividend,
     divisor,
     quotient,

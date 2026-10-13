@@ -6,7 +6,13 @@ import { fmt, sanitizeFrNumberNoise } from '@/math/column-arith'
 import type { ArithOp, Figure, MathItem } from '@/math/types'
 import { mulAudioParts, numberAudioParts } from '@/tcm-cfr/audio-nombres'
 import { fractionPartsFromItem, fractionTermFr } from '@/tcm/fraction-words'
-import { columnItem, divisionColumnItem, withFixedColumnWidth } from '@/tcm/items'
+import {
+  columnItem,
+  divisionColumnItem,
+  withFixedColumnWidth,
+  withFixedDivisionWidth,
+  withFixedDivisionWorkRows,
+} from '@/tcm/items'
 import { isCfrProblemExercise, rebuildProblemItems } from '@/tcm-cfr/problems'
 import { parseFrInt, parseFrNumber, parseOrderSequence } from './libre-parse'
 
@@ -126,24 +132,63 @@ function isCfrColSeven(exerciseType: string): boolean {
   )
 }
 
-/** TCM normal ex. 5 / 11 : largeur de grille imposée (4 ou 5 col.). */
-function tcmAddSubColWidth(exerciseType: string): 4 | 5 | null {
+/** TCM CFR 7–8 ou TCM normal 17 : soustraction avec a > b obligatoire. */
+function requiresSubAgtB(exerciseType: string): boolean {
+  return (
+    exerciseType.includes('ex07') ||
+    exerciseType.includes('ex08') ||
+    exerciseType === 'tcm-dec-add-sub'
+  )
+}
+
+/** TCM CFR 9–10 ou TCM normal 18 : multiplicateur plafonné à 99. */
+function capsMulBAt99(exerciseType: string): boolean {
+  return (
+    exerciseType.includes('ex09') ||
+    exerciseType.includes('ex10') ||
+    exerciseType === 'tcm-mul-mixte'
+  )
+}
+
+/** TCM CFR 9–10 ou TCM normal 19 : division à largeurs 4/4 + 8 lignes de travail. */
+function needsFixedDivisionGrid(exerciseType: string): boolean {
+  return (
+    exerciseType.includes('ex09') ||
+    exerciseType.includes('ex10') ||
+    exerciseType === 'tcm-div-mixte' ||
+    exerciseType === 'tcm-mul-div-col'
+  )
+}
+
+/** Largeur de grille imposée après édition libre (+ / − / ×). */
+function fixedColumnWidth(exerciseType: string): number | null {
+  if (isCfrColSeven(exerciseType)) return 7
   if (exerciseType === 'tcm-add-sub-col-3') return 4
   if (exerciseType === 'tcm-add-sub-col-4') return 5
+  // TCM ex. 17 / 18 : grille vide 6 col.
+  if (exerciseType === 'tcm-dec-add-sub' || exerciseType === 'tcm-mul-mixte') return 6
   return null
 }
 
 function recalcColumn(item: MathItem, exerciseType = ''): MathItem {
-  const a = typeof item.a === 'number' ? item.a : parseFrNumber(String(item.a ?? ''))
-  let b = typeof item.b === 'number' ? item.b : parseFrNumber(String(item.b ?? ''))
+  const aRaw =
+    typeof item.a === 'number'
+      ? item.a
+      : typeof item.dividend === 'number'
+        ? item.dividend
+        : parseFrNumber(String(item.a ?? item.dividend ?? ''))
+  let bRaw =
+    typeof item.b === 'number'
+      ? item.b
+      : typeof item.divisor === 'number'
+        ? item.divisor
+        : parseFrNumber(String(item.b ?? item.divisor ?? ''))
   const op = (item.op ?? '+') as ArithOp
-  if (a == null || b == null) return { ...item, libreError: undefined }
-  // Ex. 7–8 : soustraction — le 1er nombre doit être strictement plus grand.
-  if (
-    (exerciseType.includes('ex07') || exerciseType.includes('ex08')) &&
-    op === '−' &&
-    a <= b
-  ) {
+  if (aRaw == null || bRaw == null) return { ...item, libreError: undefined }
+  let a = aRaw
+  let b = bRaw
+  // Soustraction — le 1er nombre doit être strictement plus grand (CFR 7–8, TCM 17).
+  if (requiresSubAgtB(exerciseType) && op === '−' && a <= b) {
     return {
       ...item,
       a,
@@ -152,38 +197,32 @@ function recalcColumn(item: MathItem, exerciseType = ''): MathItem {
       libreError: 'Pour une soustraction, le premier nombre doit être plus grand que le second.',
     }
   }
-  // Ex. 9–10 × : le multiplicateur (2ᵉ nombre) ne dépasse pas 99.
-  if (
-    (exerciseType.includes('ex09') || exerciseType.includes('ex10')) &&
-    op === '×' &&
-    b > 99
-  ) {
+  // × : le multiplicateur (2ᵉ nombre) ne dépasse pas 99 (CFR 9–10, TCM 18).
+  if (capsMulBAt99(exerciseType) && op === '×' && b > 99) {
     b = 99
   }
   const result = computeOp(op, a, b)
   if (result == null || !Number.isFinite(result)) return item
   const empty = Boolean(item.blankOperands) || item.layout === 'column-empty'
   if (op === '÷') {
-    const built = divisionColumnItem(a, b, empty)
-    return { ...item, ...built, layout: item.layout, libreError: undefined }
+    let built = divisionColumnItem(a, b, empty)
+    if (needsFixedDivisionGrid(exerciseType)) {
+      built = withFixedDivisionWorkRows(withFixedDivisionWidth(built, 4, 4))
+    }
+    return { ...item, ...built, layout: 'division-column', libreError: undefined }
   }
   const built = columnItem(op, a, b, result, empty)
   let next: MathItem = {
     ...item,
     ...built,
-    layout: item.layout,
+    layout: item.layout === 'column-empty' || empty ? built.layout : item.layout,
     // Force l’effacement des produits partiels si × 1 chiffre (évite 2 lignes fantômes).
     digitsPartials: built.digitsPartials,
     libreError: undefined,
   }
-  // Ex. 7–10 : grille toujours 7 colonnes (ne suit pas le nombre de chiffres).
-  if (isCfrColSeven(exerciseType)) {
-    next = withFixedColumnWidth(next, 7)
-  }
-  // TCM ex. 5 / 11 : conserver 4 ou 5 colonnes après édition libre.
-  const tcmWidth = tcmAddSubColWidth(exerciseType)
-  if (tcmWidth != null) {
-    next = withFixedColumnWidth(next, tcmWidth)
+  const width = fixedColumnWidth(exerciseType)
+  if (width != null) {
+    next = withFixedColumnWidth(next, width)
   }
   return next
 }
