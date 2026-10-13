@@ -1,0 +1,74 @@
+{
+  "/lib/audio/comprehension/presenter/moyen-a2__047.mp3": {
+    "theme": "Soutien scolaire · Dialogue 047",
+    "transcription": "- Léa, tu viens au pique-nique samedi ?\n- Je suis désolé, mais je ne pourrai pas venir.\n- C'est dommage, pourquoi ?\n- Mon fils a une compétition sportive.\n- Malheureusement, je ne suis pas libre ce week-end.",
+    "questions": [
+      {
+        "enonce": "À quoi Léa est-elle invitée ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          { "id": "a", "texte": "À un pique-nique", "correct": true },
+          { "id": "b", "texte": "À un cinéma" },
+          { "id": "c", "texte": "À une fête" }
+        ]
+      },
+      {
+        "enonce": "Quel jour le pique-nique a-t-il lieu ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          { "id": "a", "texte": "Samedi", "correct": true },
+          { "id": "b", "texte": "Dimanche" },
+          { "id": "c", "texte": "Vendredi" }
+        ]
+      },
+      {
+        "enonce": "Pourquoi la personne refuse-t-elle ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          { "id": "a", "texte": "Son fils a une compétition sportive", "correct": true },
+          { "id": "b", "texte": "Elle est malade" },
+          { "id": "c", "texte": "Elle part en voyage" }
+        ]
+      },
+      {
+        "enonce": "Est-elle libre ce week-end ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          { "id": "a", "texte": "Non", "correct": true },
+          { "id": "b", "texte": "Oui" },
+          { "id": "c", "texte": "Seulement le dimanche" }
+        ]
+      },
+      {
+        "enonce": "Qui invite Léa ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          { "id": "a", "texte": "Un ami / une amie", "correct": true },
+          { "id": "b", "texte": "Son professeur" },
+          { "id": "c", "texte": "Son médecin" }
+        ]
+      },
+      {
+        "enonce": "Que fait l'interlocuteur après le refus ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          { "id": "a", "texte": "Il demande pourquoi", "correct": true },
+          { "id": "b", "texte": "Il annule le pique-nique" },
+          { "id": "c", "texte": "Il change de jour tout de suite" }
+        ]
+      }
+    ]
+  }
+}

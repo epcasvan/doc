@@ -1,7 +1,7 @@
 /**
  * Générateurs d’items TCM (types `tcm-*`) — dispatch depuis `math/generate.ts`.
  */
-import { fmt } from '@/math/column-arith'
+import { fmt, sanitizeItemNumberNoise } from '@/math/column-arith'
 import {
   decimalAddPair,
   pickWithPlaces,
@@ -1494,106 +1494,76 @@ export function tryGenerateTcmItems(
   count: number,
   rng: Rng,
 ): MathItem[] | null {
+  let items: MathItem[] | null = null
   if (typeId === 'tcm-comparer') {
-    return generateTcmComparerBatch(rng, count)
-  }
-  if (typeId === 'tcm-suite') {
-    return generateTcmSuiteBatch(rng, count)
-  }
-  if (typeId === 'tcm-operations') {
-    return generateTcmOperationsBatch(rng).slice(0, Math.max(1, count))
-  }
-  if (typeId === 'tcm-quatre-ops') {
-    return generateTcmQuatreOpsBatch(rng).slice(0, Math.max(1, count))
-  }
-  if (typeId === 'tcm-add-sub-col-3') {
-    return normalizeColumnLayouts(generateTcmAddSubColBatch(rng, 3).slice(0, Math.max(1, count)))
-  }
-  if (typeId === 'tcm-add-sub-col-4') {
-    return normalizeColumnLayouts(generateTcmAddSubColBatch(rng, 4).slice(0, Math.max(1, count)))
-  }
-  if (typeId === 'tcm-decompose-99') {
-    return generateTcmDecompose99Batch(rng, count)
-  }
-  if (typeId === 'tcm-grandes-suites') {
-    return generateTcmGrandesSuitesBatch(rng).slice(0, Math.max(1, count))
-  }
-  if (typeId === 'tcm-decompose-9999') {
-    return generateTcmDecompose9999Batch(rng, count)
-  }
-  if (typeId === 'tcm-mul-div-col') {
+    items = generateTcmComparerBatch(rng, count)
+  } else if (typeId === 'tcm-suite') {
+    items = generateTcmSuiteBatch(rng, count)
+  } else if (typeId === 'tcm-operations') {
+    items = generateTcmOperationsBatch(rng).slice(0, Math.max(1, count))
+  } else if (typeId === 'tcm-quatre-ops') {
+    items = generateTcmQuatreOpsBatch(rng).slice(0, Math.max(1, count))
+  } else if (typeId === 'tcm-add-sub-col-3') {
+    items = normalizeColumnLayouts(generateTcmAddSubColBatch(rng, 3).slice(0, Math.max(1, count)))
+  } else if (typeId === 'tcm-add-sub-col-4') {
+    items = normalizeColumnLayouts(generateTcmAddSubColBatch(rng, 4).slice(0, Math.max(1, count)))
+  } else if (typeId === 'tcm-decompose-99') {
+    items = generateTcmDecompose99Batch(rng, count)
+  } else if (typeId === 'tcm-grandes-suites') {
+    items = generateTcmGrandesSuitesBatch(rng).slice(0, Math.max(1, count))
+  } else if (typeId === 'tcm-decompose-9999') {
+    items = generateTcmDecompose9999Batch(rng, count)
+  } else if (typeId === 'tcm-mul-div-col') {
     // Largeurs imposées (× 5 col · ÷ 5/5) : pas de normalize qui les élargirait.
-    return generateTcmMulDivColBatch(rng).slice(0, Math.max(1, count))
-  }
-  if (typeId === 'tcm-rect-peri-aire') {
-    return [generateTcmRectPeriAire(rng)]
-  }
-  if (typeId === 'tcm-para-peri-aire') {
-    return [generateTcmParaPeriAire(rng)]
-  }
-  if (typeId === 'tcm-tri-peri-aire') {
-    return [generateTcmTriPeriAire(rng)]
-  }
-  if (typeId === 'tcm-rhombus-peri-aire') {
-    return [generateTcmRhombusPeriAire(rng)]
-  }
-  if (typeId === 'tcm-trap-peri-aire') {
-    return [generateTcmTrapPeriAire(rng)]
-  }
-  if (typeId === 'tcm-circle-peri-aire') {
-    return [generateTcmCirclePeriAire(rng)]
-  }
-  if (typeId === 'tcm-suites-6') {
-    return generateTcmSuites6Batch(rng).slice(0, Math.max(1, count))
-  }
-  if (typeId === 'tcm-ranger') {
-    return generateTcmRangerBatch(rng).slice(0, Math.max(1, count))
-  }
-  if (typeId === 'tcm-dec-add-sub') {
+    items = generateTcmMulDivColBatch(rng).slice(0, Math.max(1, count))
+  } else if (typeId === 'tcm-rect-peri-aire') {
+    items = [generateTcmRectPeriAire(rng)]
+  } else if (typeId === 'tcm-para-peri-aire') {
+    items = [generateTcmParaPeriAire(rng)]
+  } else if (typeId === 'tcm-tri-peri-aire') {
+    items = [generateTcmTriPeriAire(rng)]
+  } else if (typeId === 'tcm-rhombus-peri-aire') {
+    items = [generateTcmRhombusPeriAire(rng)]
+  } else if (typeId === 'tcm-trap-peri-aire') {
+    items = [generateTcmTrapPeriAire(rng)]
+  } else if (typeId === 'tcm-circle-peri-aire') {
+    items = [generateTcmCirclePeriAire(rng)]
+  } else if (typeId === 'tcm-suites-6') {
+    items = generateTcmSuites6Batch(rng).slice(0, Math.max(1, count))
+  } else if (typeId === 'tcm-ranger') {
+    items = generateTcmRangerBatch(rng).slice(0, Math.max(1, count))
+  } else if (typeId === 'tcm-dec-add-sub') {
     // Largeur imposée à 6 : ne pas ré-aligner via normalize (sinon > 6 col).
-    return generateTcmDecAddSubBatch(rng).slice(0, Math.max(1, count))
+    items = generateTcmDecAddSubBatch(rng).slice(0, Math.max(1, count))
+  } else if (typeId === 'tcm-mul-mixte') {
+    items = generateTcmMulMixteBatch(rng).slice(0, Math.max(1, count))
+  } else if (typeId === 'tcm-div-mixte') {
+    items = generateTcmDivMixteBatch(rng).slice(0, Math.max(1, count))
+  } else if (typeId === 'tcm-frac-color') {
+    items = generateTcmFracShapeBatch(rng, count, 'color')
+  } else if (typeId === 'tcm-frac-read') {
+    items = generateTcmFracShapeBatch(rng, count, 'read')
+  } else if (typeId === 'tcm-ops-decimales') {
+    items = generateTcmOpsDecimalesBatch(rng).slice(0, Math.max(1, count))
+  } else if (typeId === 'tcm-puissances-mixte') {
+    items = generateTcmPuissancesMixteBatch(rng).slice(0, Math.max(1, count))
+  } else if (typeId === 'tcm-priorite-ops') {
+    items = generateTcmPrioriteBatch(rng).slice(0, Math.max(1, count))
+  } else if (typeId === 'tcm-relatifs-ops') {
+    items = generateTcmRelatifsOpsBatch(rng).slice(0, Math.max(1, count))
+  } else if (typeId === 'tcm-fractions-mixte') {
+    items = generateTcmFractionsMixteBatch(rng).slice(0, Math.max(1, count))
+  } else if (typeId === 'tcm-expressions-reduire') {
+    items = generateTcmReduireBatch(rng).slice(0, Math.max(1, count))
+  } else if (typeId === 'tcm-expressions-evaluer') {
+    items = generateTcmEvaluerBatch(rng).items.slice(0, Math.max(1, count))
+  } else if (typeId === 'tcm-equations') {
+    items = generateTcmEquationsBatch(rng).slice(0, Math.max(1, count))
+  } else if (typeId === 'tcm-conversions-mixte') {
+    items = generateTcmConversionsBatch(rng).slice(0, Math.max(1, count))
+  } else if (typeId === 'tcm-proportion-kg') {
+    items = generateTcmProportionKgBatch(rng, count)
   }
-  if (typeId === 'tcm-mul-mixte') {
-    return generateTcmMulMixteBatch(rng).slice(0, Math.max(1, count))
-  }
-  if (typeId === 'tcm-div-mixte') {
-    return generateTcmDivMixteBatch(rng).slice(0, Math.max(1, count))
-  }
-  if (typeId === 'tcm-frac-color') {
-    return generateTcmFracShapeBatch(rng, count, 'color')
-  }
-  if (typeId === 'tcm-frac-read') {
-    return generateTcmFracShapeBatch(rng, count, 'read')
-  }
-  if (typeId === 'tcm-ops-decimales') {
-    return generateTcmOpsDecimalesBatch(rng).slice(0, Math.max(1, count))
-  }
-  if (typeId === 'tcm-puissances-mixte') {
-    return generateTcmPuissancesMixteBatch(rng).slice(0, Math.max(1, count))
-  }
-  if (typeId === 'tcm-priorite-ops') {
-    return generateTcmPrioriteBatch(rng).slice(0, Math.max(1, count))
-  }
-  if (typeId === 'tcm-relatifs-ops') {
-    return generateTcmRelatifsOpsBatch(rng).slice(0, Math.max(1, count))
-  }
-  if (typeId === 'tcm-fractions-mixte') {
-    return generateTcmFractionsMixteBatch(rng).slice(0, Math.max(1, count))
-  }
-  if (typeId === 'tcm-expressions-reduire') {
-    return generateTcmReduireBatch(rng).slice(0, Math.max(1, count))
-  }
-  if (typeId === 'tcm-expressions-evaluer') {
-    return generateTcmEvaluerBatch(rng).items.slice(0, Math.max(1, count))
-  }
-  if (typeId === 'tcm-equations') {
-    return generateTcmEquationsBatch(rng).slice(0, Math.max(1, count))
-  }
-  if (typeId === 'tcm-conversions-mixte') {
-    return generateTcmConversionsBatch(rng).slice(0, Math.max(1, count))
-  }
-  if (typeId === 'tcm-proportion-kg') {
-    return generateTcmProportionKgBatch(rng, count)
-  }
-  return null
+  if (!items) return null
+  return items.map((item) => sanitizeItemNumberNoise(item))
 }

@@ -4,7 +4,7 @@
 import { genFracSingleItems } from '@/math/fraction-shapes'
 import { createRng, int, pick, shuffle, type Rng } from '@/math/rng'
 import type { ArithOp, Figure, MathItem } from '@/math/types'
-import { fmt } from '@/math/column-arith'
+import { fmt, sanitizeItemNumberNoise } from '@/math/column-arith'
 import {
   columnItem,
   divisionColumnItem,
@@ -1331,33 +1331,35 @@ export function tryGenerateTcmCfrItems(
   if (!isTcmCfrType(typeId)) return null
   // Page Informations : générée via `generateTcmInformations` dans `math/generate.ts`.
   if (typeId === 'tcm-cfr-consignes') return []
-  if (typeId === 'tcm-cfr-ex01') return genEx01(rng, count)
-  if (typeId === 'tcm-cfr-ex02') return genEx02(rng, count)
-  if (typeId === 'tcm-cfr-ex03') return genEx03(rng).slice(0, Math.max(1, count))
-  if (typeId === 'tcm-cfr-ex04') return genEx04(rng, count)
-  if (typeId === 'tcm-cfr-ex05') return genEx05(rng).slice(0, Math.max(1, count))
-  if (typeId === 'tcm-cfr-ex06') return genEx06(rng).slice(0, Math.max(1, count))
-  if (typeId === 'tcm-cfr-ex07') return genAddSubFour(rng, false).slice(0, Math.max(1, count))
-  if (typeId === 'tcm-cfr-ex08') return genAddSubFour(rng, true).slice(0, Math.max(1, count))
-  if (typeId === 'tcm-cfr-ex09') return genEx09(rng).slice(0, Math.max(1, count))
-  if (typeId === 'tcm-cfr-ex10') return genEx10(rng).slice(0, Math.max(1, count))
-  if (typeId === 'tcm-cfr-ex11') return genEx11(rng, count)
-  if (typeId === 'tcm-cfr-ex12') return genFracShapes(rng, count, 'color')
-  if (typeId === 'tcm-cfr-ex13') return genFracShapes(rng, count, 'read')
-  if (typeId === 'tcm-cfr-ex14') return genEx14(rng).slice(0, Math.max(1, count))
-  if (typeId === 'tcm-cfr-ex15') return genEx15(rng).slice(0, Math.max(1, count))
-  if (typeId === 'tcm-cfr-ex16') return genEx16(rng, worksheetSeed).slice(0, Math.max(1, count))
-  if (typeId === 'tcm-cfr-ex17') return genEx17(rng, worksheetSeed).slice(0, Math.max(1, count))
-  if (typeId === 'tcm-cfr-ex18') return genEx18(rng)
-  if (typeId === 'tcm-cfr-ex19') return genEx19(rng)
-  if (typeId === 'tcm-cfr-ex20') return genEx20(rng, count)
-  if (typeId === 'tcm-cfr-ex21') return genEx21(rng, count)
-  if (typeId === 'tcm-cfr-ex22') return genEx22(rng)
-  if (typeId === 'tcm-cfr-ex23') return genEx23(rng)
-  if (typeId === 'tcm-cfr-ex24') return genEx24(rng)
-  if (typeId === 'tcm-cfr-ex25') return genEx25(rng)
-  if (typeId === 'tcm-cfr-ex26') return genEx26(rng)
-  if (typeId === 'tcm-cfr-ex27') return genEx27(rng)
-  if (typeId === 'tcm-cfr-ex28') return genEx28(rng)
-  return null
+  let items: MathItem[] | null = null
+  if (typeId === 'tcm-cfr-ex01') items = genEx01(rng, count)
+  else if (typeId === 'tcm-cfr-ex02') items = genEx02(rng, count)
+  else if (typeId === 'tcm-cfr-ex03') items = genEx03(rng).slice(0, Math.max(1, count))
+  else if (typeId === 'tcm-cfr-ex04') items = genEx04(rng, count)
+  else if (typeId === 'tcm-cfr-ex05') items = genEx05(rng).slice(0, Math.max(1, count))
+  else if (typeId === 'tcm-cfr-ex06') items = genEx06(rng).slice(0, Math.max(1, count))
+  else if (typeId === 'tcm-cfr-ex07') items = genAddSubFour(rng, false).slice(0, Math.max(1, count))
+  else if (typeId === 'tcm-cfr-ex08') items = genAddSubFour(rng, true).slice(0, Math.max(1, count))
+  else if (typeId === 'tcm-cfr-ex09') items = genEx09(rng).slice(0, Math.max(1, count))
+  else if (typeId === 'tcm-cfr-ex10') items = genEx10(rng).slice(0, Math.max(1, count))
+  else if (typeId === 'tcm-cfr-ex11') items = genEx11(rng, count)
+  else if (typeId === 'tcm-cfr-ex12') items = genFracShapes(rng, count, 'color')
+  else if (typeId === 'tcm-cfr-ex13') items = genFracShapes(rng, count, 'read')
+  else if (typeId === 'tcm-cfr-ex14') items = genEx14(rng).slice(0, Math.max(1, count))
+  else if (typeId === 'tcm-cfr-ex15') items = genEx15(rng).slice(0, Math.max(1, count))
+  else if (typeId === 'tcm-cfr-ex16') items = genEx16(rng, worksheetSeed).slice(0, Math.max(1, count))
+  else if (typeId === 'tcm-cfr-ex17') items = genEx17(rng, worksheetSeed).slice(0, Math.max(1, count))
+  else if (typeId === 'tcm-cfr-ex18') items = genEx18(rng)
+  else if (typeId === 'tcm-cfr-ex19') items = genEx19(rng)
+  else if (typeId === 'tcm-cfr-ex20') items = genEx20(rng, count)
+  else if (typeId === 'tcm-cfr-ex21') items = genEx21(rng, count)
+  else if (typeId === 'tcm-cfr-ex22') items = genEx22(rng)
+  else if (typeId === 'tcm-cfr-ex23') items = genEx23(rng)
+  else if (typeId === 'tcm-cfr-ex24') items = genEx24(rng)
+  else if (typeId === 'tcm-cfr-ex25') items = genEx25(rng)
+  else if (typeId === 'tcm-cfr-ex26') items = genEx26(rng)
+  else if (typeId === 'tcm-cfr-ex27') items = genEx27(rng)
+  else if (typeId === 'tcm-cfr-ex28') items = genEx28(rng)
+  if (!items) return null
+  return items.map((item) => sanitizeItemNumberNoise(item))
 }

@@ -2,7 +2,7 @@
  * Recalcule les réponses des items TCM / TCM CFR après édition libre.
  * Appelé à la validation (bouton ✓ à côté du téléchargement).
  */
-import { fmt } from '@/math/column-arith'
+import { fmt, sanitizeFrNumberNoise } from '@/math/column-arith'
 import type { ArithOp, Figure, MathItem } from '@/math/types'
 import { columnItem, divisionColumnItem } from '@/tcm/items'
 import { parseFrInt, parseFrNumber, parseOrderSequence } from './libre-parse'
@@ -377,11 +377,7 @@ function cleanAnswerFloat(item: MathItem): MathItem {
   if (!item.answer) return item
   const n = parseFrNumber(item.answer)
   if (n == null) {
-    // Nettoyer les artefacts du type 7,2700000000000005 dans une chaîne
-    const cleaned = item.answer.replace(
-      /(-?\d+),(\d*?)0{4,}\d*/g,
-      (_, a: string, b: string) => `${a},${b || '0'}`.replace(/,$/, ''),
-    )
+    const cleaned = sanitizeFrNumberNoise(item.answer)
     return cleaned === item.answer ? item : { ...item, answer: cleaned }
   }
   // Si c’est un seul nombre, reformater
@@ -390,10 +386,12 @@ function cleanAnswerFloat(item: MathItem): MathItem {
   }
   return {
     ...item,
-    answer: item.answer.replace(/-?\d+(?:[.,]\d+)/g, (m) => {
-      const v = parseFrNumber(m)
-      return v == null ? m : fmt(v)
-    }),
+    answer: sanitizeFrNumberNoise(
+      item.answer.replace(/-?\d+(?:[.,]\d+)/g, (m) => {
+        const v = parseFrNumber(m)
+        return v == null ? m : fmt(v)
+      }),
+    ),
   }
 }
 

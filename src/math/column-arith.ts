@@ -17,6 +17,39 @@ export function fmt(n: number): string {
     .replace('.', ',')
 }
 
+/** Nettoie `7,2700000000000005` / `7.2700000000000005` dans une chaîne affichée. */
+export function sanitizeFrNumberNoise(text: string): string {
+  return text
+    .replace(/(-?\d+)[.,](\d*?)0{4,}\d*/g, (_, a: string, b: string) => {
+      const frac = b.replace(/0+$/, '')
+      return frac ? `${a},${frac}` : a
+    })
+    .replace(/(-?\d+)\.(\d+)/g, (_, a: string, b: string) => `${a},${b}`)
+}
+
+/** Applique `fmt` / nettoyage de bruit binaire sur les champs texte d’un item. */
+export function sanitizeItemNumberNoise<T extends Record<string, unknown>>(item: T): T {
+  const out: Record<string, unknown> = { ...item }
+  for (const key of ['answer', 'prompt', 'calcAnswer', 'calcAnswerSecondary', 'left', 'right'] as const) {
+    const v = out[key]
+    if (typeof v === 'string') out[key] = sanitizeFrNumberNoise(v)
+  }
+  if (Array.isArray(out.propertyLines)) {
+    out.propertyLines = out.propertyLines.map((line) => {
+      if (!line || typeof line !== 'object') return line
+      const row = line as { label?: string; answer?: string }
+      return {
+        ...row,
+        ...(typeof row.answer === 'string' ? { answer: sanitizeFrNumberNoise(row.answer) } : {}),
+      }
+    })
+  }
+  if (Array.isArray(out.order)) {
+    out.order = out.order.map((x) => (typeof x === 'string' ? sanitizeFrNumberNoise(x) : x))
+  }
+  return out as T
+}
+
 /** Entier de la plage libre, borné à [lo, hi] (la plage prime sur le niveau). */
 export function rangeInt(rng: Rng, range: NumberRange, lo: number, hi: number): number {
   const a = Math.max(lo, Math.ceil(range.min))

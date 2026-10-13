@@ -590,22 +590,22 @@ function main() {
   }
 
   // Candidats pour le réalignement STT (scripts/rematch-tcf-co-transcripts.py)
-  const candidates = { byLevel: { A1: {}, A2: {} } }
-  for (const level of ['A1', 'A2']) {
-    const audioLevel = level === 'A1' ? 'facile-a1' : 'moyen-a2'
+  const candidates = { byLevel: { A1: {}, A2: {}, any: {} } }
+  for (const level of ['A1', 'A2', 'any']) {
+    const audioLevel = level === 'A1' ? 'facile-a1' : level === 'A2' ? 'moyen-a2' : 'facile-a1'
     const stems = new Set([
       ...transcriptsByLevel[level].keys(),
       ...poolsByLevel[level].keys(),
+      ...(level === 'any' ? [] : [...transcriptsByLevel.any.keys(), ...poolsByLevel.any.keys()]),
     ])
     for (const stem of stems) {
-      if (!/^\d{1,3}$/.test(stem)) continue
-      const padded = stem.padStart(3, '0')
-      if (candidates.byLevel[level][padded]) continue
-      const transcript = getTranscript(padded, audioLevel)
-      const pool = getPoolForStem(padded, audioLevel)
+      const key = /^\d+$/.test(stem) ? stem.padStart(3, '0') : stem
+      if (candidates.byLevel[level][key]) continue
+      const transcript = getTranscript(key, audioLevel)
+      const pool = getPoolForStem(key, audioLevel)
       if (!transcript || !pool?.length) continue
-      const maxQ = level === 'A1' ? 4 : 6
-      candidates.byLevel[level][padded] = {
+      const maxQ = level === 'A2' ? 6 : 4
+      candidates.byLevel[level][key] = {
         transcript,
         questions: toTcfQuestions(pool, maxQ),
       }
