@@ -4112,6 +4112,12 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
 .tcf-vocab-picker-path{font-size:11px;color:var(--muted);word-break:break-all}
 .tcf-vocab-picker-theme{font-size:10px;color:var(--muted)}
 .tcf-vocab-picker-empty{padding:12px;font-size:13px;color:var(--muted)}
+.tcf-vocab-picker-item.is-audio{
+  flex-direction:column;align-items:stretch;gap:6px
+}
+.tcf-audio-picker-preview{width:100%;max-width:100%;height:32px}
+.tcf-audio-row{display:flex;align-items:center;gap:6px}
+.tcf-audio-row>.pill-input{flex:1;min-width:0}
 .tcf-question-editor{display:flex;flex-direction:column;gap:6px;margin:0;padding:8px;border:1px solid var(--line);border-radius:8px}
 .tcf-question-editor legend{display:flex;align-items:center;gap:6px;font-size:12px;font-weight:700}
 .tcf-choix-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}

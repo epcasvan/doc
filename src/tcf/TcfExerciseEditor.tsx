@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { applyExerciseFromAudioBank, tcfAudioEntries, type TcfAudioEntry } from './audio-bank'
 import { TCF_TYPES, tcfSlotByTypeId, tcfTypeMeta } from './catalog'
 import { AudioField, ImageField, LinesField, NumberField, TextField } from './fields'
 import { tcfBank, tcfExerciseById, tcfSlotBank } from './loader'
@@ -106,7 +107,19 @@ function RepliquesFields({
 }
 
 /** Champs spécifiques au type d’exercice (support). */
-function SupportEditor({ ex, set }: { ex: TcfExercise; set: (next: TcfExercise) => void }) {
+function SupportEditor({
+  ex,
+  set,
+  audioEntries,
+}: {
+  ex: TcfExercise
+  set: (next: TcfExercise) => void
+  /** Audios CO de la banque : choix → recharge questions + transcription. */
+  audioEntries?: readonly TcfAudioEntry[]
+}) {
+  const pickAudio = (entry: TcfAudioEntry) => set(applyExerciseFromAudioBank(ex, entry.exercise))
+  const audioBank = audioEntries && audioEntries.length > 0 ? audioEntries : undefined
+
   switch (ex.type_exercice) {
     case 'sms':
       return (
@@ -139,7 +152,13 @@ function SupportEditor({ ex, set }: { ex: TcfExercise; set: (next: TcfExercise) 
     case 'images_a_reconnaitre':
       return (
         <>
-          <AudioField label="Audio" value={ex.support.audio} onChange={(audio) => set(withSupport(ex, { audio }))} />
+          <AudioField
+            label="Audio"
+            value={ex.support.audio}
+            onChange={(audio) => set(withSupport(ex, { audio }))}
+            bankEntries={audioBank}
+            onPickFromBank={pickAudio}
+          />
           <TextField
             label="Consigne"
             value={ex.consigne ?? ''}
@@ -225,6 +244,8 @@ function SupportEditor({ ex, set }: { ex: TcfExercise; set: (next: TcfExercise) 
               onChange={(next) =>
                 set(withSupport(ex, { audios: ex.support.audios.map((a, k) => (k === i ? next : a)) }))
               }
+              bankEntries={audioBank}
+              onPickFromBank={pickAudio}
             />
           ))}
         </>
@@ -232,7 +253,13 @@ function SupportEditor({ ex, set }: { ex: TcfExercise; set: (next: TcfExercise) 
     case 'complet':
       return (
         <>
-          <AudioField label="Audio" value={ex.support.audio} onChange={(audio) => set(withSupport(ex, { audio }))} />
+          <AudioField
+            label="Audio"
+            value={ex.support.audio}
+            onChange={(audio) => set(withSupport(ex, { audio }))}
+            bankEntries={audioBank}
+            onPickFromBank={pickAudio}
+          />
           <TextField
             label="Transcription (corrigé)"
             value={ex.support.transcription}
@@ -246,7 +273,13 @@ function SupportEditor({ ex, set }: { ex: TcfExercise; set: (next: TcfExercise) 
       const n = ex.support.nb_dialogues
       return (
         <>
-          <AudioField label="Audio (tous les dialogues)" value={ex.support.audio} onChange={(audio) => set(withSupport(ex, { audio }))} />
+          <AudioField
+            label="Audio (tous les dialogues)"
+            value={ex.support.audio}
+            onChange={(audio) => set(withSupport(ex, { audio }))}
+            bankEntries={audioBank}
+            onPickFromBank={pickAudio}
+          />
           <NumberField
             label="Nombre de dialogues"
             value={n}
@@ -787,6 +820,11 @@ export function TcfExerciseEditor({
     return emptyTcfExercise(niveau, slot.competence, first.typeExercice, tcfExerciseId(niveau, slot.competence, 1))
   }, [slot, bankId, shownId, bank, niveau])
   const current = edited ? edits : fallback
+  /** Tous les audios CO du niveau : choisir un audio recharge questions + transcription. */
+  const coAudioEntries = useMemo(
+    () => (slot?.competence === 'CO' ? tcfAudioEntries(tcfBank(niveau, 'CO')) : []),
+    [slot?.competence, niveau],
+  )
   // Résultats rattachés à la version de l’exercice : toute modification les efface.
   const [mediaCheck, setMediaCheck] = useState<{ for: TcfExercise; errors: string[] } | null>(null)
   const [copiedFor, setCopiedFor] = useState<TcfExercise | null>(null)
@@ -886,7 +924,7 @@ export function TcfExerciseEditor({
             />
           ) : null}
 
-          <SupportEditor ex={exercise} set={set} />
+          <SupportEditor ex={exercise} set={set} audioEntries={coAudioEntries} />
 
           {hasConsigneSupp ? (
             <TextField

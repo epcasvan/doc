@@ -1,6 +1,8 @@
 import { useRef, useState } from 'react'
 import { GAME_IMAGE_ACCEPT, readGameImageFile } from '@/jeux/image'
+import type { TcfAudioEntry } from './audio-bank'
 import { tcfAudioSrc, tcfImageSrc } from './media'
+import { TcfAudioPicker } from './TcfAudioPicker'
 import { VocabImagePicker } from './VocabImagePicker'
 
 /** Champ texte (une ligne ou zone multiligne). */
@@ -188,28 +190,67 @@ export function ImageField({
   )
 }
 
-/** Audio : MP3 sous `public/lib/audio/` (ou chemin / URL), écoute à l’écran. */
+/**
+ * Audio : MP3 sous `public/lib/audio/` (ou chemin / URL), écoute à l’écran.
+ * Avec `bankEntries`, un clic ouvre la recherche ; `onPickFromBank` peut
+ * recharger questions + transcription de l’exercice lié.
+ */
 export function AudioField({
   label,
   value,
   onChange,
+  bankEntries,
+  onPickFromBank,
 }: {
   label: string
   value: string
   onChange: (value: string) => void
+  bankEntries?: readonly TcfAudioEntry[]
+  onPickFromBank?: (entry: TcfAudioEntry) => void
 }) {
+  const [pickerOpen, setPickerOpen] = useState(false)
   const src = tcfAudioSrc(value)
+  const canPick = (bankEntries?.length ?? 0) > 0
   return (
     <div className="tcf-field">
       <span>{label}</span>
-      <input
-        className="pill-input"
-        type="text"
-        value={value}
-        placeholder="/lib/audio/comprehension/…"
-        onChange={(event) => onChange(event.target.value)}
-      />
+      <div className="tcf-audio-row">
+        <input
+          className="pill-input"
+          type="text"
+          value={value}
+          placeholder={canPick ? 'Rechercher un audio de la banque…' : '/lib/audio/comprehension/…'}
+          aria-label={`Fichier : ${label}`}
+          title={canPick ? 'Rechercher un audio (questions adaptées)' : undefined}
+          onChange={(event) => onChange(event.target.value)}
+          onClick={() => {
+            if (canPick) setPickerOpen(true)
+          }}
+          onFocus={(event) => {
+            if (canPick) {
+              event.target.blur()
+              setPickerOpen(true)
+            }
+          }}
+        />
+        {canPick ? (
+          <button type="button" className="tcf-btn" onClick={() => setPickerOpen(true)}>
+            Choisir
+          </button>
+        ) : null}
+      </div>
       {src ? <audio className="tcf-audio-player" controls preload="none" src={src} /> : null}
+      {canPick ? (
+        <TcfAudioPicker
+          open={pickerOpen}
+          entries={[...bankEntries!]}
+          onClose={() => setPickerOpen(false)}
+          onPick={(entry) => {
+            if (onPickFromBank) onPickFromBank(entry)
+            else onChange(entry.audio)
+          }}
+        />
+      ) : null}
     </div>
   )
 }
