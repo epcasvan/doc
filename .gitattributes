@@ -1,2 +1,0 @@
-public/audio/**/*.mp3 filter=lfs diff=lfs merge=lfs -text
-public/lib/**/*.mp3 filter=lfs diff=lfs merge=lfs -text

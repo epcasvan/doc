@@ -1,5 +1,5 @@
 {
-  "/lib/audio/comprehension/presenter/moyen-a2__047.mp3": {
+  "/lib/audio/comprehension/vie-quotidienne/lea-viens-pique-nique.mp3": {
     "theme": "Soutien scolaire · Dialogue 047",
     "transcription": "- Léa, tu viens au pique-nique samedi ?\n- Je suis désolé, mais je ne pourrai pas venir.\n- C'est dommage, pourquoi ?\n- Mon fils a une compétition sportive.\n- Malheureusement, je ne suis pas libre ce week-end.",
     "questions": [
@@ -9,9 +9,19 @@
         "points": 1,
         "melanger": false,
         "choix": [
-          { "id": "a", "texte": "À un pique-nique", "correct": true },
-          { "id": "b", "texte": "À un cinéma" },
-          { "id": "c", "texte": "À une fête" }
+          {
+            "id": "a",
+            "texte": "À un pique-nique",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "À un cinéma"
+          },
+          {
+            "id": "c",
+            "texte": "À une fête"
+          }
         ]
       },
       {
@@ -20,9 +30,19 @@
         "points": 1,
         "melanger": false,
         "choix": [
-          { "id": "a", "texte": "Samedi", "correct": true },
-          { "id": "b", "texte": "Dimanche" },
-          { "id": "c", "texte": "Vendredi" }
+          {
+            "id": "a",
+            "texte": "Samedi",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Dimanche"
+          },
+          {
+            "id": "c",
+            "texte": "Vendredi"
+          }
         ]
       },
       {
@@ -31,9 +51,19 @@
         "points": 1,
         "melanger": false,
         "choix": [
-          { "id": "a", "texte": "Son fils a une compétition sportive", "correct": true },
-          { "id": "b", "texte": "Elle est malade" },
-          { "id": "c", "texte": "Elle part en voyage" }
+          {
+            "id": "a",
+            "texte": "Son fils a une compétition sportive",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Elle est malade"
+          },
+          {
+            "id": "c",
+            "texte": "Elle part en voyage"
+          }
         ]
       },
       {
@@ -42,9 +72,19 @@
         "points": 1,
         "melanger": false,
         "choix": [
-          { "id": "a", "texte": "Non", "correct": true },
-          { "id": "b", "texte": "Oui" },
-          { "id": "c", "texte": "Seulement le dimanche" }
+          {
+            "id": "a",
+            "texte": "Non",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Oui"
+          },
+          {
+            "id": "c",
+            "texte": "Seulement le dimanche"
+          }
         ]
       },
       {
@@ -53,9 +93,19 @@
         "points": 1,
         "melanger": false,
         "choix": [
-          { "id": "a", "texte": "Un ami / une amie", "correct": true },
-          { "id": "b", "texte": "Son professeur" },
-          { "id": "c", "texte": "Son médecin" }
+          {
+            "id": "a",
+            "texte": "Un ami / une amie",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Son professeur"
+          },
+          {
+            "id": "c",
+            "texte": "Son médecin"
+          }
         ]
       },
       {
@@ -64,9 +114,19 @@
         "points": 1,
         "melanger": false,
         "choix": [
-          { "id": "a", "texte": "Il demande pourquoi", "correct": true },
-          { "id": "b", "texte": "Il annule le pique-nique" },
-          { "id": "c", "texte": "Il change de jour tout de suite" }
+          {
+            "id": "a",
+            "texte": "Il demande pourquoi",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Il annule le pique-nique"
+          },
+          {
+            "id": "c",
+            "texte": "Il change de jour tout de suite"
+          }
         ]
       }
     ]
