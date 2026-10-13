@@ -7,7 +7,12 @@ import type { ReactNode } from 'react'
 import type { ArithOp, MathItem } from '@/math/types'
 import { fmt } from '@/math/column-arith'
 import type { ShapeKind } from '@/components/math/FractionShape'
-import { SYMMETRY_TEMPLATES } from '@/tcm-cfr/symetrie'
+import {
+  buildSymmetryFigure,
+  SYMMETRY_FIGURE_LABELS,
+  SYMMETRY_TEMPLATES,
+  type SymRotation,
+} from '@/tcm-cfr/symetrie'
 import { fractionPartsFromItem, fractionTermFr } from '@/tcm/fraction-words'
 import {
   applyNamedFigure,
@@ -436,43 +441,59 @@ function renderFields(
 
   if (item.layout === 'symmetry-grid' && item.symmetryFigure) {
     const tpl = item.symmetryFigure
+    const baseId = tpl.id.replace(/-droite$/, '')
+    const rotation = (tpl.rotation ?? 0) as SymRotation
+    const applyFigure = (id: string, side: 'left' | 'right', rot: SymRotation) => {
+      const next = buildSymmetryFigure(id, side, rot)
+      if (!next) return
+      patch(index, {
+        ...item,
+        symmetryFigure: next,
+        answer: next.id,
+      })
+    }
     return (
       <>
         <Field label="Figure">
           <LineSelect
-            value={tpl.id}
+            value={baseId}
             ariaLabel={`Figure symétrie ${index + 1}`}
             options={SYMMETRY_TEMPLATES.map((t) => ({
               value: t.id,
-              label: t.id.replace(/-/g, ' '),
+              label: SYMMETRY_FIGURE_LABELS[t.id] ?? t.id.replace(/-/g, ' '),
             }))}
-            onChange={(id) => {
-              const found = SYMMETRY_TEMPLATES.find((t) => t.id === id)
-              if (!found) return
-              patch(index, {
-                ...item,
-                symmetryFigure: { ...found, side: tpl.side },
-                answer: found.id,
-              })
-            }}
+            onChange={(id) => applyFigure(id, tpl.side, rotation)}
           />
         </Field>
-        <Field label="Côté">
-          <LineSelect
-            value={tpl.side}
-            ariaLabel={`Côté ${index + 1}`}
-            options={[
-              { value: 'left', label: 'gauche' },
-              { value: 'right', label: 'droite' },
-            ]}
-            onChange={(side) =>
-              patch(index, {
-                ...item,
-                symmetryFigure: { ...tpl, side: side as 'left' | 'right' },
-              })
-            }
-          />
-        </Field>
+        <div className="libre-inline-triple is-op">
+          <Field label="Côté">
+            <LineSelect
+              value={tpl.side}
+              ariaLabel={`Côté ${index + 1}`}
+              options={[
+                { value: 'left', label: 'gauche' },
+                { value: 'right', label: 'droite' },
+              ]}
+              onChange={(side) => applyFigure(baseId, side as 'left' | 'right', rotation)}
+            />
+          </Field>
+          <Field label="Rotation">
+            <LineSelect
+              value={String(rotation)}
+              ariaLabel={`Rotation ${index + 1}`}
+              options={[
+                { value: '0', label: '0° (normal)' },
+                { value: '90', label: '+90°' },
+                { value: '180', label: '180°' },
+                { value: '270', label: '270°' },
+              ]}
+              onChange={(raw) => {
+                const rot = Number(raw) as SymRotation
+                applyFigure(baseId, tpl.side, rot)
+              }}
+            />
+          </Field>
+        </div>
       </>
     )
   }

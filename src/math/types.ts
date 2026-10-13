@@ -475,6 +475,8 @@ export type MathItem = {
     rows: number
     axisX: number
     side: 'left' | 'right'
+    /** Rotation horaire de la silhouette (0 = sens normal). */
+    rotation?: 0 | 90 | 180 | 270
     polylines: Array<Array<{ x: number; y: number }>>
   }
   /** Segments à mesurer (TCM CFR). */
