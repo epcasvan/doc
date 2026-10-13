@@ -1120,27 +1120,21 @@ function generateTcmRelatifsOpsBatch(rng: Rng): MathItem[] {
     divAns = -4.8
   }
 
+  const mkRel = (op: ArithOp, a: number, b: number, result: number): MathItem => ({
+    layout: 'inline',
+    op,
+    a,
+    b,
+    result,
+    prompt: `${fmtRelatif(a)} ${op} ${fmtRelatif(b)} =`,
+    answer: fmtRelatifAnswer(result),
+    labels: ['relatif'],
+  })
   return [
-    {
-      layout: 'inline',
-      prompt: `${fmtRelatif(addA)} + ${fmtRelatif(addB)} =`,
-      answer: fmtRelatifAnswer(addA + addB),
-    },
-    {
-      layout: 'inline',
-      prompt: `${fmtRelatif(subA)} − ${fmtRelatif(subB)} =`,
-      answer: fmtRelatifAnswer(subA - subB),
-    },
-    {
-      layout: 'inline',
-      prompt: `${fmtRelatif(mulA)} × ${fmtRelatif(mulB)} =`,
-      answer: fmtRelatifAnswer(mulA * mulB),
-    },
-    {
-      layout: 'inline',
-      prompt: `${fmtRelatif(divA)} ÷ ${fmtRelatif(divB)} =`,
-      answer: fmtRelatifAnswer(divAns),
-    },
+    mkRel('+', addA, addB, addA + addB),
+    mkRel('−', subA, subB, subA - subB),
+    mkRel('×', mulA, mulB, mulA * mulB),
+    mkRel('÷', divA, divB, divAns),
   ]
 }
 
@@ -1218,17 +1212,27 @@ function generateTcmFractionsMixteBatch(rng: Rng): MathItem[] {
   const missNum = rng() < 0.5
   const reducePartial: MathItem = {
     layout: 'inline',
+    a: r1.n,
+    b: r1.d,
+    result: missNum ? r1.sn : r1.sd,
+    missing: missNum ? 'a' : 'b',
     prompt: missNum
       ? `${frac(r1.n, r1.d)} = □/${r1.sd}`
       : `${frac(r1.n, r1.d)} = ${r1.sn}/□`,
     answer: missNum ? String(r1.sn) : String(r1.sd),
+    labels: ['frac-reduce-partial'],
+    left: String(r1.sn),
+    right: String(r1.sd),
   }
 
   const r2 = tcmReducibleFraction(rng)
   const reduceFull: MathItem = {
     layout: 'inline',
+    a: r2.n,
+    b: r2.d,
     prompt: `${frac(r2.n, r2.d)} =`,
     answer: fracAnswer(r2.sn, r2.sd),
+    labels: ['frac-reduce'],
   }
 
   // + : même dénominateur
@@ -1237,8 +1241,15 @@ function generateTcmFractionsMixteBatch(rng: Rng): MathItem[] {
   const nAdd2 = int(rng, 1, dAdd - nAdd1)
   const addItem: MathItem = {
     layout: 'inline',
+    op: '+',
+    a: nAdd1,
+    b: nAdd2,
+    result: dAdd,
     prompt: `${frac(nAdd1, dAdd)} + ${frac(nAdd2, dAdd)} =`,
     answer: fracAnswer(nAdd1 + nAdd2, dAdd),
+    labels: ['frac-op'],
+    left: String(dAdd),
+    right: String(dAdd),
   }
 
   // − : dénominateurs différents (dénominateur commun via produit)
@@ -1255,22 +1266,40 @@ function generateTcmFractionsMixteBatch(rng: Rng): MathItem[] {
   const sd2 = leftBigger ? dSub2 : dSub1
   const subItem: MathItem = {
     layout: 'inline',
+    op: '−',
+    a: sn1,
+    b: sn2,
     prompt: `${frac(sn1, sd1)} − ${frac(sn2, sd2)} =`,
     answer: fracAnswer(sn1 * sd2 - sn2 * sd1, sd1 * sd2),
+    labels: ['frac-op'],
+    left: String(sd1),
+    right: String(sd2),
   }
 
   const [m1, m2] = tcmSignedFracPair(rng)
   const mulItem: MathItem = {
     layout: 'inline',
+    op: '×',
+    a: m1.n,
+    b: m2.n,
     prompt: `${fracSigned(m1.n, m1.d)} × ${fracSigned(m2.n, m2.d)} =`,
     answer: fracAnswer(m1.n * m2.n, m1.d * m2.d),
+    labels: ['frac-op'],
+    left: String(m1.d),
+    right: String(m2.d),
   }
 
   const [v1, v2] = tcmSignedFracPair(rng)
   const divItem: MathItem = {
     layout: 'inline',
+    op: '÷',
+    a: v1.n,
+    b: v2.n,
     prompt: `${fracSigned(v1.n, v1.d)} ÷ ${fracSigned(v2.n, v2.d)} =`,
     answer: fracAnswer(v1.n * v2.d, v1.d * v2.n),
+    labels: ['frac-op'],
+    left: String(v1.d),
+    right: String(v2.d),
   }
 
   return [reducePartial, reduceFull, addItem, subItem, mulItem, divItem]

@@ -229,6 +229,61 @@ export function developPrioriteSteps(prompt: string): string[] {
   return steps
 }
 
+/** Clés numériques présentes dans un modèle (a–j, p–r). */
+export function prioriteKeysInPattern(pattern: string): string[] {
+  const keys = new Set<string>()
+  for (const m of pattern.matchAll(/\{([a-j])\}/g)) keys.add(m[1]!)
+  for (const m of pattern.matchAll(/\{([pqr])\}/g)) keys.add(m[1]!)
+  return [...keys].sort()
+}
+
+function renderPrioritePattern(pattern: string, vals: Record<string, number>): string {
+  let prompt = pattern
+  prompt = prompt.replace(/\{([a-j])\}\^\{([pqr])\}/g, (_, base: string, expKey: string) => {
+    const b = vals[base]!
+    const e = vals[expKey]!
+    return `${b}${SUP[e]}`
+  })
+  prompt = prompt.replace(/\{([a-j])\}\^(\d)/g, (_, base: string, exp: string) => {
+    const e = Number(exp)
+    return `${vals[base]!}${SUP[e] ?? ''}`
+  })
+  prompt = prompt.replace(/\{([a-j])\}/g, (_, key: string) => String(vals[key]!))
+  return prompt
+}
+
+/**
+ * Remplit un modèle avec des valeurs imposées (édition libre).
+ * Retourne null si l’expression est invalide.
+ */
+export function fillPrioriteTemplateWithVars(
+  template: PrioriteTemplate,
+  vals: Record<string, number>,
+): { prompt: string; answer: string; development: string[]; vars: Record<string, number> } | null {
+  const keys = prioriteKeysInPattern(template.pattern)
+  const filled: Record<string, number> = { ...vals }
+  for (const k of keys) {
+    if (filled[k] == null) {
+      if ('pqr'.includes(k)) filled[k] = 2
+      else filled[k] = 2
+    }
+    if ('pqr'.includes(k)) filled[k] = Math.max(1, Math.min(3, Math.round(filled[k]!)))
+    else filled[k] = Math.max(1, Math.min(9, Math.round(filled[k]!)))
+  }
+  const promptBody = renderPrioritePattern(template.pattern, filled)
+  let value: number
+  try {
+    value = evalPrioriteExpression(promptBody)
+  } catch {
+    return null
+  }
+  if (!Number.isFinite(value) || Math.abs(value) > 2000) return null
+  if (template.kind === 'ops' && Math.abs(value - Math.round(value)) > 1e-8) return null
+  const prompt = `${promptBody} =`
+  const answer = formatAnswer(value)
+  return { prompt, answer, development: developPrioriteSteps(promptBody), vars: filled }
+}
+
 /**
  * Remplit un modèle : lettres a–j → 1–9 ; p,q,r → exposants 1–3.
  * `{x}^{p}` devient `x¹`/`x²`/`x³` ; `{a}/{b}` reste pour le rendu empilé.
@@ -236,74 +291,74 @@ export function developPrioriteSteps(prompt: string): string[] {
 export function fillPrioriteTemplate(
   template: PrioriteTemplate,
   rng: Rng,
-): { prompt: string; answer: string; development: string[] } | null {
+): {
+  prompt: string
+  answer: string
+  development: string[]
+  vars: Record<string, number>
+} | null {
   for (let attempt = 0; attempt < 80; attempt++) {
     const vals: Record<string, number> = {}
     for (const ch of 'abcdefghij') vals[ch] = digit(rng)
     for (const ch of 'pqr') vals[ch] = exponent(rng)
-
-    let prompt = template.pattern
-    prompt = prompt.replace(/\{([a-j])\}\^\{([pqr])\}/g, (_, base: string, expKey: string) => {
-      const b = vals[base]!
-      const e = vals[expKey]!
-      return `${b}${SUP[e]}`
-    })
-    prompt = prompt.replace(/\{([a-j])\}\^(\d)/g, (_, base: string, exp: string) => {
-      const e = Number(exp)
-      return `${vals[base]!}${SUP[e] ?? ''}`
-    })
-    prompt = prompt.replace(/\{([a-j])\}/g, (_, key: string) => String(vals[key]!))
-
-    let value: number
-    try {
-      value = evalPrioriteExpression(prompt)
-    } catch {
-      continue
-    }
-    if (!Number.isFinite(value)) continue
-    if (Math.abs(value) > 2000) continue
-    if (template.kind === 'ops' && Math.abs(value - Math.round(value)) > 1e-8) continue
-
-    const answer = formatAnswer(value)
-    const development = developPrioriteSteps(prompt)
-    return { prompt: `${prompt} =`, answer, development }
+    const filled = fillPrioriteTemplateWithVars(template, vals)
+    if (filled) return filled
   }
   return null
 }
 
-function prioriteItem(prompt: string, answer: string, development?: string[]): MathItem {
-  const steps = development?.length ? development : developPrioriteSteps(prompt)
+function prioriteItem(
+  template: PrioriteTemplate,
+  filled: { prompt: string; answer: string; development: string[]; vars: Record<string, number> },
+): MathItem {
+  const steps = filled.development.length ? filled.development : developPrioriteSteps(filled.prompt)
+  const keys = prioriteKeysInPattern(template.pattern)
   return {
     layout: 'algebra',
-    prompt,
-    answer,
+    prompt: filled.prompt,
+    answer: filled.answer,
     development: steps,
     calcAnswer: steps.join('\n'),
+    problemTemplateId: template.id,
+    problemVars: Object.fromEntries(keys.map((k) => [k, filled.vars[k] ?? 2])),
+    problemVarDefs: keys.map((k) => ({
+      key: k,
+      label: 'pqr'.includes(k) ? `Exposant ${k}` : `Valeur ${k}`,
+      editOn: 'both' as const,
+    })),
+    labels: ['priorite', template.kind],
   }
+}
+
+export function prioriteTemplateById(id: string): PrioriteTemplate | undefined {
+  return TCM_PRIORITE_ALL.find((t) => t.id === id)
 }
 
 /** Lot TCM ex. 28 : Q1 modèle ops, Q2 modèle frac+puissance. */
 export function generateTcmPrioriteBatch(rng: Rng): MathItem[] {
-  const opsTpl = pick(rng, TCM_PRIORITE_OPS)
-  const fracTpl = pick(rng, TCM_PRIORITE_FRAC_POW)
+  let opsTpl = pick(rng, TCM_PRIORITE_OPS)
+  let fracTpl = pick(rng, TCM_PRIORITE_FRAC_POW)
 
-  const q1 =
-    fillPrioriteTemplate(opsTpl, rng) ??
-    fillPrioriteTemplate(TCM_PRIORITE_OPS[0]!, rng) ?? {
+  let q1 = fillPrioriteTemplate(opsTpl, rng)
+  if (!q1) {
+    opsTpl = TCM_PRIORITE_OPS[0]!
+    q1 = fillPrioriteTemplate(opsTpl, rng) ?? {
       prompt: '[(2 + 3) × 4] − 1 + 5 =',
       answer: '24',
       development: developPrioriteSteps('[(2 + 3) × 4] − 1 + 5'),
+      vars: { a: 2, b: 3, c: 4, d: 1, e: 5 },
     }
-  const q2 =
-    fillPrioriteTemplate(fracTpl, rng) ??
-    fillPrioriteTemplate(TCM_PRIORITE_FRAC_POW[0]!, rng) ?? {
+  }
+  let q2 = fillPrioriteTemplate(fracTpl, rng)
+  if (!q2) {
+    fracTpl = TCM_PRIORITE_FRAC_POW[0]!
+    q2 = fillPrioriteTemplate(fracTpl, rng) ?? {
       prompt: '[(1/2 + 3) × 2²] − 1 =',
       answer: '13',
       development: developPrioriteSteps('[(1/2 + 3) × 2²] − 1'),
+      vars: { a: 1, b: 2, c: 3, d: 2, e: 1, p: 2 },
     }
+  }
 
-  return [
-    prioriteItem(q1.prompt, q1.answer, q1.development),
-    prioriteItem(q2.prompt, q2.answer, q2.development),
-  ]
+  return [prioriteItem(opsTpl, q1), prioriteItem(fracTpl, q2)]
 }

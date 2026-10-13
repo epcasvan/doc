@@ -12,6 +12,10 @@ import {
   inferConvertFamily,
 } from '@/tcm/convert-units'
 import { fractionPartsFromItem, fractionTermFr } from '@/tcm/fraction-words'
+import {
+  fillPrioriteTemplateWithVars,
+  prioriteTemplateById,
+} from '@/tcm/priorite'
 import { TCM_PROPORTION_KG_TEMPLATES } from '@/tcm/proportion-kg'
 import {
   columnItem,
@@ -865,16 +869,74 @@ export function recalcTcmLibreItem(item: MathItem, exerciseType: string): MathIt
   ) {
     return recalcProportion(next)
   }
+  if (
+    exerciseType === 'tcm-priorite-ops' ||
+    next.labels?.includes('priorite')
+  ) {
+    const tpl = prioriteTemplateById(next.problemTemplateId ?? '')
+    if (tpl) {
+      const filled = fillPrioriteTemplateWithVars(tpl, next.problemVars ?? {})
+      if (filled) {
+        return {
+          ...next,
+          problemTemplateId: tpl.id,
+          problemVars: filled.vars,
+          prompt: filled.prompt,
+          answer: filled.answer,
+          development: filled.development,
+          calcAnswer: filled.development.join('\n'),
+          labels: ['priorite', tpl.kind],
+        }
+      }
+    }
+    return next
+  }
+  if (exerciseType === 'tcm-relatifs-ops' || next.labels?.includes('relatif')) {
+    const a = typeof next.a === 'number' ? next.a : parseFrNumber(String(next.a ?? ''))
+    const b = typeof next.b === 'number' ? next.b : parseFrNumber(String(next.b ?? ''))
+    const op = (next.op ?? '+') as ArithOp
+    if (a == null || b == null) return next
+    const r = computeOp(op, a, b)
+    if (r == null) return next
+    const fmtR = (n: number) => (n >= 0 ? `(+${fmt(n)})` : `(−${fmt(Math.abs(n))})`)
+    const ans =
+      Math.abs(r - Math.round(r)) < 1e-8
+        ? Math.round(r) >= 0
+          ? `(+${Math.round(r)})`
+          : `(−${Math.abs(Math.round(r))})`
+        : r >= 0
+          ? `(+${fmt(r)})`
+          : `(−${fmt(Math.abs(r))})`
+    return {
+      ...next,
+      a,
+      b,
+      op,
+      result: r,
+      labels: ['relatif'],
+      prompt: `${fmtR(a)} ${op} ${fmtR(b)} =`,
+      answer: ans,
+    }
+  }
   // Ex. 11 CFR : n/d → texte français + fraction.
   if (next.layout === 'inline' && exerciseType.includes('ex11')) {
     return recalcFractionWord(next)
   }
-  if (next.layout === 'inline' && /\/\s*\d/.test(next.prompt ?? '')) return recalcFractionDecimal(next)
+  if (
+    next.layout === 'inline' &&
+    /\/\s*\d/.test(next.prompt ?? '') &&
+    exerciseType !== 'tcm-fractions-mixte' &&
+    !next.labels?.some((l) => l.startsWith('frac-'))
+  ) {
+    return recalcFractionDecimal(next)
+  }
   if (
     next.layout === 'inline' &&
     (next.a != null || /^(-?\d|[□])/.test(next.prompt ?? '')) &&
     /[+\-−×÷*/]/.test(next.prompt ?? '') &&
-    !/\/\s*\d/.test(next.prompt ?? '')
+    !/\/\s*\d/.test(next.prompt ?? '') &&
+    !next.labels?.includes('relatif') &&
+    !next.labels?.some((l) => l.startsWith('frac-'))
   ) {
     // Ne pas écraser les items « signe → mot » (ex. 6 CFR : prompt = « + »).
     if (/[=□]/.test(next.prompt ?? '') || next.a != null) return recalcInlineOp(next)
