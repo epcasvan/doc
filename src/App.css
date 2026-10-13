@@ -4233,11 +4233,6 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
     padding:14px 16px;border-bottom:1px solid var(--line)
   }
   .side-tool-panel-head h3{margin:0;font-size:15px;letter-spacing:-.02em}
-  .side-tool-close{
-    width:32px;height:32px;border:1px solid var(--line);border-radius:999px;
-    background:#fff;color:var(--muted);font-size:18px;line-height:1;padding:0
-  }
-  .side-tool-close:hover{color:var(--purple);border-color:color-mix(in srgb,var(--purple) 40%,var(--line))}
   .side-tool-panel-body{
     flex:1 1 auto;min-height:0;overflow-x:hidden;overflow-y:auto;
     padding:14px 16px 22px;display:flex;flex-direction:column;gap:14px;
@@ -4248,6 +4243,37 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
     flex:1 1 auto;min-height:0;overflow:auto;padding:20px
   }
 }
+/* Fermer panneau latéral (pied / libre). */
+.side-tool-close{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:32px;height:32px;min-width:32px;padding:0;
+  border:1px solid var(--line);border-radius:999px;
+  background:#fff;color:var(--muted);font-size:18px;line-height:1;cursor:pointer
+}
+.side-tool-close:hover{color:var(--purple);border-color:color-mix(in srgb,var(--purple) 40%,var(--line))}
+/* Mode libre : × en haut à gauche, cercle couleur du thème. */
+.side-tool-panel.is-libre .side-tool-panel-head.is-libre-head{
+  justify-content:flex-start;gap:12px
+}
+.side-tool-panel.is-libre .side-tool-close.is-theme{
+  order:0;
+  width:36px;height:36px;min-width:36px;
+  border:0;border-radius:999px;
+  background:var(--purple);color:var(--theme-on,#fff);
+  font-size:22px;font-weight:600;line-height:1;
+  box-shadow:0 1px 0 color-mix(in srgb,var(--purple) 35%,#0000)
+}
+.side-tool-panel.is-libre .side-tool-close.is-theme:hover{
+  filter:brightness(1.06);
+  color:var(--theme-on,#fff);border:0
+}
+.side-tool-panel.is-libre .side-tool-close.is-theme:focus-visible{
+  outline:2px solid var(--purple);outline-offset:3px
+}
+.side-tool-panel.is-libre .side-tool-panel-head.is-libre-head>h3{
+  flex:1 1 auto;min-width:0;margin:0
+}
+
 @media (max-width:850px){
   .topbar-tools{gap:6px;overflow:visible}
   .topbar-icon-btn{width:36px;height:36px}
@@ -4256,10 +4282,11 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
   .side-tool-panel{
     border-top:1px solid var(--line);border-left:0;padding:0
   }
-  .side-tool-panel-head{padding:12px 16px}
+  .side-tool-panel-head{padding:12px 16px;display:flex;align-items:center;gap:10px}
+  .side-tool-panel-head h3{margin:0;font-size:15px;letter-spacing:-.02em}
   .side-tool-panel-body{padding:12px 16px 20px;display:flex;flex-direction:column;gap:12px}
 
-  /* Mode libre mobile (TCM / CFR / CSC / TCF) : panneau en premier, scrollable. */
+  /* Mode libre mobile — tous domaines : panneau en premier, scrollable. */
   .workspace.has-libre-panel{
     display:flex;flex-direction:column;align-items:stretch;gap:0
   }
@@ -4283,22 +4310,75 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
   .workspace.has-libre-panel .result-panel{order:1;min-width:0}
   .workspace.has-libre-panel .side-tool-panel.is-footer{order:2}
 
-  /* Champs tactiles + pas de débordement horizontal. */
-  .side-tool-panel.is-libre .libre-line-input,
-  .side-tool-panel.is-libre .libre-corrige-box,
-  .side-tool-panel.is-libre .pill-input,
-  .side-tool-panel.is-libre .tcf-textarea{
-    min-height:40px;font-size:16px /* évite le zoom iOS */
+  /* Champs tactiles (tous éditeurs libre). */
+  .side-tool-panel.is-libre :is(
+    .libre-line-input,.libre-corrige-box,.pill-input,.tcf-textarea,
+    .phrase-libre-field input,.phrase-libre-field textarea,.phrase-libre-field select,
+    .phrase-libre-token select,.phrase-libre-pastille-row select,
+    .calli-fields input,.calli-fields textarea,
+    .game-entry-row input,.game-entry-row select,
+    .soutien-mots-libre input,.soutien-completer-libre input,.soutien-completer-libre select,
+    .coord-questions-libre input,.coord-questions-libre textarea,.coord-questions-libre select,
+    .number-libre-fields input,.generic-libre-editor input,.generic-libre-editor textarea
+  ){
+    min-height:40px;font-size:16px;box-sizing:border-box
   }
-  .side-tool-panel.is-libre .libre-line-input.is-textarea,
-  .side-tool-panel.is-libre .tcf-textarea{min-height:64px}
+  .side-tool-panel.is-libre :is(
+    .libre-line-input.is-textarea,.tcf-textarea,.phrase-libre-field textarea,
+    .calli-fields textarea,.coord-questions-libre textarea,.libre-textarea
+  ){min-height:64px}
   .side-tool-panel.is-libre .libre-item-reroll,
-  .side-tool-panel.is-libre .side-tool-close{
+  .side-tool-panel.is-libre .side-tool-close.is-theme{
     width:40px;height:40px;min-width:40px
   }
   .side-tool-panel.is-libre .libre-item-reroll svg{width:16px;height:16px}
-  .side-tool-panel.is-libre .tcf-btn{
-    min-height:40px;padding:8px 14px;font-size:13px
+  .side-tool-panel.is-libre :is(.tcf-btn,.phrase-libre-add,.phrase-libre-icon-btn,.soutien-suggest-chip){
+    min-height:40px;padding:8px 12px;font-size:13px
+  }
+  .side-tool-panel.is-libre .phrase-libre-icon-btn{
+    width:40px;min-width:40px;padding:0
+  }
+
+  /* Listes / grilles → une colonne sur mobile. */
+  .side-tool-panel.is-libre :is(
+    .libre-item-list:not(.is-tcm),.phrase-libre-list,.calli-fields,.tcf-choix-list,
+    .game-entry-list,.soutien-completer-list,.coord-questions-libre
+  ){
+    display:flex!important;flex-direction:column;gap:10px;max-height:none;overflow:visible
+  }
+  .side-tool-panel.is-libre .libre-item-card:not(.is-tcm-row){
+    display:flex!important;flex-direction:column;align-items:stretch;gap:8px
+  }
+  .side-tool-panel.is-libre .libre-options{
+    display:flex!important;flex-direction:column;gap:8px
+  }
+  .side-tool-panel.is-libre .number-libre-fields{
+    grid-template-columns:1fr;gap:10px
+  }
+  .side-tool-panel.is-libre .game-entry-row,
+  .side-tool-panel.is-libre .soutien-mots-libre .game-entry-row,
+  .side-tool-panel.is-libre .soutien-completer-row,
+  .side-tool-panel.is-libre .soutien-completer-add{
+    grid-template-columns:1fr!important;gap:8px
+  }
+  .side-tool-panel.is-libre .phrase-libre-card{
+    display:flex;flex-direction:column;gap:8px;min-width:0
+  }
+  .side-tool-panel.is-libre .phrase-libre-token,
+  .side-tool-panel.is-libre .phrase-libre-pastille-row{
+    flex-wrap:wrap;gap:8px
+  }
+  .side-tool-panel.is-libre .phrase-libre-actions{
+    flex-wrap:wrap;gap:8px
+  }
+  .side-tool-panel.is-libre .soutien-suggest-list{
+    max-height:none;flex-wrap:wrap
+  }
+  .side-tool-panel.is-libre .vocab-add-row{
+    display:flex;flex-direction:column;align-items:stretch;gap:8px
+  }
+  .side-tool-panel.is-libre .vocab-add-row :is(input,button,select){
+    width:100%;max-width:none
   }
 
   /* Lignes a · op · b : wrapping autorisé sur étroit. */
@@ -4342,9 +4422,11 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
   .side-tool-panel.is-libre .libre-item-card.is-tcm-row{
     grid-template-columns:2.8em minmax(0,1fr);gap:8px;padding:10px
   }
-  .side-tool-panel.is-libre .tcm-libre-editor,
-  .side-tool-panel.is-libre .quad-libre-block,
-  .side-tool-panel.is-libre .tcf-editor{
+  .side-tool-panel.is-libre :is(
+    .tcm-libre-editor,.quad-libre-block,.tcf-editor,.phrase-libre-editor,
+    .generic-libre-editor,.number-libre-fields,.soutien-mots-libre,
+    .soutien-completer-libre,.coord-questions-libre
+  ){
     min-width:0;width:100%
   }
 
@@ -4643,6 +4725,25 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
 .side-tool-panel.is-libre .tcf-textarea{max-width:900px}
 @container libre (min-width:620px){
   .side-tool-panel.is-libre .tcf-editor>.tcf-field:not(:has(textarea)){grid-column:auto}
+}
+/* Panneau libre étroit (tablette / split) : mêmes assouplissements que mobile. */
+@container libre (max-width:420px){
+  .side-tool-panel.is-libre .libre-inline-triple.is-op,
+  .side-tool-panel.is-libre .libre-inline-triple.is-compare,
+  .side-tool-panel.is-libre .libre-inline-triple.is-frac,
+  .side-tool-panel.is-libre .libre-frac-op-row{
+    flex-wrap:wrap
+  }
+  .side-tool-panel.is-libre .libre-item-card.is-tcm-row{
+    grid-template-columns:1fr
+  }
+  .side-tool-panel.is-libre .libre-item-card.is-tcm-row>.libre-item-num-col{
+    flex-direction:row;justify-content:space-between;align-items:center;width:100%
+  }
+  .side-tool-panel.is-libre .tcf-editor{
+    display:flex!important;flex-direction:column
+  }
+  .side-tool-panel.is-libre .tcf-row{flex-direction:column;align-items:stretch}
 }
 /* —— TCM CFR : dictée audio, symétrie, segments, métro —— */
 .tcm-cfr-audio-dictation{display:flex;flex-direction:column;gap:8px;width:100%}

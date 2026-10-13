@@ -85,17 +85,17 @@ export function LibreSidePanel({
 }: LibreSidePanelProps) {
   return (
     <aside className="side-tool-panel is-libre no-print" aria-label="Mode libre">
-      <div className="side-tool-panel-head">
-        <h3>Mode libre</h3>
+      <div className="side-tool-panel-head is-libre-head">
         <button
           type="button"
-          className="side-tool-close"
+          className="side-tool-close is-theme"
           aria-label="Fermer le mode libre"
           title="Fermer le mode libre"
           onClick={onClose}
         >
           ×
         </button>
+        <h3>Mode libre</h3>
       </div>
       <div className="side-tool-panel-body">
         {isPhraseDomain &&
