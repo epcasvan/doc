@@ -576,10 +576,32 @@ function recalcInlineOp(item: MathItem): MathItem {
   }
 }
 
+/** Suite numérique : synchronise answer depuis blankIndexes + valeurs. */
+function recalcSequence(item: MathItem): MathItem {
+  const raw = item.sequence ?? []
+  if (raw.length === 0) return item
+  const blanks = [...(item.blankIndexes ?? [])].filter((i) => i >= 0 && i < raw.length)
+  const values = raw.map((s, i) => {
+    if (s !== '□') return s
+    // Ancien format □ : tenter de récupérer depuis answer.
+    const fromAns = (item.answer ?? '').split(/\s*;\s*/)
+    const blankPos = (item.blankIndexes ?? []).indexOf(i)
+    return blankPos >= 0 ? (fromAns[blankPos] ?? '') : ''
+  })
+  const answer = blanks.map((i) => values[i] ?? '').join(' ; ')
+  return {
+    ...item,
+    sequence: values,
+    blankIndexes: blanks,
+    answer,
+  }
+}
+
 /** Recalcule un item selon son layout / type d’exercice. */
 export function recalcTcmLibreItem(item: MathItem, exerciseType: string): MathItem {
   let next = cleanAnswerFloat(item)
 
+  if (next.layout === 'sequence') return recalcSequence(next)
   if (next.layout === 'order') return recalcOrder(next)
   if (next.layout === 'compare') return recalcCompare(next)
   if (next.layout === 'column' || next.layout === 'column-empty' || next.layout === 'division-column') {

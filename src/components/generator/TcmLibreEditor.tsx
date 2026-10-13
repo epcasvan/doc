@@ -6,7 +6,7 @@
  * avec brouillon local (retour arrière OK ; vide → valeur précédente).
  */
 import { useEffect, useRef, useState, type ReactNode } from 'react'
-import type { ArithOp, MathItem } from '@/math/types'
+import type { ArithOp, MathItem, MissingPos } from '@/math/types'
 import { fmt } from '@/math/column-arith'
 import type { ShapeKind } from '@/components/math/FractionShape'
 import {
@@ -442,6 +442,217 @@ function renderFields(
           }}
         />
       </Field>
+    )
+  }
+
+  if (item.layout === 'sequence') {
+    const terms = (item.sequence ?? []).map((t) => (t === '□' ? '' : t))
+    const blanks = new Set(item.blankIndexes ?? [])
+    const commitSequence = (nextTerms: string[], nextBlanks: number[]) => {
+      const sorted = [...nextBlanks].filter((i) => i >= 0 && i < nextTerms.length).sort((a, b) => a - b)
+      patch(index, {
+        ...item,
+        sequence: nextTerms,
+        blankIndexes: sorted,
+        answer: sorted.map((i) => nextTerms[i] ?? '').join(' ; '),
+      })
+    }
+    return (
+      <div className="libre-sequence-row" role="group" aria-label={`Suite ${index + 1}`}>
+        {terms.map((term, ti) => {
+          const isBlank = blanks.has(ti)
+          return (
+            <div
+              key={`seq-${ti}`}
+              className={`libre-seq-chip${isBlank ? ' is-blank' : ''}`}
+            >
+              <NumInput
+                compact
+                value={term}
+                ariaLabel={isBlank ? `Corrigé terme ${ti + 1}` : `Terme ${ti + 1}`}
+                onCommit={(raw) => {
+                  const next = [...terms]
+                  next[ti] = raw
+                  commitSequence(next, [...blanks])
+                }}
+              />
+              <button
+                type="button"
+                className={`libre-seq-toggle${isBlank ? ' is-on' : ''}`}
+                aria-pressed={isBlank}
+                aria-label={
+                  isBlank
+                    ? `Terme ${ti + 1} à saisir — cliquer pour afficher le nombre`
+                    : `Terme ${ti + 1} — cliquer pour le faire saisir par l’élève`
+                }
+                onClick={() => {
+                  const nextBlanks = isBlank
+                    ? [...blanks].filter((i) => i !== ti)
+                    : [...blanks, ti]
+                  commitSequence(terms, nextBlanks)
+                }}
+              >
+                {isBlank ? 'À saisir' : 'Nombre'}
+              </button>
+            </div>
+          )
+        })}
+      </div>
+    )
+  }
+
+  if (
+    item.layout === 'inline' &&
+    item.op &&
+    item.a != null &&
+    item.b != null &&
+    !exerciseType.includes('ex11') &&
+    !/\/\s*\d/.test(item.prompt ?? '')
+  ) {
+    const op = (item.op ?? '+') as ArithOp
+    const missing = (item.missing ?? 'result') as MissingPos
+    const a = item.a
+    const b = item.b
+    const result =
+      typeof item.result === 'number'
+        ? item.result
+        : op === '+'
+          ? a + b
+          : op === '−'
+            ? a - b
+            : op === '×'
+              ? a * b
+              : b !== 0
+                ? a / b
+                : a
+    const computeForward = (na: number, nb: number, nop: ArithOp): number =>
+      nop === '+'
+        ? na + nb
+        : nop === '−'
+          ? na - nb
+          : nop === '×'
+            ? na * nb
+            : nb !== 0
+              ? na / nb
+              : na
+
+    const solveMissing = (
+      miss: MissingPos,
+      na: number,
+      nb: number,
+      r: number,
+      nop: ArithOp,
+    ): { a: number; b: number; r: number } => {
+      if (miss === 'a') {
+        if (nop === '+') return { a: r - nb, b: nb, r }
+        if (nop === '−') return { a: r + nb, b: nb, r }
+        if (nop === '×') return { a: nb !== 0 ? r / nb : na, b: nb, r }
+        return { a: r * nb, b: nb, r }
+      }
+      if (miss === 'b') {
+        if (nop === '+') return { a: na, b: r - na, r }
+        if (nop === '−') return { a: na, b: na - r, r }
+        if (nop === '×') return { a: na, b: na !== 0 ? r / na : nb, r }
+        return { a: na, b: na !== 0 && r !== 0 ? na / r : nb, r }
+      }
+      return { a: na, b: nb, r: computeForward(na, nb, nop) }
+    }
+
+    const applyOp = (next: {
+      a?: number
+      b?: number
+      op?: ArithOp
+      result?: number
+      missing?: MissingPos
+    }) => {
+      const nop = next.op ?? op
+      const miss = next.missing ?? missing
+      let na = next.a ?? a
+      let nb = next.b ?? b
+      let r = next.result ?? result
+      const toggleOnly =
+        next.missing != null && next.a == null && next.b == null && next.result == null && next.op == null
+      const editedMissingCorrige =
+        (miss === 'a' && next.a != null) || (miss === 'b' && next.b != null)
+
+      if (!toggleOnly) {
+        if (miss === 'result' || editedMissingCorrige) {
+          r = computeForward(na, nb, nop)
+        } else {
+          // Opérande ou résultat visible modifié → résoudre la case « à saisir ».
+          const solved = solveMissing(miss, na, nb, r, nop)
+          na = solved.a
+          nb = solved.b
+          r = solved.r
+        }
+      }
+
+      if (!Number.isFinite(na) || !Number.isFinite(nb) || !Number.isFinite(r)) return
+      const leftA = miss === 'a' ? '□' : fmt(na)
+      const leftB = miss === 'b' ? '□' : fmt(nb)
+      const right = miss === 'result' ? '□' : fmt(r)
+      const answer = miss === 'a' ? fmt(na) : miss === 'b' ? fmt(nb) : fmt(r)
+      patch(index, {
+        ...item,
+        a: na,
+        b: nb,
+        op: nop,
+        result: r,
+        missing: miss,
+        prompt: `${leftA} ${nop} ${leftB} = ${right}`,
+        answer,
+      })
+    }
+    const slot = (
+      key: MissingPos,
+      label: string,
+      value: number,
+      onCommit: (n: number) => void,
+    ) => {
+      const isMissing = missing === key
+      return (
+        <div className={`libre-seq-chip${isMissing ? ' is-blank' : ''}`}>
+          <NumInput
+            compact
+            value={fmt(value)}
+            ariaLabel={isMissing ? `Corrigé ${label}` : label}
+            onCommit={(raw) => {
+              const n = parseFrNumber(raw)
+              if (n == null) return
+              onCommit(n)
+            }}
+          />
+          <button
+            type="button"
+            className={`libre-seq-toggle${isMissing ? ' is-on' : ''}`}
+            aria-pressed={isMissing}
+            aria-label={
+              isMissing
+                ? `${label} à saisir — cliquer pour afficher le nombre`
+                : `Faire saisir ${label} par l’élève`
+            }
+            onClick={() => applyOp({ missing: key })}
+          >
+            {isMissing ? 'À saisir' : label}
+          </button>
+        </div>
+      )
+    }
+    return (
+      <div className="libre-inline-triple is-op is-eq-line" role="group" aria-label={`Calcul ${index + 1}`}>
+        {slot('a', '1ʳᵉ', a, (n) => applyOp({ a: n }))}
+        <LineSelect
+          value={op}
+          ariaLabel={`Opération ${index + 1}`}
+          options={OPS.map((o) => ({ value: o, label: o }))}
+          onChange={(nextOp) => applyOp({ op: nextOp as ArithOp })}
+        />
+        {slot('b', '2ᵉ', b, (n) => applyOp({ b: n }))}
+        <span className="libre-mul-sign" aria-hidden>
+          =
+        </span>
+        {slot('result', 'Résultat', result, (n) => applyOp({ result: n }))}
+      </div>
     )
   }
 

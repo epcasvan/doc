@@ -464,7 +464,8 @@ function generateTcmSuiteBatch(rng: Rng, count: number): MathItem[] {
         : [1, 3]
     return {
       layout: 'sequence' as const,
-      sequence: seq.map((v, k) => (blanks.includes(k) ? '□' : String(v))),
+      // Valeurs réelles conservées ; les trous sont dans blankIndexes (mode libre).
+      sequence: seq.map((v) => String(v)),
       blankIndexes: blanks,
       answer: blanks.map((k) => String(seq[k]!)).join(' ; '),
     }
@@ -629,7 +630,7 @@ function generateTcmGrandesSuitesBatch(rng: Rng): MathItem[] {
     const blanks = [first, first + 1]
     return {
       layout: 'sequence',
-      sequence: seq.map((v, k) => (blanks.includes(k) ? '□' : String(v))),
+      sequence: seq.map((v) => String(v)),
       blankIndexes: blanks,
       sequenceDigits: 5,
       answer: blanks.map((k) => String(seq[k]!)).join(' ; '),
