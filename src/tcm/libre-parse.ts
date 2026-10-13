@@ -11,6 +11,34 @@ export function parseFrNumber(raw: string): number | null {
   return Number.isFinite(n) ? n : null
 }
 
+/**
+ * Nombre relatif saisi : `(+4)`, `(−4)`, `+4`, `−4`, `4`, `-4,5`.
+ */
+export function parseRelatifNumber(raw: string): number | null {
+  let s = String(raw ?? '').trim()
+  if (!s) return null
+  if (s.startsWith('(') && s.endsWith(')')) s = s.slice(1, -1).trim()
+  s = s.replace(/^−/, '-').replace(/^\+/, '')
+  return parseFrNumber(s)
+}
+
+/** Extrait a, op, b depuis un prompt « (+12) − (−3) = ». */
+export function parseRelatifPrompt(
+  prompt: string,
+): { a: number; op: '+' | '−' | '×' | '÷'; b: number } | null {
+  const m = String(prompt ?? '').match(
+    /^\s*(\([+-−]?\d+(?:[.,]\d+)?\)|[+-−]?\d+(?:[.,]\d+)?)\s*([+\-−×÷])\s*(\([+-−]?\d+(?:[.,]\d+)?\)|[+-−]?\d+(?:[.,]\d+)?)\s*=?\s*$/u,
+  )
+  if (!m) return null
+  const a = parseRelatifNumber(m[1]!)
+  const b = parseRelatifNumber(m[3]!)
+  if (a == null || b == null) return null
+  const rawOp = m[2]!
+  const op = (rawOp === '-' ? '−' : rawOp) as '+' | '−' | '×' | '÷'
+  if (!['+', '−', '×', '÷'].includes(op)) return null
+  return { a, op, b }
+}
+
 export function parseFrInt(raw: string): number | null {
   const n = parseFrNumber(raw)
   if (n == null) return null

@@ -40,7 +40,13 @@ import {
   withFixedDivisionWorkRows,
 } from '@/tcm/items'
 import { isCfrProblemExercise, rebuildProblemItems } from '@/tcm-cfr/problems'
-import { parseFrInt, parseFrNumber, parseOrderSequence } from './libre-parse'
+import {
+  parseFrInt,
+  parseFrNumber,
+  parseOrderSequence,
+  parseRelatifNumber,
+  parseRelatifPrompt,
+} from './libre-parse'
 
 const NAMED_FIGS: Record<
   string,
@@ -1085,9 +1091,16 @@ export function recalcTcmLibreItem(item: MathItem, exerciseType: string): MathIt
     return next
   }
   if (exerciseType === 'tcm-relatifs-ops' || next.labels?.includes('relatif')) {
-    const a = typeof next.a === 'number' ? next.a : parseFrNumber(String(next.a ?? ''))
-    const b = typeof next.b === 'number' ? next.b : parseFrNumber(String(next.b ?? ''))
-    const op = (next.op ?? '+') as ArithOp
+    const fromPrompt = parseRelatifPrompt(next.prompt ?? '')
+    const a =
+      typeof next.a === 'number'
+        ? next.a
+        : parseRelatifNumber(String(next.a ?? '')) ?? fromPrompt?.a ?? null
+    const b =
+      typeof next.b === 'number'
+        ? next.b
+        : parseRelatifNumber(String(next.b ?? '')) ?? fromPrompt?.b ?? null
+    const op = (next.op ?? fromPrompt?.op ?? '+') as ArithOp
     if (a == null || b == null) return next
     const r = computeOp(op, a, b)
     if (r == null) return next

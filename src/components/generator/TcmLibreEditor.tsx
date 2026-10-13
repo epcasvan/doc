@@ -38,7 +38,7 @@ import {
   unitsForFamily,
   type ConvertFamily,
 } from '@/tcm/convert-units'
-import { parseFrNumber } from '@/tcm/libre-parse'
+import { parseFrNumber, parseRelatifNumber, parseRelatifPrompt } from '@/tcm/libre-parse'
 import {
   equationKindForTemplate,
   equationTemplateById,
@@ -2938,14 +2938,15 @@ function renderFields(
     )
   }
 
-  // TCM ex. 29 — relatifs : valeurs et opération.
+  // TCM ex. 29 — relatifs : champs valeurs + opération.
   if (
     exerciseType === 'tcm-relatifs-ops' ||
     item.labels?.includes('relatif')
   ) {
-    const op = (item.op ?? '+') as ArithOp
-    const a = item.a ?? 10
-    const b = item.b ?? -10
+    const parsed = parseRelatifPrompt(item.prompt ?? '')
+    const op = (item.op ?? parsed?.op ?? '+') as ArithOp
+    const a = typeof item.a === 'number' ? item.a : (parsed?.a ?? 10)
+    const b = typeof item.b === 'number' ? item.b : (parsed?.b ?? -10)
     const fmtR = (n: number) => (n >= 0 ? `(+${fmt(n)})` : `(−${fmt(Math.abs(n))})`)
     const applyRel = (na: number, nop: ArithOp, nb: number) => {
       const r =
@@ -2978,37 +2979,47 @@ function renderFields(
       })
     }
     return (
-      <div className="libre-inline-triple is-op is-eq-line">
-        <NumInput
-          compact
-          value={fmt(a)}
-          ariaLabel={`1ʳᵉ ${index + 1}`}
-          onCommit={(raw) => {
-            const n = parseFrNumber(raw)
-            if (n == null) return
-            applyRel(n, op, b)
-          }}
-        />
-        <LineSelect
-          value={op}
-          ariaLabel={`Opération ${index + 1}`}
-          options={OPS.map((o) => ({ value: o, label: o }))}
-          onChange={(nextOp) => applyRel(a, nextOp as ArithOp, b)}
-        />
-        <NumInput
-          compact
-          value={fmt(b)}
-          ariaLabel={`2ᵉ ${index + 1}`}
-          onCommit={(raw) => {
-            const n = parseFrNumber(raw)
-            if (n == null) return
-            applyRel(a, op, n)
-          }}
-        />
-        <span className="libre-mul-sign" aria-hidden>
-          =
-        </span>
-        <CorrigeBox value={item.answer ?? ''} ariaLabel={`Corrigé ${index + 1}`} />
+      <div className="libre-frac-stack">
+        <div className="libre-inline-triple is-op is-eq-line">
+          <Field label="1ʳᵉ valeur">
+            <NumInput
+              compact
+              value={fmt(a)}
+              ariaLabel={`1ʳᵉ valeur ${index + 1}`}
+              onCommit={(raw) => {
+                const n = parseRelatifNumber(raw) ?? parseFrNumber(raw)
+                if (n == null) return
+                applyRel(n, op, b)
+              }}
+            />
+          </Field>
+          <Field label="Opération">
+            <LineSelect
+              value={OPS.includes(op) ? op : '+'}
+              ariaLabel={`Opération ${index + 1}`}
+              options={OPS.map((o) => ({ value: o, label: o }))}
+              onChange={(nextOp) => applyRel(a, nextOp as ArithOp, b)}
+            />
+          </Field>
+          <Field label="2ᵉ valeur">
+            <NumInput
+              compact
+              value={fmt(b)}
+              ariaLabel={`2ᵉ valeur ${index + 1}`}
+              onCommit={(raw) => {
+                const n = parseRelatifNumber(raw) ?? parseFrNumber(raw)
+                if (n == null) return
+                applyRel(a, op, n)
+              }}
+            />
+          </Field>
+        </div>
+        <Field label="Énoncé">
+          <CorrigeBox value={`${fmtR(a)} ${op} ${fmtR(b)} =`} ariaLabel={`Énoncé ${index + 1}`} />
+        </Field>
+        <Field label="Corrigé">
+          <CorrigeBox value={item.answer ?? ''} ariaLabel={`Corrigé ${index + 1}`} />
+        </Field>
       </div>
     )
   }
