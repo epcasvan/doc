@@ -1,5 +1,6 @@
 /**
- * Types d’exercice Alphabétisation — leçons lettre / son (ordre des pages de la fiche).
+ * Types d’exercice Alphabétisation — leçons lettre / son.
+ * Ordre = apparition chronologique sur la fiche (pages 1 → 9).
  * Les kinds `ecouter`, `syllabe-son`, `associer-*` réutilisent le générateur Soutien FR.
  */
 import type { SoutienKindId } from '@/francais/soutien/kinds'
@@ -8,9 +9,9 @@ export const ALPHA_LETTER_KINDS = [
   {
     id: 'mots',
     label: '1 · Mots et images',
-    description: '2 ou 3 colonnes (4 ou 6 mots) avec image ; audio téléchargeable.',
+    description: '2–4 colonnes (4 / 6 / 12 mots) ; audio téléchargeable.',
     instruction: 'Observez les images et lisez les mots où l’on entend le son.',
-    preferredColumns: 2 as const,
+    preferredColumns: 3 as const,
   },
   {
     id: 'lettres-maj',
@@ -72,45 +73,45 @@ export const ALPHA_LETTER_KINDS = [
     preferredColumns: 1 as const,
   },
   {
-    id: 'associer-syllabe',
-    label: '10 · Classer les syllabes',
-    description: '5 QR + 5 syllabes cadrées ; 2 séries (défaut) ; page avec le type 13.',
-    instruction: 'Écoutez et classez les syllabes dans l’ordre.',
-    preferredColumns: 1 as const,
-  },
-  {
     id: 'syllabes-cv',
-    label: '11 · Syllabes CV / VC',
-    description: 'CV / VC sans son complexe (an, am…) ; 4–6 colonnes ; cadre par syllabe.',
+    label: '10 · Syllabes CV / VC',
+    description: 'Mélange CV et VC sans son complexe ; 5 lignes · 4–6 colonnes.',
     instruction: 'Lisez les syllabes ci-dessous.',
     preferredColumns: 5 as const,
   },
   {
     id: 'syllabes-long',
-    label: '12 · Syllabes 3–4 lettres',
-    description: 'Syllabes 3–4 lettres ; 4–6 colonnes ; cadre par syllabe.',
+    label: '11 · Syllabes 3–4 lettres',
+    description: 'Syllabes 3–4 lettres ; 5 lignes · 4–6 colonnes ; cadre par syllabe.',
     instruction: 'Lisez les syllabes ci-dessous.',
     preferredColumns: 5 as const,
   },
   {
     id: 'syllabes-prononcer',
-    label: '13 · Prononcer les syllabes',
+    label: '12 · Prononcer les syllabes',
     description: '7 mots par défaut ; 1–2 colonnes ; cadre type 1 autour des syllabes.',
     instruction: 'Prononcez les syllabes des mots.',
+    preferredColumns: 1 as const,
+  },
+  {
+    id: 'associer-syllabe',
+    label: '13 · Classer les syllabes',
+    description: '5 QR + 5 syllabes cadrées ; 2 séries (défaut) ; page avec le type 12.',
+    instruction: 'Écoutez et classez les syllabes dans l’ordre.',
     preferredColumns: 1 as const,
   },
   {
     id: 'associer-audio',
     label: '14 · Classer les mots',
     description:
-      '5 QR numérotés + 5 mots cadrés avec trait ; 1 à 3 séries (défaut 2) ; page 9 avec le type 15.',
+      '5 QR numérotés + 5 mots cadrés avec trait ; 1 à 3 séries (défaut 2).',
     instruction: 'Écoutez et classez les mots dans l’ordre.',
     preferredColumns: 1 as const,
   },
   {
     id: 'associer-image',
     label: '15 · Classer les images',
-    description: 'Comme le type 14 (5 images type 1) ; page 9 avec le type 14.',
+    description: 'Comme le type 14 (5 images type 1) ; page avec le type 14.',
     instruction: 'Écoutez et classez les images dans l’ordre.',
     preferredColumns: 1 as const,
   },

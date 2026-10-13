@@ -127,7 +127,7 @@ const isSoutienMotsCount =
   soutienKind === 'associer-image' ||
   soutienKind === 'associer-syllabe' ||
   soutienKind === 'syllabes-prononcer'
-/** Type 6 / 8 / 8-QR : colonnes (Alpha type 6 = 2–3 ; sinon 1–3). */
+/** Type 6 / 8 / 9 : colonnes (Alpha type 6 = 2–3 ; sinon 1–3). */
 const isSoutienCols123 =
   soutienKind === 'completer' ||
   soutienKind === 'ecouter' ||
@@ -135,13 +135,13 @@ const isSoutienCols123 =
   soutienKind === 'syllabe-son-qr'
 /** Type 7 : grille images 3–5 colonnes. */
 const isSoutienCols345 = soutienKind === 'ecouter-image'
-/** Type 1 Alpha : 2 ou 3 colonnes (4 ou 6 mots). */
+/** Type 1 Alpha : 2 / 3 / 4 colonnes (4 / 6 / 12 mots). */
 const isAlphaMotsCols = isAlphabetisation && soutienKind === 'mots'
-/** Types 11–12 Alpha : lecture de syllabes 4 / 5 / 6 colonnes. */
+/** Types 10–11 Alpha : lecture de syllabes 4 / 5 / 6 colonnes. */
 const isAlphaSyllabeTableCols =
   isAlphabetisation &&
   (soutienKind === 'syllabes-cv' || soutienKind === 'syllabes-long')
-/** Type 13 Alpha : prononcer 1 ou 2 colonnes. */
+/** Type 12 Alpha : prononcer 1 ou 2 colonnes. */
 const isAlphaPrononcerCols = isAlphabetisation && soutienKind === 'syllabes-prononcer'
 /** Types sans option colonnes (lettre / souligner). */
 const hideColumnsOption =

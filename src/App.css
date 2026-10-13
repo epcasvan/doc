@@ -590,7 +590,7 @@ html,body,#root{
   vertical-align:middle;
 }
 .syllable-table-block--cell-frames .syllable-table td{
-  padding:calc(16px + 5px) 4px; /* +5 px entre lignes */
+  padding:calc(16px + 5px - 10px) 4px; /* −10 px entre lignes (types 10–11 Alpha) */
 }
 .syllable-table-cell{
   display:inline-block;
@@ -2315,7 +2315,7 @@ html,body,#root{
   min-width:0;min-height:0;width:100%;height:100%;
   border:1px solid #d8dde6; /* cadre type 1 */
   border-radius:8px;
-  padding:4px;
+  padding:4px 4px 2px;
   box-sizing:border-box;
   background:#fff;
   justify-self:stretch;
@@ -2353,8 +2353,8 @@ html,body,#root{
   max-height:26mm;
 }
 .listen-check-block--images.is-answers .listen-check-image-foot{
-  grid-template-rows:1.5em 1.35em;
-  gap:3px;padding:4px 4px 8px;
+  grid-template-rows:1.5em 1.2em;
+  gap:2px;padding:2px 4px 2px;
 }
 .listen-check-image-foot{
   display:grid;
@@ -2666,20 +2666,20 @@ html,body,#root{
 }
 .audio-match-key{font-size:11px;font-weight:700;color:var(--purple);margin-left:4px}
 
-/* Soutien FR types 15 / 16 — classer : un cadre (type 1) autour de la série (5 QR + 5 cases) */
+/* Alphabétisation types 13–15 / Soutien classer : cadre type 1 autour de la série */
 .audio-order-block{
-  display:flex;flex-direction:column;gap:12px;width:100%;min-width:0;
+  display:flex;flex-direction:column;gap:6px;width:100%;min-width:0;
   border:1px solid #d8dde6;
   border-radius:8px;
-  padding:8px 8px 10px;
+  padding:6px 8px 6px;
   box-sizing:border-box;
   background:#fff;
-  margin-bottom:14px
+  margin-bottom:7px
 }
 .audio-order-qr-row{
   display:grid;
   grid-template-columns:repeat(5,minmax(0,1fr));
-  gap:6px 4px;
+  gap:3px 4px;
   width:100%;
   align-items:start
 }
@@ -2687,7 +2687,7 @@ html,body,#root{
   display:flex;flex-direction:column;align-items:center;gap:3px;min-width:0
 }
 .audio-order-qr-num{
-  font-size:12px;font-weight:700;color:var(--purple);line-height:1
+  font-size:14px;font-weight:700;color:var(--purple);line-height:1
 }
 .audio-order-qr{
   width:14mm;height:14mm;display:flex;align-items:center;justify-content:center
@@ -2699,7 +2699,7 @@ html,body,#root{
 .audio-order-answer-row{
   display:grid;
   grid-template-columns:repeat(5,minmax(0,1fr));
-  gap:8px 6px;
+  gap:4px 6px;
   width:100%;
   align-items:stretch
 }
@@ -2710,7 +2710,7 @@ html,body,#root{
   box-sizing:border-box;
   background:transparent;
   min-width:0;min-height:0;
-  align-items:center;gap:4px
+  align-items:center;gap:2px
 }
 .audio-order-slot-word{
   font-size:11px;font-weight:400;color:var(--ink);text-align:center;
@@ -2725,11 +2725,11 @@ html,body,#root{
   max-width:100%;max-height:16mm;object-fit:contain;display:block
 }
 .audio-order-slot-line{
-  display:block;width:100%;
+  display:block;width:25px;max-width:100%;
   min-height:1.25em;line-height:1.25em;
   border-bottom:2px solid var(--purple);
   text-align:center;
-  color:var(--purple);font-weight:700;font-size:12px;
+  color:var(--purple);font-weight:700;font-size:14px;
   box-sizing:border-box
 }
 .audio-order-slot-line.filled{border-bottom-style:solid}
@@ -4418,25 +4418,41 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
 .worksheet-sheet.is-alphabetisation .letter-table-cell,
 .worksheet-sheet.is-alphabetisation .syllable-table--script .syllable-table-cell,
 .worksheet-sheet.is-alphabetisation .listen-check-line,
+.worksheet-sheet.is-alphabetisation .listen-check-caption,
 .worksheet-sheet.is-alphabetisation .mark-letter-cell,
 .worksheet-sheet.is-alphabetisation .syllable-pronounce-cell,
 .worksheet-sheet.is-alphabetisation .audio-order-slot-word{
   font-size:16pt
 }
-/* Types 8 / 9 : taille corrigé = Soutien FR (pas le +2 pt Alphabétisation). */
+/* Numérotation alignée sur les autres exercices (écoute, etc.). */
+.worksheet-sheet.is-alphabetisation .listen-check-num,
+.worksheet-sheet.is-alphabetisation .audio-order-qr-num,
+.worksheet-sheet.is-alphabetisation .audio-order-slot-line,
+.worksheet-sheet.is-alphabetisation .syllable-pronounce-num{
+  font-size:14px
+}
+/* Corrigé type 7 : place pour la légende 16 pt, peu de vide sous le mot. */
+.worksheet-sheet.is-alphabetisation .listen-check-block--images.is-answers .listen-check-image-foot{
+  grid-template-rows:1.5em 1.45em;
+  gap:1px;padding:2px 2px 1px;
+}
+.worksheet-sheet.is-alphabetisation .listen-check-caption{
+  height:auto;min-height:1.2em;line-height:1.15
+}
+/* Types 8 / 9 : taille corrigé inchangée (pas le +2 pt Alphabétisation). */
 .worksheet-sheet.is-alphabetisation .syllable-mini-table td{
   font-size:10px
 }
 .worksheet-sheet.is-alphabetisation .vocab-table{
   --vocab-card-w:58mm;
-  --vocab-card-h:calc(64mm - 20px);
+  --vocab-card-h:calc(64mm - 25px);
   --vocab-card-gap:2.5mm
 }
 .worksheet-sheet.is-alphabetisation .vocab-card-image{
-  flex:1 1 auto;min-height:calc(32mm - 10px)
+  flex:1 1 auto;min-height:calc(32mm - 15px)
 }
 .worksheet-sheet.is-alphabetisation .vocab-card-image img{
-  max-height:calc(44mm - 20px)
+  max-height:calc(44mm - 25px)
 }
 .worksheet-sheet.is-alphabetisation .vocab-card-qr{
   width:8mm;height:8mm
@@ -4444,7 +4460,7 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
 .worksheet-sheet.is-alphabetisation .vocab-card-word{
   text-align:center
 }
-/* Types 11–12 Alpha : +2 pt, cadre par syllabe, +5 px entre lignes */
+/* Types 10–11 Alpha : +2 pt, cadre par syllabe */
 .worksheet-sheet.is-alphabetisation .syllable-table-block--cell-frames .syllable-table--script .syllable-table-cell{
   font-size:18pt
 }
@@ -4460,13 +4476,18 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
 .worksheet-sheet.is-alphabetisation .syllable-pronounce-block.is-2col .syllable-pronounce-row{
   width:100%
 }
+/* Types 3–5 : lettres en graisse normale (pas en gras). */
+.worksheet-sheet.is-alphabetisation .letter-table-cell,
+.worksheet-sheet.is-alphabetisation .mark-letter-cell{
+  font-weight:400
+}
 .mark-letter-block{display:flex;flex-direction:column;gap:6px;width:100%}
 .mark-letter-grid{
   display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4mm 6mm;width:100%
 }
 .mark-letter-cell{
   border:1px solid #d8dde6;padding:3mm 4mm;text-align:center;
-  font-weight:700;line-height:1.25;background:#fff;
+  font-weight:400;line-height:1.25;background:#fff;
   letter-spacing:10px
 }
 .syllable-pronounce-block{display:flex;flex-direction:column;gap:5px;width:100%}

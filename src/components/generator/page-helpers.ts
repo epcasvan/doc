@@ -167,7 +167,7 @@ export function applyType(type: ExerciseType, prev?: ExerciseBlock): Partial<Exe
                 : isLectureDense
                   ? { count: 4 }
                   : alphaKind === 'mots'
-                    ? { count: 4, columns: 2 }
+                    ? { count: 6, columns: 3 }
                     : alphaKind === 'lettres-maj' || alphaKind === 'lettres-min'
                       ? { count: 5, columns: 1 }
                       : alphaKind === 'souligner-maj' || alphaKind === 'souligner-min'
@@ -184,7 +184,7 @@ export function applyType(type: ExerciseType, prev?: ExerciseBlock): Partial<Exe
                                 ? { count: 2, columns: 1 }
                                 : alphaKind === 'syllabes-cv' ||
                                     alphaKind === 'syllabes-long'
-                                  ? { count: 4, columns: 5 }
+                                  ? { count: 5, columns: 5 }
                                   : alphaKind === 'syllabes-prononcer'
                                     ? { count: 7, columns: 1 }
                                     : soutienKind === 'lettres'

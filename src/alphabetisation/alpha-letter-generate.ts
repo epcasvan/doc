@@ -54,14 +54,61 @@ function soulignerWords(
   }
 }
 
-/** Syllabes sans son complexe (an, am, en, on…). */
+/** Syllabes CV / VC sans son complexe (an, am, en, on…). */
 function isSimpleCvVcSyllable(s: string): boolean {
   const lo = s.toLocaleLowerCase('fr-FR')
   if (lo.length !== 2) return false
   if (/^(an|am|en|em|in|im|on|om|un|um|ain|ein|oin)$/i.test(lo)) return false
-  // Voyelle + consonne ou consonne + voyelle, hors nasales graphiques.
-  return /^[bcdfghjklmnpqrstvwxz][aeiouyàâäéèêëïîôöùûü]$/i.test(lo) ||
+  return (
+    /^[bcdfghjklmnpqrstvwxz][aeiouyàâäéèêëïîôöùûü]$/i.test(lo) ||
     /^[aeiouyàâäéèêëïîôöùûü][bcdfghjklmpqrstvwxz]$/i.test(lo)
+  )
+}
+
+const SIMPLE_CONS = ['b', 'c', 'd', 'f', 'g', 'l', 'm', 'n', 'p', 'r', 's', 't', 'v', 'z'] as const
+const SIMPLE_VOWELS = ['a', 'e', 'i', 'o', 'u', 'y'] as const
+
+/** Mélange déterministe CV + VC (moitié / moitié) sans nasales. */
+function buildSimpleCvVcList(rng: Rng, bank: SoutienVowelBank, total: number): string[] {
+  const half = Math.ceil(total / 2)
+  const seen = new Set<string>()
+  const cv: string[] = []
+  const vc: string[] = []
+  const tryAdd = (bucket: string[], value: string): boolean => {
+    if (seen.has(value) || !isSimpleCvVcSyllable(value)) return false
+    seen.add(value)
+    bucket.push(value)
+    return true
+  }
+  const isVowelLesson = /^[aeiouy]$/.test(bank.id)
+  const vowels = isVowelLesson ? [bank.letterLower] : [...SIMPLE_VOWELS]
+  const cons =
+    !isVowelLesson && bank.letterLower.length === 1 && (SIMPLE_CONS as readonly string[]).includes(bank.letterLower)
+      ? [bank.letterLower]
+      : [...SIMPLE_CONS]
+  const safeVcCons = cons.filter((c) => !/[nm]/i.test(c))
+  const vcCons = safeVcCons.length > 0 ? safeVcCons : [...SIMPLE_CONS.filter((c) => !/[nm]/i.test(c))]
+  let guard = 0
+  while (cv.length < half && guard < half * 60) {
+    guard += 1
+    tryAdd(cv, `${pick(rng, cons)}${pick(rng, vowels)}`)
+  }
+  guard = 0
+  while (vc.length < total - half && guard < half * 60) {
+    guard += 1
+    tryAdd(vc, `${pick(rng, vowels)}${pick(rng, vcCons)}`)
+  }
+  while (cv.length < half) {
+    const s = `${pick(rng, cons)}${pick(rng, vowels)}`
+    if (!seen.has(s)) seen.add(s)
+    cv.push(s)
+  }
+  while (vc.length < total - half) {
+    const s = `${pick(rng, vowels)}${pick(rng, vcCons)}`
+    if (!seen.has(s)) seen.add(s)
+    vc.push(s)
+  }
+  return shuffle(rng, [...cv.slice(0, half), ...vc.slice(0, total - half)]).slice(0, total)
 }
 
 function syllabesCvVc(
@@ -73,12 +120,7 @@ function syllabesCvVc(
   const cols = Math.max(4, Math.min(6, Math.round(columns) || 5))
   const rows = syllableBlockRows(lineCount)
   const total = cols * rows
-  const all = buildSyllableReadingList(rng, bank, total * 4)
-  const cvvc = all.filter(isSimpleCvVcSyllable)
-  const list = shuffle(rng, cvvc.length >= total ? cvvc : all.filter((s) => s.length === 2)).slice(
-    0,
-    total,
-  )
+  const list = buildSimpleCvVcList(rng, bank, total)
   return {
     instruction: 'Lisez les syllabes ci-dessous.',
     preferredColumns: 1,
@@ -323,15 +365,16 @@ export function generateAlphaLetterKind(
     case 'associer-image': {
       const soutienKind = kind
       const alphaCols =
-        kind === 'mots' ? Math.max(2, Math.min(3, Math.round(options?.columns ?? 2) || 2)) : null
+        kind === 'mots' ? Math.max(2, Math.min(4, Math.round(options?.columns ?? 3) || 3)) : null
       const merged: SoutienGenerateOptions = {
         ...options,
         columns:
           kind === 'ecouter'
             ? Math.max(2, Math.min(3, Math.round(options?.columns ?? 3) || 3))
-            : options?.columns,
-        alphaVocabCount:
-          kind === 'mots' ? (alphaCols ?? 2) * 2 : options?.alphaVocabCount,
+            : kind === 'mots'
+              ? (alphaCols ?? 3)
+              : options?.columns,
+        alphaVocabCount: kind === 'mots' ? Math.max(1, Math.min(16, n)) : options?.alphaVocabCount,
       }
       return genKind(soutienKind, bank, n, rng, difficulty, merged)
     }

@@ -122,7 +122,8 @@ export function WorksheetSheet({
     isTcmDomain(page.domain) ||
     isTcmCfrDomain(page.domain) ||
     page.domain === TCF_DOMAIN ||
-    page.domain === 'soutien-fr'
+    page.domain === 'soutien-fr' ||
+    page.domain === 'alphabetisation'
   const showHeader = pageNumber === 1 && !isJeuxSheet
   const parity = sheetIndex % 2 === 1 ? 'sheet-odd' : 'sheet-even'
   const isDraftPadPage = page.items.some(

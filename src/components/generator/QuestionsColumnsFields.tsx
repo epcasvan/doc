@@ -349,14 +349,17 @@ export function QuestionsColumnsFields(props: QuestionsColumnsFieldsProps) {
               {isAlphaMotsCols ? (
                 <div className="mode-toggle-block">
                   <b>Colonnes</b>
-                  <div className="mode-toggle is-2" role="group" aria-label="Nombre de colonnes">
-                    {[2, 3].map((value) => (
+                  <div className="mode-toggle is-3" role="group" aria-label="Nombre de colonnes">
+                    {[2, 3, 4].map((value) => (
                       <button
                         key={value}
                         type="button"
-                        className={(activeBlock.columns ?? 2) === value ? 'active' : ''}
+                        className={(activeBlock.columns ?? 3) === value ? 'active' : ''}
                         onClick={() =>
-                          updatePage({ columns: value, count: value * 2 })
+                          updatePage({
+                            columns: value,
+                            count: value === 4 ? 12 : value * 2,
+                          })
                         }
                       >
                         {value}
@@ -364,7 +367,7 @@ export function QuestionsColumnsFields(props: QuestionsColumnsFieldsProps) {
                     ))}
                   </div>
                   <small className="muted">
-                    2 colonnes = 4 mots · 3 colonnes = 6 mots.
+                    2 colonnes = 4 mots · 3 colonnes = 6 mots · 4 colonnes = 12 mots.
                   </small>
                 </div>
               ) : null}
@@ -409,7 +412,11 @@ export function QuestionsColumnsFields(props: QuestionsColumnsFieldsProps) {
               !hideColumnsOption ? (
                 <div className="mode-toggle-block">
                   <b>Colonnes</b>
-                  <div className="mode-toggle is-3" role="group" aria-label="Nombre de colonnes">
+                  <div
+                    className={`mode-toggle${soutienKind === 'ecouter' ? ' is-2' : ' is-3'}`}
+                    role="group"
+                    aria-label="Nombre de colonnes"
+                  >
                     {(soutienKind === 'ecouter' ? [2, 3] : [1, 2, 3]).map((value) => (
                       <button
                         key={value}
