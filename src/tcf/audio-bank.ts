@@ -1,10 +1,9 @@
-import { tcfScene } from './sources'
 import type { TcfExercise } from './types'
 
 export type TcfAudioEntry = {
   audio: string
   exercise: TcfExercise
-  /** Scène / libellé court. */
+  /** Scène / libellé court (numéroté s’il y a des doublons). */
   label: string
   /** Thème ou type pour la recherche. */
   meta: string
@@ -31,7 +30,18 @@ const AUDIO_WORD_ACCENTS: Record<string, string> = {
   vetements: 'vêtements',
   sante: 'santé',
   actualite: 'actualité',
+  journee: 'journée',
 }
+
+/** Types de stem soutien à préfixer par le dossier thème. */
+const GENERIC_STEM_TYPES = new Set([
+  'annonce',
+  'conversation',
+  'message',
+  'radio',
+  'objet',
+  'instruction',
+])
 
 /**
  * Nom lisible d’un chemin audio (« …/a-l-aeroport-1.mp3 » → « À l'aéroport »).
@@ -42,7 +52,12 @@ export function tcfAudioDisplayName(audioPath: string, bankEntries?: readonly Tc
   if (!trimmed) return ''
   const fromBank = bankEntries?.find((e) => e.audio === trimmed)
   if (fromBank?.label) return fromBank.label
+  return tcfAudioBaseFromPath(trimmed)
+}
 
+/** Base sans numéro (pour regrouper les doublons). */
+export function tcfAudioBaseFromPath(audioPath: string): string {
+  const trimmed = audioPath.trim()
   const parts = trimmed.split('/').filter(Boolean)
   const file = parts[parts.length - 1] ?? trimmed
   const folder = parts.length >= 2 ? parts[parts.length - 2]! : ''
@@ -50,11 +65,14 @@ export function tcfAudioDisplayName(audioPath: string, bankEntries?: readonly Tc
   const afterLevel = stem.includes('__') ? stem.split('__').slice(1).join('__') : stem
   const bare = afterLevel.replace(/-\d+(\.\d+)?$/, '').replace(/__/g, ' ').replace(/-/g, ' ').trim()
 
-  // Stem purement numérique (dialogue soutien) → nom du dossier thème
   if (!bare || /^\d+$/.test(bare)) {
     return titleAudioWords(folder || bare || stem)
   }
-  return titleAudioWords(bare)
+  const titled = titleAudioWords(bare)
+  if (GENERIC_STEM_TYPES.has(bare.toLocaleLowerCase('fr-FR')) && folder) {
+    return `${titleAudioWords(folder)} · ${titled}`
+  }
+  return titled
 }
 
 function titleAudioWords(raw: string): string {
@@ -75,6 +93,19 @@ function titleAudioWords(raw: string): string {
   return titled
 }
 
+/** Retire un éventuel suffixe numérique (« À l'aéroport - 2 » → « À l'aéroport »). */
+function stripTrailingNumber(label: string): string {
+  return label.replace(/\s*[-–]?\s*\d+$/u, '').trim() || label
+}
+
+/** Numéro implicite dans le nom de fichier (`a-l-aeroport-2`, `facile-a1__160`). */
+function audioStemNumber(audio: string): number | null {
+  const stem = audio.split('/').pop()?.replace(/\.mp3$/i, '') ?? ''
+  const after = stem.includes('__') ? stem.split('__').slice(1).join('__') : stem
+  const m = after.match(/-(\d+)(?:\.\d+)?$/u) || after.match(/^(\d+)$/u)
+  return m ? Number(m[1]) : null
+}
+
 /** Chemins audio d’un exercice CO (un ou plusieurs). */
 export function tcfExerciseAudios(ex: TcfExercise): string[] {
   const s = ex.support as { audio?: string; audios?: string[] }
@@ -83,31 +114,66 @@ export function tcfExerciseAudios(ex: TcfExercise): string[] {
   return []
 }
 
-/** Libellé banque : scène si renseignée, sinon nom dérivé du fichier audio. */
-export function tcfAudioLabel(exercise: TcfExercise, audio: string): string {
+/** Libellé de base : scène / thème scénario, sinon nom dérivé du fichier. */
+export function tcfAudioBaseLabel(exercise: TcfExercise, audio: string): string {
   const scene = exercise.scene?.trim()
-  if (scene) return scene
-  return tcfAudioDisplayName(audio)
+  if (scene) return stripTrailingNumber(scene)
+  return tcfAudioBaseFromPath(audio)
 }
 
 /** Index des audios de la banque (dédupliqués par chemin, premier exercice gardé). */
 export function tcfAudioEntries(exercises: readonly TcfExercise[]): TcfAudioEntry[] {
   const seen = new Set<string>()
-  const out: TcfAudioEntry[] = []
+  const raw: Array<{ audio: string; exercise: TcfExercise; base: string; stem: string }> = []
   for (const exercise of exercises) {
     for (const audio of tcfExerciseAudios(exercise)) {
       if (seen.has(audio)) continue
       seen.add(audio)
       const stem = audio.split('/').pop()?.replace(/\.mp3$/i, '') ?? audio
-      out.push({
+      raw.push({
         audio,
         exercise,
-        label: tcfAudioLabel(exercise, audio),
-        meta: [exercise.theme, exercise.type_exercice, stem, exercise.id].filter(Boolean).join(' · '),
+        base: tcfAudioBaseLabel(exercise, audio),
+        stem,
       })
     }
   }
-  return out.sort((a, b) => a.label.localeCompare(b.label, 'fr'))
+
+  const counts = new Map<string, number>()
+  for (const row of raw) counts.set(row.base, (counts.get(row.base) ?? 0) + 1)
+
+  // Ordre stable pour la numérotation : numéro de fichier puis chemin
+  const byBase = new Map<string, typeof raw>()
+  for (const row of raw) {
+    const list = byBase.get(row.base) ?? []
+    list.push(row)
+    byBase.set(row.base, list)
+  }
+  for (const list of byBase.values()) {
+    list.sort((a, b) => {
+      const na = audioStemNumber(a.audio)
+      const nb = audioStemNumber(b.audio)
+      if (na != null && nb != null && na !== nb) return na - nb
+      if (na != null && nb == null) return -1
+      if (na == null && nb != null) return 1
+      return a.audio.localeCompare(b.audio, 'fr')
+    })
+  }
+
+  const out: TcfAudioEntry[] = []
+  for (const row of raw) {
+    const list = byBase.get(row.base)!
+    const total = counts.get(row.base) ?? 1
+    const index = list.indexOf(row) + 1
+    const label = total > 1 ? `${row.base} ${index}` : row.base
+    out.push({
+      audio: row.audio,
+      exercise: row.exercise,
+      label,
+      meta: [row.exercise.theme, row.exercise.type_exercice, row.stem, row.exercise.id].filter(Boolean).join(' · '),
+    })
+  }
+  return out.sort((a, b) => a.label.localeCompare(b.label, 'fr', { numeric: true }))
 }
 
 /**
