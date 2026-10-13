@@ -3,8 +3,18 @@ import { int, type Rng } from './rng'
 import { roundToPlaces, type NumberRange } from './difficulty'
 import type { ArithOp, DivisionStep, MathItem, MissingPos } from './types'
 
+/**
+ * Affichage scolaire FR : virgule, sans bruit binaire
+ * (ex. 7,2700000000000005 → 7,27).
+ */
 export function fmt(n: number): string {
-  return String(n).replace('.', ',')
+  if (!Number.isFinite(n)) return '0'
+  const r = Math.round(n * 1_000_000) / 1_000_000
+  if (Math.abs(r - Math.round(r)) < 1e-9) return String(Math.round(r))
+  return r
+    .toFixed(6)
+    .replace(/\.?0+$/, '')
+    .replace('.', ',')
 }
 
 /** Entier de la plage libre, borné à [lo, hi] (la plage prime sur le niveau). */

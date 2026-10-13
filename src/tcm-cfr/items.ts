@@ -4,6 +4,7 @@
 import { genFracSingleItems } from '@/math/fraction-shapes'
 import { createRng, int, pick, shuffle, type Rng } from '@/math/rng'
 import type { ArithOp, Figure, MathItem } from '@/math/types'
+import { fmt } from '@/math/column-arith'
 import {
   columnItem,
   divisionColumnItem,
@@ -15,10 +16,6 @@ import { mulAudioParts, numberAudioParts } from './audio-nombres'
 import { generateMetroQuestions, pickMetroMap } from './metro'
 import { pickSymmetryTemplate } from './symetrie'
 import { isTcmCfrType } from './types'
-
-function fmt(n: number): string {
-  return String(n).replace('.', ',')
-}
 
 function gcd(a: number, b: number): number {
   let x = Math.abs(a)
@@ -34,7 +31,12 @@ function gcd(a: number, b: number): number {
 function oneDecimal(rng: Rng, loTenths: number, hiTenths: number): number {
   let t = int(rng, loTenths, hiTenths)
   while (t % 10 === 0) t = int(rng, loTenths, hiTenths)
-  return t / 10
+  return Math.round(t) / 10
+}
+
+/** Construit un décimal scolaire à partir de centièmes entiers (évite le bruit binaire). */
+function fromCents(unit: number, cents: number): number {
+  return (unit * 100 + Math.max(0, Math.round(cents))) / 100
 }
 
 /** Ex. 1 — 5 nombres audio 11–99. */
@@ -110,12 +112,12 @@ function genEx03(rng: Rng): MathItem[] {
   const unit = int(rng, 2, 9)
   const kinds: Array<() => number> = [
     () => unit,
-    () => unit + int(rng, 1, 9) / 10,
-    () => unit + int(rng, 1, 9) / 100,
-    () => unit + int(rng, 1, 9) / 10 + int(rng, 1, 9) / 100,
-    () => unit + int(rng, 1, 9) / 10,
-    () => unit + int(rng, 10, 99) / 100,
-    () => unit + int(rng, 1, 9) / 100,
+    () => fromCents(unit, int(rng, 1, 9) * 10),
+    () => fromCents(unit, int(rng, 1, 9)),
+    () => fromCents(unit, int(rng, 1, 9) * 10 + int(rng, 1, 9)),
+    () => fromCents(unit, int(rng, 1, 9) * 10),
+    () => fromCents(unit, int(rng, 10, 99)),
+    () => fromCents(unit, int(rng, 1, 9)),
   ]
   const q2vals: number[] = []
   const seen = new Set<string>()
@@ -135,7 +137,7 @@ function genEx03(rng: Rng): MathItem[] {
     if (q2vals.length >= 7) break
   }
   while (q2vals.length < 7) {
-    const v = unit + int(rng, 0, 99) / 100
+    const v = fromCents(unit, int(rng, 0, 99))
     const key = fmt(v)
     if (!seen.has(key)) {
       seen.add(key)

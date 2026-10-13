@@ -1,3 +1,4 @@
+import { fmt } from './column-arith'
 import { int, pick, shuffle, type Rng } from './rng'
 import { generateTcmEvaluerBatch } from '@/tcm/evaluer'
 import type { AlgebraGiven, Difficulty, MathItem } from './types'
@@ -21,10 +22,6 @@ function signed(n: number): string {
 
 function compactSigned(n: number): string {
   return n < 0 ? ` - ${Math.abs(n)}` : ` + ${n}`
-}
-
-function fmt(n: number): string {
-  return String(n).replace('.', ',')
 }
 
 function nonzero(rng: Rng, min: number, max: number): number {

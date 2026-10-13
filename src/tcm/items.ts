@@ -1,6 +1,7 @@
 /**
  * Générateurs d’items TCM (types `tcm-*`) — dispatch depuis `math/generate.ts`.
  */
+import { fmt } from '@/math/column-arith'
 import {
   decimalAddPair,
   pickWithPlaces,
@@ -20,10 +21,6 @@ import { generateTcmEvaluerBatch } from './evaluer'
 import { generateTcmPrioriteBatch } from './priorite'
 import { generateTcmProportionKgBatch } from './proportion-kg'
 import { generateTcmReduireBatch } from './reduire'
-
-function fmt(n: number): string {
-  return String(n).replace('.', ',')
-}
 
 function gcd(a: number, b: number): number {
   let x = Math.abs(a)

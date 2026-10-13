@@ -5,6 +5,7 @@
  *      ≥ 6 termes dont ≥ 2 hors de la fraction, reliés par + − ×.
  * 50 modèles par question.
  */
+import { fmt } from '@/math/column-arith'
 import { int, pick, shuffle, type Rng } from '@/math/rng'
 import type { AlgebraGiven, MathItem } from '@/math/types'
 
@@ -181,7 +182,7 @@ export function evalEvaluerExpression(expr: string, vars: Record<string, number>
 }
 
 function fmtSigned(n: number): string {
-  return String(n).replace('.', ',').replace('-', '−')
+  return fmt(n).replace('-', '−')
 }
 
 /** Remplace les lettres (et puissances) par leurs valeurs numériques. */

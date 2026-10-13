@@ -4,6 +4,7 @@
  * Q1 : x d’un seul côté (gauche ou droite), sans fraction — 50 modèles.
  * Q2 : x des deux côtés, fractions possibles — 50 modèles.
  */
+import { fmt } from '@/math/column-arith'
 import { int, pick, shuffle, type Rng } from '@/math/rng'
 import type { MathItem } from '@/math/types'
 
@@ -19,10 +20,6 @@ type EqTemplate = {
     operations: string[]
     x: number
   }
-}
-
-function fmt(n: number): string {
-  return String(n).replace('.', ',')
 }
 
 function equationItem(opts: {

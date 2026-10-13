@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react'
+import { fmt } from '@/math/column-arith'
 import type { Figure, FigureDims } from '@/math/types'
 
 const ALL: Figure[] = [
@@ -20,10 +21,6 @@ const ALL: Figure[] = [
 
 function u(dims?: FigureDims) {
   return dims?.unit ?? 'cm'
-}
-
-function fmt(n: number) {
-  return String(n).replace('.', ',')
 }
 
 function L({
