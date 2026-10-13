@@ -788,8 +788,11 @@ export function AudioOrderBlock({ item, mode }: { item: MathItem; mode: PreviewM
             ) : (
               <div className="audio-order-slot-word">{slot.word ?? ''}</div>
             )}
-            <div className={`audio-order-slot-line${show ? ' filled' : ''}`}>
-              {show ? String(slot.correctNum) : '\u00a0'}
+            <div className="audio-order-slot-answer">
+              <span className="audio-order-slot-label">n° :</span>
+              <span className={`audio-order-slot-line${show ? ' filled' : ''}`}>
+                {show ? String(slot.correctNum) : '\u00a0'}
+              </span>
             </div>
           </div>
         ))}
