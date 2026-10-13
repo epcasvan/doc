@@ -9,7 +9,7 @@ export const ALPHA_LETTER_KINDS = [
   {
     id: 'mots',
     label: '1 · Mots et images',
-    description: '2–4 colonnes (4 / 9 / 12 mots) ; 3 col. = 3 lignes ; audio téléchargeable.',
+    description: '3 ou 4 colonnes (9 / 12 mots) ; 3 col. = 3 lignes ; audio téléchargeable.',
     instruction: 'Observez les images et lisez les mots où l’on entend le son.',
     preferredColumns: 3 as const,
   },

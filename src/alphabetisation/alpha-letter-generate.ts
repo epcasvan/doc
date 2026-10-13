@@ -371,7 +371,7 @@ export function generateAlphaLetterKind(
     case 'associer-image': {
       const soutienKind = kind
       const alphaCols =
-        kind === 'mots' ? Math.max(2, Math.min(4, Math.round(options?.columns ?? 3) || 3)) : null
+        kind === 'mots' ? Math.max(3, Math.min(4, Math.round(options?.columns ?? 3) || 3)) : null
       const merged: SoutienGenerateOptions = {
         ...options,
         columns:

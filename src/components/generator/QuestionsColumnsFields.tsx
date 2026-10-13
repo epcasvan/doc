@@ -349,8 +349,8 @@ export function QuestionsColumnsFields(props: QuestionsColumnsFieldsProps) {
               {isAlphaMotsCols ? (
                 <div className="mode-toggle-block">
                   <b>Colonnes</b>
-                  <div className="mode-toggle is-3" role="group" aria-label="Nombre de colonnes">
-                    {[2, 3, 4].map((value) => (
+                  <div className="mode-toggle is-2" role="group" aria-label="Nombre de colonnes">
+                    {[3, 4].map((value) => (
                       <button
                         key={value}
                         type="button"
@@ -358,7 +358,7 @@ export function QuestionsColumnsFields(props: QuestionsColumnsFieldsProps) {
                         onClick={() =>
                           updatePage({
                             columns: value,
-                            count: value === 2 ? 4 : value === 3 ? 9 : 12,
+                            count: value === 3 ? 9 : 12,
                           })
                         }
                       >
@@ -367,7 +367,7 @@ export function QuestionsColumnsFields(props: QuestionsColumnsFieldsProps) {
                     ))}
                   </div>
                   <small className="muted">
-                    2 colonnes = 4 mots · 3 colonnes = 9 mots · 4 colonnes = 12 mots.
+                    3 colonnes = 9 mots · 4 colonnes = 12 mots.
                   </small>
                 </div>
               ) : null}

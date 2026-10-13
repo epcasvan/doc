@@ -4442,19 +4442,19 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
   gap:0;padding:1px 2px 0
 }
 .worksheet-sheet.is-alphabetisation .listen-check-block--images.is-exercise .listen-check-image{
-  min-height:18mm
+  min-height:calc(18mm * 1.15)
 }
 .worksheet-sheet.is-alphabetisation .listen-check-block--images.is-exercise .listen-check-image img{
-  max-height:20mm
+  max-height:calc(20mm * 1.15)
 }
 .worksheet-sheet.is-alphabetisation .listen-check-block--images.is-exercise .listen-check-image-foot{
   grid-template-rows:1.15em 0;padding:1px 2px 1px
 }
 .worksheet-sheet.is-alphabetisation .listen-check-block--images.is-answers .listen-check-image{
-  min-height:20mm
+  min-height:calc(20mm * 1.15)
 }
 .worksheet-sheet.is-alphabetisation .listen-check-block--images.is-answers .listen-check-image img{
-  max-height:22mm
+  max-height:calc(22mm * 1.15)
 }
 .worksheet-sheet.is-alphabetisation .listen-check-block--images.is-answers .listen-check-image-foot{
   grid-template-rows:1.15em 1.25em;
