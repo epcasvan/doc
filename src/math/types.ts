@@ -475,7 +475,20 @@ export type MathItem = {
     mode: 'color' | 'read'
   }
   /** Conversion d’unités : valeur et unités de part et d’autre du signe =. */
-  convert?: { value: string; from: string; to: string }
+  convert?: {
+    value: string
+    from: string
+    to: string
+    /** Famille (poids, litre, longueur…) — TCM ex. 35 / sélecteur libre. */
+    family?:
+      | 'poids'
+      | 'litre'
+      | 'densite'
+      | 'longueur'
+      | 'aire'
+      | 'volume'
+      | 'temps'
+  }
   /** Enregistrement à écouter (compréhension orale). */
   audioSrc?: string
   /** Playlist audio (dictée de nombres / multiplications) — téléchargeable. */

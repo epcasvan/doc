@@ -6,7 +6,13 @@ import { fmt, sanitizeFrNumberNoise } from '@/math/column-arith'
 import type { ArithOp, Figure, MathItem } from '@/math/types'
 import { mulAudioParts, numberAudioParts } from '@/tcm-cfr/audio-nombres'
 import { clampFracShapeCfr } from '@/math/fraction-shapes'
+import {
+  convertValue,
+  formatConvertNumber,
+  inferConvertFamily,
+} from '@/tcm/convert-units'
 import { fractionPartsFromItem, fractionTermFr } from '@/tcm/fraction-words'
+import { TCM_PROPORTION_KG_TEMPLATES } from '@/tcm/proportion-kg'
 import {
   columnItem,
   divisionColumnItem,
@@ -276,21 +282,26 @@ function recalcCompare(item: MathItem): MathItem {
 }
 
 function recalcConvert(item: MathItem): MathItem {
-  const units = ['m', 'dm', 'cm', 'mm'] as const
-  type U = (typeof units)[number]
-  const factors: Record<U, number> = { m: 1000, dm: 100, cm: 10, mm: 1 }
-  const from = (item.convert?.from ?? 'm') as U
-  const to = (item.convert?.to ?? 'cm') as U
-  if (!(from in factors) || !(to in factors)) return item
+  const from = item.convert?.from ?? 'm'
+  const to = item.convert?.to ?? 'cm'
+  const family =
+    item.convert?.family ??
+    inferConvertFamily(from, to)
   const value = parseFrNumber(item.convert?.value ?? '')
   if (value == null) return item
-  const valueMm = value * factors[from]
-  const result = valueMm / factors[to]
+  const result = convertValue(value, from, to, family)
+  if (result == null) return item
+  const clean = Math.round(result * 1_000_000) / 1_000_000
   return {
     ...item,
-    convert: { value: fmt(value), from, to },
-    prompt: `${fmt(value)} ${from} = □ ${to}`,
-    answer: fmt(result),
+    convert: {
+      value: formatConvertNumber(value),
+      from,
+      to,
+      family,
+    },
+    prompt: `${formatConvertNumber(value)} ${from} =`,
+    answer: `${formatConvertNumber(clean)} ${to}`,
   }
 }
 
@@ -724,6 +735,111 @@ function recalcSequence(item: MathItem): MathItem {
   }
 }
 
+const POW_SUP = ['', '¹', '²', '³', '⁴'] as const
+
+function recalcPuissances(item: MathItem): MathItem {
+  const kind =
+    item.labels?.find((l) => l === 'power' || l === 'root' || l === 'sci-mul' || l === 'sci-div') ??
+    (item.prompt?.startsWith('√')
+      ? 'root'
+      : /×\s*10/.test(item.prompt ?? '')
+        ? 'sci-mul'
+        : /÷\s*10/.test(item.prompt ?? '')
+          ? 'sci-div'
+          : 'power')
+  const a = typeof item.a === 'number' ? item.a : parseFrNumber(String(item.a ?? ''))
+  const b = typeof item.b === 'number' ? item.b : parseFrNumber(String(item.b ?? ''))
+  if (kind === 'power') {
+    if (a == null || b == null) return item
+    const exp = Math.max(2, Math.min(4, Math.round(b)))
+    const base =
+      exp === 4 ? Math.max(1, Math.min(5, Math.round(a))) : Math.max(1, Math.min(9, Math.round(a)))
+    return {
+      ...item,
+      a: base,
+      b: exp,
+      labels: ['power'],
+      prompt: `${base}${POW_SUP[exp] ?? ''} =`,
+      answer: String(base ** exp),
+    }
+  }
+  if (kind === 'root') {
+    if (a == null) return item
+    const root = Math.max(1, Math.round(Math.sqrt(Math.abs(a))))
+    const perfect = root * root
+    return {
+      ...item,
+      a: perfect,
+      b: root,
+      labels: ['root'],
+      prompt: `√${perfect} =`,
+      answer: String(root),
+    }
+  }
+  if (kind === 'sci-mul') {
+    if (a == null || b == null) return item
+    const exp = Math.max(1, Math.min(4, Math.round(b)))
+    const tenths = Math.round(a * 10)
+    return {
+      ...item,
+      a: tenths / 10,
+      b: exp,
+      labels: ['sci-mul'],
+      prompt: `${fmt(tenths / 10)} × 10${POW_SUP[exp] ?? ''} =`,
+      answer: fmt(tenths * 10 ** (exp - 1)),
+    }
+  }
+  if (a == null || b == null) return item
+  const exp = Math.max(1, Math.min(4, Math.round(b)))
+  const w = Math.max(1, Math.round(a))
+  return {
+    ...item,
+    a: w,
+    b: exp,
+    labels: ['sci-div'],
+    prompt: `${w} ÷ 10${POW_SUP[exp] ?? ''} =`,
+    answer: fmt(Number((w / 10 ** exp).toFixed(exp))),
+  }
+}
+
+function recalcProportion(item: MathItem): MathItem {
+  const isPct = item.labels?.includes('percent') || (item.prompt ?? '').includes('% de')
+  if (isPct) {
+    const pct = typeof item.a === 'number' ? item.a : parseFrNumber(String(item.a ?? ''))
+    const n = typeof item.b === 'number' ? item.b : parseFrNumber(String(item.b ?? ''))
+    if (pct == null || n == null) return item
+    const value = (pct * n) / 100
+    return {
+      ...item,
+      a: pct,
+      b: n,
+      result: value,
+      labels: ['percent'],
+      prompt: `${pct} % de ${n} est égal à`,
+      answer: fmt(value),
+      development: [`${pct}/100 × ${n}`, fmt(value)],
+    }
+  }
+  const kgA = typeof item.a === 'number' ? item.a : parseFrNumber(String(item.a ?? ''))
+  const priceA = typeof item.b === 'number' ? item.b : parseFrNumber(String(item.b ?? ''))
+  const kgB = typeof item.result === 'number' ? item.result : parseFrNumber(String(item.result ?? ''))
+  if (kgA == null || priceA == null || kgB == null || kgA === 0) return item
+  const priceB = Math.round(((priceA * kgB) / kgA) * 1000) / 1000
+  const tpl =
+    TCM_PROPORTION_KG_TEMPLATES.find((t) => t.id === item.left) ?? TCM_PROPORTION_KG_TEMPLATES[0]!
+  return {
+    ...item,
+    a: kgA,
+    b: priceA,
+    result: kgB,
+    left: tpl.id,
+    labels: ['kg-francs'],
+    prompt: `${kgA} kg ${tpl.ofProduct} → ${priceA} francs\n${kgB} kg ${tpl.ofProduct} →`,
+    answer: `${priceB} francs`,
+    development: [`(${kgB} × ${priceA}) ÷ ${kgA}`, String(priceB)],
+  }
+}
+
 /** Recalcule un item selon son layout / type d’exercice. */
 export function recalcTcmLibreItem(item: MathItem, exerciseType: string): MathItem {
   let next = cleanAnswerFloat(item)
@@ -736,6 +852,19 @@ export function recalcTcmLibreItem(item: MathItem, exerciseType: string): MathIt
   }
   if (next.convert) return recalcConvert(next)
   if (next.layout === 'place-value') return recalcPlaceValue(next)
+  if (
+    exerciseType === 'tcm-puissances-mixte' ||
+    next.labels?.some((l) => l === 'power' || l === 'root' || l === 'sci-mul' || l === 'sci-div')
+  ) {
+    return recalcPuissances(next)
+  }
+  if (
+    exerciseType === 'tcm-proportion-kg' ||
+    next.labels?.includes('percent') ||
+    next.labels?.includes('kg-francs')
+  ) {
+    return recalcProportion(next)
+  }
   // Ex. 11 CFR : n/d → texte français + fraction.
   if (next.layout === 'inline' && exerciseType.includes('ex11')) {
     return recalcFractionWord(next)

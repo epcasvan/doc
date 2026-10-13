@@ -31,7 +31,14 @@ import { createRng } from '@/math/rng'
 import { fractionPartsFromItem, fractionTermFr } from '@/tcm/fraction-words'
 import { mulAudioParts, numberAudioParts } from '@/tcm-cfr/audio-nombres'
 import { clampFracShapeCfr } from '@/math/fraction-shapes'
+import {
+  CONVERT_FAMILY_OPTIONS,
+  inferConvertFamily,
+  unitsForFamily,
+  type ConvertFamily,
+} from '@/tcm/convert-units'
 import { parseFrNumber } from '@/tcm/libre-parse'
+import { TCM_PROPORTION_KG_TEMPLATES } from '@/tcm/proportion-kg'
 import {
   problemOptionsForExercise,
   rebuildProblemItems,
@@ -77,7 +84,6 @@ function mulFactorsFromItem(item: MathItem): { a: number; b: number } {
 }
 
 const OPS: ArithOp[] = ['+', '−', '×', '÷']
-const LENGTH_UNITS = ['m', 'dm', 'cm', 'mm'] as const
 const FRAC_KINDS: { value: ShapeKind; label: string }[] = [
   { value: 'rect', label: 'rectangle' },
   { value: 'square', label: 'carré' },
@@ -362,6 +368,13 @@ export function TcmLibreEditor({
   )
 }
 
+const POW_SUP = ['', '¹', '²', '³', '⁴'] as const
+const POW_EXP_OPTS = [1, 2, 3, 4].map((n) => ({ value: String(n), label: String(n) }))
+const PCT_OPTS = [10, 20, 25, 40, 60, 75, 80].map((n) => ({
+  value: String(n),
+  label: `${n} %`,
+}))
+
 function renderFields(
   item: MathItem,
   index: number,
@@ -370,6 +383,357 @@ function renderFields(
   exerciseType: string,
   onChangeItems: (items: MathItem[]) => void,
 ) {
+  // TCM ex. 27 — base / exposant / racine / ×÷ 10^p.
+  if (
+    exerciseType === 'tcm-puissances-mixte' ||
+    item.labels?.some((l) => l === 'power' || l === 'root' || l === 'sci-mul' || l === 'sci-div')
+  ) {
+    const kind =
+      item.labels?.find((l) => l === 'power' || l === 'root' || l === 'sci-mul' || l === 'sci-div') ??
+      (item.prompt?.startsWith('√')
+        ? 'root'
+        : /×\s*10/.test(item.prompt ?? '')
+          ? 'sci-mul'
+          : /÷\s*10/.test(item.prompt ?? '')
+            ? 'sci-div'
+            : 'power')
+    const a = item.a ?? 2
+    const b = item.b ?? 2
+    if (kind === 'power') {
+      return (
+        <div className="libre-frac-stack">
+          <Field label="Base">
+            <NumInput
+              value={fmt(a)}
+              ariaLabel={`Base ${index + 1}`}
+              onCommit={(raw) => {
+                const base = parseFrNumber(raw)
+                if (base == null) return
+                const exp = Math.max(2, Math.min(4, Math.round(b)))
+                const safeBase = exp === 4 ? Math.max(1, Math.min(5, Math.round(base))) : Math.max(1, Math.min(9, Math.round(base)))
+                patch(index, {
+                  ...item,
+                  a: safeBase,
+                  b: exp,
+                  labels: ['power'],
+                  prompt: `${safeBase}${POW_SUP[exp] ?? ''} =`,
+                  answer: String(safeBase ** exp),
+                })
+              }}
+            />
+          </Field>
+          <Field label="Exposant">
+            <LineSelect
+              value={String(Math.max(2, Math.min(4, Math.round(b))))}
+              ariaLabel={`Exposant ${index + 1}`}
+              options={POW_EXP_OPTS.filter((o) => o.value !== '1')}
+              onChange={(raw) => {
+                const exp = Math.max(2, Math.min(4, Number(raw)))
+                const safeBase =
+                  exp === 4 ? Math.max(1, Math.min(5, Math.round(a))) : Math.max(1, Math.min(9, Math.round(a)))
+                patch(index, {
+                  ...item,
+                  a: safeBase,
+                  b: exp,
+                  labels: ['power'],
+                  prompt: `${safeBase}${POW_SUP[exp] ?? ''} =`,
+                  answer: String(safeBase ** exp),
+                })
+              }}
+            />
+          </Field>
+          <Field label="Corrigé">
+            <CorrigeBox value={item.answer ?? ''} ariaLabel={`Corrigé ${index + 1}`} />
+          </Field>
+        </div>
+      )
+    }
+    if (kind === 'root') {
+      const under = item.a ?? 4
+      return (
+        <div className="libre-frac-stack">
+          <Field label="Sous le radical (√n)">
+            <NumInput
+              value={fmt(under)}
+              ariaLabel={`Sous le radical ${index + 1}`}
+              onCommit={(raw) => {
+                const n = parseFrNumber(raw)
+                if (n == null || n <= 0) return
+                const root = Math.round(Math.sqrt(n))
+                const perfect = root * root
+                patch(index, {
+                  ...item,
+                  a: perfect,
+                  b: root,
+                  labels: ['root'],
+                  prompt: `√${perfect} =`,
+                  answer: String(root),
+                })
+              }}
+            />
+          </Field>
+          <Field label="Corrigé (racine)">
+            <CorrigeBox value={item.answer ?? ''} ariaLabel={`Corrigé ${index + 1}`} />
+          </Field>
+        </div>
+      )
+    }
+    if (kind === 'sci-mul') {
+      return (
+        <div className="libre-frac-stack">
+          <Field label="Nombre décimal">
+            <NumInput
+              value={fmt(a)}
+              ariaLabel={`Décimal ${index + 1}`}
+              onCommit={(raw) => {
+                const dec = parseFrNumber(raw)
+                if (dec == null) return
+                const exp = Math.max(1, Math.min(4, Math.round(b)))
+                const tenths = Math.round(dec * 10)
+                patch(index, {
+                  ...item,
+                  a: tenths / 10,
+                  b: exp,
+                  labels: ['sci-mul'],
+                  prompt: `${fmt(tenths / 10)} × 10${POW_SUP[exp] ?? ''} =`,
+                  answer: fmt(tenths * 10 ** (exp - 1)),
+                })
+              }}
+            />
+          </Field>
+          <Field label="Exposant de 10">
+            <LineSelect
+              value={String(Math.max(1, Math.min(4, Math.round(b))))}
+              ariaLabel={`Exposant 10 ${index + 1}`}
+              options={POW_EXP_OPTS}
+              onChange={(raw) => {
+                const exp = Math.max(1, Math.min(4, Number(raw)))
+                const tenths = Math.round(a * 10)
+                patch(index, {
+                  ...item,
+                  a: tenths / 10,
+                  b: exp,
+                  labels: ['sci-mul'],
+                  prompt: `${fmt(tenths / 10)} × 10${POW_SUP[exp] ?? ''} =`,
+                  answer: fmt(tenths * 10 ** (exp - 1)),
+                })
+              }}
+            />
+          </Field>
+          <Field label="Corrigé">
+            <CorrigeBox value={item.answer ?? ''} ariaLabel={`Corrigé ${index + 1}`} />
+          </Field>
+        </div>
+      )
+    }
+    // sci-div
+    return (
+      <div className="libre-frac-stack">
+        <Field label="Nombre entier">
+          <NumInput
+            value={fmt(a)}
+            ariaLabel={`Entier ${index + 1}`}
+            onCommit={(raw) => {
+              const whole = parseFrNumber(raw)
+              if (whole == null) return
+              const exp = Math.max(1, Math.min(4, Math.round(b)))
+              const w = Math.max(100, Math.min(9999, Math.round(whole)))
+              patch(index, {
+                ...item,
+                a: w,
+                b: exp,
+                labels: ['sci-div'],
+                prompt: `${w} ÷ 10${POW_SUP[exp] ?? ''} =`,
+                answer: fmt(Number((w / 10 ** exp).toFixed(exp))),
+              })
+            }}
+          />
+        </Field>
+        <Field label="Exposant de 10">
+          <LineSelect
+            value={String(Math.max(1, Math.min(4, Math.round(b))))}
+            ariaLabel={`Exposant 10 ${index + 1}`}
+            options={POW_EXP_OPTS}
+            onChange={(raw) => {
+              const exp = Math.max(1, Math.min(4, Number(raw)))
+              const w = Math.max(100, Math.min(9999, Math.round(a)))
+              patch(index, {
+                ...item,
+                a: w,
+                b: exp,
+                labels: ['sci-div'],
+                prompt: `${w} ÷ 10${POW_SUP[exp] ?? ''} =`,
+                answer: fmt(Number((w / 10 ** exp).toFixed(exp))),
+              })
+            }}
+          />
+        </Field>
+        <Field label="Corrigé">
+          <CorrigeBox value={item.answer ?? ''} ariaLabel={`Corrigé ${index + 1}`} />
+        </Field>
+      </div>
+    )
+  }
+
+  // TCM ex. 31 — pourcentage / règle de trois (variables éditables).
+  if (
+    exerciseType === 'tcm-proportion-kg' ||
+    item.labels?.includes('percent') ||
+    item.labels?.includes('kg-francs')
+  ) {
+    const isPct = item.labels?.includes('percent') || (item.prompt ?? '').includes('% de')
+    if (isPct) {
+      const pct = item.a ?? 25
+      const n = item.b ?? 200
+      return (
+        <div className="libre-frac-stack">
+          <Field label="Pourcentage">
+            <LineSelect
+              value={String(pct)}
+              ariaLabel={`Pourcentage ${index + 1}`}
+              options={PCT_OPTS}
+              onChange={(raw) => {
+                const p = Number(raw)
+                const value = (p * n) / 100
+                patch(index, {
+                  ...item,
+                  a: p,
+                  b: n,
+                  result: value,
+                  labels: ['percent'],
+                  prompt: `${p} % de ${n} est égal à`,
+                  answer: fmt(value),
+                  development: [`${p}/100 × ${n}`, fmt(value)],
+                })
+              }}
+            />
+          </Field>
+          <Field label="Nombre">
+            <NumInput
+              value={fmt(n)}
+              ariaLabel={`Nombre ${index + 1}`}
+              onCommit={(raw) => {
+                const nn = parseFrNumber(raw)
+                if (nn == null) return
+                const value = (pct * nn) / 100
+                patch(index, {
+                  ...item,
+                  a: pct,
+                  b: nn,
+                  result: value,
+                  labels: ['percent'],
+                  prompt: `${pct} % de ${nn} est égal à`,
+                  answer: fmt(value),
+                  development: [`${pct}/100 × ${nn}`, fmt(value)],
+                })
+              }}
+            />
+          </Field>
+          <Field label="Corrigé">
+            <CorrigeBox value={item.answer ?? ''} ariaLabel={`Corrigé ${index + 1}`} />
+          </Field>
+        </div>
+      )
+    }
+    const kgA = item.a ?? 15
+    const priceA = item.b ?? 30
+    const kgB = item.result ?? 28
+    const tpl =
+      TCM_PROPORTION_KG_TEMPLATES.find((t) => t.id === item.left) ?? TCM_PROPORTION_KG_TEMPLATES[0]!
+    const priceB = Math.round(((priceA * kgB) / kgA) * 1000) / 1000
+    return (
+      <div className="libre-frac-stack">
+        <Field label="Produit">
+          <LineSelect
+            value={tpl.id}
+            ariaLabel={`Produit ${index + 1}`}
+            options={TCM_PROPORTION_KG_TEMPLATES.map((t) => ({
+              value: t.id,
+              label: t.product,
+            }))}
+            onChange={(id) => {
+              const next = TCM_PROPORTION_KG_TEMPLATES.find((t) => t.id === id) ?? tpl
+              const pb = Math.round(((priceA * kgB) / kgA) * 1000) / 1000
+              patch(index, {
+                ...item,
+                left: next.id,
+                labels: ['kg-francs'],
+                prompt: `${kgA} kg ${next.ofProduct} → ${priceA} francs\n${kgB} kg ${next.ofProduct} →`,
+                answer: `${pb} francs`,
+                development: [`(${kgB} × ${priceA}) ÷ ${kgA}`, String(pb)],
+              })
+            }}
+          />
+        </Field>
+        <div className="libre-inline-triple is-op">
+          <Field label="Masse connue (kg)">
+            <NumInput
+              compact
+              value={fmt(kgA)}
+              ariaLabel={`Masse A ${index + 1}`}
+              onCommit={(raw) => {
+                const ka = parseFrNumber(raw)
+                if (ka == null || ka === 0) return
+                const pb = Math.round(((priceA * kgB) / ka) * 1000) / 1000
+                patch(index, {
+                  ...item,
+                  a: ka,
+                  labels: ['kg-francs'],
+                  prompt: `${ka} kg ${tpl.ofProduct} → ${priceA} francs\n${kgB} kg ${tpl.ofProduct} →`,
+                  answer: `${pb} francs`,
+                  development: [`(${kgB} × ${priceA}) ÷ ${ka}`, String(pb)],
+                })
+              }}
+            />
+          </Field>
+          <Field label="Prix connu (fr)">
+            <NumInput
+              compact
+              value={fmt(priceA)}
+              ariaLabel={`Prix A ${index + 1}`}
+              onCommit={(raw) => {
+                const pa = parseFrNumber(raw)
+                if (pa == null) return
+                const pb = Math.round(((pa * kgB) / kgA) * 1000) / 1000
+                patch(index, {
+                  ...item,
+                  b: pa,
+                  labels: ['kg-francs'],
+                  prompt: `${kgA} kg ${tpl.ofProduct} → ${pa} francs\n${kgB} kg ${tpl.ofProduct} →`,
+                  answer: `${pb} francs`,
+                  development: [`(${kgB} × ${pa}) ÷ ${kgA}`, String(pb)],
+                })
+              }}
+            />
+          </Field>
+          <Field label="Masse cherchée (kg)">
+            <NumInput
+              compact
+              value={fmt(kgB)}
+              ariaLabel={`Masse B ${index + 1}`}
+              onCommit={(raw) => {
+                const kb = parseFrNumber(raw)
+                if (kb == null) return
+                const pb = Math.round(((priceA * kb) / kgA) * 1000) / 1000
+                patch(index, {
+                  ...item,
+                  result: kb,
+                  labels: ['kg-francs'],
+                  prompt: `${kgA} kg ${tpl.ofProduct} → ${priceA} francs\n${kb} kg ${tpl.ofProduct} →`,
+                  answer: `${pb} francs`,
+                  development: [`(${kb} × ${priceA}) ÷ ${kgA}`, String(pb)],
+                })
+              }}
+            />
+          </Field>
+        </div>
+        <Field label="Corrigé">
+          <CorrigeBox value={item.answer ?? `${priceB} francs`} ariaLabel={`Corrigé ${index + 1}`} />
+        </Field>
+      </div>
+    )
+  }
+
   if (item.layout === 'audio-dictation') {
     if (exerciseType.includes('ex02')) {
       const { a, b } = mulFactorsFromItem(item)
@@ -1260,44 +1624,70 @@ function renderFields(
   }
 
   if (item.convert) {
+    const family: ConvertFamily =
+      item.convert.family ?? inferConvertFamily(item.convert.from, item.convert.to)
+    const unitOpts = unitsForFamily(family).map((u) => ({ value: u, label: u }))
+    const applyConvert = (next: {
+      value?: string
+      from?: string
+      to?: string
+      family?: ConvertFamily
+    }) => {
+      const nextFamily = next.family ?? family
+      const units = unitsForFamily(nextFamily)
+      let from = next.from ?? item.convert!.from
+      let to = next.to ?? item.convert!.to
+      if (!units.includes(from)) from = units[Math.min(3, units.length - 1)] ?? units[0]!
+      if (!units.includes(to) || to === from) {
+        to = units.find((u) => u !== from) ?? units[0]!
+      }
+      patch(index, {
+        ...item,
+        convert: {
+          value: next.value ?? item.convert!.value,
+          from,
+          to,
+          family: nextFamily,
+        },
+      })
+    }
     return (
-      <div className="libre-inline-triple">
+      <div className="libre-frac-stack" role="group" aria-label={`Conversion ${index + 1}`}>
+        <Field label="Unité">
+          <LineSelect
+            value={family}
+            ariaLabel={`Famille d’unités ${index + 1}`}
+            options={[...CONVERT_FAMILY_OPTIONS]}
+            onChange={(fam) => applyConvert({ family: fam as ConvertFamily })}
+          />
+        </Field>
         <Field label="Valeur">
           <NumInput
             value={item.convert.value}
             ariaLabel={`Valeur ${index + 1}`}
-            onCommit={(value) =>
-              patch(index, { ...item, convert: { ...item.convert!, value } })
-            }
+            onCommit={(value) => applyConvert({ value })}
           />
         </Field>
-        <Field label="De">
-          <LineSelect
-            value={item.convert.from}
-            ariaLabel={`Unité départ ${index + 1}`}
-            options={LENGTH_UNITS.map((u) => ({ value: u, label: u }))}
-            onChange={(from) =>
-              patch(index, { ...item, convert: { ...item.convert!, from } })
-            }
-          />
-        </Field>
-        <Field label="Vers">
-          <LineSelect
-            value={item.convert.to}
-            ariaLabel={`Unité arrivée ${index + 1}`}
-            options={LENGTH_UNITS.map((u) => ({ value: u, label: u }))}
-            onChange={(to) =>
-              patch(index, { ...item, convert: { ...item.convert!, to } })
-            }
-          />
-        </Field>
+        <div className="libre-inline-triple is-op">
+          <Field label="De">
+            <LineSelect
+              value={item.convert.from}
+              ariaLabel={`Unité départ ${index + 1}`}
+              options={unitOpts}
+              onChange={(from) => applyConvert({ from })}
+            />
+          </Field>
+          <Field label="Vers">
+            <LineSelect
+              value={item.convert.to}
+              ariaLabel={`Unité arrivée ${index + 1}`}
+              options={unitOpts}
+              onChange={(to) => applyConvert({ to })}
+            />
+          </Field>
+        </div>
         <Field label="Corrigé">
-          <LineInput
-            answer
-            value={item.answer ?? ''}
-            ariaLabel={`Corrigé conversion ${index + 1}`}
-            onChange={(answer) => patch(index, { ...item, answer })}
-          />
+          <CorrigeBox value={item.answer ?? ''} ariaLabel={`Corrigé conversion ${index + 1}`} />
         </Field>
       </div>
     )

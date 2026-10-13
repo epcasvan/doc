@@ -1012,15 +1012,22 @@ function generateTcmPuissancesMixteBatch(rng: Rng): MathItem[] {
   const base = exp === 4 ? int(rng, 1, 5) : int(rng, 1, 9)
   const powerItem: MathItem = {
     layout: 'inline',
+    // a = base, b = exposant (édition libre).
+    a: base,
+    b: exp,
     prompt: `${base}${TCM_POW_SUP[exp]} =`,
     answer: String(base ** exp),
+    labels: ['power'],
   }
 
   const root = int(rng, 2, 12) // √4 … √144
   const rootItem: MathItem = {
     layout: 'inline',
+    a: root * root,
+    b: root,
     prompt: `√${root * root} =`,
     answer: String(root),
+    labels: ['root'],
   }
 
   const pMul = int(rng, 1, 4)
@@ -1030,16 +1037,22 @@ function generateTcmPuissancesMixteBatch(rng: Rng): MathItem[] {
   // tenths/10 × 10^p = tenths × 10^(p-1) — exact, sans bruit flottant.
   const mulItem: MathItem = {
     layout: 'inline',
+    a: dec,
+    b: pMul,
     prompt: `${fmt(dec)} × 10${TCM_POW_SUP[pMul]} =`,
     answer: fmt(tenths * 10 ** (pMul - 1)),
+    labels: ['sci-mul'],
   }
 
   const pDiv = int(rng, 1, 4)
   const whole = int(rng, 100, 9999)
   const divItem: MathItem = {
     layout: 'inline',
+    a: whole,
+    b: pDiv,
     prompt: `${whole} ÷ 10${TCM_POW_SUP[pDiv]} =`,
     answer: fmt(Number((whole / 10 ** pDiv).toFixed(pDiv))),
+    labels: ['sci-div'],
   }
 
   return [powerItem, rootItem, mulItem, divItem]

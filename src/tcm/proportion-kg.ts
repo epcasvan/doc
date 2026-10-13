@@ -88,9 +88,14 @@ function generatePercentItem(rng: Rng): MathItem {
   const development = [`${pct}/100 × ${n}`, answer]
   return {
     layout: 'text',
+    // a = %, b = nombre (édition libre).
+    a: pct,
+    b: n,
+    result: value,
     prompt: `${pct} % de ${n} est égal à`,
     answer,
     development,
+    labels: ['percent'],
   }
 }
 
@@ -137,9 +142,15 @@ function generateKgFrancsItem(rng: Rng): MathItem {
   const development = [`(${kgB} × ${priceA}) ÷ ${kgA}`, String(priceB)]
   return {
     layout: 'text',
+    // a = kgA, b = priceA, result = kgB (édition libre) ; left = id produit.
+    a: kgA,
+    b: priceA,
+    result: kgB,
+    left: tpl.id,
     prompt: `${kgA} kg ${tpl.ofProduct} → ${priceA} francs\n${kgB} kg ${tpl.ofProduct} →`,
     answer,
     development,
+    labels: ['kg-francs'],
   }
 }
 
