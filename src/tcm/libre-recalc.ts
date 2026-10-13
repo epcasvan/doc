@@ -395,6 +395,92 @@ function cleanAnswerFloat(item: MathItem): MathItem {
   }
 }
 
+/** Décomposition en millier / centaine / dizaine / unité selon la grandeur. */
+function decomposePlaceValue(value: number): {
+  placeParts: string[]
+  labels: string[]
+  prompt: string
+} {
+  const abs = Math.abs(Math.round(value))
+  const u = abs % 10
+  const d = Math.floor((abs % 100) / 10)
+  const c = Math.floor((abs % 1000) / 100)
+  const m = Math.floor(abs / 1000)
+  if (abs >= 1000) {
+    return {
+      placeParts: [String(m * 1000), String(c * 100), String(d * 10), String(u)],
+      labels: ['milliers', 'centaines', 'dizaines', 'unités'],
+      prompt: abs.toLocaleString('fr-CH'),
+    }
+  }
+  if (abs >= 100) {
+    return {
+      placeParts: [String(c * 100), String(d * 10), String(u)],
+      labels: ['centaines', 'dizaines', 'unités'],
+      prompt: String(abs),
+    }
+  }
+  return {
+    placeParts: [String(d * 10), String(u)],
+    labels: ['dizaines', 'unités'],
+    prompt: String(abs),
+  }
+}
+
+function recalcPlaceValue(item: MathItem): MathItem {
+  const value = parseFrInt(item.prompt ?? '')
+  if (value == null) {
+    if (item.placeParts?.length) {
+      return { ...item, answer: item.placeParts.join(' + ') }
+    }
+    return item
+  }
+  const { placeParts, labels, prompt } = decomposePlaceValue(value)
+  return {
+    ...item,
+    prompt,
+    labels,
+    placeParts,
+    answer: placeParts.join(' + '),
+  }
+}
+
+/** Calcul en ligne « a op b = □ » (ou a/b/result déjà stockés). */
+function recalcInlineOp(item: MathItem): MathItem {
+  const fromPrompt = String(item.prompt ?? '').match(
+    /^(-?\d+(?:[.,]\d+)?|□)\s*([+\-−×÷*/])\s*(-?\d+(?:[.,]\d+)?|□)\s*=\s*(-?\d+(?:[.,]\d+)?|□)/,
+  )
+  let a = typeof item.a === 'number' ? item.a : null
+  let b = typeof item.b === 'number' ? item.b : null
+  let op = (item.op as string | undefined) ?? '+'
+  if (fromPrompt) {
+    const aRaw = fromPrompt[1]!
+    const bRaw = fromPrompt[3]!
+    op = fromPrompt[2]!
+    if (aRaw !== '□') a = parseFrNumber(aRaw)
+    if (bRaw !== '□') b = parseFrNumber(bRaw)
+  }
+  op = op === '-' ? '−' : op === '*' ? '×' : op === '/' ? '÷' : op
+  if (a == null || b == null) return item
+  const result = computeOp(op, a, b)
+  if (result == null || !Number.isFinite(result)) return item
+  const missing = item.missing ?? 'result'
+  const leftA = missing === 'a' ? '□' : fmt(a)
+  const leftB = missing === 'b' ? '□' : fmt(b)
+  const right = missing === 'result' ? '□' : fmt(result)
+  const answer = missing === 'a' ? fmt(a) : missing === 'b' ? fmt(b) : fmt(result)
+  return {
+    ...item,
+    a,
+    b,
+    op: op as ArithOp,
+    result,
+    missing,
+    prompt: `${leftA} ${op} ${leftB} = ${right}`,
+    answer,
+  }
+}
+
 /** Recalcule un item selon son layout / type d’exercice. */
 export function recalcTcmLibreItem(item: MathItem, exerciseType: string): MathItem {
   let next = cleanAnswerFloat(item)
@@ -405,7 +491,17 @@ export function recalcTcmLibreItem(item: MathItem, exerciseType: string): MathIt
     return recalcColumn(next)
   }
   if (next.convert) return recalcConvert(next)
+  if (next.layout === 'place-value') return recalcPlaceValue(next)
   if (next.layout === 'inline' && /\/\s*\d/.test(next.prompt ?? '')) return recalcFractionDecimal(next)
+  if (
+    next.layout === 'inline' &&
+    (next.a != null || /^(-?\d|[□])/.test(next.prompt ?? '')) &&
+    /[+\-−×÷*/]/.test(next.prompt ?? '') &&
+    !/\/\s*\d/.test(next.prompt ?? '')
+  ) {
+    // Ne pas écraser les items « signe → mot » (ex. 6 CFR : prompt = « + »).
+    if (/[=□]/.test(next.prompt ?? '') || next.a != null) return recalcInlineOp(next)
+  }
   if (next.layout === 'fraction-shape') return recalcFracShape(next)
   if (next.layout === 'segment-measure') return recalcSegments(next)
   if (next.layout === 'geo' && next.geoNameCard) {
@@ -425,12 +521,6 @@ export function recalcTcmLibreItem(item: MathItem, exerciseType: string): MathIt
   if (next.layout === 'audio-dictation') {
     const n = parseFrNumber(next.answer ?? '')
     return n == null ? next : { ...next, answer: fmt(n) }
-  }
-  if (next.layout === 'place-value' && next.placeParts) {
-    return {
-      ...next,
-      answer: next.placeParts.join(' + '),
-    }
   }
 
   return next

@@ -3,7 +3,8 @@
 export function parseFrNumber(raw: string): number | null {
   const s = String(raw ?? '')
     .trim()
-    .replace(/\s/g, '')
+    // Espaces / apostrophes (fr-CH : 1'234) / séparateurs fins.
+    .replace(/[\s'\u2019\u202f]/g, '')
     .replace(',', '.')
   if (!s || s === '-' || s === '.' || s === '-.') return null
   const n = Number(s)

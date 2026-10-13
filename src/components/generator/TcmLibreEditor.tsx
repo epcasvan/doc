@@ -31,20 +31,79 @@ function LineInput({
   onChange,
   ariaLabel,
   wide,
+  answer,
+  compact,
 }: {
   value: string
   onChange: (v: string) => void
   ariaLabel: string
   wide?: boolean
+  /** Champ réponse / corrigé : fond blanc. */
+  answer?: boolean
+  compact?: boolean
 }) {
   return (
     <input
-      className={`libre-line-input${wide ? ' is-wide' : ''}`}
+      className={`libre-line-input${wide ? ' is-wide' : ''}${answer ? ' is-answer' : ''}${compact ? ' is-num' : ''}`}
       type="text"
       value={value}
       aria-label={ariaLabel}
       onChange={(e) => onChange(e.target.value)}
     />
+  )
+}
+
+/** Suite de nombres : un champ par nombre, + pour ajouter, × pour retirer. */
+function NumberListEditor({
+  values,
+  onChange,
+  ariaLabel,
+  min = 1,
+  max = 12,
+}: {
+  values: string[]
+  onChange: (next: string[]) => void
+  ariaLabel: string
+  min?: number
+  max?: number
+}) {
+  const list = values.length > 0 ? values : ['']
+  return (
+    <div className="libre-number-list" role="group" aria-label={ariaLabel}>
+      {list.map((v, i) => (
+        <span key={i} className="libre-number-chip">
+          <input
+            className="libre-line-input is-num"
+            type="text"
+            value={v}
+            aria-label={`${ariaLabel} ${i + 1}`}
+            onChange={(e) => {
+              const next = [...list]
+              next[i] = e.target.value
+              onChange(next)
+            }}
+          />
+          <button
+            type="button"
+            className="libre-num-remove"
+            aria-label={`Supprimer le nombre ${i + 1}`}
+            disabled={list.length <= min}
+            onClick={() => onChange(list.filter((_, j) => j !== i))}
+          >
+            ×
+          </button>
+        </span>
+      ))}
+      <button
+        type="button"
+        className="libre-num-add"
+        aria-label="Ajouter un nombre"
+        disabled={list.length >= max}
+        onClick={() => onChange([...list, ''])}
+      >
+        +
+      </button>
+    </div>
   )
 }
 
@@ -150,6 +209,7 @@ function renderFields(
     return (
       <Field label="Réponse">
         <LineInput
+          answer
           value={item.answer ?? ''}
           ariaLabel={`Réponse ${index + 1}`}
           onChange={(answer) => patch(index, { ...item, answer })}
@@ -162,17 +222,12 @@ function renderFields(
     return (
       <>
         <Field label="Nombres (dans le désordre)">
-          <LineInput
-            wide
-            value={(item.sequence ?? []).join(' · ')}
+          <NumberListEditor
+            values={item.sequence ?? []}
             ariaLabel={`Nombres ${index + 1}`}
-            onChange={(raw) => {
-              const sequence = raw
-                .split(/[·•|,;\s]+/)
-                .map((s) => s.trim())
-                .filter(Boolean)
-              patch(index, { ...item, sequence })
-            }}
+            min={2}
+            max={12}
+            onChange={(sequence) => patch(index, { ...item, sequence })}
           />
         </Field>
         <Field label="Ordre">
@@ -197,6 +252,7 @@ function renderFields(
         </Field>
         <Field label="Corrigé">
           <LineInput
+            answer
             wide
             value={item.answer ?? ''}
             ariaLabel={`Corrigé ${index + 1}`}
@@ -209,8 +265,9 @@ function renderFields(
 
   if (item.layout === 'compare') {
     return (
-      <div className="libre-inline-triple">
+      <div className="libre-inline-triple is-compare">
         <LineInput
+          compact
           value={item.left ?? ''}
           ariaLabel={`Gauche ${index + 1}`}
           onChange={(left) => patch(index, { ...item, left, prompt: left })}
@@ -226,11 +283,35 @@ function renderFields(
           onChange={(answer) => patch(index, { ...item, answer })}
         />
         <LineInput
+          compact
           value={item.right ?? ''}
           ariaLabel={`Droite ${index + 1}`}
           onChange={(right) => patch(index, { ...item, right })}
         />
       </div>
+    )
+  }
+
+  if (item.layout === 'place-value') {
+    return (
+      <>
+        <Field label="Nombre">
+          <LineInput
+            value={item.prompt ?? ''}
+            ariaLabel={`Nombre ${index + 1}`}
+            onChange={(prompt) => patch(index, { ...item, prompt })}
+          />
+        </Field>
+        <Field label="Corrigé">
+          <LineInput
+            answer
+            wide
+            value={item.answer ?? ''}
+            ariaLabel={`Corrigé ${index + 1}`}
+            onChange={(answer) => patch(index, { ...item, answer })}
+          />
+        </Field>
+      </>
     )
   }
 
@@ -279,6 +360,7 @@ function renderFields(
         />
         <Field label="Corrigé">
           <LineInput
+            answer
             value={item.answer ?? ''}
             ariaLabel={`Corrigé ${index + 1}`}
             onChange={(answer) => patch(index, { ...item, answer })}
@@ -337,6 +419,7 @@ function renderFields(
         </div>
         <Field label="Corrigé">
           <LineInput
+            answer
             value={item.answer ?? ''}
             ariaLabel={`Corrigé ${index + 1}`}
             onChange={(answer) => patch(index, { ...item, answer })}
@@ -403,6 +486,7 @@ function renderFields(
         </Field>
         <Field label="Calcul (corrigé)">
           <LineInput
+            answer
             wide
             value={item.calcAnswer ?? ''}
             ariaLabel={`Calcul ${index + 1}`}
@@ -411,6 +495,7 @@ function renderFields(
         </Field>
         <Field label="Phrase réponse">
           <LineInput
+            answer
             wide
             value={item.responseAnswer ?? ''}
             ariaLabel={`Phrase ${index + 1}`}
@@ -419,6 +504,7 @@ function renderFields(
         </Field>
         <Field label="Réponse">
           <LineInput
+            answer
             value={item.answer ?? ''}
             ariaLabel={`Réponse ${index + 1}`}
             onChange={(answer) => patch(index, { ...item, answer })}
@@ -514,6 +600,7 @@ function renderFields(
         ))}
         <Field label="Corrigé (ex. a ; c)">
           <LineInput
+            answer
             value={item.answer ?? ''}
             ariaLabel={`Corrigé segments ${index + 1}`}
             onChange={(answer) => patch(index, { ...item, answer })}
@@ -557,6 +644,7 @@ function renderFields(
         </Field>
         <Field label="Corrigé">
           <LineInput
+            answer
             value={item.answer ?? ''}
             ariaLabel={`Corrigé conversion ${index + 1}`}
             onChange={(answer) => patch(index, { ...item, answer })}
@@ -592,6 +680,7 @@ function renderFields(
         </Field>
         <Field label="Corrigé">
           <LineInput
+            answer
             value={item.answer ?? ''}
             ariaLabel={`Corrigé fraction ${index + 1}`}
             onChange={(answer) => patch(index, { ...item, answer })}
@@ -656,6 +745,7 @@ function renderFields(
           ) : null}
           <Field label="Corrigé (côté)">
             <LineInput
+              answer
               value={item.answer ?? ''}
               ariaLabel={`Corrigé ${index + 1}`}
               onChange={(answer) => patch(index, { ...item, answer })}
@@ -730,6 +820,7 @@ function renderFields(
         ) : null}
         <Field label="Périmètre">
           <LineInput
+            answer
             value={item.propertyLines?.find((l) => /Périmètre/i.test(l.label))?.answer ?? ''}
             ariaLabel={`Périmètre ${index + 1}`}
             onChange={(answer) => {
@@ -743,6 +834,7 @@ function renderFields(
         </Field>
         <Field label="Aire">
           <LineInput
+            answer
             value={item.propertyLines?.find((l) => /Aire/i.test(l.label))?.answer ?? ''}
             ariaLabel={`Aire ${index + 1}`}
             onChange={(answer) => {
@@ -868,6 +960,7 @@ function renderFields(
             </Field>
             <Field label="Réponse">
               <LineInput
+                answer
                 value={q.answer ?? ''}
                 ariaLabel={`Réponse métro ${qi + 1}`}
                 onChange={(answer) => {
@@ -906,6 +999,7 @@ function renderFields(
       </Field>
       <Field label="Corrigé">
         <LineInput
+          answer
           wide
           value={item.answer ?? ''}
           ariaLabel={`Corrigé ${index + 1}`}

@@ -4281,6 +4281,16 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
 .libre-item-body{display:flex;flex-direction:column;gap:8px;min-width:0}
 .libre-inline-triple{display:flex;flex-wrap:wrap;gap:8px;align-items:end}
 .libre-inline-triple>.libre-field{flex:1 1 72px;min-width:64px}
+/* Comparer : deux nombres + symbole sur une seule ligne. */
+.libre-inline-triple.is-compare{
+  flex-wrap:nowrap;align-items:center;gap:6px
+}
+.libre-inline-triple.is-compare>.libre-line-input.is-num{
+  width:auto;flex:1 1 4.5em;min-width:3.5em;max-width:7em
+}
+.libre-inline-triple.is-compare>.libre-line-input.is-select{
+  width:auto;flex:0 0 auto;min-width:3.2em;max-width:4.5em
+}
 .libre-line-input{
   width:100%;min-width:0;box-sizing:border-box;
   border:0;border-bottom:1.5px solid var(--ink);border-radius:0;
@@ -4289,6 +4299,12 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
 }
 .libre-line-input:focus{border-bottom-color:var(--purple)}
 .libre-line-input.is-wide{min-width:12em}
+.libre-line-input.is-num{width:4.5em;min-width:3.2em;text-align:center}
+.libre-line-input.is-answer{
+  background:#fff;border:1px solid var(--line);border-radius:6px;
+  border-bottom:1px solid var(--line);padding:4px 8px
+}
+.libre-line-input.is-answer:focus{border-color:var(--purple)}
 .libre-line-input.is-select{
   appearance:auto;cursor:pointer;background:#fff;
   border:1px solid var(--line);border-radius:6px;padding:4px 6px;min-height:32px
@@ -4296,6 +4312,30 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
 .libre-line-input.is-textarea{
   border:1px solid var(--line);border-radius:8px;padding:6px 8px;
   resize:vertical;min-height:56px;background:#fff
+}
+/* Suite de nombres éditables (ranger) : champs en ligne + / ×. */
+.libre-number-list{
+  display:flex;flex-wrap:wrap;align-items:center;gap:6px
+}
+.libre-number-chip{
+  display:inline-flex;align-items:center;gap:2px;
+  background:#fff;border:1px solid var(--line);border-radius:8px;padding:2px 4px 2px 6px
+}
+.libre-number-chip>.libre-line-input.is-num{
+  width:3.8em;border:0;border-bottom:1.5px solid var(--ink);border-radius:0;
+  background:transparent;padding:2px 0;min-height:26px
+}
+.libre-num-remove,.libre-num-add{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:22px;height:22px;padding:0;border:1px solid var(--line);border-radius:999px;
+  background:#fff;color:var(--muted);font:inherit;font-size:14px;font-weight:700;line-height:1;cursor:pointer
+}
+.libre-num-remove:hover:not(:disabled),.libre-num-add:hover:not(:disabled){
+  border-color:var(--purple);color:var(--purple);background:var(--lavender)
+}
+.libre-num-remove:disabled,.libre-num-add:disabled{opacity:.35;cursor:not-allowed}
+.libre-num-add{
+  border-color:var(--purple);color:var(--purple);font-size:16px
 }
 /* Mode libre (panneau de droite) : les champs suivent la largeur disponible.
    Listes de questions en grille auto (2, 3… colonnes), champs côte à côte s’il y a la place. */
