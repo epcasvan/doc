@@ -443,9 +443,5 @@ export function recalcTcmLibreItems(items: MathItem[], exerciseType: string): Ma
 }
 
 export function isTcmFamilyExercise(typeId: string): boolean {
-  return (
-    typeId.startsWith('tcm-cfr-') ||
-    typeId.startsWith('tcm-csc-') ||
-    (typeId.startsWith('tcm-') && !typeId.startsWith('tcm-cfr') && !typeId.startsWith('tcm-csc'))
-  )
+  return typeId.startsWith('tcm-')
 }
