@@ -6,6 +6,7 @@ import { fmt, sanitizeFrNumberNoise } from '@/math/column-arith'
 import type { ArithOp, Figure, MathItem } from '@/math/types'
 import { mulAudioParts, numberAudioParts } from '@/tcm-cfr/audio-nombres'
 import { clampFracShapeCfr } from '@/math/fraction-shapes'
+import { rebuildCountIconsItem } from '@/math/count-icons'
 import {
   convertValue,
   formatConvertNumber,
@@ -983,6 +984,23 @@ function recalcProportion(item: MathItem): MathItem {
 export function recalcTcmLibreItem(item: MathItem, exerciseType: string): MathItem {
   let next = cleanAnswerFloat(item)
 
+  if (
+    next.layout === 'count-icons' ||
+    exerciseType === 'nombres-compter-formes' ||
+    next.countIcons
+  ) {
+    const scene = next.countIcons
+    if (!scene) return next
+    return rebuildCountIconsItem(createRng(41 + (scene.targetCount ?? 0) * 17), {
+      targetKind: scene.targetKind,
+      distractorA: scene.distractorA ?? 'star',
+      distractorB: scene.distractorB ?? 'moon',
+      targetCount: scene.targetCount,
+      distractorACount: scene.distractorACount ?? 6,
+      distractorBCount: scene.distractorBCount ?? 6,
+    })
+  }
+
   if (next.layout === 'sequence') return recalcSequence(next)
   if (next.layout === 'order') return recalcOrder(next)
   if (next.layout === 'compare') return recalcCompare(next)
@@ -1234,5 +1252,5 @@ export function recalcTcmLibreItems(items: MathItem[], exerciseType: string): Ma
 }
 
 export function isTcmFamilyExercise(typeId: string): boolean {
-  return typeId.startsWith('tcm-')
+  return typeId.startsWith('tcm-') || typeId === 'nombres-compter-formes'
 }

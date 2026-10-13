@@ -104,15 +104,31 @@ export type Layout =
   | 'fraction-shape'
   | 'tcf'
 
-/** Icône cible à compter (SVG N&B). */
-export type CountIconKind = 'note' | 'notes' | 'star' | 'heart' | 'leaf' | 'moon' | 'bolt' | 'flower'
+/** Icône à compter (SVG N&B plein) — 16 styles TCM ex. 1. */
+export type CountIconKind =
+  | 'notes'
+  | 'club'
+  | 'diamond'
+  | 'heart'
+  | 'spade'
+  | 'bolt'
+  | 'star'
+  | 'moon'
+  | 'leaf'
+  | 'flower'
+  | 'note'
+  | 'sun'
+  | 'circle'
+  | 'triangle'
+  | 'cross'
+  | 'arrow'
 
 export type CountIconToken = {
-  kind: CountIconKind | 'circle' | 'triangle'
+  kind: CountIconKind
   /** Position en % dans le cadre (0–100). */
   x: number
   y: number
-  /** Taille relative (environ 10–22). */
+  /** Taille relative (environ 10–16). */
   size: number
   /** Rotation en degrés. */
   rot: number
@@ -123,6 +139,11 @@ export type CountIconScene = {
   label: string
   targetKind: CountIconKind
   targetCount: number
+  /** Deux styles distracteurs (à ne pas compter). */
+  distractorA?: CountIconKind
+  distractorB?: CountIconKind
+  distractorACount?: number
+  distractorBCount?: number
   tokens: CountIconToken[]
 }
 

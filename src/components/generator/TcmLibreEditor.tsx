@@ -27,7 +27,13 @@ import {
   type MetroQuestion,
   type MetroQuestionKind,
 } from '@/tcm-cfr/metro'
+import {
+  COUNT_ICON_OPTIONS,
+  countIconMeta,
+  rebuildCountIconsItem,
+} from '@/math/count-icons'
 import { createRng } from '@/math/rng'
+import type { CountIconKind } from '@/math/types'
 import { fractionPartsFromItem, fractionTermFr } from '@/tcm/fraction-words'
 import { mulAudioParts, numberAudioParts } from '@/tcm-cfr/audio-nombres'
 import { clampFracShapeCfr } from '@/math/fraction-shapes'
@@ -608,6 +614,126 @@ function renderFields(
   onChangeItems: (items: MathItem[]) => void,
   items: MathItem[] = [],
 ) {
+  // TCM ex. 1 — compter les icônes : cible, 2 distracteurs, quantités.
+  if (
+    item.layout === 'count-icons' ||
+    exerciseType === 'nombres-compter-formes' ||
+    item.countIcons
+  ) {
+    const scene = item.countIcons
+    const targetKind = (scene?.targetKind ?? 'notes') as CountIconKind
+    const distractorA = (scene?.distractorA ??
+      COUNT_ICON_OPTIONS.find((o) => o.value !== targetKind)?.value ??
+      'star') as CountIconKind
+    const distractorB = (scene?.distractorB ??
+      COUNT_ICON_OPTIONS.find((o) => o.value !== targetKind && o.value !== distractorA)?.value ??
+      'moon') as CountIconKind
+    const targetCount = scene?.targetCount ?? 12
+    const distractorACount = scene?.distractorACount ?? 6
+    const distractorBCount = scene?.distractorBCount ?? 6
+    const apply = (next: {
+      targetKind?: CountIconKind
+      distractorA?: CountIconKind
+      distractorB?: CountIconKind
+      targetCount?: number
+      distractorACount?: number
+      distractorBCount?: number
+    }) => {
+      let t = next.targetKind ?? targetKind
+      let a = next.distractorA ?? distractorA
+      let b = next.distractorB ?? distractorB
+      if (a === t) a = (COUNT_ICON_OPTIONS.find((o) => o.value !== t)?.value ?? 'star') as CountIconKind
+      if (b === t || b === a) {
+        b = (COUNT_ICON_OPTIONS.find((o) => o.value !== t && o.value !== a)?.value ??
+          'moon') as CountIconKind
+      }
+      const rebuilt = rebuildCountIconsItem(createRng(++libreProblemRoll), {
+        targetKind: t,
+        distractorA: a,
+        distractorB: b,
+        targetCount: Math.max(3, Math.min(24, next.targetCount ?? targetCount)),
+        distractorACount: Math.max(2, Math.min(14, next.distractorACount ?? distractorACount)),
+        distractorBCount: Math.max(2, Math.min(14, next.distractorBCount ?? distractorBCount)),
+      })
+      patch(index, { ...item, ...rebuilt })
+    }
+    const otherOpts = COUNT_ICON_OPTIONS.filter((o) => o.value !== targetKind)
+    return (
+      <div className="libre-frac-stack">
+        <Field label="Icône à compter">
+          <LineSelect
+            value={targetKind}
+            ariaLabel={`Icône à compter ${index + 1}`}
+            options={[...COUNT_ICON_OPTIONS]}
+            onChange={(v) => apply({ targetKind: v as CountIconKind })}
+          />
+        </Field>
+        <Field label="Nombre d’icônes à compter">
+          <NumInput
+            value={String(targetCount)}
+            ariaLabel={`Nombre d’icônes à compter ${index + 1}`}
+            onCommit={(raw) => {
+              const n = parseFrNumber(raw)
+              if (n == null) return
+              apply({ targetCount: Math.round(n) })
+            }}
+          />
+        </Field>
+        <Field label="Icône à ne pas compter (1)">
+          <LineSelect
+            value={distractorA}
+            ariaLabel={`Icône à ne pas compter 1 — item ${index + 1}`}
+            options={otherOpts.length ? otherOpts : [...COUNT_ICON_OPTIONS]}
+            onChange={(v) => apply({ distractorA: v as CountIconKind })}
+          />
+        </Field>
+        <Field label="Nombre d’icônes (1)">
+          <NumInput
+            value={String(distractorACount)}
+            ariaLabel={`Nombre d’icônes distracteur 1 — item ${index + 1}`}
+            onCommit={(raw) => {
+              const n = parseFrNumber(raw)
+              if (n == null) return
+              apply({ distractorACount: Math.round(n) })
+            }}
+          />
+        </Field>
+        <Field label="Icône à ne pas compter (2)">
+          <LineSelect
+            value={distractorB}
+            ariaLabel={`Icône à ne pas compter 2 — item ${index + 1}`}
+            options={
+              COUNT_ICON_OPTIONS.filter((o) => o.value !== targetKind && o.value !== distractorA)
+                .length
+                ? COUNT_ICON_OPTIONS.filter(
+                    (o) => o.value !== targetKind && o.value !== distractorA,
+                  )
+                : [...COUNT_ICON_OPTIONS]
+            }
+            onChange={(v) => apply({ distractorB: v as CountIconKind })}
+          />
+        </Field>
+        <Field label="Nombre d’icônes (2)">
+          <NumInput
+            value={String(distractorBCount)}
+            ariaLabel={`Nombre d’icônes distracteur 2 — item ${index + 1}`}
+            onCommit={(raw) => {
+              const n = parseFrNumber(raw)
+              if (n == null) return
+              apply({ distractorBCount: Math.round(n) })
+            }}
+          />
+        </Field>
+        <Field label="Corrigé">
+          <CorrigeBox
+            value={`${targetCount} ${countIconMeta(targetKind).label}`}
+            ariaLabel={`Corrigé ${index + 1}`}
+          />
+        </Field>
+      </div>
+    )
+  }
+
   // TCM ex. 27 — base / exposant / racine / ×÷ 10^p.
   if (
     exerciseType === 'tcm-puissances-mixte' ||

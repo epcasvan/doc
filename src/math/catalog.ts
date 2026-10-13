@@ -430,7 +430,7 @@ export const exerciseTypes: ExerciseType[] = [
     'nombres-compter-formes',
     'nombres',
     'Compter les formes',
-    'Cadre d’icônes (notes, étoiles…) mélangées à des cercles et triangles à ignorer.',
+    'Cadre d’icônes N&B (notes, trèfles, cœurs…) placées au hasard sans se toucher ; deux styles distracteurs à ignorer.',
     'Comptez le nombre de formes.',
     'geo',
     { preferredColumns: 2 },

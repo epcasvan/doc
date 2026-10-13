@@ -25,83 +25,130 @@ export function ReadPhrasesBlock({ item }: { item: MathItem }) {
   )
 }
 
-function CountIconGlyph({
+/** Silhouettes pleines N&B (réf. TCM ex. 1). */
+export function CountIconGlyph({
   kind,
 }: {
   kind: CountIconToken['kind']
 }) {
-  const common = {
-    fill: 'none',
-    stroke: 'currentColor',
-    strokeWidth: 1.6,
-    strokeLinecap: 'round' as const,
-    strokeLinejoin: 'round' as const,
-  }
+  const fill = { fill: 'currentColor', stroke: 'none' as const }
   switch (kind) {
-    case 'circle':
-      return <circle cx="12" cy="12" r="7.5" {...common} />
-    case 'triangle':
-      return <path d="M12 4.5 L20 19 H4 Z" {...common} />
+    case 'notes':
+      // Deux croches liées (barre).
+      return (
+        <g {...fill}>
+          <ellipse cx="7.2" cy="17.4" rx="3.1" ry="2.35" transform="rotate(-18 7.2 17.4)" />
+          <ellipse cx="16.2" cy="15.6" rx="3.1" ry="2.35" transform="rotate(-18 16.2 15.6)" />
+          <rect x="9.7" y="6.2" width="1.55" height="11.2" />
+          <rect x="18.7" y="4.6" width="1.55" height="11" />
+          <path d="M9.7 6.2 H20.25 V9.1 H9.7 Z" />
+        </g>
+      )
     case 'note':
       return (
-        <g {...common}>
-          <ellipse cx="8.5" cy="17" rx="3.2" ry="2.4" fill="currentColor" stroke="none" />
-          <path d="M11.5 17 V6.5 c0 0 2.2 1.2 5 1.6" />
-          <path d="M16.5 8.2 V14" />
-          <ellipse cx="13.5" cy="14.2" rx="3" ry="2.2" fill="currentColor" stroke="none" />
+        <g {...fill}>
+          <ellipse cx="9" cy="17.2" rx="3.3" ry="2.45" transform="rotate(-18 9 17.2)" />
+          <rect x="11.6" y="5.2" width="1.6" height="12.2" />
+          <path d="M13.2 5.2 C16.8 5.6 19.2 7.4 19.4 10.2 C17.2 9.4 15 8.8 13.2 8.4 Z" />
         </g>
       )
-    case 'notes':
+    case 'club':
       return (
-        <g {...common}>
-          <ellipse cx="7" cy="17.2" rx="2.8" ry="2.1" fill="currentColor" stroke="none" />
-          <ellipse cx="15.5" cy="15.8" rx="2.8" ry="2.1" fill="currentColor" stroke="none" />
-          <path d="M9.7 17 V7.2 H18.2 V15.5" />
-          <path d="M9.7 7.2 C12.5 8.6 15.5 8.6 18.2 7.2" />
+        <g {...fill}>
+          <circle cx="12" cy="7.6" r="3.5" />
+          <circle cx="7.6" cy="12.2" r="3.5" />
+          <circle cx="16.4" cy="12.2" r="3.5" />
+          <path d="M10.6 13.2 H13.4 L14.2 20.2 H9.8 Z" />
         </g>
       )
-    case 'star':
-      return (
-        <path
-          d="M12 3.5l2.2 5.4 5.8.4-4.4 3.7 1.4 5.6L12 15.6 6.9 18.6l1.4-5.6L4 9.3l5.8-.4Z"
-          {...common}
-        />
-      )
+    case 'diamond':
+      return <path d="M12 3.2 L20.2 12 L12 20.8 L3.8 12 Z" {...fill} />
     case 'heart':
       return (
         <path
-          d="M12 20 S4.5 14.5 4.5 9.8 A3.8 3.8 0 0 1 12 7.8 A3.8 3.8 0 0 1 19.5 9.8 C19.5 14.5 12 20 12 20 Z"
-          {...common}
+          d="M12 20.2 C12 20.2 3.8 14.6 3.8 9.6 A4.1 4.1 0 0 1 12 7.2 A4.1 4.1 0 0 1 20.2 9.6 C20.2 14.6 12 20.2 12 20.2 Z"
+          {...fill}
         />
       )
-    case 'leaf':
+    case 'spade':
       return (
-        <g {...common}>
-          <path d="M6 17 C7 8 14 4 19 5 C18 12 12 17 6 17 Z" />
-          <path d="M8.5 15.5 C11 12 14 9 17.5 6.5" />
+        <g {...fill}>
+          <path d="M12 3.4 C12 3.4 4.2 10.2 4.2 14.2 A4 4 0 0 0 12 12.6 A4 4 0 0 0 19.8 14.2 C19.8 10.2 12 3.4 12 3.4 Z" />
+          <path d="M10.7 13.4 H13.3 L14.1 20.4 H9.9 Z" />
         </g>
+      )
+    case 'bolt':
+      return <path d="M13.8 2.8 L6.6 13.2 H11.2 L9.4 21.2 L18.2 9.6 H13.4 Z" {...fill} />
+    case 'star':
+      return (
+        <path
+          d="M12 3.2l2.35 5.7 6.15.45-4.7 3.95 1.5 5.95L12 15.9 6.7 19.25l1.5-5.95-4.7-3.95 6.15-.45Z"
+          {...fill}
+        />
       )
     case 'moon':
       return (
         <path
-          d="M15.5 4.8 A8.2 8.2 0 1 0 19.2 15.5 A6.4 6.4 0 1 1 15.5 4.8 Z"
-          {...common}
+          d="M15.8 4.4 A8.4 8.4 0 1 0 19.6 15.8 A6.5 6.5 0 1 1 15.8 4.4 Z"
+          {...fill}
         />
       )
-    case 'bolt':
-      return <path d="M13.5 3.5 L7.5 13 h4.2 L9.8 20.5 L17.5 10.2 h-4.1 Z" {...common} />
-    case 'flower':
+    case 'leaf':
       return (
-        <g {...common}>
-          <circle cx="12" cy="12" r="2.2" fill="currentColor" stroke="none" />
-          <circle cx="12" cy="6.2" r="2.4" />
-          <circle cx="12" cy="17.8" r="2.4" />
-          <circle cx="6.2" cy="12" r="2.4" />
-          <circle cx="17.8" cy="12" r="2.4" />
+        <g {...fill}>
+          <path d="M5.5 17.5 C6.2 8.2 14.2 3.6 20 4.4 C18.8 12.2 12.2 17.8 5.5 17.5 Z" />
+          <path
+            d="M8.2 15.8 C11 12.2 14.2 9 18 6.2"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.1"
+          />
         </g>
       )
+    case 'flower':
+      return (
+        <g {...fill}>
+          <circle cx="12" cy="6.4" r="2.7" />
+          <circle cx="12" cy="17.6" r="2.7" />
+          <circle cx="6.4" cy="12" r="2.7" />
+          <circle cx="17.6" cy="12" r="2.7" />
+          <circle cx="12" cy="12" r="2.3" />
+        </g>
+      )
+    case 'sun':
+      return (
+        <g {...fill}>
+          <circle cx="12" cy="12" r="4.2" />
+          <rect x="11.2" y="2.2" width="1.6" height="3.4" />
+          <rect x="11.2" y="18.4" width="1.6" height="3.4" />
+          <rect x="2.2" y="11.2" width="3.4" height="1.6" />
+          <rect x="18.4" y="11.2" width="3.4" height="1.6" />
+          <rect x="11.2" y="2.2" width="1.6" height="3.4" transform="rotate(45 12 12)" />
+          <rect x="11.2" y="2.2" width="1.6" height="3.4" transform="rotate(135 12 12)" />
+          <rect x="11.2" y="2.2" width="1.6" height="3.4" transform="rotate(225 12 12)" />
+          <rect x="11.2" y="2.2" width="1.6" height="3.4" transform="rotate(315 12 12)" />
+        </g>
+      )
+    case 'circle':
+      return <circle cx="12" cy="12" r="7.6" {...fill} />
+    case 'triangle':
+      return <path d="M12 3.4 L21.2 19.8 H2.8 Z" {...fill} />
+    case 'cross':
+      return (
+        <path
+          d="M9.2 3.4 H14.8 V9.2 H20.6 V14.8 H14.8 V20.6 H9.2 V14.8 H3.4 V9.2 H9.2 Z"
+          {...fill}
+        />
+      )
+    case 'arrow':
+      return (
+        <path
+          d="M12 3.2 L20.4 12.2 H15.2 V20.8 H8.8 V12.2 H3.6 Z"
+          {...fill}
+        />
+      )
     default:
-      return <circle cx="12" cy="12" r="7.5" {...common} />
+      return <circle cx="12" cy="12" r="7.5" {...fill} />
   }
 }
 
