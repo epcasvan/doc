@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react'
 import { GAME_IMAGE_ACCEPT, readGameImageFile } from '@/jeux/image'
-import type { TcfAudioEntry } from './audio-bank'
+import { tcfAudioDisplayName, type TcfAudioEntry } from './audio-bank'
 import { tcfAudioSrc, tcfImageSrc } from './media'
 import { TcfAudioPicker } from './TcfAudioPicker'
 import { VocabImagePicker } from './VocabImagePicker'
@@ -194,6 +194,7 @@ export function ImageField({
  * Audio : MP3 sous `public/lib/audio/` (ou chemin / URL), écoute à l’écran.
  * Avec `bankEntries`, un clic ouvre la recherche ; `onPickFromBank` peut
  * recharger questions + transcription de l’exercice lié.
+ * Le champ affiche le nom de l’audio (scène ou stem), pas le chemin.
  */
 export function AudioField({
   label,
@@ -211,6 +212,7 @@ export function AudioField({
   const [pickerOpen, setPickerOpen] = useState(false)
   const src = tcfAudioSrc(value)
   const canPick = (bankEntries?.length ?? 0) > 0
+  const displayName = tcfAudioDisplayName(value, bankEntries)
   return (
     <div className="tcf-field">
       <span>{label}</span>
@@ -218,11 +220,14 @@ export function AudioField({
         <input
           className="pill-input"
           type="text"
-          value={value}
+          value={canPick ? displayName : value}
           placeholder={canPick ? 'Rechercher un audio de la banque…' : '/lib/audio/comprehension/…'}
-          aria-label={`Fichier : ${label}`}
-          title={canPick ? 'Rechercher un audio (questions adaptées)' : undefined}
-          onChange={(event) => onChange(event.target.value)}
+          aria-label={`Audio : ${label}`}
+          title={canPick ? (value ? `${displayName} — ${value}` : 'Rechercher un audio (questions adaptées)') : value}
+          readOnly={canPick}
+          onChange={(event) => {
+            if (!canPick) onChange(event.target.value)
+          }}
           onClick={() => {
             if (canPick) setPickerOpen(true)
           }}

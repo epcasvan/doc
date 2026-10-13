@@ -917,10 +917,6 @@ export function TcfExerciseEditor({
               ))}
             </select>
           </label>
-          <div className="tcf-row">
-            <TextField label="Identifiant" value={exercise.id} onChange={(id) => set({ ...exercise, id })} />
-            <TextField label="Thème" value={exercise.theme ?? ''} onChange={(theme) => set({ ...exercise, theme })} />
-          </div>
           {exercise.type_exercice !== 'images_a_reconnaitre' ? (
             <TextField
               label="Consigne (sinon consigne du type)"

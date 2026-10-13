@@ -282,6 +282,147 @@
     "consigne_supplementaire": null
   },
   {
+    "id": "tcf-ss-b1-s1-co-3",
+    "niveau": "A2-B1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Radio 28",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/comprehension/actualite/difficile-b1__radio-28.mp3",
+      "transcription": "Le groupe d'économie sociale et solidaire SOS lance jeudi un appel à projets auprès de 32 000 communes de moins de 3 500 habitants afin de créer ou reprendre 1 000 cafés en milieu rural pour en faire des lieux de vie ouverts à tous.\n\nDans une commune, le lien social se faisait dans les cafés. C'est dans les estaminets, mais aussi dans les petits commerces, que les gens se rencontraient et que les informations circulaient. « Or, le café du village, autrefois lieu de rencontre central pour les habitants, a souvent disparu », constate Groupe SOS, une association de lutte contre l'exclusion. Ce mercredi, son président, Jean-Marc Borello, a annoncé un appel à projets auprès de 32 000 communes pour créer ou reprendre 1 000 cafés en milieu rural.\n\nIl ne s'agit pas seulement de rouvrir de simples débits de boisson. Ces lieux seront des bistrots, mais aussi des relais de poste, des points d'accès numérique, des épiceries et de dépôt de pain.\n\nGroupe SOS précise qu'ils seront aussi « un lieu de vie pour les acteurs associatifs locaux, un lieu de programmation culturelle, un relais de mobilité, un point d'accompagnement et de convivialité pour les seniors ». « L'idée n'est pas originale, tout le monde en parle depuis longtemps », nous a expliqué Jean-Marc Borello en ajoutant que « ce qui l'est, c'est que nous avons décidé de tenter le coup ».\n\nCe jeudi 12 septembre, un appel à candidature sera lancé sur le site « 1000 Cafés ». Les maires des communes de moins de 3 500 habitants pourront poser une candidature. Pour être éligibles, leur commune ne doit disposer « d'aucun café ou avoir un café menacé de fermeture ». Ils devront aussi disposer d'un local vacant adapté à cette activité. Cette initiative a le soutien de l'État. Elle est appuyée par le gouvernement dans le cadre de l'agenda rural qui sera détaillé par Édouard Philippe, Premier Ministre, le 20 septembre lors du congrès des maires ruraux dans le Nord.\n\nD'après : Pascal SAMAMA, BFMTV journaliste, 11 septembre 2019."
+    },
+    "questions": [
+      {
+        "enonce": "Le projet de loi sur l'anonymat est…",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Une certitude"
+          },
+          {
+            "id": "b",
+            "texte": "Une possibilité",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "texte": "Une fausse information"
+          }
+        ]
+      },
+      {
+        "enonce": "Quelle est la spécialité de Stéphanie Blanchard ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "La psychologie des internautes"
+          },
+          {
+            "id": "b",
+            "texte": "Les comportements des adolescents",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "texte": "Les jeux vidéo en ligne"
+          }
+        ]
+      },
+      {
+        "enonce": "D'après Stéphanie Blanchard, les gens cachent leur identité sur les réseaux sociaux…",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Par manque de courage"
+          },
+          {
+            "id": "b",
+            "texte": "Pour ne pas mêler vie privée et professionnelle",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "texte": "Pour montrer une meilleure image d'eux"
+          }
+        ]
+      },
+      {
+        "enonce": "D'après Hervé Lacroix, l'anonymat…",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Facilite et encourage souvent la violence",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Diminue la violence"
+          },
+          {
+            "id": "c",
+            "texte": "Est toujours synonyme de violence"
+          }
+        ]
+      },
+      {
+        "enonce": "Quelle est l'opinion de Hervé Lacroix ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Il faut interdire l'anonymat sur Internet"
+          },
+          {
+            "id": "b",
+            "texte": "Il faut condamner plus souvent les actes violents"
+          },
+          {
+            "id": "c",
+            "texte": "Il faut donner des moyens aux gens de se défendre en ligne",
+            "correct": true
+          }
+        ]
+      },
+      {
+        "enonce": "À la fin de l'émission, Stéphanie Blanchard parle des anonymes…",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Par nécessité",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Par esprit de contradiction"
+          },
+          {
+            "id": "c",
+            "texte": "Par envie"
+          }
+        ]
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
     "id": "tcf-ss-b1-s1-co-4",
     "niveau": "A2-B1",
     "competence": "CO",
@@ -564,19 +705,40 @@
     "consigne_supplementaire": null
   },
   {
-    "id": "tcf-ss-b1-s2-co-3",
+    "id": "tcf-ss-b1-s2-co-2",
     "niveau": "A2-B1",
     "competence": "CO",
     "type_exercice": "complet",
-    "theme": "Soutien scolaire · Conversation 8",
+    "theme": "Soutien scolaire · Annonce 36",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/comprehension/ecole/difficile-b1__conversation-8.mp3",
-      "transcription": "- Tu fais un régime ?\n- Non, j'ai une allergie alimentaire, donc je ne peux pas manger de tout."
+      "audio": "/lib/audio/comprehension/ecole/difficile-b1__annonce-36.mp3",
+      "transcription": "Exercice 36.\n\nLisez les questions.\nÉcoutez l'enregistrement, puis répondez.\nVous entendez ces annonces dans votre école.\nRépondez aux questions.\nAnnonce 1.\nLe bâtiment C de l'école est fermé du 14 au 26 janvier pour travaux.\nVos nouvelles salles de classe pendant cette période sont indiquées sur le tableau d'informations à l'entrée.\nAnnonce 2.\nL'association des parents d'élèves organise le concours Dessine ton école idéale.\nPour participer, vous devez envoyer votre dessin avant le 12 mars à l'adresse parents@arabas.lisez.fr.\nAnnonce 3.\nChers élèves, lundi 3 avril, nous avons la chance d'accueillir l'auteur Bernard Werber dans l'auditorium du collège.\nIl donnera une conférence sur son métier à l'occasion de la journée internationale du livre.\nAnnonce 4.\nCeci est une simulation d'alerte incendie.\nNous vous demandons de sortir du bâtiment dans le calme.\nMerci de laisser vos affaires dans la classe et de ne pas courir.\nNous allons tous nous retrouver dans la cour.\nAnnonce 5.\nVotre professeur d'italien, monsieur Damien, est absent cette semaine.\nIl est remplacé à partir de mercredi par monsieur Bienquartier.\nL'examen d'italien a bien lieu vendredi.\nIl est surveillé par madame Blanchard.\nAnnonce 6.\nUne vente de livres est organisée mardi 22 mai par les élèves de 4e B dans la salle P16.\nL'argent de la vente est pour l'association Sourire d'enfant, qui aide les enfants malades à l'hôpital."
     },
     "questions": [
       {
-        "enonce": "Est-ce que la personne fait un régime ?",
+        "enonce": "De quoi parle cette annonce ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Des légumes bio",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Des voitures"
+          },
+          {
+            "id": "c",
+            "texte": "Des vêtements"
+          }
+        ]
+      },
+      {
+        "enonce": "Faut-il éplucher les légumes bio?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
@@ -588,95 +750,377 @@
           },
           {
             "id": "b",
-            "texte": "Oui"
+            "texte": "Oui, toujours"
           },
           {
             "id": "c",
-            "texte": "On ne sait pas"
+            "texte": "Oui, sauf les carottes"
           }
         ]
       },
       {
-        "enonce": "Quel est le problème de la personne ?",
+        "enonce": "Où se concentrent les vitamines ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Une allergie alimentaire",
+            "texte": "Sous la peau",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Un manque d'appétit"
+            "texte": "Dans les graines"
           },
           {
             "id": "c",
-            "texte": "Un problème de dents"
+            "texte": "Dans l'eau de cuisson"
           }
         ]
       },
       {
-        "enonce": "Que ne peut pas faire la personne ?",
+        "enonce": "De combien la qualité nutritionnelle du bio est-elle supérieure ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Manger de tout",
-            "correct": true
+            "texte": "10 %"
           },
           {
             "id": "b",
-            "texte": "Sortir le soir"
+            "texte": "30 %",
+            "correct": true
           },
           {
             "id": "c",
-            "texte": "Faire du sport"
+            "texte": "50 %"
           }
         ]
       },
       {
-        "enonce": "De quoi parlent les deux personnes ?",
+        "enonce": "Quel légume est cité en exemple ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "De nourriture",
+            "texte": "Les courgettes",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "De vacances"
+            "texte": "Les tomates"
           },
           {
             "id": "c",
-            "texte": "De musées"
+            "texte": "Les carottes"
           }
         ]
       },
       {
-        "enonce": "À quel aliment la personne est-elle allergique ?",
+        "enonce": "Combien coûtent six courgettes bio chez l'annonceur ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "On ne le sait pas",
+            "texte": "1,95 euro"
+          },
+          {
+            "id": "b",
+            "texte": "2,40 euros",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "texte": "3,50 euros"
+          }
+        ]
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ss-b1-s2-co-3",
+    "niveau": "A2-B1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Conversation 8",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/comprehension/ecole/difficile-b1__conversation-8.mp3",
+      "transcription": "À Paris, solidarité rime avec diversité. Qu'ils soient retraités, actifs, parents, étudiants ou encore lycéens, les Parisiens n'hésitent pas à s'engager. Nous nous sommes renseignés auprès de trois associations sur leurs objectifs.\n\n– Bonjour Monsieur, pourriez-vous me parler de votre association ?\n– Oui, avec plaisir. 80 % des volontaires de l'association Passerelles et Compétences ont une activité professionnelle. Ils font ce qu'on appelle du « bénévolat de compétences ».\n– Et qu'est-ce que ça veut dire « bénévolat de compétences » ?\n– Ben... Comment vous dire ? Le « bénévolat de compétences », c'est le fait de mettre ponctuellement sa compétence professionnelle au service d'associations de solidarité.\n– Et quels sont les domaines les plus recherchés ?\n– Surtout tout ce qui touche à l'informatique, à la communication et au marketing.\n– Et quel est le rôle de Passerelles et Compétences ?\n– Tout d'abord il y a la rencontre avec l'association pour définir ses besoins. On diffuse une annonce pour la mission et ensuite on rencontre le bénévole qui va la réaliser. Nous restons en contact avec eux tout au long du projet pour voir si tout se passe bien.\n\n– Bonjour madame, alors... quels sont les objectifs de l'association « Voisin-Âge » ?\n– L'association « Voisin-Âge » est une communauté sur le web. C'est le premier site de rencontres intergénérationnelles. Il met en relation les personnes âgées et leurs voisins en fonction de leur proximité et de leurs affinités. Le but est de faire connaissance, mais aussi de veiller à ce qu'aucune personne âgée du quartier ne soit trop isolée ou sans visite pendant des mois.\n– Qu'est-ce qu'on peut apporter comme actions ?\n– Ça peut être une visite, un coup de téléphone, aider la personne âgée à faire ses papiers, à faire les courses pour elle, à déjeuner avec elle.\n\n– Bonjour, pouvez-vous nous dire quels sont les objectifs de l'association « Les Tribus du 13 » ?\n– L'association Les Tribus du 13 a pour objectif de créer des liens utiles entre les habitants d'un même quartier.\n– Vous avez aussi un site Internet ?\n– Oui, il sert à rapprocher les familles et les nombreux étudiants du 13e.\n– Qu'est-ce qu'ils peuvent proposer comme activités ?\n– C'est surtout du baby-sitting, aller chercher les enfants à la crèche ou à la sortie de l'école et les aider à faire leurs devoirs, oui... c'est surtout ça.\n\nD'après : à Paris, hiver 2011-2012."
+    },
+    "questions": [
+      {
+        "enonce": "Le groupe d'amis est au restaurant, ils veulent…",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Commander le repas et calculer ce que cela va leur coûter"
+          },
+          {
+            "id": "b",
+            "texte": "Savoir ce qu'ils doivent payer car ils ont terminé",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "texte": "Demander une réduction car les plats n'étaient pas bons"
+          }
+        ]
+      },
+      {
+        "enonce": "Qu'a oublié de compter Ludivine ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Son entrée"
+          },
+          {
+            "id": "b",
+            "texte": "Son dessert",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "texte": "Sa boisson"
+          }
+        ]
+      },
+      {
+        "enonce": "Pourquoi Ludivine proteste-t-elle ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Elle ne veut pas payer trop",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Aux fraises"
+            "texte": "Le service est trop lent"
           },
           {
             "id": "c",
-            "texte": "Au lait"
+            "texte": "Elle a encore faim"
+          }
+        ]
+      },
+      {
+        "enonce": "De quoi Aurore s'aperçoit-elle ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Que le restaurant est fermé"
+          },
+          {
+            "id": "b",
+            "texte": "Qu'il y a une erreur dans l'addition",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "texte": "Que le serveur a oublié leur table"
+          }
+        ]
+      },
+      {
+        "enonce": "Le serveur…",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Refuse de vérifier"
+          },
+          {
+            "id": "b",
+            "texte": "Offre le café aux trois amis"
+          },
+          {
+            "id": "c",
+            "texte": "Demande des précisions au patron",
+            "correct": true
+          }
+        ]
+      },
+      {
+        "enonce": "À quoi correspond le « prix du couvert » ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Aux frais pour le service et le pain",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Au prix des desserts"
+          },
+          {
+            "id": "c",
+            "texte": "Au pourboire obligatoire"
+          }
+        ]
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ss-b1-s2-co-4",
+    "niveau": "A2-B1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Radio 27",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/comprehension/ecole/difficile-b1__radio-27.mp3",
+      "transcription": "« Comment se souviendra-t-on de notre civilisation ? », s'interroge Jennifer Brandon. Cette chercheuse de la Scripps Institution of Oceanography, le plus ancien centre de recherche scientifique maritime au monde, affirme avoir observé une « explosion de pollution plastique » dans les fonds marins.\n\nCes scientifiques ont réalisé des prélèvements à quelques centaines de mètres au large de Santa Barbara, au nord de Los Angeles, par plus de 500 m de profondeur et dans les couches de sédiments qui couvraient la période de 1834 à 2010.\n\nLeurs conclusions confirment que les matériaux plastiques, quasiment inexistants dans les sédiments avant la fin de la Seconde Guerre mondiale, y sont de plus en plus présents. La quantité de microplastiques a ainsi doublé tous les quinze ans environ.\n\nCette hausse reflète l'essor de la production de plastique après-guerre, principalement pour les produits de consommation courante, bouteilles ou vêtements. Une grande partie des microplastiques a été transportée dans l'océan par les eaux de ruissellement ou par les flux provenant des stations d'épuration des eaux usées.\n\nTout ce plastique ne descend pas jusqu'au fond de la mer. Une grande partie flotte à la surface ou près de la surface. Les chercheurs de l'université de San Diego ont néanmoins découvert des microplastiques dans l'eau jusqu'à 1 000 m au large de Monterey.\n\nL'explorateur Victor Vescovo a, lui, constaté une contamination humaine dans les abysses. Par 10 927 m au fond du Pacifique, il a relevé la présence d'un sac plastique et d'emballages de bonbons.\n\nPour Jennifer Brandon, on pourrait considérer que l'humanité est entrée dans un nouvel âge.\n\n« C'est mauvais pour les animaux qui vivent au fond de l'océan : les récifs coralliens, les moules, huîtres, etc. Mais la présence de plastique dans les couches sédimentaires est plus une question existentielle. Nous apprenons à l'école qu'il a existé un âge de pierre, un âge du bronze et un âge du fer. Est-ce que cette période va être connue comme l'âge du plastique ? Il est effrayant de penser que les générations futures se souviendront de nous pour cela. »\n\nD'après : Le Monde, 5 septembre 2019."
+    },
+    "questions": [
+      {
+        "enonce": "À quel public est destinée cette émission ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Aux adolescents",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Aux retraités"
+          },
+          {
+            "id": "c",
+            "texte": "Aux enfants"
+          }
+        ]
+      },
+      {
+        "enonce": "D'après les sondages, quel est le loisir préféré des filles ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Les activités artistiques"
+          },
+          {
+            "id": "b",
+            "texte": "Les activités sportives"
+          },
+          {
+            "id": "c",
+            "texte": "Les sorties entre amies",
+            "correct": true
+          }
+        ]
+      },
+      {
+        "enonce": "Quel sport Myriam pratique-t-elle ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Le ballet"
+          },
+          {
+            "id": "b",
+            "texte": "La gymnastique",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "texte": "Le tennis"
+          }
+        ]
+      },
+      {
+        "enonce": "Pourquoi Myriam a-t-elle arrêté certaines activités ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Les activités coûtaient trop cher",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "C'est une décision de ses parents seulement"
+          },
+          {
+            "id": "c",
+            "texte": "Elle voulait avoir plus de temps libre"
+          }
+        ]
+      },
+      {
+        "enonce": "Pourquoi Christopher dit-il que le tennis n'est pas un loisir ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Parce qu'on l'a obligé à pratiquer"
+          },
+          {
+            "id": "b",
+            "texte": "Parce que c'est trop difficile"
+          },
+          {
+            "id": "c",
+            "texte": "Parce qu'il doit faire de la compétition",
+            "correct": true
+          }
+        ]
+      },
+      {
+        "enonce": "Pour Myriam, la journée idéale est…",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Ne rien faire et se reposer chez elle"
+          },
+          {
+            "id": "b",
+            "texte": "Regarder des films avec ses amis"
+          },
+          {
+            "id": "c",
+            "texte": "Sortir et voir ses copains",
+            "correct": true
           }
         ]
       }
@@ -1389,6 +1833,147 @@
     "consigne_supplementaire": null
   },
   {
+    "id": "tcf-ss-b1-s4-co-2",
+    "niveau": "A2-B1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Radio 18",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/comprehension/inviter/difficile-b1__radio-18.mp3",
+      "transcription": "Pour attirer un public plus jeune, des lieux du patrimoine proposent aux visiteurs de participer à des escape games ou jeux d'évasion. Et ça cartonne !\n\nNous sommes dans un donjon du château de Vincennes. Le philosophe Denis Diderot, emprisonné, a été empoisonné. Accroupies autour d'un coffre verrouillé, six personnes essaient de décrypter un code secret. Une femme en costume d'époque les presse de faire vite. Nous ne sommes pas en 1749, mais bien en 2018.\n\nDans la forteresse, ces visiteurs participent à un escape game. C'est un jeu qui se pratique en équipe. Le but est de sortir de la pièce dans laquelle on est enfermé en résolvant des énigmes, en une heure maximum. Originaire du Japon, la tendance est arrivée en France en 2014 et s'est peu à peu invitée dans les lieux culturels pour un prix compris entre 20 et 30 €. Les châteaux de Chinon, de Blois, l'abbaye royale de Fontevraud ou encore l'opéra Garnier, pour ne citer qu'eux, ont adopté la formule. Tout comme les musées. En juin, le musée national du Sport à Nice a organisé un escape game sur le thème des jeux olympiques, qui a rassemblé de nombreux visiteurs, pour les plonger dans l'atmosphère des JO de 2024.\n\nMarie Grasse, la directrice du site, explique vouloir toucher le public des 18-35 ans qui a déserté les musées. Marc Métay, directeur adjoint du château d'Amboise, renchérit que l'objectif n'est pas de se limiter à un public d'érudits mais d'attirer les plus jeunes. Pour Marie Grasse, c'est en quelque sorte une manière de désacraliser les musées et de faire passer un message : on peut également s'y amuser.\n\nEt le succès est au rendez-vous. Dans certains musées, la fréquentation a augmenté de plus de 150 %. Pour Pierre-Henri Londner, cofondateur de la société qui a conçu le jeu de l'Opéra Garnier, la raison du succès n'a rien d'une énigme. Cela permet d'apprendre en s'amusant. De spectateur on devient « spect-acteur » toutes générations confondues. Chacun doit apporter sa pierre à l'édifice, les gamins comme les papys."
+    },
+    "questions": [
+      {
+        "enonce": "Le thème de cette émission est…",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "L'identité et le look chez les jeunes",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "L'image des jeunes sur Internet"
+          },
+          {
+            "id": "c",
+            "texte": "Le changement permanent de la mode"
+          }
+        ]
+      },
+      {
+        "enonce": "Élodie et Guillaume…",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Ont la même opinion"
+          },
+          {
+            "id": "b",
+            "texte": "Ont une opinion différente",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "texte": "N'ont pas d'opinion"
+          }
+        ]
+      },
+      {
+        "enonce": "Que cherche Élodie ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "À appartenir à un groupe"
+          },
+          {
+            "id": "b",
+            "texte": "À être elle-même sans look particulier",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "texte": "À copier la mode punk"
+          }
+        ]
+      },
+      {
+        "enonce": "Pourquoi Guillaume veut-il garder son look ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Il pense que c'est son identité",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Il n'aime aucun autre look"
+          },
+          {
+            "id": "c",
+            "texte": "Il a toujours eu ce look"
+          }
+        ]
+      },
+      {
+        "enonce": "Quel style de look Guillaume évoque-t-il ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Classique"
+          },
+          {
+            "id": "b",
+            "texte": "Punk",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "texte": "Sportif"
+          }
+        ]
+      },
+      {
+        "enonce": "Guillaume imagine que plus tard il sera…",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Toujours le même"
+          },
+          {
+            "id": "b",
+            "texte": "Peut-être différent",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "texte": "Comme son père"
+          }
+        ]
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
     "id": "tcf-ss-b1-s4-co-3",
     "niveau": "A2-B1",
     "competence": "CO",
@@ -2087,6 +2672,147 @@
           {
             "id": "c",
             "texte": "Interdite"
+          }
+        ]
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ss-b1-s5-co-4",
+    "niveau": "A2-B1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Annonce 33",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/comprehension/loisirs/difficile-b1__annonce-33.mp3",
+      "transcription": "Exercice 33.\n\nPour faire signer vos albums préférés par leurs auteurs, rendez-vous tous les jours à partir de 18 heures dans le salon Open Space.\nLes festivités commencent dès l'après-midi, avec un spectacle de danse asiatique dans le rôle principal à 15 heures.\nLes artistes nous viennent directement du Japon et ont été invités par la maison d'édition, car elle est spécialisée en manga japonais.\nL'artiste invitée s'aventure à nous présenter au lancement d'un spectacle original et nous promet un événement tout particulier pour vos yeux.\nCe spectacle mêle dessin de théâtre et musique.\nJe ne vous en dis pas plus pour garder la surprise, car il s'agit d'un événement particulièrement original.\nLe carré en BD est ouvert tous les jours à partir de 18 heures.\nVous y rencontrez tous les professionnels de la bande dessinée dans un cadre convivial et étendu.\nSi vous êtes dessinateur ou en devenir, c'est le lieu idéal pour faire des rencontres et présenter vos créations.\nD'ailleurs, si vous aimez dessiner, vous pouvez participer à notre événement « Dessine ton histoire ».\nÀ 21 heures ce soir, les personnes qui se seront inscrites seront invitées à réaliser un projet collectif de bande dessinée.\nGrâce à dix ordinateurs reliés à une table de dessin, vous pourrez réaliser en direct sur un grand écran une œuvre collective.\nPour vous inscrire, présentez-vous à la réception d'Antisèteur.\nAttention, les places sont limitées à huit personnes par session.\nIl y aura une session à 19 heures et une autre à 21 heures.\nEnfin, demain, la maison d'édition nous présente le concours du meilleur album de BD pour les lycéens et les étudiants en art plastique.\nLes trois premiers prix recevront des cadeaux en récompense de leur travail, et leurs œuvres seront éditées par notre maison et ses partenaires, la plus renommée.\nRendez-vous demain à 15 heures pour ce grand moment attendu par tous ces jeunes de la bande dessinée.\nProfitez de ces trois jours de festival et n'hésitez pas à contacter l'équipe si vous avez des questions."
+    },
+    "questions": [
+      {
+        "enonce": "Où peut-on faire signer ses albums ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Dans le salon Open Space",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "À la mairie"
+          },
+          {
+            "id": "c",
+            "texte": "Au cinéma"
+          }
+        ]
+      },
+      {
+        "enonce": "À quelle heure commence le spectacle de danse asiatique ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "14 h"
+          },
+          {
+            "id": "b",
+            "texte": "15 h",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "texte": "18 h"
+          }
+        ]
+      },
+      {
+        "enonce": "D'où viennent les artistes de danse ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Du Japon",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "De Chine"
+          },
+          {
+            "id": "c",
+            "texte": "De Corée"
+          }
+        ]
+      },
+      {
+        "enonce": "Quel type d'espace accueille les professionnels ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Un espace de rencontre",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Une salle de sport"
+          },
+          {
+            "id": "c",
+            "texte": "Un parking"
+          }
+        ]
+      },
+      {
+        "enonce": "Quel type d'atelier est proposé ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Un atelier de dessin",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Un atelier de cuisine"
+          },
+          {
+            "id": "c",
+            "texte": "Un atelier de danse"
+          }
+        ]
+      },
+      {
+        "enonce": "Combien de personnes maximum par session d'atelier ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Cinq"
+          },
+          {
+            "id": "b",
+            "texte": "Huit",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "texte": "Dix"
           }
         ]
       }
@@ -2799,6 +3525,147 @@
     "consigne_supplementaire": null
   },
   {
+    "id": "tcf-ss-b1-s7-co-2",
+    "niveau": "A2-B1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Radio 21",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/comprehension/loisirs/difficile-b1__radio-21.mp3",
+      "transcription": "Mutée à Saint-Denis, une jeune conseillère d'éducation découvre la réalité d'un collège en ZEP. Une chronique sociale d'une grande justesse.\n\nD'un centre de rééducation à une salle de classe, le chemin est cohérent. Deux ans après avoir ausculté l'univers hospitalier dans Patients, Grand Corps Malade et Mehdi Idir s'assoient au chevet de l'école, avec un engagement tout aussi viscéral. Leur premier film était inspiré de l'histoire de Grand Corps Malade. C'est au tour de Mehdi Idir de prêter certains de ses souvenirs à cette chronique chaleureuse, filmée dans l'établissement des Francs-Moisins, à Saint-Denis, où il fut élève. Soit une année scolaire en ZEP, vue à travers les premiers pas d'une jeune conseillère principale d'éducation. Fraîchement débarquée de son Ardèche natale, Samia (Zita Hanrot) découvre les réalités sociales d'une zone difficile, et s'attache à Yanis, un élève turbulent mais prometteur.\n\nEn travaillant avec des acteurs non professionnels pour la plupart et des figurants des Francs-Moisins, les réalisateurs orchestrent des scènes de groupe pleines de vitalité, de chahut joyeux. La réalisation, nerveuse, fait corps avec l'énergie des personnages : le gamin « mytho », dont chaque retard donne lieu à des explications épiques, le surveillant qui passe son temps à expliquer ses blagues, le prof de sport tout fier d'organiser des matchs de foot sur rollers – original, certes, mais dangereux...\n\nComme dans Patients, les auteurs ménagent l'équilibre entre l'humour et la gravité. Au fil des saynètes quotidiennes, se dessinent des situations contrastées, les failles d'une institution qui peine à enrayer l'échec, l'humanité d'enseignants exemplaires. Si beaucoup refusent de baisser les bras, ceux qui capitulent suscitent, eux aussi, l'empathie. Comme le prof d'histoire, poussé à bout par des élèves qui ne le respectent pas. L'espoir est bien là, mais les parcours restent compliqués pour ces ados défavorisés au départ. Le travelling final, survolant la cité écrasante, suggère la difficulté d'échapper à la fatalité sociale.\n\nZEP : Zone d'Éducation Prioritaire.\n\nD'après : Télérama, n°3633, 28 août 2019, Hélène Marzolf."
+    },
+    "questions": [
+      {
+        "enonce": "De quel type de jeu vidéo parle-t-on ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Un jeu de course"
+          },
+          {
+            "id": "b",
+            "texte": "Un jeu de football",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "texte": "Un jeu de stratégie"
+          }
+        ]
+      },
+      {
+        "enonce": "Lors de la conférence, les développeurs ont parlé…",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Des modifications du jeu",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "De la concurrence"
+          },
+          {
+            "id": "c",
+            "texte": "Des nouvelles consoles de jeu vidéo"
+          }
+        ]
+      },
+      {
+        "enonce": "Combien de ventes pendant la première semaine ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "1 million"
+          },
+          {
+            "id": "b",
+            "texte": "Plus de 10 millions",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "texte": "100 000"
+          }
+        ]
+      },
+      {
+        "enonce": "Combien de parties ont été jouées sur Internet ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "1 million"
+          },
+          {
+            "id": "b",
+            "texte": "10 millions"
+          },
+          {
+            "id": "c",
+            "texte": "Plus de 100 millions",
+            "correct": true
+          }
+        ]
+      },
+      {
+        "enonce": "La nouvelle version du jeu devrait…",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Beaucoup ressembler à l'ancienne version"
+          },
+          {
+            "id": "b",
+            "texte": "Être assez différente de l'ancienne version",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "texte": "Être très différente de l'ancienne version"
+          }
+        ]
+      },
+      {
+        "enonce": "Les créateurs du jeu ont voulu…",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Faire courir les joueurs plus vite"
+          },
+          {
+            "id": "b",
+            "texte": "Créer davantage de joueurs et d'équipes"
+          },
+          {
+            "id": "c",
+            "texte": "Rendre les actions des personnages plus réalistes",
+            "correct": true
+          }
+        ]
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
     "id": "tcf-ss-b1-s7-co-3",
     "niveau": "A2-B1",
     "competence": "CO",
@@ -2933,6 +3800,147 @@
           {
             "id": "c",
             "texte": "Supprimer toutes les photos"
+          }
+        ]
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ss-b1-s7-co-4",
+    "niveau": "A2-B1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Conversation 4",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/comprehension/nature/difficile-b1__conversation-4.mp3",
+      "transcription": "– Bonjour docteur.\n– Bonjour madame Bonnefoy. Qu'est-ce qui vous amène ?\n– Comme tous les ans à l'entrée de l'hiver, je me sens fatiguée, je n'ai envie de rien...\n– Vous dormez bien ?\n– Trop bien ! J'ai toujours sommeil et après j'ai beaucoup de mal à me réveiller...\n– Hmm... C'est un peu de dépression saisonnière, Madame Bonnefoy... On va soigner ça...\n– Vous savez Docteur, j'en ai assez des médicaments... J'ai entendu parler de la luminothérapie. Qu'en pensez-vous ?\n– Écoutez, pourquoi pas ? Vous pourriez essayer... C'est un traitement médical reconnu pour combattre la dépression saisonnière. Dans les pays nordiques où 5 % et même 10 % des personnes en souffrent, elle est assez répandue. Les gens constatent qu'ils sont de meilleure humeur, que leur sommeil redevient normal... En fait, elle limite les effets du manque de soleil. Comme lui, c'est un antidépresseur naturel.\n– Qu'est-ce qu'il faut faire ?\n– D'après des études sur ce sujet, le plus efficace, ce sont des séances de 30 minutes, tous les matins, le plus près possible du lever du jour.\n– Je peux faire ça chez moi ?\n– Bien sûr. Il y a des centres du sommeil, mais vous pouvez avoir votre propre appareil de luminothérapie chez vous. Il vous faut une lampe de 1 500 lux. Minimum. Placée à 30 cm de vous. Ces lampes ne présentent aucun danger pour les yeux. Il faut cependant vous assurer que l'appareil a des filtres contre les rayons ultraviolets et infrarouges.\n– Est-ce que c'est cher ?\n– Il faut compter 200 € à 300 € environ. Il existe aussi des simulateurs d'aube. Pour environ 100 €, ces petits appareils vous réveillent en douceur en simulant le lever du soleil. C'est parfait pour ceux qui ont du mal à se réveiller !\n– Merci Docteur. Vous m'avez convaincue. C'est un peu cher mais ça en vaut la peine...\n\nD'après : Côté REUNICA, n°6, automne/hiver 2011."
+    },
+    "questions": [
+      {
+        "enonce": "Noémie et Théo…",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Sont amis depuis longtemps"
+          },
+          {
+            "id": "b",
+            "texte": "Ne se connaissent pas",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "texte": "Étudient dans deux écoles différentes"
+          }
+        ]
+      },
+      {
+        "enonce": "Pourquoi Noémie a-t-elle changé d'école ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Il n'y avait pas allemand dans son ancienne école",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Elle déménageait dans une autre ville"
+          },
+          {
+            "id": "c",
+            "texte": "Elle n'aimait pas le sport"
+          }
+        ]
+      },
+      {
+        "enonce": "Dans son ancienne école, Noémie…",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "N'aimait aucun professeur"
+          },
+          {
+            "id": "b",
+            "texte": "Détestait le professeur d'histoire"
+          },
+          {
+            "id": "c",
+            "texte": "Appréciait un seul professeur",
+            "correct": true
+          }
+        ]
+      },
+      {
+        "enonce": "Pourquoi Noémie n'aimait-elle pas son ancienne école ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Les profs étaient très stricts et les élèves en compétition",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Il n'y avait pas d'ateliers l'après-midi"
+          },
+          {
+            "id": "c",
+            "texte": "Les cours étaient trop faciles"
+          }
+        ]
+      },
+      {
+        "enonce": "Quelle qualité Noémie attribue-t-elle au prof d'histoire ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Il était sévère"
+          },
+          {
+            "id": "b",
+            "texte": "Il était passionné et savait écouter",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "texte": "Il donnait peu de devoirs"
+          }
+        ]
+      },
+      {
+        "enonce": "Citez au moins trois activités possibles l'après-midi.",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Musique, chant et théâtre",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Football, rugby et natation"
+          },
+          {
+            "id": "c",
+            "texte": "Maths, physique et chimie"
           }
         ]
       }
@@ -3935,111 +4943,273 @@
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/nourriture/difficile-b1__radio-20.mp3",
-      "transcription": "- J'ai besoin d'apprendre le français pour mon travail.\n- Je te conseille les cours de français professionnel."
+      "transcription": "Quand on parle de pollution, on pense rarement d'abord au bruit, et pourtant...\n\nComme l'explique la journaliste du Monde Anne Rodier, même de faible intensité, les « perturbateurs d'attention », comme une parole intelligible ou des confidences à voix basse, peuvent être extrêmement gênants, produisant déconcentration, stress et fatigue, accidents et pertes d'activité. La baleine, gênée par le bruit des navires, perturbée par le son des moteurs, n'est pas efficace dans sa recherche de nourriture : elle pêche moins de plancton. Pour les salariés de l'aéroport, du restaurant ou... de l'open-space — ou espace ouvert — c'est la même chose. Le larsen d'un haut-parleur de l'aérogare, la réverbération des discussions enjouées des clients ou le fracas des assiettes de la pizzeria, les conversations des collègues de l'open-space sont autant de « perturbateurs d'attention », source d'accidents et de perte d'activité.\n\nLa nocivité n'est pas nouvelle : le bruit est reconnu comme cause de maladies professionnelles depuis 1963. Mais l'enquête Sumer 2017 indique que le nombre de salariés du secteur privé exposés au bruit est passé de 3,2 millions à 5,8 millions en une vingtaine d'années, soit plus du tiers des salariés en 2017. Le coût social est évalué par le Conseil national du bruit à 1,1 milliard d'euros.\n\nL'INRS, Institut national de recherche et de sécurité pour la prévention des accidents du travail et des maladies professionnelles, présentera bientôt aux entreprises les dernières méthodes d'évaluation des effets du bruit en open-space, ce qui devrait améliorer la situation des 6 à 7 millions de salariés qui y travaillent. En effet, ainsi que le précise l'INRS, le bruit est la première source de gêne en open-space. Si l'espace de travail modèle n'existe pas, il doit d'abord répondre à la nature de l'activité.\n\nToutefois, 10 mètres carrés par personne, des plafonds et parois absorbants, les métiers bruyants éloignés de ceux qui ne le sont pas, et enfin des espaces pour s'isoler, sont autant de préconisations de la Carsat, c'est-à-dire la Caisse d'assurance retraite et de la santé au travail.\n\nLe larsen est un sifflement parasite dû au rapprochement d'un micro près d'un haut-parleur.\n\nD'après : Le Monde, Anne Rodier, 11 septembre 2019."
     },
     "questions": [
       {
-        "enonce": "Pourquoi la personne veut-elle apprendre le français ?",
+        "enonce": "La journée sans tabac a lieu…",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Pour son travail",
+            "texte": "Tous les ans partout dans le monde",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Pour voyager"
+            "texte": "3 fois par an en France"
           },
           {
             "id": "c",
-            "texte": "Pour ses études"
+            "texte": "Tous les 3 ans en France"
           }
         ]
       },
       {
-        "enonce": "Quelle langue la personne veut-elle apprendre ?",
+        "enonce": "Combien de Français fument ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Le français",
-            "correct": true
+            "texte": "La moitié"
           },
           {
             "id": "b",
-            "texte": "L'anglais"
+            "texte": "Plus de la moitié de la population"
           },
           {
             "id": "c",
-            "texte": "L'espagnol"
+            "texte": "Moins de la moitié",
+            "correct": true
           }
         ]
       },
       {
-        "enonce": "Que conseille la deuxième personne ?",
+        "enonce": "Quel est le but de cette journée ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Des cours de français professionnel",
+            "texte": "Informer les gens qui fument",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Des cours de cuisine"
+            "texte": "Culpabiliser les fumeurs"
           },
           {
             "id": "c",
-            "texte": "Des cours de dessin"
+            "texte": "Dénoncer l'industrie du tabac"
           }
         ]
       },
       {
-        "enonce": "Est-ce que le prix des cours est mentionné ?",
+        "enonce": "Qu'est-ce qui est le plus difficile?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Non",
-            "correct": true
+            "texte": "Arrêter de fumer"
           },
           {
             "id": "b",
-            "texte": "Oui, ils sont gratuits"
+            "texte": "Ne pas recommencer",
+            "correct": true
           },
           {
             "id": "c",
-            "texte": "Oui, ils sont chers"
+            "texte": "Se protéger des fumeurs"
           }
         ]
       },
       {
-        "enonce": "Qui donne un conseil dans ce dialogue ?",
+        "enonce": "Que faut-il éviter de faire pour ne pas recommencer à fumer ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "La deuxième personne",
+            "texte": "De sortir, d'aller à des fêtes",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "La première personne"
+            "texte": "De boire du café"
           },
           {
             "id": "c",
-            "texte": "Un professeur"
+            "texte": "De fréquenter des personnes qui fument"
+          }
+        ]
+      },
+      {
+        "enonce": "L'arrêt du tabac est…",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Seulement psychologique"
+          },
+          {
+            "id": "b",
+            "texte": "Lié à la dépendance"
+          },
+          {
+            "id": "c",
+            "texte": "Lié à la psychologie et à la dépendance",
+            "correct": true
+          }
+        ]
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ss-b1-s10-co-1",
+    "niveau": "A2-B1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Radio 24",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/comprehension/nourriture/difficile-b1__radio-24.mp3",
+      "transcription": "Quarante ans après l'ouverture du premier restaurant McDonald's en France, la chaîne de restauration rapide s'est plutôt adaptée aux habitudes alimentaires des Français que l'inverse. Venez comme vous êtes. Le slogan de la dernière campagne publicitaire de la firme américaine McDonald's, implantée en France depuis le 17 septembre 1979, donne une idée de la place du fast-food dans les habitudes alimentaires françaises. Un burger à deux étages, Big Mac, grande portion de frites, Coca géant et crème glacée, ou comment avaler 800 à 1 000 calories en moins de trente minutes. C'est la note salée et sucrée dans les principaux menus proposés par l'enseigne américaine. L'arrivée du fast-food en France s'inscrit dans un mouvement d'évolution des pratiques alimentaires. Les manières de manger se sont réinventées. On passe moins de temps assis à cuisiner. On a quitté la salle à manger pour se réfugier sur une table basse avec son plateau devant un écran ou pas. On ne déguste pas forcément la même chose, mais en gros, on mange à peu près en même temps, trois fois par jour. On se restaure aussi plus fréquemment à l'extérieur, observe Thibaut de Saint Pol, sociologue à l'École normale supérieure de Paris-Saclay. Pour autant, la consommation rapide de nourriture à toute heure de la journée que permet le fast-food n'a pas changé les habitudes des familles. C'est même l'inverse qui s'est produit. C'est le fast-food qui s'est adapté."
+    },
+    "questions": [
+      {
+        "enonce": "Quel est le métier de Hub ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Auteur de roman"
+          },
+          {
+            "id": "b",
+            "texte": "Auteur de bandes dessinées",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "texte": "Scénariste de dessins animés"
+          }
+        ]
+      },
+      {
+        "enonce": "Quel avantage offre cette profession ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Travailler uniquement en équipe"
+          },
+          {
+            "id": "b",
+            "texte": "Créer ses propres univers et travailler chez soi",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "texte": "Ne jamais voyager"
+          }
+        ]
+      },
+      {
+        "enonce": "Qu'est-ce que Hub essaie de faire ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Passer plus de temps avec ses amis"
+          },
+          {
+            "id": "b",
+            "texte": "Gagner des prix et des concours"
+          },
+          {
+            "id": "c",
+            "texte": "Travailler avec des artistes reconnus",
+            "correct": true
+          }
+        ]
+      },
+      {
+        "enonce": "Sur quel projet Hub travaille-t-il ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Un album de science-fiction",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Un roman policier"
+          },
+          {
+            "id": "c",
+            "texte": "Un film d'animation"
+          }
+        ]
+      },
+      {
+        "enonce": "Pourquoi Hub apprécie-t-il les bandes dessinées franco-belges ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Parce qu'elles sont toujours courtes"
+          },
+          {
+            "id": "b",
+            "texte": "Parce qu'elles mélangent art et littérature",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "texte": "Parce qu'elles ne coûtent rien"
+          }
+        ]
+      },
+      {
+        "enonce": "Quel genre d'album Hub prépare-t-il ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Historique"
+          },
+          {
+            "id": "b",
+            "texte": "Science-fiction",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "texte": "Romance"
           }
         ]
       }
@@ -4463,6 +5633,147 @@
           {
             "id": "c",
             "texte": "Les marchés sont ouverts la nuit"
+          }
+        ]
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ss-b1-s11-co-1",
+    "niveau": "A2-B1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Radio 22",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/comprehension/objets/difficile-b1__radio-22.mp3",
+      "transcription": "En moins d'une dizaine d'années, les smartphones ont eu le temps de voir le jour, de redoubler de technologie, et de nous rendre totalement accros. Mais comment sortir de cette addiction ? Une équipe de scientifiques américains livre ses conseils.\n\nQuel que soit votre smartphone, il a été pensé pour être le plus utile possible dans votre vie quotidienne. En effet, une personne en France passe en moyenne entre 1 h 42 et 2 h 16 de sa journée sur son téléphone. Un temps en croissance constante et que beaucoup souhaiteraient au contraire voir décliner. Depuis quelques années, Alexis Hiniker entend régulièrement les gens se dire frustrés de l'utilisation de leur téléphone. Cette chercheuse de l'Université de Washington vient de co-signer une étude sur le sujet. Son but : étudier les mécanismes qui nous rendent accro aux smartphones, et trouver les clefs qui nous permettraient de nous couper de cette addiction.\n\nLa scientifique sait que les smartphones, tablettes et autres écrans font aujourd'hui partie intégrante de nos vies. Conseiller de s'en passer totalement serait donc irréaliste. Mais la chercheuse s'est aperçue qu'il existait certains leviers d'action. Elle a ainsi noté quatre situations types qui nous poussent à faire défiler frénétiquement les pages de notre smartphone : les attentes inconfortables ou l'attente d'un message ou d'une notification, avant ou pendant une activité ennuyeuse ou répétitive, et pendant les situations socialement inconfortables.\n\nÀ l'inverse, trois autres déclencheurs provoquent systématiquement l'arrêt de l'utilisation du smartphone : lorsque « la vraie vie » fait irruption — la personne que l'on attendait arrive —, lorsqu'on prend conscience qu'on a déjà passé 30 minutes sur son téléphone, ou encore, lorsque l'on rencontre du contenu que l'on avait déjà consulté.\n\nLa solution serait un mécanisme privant ou limitant l'accès à son propre téléphone pendant un certain temps. Mais les participants à cette étude, même s'ils culpabilisent de passer tant de temps sur leurs téléphones, ne se sentent pas suffisamment mal pour utiliser ces solutions-là.\n\nAlors, comment passer son temps plus intelligemment sur son téléphone ? D'après les scientifiques, le mieux serait des smartphones qui redonnent à l'utilisateur son libre-arbitre.\n\nD'après : Maxi sciences, Jeanne Travers, 19 septembre 2019."
+    },
+    "questions": [
+      {
+        "enonce": "La zoothérapie à travers la compagnie des animaux peut aider à diminuer le stress…",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "De personnes qui travaillent trop"
+          },
+          {
+            "id": "b",
+            "texte": "D'adolescents angoissés"
+          },
+          {
+            "id": "c",
+            "texte": "De personnes qui sont seules",
+            "correct": true
+          }
+        ]
+      },
+      {
+        "enonce": "Que permet la complicité avec un animal ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "De gagner de l'argent"
+          },
+          {
+            "id": "b",
+            "texte": "De se confier sans craindre le jugement",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "texte": "D'éviter l'école"
+          }
+        ]
+      },
+      {
+        "enonce": "Quelle est la différence entre l'animal et l'homme ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "L'animal est plus fidèle que l'homme"
+          },
+          {
+            "id": "b",
+            "texte": "L'animal est moins affectueux que l'homme"
+          },
+          {
+            "id": "c",
+            "texte": "L'animal ne donne pas d'appréciation",
+            "correct": true
+          }
+        ]
+      },
+      {
+        "enonce": "Qu'est-ce qui aide à se concentrer ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Communiquer avec un animal",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Promener un animal"
+          },
+          {
+            "id": "c",
+            "texte": "Caresser un animal"
+          }
+        ]
+      },
+      {
+        "enonce": "Citez deux avantages de la compagnie d'un animal pour les enfants.",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Confiance en soi et calme",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Richesse et célébrité"
+          },
+          {
+            "id": "c",
+            "texte": "Vitesse et force"
+          }
+        ]
+      },
+      {
+        "enonce": "Avec quel animal la zoothérapie fonctionne le mieux ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Le chien"
+          },
+          {
+            "id": "b",
+            "texte": "Le chat"
+          },
+          {
+            "id": "c",
+            "texte": "Avec n'importe quel animal",
+            "correct": true
           }
         ]
       }
@@ -5175,6 +6486,288 @@
     "consigne_supplementaire": null
   },
   {
+    "id": "tcf-ss-b1-s12-co-3",
+    "niveau": "A2-B1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Radio 23",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/comprehension/presenter/difficile-b1__radio-23.mp3",
+      "transcription": "Le premier film d'Édouard Bergeon, dans lequel Guillaume Canet incarne un agriculteur en détresse, caracole en tête du box-office. Mais les avis sont partagés. C'est ce que nous révèle ce micro-trottoir.\n\nTrès beau film français ! Belle distribution des rôles et belles interprétations.\n\nAu nom de la Terre traite d'un sujet intéressant de manière simple. J'ai été attiré pour voir ce film principalement pour le sujet, et je dois admettre que les plans sont sublimes. En revanche, je suis désolé mais Guillaume Canet, que j'adore, n'aura pas pu sauver ce film. Lent, long, ennui ! Bien que l'histoire soit dramatique, on ne ressent aucune émotion. Dommage car ce sujet méritait mieux.\n\nAu nom de la terre est avant tout merveilleusement humain ! Ici, on est dans le vrai sans faire de guerre ou de faux semblant, et cette famille nous conquiert immédiatement par la profondeur de ses échanges et de ses moindres gestes... Si cette histoire nous atteint droit au cœur, c'est sans doute pour cette justesse de sentiments, pour ces regards inquiets, voire paniqués envers ce mari et père de famille fragilisé, pris à son propre piège, celui de voir toujours plus grand et plus loin quitte à prendre des risques inconsidérés pour ses proches.\n\nAu nom de la terre est à voir pour le fond et aussi pour la forme. Une mise en scène simple au service d'une histoire vraie. Des acteurs et actrices criants de vérité. Une rage et une énergie débordantes de réalité. Guillaume Canet au sommet de son art.\n\nGuillaume Canet est exceptionnel dans ce rôle de chef d'exploitation qu'il prend à cœur. Un film qui ne peut laisser indifférent. À voir absolument !\n\nTrès bonne interprétation des acteurs. Film très réaliste sans fioriture retraçant le parcours d'un agriculteur et sa descente aux enfers malgré son enthousiasme, un investissement sans faille et son amour du métier. À conseiller pour un public non initié au milieu agricole.\n\nD'après : www.allocine.fr/film/fichefilm-268282/critiques/spectateurs/"
+    },
+    "questions": [
+      {
+        "enonce": "Que dénonce-t-on dans ce bulletin ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "La transformation des aliments par les industriels",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Le manque d'information sur les produits transformés"
+          },
+          {
+            "id": "c",
+            "texte": "L'indifférence des consommateurs à la manipulation des aliments"
+          }
+        ]
+      },
+      {
+        "enonce": "« Le goût s'invente dans des éprouvettes » signifie que…",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "On vend des aliments dans des petits tubes"
+          },
+          {
+            "id": "b",
+            "texte": "Le goût des aliments est de plus en plus artificiel",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "texte": "On apprend le goût aux enfants dès leur naissance"
+          }
+        ]
+      },
+      {
+        "enonce": "Pourquoi ajoute-t-on du sucre dans les produits industriels ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Pour que les gens aient toujours envie de les manger",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Pour les gens qui souffrent du manque de sucre"
+          },
+          {
+            "id": "c",
+            "texte": "Pour que les aliments soient moins acides"
+          }
+        ]
+      },
+      {
+        "enonce": "On transforme le goût en ajoutant du sucre mais aussi en ajoutant quels éléments ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Du sel, des matières grasses et des arômes",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "De l'eau et du lait seulement"
+          },
+          {
+            "id": "c",
+            "texte": "Des vitamines uniquement"
+          }
+        ]
+      },
+      {
+        "enonce": "Que risque-t-on si on mange trop d'aliments transformés ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Rien de grave"
+          },
+          {
+            "id": "b",
+            "texte": "Des problèmes de santé comme le surpoids",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "texte": "De devenir plus sportif"
+          }
+        ]
+      },
+      {
+        "enonce": "Que font les consommateurs pour résister à ce phénomène ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Ils achètent des produits biologiques",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Ils cultivent leurs propres légumes"
+          },
+          {
+            "id": "c",
+            "texte": "Ils font un régime"
+          }
+        ]
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ss-b1-s12-co-4",
+    "niveau": "A2-B1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Radio 29",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/comprehension/presenter/difficile-b1__radio-29.mp3",
+      "transcription": "Les cabines téléphoniques sont appelées progressivement à disparaître, d'autant que le gouvernement a fait savoir l'an dernier qu'« il n'y aura plus de zones blanches » d'ici 5 ans.\n\nEn attendant, si les anciennes cabines sont normalement recyclées, certaines y échappent. Elles sont données à des communes qui veulent les garder pour installer un libre-service de livres, par exemple. D'autres font le bonheur des collectionneurs.\n\nMais mettons le cap aujourd'hui sur la ville de Nantes pour vous présenter un concept particulier qui permet à des visiteurs d'écouter des œuvres littéraires dans une... cabine téléphonique.\n\n« C'est un temps que les moins de 20 ans ne peuvent pas connaître* ». Jadis, les cabines téléphoniques étaient partout à chaque coin de rue et restaient le seul et unique moyen de contacter quelqu'un hors de chez soi. Mais c'est désormais de l'histoire ancienne.\n\nDepuis, le portable est passé par là et ces cabines ont été démantelées sur le territoire, au grand dam des plus nostalgiques d'entre nous.\n\nPourtant, dans la ville de Nantes, deux de ces cabines subsistent mais leur usage est quelque peu inhabituel. En effet, ces dernières ne permettent pas de téléphoner mais d'écouter une sélection d'œuvres littéraires, lues par leurs auteurs ou autrices.\n\nPour « contacter » les auteurs — les voix sont des enregistrements —, il vous suffit de taper leur date de naissance, proposées sur une liste présente dans la cabine, avec le clavier du combiné puis la magie opère.\n\nAu bout du fil, vous pouvez retrouver notamment la voix de Georges Orwell, Marguerite Yourcenar ou encore Sylvain Tesson qui vous lisent quelques-unes de leurs plus belles œuvres.\n\nCes cabines « so british » ont été importées d'Angleterre par la librairie Coiffard — une institution à Nantes — qui est à l'origine de cette initiative originale.\n\nEt à l'occasion du centenaire de l'établissement, fondé en 1919, la librairie a décidé de repeindre les cabines avec un noir du plus bel effet.\n\nAprès tout, la lecture, c'est simple comme un coup de fil !\n\n* Extrait de la chanson La Bohème de Charles Aznavour.\n\nD'après : France Inter, Emmanuel Moreau, 15 octobre 2019."
+    },
+    "questions": [
+      {
+        "enonce": "Où a lieu l'interview ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Au domicile de la styliste"
+          },
+          {
+            "id": "b",
+            "texte": "Dans un grand atelier de couture"
+          },
+          {
+            "id": "c",
+            "texte": "Dans un studio de télévision",
+            "correct": true
+          }
+        ]
+      },
+      {
+        "enonce": "Pourquoi Anne-Laure a choisi d'être styliste ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Parce que sa mère était couturière"
+          },
+          {
+            "id": "b",
+            "texte": "Parce qu'elle a toujours aimé faire des vêtements",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "texte": "Parce qu'elle regardait souvent des défilés"
+          }
+        ]
+      },
+      {
+        "enonce": "Qu'est-ce qui a aidé Anne-Laure dans sa carrière ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Les visites chez une amie couturière"
+          },
+          {
+            "id": "b",
+            "texte": "Elle a fait des rencontres intéressantes"
+          },
+          {
+            "id": "c",
+            "texte": "Ses années d'apprentissage chez une styliste",
+            "correct": true
+          }
+        ]
+      },
+      {
+        "enonce": "Quelle est la différence entre un styliste et un couturier ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Le couturier doit faire plus d'études"
+          },
+          {
+            "id": "b",
+            "texte": "Le styliste devient plus facilement célèbre"
+          },
+          {
+            "id": "c",
+            "texte": "Le styliste est un artiste plus libre de créer",
+            "correct": true
+          }
+        ]
+      },
+      {
+        "enonce": "Anne-Laure fait des expositions et des défilés pour…",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Faire connaître son travail",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Connaître d'autres stylistes"
+          },
+          {
+            "id": "c",
+            "texte": "Copier ce que font les autres"
+          }
+        ]
+      },
+      {
+        "enonce": "Quelles sont les conséquences de ses défilés ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "On parle de sa créativité dans les médias"
+          },
+          {
+            "id": "b",
+            "texte": "Les personnes lui passent des commandes",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "texte": "D'autres créateurs lui demandent de collaborer"
+          }
+        ]
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
     "id": "tcf-ss-b1-s13-co-1",
     "niveau": "A2-B1",
     "competence": "CO",
@@ -5457,6 +7050,147 @@
     "consigne_supplementaire": null
   },
   {
+    "id": "tcf-ss-b1-s13-co-3",
+    "niveau": "A2-B1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Conversation 9",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/comprehension/transports/difficile-b1__conversation-9.mp3",
+      "transcription": "Ces derniers mois, peut-être à cause de la crise, on constate une nette augmentation des vols dans les lieux publics. Temps de crise ou non, il faut reconnaître qu'ils sont souvent encouragés par les victimes elles-mêmes, par leur manque de prudence. Bien des vols à la tire ou des vols à l'arraché pourraient être évités à condition d'adopter certains comportements préventifs. Un représentant de la préfecture de police nous conseille sur ce qu'il convient de faire dans différentes situations.\n\nDans les lieux publics en général, méfiez-vous des mouvements de foule ou des bousculades, favorables aux voleurs à la tire ou « pickpockets ».\n\nDans la rue, évitez de porter ostensiblement appareils de photo ou caméras. Assurez-vous de bien les tenir par leur courroie, même quand vous photographiez ou filmez. Mesdames, veillez à bien fermer votre sac à main, portez-le contre vous avec les fermetures tournées vers l'intérieur. Messieurs, boutonnez les poches intérieures de vos vêtements et ne mettez pas votre portefeuille dans vos poches arrière.\n\nDans les transports en commun, surtout aux heures de pointe, soyez vigilants, faites particulièrement attention à vos affaires quand vous montez ou descendez des rames de métro ou des bus, ou encore dans les escaliers mécaniques.\n\nDans les cafés ou les restaurants, ne posez pas votre sac par terre, surtout pas dans le passage, même à côté de votre siège. Ne l'accrochez pas non plus au dossier de votre chaise, et surtout, fermez-le ! Placez-le là où il sera difficile à atteindre ou à subtiliser. Méfiez-vous également de toute personne qui vient s'asseoir un peu trop près de vous et qui jette, de façon apparemment négligente, son manteau ou son imperméable sur votre sac. Ne laissez pas non plus votre téléphone portable sur la table, rangez-le.\n\nQuand vous désirez vous rendre aux toilettes, au restaurant, en train ou en avion, ne laissez jamais votre sac ou un objet de valeur à votre place, sans surveillance.\n\nQuelle que soit la situation, gardez toujours un œil sur vos biens. Mieux vaut prévenir que guérir, quitte à passer pour une personne exagérément soupçonneuse !\n\nD'après : www.prefecturedepolice.interieur.gouv.fr"
+    },
+    "questions": [
+      {
+        "enonce": "Sophie et Tom…",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Avaient rendez-vous"
+          },
+          {
+            "id": "b",
+            "texte": "Ne se sont pas reconnus"
+          },
+          {
+            "id": "c",
+            "texte": "Se sont retrouvés par hasard",
+            "correct": true
+          }
+        ]
+      },
+      {
+        "enonce": "Pourquoi Sophie est-elle venue au concert ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Parce qu'elle adore ce groupe"
+          },
+          {
+            "id": "b",
+            "texte": "Pour accompagner sa sœur",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "texte": "Pour rencontrer Tom"
+          }
+        ]
+      },
+      {
+        "enonce": "Sophie…",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "A adoré le concert"
+          },
+          {
+            "id": "b",
+            "texte": "N'a pas aimé le concert",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "texte": "Est sortie avant la fin du concert"
+          }
+        ]
+      },
+      {
+        "enonce": "Quel genre musical Tom adore-t-il ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Le reggae"
+          },
+          {
+            "id": "b",
+            "texte": "L'électro punk",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "texte": "La chanson romantique"
+          }
+        ]
+      },
+      {
+        "enonce": "Tom trouve que ce groupe est…",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Violent"
+          },
+          {
+            "id": "b",
+            "texte": "Mauvais"
+          },
+          {
+            "id": "c",
+            "texte": "Unique",
+            "correct": true
+          }
+        ]
+      },
+      {
+        "enonce": "Qu'est-ce que Sophie aime dans le festival ? (Plusieurs éléments possibles.)",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Le bruit des concerts"
+          },
+          {
+            "id": "b",
+            "texte": "Le lieu au bord du lac et les différentes scènes",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "texte": "Les titres ridicules des chansons"
+          }
+        ]
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
     "id": "tcf-ss-b1-s13-co-4",
     "niveau": "A2-B1",
     "competence": "CO",
@@ -5591,6 +7325,147 @@
           {
             "id": "c",
             "texte": "Des travaux"
+          }
+        ]
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ss-b1-s14-co-1",
+    "niveau": "A2-B1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Radio 25",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/comprehension/transports/difficile-b1__radio-25.mp3",
+      "transcription": "Triporteur ou biporteur, quel vélo choisir ?\n\nCette bicyclette équipée d'une caisse en bois à l'avant permet de transporter ses enfants. Voici ce qu'il faut savoir avant de se lancer.\n\nSouvent réservés aux déplacements urbains, notamment en hypercentre, ces vélos peuvent avantageusement remplacer la voiture. « Depuis que j'ai investi, fini les embouteillages et les problèmes de stationnement, explique Patrick Dinardais. Je peux emmener les enfants à l'école ou à leurs activités, faire les courses, aller à des rendez-vous... sans perdre de temps. » Très lourds — plus de 100 kg —, la grande majorité sont électriques et ne permettent donc pas de faire de grandes randonnées.\n\nLe biporteur est équipé de deux roues comme un vélo classique, tandis que le triporteur en possède trois : deux à l'avant et une à l'arrière. « Plus vif, plus léger, le biporteur est idéal pour deux enfants, recommande Charles L'Hostis, conseiller chez Amsterdam Air, spécialiste vendéen du cycle urbain sur mesure. Plus stable, le triporteur permet d'en porter quatre, voire davantage. À l'arrêt, il présente l'intérêt de ne pas basculer sur le côté. Mais il est plus encombrant et a une autonomie plus limitée. »\n\nVélo cargo ou cargo bike. Triporteur ou biporteur.\nÀ l'origine, l'idée était simplement de fixer un gros panier au-dessus d'une des deux roues du classique tricycle. Plus tard, le modèle change avec une roue avant réduite au profit d'un panier plus volumineux. Une invention que Léon Mougeot, sous-secrétaire français d'État aux Postes et Télégraphes, propose d'inclure dans le transport du courrier. Ainsi, en 1899, les facteurs l'adoptent dans leur distribution quotidienne.\n\nDans les années 1930, la tendance suscite un intérêt auprès des boulangers, laitiers, épiciers parisiens afin de se glisser facilement dans les ruelles de la capitale.\n\nLes vélos de fret perdent du terrain après la Seconde Guerre mondiale, remplacés par les voitures. Ils reviennent à la mode à la fin des années 1980, avec les premières considérations écologiques. À présent, l'usage est devenu familial autant que professionnel : des parents s'en servent pour transporter leurs enfants tandis que les livreurs express y mettent leurs colis.\n\nD'après : Caroline Henry, Ouest-France, 14 août 2019."
+    },
+    "questions": [
+      {
+        "enonce": "Cette émission traite…",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Du problème de surpoids et des solutions possibles",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Des conséquences du surpoids seulement"
+          },
+          {
+            "id": "c",
+            "texte": "Des progrès de la médecine dans ce domaine"
+          }
+        ]
+      },
+      {
+        "enonce": "Quel est le métier de l'invitée ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Journaliste"
+          },
+          {
+            "id": "b",
+            "texte": "Spécialiste en nutrition",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "texte": "Cuisinière"
+          }
+        ]
+      },
+      {
+        "enonce": "Quelles sont les trois causes du surpoids d'après la professeure Haldig ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Alimentation riche, manque d'activité et stress",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Génétique uniquement"
+          },
+          {
+            "id": "c",
+            "texte": "Manque de sommeil seulement"
+          }
+        ]
+      },
+      {
+        "enonce": "Actuellement, où observe-t-on une croissance de personnes en surpoids ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Uniquement en Europe"
+          },
+          {
+            "id": "b",
+            "texte": "Dans de nombreux pays en développement",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "texte": "Seulement chez les enfants"
+          }
+        ]
+      },
+      {
+        "enonce": "À Ouagadougou, des personnes sont en surpoids à cause…",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "De la consommation de produits gras et salés seulement"
+          },
+          {
+            "id": "b",
+            "texte": "Du stress causé par les touristes"
+          },
+          {
+            "id": "c",
+            "texte": "D'un changement de consommation alimentaire",
+            "correct": true
+          }
+        ]
+      },
+      {
+        "enonce": "Les régimes pour le grand public sont…",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Très efficaces"
+          },
+          {
+            "id": "b",
+            "texte": "Complètement inefficaces"
+          },
+          {
+            "id": "c",
+            "texte": "Presque tous inefficaces",
+            "correct": true
           }
         ]
       }
