@@ -6,7 +6,7 @@ import { fmt, sanitizeFrNumberNoise } from '@/math/column-arith'
 import type { ArithOp, Figure, MathItem } from '@/math/types'
 import { mulAudioParts, numberAudioParts } from '@/tcm-cfr/audio-nombres'
 import { fractionPartsFromItem, fractionTermFr } from '@/tcm/fraction-words'
-import { columnItem, divisionColumnItem } from '@/tcm/items'
+import { columnItem, divisionColumnItem, withFixedColumnWidth } from '@/tcm/items'
 import { parseFrInt, parseFrNumber, parseOrderSequence } from './libre-parse'
 
 const NAMED_FIGS: Record<
@@ -116,20 +116,55 @@ function computeOp(op: string, a: number, b: number): number | null {
   return null
 }
 
-function recalcColumn(item: MathItem): MathItem {
+function isCfrColSeven(exerciseType: string): boolean {
+  return (
+    exerciseType.includes('ex07') ||
+    exerciseType.includes('ex08') ||
+    exerciseType.includes('ex09') ||
+    exerciseType.includes('ex10')
+  )
+}
+
+function recalcColumn(item: MathItem, exerciseType = ''): MathItem {
   const a = typeof item.a === 'number' ? item.a : parseFrNumber(String(item.a ?? ''))
   const b = typeof item.b === 'number' ? item.b : parseFrNumber(String(item.b ?? ''))
   const op = (item.op ?? '+') as ArithOp
-  if (a == null || b == null) return item
+  if (a == null || b == null) return { ...item, libreError: undefined }
+  // Ex. 7–8 : soustraction — le 1er nombre doit être strictement plus grand.
+  if (
+    (exerciseType.includes('ex07') || exerciseType.includes('ex08')) &&
+    op === '−' &&
+    a <= b
+  ) {
+    return {
+      ...item,
+      a,
+      b,
+      op,
+      libreError: 'Pour une soustraction, le premier nombre doit être plus grand que le second.',
+    }
+  }
   const result = computeOp(op, a, b)
   if (result == null || !Number.isFinite(result)) return item
   const empty = Boolean(item.blankOperands) || item.layout === 'column-empty'
   if (op === '÷') {
     const built = divisionColumnItem(a, b, empty)
-    return { ...item, ...built, layout: item.layout }
+    return { ...item, ...built, layout: item.layout, libreError: undefined }
   }
   const built = columnItem(op, a, b, result, empty)
-  return { ...item, ...built, layout: item.layout }
+  let next: MathItem = {
+    ...item,
+    ...built,
+    layout: item.layout,
+    // Force l’effacement des produits partiels si × 1 chiffre (évite 2 lignes fantômes).
+    digitsPartials: built.digitsPartials,
+    libreError: undefined,
+  }
+  // Ex. 7–10 : grille toujours 7 colonnes (ne suit pas le nombre de chiffres).
+  if (isCfrColSeven(exerciseType)) {
+    next = withFixedColumnWidth(next, 7)
+  }
+  return next
 }
 
 function recalcOrder(item: MathItem): MathItem {
@@ -506,7 +541,7 @@ export function recalcTcmLibreItem(item: MathItem, exerciseType: string): MathIt
   if (next.layout === 'order') return recalcOrder(next)
   if (next.layout === 'compare') return recalcCompare(next)
   if (next.layout === 'column' || next.layout === 'column-empty' || next.layout === 'division-column') {
-    return recalcColumn(next)
+    return recalcColumn(next, exerciseType)
   }
   if (next.convert) return recalcConvert(next)
   if (next.layout === 'place-value') return recalcPlaceValue(next)

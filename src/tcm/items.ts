@@ -235,6 +235,8 @@ export function columnItem(op: ArithOp, a: number, b: number, result: number, em
     digitsB: op === '×' ? digits(sb, w) : digitsDecimal(b, intW, places),
     digitsResult: digitsDecimal(result, intW, places),
     carries: computeCarries(op, sa, sb, w),
+    // Pas de produits partiels (× 1 chiffre / + / −) — écrase d’éventuelles lignes résiduelles.
+    digitsPartials: undefined,
     decimalPlaces: places > 0 ? places : undefined,
     blankOperands: empty,
     answer: fmt(result),
@@ -507,15 +509,23 @@ function generateTcmQuatreOpsBatch(rng: Rng): MathItem[] {
   return makers.map((make) => make())
 }
 
-/** Force une largeur fixe de chiffres (ex. 4 colonnes pour des 3 chiffres). */
+/** Ramène une ligne à exactement `width` cases (pad à gauche, coupe à gauche si trop long). */
+function fitDigitRow(row: string[] | undefined, width: number): string[] {
+  const src = row ?? []
+  if (src.length === width) return src
+  if (src.length > width) return src.slice(src.length - width)
+  return padDigitRow(src, width)
+}
+
+/** Force une largeur fixe de chiffres (ex. 7 colonnes TCM CFR). */
 export function withFixedColumnWidth(item: MathItem, width: number): MathItem {
   return {
     ...item,
-    digitsA: padDigitRow(item.digitsA, width),
-    digitsB: padDigitRow(item.digitsB, width),
-    digitsResult: padDigitRow(item.digitsResult, width),
-    carries: padDigitRow(item.carries ?? [], width),
-    digitsPartials: item.digitsPartials?.map((row) => padDigitRow(row, width)),
+    digitsA: fitDigitRow(item.digitsA, width),
+    digitsB: fitDigitRow(item.digitsB, width),
+    digitsResult: fitDigitRow(item.digitsResult, width),
+    carries: fitDigitRow(item.carries ?? [], width),
+    digitsPartials: item.digitsPartials?.map((row) => fitDigitRow(row, width)),
   }
 }
 

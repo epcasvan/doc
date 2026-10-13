@@ -522,6 +522,9 @@ function renderFields(
     item.layout === 'column-empty' ||
     item.layout === 'division-column'
   ) {
+    const checkSubOrder =
+      (exerciseType.includes('ex07') || exerciseType.includes('ex08')) &&
+      (item.op === '−' || item.op === '-')
     return (
       <>
         <div className="libre-inline-triple is-op">
@@ -532,9 +535,14 @@ function renderFields(
             onCommit={(raw) => {
               const a = Number(raw.replace(',', '.'))
               if (!Number.isFinite(a)) return
+              const b = item.b
+              const badSub = checkSubOrder && typeof b === 'number' && a <= b
               patch(index, {
                 ...item,
                 a,
+                libreError: badSub
+                  ? 'Pour une soustraction, le premier nombre doit être plus grand que le second.'
+                  : undefined,
                 prompt:
                   item.layout === 'column-empty' || item.blankOperands
                     ? `${raw} ${item.op ?? '+'} ${item.b != null ? fmt(item.b) : ''}`
@@ -546,7 +554,21 @@ function renderFields(
             value={(item.op as string) ?? '+'}
             ariaLabel={`Opération ${index + 1}`}
             options={OPS.map((op) => ({ value: op, label: op }))}
-            onChange={(op) => patch(index, { ...item, op: op as ArithOp })}
+            onChange={(op) => {
+              const badSub =
+                (exerciseType.includes('ex07') || exerciseType.includes('ex08')) &&
+                op === '−' &&
+                typeof item.a === 'number' &&
+                typeof item.b === 'number' &&
+                item.a <= item.b
+              patch(index, {
+                ...item,
+                op: op as ArithOp,
+                libreError: badSub
+                  ? 'Pour une soustraction, le premier nombre doit être plus grand que le second.'
+                  : undefined,
+              })
+            }}
           />
           <NumInput
             compact
@@ -555,9 +577,14 @@ function renderFields(
             onCommit={(raw) => {
               const b = Number(raw.replace(',', '.'))
               if (!Number.isFinite(b)) return
+              const a = item.a
+              const badSub = checkSubOrder && typeof a === 'number' && a <= b
               patch(index, {
                 ...item,
                 b,
+                libreError: badSub
+                  ? 'Pour une soustraction, le premier nombre doit être plus grand que le second.'
+                  : undefined,
                 prompt:
                   item.layout === 'column-empty' || item.blankOperands
                     ? `${item.a != null ? fmt(item.a) : ''} ${item.op ?? '+'} ${raw}`
@@ -566,13 +593,13 @@ function renderFields(
             }}
           />
         </div>
+        {item.libreError ? (
+          <p className="libre-field-error" role="alert">
+            {item.libreError}
+          </p>
+        ) : null}
         <Field label="Corrigé">
-          <LineInput
-            answer
-            value={item.answer ?? ''}
-            ariaLabel={`Corrigé ${index + 1}`}
-            onChange={(answer) => patch(index, { ...item, answer })}
-          />
+          <CorrigeBox value={item.answer ?? ''} ariaLabel={`Corrigé ${index + 1}`} />
         </Field>
       </>
     )

@@ -405,6 +405,8 @@ export type MathItem = {
   imagesAvailable?: boolean
   /** Grille vide à remplir (poser soi-même les nombres). */
   blankOperands?: boolean
+  /** Message d’erreur mode libre (ex. soustraction a ≤ b). */
+  libreError?: string
   /** Point pour repérage / transformations. */
   point?: { x: number; y: number; label?: string }
   /** Image du point (corrigé ou second point). */
