@@ -54,7 +54,7 @@ export const TCM_CFR_EXERCISE_TYPES: ExerciseType[] = [
   t('tcm-cfr-ex15', 'tcm-cfr-test', '16 — Problème (travail)', 'Problème à étapes (salaire / partage).', 'Résolvez le problème.', 1),
   t('tcm-cfr-ex16', 'tcm-cfr-test', '17 — Nommer et propriétés', 'Nommer des figures et leurs propriétés.', 'Nommez ces figures géométriques et notez leurs propriétés.', 1),
   t('tcm-cfr-ex17', 'tcm-cfr-test', '18 — Nommer des formes', 'Nommer d’autres formes géométriques.', 'Nommez ces formes géométriques.', 1),
-  t('tcm-cfr-ex19', 'tcm-cfr-test', '19 — Mesurer des segments', 'Mesurer des segments puis QCM plus long / plus court.', 'Mesurez les segments avec la règle et répondez aux questions.', 1),
+  t('tcm-cfr-ex19', 'tcm-cfr-test', '19 — Mesurer des segments', 'Mesurer des segments puis plus long / plus court.', 'Mesurez les segments avec la règle et répondez aux questions.', 1),
   t('tcm-cfr-ex20', 'tcm-cfr-test', '20 — Conversions (m…mm)', 'Convertir des longueurs (m, dm, cm, mm).', 'Convertissez.', 2),
   t('tcm-cfr-ex21', 'tcm-cfr-test', '21 — Fractions → décimaux', 'Écrire des fractions en nombres décimaux.', 'Écrivez en nombre décimal les fractions suivantes.', 2),
   t('tcm-cfr-ex22', 'tcm-cfr-test', '22 — Carré (décimaux)', 'Périmètre et aire d’un carré (décimaux).', 'Calculez le périmètre et l’aire.', 1),
