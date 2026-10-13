@@ -4436,6 +4436,7 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
 /* Numérotation alignée sur les autres exercices (écoute, etc.). */
 .worksheet-sheet.is-alphabetisation .listen-check-num,
 .worksheet-sheet.is-alphabetisation .audio-order-qr-num,
+.worksheet-sheet.is-alphabetisation .audio-order-slot-label,
 .worksheet-sheet.is-alphabetisation .audio-order-slot-line,
 .worksheet-sheet.is-alphabetisation .syllable-pronounce-num{
   font-size:14px
