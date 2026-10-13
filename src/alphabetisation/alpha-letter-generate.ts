@@ -48,6 +48,7 @@ function soulignerWords(
       {
         layout: 'mark-letter',
         markLetterWords: words,
+        themeGraphemes: [...bank.graphemes],
         answer: words.join(' · '),
       },
     ],

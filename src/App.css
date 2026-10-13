@@ -4526,8 +4526,11 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
 .worksheet-sheet.is-alphabetisation .syllable-pronounce-block.is-2col .syllable-pronounce-row{
   width:100%
 }
-/* Types 3–5 : lettres en graisse normale (pas en gras). */
-.worksheet-sheet.is-alphabetisation .letter-table-cell,
+/* Types 2–3 : lettres en graisse normale (pas en gras). */
+.worksheet-sheet.is-alphabetisation .letter-table-cell{
+  font-weight:400
+}
+/* Types 4–5 : exercice plain ; corrigé = lettres soulignées + gras. */
 .worksheet-sheet.is-alphabetisation .mark-letter-cell{
   font-weight:400
 }
@@ -4539,6 +4542,12 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
   border:1px solid #d8dde6;padding:3mm 4mm;text-align:center;
   font-weight:400;line-height:1.25;background:#fff;
   letter-spacing:10px
+}
+.mark-letter-block.is-answers .mark-letter-cell .syllable-vowel{
+  text-decoration:underline;
+  text-underline-offset:0.15em;
+  font-weight:700;
+  color:inherit
 }
 .syllable-pronounce-block{display:flex;flex-direction:column;gap:5px;width:100%}
 .syllable-pronounce-block.is-2col{display:grid}

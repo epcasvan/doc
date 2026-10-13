@@ -276,7 +276,7 @@ export function ItemView({
         {item.layout === 'syllable-sound' && (
           <SyllableSoundBlock item={item} mode={mode} />
         )}
-        {item.layout === 'mark-letter' && <MarkLetterBlock item={item} />}
+        {item.layout === 'mark-letter' && <MarkLetterBlock item={item} mode={mode} />}
         {item.layout === 'syllable-pronounce' && (
           <SyllablePronounceBlock item={item} />
         )}

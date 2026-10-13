@@ -312,15 +312,20 @@ export function PhraseScrambleBlock({ item, mode }: { item: MathItem; mode: Prev
   )
 }
 
-export function MarkLetterBlock({ item }: { item: MathItem }) {
+export function MarkLetterBlock({ item, mode }: { item: MathItem; mode: PreviewMode }) {
   const words = item.markLetterWords ?? []
+  const graphemes = item.themeGraphemes ?? []
+  const show = mode === 'answers'
   return (
-    <div className="mark-letter-block" aria-label="Souligner la lettre">
+    <div
+      className={`mark-letter-block${show ? ' is-answers' : ' is-exercise'}`}
+      aria-label="Souligner la lettre"
+    >
       {item.prompt ? <p className="column-prompt">{item.prompt}</p> : null}
       <div className="mark-letter-grid">
         {words.map((word, index) => (
           <div className="mark-letter-cell" key={`ml-${index}-${word}`}>
-            {word}
+            {show && graphemes.length ? highlightThemeLetters(word, graphemes) : word}
           </div>
         ))}
       </div>
