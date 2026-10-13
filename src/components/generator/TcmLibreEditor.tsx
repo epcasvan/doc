@@ -610,28 +610,39 @@ function renderFields(
             </Field>
           </div>
         ))}
-        {(item.options ?? []).map((q, qi) => (
-          <Field key={`q-${qi}`} label={`Question ${qi + 1}`}>
-            <LineInput
-              wide
-              value={q}
-              ariaLabel={`Question ${qi + 1}`}
-              onChange={(raw) => {
-                const options = [...(item.options ?? [])]
-                options[qi] = raw
-                patch(index, { ...item, options })
-              }}
-            />
-          </Field>
-        ))}
-        <Field label="Corrigé (ex. a ; c)">
-          <LineInput
-            answer
-            value={item.answer ?? ''}
-            ariaLabel={`Corrigé segments ${index + 1}`}
-            onChange={(answer) => patch(index, { ...item, answer })}
-          />
-        </Field>
+        {(item.options ?? []).map((q, qi) => {
+          const answers = (item.answer ?? '').split(';').map((s) => s.trim())
+          while (answers.length < (item.options?.length ?? 0)) answers.push('')
+          return (
+            <div key={`q-${qi}`} className="libre-inline-triple is-op">
+              <Field label={`Question ${qi + 1}`}>
+                <LineInput
+                  wide
+                  value={q}
+                  ariaLabel={`Question ${qi + 1}`}
+                  onChange={(raw) => {
+                    const options = [...(item.options ?? [])]
+                    options[qi] = raw
+                    patch(index, { ...item, options })
+                  }}
+                />
+              </Field>
+              <Field label={`Corrigé ${qi + 1}`}>
+                <LineInput
+                  answer
+                  compact
+                  value={answers[qi] ?? ''}
+                  ariaLabel={`Corrigé question ${qi + 1}`}
+                  onChange={(raw) => {
+                    const next = [...answers]
+                    next[qi] = raw.trim()
+                    patch(index, { ...item, answer: next.join(' ; ') })
+                  }}
+                />
+              </Field>
+            </div>
+          )
+        })}
       </>
     )
   }

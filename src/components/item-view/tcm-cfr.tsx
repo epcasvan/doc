@@ -150,24 +150,17 @@ export function SegmentMeasureBlock({
         })}
       </div>
       {qPrompts.map((q, qi) => (
-        <div className="tcm-cfr-segment-qcm" key={`q-${qi}`}>
-          <div className="tcm-cfr-segment-q-head">
-            <span className="tcm-cfr-segment-q-num" aria-hidden>
-              {qi + 1}.
-            </span>
-            <p className="prompt-stack-text">{q}</p>
-          </div>
-          <div className="tcm-cfr-qcm-choices">
-            {SEGMENT_LETTERS.map((letter) => {
-              const checked = show && answers[qi] === letter
-              return (
-                <label key={letter} className={`tcm-cfr-qcm-choice${checked ? ' is-checked' : ''}`}>
-                  <span className="tcm-cfr-qcm-letter">{letter}</span>
-                  <span className={`listen-check-box${checked ? ' checked' : ''}`} />
-                </label>
-              )
-            })}
-          </div>
+        <div className="tcm-cfr-segment-q-line" key={`q-${qi}`}>
+          <span className="tcm-cfr-segment-q-num" aria-hidden>
+            {qi + 1}.
+          </span>
+          <p className="prompt-stack-text">{q}</p>
+          <span
+            className={`answer-line-field compact tcm-cfr-segment-q-answer${show ? ' filled' : ''}`}
+            aria-label={`Réponse question ${qi + 1}`}
+          >
+            {show ? answers[qi] || '\u00a0' : '\u00a0'}
+          </span>
         </div>
       ))}
     </div>

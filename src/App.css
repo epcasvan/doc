@@ -4415,6 +4415,15 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
 .tcm-cfr-segment-qcm + .tcm-cfr-segment-qcm{margin-top:30px}
 .tcm-cfr-segment-q-head{display:grid;grid-template-columns:1.4em minmax(0,1fr);gap:6px;align-items:baseline}
 .tcm-cfr-segment-q-num{color:var(--purple,#5b3a8c);font-weight:700;font-size:12pt;line-height:1.35}
+/* Ex. 19 : question + trait de réponse à droite sur la même ligne. */
+.tcm-cfr-segment-q-line{
+  margin-top:14px;display:grid;grid-template-columns:1.4em minmax(0,1fr) 2.8em;
+  gap:8px;align-items:baseline
+}
+.tcm-cfr-segment-q-line .prompt-stack-text{margin:0}
+.tcm-cfr-segment-q-answer{
+  width:2.8em;min-width:2.8em;text-align:center;justify-self:end
+}
 /* TCM CFR ex. 17–18 : cadre forme | traits, hauteur uniforme (trait = brouillon). */
 .geo-block.geo-name-card{
   border:1px solid #c8c4d0;padding:8px 10px;width:100%;box-sizing:border-box
