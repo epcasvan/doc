@@ -41,8 +41,8 @@ function T(id: string, polylines: GridPt[][]): SymmetryTemplate {
 }
 
 /**
- * 20 silhouettes d’objets (géométrie originale).
- * Toutes définies à gauche de l’axe, sans le toucher (x max ≤ 9).
+ * Silhouettes d’objets — tous les sommets sur des intersections entières
+ * (pas de x,y en .5). Définies à gauche de l’axe (x max ≤ 9).
  */
 export const SYMMETRY_TEMPLATES: readonly SymmetryTemplate[] = [
   T('bateau', [
@@ -74,15 +74,15 @@ export const SYMMETRY_TEMPLATES: readonly SymmetryTemplate[] = [
   T('maison', [
     [
       { x: 1, y: 1 },
-      { x: 8, y: 1 },
-      { x: 8, y: 5 },
+      { x: 9, y: 1 },
+      { x: 9, y: 5 },
       { x: 1, y: 5 },
       { x: 1, y: 1 },
     ],
     [
       { x: 1, y: 5 },
-      { x: 4.5, y: 9 },
-      { x: 8, y: 5 },
+      { x: 5, y: 9 },
+      { x: 9, y: 5 },
     ],
     [
       { x: 3, y: 1 },
@@ -93,27 +93,27 @@ export const SYMMETRY_TEMPLATES: readonly SymmetryTemplate[] = [
     [
       { x: 6, y: 3 },
       { x: 6, y: 4 },
-      { x: 7, y: 4 },
-      { x: 7, y: 3 },
+      { x: 8, y: 4 },
+      { x: 8, y: 3 },
       { x: 6, y: 3 },
     ],
   ]),
 
   T('arbre', [
     [
-      { x: 4, y: 1 },
-      { x: 4, y: 4 },
+      { x: 5, y: 0 },
+      { x: 5, y: 4 },
     ],
     [
-      { x: 3, y: 1 },
-      { x: 5, y: 1 },
+      { x: 3, y: 0 },
+      { x: 7, y: 0 },
     ],
     [
       { x: 1, y: 4 },
-      { x: 7, y: 4 },
-      { x: 6, y: 6 },
-      { x: 4, y: 9 },
-      { x: 2, y: 6 },
+      { x: 9, y: 4 },
+      { x: 7, y: 7 },
+      { x: 5, y: 10 },
+      { x: 3, y: 7 },
       { x: 1, y: 4 },
     ],
   ]),
@@ -131,82 +131,6 @@ export const SYMMETRY_TEMPLATES: readonly SymmetryTemplate[] = [
     ],
   ]),
 
-  T('escaliers', [
-    [
-      { x: 1, y: 1 },
-      { x: 3, y: 1 },
-      { x: 3, y: 3 },
-      { x: 5, y: 3 },
-      { x: 5, y: 5 },
-      { x: 7, y: 5 },
-      { x: 7, y: 7 },
-      { x: 9, y: 7 },
-      { x: 9, y: 9 },
-    ],
-  ]),
-
-  T('drapeau', [
-    [
-      { x: 2, y: 1 },
-      { x: 2, y: 9 },
-    ],
-    [
-      { x: 2, y: 9 },
-      { x: 8, y: 9 },
-      { x: 8, y: 6 },
-      { x: 2, y: 6 },
-    ],
-  ]),
-
-  T('fusee', [
-    [
-      { x: 3, y: 2 },
-      { x: 6, y: 2 },
-      { x: 6, y: 7 },
-      { x: 4.5, y: 9 },
-      { x: 3, y: 7 },
-      { x: 3, y: 2 },
-    ],
-    [
-      { x: 3, y: 2 },
-      { x: 1, y: 1 },
-      { x: 3, y: 1 },
-    ],
-    [
-      { x: 6, y: 2 },
-      { x: 8, y: 1 },
-      { x: 6, y: 1 },
-    ],
-    [
-      { x: 4.5, y: 4 },
-      { x: 4.5, y: 6 },
-    ],
-  ]),
-
-  T('poisson', [
-    [
-      { x: 1, y: 5 },
-      { x: 3, y: 7 },
-      { x: 6, y: 8 },
-      { x: 8, y: 6 },
-      { x: 9, y: 5 },
-      { x: 8, y: 4 },
-      { x: 6, y: 2 },
-      { x: 3, y: 3 },
-      { x: 1, y: 5 },
-    ],
-    [
-      { x: 1, y: 5 },
-      { x: 0, y: 7 },
-      { x: 0, y: 3 },
-      { x: 1, y: 5 },
-    ],
-    [
-      { x: 7, y: 5.5 },
-      { x: 7.5, y: 5.5 },
-    ],
-  ]),
-
   T('cle', [
     [
       { x: 2, y: 7 },
@@ -221,71 +145,13 @@ export const SYMMETRY_TEMPLATES: readonly SymmetryTemplate[] = [
     ],
     [
       { x: 5, y: 3 },
-      { x: 5, y: 1 },
-      { x: 7, y: 1 },
-      { x: 7, y: 2 },
+      { x: 5, y: 0 },
+      { x: 8, y: 0 },
+      { x: 8, y: 1 },
+      { x: 6, y: 1 },
       { x: 6, y: 2 },
-      { x: 6, y: 1.5 },
-    ],
-  ]),
-
-  T('chapeau', [
-    [
-      { x: 0, y: 3 },
-      { x: 9, y: 3 },
-    ],
-    [
-      { x: 2, y: 3 },
-      { x: 2, y: 6 },
-      { x: 3, y: 8 },
-      { x: 6, y: 8 },
-      { x: 7, y: 6 },
-      { x: 7, y: 3 },
-    ],
-  ]),
-
-  T('oiseau', [
-    [
-      { x: 1, y: 5 },
-      { x: 3, y: 7 },
-      { x: 5, y: 7 },
-      { x: 7, y: 5 },
-      { x: 8, y: 4 },
-      { x: 6, y: 4 },
-      { x: 5, y: 2 },
-      { x: 3, y: 4 },
-      { x: 1, y: 5 },
-    ],
-    [
-      { x: 5, y: 7 },
-      { x: 5, y: 9 },
-      { x: 6, y: 9 },
-    ],
-    [
-      { x: 1, y: 5 },
-      { x: 0, y: 6 },
-    ],
-  ]),
-
-  T('voiture', [
-    [
-      { x: 1, y: 2 },
-      { x: 8, y: 2 },
-      { x: 8, y: 4 },
-      { x: 6, y: 4 },
-      { x: 5, y: 6 },
-      { x: 3, y: 6 },
-      { x: 2, y: 4 },
-      { x: 1, y: 4 },
-      { x: 1, y: 2 },
-    ],
-    [
-      { x: 2.5, y: 2 },
-      { x: 2.5, y: 1 },
-    ],
-    [
-      { x: 6.5, y: 2 },
-      { x: 6.5, y: 1 },
+      { x: 7, y: 2 },
+      { x: 7, y: 1 },
     ],
   ]),
 
@@ -303,113 +169,68 @@ export const SYMMETRY_TEMPLATES: readonly SymmetryTemplate[] = [
 
   T('coeur', [
     [
-      { x: 4.5, y: 1 },
-      { x: 1, y: 4 },
+      { x: 5, y: 0 },
+      { x: 1, y: 3 },
       { x: 1, y: 6 },
-      { x: 2.5, y: 8 },
-      { x: 4.5, y: 6.5 },
-      { x: 6.5, y: 8 },
-      { x: 8, y: 6 },
-      { x: 8, y: 4 },
-      { x: 4.5, y: 1 },
+      { x: 3, y: 8 },
+      { x: 5, y: 6 },
+      { x: 7, y: 8 },
+      { x: 9, y: 6 },
+      { x: 9, y: 3 },
+      { x: 5, y: 0 },
     ],
   ]),
 
   T('etoile', [
     [
-      { x: 4.5, y: 9 },
-      { x: 5.2, y: 6 },
-      { x: 8, y: 6 },
-      { x: 5.8, y: 4.2 },
-      { x: 6.8, y: 1 },
-      { x: 4.5, y: 2.8 },
-      { x: 2.2, y: 1 },
-      { x: 3.2, y: 4.2 },
-      { x: 1, y: 6 },
-      { x: 3.8, y: 6 },
-      { x: 4.5, y: 9 },
+      { x: 5, y: 10 },
+      { x: 6, y: 7 },
+      { x: 9, y: 7 },
+      { x: 7, y: 5 },
+      { x: 8, y: 2 },
+      { x: 5, y: 4 },
+      { x: 2, y: 2 },
+      { x: 3, y: 5 },
+      { x: 1, y: 7 },
+      { x: 4, y: 7 },
+      { x: 5, y: 10 },
     ],
   ]),
 
   T('champignon', [
     [
       { x: 1, y: 5 },
-      { x: 8, y: 5 },
-      { x: 8, y: 7 },
-      { x: 6, y: 9 },
-      { x: 3, y: 9 },
+      { x: 9, y: 5 },
+      { x: 9, y: 7 },
+      { x: 7, y: 10 },
+      { x: 3, y: 10 },
       { x: 1, y: 7 },
       { x: 1, y: 5 },
     ],
     [
-      { x: 3.5, y: 1 },
-      { x: 3.5, y: 5 },
-      { x: 5.5, y: 5 },
-      { x: 5.5, y: 1 },
-      { x: 3.5, y: 1 },
-    ],
-  ]),
-
-  T('ancre', [
-    [
-      { x: 4.5, y: 9 },
-      { x: 4.5, y: 2 },
-    ],
-    [
-      { x: 3, y: 8 },
-      { x: 6, y: 8 },
-    ],
-    [
-      { x: 2, y: 3 },
-      { x: 2, y: 1 },
-      { x: 4.5, y: 2 },
-      { x: 7, y: 1 },
-      { x: 7, y: 3 },
-    ],
-    [
-      { x: 3.5, y: 9 },
-      { x: 5.5, y: 9 },
-      { x: 5.5, y: 8 },
-      { x: 3.5, y: 8 },
-      { x: 3.5, y: 9 },
+      { x: 3, y: 0 },
+      { x: 3, y: 5 },
+      { x: 7, y: 5 },
+      { x: 7, y: 0 },
+      { x: 3, y: 0 },
     ],
   ]),
 
   T('parapluie', [
     [
       { x: 1, y: 6 },
-      { x: 4.5, y: 9 },
-      { x: 8, y: 6 },
+      { x: 5, y: 10 },
+      { x: 9, y: 6 },
       { x: 1, y: 6 },
     ],
     [
-      { x: 4.5, y: 6 },
-      { x: 4.5, y: 1 },
+      { x: 5, y: 6 },
+      { x: 5, y: 1 },
     ],
     [
-      { x: 4.5, y: 1 },
-      { x: 6, y: 1 },
-      { x: 6, y: 2 },
-    ],
-  ]),
-
-  T('tasse', [
-    [
-      { x: 2, y: 1 },
-      { x: 6, y: 1 },
-      { x: 6, y: 7 },
-      { x: 2, y: 7 },
-      { x: 2, y: 1 },
-    ],
-    [
-      { x: 6, y: 5 },
-      { x: 8, y: 5 },
-      { x: 8, y: 3 },
-      { x: 6, y: 3 },
-    ],
-    [
-      { x: 1, y: 7 },
-      { x: 7, y: 7 },
+      { x: 5, y: 1 },
+      { x: 7, y: 1 },
+      { x: 7, y: 2 },
     ],
   ]),
 
@@ -431,6 +252,317 @@ export const SYMMETRY_TEMPLATES: readonly SymmetryTemplate[] = [
       { x: 5, y: 7 },
     ],
   ]),
+
+  /** Vase agrandi — presque toute la moitié gauche. */
+  T('vase', [
+    [
+      { x: 2, y: 10 },
+      { x: 8, y: 10 },
+      { x: 7, y: 8 },
+      { x: 8, y: 6 },
+      { x: 9, y: 3 },
+      { x: 7, y: 0 },
+      { x: 3, y: 0 },
+      { x: 1, y: 3 },
+      { x: 2, y: 6 },
+      { x: 3, y: 8 },
+      { x: 2, y: 10 },
+    ],
+    [
+      { x: 2, y: 6 },
+      { x: 0, y: 7 },
+      { x: 0, y: 5 },
+      { x: 2, y: 4 },
+    ],
+    [
+      { x: 8, y: 6 },
+      { x: 9, y: 7 },
+      { x: 9, y: 5 },
+      { x: 8, y: 4 },
+    ],
+    [
+      { x: 5, y: 10 },
+      { x: 5, y: 0 },
+    ],
+    [
+      { x: 2, y: 10 },
+      { x: 5, y: 7 },
+      { x: 8, y: 10 },
+    ],
+  ]),
+
+  T('chateau', [
+    [
+      { x: 1, y: 1 },
+      { x: 9, y: 1 },
+      { x: 9, y: 5 },
+      { x: 1, y: 5 },
+      { x: 1, y: 1 },
+    ],
+    [
+      { x: 1, y: 5 },
+      { x: 1, y: 7 },
+      { x: 2, y: 7 },
+      { x: 2, y: 5 },
+    ],
+    [
+      { x: 8, y: 5 },
+      { x: 8, y: 7 },
+      { x: 9, y: 7 },
+      { x: 9, y: 5 },
+    ],
+    [
+      { x: 4, y: 5 },
+      { x: 4, y: 8 },
+      { x: 6, y: 8 },
+      { x: 6, y: 5 },
+    ],
+    [
+      { x: 4, y: 8 },
+      { x: 5, y: 10 },
+      { x: 6, y: 8 },
+    ],
+    [
+      { x: 4, y: 1 },
+      { x: 4, y: 3 },
+      { x: 6, y: 3 },
+      { x: 6, y: 1 },
+    ],
+  ]),
+
+  T('moulin', [
+    [
+      { x: 3, y: 3 },
+      { x: 7, y: 3 },
+      { x: 7, y: 7 },
+      { x: 3, y: 7 },
+      { x: 3, y: 3 },
+    ],
+    [
+      { x: 3, y: 3 },
+      { x: 7, y: 7 },
+    ],
+    [
+      { x: 7, y: 3 },
+      { x: 3, y: 7 },
+    ],
+    [
+      { x: 3, y: 7 },
+      { x: 5, y: 10 },
+      { x: 7, y: 7 },
+    ],
+    [
+      { x: 7, y: 7 },
+      { x: 9, y: 5 },
+      { x: 7, y: 3 },
+    ],
+    [
+      { x: 7, y: 3 },
+      { x: 5, y: 0 },
+      { x: 3, y: 3 },
+    ],
+    [
+      { x: 3, y: 3 },
+      { x: 1, y: 5 },
+      { x: 3, y: 7 },
+    ],
+    [
+      { x: 5, y: 5 },
+      { x: 5, y: 0 },
+    ],
+  ]),
+
+  T('lune', [
+    [
+      { x: 6, y: 1 },
+      { x: 3, y: 1 },
+      { x: 1, y: 3 },
+      { x: 1, y: 7 },
+      { x: 3, y: 9 },
+      { x: 6, y: 9 },
+      { x: 4, y: 7 },
+      { x: 4, y: 3 },
+      { x: 6, y: 1 },
+    ],
+  ]),
+
+  T('papillon', [
+    [
+      { x: 5, y: 2 },
+      { x: 5, y: 8 },
+    ],
+    [
+      { x: 5, y: 5 },
+      { x: 1, y: 8 },
+      { x: 1, y: 6 },
+      { x: 5, y: 5 },
+    ],
+    [
+      { x: 5, y: 5 },
+      { x: 1, y: 4 },
+      { x: 1, y: 2 },
+      { x: 5, y: 5 },
+    ],
+    [
+      { x: 5, y: 5 },
+      { x: 9, y: 8 },
+      { x: 9, y: 6 },
+      { x: 5, y: 5 },
+    ],
+    [
+      { x: 5, y: 5 },
+      { x: 9, y: 4 },
+      { x: 9, y: 2 },
+      { x: 5, y: 5 },
+    ],
+  ]),
+
+  T('robot', [
+    [
+      { x: 3, y: 6 },
+      { x: 7, y: 6 },
+      { x: 7, y: 9 },
+      { x: 3, y: 9 },
+      { x: 3, y: 6 },
+    ],
+    [
+      { x: 2, y: 1 },
+      { x: 8, y: 1 },
+      { x: 8, y: 6 },
+      { x: 2, y: 6 },
+      { x: 2, y: 1 },
+    ],
+    [
+      { x: 4, y: 7 },
+      { x: 4, y: 8 },
+    ],
+    [
+      { x: 6, y: 7 },
+      { x: 6, y: 8 },
+    ],
+    [
+      { x: 2, y: 4 },
+      { x: 0, y: 4 },
+      { x: 0, y: 2 },
+    ],
+    [
+      { x: 8, y: 4 },
+      { x: 9, y: 4 },
+      { x: 9, y: 2 },
+    ],
+    [
+      { x: 3, y: 1 },
+      { x: 3, y: 0 },
+    ],
+    [
+      { x: 7, y: 1 },
+      { x: 7, y: 0 },
+    ],
+  ]),
+
+  T('soleil', [
+    [
+      { x: 3, y: 4 },
+      { x: 5, y: 3 },
+      { x: 7, y: 4 },
+      { x: 7, y: 6 },
+      { x: 5, y: 7 },
+      { x: 3, y: 6 },
+      { x: 3, y: 4 },
+    ],
+    [
+      { x: 5, y: 7 },
+      { x: 5, y: 10 },
+    ],
+    [
+      { x: 5, y: 3 },
+      { x: 5, y: 0 },
+    ],
+    [
+      { x: 7, y: 5 },
+      { x: 9, y: 5 },
+    ],
+    [
+      { x: 3, y: 5 },
+      { x: 1, y: 5 },
+    ],
+    [
+      { x: 7, y: 6 },
+      { x: 9, y: 8 },
+    ],
+    [
+      { x: 7, y: 4 },
+      { x: 9, y: 2 },
+    ],
+    [
+      { x: 3, y: 6 },
+      { x: 1, y: 8 },
+    ],
+    [
+      { x: 3, y: 4 },
+      { x: 1, y: 2 },
+    ],
+  ]),
+
+  T('cloche', [
+    [
+      { x: 2, y: 2 },
+      { x: 8, y: 2 },
+      { x: 8, y: 3 },
+      { x: 7, y: 3 },
+      { x: 7, y: 6 },
+      { x: 5, y: 9 },
+      { x: 3, y: 6 },
+      { x: 3, y: 3 },
+      { x: 2, y: 3 },
+      { x: 2, y: 2 },
+    ],
+    [
+      { x: 5, y: 9 },
+      { x: 5, y: 10 },
+    ],
+    [
+      { x: 4, y: 1 },
+      { x: 6, y: 1 },
+      { x: 6, y: 2 },
+      { x: 4, y: 2 },
+      { x: 4, y: 1 },
+    ],
+  ]),
+
+  T('feuille', [
+    [
+      { x: 5, y: 0 },
+      { x: 2, y: 2 },
+      { x: 1, y: 5 },
+      { x: 2, y: 8 },
+      { x: 5, y: 10 },
+      { x: 8, y: 8 },
+      { x: 9, y: 5 },
+      { x: 8, y: 2 },
+      { x: 5, y: 0 },
+    ],
+    [
+      { x: 5, y: 0 },
+      { x: 5, y: 10 },
+    ],
+    [
+      { x: 5, y: 5 },
+      { x: 2, y: 6 },
+    ],
+    [
+      { x: 5, y: 5 },
+      { x: 8, y: 6 },
+    ],
+    [
+      { x: 5, y: 3 },
+      { x: 3, y: 3 },
+    ],
+    [
+      { x: 5, y: 3 },
+      { x: 7, y: 3 },
+    ],
+  ]),
 ]
 
 export const SYMMETRY_FIGURE_LABELS: Record<string, string> = {
@@ -438,22 +570,22 @@ export const SYMMETRY_FIGURE_LABELS: Record<string, string> = {
   maison: 'maison',
   arbre: 'arbre',
   fleche: 'flèche',
-  escaliers: 'escaliers',
-  drapeau: 'drapeau',
-  fusee: 'fusée',
-  poisson: 'poisson',
   cle: 'clé',
-  chapeau: 'chapeau',
-  oiseau: 'oiseau',
-  voiture: 'voiture',
   eclair: 'éclair',
   coeur: 'cœur',
   etoile: 'étoile',
   champignon: 'champignon',
-  ancre: 'ancre',
   parapluie: 'parapluie',
-  tasse: 'tasse',
   crayon: 'crayon',
+  vase: 'vase',
+  chateau: 'château',
+  moulin: 'moulin',
+  lune: 'lune',
+  papillon: 'papillon',
+  robot: 'robot',
+  soleil: 'soleil',
+  cloche: 'cloche',
+  feuille: 'feuille',
 }
 
 /** Symétrie orthogonale par rapport à la verticale x = axisX. */
@@ -503,9 +635,11 @@ function fitInLeftHalf(polylines: GridPt[][], axisX: number, rows: number): Grid
   const maxAllowedY = rows
   const boxW = maxX - minX
   const boxH = maxY - minY
-  // Centrer dans la moitié gauche disponible.
-  const targetMinX = minAllowedX + Math.max(0, (maxAllowedX - minAllowedX - boxW) / 2)
-  const targetMinY = minAllowedY + Math.max(0, (maxAllowedY - minAllowedY - boxH) / 2)
+  // Centrer sur des intersections entières (jamais de demi-cases).
+  const targetMinX =
+    minAllowedX + Math.round(Math.max(0, (maxAllowedX - minAllowedX - boxW) / 2))
+  const targetMinY =
+    minAllowedY + Math.round(Math.max(0, (maxAllowedY - minAllowedY - boxH) / 2))
   let dx = targetMinX - minX
   let dy = targetMinY - minY
   // Garde-fous si le cadrage déborde encore.
@@ -513,7 +647,11 @@ function fitInLeftHalf(polylines: GridPt[][], axisX: number, rows: number): Grid
   if (maxX + dx > maxAllowedX) dx = maxAllowedX - maxX
   if (minY + dy < minAllowedY) dy = minAllowedY - minY
   if (maxY + dy > maxAllowedY) dy = maxAllowedY - maxY
-  return polylines.map((poly) => poly.map((p) => ({ x: p.x + dx, y: p.y + dy })))
+  dx = Math.round(dx)
+  dy = Math.round(dy)
+  return polylines.map((poly) =>
+    poly.map((p) => ({ x: Math.round(p.x + dx), y: Math.round(p.y + dy) })),
+  )
 }
 
 /** Identifiant de base (sans suffixe -droite éventuel). */
