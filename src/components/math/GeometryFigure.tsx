@@ -228,16 +228,16 @@ export function GeometryFigure({ type, dims }: { type?: Figure; dims?: FigureDim
 
         {triPlacement && (
           <>
-            {/* Scalène a/b/c/h — polygone pleine hauteur du viewBox 9:4 (= cadre brouillon). */}
+            {/* Scalène a/b/c/h — cotes numériques (comme carré/rectangle) ; h = conservé. */}
             <polygon points="110,2 28,198 228,198" />
             <L x={(28 + 228) / 2} y={216} baseline="hanging">
-              a = {fmt(d.a!)} {unit}
+              {fmt(d.a!)} {unit}
             </L>
             <L x={(110 + 228) / 2 + 34} y={(2 + 198) / 2 - 6} anchor="start">
-              b = {fmt(d.b!)} {unit}
+              {fmt(d.b!)} {unit}
             </L>
             <L x={(110 + 28) / 2 - 16} y={(2 + 198) / 2} anchor="end">
-              c = {fmt(d.c!)} {unit}
+              {fmt(d.c!)} {unit}
             </L>
             <HeightBracket
               shapeRightX={228}
