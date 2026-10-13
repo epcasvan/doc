@@ -135,7 +135,7 @@ const isSoutienCols123 =
   soutienKind === 'syllabe-son-qr'
 /** Type 7 : grille images 3–5 colonnes. */
 const isSoutienCols345 = soutienKind === 'ecouter-image'
-/** Type 1 Alpha : 2 / 3 / 4 colonnes (4 / 6 / 12 mots). */
+/** Type 1 Alpha : 3 / 4 colonnes (9 / 12 mots). */
 const isAlphaMotsCols = isAlphabetisation && soutienKind === 'mots'
 /** Types 10–11 Alpha : lecture de syllabes 4 / 5 / 6 colonnes. */
 const isAlphaSyllabeTableCols =
