@@ -13,14 +13,15 @@ export type FracShapeItem = {
   multi: boolean
 }
 
+/** Parts (dénominateur) par forme — TCM CFR ex. 12 / 13. */
 function pickSingleShapeCfg(rng: Rng): { kind: ShapeKind; d: number } {
   const pickers: Array<() => { kind: ShapeKind; d: number }> = [
-    () => ({ kind: 'rect', d: int(rng, 2, 12) }),
-    () => ({ kind: 'square', d: pick(rng, [2, 4, 9, 16] as const) }),
-    () => ({ kind: 'triangle', d: pick(rng, [2, 3, 4, 6, 9] as const) }),
-    () => ({ kind: 'circle', d: int(rng, 2, 10) }),
-    () => ({ kind: 'semicircle', d: int(rng, 2, 8) }),
-    () => ({ kind: 'quartercircle', d: int(rng, 2, 8) }),
+    () => ({ kind: 'rect', d: int(rng, 2, 20) }),
+    () => ({ kind: 'square', d: int(rng, 2, 10) }),
+    () => ({ kind: 'triangle', d: pick(rng, [1, 2, 3, 4, 6, 9] as const) }),
+    () => ({ kind: 'circle', d: int(rng, 2, 20) }),
+    () => ({ kind: 'semicircle', d: int(rng, 2, 10) }),
+    () => ({ kind: 'quartercircle', d: int(rng, 2, 10) }),
     () => ({ kind: 'hexagon', d: pick(rng, [2, 3, 4, 6, 12] as const) }),
   ]
   return shuffle(rng, pickers)[0]!()
