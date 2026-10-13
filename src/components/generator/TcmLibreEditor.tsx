@@ -1490,32 +1490,112 @@ function renderFields(
             ))}
           </div>
         ) : null}
+        {item.figure === 'parallelogram' ? (
+          <div className="libre-inline-triple">
+            {(
+              [
+                { key: 'base', label: 'Base' },
+                { key: 'side', label: 'Côté' },
+                { key: 'height', label: 'Hauteur h' },
+              ] as const
+            ).map(({ key, label }) => (
+              <Field key={key} label={label}>
+                <NumInput
+                  value={dims[key] != null ? fmt(Number(dims[key])) : ''}
+                  ariaLabel={`${label} ${index + 1}`}
+                  onCommit={(raw) => {
+                    const v = Number(raw.replace(',', '.'))
+                    if (!Number.isFinite(v)) return
+                    patch(index, { ...item, dims: { ...dims, [key]: v } })
+                  }}
+                />
+              </Field>
+            ))}
+          </div>
+        ) : null}
+        {item.figure === 'rhombus' ? (
+          <div className="libre-inline-triple">
+            {(
+              [
+                { key: 'side', label: 'Côté c' },
+                { key: 'd1', label: 'Diagonale d₁' },
+                { key: 'd2', label: 'Diagonale d₂' },
+              ] as const
+            ).map(({ key, label }) => (
+              <Field key={key} label={label}>
+                <NumInput
+                  value={dims[key] != null ? fmt(Number(dims[key])) : ''}
+                  ariaLabel={`${label} ${index + 1}`}
+                  onCommit={(raw) => {
+                    const v = Number(raw.replace(',', '.'))
+                    if (!Number.isFinite(v)) return
+                    patch(index, { ...item, dims: { ...dims, [key]: v } })
+                  }}
+                />
+              </Field>
+            ))}
+          </div>
+        ) : null}
+        {item.figure === 'trapezoid' ? (
+          <div className="libre-inline-triple">
+            {(
+              [
+                { key: 'top', label: 'Base a' },
+                { key: 'bottom', label: 'Base b' },
+                { key: 'c', label: 'Côté c' },
+                { key: 'height', label: 'Hauteur h' },
+              ] as const
+            ).map(({ key, label }) => (
+              <Field key={key} label={label}>
+                <NumInput
+                  value={
+                    key === 'c'
+                      ? dims.c != null
+                        ? fmt(Number(dims.c))
+                        : dims.side != null
+                          ? fmt(Number(dims.side))
+                          : ''
+                      : dims[key] != null
+                        ? fmt(Number(dims[key]))
+                        : ''
+                  }
+                  ariaLabel={`${label} ${index + 1}`}
+                  onCommit={(raw) => {
+                    const v = Number(raw.replace(',', '.'))
+                    if (!Number.isFinite(v)) return
+                    patch(index, { ...item, dims: { ...dims, [key]: v } })
+                  }}
+                />
+              </Field>
+            ))}
+          </div>
+        ) : null}
+        {item.figure === 'circle' ? (
+          <Field label="Diamètre">
+            <NumInput
+              value={dims.diameter != null ? fmt(dims.diameter) : ''}
+              ariaLabel={`Diamètre ${index + 1}`}
+              onCommit={(raw) => {
+                const diameter = Number(raw.replace(',', '.'))
+                if (!Number.isFinite(diameter)) return
+                patch(index, {
+                  ...item,
+                  dims: { ...dims, diameter, radius: diameter / 2 },
+                })
+              }}
+            />
+          </Field>
+        ) : null}
         <Field label="Périmètre">
-          <LineInput
-            answer
+          <CorrigeBox
             value={item.propertyLines?.find((l) => /Périmètre/i.test(l.label))?.answer ?? ''}
             ariaLabel={`Périmètre ${index + 1}`}
-            onChange={(answer) => {
-              const propertyLines = [...(item.propertyLines ?? [])]
-              const i = propertyLines.findIndex((l) => /Périmètre/i.test(l.label))
-              if (i >= 0) propertyLines[i] = { ...propertyLines[i]!, answer }
-              else propertyLines.unshift({ label: 'Périmètre', answer })
-              patch(index, { ...item, propertyLines })
-            }}
           />
         </Field>
         <Field label="Aire">
-          <LineInput
-            answer
+          <CorrigeBox
             value={item.propertyLines?.find((l) => /Aire/i.test(l.label))?.answer ?? ''}
             ariaLabel={`Aire ${index + 1}`}
-            onChange={(answer) => {
-              const propertyLines = [...(item.propertyLines ?? [])]
-              const i = propertyLines.findIndex((l) => /Aire/i.test(l.label))
-              if (i >= 0) propertyLines[i] = { ...propertyLines[i]!, answer }
-              else propertyLines.push({ label: 'Aire', answer })
-              patch(index, { ...item, propertyLines })
-            }}
           />
         </Field>
       </>

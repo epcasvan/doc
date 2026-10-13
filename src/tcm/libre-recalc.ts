@@ -379,6 +379,83 @@ function recalcDualGeo(item: MathItem): MathItem {
       answer: `Périmètre = ${fmt(peri)} ${unit} ; Aire = ${fmt(area)} ${unit}²`,
     }
   }
+  if (item.figure === 'parallelogram') {
+    const base = parseFrNumber(String(dims.base ?? ''))
+    const side = parseFrNumber(String(dims.side ?? ''))
+    const height = parseFrNumber(String(dims.height ?? ''))
+    if (base == null || side == null || height == null) return item
+    const peri = Math.round(2 * (base + side) * 1000) / 1000
+    const area = Math.round(base * height * 1000) / 1000
+    return {
+      ...item,
+      dims: { ...dims, base, side, height, unit },
+      calcAnswer: `2 × (${fmt(base)} + ${fmt(side)})`,
+      calcAnswerSecondary: `${fmt(base)} × ${fmt(height)}`,
+      propertyLines: [
+        { label: 'Périmètre', answer: `${fmt(peri)} ${unit}` },
+        { label: 'Aire', answer: `${fmt(area)} ${unit}²` },
+      ],
+      answer: `Périmètre = ${fmt(peri)} ${unit} ; Aire = ${fmt(area)} ${unit}²`,
+    }
+  }
+  if (item.figure === 'rhombus') {
+    const side = parseFrNumber(String(dims.side ?? ''))
+    const d1 = parseFrNumber(String(dims.d1 ?? ''))
+    const d2 = parseFrNumber(String(dims.d2 ?? ''))
+    if (side == null || d1 == null || d2 == null) return item
+    const peri = Math.round(4 * side * 1000) / 1000
+    const area = Math.round(((d1 * d2) / 2) * 1000) / 1000
+    return {
+      ...item,
+      dims: { ...dims, side, d1, d2, unit },
+      calcAnswer: `4 × ${fmt(side)}`,
+      calcAnswerSecondary: `(${fmt(d1)} × ${fmt(d2)}) ÷ 2`,
+      propertyLines: [
+        { label: 'Périmètre', answer: `${fmt(peri)} ${unit}` },
+        { label: 'Aire', answer: `${fmt(area)} ${unit}²` },
+      ],
+      answer: `Périmètre = ${fmt(peri)} ${unit} ; Aire = ${fmt(area)} ${unit}²`,
+    }
+  }
+  if (item.figure === 'trapezoid') {
+    const top = parseFrNumber(String(dims.top ?? ''))
+    const bottom = parseFrNumber(String(dims.bottom ?? ''))
+    const leg = parseFrNumber(String(dims.c ?? dims.side ?? ''))
+    const height = parseFrNumber(String(dims.height ?? ''))
+    if (top == null || bottom == null || leg == null || height == null) return item
+    const peri = Math.round((top + bottom + 2 * leg) * 1000) / 1000
+    const area = Math.round((((top + bottom) * height) / 2) * 1000) / 1000
+    return {
+      ...item,
+      dims: { ...dims, top, bottom, c: leg, height, unit },
+      calcAnswer: `${fmt(top)} + ${fmt(bottom)} + 2 × ${fmt(leg)}`,
+      calcAnswerSecondary: `(${fmt(top)} + ${fmt(bottom)}) × ${fmt(height)} ÷ 2`,
+      propertyLines: [
+        { label: 'Périmètre', answer: `${fmt(peri)} ${unit}` },
+        { label: 'Aire', answer: `${fmt(area)} ${unit}²` },
+      ],
+      answer: `Périmètre = ${fmt(peri)} ${unit} ; Aire = ${fmt(area)} ${unit}²`,
+    }
+  }
+  if (item.figure === 'circle') {
+    const diameter = parseFrNumber(String(dims.diameter ?? (dims.radius != null ? dims.radius * 2 : '')))
+    if (diameter == null || diameter <= 0) return item
+    const r = diameter / 2
+    const pi = 3.14
+    const peri = Math.round(pi * diameter * 100) / 100
+    const area = Math.round(pi * r * r * 1000) / 1000
+    return {
+      ...item,
+      dims: { ...dims, diameter, radius: r, unit },
+      calcAnswer: `3,14 × ${fmt(diameter)}`,
+      calcAnswerSecondary: `3,14 × ${fmt(r)}²`,
+      propertyLines: [
+        { label: 'Périmètre', answer: `${fmt(peri)} ${unit}` },
+        { label: 'Aire', answer: `${fmt(area)} ${unit}²` },
+      ],
+      answer: `Périmètre = ${fmt(peri)} ${unit} ; Aire = ${fmt(area)} ${unit}²`,
+    }
+  }
   return item
 }
 
