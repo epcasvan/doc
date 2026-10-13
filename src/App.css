@@ -4281,14 +4281,20 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
 .libre-item-body{display:flex;flex-direction:column;gap:8px;min-width:0}
 .libre-inline-triple{display:flex;flex-wrap:wrap;gap:8px;align-items:end}
 .libre-inline-triple>.libre-field{flex:1 1 72px;min-width:64px}
-/* Comparer : deux nombres + symbole sur une seule ligne. */
-.libre-inline-triple.is-compare{
+/* Comparer / opérations en colonnes : nombres + signe sur une seule ligne. */
+.libre-inline-triple.is-compare,
+.libre-inline-triple.is-op{
   flex-wrap:nowrap;align-items:center;gap:6px
 }
-.libre-inline-triple.is-compare>.libre-line-input.is-num{
+.libre-inline-triple.is-compare>.libre-line-input.is-num,
+.libre-inline-triple.is-op>.libre-line-input.is-num{
   width:auto;flex:1 1 4.5em;min-width:3.5em;max-width:7em
 }
-.libre-inline-triple.is-compare>.libre-line-input.is-select{
+.libre-inline-triple.is-op>.libre-line-input.is-num{
+  max-width:8.5em
+}
+.libre-inline-triple.is-compare>.libre-line-input.is-select,
+.libre-inline-triple.is-op>.libre-line-input.is-select{
   width:auto;flex:0 0 auto;min-width:3.2em;max-width:4.5em
 }
 .libre-line-input{

@@ -321,43 +321,47 @@ function renderFields(
     item.layout === 'division-column'
   ) {
     return (
-      <div className="libre-inline-triple">
-        <LineInput
-          value={item.a != null ? fmt(item.a) : ''}
-          ariaLabel={`Operande A ${index + 1}`}
-          onChange={(raw) => {
-            const a = Number(raw.replace(',', '.'))
-            patch(index, {
-              ...item,
-              a: Number.isFinite(a) ? a : item.a,
-              prompt:
-                item.layout === 'column-empty' || item.blankOperands
-                  ? `${raw} ${item.op ?? '+'} ${item.b != null ? fmt(item.b) : ''}`
-                  : item.prompt,
-            })
-          }}
-        />
-        <LineSelect
-          value={(item.op as string) ?? '+'}
-          ariaLabel={`Opération ${index + 1}`}
-          options={OPS.map((op) => ({ value: op, label: op }))}
-          onChange={(op) => patch(index, { ...item, op: op as ArithOp })}
-        />
-        <LineInput
-          value={item.b != null ? fmt(item.b) : ''}
-          ariaLabel={`Operande B ${index + 1}`}
-          onChange={(raw) => {
-            const b = Number(raw.replace(',', '.'))
-            patch(index, {
-              ...item,
-              b: Number.isFinite(b) ? b : item.b,
-              prompt:
-                item.layout === 'column-empty' || item.blankOperands
-                  ? `${item.a != null ? fmt(item.a) : ''} ${item.op ?? '+'} ${raw}`
-                  : item.prompt,
-            })
-          }}
-        />
+      <>
+        <div className="libre-inline-triple is-op">
+          <LineInput
+            compact
+            value={item.a != null ? fmt(item.a) : ''}
+            ariaLabel={`Operande A ${index + 1}`}
+            onChange={(raw) => {
+              const a = Number(raw.replace(',', '.'))
+              patch(index, {
+                ...item,
+                a: Number.isFinite(a) ? a : item.a,
+                prompt:
+                  item.layout === 'column-empty' || item.blankOperands
+                    ? `${raw} ${item.op ?? '+'} ${item.b != null ? fmt(item.b) : ''}`
+                    : item.prompt,
+              })
+            }}
+          />
+          <LineSelect
+            value={(item.op as string) ?? '+'}
+            ariaLabel={`Opération ${index + 1}`}
+            options={OPS.map((op) => ({ value: op, label: op }))}
+            onChange={(op) => patch(index, { ...item, op: op as ArithOp })}
+          />
+          <LineInput
+            compact
+            value={item.b != null ? fmt(item.b) : ''}
+            ariaLabel={`Operande B ${index + 1}`}
+            onChange={(raw) => {
+              const b = Number(raw.replace(',', '.'))
+              patch(index, {
+                ...item,
+                b: Number.isFinite(b) ? b : item.b,
+                prompt:
+                  item.layout === 'column-empty' || item.blankOperands
+                    ? `${item.a != null ? fmt(item.a) : ''} ${item.op ?? '+'} ${raw}`
+                    : item.prompt,
+              })
+            }}
+          />
+        </div>
         <Field label="Corrigé">
           <LineInput
             answer
@@ -366,7 +370,7 @@ function renderFields(
             onChange={(answer) => patch(index, { ...item, answer })}
           />
         </Field>
-      </div>
+      </>
     )
   }
 
