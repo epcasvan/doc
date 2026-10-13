@@ -301,6 +301,21 @@ function buildSingleBlock(
   }
 }
 
+/** Valeurs des lettres depuis les items libre TCM ex. 33 (évaluer). */
+function givensFromEvaluerLibre(items: MathItem[]): AlgebraGiven[] | undefined {
+  const it = items.find(
+    (item) => item.labels?.includes('evaluer') && item.unknowns && item.unknowns.length > 0,
+  )
+  if (!it?.unknowns || !it.problemVars) return undefined
+  const givens = it.unknowns
+    .map((letter) => {
+      const value = it.problemVars![letter]
+      return value == null ? null : { letter, value }
+    })
+    .filter((g): g is AlgebraGiven => g != null)
+  return givens.length > 0 ? givens : undefined
+}
+
 /** Page « Informations » d’un test (TCM / CFR / CSC / TCF) : ni numéro d’exercice ni points. */
 function isInfoPageType(typeId: string): boolean {
   return (
@@ -343,6 +358,7 @@ export function buildPage(
       }
     }
     const rawItems = libre?.items ?? result.items
+    const libreGivens = givensFromEvaluerLibre(rawItems)
     return {
       exerciseIndex,
       title: isTcmConsignes
@@ -358,7 +374,7 @@ export function buildPage(
       columns: block.columns,
       exerciseType: block.exerciseType,
       pointsPerQuestion: block.pointsPerQuestion,
-      givens: result.givens,
+      givens: libreGivens ?? result.givens,
       document: result.document,
       problemDraftGrids: block.problemDraftGrids,
       oralAnswerModes: block.oralAnswerModes,

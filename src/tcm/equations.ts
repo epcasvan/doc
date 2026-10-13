@@ -11,24 +11,28 @@ import type { MathItem } from '@/math/types'
 export const TCM_EQ_Q1_COUNT = 50
 export const TCM_EQ_Q2_COUNT = 50
 
-type EqTemplate = {
-  id: string
-  /** Construit { equation, development, operations, x }. */
-  build: (rng: Rng) => {
-    equation: string
-    development: string[]
-    operations: string[]
-    x: number
-  }
-}
-
-function equationItem(opts: {
+export type EqBuilt = {
   equation: string
   development: string[]
   operations: string[]
   x: number
-}): MathItem {
-  // Disposition type 32/33 : layout algèbre (expression + grille courte dessous).
+  vars: Record<string, number>
+}
+
+export type EqTemplate = {
+  id: string
+  /** Construit l’équation ; `override` impose les paramètres (édition libre). */
+  build: (rng: Rng, override?: Record<string, number>) => EqBuilt
+}
+
+function v(override: Record<string, number> | undefined, key: string, fallback: number): number {
+  const n = override?.[key]
+  if (n == null || !Number.isFinite(n)) return fallback
+  return Math.round(n)
+}
+
+function equationItem(opts: EqBuilt, templateId: string, kind: 'q1' | 'q2'): MathItem {
+  const keys = Object.keys(opts.vars).sort((a, b) => a.localeCompare(b))
   return {
     layout: 'algebra',
     prompt: opts.equation,
@@ -38,6 +42,14 @@ function equationItem(opts: {
     responseAnswer: `x = ${fmt(opts.x)}`,
     answer: fmt(opts.x),
     unknowns: ['x'],
+    problemTemplateId: templateId,
+    problemVars: { ...opts.vars },
+    problemVarDefs: keys.map((k) => ({
+      key: k,
+      label: k === 'x' ? 'Solution x' : `Paramètre ${k}`,
+      editOn: 'both' as const,
+    })),
+    labels: ['equations', kind],
   }
 }
 
@@ -45,141 +57,154 @@ function equationItem(opts: {
 const Q1_TEMPLATES: EqTemplate[] = [
   {
     id: 'q1-01',
-    build: (rng) => {
-      const x = int(rng, 2, 20)
-      const b = int(rng, 2, 15)
+    build: (rng, o) => {
+      const x = v(o, 'x', int(rng, 2, 20))
+      const b = v(o, 'b', int(rng, 2, 15))
       return {
         equation: `x + ${b} = ${x + b}`,
         development: [`x + ${b} = ${x + b}`, `x = ${x}`],
         operations: ['', `− ${b}`],
         x,
+        vars: { x, b },
       }
     },
   },
   {
     id: 'q1-02',
-    build: (rng) => {
-      const x = int(rng, 3, 20)
-      const b = int(rng, 1, x - 1)
+    build: (rng, o) => {
+      let x = v(o, 'x', int(rng, 3, 20))
+      if (x < 3) x = 3
+      const b = Math.max(1, Math.min(x - 1, v(o, 'b', int(rng, 1, x - 1))))
       return {
         equation: `x − ${b} = ${x - b}`,
         development: [`x − ${b} = ${x - b}`, `x = ${x}`],
         operations: ['', `+ ${b}`],
         x,
+        vars: { x, b },
       }
     },
   },
   {
     id: 'q1-03',
-    build: (rng) => {
-      const x = int(rng, 2, 12)
-      const a = int(rng, 2, 9)
+    build: (rng, o) => {
+      const x = v(o, 'x', int(rng, 2, 12))
+      const a = Math.max(2, v(o, 'a', int(rng, 2, 9)))
       return {
         equation: `${a}x = ${a * x}`,
         development: [`${a}x = ${a * x}`, `x = ${x}`],
         operations: ['', `: ${a}`],
         x,
+        vars: { x, a },
       }
     },
   },
   {
     id: 'q1-04',
-    build: (rng) => {
-      const x = int(rng, 2, 12)
-      const a = int(rng, 2, 8)
-      const b = int(rng, 1, 12)
+    build: (rng, o) => {
+      const x = v(o, 'x', int(rng, 2, 12))
+      const a = Math.max(2, v(o, 'a', int(rng, 2, 8)))
+      const b = Math.max(1, v(o, 'b', int(rng, 1, 12)))
       return {
         equation: `${a}x + ${b} = ${a * x + b}`,
         development: [`${a}x + ${b} = ${a * x + b}`, `${a}x = ${a * x}`, `x = ${x}`],
         operations: ['', `− ${b}`, `: ${a}`],
         x,
+        vars: { x, a, b },
       }
     },
   },
   {
     id: 'q1-05',
-    build: (rng) => {
-      const x = int(rng, 3, 14)
-      const a = int(rng, 2, 8)
-      const b = int(rng, 1, a * x - 1)
+    build: (rng, o) => {
+      let x = v(o, 'x', int(rng, 3, 14))
+      if (x < 3) x = 3
+      const a = Math.max(2, v(o, 'a', int(rng, 2, 8)))
+      const b = Math.max(1, Math.min(a * x - 1, v(o, 'b', int(rng, 1, a * x - 1))))
       return {
         equation: `${a}x − ${b} = ${a * x - b}`,
         development: [`${a}x − ${b} = ${a * x - b}`, `${a}x = ${a * x}`, `x = ${x}`],
         operations: ['', `+ ${b}`, `: ${a}`],
         x,
+        vars: { x, a, b },
       }
     },
   },
   {
     id: 'q1-06',
-    build: (rng) => {
-      const x = int(rng, 2, 18)
-      const b = int(rng, 2, 15)
+    build: (rng, o) => {
+      const x = v(o, 'x', int(rng, 2, 18))
+      const b = Math.max(2, v(o, 'b', int(rng, 2, 15)))
       return {
         equation: `${x + b} = x + ${b}`,
         development: [`${x + b} = x + ${b}`, `${x} = x`, `x = ${x}`],
         operations: ['', `− ${b}`, ''],
         x,
+        vars: { x, b },
       }
     },
   },
   {
     id: 'q1-07',
-    build: (rng) => {
-      const x = int(rng, 3, 18)
-      const b = int(rng, 1, x - 1)
+    build: (rng, o) => {
+      let x = v(o, 'x', int(rng, 3, 18))
+      if (x < 3) x = 3
+      const b = Math.max(1, Math.min(x - 1, v(o, 'b', int(rng, 1, x - 1))))
       return {
         equation: `${x - b} = x − ${b}`,
         development: [`${x - b} = x − ${b}`, `${x} = x`, `x = ${x}`],
         operations: ['', `+ ${b}`, ''],
         x,
+        vars: { x, b },
       }
     },
   },
   {
     id: 'q1-08',
-    build: (rng) => {
-      const x = int(rng, 2, 12)
-      const a = int(rng, 2, 9)
+    build: (rng, o) => {
+      const x = v(o, 'x', int(rng, 2, 12))
+      const a = Math.max(2, v(o, 'a', int(rng, 2, 9)))
       return {
         equation: `${a * x} = ${a}x`,
         development: [`${a * x} = ${a}x`, `${x} = x`, `x = ${x}`],
         operations: ['', `: ${a}`, ''],
         x,
+        vars: { x, a },
       }
     },
   },
   {
     id: 'q1-09',
-    build: (rng) => {
-      const x = int(rng, 2, 12)
-      const a = int(rng, 2, 8)
-      const b = int(rng, 1, 12)
+    build: (rng, o) => {
+      const x = v(o, 'x', int(rng, 2, 12))
+      const a = Math.max(2, v(o, 'a', int(rng, 2, 8)))
+      const b = Math.max(1, v(o, 'b', int(rng, 1, 12)))
       return {
         equation: `${a * x + b} = ${a}x + ${b}`,
         development: [`${a * x + b} = ${a}x + ${b}`, `${a * x} = ${a}x`, `x = ${x}`],
         operations: ['', `− ${b}`, `: ${a}`],
         x,
+        vars: { x, a, b },
       }
     },
   },
   {
     id: 'q1-10',
-    build: (rng) => {
-      const x = int(rng, 3, 14)
-      const a = int(rng, 2, 8)
-      const b = int(rng, 1, a * x - 1)
+    build: (rng, o) => {
+      let x = v(o, 'x', int(rng, 3, 14))
+      if (x < 3) x = 3
+      const a = Math.max(2, v(o, 'a', int(rng, 2, 8)))
+      const b = Math.max(1, Math.min(a * x - 1, v(o, 'b', int(rng, 1, a * x - 1))))
       return {
         equation: `${a * x - b} = ${a}x − ${b}`,
         development: [`${a * x - b} = ${a}x − ${b}`, `${a * x} = ${a}x`, `x = ${x}`],
         operations: ['', `+ ${b}`, `: ${a}`],
         x,
+        vars: { x, a, b },
       }
     },
   },
 ]
 
-// Dupliquer / varier jusqu’à 50 en changeant légèrement les formes.
 function expandQ1Pool(): EqTemplate[] {
   const base = [...Q1_TEMPLATES]
   const extras: EqTemplate[] = []
@@ -187,10 +212,7 @@ function expandQ1Pool(): EqTemplate[] {
     const src = base[i % base.length]!
     extras.push({
       id: `q1-${11 + i}`,
-      build: (rng) => {
-        // Variante : tire à nouveau avec les mêmes règles (rng différent).
-        return src.build(rng)
-      },
+      build: (rng, o) => src.build(rng, o),
     })
   }
   return [...base, ...extras]
@@ -200,11 +222,11 @@ function expandQ1Pool(): EqTemplate[] {
 const Q2_TEMPLATES: EqTemplate[] = [
   {
     id: 'q2-01',
-    build: (rng) => {
-      const x = int(rng, 2, 12)
-      const a = int(rng, 3, 8)
-      const c = int(rng, 1, a - 1)
-      const b = int(rng, 1, 10)
+    build: (rng, o) => {
+      const x = v(o, 'x', int(rng, 2, 12))
+      const a = Math.max(3, v(o, 'a', int(rng, 3, 8)))
+      const c = Math.max(1, Math.min(a - 1, v(o, 'c', int(rng, 1, a - 1))))
+      const b = Math.max(1, v(o, 'b', int(rng, 1, 10)))
       const d = a * x + b - c * x
       return {
         equation: `${a}x + ${b} = ${c}x + ${d}`,
@@ -216,17 +238,17 @@ const Q2_TEMPLATES: EqTemplate[] = [
         ],
         operations: ['', `− ${c}x`, `− ${b}`, `: ${a - c}`],
         x,
+        vars: { x, a, b, c },
       }
     },
   },
   {
     id: 'q2-02',
-    build: (rng) => {
-      const x = int(rng, 2, 12)
-      const a = int(rng, 3, 8)
-      const c = int(rng, 1, a - 1)
-      const b = int(rng, 1, 10)
-      // a x − b = c x + d  with d possibly negative — use abs form
+    build: (rng, o) => {
+      const x = v(o, 'x', int(rng, 2, 12))
+      const a = Math.max(3, v(o, 'a', int(rng, 3, 8)))
+      const c = Math.max(1, Math.min(a - 1, v(o, 'c', int(rng, 1, a - 1))))
+      const b = Math.max(1, v(o, 'b', int(rng, 1, 10)))
       const rightConst = a * x - b - c * x
       if (rightConst < 0) {
         return {
@@ -239,6 +261,7 @@ const Q2_TEMPLATES: EqTemplate[] = [
           ],
           operations: ['', `− ${c}x`, `+ ${b}`, `: ${a - c}`],
           x,
+          vars: { x, a, b, c },
         }
       }
       return {
@@ -251,19 +274,19 @@ const Q2_TEMPLATES: EqTemplate[] = [
         ],
         operations: ['', `− ${c}x`, `+ ${b}`, `: ${a - c}`],
         x,
+        vars: { x, a, b, c },
       }
     },
   },
   {
     id: 'q2-03',
-    build: (rng) => {
-      const den = int(rng, 2, 6)
-      const x = int(rng, 2, 9) * den
-      const c = int(rng, 2, 5)
-      const b = int(rng, 1, 8)
-      // x/den + b = c x + k
+    build: (rng, o) => {
+      const den = Math.max(2, v(o, 'den', int(rng, 2, 6)))
+      let x = v(o, 'x', int(rng, 2, 9) * den)
+      if (x % den !== 0) x = Math.max(den, Math.round(x / den) * den)
+      const c = Math.max(2, v(o, 'c', int(rng, 2, 5)))
+      const b = Math.max(1, v(o, 'b', int(rng, 1, 8)))
       const k = x / den + b - c * x
-      // Ensure readable: prefer form with positive constants when possible
       if (k >= 0) {
         return {
           equation: `x/${den} + ${b} = ${c}x + ${k}`,
@@ -275,6 +298,7 @@ const Q2_TEMPLATES: EqTemplate[] = [
           ],
           operations: ['', `− ${c}x`, `− ${b}`, `· ${den}`],
           x,
+          vars: { x, den, b, c },
         }
       }
       return {
@@ -286,17 +310,18 @@ const Q2_TEMPLATES: EqTemplate[] = [
         ],
         operations: ['', `− ${c}x`, '', ''],
         x,
+        vars: { x, den, b, c },
       }
     },
   },
   {
     id: 'q2-04',
-    build: (rng) => {
-      const den = int(rng, 2, 5)
-      const x = int(rng, 2, 8) * den
-      const a = int(rng, 2, 4)
-      const b = int(rng, 1, 6)
-      // a x + b = x/den + right
+    build: (rng, o) => {
+      const den = Math.max(2, v(o, 'den', int(rng, 2, 5)))
+      let x = v(o, 'x', int(rng, 2, 8) * den)
+      if (x % den !== 0) x = Math.max(den, Math.round(x / den) * den)
+      const a = Math.max(2, v(o, 'a', int(rng, 2, 4)))
+      const b = Math.max(1, v(o, 'b', int(rng, 1, 6)))
       const right = a * x + b - x / den
       return {
         equation: `${a}x + ${b} = x/${den} + ${right}`,
@@ -307,16 +332,17 @@ const Q2_TEMPLATES: EqTemplate[] = [
         ],
         operations: ['', `− x/${den}`, ''],
         x,
+        vars: { x, a, b, den },
       }
     },
   },
   {
     id: 'q2-05',
-    build: (rng) => {
-      const x = int(rng, 2, 10)
-      const a = int(rng, 4, 9)
-      const c = int(rng, 2, a - 1)
-      const b = int(rng, 1, 9)
+    build: (rng, o) => {
+      const x = v(o, 'x', int(rng, 2, 10))
+      const a = Math.max(4, v(o, 'a', int(rng, 4, 9)))
+      const c = Math.max(2, Math.min(a - 1, v(o, 'c', int(rng, 2, a - 1))))
+      const b = Math.max(1, v(o, 'b', int(rng, 1, 9)))
       const d = a * x - b - c * x
       if (d >= 0) {
         return {
@@ -329,6 +355,7 @@ const Q2_TEMPLATES: EqTemplate[] = [
           ],
           operations: ['', `− ${c}x`, `+ ${b}`, `: ${a - c}`],
           x,
+          vars: { x, a, b, c },
         }
       }
       return {
@@ -341,6 +368,7 @@ const Q2_TEMPLATES: EqTemplate[] = [
         ],
         operations: ['', `− ${c}x`, `+ ${b}`, `: ${a - c}`],
         x,
+        vars: { x, a, b, c },
       }
     },
   },
@@ -353,7 +381,7 @@ function expandQ2Pool(): EqTemplate[] {
     const src = base[i % base.length]!
     extras.push({
       id: `q2-${6 + i}`,
-      build: (rng) => src.build(rng),
+      build: (rng, o) => src.build(rng, o),
     })
   }
   return [...base, ...extras]
@@ -362,42 +390,71 @@ function expandQ2Pool(): EqTemplate[] {
 const Q1_POOL = expandQ1Pool()
 const Q2_POOL = expandQ2Pool()
 
-function fillFromPool(pool: EqTemplate[], rng: Rng): MathItem {
+export const TCM_EQUATIONS_Q1 = Q1_POOL
+export const TCM_EQUATIONS_Q2 = Q2_POOL
+
+export function equationTemplateById(id: string): EqTemplate | undefined {
+  return Q1_POOL.find((t) => t.id === id) ?? Q2_POOL.find((t) => t.id === id)
+}
+
+export function equationKindForTemplate(id: string): 'q1' | 'q2' {
+  return id.startsWith('q2') ? 'q2' : 'q1'
+}
+
+/** Remplit un modèle avec des paramètres imposés (édition libre). */
+export function fillEquationTemplateWithVars(
+  template: EqTemplate,
+  vars: Record<string, number>,
+): EqBuilt | null {
+  try {
+    const built = template.build(() => 0.5, vars)
+    if (!Number.isFinite(built.x)) return null
+    return built
+  } catch {
+    return null
+  }
+}
+
+function fillFromPool(pool: EqTemplate[], rng: Rng, kind: 'q1' | 'q2'): MathItem {
   const order = shuffle(rng, [...pool])
   for (const tpl of order) {
     try {
       const built = tpl.build(rng)
       if (!Number.isFinite(built.x)) continue
-      return equationItem(built)
+      return equationItem(built, tpl.id, kind)
     } catch {
       continue
     }
   }
   const x = 5
-  return equationItem({
-    equation: `x + 3 = 8`,
-    development: [`x + 3 = 8`, `x = 5`],
-    operations: ['', '− 3'],
-    x,
-  })
+  return equationItem(
+    {
+      equation: `x + 3 = 8`,
+      development: [`x + 3 = 8`, `x = 5`],
+      operations: ['', '− 3'],
+      x,
+      vars: { x, b: 3 },
+    },
+    'q1-01',
+    'q1',
+  )
 }
 
 /** Lot TCM ex. 34 : Q1 un côté, Q2 deux côtés (+ fractions possibles). */
 export function generateTcmEquationsBatch(rng: Rng): MathItem[] {
-  // Préférer un modèle « tiré », puis pool.
   const q1Preferred = pick(rng, Q1_POOL)
   const q2Preferred = pick(rng, Q2_POOL)
   let q1: MathItem
   let q2: MathItem
   try {
-    q1 = equationItem(q1Preferred.build(rng))
+    q1 = equationItem(q1Preferred.build(rng), q1Preferred.id, 'q1')
   } catch {
-    q1 = fillFromPool(Q1_POOL, rng)
+    q1 = fillFromPool(Q1_POOL, rng, 'q1')
   }
   try {
-    q2 = equationItem(q2Preferred.build(rng))
+    q2 = equationItem(q2Preferred.build(rng), q2Preferred.id, 'q2')
   } catch {
-    q2 = fillFromPool(Q2_POOL, rng)
+    q2 = fillFromPool(Q2_POOL, rng, 'q2')
   }
   return [q1, q2]
 }

@@ -22,7 +22,7 @@ type Factor =
 
 /** Gabarit Q2 : trois slots → exactement deux « · ». */
 type SlotKind = 'lit' | 'const' | 'paren'
-type Q2Template = { id: string; slots: [SlotKind, SlotKind, SlotKind] }
+export type Q2Template = { id: string; slots: [SlotKind, SlotKind, SlotKind] }
 
 /**
  * 50 modèles — chaque expression = facteur · facteur · facteur.
@@ -275,14 +275,125 @@ function developReduceSum(terms: Mono[], display: string): string[] {
   return steps
 }
 
-function algebraDevItem(prompt: string, answer: string, development: string[]): MathItem {
+function encodeFactorsVars(factors: Factor[], letters: string[]): Record<string, number> {
+  const vars: Record<string, number> = {}
+  letters.forEach((letter, i) => {
+    vars[`L${i}`] = LETTERS.indexOf(letter as (typeof LETTERS)[number])
+  })
+  vars.nLetters = letters.length
+  factors.forEach((f, i) => {
+    if (f.kind === 'mono') {
+      vars[`c${i}`] = f.mono.coefficient
+      const lit = Object.keys(f.mono.powers)[0]
+      vars[`p${i}`] = lit ? LETTERS.indexOf(lit as (typeof LETTERS)[number]) : -1
+      vars[`k${i}`] = 0 // mono
+    } else {
+      vars[`k${i}`] = 1 // paren
+      vars[`c${i}a`] = f.left.coefficient
+      vars[`c${i}b`] = Math.abs(f.right.coefficient)
+      vars[`op${i}`] = f.op === '−' ? 1 : 0
+      const la = Object.keys(f.left.powers)[0]
+      const lb = Object.keys(f.right.powers)[0]
+      vars[`p${i}a`] = la ? LETTERS.indexOf(la as (typeof LETTERS)[number]) : -1
+      vars[`p${i}b`] = lb ? LETTERS.indexOf(lb as (typeof LETTERS)[number]) : -1
+    }
+  })
+  return vars
+}
+
+function decodeFactorsFromVars(
+  slots: [SlotKind, SlotKind, SlotKind],
+  vars: Record<string, number>,
+): Factor[] | null {
+  const nLetters = Math.max(2, Math.min(4, Math.round(vars.nLetters ?? 3)))
+  const letters: string[] = []
+  for (let i = 0; i < nLetters; i++) {
+    const idx = Math.max(0, Math.min(LETTERS.length - 1, Math.round(vars[`L${i}`] ?? i)))
+    letters.push(LETTERS[idx]!)
+  }
+  const letterAt = (idx: number) => letters[Math.max(0, Math.min(letters.length - 1, idx))] ?? 'x'
+  const factors: Factor[] = []
+  for (let i = 0; i < 3; i++) {
+    const slot = slots[i]!
+    const kind = Math.round(vars[`k${i}`] ?? (slot === 'paren' ? 1 : 0))
+    if (slot === 'paren' || kind === 1) {
+      const ca = Math.max(1, Math.min(9, Math.round(vars[`c${i}a`] ?? 2)))
+      const cb = Math.max(1, Math.min(9, Math.round(vars[`c${i}b`] ?? 3)))
+      const op: '+' | '−' = Math.round(vars[`op${i}`] ?? 0) === 1 ? '−' : '+'
+      const pa = Math.round(vars[`p${i}a`] ?? 0)
+      const pb = Math.round(vars[`p${i}b`] ?? -1)
+      factors.push({
+        kind: 'paren',
+        left: {
+          coefficient: ca,
+          powers: pa < 0 ? {} : { [letterAt(pa % letters.length)]: 1 },
+        },
+        right: {
+          coefficient: cb,
+          powers: pb < 0 ? {} : { [letterAt(pb % letters.length)]: 1 },
+        },
+        op,
+      })
+      continue
+    }
+    const c = Math.max(1, Math.min(9, Math.round(vars[`c${i}`] ?? 2)))
+    const p = Math.round(vars[`p${i}`] ?? (slot === 'const' ? -1 : 0))
+    factors.push({
+      kind: 'mono',
+      mono: {
+        coefficient: c,
+        powers: p < 0 || slot === 'const' ? {} : { [letterAt(p % letters.length)]: 1 },
+      },
+    })
+  }
+  return factors
+}
+
+function reduireQ2Item(tpl: Q2Template, factors: Factor[], letters: string[]): MathItem {
+  const prompt = `${factorDisplay(factors[0]!)} · ${factorDisplay(factors[1]!)} · ${factorDisplay(factors[2]!)}`
+  const answer = polynomialText(expandProduct(factors))
+  const development = developDotProduct(factors)
+  const vars = encodeFactorsVars(factors, letters)
+  const editKeys = Object.keys(vars).filter((k) => k.startsWith('c') || k === 'op0' || k === 'op1' || k === 'op2')
   return {
     layout: 'algebra',
     prompt,
     answer,
     development,
     calcAnswer: development.join('\n'),
+    problemTemplateId: tpl.id,
+    problemVars: vars,
+    problemVarDefs: editKeys.map((k) => ({
+      key: k,
+      label: k.startsWith('op') ? `Signe ${k.slice(2)}` : `Coef. ${k.slice(1)}`,
+      editOn: 'both' as const,
+    })),
+    labels: ['reduire', 'q2'],
   }
+}
+
+export const TCM_REDUIRE_Q2 = Q2_TEMPLATES
+
+export function reduireTemplateById(id: string): Q2Template | undefined {
+  return Q2_TEMPLATES.find((t) => t.id === id)
+}
+
+/** Remplit un modèle Q2 avec coefficients imposés (édition libre). */
+export function fillReduireQ2WithVars(
+  template: Q2Template,
+  vars: Record<string, number>,
+): MathItem | null {
+  const factors = decodeFactorsFromVars(template.slots, vars)
+  if (!factors) return null
+  const nLetters = Math.max(2, Math.min(4, Math.round(vars.nLetters ?? 3)))
+  const letters: string[] = []
+  for (let i = 0; i < nLetters; i++) {
+    const idx = Math.max(0, Math.min(LETTERS.length - 1, Math.round(vars[`L${i}`] ?? i)))
+    letters.push(LETTERS[idx]!)
+  }
+  const prompt = `${factorDisplay(factors[0]!)} · ${factorDisplay(factors[1]!)} · ${factorDisplay(factors[2]!)}`
+  if ((prompt.match(/·/g) ?? []).length !== 2) return null
+  return reduireQ2Item(template, factors, letters)
 }
 
 /**
@@ -293,15 +404,12 @@ function generateDotProductItem(rng: Rng): MathItem {
   const order = shuffle(rng, [...Q2_TEMPLATES])
   for (const tpl of order) {
     const factors = tpl.slots.map((slot) => makeSlot(rng, slot, letters))
-    // Toujours joindre par « · » — garantit exactement deux occurrences.
     const prompt = `${factorDisplay(factors[0]!)} · ${factorDisplay(factors[1]!)} · ${factorDisplay(factors[2]!)}`
     const dots = (prompt.match(/·/g) ?? []).length
     if (dots !== 2) continue
     if (/[²³⁴]/.test(prompt)) continue
-    const answer = polynomialText(expandProduct(factors))
-    return algebraDevItem(prompt, answer, developDotProduct(factors))
+    return reduireQ2Item(tpl, factors, letters)
   }
-  // Repli sûr : 5x · 6c · 2
   const [u, v] = letters
   const a = int(rng, 2, 9)
   const b = int(rng, 2, 9)
@@ -311,9 +419,7 @@ function generateDotProductItem(rng: Rng): MathItem {
     { kind: 'mono', mono: { coefficient: b, powers: { [v!]: 1 } } },
     { kind: 'mono', mono: { coefficient: c, powers: {} } },
   ]
-  const prompt = `${factorDisplay(factors[0]!)} · ${factorDisplay(factors[1]!)} · ${factorDisplay(factors[2]!)}`
-  const answer = polynomialText(expandProduct(factors))
-  return algebraDevItem(prompt, answer, developDotProduct(factors))
+  return reduireQ2Item(Q2_TEMPLATES[0]!, factors, letters)
 }
 
 /** Q1 : somme de monômes degré ≤ 1 (pas de puissance, pas de ·). */
@@ -343,7 +449,78 @@ function generateReduceNoPower(rng: Rng): MathItem {
     })
     .join(' ')
   const answer = polynomialText(terms)
-  return algebraDevItem(display, answer, developReduceSum(terms, display))
+  const development = developReduceSum(terms, display)
+  const vars: Record<string, number> = { n: terms.length }
+  letters.forEach((letter, i) => {
+    vars[`L${i}`] = LETTERS.indexOf(letter as (typeof LETTERS)[number])
+  })
+  terms.forEach((term, i) => {
+    vars[`t${i}`] = term.coefficient
+    const lit = Object.keys(term.powers)[0]
+    vars[`p${i}`] = lit ? LETTERS.indexOf(lit as (typeof LETTERS)[number]) : -1
+  })
+  return {
+    layout: 'algebra',
+    prompt: display,
+    answer,
+    development,
+    calcAnswer: development.join('\n'),
+    problemTemplateId: 'sum',
+    problemVars: vars,
+    problemVarDefs: terms.map((_, i) => ({
+      key: `t${i}`,
+      label: `Terme ${i + 1}`,
+      editOn: 'both' as const,
+    })),
+    labels: ['reduire', 'q1'],
+  }
+}
+
+/** Remplit Q1 (somme) avec coefficients de termes imposés. */
+export function fillReduireQ1WithVars(vars: Record<string, number>): MathItem | null {
+  const n = Math.max(2, Math.min(8, Math.round(vars.n ?? 4)))
+  const l0 = LETTERS[Math.max(0, Math.min(LETTERS.length - 1, Math.round(vars.L0 ?? 0)))]!
+  const l1 = LETTERS[Math.max(0, Math.min(LETTERS.length - 1, Math.round(vars.L1 ?? 1)))]!
+  const letterAt = (p: number) => (p < 0 ? '' : p % 2 === 0 ? l0 : l1)
+  const terms: Mono[] = []
+  for (let i = 0; i < n; i++) {
+    let c = Math.round(vars[`t${i}`] ?? (i === 0 ? 3 : 2))
+    if (c === 0) c = 1
+    c = Math.max(-9, Math.min(9, c))
+    const p = Math.round(vars[`p${i}`] ?? (i % 2 === 0 ? 0 : -1))
+    const letter = letterAt(p)
+    terms.push({ coefficient: c, powers: letter ? { [letter]: 1 } : {} })
+  }
+  const display = terms
+    .map((term, index) => {
+      const body = monoDisplay({ ...term, coefficient: Math.abs(term.coefficient) })
+      if (index === 0) return term.coefficient < 0 ? `−${body}` : body
+      return `${term.coefficient < 0 ? '−' : '+'} ${body}`
+    })
+    .join(' ')
+  const answer = polynomialText(terms)
+  const development = developReduceSum(terms, display)
+  const nextVars: Record<string, number> = { n, L0: LETTERS.indexOf(l0 as (typeof LETTERS)[number]), L1: LETTERS.indexOf(l1 as (typeof LETTERS)[number]) }
+  terms.forEach((term, i) => {
+    nextVars[`t${i}`] = term.coefficient
+    const lit = Object.keys(term.powers)[0]
+    nextVars[`p${i}`] = lit ? LETTERS.indexOf(lit as (typeof LETTERS)[number]) : -1
+  })
+  return {
+    layout: 'algebra',
+    prompt: display,
+    answer,
+    development,
+    calcAnswer: development.join('\n'),
+    problemTemplateId: 'sum',
+    problemVars: nextVars,
+    problemVarDefs: terms.map((_, i) => ({
+      key: `t${i}`,
+      label: `Terme ${i + 1}`,
+      editOn: 'both' as const,
+    })),
+    labels: ['reduire', 'q1'],
+  }
 }
 
 /** Lot TCM ex. 32 : Q1 sans puissance ; Q2 avec exactement deux ·. */

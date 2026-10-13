@@ -215,90 +215,142 @@ function developEvaluerSteps(
   return steps
 }
 
+export type EvaluerFilled = {
+  prompt: string
+  answer: string
+  development: string[]
+  /** Coefficients a–j du modèle + valeurs des 3 lettres. */
+  vars: Record<string, number>
+  letters: [string, string, string]
+}
+
+/** Clés de coefficients présentes dans le motif. */
+export function evaluerCoefKeysInPattern(pattern: string): string[] {
+  const found = new Set<string>()
+  for (const m of pattern.matchAll(/\{([a-j])\}/g)) found.add(m[1]!)
+  return [...found].sort()
+}
+
+function renderEvaluerPattern(
+  pattern: string,
+  letters: [string, string, string],
+  coefs: Record<string, number>,
+): string {
+  const [U, V, W] = letters
+  let prompt = pattern
+  prompt = prompt.replace(/\{U\}²/g, `${U}²`)
+  prompt = prompt.replace(/\{V\}²/g, `${V}²`)
+  prompt = prompt.replace(/\{W\}²/g, `${W}²`)
+  prompt = prompt.replace(/\{U\}³/g, `${U}³`)
+  prompt = prompt.replace(/\{V\}³/g, `${V}³`)
+  prompt = prompt.replace(/\{W\}³/g, `${W}³`)
+  prompt = prompt.replace(/\{U\}/g, U)
+  prompt = prompt.replace(/\{V\}/g, V)
+  prompt = prompt.replace(/\{W\}/g, W)
+  prompt = prompt.replace(/\{([a-j])\}/g, (_, key: string) => String(coefs[key] ?? 2))
+  return prompt
+}
+
+/**
+ * Remplit un modèle avec coefficients / lettres imposés (édition libre).
+ * `vars` mélange coeffs a–j et valeurs des lettres (clés = lettres choisies).
+ */
+export function fillEvaluerTemplateWithVars(
+  template: Template,
+  letters: [string, string, string],
+  vars: Record<string, number>,
+  preferInteger = false,
+): EvaluerFilled | null {
+  const coefKeys = evaluerCoefKeysInPattern(template.pattern)
+  const coefs: Record<string, number> = {}
+  for (const k of coefKeys) {
+    const n = vars[k]
+    coefs[k] = n == null ? 2 : Math.max(1, Math.min(9, Math.round(n)))
+  }
+  const letterVars: Record<string, number> = {}
+  for (const letter of letters) {
+    let n = vars[letter]
+    if (n == null || n === 0) n = 2
+    n = Math.max(-9, Math.min(9, Math.round(n)))
+    if (n === 0) n = 2
+    letterVars[letter] = n
+  }
+  const prompt = renderEvaluerPattern(template.pattern, letters, coefs)
+  let value: number
+  try {
+    value = evalEvaluerExpression(prompt, letterVars)
+  } catch {
+    return null
+  }
+  if (!Number.isFinite(value) || Math.abs(value) > 800) return null
+  if (preferInteger && Math.abs(value - Math.round(value)) > 1e-8) return null
+  if (!preferInteger && Math.abs(value - Math.round(value * 100) / 100) > 1e-8) return null
+  const answer = formatAnswer(value)
+  return {
+    prompt,
+    answer,
+    development: developEvaluerSteps(prompt, answer, letterVars),
+    vars: { ...coefs, ...letterVars },
+    letters,
+  }
+}
+
 function fillTemplate(
   template: Template,
   letters: [string, string, string],
   values: [number, number, number],
   rng: Rng,
   preferInteger: boolean,
-): { prompt: string; answer: string; development: string[] } | null {
-  const [U, V, W] = letters
-  const vars: Record<string, number> = {
-    [U]: values[0],
-    [V]: values[1],
-    [W]: values[2],
+): EvaluerFilled | null {
+  const baseVars: Record<string, number> = {
+    [letters[0]]: values[0],
+    [letters[1]]: values[1],
+    [letters[2]]: values[2],
   }
-
   for (let attempt = 0; attempt < 80; attempt++) {
-    const vals: Record<string, number> = {}
+    const vals: Record<string, number> = { ...baseVars }
     for (const ch of 'abcdefghij') vals[ch] = coef(rng)
-
-    let prompt = template.pattern
-    // Puissances d’abord (lettres), puis lettres nues, puis coeffs.
-    prompt = prompt.replace(/\{U\}²/g, `${U}²`)
-    prompt = prompt.replace(/\{V\}²/g, `${V}²`)
-    prompt = prompt.replace(/\{W\}²/g, `${W}²`)
-    prompt = prompt.replace(/\{U\}³/g, `${U}³`)
-    prompt = prompt.replace(/\{V\}³/g, `${V}³`)
-    prompt = prompt.replace(/\{W\}³/g, `${W}³`)
-    prompt = prompt.replace(/\{U\}/g, U)
-    prompt = prompt.replace(/\{V\}/g, V)
-    prompt = prompt.replace(/\{W\}/g, W)
-    prompt = prompt.replace(/\{([a-j])\}/g, (_, key: string) => String(vals[key]!))
-
-    let value: number
-    try {
-      value = evalEvaluerExpression(prompt, vars)
-    } catch {
-      continue
-    }
-    if (!Number.isFinite(value)) continue
-    if (Math.abs(value) > 800) continue
-    if (preferInteger && Math.abs(value - Math.round(value)) > 1e-8) continue
-    // Décimaux : garder au plus 2 décimales « propres ».
-    if (!preferInteger && Math.abs(value - Math.round(value * 100) / 100) > 1e-8) continue
-
-    const answer = formatAnswer(value)
-    return {
-      prompt,
-      answer,
-      development: developEvaluerSteps(prompt, answer, vars),
-    }
-  }
-  return null
-}
-
-function fillFromPool(
-  templates: Template[],
-  letters: [string, string, string],
-  values: [number, number, number],
-  rng: Rng,
-  preferInteger: boolean,
-): { prompt: string; answer: string; development: string[] } | null {
-  const order = shuffle(rng, [...templates])
-  for (const tpl of order) {
-    const filled = fillTemplate(tpl, letters, values, rng, preferInteger)
+    const filled = fillEvaluerTemplateWithVars(template, letters, vals, preferInteger)
     if (filled) return filled
   }
-  // Relâche la contrainte d’entier si besoin (Q2 avec fractions).
-  if (preferInteger) {
-    for (const tpl of order) {
-      const filled = fillTemplate(tpl, letters, values, rng, false)
-      if (filled) return filled
-    }
-  }
   return null
 }
 
-function makeItem(prompt: string, answer: string, development?: string[]): MathItem {
-  const steps = development?.length ? development : [prompt, answer]
+function makeEvaluerItem(
+  template: Template,
+  filled: EvaluerFilled,
+  kind: 'q1' | 'q2',
+): MathItem {
+  const coefKeys = evaluerCoefKeysInPattern(template.pattern)
+  const letterKeys = [...filled.letters]
+  const keys = [...coefKeys, ...letterKeys]
   return {
     layout: 'algebra',
-    prompt,
-    answer,
-    development: steps,
-    calcAnswer: steps.join('\n'),
+    prompt: filled.prompt,
+    answer: filled.answer,
+    development: filled.development,
+    calcAnswer: filled.development.join('\n'),
+    problemTemplateId: template.id,
+    problemVars: Object.fromEntries(keys.map((k) => [k, filled.vars[k] ?? 2])),
+    problemVarDefs: keys.map((k) => ({
+      key: k,
+      label: letterKeys.includes(k) ? `Valeur ${k}` : `Coeff. ${k}`,
+      editOn: 'both' as const,
+    })),
+    unknowns: letterKeys,
+    labels: ['evaluer', kind],
   }
+}
+
+export const TCM_EVALUER_Q1 = Q1_TEMPLATES
+export const TCM_EVALUER_Q2 = Q2_TEMPLATES
+
+export function evaluerTemplateById(id: string): Template | undefined {
+  return Q1_TEMPLATES.find((t) => t.id === id) ?? Q2_TEMPLATES.find((t) => t.id === id)
+}
+
+export function evaluerKindForTemplate(id: string): 'q1' | 'q2' {
+  return id.startsWith('q2') ? 'q2' : 'q1'
 }
 
 /** Lot TCM ex. 33 : 2 questions, 3 inconnues communes, 50 modèles/question. */
@@ -309,7 +361,6 @@ export function generateTcmEvaluerBatch(rng: Rng): TcmEvaluerBatch {
     nonzeroValue(rng),
     nonzeroValue(rng),
   ]
-  // Valeurs distinctes pour éviter les ambiguïtés pédagogiques.
   if (values[1] === values[0]) values[1] = values[0] === 3 ? 4 : 3
   if (values[2] === values[0] || values[2] === values[1]) {
     values[2] = [-5, -4, -3, -2, 2, 3, 4, 5].find((n) => n !== values[0] && n !== values[1]) ?? 2
@@ -318,7 +369,7 @@ export function generateTcmEvaluerBatch(rng: Rng): TcmEvaluerBatch {
   const q1Preferred = pick(rng, Q1_TEMPLATES)
   const q2Preferred = pick(rng, Q2_TEMPLATES)
 
-  const vars: Record<string, number> = {
+  const letterVars: Record<string, number> = {
     [picked[0]]: values[0],
     [picked[1]]: values[1],
     [picked[2]]: values[2],
@@ -333,21 +384,23 @@ export function generateTcmEvaluerBatch(rng: Rng): TcmEvaluerBatch {
     (2 * values[0] * values[0] + 3 * values[1]) / (5 - values[2]) + 2 * values[0] * 3,
   )
 
-  const q1 =
-    fillTemplate(q1Preferred, picked, values, rng, true) ??
-    fillFromPool(Q1_TEMPLATES, picked, values, rng, true) ?? {
-      prompt: q1FallbackPrompt,
-      answer: q1FallbackAnswer,
-      development: developEvaluerSteps(q1FallbackPrompt, q1FallbackAnswer, vars),
-    }
+  const q1Fallback: EvaluerFilled = {
+    prompt: q1FallbackPrompt,
+    answer: q1FallbackAnswer,
+    development: developEvaluerSteps(q1FallbackPrompt, q1FallbackAnswer, letterVars),
+    vars: { a: 2, b: 3, c: 4, d: 5, e: 2, f: 1, ...letterVars },
+    letters: picked,
+  }
+  const q2Fallback: EvaluerFilled = {
+    prompt: q2FallbackPrompt,
+    answer: q2FallbackAnswer,
+    development: developEvaluerSteps(q2FallbackPrompt, q2FallbackAnswer, letterVars),
+    vars: { a: 2, b: 3, c: 5, d: 1, e: 2, f: 3, ...letterVars },
+    letters: picked,
+  }
 
-  const q2 =
-    fillTemplate(q2Preferred, picked, values, rng, true) ??
-    fillFromPool(Q2_TEMPLATES, picked, values, rng, true) ?? {
-      prompt: q2FallbackPrompt,
-      answer: q2FallbackAnswer,
-      development: developEvaluerSteps(q2FallbackPrompt, q2FallbackAnswer, vars),
-    }
+  const q1 = attachTemplate(q1Preferred, picked, values, rng, true, Q1_TEMPLATES, 'q1', q1Fallback)
+  const q2 = attachTemplate(q2Preferred, picked, values, rng, true, Q2_TEMPLATES, 'q2', q2Fallback)
 
   const givens: AlgebraGiven[] = [
     { letter: picked[0], value: values[0] },
@@ -356,14 +409,37 @@ export function generateTcmEvaluerBatch(rng: Rng): TcmEvaluerBatch {
   ]
 
   return {
-    items: [
-      makeItem(q1.prompt, q1.answer, q1.development),
-      makeItem(q2.prompt, q2.answer, q2.development),
-    ],
+    items: [q1, q2],
     givens,
     instruction:
       'Évaluez chaque expression avec les trois valeurs indiquées. Les deux questions utilisent les mêmes valeurs.',
   }
+}
+
+function attachTemplate(
+  preferred: Template,
+  letters: [string, string, string],
+  values: [number, number, number],
+  rng: Rng,
+  preferInteger: boolean,
+  pool: Template[],
+  kind: 'q1' | 'q2',
+  fallback: EvaluerFilled,
+): MathItem {
+  const direct = fillTemplate(preferred, letters, values, rng, preferInteger)
+  if (direct) return makeEvaluerItem(preferred, direct, kind)
+  const order = shuffle(rng, [...pool])
+  for (const tpl of order) {
+    const filled = fillTemplate(tpl, letters, values, rng, preferInteger)
+    if (filled) return makeEvaluerItem(tpl, filled, kind)
+  }
+  if (preferInteger) {
+    for (const tpl of order) {
+      const filled = fillTemplate(tpl, letters, values, rng, false)
+      if (filled) return makeEvaluerItem(tpl, filled, kind)
+    }
+  }
+  return makeEvaluerItem(preferred, fallback, kind)
 }
 
 /** Exposé pour tests / catalogue. */

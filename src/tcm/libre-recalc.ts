@@ -13,9 +13,24 @@ import {
 } from '@/tcm/convert-units'
 import { fractionPartsFromItem, fractionTermFr } from '@/tcm/fraction-words'
 import {
+  equationKindForTemplate,
+  equationTemplateById,
+  fillEquationTemplateWithVars,
+} from '@/tcm/equations'
+import {
+  evaluerKindForTemplate,
+  evaluerTemplateById,
+  fillEvaluerTemplateWithVars,
+} from '@/tcm/evaluer'
+import {
   fillPrioriteTemplateWithVars,
   prioriteTemplateById,
 } from '@/tcm/priorite'
+import {
+  fillReduireQ1WithVars,
+  fillReduireQ2WithVars,
+  reduireTemplateById,
+} from '@/tcm/reduire'
 import { TCM_PROPORTION_KG_TEMPLATES } from '@/tcm/proportion-kg'
 import {
   columnItem,
@@ -886,6 +901,73 @@ export function recalcTcmLibreItem(item: MathItem, exerciseType: string): MathIt
           development: filled.development,
           calcAnswer: filled.development.join('\n'),
           labels: ['priorite', tpl.kind],
+        }
+      }
+    }
+    return next
+  }
+  if (
+    exerciseType === 'tcm-expressions-evaluer' ||
+    next.labels?.includes('evaluer')
+  ) {
+    const tpl = evaluerTemplateById(next.problemTemplateId ?? '')
+    if (tpl) {
+      const letters = (next.unknowns?.length === 3
+        ? (next.unknowns as [string, string, string])
+        : ['x', 'y', 'z']) as [string, string, string]
+      const kind = evaluerKindForTemplate(tpl.id)
+      const filled = fillEvaluerTemplateWithVars(tpl, letters, next.problemVars ?? {}, false)
+      if (filled) {
+        return {
+          ...next,
+          problemTemplateId: tpl.id,
+          problemVars: filled.vars,
+          unknowns: [...filled.letters],
+          prompt: filled.prompt,
+          answer: filled.answer,
+          development: filled.development,
+          calcAnswer: filled.development.join('\n'),
+          labels: ['evaluer', kind],
+        }
+      }
+    }
+    return next
+  }
+  if (
+    exerciseType === 'tcm-expressions-reduire' ||
+    next.labels?.includes('reduire')
+  ) {
+    if (next.problemTemplateId === 'sum' || next.labels?.includes('q1')) {
+      return fillReduireQ1WithVars(next.problemVars ?? {}) ?? next
+    }
+    const tpl = reduireTemplateById(next.problemTemplateId ?? '')
+    if (tpl) return fillReduireQ2WithVars(tpl, next.problemVars ?? {}) ?? next
+    return next
+  }
+  if (exerciseType === 'tcm-equations' || next.labels?.includes('equations')) {
+    const tpl = equationTemplateById(next.problemTemplateId ?? '')
+    if (tpl) {
+      const filled = fillEquationTemplateWithVars(tpl, next.problemVars ?? {})
+      if (filled) {
+        const kind = equationKindForTemplate(tpl.id)
+        const keys = Object.keys(filled.vars).sort((a, b) => a.localeCompare(b))
+        return {
+          ...next,
+          problemTemplateId: tpl.id,
+          problemVars: filled.vars,
+          problemVarDefs: keys.map((k) => ({
+            key: k,
+            label: k === 'x' ? 'Solution x' : `Paramètre ${k}`,
+            editOn: 'both' as const,
+          })),
+          labels: ['equations', kind],
+          prompt: filled.equation,
+          development: filled.development,
+          operations: filled.operations,
+          calcAnswer: filled.development.join('\n'),
+          responseAnswer: `x = ${fmt(filled.x)}`,
+          answer: fmt(filled.x),
+          unknowns: ['x'],
         }
       }
     }
