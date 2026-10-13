@@ -5,6 +5,7 @@
 import { fmt, sanitizeFrNumberNoise } from '@/math/column-arith'
 import type { ArithOp, Figure, MathItem } from '@/math/types'
 import { mulAudioParts, numberAudioParts } from '@/tcm-cfr/audio-nombres'
+import { clampFracShapeCfr } from '@/math/fraction-shapes'
 import { fractionPartsFromItem, fractionTermFr } from '@/tcm/fraction-words'
 import {
   columnItem,
@@ -309,15 +310,13 @@ function recalcFractionDecimal(item: MathItem): MathItem {
 function recalcFracShape(item: MathItem): MathItem {
   const fs = item.fracShape
   if (!fs) return item
-  const n = Math.max(1, Math.round(fs.n))
-  const d = Math.max(n + (fs.mode === 'read' ? 0 : 0), Math.round(fs.d))
-  const safeD = Math.max(2, d)
-  const safeN = Math.min(Math.max(1, n), safeD)
-  const answer = `${safeN}/${safeD}`
+  // Limites CFR (formes simples) pour TCM 20/21 et CFR 12/13.
+  const clamped = clampFracShapeCfr(fs.kind, fs.n, fs.d)
+  const answer = `${clamped.n}/${clamped.d}`
   return {
     ...item,
-    fracShape: { ...fs, n: safeN, d: safeD },
-    answer: fs.mode === 'color' ? answer : answer,
+    fracShape: { ...fs, ...clamped },
+    answer,
     prompt: fs.mode === 'color' ? `Coloriez ${answer}` : item.prompt,
   }
 }

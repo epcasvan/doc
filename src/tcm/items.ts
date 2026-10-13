@@ -7,7 +7,7 @@ import {
   pickWithPlaces,
   roundToPlaces,
 } from '@/math/difficulty'
-import { genFracItems } from '@/math/fraction-shapes'
+import { genFracSingleItems } from '@/math/fraction-shapes'
 import { int, pick, shuffle, type Rng } from '@/math/rng'
 import type {
   ArithOp,
@@ -1475,33 +1475,18 @@ function generateTcmOperationsBatch(rng: Rng): MathItem[] {
 }
 
 /**
- * TCM ex. 20 / 21 — 2 questions :
- * Q1 = une des 2 formes simples (ex-Q1 ou Q2) ;
- * Q2 = une des 2 multi-formes (ex-Q3 ou Q4).
+ * TCM ex. 20 / 21 — formes simples, mêmes limites que TCM CFR ex. 12 / 13.
  */
 function generateTcmFracShapeBatch(
   rng: Rng,
   count: number,
   mode: 'color' | 'read',
 ): MathItem[] {
-  const n = Math.max(1, count)
-  if (n >= 2) {
-    const pool = genFracItems(rng, 4)
-    const chosen = [pick(rng, [pool[0]!, pool[1]!]), pick(rng, [pool[2]!, pool[3]!])]
-    return chosen.slice(0, n).map((item) => ({
-      layout: 'fraction-shape' as const,
-      fracShape: { ...item, mode },
-      answer: `${item.n}/${item.d}`,
-    }))
-  }
-  const item = genFracItems(rng, 1)[0]!
-  return [
-    {
-      layout: 'fraction-shape' as const,
-      fracShape: { ...item, mode },
-      answer: `${item.n}/${item.d}`,
-    },
-  ]
+  return genFracSingleItems(rng, Math.max(1, count)).map((item) => ({
+    layout: 'fraction-shape' as const,
+    fracShape: { ...item, mode },
+    answer: `${item.n}/${item.d}`,
+  }))
 }
 
 export function tryGenerateTcmItems(

@@ -4368,6 +4368,14 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
 .libre-inline-triple.is-frac>.libre-field .libre-line-input.is-num{
   width:100%;max-width:6em
 }
+/* TCM ex. 20 / 21 : forme, n, d, corrigé empilés (pas côte à côte). */
+.libre-frac-stack{
+  display:flex;flex-direction:column;gap:8px;align-items:stretch;width:100%
+}
+.libre-frac-stack>.libre-field .libre-line-input.is-num,
+.libre-frac-stack>.libre-field .libre-line-input.is-select{
+  width:100%;max-width:12em
+}
 .libre-line-input{
   width:100%;min-width:0;box-sizing:border-box;
   border:0;border-bottom:1.5px solid var(--ink);border-radius:0;

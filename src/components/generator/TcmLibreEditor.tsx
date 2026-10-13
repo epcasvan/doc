@@ -30,6 +30,7 @@ import {
 import { createRng } from '@/math/rng'
 import { fractionPartsFromItem, fractionTermFr } from '@/tcm/fraction-words'
 import { mulAudioParts, numberAudioParts } from '@/tcm-cfr/audio-nombres'
+import { clampFracShapeCfr } from '@/math/fraction-shapes'
 import { parseFrNumber } from '@/tcm/libre-parse'
 import {
   problemOptionsForExercise,
@@ -907,60 +908,56 @@ function renderFields(
 
   if (item.layout === 'fraction-shape' && item.fracShape) {
     const fs = item.fracShape
+    const applyFrac = (kind: ShapeKind, n: number, d: number) => {
+      const clamped = clampFracShapeCfr(kind, n, d)
+      const answer = `${clamped.n}/${clamped.d}`
+      patch(index, {
+        ...item,
+        fracShape: {
+          ...fs,
+          kind,
+          ...clamped,
+        },
+        answer,
+        prompt: fs.mode === 'color' ? `Coloriez ${answer}` : item.prompt,
+      })
+    }
     return (
-      <>
+      <div className="libre-frac-stack" role="group" aria-label={`Fraction ${index + 1}`}>
         <Field label="Forme">
           <LineSelect
             value={fs.kind}
             ariaLabel={`Forme ${index + 1}`}
             options={FRAC_KINDS.map((k) => ({ value: k.value, label: k.label }))}
-            onChange={(kind) =>
-              patch(index, {
-                ...item,
-                fracShape: { ...fs, kind: kind as ShapeKind },
-              })
-            }
+            onChange={(kind) => applyFrac(kind as ShapeKind, fs.n, fs.d)}
           />
         </Field>
-        <div className="libre-inline-triple">
-          <Field label="Parts colorées (n)">
-            <NumInput
-              value={String(fs.n)}
-              ariaLabel={`Numérateur ${index + 1}`}
-              onCommit={(raw) => {
-                const n = Math.max(1, Math.round(Number(raw.replace(',', '.'))) || fs.n)
-                patch(index, {
-                  ...item,
-                  fracShape: { ...fs, n },
-                  answer: `${n}/${fs.d}`,
-                })
-              }}
-            />
-          </Field>
-          <Field label="Parts totales (d)">
-            <NumInput
-              value={String(fs.d)}
-              ariaLabel={`Dénominateur ${index + 1}`}
-              onCommit={(raw) => {
-                const d = Math.max(2, Math.round(Number(raw.replace(',', '.'))) || fs.d)
-                patch(index, {
-                  ...item,
-                  fracShape: { ...fs, d },
-                  answer: `${fs.n}/${d}`,
-                })
-              }}
-            />
-          </Field>
-        </div>
+        <Field label="Parts colorées (n)">
+          <NumInput
+            value={String(fs.n)}
+            ariaLabel={`Numérateur ${index + 1}`}
+            onCommit={(raw) => {
+              const n = Math.round(Number(raw.replace(',', '.')))
+              if (!Number.isFinite(n)) return
+              applyFrac(fs.kind, n, fs.d)
+            }}
+          />
+        </Field>
+        <Field label="Parts totales (d)">
+          <NumInput
+            value={String(fs.d)}
+            ariaLabel={`Dénominateur ${index + 1}`}
+            onCommit={(raw) => {
+              const d = Math.round(Number(raw.replace(',', '.')))
+              if (!Number.isFinite(d)) return
+              applyFrac(fs.kind, fs.n, d)
+            }}
+          />
+        </Field>
         <Field label="Corrigé">
-          <LineInput
-            answer
-            value={item.answer ?? ''}
-            ariaLabel={`Corrigé ${index + 1}`}
-            onChange={(answer) => patch(index, { ...item, answer })}
-          />
+          <CorrigeBox value={item.answer ?? ''} ariaLabel={`Corrigé ${index + 1}`} />
         </Field>
-      </>
+      </div>
     )
   }
 
