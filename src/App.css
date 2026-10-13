@@ -4281,6 +4281,21 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
 .libre-item-body{display:flex;flex-direction:column;gap:8px;min-width:0}
 .libre-inline-triple{display:flex;flex-wrap:wrap;gap:8px;align-items:end}
 .libre-inline-triple>.libre-field{flex:1 1 72px;min-width:64px}
+/* Ex. 28 métro : plan, ordre des questions, sélecteurs. */
+.libre-metro-toolbar{display:flex;flex-wrap:wrap;gap:8px;margin:4px 0 8px}
+.libre-metro-question{
+  display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px 10px;
+  align-items:start;padding:8px 0;border-top:1px solid var(--line)
+}
+.libre-metro-order{
+  display:flex;flex-direction:column;gap:4px;padding-top:18px;cursor:grab
+}
+.libre-metro-order:active{cursor:grabbing}
+.libre-metro-move{min-width:2.2em;padding:4px 6px;font-size:14px;line-height:1}
+.libre-metro-move:disabled{opacity:.35;cursor:not-allowed}
+.libre-metro-body{display:flex;flex-direction:column;gap:6px;min-width:0}
+.libre-metro-kind{margin:0;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.04em}
+.libre-metro-prompt{margin:0;font-size:13px;line-height:1.35;color:var(--ink)}
 /* Comparer / opérations en colonnes : nombres + signe sur une seule ligne. */
 .libre-inline-triple.is-compare,
 .libre-inline-triple.is-op{

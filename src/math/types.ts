@@ -488,7 +488,13 @@ export type MathItem = {
     rows: number[]
     lines: Array<{ id: string; name: string; color: string; cells: string[] }>
   }
-  metroQuestions?: Array<{ prompt: string; answer: string }>
+  metroQuestions?: Array<{
+    prompt: string
+    answer: string
+    kind?: 'crossing' | 'gare-where' | 'gare-which' | 'path' | 'termini'
+    lineNames?: string[]
+    cell?: string
+  }>
   /** Mots étiquetés (grammaire en couleur). */
   tokens?: PhraseToken[]
   /** Séquence de pastilles (type 3). */

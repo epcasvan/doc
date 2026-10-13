@@ -20,9 +20,145 @@ export type MetroMap = {
   lines: MetroLine[]
 }
 
+export type MetroQuestionKind =
+  | 'crossing'
+  | 'gare-where'
+  | 'gare-which'
+  | 'path'
+  | 'termini'
+
 export type MetroQuestion = {
   prompt: string
   answer: string
+  kind?: MetroQuestionKind
+  /** Noms de métros / gares (1 ou 2 selon le type). */
+  lineNames?: string[]
+  /** Case (question « Quelle gare se trouve dans la case … »). */
+  cell?: string
+}
+
+export function metroMapLabel(map: MetroMap, index = METRO_MAPS.findIndex((m) => m.id === map.id)): string {
+  const n = index >= 0 ? index + 1 : 1
+  return `Plan ${n}`
+}
+
+export function allMetroCells(map: MetroMap): MetroCell[] {
+  const out: MetroCell[] = []
+  for (const row of map.rows) {
+    for (const col of map.cols) out.push(`${col}${row}`)
+  }
+  return out
+}
+
+function lineByName(map: MetroMap, name: string): MetroLine | undefined {
+  return map.lines.find((l) => l.name === name)
+}
+
+/** Reconstruit énoncé + corrigé à partir du type et des sélections. */
+export function buildMetroQuestion(
+  kind: MetroQuestionKind,
+  map: MetroMap,
+  params: { lineNames?: string[]; cell?: string } = {},
+): MetroQuestion {
+  const names = params.lineNames ?? []
+  if (kind === 'crossing') {
+    const a = lineByName(map, names[0] ?? '') ?? map.lines[0]!
+    let b = lineByName(map, names[1] ?? '') ?? map.lines[1] ?? map.lines[0]!
+    if (b.id === a.id) b = map.lines.find((l) => l.id !== a.id) ?? b
+    const cells = findIntersections(a, b)
+    const cell = cells.length === 1 ? cells[0]! : (cells[0] ?? '—')
+    return {
+      kind,
+      lineNames: [a.name, b.name],
+      prompt: `Dans quelle case se croisent les métros de ${a.name} et de ${b.name} ?`,
+      answer: cell,
+    }
+  }
+  if (kind === 'gare-where') {
+    const line = lineByName(map, names[0] ?? '') ?? map.lines[0]!
+    return {
+      kind,
+      lineNames: [line.name],
+      prompt: `Où se trouve la gare de ${line.name} ?`,
+      answer: labelCell(line),
+    }
+  }
+  if (kind === 'gare-which') {
+    const cell = params.cell ?? labelCell(map.lines[0]!)
+    const line = map.lines.find((l) => labelCell(l) === cell)
+    return {
+      kind,
+      cell,
+      prompt: `Quelle gare se trouve dans la case ${cell} ?`,
+      answer: line?.name ?? '—',
+    }
+  }
+  if (kind === 'path') {
+    const line = lineByName(map, names[0] ?? '') ?? map.lines[0]!
+    return {
+      kind,
+      lineNames: [line.name],
+      prompt: `Par quelles cases passe le métro de ${line.name} ?`,
+      answer: formatCellList(line.cells),
+    }
+  }
+  const line = lineByName(map, names[0] ?? '') ?? map.lines[0]!
+  const start = line.cells[0]!
+  const end = line.cells[line.cells.length - 1]!
+  return {
+    kind,
+    lineNames: [line.name],
+    prompt: `Dans quelles cases se trouvent les stations de départ et d'arrivée du métro de ${line.name} ?`,
+    answer: `${start} et ${end}`,
+  }
+}
+
+/** Déduit le type si les questions générées avant n’ont pas encore `kind`. */
+export function inferMetroQuestionKind(q: MetroQuestion): MetroQuestionKind {
+  if (q.kind) return q.kind
+  const p = q.prompt ?? ''
+  if (/se croisent/i.test(p)) return 'crossing'
+  if (/Où se trouve la gare/i.test(p)) return 'gare-where'
+  if (/Quelle gare se trouve dans la case/i.test(p)) return 'gare-which'
+  if (/Par quelles cases passe/i.test(p)) return 'path'
+  return 'termini'
+}
+
+/** Complète kind / lineNames / cell à partir de l’énoncé (fiches déjà générées). */
+export function hydrateMetroQuestion(q: MetroQuestion, map: MetroMap): MetroQuestion {
+  const kind = inferMetroQuestionKind(q)
+  if (q.kind && (q.lineNames?.length || q.cell)) {
+    return { ...q, kind }
+  }
+  const p = q.prompt ?? ''
+  if (kind === 'crossing') {
+    const m = /métros de (.+?) et de (.+?) \?/.exec(p)
+    return buildMetroQuestion('crossing', map, {
+      lineNames: [m?.[1] ?? map.lines[0]!.name, m?.[2] ?? map.lines[1]?.name ?? map.lines[0]!.name],
+    })
+  }
+  if (kind === 'gare-where') {
+    const m = /gare de (.+?) \?/.exec(p)
+    return buildMetroQuestion('gare-where', map, {
+      lineNames: [m?.[1] ?? map.lines[0]!.name],
+    })
+  }
+  if (kind === 'gare-which') {
+    const m = /case ([A-K]\d+)/i.exec(p)
+    return buildMetroQuestion('gare-which', map, {
+      cell: m?.[1] ?? labelCell(map.lines[0]!),
+    })
+  }
+  if (kind === 'path') {
+    const m = /métro de (.+?) \?/.exec(p)
+    return buildMetroQuestion('path', map, {
+      lineNames: [m?.[1] ?? map.lines[0]!.name],
+    })
+  }
+  const m = /métro de (.+?) \?/.exec(p)
+  return buildMetroQuestion('termini', map, {
+    lineNames: [m?.[1] ?? map.lines[0]!.name],
+  })
 }
 
 const COLS = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K'] as const
@@ -306,30 +442,15 @@ export function generateMetroQuestions(rng: Rng, map: MetroMap): MetroQuestion[]
 
   const pathLine = lines[1] ?? lines[0]!
   const terminiLine = lines[2] ?? lines[0]!
-  const start = terminiLine.cells[0]!
-  const end = terminiLine.cells[terminiLine.cells.length - 1]!
 
   const questions: MetroQuestion[] = [
-    {
-      prompt: `Où se trouve la gare de ${lineForLabel.name} ?`,
-      answer: labelCell(lineForLabel),
-    },
-    {
-      prompt: `Dans quelle case se croisent les métros de ${crossing.a.name} et de ${crossing.b.name} ?`,
-      answer: crossing.cell,
-    },
-    {
-      prompt: `Quelle gare se trouve dans la case ${labelOf} ?`,
-      answer: labeledLine.name,
-    },
-    {
-      prompt: `Par quelles cases passe le métro de ${pathLine.name} ?`,
-      answer: formatCellList(pathLine.cells),
-    },
-    {
-      prompt: `Dans quelles cases se trouvent les stations de départ et d'arrivée du métro de ${terminiLine.name} ?`,
-      answer: `${start} et ${end}`,
-    },
+    buildMetroQuestion('gare-where', map, { lineNames: [lineForLabel.name] }),
+    buildMetroQuestion('crossing', map, {
+      lineNames: [crossing.a.name, crossing.b.name],
+    }),
+    buildMetroQuestion('gare-which', map, { cell: labelOf }),
+    buildMetroQuestion('path', map, { lineNames: [pathLine.name] }),
+    buildMetroQuestion('termini', map, { lineNames: [terminiLine.name] }),
   ]
   return shuffle(rng, questions)
 }

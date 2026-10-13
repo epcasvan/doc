@@ -15,6 +15,18 @@ import {
   SYMMETRY_TEMPLATES,
   type SymRotation,
 } from '@/tcm-cfr/symetrie'
+import {
+  METRO_MAPS,
+  allMetroCells,
+  buildMetroQuestion,
+  generateMetroQuestions,
+  hydrateMetroQuestion,
+  inferMetroQuestionKind,
+  metroMapLabel,
+  type MetroQuestion,
+  type MetroQuestionKind,
+} from '@/tcm-cfr/metro'
+import { createRng } from '@/math/rng'
 import { fractionPartsFromItem, fractionTermFr } from '@/tcm/fraction-words'
 import { parseFrNumber } from '@/tcm/libre-parse'
 import {
@@ -1149,40 +1161,219 @@ function renderFields(
   }
 
   if (item.layout === 'metro-map' && item.metroQuestions) {
+    const map = item.metroMap ?? METRO_MAPS[0]!
+    const questions = (item.metroQuestions ?? []).map((q) => hydrateMetroQuestion(q, map))
+    const lineOpts = map.lines.map((l) => ({ value: l.name, label: l.name }))
+    const cellOpts = allMetroCells(map).map((c) => ({ value: c, label: c }))
+    const commitQuestions = (metroQuestions: MetroQuestion[]) => {
+      patch(index, {
+        ...item,
+        metroMap: map,
+        metroQuestions,
+        answer: metroQuestions.map((m) => m.answer).join(' ; '),
+      })
+    }
+    const moveQuestion = (from: number, to: number) => {
+      if (to < 0 || to >= questions.length) return
+      const next = [...questions]
+      const [row] = next.splice(from, 1)
+      if (!row) return
+      next.splice(to, 0, row)
+      commitQuestions(next)
+    }
+    const replaceAt = (qi: number, nextQ: MetroQuestion) => {
+      const metroQuestions = questions.map((q, i) => (i === qi ? nextQ : q))
+      commitQuestions(metroQuestions)
+    }
+    const kindLabel = (kind: MetroQuestionKind): string => {
+      if (kind === 'crossing') return 'Croisement'
+      if (kind === 'gare-where') return 'Gare → case'
+      if (kind === 'gare-which') return 'Case → gare'
+      if (kind === 'path') return 'Parcours'
+      return 'Départ / arrivée'
+    }
     return (
       <>
-        {(item.metroQuestions ?? []).map((q, qi) => (
-          <div key={`mq-${qi}`} className="libre-inline-triple">
-            <Field label={`Q${qi + 1}`}>
-              <LineInput
-                wide
-                value={q.prompt ?? ''}
-                ariaLabel={`Question métro ${qi + 1}`}
-                onChange={(prompt) => {
-                  const metroQuestions = [...(item.metroQuestions ?? [])]
-                  metroQuestions[qi] = { ...q, prompt }
-                  patch(index, { ...item, metroQuestions })
+        <Field label="Plan">
+          <LineSelect
+            value={map.id}
+            ariaLabel="Plan de métro"
+            options={METRO_MAPS.map((m, i) => ({
+              value: m.id,
+              label: metroMapLabel(m, i),
+            }))}
+            onChange={(id) => {
+              const nextMap = METRO_MAPS.find((m) => m.id === id) ?? METRO_MAPS[0]!
+              const metroQuestions = generateMetroQuestions(
+                createRng((id.length * 997 + questions.length * 13 + 1) >>> 0),
+                nextMap,
+              )
+              patch(index, {
+                ...item,
+                metroMap: nextMap,
+                metroQuestions,
+                answer: metroQuestions.map((m) => m.answer).join(' ; '),
+              })
+            }}
+          />
+        </Field>
+        <div className="libre-metro-toolbar">
+          <button
+            type="button"
+            className="button secondary"
+            onClick={() => {
+              const shuffled = [...questions]
+              for (let i = shuffled.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1))
+                ;[shuffled[i], shuffled[j]] = [shuffled[j]!, shuffled[i]!]
+              }
+              commitQuestions(shuffled)
+            }}
+          >
+            Mélanger l’ordre
+          </button>
+        </div>
+        {questions.map((q, qi) => {
+          const kind = inferMetroQuestionKind(q)
+          const names = q.lineNames ?? []
+          return (
+            <div
+              key={`mq-${qi}`}
+              className="libre-metro-question"
+              onDragOver={(e) => {
+                e.preventDefault()
+                e.dataTransfer.dropEffect = 'move'
+              }}
+              onDrop={(e) => {
+                e.preventDefault()
+                const from = Number(e.dataTransfer.getData('text/plain'))
+                if (!Number.isFinite(from) || from === qi) return
+                moveQuestion(from, qi)
+              }}
+            >
+              <div
+                className="libre-metro-order"
+                aria-label={`Ordre question ${qi + 1}`}
+                draggable
+                onDragStart={(e) => {
+                  e.dataTransfer.setData('text/plain', String(qi))
+                  e.dataTransfer.effectAllowed = 'move'
                 }}
-              />
-            </Field>
-            <Field label="Réponse">
-              <LineInput
-                answer
-                value={q.answer ?? ''}
-                ariaLabel={`Réponse métro ${qi + 1}`}
-                onChange={(answer) => {
-                  const metroQuestions = [...(item.metroQuestions ?? [])]
-                  metroQuestions[qi] = { ...q, answer }
-                  patch(index, {
-                    ...item,
-                    metroQuestions,
-                    answer: metroQuestions.map((m) => m.answer).join(' ; '),
-                  })
-                }}
-              />
-            </Field>
-          </div>
-        ))}
+              >
+                <button
+                  type="button"
+                  className="button secondary libre-metro-move"
+                  aria-label={`Monter la question ${qi + 1}`}
+                  disabled={qi === 0}
+                  onClick={() => moveQuestion(qi, qi - 1)}
+                >
+                  ↑
+                </button>
+                <button
+                  type="button"
+                  className="button secondary libre-metro-move"
+                  aria-label={`Descendre la question ${qi + 1}`}
+                  disabled={qi >= questions.length - 1}
+                  onClick={() => moveQuestion(qi, qi + 1)}
+                >
+                  ↓
+                </button>
+              </div>
+              <div className="libre-metro-body">
+                <p className="libre-metro-kind muted">
+                  Q{qi + 1} — {kindLabel(kind)}
+                </p>
+                <p className="libre-metro-prompt">{q.prompt}</p>
+                <div className="libre-inline-triple">
+                  {kind === 'crossing' ? (
+                    <>
+                      <Field label="Métro 1">
+                        <LineSelect
+                          value={names[0] ?? lineOpts[0]?.value ?? ''}
+                          ariaLabel={`Métro 1 question ${qi + 1}`}
+                          options={lineOpts}
+                          onChange={(name) => {
+                            const other =
+                              names[1] && names[1] !== name
+                                ? names[1]
+                                : (lineOpts.find((o) => o.value !== name)?.value ?? name)
+                            replaceAt(
+                              qi,
+                              buildMetroQuestion('crossing', map, {
+                                lineNames: [name, other],
+                              }),
+                            )
+                          }}
+                        />
+                      </Field>
+                      <Field label="Métro 2">
+                        <LineSelect
+                          value={names[1] ?? lineOpts[1]?.value ?? lineOpts[0]?.value ?? ''}
+                          ariaLabel={`Métro 2 question ${qi + 1}`}
+                          options={lineOpts}
+                          onChange={(name) => {
+                            const first =
+                              names[0] && names[0] !== name
+                                ? names[0]
+                                : (lineOpts.find((o) => o.value !== name)?.value ?? name)
+                            replaceAt(
+                              qi,
+                              buildMetroQuestion('crossing', map, {
+                                lineNames: [first, name],
+                              }),
+                            )
+                          }}
+                        />
+                      </Field>
+                    </>
+                  ) : null}
+                  {kind === 'gare-where' ? (
+                    <Field label="Gare">
+                      <LineSelect
+                        value={names[0] ?? lineOpts[0]?.value ?? ''}
+                        ariaLabel={`Gare question ${qi + 1}`}
+                        options={lineOpts}
+                        onChange={(name) =>
+                          replaceAt(
+                            qi,
+                            buildMetroQuestion('gare-where', map, { lineNames: [name] }),
+                          )
+                        }
+                      />
+                    </Field>
+                  ) : null}
+                  {kind === 'gare-which' ? (
+                    <Field label="Case">
+                      <LineSelect
+                        value={q.cell ?? cellOpts[0]?.value ?? ''}
+                        ariaLabel={`Case question ${qi + 1}`}
+                        options={cellOpts}
+                        onChange={(cell) =>
+                          replaceAt(qi, buildMetroQuestion('gare-which', map, { cell }))
+                        }
+                      />
+                    </Field>
+                  ) : null}
+                  {kind === 'path' || kind === 'termini' ? (
+                    <Field label="Métro">
+                      <LineSelect
+                        value={names[0] ?? lineOpts[0]?.value ?? ''}
+                        ariaLabel={`Métro question ${qi + 1}`}
+                        options={lineOpts}
+                        onChange={(name) =>
+                          replaceAt(qi, buildMetroQuestion(kind, map, { lineNames: [name] }))
+                        }
+                      />
+                    </Field>
+                  ) : null}
+                  <Field label="Corrigé">
+                    <CorrigeBox value={q.answer ?? ''} ariaLabel={`Corrigé métro ${qi + 1}`} />
+                  </Field>
+                </div>
+              </div>
+            </div>
+          )
+        })}
       </>
     )
   }
