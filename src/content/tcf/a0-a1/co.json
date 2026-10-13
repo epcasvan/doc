@@ -9,7 +9,8 @@
     "scene": "Les objets du quotidien",
     "consigne": "Écoutez et cochez l’image qui correspond.",
     "support": {
-      "audio": "/lib/audio/comprehension/vie-quotidienne/les-objets-du-quotidien.mp3"
+      "audio": "/lib/audio/comprehension/vie-quotidienne/les-objets-du-quotidien.mp3",
+      "transcription": "La banane."
     },
     "questions": [],
     "melanger": true,
@@ -251,132 +252,92 @@
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/radio/au-magasin-de-sport.mp3",
-      "transcription": "Aujourd’hui, chez Sport Plus, 50 % de réduction sur les vêtements de tennis : short, t-shirt, chaussures. Vous pouvez aussi participer à notre grand jeu pour gagner le ballon de l’équipe de France de football. C’est facile : venez vite à l’accueil et répondez à deux questions."
+      "transcription": "Exercice 21.\n\nChers clients, le magasin ferme dans quinze minutes.\nMerci de vous diriger vers les caisses pour régler vos achats.\nLe magasin est fermé le dimanche.\nLundi, le magasin ouvre à 10 heures.\nBonne journée."
     },
     "questions": [
       {
-        "enonce": "Quel est le montant de la réduction ?",
-        "type_reponse": "lignes",
-        "points": 1,
-        "nb_lignes": 2,
-        "reponse_modele": "50 %."
-      },
-      {
-        "enonce": "Quels articles sont en promotion ?",
-        "type_reponse": "qcm_image",
-        "points": 1,
-        "melanger": false,
-        "choix": [
-          {
-            "id": "a",
-            "image": "/lib/images/vocabulaire/sports/ballon-de-football.webp"
-          },
-          {
-            "id": "b",
-            "image": "/lib/images/vocabulaire/sports/raquette-de-tennis.webp",
-            "correct": true
-          },
-          {
-            "id": "c",
-            "image": "/lib/images/vocabulaire/sports/natation.webp"
-          }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "raquette de tennis"
-          },
-          "qcm_texte": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "texte": "ballon de football"
-              },
-              {
-                "id": "b",
-                "texte": "raquette de tennis",
-                "correct": true
-              },
-              {
-                "id": "c",
-                "texte": "natation"
-              }
-            ]
-          }
-        }
-      },
-      {
-        "enonce": "Que pouvez-vous gagner au jeu ?",
+        "enonce": "Le magasin ferme dans combien de temps ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Un ballon de foot",
+            "texte": "10 minutes"
+          },
+          {
+            "id": "b",
+            "texte": "15 minutes",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "texte": "20 minutes"
+          }
+        ]
+      },
+      {
+        "enonce": "Que devez-vous faire ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Aller aux caisses",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Un t-shirt de foot"
+            "texte": "Faire les courses"
           },
           {
             "id": "c",
-            "texte": "Des chaussures de foot"
+            "texte": "Attendre dehors"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Un ballon de foot"
-          }
-        }
+        ]
       },
       {
-        "enonce": "Où devez-vous aller pour participer au jeu ?",
-        "type_reponse": "lignes",
-        "points": 2,
-        "nb_lignes": 2,
-        "reponse_modele": "À l’accueil du magasin (Sport Plus).",
-        "formes": {
-          "qcm_texte": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "texte": "demander a l accueil",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "texte": "preter un stylo"
-              },
-              {
-                "id": "c",
-                "texte": "presenter des collegues"
-              }
-            ]
+        "enonce": "Le magasin est fermé quel jour ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Le samedi"
           },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/actions/demander-a-l-accueil.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/actions/preter-un-stylo.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/actions/presenter-des-collegues.webp"
-              }
-            ]
+          {
+            "id": "b",
+            "texte": "Le dimanche",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "texte": "Le lundi"
           }
-        }
+        ]
+      },
+      {
+        "enonce": "À quelle heure ouvre le magasin lundi ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "9 h"
+          },
+          {
+            "id": "b",
+            "texte": "10 h",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "texte": "11 h"
+          }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -1170,7 +1131,8 @@
     "consigne": "Écoutez le message. Cochez la case sous l’image si vous entendez le nom de l’objet (OUI) ; sinon, laissez-la vide (NON).",
     "points": 5,
     "support": {
-      "audio": "/lib/audio/comprehension/fetes/la-fete.mp3"
+      "audio": "/lib/audio/comprehension/fetes/la-fete.mp3",
+      "transcription": "cinq. Bonjour, c'est Adrien. Pour la fête chez Elise demain, je prends un ballon et un jeu de carte. Je vais aussi préparer un gâteau aux pommes et apporter un jus de fruit. Pense à tes lunettes de soleil et à ta crème solaire, il va faire très beau."
     },
     "questions": [],
     "melanger": false,
@@ -1412,188 +1374,92 @@
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/loisirs/au-musee.mp3",
-      "transcription": "Bonjour à tous. La visite du musée commence à 11 h. Vous devez laisser vos sacs à l’entrée et attendre la guide devant la salle 12. Après la visite, vous pouvez manger au restaurant du musée, au premier étage, et acheter le livre du musée à la boutique, à côté de la sortie."
+      "transcription": "Exercice 21.\n\nChers clients, le magasin ferme dans quinze minutes.\nMerci de vous diriger vers les caisses pour régler vos achats.\nLe magasin est fermé le dimanche.\nLundi, le magasin ouvre à 10 heures.\nBonne journée."
     },
     "questions": [
       {
-        "enonce": "À quelle heure commence la visite du musée ?",
+        "enonce": "Le magasin ferme dans combien de temps ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "10 heures"
+            "texte": "10 minutes"
           },
           {
             "id": "b",
-            "texte": "11 heures",
+            "texte": "15 minutes",
             "correct": true
           },
           {
             "id": "c",
-            "texte": "12 heures"
+            "texte": "20 minutes"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "11 heures"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/heure-horloge/dix-heures.webp"
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/heure-horloge/onze-heures.webp",
-                "correct": true
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/heure-horloge/midi.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
-        "enonce": "Que devez-vous laisser à l’entrée ?",
-        "type_reponse": "qcm_image",
+        "enonce": "Que devez-vous faire ?",
+        "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "image": "/lib/images/vocabulaire/accessoires/sac-a-dos.webp",
+            "texte": "Aller aux caisses",
             "correct": true
           },
           {
             "id": "b",
-            "image": "/lib/images/vocabulaire/accessoires/parapluie.webp"
+            "texte": "Faire les courses"
           },
           {
             "id": "c",
-            "image": "/lib/images/vocabulaire/vetements/manteau.webp"
+            "texte": "Attendre dehors"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "sac a dos"
-          },
-          "qcm_texte": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "texte": "sac a dos",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "texte": "parapluie"
-              },
-              {
-                "id": "c",
-                "texte": "manteau"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
-        "enonce": "Qu’est-ce que vous pouvez acheter à la boutique du musée ?",
-        "type_reponse": "qcm_image",
+        "enonce": "Le magasin est fermé quel jour ?",
+        "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "image": "/lib/images/vocabulaire/ecole-bureau/livre.webp",
-            "correct": true
+            "texte": "Le samedi"
           },
           {
             "id": "b",
-            "image": "/lib/images/vocabulaire/cuisine/mug.webp"
+            "texte": "Le dimanche",
+            "correct": true
           },
           {
             "id": "c",
-            "image": "/lib/images/vocabulaire/voyage/cartes-postales.webp"
+            "texte": "Le lundi"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "livre"
-          },
-          "qcm_texte": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "texte": "livre",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "texte": "mug"
-              },
-              {
-                "id": "c",
-                "texte": "cartes postales"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
-        "enonce": "Où est la boutique du musée ?",
-        "type_reponse": "lignes",
+        "enonce": "À quelle heure ouvre le magasin lundi ?",
+        "type_reponse": "qcm_texte",
         "points": 1,
-        "nb_lignes": 2,
-        "reponse_modele": "À côté de la sortie.",
-        "formes": {
-          "qcm_texte": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "texte": "À côté de la sortie",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "texte": "sous"
-              },
-              {
-                "id": "c",
-                "texte": "entre"
-              }
-            ]
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "9 h"
           },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/orientation/à-côté-de.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/orientation/sous.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/orientation/entre.webp"
-              }
-            ]
+          {
+            "id": "b",
+            "texte": "10 h",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "texte": "11 h"
           }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -1838,7 +1704,8 @@
     "consigne": "Écoutez le message. Cochez la case sous l’image si vous entendez le nom de l’objet (OUI) ; sinon, laissez-la vide (NON).",
     "points": 5,
     "support": {
-      "audio": "/lib/audio/comprehension/vacances/le-depart-en-vacances.mp3"
+      "audio": "/lib/audio/comprehension/vacances/le-depart-en-vacances.mp3",
+      "transcription": "Salut ces jeunes. On part en vacances demain, je suis super contente. On passe de chercher à 10 heures. Dans ta valise, prends un maillot de bain, un chapeau et une serviette. Prend aussi des chaussures de plage. J'apporte de la crème solaire. À demain !"
     },
     "questions": [],
     "melanger": false,
@@ -1883,7 +1750,7 @@
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/vie-quotidienne/le-rendez-vous.mp3",
-      "transcription": "Bonjour chère cousine, c’est Gilles. Je suis dans ta ville pour mon travail, avec mon directeur. On peut se voir demain après 19 h ? Je t’invite dans un petit restaurant sympa près de mon hôtel. Envoie-moi un texto avant 17 h si tu es d’accord et je réserve une table pour 20 h. Bisous !"
+      "transcription": "et preuve blanche 1, compréhension de l'oral. Vous allez écouter plusieurs documents, il y a deux écoutes, avant chaque écoute, vous entendez le son suivant, exercice 1, lisez les questions, écoutez le document, puis répondez. Bonjour, cher cousin, c'est Gilles, je suis dans ta ville pour mon travail avec mon directeur. On peut se voir demain après 19h, je t'invite dans un petit restaurant sympa près de mon hôtel. Envoie-moi un texto avant 17h, situé d'accord, et je réserve une table pour 20h. Bisou, bonjour, cher cousin, c'est Gilles, je suis dans ta ville pour mon travail avec mon directeur. On peut se voir demain après 19h, je t'invite dans un petit restaurant sympa près de mon hôtel. Envoie-moi un texto avant 17h, situé d'accord, et je réserve une table pour 20h. Bisou !"
     },
     "questions": [
       {
@@ -2422,7 +2289,7 @@
     "support": {
       "audio": "/lib/audio/comprehension/lieux-publics/a-la-bibliotheque.mp3",
       "nb_dialogues": 4,
-      "transcription": "Dialogue 1 — Bonjour, je voudrais m’inscrire, s’il vous plaît. — Vous avez une pièce d’identité ? — Oui, et j’ai aussi une carte d’étudiant.\n\nDialogue 2 — Vous ne pouvez pas emprunter six DVD. — Ah bon ? C’est écrit sur le panneau ? — Non, c’est six livres et trois DVD.\n\nDialogue 3 — Bonjour, je cherche une méthode pour apprendre le chinois. — Toutes nos méthodes sont classées au rayon 25, derrière vous. — Ah, merci, je n’avais pas fait attention.\n\nDialogue 4 — C’est fermé ? Mais ça fait longtemps ? — Non, regardez le panneau : c’est une fermeture exceptionnelle. — Ah bon, merci, je reviendrai demain."
+      "transcription": "Il y a 15 secondes de pause après chaque dialogue. Notez, sous chaque image, le numéro du dialogue qui correspond. Puis vous allez entendre à nouveau les dialogues. Vous pouvez compléter vos réponses. Regardez les images. Attention, il y a 6 images à B, C, D, E et F, mais seulement 4 dialogues. Dialogue 1. Bonjour, je voudrais inscrire s'il vous plaît. Vous avez une pièce d'identité ? Oui, et j'ai aussi une carte d'étudiant. Dialogue 2. Vous ne pouvez pas emprunter si DVD. Ah bon ? C'est écrit sur le panel ? Non, c'est si livre et 3 DVD. Dialogue 3. Bonjour, je cherche une méthode pour apprendre le chinois. Toutes nos méthodes sont classées au rayon 25 derrière vous. Ah, merci. Je n'avais pas fait attention. Dialogue 4. C'est fermé ? Mais, ça fait longtemps ? Non, regardez le panel. C'est une fermeture exceptionnelle. Ah bon, merci. Je reviendrai demain. Dialogue 1. Bonjour, je voudrais inscrire s'il vous plaît. Vous avez une pièce d'identité ? Oui, et j'ai aussi une carte d'étudiant. Dialogue 2. Vous ne pouvez pas emprunter si DVD. Ah bon ? C'est écrit sur le panel ? Non, c'est si livre et 3 DVD. Dialogue 3. Bonjour, je cherche une méthode pour apprendre le chinois. Toutes nos méthodes sont classées au rayon 25 derrière vous. Ah, merci. Je n'avais pas fait attention. Dialogue 4. C'est fermé ? Mais, ça fait longtemps ? Non, regardez le panel. C'est une fermeture exceptionnelle. Ah bon, merci. Je reviendrai demain."
     },
     "questions": [],
     "situations": [
@@ -2470,7 +2337,8 @@
     "consigne": "Écoutez le message. Cochez la case sous l’image si vous entendez le nom de l’objet (OUI) ; sinon, laissez-la vide (NON).",
     "points": 5,
     "support": {
-      "audio": "/lib/audio/comprehension/vacances/le-sac-de-voyage.mp3"
+      "audio": "/lib/audio/comprehension/vacances/le-sac-de-voyage.mp3",
+      "transcription": "Quelles objets sont données dans le message? Vous entendez le nom de l'objet? Cocher oui. Sinon, cocher non. Puis, vous allez entendre à nouveau le message. Vous pouvez compléter vos réponses. Allô? Est-ce que tu peux m'aider à faire le sac pour ce week-end? Prends des gants s'il te plaît. Il faut aussi des serviettes. Elles sont sur mon lit dans ma chambre. Mais aussi le dentifrice et les brossadans dans le sac. Pour nos vêtements, je vais apporter une valise. Merci."
     },
     "questions": [],
     "melanger": false,
@@ -2515,7 +2383,7 @@
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/loisirs/au-cinema-1.mp3",
-      "transcription": "Salut, c’est Cyril ! Qu’est-ce que tu fais vendredi ? Moi, je rentre de vacances. Dis, tu veux aller au cinéma ? Regarde le programme des films sur le site Internet. Après, écris-moi un message : je ne peux pas répondre au téléphone. Je vais t’apporter un t-shirt souvenir de mes vacances. À bientôt !"
+      "transcription": "A They Passs Salut... C'est Cyrille... entre de vacances, je dis. Tu veux aller au cinéma? Regarde le programme des films sur le site Internet, après, écris-moi un message. Je ne peux pas répondre au téléphone. Je vais t'apporter un t-shirt souvenir de mes vacances. A bientôt, salut, c'est Cyrille. Je vais t'apporter un t-shirt souvenir de mes vacances. A bientôt, le programme des films sur le site Internet, après, écris-moi un message. Je ne peux pas répondre au téléphone. Je vais t'apporter un t-shirt souvenir de mes vacances. A bientôt."
     },
     "questions": [
       {
@@ -2942,7 +2810,7 @@
     "support": {
       "audio": "/lib/audio/comprehension/ecole/a-l-universite.mp3",
       "nb_dialogues": 4,
-      "transcription": "Dialogue 1 — Tiens, mon stylo vert. — Oh, merci ! Qu’est-ce que je dois écrire en vert ? — Tu écris la date en haut de la feuille.\n\nDialogue 2 — Tous les jours, il y a de la viande au restaurant de l’université. — C’est vrai. Tu n’aimes pas la viande ? — Non, je ne mange pas de viande. Je vais sortir pour manger dehors.\n\nDialogue 3 — Regarde, c’est la professeure d’histoire. Elle est à l’entrée de la bibliothèque. — Ah oui, je la connais. C’est aussi ma professeure de géographie.\n\nDialogue 4 — Madame, je ne comprends pas l’exercice. — Alors, viens au tableau. On va faire l’exercice. — D’accord. Je prends mon livre ? — Oui, prends ton livre."
+      "transcription": "Il y a 15 secondes de pause après chaque dialogue. Noter, sous chaque image, le numéro du dialogue qui correspond. Puis, vous allez entendre à nouveau les dialogues. Vous pouvez compléter vos réponses. Regardez les images. Attention, il y a 6 images A, B, C, D, E et F, mais seulement 4 dialogues. Dialogue 1. Tiens, mon style ouvert. Oh, merci. Qu'est-ce que je dois écrire en vert ? Tu écris la date en haut de la feuille. Dialogue 2. Tous les jours, il y a de la viande au restaurant de l'université. C'est vrai, tu n'aimes pas la viande ? Non, je ne mange pas de viande. Je vais sortir pour manger dehors. Dialogue 3. Regarde, c'est la professeur d'histoire. Elle est à l'entrée de la bibliothèque. Ah, oui, je la connais. C'est aussi ma professeur de géographie. Dialogue 4. Madame, oui, je ne comprends pas l'exercice. Alors, viens au tableau. On va faire l'exercice. D'accord. Je prends mon livre. Oui, prends ton livre. Dialogue 1. Tiens, mon style ouvert. Oh, merci. Qu'est-ce que je dois écrire en vert ? Tu écris la date en haut de la feuille. Dialogue 2. Tous les jours, il y a de la viande au restaurant de l'université. C'est vrai. Tu n'aimes pas la viande ? Non, je ne mange pas de viande. Je vais sortir pour manger dehors. Dialogue 3. Regarde, c'est la professeur d'histoire. Elle est à l'entrée de la bibliothèque. Ah, oui, je la connais. C'est aussi ma professeur de géographie. Dialogue 4. Madame, oui, je ne comprends pas l'exercice. Alors, viens au tableau. On va faire l'exercice. D'accord. Je prends mon livre. Oui, prends ton livre."
     },
     "questions": [],
     "situations": [
@@ -2990,7 +2858,8 @@
     "consigne": "Écoutez le message. Cochez la case sous l’image si vous entendez le nom de l’objet (OUI) ; sinon, laissez-la vide (NON).",
     "points": 5,
     "support": {
-      "audio": "/lib/audio/comprehension/loisirs/au-restaurant.mp3"
+      "audio": "/lib/audio/comprehension/loisirs/au-restaurant.mp3",
+      "transcription": "Quelles objets sont données dans le message? Vous entendez le nom de l'objet? Cocher ou oui? Sinon, cocher non. Puis, vous allez entendre à nouveau le message. Vous pouvez compléter vos réponses. Allô? Je suis devant le menu du restaurant. Qu'est-ce que tu veux? Pour le plat, il y a du poisson avec durée. Il y a aussi une boisson avec d'ulets. Et pour le dessert, c'est de la glace avec une banane. Le restaurant vend aussi des verres. Ils sont très beaux. Appele-moi."
     },
     "questions": [],
     "melanger": false,
@@ -3510,7 +3379,8 @@
     "consigne": "Écoutez le message. Cochez la case sous l’image si vous entendez le nom de l’objet (OUI) ; sinon, laissez-la vide (NON).",
     "points": 5,
     "support": {
-      "audio": "/lib/audio/comprehension/loisirs/le-sport-1.mp3"
+      "audio": "/lib/audio/comprehension/loisirs/le-sport-1.mp3",
+      "transcription": "Activité 5 Depuis la fermeture des salles de sport, j'ai repris le sport à la maison. J'utilise des élastiques, des poids et une corde à sauter. Ce matériel est suffisant pour une séance de sport complète. J'aimerais m'acheter un tapis de yoga prochainement. Je n'ai finalement pas besoin de machines."
     },
     "questions": [],
     "melanger": false,
@@ -4140,7 +4010,7 @@
     "consigne": "Vous écoutez ce message sur votre téléphone. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/loisirs/le-club-de-sport.mp3",
-      "transcription": "Bonjour, je suis Monsieur Morel, du club de sport. J’appelle pour votre cours de danse du mercredi de 9 h à 11 h. Merci de venir au premier cours, mercredi 10 septembre, avec votre chèque de 160 € pour l’inscription. Apportez de l’eau, il fait chaud dans la salle. Bonne journée !"
+      "transcription": "Écoutez le document puis répondez. Bonjour, je suis Monsieur Morrell du Club de sport. J'appelle pour votre cours de danse du mercredi de 9h11h. Merci de venir au premier cours mercredi dix septembre avec votre check de 160 euros pour l'inscription. Apporter de l'eau il fait chaud dans la salle. Bonjour, je suis Monsieur Morrell du Club de sport. J'appelle pour votre cours de danse du mercredi de 9h11h. Merci de venir au premier cours mercredi dix septembre avec votre check de 160 euros pour l'inscription. Apporter de l'eau il fait chaud dans la salle. Bonne journée !"
     },
     "questions": [
       {
@@ -4301,7 +4171,7 @@
     "consigne": "Vous entendez cette annonce dans un aéroport. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/radio/a-l-aeroport-1.mp3",
-      "transcription": "Attention, ce message est pour les passagers du vol AF79 Paris-Madrid de 5 h 30. L’avion a un retard de 2 heures à cause de la neige. Merci d’attendre ici en salle 4. Il y a des journaux gratuits. Vous pouvez acheter à boire et à manger près du bureau d’information."
+      "transcription": "Lisez les questions Écoutez le document puis répondez Attention Ce message est pour les passagers du vol AF-79 par imméderie de 5h30 L'avion a un retard de 2 heures à cause de la neige Merci d'attendre ici en salle 4 Il y a des journaux gratuits Vous pouvez acheter à boire et amonger près du bureau d'information Attention Ce message est pour les passagers du vol AF-79 par imméderie de 5h30 L'avion a un retard de 2 heures à cause de la neige Merci d'attendre ici en salle 4 Il y a des journaux gratuits Vous pouvez acheter à boire et amonger près du bureau d'information Attention"
     },
     "questions": [
       {
@@ -4498,7 +4368,7 @@
     "consigne": "Vous travaillez et votre collègue Romain vous laisse un message. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/travail/la-reunion.mp3",
-      "transcription": "Bonjour, c’est Romain. Je ne suis pas au bureau aujourd’hui. J’ai un rendez-vous de travail chez M. Lafarge. Nous avons une réunion lundi 14 février, à 16 h, dans les bureaux de l’entreprise Imaweb. C’est au 15 rue du Docteur Lassalle. Je t’envoie le programme par mail ce soir. À bientôt !"
+      "transcription": "Lisez les questions Écoutez le document puis répondez Bonjour, c'est Romain Je ne suis pas au bureau aujourd'hui J'ai un rendez-vous de travail chez Monsieur Lafarge Nous avons une réunion lundi 14 février à 16 heures dans les bureaux de l'entreprise Imahweb C'est au 15 rue du docteur la salle Je t'envoie le programme par mail ce soir À bientôt Bonjour, c'est Romain Je ne suis pas au bureau aujourd'hui J'ai un rendez-vous de travail chez Monsieur Lafarge Nous avons une réunion lundi 14 février à 16 heures dans les bureaux de l'entreprise Imahweb C'est au 15 rue du docteur la salle Je t'envoie le programme par mail ce soir À bientôt"
     },
     "questions": [
       {
@@ -4643,7 +4513,7 @@
     "support": {
       "audio": "/lib/audio/comprehension/ecole/a-l-ecole-4.mp3",
       "nb_dialogues": 4,
-      "transcription": "Dialogue 1 — Excusez-moi, est-ce que vous avez des dictionnaires de français, ici ? — Oui, ils sont à côté des livres de sciences, en haut. — Ah oui, je vois ! Merci beaucoup !\n\nDialogue 2 — Voici la salle des professeurs, je vais vous présenter vos collègues. — Merci, et bonjour à tous ! — Je vous présente Madame Faure, la nouvelle professeure de français du lycée.\n\nDialogue 3 — Excusez-moi, je suis bien dans le cours d’anglais ? — Oui, c’est ça. Je suis Monsieur Klein, votre professeur. Asseyez-vous, le cours a commencé. — Merci, je suis désolée pour mon retard !\n\nDialogue 4 — Moussa, tu comprends l’exercice de mathématiques ? Il est très difficile. — L’exercice 2 ? Oui, c’est simple. Je vais t’expliquer. — Merci, c’est sympa. Je n’aime pas les maths !"
+      "transcription": "Il y a 15 secondes de pause après chaque dialogue. Noter sous chaque image le numéro du dialogue qui correspond. Puis, vous allez entendre à nouveau les dialogues. Vous pouvez compléter vos réponses. Regardez les images. Attention, il y a 6 images, A, B, C, D, E et F, mais seulement quatre dialogues. Situation numéro 1 Excusez-moi, est-ce que vous avez des dictionnaires de français ici? Oui, ils sont à côté des livres de science en haut. Ah oui, je vois. Merci beaucoup. Situation numéro 2 Voici la salle des professeurs. Je vais vous présenter vos collègues. Merci et bonjour à tous. Je vous présente Madame Ford, la nouvelle professeur de français du lycée. Situation numéro 3 Excusez-moi, je suis bien dans le cours d'anglais? Oui, c'est ça. Je suis Monsieur Clin, votre professeur. Asséyez-vous, le cours a commencé. Merci, je suis désolé pour mon retard. Situation numéro 4. Moussa, tu comprends l'exercice de mathématique? Il est très difficile. L'exercice 2? Oui, c'est simple. Je vais t'expliquer. Merci, c'est sympa. Je n'aime pas les maths. Situation numéro 1 Excusez-moi, est-ce que vous avez des dictionnaires de français ici? Oui, ils sont à côté des livres de science en haut. Ah oui, je vois. Merci beaucoup. Situation numéro 2 Voici la salle des professeurs. Je vais vous présenter vos collègues. Merci et bonjour à tous. Je vous présente Madame Ford, la nouvelle professeur de français du lycée. Situation numéro 3 Excusez-moi, je suis bien dans le cours d'anglais? Oui, c'est ça. Je suis Monsieur Clin, votre professeur. Asséyez-vous, le cours a commencé. Merci, je suis désolé pour mon retard. Situation numéro 4. Moussa, tu comprends l'exercice de mathématique? Il est très difficile. L'exercice 2? Oui, c'est simple. Je vais t'expliquer. Merci, c'est sympa. Je n'aime pas les maths."
     },
     "questions": [],
     "situations": [
@@ -4691,7 +4561,8 @@
     "consigne": "Vous allez entendre un message. Quels objets sont nommés dans le message ? Cochez les images des objets que vous entendez.",
     "points": 5,
     "support": {
-      "audio": "/lib/audio/comprehension/vie-quotidienne/au-telephone.mp3"
+      "audio": "/lib/audio/comprehension/vie-quotidienne/au-telephone.mp3",
+      "transcription": "Quelles objets sont données dans le message? Vous entendez le nom de l'objet? Cocher? Oui. Sinon? Cocher non. Puis, vous allez entendre à nouveau le message. Vous pouvez compléter vos réponses. Bonjour, c'est Cati. Chez nous dans le sud, il fait très chaud cette semaine. Alors, apporte un chapeau, ton maillot de bain et ta serviette. Nous avons une piscine. Prends aussi ton appareil photo. La nature est très belle ici. Je t'attends à la gare. Appele-moi si le train est en retard. Bonjour, c'est Cati. Chez nous dans le sud, il fait très chaud cette semaine. Alors, apporte un chapeau, ton maillot de bain et ta serviette. Nous avons une piscine. Prends aussi ton appareil photo. La nature est très belle ici. Je t'attends à la gare. Appele-moi si le train est en retard."
     },
     "questions": [],
     "melanger": false,
@@ -5833,7 +5704,7 @@
     "support": {
       "audio": "/lib/audio/comprehension/ecole/les-etudes-2.mp3",
       "nb_dialogues": 4,
-      "transcription": "Dialogue 1 — Je n’aime pas le restaurant de l’université. — Où est-ce que tu manges, alors ? — Je préfère me préparer mes repas.\n\nDialogue 2 — Papa, est-ce que tu peux m’aider avec mes devoirs ? — D’accord. Qu’est-ce que tu fais ? — Ce sont des exercices de mathématiques.\n\nDialogue 3 — Éric, où vas-tu ? — Je vais à la bibliothèque. Je dois emprunter des livres.\n\nDialogue 4 — Qui est la femme avec tous les livres, là-bas ? — C’est Madame Vega, la nouvelle professeure de français."
+      "transcription": "Il y a 15 secondes de pause après chaque dialogue. Noter sous chaque image le numéro du dialogue qui correspond. Puis vous allez entendre à nouveau les dialogues. Vous pouvez compléter vos réponses. Regardez les images. Attention il y a 6 images A, B, C, D, E et F mais seulement 4 dialogues. Dialogue 1. Je n'aime pas le restaurant de l'université. Où est-ce que tu manges alors ? Je préfère me préparer mes repas. Dialogue 2. Papa, est-ce que tu peux m'aider avec mes devoirs ? D'accord. Qu'est-ce que tu fais ? Ce sont des exercices de mathématiques. Dialogue 3. Éric, où vas-tu ? Je vais à la bibliothèque. Je dois emprunter des livres. Dialogue 4. Qui est la femme avec tous les livres là-bas ? C'est madame Vega, la nouvelle professeur de français. Dialogue 1. Je n'aime pas le restaurant de l'université. Où est-ce que tu manges alors ? Je préfère me préparer mes repas. Dialogue 2. Papa, est-ce que tu peux m'aider avec mes devoirs ? D'accord. Qu'est-ce que tu fais ? Ce sont des exercices de mathématiques. Dialogue 3. Éric, où vas-tu ? Je vais à la bibliothèque. Je dois emprunter des livres. Dialogue 4. Qui est la femme avec tous les livres là-bas ? C'est madame Vega, la nouvelle professeur de français."
     },
     "questions": [],
     "situations": [
@@ -5881,7 +5752,7 @@
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/fetes/l-anniversaire-3.mp3",
-      "transcription": "C’est Annie. Tu vas bien ? Samedi, c’est la fête d’anniversaire de Laurie, tu te souviens ? On t’attend au restaurant à 13 heures. Pour venir, prends le bus ligne 12. Tu descends au parc. Est-ce que tu peux apporter des ballons ? Moi, je m’occupe des cadeaux. À samedi !"
+      "transcription": "et preuve blanche 2, compréhension de l'oral. Vous allez écouter plusieurs documents. Il y a deux écoutes. Avant chaque écoute, vous entendez le son suivant. Exercise 1. Lisez les questions. Écoutez le document puis répondez. C'est Anne. Tu vas bien ? Sam dit, c'est la fête d'anniversaire de l'Ori. Sam dit, c'est la fête d'anniversaire de l'Ori. Tu te souviens ? On t'attend au restaurant à 13 heures. Pour venir, prends le bus, ligne 12. Tu déçends au parc. Est-ce que tu peux apporter des ballons ? Moi, je m'occupe des cadeaux. À Sam dit, salut, c'est Anne. Tu vas bien ? Sam dit, c'est la fête d'anniversaire de l'Ori. On t'attend au restaurant à 13 heures. Pour venir, prends le bus, ligne 12. Tu déçends au parc. Est-ce que tu peux apporter des ballons ? Moi, je m'occupe des cadeaux. À Sam dit."
     },
     "questions": [
       {
@@ -6456,7 +6327,7 @@
     "support": {
       "audio": "/lib/audio/comprehension/ecole/les-etudes-3.mp3",
       "nb_dialogues": 4,
-      "transcription": "Dialogue 1 — Excuse-moi, j’ai cours de sport. Je cherche la piscine de l’université. Où est-ce qu’elle est ? — Derrière toi ! Regarde ! — Oh ! Merci !\n\nDialogue 2 — Bonjour, j’ai rendez-vous avec Monsieur Richard, le professeur de français de ma fille. — Bonjour. Oui, il est dans la classe au premier étage, à gauche, salle 25.\n\nDialogue 3 — Qu’est-ce que tu fais, Samy ? — Je cherche mon livre de mathématiques. — Il n’est pas dans ton sac ? — Non, je ne le trouve pas. Il doit être chez moi.\n\nDialogue 4 — Alors, qui veut venir avec moi au tableau pour faire l’exercice ? — Moi, Madame, s’il vous plaît ! — D’accord, allez, viens."
+      "transcription": "Il y a 15 secondes de pause après chaque dialogue. Noter sous chaque image le numéro du dialogue qui correspond. Puis vous allez entendre à nouveau les dialogues. Vous pouvez compléter vos réponses. Regardez les images. Attention, il y a 6 images à B, C, D, E et F, mais seulement quatre dialogues. Dialogue 1. Excuse-moi, j'ai cours de sport. Je cherche la piscine de l'université. Où est-ce qu'elle est ? Derrière-toi, regarde. Oh, merci. Dialogue 2. Bonjour, j'ai rendez-vous avec monsieur Richard, le professeur de français de ma fille. Bonjour. Oui, il est dans la classe au premier étage à gauche, Sal 25. Dialogue 3. Qu'est-ce que tu fais, Sammy ? Je cherche mon livre de mathématiques. Il n'est pas dans ton sac ? Non, je ne le trouve pas. Il doit être chez moi. Dialogue 4. Alors, qui veut venir avec moi au tableau pour faire l'exercice ? Moi, ma dame, s'il vous plaît. D'accord. Allez, viens. Dialogue 1. Excuse-moi, j'ai cours de sport. Je cherche la piscine de l'université. Où est-ce qu'elle est ? Derrière-toi, regarde. Oh, merci. Dialogue 2. Bonjour, j'ai rendez-vous avec monsieur Richard, le professeur de français de ma fille. Bonjour. Oui, il est dans la classe au premier étage à gauche, Sal 25. Dialogue 3. Qu'est-ce que tu fais, Sammy ? Je cherche mon livre de mathématiques. Il n'est pas dans ton sac ? Non, je ne le trouve pas. Il doit être chez moi. Dialogue 4. Alors, qui veut venir avec moi au tableau pour faire l'exercice ? Moi, ma dame, s'il vous plaît. D'accord. Allez, viens."
     },
     "questions": [],
     "situations": [
@@ -6506,7 +6377,7 @@
     "support": {
       "audio": "/lib/audio/comprehension/radio/les-annonces.mp3",
       "nb_dialogues": 4,
-      "transcription": "Message 1 — Chers clients, opération exceptionnelle : les chaussures sont soldées à moins 50 % pendant une heure !\n\nMessage 2 — Nous allons atterrir dans quelques minutes. Veuillez rester assis et attendre l’arrêt de l’avion. Merci.\n\nMessage 3 — Vous avez 5 minutes pour faire cet exercice.\n\nMessage 4 — Bonjour, la réunion va commencer. Vous pouvez vous asseoir dans la salle."
+      "transcription": "numéro 1 Vous allez entendre quatre messages Vous entendrez chaque message deux fois Écoutez et écrivez le numéro du message sous l'image qui correspond Vous avez 30 secondes pour regarder Attention Nous commençons Message numéro 1 Chers clients Opération exceptionnelle Les chaussures sont soldés à moins 50% pendant une heure Chers clients Opération exceptionnelle Les chaussures sont soldés à moins 50% pendant une heure Message numéro 2 Nous allons attérir dans quelques minutes Veuillez rester assis et attendre la raie de l'avion Merci Nous allons attérir dans quelques minutes Veuillez rester assis et attendre la raie de l'avion Merci Message numéro 3 Vous avez cinq minutes pour faire cet exercice Vous avez cinq minutes pour faire cet exercice Message numéro 4 Bonjour La réunion va commencer Vous pouvez vous asseoir dans la salle Bonjour La réunion va commencer Vous pouvez vous asseoir dans la salle"
     },
     "questions": [],
     "situations": [
@@ -6544,7 +6415,7 @@
     "consigne": "Vous allez entendre 4 petits dialogues. Vous entendrez chaque dialogue deux fois. Lisez les questions et cochez la bonne réponse.",
     "support": {
       "audio": "/lib/audio/comprehension/vie-quotidienne/les-situations-du-quotidien-3.mp3",
-      "transcription": "Dialogue 1 — Le midi, vous pouvez manger au restaurant de l’entreprise. — Ah oui ? Et le restaurant ouvre à quelle heure ? — À 11 h 30. — 11 h 30, d’accord. À tout à l’heure !\n\nDialogue 2 — Bonjour Monsieur, c’est combien le kilo de cerises ? — 6 euros 40. — 6 euros 40 ? J’en veux 500 grammes. — Très bien, voilà.\n\nDialogue 3 — Pour la visite médicale, prenez rendez-vous avec le médecin du travail. C’est le docteur Chéret. Son téléphone est le 01 48 24 32. — 01 48 24 32. Merci, je téléphone tout de suite.\n\nDialogue 4 — Bonjour, est-ce que je pourrais essayer cette robe, s’il vous plaît ? — Oui, bien sûr. Quelle est votre taille ? — 38. — 38, voilà."
+      "transcription": "exerces numéro 2. Vous allez entendre quatre petits dialogues. Vous entendrez chaque dialogue deux fois. Écoutez, lisez les questions et cochez la case qui correspond à la bonne réponse. Vous avez maintenant 30 secondes. Attention. Nous commençons. Dialogue numéro 1. Le midi, vous pouvez manger au restaurant de l'entreprise. Ah oui. Et le restaurant ouvre à quelle heure? À 11h30. 11h30. D'accord. À tout à l'heure? Le midi, vous pouvez manger au restaurant de l'entreprise. Ah oui. Et le restaurant ouvre à quelle heure? À 11h30. 11h30. D'accord. À tout à l'heure? Dialogue numéro 2. Bonjour monsieur. C'est combien le kilo de se risent? 6,40. 6,40. J'en veux 500 grammes. Très bien. Voilà. Bonjour monsieur. C'est combien le kilo de se risent? 6,40. 6,40. J'en veux 500 grammes. Très bien. Voilà. Dialogue numéro 3. Pour la visite médicale, prenez rendez-vous avec le médecin du travail. C'est le docteur chéré. Son téléphone est le 01, 48, 24, 32. Merci. Je téléphone tout de suite. Pour la visite médicale, prenez rendez-vous avec le médecin du travail. C'est le docteur chéré. Son téléphone est le 01, 48, 24, 32. 01, 48, 24, 32. Merci. Je téléphone tout de suite. Dialogue numéro 4. Bonjour. Est-ce que je pourrais essayer cette robe s'il vous plaît? Oui, bien sûr. Quelle est votre taille? 38. 38. Voilà. Bonjour. Est-ce que je pourrais essayer cette robe s'il vous plaît? Oui, bien sûr. Quelle est votre taille? 38. 38. Voilà."
     },
     "questions": [
       {
@@ -6685,7 +6556,7 @@
     "consigne": "Vous allez entendre le message de votre amie Léa. Vous entendrez le message deux fois. Lisez les questions et répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/fetes/l-anniversaire-4.mp3",
-      "transcription": "Bonjour Marie, c’est Léa. Je t’appelle pour t’inviter samedi à mon anniversaire, chez mes grands-parents. C’est près du centre. Rendez-vous à midi devant le cinéma des Arts. Tu peux apporter un jus de fruits ? Merci, et à samedi ! Ah ! Mon téléphone, c’est le 01 40 60 54. Ciao !"
+      "transcription": "numéro 3 Vous allez entendre le message de votre ami Léa Vous entendrez le message deux fois Lisez les questions et complétez les réponse – Bonjour Marie – Bonjour Marie Je t'appelle pour t'inviter samedi à mon anniversaire chez mes grands parents C'est près du centre. Rendez-vous à midi devant le cinéma des arts – Bonjour Marie – Je t'appelle pour t'inviter samedi à mon anniversaire chez mes grands parents C'est près du centre. Rendez-vous à midi devant le cinéma des arts – Je vais apporter un jus de fruits. Merci et à samedi à mon téléphone et le 01 – 40 – 60 – 54 – Ciao"
     },
     "questions": [
       {
@@ -6838,7 +6709,7 @@
     "consigne": "Vous allez entendre une émission de radio. Vous entendrez le message deux fois. Lisez les questions et répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/radio/au-concert.mp3",
-      "transcription": "Chers auditeurs, bonsoir ! NRJ, votre radio préférée, offre 30 places pour le concert de U2, vendredi 29 février, au Palais des Sports de Paris. Pour gagner vos places, c’est facile : appelez-nous vite au 01 01 40 50 60 et préparez-vous pour votre soirée rock !"
+      "transcription": "numéro 4 Vous allez entendre une émission de radio. Vous entendrez le message deux fois. Lisez les questions et complétez les réponses. Vous avez maintenant 30 secondes pour lire l'attention. Nous commençons. Chers auditeurs bonsoir. Energie votre radio préférée offre 30 places pour le concert de YouTube vendredi 29 février au palais des sports de Paris. Pour gagner vos places, c'est facile. Appelez-nous vite aux 01, 01, 40, 50, 60. Et préparez-vous pour votre soirée rock. Vous allez entendre une émission de radio qui nous a agitée en public. Lisez les questions et votre radio préférée offre 30 places pour le concert de YouTube vendredi 29 février au palais des sports de Paris. Vous allez entendre une émission de radio gagné au palais des sports de Paris. 50, 60, et préparez-vous pour votre soirée rock."
     },
     "questions": [
       {
@@ -7734,90 +7605,90 @@
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/actualite/tu-as-regarde-infos-1.mp3",
-      "transcription": "- Tu as regardé les infos hier soir ? Ils ont parlé de la crise économique…\n- Non, hier je suis partie tard du bureau. Tu sais, je ne regarde pas beaucoup la télé, je lis la presse en ligne.\n- Tu es abonnée à un journal ?\n- Je reçois la newsletter de Ouest-France et je lis aussi les articles des journaux et des magazines gratuits.\n- Moi, je n'aime pas lire, je préfère regarder le journal télévisé.\n- Tu regardes le JT sur quelle chaîne ?\n- Sur Arte à 19 h 45. Je m'intéresse à l'actualité en France bien sûr mais aussi en Europe ! Hier, je suis rentré tard et j'ai regardé le journal de 20 heures sur France 2.\n- Tu écoutes la radio aussi ?\n- Oui ! Ce matin j'ai écouté l'interview du ministre de l'Économie au journal de 8 h sur France Inter."
+      "transcription": "Aujourd'hui, nous parlons de la Fête des voisins. Cette année, les Français sont invités à organiser la fête le vendredi 29 mai. Pour le buffet, les voisins apportent des plats chauds ou froids à partager."
     },
     "questions": [
       {
-        "enonce": "De quoi ont parlé les infos hier soir ?",
+        "enonce": "De quelle fête parle-t-on ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "De la crise économique",
+            "texte": "De la Fête des voisins",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "D'un match de football"
+            "texte": "De la Fête de la musique"
           },
           {
             "id": "c",
-            "texte": "D'une tempête"
+            "texte": "De la Fête nationale"
           }
         ]
       },
       {
-        "enonce": "Pourquoi la femme n'a-t-elle pas regardé les infos hier ?",
+        "enonce": "Quel jour est la fête cette année ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Elle est partie tard du bureau",
+            "texte": "Le vendredi 29 mai",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Sa télévision est en panne"
+            "texte": "Le samedi 29 mai"
           },
           {
             "id": "c",
-            "texte": "Elle était au restaurant"
+            "texte": "Le vendredi 29 juin"
           }
         ]
       },
       {
-        "enonce": "Comment la femme préfère-t-elle s'informer ?",
+        "enonce": "Qu'apportent les voisins pour le buffet ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "En lisant la presse en ligne",
+            "texte": "Des plats chauds ou froids",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "En regardant la télévision"
+            "texte": "Seulement des desserts"
           },
           {
             "id": "c",
-            "texte": "En écoutant la radio"
+            "texte": "Seulement des boissons"
           }
         ]
       },
       {
-        "enonce": "À quelle heure est le JT sur Arte ?",
+        "enonce": "Que font les voisins avec les plats ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "À 19 h 45",
+            "texte": "Ils les partagent",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "À 20 h 00"
+            "texte": "Ils les vendent"
           },
           {
             "id": "c",
-            "texte": "À 8 h 00"
+            "texte": "Ils les gardent pour eux"
           }
         ]
       }
@@ -7835,7 +7706,7 @@
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/actualite/tu-as-regarde-infos-3.mp3",
-      "transcription": "- Tu as regardé les infos hier soir ?\n- Non, je lis la presse en ligne.\n- Tu es abonnée à un journal ?\n- Je reçois la newsletter de Ouest-France.\n- Moi, je préfère le journal télévisé sur Arte.\n- Hier, je suis rentré tard et j'ai regardé le journal de 20 heures sur France 2.\n- Ce matin j'ai écouté la radio sur France Inter."
+      "transcription": "- Bonjour Marc ! Tu es libre jeudi ? J'organise un apéro chez moi. Je t'invite avec mes amies Christelle et Laurane.\n- Désolé Maud, je ne suis pas libre jeudi.\n- Dommage. Et vendredi, tu peux venir ?\n- Ah oui, vendredi volontiers !"
     },
     "questions": [
       {
@@ -8037,90 +7908,90 @@
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/lieux-publics/personne-suivante-1.mp3",
-      "transcription": "- Personne suivante... J'ai dit : Personne suivante ! Bonjour !\n- Bonjour, je voudrais des informations pour renouveler mon titre de séjour qui expire dans 5 mois.\n- Pour faire une demande de renouvellement, vous devez envoyer votre carte de séjour qui arrive à expiration.\n- Pouvez-vous me donner l'adresse postale ?\n- C'est écrit sur ce papier.\n- Je dois envoyer une lettre recommandée ?\n- Non, utilisez une lettre simple au tarif normal. Avec la carte, vous envoyez ce formulaire avec votre nom, celui de votre conjoint et de vos enfants à charge, un justificatif de domicile et 3 photos d'identité. N'oubliez pas d'ajouter un timbre fiscal.\n- Quand est-ce que je dois faire ma demande ?\n- N'attendez pas trop ! Envoyez votre demande au moins 60 jours avant la date d'expiration de votre carte.\n- Merci pour ces informations, j'ai tout noté."
+      "transcription": "- Allô Laurie ?\n- Non, je suis sa mère.\n- Pardon madame, bonjour. Je suis une amie de Laurie. Je m'appelle Laura.\n- Bonjour Laura. J'appelle ma fille."
     },
     "questions": [
       {
-        "enonce": "Où la personne demande-t-elle des informations ?",
+        "enonce": "Qui répond au téléphone ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "À un guichet",
+            "texte": "La mère de Laurie",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "À la poste"
+            "texte": "Laurie"
           },
           {
             "id": "c",
-            "texte": "Dans une banque"
+            "texte": "Le père de Laurie"
           }
         ]
       },
       {
-        "enonce": "Quand expire le titre de séjour ?",
+        "enonce": "Qui est Laura ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Dans 5 mois",
+            "texte": "Une amie de Laurie",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Dans 5 semaines"
+            "texte": "La sœur de Laurie"
           },
           {
             "id": "c",
-            "texte": "Dans 5 jours"
+            "texte": "Une voisine de Laurie"
           }
         ]
       },
       {
-        "enonce": "Quel type de lettre faut-il envoyer ?",
+        "enonce": "Que fait la mère à la fin ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Une lettre simple",
+            "texte": "Elle appelle sa fille",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Une lettre recommandée"
+            "texte": "Elle raccroche"
           },
           {
             "id": "c",
-            "texte": "Un colis"
+            "texte": "Elle prend un message"
           }
         ]
       },
       {
-        "enonce": "Combien de photos d'identité faut-il ?",
+        "enonce": "Comment Laura parle-t-elle à la mère ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "3",
+            "texte": "Poliment, elle dit « pardon madame »",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "2"
+            "texte": "Elle est impolie"
           },
           {
             "id": "c",
-            "texte": "4"
+            "texte": "Elle ne dit rien"
           }
         ]
       }
@@ -9152,86 +9023,86 @@
     },
     "questions": [
       {
-        "enonce": "Où y a-t-il un mot ?",
+        "enonce": "Pourquoi le voisin de Flo n'est-il pas content ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Dans le cahier de liaison",
+            "texte": "Elle écoute la musique trop fort",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Dans le livre de maths"
+            "texte": "Elle a un chien méchant"
           },
           {
             "id": "c",
-            "texte": "Sur l'ordinateur"
+            "texte": "Elle fume dans le couloir"
           }
         ]
       },
       {
-        "enonce": "Où faut-il aller ?",
+        "enonce": "Qu'est-ce que Flo ne respecte pas ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "À la réunion parents-profs",
+            "texte": "Le règlement et le calme",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Chez le médecin"
+            "texte": "Les horaires du garage"
           },
           {
             "id": "c",
-            "texte": "À la fête de l'école"
+            "texte": "Le local à vélos"
           }
         ]
       },
       {
-        "enonce": "Que faut-il faire avec les documents ?",
+        "enonce": "Comment va Flo ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Les remplir, les dater et les signer",
+            "texte": "Pas très bien",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Les jeter"
+            "texte": "Très bien"
           },
           {
             "id": "c",
-            "texte": "Les rendre aux élèves"
+            "texte": "Super bien"
           }
         ]
       },
       {
-        "enonce": "Est-ce que l'autre parent a vu le mot ?",
+        "enonce": "Comment Flo parle-t-elle à Manon ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Oui, c'est vrai",
+            "texte": "Au téléphone",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Non, c'est faux"
+            "texte": "Devant la maison"
           },
           {
             "id": "c",
-            "texte": "Ce n'est pas dit"
+            "texte": "À l'école"
           }
         ]
       }
@@ -9253,86 +9124,86 @@
     },
     "questions": [
       {
-        "enonce": "Qui les parents peuvent-ils rencontrer ?",
+        "enonce": "Qui parle avec l'employé de la faculté ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Les professeurs",
+            "texte": "Une nouvelle étudiante",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Le maire"
+            "texte": "Un professeur"
           },
           {
             "id": "c",
-            "texte": "Les médecins"
+            "texte": "Une secrétaire"
           }
         ]
       },
       {
-        "enonce": "Que dit-on des documents signés ?",
+        "enonce": "Est-ce que l'étudiante a déjà sa carte d'étudiant ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Ils sont importants",
+            "texte": "Non, pas encore",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Ils sont inutiles"
+            "texte": "Oui, elle l'a déjà"
           },
           {
             "id": "c",
-            "texte": "Ils sont facultatifs"
+            "texte": "Oui, mais elle l'a perdue"
           }
         ]
       },
       {
-        "enonce": "Que fait-on avec les documents ?",
+        "enonce": "Où peut-on s'inscrire avec la carte d'étudiant ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "On les signe",
+            "texte": "À la bibliothèque",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "On les jette"
+            "texte": "À la piscine"
           },
           {
             "id": "c",
-            "texte": "On les affiche"
+            "texte": "Au gymnase"
           }
         ]
       },
       {
-        "enonce": "De quoi parle ce message ?",
+        "enonce": "Quel cours l'étudiante cherche-t-elle ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "De l'école",
+            "texte": "Le cours d'économie",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Du sport"
+            "texte": "Le cours d'histoire"
           },
           {
             "id": "c",
-            "texte": "De la cuisine"
+            "texte": "Le cours d'anglais"
           }
         ]
       }
@@ -9556,86 +9427,86 @@
     },
     "questions": [
       {
-        "enonce": "Comment va Théo ?",
+        "enonce": "Avec quel appareil le client a-t-il un problème ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Bien",
+            "texte": "Avec sa box internet",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Mal"
+            "texte": "Avec sa télévision"
           },
           {
             "id": "c",
-            "texte": "Comme ci comme ça"
+            "texte": "Avec son vélo"
           }
         ]
       },
       {
-        "enonce": "À quoi la personne pense-t-elle encore ?",
+        "enonce": "Qui vient chez le client ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "À une soirée",
+            "texte": "Un technicien",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "À un examen"
+            "texte": "Un plombier"
           },
           {
             "id": "c",
-            "texte": "À un voyage"
+            "texte": "Un facteur"
           }
         ]
       },
       {
-        "enonce": "De quel sport parle-t-on ?",
+        "enonce": "Que fait le technicien d'abord ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Le football",
+            "texte": "Il regarde pourquoi ça ne marche pas",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Le tennis"
+            "texte": "Il change la box tout de suite"
           },
           {
             "id": "c",
-            "texte": "La natation"
+            "texte": "Il donne une nouvelle box"
           }
         ]
       },
       {
-        "enonce": "Quand partent-ils ?",
+        "enonce": "Que fait le technicien après avoir regardé la box ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Pour Noël",
+            "texte": "Il fait un devis",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Pour Pâques"
+            "texte": "Il envoie une facture"
           },
           {
             "id": "c",
-            "texte": "Pour les vacances d'été"
+            "texte": "Il appelle son chef"
           }
         ]
       }
@@ -9653,7 +9524,7 @@
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/fetes/inviter-5.mp3",
-      "transcription": "- On peut ranger les vélos où, s'il vous plaît ?\n- Vous devez ranger votre vélo dans le local.\n- Où est le local à vélos ?\n- À côté du garage.\n- Où je peux jeter les ordures ?\n- Dans le local à poubelles.\n- Est-ce qu'il y a un règlement ?\n- Le règlement est dans le hall d'entrée.\n- Il est interdit de fumer !\n- Tenez votre chien en laisse."
+      "transcription": "Tout d'abord, vous prendrez rendez-vous. Ensuite, vous discuterez des notes. Enfin, vous pourrez poser vos questions."
     },
     "questions": [
       {
@@ -9739,6 +9610,27 @@
             "texte": "Quatre"
           }
         ]
+      },
+      {
+        "enonce": "À qui s'adresse probablement ce message ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Aux parents d'élèves",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "À des touristes"
+          },
+          {
+            "id": "c",
+            "texte": "À des clients d'un magasin"
+          }
+        ]
       }
     ],
     "consigne_supplementaire": null,
@@ -9758,86 +9650,86 @@
     },
     "questions": [
       {
-        "enonce": "Que propose cette annonce ?",
+        "enonce": "Quelle saison est-ce ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Un week-end au bord de la mer",
+            "texte": "L'hiver",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Un séjour à la montagne"
+            "texte": "L'été"
           },
           {
             "id": "c",
-            "texte": "Un stage de cuisine"
+            "texte": "Le printemps"
           }
         ]
       },
       {
-        "enonce": "Avant quelle date faut-il réserver pour payer moins cher ?",
+        "enonce": "Quelle température va-t-il faire ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Avant le 15 juin",
+            "texte": "Moins cinq degrés",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Avant le 5 juin"
+            "texte": "Moins quinze degrés"
           },
           {
             "id": "c",
-            "texte": "Avant le 15 juillet"
+            "texte": "Cinq degrés"
           }
         ]
       },
       {
-        "enonce": "Qu'est-ce qui est inclus dans l'offre ?",
+        "enonce": "Que faut-il mettre pour sortir ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Les activités sportives",
+            "texte": "Un manteau",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Les boissons"
+            "texte": "Une robe"
           },
           {
             "id": "c",
-            "texte": "Le transport"
+            "texte": "Une jupe"
           }
         ]
       },
       {
-        "enonce": "Quel avantage a-t-on en réservant tôt ?",
+        "enonce": "Qu'est-ce qu'il ne faut surtout pas oublier ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "On paie moins cher",
+            "texte": "Le bonnet, l'écharpe et les gants",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "On a une plus grande chambre"
+            "texte": "Le parapluie et les bottes"
           },
           {
             "id": "c",
-            "texte": "On reçoit un cadeau"
+            "texte": "Le chapeau et les lunettes"
           }
         ]
       }
@@ -10865,90 +10757,90 @@
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/vie-quotidienne/ca-te-dit-venir-1.mp3",
-      "transcription": "- Ça te dit de venir manger à la maison dimanche prochain, le 10 ?\n- C'est gentil, mais je ne suis pas libre.\n- Et le dimanche d'après, le 17 ?\n- Le 17, ça marche !\n- Dis-moi, je suis invitée chez les Durand samedi. Qu'est-ce que je peux apporter ?\n- Ils ont un jardin, tu pourrais apporter une plante…\n- Tu veux venir voir une expo avec moi, samedi ?\n- Bonne idée ! Je peux venir avec un ami ?\n- Bien sûr, avec plaisir !\n- Tu viens prendre un pot avec nous, ce soir ?\n- Super ! On se retrouve où ?\n- Tu es dispo pour un ciné mercredi ?\n- Non, impossible ! J'ai rendez-vous avec mon père !\n- Paul, seriez-vous disponible pour dîner à la maison, samedi prochain ?\n- Je regrette / Je suis désolé, ce n'est pas possible. Une autre fois peut-être ?"
+      "transcription": "Vous voulez habiter dans un quartier calme ? Venez visiter les pièces lumineuses des studios avec terrasse et des appartements de 4 pièces de notre immeuble avec jardin. Nous sommes ouverts…"
     },
     "questions": [
       {
-        "enonce": "Quel dimanche la personne est-elle libre pour venir manger ?",
+        "enonce": "Qu'est-ce que la publicité propose de visiter ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Le 17",
+            "texte": "Des studios et des appartements",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Le 10"
+            "texte": "Des maisons et des châteaux"
           },
           {
             "id": "c",
-            "texte": "Le 24"
+            "texte": "Des bureaux et des magasins"
           }
         ]
       },
       {
-        "enonce": "Que pourrait-on apporter chez les Durand ?",
+        "enonce": "Comment est le quartier ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Une plante",
+            "texte": "Calme",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Un gâteau"
+            "texte": "Bruyant"
           },
           {
             "id": "c",
-            "texte": "Une bouteille de vin"
+            "texte": "Animé"
           }
         ]
       },
       {
-        "enonce": "Que propose-t-on de faire samedi ?",
+        "enonce": "Quel logement a une terrasse ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Voir une exposition",
+            "texte": "Un studio",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Aller au cinéma"
+            "texte": "Une maison"
           },
           {
             "id": "c",
-            "texte": "Faire un pique-nique"
+            "texte": "Un hôtel"
           }
         ]
       },
       {
-        "enonce": "Que demande la personne invitée à l'expo ?",
+        "enonce": "Combien de pièces ont les appartements ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Si elle peut venir avec un ami",
+            "texte": "Quatre",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Si l'entrée est gratuite"
+            "texte": "Deux"
           },
           {
             "id": "c",
-            "texte": "Si on peut y aller dimanche"
+            "texte": "Six"
           }
         ]
       }
@@ -10970,86 +10862,86 @@
     },
     "questions": [
       {
-        "enonce": "Où la personne s'est-elle promenée ?",
+        "enonce": "Qu'est-ce que cette annonce propose ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "En montagne",
+            "texte": "De s'inscrire à une association d'étudiants",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "À la plage"
+            "texte": "D'acheter des livres"
           },
           {
             "id": "c",
-            "texte": "En forêt"
+            "texte": "De visiter un musée"
           }
         ]
       },
       {
-        "enonce": "Quand a eu lieu la promenade ?",
+        "enonce": "De quelle faculté vient l'association ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Dimanche",
+            "texte": "De la fac des lettres",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Samedi"
+            "texte": "De la fac de sciences"
           },
           {
             "id": "c",
-            "texte": "Mercredi"
+            "texte": "De la fac de droit"
           }
         ]
       },
       {
-        "enonce": "Avec qui la personne s'est-elle promenée ?",
+        "enonce": "À quoi l'association aide-t-elle les étudiants ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Avec le club alpin",
+            "texte": "À réussir les examens",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Avec sa famille"
+            "texte": "À trouver un logement"
           },
           {
             "id": "c",
-            "texte": "Avec ses collègues"
+            "texte": "À payer leurs études"
           }
         ]
       },
       {
-        "enonce": "À quelle heure se sont-ils retrouvés ?",
+        "enonce": "Où l'association organise-t-elle des révisions ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "À 7 heures",
+            "texte": "À la bibliothèque",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "À 8 heures"
+            "texte": "Au gymnase"
           },
           {
             "id": "c",
-            "texte": "À 9 heures"
+            "texte": "Au restaurant"
           }
         ]
       }
@@ -11067,7 +10959,7 @@
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/vie-quotidienne/tu-travailles-ou-1.mp3",
-      "transcription": "- Tu travailles où ?\n- Dans une entreprise.\n- Aujourd'hui, je ne suis pas au bureau, je télétravaille.\n- L'informaticien est disponible ?\n- Non, il est en réunion.\n- Où est le directeur ?\n- Il a un rendez-vous important.\n- Où est le bureau de l'assistante ?\n- À côté de l'accueil.\n- Bonjour, je viens pour l'emploi de vendeur.\n- Merci de me recevoir !\n- Pourquoi vous voulez être vendeur ?\n- Parlez-moi de vous.\n- J'aime travailler en équipe."
+      "transcription": "- J'adore cette série ! C'est la nouvelle saison ?\n- Oui, elle est excellente. Je te la recommande.\n- C'est sur Séries Premium ?"
     },
     "questions": [
       {
@@ -11151,6 +11043,27 @@
           {
             "id": "c",
             "texte": "Ce n'est pas dit"
+          }
+        ]
+      },
+      {
+        "enonce": "Sait-on si la série passe sur Séries Premium ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Non",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Oui, elle y passe"
+          },
+          {
+            "id": "c",
+            "texte": "Oui, sur une autre chaîne"
           }
         ]
       }
@@ -11269,7 +11182,7 @@
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/vie-quotidienne/vous-avez-ordonnance-2.mp3",
-      "transcription": "- Vous avez une ordonnance ?\n- Oui, voilà.\n- Vous avez votre carte Vitale ?\n- Non, je n'habite pas en France.\n- Bonjour, j'ai une brûlure à la main, est-ce que vous pouvez m'aider ?\n- Mettez cette crème deux fois par jour sur la brûlure.\n- Je voudrais quelque chose contre le rhume.\n- Vous avez de l'aspirine en sachet ?\n- Comment je prends les antibiotiques ?\n- Vous devez prendre un comprimé matin, midi et soir."
+      "transcription": "- Je n'arrive jamais à m'endormir rapidement. Comment faire ?\n- Écoutez votre corps et évitez les écrans le soir."
     },
     "questions": [
       {
@@ -11353,6 +11266,27 @@
           {
             "id": "c",
             "texte": "La lecture"
+          }
+        ]
+      },
+      {
+        "enonce": "Est-ce que la personne prend des médicaments pour dormir ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "On ne sait pas",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Oui"
+          },
+          {
+            "id": "c",
+            "texte": "Non"
           }
         ]
       }
@@ -12769,6 +12703,48 @@
             "texte": "Il est au dernier étage"
           }
         ]
+      },
+      {
+        "enonce": "Est-ce que l'appartement est rénové ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Non, mais l'état général est excellent",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Oui, entièrement"
+          },
+          {
+            "id": "c",
+            "texte": "Non, il faut tout refaire"
+          }
+        ]
+      },
+      {
+        "enonce": "Que pense la personne après la visite du studio ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "C'est un coup de cœur",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Elle est déçue"
+          },
+          {
+            "id": "c",
+            "texte": "Elle hésite encore"
+          }
+        ]
       }
     ],
     "consigne_supplementaire": null,
@@ -12784,90 +12760,90 @@
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/maison/bonjour-etes-norin-1.mp3",
-      "transcription": "- Bonjour, vous êtes Madame Norin, la gardienne ?\n- Oui, c'est moi.\n- Je viens d'avoir votre numéro par l'agence immobilière. Je voudrais visiter le studio au rez-de-chaussée.\n- Il y a une visite groupée demain à 16 h. Venez avec votre dossier complet.\n- D'accord, merci madame."
+      "transcription": "Papa, maman, voici mon ami Fabien. Il est étudiant dans mon université. Fabien, voici mes parents : Simon et Flavie. Et le grand brun là, c'est mon frère Sébastien."
     },
     "questions": [
       {
-        "enonce": "Qui est Madame Norin ?",
+        "enonce": "À qui la jeune fille présente-t-elle Fabien ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "La gardienne de l'immeuble",
+            "texte": "À ses parents",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "L'agente immobilière"
+            "texte": "À son papa seulement"
           },
           {
             "id": "c",
-            "texte": "La propriétaire du studio"
+            "texte": "À sa maman seulement"
           }
         ]
       },
       {
-        "enonce": "Comment la personne a-t-elle eu le numéro de la gardienne ?",
+        "enonce": "Que fait Fabien dans la vie ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Par l'agence immobilière",
+            "texte": "Il est étudiant",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Par une voisine"
+            "texte": "Il est professeur"
           },
           {
             "id": "c",
-            "texte": "Sur une annonce"
+            "texte": "Il est cuisinier"
           }
         ]
       },
       {
-        "enonce": "Quel logement la personne veut-elle visiter ?",
+        "enonce": "Qui est le grand brun ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Un studio",
+            "texte": "Le frère Sébastien",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Une maison"
+            "texte": "L'ami Fabien"
           },
           {
             "id": "c",
-            "texte": "Une chambre"
+            "texte": "Le père Simon"
           }
         ]
       },
       {
-        "enonce": "À quel étage se trouve le studio ?",
+        "enonce": "Où la jeune fille connaît-elle Fabien ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Au rez-de-chaussée",
+            "texte": "À l'université",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Au premier étage"
+            "texte": "Au travail"
           },
           {
             "id": "c",
-            "texte": "Au dernier étage"
+            "texte": "Dans le quartier"
           }
         ]
       }
@@ -12885,7 +12861,7 @@
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/maison/une-visite-d-appartement-c-est-1.mp3",
-      "transcription": "- Une visite d'appartement, c'est rapide, soyez préparé ! Écoutez les conseils de notre spécialiste.\n- Avant de visiter, étudiez le quartier. Regardez la rue : y a-t-il des commerces, une poste ? Observez aussi l'immeuble : est-il moderne, rénové, calme ? Vous allez être content d'avoir un ascenseur si votre futur appartement est au dernier étage. Parlez avec le gardien.\n- Et pendant la visite ?\n- Regardez tout. Un salon lumineux, une jolie vue sont bien sûr importants, mais vérifiez surtout l'état de l'appartement."
+      "transcription": "Regarde, voici la photo d'anniversaire de mes 18 ans ! La jeune fille blonde, c'est moi ! Et voici papa, ton papi. Le petit roux, c'est mon frère Thomas, il est veuf."
     },
     "questions": [
       {
@@ -12986,90 +12962,90 @@
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/maison/salut-flo-alors-cette-2.mp3",
-      "transcription": "- Salut Flo, alors cette visite ? Tu penses quoi du studio ?\n- Salut Allan. C'est un coup de cœur ! Il est grand — 35 m2 — et exposé est-ouest.\n- Et le quartier ?\n- C'est à 5 minutes d'une station de métro. Je vais aussi discuter avec le gardien pour savoir si c'est calme. Bon, 490 € de loyer c'est un peu cher, mais les charges sont comprises, alors je pense que ça va aller.\n- Tu signes le bail quand ?\n- Attends, attends… l'agence va me donner une réponse demain."
+      "transcription": "En général, les familles françaises ont un ou deux enfants. Les parents sont jeunes. Ils ont entre 30 et 35 ans et sont souvent mariés ou pacsés. Mais ils peuvent aussi être séparés ou divorcés."
     },
     "questions": [
       {
-        "enonce": "Que pense Flo du studio ?",
+        "enonce": "Combien d'enfants ont les familles françaises, en général ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "C'est un coup de cœur",
+            "texte": "Un ou deux",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Il est trop petit"
+            "texte": "Trois ou quatre"
           },
           {
             "id": "c",
-            "texte": "Il est trop sombre"
+            "texte": "Cinq ou six"
           }
         ]
       },
       {
-        "enonce": "Quelle est la surface du studio ?",
+        "enonce": "Quel âge ont les parents, en général ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "35 m²",
+            "texte": "Entre 30 et 35 ans",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "25 m²"
+            "texte": "Entre 20 et 25 ans"
           },
           {
             "id": "c",
-            "texte": "45 m²"
+            "texte": "Entre 40 et 45 ans"
           }
         ]
       },
       {
-        "enonce": "Quel transport est à 5 minutes du studio ?",
+        "enonce": "Comment sont les parents ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Une station de métro",
+            "texte": "Jeunes",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Un arrêt de bus"
+            "texte": "Âgés"
           },
           {
             "id": "c",
-            "texte": "Une gare"
+            "texte": "Retraités"
           }
         ]
       },
       {
-        "enonce": "Pourquoi Flo veut-elle discuter avec le gardien ?",
+        "enonce": "Est-ce que les parents sont toujours mariés ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Pour savoir si le quartier est calme",
+            "texte": "Non, pas toujours",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Pour négocier le loyer"
+            "texte": "Oui, toujours"
           },
           {
             "id": "c",
-            "texte": "Pour avoir les clés"
+            "texte": "On ne sait pas"
           }
         ]
       }
@@ -13087,90 +13063,90 @@
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/maison/merci-bouquet-tulipes-1.mp3",
-      "transcription": "- Merci, ce bouquet de tulipes est superbe, je vais le mettre dans un vase. Mais venez au salon… Nous allons prendre l'apéritif avant de passer à table."
+      "transcription": "- Tu habites au 3e ?\n- Non, au rez-de-chaussée, dans un studio.\n- Il est bien ?\n- Non, la pièce est petite, sombre et la cuisine n'est pas équipée."
     },
     "questions": [
       {
-        "enonce": "Qu'est-ce que l'invité a apporté ?",
+        "enonce": "Dans quel logement habite la personne ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Un bouquet de tulipes",
+            "texte": "Dans un studio",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Une boîte de chocolats"
+            "texte": "Dans une maison"
           },
           {
             "id": "c",
-            "texte": "Une bouteille de vin"
+            "texte": "Dans un château"
           }
         ]
       },
       {
-        "enonce": "Où l'hôtesse va-t-elle mettre le bouquet ?",
+        "enonce": "À quel étage habite la personne ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Dans un vase",
+            "texte": "Au rez-de-chaussée",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Sur le balcon"
+            "texte": "Au 3e étage"
           },
           {
             "id": "c",
-            "texte": "Dans la cuisine"
+            "texte": "Au 5e étage"
           }
         ]
       },
       {
-        "enonce": "Où les invités doivent-ils venir ?",
+        "enonce": "Comment est la pièce du studio ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Au salon",
+            "texte": "Petite et sombre",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "À la cuisine"
+            "texte": "Grande et lumineuse"
           },
           {
             "id": "c",
-            "texte": "Au jardin"
+            "texte": "Neuve et moderne"
           }
         ]
       },
       {
-        "enonce": "Que va-t-on faire avant de passer à table ?",
+        "enonce": "Est-ce que la cuisine est équipée ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Prendre l'apéritif",
+            "texte": "Non",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Regarder un film"
+            "texte": "Oui"
           },
           {
             "id": "c",
-            "texte": "Faire une promenade"
+            "texte": "Il n'y a pas de cuisine"
           }
         ]
       }
@@ -13289,7 +13265,7 @@
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/maison/vous-avez-mal-ou-1.mp3",
-      "transcription": "- Vous avez mal où ?\n- J'ai mal à la gorge.\n- Vous toussez ?\n- Oui, je tousse beaucoup.\n- Vous avez de la fièvre ?\n- Oui.\n- Qu'est-ce que j'ai, docteur ?\n- C'est la grippe !\n- Qu'est-ce que je dois faire ?\n- Restez à la maison."
+      "transcription": "- Paris est plus cher que Lyon ?\n- Oui, les loyers sont plus élevés. Mais il y a autant de musées."
     },
     "questions": [
       {
@@ -13373,6 +13349,27 @@
           {
             "id": "c",
             "texte": "Du sport"
+          }
+        ]
+      },
+      {
+        "enonce": "Où habitent les deux personnes ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "On ne le sait pas",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "À Paris"
+          },
+          {
+            "id": "c",
+            "texte": "À Lyon"
           }
         ]
       }
@@ -13592,7 +13589,7 @@
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/loisirs/je-peux-aider-1.mp3",
-      "transcription": "- Je peux vous aider ?\n- Je voudrais acheter une robe.\n- Je pourrais essayer la robe bleue ?\n- C'est en coton ?\n- Vous aimeriez essayer autre chose ?\n- J'aimerais voir des chaussures.\n- Vous faites quelle taille ?\n- Quelle est votre pointure ?\n- Je fais du 40.\n- Quelle couleur ?\n- Bleu.\n- Ça vous plaît ?\n- Oui, ça me plaît.\n- Ça vous va bien !"
+      "transcription": "- Si tu viens avec nous, tu passeras de bonnes vacances !\n- Si je réserve maintenant, ce sera moins cher.\n- S'il fait chaud, on se baignera."
     },
     "questions": [
       {
@@ -13678,6 +13675,27 @@
             "texte": "De payer le voyage"
           }
         ]
+      },
+      {
+        "enonce": "Sait-on où ils passeront leurs vacances ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Non",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Oui, à la montagne"
+          },
+          {
+            "id": "c",
+            "texte": "Oui, au bord de la mer"
+          }
+        ]
       }
     ],
     "consigne_supplementaire": null,
@@ -13697,86 +13715,86 @@
     },
     "questions": [
       {
-        "enonce": "Quel type de vacances la personne veut-elle ?",
+        "enonce": "Que veut voir le client ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Des vacances sportives",
+            "texte": "Une montre noire",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Des vacances reposantes"
+            "texte": "Une robe noire"
           },
           {
             "id": "c",
-            "texte": "Des vacances culturelles"
+            "texte": "Des chaussures noires"
           }
         ]
       },
       {
-        "enonce": "Que pourra-t-on faire s'il pleut ?",
+        "enonce": "Pourquoi le client veut-il voir la montre ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Aller au cinéma",
+            "texte": "Pour faire un cadeau",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Aller au musée"
+            "texte": "Pour la porter lui-même"
           },
           {
             "id": "c",
-            "texte": "Rester à l'hôtel"
+            "texte": "Pour la faire réparer"
           }
         ]
       },
       {
-        "enonce": "Que fait la première personne ?",
+        "enonce": "Pour qui est le cadeau ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Elle donne des conseils",
+            "texte": "Pour sa femme",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Elle réserve un billet"
+            "texte": "Pour sa mère"
           },
           {
             "id": "c",
-            "texte": "Elle raconte ses vacances"
+            "texte": "Pour sa fille"
           }
         ]
       },
       {
-        "enonce": "Combien de conseils la personne donne-t-elle ?",
+        "enonce": "Que demande le client à la fin ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Deux",
+            "texte": "Le prix",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Un seul"
+            "texte": "La taille"
           },
           {
             "id": "c",
-            "texte": "Trois"
+            "texte": "La couleur"
           }
         ]
       }
@@ -15111,86 +15129,86 @@
     },
     "questions": [
       {
-        "enonce": "Que doit apporter Clément samedi ?",
+        "enonce": "Pourquoi l'étudiant vient-il voir madame Racine ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Un dessert",
+            "texte": "Sa note d'écrit est mauvaise",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Du pain"
+            "texte": "Il veut changer de classe"
           },
           {
             "id": "c",
-            "texte": "Une salade"
+            "texte": "Il est malade"
           }
         ]
       },
       {
-        "enonce": "Pour quel jour les courses sont-elles faites ?",
+        "enonce": "Combien d'examens reste-t-il ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Samedi",
+            "texte": "Deux écrits et un oral",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Dimanche"
+            "texte": "Un écrit et deux oraux"
           },
           {
             "id": "c",
-            "texte": "Vendredi"
+            "texte": "Trois écrits"
           }
         ]
       },
       {
-        "enonce": "Que va préparer Benjamin ?",
+        "enonce": "Qu'est-ce que l'oral ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Le repas",
+            "texte": "Une présentation devant la classe",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Le dessert"
+            "texte": "Un examen écrit"
           },
           {
             "id": "c",
-            "texte": "Les boissons"
+            "texte": "Une discussion avec le directeur"
           }
         ]
       },
       {
-        "enonce": "Comment Clément répond-il à la demande ?",
+        "enonce": "Quel jour a lieu le cours d'expression orale ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Il accepte tout de suite",
+            "texte": "Vendredi",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Il refuse"
+            "texte": "Mercredi"
           },
           {
             "id": "c",
-            "texte": "Il hésite"
+            "texte": "Lundi"
           }
         ]
       }
@@ -15212,86 +15230,86 @@
     },
     "questions": [
       {
-        "enonce": "Que demande la première personne ?",
+        "enonce": "Quelle journée n'est pas facile, selon l'audio ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Un dessert",
+            "texte": "Le lundi",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Une boisson"
+            "texte": "Le vendredi"
           },
           {
             "id": "c",
-            "texte": "Du fromage"
+            "texte": "Le dimanche"
           }
         ]
       },
       {
-        "enonce": "Pour quel jour le dessert est-il demandé ?",
+        "enonce": "Comment se réveille-t-on le lundi ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Samedi",
+            "texte": "Fatigué",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Dimanche"
+            "texte": "En pleine forme"
           },
           {
             "id": "c",
-            "texte": "Mercredi"
+            "texte": "De bonne humeur"
           }
         ]
       },
       {
-        "enonce": "Qu'est-ce qui détend la deuxième personne ?",
+        "enonce": "De quoi a-t-on besoin le lundi matin ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Préparer le repas",
+            "texte": "De temps",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Faire du vélo"
+            "texte": "D'argent"
           },
           {
             "id": "c",
-            "texte": "Écouter de la musique"
+            "texte": "De silence"
           }
         ]
       },
       {
-        "enonce": "Que répond la deuxième personne à la demande ?",
+        "enonce": "Qu'est-ce qu'on fait le lundi matin, d'après l'audio ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Oui",
+            "texte": "On prend le petit déjeuner",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Non"
+            "texte": "On fait du sport"
           },
           {
             "id": "c",
-            "texte": "Peut-être"
+            "texte": "On regarde la télévision"
           }
         ]
       }
@@ -15414,86 +15432,86 @@
     },
     "questions": [
       {
-        "enonce": "Que demande la première personne ?",
+        "enonce": "Où se trouve l'emploi proposé ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Un dessert",
+            "texte": "Dans un restaurant d'entreprise",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Une boisson"
+            "texte": "Dans une boulangerie"
           },
           {
             "id": "c",
-            "texte": "Une entrée"
+            "texte": "Dans une pharmacie"
           }
         ]
       },
       {
-        "enonce": "Comment la deuxième personne répond-elle à la demande ?",
+        "enonce": "Quel emploi propose l'annonce ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Elle accepte tout de suite",
+            "texte": "Serveur ou serveuse",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Elle refuse poliment"
+            "texte": "Cuisinier ou cuisinière"
           },
           {
             "id": "c",
-            "texte": "Elle demande à réfléchir"
+            "texte": "Vendeur ou vendeuse"
           }
         ]
       },
       {
-        "enonce": "Pourquoi la personne aime-t-elle cuisiner ?",
+        "enonce": "Quelles qualités sont demandées ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Ça la détend",
+            "texte": "Dynamique et sérieux",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Ça lui rapporte de l'argent"
+            "texte": "Timide et discret"
           },
           {
             "id": "c",
-            "texte": "Ça lui rappelle son enfance"
+            "texte": "Bavard et drôle"
           }
         ]
       },
       {
-        "enonce": "Qu'est-ce que la personne adore faire ?",
+        "enonce": "Comment faut-il aimer travailler ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Cuisiner",
+            "texte": "En équipe",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Faire du vélo"
+            "texte": "Seul"
           },
           {
             "id": "c",
-            "texte": "Lire"
+            "texte": "La nuit"
           }
         ]
       }
@@ -16319,7 +16337,7 @@
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/vie-quotidienne/j-organise-apero-es-libre-1.mp3",
-      "transcription": "- J'organise un apéro, tu es libre ?\n- Oui, je suis libre.\n- Non, désolé, nous ne sommes pas libres.\n- Je t'invite samedi, tu peux venir ?\n- Oui, avec plaisir !\n- C'est à quelle heure ?\n- C'est à 19 heures.\n- J'apporte quelque chose ?\n- Quelque chose pour le buffet peut-être.\n- J'apporte un dessert."
+      "transcription": "- Pour ouvrir un compte il faut un justificatif de domicile et une pièce d'identité. Comptez 1 semaine pour avoir votre carte bancaire et 2 semaines pour votre chéquier.\n- Comme justificatif, j'ai pris une facture de téléphone portable.\n- Non, il faut plutôt une facture d'électricité."
     },
     "questions": [
       {
@@ -16403,6 +16421,48 @@
           {
             "id": "c",
             "texte": "Une quittance de loyer"
+          }
+        ]
+      },
+      {
+        "enonce": "Quel justificatif faut-il plutôt apporter ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Une facture d'électricité",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Une facture de téléphone"
+          },
+          {
+            "id": "c",
+            "texte": "Un ticket de caisse"
+          }
+        ]
+      },
+      {
+        "enonce": "Où se passe ce dialogue ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Dans une banque",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "À la poste"
+          },
+          {
+            "id": "c",
+            "texte": "Dans un magasin"
           }
         ]
       }
@@ -16727,86 +16787,86 @@
     },
     "questions": [
       {
-        "enonce": "Qu'est-ce que la personne voit ?",
+        "enonce": "Que fait la société Allô Paul ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Un post de Valérie",
+            "texte": "Elle répare les appareils électriques",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Une photo de vacances"
+            "texte": "Elle vend des télévisions"
           },
           {
             "id": "c",
-            "texte": "Un article de journal"
+            "texte": "Elle installe des cuisines"
           }
         ]
       },
       {
-        "enonce": "Quelle danse la personne adore-t-elle ?",
+        "enonce": "En combien de temps la société répare-t-elle ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "La salsa",
+            "texte": "En 48 heures",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Le rock"
+            "texte": "En 24 heures"
           },
           {
             "id": "c",
-            "texte": "Le jazz"
+            "texte": "En une semaine"
           }
         ]
       },
       {
-        "enonce": "Est-ce que Valérie va à la soirée ?",
+        "enonce": "Quel appareil la société peut-elle réparer ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Oui, c'est vrai",
+            "texte": "La télévision",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Non, c'est faux"
+            "texte": "La voiture"
           },
           {
             "id": "c",
-            "texte": "Ce n'est pas dit"
+            "texte": "Le vélo"
           }
         ]
       },
       {
-        "enonce": "Quelle information n'est pas donnée ?",
+        "enonce": "Quand faut-il appeler Allô Paul ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Le jour de la soirée",
+            "texte": "Quand on a une panne",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Le nom de la danse"
+            "texte": "Quand on veut vendre un appareil"
           },
           {
             "id": "c",
-            "texte": "La personne qui a posté"
+            "texte": "Quand on déménage"
           }
         ]
       }
@@ -17232,86 +17292,86 @@
     },
     "questions": [
       {
-        "enonce": "De quel type de lieu parle-t-on ?",
+        "enonce": "Que cherche le premier étudiant ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "D'un restaurant",
+            "texte": "Le bureau d'un professeur",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "D'un cinéma"
+            "texte": "La bibliothèque"
           },
           {
             "id": "c",
-            "texte": "D'un musée"
+            "texte": "La cafétéria"
           }
         ]
       },
       {
-        "enonce": "Sont-ils déjà allés dans ce bistrot ?",
+        "enonce": "Est-ce que le deuxième étudiant peut aider ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Non, pas encore",
+            "texte": "Non, il ne sait pas",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Oui, souvent"
+            "texte": "Oui, tout de suite"
           },
           {
             "id": "c",
-            "texte": "Oui, une fois"
+            "texte": "Oui, mais plus tard"
           }
         ]
       },
       {
-        "enonce": "Quelle cuisine propose sans doute ce bistrot ?",
+        "enonce": "Pourquoi le deuxième étudiant ne peut-il pas aider ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "La cuisine du Sud-Ouest",
+            "texte": "Il est nouveau à la fac",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "La cuisine italienne"
+            "texte": "Il est en retard"
           },
           {
             "id": "c",
-            "texte": "La cuisine japonaise"
+            "texte": "Il n'a pas le temps"
           }
         ]
       },
       {
-        "enonce": "Que sait-on des prix du bistrot ?",
+        "enonce": "Où faut-il demander pour trouver le bureau ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Ils ne sont pas mentionnés",
+            "texte": "Au secrétariat",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "C'est bon marché"
+            "texte": "À l'accueil"
           },
           {
             "id": "c",
-            "texte": "C'est très cher"
+            "texte": "À la bibliothèque"
           }
         ]
       }
@@ -17434,86 +17494,86 @@
     },
     "questions": [
       {
-        "enonce": "Quel instrument la personne veut-elle recommencer ?",
+        "enonce": "De quoi parlent les deux personnes ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "La guitare",
+            "texte": "Du week-end de Charlotte",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Le piano"
+            "texte": "Des vacances d'été"
           },
           {
             "id": "c",
-            "texte": "La flûte"
+            "texte": "Du travail de Charlotte"
           }
         ]
       },
       {
-        "enonce": "Quand la personne a-t-elle commencé la guitare ?",
+        "enonce": "Quand la famille prend-elle le petit déjeuner le week-end ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Il y a longtemps",
+            "texte": "Tard",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Le mois dernier"
+            "texte": "Très tôt"
           },
           {
             "id": "c",
-            "texte": "Cette année"
+            "texte": "À 7 heures"
           }
         ]
       },
       {
-        "enonce": "Qu'est-ce que la personne a fait après avoir commencé ?",
+        "enonce": "Où la famille dîne-t-elle ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Elle a arrêté",
+            "texte": "Au restaurant",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Elle a continué sans pause"
+            "texte": "À la maison"
           },
           {
             "id": "c",
-            "texte": "Elle est devenue professeur"
+            "texte": "À la cafétéria"
           }
         ]
       },
       {
-        "enonce": "Que ressent la personne à l'idée de rejouer ?",
+        "enonce": "Que fait la famille le dimanche ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "De l'impatience",
+            "texte": "Elle invite des amis à déjeuner",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "De la peur"
+            "texte": "Elle va à la piscine"
           },
           {
             "id": "c",
-            "texte": "De l'ennui"
+            "texte": "Elle fait les courses"
           }
         ]
       }
@@ -22970,6 +23030,48 @@
             "texte": "Il n'y a plus de place"
           }
         ]
+      },
+      {
+        "enonce": "Comment Vincent a-t-il loué la voiture ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Par un service entre particuliers",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Par une agence de location"
+          },
+          {
+            "id": "c",
+            "texte": "Par son entreprise"
+          }
+        ]
+      },
+      {
+        "enonce": "Que faut-il enregistrer pour louer une voiture ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Une pièce d'identité et le permis",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Une carte bancaire"
+          },
+          {
+            "id": "c",
+            "texte": "Un justificatif de domicile"
+          }
+        ]
       }
     ],
     "consigne_supplementaire": null,
@@ -22985,90 +23087,90 @@
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/vie-quotidienne/bonjour-monsieur-5.mp3",
-      "transcription": "- Bonjour monsieur. Je viens d'avoir un petit accident et le clignotant ne marche plus.\n- D'accord madame, je vais regarder et vérifier l'état général du véhicule. Je vous appelle dans la journée pour la réparation."
+      "transcription": "Femme — C'est pour un passeport ?\nHomme — Oui.\nFemme — Le nom de famille ?\nHomme — Zola.\nFemme — Et le prénom ?\nHomme — Jacques.\nFemme — Tu es l'ami de Camille.\nHomme — Oui.\nFemme — Salut, ça va ?"
     },
     "questions": [
       {
-        "enonce": "Où se passe ce dialogue ?",
+        "enonce": "Pourquoi l'homme est-il là ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Dans un garage",
+            "texte": "Pour un passeport",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Dans un magasin"
+            "texte": "Pour une carte de visite"
           },
           {
             "id": "c",
-            "texte": "Dans une banque"
+            "texte": "Pour une photo"
           }
         ]
       },
       {
-        "enonce": "Qu'est-ce qui vient d'arriver à la cliente ?",
+        "enonce": "Que demande la femme en premier ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Un petit accident",
+            "texte": "Le nom de famille",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Une panne d'essence"
+            "texte": "Le prénom"
           },
           {
             "id": "c",
-            "texte": "Un vol"
+            "texte": "La date de naissance"
           }
         ]
       },
       {
-        "enonce": "Qu'est-ce qui ne marche plus ?",
+        "enonce": "Qui est l'homme pour Camille ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Le clignotant",
+            "texte": "Son ami",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Le moteur"
+            "texte": "Son frère"
           },
           {
             "id": "c",
-            "texte": "Les freins"
+            "texte": "Son voisin"
           }
         ]
       },
       {
-        "enonce": "Que va vérifier le garagiste ?",
+        "enonce": "Comment la femme salue-t-elle l'homme à la fin ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "L'état général du véhicule",
+            "texte": "« Salut, ça va ? »",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Seulement les pneus"
+            "texte": "« Bonsoir monsieur »"
           },
           {
             "id": "c",
-            "texte": "Le niveau d'essence"
+            "texte": "« Au revoir »"
           }
         ]
       }
@@ -23086,90 +23188,90 @@
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/vie-quotidienne/pierre-invite-chez.mp3",
-      "transcription": "- Pierre, je suis invité chez des Français pour la première fois. Tu peux me donner des conseils ?\n- D'accord, Tapio ! Alors, tu n'es pas obligé d'être à l'heure ! Tu peux arriver 15 minutes plus tard ! Et puis, tu peux garder tes chaussures dans l'appartement. N'oublie pas d'offrir un petit cadeau, des fleurs, des chocolats ou un souvenir de ton pays.\n- J'aimerais bien apporter ma guitare et chanter des chansons."
+      "transcription": "Bonjour Marion, c'est Alice ! J'habite maintenant dans un immeuble neuf au 4e étage, à Toulon. Voici mon adresse : 10, place de la Liberté, 83000 Toulon. À bientôt !"
     },
     "questions": [
       {
-        "enonce": "Que demande Tapio à Pierre ?",
+        "enonce": "Pourquoi Alice appelle-t-elle Marion ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Des conseils",
+            "texte": "Elle a un nouveau logement",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "De l'argent"
+            "texte": "Elle vend sa maison"
           },
           {
             "id": "c",
-            "texte": "Un cadeau"
+            "texte": "Elle cherche un studio"
           }
         ]
       },
       {
-        "enonce": "Avec combien de minutes de retard peut-on arriver ?",
+        "enonce": "Comment est l'immeuble d'Alice ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "15 minutes",
+            "texte": "Neuf",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "30 minutes"
+            "texte": "Ancien"
           },
           {
             "id": "c",
-            "texte": "5 minutes"
+            "texte": "Sale"
           }
         ]
       },
       {
-        "enonce": "Que peut faire Tapio de ses chaussures dans l'appartement ?",
+        "enonce": "À quel étage habite Alice ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Les garder",
+            "texte": "Au 4e",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Les enlever à l'entrée"
+            "texte": "Au 1er"
           },
           {
             "id": "c",
-            "texte": "Les laisser dans le couloir"
+            "texte": "Au 10e"
           }
         ]
       },
       {
-        "enonce": "Quel petit cadeau peut-on offrir ?",
+        "enonce": "Comment Alice donne-t-elle de ses nouvelles ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Des fleurs",
+            "texte": "Par un message téléphonique",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Un livre"
+            "texte": "Par une lettre"
           },
           {
             "id": "c",
-            "texte": "Un gâteau"
+            "texte": "Par un e-mail"
           }
         ]
       }
@@ -23389,7 +23491,7 @@
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/vie-quotidienne/sos-depannage-j-ecoute-3.mp3",
-      "transcription": "- SOS Dépannage, j'écoute !\n- Bonjour monsieur, je vous appelle pour une panne d'électricité.\n- Qu'est-ce qui ne va pas ?\n- Je n'ai plus de gaz.\n- Il y a une panne de chauffage.\n- Quel est le problème ?\n- Ma télé ne marche pas.\n- C'est urgent ?\n- Oui, c'est vraiment urgent !\n- Vous pouvez venir quand ?\n- On peut prendre rendez-vous pour demain.\n- Le dépannage coûte 150 euros.\n- Vous voulez un devis ?\n- Oui, s'il vous plaît."
+      "transcription": "- Tu veux rencontrer de nouvelles personnes ?\n- Inscris-toi sur un site de rencontres d'activités.\n- Tu peux y faire du sport, aller à des soirées…\n- J'adore la salsa ! Je peux y aller avec Valérie !\n- Au Café des langues, on y parle français et d'autres langues."
     },
     "questions": [
       {
@@ -23475,6 +23577,27 @@
             "texte": "Au musée"
           }
         ]
+      },
+      {
+        "enonce": "Quelle information n'est pas donnée sur le site d'activités ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Le prix de l'inscription",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Les activités possibles"
+          },
+          {
+            "id": "c",
+            "texte": "Son utilité pour les rencontres"
+          }
+        ]
       }
     ],
     "consigne_supplementaire": null,
@@ -23494,86 +23617,86 @@
     },
     "questions": [
       {
-        "enonce": "De quel événement parlent les deux amis ?",
+        "enonce": "Pour quels problèmes peut-on appeler ce service ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "D'un mariage",
+            "texte": "Eau, électricité ou serrure",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "D'un baptême"
+            "texte": "Télévision ou internet"
           },
           {
             "id": "c",
-            "texte": "D'un anniversaire"
+            "texte": "Jardin ou piscine"
           }
         ]
       },
       {
-        "enonce": "Que répond Philippe à l'invitation ?",
+        "enonce": "Comment peut-on contacter l'assistance ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Oui, bien sûr",
+            "texte": "Par téléphone",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Non, impossible"
+            "texte": "Par courrier"
           },
           {
             "id": "c",
-            "texte": "Peut-être"
+            "texte": "Par e-mail"
           }
         ]
       },
       {
-        "enonce": "De quoi s'occupera l'un des deux amis ?",
+        "enonce": "Quels réparateurs peuvent venir ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "De la musique",
+            "texte": "Un plombier, un électricien ou un serrurier",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Des photos"
+            "texte": "Un boulanger ou un boucher"
           },
           {
             "id": "c",
-            "texte": "Du gâteau"
+            "texte": "Un professeur ou un médecin"
           }
         ]
       },
       {
-        "enonce": "Qu'achètera l'autre ami ?",
+        "enonce": "Quand le réparateur peut-il venir ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Les fleurs",
+            "texte": "Très vite, même le dimanche",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Les boissons"
+            "texte": "Seulement en semaine"
           },
           {
             "id": "c",
-            "texte": "Les cadeaux"
+            "texte": "Dans un mois"
           }
         ]
       }
@@ -23898,86 +24021,86 @@
     },
     "questions": [
       {
-        "enonce": "Dans quoi la personne s'est-elle investie ?",
+        "enonce": "Où y a-t-il beaucoup d'étudiants étrangers ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Le soutien scolaire",
+            "texte": "En France",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "L'aide alimentaire"
+            "texte": "En Belgique"
           },
           {
             "id": "c",
-            "texte": "Le nettoyage des plages"
+            "texte": "En Suisse"
           }
         ]
       },
       {
-        "enonce": "Où la copine s'est-elle engagée ?",
+        "enonce": "De combien de pays différents viennent les étudiants ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "À Emmaüs",
+            "texte": "196",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "À la Croix-Rouge"
+            "texte": "96"
           },
           {
             "id": "c",
-            "texte": "Aux Restos du Cœur"
+            "texte": "169"
           }
         ]
       },
       {
-        "enonce": "Pour quand se sont-ils organisés ?",
+        "enonce": "Combien de facultés sont très populaires ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Pour les week-ends",
+            "texte": "Deux",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Pour les vacances"
+            "texte": "Trois"
           },
           {
             "id": "c",
-            "texte": "Pour les soirées"
+            "texte": "Cinq"
           }
         ]
       },
       {
-        "enonce": "De quoi parle ce dialogue ?",
+        "enonce": "Quelles facultés sont très populaires ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "De bénévolat",
+            "texte": "Les lettres et les sciences",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "De vacances"
+            "texte": "Le droit et la médecine"
           },
           {
             "id": "c",
-            "texte": "De travail au bureau"
+            "texte": "L'histoire et le sport"
           }
         ]
       }
@@ -24096,7 +24219,7 @@
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/vie-quotidienne/tu-te-couches-tard-1.mp3",
-      "transcription": "- Tu te couches tard ?\n- Non, je me couche tôt.\n- Tu mets le réveil à quelle heure ?\n- D'habitude, je mets mon réveil à 6 heures.\n- J'ai besoin d'une heure pour me préparer.\n- Pour les rendez-vous, j'arrive toujours à l'heure.\n- Moi, j'arrive souvent en retard !\n- Vous avez du temps libre ?\n- Non, je travaille beaucoup.\n- Qu'est-ce que tu fais ce soir ?\n- Je me repose, je suis fatigué.\n- Qu'est-ce que vous faites le week-end ?\n- On regarde des séries en famille."
+      "transcription": "- Salut Alex ! Demain, promenade à vélo. Ça te dit ?\n- Oui ! Aux deux lacs, c'est calme et facile."
     },
     "questions": [
       {
@@ -24180,6 +24303,48 @@
           {
             "id": "c",
             "texte": "Très sportif"
+          }
+        ]
+      },
+      {
+        "enonce": "Est-ce qu'Alex accepte la proposition ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Oui, c'est vrai",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Non, c'est faux"
+          },
+          {
+            "id": "c",
+            "texte": "Ce n'est pas dit"
+          }
+        ]
+      },
+      {
+        "enonce": "Est-ce que la durée de la promenade est précisée ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Non",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Oui, une heure"
+          },
+          {
+            "id": "c",
+            "texte": "Oui, deux heures"
           }
         ]
       }
@@ -24403,86 +24568,86 @@
     },
     "questions": [
       {
-        "enonce": "De quoi parle cette présentation ?",
+        "enonce": "Quand le cabinet reçoit-il les enfants ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "D'une ville",
+            "texte": "Du lundi au vendredi",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "D'une plage"
+            "texte": "Le week-end"
           },
           {
             "id": "c",
-            "texte": "D'une montagne"
+            "texte": "Tous les jours"
           }
         ]
       },
       {
-        "enonce": "Comment est la ville présentée ?",
+        "enonce": "À quelle heure le cabinet ouvre-t-il ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Plus verte que ses voisines",
+            "texte": "À 9 h",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Plus grise que ses voisines"
+            "texte": "À 15 h"
           },
           {
             "id": "c",
-            "texte": "Plus sale que ses voisines"
+            "texte": "À 19 h"
           }
         ]
       },
       {
-        "enonce": "La ville est-elle plus ou moins bruyante que ses voisines ?",
+        "enonce": "Que faut-il faire si un enfant est malade le week-end ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Moins bruyante",
+            "texte": "Appeler le 15",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Plus bruyante"
+            "texte": "Venir au cabinet"
           },
           {
             "id": "c",
-            "texte": "Aussi bruyante"
+            "texte": "Attendre lundi"
           }
         ]
       },
       {
-        "enonce": "À quoi la ville est-elle comparée ?",
+        "enonce": "Qui sont les docteurs Blanc et Truc ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Aux villes voisines",
+            "texte": "Des pédiatres",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "À la capitale"
+            "texte": "Des dentistes"
           },
           {
             "id": "c",
-            "texte": "Aux villages de montagne"
+            "texte": "Des vétérinaires"
           }
         ]
       }
@@ -27029,86 +27194,86 @@
     },
     "questions": [
       {
-        "enonce": "Où le patient a-t-il mal ?",
+        "enonce": "Quel est le problème de la jeune femme ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "À la tête",
+            "texte": "Elle ne comprend pas les tailles françaises",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Au ventre"
+            "texte": "Elle a perdu son sac"
           },
           {
             "id": "c",
-            "texte": "Au dos"
+            "texte": "Elle ne trouve pas la boutique"
           }
         ]
       },
       {
-        "enonce": "Depuis combien de temps le patient a-t-il mal ?",
+        "enonce": "Quelle taille fait Katie ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Trois jours",
+            "texte": "Du L",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Deux jours"
+            "texte": "Du M"
           },
           {
             "id": "c",
-            "texte": "Une semaine"
+            "texte": "Du S"
           }
         ]
       },
       {
-        "enonce": "À qui parle le patient ?",
+        "enonce": "À quelle taille française correspond le L ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "À un docteur",
+            "texte": "Au 42",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "À un pharmacien"
+            "texte": "Au 38"
           },
           {
             "id": "c",
-            "texte": "À un dentiste"
+            "texte": "Au 46"
           }
         ]
       },
       {
-        "enonce": "Que doit d'abord faire le patient ?",
+        "enonce": "Quel vêtement Katie va-t-elle essayer ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Se reposer",
+            "texte": "Un pantalon",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Travailler plus"
+            "texte": "Une robe"
           },
           {
             "id": "c",
-            "texte": "Faire du sport"
+            "texte": "Un manteau"
           }
         ]
       }
@@ -27126,7 +27291,7 @@
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/sante/c-est-dejeuner-1.mp3",
-      "transcription": "- C'est pour déjeuner ?\n- Oui, vous avez une table pour deux ?\n- Qu'est-ce que vous buvez ?\n- Une carafe d'eau s'il vous plaît.\n- Tu prends du poisson ou de la viande ?\n- Je ne mange pas de viande, je suis végétarien.\n- Je peux prendre votre commande ?\n- Oui, une salade, un steak-frites et une tarte…\n- Tout va bien ?\n- C'est excellent !\n- L'addition s'il vous plaît !\n- On laisse un pourboire ?"
+      "transcription": "- Tu as vu le médecin ?\n- Oui. Il veut que je fasse une prise de sang demain."
     },
     "questions": [
       {
@@ -27212,6 +27377,27 @@
             "texte": "D'un repas"
           }
         ]
+      },
+      {
+        "enonce": "Où se fera la prise de sang ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "On ne le sait pas",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "À la maison"
+          },
+          {
+            "id": "c",
+            "texte": "À l'école"
+          }
+        ]
       }
     ],
     "consigne_supplementaire": null,
@@ -27231,86 +27417,86 @@
     },
     "questions": [
       {
-        "enonce": "Comment était le parcours de santé ?",
+        "enonce": "De quoi parle cet enregistrement ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Formidable",
+            "texte": "Du pourboire",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Ennuyeux"
+            "texte": "Des menus du jour"
           },
           {
             "id": "c",
-            "texte": "Trop difficile"
+            "texte": "Des horaires d'ouverture"
           }
         ]
       },
       {
-        "enonce": "Comment la personne se sent-elle ?",
+        "enonce": "Est-ce que le pourboire est obligatoire ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "En pleine forme",
+            "texte": "Non",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Très fatiguée"
+            "texte": "Oui"
           },
           {
             "id": "c",
-            "texte": "Un peu malade"
+            "texte": "Seulement le soir"
           }
         ]
       },
       {
-        "enonce": "Quels cours la personne demande-t-elle ?",
+        "enonce": "Combien peut-on laisser de pourboire ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Des cours de yoga",
+            "texte": "Environ 5 % de l'addition",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Des cours de danse"
+            "texte": "Environ 20 % de l'addition"
           },
           {
             "id": "c",
-            "texte": "Des cours de natation"
+            "texte": "Environ 50 % de l'addition"
           }
         ]
       },
       {
-        "enonce": "Comment sont les cours de yoga ?",
+        "enonce": "Qui décide de laisser un pourboire ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Collectifs ou particuliers",
+            "texte": "Le client",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Seulement collectifs"
+            "texte": "Le serveur"
           },
           {
             "id": "c",
-            "texte": "Seulement particuliers"
+            "texte": "Le cuisinier"
           }
         ]
       }
@@ -27328,90 +27514,90 @@
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/transports/je-viens-louer-voiture-1.mp3",
-      "transcription": "- Je viens de louer une voiture pour le week-end.\n- Tu es passé par une agence ?\n- Non, un service entre particuliers. Tu t'inscris, tu enregistres ton permis, et tu loues.\n- Il y a une assurance ?\n- Oui, c'est compris. Le propriétaire vient de faire le contrôle technique.\n- Et pour l'essence ?\n- Je dois faire le plein avant de rendre la voiture.\n- Tu peux aussi prendre le tram avec un ticket commun pour le parking."
+      "transcription": "Vous êtes bien chez Lucie et Thomas.\nNous ne pouvons pas prendre votre appel.\nMerci de laisser votre nom et votre prénom après le bip.\nLe numéro est le 01 39 10 22 50.\nÀ bientôt !"
     },
     "questions": [
       {
-        "enonce": "Qu'est-ce que la personne vient de louer ?",
+        "enonce": "Qu'est-ce que vous écoutez ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Une voiture",
+            "texte": "Un message de répondeur",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Un vélo"
+            "texte": "Une publicité à la radio"
           },
           {
             "id": "c",
-            "texte": "Un camion"
+            "texte": "Une conversation au restaurant"
           }
         ]
       },
       {
-        "enonce": "Est-ce que la location passe par une agence ?",
+        "enonce": "Est-ce que Lucie et Thomas peuvent répondre ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Non, c'est un service entre particuliers",
+            "texte": "Non, ils ne peuvent pas prendre l'appel",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Oui, une agence du centre-ville"
+            "texte": "Oui, ils répondent tout de suite"
           },
           {
             "id": "c",
-            "texte": "Oui, une agence en ligne"
+            "texte": "Oui, mais plus tard dans la soirée"
           }
         ]
       },
       {
-        "enonce": "Que faut-il enregistrer pour louer ?",
+        "enonce": "Que faut-il laisser après le bip ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Son permis",
+            "texte": "Son nom et son prénom",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Sa carte bancaire"
+            "texte": "Son âge et sa profession"
           },
           {
             "id": "c",
-            "texte": "Son passeport"
+            "texte": "Un numéro de carte"
           }
         ]
       },
       {
-        "enonce": "Est-ce qu'une assurance est comprise dans la location ?",
+        "enonce": "Quel numéro entend-on dans le message ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Oui",
+            "texte": "01 39 10 22 50",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Non"
+            "texte": "01 39 10 22 15"
           },
           {
             "id": "c",
-            "texte": "Seulement en option"
+            "texte": "01 39 10 25 50"
           }
         ]
       }
@@ -27429,7 +27615,7 @@
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/transports/chers-voyageurs-ameliorer-notre-1.mp3",
-      "transcription": "Chers voyageurs, pour améliorer notre réseau de transports, des travaux sur la ligne 5 viennent de débuter. La station « Victor Hugo » n'est plus desservie, mais des bus de remplacement sont à votre disposition. Votre ticket de transport reste valable."
+      "transcription": "Annie Schultz a 37 ans. Elle est vendeuse.\nNadine Gatineau est pharmacienne. Elle est belge."
     },
     "questions": [
       {
@@ -27530,90 +27716,90 @@
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/transports/bonsoir-viens-d-entendre-l-annonce-1.mp3",
-      "transcription": "- Bonsoir monsieur, je viens d'entendre l'annonce. Donc, il y a une panne sur la ligne 8 ?\n- Oui, et malheureusement le trafic est interrompu.\n- Je dois aller Place de la République. Est-ce que je peux prendre le bus 14 ?\n- Non, le service des bus termine à 23 h 00. Mais vous pouvez prendre le bus de nuit N5 qui vous laisse rue Voltaire, donc pas loin. Sinon, on vient de m'informer qu'une navette va être proposée dans une petite heure."
+      "transcription": "Nina et Felipe se présentent.\nSophie est la sœur de Nina.\nFelipe est brésilien.\nNina est ingénieure."
     },
     "questions": [
       {
-        "enonce": "Quel est le problème annoncé ?",
+        "enonce": "Qui est Sophie pour Nina ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Une panne sur la ligne 8",
+            "texte": "Sa sœur",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Une grève des conducteurs"
+            "texte": "Sa mère"
           },
           {
             "id": "c",
-            "texte": "Un accident de bus"
+            "texte": "Son amie"
           }
         ]
       },
       {
-        "enonce": "Pourquoi le voyageur ne peut-il pas prendre le bus 14 ?",
+        "enonce": "Quelle est la nationalité de Felipe ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Le service termine à 23 h",
+            "texte": "Brésilien",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Le bus 14 est complet"
+            "texte": "Français"
           },
           {
             "id": "c",
-            "texte": "Le bus 14 est en panne"
+            "texte": "Belge"
           }
         ]
       },
       {
-        "enonce": "Quel transport de nuit est proposé ?",
+        "enonce": "Quelle est la profession de Nina ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Un bus",
+            "texte": "Ingénieure",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Un train"
+            "texte": "Journaliste"
           },
           {
             "id": "c",
-            "texte": "Un tram"
+            "texte": "Pharmacienne"
           }
         ]
       },
       {
-        "enonce": "Où le bus de nuit laisse-t-il le voyageur ?",
+        "enonce": "Que font Nina et Felipe dans cet audio ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Rue Voltaire",
+            "texte": "Ils se présentent",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Devant chez lui"
+            "texte": "Ils se disent au revoir"
           },
           {
             "id": "c",
-            "texte": "Au terminus du métro"
+            "texte": "Ils font les courses"
           }
         ]
       }
@@ -27732,7 +27918,7 @@
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/transports/vous-avez-mal-ou-1.mp3",
-      "transcription": "- Vous avez mal où ?\n- J'ai mal au ventre.\n- Vous vous sentez comment ?\n- J'ai chaud et j'ai soif. Je tousse.\n- Vous avez de la fièvre ?\n- Oui, j'ai de la fièvre.\n- Qu'est-ce que j'ai, docteur ?\n- Vous avez la grippe.\n- Qu'est-ce que je dois faire, docteur ?\n- Je vous conseille de rester à la maison.\n- Reposez-vous."
+      "transcription": "- La vie en ville est plus animée que la campagne.\n- Oui, mais la campagne est plus calme.\n- En ville, il y a plus de transports."
     },
     "questions": [
       {
@@ -27816,6 +28002,27 @@
           {
             "id": "c",
             "texte": "Elles cherchent un appartement"
+          }
+        ]
+      },
+      {
+        "enonce": "La deuxième personne est-elle d'accord que la ville est animée ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Oui",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Non"
+          },
+          {
+            "id": "c",
+            "texte": "Elle ne répond pas"
           }
         ]
       }
@@ -29651,7 +29858,7 @@
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/magasins/c-est-qui-1.mp3",
-      "transcription": "- C'est à qui ?\n- C'est à moi !\n- Et avec ceci ?\n- Une baguette.\n- Vous désirez ?\n- Une tarte pour 6 s'il vous plaît.\n- Vous prenez une formule ?\n- Oui, qu'est-ce qu'il y a dans une formule ?\n- Dans une formule, il y a un sandwich, un dessert et une boisson.\n- Ce sera tout ?\n- Oui, merci !"
+      "transcription": "- On peut manger beaucoup et maigrir !\n- C'est une question d'équilibre.\n- Change ton mode de vie, alors tu maigriras."
     },
     "questions": [
       {
@@ -29737,6 +29944,27 @@
             "texte": "On gagnera de l'argent"
           }
         ]
+      },
+      {
+        "enonce": "De quoi parlent ces phrases ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "De l'alimentation",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "De la conduite"
+          },
+          {
+            "id": "c",
+            "texte": "De la météo"
+          }
+        ]
       }
     ],
     "consigne_supplementaire": null,
@@ -29752,90 +29980,90 @@
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/magasins/c-est-question-d-equilibre-1.mp3",
-      "transcription": "- C'est une question d'équilibre, pas de quantité.\n- Si tu manges trop vite, c'est mauvais pour la santé.\n- Change ton mode de vie, alors tu maigriras.\n- Pour la collation, prenez un fruit !"
+      "transcription": "- Chérie, j'achète quoi ?\n- Deux baguettes, deux croissants…\n- Des pains au chocolat ?\n- Oui, un pain au chocolat, mais pas de pain aux raisins.\n- D'accord !"
     },
     "questions": [
       {
-        "enonce": "Qu'est-ce qui est important pour bien manger ?",
+        "enonce": "Que demande l'homme à sa femme ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "L'équilibre",
+            "texte": "Ce qu'il doit acheter",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "La quantité"
+            "texte": "L'heure du dîner"
           },
           {
             "id": "c",
-            "texte": "La vitesse"
+            "texte": "Où est la boulangerie"
           }
         ]
       },
       {
-        "enonce": "Qu'est-ce qui est mauvais pour la santé ?",
+        "enonce": "Combien de baguettes faut-il acheter ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Manger trop vite",
+            "texte": "Deux",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Boire de l'eau"
+            "texte": "Une"
           },
           {
             "id": "c",
-            "texte": "Manger des légumes"
+            "texte": "Trois"
           }
         ]
       },
       {
-        "enonce": "Que faut-il changer pour maigrir ?",
+        "enonce": "Qu'est-ce qu'il faut acheter avec les baguettes ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Son mode de vie",
+            "texte": "Des croissants",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Son travail"
+            "texte": "Des macarons"
           },
           {
             "id": "c",
-            "texte": "Sa voiture"
+            "texte": "Des tartes"
           }
         ]
       },
       {
-        "enonce": "Que faut-il prendre pour la collation ?",
+        "enonce": "Combien de pains au chocolat la femme veut-elle ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Un fruit",
+            "texte": "Un seul",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Un gâteau"
+            "texte": "Deux"
           },
           {
             "id": "c",
-            "texte": "Un sandwich"
+            "texte": "Aucun"
           }
         ]
       }
@@ -29857,86 +30085,86 @@
     },
     "questions": [
       {
-        "enonce": "Où habite la personne ?",
+        "enonce": "Quel est le problème du fils de Mme Martin ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "En ville",
+            "texte": "Il a une dent cassée",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "À la campagne"
+            "texte": "Il a une jambe cassée"
           },
           {
             "id": "c",
-            "texte": "À la montagne"
+            "texte": "Il a un pied cassé"
           }
         ]
       },
       {
-        "enonce": "Pour quoi la ville est-elle plus pratique ?",
+        "enonce": "Quel âge a le fils de Mme Martin ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Pour le travail",
+            "texte": "5 ans",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Pour dormir"
+            "texte": "8 ans"
           },
           {
             "id": "c",
-            "texte": "Pour les vacances"
+            "texte": "15 ans"
           }
         ]
       },
       {
-        "enonce": "Quel est l'inconvénient de la ville, selon la personne ?",
+        "enonce": "Où faut-il appeler pour la dent cassée ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "C'est moins calme pour dormir",
+            "texte": "Au cabinet dentaire",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "C'est trop cher"
+            "texte": "Au cabinet médical"
           },
           {
             "id": "c",
-            "texte": "C'est trop loin du travail"
+            "texte": "À l'hôpital"
           }
         ]
       },
       {
-        "enonce": "Que pense la personne de la vie en ville ?",
+        "enonce": "Comment Mme Martin parle-t-elle au docteur Roux ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Elle a des avantages et des inconvénients",
+            "texte": "Par téléphone",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Elle est parfaite"
+            "texte": "Par lettre"
           },
           {
             "id": "c",
-            "texte": "Elle est insupportable"
+            "texte": "En personne"
           }
         ]
       }
@@ -29958,86 +30186,86 @@
     },
     "questions": [
       {
-        "enonce": "Quand la personne veut-elle changer de mode de vie ?",
+        "enonce": "Combien de médecins accueille le cabinet Les Trois Chênes ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Cette année",
+            "texte": "Cinq",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "L'année prochaine"
+            "texte": "Trois"
           },
           {
             "id": "c",
-            "texte": "Dans dix ans"
+            "texte": "Quinze"
           }
         ]
       },
       {
-        "enonce": "Que va changer la personne ?",
+        "enonce": "Que soigne le docteur Martin ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Son mode de vie",
+            "texte": "Les dents",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Sa voiture"
+            "texte": "Les yeux"
           },
           {
             "id": "c",
-            "texte": "Son appartement"
+            "texte": "Le dos"
           }
         ]
       },
       {
-        "enonce": "De qui la personne veut-elle prendre soin ?",
+        "enonce": "Que soigne le docteur Jacques ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "D'elle-même",
+            "texte": "Les yeux",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "De ses voisins"
+            "texte": "Les dents"
           },
           {
             "id": "c",
-            "texte": "De ses collègues"
+            "texte": "Le dos"
           }
         ]
       },
       {
-        "enonce": "Que veut abandonner la personne ?",
+        "enonce": "Que soigne madame Dubac ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Ses mauvaises habitudes",
+            "texte": "Le dos",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Son travail"
+            "texte": "Les dents"
           },
           {
             "id": "c",
-            "texte": "Ses études"
+            "texte": "Les yeux"
           }
         ]
       }
