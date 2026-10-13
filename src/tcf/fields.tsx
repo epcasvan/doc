@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react'
 import { GAME_IMAGE_ACCEPT, readGameImageFile } from '@/jeux/image'
 import { tcfAudioSrc, tcfImageSrc } from './media'
+import { VocabImagePicker } from './VocabImagePicker'
 
 /** Champ texte (une ligne ou zone multiligne). */
 export function TextField({
@@ -103,8 +104,8 @@ export function NumberField({
 }
 
 /**
- * Image : import d’un fichier (data URL, stockée dans la fiche) ou nom de fichier
- * rangé sous `public/lib/images/` (à privilégier pour les banques JSON).
+ * Image : chemin sous `public/lib/images/` (recherche par mot), ou import fichier
+ * (data URL) en secours.
  */
 export function ImageField({
   label,
@@ -117,6 +118,7 @@ export function ImageField({
 }) {
   const fileRef = useRef<HTMLInputElement | null>(null)
   const [error, setError] = useState<string | null>(null)
+  const [pickerOpen, setPickerOpen] = useState(false)
   const src = tcfImageSrc(value)
   return (
     <div className="tcf-field tcf-image-field">
@@ -125,8 +127,9 @@ export function ImageField({
         <button
           type="button"
           className={`game-entry-thumb${src ? ' has-image' : ''}`}
-          aria-label={src ? `Changer : ${label}` : `Importer : ${label}`}
-          onClick={() => fileRef.current?.click()}
+          aria-label={src ? `Aperçu : ${label}` : `Choisir une image : ${label}`}
+          title="Rechercher une image vocabulaire"
+          onClick={() => setPickerOpen(true)}
         >
           {src ? <img src={src} alt="" /> : <span aria-hidden>+</span>}
         </button>
@@ -154,9 +157,33 @@ export function ImageField({
           placeholder={value.startsWith('data:') ? 'Image importée' : '/lib/images/vocabulaire/…'}
           aria-label={`Fichier : ${label}`}
           onChange={(event) => onChange(event.target.value)}
+          onClick={() => setPickerOpen(true)}
+          onFocus={(event) => {
+            // Clic / focus → ouvrir le sélecteur plutôt que mémoriser les chemins.
+            if (!value.startsWith('data:')) {
+              event.target.blur()
+              setPickerOpen(true)
+            }
+          }}
         />
+        <button
+          type="button"
+          className="tcf-btn"
+          title="Importer un fichier image"
+          onClick={() => fileRef.current?.click()}
+        >
+          Fichier
+        </button>
       </div>
       {error ? <small className="questions-overflow-hint">{error}</small> : null}
+      <VocabImagePicker
+        open={pickerOpen}
+        onClose={() => setPickerOpen(false)}
+        onPick={(path) => {
+          onChange(path)
+          setError(null)
+        }}
+      />
     </div>
   )
 }

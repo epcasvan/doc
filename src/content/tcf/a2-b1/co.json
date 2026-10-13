@@ -5,8 +5,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Annonce 31",
-    "scenario": "radio",
-    "scene": "La publicité",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/achats/difficile-b1__annonce-31.mp3",
@@ -32,31 +30,7 @@
             "id": "c",
             "texte": "Un réfrigérateur"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Une machine à laver"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/electromenager/machine-a-laver.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/electromenager/four.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/electromenager/refrigerateur.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Quel type de magasin est concerné ?",
@@ -77,31 +51,7 @@
             "id": "c",
             "texte": "Une pharmacie"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Un magasin de bricolage"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/loisirs/bricolage.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/ville/boulangerie.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/ville/pharmacie.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Quelle réduction sur les jeux vidéo ?",
@@ -122,13 +72,7 @@
             "texte": "30 %",
             "correct": true
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "30 %"
-          }
-        }
+        ]
       },
       {
         "enonce": "Jusqu'à quelle heure le magasin est-il ouvert ?",
@@ -149,31 +93,7 @@
             "id": "c",
             "texte": "22 h"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "21 h"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/heure-horloge/vingt-heures.webp"
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/heure-horloge/vingt-et-une-heures.webp",
-                "correct": true
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/heure-horloge/vingt-deux-heures.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Quelle réduction sur la téléphonie ?",
@@ -194,13 +114,7 @@
             "id": "c",
             "texte": "30 %"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "10 %"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quel est le montant minimum d'achat pour le concours ?",
@@ -221,13 +135,7 @@
             "id": "c",
             "texte": "50 euros"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "20 euros"
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -238,8 +146,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Conversation 5",
-    "scenario": "vie-quotidienne",
-    "scene": "Les associations",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/achats/difficile-b1__conversation-5.mp3",
@@ -265,13 +171,7 @@
             "texte": "La professeure d'art plastique",
             "correct": true
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "La professeure d'art plastique"
-          }
-        }
+        ]
       },
       {
         "enonce": "Que doivent faire les élèves pour faire connaissance ?",
@@ -292,31 +192,7 @@
             "id": "c",
             "texte": "Lire un livre d'art"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 2,
-            "reponse_modele": "Dire leur nom et leurs goûts en peinture"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/loisirs/dessin.webp"
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/loisirs/peinture.webp",
-                "correct": true
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/ecole-bureau/livre.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Pendant toute l'année, les élèves vont…",
@@ -337,13 +213,7 @@
             "id": "c",
             "texte": "Faire des recherches sur le XIXe siècle uniquement"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Apprendre à peindre et à dessiner"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quel autre domaine sera étudié en cours d'art ?",
@@ -364,13 +234,7 @@
             "id": "c",
             "texte": "La géographie"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "L'histoire de l'art"
-          }
-        }
+        ]
       },
       {
         "enonce": "De quelle nationalité est le peintre Modigliani ?",
@@ -391,13 +255,7 @@
             "id": "c",
             "texte": "Française"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Italienne"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quel style de peinture Juliette mentionne-t-elle ?",
@@ -418,13 +276,7 @@
             "id": "c",
             "texte": "Surréalisme"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Art moderne"
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -435,8 +287,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Radio 28",
-    "scenario": "radio",
-    "scene": "Les informations",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/actualite/difficile-b1__radio-28.mp3",
@@ -462,13 +312,7 @@
             "id": "c",
             "texte": "Une fausse information"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Une possibilité"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quelle est la spécialité de Stéphanie Blanchard ?",
@@ -489,13 +333,7 @@
             "id": "c",
             "texte": "Les jeux vidéo en ligne"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Les comportements des adolescents"
-          }
-        }
+        ]
       },
       {
         "enonce": "D'après Stéphanie Blanchard, les gens cachent leur identité sur les réseaux sociaux…",
@@ -516,13 +354,7 @@
             "id": "c",
             "texte": "Pour montrer une meilleure image d'eux"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 2,
-            "reponse_modele": "Pour ne pas mêler vie privée et professionnelle"
-          }
-        }
+        ]
       },
       {
         "enonce": "D'après Hervé Lacroix, l'anonymat…",
@@ -543,13 +375,7 @@
             "id": "c",
             "texte": "Est toujours synonyme de violence"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 2,
-            "reponse_modele": "Facilite et encourage souvent la violence"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quelle est l'opinion de Hervé Lacroix ?",
@@ -570,13 +396,7 @@
             "texte": "Il faut donner des moyens aux gens de se défendre en ligne",
             "correct": true
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 2,
-            "reponse_modele": "Il faut donner des moyens aux gens de se défendre en ligne"
-          }
-        }
+        ]
       },
       {
         "enonce": "À la fin de l'émission, Stéphanie Blanchard parle des anonymes…",
@@ -597,13 +417,7 @@
             "id": "c",
             "texte": "Par envie"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Par nécessité"
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -614,8 +428,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Radio 3",
-    "scenario": "radio",
-    "scene": "L’environnement",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/actualite/difficile-b1__radio-3.mp3",
@@ -641,31 +453,7 @@
             "id": "c",
             "texte": "L'étiquette bleue"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "L'étiquette verte"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/couleurs/vert.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/couleurs/rouge.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/couleurs/bleu.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Quel gaz est surtout visé par l'étiquette ?",
@@ -686,13 +474,7 @@
             "id": "c",
             "texte": "L'hélium"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Le gaz carbonique"
-          }
-        }
+        ]
       },
       {
         "enonce": "À quelle réunion environnementale renvoie cette mesure ?",
@@ -713,13 +495,7 @@
             "id": "c",
             "texte": "Le sommet de Rio"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Le Grenelle de l'environnement"
-          }
-        }
+        ]
       },
       {
         "enonce": "Que chiffre l'étiquette verte ?",
@@ -740,13 +516,7 @@
             "id": "c",
             "texte": "La date de péremption"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "L'impact écologique du cycle de vie"
-          }
-        }
+        ]
       },
       {
         "enonce": "La démarche est-elle obligatoire pour les entreprises ?",
@@ -767,13 +537,7 @@
             "id": "c",
             "texte": "Oui, seulement alimentaire"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Non, elle reste volontaire"
-          }
-        }
+        ]
       },
       {
         "enonce": "Combien de temps durait la période expérimentale ?",
@@ -794,13 +558,7 @@
             "id": "c",
             "texte": "Cinq ans"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Un an"
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -811,8 +569,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Radio 32",
-    "scenario": "radio",
-    "scene": "Le message enregistré",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/administration/difficile-b1__radio-32.mp3",
@@ -838,13 +594,7 @@
             "id": "c",
             "texte": "Pluvieux"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Beau et chaud"
-          }
-        }
+        ]
       },
       {
         "enonce": "Dans le nord, qu'est-ce que vous devez prendre pour sortir le matin ?",
@@ -865,31 +615,7 @@
             "id": "c",
             "texte": "Un manteau"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Un parapluie"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/accessoires/lunettes-de-soleil.webp"
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/accessoires/parapluie.webp",
-                "correct": true
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/vetements/manteau.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Quelle est la température dans le nord ?",
@@ -910,13 +636,7 @@
             "id": "c",
             "texte": "28 °C"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "20 °C"
-          }
-        }
+        ]
       },
       {
         "enonce": "Qu'est-ce qu'il va y avoir demain ?",
@@ -937,31 +657,7 @@
             "texte": "Du vent",
             "correct": true
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Du vent"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/meteo/soleil.webp"
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/meteo/pluie.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/meteo/vent.webp",
-                "correct": true
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Quelle température fait-il dans le sud ?",
@@ -982,13 +678,7 @@
             "texte": "28 °C",
             "correct": true
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "28 °C"
-          }
-        }
+        ]
       },
       {
         "enonce": "Dans le nord, que fait le soleil l'après-midi ?",
@@ -1009,13 +699,7 @@
             "id": "c",
             "texte": "Il ne sort pas"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Il revient"
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -1026,8 +710,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Annonce 36",
-    "scenario": "ecole",
-    "scene": "Les annonces de l’école",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/ecole/difficile-b1__annonce-36.mp3",
@@ -1053,31 +735,7 @@
             "id": "c",
             "texte": "Des vêtements"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Des légumes bio"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/legumes/légume.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/transports/voiture.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/vetements/vetements.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Faut-il éplucher les légumes bio?",
@@ -1098,13 +756,7 @@
             "id": "c",
             "texte": "Oui, sauf les carottes"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Non"
-          }
-        }
+        ]
       },
       {
         "enonce": "Où se concentrent les vitamines ?",
@@ -1125,13 +777,7 @@
             "id": "c",
             "texte": "Dans l'eau de cuisson"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Sous la peau"
-          }
-        }
+        ]
       },
       {
         "enonce": "De combien la qualité nutritionnelle du bio est-elle supérieure ?",
@@ -1152,13 +798,7 @@
             "id": "c",
             "texte": "50 %"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "30 %"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quel légume est cité en exemple ?",
@@ -1179,31 +819,7 @@
             "id": "c",
             "texte": "Les carottes"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Les courgettes"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/legumes/courgette.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/legumes/tomate.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/legumes/carotte.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Combien coûtent six courgettes bio chez l'annonceur ?",
@@ -1224,13 +840,7 @@
             "id": "c",
             "texte": "3,50 euros"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "2,40 euros"
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -1241,8 +851,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Conversation 8",
-    "scenario": "vie-quotidienne",
-    "scene": "Les associations",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/ecole/difficile-b1__conversation-8.mp3",
@@ -1268,13 +876,7 @@
             "id": "c",
             "texte": "Demander une réduction car les plats n'étaient pas bons"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 2,
-            "reponse_modele": "Savoir ce qu'ils doivent payer car ils ont terminé"
-          }
-        }
+        ]
       },
       {
         "enonce": "Qu'a oublié de compter Ludivine ?",
@@ -1295,31 +897,7 @@
             "id": "c",
             "texte": "Sa boisson"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Son dessert"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/orientation/entre.webp"
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/desserts/dessert.webp",
-                "correct": true
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/boissons/boisson.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Pourquoi Ludivine proteste-t-elle ?",
@@ -1340,13 +918,7 @@
             "id": "c",
             "texte": "Elle a encore faim"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Elle ne veut pas payer trop"
-          }
-        }
+        ]
       },
       {
         "enonce": "De quoi Aurore s'aperçoit-elle ?",
@@ -1367,31 +939,7 @@
             "id": "c",
             "texte": "Que le serveur a oublié leur table"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Qu'il y a une erreur dans l'addition"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/ville/restaurant.webp"
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/argent-administration/addition.webp",
-                "correct": true
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/metiers/serveur.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Le serveur…",
@@ -1412,13 +960,7 @@
             "texte": "Demande des précisions au patron",
             "correct": true
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Demande des précisions au patron"
-          }
-        }
+        ]
       },
       {
         "enonce": "À quoi correspond le « prix du couvert » ?",
@@ -1439,31 +981,7 @@
             "id": "c",
             "texte": "Au pourboire obligatoire"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Aux frais pour le service et le pain"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/aliments/pain.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/desserts/dessert.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/actions/boire.webp"
-              }
-            ]
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -1474,8 +992,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Radio 27",
-    "scenario": "actualite",
-    "scene": "L’environnement",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/ecole/difficile-b1__radio-27.mp3",
@@ -1501,13 +1017,7 @@
             "id": "c",
             "texte": "Aux enfants"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Aux adolescents"
-          }
-        }
+        ]
       },
       {
         "enonce": "D'après les sondages, quel est le loisir préféré des filles ?",
@@ -1528,13 +1038,7 @@
             "texte": "Les sorties entre amies",
             "correct": true
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Les sorties entre amies"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quel sport Myriam pratique-t-elle ?",
@@ -1555,31 +1059,7 @@
             "id": "c",
             "texte": "Le tennis"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "La gymnastique"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/sports/balle.webp"
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/sports/gymnastique.webp",
-                "correct": true
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/sports/tennis.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Pourquoi Myriam a-t-elle arrêté certaines activités ?",
@@ -1600,13 +1080,7 @@
             "id": "c",
             "texte": "Elle voulait avoir plus de temps libre"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Les activités coûtaient trop cher"
-          }
-        }
+        ]
       },
       {
         "enonce": "Pourquoi Christopher dit-il que le tennis n'est pas un loisir ?",
@@ -1627,13 +1101,7 @@
             "texte": "Parce qu'il doit faire de la compétition",
             "correct": true
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 2,
-            "reponse_modele": "Parce qu'il doit faire de la compétition"
-          }
-        }
+        ]
       },
       {
         "enonce": "Pour Myriam, la journée idéale est…",
@@ -1654,31 +1122,7 @@
             "texte": "Sortir et voir ses copains",
             "correct": true
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Sortir et voir ses copains"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/actions/dormir.webp"
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/ville/cinema.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/aliments/pain.webp",
-                "correct": true
-              }
-            ]
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -1689,8 +1133,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Conversation 16",
-    "scenario": "sante",
-    "scene": "La canicule",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/famille/difficile-b1__conversation-16.mp3",
@@ -1716,13 +1158,7 @@
             "id": "c",
             "texte": "5 ans"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "18 mois"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quel âge ont les parents de Madame Thierry ?",
@@ -1743,13 +1179,7 @@
             "id": "c",
             "texte": "90 et 92 ans"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "84 et 86 ans"
-          }
-        }
+        ]
       },
       {
         "enonce": "Avec quoi rafraîchit-elle l'enfant à la maison ?",
@@ -1770,13 +1200,7 @@
             "id": "c",
             "texte": "De la glace"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Un brumisateur"
-          }
-        }
+        ]
       },
       {
         "enonce": "Que doivent fermer ses parents en journée ?",
@@ -1797,31 +1221,7 @@
             "id": "c",
             "texte": "La porte d'entrée"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Les volets"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/maison/volet.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/maison/fenêtre.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/maison/porte.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Quand sort-elle surtout la petite fille ?",
@@ -1842,31 +1242,7 @@
             "id": "c",
             "texte": "Seulement la nuit"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Tôt le matin et un peu le soir"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/temps-calendrier/matin.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/heure-horloge/midi.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/temps-calendrier/nuit.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Quand aère-t-on l'appartement ?",
@@ -1887,31 +1263,7 @@
             "id": "c",
             "texte": "Jamais"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Pendant la nuit"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/temps-calendrier/nuit.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/heure-horloge/midi.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/legumes/maïs.webp"
-              }
-            ]
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -1922,8 +1274,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Radio 1",
-    "scenario": "actualite",
-    "scene": "La cuisine en famille",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/famille/difficile-b1__radio-1.mp3",
@@ -1949,13 +1299,7 @@
             "id": "c",
             "texte": "50 %"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "87 %"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quelle fondation a publié l'enquête ?",
@@ -1976,13 +1320,7 @@
             "id": "c",
             "texte": "Le ministère de la Culture"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "La Fondation Nestlé"
-          }
-        }
+        ]
       },
       {
         "enonce": "Qui parle de transmission lors des assises Nestlé ?",
@@ -2003,13 +1341,7 @@
             "id": "c",
             "texte": "Emmanuel Jaffelin"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Erik Orsenna"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quel repas français a été inscrit au patrimoine Unesco ?",
@@ -2030,13 +1362,7 @@
             "id": "c",
             "texte": "Le fromage"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Le repas gastronomique français"
-          }
-        }
+        ]
       },
       {
         "enonce": "Par qui la transmission culinaire passe-t-elle souvent ?",
@@ -2057,31 +1383,7 @@
             "id": "c",
             "texte": "Par les écoles"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "De mère en fille"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/famille-personnes/fille.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/famille-personnes/pere.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/ville/école.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Quand a été publiée l'enquête Nestlé ?",
@@ -2102,13 +1404,7 @@
             "id": "c",
             "texte": "En 2019"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "En novembre 2011"
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -2119,8 +1415,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Radio 19",
-    "scenario": "radio",
-    "scene": "L’émission littéraire",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/famille/difficile-b1__radio-19.mp3",
@@ -2146,13 +1440,7 @@
             "id": "c",
             "texte": "Les adultes"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Les adolescents"
-          }
-        }
+        ]
       },
       {
         "enonce": "Mathieu Sylvander…",
@@ -2173,13 +1461,7 @@
             "texte": "Est l'auteur du livre présenté",
             "correct": true
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Est l'auteur du livre présenté"
-          }
-        }
+        ]
       },
       {
         "enonce": "Où se déroule l'histoire ?",
@@ -2200,31 +1482,7 @@
             "texte": "À la montagne",
             "correct": true
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "À la montagne"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/ville/ville.webp"
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/nature/campagne.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/nature/montagne.webp",
-                "correct": true
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Au début de l'histoire, les enfants sont…",
@@ -2245,13 +1503,7 @@
             "id": "c",
             "texte": "Avec des éducateurs"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Avec leur mère"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quel est le métier de la mère ?",
@@ -2272,13 +1524,7 @@
             "texte": "Elle gère un gîte en montagne",
             "correct": true
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Elle gère un gîte en montagne"
-          }
-        }
+        ]
       },
       {
         "enonce": "Citez un problème que les enfants devront résoudre.",
@@ -2299,13 +1545,7 @@
             "id": "c",
             "texte": "Acheter un train"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Trouver de vraies chaussures"
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -2316,8 +1556,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Radio 4",
-    "scenario": "radio",
-    "scene": "L’émission littéraire",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/famille/difficile-b1__radio-4.mp3",
@@ -2343,13 +1581,7 @@
             "id": "c",
             "texte": "L'Éloge de la gentillesse"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Les Souvenirs"
-          }
-        }
+        ]
       },
       {
         "enonce": "Qui en est l'auteur ?",
@@ -2370,13 +1602,7 @@
             "id": "c",
             "texte": "Rémi Bezançon"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "David Foenkinos"
-          }
-        }
+        ]
       },
       {
         "enonce": "Dans quel hôpital le narrateur rend-il visite à son grand-père ?",
@@ -2397,13 +1623,7 @@
             "id": "c",
             "texte": "Pitié-Salpêtrière"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Kremlin-Bicêtre"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quel personnage vient d'être enterré ?",
@@ -2424,31 +1644,7 @@
             "id": "c",
             "texte": "Son frère"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Le grand-père du narrateur"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/famille-personnes/pere.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/famille-personnes/mere.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/famille-personnes/frère.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Comment aide-t-il son grand-père à boire ?",
@@ -2469,13 +1665,7 @@
             "id": "c",
             "texte": "Avec un verre"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Avec une paille"
-          }
-        }
+        ]
       },
       {
         "enonce": "En quelle année David Foenkinos est-il né ?",
@@ -2496,13 +1686,7 @@
             "id": "c",
             "texte": "1980"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "1974"
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -2513,8 +1697,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Conversation 3",
-    "scenario": "loisirs",
-    "scene": "Le week-end",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/inviter/difficile-b1__conversation-3.mp3",
@@ -2540,13 +1722,7 @@
             "id": "c",
             "texte": "Avec Samuel"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Avec son frère"
-          }
-        }
+        ]
       },
       {
         "enonce": "Qu'aimerait faire Ingrid pendant le week-end ?",
@@ -2567,13 +1743,7 @@
             "id": "c",
             "texte": "Partir en voyage"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Organiser une fête et un barbecue"
-          }
-        }
+        ]
       },
       {
         "enonce": "Ingrid a l'intention…",
@@ -2594,13 +1764,7 @@
             "id": "c",
             "texte": "D'étudier tout le week-end"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "D'organiser une soirée chez elle"
-          }
-        }
+        ]
       },
       {
         "enonce": "Pourquoi l'expérience de Samuel n'a-t-elle pas été positive ?",
@@ -2621,31 +1785,7 @@
             "id": "c",
             "texte": "Il n'a pas pu faire ses devoirs"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Sa sœur l'a empêché de sortir"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/fruits/pêche.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/famille-personnes/parents.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/actions/faire-ses-devoirs.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Qu'est-ce que la sœur de Samuel a dit aux parents ?",
@@ -2666,13 +1806,7 @@
             "texte": "Ce que Samuel n'a pas fait de bien",
             "correct": true
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Ce que Samuel n'a pas fait de bien"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quelles activités Samuel n'a-t-il pas faites, d'après sa sœur ?",
@@ -2693,31 +1827,7 @@
             "id": "c",
             "texte": "Des courses et du cinéma"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Cours de guitare et devoirs à l'heure"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/sports/natation.webp"
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/ecole-bureau/devoirs.webp",
-                "correct": true
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/sports/course.webp"
-              }
-            ]
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -2728,8 +1838,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Radio 18",
-    "scenario": "loisirs",
-    "scene": "Les jeux d’évasion",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/inviter/difficile-b1__radio-18.mp3",
@@ -2755,13 +1863,7 @@
             "id": "c",
             "texte": "Le changement permanent de la mode"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "L'identité et le look chez les jeunes"
-          }
-        }
+        ]
       },
       {
         "enonce": "Élodie et Guillaume…",
@@ -2782,13 +1884,7 @@
             "id": "c",
             "texte": "N'ont pas d'opinion"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Ont une opinion différente"
-          }
-        }
+        ]
       },
       {
         "enonce": "Que cherche Élodie ?",
@@ -2809,13 +1905,7 @@
             "id": "c",
             "texte": "À copier la mode punk"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "À être elle-même sans look particulier"
-          }
-        }
+        ]
       },
       {
         "enonce": "Pourquoi Guillaume veut-il garder son look ?",
@@ -2836,13 +1926,7 @@
             "id": "c",
             "texte": "Il a toujours eu ce look"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Il pense que c'est son identité"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quel style de look Guillaume évoque-t-il ?",
@@ -2863,13 +1947,7 @@
             "id": "c",
             "texte": "Sportif"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Punk"
-          }
-        }
+        ]
       },
       {
         "enonce": "Guillaume imagine que plus tard il sera…",
@@ -2890,13 +1968,7 @@
             "id": "c",
             "texte": "Comme son père"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Peut-être différent"
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -2907,8 +1979,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Conversation 11",
-    "scenario": "loisirs",
-    "scene": "Le stage d’escalade",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/journee/difficile-b1__conversation-11.mp3",
@@ -2934,13 +2004,7 @@
             "id": "c",
             "texte": "Trop fatigant"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Vraiment très bien"
-          }
-        }
+        ]
       },
       {
         "enonce": "Pourquoi Élisa n'a pas donné beaucoup de nouvelles ?",
@@ -2961,13 +2025,7 @@
             "id": "c",
             "texte": "Elle était en colère"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Elle n'avait pas une minute de libre"
-          }
-        }
+        ]
       },
       {
         "enonce": "Avant de commencer à escalader le matin, Élisa devait…",
@@ -2988,13 +2046,7 @@
             "id": "c",
             "texte": "Faire un entraînement spécial"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Marcher pendant une demi-heure"
-          }
-        }
+        ]
       },
       {
         "enonce": "Pourquoi Élisa n'a pas pu escalader parfois ?",
@@ -3015,13 +2067,7 @@
             "id": "c",
             "texte": "Il faisait trop chaud"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Le niveau était trop élevé"
-          }
-        }
+        ]
       },
       {
         "enonce": "Depuis combien de temps Élisa fait-elle de l'escalade ?",
@@ -3042,13 +2088,7 @@
             "id": "c",
             "texte": "Sept ans"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Deux ans"
-          }
-        }
+        ]
       },
       {
         "enonce": "Que faisait le groupe à 17 h 00 ? (Deux éléments de réponse attendus.)",
@@ -3069,31 +2109,7 @@
             "id": "c",
             "texte": "Regarder un film"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 2,
-            "reponse_modele": "Rentrer au gîte et se baigner dans la rivière"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/actions/dormir.webp"
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/nature/rivière.webp",
-                "correct": true
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/ville/cinema.webp"
-              }
-            ]
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -3104,8 +2120,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Conversation 15",
-    "scenario": "vacances",
-    "scene": "Le voyage",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/journee/difficile-b1__conversation-15.mp3",
@@ -3131,13 +2145,7 @@
             "id": "c",
             "texte": "25 € chacun"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "40 € chacun"
-          }
-        }
+        ]
       },
       {
         "enonce": "À quelle heure Isabelle a-t-elle choisi la séance ?",
@@ -3158,31 +2166,7 @@
             "id": "c",
             "texte": "À 14 heures"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "À 16 heures"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/heure-horloge/seize-heures.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/heure-horloge/dix-heures.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/heure-horloge/quatorze-heures.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Quel bois est utilisé pour le manche ?",
@@ -3203,31 +2187,7 @@
             "id": "c",
             "texte": "Bois de hêtre"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Bois d'olivier"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/plantes/olivier.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/plantes/chêne.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/plantes/hêtre.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Dans quelle ville a lieu l'atelier ?",
@@ -3248,13 +2208,7 @@
             "id": "c",
             "texte": "Lyon"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Thiers"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quel couteau fabriquent-ils ?",
@@ -3275,13 +2229,7 @@
             "id": "c",
             "texte": "Le Opinel"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Le Thiers"
-          }
-        }
+        ]
       },
       {
         "enonce": "Qui a fabriqué un couteau chacun ?",
@@ -3302,13 +2250,7 @@
             "id": "c",
             "texte": "Le coutelier pour eux"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Gérard et Isabelle"
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -3319,8 +2261,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Radio 13",
-    "scenario": "radio",
-    "scene": "La critique de film",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/journee/difficile-b1__radio-13.mp3",
@@ -3346,13 +2286,7 @@
             "id": "c",
             "texte": "Future View"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "#Anita"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quelle actrice interprète Anita ?",
@@ -3373,13 +2307,7 @@
             "id": "c",
             "texte": "Anne Goscinny"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Fantine Harduin"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quelle militante suédoise inspire le personnage ?",
@@ -3400,13 +2328,7 @@
             "id": "c",
             "texte": "Fantine Thunberg"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Greta Thunberg"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quelle est la durée du film ?",
@@ -3427,31 +2349,7 @@
             "id": "c",
             "texte": "Une heure"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Treize minutes"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/nombres-mesures/treize.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/nombres-mesures/trente.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/heure-horloge/une-heure.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "De quoi traite le combat d'Anita ?",
@@ -3472,13 +2370,7 @@
             "id": "c",
             "texte": "Le tourisme"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Le réchauffement climatique"
-          }
-        }
+        ]
       },
       {
         "enonce": "Sur quelle plateforme le film est-il mis en ligne ?",
@@ -3499,13 +2391,7 @@
             "id": "c",
             "texte": "France 2"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "YouTube B-Voir et Imago.tv"
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -3516,8 +2402,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Radio 16",
-    "scenario": "radio",
-    "scene": "L’émission pour les jeunes",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/journee/difficile-b1__radio-16.mp3",
@@ -3543,13 +2427,7 @@
             "id": "c",
             "texte": "Deux adolescents de pays différents"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 2,
-            "reponse_modele": "Deux adolescents qui ont des journées différentes"
-          }
-        }
+        ]
       },
       {
         "enonce": "Comment Eddy définit-il sa vie ?",
@@ -3570,13 +2448,7 @@
             "id": "c",
             "texte": "Toujours en voyage"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Calme et sereine"
-          }
-        }
+        ]
       },
       {
         "enonce": "Où habite Béa ?",
@@ -3597,13 +2469,7 @@
             "texte": "Dans une grande ville",
             "correct": true
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Dans une grande ville"
-          }
-        }
+        ]
       },
       {
         "enonce": "Comment Eddy va-t-il au collège le matin ?",
@@ -3624,31 +2490,7 @@
             "id": "c",
             "texte": "À vélo"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "En bateau"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/transports/bus.webp"
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/transports/bateau.webp",
-                "correct": true
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/transports/velo.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Combien d'habitants compte l'île d'Eddy ?",
@@ -3669,13 +2511,7 @@
             "id": "c",
             "texte": "Dix mille"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Une centaine"
-          }
-        }
+        ]
       },
       {
         "enonce": "Que fait Béa le week-end ?",
@@ -3696,13 +2532,7 @@
             "id": "c",
             "texte": "Elle étudie toute la journée"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Elle sort beaucoup avec ses amis"
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -3713,8 +2543,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Radio 7",
-    "scenario": "radio",
-    "scene": "L’émission littéraire",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/journee/difficile-b1__radio-7.mp3",
@@ -3740,13 +2568,7 @@
             "id": "c",
             "texte": "Gérard Mermet"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Emmanuel Jaffelin"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quand célèbre-t-on la journée internationale de la gentillesse ?",
@@ -3767,13 +2589,7 @@
             "id": "c",
             "texte": "Le 14 juillet"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Le 13 novembre"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quel est le contraire de la gentillesse?",
@@ -3794,13 +2610,7 @@
             "id": "c",
             "texte": "La colère"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Le cynisme"
-          }
-        }
+        ]
       },
       {
         "enonce": "Chez quelles éditions est paru le livre ?",
@@ -3821,13 +2631,7 @@
             "id": "c",
             "texte": "Gallimard"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "François Bourin"
-          }
-        }
+        ]
       },
       {
         "enonce": "Où la gentillesse est-elle née?",
@@ -3848,31 +2652,7 @@
             "id": "c",
             "texte": "Dans les écoles"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Dans la noblesse romaine"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/corps/main.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/ville/usine.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/ville/école.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Comment l'auteur qualifie-t-il la gentillesse aujourd'hui ?",
@@ -3893,13 +2673,7 @@
             "id": "c",
             "texte": "Interdite"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Reléguée aux petites vertus"
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -3910,8 +2684,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Annonce 33",
-    "scenario": "loisirs",
-    "scene": "Le salon de la bande dessinée",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/loisirs/difficile-b1__annonce-33.mp3",
@@ -3937,31 +2709,7 @@
             "id": "c",
             "texte": "Au cinéma"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Dans le salon Open Space"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/maison/salon.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/ville/mairie.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/ville/cinema.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "À quelle heure commence le spectacle de danse asiatique ?",
@@ -3982,31 +2730,7 @@
             "id": "c",
             "texte": "18 h"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "15 h"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/heure-horloge/quatorze-heures.webp"
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/heure-horloge/quinze-heures.webp",
-                "correct": true
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/heure-horloge/dix-huit-heures.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "D'où viennent les artistes de danse ?",
@@ -4027,13 +2751,7 @@
             "id": "c",
             "texte": "De Corée"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Du Japon"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quel type d'espace accueille les professionnels ?",
@@ -4054,13 +2772,7 @@
             "id": "c",
             "texte": "Un parking"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Un espace de rencontre"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quel type d'atelier est proposé ?",
@@ -4081,31 +2793,7 @@
             "id": "c",
             "texte": "Un atelier de danse"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Un atelier de dessin"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/loisirs/dessin.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/maison/cuisine.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/loisirs/danse.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Combien de personnes maximum par session d'atelier ?",
@@ -4126,31 +2814,7 @@
             "id": "c",
             "texte": "Dix"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Huit"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/nombres-mesures/cinq.webp"
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/nombres-mesures/huit.webp",
-                "correct": true
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/nombres-mesures/dix.webp"
-              }
-            ]
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -4161,8 +2825,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Annonce 34",
-    "scenario": "loisirs",
-    "scene": "Le parc d’attractions",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/loisirs/difficile-b1__annonce-34.mp3",
@@ -4188,13 +2850,7 @@
             "id": "c",
             "texte": "Un parc aquatique"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Un parc d'attractions"
-          }
-        }
+        ]
       },
       {
         "enonce": "Combien d'attractions propose le parc ?",
@@ -4215,13 +2871,7 @@
             "id": "c",
             "texte": "50"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "35"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quel type d'attraction est nouveau ?",
@@ -4242,13 +2892,7 @@
             "id": "c",
             "texte": "Un spectacle"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Un simulateur"
-          }
-        }
+        ]
       },
       {
         "enonce": "À partir de quel âge l'attraction Adrénaline est-elle interdite ?",
@@ -4269,13 +2913,7 @@
             "id": "c",
             "texte": "Moins de 16 ans"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Moins de 12 ans"
-          }
-        }
+        ]
       },
       {
         "enonce": "À quelle hauteur l'attraction Adrénaline propulse-t-elle ?",
@@ -4296,13 +2934,7 @@
             "id": "c",
             "texte": "Plus de 50 mètres"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Plus de 30 mètres"
-          }
-        }
+        ]
       },
       {
         "enonce": "À quelle heure commence le spectacle de magie ?",
@@ -4323,31 +2955,7 @@
             "id": "c",
             "texte": "16 h"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "14 h"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/heure-horloge/midi.webp"
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/heure-horloge/quatorze-heures.webp",
-                "correct": true
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/heure-horloge/seize-heures.webp"
-              }
-            ]
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -4358,8 +2966,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Annonce 35",
-    "scenario": "radio",
-    "scene": "L’interview d’artiste",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/loisirs/difficile-b1__annonce-35.mp3",
@@ -4385,13 +2991,7 @@
             "id": "c",
             "texte": "Louane"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Angèle"
-          }
-        }
+        ]
       },
       {
         "enonce": "Dans combien de catégories Angèle est-elle nommée aux Victoires de la musique ?",
@@ -4412,31 +3012,7 @@
             "id": "c",
             "texte": "Cinq"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Trois"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/nombres-mesures/deux.webp"
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/nombres-mesures/trois.webp",
-                "correct": true
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/nombres-mesures/cinq.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Combien de grands concerts Angèle donne-t-elle en février ?",
@@ -4457,31 +3033,7 @@
             "id": "c",
             "texte": "Six"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Quatre"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/nombres-mesures/deux.webp"
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/nombres-mesures/quatre.webp",
-                "correct": true
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/nombres-mesures/six.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Que va faire Angèle après sa tournée ?",
@@ -4502,13 +3054,7 @@
             "id": "c",
             "texte": "Un film"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Des festivals"
-          }
-        }
+        ]
       },
       {
         "enonce": "Où Angèle va-t-elle passer plus de temps ?",
@@ -4529,31 +3075,7 @@
             "id": "c",
             "texte": "À la mer"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Dans une autre ville"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/ville/ville.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/nature/campagne.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/nature/mer.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Sur quel réseau Angèle a-t-elle commencé à se faire connaître ?",
@@ -4574,13 +3096,7 @@
             "id": "c",
             "texte": "Facebook"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Instagram"
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -4591,8 +3107,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Radio 10",
-    "scenario": "radio",
-    "scene": "Le sport",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/loisirs/difficile-b1__radio-10.mp3",
@@ -4618,13 +3132,7 @@
             "id": "c",
             "texte": "À Paris en 1920"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "À La Ciotat en 1910"
-          }
-        }
+        ]
       },
       {
         "enonce": "Que signifie « pieds tanqués » ?",
@@ -4645,31 +3153,7 @@
             "id": "c",
             "texte": "Pieds surélevés"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Pieds joints"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/outils/joint.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/corps/pied.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/ecole-bureau/élève.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "À combien de points gagne-t-on une partie ?",
@@ -4690,13 +3174,7 @@
             "id": "c",
             "texte": "21 points"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "13 points"
-          }
-        }
+        ]
       },
       {
         "enonce": "Combien de joueurs le Mondial la Marseillaise rassemble-t-il ?",
@@ -4717,13 +3195,7 @@
             "id": "c",
             "texte": "Plus de 140"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Plus de 14 000"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quel rôle a le tireur ?",
@@ -4744,13 +3216,7 @@
             "id": "c",
             "texte": "Arbitrer"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Chasser une boule adverse"
-          }
-        }
+        ]
       },
       {
         "enonce": "Comment appelle-t-on le tir le plus admiré ?",
@@ -4771,31 +3237,7 @@
             "id": "c",
             "texte": "Le cochonnet"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Le carreau"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/formes/carré.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/formes/point.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/animaux-ferme-compagnie/cochon.webp"
-              }
-            ]
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -4806,8 +3248,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Radio 12",
-    "scenario": "radio",
-    "scene": "La critique de film",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/loisirs/difficile-b1__radio-12.mp3",
@@ -4833,13 +3273,7 @@
             "id": "c",
             "texte": "Henri Pick"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 2,
-            "reponse_modele": "Les Dernières heures d'une histoire d'amour"
-          }
-        }
+        ]
       },
       {
         "enonce": "Qui est l'auteur du manuscrit découvert ?",
@@ -4860,13 +3294,7 @@
             "id": "c",
             "texte": "Richard Brautigan"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Henri Pick"
-          }
-        }
+        ]
       },
       {
         "enonce": "Dans quelle ville bretonne se situe la bibliothèque ?",
@@ -4887,13 +3315,7 @@
             "id": "c",
             "texte": "Rennes"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Crozon"
-          }
-        }
+        ]
       },
       {
         "enonce": "Que contient cette bibliothèque particulière ?",
@@ -4914,13 +3336,7 @@
             "id": "c",
             "texte": "Des bandes dessinées"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Des livres refusés par les éditeurs"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quel métier exerçait Henri Pick ?",
@@ -4941,13 +3357,7 @@
             "id": "c",
             "texte": "Éditeur"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Pizzaiolo"
-          }
-        }
+        ]
       },
       {
         "enonce": "Qui mène l'enquête pour savoir qui a écrit le livre ?",
@@ -4968,13 +3378,7 @@
             "id": "c",
             "texte": "Rémi Bezançon"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Fabrice Luchini"
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -4985,8 +3389,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Radio 17",
-    "scenario": "radio",
-    "scene": "L’émission pour les jeunes",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/loisirs/difficile-b1__radio-17.mp3",
@@ -5012,13 +3414,7 @@
             "texte": "Contemporaine",
             "correct": true
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Contemporaine"
-          }
-        }
+        ]
       },
       {
         "enonce": "Comment Julia se prépare-t-elle à sa carrière de danseuse ?",
@@ -5039,31 +3435,7 @@
             "id": "c",
             "texte": "En jouant au théâtre"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Avec une formation au conservatoire"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/technologie/télévision.webp"
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/actions/formation.webp",
-                "correct": true
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/ville/theatre.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Comment se sent Julia lorsqu'elle danse devant un public ?",
@@ -5084,13 +3456,7 @@
             "id": "c",
             "texte": "Elle est nerveuse"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Elle se sent très bien"
-          }
-        }
+        ]
       },
       {
         "enonce": "Comment la danse a changé son corps ?",
@@ -5111,13 +3477,7 @@
             "texte": "Elle ne grandit presque plus",
             "correct": true
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Elle ne grandit presque plus"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quels sont les avantages de la carrière de danseuse ? (Plusieurs réponses possibles.)",
@@ -5138,31 +3498,7 @@
             "id": "c",
             "texte": "Ne jamais s'entraîner"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Voyager et avoir des projets différents"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/ecole-bureau/élève.webp"
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/voyage/voyage.webp",
-                "correct": true
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/transports/train.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Depuis quand Julia danse-t-elle ?",
@@ -5183,13 +3519,7 @@
             "id": "c",
             "texte": "Depuis 15 ans"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Depuis 10 ans"
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -5200,8 +3530,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Radio 21",
-    "scenario": "radio",
-    "scene": "La critique de film",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/loisirs/difficile-b1__radio-21.mp3",
@@ -5227,13 +3555,7 @@
             "id": "c",
             "texte": "Un jeu de stratégie"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Un jeu de football"
-          }
-        }
+        ]
       },
       {
         "enonce": "Lors de la conférence, les développeurs ont parlé…",
@@ -5254,13 +3576,7 @@
             "id": "c",
             "texte": "Des nouvelles consoles de jeu vidéo"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Des modifications du jeu"
-          }
-        }
+        ]
       },
       {
         "enonce": "Combien de ventes pendant la première semaine ?",
@@ -5281,13 +3597,7 @@
             "id": "c",
             "texte": "100 000"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Plus de 10 millions"
-          }
-        }
+        ]
       },
       {
         "enonce": "Combien de parties ont été jouées sur Internet ?",
@@ -5308,13 +3618,7 @@
             "texte": "Plus de 100 millions",
             "correct": true
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Plus de 100 millions"
-          }
-        }
+        ]
       },
       {
         "enonce": "La nouvelle version du jeu devrait…",
@@ -5335,13 +3639,7 @@
             "id": "c",
             "texte": "Être très différente de l'ancienne version"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 2,
-            "reponse_modele": "Être assez différente de l'ancienne version"
-          }
-        }
+        ]
       },
       {
         "enonce": "Les créateurs du jeu ont voulu…",
@@ -5362,13 +3660,7 @@
             "texte": "Rendre les actions des personnages plus réalistes",
             "correct": true
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 2,
-            "reponse_modele": "Rendre les actions des personnages plus réalistes"
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -5379,8 +3671,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Radio 30",
-    "scenario": "actualite",
-    "scene": "Les réseaux sociaux",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/loisirs/difficile-b1__radio-30.mp3",
@@ -5406,13 +3696,7 @@
             "id": "c",
             "texte": "Cent mille"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Un milliard"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quel effet recherche-t-on le plus souvent sur Insta ?",
@@ -5433,13 +3717,7 @@
             "id": "c",
             "texte": "Un effet comique"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Un effet avantageux ou esthétique"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quand Instagram a-t-il annoncé de nouveaux outils contre le harcèlement ?",
@@ -5460,13 +3738,7 @@
             "id": "c",
             "texte": "En décembre"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "En juillet dernier"
-          }
-        }
+        ]
       },
       {
         "enonce": "Dans combien de pays le nombre de likes est-il caché ?",
@@ -5487,13 +3759,7 @@
             "id": "c",
             "texte": "Dix pays"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Six pays"
-          }
-        }
+        ]
       },
       {
         "enonce": "Pourquoi l'exclusion des réseaux sociaux est-elle douloureuse pour les ados ?",
@@ -5514,31 +3780,7 @@
             "id": "c",
             "texte": "Parce qu'ils n'ont pas de smartphone"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 2,
-            "reponse_modele": "Parce qu'ils veulent appartenir à un groupe"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/autre/part.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/loisirs/photo.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/technologie/smartphone.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Que peuvent faire les parents pour aider leurs ados ?",
@@ -5559,13 +3801,7 @@
             "id": "c",
             "texte": "Supprimer toutes les photos"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 2,
-            "reponse_modele": "S'abonner à Instagram et suivre des comptes"
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -5576,8 +3812,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Conversation 4",
-    "scenario": "sante",
-    "scene": "Chez le médecin",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/nature/difficile-b1__conversation-4.mp3",
@@ -5603,13 +3837,7 @@
             "id": "c",
             "texte": "Étudient dans deux écoles différentes"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Ne se connaissent pas"
-          }
-        }
+        ]
       },
       {
         "enonce": "Pourquoi Noémie a-t-elle changé d'école ?",
@@ -5630,31 +3858,7 @@
             "id": "c",
             "texte": "Elle n'aimait pas le sport"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 2,
-            "reponse_modele": "Il n'y avait pas allemand dans son ancienne école"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/ville/école.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/ville/ville.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/sports/sport.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Dans son ancienne école, Noémie…",
@@ -5675,13 +3879,7 @@
             "texte": "Appréciait un seul professeur",
             "correct": true
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Appréciait un seul professeur"
-          }
-        }
+        ]
       },
       {
         "enonce": "Pourquoi Noémie n'aimait-elle pas son ancienne école ?",
@@ -5702,31 +3900,7 @@
             "id": "c",
             "texte": "Les cours étaient trop faciles"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 2,
-            "reponse_modele": "Les profs étaient très stricts et les élèves en compétition"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/ecole-bureau/élève.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/heure-horloge/midi.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/animaux-sauvages/ours.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Quelle qualité Noémie attribue-t-elle au prof d'histoire ?",
@@ -5747,13 +3921,7 @@
             "id": "c",
             "texte": "Il donnait peu de devoirs"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Il était passionné et savait écouter"
-          }
-        }
+        ]
       },
       {
         "enonce": "Citez au moins trois activités possibles l'après-midi.",
@@ -5774,13 +3942,7 @@
             "id": "c",
             "texte": "Maths, physique et chimie"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Musique, chant et théâtre"
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -5791,8 +3953,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Conversation 7",
-    "scenario": "vacances",
-    "scene": "Le voyage",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/nature/difficile-b1__conversation-7.mp3",
@@ -5818,13 +3978,7 @@
             "id": "c",
             "texte": "Étudier"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Visiter la capitale"
-          }
-        }
+        ]
       },
       {
         "enonce": "Pourquoi Maxine veut-elle se reposer d'abord ?",
@@ -5845,13 +3999,7 @@
             "id": "c",
             "texte": "Elle est malade"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Elle est fatiguée"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quelle est la première chose qu'elles vont faire ?",
@@ -5872,31 +4020,7 @@
             "texte": "Prendre un petit déjeuner",
             "correct": true
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Prendre un petit déjeuner"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/actions/dormir.webp"
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/ville/ville.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/aliments/petit-dejeuner.webp",
-                "correct": true
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Que peut-on voir depuis la Corniche ?",
@@ -5917,13 +4041,7 @@
             "id": "c",
             "texte": "Des boutiques de luxe"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 2,
-            "reponse_modele": "Un panorama sur le quartier de la ville basse"
-          }
-        }
+        ]
       },
       {
         "enonce": "Que vont faire Maxine et Faustine dans l'après-midi ?",
@@ -5944,13 +4062,7 @@
             "id": "c",
             "texte": "Rentrer à l'hôtel"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Visiter le palais grand-ducal"
-          }
-        }
+        ]
       },
       {
         "enonce": "Pourquoi elles vont passer à l'hôtel ?",
@@ -5971,13 +4083,7 @@
             "id": "c",
             "texte": "Pour prendre les clefs de leur chambre"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Pour poser leurs valises"
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -5988,8 +4094,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Radio 2",
-    "scenario": "actualite",
-    "scene": "Les vacances des Français",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/nature/difficile-b1__radio-2.mp3",
@@ -6015,31 +4119,7 @@
             "id": "c",
             "texte": "Gris"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Vert"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/couleurs/vert.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/couleurs/bleu.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/couleurs/gris.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Quel tourisme est orienté vers la mer ?",
@@ -6060,31 +4140,7 @@
             "id": "c",
             "texte": "Le tourisme jaune"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Le tourisme bleu"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/couleurs/bleu.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/couleurs/blanc.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/couleurs/jaune.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Quel tourisme concerne les montagnes enneigées ?",
@@ -6105,13 +4161,7 @@
             "id": "c",
             "texte": "Multicolore"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Blanc"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quel tourisme se pratique dans les villes ?",
@@ -6132,31 +4182,7 @@
             "id": "c",
             "texte": "Jaune"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Gris"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/couleurs/gris.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/couleurs/bleu.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/couleurs/jaune.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Quelle couleur évoque le désert ?",
@@ -6177,31 +4203,7 @@
             "id": "c",
             "texte": "Blanc"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Jaune"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/couleurs/jaune.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/couleurs/vert.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/couleurs/blanc.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Comment appelle-t-on les circuits mélangeant plusieurs types ?",
@@ -6222,13 +4224,7 @@
             "id": "c",
             "texte": "Tourisme gris"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Tourisme multicolore"
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -6239,8 +4235,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Radio 26",
-    "scenario": "actualite",
-    "scene": "L’environnement",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/nature/difficile-b1__radio-26.mp3",
@@ -6266,31 +4260,7 @@
             "texte": "Partir puis étudier",
             "correct": true
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Partir puis étudier"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/actions/dormir.webp"
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/maison/maison.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/autre/part.webp",
-                "correct": true
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Citez deux possibilités de vacances chez les jeunes.",
@@ -6311,31 +4281,7 @@
             "id": "c",
             "texte": "Télévision et jeux seulement"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Colonies et séjours linguistiques"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/animaux-sauvages/ours.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/ecole-bureau/examen.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/technologie/télévision.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "D'après certains parents, qu'est-ce qui permet aux enfants de développer leur autonomie ?",
@@ -6356,13 +4302,7 @@
             "id": "c",
             "texte": "Ne jamais voyager"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 2,
-            "reponse_modele": "Partir seul ou en groupe sans la famille"
-          }
-        }
+        ]
       },
       {
         "enonce": "Comment étudient les jeunes pendant l'été ?",
@@ -6383,13 +4323,7 @@
             "id": "c",
             "texte": "Uniquement avec leurs parents"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 2,
-            "reponse_modele": "Avec les cahiers de vacances ou des cours de révision"
-          }
-        }
+        ]
       },
       {
         "enonce": "Que peuvent faire les jeunes qui ont besoin d'indépendance et de découvrir une autre culture ?",
@@ -6410,13 +4344,7 @@
             "id": "c",
             "texte": "Arrêter l'école"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 2,
-            "reponse_modele": "Partir en échange scolaire ou séjour linguistique"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quand étudient-ils souvent pendant l'été ?",
@@ -6437,31 +4365,7 @@
             "id": "c",
             "texte": "Jamais"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Avant la rentrée"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/orientation/entre.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/temps-calendrier/noël.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/legumes/maïs.webp"
-              }
-            ]
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -6472,8 +4376,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Annonce 32",
-    "scenario": "ecole",
-    "scene": "À la cantine",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/nourriture/difficile-b1__annonce-32.mp3",
@@ -6499,31 +4401,7 @@
             "id": "c",
             "texte": "Des vacances"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "De l'alimentation à l'école"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/aliments/alimentation.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/sports/sport.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/voyage/valise.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Que impose la loi française aux cantines ?",
@@ -6544,13 +4422,7 @@
             "id": "c",
             "texte": "Uniquement du bio"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Un repas végétarien par semaine"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quel type d'établissement est concerné ?",
@@ -6571,31 +4443,7 @@
             "id": "c",
             "texte": "Une mairie"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Une école"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/ville/école.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/ville/hopital.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/ville/mairie.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Quel type de visite est organisé ?",
@@ -6616,31 +4464,7 @@
             "id": "c",
             "texte": "Une visite d'usine"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Une visite d'école"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/ville/école.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/ville/musee.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/ville/usine.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Quel menu est le plus choisi par les enfants ?",
@@ -6661,31 +4485,7 @@
             "id": "c",
             "texte": "Le menu sans poisson"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Le menu avec viande"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/aliments/viande.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/aliments/menu.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/aliments/poisson.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Quel plat végétarien avait été peu apprécié ?",
@@ -6706,13 +4506,7 @@
             "id": "c",
             "texte": "Une salade"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Des lasagnes"
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -6723,8 +4517,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Conversation 12",
-    "scenario": "fetes",
-    "scene": "La fête",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/nourriture/difficile-b1__conversation-12.mp3",
@@ -6750,31 +4542,7 @@
             "id": "c",
             "texte": "C'est son anniversaire"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Il a réussi son examen"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/famille-personnes/parents.webp"
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/ecole-bureau/examen.webp",
-                "correct": true
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/temps-calendrier/anniversaire.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Que doit savoir Antoine avant d'organiser la fête ? (Deux éléments possibles.)",
@@ -6795,13 +4563,7 @@
             "id": "c",
             "texte": "Le nom du traiteur"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Le nombre d'invités et son budget"
-          }
-        }
+        ]
       },
       {
         "enonce": "Pourquoi doit-il faire beau ?",
@@ -6822,31 +4584,7 @@
             "id": "c",
             "texte": "Parce que les invités veulent se baigner"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Parce que la fête a lieu dans le jardin"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/actions/marcher.webp"
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/maison/jardin.webp",
-                "correct": true
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/ville/parc.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Qui Antoine va-t-il inviter ?",
@@ -6867,13 +4605,7 @@
             "id": "c",
             "texte": "Uniquement sa famille"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Toute la classe"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quelle solution Antoine choisit-il pour le repas ?",
@@ -6894,13 +4626,7 @@
             "texte": "Il va appeler un traiteur",
             "correct": true
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Il va appeler un traiteur"
-          }
-        }
+        ]
       },
       {
         "enonce": "Que va faire Margot pour aider Antoine ?",
@@ -6921,13 +4647,7 @@
             "id": "c",
             "texte": "Acheter la nourriture"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Préparer la musique pour danser"
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -6938,8 +4658,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Conversation 6",
-    "scenario": "travail",
-    "scene": "Au bureau",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/nourriture/difficile-b1__conversation-6.mp3",
@@ -6965,13 +4683,7 @@
             "texte": "Histoire",
             "correct": true
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Histoire"
-          }
-        }
+        ]
       },
       {
         "enonce": "Sur quels thèmes porte le contrôle d'histoire ?",
@@ -6992,13 +4704,7 @@
             "id": "c",
             "texte": "La Seconde Guerre mondiale"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "L'Antiquité égyptienne et grecque"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quel est le problème de Lilian ?",
@@ -7019,13 +4725,7 @@
             "id": "c",
             "texte": "Il sera absent mardi"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Il n'a pas le temps de travailler"
-          }
-        }
+        ]
       },
       {
         "enonce": "Pourquoi Lilian n'a-t-il pas le temps de réviser ?",
@@ -7046,31 +4746,7 @@
             "id": "c",
             "texte": "Il est malade"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Il doit s'occuper de sa petite sœur"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/famille-personnes/sœur.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/ecole-bureau/bureau.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/sante/malade.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Que propose Maxime à Lilian ?",
@@ -7091,13 +4767,7 @@
             "texte": "De l'aider à réviser",
             "correct": true
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "De l'aider à réviser"
-          }
-        }
+        ]
       },
       {
         "enonce": "Pourquoi Lilian refuse-t-il le film que Maxime propose ?",
@@ -7118,31 +4788,7 @@
             "id": "c",
             "texte": "Il n'a pas de télévision"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 2,
-            "reponse_modele": "Le film n'est pas adapté à une enfant de 6 ans"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/ville/cinema.webp"
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/famille-personnes/enfant.webp",
-                "correct": true
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/technologie/télévision.webp"
-              }
-            ]
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -7153,8 +4799,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Radio 11",
-    "scenario": "maison",
-    "scene": "Les ustensiles de cuisine",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/nourriture/difficile-b1__radio-11.mp3",
@@ -7180,13 +4824,7 @@
             "id": "c",
             "texte": "8 et 9"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "1, 3, 6 et 7"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quels numéros peut-on garder ?",
@@ -7207,13 +4845,7 @@
             "id": "c",
             "texte": "7 et 8"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "2, 4 et 5"
-          }
-        }
+        ]
       },
       {
         "enonce": "Que signifie le numéro 1 ?",
@@ -7234,13 +4866,7 @@
             "id": "c",
             "texte": "Polystyrène"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "PET"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quels récipients préférer ?",
@@ -7261,13 +4887,7 @@
             "id": "c",
             "texte": "Polystyrène rayé"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Acier inoxydable ou verre"
-          }
-        }
+        ]
       },
       {
         "enonce": "Pourquoi éviter une boîte rayée ou fondue ?",
@@ -7288,13 +4908,7 @@
             "id": "c",
             "texte": "Elle coûte moins"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Les additifs migrent plus"
-          }
-        }
+        ]
       },
       {
         "enonce": "Où trouve-t-on les numéros sur les boîtes ?",
@@ -7315,31 +4929,7 @@
             "id": "c",
             "texte": "Dans la notice"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Sous les récipients"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/orientation/sous.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/cuisine/couvercle.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/orientation/dans.webp"
-              }
-            ]
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -7350,8 +4940,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Radio 20",
-    "scenario": "actualite",
-    "scene": "Le bruit",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/nourriture/difficile-b1__radio-20.mp3",
@@ -7377,13 +4965,7 @@
             "id": "c",
             "texte": "Tous les 3 ans en France"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Tous les ans partout dans le monde"
-          }
-        }
+        ]
       },
       {
         "enonce": "Combien de Français fument ?",
@@ -7404,13 +4986,7 @@
             "texte": "Moins de la moitié",
             "correct": true
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Moins de la moitié"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quel est le but de cette journée ?",
@@ -7431,13 +5007,7 @@
             "id": "c",
             "texte": "Dénoncer l'industrie du tabac"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Informer les gens qui fument"
-          }
-        }
+        ]
       },
       {
         "enonce": "Qu'est-ce qui est le plus difficile?",
@@ -7458,13 +5028,7 @@
             "id": "c",
             "texte": "Se protéger des fumeurs"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Ne pas recommencer"
-          }
-        }
+        ]
       },
       {
         "enonce": "Que faut-il éviter de faire pour ne pas recommencer à fumer ?",
@@ -7485,13 +5049,7 @@
             "id": "c",
             "texte": "De fréquenter des personnes qui fument"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "De sortir, d'aller à des fêtes"
-          }
-        }
+        ]
       },
       {
         "enonce": "L'arrêt du tabac est…",
@@ -7512,13 +5070,7 @@
             "texte": "Lié à la psychologie et à la dépendance",
             "correct": true
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Lié à la psychologie et à la dépendance"
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -7529,8 +5081,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Radio 24",
-    "scenario": "actualite",
-    "scene": "La restauration rapide",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/nourriture/difficile-b1__radio-24.mp3",
@@ -7556,13 +5106,7 @@
             "id": "c",
             "texte": "Scénariste de dessins animés"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Auteur de bandes dessinées"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quel avantage offre cette profession ?",
@@ -7583,13 +5127,7 @@
             "id": "c",
             "texte": "Ne jamais voyager"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 2,
-            "reponse_modele": "Créer ses propres univers et travailler chez soi"
-          }
-        }
+        ]
       },
       {
         "enonce": "Qu'est-ce que Hub essaie de faire ?",
@@ -7610,13 +5148,7 @@
             "texte": "Travailler avec des artistes reconnus",
             "correct": true
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Travailler avec des artistes reconnus"
-          }
-        }
+        ]
       },
       {
         "enonce": "Sur quel projet Hub travaille-t-il ?",
@@ -7637,31 +5169,7 @@
             "id": "c",
             "texte": "Un film d'animation"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Un album de science-fiction"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/loisirs/album.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/metiers/policier.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/ville/cinema.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Pourquoi Hub apprécie-t-il les bandes dessinées franco-belges ?",
@@ -7682,13 +5190,7 @@
             "id": "c",
             "texte": "Parce qu'elles ne coûtent rien"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 2,
-            "reponse_modele": "Parce qu'elles mélangent art et littérature"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quel genre d'album Hub prépare-t-il ?",
@@ -7709,13 +5211,7 @@
             "id": "c",
             "texte": "Romance"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Science-fiction"
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -7726,8 +5222,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Radio 31",
-    "scenario": "maison",
-    "scene": "Les repas de la semaine",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/nourriture/difficile-b1__radio-31.mp3",
@@ -7753,13 +5247,7 @@
             "id": "c",
             "texte": "3 places"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "2 places"
-          }
-        }
+        ]
       },
       {
         "enonce": "Vous pouvez gagner des places de…",
@@ -7780,31 +5268,7 @@
             "texte": "Concert",
             "correct": true
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Concert"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/ville/theatre.webp"
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/ville/cinema.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/musique/concert.webp",
-                "correct": true
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Que devez-vous faire pour gagner ?",
@@ -7825,13 +5289,7 @@
             "id": "c",
             "texte": "Envoyer un SMS"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Téléphoner"
-          }
-        }
+        ]
       },
       {
         "enonce": "Jusqu'à quelle heure pouvez-vous gagner ?",
@@ -7852,31 +5310,7 @@
             "id": "c",
             "texte": "18 h"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Midi"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/heure-horloge/dix-heures.webp"
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/heure-horloge/midi.webp",
-                "correct": true
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/heure-horloge/dix-huit-heures.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Quelle radio organise le jeu ?",
@@ -7897,13 +5331,7 @@
             "id": "c",
             "texte": "Radio France"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Radio June"
-          }
-        }
+        ]
       },
       {
         "enonce": "De quel artiste entendez-vous une chanson ?",
@@ -7924,13 +5352,7 @@
             "id": "c",
             "texte": "Tandem"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Maddo"
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -7941,8 +5363,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Radio 6",
-    "scenario": "actualite",
-    "scene": "Les insectes comestibles",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/nourriture/difficile-b1__radio-6.mp3",
@@ -7968,13 +5388,7 @@
             "id": "c",
             "texte": "Plus de 13 500"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Plus de 1 350"
-          }
-        }
+        ]
       },
       {
         "enonce": "Dans combien de pays mange-t-on des insectes ?",
@@ -7995,13 +5409,7 @@
             "id": "c",
             "texte": "Un millier"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Une centaine"
-          }
-        }
+        ]
       },
       {
         "enonce": "Où les recherches sur les insectes sont-elles les plus avancées ?",
@@ -8022,31 +5430,7 @@
             "id": "c",
             "texte": "Au Canada"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "En Thaïlande"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/pays/thaïlande.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/pays/france.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/pays/canada.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Quelle organisation est mentionnée ?",
@@ -8067,13 +5451,7 @@
             "id": "c",
             "texte": "L'OMS"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "La FAO"
-          }
-        }
+        ]
       },
       {
         "enonce": "Pourquoi la FAO encourage-t-elle les insectes ?",
@@ -8094,13 +5472,7 @@
             "id": "c",
             "texte": "Pour exporter"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Pour ne pas tout miser sur la viande"
-          }
-        }
+        ]
       },
       {
         "enonce": "Comment obtient-on la plupart de ces insectes ?",
@@ -8121,13 +5493,7 @@
             "id": "c",
             "texte": "En les important"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "En les ramassant à l'état sauvage"
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -8138,8 +5504,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Conversation 13",
-    "scenario": "loisirs",
-    "scene": "Le livre photo",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/objets/difficile-b1__conversation-13.mp3",
@@ -8165,13 +5529,7 @@
             "id": "c",
             "texte": "Elle adore la culture bretonne"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Elle aime l'océan"
-          }
-        }
+        ]
       },
       {
         "enonce": "Pourquoi l'eau de l'océan est comme l'eau de Polynésie ?",
@@ -8192,13 +5550,7 @@
             "id": "c",
             "texte": "Il y a autant de vagues"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Elle a la même couleur"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quelle activité aime particulièrement Erwan ?",
@@ -8219,13 +5571,7 @@
             "id": "c",
             "texte": "Il aime visiter des monuments en ville"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Il aime se promener au bord de l'océan"
-          }
-        }
+        ]
       },
       {
         "enonce": "Qu'est-ce que Louise peut visiter dans la ville ? (Plusieurs réponses possibles.)",
@@ -8246,31 +5592,7 @@
             "id": "c",
             "texte": "Un musée d'art moderne"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "La cathédrale et la vieille ville"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/ville/stade.webp"
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/ville/ville.webp",
-                "correct": true
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/ville/musee.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Que vont goûter Erwan et Louise pendant ce séjour ?",
@@ -8291,31 +5613,7 @@
             "id": "c",
             "texte": "Des bonbons bretons"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Des gâteaux et pâtisseries bretons"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/aliments/poisson.webp"
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/ville/patisserie.webp",
-                "correct": true
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/desserts/bonbon.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Pourquoi est-il facile de trouver des cadeaux pour la famille et les amis ?",
@@ -8336,31 +5634,7 @@
             "id": "c",
             "texte": "Les marchés sont ouverts la nuit"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 2,
-            "reponse_modele": "Il y a des boutiques de souvenirs partout"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/argent-administration/prix.webp"
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/ville/boutique.webp",
-                "correct": true
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/ville/marché.webp"
-              }
-            ]
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -8371,8 +5645,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Radio 22",
-    "scenario": "actualite",
-    "scene": "Le smartphone",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/objets/difficile-b1__radio-22.mp3",
@@ -8398,13 +5670,7 @@
             "texte": "De personnes qui sont seules",
             "correct": true
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "De personnes qui sont seules"
-          }
-        }
+        ]
       },
       {
         "enonce": "Que permet la complicité avec un animal ?",
@@ -8425,13 +5691,7 @@
             "id": "c",
             "texte": "D'éviter l'école"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "De se confier sans craindre le jugement"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quelle est la différence entre l'animal et l'homme ?",
@@ -8452,13 +5712,7 @@
             "texte": "L'animal ne donne pas d'appréciation",
             "correct": true
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "L'animal ne donne pas d'appréciation"
-          }
-        }
+        ]
       },
       {
         "enonce": "Qu'est-ce qui aide à se concentrer ?",
@@ -8479,13 +5733,7 @@
             "id": "c",
             "texte": "Caresser un animal"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Communiquer avec un animal"
-          }
-        }
+        ]
       },
       {
         "enonce": "Citez deux avantages de la compagnie d'un animal pour les enfants.",
@@ -8506,13 +5754,7 @@
             "id": "c",
             "texte": "Vitesse et force"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Confiance en soi et calme"
-          }
-        }
+        ]
       },
       {
         "enonce": "Avec quel animal la zoothérapie fonctionne le mieux ?",
@@ -8533,31 +5775,7 @@
             "texte": "Avec n'importe quel animal",
             "correct": true
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Avec n'importe quel animal"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/animaux-ferme-compagnie/chien.webp"
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/animaux-ferme-compagnie/chat.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/animaux-ferme-compagnie/animal.webp",
-                "correct": true
-              }
-            ]
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -8568,8 +5786,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Annonce 30",
-    "scenario": "loisirs",
-    "scene": "Au cinéma",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/presenter/difficile-b1__annonce-30.mp3",
@@ -8595,31 +5811,7 @@
             "id": "c",
             "texte": "Un musée"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Un cinéma"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/ville/cinema.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/ville/theatre.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/ville/musee.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Jusqu'à quelle heure le cinéma est-il ouvert ?",
@@ -8640,31 +5832,7 @@
             "id": "c",
             "texte": "À 20 h"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "À minuit"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/heure-horloge/vingt-deux-heures.webp"
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/heure-horloge/minuit.webp",
-                "correct": true
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/heure-horloge/vingt-heures.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Quel type de film est Hors norme ?",
@@ -8685,13 +5853,7 @@
             "id": "c",
             "texte": "Un dessin animé"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Une comédie"
-          }
-        }
+        ]
       },
       {
         "enonce": "De quoi parle le film Hors norme ?",
@@ -8712,13 +5874,7 @@
             "id": "c",
             "texte": "D'une guerre"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "D'enfants et adolescents autistes"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quel est le titre de la pièce qu'Edmond écrit ?",
@@ -8739,13 +5895,7 @@
             "id": "c",
             "texte": "Phèdre"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Cyrano de Bergerac"
-          }
-        }
+        ]
       },
       {
         "enonce": "Dans Une sirène à Paris, qui est Lula ?",
@@ -8766,13 +5916,7 @@
             "id": "c",
             "texte": "Une professeure"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Une sirène"
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -8783,8 +5927,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Conversation 1",
-    "scenario": "ecole",
-    "scene": "Le nouvel élève",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/presenter/difficile-b1__conversation-1.mp3",
@@ -8810,13 +5952,7 @@
             "id": "c",
             "texte": "À la fin de l'année"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "En cours d'année"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quelle est la passion d'Antony ?",
@@ -8837,13 +5973,7 @@
             "id": "c",
             "texte": "Le sport"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Le rap"
-          }
-        }
+        ]
       },
       {
         "enonce": "Avant son déménagement, où habitait Antony ?",
@@ -8864,31 +5994,7 @@
             "id": "c",
             "texte": "Dans un petit village"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Dans une grande ville à l'étranger"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/ville/ville.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/nature/campagne.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/orientation/dans.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Citez deux avantages du cours de musique, d'après Lucy.",
@@ -8909,31 +6015,7 @@
             "id": "c",
             "texte": "Une salle silencieuse et des devoirs"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 2,
-            "reponse_modele": "Des instruments variés et de vrais concerts"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/musique/instruments.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/ecole-bureau/examen.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/ecole-bureau/devoirs.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "La radio émet…",
@@ -8954,31 +6036,7 @@
             "texte": "Au lycée et dans la ville",
             "correct": true
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Au lycée et dans la ville"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/orientation/dans.webp"
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/technologie/internet.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/ville/ville.webp",
-                "correct": true
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Quel métier exerce le père de Lucy ?",
@@ -8999,13 +6057,7 @@
             "id": "c",
             "texte": "Directeur de lycée"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Rappeur célèbre"
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -9016,8 +6068,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Conversation 14",
-    "scenario": "maison",
-    "scene": "Les plats préférés",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/presenter/difficile-b1__conversation-14.mp3",
@@ -9043,31 +6093,7 @@
             "texte": "Son premier jour d'école",
             "correct": true
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Son premier jour d'école"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/animaux-sauvages/ours.webp"
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/sports/sportive.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/ville/école.webp",
-                "correct": true
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Pourquoi Léa préférait avoir madame Gautier en histoire ?",
@@ -9088,13 +6114,7 @@
             "id": "c",
             "texte": "Elle fait plus d'activités"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Elle est moins sévère"
-          }
-        }
+        ]
       },
       {
         "enonce": "Léa a retrouvé…",
@@ -9115,13 +6135,7 @@
             "texte": "Tous ses amis sauf un",
             "correct": true
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Tous ses amis sauf un"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quel sport collectif Léa pratique-t-elle en cours de sport ?",
@@ -9142,31 +6156,7 @@
             "id": "c",
             "texte": "De la natation"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Du basket"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/sports/football.webp"
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/sports/basket.webp",
-                "correct": true
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/sports/natation.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Léa a invité Sarah à…",
@@ -9187,31 +6177,7 @@
             "id": "c",
             "texte": "Venir chez elle après l'école"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Manger à sa table à midi"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/nature/montagne.webp"
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/actions/manger.webp",
-                "correct": true
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/ville/école.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Pourquoi Sarah a-t-elle beaucoup voyagé ?",
@@ -9232,13 +6198,7 @@
             "id": "c",
             "texte": "Elle a de la famille à l'étranger"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 2,
-            "reponse_modele": "Ses parents changent de pays pour le travail"
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -9249,8 +6209,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Conversation 18",
-    "scenario": "vie-quotidienne",
-    "scene": "Les pièces de collection",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/presenter/difficile-b1__conversation-18.mp3",
@@ -9276,13 +6234,7 @@
             "id": "c",
             "texte": "50 €"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "2 000 €"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quelle pièce allemande de 2008 vaut environ 50 € ?",
@@ -9303,13 +6255,7 @@
             "id": "c",
             "texte": "Une pièce de 1 euro"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Une pièce sans carte de l'Europe"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quelle pièce belge de 2005 est recherchée ?",
@@ -9330,13 +6276,7 @@
             "id": "c",
             "texte": "Celle pour l'euro 2002"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Celle pour la réouverture de l'Atomium"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quel côté de la pièce varie selon les pays ?",
@@ -9357,13 +6297,7 @@
             "id": "c",
             "texte": "Aucun côté"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Le côté face"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quel est le côté commun à toutes les pièces de 2 € ?",
@@ -9384,13 +6318,7 @@
             "id": "c",
             "texte": "Le drapeau national"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Le 2 avec la carte de l'Europe"
-          }
-        }
+        ]
       },
       {
         "enonce": "Pourquoi les pièces de Saint-Marin sont recherchées ?",
@@ -9411,13 +6339,7 @@
             "id": "c",
             "texte": "Elles datent de 1970"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Ce sont des éditions limitées"
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -9428,8 +6350,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Radio 15",
-    "scenario": "radio",
-    "scene": "L’interview d’artiste",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/presenter/difficile-b1__radio-15.mp3",
@@ -9455,13 +6375,7 @@
             "id": "c",
             "texte": "2 ans"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "2 mois"
-          }
-        }
+        ]
       },
       {
         "enonce": "Combien de titres compte le nouvel album de M. Pokora ?",
@@ -9482,13 +6396,7 @@
             "id": "c",
             "texte": "20 titres"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "16 titres"
-          }
-        }
+        ]
       },
       {
         "enonce": "L'idée de son nouvel album lui est venue…",
@@ -9509,31 +6417,7 @@
             "id": "c",
             "texte": "En lisant une bande dessinée de super-héros"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "En regardant la télévision"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/voyage/voyage.webp"
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/technologie/télévision.webp",
-                "correct": true
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/loisirs/dessin.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Citez deux effets spéciaux présents dans le concert.",
@@ -9554,13 +6438,7 @@
             "id": "c",
             "texte": "Fumée et projecteurs seulement"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Feux d'artifice et lasers"
-          }
-        }
+        ]
       },
       {
         "enonce": "Qu'est-ce qui manquait à M. Pokora ?",
@@ -9581,31 +6459,7 @@
             "id": "c",
             "texte": "Les films futuristes"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "La danse"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/loisirs/danse.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/ville/theatre.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/ville/cinema.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Dans l'album Pyramide, M. Pokora…",
@@ -9626,13 +6480,7 @@
             "id": "c",
             "texte": "Parle de la vie des chanteurs"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Parle de lui"
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -9643,8 +6491,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Radio 23",
-    "scenario": "radio",
-    "scene": "La critique de film",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/presenter/difficile-b1__radio-23.mp3",
@@ -9670,13 +6516,7 @@
             "id": "c",
             "texte": "L'indifférence des consommateurs à la manipulation des aliments"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 2,
-            "reponse_modele": "La transformation des aliments par les industriels"
-          }
-        }
+        ]
       },
       {
         "enonce": "« Le goût s'invente dans des éprouvettes » signifie que…",
@@ -9697,13 +6537,7 @@
             "id": "c",
             "texte": "On apprend le goût aux enfants dès leur naissance"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 2,
-            "reponse_modele": "Le goût des aliments est de plus en plus artificiel"
-          }
-        }
+        ]
       },
       {
         "enonce": "Pourquoi ajoute-t-on du sucre dans les produits industriels ?",
@@ -9724,31 +6558,7 @@
             "id": "c",
             "texte": "Pour que les aliments soient moins acides"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 2,
-            "reponse_modele": "Pour que les gens aient toujours envie de les manger"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/actions/manger.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/aliments/sucre.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/aliments/aliments.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "On transforme le goût en ajoutant du sucre mais aussi en ajoutant quels éléments ?",
@@ -9769,13 +6579,7 @@
             "id": "c",
             "texte": "Des vitamines uniquement"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 2,
-            "reponse_modele": "Du sel, des matières grasses et des arômes"
-          }
-        }
+        ]
       },
       {
         "enonce": "Que risque-t-on si on mange trop d'aliments transformés ?",
@@ -9796,13 +6600,7 @@
             "id": "c",
             "texte": "De devenir plus sportif"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 2,
-            "reponse_modele": "Des problèmes de santé comme le surpoids"
-          }
-        }
+        ]
       },
       {
         "enonce": "Que font les consommateurs pour résister à ce phénomène ?",
@@ -9823,13 +6621,7 @@
             "id": "c",
             "texte": "Ils font un régime"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Ils achètent des produits biologiques"
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -9840,8 +6632,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Radio 29",
-    "scenario": "actualite",
-    "scene": "Les cabines téléphoniques",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/presenter/difficile-b1__radio-29.mp3",
@@ -9867,13 +6657,7 @@
             "texte": "Dans un studio de télévision",
             "correct": true
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Dans un studio de télévision"
-          }
-        }
+        ]
       },
       {
         "enonce": "Pourquoi Anne-Laure a choisi d'être styliste ?",
@@ -9894,31 +6678,7 @@
             "id": "c",
             "texte": "Parce qu'elle regardait souvent des défilés"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 2,
-            "reponse_modele": "Parce qu'elle a toujours aimé faire des vêtements"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/famille-personnes/mere.webp"
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/vetements/vetements.webp",
-                "correct": true
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/meteo/vent.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Qu'est-ce qui a aidé Anne-Laure dans sa carrière ?",
@@ -9939,13 +6699,7 @@
             "texte": "Ses années d'apprentissage chez une styliste",
             "correct": true
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 2,
-            "reponse_modele": "Ses années d'apprentissage chez une styliste"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quelle est la différence entre un styliste et un couturier ?",
@@ -9966,13 +6720,7 @@
             "texte": "Le styliste est un artiste plus libre de créer",
             "correct": true
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 2,
-            "reponse_modele": "Le styliste est un artiste plus libre de créer"
-          }
-        }
+        ]
       },
       {
         "enonce": "Anne-Laure fait des expositions et des défilés pour…",
@@ -9993,13 +6741,7 @@
             "id": "c",
             "texte": "Copier ce que font les autres"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Faire connaître son travail"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quelles sont les conséquences de ses défilés ?",
@@ -10020,13 +6762,7 @@
             "id": "c",
             "texte": "D'autres créateurs lui demandent de collaborer"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Les personnes lui passent des commandes"
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -10037,8 +6773,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Radio 9",
-    "scenario": "magasins",
-    "scene": "Au supermarché",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/presenter/difficile-b1__radio-9.mp3",
@@ -10064,31 +6798,7 @@
             "id": "c",
             "texte": "Un produit importé"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 2,
-            "reponse_modele": "L'origine et la qualité dans une zone géographique"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/orientation/dans.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/argent-administration/prix.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/maison/porte.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Que signifie AOP ?",
@@ -10109,13 +6819,7 @@
             "id": "c",
             "texte": "Association des producteurs"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Appellation d'origine protégée"
-          }
-        }
+        ]
       },
       {
         "enonce": "Que certifie le logo STG ?",
@@ -10136,13 +6840,7 @@
             "id": "c",
             "texte": "Un label rouge"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Une spécialité traditionnelle garantie"
-          }
-        }
+        ]
       },
       {
         "enonce": "Que concerne l'IGP ?",
@@ -10163,13 +6861,7 @@
             "id": "c",
             "texte": "Les produits surgelés"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Des aliments liés au lieu d'origine"
-          }
-        }
+        ]
       },
       {
         "enonce": "Que garantissent les logos bio européen et AB ?",
@@ -10190,13 +6882,7 @@
             "id": "c",
             "texte": "Un emballage recyclable seul"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 2,
-            "reponse_modele": "Une production respectueuse de l'environnement"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quel label couronne des produits de qualité supérieure sans appellation d'origine ?",
@@ -10217,13 +6903,7 @@
             "id": "c",
             "texte": "STG"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Label rouge"
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -10234,8 +6914,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Conversation 10",
-    "scenario": "transports",
-    "scene": "La voiture",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/transports/difficile-b1__conversation-10.mp3",
@@ -10261,13 +6939,7 @@
             "id": "c",
             "texte": "Des professeurs"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Des notes de Loïc"
-          }
-        }
+        ]
       },
       {
         "enonce": "De combien de points Loïc s'est-il amélioré en anglais ?",
@@ -10288,13 +6960,7 @@
             "id": "c",
             "texte": "16 points"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "7 points"
-          }
-        }
+        ]
       },
       {
         "enonce": "En anglais, Loïc…",
@@ -10315,13 +6981,7 @@
             "id": "c",
             "texte": "A de mauvaises notes"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "S'est amélioré"
-          }
-        }
+        ]
       },
       {
         "enonce": "Pourquoi Loïc explique-t-il ses mauvaises notes en physique ?",
@@ -10342,13 +7002,7 @@
             "id": "c",
             "texte": "Il n'a pas révisé"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Le professeur est très sévère"
-          }
-        }
+        ]
       },
       {
         "enonce": "Comment est le professeur de physique, d'après Loïc ?",
@@ -10369,13 +7023,7 @@
             "id": "c",
             "texte": "Injuste"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Sévère"
-          }
-        }
+        ]
       },
       {
         "enonce": "Qu'est-ce que la mère pense d'abord du voisin de Loïc en physique ?",
@@ -10396,13 +7044,7 @@
             "id": "c",
             "texte": "Qu'il est en retard"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Qu'ils n'écoutent pas le professeur"
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -10413,8 +7055,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Conversation 9",
-    "scenario": "lieux-publics",
-    "scene": "La prévention des vols",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/transports/difficile-b1__conversation-9.mp3",
@@ -10440,13 +7080,7 @@
             "texte": "Se sont retrouvés par hasard",
             "correct": true
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Se sont retrouvés par hasard"
-          }
-        }
+        ]
       },
       {
         "enonce": "Pourquoi Sophie est-elle venue au concert ?",
@@ -10467,13 +7101,7 @@
             "id": "c",
             "texte": "Pour rencontrer Tom"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Pour accompagner sa sœur"
-          }
-        }
+        ]
       },
       {
         "enonce": "Sophie…",
@@ -10494,13 +7122,7 @@
             "id": "c",
             "texte": "Est sortie avant la fin du concert"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "N'a pas aimé le concert"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quel genre musical Tom adore-t-il ?",
@@ -10521,13 +7143,7 @@
             "id": "c",
             "texte": "La chanson romantique"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "L'électro punk"
-          }
-        }
+        ]
       },
       {
         "enonce": "Tom trouve que ce groupe est…",
@@ -10548,13 +7164,7 @@
             "texte": "Unique",
             "correct": true
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Unique"
-          }
-        }
+        ]
       },
       {
         "enonce": "Qu'est-ce que Sophie aime dans le festival ? (Plusieurs éléments possibles.)",
@@ -10575,13 +7185,7 @@
             "id": "c",
             "texte": "Les titres ridicules des chansons"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 2,
-            "reponse_modele": "Le lieu au bord du lac et les différentes scènes"
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -10592,8 +7196,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Radio 14",
-    "scenario": "transports",
-    "scene": "Dans le train",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/transports/difficile-b1__radio-14.mp3",
@@ -10619,31 +7221,7 @@
             "id": "c",
             "texte": "Neigeux"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Pluvieux"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/meteo/pluie.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/meteo/soleil.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/meteo/neige.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Audio 1 — Où y aura-t-il quelques rayons de soleil ?",
@@ -10664,13 +7242,7 @@
             "id": "c",
             "texte": "À l'est"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Au sud"
-          }
-        }
+        ]
       },
       {
         "enonce": "Audio 1 — Quel temps est annoncé la semaine prochaine ?",
@@ -10691,31 +7263,7 @@
             "id": "c",
             "texte": "Neigeux"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Très beau, températures d'été"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/meteo/température.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/meteo/pluie.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/meteo/neige.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Audio 2 — Quelle série est mentionnée ?",
@@ -10736,13 +7284,7 @@
             "id": "c",
             "texte": "Astérix et Obélix"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "La Casa de Papel"
-          }
-        }
+        ]
       },
       {
         "enonce": "Audio 2 — À quelle heure les acteurs feront-ils des photos ?",
@@ -10763,31 +7305,7 @@
             "id": "c",
             "texte": "De 18 h à 20 h"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "De 14 h à 16 h"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/heure-horloge/quatorze-heures.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/heure-horloge/dix-heures.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/heure-horloge/dix-huit-heures.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Audio 3 — Quel problème dans le métro parisien ?",
@@ -10808,31 +7326,7 @@
             "id": "c",
             "texte": "Des travaux"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Une grève"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/autre/greve.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/corps/dent.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/ville/travaux.webp"
-              }
-            ]
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -10843,8 +7337,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Radio 25",
-    "scenario": "transports",
-    "scene": "Le vélo",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/transports/difficile-b1__radio-25.mp3",
@@ -10870,13 +7362,7 @@
             "id": "c",
             "texte": "Des progrès de la médecine dans ce domaine"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 2,
-            "reponse_modele": "Du problème de surpoids et des solutions possibles"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quel est le métier de l'invitée ?",
@@ -10897,13 +7383,7 @@
             "id": "c",
             "texte": "Cuisinière"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Spécialiste en nutrition"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quelles sont les trois causes du surpoids d'après la professeure Haldig ?",
@@ -10924,13 +7404,7 @@
             "id": "c",
             "texte": "Manque de sommeil seulement"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 2,
-            "reponse_modele": "Alimentation riche, manque d'activité et stress"
-          }
-        }
+        ]
       },
       {
         "enonce": "Actuellement, où observe-t-on une croissance de personnes en surpoids ?",
@@ -10951,13 +7425,7 @@
             "id": "c",
             "texte": "Seulement chez les enfants"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Dans de nombreux pays en développement"
-          }
-        }
+        ]
       },
       {
         "enonce": "À Ouagadougou, des personnes sont en surpoids à cause…",
@@ -10978,13 +7446,7 @@
             "texte": "D'un changement de consommation alimentaire",
             "correct": true
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 2,
-            "reponse_modele": "D'un changement de consommation alimentaire"
-          }
-        }
+        ]
       },
       {
         "enonce": "Les régimes pour le grand public sont…",
@@ -11005,13 +7467,7 @@
             "texte": "Presque tous inefficaces",
             "correct": true
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Presque tous inefficaces"
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -11022,8 +7478,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Radio 8",
-    "scenario": "loisirs",
-    "scene": "Le buffet de la gare",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/transports/difficile-b1__radio-8.mp3",
@@ -11049,13 +7503,7 @@
             "id": "c",
             "texte": "Le pont du Gard"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Le Train Bleu à la Gare de Lyon"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quand le buffet a-t-il été inauguré ?",
@@ -11076,13 +7524,7 @@
             "id": "c",
             "texte": "En 1900"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Le 7 avril 1901"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quel président l'a inauguré ?",
@@ -11103,13 +7545,7 @@
             "id": "c",
             "texte": "Émile Zola"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Émile Loubet"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quelles trois villes figurent sur les plafonds ?",
@@ -11130,13 +7566,7 @@
             "id": "c",
             "texte": "Lyon, Lille et Toulouse"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Paris, Lyon et Marseille"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quand le buffet a-t-il été rebaptisé Train Bleu ?",
@@ -11157,13 +7587,7 @@
             "id": "c",
             "texte": "En 1972"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "En 1973"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quelle compagnie ferroviaire aménageait le buffet ?",
@@ -11184,13 +7608,7 @@
             "id": "c",
             "texte": "La RATP"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "La Compagnie PLM"
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -11201,8 +7619,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Radio 5",
-    "scenario": "travail",
-    "scene": "La formation professionnelle",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/travail/difficile-b1__radio-5.mp3",
@@ -11228,13 +7644,7 @@
             "id": "c",
             "texte": "Plus de 5 000"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Plus de 500 000"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quand le Grenelle de l'environnement a-t-il été lancé ?",
@@ -11255,13 +7665,7 @@
             "id": "c",
             "texte": "En 2019"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "En 2007"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quel conseil avant de choisir une formation ?",
@@ -11282,13 +7686,7 @@
             "id": "c",
             "texte": "Éviter le secteur"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Faire des stages ou du bénévolat"
-          }
-        }
+        ]
       },
       {
         "enonce": "Quel problème note le Cereq en 2011 ?",
@@ -11309,31 +7707,7 @@
             "id": "c",
             "texte": "Trop de postes"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Un décalage entre aspirations et emploi"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/orientation/entre.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/metiers/étudiant.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/ville/poste.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Quel exemple de métier environnemental est cité ?",
@@ -11354,31 +7728,7 @@
             "id": "c",
             "texte": "Vendeur"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Agent de station d'épuration"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/ville/station.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/metiers/pilote.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/metiers/vendeur.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Où travaille-t-on souvent malgré l'image de nature ?",
@@ -11399,31 +7749,7 @@
             "id": "c",
             "texte": "En forêt"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Dans un bureau"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/ecole-bureau/bureau.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/nature/glacier.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/nature/forêt.webp"
-              }
-            ]
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -11434,8 +7760,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Conversation 17",
-    "scenario": "vie-quotidienne",
-    "scene": "Les vêtements d’occasion",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/vetements/difficile-b1__conversation-17.mp3",
@@ -11461,13 +7785,7 @@
             "id": "c",
             "texte": "Elle ne vend jamais"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "En ligne et en dépôt-vente"
-          }
-        }
+        ]
       },
       {
         "enonce": "Où Annie donne-t-elle ses vêtements ?",
@@ -11488,13 +7806,7 @@
             "id": "c",
             "texte": "À la déchèterie"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 2,
-            "reponse_modele": "Au Secours populaire et à la Croix-Rouge"
-          }
-        }
+        ]
       },
       {
         "enonce": "Où Chantal dépose-t-elle les vêtements usés ?",
@@ -11515,31 +7827,7 @@
             "id": "c",
             "texte": "À la poste"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Dans une borne de collecte"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/ecole-bureau/colle.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/metiers/boulanger.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/ville/poste.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Que préfère Annie plutôt que vendre ?",
@@ -11560,13 +7848,7 @@
             "id": "c",
             "texte": "Garder tout"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Donner"
-          }
-        }
+        ]
       },
       {
         "enonce": "À qui remet-elle des vêtements via le club de gym ?",
@@ -11587,13 +7869,7 @@
             "id": "c",
             "texte": "Au dépôt-vente"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "À Claude pour le Secours populaire"
-          }
-        }
+        ]
       },
       {
         "enonce": "Que deviennent les vêtements déposés en borne ?",
@@ -11614,13 +7890,7 @@
             "id": "c",
             "texte": "Ils sont exportés"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Ils sont recyclés"
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
@@ -11631,8 +7901,6 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Conversation 2",
-    "scenario": "loisirs",
-    "scene": "Le sport",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
       "audio": "/lib/audio/comprehension/vetements/difficile-b1__conversation-2.mp3",
@@ -11658,31 +7926,7 @@
             "id": "c",
             "texte": "Elle part étudier seule au Mexique"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 2,
-            "reponse_modele": "Elle part habiter au Mexique avec sa famille"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/voyage/valise.webp"
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/famille-personnes/famille.webp",
-                "correct": true
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/pays/mexique.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Pourquoi Ophélie devra-t-elle parler espagnol ?",
@@ -11703,13 +7947,7 @@
             "id": "c",
             "texte": "Pour améliorer ses notes en français"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 2,
-            "reponse_modele": "Pour communiquer avec les élèves mexicains"
-          }
-        }
+        ]
       },
       {
         "enonce": "Pourquoi est-ce qu'elle part ?",
@@ -11730,31 +7968,7 @@
             "id": "c",
             "texte": "Son père veut qu'elle étudie au Mexique"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Son père est envoyé par son entreprise"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/maison/prise.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/ecole-bureau/bureau.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/pays/mexique.webp"
-              }
-            ]
-          }
-        }
+        ]
       },
       {
         "enonce": "Comment Ophélie se sent-elle face au départ ?",
@@ -11775,13 +7989,7 @@
             "texte": "Contente de découvrir un nouveau pays et triste de quitter son amie",
             "correct": true
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 2,
-            "reponse_modele": "Contente de découvrir un nouveau pays et triste de quitter son amie"
-          }
-        }
+        ]
       },
       {
         "enonce": "Laura dit que c'est génial parce que…",
@@ -11802,13 +8010,7 @@
             "texte": "Elle va faire de nouvelles rencontres",
             "correct": true
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Elle va faire de nouvelles rencontres"
-          }
-        }
+        ]
       },
       {
         "enonce": "Pourquoi la mère ne part-elle pas en même temps que les autres ?",
@@ -11829,31 +8031,7 @@
             "id": "c",
             "texte": "Elle attend les vacances scolaires"
           }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 2,
-            "reponse_modele": "Elle ne peut pas quitter tout de suite son travail"
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/voyage/voyage.webp"
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/ecole-bureau/bureau.webp",
-                "correct": true
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/voyage/valise.webp"
-              }
-            ]
-          }
-        }
+        ]
       }
     ],
     "consigne_supplementaire": null
