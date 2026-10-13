@@ -535,9 +535,21 @@ function renderFields(
     item.layout === 'column-empty' ||
     item.layout === 'division-column'
   ) {
-    const checkSubOrder =
-      (exerciseType.includes('ex07') || exerciseType.includes('ex08')) &&
-      item.op === '−'
+    const isMulEx910 = (op: ArithOp) =>
+      (exerciseType.includes('ex09') || exerciseType.includes('ex10')) && op === '×'
+    const columnError = (op: ArithOp, a: number | undefined, b: number | undefined) => {
+      if (
+        (exerciseType.includes('ex07') || exerciseType.includes('ex08')) &&
+        op === '−' &&
+        typeof a === 'number' &&
+        typeof b === 'number' &&
+        a <= b
+      ) {
+        return 'Pour une soustraction, le premier nombre doit être plus grand que le second.'
+      }
+      return undefined
+    }
+    const clampB = (op: ArithOp, b: number) => (isMulEx910(op) && b > 99 ? 99 : b)
     return (
       <>
         <div className="libre-inline-triple is-op">
@@ -548,17 +560,16 @@ function renderFields(
             onCommit={(raw) => {
               const a = Number(raw.replace(',', '.'))
               if (!Number.isFinite(a)) return
-              const b = item.b
-              const badSub = checkSubOrder && typeof b === 'number' && a <= b
+              const op = (item.op ?? '+') as ArithOp
+              const b = typeof item.b === 'number' ? clampB(op, item.b) : item.b
               patch(index, {
                 ...item,
                 a,
-                libreError: badSub
-                  ? 'Pour une soustraction, le premier nombre doit être plus grand que le second.'
-                  : undefined,
+                ...(typeof b === 'number' ? { b } : {}),
+                libreError: columnError(op, a, typeof b === 'number' ? b : undefined),
                 prompt:
                   item.layout === 'column-empty' || item.blankOperands
-                    ? `${raw} ${item.op ?? '+'} ${item.b != null ? fmt(item.b) : ''}`
+                    ? `${raw} ${item.op ?? '+'} ${b != null ? fmt(b) : ''}`
                     : item.prompt,
               })
             }}
@@ -567,19 +578,14 @@ function renderFields(
             value={(item.op as string) ?? '+'}
             ariaLabel={`Opération ${index + 1}`}
             options={OPS.map((op) => ({ value: op, label: op }))}
-            onChange={(op) => {
-              const badSub =
-                (exerciseType.includes('ex07') || exerciseType.includes('ex08')) &&
-                op === '−' &&
-                typeof item.a === 'number' &&
-                typeof item.b === 'number' &&
-                item.a <= item.b
+            onChange={(opRaw) => {
+              const op = opRaw as ArithOp
+              const b = typeof item.b === 'number' ? clampB(op, item.b) : item.b
               patch(index, {
                 ...item,
-                op: op as ArithOp,
-                libreError: badSub
-                  ? 'Pour une soustraction, le premier nombre doit être plus grand que le second.'
-                  : undefined,
+                op,
+                ...(typeof b === 'number' ? { b } : {}),
+                libreError: columnError(op, item.a, typeof b === 'number' ? b : undefined),
               })
             }}
           />
@@ -588,19 +594,18 @@ function renderFields(
             value={item.b != null ? fmt(item.b) : ''}
             ariaLabel={`Operande B ${index + 1}`}
             onCommit={(raw) => {
-              const b = Number(raw.replace(',', '.'))
-              if (!Number.isFinite(b)) return
+              const parsed = Number(raw.replace(',', '.'))
+              if (!Number.isFinite(parsed)) return
+              const op = (item.op ?? '+') as ArithOp
+              const b = clampB(op, parsed)
               const a = item.a
-              const badSub = checkSubOrder && typeof a === 'number' && a <= b
               patch(index, {
                 ...item,
                 b,
-                libreError: badSub
-                  ? 'Pour une soustraction, le premier nombre doit être plus grand que le second.'
-                  : undefined,
+                libreError: columnError(op, typeof a === 'number' ? a : undefined, b),
                 prompt:
                   item.layout === 'column-empty' || item.blankOperands
-                    ? `${item.a != null ? fmt(item.a) : ''} ${item.op ?? '+'} ${raw}`
+                    ? `${item.a != null ? fmt(item.a) : ''} ${item.op ?? '+'} ${fmt(b)}`
                     : item.prompt,
               })
             }}

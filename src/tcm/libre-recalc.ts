@@ -128,7 +128,7 @@ function isCfrColSeven(exerciseType: string): boolean {
 
 function recalcColumn(item: MathItem, exerciseType = ''): MathItem {
   const a = typeof item.a === 'number' ? item.a : parseFrNumber(String(item.a ?? ''))
-  const b = typeof item.b === 'number' ? item.b : parseFrNumber(String(item.b ?? ''))
+  let b = typeof item.b === 'number' ? item.b : parseFrNumber(String(item.b ?? ''))
   const op = (item.op ?? '+') as ArithOp
   if (a == null || b == null) return { ...item, libreError: undefined }
   // Ex. 7–8 : soustraction — le 1er nombre doit être strictement plus grand.
@@ -144,6 +144,14 @@ function recalcColumn(item: MathItem, exerciseType = ''): MathItem {
       op,
       libreError: 'Pour une soustraction, le premier nombre doit être plus grand que le second.',
     }
+  }
+  // Ex. 9–10 × : le multiplicateur (2ᵉ nombre) ne dépasse pas 99.
+  if (
+    (exerciseType.includes('ex09') || exerciseType.includes('ex10')) &&
+    op === '×' &&
+    b > 99
+  ) {
+    b = 99
   }
   const result = computeOp(op, a, b)
   if (result == null || !Number.isFinite(result)) return item
