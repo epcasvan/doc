@@ -2,8 +2,10 @@
  * Éditeur libre TCM / TCM CFR / TCM CSC :
  * numérotation à gauche (couleur), champs à droite, traits (pas pastilles),
  * sélecteurs selon le type, sans libellé « Énoncé ».
+ * Corrigés en lecture seule (recalcul à la validation) ; nombres saisissables
+ * avec brouillon local (retour arrière OK ; vide → valeur précédente).
  */
-import type { ReactNode } from 'react'
+import { useEffect, useRef, useState, type ReactNode } from 'react'
 import type { ArithOp, MathItem } from '@/math/types'
 import { fmt } from '@/math/column-arith'
 import type { ShapeKind } from '@/components/math/FractionShape'
@@ -14,6 +16,7 @@ import {
   type SymRotation,
 } from '@/tcm-cfr/symetrie'
 import { fractionPartsFromItem, fractionTermFr } from '@/tcm/fraction-words'
+import { parseFrNumber } from '@/tcm/libre-parse'
 import {
   applyNamedFigure,
   NAMED_FIGURE_OPTIONS,
@@ -32,6 +35,29 @@ const FRAC_KINDS: { value: ShapeKind; label: string }[] = [
   { value: 'hexagon', label: 'hexagone' },
 ]
 
+/** Corrigé / réponse : cadre gris non modifiable. */
+function CorrigeBox({
+  value,
+  ariaLabel,
+  wide,
+  compact,
+}: {
+  value: string
+  ariaLabel: string
+  wide?: boolean
+  compact?: boolean
+}) {
+  return (
+    <div
+      className={`libre-corrige-box${wide ? ' is-wide' : ''}${compact ? ' is-num' : ''}`}
+      aria-label={ariaLabel}
+      role="status"
+    >
+      {value?.trim() ? value : '\u00a0'}
+    </div>
+  )
+}
+
 function LineInput({
   value,
   onChange,
@@ -44,17 +70,80 @@ function LineInput({
   onChange: (v: string) => void
   ariaLabel: string
   wide?: boolean
-  /** Champ réponse / corrigé : fond blanc. */
+  /** Corrigé : affichage gris, non éditable. */
   answer?: boolean
   compact?: boolean
 }) {
+  if (answer) {
+    return <CorrigeBox value={value} ariaLabel={ariaLabel} wide={wide} compact={compact} />
+  }
   return (
     <input
-      className={`libre-line-input${wide ? ' is-wide' : ''}${answer ? ' is-answer' : ''}${compact ? ' is-num' : ''}`}
+      className={`libre-line-input${wide ? ' is-wide' : ''}${compact ? ' is-num' : ''}`}
       type="text"
       value={value}
       aria-label={ariaLabel}
       onChange={(e) => onChange(e.target.value)}
+    />
+  )
+}
+
+/**
+ * Champ nombre : brouillon local (effacement / retour arrière possibles).
+ * Au blur / Entrée : si vide ou invalide → restaure la valeur précédente.
+ */
+function NumInput({
+  value,
+  onCommit,
+  ariaLabel,
+  compact,
+  wide,
+  requireNumber = true,
+}: {
+  value: string
+  onCommit: (next: string) => void
+  ariaLabel: string
+  compact?: boolean
+  wide?: boolean
+  /** Si true, refuse les textes non numériques (restaure). */
+  requireNumber?: boolean
+}) {
+  const [draft, setDraft] = useState(value)
+  const prevRef = useRef(value)
+
+  useEffect(() => {
+    setDraft(value)
+    prevRef.current = value
+  }, [value])
+
+  const finish = () => {
+    const trimmed = draft.trim()
+    if (!trimmed) {
+      setDraft(prevRef.current)
+      return
+    }
+    if (requireNumber && parseFrNumber(trimmed) == null) {
+      setDraft(prevRef.current)
+      return
+    }
+    onCommit(trimmed)
+  }
+
+  return (
+    <input
+      className={`libre-line-input${wide ? ' is-wide' : ''}${compact ? ' is-num' : ''}`}
+      type="text"
+      inputMode="decimal"
+      value={draft}
+      aria-label={ariaLabel}
+      onChange={(e) => setDraft(e.target.value)}
+      onBlur={finish}
+      onKeyDown={(e) => {
+        if (e.key === 'Enter') {
+          e.preventDefault()
+          ;(e.target as HTMLInputElement).blur()
+        }
+      }}
     />
   )
 }
@@ -78,15 +167,14 @@ function NumberListEditor({
     <div className="libre-number-list" role="group" aria-label={ariaLabel}>
       {list.map((v, i) => (
         <span key={i} className="libre-number-chip">
-          <input
-            className="libre-line-input is-num"
-            type="text"
+          <NumInput
+            compact
             value={v}
-            aria-label={`${ariaLabel} ${i + 1}`}
-            onChange={(e) => {
-              const next = [...list]
-              next[i] = e.target.value
-              onChange(next)
+            ariaLabel={`${ariaLabel} ${i + 1}`}
+            onCommit={(next) => {
+              const copy = [...list]
+              copy[i] = next
+              onChange(copy)
             }}
           />
           <button
@@ -178,7 +266,8 @@ export function TcmLibreEditor({
     <div className="quad-libre-block tcm-libre-editor">
       <b>Contenu de la fiche (mode libre)</b>
       <p className="type-hint muted">
-        Modifiez les valeurs puis validez (✓) : les réponses se recalculent automatiquement.
+        Modifiez les nombres puis validez (✓) : les corrigés (cadre gris) se recalculent seuls et
+        ne sont pas modifiables. Un champ nombre laissé vide retrouve sa valeur précédente.
       </p>
       <label className="libre-field is-line">
         <span>Consigne</span>
@@ -272,27 +361,22 @@ function renderFields(
   if (item.layout === 'compare') {
     return (
       <div className="libre-inline-triple is-compare">
-        <LineInput
+        <NumInput
           compact
           value={item.left ?? ''}
           ariaLabel={`Gauche ${index + 1}`}
-          onChange={(left) => patch(index, { ...item, left, prompt: left })}
+          onCommit={(left) => patch(index, { ...item, left, prompt: left })}
         />
-        <LineSelect
-          value={item.answer === '=' || item.answer === '<' || item.answer === '>' ? item.answer : '<'}
-          ariaLabel={`Signe ${index + 1}`}
-          options={[
-            { value: '<', label: '<' },
-            { value: '=', label: '=' },
-            { value: '>', label: '>' },
-          ]}
-          onChange={(answer) => patch(index, { ...item, answer })}
+        <CorrigeBox
+          compact
+          value={item.answer === '=' || item.answer === '<' || item.answer === '>' ? item.answer : '·'}
+          ariaLabel={`Corrigé signe ${index + 1}`}
         />
-        <LineInput
+        <NumInput
           compact
           value={item.right ?? ''}
           ariaLabel={`Droite ${index + 1}`}
-          onChange={(right) => patch(index, { ...item, right })}
+          onCommit={(right) => patch(index, { ...item, right })}
         />
       </div>
     )
@@ -302,10 +386,10 @@ function renderFields(
     return (
       <>
         <Field label="Nombre">
-          <LineInput
+          <NumInput
             value={item.prompt ?? ''}
             ariaLabel={`Nombre ${index + 1}`}
-            onChange={(prompt) => patch(index, { ...item, prompt })}
+            onCommit={(prompt) => patch(index, { ...item, prompt })}
           />
         </Field>
         <Field label="Corrigé">
@@ -329,15 +413,16 @@ function renderFields(
     return (
       <>
         <div className="libre-inline-triple is-op">
-          <LineInput
+          <NumInput
             compact
             value={item.a != null ? fmt(item.a) : ''}
             ariaLabel={`Operande A ${index + 1}`}
-            onChange={(raw) => {
+            onCommit={(raw) => {
               const a = Number(raw.replace(',', '.'))
+              if (!Number.isFinite(a)) return
               patch(index, {
                 ...item,
-                a: Number.isFinite(a) ? a : item.a,
+                a,
                 prompt:
                   item.layout === 'column-empty' || item.blankOperands
                     ? `${raw} ${item.op ?? '+'} ${item.b != null ? fmt(item.b) : ''}`
@@ -351,15 +436,16 @@ function renderFields(
             options={OPS.map((op) => ({ value: op, label: op }))}
             onChange={(op) => patch(index, { ...item, op: op as ArithOp })}
           />
-          <LineInput
+          <NumInput
             compact
             value={item.b != null ? fmt(item.b) : ''}
             ariaLabel={`Operande B ${index + 1}`}
-            onChange={(raw) => {
+            onCommit={(raw) => {
               const b = Number(raw.replace(',', '.'))
+              if (!Number.isFinite(b)) return
               patch(index, {
                 ...item,
-                b: Number.isFinite(b) ? b : item.b,
+                b,
                 prompt:
                   item.layout === 'column-empty' || item.blankOperands
                     ? `${item.a != null ? fmt(item.a) : ''} ${item.op ?? '+'} ${raw}`
@@ -399,11 +485,11 @@ function renderFields(
         </Field>
         <div className="libre-inline-triple">
           <Field label="Parts colorées (n)">
-            <LineInput
+            <NumInput
               value={String(fs.n)}
               ariaLabel={`Numérateur ${index + 1}`}
-              onChange={(raw) => {
-                const n = Math.max(1, Math.round(Number(raw)) || fs.n)
+              onCommit={(raw) => {
+                const n = Math.max(1, Math.round(Number(raw.replace(',', '.'))) || fs.n)
                 patch(index, {
                   ...item,
                   fracShape: { ...fs, n },
@@ -413,11 +499,11 @@ function renderFields(
             />
           </Field>
           <Field label="Parts totales (d)">
-            <LineInput
+            <NumInput
               value={String(fs.d)}
               ariaLabel={`Dénominateur ${index + 1}`}
-              onChange={(raw) => {
-                const d = Math.max(2, Math.round(Number(raw)) || fs.d)
+              onCommit={(raw) => {
+                const d = Math.max(2, Math.round(Number(raw.replace(',', '.'))) || fs.d)
                 patch(index, {
                   ...item,
                   fracShape: { ...fs, d },
@@ -557,17 +643,10 @@ function renderFields(
         {(item.propertyLines ?? []).map((line, li) => (
           <Field key={`prop-${li}`} label={line.label}>
             <LineInput
+              answer
               value={line.answer}
               ariaLabel={`${line.label} ${index + 1}`}
-              onChange={(answer) => {
-                const propertyLines = [...(item.propertyLines ?? [])]
-                propertyLines[li] = { ...line, answer }
-                patch(index, {
-                  ...item,
-                  propertyLines,
-                  answer: propertyLines.map((p) => p.answer).join(' ; '),
-                })
-              }}
+              onChange={() => {}}
             />
           </Field>
         ))}
@@ -581,10 +660,10 @@ function renderFields(
         {item.segments.map((seg, si) => (
           <div key={`seg-${si}`} className="libre-inline-triple">
             <Field label={`Segment ${String.fromCharCode(97 + si)}`}>
-              <LineInput
+              <NumInput
                 value={seg.display}
                 ariaLabel={`Longueur ${si + 1}`}
-                onChange={(display) => {
+                onCommit={(display) => {
                   const segments = item.segments!.map((s, j) =>
                     j === si ? { ...s, display } : s,
                   )
@@ -669,39 +748,37 @@ function renderFields(
       <>
         <div className="libre-inline-triple is-frac">
           <Field label="Numérateur">
-            <LineInput
+            <NumInput
               compact
               value={String(n)}
               ariaLabel={`Numérateur ${index + 1}`}
-              onChange={(raw) => {
+              onCommit={(raw) => {
                 const nn = Number(raw.replace(',', '.'))
-                applyNd(Number.isFinite(nn) ? nn : n, d)
+                if (!Number.isFinite(nn)) return
+                applyNd(nn, d)
               }}
             />
           </Field>
           <Field label="Dénominateur">
-            <LineInput
+            <NumInput
               compact
               value={String(d)}
               ariaLabel={`Dénominateur ${index + 1}`}
-              onChange={(raw) => {
+              onCommit={(raw) => {
                 const dd = Number(raw.replace(',', '.'))
-                applyNd(n, Number.isFinite(dd) ? dd : d)
+                if (!Number.isFinite(dd)) return
+                applyNd(n, dd)
               }}
             />
           </Field>
         </div>
         <Field label="Texte">
           <LineInput
+            answer
             wide
             value={term}
             ariaLabel={`Texte ${index + 1}`}
-            onChange={(texte) =>
-              patch(index, {
-                ...item,
-                prompt: `${texte.replace(/\s*=\s*$/, '').trim()} =`,
-              })
-            }
+            onChange={() => {}}
           />
         </Field>
         <Field label="Corrigé">
@@ -720,10 +797,10 @@ function renderFields(
     return (
       <div className="libre-inline-triple">
         <Field label="Valeur">
-          <LineInput
+          <NumInput
             value={item.convert.value}
             ariaLabel={`Valeur ${index + 1}`}
-            onChange={(value) =>
+            onCommit={(value) =>
               patch(index, { ...item, convert: { ...item.convert!, value } })
             }
           />
@@ -767,19 +844,19 @@ function renderFields(
     return (
       <div className="libre-inline-triple">
         <Field label="Numérateur">
-          <LineInput
+          <NumInput
             value={n}
             ariaLabel={`Numérateur ${index + 1}`}
-            onChange={(nn) =>
+            onCommit={(nn) =>
               patch(index, { ...item, prompt: `${nn}/${d} =` })
             }
           />
         </Field>
         <Field label="Dénominateur">
-          <LineInput
+          <NumInput
             value={d}
             ariaLabel={`Dénominateur ${index + 1}`}
-            onChange={(dd) =>
+            onCommit={(dd) =>
               patch(index, { ...item, prompt: `${n}/${dd} =` })
             }
           />
@@ -814,16 +891,17 @@ function renderFields(
           {item.figure === 'rectangle' ? (
             <div className="libre-inline-triple">
               <Field label="Longueur connue">
-                <LineInput
-                  value={dims.length != null ? fmt(dims.length) : dims.width != null ? '' : ''}
+                <NumInput
+                  value={dims.length != null ? fmt(dims.length) : ''}
                   ariaLabel={`Longueur ${index + 1}`}
-                  onChange={(raw) => {
+                  onCommit={(raw) => {
                     const length = Number(raw.replace(',', '.'))
+                    if (!Number.isFinite(length)) return
                     patch(index, {
                       ...item,
                       dims: {
                         ...dims,
-                        length: Number.isFinite(length) ? length : dims.length,
+                        length,
                         width: undefined,
                       },
                     })
@@ -831,16 +909,17 @@ function renderFields(
                 />
               </Field>
               <Field label="Largeur connue">
-                <LineInput
+                <NumInput
                   value={dims.width != null ? fmt(dims.width) : ''}
                   ariaLabel={`Largeur ${index + 1}`}
-                  onChange={(raw) => {
+                  onCommit={(raw) => {
                     const width = Number(raw.replace(',', '.'))
+                    if (!Number.isFinite(width)) return
                     patch(index, {
                       ...item,
                       dims: {
                         ...dims,
-                        width: Number.isFinite(width) ? width : dims.width,
+                        width,
                         length: undefined,
                       },
                     })
@@ -864,10 +943,10 @@ function renderFields(
       <>
         {item.figure === 'square' ? (
           <Field label="Côté">
-            <LineInput
+            <NumInput
               value={dims.side != null ? fmt(dims.side) : dims.length != null ? fmt(dims.length) : ''}
               ariaLabel={`Côté ${index + 1}`}
-              onChange={(raw) => {
+              onCommit={(raw) => {
                 const side = Number(raw.replace(',', '.'))
                 if (!Number.isFinite(side)) return
                 patch(index, { ...item, dims: { ...dims, side, length: side } })
@@ -878,27 +957,29 @@ function renderFields(
         {item.figure === 'rectangle' ? (
           <div className="libre-inline-triple">
             <Field label="Longueur">
-              <LineInput
+              <NumInput
                 value={dims.length != null ? fmt(dims.length) : ''}
                 ariaLabel={`Longueur ${index + 1}`}
-                onChange={(raw) => {
+                onCommit={(raw) => {
                   const length = Number(raw.replace(',', '.'))
+                  if (!Number.isFinite(length)) return
                   patch(index, {
                     ...item,
-                    dims: { ...dims, length: Number.isFinite(length) ? length : dims.length },
+                    dims: { ...dims, length },
                   })
                 }}
               />
             </Field>
             <Field label="Largeur">
-              <LineInput
+              <NumInput
                 value={dims.width != null ? fmt(dims.width) : ''}
                 ariaLabel={`Largeur ${index + 1}`}
-                onChange={(raw) => {
+                onCommit={(raw) => {
                   const width = Number(raw.replace(',', '.'))
+                  if (!Number.isFinite(width)) return
                   patch(index, {
                     ...item,
-                    dims: { ...dims, width: Number.isFinite(width) ? width : dims.width },
+                    dims: { ...dims, width },
                   })
                 }}
               />
@@ -909,14 +990,15 @@ function renderFields(
           <div className="libre-inline-triple">
             {(['a', 'b', 'c', 'height'] as const).map((key) => (
               <Field key={key} label={key === 'height' ? 'Hauteur h' : `Côté ${key}`}>
-                <LineInput
+                <NumInput
                   value={dims[key] != null ? fmt(Number(dims[key])) : ''}
                   ariaLabel={`${key} ${index + 1}`}
-                  onChange={(raw) => {
+                  onCommit={(raw) => {
                     const v = Number(raw.replace(',', '.'))
+                    if (!Number.isFinite(v)) return
                     patch(index, {
                       ...item,
-                      dims: { ...dims, [key]: Number.isFinite(v) ? v : dims[key] },
+                      dims: { ...dims, [key]: v },
                     })
                   }}
                 />
@@ -1018,10 +1100,10 @@ function renderFields(
               />
             </Field>
             <Field label="x">
-              <LineInput
+              <NumInput
                 value={String(m.x)}
                 ariaLabel={`x ${mi + 1}`}
-                onChange={(raw) => {
+                onCommit={(raw) => {
                   const x = Number(raw.replace(',', '.'))
                   if (!Number.isFinite(x)) return
                   const next = marks.map((p, j) => (j === mi ? { ...p, x } : p))
@@ -1030,10 +1112,10 @@ function renderFields(
               />
             </Field>
             <Field label="y">
-              <LineInput
+              <NumInput
                 value={String(m.y)}
                 ariaLabel={`y ${mi + 1}`}
-                onChange={(raw) => {
+                onCommit={(raw) => {
                   const y = Number(raw.replace(',', '.'))
                   if (!Number.isFinite(y)) return
                   const next = marks.map((p, j) => (j === mi ? { ...p, y } : p))
