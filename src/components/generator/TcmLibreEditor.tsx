@@ -840,7 +840,7 @@ function renderFields(
               <span className="libre-mul-sign" aria-hidden>
                 =
               </span>
-              <CorrigeBox compact value={item.answer ?? ''} ariaLabel={`Corrigé ${index + 1}`} />
+              <CorrigeBox value={item.answer ?? ''} ariaLabel={`Corrigé ${index + 1}`} />
             </>
           ) : null}
         </div>
