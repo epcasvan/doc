@@ -22,10 +22,14 @@ export type ProblemVarDef = {
 
 type ProblemSpec = {
   id: string
+  /** Libellé court pour la liste du mode libre. */
+  label: string
   varDefs: ProblemVarDef[]
   roll: (rng: Rng) => Record<string, number>
   build: (vars: Record<string, number>) => [ProblemPart, ProblemPart]
 }
+
+export type ProblemOption = { id: string; label: string }
 
 function money(n: number): string {
   return fmt(Math.round(n * 100) / 100)
@@ -49,6 +53,7 @@ function pickBillet(total: number): number {
 const EX14_SPECS: readonly ProblemSpec[] = [
   {
     id: 'nadia',
+    label: 'Nadia — magasin (riz, poulet, carottes)',
     varDefs: [
       v('budget', 'Budget (F)', 0),
       v('a', 'Riz (F)', 0),
@@ -97,6 +102,7 @@ const EX14_SPECS: readonly ProblemSpec[] = [
   },
   {
     id: 'omar',
+    label: 'Omar — boulangerie et bus',
     varDefs: [
       v('budget', 'Budget (F)', 0),
       v('pain', 'Pain (F)', 0),
@@ -140,6 +146,7 @@ const EX14_SPECS: readonly ProblemSpec[] = [
   },
   {
     id: 'lea',
+    label: 'Léa — vêtements (réduction)',
     varDefs: [
       v('budget', 'Budget (F)', 0),
       v('pull', 'Pull (F)', 0),
@@ -181,6 +188,7 @@ const EX14_SPECS: readonly ProblemSpec[] = [
   },
   {
     id: 'yanis',
+    label: 'Yanis — cahiers',
     varDefs: [
       v('n', 'Nombre de cahiers', 0),
       v('prix', 'Prix d’un cahier (F)', 0),
@@ -216,6 +224,7 @@ const EX14_SPECS: readonly ProblemSpec[] = [
   },
   {
     id: 'sara',
+    label: "Sara — épicerie (manque d'argent)",
     varDefs: [
       v('nLait', 'Briques de lait', 0),
       v('lait', 'Prix du lait (F)', 0),
@@ -255,6 +264,7 @@ const EX14_SPECS: readonly ProblemSpec[] = [
   },
   {
     id: 'cafe',
+    label: "Café — partage de l'addition",
     varDefs: [
       v('a', 'Boissons (F)', 0),
       v('b', 'Gâteaux (F)', 0),
@@ -289,6 +299,7 @@ const EX14_SPECS: readonly ProblemSpec[] = [
   },
   {
     id: 'hugo',
+    label: 'Hugo — pommes au marché',
     varDefs: [
       v('kg', 'Pommes (kg)', 0),
       v('prixKg', 'Prix au kilo (F)', 0),
@@ -324,6 +335,7 @@ const EX14_SPECS: readonly ProblemSpec[] = [
   },
   {
     id: 'ines',
+    label: 'Inès — librairie',
     varDefs: [
       v('budget', 'Budget (F)', 0),
       v('livre', 'Livre (F)', 0),
@@ -363,6 +375,7 @@ const EX14_SPECS: readonly ProblemSpec[] = [
   },
   {
     id: 'pizza',
+    label: 'Pizzas — commande et partage',
     varDefs: [
       v('n', 'Nombre de pizzas', 0),
       v('pizza', 'Prix d’une pizza (F)', 0),
@@ -397,6 +410,7 @@ const EX14_SPECS: readonly ProblemSpec[] = [
   },
   {
     id: 'sofia',
+    label: 'Sofia — trois articles',
     varDefs: [
       v('a', 'Article 1 (F)', 0),
       v('b', 'Article 2 (F)', 0),
@@ -437,6 +451,7 @@ const EX14_SPECS: readonly ProblemSpec[] = [
 const EX15_SPECS: readonly ProblemSpec[] = [
   {
     id: 'karim',
+    label: 'Karim — mécanicien (partage)',
     varDefs: [v('rate', 'Salaire (F/h)', 0), v('hours', 'Heures', 0)],
     roll: (rng) => ({ rate: int(rng, 6, 12), hours: pick(rng, [4, 8]) }),
     build: (vars) => {
@@ -463,6 +478,7 @@ const EX15_SPECS: readonly ProblemSpec[] = [
   },
   {
     id: 'maya',
+    label: 'Maya — magasin de vêtements',
     varDefs: [v('rate', 'Salaire (F/h)', 0), v('hours', 'Heures', 0)],
     roll: (rng) => ({ rate: int(rng, 8, 15), hours: pick(rng, [4, 6, 8]) }),
     build: (vars) => {
@@ -489,6 +505,7 @@ const EX15_SPECS: readonly ProblemSpec[] = [
   },
   {
     id: 'tom',
+    label: 'Tom — jours de travail et repas',
     varDefs: [
       v('days', 'Jours', 0),
       v('perDay', 'Salaire par jour (F)', 0),
@@ -523,6 +540,7 @@ const EX15_SPECS: readonly ProblemSpec[] = [
   },
   {
     id: 'amina',
+    label: 'Amina — cours de français',
     varDefs: [
       v('hours', 'Heures', 0),
       v('rate', 'Salaire (F/h)', 0),
@@ -557,6 +575,7 @@ const EX15_SPECS: readonly ProblemSpec[] = [
   },
   {
     id: 'jardinier',
+    label: 'Jardinier — caisses de pommes',
     varDefs: [
       v('boxes', 'Caisses', 0),
       v('perBox', 'Pommes par caisse', 0),
@@ -591,6 +610,7 @@ const EX15_SPECS: readonly ProblemSpec[] = [
   },
   {
     id: 'luis',
+    label: 'Luis — menuiserie',
     varDefs: [v('hours', 'Heures', 0), v('rate', 'Salaire (F/h)', 0)],
     roll: (rng) => ({ rate: int(rng, 7, 14), hours: pick(rng, [3, 6, 9]) }),
     build: (vars) => {
@@ -617,6 +637,7 @@ const EX15_SPECS: readonly ProblemSpec[] = [
   },
   {
     id: 'nora',
+    label: 'Nora — semaines au supermarché',
     varDefs: [
       v('weeks', 'Semaines', 0),
       v('perWeek', 'Salaire par semaine (F)', 0),
@@ -651,6 +672,7 @@ const EX15_SPECS: readonly ProblemSpec[] = [
   },
   {
     id: 'paul',
+    label: 'Paul — livreur (partage)',
     varDefs: [
       v('rate', 'Salaire (F/h)', 0),
       v('hours', 'Heures', 0),
@@ -685,6 +707,7 @@ const EX15_SPECS: readonly ProblemSpec[] = [
   },
   {
     id: 'rita',
+    label: 'Rita — restaurant (heures et salaire)',
     varDefs: [
       v('morning', 'Heures (matin)', 0),
       v('afternoon', 'Heures (après-midi)', 0),
@@ -719,6 +742,7 @@ const EX15_SPECS: readonly ProblemSpec[] = [
   },
   {
     id: 'sam',
+    label: 'Sam — restaurant et pourboire',
     varDefs: [
       v('hours', 'Heures', 0),
       v('rate', 'Salaire (F/h)', 0),
@@ -799,9 +823,37 @@ export function rebuildProblemItems(
   return itemsFromSpec(spec, vars)
 }
 
+/** Tire de nouvelles valeurs pour un modèle choisi (mode libre). */
+export function rollProblemItems(templateId: string, rng: Rng): MathItem[] | undefined {
+  const spec = findSpec(templateId)
+  if (!spec) return undefined
+  return itemsFromSpec(spec, spec.roll(rng))
+}
+
+function optionsFrom(specs: readonly ProblemSpec[]): ProblemOption[] {
+  return specs.map((s) => ({ id: s.id, label: s.label }))
+}
+
+/** Liste des problèmes magasin (ex. 15 affichage / type ex14). */
+export function shopProblemOptions(): ProblemOption[] {
+  return optionsFrom(EX14_SPECS)
+}
+
+/** Liste des problèmes travail (ex. 16 affichage / type ex15). */
+export function workProblemOptions(): ProblemOption[] {
+  return optionsFrom(EX15_SPECS)
+}
+
+/** Options selon le type d’exercice CFR. */
+export function problemOptionsForExercise(exerciseType: string): ProblemOption[] | undefined {
+  if (exerciseType.includes('ex14')) return shopProblemOptions()
+  if (exerciseType.includes('ex15') && !exerciseType.includes('ex16')) return workProblemOptions()
+  return undefined
+}
+
 export function isCfrProblemExercise(exerciseType: string): boolean {
   return (
     exerciseType.includes('ex14') ||
-    (exerciseType.includes('ex15') && !exerciseType.includes('ex150'))
+    (exerciseType.includes('ex15') && !exerciseType.includes('ex150') && !exerciseType.includes('ex16'))
   )
 }

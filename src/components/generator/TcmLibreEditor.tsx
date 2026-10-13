@@ -31,7 +31,11 @@ import { createRng } from '@/math/rng'
 import { fractionPartsFromItem, fractionTermFr } from '@/tcm/fraction-words'
 import { mulAudioParts, numberAudioParts } from '@/tcm-cfr/audio-nombres'
 import { parseFrNumber } from '@/tcm/libre-parse'
-import { rebuildProblemItems } from '@/tcm-cfr/problems'
+import {
+  problemOptionsForExercise,
+  rebuildProblemItems,
+  rollProblemItems,
+} from '@/tcm-cfr/problems'
 import {
   applyNamedFigure,
   NAMED_FIGURE_OPTIONS,
@@ -42,6 +46,9 @@ const NUM_1_100_LIST_ID = 'tcm-libre-num-1-100'
 const NUM_1_100_OPTIONS = Array.from({ length: 100 }, (_, i) => String(i + 1))
 const NUM_1_12_LIST_ID = 'tcm-libre-num-1-12'
 const NUM_1_12_OPTIONS = Array.from({ length: 12 }, (_, i) => String(i + 1))
+
+/** Graine locale pour re-tirer un problème choisi en mode libre. */
+let libreProblemRoll = 1
 
 function clampInt1to100(n: number): number {
   return Math.max(1, Math.min(100, Math.round(n)))
@@ -746,6 +753,7 @@ function renderFields(
     const part = item.problemPart ?? 0
     const editDefs = defs.filter((d) => d.editOn === 'both' || d.editOn === part)
     const vars = item.problemVars ?? {}
+    const problemOptions = problemOptionsForExercise(exerciseType)
     const commitVar = (key: string, raw: string) => {
       const n = parseFrNumber(raw)
       if (n == null || !item.problemTemplateId) return
@@ -755,6 +763,23 @@ function renderFields(
     }
     return (
       <>
+        {problemOptions && part === 0 ? (
+          <Field label="Problème disponible">
+            <LineSelect
+              value={item.problemTemplateId ?? problemOptions[0]?.id ?? ''}
+              ariaLabel={`Choisir le problème ${index + 1}`}
+              options={problemOptions.map((o) => ({ value: o.id, label: o.label }))}
+              onChange={(id) => {
+                libreProblemRoll = (libreProblemRoll + 1) >>> 0
+                const rolled = rollProblemItems(
+                  id,
+                  createRng((id.length * 997 + libreProblemRoll * 2654435761) >>> 0),
+                )
+                if (rolled) onChangeItems(rolled)
+              }}
+            />
+          </Field>
+        ) : null}
         {editDefs.length > 0 ? (
           <div className="libre-inline-triple is-op">
             {editDefs.map((d) => (
