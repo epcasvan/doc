@@ -4744,6 +4744,15 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
     display:flex!important;flex-direction:column
   }
   .side-tool-panel.is-libre .tcf-row{flex-direction:column;align-items:stretch}
+  .side-tool-panel.is-libre :is(
+    .libre-item-list:not(.is-tcm),.phrase-libre-list,.calli-fields,.game-entry-list
+  ){
+    display:flex!important;flex-direction:column
+  }
+  .side-tool-panel.is-libre .libre-item-card:not(.is-tcm-row),
+  .side-tool-panel.is-libre .number-libre-fields{
+    display:flex!important;flex-direction:column
+  }
 }
 /* —— TCM CFR : dictée audio, symétrie, segments, métro —— */
 .tcm-cfr-audio-dictation{display:flex;flex-direction:column;gap:8px;width:100%}
