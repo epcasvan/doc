@@ -4477,7 +4477,7 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
 .worksheet-sheet.is-alphabetisation .syllable-mini-table td{
   font-size:10px
 }
-/* Type 1 Alpha : cadres au contenu ; 3×3 (9 mots) tient sur l’A4 avec ≥10 px avant le pied. */
+/* Type 1 Alpha : cadres en 1fr (largeur page) · 20 px entre colonnes et lignes. */
 .worksheet-sheet.is-alphabetisation .sheet-body:has(.layout-vocab-table){
   padding-bottom:10px
 }
@@ -4485,24 +4485,25 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
 .worksheet-sheet.is-alphabetisation .sheet-body:has(.layout-vocab-table) .exercise-grid,
 .worksheet-sheet.is-alphabetisation .exercise-item.layout-vocab-table,
 .worksheet-sheet.is-alphabetisation .exercise-item.layout-vocab-table .item-content{
-  flex:0 0 auto;height:auto;min-height:0;align-self:start
+  flex:0 0 auto;height:auto;min-height:0;align-self:stretch;width:100%
 }
 .worksheet-sheet.is-alphabetisation .sheet-body:has(.layout-vocab-table) .exercise-grid{
-  grid-template-rows:auto;grid-auto-rows:auto;align-content:start
+  grid-template-rows:auto;grid-auto-rows:auto;align-content:start;width:100%
 }
 .worksheet-sheet.is-alphabetisation .vocab-table{
-  --vocab-card-w:58mm;
+  --vocab-card-w:auto;
   --vocab-card-h:auto;
-  --vocab-card-gap:8px;
+  --vocab-card-gap:20px;
+  width:100%;
   height:auto;min-height:0;
   align-content:start;
+  grid-template-columns:repeat(var(--vocab-cols),minmax(0,1fr));
   grid-template-rows:repeat(var(--vocab-rows),auto);
-  row-gap:8px; /* densifié pour 3 lignes + pied */
-  column-gap:2.5mm;
+  gap:20px;
   padding-bottom:0
 }
 .worksheet-sheet.is-alphabetisation .vocab-card{
-  height:auto;justify-content:flex-start;
+  width:100%;height:auto;justify-content:flex-start;
   padding:1mm 1.5mm 0.5mm
 }
 .worksheet-sheet.is-alphabetisation .vocab-card-image{
