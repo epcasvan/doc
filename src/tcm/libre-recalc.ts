@@ -23,9 +23,12 @@ import {
   fillEvaluerTemplateWithVars,
 } from '@/tcm/evaluer'
 import {
+  fillPrioriteTemplate,
   fillPrioriteTemplateWithVars,
+  prioriteKeysInPattern,
   prioriteTemplateById,
 } from '@/tcm/priorite'
+import { createRng } from '@/math/rng'
 import {
   fillReduireQ1WithVars,
   fillReduireQ2WithVars,
@@ -1007,12 +1010,20 @@ export function recalcTcmLibreItem(item: MathItem, exerciseType: string): MathIt
   ) {
     const tpl = prioriteTemplateById(next.problemTemplateId ?? '')
     if (tpl) {
-      const filled = fillPrioriteTemplateWithVars(tpl, next.problemVars ?? {})
+      const filled =
+        fillPrioriteTemplateWithVars(tpl, next.problemVars ?? {}) ??
+        fillPrioriteTemplate(tpl, createRng(28))
       if (filled) {
+        const keys = prioriteKeysInPattern(tpl.pattern)
         return {
           ...next,
           problemTemplateId: tpl.id,
-          problemVars: filled.vars,
+          problemVars: Object.fromEntries(keys.map((k) => [k, filled.vars[k] ?? 2])),
+          problemVarDefs: keys.map((k) => ({
+            key: k,
+            label: 'pqr'.includes(k) ? `Exposant ${k}` : `Valeur ${k}`,
+            editOn: 'both' as const,
+          })),
           prompt: filled.prompt,
           answer: filled.answer,
           development: filled.development,

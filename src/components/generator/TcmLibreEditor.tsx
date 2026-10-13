@@ -54,7 +54,9 @@ import {
   TCM_EVALUER_Q2,
 } from '@/tcm/evaluer'
 import {
+  fillPrioriteTemplate,
   fillPrioriteTemplateWithVars,
+  prioriteKeysInPattern,
   prioriteTemplateById,
   TCM_PRIORITE_FRAC_POW,
   TCM_PRIORITE_OPS,
@@ -478,16 +480,21 @@ function hydrateAlgebraTemplateItem(item: MathItem, exerciseType: string, index:
   }
 
   if (exerciseType === 'tcm-priorite-ops' || item.labels?.includes('priorite')) {
-    const kind = item.labels?.includes('frac-pow') || index === 1 ? 'frac-pow' : 'ops'
+    const byId = prioriteTemplateById(item.problemTemplateId ?? '')
+    const kind =
+      byId?.kind ??
+      (item.labels?.includes('frac-pow') || index === 1 ? 'frac-pow' : 'ops')
     const pool = kind === 'frac-pow' ? TCM_PRIORITE_FRAC_POW : TCM_PRIORITE_OPS
-    const tpl = prioriteTemplateById(item.problemTemplateId ?? '') ?? pool[0]!
-    const filled = fillPrioriteTemplateWithVars(tpl, item.problemVars ?? {})
+    const tpl = byId && pool.some((t) => t.id === byId.id) ? byId : pool[0]!
+    const filled =
+      fillPrioriteTemplateWithVars(tpl, item.problemVars ?? {}) ??
+      fillPrioriteTemplate(tpl, createRng(index * 1009 + 28))
     if (!filled) return item
-    const keys = Object.keys(filled.vars)
+    const keys = prioriteKeysInPattern(tpl.pattern)
     return {
       ...item,
       problemTemplateId: tpl.id,
-      problemVars: filled.vars,
+      problemVars: Object.fromEntries(keys.map((k) => [k, filled.vars[k] ?? 2])),
       problemVarDefs: keys.map((k) => ({
         key: k,
         label: 'pqr'.includes(k) ? `Exposant ${k}` : `Valeur ${k}`,
@@ -2873,26 +2880,33 @@ function renderFields(
     )
   }
 
-  // TCM ex. 28 — modèle + variables.
+  // TCM ex. 28 — modèle + variables saisissables.
   if (
     item.layout === 'algebra' &&
     (exerciseType === 'tcm-priorite-ops' || item.labels?.includes('priorite'))
   ) {
-    const kind = item.labels?.includes('frac-pow') ? 'frac-pow' : 'ops'
+    const byId = prioriteTemplateById(item.problemTemplateId ?? '')
+    const kind =
+      byId?.kind ??
+      (item.labels?.includes('frac-pow') || index === 1 ? 'frac-pow' : 'ops')
     const pool = kind === 'frac-pow' ? TCM_PRIORITE_FRAC_POW : TCM_PRIORITE_OPS
-    const tpl =
-      prioriteTemplateById(item.problemTemplateId ?? '') ?? pool[0]!
+    const tpl = byId && pool.some((t) => t.id === byId.id) ? byId : pool[0]!
     const vars = { ...(item.problemVars ?? {}) }
-    const keys = item.problemVarDefs?.map((d) => d.key) ?? Object.keys(vars)
-    const applyTpl = (nextId: string, nextVars: Record<string, number>) => {
+    const keys =
+      item.problemVarDefs?.map((d) => d.key) ??
+      (Object.keys(vars).length ? Object.keys(vars) : prioriteKeysInPattern(tpl.pattern))
+    const applyTpl = (nextId: string, nextVars: Record<string, number>, reroll = false) => {
       const nextTpl = prioriteTemplateById(nextId) ?? tpl
-      const filled = fillPrioriteTemplateWithVars(nextTpl, nextVars)
+      const filled =
+        (!reroll ? fillPrioriteTemplateWithVars(nextTpl, nextVars) : null) ??
+        fillPrioriteTemplate(nextTpl, createRng(++libreProblemRoll)) ??
+        fillPrioriteTemplateWithVars(nextTpl, {})
       if (!filled) return
-      const nextKeys = Object.keys(filled.vars)
+      const nextKeys = prioriteKeysInPattern(nextTpl.pattern)
       patch(index, {
         ...item,
         problemTemplateId: nextTpl.id,
-        problemVars: filled.vars,
+        problemVars: Object.fromEntries(nextKeys.map((k) => [k, filled.vars[k] ?? 2])),
         problemVarDefs: nextKeys.map((k) => ({
           key: k,
           label: 'pqr'.includes(k) ? `Exposant ${k}` : `Valeur ${k}`,
@@ -2912,7 +2926,7 @@ function renderFields(
             value={tpl.id}
             ariaLabel={`Modèle ${index + 1}`}
             options={pool.map((t) => ({ value: t.id, label: `${t.id} — ${t.pattern}` }))}
-            onChange={(id) => applyTpl(id, vars)}
+            onChange={(id) => applyTpl(id, {}, true)}
           />
         </Field>
         <div className="libre-inline-triple is-op">
@@ -2925,12 +2939,15 @@ function renderFields(
                 onCommit={(raw) => {
                   const n = parseFrNumber(raw)
                   if (n == null) return
-                  applyTpl(tpl.id, { ...vars, [key]: n })
+                  applyTpl(tpl.id, { ...vars, [key]: n }, false)
                 }}
               />
             </Field>
           ))}
         </div>
+        <Field label="Énoncé">
+          <CorrigeBox value={item.prompt ?? ''} ariaLabel={`Énoncé ${index + 1}`} />
+        </Field>
         <Field label="Corrigé">
           <CorrigeBox value={item.answer ?? ''} ariaLabel={`Corrigé ${index + 1}`} />
         </Field>
