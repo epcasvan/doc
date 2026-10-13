@@ -28,12 +28,37 @@ import {
 } from '@/tcm-cfr/metro'
 import { createRng } from '@/math/rng'
 import { fractionPartsFromItem, fractionTermFr } from '@/tcm/fraction-words'
+import { mulAudioParts, numberAudioParts } from '@/tcm-cfr/audio-nombres'
 import { parseFrNumber } from '@/tcm/libre-parse'
 import {
   applyNamedFigure,
   NAMED_FIGURE_OPTIONS,
   namedFigureKey,
 } from '@/tcm/libre-recalc'
+
+const NUM_1_100_LIST_ID = 'tcm-libre-num-1-100'
+const NUM_1_100_OPTIONS = Array.from({ length: 100 }, (_, i) => String(i + 1))
+
+function clampInt1to100(n: number): number {
+  return Math.max(1, Math.min(100, Math.round(n)))
+}
+
+/** Facteurs a×b depuis left/right ou les fichiers audio. */
+function mulFactorsFromItem(item: MathItem): { a: number; b: number } {
+  const left = parseFrNumber(item.left ?? '')
+  const right = parseFrNumber(item.right ?? '')
+  if (left != null && right != null) {
+    return { a: clampInt1to100(left), b: clampInt1to100(right) }
+  }
+  const nums = (item.audioParts ?? [])
+    .map((p) => {
+      const m = /\/nombre\/(\d+)\.mp3$/.exec(p)
+      return m ? Number(m[1]) : null
+    })
+    .filter((n): n is number => n != null && n >= 1 && n <= 100)
+  if (nums.length >= 2) return { a: nums[0]!, b: nums[nums.length - 1]! }
+  return { a: 2, b: 2 }
+}
 
 const OPS: ArithOp[] = ['+', '−', '×', '÷']
 const LENGTH_UNITS = ['m', 'dm', 'cm', 'mm'] as const
@@ -111,6 +136,7 @@ function NumInput({
   compact,
   wide,
   requireNumber = true,
+  listId,
 }: {
   value: string
   onCommit: (next: string) => void
@@ -119,6 +145,8 @@ function NumInput({
   wide?: boolean
   /** Si true, refuse les textes non numériques (restaure). */
   requireNumber?: boolean
+  /** datalist partagée (ex. 1–100) : choisir ou saisir. */
+  listId?: string
 }) {
   const [draft, setDraft] = useState(value)
   const prevRef = useRef(value)
@@ -146,6 +174,7 @@ function NumInput({
       className={`libre-line-input${wide ? ' is-wide' : ''}${compact ? ' is-num' : ''}`}
       type="text"
       inputMode="decimal"
+      list={listId}
       value={draft}
       aria-label={ariaLabel}
       onChange={(e) => setDraft(e.target.value)}
@@ -281,6 +310,11 @@ export function TcmLibreEditor({
         Modifiez les nombres puis validez (✓) : les corrigés (cadre gris) se recalculent seuls et
         ne sont pas modifiables. Un champ nombre laissé vide retrouve sa valeur précédente.
       </p>
+      <datalist id={NUM_1_100_LIST_ID}>
+        {NUM_1_100_OPTIONS.map((n) => (
+          <option key={n} value={n} />
+        ))}
+      </datalist>
       <label className="libre-field is-line">
         <span>Consigne</span>
         <textarea
@@ -313,13 +347,79 @@ function renderFields(
   exerciseType: string,
 ) {
   if (item.layout === 'audio-dictation') {
+    if (exerciseType.includes('ex02')) {
+      const { a, b } = mulFactorsFromItem(item)
+      const commitMul = (na: number, nb: number) => {
+        const parts = mulAudioParts(na, nb)
+        patch(index, {
+          ...item,
+          left: String(na),
+          right: String(nb),
+          answer: String(na * nb),
+          audioParts: parts,
+          audioSrc: parts[0],
+        })
+      }
+      return (
+        <div className="libre-inline-triple is-op">
+          <Field label="Nombre 1">
+            <NumInput
+              compact
+              listId={NUM_1_100_LIST_ID}
+              value={String(a)}
+              ariaLabel={`Facteur 1 question ${index + 1}`}
+              onCommit={(raw) => {
+                const parsed = parseFrNumber(raw)
+                if (parsed == null) return
+                commitMul(clampInt1to100(parsed), b)
+              }}
+            />
+          </Field>
+          <span className="libre-mul-sign" aria-hidden>
+            ×
+          </span>
+          <Field label="Nombre 2">
+            <NumInput
+              compact
+              listId={NUM_1_100_LIST_ID}
+              value={String(b)}
+              ariaLabel={`Facteur 2 question ${index + 1}`}
+              onCommit={(raw) => {
+                const parsed = parseFrNumber(raw)
+                if (parsed == null) return
+                commitMul(a, clampInt1to100(parsed))
+              }}
+            />
+          </Field>
+          <Field label="Corrigé">
+            <CorrigeBox
+              compact
+              value={item.answer ?? String(a * b)}
+              ariaLabel={`Produit question ${index + 1}`}
+            />
+          </Field>
+        </div>
+      )
+    }
+    const current = parseFrNumber(item.answer ?? '') ?? 1
     return (
-      <Field label="Réponse">
-        <LineInput
-          answer
-          value={item.answer ?? ''}
-          ariaLabel={`Réponse ${index + 1}`}
-          onChange={(answer) => patch(index, { ...item, answer })}
+      <Field label="Nombre (1–100)">
+        <NumInput
+          listId={NUM_1_100_LIST_ID}
+          value={String(clampInt1to100(current))}
+          ariaLabel={`Nombre entendu ${index + 1}`}
+          onCommit={(raw) => {
+            const parsed = parseFrNumber(raw)
+            if (parsed == null) return
+            const n = clampInt1to100(parsed)
+            const parts = numberAudioParts(n)
+            patch(index, {
+              ...item,
+              answer: String(n),
+              audioParts: parts,
+              audioSrc: parts[0],
+            })
+          }}
         />
       </Field>
     )

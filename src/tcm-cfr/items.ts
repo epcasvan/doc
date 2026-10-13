@@ -71,6 +71,8 @@ function genEx02(rng: Rng, count: number): MathItem[] {
     return {
       layout: 'audio-dictation' as const,
       prompt: '',
+      left: String(a),
+      right: String(b),
       audioParts: parts,
       audioSrc: parts[0],
       answer: String(a * b),

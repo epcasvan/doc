@@ -4,6 +4,7 @@
  */
 import { fmt, sanitizeFrNumberNoise } from '@/math/column-arith'
 import type { ArithOp, Figure, MathItem } from '@/math/types'
+import { mulAudioParts, numberAudioParts } from '@/tcm-cfr/audio-nombres'
 import { fractionPartsFromItem, fractionTermFr } from '@/tcm/fraction-words'
 import { columnItem, divisionColumnItem } from '@/tcm/items'
 import { parseFrInt, parseFrNumber, parseOrderSequence } from './libre-parse'
@@ -540,8 +541,32 @@ export function recalcTcmLibreItem(item: MathItem, exerciseType: string): MathIt
   }
   if (next.layout === 'text') return recalcTextProblem(next)
   if (next.layout === 'audio-dictation') {
+    if (exerciseType.includes('ex02')) {
+      const a = parseFrNumber(next.left ?? '')
+      const b = parseFrNumber(next.right ?? '')
+      if (a == null || b == null) return next
+      const aa = Math.max(1, Math.min(100, Math.round(a)))
+      const bb = Math.max(1, Math.min(100, Math.round(b)))
+      const parts = mulAudioParts(aa, bb)
+      return {
+        ...next,
+        left: String(aa),
+        right: String(bb),
+        answer: String(aa * bb),
+        audioParts: parts,
+        audioSrc: parts[0],
+      }
+    }
     const n = parseFrNumber(next.answer ?? '')
-    return n == null ? next : { ...next, answer: fmt(n) }
+    if (n == null) return next
+    const nn = Math.max(1, Math.min(100, Math.round(n)))
+    const parts = numberAudioParts(nn)
+    return {
+      ...next,
+      answer: String(nn),
+      audioParts: parts,
+      audioSrc: parts[0],
+    }
   }
 
   return next

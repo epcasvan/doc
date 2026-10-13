@@ -4315,6 +4315,10 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
 .libre-inline-triple.is-op>.libre-field{
   flex:1 1 6em;min-width:5em
 }
+.libre-mul-sign{
+  flex:0 0 auto;align-self:center;padding:0 2px 2px;
+  font-size:16px;font-weight:700;color:var(--purple);line-height:1
+}
 /* Ex. 11 : numérateur + dénominateur sur une ligne. */
 .libre-inline-triple.is-frac{
   flex-wrap:nowrap;align-items:end;gap:10px
