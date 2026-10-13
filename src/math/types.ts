@@ -316,6 +316,8 @@ export type FigureDims = {
   /** Diagonales du losange (placement / TCM). */
   d1?: number
   d2?: number
+  /** Périmètre donné (ex. 25–26 CFR) — placeholder `[périmètre]` dans l’énoncé. */
+  perimeter?: number
   unit?: string
   triangleKind?: 'equilateral' | 'isosceles' | 'scalene' | 'right'
   trapezoidKind?: 'rectangle' | 'isosceles' | 'scalene'

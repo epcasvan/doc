@@ -1,4 +1,5 @@
 import type { CoordShape, MathItem, PreviewMode } from '@/math/types'
+import { resolvePromptPlaceholders } from '@/tcm/libre-recalc'
 import { CompositeFigure } from '../math/CompositeFigure'
 import { CoordGrid, CoordShapeButton } from '../math/CoordGrid'
 import { GeometryFigure } from '../math/GeometryFigure'
@@ -15,13 +16,14 @@ export function GeoBlock({
   const show = mode === 'answers'
   if (item.geoDualPads) {
     const lines = item.propertyLines ?? []
+    const promptText = resolvePromptPlaceholders(item)
     const padCorrection =
       show && (item.calcAnswer || item.calcAnswerSecondary)
         ? [item.calcAnswer, item.calcAnswerSecondary].filter(Boolean).join('\n')
         : null
     return (
       <div className={`geo-block geo-dual${item.geoDualTight ? ' is-tight' : ''}`} aria-label="Figure et calcul">
-        {item.prompt ? <p className="column-prompt">{item.prompt}</p> : null}
+        {promptText ? <p className="column-prompt">{promptText}</p> : null}
         <div className="geo-dual-top">
           <div className="geo-dual-figure">
             {item.compositeScene ? (

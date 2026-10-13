@@ -643,33 +643,34 @@ function genEx24(rng: Rng): MathItem[] {
   ]
 }
 
-/** Ex. 25 — aire du carré → côté (cote absente ; brouillon comme ex. 22). */
+/** Ex. 25 — périmètre du carré → côté (cote absente ; brouillon comme ex. 22). */
 function genEx25(rng: Rng): MathItem[] {
   const side = int(rng, 3, 12)
-  const area = side * side
+  const perimeter = 4 * side
   return [
     {
       layout: 'geo',
       figure: 'square',
       // Pas de cote affichée : c’est la valeur cherchée.
-      dims: { unit: 'cm' },
-      prompt: `L’aire de ce carré est ${area} cm². Quelle est la longueur d’un côté ?`,
+      dims: { perimeter, unit: 'cm' },
+      prompt:
+        'Le périmètre de ce carré est [périmètre] cm. Quelle est la longueur d’un côté ?',
       geoDualPads: true,
       geoDualTight: true,
       hideItemNumber: true,
-      calcAnswer: `√${area} = ${side}`,
+      calcAnswer: `${perimeter} ÷ 4 = ${side}`,
       propertyLines: [{ label: 'Côté', answer: `${side} cm` }],
       answer: `${side} cm`,
     },
   ]
 }
 
-/** Ex. 26 — aire rectangle + un côté → autre côté (cote cherchée masquée). */
+/** Ex. 26 — périmètre rectangle + un côté → autre côté (cote cherchée masquée). */
 function genEx26(rng: Rng): MathItem[] {
   const length = int(rng, 4, 14)
   let width = int(rng, 2, 10)
   while (width === length) width = int(rng, 2, 10)
-  const area = length * width
+  const perimeter = 2 * (length + width)
   const giveLength = rng() < 0.5
   const known = giveLength ? length : width
   const unknown = giveLength ? width : length
@@ -679,12 +680,14 @@ function genEx26(rng: Rng): MathItem[] {
       layout: 'geo',
       figure: 'rectangle',
       // Afficher uniquement le côté connu ; masquer celui cherché.
-      dims: giveLength ? { length, unit: 'cm' } : { width, unit: 'cm' },
-      prompt: `L’aire de ce rectangle est ${area} cm². La ${knownLabel} mesure ${known} cm. Quelle est la longueur de l’autre côté ?`,
+      dims: giveLength
+        ? { length, perimeter, unit: 'cm' }
+        : { width, perimeter, unit: 'cm' },
+      prompt: `Le périmètre de ce rectangle est [périmètre] cm. La ${knownLabel} mesure [côté] cm. Quelle est la longueur de l’autre côté ?`,
       geoDualPads: true,
       geoDualTight: true,
       hideItemNumber: true,
-      calcAnswer: `${area} ÷ ${known} = ${unknown}`,
+      calcAnswer: `${perimeter} ÷ 2 − ${known} = ${unknown}`,
       propertyLines: [{ label: 'Côté', answer: `${unknown} cm` }],
       answer: `${unknown} cm`,
     },

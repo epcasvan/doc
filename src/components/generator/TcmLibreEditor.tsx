@@ -1030,11 +1030,15 @@ function renderFields(
 
   if (item.layout === 'geo' && item.geoDualPads) {
     const dims = item.dims ?? {}
-    const isAreaProblem = /aire/i.test(item.prompt ?? '') || exerciseType.includes('ex25') || exerciseType.includes('ex26')
-    if (isAreaProblem) {
+    const isSideFromPerim =
+      exerciseType.includes('ex25') ||
+      exerciseType.includes('ex26') ||
+      dims.perimeter != null ||
+      /\[périmètre\]|\[perimetre\]/i.test(item.prompt ?? '')
+    if (isSideFromPerim) {
       return (
         <>
-          <Field label="Énoncé (phrase)">
+          <Field label="Énoncé (utilisez [périmètre] et [côté])">
             <textarea
               className="libre-line-input is-textarea"
               rows={2}
@@ -1043,53 +1047,67 @@ function renderFields(
               onChange={(e) => patch(index, { ...item, prompt: e.target.value })}
             />
           </Field>
-          {item.figure === 'rectangle' ? (
-            <div className="libre-inline-triple">
-              <Field label="Longueur connue">
-                <NumInput
-                  value={dims.length != null ? fmt(dims.length) : ''}
-                  ariaLabel={`Longueur ${index + 1}`}
-                  onCommit={(raw) => {
-                    const length = Number(raw.replace(',', '.'))
-                    if (!Number.isFinite(length)) return
-                    patch(index, {
-                      ...item,
-                      dims: {
-                        ...dims,
-                        length,
-                        width: undefined,
-                      },
-                    })
-                  }}
-                />
-              </Field>
-              <Field label="Largeur connue">
-                <NumInput
-                  value={dims.width != null ? fmt(dims.width) : ''}
-                  ariaLabel={`Largeur ${index + 1}`}
-                  onCommit={(raw) => {
-                    const width = Number(raw.replace(',', '.'))
-                    if (!Number.isFinite(width)) return
-                    patch(index, {
-                      ...item,
-                      dims: {
-                        ...dims,
-                        width,
-                        length: undefined,
-                      },
-                    })
-                  }}
-                />
-              </Field>
-            </div>
-          ) : null}
+          <div className="libre-inline-triple is-op">
+            <Field label="Périmètre (cm)">
+              <NumInput
+                compact
+                value={dims.perimeter != null ? fmt(dims.perimeter) : ''}
+                ariaLabel={`Périmètre ${index + 1}`}
+                onCommit={(raw) => {
+                  const perimeter = Number(raw.replace(',', '.'))
+                  if (!Number.isFinite(perimeter)) return
+                  patch(index, {
+                    ...item,
+                    dims: { ...dims, perimeter },
+                  })
+                }}
+              />
+            </Field>
+            {item.figure === 'rectangle' ? (
+              <>
+                <Field label="Longueur connue">
+                  <NumInput
+                    compact
+                    value={dims.length != null ? fmt(dims.length) : ''}
+                    ariaLabel={`Longueur ${index + 1}`}
+                    onCommit={(raw) => {
+                      const length = Number(raw.replace(',', '.'))
+                      if (!Number.isFinite(length)) return
+                      patch(index, {
+                        ...item,
+                        dims: {
+                          ...dims,
+                          length,
+                          width: undefined,
+                        },
+                      })
+                    }}
+                  />
+                </Field>
+                <Field label="Largeur connue">
+                  <NumInput
+                    compact
+                    value={dims.width != null ? fmt(dims.width) : ''}
+                    ariaLabel={`Largeur ${index + 1}`}
+                    onCommit={(raw) => {
+                      const width = Number(raw.replace(',', '.'))
+                      if (!Number.isFinite(width)) return
+                      patch(index, {
+                        ...item,
+                        dims: {
+                          ...dims,
+                          width,
+                          length: undefined,
+                        },
+                      })
+                    }}
+                  />
+                </Field>
+              </>
+            ) : null}
+          </div>
           <Field label="Corrigé (côté)">
-            <LineInput
-              answer
-              value={item.answer ?? ''}
-              ariaLabel={`Corrigé ${index + 1}`}
-              onChange={(answer) => patch(index, { ...item, answer })}
-            />
+            <CorrigeBox value={item.answer ?? ''} ariaLabel={`Corrigé ${index + 1}`} />
           </Field>
         </>
       )

@@ -324,32 +324,65 @@ function recalcDualGeo(item: MathItem): MathItem {
   return item
 }
 
-function recalcSideFromArea(item: MathItem): MathItem {
+/** Remplace `[périmètre]`, `[côté]`… dans l’énoncé pour l’aperçu / l’impression. */
+export function resolvePromptPlaceholders(item: MathItem): string {
+  let text = item.prompt ?? ''
+  const peri = item.dims?.perimeter
+  if (peri != null && Number.isFinite(peri)) {
+    const p = fmt(peri)
+    text = text.replace(/\[périmètre\]/gi, p).replace(/\[perimetre\]/gi, p)
+  }
+  const known = item.dims?.length ?? item.dims?.width
+  if (known != null && Number.isFinite(known)) {
+    const k = fmt(known)
+    text = text.replace(/\[côté\]/gi, k).replace(/\[cote\]/gi, k)
+  }
+  return text
+}
+
+function perimeterFromItem(item: MathItem): number | null {
+  const fromDims = parseFrNumber(String(item.dims?.perimeter ?? ''))
+  if (fromDims != null) return fromDims
   const prompt = item.prompt ?? ''
+  // Ancien format ou valeur déjà substituée : « périmètre … N cm »
+  const m = prompt.match(/périmètre[^0-9]*(\d+(?:[.,]\d+)?)\s*cm/i)
+  if (m) return parseFrNumber(m[1]!)
+  // Ancien ex. aire : √A pour le carré — conservé en secours.
   const areaMatch = prompt.match(/(\d+(?:[.,]\d+)?)\s*cm²/i)
-  const area = areaMatch ? parseFrNumber(areaMatch[1]!) : null
-  if (area == null) return item
+  if (areaMatch && item.figure === 'square') {
+    const area = parseFrNumber(areaMatch[1]!)
+    if (area != null) return Math.round(4 * Math.sqrt(area) * 1000) / 1000
+  }
+  return null
+}
+
+function recalcSideFromPerimeter(item: MathItem): MathItem {
+  const peri = perimeterFromItem(item)
+  if (peri == null) return item
+  const dims = { ...(item.dims ?? {}), perimeter: peri, unit: item.dims?.unit ?? 'cm' }
   if (item.figure === 'square') {
-    const side = Math.round(Math.sqrt(area) * 1000) / 1000
+    const side = Math.round((peri / 4) * 1000) / 1000
     return {
       ...item,
-      calcAnswer: `√${fmt(area)} = ${fmt(side)}`,
+      dims,
+      calcAnswer: `${fmt(peri)} ÷ 4 = ${fmt(side)}`,
       propertyLines: [{ label: 'Côté', answer: `${fmt(side)} cm` }],
       answer: `${fmt(side)} cm`,
     }
   }
   if (item.figure === 'rectangle') {
-    const known = parseFrNumber(String(item.dims?.length ?? item.dims?.width ?? ''))
-    if (known == null || known === 0) return item
-    const unknown = Math.round((area / known) * 1000) / 1000
+    const known = parseFrNumber(String(dims.length ?? dims.width ?? ''))
+    if (known == null || known === 0) return { ...item, dims }
+    const unknown = Math.round((peri / 2 - known) * 1000) / 1000
     return {
       ...item,
-      calcAnswer: `${fmt(area)} ÷ ${fmt(known)} = ${fmt(unknown)}`,
+      dims,
+      calcAnswer: `${fmt(peri)} ÷ 2 − ${fmt(known)} = ${fmt(unknown)}`,
       propertyLines: [{ label: 'Côté', answer: `${fmt(unknown)} cm` }],
       answer: `${fmt(unknown)} cm`,
     }
   }
-  return item
+  return { ...item, dims }
 }
 
 function recalcSegments(item: MathItem): MathItem {
@@ -567,13 +600,18 @@ export function recalcTcmLibreItem(item: MathItem, exerciseType: string): MathIt
     return applyNamedFigure(next, namedFigureKey(next), withProps)
   }
   if (next.layout === 'geo' && next.geoDualPads && (exerciseType.includes('ex22') || exerciseType.includes('ex23') || exerciseType.includes('ex24') || next.propertyLines?.some((l) => /Périmètre/i.test(l.label)))) {
-    if (exerciseType.includes('ex25') || exerciseType.includes('ex26') || /aire/i.test(next.prompt ?? '')) {
-      return recalcSideFromArea(next)
+    if (
+      exerciseType.includes('ex25') ||
+      exerciseType.includes('ex26') ||
+      next.dims?.perimeter != null ||
+      /\[périmètre\]|\[perimetre\]/i.test(next.prompt ?? '')
+    ) {
+      return recalcSideFromPerimeter(next)
     }
     return recalcDualGeo(next)
   }
   if (next.layout === 'geo' && (exerciseType.includes('ex25') || exerciseType.includes('ex26'))) {
-    return recalcSideFromArea(next)
+    return recalcSideFromPerimeter(next)
   }
   if (next.layout === 'text') return recalcTextProblem(next)
   if (next.layout === 'audio-dictation') {
