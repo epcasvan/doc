@@ -228,22 +228,25 @@ export function GeometryFigure({ type, dims }: { type?: Figure; dims?: FigureDim
 
         {triPlacement && (
           <>
-            {/* Scalène a/b/c/h — cotes numériques (comme carré/rectangle) ; h = conservé. */}
-            <polygon points="110,2 28,198 228,198" />
-            <L x={(28 + 228) / 2} y={216} baseline="hanging">
+            {/*
+              Scalène a/b/c/h dans le viewBox 450×200 (= hauteur grille brouillon).
+              Base un peu plus haute pour que la cote du bas tienne dans le cadre.
+            */}
+            <polygon points="110,6 36,168 220,168" />
+            <L x={(36 + 220) / 2} y={188} baseline="middle">
               {fmt(d.a!)} {unit}
             </L>
-            <L x={(110 + 228) / 2 + 34} y={(2 + 198) / 2 - 6} anchor="start">
+            <L x={(110 + 220) / 2 + 30} y={(6 + 168) / 2 - 4} anchor="start">
               {fmt(d.b!)} {unit}
             </L>
-            <L x={(110 + 28) / 2 - 16} y={(2 + 198) / 2} anchor="end">
+            <L x={(110 + 36) / 2 - 14} y={(6 + 168) / 2} anchor="end">
               {fmt(d.c!)} {unit}
             </L>
             <HeightBracket
-              shapeRightX={228}
-              yTop={2}
-              yBot={198}
-              bracketX={310}
+              shapeRightX={220}
+              yTop={6}
+              yBot={168}
+              bracketX={300}
               label={`h = ${fmt(d.height!)} ${unit}`}
             />
           </>

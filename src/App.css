@@ -1224,7 +1224,8 @@ html,body,#root{
 /* Ex. 22–26 : figure = même hauteur que le cadre de développement. */
 .geo-dual.is-tight .geo-dual-figure .geometry-figure{
   width:100%;max-width:100%;height:100%;max-height:100%;margin-inline:auto;
-  overflow:visible
+  /* Contenu (cotes) doit rester dans le cadre = hauteur du brouillon. */
+  overflow:hidden
 }
 .geo-dual-answer{
   display:grid;grid-template-columns:max-content minmax(4em,1fr);
