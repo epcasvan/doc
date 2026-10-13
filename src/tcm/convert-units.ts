@@ -151,6 +151,64 @@ export function unitsForFamily(family: ConvertFamily): readonly string[] {
   return convertFamilyDef(family).units
 }
 
+/** Libellés d’affichage (sélecteurs De / Vers) — symbole scolaire + nom si utile. */
+const UNIT_LABELS: Record<string, string> = {
+  t: 'tonne',
+  kg: 'kg',
+  hg: 'hg',
+  dag: 'dag',
+  g: 'g',
+  dg: 'dg',
+  cg: 'cg',
+  mg: 'mg',
+  kL: 'kL',
+  hL: 'hL',
+  daL: 'daL',
+  L: 'L',
+  dL: 'dL',
+  cL: 'cL',
+  mL: 'mL',
+  km: 'km',
+  hm: 'hm',
+  dam: 'dam',
+  m: 'm',
+  dm: 'dm',
+  cm: 'cm',
+  mm: 'mm',
+  'km²': 'km²',
+  'hm²': 'hm²',
+  'dam²': 'dam²',
+  'm²': 'm²',
+  'dm²': 'dm²',
+  'cm²': 'cm²',
+  'mm²': 'mm²',
+  'km³': 'km³',
+  'hm³': 'hm³',
+  'dam³': 'dam³',
+  'm³': 'm³',
+  'dm³': 'dm³',
+  'cm³': 'cm³',
+  'mm³': 'mm³',
+  'kg/m³': 'kg/m³',
+  'g/L': 'g/L',
+  'kg/L': 'kg/L',
+  'g/cm³': 'g/cm³',
+  h: 'h',
+  min: 'min',
+  s: 's',
+}
+
+export function unitOptionLabel(unit: string): string {
+  return UNIT_LABELS[unit] ?? unit
+}
+
+/** Options De / Vers : toutes les unités de la famille (km→mm, tonne→mg, etc.). */
+export function unitSelectOptions(
+  family: ConvertFamily,
+): Array<{ value: string; label: string }> {
+  return unitsForFamily(family).map((u) => ({ value: u, label: unitOptionLabel(u) }))
+}
+
 /** Convertit value(from) → to ; null si unités incompatibles. */
 export function convertValue(
   value: number,

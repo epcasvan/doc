@@ -34,16 +34,37 @@ import { clampFracShapeCfr } from '@/math/fraction-shapes'
 import {
   CONVERT_FAMILY_OPTIONS,
   inferConvertFamily,
+  unitSelectOptions,
   unitsForFamily,
   type ConvertFamily,
 } from '@/tcm/convert-units'
 import { parseFrNumber } from '@/tcm/libre-parse'
+import {
+  equationKindForTemplate,
+  equationTemplateById,
+  fillEquationTemplateWithVars,
+  TCM_EQUATIONS_Q1,
+  TCM_EQUATIONS_Q2,
+} from '@/tcm/equations'
+import {
+  evaluerKindForTemplate,
+  evaluerTemplateById,
+  fillEvaluerTemplateWithVars,
+  TCM_EVALUER_Q1,
+  TCM_EVALUER_Q2,
+} from '@/tcm/evaluer'
 import {
   fillPrioriteTemplateWithVars,
   prioriteTemplateById,
   TCM_PRIORITE_FRAC_POW,
   TCM_PRIORITE_OPS,
 } from '@/tcm/priorite'
+import {
+  fillReduireQ1WithVars,
+  fillReduireQ2WithVars,
+  reduireTemplateById,
+  TCM_REDUIRE_Q2,
+} from '@/tcm/reduire'
 import { TCM_PROPORTION_KG_TEMPLATES } from '@/tcm/proportion-kg'
 import {
   problemOptionsForExercise,
@@ -362,7 +383,7 @@ export function TcmLibreEditor({
           <li key={`tcm-libre-${index}`} className="libre-item-card is-tcm-row">
             <span className="libre-item-num is-accent">{index + 1}.</span>
             <div className="libre-item-body">
-              {renderFields(item, index, patch, withProps, exerciseType, onChangeItems)}
+              {renderFields(item, index, patch, withProps, exerciseType, onChangeItems, items)}
             </div>
           </li>
         ))}
@@ -388,6 +409,7 @@ function renderFields(
   withProps: boolean,
   exerciseType: string,
   onChangeItems: (items: MathItem[]) => void,
+  items: MathItem[] = [],
 ) {
   // TCM ex. 27 — base / exposant / racine / ×÷ 10^p.
   if (
@@ -1636,7 +1658,8 @@ function renderFields(
   if (item.convert) {
     const family: ConvertFamily =
       item.convert.family ?? inferConvertFamily(item.convert.from, item.convert.to)
-    const unitOpts = unitsForFamily(family).map((u) => ({ value: u, label: u }))
+    // Toutes les unités de la famille (poids : tonne…mg ; longueur : km…mm ; etc.).
+    const unitOpts = unitSelectOptions(family)
     const applyConvert = (next: {
       value?: string
       from?: string
@@ -2341,6 +2364,311 @@ function renderFields(
           )
         })}
       </>
+    )
+  }
+
+  // TCM ex. 32 — réduire : modèle (Q2) / termes (Q1) + variables.
+  if (
+    item.layout === 'algebra' &&
+    (exerciseType === 'tcm-expressions-reduire' || item.labels?.includes('reduire'))
+  ) {
+    const isQ2 =
+      item.labels?.includes('q2') ||
+      (item.problemTemplateId != null && item.problemTemplateId !== 'sum')
+    if (isQ2) {
+      const tpl = reduireTemplateById(item.problemTemplateId ?? '') ?? TCM_REDUIRE_Q2[0]!
+      const vars = { ...(item.problemVars ?? {}) }
+      const keys = item.problemVarDefs?.map((d) => d.key) ?? Object.keys(vars).filter((k) => k.startsWith('c') || k.startsWith('op'))
+      const apply = (nextId: string, nextVars: Record<string, number>) => {
+        const nextTpl = reduireTemplateById(nextId) ?? tpl
+        const merged = {
+          ...nextVars,
+          k0: nextTpl.slots[0] === 'paren' ? 1 : 0,
+          k1: nextTpl.slots[1] === 'paren' ? 1 : 0,
+          k2: nextTpl.slots[2] === 'paren' ? 1 : 0,
+          c0: nextVars.c0 ?? 5,
+          c1: nextVars.c1 ?? 4,
+          c2: nextVars.c2 ?? 2,
+          c0a: nextVars.c0a ?? 3,
+          c0b: nextVars.c0b ?? 2,
+          c1a: nextVars.c1a ?? 3,
+          c1b: nextVars.c1b ?? 2,
+          c2a: nextVars.c2a ?? 3,
+          c2b: nextVars.c2b ?? 2,
+          p0: nextVars.p0 ?? 0,
+          p1: nextVars.p1 ?? 1,
+          p2: nextVars.p2 ?? (nextTpl.slots[2] === 'const' ? -1 : 0),
+          p0a: nextVars.p0a ?? 0,
+          p0b: nextVars.p0b ?? -1,
+          p1a: nextVars.p1a ?? 0,
+          p1b: nextVars.p1b ?? -1,
+          p2a: nextVars.p2a ?? 0,
+          p2b: nextVars.p2b ?? -1,
+          nLetters: nextVars.nLetters ?? 3,
+          L0: nextVars.L0 ?? 0,
+          L1: nextVars.L1 ?? 1,
+          L2: nextVars.L2 ?? 2,
+        }
+        const rebuilt = fillReduireQ2WithVars(nextTpl, merged)
+        if (rebuilt) patch(index, { ...item, ...rebuilt })
+      }
+      return (
+        <div className="libre-frac-stack">
+          <Field label="Modèle">
+            <LineSelect
+              value={tpl.id}
+              ariaLabel={`Modèle ${index + 1}`}
+              options={TCM_REDUIRE_Q2.map((t) => ({
+                value: t.id,
+                label: `${t.id} — ${t.slots.join(' · ')}`,
+              }))}
+              onChange={(id) => apply(id, vars)}
+            />
+          </Field>
+          <div className="libre-inline-triple is-op">
+            {keys.map((key) => (
+              <Field key={key} label={key.startsWith('op') ? `Signe ${key.slice(2)}` : `Coef. ${key.slice(1)}`}>
+                <NumInput
+                  compact
+                  value={vars[key] != null ? String(vars[key]) : ''}
+                  ariaLabel={`${key} ${index + 1}`}
+                  onCommit={(raw) => {
+                    const n = parseFrNumber(raw)
+                    if (n == null) return
+                    apply(tpl.id, { ...vars, [key]: n })
+                  }}
+                />
+              </Field>
+            ))}
+          </div>
+          <Field label="Corrigé">
+            <CorrigeBox value={item.answer ?? ''} ariaLabel={`Corrigé ${index + 1}`} />
+          </Field>
+        </div>
+      )
+    }
+    // Q1 somme
+    const vars = { ...(item.problemVars ?? {}) }
+    const keys = item.problemVarDefs?.map((d) => d.key) ?? Object.keys(vars).filter((k) => k.startsWith('t'))
+    return (
+      <div className="libre-frac-stack">
+        <Field label="Modèle">
+          <CorrigeBox value="Somme de monômes" ariaLabel="Modèle somme" />
+        </Field>
+        <div className="libre-inline-triple is-op">
+          {keys.map((key) => (
+            <Field key={key} label={`Terme ${Number(key.slice(1)) + 1}`}>
+              <NumInput
+                compact
+                value={vars[key] != null ? String(vars[key]) : ''}
+                ariaLabel={`${key} ${index + 1}`}
+                onCommit={(raw) => {
+                  const n = parseFrNumber(raw)
+                  if (n == null) return
+                  const rebuilt = fillReduireQ1WithVars({ ...vars, [key]: n })
+                  if (rebuilt) patch(index, { ...item, ...rebuilt })
+                }}
+              />
+            </Field>
+          ))}
+        </div>
+        <Field label="Corrigé">
+          <CorrigeBox value={item.answer ?? ''} ariaLabel={`Corrigé ${index + 1}`} />
+        </Field>
+      </div>
+    )
+  }
+
+  // TCM ex. 34 — équations : modèle + paramètres.
+  if (
+    item.layout === 'algebra' &&
+    (exerciseType === 'tcm-equations' || item.labels?.includes('equations'))
+  ) {
+    const kind =
+      item.labels?.includes('q2') || (item.problemTemplateId ?? '').startsWith('q2')
+        ? 'q2'
+        : 'q1'
+    const pool = kind === 'q2' ? TCM_EQUATIONS_Q2 : TCM_EQUATIONS_Q1
+    const tpl = equationTemplateById(item.problemTemplateId ?? '') ?? pool[0]!
+    const vars = { ...(item.problemVars ?? {}) }
+    const keys = item.problemVarDefs?.map((d) => d.key) ?? Object.keys(vars)
+    const apply = (nextId: string, nextVars: Record<string, number>) => {
+      const nextTpl = equationTemplateById(nextId) ?? tpl
+      const nextKind = equationKindForTemplate(nextTpl.id)
+      const filled =
+        Object.keys(nextVars).length > 0
+          ? (fillEquationTemplateWithVars(nextTpl, nextVars) ??
+            nextTpl.build(createRng(++libreProblemRoll)))
+          : nextTpl.build(createRng(++libreProblemRoll))
+      const vkeys = Object.keys(filled.vars).sort((a, b) => a.localeCompare(b))
+      patch(index, {
+        ...item,
+        problemTemplateId: nextTpl.id,
+        problemVars: filled.vars,
+        problemVarDefs: vkeys.map((k) => ({
+          key: k,
+          label: k === 'x' ? 'Solution x' : `Paramètre ${k}`,
+          editOn: 'both' as const,
+        })),
+        labels: ['equations', nextKind],
+        prompt: filled.equation,
+        development: filled.development,
+        operations: filled.operations,
+        calcAnswer: filled.development.join('\n'),
+        responseAnswer: `x = ${fmt(filled.x)}`,
+        answer: fmt(filled.x),
+        unknowns: ['x'],
+      })
+    }
+    return (
+      <div className="libre-frac-stack">
+        <Field label="Modèle">
+          <LineSelect
+            value={tpl.id}
+            ariaLabel={`Modèle ${index + 1}`}
+            options={pool.map((t) => ({ value: t.id, label: t.id }))}
+            onChange={(id) => apply(id, {})}
+          />
+        </Field>
+        <div className="libre-inline-triple is-op">
+          {keys.map((key) => (
+            <Field key={key} label={key === 'x' ? 'Solution x' : `Paramètre ${key}`}>
+              <NumInput
+                compact
+                value={vars[key] != null ? String(vars[key]) : ''}
+                ariaLabel={`${key} ${index + 1}`}
+                onCommit={(raw) => {
+                  const n = parseFrNumber(raw)
+                  if (n == null) return
+                  apply(tpl.id, { ...vars, [key]: n })
+                }}
+              />
+            </Field>
+          ))}
+        </div>
+        <Field label="Corrigé">
+          <CorrigeBox value={item.answer ?? ''} ariaLabel={`Corrigé ${index + 1}`} />
+        </Field>
+      </div>
+    )
+  }
+
+  // TCM ex. 33 — évaluer : modèle + coefficients / valeurs des lettres.
+  if (
+    item.layout === 'algebra' &&
+    (exerciseType === 'tcm-expressions-evaluer' || item.labels?.includes('evaluer'))
+  ) {
+    const kind =
+      item.labels?.includes('q2') || (item.problemTemplateId ?? '').startsWith('q2')
+        ? 'q2'
+        : 'q1'
+    const pool = kind === 'q2' ? TCM_EVALUER_Q2 : TCM_EVALUER_Q1
+    const tpl =
+      evaluerTemplateById(item.problemTemplateId ?? '') ?? pool[0]!
+    const letters = (item.unknowns?.length === 3
+      ? (item.unknowns as [string, string, string])
+      : ['x', 'y', 'z']) as [string, string, string]
+    const vars = { ...(item.problemVars ?? {}) }
+    const keys = item.problemVarDefs?.map((d) => d.key) ?? Object.keys(vars)
+    const applyTpl = (nextId: string, nextVars: Record<string, number>, syncLetters = false) => {
+      const nextTpl = evaluerTemplateById(nextId) ?? tpl
+      const nextKind = evaluerKindForTemplate(nextTpl.id)
+      // En libre : pas de contrainte d’entier (le prof choisit les valeurs).
+      const filled = fillEvaluerTemplateWithVars(nextTpl, letters, nextVars, false)
+      if (!filled) return
+      const coefKeys = Object.keys(filled.vars).filter((k) => 'abcdefghij'.includes(k))
+      const letterKeys = [...filled.letters]
+      const nextKeys = [...coefKeys, ...letterKeys]
+      const rebuilt: MathItem = {
+        ...item,
+        problemTemplateId: nextTpl.id,
+        problemVars: filled.vars,
+        problemVarDefs: nextKeys.map((k) => ({
+          key: k,
+          label: letterKeys.includes(k) ? `Valeur ${k}` : `Coeff. ${k}`,
+          editOn: 'both' as const,
+        })),
+        unknowns: letterKeys,
+        labels: ['evaluer', nextKind],
+        prompt: filled.prompt,
+        answer: filled.answer,
+        development: filled.development,
+        calcAnswer: filled.development.join('\n'),
+      }
+      if (!syncLetters) {
+        patch(index, rebuilt)
+        return
+      }
+      // Les 3 lettres sont partagées entre Q1 et Q2.
+      const letterPatch = Object.fromEntries(letterKeys.map((k) => [k, filled.vars[k]!]))
+      onChangeItems(
+        (items.length ? items : [item]).map((it, i) => {
+          if (i === index) return rebuilt
+          if (!it.labels?.includes('evaluer') || !it.problemTemplateId) return it
+          const otherTpl = evaluerTemplateById(it.problemTemplateId)
+          if (!otherTpl) return it
+          const otherLetters = (it.unknowns?.length === 3
+            ? (it.unknowns as [string, string, string])
+            : letters) as [string, string, string]
+          const otherFilled = fillEvaluerTemplateWithVars(
+            otherTpl,
+            otherLetters,
+            { ...(it.problemVars ?? {}), ...letterPatch },
+            false,
+          )
+          if (!otherFilled) return it
+          const oCoef = Object.keys(otherFilled.vars).filter((k) => 'abcdefghij'.includes(k))
+          const oKeys = [...oCoef, ...otherFilled.letters]
+          return {
+            ...it,
+            problemVars: otherFilled.vars,
+            problemVarDefs: oKeys.map((k) => ({
+              key: k,
+              label: otherFilled.letters.includes(k) ? `Valeur ${k}` : `Coeff. ${k}`,
+              editOn: 'both' as const,
+            })),
+            unknowns: [...otherFilled.letters],
+            prompt: otherFilled.prompt,
+            answer: otherFilled.answer,
+            development: otherFilled.development,
+            calcAnswer: otherFilled.development.join('\n'),
+          }
+        }),
+      )
+    }
+    return (
+      <div className="libre-frac-stack">
+        <Field label="Modèle">
+          <LineSelect
+            value={tpl.id}
+            ariaLabel={`Modèle ${index + 1}`}
+            options={pool.map((t) => ({ value: t.id, label: `${t.id} — ${t.pattern}` }))}
+            onChange={(id) => applyTpl(id, vars, false)}
+          />
+        </Field>
+        <div className="libre-inline-triple is-op">
+          {keys.map((key) => (
+            <Field
+              key={key}
+              label={letters.includes(key) ? `Valeur ${key}` : `Coeff. ${key}`}
+            >
+              <NumInput
+                compact
+                value={vars[key] != null ? String(vars[key]) : ''}
+                ariaLabel={`${key} ${index + 1}`}
+                onCommit={(raw) => {
+                  const n = parseFrNumber(raw)
+                  if (n == null) return
+                  applyTpl(tpl.id, { ...vars, [key]: n }, letters.includes(key))
+                }}
+              />
+            </Field>
+          ))}
+        </div>
+        <Field label="Corrigé">
+          <CorrigeBox value={item.answer ?? ''} ariaLabel={`Corrigé ${index + 1}`} />
+        </Field>
+      </div>
     )
   }
 
