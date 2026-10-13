@@ -333,6 +333,177 @@ function Field({
   )
 }
 
+const EQUATION_TEMPLATE_LABELS = new Map<string, string>()
+function equationTemplateLabel(t: { id: string; build: (rng: ReturnType<typeof createRng>) => { equation: string } }): string {
+  const cached = EQUATION_TEMPLATE_LABELS.get(t.id)
+  if (cached) return cached
+  const label = `${t.id} — ${t.build(createRng(t.id.length * 1009 + 17)).equation}`
+  EQUATION_TEMPLATE_LABELS.set(t.id, label)
+  return label
+}
+
+/** Complète problemTemplateId / problemVars pour ex.32–34 (et 28) si absents. */
+function hydrateAlgebraTemplateItem(item: MathItem, exerciseType: string, index: number): MathItem {
+  const needs =
+    !item.problemTemplateId ||
+    !item.problemVars ||
+    Object.keys(item.problemVars).length === 0 ||
+    !item.problemVarDefs?.length
+  if (!needs) return item
+
+  if (exerciseType === 'tcm-expressions-reduire' || item.labels?.includes('reduire')) {
+    const isQ2 =
+      item.labels?.includes('q2') ||
+      (item.problemTemplateId != null && item.problemTemplateId !== 'sum') ||
+      (item.prompt ?? '').includes('·')
+    if (isQ2) {
+      const tpl = reduireTemplateById(item.problemTemplateId ?? '') ?? TCM_REDUIRE_Q2[index % TCM_REDUIRE_Q2.length]!
+      return (
+        fillReduireQ2WithVars(tpl, {
+          ...(item.problemVars ?? {}),
+          k0: tpl.slots[0] === 'paren' ? 1 : 0,
+          k1: tpl.slots[1] === 'paren' ? 1 : 0,
+          k2: tpl.slots[2] === 'paren' ? 1 : 0,
+          c0: 5,
+          c1: 4,
+          c2: 2,
+          c0a: 3,
+          c0b: 2,
+          c1a: 3,
+          c1b: 2,
+          c2a: 3,
+          c2b: 2,
+          p0: 0,
+          p1: 1,
+          p2: tpl.slots[2] === 'const' ? -1 : 0,
+          nLetters: 3,
+          L0: 0,
+          L1: 1,
+          L2: 2,
+        }) ?? item
+      )
+    }
+    return (
+      fillReduireQ1WithVars({
+        n: 4,
+        L0: 0,
+        L1: 1,
+        t0: 3,
+        t1: -2,
+        t2: 5,
+        t3: 1,
+        p0: 0,
+        p1: 0,
+        p2: 1,
+        p3: -1,
+        ...(item.problemVars ?? {}),
+      }) ?? item
+    )
+  }
+
+  if (exerciseType === 'tcm-equations' || item.labels?.includes('equations')) {
+    const kind =
+      item.labels?.includes('q2') || (item.problemTemplateId ?? '').startsWith('q2') || index === 1
+        ? 'q2'
+        : 'q1'
+    const pool = kind === 'q2' ? TCM_EQUATIONS_Q2 : TCM_EQUATIONS_Q1
+    const tpl = equationTemplateById(item.problemTemplateId ?? '') ?? pool[0]!
+    const built =
+      fillEquationTemplateWithVars(tpl, item.problemVars ?? {}) ??
+      tpl.build(createRng(index * 997 + 13))
+    const keys = Object.keys(built.vars).sort((a, b) => a.localeCompare(b))
+    return {
+      ...item,
+      problemTemplateId: tpl.id,
+      problemVars: built.vars,
+      problemVarDefs: keys.map((k) => ({
+        key: k,
+        label: k === 'x' ? 'Solution x' : `Paramètre ${k}`,
+        editOn: 'both' as const,
+      })),
+      labels: ['equations', kind],
+      prompt: built.equation,
+      development: built.development,
+      operations: built.operations,
+      calcAnswer: built.development.join('\n'),
+      responseAnswer: `x = ${fmt(built.x)}`,
+      answer: fmt(built.x),
+      unknowns: ['x'],
+    }
+  }
+
+  if (exerciseType === 'tcm-expressions-evaluer' || item.labels?.includes('evaluer')) {
+    const kind =
+      item.labels?.includes('q2') || (item.problemTemplateId ?? '').startsWith('q2') || index === 1
+        ? 'q2'
+        : 'q1'
+    const pool = kind === 'q2' ? TCM_EVALUER_Q2 : TCM_EVALUER_Q1
+    const tpl = evaluerTemplateById(item.problemTemplateId ?? '') ?? pool[index % pool.length]!
+    const letters = (item.unknowns?.length === 3
+      ? (item.unknowns as [string, string, string])
+      : ['x', 'y', 'z']) as [string, string, string]
+    const baseVars: Record<string, number> = {
+      [letters[0]]: 3,
+      [letters[1]]: -2,
+      [letters[2]]: 4,
+      a: 2,
+      b: 3,
+      c: 4,
+      d: 5,
+      e: 2,
+      f: 3,
+      ...(item.problemVars ?? {}),
+    }
+    const filled = fillEvaluerTemplateWithVars(tpl, letters, baseVars, false)
+    if (!filled) return item
+    const coefKeys = Object.keys(filled.vars).filter((k) => 'abcdefghij'.includes(k))
+    const letterKeys = [...filled.letters]
+    const keys = [...coefKeys, ...letterKeys]
+    return {
+      ...item,
+      problemTemplateId: tpl.id,
+      problemVars: filled.vars,
+      problemVarDefs: keys.map((k) => ({
+        key: k,
+        label: letterKeys.includes(k) ? `Valeur ${k}` : `Coeff. ${k}`,
+        editOn: 'both' as const,
+      })),
+      unknowns: letterKeys,
+      labels: ['evaluer', kind],
+      prompt: filled.prompt,
+      answer: filled.answer,
+      development: filled.development,
+      calcAnswer: filled.development.join('\n'),
+    }
+  }
+
+  if (exerciseType === 'tcm-priorite-ops' || item.labels?.includes('priorite')) {
+    const kind = item.labels?.includes('frac-pow') || index === 1 ? 'frac-pow' : 'ops'
+    const pool = kind === 'frac-pow' ? TCM_PRIORITE_FRAC_POW : TCM_PRIORITE_OPS
+    const tpl = prioriteTemplateById(item.problemTemplateId ?? '') ?? pool[0]!
+    const filled = fillPrioriteTemplateWithVars(tpl, item.problemVars ?? {})
+    if (!filled) return item
+    const keys = Object.keys(filled.vars)
+    return {
+      ...item,
+      problemTemplateId: tpl.id,
+      problemVars: filled.vars,
+      problemVarDefs: keys.map((k) => ({
+        key: k,
+        label: 'pqr'.includes(k) ? `Exposant ${k}` : `Valeur ${k}`,
+        editOn: 'both' as const,
+      })),
+      labels: ['priorite', tpl.kind],
+      prompt: filled.prompt,
+      answer: filled.answer,
+      development: filled.development,
+      calcAnswer: filled.development.join('\n'),
+    }
+  }
+
+  return item
+}
+
 export function TcmLibreEditor({
   instruction,
   items,
@@ -349,6 +520,25 @@ export function TcmLibreEditor({
   const patch = (index: number, next: MathItem) => {
     onChangeItems(items.map((item, i) => (i === index ? next : item)))
   }
+
+  // Hydrate ex.28 / 32–34 : modèle + variables visibles dès l’ouverture du mode libre.
+  useEffect(() => {
+    if (
+      exerciseType !== 'tcm-priorite-ops' &&
+      exerciseType !== 'tcm-expressions-reduire' &&
+      exerciseType !== 'tcm-expressions-evaluer' &&
+      exerciseType !== 'tcm-equations'
+    ) {
+      return
+    }
+    let changed = false
+    const next = items.map((item, index) => {
+      const hydrated = hydrateAlgebraTemplateItem(item, exerciseType, index)
+      if (hydrated !== item) changed = true
+      return hydrated
+    })
+    if (changed) onChangeItems(next)
+  }, [exerciseType, items, onChangeItems])
 
   const withProps = exerciseType.includes('ex16')
 
@@ -2453,10 +2643,18 @@ function renderFields(
     return (
       <div className="libre-frac-stack">
         <Field label="Modèle">
-          <CorrigeBox value="Somme de monômes" ariaLabel="Modèle somme" />
+          <LineSelect
+            value="sum"
+            ariaLabel={`Modèle ${index + 1}`}
+            options={[{ value: 'sum', label: 'sum — somme de monômes' }]}
+            onChange={() => {
+              const rebuilt = fillReduireQ1WithVars(vars)
+              if (rebuilt) patch(index, { ...item, ...rebuilt })
+            }}
+          />
         </Field>
         <div className="libre-inline-triple is-op">
-          {keys.map((key) => (
+          {(keys.length ? keys : Object.keys(vars).filter((k) => k.startsWith('t'))).map((key) => (
             <Field key={key} label={`Terme ${Number(key.slice(1)) + 1}`}>
               <NumInput
                 compact
@@ -2526,12 +2724,15 @@ function renderFields(
           <LineSelect
             value={tpl.id}
             ariaLabel={`Modèle ${index + 1}`}
-            options={pool.map((t) => ({ value: t.id, label: t.id }))}
+            options={pool.map((t) => ({
+              value: t.id,
+              label: equationTemplateLabel(t),
+            }))}
             onChange={(id) => apply(id, {})}
           />
         </Field>
         <div className="libre-inline-triple is-op">
-          {keys.map((key) => (
+          {(keys.length ? keys : Object.keys(vars)).map((key) => (
             <Field key={key} label={key === 'x' ? 'Solution x' : `Paramètre ${key}`}>
               <NumInput
                 compact
