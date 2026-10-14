@@ -68,8 +68,8 @@ export function QuestionEditor({
         </div>
       </legend>
       <p className="muted" style={{ margin: 0, fontSize: 11 }}>
-        Trois formes (Texte / Image / Phrase) : basculez pour les remplir ; sur la fiche, le
-        toggle apparaît à droite du numéro quand plusieurs formes sont remplies.
+        Trois formes (Texte / Image / Phrase) : basculez pour les remplir ; sur la fiche, les
+        icônes apparaissent en colonne dans la marge gauche quand plusieurs formes sont remplies.
       </p>
       {audioCount ? (
         <label className="tcf-field is-number">

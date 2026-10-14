@@ -1,6 +1,7 @@
 import type { CoordShape, MathItem, PreviewMode } from '@/math/types'
 import type { GlossaryFigureId } from '@/math/glossary-banks'
 import type { TcfTypeReponse } from '@/tcf/types'
+import { TcfFormMarginIcons } from '@/components/tcf/TcfFormIcons'
 import { CardGrid } from '@/jeux/CardGrid'
 import type { GameBoard } from '@/jeux/types'
 import { CalligraphyView } from './math/CalligraphyView'
@@ -118,6 +119,9 @@ export function ItemView({
       ? item.tcf.formSelect
       : undefined
   const tcfActiveForm = tcfFormMode ?? tcfFormSelect?.active
+  const showTcfFormIcons = Boolean(
+    tcfFormSelect && tcfFormSelect.filled.length > 1 && onSelectTcfForm && tcfActiveForm,
+  )
   const showTcfPageChip = Boolean(
     onToggleTcfPageBreak &&
       item.layout === 'tcf' &&
@@ -185,6 +189,13 @@ export function ItemView({
         >
           {oralModeLabel}
         </button>
+      ) : null}
+      {showTcfFormIcons && tcfFormSelect && tcfActiveForm && onSelectTcfForm ? (
+        <TcfFormMarginIcons
+          filled={tcfFormSelect.filled}
+          active={tcfActiveForm}
+          onSelect={onSelectTcfForm}
+        />
       ) : null}
       {showTcfPageChip ? (
         <button
@@ -283,12 +294,7 @@ export function ItemView({
         ) : null}
         {item.layout === 'count-icons' && <CountIconsBlock item={item} mode={mode} />}
         {item.layout === 'tcf' && (
-          <TcfItemView
-            item={item}
-            mode={mode}
-            tcfFormMode={tcfActiveForm}
-            onSelectTcfForm={onSelectTcfForm}
-          />
+          <TcfItemView item={item} mode={mode} tcfFormMode={tcfActiveForm} />
         )}
         {item.layout === 'audio-dictation' && <AudioDictationBlock item={item} mode={mode} />}
         {item.layout === 'symmetry-grid' && <SymmetryGridBlock item={item} mode={mode} />}

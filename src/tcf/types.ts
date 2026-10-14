@@ -42,7 +42,7 @@ type TcfQuestionBase = {
   image?: string
   /**
    * Autres formes de réponse (Texte / Image / Phrase) en plus de `type_reponse`.
-   * Sur la fiche, le toggle à droite du titre ne propose que les formes remplies.
+   * Sur la fiche, les icônes en marge gauche ne proposent que les formes remplies.
    */
   formes?: TcfQuestionFormes
 }
