@@ -195,8 +195,9 @@ export function usePageNavigation({
       ...newBlock,
       extraBlocks: undefined,
     }
-    setPages((current) => [...current, next])
-    setSheetIndex(worksheets.length)
+    // Insérée juste après la page active, pas en fin de document.
+    setPages((current) => [...current.slice(0, pageIndex + 1), next, ...current.slice(pageIndex + 1)])
+    setSheetIndex(worksheets.filter((sheet) => (sheet.configIndex ?? 0) <= pageIndex).length)
     setBlockIndex(0)
   }
 
