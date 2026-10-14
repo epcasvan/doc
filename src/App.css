@@ -4152,7 +4152,11 @@ textarea.pill-input,
   font-size:12px;font-weight:700;box-sizing:border-box
 }
 .tcf-question-editor legend>.tcf-q-legend-title{display:inline-flex;align-items:center;gap:6px}
-.tcf-question-editor legend>.mode-toggle{margin-left:auto}
+.tcf-question-editor legend>.mode-toggle{
+  margin-left:auto;flex:0 1 auto;min-width:min(100%,11rem);max-width:14rem;
+  padding:3px;gap:4px
+}
+.tcf-question-editor legend>.mode-toggle button{padding:6px 6px;font-size:11px}
 .tcf-choix-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
 .tcf-choix-row{display:flex;align-items:center;gap:6px}
 .tcf-choix-row>.pill-input{flex:1;min-width:0}
