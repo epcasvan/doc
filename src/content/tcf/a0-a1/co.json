@@ -529,7 +529,27 @@
         "type_reponse": "lignes",
         "points": 2,
         "nb_lignes": 2,
-        "reponse_modele": "30 minutes."
+        "reponse_modele": "30 minutes.",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "30 minutes.",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "Salut"
+              },
+              {
+                "id": "c",
+                "texte": "Marie"
+              }
+            ]
+          }
+        }
       },
       {
         "enonce": "Vous pouvez manger le gâteau avec…",
@@ -2717,7 +2737,27 @@
         "type_reponse": "lignes",
         "points": 1,
         "nb_lignes": 2,
-        "reponse_modele": "15 %."
+        "reponse_modele": "15 %.",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "15 %.",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "25 euros"
+              },
+              {
+                "id": "c",
+                "texte": "10 h"
+              }
+            ]
+          }
+        }
       },
       {
         "enonce": "Quel cadeau pouvez-vous trouver dans le magasin ?",
@@ -2858,7 +2898,27 @@
         "type_reponse": "lignes",
         "points": 1,
         "nb_lignes": 2,
-        "reponse_modele": "Le 68 06."
+        "reponse_modele": "Le 68 06.",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "Le 68 06.",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "Bienvenue"
+              },
+              {
+                "id": "c",
+                "texte": "Vous"
+              }
+            ]
+          }
+        }
       },
       {
         "enonce": "Quand l’entreprise ferme-t-elle ?",
@@ -3149,7 +3209,27 @@
         "type_reponse": "lignes",
         "points": 1,
         "nb_lignes": 2,
-        "reponse_modele": "16 euros."
+        "reponse_modele": "16 euros.",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "16 euros.",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "16 euros"
+              },
+              {
+                "id": "c",
+                "texte": "20 h 00"
+              }
+            ]
+          }
+        }
       }
     ],
     "consigne_supplementaire": null
@@ -3272,7 +3352,27 @@
         "type_reponse": "lignes",
         "points": 1,
         "nb_lignes": 2,
-        "reponse_modele": "Elle est bonne."
+        "reponse_modele": "Elle est bonne.",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "Elle est bonne.",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "Aujourd"
+              },
+              {
+                "id": "c",
+                "texte": "Belgique"
+              }
+            ]
+          }
+        }
       }
     ],
     "consigne_supplementaire": null
@@ -3867,7 +3967,27 @@
         "type_reponse": "lignes",
         "points": 1,
         "nb_lignes": 2,
-        "reponse_modele": "Le 09 10 80 13 72."
+        "reponse_modele": "Le 09 10 80 13 72.",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "Le 09 10 80 13 72.",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "Radio Trafic"
+              },
+              {
+                "id": "c",
+                "texte": "Il"
+              }
+            ]
+          }
+        }
       }
     ],
     "consigne_supplementaire": null
@@ -5752,7 +5872,27 @@
         "type_reponse": "lignes",
         "points": 2,
         "nb_lignes": 1,
-        "reponse_modele": "Avant le 18 juin."
+        "reponse_modele": "Avant le 18 juin.",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "Avant le 18 juin.",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "le 18 juin"
+              },
+              {
+                "id": "c",
+                "texte": "Monsieur Garcia"
+              }
+            ]
+          }
+        }
       },
       {
         "enonce": "Quel document devez-vous envoyer ?",
@@ -6813,7 +6953,27 @@
         "type_reponse": "lignes",
         "points": 2,
         "nb_lignes": 1,
-        "reponse_modele": "01 40 60 54"
+        "reponse_modele": "01 40 60 54",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "01 40 60 54",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "midi"
+              },
+              {
+                "id": "c",
+                "texte": "numéro 3"
+              }
+            ]
+          }
+        }
       }
     ],
     "consigne_supplementaire": null

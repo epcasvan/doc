@@ -45,7 +45,27 @@
             "reponse": "F. Emma"
           }
         ],
-        "reponse_modele": "…"
+        "reponse_modele": "…",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "D. Maxime · C. Charles · G. Marion · A. Sophia · E. Léa · F. Emma",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "Jeux"
+              },
+              {
+                "id": "c",
+                "texte": "Jeu"
+              }
+            ]
+          }
+        }
       }
     ],
     "consigne_supplementaire": null
@@ -790,7 +810,27 @@
             "reponse": "A. Juliette"
           }
         ],
-        "reponse_modele": "…"
+        "reponse_modele": "…",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "E. Emma · H. Maël · B. Paul · C. Laura · F. Simon · A. Juliette",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "9 h"
+              },
+              {
+                "id": "c",
+                "texte": "18 h"
+              }
+            ]
+          }
+        }
       }
     ],
     "consigne_supplementaire": null
@@ -1419,7 +1459,27 @@
         "type_reponse": "lignes",
         "points": 1,
         "nb_lignes": 2,
-        "reponse_modele": "Vrai : la clé de leur succès, c’est un rap « accessible, familial et simple »."
+        "reponse_modele": "Vrai : la clé de leur succès, c’est un rap « accessible, familial et simple ».",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "Vrai : la clé de leur succès, c’est un rap « accessible, familial et simple ».",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "le 23 novembre"
+              },
+              {
+                "id": "c",
+                "texte": "Bigflo"
+              }
+            ]
+          }
+        }
       }
     ],
     "consigne_supplementaire": null
@@ -1470,7 +1530,27 @@
             "reponse": "C. Hélène"
           }
         ],
-        "reponse_modele": "…"
+        "reponse_modele": "…",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "H. Hakim · G. Daniel · E. Baptiste · B. Pablo · A. Mira · C. Hélène",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "Idées"
+              },
+              {
+                "id": "c",
+                "texte": "Document"
+              }
+            ]
+          }
+        }
       }
     ],
     "consigne_supplementaire": null
@@ -2160,7 +2240,27 @@
             "reponse": "B. Patricia"
           }
         ],
-        "reponse_modele": "…"
+        "reponse_modele": "…",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "C. Gabriela · G. Christophe · F. Kevin · H. Sabrina · A. Samir · B. Patricia",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "Films"
+              },
+              {
+                "id": "c",
+                "texte": "Document"
+              }
+            ]
+          }
+        }
       }
     ],
     "consigne_supplementaire": null
@@ -2900,7 +3000,27 @@
             "reponse": "Menu n° 5"
           }
         ],
-        "reponse_modele": "…"
+        "reponse_modele": "…",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "Menu n° 4 · Menu n° 1 · Menu n° 3 · Menu n° 2 · Menu n° 5",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "13 euros"
+              },
+              {
+                "id": "c",
+                "texte": "15 euros"
+              }
+            ]
+          }
+        }
       }
     ],
     "consigne_supplementaire": null
@@ -3043,7 +3163,27 @@
         "type_reponse": "lignes",
         "points": 1.5,
         "nb_lignes": 2,
-        "reponse_modele": "Le 2 juillet."
+        "reponse_modele": "Le 2 juillet.",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "Le 2 juillet.",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "le 2 juillet"
+              },
+              {
+                "id": "c",
+                "texte": "le 30 juillet"
+              }
+            ]
+          }
+        }
       },
       {
         "enonce": "Le frère de Gabrielle…",
@@ -3167,14 +3307,54 @@
         "type_reponse": "lignes",
         "points": 1.5,
         "nb_lignes": 2,
-        "reponse_modele": "Froid."
+        "reponse_modele": "Froid.",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "Froid.",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "Recette"
+              },
+              {
+                "id": "c",
+                "texte": "Tatin Durée"
+              }
+            ]
+          }
+        }
       },
       {
         "enonce": "Combien de temps faut-il pour cuire la tarte ?",
         "type_reponse": "lignes",
         "points": 1.5,
         "nb_lignes": 2,
-        "reponse_modele": "Environ 30 minutes."
+        "reponse_modele": "Environ 30 minutes.",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "Environ 30 minutes.",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "Recette"
+              },
+              {
+                "id": "c",
+                "texte": "Tatin Durée"
+              }
+            ]
+          }
+        }
       },
       {
         "enonce": "On vous conseille de manger la tarte accompagnée de…",
@@ -3271,7 +3451,27 @@
         "type_reponse": "lignes",
         "points": 1.5,
         "nb_lignes": 2,
-        "reponse_modele": "15 ans."
+        "reponse_modele": "15 ans.",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "15 ans.",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "13 h"
+              },
+              {
+                "id": "c",
+                "texte": "16 h 45"
+              }
+            ]
+          }
+        }
       },
       {
         "enonce": "Que doit-on présenter pour participer ?",
@@ -3498,7 +3698,27 @@
             "reponse": "Annonce n° 4"
           }
         ],
-        "reponse_modele": "…"
+        "reponse_modele": "…",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "Annonce n° 2 · Annonce n° 5 · Annonce n° 3 · Annonce n° 1 · Annonce n° 4",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "16 h"
+              },
+              {
+                "id": "c",
+                "texte": "n° 1"
+              }
+            ]
+          }
+        }
       }
     ],
     "consigne_supplementaire": null
@@ -3623,7 +3843,27 @@
         "type_reponse": "lignes",
         "points": 1.5,
         "nb_lignes": 2,
-        "reponse_modele": "20 degrés."
+        "reponse_modele": "20 degrés.",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "20 degrés.",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "le 7 juin"
+              },
+              {
+                "id": "c",
+                "texte": "17 juin"
+              }
+            ]
+          }
+        }
       },
       {
         "enonce": "Selon l’agence, le climat de cette saison est…",
@@ -3774,14 +4014,54 @@
         "type_reponse": "lignes",
         "points": 1.5,
         "nb_lignes": 2,
-        "reponse_modele": "Il a une grande capacité de mémoire (1 To)."
+        "reponse_modele": "Il a une grande capacité de mémoire (1 To).",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "Il a une grande capacité de mémoire (1 To).",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "Guide"
+              },
+              {
+                "id": "c",
+                "texte": "Utile"
+              }
+            ]
+          }
+        }
       },
       {
         "enonce": "D’après l’article, combien de temps garde-t-on un ordinateur portable, en général ?",
         "type_reponse": "lignes",
         "points": 1.5,
         "nb_lignes": 2,
-        "reponse_modele": "5 à 7 ans."
+        "reponse_modele": "5 à 7 ans.",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "5 à 7 ans.",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "Guide"
+              },
+              {
+                "id": "c",
+                "texte": "Utile"
+              }
+            ]
+          }
+        }
       }
     ],
     "consigne_supplementaire": null
@@ -4084,7 +4364,27 @@
             "reponse": "B. Paul"
           }
         ],
-        "reponse_modele": "…"
+        "reponse_modele": "…",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "F. Marie · G. Hugo · D. Jean · H. Rose · A. Rabia · B. Paul",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "12 h 30"
+              },
+              {
+                "id": "c",
+                "texte": "13 h 30"
+              }
+            ]
+          }
+        }
       }
     ],
     "consigne_supplementaire": null
@@ -4469,7 +4769,27 @@
         "type_reponse": "lignes",
         "points": 2,
         "nb_lignes": 2,
-        "reponse_modele": "Appeler le directeur."
+        "reponse_modele": "Appeler le directeur.",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "Appeler le directeur.",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "Deux"
+              },
+              {
+                "id": "c",
+                "texte": "Document"
+              }
+            ]
+          }
+        }
       }
     ],
     "consigne_supplementaire": null
@@ -4709,7 +5029,27 @@
             "reponse": "G. Pablo"
           }
         ],
-        "reponse_modele": "…"
+        "reponse_modele": "…",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "B. Myriam · C. Frank · F. Nicole · E. Alessio · H. Marcello · G. Pablo",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "9 h"
+              },
+              {
+                "id": "c",
+                "texte": "12 h"
+              }
+            ]
+          }
+        }
       }
     ],
     "consigne_supplementaire": null
@@ -4806,7 +5146,27 @@
         "type_reponse": "lignes",
         "points": 1,
         "nb_lignes": 2,
-        "reponse_modele": "Chez Alberto, 18, rue St-Gabriel."
+        "reponse_modele": "Chez Alberto, 18, rue St-Gabriel.",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "Chez Alberto, 18, rue St-Gabriel.",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "20 h"
+              },
+              {
+                "id": "c",
+                "texte": "le 15 mars"
+              }
+            ]
+          }
+        }
       },
       {
         "enonce": "Il faut mettre quoi dans la boîte ?",
@@ -4903,7 +5263,27 @@
         "type_reponse": "lignes",
         "points": 2,
         "nb_lignes": 2,
-        "reponse_modele": "Avec le produit désinfectant."
+        "reponse_modele": "Avec le produit désinfectant.",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "Avec le produit désinfectant.",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "numéro 15"
+              },
+              {
+                "id": "c",
+                "texte": "Deux"
+              }
+            ]
+          }
+        }
       },
       {
         "enonce": "Document 1 — Il faut apporter quoi à l’accueil ?",
@@ -4964,7 +5344,27 @@
         "type_reponse": "lignes",
         "points": 2,
         "nb_lignes": 2,
-        "reponse_modele": "Le technicien (au 06 78 89 89 78)."
+        "reponse_modele": "Le technicien (au 06 78 89 89 78).",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "Le technicien (au 06 78 89 89 78).",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "numéro 15"
+              },
+              {
+                "id": "c",
+                "texte": "Deux"
+              }
+            ]
+          }
+        }
       }
     ],
     "consigne_supplementaire": null
@@ -5186,7 +5586,27 @@
             "reponse": "H. Thibaud"
           }
         ],
-        "reponse_modele": "…"
+        "reponse_modele": "…",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "C. Nicole · D. Claire · A. Antoine · E. Tatiana · B. Jordan · H. Thibaud",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "Dimanche"
+              },
+              {
+                "id": "c",
+                "texte": "Samedi"
+              }
+            ]
+          }
+        }
       }
     ],
     "consigne_supplementaire": null
@@ -7465,7 +7885,27 @@
         "enonce": "Combien coûte l’inscription à deux ?",
         "type_reponse": "lignes",
         "nb_lignes": 2,
-        "reponse_modele": "30 francs."
+        "reponse_modele": "30 francs.",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "30 francs.",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "Dimanche"
+              },
+              {
+                "id": "c",
+                "texte": "Vendredi"
+              }
+            ]
+          }
+        }
       },
       {
         "enonce": "Nous sommes jeudi : quand faut-il répondre à Méline ?",
@@ -9332,7 +9772,27 @@
         "enonce": "Combien coûte le pass pour une personne de 20 ans ?",
         "type_reponse": "lignes",
         "nb_lignes": 2,
-        "reponse_modele": "40 francs."
+        "reponse_modele": "40 francs.",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "40 francs.",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "Genève City"
+              },
+              {
+                "id": "c",
+                "texte": "Pass Avec"
+              }
+            ]
+          }
+        }
       },
       {
         "enonce": "Où peut-on acheter le pass ?",
@@ -9496,7 +9956,27 @@
         "enonce": "Jusqu’à quel âge peut-on acheter un Ticket Jeune Week-end ?",
         "type_reponse": "lignes",
         "nb_lignes": 2,
-        "reponse_modele": "Avant 26 ans."
+        "reponse_modele": "Avant 26 ans.",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "Avant 26 ans.",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "Bienvenue"
+              },
+              {
+                "id": "c",
+                "texte": "Touchez"
+              }
+            ]
+          }
+        }
       }
     ],
     "consigne_supplementaire": null
@@ -9785,7 +10265,27 @@
         "enonce": "Combien coûte la carte ?",
         "type_reponse": "lignes",
         "nb_lignes": 2,
-        "reponse_modele": "2,90 francs."
+        "reponse_modele": "2,90 francs.",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "2,90 francs.",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "La Carte"
+              },
+              {
+                "id": "c",
+                "texte": "Carte"
+              }
+            ]
+          }
+        }
       },
       {
         "enonce": "Combien de temps les places sont-elles valables ?",
@@ -10019,7 +10519,27 @@
         "enonce": "Combien coûte la carte Biblio+ pour les jeunes ?",
         "type_reponse": "lignes",
         "nb_lignes": 2,
-        "reponse_modele": "30 francs par an."
+        "reponse_modele": "30 francs par an.",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "30 francs par an.",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "10 h"
+              },
+              {
+                "id": "c",
+                "texte": "19 h"
+              }
+            ]
+          }
+        }
       }
     ],
     "consigne_supplementaire": null
@@ -10421,7 +10941,27 @@
         "enonce": "Combien de temps dure la cuisson ?",
         "type_reponse": "lignes",
         "nb_lignes": 2,
-        "reponse_modele": "Environ 15 minutes."
+        "reponse_modele": "Environ 15 minutes.",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "Environ 15 minutes.",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "Petits"
+              },
+              {
+                "id": "c",
+                "texte": "Environ"
+              }
+            ]
+          }
+        }
       }
     ],
     "consigne_supplementaire": null
@@ -10762,7 +11302,27 @@
         "enonce": "Combien de temps dure la cuisson ?",
         "type_reponse": "lignes",
         "nb_lignes": 2,
-        "reponse_modele": "Environ 20 minutes."
+        "reponse_modele": "Environ 20 minutes.",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "Environ 20 minutes.",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "Gâteau"
+              },
+              {
+                "id": "c",
+                "texte": "Préparation"
+              }
+            ]
+          }
+        }
       },
       {
         "enonce": "Comment est le gâteau à la sortie du four ?",
@@ -10900,7 +11460,27 @@
         "enonce": "Jusqu’à quand peut-on s’inscrire ?",
         "type_reponse": "lignes",
         "nb_lignes": 2,
-        "reponse_modele": "Avant le 9 février."
+        "reponse_modele": "Avant le 9 février.",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "Avant le 9 février.",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "9 h"
+              },
+              {
+                "id": "c",
+                "texte": "20 h 30"
+              }
+            ]
+          }
+        }
       },
       {
         "enonce": "Quel objet devez-vous apporter ?",
@@ -11723,7 +12303,27 @@
         "enonce": "Combien de personnes font du vélo avant tout pour faire du sport ?",
         "type_reponse": "lignes",
         "nb_lignes": 2,
-        "reponse_modele": "Six personnes sur dix."
+        "reponse_modele": "Six personnes sur dix.",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "Six personnes sur dix.",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "Près"
+              },
+              {
+                "id": "c",
+                "texte": "Suisses"
+              }
+            ]
+          }
+        }
       },
       {
         "enonce": "Que permet d’économiser le vélo ?",
@@ -11869,7 +12469,27 @@
         "enonce": "Quel âge faut-il avoir pour participer ?",
         "type_reponse": "lignes",
         "nb_lignes": 2,
-        "reponse_modele": "Moins de 30 ans."
+        "reponse_modele": "Moins de 30 ans.",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "Moins de 30 ans.",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "minuit"
+              },
+              {
+                "id": "c",
+                "texte": "15 novembre"
+              }
+            ]
+          }
+        }
       },
       {
         "enonce": "Dans quel domaine peut-on s’inscrire ?",
@@ -12129,7 +12749,27 @@
         "enonce": "Pourquoi les jeunes aiment-ils voyager ?",
         "type_reponse": "lignes",
         "nb_lignes": 2,
-        "reponse_modele": "Pour rencontrer de nouvelles personnes."
+        "reponse_modele": "Pour rencontrer de nouvelles personnes.",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "Pour rencontrer de nouvelles personnes.",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "Quels"
+              },
+              {
+                "id": "c",
+                "texte": "Suisses"
+              }
+            ]
+          }
+        }
       }
     ],
     "consigne_supplementaire": null
@@ -12249,7 +12889,27 @@
         "enonce": "Qu’est-ce que Maëlle déteste en ville ?",
         "type_reponse": "lignes",
         "nb_lignes": 2,
-        "reponse_modele": "La foule : il y a trop de monde."
+        "reponse_modele": "La foule : il y a trop de monde.",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "La foule : il y a trop de monde.",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "Vous"
+              },
+              {
+                "id": "c",
+                "texte": "Pourquoi"
+              }
+            ]
+          }
+        }
       },
       {
         "enonce": "Où Vincent aimerait-il habiter ?",
@@ -12465,7 +13125,27 @@
         "enonce": "À quel âge Kev Adams a-t-il commencé les spectacles ?",
         "type_reponse": "lignes",
         "nb_lignes": 2,
-        "reponse_modele": "À 16 ans."
+        "reponse_modele": "À 16 ans.",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "À 16 ans.",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "Jeudi"
+              },
+              {
+                "id": "c",
+                "texte": "Samedi"
+              }
+            ]
+          }
+        }
       },
       {
         "enonce": "Qui étaient ses premiers spectateurs ?",
@@ -12961,7 +13641,27 @@
         "enonce": "À quelle période peut-on faire du canoë ?",
         "type_reponse": "lignes",
         "nb_lignes": 2,
-        "reponse_modele": "De juin à octobre."
+        "reponse_modele": "De juin à octobre.",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "De juin à octobre.",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "Promenade"
+              },
+              {
+                "id": "c",
+                "texte": "De"
+              }
+            ]
+          }
+        }
       },
       {
         "enonce": "Que peut-on faire pendant la promenade ?",
@@ -17765,7 +18465,27 @@
         "enonce": "Dans quelle ville Agnès va-t-elle s’installer ?",
         "type_reponse": "lignes",
         "nb_lignes": 2,
-        "reponse_modele": "À Zurich."
+        "reponse_modele": "À Zurich.",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "À Zurich.",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "le 2 avril"
+              },
+              {
+                "id": "c",
+                "texte": "le 20 mars"
+              }
+            ]
+          }
+        }
       },
       {
         "enonce": "Où va travailler Agnès ?",
@@ -18062,7 +18782,27 @@
         "enonce": "Pour s’excuser, que vous offre le magasin ?",
         "type_reponse": "lignes",
         "nb_lignes": 2,
-        "reponse_modele": "Un bon de réduction de 10 CHF."
+        "reponse_modele": "Un bon de réduction de 10 CHF.",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "Un bon de réduction de 10 CHF.",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "Bonjour"
+              },
+              {
+                "id": "c",
+                "texte": "Vous"
+              }
+            ]
+          }
+        }
       }
     ],
     "consigne_supplementaire": null
@@ -18113,7 +18853,27 @@
         "enonce": "À partir de quelle date pouvez-vous regarder les chaînes ?",
         "type_reponse": "lignes",
         "nb_lignes": 2,
-        "reponse_modele": "Le 4 octobre."
+        "reponse_modele": "Le 4 octobre.",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "Le 4 octobre.",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "12 octobre"
+              },
+              {
+                "id": "c",
+                "texte": "Bonjour"
+              }
+            ]
+          }
+        }
       },
       {
         "enonce": "Quelle chaîne est faite pour le jeune public ?",
@@ -18392,7 +19152,27 @@
         "enonce": "Combien coûte une semaine de location ?",
         "type_reponse": "lignes",
         "nb_lignes": 2,
-        "reponse_modele": "800 CHF."
+        "reponse_modele": "800 CHF.",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "800 CHF.",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "Bonjour"
+              },
+              {
+                "id": "c",
+                "texte": "Vous"
+              }
+            ]
+          }
+        }
       }
     ],
     "consigne_supplementaire": null
@@ -18417,7 +19197,27 @@
         "enonce": "Quel âge a le fils de Guillaume ?",
         "type_reponse": "lignes",
         "nb_lignes": 2,
-        "reponse_modele": "Il a 15 ans."
+        "reponse_modele": "Il a 15 ans.",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "Il a 15 ans.",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "numéro 3"
+              },
+              {
+                "id": "c",
+                "texte": "le 16 mai"
+              }
+            ]
+          }
+        }
       },
       {
         "enonce": "Comment Guillaume vous conseille-t-il d’acheter votre billet ?",
@@ -19084,7 +19884,27 @@
         "enonce": "Quel jour Maud voudrait-elle aller au concert de Lina Marcelli ?",
         "type_reponse": "lignes",
         "nb_lignes": 2,
-        "reponse_modele": "Le 10 juillet."
+        "reponse_modele": "Le 10 juillet.",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "Le 10 juillet.",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "le 8 juillet"
+              },
+              {
+                "id": "c",
+                "texte": "Salut"
+              }
+            ]
+          }
+        }
       },
       {
         "enonce": "Quel concert Farid voudrait-il voir ?",
@@ -19328,7 +20148,27 @@
         "enonce": "Combien coûte l’abonnement annuel ?",
         "type_reponse": "lignes",
         "nb_lignes": 2,
-        "reponse_modele": "60 CHF."
+        "reponse_modele": "60 CHF.",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "60 CHF.",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "10 h"
+              },
+              {
+                "id": "c",
+                "texte": "10 octobre"
+              }
+            ]
+          }
+        }
       },
       {
         "enonce": "Que devez-vous faire pour avoir la réduction ?",
@@ -19475,7 +20315,27 @@
         "enonce": "Combien coûte une place pour la pièce de théâtre ?",
         "type_reponse": "lignes",
         "nb_lignes": 2,
-        "reponse_modele": "8 CHF."
+        "reponse_modele": "8 CHF.",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "8 CHF.",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "14 h"
+              },
+              {
+                "id": "c",
+                "texte": "16 h"
+              }
+            ]
+          }
+        }
       },
       {
         "enonce": "Où sont diffusés les films ?",
@@ -19895,7 +20755,27 @@
         "enonce": "Qui a annulé son rendez-vous ?",
         "type_reponse": "lignes",
         "nb_lignes": 2,
-        "reponse_modele": "M. Georges."
+        "reponse_modele": "M. Georges.",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "M. Georges.",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "15 h 30"
+              },
+              {
+                "id": "c",
+                "texte": "16 h 30"
+              }
+            ]
+          }
+        }
       },
       {
         "enonce": "Qu’est-ce que la responsable vous demande de proposer aux clients ?",
@@ -21077,7 +21957,27 @@
         "enonce": "Pour quelle matière Inès doit-elle préparer un exposé ?",
         "type_reponse": "lignes",
         "nb_lignes": 2,
-        "reponse_modele": "Pour l’anglais."
+        "reponse_modele": "Pour l’anglais.",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "Pour l’anglais.",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "Ne"
+              },
+              {
+                "id": "c",
+                "texte": "Inès"
+              }
+            ]
+          }
+        }
       }
     ],
     "consigne_supplementaire": null
@@ -21296,7 +22196,27 @@
         "enonce": "Quel ingrédient est conseillé dans la recette ?",
         "type_reponse": "lignes",
         "nb_lignes": 2,
-        "reponse_modele": "La levure."
+        "reponse_modele": "La levure.",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "La levure.",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "Recette"
+              },
+              {
+                "id": "c",
+                "texte": "Ajouter"
+              }
+            ]
+          }
+        }
       },
       {
         "enonce": "Quel ingrédient faut-il enlever pour faire des crêpes en plat principal ?",
@@ -22836,7 +23756,27 @@
         "enonce": "Combien coûte le couchsurfing ?",
         "type_reponse": "lignes",
         "nb_lignes": 2,
-        "reponse_modele": "Rien, c’est gratuit."
+        "reponse_modele": "Rien, c’est gratuit.",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "Rien, c’est gratuit.",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "Se"
+              },
+              {
+                "id": "c",
+                "texte": "Genève Vous"
+              }
+            ]
+          }
+        }
       }
     ],
     "consigne_supplementaire": null
@@ -23352,7 +24292,27 @@
         "enonce": "Thomas a-t-il été obligé de faire de longues études pour travailler dans une agence ? Répondez par oui ou non, puis recopiez la phrase du texte qui le prouve.",
         "type_reponse": "lignes",
         "nb_lignes": 2,
-        "reponse_modele": "Non. « Il n’a pas eu besoin de longues études : une agence l’a engagé et formé. »"
+        "reponse_modele": "Non. « Il n’a pas eu besoin de longues études : une agence l’a engagé et formé. »",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "Non. « Il n’a pas eu besoin de longues études : une agence l’a engagé et formé. »",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "17 h"
+              },
+              {
+                "id": "c",
+                "texte": "Changer"
+              }
+            ]
+          }
+        }
       },
       {
         "enonce": "Thomas travaille-t-il en centre-ville ? Répondez par oui ou non, puis recopiez la phrase du texte qui le prouve.",
@@ -23788,7 +24748,27 @@
         "enonce": "Combien coûte l’inscription à un atelier ?",
         "type_reponse": "lignes",
         "nb_lignes": 2,
-        "reponse_modele": "5 CHF par atelier."
+        "reponse_modele": "5 CHF par atelier.",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "5 CHF par atelier.",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "Salon"
+              },
+              {
+                "id": "c",
+                "texte": "Lausanne Ne"
+              }
+            ]
+          }
+        }
       }
     ],
     "consigne_supplementaire": null
@@ -24330,13 +25310,53 @@
         "enonce": "Où a eu lieu son premier concert ?",
         "type_reponse": "lignes",
         "nb_lignes": 2,
-        "reponse_modele": "À Lausanne."
+        "reponse_modele": "À Lausanne.",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "À Lausanne.",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "Le 28 avril"
+              },
+              {
+                "id": "c",
+                "texte": "Le 10 mai"
+              }
+            ]
+          }
+        }
       },
       {
         "enonce": "Léa donnera-t-elle un concert à Sion en juillet ? Répondez par oui ou non, puis recopiez la phrase du texte qui le prouve.",
         "type_reponse": "lignes",
         "nb_lignes": 2,
-        "reponse_modele": "Non. « Le 5 juin à Sion. »"
+        "reponse_modele": "Non. « Le 5 juin à Sion. »",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "Non. « Le 5 juin à Sion. »",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "Le 28 avril"
+              },
+              {
+                "id": "c",
+                "texte": "Le 10 mai"
+              }
+            ]
+          }
+        }
       }
     ],
     "consigne_supplementaire": null
@@ -24536,7 +25556,27 @@
         "enonce": "Combien coûte une place si vous l’achetez le 21 août ?",
         "type_reponse": "lignes",
         "nb_lignes": 2,
-        "reponse_modele": "15 CHF."
+        "reponse_modele": "15 CHF.",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "15 CHF.",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "20 h"
+              },
+              {
+                "id": "c",
+                "texte": "21 h"
+              }
+            ]
+          }
+        }
       }
     ],
     "consigne_supplementaire": null
@@ -24770,7 +25810,27 @@
         "enonce": "Combien de temps dure le vol ?",
         "type_reponse": "lignes",
         "nb_lignes": 2,
-        "reponse_modele": "2 minutes 30."
+        "reponse_modele": "2 minutes 30.",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "2 minutes 30.",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "Chute"
+              },
+              {
+                "id": "c",
+                "texte": "Martigny La"
+              }
+            ]
+          }
+        }
       },
       {
         "enonce": "Faut-il faire du sport régulièrement pour pouvoir faire une chute libre ? Répondez par oui ou non, puis recopiez la phrase du texte qui le prouve.",

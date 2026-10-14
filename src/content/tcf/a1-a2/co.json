@@ -789,7 +789,27 @@
             "reponse": "B. Exprimer ses goûts"
           }
         ],
-        "reponse_modele": "…"
+        "reponse_modele": "…",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "F. Chercher quelqu’un · A. Proposer d’accompagner quelqu’un · C. Demander des informations · B. Exprimer ses goûts",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "2 euros"
+              },
+              {
+                "id": "c",
+                "texte": "18 h"
+              }
+            ]
+          }
+        }
       }
     ],
     "consigne_supplementaire": null
@@ -1638,7 +1658,27 @@
             "reponse": "D. Proposer de l’aide à quelqu’un"
           }
         ],
-        "reponse_modele": "…"
+        "reponse_modele": "…",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "C. Donner une opinion · E. Donner des explications · A. Accepter une invitation · D. Proposer de l’aide à quelqu’un",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "20 h"
+              },
+              {
+                "id": "c",
+                "texte": "le 28 mars"
+              }
+            ]
+          }
+        }
       }
     ],
     "consigne_supplementaire": null
@@ -2174,7 +2214,27 @@
         "type_reponse": "lignes",
         "points": 1,
         "nb_lignes": 2,
-        "reponse_modele": "Jusqu’au 15 juillet."
+        "reponse_modele": "Jusqu’au 15 juillet.",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "Jusqu’au 15 juillet.",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "20 h"
+              },
+              {
+                "id": "c",
+                "texte": "le 15 juillet"
+              }
+            ]
+          }
+        }
       }
     ],
     "consigne_supplementaire": null
@@ -2467,7 +2527,27 @@
             "reponse": "A. Remercier"
           }
         ],
-        "reponse_modele": "…"
+        "reponse_modele": "…",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "E. Indiquer un chemin · C. Proposer une activité · D. Interdire quelque chose · A. Remercier",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "Samedi"
+              },
+              {
+                "id": "c",
+                "texte": "Vous"
+              }
+            ]
+          }
+        }
       }
     ],
     "consigne_supplementaire": null
@@ -3280,7 +3360,27 @@
             "reponse": "F. Choisir un cadeau"
           }
         ],
-        "reponse_modele": "…"
+        "reponse_modele": "…",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "C. Inviter quelqu’un · E. Se renseigner sur un horaire · A. Proposer de l’aide · F. Choisir un cadeau",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "Samedi"
+              },
+              {
+                "id": "c",
+                "texte": "Dialogue"
+              }
+            ]
+          }
+        }
       }
     ],
     "consigne_supplementaire": null
@@ -3726,7 +3826,27 @@
         "type_reponse": "lignes",
         "points": 1,
         "nb_lignes": 1,
-        "reponse_modele": "Chez Julie."
+        "reponse_modele": "Chez Julie.",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "Chez Julie.",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "18 h 00"
+              },
+              {
+                "id": "c",
+                "texte": "21 h 00"
+              }
+            ]
+          }
+        }
       },
       {
         "enonce": "Que devez-vous apporter ?",
@@ -3939,7 +4059,27 @@
         "type_reponse": "lignes",
         "points": 1,
         "nb_lignes": 1,
-        "reponse_modele": "110 pays."
+        "reponse_modele": "110 pays.",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "110 pays.",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "le 21 juin"
+              },
+              {
+                "id": "c",
+                "texte": "Bonjour"
+              }
+            ]
+          }
+        }
       },
       {
         "enonce": "Combien de villes célèbrent la Fête de la musique ?",
@@ -4026,7 +4166,27 @@
             "reponse": "D. Décrire quelque chose"
           }
         ],
-        "reponse_modele": "…"
+        "reponse_modele": "…",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "C. Proposer une sortie · A. Donner un ordre · B. Demander un service · D. Décrire quelque chose",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "Dialogue"
+              },
+              {
+                "id": "c",
+                "texte": "Tu"
+              }
+            ]
+          }
+        }
       }
     ],
     "consigne_supplementaire": null
@@ -4050,7 +4210,27 @@
         "type_reponse": "lignes",
         "points": 1,
         "nb_lignes": 1,
-        "reponse_modele": "40 minutes."
+        "reponse_modele": "40 minutes.",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "40 minutes.",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "Mesdames"
+              },
+              {
+                "id": "c",
+                "texte": "Paris"
+              }
+            ]
+          }
+        }
       },
       {
         "enonce": "Quelle est la cause de ce retard ?",
@@ -4694,7 +4874,27 @@
         "type_reponse": "lignes",
         "points": 1,
         "nb_lignes": 1,
-        "reponse_modele": "10 euros."
+        "reponse_modele": "10 euros.",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "10 euros.",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "10 euros"
+              },
+              {
+                "id": "c",
+                "texte": "8 euros"
+              }
+            ]
+          }
+        }
       }
     ],
     "consigne_supplementaire": null
@@ -4736,7 +4936,27 @@
             "reponse": "C. S’excuser"
           }
         ],
-        "reponse_modele": "…"
+        "reponse_modele": "…",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "B. Informer · D. Conseiller quelque chose · A. Proposer de l’aide · C. S’excuser",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "Dialogue"
+              },
+              {
+                "id": "c",
+                "texte": "Peux"
+              }
+            ]
+          }
+        }
       }
     ],
     "consigne_supplementaire": null
@@ -5029,7 +5249,27 @@
         "type_reponse": "lignes",
         "points": 1,
         "nb_lignes": 1,
-        "reponse_modele": "Il est auteur (écrivain)."
+        "reponse_modele": "Il est auteur (écrivain).",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "Il est auteur (écrivain).",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "5 euros"
+              },
+              {
+                "id": "c",
+                "texte": "15 juin"
+              }
+            ]
+          }
+        }
       },
       {
         "enonce": "Document 1 — Le mercredi 15 juin, vous allez…",
@@ -5547,7 +5787,27 @@
             "reponse": "E. Donner une autorisation (accepter aussi D. Présenter quelqu’un)"
           }
         ],
-        "reponse_modele": "…"
+        "reponse_modele": "…",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "F. Parler des vacances · C. Demander l’horaire · B. Proposer une sortie · E. Donner une autorisation (accepter aussi D. Présenter quelqu’un)",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "midi"
+              },
+              {
+                "id": "c",
+                "texte": "Vous"
+              }
+            ]
+          }
+        }
       }
     ],
     "consigne_supplementaire": null
@@ -6154,7 +6414,27 @@
         "type_reponse": "lignes",
         "points": 1,
         "nb_lignes": 1,
-        "reponse_modele": "L’espagnol (professionnel)."
+        "reponse_modele": "L’espagnol (professionnel).",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "L’espagnol (professionnel).",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "14h30"
+              },
+              {
+                "id": "c",
+                "texte": "Mardi"
+              }
+            ]
+          }
+        }
       },
       {
         "enonce": "Où se passent les cours de langues ?",
@@ -6358,7 +6638,27 @@
             "reponse": "E. Féliciter"
           }
         ],
-        "reponse_modele": "…"
+        "reponse_modele": "…",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "C. Exprimer ses goûts · A. Demander un prix · D. Proposer de l’aide · E. Féliciter",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "70 euros"
+              },
+              {
+                "id": "c",
+                "texte": "Vous"
+              }
+            ]
+          }
+        }
       }
     ],
     "consigne_supplementaire": null
@@ -7117,7 +7417,27 @@
             "reponse": "F. Raconter"
           }
         ],
-        "reponse_modele": "…"
+        "reponse_modele": "…",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "D. Refuser · B. Promettre · A. Conseiller · F. Raconter",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "midi"
+              },
+              {
+                "id": "c",
+                "texte": "Vous"
+              }
+            ]
+          }
+        }
       }
     ],
     "consigne_supplementaire": null
