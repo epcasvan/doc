@@ -33,6 +33,7 @@ export type ResultPanelProps = {
   drawAlphaSeries: () => void
   generate: () => void
   printAll: () => void
+  exportWord: () => void
   isCalliDomain: boolean
   isJeuxDomain: boolean
   jeuxPreviewSheets: Array<{ sheet: WorksheetPage; index: number }> | null
@@ -96,6 +97,7 @@ export function ResultPanel({
   drawAlphaSeries,
   generate,
   printAll,
+  exportWord,
   isCalliDomain,
   isJeuxDomain,
   jeuxPreviewSheets,
@@ -255,6 +257,28 @@ export function ResultPanel({
                     </svg>
                   </button>
                 )}
+                <button
+                  className="print-chip is-icon is-generate"
+                  type="button"
+                  onClick={exportWord}
+                  aria-label={
+                    isCalliDomain || isJeuxDomain
+                      ? 'Exporter la fiche en Word'
+                      : 'Exporter la fiche et le corrigé en Word'
+                  }
+                  title={
+                    isCalliDomain || isJeuxDomain
+                      ? 'Exporter la fiche en Word'
+                      : 'Exporter la fiche et le corrigé en Word'
+                  }
+                >
+                  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden>
+                    <path
+                      fill="currentColor"
+                      d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm1 7V3.5L18.5 9H15zM8 12.5h8v1.5H8v-1.5zm0 3h8V17H8v-1.5zm0 3h5V20H8v-1.5z"
+                    />
+                  </svg>
+                </button>
                 <button
                   className="print-chip is-icon is-generate"
                   type="button"

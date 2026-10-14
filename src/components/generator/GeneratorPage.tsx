@@ -15,6 +15,7 @@ import { Header } from '@/components/generator/Header'
 import { LibreSidePanel } from '@/components/generator/LibreSidePanel'
 import { SettingsPanel } from '@/components/generator/SettingsPanel'
 import { ResultPanel } from '@/components/generator/ResultPanel'
+import { exportPrintSheetsToWord } from '@/components/generator/exportWord'
 import {
   THEME_STORAGE_KEY,
   contrastOnTheme,
@@ -306,6 +307,14 @@ export function GeneratorPage({ onLogout }: { onLogout: () => void }) {
     window.print()
   }
 
+  function exportWord() {
+    const hint =
+      exerciseTypeById[activeBlock.exerciseType]?.label ||
+      previewSheet?.title ||
+      'Fiche ClairFLE'
+    exportPrintSheetsToWord(hint)
+  }
+
   const chromeProps = {
     institutional,
     evalMode,
@@ -393,6 +402,7 @@ export function GeneratorPage({ onLogout }: { onLogout: () => void }) {
     drawAlphaSeries,
     generate,
     printAll,
+    exportWord,
     jeuxPreviewSheets,
     previewFrameRef,
     seed,
