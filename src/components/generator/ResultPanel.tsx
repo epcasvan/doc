@@ -263,13 +263,13 @@ export function ResultPanel({
                   onClick={exportWord}
                   aria-label={
                     isCalliDomain || isJeuxDomain
-                      ? 'Exporter la fiche en Word'
-                      : 'Exporter la fiche et le corrigé en Word'
+                      ? 'Exporter la fiche en Word (.docx)'
+                      : 'Exporter la fiche et le corrigé en Word (.docx)'
                   }
                   title={
                     isCalliDomain || isJeuxDomain
-                      ? 'Exporter la fiche en Word'
-                      : 'Exporter la fiche et le corrigé en Word'
+                      ? 'Exporter la fiche en Word (.docx)'
+                      : 'Exporter la fiche et le corrigé en Word (.docx)'
                   }
                 >
                   <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden>

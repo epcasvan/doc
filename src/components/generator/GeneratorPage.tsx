@@ -312,7 +312,7 @@ export function GeneratorPage({ onLogout }: { onLogout: () => void }) {
       exerciseTypeById[activeBlock.exerciseType]?.label ||
       previewSheet?.title ||
       'Fiche ClairFLE'
-    exportPrintSheetsToWord(hint)
+    void exportPrintSheetsToWord(hint)
   }
 
   const chromeProps = {
