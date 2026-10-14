@@ -119,7 +119,7 @@ export function ItemView({
       ? item.tcf.formSelect
       : undefined
   const tcfActiveForm = tcfFormMode ?? tcfFormSelect?.active
-  const showTcfFormChips = Boolean(tcfFormSelect && onSelectTcfForm)
+  const showTcfFormChips = Boolean(tcfFormSelect && tcfFormSelect.filled.length > 1 && onSelectTcfForm)
   const showTcfPageChip = Boolean(
     onToggleTcfPageBreak &&
       item.layout === 'tcf' &&
@@ -191,22 +191,18 @@ export function ItemView({
       {showTcfFormChips || showTcfPageChip ? (
         <div className="no-print draft-grid-chip-margin tcf-margin-chips" role="group" aria-label="Options TCF">
           {showTcfFormChips && tcfFormSelect
-            ? (['qcm_texte', 'qcm_image', 'lignes'] as const).map((form) => {
-                const filled = tcfFormSelect.filled.includes(form)
+            ? (['qcm_texte', 'qcm_image', 'lignes'] as const)
+                .filter((form) => tcfFormSelect.filled.includes(form))
+                .map((form) => {
                 const active = tcfActiveForm === form
                 return (
                   <button
                     key={form}
                     type="button"
                     className={`draft-grid-chip tcf-form-chip ${active ? 'on' : 'off'}`}
-                    disabled={!filled}
                     aria-pressed={active}
-                    title={
-                      filled
-                        ? `Afficher la réponse « ${TCF_FORME_LABELS[form]} »`
-                        : `Forme « ${TCF_FORME_LABELS[form]} » non renseignée`
-                    }
-                    onClick={() => filled && onSelectTcfForm?.(form)}
+                    title={`Afficher la réponse « ${TCF_FORME_LABELS[form]} »`}
+                    onClick={() => onSelectTcfForm?.(form)}
                   >
                     {TCF_FORME_LABELS[form]}
                   </button>

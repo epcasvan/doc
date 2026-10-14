@@ -1016,9 +1016,6 @@ html,body,#root{
 .tcf-margin-chips .draft-grid-chip{
   max-width:none;width:100%;justify-content:center;padding:2px 4px;font-size:7.5px
 }
-.tcf-margin-chips .draft-grid-chip:disabled{
-  opacity:.35;cursor:not-allowed
-}
 /* Aperçu (marges symétriques) : chip à gauche dans la marge. */
 .a4-frame .worksheet-sheet .draft-grid-chip-margin{
   left:auto;right:calc(100% + 2px)
@@ -3872,6 +3869,7 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
 
 /* —— TCF : fiche (support, questions, production) —— */
 .layout-tcf{grid-column:1 / -1}
+.exercise-item.layout-tcf{position:relative;overflow:visible}
 .layout-tcf .item-content{width:100%}
 .tcf-text{margin:0 0 6px;text-align:justify;line-height:1.4}
 .tcf-sms{max-width:78%;margin-bottom:6px}
