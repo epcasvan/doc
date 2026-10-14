@@ -10,6 +10,7 @@ import {
   QuestionLignes,
   QuestionQCMImage,
   QuestionQCMTexte,
+  TcfFormToggle,
 } from './TcfQuestions'
 
 /** Applique la forme active (Texte / Image / Phrase) stockée sur l’item. */
@@ -52,26 +53,33 @@ export function TcfItemView({
   item,
   mode,
   tcfFormMode,
+  onSelectTcfForm,
 }: {
   item: MathItem
   mode: PreviewMode
   tcfFormMode?: TcfTypeReponse
+  onSelectTcfForm?: (form: TcfTypeReponse) => void
 }) {
   const raw = item.tcf
   if (!raw) return null
   const tcf = withActiveForm(raw, tcfFormMode)
   const points = item.points
+  const fs = tcf.kind === 'qcm' || tcf.kind === 'lignes' ? tcf.formSelect : undefined
+  const formToggle =
+    fs && onSelectTcfForm && fs.filled.length > 1 ? (
+      <TcfFormToggle filled={fs.filled} active={fs.active} onSelect={onSelectTcfForm} />
+    ) : undefined
   switch (tcf.kind) {
     case 'support':
       return <TexteSupport exercise={tcf.exercise} mode={mode} />
     case 'qcm':
       return tcf.mode === 'image' ? (
-        <QuestionQCMImage {...tcf} points={points} mode={mode} />
+        <QuestionQCMImage {...tcf} points={points} mode={mode} formToggle={formToggle} />
       ) : (
-        <QuestionQCMTexte {...tcf} points={points} mode={mode} />
+        <QuestionQCMTexte {...tcf} points={points} mode={mode} formToggle={formToggle} />
       )
     case 'lignes':
-      return <QuestionLignes {...tcf} points={points} mode={mode} />
+      return <QuestionLignes {...tcf} points={points} mode={mode} formToggle={formToggle} />
     case 'images_a_cocher':
       return <ImagesACocher {...tcf} mode={mode} />
     case 'association':

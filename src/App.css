@@ -1008,13 +1008,13 @@ html,body,#root{
   /* Centrage vertical sur le « 1. » (13 pt × line-height 1.7). */
   height:calc(13pt * 1.7);display:inline-flex;align-items:center;box-sizing:border-box
 }
-/* TCF : pile verticale Texte / Image / Phrase (+ Page) dans la marge. */
-.tcf-margin-chips{
-  height:auto;max-width:1.55cm;flex-direction:column;align-items:stretch;gap:3px;
-  display:inline-flex
+/* TCF : Texte / Image / Phrase à droite du titre (même ligne que l’énoncé). */
+.tcf-form-toggle{
+  display:inline-flex;flex:0 0 auto;align-items:center;gap:3px;
+  margin-left:8px;align-self:center
 }
-.tcf-margin-chips .draft-grid-chip{
-  max-width:none;width:100%;justify-content:center;padding:2px 4px;font-size:7.5px
+.tcf-form-toggle .draft-grid-chip{
+  max-width:none;padding:3px 7px;font-size:8px
 }
 /* Aperçu (marges symétriques) : chip à gauche dans la marge. */
 .a4-frame .worksheet-sheet .draft-grid-chip-margin{
@@ -3958,8 +3958,8 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
 .tcf-modele ul{margin:4px 0 0;padding-left:1.2em}
 .tcf-vide{margin:0;padding:10px;border:1px dashed var(--muted);color:var(--muted)}
 .tcf-text,.tcf-consigne-supp,.tcf-lignes-modele{white-space:pre-line}
-.tcf-enonce{display:flex;align-items:baseline;gap:0}
-.tcf-enonce-text{flex:1}
+.tcf-enonce{display:flex;align-items:baseline;flex-wrap:wrap;gap:0;row-gap:4px}
+.tcf-enonce-text{flex:1;min-width:8em}
 .tcf-pts{flex:0 0 auto;margin-left:12px;font-weight:700;white-space:nowrap}
 .worksheet-sheet:not(.is-eval) .tcf-pts{display:none}
 .tcf-image.is-question{height:auto;max-height:72mm}
@@ -4147,7 +4147,12 @@ textarea.pill-input,
 .tcf-audio-row{display:flex;align-items:center;gap:6px}
 .tcf-audio-row>.pill-input{flex:1;min-width:0}
 .tcf-question-editor{display:flex;flex-direction:column;gap:6px;margin:0;padding:8px;border:1px solid var(--line);border-radius:8px}
-.tcf-question-editor legend{display:flex;align-items:center;gap:6px;font-size:12px;font-weight:700}
+.tcf-question-editor legend{
+  display:flex;align-items:center;flex-wrap:wrap;gap:6px 8px;width:100%;
+  font-size:12px;font-weight:700;box-sizing:border-box
+}
+.tcf-question-editor legend>.tcf-q-legend-title{display:inline-flex;align-items:center;gap:6px}
+.tcf-question-editor legend>.mode-toggle{margin-left:auto}
 .tcf-choix-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
 .tcf-choix-row{display:flex;align-items:center;gap:6px}
 .tcf-choix-row>.pill-input{flex:1;min-width:0}

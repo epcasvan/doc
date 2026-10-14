@@ -1,6 +1,5 @@
 import type { CoordShape, MathItem, PreviewMode } from '@/math/types'
 import type { GlossaryFigureId } from '@/math/glossary-banks'
-import { TCF_FORME_LABELS } from '@/tcf/formes'
 import type { TcfTypeReponse } from '@/tcf/types'
 import { CardGrid } from '@/jeux/CardGrid'
 import type { GameBoard } from '@/jeux/types'
@@ -119,7 +118,6 @@ export function ItemView({
       ? item.tcf.formSelect
       : undefined
   const tcfActiveForm = tcfFormMode ?? tcfFormSelect?.active
-  const showTcfFormChips = Boolean(tcfFormSelect && tcfFormSelect.filled.length > 1 && onSelectTcfForm)
   const showTcfPageChip = Boolean(
     onToggleTcfPageBreak &&
       item.layout === 'tcf' &&
@@ -187,29 +185,6 @@ export function ItemView({
         >
           {oralModeLabel}
         </button>
-      ) : null}
-      {showTcfFormChips ? (
-        <div className="no-print draft-grid-chip-margin tcf-margin-chips" role="group" aria-label="Forme de réponse">
-          {showTcfFormChips && tcfFormSelect
-            ? (['qcm_texte', 'qcm_image', 'lignes'] as const)
-                .filter((form) => tcfFormSelect.filled.includes(form))
-                .map((form) => {
-                const active = tcfActiveForm === form
-                return (
-                  <button
-                    key={form}
-                    type="button"
-                    className={`draft-grid-chip tcf-form-chip ${active ? 'on' : 'off'}`}
-                    aria-pressed={active}
-                    title={`Afficher la réponse « ${TCF_FORME_LABELS[form]} »`}
-                    onClick={() => onSelectTcfForm?.(form)}
-                  >
-                    {TCF_FORME_LABELS[form]}
-                  </button>
-                )
-              })
-            : null}
-        </div>
       ) : null}
       {showTcfPageChip ? (
         <button
@@ -308,7 +283,12 @@ export function ItemView({
         ) : null}
         {item.layout === 'count-icons' && <CountIconsBlock item={item} mode={mode} />}
         {item.layout === 'tcf' && (
-          <TcfItemView item={item} mode={mode} tcfFormMode={tcfActiveForm} />
+          <TcfItemView
+            item={item}
+            mode={mode}
+            tcfFormMode={tcfActiveForm}
+            onSelectTcfForm={onSelectTcfForm}
+          />
         )}
         {item.layout === 'audio-dictation' && <AudioDictationBlock item={item} mode={mode} />}
         {item.layout === 'symmetry-grid' && <SymmetryGridBlock item={item} mode={mode} />}

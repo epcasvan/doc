@@ -1,11 +1,47 @@
+import type { ReactNode } from 'react'
 import { formatPointsLabel } from '@/tcm/test'
 import type { PreviewMode } from '@/math/types'
-import type { TcfChoixRendu, TcfGrille, TcfLigneTableau } from '@/tcf/types'
+import { TCF_FORME_LABELS } from '@/tcf/formes'
+import type { TcfChoixRendu, TcfGrille, TcfLigneTableau, TcfTypeReponse } from '@/tcf/types'
 import { TcfImage } from './TexteSupport'
 
 /** Barème « / 1 point », visible seulement en mode évaluation (`.is-eval`). */
 export function TcfPoints({ points }: { points?: number }) {
   return points != null ? <span className="tcf-pts">/ {formatPointsLabel(points)}</span> : null
+}
+
+/** Toggle Texte / Image / Phrase à droite du titre (aperçu fiche, non imprimé). */
+export function TcfFormToggle({
+  filled,
+  active,
+  onSelect,
+}: {
+  filled: readonly TcfTypeReponse[]
+  active: TcfTypeReponse
+  onSelect: (form: TcfTypeReponse) => void
+}) {
+  if (filled.length <= 1) return null
+  return (
+    <span className="no-print tcf-form-toggle" role="group" aria-label="Forme de réponse">
+      {(['qcm_texte', 'qcm_image', 'lignes'] as const)
+        .filter((form) => filled.includes(form))
+        .map((form) => {
+          const on = active === form
+          return (
+            <button
+              key={form}
+              type="button"
+              className={`draft-grid-chip tcf-form-chip ${on ? 'on' : 'off'}`}
+              aria-pressed={on}
+              title={`Afficher la réponse « ${TCF_FORME_LABELS[form]} »`}
+              onClick={() => onSelect(form)}
+            >
+              {TCF_FORME_LABELS[form]}
+            </button>
+          )
+        })}
+    </span>
+  )
 }
 
 function Enonce({
@@ -14,12 +50,14 @@ function Enonce({
   audioLabel,
   points,
   image,
+  formToggle,
 }: {
   numero: number
   enonce: string
   audioLabel?: string
   points?: number
   image?: string
+  formToggle?: ReactNode
 }) {
   return (
     <>
@@ -27,6 +65,7 @@ function Enonce({
         <span className="tcf-num">{numero}.</span>
         {audioLabel ? <span className="tcf-audio-tag">{audioLabel}</span> : null}
         <span className="tcf-enonce-text">{enonce}</span>
+        {formToggle}
         <TcfPoints points={points} />
       </p>
       {image ? <TcfImage src={image} alt={`Document de la question ${numero}`} className="tcf-image is-question" /> : null}
@@ -39,7 +78,14 @@ function Lettre({ lettre, on }: { lettre: string; on: boolean }) {
   return <span className={`tcf-lettre${on ? ' is-correct' : ''}`}>{lettre}</span>
 }
 
-type QuestionHead = { numero: number; enonce: string; audioLabel?: string; points?: number; image?: string }
+type QuestionHead = {
+  numero: number
+  enonce: string
+  audioLabel?: string
+  points?: number
+  image?: string
+  formToggle?: ReactNode
+}
 
 export function QuestionQCMTexte({
   choix,

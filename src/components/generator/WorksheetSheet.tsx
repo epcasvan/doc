@@ -102,7 +102,7 @@ export function WorksheetSheet({
   /** Pastille QCM / texte / images pour la compréhension orale. */
   interactiveOralModes?: boolean
   onCycleOralAnswerMode?: (index: number, blockIndex?: number) => void
-  /** TCF : formes Texte/Image/Phrase + saut de page en marge. */
+  /** TCF : formes Texte/Image/Phrase (à droite du titre) + saut de page en marge. */
   interactiveTcfOptions?: boolean
   onSelectTcfForm?: (index: number, form: TcfTypeReponse, blockIndex?: number) => void
   onToggleTcfPageBreak?: (index: number, blockIndex?: number) => void
