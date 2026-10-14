@@ -73,7 +73,7 @@ export function ItemView({
   onCycleOralAnswerMode,
   tcfFormMode,
   onSelectTcfForm,
-  tcfPageBreakAfter,
+  tcfPageBreakBefore,
   onToggleTcfPageBreak,
   coordEdit,
 }: {
@@ -90,8 +90,8 @@ export function ItemView({
   /** TCF : forme active Texte / Image / Phrase. */
   tcfFormMode?: TcfTypeReponse
   onSelectTcfForm?: (form: TcfTypeReponse) => void
-  /** TCF : saut de page après cette question. */
-  tcfPageBreakAfter?: boolean
+  /** TCF : cette question (et les suivantes) commence une nouvelle page. */
+  tcfPageBreakBefore?: boolean
   onToggleTcfPageBreak?: () => void
   coordEdit?: {
     selectedKind: CoordShape | null
@@ -188,8 +188,8 @@ export function ItemView({
           {oralModeLabel}
         </button>
       ) : null}
-      {showTcfFormChips || showTcfPageChip ? (
-        <div className="no-print draft-grid-chip-margin tcf-margin-chips" role="group" aria-label="Options TCF">
+      {showTcfFormChips ? (
+        <div className="no-print draft-grid-chip-margin tcf-margin-chips" role="group" aria-label="Forme de réponse">
           {showTcfFormChips && tcfFormSelect
             ? (['qcm_texte', 'qcm_image', 'lignes'] as const)
                 .filter((form) => tcfFormSelect.filled.includes(form))
@@ -209,22 +209,24 @@ export function ItemView({
                 )
               })
             : null}
-          {showTcfPageChip ? (
-            <button
-              type="button"
-              className={`draft-grid-chip tcf-page-chip ${tcfPageBreakAfter ? 'on' : 'off'}`}
-              aria-pressed={Boolean(tcfPageBreakAfter)}
-              title={
-                tcfPageBreakAfter
-                  ? 'Saut de page après cette question (activé)'
-                  : 'Ajouter un saut de page après cette question'
-              }
-              onClick={onToggleTcfPageBreak}
-            >
-              Page
-            </button>
-          ) : null}
         </div>
+      ) : null}
+      {showTcfPageChip ? (
+        <button
+          type="button"
+          className={`no-print draft-grid-chip draft-grid-chip-margin tcf-page-chip ${
+            tcfPageBreakBefore ? 'on' : 'off'
+          }`}
+          aria-pressed={Boolean(tcfPageBreakBefore)}
+          title={
+            tcfPageBreakBefore
+              ? 'Remettre cette question et les suivantes sur la page précédente'
+              : 'Passer cette question et les suivantes sur une nouvelle page'
+          }
+          onClick={onToggleTcfPageBreak}
+        >
+          Page
+        </button>
       ) : null}
       {item.coordScene || hideNumber ? null : <div className="item-number">{index + 1}.</div>}
       <div className="item-content">

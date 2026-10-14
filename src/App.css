@@ -1027,6 +1027,10 @@ html,body,#root{
 .print-only-sheets .worksheet-sheet.sheet-even .draft-grid-chip-margin{
   left:calc(100% + 4px);right:auto
 }
+/* TCF : « Page » dans la marge droite (cette question et les suivantes → page suivante). */
+.a4-frame .worksheet-sheet .draft-grid-chip-margin.tcf-page-chip{
+  left:calc(100% + 2px);right:auto
+}
 .draft-pad{
   /* 24 colonnes × 5 lignes en 1 col ; on multiplie les lignes par le nombre de colonnes
      (2 col → 10 lignes) pour garder la même hauteur de cases une fois la largeur coupée. */

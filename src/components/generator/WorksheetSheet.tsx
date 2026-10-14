@@ -294,8 +294,11 @@ export function WorksheetSheet({
                   const sourceIndex = index + (block.itemOffset ?? 0)
                   const tcfFormMode =
                     block.tcfFormModes?.[sourceIndex] ?? page.tcfFormModes?.[sourceIndex]
-                  const tcfPageBreakAfter =
-                    block.tcfPageBreakAfter?.[sourceIndex] ?? page.tcfPageBreakAfter?.[sourceIndex]
+                  const tcfPageBreakBefore =
+                    sourceIndex > 0 &&
+                    Boolean(
+                      block.tcfPageBreakAfter?.[sourceIndex - 1] ?? page.tcfPageBreakAfter?.[sourceIndex - 1],
+                    )
                   const blockAllowsDraftGrid = isDraftPadExercise(block.exerciseType)
                   const isTcfQuestion =
                     item.layout === 'tcf' &&
@@ -325,9 +328,9 @@ export function WorksheetSheet({
                           ? (form) => onSelectTcfForm(index, form, blockIndex)
                           : undefined
                       }
-                      tcfPageBreakAfter={isTcfQuestion ? Boolean(tcfPageBreakAfter) : undefined}
+                      tcfPageBreakBefore={isTcfQuestion ? tcfPageBreakBefore : undefined}
                       onToggleTcfPageBreak={
-                        interactiveTcfOptions && isTcfQuestion && onToggleTcfPageBreak
+                        interactiveTcfOptions && isTcfQuestion && sourceIndex > 0 && onToggleTcfPageBreak
                           ? () => onToggleTcfPageBreak(index, blockIndex)
                           : undefined
                       }

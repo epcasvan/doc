@@ -265,7 +265,9 @@ export function usePageConfig({
         const sheet = worksheets[safeSheetIndex]
         const sheetBlock = sheet?.blocks[targetBlock]
         const offset = sheetBlock?.itemOffset ?? 0
-        const modeIndex = itemIndex + offset
+        // Saut avant la question = coupure après l’item précédent.
+        const modeIndex = itemIndex + offset - 1
+        if (modeIndex < 0) return page
         const totalItems = Math.max(
           block.tcfPageBreakAfter?.length ?? 0,
           modeIndex + 1,
