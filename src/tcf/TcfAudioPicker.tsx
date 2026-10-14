@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState, type RefObject } from 'react'
 import type { TcfAudioEntry } from './audio-bank'
-import { TCF_SCENARIOS, TCF_SCENARIO_AUTRE, tcfTypeMeta } from './catalog'
+import { TCF_NIVEAUX, TCF_SCENARIOS, TCF_SCENARIO_AUTRE, tcfTypeMeta } from './catalog'
 import { tcfAudioSrc } from './media'
 import { tcfGroupId, tcfScene } from './sources'
 
@@ -119,6 +119,7 @@ export function TcfAudioPicker({
 }) {
   const [query, setQuery] = useState('')
   const [scenario, setScenario] = useState('')
+  const [niveau, setNiveau] = useState('')
   const inputRef = useRef<HTMLInputElement | null>(null)
 
   useEffect(() => {
@@ -140,8 +141,15 @@ export function TcfAudioPicker({
     return SCENARIO_OPTIONS.filter((s) => present.has(s.id))
   }, [entries])
 
+  const niveaux = useMemo(() => {
+    const present = new Set(entries.map((e) => e.exercise.niveau))
+    return TCF_NIVEAUX.filter((n) => present.has(n.id))
+  }, [entries])
+
   const hits = useMemo(() => {
-    const pool = scenario ? entries.filter((e) => scenarioOf(e) === scenario) : entries
+    const pool = entries.filter(
+      (e) => (!scenario || scenarioOf(e) === scenario) && (!niveau || e.exercise.niveau === niveau),
+    )
     const q = norm(query)
     if (!q) return pool
     const scored: { entry: TcfAudioEntry; score: number }[] = []
@@ -161,7 +169,7 @@ export function TcfAudioPicker({
     }
     scored.sort((a, b) => b.score - a.score || a.entry.label.localeCompare(b.entry.label, 'fr', { numeric: true }))
     return scored.map((s) => s.entry)
-  }, [entries, query, scenario])
+  }, [entries, query, scenario, niveau])
 
   if (!open) return null
 
@@ -198,6 +206,19 @@ export function TcfAudioPicker({
           {scenarios.map((s) => (
             <option key={s.id} value={s.id}>
               {s.label}
+            </option>
+          ))}
+        </select>
+        <select
+          className="pill-input tcf-vocab-picker-search"
+          value={niveau}
+          aria-label="Filtrer par niveau"
+          onChange={(e) => setNiveau(e.target.value)}
+        >
+          <option value="">Tous les niveaux</option>
+          {niveaux.map((n) => (
+            <option key={n.id} value={n.id}>
+              {n.id}
             </option>
           ))}
         </select>
