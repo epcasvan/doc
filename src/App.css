@@ -2930,14 +2930,17 @@ html,body,#root{
 }
 .phrase-libre-index{font-size:12px;font-weight:800;color:var(--purple)}
 .phrase-libre-field{display:flex;flex-direction:column;gap:6px;font-size:12px;color:var(--muted)}
-.phrase-libre-field input,.phrase-libre-field textarea,.phrase-libre-field select,
+.phrase-libre-field input,.phrase-libre-field select,
 .phrase-libre-token select,.phrase-libre-pastille-row select{
   width:100%;min-height:40px;padding:8px 12px;border:1px solid #d8dde6;border-radius:999px;
   background:#fff;color:var(--ink);font:inherit;box-sizing:border-box
 }
+.phrase-libre-field textarea{
+  width:100%;min-height:72px;border:1px solid #d8dde6;
+  background:#fff;color:var(--ink);font:inherit;box-sizing:border-box
+}
 .phrase-libre-field select{appearance:auto;cursor:pointer}
 .coord-questions-libre{margin:0}
-.phrase-libre-field textarea{border-radius:14px;resize:vertical;min-height:72px}
 .phrase-libre-tokens,.phrase-libre-pastilles{display:flex;flex-direction:column;gap:8px}
 .phrase-libre-token{
   display:grid;grid-template-columns:minmax(0,1.2fr) minmax(7em,0.9fr) auto;gap:6px;align-items:center
@@ -3613,14 +3616,14 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
 .game-riddle-clue>span{font-size:11px;font-weight:600;color:var(--muted)}
 .game-riddle-textarea{
   width:100%;min-height:4.2rem;resize:vertical;white-space:pre-wrap;
-  font-size:13px;line-height:1.35;padding:8px 10px;border-radius:10px!important
+  font-size:13px;line-height:1.35
 }
 .game-content-field{display:flex;flex-direction:column;gap:6px}
 .game-content-label{font-size:12px;font-weight:700;color:var(--muted);letter-spacing:.02em;text-transform:uppercase}
 .game-content-hint{margin:0;font-size:12px;line-height:1.35}
 .game-content-textarea{
-  width:100%;min-height:7rem;resize:vertical;border-radius:14px!important;
-  font-size:13px;line-height:1.4;padding:10px 12px;white-space:pre-wrap
+  width:100%;min-height:7rem;resize:vertical;
+  font-size:13px;line-height:1.4;white-space:pre-wrap
 }
 .game-entry-list{
   list-style:none;margin:0;padding:4px;display:flex;flex-direction:column;gap:6px;
@@ -3714,10 +3717,14 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
 .calli-field-row{
   display:grid;grid-template-columns:1.8em minmax(0,1fr) 32px;gap:8px;align-items:center
 }
+.calli-field-row:has(textarea){align-items:start}
+.calli-field-row:has(textarea) .calli-field-num{padding-top:10px}
+.calli-field-row:has(textarea) .calli-field-remove{margin-top:6px}
 .calli-field-row .calli-field-num{
   color:var(--muted);font-size:13px;font-weight:600;text-align:right
 }
 .calli-field-row .pill-input{width:100%;min-width:0}
+.calli-field-row textarea.pill-input{min-height:4.2rem;resize:vertical;white-space:pre-wrap}
 .calli-field-row .calli-field-remove{
   width:32px;height:32px;border:1px solid var(--line);border-radius:8px;background:#fff;
   color:var(--muted);font-size:18px;line-height:1;padding:0
@@ -4077,7 +4084,26 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
 .tcf-field>span{font-size:11px;font-weight:700;color:var(--muted)}
 .tcf-field.is-number{flex:0 0 auto}
 .tcf-field.is-number .pill-input{width:6.5em}
-.tcf-textarea{resize:vertical;min-height:3em;font:inherit;line-height:1.35}
+/* Texte long (tous modes libre) : rectangle arrondi comme consignes TCM, pas pastille. */
+.tcf-textarea,
+textarea.pill-input,
+.pill-input.tcf-textarea,
+.libre-textarea,
+.libre-line-input.is-textarea,
+.phrase-libre-field textarea,
+.calli-fields textarea,
+.coord-questions-libre textarea,
+.game-riddle-textarea,
+.game-content-textarea,
+.generic-libre-editor textarea,
+.side-tool-panel.is-libre textarea{
+  border-radius:8px!important;
+  padding:8px 12px!important;
+  resize:vertical;
+  line-height:1.35;
+  box-sizing:border-box
+}
+.tcf-textarea{min-height:3em;font:inherit}
 .tcf-row{display:flex;gap:8px;align-items:flex-end;flex-wrap:wrap}
 .tcf-row.is-wrap{align-items:center}
 .tcf-image-row{display:flex;gap:6px;align-items:center}
@@ -4498,7 +4524,7 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
 }
 .libre-field{display:flex;flex-direction:column;gap:6px;font-size:12px;color:var(--muted)}
 .libre-field.is-line>span{font-size:11px;font-weight:600;color:var(--muted);letter-spacing:.02em}
-.libre-textarea{border-radius:14px!important;min-height:64px;resize:vertical}
+.libre-textarea{min-height:64px;resize:vertical}
 .libre-item-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
 .libre-item-card{
   display:flex;flex-direction:column;gap:8px;padding:10px;border:1px solid var(--line);
@@ -4672,7 +4698,7 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
   border:1px solid var(--line);border-radius:6px;padding:4px 6px;min-height:32px
 }
 .libre-line-input.is-textarea{
-  border:1px solid var(--line);border-radius:8px;padding:6px 8px;
+  border:1px solid var(--line);
   resize:vertical;min-height:56px;background:#fff
 }
 /* Suite de nombres éditables (ranger) : champs en ligne + / ×. */
