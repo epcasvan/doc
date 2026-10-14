@@ -43,6 +43,7 @@ function normalize(s) {
     .replace(/\p{M}/gu, '')
     .toLowerCase()
     .replace(/[«»"']/g, '')
+    .replace(/[.,;:!?…]+$/g, '')
     .replace(/\s+/g, ' ')
     .trim()
 }
@@ -82,14 +83,14 @@ function extractCandidates(text) {
     if (!out.some((x) => sameAnswer(x, t))) out.push(t)
   }
 
-  // Prix / montants
-  for (const m of text.matchAll(/\b\d+(?:[.,]\d+)?\s*€\b/gi)) push(m[0])
-  for (const m of text.matchAll(/\b\d+(?:[.,]\d+)?\s*euros?\b/gi)) push(m[0])
+  // Prix / montants (€ n’est pas un « word char » : pas de \b après)
+  for (const m of text.matchAll(/(?<![\d.,])\d+(?:[.,]\d+)?\s*€/gi)) push(m[0])
+  for (const m of text.matchAll(/(?<![\d.,])\d+(?:[.,]\d+)?\s*euros?\b/gi)) push(m[0])
   // Heures
   for (const m of text.matchAll(/\b\d{1,2}\s*h(?:\s*\d{2})?\b/gi)) push(m[0])
   for (const m of text.matchAll(/\b(?:midi|minuit)(?:\s*et\s*(?:demi|quart))?\b/gi)) push(m[0])
   // Températures
-  for (const m of text.matchAll(/\b\d{1,2}\s*°(?:C)?\b/gi)) push(m[0])
+  for (const m of text.matchAll(/(?<![\d])\d{1,2}\s*°(?:C)?/gi)) push(m[0])
   // Salles / numéros
   for (const m of text.matchAll(/\b[Ss]alle\s+\d+\b/g)) push(m[0])
   for (const m of text.matchAll(/\b(?:page|n°|numero|numéro)\s*\d+\b/gi)) push(m[0])
@@ -104,11 +105,16 @@ function extractCandidates(text) {
     /\b(?:lundi|mardi|mercredi|jeudi|vendredi|samedi|dimanche)s?\b/gi,
   ))
     push(m[0].replace(/^./, (c) => c.toUpperCase()))
-  // Prénoms / noms propres simples (Majuscule…)
+  // Prénoms / noms propres (évite jours, mois, titres génériques)
+  const skip = new Set([
+    'Le','La','Les','Un','Une','Des','Au','Aux','Du','Pour','Avec','Dans','Sur','Tous',
+    'Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi','Dimanche','Jeudis',
+    'Janvier','Février','Mars','Avril','Mai','Juin','Juillet','Août','Septembre','Octobre','Novembre','Décembre',
+    'Atelier','Musée','Entrée','Bienvenue','Attention','Nouveau','Madame','Monsieur',
+  ])
   for (const m of text.matchAll(/\b[A-ZÀÂÄÉÈÊËÎÏÔÖÙÛÜÇ][a-zàâäéèêëîïôöùûüç]+(?:\s+[A-ZÀÂÄÉÈÊËÎÏÔÖÙÛÜÇ][a-zàâäéèêëîïôöùûüç]+)?\b/g)) {
     const w = m[0]
-    if (['Le', 'La', 'Les', 'Un', 'Une', 'Des', 'Au', 'Aux', 'Du', 'Pour', 'Avec', 'Dans', 'Sur'].includes(w))
-      continue
+    if (skip.has(w) || skip.has(w.split(/\s+/)[0])) continue
     push(w)
   }
   return out
@@ -121,12 +127,28 @@ function mutateNumber(answer) {
   const nums = []
   while ((m = re.exec(answer))) nums.push({ i: m.index, len: m[0].length, n: Number(m[0]) })
   if (nums.length === 0) return variants
-  const target = nums[nums.length - 1]
+  // Pour une date « le 30 mai », muter le jour (1er nombre), pas un éventuel année
+  const isDate = /\b(?:janvier|février|fevrier|mars|avril|mai|juin|juillet|août|aout|septembre|octobre|novembre|décembre|decembre)\b/i.test(
+    answer,
+  )
+  const target = isDate ? nums[0] : nums[nums.length - 1]
+  const after = answer.slice(target.i + target.len)
+  // Ne pas casser « 1er » → « 2er »
+  const ordinal = /^(er|re|e|ème|eme)\b/i.test(after)
   for (const delta of [1, 2, -1, 3, 5, 10]) {
     const next = target.n + delta
     if (next <= 0) continue
-    const s = String(next).padStart(String(target.n).length > 1 && String(target.n).startsWith('0') ? 2 : 0, '0')
-    const v = answer.slice(0, target.i) + next + answer.slice(target.i + target.len)
+    if (isDate && (next > 31 || next < 1)) continue
+    let suffix = after
+    let insert = String(next)
+    if (ordinal) {
+      if (next === 1) insert = '1'
+      else {
+        // 2 mai, 3 mai… : retirer le suffixe ordinal
+        suffix = after.replace(/^(er|re|e|ème|eme)/i, '')
+      }
+    }
+    const v = answer.slice(0, target.i) + insert + suffix
     if (!sameAnswer(v, answer)) variants.push(v)
   }
   return variants
@@ -146,58 +168,90 @@ function mutateDay(answer) {
   return out
 }
 
+function kindOf(s) {
+  const t = String(s)
+  if (/\d/.test(t) && /€|euro/i.test(t)) return 'price'
+  if (/\d\s*h|\bmidi\b|\bminuit\b/i.test(t)) return 'time'
+  if (/\d\s*°/.test(t)) return 'temp'
+  if (/salle\s+\d+/i.test(t)) return 'room'
+  if (
+    /\b(?:lundi|mardi|mercredi|jeudi|vendredi|samedi|dimanche)s?\b/i.test(t) ||
+    /\d{1,2}\s+(?:janvier|février|mars|avril|mai|juin|juillet|août|septembre|octobre|novembre|décembre)/i.test(
+      t,
+    )
+  )
+    return 'date'
+  if (/^[A-ZÀÂÄÉÈÊËÎÏÔÖÙÛÜÇ]/.test(t) && t.split(/\s+/).length <= 3 && t.length >= 3) return 'name'
+  return 'other'
+}
+
 function distractors(correct, support, enonce) {
-  const pool = []
-  const add = (s) => {
+  const preferred = []
+  const other = []
+  const add = (s, forcePreferred = false) => {
     const t = String(s ?? '').replace(/\s+/g, ' ').trim()
-    if (!t || sameAnswer(t, correct)) return
-    if (pool.some((x) => sameAnswer(x, t))) return
-    pool.push(t)
+    if (!t || t.length < 3 || sameAnswer(t, correct)) return
+    // Évite les bouts de phrase / mots outils
+    if (/^(le|la|les|un|une|des|ce|cet|cette|ces|au|aux|du|de|et|ou|pour|avec|dans|sur)$/i.test(t))
+      return
+    const list = forcePreferred || kindOf(t) === kindOf(correct) ? preferred : other
+    if (list.some((x) => sameAnswer(x, t)) || preferred.some((x) => sameAnswer(x, t))) return
+    if (other.some((x) => sameAnswer(x, t))) return
+    list.push(t)
   }
 
-  for (const c of extractCandidates(support)) add(c)
-  for (const v of mutateNumber(correct)) add(v)
-  for (const v of mutateDay(correct)) add(v)
-
-  // Fallbacks contextuels selon l’énoncé
+  const ck = kindOf(correct)
   const e = normalize(enonce)
-  if (e.includes('tarif') || e.includes('coute') || e.includes('prix') || correct.includes('€')) {
-    add('Gratuit')
-    add('10 €')
-    add('15 €')
-  }
-  if (e.includes('heure') || e.includes('quand') || /\d\s*h/i.test(correct)) {
-    add('À 10 h')
-    add('À 14 h')
-    add('À 18 h')
-  }
-  if (e.includes('ou ') || e.includes('où') || e.includes('salle')) {
-    add('Salle 1')
-    add('Au rez-de-chaussée')
-    add('À l’accueil')
-  }
-  if (e.includes('qui ')) {
-    add('Marie')
-    add('Paul')
-    add('Le directeur')
-  }
-  if (e.includes('jour') || e.includes('date')) {
-    add('Le lundi')
-    add('Le samedi')
-    add('Le 1er mai')
+
+  // 1) Même forme que la bonne réponse (mutations)
+  for (const v of mutateNumber(correct)) add(v, true)
+  for (const v of mutateDay(correct)) add(v, true)
+
+  // 2) Noms : prénoms stables avant les bruits du support
+  if (ck === 'name' || e.startsWith('qui ')) {
+    add('Marie', true)
+    add('Paul', true)
+    add('Le directeur', true)
   }
 
-  // Dernier recours : reformulations génériques proches
-  if (pool.length < 2) {
-    add(`Pas ${correct.replace(/\.$/, '')}`)
-    add('Aucune de ces réponses')
+  // 3) Extraits du support (même type prioritaire via kindOf)
+  for (const c of extractCandidates(support)) add(c)
+
+  // 4) Fallbacks contextuels
+  if (ck === 'price' || e.includes('tarif') || e.includes('coute') || e.includes('prix')) {
+    add('Gratuit', true)
+    add('10 €', true)
+    add('15 €', true)
+    add('20 €', true)
+    add('5 €', true)
   }
-  if (pool.length < 2) {
-    add('Je ne sais pas')
-    add('Autre chose')
+  if (ck === 'time' || e.includes('heure') || /\d\s*h/i.test(correct)) {
+    add('À 10 h', true)
+    add('À 14 h', true)
+    add('À 18 h', true)
+    add('À midi', true)
+  }
+  if (ck === 'room' || e.includes('où') || e.includes('salle')) {
+    add('Salle 1', true)
+    add('Salle 20', true)
+    add('Au rez-de-chaussée', true)
+  }
+  if (ck === 'date' || e.includes('jour') || e.includes('date')) {
+    add('Le lundi', true)
+    add('Le samedi', true)
+    add('Le 1er mai', true)
+  }
+  if (ck === 'temp') {
+    add('18°', true)
+    add('30°', true)
   }
 
-  return pool.slice(0, 2)
+  const pool = [...preferred, ...other]
+  if (pool.length < 2) {
+    add(`Pas ${correct.replace(/\.$/, '')}`, true)
+    add('Aucune de ces réponses', true)
+  }
+  return [...preferred, ...other].slice(0, 2)
 }
 
 function buildChoix(correct, d1, d2) {
@@ -207,6 +261,8 @@ function buildChoix(correct, d1, d2) {
     { id: 'c', texte: d2 },
   ]
 }
+
+const forceRefresh = process.argv.includes('--refresh')
 
 let files = 0
 let questions = 0
@@ -221,7 +277,14 @@ for (const file of walk(ROOT)) {
     for (const q of ex.questions ?? []) {
       const hasT = q.type_reponse === 'qcm_texte' || Boolean(q.formes?.qcm_texte)
       const hasL = q.type_reponse === 'lignes' || Boolean(q.formes?.lignes)
-      if (!hasL || hasT) continue
+      // Phrase seule → ajouter ; Phrase primaire (--refresh) → régénérer les distracteurs
+      const isPhrasePrimary = q.type_reponse === 'lignes'
+      if (!hasL) continue
+      if (isPhrasePrimary) {
+        if (hasT && !forceRefresh) continue
+      } else if (hasT) {
+        continue
+      }
 
       let correct = modeleOf(q)
       if (!correct || correct === '…' || correct === '...') {
@@ -237,11 +300,7 @@ for (const file of walk(ROOT)) {
       const [d1, d2] = distractors(correct, support, q.enonce ?? '')
       const forme = { melanger: true, choix: buildChoix(correct, d1, d2) }
 
-      if (q.type_reponse === 'lignes') {
-        q.formes = { ...(q.formes ?? {}), qcm_texte: forme }
-      } else {
-        q.formes = { ...(q.formes ?? {}), qcm_texte: forme }
-      }
+      q.formes = { ...(q.formes ?? {}), qcm_texte: forme }
       questions++
       changed = true
     }
@@ -253,4 +312,4 @@ for (const file of walk(ROOT)) {
   }
 }
 
-console.log(`Fichiers : ${files} · QCM texte ajoutés : ${questions} · ignorées : ${skipped}`)
+console.log(`Fichiers : ${files} · QCM texte ajoutés/rafraîchis : ${questions} · ignorées : ${skipped}`)
