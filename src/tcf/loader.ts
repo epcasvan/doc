@@ -51,6 +51,11 @@ export function tcfBank(
   )
 }
 
+/** Tous niveaux confondus (A0-A1, A1-A2, A2-B1), dans l’ordre des niveaux. */
+export function tcfBankAllLevels(competence: TcfCompetence): TcfExercise[] {
+  return TCF_NIVEAUX.flatMap((n) => tcfBank(n.id, competence))
+}
+
 /** Exercices proposés pour un emplacement (CO : même numéro que dans l’audio). */
 export function tcfSlotBank(niveau: TcfNiveau, slot: TcfSlotMeta): TcfExercise[] {
   return tcfBank(niveau, slot.competence).filter(

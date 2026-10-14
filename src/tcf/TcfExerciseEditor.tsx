@@ -3,7 +3,7 @@ import { RefreshIcon } from '@/components/generator/WorksheetSheet'
 import { applyExerciseFromAudioBank, tcfAudioEntries, type TcfAudioEntry } from './audio-bank'
 import { TCF_TYPES, tcfSlotByTypeId, tcfTypeMeta } from './catalog'
 import { AudioField, ImageField, LinesField, NumberField, TextField } from './fields'
-import { tcfBank, tcfExerciseById, tcfSlotBank } from './loader'
+import { tcfBank, tcfBankAllLevels, tcfExerciseById, tcfSlotBank } from './loader'
 import { QuestionEditor } from './QuestionEditor'
 import { tcfScenarioGroups, type TcfScenarioGroup } from './sources'
 import { emptyTcfExercise, emptyTcfQuestion, tcfExerciseId } from './templates'
@@ -824,10 +824,10 @@ export function TcfExerciseEditor({
     return emptyTcfExercise(niveau, slot.competence, first.typeExercice, tcfExerciseId(niveau, slot.competence, 1))
   }, [slot, bankId, shownId, bank, niveau])
   const current = edited ? edits : fallback
-  /** Tous les audios CO du niveau : choisir un audio recharge questions + transcription. */
+  /** Tous les audios CO, tous niveaux : choisir un audio recharge questions + transcription. */
   const coAudioEntries = useMemo(
-    () => (slot?.competence === 'CO' ? tcfAudioEntries(tcfBank(niveau, 'CO')) : []),
-    [slot?.competence, niveau],
+    () => (slot?.competence === 'CO' ? tcfAudioEntries(tcfBankAllLevels('CO')) : []),
+    [slot?.competence],
   )
   // Résultats rattachés à la version de l’exercice : toute modification les efface.
   const [mediaCheck, setMediaCheck] = useState<{ for: TcfExercise; errors: string[] } | null>(null)
