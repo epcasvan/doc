@@ -306,14 +306,6 @@ export function GeneratorPage({ onLogout }: { onLogout: () => void }) {
     window.print()
   }
 
-  function exportWord() {
-    const hint =
-      exerciseTypeById[activeBlock.exerciseType]?.label ||
-      previewSheet?.title ||
-      'Fiche ClairFLE'
-    void exportPrintSheetsToWord(hint)
-  }
-
   const chromeProps = {
     institutional,
     evalMode,
@@ -401,7 +393,6 @@ export function GeneratorPage({ onLogout }: { onLogout: () => void }) {
     drawAlphaSeries,
     generate,
     printAll,
-    exportWord,
     jeuxPreviewSheets,
     previewFrameRef,
     seed,
