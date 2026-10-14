@@ -33,7 +33,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "À 18 h"
           },
           "qcm_image": {
@@ -77,7 +77,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "gare"
           },
           "qcm_texte": {
@@ -166,7 +166,7 @@
         "enonce": "Quel est le tarif pour un enfant ?",
         "type_reponse": "lignes",
         "points": 1,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "8 € (moins de 16 ans)."
       },
       {
@@ -191,7 +191,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Sur Internet"
           },
           "qcm_image": {
@@ -236,7 +236,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Votre adresse électronique"
           }
         }
@@ -263,7 +263,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "carte de credit"
           },
           "qcm_texte": {
@@ -290,7 +290,7 @@
         "enonce": "Que devez-vous montrer à l’accueil ?",
         "type_reponse": "lignes",
         "points": 2,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Le ticket imprimé (reçu par courriel).",
         "formes": {
           "qcm_texte": {
@@ -352,7 +352,7 @@
         "enonce": "Quel jour est le film ?",
         "type_reponse": "lignes",
         "points": 1,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Samedi (soir).",
         "formes": {
           "qcm_texte": {
@@ -415,7 +415,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "cinema en plein air"
           },
           "qcm_texte": {
@@ -460,7 +460,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Son père"
           },
           "qcm_image": {
@@ -487,7 +487,7 @@
         "enonce": "À quelle heure est le rendez-vous ?",
         "type_reponse": "lignes",
         "points": 1,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "À 20 h 30 (au restaurant « Pizza’la »).",
         "formes": {
           "qcm_texte": {
@@ -596,14 +596,14 @@
         "enonce": "Qui anime l’atelier ?",
         "type_reponse": "lignes",
         "points": 1,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Josiane Courtier."
       },
       {
         "enonce": "À quelle heure commence l’atelier ?",
         "type_reponse": "lignes",
         "points": 1,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "À 17 h (le jeudi).",
         "formes": {
           "qcm_texte": {
@@ -648,7 +648,7 @@
         "enonce": "Quel objet faut-il pour filmer ?",
         "type_reponse": "lignes",
         "points": 1,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Un téléphone portable.",
         "formes": {
           "qcm_texte": {
@@ -711,7 +711,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "21 juin"
           }
         }
@@ -738,7 +738,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "En janvier"
           }
         }
@@ -783,7 +783,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "À tout le monde"
           }
         }
@@ -792,7 +792,7 @@
         "enonce": "Quelle activité peut-on faire à la MLC ?",
         "type_reponse": "lignes",
         "points": 1.5,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Théâtre, robotique, danse, ping-pong, basket ou cuisine (une activité suffit).",
         "formes": {
           "qcm_texte": {
@@ -837,7 +837,7 @@
         "enonce": "Où se trouve la radio de la MLC ?",
         "type_reponse": "lignes",
         "points": 1.5,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Salle 112."
       },
       {
@@ -887,7 +887,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "gare"
           },
           "qcm_texte": {
@@ -932,7 +932,7 @@
         "enonce": "Quelle est la quantité de farine ?",
         "type_reponse": "lignes",
         "points": 1.5,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "50 grammes.",
         "formes": {
           "qcm_texte": {
@@ -995,7 +995,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "œuf"
           },
           "qcm_texte": {
@@ -1040,7 +1040,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Le beurre et le chocolat"
           }
         }
@@ -1049,7 +1049,7 @@
         "enonce": "Avec quoi devez-vous mélanger ?",
         "type_reponse": "lignes",
         "points": 1.5,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Avec une fourchette.",
         "formes": {
           "qcm_texte": {
@@ -1112,7 +1112,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "moule à gâteau"
           },
           "qcm_texte": {
@@ -1174,7 +1174,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Avec sa mère"
           }
         }
@@ -1183,7 +1183,7 @@
         "enonce": "À quelle heure est le rendez-vous ?",
         "type_reponse": "lignes",
         "points": 1,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "À 10 heures (samedi).",
         "formes": {
           "qcm_texte": {
@@ -1246,7 +1246,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Une protection contre le soleil"
           },
           "qcm_image": {
@@ -1291,7 +1291,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Déjeuner dans un restaurant"
           },
           "qcm_image": {
@@ -1336,7 +1336,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "chemin restaurant a"
           },
           "qcm_texte": {
@@ -1399,7 +1399,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "17 h 30"
           }
         }
@@ -1426,7 +1426,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "En mai"
           }
         }
@@ -1435,7 +1435,7 @@
         "enonce": "En juin, à quelle heure ferme la cantine ?",
         "type_reponse": "lignes",
         "points": 1.5,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "À 13 h.",
         "formes": {
           "qcm_texte": {
@@ -1498,7 +1498,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Lundi et mercredi"
           },
           "qcm_image": {
@@ -1543,7 +1543,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Le samedi ou le dimanche"
           },
           "qcm_image": {
@@ -1606,7 +1606,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Récent"
           }
         }
@@ -1615,7 +1615,7 @@
         "enonce": "Combien de temps dure le match ?",
         "type_reponse": "lignes",
         "points": 2,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Environ deux heures.",
         "formes": {
           "qcm_texte": {
@@ -1660,7 +1660,7 @@
         "enonce": "Par quoi commence le match ?",
         "type_reponse": "lignes",
         "points": 2,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Par les échecs.",
         "formes": {
           "qcm_texte": {
@@ -1723,7 +1723,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Mondiales"
           }
         }
@@ -1750,7 +1750,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Aller sur Internet"
           }
         }
@@ -1794,7 +1794,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Tard dans la soirée"
           }
         }
@@ -1821,7 +1821,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "etagere"
           },
           "qcm_texte": {
@@ -1866,7 +1866,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "telecommande b"
           },
           "qcm_texte": {
@@ -1911,7 +1911,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Les flèches"
           },
           "qcm_image": {
@@ -1938,7 +1938,7 @@
         "enonce": "Quelle température Catherine conseille-t-elle ?",
         "type_reponse": "lignes",
         "points": 1,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "24°."
       }
     ],
@@ -1980,7 +1980,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Aller sur une île en bateau"
           }
         }
@@ -1989,7 +1989,7 @@
         "enonce": "Quel jour est la sortie ?",
         "type_reponse": "lignes",
         "points": 1,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Dimanche.",
         "formes": {
           "qcm_texte": {
@@ -2052,7 +2052,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Une amie de ses parents"
           }
         }
@@ -2079,7 +2079,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "9 h 30"
           }
         }
@@ -2106,7 +2106,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "chemin rendez vous b"
           },
           "qcm_texte": {
@@ -2169,7 +2169,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Mai"
           }
         }
@@ -2196,7 +2196,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "1 h 30"
           }
         }
@@ -2205,7 +2205,7 @@
         "enonce": "Quel jour a lieu la soirée tropicale ?",
         "type_reponse": "lignes",
         "points": 1.5,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Le vendredi.",
         "formes": {
           "qcm_texte": {
@@ -2268,7 +2268,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "8 heures"
           },
           "qcm_image": {
@@ -2313,7 +2313,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Surf"
           }
         }
@@ -2358,7 +2358,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Le musée du Louvre"
           }
         }
@@ -2385,7 +2385,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Plusieurs magasins à Paris"
           },
           "qcm_image": {
@@ -2430,7 +2430,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "bus"
           },
           "qcm_texte": {
@@ -2457,7 +2457,7 @@
         "enonce": "Quelle est la durée maximale du pass Paris ?",
         "type_reponse": "lignes",
         "points": 2,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "6 jours.",
         "formes": {
           "qcm_texte": {
@@ -2520,7 +2520,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Aller sur Internet"
           }
         }
@@ -2566,7 +2566,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Le matin"
           },
           "qcm_image": {
@@ -2611,7 +2611,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "En face de la porte B"
           },
           "qcm_image": {
@@ -2638,7 +2638,7 @@
         "enonce": "Quelle sortie devez-vous prendre ?",
         "type_reponse": "lignes",
         "points": 2,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "La sortie 2 (au 1er étage).",
         "formes": {
           "qcm_texte": {
@@ -2701,7 +2701,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "voiture bleue"
           },
           "qcm_texte": {
@@ -2746,7 +2746,7 @@
         "enonce": "Combien de billets avez-vous ?",
         "type_reponse": "lignes",
         "points": 1,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "4 billets (4 places).",
         "formes": {
           "qcm_texte": {
@@ -2791,7 +2791,7 @@
         "enonce": "Quand a lieu l’événement ?",
         "type_reponse": "lignes",
         "points": 1,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Samedi prochain.",
         "formes": {
           "qcm_texte": {
@@ -2854,7 +2854,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Pour annuler une réservation"
           }
         }
@@ -2881,7 +2881,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Venir sur place"
           },
           "qcm_image": {
@@ -2926,7 +2926,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "chemin entree b"
           },
           "qcm_texte": {
@@ -2989,7 +2989,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "De 11 h 30 à 12 h 30"
           }
         }
@@ -2998,7 +2998,7 @@
         "enonce": "À quelle heure pouvez-vous parler à vos collègues ?",
         "type_reponse": "lignes",
         "points": 1,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "À 10 h 30 (à la pause-café).",
         "formes": {
           "qcm_texte": {
@@ -3061,7 +3061,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Avec le directeur"
           }
         }
@@ -3070,7 +3070,7 @@
         "enonce": "Pendant combien de temps le parking 1 est-il fermé ?",
         "type_reponse": "lignes",
         "points": 1.5,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Pendant 2 mois.",
         "formes": {
           "qcm_texte": {
@@ -3133,7 +3133,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Au 3e étage"
           }
         }
@@ -3178,7 +3178,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Ils s’écrivent des mots d’amour"
           },
           "qcm_image": {
@@ -3223,7 +3223,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "On va au restaurant"
           },
           "qcm_image": {
@@ -3250,7 +3250,7 @@
         "enonce": "Quel est l’objet le plus vendu pour cette fête ?",
         "type_reponse": "lignes",
         "points": 1.5,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Le parfum.",
         "formes": {
           "qcm_texte": {
@@ -3313,7 +3313,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "boite de chocolats"
           },
           "qcm_texte": {
@@ -3358,7 +3358,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "au cinéma"
           }
         }
@@ -3403,7 +3403,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "alliances"
           },
           "qcm_texte": {
@@ -3457,7 +3457,7 @@
         "enonce": "À quelle heure devez-vous aller à la mairie ?",
         "type_reponse": "lignes",
         "points": 2,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "À 14 h 30.",
         "formes": {
           "qcm_texte": {
@@ -3520,7 +3520,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Le 20 avril"
           }
         }
@@ -3565,7 +3565,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Au 1er étage"
           }
         }
@@ -3574,7 +3574,7 @@
         "enonce": "Que trouvez-vous devant le magasin ?",
         "type_reponse": "lignes",
         "points": 1,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Les grandes plantes."
       },
       {
@@ -3599,7 +3599,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Préparer des bouquets de fleurs"
           }
         }
@@ -3653,7 +3653,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "chemin magasin b"
           },
           "qcm_texte": {
@@ -3716,7 +3716,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "l’informatique"
           }
         }
@@ -3725,7 +3725,7 @@
         "enonce": "Qui est le professeur d’anglais ?",
         "type_reponse": "lignes",
         "points": 1.5,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Samia."
       },
       {
@@ -3750,7 +3750,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "10 h 30"
           }
         }
@@ -3777,7 +3777,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "10 %"
           }
         }
@@ -3804,7 +3804,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "un cahier"
           },
           "qcm_image": {
@@ -3867,7 +3867,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Le président de l’université"
           }
         }
@@ -3894,7 +3894,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "La compréhension orale"
           }
         }
@@ -3903,7 +3903,7 @@
         "enonce": "Qu’est-il interdit de faire dans la salle ?",
         "type_reponse": "lignes",
         "points": 1.5,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Manger et boire.",
         "formes": {
           "qcm_texte": {
@@ -3966,7 +3966,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "ordinateur"
           },
           "qcm_texte": {
@@ -4011,7 +4011,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Du lundi au jeudi"
           },
           "qcm_image": {
@@ -4075,7 +4075,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Jeudi"
           },
           "qcm_image": {
@@ -4120,7 +4120,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "reunion"
           },
           "qcm_texte": {
@@ -4147,7 +4147,7 @@
         "enonce": "Qui vient chez Léa ?",
         "type_reponse": "lignes",
         "points": 1,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Ses deux frères.",
         "formes": {
           "qcm_texte": {
@@ -4192,7 +4192,7 @@
         "enonce": "À quelle heure avez-vous rendez-vous avec Léa ?",
         "type_reponse": "lignes",
         "points": 1,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "À midi.",
         "formes": {
           "qcm_texte": {
@@ -4255,7 +4255,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "natation"
           },
           "qcm_texte": {
@@ -4318,7 +4318,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "chien"
           },
           "qcm_texte": {
@@ -4363,7 +4363,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Le 8 août"
           }
         }
@@ -4372,7 +4372,7 @@
         "enonce": "De quelle couleur est l’animal ?",
         "type_reponse": "lignes",
         "points": 1,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Noir et blanc.",
         "formes": {
           "qcm_texte": {
@@ -4435,7 +4435,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Par appel téléphonique"
           }
         }
@@ -4490,7 +4490,7 @@
         "enonce": "À quelle date est la visite ?",
         "type_reponse": "lignes",
         "points": 1,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Le mercredi 3 décembre.",
         "formes": {
           "qcm_texte": {
@@ -4553,7 +4553,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Dans la salle de réunion"
           },
           "qcm_image": {
@@ -4580,7 +4580,7 @@
         "enonce": "Qu’est-ce que vous pouvez boire pendant la pause ?",
         "type_reponse": "lignes",
         "points": 1,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Du café.",
         "formes": {
           "qcm_texte": {
@@ -4625,7 +4625,7 @@
         "enonce": "À quelle heure finit la présentation des nouveaux produits ?",
         "type_reponse": "lignes",
         "points": 1,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "À 16 h 30.",
         "formes": {
           "qcm_texte": {
@@ -4688,7 +4688,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "les bureaux"
           }
         }
@@ -4733,7 +4733,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "De conseils pour bien manger"
           },
           "qcm_image": {
@@ -4778,7 +4778,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Un bol de céréales"
           },
           "qcm_image": {
@@ -4823,7 +4823,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "biscuit"
           },
           "qcm_texte": {
@@ -4868,7 +4868,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Le yaourt"
           },
           "qcm_image": {
@@ -4895,7 +4895,7 @@
         "enonce": "Dans quel aliment y a-t-il de la vitamine C ?",
         "type_reponse": "lignes",
         "points": 1,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Dans les fruits ou le jus de fruits.",
         "formes": {
           "qcm_texte": {
@@ -4983,7 +4983,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "B3"
           }
         }
@@ -5010,7 +5010,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "2 gélules le matin"
           }
         }
@@ -5019,7 +5019,7 @@
         "enonce": "Pendant combien de temps faut-il prendre VitaMinéraux ?",
         "type_reponse": "lignes",
         "points": 1,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Pendant deux mois.",
         "formes": {
           "qcm_texte": {
@@ -5082,7 +5082,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "oranges"
           },
           "qcm_texte": {
@@ -5128,7 +5128,7 @@
         "enonce": "Qu’est-ce que Lola veut fêter ?",
         "type_reponse": "lignes",
         "points": 1,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Le Nouvel An.",
         "formes": {
           "qcm_texte": {
@@ -5173,7 +5173,7 @@
         "enonce": "À quelle heure ?",
         "type_reponse": "lignes",
         "points": 1,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "À 21 heures.",
         "formes": {
           "qcm_texte": {
@@ -5218,7 +5218,7 @@
         "enonce": "Avant quelle date devez-vous confirmer ?",
         "type_reponse": "lignes",
         "points": 1,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Avant le 21 novembre."
       },
       {
@@ -5289,7 +5289,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "casque audio"
           },
           "qcm_texte": {
@@ -5334,14 +5334,14 @@
         "enonce": "Quelle est la date de la sortie ?",
         "type_reponse": "lignes",
         "points": 1,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Le 6 juin."
       },
       {
         "enonce": "Où devez-vous vous inscrire ?",
         "type_reponse": "lignes",
         "points": 1,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Au comité d’entreprise.",
         "formes": {
           "qcm_texte": {
@@ -5386,7 +5386,7 @@
         "enonce": "Combien coûte la sortie ?",
         "type_reponse": "lignes",
         "points": 1,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "55 €."
       },
       {
@@ -5411,7 +5411,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "casquette"
           },
           "qcm_texte": {
@@ -5438,7 +5438,7 @@
         "enonce": "Qui d’autre peut aller à cette sortie avec les employés ?",
         "type_reponse": "lignes",
         "points": 1,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Les enfants des employés.",
         "formes": {
           "qcm_texte": {
@@ -5519,7 +5519,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Une région"
           }
         }
@@ -5528,14 +5528,14 @@
         "enonce": "Quel livre est recommandé pour un jeune de 13 ans ?",
         "type_reponse": "lignes",
         "points": 1,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "« Henri le petit sorcier »."
       },
       {
         "enonce": "Pour découvrir de nouveaux pays, quel livre faut-il lire ?",
         "type_reponse": "lignes",
         "points": 1,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "« Le Tour du monde en 80 jours ».",
         "formes": {
           "qcm_texte": {
@@ -5598,7 +5598,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "théâtral"
           }
         }
@@ -5625,7 +5625,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "internet"
           },
           "qcm_texte": {
@@ -5689,7 +5689,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Elle doit travailler tard."
           }
         }
@@ -5716,7 +5716,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "À l’école."
           },
           "qcm_image": {
@@ -5761,7 +5761,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "vélo"
           },
           "qcm_texte": {
@@ -5806,7 +5806,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "À 19 heures."
           },
           "qcm_image": {
@@ -5851,7 +5851,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "sms"
           },
           "qcm_texte": {
@@ -5914,7 +5914,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "chemin inscriptions c"
           },
           "qcm_texte": {
@@ -5959,7 +5959,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Le numéro de téléphone."
           },
           "qcm_image": {
@@ -6004,7 +6004,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "aller sur place."
           }
         }
@@ -6031,7 +6031,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "votre passeport."
           },
           "qcm_image": {
@@ -6076,7 +6076,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "À 9 heures."
           },
           "qcm_image": {
@@ -6139,7 +6139,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Voir un film."
           }
         }
@@ -6166,7 +6166,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Le midi."
           },
           "qcm_image": {
@@ -6211,7 +6211,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "À 18 heures."
           },
           "qcm_image": {
@@ -6256,7 +6256,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Visiter des appartements."
           },
           "qcm_image": {
@@ -6301,7 +6301,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "À 20 heures."
           },
           "qcm_image": {
@@ -6364,7 +6364,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "une fois par an."
           }
         }
@@ -6391,7 +6391,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Un jour."
           },
           "qcm_image": {
@@ -6436,7 +6436,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "rencontrer des acteurs."
           }
         }
@@ -6463,7 +6463,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "photo"
           },
           "qcm_texte": {
@@ -6508,7 +6508,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Par téléphone."
           },
           "qcm_image": {
@@ -6571,7 +6571,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "baby sitting"
           },
           "qcm_texte": {
@@ -6616,7 +6616,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Le vendredi."
           },
           "qcm_image": {
@@ -6661,7 +6661,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "le soir."
           },
           "qcm_image": {
@@ -6688,14 +6688,14 @@
         "enonce": "Combien est-on payé pour une soirée ?",
         "type_reponse": "lignes",
         "points": 1,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "45 €."
       },
       {
         "enonce": "Si vous êtes intéressé par l’annonce, que devez-vous faire ?",
         "type_reponse": "lignes",
         "points": 1,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Appeler Anna Lemaître au 06 38 46 27 11."
       }
     ],
@@ -6738,7 +6738,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "au premier étage, avec les journaux."
           },
           "qcm_image": {
@@ -6783,7 +6783,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "une cafétéria."
           },
           "qcm_image": {
@@ -6856,7 +6856,7 @@
         "enonce": "À quelle heure la bibliothèque ouvre-t-elle le matin ?",
         "type_reponse": "lignes",
         "points": 1,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "À 8 h.",
         "formes": {
           "qcm_texte": {
@@ -6901,7 +6901,7 @@
         "enonce": "Quel jour est-ce que la bibliothèque est ouverte l’après-midi ?",
         "type_reponse": "lignes",
         "points": 1,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Le samedi.",
         "formes": {
           "qcm_texte": {
@@ -6964,7 +6964,7 @@
         "enonce": "Qui propose un travail de serveur ?",
         "type_reponse": "lignes",
         "points": 1,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Le restaurant « Bon appétit ».",
         "formes": {
           "qcm_texte": {
@@ -7009,7 +7009,7 @@
         "enonce": "Le médecin offre un travail pour combien de temps ?",
         "type_reponse": "lignes",
         "points": 1,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "3 semaines.",
         "formes": {
           "qcm_texte": {
@@ -7054,14 +7054,14 @@
         "enonce": "Quelle est la date du mariage ?",
         "type_reponse": "lignes",
         "points": 1,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Le 30 mai."
       },
       {
         "enonce": "Quand commence le travail à « Sport plus » ?",
         "type_reponse": "lignes",
         "points": 1,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "En octobre."
       },
       {
@@ -7086,7 +7086,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "dans un club de sport."
           },
           "qcm_image": {
@@ -7149,7 +7149,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "d’aller dans un parc."
           },
           "qcm_image": {
@@ -7176,7 +7176,7 @@
         "enonce": "Quel musée vous conseille-t-on de visiter s’il pleut ?",
         "type_reponse": "lignes",
         "points": 1,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Le musée Carnavalet (sur l’histoire de Paris).",
         "formes": {
           "qcm_texte": {
@@ -7239,7 +7239,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "theatre"
           },
           "qcm_texte": {
@@ -7284,7 +7284,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "des Champs-Élysées."
           }
         }
@@ -7293,7 +7293,7 @@
         "enonce": "Où pouvez-vous réserver ?",
         "type_reponse": "lignes",
         "points": 1,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Au bureau 127 de l’université.",
         "formes": {
           "qcm_texte": {
@@ -7374,7 +7374,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Au 4e étage."
           }
         }
@@ -7401,7 +7401,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "manger chez elle."
           },
           "qcm_image": {
@@ -7428,7 +7428,7 @@
         "enonce": "Quel jour est le rendez-vous ?",
         "type_reponse": "lignes",
         "points": 2,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Vendredi (à 18 h 30).",
         "formes": {
           "qcm_texte": {
@@ -7491,7 +7491,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "boisson"
           },
           "qcm_texte": {
@@ -7554,7 +7554,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Jura."
           }
         }
@@ -7563,7 +7563,7 @@
         "enonce": "Il y a combien d’habitants à Porrentruy ?",
         "type_reponse": "lignes",
         "points": 2,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "6600 habitants.",
         "formes": {
           "qcm_texte": {
@@ -7626,7 +7626,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "la France."
           },
           "qcm_image": {
@@ -7671,7 +7671,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "chemin domicile b"
           },
           "qcm_texte": {
@@ -7734,7 +7734,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "20 h par semaine."
           },
           "qcm_image": {
@@ -7761,14 +7761,14 @@
         "enonce": "Quel numéro de téléphone appelez-vous pour travailler à midi ?",
         "type_reponse": "lignes",
         "points": 2,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Le 06 67 32 32 01 (Evelyne)."
       },
       {
         "enonce": "Quel jour pouvez-vous donner des cours d’anglais ?",
         "type_reponse": "lignes",
         "points": 2,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Le mercredi (après-midi).",
         "formes": {
           "qcm_texte": {
@@ -7831,7 +7831,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "du lundi au vendredi."
           },
           "qcm_image": {
@@ -7894,7 +7894,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "du restaurant universitaire."
           }
         }
@@ -7921,7 +7921,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Toute la journée."
           },
           "qcm_image": {
@@ -7948,7 +7948,7 @@
         "enonce": "Combien coûte le déjeuner ?",
         "type_reponse": "lignes",
         "points": 1.5,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "4 €."
       },
       {
@@ -7973,7 +7973,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "restaurant"
           },
           "qcm_texte": {
@@ -8036,7 +8036,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "une soirée d’anniversaire."
           },
           "qcm_image": {
@@ -8063,7 +8063,7 @@
         "enonce": "À quel étage habite Louise ?",
         "type_reponse": "lignes",
         "points": 2,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Au 6e étage.",
         "formes": {
           "qcm_texte": {
@@ -8126,7 +8126,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "jeudi."
           },
           "qcm_image": {
@@ -8171,7 +8171,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "boisson"
           },
           "qcm_texte": {
@@ -8234,7 +8234,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Dans le nord de la Suisse."
           }
         }
@@ -8243,7 +8243,7 @@
         "enonce": "Quel sport les enfants peuvent-ils faire ?",
         "type_reponse": "lignes",
         "points": 2,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Du football (avec un professionnel).",
         "formes": {
           "qcm_texte": {
@@ -8306,7 +8306,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Samedi."
           },
           "qcm_image": {
@@ -8351,7 +8351,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "chemin piscine b"
           },
           "qcm_texte": {
@@ -8396,7 +8396,7 @@
         "enonce": "Quand devez-vous venir pour découvrir la danse indienne ?",
         "type_reponse": "lignes",
         "points": 2,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Le samedi midi.",
         "formes": {
           "qcm_texte": {
@@ -8459,7 +8459,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "De 12 h à 14 h."
           },
           "qcm_image": {
@@ -8504,7 +8504,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Aller à la réception."
           },
           "qcm_image": {
@@ -8531,7 +8531,7 @@
         "enonce": "Pendant combien de temps pouvez-vous faire du sport avec le coach ?",
         "type_reponse": "lignes",
         "points": 1.5,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "2 heures.",
         "formes": {
           "qcm_texte": {
@@ -8594,7 +8594,7 @@
         "enonce": "Quelle est la saison des festivals ?",
         "type_reponse": "lignes",
         "points": 1.5,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "L’été."
       },
       {
@@ -8619,7 +8619,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Sur le site internet du journal."
           },
           "qcm_image": {
@@ -8664,7 +8664,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Une réduction pour un billet."
           }
         }
@@ -8691,7 +8691,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "concert"
           },
           "qcm_texte": {
@@ -8802,7 +8802,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "quatorze heures trente"
           },
           "qcm_texte": {
@@ -8847,7 +8847,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "danse"
           },
           "qcm_texte": {
@@ -8892,7 +8892,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "jus"
           },
           "qcm_texte": {
@@ -8941,7 +8941,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Un ami de classe."
           }
         }
@@ -8986,7 +8986,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "piscine"
           },
           "qcm_texte": {
@@ -9013,7 +9013,7 @@
         "enonce": "Chez qui va Célia pendant les vacances ?",
         "type_reponse": "lignes",
         "points": 2,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Chez sa tante.",
         "formes": {
           "qcm_texte": {
@@ -9076,7 +9076,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "restaurant"
           },
           "qcm_texte": {
@@ -9125,7 +9125,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "te téléphoner."
           }
         }
@@ -9152,7 +9152,7 @@
         "enonce": "Écrivez les numéros des 4 objets de la liste (1 point par objet).",
         "type_reponse": "lignes",
         "points": 4,
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "6 (chaussures), 11 (sacs à dos), 10 (lunettes de soleil), 3 (bouteille d’eau).",
         "image": "/lib/images/documents/objets-numerotes.webp",
         "formes": {
@@ -9234,7 +9234,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Une raclette"
           }
         }
@@ -9242,7 +9242,7 @@
       {
         "enonce": "Combien de personnes seront à table ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Six personnes."
       },
       {
@@ -9266,7 +9266,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Du fromage"
           }
         }
@@ -9292,7 +9292,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "19 h 15"
           },
           "qcm_image": {
@@ -9336,7 +9336,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Elle travaille jusqu’à 18 h 30."
           },
           "qcm_image": {
@@ -9399,7 +9399,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Des chaussons d’escalade"
           },
           "qcm_image": {
@@ -9443,7 +9443,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Les bijoux et les montres"
           }
         }
@@ -9451,7 +9451,7 @@
       {
         "enonce": "Jusqu’à quelle heure la salle est-elle ouverte le mardi ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Jusqu’à 22 h.",
         "formes": {
           "qcm_texte": {
@@ -9513,7 +9513,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Le dimanche"
           },
           "qcm_image": {
@@ -9557,7 +9557,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "La responsable"
           }
         }
@@ -9600,7 +9600,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Une soupe"
           },
           "qcm_image": {
@@ -9644,7 +9644,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Un concert de jazz"
           },
           "qcm_image": {
@@ -9670,7 +9670,7 @@
       {
         "enonce": "Combien coûte une place ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "15 francs."
       },
       {
@@ -9694,7 +9694,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Près du pont"
           },
           "qcm_image": {
@@ -9738,7 +9738,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "19 h 30"
           }
         }
@@ -9781,7 +9781,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Elle a un nouveau logement."
           }
         }
@@ -9789,7 +9789,7 @@
       {
         "enonce": "Quel jour a lieu la fête ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Le samedi 20 mars.",
         "formes": {
           "qcm_texte": {
@@ -9851,7 +9851,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Un gâteau"
           },
           "qcm_image": {
@@ -9895,7 +9895,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Le bus 8"
           }
         }
@@ -9921,7 +9921,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Par un message écrit"
           }
         }
@@ -9966,7 +9966,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Avec des amis"
           }
         }
@@ -9992,7 +9992,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "lac"
           },
           "qcm_texte": {
@@ -10018,7 +10018,7 @@
       {
         "enonce": "À quelle heure le bateau part-il ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "À 10 h.",
         "formes": {
           "qcm_texte": {
@@ -10080,7 +10080,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "pique nique"
           },
           "qcm_texte": {
@@ -10124,7 +10124,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Par courriel"
           }
         }
@@ -10167,7 +10167,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Des crêpes"
           },
           "qcm_image": {
@@ -10193,7 +10193,7 @@
       {
         "enonce": "Pour qui Élisa organise-t-elle la fête ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Pour Théo."
       },
       {
@@ -10217,7 +10217,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "farine"
           },
           "qcm_texte": {
@@ -10261,7 +10261,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "10"
           }
         }
@@ -10269,7 +10269,7 @@
       {
         "enonce": "Avant quelle heure dois-tu rentrer ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Avant 16 h.",
         "formes": {
           "qcm_texte": {
@@ -10350,7 +10350,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "À la gare"
           }
         }
@@ -10376,7 +10376,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "15 h 10"
           },
           "qcm_image": {
@@ -10464,7 +10464,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Chez le dentiste"
           },
           "qcm_image": {
@@ -10508,7 +10508,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "zoo"
           },
           "qcm_texte": {
@@ -10569,7 +10569,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "À la gare"
           },
           "qcm_image": {
@@ -10613,7 +10613,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Ranger le salon"
           }
         }
@@ -10621,7 +10621,7 @@
       {
         "enonce": "Combien de personnes mangent ce soir ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Quatre personnes.",
         "formes": {
           "qcm_texte": {
@@ -10683,7 +10683,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "18 h 15"
           }
         }
@@ -10709,7 +10709,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Jouer aux cartes"
           },
           "qcm_image": {
@@ -10772,7 +10772,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Un départ en retraite"
           },
           "qcm_image": {
@@ -10816,7 +10816,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Un gâteau"
           },
           "qcm_image": {
@@ -10842,7 +10842,7 @@
       {
         "enonce": "Combien chaque personne met-elle dans la cagnotte ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "10 francs."
       },
       {
@@ -10866,7 +10866,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "16 h"
           },
           "qcm_image": {
@@ -10972,7 +10972,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "neige"
           },
           "qcm_texte": {
@@ -10998,7 +10998,7 @@
       {
         "enonce": "Qui organise le concours ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Le Centre culturel de Delémont.",
         "formes": {
           "qcm_texte": {
@@ -11060,7 +11060,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Le vendredi 12 décembre"
           },
           "qcm_image": {
@@ -11086,7 +11086,7 @@
       {
         "enonce": "Que peux-tu gagner en deuxième prix ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Un cours de photographie.",
         "formes": {
           "qcm_texte": {
@@ -11148,7 +11148,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Par courriel"
           },
           "qcm_image": {
@@ -11192,7 +11192,7 @@
       {
         "enonce": "Combien de jours dure le marché de Noël ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Trois jours (du 4 au 6 décembre).",
         "formes": {
           "qcm_texte": {
@@ -11254,7 +11254,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "17 h"
           },
           "qcm_image": {
@@ -11298,7 +11298,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Le vin chaud"
           }
         }
@@ -11306,7 +11306,7 @@
       {
         "enonce": "À partir de quelle heure peut-on patiner ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Dès 14 h.",
         "formes": {
           "qcm_texte": {
@@ -11386,7 +11386,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "course"
           },
           "qcm_texte": {
@@ -11412,7 +11412,7 @@
       {
         "enonce": "Quel jour a lieu la course ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Le dimanche 14 juin.",
         "formes": {
           "qcm_texte": {
@@ -11474,7 +11474,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "5 km"
           }
         }
@@ -11500,7 +11500,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Un enfant de 10 ans"
           }
         }
@@ -11526,7 +11526,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "ordinateur"
           },
           "qcm_texte": {
@@ -11588,7 +11588,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "vélo"
           },
           "qcm_texte": {
@@ -11632,7 +11632,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "150 francs"
           }
         }
@@ -11658,7 +11658,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Un casque"
           }
         }
@@ -11666,7 +11666,7 @@
       {
         "enonce": "Quel numéro dois-tu appeler pour avoir des renseignements ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Le 079 321 54 98."
       }
     ],
@@ -11708,7 +11708,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "De la radio"
           },
           "qcm_image": {
@@ -11752,7 +11752,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "15 ans"
           }
         }
@@ -11760,13 +11760,13 @@
       {
         "enonce": "Combien de personnes peuvent boire un café avec l’animateur ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Dix personnes (les dix premiers inscrits)."
       },
       {
         "enonce": "Quelle est la profession de Marc Roux ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Il est animateur de radio.",
         "formes": {
           "qcm_texte": {
@@ -11828,7 +11828,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Dans un studio de radio à Lausanne"
           },
           "qcm_image": {
@@ -11890,7 +11890,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "piano"
           },
           "qcm_texte": {
@@ -11934,7 +11934,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Elle est étudiante."
           }
         }
@@ -11942,13 +11942,13 @@
       {
         "enonce": "À partir de quel âge peut-on prendre des cours ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Dès 6 ans."
       },
       {
         "enonce": "Combien coûte un cours de 45 minutes ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "30 francs."
       },
       {
@@ -11972,7 +11972,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "courriel"
           },
           "qcm_texte": {
@@ -12034,7 +12034,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "machine à café"
           },
           "qcm_texte": {
@@ -12060,7 +12060,7 @@
       {
         "enonce": "Combien de temps faut-il attendre après avoir allumé la machine ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "30 secondes."
       },
       {
@@ -12084,7 +12084,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "De l’eau froide"
           }
         }
@@ -12110,7 +12110,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "La touche C2"
           }
         }
@@ -12118,7 +12118,7 @@
       {
         "enonce": "Pendant combien de secondes dois-tu appuyer sur le bouton rouge pour éteindre la machine ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "3 secondes."
       }
     ],
@@ -12161,7 +12161,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Le mardi"
           },
           "qcm_image": {
@@ -12187,7 +12187,7 @@
       {
         "enonce": "Quel jour la piscine est-elle fermée pour le bain libre ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Le dimanche.",
         "formes": {
           "qcm_texte": {
@@ -12231,7 +12231,7 @@
       {
         "enonce": "À quel arrêt de bus dois-tu descendre ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "À l’arrêt « Lac »."
       },
       {
@@ -12255,7 +12255,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "27"
           }
         }
@@ -12299,7 +12299,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "L’ouverture d’une bibliothèque"
           },
           "qcm_image": {
@@ -12325,7 +12325,7 @@
       {
         "enonce": "À quelle heure commence l’inauguration ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "À 14 h.",
         "formes": {
           "qcm_texte": {
@@ -12387,7 +12387,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Dans la salle des fêtes"
           },
           "qcm_image": {
@@ -12413,7 +12413,7 @@
       {
         "enonce": "Avant quelle date dois-tu répondre à l’invitation ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Avant le 1er mai."
       }
     ],
@@ -12456,7 +12456,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "eglise"
           },
           "qcm_texte": {
@@ -12482,7 +12482,7 @@
       {
         "enonce": "Où est le rendez-vous ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Devant la gare.",
         "formes": {
           "qcm_texte": {
@@ -12544,7 +12544,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Le bus 3"
           }
         }
@@ -12570,7 +12570,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Elle est gratuite."
           }
         }
@@ -12614,7 +12614,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Le permis de conduire"
           }
         }
@@ -12622,7 +12622,7 @@
       {
         "enonce": "À quelle heure commence l’examen ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "À 14 h.",
         "formes": {
           "qcm_texte": {
@@ -12684,7 +12684,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Une heure"
           }
         }
@@ -12692,7 +12692,7 @@
       {
         "enonce": "Quel bus dois-tu prendre ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Le bus 2.",
         "formes": {
           "qcm_texte": {
@@ -12773,7 +12773,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Une cliente"
           }
         }
@@ -12799,7 +12799,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Une boutique de décoration"
           },
           "qcm_image": {
@@ -12825,7 +12825,7 @@
       {
         "enonce": "À quelle heure est le rendez-vous ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "À 10 h.",
         "formes": {
           "qcm_texte": {
@@ -12887,7 +12887,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "12 h"
           },
           "qcm_image": {
@@ -12950,7 +12950,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "camping"
           },
           "qcm_texte": {
@@ -12994,7 +12994,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Un château"
           },
           "qcm_image": {
@@ -13020,7 +13020,7 @@
       {
         "enonce": "À quelle heure est le rendez-vous ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "À 10 h.",
         "formes": {
           "qcm_texte": {
@@ -13082,7 +13082,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Un pique-nique"
           }
         }
@@ -13127,7 +13127,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "randonnée"
           },
           "qcm_texte": {
@@ -13171,7 +13171,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Avec ses cousins"
           },
           "qcm_image": {
@@ -13215,7 +13215,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "train"
           },
           "qcm_texte": {
@@ -13241,7 +13241,7 @@
       {
         "enonce": "À quelle heure partez-vous ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "À 8 h.",
         "formes": {
           "qcm_texte": {
@@ -13320,7 +13320,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Pour t’inviter à un match"
           }
         }
@@ -13346,7 +13346,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "hockey"
           },
           "qcm_texte": {
@@ -13372,7 +13372,7 @@
       {
         "enonce": "À quelle heure le match commence-t-il ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "À 19 h 30.",
         "formes": {
           "qcm_texte": {
@@ -13434,7 +13434,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Vous mangez une pizza."
           },
           "qcm_image": {
@@ -13497,7 +13497,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "aeroport"
           },
           "qcm_texte": {
@@ -13523,7 +13523,7 @@
       {
         "enonce": "À quelle heure son avion décolle-t-il ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "À 16 h 30.",
         "formes": {
           "qcm_texte": {
@@ -13585,7 +13585,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "passeport"
           },
           "qcm_texte": {
@@ -13629,7 +13629,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Par un SMS"
           }
         }
@@ -13672,7 +13672,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "9 h"
           },
           "qcm_image": {
@@ -13716,7 +13716,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Devant le stand des disques"
           }
         }
@@ -13724,7 +13724,7 @@
       {
         "enonce": "Combien coûte l’entrée du marché ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Elle est gratuite."
       },
       {
@@ -13792,7 +13792,7 @@
       {
         "enonce": "Combien d’activités sont ouvertes aux enfants ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Deux : le judo et la gym du jeudi.",
         "formes": {
           "qcm_texte": {
@@ -13854,7 +13854,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Le mardi"
           },
           "qcm_image": {
@@ -13898,7 +13898,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "yoga"
           },
           "qcm_texte": {
@@ -13942,7 +13942,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "9 h"
           },
           "qcm_image": {
@@ -13968,7 +13968,7 @@
       {
         "enonce": "Combien paie un enfant pour la gym du jeudi ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "1 franc."
       }
     ],
@@ -14010,7 +14010,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "travaux"
           },
           "qcm_texte": {
@@ -14036,7 +14036,7 @@
       {
         "enonce": "À quelle heure la ligne 12 part-elle de la Gare du lundi au vendredi ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "À 7 h 00 et à 7 h 10.",
         "formes": {
           "qcm_texte": {
@@ -14080,7 +14080,7 @@
       {
         "enonce": "À quelle heure la ligne 15 arrive-t-elle à l’Université le samedi ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "À 9 h 30.",
         "formes": {
           "qcm_texte": {
@@ -14142,7 +14142,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "10 h 10"
           },
           "qcm_image": {
@@ -14186,7 +14186,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "La ligne 12"
           }
         }
@@ -14230,7 +14230,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Au comptoir"
           }
         }
@@ -14256,7 +14256,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "carte didentite"
           },
           "qcm_texte": {
@@ -14282,7 +14282,7 @@
       {
         "enonce": "Quel jour la bibliothèque est-elle fermée ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Le lundi.",
         "formes": {
           "qcm_texte": {
@@ -14344,7 +14344,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "16 h"
           },
           "qcm_image": {
@@ -14406,7 +14406,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Une boulangerie"
           },
           "qcm_image": {
@@ -14432,7 +14432,7 @@
       {
         "enonce": "Quelle est l’adresse de ce magasin ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Au 5, place du Marché, à côté de l’église.",
         "formes": {
           "qcm_texte": {
@@ -14494,7 +14494,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "7 h"
           },
           "qcm_image": {
@@ -14538,7 +14538,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "panier"
           },
           "qcm_texte": {
@@ -14600,7 +14600,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "« Tempête »"
           },
           "qcm_image": {
@@ -14626,7 +14626,7 @@
       {
         "enonce": "À quelle heure commence « Le Chat perché » ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "À 15 h.",
         "formes": {
           "qcm_texte": {
@@ -14688,7 +14688,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Un film d’aventure"
           }
         }
@@ -14696,7 +14696,7 @@
       {
         "enonce": "Combien coûte la place pour le film d’animation ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "10 francs."
       },
       {
@@ -14720,7 +14720,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Le 8 novembre"
           }
         }
@@ -14764,7 +14764,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "La pharmacie"
           },
           "qcm_image": {
@@ -14790,7 +14790,7 @@
       {
         "enonce": "Qu’est-ce qui se trouve en face de la nouvelle pharmacie ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "La banque.",
         "formes": {
           "qcm_texte": {
@@ -14896,7 +14896,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Par courriel"
           },
           "qcm_image": {
@@ -14958,7 +14958,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Suivre un cours de cuisine"
           },
           "qcm_image": {
@@ -15002,7 +15002,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Jouer de la guitare"
           },
           "qcm_image": {
@@ -15028,7 +15028,7 @@
       {
         "enonce": "Combien coûte un cours de guitare ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "35 francs (pour 45 minutes)."
       }
     ],
@@ -15052,7 +15052,7 @@
       {
         "enonce": "Jusqu’à quelle heure peux-tu prendre le petit-déjeuner à l’hôtel ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Jusqu’à 10 h.",
         "formes": {
           "qcm_texte": {
@@ -15114,7 +15114,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Le mardi en fin d’après-midi"
           }
         }
@@ -15158,7 +15158,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Le week-end"
           },
           "qcm_image": {
@@ -15184,7 +15184,7 @@
       {
         "enonce": "Combien coûte la réparation d’un téléphone ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "60 francs."
       },
       {
@@ -15208,7 +15208,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Les pommes"
           },
           "qcm_image": {
@@ -15252,7 +15252,7 @@
       {
         "enonce": "Qui peut s’inscrire au cours de théâtre ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Les enfants de 8 à 12 ans.",
         "formes": {
           "qcm_texte": {
@@ -15314,7 +15314,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "22 francs"
           }
         }
@@ -15358,7 +15358,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "scooter"
           },
           "qcm_texte": {
@@ -15402,7 +15402,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "28 francs"
           }
         }
@@ -15428,7 +15428,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "chat"
           },
           "qcm_texte": {
@@ -15490,7 +15490,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "19 h 30"
           },
           "qcm_image": {
@@ -15516,7 +15516,7 @@
       {
         "enonce": "Quel jour peux-tu aller au cours de peinture ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Le dimanche.",
         "formes": {
           "qcm_texte": {
@@ -15596,7 +15596,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "21 h"
           },
           "qcm_image": {
@@ -15640,7 +15640,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Visiter la vieille ville de Berne"
           },
           "qcm_image": {
@@ -15666,7 +15666,7 @@
       {
         "enonce": "Quand la librairie est-elle ouverte samedi soir ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "De 20 h à 23 h.",
         "formes": {
           "qcm_texte": {
@@ -15746,7 +15746,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Mardi"
           },
           "qcm_image": {
@@ -15790,7 +15790,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Promener un chien"
           }
         }
@@ -15834,7 +15834,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "appartement"
           },
           "qcm_texte": {
@@ -15878,7 +15878,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "25 francs"
           }
         }
@@ -15904,7 +15904,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "jouet"
           },
           "qcm_texte": {
@@ -15948,7 +15948,7 @@
       {
         "enonce": "Quel jour peux-tu faire de la danse ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Le jeudi soir.",
         "formes": {
           "qcm_texte": {
@@ -16010,7 +16010,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "17 h"
           },
           "qcm_image": {
@@ -16072,7 +16072,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "restaurant"
           },
           "qcm_texte": {
@@ -16116,7 +16116,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "18 francs"
           }
         }
@@ -16160,7 +16160,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "19 h 30"
           }
         }
@@ -16186,7 +16186,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Faire une balade en bateau"
           }
         }
@@ -16194,7 +16194,7 @@
       {
         "enonce": "Quand l’aquarium ouvre-t-il ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Le 15 octobre."
       }
     ],
@@ -16218,7 +16218,7 @@
       {
         "enonce": "Quand peux-tu écouter des contes ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Samedi soir.",
         "formes": {
           "qcm_texte": {
@@ -16280,7 +16280,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Suivre un cours d’informatique"
           }
         }
@@ -16306,7 +16306,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "18 h"
           },
           "qcm_image": {
@@ -16350,7 +16350,7 @@
       {
         "enonce": "Combien coûte un menu complet ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "16 francs."
       },
       {
@@ -16374,7 +16374,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "À la télévision"
           },
           "qcm_image": {
@@ -16436,7 +16436,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "canape"
           },
           "qcm_texte": {
@@ -16480,7 +16480,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "480 francs"
           }
         }
@@ -16524,7 +16524,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Un magasin de chaussures"
           },
           "qcm_image": {
@@ -16550,7 +16550,7 @@
       {
         "enonce": "Quand la crêperie ouvre-t-elle ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Le 3 septembre.",
         "formes": {
           "qcm_texte": {
@@ -16612,7 +16612,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "4 francs"
           }
         }
@@ -16656,7 +16656,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "robinet"
           },
           "qcm_texte": {
@@ -16682,7 +16682,7 @@
       {
         "enonce": "À quelle heure le cours de yoga du soir se termine-t-il ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "À 19 h 30.",
         "formes": {
           "qcm_texte": {
@@ -16744,7 +16744,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Une heure et demie"
           }
         }
@@ -16788,7 +16788,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "La ferme"
           },
           "qcm_image": {
@@ -16814,7 +16814,7 @@
       {
         "enonce": "Qu’est-ce que tu peux gagner à la tombola ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Des bons d’achat de 30 francs.",
         "formes": {
           "qcm_texte": {
@@ -16894,7 +16894,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "8 h"
           },
           "qcm_image": {
@@ -16920,7 +16920,7 @@
       {
         "enonce": "À quelle heure l’employé de la pharmacie commence-t-il ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "À 8 h.",
         "formes": {
           "qcm_texte": {
@@ -16982,7 +16982,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Le restaurant « Rive »"
           },
           "qcm_image": {
@@ -17044,7 +17044,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "courriel"
           },
           "qcm_texte": {
@@ -17088,7 +17088,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "chat"
           },
           "qcm_texte": {
@@ -17132,13 +17132,13 @@
       {
         "enonce": "À quelle date le nouveau tram arrive-t-il ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Le 3 octobre."
       },
       {
         "enonce": "Quelle nouveauté peux-tu trouver dans le tram ? (Une réponse attendue.)",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Le wifi gratuit (ou des prises pour recharger son téléphone).",
         "formes": {
           "qcm_texte": {
@@ -17200,7 +17200,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "tram"
           },
           "qcm_texte": {
@@ -17244,7 +17244,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "3 francs"
           }
         }
@@ -17270,7 +17270,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "200"
           }
         }
@@ -17314,7 +17314,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "jardin"
           },
           "qcm_texte": {
@@ -17340,7 +17340,7 @@
       {
         "enonce": "Dans quelle ville se trouve ce jardin ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "À Lausanne."
       },
       {
@@ -17364,7 +17364,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "2018"
           }
         }
@@ -17434,7 +17434,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Ils plantent et ils arrosent."
           },
           "qcm_image": {
@@ -17496,7 +17496,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "2010"
           }
         }
@@ -17522,7 +17522,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Le cinéma"
           },
           "qcm_image": {
@@ -17566,7 +17566,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Le grand prix"
           }
         }
@@ -17574,7 +17574,7 @@
       {
         "enonce": "Qui a gagné le prix du meilleur acteur ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Samuel Gaillard."
       },
       {
@@ -17598,7 +17598,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Leur qualité artistique"
           }
         }
@@ -17642,7 +17642,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "À la montagne"
           },
           "qcm_image": {
@@ -17686,7 +17686,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Sauveteurs en montagne"
           },
           "qcm_image": {
@@ -17730,7 +17730,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "900 000"
           }
         }
@@ -17738,7 +17738,7 @@
       {
         "enonce": "Quel est le métier de Luc Martin dans la vie ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Il est skieur."
       },
       {
@@ -17762,7 +17762,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "À l’aise"
           }
         }
@@ -17806,7 +17806,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "De cuisine"
           },
           "qcm_image": {
@@ -17850,7 +17850,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "sushi"
           },
           "qcm_texte": {
@@ -17876,7 +17876,7 @@
       {
         "enonce": "Dans quel pays vit Rosa ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Au Pérou."
       },
       {
@@ -17944,7 +17944,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Au marché"
           },
           "qcm_image": {
@@ -18006,7 +18006,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Réalisatrice"
           }
         }
@@ -18032,7 +18032,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Un film d’animation"
           }
         }
@@ -18040,7 +18040,7 @@
       {
         "enonce": "Que cherche Piko ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Sa famille.",
         "formes": {
           "qcm_texte": {
@@ -18102,7 +18102,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "3"
           }
         }
@@ -18110,7 +18110,7 @@
       {
         "enonce": "Dans quelle ville le film a-t-il été dessiné ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "À Genève."
       }
     ],
@@ -18152,7 +18152,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Le 12"
           }
         }
@@ -18160,7 +18160,7 @@
       {
         "enonce": "Combien d’animaux y a-t-il dans le parc ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "450 animaux.",
         "formes": {
           "qcm_texte": {
@@ -18222,7 +18222,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Les marmottes"
           }
         }
@@ -18248,7 +18248,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Une chanteuse"
           },
           "qcm_image": {
@@ -18274,7 +18274,7 @@
       {
         "enonce": "Que propose le parc le mois prochain ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Un spectacle d’oiseaux de proie.",
         "formes": {
           "qcm_texte": {
@@ -18399,7 +18399,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "montagne"
           },
           "qcm_texte": {
@@ -18443,7 +18443,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Dans un chalet"
           },
           "qcm_image": {
@@ -18469,7 +18469,7 @@
       {
         "enonce": "Quelle est la spécialité du village ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Le fromage de Val-d’Or.",
         "formes": {
           "qcm_texte": {
@@ -18531,7 +18531,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Le ski de fond"
           }
         }
@@ -18575,7 +18575,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Des piscines"
           },
           "qcm_image": {
@@ -18601,7 +18601,7 @@
       {
         "enonce": "Où se trouve « Aqua Centre » ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "En ville, à côté de la gare.",
         "formes": {
           "qcm_texte": {
@@ -18663,7 +18663,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Un toboggan"
           }
         }
@@ -18671,7 +18671,7 @@
       {
         "enonce": "Pendant quels mois la piscine de Serrières est-elle ouverte ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "De mai à septembre.",
         "formes": {
           "qcm_texte": {
@@ -18733,7 +18733,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "bus"
           },
           "qcm_texte": {
@@ -18795,7 +18795,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Un passeport"
           },
           "qcm_image": {
@@ -18839,7 +18839,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Ton nom et ton adresse"
           }
         }
@@ -18847,7 +18847,7 @@
       {
         "enonce": "Quelles informations dois-tu indiquer sur le formulaire ? (Une réponse attendue.)",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Ton nom, ton niveau ou la date de l’examen.",
         "formes": {
           "qcm_texte": {
@@ -18909,7 +18909,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "telephoner"
           },
           "qcm_texte": {
@@ -18935,7 +18935,7 @@
       {
         "enonce": "À partir de quelle heure peux-tu lui téléphoner ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "À partir de 9 h.",
         "formes": {
           "qcm_texte": {
@@ -19015,7 +19015,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Du 5 au 18 mars"
           }
         }
@@ -19023,7 +19023,7 @@
       {
         "enonce": "Combien coûtent deux croissants ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "4 francs."
       },
       {
@@ -19047,7 +19047,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Un repas"
           }
         }
@@ -19055,7 +19055,7 @@
       {
         "enonce": "Jusqu’à quel jour la deuxième offre est-elle valable ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Jusqu’au 12 mars."
       },
       {
@@ -19079,7 +19079,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "fleur"
           },
           "qcm_texte": {
@@ -19141,7 +19141,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "18 h"
           },
           "qcm_image": {
@@ -19167,7 +19167,7 @@
       {
         "enonce": "Où se trouve la buvette ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Derrière le grand bassin.",
         "formes": {
           "qcm_texte": {
@@ -19211,7 +19211,7 @@
       {
         "enonce": "Pendant combien de temps sert-on les repas chauds ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Deux heures et demie (de 12 h à 14 h 30).",
         "formes": {
           "qcm_texte": {
@@ -19273,7 +19273,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Un plat chaud"
           },
           "qcm_image": {
@@ -19317,7 +19317,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Une boisson froide"
           }
         }
@@ -19360,7 +19360,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Lundi"
           },
           "qcm_image": {
@@ -19404,7 +19404,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "13 h 45"
           }
         }
@@ -19474,7 +19474,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "L’éteindre"
           }
         }
@@ -19500,7 +19500,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Un dictionnaire"
           },
           "qcm_image": {
@@ -19544,7 +19544,7 @@
       {
         "enonce": "Qui a écrit ce message ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "M. Berset, le professeur de sport.",
         "formes": {
           "qcm_texte": {
@@ -19606,7 +19606,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Un disque volant"
           },
           "qcm_image": {
@@ -19632,7 +19632,7 @@
       {
         "enonce": "Combien de joueurs y a-t-il dans chaque équipe ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Sept joueurs.",
         "formes": {
           "qcm_texte": {
@@ -19702,7 +19702,7 @@
       {
         "enonce": "Pendant combien de temps peut-on garder le disque dans les mains ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Dix secondes au maximum."
       }
     ],
@@ -19744,7 +19744,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Utiliser un téléphone portable"
           },
           "qcm_image": {
@@ -19788,7 +19788,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "En classe"
           }
         }
@@ -19814,7 +19814,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "5 minutes"
           }
         }
@@ -19822,7 +19822,7 @@
       {
         "enonce": "Combien de temps dure une récréation ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "15 minutes."
       },
       {
@@ -19846,7 +19846,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Sortir de l’école"
           }
         }
@@ -19890,7 +19890,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Vive Lausanne !"
           }
         }
@@ -19898,7 +19898,7 @@
       {
         "enonce": "Où a lieu le spectacle ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Dans le collège.",
         "formes": {
           "qcm_texte": {
@@ -19942,7 +19942,7 @@
       {
         "enonce": "Où faut-il aller pour s’inscrire ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Au secrétariat."
       },
       {
@@ -19966,7 +19966,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Dans l’agenda"
           },
           "qcm_image": {
@@ -20010,7 +20010,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Rien"
           }
         }
@@ -20053,7 +20053,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Au cinéma"
           },
           "qcm_image": {
@@ -20097,7 +20097,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Des légumes et du poisson"
           },
           "qcm_image": {
@@ -20141,7 +20141,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "De commander une pizza par téléphone"
           },
           "qcm_image": {
@@ -20185,7 +20185,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Sur la table de la cuisine"
           },
           "qcm_image": {
@@ -20229,7 +20229,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "La Margherita"
           }
         }
@@ -20273,7 +20273,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Une émission de télévision"
           },
           "qcm_image": {
@@ -20317,7 +20317,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Un voyage à Zermatt"
           },
           "qcm_image": {
@@ -20369,7 +20369,7 @@
       {
         "enonce": "Que faut-il raconter dans la lettre ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Une de ses journées.",
         "formes": {
           "qcm_texte": {
@@ -20431,7 +20431,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Le 10 mars"
           }
         }
@@ -20457,7 +20457,7 @@
       {
         "enonce": "Qui organise le concert ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "L’association « Un repas pour tous »."
       },
       {
@@ -20481,7 +20481,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "À nourrir des enfants"
           }
         }
@@ -20507,7 +20507,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Sur le site Internet de l’association"
           },
           "qcm_image": {
@@ -20533,7 +20533,7 @@
       {
         "enonce": "Dans combien de villes ont lieu les concerts ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Dans quinze villes.",
         "formes": {
           "qcm_texte": {
@@ -20577,7 +20577,7 @@
       {
         "enonce": "Que peut-on faire d’autre pour aider l’association ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "On peut faire un don sur le site (« Donner »)."
       }
     ],
@@ -20601,7 +20601,7 @@
       {
         "enonce": "Comment s’appelle le jeu ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Le petit bac."
       },
       {
@@ -20625,7 +20625,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "7 ans"
           }
         }
@@ -20633,7 +20633,7 @@
       {
         "enonce": "Combien de colonnes y a-t-il sur la feuille ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Cinq colonnes.",
         "formes": {
           "qcm_texte": {
@@ -20695,7 +20695,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Une lettre"
           }
         }
@@ -20721,7 +20721,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Celui qui remplit sa feuille le premier"
           }
         }
@@ -20765,7 +20765,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Dans un cinéma"
           },
           "qcm_image": {
@@ -20791,7 +20791,7 @@
       {
         "enonce": "À quelle heure finit la dernière séance ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "À 23 h 30."
       },
       {
@@ -20815,7 +20815,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Vert"
           },
           "qcm_image": {
@@ -20841,7 +20841,7 @@
       {
         "enonce": "Combien de places peut-on acheter au maximum ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "6 places.",
         "formes": {
           "qcm_texte": {
@@ -20903,7 +20903,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Avec des billets ou une carte bancaire"
           }
         }
@@ -20947,7 +20947,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Tout le monde"
           }
         }
@@ -20973,7 +20973,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Un formulaire et deux photos"
           }
         }
@@ -20999,7 +20999,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Devant la gare"
           }
         }
@@ -21025,7 +21025,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "4,5 kilomètres"
           }
         }
@@ -21051,7 +21051,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "En téléphonant"
           }
         }
@@ -21077,7 +21077,7 @@
       {
         "enonce": "Qui organise le concours ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "La ville de Fribourg.",
         "formes": {
           "qcm_texte": {
@@ -21121,7 +21121,7 @@
       {
         "enonce": "Quel est le thème du poème ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Le voyage.",
         "formes": {
           "qcm_texte": {
@@ -21183,7 +21183,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Entre 20 et 150"
           }
         }
@@ -21191,7 +21191,7 @@
       {
         "enonce": "Où seront affichés les poèmes des gagnants ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Dans les bus de la ville.",
         "formes": {
           "qcm_texte": {
@@ -21235,7 +21235,7 @@
       {
         "enonce": "Que gagne le premier ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Un week-end à Europa-Park."
       }
     ],
@@ -21258,7 +21258,7 @@
       {
         "enonce": "À quelle heure Véronique rentre-t-elle du travail ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "À 19 heures.",
         "formes": {
           "qcm_texte": {
@@ -21320,7 +21320,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Un gâteau au chocolat"
           },
           "qcm_image": {
@@ -21364,7 +21364,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "En face de la maison"
           },
           "qcm_image": {
@@ -21390,7 +21390,7 @@
       {
         "enonce": "Pour qui est la fête de ce soir ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Pour Émilie."
       },
       {
@@ -21414,7 +21414,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Dans l’entrée"
           },
           "qcm_image": {
@@ -21476,7 +21476,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Plonger"
           }
         }
@@ -21502,7 +21502,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Elle est interdite"
           }
         }
@@ -21528,7 +21528,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Dans l’eau"
           }
         }
@@ -21554,7 +21554,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Prendre une douche"
           },
           "qcm_image": {
@@ -21598,7 +21598,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "9 heures"
           },
           "qcm_image": {
@@ -21659,7 +21659,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "La sœur de Julie"
           }
         }
@@ -21667,7 +21667,7 @@
       {
         "enonce": "Quel âge faut-il avoir pour s’inscrire seul(e) ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "18 ans."
       },
       {
@@ -21691,7 +21691,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Elle est gratuite"
           }
         }
@@ -21743,7 +21743,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Le vendeur"
           }
         }
@@ -21787,7 +21787,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Mardi"
           },
           "qcm_image": {
@@ -21831,7 +21831,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Deux heures"
           }
         }
@@ -21857,7 +21857,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Le cinéma"
           },
           "qcm_image": {
@@ -21919,7 +21919,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Mai"
           }
         }
@@ -21945,7 +21945,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Le soir"
           },
           "qcm_image": {
@@ -21989,7 +21989,7 @@
       {
         "enonce": "Pour quelle occasion l’exposition est-elle organisée ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Pour les Journées du patrimoine.",
         "formes": {
           "qcm_texte": {
@@ -22033,7 +22033,7 @@
       {
         "enonce": "À quelle date a lieu l’exposition ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Le 18 avril."
       },
       {
@@ -22057,7 +22057,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "16 h"
           },
           "qcm_image": {
@@ -22101,7 +22101,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Salle 507"
           }
         }
@@ -22109,7 +22109,7 @@
       {
         "enonce": "Qui anime l’atelier « L’Univers et nous » ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "M. Bouvier, le professeur de sciences.",
         "formes": {
           "qcm_texte": {
@@ -22189,7 +22189,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Le Malade imaginaire"
           }
         }
@@ -22215,7 +22215,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "15 h 30"
           },
           "qcm_image": {
@@ -22259,7 +22259,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "En métro"
           },
           "qcm_image": {
@@ -22303,7 +22303,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "18"
           }
         }
@@ -22355,7 +22355,7 @@
       {
         "enonce": "À quelle date a lieu la journée portes ouvertes ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Le samedi 21 novembre.",
         "formes": {
           "qcm_texte": {
@@ -22417,7 +22417,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "On visite l’école"
           },
           "qcm_image": {
@@ -22443,7 +22443,7 @@
       {
         "enonce": "Où a lieu le repas ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "À la cantine.",
         "formes": {
           "qcm_texte": {
@@ -22505,7 +22505,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Les ateliers de l’école"
           },
           "qcm_image": {
@@ -22531,7 +22531,7 @@
       {
         "enonce": "Que faut-il faire pour obtenir plus d’informations ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Téléphoner au secrétariat, au 021 346 28 65.",
         "formes": {
           "qcm_texte": {
@@ -22610,7 +22610,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "20 h"
           }
         }
@@ -22636,7 +22636,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Un film qui fait peur"
           }
         }
@@ -22662,7 +22662,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "En métro"
           },
           "qcm_image": {
@@ -22706,7 +22706,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Grand et jaune"
           }
         }
@@ -22777,7 +22777,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Au bord du lac"
           },
           "qcm_image": {
@@ -22821,7 +22821,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Sa famille"
           }
         }
@@ -22847,7 +22847,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "10 h"
           },
           "qcm_image": {
@@ -22891,7 +22891,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Devant le centre commercial de la Gare"
           },
           "qcm_image": {
@@ -22935,7 +22935,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Jusqu’à la place, puis tourner à gauche"
           },
           "qcm_image": {
@@ -22979,7 +22979,7 @@
       {
         "enonce": "À quelle heure commence l’émission de sport sur TV5 Monde ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "À 20 h.",
         "formes": {
           "qcm_texte": {
@@ -23023,13 +23023,13 @@
       {
         "enonce": "Sur quelle chaîne passe le film « Les beaux jours » ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Sur Arte."
       },
       {
         "enonce": "Comment s’appelle l’émission de divertissement de RTS Un à 20 h 50 ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Le grand quiz suisse.",
         "formes": {
           "qcm_texte": {
@@ -23073,7 +23073,7 @@
       {
         "enonce": "Quel est le titre du téléfilm de M6 ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Secret de famille.",
         "formes": {
           "qcm_texte": {
@@ -23117,7 +23117,7 @@
       {
         "enonce": "Combien de temps dure le téléfilm « Secret de famille » ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "45 minutes."
       }
     ],
@@ -23159,7 +23159,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Media Plus"
           }
         }
@@ -23185,7 +23185,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Lundi"
           },
           "qcm_image": {
@@ -23229,7 +23229,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "22 h 30"
           }
         }
@@ -23273,7 +23273,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Une journée"
           },
           "qcm_image": {
@@ -23317,7 +23317,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Quatre semaines"
           }
         }
@@ -23362,7 +23362,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Il est malade"
           },
           "qcm_image": {
@@ -23406,7 +23406,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "À la bibliothèque"
           },
           "qcm_image": {
@@ -23450,7 +23450,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Pour Tom"
           }
         }
@@ -23458,7 +23458,7 @@
       {
         "enonce": "Quel est le titre du livre ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "« Le cosmonaute », de Jim Klein."
       },
       {
@@ -23507,7 +23507,7 @@
       {
         "enonce": "Quel jour avez-vous rendez-vous avec Lilian ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Samedi.",
         "formes": {
           "qcm_texte": {
@@ -23569,7 +23569,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Avec sa mère et son grand frère"
           },
           "qcm_image": {
@@ -23595,7 +23595,7 @@
       {
         "enonce": "À quelle heure est le rendez-vous ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "À 15 h.",
         "formes": {
           "qcm_texte": {
@@ -23657,7 +23657,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Devant la piscine à vagues"
           }
         }
@@ -23709,13 +23709,13 @@
       {
         "enonce": "Quelle est l’adresse du magasin ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "22, rue du Mayotte, 1204 Genève."
       },
       {
         "enonce": "À quelle heure le magasin ouvre-t-il le matin ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "À 9 h.",
         "formes": {
           "qcm_texte": {
@@ -23777,7 +23777,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "12 h 30"
           }
         }
@@ -23785,7 +23785,7 @@
       {
         "enonce": "Quel est le jour de fermeture ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Le lundi.",
         "formes": {
           "qcm_texte": {
@@ -23847,7 +23847,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Plus tard"
           }
         }
@@ -23873,13 +23873,13 @@
       {
         "enonce": "Quel est le numéro de la ligne ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "330."
       },
       {
         "enonce": "Quel est le dernier arrêt ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Verbier centre.",
         "formes": {
           "qcm_texte": {
@@ -23923,7 +23923,7 @@
       {
         "enonce": "À quelle heure part le premier car en semaine ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "À 9 h (Martigny gare).",
         "formes": {
           "qcm_texte": {
@@ -23967,7 +23967,7 @@
       {
         "enonce": "Un jeudi, à quelle heure le dernier car arrive-t-il à Médran ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "À 16 h 26.",
         "formes": {
           "qcm_texte": {
@@ -24011,7 +24011,7 @@
       {
         "enonce": "Combien de cars y a-t-il le dimanche en été ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Deux cars (12 h 30 et 18 h).",
         "formes": {
           "qcm_texte": {
@@ -24091,7 +24091,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "11 h 09"
           }
         }
@@ -24117,7 +24117,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Mars"
           }
         }
@@ -24143,7 +24143,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "12 h 20"
           }
         }
@@ -24187,7 +24187,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Le soir"
           },
           "qcm_image": {
@@ -24231,7 +24231,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "21 h"
           },
           "qcm_image": {
@@ -24275,19 +24275,19 @@
       {
         "enonce": "Dans quelle ville a lieu la chasse au trésor ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "À Berne."
       },
       {
         "enonce": "Quelle association organise l’événement ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "L’association LiberT."
       },
       {
         "enonce": "Combien de personnes y a-t-il au maximum dans un groupe ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "8 personnes."
       },
       {
@@ -24311,7 +24311,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Français, espagnol, anglais, allemand"
           }
         }
@@ -24337,7 +24337,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Par carte bancaire"
           },
           "qcm_image": {
@@ -24381,7 +24381,7 @@
       {
         "enonce": "À quelle heure part le train pour Zurich ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "À 09 h 52.",
         "formes": {
           "qcm_texte": {
@@ -24443,7 +24443,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "À Lausanne"
           }
         }
@@ -24469,7 +24469,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "25 minutes"
           }
         }
@@ -24495,7 +24495,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Le train pour Lausanne"
           }
         }
@@ -24503,7 +24503,7 @@
       {
         "enonce": "Combien de trains vont à Genève ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Deux trains (Genève-Aéroport et Genève-Cornavin).",
         "formes": {
           "qcm_texte": {
@@ -24565,7 +24565,7 @@
       {
         "enonce": "Combien coûte le livre de sciences ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "10 francs."
       },
       {
@@ -24589,7 +24589,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Bleue et rose"
           },
           "qcm_image": {
@@ -24633,7 +24633,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Des stylos de plusieurs couleurs"
           },
           "qcm_image": {
@@ -24659,7 +24659,7 @@
       {
         "enonce": "Pour quelle année Fabien propose-t-il un livre d’histoire ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Pour la 9e année.",
         "formes": {
           "qcm_texte": {
@@ -24703,7 +24703,7 @@
       {
         "enonce": "Quel est le numéro de téléphone de Fabien ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "079 362 90 42."
       }
     ],
@@ -24745,7 +24745,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Aujourd’hui"
           }
         }
@@ -24771,7 +24771,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Près du secrétariat"
           }
         }
@@ -24797,7 +24797,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "2 heures"
           }
         }
@@ -24823,7 +24823,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Pendant les pauses et à midi"
           }
         }
@@ -24849,7 +24849,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Un atelier cuisine"
           }
         }
@@ -24875,7 +24875,7 @@
       {
         "enonce": "Quel jour a lieu la sortie ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Le vendredi 26 mai.",
         "formes": {
           "qcm_texte": {
@@ -24937,7 +24937,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Dans un château"
           },
           "qcm_image": {
@@ -24963,7 +24963,7 @@
       {
         "enonce": "Combien de temps dure le jeu ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Une heure.",
         "formes": {
           "qcm_texte": {
@@ -25025,7 +25025,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Un repas"
           }
         }
@@ -25095,7 +25095,7 @@
       {
         "enonce": "Qui anime l’atelier de robotique ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "M. Roy, le professeur de technologie.",
         "formes": {
           "qcm_texte": {
@@ -25201,7 +25201,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Au secrétariat"
           }
         }
@@ -25227,7 +25227,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Les élèves de 10e et de 11e"
           }
         }
@@ -25297,7 +25297,7 @@
       {
         "enonce": "Où les élèves font-ils leur stage ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Dans une entreprise.",
         "formes": {
           "qcm_texte": {
@@ -25359,7 +25359,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Pour découvrir un métier"
           }
         }
@@ -25367,13 +25367,13 @@
       {
         "enonce": "À quel âge les élèves font-ils ce stage ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "À 14 ou 15 ans."
       },
       {
         "enonce": "Combien de temps dure le stage ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Une semaine.",
         "formes": {
           "qcm_texte": {
@@ -25479,7 +25479,7 @@
       {
         "enonce": "Qui a réalisé le film ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Paul Jourdain.",
         "formes": {
           "qcm_texte": {
@@ -25523,7 +25523,7 @@
       {
         "enonce": "Quand le film sort-il au cinéma ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Aujourd’hui.",
         "formes": {
           "qcm_texte": {
@@ -25585,7 +25585,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Américains"
           }
         }
@@ -25611,7 +25611,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Aller dans un parc d’attractions"
           },
           "qcm_image": {
@@ -25679,7 +25679,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "De voitures de course"
           },
           "qcm_image": {
@@ -25723,7 +25723,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Dans une semaine"
           }
         }
@@ -25749,7 +25749,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Dans un château de montagne"
           },
           "qcm_image": {
@@ -25793,7 +25793,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Faire peur"
           }
         }
@@ -25843,7 +25843,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Un parc de toboggans aquatiques"
           },
           "qcm_image": {
@@ -25869,7 +25869,7 @@
       {
         "enonce": "Dans quel pays se trouve ce parc ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "En Suisse (Suisse romande).",
         "formes": {
           "qcm_texte": {
@@ -25931,7 +25931,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "20 mètres"
           }
         }
@@ -25957,7 +25957,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Seulement en été"
           }
         }
@@ -26045,7 +26045,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Avec sa femme et ses enfants"
           }
         }
@@ -26071,7 +26071,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "À pied"
           },
           "qcm_image": {
@@ -26115,7 +26115,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Les musées gratuits"
           }
         }
@@ -26123,7 +26123,7 @@
       {
         "enonce": "Que mange Francis pour économiser ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Des sandwichs.",
         "formes": {
           "qcm_texte": {
@@ -26247,7 +26247,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Du rock"
           }
         }
@@ -26273,7 +26273,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Chanteur"
           }
         }
@@ -26299,7 +26299,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Dans un camping"
           },
           "qcm_image": {
@@ -26343,7 +26343,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "34 ans"
           }
         }
@@ -26369,7 +26369,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "En mars"
           }
         }
@@ -26395,7 +26395,7 @@
       {
         "enonce": "Quel est le thème de ce salon ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Les métiers."
       },
       {
@@ -26419,7 +26419,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "À des cours"
           }
         }
@@ -26427,7 +26427,7 @@
       {
         "enonce": "Où peut-on consulter la liste complète des cours ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Sur www.salondesmetiers.ch.",
         "formes": {
           "qcm_texte": {
@@ -26515,7 +26515,7 @@
       {
         "enonce": "Combien un jeune de 14 ans paie-t-il l’entrée ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Rien, l’entrée est gratuite pour les moins de 16 ans.",
         "formes": {
           "qcm_texte": {
@@ -26577,7 +26577,7 @@
       {
         "enonce": "Quel type de musée vient d’ouvrir ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Un musée du chocolat et des bonbons.",
         "formes": {
           "qcm_texte": {
@@ -26639,7 +26639,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "L’histoire du chocolat"
           }
         }
@@ -26709,7 +26709,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Par le toboggan"
           }
         }
@@ -26779,7 +26779,7 @@
       {
         "enonce": "Comment s’appelle le magasin ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "La clé de sol."
       },
       {
@@ -26803,7 +26803,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Dans un centre commercial"
           },
           "qcm_image": {
@@ -26847,7 +26847,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Des instruments de musique"
           },
           "qcm_image": {
@@ -26891,7 +26891,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "En visitant le site Internet"
           }
         }
@@ -26979,7 +26979,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Du 12 au 26 novembre"
           }
         }
@@ -27005,7 +27005,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "7, rue du Parc"
           }
         }
@@ -27031,7 +27031,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Une salle informatique"
           }
         }
@@ -27057,7 +27057,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Les horaires sont identiques"
           }
         }
@@ -27083,7 +27083,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Le 11 novembre"
           }
         }
@@ -27126,7 +27126,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Le 4 septembre"
           }
         }
@@ -27152,7 +27152,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Des stylos de quatre couleurs"
           },
           "qcm_image": {
@@ -27196,7 +27196,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "30 centimètres"
           }
         }
@@ -27222,7 +27222,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Un cahier à petits carreaux"
           }
         }
@@ -27248,7 +27248,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Mathématiques"
           }
         }
@@ -27273,7 +27273,7 @@
       {
         "enonce": "Quel jour avez-vous rendez-vous avec Amandine ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Dimanche.",
         "formes": {
           "qcm_texte": {
@@ -27335,7 +27335,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Avec sa sœur et une amie"
           }
         }
@@ -27343,7 +27343,7 @@
       {
         "enonce": "Comment s’appelle la salle d’escape game ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Enigma."
       },
       {
@@ -27367,7 +27367,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Au centre-ville"
           },
           "qcm_image": {
@@ -27455,7 +27455,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "À des élèves qui font de la musique"
           }
         }
@@ -27463,19 +27463,19 @@
       {
         "enonce": "Qui peut participer à la fête ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Tout le monde."
       },
       {
         "enonce": "Où peut-on s’inscrire ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Au secrétariat."
       },
       {
         "enonce": "Quelle est la date limite d’inscription ?",
         "type_reponse": "lignes",
-        "nb_lignes": 1,
+        "nb_lignes": 2,
         "reponse_modele": "Le 18 mai."
       },
       {
@@ -27499,7 +27499,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Le 21 juin"
           }
         }
@@ -27542,7 +27542,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Chez son oncle"
           }
         }
@@ -27568,7 +27568,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Une montagne"
           },
           "qcm_image": {
@@ -27612,7 +27612,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "À un concert"
           },
           "qcm_image": {
@@ -27656,7 +27656,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "Sa tante et ses cousins"
           },
           "qcm_image": {
@@ -27700,7 +27700,7 @@
         ],
         "formes": {
           "lignes": {
-            "nb_lignes": 1,
+            "nb_lignes": 2,
             "reponse_modele": "À Lausanne"
           }
         }
