@@ -1009,9 +1009,9 @@ html,body,#root{
   height:calc(13pt * 1.7);display:inline-flex;align-items:center;box-sizing:border-box
 }
 /* TCF : icônes Texte / Image / Phrase en colonne, marge gauche (près du n°). */
-.tcf-margin-form-icons{
-  height:auto;max-width:1.1cm;flex-direction:column;align-items:stretch;gap:3px;
-  display:inline-flex
+.draft-grid-chip-margin.tcf-margin-form-icons{
+  height:auto;max-width:1.1cm;flex-direction:column;align-items:stretch;
+  justify-content:flex-start;gap:3px;display:inline-flex
 }
 .tcf-form-icon-btn{
   display:inline-flex;align-items:center;justify-content:center;
@@ -1187,6 +1187,7 @@ html,body,#root{
   padding-bottom:12px;margin-bottom:8px;align-items:flex-start;min-width:0
 }
 .a4-frame .exercise-item.is-problem,
+.a4-frame .exercise-item.layout-tcf,
 .a4-frame .exercise-grid.problem-grid{
   overflow:visible
 }
