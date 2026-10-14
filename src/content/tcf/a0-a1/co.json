@@ -75,7 +75,7 @@
           },
           {
             "id": "c",
-            "texte": "De la mère de Driss"
+            "texte": "De Driss"
           }
         ],
         "formes": {
@@ -108,23 +108,23 @@
         "type_reponse": "lignes",
         "points": 1,
         "nb_lignes": 2,
-        "reponse_modele": "Au restaurant, au centre-ville.",
+        "reponse_modele": "Au restaurant",
         "formes": {
           "qcm_texte": {
             "melanger": true,
             "choix": [
               {
                 "id": "a",
-                "texte": "Au restaurant, au centre-ville",
+                "texte": "Au restaurant",
                 "correct": true
               },
               {
                 "id": "b",
-                "texte": "avenue"
+                "texte": "Dans le parc"
               },
               {
                 "id": "c",
-                "texte": "boulangerie"
+                "texte": "À la maison"
               }
             ]
           },
@@ -138,11 +138,83 @@
               },
               {
                 "id": "b",
-                "image": "/lib/images/vocabulaire/ville/avenue.webp"
+                "image": "/lib/images/vocabulaire/ville/bungalow.webp"
               },
               {
                 "id": "c",
-                "image": "/lib/images/vocabulaire/ville/boulangerie.webp"
+                "image": "/lib/images/vocabulaire/ville/parc.webp"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "enonce": "Où allez-vous après la fête ?",
+        "type_reponse": "lignes",
+        "points": 1,
+        "nb_lignes": 2,
+        "reponse_modele": "Dans le parc.",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "Dans le parc",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "Au centre-ville"
+              },
+              {
+                "id": "c",
+                "texte": "À la maison"
+              }
+            ]
+          },
+          "qcm_image": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "image": "/lib/images/vocabulaire/ville/parc.webp",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "image": "/lib/images/vocabulaire/ville/bungalow.webp"
+              },
+              {
+                "id": "c",
+                "image": "/lib/images/vocabulaire/ville/centre-ville.webp"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "enonce": "Quand allez-vous à la fête ?",
+        "type_reponse": "lignes",
+        "points": 1,
+        "nb_lignes": 2,
+        "reponse_modele": "Samedi",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "Samedi",
+                "correct": true
+              },
+              {
+                "id": "b",
+                "texte": "Dimanche"
+              },
+              {
+                "id": "c",
+                "texte": "Demain"
               }
             ]
           }
@@ -165,11 +237,11 @@
               },
               {
                 "id": "b",
-                "texte": "dix neuf heures"
+                "texte": "À midi et demi"
               },
               {
                 "id": "c",
-                "texte": "six heures vingt"
+                "texte": "À une heure et demi"
               }
             ]
           },
@@ -183,11 +255,11 @@
               },
               {
                 "id": "b",
-                "image": "/lib/images/vocabulaire/heure-horloge/dix-neuf-heures.webp"
+                "image": "/lib/images/vocabulaire/heure-horloge/midi-et-demi.webp"
               },
               {
                 "id": "c",
-                "image": "/lib/images/vocabulaire/heure-horloge/six-heures-vingt.webp"
+                "image": "/lib/images/vocabulaire/heure-horloge/une-heure-et-demi.webp"
               }
             ]
           }
