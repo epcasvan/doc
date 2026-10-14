@@ -33,7 +33,6 @@ export type ResultPanelProps = {
   drawAlphaSeries: () => void
   generate: () => void
   printAll: () => void
-  exportWord: () => void
   isCalliDomain: boolean
   isJeuxDomain: boolean
   jeuxPreviewSheets: Array<{ sheet: WorksheetPage; index: number }> | null
