@@ -1018,6 +1018,10 @@ html,body,#root{
   width:22px;height:22px;max-width:none;padding:0;border-radius:999px
 }
 .tcf-form-icon-btn svg{display:block}
+.tcf-form-icon-btn.is-empty,
+.tcf-form-icon-btn:disabled{
+  opacity:.35;cursor:default
+}
 /* Aperçu (marges symétriques) : chip à gauche dans la marge. */
 .a4-frame .worksheet-sheet .draft-grid-chip-margin{
   left:auto;right:calc(100% + 2px)

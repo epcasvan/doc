@@ -119,9 +119,8 @@ export function ItemView({
       ? item.tcf.formSelect
       : undefined
   const tcfActiveForm = tcfFormMode ?? tcfFormSelect?.active
-  const showTcfFormIcons = Boolean(
-    tcfFormSelect && tcfFormSelect.filled.length > 1 && onSelectTcfForm && tcfActiveForm,
-  )
+  /** Comme Page : toujours en marge dès que la question a un sélecteur de forme. */
+  const showTcfFormIcons = Boolean(tcfFormSelect && onSelectTcfForm && tcfActiveForm)
   const showTcfPageChip = Boolean(
     onToggleTcfPageBreak &&
       item.layout === 'tcf' &&

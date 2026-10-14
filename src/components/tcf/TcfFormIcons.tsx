@@ -69,7 +69,12 @@ const FORM_ICONS: Record<TcfTypeReponse, () => ReactElement> = {
   lignes: IconPhrase,
 }
 
-/** Icônes Texte / Image / Phrase — marge gauche, colonne verticale (aperçu). */
+const ALL_FORMS = ['qcm_texte', 'qcm_image', 'lignes'] as const
+
+/**
+ * Icônes Texte / Image / Phrase — marge gauche, colonne verticale (aperçu).
+ * Les 3 sont toujours visibles ; seules les formes remplies sont cliquables.
+ */
 export function TcfFormMarginIcons({
   filled,
   active,
@@ -79,32 +84,41 @@ export function TcfFormMarginIcons({
   active: TcfTypeReponse
   onSelect: (form: TcfTypeReponse) => void
 }) {
-  if (filled.length <= 1) return null
   return (
     <div
       className="no-print draft-grid-chip-margin tcf-margin-form-icons"
       role="group"
       aria-label="Forme de réponse"
     >
-      {(['qcm_texte', 'qcm_image', 'lignes'] as const)
-        .filter((form) => filled.includes(form))
-        .map((form) => {
-          const on = active === form
-          const Icon = FORM_ICONS[form]
-          return (
-            <button
-              key={form}
-              type="button"
-              className={`draft-grid-chip tcf-form-icon-btn ${on ? 'on' : 'off'}`}
-              aria-pressed={on}
-              aria-label={`Forme ${TCF_FORME_LABELS[form]}`}
-              title={TCF_FORME_LABELS[form]}
-              onClick={() => onSelect(form)}
-            >
-              <Icon />
-            </button>
-          )
-        })}
+      {ALL_FORMS.map((form) => {
+        const available = filled.includes(form)
+        const on = active === form
+        const Icon = FORM_ICONS[form]
+        return (
+          <button
+            key={form}
+            type="button"
+            className={`draft-grid-chip tcf-form-icon-btn ${on ? 'on' : 'off'}${
+              available ? '' : ' is-empty'
+            }`}
+            aria-pressed={on}
+            aria-label={`Forme ${TCF_FORME_LABELS[form]}${
+              available ? '' : ' (non remplie)'
+            }`}
+            title={
+              available
+                ? TCF_FORME_LABELS[form]
+                : `${TCF_FORME_LABELS[form]} — non remplie (mode libre)`
+            }
+            disabled={!available}
+            onClick={() => {
+              if (available) onSelect(form)
+            }}
+          >
+            <Icon />
+          </button>
+        )
+      })}
     </div>
   )
 }
