@@ -30676,5 +30676,4204 @@
     "consigne_supplementaire": null,
     "scenario": "magasins",
     "scene": "Tu as fait ta"
+  },
+  {
+    "id": "tcf-ssx-a2-annonce-1-2-co-2",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Les promotions sur les bijoux",
+    "scenario": "magasins",
+    "scene": "Les promotions sur les bijoux",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/achats/moyen-a2__annonce-1.2.mp3",
+      "transcription": "Chers clients, profitez d’une remise exceptionnelle de 30% aujourd’hui sur nos bijoux !\nNe laissez pas passer cette affaire !"
+    },
+    "questions": [
+      {
+        "enonce": "Quels produits sont en promotion ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Les bijoux", "correct": true},
+          {"id": "b", "texte": "Les vêtements"},
+          {"id": "c", "texte": "Les chaussures"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Les bijoux"
+          }
+        }
+      },
+      {
+        "enonce": "Quelle est la remise ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "30 %", "correct": true},
+          {"id": "b", "texte": "13 %"},
+          {"id": "c", "texte": "50 %"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "30 %"
+          }
+        }
+      },
+      {
+        "enonce": "Quand a lieu cette remise ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Aujourd’hui", "correct": true},
+          {"id": "b", "texte": "Demain"},
+          {"id": "c", "texte": "Ce week-end"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Aujourd’hui"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-annonce-1-5-co-2",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · L’enfant perdu au magasin",
+    "scenario": "magasins",
+    "scene": "L’enfant perdu au magasin",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/achats/moyen-a2__annonce-1.5.mp3",
+      "transcription": "Votre attention s’il vous plaît, le petit Grégoire qui s’est perdu au rayon fruits et légumes attend ses parents à l’entrée du magasin."
+    },
+    "questions": [
+      {
+        "enonce": "Qui s’est perdu ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Un petit garçon", "correct": true},
+          {"id": "b", "texte": "Une vieille dame"},
+          {"id": "c", "texte": "Un chien"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Un petit garçon"
+          }
+        }
+      },
+      {
+        "enonce": "Dans quel rayon s’est-il perdu ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Au rayon fruits et légumes", "correct": true},
+          {"id": "b", "texte": "Au rayon jouets"},
+          {"id": "c", "texte": "Au rayon boulangerie"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Au rayon fruits et légumes"
+          }
+        }
+      },
+      {
+        "enonce": "Où attend-il ses parents ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "À l’entrée du magasin", "correct": true},
+          {"id": "b", "texte": "À la caisse"},
+          {"id": "c", "texte": "Au parking"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "À l’entrée du magasin"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-annonce-2-6-co-2",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · L’offre du cinéma",
+    "scenario": "loisirs",
+    "scene": "L’offre du cinéma",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/achats/moyen-a2__annonce-2.6.mp3",
+      "transcription": "Votre cinéma préféré a décidé de vous faire plaisir.\nAujourd’hui, pour une place achetée, vous avez 50% de réduction sur les bonbons."
+    },
+    "questions": [
+      {
+        "enonce": "Où est proposée cette offre ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Au cinéma", "correct": true},
+          {"id": "b", "texte": "Au supermarché"},
+          {"id": "c", "texte": "À la boulangerie"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Au cinéma"
+          }
+        }
+      },
+      {
+        "enonce": "Que faut-il acheter pour avoir l’offre ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Une place de cinéma", "correct": true},
+          {"id": "b", "texte": "Un paquet de bonbons"},
+          {"id": "c", "texte": "Une boisson"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Une place de cinéma"
+          }
+        }
+      },
+      {
+        "enonce": "Quelle réduction avez-vous sur les bonbons ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "50 %", "correct": true},
+          {"id": "b", "texte": "20 %"},
+          {"id": "c", "texte": "100 %"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "50 %"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-annonce-3-3-co-2",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Les caisses du magasin",
+    "scenario": "magasins",
+    "scene": "Les caisses du magasin",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/achats/moyen-a2__annonce-3.3.mp3",
+      "transcription": "Chers clients, suite à un problème technique, nous vous rappelons que la caisse prioritaire pour les personnes handicapées est fermée.\nVeuillez vous rediriger vers les caisses rapides ou les caisses automatiques."
+    },
+    "questions": [
+      {
+        "enonce": "Quelle caisse est fermée ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "La caisse prioritaire", "correct": true},
+          {"id": "b", "texte": "La caisse rapide"},
+          {"id": "c", "texte": "La caisse automatique"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "La caisse prioritaire"
+          }
+        }
+      },
+      {
+        "enonce": "Pourquoi est-elle fermée ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "À cause d’un problème technique", "correct": true},
+          {"id": "b", "texte": "À cause d’une grève"},
+          {"id": "c", "texte": "Parce que le magasin ferme"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "À cause d’un problème technique"
+          }
+        }
+      },
+      {
+        "enonce": "Où les clients doivent-ils aller ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Aux caisses rapides ou automatiques", "correct": true},
+          {"id": "b", "texte": "À l’accueil"},
+          {"id": "c", "texte": "Dans un autre magasin"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Aux caisses rapides ou automatiques"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-annonce-4-4-co-2",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Les promotions sur les télévisions",
+    "scenario": "magasins",
+    "scene": "Les promotions sur les télévisions",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/achats/moyen-a2__annonce-4.4.mp3",
+      "transcription": "Chers clients, aujourd’hui dans votre magasin Autoprix, ne manquez pas les promotions exceptionnelles sur les télévisions.\nJusqu’à 40% de réduction !\nDemain, nous aurons d’autres surprises sur les téléphones et les ordinateurs."
+    },
+    "questions": [
+      {
+        "enonce": "Quels produits sont en promotion aujourd’hui ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Les télévisions", "correct": true},
+          {"id": "b", "texte": "Les téléphones"},
+          {"id": "c", "texte": "Les ordinateurs"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Les télévisions"
+          }
+        }
+      },
+      {
+        "enonce": "Quelle est la réduction la plus grande ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "40 %", "correct": true},
+          {"id": "b", "texte": "14 %"},
+          {"id": "c", "texte": "50 %"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "40 %"
+          }
+        }
+      },
+      {
+        "enonce": "Quels produits auront des surprises demain ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Les téléphones et les ordinateurs", "correct": true},
+          {"id": "b", "texte": "Les télévisions et les radios"},
+          {"id": "c", "texte": "Les appareils photo"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Les téléphones et les ordinateurs"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-annonce-5-1-co-2",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Les livres de recettes",
+    "scenario": "magasins",
+    "scene": "Les livres de recettes",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/achats/moyen-a2__annonce-5.1.mp3",
+      "transcription": "Chers clients, ne manquez pas aujourd’hui notre promotion sur nos derniers livres de recettes !\nIl n’y en aura pas pour tout le monde, alors dépêchez-vous !"
+    },
+    "questions": [
+      {
+        "enonce": "Quels produits sont en promotion ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Des livres de recettes", "correct": true},
+          {"id": "b", "texte": "Des romans"},
+          {"id": "c", "texte": "Des ustensiles de cuisine"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Des livres de recettes"
+          }
+        }
+      },
+      {
+        "enonce": "Pourquoi faut-il se dépêcher ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Il n’y en aura pas pour tout le monde", "correct": true},
+          {"id": "b", "texte": "Le magasin va fermer"},
+          {"id": "c", "texte": "La promotion finit à midi"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Il n’y en aura pas pour tout le monde"
+          }
+        }
+      },
+      {
+        "enonce": "Quand a lieu cette promotion ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Aujourd’hui", "correct": true},
+          {"id": "b", "texte": "Demain"},
+          {"id": "c", "texte": "Toute la semaine"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Aujourd’hui"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-annonce-5-5-co-2",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · La fermeture de la poste",
+    "scenario": "lieux-publics",
+    "scene": "La fermeture de la poste",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/achats/moyen-a2__annonce-5.5.mp3",
+      "transcription": "Nous rappelons à notre aimable clientèle qu’en raison de travaux, la poste sera fermée pour une semaine, à partir de demain.\nElle rouvrira au début du mois.\nMerci pour votre compréhension."
+    },
+    "questions": [
+      {
+        "enonce": "Quel lieu va fermer ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "La poste", "correct": true},
+          {"id": "b", "texte": "La banque"},
+          {"id": "c", "texte": "La mairie"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "La poste"
+          }
+        }
+      },
+      {
+        "enonce": "Pourquoi ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "À cause de travaux", "correct": true},
+          {"id": "b", "texte": "À cause d’une grève"},
+          {"id": "c", "texte": "Pour les vacances"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "À cause de travaux"
+          }
+        }
+      },
+      {
+        "enonce": "Pendant combien de temps ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Une semaine", "correct": true},
+          {"id": "b", "texte": "Un jour"},
+          {"id": "c", "texte": "Un mois"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Une semaine"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-annonce-6-2-co-2",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · La journée de la femme",
+    "scenario": "magasins",
+    "scene": "La journée de la femme",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/achats/moyen-a2__annonce-6.2.mp3",
+      "transcription": "Chères clientes, à l’occasion de la journée de la femme, pour deux vêtements achetés, bénéficiez d’une remise de 70% sur nos bijoux.\nAllez vite découvrir nos nouveaux sacs à main."
+    },
+    "questions": [
+      {
+        "enonce": "À quelle occasion a lieu cette offre ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "La journée de la femme", "correct": true},
+          {"id": "b", "texte": "La fête des mères"},
+          {"id": "c", "texte": "Noël"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "La journée de la femme"
+          }
+        }
+      },
+      {
+        "enonce": "Que faut-il acheter pour avoir la remise ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Deux vêtements", "correct": true},
+          {"id": "b", "texte": "Deux bijoux"},
+          {"id": "c", "texte": "Un sac à main"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Deux vêtements"
+          }
+        }
+      },
+      {
+        "enonce": "Quelle remise avez-vous sur les bijoux ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "70 %", "correct": true},
+          {"id": "b", "texte": "17 %"},
+          {"id": "c", "texte": "50 %"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "70 %"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-annonce-6-4-co-2",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · L’offre petit-déjeuner",
+    "scenario": "magasins",
+    "scene": "L’offre petit-déjeuner",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/achats/moyen-a2__annonce-6.4.mp3",
+      "transcription": "Chers clients, après une offre sur les sandwichs la semaine dernière, nous vous proposons aujourd’hui une offre spéciale petit-déjeuner !\nPour l’achat de trois viennoiseries, un grand café vous est offert !"
+    },
+    "questions": [
+      {
+        "enonce": "Quelle offre est proposée aujourd’hui ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Une offre petit-déjeuner", "correct": true},
+          {"id": "b", "texte": "Une offre sur les sandwichs"},
+          {"id": "c", "texte": "Une offre sur les boissons"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Une offre petit-déjeuner"
+          }
+        }
+      },
+      {
+        "enonce": "Combien de viennoiseries faut-il acheter ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Trois", "correct": true},
+          {"id": "b", "texte": "Deux"},
+          {"id": "c", "texte": "Quatre"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Trois"
+          }
+        }
+      },
+      {
+        "enonce": "Qu’est-ce qui est offert ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Un grand café", "correct": true},
+          {"id": "b", "texte": "Un jus d’orange"},
+          {"id": "c", "texte": "Un sandwich"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Un grand café"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-annonce-7-5-co-2",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Le printemps du cinéma",
+    "scenario": "loisirs",
+    "scene": "Le printemps du cinéma",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/achats/moyen-a2__annonce-7.5.mp3",
+      "transcription": "À l’occasion du printemps du cinéma, les places sont au prix de 5,50 € pour les moins de 18 ans, et 7,50 € pour les adultes, au lieu de 10,50 €."
+    },
+    "questions": [
+      {
+        "enonce": "À quelle occasion les prix baissent-ils ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Le printemps du cinéma", "correct": true},
+          {"id": "b", "texte": "La fête de la musique"},
+          {"id": "c", "texte": "Les vacances d’été"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Le printemps du cinéma"
+          }
+        }
+      },
+      {
+        "enonce": "Combien coûte une place pour les moins de 18 ans ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "5,50 €", "correct": true},
+          {"id": "b", "texte": "7,50 €"},
+          {"id": "c", "texte": "10,50 €"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "5,50 €"
+          }
+        }
+      },
+      {
+        "enonce": "Quel est le prix normal d’une place ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "10,50 €", "correct": true},
+          {"id": "b", "texte": "7,50 €"},
+          {"id": "c", "texte": "5,50 €"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "10,50 €"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-annonce-7-6-co-2",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Le paiement par téléphone",
+    "scenario": "magasins",
+    "scene": "Le paiement par téléphone",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/achats/moyen-a2__annonce-7.6.mp3",
+      "transcription": "Chers clients, votre magasin vous informe qu’à partir d’aujourd’hui, un nouveau moyen de paiement est possible.\nVous pouvez maintenant régler vos achats avec votre téléphone portable."
+    },
+    "questions": [
+      {
+        "enonce": "Quelle est la nouveauté du magasin ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Un nouveau moyen de paiement", "correct": true},
+          {"id": "b", "texte": "Un nouveau rayon"},
+          {"id": "c", "texte": "De nouveaux horaires"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Un nouveau moyen de paiement"
+          }
+        }
+      },
+      {
+        "enonce": "Avec quoi peut-on maintenant payer ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Avec son téléphone portable", "correct": true},
+          {"id": "b", "texte": "Avec un chèque"},
+          {"id": "c", "texte": "Avec une carte cadeau"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Avec son téléphone portable"
+          }
+        }
+      },
+      {
+        "enonce": "Depuis quand ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Depuis aujourd’hui", "correct": true},
+          {"id": "b", "texte": "Depuis la semaine dernière"},
+          {"id": "c", "texte": "À partir du mois prochain"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Depuis aujourd’hui"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-radio-14-1-co-3",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · La météo de la semaine",
+    "scenario": "radio",
+    "scene": "La météo de la semaine",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/achats/moyen-a2__radio-14.1.mp3",
+      "transcription": "Bienvenue sur Radio France.\nNous commençons avec la météo.\nAujourd’hui un temps pluvieux sur l’ensemble de la France, sauf au sud où il y aura quelques rayons de soleil.\nIl fera très beau la semaine prochaine, avec des températures d’été."
+    },
+    "questions": [
+      {
+        "enonce": "Quel temps fait-il aujourd’hui en France ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Il pleut", "correct": true},
+          {"id": "b", "texte": "Il neige"},
+          {"id": "c", "texte": "Il fait très chaud"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Il pleut"
+          }
+        }
+      },
+      {
+        "enonce": "Où y aura-t-il un peu de soleil ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Dans le sud", "correct": true},
+          {"id": "b", "texte": "Dans le nord"},
+          {"id": "c", "texte": "À l’est"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Dans le sud"
+          }
+        }
+      },
+      {
+        "enonce": "Quel temps fera-t-il la semaine prochaine ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Très beau, avec des températures d’été", "correct": true},
+          {"id": "b", "texte": "Froid et humide"},
+          {"id": "c", "texte": "Du vent et des orages"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Très beau, avec des températures d’été"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-radio-18-2-co-3",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · La grève des hôtesses de l’air",
+    "scenario": "actualite",
+    "scene": "La grève des hôtesses de l’air",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/actualite/moyen-a2__radio-18.2.mp3",
+      "transcription": "Bonjour aux infos aujourd’hui : une nouvelle semaine de grève à prévoir chez les hôtesses de l’air.\nElles réclament toujours auprès du gouvernement un meilleur salaire et des jours de congés supplémentaires.\nLe ministère des transports n’a pas encore répondu."
+    },
+    "questions": [
+      {
+        "enonce": "Qui fait grève ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Les hôtesses de l’air", "correct": true},
+          {"id": "b", "texte": "Les chauffeurs de bus"},
+          {"id": "c", "texte": "Les enseignants"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Les hôtesses de l’air"
+          }
+        }
+      },
+      {
+        "enonce": "Que demandent-elles ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Un meilleur salaire et plus de jours de congé", "correct": true},
+          {"id": "b", "texte": "Moins d’heures de travail"},
+          {"id": "c", "texte": "De nouveaux avions"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Un meilleur salaire et plus de jours de congé"
+          }
+        }
+      },
+      {
+        "enonce": "Qui n’a pas encore répondu ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Le ministère des Transports", "correct": true},
+          {"id": "b", "texte": "Le directeur de l’aéroport"},
+          {"id": "c", "texte": "Les passagers"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Le ministère des Transports"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-annonce-3-4-co-2",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · L’entrée de l’université",
+    "scenario": "ecole",
+    "scene": "L’entrée de l’université",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/ecole/moyen-a2__annonce-3.4.mp3",
+      "transcription": "Chers étudiants, pour des raisons de sécurité, vous devez présenter votre carte d’étudiant à l’entrée de l’université.\nLes cartes nationales d’identité ou les cartes de bibliothèque ne sont pas acceptées."
+    },
+    "questions": [
+      {
+        "enonce": "Que faut-il montrer à l’entrée ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "La carte d’étudiant", "correct": true},
+          {"id": "b", "texte": "La carte d’identité"},
+          {"id": "c", "texte": "La carte de bibliothèque"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "La carte d’étudiant"
+          }
+        }
+      },
+      {
+        "enonce": "Pourquoi ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Pour des raisons de sécurité", "correct": true},
+          {"id": "b", "texte": "Pour payer l’inscription"},
+          {"id": "c", "texte": "Pour emprunter des livres"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Pour des raisons de sécurité"
+          }
+        }
+      },
+      {
+        "enonce": "Quelles cartes ne sont pas acceptées ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Les cartes d’identité et de bibliothèque", "correct": true},
+          {"id": "b", "texte": "Les cartes d’étudiant"},
+          {"id": "c", "texte": "Les cartes bancaires"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Les cartes d’identité et de bibliothèque"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-annonce-5-3-co-2",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Les tarifs de la piscine",
+    "scenario": "loisirs",
+    "scene": "Les tarifs de la piscine",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/famille/moyen-a2__annonce-5.3.mp3",
+      "transcription": "Le centre aquatique vous informe que les tarifs pour les adultes ont augmenté de 2 €, mais les entrées sont gratuites pour les enfants.\nNous offrons aussi une remise de 25% pour les adolescents."
+    },
+    "questions": [
+      {
+        "enonce": "Pour qui les tarifs ont-ils augmenté ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Pour les adultes", "correct": true},
+          {"id": "b", "texte": "Pour les enfants"},
+          {"id": "c", "texte": "Pour les adolescents"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Pour les adultes"
+          }
+        }
+      },
+      {
+        "enonce": "Combien coûte l’entrée pour les enfants ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "C’est gratuit", "correct": true},
+          {"id": "b", "texte": "2 €"},
+          {"id": "c", "texte": "25 €"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "C’est gratuit"
+          }
+        }
+      },
+      {
+        "enonce": "Quelle remise ont les adolescents ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "25 %", "correct": true},
+          {"id": "b", "texte": "2 %"},
+          {"id": "c", "texte": "50 %"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "25 %"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-conversation-30-co-4",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Dans la famille d’accueil",
+    "scenario": "maison",
+    "scene": "Dans la famille d’accueil",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/famille/moyen-a2__conversation-30.mp3",
+      "transcription": "Dialogue 1.\n- Humm !\n- Elle est délicieuse ta tarte aux pommes maman !\n- Oui c'est vrai !\n- Moi aussi je l'adore !\n- C'est mon dessert préféré !\n- Ça fait plaisir, les enfants.\n- Je vais refaire d'autres tartes si vous les aimez.\nDialogue 2.\n- Papa, tu veux regarder le foot avec moi ?\n- Le match commence.\n- J'aimerais beaucoup mais je ne peux pas.\n- Je dois finir un travail.\n- Tu me diras le résultat ?\n- Oui, d'accord !\nDialogue 3.\n- Elle est comment la copine de Nathan ?\n- Elle est blonde ?\n- Non, elle est brune avec les cheveux longs.\n- Elle est très jolie.\n- Elle a quel âge ?\n- Dix-sept ou dix-huit ans, je pense.\n- Elle est au lycée avec ma sœur.\nDialogue 4.\n- Ethan, tu peux m'aider s'il te plaît ?\n- Oui bien sûr, qu'est-ce que tu veux ?\n- Je dois sortir dix minutes pour faire une course, tu peux surveiller la cuisson du plat dans le four ?\n- Attention aux courgettes, il ne faut pas qu'elles brûlent.\n- D'accord papa.\n- Je fais attention.\n- Merci Ethan, tu es super !"
+    },
+    "questions": [
+      {
+        "enonce": "Dialogue 1 : qu’est-ce que les enfants trouvent délicieux ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "La tarte aux pommes", "correct": true},
+          {"id": "b", "texte": "Le gâteau au chocolat"},
+          {"id": "c", "texte": "La pizza"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "La tarte aux pommes"
+          }
+        }
+      },
+      {
+        "enonce": "Dialogue 2 : pourquoi le père ne regarde-t-il pas le match ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Il doit finir un travail", "correct": true},
+          {"id": "b", "texte": "Il est fatigué"},
+          {"id": "c", "texte": "Il n’aime pas le foot"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Il doit finir un travail"
+          }
+        }
+      },
+      {
+        "enonce": "Dialogue 3 : comment est la copine de Nathan ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Brune avec les cheveux longs", "correct": true},
+          {"id": "b", "texte": "Blonde avec les cheveux courts"},
+          {"id": "c", "texte": "Rousse avec les cheveux courts"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Brune avec les cheveux longs"
+          }
+        }
+      },
+      {
+        "enonce": "Dialogue 4 : que doit surveiller Ethan ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "La cuisson du plat dans le four", "correct": true},
+          {"id": "b", "texte": "Son petit frère"},
+          {"id": "c", "texte": "Le chien"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "La cuisson du plat dans le four"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-conversation-33-co-4",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Les projets en famille",
+    "scenario": "maison",
+    "scene": "Les projets en famille",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/famille/moyen-a2__conversation-33.mp3",
+      "transcription": "Dialogue 1.\n- On regarde un film d'action, ce soir ?\n- Ah non, je n'aime pas les films d'action, c'est trop violent.\n- Si tu veux, on peut regarder une comédie ?\n- Oui, c'est une bonne idée.\nDialogue 2.\n- Papa, pourquoi tu n'es pas venu à mon match de foot, hier ?\n- J'ai eu une réunion à mon travail, je suis désolé.\n- Ce n'est pas grave.\n- Tu viendras au prochain match ?\n- Oui, je te promets.\nDialogue 3.\n- Maman, à quelle heure on mange, ce soir ?\n- À 20 heures, pourquoi ?\n- Pour savoir à quelle heure je rentre.\n- Je vais aller chez Maeva après les cours, pour réviser le contrôle d'espagnol.\nDialogue 4.\n- Les enfants, vous voulez partir à Londres pour les vacances ?\n- Ah non, pas Londres, on y va tous les ans !\n- On peut aller en Italie ?…\n- Ou en Espagne, j'ai une amie qui habite à Madrid…"
+    },
+    "questions": [
+      {
+        "enonce": "Dialogue 1 : pourquoi la personne ne veut-elle pas voir un film d’action ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "C’est trop violent", "correct": true},
+          {"id": "b", "texte": "C’est trop long"},
+          {"id": "c", "texte": "Elle l’a déjà vu"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "C’est trop violent"
+          }
+        }
+      },
+      {
+        "enonce": "Dialogue 2 : pourquoi le père n’est-il pas venu au match ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Il avait une réunion au travail", "correct": true},
+          {"id": "b", "texte": "Il était malade"},
+          {"id": "c", "texte": "Sa voiture était en panne"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Il avait une réunion au travail"
+          }
+        }
+      },
+      {
+        "enonce": "Dialogue 3 : que va faire l’enfant après les cours ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Réviser chez Maeva", "correct": true},
+          {"id": "b", "texte": "Aller au cinéma"},
+          {"id": "c", "texte": "Jouer au foot"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Réviser chez Maeva"
+          }
+        }
+      },
+      {
+        "enonce": "Dialogue 4 : où les enfants ne veulent-ils pas aller en vacances ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "À Londres", "correct": true},
+          {"id": "b", "texte": "En Italie"},
+          {"id": "c", "texte": "En Espagne"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "À Londres"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-radio-16-2-co-3",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · La journée des grands-parents",
+    "scenario": "radio",
+    "scene": "La journée des grands-parents",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/famille/moyen-a2__radio-16.2.mp3",
+      "transcription": "Et maintenant, quelques publicités.\nPetits-enfants et parents, faites plaisir à vos proches aujourd’hui pour la journée des grands-parents.\nProfitez d’une remise exceptionnelle de 25 % sur tous nos bouquets de fleurs avec le code FLEURSENFÊTE sur notre site fleursenligne.fr."
+    },
+    "questions": [
+      {
+        "enonce": "Pour quelle journée est cette publicité ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "La journée des grands-parents", "correct": true},
+          {"id": "b", "texte": "La fête des mères"},
+          {"id": "c", "texte": "La Saint-Valentin"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "La journée des grands-parents"
+          }
+        }
+      },
+      {
+        "enonce": "Quelle remise est proposée ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "25 % sur les bouquets de fleurs", "correct": true},
+          {"id": "b", "texte": "25 % sur les chocolats"},
+          {"id": "c", "texte": "50 % sur les cadeaux"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "25 % sur les bouquets de fleurs"
+          }
+        }
+      },
+      {
+        "enonce": "Comment obtenir la remise ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Avec un code sur le site Internet", "correct": true},
+          {"id": "b", "texte": "En magasin seulement"},
+          {"id": "c", "texte": "Par téléphone"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Avec un code sur le site Internet"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-annonce-2-2-co-2",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Au concert",
+    "scenario": "loisirs",
+    "scene": "Au concert",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/inviter/moyen-a2__annonce-2.2.mp3",
+      "transcription": "Chers spectateurs, nous vous rappelons qu’il est interdit de prendre des photos durant le concert.\nMerci pour votre compréhension.\nProfitez bien de votre soirée !"
+    },
+    "questions": [
+      {
+        "enonce": "Où sont les spectateurs ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "À un concert", "correct": true},
+          {"id": "b", "texte": "Au cinéma"},
+          {"id": "c", "texte": "Au stade"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "À un concert"
+          }
+        }
+      },
+      {
+        "enonce": "Qu’est-ce qui est interdit ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Prendre des photos", "correct": true},
+          {"id": "b", "texte": "Manger"},
+          {"id": "c", "texte": "Danser"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Prendre des photos"
+          }
+        }
+      },
+      {
+        "enonce": "À quel moment se passe le concert ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Le soir", "correct": true},
+          {"id": "b", "texte": "Le matin"},
+          {"id": "c", "texte": "À midi"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Le soir"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-annonce-4-1-co-2",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Le spectacle du cirque",
+    "scenario": "loisirs",
+    "scene": "Le spectacle du cirque",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/inviter/moyen-a2__annonce-4.1.mp3",
+      "transcription": "Mesdames et messieurs, le cirque Pindet vous invite à nous retrouver pour un spectacle extraordinaire d’1 h 30.\nVenez voir des animaux, des clowns, des acrobates.\nRendez-vous mardi 14 à 18 h."
+    },
+    "questions": [
+      {
+        "enonce": "Qui vous invite ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Un cirque", "correct": true},
+          {"id": "b", "texte": "Un zoo"},
+          {"id": "c", "texte": "Un théâtre"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Un cirque"
+          }
+        }
+      },
+      {
+        "enonce": "Combien de temps dure le spectacle ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "1 h 30", "correct": true},
+          {"id": "b", "texte": "30 minutes"},
+          {"id": "c", "texte": "2 heures"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "1 h 30"
+          }
+        }
+      },
+      {
+        "enonce": "Quand a lieu le spectacle ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Mardi 14 à 18 h", "correct": true},
+          {"id": "b", "texte": "Mardi 18 à 14 h"},
+          {"id": "c", "texte": "Samedi 14 à 18 h"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Mardi 14 à 18 h"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-radio-19-3-co-3",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Les prévisions météo",
+    "scenario": "radio",
+    "scene": "Les prévisions météo",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/journee/moyen-a2__radio-19.3.mp3",
+      "transcription": "Tout de suite, les prévisions météo.\nAujourd’hui, le temps sera magnifique, avec un grand soleil et des températures douces.\nMais demain, la pluie arrivera, accompagnée de vent très fort.\nIl faudra sortir son parapluie !"
+    },
+    "questions": [
+      {
+        "enonce": "Quel temps fait-il aujourd’hui ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Un grand soleil", "correct": true},
+          {"id": "b", "texte": "De la pluie"},
+          {"id": "c", "texte": "De la neige"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Un grand soleil"
+          }
+        }
+      },
+      {
+        "enonce": "Qu’est-ce qui arrive demain ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "La pluie et un vent très fort", "correct": true},
+          {"id": "b", "texte": "La neige"},
+          {"id": "c", "texte": "Une vague de chaleur"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "La pluie et un vent très fort"
+          }
+        }
+      },
+      {
+        "enonce": "Qu’est-ce qu’il faudra prendre demain ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Un parapluie", "correct": true},
+          {"id": "b", "texte": "Des lunettes de soleil"},
+          {"id": "c", "texte": "Un maillot de bain"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Un parapluie"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-annonce-4-5-co-2",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Les étages du grand magasin",
+    "scenario": "magasins",
+    "scene": "Les étages du grand magasin",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/logement/moyen-a2__annonce-4.5.mp3",
+      "transcription": "Chers clients, vous retrouverez tous les produits alimentaires au premier étage du magasin.\nAu deuxième étage, les articles de la maison et de la mode.\nAu troisième, le multimédia.\nBonne visite."
+    },
+    "questions": [
+      {
+        "enonce": "Où sont les produits alimentaires ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Au premier étage", "correct": true},
+          {"id": "b", "texte": "Au deuxième étage"},
+          {"id": "c", "texte": "Au troisième étage"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Au premier étage"
+          }
+        }
+      },
+      {
+        "enonce": "Que trouve-t-on au deuxième étage ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "La maison et la mode", "correct": true},
+          {"id": "b", "texte": "Le multimédia"},
+          {"id": "c", "texte": "L’alimentation"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "La maison et la mode"
+          }
+        }
+      },
+      {
+        "enonce": "Où est le multimédia ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Au troisième étage", "correct": true},
+          {"id": "b", "texte": "Au premier étage"},
+          {"id": "c", "texte": "Au rez-de-chaussée"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Au troisième étage"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-annonce-6-6-co-2",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Au zoo",
+    "scenario": "loisirs",
+    "scene": "Au zoo",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/logement/moyen-a2__annonce-6.6.mp3",
+      "transcription": "Chers visiteurs, ne manquez pas à 14h aujourd’hui le spectacle incroyable des félins !\nVenez donner à manger aux girafes et aux éléphants et découvrir plein d’espèces animales incroyables !"
+    },
+    "questions": [
+      {
+        "enonce": "À quelle heure est le spectacle des félins ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "À 14 h", "correct": true},
+          {"id": "b", "texte": "À 16 h"},
+          {"id": "c", "texte": "À 10 h"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "À 14 h"
+          }
+        }
+      },
+      {
+        "enonce": "À quels animaux peut-on donner à manger ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Aux girafes et aux éléphants", "correct": true},
+          {"id": "b", "texte": "Aux lions et aux tigres"},
+          {"id": "c", "texte": "Aux singes"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Aux girafes et aux éléphants"
+          }
+        }
+      },
+      {
+        "enonce": "Où se passe cette annonce ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Dans un zoo", "correct": true},
+          {"id": "b", "texte": "Dans une ferme"},
+          {"id": "c", "texte": "Dans un cirque"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Dans un zoo"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-annonce-1-3-co-2",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · La séance de cinéma",
+    "scenario": "loisirs",
+    "scene": "La séance de cinéma",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/loisirs/moyen-a2__annonce-1.3.mp3",
+      "transcription": "Chers spectateurs, nous vous informons que le film « La roue tourne », gagnant du César de la meilleure comédie de l’année, commencera à 18 h 30.\nVeuillez nous excuser."
+    },
+    "questions": [
+      {
+        "enonce": "Quel prix le film a-t-il gagné ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Le César de la meilleure comédie", "correct": true},
+          {"id": "b", "texte": "Le prix du meilleur acteur"},
+          {"id": "c", "texte": "Le prix du public"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Le César de la meilleure comédie"
+          }
+        }
+      },
+      {
+        "enonce": "À quelle heure commence le film ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "18 h 30", "correct": true},
+          {"id": "b", "texte": "18 h"},
+          {"id": "c", "texte": "19 h 30"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "18 h 30"
+          }
+        }
+      },
+      {
+        "enonce": "Pourquoi l’annonce s’excuse-t-elle ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Le film commence plus tard", "correct": true},
+          {"id": "b", "texte": "La salle est fermée"},
+          {"id": "c", "texte": "Il n’y a plus de places"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Le film commence plus tard"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-annonce-2-1-co-2",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Au parc d’attractions",
+    "scenario": "loisirs",
+    "scene": "Au parc d’attractions",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/loisirs/moyen-a2__annonce-2.1.mp3",
+      "transcription": "Bienvenue au Parc Astérix.\nVous allez bientôt entrer dans l’attraction du train rapide.\nIl y a quelques règles à respecter pour votre sécurité.\nIl faut mesurer au moins 1m20 pour pouvoir monter dans le manège."
+    },
+    "questions": [
+      {
+        "enonce": "Dans quelle attraction allez-vous entrer ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Le train rapide", "correct": true},
+          {"id": "b", "texte": "La grande roue"},
+          {"id": "c", "texte": "Le bateau pirate"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Le train rapide"
+          }
+        }
+      },
+      {
+        "enonce": "Pourquoi y a-t-il des règles ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Pour votre sécurité", "correct": true},
+          {"id": "b", "texte": "Pour aller plus vite"},
+          {"id": "c", "texte": "Pour payer moins cher"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Pour votre sécurité"
+          }
+        }
+      },
+      {
+        "enonce": "Quelle taille faut-il mesurer au minimum ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "1,20 m", "correct": true},
+          {"id": "b", "texte": "1,50 m"},
+          {"id": "c", "texte": "1 m"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "1,20 m"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-annonce-2-3-co-2",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · La fermeture de la bibliothèque",
+    "scenario": "lieux-publics",
+    "scene": "La fermeture de la bibliothèque",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/loisirs/moyen-a2__annonce-2.3.mp3",
+      "transcription": "Bonjour mesdames et messieurs, je vous rappelle que la bibliothèque ferme exceptionnellement ses portes à 15h30.\nIl vous reste 15 minutes avant la fermeture."
+    },
+    "questions": [
+      {
+        "enonce": "À quelle heure ferme la bibliothèque aujourd’hui ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "15 h 30", "correct": true},
+          {"id": "b", "texte": "18 h 30"},
+          {"id": "c", "texte": "15 h"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "15 h 30"
+          }
+        }
+      },
+      {
+        "enonce": "Comment est cette fermeture ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Exceptionnelle", "correct": true},
+          {"id": "b", "texte": "Comme tous les jours"},
+          {"id": "c", "texte": "Pour une semaine"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Exceptionnelle"
+          }
+        }
+      },
+      {
+        "enonce": "Combien de temps reste-t-il avant la fermeture ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "15 minutes", "correct": true},
+          {"id": "b", "texte": "30 minutes"},
+          {"id": "c", "texte": "1 heure"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "15 minutes"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-radio-14-2-co-3",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · La rencontre avec les acteurs",
+    "scenario": "loisirs",
+    "scene": "La rencontre avec les acteurs",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/loisirs/moyen-a2__radio-14.2.mp3",
+      "transcription": "Dernières nouvelles pour les amoureux de la série à succès « La Casa de Papel » qui a passionné des milliers de spectateurs.\nLes acteurs feront des photos avec le public de 14 h à 16 h à la Cité du cinéma à Saint-Denis."
+    },
+    "questions": [
+      {
+        "enonce": "Qui va rencontrer le public ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Les acteurs d’une série", "correct": true},
+          {"id": "b", "texte": "Des chanteurs"},
+          {"id": "c", "texte": "Des sportifs"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Les acteurs d’une série"
+          }
+        }
+      },
+      {
+        "enonce": "Que vont faire les acteurs ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Des photos avec le public", "correct": true},
+          {"id": "b", "texte": "Un concert"},
+          {"id": "c", "texte": "Une interview à la radio"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Des photos avec le public"
+          }
+        }
+      },
+      {
+        "enonce": "À quelle heure ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "De 14 h à 16 h", "correct": true},
+          {"id": "b", "texte": "De 10 h à 12 h"},
+          {"id": "c", "texte": "De 16 h à 18 h"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "De 14 h à 16 h"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-radio-15-2-co-3",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Le printemps du cinéma",
+    "scenario": "loisirs",
+    "scene": "Le printemps du cinéma",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/loisirs/moyen-a2__radio-15.2.mp3",
+      "transcription": "Bienvenue sur Radio ciné.\nC’est bientôt le printemps du cinéma, événement très attendu.\nPendant 3 jours, du 17 au 19 avril, tous les films sont au tarif exceptionnel de 3,50 € dans tous les cinémas de France."
+    },
+    "questions": [
+      {
+        "enonce": "Combien de jours dure l’événement ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "3 jours", "correct": true},
+          {"id": "b", "texte": "1 semaine"},
+          {"id": "c", "texte": "1 jour"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "3 jours"
+          }
+        }
+      },
+      {
+        "enonce": "Quelles sont les dates ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Du 17 au 19 avril", "correct": true},
+          {"id": "b", "texte": "Du 7 au 9 avril"},
+          {"id": "c", "texte": "Du 17 au 19 août"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Du 17 au 19 avril"
+          }
+        }
+      },
+      {
+        "enonce": "Combien coûte un film ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "3,50 €", "correct": true},
+          {"id": "b", "texte": "5,50 €"},
+          {"id": "c", "texte": "13,50 €"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "3,50 €"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-radio-17-3-co-3",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Les résultats sportifs",
+    "scenario": "radio",
+    "scene": "Les résultats sportifs",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/loisirs/moyen-a2__radio-17.3.mp3",
+      "transcription": "Aujourd’hui sur SportRadio, les derniers résultats sportifs.\nCôté foot, Paris gagne contre Monaco 3 à 1.\nAu basket-ball, l’équipe de Nanterre a perdu d’1 point contre Limoges.\nEt pour terminer, la saison de courses de chevaux commence demain à 13h !"
+    },
+    "questions": [
+      {
+        "enonce": "Quel est le résultat du match entre Paris et Monaco ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Paris gagne 3 à 1", "correct": true},
+          {"id": "b", "texte": "Monaco gagne 3 à 1"},
+          {"id": "c", "texte": "Match nul, 1 à 1"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Paris gagne 3 à 1"
+          }
+        }
+      },
+      {
+        "enonce": "Qu’est-il arrivé à l’équipe de Nanterre ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Elle a perdu d’un point", "correct": true},
+          {"id": "b", "texte": "Elle a gagné d’un point"},
+          {"id": "c", "texte": "Elle n’a pas joué"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Elle a perdu d’un point"
+          }
+        }
+      },
+      {
+        "enonce": "Qu’est-ce qui commence demain ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "La saison de courses de chevaux", "correct": true},
+          {"id": "b", "texte": "Un tournoi de tennis"},
+          {"id": "c", "texte": "Une course de vélo"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "La saison de courses de chevaux"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-annonce-6-3-co-2",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Le salon du tourisme",
+    "scenario": "vacances",
+    "scene": "Le salon du tourisme",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/nature/moyen-a2__annonce-6.3.mp3",
+      "transcription": "À l’occasion du salon du tourisme, venez découvrir nos derniers séjours au soleil !\nBalades en bord de mer, baignade, palmiers...\nDécouvrez nos destinations 100% relaxantes !"
+    },
+    "questions": [
+      {
+        "enonce": "Où se passe cette annonce ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Au salon du tourisme", "correct": true},
+          {"id": "b", "texte": "Dans une gare"},
+          {"id": "c", "texte": "À l’aéroport"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Au salon du tourisme"
+          }
+        }
+      },
+      {
+        "enonce": "Quels séjours sont proposés ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Des séjours au soleil", "correct": true},
+          {"id": "b", "texte": "Des séjours à la montagne"},
+          {"id": "c", "texte": "Des séjours à la campagne"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Des séjours au soleil"
+          }
+        }
+      },
+      {
+        "enonce": "Quelle activité est citée ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "La baignade", "correct": true},
+          {"id": "b", "texte": "Le ski"},
+          {"id": "c", "texte": "L’escalade"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "La baignade"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-conversation-29-co-4",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Les conversations à la maison",
+    "scenario": "maison",
+    "scene": "Les conversations à la maison",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/nature/moyen-a2__conversation-29.mp3",
+      "transcription": "Dialogue 1.\n- Gaspard, tu as vu mon téléphone ?\n- Je ne le trouve plus !\n- Il n'est pas sur ton bureau ?\n- Non, j'ai bien regardé, je ne l'ai pas vu.\n- Attends, je vais t'appeler pour que tu entendes la sonnerie.\nDialogue 2.\n- Tu veux regarder quoi à la télé ce soir ?\n- Je ne sais pas, il y a un bon film sur Canal 6.\n- Non, c'est une émission sur les animaux.\n- Ça t'intéresse ?\n- Oui, pourquoi pas !\nDialogue 3.\n- Je vais préparer des pâtes à la tomate pour ce soir.\n- Je peux faire quelque chose ?\n- Couper les tomates par exemple ?\n- Oui, je veux bien, merci !\n- Les couteaux sont là.\nDialogue 4.\n- Bruno, il va faire quel temps demain ?\n- Il devrait y avoir du soleil, mais il va faire froid.\n- Bon, ben je vais mettre un gros manteau alors."
+    },
+    "questions": [
+      {
+        "enonce": "Dialogue 1 : que cherche la personne ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Son téléphone", "correct": true},
+          {"id": "b", "texte": "Ses clés"},
+          {"id": "c", "texte": "Son portefeuille"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Son téléphone"
+          }
+        }
+      },
+      {
+        "enonce": "Dialogue 2 : quelle émission passe sur Canal 6 ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Une émission sur les animaux", "correct": true},
+          {"id": "b", "texte": "Un film"},
+          {"id": "c", "texte": "Un match de foot"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Une émission sur les animaux"
+          }
+        }
+      },
+      {
+        "enonce": "Dialogue 3 : que prépare la personne pour ce soir ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Des pâtes à la tomate", "correct": true},
+          {"id": "b", "texte": "Une soupe"},
+          {"id": "c", "texte": "Une pizza"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Des pâtes à la tomate"
+          }
+        }
+      },
+      {
+        "enonce": "Dialogue 4 : quel temps fera-t-il demain ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Du soleil, mais froid", "correct": true},
+          {"id": "b", "texte": "De la pluie"},
+          {"id": "c", "texte": "Chaud et ensoleillé"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Du soleil, mais froid"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-annonce-2-4-co-2",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Les promotions sur l’électroménager",
+    "scenario": "magasins",
+    "scene": "Les promotions sur l’électroménager",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/nourriture/moyen-a2__annonce-2.4.mp3",
+      "transcription": "Chers clients, profitez de notre offre exceptionnelle sur tout l’électroménager aujourd’hui !\n50% sur les téléviseurs, réfrigérateurs, fours et machines à laver.\nN’attendez plus !"
+    },
+    "questions": [
+      {
+        "enonce": "Quels produits sont en promotion ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "L’électroménager", "correct": true},
+          {"id": "b", "texte": "Les vêtements"},
+          {"id": "c", "texte": "Les meubles"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "L’électroménager"
+          }
+        }
+      },
+      {
+        "enonce": "Quelle est la réduction ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "50 %", "correct": true},
+          {"id": "b", "texte": "15 %"},
+          {"id": "c", "texte": "30 %"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "50 %"
+          }
+        }
+      },
+      {
+        "enonce": "Quel produit est cité dans l’annonce ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Les réfrigérateurs", "correct": true},
+          {"id": "b", "texte": "Les aspirateurs"},
+          {"id": "c", "texte": "Les téléphones"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Les réfrigérateurs"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-annonce-5-4-co-2",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Au bord du bassin",
+    "scenario": "loisirs",
+    "scene": "Au bord du bassin",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/nourriture/moyen-a2__annonce-5.4.mp3",
+      "transcription": "Nous vous rappelons qu’il est interdit de courir ou de consommer de la nourriture autour du grand bassin sous peine d’exclusion.\nMerci de votre compréhension."
+    },
+    "questions": [
+      {
+        "enonce": "Où se passe cette annonce ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "À la piscine", "correct": true},
+          {"id": "b", "texte": "Au restaurant"},
+          {"id": "c", "texte": "Au parc"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "À la piscine"
+          }
+        }
+      },
+      {
+        "enonce": "Qu’est-ce qui est interdit ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Courir et manger autour du bassin", "correct": true},
+          {"id": "b", "texte": "Nager sans bonnet"},
+          {"id": "c", "texte": "Plonger"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Courir et manger autour du bassin"
+          }
+        }
+      },
+      {
+        "enonce": "Que risquent les personnes qui ne respectent pas la règle ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "D’être exclues", "correct": true},
+          {"id": "b", "texte": "De payer une amende"},
+          {"id": "c", "texte": "De perdre leur carte"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "D’être exclues"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-annonce-6-5-co-2",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Le service de laverie",
+    "scenario": "vie-quotidienne",
+    "scene": "Le service de laverie",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/nourriture/moyen-a2__annonce-6.5.mp3",
+      "transcription": "Découvrez notre dernier service de laverie !\nOn s’occupe de votre linge : on nettoie, on repasse et on plie !\nPassez commande en ligne sur notre site internet."
+    },
+    "questions": [
+      {
+        "enonce": "Quel nouveau service est proposé ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Une laverie", "correct": true},
+          {"id": "b", "texte": "Une boulangerie"},
+          {"id": "c", "texte": "Un taxi"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Une laverie"
+          }
+        }
+      },
+      {
+        "enonce": "Que fait ce service ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Il nettoie, repasse et plie le linge", "correct": true},
+          {"id": "b", "texte": "Il répare les vêtements"},
+          {"id": "c", "texte": "Il vend des vêtements"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Il nettoie, repasse et plie le linge"
+          }
+        }
+      },
+      {
+        "enonce": "Comment passer commande ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Sur le site Internet", "correct": true},
+          {"id": "b", "texte": "Par téléphone"},
+          {"id": "c", "texte": "En magasin"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Sur le site Internet"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-annonce-7-2-co-2",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Les règles du musée",
+    "scenario": "loisirs",
+    "scene": "Les règles du musée",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/nourriture/moyen-a2__annonce-7.2.mp3",
+      "transcription": "Nous rappelons à nos visiteurs qu’il est interdit de consommer de la nourriture à l’intérieur du musée.\nIl est également interdit de courir.\nLes photos sont autorisées."
+    },
+    "questions": [
+      {
+        "enonce": "Qu’est-ce qui est interdit dans le musée ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Manger", "correct": true},
+          {"id": "b", "texte": "Parler"},
+          {"id": "c", "texte": "Porter un sac"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Manger"
+          }
+        }
+      },
+      {
+        "enonce": "Qu’est-ce qui est aussi interdit ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Courir", "correct": true},
+          {"id": "b", "texte": "Toucher les murs"},
+          {"id": "c", "texte": "Téléphoner"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Courir"
+          }
+        }
+      },
+      {
+        "enonce": "Peut-on prendre des photos ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Oui", "correct": true},
+          {"id": "b", "texte": "Non"},
+          {"id": "c", "texte": "Seulement avec un guide"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Oui"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-conversation-20-co-4",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · À l’arrêt de bus",
+    "scenario": "transports",
+    "scene": "À l’arrêt de bus",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/nourriture/moyen-a2__conversation-20.mp3",
+      "transcription": "Dialogue 1.\n- Ah, salut !\n- C'est ton nouveau chien ?\n- Oui, c'est Kelly.\n- Tu veux bien le tenir ?\n- Je dois acheter du pain à la boulangerie, mais les chiens ne peuvent pas entrer.\n- Oui, bien sûr, mais fais vite.\n- Oui, pas plus de dix minutes.\n- Merci.\nDialogue 2.\n- Julie, comment tu rentres chez toi ?\n- En bus, et toi ?\n- J'aimerais rentrer à pied, mais il pleut.\n- J'ai un parapluie, prends-le si tu veux.\n- Tu me le rendras demain ?\n- Ah oui, super, merci.\nDialogue 3.\n- Ah, regarde, à l'entrée du parc, c'est le nouvel élève de ma classe.\n- Ah oui ?\n- Bien, on va lui dire bonjour.\n- Oui, pourquoi pas ?\n- Il a l'air sympa.\n- Voici mon ami d'enfance.\nDialogue 4.\n- Excusez-moi monsieur, est-ce que ce bus va à la gare ?\n- Non, il s'arrête à la place centrale.\n- Pouvez-vous me dire quel bus va jusqu'à la gare, s'il vous plaît ?\n- Vous devez prendre le 64.\n- Merci, c'est parfait."
+    },
+    "questions": [
+      {
+        "enonce": "Dialogue 1 : pourquoi faut-il tenir le chien ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Les chiens ne peuvent pas entrer dans la boulangerie", "correct": true},
+          {"id": "b", "texte": "Le chien est fatigué"},
+          {"id": "c", "texte": "Le bus arrive"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Les chiens ne peuvent pas entrer dans la boulangerie"
+          }
+        }
+      },
+      {
+        "enonce": "Dialogue 2 : que prête-t-on à Julie ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Un parapluie", "correct": true},
+          {"id": "b", "texte": "Un ticket de bus"},
+          {"id": "c", "texte": "Une veste"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Un parapluie"
+          }
+        }
+      },
+      {
+        "enonce": "Dialogue 3 : qui voient-ils à l’entrée du parc ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Le nouvel élève de la classe", "correct": true},
+          {"id": "b", "texte": "Le professeur"},
+          {"id": "c", "texte": "Un voisin"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Le nouvel élève de la classe"
+          }
+        }
+      },
+      {
+        "enonce": "Dialogue 4 : quel bus va à la gare ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Le 64", "correct": true},
+          {"id": "b", "texte": "Le 46"},
+          {"id": "c", "texte": "Le 4"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Le 64"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-annonce-4-2-co-2",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Les horaires du magasin",
+    "scenario": "magasins",
+    "scene": "Les horaires du magasin",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__annonce-4.2.mp3",
+      "transcription": "Bonjour, nous vous rappelons que, le week-end, le magasin ferme ses portes à 12h15, au lieu de 20h30 en semaine.\nBonne journée."
+    },
+    "questions": [
+      {
+        "enonce": "À quelle heure ferme le magasin le week-end ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "12 h 15", "correct": true},
+          {"id": "b", "texte": "20 h 30"},
+          {"id": "c", "texte": "12 h 30"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "12 h 15"
+          }
+        }
+      },
+      {
+        "enonce": "À quelle heure ferme-t-il en semaine ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "20 h 30", "correct": true},
+          {"id": "b", "texte": "12 h 15"},
+          {"id": "c", "texte": "19 h"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "20 h 30"
+          }
+        }
+      },
+      {
+        "enonce": "À qui s’adresse ce message ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Aux clients du magasin", "correct": true},
+          {"id": "b", "texte": "Aux employés"},
+          {"id": "c", "texte": "Aux voyageurs"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Aux clients du magasin"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-annonce-7-1-co-2",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Le train pour la Suisse",
+    "scenario": "transports",
+    "scene": "Le train pour la Suisse",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__annonce-7.1.mp3",
+      "transcription": "Bienvenue à bord du train 6749 au départ de Paris à destination de la Suisse.\nCe train desservira les gares de Reims, Strasbourg, et Zurich, sa gare d’arrivée.\nBon voyage !"
+    },
+    "questions": [
+      {
+        "enonce": "Quel est le numéro du train ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "6749", "correct": true},
+          {"id": "b", "texte": "6479"},
+          {"id": "c", "texte": "7649"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "6749"
+          }
+        }
+      },
+      {
+        "enonce": "D’où part le train ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "De Paris", "correct": true},
+          {"id": "b", "texte": "De Reims"},
+          {"id": "c", "texte": "De Strasbourg"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "De Paris"
+          }
+        }
+      },
+      {
+        "enonce": "Quelle est la gare d’arrivée ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Zurich", "correct": true},
+          {"id": "b", "texte": "Strasbourg"},
+          {"id": "c", "texte": "Reims"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Zurich"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-conversation-22-co-4",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Les conversations dans la rue",
+    "scenario": "loisirs",
+    "scene": "Les conversations dans la rue",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__conversation-22.mp3",
+      "transcription": "Dialogue 1.\n- Tu sais, le prochain concert de Benabar, c'est le 15 juin.\n- Ah oui, c'est super.\n- Oui, et il reste encore des places à prix réduit.\n- Il faut aller en acheter très vite.\nDialogue 2.\n- Je n'aime pas du tout ce film.\n- Avant ?\n- Pourquoi ?\n- Non, je trouve qu'il est très bien.\n- Les scènes sont trop longues et je déteste la musique.\nDialogue 3.\n- Alors, tu as lu le livre que je t'ai prêté ?\n- Oui.\n- D'ailleurs, je voulais te dire merci.\n- C'est bien d'avoir de nouvelles lectures.\n- Je peux t'en prêter d'autres si tu veux.\n- J'en ai beaucoup à la maison.\n- D'accord ?\n- C'est gentil, merci encore.\nDialogue 4.\n- Salut, voici Pat, mon correspondant suisse.\n- Il habite à Zurich.\n- Il parle très bien l'allemand et le français !\n- Bonjour Pat !\n- Moi, c'est Rudy et je ne parle pas l'allemand !\n- On parlera en français alors."
+    },
+    "questions": [
+      {
+        "enonce": "Dialogue 1 : quand a lieu le prochain concert ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Le 15 juin", "correct": true},
+          {"id": "b", "texte": "Le 5 juin"},
+          {"id": "c", "texte": "Le 15 juillet"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Le 15 juin"
+          }
+        }
+      },
+      {
+        "enonce": "Dialogue 2 : pourquoi la personne n’aime-t-elle pas le film ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Les scènes sont trop longues", "correct": true},
+          {"id": "b", "texte": "Les acteurs sont mauvais"},
+          {"id": "c", "texte": "L’histoire est triste"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Les scènes sont trop longues"
+          }
+        }
+      },
+      {
+        "enonce": "Dialogue 3 : qu’est-ce qui a été prêté ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Un livre", "correct": true},
+          {"id": "b", "texte": "Un film"},
+          {"id": "c", "texte": "Un disque"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Un livre"
+          }
+        }
+      },
+      {
+        "enonce": "Dialogue 4 : où habite Pat ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "À Zurich", "correct": true},
+          {"id": "b", "texte": "À Tours"},
+          {"id": "c", "texte": "À Berlin"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "À Zurich"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-conversation-25-co-4",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Au cinéma",
+    "scenario": "loisirs",
+    "scene": "Au cinéma",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__conversation-25.mp3",
+      "transcription": "Dialogue 1.\n- Monsieur, je peux vous aider ?\n- Vous cherchez quelque chose ?\n- Merci beaucoup !\n- Je suis perdu, je ne sais pas où est ma salle.\n- Vous allez voir quel film ?\n- L'Esprit de famille.\n- Moi aussi !\n- Venez avec moi.\n- C'est la salle numéro 2.\nDialogue 2.\n- Bonjour madame, j'aimerais connaître la durée du film Les Sentiments, s'il vous plaît.\n- Il dure deux heures dix.\n- Merci beaucoup.\n- Et il y a du monde ?\n- Oui, mais il reste encore des places.\n- Très bien, merci.\nDialogue 3.\n- Qu'est-ce que tu as envie de voir ?\n- Je ne sais pas.\n- J'hésite entre L'Élève Ducobu et 10 jours sans maman.\n- J'ai bien aimé la BD de L'Élève Ducobu, mais j'aimerais voir autre chose.\n- Ah, regarde !\n- Il y a le dernier Harry Potter !\n- Parfait, ça me va !\n- Allons-y !\nDialogue 4.\n- Tu as pensé quoi du film ?\n- J'ai adoré !\n- C'était magnifique !\n- Et toi ?\n- Pas mal.\n- C'est vrai, les acteurs sont bons, il y a beaucoup d'émotion…\nmais c'est un peu lent."
+    },
+    "questions": [
+      {
+        "enonce": "Dialogue 1 : pourquoi le monsieur a-t-il besoin d’aide ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Il ne trouve pas sa salle", "correct": true},
+          {"id": "b", "texte": "Il a perdu son billet"},
+          {"id": "c", "texte": "Il veut acheter du pop-corn"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Il ne trouve pas sa salle"
+          }
+        }
+      },
+      {
+        "enonce": "Dialogue 2 : combien de temps dure le film ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Deux heures dix", "correct": true},
+          {"id": "b", "texte": "Une heure trente"},
+          {"id": "c", "texte": "Deux heures"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Deux heures dix"
+          }
+        }
+      },
+      {
+        "enonce": "Dialogue 3 : quel film choisissent-ils ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Le dernier Harry Potter", "correct": true},
+          {"id": "b", "texte": "10 jours sans maman"},
+          {"id": "c", "texte": "L’Élève Ducobu"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Le dernier Harry Potter"
+          }
+        }
+      },
+      {
+        "enonce": "Dialogue 4 : que pense la deuxième personne du film ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Pas mal, mais un peu lent", "correct": true},
+          {"id": "b", "texte": "Magnifique"},
+          {"id": "c", "texte": "Très ennuyeux"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Pas mal, mais un peu lent"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-conversation-32-co-4",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · La vie en famille",
+    "scenario": "maison",
+    "scene": "La vie en famille",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__conversation-32.mp3",
+      "transcription": "Dialogue 1.\n- Bon, je vais au cinéma avec mes copines.\n- À ce soir !\n- Je peux venir te chercher en voiture, si tu veux.\n- Non merci, je vais prendre le bus avec Mathilde.\n- Salut !\nDialogue 2.\n- Bonjour Laura.\n- Ah, mais tu n'es pas seule…\n- Oui, je suis avec Tommy.\n- C'est mon ami du cours de danse.\n- Ah oui !\n- Enchanté, Tommy !\n- Laura m'a beaucoup parlé de toi.\nDialogue 3.\n- Kévin, range ta chambre tout de suite !\n- Mais maman, j'ai rendez-vous avec mes amis…\n- Non, d'abord tu fais le ménage dans ta chambre.\nDialogue 4.\n- Vous aimez ma pizza ?\n- J'ai fait une nouvelle recette.\n- Oh oui, elle est délicieuse !\n- Moi aussi, j'adore tes pizzas papa !\n- Elles sont trop bonnes !"
+    },
+    "questions": [
+      {
+        "enonce": "Dialogue 1 : comment la fille va-t-elle au cinéma ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "En bus", "correct": true},
+          {"id": "b", "texte": "En voiture"},
+          {"id": "c", "texte": "À pied"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "En bus"
+          }
+        }
+      },
+      {
+        "enonce": "Dialogue 2 : qui est Tommy ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Un ami du cours de danse", "correct": true},
+          {"id": "b", "texte": "Le frère de Laura"},
+          {"id": "c", "texte": "Un voisin"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Un ami du cours de danse"
+          }
+        }
+      },
+      {
+        "enonce": "Dialogue 3 : que doit faire Kévin ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Ranger sa chambre", "correct": true},
+          {"id": "b", "texte": "Faire ses devoirs"},
+          {"id": "c", "texte": "Promener le chien"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Ranger sa chambre"
+          }
+        }
+      },
+      {
+        "enonce": "Dialogue 4 : qu’a préparé le père ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Une pizza", "correct": true},
+          {"id": "b", "texte": "Une tarte"},
+          {"id": "c", "texte": "Des pâtes"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Une pizza"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-radio-17-1-co-3",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Rester en forme",
+    "scenario": "sante",
+    "scene": "Rester en forme",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__radio-17.1.mp3",
+      "transcription": "Bonjour.\nÀ l’approche de l’automne, restez en forme en faisant une promenade de 20 minutes.\nL’effort physique est très bon pour le moral.\nPour les plus sportifs, le vélo et la natation vous sont conseillés !\nN’oubliez pas de boire !"
+    },
+    "questions": [
+      {
+        "enonce": "Combien de temps faut-il marcher ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "20 minutes", "correct": true},
+          {"id": "b", "texte": "2 heures"},
+          {"id": "c", "texte": "10 minutes"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "20 minutes"
+          }
+        }
+      },
+      {
+        "enonce": "Quels sports sont conseillés aux plus sportifs ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Le vélo et la natation", "correct": true},
+          {"id": "b", "texte": "Le football et le tennis"},
+          {"id": "c", "texte": "La course et le ski"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Le vélo et la natation"
+          }
+        }
+      },
+      {
+        "enonce": "Qu’est-ce qu’il ne faut pas oublier ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Boire", "correct": true},
+          {"id": "b", "texte": "Manger"},
+          {"id": "c", "texte": "Dormir"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Boire"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-radio-18-1-co-3",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · La nouvelle fromagerie",
+    "scenario": "magasins",
+    "scene": "La nouvelle fromagerie",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__radio-18.1.mp3",
+      "transcription": "Bonjour.\nUne nouvelle fromagerie ouvrira dans la petite ville de Sainte Ernestine dans 5 semaines.\nLa boutique vendra uniquement des produits frais de la région, et vous accueillera tous les jours de 9h à 18h30, sauf le week-end."
+    },
+    "questions": [
+      {
+        "enonce": "Qu’est-ce qui va ouvrir ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Une fromagerie", "correct": true},
+          {"id": "b", "texte": "Une boulangerie"},
+          {"id": "c", "texte": "Une boucherie"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Une fromagerie"
+          }
+        }
+      },
+      {
+        "enonce": "Quand va-t-elle ouvrir ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Dans 5 semaines", "correct": true},
+          {"id": "b", "texte": "Dans 5 jours"},
+          {"id": "c", "texte": "Dans 15 jours"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Dans 5 semaines"
+          }
+        }
+      },
+      {
+        "enonce": "Quand est-elle fermée ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Le week-end", "correct": true},
+          {"id": "b", "texte": "Le lundi"},
+          {"id": "c", "texte": "Le mercredi"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Le week-end"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-radio-19-1-co-3",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · L’invité de la radio",
+    "scenario": "radio",
+    "scene": "L’invité de la radio",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__radio-19.1.mp3",
+      "transcription": "Bienvenue sur FunFM, la radio des 12-18 ans.\nAujourd’hui, nous recevons Charlie Chaillot qui vient nous présenter son dernier ouvrage qui s’appelle “Toute ma vie” et qui nous raconte ses différents voyages à travers l’Europe."
+    },
+    "questions": [
+      {
+        "enonce": "À qui s’adresse cette radio ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Aux 12-18 ans", "correct": true},
+          {"id": "b", "texte": "Aux enfants de moins de 10 ans"},
+          {"id": "c", "texte": "Aux personnes âgées"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Aux 12-18 ans"
+          }
+        }
+      },
+      {
+        "enonce": "Que présente l’invité ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Son dernier livre", "correct": true},
+          {"id": "b", "texte": "Son dernier film"},
+          {"id": "c", "texte": "Sa dernière chanson"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Son dernier livre"
+          }
+        }
+      },
+      {
+        "enonce": "De quoi parle le livre ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "De ses voyages en Europe", "correct": true},
+          {"id": "b", "texte": "De sa famille"},
+          {"id": "c", "texte": "De son travail"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "De ses voyages en Europe"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-radio-19-2-co-3",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Les nouvelles de la santé",
+    "scenario": "actualite",
+    "scene": "Les nouvelles de la santé",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__radio-19.2.mp3",
+      "transcription": "À la Une aujourd’hui : la santé.\nUne nouvelle carte pour les frais médicaux est maintenant disponible.\nTous les Français vont la recevoir bientôt.\nAutre nouvelle, la hausse des tarifs des consultations de 12 %, passant de 25 € à 28€."
+    },
+    "questions": [
+      {
+        "enonce": "Qu’est-ce qui est maintenant disponible ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Une nouvelle carte pour les frais médicaux", "correct": true},
+          {"id": "b", "texte": "Un nouveau médicament"},
+          {"id": "c", "texte": "Un nouvel hôpital"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Une nouvelle carte pour les frais médicaux"
+          }
+        }
+      },
+      {
+        "enonce": "De combien augmente le prix des consultations ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "12 %", "correct": true},
+          {"id": "b", "texte": "25 %"},
+          {"id": "c", "texte": "28 %"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "12 %"
+          }
+        }
+      },
+      {
+        "enonce": "Combien coûtera une consultation ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "28 €", "correct": true},
+          {"id": "b", "texte": "25 €"},
+          {"id": "c", "texte": "12 €"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "28 €"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-radio-20-1-co-3",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · La vague de chaleur",
+    "scenario": "radio",
+    "scene": "La vague de chaleur",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__radio-20.1.mp3",
+      "transcription": "Vous êtes sur RadioMétéo, bonjour.\nAttention, une vague de chaleur va s’abattre sur la France la semaine prochaine, avec des records de température.\nIl fera jusqu’à 42° dans la moitié nord, 38° dans le sud.\nN’oubliez pas de boire beaucoup d’eau !"
+    },
+    "questions": [
+      {
+        "enonce": "Qu’est-ce qui arrive la semaine prochaine ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Une vague de chaleur", "correct": true},
+          {"id": "b", "texte": "De la neige"},
+          {"id": "c", "texte": "Des orages"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Une vague de chaleur"
+          }
+        }
+      },
+      {
+        "enonce": "Quelle température fera-t-il dans la moitié nord ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Jusqu’à 42°", "correct": true},
+          {"id": "b", "texte": "Jusqu’à 38°"},
+          {"id": "c", "texte": "Jusqu’à 28°"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Jusqu’à 42°"
+          }
+        }
+      },
+      {
+        "enonce": "Que conseille la radio ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Boire beaucoup d’eau", "correct": true},
+          {"id": "b", "texte": "Rester au lit"},
+          {"id": "c", "texte": "Prendre un parapluie"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Boire beaucoup d’eau"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-radio-20-2-co-3",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · L’exposition de photos",
+    "scenario": "loisirs",
+    "scene": "L’exposition de photos",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__radio-20.2.mp3",
+      "transcription": "Avec l’aide de RadioVillages, la mairie organise ce week-end une exposition de photographies de notre belle région : paysages, architecture, commerces locaux...\n27 photographes seront présents à la rencontre qui aura lieu dans la grande salle des fêtes.\nVenez nombreux !"
+    },
+    "questions": [
+      {
+        "enonce": "Qui organise l’exposition ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "La mairie", "correct": true},
+          {"id": "b", "texte": "Une école"},
+          {"id": "c", "texte": "Un musée"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "La mairie"
+          }
+        }
+      },
+      {
+        "enonce": "Combien de photographes seront présents ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "27", "correct": true},
+          {"id": "b", "texte": "17"},
+          {"id": "c", "texte": "72"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "27"
+          }
+        }
+      },
+      {
+        "enonce": "Où a lieu la rencontre ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Dans la grande salle des fêtes", "correct": true},
+          {"id": "b", "texte": "Au musée"},
+          {"id": "c", "texte": "À la mairie"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Dans la grande salle des fêtes"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-annonce-1-1-co-2",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · La fermeture du métro",
+    "scenario": "transports",
+    "scene": "La fermeture du métro",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/transports/moyen-a2__annonce-1.1.mp3",
+      "transcription": "Message aux voyageurs !\nAttention, la ligne 1 du métro sera fermée tous les soirs, dès lundi prochain, à partir de 22h30 pour réparer les voies."
+    },
+    "questions": [
+      {
+        "enonce": "Quelle ligne sera fermée le soir ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "La ligne 1", "correct": true},
+          {"id": "b", "texte": "La ligne 11"},
+          {"id": "c", "texte": "La ligne 2"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "La ligne 1"
+          }
+        }
+      },
+      {
+        "enonce": "À partir de quelle heure ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "22 h 30", "correct": true},
+          {"id": "b", "texte": "20 h 30"},
+          {"id": "c", "texte": "23 h"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "22 h 30"
+          }
+        }
+      },
+      {
+        "enonce": "Pourquoi ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Pour réparer les voies", "correct": true},
+          {"id": "b", "texte": "À cause d’une grève"},
+          {"id": "c", "texte": "Pour nettoyer les trains"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Pour réparer les voies"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-annonce-1-4-co-2",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Le dernier appel à l’aéroport",
+    "scenario": "transports",
+    "scene": "Le dernier appel à l’aéroport",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/transports/moyen-a2__annonce-1.4.mp3",
+      "transcription": "Votre attention s’il vous plaît, ceci est notre dernier appel pour les passagers du vol DY7040 à destination de Montréal.\nMerci de vous présenter devant la porte d’embarquement."
+    },
+    "questions": [
+      {
+        "enonce": "Pour quel vol est cet appel ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Le vol DY7040", "correct": true},
+          {"id": "b", "texte": "Le vol DY4070"},
+          {"id": "c", "texte": "Le vol DY7400"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Le vol DY7040"
+          }
+        }
+      },
+      {
+        "enonce": "Quelle est la destination ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Montréal", "correct": true},
+          {"id": "b", "texte": "Madrid"},
+          {"id": "c", "texte": "Marseille"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Montréal"
+          }
+        }
+      },
+      {
+        "enonce": "Où doivent aller les passagers ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Devant la porte d’embarquement", "correct": true},
+          {"id": "b", "texte": "Au guichet"},
+          {"id": "c", "texte": "Aux bagages"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Devant la porte d’embarquement"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-annonce-1-6-co-2",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · L’objet trouvé dans le train",
+    "scenario": "transports",
+    "scene": "L’objet trouvé dans le train",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/transports/moyen-a2__annonce-1.6.mp3",
+      "transcription": "Chers passagers, attention, un portefeuille a été retrouvé dans les toilettes situées à l’avant du train.\nVeuillez venir le récupérer auprès d’un de nos agents."
+    },
+    "questions": [
+      {
+        "enonce": "Qu’est-ce qui a été retrouvé ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Un portefeuille", "correct": true},
+          {"id": "b", "texte": "Un téléphone"},
+          {"id": "c", "texte": "Un sac"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Un portefeuille"
+          }
+        }
+      },
+      {
+        "enonce": "Où l’a-t-on retrouvé ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Dans les toilettes à l’avant du train", "correct": true},
+          {"id": "b", "texte": "Sur un siège"},
+          {"id": "c", "texte": "Au bar"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Dans les toilettes à l’avant du train"
+          }
+        }
+      },
+      {
+        "enonce": "À qui faut-il s’adresser ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "À un agent", "correct": true},
+          {"id": "b", "texte": "Au conducteur"},
+          {"id": "c", "texte": "À la police"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "À un agent"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-annonce-3-5-co-2",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · La sécurité dans le train",
+    "scenario": "transports",
+    "scene": "La sécurité dans le train",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/transports/moyen-a2__annonce-3.5.mp3",
+      "transcription": "Chers voyageurs, pour votre sécurité, il est strictement interdit d’ouvrir les portes du train.\nMerci de passer vos appels uniquement dans les couloirs.\nDes films sont à votre disposition."
+    },
+    "questions": [
+      {
+        "enonce": "Qu’est-ce qui est interdit ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Ouvrir les portes du train", "correct": true},
+          {"id": "b", "texte": "Manger"},
+          {"id": "c", "texte": "Dormir"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Ouvrir les portes du train"
+          }
+        }
+      },
+      {
+        "enonce": "Où peut-on téléphoner ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Dans les couloirs", "correct": true},
+          {"id": "b", "texte": "À sa place"},
+          {"id": "c", "texte": "Au bar"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Dans les couloirs"
+          }
+        }
+      },
+      {
+        "enonce": "Qu’est-ce qui est à disposition des voyageurs ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Des films", "correct": true},
+          {"id": "b", "texte": "Des journaux"},
+          {"id": "c", "texte": "Des repas"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Des films"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-annonce-4-3-co-2",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Le changement de voie",
+    "scenario": "transports",
+    "scene": "Le changement de voie",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/transports/moyen-a2__annonce-4.3.mp3",
+      "transcription": "Chers voyageurs, en raison d’un incident technique, le train n°55 à destination du Luxembourg partira sur la voie 12 au lieu de la voie 15.\nVeuillez nous excuser pour la gêne occasionnée."
+    },
+    "questions": [
+      {
+        "enonce": "Quelle est la destination du train n° 55 ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Le Luxembourg", "correct": true},
+          {"id": "b", "texte": "La Belgique"},
+          {"id": "c", "texte": "La Suisse"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Le Luxembourg"
+          }
+        }
+      },
+      {
+        "enonce": "De quelle voie partira le train ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "La voie 12", "correct": true},
+          {"id": "b", "texte": "La voie 15"},
+          {"id": "c", "texte": "La voie 5"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "La voie 12"
+          }
+        }
+      },
+      {
+        "enonce": "Pourquoi ce changement ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "À cause d’un incident technique", "correct": true},
+          {"id": "b", "texte": "À cause de la météo"},
+          {"id": "c", "texte": "À cause d’une grève"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "À cause d’un incident technique"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-annonce-5-2-co-2",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · La moto mal garée",
+    "scenario": "transports",
+    "scene": "La moto mal garée",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/transports/moyen-a2__annonce-5.2.mp3",
+      "transcription": "Le propriétaire de la moto immatriculée AG56KL est prié de bien vouloir déplacer son véhicule tout de suite et le garer près des vélos.\nMerci pour votre compréhension."
+    },
+    "questions": [
+      {
+        "enonce": "Quel véhicule doit être déplacé ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Une moto", "correct": true},
+          {"id": "b", "texte": "Une voiture"},
+          {"id": "c", "texte": "Un vélo"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Une moto"
+          }
+        }
+      },
+      {
+        "enonce": "Quand faut-il le déplacer ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Tout de suite", "correct": true},
+          {"id": "b", "texte": "Ce soir"},
+          {"id": "c", "texte": "Demain"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Tout de suite"
+          }
+        }
+      },
+      {
+        "enonce": "Où faut-il le garer ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Près des vélos", "correct": true},
+          {"id": "b", "texte": "Devant l’entrée"},
+          {"id": "c", "texte": "Au parking souterrain"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Près des vélos"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-radio-14-3-co-3",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · La grève dans le métro",
+    "scenario": "transports",
+    "scene": "La grève dans le métro",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/transports/moyen-a2__radio-14.3.mp3",
+      "transcription": "Bonjour à tous.\nOn nous annonce ce matin un problème de circulation dans le métro parisien.\nLe personnel organise une grève aujourd’hui et demain.\nSeuls 2 trains sur 4 sont annoncés sur l’ensemble des lignes.\nBon courage !"
+    },
+    "questions": [
+      {
+        "enonce": "Où y a-t-il un problème de circulation ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Dans le métro", "correct": true},
+          {"id": "b", "texte": "Sur l’autoroute"},
+          {"id": "c", "texte": "À l’aéroport"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Dans le métro"
+          }
+        }
+      },
+      {
+        "enonce": "Pourquoi ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Le personnel fait grève", "correct": true},
+          {"id": "b", "texte": "Il y a de la neige"},
+          {"id": "c", "texte": "Il y a des travaux"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Le personnel fait grève"
+          }
+        }
+      },
+      {
+        "enonce": "Combien de trains circulent ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "2 trains sur 4", "correct": true},
+          {"id": "b", "texte": "1 train sur 4"},
+          {"id": "c", "texte": "3 trains sur 4"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "2 trains sur 4"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-radio-15-1-co-3",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · La neige sur les routes",
+    "scenario": "transports",
+    "scene": "La neige sur les routes",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/transports/moyen-a2__radio-15.1.mp3",
+      "transcription": "Radio Orléans, il est 7 heures.\nAujourd’hui il fait -7°.\nAttention, beaucoup de neige sur les routes.\nNe prenez pas votre voiture aujourd’hui, les routes sont très dangereuses.\nDans le centre d’Orléans, aucun bus ne circulera."
+    },
+    "questions": [
+      {
+        "enonce": "Quelle température fait-il ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "-7°", "correct": true},
+          {"id": "b", "texte": "7°"},
+          {"id": "c", "texte": "-17°"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "-7°"
+          }
+        }
+      },
+      {
+        "enonce": "Que conseille la radio ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Ne pas prendre sa voiture", "correct": true},
+          {"id": "b", "texte": "Prendre le bus"},
+          {"id": "c", "texte": "Partir plus tôt"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Ne pas prendre sa voiture"
+          }
+        }
+      },
+      {
+        "enonce": "Que se passe-t-il dans le centre-ville ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Aucun bus ne circule", "correct": true},
+          {"id": "b", "texte": "Les écoles sont fermées"},
+          {"id": "c", "texte": "Les magasins sont fermés"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Aucun bus ne circule"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-radio-17-2-co-3",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · La grève des trains",
+    "scenario": "transports",
+    "scene": "La grève des trains",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/transports/moyen-a2__radio-17.2.mp3",
+      "transcription": "Radio France, il est 8h.\nLa grève des transports continue dans toute la France.\nAu niveau national, 1 train sur 5 circulera.\nPour connaître le programme des trains, consultez le site internet de la SNCF, rubrique “grève nationale”."
+    },
+    "questions": [
+      {
+        "enonce": "Combien de trains circuleront ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "1 train sur 5", "correct": true},
+          {"id": "b", "texte": "1 train sur 2"},
+          {"id": "c", "texte": "3 trains sur 5"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "1 train sur 5"
+          }
+        }
+      },
+      {
+        "enonce": "Où trouver le programme des trains ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Sur le site Internet de la SNCF", "correct": true},
+          {"id": "b", "texte": "À la radio"},
+          {"id": "c", "texte": "Dans le journal"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Sur le site Internet de la SNCF"
+          }
+        }
+      },
+      {
+        "enonce": "Quelle heure est-il ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "8 h", "correct": true},
+          {"id": "b", "texte": "7 h"},
+          {"id": "c", "texte": "9 h"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "8 h"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-radio-18-3-co-3",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Le festival de gastronomie",
+    "scenario": "loisirs",
+    "scene": "Le festival de gastronomie",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/transports/moyen-a2__radio-18.3.mp3",
+      "transcription": "Ne manquez pas ce week-end le plus grand festival de gastronomie au monde qui aura lieu à Paris du 20 au 25 juillet.\nVous pouvez dès à présent réserver vos billets en ligne sur www.festivalculinaire.fr."
+    },
+    "questions": [
+      {
+        "enonce": "De quel festival parle-t-on ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "D’un festival de gastronomie", "correct": true},
+          {"id": "b", "texte": "D’un festival de musique"},
+          {"id": "c", "texte": "D’un festival de cinéma"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "D’un festival de gastronomie"
+          }
+        }
+      },
+      {
+        "enonce": "Quand a lieu le festival ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Du 20 au 25 juillet", "correct": true},
+          {"id": "b", "texte": "Du 2 au 5 juillet"},
+          {"id": "c", "texte": "Du 20 au 25 juin"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Du 20 au 25 juillet"
+          }
+        }
+      },
+      {
+        "enonce": "Comment réserver ses billets ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "En ligne", "correct": true},
+          {"id": "b", "texte": "Par téléphone"},
+          {"id": "c", "texte": "Sur place"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "En ligne"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-radio-20-3-co-3",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Les problèmes sur l’autoroute",
+    "scenario": "transports",
+    "scene": "Les problèmes sur l’autoroute",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/transports/moyen-a2__radio-20.3.mp3",
+      "transcription": "RadioTraffic, il est 7h45.\nAttention chers auditeurs, on nous signale un problème sur l’autoroute A10 en direction d’Orléans à cause d’un mouvement social des transporteurs routiers.\nPour ne pas attendre, prenez la route nationale 19.\nBon courage !"
+    },
+    "questions": [
+      {
+        "enonce": "Sur quelle route y a-t-il un problème ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "L’autoroute A10", "correct": true},
+          {"id": "b", "texte": "L’autoroute A1"},
+          {"id": "c", "texte": "La route nationale 19"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "L’autoroute A10"
+          }
+        }
+      },
+      {
+        "enonce": "Pourquoi ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "À cause d’un mouvement social des transporteurs", "correct": true},
+          {"id": "b", "texte": "À cause d’un accident"},
+          {"id": "c", "texte": "À cause de la neige"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "À cause d’un mouvement social des transporteurs"
+          }
+        }
+      },
+      {
+        "enonce": "Quelle route est conseillée ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "La route nationale 19", "correct": true},
+          {"id": "b", "texte": "L’autoroute A10"},
+          {"id": "c", "texte": "La route nationale 10"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "La route nationale 19"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-annonce-4-6-co-2",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Les vacances de l’établissement",
+    "scenario": "ecole",
+    "scene": "Les vacances de l’établissement",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/travail/moyen-a2__annonce-4.6.mp3",
+      "transcription": "Chers étudiants, nous vous rappelons que l’établissement sera fermé du 23 décembre au 8 janvier inclus.\nIl réouvrira le 9 janvier à partir de 8h30.\nBonnes vacances à tous."
+    },
+    "questions": [
+      {
+        "enonce": "À qui s’adresse ce message ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Aux étudiants", "correct": true},
+          {"id": "b", "texte": "Aux parents"},
+          {"id": "c", "texte": "Aux professeurs"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Aux étudiants"
+          }
+        }
+      },
+      {
+        "enonce": "Quand l’établissement sera-t-il fermé ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Du 23 décembre au 8 janvier", "correct": true},
+          {"id": "b", "texte": "Du 20 décembre au 3 janvier"},
+          {"id": "c", "texte": "Du 24 décembre au 2 janvier"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Du 23 décembre au 8 janvier"
+          }
+        }
+      },
+      {
+        "enonce": "À quelle heure rouvrira-t-il le 9 janvier ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "À 8 h 30", "correct": true},
+          {"id": "b", "texte": "À 9 h"},
+          {"id": "c", "texte": "À 8 h"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "À 8 h 30"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ssx-a2-radio-16-1-co-3",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Les études en apprentissage",
+    "scenario": "travail",
+    "scene": "Les études en apprentissage",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/travail/moyen-a2__radio-16.1.mp3",
+      "transcription": "France Reportage s’intéresse aujourd’hui aux études des jeunes en apprentissage.\nCette formation permet d’étudier et de travailler.\nL’hôtellerie-restauration utilise beaucoup cette formule.\nDe plus en plus d’étudiants choisissent cette façon d’apprendre, car elle apporte des connaissances théoriques, mais aussi de l’expérience pratique."
+    },
+    "questions": [
+      {
+        "enonce": "De quoi parle ce reportage ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Des études en apprentissage", "correct": true},
+          {"id": "b", "texte": "Du chômage des jeunes"},
+          {"id": "c", "texte": "Des vacances des étudiants"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Des études en apprentissage"
+          }
+        }
+      },
+      {
+        "enonce": "Que permet cette formation ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "D’étudier et de travailler", "correct": true},
+          {"id": "b", "texte": "De voyager à l’étranger"},
+          {"id": "c", "texte": "De gagner beaucoup d’argent"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "D’étudier et de travailler"
+          }
+        }
+      },
+      {
+        "enonce": "Quel secteur utilise beaucoup cette formule ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "L’hôtellerie-restauration", "correct": true},
+          {"id": "b", "texte": "La santé"},
+          {"id": "c", "texte": "L’informatique"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "L’hôtellerie-restauration"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
   }
 ]
