@@ -5899,7 +5899,7 @@
     "theme": "Soutien scolaire · Dialogue 033",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/actualite/tu-as-regarde-infos-2.mp3",
+      "audio": "/lib/audio/tcf/co/actualite/04-actualité-la-crise-économique.mp3",
       "transcription": "- Tu as regardé les infos hier soir ?\nIls ont parlé de la crise économique…\n- Non, hier je suis partie tard du bureau.\nTu sais, je ne regarde pas beaucoup la télé, je lis la presse en ligne.\n- Tu es abonnée à un journal ?\n- Je reçois la newsletter de Ouest-France et je lis aussi les articles des journaux et des magazines gratuits.\n- Moi, je n'aime pas lire, je préfère regarder le journal télévisé.\n- Tu regardes le JT sur quelle chaîne ?\n- Sur Arte à 19 h 45.\nJe m'intéresse à l'actualité en France bien sûr mais aussi en Europe !\nHier, je suis rentré tard et j'ai regardé le journal de 20 heures sur France 2.\n- Tu écoutes la radio aussi ?\n- Oui !\nCe matin j'ai écouté l'interview du ministre de l'Économie au journal de 8 h sur France Inter."
     },
     "questions": [
@@ -6008,7 +6008,7 @@
     ],
     "consigne_supplementaire": null,
     "scenario": "actualite",
-    "scene": "Tu as regardé infos"
+    "scene": "La crise économique"
   },
   {
     "id": "tcf-ss-a2-s4-co-1",
@@ -6137,7 +6137,7 @@
     "theme": "Soutien scolaire · Dialogue 037",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/actualite/ouf-c-est-bon-ma-2.mp3",
+      "audio": "/lib/audio/tcf/co/achats/01-achats-de-magasines.mp3",
       "transcription": "- Tiens, regarde…\nj'ai acheté 3 magazines pour lire à la plage : l'Express pour l'actualité économique et politique, Elle pour la mode et Télérama pour l'actualité culturelle.\n- Et tu n'as pas pris l'Équipe pour le sport ?\n- Zut, j'ai oublié !"
     },
     "questions": [
@@ -6245,8 +6245,8 @@
       }
     ],
     "consigne_supplementaire": null,
-    "scenario": "actualite",
-    "scene": "Ouf c'est bon ma"
+    "scenario": "magasins",
+    "scene": "L'achat de magazines"
   },
   {
     "id": "tcf-ss-a2-s4-co-3",
@@ -6256,7 +6256,7 @@
     "theme": "Soutien scolaire · Dialogue 040",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/actualite/voici-resultat-notre-etude.mp3",
+      "audio": "/lib/audio/tcf/co/actualite/05-actualité-les-français-et-internet.mp3",
       "transcription": "Voici le résultat de notre étude « Les Français et l'information sur Internet ».\nLes auteurs ont analysé les données de connexion de 2 372 personnes de plus de 18 ans sur 30 jours consécutifs.\nLes Français passent en moyenne 3 % de leur temps sur internet, sur des sources d'information en ligne, soit 4,9 minutes de connexion par jour.\nLes sources d'information les plus consultées sont la presse quotidienne régionale, l'actualité sportive et la presse quotidienne nationale."
     },
     "questions": [
@@ -6365,7 +6365,7 @@
     ],
     "consigne_supplementaire": null,
     "scenario": "actualite",
-    "scene": "Voici résultat notre étude"
+    "scene": "Les Français et Internet"
   },
   {
     "id": "tcf-ss-a2-s4-co-4",
@@ -31435,7 +31435,7 @@
     "scene": "La météo de la semaine",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/radio/02-radio-météo-de-la-semaine.mp3",
+      "audio": "/lib/audio/tcf/co/radio/05-radio-météo-de-la-semaine.mp3",
       "transcription": "Bienvenue sur Radio France.\nNous commençons avec la météo.\nAujourd’hui un temps pluvieux sur l’ensemble de la France, sauf au sud où il y aura quelques rayons de soleil.\nIl fera très beau la semaine prochaine, avec des températures d’été."
     },
     "questions": [
@@ -31503,7 +31503,7 @@
     "scene": "La grève des hôtesses de l’air",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/actualite/moyen-a2__radio-18.2.mp3",
+      "audio": "/lib/audio/tcf/co/actualite/02-actualité-la-grève-hôtesse-de-l-air.mp3",
       "transcription": "Bonjour aux infos aujourd’hui : une nouvelle semaine de grève à prévoir chez les hôtesses de l’air.\nElles réclament toujours auprès du gouvernement un meilleur salaire et des jours de congés supplémentaires.\nLe ministère des transports n’a pas encore répondu."
     },
     "questions": [
@@ -35616,6 +35616,660 @@
           "lignes": {
             "nb_lignes": 1,
             "reponse_modele": "Sur le multimédia"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-ssx-a2-radio-salon-du-tatouage-co-3",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Le salon du tatouage",
+    "scenario": "radio",
+    "scene": "Le salon du tatouage",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/radio/02-radio-salon-du-tatouage.mp3",
+      "transcription": "Cette semaine à Paris, il y a le salon du tatouage.\nOn attend des milliers de visiteurs.\nLe tatouage est très à la mode : un Français sur cinq est tatoué.\nCe sont surtout des jeunes de 18 à 35 ans, et plus de femmes que d'hommes."
+    },
+    "questions": [
+      {
+        "enonce": "Quel salon a lieu à Paris cette semaine ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Le salon du tatouage", "correct": true},
+          {"id": "b", "texte": "Le salon de la coiffure"},
+          {"id": "c", "texte": "Le salon du livre"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Le salon du tatouage"
+          }
+        }
+      },
+      {
+        "enonce": "Combien de Français sont tatoués ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Un sur cinq", "correct": true},
+          {"id": "b", "texte": "Un sur deux"},
+          {"id": "c", "texte": "Un sur dix"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Un sur cinq"
+          }
+        }
+      },
+      {
+        "enonce": "Qui se fait surtout tatouer ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Des jeunes de 18 à 35 ans", "correct": true},
+          {"id": "b", "texte": "Des enfants"},
+          {"id": "c", "texte": "Des personnes âgées"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Des jeunes de 18 à 35 ans"
+          }
+        }
+      },
+      {
+        "enonce": "Y a-t-il plus d'hommes ou de femmes tatoués ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Plus de femmes", "correct": true},
+          {"id": "b", "texte": "Plus d'hommes"},
+          {"id": "c", "texte": "Autant d'hommes que de femmes"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Plus de femmes"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-ssx-a2-radio-application-lab-co-3",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · L'application Lab",
+    "scenario": "radio",
+    "scene": "L'application Lab",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/radio/03-radio-application-lab.mp3",
+      "transcription": "Lab, c'est une application utilisée par plus de 700 millions d'adolescents de 13 à 24 ans sur toute la planète.\nAvec Lab, les jeunes peuvent partager des clips vidéo ou enregistrer leurs vidéos sur des musiques connues."
+    },
+    "questions": [
+      {
+        "enonce": "Qu'est-ce que Lab ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Une application", "correct": true},
+          {"id": "b", "texte": "Une chaîne de télévision"},
+          {"id": "c", "texte": "Un magasin de musique"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Une application"
+          }
+        }
+      },
+      {
+        "enonce": "Qui utilise Lab ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Des jeunes de 13 à 24 ans", "correct": true},
+          {"id": "b", "texte": "Des enfants de moins de 10 ans"},
+          {"id": "c", "texte": "Des adultes de plus de 40 ans"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Des jeunes de 13 à 24 ans"
+          }
+        }
+      },
+      {
+        "enonce": "Combien de personnes l'utilisent ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Plus de 700 millions", "correct": true},
+          {"id": "b", "texte": "7 millions"},
+          {"id": "c", "texte": "70 000"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Plus de 700 millions"
+          }
+        }
+      },
+      {
+        "enonce": "Que peut-on faire avec Lab ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Partager des clips vidéo", "correct": true},
+          {"id": "b", "texte": "Acheter des billets de concert"},
+          {"id": "c", "texte": "Apprendre la musique"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Partager des clips vidéo"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-ssx-a2-radio-fete-de-la-ville-co-3",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · La fête de la ville",
+    "scenario": "radio",
+    "scene": "La fête de la ville",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/radio/04-radio-fête-de-la-ville.mp3",
+      "transcription": "Samedi, c'est la fête de la ville.\nCette année encore, venez écouter des concerts dans les rues.\nPop, électro, classique : il y en a pour tous les goûts.\nUne discothèque est même installée sur la place centrale."
+    },
+    "questions": [
+      {
+        "enonce": "Quel événement est annoncé ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "La fête de la ville", "correct": true},
+          {"id": "b", "texte": "Un marché de Noël"},
+          {"id": "c", "texte": "Une course à pied"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "La fête de la ville"
+          }
+        }
+      },
+      {
+        "enonce": "Où peut-on écouter des concerts ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Dans les rues", "correct": true},
+          {"id": "b", "texte": "Au stade"},
+          {"id": "c", "texte": "Dans une salle de concert"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Dans les rues"
+          }
+        }
+      },
+      {
+        "enonce": "Quels styles de musique y a-t-il ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Pop, électro et classique", "correct": true},
+          {"id": "b", "texte": "Jazz et rock"},
+          {"id": "c", "texte": "Rap et reggae"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Pop, électro et classique"
+          }
+        }
+      },
+      {
+        "enonce": "Qu'est-ce qui est installé sur la place centrale ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Une discothèque", "correct": true},
+          {"id": "b", "texte": "Une grande roue"},
+          {"id": "c", "texte": "Un marché"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Une discothèque"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-ssx-a2-famille-tarte-aux-pommes-co-4",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · La tarte aux pommes",
+    "scenario": "maison",
+    "scene": "La tarte aux pommes",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/famille/01-famille-la-tarte-est-bonne.mp3",
+      "transcription": "- Mmm !\nElle est délicieuse, ta tarte aux pommes, maman !\n- Oui, c'est vrai !\nMoi aussi, je l'adore !\nC'est mon dessert préféré !\n- Ça fait plaisir, les enfants.\nJe vais refaire d'autres tartes si vous les aimez."
+    },
+    "questions": [
+      {
+        "enonce": "De quel dessert parlent-ils ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "D'une tarte aux pommes", "correct": true},
+          {"id": "b", "texte": "D'un gâteau au chocolat"},
+          {"id": "c", "texte": "D'une glace"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "D'une tarte aux pommes"
+          }
+        }
+      },
+      {
+        "enonce": "Qui a fait le dessert ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "La maman", "correct": true},
+          {"id": "b", "texte": "Le papa"},
+          {"id": "c", "texte": "Les enfants"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "La maman"
+          }
+        }
+      },
+      {
+        "enonce": "Que va faire la maman ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Refaire d'autres tartes", "correct": true},
+          {"id": "b", "texte": "Acheter un gâteau"},
+          {"id": "c", "texte": "Donner la recette"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Refaire d'autres tartes"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-ssx-a2-famille-regarder-le-foot-co-4",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Regarder le foot avec papa",
+    "scenario": "maison",
+    "scene": "Regarder le foot avec papa",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/famille/02-famille-tu-veux-regarder-le-foot.mp3",
+      "transcription": "- Papa, tu veux regarder le foot avec moi ?\nLe match commence.\n- J'aimerais beaucoup, mais je ne peux pas.\nJe dois finir un travail.\n- Tu me diras le résultat ?\n- Oui, d'accord !"
+    },
+    "questions": [
+      {
+        "enonce": "Que propose l'enfant à son papa ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Regarder le foot", "correct": true},
+          {"id": "b", "texte": "Jouer au foot"},
+          {"id": "c", "texte": "Aller au stade"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Regarder le foot"
+          }
+        }
+      },
+      {
+        "enonce": "Pourquoi le papa ne peut-il pas ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Il doit finir un travail", "correct": true},
+          {"id": "b", "texte": "Il est fatigué"},
+          {"id": "c", "texte": "Il doit sortir"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Il doit finir un travail"
+          }
+        }
+      },
+      {
+        "enonce": "Que demande le papa ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Le résultat du match", "correct": true},
+          {"id": "b", "texte": "L'heure du match"},
+          {"id": "c", "texte": "Le nom des équipes"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Le résultat du match"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-sc-12-acheter-le-journal-co-4",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Scènes courtes · Où acheter le journal",
+    "scenario": "vie-quotidienne",
+    "scene": "Où acheter le journal",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/scènes courtes/12-quotidien-où-acheter-le-journal.mp3",
+      "transcription": "- Bonjour, Monsieur.\nLe kiosque à journaux est fermé.\nVous savez où je peux acheter le journal ?\n- Oui, il y a une maison de la presse rue Blanche."
+    },
+    "questions": [
+      {
+        "enonce": "Qu'est-ce qui est fermé ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Le kiosque à journaux", "correct": true},
+          {"id": "b", "texte": "La boulangerie"},
+          {"id": "c", "texte": "La poste"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Le kiosque à journaux"
+          }
+        }
+      },
+      {
+        "enonce": "Que veut acheter la personne ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Le journal", "correct": true},
+          {"id": "b", "texte": "Un timbre"},
+          {"id": "c", "texte": "Du pain"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Le journal"
+          }
+        }
+      },
+      {
+        "enonce": "Où peut-elle aller ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "À la maison de la presse, rue Blanche", "correct": true},
+          {"id": "b", "texte": "Au supermarché"},
+          {"id": "c", "texte": "À la gare"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "À la maison de la presse, rue Blanche"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-sc-13-infos-crise-economique-co-4",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Scènes courtes · Les infos sur la crise",
+    "scenario": "maison",
+    "scene": "Les infos sur la crise",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/scènes courtes/13-maison-conversation-crise-économique.mp3",
+      "transcription": "- Tu as regardé les infos hier soir ?\nIls ont parlé de la crise économique.\n- Non, mais je suis abonné à un journal en ligne et ils ont aussi parlé de la crise."
+    },
+    "questions": [
+      {
+        "enonce": "De quoi ont parlé les infos ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "De la crise économique", "correct": true},
+          {"id": "b", "texte": "De la météo"},
+          {"id": "c", "texte": "Du sport"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "De la crise économique"
+          }
+        }
+      },
+      {
+        "enonce": "La deuxième personne a-t-elle regardé les infos ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Non", "correct": true},
+          {"id": "b", "texte": "Oui, hier soir"},
+          {"id": "c", "texte": "Oui, ce matin"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Non"
+          }
+        }
+      },
+      {
+        "enonce": "Comment s'informe-t-elle ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Avec un journal en ligne", "correct": true},
+          {"id": "b", "texte": "À la radio"},
+          {"id": "c", "texte": "Avec un magazine papier"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Avec un journal en ligne"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-sc-14-musees-gratuits-co-4",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Scènes courtes · Les musées gratuits",
+    "scenario": "maison",
+    "scene": "Les musées gratuits",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/scènes courtes/14-maison-conversation-musée-gratuit.mp3",
+      "transcription": "- Tu as écouté le flash info ce matin ?\n- Oui, c'est exceptionnel, ça !\nTous les musées de la ville vont être gratuits jusqu'à la fin de l'année."
+    },
+    "questions": [
+      {
+        "enonce": "Quand le flash info est-il passé ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Ce matin", "correct": true},
+          {"id": "b", "texte": "Hier soir"},
+          {"id": "c", "texte": "À midi"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Ce matin"
+          }
+        }
+      },
+      {
+        "enonce": "Quelle est la nouvelle ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Les musées de la ville seront gratuits", "correct": true},
+          {"id": "b", "texte": "Les musées vont fermer"},
+          {"id": "c", "texte": "Un nouveau musée ouvre"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Les musées de la ville seront gratuits"
+          }
+        }
+      },
+      {
+        "enonce": "Jusqu'à quand ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Jusqu'à la fin de l'année", "correct": true},
+          {"id": "b", "texte": "Jusqu'à la fin du mois"},
+          {"id": "c", "texte": "Pendant l'été"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Jusqu'à la fin de l'année"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-sc-15-accident-camion-co-4",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Scènes courtes · Un accident sur la route",
+    "scenario": "maison",
+    "scene": "Un accident sur la route",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/scènes courtes/15-maison-conversation-accident-camion.mp3",
+      "transcription": "- Au journal de 20 heures, ils ont parlé du terrible accident sur la route nationale.\n- Qu'est-ce qui s'est passé ?\n- Un gros camion de déménagement est rentré dans des voitures, et il y a un seul blessé.\n- C'est incroyable, ça !\nTu crois que c'est vrai ?"
+    },
+    "questions": [
+      {
+        "enonce": "Où a eu lieu l'accident ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Sur la route nationale", "correct": true},
+          {"id": "b", "texte": "Sur l'autoroute"},
+          {"id": "c", "texte": "En centre-ville"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Sur la route nationale"
+          }
+        }
+      },
+      {
+        "enonce": "Quel véhicule a causé l'accident ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Un camion de déménagement", "correct": true},
+          {"id": "b", "texte": "Un bus"},
+          {"id": "c", "texte": "Une moto"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Un camion de déménagement"
+          }
+        }
+      },
+      {
+        "enonce": "Combien y a-t-il de blessés ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Un seul", "correct": true},
+          {"id": "b", "texte": "Aucun"},
+          {"id": "c", "texte": "Plusieurs"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Un seul"
           }
         }
       }
