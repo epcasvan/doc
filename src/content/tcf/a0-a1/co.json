@@ -5887,7 +5887,7 @@
     "theme": "Soutien scolaire · Objets 3",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/ecole/pour-l-inscription-l-universite-faut.mp3",
+      "audio": "/lib/audio/tcf/co/ecole/03-école-inscription-à-l-université.mp3",
       "transcription": "Pour l'inscription à l'université, il faut ramener vos relevés de notes, une carte d'identité et un chèque.\nVous allez recevoir un message de confirmation quand votre dossier sera validé.\nN'oubliez pas de ramener une photo pour la fabrication de votre carte d'étudiant.\nElle est à récupérer au guichet 320."
     },
     "questions": [
@@ -5962,7 +5962,7 @@
     ],
     "consigne_supplementaire": null,
     "scenario": "ecole",
-    "scene": "Pour l'inscription l'université faut"
+    "scene": "L'inscription à l'université"
   },
   {
     "id": "tcf-ss-a1-s5-co-4",
@@ -25120,6 +25120,1192 @@
           "lignes": {
             "nb_lignes": 1,
             "reponse_modele": "Dans l'amphi A12"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-ssx-a1-ecole-livre-de-maths-co-4",
+    "niveau": "A0-A1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Le livre de maths oublié",
+    "scenario": "ecole",
+    "scene": "Le livre de maths oublié",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/ecole/04-école-oublier-le-livre-de-math.mp3",
+      "transcription": "- On va faire des exercices de maths.\nPrenez votre livre page 54.\n- Monsieur, je n'ai pas mon livre.\n- Regarde sur le livre de ton voisin."
+    },
+    "questions": [
+      {
+        "enonce": "Quel cours ont les élèves ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Maths", "correct": true},
+          {"id": "b", "texte": "Anglais"},
+          {"id": "c", "texte": "Histoire"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Maths"
+          }
+        }
+      },
+      {
+        "enonce": "À quelle page faut-il ouvrir le livre ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Page 54", "correct": true},
+          {"id": "b", "texte": "Page 45"},
+          {"id": "c", "texte": "Page 64"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Page 54"
+          }
+        }
+      },
+      {
+        "enonce": "Que doit faire l'élève qui n'a pas son livre ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Regarder le livre de son voisin", "correct": true},
+          {"id": "b", "texte": "Aller à la bibliothèque"},
+          {"id": "c", "texte": "Sortir de la classe"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Regarder le livre de son voisin"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-ssx-a1-ecole-cahier-d-anglais-co-4",
+    "niveau": "A0-A1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Le cahier d'anglais",
+    "scenario": "ecole",
+    "scene": "Le cahier d'anglais",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/ecole/05-école-redonner-le-livre-d-anglais.mp3",
+      "transcription": "- Tiens, je te redonne ton cahier d'anglais.\nMerci beaucoup !\n- De rien.\nTu comprends mieux le cours maintenant ?\n- Oui, merci."
+    },
+    "questions": [
+      {
+        "enonce": "Qu'est-ce que l'élève rend ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Un cahier d'anglais", "correct": true},
+          {"id": "b", "texte": "Un livre de maths"},
+          {"id": "c", "texte": "Un stylo"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Un cahier d'anglais"
+          }
+        }
+      },
+      {
+        "enonce": "Comprend-il mieux le cours maintenant ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Oui", "correct": true},
+          {"id": "b", "texte": "Non"},
+          {"id": "c", "texte": "Pas du tout"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Oui"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-ssx-a1-ecole-menu-de-la-cantine-co-4",
+    "niveau": "A0-A1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Le menu de la cantine",
+    "scenario": "ecole",
+    "scene": "Le menu de la cantine",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/ecole/06-école-menu-de-la-cantine.mp3",
+      "transcription": "- Qu'est-ce qu'il y a ce midi à la cantine ?\n- Des frites, c'est super !\n- Oui, et de la glace en dessert, génial !"
+    },
+    "questions": [
+      {
+        "enonce": "Qu'est-ce qu'il y a à manger ce midi ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Des frites", "correct": true},
+          {"id": "b", "texte": "Des pâtes"},
+          {"id": "c", "texte": "Du poisson"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Des frites"
+          }
+        }
+      },
+      {
+        "enonce": "Quel est le dessert ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "De la glace", "correct": true},
+          {"id": "b", "texte": "Un gâteau"},
+          {"id": "c", "texte": "Un fruit"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "De la glace"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-ssx-a1-ecole-bureau-du-directeur-co-4",
+    "niveau": "A0-A1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Le bureau du directeur",
+    "scenario": "ecole",
+    "scene": "Le bureau du directeur",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/ecole/07-école-où-est-le-bureau-du-directeur.mp3",
+      "transcription": "- Madame, il est où, le bureau du directeur, s'il vous plaît ?\n- Là-bas, regarde, à côté de la bibliothèque."
+    },
+    "questions": [
+      {
+        "enonce": "Que cherche l'élève ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Le bureau du directeur", "correct": true},
+          {"id": "b", "texte": "La bibliothèque"},
+          {"id": "c", "texte": "La cantine"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Le bureau du directeur"
+          }
+        }
+      },
+      {
+        "enonce": "Où est-il ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "À côté de la bibliothèque", "correct": true},
+          {"id": "b", "texte": "Au premier étage"},
+          {"id": "c", "texte": "Près de la cour"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "À côté de la bibliothèque"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-ssx-a1-ecole-salle-informatique-co-4",
+    "niveau": "A0-A1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · La salle informatique",
+    "scenario": "ecole",
+    "scene": "La salle informatique",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/ecole/08-école-aller-en-salle-d-informatique.mp3",
+      "transcription": "- On va en salle informatique ce matin.\n- C'est où ?\n- Au premier étage.\nSuivez-moi !"
+    },
+    "questions": [
+      {
+        "enonce": "Où vont les élèves ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "En salle informatique", "correct": true},
+          {"id": "b", "texte": "Au gymnase"},
+          {"id": "c", "texte": "À la bibliothèque"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "En salle informatique"
+          }
+        }
+      },
+      {
+        "enonce": "Quand y vont-ils ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Ce matin", "correct": true},
+          {"id": "b", "texte": "Cet après-midi"},
+          {"id": "c", "texte": "Demain"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Ce matin"
+          }
+        }
+      },
+      {
+        "enonce": "Où est la salle ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Au premier étage", "correct": true},
+          {"id": "b", "texte": "Au rez-de-chaussée"},
+          {"id": "c", "texte": "Au deuxième étage"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Au premier étage"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-ssx-a1-ecole-bus-pour-la-piscine-co-4",
+    "niveau": "A0-A1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Le bus pour la piscine",
+    "scenario": "ecole",
+    "scene": "Le bus pour la piscine",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/ecole/09-école-bus-attend-les-élèves.mp3",
+      "transcription": "- Dépêchez-vous, le bus nous attend, on va être en retard à la piscine !\n- Oui, Monsieur, on arrive."
+    },
+    "questions": [
+      {
+        "enonce": "Qu'est-ce qui attend les élèves ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Le bus", "correct": true},
+          {"id": "b", "texte": "Le train"},
+          {"id": "c", "texte": "Les parents"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Le bus"
+          }
+        }
+      },
+      {
+        "enonce": "Où vont les élèves ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "À la piscine", "correct": true},
+          {"id": "b", "texte": "Au musée"},
+          {"id": "c", "texte": "Au stade"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "À la piscine"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-ssx-a1-ecole-nouveau-telephone-co-4",
+    "niveau": "A0-A1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Le nouveau téléphone",
+    "scenario": "ecole",
+    "scene": "Le nouveau téléphone",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/ecole/10-école-nouveau-téléphone.mp3",
+      "transcription": "- Ouah, il est super, ton téléphone !\nIl est nouveau ?\n- Oui, c'est mon cadeau d'anniversaire.\n- Tu as de la chance."
+    },
+    "questions": [
+      {
+        "enonce": "De quoi parlent-ils ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "D'un téléphone", "correct": true},
+          {"id": "b", "texte": "D'un ordinateur"},
+          {"id": "c", "texte": "D'un vélo"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "D'un téléphone"
+          }
+        }
+      },
+      {
+        "enonce": "Pourquoi l'élève a-t-il ce téléphone ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "C'est un cadeau d'anniversaire", "correct": true},
+          {"id": "b", "texte": "Il l'a acheté"},
+          {"id": "c", "texte": "C'est le téléphone de son frère"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "C'est un cadeau d'anniversaire"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-ssx-a1-ecole-mal-aux-pieds-co-4",
+    "niveau": "A0-A1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Mal aux pieds",
+    "scenario": "ecole",
+    "scene": "Mal aux pieds",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/ecole/11-école-mal-aux-pieds.mp3",
+      "transcription": "- Allez, vous faites trois fois le tour du stade en courant.\n- Madame, je ne peux pas courir, j'ai mal aux pieds.\n- D'accord, assieds-toi là."
+    },
+    "questions": [
+      {
+        "enonce": "Combien de tours de stade faut-il faire ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Trois", "correct": true},
+          {"id": "b", "texte": "Deux"},
+          {"id": "c", "texte": "Cinq"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Trois"
+          }
+        }
+      },
+      {
+        "enonce": "Pourquoi l'élève ne peut-il pas courir ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Il a mal aux pieds", "correct": true},
+          {"id": "b", "texte": "Il a mal à la tête"},
+          {"id": "c", "texte": "Il est fatigué"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Il a mal aux pieds"
+          }
+        }
+      },
+      {
+        "enonce": "Que lui dit la professeure ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "De s'asseoir", "correct": true},
+          {"id": "b", "texte": "De marcher"},
+          {"id": "c", "texte": "De rentrer chez lui"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "De s'asseoir"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-ssx-a1-ecole-preter-le-dictionnaire-co-4",
+    "niveau": "A0-A1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Prêter le dictionnaire",
+    "scenario": "ecole",
+    "scene": "Prêter le dictionnaire",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/ecole/12-école-prêter-le-dictionnaire.mp3",
+      "transcription": "- Tu peux me prêter ton dictionnaire ?\n- Oui, tiens, prends-le.\n- Merci."
+    },
+    "questions": [
+      {
+        "enonce": "Que demande l'élève ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Un dictionnaire", "correct": true},
+          {"id": "b", "texte": "Un stylo"},
+          {"id": "c", "texte": "Une gomme"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Un dictionnaire"
+          }
+        }
+      },
+      {
+        "enonce": "Quelle est la réponse ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Oui, tiens, prends-le", "correct": true},
+          {"id": "b", "texte": "Non, désolé"},
+          {"id": "c", "texte": "Plus tard"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Oui, tiens, prends-le"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-ssx-a1-ecole-horaires-des-cours-co-4",
+    "niveau": "A0-A1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Les horaires des cours",
+    "scenario": "ecole",
+    "scene": "Les horaires des cours",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/ecole/13-école-horaire-des-cours.mp3",
+      "transcription": "- Tu commences à quelle heure demain ?\n- À 10 h.\nLe prof de maths est absent.\n- Moi, je commence à 8 h.\nJ'ai cours d'histoire."
+    },
+    "questions": [
+      {
+        "enonce": "À quelle heure commence l'élève qui répond en premier ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "À 10 h", "correct": true},
+          {"id": "b", "texte": "À 8 h"},
+          {"id": "c", "texte": "À 9 h"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "À 10 h"
+          }
+        }
+      },
+      {
+        "enonce": "Pourquoi commence-t-il à cette heure-là ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Le prof de maths est absent", "correct": true},
+          {"id": "b", "texte": "Il a rendez-vous chez le médecin"},
+          {"id": "c", "texte": "Il n'y a pas de bus"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Le prof de maths est absent"
+          }
+        }
+      },
+      {
+        "enonce": "Quel cours a l'autre élève à 8 h ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Histoire", "correct": true},
+          {"id": "b", "texte": "Maths"},
+          {"id": "c", "texte": "Anglais"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Histoire"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-ssx-a1-ecole-ne-pas-jouer-ici-co-4",
+    "niveau": "A0-A1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Pas de ballon ici",
+    "scenario": "ecole",
+    "scene": "Pas de ballon ici",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/ecole/14-école-ne-pas-jouer-ici.mp3",
+      "transcription": "- S'il vous plaît, vous ne jouez pas ici.\nPrenez votre ballon et allez dans la cour.\n- Oui, désolé, Monsieur."
+    },
+    "questions": [
+      {
+        "enonce": "Avec quoi jouent les élèves ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Avec un ballon", "correct": true},
+          {"id": "b", "texte": "Avec des cartes"},
+          {"id": "c", "texte": "Avec une corde"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Avec un ballon"
+          }
+        }
+      },
+      {
+        "enonce": "Où doivent-ils aller ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Dans la cour", "correct": true},
+          {"id": "b", "texte": "En classe"},
+          {"id": "c", "texte": "Au gymnase"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Dans la cour"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-ssx-a1-ecole-cours-de-dessin-co-4",
+    "niveau": "A0-A1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Le cours de dessin",
+    "scenario": "ecole",
+    "scene": "Le cours de dessin",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/ecole/15-école-aller-au-cours-de-dessin.mp3",
+      "transcription": "- Tu vas où ?\n- En cours de dessin.\n- Allez, dépêche-toi, tu es en retard !"
+    },
+    "questions": [
+      {
+        "enonce": "Où va l'élève ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "En cours de dessin", "correct": true},
+          {"id": "b", "texte": "En cours de musique"},
+          {"id": "c", "texte": "À la cantine"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "En cours de dessin"
+          }
+        }
+      },
+      {
+        "enonce": "Est-il à l'heure ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Non, il est en retard", "correct": true},
+          {"id": "b", "texte": "Oui"},
+          {"id": "c", "texte": "Il est en avance"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Non, il est en retard"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-ssx-a1-ecole-rentrer-de-l-ecole-co-4",
+    "niveau": "A0-A1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Rentrer de l'école",
+    "scenario": "ecole",
+    "scene": "Rentrer de l'école",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/ecole/16-école-comment-renter-à-la-maison.mp3",
+      "transcription": "- Tu rentres comment de l'école ?\n- En bus, et toi ?\n- Moi, à pied.\nJ'habite juste à côté."
+    },
+    "questions": [
+      {
+        "enonce": "Comment rentrent-ils de l'école ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "L'un en bus, l'autre à pied", "correct": true},
+          {"id": "b", "texte": "Les deux en bus"},
+          {"id": "c", "texte": "L'un à vélo, l'autre en voiture"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "L'un en bus, l'autre à pied"
+          }
+        }
+      },
+      {
+        "enonce": "Pourquoi l'un d'eux rentre-t-il à pied ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Il habite juste à côté", "correct": true},
+          {"id": "b", "texte": "Il aime marcher"},
+          {"id": "c", "texte": "Il n'y a pas de bus"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Il habite juste à côté"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-ssx-a1-ecole-dictionnaires-de-francais-co-4",
+    "niveau": "A0-A1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Les dictionnaires de français",
+    "scenario": "ecole",
+    "scene": "Les dictionnaires de français",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/ecole/17-école-avez-vous-des-dictionnaires.mp3",
+      "transcription": "- Excusez-moi, est-ce que vous avez des dictionnaires de français ici ?\n- Oui, ils sont à côté des livres de sciences, en haut.\n- Ah oui, je vois.\nMerci beaucoup."
+    },
+    "questions": [
+      {
+        "enonce": "Que cherche la personne ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Des dictionnaires de français", "correct": true},
+          {"id": "b", "texte": "Des livres de sciences"},
+          {"id": "c", "texte": "Des romans"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Des dictionnaires de français"
+          }
+        }
+      },
+      {
+        "enonce": "Où sont-ils ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "À côté des livres de sciences, en haut", "correct": true},
+          {"id": "b", "texte": "À l'entrée"},
+          {"id": "c", "texte": "Au sous-sol"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "À côté des livres de sciences, en haut"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-ssx-a1-ecole-nouvelle-professeure-co-4",
+    "niveau": "A0-A1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · La nouvelle professeure",
+    "scenario": "ecole",
+    "scene": "La nouvelle professeure",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/ecole/18-école-nouvelle-professeure.mp3",
+      "transcription": "- Voici la salle des professeurs.\nJe vais vous présenter vos collègues.\n- Merci, et bonjour à tous.\n- Je vous présente Madame Ford, la nouvelle professeure de français du lycée."
+    },
+    "questions": [
+      {
+        "enonce": "Où sont-ils ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Dans la salle des professeurs", "correct": true},
+          {"id": "b", "texte": "Dans une classe"},
+          {"id": "c", "texte": "À la cantine"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Dans la salle des professeurs"
+          }
+        }
+      },
+      {
+        "enonce": "Qui est Madame Ford ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "La nouvelle professeure de français", "correct": true},
+          {"id": "b", "texte": "La directrice"},
+          {"id": "c", "texte": "Une élève"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "La nouvelle professeure de français"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-ssx-a1-ecole-cours-d-anglais-co-4",
+    "niveau": "A0-A1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Le cours d'anglais",
+    "scenario": "ecole",
+    "scene": "Le cours d'anglais",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/ecole/19-école-c-est-le-cours-d-anglais.mp3",
+      "transcription": "- Excusez-moi, je suis bien dans le cours d'anglais ?\n- Oui, c'est ça.\nJe suis Monsieur Klein, votre professeur.\nAsseyez-vous, le cours a commencé.\n- Merci.\nJe suis désolée pour mon retard."
+    },
+    "questions": [
+      {
+        "enonce": "Quel cours cherche l'élève ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Le cours d'anglais", "correct": true},
+          {"id": "b", "texte": "Le cours de français"},
+          {"id": "c", "texte": "Le cours de maths"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Le cours d'anglais"
+          }
+        }
+      },
+      {
+        "enonce": "Qui est Monsieur Klein ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Le professeur", "correct": true},
+          {"id": "b", "texte": "Le directeur"},
+          {"id": "c", "texte": "Un élève"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Le professeur"
+          }
+        }
+      },
+      {
+        "enonce": "Pourquoi l'élève s'excuse-t-elle ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Elle est en retard", "correct": true},
+          {"id": "b", "texte": "Elle a oublié son livre"},
+          {"id": "c", "texte": "Elle s'est trompée de salle"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Elle est en retard"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-ssx-a1-ecole-exercice-de-maths-co-4",
+    "niveau": "A0-A1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · L'exercice de maths difficile",
+    "scenario": "ecole",
+    "scene": "L'exercice de maths difficile",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/ecole/20-école-exercice-de-math-difficile.mp3",
+      "transcription": "- Moussa, tu comprends l'exercice de mathématiques ?\nIl est très difficile.\n- L'exercice 2 ?\nOui, c'est simple.\nJe vais t'expliquer.\n- Merci, c'est sympa.\nJe n'aime pas les maths."
+    },
+    "questions": [
+      {
+        "enonce": "Quel exercice est difficile ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "L'exercice 2 de maths", "correct": true},
+          {"id": "b", "texte": "L'exercice 2 d'anglais"},
+          {"id": "c", "texte": "L'exercice 5 de maths"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "L'exercice 2 de maths"
+          }
+        }
+      },
+      {
+        "enonce": "Que propose Moussa ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "D'expliquer l'exercice", "correct": true},
+          {"id": "b", "texte": "De faire l'exercice à sa place"},
+          {"id": "c", "texte": "De demander au professeur"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "D'expliquer l'exercice"
+          }
+        }
+      },
+      {
+        "enonce": "Que pense l'autre élève des maths ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Il n'aime pas les maths", "correct": true},
+          {"id": "b", "texte": "Il adore les maths"},
+          {"id": "c", "texte": "C'est sa matière préférée"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Il n'aime pas les maths"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-ssx-a1-ecole-stylo-vert-co-4",
+    "niveau": "A0-A1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Le stylo vert",
+    "scenario": "ecole",
+    "scene": "Le stylo vert",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/ecole/21-école-stylo-vert.mp3",
+      "transcription": "- Tiens, mon stylo vert.\n- Oh, merci.\nQu'est-ce que je dois écrire en vert ?\n- Tu écris la date en haut de la feuille."
+    },
+    "questions": [
+      {
+        "enonce": "Qu'est-ce que la personne prête ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Un stylo vert", "correct": true},
+          {"id": "b", "texte": "Un crayon noir"},
+          {"id": "c", "texte": "Une règle"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Un stylo vert"
+          }
+        }
+      },
+      {
+        "enonce": "Qu'est-ce qu'il faut écrire en vert ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "La date", "correct": true},
+          {"id": "b", "texte": "Le nom"},
+          {"id": "c", "texte": "Le titre"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "La date"
+          }
+        }
+      },
+      {
+        "enonce": "Où faut-il l'écrire ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "En haut de la feuille", "correct": true},
+          {"id": "b", "texte": "En bas de la feuille"},
+          {"id": "c", "texte": "Au dos de la feuille"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "En haut de la feuille"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-ssx-a1-ecole-viande-au-restaurant-u-co-4",
+    "niveau": "A0-A1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · La viande au restaurant universitaire",
+    "scenario": "ecole",
+    "scene": "La viande au restaurant universitaire",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/ecole/22-école-menu-viande-au-restaurant.mp3",
+      "transcription": "- Tous les jours, il y a de la viande au restaurant de l'université.\n- C'est vrai.\nTu n'aimes pas la viande ?\n- Non, je ne mange pas de viande.\nJe vais sortir pour manger dehors."
+    },
+    "questions": [
+      {
+        "enonce": "Qu'est-ce qu'il y a tous les jours au restaurant de l'université ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "De la viande", "correct": true},
+          {"id": "b", "texte": "Du poisson"},
+          {"id": "c", "texte": "Des pâtes"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "De la viande"
+          }
+        }
+      },
+      {
+        "enonce": "Pourquoi la personne va-t-elle manger dehors ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Elle ne mange pas de viande", "correct": true},
+          {"id": "b", "texte": "C'est moins cher"},
+          {"id": "c", "texte": "Le restaurant est fermé"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Elle ne mange pas de viande"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-ssx-a1-ecole-professeure-d-histoire-co-4",
+    "niveau": "A0-A1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · La professeure d'histoire",
+    "scenario": "ecole",
+    "scene": "La professeure d'histoire",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/ecole/23-école-professeure-d-histoire.mp3",
+      "transcription": "- Regarde, c'est la professeure d'histoire.\nElle est à l'entrée de la bibliothèque.\n- Ah oui, je la connais.\nC'est aussi ma professeure de géographie."
+    },
+    "questions": [
+      {
+        "enonce": "Où est la professeure ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "À l'entrée de la bibliothèque", "correct": true},
+          {"id": "b", "texte": "Dans la cour"},
+          {"id": "c", "texte": "À la cantine"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "À l'entrée de la bibliothèque"
+          }
+        }
+      },
+      {
+        "enonce": "Quelle autre matière enseigne-t-elle ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "La géographie", "correct": true},
+          {"id": "b", "texte": "Les maths"},
+          {"id": "c", "texte": "Le français"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "La géographie"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-ssx-a1-ecole-comprendre-l-exercice-co-4",
+    "niveau": "A0-A1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Je ne comprends pas l'exercice",
+    "scenario": "ecole",
+    "scene": "Je ne comprends pas l'exercice",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/ecole/24-école-ne-pas-comprendre-l-exercice.mp3",
+      "transcription": "- Madame ?\n- Oui ?\n- Je ne comprends pas l'exercice.\n- Alors, viens au tableau.\nOn va faire l'exercice.\n- D'accord.\nJe prends mon livre ?\n- Oui, prends ton livre."
+    },
+    "questions": [
+      {
+        "enonce": "Quel est le problème de l'élève ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Il ne comprend pas l'exercice", "correct": true},
+          {"id": "b", "texte": "Il a oublié son livre"},
+          {"id": "c", "texte": "Il est malade"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Il ne comprend pas l'exercice"
+          }
+        }
+      },
+      {
+        "enonce": "Que lui dit la professeure ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "De venir au tableau", "correct": true},
+          {"id": "b", "texte": "De demander à un camarade"},
+          {"id": "c", "texte": "De faire l'exercice à la maison"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "De venir au tableau"
+          }
+        }
+      },
+      {
+        "enonce": "Que prend l'élève ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Son livre", "correct": true},
+          {"id": "b", "texte": "Son cahier"},
+          {"id": "c", "texte": "Sa trousse"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Son livre"
           }
         }
       }

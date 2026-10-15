@@ -36513,5 +36513,273 @@
         }
       }
     ]
+  },
+  {
+    "id": "tcf-ssx-a2-ecole-resultat-du-concours-co-4",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Le résultat du concours",
+    "scenario": "ecole",
+    "scene": "Le résultat du concours",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/ecole/25-école-résultat-du-concours.mp3",
+      "transcription": "- Salut, Clara !\nComment tu vas ?\n- Bien, et toi ?\nTu as l'air tout heureux, qu'est-ce qui se passe ?\n- Je viens d'avoir les résultats : j'ai eu mon concours pour devenir professeur !\n- Ah, mais c'est génial, ça !"
+    },
+    "questions": [
+      {
+        "enonce": "Comment est le jeune homme ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Très heureux", "correct": true},
+          {"id": "b", "texte": "Triste"},
+          {"id": "c", "texte": "Fatigué"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Très heureux"
+          }
+        }
+      },
+      {
+        "enonce": "Pourquoi ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Il a réussi son concours", "correct": true},
+          {"id": "b", "texte": "Il part en vacances"},
+          {"id": "c", "texte": "Il a trouvé un appartement"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Il a réussi son concours"
+          }
+        }
+      },
+      {
+        "enonce": "Quel métier veut-il faire ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Professeur", "correct": true},
+          {"id": "b", "texte": "Médecin"},
+          {"id": "c", "texte": "Avocat"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Professeur"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-ssx-a2-famille-s-occuper-du-chat-co-4",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · S'occuper du chat",
+    "scenario": "maison",
+    "scene": "S'occuper du chat",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/famille/13-famille-s-occuper-du-chat.mp3",
+      "transcription": "- Justine, je vais devoir m'absenter quelques jours pour le travail.\nTu pourrais t'occuper de mon chat ?\n- Oui, bien sûr.\nQu'est-ce que je dois faire ?\n- Il faudrait lui donner à manger et jouer un peu avec lui.\n- OK, très bien."
+    },
+    "questions": [
+      {
+        "enonce": "Pourquoi la personne doit-elle s'absenter ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Pour le travail", "correct": true},
+          {"id": "b", "texte": "Pour les vacances"},
+          {"id": "c", "texte": "Pour un mariage"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Pour le travail"
+          }
+        }
+      },
+      {
+        "enonce": "Que demande-t-elle à Justine ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "De s'occuper de son chat", "correct": true},
+          {"id": "b", "texte": "D'arroser ses plantes"},
+          {"id": "c", "texte": "De garder ses enfants"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "De s'occuper de son chat"
+          }
+        }
+      },
+      {
+        "enonce": "Que faut-il faire ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Lui donner à manger et jouer avec lui", "correct": true},
+          {"id": "b", "texte": "L'emmener chez le vétérinaire"},
+          {"id": "c", "texte": "Le promener"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Lui donner à manger et jouer avec lui"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-ssx-a2-famille-trouver-un-cadeau-co-4",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Trouver un cadeau",
+    "scenario": "maison",
+    "scene": "Trouver un cadeau",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/famille/14-famille-trouver-un-cadeau.mp3",
+      "transcription": "- Martin, tu peux m'aider à trouver un cadeau pour mon père ?\n- Qu'est-ce qu'il aime ?\n- Il adore le rugby.\n- Tu pourrais lui acheter des tickets pour aller voir un match.\n- Ah !\nC'est une super idée, ça !\nMerci, Martin."
+    },
+    "questions": [
+      {
+        "enonce": "Pour qui cherche-t-on un cadeau ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Pour le père", "correct": true},
+          {"id": "b", "texte": "Pour la mère"},
+          {"id": "c", "texte": "Pour Martin"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Pour le père"
+          }
+        }
+      },
+      {
+        "enonce": "Quel sport le père adore-t-il ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Le rugby", "correct": true},
+          {"id": "b", "texte": "Le football"},
+          {"id": "c", "texte": "Le tennis"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Le rugby"
+          }
+        }
+      },
+      {
+        "enonce": "Que propose Martin ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Des tickets pour un match", "correct": true},
+          {"id": "b", "texte": "Un ballon"},
+          {"id": "c", "texte": "Un maillot"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Des tickets pour un match"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-ssx-a2-restaurant-commander-le-menu-co-4",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Commander au restaurant",
+    "scenario": "vie-quotidienne",
+    "scene": "Commander au restaurant",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/restaurant/01-restaurant-commander-le-menu.mp3",
+      "transcription": "- Bonjour, Madame, que désirez-vous aujourd'hui ?\n- Bonjour.\nAlors, je vais prendre le plat du jour, un jus d'orange et un tiramisu, s'il vous plaît.\n- Très bien, ce sera tout ?\n- Oui, merci."
+    },
+    "questions": [
+      {
+        "enonce": "Où sont-ils ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Au restaurant", "correct": true},
+          {"id": "b", "texte": "Au supermarché"},
+          {"id": "c", "texte": "À la boulangerie"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Au restaurant"
+          }
+        }
+      },
+      {
+        "enonce": "Que boit la cliente ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Un jus d'orange", "correct": true},
+          {"id": "b", "texte": "Un café"},
+          {"id": "c", "texte": "De l'eau"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Un jus d'orange"
+          }
+        }
+      },
+      {
+        "enonce": "Que prend-elle en dessert ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Un tiramisu", "correct": true},
+          {"id": "b", "texte": "Une glace"},
+          {"id": "c", "texte": "Une tarte"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Un tiramisu"
+          }
+        }
+      }
+    ]
   }
 ]
