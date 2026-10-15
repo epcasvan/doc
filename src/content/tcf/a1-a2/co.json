@@ -32846,7 +32846,7 @@
     "scene": "Les promotions sur l’électroménager",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/nourriture/moyen-a2__annonce-2.4.mp3",
+      "audio": "/lib/audio/tcf/co/achats/17-magasin-annonce-offre-électroménager.mp3",
       "transcription": "Chers clients, profitez de notre offre exceptionnelle sur tout l’électroménager aujourd’hui !\n50% sur les téléviseurs, réfrigérateurs, fours et machines à laver.\nN’attendez plus !"
     },
     "questions": [
@@ -32914,7 +32914,7 @@
     "scene": "Au bord du bassin",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/nourriture/moyen-a2__annonce-5.4.mp3",
+      "audio": "/lib/audio/tcf/co/loisirs/03-piscine-annonce-rappel-du-règlement.mp3",
       "transcription": "Nous vous rappelons qu’il est interdit de courir ou de consommer de la nourriture autour du grand bassin sous peine d’exclusion.\nMerci de votre compréhension."
     },
     "questions": [
@@ -32978,11 +32978,11 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Le service de laverie",
-    "scenario": "vie-quotidienne",
+    "scenario": "magasins",
     "scene": "Le service de laverie",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/nourriture/moyen-a2__annonce-6.5.mp3",
+      "audio": "/lib/audio/tcf/co/achats/18-magasin-annoncer-service-de-laverie.mp3",
       "transcription": "Découvrez notre dernier service de laverie !\nOn s’occupe de votre linge : on nettoie, on repasse et on plie !\nPassez commande en ligne sur notre site internet."
     },
     "questions": [
@@ -33050,7 +33050,7 @@
     "scene": "Les règles du musée",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/nourriture/moyen-a2__annonce-7.2.mp3",
+      "audio": "/lib/audio/tcf/co/loisirs/04-musée-annonce-rappel-du-règlement.mp3",
       "transcription": "Nous rappelons à nos visiteurs qu’il est interdit de consommer de la nourriture à l’intérieur du musée.\nIl est également interdit de courir.\nLes photos sont autorisées."
     },
     "questions": [
@@ -37142,6 +37142,291 @@
           "lignes": {
             "nb_lignes": 1,
             "reponse_modele": "Un gros manteau"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-ssx-a2-ecole-nouvel-eleve-co-4",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Le nouvel élève",
+    "scenario": "ecole",
+    "scene": "Le nouvel élève",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/ecole/01-école-le-nouvel-élève.mp3",
+      "transcription": "- Ah, regarde !\nÀ l'entrée du parc, c'est Julien, le nouvel élève de ma classe.\n- Ah oui ?\n- Viens, on va lui dire bonjour.\n- Oui, pourquoi pas ?\nIl a l'air sympa.\n- Julien, voici Paul, mon ami d'enfance."
+    },
+    "questions": [
+      {
+        "enonce": "Qui est Julien ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Le nouvel élève de la classe", "correct": true},
+          {"id": "b", "texte": "Le professeur"},
+          {"id": "c", "texte": "Le frère de Paul"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Le nouvel élève de la classe"
+          }
+        }
+      },
+      {
+        "enonce": "Où est Julien ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "À l'entrée du parc", "correct": true},
+          {"id": "b", "texte": "Devant l'école"},
+          {"id": "c", "texte": "À l'arrêt de bus"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "À l'entrée du parc"
+          }
+        }
+      },
+      {
+        "enonce": "Qui est Paul ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Un ami d'enfance", "correct": true},
+          {"id": "b", "texte": "Un cousin"},
+          {"id": "c", "texte": "Un voisin"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Un ami d'enfance"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-ssx-a2-ecole-nouveau-chien-co-4",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Le nouveau chien",
+    "scenario": "ecole",
+    "scene": "Le nouveau chien",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/ecole/02-école-nouveau-chien.mp3",
+      "transcription": "- Ah !\nSalut, Élisa !\n- Charlotte, c'est ton nouveau chien ?\n- Oui, c'est Kelly.\nTu veux bien la tenir ?\nJe dois acheter le pain à la boulangerie, mais les chiens ne peuvent pas entrer.\n- Oui, bien sûr, mais fais vite.\n- Oui, oui.\nPas plus de cinq minutes.\nMerci."
+    },
+    "questions": [
+      {
+        "enonce": "Comment s'appelle le chien ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Kelly", "correct": true},
+          {"id": "b", "texte": "Kiki"},
+          {"id": "c", "texte": "Bella"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Kelly"
+          }
+        }
+      },
+      {
+        "enonce": "Que doit acheter Charlotte ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Du pain", "correct": true},
+          {"id": "b", "texte": "Des croissants"},
+          {"id": "c", "texte": "Du lait"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Du pain"
+          }
+        }
+      },
+      {
+        "enonce": "Pourquoi faut-il tenir le chien ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Les chiens ne peuvent pas entrer dans la boulangerie", "correct": true},
+          {"id": "b", "texte": "Le chien est malade"},
+          {"id": "c", "texte": "Le chien a peur"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Les chiens ne peuvent pas entrer dans la boulangerie"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-ssx-a2-transport-comment-tu-rentres-co-4",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Comment tu rentres ?",
+    "scenario": "transports",
+    "scene": "Comment tu rentres ?",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/transports/01-transport-comment-tu-rentres.mp3",
+      "transcription": "- Jules, comment tu rentres chez toi ?\n- En bus, et toi ?\n- J'aimerais rentrer à pied, mais il pleut.\n- J'ai un parapluie, prends-le si tu veux.\nTu me le rendras demain.\n- Ah oui, super, merci !"
+    },
+    "questions": [
+      {
+        "enonce": "Comment Jules rentre-t-il chez lui ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "En bus", "correct": true},
+          {"id": "b", "texte": "À pied"},
+          {"id": "c", "texte": "À vélo"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "En bus"
+          }
+        }
+      },
+      {
+        "enonce": "Pourquoi l'autre personne hésite-t-elle à rentrer à pied ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Il pleut", "correct": true},
+          {"id": "b", "texte": "C'est trop loin"},
+          {"id": "c", "texte": "Elle est fatiguée"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Il pleut"
+          }
+        }
+      },
+      {
+        "enonce": "Que lui prête Jules ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Un parapluie", "correct": true},
+          {"id": "b", "texte": "Un ticket de bus"},
+          {"id": "c", "texte": "Une veste"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Un parapluie"
+          }
+        }
+      },
+      {
+        "enonce": "Quand faut-il le rendre ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Demain", "correct": true},
+          {"id": "b", "texte": "Ce soir"},
+          {"id": "c", "texte": "La semaine prochaine"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Demain"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-ssx-a2-transport-bus-pour-la-gare-co-4",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Le bus pour la gare",
+    "scenario": "transports",
+    "scene": "Le bus pour la gare",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/transports/02-transport-le-bus-va-à-la-gare.mp3",
+      "transcription": "- Excusez-moi, Monsieur, est-ce que ce bus va à la gare ?\n- Non, il s'arrête à la place centrale.\n- Pouvez-vous me dire quel bus va jusqu'à la gare, s'il vous plaît ?\n- Vous devez prendre le 64.\n- Merci, c'est parfait."
+    },
+    "questions": [
+      {
+        "enonce": "Où veut aller la personne ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "À la gare", "correct": true},
+          {"id": "b", "texte": "À la place centrale"},
+          {"id": "c", "texte": "À l'hôpital"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "À la gare"
+          }
+        }
+      },
+      {
+        "enonce": "Où s'arrête ce bus ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "À la place centrale", "correct": true},
+          {"id": "b", "texte": "À la gare"},
+          {"id": "c", "texte": "À l'école"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "À la place centrale"
+          }
+        }
+      },
+      {
+        "enonce": "Quel bus faut-il prendre ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Le 64", "correct": true},
+          {"id": "b", "texte": "Le 46"},
+          {"id": "c", "texte": "Le 14"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Le 64"
           }
         }
       }
