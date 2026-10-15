@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Renomme les audios CO TCF selon scénario + scène :
- *   /lib/audio/comprehension/{scenario}/{scene-slug}[-n].mp3
+ *   /lib/audio/tcf/co/{scenario}/{scene-slug}[-n].mp3
  * Met à jour les banques co.json, overrides, cache STT, manifest.
  */
 import { existsSync, mkdirSync, readFileSync, renameSync, writeFileSync } from 'node:fs'
@@ -191,7 +191,7 @@ function main() {
     list.forEach((row, i) => {
       const slug = slugify(row.sceneLabel)
       const file = list.length > 1 ? `${slug}-${i + 1}.mp3` : `${slug}.mp3`
-      const next = `/lib/audio/comprehension/${row.scenario}/${file}`
+      const next = `/lib/audio/tcf/co/${row.scenario}/${file}`
       if (next === row.audio) {
         mapping.set(row.audio, next)
         return
@@ -201,7 +201,7 @@ function main() {
       let n = 2
       const used = new Set([...mapping.values()])
       while (used.has(final) && final !== row.audio) {
-        final = `/lib/audio/comprehension/${row.scenario}/${slug}-${n}.mp3`
+        final = `/lib/audio/tcf/co/${row.scenario}/${slug}-${n}.mp3`
         n++
       }
       mapping.set(row.audio, final)

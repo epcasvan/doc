@@ -18,7 +18,7 @@ from pathlib import Path
 import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
-AUDIO_ROOT = ROOT / "public/lib/audio/comprehension"
+AUDIO_ROOT = ROOT / "public/lib/audio/tcf/co"
 REPORT = ROOT / "scripts/trim-co-page-intros-report.json"
 
 # Whisper entend souvent « Page » comme « Pâche » / « Bâge ».

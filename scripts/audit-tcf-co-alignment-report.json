@@ -2,7 +2,7 @@
   "ok": [
     {
       "id": "tcf-a1j-s1-co-1",
-      "audio": "/lib/audio/comprehension/fetes/l-anniversaire-1.mp3",
+      "audio": "/lib/audio/tcf/co/fetes/l-anniversaire-1.mp3",
       "ss": false,
       "tx": 0.926,
       "ans": 0.75,
@@ -11,7 +11,7 @@
     },
     {
       "id": "tcf-a1j-s1-co-2",
-      "audio": "/lib/audio/comprehension/radio/au-magasin-de-sport.mp3",
+      "audio": "/lib/audio/tcf/co/radio/au-magasin-de-sport.mp3",
       "ss": false,
       "tx": 0.826,
       "ans": 0.25,
@@ -20,7 +20,7 @@
     },
     {
       "id": "tcf-a1j-s1-co-3",
-      "audio": "/lib/audio/comprehension/maison/la-recette-1.mp3",
+      "audio": "/lib/audio/tcf/co/maison/la-recette-1.mp3",
       "ss": false,
       "tx": 0.765,
       "ans": 0.75,
@@ -29,7 +29,7 @@
     },
     {
       "id": "tcf-a1j-s1-co-4",
-      "audio": "/lib/audio/comprehension/ecole/a-l-ecole-1.mp3",
+      "audio": "/lib/audio/tcf/co/ecole/a-l-ecole-1.mp3",
       "ss": false,
       "tx": 0.84,
       "ans": 0.0,
@@ -38,7 +38,7 @@
     },
     {
       "id": "tcf-a1j-s2-co-1",
-      "audio": "/lib/audio/comprehension/loisirs/a-la-ferme.mp3",
+      "audio": "/lib/audio/tcf/co/loisirs/a-la-ferme.mp3",
       "ss": false,
       "tx": 0.935,
       "ans": 0.5,
@@ -47,7 +47,7 @@
     },
     {
       "id": "tcf-a1j-s2-co-2",
-      "audio": "/lib/audio/comprehension/loisirs/la-fete-du-sport.mp3",
+      "audio": "/lib/audio/tcf/co/loisirs/la-fete-du-sport.mp3",
       "ss": false,
       "tx": 0.75,
       "ans": 0.5,
@@ -56,7 +56,7 @@
     },
     {
       "id": "tcf-a1j-s2-co-3",
-      "audio": "/lib/audio/comprehension/maison/la-recette-2.mp3",
+      "audio": "/lib/audio/tcf/co/maison/la-recette-2.mp3",
       "ss": false,
       "tx": 0.944,
       "ans": 0.5,
@@ -65,7 +65,7 @@
     },
     {
       "id": "tcf-a1j-s2-co-4",
-      "audio": "/lib/audio/comprehension/ecole/a-l-ecole-2.mp3",
+      "audio": "/lib/audio/tcf/co/ecole/a-l-ecole-2.mp3",
       "ss": false,
       "tx": 0.962,
       "ans": 0.0,
@@ -74,7 +74,7 @@
     },
     {
       "id": "tcf-a1j-s3-co-1",
-      "audio": "/lib/audio/comprehension/loisirs/le-cours-de-musique.mp3",
+      "audio": "/lib/audio/tcf/co/loisirs/le-cours-de-musique.mp3",
       "ss": false,
       "tx": 0.917,
       "ans": 0.75,
@@ -83,7 +83,7 @@
     },
     {
       "id": "tcf-a1j-s3-co-2",
-      "audio": "/lib/audio/comprehension/loisirs/au-musee.mp3",
+      "audio": "/lib/audio/tcf/co/loisirs/au-musee.mp3",
       "ss": false,
       "tx": 0.84,
       "ans": 0.25,
@@ -92,7 +92,7 @@
     },
     {
       "id": "tcf-a1j-s3-co-3",
-      "audio": "/lib/audio/comprehension/magasins/la-reparation-du-telephone.mp3",
+      "audio": "/lib/audio/tcf/co/magasins/la-reparation-du-telephone.mp3",
       "ss": false,
       "tx": 0.957,
       "ans": 0.75,
@@ -101,7 +101,7 @@
     },
     {
       "id": "tcf-a1j-s3-co-4",
-      "audio": "/lib/audio/comprehension/ecole/a-l-ecole-3.mp3",
+      "audio": "/lib/audio/tcf/co/ecole/a-l-ecole-3.mp3",
       "ss": false,
       "tx": 0.828,
       "ans": 0.0,
@@ -110,7 +110,7 @@
     },
     {
       "id": "tcf-a1-s1-co-1",
-      "audio": "/lib/audio/comprehension/vie-quotidienne/le-rendez-vous.mp3",
+      "audio": "/lib/audio/tcf/co/vie-quotidienne/le-rendez-vous.mp3",
       "ss": false,
       "tx": 0.793,
       "ans": 0.25,
@@ -119,7 +119,7 @@
     },
     {
       "id": "tcf-a1-s1-co-2",
-      "audio": "/lib/audio/comprehension/radio/a-la-librairie.mp3",
+      "audio": "/lib/audio/tcf/co/radio/a-la-librairie.mp3",
       "ss": false,
       "tx": 0.793,
       "ans": 0.25,
@@ -128,7 +128,7 @@
     },
     {
       "id": "tcf-a1-s1-co-3",
-      "audio": "/lib/audio/comprehension/travail/le-medecin-du-travail.mp3",
+      "audio": "/lib/audio/tcf/co/travail/le-medecin-du-travail.mp3",
       "ss": false,
       "tx": 0.95,
       "ans": 1.0,
@@ -137,7 +137,7 @@
     },
     {
       "id": "tcf-a1-s2-co-1",
-      "audio": "/lib/audio/comprehension/loisirs/au-cinema-1.mp3",
+      "audio": "/lib/audio/tcf/co/loisirs/au-cinema-1.mp3",
       "ss": false,
       "tx": 0.926,
       "ans": 0.75,
@@ -146,7 +146,7 @@
     },
     {
       "id": "tcf-a1-s2-co-2",
-      "audio": "/lib/audio/comprehension/radio/la-fete-des-meres.mp3",
+      "audio": "/lib/audio/tcf/co/radio/la-fete-des-meres.mp3",
       "ss": false,
       "tx": 0.833,
       "ans": 0.5,
@@ -155,7 +155,7 @@
     },
     {
       "id": "tcf-a1-s2-co-3",
-      "audio": "/lib/audio/comprehension/travail/le-nouveau-travail.mp3",
+      "audio": "/lib/audio/tcf/co/travail/le-nouveau-travail.mp3",
       "ss": false,
       "tx": 0.96,
       "ans": 0.75,
@@ -164,7 +164,7 @@
     },
     {
       "id": "tcf-a1-s3-co-1",
-      "audio": "/lib/audio/comprehension/fetes/l-anniversaire-2.mp3",
+      "audio": "/lib/audio/tcf/co/fetes/l-anniversaire-2.mp3",
       "ss": false,
       "tx": 0.714,
       "ans": 0.5,
@@ -173,7 +173,7 @@
     },
     {
       "id": "tcf-a1-s3-co-2",
-      "audio": "/lib/audio/comprehension/radio/la-meteo.mp3",
+      "audio": "/lib/audio/tcf/co/radio/la-meteo.mp3",
       "ss": false,
       "tx": 0.833,
       "ans": 0.75,
@@ -182,7 +182,7 @@
     },
     {
       "id": "tcf-a1-s3-co-3",
-      "audio": "/lib/audio/comprehension/maison/dans-l-immeuble.mp3",
+      "audio": "/lib/audio/tcf/co/maison/dans-l-immeuble.mp3",
       "ss": false,
       "tx": 0.917,
       "ans": 0.75,
@@ -191,7 +191,7 @@
     },
     {
       "id": "tcf-a1-s3-co-4",
-      "audio": "/lib/audio/comprehension/vie-quotidienne/les-situations-du-quotidien-1.mp3",
+      "audio": "/lib/audio/tcf/co/vie-quotidienne/les-situations-du-quotidien-1.mp3",
       "ss": false,
       "tx": 0.8,
       "ans": 0.0,
@@ -200,7 +200,7 @@
     },
     {
       "id": "tcf-a1-s4-co-1",
-      "audio": "/lib/audio/comprehension/loisirs/le-pique-nique.mp3",
+      "audio": "/lib/audio/tcf/co/loisirs/le-pique-nique.mp3",
       "ss": false,
       "tx": 0.857,
       "ans": 0.75,
@@ -209,7 +209,7 @@
     },
     {
       "id": "tcf-a1-s4-co-2",
-      "audio": "/lib/audio/comprehension/radio/l-info-trafic.mp3",
+      "audio": "/lib/audio/tcf/co/radio/l-info-trafic.mp3",
       "ss": false,
       "tx": 0.737,
       "ans": 0.75,
@@ -218,7 +218,7 @@
     },
     {
       "id": "tcf-a1-s4-co-3",
-      "audio": "/lib/audio/comprehension/magasins/a-la-librairie.mp3",
+      "audio": "/lib/audio/tcf/co/magasins/a-la-librairie.mp3",
       "ss": false,
       "tx": 0.864,
       "ans": 0.5,
@@ -227,7 +227,7 @@
     },
     {
       "id": "tcf-a1-s4-co-4",
-      "audio": "/lib/audio/comprehension/vie-quotidienne/les-situations-du-quotidien-2.mp3",
+      "audio": "/lib/audio/tcf/co/vie-quotidienne/les-situations-du-quotidien-2.mp3",
       "ss": false,
       "tx": 0.7,
       "ans": 0.0,
@@ -236,7 +236,7 @@
     },
     {
       "id": "tcf-a1p-s4-co-1",
-      "audio": "/lib/audio/comprehension/loisirs/le-club-de-sport.mp3",
+      "audio": "/lib/audio/tcf/co/loisirs/le-club-de-sport.mp3",
       "ss": false,
       "tx": 0.885,
       "ans": 0.75,
@@ -245,7 +245,7 @@
     },
     {
       "id": "tcf-a1p-s4-co-2",
-      "audio": "/lib/audio/comprehension/radio/a-l-aeroport-1.mp3",
+      "audio": "/lib/audio/tcf/co/radio/a-l-aeroport-1.mp3",
       "ss": false,
       "tx": 0.727,
       "ans": 0.5,
@@ -254,7 +254,7 @@
     },
     {
       "id": "tcf-a1p-s4-co-3",
-      "audio": "/lib/audio/comprehension/travail/la-reunion.mp3",
+      "audio": "/lib/audio/tcf/co/travail/la-reunion.mp3",
       "ss": false,
       "tx": 0.857,
       "ans": 0.5,
@@ -263,7 +263,7 @@
     },
     {
       "id": "tcf-a1p-s3-co-1",
-      "audio": "/lib/audio/comprehension/fetes/le-repas-entre-amis.mp3",
+      "audio": "/lib/audio/tcf/co/fetes/le-repas-entre-amis.mp3",
       "ss": false,
       "tx": 0.815,
       "ans": 0.5,
@@ -272,7 +272,7 @@
     },
     {
       "id": "tcf-a1p-s3-co-2",
-      "audio": "/lib/audio/comprehension/radio/a-l-aeroport-2.mp3",
+      "audio": "/lib/audio/tcf/co/radio/a-l-aeroport-2.mp3",
       "ss": false,
       "tx": 0.793,
       "ans": 0.5,
@@ -281,7 +281,7 @@
     },
     {
       "id": "tcf-a1p-s3-co-3",
-      "audio": "/lib/audio/comprehension/travail/au-bureau-1.mp3",
+      "audio": "/lib/audio/tcf/co/travail/au-bureau-1.mp3",
       "ss": false,
       "tx": 0.893,
       "ans": 1.0,
@@ -290,7 +290,7 @@
     },
     {
       "id": "tcf-a1p-s3-co-4",
-      "audio": "/lib/audio/comprehension/ecole/les-etudes-1.mp3",
+      "audio": "/lib/audio/tcf/co/ecole/les-etudes-1.mp3",
       "ss": false,
       "tx": 0.895,
       "ans": 0.0,
@@ -299,7 +299,7 @@
     },
     {
       "id": "tcf-a1-tpa-co-1",
-      "audio": "/lib/audio/comprehension/vie-quotidienne/la-famille-1.mp3",
+      "audio": "/lib/audio/tcf/co/vie-quotidienne/la-famille-1.mp3",
       "ss": false,
       "tx": 0.905,
       "ans": 0.8,
@@ -308,7 +308,7 @@
     },
     {
       "id": "tcf-a1-tpa-co-2",
-      "audio": "/lib/audio/comprehension/radio/au-theatre.mp3",
+      "audio": "/lib/audio/tcf/co/radio/au-theatre.mp3",
       "ss": false,
       "tx": 0.667,
       "ans": 0.5,
@@ -317,7 +317,7 @@
     },
     {
       "id": "tcf-a1-tpa-co-3",
-      "audio": "/lib/audio/comprehension/travail/l-entretien-d-embauche.mp3",
+      "audio": "/lib/audio/tcf/co/travail/l-entretien-d-embauche.mp3",
       "ss": false,
       "tx": 0.862,
       "ans": 1.0,
@@ -326,7 +326,7 @@
     },
     {
       "id": "tcf-a1-tpb-co-1",
-      "audio": "/lib/audio/comprehension/fetes/l-anniversaire-3.mp3",
+      "audio": "/lib/audio/tcf/co/fetes/l-anniversaire-3.mp3",
       "ss": false,
       "tx": 0.76,
       "ans": 0.4,
@@ -335,7 +335,7 @@
     },
     {
       "id": "tcf-a1-tpb-co-2",
-      "audio": "/lib/audio/comprehension/radio/a-la-gare.mp3",
+      "audio": "/lib/audio/tcf/co/radio/a-la-gare.mp3",
       "ss": false,
       "tx": 0.95,
       "ans": 0.2,
@@ -344,7 +344,7 @@
     },
     {
       "id": "tcf-a1-tpb-co-3",
-      "audio": "/lib/audio/comprehension/travail/l-offre-d-emploi.mp3",
+      "audio": "/lib/audio/tcf/co/travail/l-offre-d-emploi.mp3",
       "ss": false,
       "tx": 0.867,
       "ans": 1.0,
@@ -353,7 +353,7 @@
     },
     {
       "id": "tcf-a1-sem1-co-2",
-      "audio": "/lib/audio/comprehension/vie-quotidienne/les-situations-du-quotidien-3.mp3",
+      "audio": "/lib/audio/tcf/co/vie-quotidienne/les-situations-du-quotidien-3.mp3",
       "ss": false,
       "tx": 0.667,
       "ans": 0.0,
@@ -362,7 +362,7 @@
     },
     {
       "id": "tcf-a1-sem1-co-3",
-      "audio": "/lib/audio/comprehension/fetes/l-anniversaire-4.mp3",
+      "audio": "/lib/audio/tcf/co/fetes/l-anniversaire-4.mp3",
       "ss": false,
       "tx": 0.917,
       "ans": 0.5,
@@ -371,7 +371,7 @@
     },
     {
       "id": "tcf-a1-sem1-co-4",
-      "audio": "/lib/audio/comprehension/radio/au-concert.mp3",
+      "audio": "/lib/audio/tcf/co/radio/au-concert.mp3",
       "ss": false,
       "tx": 0.615,
       "ans": 1.0,
@@ -380,7 +380,7 @@
     },
     {
       "id": "tcf-ss-a1-s1-co-1",
-      "audio": "/lib/audio/comprehension/achats/facile-a1__annonce-12.mp3",
+      "audio": "/lib/audio/tcf/co/achats/facile-a1__annonce-12.mp3",
       "ss": true,
       "tx": 0.125,
       "ans": 0.75,
@@ -389,7 +389,7 @@
     },
     {
       "id": "tcf-ss-a1-s1-co-2",
-      "audio": "/lib/audio/comprehension/achats/facile-a1__annonce-2.mp3",
+      "audio": "/lib/audio/tcf/co/achats/facile-a1__annonce-2.mp3",
       "ss": true,
       "tx": 0.926,
       "ans": 1.0,
@@ -398,7 +398,7 @@
     },
     {
       "id": "tcf-ss-a1-s2-co-1",
-      "audio": "/lib/audio/comprehension/achats/facile-a1__conversation-5.mp3",
+      "audio": "/lib/audio/tcf/co/achats/facile-a1__conversation-5.mp3",
       "ss": true,
       "tx": 0.32,
       "ans": 0.5,
@@ -407,7 +407,7 @@
     },
     {
       "id": "tcf-ss-a1-s2-co-2",
-      "audio": "/lib/audio/comprehension/achats/facile-a1__radio-33.mp3",
+      "audio": "/lib/audio/tcf/co/achats/facile-a1__radio-33.mp3",
       "ss": true,
       "tx": 0.308,
       "ans": 0.75,
@@ -416,7 +416,7 @@
     },
     {
       "id": "tcf-ss-a1-s2-co-3",
-      "audio": "/lib/audio/comprehension/achats/facile-a1__radio-37.mp3",
+      "audio": "/lib/audio/tcf/co/achats/facile-a1__radio-37.mp3",
       "ss": true,
       "tx": 0.72,
       "ans": 0.5,
@@ -425,7 +425,7 @@
     },
     {
       "id": "tcf-ss-a1-s2-co-4",
-      "audio": "/lib/audio/comprehension/actualite/facile-a1__033.mp3",
+      "audio": "/lib/audio/tcf/co/actualite/facile-a1__033.mp3",
       "ss": true,
       "tx": 0.75,
       "ans": 0.5,
@@ -434,7 +434,7 @@
     },
     {
       "id": "tcf-ss-a1-s3-co-1",
-      "audio": "/lib/audio/comprehension/actualite/facile-a1__036.mp3",
+      "audio": "/lib/audio/tcf/co/actualite/facile-a1__036.mp3",
       "ss": true,
       "tx": 0.714,
       "ans": 0.5,
@@ -443,7 +443,7 @@
     },
     {
       "id": "tcf-ss-a1-s3-co-2",
-      "audio": "/lib/audio/comprehension/actualite/facile-a1__037.mp3",
+      "audio": "/lib/audio/tcf/co/actualite/facile-a1__037.mp3",
       "ss": true,
       "tx": 0.815,
       "ans": 1.0,
@@ -452,7 +452,7 @@
     },
     {
       "id": "tcf-ss-a1-s3-co-4",
-      "audio": "/lib/audio/comprehension/administration/facile-a1__166.mp3",
+      "audio": "/lib/audio/tcf/co/administration/facile-a1__166.mp3",
       "ss": true,
       "tx": 0.952,
       "ans": 0.0,
@@ -461,7 +461,7 @@
     },
     {
       "id": "tcf-ss-a1-s4-co-1",
-      "audio": "/lib/audio/comprehension/administration/facile-a1__167.mp3",
+      "audio": "/lib/audio/tcf/co/administration/facile-a1__167.mp3",
       "ss": true,
       "tx": 0.929,
       "ans": 0.0,
@@ -470,7 +470,7 @@
     },
     {
       "id": "tcf-ss-a1-s4-co-3",
-      "audio": "/lib/audio/comprehension/couleurs/facile-a1__objet-6.mp3",
+      "audio": "/lib/audio/tcf/co/couleurs/facile-a1__objet-6.mp3",
       "ss": true,
       "tx": 0.923,
       "ans": 1.0,
@@ -479,7 +479,7 @@
     },
     {
       "id": "tcf-ss-a1-s5-co-2",
-      "audio": "/lib/audio/comprehension/ecole/facile-a1__objet-10.mp3",
+      "audio": "/lib/audio/tcf/co/ecole/facile-a1__objet-10.mp3",
       "ss": true,
       "tx": 0.273,
       "ans": 0.5,
@@ -488,7 +488,7 @@
     },
     {
       "id": "tcf-ss-a1-s5-co-3",
-      "audio": "/lib/audio/comprehension/ecole/facile-a1__objet-3.mp3",
+      "audio": "/lib/audio/tcf/co/ecole/facile-a1__objet-3.mp3",
       "ss": true,
       "tx": 0.885,
       "ans": 0.75,
@@ -497,7 +497,7 @@
     },
     {
       "id": "tcf-ss-a1-s5-co-4",
-      "audio": "/lib/audio/comprehension/famille/facile-a1__016.mp3",
+      "audio": "/lib/audio/tcf/co/famille/facile-a1__016.mp3",
       "ss": true,
       "tx": 0.882,
       "ans": 0.5,
@@ -506,7 +506,7 @@
     },
     {
       "id": "tcf-ss-a1-s6-co-1",
-      "audio": "/lib/audio/comprehension/famille/facile-a1__026.mp3",
+      "audio": "/lib/audio/tcf/co/famille/facile-a1__026.mp3",
       "ss": true,
       "tx": 0.767,
       "ans": 0.75,
@@ -515,7 +515,7 @@
     },
     {
       "id": "tcf-ss-a1-s6-co-2",
-      "audio": "/lib/audio/comprehension/famille/facile-a1__069.mp3",
+      "audio": "/lib/audio/tcf/co/famille/facile-a1__069.mp3",
       "ss": true,
       "tx": 0.875,
       "ans": 0.5,
@@ -524,7 +524,7 @@
     },
     {
       "id": "tcf-ss-a1-s6-co-3",
-      "audio": "/lib/audio/comprehension/famille/facile-a1__072.mp3",
+      "audio": "/lib/audio/tcf/co/famille/facile-a1__072.mp3",
       "ss": true,
       "tx": 0.955,
       "ans": 0.5,
@@ -533,7 +533,7 @@
     },
     {
       "id": "tcf-ss-a1-s7-co-1",
-      "audio": "/lib/audio/comprehension/famille/facile-a1__objet-11.mp3",
+      "audio": "/lib/audio/tcf/co/famille/facile-a1__objet-11.mp3",
       "ss": true,
       "tx": 0.828,
       "ans": 0.5,
@@ -542,7 +542,7 @@
     },
     {
       "id": "tcf-ss-a1-s7-co-2",
-      "audio": "/lib/audio/comprehension/inviter/facile-a1__057.mp3",
+      "audio": "/lib/audio/tcf/co/inviter/facile-a1__057.mp3",
       "ss": true,
       "tx": 0.95,
       "ans": 1.0,
@@ -551,7 +551,7 @@
     },
     {
       "id": "tcf-ss-a1-s7-co-3",
-      "audio": "/lib/audio/comprehension/inviter/facile-a1__111.mp3",
+      "audio": "/lib/audio/tcf/co/inviter/facile-a1__111.mp3",
       "ss": true,
       "tx": 0.769,
       "ans": 0.75,
@@ -560,7 +560,7 @@
     },
     {
       "id": "tcf-ss-a1-s7-co-4",
-      "audio": "/lib/audio/comprehension/inviter/facile-a1__conversation-3.mp3",
+      "audio": "/lib/audio/tcf/co/inviter/facile-a1__conversation-3.mp3",
       "ss": true,
       "tx": 0.286,
       "ans": 0.75,
@@ -569,7 +569,7 @@
     },
     {
       "id": "tcf-ss-a1-s8-co-1",
-      "audio": "/lib/audio/comprehension/inviter/facile-a1__instruction-3.mp3",
+      "audio": "/lib/audio/tcf/co/inviter/facile-a1__instruction-3.mp3",
       "ss": true,
       "tx": 0.778,
       "ans": 0.5,
@@ -578,7 +578,7 @@
     },
     {
       "id": "tcf-ss-a1-s8-co-3",
-      "audio": "/lib/audio/comprehension/inviter/facile-a1__message-17.mp3",
+      "audio": "/lib/audio/tcf/co/inviter/facile-a1__message-17.mp3",
       "ss": true,
       "tx": 0.879,
       "ans": 0.75,
@@ -587,7 +587,7 @@
     },
     {
       "id": "tcf-ss-a1-s9-co-1",
-      "audio": "/lib/audio/comprehension/inviter/facile-a1__message-4.mp3",
+      "audio": "/lib/audio/tcf/co/inviter/facile-a1__message-4.mp3",
       "ss": true,
       "tx": 0.5,
       "ans": 0.25,
@@ -596,7 +596,7 @@
     },
     {
       "id": "tcf-ss-a1-s9-co-2",
-      "audio": "/lib/audio/comprehension/inviter/facile-a1__message-5.mp3",
+      "audio": "/lib/audio/tcf/co/inviter/facile-a1__message-5.mp3",
       "ss": true,
       "tx": 0.875,
       "ans": 0.5,
@@ -605,7 +605,7 @@
     },
     {
       "id": "tcf-ss-a1-s9-co-4",
-      "audio": "/lib/audio/comprehension/inviter/facile-a1__message-8.mp3",
+      "audio": "/lib/audio/tcf/co/inviter/facile-a1__message-8.mp3",
       "ss": true,
       "tx": 0.267,
       "ans": 0.5,
@@ -614,7 +614,7 @@
     },
     {
       "id": "tcf-ss-a1-s10-co-1",
-      "audio": "/lib/audio/comprehension/inviter/facile-a1__objet-2.mp3",
+      "audio": "/lib/audio/tcf/co/inviter/facile-a1__objet-2.mp3",
       "ss": true,
       "tx": 0.677,
       "ans": 0.75,
@@ -623,7 +623,7 @@
     },
     {
       "id": "tcf-ss-a1-s10-co-2",
-      "audio": "/lib/audio/comprehension/journee/facile-a1__044.mp3",
+      "audio": "/lib/audio/tcf/co/journee/facile-a1__044.mp3",
       "ss": true,
       "tx": 0.857,
       "ans": 0.5,
@@ -632,7 +632,7 @@
     },
     {
       "id": "tcf-ss-a1-s10-co-3",
-      "audio": "/lib/audio/comprehension/journee/facile-a1__080.mp3",
+      "audio": "/lib/audio/tcf/co/journee/facile-a1__080.mp3",
       "ss": true,
       "tx": 0.846,
       "ans": 0.75,
@@ -641,7 +641,7 @@
     },
     {
       "id": "tcf-ss-a1-s10-co-4",
-      "audio": "/lib/audio/comprehension/journee/facile-a1__136.mp3",
+      "audio": "/lib/audio/tcf/co/journee/facile-a1__136.mp3",
       "ss": true,
       "tx": 0.87,
       "ans": 0.75,
@@ -650,7 +650,7 @@
     },
     {
       "id": "tcf-ss-a1-s11-co-1",
-      "audio": "/lib/audio/comprehension/journee/facile-a1__annonce-27.mp3",
+      "audio": "/lib/audio/tcf/co/journee/facile-a1__annonce-27.mp3",
       "ss": true,
       "tx": 0.591,
       "ans": 0.75,
@@ -659,7 +659,7 @@
     },
     {
       "id": "tcf-ss-a1-s11-co-2",
-      "audio": "/lib/audio/comprehension/journee/facile-a1__annonce-28.mp3",
+      "audio": "/lib/audio/tcf/co/journee/facile-a1__annonce-28.mp3",
       "ss": true,
       "tx": 0.667,
       "ans": 0.0,
@@ -668,7 +668,7 @@
     },
     {
       "id": "tcf-ss-a1-s11-co-3",
-      "audio": "/lib/audio/comprehension/journee/facile-a1__annonce-5.mp3",
+      "audio": "/lib/audio/tcf/co/journee/facile-a1__annonce-5.mp3",
       "ss": true,
       "tx": 0.667,
       "ans": 0.5,
@@ -677,7 +677,7 @@
     },
     {
       "id": "tcf-ss-a1-s11-co-4",
-      "audio": "/lib/audio/comprehension/journee/facile-a1__annonce-7.mp3",
+      "audio": "/lib/audio/tcf/co/journee/facile-a1__annonce-7.mp3",
       "ss": true,
       "tx": 0.8,
       "ans": 0.75,
@@ -686,7 +686,7 @@
     },
     {
       "id": "tcf-ss-a1-s12-co-1",
-      "audio": "/lib/audio/comprehension/journee/facile-a1__instruction-5.mp3",
+      "audio": "/lib/audio/tcf/co/journee/facile-a1__instruction-5.mp3",
       "ss": true,
       "tx": 0.852,
       "ans": 0.75,
@@ -695,7 +695,7 @@
     },
     {
       "id": "tcf-ss-a1-s12-co-2",
-      "audio": "/lib/audio/comprehension/journee/facile-a1__message-10.mp3",
+      "audio": "/lib/audio/tcf/co/journee/facile-a1__message-10.mp3",
       "ss": true,
       "tx": 0.68,
       "ans": 0.75,
@@ -704,7 +704,7 @@
     },
     {
       "id": "tcf-ss-a1-s12-co-3",
-      "audio": "/lib/audio/comprehension/journee/facile-a1__message-13.mp3",
+      "audio": "/lib/audio/tcf/co/journee/facile-a1__message-13.mp3",
       "ss": true,
       "tx": 0.9,
       "ans": 0.0,
@@ -713,7 +713,7 @@
     },
     {
       "id": "tcf-ss-a1-s12-co-4",
-      "audio": "/lib/audio/comprehension/journee/facile-a1__message-14.mp3",
+      "audio": "/lib/audio/tcf/co/journee/facile-a1__message-14.mp3",
       "ss": true,
       "tx": 0.16,
       "ans": 0.75,
@@ -722,7 +722,7 @@
     },
     {
       "id": "tcf-ss-a1-s13-co-2",
-      "audio": "/lib/audio/comprehension/journee/facile-a1__message-19.mp3",
+      "audio": "/lib/audio/tcf/co/journee/facile-a1__message-19.mp3",
       "ss": true,
       "tx": 0.889,
       "ans": 1.0,
@@ -731,7 +731,7 @@
     },
     {
       "id": "tcf-ss-a1-s14-co-1",
-      "audio": "/lib/audio/comprehension/journee/facile-a1__radio-36.mp3",
+      "audio": "/lib/audio/tcf/co/journee/facile-a1__radio-36.mp3",
       "ss": true,
       "tx": 0.32,
       "ans": 0.5,
@@ -740,7 +740,7 @@
     },
     {
       "id": "tcf-ss-a1-s14-co-2",
-      "audio": "/lib/audio/comprehension/logement/facile-a1__022.mp3",
+      "audio": "/lib/audio/tcf/co/logement/facile-a1__022.mp3",
       "ss": true,
       "tx": 0.929,
       "ans": 1.0,
@@ -749,7 +749,7 @@
     },
     {
       "id": "tcf-ss-a1-s14-co-3",
-      "audio": "/lib/audio/comprehension/logement/facile-a1__023.mp3",
+      "audio": "/lib/audio/tcf/co/logement/facile-a1__023.mp3",
       "ss": true,
       "tx": 0.882,
       "ans": 0.75,
@@ -758,7 +758,7 @@
     },
     {
       "id": "tcf-ss-a1-s14-co-4",
-      "audio": "/lib/audio/comprehension/logement/facile-a1__024.mp3",
+      "audio": "/lib/audio/tcf/co/logement/facile-a1__024.mp3",
       "ss": true,
       "tx": 1.0,
       "ans": 0.75,
@@ -767,7 +767,7 @@
     },
     {
       "id": "tcf-ss-a1-s15-co-1",
-      "audio": "/lib/audio/comprehension/logement/facile-a1__046.mp3",
+      "audio": "/lib/audio/tcf/co/logement/facile-a1__046.mp3",
       "ss": true,
       "tx": 0.727,
       "ans": 0.5,
@@ -776,7 +776,7 @@
     },
     {
       "id": "tcf-ss-a1-s15-co-2",
-      "audio": "/lib/audio/comprehension/logement/facile-a1__112.mp3",
+      "audio": "/lib/audio/tcf/co/logement/facile-a1__112.mp3",
       "ss": true,
       "tx": 0.667,
       "ans": 0.75,
@@ -785,7 +785,7 @@
     },
     {
       "id": "tcf-ss-a1-s15-co-3",
-      "audio": "/lib/audio/comprehension/logement/facile-a1__objet-1.mp3",
+      "audio": "/lib/audio/tcf/co/logement/facile-a1__objet-1.mp3",
       "ss": true,
       "tx": 0.875,
       "ans": 1.0,
@@ -794,7 +794,7 @@
     },
     {
       "id": "tcf-ss-a1-s16-co-1",
-      "audio": "/lib/audio/comprehension/loisirs/facile-a1__113.mp3",
+      "audio": "/lib/audio/tcf/co/loisirs/facile-a1__113.mp3",
       "ss": true,
       "tx": 1.0,
       "ans": 1.0,
@@ -803,7 +803,7 @@
     },
     {
       "id": "tcf-ss-a1-s16-co-2",
-      "audio": "/lib/audio/comprehension/loisirs/facile-a1__122.mp3",
+      "audio": "/lib/audio/tcf/co/loisirs/facile-a1__122.mp3",
       "ss": true,
       "tx": 0.789,
       "ans": 1.0,
@@ -812,7 +812,7 @@
     },
     {
       "id": "tcf-ss-a1-s16-co-3",
-      "audio": "/lib/audio/comprehension/loisirs/facile-a1__annonce-1.mp3",
+      "audio": "/lib/audio/tcf/co/loisirs/facile-a1__annonce-1.mp3",
       "ss": true,
       "tx": 0.714,
       "ans": 1.0,
@@ -821,7 +821,7 @@
     },
     {
       "id": "tcf-ss-a1-s16-co-4",
-      "audio": "/lib/audio/comprehension/loisirs/facile-a1__annonce-11.mp3",
+      "audio": "/lib/audio/tcf/co/loisirs/facile-a1__annonce-11.mp3",
       "ss": true,
       "tx": 0.071,
       "ans": 1.0,
@@ -830,7 +830,7 @@
     },
     {
       "id": "tcf-ss-a1-s17-co-1",
-      "audio": "/lib/audio/comprehension/loisirs/facile-a1__annonce-13.mp3",
+      "audio": "/lib/audio/tcf/co/loisirs/facile-a1__annonce-13.mp3",
       "ss": true,
       "tx": 0.545,
       "ans": 0.25,
@@ -839,7 +839,7 @@
     },
     {
       "id": "tcf-ss-a1-s17-co-2",
-      "audio": "/lib/audio/comprehension/loisirs/facile-a1__annonce-3.mp3",
+      "audio": "/lib/audio/tcf/co/loisirs/facile-a1__annonce-3.mp3",
       "ss": true,
       "tx": 0.76,
       "ans": 1.0,
@@ -848,7 +848,7 @@
     },
     {
       "id": "tcf-ss-a1-s17-co-3",
-      "audio": "/lib/audio/comprehension/loisirs/facile-a1__annonce-4.mp3",
+      "audio": "/lib/audio/tcf/co/loisirs/facile-a1__annonce-4.mp3",
       "ss": true,
       "tx": 0.879,
       "ans": 0.75,
@@ -857,7 +857,7 @@
     },
     {
       "id": "tcf-ss-a1-s17-co-4",
-      "audio": "/lib/audio/comprehension/loisirs/facile-a1__annonce-6.mp3",
+      "audio": "/lib/audio/tcf/co/loisirs/facile-a1__annonce-6.mp3",
       "ss": true,
       "tx": 0.63,
       "ans": 0.5,
@@ -866,7 +866,7 @@
     },
     {
       "id": "tcf-ss-a1-s18-co-1",
-      "audio": "/lib/audio/comprehension/loisirs/facile-a1__conversation-42.mp3",
+      "audio": "/lib/audio/tcf/co/loisirs/facile-a1__conversation-42.mp3",
       "ss": true,
       "tx": 0.387,
       "ans": 0.5,
@@ -875,7 +875,7 @@
     },
     {
       "id": "tcf-ss-a1-s18-co-2",
-      "audio": "/lib/audio/comprehension/loisirs/facile-a1__instruction-2.mp3",
+      "audio": "/lib/audio/tcf/co/loisirs/facile-a1__instruction-2.mp3",
       "ss": true,
       "tx": 0.906,
       "ans": 0.75,
@@ -884,7 +884,7 @@
     },
     {
       "id": "tcf-ss-a1-s18-co-3",
-      "audio": "/lib/audio/comprehension/nature/facile-a1__146.mp3",
+      "audio": "/lib/audio/tcf/co/nature/facile-a1__146.mp3",
       "ss": true,
       "tx": 0.706,
       "ans": 1.0,
@@ -893,7 +893,7 @@
     },
     {
       "id": "tcf-ss-a1-s19-co-2",
-      "audio": "/lib/audio/comprehension/nature/facile-a1__radio-40.mp3",
+      "audio": "/lib/audio/tcf/co/nature/facile-a1__radio-40.mp3",
       "ss": true,
       "tx": 0.8,
       "ans": 1.0,
@@ -902,7 +902,7 @@
     },
     {
       "id": "tcf-ss-a1-s19-co-3",
-      "audio": "/lib/audio/comprehension/nourriture/facile-a1__082.mp3",
+      "audio": "/lib/audio/tcf/co/nourriture/facile-a1__082.mp3",
       "ss": true,
       "tx": 0.917,
       "ans": 0.75,
@@ -911,7 +911,7 @@
     },
     {
       "id": "tcf-ss-a1-s19-co-4",
-      "audio": "/lib/audio/comprehension/nourriture/facile-a1__090.mp3",
+      "audio": "/lib/audio/tcf/co/nourriture/facile-a1__090.mp3",
       "ss": true,
       "tx": 0.938,
       "ans": 1.0,
@@ -920,7 +920,7 @@
     },
     {
       "id": "tcf-ss-a1-s20-co-1",
-      "audio": "/lib/audio/comprehension/nourriture/facile-a1__101.mp3",
+      "audio": "/lib/audio/tcf/co/nourriture/facile-a1__101.mp3",
       "ss": true,
       "tx": 0.6,
       "ans": 0.5,
@@ -929,7 +929,7 @@
     },
     {
       "id": "tcf-ss-a1-s20-co-2",
-      "audio": "/lib/audio/comprehension/nourriture/facile-a1__102.mp3",
+      "audio": "/lib/audio/tcf/co/nourriture/facile-a1__102.mp3",
       "ss": true,
       "tx": 0.833,
       "ans": 1.0,
@@ -938,7 +938,7 @@
     },
     {
       "id": "tcf-ss-a1-s20-co-3",
-      "audio": "/lib/audio/comprehension/nourriture/facile-a1__138.mp3",
+      "audio": "/lib/audio/tcf/co/nourriture/facile-a1__138.mp3",
       "ss": true,
       "tx": 0.864,
       "ans": 0.5,
@@ -947,7 +947,7 @@
     },
     {
       "id": "tcf-ss-a1-s20-co-4",
-      "audio": "/lib/audio/comprehension/nourriture/facile-a1__annonce-25.mp3",
+      "audio": "/lib/audio/tcf/co/nourriture/facile-a1__annonce-25.mp3",
       "ss": true,
       "tx": 0.4,
       "ans": 0.25,
@@ -956,7 +956,7 @@
     },
     {
       "id": "tcf-ss-a1-s21-co-1",
-      "audio": "/lib/audio/comprehension/nourriture/facile-a1__conversation-6.mp3",
+      "audio": "/lib/audio/tcf/co/nourriture/facile-a1__conversation-6.mp3",
       "ss": true,
       "tx": 0.286,
       "ans": 0.5,
@@ -965,7 +965,7 @@
     },
     {
       "id": "tcf-ss-a1-s21-co-2",
-      "audio": "/lib/audio/comprehension/nourriture/facile-a1__objet-7.mp3",
+      "audio": "/lib/audio/tcf/co/nourriture/facile-a1__objet-7.mp3",
       "ss": true,
       "tx": 0.96,
       "ans": 0.75,
@@ -974,7 +974,7 @@
     },
     {
       "id": "tcf-ss-a1-s21-co-3",
-      "audio": "/lib/audio/comprehension/nourriture/facile-a1__radio-31.mp3",
+      "audio": "/lib/audio/tcf/co/nourriture/facile-a1__radio-31.mp3",
       "ss": true,
       "tx": 0.348,
       "ans": 0.75,
@@ -983,7 +983,7 @@
     },
     {
       "id": "tcf-ss-a1-s22-co-1",
-      "audio": "/lib/audio/comprehension/nourriture/facile-a1__radio-39.mp3",
+      "audio": "/lib/audio/tcf/co/nourriture/facile-a1__radio-39.mp3",
       "ss": true,
       "tx": 0.962,
       "ans": 1.0,
@@ -992,7 +992,7 @@
     },
     {
       "id": "tcf-ss-a1-s22-co-2",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__027.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__027.mp3",
       "ss": true,
       "tx": 0.958,
       "ans": 0.5,
@@ -1001,7 +1001,7 @@
     },
     {
       "id": "tcf-ss-a1-s22-co-3",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__034.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__034.mp3",
       "ss": true,
       "tx": 0.778,
       "ans": 1.0,
@@ -1010,7 +1010,7 @@
     },
     {
       "id": "tcf-ss-a1-s22-co-4",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__035.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__035.mp3",
       "ss": true,
       "tx": 0.722,
       "ans": 0.5,
@@ -1019,7 +1019,7 @@
     },
     {
       "id": "tcf-ss-a1-s23-co-1",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__045.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__045.mp3",
       "ss": true,
       "tx": 0.938,
       "ans": 1.0,
@@ -1028,7 +1028,7 @@
     },
     {
       "id": "tcf-ss-a1-s23-co-2",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__056.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__056.mp3",
       "ss": true,
       "tx": 0.667,
       "ans": 0.75,
@@ -1037,7 +1037,7 @@
     },
     {
       "id": "tcf-ss-a1-s23-co-3",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__059.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__059.mp3",
       "ss": true,
       "tx": 0.733,
       "ans": 0.75,
@@ -1046,7 +1046,7 @@
     },
     {
       "id": "tcf-ss-a1-s23-co-4",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__060.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__060.mp3",
       "ss": true,
       "tx": 0.72,
       "ans": 0.25,
@@ -1055,7 +1055,7 @@
     },
     {
       "id": "tcf-ss-a1-s24-co-1",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__067.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__067.mp3",
       "ss": true,
       "tx": 0.889,
       "ans": 1.0,
@@ -1064,7 +1064,7 @@
     },
     {
       "id": "tcf-ss-a1-s24-co-2",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__068.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__068.mp3",
       "ss": true,
       "tx": 0.8,
       "ans": 0.75,
@@ -1073,7 +1073,7 @@
     },
     {
       "id": "tcf-ss-a1-s24-co-3",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__081.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__081.mp3",
       "ss": true,
       "tx": 0.917,
       "ans": 0.75,
@@ -1082,7 +1082,7 @@
     },
     {
       "id": "tcf-ss-a1-s24-co-4",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__083.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__083.mp3",
       "ss": true,
       "tx": 0.808,
       "ans": 0.5,
@@ -1091,7 +1091,7 @@
     },
     {
       "id": "tcf-ss-a1-s25-co-1",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__089.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__089.mp3",
       "ss": true,
       "tx": 0.833,
       "ans": 0.5,
@@ -1100,7 +1100,7 @@
     },
     {
       "id": "tcf-ss-a1-s25-co-2",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__091.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__091.mp3",
       "ss": true,
       "tx": 0.917,
       "ans": 0.75,
@@ -1109,7 +1109,7 @@
     },
     {
       "id": "tcf-ss-a1-s25-co-3",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__092.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__092.mp3",
       "ss": true,
       "tx": 0.842,
       "ans": 1.0,
@@ -1118,7 +1118,7 @@
     },
     {
       "id": "tcf-ss-a1-s25-co-4",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__093.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__093.mp3",
       "ss": true,
       "tx": 0.862,
       "ans": 0.75,
@@ -1127,7 +1127,7 @@
     },
     {
       "id": "tcf-ss-a1-s26-co-1",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__094.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__094.mp3",
       "ss": true,
       "tx": 0.632,
       "ans": 0.75,
@@ -1136,7 +1136,7 @@
     },
     {
       "id": "tcf-ss-a1-s26-co-2",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__100.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__100.mp3",
       "ss": true,
       "tx": 0.8,
       "ans": 0.5,
@@ -1145,7 +1145,7 @@
     },
     {
       "id": "tcf-ss-a1-s26-co-3",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__103.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__103.mp3",
       "ss": true,
       "tx": 0.842,
       "ans": 0.75,
@@ -1154,7 +1154,7 @@
     },
     {
       "id": "tcf-ss-a1-s26-co-4",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__105.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__105.mp3",
       "ss": true,
       "tx": 0.92,
       "ans": 0.5,
@@ -1163,7 +1163,7 @@
     },
     {
       "id": "tcf-ss-a1-s27-co-1",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__115.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__115.mp3",
       "ss": true,
       "tx": 0.826,
       "ans": 0.5,
@@ -1172,7 +1172,7 @@
     },
     {
       "id": "tcf-ss-a1-s27-co-2",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__116.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__116.mp3",
       "ss": true,
       "tx": 0.944,
       "ans": 0.75,
@@ -1181,7 +1181,7 @@
     },
     {
       "id": "tcf-ss-a1-s27-co-3",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__123.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__123.mp3",
       "ss": true,
       "tx": 0.812,
       "ans": 1.0,
@@ -1190,7 +1190,7 @@
     },
     {
       "id": "tcf-ss-a1-s27-co-4",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__124.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__124.mp3",
       "ss": true,
       "tx": 0.941,
       "ans": 1.0,
@@ -1199,7 +1199,7 @@
     },
     {
       "id": "tcf-ss-a1-s28-co-1",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__126.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__126.mp3",
       "ss": true,
       "tx": 0.905,
       "ans": 0.5,
@@ -1208,7 +1208,7 @@
     },
     {
       "id": "tcf-ss-a1-s28-co-2",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__133.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__133.mp3",
       "ss": true,
       "tx": 0.647,
       "ans": 0.75,
@@ -1217,7 +1217,7 @@
     },
     {
       "id": "tcf-ss-a1-s28-co-3",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__135.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__135.mp3",
       "ss": true,
       "tx": 0.789,
       "ans": 0.5,
@@ -1226,7 +1226,7 @@
     },
     {
       "id": "tcf-ss-a1-s28-co-4",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__148.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__148.mp3",
       "ss": true,
       "tx": 0.931,
       "ans": 0.75,
@@ -1235,7 +1235,7 @@
     },
     {
       "id": "tcf-ss-a1-s29-co-1",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__149.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__149.mp3",
       "ss": true,
       "tx": 0.897,
       "ans": 0.25,
@@ -1244,7 +1244,7 @@
     },
     {
       "id": "tcf-ss-a1-s29-co-2",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__156.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__156.mp3",
       "ss": true,
       "tx": 0.833,
       "ans": 1.0,
@@ -1253,7 +1253,7 @@
     },
     {
       "id": "tcf-ss-a1-s29-co-3",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__157.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__157.mp3",
       "ss": true,
       "tx": 0.611,
       "ans": 1.0,
@@ -1262,7 +1262,7 @@
     },
     {
       "id": "tcf-ss-a1-s29-co-4",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__159.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__159.mp3",
       "ss": true,
       "tx": 0.833,
       "ans": 0.5,
@@ -1271,7 +1271,7 @@
     },
     {
       "id": "tcf-ss-a1-s30-co-1",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__178.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__178.mp3",
       "ss": true,
       "tx": 0.643,
       "ans": 0.0,
@@ -1280,7 +1280,7 @@
     },
     {
       "id": "tcf-ss-a1-s30-co-2",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__180.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__180.mp3",
       "ss": true,
       "tx": 0.882,
       "ans": 0.75,
@@ -1289,7 +1289,7 @@
     },
     {
       "id": "tcf-ss-a1-s30-co-3",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__181.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__181.mp3",
       "ss": true,
       "tx": 0.692,
       "ans": 0.75,
@@ -1298,7 +1298,7 @@
     },
     {
       "id": "tcf-ss-a1-s30-co-4",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__188.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__188.mp3",
       "ss": true,
       "tx": 0.944,
       "ans": 1.0,
@@ -1307,7 +1307,7 @@
     },
     {
       "id": "tcf-ss-a1-s31-co-1",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__189.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__189.mp3",
       "ss": true,
       "tx": 0.944,
       "ans": 0.75,
@@ -1316,7 +1316,7 @@
     },
     {
       "id": "tcf-ss-a1-s31-co-2",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__192.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__192.mp3",
       "ss": true,
       "tx": 1.0,
       "ans": 1.0,
@@ -1325,7 +1325,7 @@
     },
     {
       "id": "tcf-ss-a1-s31-co-3",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__200.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__200.mp3",
       "ss": true,
       "tx": 0.6,
       "ans": 0.75,
@@ -1334,7 +1334,7 @@
     },
     {
       "id": "tcf-ss-a1-s31-co-4",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__201.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__201.mp3",
       "ss": true,
       "tx": 0.938,
       "ans": 0.5,
@@ -1343,7 +1343,7 @@
     },
     {
       "id": "tcf-ss-a1-s32-co-1",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__202.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__202.mp3",
       "ss": true,
       "tx": 0.75,
       "ans": 0.75,
@@ -1352,7 +1352,7 @@
     },
     {
       "id": "tcf-ss-a1-s32-co-2",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__203.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__203.mp3",
       "ss": true,
       "tx": 1.0,
       "ans": 1.0,
@@ -1361,7 +1361,7 @@
     },
     {
       "id": "tcf-ss-a1-s32-co-3",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__204.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__204.mp3",
       "ss": true,
       "tx": 0.697,
       "ans": 1.0,
@@ -1370,7 +1370,7 @@
     },
     {
       "id": "tcf-ss-a1-s32-co-4",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__205.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__205.mp3",
       "ss": true,
       "tx": 0.75,
       "ans": 0.75,
@@ -1379,7 +1379,7 @@
     },
     {
       "id": "tcf-ss-a1-s33-co-1",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__211.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__211.mp3",
       "ss": true,
       "tx": 0.579,
       "ans": 0.75,
@@ -1388,7 +1388,7 @@
     },
     {
       "id": "tcf-ss-a1-s33-co-2",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__212.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__212.mp3",
       "ss": true,
       "tx": 0.882,
       "ans": 0.5,
@@ -1397,7 +1397,7 @@
     },
     {
       "id": "tcf-ss-a1-s33-co-3",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__213.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__213.mp3",
       "ss": true,
       "tx": 0.737,
       "ans": 0.75,
@@ -1406,7 +1406,7 @@
     },
     {
       "id": "tcf-ss-a1-s33-co-4",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__214.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__214.mp3",
       "ss": true,
       "tx": 0.913,
       "ans": 0.5,
@@ -1415,7 +1415,7 @@
     },
     {
       "id": "tcf-ss-a1-s34-co-1",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__215.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__215.mp3",
       "ss": true,
       "tx": 0.741,
       "ans": 0.75,
@@ -1424,7 +1424,7 @@
     },
     {
       "id": "tcf-ss-a1-s34-co-2",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__216.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__216.mp3",
       "ss": true,
       "tx": 0.781,
       "ans": 1.0,
@@ -1433,7 +1433,7 @@
     },
     {
       "id": "tcf-ss-a1-s34-co-3",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__222.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__222.mp3",
       "ss": true,
       "tx": 0.938,
       "ans": 0.75,
@@ -1442,7 +1442,7 @@
     },
     {
       "id": "tcf-ss-a1-s34-co-4",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__223.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__223.mp3",
       "ss": true,
       "tx": 0.75,
       "ans": 0.75,
@@ -1451,7 +1451,7 @@
     },
     {
       "id": "tcf-ss-a1-s35-co-1",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__224.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__224.mp3",
       "ss": true,
       "tx": 0.857,
       "ans": 1.0,
@@ -1460,7 +1460,7 @@
     },
     {
       "id": "tcf-ss-a1-s35-co-2",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__225.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__225.mp3",
       "ss": true,
       "tx": 0.733,
       "ans": 0.75,
@@ -1469,7 +1469,7 @@
     },
     {
       "id": "tcf-ss-a1-s35-co-3",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__226.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__226.mp3",
       "ss": true,
       "tx": 0.788,
       "ans": 0.5,
@@ -1478,7 +1478,7 @@
     },
     {
       "id": "tcf-ss-a1-s35-co-4",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__227.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__227.mp3",
       "ss": true,
       "tx": 0.65,
       "ans": 0.5,
@@ -1487,7 +1487,7 @@
     },
     {
       "id": "tcf-ss-a1-s36-co-1",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__228.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__228.mp3",
       "ss": true,
       "tx": 0.933,
       "ans": 0.5,
@@ -1496,7 +1496,7 @@
     },
     {
       "id": "tcf-ss-a1-s36-co-2",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__229.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__229.mp3",
       "ss": true,
       "tx": 0.909,
       "ans": 0.5,
@@ -1505,7 +1505,7 @@
     },
     {
       "id": "tcf-ss-a1-s36-co-3",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__230.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__230.mp3",
       "ss": true,
       "tx": 0.829,
       "ans": 0.75,
@@ -1514,7 +1514,7 @@
     },
     {
       "id": "tcf-ss-a1-s36-co-4",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__231.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__231.mp3",
       "ss": true,
       "tx": 0.857,
       "ans": 1.0,
@@ -1523,7 +1523,7 @@
     },
     {
       "id": "tcf-ss-a1-s37-co-1",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__232.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__232.mp3",
       "ss": true,
       "tx": 0.862,
       "ans": 0.75,
@@ -1532,7 +1532,7 @@
     },
     {
       "id": "tcf-ss-a1-s37-co-2",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__233.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__233.mp3",
       "ss": true,
       "tx": 0.882,
       "ans": 1.0,
@@ -1541,7 +1541,7 @@
     },
     {
       "id": "tcf-ss-a1-s37-co-3",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__annonce-26.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__annonce-26.mp3",
       "ss": true,
       "tx": 0.533,
       "ans": 0.75,
@@ -1550,7 +1550,7 @@
     },
     {
       "id": "tcf-ss-a1-s37-co-4",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__annonce-8.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__annonce-8.mp3",
       "ss": true,
       "tx": 0.0,
       "ans": 1.0,
@@ -1559,7 +1559,7 @@
     },
     {
       "id": "tcf-ss-a1-s38-co-1",
-      "audio": "/lib/audio/comprehension/objets/facile-a1__objet-8.mp3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__objet-8.mp3",
       "ss": true,
       "tx": 0.897,
       "ans": 1.0,
@@ -1568,7 +1568,7 @@
     },
     {
       "id": "tcf-ss-a1-s38-co-2",
-      "audio": "/lib/audio/comprehension/presenter/facile-a1__005.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__005.mp3",
       "ss": true,
       "tx": 0.818,
       "ans": 1.0,
@@ -1577,7 +1577,7 @@
     },
     {
       "id": "tcf-ss-a1-s38-co-3",
-      "audio": "/lib/audio/comprehension/presenter/facile-a1__013.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__013.mp3",
       "ss": true,
       "tx": 0.429,
       "ans": 0.5,
@@ -1586,7 +1586,7 @@
     },
     {
       "id": "tcf-ss-a1-s38-co-4",
-      "audio": "/lib/audio/comprehension/presenter/facile-a1__047.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__047.mp3",
       "ss": true,
       "tx": 0.706,
       "ans": 0.0,
@@ -1595,7 +1595,7 @@
     },
     {
       "id": "tcf-ss-a1-s39-co-1",
-      "audio": "/lib/audio/comprehension/presenter/facile-a1__048.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__048.mp3",
       "ss": true,
       "tx": 0.917,
       "ans": 1.0,
@@ -1604,7 +1604,7 @@
     },
     {
       "id": "tcf-ss-a1-s39-co-2",
-      "audio": "/lib/audio/comprehension/presenter/facile-a1__049.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__049.mp3",
       "ss": true,
       "tx": 0.826,
       "ans": 0.75,
@@ -1613,7 +1613,7 @@
     },
     {
       "id": "tcf-ss-a1-s39-co-3",
-      "audio": "/lib/audio/comprehension/presenter/facile-a1__058.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__058.mp3",
       "ss": true,
       "tx": 0.762,
       "ans": 0.75,
@@ -1622,7 +1622,7 @@
     },
     {
       "id": "tcf-ss-a1-s39-co-4",
-      "audio": "/lib/audio/comprehension/presenter/facile-a1__061.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__061.mp3",
       "ss": true,
       "tx": 0.87,
       "ans": 0.75,
@@ -1631,7 +1631,7 @@
     },
     {
       "id": "tcf-ss-a1-s40-co-1",
-      "audio": "/lib/audio/comprehension/presenter/facile-a1__070.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__070.mp3",
       "ss": true,
       "tx": 0.526,
       "ans": 0.5,
@@ -1640,7 +1640,7 @@
     },
     {
       "id": "tcf-ss-a1-s40-co-2",
-      "audio": "/lib/audio/comprehension/presenter/facile-a1__071.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__071.mp3",
       "ss": true,
       "tx": 0.87,
       "ans": 1.0,
@@ -1649,7 +1649,7 @@
     },
     {
       "id": "tcf-ss-a1-s40-co-3",
-      "audio": "/lib/audio/comprehension/presenter/facile-a1__078.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__078.mp3",
       "ss": true,
       "tx": 0.857,
       "ans": 0.5,
@@ -1658,7 +1658,7 @@
     },
     {
       "id": "tcf-ss-a1-s40-co-4",
-      "audio": "/lib/audio/comprehension/presenter/facile-a1__079.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__079.mp3",
       "ss": true,
       "tx": 0.647,
       "ans": 0.25,
@@ -1667,7 +1667,7 @@
     },
     {
       "id": "tcf-ss-a1-s41-co-1",
-      "audio": "/lib/audio/comprehension/presenter/facile-a1__127.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__127.mp3",
       "ss": true,
       "tx": 0.714,
       "ans": 0.5,
@@ -1676,7 +1676,7 @@
     },
     {
       "id": "tcf-ss-a1-s41-co-2",
-      "audio": "/lib/audio/comprehension/presenter/facile-a1__137.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__137.mp3",
       "ss": true,
       "tx": 0.955,
       "ans": 1.0,
@@ -1685,7 +1685,7 @@
     },
     {
       "id": "tcf-ss-a1-s41-co-3",
-      "audio": "/lib/audio/comprehension/presenter/facile-a1__144.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__144.mp3",
       "ss": true,
       "tx": 0.6,
       "ans": 0.5,
@@ -1694,7 +1694,7 @@
     },
     {
       "id": "tcf-ss-a1-s41-co-4",
-      "audio": "/lib/audio/comprehension/presenter/facile-a1__158.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__158.mp3",
       "ss": true,
       "tx": 1.0,
       "ans": 0.0,
@@ -1703,7 +1703,7 @@
     },
     {
       "id": "tcf-ss-a1-s42-co-1",
-      "audio": "/lib/audio/comprehension/presenter/facile-a1__160.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__160.mp3",
       "ss": true,
       "tx": 0.879,
       "ans": 0.75,
@@ -1712,7 +1712,7 @@
     },
     {
       "id": "tcf-ss-a1-s42-co-2",
-      "audio": "/lib/audio/comprehension/presenter/facile-a1__169.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__169.mp3",
       "ss": true,
       "tx": 0.842,
       "ans": 0.0,
@@ -1721,7 +1721,7 @@
     },
     {
       "id": "tcf-ss-a1-s42-co-3",
-      "audio": "/lib/audio/comprehension/presenter/facile-a1__170.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__170.mp3",
       "ss": true,
       "tx": 0.821,
       "ans": 0.75,
@@ -1730,7 +1730,7 @@
     },
     {
       "id": "tcf-ss-a1-s42-co-4",
-      "audio": "/lib/audio/comprehension/presenter/facile-a1__175.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__175.mp3",
       "ss": true,
       "tx": 0.808,
       "ans": 0.0,
@@ -1739,7 +1739,7 @@
     },
     {
       "id": "tcf-ss-a1-s43-co-1",
-      "audio": "/lib/audio/comprehension/presenter/facile-a1__179.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__179.mp3",
       "ss": true,
       "tx": 1.0,
       "ans": 0.0,
@@ -1748,7 +1748,7 @@
     },
     {
       "id": "tcf-ss-a1-s43-co-2",
-      "audio": "/lib/audio/comprehension/presenter/facile-a1__182.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__182.mp3",
       "ss": true,
       "tx": 0.909,
       "ans": 0.75,
@@ -1757,7 +1757,7 @@
     },
     {
       "id": "tcf-ss-a1-s43-co-3",
-      "audio": "/lib/audio/comprehension/presenter/facile-a1__197.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__197.mp3",
       "ss": true,
       "tx": 1.0,
       "ans": 0.0,
@@ -1766,7 +1766,7 @@
     },
     {
       "id": "tcf-ss-a1-s43-co-4",
-      "audio": "/lib/audio/comprehension/presenter/facile-a1__annonce-23.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__annonce-23.mp3",
       "ss": true,
       "tx": 0.56,
       "ans": 0.75,
@@ -1775,7 +1775,7 @@
     },
     {
       "id": "tcf-ss-a1-s44-co-4",
-      "audio": "/lib/audio/comprehension/presenter/facile-a1__conversation-43.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__conversation-43.mp3",
       "ss": true,
       "tx": 0.125,
       "ans": 0.75,
@@ -1784,7 +1784,7 @@
     },
     {
       "id": "tcf-ss-a1-s45-co-2",
-      "audio": "/lib/audio/comprehension/presenter/facile-a1__instruction-4.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__instruction-4.mp3",
       "ss": true,
       "tx": 0.882,
       "ans": 0.75,
@@ -1793,7 +1793,7 @@
     },
     {
       "id": "tcf-ss-a1-s45-co-3",
-      "audio": "/lib/audio/comprehension/presenter/facile-a1__message-11.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__message-11.mp3",
       "ss": true,
       "tx": 0.28,
       "ans": 0.5,
@@ -1802,7 +1802,7 @@
     },
     {
       "id": "tcf-ss-a1-s45-co-4",
-      "audio": "/lib/audio/comprehension/presenter/facile-a1__message-16.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__message-16.mp3",
       "ss": true,
       "tx": 0.292,
       "ans": 0.5,
@@ -1811,7 +1811,7 @@
     },
     {
       "id": "tcf-ss-a1-s46-co-1",
-      "audio": "/lib/audio/comprehension/presenter/facile-a1__message-20.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__message-20.mp3",
       "ss": true,
       "tx": 0.97,
       "ans": 1.0,
@@ -1820,7 +1820,7 @@
     },
     {
       "id": "tcf-ss-a1-s46-co-2",
-      "audio": "/lib/audio/comprehension/presenter/facile-a1__message-6.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__message-6.mp3",
       "ss": true,
       "tx": 0.871,
       "ans": 0.0,
@@ -1829,7 +1829,7 @@
     },
     {
       "id": "tcf-ss-a1-s46-co-3",
-      "audio": "/lib/audio/comprehension/presenter/facile-a1__message-9.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__message-9.mp3",
       "ss": true,
       "tx": 0.154,
       "ans": 0.75,
@@ -1838,7 +1838,7 @@
     },
     {
       "id": "tcf-ss-a1-s46-co-4",
-      "audio": "/lib/audio/comprehension/presenter/facile-a1__objet-4.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__objet-4.mp3",
       "ss": true,
       "tx": 0.828,
       "ans": 1.0,
@@ -1847,7 +1847,7 @@
     },
     {
       "id": "tcf-ss-a1-s47-co-1",
-      "audio": "/lib/audio/comprehension/presenter/facile-a1__objet-9.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__objet-9.mp3",
       "ss": true,
       "tx": 0.821,
       "ans": 1.0,
@@ -1856,7 +1856,7 @@
     },
     {
       "id": "tcf-ss-a1-s47-co-3",
-      "audio": "/lib/audio/comprehension/presenter/facile-a1__radio-38.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__radio-38.mp3",
       "ss": true,
       "tx": 0.852,
       "ans": 1.0,
@@ -1865,7 +1865,7 @@
     },
     {
       "id": "tcf-ss-a1-s47-co-4",
-      "audio": "/lib/audio/comprehension/sante/facile-a1__038.mp3",
+      "audio": "/lib/audio/tcf/co/sante/facile-a1__038.mp3",
       "ss": true,
       "tx": 0.846,
       "ans": 0.75,
@@ -1874,7 +1874,7 @@
     },
     {
       "id": "tcf-ss-a1-s48-co-1",
-      "audio": "/lib/audio/comprehension/sante/facile-a1__114.mp3",
+      "audio": "/lib/audio/tcf/co/sante/facile-a1__114.mp3",
       "ss": true,
       "tx": 0.667,
       "ans": 0.75,
@@ -1883,7 +1883,7 @@
     },
     {
       "id": "tcf-ss-a1-s48-co-2",
-      "audio": "/lib/audio/comprehension/sante/facile-a1__125.mp3",
+      "audio": "/lib/audio/tcf/co/sante/facile-a1__125.mp3",
       "ss": true,
       "tx": 1.0,
       "ans": 0.5,
@@ -1892,7 +1892,7 @@
     },
     {
       "id": "tcf-ss-a1-s48-co-3",
-      "audio": "/lib/audio/comprehension/transports/facile-a1__012.mp3",
+      "audio": "/lib/audio/tcf/co/transports/facile-a1__012.mp3",
       "ss": true,
       "tx": 0.632,
       "ans": 0.5,
@@ -1901,7 +1901,7 @@
     },
     {
       "id": "tcf-ss-a1-s48-co-4",
-      "audio": "/lib/audio/comprehension/transports/facile-a1__014.mp3",
+      "audio": "/lib/audio/tcf/co/transports/facile-a1__014.mp3",
       "ss": true,
       "tx": 0.444,
       "ans": 0.5,
@@ -1910,7 +1910,7 @@
     },
     {
       "id": "tcf-ss-a1-s49-co-1",
-      "audio": "/lib/audio/comprehension/transports/facile-a1__015.mp3",
+      "audio": "/lib/audio/tcf/co/transports/facile-a1__015.mp3",
       "ss": true,
       "tx": 0.429,
       "ans": 0.25,
@@ -1919,7 +1919,7 @@
     },
     {
       "id": "tcf-ss-a1-s49-co-2",
-      "audio": "/lib/audio/comprehension/transports/facile-a1__104.mp3",
+      "audio": "/lib/audio/tcf/co/transports/facile-a1__104.mp3",
       "ss": true,
       "tx": 0.903,
       "ans": 1.0,
@@ -1928,7 +1928,7 @@
     },
     {
       "id": "tcf-ss-a1-s49-co-4",
-      "audio": "/lib/audio/comprehension/transports/facile-a1__annonce-14.mp3",
+      "audio": "/lib/audio/tcf/co/transports/facile-a1__annonce-14.mp3",
       "ss": true,
       "tx": 0.96,
       "ans": 1.0,
@@ -1937,7 +1937,7 @@
     },
     {
       "id": "tcf-ss-a1-s50-co-1",
-      "audio": "/lib/audio/comprehension/transports/facile-a1__annonce-16.mp3",
+      "audio": "/lib/audio/tcf/co/transports/facile-a1__annonce-16.mp3",
       "ss": true,
       "tx": 0.786,
       "ans": 1.0,
@@ -1946,7 +1946,7 @@
     },
     {
       "id": "tcf-ss-a1-s50-co-2",
-      "audio": "/lib/audio/comprehension/transports/facile-a1__annonce-17.mp3",
+      "audio": "/lib/audio/tcf/co/transports/facile-a1__annonce-17.mp3",
       "ss": true,
       "tx": 0.897,
       "ans": 0.75,
@@ -1955,7 +1955,7 @@
     },
     {
       "id": "tcf-ss-a1-s50-co-3",
-      "audio": "/lib/audio/comprehension/transports/facile-a1__annonce-24.mp3",
+      "audio": "/lib/audio/tcf/co/transports/facile-a1__annonce-24.mp3",
       "ss": true,
       "tx": 0.586,
       "ans": 0.25,
@@ -1964,7 +1964,7 @@
     },
     {
       "id": "tcf-ss-a1-s50-co-4",
-      "audio": "/lib/audio/comprehension/transports/facile-a1__annonce-29.mp3",
+      "audio": "/lib/audio/tcf/co/transports/facile-a1__annonce-29.mp3",
       "ss": true,
       "tx": 0.846,
       "ans": 0.75,
@@ -1973,7 +1973,7 @@
     },
     {
       "id": "tcf-ss-a1-s51-co-2",
-      "audio": "/lib/audio/comprehension/transports/facile-a1__conversation-44.mp3",
+      "audio": "/lib/audio/tcf/co/transports/facile-a1__conversation-44.mp3",
       "ss": true,
       "tx": 0.261,
       "ans": 0.5,
@@ -1982,7 +1982,7 @@
     },
     {
       "id": "tcf-ss-a1-s51-co-3",
-      "audio": "/lib/audio/comprehension/transports/facile-a1__instruction-1.mp3",
+      "audio": "/lib/audio/tcf/co/transports/facile-a1__instruction-1.mp3",
       "ss": true,
       "tx": 0.933,
       "ans": 1.0,
@@ -1991,7 +1991,7 @@
     },
     {
       "id": "tcf-ss-a1-s52-co-1",
-      "audio": "/lib/audio/comprehension/travail/facile-a1__168.mp3",
+      "audio": "/lib/audio/tcf/co/travail/facile-a1__168.mp3",
       "ss": true,
       "tx": 0.857,
       "ans": 0.0,
@@ -2000,7 +2000,7 @@
     },
     {
       "id": "tcf-ss-a1-s52-co-2",
-      "audio": "/lib/audio/comprehension/travail/facile-a1__171.mp3",
+      "audio": "/lib/audio/tcf/co/travail/facile-a1__171.mp3",
       "ss": true,
       "tx": 0.821,
       "ans": 0.75,
@@ -2009,7 +2009,7 @@
     },
     {
       "id": "tcf-ss-a1-s52-co-3",
-      "audio": "/lib/audio/comprehension/travail/facile-a1__177.mp3",
+      "audio": "/lib/audio/tcf/co/travail/facile-a1__177.mp3",
       "ss": true,
       "tx": 0.762,
       "ans": 0.0,
@@ -2018,7 +2018,7 @@
     },
     {
       "id": "tcf-ss-a1-s52-co-4",
-      "audio": "/lib/audio/comprehension/travail/facile-a1__186.mp3",
+      "audio": "/lib/audio/tcf/co/travail/facile-a1__186.mp3",
       "ss": true,
       "tx": 0.826,
       "ans": 0.0,
@@ -2027,7 +2027,7 @@
     },
     {
       "id": "tcf-ss-a1-s53-co-1",
-      "audio": "/lib/audio/comprehension/travail/facile-a1__190.mp3",
+      "audio": "/lib/audio/tcf/co/travail/facile-a1__190.mp3",
       "ss": true,
       "tx": 0.889,
       "ans": 0.0,
@@ -2036,7 +2036,7 @@
     },
     {
       "id": "tcf-ss-a1-s53-co-2",
-      "audio": "/lib/audio/comprehension/travail/facile-a1__191.mp3",
+      "audio": "/lib/audio/tcf/co/travail/facile-a1__191.mp3",
       "ss": true,
       "tx": 0.895,
       "ans": 0.0,
@@ -2045,7 +2045,7 @@
     },
     {
       "id": "tcf-ss-a1-s53-co-3",
-      "audio": "/lib/audio/comprehension/travail/facile-a1__193.mp3",
+      "audio": "/lib/audio/tcf/co/travail/facile-a1__193.mp3",
       "ss": true,
       "tx": 0.783,
       "ans": 0.0,
@@ -2054,7 +2054,7 @@
     },
     {
       "id": "tcf-ss-a1-s53-co-4",
-      "audio": "/lib/audio/comprehension/travail/facile-a1__message-12.mp3",
+      "audio": "/lib/audio/tcf/co/travail/facile-a1__message-12.mp3",
       "ss": true,
       "tx": 0.88,
       "ans": 1.0,
@@ -2063,7 +2063,7 @@
     },
     {
       "id": "tcf-ss-a1-s54-co-1",
-      "audio": "/lib/audio/comprehension/vetements/facile-a1__134.mp3",
+      "audio": "/lib/audio/tcf/co/vetements/facile-a1__134.mp3",
       "ss": true,
       "tx": 0.545,
       "ans": 0.0,
@@ -2072,7 +2072,7 @@
     },
     {
       "id": "tcf-ss-a1-s54-co-2",
-      "audio": "/lib/audio/comprehension/vetements/facile-a1__145.mp3",
+      "audio": "/lib/audio/tcf/co/vetements/facile-a1__145.mp3",
       "ss": true,
       "tx": 0.5,
       "ans": 0.5,
@@ -2081,7 +2081,7 @@
     },
     {
       "id": "tcf-ss-a1-s54-co-3",
-      "audio": "/lib/audio/comprehension/vetements/facile-a1__147.mp3",
+      "audio": "/lib/audio/tcf/co/vetements/facile-a1__147.mp3",
       "ss": true,
       "tx": 0.68,
       "ans": 0.5,
@@ -2090,7 +2090,7 @@
     },
     {
       "id": "tcf-a2j-s1-co-1",
-      "audio": "/lib/audio/comprehension/radio/les-annonces-publiques-1.mp3",
+      "audio": "/lib/audio/tcf/co/radio/les-annonces-publiques-1.mp3",
       "ss": false,
       "tx": 0.677,
       "ans": 0.0,
@@ -2099,7 +2099,7 @@
     },
     {
       "id": "tcf-a2j-s1-co-2",
-      "audio": "/lib/audio/comprehension/radio/les-annonces-a-la-radio-1.mp3",
+      "audio": "/lib/audio/tcf/co/radio/les-annonces-a-la-radio-1.mp3",
       "ss": false,
       "tx": 0.829,
       "ans": 0.333,
@@ -2108,7 +2108,7 @@
     },
     {
       "id": "tcf-a2j-s1-co-3",
-      "audio": "/lib/audio/comprehension/sante/chez-le-dentiste.mp3",
+      "audio": "/lib/audio/tcf/co/sante/chez-le-dentiste.mp3",
       "ss": false,
       "tx": 0.875,
       "ans": 0.5,
@@ -2117,7 +2117,7 @@
     },
     {
       "id": "tcf-a2j-s1-co-4",
-      "audio": "/lib/audio/comprehension/ecole/en-classe-1.mp3",
+      "audio": "/lib/audio/tcf/co/ecole/en-classe-1.mp3",
       "ss": false,
       "tx": 0.943,
       "ans": 0.0,
@@ -2126,7 +2126,7 @@
     },
     {
       "id": "tcf-a2j-s2-co-1",
-      "audio": "/lib/audio/comprehension/radio/les-annonces-publiques-2.mp3",
+      "audio": "/lib/audio/tcf/co/radio/les-annonces-publiques-2.mp3",
       "ss": false,
       "tx": 0.7,
       "ans": 0.0,
@@ -2135,7 +2135,7 @@
     },
     {
       "id": "tcf-a2j-s2-co-2",
-      "audio": "/lib/audio/comprehension/radio/les-annonces-a-la-radio-2.mp3",
+      "audio": "/lib/audio/tcf/co/radio/les-annonces-a-la-radio-2.mp3",
       "ss": false,
       "tx": 0.892,
       "ans": 0.0,
@@ -2144,7 +2144,7 @@
     },
     {
       "id": "tcf-a2j-s2-co-3",
-      "audio": "/lib/audio/comprehension/loisirs/le-sport-2.mp3",
+      "audio": "/lib/audio/tcf/co/loisirs/le-sport-2.mp3",
       "ss": false,
       "tx": 0.795,
       "ans": 0.333,
@@ -2153,7 +2153,7 @@
     },
     {
       "id": "tcf-a2j-s2-co-4",
-      "audio": "/lib/audio/comprehension/ecole/en-classe-2.mp3",
+      "audio": "/lib/audio/tcf/co/ecole/en-classe-2.mp3",
       "ss": false,
       "tx": 0.897,
       "ans": 0.0,
@@ -2162,7 +2162,7 @@
     },
     {
       "id": "tcf-a2-s1-co-1",
-      "audio": "/lib/audio/comprehension/radio/les-annonces-publiques-3.mp3",
+      "audio": "/lib/audio/tcf/co/radio/les-annonces-publiques-3.mp3",
       "ss": false,
       "tx": 0.8,
       "ans": 0.167,
@@ -2171,7 +2171,7 @@
     },
     {
       "id": "tcf-a2-s1-co-2",
-      "audio": "/lib/audio/comprehension/radio/les-annonces-a-la-radio-3.mp3",
+      "audio": "/lib/audio/tcf/co/radio/les-annonces-a-la-radio-3.mp3",
       "ss": false,
       "tx": 0.762,
       "ans": 0.333,
@@ -2180,7 +2180,7 @@
     },
     {
       "id": "tcf-a2p-s1-co-1",
-      "audio": "/lib/audio/comprehension/radio/les-annonces-publiques-4.mp3",
+      "audio": "/lib/audio/tcf/co/radio/les-annonces-publiques-4.mp3",
       "ss": false,
       "tx": 1.0,
       "ans": 0.0,
@@ -2189,7 +2189,7 @@
     },
     {
       "id": "tcf-a2p-s1-co-2",
-      "audio": "/lib/audio/comprehension/radio/les-annonces-a-la-radio-4.mp3",
+      "audio": "/lib/audio/tcf/co/radio/les-annonces-a-la-radio-4.mp3",
       "ss": false,
       "tx": 0.739,
       "ans": 0.167,
@@ -2198,7 +2198,7 @@
     },
     {
       "id": "tcf-a2p-s1-co-3",
-      "audio": "/lib/audio/comprehension/loisirs/le-cours-de-theatre.mp3",
+      "audio": "/lib/audio/tcf/co/loisirs/le-cours-de-theatre.mp3",
       "ss": false,
       "tx": 0.833,
       "ans": 0.167,
@@ -2207,7 +2207,7 @@
     },
     {
       "id": "tcf-a2p-s1-co-4",
-      "audio": "/lib/audio/comprehension/loisirs/la-sortie-entre-amis.mp3",
+      "audio": "/lib/audio/tcf/co/loisirs/la-sortie-entre-amis.mp3",
       "ss": false,
       "tx": 0.926,
       "ans": 0.0,
@@ -2216,7 +2216,7 @@
     },
     {
       "id": "tcf-a2p-s2-co-1",
-      "audio": "/lib/audio/comprehension/loisirs/au-theatre.mp3",
+      "audio": "/lib/audio/tcf/co/loisirs/au-theatre.mp3",
       "ss": false,
       "tx": 0.833,
       "ans": 0.2,
@@ -2225,7 +2225,7 @@
     },
     {
       "id": "tcf-a2p-s2-co-2",
-      "audio": "/lib/audio/comprehension/loisirs/au-cinema-2.mp3",
+      "audio": "/lib/audio/tcf/co/loisirs/au-cinema-2.mp3",
       "ss": false,
       "tx": 0.811,
       "ans": 0.5,
@@ -2234,7 +2234,7 @@
     },
     {
       "id": "tcf-a2p-s2-co-3",
-      "audio": "/lib/audio/comprehension/fetes/la-fete-de-la-musique.mp3",
+      "audio": "/lib/audio/tcf/co/fetes/la-fete-de-la-musique.mp3",
       "ss": false,
       "tx": 0.909,
       "ans": 0.333,
@@ -2243,7 +2243,7 @@
     },
     {
       "id": "tcf-a2p-s2-co-4",
-      "audio": "/lib/audio/comprehension/vie-quotidienne/la-famille-d-accueil.mp3",
+      "audio": "/lib/audio/tcf/co/vie-quotidienne/la-famille-d-accueil.mp3",
       "ss": false,
       "tx": 0.935,
       "ans": 0.0,
@@ -2252,7 +2252,7 @@
     },
     {
       "id": "tcf-a2p-s4-co-1",
-      "audio": "/lib/audio/comprehension/transports/a-l-aeroport.mp3",
+      "audio": "/lib/audio/tcf/co/transports/a-l-aeroport.mp3",
       "ss": false,
       "tx": 0.971,
       "ans": 0.6,
@@ -2261,7 +2261,7 @@
     },
     {
       "id": "tcf-a2p-s4-co-2",
-      "audio": "/lib/audio/comprehension/magasins/au-magasin-de-meubles.mp3",
+      "audio": "/lib/audio/tcf/co/magasins/au-magasin-de-meubles.mp3",
       "ss": false,
       "tx": 0.811,
       "ans": 0.833,
@@ -2270,7 +2270,7 @@
     },
     {
       "id": "tcf-a2p-s4-co-3",
-      "audio": "/lib/audio/comprehension/actualite/le-salon-de-la-patisserie.mp3",
+      "audio": "/lib/audio/tcf/co/actualite/le-salon-de-la-patisserie.mp3",
       "ss": false,
       "tx": 0.839,
       "ans": 0.333,
@@ -2279,7 +2279,7 @@
     },
     {
       "id": "tcf-a2p-s4-co-4",
-      "audio": "/lib/audio/comprehension/vacances/en-vacances-chez-des-amis.mp3",
+      "audio": "/lib/audio/tcf/co/vacances/en-vacances-chez-des-amis.mp3",
       "ss": false,
       "tx": 0.9,
       "ans": 0.0,
@@ -2288,7 +2288,7 @@
     },
     {
       "id": "tcf-a2-sa-co-1",
-      "audio": "/lib/audio/comprehension/radio/les-annonces-publiques-5.mp3",
+      "audio": "/lib/audio/tcf/co/radio/les-annonces-publiques-5.mp3",
       "ss": false,
       "tx": 0.688,
       "ans": 0.167,
@@ -2297,7 +2297,7 @@
     },
     {
       "id": "tcf-a2-sa-co-2",
-      "audio": "/lib/audio/comprehension/radio/les-informations-1.mp3",
+      "audio": "/lib/audio/tcf/co/radio/les-informations-1.mp3",
       "ss": false,
       "tx": 0.88,
       "ans": 0.167,
@@ -2306,7 +2306,7 @@
     },
     {
       "id": "tcf-a2-sa-co-3",
-      "audio": "/lib/audio/comprehension/vacances/a-l-hotel.mp3",
+      "audio": "/lib/audio/tcf/co/vacances/a-l-hotel.mp3",
       "ss": false,
       "tx": 0.824,
       "ans": 0.333,
@@ -2315,7 +2315,7 @@
     },
     {
       "id": "tcf-a2-sb-co-1",
-      "audio": "/lib/audio/comprehension/radio/les-annonces-publiques-6.mp3",
+      "audio": "/lib/audio/tcf/co/radio/les-annonces-publiques-6.mp3",
       "ss": false,
       "tx": 0.6,
       "ans": 0.0,
@@ -2324,7 +2324,7 @@
     },
     {
       "id": "tcf-a2-sb-co-2",
-      "audio": "/lib/audio/comprehension/radio/les-informations-2.mp3",
+      "audio": "/lib/audio/tcf/co/radio/les-informations-2.mp3",
       "ss": false,
       "tx": 0.667,
       "ans": 0.167,
@@ -2333,7 +2333,7 @@
     },
     {
       "id": "tcf-a2-sb-co-3",
-      "audio": "/lib/audio/comprehension/travail/la-formation-professionnelle.mp3",
+      "audio": "/lib/audio/tcf/co/travail/la-formation-professionnelle.mp3",
       "ss": false,
       "tx": 0.833,
       "ans": 0.5,
@@ -2342,7 +2342,7 @@
     },
     {
       "id": "tcf-a2-sc-co-1",
-      "audio": "/lib/audio/comprehension/radio/les-annonces-publiques-7.mp3",
+      "audio": "/lib/audio/tcf/co/radio/les-annonces-publiques-7.mp3",
       "ss": false,
       "tx": 0.882,
       "ans": 0.0,
@@ -2351,7 +2351,7 @@
     },
     {
       "id": "tcf-a2-sc-co-2",
-      "audio": "/lib/audio/comprehension/radio/les-informations-3.mp3",
+      "audio": "/lib/audio/tcf/co/radio/les-informations-3.mp3",
       "ss": false,
       "tx": 1.0,
       "ans": 0.333,
@@ -2360,7 +2360,7 @@
     },
     {
       "id": "tcf-a2-sc-co-3",
-      "audio": "/lib/audio/comprehension/vacances/le-voyage.mp3",
+      "audio": "/lib/audio/tcf/co/vacances/le-voyage.mp3",
       "ss": false,
       "tx": 0.844,
       "ans": 0.0,
@@ -2369,7 +2369,7 @@
     },
     {
       "id": "tcf-ss-a2-s1-co-2",
-      "audio": "/lib/audio/comprehension/achats/moyen-a2__006.mp3",
+      "audio": "/lib/audio/tcf/co/achats/moyen-a2__006.mp3",
       "ss": true,
       "tx": 0.917,
       "ans": 0.5,
@@ -2378,7 +2378,7 @@
     },
     {
       "id": "tcf-ss-a2-s1-co-3",
-      "audio": "/lib/audio/comprehension/achats/moyen-a2__028.mp3",
+      "audio": "/lib/audio/tcf/co/achats/moyen-a2__028.mp3",
       "ss": true,
       "tx": 0.417,
       "ans": 0.333,
@@ -2387,7 +2387,7 @@
     },
     {
       "id": "tcf-ss-a2-s1-co-4",
-      "audio": "/lib/audio/comprehension/achats/moyen-a2__029.mp3",
+      "audio": "/lib/audio/tcf/co/achats/moyen-a2__029.mp3",
       "ss": true,
       "tx": 0.909,
       "ans": 0.667,
@@ -2396,7 +2396,7 @@
     },
     {
       "id": "tcf-ss-a2-s2-co-1",
-      "audio": "/lib/audio/comprehension/achats/moyen-a2__039.mp3",
+      "audio": "/lib/audio/tcf/co/achats/moyen-a2__039.mp3",
       "ss": true,
       "tx": 0.697,
       "ans": 0.5,
@@ -2405,7 +2405,7 @@
     },
     {
       "id": "tcf-ss-a2-s2-co-2",
-      "audio": "/lib/audio/comprehension/achats/moyen-a2__annonce-12.mp3",
+      "audio": "/lib/audio/tcf/co/achats/moyen-a2__annonce-12.mp3",
       "ss": true,
       "tx": 0.676,
       "ans": 0.0,
@@ -2414,7 +2414,7 @@
     },
     {
       "id": "tcf-ss-a2-s2-co-3",
-      "audio": "/lib/audio/comprehension/achats/moyen-a2__annonce-46.mp3",
+      "audio": "/lib/audio/tcf/co/achats/moyen-a2__annonce-46.mp3",
       "ss": true,
       "tx": 0.897,
       "ans": 0.5,
@@ -2423,7 +2423,7 @@
     },
     {
       "id": "tcf-ss-a2-s2-co-4",
-      "audio": "/lib/audio/comprehension/achats/moyen-a2__conversation-48.mp3",
+      "audio": "/lib/audio/tcf/co/achats/moyen-a2__conversation-48.mp3",
       "ss": true,
       "tx": 0.829,
       "ans": 0.5,
@@ -2432,7 +2432,7 @@
     },
     {
       "id": "tcf-ss-a2-s3-co-1",
-      "audio": "/lib/audio/comprehension/achats/moyen-a2__message-30.mp3",
+      "audio": "/lib/audio/tcf/co/achats/moyen-a2__message-30.mp3",
       "ss": true,
       "tx": 0.69,
       "ans": 0.833,
@@ -2441,7 +2441,7 @@
     },
     {
       "id": "tcf-ss-a2-s3-co-2",
-      "audio": "/lib/audio/comprehension/achats/moyen-a2__message-37.mp3",
+      "audio": "/lib/audio/tcf/co/achats/moyen-a2__message-37.mp3",
       "ss": true,
       "tx": 0.92,
       "ans": 0.333,
@@ -2450,7 +2450,7 @@
     },
     {
       "id": "tcf-ss-a2-s3-co-3",
-      "audio": "/lib/audio/comprehension/achats/moyen-a2__message-47.mp3",
+      "audio": "/lib/audio/tcf/co/achats/moyen-a2__message-47.mp3",
       "ss": true,
       "tx": 0.778,
       "ans": 0.0,
@@ -2459,7 +2459,7 @@
     },
     {
       "id": "tcf-ss-a2-s3-co-4",
-      "audio": "/lib/audio/comprehension/actualite/moyen-a2__033.mp3",
+      "audio": "/lib/audio/tcf/co/actualite/moyen-a2__033.mp3",
       "ss": true,
       "tx": 0.775,
       "ans": 0.667,
@@ -2468,7 +2468,7 @@
     },
     {
       "id": "tcf-ss-a2-s4-co-1",
-      "audio": "/lib/audio/comprehension/actualite/moyen-a2__036.mp3",
+      "audio": "/lib/audio/tcf/co/actualite/moyen-a2__036.mp3",
       "ss": true,
       "tx": 0.357,
       "ans": 0.5,
@@ -2477,7 +2477,7 @@
     },
     {
       "id": "tcf-ss-a2-s4-co-2",
-      "audio": "/lib/audio/comprehension/actualite/moyen-a2__037.mp3",
+      "audio": "/lib/audio/tcf/co/actualite/moyen-a2__037.mp3",
       "ss": true,
       "tx": 0.684,
       "ans": 1.0,
@@ -2486,7 +2486,7 @@
     },
     {
       "id": "tcf-ss-a2-s4-co-3",
-      "audio": "/lib/audio/comprehension/actualite/moyen-a2__040.mp3",
+      "audio": "/lib/audio/tcf/co/actualite/moyen-a2__040.mp3",
       "ss": true,
       "tx": 0.964,
       "ans": 0.667,
@@ -2495,7 +2495,7 @@
     },
     {
       "id": "tcf-ss-a2-s4-co-4",
-      "audio": "/lib/audio/comprehension/actualite/moyen-a2__radio-55.mp3",
+      "audio": "/lib/audio/tcf/co/actualite/moyen-a2__radio-55.mp3",
       "ss": true,
       "tx": 0.935,
       "ans": 0.333,
@@ -2504,7 +2504,7 @@
     },
     {
       "id": "tcf-ss-a2-s5-co-1",
-      "audio": "/lib/audio/comprehension/administration/moyen-a2__025.mp3",
+      "audio": "/lib/audio/tcf/co/administration/moyen-a2__025.mp3",
       "ss": true,
       "tx": 0.912,
       "ans": 0.5,
@@ -2513,7 +2513,7 @@
     },
     {
       "id": "tcf-ss-a2-s5-co-2",
-      "audio": "/lib/audio/comprehension/administration/moyen-a2__030.mp3",
+      "audio": "/lib/audio/tcf/co/administration/moyen-a2__030.mp3",
       "ss": true,
       "tx": 0.944,
       "ans": 0.6,
@@ -2522,7 +2522,7 @@
     },
     {
       "id": "tcf-ss-a2-s5-co-4",
-      "audio": "/lib/audio/comprehension/administration/moyen-a2__166.mp3",
+      "audio": "/lib/audio/tcf/co/administration/moyen-a2__166.mp3",
       "ss": true,
       "tx": 0.364,
       "ans": 0.8,
@@ -2531,7 +2531,7 @@
     },
     {
       "id": "tcf-ss-a2-s6-co-2",
-      "audio": "/lib/audio/comprehension/administration/moyen-a2__message-29.mp3",
+      "audio": "/lib/audio/tcf/co/administration/moyen-a2__message-29.mp3",
       "ss": true,
       "tx": 0.853,
       "ans": 0.667,
@@ -2540,7 +2540,7 @@
     },
     {
       "id": "tcf-ss-a2-s7-co-1",
-      "audio": "/lib/audio/comprehension/ecole/moyen-a2__annonce-36.mp3",
+      "audio": "/lib/audio/tcf/co/ecole/moyen-a2__annonce-36.mp3",
       "ss": true,
       "tx": 0.806,
       "ans": 0.0,
@@ -2549,7 +2549,7 @@
     },
     {
       "id": "tcf-ss-a2-s7-co-2",
-      "audio": "/lib/audio/comprehension/ecole/moyen-a2__annonce-40.mp3",
+      "audio": "/lib/audio/tcf/co/ecole/moyen-a2__annonce-40.mp3",
       "ss": true,
       "tx": 0.711,
       "ans": 0.0,
@@ -2558,7 +2558,7 @@
     },
     {
       "id": "tcf-ss-a2-s7-co-3",
-      "audio": "/lib/audio/comprehension/ecole/moyen-a2__conversation-40.mp3",
+      "audio": "/lib/audio/tcf/co/ecole/moyen-a2__conversation-40.mp3",
       "ss": true,
       "tx": 0.881,
       "ans": 0.667,
@@ -2567,7 +2567,7 @@
     },
     {
       "id": "tcf-ss-a2-s8-co-1",
-      "audio": "/lib/audio/comprehension/ecole/moyen-a2__message-45.mp3",
+      "audio": "/lib/audio/tcf/co/ecole/moyen-a2__message-45.mp3",
       "ss": true,
       "tx": 0.846,
       "ans": 0.667,
@@ -2576,7 +2576,7 @@
     },
     {
       "id": "tcf-ss-a2-s8-co-2",
-      "audio": "/lib/audio/comprehension/famille/moyen-a2__016.mp3",
+      "audio": "/lib/audio/tcf/co/famille/moyen-a2__016.mp3",
       "ss": true,
       "tx": 0.857,
       "ans": 1.0,
@@ -2585,7 +2585,7 @@
     },
     {
       "id": "tcf-ss-a2-s8-co-4",
-      "audio": "/lib/audio/comprehension/famille/moyen-a2__066.mp3",
+      "audio": "/lib/audio/tcf/co/famille/moyen-a2__066.mp3",
       "ss": true,
       "tx": 0.357,
       "ans": 0.4,
@@ -2594,7 +2594,7 @@
     },
     {
       "id": "tcf-ss-a2-s9-co-2",
-      "audio": "/lib/audio/comprehension/famille/moyen-a2__072.mp3",
+      "audio": "/lib/audio/tcf/co/famille/moyen-a2__072.mp3",
       "ss": true,
       "tx": 1.0,
       "ans": 0.8,
@@ -2603,7 +2603,7 @@
     },
     {
       "id": "tcf-ss-a2-s9-co-3",
-      "audio": "/lib/audio/comprehension/famille/moyen-a2__conversation-46.mp3",
+      "audio": "/lib/audio/tcf/co/famille/moyen-a2__conversation-46.mp3",
       "ss": true,
       "tx": 0.867,
       "ans": 0.5,
@@ -2612,7 +2612,7 @@
     },
     {
       "id": "tcf-ss-a2-s9-co-4",
-      "audio": "/lib/audio/comprehension/inviter/moyen-a2__041.mp3",
+      "audio": "/lib/audio/tcf/co/inviter/moyen-a2__041.mp3",
       "ss": true,
       "tx": 0.842,
       "ans": 0.333,
@@ -2621,7 +2621,7 @@
     },
     {
       "id": "tcf-ss-a2-s10-co-1",
-      "audio": "/lib/audio/comprehension/inviter/moyen-a2__050.mp3",
+      "audio": "/lib/audio/tcf/co/inviter/moyen-a2__050.mp3",
       "ss": true,
       "tx": 0.733,
       "ans": 1.0,
@@ -2630,7 +2630,7 @@
     },
     {
       "id": "tcf-ss-a2-s10-co-4",
-      "audio": "/lib/audio/comprehension/inviter/moyen-a2__111.mp3",
+      "audio": "/lib/audio/tcf/co/inviter/moyen-a2__111.mp3",
       "ss": true,
       "tx": 0.263,
       "ans": 0.5,
@@ -2639,7 +2639,7 @@
     },
     {
       "id": "tcf-ss-a2-s11-co-1",
-      "audio": "/lib/audio/comprehension/inviter/moyen-a2__117.mp3",
+      "audio": "/lib/audio/tcf/co/inviter/moyen-a2__117.mp3",
       "ss": true,
       "tx": 0.583,
       "ans": 0.6,
@@ -2648,7 +2648,7 @@
     },
     {
       "id": "tcf-ss-a2-s11-co-2",
-      "audio": "/lib/audio/comprehension/inviter/moyen-a2__conversation-39.mp3",
+      "audio": "/lib/audio/tcf/co/inviter/moyen-a2__conversation-39.mp3",
       "ss": true,
       "tx": 0.71,
       "ans": 0.333,
@@ -2657,7 +2657,7 @@
     },
     {
       "id": "tcf-ss-a2-s11-co-3",
-      "audio": "/lib/audio/comprehension/inviter/moyen-a2__message-27.mp3",
+      "audio": "/lib/audio/tcf/co/inviter/moyen-a2__message-27.mp3",
       "ss": true,
       "tx": 0.744,
       "ans": 0.833,
@@ -2666,7 +2666,7 @@
     },
     {
       "id": "tcf-ss-a2-s11-co-4",
-      "audio": "/lib/audio/comprehension/inviter/moyen-a2__message-32.mp3",
+      "audio": "/lib/audio/tcf/co/inviter/moyen-a2__message-32.mp3",
       "ss": true,
       "tx": 0.829,
       "ans": 0.833,
@@ -2675,7 +2675,7 @@
     },
     {
       "id": "tcf-ss-a2-s12-co-1",
-      "audio": "/lib/audio/comprehension/inviter/moyen-a2__radio-50.mp3",
+      "audio": "/lib/audio/tcf/co/inviter/moyen-a2__radio-50.mp3",
       "ss": true,
       "tx": 0.882,
       "ans": 0.0,
@@ -2684,7 +2684,7 @@
     },
     {
       "id": "tcf-ss-a2-s12-co-2",
-      "audio": "/lib/audio/comprehension/journee/moyen-a2__044.mp3",
+      "audio": "/lib/audio/tcf/co/journee/moyen-a2__044.mp3",
       "ss": true,
       "tx": 0.75,
       "ans": 0.5,
@@ -2693,7 +2693,7 @@
     },
     {
       "id": "tcf-ss-a2-s12-co-4",
-      "audio": "/lib/audio/comprehension/journee/moyen-a2__098.mp3",
+      "audio": "/lib/audio/tcf/co/journee/moyen-a2__098.mp3",
       "ss": true,
       "tx": 0.8,
       "ans": 0.4,
@@ -2702,7 +2702,7 @@
     },
     {
       "id": "tcf-ss-a2-s13-co-2",
-      "audio": "/lib/audio/comprehension/journee/moyen-a2__153.mp3",
+      "audio": "/lib/audio/tcf/co/journee/moyen-a2__153.mp3",
       "ss": true,
       "tx": 0.625,
       "ans": 0.4,
@@ -2711,7 +2711,7 @@
     },
     {
       "id": "tcf-ss-a2-s13-co-4",
-      "audio": "/lib/audio/comprehension/journee/moyen-a2__annonce-37.mp3",
+      "audio": "/lib/audio/tcf/co/journee/moyen-a2__annonce-37.mp3",
       "ss": true,
       "tx": 0.786,
       "ans": 0.333,
@@ -2720,7 +2720,7 @@
     },
     {
       "id": "tcf-ss-a2-s14-co-1",
-      "audio": "/lib/audio/comprehension/journee/moyen-a2__annonce-39.mp3",
+      "audio": "/lib/audio/tcf/co/journee/moyen-a2__annonce-39.mp3",
       "ss": true,
       "tx": 0.971,
       "ans": 0.667,
@@ -2729,7 +2729,7 @@
     },
     {
       "id": "tcf-ss-a2-s14-co-3",
-      "audio": "/lib/audio/comprehension/journee/moyen-a2__conversation-49.mp3",
+      "audio": "/lib/audio/tcf/co/journee/moyen-a2__conversation-49.mp3",
       "ss": true,
       "tx": 0.931,
       "ans": 0.5,
@@ -2738,7 +2738,7 @@
     },
     {
       "id": "tcf-ss-a2-s14-co-4",
-      "audio": "/lib/audio/comprehension/journee/moyen-a2__message-34.mp3",
+      "audio": "/lib/audio/tcf/co/journee/moyen-a2__message-34.mp3",
       "ss": true,
       "tx": 0.914,
       "ans": 0.667,
@@ -2747,7 +2747,7 @@
     },
     {
       "id": "tcf-ss-a2-s15-co-1",
-      "audio": "/lib/audio/comprehension/journee/moyen-a2__message-44.mp3",
+      "audio": "/lib/audio/tcf/co/journee/moyen-a2__message-44.mp3",
       "ss": true,
       "tx": 0.889,
       "ans": 0.5,
@@ -2756,7 +2756,7 @@
     },
     {
       "id": "tcf-ss-a2-s15-co-2",
-      "audio": "/lib/audio/comprehension/journee/moyen-a2__message-49.mp3",
+      "audio": "/lib/audio/tcf/co/journee/moyen-a2__message-49.mp3",
       "ss": true,
       "tx": 0.8,
       "ans": 0.667,
@@ -2765,7 +2765,7 @@
     },
     {
       "id": "tcf-ss-a2-s15-co-3",
-      "audio": "/lib/audio/comprehension/journee/moyen-a2__radio-52.mp3",
+      "audio": "/lib/audio/tcf/co/journee/moyen-a2__radio-52.mp3",
       "ss": true,
       "tx": 0.846,
       "ans": 0.333,
@@ -2774,7 +2774,7 @@
     },
     {
       "id": "tcf-ss-a2-s15-co-4",
-      "audio": "/lib/audio/comprehension/journee/moyen-a2__radio-54.mp3",
+      "audio": "/lib/audio/tcf/co/journee/moyen-a2__radio-54.mp3",
       "ss": true,
       "tx": 0.9,
       "ans": 0.333,
@@ -2783,7 +2783,7 @@
     },
     {
       "id": "tcf-ss-a2-s16-co-1",
-      "audio": "/lib/audio/comprehension/logement/moyen-a2__017.mp3",
+      "audio": "/lib/audio/tcf/co/logement/moyen-a2__017.mp3",
       "ss": true,
       "tx": 0.742,
       "ans": 0.5,
@@ -2792,7 +2792,7 @@
     },
     {
       "id": "tcf-ss-a2-s16-co-2",
-      "audio": "/lib/audio/comprehension/logement/moyen-a2__020.mp3",
+      "audio": "/lib/audio/tcf/co/logement/moyen-a2__020.mp3",
       "ss": true,
       "tx": 0.808,
       "ans": 0.5,
@@ -2801,7 +2801,7 @@
     },
     {
       "id": "tcf-ss-a2-s16-co-3",
-      "audio": "/lib/audio/comprehension/logement/moyen-a2__021.mp3",
+      "audio": "/lib/audio/tcf/co/logement/moyen-a2__021.mp3",
       "ss": true,
       "tx": 0.917,
       "ans": 0.667,
@@ -2810,7 +2810,7 @@
     },
     {
       "id": "tcf-ss-a2-s16-co-4",
-      "audio": "/lib/audio/comprehension/logement/moyen-a2__022.mp3",
+      "audio": "/lib/audio/tcf/co/logement/moyen-a2__022.mp3",
       "ss": true,
       "tx": 0.885,
       "ans": 1.0,
@@ -2819,7 +2819,7 @@
     },
     {
       "id": "tcf-ss-a2-s17-co-1",
-      "audio": "/lib/audio/comprehension/logement/moyen-a2__023.mp3",
+      "audio": "/lib/audio/tcf/co/logement/moyen-a2__023.mp3",
       "ss": true,
       "tx": 0.8,
       "ans": 0.833,
@@ -2828,7 +2828,7 @@
     },
     {
       "id": "tcf-ss-a2-s17-co-2",
-      "audio": "/lib/audio/comprehension/logement/moyen-a2__024.mp3",
+      "audio": "/lib/audio/tcf/co/logement/moyen-a2__024.mp3",
       "ss": true,
       "tx": 0.78,
       "ans": 0.667,
@@ -2837,7 +2837,7 @@
     },
     {
       "id": "tcf-ss-a2-s17-co-4",
-      "audio": "/lib/audio/comprehension/logement/moyen-a2__112.mp3",
+      "audio": "/lib/audio/tcf/co/logement/moyen-a2__112.mp3",
       "ss": true,
       "tx": 0.375,
       "ans": 0.4,
@@ -2846,7 +2846,7 @@
     },
     {
       "id": "tcf-ss-a2-s19-co-1",
-      "audio": "/lib/audio/comprehension/loisirs/moyen-a2__122.mp3",
+      "audio": "/lib/audio/tcf/co/loisirs/moyen-a2__122.mp3",
       "ss": true,
       "tx": 0.688,
       "ans": 0.4,
@@ -2855,7 +2855,7 @@
     },
     {
       "id": "tcf-ss-a2-s19-co-3",
-      "audio": "/lib/audio/comprehension/loisirs/moyen-a2__183.mp3",
+      "audio": "/lib/audio/tcf/co/loisirs/moyen-a2__183.mp3",
       "ss": true,
       "tx": 0.636,
       "ans": 0.6,
@@ -2864,7 +2864,7 @@
     },
     {
       "id": "tcf-ss-a2-s19-co-4",
-      "audio": "/lib/audio/comprehension/loisirs/moyen-a2__annonce-11.mp3",
+      "audio": "/lib/audio/tcf/co/loisirs/moyen-a2__annonce-11.mp3",
       "ss": true,
       "tx": 0.719,
       "ans": 0.167,
@@ -2873,7 +2873,7 @@
     },
     {
       "id": "tcf-ss-a2-s20-co-1",
-      "audio": "/lib/audio/comprehension/loisirs/moyen-a2__annonce-13.mp3",
+      "audio": "/lib/audio/tcf/co/loisirs/moyen-a2__annonce-13.mp3",
       "ss": true,
       "tx": 0.75,
       "ans": 0.0,
@@ -2882,7 +2882,7 @@
     },
     {
       "id": "tcf-ss-a2-s20-co-2",
-      "audio": "/lib/audio/comprehension/loisirs/moyen-a2__conversation-42.mp3",
+      "audio": "/lib/audio/tcf/co/loisirs/moyen-a2__conversation-42.mp3",
       "ss": true,
       "tx": 0.846,
       "ans": 0.333,
@@ -2891,7 +2891,7 @@
     },
     {
       "id": "tcf-ss-a2-s20-co-3",
-      "audio": "/lib/audio/comprehension/loisirs/moyen-a2__conversation-50.mp3",
+      "audio": "/lib/audio/tcf/co/loisirs/moyen-a2__conversation-50.mp3",
       "ss": true,
       "tx": 0.862,
       "ans": 0.333,
@@ -2900,7 +2900,7 @@
     },
     {
       "id": "tcf-ss-a2-s21-co-1",
-      "audio": "/lib/audio/comprehension/loisirs/moyen-a2__radio-53.mp3",
+      "audio": "/lib/audio/tcf/co/loisirs/moyen-a2__radio-53.mp3",
       "ss": true,
       "tx": 0.838,
       "ans": 0.333,
@@ -2909,7 +2909,7 @@
     },
     {
       "id": "tcf-ss-a2-s21-co-2",
-      "audio": "/lib/audio/comprehension/nature/moyen-a2__146.mp3",
+      "audio": "/lib/audio/tcf/co/nature/moyen-a2__146.mp3",
       "ss": true,
       "tx": 0.385,
       "ans": 0.25,
@@ -2918,7 +2918,7 @@
     },
     {
       "id": "tcf-ss-a2-s21-co-4",
-      "audio": "/lib/audio/comprehension/nourriture/moyen-a2__008.mp3",
+      "audio": "/lib/audio/tcf/co/nourriture/moyen-a2__008.mp3",
       "ss": true,
       "tx": 0.78,
       "ans": 0.833,
@@ -2927,7 +2927,7 @@
     },
     {
       "id": "tcf-ss-a2-s22-co-2",
-      "audio": "/lib/audio/comprehension/nourriture/moyen-a2__055.mp3",
+      "audio": "/lib/audio/tcf/co/nourriture/moyen-a2__055.mp3",
       "ss": true,
       "tx": 0.421,
       "ans": 0.2,
@@ -2936,7 +2936,7 @@
     },
     {
       "id": "tcf-ss-a2-s23-co-1",
-      "audio": "/lib/audio/comprehension/nourriture/moyen-a2__090.mp3",
+      "audio": "/lib/audio/tcf/co/nourriture/moyen-a2__090.mp3",
       "ss": true,
       "tx": 0.444,
       "ans": 0.2,
@@ -2945,7 +2945,7 @@
     },
     {
       "id": "tcf-ss-a2-s23-co-2",
-      "audio": "/lib/audio/comprehension/nourriture/moyen-a2__101.mp3",
+      "audio": "/lib/audio/tcf/co/nourriture/moyen-a2__101.mp3",
       "ss": true,
       "tx": 0.7,
       "ans": 0.4,
@@ -2954,7 +2954,7 @@
     },
     {
       "id": "tcf-ss-a2-s23-co-3",
-      "audio": "/lib/audio/comprehension/nourriture/moyen-a2__102.mp3",
+      "audio": "/lib/audio/tcf/co/nourriture/moyen-a2__102.mp3",
       "ss": true,
       "tx": 1.0,
       "ans": 0.6,
@@ -2963,7 +2963,7 @@
     },
     {
       "id": "tcf-ss-a2-s23-co-4",
-      "audio": "/lib/audio/comprehension/nourriture/moyen-a2__138.mp3",
+      "audio": "/lib/audio/tcf/co/nourriture/moyen-a2__138.mp3",
       "ss": true,
       "tx": 0.444,
       "ans": 0.2,
@@ -2972,7 +2972,7 @@
     },
     {
       "id": "tcf-ss-a2-s24-co-3",
-      "audio": "/lib/audio/comprehension/nourriture/moyen-a2__message-26.mp3",
+      "audio": "/lib/audio/tcf/co/nourriture/moyen-a2__message-26.mp3",
       "ss": true,
       "tx": 0.69,
       "ans": 0.5,
@@ -2981,7 +2981,7 @@
     },
     {
       "id": "tcf-ss-a2-s24-co-4",
-      "audio": "/lib/audio/comprehension/nourriture/moyen-a2__message-33.mp3",
+      "audio": "/lib/audio/tcf/co/nourriture/moyen-a2__message-33.mp3",
       "ss": true,
       "tx": 0.842,
       "ans": 0.5,
@@ -2990,7 +2990,7 @@
     },
     {
       "id": "tcf-ss-a2-s25-co-2",
-      "audio": "/lib/audio/comprehension/nourriture/moyen-a2__radio-35.mp3",
+      "audio": "/lib/audio/tcf/co/nourriture/moyen-a2__radio-35.mp3",
       "ss": true,
       "tx": 0.889,
       "ans": 0.333,
@@ -2999,7 +2999,7 @@
     },
     {
       "id": "tcf-ss-a2-s25-co-3",
-      "audio": "/lib/audio/comprehension/nourriture/moyen-a2__radio-51.mp3",
+      "audio": "/lib/audio/tcf/co/nourriture/moyen-a2__radio-51.mp3",
       "ss": true,
       "tx": 0.897,
       "ans": 0.167,
@@ -3008,7 +3008,7 @@
     },
     {
       "id": "tcf-ss-a2-s25-co-4",
-      "audio": "/lib/audio/comprehension/objets/moyen-a2__004.mp3",
+      "audio": "/lib/audio/tcf/co/objets/moyen-a2__004.mp3",
       "ss": true,
       "tx": 0.636,
       "ans": 0.167,
@@ -3017,7 +3017,7 @@
     },
     {
       "id": "tcf-ss-a2-s26-co-1",
-      "audio": "/lib/audio/comprehension/objets/moyen-a2__007.mp3",
+      "audio": "/lib/audio/tcf/co/objets/moyen-a2__007.mp3",
       "ss": true,
       "tx": 0.767,
       "ans": 0.5,
@@ -3026,7 +3026,7 @@
     },
     {
       "id": "tcf-ss-a2-s26-co-2",
-      "audio": "/lib/audio/comprehension/objets/moyen-a2__031.mp3",
+      "audio": "/lib/audio/tcf/co/objets/moyen-a2__031.mp3",
       "ss": true,
       "tx": 0.892,
       "ans": 1.0,
@@ -3035,7 +3035,7 @@
     },
     {
       "id": "tcf-ss-a2-s26-co-3",
-      "audio": "/lib/audio/comprehension/objets/moyen-a2__032.mp3",
+      "audio": "/lib/audio/tcf/co/objets/moyen-a2__032.mp3",
       "ss": true,
       "tx": 0.882,
       "ans": 0.5,
@@ -3044,7 +3044,7 @@
     },
     {
       "id": "tcf-ss-a2-s26-co-4",
-      "audio": "/lib/audio/comprehension/objets/moyen-a2__056.mp3",
+      "audio": "/lib/audio/tcf/co/objets/moyen-a2__056.mp3",
       "ss": true,
       "tx": 0.5,
       "ans": 0.5,
@@ -3053,7 +3053,7 @@
     },
     {
       "id": "tcf-ss-a2-s27-co-1",
-      "audio": "/lib/audio/comprehension/objets/moyen-a2__081.mp3",
+      "audio": "/lib/audio/tcf/co/objets/moyen-a2__081.mp3",
       "ss": true,
       "tx": 0.625,
       "ans": 0.6,
@@ -3062,7 +3062,7 @@
     },
     {
       "id": "tcf-ss-a2-s28-co-2",
-      "audio": "/lib/audio/comprehension/objets/moyen-a2__103.mp3",
+      "audio": "/lib/audio/tcf/co/objets/moyen-a2__103.mp3",
       "ss": true,
       "tx": 1.0,
       "ans": 0.667,
@@ -3071,7 +3071,7 @@
     },
     {
       "id": "tcf-ss-a2-s28-co-3",
-      "audio": "/lib/audio/comprehension/objets/moyen-a2__105.mp3",
+      "audio": "/lib/audio/tcf/co/objets/moyen-a2__105.mp3",
       "ss": true,
       "tx": 0.889,
       "ans": 0.4,
@@ -3080,7 +3080,7 @@
     },
     {
       "id": "tcf-ss-a2-s29-co-1",
-      "audio": "/lib/audio/comprehension/objets/moyen-a2__135.mp3",
+      "audio": "/lib/audio/tcf/co/objets/moyen-a2__135.mp3",
       "ss": true,
       "tx": 0.455,
       "ans": 0.4,
@@ -3089,7 +3089,7 @@
     },
     {
       "id": "tcf-ss-a2-s29-co-2",
-      "audio": "/lib/audio/comprehension/objets/moyen-a2__154.mp3",
+      "audio": "/lib/audio/tcf/co/objets/moyen-a2__154.mp3",
       "ss": true,
       "tx": 0.583,
       "ans": 0.6,
@@ -3098,7 +3098,7 @@
     },
     {
       "id": "tcf-ss-a2-s29-co-3",
-      "audio": "/lib/audio/comprehension/objets/moyen-a2__159.mp3",
+      "audio": "/lib/audio/tcf/co/objets/moyen-a2__159.mp3",
       "ss": true,
       "tx": 0.545,
       "ans": 0.4,
@@ -3107,7 +3107,7 @@
     },
     {
       "id": "tcf-ss-a2-s29-co-4",
-      "audio": "/lib/audio/comprehension/objets/moyen-a2__162.mp3",
+      "audio": "/lib/audio/tcf/co/objets/moyen-a2__162.mp3",
       "ss": true,
       "tx": 1.0,
       "ans": 0.6,
@@ -3116,7 +3116,7 @@
     },
     {
       "id": "tcf-ss-a2-s30-co-1",
-      "audio": "/lib/audio/comprehension/objets/moyen-a2__178.mp3",
+      "audio": "/lib/audio/tcf/co/objets/moyen-a2__178.mp3",
       "ss": true,
       "tx": 0.917,
       "ans": 1.0,
@@ -3125,7 +3125,7 @@
     },
     {
       "id": "tcf-ss-a2-s30-co-4",
-      "audio": "/lib/audio/comprehension/objets/moyen-a2__annonce-8.mp3",
+      "audio": "/lib/audio/tcf/co/objets/moyen-a2__annonce-8.mp3",
       "ss": true,
       "tx": 0.875,
       "ans": 0.0,
@@ -3134,7 +3134,7 @@
     },
     {
       "id": "tcf-ss-a2-s31-co-1",
-      "audio": "/lib/audio/comprehension/objets/moyen-a2__message-48.mp3",
+      "audio": "/lib/audio/tcf/co/objets/moyen-a2__message-48.mp3",
       "ss": true,
       "tx": 0.763,
       "ans": 0.667,
@@ -3143,7 +3143,7 @@
     },
     {
       "id": "tcf-ss-a2-s31-co-3",
-      "audio": "/lib/audio/comprehension/presenter/moyen-a2__005.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__005.mp3",
       "ss": true,
       "tx": 0.44,
       "ans": 0.333,
@@ -3152,7 +3152,7 @@
     },
     {
       "id": "tcf-ss-a2-s31-co-4",
-      "audio": "/lib/audio/comprehension/presenter/moyen-a2__009.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__009.mp3",
       "ss": true,
       "tx": 0.737,
       "ans": 0.833,
@@ -3161,7 +3161,7 @@
     },
     {
       "id": "tcf-ss-a2-s32-co-1",
-      "audio": "/lib/audio/comprehension/presenter/moyen-a2__013.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__013.mp3",
       "ss": true,
       "tx": 0.947,
       "ans": 0.667,
@@ -3170,7 +3170,7 @@
     },
     {
       "id": "tcf-ss-a2-s32-co-2",
-      "audio": "/lib/audio/comprehension/presenter/moyen-a2__047.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__047.mp3",
       "ss": true,
       "tx": 0.944,
       "ans": 0.667,
@@ -3179,7 +3179,7 @@
     },
     {
       "id": "tcf-ss-a2-s32-co-3",
-      "audio": "/lib/audio/comprehension/presenter/moyen-a2__048.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__048.mp3",
       "ss": true,
       "tx": 0.5,
       "ans": 0.6,
@@ -3188,7 +3188,7 @@
     },
     {
       "id": "tcf-ss-a2-s32-co-4",
-      "audio": "/lib/audio/comprehension/presenter/moyen-a2__049.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__049.mp3",
       "ss": true,
       "tx": 0.718,
       "ans": 0.833,
@@ -3197,7 +3197,7 @@
     },
     {
       "id": "tcf-ss-a2-s33-co-2",
-      "audio": "/lib/audio/comprehension/presenter/moyen-a2__058.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__058.mp3",
       "ss": true,
       "tx": 0.5,
       "ans": 0.4,
@@ -3206,7 +3206,7 @@
     },
     {
       "id": "tcf-ss-a2-s34-co-1",
-      "audio": "/lib/audio/comprehension/presenter/moyen-a2__070.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__070.mp3",
       "ss": true,
       "tx": 0.625,
       "ans": 0.4,
@@ -3215,7 +3215,7 @@
     },
     {
       "id": "tcf-ss-a2-s34-co-2",
-      "audio": "/lib/audio/comprehension/presenter/moyen-a2__071.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__071.mp3",
       "ss": true,
       "tx": 0.545,
       "ans": 0.333,
@@ -3224,7 +3224,7 @@
     },
     {
       "id": "tcf-ss-a2-s34-co-4",
-      "audio": "/lib/audio/comprehension/presenter/moyen-a2__074.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__074.mp3",
       "ss": true,
       "tx": 0.5,
       "ans": 0.2,
@@ -3233,7 +3233,7 @@
     },
     {
       "id": "tcf-ss-a2-s35-co-3",
-      "audio": "/lib/audio/comprehension/presenter/moyen-a2__079.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__079.mp3",
       "ss": true,
       "tx": 0.667,
       "ans": 0.6,
@@ -3242,7 +3242,7 @@
     },
     {
       "id": "tcf-ss-a2-s36-co-3",
-      "audio": "/lib/audio/comprehension/presenter/moyen-a2__096.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__096.mp3",
       "ss": true,
       "tx": 0.258,
       "ans": 0.833,
@@ -3251,7 +3251,7 @@
     },
     {
       "id": "tcf-ss-a2-s37-co-3",
-      "audio": "/lib/audio/comprehension/presenter/moyen-a2__137.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__137.mp3",
       "ss": true,
       "tx": 0.189,
       "ans": 0.667,
@@ -3260,7 +3260,7 @@
     },
     {
       "id": "tcf-ss-a2-s37-co-4",
-      "audio": "/lib/audio/comprehension/presenter/moyen-a2__144.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__144.mp3",
       "ss": true,
       "tx": 0.292,
       "ans": 0.667,
@@ -3269,7 +3269,7 @@
     },
     {
       "id": "tcf-ss-a2-s38-co-1",
-      "audio": "/lib/audio/comprehension/presenter/moyen-a2__151.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__151.mp3",
       "ss": true,
       "tx": 0.346,
       "ans": 0.5,
@@ -3278,7 +3278,7 @@
     },
     {
       "id": "tcf-ss-a2-s38-co-2",
-      "audio": "/lib/audio/comprehension/presenter/moyen-a2__152.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__152.mp3",
       "ss": true,
       "tx": 0.714,
       "ans": 0.4,
@@ -3287,7 +3287,7 @@
     },
     {
       "id": "tcf-ss-a2-s38-co-3",
-      "audio": "/lib/audio/comprehension/presenter/moyen-a2__158.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__158.mp3",
       "ss": true,
       "tx": 0.909,
       "ans": 0.8,
@@ -3296,7 +3296,7 @@
     },
     {
       "id": "tcf-ss-a2-s38-co-4",
-      "audio": "/lib/audio/comprehension/presenter/moyen-a2__160.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__160.mp3",
       "ss": true,
       "tx": 0.556,
       "ans": 0.667,
@@ -3305,7 +3305,7 @@
     },
     {
       "id": "tcf-ss-a2-s39-co-1",
-      "audio": "/lib/audio/comprehension/presenter/moyen-a2__161.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__161.mp3",
       "ss": true,
       "tx": 0.273,
       "ans": 0.6,
@@ -3314,7 +3314,7 @@
     },
     {
       "id": "tcf-ss-a2-s40-co-1",
-      "audio": "/lib/audio/comprehension/presenter/moyen-a2__175.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__175.mp3",
       "ss": true,
       "tx": 0.273,
       "ans": 0.6,
@@ -3323,7 +3323,7 @@
     },
     {
       "id": "tcf-ss-a2-s40-co-2",
-      "audio": "/lib/audio/comprehension/presenter/moyen-a2__179.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__179.mp3",
       "ss": true,
       "tx": 0.867,
       "ans": 0.667,
@@ -3332,7 +3332,7 @@
     },
     {
       "id": "tcf-ss-a2-s40-co-3",
-      "audio": "/lib/audio/comprehension/presenter/moyen-a2__182.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__182.mp3",
       "ss": true,
       "tx": 0.714,
       "ans": 0.333,
@@ -3341,7 +3341,7 @@
     },
     {
       "id": "tcf-ss-a2-s41-co-1",
-      "audio": "/lib/audio/comprehension/presenter/moyen-a2__197.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__197.mp3",
       "ss": true,
       "tx": 0.4,
       "ans": 0.4,
@@ -3350,7 +3350,7 @@
     },
     {
       "id": "tcf-ss-a2-s41-co-3",
-      "audio": "/lib/audio/comprehension/presenter/moyen-a2__annonce-38.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__annonce-38.mp3",
       "ss": true,
       "tx": 0.743,
       "ans": 0.0,
@@ -3359,7 +3359,7 @@
     },
     {
       "id": "tcf-ss-a2-s42-co-2",
-      "audio": "/lib/audio/comprehension/presenter/moyen-a2__conversation-38.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__conversation-38.mp3",
       "ss": true,
       "tx": 0.765,
       "ans": 0.333,
@@ -3368,7 +3368,7 @@
     },
     {
       "id": "tcf-ss-a2-s42-co-3",
-      "audio": "/lib/audio/comprehension/presenter/moyen-a2__conversation-41.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__conversation-41.mp3",
       "ss": true,
       "tx": 0.804,
       "ans": 0.333,
@@ -3377,7 +3377,7 @@
     },
     {
       "id": "tcf-ss-a2-s42-co-4",
-      "audio": "/lib/audio/comprehension/presenter/moyen-a2__conversation-43.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__conversation-43.mp3",
       "ss": true,
       "tx": 0.944,
       "ans": 0.5,
@@ -3386,7 +3386,7 @@
     },
     {
       "id": "tcf-ss-a2-s43-co-1",
-      "audio": "/lib/audio/comprehension/presenter/moyen-a2__conversation-45.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__conversation-45.mp3",
       "ss": true,
       "tx": 0.852,
       "ans": 0.167,
@@ -3395,7 +3395,7 @@
     },
     {
       "id": "tcf-ss-a2-s43-co-2",
-      "audio": "/lib/audio/comprehension/presenter/moyen-a2__conversation-47.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__conversation-47.mp3",
       "ss": true,
       "tx": 0.714,
       "ans": 0.5,
@@ -3404,7 +3404,7 @@
     },
     {
       "id": "tcf-ss-a2-s43-co-3",
-      "audio": "/lib/audio/comprehension/presenter/moyen-a2__message-28.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__message-28.mp3",
       "ss": true,
       "tx": 0.842,
       "ans": 0.5,
@@ -3413,7 +3413,7 @@
     },
     {
       "id": "tcf-ss-a2-s43-co-4",
-      "audio": "/lib/audio/comprehension/presenter/moyen-a2__message-31.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__message-31.mp3",
       "ss": true,
       "tx": 0.833,
       "ans": 0.833,
@@ -3422,7 +3422,7 @@
     },
     {
       "id": "tcf-ss-a2-s44-co-1",
-      "audio": "/lib/audio/comprehension/presenter/moyen-a2__message-41.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__message-41.mp3",
       "ss": true,
       "tx": 0.824,
       "ans": 0.667,
@@ -3431,7 +3431,7 @@
     },
     {
       "id": "tcf-ss-a2-s44-co-2",
-      "audio": "/lib/audio/comprehension/presenter/moyen-a2__message-42.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__message-42.mp3",
       "ss": true,
       "tx": 0.806,
       "ans": 0.0,
@@ -3440,7 +3440,7 @@
     },
     {
       "id": "tcf-ss-a2-s44-co-4",
-      "audio": "/lib/audio/comprehension/presenter/moyen-a2__radio-34.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__radio-34.mp3",
       "ss": true,
       "tx": 0.909,
       "ans": 0.333,
@@ -3449,7 +3449,7 @@
     },
     {
       "id": "tcf-ss-a2-s45-co-1",
-      "audio": "/lib/audio/comprehension/sante/moyen-a2__038.mp3",
+      "audio": "/lib/audio/tcf/co/sante/moyen-a2__038.mp3",
       "ss": true,
       "tx": 0.828,
       "ans": 0.667,
@@ -3458,7 +3458,7 @@
     },
     {
       "id": "tcf-ss-a2-s45-co-4",
-      "audio": "/lib/audio/comprehension/sante/moyen-a2__119.mp3",
+      "audio": "/lib/audio/tcf/co/sante/moyen-a2__119.mp3",
       "ss": true,
       "tx": 0.375,
       "ans": 0.6,
@@ -3467,7 +3467,7 @@
     },
     {
       "id": "tcf-ss-a2-s46-co-2",
-      "audio": "/lib/audio/comprehension/sante/moyen-a2__125.mp3",
+      "audio": "/lib/audio/tcf/co/sante/moyen-a2__125.mp3",
       "ss": true,
       "tx": 0.938,
       "ans": 0.6,
@@ -3476,7 +3476,7 @@
     },
     {
       "id": "tcf-ss-a2-s46-co-3",
-      "audio": "/lib/audio/comprehension/transports/moyen-a2__012.mp3",
+      "audio": "/lib/audio/tcf/co/transports/moyen-a2__012.mp3",
       "ss": true,
       "tx": 0.767,
       "ans": 0.833,
@@ -3485,7 +3485,7 @@
     },
     {
       "id": "tcf-ss-a2-s46-co-4",
-      "audio": "/lib/audio/comprehension/transports/moyen-a2__014.mp3",
+      "audio": "/lib/audio/tcf/co/transports/moyen-a2__014.mp3",
       "ss": true,
       "tx": 0.773,
       "ans": 0.5,
@@ -3494,7 +3494,7 @@
     },
     {
       "id": "tcf-ss-a2-s47-co-1",
-      "audio": "/lib/audio/comprehension/transports/moyen-a2__015.mp3",
+      "audio": "/lib/audio/tcf/co/transports/moyen-a2__015.mp3",
       "ss": true,
       "tx": 0.895,
       "ans": 0.833,
@@ -3503,7 +3503,7 @@
     },
     {
       "id": "tcf-ss-a2-s47-co-3",
-      "audio": "/lib/audio/comprehension/transports/moyen-a2__104.mp3",
+      "audio": "/lib/audio/tcf/co/transports/moyen-a2__104.mp3",
       "ss": true,
       "tx": 1.0,
       "ans": 0.8,
@@ -3512,7 +3512,7 @@
     },
     {
       "id": "tcf-ss-a2-s48-co-1",
-      "audio": "/lib/audio/comprehension/transports/moyen-a2__142.mp3",
+      "audio": "/lib/audio/tcf/co/transports/moyen-a2__142.mp3",
       "ss": true,
       "tx": 0.714,
       "ans": 0.4,
@@ -3521,7 +3521,7 @@
     },
     {
       "id": "tcf-ss-a2-s48-co-2",
-      "audio": "/lib/audio/comprehension/transports/moyen-a2__annonce-10.mp3",
+      "audio": "/lib/audio/tcf/co/transports/moyen-a2__annonce-10.mp3",
       "ss": true,
       "tx": 0.688,
       "ans": 0.5,
@@ -3530,7 +3530,7 @@
     },
     {
       "id": "tcf-ss-a2-s48-co-3",
-      "audio": "/lib/audio/comprehension/transports/moyen-a2__annonce-9.mp3",
+      "audio": "/lib/audio/tcf/co/transports/moyen-a2__annonce-9.mp3",
       "ss": true,
       "tx": 0.871,
       "ans": 0.0,
@@ -3539,7 +3539,7 @@
     },
     {
       "id": "tcf-ss-a2-s48-co-4",
-      "audio": "/lib/audio/comprehension/transports/moyen-a2__conversation-44.mp3",
+      "audio": "/lib/audio/tcf/co/transports/moyen-a2__conversation-44.mp3",
       "ss": true,
       "tx": 0.875,
       "ans": 0.333,
@@ -3548,7 +3548,7 @@
     },
     {
       "id": "tcf-ss-a2-s49-co-1",
-      "audio": "/lib/audio/comprehension/transports/moyen-a2__message-35.mp3",
+      "audio": "/lib/audio/tcf/co/transports/moyen-a2__message-35.mp3",
       "ss": true,
       "tx": 0.758,
       "ans": 0.833,
@@ -3557,7 +3557,7 @@
     },
     {
       "id": "tcf-ss-a2-s49-co-2",
-      "audio": "/lib/audio/comprehension/transports/moyen-a2__message-36.mp3",
+      "audio": "/lib/audio/tcf/co/transports/moyen-a2__message-36.mp3",
       "ss": true,
       "tx": 0.897,
       "ans": 0.5,
@@ -3566,7 +3566,7 @@
     },
     {
       "id": "tcf-ss-a2-s49-co-3",
-      "audio": "/lib/audio/comprehension/transports/moyen-a2__message-43.mp3",
+      "audio": "/lib/audio/tcf/co/transports/moyen-a2__message-43.mp3",
       "ss": true,
       "tx": 0.895,
       "ans": 0.667,
@@ -3575,7 +3575,7 @@
     },
     {
       "id": "tcf-ss-a2-s50-co-1",
-      "audio": "/lib/audio/comprehension/travail/moyen-a2__155.mp3",
+      "audio": "/lib/audio/tcf/co/travail/moyen-a2__155.mp3",
       "ss": true,
       "tx": 0.545,
       "ans": 0.8,
@@ -3584,7 +3584,7 @@
     },
     {
       "id": "tcf-ss-a2-s50-co-2",
-      "audio": "/lib/audio/comprehension/travail/moyen-a2__163.mp3",
+      "audio": "/lib/audio/tcf/co/travail/moyen-a2__163.mp3",
       "ss": true,
       "tx": 0.455,
       "ans": 0.6,
@@ -3593,7 +3593,7 @@
     },
     {
       "id": "tcf-ss-a2-s50-co-4",
-      "audio": "/lib/audio/comprehension/travail/moyen-a2__171.mp3",
+      "audio": "/lib/audio/tcf/co/travail/moyen-a2__171.mp3",
       "ss": true,
       "tx": 0.923,
       "ans": 1.0,
@@ -3602,7 +3602,7 @@
     },
     {
       "id": "tcf-ss-a2-s51-co-1",
-      "audio": "/lib/audio/comprehension/travail/moyen-a2__177.mp3",
+      "audio": "/lib/audio/tcf/co/travail/moyen-a2__177.mp3",
       "ss": true,
       "tx": 0.417,
       "ans": 0.4,
@@ -3611,7 +3611,7 @@
     },
     {
       "id": "tcf-ss-a2-s52-co-3",
-      "audio": "/lib/audio/comprehension/travail/moyen-a2__194.mp3",
+      "audio": "/lib/audio/tcf/co/travail/moyen-a2__194.mp3",
       "ss": true,
       "tx": 0.714,
       "ans": 0.6,
@@ -3620,7 +3620,7 @@
     },
     {
       "id": "tcf-ss-a2-s53-co-1",
-      "audio": "/lib/audio/comprehension/vetements/moyen-a2__134.mp3",
+      "audio": "/lib/audio/tcf/co/vetements/moyen-a2__134.mp3",
       "ss": true,
       "tx": 0.706,
       "ans": 0.5,
@@ -3629,7 +3629,7 @@
     },
     {
       "id": "tcf-ss-a2-s53-co-2",
-      "audio": "/lib/audio/comprehension/vetements/moyen-a2__139.mp3",
+      "audio": "/lib/audio/tcf/co/vetements/moyen-a2__139.mp3",
       "ss": true,
       "tx": 0.6,
       "ans": 0.6,
@@ -3638,7 +3638,7 @@
     },
     {
       "id": "tcf-ss-a2-s53-co-4",
-      "audio": "/lib/audio/comprehension/vetements/moyen-a2__147.mp3",
+      "audio": "/lib/audio/tcf/co/vetements/moyen-a2__147.mp3",
       "ss": true,
       "tx": 0.929,
       "ans": 0.5,
@@ -3647,7 +3647,7 @@
     },
     {
       "id": "tcf-ss-a2-s54-co-1",
-      "audio": "/lib/audio/comprehension/vetements/moyen-a2__150.mp3",
+      "audio": "/lib/audio/tcf/co/vetements/moyen-a2__150.mp3",
       "ss": true,
       "tx": 0.476,
       "ans": 0.333,
@@ -3656,7 +3656,7 @@
     },
     {
       "id": "tcf-ss-b1-s1-co-1",
-      "audio": "/lib/audio/comprehension/achats/difficile-b1__annonce-31.mp3",
+      "audio": "/lib/audio/tcf/co/achats/difficile-b1__annonce-31.mp3",
       "ss": true,
       "tx": 0.786,
       "ans": 0.5,
@@ -3665,7 +3665,7 @@
     },
     {
       "id": "tcf-ss-b1-s1-co-4",
-      "audio": "/lib/audio/comprehension/actualite/difficile-b1__radio-3.mp3",
+      "audio": "/lib/audio/tcf/co/actualite/difficile-b1__radio-3.mp3",
       "ss": true,
       "tx": 0.5,
       "ans": 0.667,
@@ -3674,7 +3674,7 @@
     },
     {
       "id": "tcf-ss-b1-s2-co-1",
-      "audio": "/lib/audio/comprehension/administration/difficile-b1__radio-32.mp3",
+      "audio": "/lib/audio/tcf/co/administration/difficile-b1__radio-32.mp3",
       "ss": true,
       "tx": 0.848,
       "ans": 0.0,
@@ -3683,7 +3683,7 @@
     },
     {
       "id": "tcf-ss-b1-s3-co-1",
-      "audio": "/lib/audio/comprehension/famille/difficile-b1__conversation-16.mp3",
+      "audio": "/lib/audio/tcf/co/famille/difficile-b1__conversation-16.mp3",
       "ss": true,
       "tx": 0.83,
       "ans": 0.333,
@@ -3692,7 +3692,7 @@
     },
     {
       "id": "tcf-ss-b1-s3-co-2",
-      "audio": "/lib/audio/comprehension/famille/difficile-b1__radio-1.mp3",
+      "audio": "/lib/audio/tcf/co/famille/difficile-b1__radio-1.mp3",
       "ss": true,
       "tx": 0.658,
       "ans": 0.333,
@@ -3701,7 +3701,7 @@
     },
     {
       "id": "tcf-ss-b1-s3-co-3",
-      "audio": "/lib/audio/comprehension/famille/difficile-b1__radio-19.mp3",
+      "audio": "/lib/audio/tcf/co/famille/difficile-b1__radio-19.mp3",
       "ss": true,
       "tx": 0.727,
       "ans": 0.167,
@@ -3710,7 +3710,7 @@
     },
     {
       "id": "tcf-ss-b1-s3-co-4",
-      "audio": "/lib/audio/comprehension/famille/difficile-b1__radio-4.mp3",
+      "audio": "/lib/audio/tcf/co/famille/difficile-b1__radio-4.mp3",
       "ss": true,
       "tx": 0.896,
       "ans": 0.333,
@@ -3719,7 +3719,7 @@
     },
     {
       "id": "tcf-ss-b1-s4-co-1",
-      "audio": "/lib/audio/comprehension/inviter/difficile-b1__conversation-3.mp3",
+      "audio": "/lib/audio/tcf/co/inviter/difficile-b1__conversation-3.mp3",
       "ss": true,
       "tx": 0.75,
       "ans": 0.5,
@@ -3728,7 +3728,7 @@
     },
     {
       "id": "tcf-ss-b1-s4-co-3",
-      "audio": "/lib/audio/comprehension/journee/difficile-b1__conversation-11.mp3",
+      "audio": "/lib/audio/tcf/co/journee/difficile-b1__conversation-11.mp3",
       "ss": true,
       "tx": 0.868,
       "ans": 0.667,
@@ -3737,7 +3737,7 @@
     },
     {
       "id": "tcf-ss-b1-s4-co-4",
-      "audio": "/lib/audio/comprehension/journee/difficile-b1__conversation-15.mp3",
+      "audio": "/lib/audio/tcf/co/journee/difficile-b1__conversation-15.mp3",
       "ss": true,
       "tx": 0.68,
       "ans": 0.167,
@@ -3746,7 +3746,7 @@
     },
     {
       "id": "tcf-ss-b1-s5-co-1",
-      "audio": "/lib/audio/comprehension/journee/difficile-b1__radio-13.mp3",
+      "audio": "/lib/audio/tcf/co/journee/difficile-b1__radio-13.mp3",
       "ss": true,
       "tx": 0.684,
       "ans": 0.5,
@@ -3755,7 +3755,7 @@
     },
     {
       "id": "tcf-ss-b1-s5-co-2",
-      "audio": "/lib/audio/comprehension/journee/difficile-b1__radio-16.mp3",
+      "audio": "/lib/audio/tcf/co/journee/difficile-b1__radio-16.mp3",
       "ss": true,
       "tx": 0.774,
       "ans": 0.167,
@@ -3764,7 +3764,7 @@
     },
     {
       "id": "tcf-ss-b1-s5-co-3",
-      "audio": "/lib/audio/comprehension/journee/difficile-b1__radio-7.mp3",
+      "audio": "/lib/audio/tcf/co/journee/difficile-b1__radio-7.mp3",
       "ss": true,
       "tx": 0.75,
       "ans": 0.833,
@@ -3773,7 +3773,7 @@
     },
     {
       "id": "tcf-ss-b1-s6-co-2",
-      "audio": "/lib/audio/comprehension/loisirs/difficile-b1__annonce-35.mp3",
+      "audio": "/lib/audio/tcf/co/loisirs/difficile-b1__annonce-35.mp3",
       "ss": true,
       "tx": 0.889,
       "ans": 0.5,
@@ -3782,7 +3782,7 @@
     },
     {
       "id": "tcf-ss-b1-s6-co-3",
-      "audio": "/lib/audio/comprehension/loisirs/difficile-b1__radio-10.mp3",
+      "audio": "/lib/audio/tcf/co/loisirs/difficile-b1__radio-10.mp3",
       "ss": true,
       "tx": 0.929,
       "ans": 0.167,
@@ -3791,7 +3791,7 @@
     },
     {
       "id": "tcf-ss-b1-s6-co-4",
-      "audio": "/lib/audio/comprehension/loisirs/difficile-b1__radio-12.mp3",
+      "audio": "/lib/audio/tcf/co/loisirs/difficile-b1__radio-12.mp3",
       "ss": true,
       "tx": 0.674,
       "ans": 0.167,
@@ -3800,7 +3800,7 @@
     },
     {
       "id": "tcf-ss-b1-s7-co-1",
-      "audio": "/lib/audio/comprehension/loisirs/difficile-b1__radio-17.mp3",
+      "audio": "/lib/audio/tcf/co/loisirs/difficile-b1__radio-17.mp3",
       "ss": true,
       "tx": 0.917,
       "ans": 0.667,
@@ -3809,7 +3809,7 @@
     },
     {
       "id": "tcf-ss-b1-s7-co-3",
-      "audio": "/lib/audio/comprehension/loisirs/difficile-b1__radio-30.mp3",
+      "audio": "/lib/audio/tcf/co/loisirs/difficile-b1__radio-30.mp3",
       "ss": true,
       "tx": 0.795,
       "ans": 0.5,
@@ -3818,7 +3818,7 @@
     },
     {
       "id": "tcf-ss-b1-s8-co-1",
-      "audio": "/lib/audio/comprehension/nature/difficile-b1__conversation-7.mp3",
+      "audio": "/lib/audio/tcf/co/nature/difficile-b1__conversation-7.mp3",
       "ss": true,
       "tx": 0.884,
       "ans": 0.5,
@@ -3827,7 +3827,7 @@
     },
     {
       "id": "tcf-ss-b1-s8-co-2",
-      "audio": "/lib/audio/comprehension/nature/difficile-b1__radio-2.mp3",
+      "audio": "/lib/audio/tcf/co/nature/difficile-b1__radio-2.mp3",
       "ss": true,
       "tx": 0.78,
       "ans": 0.333,
@@ -3836,7 +3836,7 @@
     },
     {
       "id": "tcf-ss-b1-s8-co-4",
-      "audio": "/lib/audio/comprehension/nourriture/difficile-b1__annonce-32.mp3",
+      "audio": "/lib/audio/tcf/co/nourriture/difficile-b1__annonce-32.mp3",
       "ss": true,
       "tx": 0.897,
       "ans": 0.667,
@@ -3845,7 +3845,7 @@
     },
     {
       "id": "tcf-ss-b1-s9-co-1",
-      "audio": "/lib/audio/comprehension/nourriture/difficile-b1__conversation-12.mp3",
+      "audio": "/lib/audio/tcf/co/nourriture/difficile-b1__conversation-12.mp3",
       "ss": true,
       "tx": 0.872,
       "ans": 0.333,
@@ -3854,7 +3854,7 @@
     },
     {
       "id": "tcf-ss-b1-s9-co-2",
-      "audio": "/lib/audio/comprehension/nourriture/difficile-b1__conversation-6.mp3",
+      "audio": "/lib/audio/tcf/co/nourriture/difficile-b1__conversation-6.mp3",
       "ss": true,
       "tx": 0.16,
       "ans": 0.833,
@@ -3863,7 +3863,7 @@
     },
     {
       "id": "tcf-ss-b1-s9-co-3",
-      "audio": "/lib/audio/comprehension/nourriture/difficile-b1__radio-11.mp3",
+      "audio": "/lib/audio/tcf/co/nourriture/difficile-b1__radio-11.mp3",
       "ss": true,
       "tx": 0.795,
       "ans": 0.167,
@@ -3872,7 +3872,7 @@
     },
     {
       "id": "tcf-ss-b1-s9-co-4",
-      "audio": "/lib/audio/comprehension/nourriture/difficile-b1__radio-20.mp3",
+      "audio": "/lib/audio/tcf/co/nourriture/difficile-b1__radio-20.mp3",
       "ss": true,
       "tx": 0.222,
       "ans": 0.6,
@@ -3881,7 +3881,7 @@
     },
     {
       "id": "tcf-ss-b1-s10-co-2",
-      "audio": "/lib/audio/comprehension/nourriture/difficile-b1__radio-31.mp3",
+      "audio": "/lib/audio/tcf/co/nourriture/difficile-b1__radio-31.mp3",
       "ss": true,
       "tx": 0.795,
       "ans": 0.0,
@@ -3890,7 +3890,7 @@
     },
     {
       "id": "tcf-ss-b1-s10-co-3",
-      "audio": "/lib/audio/comprehension/nourriture/difficile-b1__radio-6.mp3",
+      "audio": "/lib/audio/tcf/co/nourriture/difficile-b1__radio-6.mp3",
       "ss": true,
       "tx": 0.805,
       "ans": 0.333,
@@ -3899,7 +3899,7 @@
     },
     {
       "id": "tcf-ss-b1-s11-co-2",
-      "audio": "/lib/audio/comprehension/presenter/difficile-b1__annonce-30.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/difficile-b1__annonce-30.mp3",
       "ss": true,
       "tx": 0.737,
       "ans": 0.333,
@@ -3908,7 +3908,7 @@
     },
     {
       "id": "tcf-ss-b1-s11-co-3",
-      "audio": "/lib/audio/comprehension/presenter/difficile-b1__conversation-1.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/difficile-b1__conversation-1.mp3",
       "ss": true,
       "tx": 0.864,
       "ans": 0.333,
@@ -3917,7 +3917,7 @@
     },
     {
       "id": "tcf-ss-b1-s12-co-1",
-      "audio": "/lib/audio/comprehension/presenter/difficile-b1__conversation-18.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/difficile-b1__conversation-18.mp3",
       "ss": true,
       "tx": 0.814,
       "ans": 0.5,
@@ -3926,7 +3926,7 @@
     },
     {
       "id": "tcf-ss-b1-s12-co-2",
-      "audio": "/lib/audio/comprehension/presenter/difficile-b1__radio-15.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/difficile-b1__radio-15.mp3",
       "ss": true,
       "tx": 0.889,
       "ans": 0.0,
@@ -3935,7 +3935,7 @@
     },
     {
       "id": "tcf-ss-b1-s13-co-1",
-      "audio": "/lib/audio/comprehension/presenter/difficile-b1__radio-9.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/difficile-b1__radio-9.mp3",
       "ss": true,
       "tx": 0.63,
       "ans": 0.667,
@@ -3944,7 +3944,7 @@
     },
     {
       "id": "tcf-ss-b1-s13-co-2",
-      "audio": "/lib/audio/comprehension/transports/difficile-b1__conversation-10.mp3",
+      "audio": "/lib/audio/tcf/co/transports/difficile-b1__conversation-10.mp3",
       "ss": true,
       "tx": 0.186,
       "ans": 0.667,
@@ -3953,7 +3953,7 @@
     },
     {
       "id": "tcf-ss-b1-s13-co-4",
-      "audio": "/lib/audio/comprehension/transports/difficile-b1__radio-14.mp3",
+      "audio": "/lib/audio/tcf/co/transports/difficile-b1__radio-14.mp3",
       "ss": true,
       "tx": 0.861,
       "ans": 0.0,
@@ -3962,7 +3962,7 @@
     },
     {
       "id": "tcf-ss-b1-s14-co-2",
-      "audio": "/lib/audio/comprehension/transports/difficile-b1__radio-8.mp3",
+      "audio": "/lib/audio/tcf/co/transports/difficile-b1__radio-8.mp3",
       "ss": true,
       "tx": 0.78,
       "ans": 0.5,
@@ -3971,7 +3971,7 @@
     },
     {
       "id": "tcf-ss-b1-s14-co-3",
-      "audio": "/lib/audio/comprehension/travail/difficile-b1__radio-5.mp3",
+      "audio": "/lib/audio/tcf/co/travail/difficile-b1__radio-5.mp3",
       "ss": true,
       "tx": 0.837,
       "ans": 0.167,
@@ -3980,7 +3980,7 @@
     },
     {
       "id": "tcf-ss-b1-s14-co-4",
-      "audio": "/lib/audio/comprehension/vetements/difficile-b1__conversation-17.mp3",
+      "audio": "/lib/audio/tcf/co/vetements/difficile-b1__conversation-17.mp3",
       "ss": true,
       "tx": 0.808,
       "ans": 0.167,
@@ -3989,7 +3989,7 @@
     },
     {
       "id": "tcf-ss-b1-s15-co-1",
-      "audio": "/lib/audio/comprehension/vetements/difficile-b1__conversation-2.mp3",
+      "audio": "/lib/audio/tcf/co/vetements/difficile-b1__conversation-2.mp3",
       "ss": true,
       "tx": 0.152,
       "ans": 0.833,
@@ -4000,7 +4000,7 @@
   "warn": [
     {
       "id": "tcf-ss-a1-s1-co-4",
-      "audio": "/lib/audio/comprehension/achats/facile-a1__annonce-22.mp3",
+      "audio": "/lib/audio/tcf/co/achats/facile-a1__annonce-22.mp3",
       "ss": true,
       "tx": 0.233,
       "ans": 0.5,
@@ -4009,7 +4009,7 @@
     },
     {
       "id": "tcf-ss-a1-s4-co-2",
-      "audio": "/lib/audio/comprehension/administration/facile-a1__radio-32.mp3",
+      "audio": "/lib/audio/tcf/co/administration/facile-a1__radio-32.mp3",
       "ss": true,
       "tx": 0.367,
       "ans": 0.25,
@@ -4018,7 +4018,7 @@
     },
     {
       "id": "tcf-ss-a1-s4-co-4",
-      "audio": "/lib/audio/comprehension/ecole/facile-a1__011.mp3",
+      "audio": "/lib/audio/tcf/co/ecole/facile-a1__011.mp3",
       "ss": true,
       "tx": 0.375,
       "ans": 0.0,
@@ -4027,7 +4027,7 @@
     },
     {
       "id": "tcf-ss-a1-s6-co-4",
-      "audio": "/lib/audio/comprehension/famille/facile-a1__conversation-46.mp3",
+      "audio": "/lib/audio/tcf/co/famille/facile-a1__conversation-46.mp3",
       "ss": true,
       "tx": 0.333,
       "ans": 0.25,
@@ -4036,7 +4036,7 @@
     },
     {
       "id": "tcf-ss-a1-s9-co-3",
-      "audio": "/lib/audio/comprehension/inviter/facile-a1__message-7.mp3",
+      "audio": "/lib/audio/tcf/co/inviter/facile-a1__message-7.mp3",
       "ss": true,
       "tx": 0.226,
       "ans": 0.5,
@@ -4045,7 +4045,7 @@
     },
     {
       "id": "tcf-ss-a1-s19-co-1",
-      "audio": "/lib/audio/comprehension/nature/facile-a1__conversation-7.mp3",
+      "audio": "/lib/audio/tcf/co/nature/facile-a1__conversation-7.mp3",
       "ss": true,
       "tx": 0.417,
       "ans": 0.0,
@@ -4054,7 +4054,7 @@
     },
     {
       "id": "tcf-ss-a1-s44-co-3",
-      "audio": "/lib/audio/comprehension/presenter/facile-a1__conversation-41.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__conversation-41.mp3",
       "ss": true,
       "tx": 0.438,
       "ans": 0.0,
@@ -4063,7 +4063,7 @@
     },
     {
       "id": "tcf-ss-a1-s45-co-1",
-      "audio": "/lib/audio/comprehension/presenter/facile-a1__conversation-45.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__conversation-45.mp3",
       "ss": true,
       "tx": 0.3,
       "ans": 0.25,
@@ -4072,7 +4072,7 @@
     },
     {
       "id": "tcf-ss-a1-s49-co-3",
-      "audio": "/lib/audio/comprehension/transports/facile-a1__annonce-10.mp3",
+      "audio": "/lib/audio/tcf/co/transports/facile-a1__annonce-10.mp3",
       "ss": true,
       "tx": 0.391,
       "ans": 0.0,
@@ -4081,7 +4081,7 @@
     },
     {
       "id": "tcf-ss-a1-s51-co-1",
-      "audio": "/lib/audio/comprehension/transports/facile-a1__annonce-9.mp3",
+      "audio": "/lib/audio/tcf/co/transports/facile-a1__annonce-9.mp3",
       "ss": true,
       "tx": 0.036,
       "ans": 0.75,
@@ -4090,7 +4090,7 @@
     },
     {
       "id": "tcf-ss-a1-s54-co-4",
-      "audio": "/lib/audio/comprehension/vetements/facile-a1__conversation-2.mp3",
+      "audio": "/lib/audio/tcf/co/vetements/facile-a1__conversation-2.mp3",
       "ss": true,
       "tx": 0.241,
       "ans": 0.5,
@@ -4099,7 +4099,7 @@
     },
     {
       "id": "tcf-ss-a2-s6-co-1",
-      "audio": "/lib/audio/comprehension/administration/moyen-a2__167.mp3",
+      "audio": "/lib/audio/tcf/co/administration/moyen-a2__167.mp3",
       "ss": true,
       "tx": 0.333,
       "ans": 0.167,
@@ -4108,7 +4108,7 @@
     },
     {
       "id": "tcf-ss-a2-s9-co-1",
-      "audio": "/lib/audio/comprehension/famille/moyen-a2__069.mp3",
+      "audio": "/lib/audio/tcf/co/famille/moyen-a2__069.mp3",
       "ss": true,
       "tx": 0.214,
       "ans": 0.4,
@@ -4117,7 +4117,7 @@
     },
     {
       "id": "tcf-ss-a2-s17-co-3",
-      "audio": "/lib/audio/comprehension/logement/moyen-a2__046.mp3",
+      "audio": "/lib/audio/tcf/co/logement/moyen-a2__046.mp3",
       "ss": true,
       "tx": 0.318,
       "ans": 0.167,
@@ -4126,7 +4126,7 @@
     },
     {
       "id": "tcf-ss-a2-s18-co-1",
-      "audio": "/lib/audio/comprehension/logement/moyen-a2__143.mp3",
+      "audio": "/lib/audio/tcf/co/logement/moyen-a2__143.mp3",
       "ss": true,
       "tx": 0.231,
       "ans": 0.5,
@@ -4135,7 +4135,7 @@
     },
     {
       "id": "tcf-ss-a2-s18-co-2",
-      "audio": "/lib/audio/comprehension/logement/moyen-a2__195.mp3",
+      "audio": "/lib/audio/tcf/co/logement/moyen-a2__195.mp3",
       "ss": true,
       "tx": 0.364,
       "ans": 0.167,
@@ -4144,7 +4144,7 @@
     },
     {
       "id": "tcf-ss-a2-s18-co-4",
-      "audio": "/lib/audio/comprehension/loisirs/moyen-a2__113.mp3",
+      "audio": "/lib/audio/tcf/co/loisirs/moyen-a2__113.mp3",
       "ss": true,
       "tx": 0.4,
       "ans": 0.167,
@@ -4153,7 +4153,7 @@
     },
     {
       "id": "tcf-ss-a2-s20-co-4",
-      "audio": "/lib/audio/comprehension/loisirs/moyen-a2__radio-21.mp3",
+      "audio": "/lib/audio/tcf/co/loisirs/moyen-a2__radio-21.mp3",
       "ss": true,
       "tx": 0.29,
       "ans": 0.333,
@@ -4162,7 +4162,7 @@
     },
     {
       "id": "tcf-ss-a2-s22-co-3",
-      "audio": "/lib/audio/comprehension/nourriture/moyen-a2__082.mp3",
+      "audio": "/lib/audio/tcf/co/nourriture/moyen-a2__082.mp3",
       "ss": true,
       "tx": 0.342,
       "ans": 0.333,
@@ -4171,7 +4171,7 @@
     },
     {
       "id": "tcf-ss-a2-s22-co-4",
-      "audio": "/lib/audio/comprehension/nourriture/moyen-a2__085.mp3",
+      "audio": "/lib/audio/tcf/co/nourriture/moyen-a2__085.mp3",
       "ss": true,
       "tx": 0.4,
       "ans": 0.2,
@@ -4180,7 +4180,7 @@
     },
     {
       "id": "tcf-ss-a2-s24-co-1",
-      "audio": "/lib/audio/comprehension/nourriture/moyen-a2__conversation-12.mp3",
+      "audio": "/lib/audio/tcf/co/nourriture/moyen-a2__conversation-12.mp3",
       "ss": true,
       "tx": 0.364,
       "ans": 0.167,
@@ -4189,7 +4189,7 @@
     },
     {
       "id": "tcf-ss-a2-s25-co-1",
-      "audio": "/lib/audio/comprehension/nourriture/moyen-a2__radio-24.mp3",
+      "audio": "/lib/audio/tcf/co/nourriture/moyen-a2__radio-24.mp3",
       "ss": true,
       "tx": 0.312,
       "ans": 0.25,
@@ -4198,7 +4198,7 @@
     },
     {
       "id": "tcf-ss-a2-s27-co-4",
-      "audio": "/lib/audio/comprehension/objets/moyen-a2__094.mp3",
+      "audio": "/lib/audio/tcf/co/objets/moyen-a2__094.mp3",
       "ss": true,
       "tx": 0.25,
       "ans": 0.5,
@@ -4207,7 +4207,7 @@
     },
     {
       "id": "tcf-ss-a2-s28-co-4",
-      "audio": "/lib/audio/comprehension/objets/moyen-a2__121.mp3",
+      "audio": "/lib/audio/tcf/co/objets/moyen-a2__121.mp3",
       "ss": true,
       "tx": 0.375,
       "ans": 0.2,
@@ -4216,7 +4216,7 @@
     },
     {
       "id": "tcf-ss-a2-s30-co-2",
-      "audio": "/lib/audio/comprehension/objets/moyen-a2__185.mp3",
+      "audio": "/lib/audio/tcf/co/objets/moyen-a2__185.mp3",
       "ss": true,
       "tx": 0.286,
       "ans": 0.167,
@@ -4225,7 +4225,7 @@
     },
     {
       "id": "tcf-ss-a2-s30-co-3",
-      "audio": "/lib/audio/comprehension/objets/moyen-a2__192.mp3",
+      "audio": "/lib/audio/tcf/co/objets/moyen-a2__192.mp3",
       "ss": true,
       "tx": 0.35,
       "ans": 0.0,
@@ -4234,7 +4234,7 @@
     },
     {
       "id": "tcf-ss-a2-s33-co-1",
-      "audio": "/lib/audio/comprehension/presenter/moyen-a2__053.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__053.mp3",
       "ss": true,
       "tx": 0.333,
       "ans": 0.2,
@@ -4243,7 +4243,7 @@
     },
     {
       "id": "tcf-ss-a2-s33-co-3",
-      "audio": "/lib/audio/comprehension/presenter/moyen-a2__061.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__061.mp3",
       "ss": true,
       "tx": 0.167,
       "ans": 0.4,
@@ -4252,7 +4252,7 @@
     },
     {
       "id": "tcf-ss-a2-s33-co-4",
-      "audio": "/lib/audio/comprehension/presenter/moyen-a2__062.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__062.mp3",
       "ss": true,
       "tx": 0.4,
       "ans": 0.0,
@@ -4261,7 +4261,7 @@
     },
     {
       "id": "tcf-ss-a2-s34-co-3",
-      "audio": "/lib/audio/comprehension/presenter/moyen-a2__073.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__073.mp3",
       "ss": true,
       "tx": 0.333,
       "ans": 0.333,
@@ -4270,7 +4270,7 @@
     },
     {
       "id": "tcf-ss-a2-s35-co-1",
-      "audio": "/lib/audio/comprehension/presenter/moyen-a2__077.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__077.mp3",
       "ss": true,
       "tx": 0.345,
       "ans": 0.167,
@@ -4279,7 +4279,7 @@
     },
     {
       "id": "tcf-ss-a2-s36-co-1",
-      "audio": "/lib/audio/comprehension/presenter/moyen-a2__087.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__087.mp3",
       "ss": true,
       "tx": 0.278,
       "ans": 0.333,
@@ -4288,7 +4288,7 @@
     },
     {
       "id": "tcf-ss-a2-s39-co-2",
-      "audio": "/lib/audio/comprehension/presenter/moyen-a2__169.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__169.mp3",
       "ss": true,
       "tx": 0.4,
       "ans": 0.0,
@@ -4297,7 +4297,7 @@
     },
     {
       "id": "tcf-ss-a2-s41-co-4",
-      "audio": "/lib/audio/comprehension/presenter/moyen-a2__conversation-1.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__conversation-1.mp3",
       "ss": true,
       "tx": 0.222,
       "ans": 0.4,
@@ -4306,7 +4306,7 @@
     },
     {
       "id": "tcf-ss-a2-s45-co-2",
-      "audio": "/lib/audio/comprehension/sante/moyen-a2__114.mp3",
+      "audio": "/lib/audio/tcf/co/sante/moyen-a2__114.mp3",
       "ss": true,
       "tx": 0.25,
       "ans": 0.2,
@@ -4315,7 +4315,7 @@
     },
     {
       "id": "tcf-ss-a2-s45-co-3",
-      "audio": "/lib/audio/comprehension/sante/moyen-a2__118.mp3",
+      "audio": "/lib/audio/tcf/co/sante/moyen-a2__118.mp3",
       "ss": true,
       "tx": 0.4,
       "ans": 0.0,
@@ -4324,7 +4324,7 @@
     },
     {
       "id": "tcf-ss-a2-s46-co-1",
-      "audio": "/lib/audio/comprehension/sante/moyen-a2__120.mp3",
+      "audio": "/lib/audio/tcf/co/sante/moyen-a2__120.mp3",
       "ss": true,
       "tx": 0.25,
       "ans": 0.2,
@@ -4333,7 +4333,7 @@
     },
     {
       "id": "tcf-ss-a2-s47-co-2",
-      "audio": "/lib/audio/comprehension/transports/moyen-a2__095.mp3",
+      "audio": "/lib/audio/tcf/co/transports/moyen-a2__095.mp3",
       "ss": true,
       "tx": 0.5,
       "ans": 0.0,
@@ -4342,7 +4342,7 @@
     },
     {
       "id": "tcf-ss-a2-s52-co-4",
-      "audio": "/lib/audio/comprehension/vetements/moyen-a2__131.mp3",
+      "audio": "/lib/audio/tcf/co/vetements/moyen-a2__131.mp3",
       "ss": true,
       "tx": 0.394,
       "ans": 0.0,
@@ -4351,7 +4351,7 @@
     },
     {
       "id": "tcf-ss-b1-s1-co-2",
-      "audio": "/lib/audio/comprehension/achats/difficile-b1__conversation-5.mp3",
+      "audio": "/lib/audio/tcf/co/achats/difficile-b1__conversation-5.mp3",
       "ss": true,
       "tx": 0.159,
       "ans": 0.667,
@@ -4360,7 +4360,7 @@
     },
     {
       "id": "tcf-ss-b1-s2-co-3",
-      "audio": "/lib/audio/comprehension/ecole/difficile-b1__conversation-8.mp3",
+      "audio": "/lib/audio/tcf/co/ecole/difficile-b1__conversation-8.mp3",
       "ss": true,
       "tx": 0.333,
       "ans": 0.2,
@@ -4369,7 +4369,7 @@
     },
     {
       "id": "tcf-ss-b1-s5-co-4",
-      "audio": "/lib/audio/comprehension/loisirs/difficile-b1__annonce-33.mp3",
+      "audio": "/lib/audio/tcf/co/loisirs/difficile-b1__annonce-33.mp3",
       "ss": true,
       "tx": 0.372,
       "ans": 0.0,
@@ -4378,7 +4378,7 @@
     },
     {
       "id": "tcf-ss-b1-s6-co-1",
-      "audio": "/lib/audio/comprehension/loisirs/difficile-b1__annonce-34.mp3",
+      "audio": "/lib/audio/tcf/co/loisirs/difficile-b1__annonce-34.mp3",
       "ss": true,
       "tx": 0.314,
       "ans": 0.167,
@@ -4387,7 +4387,7 @@
     },
     {
       "id": "tcf-ss-b1-s8-co-3",
-      "audio": "/lib/audio/comprehension/nature/difficile-b1__radio-26.mp3",
+      "audio": "/lib/audio/tcf/co/nature/difficile-b1__radio-26.mp3",
       "ss": true,
       "tx": 0.161,
       "ans": 0.667,
@@ -4396,7 +4396,7 @@
     },
     {
       "id": "tcf-ss-b1-s10-co-4",
-      "audio": "/lib/audio/comprehension/objets/difficile-b1__conversation-13.mp3",
+      "audio": "/lib/audio/tcf/co/objets/difficile-b1__conversation-13.mp3",
       "ss": true,
       "tx": 0.226,
       "ans": 0.5,
@@ -4405,7 +4405,7 @@
     },
     {
       "id": "tcf-ss-b1-s11-co-4",
-      "audio": "/lib/audio/comprehension/presenter/difficile-b1__conversation-14.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/difficile-b1__conversation-14.mp3",
       "ss": true,
       "tx": 0.275,
       "ans": 0.333,
@@ -4416,7 +4416,7 @@
   "bad": [
     {
       "id": "tcf-a1-s1-co-4",
-      "audio": "/lib/audio/comprehension/lieux-publics/a-la-bibliotheque.mp3",
+      "audio": "/lib/audio/tcf/co/lieux-publics/a-la-bibliotheque.mp3",
       "ss": false,
       "tx": 0.174,
       "ans": 0.0,
@@ -4425,7 +4425,7 @@
     },
     {
       "id": "tcf-a1-s2-co-4",
-      "audio": "/lib/audio/comprehension/ecole/a-l-universite.mp3",
+      "audio": "/lib/audio/tcf/co/ecole/a-l-universite.mp3",
       "ss": false,
       "tx": 0.043,
       "ans": 0.0,
@@ -4434,7 +4434,7 @@
     },
     {
       "id": "tcf-a1p-s4-co-4",
-      "audio": "/lib/audio/comprehension/ecole/a-l-ecole-4.mp3",
+      "audio": "/lib/audio/tcf/co/ecole/a-l-ecole-4.mp3",
       "ss": false,
       "tx": 0.083,
       "ans": 0.0,
@@ -4443,7 +4443,7 @@
     },
     {
       "id": "tcf-a1-tpa-co-4",
-      "audio": "/lib/audio/comprehension/ecole/les-etudes-2.mp3",
+      "audio": "/lib/audio/tcf/co/ecole/les-etudes-2.mp3",
       "ss": false,
       "tx": 0.043,
       "ans": 0.0,
@@ -4452,7 +4452,7 @@
     },
     {
       "id": "tcf-a1-tpb-co-4",
-      "audio": "/lib/audio/comprehension/ecole/les-etudes-3.mp3",
+      "audio": "/lib/audio/tcf/co/ecole/les-etudes-3.mp3",
       "ss": false,
       "tx": 0.087,
       "ans": 0.0,
@@ -4461,7 +4461,7 @@
     },
     {
       "id": "tcf-a1-sem1-co-1",
-      "audio": "/lib/audio/comprehension/radio/les-annonces.mp3",
+      "audio": "/lib/audio/tcf/co/radio/les-annonces.mp3",
       "ss": false,
       "tx": 0.182,
       "ans": 0.0,
@@ -4470,7 +4470,7 @@
     },
     {
       "id": "tcf-a2-s1-co-3",
-      "audio": "/lib/audio/comprehension/travail/au-bureau-2.mp3",
+      "audio": "/lib/audio/tcf/co/travail/au-bureau-2.mp3",
       "ss": false,
       "tx": 0.0,
       "ans": 0.0,
@@ -4479,7 +4479,7 @@
     },
     {
       "id": "tcf-a2-s1-co-4",
-      "audio": "/lib/audio/comprehension/vie-quotidienne/les-dialogues-du-quotidien.mp3",
+      "audio": "/lib/audio/tcf/co/vie-quotidienne/les-dialogues-du-quotidien.mp3",
       "ss": false,
       "tx": 0.091,
       "ans": 0.0,
@@ -4488,7 +4488,7 @@
     },
     {
       "id": "tcf-a2-sa-co-4",
-      "audio": "/lib/audio/comprehension/vie-quotidienne/les-nouvelles.mp3",
+      "audio": "/lib/audio/tcf/co/vie-quotidienne/les-nouvelles.mp3",
       "ss": false,
       "tx": 0.167,
       "ans": 0.0,
@@ -4497,7 +4497,7 @@
     },
     {
       "id": "tcf-a2-sb-co-4",
-      "audio": "/lib/audio/comprehension/magasins/les-achats.mp3",
+      "audio": "/lib/audio/tcf/co/magasins/les-achats.mp3",
       "ss": false,
       "tx": 0.083,
       "ans": 0.0,
@@ -4506,7 +4506,7 @@
     },
     {
       "id": "tcf-a2-sc-co-4",
-      "audio": "/lib/audio/comprehension/vie-quotidienne/la-famille-2.mp3",
+      "audio": "/lib/audio/tcf/co/vie-quotidienne/la-famille-2.mp3",
       "ss": false,
       "tx": 0.091,
       "ans": 0.0,
@@ -4518,7 +4518,7 @@
   "removed": [
     {
       "id": "tcf-ss-a1-s1-co-3",
-      "audio": "/lib/audio/comprehension/achats/facile-a1__annonce-21.mp3",
+      "audio": "/lib/audio/tcf/co/achats/facile-a1__annonce-21.mp3",
       "ss": true,
       "tx": 0.286,
       "ans": 0.0,
@@ -4527,7 +4527,7 @@
     },
     {
       "id": "tcf-ss-a1-s8-co-2",
-      "audio": "/lib/audio/comprehension/inviter/facile-a1__message-1.mp3",
+      "audio": "/lib/audio/tcf/co/inviter/facile-a1__message-1.mp3",
       "ss": true,
       "tx": 0.061,
       "ans": 0.0,
@@ -4536,7 +4536,7 @@
     },
     {
       "id": "tcf-ss-a1-s51-co-4",
-      "audio": "/lib/audio/comprehension/travail/facile-a1__155.mp3",
+      "audio": "/lib/audio/tcf/co/travail/facile-a1__155.mp3",
       "ss": true,
       "tx": 0.0,
       "ans": 0.0,
@@ -4545,7 +4545,7 @@
     },
     {
       "id": "tcf-ss-a2-s6-co-3",
-      "audio": "/lib/audio/comprehension/ecole/moyen-a2__128.mp3",
+      "audio": "/lib/audio/tcf/co/ecole/moyen-a2__128.mp3",
       "ss": true,
       "tx": 0.222,
       "ans": 0.2,
@@ -4554,7 +4554,7 @@
     },
     {
       "id": "tcf-ss-a2-s6-co-4",
-      "audio": "/lib/audio/comprehension/ecole/moyen-a2__130.mp3",
+      "audio": "/lib/audio/tcf/co/ecole/moyen-a2__130.mp3",
       "ss": true,
       "tx": 0.292,
       "ans": 0.0,
@@ -4563,7 +4563,7 @@
     },
     {
       "id": "tcf-ss-a2-s7-co-4",
-      "audio": "/lib/audio/comprehension/ecole/moyen-a2__conversation-8.mp3",
+      "audio": "/lib/audio/tcf/co/ecole/moyen-a2__conversation-8.mp3",
       "ss": true,
       "tx": 0.143,
       "ans": 0.0,
@@ -4572,7 +4572,7 @@
     },
     {
       "id": "tcf-ss-a2-s10-co-2",
-      "audio": "/lib/audio/comprehension/inviter/moyen-a2__057.mp3",
+      "audio": "/lib/audio/tcf/co/inviter/moyen-a2__057.mp3",
       "ss": true,
       "tx": 0.289,
       "ans": 0.0,
@@ -4581,7 +4581,7 @@
     },
     {
       "id": "tcf-ss-a2-s19-co-2",
-      "audio": "/lib/audio/comprehension/loisirs/moyen-a2__176.mp3",
+      "audio": "/lib/audio/tcf/co/loisirs/moyen-a2__176.mp3",
       "ss": true,
       "tx": 0.333,
       "ans": 0.0,
@@ -4590,7 +4590,7 @@
     },
     {
       "id": "tcf-ss-a2-s27-co-3",
-      "audio": "/lib/audio/comprehension/objets/moyen-a2__093.mp3",
+      "audio": "/lib/audio/tcf/co/objets/moyen-a2__093.mp3",
       "ss": true,
       "tx": 0.333,
       "ans": 0.0,
@@ -4599,7 +4599,7 @@
     },
     {
       "id": "tcf-ss-a2-s28-co-1",
-      "audio": "/lib/audio/comprehension/objets/moyen-a2__097.mp3",
+      "audio": "/lib/audio/tcf/co/objets/moyen-a2__097.mp3",
       "ss": true,
       "tx": 0.286,
       "ans": 0.0,
@@ -4608,7 +4608,7 @@
     },
     {
       "id": "tcf-ss-a2-s31-co-2",
-      "audio": "/lib/audio/comprehension/objets/moyen-a2__radio-22.mp3",
+      "audio": "/lib/audio/tcf/co/objets/moyen-a2__radio-22.mp3",
       "ss": true,
       "tx": 0.071,
       "ans": 0.0,
@@ -4617,7 +4617,7 @@
     },
     {
       "id": "tcf-ss-a2-s37-co-1",
-      "audio": "/lib/audio/comprehension/presenter/moyen-a2__127.mp3",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__127.mp3",
       "ss": true,
       "tx": 0.333,
       "ans": 0.0,
@@ -4626,7 +4626,7 @@
     },
     {
       "id": "tcf-ss-a2-s52-co-1",
-      "audio": "/lib/audio/comprehension/travail/moyen-a2__191.mp3",
+      "audio": "/lib/audio/tcf/co/travail/moyen-a2__191.mp3",
       "ss": true,
       "tx": 0.25,
       "ans": 0.0,
@@ -4635,7 +4635,7 @@
     },
     {
       "id": "tcf-ss-a2-s52-co-2",
-      "audio": "/lib/audio/comprehension/travail/moyen-a2__193.mp3",
+      "audio": "/lib/audio/tcf/co/travail/moyen-a2__193.mp3",
       "ss": true,
       "tx": 0.286,
       "ans": 0.0,
@@ -4644,7 +4644,7 @@
     },
     {
       "id": "tcf-ss-b1-s4-co-2",
-      "audio": "/lib/audio/comprehension/inviter/difficile-b1__radio-18.mp3",
+      "audio": "/lib/audio/tcf/co/inviter/difficile-b1__radio-18.mp3",
       "ss": true,
       "tx": 0.333,
       "ans": 0.0,
@@ -4653,7 +4653,7 @@
     },
     {
       "id": "tcf-ss-b1-s7-co-4",
-      "audio": "/lib/audio/comprehension/nature/difficile-b1__conversation-4.mp3",
+      "audio": "/lib/audio/tcf/co/nature/difficile-b1__conversation-4.mp3",
       "ss": true,
       "tx": 0.3,
       "ans": 0.0,
@@ -4662,7 +4662,7 @@
     },
     {
       "id": "tcf-ss-b1-s13-co-3",
-      "audio": "/lib/audio/comprehension/transports/difficile-b1__conversation-9.mp3",
+      "audio": "/lib/audio/tcf/co/transports/difficile-b1__conversation-9.mp3",
       "ss": true,
       "tx": 0.286,
       "ans": 0.0,
@@ -4673,7 +4673,7 @@
   "missing_audio": [
     {
       "id": "tcf-ss-a1-s3-co-3",
-      "audio": "/lib/audio/comprehension/administration/facile-a1__025.mp3",
+      "audio": "/lib/audio/tcf/co/administration/facile-a1__025.mp3",
       "reason": "stt_failed"
     }
   ],

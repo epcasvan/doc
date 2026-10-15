@@ -14,7 +14,7 @@ description: >-
 Référentiel des médias déjà en vigueur dans `public/lib/` (importés depuis
 `soutien-scolaire` via `scripts/copy-lib-medias.mjs` pour le vocabulaire ;
 documents TCF sous `public/lib/images/documents/`, audios TCF sous
-`public/lib/audio/comprehension/`). Il n’y a plus de `public/lib/tcf/`.
+`public/lib/audio/tcf/co/`). Il n’y a plus de `public/lib/tcf/`.
 
 **Deux régimes d’image distincts** — ne pas les mélanger :
 
@@ -49,7 +49,7 @@ documents TCF sous `public/lib/images/documents/`, audios TCF sous
 |---|---|---|
 | Image (objet, action, lieu) | `public/lib/images/vocabulaire/{theme}/{slug}.webp` | WebP |
 | Image (document propre au sujet) | `public/lib/images/documents/{slug}.webp` | WebP |
-| Audio de test | `public/lib/audio/comprehension/{scénario}/{scène}[-n].mp3` | MP3 |
+| Audio de test | `public/lib/audio/tcf/co/{scénario}/{scène}[-n].mp3` | MP3 |
 
 - **Slug** : ce que l’image montre (`guichet-de-banque`), jamais un nom de série
   ni un préfixe `po2-`.
@@ -196,7 +196,7 @@ Reformulation ClairFLE à préfixer **avant** la description de la scène
 ## Audio (TTS) — vocabulaire uniquement
 
 Les scènes PO TCF n’imposent pas de TTS image ; l’audio PO éventuel suit les
-chemins `public/lib/audio/comprehension/` et les banques (hors scope de cette section).
+chemins `public/lib/audio/tcf/co/` et les banques (hors scope de cette section).
 
 ### Outil et voix (ClairFLE)
 

@@ -221,7 +221,7 @@ export function AudioField({
           className="pill-input"
           type="text"
           value={canPick ? displayName : value}
-          placeholder={canPick ? 'Rechercher un audio de la banque…' : '/lib/audio/comprehension/…'}
+          placeholder={canPick ? 'Rechercher un audio de la banque…' : '/lib/audio/tcf/co/…'}
           aria-label={`Audio : ${label}`}
           title={canPick ? (value ? `${displayName} — ${value}` : 'Rechercher un audio (questions adaptées)') : value}
           readOnly={canPick}
