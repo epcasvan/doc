@@ -996,8 +996,8 @@ export function recalcTcmLibreItem(item: MathItem, exerciseType: string): MathIt
       distractorA: scene.distractorA ?? 'star',
       distractorB: scene.distractorB ?? 'moon',
       targetCount: scene.targetCount,
-      distractorACount: scene.distractorACount ?? 6,
-      distractorBCount: scene.distractorBCount ?? 6,
+      distractorACount: scene.distractorACount ?? 12,
+      distractorBCount: scene.distractorBCount ?? 12,
     })
   }
 

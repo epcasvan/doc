@@ -1,9 +1,24 @@
 /**
  * Compter les icônes (nombres naturels / TCM ex. 1).
- * 11 styles N&B ; placement aléatoire sans chevauchement.
+ * Grille 10×8 par cadre : une forme par cellule (certaines vides),
+ * tailles 33 %–100 % de la cellule, orientations variées.
  */
 import { int, shuffle, type Rng } from '@/math/rng'
 import type { CountIconKind, CountIconScene, CountIconToken, MathItem } from '@/math/types'
+
+/** Colonnes × lignes du cadre (une forme max par cellule). */
+export const COUNT_ICON_GRID_COLS = 10
+export const COUNT_ICON_GRID_ROWS = 8
+
+/** Taille max = largeur d’une cellule (% du cadre). */
+export const COUNT_ICON_MAX_SIZE = 100 / COUNT_ICON_GRID_COLS
+/** Taille min = 33 % de la taille max. */
+export const COUNT_ICON_MIN_SIZE = COUNT_ICON_MAX_SIZE * (1 / 3)
+
+export const COUNT_TARGET_MIN = 11
+export const COUNT_TARGET_MAX = 19
+export const COUNT_DECOY_MIN = 10
+export const COUNT_DECOY_MAX = 15
 
 /** 6 styles de référence + 10 autres silhouettes N&B. */
 export const COUNT_ICON_CATALOG: readonly {
@@ -38,86 +53,50 @@ export function countIconMeta(kind: CountIconKind): (typeof COUNT_ICON_CATALOG)[
   return COUNT_ICON_CATALOG.find((c) => c.kind === kind) ?? COUNT_ICON_CATALOG[0]!
 }
 
-/** Emprise approximative (rayon en % du cadre) pour éviter les contacts. */
-function tokenRadius(size: number): number {
-  return (size / 2) * 0.92
-}
-
-function overlaps(
-  x: number,
-  y: number,
-  r: number,
-  placed: Array<{ x: number; y: number; r: number }>,
-  gap: number,
-): boolean {
-  for (const p of placed) {
-    const dx = x - p.x
-    const dy = y - p.y
-    const minDist = r + p.r + gap
-    if (dx * dx + dy * dy < minDist * minDist) return true
-  }
-  return false
-}
-
 /**
- * Place des jetons aléatoirement sans qu’ils se touchent.
- * Repli sur une grille si le tirage libre échoue.
+ * Place chaque forme dans une cellule distincte de la grille 10×8.
+ * Cellules restantes vides ; taille et rotation aléatoires.
  */
 export function packCountIconTokens(
   rng: Rng,
   kinds: CountIconKind[],
 ): CountIconToken[] {
-  const ordered = shuffle(rng, [...kinds])
-  const placed: Array<{ x: number; y: number; r: number }> = []
-  const tokens: CountIconToken[] = []
-  const gap = 1.6
-  const pad = 7
-
-  for (const kind of ordered) {
-    const size = int(rng, 10, 15)
-    const r = tokenRadius(size)
-    let x = 50
-    let y = 50
-    let ok = false
-    for (let attempt = 0; attempt < 120; attempt++) {
-      const nx = pad + r + rng() * (100 - 2 * (pad + r))
-      const ny = pad + r + rng() * (100 - 2 * (pad + r))
-      if (!overlaps(nx, ny, r, placed, gap)) {
-        x = nx
-        y = ny
-        ok = true
-        break
-      }
-    }
-    if (!ok) {
-      // Grille de secours : première case libre assez grande.
-      const cols = Math.ceil(Math.sqrt(ordered.length * 1.2))
-      const rows = Math.ceil(ordered.length / cols)
-      const cellW = (100 - 2 * pad) / cols
-      const cellH = (100 - 2 * pad) / rows
-      outer: for (let row = 0; row < rows; row++) {
-        for (let col = 0; col < cols; col++) {
-          const nx = pad + col * cellW + cellW / 2
-          const ny = pad + row * cellH + cellH / 2
-          if (!overlaps(nx, ny, r, placed, gap * 0.5)) {
-            x = nx
-            y = ny
-            ok = true
-            break outer
-          }
-        }
-      }
-    }
-    placed.push({ x, y, r })
-    tokens.push({
-      kind,
-      x: Math.max(pad, Math.min(100 - pad, x)),
-      y: Math.max(pad, Math.min(100 - pad, y)),
-      size,
-      rot: int(rng, -22, 22),
-    })
+  const cells = COUNT_ICON_GRID_COLS * COUNT_ICON_GRID_ROWS
+  if (kinds.length > cells) {
+    throw new Error(
+      `Trop de formes (${kinds.length}) pour la grille ${COUNT_ICON_GRID_COLS}×${COUNT_ICON_GRID_ROWS}`,
+    )
   }
-  return tokens
+
+  const ordered = shuffle(rng, [...kinds])
+  const cellIds = shuffle(
+    rng,
+    Array.from({ length: cells }, (_, i) => i),
+  ).slice(0, ordered.length)
+
+  const cellW = 100 / COUNT_ICON_GRID_COLS
+  const cellH = 100 / COUNT_ICON_GRID_ROWS
+  const tokens: CountIconToken[] = []
+
+  for (let i = 0; i < ordered.length; i++) {
+    const kind = ordered[i]!
+    const cell = cellIds[i]!
+    const col = cell % COUNT_ICON_GRID_COLS
+    const row = Math.floor(cell / COUNT_ICON_GRID_COLS)
+    // Centre de la cellule (grille invisible 10×8)
+    const x = (col + 0.5) * cellW
+    const y = (row + 0.5) * cellH
+    void cellH // hauteur cellule = largeur pour le % vertical (cadre ~carré)
+    // Taille entre 33 % et 100 % de la cellule (largeur = hauteur max)
+    const scale = 1 / 3 + rng() * (2 / 3)
+    const size = COUNT_ICON_MAX_SIZE * scale
+    // Orientations variées (pas seulement un léger tilt)
+    const rot = int(rng, -45, 45)
+    tokens.push({ kind, x, y, size, rot })
+  }
+
+  // Ordre d’affichage indépendant du tirage des cellules (lisibilité N&B inchangée)
+  return shuffle(rng, tokens)
 }
 
 export type CountIconsLibreConfig = {
@@ -127,6 +106,14 @@ export type CountIconsLibreConfig = {
   targetCount: number
   distractorACount: number
   distractorBCount: number
+}
+
+function clampTarget(n: number): number {
+  return Math.max(COUNT_TARGET_MIN, Math.min(COUNT_TARGET_MAX, Math.round(n)))
+}
+
+function clampDecoy(n: number): number {
+  return Math.max(COUNT_DECOY_MIN, Math.min(COUNT_DECOY_MAX, Math.round(n)))
 }
 
 export function buildCountIconsItem(rng: Rng, cfg?: Partial<CountIconsLibreConfig>): MathItem {
@@ -145,9 +132,13 @@ export function buildCountIconsItem(rng: Rng, cfg?: Partial<CountIconsLibreConfi
       all.find((k) => k !== targetKind && k !== distractorA) ?? 'moon'
   }
 
-  const targetCount = Math.max(3, Math.min(24, cfg?.targetCount ?? int(rng, 10, 18)))
-  const distractorACount = Math.max(2, Math.min(14, cfg?.distractorACount ?? int(rng, 4, 9)))
-  const distractorBCount = Math.max(2, Math.min(14, cfg?.distractorBCount ?? int(rng, 4, 9)))
+  const targetCount = clampTarget(cfg?.targetCount ?? int(rng, COUNT_TARGET_MIN, COUNT_TARGET_MAX))
+  const distractorACount = clampDecoy(
+    cfg?.distractorACount ?? int(rng, COUNT_DECOY_MIN, COUNT_DECOY_MAX),
+  )
+  const distractorBCount = clampDecoy(
+    cfg?.distractorBCount ?? int(rng, COUNT_DECOY_MIN, COUNT_DECOY_MAX),
+  )
 
   const kinds: CountIconKind[] = [
     ...Array.from({ length: targetCount }, () => targetKind),

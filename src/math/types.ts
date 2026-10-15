@@ -125,10 +125,10 @@ export type CountIconKind =
 
 export type CountIconToken = {
   kind: CountIconKind
-  /** Position en % dans le cadre (0–100). */
+  /** Position en % dans le cadre (0–100) — centre de cellule grille 10×8. */
   x: number
   y: number
-  /** Taille relative (environ 10–16). */
+  /** Taille en % du cadre : 33 %–100 % de la largeur d’une cellule (max 10). */
   size: number
   /** Rotation en degrés. */
   rot: number
