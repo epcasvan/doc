@@ -2866,7 +2866,7 @@
     "scene": "Le salon de la pâtisserie",
     "consigne": "Vous entendez cette émission à la radio. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/actualite/le-salon-de-la-patisserie.mp3",
+      "audio": "/lib/audio/tcf/co/actualite/01-actualité-le-salon-de-la-patisserie.mp3",
       "transcription": "Hier s’est terminé le Salon de la pâtisserie de Paris.\nAvant, les gourmands se retrouvaient au Salon Cuisinez mais depuis qu’il a fermé, c’est au Salon de la pâtisserie que le grand public, mais aussi les professionnels de la pâtisserie, vont goûter de délicieux desserts chocolatés ou fruités.\nPlus de 800 chefs pâtissiers sont présents pour dédicacer leurs livres mais aussi discuter avec le public de leur métier.\nChaque année, vous pouvez acheter du matériel professionnel à bas prix et, nouveauté de cette année, vous pouvez suivre une classe avec un chef !\nLe billet pour un adulte coûte 10 euros à l’entrée du salon mais seulement 8 euros si vous l’achetez avant, sur le site Internet du salon."
     },
     "questions": [
@@ -30687,7 +30687,7 @@
     "scene": "Les promotions sur les bijoux",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/achats/moyen-a2__annonce-1.2.mp3",
+      "audio": "/lib/audio/tcf/co/achats/11-magasin-annonce-remise-sur-les-bijoux.mp3",
       "transcription": "Chers clients, profitez d’une remise exceptionnelle de 30% aujourd’hui sur nos bijoux !\nNe laissez pas passer cette affaire !"
     },
     "questions": [
@@ -30755,7 +30755,7 @@
     "scene": "L’enfant perdu au magasin",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/achats/moyen-a2__annonce-1.5.mp3",
+      "audio": "/lib/audio/tcf/co/achats/12-magasin-annonce-enfant-perdu.mp3",
       "transcription": "Votre attention s’il vous plaît, le petit Grégoire qui s’est perdu au rayon fruits et légumes attend ses parents à l’entrée du magasin."
     },
     "questions": [
@@ -30819,11 +30819,11 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · L’offre du cinéma",
-    "scenario": "loisirs",
+    "scenario": "lieux-publics",
     "scene": "L’offre du cinéma",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/achats/moyen-a2__annonce-2.6.mp3",
+      "audio": "/lib/audio/tcf/co/lieux-publics/01-cinéma-annonce-réduction-bonbon.mp3",
       "transcription": "Votre cinéma préféré a décidé de vous faire plaisir.\nAujourd’hui, pour une place achetée, vous avez 50% de réduction sur les bonbons."
     },
     "questions": [
@@ -30891,7 +30891,7 @@
     "scene": "Les caisses du magasin",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/achats/moyen-a2__annonce-3.3.mp3",
+      "audio": "/lib/audio/tcf/co/achats/13-magasin-annonce-problème-de-caisse.mp3",
       "transcription": "Chers clients, suite à un problème technique, nous vous rappelons que la caisse prioritaire pour les personnes handicapées est fermée.\nVeuillez vous rediriger vers les caisses rapides ou les caisses automatiques."
     },
     "questions": [
@@ -30959,7 +30959,7 @@
     "scene": "Les promotions sur les télévisions",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/achats/moyen-a2__annonce-4.4.mp3",
+      "audio": "/lib/audio/tcf/co/achats/02-magasin-annonce-promotion-télévision.mp3",
       "transcription": "Chers clients, aujourd’hui dans votre magasin Autoprix, ne manquez pas les promotions exceptionnelles sur les télévisions.\nJusqu’à 40% de réduction !\nDemain, nous aurons d’autres surprises sur les téléphones et les ordinateurs."
     },
     "questions": [
@@ -31027,7 +31027,7 @@
     "scene": "Les livres de recettes",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/achats/moyen-a2__annonce-5.1.mp3",
+      "audio": "/lib/audio/tcf/co/achats/03-magasin-annonce-promotion-livres-de-recette.mp3",
       "transcription": "Chers clients, ne manquez pas aujourd’hui notre promotion sur nos derniers livres de recettes !\nIl n’y en aura pas pour tout le monde, alors dépêchez-vous !"
     },
     "questions": [
@@ -31095,7 +31095,7 @@
     "scene": "La fermeture de la poste",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/achats/moyen-a2__annonce-5.5.mp3",
+      "audio": "/lib/audio/tcf/co/achats/04-magasin-annonce-fermeture-de-la-poste.mp3",
       "transcription": "Nous rappelons à notre aimable clientèle qu’en raison de travaux, la poste sera fermée pour une semaine, à partir de demain.\nElle rouvrira au début du mois.\nMerci pour votre compréhension."
     },
     "questions": [
@@ -31163,7 +31163,7 @@
     "scene": "La journée de la femme",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/achats/moyen-a2__annonce-6.2.mp3",
+      "audio": "/lib/audio/tcf/co/achats/05-magasin-annonce-journée-de-la-femme.mp3",
       "transcription": "Chères clientes, à l’occasion de la journée de la femme, pour deux vêtements achetés, bénéficiez d’une remise de 70% sur nos bijoux.\nAllez vite découvrir nos nouveaux sacs à main."
     },
     "questions": [
@@ -31231,7 +31231,7 @@
     "scene": "L’offre petit-déjeuner",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/achats/moyen-a2__annonce-6.4.mp3",
+      "audio": "/lib/audio/tcf/co/achats/06-magasin-annonce-offre-petit-déjeuner.mp3",
       "transcription": "Chers clients, après une offre sur les sandwichs la semaine dernière, nous vous proposons aujourd’hui une offre spéciale petit-déjeuner !\nPour l’achat de trois viennoiseries, un grand café vous est offert !"
     },
     "questions": [
@@ -31299,7 +31299,7 @@
     "scene": "Le printemps du cinéma",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/achats/moyen-a2__annonce-7.5.mp3",
+      "audio": "/lib/audio/tcf/co/achats/09-magasin-annonce-printemps-du-cinéma.mp3",
       "transcription": "À l’occasion du printemps du cinéma, les places sont au prix de 5,50 € pour les moins de 18 ans, et 7,50 € pour les adultes, au lieu de 10,50 €."
     },
     "questions": [
@@ -31367,7 +31367,7 @@
     "scene": "Le paiement par téléphone",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/achats/moyen-a2__annonce-7.6.mp3",
+      "audio": "/lib/audio/tcf/co/achats/10-magasin-annonce-nouveau-moyen-de-paiement.mp3",
       "transcription": "Chers clients, votre magasin vous informe qu’à partir d’aujourd’hui, un nouveau moyen de paiement est possible.\nVous pouvez maintenant régler vos achats avec votre téléphone portable."
     },
     "questions": [
@@ -31435,7 +31435,7 @@
     "scene": "La météo de la semaine",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/achats/moyen-a2__radio-14.1.mp3",
+      "audio": "/lib/audio/tcf/co/radio/02-radio-météo-de-la-semaine.mp3",
       "transcription": "Bienvenue sur Radio France.\nNous commençons avec la météo.\nAujourd’hui un temps pluvieux sur l’ensemble de la France, sauf au sud où il y aura quelques rayons de soleil.\nIl fera très beau la semaine prochaine, avec des températures d’été."
     },
     "questions": [
@@ -35419,5 +35419,206 @@
     "consigne_supplementaire": null,
     "scenario": "magasins",
     "scene": "Sortie d'un nouvel album"
+  },
+  {
+    "id": "tcf-ssx-a2-place-de-cinema-offerte-co-2",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Une place de cinéma offerte",
+    "scenario": "magasins",
+    "scene": "Une place de cinéma offerte",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/achats/01-magasin-annonce-gagner-billet-cinéma.mp3",
+      "transcription": "Chers clients, aujourd'hui, jusqu'à 19 h 30, pour tout achat d'un livre ou de deux CD, votre magasin préféré vous fera profiter d'une place de cinéma."
+    },
+    "questions": [
+      {
+        "enonce": "Jusqu'à quelle heure dure l'offre ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Jusqu'à 19 h 30", "correct": true},
+          {"id": "b", "texte": "Jusqu'à 17 h 30"},
+          {"id": "c", "texte": "Jusqu'à 21 h"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Jusqu'à 19 h 30"
+          }
+        }
+      },
+      {
+        "enonce": "Que faut-il acheter pour profiter de l'offre ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Un livre ou deux CD", "correct": true},
+          {"id": "b", "texte": "Deux livres ou un CD"},
+          {"id": "c", "texte": "Un livre et un DVD"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Un livre ou deux CD"
+          }
+        }
+      },
+      {
+        "enonce": "Qu'est-ce que le magasin offre ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Une place de cinéma", "correct": true},
+          {"id": "b", "texte": "Un CD"},
+          {"id": "c", "texte": "Un bon d'achat"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Une place de cinéma"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-ssx-a2-livraison-des-courses-co-2",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · La livraison des courses",
+    "scenario": "magasins",
+    "scene": "La livraison des courses",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/achats/07-magasin-annonce-livraison-des-courses.mp3",
+      "transcription": "Chers clients, nous vous rappelons qu'il est maintenant possible de vous faire livrer vos courses pour moins de 10 euros.\nPour tout panier supérieur à 150 euros, bénéficiez de la livraison gratuite."
+    },
+    "questions": [
+      {
+        "enonce": "Quel service propose le magasin ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "La livraison des courses", "correct": true},
+          {"id": "b", "texte": "Un parking gratuit"},
+          {"id": "c", "texte": "Une carte de fidélité"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "La livraison des courses"
+          }
+        }
+      },
+      {
+        "enonce": "Combien coûte la livraison ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Moins de 10 euros", "correct": true},
+          {"id": "b", "texte": "15 euros"},
+          {"id": "c", "texte": "150 euros"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Moins de 10 euros"
+          }
+        }
+      },
+      {
+        "enonce": "Quand la livraison est-elle gratuite ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Pour un panier de plus de 150 euros", "correct": true},
+          {"id": "b", "texte": "Le dimanche"},
+          {"id": "c", "texte": "Pour les nouveaux clients"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Pour un panier de plus de 150 euros"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-ssx-a2-offres-incroyables-co-2",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Des offres incroyables",
+    "scenario": "magasins",
+    "scene": "Des offres incroyables",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/achats/08-magasin-annonce-offre-incroyable.mp3",
+      "transcription": "Aujourd'hui, ne manquez pas nos offres incroyables : 10 % de réduction sur nos livres, 15 % de réduction sur l'univers de la musique et 20 % de réduction sur tous les articles multimédias."
+    },
+    "questions": [
+      {
+        "enonce": "Quelle est la réduction sur les livres ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "10 %", "correct": true},
+          {"id": "b", "texte": "15 %"},
+          {"id": "c", "texte": "20 %"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "10 %"
+          }
+        }
+      },
+      {
+        "enonce": "Sur quels articles la réduction est-elle de 15 % ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "La musique", "correct": true},
+          {"id": "b", "texte": "Les livres"},
+          {"id": "c", "texte": "Le multimédia"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "La musique"
+          }
+        }
+      },
+      {
+        "enonce": "Où la réduction est-elle la plus grande ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Sur le multimédia", "correct": true},
+          {"id": "b", "texte": "Sur la musique"},
+          {"id": "c", "texte": "Sur les livres"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Sur le multimédia"
+          }
+        }
+      }
+    ]
   }
 ]
