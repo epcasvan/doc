@@ -24198,8 +24198,8 @@
     "scene": "L’appartement",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/objets/facile-a1__042.mp3",
-      "transcription": "- Tu habites dans un studio ?\n- Non, dans un appartement.\n- C'est grand ?\n- Oui, il y a un salon, une chambre et une cuisine équipée.\n- C'est lumineux ?\n- Non, c'est sombre.\n- C'est calme ?\n- Non, c'est bruyant.\n- Et la salle de bains, elle est grande ?\n- Oui, elle est grande.\n- Tu as un balcon ?\n- Oui, j'ai un petit balcon.\n- C'est à quel étage ?\n- C'est au 3e.\n- C'est où ?\n- C'est au centre-ville.\n- Et ton adresse ?\n- Voici mon adresse."
+      "audio": "/lib/audio/tcf/co/logement/01-logement-description-de-l-appartement.mp3",
+      "transcription": "- Tu habites dans un studio ?\n- Non, dans un appartement.\n- C'est grand ?\n- Oui, il y a un salon, une chambre et une cuisine équipée.\n- Et la salle de bains, elle est grande ?\n- Oui, elle est grande.\n- Tu as un balcon ?\n- Oui, j'ai un petit balcon.\n- Tu habites à quel étage ?\n- J'habite au troisième.\n- C'est où ?\n- C'est au centre-ville."
     },
     "questions": [
       {
@@ -24220,19 +24220,19 @@
         }
       },
       {
-        "enonce": "Comment est l’appartement ?",
+        "enonce": "Qu'est-ce qu'il y a dans l'appartement ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": true,
         "choix": [
-          {"id": "a", "texte": "Grand et bruyant", "correct": true},
-          {"id": "b", "texte": "Petit et calme"},
-          {"id": "c", "texte": "Grand et calme"}
+          {"id": "a", "texte": "Un salon, une chambre et une cuisine équipée", "correct": true},
+          {"id": "b", "texte": "Deux chambres et un bureau"},
+          {"id": "c", "texte": "Un salon et deux salles de bains"}
         ],
         "formes": {
           "lignes": {
             "nb_lignes": 1,
-            "reponse_modele": "Grand et bruyant"
+            "reponse_modele": "Un salon, une chambre et une cuisine équipée"
           }
         }
       },
@@ -24884,5 +24884,772 @@
     "consigne_supplementaire": null,
     "scenario": "vie-quotidienne",
     "scene": "L'horaire du musée"
+  },
+  {
+    "id": "tcf-sc-17-metro-c-est-loin-co-4",
+    "niveau": "A0-A1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Scènes courtes · La station de métro",
+    "scenario": "transports",
+    "scene": "La station de métro",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/scènes courtes/17-ville-le-métro-c-est-loin.mp3",
+      "transcription": "- La station de métro, c'est loin ?\n- Non, c'est à côté."
+    },
+    "questions": [
+      {
+        "enonce": "Que cherche la personne ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "La station de métro", "correct": true},
+          {"id": "b", "texte": "L'arrêt de bus"},
+          {"id": "c", "texte": "La gare"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "La station de métro"
+          }
+        }
+      },
+      {
+        "enonce": "Est-ce que c'est loin ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Non, c'est à côté", "correct": true},
+          {"id": "b", "texte": "Oui, c'est très loin"},
+          {"id": "c", "texte": "C'est à 20 minutes"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Non, c'est à côté"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-sc-18-aller-a-la-poste-co-4",
+    "niveau": "A0-A1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Scènes courtes · Aller à la poste",
+    "scenario": "transports",
+    "scene": "Aller à la poste",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/scènes courtes/18-ville-comment-on-va-à-la-poste.mp3",
+      "transcription": "- Comment on va à la poste, s'il vous plaît ?\n- Vous pouvez prendre le bus ou le tram."
+    },
+    "questions": [
+      {
+        "enonce": "Où veut aller la personne ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "À la poste", "correct": true},
+          {"id": "b", "texte": "À la banque"},
+          {"id": "c", "texte": "À la gare"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "À la poste"
+          }
+        }
+      },
+      {
+        "enonce": "Comment peut-elle y aller ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "En bus ou en tram", "correct": true},
+          {"id": "b", "texte": "En métro"},
+          {"id": "c", "texte": "À pied seulement"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "En bus ou en tram"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-sc-19-velos-libre-service-co-4",
+    "niveau": "A0-A1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Scènes courtes · Les vélos en libre-service",
+    "scenario": "transports",
+    "scene": "Les vélos en libre-service",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/scènes courtes/19-ville-abonnement-pour-les-vélos.mp3",
+      "transcription": "- Il faut un abonnement pour utiliser les vélos ?\n- Non, les vélos sont en libre-service."
+    },
+    "questions": [
+      {
+        "enonce": "De quoi parle la personne ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Des vélos", "correct": true},
+          {"id": "b", "texte": "Des voitures"},
+          {"id": "c", "texte": "Des trottinettes"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Des vélos"
+          }
+        }
+      },
+      {
+        "enonce": "Faut-il un abonnement ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Non, les vélos sont en libre-service", "correct": true},
+          {"id": "b", "texte": "Oui, un abonnement au mois"},
+          {"id": "c", "texte": "Oui, un abonnement à l'année"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Non, les vélos sont en libre-service"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-sc-20-activites-proposees-co-4",
+    "niveau": "A0-A1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Scènes courtes · Les activités proposées",
+    "scenario": "loisirs",
+    "scene": "Les activités proposées",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/scènes courtes/20-loisirs-quels-activités-sont-proposées.mp3",
+      "transcription": "- Vous proposez quelles activités ?\n- Vous pouvez faire du canoë-kayak ou de l'escalade."
+    },
+    "questions": [
+      {
+        "enonce": "Que demande la personne ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Les activités proposées", "correct": true},
+          {"id": "b", "texte": "Le prix des activités"},
+          {"id": "c", "texte": "Les horaires d'ouverture"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Les activités proposées"
+          }
+        }
+      },
+      {
+        "enonce": "Quelles activités peut-on faire ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Du canoë-kayak ou de l'escalade", "correct": true},
+          {"id": "b", "texte": "Du tennis ou du golf"},
+          {"id": "c", "texte": "De la natation ou du vélo"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Du canoë-kayak ou de l'escalade"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-sc-21-cours-de-surf-co-4",
+    "niveau": "A0-A1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Scènes courtes · Des cours de surf",
+    "scenario": "loisirs",
+    "scene": "Des cours de surf",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/scènes courtes/21-loisirs-apprendre-à-faire-du-surf.mp3",
+      "transcription": "- Vous savez faire du ski ?\n- Oui, je sais faire du ski, mais je voudrais prendre des cours de surf."
+    },
+    "questions": [
+      {
+        "enonce": "La personne sait-elle faire du ski ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Oui", "correct": true},
+          {"id": "b", "texte": "Non"},
+          {"id": "c", "texte": "Un peu"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Oui"
+          }
+        }
+      },
+      {
+        "enonce": "Que voudrait-elle apprendre ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Le surf", "correct": true},
+          {"id": "b", "texte": "Le ski"},
+          {"id": "c", "texte": "La natation"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Le surf"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-sc-22-cours-de-natation-co-4",
+    "niveau": "A0-A1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Scènes courtes · Des cours de natation",
+    "scenario": "loisirs",
+    "scene": "Des cours de natation",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/scènes courtes/22-loisirs-prendre-des-cours-de-natation.mp3",
+      "transcription": "- Je ne sais pas nager et je voudrais apprendre.\n- Les cours pour les débutants sont le mardi soir à 18 h."
+    },
+    "questions": [
+      {
+        "enonce": "Que voudrait apprendre la personne ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "À nager", "correct": true},
+          {"id": "b", "texte": "À faire du vélo"},
+          {"id": "c", "texte": "À danser"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "À nager"
+          }
+        }
+      },
+      {
+        "enonce": "Quand sont les cours pour les débutants ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Le mardi soir", "correct": true},
+          {"id": "b", "texte": "Le mercredi matin"},
+          {"id": "c", "texte": "Le samedi après-midi"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Le mardi soir"
+          }
+        }
+      },
+      {
+        "enonce": "À quelle heure ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "À 18 h", "correct": true},
+          {"id": "b", "texte": "À 8 h"},
+          {"id": "c", "texte": "À 16 h"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "À 18 h"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-sc-23-location-de-velos-co-4",
+    "niveau": "A0-A1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Scènes courtes · La location de vélos",
+    "scenario": "loisirs",
+    "scene": "La location de vélos",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/scènes courtes/23-loisirs-location-de-vélos.mp3",
+      "transcription": "- Vous louez des vélos pour la journée ou la demi-journée ?\n- Je loue des VTT pour la journée seulement."
+    },
+    "questions": [
+      {
+        "enonce": "Que veut louer la personne ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Des vélos", "correct": true},
+          {"id": "b", "texte": "Des skis"},
+          {"id": "c", "texte": "Un bateau"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Des vélos"
+          }
+        }
+      },
+      {
+        "enonce": "Pour combien de temps peut-on louer ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Pour la journée seulement", "correct": true},
+          {"id": "b", "texte": "Pour la demi-journée seulement"},
+          {"id": "c", "texte": "Pour une semaine"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Pour la journée seulement"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-sc-24-meteo-escalade-co-4",
+    "niveau": "A0-A1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Scènes courtes · Trop chaud pour l'escalade",
+    "scenario": "vie-quotidienne",
+    "scene": "Trop chaud pour l'escalade",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/scènes courtes/24-temps-demander-la-météo-2.mp3",
+      "transcription": "- Aujourd'hui, il fait trop chaud pour faire de l'escalade.\n- Il fait quel temps demain ?\n- Demain, il pleut et il y a du vent."
+    },
+    "questions": [
+      {
+        "enonce": "Pourquoi ne fait-on pas d'escalade aujourd'hui ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Il fait trop chaud", "correct": true},
+          {"id": "b", "texte": "Il pleut"},
+          {"id": "c", "texte": "Il fait trop froid"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Il fait trop chaud"
+          }
+        }
+      },
+      {
+        "enonce": "Quel temps fera-t-il demain ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Il pleut et il y a du vent", "correct": true},
+          {"id": "b", "texte": "Il fait beau"},
+          {"id": "c", "texte": "Il neige"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Il pleut et il y a du vent"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-sc-25-meteo-de-demain-co-4",
+    "niveau": "A0-A1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Scènes courtes · La météo de demain",
+    "scenario": "vie-quotidienne",
+    "scene": "La météo de demain",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/scènes courtes/25-temps-demander-la-météo-1.mp3",
+      "transcription": "- Et la météo de demain, c'est quoi ?\n- Il fait très froid.\nIl fait moins 5 degrés."
+    },
+    "questions": [
+      {
+        "enonce": "Quel temps fera-t-il demain ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Très froid", "correct": true},
+          {"id": "b", "texte": "Très chaud"},
+          {"id": "c", "texte": "Doux"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Très froid"
+          }
+        }
+      },
+      {
+        "enonce": "Quelle température fera-t-il ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Moins 5 degrés", "correct": true},
+          {"id": "b", "texte": "5 degrés"},
+          {"id": "c", "texte": "Moins 15 degrés"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Moins 5 degrés"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-sc-26-journee-libre-co-4",
+    "niveau": "A0-A1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Scènes courtes · Une journée libre",
+    "scenario": "loisirs",
+    "scene": "Une journée libre",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/scènes courtes/26-loisirs-propositions-de-sorties.mp3",
+      "transcription": "- On a une journée libre, qu'est-ce qu'on fait ?\n- On va au musée ?\nOn va voir une exposition ?\n- On peut aller visiter un château."
+    },
+    "questions": [
+      {
+        "enonce": "Qu'est-ce qu'ils ont ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Une journée libre", "correct": true},
+          {"id": "b", "texte": "Un examen"},
+          {"id": "c", "texte": "Une réunion"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Une journée libre"
+          }
+        }
+      },
+      {
+        "enonce": "Quelles sorties proposent-ils ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Le musée ou un château", "correct": true},
+          {"id": "b", "texte": "La plage ou la piscine"},
+          {"id": "c", "texte": "Le cinéma ou le théâtre"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Le musée ou un château"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-sc-27-cinema-ou-concert-co-4",
+    "niveau": "A0-A1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Scènes courtes · Cinéma ou concert ?",
+    "scenario": "loisirs",
+    "scene": "Cinéma ou concert ?",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/scènes courtes/27-loisirs-propositions-aller-au-cinéma.mp3",
+      "transcription": "- On va au cinéma ou au concert, ce soir ?\n- Au cinéma !\nIl y a un bon film à la séance de 20 heures."
+    },
+    "questions": [
+      {
+        "enonce": "Où vont-ils ce soir ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Au cinéma", "correct": true},
+          {"id": "b", "texte": "Au concert"},
+          {"id": "c", "texte": "Au restaurant"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Au cinéma"
+          }
+        }
+      },
+      {
+        "enonce": "À quelle heure est la séance ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "À 20 heures", "correct": true},
+          {"id": "b", "texte": "À 18 heures"},
+          {"id": "c", "texte": "À 22 heures"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "À 20 heures"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-sc-28-places-de-concert-co-4",
+    "niveau": "A0-A1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Scènes courtes · Des places de concert",
+    "scenario": "loisirs",
+    "scene": "Des places de concert",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/scènes courtes/28-loisirs-demande-disponibilité-place-de-concert.mp3",
+      "transcription": "- Vous avez encore des places pour ce concert ?\n- Désolé, c'est complet !"
+    },
+    "questions": [
+      {
+        "enonce": "Que demande la personne ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "S'il reste des places pour le concert", "correct": true},
+          {"id": "b", "texte": "Le prix du concert"},
+          {"id": "c", "texte": "L'heure du concert"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "S'il reste des places pour le concert"
+          }
+        }
+      },
+      {
+        "enonce": "Quelle est la réponse ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "C'est complet", "correct": true},
+          {"id": "b", "texte": "Il reste quelques places"},
+          {"id": "c", "texte": "Il faut revenir demain"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "C'est complet"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-sc-29-reduction-etudiants-co-4",
+    "niveau": "A0-A1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Scènes courtes · Une réduction pour les étudiants",
+    "scenario": "loisirs",
+    "scene": "Une réduction pour les étudiants",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/scènes courtes/29-loisirs-demande-de-reduction.mp3",
+      "transcription": "- Vous faites des réductions pour les étudiants ?\n- Oui.\nVous avez votre carte d'étudiant ?"
+    },
+    "questions": [
+      {
+        "enonce": "Pour qui la personne demande-t-elle une réduction ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Pour les étudiants", "correct": true},
+          {"id": "b", "texte": "Pour les enfants"},
+          {"id": "c", "texte": "Pour les seniors"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Pour les étudiants"
+          }
+        }
+      },
+      {
+        "enonce": "Que faut-il montrer ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "La carte d'étudiant", "correct": true},
+          {"id": "b", "texte": "Une pièce d'identité"},
+          {"id": "c", "texte": "Le billet"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "La carte d'étudiant"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-sc-30-j-adore-cet-acteur-co-4",
+    "niveau": "A0-A1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Scènes courtes · J'adore cet acteur",
+    "scenario": "loisirs",
+    "scene": "J'adore cet acteur",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/scènes courtes/30-loisirs-j-adore-cet-acteur.mp3",
+      "transcription": "- J'adore cet acteur !\nEt toi ?\n- Il est nul !\nJe ne l'aime pas du tout."
+    },
+    "questions": [
+      {
+        "enonce": "Que pense la première personne de l'acteur ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Elle l'adore", "correct": true},
+          {"id": "b", "texte": "Elle le trouve nul"},
+          {"id": "c", "texte": "Elle ne le connaît pas"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Elle l'adore"
+          }
+        }
+      },
+      {
+        "enonce": "Et la deuxième personne ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Elle ne l'aime pas du tout", "correct": true},
+          {"id": "b", "texte": "Elle l'adore aussi"},
+          {"id": "c", "texte": "Elle le trouve un peu drôle"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Elle ne l'aime pas du tout"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-sc-31-cours-d-economie-co-4",
+    "niveau": "A0-A1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Scènes courtes · Le cours d'économie",
+    "scenario": "ecole",
+    "scene": "Le cours d'économie",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/scènes courtes/31-école-où-est-le-cours-d-économie.mp3",
+      "transcription": "- Je cherche le cours d'économie.\nOù est la salle ?\n- Le cours a lieu dans l'amphi A12."
+    },
+    "questions": [
+      {
+        "enonce": "Quel cours cherche la personne ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Le cours d'économie", "correct": true},
+          {"id": "b", "texte": "Le cours d'histoire"},
+          {"id": "c", "texte": "Le cours d'anglais"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Le cours d'économie"
+          }
+        }
+      },
+      {
+        "enonce": "Où a lieu le cours ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Dans l'amphi A12", "correct": true},
+          {"id": "b", "texte": "Dans la salle B12"},
+          {"id": "c", "texte": "À la bibliothèque"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Dans l'amphi A12"
+          }
+        }
+      }
+    ]
   }
 ]
