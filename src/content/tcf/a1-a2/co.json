@@ -2383,10 +2383,10 @@
     "type_exercice": "complet",
     "theme": "Préparation A2 · série 2 · La Fête de la musique",
     "scenario": "fetes",
-    "scene": "La Fête de la musique",
+    "scene": "La fête de la musique",
     "consigne": "Vous entendez cette information à la radio. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/fetes/la-fete-de-la-musique.mp3",
+      "audio": "/lib/audio/tcf/co/fetes/19-fêtes-21-juin-fete-de-la-musique.mp3",
       "transcription": "Bonjour à tous !\nEh oui, c’est bientôt l’été…\nEt le jour de l’été, le 21 juin, il fait chaud, mais qu’est-ce qu’on fête aussi partout en France ?\nLa Fête de la musique, bien sûr !\nSavez-vous depuis quand cette fête existe et quel est son but ?\nLa Fête de la musique existe officiellement en France depuis 1983 et elle sert à promouvoir la musique, mais elle permet aussi à de nombreux talents de faire connaître leur musique au grand public puisque les groupes s’installent pour jouer dans les rues.\nEt c’est aussi une fête qui connaît un grand succès puisqu’elle est aujourd’hui célébrée dans 110 pays et plus de 340 villes du monde…"
     },
     "questions": [
@@ -8806,7 +8806,7 @@
     "theme": "Soutien scolaire · Dialogue 041",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/fetes/inviter-1.mp3",
+      "audio": "/lib/audio/tcf/co/fetes/05-invitation-14-juillet.mp3",
       "transcription": "- Dis-moi Pedro, qu'est-ce que tu fais jeudi ?\nTu es libre ?\n- Ben…\npourquoi ?\n- C'est le 14 Juillet et on ne travaille pas jeudi, tu sais ?\n- Ah oui !\nC'est le jour de votre fête nationale et Violette m'a invité à déjeuner avec sa famille !\n- C'est super un déjeuner de famille !\n- J'ai refusé son invitation…\n- Alors, ça te dit de venir pique-niquer à la plage avec nous ?\n- Merci, mais j'ai reçu une invitation de la mairie pour assister au défilé et au repas sur la place du village.\nJ'ai accepté !\n- Tu vas aller au feu d'artifice et au bal sur la place de la mairie ce soir ?\n- Non, je ne suis pas invité.\n- Mais tu n'as pas besoin d'invitation !\n- Alors oui, j'adore danser !"
     },
     "questions": [
@@ -8915,7 +8915,7 @@
     ],
     "consigne_supplementaire": null,
     "scenario": "fetes",
-    "scene": "Inviter"
+    "scene": "Invitation au 14 Juillet"
   },
   {
     "id": "tcf-ss-a2-s10-co-3",
@@ -8925,15 +8925,15 @@
     "theme": "Soutien scolaire · Dialogue 050",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/fetes/inviter-2.mp3",
-      "transcription": "- Salut Teresa, tu es allée au musée ce week-end ?\n- Non, j'étais seule et je ne savais pas quoi faire.\n- Tu connais MeetFriends ?\n- Qu'est-ce que c'est ?\n- C'est un site où tu peux t'inscrire pour rencontrer des personnes.\nTu peux faire des randonnées, du sport, aller à des soirées, des conférences avec elles…\n- Ah oui !\nça, c'est bien !\nJe vais directement sur le site, c'est ça ?"
+      "audio": "/lib/audio/tcf/co/fetes/06-invitation-rencontre-Thérésa.mp3",
+      "transcription": "- Salut Thérésa, tu es allée au musée ce week-end ?\n- Oui, mais malheureusement, j'y suis allée toute seule.\nJe ne connais personne ici.\n- Mais pourquoi tu ne t'inscris pas sur le site des rencontres amicales de la ville ?\n- Qu'est-ce que c'est ?\n- C'est un site où tu peux t'inscrire pour rencontrer des personnes.\nTu peux faire des randonnées, du sport, aller à des soirées, des conférences avec elles.\n- Ah oui, ça, c'est bien !\nJe vais directement sur le site, c'est ça ?\n- Oui, tu y vas, tu choisis un pseudo et un mot de passe.\nC'est très facile.\n- C'est tout ?\n- Tu donnes aussi ton prénom, ton adresse mail et tu écris un petit mot pour parler de toi.\nJe t'aide ?\n- Oui, merci Paul.\n- Regarde l'onglet « Les sorties ».\nCe soir, c'est salsa.\nIl y a un message de Valérie.\nElle y va.\n- J'adore la salsa.\nJe peux y aller avec elle."
     },
     "questions": [
       {
-        "enonce": "Où Teresa n'est-elle pas allée ce week-end ?",
+        "enonce": "Où Thérésa est-elle allée ce week-end ?",
         "type_reponse": "qcm_texte",
         "points": 1,
-        "melanger": false,
+        "melanger": true,
         "choix": [
           {"id": "a", "texte": "Au musée", "correct": true},
           {"id": "b", "texte": "Au cinéma"},
@@ -8947,94 +8947,94 @@
         }
       },
       {
-        "enonce": "Pourquoi Teresa n'a-t-elle rien fait ce week-end ?",
+        "enonce": "Avec qui est-elle allée au musée ?",
         "type_reponse": "qcm_texte",
         "points": 1,
-        "melanger": false,
+        "melanger": true,
         "choix": [
-          {"id": "a", "texte": "Elle était seule", "correct": true},
-          {"id": "b", "texte": "Elle était malade"},
-          {"id": "c", "texte": "Elle travaillait"}
+          {"id": "a", "texte": "Toute seule", "correct": true},
+          {"id": "b", "texte": "Avec Paul"},
+          {"id": "c", "texte": "Avec Valérie"}
         ],
         "formes": {
           "lignes": {
             "nb_lignes": 1,
-            "reponse_modele": "Elle était seule"
+            "reponse_modele": "Toute seule"
           }
         }
       },
       {
-        "enonce": "Qu'est-ce que MeetFriends ?",
+        "enonce": "Qu'est-ce que Paul lui propose ?",
         "type_reponse": "qcm_texte",
         "points": 1,
-        "melanger": false,
+        "melanger": true,
         "choix": [
-          {"id": "a", "texte": "Un site pour rencontrer des personnes", "correct": true},
-          {"id": "b", "texte": "Un magasin de sport"},
-          {"id": "c", "texte": "Une école de langues"}
+          {"id": "a", "texte": "De s'inscrire sur un site de rencontres amicales", "correct": true},
+          {"id": "b", "texte": "De prendre des cours de danse"},
+          {"id": "c", "texte": "D'aller au musée avec lui"}
         ],
         "formes": {
           "lignes": {
             "nb_lignes": 1,
-            "reponse_modele": "Un site pour rencontrer des personnes"
+            "reponse_modele": "De s'inscrire sur un site de rencontres amicales"
           }
         }
       },
       {
-        "enonce": "Quelles activités propose ce site ?",
+        "enonce": "Que faut-il choisir pour s'inscrire sur le site ?",
         "type_reponse": "qcm_texte",
         "points": 1,
-        "melanger": false,
+        "melanger": true,
         "choix": [
-          {"id": "a", "texte": "Des randonnées et du sport", "correct": true},
-          {"id": "b", "texte": "Des cours de cuisine"},
-          {"id": "c", "texte": "Des voyages organisés"}
+          {"id": "a", "texte": "Un pseudo et un mot de passe", "correct": true},
+          {"id": "b", "texte": "Une photo et une adresse"},
+          {"id": "c", "texte": "Une date et une heure"}
         ],
         "formes": {
           "lignes": {
             "nb_lignes": 1,
-            "reponse_modele": "Des randonnées et du sport"
+            "reponse_modele": "Un pseudo et un mot de passe"
           }
         }
       },
       {
-        "enonce": "Comment Teresa trouve-t-elle cette idée ?",
+        "enonce": "Quelle sortie est proposée ce soir ?",
         "type_reponse": "qcm_texte",
         "points": 1,
-        "melanger": false,
+        "melanger": true,
         "choix": [
-          {"id": "a", "texte": "Elle trouve ça bien", "correct": true},
-          {"id": "b", "texte": "Elle trouve ça ennuyeux"},
-          {"id": "c", "texte": "Ça ne l'intéresse pas"}
+          {"id": "a", "texte": "De la salsa", "correct": true},
+          {"id": "b", "texte": "Une randonnée"},
+          {"id": "c", "texte": "Une conférence"}
         ],
         "formes": {
           "lignes": {
             "nb_lignes": 1,
-            "reponse_modele": "Elle trouve ça bien"
+            "reponse_modele": "De la salsa"
           }
         }
       },
       {
-        "enonce": "Que demande Teresa à la fin ?",
+        "enonce": "Avec qui Thérésa veut-elle aller à cette sortie ?",
         "type_reponse": "qcm_texte",
         "points": 1,
-        "melanger": false,
+        "melanger": true,
         "choix": [
-          {"id": "a", "texte": "Si elle doit aller directement sur le site", "correct": true},
-          {"id": "b", "texte": "Si le site est payant"},
-          {"id": "c", "texte": "Si son amie est inscrite"}
+          {"id": "a", "texte": "Avec Valérie", "correct": true},
+          {"id": "b", "texte": "Avec Paul"},
+          {"id": "c", "texte": "Toute seule"}
         ],
         "formes": {
           "lignes": {
             "nb_lignes": 1,
-            "reponse_modele": "Si elle doit aller directement sur le site"
+            "reponse_modele": "Avec Valérie"
           }
         }
       }
     ],
     "consigne_supplementaire": null,
     "scenario": "fetes",
-    "scene": "Inviter"
+    "scene": "Rencontres amicales (Thérésa)"
   },
   {
     "id": "tcf-ss-a2-s10-co-4",
@@ -9044,7 +9044,7 @@
     "theme": "Soutien scolaire · Dialogue 057",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/fetes/inviter-4.mp3",
+      "audio": "/lib/audio/tcf/co/fetes/07-invitation-rencentre-Théo.mp3",
       "transcription": "– Ça va, Théo ?\n– Non, j'en ai assez de rester chez moi le week-end à regarder des matchs à la télé.\nJe voudrais trouver des copains pour sortir.\nJ'aimerais bien faire des randonnées, du tennis.\n– Eh bien, envoie un poste sur un forum.\n– Et j'écris quoi ?\n– Tu écris un petit texte avec ton prénom et les sports que tu veux pratiquer, et mets des émogies pour montrer ton optimisme."
     },
     "questions": [
@@ -9136,7 +9136,7 @@
     ],
     "consigne_supplementaire": null,
     "scenario": "fetes",
-    "scene": "Inviter"
+    "scene": "Rencontre avec Théo"
   },
   {
     "id": "tcf-ss-a2-s11-co-1",
@@ -9146,7 +9146,7 @@
     "theme": "Soutien scolaire · Dialogue 065",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/fetes/inviter-6.mp3",
+      "audio": "/lib/audio/tcf/co/fetes/08-fêtes-pendaison-de-crémaillère.mp3",
       "transcription": "Manon, parlez-nous de votre pandaison de crème ailleurs le mois prochain.\nD'abord, quatre semaines avant l'événement, j'enverrai les invitations à la famille avec ma nouvelle adresse.\nEnsuite, je choisirai le menu et il n'y aura plus de 10 personnes.\nAlors, je ferai un aperitif d'inatoire ou un barbecue.\nMerci, Manon.\nJe suis sûre que votre famille passera une excellente soirée."
     },
     "questions": [
@@ -9238,7 +9238,7 @@
     ],
     "consigne_supplementaire": null,
     "scenario": "fetes",
-    "scene": "Inviter"
+    "scene": "Pendaison de crémaillère"
   },
   {
     "id": "tcf-ss-a2-s11-co-2",
@@ -9248,7 +9248,7 @@
     "theme": "Soutien scolaire · Dialogue 111",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/fetes/inviter-8.mp3",
+      "audio": "/lib/audio/tcf/co/fetes/09-fêtes-de-la-mer.mp3",
       "transcription": "Aujourd'hui, c'est la fête de la mer.\nCélébration sur la plage à 11h30, animation musicale, toute la journée, feu d'artifice à 22h30 et concert exceptionnel place de déglise à 23h30."
     },
     "questions": [
@@ -9340,7 +9340,7 @@
     ],
     "consigne_supplementaire": null,
     "scenario": "fetes",
-    "scene": "Inviter"
+    "scene": "La fête de la mer"
   },
   {
     "id": "tcf-ss-a2-s11-co-3",
@@ -9571,7 +9571,7 @@
     "theme": "Soutien scolaire · Message 27",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/fetes/inviter-message-8.mp3",
+      "audio": "/lib/audio/tcf/co/fetes/16-invitation-confirmation-du-concert.mp3",
       "transcription": "Salut, c’est Max.\nÇa va ?\nJe t’appelle pour te confirmer le concert du samedi 18 juin.\nLe concert commence à 21 h, ça va se terminer vers 22 h 30.\nJe te propose d’aller manger avant d’aller au concert, c’est moi qui t’invite !\nOn peut y aller vers 19 h 30.\nOn peut se retrouver chez moi et y aller ensemble ?\nIl faudra qu’on prenne le métro.\nJ’habite au 152 avenue du Président, près du cinéma.\nRappelle-moi vite !\nÀ bientôt."
     },
     "questions": [
@@ -9680,7 +9680,7 @@
     ],
     "consigne_supplementaire": null,
     "scenario": "fetes",
-    "scene": "Inviter · Message"
+    "scene": "Confirmation du concert"
   },
   {
     "id": "tcf-ss-a2-s12-co-2",
@@ -9690,7 +9690,7 @@
     "theme": "Soutien scolaire · Message 32",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/fetes/inviter-message-9.mp3",
+      "audio": "/lib/audio/tcf/co/travail/02-travail-demander-un-service.mp3",
       "transcription": "Bonjour, c’est Marianne.\nJe t’appelle pour te demander un petit service.\nEst-ce que tu pourrais aller chercher Olga à l’école mardi prochain ?\nJ’ai une réunion qui finit tard à mon travail...\nOlga sort de l’école à 16 h 30.\nEuh, est-ce que ce serait possible aussi de l’amener à son cours de danse à 17 h 30 ?\nJ’irai la chercher après son cours de danse vers 19 h 00.\nRappelle-moi pour me dire si tu es d’accord !\nJe te redonne mon numéro de téléphone : c’est le 06 77 89 20 12.\nMerci, bonne journée !"
     },
     "questions": [
@@ -9798,8 +9798,8 @@
       }
     ],
     "consigne_supplementaire": null,
-    "scenario": "fetes",
-    "scene": "Inviter · Message"
+    "scenario": "travail",
+    "scene": "Demander un service"
   },
   {
     "id": "tcf-ss-a2-s12-co-3",
@@ -34875,5 +34875,549 @@
       }
     ],
     "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-sc-05-exposition-phil-co-4",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Scènes courtes · Invitation à une exposition",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/scènes courtes/05-invitation-exposition-Fil.mp3",
+      "transcription": "- Phil, tu voudrais venir avec moi à l'exposition musicale ce week-end ?\n- Ah oui, pourquoi pas.\nC'est où ?\n- Pas très loin d'ici, à la porte de la Villette.\nJe t'invite !\n- Super, d'accord."
+    },
+    "questions": [
+      {
+        "enonce": "À quoi Phil est-il invité ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "À une exposition musicale", "correct": true},
+          {"id": "b", "texte": "À un concert"},
+          {"id": "c", "texte": "À un match"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "À une exposition musicale"
+          }
+        }
+      },
+      {
+        "enonce": "Quand a lieu la sortie ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Ce week-end", "correct": true},
+          {"id": "b", "texte": "Ce soir"},
+          {"id": "c", "texte": "La semaine prochaine"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Ce week-end"
+          }
+        }
+      },
+      {
+        "enonce": "Où se trouve l'exposition ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "À la porte de la Villette", "correct": true},
+          {"id": "b", "texte": "Au centre-ville"},
+          {"id": "c", "texte": "Loin d'ici"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "À la porte de la Villette"
+          }
+        }
+      },
+      {
+        "enonce": "Qui paie la sortie ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "La personne qui invite", "correct": true},
+          {"id": "b", "texte": "Phil"},
+          {"id": "c", "texte": "Chacun paie sa place"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "La personne qui invite"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null,
+    "scenario": "fetes",
+    "scene": "Invitation à une exposition"
+  },
+  {
+    "id": "tcf-sc-06-thibault-malade-co-4",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Scènes courtes · Un collègue absent",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/scènes courtes/06-travail-Thibaud-malade.mp3",
+      "transcription": "- Didier, dis-moi, Thibault est allé travailler aujourd'hui ?\n- Non, il n'est pas allé au travail aujourd'hui.\n- Tu sais pourquoi ?\n- Je crois qu'il est malade.\n- Ah, d'accord."
+    },
+    "questions": [
+      {
+        "enonce": "De qui parlent-ils ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "De Thibault", "correct": true},
+          {"id": "b", "texte": "De Didier"},
+          {"id": "c", "texte": "Du directeur"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "De Thibault"
+          }
+        }
+      },
+      {
+        "enonce": "Thibault est-il allé au travail aujourd'hui ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Non", "correct": true},
+          {"id": "b", "texte": "Oui, le matin"},
+          {"id": "c", "texte": "Oui, toute la journée"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Non"
+          }
+        }
+      },
+      {
+        "enonce": "Pourquoi est-il absent ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Il est peut-être malade", "correct": true},
+          {"id": "b", "texte": "Il est en vacances"},
+          {"id": "c", "texte": "Il a raté son train"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Il est peut-être malade"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null,
+    "scenario": "travail",
+    "scene": "Un collègue absent"
+  },
+  {
+    "id": "tcf-sc-07-ne-pas-se-sentir-bien-co-4",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Scènes courtes · Ne pas se sentir bien",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/scènes courtes/07-santé-ne-pas-se-sentire-bien.mp3",
+      "transcription": "- Stéphanie, je ne me sens pas bien.\n- Oh !\nTu devrais appeler ton médecin pour prendre un rendez-vous.\n- J'ai essayé de l'appeler, mais je tombe sur son répondeur.\n- Ah !\nIl est peut-être en congé."
+    },
+    "questions": [
+      {
+        "enonce": "Comment se sent la personne ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Pas bien", "correct": true},
+          {"id": "b", "texte": "Très bien"},
+          {"id": "c", "texte": "Fatiguée mais contente"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Pas bien"
+          }
+        }
+      },
+      {
+        "enonce": "Que lui conseille Stéphanie ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "D'appeler son médecin", "correct": true},
+          {"id": "b", "texte": "D'aller aux urgences"},
+          {"id": "c", "texte": "De se reposer"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "D'appeler son médecin"
+          }
+        }
+      },
+      {
+        "enonce": "Que se passe-t-il quand elle appelle le médecin ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Elle tombe sur le répondeur", "correct": true},
+          {"id": "b", "texte": "Le médecin répond"},
+          {"id": "c", "texte": "La ligne est occupée"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Elle tombe sur le répondeur"
+          }
+        }
+      },
+      {
+        "enonce": "Selon Stéphanie, pourquoi le médecin ne répond-il pas ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Il est peut-être en congé", "correct": true},
+          {"id": "b", "texte": "Il est malade"},
+          {"id": "c", "texte": "Il a changé de numéro"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Il est peut-être en congé"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null,
+    "scenario": "sante",
+    "scene": "Ne pas se sentir bien"
+  },
+  {
+    "id": "tcf-sc-08-nouvelle-voisine-co-4",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Scènes courtes · La nouvelle voisine",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/scènes courtes/08-quotidien-description-nouvelle-voisine.mp3",
+      "transcription": "- J'ai croisé notre nouvelle voisine ce matin.\n- Ah oui ?\nElle est comment ?\n- Elle est très grande, un peu mince.\nElle doit avoir 40 ans.\nElle est très gentille.\n- D'accord.\nJ'irai lui souhaiter la bienvenue tout à l'heure."
+    },
+    "questions": [
+      {
+        "enonce": "Quand a-t-il croisé la voisine ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Ce matin", "correct": true},
+          {"id": "b", "texte": "Hier soir"},
+          {"id": "c", "texte": "Ce week-end"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Ce matin"
+          }
+        }
+      },
+      {
+        "enonce": "Comment est la voisine ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Grande et un peu mince", "correct": true},
+          {"id": "b", "texte": "Petite et ronde"},
+          {"id": "c", "texte": "Petite et mince"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Grande et un peu mince"
+          }
+        }
+      },
+      {
+        "enonce": "Quel âge a-t-elle environ ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "40 ans", "correct": true},
+          {"id": "b", "texte": "30 ans"},
+          {"id": "c", "texte": "50 ans"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "40 ans"
+          }
+        }
+      },
+      {
+        "enonce": "Que va faire l'autre personne ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Lui souhaiter la bienvenue", "correct": true},
+          {"id": "b", "texte": "L'inviter à manger"},
+          {"id": "c", "texte": "Lui téléphoner"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Lui souhaiter la bienvenue"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null,
+    "scenario": "vie-quotidienne",
+    "scene": "La nouvelle voisine"
+  },
+  {
+    "id": "tcf-sc-09-meteo-parapluie-co-3",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Scènes courtes · La météo",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/scènes courtes/09-radio-météo-parapluie.mp3",
+      "transcription": "Aujourd'hui, sortez les parapluies.\nIl fait chaud, mais de gros nuages gris sont au rendez-vous sur toute la France.\nDemain, le soleil revient, mais les températures baissent, alors prévoyez les pulls."
+    },
+    "questions": [
+      {
+        "enonce": "Quel objet faut-il prendre aujourd'hui ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Un parapluie", "correct": true},
+          {"id": "b", "texte": "Des lunettes de soleil"},
+          {"id": "c", "texte": "Un bonnet"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Un parapluie"
+          }
+        }
+      },
+      {
+        "enonce": "Quel temps fait-il aujourd'hui ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Il fait chaud avec de gros nuages", "correct": true},
+          {"id": "b", "texte": "Il fait froid et il neige"},
+          {"id": "c", "texte": "Il fait beau et sec"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Il fait chaud avec de gros nuages"
+          }
+        }
+      },
+      {
+        "enonce": "Quel temps fera-t-il demain ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Du soleil, mais plus frais", "correct": true},
+          {"id": "b", "texte": "De la pluie toute la journée"},
+          {"id": "c", "texte": "Encore plus chaud"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Du soleil, mais plus frais"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null,
+    "scenario": "radio",
+    "scene": "La météo"
+  },
+  {
+    "id": "tcf-sc-10-fete-de-la-nature-co-2",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Scènes courtes · La fête de la nature",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/scènes courtes/10-fêtes-annonce-fête-de-la-nature.mp3",
+      "transcription": "Pour la fête de la nature, la ville organise un pique-nique géant au parc des Fleurs.\nDes paniers-repas seront en vente avec sandwich, salade, boisson.\nApportez vos assiettes, des couverts jetables et installez-vous sur les tables de pique-nique."
+    },
+    "questions": [
+      {
+        "enonce": "Qu'est-ce que la ville organise ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Un pique-nique", "correct": true},
+          {"id": "b", "texte": "Un concert"},
+          {"id": "c", "texte": "Une course à pied"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Un pique-nique"
+          }
+        }
+      },
+      {
+        "enonce": "Où a lieu l'événement ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Au parc des Fleurs", "correct": true},
+          {"id": "b", "texte": "Sur la place du marché"},
+          {"id": "c", "texte": "Au bord du lac"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Au parc des Fleurs"
+          }
+        }
+      },
+      {
+        "enonce": "Qu'est-ce qu'on peut acheter sur place ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Des paniers-repas", "correct": true},
+          {"id": "b", "texte": "Des assiettes"},
+          {"id": "c", "texte": "Des tables de pique-nique"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Des paniers-repas"
+          }
+        }
+      },
+      {
+        "enonce": "Que faut-il apporter ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Des assiettes et des couverts", "correct": true},
+          {"id": "b", "texte": "Un sandwich et une boisson"},
+          {"id": "c", "texte": "Une nappe et des chaises"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Des assiettes et des couverts"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null,
+    "scenario": "fetes",
+    "scene": "La fête de la nature"
+  },
+  {
+    "id": "tcf-sc-11-nouvel-album-co-2",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Scènes courtes · Sortie d'un nouvel album",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/scènes courtes/11-magasin-annonce-sortie-nouvel-album.mp3",
+      "transcription": "Le magasin Joli Culture reçoit Saïa pour la sortie de son nouvel album.\nSi vous voulez assister à son concert, jouez à notre jeu.\nEnvoyez le mot SAÏA par SMS au 10 20 30.\nLes dix premiers reçoivent une invitation."
+    },
+    "questions": [
+      {
+        "enonce": "Pourquoi Saïa vient-elle au magasin ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Pour la sortie de son nouvel album", "correct": true},
+          {"id": "b", "texte": "Pour signer des livres"},
+          {"id": "c", "texte": "Pour un défilé de mode"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Pour la sortie de son nouvel album"
+          }
+        }
+      },
+      {
+        "enonce": "Que faut-il faire pour assister au concert ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Jouer à un jeu par SMS", "correct": true},
+          {"id": "b", "texte": "Acheter l'album"},
+          {"id": "c", "texte": "Appeler le magasin"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Jouer à un jeu par SMS"
+          }
+        }
+      },
+      {
+        "enonce": "Quel mot faut-il envoyer ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "SAÏA", "correct": true},
+          {"id": "b", "texte": "ALBUM"},
+          {"id": "c", "texte": "CONCERT"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "SAÏA"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null,
+    "scenario": "magasins",
+    "scene": "Sortie d'un nouvel album"
   }
 ]
