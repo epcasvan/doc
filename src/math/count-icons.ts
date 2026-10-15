@@ -86,7 +86,6 @@ export function packCountIconTokens(
     // Centre de la cellule (grille invisible 10×8)
     const x = (col + 0.5) * cellW
     const y = (row + 0.5) * cellH
-    void cellH // hauteur cellule = largeur pour le % vertical (cadre ~carré)
     // Taille entre 33 % et 100 % de la cellule (largeur = hauteur max)
     const scale = 1 / 3 + rng() * (2 / 3)
     const size = COUNT_ICON_MAX_SIZE * scale
