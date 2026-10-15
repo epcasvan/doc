@@ -6137,7 +6137,7 @@
     "theme": "Soutien scolaire · Dialogue 037",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/achats/01-achats-de-magasines.mp3",
+      "audio": "/lib/audio/tcf/co/achats/14-achats-de-magasines.mp3",
       "transcription": "- Tiens, regarde…\nj'ai acheté 3 magazines pour lire à la plage : l'Express pour l'actualité économique et politique, Elle pour la mode et Télérama pour l'actualité culturelle.\n- Et tu n'as pas pris l'Équipe pour le sport ?\n- Zut, j'ai oublié !"
     },
     "questions": [
@@ -31639,7 +31639,7 @@
     "scene": "Les tarifs de la piscine",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/famille/moyen-a2__annonce-5.3.mp3",
+      "audio": "/lib/audio/tcf/co/loisirs/3-loisirs-annonce-tarifs-centre-aquatique.mp3",
       "transcription": "Le centre aquatique vous informe que les tarifs pour les adultes ont augmenté de 2 €, mais les entrées sont gratuites pour les enfants.\nNous offrons aussi une remise de 25% pour les adolescents."
     },
     "questions": [
@@ -31877,7 +31877,7 @@
     "scene": "La journée des grands-parents",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/famille/moyen-a2__radio-16.2.mp3",
+      "audio": "/lib/audio/tcf/co/radio/6-radio-promotion-fleurs-pour-grands-parents.mp3",
       "transcription": "Et maintenant, quelques publicités.\nPetits-enfants et parents, faites plaisir à vos proches aujourd’hui pour la journée des grands-parents.\nProfitez d’une remise exceptionnelle de 25 % sur tous nos bouquets de fleurs avec le code FLEURSENFÊTE sur notre site fleursenligne.fr."
     },
     "questions": [
@@ -36270,6 +36270,526 @@
           "lignes": {
             "nb_lignes": 1,
             "reponse_modele": "Un seul"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-ssx-a2-famille-copine-de-nathan-co-4",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · La copine de Nathan",
+    "scenario": "maison",
+    "scene": "La copine de Nathan",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/famille/03-famille-comment-est-la-copine-de-Nathan.mp3",
+      "transcription": "- Elle est comment, la copine de Nathan ?\nElle est blonde ?\n- Non, elle est brune, avec les cheveux longs.\nElle est très jolie.\n- Elle a quel âge ?\n- Dix-sept ou dix-huit ans, je pense.\nElle est au lycée avec ma sœur."
+    },
+    "questions": [
+      {
+        "enonce": "De qui parlent-ils ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "De la copine de Nathan", "correct": true},
+          {"id": "b", "texte": "De la sœur de Nathan"},
+          {"id": "c", "texte": "De la mère de Nathan"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "De la copine de Nathan"
+          }
+        }
+      },
+      {
+        "enonce": "Comment sont ses cheveux ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Bruns et longs", "correct": true},
+          {"id": "b", "texte": "Blonds et courts"},
+          {"id": "c", "texte": "Bruns et courts"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Bruns et longs"
+          }
+        }
+      },
+      {
+        "enonce": "Quel âge a-t-elle ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "17 ou 18 ans", "correct": true},
+          {"id": "b", "texte": "15 ou 16 ans"},
+          {"id": "c", "texte": "20 ans"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "17 ou 18 ans"
+          }
+        }
+      },
+      {
+        "enonce": "Avec qui est-elle au lycée ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Avec la sœur de la personne qui parle", "correct": true},
+          {"id": "b", "texte": "Avec Nathan"},
+          {"id": "c", "texte": "Avec son frère"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Avec la sœur de la personne qui parle"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-ssx-a2-famille-plat-dans-le-four-co-4",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Surveiller le plat dans le four",
+    "scenario": "maison",
+    "scene": "Surveiller le plat dans le four",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/famille/04-famille-surveiller-le-plat-dans-le-four.mp3",
+      "transcription": "- Ethan, tu peux m'aider, s'il te plaît ?\n- Oui, bien sûr.\nQu'est-ce que tu veux ?\n- Je dois sortir dix minutes pour faire une course.\nTu peux surveiller la cuisson du plat dans le four ?\nAttention aux courgettes, il ne faut pas qu'elles brûlent.\n- D'accord, papa.\nJe fais attention.\n- Merci, Ethan, tu es super !"
+    },
+    "questions": [
+      {
+        "enonce": "Pourquoi le papa doit-il sortir ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Pour faire une course", "correct": true},
+          {"id": "b", "texte": "Pour aller au travail"},
+          {"id": "c", "texte": "Pour chercher sa fille"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Pour faire une course"
+          }
+        }
+      },
+      {
+        "enonce": "Combien de temps sera-t-il absent ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Dix minutes", "correct": true},
+          {"id": "b", "texte": "Une heure"},
+          {"id": "c", "texte": "Trente minutes"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Dix minutes"
+          }
+        }
+      },
+      {
+        "enonce": "Que doit faire Ethan ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Surveiller la cuisson du plat", "correct": true},
+          {"id": "b", "texte": "Mettre la table"},
+          {"id": "c", "texte": "Faire la vaisselle"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Surveiller la cuisson du plat"
+          }
+        }
+      },
+      {
+        "enonce": "Quel légume ne doit pas brûler ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Les courgettes", "correct": true},
+          {"id": "b", "texte": "Les carottes"},
+          {"id": "c", "texte": "Les pommes de terre"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Les courgettes"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-ssx-a2-famille-film-d-action-co-4",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Regarder un film d'action",
+    "scenario": "maison",
+    "scene": "Regarder un film d'action",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/famille/05-famille-regarder-un-film-d-action.mp3",
+      "transcription": "- On regarde un film d'action, ce soir ?\n- Ah non, je n'aime pas les films d'action, c'est trop violent.\n- Si tu veux, on peut regarder une comédie.\n- Oui, c'est une bonne idée."
+    },
+    "questions": [
+      {
+        "enonce": "Que propose la première personne ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Regarder un film d'action", "correct": true},
+          {"id": "b", "texte": "Aller au cinéma"},
+          {"id": "c", "texte": "Regarder un match"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Regarder un film d'action"
+          }
+        }
+      },
+      {
+        "enonce": "Pourquoi l'autre personne refuse-t-elle ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "C'est trop violent", "correct": true},
+          {"id": "b", "texte": "C'est trop long"},
+          {"id": "c", "texte": "Elle est fatiguée"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "C'est trop violent"
+          }
+        }
+      },
+      {
+        "enonce": "Que vont-ils regarder finalement ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Une comédie", "correct": true},
+          {"id": "b", "texte": "Un dessin animé"},
+          {"id": "c", "texte": "Un documentaire"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Une comédie"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-ssx-a2-famille-match-de-foot-co-4",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Le match de foot manqué",
+    "scenario": "maison",
+    "scene": "Le match de foot manqué",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/famille/06-famille-pas-aller-regarder-le-match-de-foot.mp3",
+      "transcription": "- Papa, pourquoi tu n'es pas venu à mon match de foot, hier ?\n- J'ai eu une réunion à mon travail, je suis désolé.\n- Ce n'est pas grave.\nTu viendras au prochain match ?\n- Oui, je te promets."
+    },
+    "questions": [
+      {
+        "enonce": "Quand était le match ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Hier", "correct": true},
+          {"id": "b", "texte": "Ce matin"},
+          {"id": "c", "texte": "La semaine dernière"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Hier"
+          }
+        }
+      },
+      {
+        "enonce": "Pourquoi le papa n'est-il pas venu ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Il avait une réunion au travail", "correct": true},
+          {"id": "b", "texte": "Il était malade"},
+          {"id": "c", "texte": "Il avait oublié"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Il avait une réunion au travail"
+          }
+        }
+      },
+      {
+        "enonce": "Que promet le papa ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "De venir au prochain match", "correct": true},
+          {"id": "b", "texte": "D'acheter un ballon"},
+          {"id": "c", "texte": "De jouer au foot avec son enfant"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "De venir au prochain match"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-ssx-a2-famille-heure-du-repas-co-4",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · L'heure du repas",
+    "scenario": "maison",
+    "scene": "L'heure du repas",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/famille/07-famille-à-quelle-heure-on-mange.mp3",
+      "transcription": "- Maman, à quelle heure on mange, ce soir ?\n- À 20 heures.\nPourquoi ?\n- Pour savoir à quelle heure je rentre.\nJe vais aller chez Maeva après les cours, pour réviser le contrôle d'espagnol."
+    },
+    "questions": [
+      {
+        "enonce": "À quelle heure mange-t-on ce soir ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "À 20 heures", "correct": true},
+          {"id": "b", "texte": "À 19 heures"},
+          {"id": "c", "texte": "À 21 heures"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "À 20 heures"
+          }
+        }
+      },
+      {
+        "enonce": "Où va aller l'enfant après les cours ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Chez Maeva", "correct": true},
+          {"id": "b", "texte": "À la bibliothèque"},
+          {"id": "c", "texte": "Au sport"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Chez Maeva"
+          }
+        }
+      },
+      {
+        "enonce": "Pourquoi va-t-il chez Maeva ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Pour réviser un contrôle d'espagnol", "correct": true},
+          {"id": "b", "texte": "Pour fêter un anniversaire"},
+          {"id": "c", "texte": "Pour regarder un film"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Pour réviser un contrôle d'espagnol"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-ssx-a2-famille-vacances-a-londres-co-4",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Des vacances à Londres",
+    "scenario": "maison",
+    "scene": "Des vacances à Londres",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/famille/08-famille-proposer-des-vacances-à-Londres.mp3",
+      "transcription": "- Les enfants, vous voulez partir à Londres pour les vacances ?\n- Ah non, pas Londres, on y va tous les ans !\n- On peut aller en Italie ?\n- Ou en Espagne, j'ai une amie qui habite à Madrid."
+    },
+    "questions": [
+      {
+        "enonce": "Quelle destination propose le parent ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Londres", "correct": true},
+          {"id": "b", "texte": "Madrid"},
+          {"id": "c", "texte": "Rome"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Londres"
+          }
+        }
+      },
+      {
+        "enonce": "Pourquoi les enfants ne veulent-ils pas y aller ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Ils y vont tous les ans", "correct": true},
+          {"id": "b", "texte": "C'est trop cher"},
+          {"id": "c", "texte": "Il fait trop froid"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Ils y vont tous les ans"
+          }
+        }
+      },
+      {
+        "enonce": "Quels pays proposent les enfants ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "L'Italie ou l'Espagne", "correct": true},
+          {"id": "b", "texte": "La France ou la Suisse"},
+          {"id": "c", "texte": "L'Allemagne ou l'Autriche"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "L'Italie ou l'Espagne"
+          }
+        }
+      },
+      {
+        "enonce": "Qui habite à Madrid ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Une amie d'un des enfants", "correct": true},
+          {"id": "b", "texte": "La grand-mère"},
+          {"id": "c", "texte": "Un cousin"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Une amie d'un des enfants"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-ssx-a2-annonce-cles-retrouvees-co-2",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Des clés retrouvées",
+    "scenario": "magasins",
+    "scene": "Des clés retrouvées",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/achats/15-magasin-annonce-clé-retrouvé.mp3",
+      "transcription": "Mesdames, Messieurs, votre attention, s'il vous plaît.\nLe personnel du magasin a trouvé des clés.\nMerci à leur propriétaire de venir les récupérer à l'accueil avant la fermeture."
+    },
+    "questions": [
+      {
+        "enonce": "Qu'est-ce que le personnel a trouvé ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Des clés", "correct": true},
+          {"id": "b", "texte": "Un portefeuille"},
+          {"id": "c", "texte": "Un téléphone"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Des clés"
+          }
+        }
+      },
+      {
+        "enonce": "Où faut-il aller les chercher ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "À l'accueil", "correct": true},
+          {"id": "b", "texte": "À la caisse"},
+          {"id": "c", "texte": "Au parking"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "À l'accueil"
+          }
+        }
+      },
+      {
+        "enonce": "Avant quand faut-il venir ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Avant la fermeture", "correct": true},
+          {"id": "b", "texte": "Avant midi"},
+          {"id": "c", "texte": "Demain matin"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Avant la fermeture"
           }
         }
       }
