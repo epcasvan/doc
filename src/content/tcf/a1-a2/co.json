@@ -31639,7 +31639,7 @@
     "scene": "Les tarifs de la piscine",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/loisirs/3-loisirs-annonce-tarifs-centre-aquatique.mp3",
+      "audio": "/lib/audio/tcf/co/loisirs/03-loisirs-annonce-tarifs-centre-aquatique.mp3",
       "transcription": "Le centre aquatique vous informe que les tarifs pour les adultes ont augmenté de 2 €, mais les entrées sont gratuites pour les enfants.\nNous offrons aussi une remise de 25% pour les adolescents."
     },
     "questions": [
@@ -32149,7 +32149,7 @@
     "scene": "Les étages du grand magasin",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/logement/moyen-a2__annonce-4.5.mp3",
+      "audio": "/lib/audio/tcf/co/achats/16-magasin-annonce-les-étages.mp3",
       "transcription": "Chers clients, vous retrouverez tous les produits alimentaires au premier étage du magasin.\nAu deuxième étage, les articles de la maison et de la mode.\nAu troisième, le multimédia.\nBonne visite."
     },
     "questions": [
@@ -32217,7 +32217,7 @@
     "scene": "Au zoo",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/logement/moyen-a2__annonce-6.6.mp3",
+      "audio": "/lib/audio/tcf/co/loisirs/06-loisirs-zoo-spectacle-de-félins.mp3",
       "transcription": "Chers visiteurs, ne manquez pas à 14h aujourd’hui le spectacle incroyable des félins !\nVenez donner à manger aux girafes et aux éléphants et découvrir plein d’espèces animales incroyables !"
     },
     "questions": [
@@ -32689,11 +32689,11 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Le salon du tourisme",
-    "scenario": "vacances",
+    "scenario": "lieux-publics",
     "scene": "Le salon du tourisme",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/nature/moyen-a2__annonce-6.3.mp3",
+      "audio": "/lib/audio/tcf/co/lieux-publics/02-ville-annonce-salon-du-tourisme.mp3",
       "transcription": "À l’occasion du salon du tourisme, venez découvrir nos derniers séjours au soleil !\nBalades en bord de mer, baignade, palmiers...\nDécouvrez nos destinations 100% relaxantes !"
     },
     "questions": [
@@ -36805,7 +36805,7 @@
     "scene": "Le concert de rock",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/radio/09-raido-concert-rock-guitariste.mp3",
+      "audio": "/lib/audio/tcf/co/radio/09-radio-concert-rock-guitariste.mp3",
       "transcription": "Bienvenue sur Rock FM !\nCe soir a lieu le dernier concert du guitariste Paul Durand à l'Olympia.\nNous allons vous faire gagner des places.\nEnvoyez un SMS au 65 050 pour tenter de remporter deux places pour le concert."
     },
     "questions": [
@@ -36874,6 +36874,274 @@
           "lignes": {
             "nb_lignes": 1,
             "reponse_modele": "Envoyer un SMS"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-ssx-a2-famille-telephone-perdu-co-4",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Le téléphone perdu",
+    "scenario": "maison",
+    "scene": "Le téléphone perdu",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/famille/09-famille-tu-as-vu-mon-téléphone.mp3",
+      "transcription": "- Gaspard, tu as vu mon téléphone ?\nJe ne le trouve plus !\n- Il n'est pas sur ton bureau ?\n- Non, j'ai bien regardé, je ne l'ai pas vu.\n- Attends, je vais t'appeler pour que tu entendes la sonnerie."
+    },
+    "questions": [
+      {
+        "enonce": "Que cherche la personne ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Son téléphone", "correct": true},
+          {"id": "b", "texte": "Ses clés"},
+          {"id": "c", "texte": "Ses lunettes"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Son téléphone"
+          }
+        }
+      },
+      {
+        "enonce": "Où Gaspard propose-t-il de regarder ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Sur le bureau", "correct": true},
+          {"id": "b", "texte": "Dans la cuisine"},
+          {"id": "c", "texte": "Dans la voiture"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Sur le bureau"
+          }
+        }
+      },
+      {
+        "enonce": "Que va faire Gaspard pour l'aider ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "L'appeler pour entendre la sonnerie", "correct": true},
+          {"id": "b", "texte": "Lui prêter son téléphone"},
+          {"id": "c", "texte": "Chercher dans sa chambre"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "L'appeler pour entendre la sonnerie"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-ssx-a2-famille-programme-tele-co-4",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Le programme télé",
+    "scenario": "maison",
+    "scene": "Le programme télé",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/famille/10-famille-tu-veux-regarder-quoi.mp3",
+      "transcription": "- Tu veux regarder quoi à la télé, ce soir ?\n- Je ne sais pas.\nIl y a un bon film sur Canal 6 ?\n- Non, c'est une émission sur les animaux.\nÇa t'intéresse ?\n- Oui, pourquoi pas !"
+    },
+    "questions": [
+      {
+        "enonce": "De quoi parlent-ils ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Du programme télé de ce soir", "correct": true},
+          {"id": "b", "texte": "D'un film au cinéma"},
+          {"id": "c", "texte": "D'un livre"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Du programme télé de ce soir"
+          }
+        }
+      },
+      {
+        "enonce": "Qu'y a-t-il sur Canal 6 ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Une émission sur les animaux", "correct": true},
+          {"id": "b", "texte": "Un bon film"},
+          {"id": "c", "texte": "Un match de foot"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Une émission sur les animaux"
+          }
+        }
+      },
+      {
+        "enonce": "La personne est-elle intéressée ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Oui, pourquoi pas", "correct": true},
+          {"id": "b", "texte": "Non, pas du tout"},
+          {"id": "c", "texte": "Elle préfère dormir"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Oui, pourquoi pas"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-ssx-a2-famille-pates-a-la-tomate-co-4",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Préparer des pâtes à la tomate",
+    "scenario": "maison",
+    "scene": "Préparer des pâtes à la tomate",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/famille/11-famille-préparer-des-pâtes-à-la-tomate.mp3",
+      "transcription": "- Je vais préparer des pâtes à la tomate pour ce soir.\n- Je peux faire quelque chose ?\nCouper les tomates, par exemple ?\n- Oui, je veux bien, merci !\nLes couteaux sont là."
+    },
+    "questions": [
+      {
+        "enonce": "Que va-t-on manger ce soir ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Des pâtes à la tomate", "correct": true},
+          {"id": "b", "texte": "Une salade de tomates"},
+          {"id": "c", "texte": "Une pizza"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Des pâtes à la tomate"
+          }
+        }
+      },
+      {
+        "enonce": "Que propose l'autre personne ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "De couper les tomates", "correct": true},
+          {"id": "b", "texte": "De faire les courses"},
+          {"id": "c", "texte": "De mettre la table"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "De couper les tomates"
+          }
+        }
+      },
+      {
+        "enonce": "Comment la première personne répond-elle ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Elle accepte avec plaisir", "correct": true},
+          {"id": "b", "texte": "Elle refuse"},
+          {"id": "c", "texte": "Elle demande d'attendre"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Elle accepte avec plaisir"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-ssx-a2-famille-temps-demain-co-4",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Le temps de demain",
+    "scenario": "maison",
+    "scene": "Le temps de demain",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/famille/12-famille-il-fait-quel-temps-demain.mp3",
+      "transcription": "- Bruno, il va faire quel temps demain ?\n- Il devrait y avoir du soleil, mais il va faire froid.\n- Bon, ben je vais mettre un gros manteau, alors."
+    },
+    "questions": [
+      {
+        "enonce": "À qui la personne pose-t-elle la question ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "À Bruno", "correct": true},
+          {"id": "b", "texte": "À sa mère"},
+          {"id": "c", "texte": "À un voisin"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "À Bruno"
+          }
+        }
+      },
+      {
+        "enonce": "Quel temps fera-t-il demain ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Du soleil, mais froid", "correct": true},
+          {"id": "b", "texte": "De la pluie et du vent"},
+          {"id": "c", "texte": "Du soleil et chaud"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Du soleil, mais froid"
+          }
+        }
+      },
+      {
+        "enonce": "Que va mettre la personne ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Un gros manteau", "correct": true},
+          {"id": "b", "texte": "Un short"},
+          {"id": "c", "texte": "Un imperméable"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Un gros manteau"
           }
         }
       }
