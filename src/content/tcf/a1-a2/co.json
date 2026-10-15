@@ -31877,7 +31877,7 @@
     "scene": "La journée des grands-parents",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/radio/6-radio-promotion-fleurs-pour-grands-parents.mp3",
+      "audio": "/lib/audio/tcf/co/radio/06-radio-promotion-fleurs-grands-parents.mp3",
       "transcription": "Et maintenant, quelques publicités.\nPetits-enfants et parents, faites plaisir à vos proches aujourd’hui pour la journée des grands-parents.\nProfitez d’une remise exceptionnelle de 25 % sur tous nos bouquets de fleurs avec le code FLEURSENFÊTE sur notre site fleursenligne.fr."
     },
     "questions": [
@@ -31945,7 +31945,7 @@
     "scene": "Au concert",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/inviter/moyen-a2__annonce-2.2.mp3",
+      "audio": "/lib/audio/tcf/co/loisirs/05-loisirs-annonce-interdiction-photo-concert.mp3",
       "transcription": "Chers spectateurs, nous vous rappelons qu’il est interdit de prendre des photos durant le concert.\nMerci pour votre compréhension.\nProfitez bien de votre soirée !"
     },
     "questions": [
@@ -32013,7 +32013,7 @@
     "scene": "Le spectacle du cirque",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/inviter/moyen-a2__annonce-4.1.mp3",
+      "audio": "/lib/audio/tcf/co/loisirs/04-loisirs-annonce-cirque.mp3",
       "transcription": "Mesdames et messieurs, le cirque Pindet vous invite à nous retrouver pour un spectacle extraordinaire d’1 h 30.\nVenez voir des animaux, des clowns, des acrobates.\nRendez-vous mardi 14 à 18 h."
     },
     "questions": [
@@ -32081,7 +32081,7 @@
     "scene": "Les prévisions météo",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/journee/moyen-a2__radio-19.3.mp3",
+      "audio": "/lib/audio/tcf/co/radio/08-radio-prévision-météo.mp3",
       "transcription": "Tout de suite, les prévisions météo.\nAujourd’hui, le temps sera magnifique, avec un grand soleil et des températures douces.\nMais demain, la pluie arrivera, accompagnée de vent très fort.\nIl faudra sortir son parapluie !"
     },
     "questions": [
@@ -36790,6 +36790,90 @@
           "lignes": {
             "nb_lignes": 1,
             "reponse_modele": "Avant la fermeture"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tcf-ssx-a2-radio-concert-rock-co-3",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Le concert de rock",
+    "scenario": "radio",
+    "scene": "Le concert de rock",
+    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/radio/09-raido-concert-rock-guitariste.mp3",
+      "transcription": "Bienvenue sur Rock FM !\nCe soir a lieu le dernier concert du guitariste Paul Durand à l'Olympia.\nNous allons vous faire gagner des places.\nEnvoyez un SMS au 65 050 pour tenter de remporter deux places pour le concert."
+    },
+    "questions": [
+      {
+        "enonce": "Quel est le nom de la radio ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Rock FM", "correct": true},
+          {"id": "b", "texte": "Radio France"},
+          {"id": "c", "texte": "Pop FM"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Rock FM"
+          }
+        }
+      },
+      {
+        "enonce": "Qui donne un concert ce soir ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Le guitariste Paul Durand", "correct": true},
+          {"id": "b", "texte": "Le chanteur Paul Durand"},
+          {"id": "c", "texte": "Le pianiste Paul Durand"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Le guitariste Paul Durand"
+          }
+        }
+      },
+      {
+        "enonce": "Où a lieu le concert ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "À l'Olympia", "correct": true},
+          {"id": "b", "texte": "Au stade de France"},
+          {"id": "c", "texte": "Au théâtre de la ville"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "À l'Olympia"
+          }
+        }
+      },
+      {
+        "enonce": "Que faut-il faire pour gagner des places ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {"id": "a", "texte": "Envoyer un SMS", "correct": true},
+          {"id": "b", "texte": "Téléphoner à la radio"},
+          {"id": "c", "texte": "Écrire un e-mail"}
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Envoyer un SMS"
           }
         }
       }
