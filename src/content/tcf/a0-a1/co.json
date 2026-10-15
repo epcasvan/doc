@@ -370,32 +370,6 @@
     "consigne_supplementaire": null
   },
   {
-    "id": "tcf-a1j-s1-co-4",
-    "niveau": "A0-A1",
-    "competence": "CO",
-    "type_exercice": "association_images",
-    "theme": "Test blanc A1 Junior · série 1 · À l’école",
-    "scenario": "ecole",
-    "scene": "À l’école",
-    "consigne": "Observez les situations et écoutez les 5 dialogues. Notez le numéro du dialogue (1 à 5) sous l’image. Attention : il y a 6 situations mais seulement 5 dialogues.",
-    "points": 10,
-    "support": {
-      "audio": "/lib/audio/tcf/co/ecole/a-l-ecole-1.mp3",
-      "nb_dialogues": 5,
-      "transcription": "Dialogue 1 — On va faire des exercices de maths.\nPrenez votre livre page 54.\n— Monsieur, je n’ai pas mon livre.\n— Regarde sur le livre de ton voisin.\nDialogue 2 — Tiens, je te rends ton cahier d’anglais.\nMerci beaucoup !\n— De rien.\nTu comprends mieux le cours maintenant ?\n— Oui, merci.\nDialogue 3 — Qu’est-ce qu’il y a ce midi à la cantine ?\n— Des frites, c’est super !\n— Oui, et de la glace en dessert, génial !\nDialogue 4 — Madame, il est où, le bureau du directeur, s’il vous plaît ?\n— Là-bas, regarde, à côté de la bibliothèque.\nDialogue 5 — On va en salle informatique ce matin.\n— C’est où ?\n— Au premier étage.\nSuivez-moi."
-    },
-    "questions": [],
-    "situations": [
-      {"id": "s1", "image": "/lib/images/vocabulaire/actions/plateau-a-la-cantine.webp", "dialogue": 3},
-      {"id": "s2", "image": "/lib/images/vocabulaire/actions/indiquer-un-bureau.webp", "dialogue": 4},
-      {"id": "s3", "image": "/lib/images/vocabulaire/actions/lire-a-la-bibliotheque.webp", "dialogue": null},
-      {"id": "s4", "image": "/lib/images/vocabulaire/actions/partager-un-livre.webp", "dialogue": 1},
-      {"id": "s5", "image": "/lib/images/vocabulaire/actions/rendre-un-cahier.webp", "dialogue": 2},
-      {"id": "s6", "image": "/lib/images/vocabulaire/actions/monter-l-escalier.webp", "dialogue": 5}
-    ],
-    "consigne_supplementaire": null
-  },
-  {
     "id": "tcf-a1j-s2-co-1",
     "niveau": "A0-A1",
     "competence": "CO",
@@ -719,32 +693,6 @@
           }
         }
       }
-    ],
-    "consigne_supplementaire": null
-  },
-  {
-    "id": "tcf-a1j-s2-co-4",
-    "niveau": "A0-A1",
-    "competence": "CO",
-    "type_exercice": "association_images",
-    "theme": "Test blanc A1 Junior · série 2 · Au collège",
-    "scenario": "ecole",
-    "scene": "À l’école",
-    "consigne": "Observez les situations et écoutez les 4 dialogues. Notez le numéro du dialogue (1 à 4) sous l’image. Attention : il y a 6 situations mais seulement 4 dialogues.",
-    "points": 8,
-    "support": {
-      "audio": "/lib/audio/tcf/co/ecole/a-l-ecole-2.mp3",
-      "nb_dialogues": 4,
-      "transcription": "Dialogue 1 — Dépêchez-vous, le bus nous attend, on va être en retard à la piscine !\n— Oui, monsieur, on arrive.\nDialogue 2 — Ouah, il est super, ton téléphone !\nIl est nouveau ?\n— Oui, c’est mon cadeau d’anniversaire.\n— Tu as de la chance.\nDialogue 3 — Allez, vous faites trois fois le tour du stade en courant.\n— Madame, je ne peux pas courir, j’ai mal aux pieds.\n— D’accord, assieds-toi là.\nDialogue 4 — Tu peux me prêter ton dictionnaire ?\n— Oui, tiens, prends-le.\n— Merci."
-    },
-    "questions": [],
-    "situations": [
-      {"id": "s1", "image": "/lib/images/vocabulaire/actions/nager-a-la-piscine.webp", "dialogue": null},
-      {"id": "s2", "image": "/lib/images/vocabulaire/actions/montrer-son-telephone.webp", "dialogue": 2},
-      {"id": "s3", "image": "/lib/images/vocabulaire/actions/preter-un-livre.webp", "dialogue": 4},
-      {"id": "s4", "image": "/lib/images/vocabulaire/actions/avoir-mal-aux-pieds.webp", "dialogue": 3},
-      {"id": "s5", "image": "/lib/images/vocabulaire/actions/courir-vers-le-bus.webp", "dialogue": 1},
-      {"id": "s6", "image": "/lib/images/vocabulaire/actions/cours-d-anglais.webp", "dialogue": null}
     ],
     "consigne_supplementaire": null
   },
@@ -1082,32 +1030,6 @@
           }
         }
       }
-    ],
-    "consigne_supplementaire": null
-  },
-  {
-    "id": "tcf-a1j-s3-co-4",
-    "niveau": "A0-A1",
-    "competence": "CO",
-    "type_exercice": "association_images",
-    "theme": "Test blanc A1 Junior · série 3 · Au collège",
-    "scenario": "ecole",
-    "scene": "À l’école",
-    "consigne": "Observez les situations et écoutez les 4 dialogues. Notez le numéro du dialogue (1 à 4) sous l’image. Attention : il y a 6 situations mais seulement 4 dialogues.",
-    "points": 8,
-    "support": {
-      "audio": "/lib/audio/tcf/co/ecole/a-l-ecole-3.mp3",
-      "nb_dialogues": 4,
-      "transcription": "Dialogue 1 — Tu commences à quelle heure demain ?\n— À 10 h.\nLe prof de maths est absent.\n— Moi, je commence à 8 h.\nJ’ai cours d’histoire.\nDialogue 2 — S’il vous plaît, vous ne jouez pas ici.\nPrenez votre ballon et allez dans la cour.\n— Oui, désolé, monsieur.\nDialogue 3 — Tu vas où ?\n— En cours de dessin.\n— Allez, dépêche-toi, tu es en retard !\nDialogue 4 — Tu rentres comment de l’école ?\n— En bus, et toi ?\n— Moi, à pied.\nJ’habite juste à côté."
-    },
-    "questions": [],
-    "situations": [
-      {"id": "s1", "image": "/lib/images/vocabulaire/actions/envoyer-dans-la-cour.webp", "dialogue": 2},
-      {"id": "s2", "image": "/lib/images/vocabulaire/actions/cours-au-tableau-blanc.webp", "dialogue": null},
-      {"id": "s3", "image": "/lib/images/vocabulaire/actions/lire-l-emploi-du-temps.webp", "dialogue": 1},
-      {"id": "s4", "image": "/lib/images/vocabulaire/actions/rentrer-a-pied.webp", "dialogue": 4},
-      {"id": "s5", "image": "/lib/images/vocabulaire/actions/lever-la-main.webp", "dialogue": null},
-      {"id": "s6", "image": "/lib/images/vocabulaire/actions/aller-en-cours.webp", "dialogue": 3}
     ],
     "consigne_supplementaire": null
   },
@@ -1808,32 +1730,6 @@
           }
         }
       }
-    ],
-    "consigne_supplementaire": null
-  },
-  {
-    "id": "tcf-a1-s2-co-4",
-    "niveau": "A0-A1",
-    "competence": "CO",
-    "type_exercice": "association_images",
-    "theme": "Test blanc A1 · série 2 · À l’université",
-    "scenario": "ecole",
-    "scene": "À l’université",
-    "consigne": "Observez les situations et écoutez les 4 dialogues. Notez le numéro du dialogue (1 à 4) sous l’image. Attention : il y a 6 situations mais seulement 4 dialogues.",
-    "points": 8,
-    "support": {
-      "audio": "/lib/audio/tcf/co/ecole/a-l-universite.mp3",
-      "nb_dialogues": 4,
-      "transcription": "Il y a 15 secondes de pause après chaque dialogue.\nNoter, sous chaque image, le numéro du dialogue qui correspond.\nPuis, vous allez entendre à nouveau les dialogues.\nVous pouvez compléter vos réponses.\nRegardez les images.\nAttention, il y a 6 images A, B, C, D, E et F, mais seulement 4 dialogues.\nDialogue 1.\nTiens, mon style ouvert.\nOh, merci.\nQu'est-ce que je dois écrire en vert ?\nTu écris la date en haut de la feuille.\nDialogue 2.\nTous les jours, il y a de la viande au restaurant de l'université.\nC'est vrai, tu n'aimes pas la viande ?\nNon, je ne mange pas de viande.\nJe vais sortir pour manger dehors.\nDialogue 3.\nRegarde, c'est la professeur d'histoire.\nElle est à l'entrée de la bibliothèque.\nAh, oui, je la connais.\nC'est aussi ma professeur de géographie.\nDialogue 4.\nMadame, oui, je ne comprends pas l'exercice.\nAlors, viens au tableau.\nOn va faire l'exercice.\nD'accord.\nJe prends mon livre.\nOui, prends ton livre.\nDialogue 1.\nTiens, mon style ouvert.\nOh, merci.\nQu'est-ce que je dois écrire en vert ?\nTu écris la date en haut de la feuille.\nDialogue 2.\nTous les jours, il y a de la viande au restaurant de l'université.\nC'est vrai.\nTu n'aimes pas la viande ?\nNon, je ne mange pas de viande.\nJe vais sortir pour manger dehors.\nDialogue 3.\nRegarde, c'est la professeur d'histoire.\nElle est à l'entrée de la bibliothèque.\nAh, oui, je la connais.\nC'est aussi ma professeur de géographie.\nDialogue 4.\nMadame, oui, je ne comprends pas l'exercice.\nAlors, viens au tableau.\nOn va faire l'exercice.\nD'accord.\nJe prends mon livre.\nOui, prends ton livre."
-    },
-    "questions": [],
-    "situations": [
-      {"id": "s1", "image": "/lib/images/vocabulaire/actions/discuter-assises.webp", "dialogue": null},
-      {"id": "s2", "image": "/lib/images/vocabulaire/actions/deux-etudiants.webp", "dialogue": null},
-      {"id": "s3", "image": "/lib/images/vocabulaire/actions/plateau-de-viande.webp", "dialogue": 2},
-      {"id": "s4", "image": "/lib/images/vocabulaire/actions/parler-au-professeur.webp", "dialogue": 4},
-      {"id": "s5", "image": "/lib/images/vocabulaire/actions/professeure-a-la-bibliotheque.webp", "dialogue": 3},
-      {"id": "s6", "image": "/lib/images/vocabulaire/actions/preter-un-stylo.webp", "dialogue": 1}
     ],
     "consigne_supplementaire": null
   },
@@ -2879,32 +2775,6 @@
           }
         }
       }
-    ],
-    "consigne_supplementaire": null
-  },
-  {
-    "id": "tcf-a1p-s4-co-4",
-    "niveau": "A0-A1",
-    "competence": "CO",
-    "type_exercice": "association_images",
-    "theme": "Préparation A1 · série 4 · Petits dialogues",
-    "scenario": "ecole",
-    "scene": "À l’école",
-    "consigne": "Vous allez entendre 4 petits dialogues. Notez, sous chaque image, le numéro du dialogue qui correspond. Attention : il y a 6 images mais seulement 4 dialogues.",
-    "points": 8,
-    "support": {
-      "audio": "/lib/audio/tcf/co/ecole/a-l-ecole-4.mp3",
-      "nb_dialogues": 4,
-      "transcription": "Il y a 15 secondes de pause après chaque dialogue.\nNoter sous chaque image le numéro du dialogue qui correspond.\nPuis, vous allez entendre à nouveau les dialogues.\nVous pouvez compléter vos réponses.\nRegardez les images.\nAttention, il y a 6 images, A, B, C, D, E et F, mais seulement quatre dialogues.\nSituation numéro 1 Excusez-moi, est-ce que vous avez des dictionnaires de français ici?\nOui, ils sont à côté des livres de science en haut.\nAh oui, je vois.\nMerci beaucoup.\nSituation numéro 2 Voici la salle des professeurs.\nJe vais vous présenter vos collègues.\nMerci et bonjour à tous.\nJe vous présente Madame Ford, la nouvelle professeur de français du lycée.\nSituation numéro 3 Excusez-moi, je suis bien dans le cours d'anglais?\nOui, c'est ça.\nJe suis Monsieur Clin, votre professeur.\nAsséyez-vous, le cours a commencé.\nMerci, je suis désolé pour mon retard.\nSituation numéro 4.\nMoussa, tu comprends l'exercice de mathématique?\nIl est très difficile.\nL'exercice 2?\nOui, c'est simple.\nJe vais t'expliquer.\nMerci, c'est sympa.\nJe n'aime pas les maths.\nSituation numéro 1 Excusez-moi, est-ce que vous avez des dictionnaires de français ici?\nOui, ils sont à côté des livres de science en haut.\nAh oui, je vois.\nMerci beaucoup.\nSituation numéro 2 Voici la salle des professeurs.\nJe vais vous présenter vos collègues.\nMerci et bonjour à tous.\nJe vous présente Madame Ford, la nouvelle professeur de français du lycée.\nSituation numéro 3 Excusez-moi, je suis bien dans le cours d'anglais?\nOui, c'est ça.\nJe suis Monsieur Clin, votre professeur.\nAsséyez-vous, le cours a commencé.\nMerci, je suis désolé pour mon retard.\nSituation numéro 4.\nMoussa, tu comprends l'exercice de mathématique?\nIl est très difficile.\nL'exercice 2?\nOui, c'est simple.\nJe vais t'expliquer.\nMerci, c'est sympa.\nJe n'aime pas les maths."
-    },
-    "questions": [],
-    "situations": [
-      {"id": "s1", "image": "/lib/images/vocabulaire/actions/arriver-en-retard.webp", "dialogue": 3},
-      {"id": "s2", "image": "/lib/images/vocabulaire/actions/rencontre-devant-l-ecole.webp", "dialogue": null},
-      {"id": "s3", "image": "/lib/images/vocabulaire/actions/indiquer-un-rayon.webp", "dialogue": 1},
-      {"id": "s4", "image": "/lib/images/vocabulaire/actions/salle-informatique.webp", "dialogue": null},
-      {"id": "s5", "image": "/lib/images/vocabulaire/actions/presenter-des-collegues.webp", "dialogue": 2},
-      {"id": "s6", "image": "/lib/images/vocabulaire/actions/expliquer-un-exercice.webp", "dialogue": 4}
     ],
     "consigne_supplementaire": null
   },
