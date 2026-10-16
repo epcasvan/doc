@@ -15,10 +15,10 @@ export const COUNT_ICON_MAX_SIZE = 100 / COUNT_ICON_GRID_COLS
 /** Taille min = 33 % de la taille max. */
 export const COUNT_ICON_MIN_SIZE = COUNT_ICON_MAX_SIZE * (1 / 3)
 
-export const COUNT_TARGET_MIN = 11
-export const COUNT_TARGET_MAX = 19
+export const COUNT_TARGET_MIN = 15
+export const COUNT_TARGET_MAX = 25
 export const COUNT_DECOY_MIN = 10
-export const COUNT_DECOY_MAX = 15
+export const COUNT_DECOY_MAX = 20
 
 /** 6 styles de référence + 10 autres silhouettes N&B. */
 export const COUNT_ICON_CATALOG: readonly {

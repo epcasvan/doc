@@ -673,9 +673,9 @@ function renderFields(
         targetKind: t,
         distractorA: a,
         distractorB: b,
-        targetCount: Math.max(11, Math.min(19, next.targetCount ?? targetCount)),
-        distractorACount: Math.max(10, Math.min(15, next.distractorACount ?? distractorACount)),
-        distractorBCount: Math.max(10, Math.min(15, next.distractorBCount ?? distractorBCount)),
+        targetCount: Math.max(15, Math.min(25, next.targetCount ?? targetCount)),
+        distractorACount: Math.max(10, Math.min(20, next.distractorACount ?? distractorACount)),
+        distractorBCount: Math.max(10, Math.min(20, next.distractorBCount ?? distractorBCount)),
       })
       patch(index, { ...item, ...rebuilt })
     }
