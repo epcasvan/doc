@@ -66,6 +66,21 @@ export function SaveFicheDialog({
         onClick={(event) => event.stopPropagation()}
         onSubmit={onFormSubmit}
       >
+        <button
+          className="topbar-icon-btn save-fiche-close"
+          type="button"
+          aria-label="Fermer"
+          title="Fermer"
+          disabled={busy}
+          onClick={onClose}
+        >
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden>
+            <path
+              fill="currentColor"
+              d="M18.3 5.7 12 12l6.3 6.3-1.4 1.4L10.6 13.4 4.3 19.7 2.9 18.3 9.2 12 2.9 5.7 4.3 4.3l6.3 6.3 6.3-6.3 1.4 1.4z"
+            />
+          </svg>
+        </button>
         <h2 id={titleId}>Enregistrer la fiche</h2>
         <p className="save-fiche-lead">
           Le nom, les pages, les exercices et les nombres seront repris à l’identique.
@@ -115,9 +130,6 @@ export function SaveFicheDialog({
               Enregistrer une nouvelle fiche
             </button>
           ) : null}
-          <button className="text-link save-fiche-cancel" type="button" disabled={busy} onClick={onClose}>
-            Annuler
-          </button>
         </div>
       </form>
     </div>

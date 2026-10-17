@@ -5173,17 +5173,18 @@ textarea.pill-input,
   padding:20px;background:#322b1e55
 }
 .save-fiche-dialog{
+  position:relative;
   width:min(100%,440px);display:flex;flex-direction:column;gap:14px;
   padding:28px 28px 22px;border:1px solid var(--line);border-radius:18px;background:#fff
 }
-.save-fiche-dialog h2{margin:0;font-size:26px;letter-spacing:-.04em}
+.save-fiche-close{position:absolute;top:16px;right:16px}
+.save-fiche-dialog h2{margin:0;padding-right:40px;font-size:26px;letter-spacing:-.04em}
 .save-fiche-lead{margin:0;color:var(--muted);font-size:14px;line-height:1.5}
 .save-fiche-actions{display:flex;flex-direction:column;gap:8px}
 .save-fiche-actions .button.secondary{
   background:#fff;color:var(--ink);border:1px solid var(--line);box-shadow:none
 }
 .save-fiche-actions .button.secondary:hover{border-color:var(--purple);color:var(--purple)}
-.save-fiche-cancel{align-self:flex-start;font-size:13px;background:none;border:0;padding:6px 0}
 @media(max-width:720px){
   .fiches-main{padding:28px 16px 48px}
   .fiches-toolbar{grid-template-columns:1fr}
