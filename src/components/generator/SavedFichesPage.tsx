@@ -207,7 +207,7 @@ export function SavedFichesPage({
                   type="search"
                   value={query}
                   onChange={(event) => setQuery(event.target.value)}
-                  placeholder="TCF semestre 1"
+                  placeholder="Saisissez quelques lettres du nom"
                 />
               </label>
               <label className="access-field">
