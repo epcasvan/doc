@@ -5,11 +5,14 @@ export function Header({
   generator = false,
   showCreate,
   rightSlot,
+  endSlot,
 }: {
   onCreate: () => void
   generator?: boolean
   showCreate?: boolean
   rightSlot?: ReactNode
+  /** Affiché à droite du bouton « Créer une fiche ». */
+  endSlot?: ReactNode
 }) {
   const createVisible = showCreate ?? !generator
   return (
@@ -29,6 +32,7 @@ export function Header({
             Créer une fiche <span>→</span>
           </button>
         ) : null}
+        {endSlot}
       </div>
     </header>
   )

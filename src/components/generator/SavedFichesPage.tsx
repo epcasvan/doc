@@ -152,9 +152,20 @@ export function SavedFichesPage({
         generator
         showCreate
         onCreate={onOpenGenerator}
-        rightSlot={
-          <button className="topbar-text-btn" type="button" onClick={onLogout}>
-            Se déconnecter
+        endSlot={
+          <button
+            className="topbar-icon-btn is-logout"
+            type="button"
+            aria-label="Se déconnecter"
+            title="Se déconnecter"
+            onClick={onLogout}
+          >
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden>
+              <path
+                fill="currentColor"
+                d="M10 4v2H6v12h4v2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h4zm7.6 5.4L15 7l-1.4 1.4 2.6 2.6H10v2h6.2l-2.6 2.6L15 17l2.6-2.6L20.2 12l-2.6-2.6z"
+              />
+            </svg>
           </button>
         }
       />
