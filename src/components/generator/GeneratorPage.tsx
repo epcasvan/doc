@@ -474,8 +474,19 @@ export function GeneratorPage({
         generator
         rightSlot={
           <>
-            <button className="topbar-text-btn" type="button" onClick={onOpenFiches}>
-              Fiches enregistrées
+            <button
+              className="topbar-icon-btn"
+              type="button"
+              aria-label="Fiches enregistrées"
+              title="Fiches enregistrées"
+              onClick={onOpenFiches}
+            >
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden>
+                <path
+                  fill="currentColor"
+                  d="M4 4h6l2 2h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm0 4v10h16V8H4z"
+                />
+              </svg>
             </button>
             <TopbarTools
             themeColor={themeColor}
