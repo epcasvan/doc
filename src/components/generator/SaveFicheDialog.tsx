@@ -81,7 +81,7 @@ export function SaveFicheDialog({
             maxLength={80}
             required
             autoFocus
-            placeholder="TCF semestre 1 26-27"
+            placeholder="Saisissez le nom de la fiche"
           />
         </label>
         {needsPassword ? (
