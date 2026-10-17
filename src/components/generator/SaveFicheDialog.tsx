@@ -121,8 +121,19 @@ export function SaveFicheDialog({
               Mettre à jour
             </button>
           ) : (
-            <button className="button full" type="submit" disabled={busy}>
-              Enregistrer
+            <button
+              className="topbar-icon-btn save-fiche-save"
+              type="submit"
+              disabled={busy}
+              aria-label="Enregistrer"
+              title="Enregistrer"
+            >
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden>
+                <path
+                  fill="currentColor"
+                  d="M17 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7l-4-4zm-5 16a3 3 0 1 1 0-6 3 3 0 0 1 0 6zM15 5v4H7V5h8z"
+                />
+              </svg>
             </button>
           )}
           {canUpdate ? (

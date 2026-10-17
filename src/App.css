@@ -5180,7 +5180,14 @@ textarea.pill-input,
 .save-fiche-close{position:absolute;top:16px;right:16px}
 .save-fiche-dialog h2{margin:0;padding-right:40px;font-size:26px;letter-spacing:-.04em}
 .save-fiche-lead{margin:0;color:var(--muted);font-size:14px;line-height:1.5}
-.save-fiche-actions{display:flex;flex-direction:column;gap:8px}
+.save-fiche-actions{display:flex;flex-direction:column;gap:8px;align-items:flex-end}
+.save-fiche-actions .button.full{align-self:stretch}
+.save-fiche-save{
+  background:var(--purple);border-color:var(--purple);color:#fff
+}
+.save-fiche-save:hover{
+  background:var(--purple);border-color:var(--purple);color:#fff;filter:brightness(0.92)
+}
 .save-fiche-actions .button.secondary{
   background:#fff;color:var(--ink);border:1px solid var(--line);box-shadow:none
 }
