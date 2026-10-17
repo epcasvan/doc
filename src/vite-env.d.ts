@@ -10,6 +10,8 @@ interface ImportMetaEnv {
   readonly VITE_ACCESS_DOMAINS_FULL?: string
   /** Liste de domaines séparés par des virgules (ex. algèbre,géométrie). */
   readonly VITE_ACCESS_DOMAINS_PARTIAL?: string
+  /** Origine de l’API fiches (Cloudflare Worker), sans slash final. */
+  readonly VITE_FICHES_API_URL?: string
 }
 
 interface ImportMeta {

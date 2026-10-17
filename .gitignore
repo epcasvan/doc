@@ -12,6 +12,8 @@ dist
 public/lib/images/communication/
 dist-ssr
 *.local
+api/fiches/.dev.vars
+api/fiches/.wrangler
 
 # Editor directories and files
 .vscode/*

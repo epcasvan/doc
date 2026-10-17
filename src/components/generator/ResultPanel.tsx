@@ -33,6 +33,7 @@ export type ResultPanelProps = {
   drawAlphaSeries: () => void
   generate: () => void
   printAll: () => void
+  onSaveFiche: () => void
   isCalliDomain: boolean
   isJeuxDomain: boolean
   jeuxPreviewSheets: Array<{ sheet: WorksheetPage; index: number }> | null
@@ -96,6 +97,7 @@ export function ResultPanel({
   drawAlphaSeries,
   generate,
   printAll,
+  onSaveFiche,
   isCalliDomain,
   isJeuxDomain,
   jeuxPreviewSheets,
@@ -131,6 +133,9 @@ export function ResultPanel({
                 <h2>Votre activité est prête.</h2>
               </div>
               <div className="result-head-actions no-print">
+                <button className="print-chip" type="button" onClick={onSaveFiche}>
+                  Enregistrer
+                </button>
                 {!libreMode ? null : (
                   <button
                     className="print-chip is-icon is-validate"

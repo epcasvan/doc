@@ -9,6 +9,7 @@ import {
   domainsForAccount,
   readAccessAccount,
 } from '@/access'
+import { SaveFicheDialog } from '@/components/generator/SaveFicheDialog'
 import { TopbarTools } from '@/components/generator/TopbarTools'
 import { FooterSidePanel } from '@/components/generator/FooterSidePanel'
 import { Header } from '@/components/generator/Header'
@@ -40,6 +41,8 @@ import { defaultPage, exerciseTypeById } from '@/math/catalog'
 import { joinCalliLines } from '@/calligraphie/defaults'
 import { isPhraseLibreEditable } from '@/francais/PhraseLibreEditor'
 import type { VocabWordEntry } from '@/francais/vocab-learn'
+import { createFiche, storeSyncPassword, updateFiche } from '@/fiches/api'
+import { buildFicheRecipe, readStagedFiche, rememberFicheOnHistory } from '@/fiches/recipe'
 import { buildWorksheets } from '@/math/generate'
 import {
   blockFromPage,
@@ -55,25 +58,42 @@ import type {
   PreviewMode,
 } from '@/math/types'
 
-export function GeneratorPage({ onLogout }: { onLogout: () => void }) {
+export function GeneratorPage({
+  onLogout,
+  onOpenFiches,
+}: {
+  onLogout: () => void
+  onOpenFiches: () => void
+}) {
   const accessAccount = readAccessAccount()
   const allowedDomains = useMemo(() => domainsForAccount(accessAccount), [accessAccount])
   const firstAllowedDomain = allowedDomains[0] ?? 'algèbre'
+  const [openedFiche] = useState(readStagedFiche)
   const initial = defaultPage(
     accountCanAccessDomain(accessAccount, 'algèbre') ? 'algèbre' : firstAllowedDomain,
   )
-  const [pages, setPages] = useState<PageConfig[]>([initial])
+  const [pages, setPages] = useState<PageConfig[]>(() => openedFiche?.recipe.pages ?? [initial])
   const [sheetIndex, setSheetIndex] = useState(0)
   const [blockIndex, setBlockIndex] = useState(0)
   const [mode, setMode] = useState<PreviewMode>('student')
-  const [institutional, setInstitutional] = useState<InstitutionalHeader>(DEFAULT_INSTITUTIONAL)
-  const [evalMode, setEvalMode] = useState(false)
-  const [pointsPerQuestion, setPointsPerQuestion] = useState(1)
-  const [seed, setSeed] = useState(randomSeed)
+  const [institutional, setInstitutional] = useState<InstitutionalHeader>(() =>
+    openedFiche
+      ? { ...DEFAULT_INSTITUTIONAL, ...openedFiche.recipe.institutional }
+      : DEFAULT_INSTITUTIONAL,
+  )
+  const [evalMode, setEvalMode] = useState(() => openedFiche?.recipe.evalMode ?? false)
+  const [pointsPerQuestion, setPointsPerQuestion] = useState(
+    () => openedFiche?.recipe.pointsPerQuestion ?? 1,
+  )
+  const [seed, setSeed] = useState(() => openedFiche?.recipe.seed ?? randomSeed())
   const [selectedCoordShape, setSelectedCoordShape] = useState<CoordShape | null>('triangle')
   const [themeColor, setThemeColor] = useState(readThemeColor)
   const [footerPanelOpen, setFooterPanelOpen] = useState(false)
-  const [libreMode, setLibreMode] = useState(false)
+  const [libreMode, setLibreMode] = useState(() => openedFiche?.recipe.libreMode ?? false)
+  const [ficheRef, setFicheRef] = useState<{ id: string; name: string } | null>(() =>
+    openedFiche ? { id: openedFiche.id, name: openedFiche.name } : null,
+  )
+  const [saveOpen, setSaveOpen] = useState(false)
   const previewFrameRef = useRef<HTMLDivElement>(null)
 
   const applyThemeColor = (color: string) => {
@@ -86,7 +106,9 @@ export function GeneratorPage({ onLogout }: { onLogout: () => void }) {
   }
 
   const worksheets = useMemo(() => buildWorksheets(pages, seed), [pages, seed])
-  const [libreSnapshot, setLibreSnapshot] = useState<PageConfig[] | null>(null)
+  const [libreSnapshot, setLibreSnapshot] = useState<PageConfig[] | null>(
+    () => openedFiche?.recipe.libreSnapshot ?? null,
+  )
   const safeSheetIndex = Math.min(sheetIndex, Math.max(0, worksheets.length - 1))
   const activeSheet = worksheets[safeSheetIndex] ?? worksheets[0]
   const pageIndex = activeSheet?.configIndex ?? Math.min(sheetIndex, Math.max(0, pages.length - 1))
@@ -306,6 +328,26 @@ export function GeneratorPage({ onLogout }: { onLogout: () => void }) {
     window.print()
   }
 
+  async function persistFiche(input: { name: string; asNew: boolean; password: string }) {
+    if (input.password) storeSyncPassword(input.password)
+    const recipe = buildFicheRecipe({
+      pages,
+      seed,
+      institutional,
+      evalMode,
+      pointsPerQuestion,
+      libreMode,
+      libreSnapshot,
+    })
+    const saved =
+      !input.asNew && ficheRef
+        ? await updateFiche(ficheRef.id, input.name, recipe)
+        : await createFiche(input.name, recipe)
+    const next = { id: saved.id, name: saved.name }
+    setFicheRef(next)
+    rememberFicheOnHistory({ ...next, recipe: saved.recipe })
+  }
+
   const chromeProps = {
     institutional,
     evalMode,
@@ -393,6 +435,7 @@ export function GeneratorPage({ onLogout }: { onLogout: () => void }) {
     drawAlphaSeries,
     generate,
     printAll,
+    onSaveFiche: () => setSaveOpen(true),
     jeuxPreviewSheets,
     previewFrameRef,
     seed,
@@ -430,7 +473,11 @@ export function GeneratorPage({ onLogout }: { onLogout: () => void }) {
         onCreate={() => undefined}
         generator
         rightSlot={
-          <TopbarTools
+          <>
+            <button className="topbar-text-btn" type="button" onClick={onOpenFiches}>
+              Fiches enregistrées
+            </button>
+            <TopbarTools
             themeColor={themeColor}
             onThemeColor={applyThemeColor}
             footerOpen={footerPanelOpen}
@@ -476,6 +523,7 @@ export function GeneratorPage({ onLogout }: { onLogout: () => void }) {
             showPreviewToggle={!(ctx.isCalliDomain || ctx.isJeuxDomain)}
             onLogout={onLogout}
           />
+          </>
         }
       />
       <main className="generator-page" id="top">
@@ -544,6 +592,14 @@ export function GeneratorPage({ onLogout }: { onLogout: () => void }) {
           ) : null}
         </div>
       </main>
+      {saveOpen ? (
+        <SaveFicheDialog
+          initialName={ficheRef?.name ?? ''}
+          canUpdate={ficheRef != null}
+          onClose={() => setSaveOpen(false)}
+          onSubmit={persistFiche}
+        />
+      ) : null}
     </div>
   )
 }

@@ -6,13 +6,15 @@ import {
   writeAccessAccount,
   type AccessAccount,
 } from '@/access'
+import { clearAccessPassword } from '@/fiches/password'
 import { AccessPage } from '@/components/generator/AccessPage'
 import { GeneratorPage } from '@/components/generator/GeneratorPage'
 import { Landing } from '@/components/generator/Landing'
+import { SavedFichesPage } from '@/components/generator/SavedFichesPage'
 import { navigateTo, resolveRoute } from '@/components/generator/routing'
 
 export default function App() {
-  const [route, setRoute] = useState<'landing' | 'access' | 'generator'>(resolveRoute)
+  const [route, setRoute] = useState(resolveRoute)
 
   useEffect(() => {
     const sync = () => setRoute(resolveRoute())
@@ -36,13 +38,27 @@ export default function App() {
     setRoute('generator')
   }
 
+  const showGenerator = () => {
+    navigateTo('/generateur')
+    setRoute('generator')
+  }
+
+  const showFiches = () => {
+    navigateTo('/fiches')
+    setRoute('fiches')
+  }
+
   const logout = () => {
     clearAccessAccount()
+    clearAccessPassword()
     navigateTo('/acces')
     setRoute('access')
   }
 
-  if (route === 'generator') return <GeneratorPage onLogout={logout} />
+  if (route === 'fiches') {
+    return <SavedFichesPage onOpenGenerator={showGenerator} onLogout={logout} />
+  }
+  if (route === 'generator') return <GeneratorPage onLogout={logout} onOpenFiches={showFiches} />
   if (route === 'access') return <AccessPage onSuccess={openGenerator} />
   return <Landing onCreate={goAccess} />
 }

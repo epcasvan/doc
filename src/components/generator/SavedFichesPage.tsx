@@ -1,0 +1,291 @@
+import { useEffect, useMemo, useState, type FormEvent } from 'react'
+import { ACCESS_DOMAIN_OPTIONS, domainsForAccount, readAccessAccount } from '@/access'
+import { Header } from '@/components/generator/Header'
+import {
+  deleteFiche,
+  FichesApiError,
+  fichesApiConfigured,
+  listFiches,
+  storeSyncPassword,
+} from '@/fiches/api'
+import { readAccessPassword } from '@/fiches/password'
+import { stageFicheNavigation, type SavedFiche } from '@/fiches/recipe'
+import type { Domain } from '@/math/types'
+
+function domainLabel(domain: string): string {
+  return ACCESS_DOMAIN_OPTIONS.find((option) => option.id === domain)?.label ?? domain
+}
+
+function formatUpdated(value: string): string {
+  const date = new Date(value)
+  if (Number.isNaN(date.getTime())) return ''
+  return date.toLocaleDateString('fr-CH', { day: 'numeric', month: 'long', year: 'numeric' })
+}
+
+export function SavedFichesPage({
+  onOpenGenerator,
+  onLogout,
+}: {
+  onOpenGenerator: () => void
+  onLogout: () => void
+}) {
+  const account = readAccessAccount()
+  const allowed = useMemo(() => new Set(domainsForAccount(account)), [account])
+  const [password, setPassword] = useState('')
+  const [unlocked, setUnlocked] = useState(() => Boolean(readAccessPassword()))
+  const [configured] = useState(fichesApiConfigured)
+  const [fiches, setFiches] = useState<SavedFiche[]>([])
+  const [query, setQuery] = useState('')
+  const [domainFilter, setDomainFilter] = useState<Domain | 'tous'>('tous')
+  const [sort, setSort] = useState<'domaine' | 'nom' | 'date'>('domaine')
+  const [loading, setLoading] = useState(unlocked && configured)
+  const [error, setError] = useState<string | null>(null)
+  const [pendingDelete, setPendingDelete] = useState<string | null>(null)
+  const [unlockError, setUnlockError] = useState<string | null>(null)
+
+  const load = async () => {
+    setLoading(true)
+    setError(null)
+    try {
+      const rows = await listFiches()
+      setFiches(rows.filter((fiche) => fiche.domains.every((domain) => allowed.has(domain))))
+      setUnlocked(true)
+    } catch (caught) {
+      if (caught instanceof FichesApiError && (caught.code === 'password' || caught.code === 'unauthorized')) {
+        setUnlocked(false)
+        setUnlockError(caught.message)
+        setError(null)
+      } else {
+        setError(caught instanceof Error ? caught.message : 'La liste n’a pas pu être chargée.')
+      }
+    } finally {
+      setLoading(false)
+    }
+  }
+
+  useEffect(() => {
+    if (!unlocked || !configured) return
+    let cancelled = false
+    void (async () => {
+      setLoading(true)
+      setError(null)
+      try {
+        const rows = await listFiches()
+        if (cancelled) return
+        setFiches(rows.filter((fiche) => fiche.domains.every((domain) => allowed.has(domain))))
+      } catch (caught) {
+        if (cancelled) return
+        if (caught instanceof FichesApiError && (caught.code === 'password' || caught.code === 'unauthorized')) {
+          setUnlocked(false)
+          setUnlockError(caught.message)
+          setError(null)
+        } else {
+          setError(caught instanceof Error ? caught.message : 'La liste n’a pas pu être chargée.')
+        }
+      } finally {
+        if (!cancelled) setLoading(false)
+      }
+    })()
+    return () => {
+      cancelled = true
+    }
+  }, [allowed, configured, unlocked])
+
+  const domainOptions = useMemo(() => {
+    const present = new Set<Domain>()
+    for (const fiche of fiches) {
+      for (const domain of fiche.domains) present.add(domain)
+    }
+    return ACCESS_DOMAIN_OPTIONS.filter((option) => present.has(option.id))
+  }, [fiches])
+
+  useEffect(() => {
+    if (domainFilter === 'tous') return
+    if (!domainOptions.some((option) => option.id === domainFilter)) setDomainFilter('tous')
+  }, [domainFilter, domainOptions])
+
+  const visible = useMemo(() => {
+    const needle = query.trim().toLowerCase()
+    const rows = fiches.filter((fiche) => {
+      const nameOk = !needle || fiche.name.toLowerCase().includes(needle)
+      const domainOk = domainFilter === 'tous' || fiche.domains.includes(domainFilter)
+      return nameOk && domainOk
+    })
+    rows.sort((a, b) => {
+      if (sort === 'date') return b.updatedAt.localeCompare(a.updatedAt)
+      if (sort === 'nom') return a.name.localeCompare(b.name, 'fr')
+      const byDomain = domainLabel(a.domains[0] ?? '').localeCompare(domainLabel(b.domains[0] ?? ''), 'fr')
+      if (byDomain !== 0) return byDomain
+      return a.name.localeCompare(b.name, 'fr')
+    })
+    return rows
+  }, [domainFilter, fiches, query, sort])
+
+  const unlock = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault()
+    storeSyncPassword(password)
+    setUnlockError(null)
+    setError(null)
+    setUnlocked(true)
+    setPassword('')
+  }
+
+  const openFiche = (fiche: SavedFiche) => {
+    stageFicheNavigation({ id: fiche.id, name: fiche.name, recipe: fiche.recipe })
+    onOpenGenerator()
+  }
+
+  const confirmDelete = async (fiche: SavedFiche) => {
+    setError(null)
+    try {
+      await deleteFiche(fiche.id)
+      setFiches((current) => current.filter((item) => item.id !== fiche.id))
+      setPendingDelete(null)
+    } catch (caught) {
+      setError(caught instanceof Error ? caught.message : 'La suppression n’a pas abouti.')
+    }
+  }
+
+  return (
+    <div className="fiches-page">
+      <Header
+        generator
+        showCreate
+        onCreate={onOpenGenerator}
+        rightSlot={
+          <button className="topbar-text-btn" type="button" onClick={onLogout}>
+            Se déconnecter
+          </button>
+        }
+      />
+      <main className="fiches-main">
+        {!configured ? (
+          <section className="access-card fiches-card">
+            <p className="eyebrow">Fiches enregistrées</p>
+            <h1>Synchronisation à brancher</h1>
+            <p className="access-lead">
+              L’adresse de l’API n’est pas encore indiquée sur ce site. Les fiches pourront être
+              enregistrées et retrouvées dès qu’elle le sera.
+            </p>
+          </section>
+        ) : !unlocked ? (
+          <form className="access-card fiches-card" onSubmit={unlock}>
+            <p className="eyebrow">Fiches enregistrées</p>
+            <h1>Synchroniser les fiches</h1>
+            <p className="access-lead">Saisissez votre mot de passe pour afficher les fiches enregistrées.</p>
+            <label className="access-field">
+              <span>Mot de passe</span>
+              <input
+                type="password"
+                autoComplete="current-password"
+                value={password}
+                onChange={(event) => setPassword(event.target.value)}
+                required
+                autoFocus
+              />
+            </label>
+            {unlockError ? (
+              <p className="access-error" role="alert">
+                {unlockError}
+              </p>
+            ) : null}
+            <button className="button full" type="submit">
+              Afficher les fiches
+            </button>
+          </form>
+        ) : (
+          <section className="fiches-panel">
+            <header className="fiches-intro">
+              <p className="eyebrow">Bibliothèque</p>
+              <h1>Fiches enregistrées</h1>
+              <p className="access-lead">Ouvrez une fiche pour retrouver la même configuration, puis imprimez-la.</p>
+            </header>
+            <div className="fiches-toolbar">
+              <label className="access-field fiches-search">
+                <span>Rechercher une fiche</span>
+                <input
+                  type="search"
+                  value={query}
+                  onChange={(event) => setQuery(event.target.value)}
+                  placeholder="TCF semestre 1"
+                />
+              </label>
+              <label className="access-field">
+                <span>Domaine</span>
+                <select
+                  value={domainFilter}
+                  onChange={(event) => setDomainFilter(event.target.value as Domain | 'tous')}
+                >
+                  <option value="tous">Tous les domaines</option>
+                  {domainOptions.map((option) => (
+                    <option key={option.id} value={option.id}>
+                      {option.label}
+                    </option>
+                  ))}
+                </select>
+              </label>
+              <label className="access-field">
+                <span>Trier</span>
+                <select value={sort} onChange={(event) => setSort(event.target.value as 'domaine' | 'nom' | 'date')}>
+                  <option value="domaine">Domaine</option>
+                  <option value="nom">Nom</option>
+                  <option value="date">Date</option>
+                </select>
+              </label>
+            </div>
+            {error ? (
+              <p className="access-error" role="alert">
+                {error}{' '}
+                <button className="text-link" type="button" onClick={() => void load()}>
+                  Réessayer
+                </button>
+              </p>
+            ) : null}
+            {loading ? <p className="fiches-empty">Chargement des fiches…</p> : null}
+            {!loading && visible.length === 0 ? (
+              <p className="fiches-empty">
+                {fiches.length === 0
+                  ? 'Aucune fiche enregistrée pour le moment.'
+                  : 'Aucune fiche ne correspond à la recherche.'}
+              </p>
+            ) : null}
+            <ul className="fiches-list">
+              {visible.map((fiche) => (
+                <li key={fiche.id} className="fiches-row">
+                  <div className="fiches-row-text">
+                    <strong>{fiche.name}</strong>
+                    <span>
+                      {fiche.domains.map(domainLabel).join(' · ')}
+                      {formatUpdated(fiche.updatedAt) ? ` — ${formatUpdated(fiche.updatedAt)}` : ''}
+                    </span>
+                  </div>
+                  <div className="fiches-row-actions">
+                    {pendingDelete === fiche.id ? (
+                      <>
+                        <button className="button small" type="button" onClick={() => void confirmDelete(fiche)}>
+                          Supprimer
+                        </button>
+                        <button className="topbar-text-btn" type="button" onClick={() => setPendingDelete(null)}>
+                          Annuler
+                        </button>
+                      </>
+                    ) : (
+                      <>
+                        <button className="button small" type="button" onClick={() => openFiche(fiche)}>
+                          Ouvrir
+                        </button>
+                        <button className="topbar-text-btn" type="button" onClick={() => setPendingDelete(fiche.id)}>
+                          Supprimer
+                        </button>
+                      </>
+                    )}
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+      </main>
+    </div>
+  )
+}
