@@ -3,6 +3,7 @@ import { WorksheetSheet } from '@/components/generator/WorksheetSheet'
 import type { InstitutionalHeader } from '@/components/math/PrintDocumentChrome'
 import { createFiche } from '@/fiches/api'
 import { buildFicheRecipe } from '@/fiches/recipe'
+import { closePrintFrame, rasterWorksheet } from '@/livres/raster-sheet'
 import { bookDisplayName, bookFolderName, planBook, type BookKind } from '@/livres/plan'
 import { buildWorksheets } from '@/math/generate'
 import { randomSeed } from '@/math/rng'
@@ -98,15 +99,11 @@ export function BookStudio({
       try {
         await waitForSheet(host)
         if (cancelled) return
-        const html2canvas = (await import('html2canvas')).default
+        const sheet = host.querySelector('.worksheet-sheet')
+        if (!(sheet instanceof HTMLElement)) throw new Error('La fiche n’a pas pu être préparée.')
         const { jsPDF } = await import('jspdf')
-        const frame = host.querySelector('.book-capture-frame') as HTMLElement | null
-        if (!frame) throw new Error('La fiche n’a pas pu être préparée.')
-        const canvas = await html2canvas(frame, {
-          scale: 2,
-          backgroundColor: '#ffffff',
-          useCORS: true,
-        })
+        const canvas = await rasterWorksheet(sheet)
+        if (cancelled) return
         const key = `${folder}/${file.themeDir}/${file.fileName}`
         const existing = pdfs.get(key)
         const pdf = existing ?? new jsPDF({ unit: 'mm', format: 'a4', orientation: 'portrait' })
@@ -161,8 +158,16 @@ export function BookStudio({
     void run()
     return () => {
       cancelled = true
+      busy.current = false
     }
   }, [file, files, page, phase, request, sheetPos.file, sheetPos.sheet, sheets.length])
+
+  useEffect(() => {
+    if (phase === 'run') return
+    closePrintFrame()
+  }, [phase])
+
+  useEffect(() => () => closePrintFrame(), [])
 
   if (!request) return null
 
@@ -233,14 +238,15 @@ export function BookStudio({
           </div>
         </div>
       ) : (
-        <div className="book-progress no-print" role="status">
-          {title} — {file?.label ?? 'Préparation'} ({Math.min(sheetPos.file + 1, files.length)}/{files.length})
+        <div className="book-run-cover" role="status">
+          <div className="book-progress">
+            {title} — {file?.label ?? 'Préparation'} ({Math.min(sheetPos.file + 1, files.length)}/{files.length})
+          </div>
         </div>
       )}
       {phase === 'run' && page ? (
         <div className="book-capture" ref={hostRef} aria-hidden>
-          <div className="a4-frame book-capture-frame">
-            <WorksheetSheet
+          <WorksheetSheet
               page={page}
               mode="student"
               institutional={request.institutional}
@@ -252,7 +258,6 @@ export function BookStudio({
               pointsPerQuestion={request.pointsPerQuestion}
               showExerciseRefresh={false}
             />
-          </div>
         </div>
       ) : null}
     </>
