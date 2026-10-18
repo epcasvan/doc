@@ -47,7 +47,7 @@ function emptyCopy(library: Library, fiches: SavedFiche[], query: string): strin
     return searching ? 'Aucune fiche TCF ne correspond à la recherche.' : 'Aucune fiche TCF enregistrée pour le moment.'
   }
   if (library === 'tpm') {
-    return searching ? 'Aucune fiche TPM ne correspond à la recherche.' : 'Aucune fiche TPM enregistrée pour le moment.'
+    return searching ? 'Aucune fiche TCM ne correspond à la recherche.' : 'Aucune fiche TCM enregistrée pour le moment.'
   }
   return searching ? 'Aucune fiche ne correspond à la recherche.' : 'Aucune fiche enregistrée pour le moment.'
 }
@@ -270,14 +270,14 @@ export function SavedFichesPage({
               ) : null}
               {canTpm ? (
                 <button type="button" className={library === 'tpm' ? 'active' : ''} onClick={() => chooseLibrary('tpm')}>
-                  TPM
+                  TCM
                 </button>
               ) : null}
               <button type="button" className={library === 'alpha' ? 'active' : ''} onClick={() => chooseLibrary('alpha')}>
-                Livre alphabétisation
+                Alpha
               </button>
               <button type="button" className={library === 'soutien' ? 'active' : ''} onClick={() => chooseLibrary('soutien')}>
-                Livre soutien
+                Soutien
               </button>
             </div>
             <div className="fiches-toolbar">

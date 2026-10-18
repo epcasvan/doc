@@ -1,6 +1,9 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { WorksheetSheet } from '@/components/generator/WorksheetSheet'
-import type { InstitutionalHeader } from '@/components/math/PrintDocumentChrome'
+import {
+  ALPHA_SOUTIEN_REFERENCE,
+  type InstitutionalHeader,
+} from '@/components/math/PrintDocumentChrome'
 import { createFiche } from '@/fiches/api'
 import { buildFicheRecipe } from '@/fiches/recipe'
 import { closePrintFrame, rasterWorksheet } from '@/livres/raster-sheet'
@@ -137,7 +140,10 @@ export function BookStudio({
                 buildFicheRecipe({
                   pages: files[0]!.pages.slice(0, 1),
                   seed: seedRef.current,
-                  institutional: request.institutional,
+                  institutional: {
+                    ...request.institutional,
+                    reference: ALPHA_SOUTIEN_REFERENCE,
+                  },
                   evalMode: request.evalMode,
                   pointsPerQuestion: request.pointsPerQuestion,
                   libreMode: false,
@@ -326,6 +332,7 @@ export function BookStudio({
               institutional={{
                 ...request.institutional,
                 documentTitle: file.documentTitle,
+                reference: ALPHA_SOUTIEN_REFERENCE,
               }}
               evalMode={request.evalMode}
               pageNumber={sheetPos.sheet + 1}

@@ -199,10 +199,15 @@ function needsFixedDivisionGrid(exerciseType: string): boolean {
 /** Largeur de grille imposée après édition libre (+ / − / ×). */
 function fixedColumnWidth(exerciseType: string): number | null {
   if (isCfrColSeven(exerciseType)) return 7
-  if (exerciseType === 'tpm-add-sub-col-3') return 4
-  if (exerciseType === 'tpm-add-sub-col-4') return 5
-  // TPM ex. 17 / 18 : grille vide 6 col.
-  if (exerciseType === 'tpm-dec-add-sub' || exerciseType === 'tpm-mul-mixte') return 6
+  if (
+    exerciseType === 'tpm-add-sub-col-3' ||
+    exerciseType === 'tpm-add-sub-col-4' ||
+    exerciseType === 'tpm-dec-add-sub' ||
+    exerciseType === 'tpm-mul-mixte' ||
+    exerciseType === 'tpm-mul-div-col'
+  ) {
+    return 7
+  }
   return null
 }
 

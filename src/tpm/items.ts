@@ -286,7 +286,7 @@ function normalizeColumnLayouts(items: MathItem[]): MathItem[] {
       return Math.max(1, len - places)
     }),
   )
-  const maxWidth = maxIntWidth + maxPlaces
+  const maxWidth = Math.max(7, maxIntWidth + maxPlaces)
   const maxPartials = Math.max(0, ...columnItems.map((item) => item.digitsPartials?.length ?? 0))
   return items.map((item) => {
     if (item.layout !== 'column' && item.layout !== 'column-empty') return item
@@ -513,11 +513,10 @@ function generateTpmQuatreOpsBatch(rng: Rng): MathItem[] {
   return makers.map((make) => make())
 }
 
-/** Ramène une ligne à exactement `width` cases (pad à gauche, coupe à gauche si trop long). */
+/** Au moins `width` cases ; la ligne s’allonge si le nombre en demande davantage. */
 function fitDigitRow(row: string[] | undefined, width: number): string[] {
   const src = row ?? []
-  if (src.length === width) return src
-  if (src.length > width) return src.slice(src.length - width)
+  if (src.length >= width) return src
   return padDigitRow(src, width)
 }
 
@@ -569,10 +568,10 @@ export function withFixedDivisionWorkRows(item: MathItem, workRows = TPM_DIV_WOR
 
 /**
  * TPM : une addition + une soustraction en colonnes (ordre aléatoire).
- * `digitCount` 3 → grille à 4 colonnes ; 4 → grille à 5 colonnes.
+ * Grille d’au moins 7 colonnes.
  */
 function generateTpmAddSubColBatch(rng: Rng, digitCount: 3 | 4): MathItem[] {
-  const width = digitCount === 3 ? 4 : 5
+  const width = 7
   const min = digitCount === 3 ? 100 : 1000
   const max = digitCount === 3 ? 999 : 9999
   const aAdd = int(rng, min, max)
@@ -673,13 +672,13 @@ function generateTpmDecompose9999Batch(rng: Rng, count: number): MathItem[] {
 }
 
 /**
- * TPM ex. 12 : une multiplication (3 ch × 3–9, grille 5 col)
+ * TPM ex. 12 : une multiplication (3 ch × 3–9, grille 7 col)
  * + une division (4 ch ÷ 3–9, dividende 4 col / quotient 4 col).
  */
 function generateTpmMulDivColBatch(rng: Rng): MathItem[] {
   const mulB = int(rng, 3, 9)
   const mulA = int(rng, 100, 999)
-  const mul = withFixedColumnWidth(columnItem('×', mulA, mulB, mulA * mulB, false), 5)
+  const mul = withFixedColumnWidth(columnItem('×', mulA, mulB, mulA * mulB, false), 7)
   const divB = int(rng, 3, 9)
   const qMin = Math.ceil(1000 / divB)
   const qMax = Math.floor(9999 / divB)
@@ -902,7 +901,7 @@ function generateTpmSuites6Batch(rng: Rng): MathItem[] {
 }
 
 /**
- * TPM ex. 17 : + et − décimaux à poser (grille vide 6 col, calcul au-dessus).
+ * TPM ex. 17 : + et − décimaux à poser (grille vide 7 col, calcul au-dessus).
  * Soustraction : 1er nombre 1 ou 2 déc. ; 2e nombre = 1 décimale de plus.
  */
 function generateTpmDecAddSubBatch(rng: Rng): MathItem[] {
@@ -919,13 +918,13 @@ function generateTpmDecAddSubBatch(rng: Rng): MathItem[] {
     subB = roundToPlaces(Math.max(10 ** -placesB, subA - 10 ** -placesB), placesB)
   }
   const subResult = roundToPlaces(subA - subB, placesB)
-  const add = withFixedColumnWidth(columnItem('+', addP.a, addP.b, addP.result, true), 6)
-  const sub = withFixedColumnWidth(columnItem('−', subA, subB, subResult, true), 6)
+  const add = withFixedColumnWidth(columnItem('+', addP.a, addP.b, addP.result, true), 7)
+  const sub = withFixedColumnWidth(columnItem('−', subA, subB, subResult, true), 7)
   return rng() < 0.5 ? [add, sub] : [sub, add]
 }
 
 /**
- * TPM ex. 18 : multiplications à poser (grille vide 6 col, calcul au-dessus).
+ * TPM ex. 18 : multiplications à poser (grille vide 7 col, calcul au-dessus).
  * Entier 100–999 × 11–99 ; décimal 4 chiffres (2–3 déc.) × [1,1 ; 9,9].
  */
 function generateTpmMulMixteBatch(rng: Rng): MathItem[] {
@@ -946,11 +945,11 @@ function generateTpmMulMixteBatch(rng: Rng): MathItem[] {
   while (bTenths % 10 === 0) bTenths = int(rng, 11, 99)
   const bDec = bTenths / 10
   const product = Math.round(aDec * bDec * 10 ** (placesA + 1)) / 10 ** (placesA + 1)
-  const mulDec = withFixedColumnWidth(columnItem('×', aDec, bDec, product, true), 6)
+  const mulDec = withFixedColumnWidth(columnItem('×', aDec, bDec, product, true), 7)
 
   const aInt = int(rng, 100, 999)
   const bInt = int(rng, 11, 99)
-  const mulInt = withFixedColumnWidth(columnItem('×', aInt, bInt, aInt * bInt, true), 6)
+  const mulInt = withFixedColumnWidth(columnItem('×', aInt, bInt, aInt * bInt, true), 7)
 
   return rng() < 0.5 ? [mulInt, mulDec] : [mulDec, mulInt]
 }
@@ -1556,7 +1555,7 @@ export function tryGenerateTpmItems(
   } else if (typeId === 'tpm-decompose-9999') {
     items = generateTpmDecompose9999Batch(rng, count)
   } else if (typeId === 'tpm-mul-div-col') {
-    // Largeurs imposées (× 5 col · ÷ 5/5) : pas de normalize qui les élargirait.
+    // Largeurs imposées (× 7 col · ÷ inchangé) : pas de normalize qui les élargirait.
     items = generateTpmMulDivColBatch(rng).slice(0, Math.max(1, count))
   } else if (typeId === 'tpm-rect-peri-aire') {
     items = [generateTpmRectPeriAire(rng)]
@@ -1575,7 +1574,7 @@ export function tryGenerateTpmItems(
   } else if (typeId === 'tpm-ranger') {
     items = generateTpmRangerBatch(rng).slice(0, Math.max(1, count))
   } else if (typeId === 'tpm-dec-add-sub') {
-    // Largeur imposée à 6 : ne pas ré-aligner via normalize (sinon > 6 col).
+    // Largeur imposée à 7 : ne pas ré-aligner via normalize.
     items = generateTpmDecAddSubBatch(rng).slice(0, Math.max(1, count))
   } else if (typeId === 'tpm-mul-mixte') {
     items = generateTpmMulMixteBatch(rng).slice(0, Math.max(1, count))

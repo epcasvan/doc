@@ -1,4 +1,5 @@
 import {
+  useEffect,
   useMemo,
   useRef,
   useState,
@@ -16,11 +17,11 @@ import { Header } from '@/components/generator/Header'
 import { LibreSidePanel } from '@/components/generator/LibreSidePanel'
 import { SettingsPanel } from '@/components/generator/SettingsPanel'
 import { ResultPanel } from '@/components/generator/ResultPanel'
+import { contrastOnTheme, readThemeColor } from '@/components/generator/theme'
 import {
-  THEME_STORAGE_KEY,
-  contrastOnTheme,
-  readThemeColor,
-} from '@/components/generator/theme'
+  ALPHA_SOUTIEN_REFERENCE,
+  isAlphaSoutienDomain,
+} from '@/components/math/PrintDocumentChrome'
 import {
   sheetTotalPoints as computeSheetTotalPoints,
   topicsForDomain,
@@ -100,11 +101,6 @@ export function GeneratorPage({
 
   const applyThemeColor = (color: string) => {
     setThemeColor(color)
-    try {
-      window.localStorage.setItem(THEME_STORAGE_KEY, color)
-    } catch {
-      /* ignore */
-    }
   }
 
   const worksheets = useMemo(() => buildWorksheets(pages, seed), [pages, seed])
@@ -115,6 +111,15 @@ export function GeneratorPage({
   const activeSheet = worksheets[safeSheetIndex] ?? worksheets[0]
   const pageIndex = activeSheet?.configIndex ?? Math.min(sheetIndex, Math.max(0, pages.length - 1))
   const activePage = pages[pageIndex] ?? pages[0]!
+  const referenceLocked = isAlphaSoutienDomain(activePage.domain)
+  useEffect(() => {
+    if (!referenceLocked) return
+    setInstitutional((current) =>
+      current.reference === ALPHA_SOUTIEN_REFERENCE
+        ? current
+        : { ...current, reference: ALPHA_SOUTIEN_REFERENCE },
+    )
+  }, [referenceLocked])
   const pageExerciseBlocks = pageBlocks(activePage)
   const safeBlockIndex = Math.min(blockIndex, Math.max(0, pageExerciseBlocks.length - 1))
   const activeBlock = pageExerciseBlocks[safeBlockIndex] ?? blockFromPage(activePage)
@@ -608,6 +613,7 @@ export function GeneratorPage({
               activeExerciseLabel={
                 exerciseTypeById[activeBlock.exerciseType]?.label ?? ''
               }
+              referenceLocked={referenceLocked}
               onClose={() => setFooterPanelOpen(false)}
             />
           ) : null}

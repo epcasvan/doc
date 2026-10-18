@@ -347,7 +347,8 @@ export function normalizeColumnLayouts(items: MathItem[]): MathItem[] {
       return Math.max(1, len - places)
     }),
   )
-  const maxWidth = maxIntWidth + maxPlaces
+  // Additions, soustractions, multiplications : 7 colonnes, davantage si le résultat l’exige.
+  const maxWidth = Math.max(7, maxIntWidth + maxPlaces)
   const maxPartials = Math.max(0, ...columnItems.map((item) => item.digitsPartials?.length ?? 0))
   return items.map((item) => {
     if (item.layout !== 'column' && item.layout !== 'column-empty') return item

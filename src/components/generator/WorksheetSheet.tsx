@@ -1,8 +1,10 @@
 import { type CSSProperties, type ReactNode } from 'react'
 import { ItemView, tokenizeAlgebra } from '@/components/ItemView'
 import {
+  ALPHA_SOUTIEN_REFERENCE,
   DocumentFooter,
   InstitutionalDocumentHeader,
+  isAlphaSoutienDomain,
   SheetBody,
   type InstitutionalHeader,
 } from '@/components/math/PrintDocumentChrome'
@@ -347,7 +349,9 @@ export function WorksheetSheet({
         <DocumentFooter
           pageNumber={pageNumber}
           total={total}
-          reference={institutional.reference}
+          reference={
+            isAlphaSoutienDomain(page.domain) ? ALPHA_SOUTIEN_REFERENCE : institutional.reference
+          }
         />
       )}
     </article>

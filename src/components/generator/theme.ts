@@ -18,10 +18,10 @@ export const THEME_TONES = [
   { id: 'sombre', label: 'Sombre', s: 72, l: 28 },
 ] as const
 
+/** Violet à chaque ouverture. Le choix de la session n’est pas conservé. */
 export function readThemeColor(): string {
   try {
-    const stored = window.localStorage.getItem(THEME_STORAGE_KEY)
-    if (stored && HEX_COLOR.test(stored)) return stored
+    window.localStorage.removeItem(THEME_STORAGE_KEY)
   } catch {
     /* ignore */
   }

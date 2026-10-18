@@ -228,19 +228,11 @@ export function SettingsPanel(p: SettingsPanelProps) {
           addCalliExtraWord={p.addCalliExtraWord}
         />
         <SoutienVocabFields
-          isSoutienMots={p.isSoutienMots}
-          isSoutienCompleter={p.isSoutienCompleter}
           isVocabPool={p.isVocabPool}
           isVocabLearn={p.isVocabLearn}
           isVocabProd={p.isVocabProd}
-          libreMode={p.libreMode}
           activeBlock={p.activeBlock}
           updatePage={p.updatePage}
-          soutienType1Words={p.soutienType1Words}
-          soutienType1WordPool={p.soutienType1WordPool}
-          soutienBankSound={p.soutienBankSound}
-          soutienCompletes={p.soutienCompletes}
-          soutienBankWords={p.soutienBankWords}
           vocabSubgroups={p.vocabSubgroups}
           activeVocabSubgroup={p.activeVocabSubgroup}
           vocabLearnWords={p.vocabLearnWords}
