@@ -15,6 +15,18 @@ import { readAccessPassword } from '@/fiches/password'
 import { stageFicheNavigation, type SavedFiche } from '@/fiches/recipe'
 import type { Domain } from '@/math/types'
 
+type Library = 'fiches' | 'tcf' | 'tcm' | 'alpha' | 'soutien'
+
+const TCM_DOMAINS = new Set<Domain>(['tcm', 'tcm-csc', 'tcm-cfr'])
+
+function ficheLibrary(fiche: SavedFiche): Library {
+  if (fiche.recipe.bookKind === 'alpha' || fiche.recipe.bookKind === 'soutien') return fiche.recipe.bookKind
+  const domains = fiche.domains
+  if (domains.length > 0 && domains.every((domain) => domain === 'tcf')) return 'tcf'
+  if (domains.length > 0 && domains.every((domain) => TCM_DOMAINS.has(domain))) return 'tcm'
+  return 'fiches'
+}
+
 function domainLabel(domain: string): string {
   return ACCESS_DOMAIN_OPTIONS.find((option) => option.id === domain)?.label ?? domain
 }
@@ -23,6 +35,21 @@ function formatUpdated(value: string): string {
   const date = new Date(value)
   if (Number.isNaN(date.getTime())) return ''
   return date.toLocaleDateString('fr-CH', { day: 'numeric', month: 'long', year: 'numeric' })
+}
+
+function emptyCopy(library: Library, fiches: SavedFiche[], query: string): string {
+  const hasAny = fiches.some((fiche) => ficheLibrary(fiche) === library)
+  const searching = query.trim().length > 0 || hasAny
+  if (library === 'alpha' || library === 'soutien') {
+    return searching ? 'Aucun livre ne correspond à la recherche.' : 'Aucun livre enregistré pour le moment.'
+  }
+  if (library === 'tcf') {
+    return searching ? 'Aucune fiche TCF ne correspond à la recherche.' : 'Aucune fiche TCF enregistrée pour le moment.'
+  }
+  if (library === 'tcm') {
+    return searching ? 'Aucune fiche TCM ne correspond à la recherche.' : 'Aucune fiche TCM enregistrée pour le moment.'
+  }
+  return searching ? 'Aucune fiche ne correspond à la recherche.' : 'Aucune fiche enregistrée pour le moment.'
 }
 
 export function SavedFichesPage({
@@ -41,7 +68,7 @@ export function SavedFichesPage({
   const [query, setQuery] = useState('')
   const [domainFilter, setDomainFilter] = useState<Domain | 'tous'>('tous')
   const [sort, setSort] = useState<'domaine' | 'nom' | 'date'>('domaine')
-  const [library, setLibrary] = useState<'fiches' | 'alpha' | 'soutien'>('fiches')
+  const [library, setLibrary] = useState<Library>('fiches')
   const [bookRequest, setBookRequest] = useState<BookRequest | null>(null)
   const [loading, setLoading] = useState(unlocked && configured)
   const [error, setError] = useState<string | null>(null)
@@ -96,13 +123,17 @@ export function SavedFichesPage({
     }
   }, [allowed, configured, unlocked])
 
+  const canTcf = allowed.has('tcf')
+  const canTcm = [...TCM_DOMAINS].some((domain) => allowed.has(domain))
+
   const domainOptions = useMemo(() => {
     const present = new Set<Domain>()
     for (const fiche of fiches) {
+      if (ficheLibrary(fiche) !== library) continue
       for (const domain of fiche.domains) present.add(domain)
     }
     return ACCESS_DOMAIN_OPTIONS.filter((option) => present.has(option.id))
-  }, [fiches])
+  }, [fiches, library])
 
   useEffect(() => {
     if (domainFilter === 'tous') return
@@ -112,11 +143,11 @@ export function SavedFichesPage({
   const visible = useMemo(() => {
     const needle = query.trim().toLowerCase()
     const rows = fiches.filter((fiche) => {
-      const inLibrary =
-        library === 'fiches' ? !fiche.recipe.bookKind : fiche.recipe.bookKind === library
+      const inLibrary = ficheLibrary(fiche) === library
       if (!inLibrary) return false
       const nameOk = !needle || fiche.name.toLowerCase().includes(needle)
-      const domainOk = library !== 'fiches' || domainFilter === 'tous' || fiche.domains.includes(domainFilter)
+      const domainOk =
+        library === 'alpha' || library === 'soutien' || domainFilter === 'tous' || fiche.domains.includes(domainFilter)
       return nameOk && domainOk
     })
     rows.sort((a, b) => {
@@ -128,6 +159,11 @@ export function SavedFichesPage({
     })
     return rows
   }, [domainFilter, fiches, library, query, sort])
+
+  const chooseLibrary = (next: Library) => {
+    setLibrary(next)
+    setDomainFilter('tous')
+  }
 
   const unlock = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
@@ -218,19 +254,29 @@ export function SavedFichesPage({
               <p className="eyebrow">Bibliothèque</p>
               <h1>Fiches enregistrées</h1>
               <p className="access-lead">
-                {library === 'fiches'
-                  ? 'Ouvrez une fiche pour retrouver la même configuration, puis imprimez-la.'
-                  : 'Retrouvez un livre déjà généré et enregistrez à nouveau son dossier.'}
+                {library === 'alpha' || library === 'soutien'
+                  ? 'Retrouvez un livre déjà généré et enregistrez à nouveau son dossier.'
+                  : 'Ouvrez une fiche pour retrouver la même configuration, puis imprimez-la.'}
               </p>
             </header>
-            <div className="mode-toggle is-3" role="tablist" aria-label="Bibliothèque">
-              <button type="button" className={library === 'fiches' ? 'active' : ''} onClick={() => setLibrary('fiches')}>
+            <div className="mode-toggle is-tabs fiches-libraries" role="tablist" aria-label="Bibliothèque">
+              <button type="button" className={library === 'fiches' ? 'active' : ''} onClick={() => chooseLibrary('fiches')}>
                 Fiches
               </button>
-              <button type="button" className={library === 'alpha' ? 'active' : ''} onClick={() => setLibrary('alpha')}>
+              {canTcf ? (
+                <button type="button" className={library === 'tcf' ? 'active' : ''} onClick={() => chooseLibrary('tcf')}>
+                  TCF
+                </button>
+              ) : null}
+              {canTcm ? (
+                <button type="button" className={library === 'tcm' ? 'active' : ''} onClick={() => chooseLibrary('tcm')}>
+                  TCM
+                </button>
+              ) : null}
+              <button type="button" className={library === 'alpha' ? 'active' : ''} onClick={() => chooseLibrary('alpha')}>
                 Livre alphabétisation
               </button>
-              <button type="button" className={library === 'soutien' ? 'active' : ''} onClick={() => setLibrary('soutien')}>
+              <button type="button" className={library === 'soutien' ? 'active' : ''} onClick={() => chooseLibrary('soutien')}>
                 Livre soutien
               </button>
             </div>
@@ -277,13 +323,7 @@ export function SavedFichesPage({
             {loading ? <p className="fiches-empty">Chargement des fiches…</p> : null}
             {!loading && visible.length === 0 ? (
               <p className="fiches-empty">
-                {library === 'fiches'
-                  ? fiches.some((fiche) => !fiche.recipe.bookKind)
-                    ? 'Aucune fiche ne correspond à la recherche.'
-                    : 'Aucune fiche enregistrée pour le moment.'
-                  : fiches.some((fiche) => fiche.recipe.bookKind === library)
-                    ? 'Aucun livre ne correspond à la recherche.'
-                    : 'Aucun livre enregistré pour le moment.'}
+                {emptyCopy(library, fiches, query)}
               </p>
             ) : null}
             <ul className="fiches-list">
@@ -308,11 +348,7 @@ export function SavedFichesPage({
                       </>
                     ) : (
                       <>
-                        {library === 'fiches' ? (
-                          <button className="button small" type="button" onClick={() => openFiche(fiche)}>
-                            Ouvrir
-                          </button>
-                        ) : (
+                        {library === 'alpha' || library === 'soutien' ? (
                           <button
                             className="button small"
                             type="button"
@@ -328,6 +364,10 @@ export function SavedFichesPage({
                             }
                           >
                             Enregistrer le dossier
+                          </button>
+                        ) : (
+                          <button className="button small" type="button" onClick={() => openFiche(fiche)}>
+                            Ouvrir
                           </button>
                         )}
                         <button className="topbar-text-btn" type="button" onClick={() => setPendingDelete(fiche.id)}>
