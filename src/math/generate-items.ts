@@ -25,7 +25,7 @@ import {
 import { numberToFrench } from '@/francais/french-numbers'
 import { generatePerimetreCompose } from './perimetre-compose'
 import { generateLengthConversionBatch, tryGenerateConversion } from './conversions'
-import { tryGenerateTcmItems } from '@/tcm/items'
+import { tryGenerateTpmItems } from '@/tpm/items'
 import { tryGenerateFigure } from './figures-school'
 import { tryGenerateMesure } from './mesures'
 import { makeWordProblem } from './problems'
@@ -67,8 +67,8 @@ export function generateItems(
   shapes?: Figure[],
   worksheetSeed?: number,
 ): MathItem[] {
-  const tcm = tryGenerateTcmItems(typeId, count, rng)
-  if (tcm) return tcm
+  const tpm = tryGenerateTpmItems(typeId, count, rng)
+  if (tpm) return tpm
   const tcmCfr = tryGenerateTcmCfrItems(typeId, count, rng, worksheetSeed)
   if (tcmCfr) return tcmCfr
   if (typeId === 'conversions-longueur' && count >= 2) {
@@ -109,41 +109,41 @@ function generateOne(
     case 'nombres-compter-formes': {
       return generateCountIcons(rng)
     }
-    case 'tcm-comparer':
-    case 'tcm-suite':
-    case 'tcm-operations':
-    case 'tcm-quatre-ops':
-    case 'tcm-add-sub-col-3':
-    case 'tcm-add-sub-col-4':
-    case 'tcm-decompose-99':
-    case 'tcm-grandes-suites':
-    case 'tcm-decompose-9999':
-    case 'tcm-mul-div-col':
-    case 'tcm-rect-peri-aire':
-    case 'tcm-para-peri-aire':
-    case 'tcm-tri-peri-aire':
-    case 'tcm-rhombus-peri-aire':
-    case 'tcm-trap-peri-aire':
-    case 'tcm-circle-peri-aire':
-    case 'tcm-suites-6':
-    case 'tcm-ranger':
-    case 'tcm-dec-add-sub':
-    case 'tcm-mul-mixte':
-    case 'tcm-div-mixte':
-    case 'tcm-frac-color':
-    case 'tcm-frac-read':
-    case 'tcm-ops-decimales':
-    case 'tcm-puissances-mixte':
-    case 'tcm-priorite-ops':
-    case 'tcm-relatifs-ops':
-    case 'tcm-fractions-mixte':
-    case 'tcm-expressions-reduire':
-    case 'tcm-expressions-evaluer':
-    case 'tcm-equations':
-    case 'tcm-conversions-mixte':
-    case 'tcm-proportion-kg': {
+    case 'tpm-comparer':
+    case 'tpm-suite':
+    case 'tpm-operations':
+    case 'tpm-quatre-ops':
+    case 'tpm-add-sub-col-3':
+    case 'tpm-add-sub-col-4':
+    case 'tpm-decompose-99':
+    case 'tpm-grandes-suites':
+    case 'tpm-decompose-9999':
+    case 'tpm-mul-div-col':
+    case 'tpm-rect-peri-aire':
+    case 'tpm-para-peri-aire':
+    case 'tpm-tri-peri-aire':
+    case 'tpm-rhombus-peri-aire':
+    case 'tpm-trap-peri-aire':
+    case 'tpm-circle-peri-aire':
+    case 'tpm-suites-6':
+    case 'tpm-ranger':
+    case 'tpm-dec-add-sub':
+    case 'tpm-mul-mixte':
+    case 'tpm-div-mixte':
+    case 'tpm-frac-color':
+    case 'tpm-frac-read':
+    case 'tpm-ops-decimales':
+    case 'tpm-puissances-mixte':
+    case 'tpm-priorite-ops':
+    case 'tpm-relatifs-ops':
+    case 'tpm-fractions-mixte':
+    case 'tpm-expressions-reduire':
+    case 'tpm-expressions-evaluer':
+    case 'tpm-equations':
+    case 'tpm-conversions-mixte':
+    case 'tpm-proportion-kg': {
       // Lot complet généré dans generateItems ; repli unitaire.
-      const [item] = tryGenerateTcmItems(typeId, 1, rng) ?? []
+      const [item] = tryGenerateTpmItems(typeId, 1, rng) ?? []
       return item ?? { layout: 'inline', prompt: 'Calculez 1 + 1 =', answer: '2' }
     }
     case 'nombres-position': {

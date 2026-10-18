@@ -1,8 +1,8 @@
 import {
   blockPointsTotal,
   formatPointsLabel,
-  isTcmConsignesType,
-} from '@/tcm/test'
+  isTpmConsignesType,
+} from '@/tpm/test'
 import { isTcmCfrConsignesType } from '@/tcm-cfr/test'
 import { isTcfConsignesType } from '@/tcf/catalog'
 import { isOralComprehensionExercise } from '@/components/generator/page-helpers'
@@ -39,10 +39,10 @@ export type QuestionsColumnsFieldsProps = {
   isCalliDomain: boolean
   isSoutienFr: boolean
   isTcf: boolean
-  isTcmInfoPage: boolean
+  isTpmInfoPage: boolean
   isSoutienMots: boolean
   isSoutienMotsMeles: boolean
-  isTcmLike: boolean
+  isTpmLike: boolean
   evalMode: boolean
   activeSheet: WorksheetPage | undefined
   safeBlockIndex: number
@@ -81,10 +81,10 @@ export function QuestionsColumnsFields(props: QuestionsColumnsFieldsProps) {
     isCalliDomain,
     isSoutienFr,
     isTcf,
-    isTcmInfoPage,
+    isTpmInfoPage,
     isSoutienMots,
     isSoutienMotsMeles,
-    isTcmLike,
+    isTpmLike,
     evalMode,
     activeSheet,
     safeBlockIndex,
@@ -100,7 +100,7 @@ export function QuestionsColumnsFields(props: QuestionsColumnsFieldsProps) {
               isCalliDomain ||
               isSoutienMots ||
               isTcf ||
-              isTcmInfoPage ||
+              isTpmInfoPage ||
               isSoutienMotsMeles ? null : (
               <label className="select-shell">
                 <span>
@@ -231,9 +231,9 @@ export function QuestionsColumnsFields(props: QuestionsColumnsFieldsProps) {
                 ) : null}
               </label>
               )}
-              {(isTcmLike &&
+              {(isTpmLike &&
                 !(
-                  isTcmConsignesType(activeBlock.exerciseType) ||
+                  isTpmConsignesType(activeBlock.exerciseType) ||
                   isTcmCfrConsignesType(activeBlock.exerciseType)
                 )) ||
               (isTcf && evalMode && !isTcfConsignesType(activeBlock.exerciseType)) ? (
@@ -465,7 +465,7 @@ export function QuestionsColumnsFields(props: QuestionsColumnsFieldsProps) {
               isSoutienFr ||
               isAlphabetisation ||
               isTcf ||
-              isTcmInfoPage ||
+              isTpmInfoPage ||
               hideColumnsOption ||
               isSoutienCols123 ||
               isSoutienCols345 ||

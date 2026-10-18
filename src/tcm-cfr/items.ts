@@ -5,14 +5,14 @@ import { genFracSingleItems } from '@/math/fraction-shapes'
 import { createRng, int, pick, shuffle, type Rng } from '@/math/rng'
 import type { ArithOp, Figure, MathItem } from '@/math/types'
 import { fmt, sanitizeItemNumberNoise } from '@/math/column-arith'
-import { FRACTION_WORDS } from '@/tcm/fraction-words'
+import { FRACTION_WORDS } from '@/tpm/fraction-words'
 import {
   columnItem,
   divisionColumnItem,
   withFixedColumnWidth,
   withFixedDivisionWidth,
   withFixedDivisionWorkRows,
-} from '@/tcm/items'
+} from '@/tpm/items'
 import { mulAudioParts, numberAudioParts } from './audio-nombres'
 import { generateMetroQuestions, pickMetroMap } from './metro'
 import { genShopProblems, genWorkProblems } from './problems'
@@ -844,7 +844,7 @@ export function tryGenerateTcmCfrItems(
   worksheetSeed = 0,
 ): MathItem[] | null {
   if (!isTcmCfrType(typeId)) return null
-  // Page Informations : générée via `generateTcmInformations` dans `math/generate.ts`.
+  // Page Informations : générée via `generateTpmInformations` dans `math/generate.ts`.
   if (typeId === 'tcm-cfr-consignes') return []
   let items: MathItem[] | null = null
   if (typeId === 'tcm-cfr-ex01') items = genEx01(rng, count)

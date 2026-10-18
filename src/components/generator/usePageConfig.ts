@@ -27,7 +27,7 @@ import {
   pageBlocks,
   setPageBlock,
 } from '@/math/page-model'
-import { isTcmDomain } from '@/tcm/test'
+import { isTpmDomain } from '@/tpm/test'
 import { isTcmCfrDomain } from '@/tcm-cfr/test'
 import type { TcfTypeReponse } from '@/tcf/types'
 import type {
@@ -286,11 +286,11 @@ export function usePageConfig({
     })
   }
 
-  /** TCM : afficher ou masquer toutes les grilles de calcul de toutes les pages. */
-  const setAllTcmDraftGrids = (value: boolean) => {
+  /** TPM : afficher ou masquer toutes les grilles de calcul de toutes les pages. */
+  const setAllTpmDraftGrids = (value: boolean) => {
     setPages((current) =>
       current.map((page) => {
-        if (!isTcmDomain(page.domain) && !isTcmCfrDomain(page.domain)) return page
+        if (!isTpmDomain(page.domain) && !isTcmCfrDomain(page.domain)) return page
         let next = page
         pageBlocks(page).forEach((block, bi) => {
           if (!isDraftPadExercise(block.exerciseType)) return
@@ -344,6 +344,6 @@ export function usePageConfig({
     selectTcfForm,
     toggleTcfPageBreak,
     setAllDraftGrids,
-    setAllTcmDraftGrids,
+    setAllTpmDraftGrids,
   }
 }

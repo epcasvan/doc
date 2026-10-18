@@ -14,9 +14,9 @@ React + Vite + TypeScript. Styles principaux dans `src/App.css` (variables CSS d
 | Zone | Rôle |
 |---|---|
 | `src/math/catalog.ts` | Domaines, thèmes (`topics`), types d'exercices (`exerciseTypes`) |
-| `src/math/generate.ts` | `buildPage(config, seed)` → délègue maths / `@/francais` / `@/tcm` / `@/tcf` / `@/jeux` / `@/grammaire` / squelettes (`acm`, `vocabulaire`…) |
-| `src/math/` | Générateurs maths purs (algèbre, géométrie, repérage, `rng`, `types`) — **sans TCM** |
-| `src/tcm/` | Test de connaissance de maths (dossier dédié, comme `tcf/`) — `README.md` |
+| `src/math/generate.ts` | `buildPage(config, seed)` → délègue maths / `@/francais` / `@/tpm` / `@/tcf` / `@/jeux` / `@/grammaire` / squelettes (`acm`, `vocabulaire`…) |
+| `src/math/` | Générateurs maths purs (algèbre, géométrie, repérage, `rng`, `types`) — **sans TPM** |
+| `src/tpm/` | Test de placement de mathématiques (dossier dédié, comme `tcf/`) — `README.md` |
 | `src/tcf/` | Tests TCF (banques JSON, éditeur, rendu) |
 | `src/francais/` | FLE : Voc/Gram/Com, Phrase, Soutien |
 | `src/alphabetisation/` | Alphabétisation (ex-Lecture) — lettres, syllabes, mots, phrases |
@@ -43,7 +43,7 @@ React + Vite + TypeScript. Styles principaux dans `src/App.css` (variables CSS d
 |---|---|
 | **\> ~800 lignes de logique** (UI, générateur, rendu) | Scinder par responsabilité (`ItemView` → `item-view/*`, `App` → `generator/*`) |
 | **Banques de données** (`problem-banks.ts`, `vocab-images.ts`, `soutien/banks.ts`) | OK volumineux si purs tableaux ; scinder par thème seulement si l’édition devient pénible |
-| **Nouveau domaine** (TCM, TCF, Jeux…) | Dossier `src/<domaine>/` dédié — **ne pas** empiler dans `math/` ou `francais/` |
+| **Nouveau domaine** (TPM, TCF, Jeux…) | Dossier `src/<domaine>/` dédié — **ne pas** empiler dans `math/` ou `francais/` |
 
 ## Principes non négociables
 

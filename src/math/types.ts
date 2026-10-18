@@ -12,7 +12,7 @@ export type Domain =
   | 'société'
   | 'santé'
   | 'acm'
-  | 'tcm'
+  | 'tpm'
   | 'tcm-csc'
   | 'tcm-cfr'
   | 'tcf'
@@ -104,7 +104,7 @@ export type Layout =
   | 'fraction-shape'
   | 'tcf'
 
-/** Icône à compter (SVG N&B plein) — 16 styles TCM ex. 1. */
+/** Icône à compter (SVG N&B plein) — 16 styles TPM ex. 1. */
 export type CountIconKind =
   | 'notes'
   | 'club'
@@ -327,14 +327,14 @@ export type FigureDims = {
   height?: number
   base?: number
   radius?: number
-  /** Diamètre (cercle TCM / placement). */
+  /** Diamètre (cercle TPM / placement). */
   diameter?: number
   top?: number
   bottom?: number
   a?: number
   b?: number
   c?: number
-  /** Diagonales du losange (placement / TCM). */
+  /** Diagonales du losange (placement / TPM). */
   d1?: number
   d2?: number
   /** Périmètre donné (ex. 25–26 CFR) — placeholder `[périmètre]` dans l’énoncé. */
@@ -483,7 +483,7 @@ export type MathItem = {
   /** Cadre forme + traits (TCM CFR ex. 16–17) : figure à gauche, réponses à droite. */
   geoNameCard?: boolean
   /**
-   * Forme fractionnaire (TCM ex. 21/22, port soutien-scolaire).
+   * Forme fractionnaire (TPM ex. 21/22, port soutien-scolaire).
    * `mode: 'color'` = fraction donnée, forme à colorier ;
    * `mode: 'read'` = forme précoloriée, fraction à écrire.
    */
@@ -500,7 +500,7 @@ export type MathItem = {
     value: string
     from: string
     to: string
-    /** Famille (poids, litre, longueur…) — TCM ex. 35 / sélecteur libre. */
+    /** Famille (poids, litre, longueur…) — TPM ex. 35 / sélecteur libre. */
     family?:
       | 'poids'
       | 'litre'
@@ -778,7 +778,7 @@ export type ExerciseBlock = {
   count: number
   columns: number
   /**
-   * N° d’exercice forcé (TCM : ids de recette non contigus, ex. 13 puis 15).
+   * N° d’exercice forcé (TPM : ids de recette non contigus, ex. 13 puis 15).
    * Si absent, numérotation chronologique.
    */
   exerciseNo?: number

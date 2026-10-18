@@ -15,15 +15,15 @@ import { readAccessPassword } from '@/fiches/password'
 import { stageFicheNavigation, type SavedFiche } from '@/fiches/recipe'
 import type { Domain } from '@/math/types'
 
-type Library = 'fiches' | 'tcf' | 'tcm' | 'alpha' | 'soutien'
+type Library = 'fiches' | 'tcf' | 'tpm' | 'alpha' | 'soutien'
 
-const TCM_DOMAINS = new Set<Domain>(['tcm', 'tcm-csc', 'tcm-cfr'])
+const TPM_DOMAINS = new Set<Domain>(['tpm', 'tcm-csc', 'tcm-cfr'])
 
 function ficheLibrary(fiche: SavedFiche): Library {
   if (fiche.recipe.bookKind === 'alpha' || fiche.recipe.bookKind === 'soutien') return fiche.recipe.bookKind
   const domains = fiche.domains
   if (domains.length > 0 && domains.every((domain) => domain === 'tcf')) return 'tcf'
-  if (domains.length > 0 && domains.every((domain) => TCM_DOMAINS.has(domain))) return 'tcm'
+  if (domains.length > 0 && domains.every((domain) => TPM_DOMAINS.has(domain))) return 'tpm'
   return 'fiches'
 }
 
@@ -46,8 +46,8 @@ function emptyCopy(library: Library, fiches: SavedFiche[], query: string): strin
   if (library === 'tcf') {
     return searching ? 'Aucune fiche TCF ne correspond à la recherche.' : 'Aucune fiche TCF enregistrée pour le moment.'
   }
-  if (library === 'tcm') {
-    return searching ? 'Aucune fiche TCM ne correspond à la recherche.' : 'Aucune fiche TCM enregistrée pour le moment.'
+  if (library === 'tpm') {
+    return searching ? 'Aucune fiche TPM ne correspond à la recherche.' : 'Aucune fiche TPM enregistrée pour le moment.'
   }
   return searching ? 'Aucune fiche ne correspond à la recherche.' : 'Aucune fiche enregistrée pour le moment.'
 }
@@ -124,7 +124,7 @@ export function SavedFichesPage({
   }, [allowed, configured, unlocked])
 
   const canTcf = allowed.has('tcf')
-  const canTcm = [...TCM_DOMAINS].some((domain) => allowed.has(domain))
+  const canTpm = [...TPM_DOMAINS].some((domain) => allowed.has(domain))
 
   const domainOptions = useMemo(() => {
     const present = new Set<Domain>()
@@ -268,9 +268,9 @@ export function SavedFichesPage({
                   TCF
                 </button>
               ) : null}
-              {canTcm ? (
-                <button type="button" className={library === 'tcm' ? 'active' : ''} onClick={() => chooseLibrary('tcm')}>
-                  TCM
+              {canTpm ? (
+                <button type="button" className={library === 'tpm' ? 'active' : ''} onClick={() => chooseLibrary('tpm')}>
+                  TPM
                 </button>
               ) : null}
               <button type="button" className={library === 'alpha' ? 'active' : ''} onClick={() => chooseLibrary('alpha')}>

@@ -1,5 +1,5 @@
 /**
- * Familles d’unités pour conversions (TCM ex. 35, conversions longueur…).
+ * Familles d’unités pour conversions (TPM ex. 35, conversions longueur…).
  * Chaque unité a un facteur vers l’unité de base de la famille.
  */
 export type ConvertFamily =

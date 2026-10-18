@@ -19,7 +19,32 @@ interface Env {
 
 type Account = 'admin' | 'full' | 'partial'
 
-const ADMIN_ONLY = new Set(['tcf', 'tcm-csc', 'tcm-cfr', 'tcm'])
+const ADMIN_ONLY = new Set(['tcf', 'tcm-csc', 'tcm-cfr', 'tpm', 'tcm'])
+
+function migrateTpmToken(value: string): string {
+  if (value === 'tpm-csc' || value.startsWith('tpm-csc-') || value.startsWith('tpm-csc_')) {
+    return `tcm${value.slice(3)}`
+  }
+  if (value === 'tpm-cfr' || value.startsWith('tpm-cfr-') || value.startsWith('tpm-cfr_')) {
+    return `tcm${value.slice(3)}`
+  }
+  if (value === 'tcm_csc') return 'tcm-csc'
+  if (value === 'tcm_cfr') return 'tcm-cfr'
+  if (
+    value === 'tcm-csc' ||
+    value.startsWith('tcm-csc-') ||
+    value.startsWith('tcm-csc_') ||
+    value === 'tcm-cfr' ||
+    value.startsWith('tcm-cfr-') ||
+    value.startsWith('tcm-cfr_')
+  ) {
+    return value
+  }
+  if (value === 'tcm' || value.startsWith('tcm-') || value.startsWith('tcm_')) {
+    return `tpm${value.slice(3)}`
+  }
+  return value
+}
 
 const ALL_DOMAINS = [
   'français',
@@ -35,7 +60,7 @@ const ALL_DOMAINS = [
   'société',
   'santé',
   'acm',
-  'tcm',
+  'tpm',
   'tcm-csc',
   'tcm-cfr',
   'tcf',
@@ -161,10 +186,11 @@ type FicheRow = {
 }
 
 function toClient(row: FicheRow) {
+  const domains = (JSON.parse(row.domains) as string[]).map(migrateTpmToken)
   return {
     id: row.id,
     name: row.name,
-    domains: JSON.parse(row.domains) as string[],
+    domains,
     recipe: JSON.parse(row.recipe) as unknown,
     createdAt: row.created_at,
     updatedAt: row.updated_at,

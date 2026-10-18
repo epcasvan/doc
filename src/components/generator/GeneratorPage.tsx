@@ -178,7 +178,7 @@ export function GeneratorPage({
     selectTcfForm,
     toggleTcfPageBreak,
     setAllDraftGrids,
-    setAllTcmDraftGrids,
+    setAllTpmDraftGrids,
   } = usePageConfig({
     pageIndex,
     safeBlockIndex,
@@ -353,7 +353,7 @@ export function GeneratorPage({
   const chromeProps = {
     institutional,
     evalMode,
-    // TCM : total = somme des barèmes de la fiche (plus de plafond fixe à 100).
+    // TPM : total = somme des barèmes de la fiche (plus de plafond fixe à 100).
     documentTotalPoints: sheetTotalPoints,
     pointsPerQuestion,
   } as const
@@ -418,7 +418,7 @@ export function GeneratorPage({
     placeCoordMark,
     placeOrigin,
     removeCoordMark,
-    setAllTcmDraftGrids,
+    setAllTpmDraftGrids,
     setAllDraftGrids,
   }
 
@@ -575,7 +575,7 @@ export function GeneratorPage({
               isCalliDomain={ctx.isCalliDomain}
               isJeuxDomain={ctx.isJeuxDomain}
               isTcf={ctx.isTcf}
-              isTcmLike={ctx.isTcmLike}
+              isTpmLike={ctx.isTpmLike}
               isDroites={ctx.isDroites}
               isConstruire={ctx.isConstruire}
               soutienKind={ctx.soutienKind}

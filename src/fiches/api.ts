@@ -1,5 +1,5 @@
 import { clearAccessPassword, readAccessPassword, rememberAccessPassword } from '@/fiches/password'
-import { parseFicheRecipe, type FicheRecipe, type SavedFiche } from '@/fiches/recipe'
+import { migrateTpmToken, parseFicheRecipe, type FicheRecipe, type SavedFiche } from '@/fiches/recipe'
 import type { Domain } from '@/math/types'
 
 export class FichesApiError extends Error {
@@ -37,7 +37,9 @@ function parseSaved(value: unknown): SavedFiche | null {
   return {
     id: value.id,
     name: value.name,
-    domains: value.domains.filter((domain): domain is Domain => typeof domain === 'string'),
+    domains: value.domains
+      .filter((domain): domain is string => typeof domain === 'string')
+      .map((domain) => migrateTpmToken(domain) as Domain),
     createdAt: value.createdAt,
     updatedAt: value.updatedAt,
     recipe,

@@ -1,5 +1,5 @@
 /**
- * TCM ex. 32 — réduction d’expressions.
+ * TPM ex. 32 — réduction d’expressions.
  * Q1 : somme de monômes, sans · ni puissance.
  * Q2 : exactement deux · (trois facteurs) ; pas de puissance dans l’énoncé
  *      (puissances possibles dans la réponse). 50 modèles.
@@ -10,9 +10,9 @@ import type { MathItem } from '@/math/types'
 const SUPER: Record<number, string> = { 1: '', 2: '²', 3: '³', 4: '⁴' }
 const LETTERS = ['a', 'b', 'c', 'm', 'n', 'p', 't', 'v', 'x', 'y'] as const
 
-export const TCM_REDUIRE_Q2_COUNT = 50
+export const TPM_REDUIRE_Q2_COUNT = 50
 /** Conservé pour compat catalogue / tests éventuels. */
-export const TCM_REDUIRE_PAREN_COUNT = TCM_REDUIRE_Q2_COUNT
+export const TPM_REDUIRE_PAREN_COUNT = TPM_REDUIRE_Q2_COUNT
 
 type Mono = { coefficient: number; powers: Record<string, number> }
 
@@ -372,7 +372,7 @@ function reduireQ2Item(tpl: Q2Template, factors: Factor[], letters: string[]): M
   }
 }
 
-export const TCM_REDUIRE_Q2 = Q2_TEMPLATES
+export const TPM_REDUIRE_Q2 = Q2_TEMPLATES
 
 export function reduireTemplateById(id: string): Q2Template | undefined {
   return Q2_TEMPLATES.find((t) => t.id === id)
@@ -523,13 +523,13 @@ export function fillReduireQ1WithVars(vars: Record<string, number>): MathItem | 
   }
 }
 
-/** Lot TCM ex. 32 : Q1 sans puissance ; Q2 avec exactement deux ·. */
-export function generateTcmReduireBatch(rng: Rng): MathItem[] {
+/** Lot TPM ex. 32 : Q1 sans puissance ; Q2 avec exactement deux ·. */
+export function generateTpmReduireBatch(rng: Rng): MathItem[] {
   const q2 = generateDotProductItem(rng)
   const q1 = generateReduceNoPower(rng)
   return [q1, q2]
 }
 
-export function tcmReduireTemplateCounts(): { q2: number } {
+export function tpmReduireTemplateCounts(): { q2: number } {
   return { q2: Q2_TEMPLATES.length }
 }

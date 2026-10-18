@@ -19,7 +19,7 @@ import { DEFAULT_GAME_FONT_SIZE } from '@/jeux/font-size'
 import { TcfExerciseEditor } from '@/tcf/TcfExerciseEditor'
 import type { TcfNiveau } from '@/tcf/types'
 import { GenericLibreEditor } from '@/components/generator/GenericLibreEditor'
-import { TcmLibreEditor } from '@/components/generator/TcmLibreEditor'
+import { TpmLibreEditor } from '@/components/generator/TpmLibreEditor'
 import { VocabAddWordRow } from '@/components/generator/VocabAddWordRow'
 import type { VocabWordEntry } from '@/francais/vocab-learn'
 
@@ -32,7 +32,7 @@ export type LibreSidePanelProps = {
   isCalliDomain: boolean
   isJeuxDomain: boolean
   isTcf: boolean
-  isTcmLike: boolean
+  isTpmLike: boolean
   isDroites: boolean
   isConstruire: boolean
   soutienKind: string | undefined
@@ -63,7 +63,7 @@ export function LibreSidePanel({
   isCalliDomain,
   isJeuxDomain,
   isTcf,
-  isTcmLike,
+  isTpmLike,
   isDroites,
   isConstruire,
   soutienKind,
@@ -261,13 +261,13 @@ export function LibreSidePanel({
             }
           />
         ) : null}
-        {/* TCM / TCM CFR / CSC : éditeur spécialisé (sélecteurs + recalcul). */}
-        {isTcmLike &&
+        {/* TPM / TCM CFR / CSC : éditeur spécialisé (sélecteurs + recalcul). */}
+        {isTpmLike &&
         !isPhraseDomain &&
         !isCalliDomain &&
         !isJeuxDomain &&
         !isTcf ? (
-          <TcmLibreEditor
+          <TpmLibreEditor
             exerciseType={activeBlock.exerciseType}
             instruction={
               activeBlock.libreInstruction ??
@@ -286,7 +286,7 @@ export function LibreSidePanel({
           />
         ) : null}
         {/* Un seul éditeur générique — évite le doublon (ex. domaines nombres). */}
-        {!isTcmLike &&
+        {!isTpmLike &&
         !isPhraseDomain &&
         !isCalliDomain &&
         !isJeuxDomain &&

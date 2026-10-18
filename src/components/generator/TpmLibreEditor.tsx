@@ -1,5 +1,5 @@
 /**
- * Éditeur libre TCM / TCM CFR / TCM CSC :
+ * Éditeur libre TPM / TCM CFR / TCM CSC :
  * numérotation à gauche (couleur), champs à droite, traits (pas pastilles),
  * sélecteurs selon le type, sans libellé « Énoncé ».
  * Corrigés en lecture seule (recalcul à la validation) ; nombres saisissables
@@ -36,7 +36,7 @@ import { createRng, randomSeed } from '@/math/rng'
 import { generateItems } from '@/math/generate-items'
 import type { CountIconKind } from '@/math/types'
 import { RefreshIcon } from '@/components/generator/WorksheetSheet'
-import { fractionPartsFromItem, fractionTermFr } from '@/tcm/fraction-words'
+import { fractionPartsFromItem, fractionTermFr } from '@/tpm/fraction-words'
 import { mulAudioParts, numberAudioParts } from '@/tcm-cfr/audio-nombres'
 import { clampFracShapeCfr } from '@/math/fraction-shapes'
 import {
@@ -45,37 +45,37 @@ import {
   unitSelectOptions,
   unitsForFamily,
   type ConvertFamily,
-} from '@/tcm/convert-units'
-import { parseFrNumber, parseRelatifNumber, parseRelatifPrompt } from '@/tcm/libre-parse'
+} from '@/tpm/convert-units'
+import { parseFrNumber, parseRelatifNumber, parseRelatifPrompt } from '@/tpm/libre-parse'
 import {
   equationKindForTemplate,
   equationTemplateById,
   fillEquationTemplateWithVars,
-  TCM_EQUATIONS_Q1,
-  TCM_EQUATIONS_Q2,
-} from '@/tcm/equations'
+  TPM_EQUATIONS_Q1,
+  TPM_EQUATIONS_Q2,
+} from '@/tpm/equations'
 import {
   evaluerKindForTemplate,
   evaluerTemplateById,
   fillEvaluerTemplateWithVars,
-  TCM_EVALUER_Q1,
-  TCM_EVALUER_Q2,
-} from '@/tcm/evaluer'
+  TPM_EVALUER_Q1,
+  TPM_EVALUER_Q2,
+} from '@/tpm/evaluer'
 import {
   fillPrioriteTemplate,
   fillPrioriteTemplateWithVars,
   prioriteKeysInPattern,
   prioriteTemplateById,
-  TCM_PRIORITE_FRAC_POW,
-  TCM_PRIORITE_OPS,
-} from '@/tcm/priorite'
+  TPM_PRIORITE_FRAC_POW,
+  TPM_PRIORITE_OPS,
+} from '@/tpm/priorite'
 import {
   fillReduireQ1WithVars,
   fillReduireQ2WithVars,
   reduireTemplateById,
-  TCM_REDUIRE_Q2,
-} from '@/tcm/reduire'
-import { TCM_PROPORTION_KG_TEMPLATES } from '@/tcm/proportion-kg'
+  TPM_REDUIRE_Q2,
+} from '@/tpm/reduire'
+import { TPM_PROPORTION_KG_TEMPLATES } from '@/tpm/proportion-kg'
 import {
   problemOptionsForExercise,
   rebuildProblemItems,
@@ -85,11 +85,11 @@ import {
   applyNamedFigure,
   NAMED_FIGURE_OPTIONS,
   namedFigureKey,
-} from '@/tcm/libre-recalc'
+} from '@/tpm/libre-recalc'
 
-const NUM_1_100_LIST_ID = 'tcm-libre-num-1-100'
+const NUM_1_100_LIST_ID = 'tpm-libre-num-1-100'
 const NUM_1_100_OPTIONS = Array.from({ length: 100 }, (_, i) => String(i + 1))
-const NUM_1_12_LIST_ID = 'tcm-libre-num-1-12'
+const NUM_1_12_LIST_ID = 'tpm-libre-num-1-12'
 const NUM_1_12_OPTIONS = Array.from({ length: 12 }, (_, i) => String(i + 1))
 
 /** Graine locale pour re-tirer un problème choisi en mode libre. */
@@ -361,13 +361,13 @@ function hydrateAlgebraTemplateItem(item: MathItem, exerciseType: string, index:
     !item.problemVarDefs?.length
   if (!needs) return item
 
-  if (exerciseType === 'tcm-expressions-reduire' || item.labels?.includes('reduire')) {
+  if (exerciseType === 'tpm-expressions-reduire' || item.labels?.includes('reduire')) {
     const isQ2 =
       item.labels?.includes('q2') ||
       (item.problemTemplateId != null && item.problemTemplateId !== 'sum') ||
       (item.prompt ?? '').includes('·')
     if (isQ2) {
-      const tpl = reduireTemplateById(item.problemTemplateId ?? '') ?? TCM_REDUIRE_Q2[index % TCM_REDUIRE_Q2.length]!
+      const tpl = reduireTemplateById(item.problemTemplateId ?? '') ?? TPM_REDUIRE_Q2[index % TPM_REDUIRE_Q2.length]!
       return (
         fillReduireQ2WithVars(tpl, {
           k0: tpl.slots[0] === 'paren' ? 1 : 0,
@@ -411,12 +411,12 @@ function hydrateAlgebraTemplateItem(item: MathItem, exerciseType: string, index:
     )
   }
 
-  if (exerciseType === 'tcm-equations' || item.labels?.includes('equations')) {
+  if (exerciseType === 'tpm-equations' || item.labels?.includes('equations')) {
     const kind =
       item.labels?.includes('q2') || (item.problemTemplateId ?? '').startsWith('q2') || index === 1
         ? 'q2'
         : 'q1'
-    const pool = kind === 'q2' ? TCM_EQUATIONS_Q2 : TCM_EQUATIONS_Q1
+    const pool = kind === 'q2' ? TPM_EQUATIONS_Q2 : TPM_EQUATIONS_Q1
     const tpl = equationTemplateById(item.problemTemplateId ?? '') ?? pool[0]!
     const built =
       fillEquationTemplateWithVars(tpl, item.problemVars ?? {}) ??
@@ -442,12 +442,12 @@ function hydrateAlgebraTemplateItem(item: MathItem, exerciseType: string, index:
     }
   }
 
-  if (exerciseType === 'tcm-expressions-evaluer' || item.labels?.includes('evaluer')) {
+  if (exerciseType === 'tpm-expressions-evaluer' || item.labels?.includes('evaluer')) {
     const kind =
       item.labels?.includes('q2') || (item.problemTemplateId ?? '').startsWith('q2') || index === 1
         ? 'q2'
         : 'q1'
-    const pool = kind === 'q2' ? TCM_EVALUER_Q2 : TCM_EVALUER_Q1
+    const pool = kind === 'q2' ? TPM_EVALUER_Q2 : TPM_EVALUER_Q1
     const tpl = evaluerTemplateById(item.problemTemplateId ?? '') ?? pool[index % pool.length]!
     const letters = (item.unknowns?.length === 3
       ? (item.unknowns as [string, string, string])
@@ -487,12 +487,12 @@ function hydrateAlgebraTemplateItem(item: MathItem, exerciseType: string, index:
     }
   }
 
-  if (exerciseType === 'tcm-priorite-ops' || item.labels?.includes('priorite')) {
+  if (exerciseType === 'tpm-priorite-ops' || item.labels?.includes('priorite')) {
     const byId = prioriteTemplateById(item.problemTemplateId ?? '')
     const kind =
       byId?.kind ??
       (item.labels?.includes('frac-pow') || index === 1 ? 'frac-pow' : 'ops')
-    const pool = kind === 'frac-pow' ? TCM_PRIORITE_FRAC_POW : TCM_PRIORITE_OPS
+    const pool = kind === 'frac-pow' ? TPM_PRIORITE_FRAC_POW : TPM_PRIORITE_OPS
     const tpl = byId && pool.some((t) => t.id === byId.id) ? byId : pool[0]!
     const filled =
       fillPrioriteTemplateWithVars(tpl, item.problemVars ?? {}) ??
@@ -519,7 +519,7 @@ function hydrateAlgebraTemplateItem(item: MathItem, exerciseType: string, index:
   return item
 }
 
-export function TcmLibreEditor({
+export function TpmLibreEditor({
   instruction,
   items,
   exerciseType,
@@ -547,10 +547,10 @@ export function TcmLibreEditor({
   // Hydrate ex.28 / 32–34 : modèle + variables visibles dès l’ouverture du mode libre.
   useEffect(() => {
     if (
-      exerciseType !== 'tcm-priorite-ops' &&
-      exerciseType !== 'tcm-expressions-reduire' &&
-      exerciseType !== 'tcm-expressions-evaluer' &&
-      exerciseType !== 'tcm-equations'
+      exerciseType !== 'tpm-priorite-ops' &&
+      exerciseType !== 'tpm-expressions-reduire' &&
+      exerciseType !== 'tpm-expressions-evaluer' &&
+      exerciseType !== 'tpm-equations'
     ) {
       return
     }
@@ -566,7 +566,7 @@ export function TcmLibreEditor({
   const withProps = exerciseType.includes('ex16')
 
   return (
-    <div className="quad-libre-block tcm-libre-editor">
+    <div className="quad-libre-block tpm-libre-editor">
       <b>Contenu de la fiche (mode libre)</b>
       <p className="type-hint muted">
         Modifiez les nombres puis validez (✓) : les corrigés (cadre gris) se recalculent seuls et
@@ -592,9 +592,9 @@ export function TcmLibreEditor({
           onChange={(e) => onChangeInstruction(e.target.value)}
         />
       </label>
-      <ul className="libre-item-list is-tcm" aria-label="Questions">
+      <ul className="libre-item-list is-tpm" aria-label="Questions">
         {items.map((item, index) => (
-          <li key={`tcm-libre-${index}`} className="libre-item-card is-tcm-row">
+          <li key={`tpm-libre-${index}`} className="libre-item-card is-tpm-row">
             <div className="libre-item-num-col">
               <span className="libre-item-num is-accent">{index + 1}.</span>
               <button
@@ -636,7 +636,7 @@ function renderFields(
   onChangeItems: (items: MathItem[]) => void,
   items: MathItem[] = [],
 ) {
-  // TCM ex. 1 — compter les icônes : cible, 2 distracteurs, quantités.
+  // TPM ex. 1 — compter les icônes : cible, 2 distracteurs, quantités.
   if (
     item.layout === 'count-icons' ||
     exerciseType === 'nombres-compter-formes' ||
@@ -756,9 +756,9 @@ function renderFields(
     )
   }
 
-  // TCM ex. 27 — base / exposant / racine / ×÷ 10^p.
+  // TPM ex. 27 — base / exposant / racine / ×÷ 10^p.
   if (
-    exerciseType === 'tcm-puissances-mixte' ||
+    exerciseType === 'tpm-puissances-mixte' ||
     item.labels?.some((l) => l === 'power' || l === 'root' || l === 'sci-mul' || l === 'sci-div')
   ) {
     const kind =
@@ -962,9 +962,9 @@ function renderFields(
     )
   }
 
-  // TCM ex. 31 — pourcentage / règle de trois (variables éditables).
+  // TPM ex. 31 — pourcentage / règle de trois (variables éditables).
   if (
-    exerciseType === 'tcm-proportion-kg' ||
+    exerciseType === 'tpm-proportion-kg' ||
     item.labels?.includes('percent') ||
     item.labels?.includes('kg-francs')
   ) {
@@ -1026,7 +1026,7 @@ function renderFields(
     const priceA = item.b ?? 30
     const kgB = item.result ?? 28
     const tpl =
-      TCM_PROPORTION_KG_TEMPLATES.find((t) => t.id === item.left) ?? TCM_PROPORTION_KG_TEMPLATES[0]!
+      TPM_PROPORTION_KG_TEMPLATES.find((t) => t.id === item.left) ?? TPM_PROPORTION_KG_TEMPLATES[0]!
     const priceB = Math.round(((priceA * kgB) / kgA) * 1000) / 1000
     return (
       <div className="libre-frac-stack">
@@ -1034,12 +1034,12 @@ function renderFields(
           <LineSelect
             value={tpl.id}
             ariaLabel={`Produit ${index + 1}`}
-            options={TCM_PROPORTION_KG_TEMPLATES.map((t) => ({
+            options={TPM_PROPORTION_KG_TEMPLATES.map((t) => ({
               value: t.id,
               label: t.product,
             }))}
             onChange={(id) => {
-              const next = TCM_PROPORTION_KG_TEMPLATES.find((t) => t.id === id) ?? tpl
+              const next = TPM_PROPORTION_KG_TEMPLATES.find((t) => t.id === id) ?? tpl
               const pb = Math.round(((priceA * kgB) / kgA) * 1000) / 1000
               patch(index, {
                 ...item,
@@ -1261,8 +1261,8 @@ function renderFields(
     !exerciseType.includes('ex11') &&
     !item.labels?.includes('relatif') &&
     !item.labels?.some((l) => l.startsWith('frac-')) &&
-    exerciseType !== 'tcm-relatifs-ops' &&
-    exerciseType !== 'tcm-fractions-mixte' &&
+    exerciseType !== 'tpm-relatifs-ops' &&
+    exerciseType !== 'tpm-fractions-mixte' &&
     !/\/\s*\d/.test(item.prompt ?? '')
   ) {
     const op = (item.op ?? '+') as ArithOp
@@ -1509,16 +1509,16 @@ function renderFields(
     item.layout === 'column-empty' ||
     item.layout === 'division-column'
   ) {
-    // CFR 9–10 / TCM 18 : multiplicateur ≤ 99.
+    // CFR 9–10 / TPM 18 : multiplicateur ≤ 99.
     const capsMulB =
       exerciseType.includes('ex09') ||
       exerciseType.includes('ex10') ||
-      exerciseType === 'tcm-mul-mixte'
-    // CFR 7–8 / TCM 17 : soustraction a > b.
+      exerciseType === 'tpm-mul-mixte'
+    // CFR 7–8 / TPM 17 : soustraction a > b.
     const requiresSubAgtB =
       exerciseType.includes('ex07') ||
       exerciseType.includes('ex08') ||
-      exerciseType === 'tcm-dec-add-sub'
+      exerciseType === 'tpm-dec-add-sub'
     const columnError = (op: ArithOp, a: number | undefined, b: number | undefined) => {
       if (
         requiresSubAgtB &&
@@ -2083,7 +2083,7 @@ function renderFields(
   if (
     item.layout === 'inline' &&
     /\/\s*\d/.test(item.prompt ?? '') &&
-    exerciseType !== 'tcm-fractions-mixte' &&
+    exerciseType !== 'tpm-fractions-mixte' &&
     !item.labels?.some((l) => l.startsWith('frac-'))
   ) {
     const m = (item.prompt ?? '').match(/(-?\d+)\s*\/\s*(-?\d+)/)
@@ -2721,16 +2721,16 @@ function renderFields(
     )
   }
 
-  // TCM ex. 32 — réduire : modèle (Q2) / termes (Q1) + variables.
+  // TPM ex. 32 — réduire : modèle (Q2) / termes (Q1) + variables.
   if (
     item.layout === 'algebra' &&
-    (exerciseType === 'tcm-expressions-reduire' || item.labels?.includes('reduire'))
+    (exerciseType === 'tpm-expressions-reduire' || item.labels?.includes('reduire'))
   ) {
     const isQ2 =
       item.labels?.includes('q2') ||
       (item.problemTemplateId != null && item.problemTemplateId !== 'sum')
     if (isQ2) {
-      const tpl = reduireTemplateById(item.problemTemplateId ?? '') ?? TCM_REDUIRE_Q2[0]!
+      const tpl = reduireTemplateById(item.problemTemplateId ?? '') ?? TPM_REDUIRE_Q2[0]!
       const vars = { ...(item.problemVars ?? {}) }
       const keys = item.problemVarDefs?.map((d) => d.key) ?? Object.keys(vars).filter((k) => k.startsWith('c') || k.startsWith('op'))
       const apply = (nextId: string, nextVars: Record<string, number>) => {
@@ -2772,7 +2772,7 @@ function renderFields(
             <LineSelect
               value={tpl.id}
               ariaLabel={`Modèle ${index + 1}`}
-              options={TCM_REDUIRE_Q2.map((t) => ({
+              options={TPM_REDUIRE_Q2.map((t) => ({
                 value: t.id,
                 label: `${t.id} — ${t.slots.join(' · ')}`,
               }))}
@@ -2841,16 +2841,16 @@ function renderFields(
     )
   }
 
-  // TCM ex. 34 — équations : modèle + paramètres.
+  // TPM ex. 34 — équations : modèle + paramètres.
   if (
     item.layout === 'algebra' &&
-    (exerciseType === 'tcm-equations' || item.labels?.includes('equations'))
+    (exerciseType === 'tpm-equations' || item.labels?.includes('equations'))
   ) {
     const kind =
       item.labels?.includes('q2') || (item.problemTemplateId ?? '').startsWith('q2')
         ? 'q2'
         : 'q1'
-    const pool = kind === 'q2' ? TCM_EQUATIONS_Q2 : TCM_EQUATIONS_Q1
+    const pool = kind === 'q2' ? TPM_EQUATIONS_Q2 : TPM_EQUATIONS_Q1
     const tpl = equationTemplateById(item.problemTemplateId ?? '') ?? pool[0]!
     const vars = { ...(item.problemVars ?? {}) }
     const keys = item.problemVarDefs?.map((d) => d.key) ?? Object.keys(vars)
@@ -2918,16 +2918,16 @@ function renderFields(
     )
   }
 
-  // TCM ex. 33 — évaluer : modèle + coefficients / valeurs des lettres.
+  // TPM ex. 33 — évaluer : modèle + coefficients / valeurs des lettres.
   if (
     item.layout === 'algebra' &&
-    (exerciseType === 'tcm-expressions-evaluer' || item.labels?.includes('evaluer'))
+    (exerciseType === 'tpm-expressions-evaluer' || item.labels?.includes('evaluer'))
   ) {
     const kind =
       item.labels?.includes('q2') || (item.problemTemplateId ?? '').startsWith('q2')
         ? 'q2'
         : 'q1'
-    const pool = kind === 'q2' ? TCM_EVALUER_Q2 : TCM_EVALUER_Q1
+    const pool = kind === 'q2' ? TPM_EVALUER_Q2 : TPM_EVALUER_Q1
     const tpl =
       evaluerTemplateById(item.problemTemplateId ?? '') ?? pool[0]!
     const letters = (item.unknowns?.length === 3
@@ -3037,16 +3037,16 @@ function renderFields(
     )
   }
 
-  // TCM ex. 28 — modèle + variables saisissables.
+  // TPM ex. 28 — modèle + variables saisissables.
   if (
     item.layout === 'algebra' &&
-    (exerciseType === 'tcm-priorite-ops' || item.labels?.includes('priorite'))
+    (exerciseType === 'tpm-priorite-ops' || item.labels?.includes('priorite'))
   ) {
     const byId = prioriteTemplateById(item.problemTemplateId ?? '')
     const kind =
       byId?.kind ??
       (item.labels?.includes('frac-pow') || index === 1 ? 'frac-pow' : 'ops')
-    const pool = kind === 'frac-pow' ? TCM_PRIORITE_FRAC_POW : TCM_PRIORITE_OPS
+    const pool = kind === 'frac-pow' ? TPM_PRIORITE_FRAC_POW : TPM_PRIORITE_OPS
     const tpl = byId && pool.some((t) => t.id === byId.id) ? byId : pool[0]!
     const vars = { ...(item.problemVars ?? {}) }
     const keys =
@@ -3112,9 +3112,9 @@ function renderFields(
     )
   }
 
-  // TCM ex. 29 — relatifs : champs valeurs + opération.
+  // TPM ex. 29 — relatifs : champs valeurs + opération.
   if (
-    exerciseType === 'tcm-relatifs-ops' ||
+    exerciseType === 'tpm-relatifs-ops' ||
     item.labels?.includes('relatif')
   ) {
     const parsed = parseRelatifPrompt(item.prompt ?? '')
@@ -3190,9 +3190,9 @@ function renderFields(
     )
   }
 
-  // TCM ex. 30 — fractions (réduction / opérations).
+  // TPM ex. 30 — fractions (réduction / opérations).
   if (
-    exerciseType === 'tcm-fractions-mixte' ||
+    exerciseType === 'tpm-fractions-mixte' ||
     item.labels?.some((l) => l.startsWith('frac-'))
   ) {
     const gcdFr = (x: number, y: number): number => (y ? gcdFr(y, x % y) : Math.abs(x) || 1)

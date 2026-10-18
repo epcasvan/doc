@@ -1,5 +1,5 @@
 /**
- * TCM ex. 34 — résoudre des équations.
+ * TPM ex. 34 — résoudre des équations.
  * Disposition type 32/33 : expression + grille de brouillon, 1 colonne.
  * Q1 : x d’un seul côté (gauche ou droite), sans fraction — 50 modèles.
  * Q2 : x des deux côtés, fractions possibles — 50 modèles.
@@ -8,8 +8,8 @@ import { fmt } from '@/math/column-arith'
 import { int, pick, shuffle, type Rng } from '@/math/rng'
 import type { MathItem } from '@/math/types'
 
-export const TCM_EQ_Q1_COUNT = 50
-export const TCM_EQ_Q2_COUNT = 50
+export const TPM_EQ_Q1_COUNT = 50
+export const TPM_EQ_Q2_COUNT = 50
 
 export type EqBuilt = {
   equation: string
@@ -390,8 +390,8 @@ function expandQ2Pool(): EqTemplate[] {
 const Q1_POOL = expandQ1Pool()
 const Q2_POOL = expandQ2Pool()
 
-export const TCM_EQUATIONS_Q1 = Q1_POOL
-export const TCM_EQUATIONS_Q2 = Q2_POOL
+export const TPM_EQUATIONS_Q1 = Q1_POOL
+export const TPM_EQUATIONS_Q2 = Q2_POOL
 
 export function equationTemplateById(id: string): EqTemplate | undefined {
   return Q1_POOL.find((t) => t.id === id) ?? Q2_POOL.find((t) => t.id === id)
@@ -440,8 +440,8 @@ function fillFromPool(pool: EqTemplate[], rng: Rng, kind: 'q1' | 'q2'): MathItem
   )
 }
 
-/** Lot TCM ex. 34 : Q1 un côté, Q2 deux côtés (+ fractions possibles). */
-export function generateTcmEquationsBatch(rng: Rng): MathItem[] {
+/** Lot TPM ex. 34 : Q1 un côté, Q2 deux côtés (+ fractions possibles). */
+export function generateTpmEquationsBatch(rng: Rng): MathItem[] {
   const q1Preferred = pick(rng, Q1_POOL)
   const q2Preferred = pick(rng, Q2_POOL)
   let q1: MathItem
@@ -459,6 +459,6 @@ export function generateTcmEquationsBatch(rng: Rng): MathItem[] {
   return [q1, q2]
 }
 
-export function tcmEquationsTemplateCounts(): { q1: number; q2: number } {
+export function tpmEquationsTemplateCounts(): { q1: number; q2: number } {
   return { q1: Q1_POOL.length, q2: Q2_POOL.length }
 }

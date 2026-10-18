@@ -1,5 +1,5 @@
 /**
- * TCM ex. 33 — évaluer des expressions (3 inconnues).
+ * TPM ex. 33 — évaluer des expressions (3 inconnues).
  * Q1 : sans puissance ni fraction (≥ 6 termes).
  * Q2 : avec puissances et fractions empilées (dont binômes / binômes),
  *      ≥ 6 termes dont ≥ 2 hors de la fraction, reliés par + − ×.
@@ -9,7 +9,7 @@ import { fmt } from '@/math/column-arith'
 import { int, pick, shuffle, type Rng } from '@/math/rng'
 import type { AlgebraGiven, MathItem } from '@/math/types'
 
-export type TcmEvaluerBatch = {
+export type TpmEvaluerBatch = {
   items: MathItem[]
   givens: AlgebraGiven[]
   instruction: string
@@ -17,8 +17,8 @@ export type TcmEvaluerBatch = {
 
 const LETTERS = ['a', 'b', 'c', 'm', 'n', 'p', 't', 'v', 'x', 'y'] as const
 
-export const TCM_EVALUER_Q1_COUNT = 50
-export const TCM_EVALUER_Q2_COUNT = 50
+export const TPM_EVALUER_Q1_COUNT = 50
+export const TPM_EVALUER_Q2_COUNT = 50
 
 type Template = { id: string; pattern: string }
 
@@ -342,8 +342,8 @@ function makeEvaluerItem(
   }
 }
 
-export const TCM_EVALUER_Q1 = Q1_TEMPLATES
-export const TCM_EVALUER_Q2 = Q2_TEMPLATES
+export const TPM_EVALUER_Q1 = Q1_TEMPLATES
+export const TPM_EVALUER_Q2 = Q2_TEMPLATES
 
 export function evaluerTemplateById(id: string): Template | undefined {
   return Q1_TEMPLATES.find((t) => t.id === id) ?? Q2_TEMPLATES.find((t) => t.id === id)
@@ -353,8 +353,8 @@ export function evaluerKindForTemplate(id: string): 'q1' | 'q2' {
   return id.startsWith('q2') ? 'q2' : 'q1'
 }
 
-/** Lot TCM ex. 33 : 2 questions, 3 inconnues communes, 50 modèles/question. */
-export function generateTcmEvaluerBatch(rng: Rng): TcmEvaluerBatch {
+/** Lot TPM ex. 33 : 2 questions, 3 inconnues communes, 50 modèles/question. */
+export function generateTpmEvaluerBatch(rng: Rng): TpmEvaluerBatch {
   const picked = shuffle(rng, [...LETTERS]).slice(0, 3) as [string, string, string]
   const values: [number, number, number] = [
     nonzeroValue(rng),
@@ -443,6 +443,6 @@ function attachTemplate(
 }
 
 /** Exposé pour tests / catalogue. */
-export function tcmEvaluerTemplateCounts(): { q1: number; q2: number } {
+export function tpmEvaluerTemplateCounts(): { q1: number; q2: number } {
   return { q1: Q1_TEMPLATES.length, q2: Q2_TEMPLATES.length }
 }

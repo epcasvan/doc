@@ -15,7 +15,7 @@ export type PageStructureTabsProps = {
   safeBlockIndex: number
   activeSheet: WorksheetPage | undefined
   firstExerciseNo: number
-  isTcmLike: boolean
+  isTpmLike: boolean
   addPage: () => void
   addExerciseOnPage: () => void
   removePage: (configIdx: number) => void
@@ -33,7 +33,7 @@ export function PageStructureTabs({
   safeBlockIndex,
   activeSheet,
   firstExerciseNo,
-  isTcmLike,
+  isTpmLike,
   addPage,
   addExerciseOnPage,
   removePage,
@@ -72,7 +72,7 @@ export function PageStructureTabs({
                   }
                 >
                   <span className="tab-number">{tabLabel}</span>
-                  {!isTcmLike &&
+                  {!isTpmLike &&
                   pages.length > 1 &&
                   !sheet.isContinuation &&
                   (sheet.configIndex ?? index) === pageIndex &&
@@ -86,7 +86,7 @@ export function PageStructureTabs({
                 )
               })}
             </div>
-            {isTcmLike ? null : (
+            {isTpmLike ? null : (
               <div className="page-structure-actions">
                 <button className="button secondary" type="button" onClick={addPage}>
                   + Page
@@ -110,7 +110,7 @@ export function PageStructureTabs({
                     aria-label={`Exercice ${tabNo}`}
                   >
                     <span className="tab-number">{tabNo}</span>
-                    {!isTcmLike && pageExerciseBlocks.length > 1 && index === safeBlockIndex ? (
+                    {!isTpmLike && pageExerciseBlocks.length > 1 && index === safeBlockIndex ? (
                       <TabRemoveButton
                         label="Retirer cet exercice"
                         onRemove={() => {

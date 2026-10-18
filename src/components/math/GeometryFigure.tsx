@@ -111,7 +111,7 @@ export function GeometryFigure({ type, dims }: { type?: Figure; dims?: FigureDim
   const hasHeight = !bare && d.height != null
   const forArea = !bare && (hasHeight || (type === 'triangle' && d.base != null && d.a == null))
 
-  /** Styles placement TCM : toutes les cotes utiles sur une figure. */
+  /** Styles placement TPM : toutes les cotes utiles sur une figure. */
   const paraPlacement =
     !bare && type === 'parallelogram' && d.base != null && d.side != null && d.height != null
   const triPlacement =
@@ -571,7 +571,7 @@ export function GeometryFigure({ type, dims }: { type?: Figure; dims?: FigureDim
 
         {circleDiameter && (
           <>
-            {/* TCM ex. 37 — diamètre (−30 %) ; trait ~équivalent visuel au trapèze (viewBox plus étroit). */}
+            {/* TPM ex. 37 — diamètre (−30 %) ; trait ~équivalent visuel au trapèze (viewBox plus étroit). */}
             <g strokeWidth="1.7" strokeLinejoin="round">
               <circle cx="130" cy="78" r={41} />
               <line x1={130 - 41} y1={78} x2={130 + 41} y2={78} fill="none" strokeWidth={1.1} />

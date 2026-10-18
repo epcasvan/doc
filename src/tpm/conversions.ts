@@ -1,5 +1,5 @@
 /**
- * TCM ex. 35 — conversions mixtes (4 questions, une par famille) :
+ * TPM ex. 35 — conversions mixtes (4 questions, une par famille) :
  * masse, capacité, temps, et (aire | volume | longueur | densité) au hasard.
  * Valeur entière ou décimale tirée au sort pour chaque question.
  */
@@ -10,7 +10,7 @@ import {
   convertValue,
   formatConvertNumber,
   type ConvertFamily,
-} from '@/tcm/convert-units'
+} from '@/tpm/convert-units'
 
 type UnitPair = {
   from: string
@@ -87,8 +87,8 @@ function generateOne(rng: Rng, family: ConvertFamily): MathItem {
   return makeItem(value, pair.from, pair.to, clean, family)
 }
 
-/** Lot TCM ex. 35 : poids, litre, temps, + une parmi longueur / aire / volume / densité. */
-export function generateTcmConversionsBatch(rng: Rng): MathItem[] {
+/** Lot TPM ex. 35 : poids, litre, temps, + une parmi longueur / aire / volume / densité. */
+export function generateTpmConversionsBatch(rng: Rng): MathItem[] {
   const mass = generateOne(rng, 'poids')
   const capacity = generateOne(rng, 'litre')
   const time = generateOne(rng, 'temps')

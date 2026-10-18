@@ -14,12 +14,12 @@ import {
   tcmCscTopics,
   tcmCfrTopics,
   tcfTopics,
-  tcmTopics,
+  tpmTopics,
   typesForTopic,
   vocabulaireTopics,
 } from '@/math/catalog'
 import { TCF_DOMAIN } from '@/tcf/catalog'
-import { blockPointsTotal, isTcmDomain } from '@/tcm/test'
+import { blockPointsTotal, isTpmDomain } from '@/tpm/test'
 import {
   ALPHA_LETTER_KINDS,
   ALPHA_SPECIAL_KINDS,
@@ -69,8 +69,8 @@ export function topicsForDomain(domain: Domain) {
                             ? soutienFrTopics
                             : domain === 'alphabetisation'
                               ? alphabetisationTopics
-                              : isTcmDomain(domain)
-                                ? tcmTopics
+                              : isTpmDomain(domain)
+                                ? tpmTopics
                                 : domain === TCF_DOMAIN
                                   ? tcfTopics
                                   : algebraTopics

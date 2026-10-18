@@ -18,10 +18,10 @@ import {
 } from '@/tcf/catalog'
 import { tcfConsignesPage, tcfPage } from '@/tcf/generate'
 import {
-  buildTcmTestPages,
-  isTcmDomain,
-  TCM_DOCUMENT_TITLE,
-} from '@/tcm/test'
+  buildTpmTestPages,
+  isTpmDomain,
+  TPM_DOCUMENT_TITLE,
+} from '@/tpm/test'
 import {
   buildTcmCfrTestPages,
   isTcmCfrDomain,
@@ -222,16 +222,16 @@ export function usePageNavigation({
   function changeDomain(next: Domain) {
     if (!accountCanAccessDomain(accessAccount, next)) return
     setBlockIndex(0)
-    if (isTcmDomain(next)) {
+    if (isTpmDomain(next)) {
       setSheetIndex(0)
-      setPages(buildTcmTestPages())
+      setPages(buildTpmTestPages())
       setEvalMode(true)
       setPointsPerQuestion(1)
       setMode('student')
       setInstitutional((current) => ({
         ...current,
         course: 'Mathématiques',
-        documentTitle: TCM_DOCUMENT_TITLE,
+        documentTitle: TPM_DOCUMENT_TITLE,
       }))
       return
     }
@@ -262,11 +262,11 @@ export function usePageNavigation({
       return
     }
     const type = firstTypeFor(next)
-    const leavingTcm =
-      isTcmDomain(activePage.domain) ||
+    const leavingTpm =
+      isTpmDomain(activePage.domain) ||
       isTcmCfrDomain(activePage.domain) ||
       activePage.domain === TCF_DOMAIN
-    if (leavingTcm) {
+    if (leavingTpm) {
       setSheetIndex(0)
       setPages([{ ...defaultPage(next), ...applyType(type), domain: next }])
     } else {

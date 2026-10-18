@@ -1,36 +1,36 @@
 import { isDraftPadExercise } from '@/math/catalog'
 import { isProblemExercise, resizeDraftGrids } from '@/components/generator/page-helpers'
 import { pageBlocks } from '@/math/page-model'
-import { isTcmDomain } from '@/tcm/test'
+import { isTpmDomain } from '@/tpm/test'
 import { isTcmCfrDomain } from '@/tcm-cfr/test'
 import type { ExerciseBlock, PageConfig } from '@/math/types'
 
 export type DraftGridControlsProps = {
-  isTcmLike: boolean
+  isTpmLike: boolean
   pages: PageConfig[]
   pageExerciseBlocks: ExerciseBlock[]
   activeBlock: ExerciseBlock
-  setAllTcmDraftGrids: (value: boolean) => void
+  setAllTpmDraftGrids: (value: boolean) => void
   setAllDraftGrids: (value: boolean) => void
 }
 
 export function DraftGridControls({
-  isTcmLike,
+  isTpmLike,
   pages,
   pageExerciseBlocks,
   activeBlock,
-  setAllTcmDraftGrids,
+  setAllTpmDraftGrids,
   setAllDraftGrids,
 }: DraftGridControlsProps) {
   return (
     <>
-              {isTcmLike ? (
+              {isTpmLike ? (
                 <div className="mode-toggle-block">
                   <b>Grilles de calcul</b>
                   <div className="mode-toggle" role="group" aria-label="Grilles de calcul de toute la fiche">
                     {(() => {
                       const draftBlocks = pages.flatMap((page) =>
-                        (isTcmDomain(page.domain) || isTcmCfrDomain(page.domain))
+                        (isTpmDomain(page.domain) || isTcmCfrDomain(page.domain))
                           ? pageBlocks(page).filter((b) => isDraftPadExercise(b.exerciseType))
                           : [],
                       )
@@ -49,14 +49,14 @@ export function DraftGridControls({
                           <button
                             type="button"
                             className={allOn ? 'active' : ''}
-                            onClick={() => setAllTcmDraftGrids(true)}
+                            onClick={() => setAllTpmDraftGrids(true)}
                           >
                             Afficher
                           </button>
                           <button
                             type="button"
                             className={allOff ? 'active' : ''}
-                            onClick={() => setAllTcmDraftGrids(false)}
+                            onClick={() => setAllTpmDraftGrids(false)}
                           >
                             Masquer
                           </button>

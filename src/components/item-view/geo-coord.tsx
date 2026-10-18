@@ -1,5 +1,5 @@
 import type { CoordShape, MathItem, PreviewMode } from '@/math/types'
-import { resolvePromptPlaceholders } from '@/tcm/libre-recalc'
+import { resolvePromptPlaceholders } from '@/tpm/libre-recalc'
 import { CompositeFigure } from '../math/CompositeFigure'
 import { CoordGrid, CoordShapeButton } from '../math/CoordGrid'
 import { GeometryFigure } from '../math/GeometryFigure'

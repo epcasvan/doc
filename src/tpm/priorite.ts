@@ -1,5 +1,5 @@
 /**
- * TCM ex. 28 — priorité des opérations.
+ * TPM ex. 28 — priorité des opérations.
  * 50 modèles uniques (≥ 5 termes chacun) : 25 avec () [] et + − × ÷ ;
  * 25 avec en plus fractions empilées (n/d) et puissances ¹–³.
  * `/` = fraction empilée uniquement ; division d’expressions = `÷`.
@@ -24,7 +24,7 @@ export function prioriteTermCount(pattern: string): number {
 }
 
 /** 25 modèles sans fraction ni puissance (≥ 5 termes). */
-export const TCM_PRIORITE_OPS: readonly PrioriteTemplate[] = [
+export const TPM_PRIORITE_OPS: readonly PrioriteTemplate[] = [
   { id: 'o01', kind: 'ops', pattern: '[({a} + {b}) × {c}] − {d} + {e}' },
   { id: 'o02', kind: 'ops', pattern: '{a} + [({b} − {c}) × {d}] − {e}' },
   { id: 'o03', kind: 'ops', pattern: '[({a} × {b}) − {c}] + {d} − {e}' },
@@ -53,7 +53,7 @@ export const TCM_PRIORITE_OPS: readonly PrioriteTemplate[] = [
 ]
 
 /** 25 modèles avec fractions n/d (empilées) et puissances (≥ 5 termes). */
-export const TCM_PRIORITE_FRAC_POW: readonly PrioriteTemplate[] = [
+export const TPM_PRIORITE_FRAC_POW: readonly PrioriteTemplate[] = [
   { id: 'f01', kind: 'frac-pow', pattern: '[({a}/{b} + {c}) × {d}^{p}] − {e}' },
   { id: 'f02', kind: 'frac-pow', pattern: '({a} + {b}/{c}) × [{d}^{p} − {e}]' },
   { id: 'f03', kind: 'frac-pow', pattern: '[{a}^{p} × ({b} + {c}/{d})] − {e}' },
@@ -81,9 +81,9 @@ export const TCM_PRIORITE_FRAC_POW: readonly PrioriteTemplate[] = [
   { id: 'f25', kind: 'frac-pow', pattern: '[{a}/{b} × {c}^{p}] − ({d}/{e})' },
 ]
 
-export const TCM_PRIORITE_ALL: readonly PrioriteTemplate[] = [
-  ...TCM_PRIORITE_OPS,
-  ...TCM_PRIORITE_FRAC_POW,
+export const TPM_PRIORITE_ALL: readonly PrioriteTemplate[] = [
+  ...TPM_PRIORITE_OPS,
+  ...TPM_PRIORITE_FRAC_POW,
 ]
 
 function fmtNum(n: number): string {
@@ -331,17 +331,17 @@ function prioriteItem(
 }
 
 export function prioriteTemplateById(id: string): PrioriteTemplate | undefined {
-  return TCM_PRIORITE_ALL.find((t) => t.id === id)
+  return TPM_PRIORITE_ALL.find((t) => t.id === id)
 }
 
-/** Lot TCM ex. 28 : Q1 modèle ops, Q2 modèle frac+puissance. */
-export function generateTcmPrioriteBatch(rng: Rng): MathItem[] {
-  let opsTpl = pick(rng, TCM_PRIORITE_OPS)
-  let fracTpl = pick(rng, TCM_PRIORITE_FRAC_POW)
+/** Lot TPM ex. 28 : Q1 modèle ops, Q2 modèle frac+puissance. */
+export function generateTpmPrioriteBatch(rng: Rng): MathItem[] {
+  let opsTpl = pick(rng, TPM_PRIORITE_OPS)
+  let fracTpl = pick(rng, TPM_PRIORITE_FRAC_POW)
 
   let q1 = fillPrioriteTemplate(opsTpl, rng)
   if (!q1) {
-    opsTpl = TCM_PRIORITE_OPS[0]!
+    opsTpl = TPM_PRIORITE_OPS[0]!
     q1 = fillPrioriteTemplate(opsTpl, rng) ?? {
       prompt: '[(2 + 3) × 4] − 1 + 5 =',
       answer: '24',
@@ -351,7 +351,7 @@ export function generateTcmPrioriteBatch(rng: Rng): MathItem[] {
   }
   let q2 = fillPrioriteTemplate(fracTpl, rng)
   if (!q2) {
-    fracTpl = TCM_PRIORITE_FRAC_POW[0]!
+    fracTpl = TPM_PRIORITE_FRAC_POW[0]!
     q2 = fillPrioriteTemplate(fracTpl, rng) ?? {
       prompt: '[(1/2 + 3) × 2²] − 1 =',
       answer: '13',

@@ -1,5 +1,5 @@
 /**
- * TCM ex. 31 — deux questions :
+ * TPM ex. 31 — deux questions :
  * 1) Pourcentage d’un nombre : « p % de n est égal à … »
  *    p ∈ {10, 20, 25, 40, 60, 75, 80} ; n ∈ [101 ; 999], pas multiple de 10.
  * 2) Règle de trois kg → francs : « n kg de … → p francs » / « m kg → ____ »
@@ -18,7 +18,7 @@ export type ProportionKgTemplate = {
 }
 
 /** 25 modèles distincts (produits / formulations) — Q2. */
-export const TCM_PROPORTION_KG_TEMPLATES: readonly ProportionKgTemplate[] = [
+export const TPM_PROPORTION_KG_TEMPLATES: readonly ProportionKgTemplate[] = [
   { id: 'k01', product: 'farine', ofProduct: 'de farine' },
   { id: 'k02', product: 'riz', ofProduct: 'de riz' },
   { id: 'k03', product: 'pommes', ofProduct: 'de pommes' },
@@ -46,7 +46,7 @@ export const TCM_PROPORTION_KG_TEMPLATES: readonly ProportionKgTemplate[] = [
   { id: 'k25', product: 'semences', ofProduct: 'de semences' },
 ]
 
-export const TCM_PROPORTION_KG_COUNT = TCM_PROPORTION_KG_TEMPLATES.length
+export const TPM_PROPORTION_KG_COUNT = TPM_PROPORTION_KG_TEMPLATES.length
 
 function gcd(a: number, b: number): number {
   let x = Math.abs(a)
@@ -135,7 +135,7 @@ export function pickIndepKgPrice(rng: Rng): {
 }
 
 function generateKgFrancsItem(rng: Rng): MathItem {
-  const tpl = pick(rng, [...TCM_PROPORTION_KG_TEMPLATES])
+  const tpl = pick(rng, [...TPM_PROPORTION_KG_TEMPLATES])
   const { kgA, kgB, priceA, priceB } = pickIndepKgPrice(rng)
   const answer = `${priceB} francs`
   // Règle de trois : (m × p) ÷ n = résultat (sur la ligne de réponse).
@@ -154,8 +154,8 @@ function generateKgFrancsItem(rng: Rng): MathItem {
   }
 }
 
-/** Lot TCM ex. 31 : Q1 pourcentage, Q2 kg → francs. */
-export function generateTcmProportionKgBatch(rng: Rng, count = 2): MathItem[] {
+/** Lot TPM ex. 31 : Q1 pourcentage, Q2 kg → francs. */
+export function generateTpmProportionKgBatch(rng: Rng, count = 2): MathItem[] {
   const items = [generatePercentItem(rng), generateKgFrancsItem(rng)]
   return items.slice(0, Math.max(1, Math.min(count, 2)))
 }

@@ -1,5 +1,5 @@
 /**
- * Générateurs d’items TCM (types `tcm-*`) — dispatch depuis `math/generate.ts`.
+ * Générateurs d’items TPM (types `tpm-*`) — dispatch depuis `math/generate.ts`.
  */
 import { fmt, sanitizeItemNumberNoise } from '@/math/column-arith'
 import {
@@ -15,12 +15,12 @@ import type {
   MathItem,
   MissingPos,
 } from '@/math/types'
-import { generateTcmConversionsBatch } from './conversions'
-import { generateTcmEquationsBatch } from './equations'
-import { generateTcmEvaluerBatch } from './evaluer'
-import { generateTcmPrioriteBatch } from './priorite'
-import { generateTcmProportionKgBatch } from './proportion-kg'
-import { generateTcmReduireBatch } from './reduire'
+import { generateTpmConversionsBatch } from './conversions'
+import { generateTpmEquationsBatch } from './equations'
+import { generateTpmEvaluerBatch } from './evaluer'
+import { generateTpmPrioriteBatch } from './priorite'
+import { generateTpmProportionKgBatch } from './proportion-kg'
+import { generateTpmReduireBatch } from './reduire'
 
 function gcd(a: number, b: number): number {
   let x = Math.abs(a)
@@ -372,7 +372,7 @@ export function divisionColumnItem(dividend: number, divisor: number, empty: boo
     layout: 'division-column',
     op: '÷',
     prompt: empty ? `${fmt(dividend)} ÷ ${fmt(divisor)}` : undefined,
-    // a / b : édition libre (même UX que CFR ex. 9–10 / TCM ex. 19).
+    // a / b : édition libre (même UX que CFR ex. 9–10 / TPM ex. 19).
     a: dividend,
     b: divisor,
     dividend,
@@ -420,7 +420,7 @@ function simplify(n: number, d: number): [number, number] {
   return [n / g, d / g]
 }
 
-function generateTcmComparerBatch(rng: Rng, count: number): MathItem[] {
+function generateTpmComparerBatch(rng: Rng, count: number): MathItem[] {
   const n = Math.max(1, count)
   // Garantir au moins une occurrence de chaque symbole si n ≥ 3 ; sinon tirage libre.
   const relations: Array<'<' | '=' | '>'> =
@@ -448,8 +448,8 @@ function generateTcmComparerBatch(rng: Rng, count: number): MathItem[] {
   })
 }
 
-/** Suites TCM : Q1 = deux blancs consécutifs ; Q2 = motif `n _ n _ n` (index 1 et 3). */
-function generateTcmSuiteBatch(rng: Rng, count: number): MathItem[] {
+/** Suites TPM : Q1 = deux blancs consécutifs ; Q2 = motif `n _ n _ n` (index 1 et 3). */
+function generateTpmSuiteBatch(rng: Rng, count: number): MathItem[] {
   const length = 5
   const n = Math.max(1, count)
   return Array.from({ length: n }, (_, qi) => {
@@ -477,10 +477,10 @@ function generateTcmSuiteBatch(rng: Rng, count: number): MathItem[] {
 
 
 /**
- * Calcul mixte TCM (fusion ex. 7–8–9) : templates + / − / × / ÷.
+ * Calcul mixte TPM (fusion ex. 7–8–9) : templates + / − / × / ÷.
  * Ordre fixe : + trou, − trou, ×(6|7), ×(8|9), ÷(3|4|5), ÷(11|12).
  */
-function generateTcmQuatreOpsBatch(rng: Rng): MathItem[] {
+function generateTpmQuatreOpsBatch(rng: Rng): MathItem[] {
   const mkAdd = (): MathItem => {
     const a = int(rng, 75, 450)
     const b = int(rng, 75, Math.max(75, 500 - a))
@@ -552,10 +552,10 @@ export function withFixedDivisionWidth(
   }
 }
 
-/** TCM ex. 12 / 19 : toujours 8 lignes sous le dividende (9 avec le dividende). */
-const TCM_DIV_WORK_ROWS = 8
+/** TPM ex. 12 / 19 : toujours 8 lignes sous le dividende (9 avec le dividende). */
+const TPM_DIV_WORK_ROWS = 8
 
-export function withFixedDivisionWorkRows(item: MathItem, workRows = TCM_DIV_WORK_ROWS): MathItem {
+export function withFixedDivisionWorkRows(item: MathItem, workRows = TPM_DIV_WORK_ROWS): MathItem {
   const width = Math.max(1, item.digitsA?.length ?? 1)
   const work = item.digitsPartials ?? []
   const n = Math.max(workRows, work.length)
@@ -568,10 +568,10 @@ export function withFixedDivisionWorkRows(item: MathItem, workRows = TCM_DIV_WOR
 }
 
 /**
- * TCM : une addition + une soustraction en colonnes (ordre aléatoire).
+ * TPM : une addition + une soustraction en colonnes (ordre aléatoire).
  * `digitCount` 3 → grille à 4 colonnes ; 4 → grille à 5 colonnes.
  */
-function generateTcmAddSubColBatch(rng: Rng, digitCount: 3 | 4): MathItem[] {
+function generateTpmAddSubColBatch(rng: Rng, digitCount: 3 | 4): MathItem[] {
   const width = digitCount === 3 ? 4 : 5
   const min = digitCount === 3 ? 100 : 1000
   const max = digitCount === 3 ? 999 : 9999
@@ -590,8 +590,8 @@ function generateTcmAddSubColBatch(rng: Rng, digitCount: 3 | 4): MathItem[] {
   return rng() < 0.5 ? [add, sub] : [sub, add]
 }
 
-/** TCM : décomposition 11–99 (dizaines + unités). */
-function generateTcmDecompose99Batch(rng: Rng, count: number): MathItem[] {
+/** TPM : décomposition 11–99 (dizaines + unités). */
+function generateTpmDecompose99Batch(rng: Rng, count: number): MathItem[] {
   const n = Math.max(1, count)
   return Array.from({ length: n }, () => {
     let value = int(rng, 11, 99)
@@ -610,11 +610,11 @@ function generateTcmDecompose99Batch(rng: Rng, count: number): MathItem[] {
 }
 
 /**
- * TCM grandes suites (1 colonne) :
+ * TPM grandes suites (1 colonne) :
  * Q1 max 999, écart 100–200, multiple de 5, pas une centaine ronde ;
  * Q2 max 9999, écart 200–400, multiple de 5, pas une centaine ronde.
  */
-function generateTcmGrandesSuitesBatch(rng: Rng): MathItem[] {
+function generateTpmGrandesSuitesBatch(rng: Rng): MathItem[] {
   const length = 5
   const roundHundreds = new Set([100, 200, 300, 400, 500])
   const pickStep = (lo: number, hi: number): number => {
@@ -642,8 +642,8 @@ function generateTcmGrandesSuitesBatch(rng: Rng): MathItem[] {
   return [makeSeq(pickStep(100, 200), 999), makeSeq(pickStep(200, 400), 9999)]
 }
 
-/** TCM : décomposition 1000–9999 avec un 0 aux centaines ou aux dizaines. */
-function generateTcmDecompose9999Batch(rng: Rng, count: number): MathItem[] {
+/** TPM : décomposition 1000–9999 avec un 0 aux centaines ou aux dizaines. */
+function generateTpmDecompose9999Batch(rng: Rng, count: number): MathItem[] {
   const n = Math.max(1, count)
   return Array.from({ length: n }, () => {
     let value = 0
@@ -673,10 +673,10 @@ function generateTcmDecompose9999Batch(rng: Rng, count: number): MathItem[] {
 }
 
 /**
- * TCM ex. 12 : une multiplication (3 ch × 3–9, grille 5 col)
+ * TPM ex. 12 : une multiplication (3 ch × 3–9, grille 5 col)
  * + une division (4 ch ÷ 3–9, dividende 4 col / quotient 4 col).
  */
-function generateTcmMulDivColBatch(rng: Rng): MathItem[] {
+function generateTpmMulDivColBatch(rng: Rng): MathItem[] {
   const mulB = int(rng, 3, 9)
   const mulA = int(rng, 100, 999)
   const mul = withFixedColumnWidth(columnItem('×', mulA, mulB, mulA * mulB, false), 5)
@@ -691,8 +691,8 @@ function generateTcmMulDivColBatch(rng: Rng): MathItem[] {
   return rng() < 0.5 ? [mul, div] : [div, mul]
 }
 
-/** TCM ex. 13 : rectangle — périmètre et aire, deux cadres. */
-function generateTcmRectPeriAire(rng: Rng): MathItem {
+/** TPM ex. 13 : rectangle — périmètre et aire, deux cadres. */
+function generateTpmRectPeriAire(rng: Rng): MathItem {
   const length = int(rng, 3, 18)
   let width = int(rng, 2, 14)
   if (width === length) width = Math.max(2, width - 1)
@@ -715,13 +715,13 @@ function generateTcmRectPeriAire(rng: Rng): MathItem {
 }
 
 /** Décimal à 1 chiffre après la virgule (placement soutien). */
-function tcmOneDecimal(rng: Rng, loTenths: number, hiTenths: number): number {
+function tpmOneDecimal(rng: Rng, loTenths: number, hiTenths: number): number {
   let t = int(rng, loTenths, hiTenths)
   while (t % 10 === 0) t = int(rng, loTenths, hiTenths)
   return t / 10
 }
 
-function tcmDualGeo(
+function tpmDualGeo(
   figure: MathItem['figure'],
   dims: NonNullable<MathItem['dims']>,
   periExpr: string,
@@ -744,14 +744,14 @@ function tcmDualGeo(
   }
 }
 
-/** TCM : parallélogramme — base, côté et hauteur (SVG placement). */
-function generateTcmParaPeriAire(rng: Rng): MathItem {
+/** TPM : parallélogramme — base, côté et hauteur (SVG placement). */
+function generateTpmParaPeriAire(rng: Rng): MathItem {
   const base = int(rng, 8, 16)
-  const side = tcmOneDecimal(rng, 40, 100)
+  const side = tpmOneDecimal(rng, 40, 100)
   const height = int(rng, 3, Math.max(3, Math.floor(side - 1)))
   const peri = Math.round(2 * (base + side) * 10) / 10
   const area = base * height
-  return tcmDualGeo(
+  return tpmDualGeo(
     'parallelogram',
     { base, side, height },
     `2 × (${fmt(base)} + ${fmt(side)})`,
@@ -761,18 +761,18 @@ function generateTcmParaPeriAire(rng: Rng): MathItem {
   )
 }
 
-/** TCM : triangle quelconque — a, b, c et h (SVG placement). */
-function generateTcmTriPeriAire(rng: Rng): MathItem {
+/** TPM : triangle quelconque — a, b, c et h (SVG placement). */
+function generateTpmTriPeriAire(rng: Rng): MathItem {
   const a = int(rng, 8, 14)
   let b = int(rng, 6, 12)
   while (b === a) b = int(rng, 6, 12)
-  let c = tcmOneDecimal(rng, 50, 110)
-  while (c === a || c === b) c = tcmOneDecimal(rng, 50, 110)
+  let c = tpmOneDecimal(rng, 50, 110)
+  while (c === a || c === b) c = tpmOneDecimal(rng, 50, 110)
   let h = int(rng, 4, 8)
   if ((a * h) % 2 !== 0) h += 1
   const peri = Math.round((a + b + c) * 10) / 10
   const area = (a * h) / 2
-  return tcmDualGeo(
+  return tpmDualGeo(
     'triangle',
     { a, b, c, height: h, triangleKind: 'scalene' },
     `${fmt(a)} + ${fmt(b)} + ${fmt(c)}`,
@@ -782,8 +782,8 @@ function generateTcmTriPeriAire(rng: Rng): MathItem {
   )
 }
 
-/** TCM : losange — côté c et diagonales d₁, d₂ (SVG placement). */
-function generateTcmRhombusPeriAire(rng: Rng): MathItem {
+/** TPM : losange — côté c et diagonales d₁, d₂ (SVG placement). */
+function generateTpmRhombusPeriAire(rng: Rng): MathItem {
   const triples = [
     [3, 4, 5],
     [5, 12, 13],
@@ -795,7 +795,7 @@ function generateTcmRhombusPeriAire(rng: Rng): MathItem {
   const side = pc * k + int(rng, 1, 9) / 10
   const peri = Math.round(4 * side * 10) / 10
   const area = (d1 * d2) / 2
-  return tcmDualGeo(
+  return tpmDualGeo(
     'rhombus',
     { side, d1, d2 },
     `4 × ${fmt(side)}`,
@@ -805,15 +805,15 @@ function generateTcmRhombusPeriAire(rng: Rng): MathItem {
   )
 }
 
-/** TCM : trapèze isocèle — a, b, c et h (SVG placement). */
-function generateTcmTrapPeriAire(rng: Rng): MathItem {
+/** TPM : trapèze isocèle — a, b, c et h (SVG placement). */
+function generateTpmTrapPeriAire(rng: Rng): MathItem {
   const top = int(rng, 4, 10)
   const bottom = top + int(rng, 2, 6)
   const height = int(rng, 3, 8)
-  const leg = tcmOneDecimal(rng, 30, 80)
+  const leg = tpmOneDecimal(rng, 30, 80)
   const peri = Math.round((top + bottom + 2 * leg) * 10) / 10
   const area = ((top + bottom) * height) / 2
-  return tcmDualGeo(
+  return tpmDualGeo(
     'trapezoid',
     { top, bottom, c: leg, height, trapezoidKind: 'isosceles' },
     `${fmt(top)} + ${fmt(bottom)} + 2 × ${fmt(leg)}`,
@@ -823,8 +823,8 @@ function generateTcmTrapPeriAire(rng: Rng): MathItem {
   )
 }
 
-/** TCM : cercle — diamètre, π = 3,14 (SVG placement). */
-function generateTcmCirclePeriAire(rng: Rng): MathItem {
+/** TPM : cercle — diamètre, π = 3,14 (SVG placement). */
+function generateTpmCirclePeriAire(rng: Rng): MathItem {
   const diameter = pick(rng, [3, 5, 7, 9, 11, 13, 15, 17])
   const r = diameter / 2
   const pi = 3.14
@@ -846,11 +846,11 @@ function generateTcmCirclePeriAire(rng: Rng): MathItem {
 }
 
 /**
- * TCM ex. 15 : suites 6 termes, 4 trous, 2 visibles consécutifs.
+ * TPM ex. 15 : suites 6 termes, 4 trous, 2 visibles consécutifs.
  * Q1 : 10 000–99 999, écart 500–900 ×5 hors centaines.
  * Q2 : 0–9,99, écart 0,05–0,95 ×0,05 hors dixièmes ronds.
  */
-function generateTcmSuites6Batch(rng: Rng): MathItem[] {
+function generateTpmSuites6Batch(rng: Rng): MathItem[] {
   const length = 6
   const makeBlanks = (): number[] => {
     const pairStart = int(rng, 0, length - 2)
@@ -902,10 +902,10 @@ function generateTcmSuites6Batch(rng: Rng): MathItem[] {
 }
 
 /**
- * TCM ex. 17 : + et − décimaux à poser (grille vide 6 col, calcul au-dessus).
+ * TPM ex. 17 : + et − décimaux à poser (grille vide 6 col, calcul au-dessus).
  * Soustraction : 1er nombre 1 ou 2 déc. ; 2e nombre = 1 décimale de plus.
  */
-function generateTcmDecAddSubBatch(rng: Rng): MathItem[] {
+function generateTpmDecAddSubBatch(rng: Rng): MathItem[] {
   const addP = decimalAddPair(rng, 40)
   const placesA = pick(rng, [1, 2] as const)
   const placesB = placesA + 1
@@ -925,10 +925,10 @@ function generateTcmDecAddSubBatch(rng: Rng): MathItem[] {
 }
 
 /**
- * TCM ex. 18 : multiplications à poser (grille vide 6 col, calcul au-dessus).
+ * TPM ex. 18 : multiplications à poser (grille vide 6 col, calcul au-dessus).
  * Entier 100–999 × 11–99 ; décimal 4 chiffres (2–3 déc.) × [1,1 ; 9,9].
  */
-function generateTcmMulMixteBatch(rng: Rng): MathItem[] {
+function generateTpmMulMixteBatch(rng: Rng): MathItem[] {
   // D’abord le décimal (plusieurs tirages) pour éviter le biais LCG du 1er int(100,999).
   const placesA = pick(rng, [2, 3] as const)
   // 4 chiffres au total : 2 déc. → 2 entiers ; 3 déc. → 1 entier.
@@ -956,12 +956,12 @@ function generateTcmMulMixteBatch(rng: Rng): MathItem[] {
 }
 
 /**
- * TCM ex. 19 : deux divisions à poser (grilles vides, calcul au-dessus ;
+ * TPM ex. 19 : deux divisions à poser (grilles vides, calcul au-dessus ;
  * 4 col dividende / 4 col quotient).
  * Gauche : entier 1 000–9 999 ÷ 12–19 (exact).
  * Droite : décimal 4 chiffres (2–3 décimales, avec un 0) ÷ 3–9 (exact).
  */
-function generateTcmDivMixteBatch(rng: Rng): MathItem[] {
+function generateTpmDivMixteBatch(rng: Rng): MathItem[] {
   const dInt = int(rng, 12, 19)
   const qMin = Math.ceil(1_000 / dInt)
   const qMax = Math.floor(9_999 / dInt)
@@ -998,16 +998,16 @@ function generateTcmDivMixteBatch(rng: Rng): MathItem[] {
   return [left, right]
 }
 
-const TCM_POW_SUP = ['', '¹', '²', '³', '⁴'] as const
+const TPM_POW_SUP = ['', '¹', '²', '³', '⁴'] as const
 
 /**
- * TCM ex. 27 — quatre questions :
+ * TPM ex. 27 — quatre questions :
  * 1) base 1–9 à la puissance 2, 3 ou 4 (puissance 4 → base 1–5) ;
  * 2) √n avec n ≤ 144 et racine entière ;
  * 3) décimal ∈ ]1 ; 10[ × 10^p (p = 1…4) ;
  * 4) entier 100–9999 ÷ 10^p (p = 1…4).
  */
-function generateTcmPuissancesMixteBatch(rng: Rng): MathItem[] {
+function generateTpmPuissancesMixteBatch(rng: Rng): MathItem[] {
   const exp = pick(rng, [2, 3, 4] as const)
   const base = exp === 4 ? int(rng, 1, 5) : int(rng, 1, 9)
   const powerItem: MathItem = {
@@ -1015,7 +1015,7 @@ function generateTcmPuissancesMixteBatch(rng: Rng): MathItem[] {
     // a = base, b = exposant (édition libre).
     a: base,
     b: exp,
-    prompt: `${base}${TCM_POW_SUP[exp]} =`,
+    prompt: `${base}${TPM_POW_SUP[exp]} =`,
     answer: String(base ** exp),
     labels: ['power'],
   }
@@ -1039,7 +1039,7 @@ function generateTcmPuissancesMixteBatch(rng: Rng): MathItem[] {
     layout: 'inline',
     a: dec,
     b: pMul,
-    prompt: `${fmt(dec)} × 10${TCM_POW_SUP[pMul]} =`,
+    prompt: `${fmt(dec)} × 10${TPM_POW_SUP[pMul]} =`,
     answer: fmt(tenths * 10 ** (pMul - 1)),
     labels: ['sci-mul'],
   }
@@ -1050,7 +1050,7 @@ function generateTcmPuissancesMixteBatch(rng: Rng): MathItem[] {
     layout: 'inline',
     a: whole,
     b: pDiv,
-    prompt: `${whole} ÷ 10${TCM_POW_SUP[pDiv]} =`,
+    prompt: `${whole} ÷ 10${TPM_POW_SUP[pDiv]} =`,
     answer: fmt(Number((whole / 10 ** pDiv).toFixed(pDiv))),
     labels: ['sci-div'],
   }
@@ -1074,21 +1074,21 @@ function fmtRelatifAnswer(n: number): string {
 }
 
 /** Paire de signes opposés, ordre aléatoire (+ puis −, ou − puis +). */
-function tcmOppositeSignedPair(rng: Rng, lo: number, hi: number): [number, number] {
+function tpmOppositeSignedPair(rng: Rng, lo: number, hi: number): [number, number] {
   const pos = int(rng, lo, hi)
   const neg = -int(rng, lo, hi)
   return rng() < 0.5 ? [pos, neg] : [neg, pos]
 }
 
 /**
- * TCM ex. 29 — quatre opérations sur relatifs :
+ * TPM ex. 29 — quatre opérations sur relatifs :
  * 1) + et 2) − : magnitudes 10–99, signes opposés (+/− ou −/+) ;
  * 3) × et 4) ÷ : 1er facteur 10–25 (2 chiffres), 2e 1–9 (1 chiffre), signes libres ;
  * positifs toujours écrits (+n) ; quotient ÷ éventuellement décimal.
  */
-function generateTcmRelatifsOpsBatch(rng: Rng): MathItem[] {
-  const [addA, addB] = tcmOppositeSignedPair(rng, 10, 99)
-  const [subA, subB] = tcmOppositeSignedPair(rng, 10, 99)
+function generateTpmRelatifsOpsBatch(rng: Rng): MathItem[] {
+  const [addA, addB] = tpmOppositeSignedPair(rng, 10, 99)
+  const [subA, subB] = tpmOppositeSignedPair(rng, 10, 99)
 
   const signed = (mag: number) => (rng() < 0.5 ? mag : -mag)
   // × : aucun facteur ±1 (magnitudes ≥ 2).
@@ -1160,7 +1160,7 @@ function fracAnswer(n: number, d: number): string {
  * Fraction réductible (k ≥ 2) issue de la table ≤ 12×12 :
  * numérateur et dénominateur non simplifiés ≤ 12 ; forme simplifiée avec termes > 1.
  */
-function tcmReducibleFraction(rng: Rng): { n: number; d: number; sn: number; sd: number } {
+function tpmReducibleFraction(rng: Rng): { n: number; d: number; sn: number; sd: number } {
   for (let attempt = 0; attempt < 60; attempt++) {
     const a = int(rng, 2, 5)
     const b = int(rng, a + 1, 11)
@@ -1177,7 +1177,7 @@ function tcmReducibleFraction(rng: Rng): { n: number; d: number; sn: number; sd:
 }
 
 /** Deux fractions pour ×/÷ : au moins un numérateur relatif (négatif) ; parfois les deux. */
-function tcmSignedFracPair(rng: Rng): [{ n: number; d: number }, { n: number; d: number }] {
+function tpmSignedFracPair(rng: Rng): [{ n: number; d: number }, { n: number; d: number }] {
   const one = (): { n: number; d: number } => {
     for (let attempt = 0; attempt < 20; attempt++) {
       const n = int(rng, 1, 6)
@@ -1201,14 +1201,14 @@ function tcmSignedFracPair(rng: Rng): [{ n: number; d: number }, { n: number; d:
 }
 
 /**
- * TCM fractions mixte — six questions :
+ * TPM fractions mixte — six questions :
  * 1) réduire avec num ou den déjà affiché (□) ;
  * 2) réduire sans trou partiel ;
  * 3) +  4) −  (fractions positives) ;
  * 5) ×  6) ÷  avec ≥ 1 nombre relatif (numérateur signé ; parfois deux).
  */
-function generateTcmFractionsMixteBatch(rng: Rng): MathItem[] {
-  const r1 = tcmReducibleFraction(rng)
+function generateTpmFractionsMixteBatch(rng: Rng): MathItem[] {
+  const r1 = tpmReducibleFraction(rng)
   const missNum = rng() < 0.5
   const reducePartial: MathItem = {
     layout: 'inline',
@@ -1225,7 +1225,7 @@ function generateTcmFractionsMixteBatch(rng: Rng): MathItem[] {
     right: String(r1.sd),
   }
 
-  const r2 = tcmReducibleFraction(rng)
+  const r2 = tpmReducibleFraction(rng)
   const reduceFull: MathItem = {
     layout: 'inline',
     a: r2.n,
@@ -1276,7 +1276,7 @@ function generateTcmFractionsMixteBatch(rng: Rng): MathItem[] {
     right: String(sd2),
   }
 
-  const [m1, m2] = tcmSignedFracPair(rng)
+  const [m1, m2] = tpmSignedFracPair(rng)
   const mulItem: MathItem = {
     layout: 'inline',
     op: '×',
@@ -1289,7 +1289,7 @@ function generateTcmFractionsMixteBatch(rng: Rng): MathItem[] {
     right: String(m2.d),
   }
 
-  const [v1, v2] = tcmSignedFracPair(rng)
+  const [v1, v2] = tpmSignedFracPair(rng)
   const divItem: MathItem = {
     layout: 'inline',
     op: '÷',
@@ -1305,11 +1305,11 @@ function generateTcmFractionsMixteBatch(rng: Rng): MathItem[] {
   return [reducePartial, reduceFull, addItem, subItem, mulItem, divItem]
 }
 
-/** Facteurs décimaux TCM ex. 26 (× / ÷ → résultat entier côté « facteur »). */
-const TCM_DEC_FACTORS = [0.01, 0.1, 0.2, 0.25, 0.5] as const
+/** Facteurs décimaux TPM ex. 26 (× / ÷ → résultat entier côté « facteur »). */
+const TPM_DEC_FACTORS = [0.01, 0.1, 0.2, 0.25, 0.5] as const
 
 /** Décimal avec partie fractionnaire visible (1–2 décimales), dans ]0 ; maxInt]. */
-function tcmDecOperand(rng: Rng, maxInt = 40): number {
+function tpmDecOperand(rng: Rng, maxInt = 40): number {
   const places = pick(rng, [1, 2] as const)
   const scale = 10 ** places
   let scaled = int(rng, 1, maxInt * scale)
@@ -1318,30 +1318,30 @@ function tcmDecOperand(rng: Rng, maxInt = 40): number {
 }
 
 /**
- * TCM ex. 26 : six opérations en ligne —
+ * TPM ex. 26 : six opérations en ligne —
  * + et − (deux décimaux) ;
  * × (100–999 × facteur 0,01…0,5, résultat entier) et × (1 déc. 10–99 × 3–9) ;
  * ÷ (100–999 ÷ facteur, résultat entier) et ÷ (1 déc. 10–99 ÷ 3–9, exact).
  */
-function generateTcmOpsDecimalesBatch(rng: Rng): MathItem[] {
-  const addA = tcmDecOperand(rng, 40)
-  const addB = tcmDecOperand(rng, 40)
+function generateTpmOpsDecimalesBatch(rng: Rng): MathItem[] {
+  const addA = tpmDecOperand(rng, 40)
+  const addB = tpmDecOperand(rng, 40)
   const addPlaces = Math.max(decimalPlacesOf(addA), decimalPlacesOf(addB))
   const addResult = Math.round((addA + addB) * 10 ** addPlaces) / 10 ** addPlaces
 
-  let subA = tcmDecOperand(rng, 40)
-  let subB = tcmDecOperand(rng, 40)
+  let subA = tpmDecOperand(rng, 40)
+  let subB = tpmDecOperand(rng, 40)
   if (subB > subA) [subA, subB] = [subB, subA]
-  if (subB >= subA) subB = tcmDecOperand(rng, Math.max(1, Math.floor(subA)))
+  if (subB >= subA) subB = tpmDecOperand(rng, Math.max(1, Math.floor(subA)))
   if (subB >= subA) {
-    subA = Math.round((subB + tcmDecOperand(rng, 10)) * 100) / 100
+    subA = Math.round((subB + tpmDecOperand(rng, 10)) * 100) / 100
   }
   const subPlaces = Math.max(decimalPlacesOf(subA), decimalPlacesOf(subB))
   const subResult = Math.round((subA - subB) * 10 ** subPlaces) / 10 ** subPlaces
 
   // × et ÷ « facteur » : deux facteurs distincts (0,01…0,5).
-  const factorMul = pick(rng, [...TCM_DEC_FACTORS])
-  const factorDivPool = TCM_DEC_FACTORS.filter((f) => f !== factorMul)
+  const factorMul = pick(rng, [...TPM_DEC_FACTORS])
+  const factorDivPool = TPM_DEC_FACTORS.filter((f) => f !== factorMul)
   const factorDiv = pick(rng, [...factorDivPool])
 
   const mulFactor = (() => {
@@ -1394,11 +1394,11 @@ function generateTcmOpsDecimalesBatch(rng: Rng): MathItem[] {
 }
 
 /**
- * TCM ex. 16 : trier.
+ * TPM ex. 16 : trier.
  * Q1 : 5 nombres 10 000–99 999 (5 chiffres ; paires début / fin + 1 centre).
  * Q2 : 5 décimaux motifs x,0x · x,x · x,xx · x,xx · x,x0.
  */
-function generateTcmRangerBatch(rng: Rng): MathItem[] {
+function generateTpmRangerBatch(rng: Rng): MathItem[] {
   const orderItem = (
     ascending: boolean,
     sequence: string[],
@@ -1486,7 +1486,7 @@ function generateTcmRangerBatch(rng: Rng): MathItem[] {
 }
 
 /** 3 additions + 3 soustractions (templates résultat / trou), opérandes 10–100. */
-function generateTcmOperationsBatch(rng: Rng): MathItem[] {
+function generateTpmOperationsBatch(rng: Rng): MathItem[] {
   type Kind =
     | { op: '+'; missing: 'result' }
     | { op: '+'; missing: 'a' }
@@ -1517,9 +1517,9 @@ function generateTcmOperationsBatch(rng: Rng): MathItem[] {
 }
 
 /**
- * TCM ex. 20 / 21 — formes simples, mêmes limites que TCM CFR ex. 12 / 13.
+ * TPM ex. 20 / 21 — formes simples, mêmes limites que TCM CFR ex. 12 / 13.
  */
-function generateTcmFracShapeBatch(
+function generateTpmFracShapeBatch(
   rng: Rng,
   count: number,
   mode: 'color' | 'read',
@@ -1531,80 +1531,80 @@ function generateTcmFracShapeBatch(
   }))
 }
 
-export function tryGenerateTcmItems(
+export function tryGenerateTpmItems(
   typeId: string,
   count: number,
   rng: Rng,
 ): MathItem[] | null {
   let items: MathItem[] | null = null
-  if (typeId === 'tcm-comparer') {
-    items = generateTcmComparerBatch(rng, count)
-  } else if (typeId === 'tcm-suite') {
-    items = generateTcmSuiteBatch(rng, count)
-  } else if (typeId === 'tcm-operations') {
-    items = generateTcmOperationsBatch(rng).slice(0, Math.max(1, count))
-  } else if (typeId === 'tcm-quatre-ops') {
-    items = generateTcmQuatreOpsBatch(rng).slice(0, Math.max(1, count))
-  } else if (typeId === 'tcm-add-sub-col-3') {
-    items = normalizeColumnLayouts(generateTcmAddSubColBatch(rng, 3).slice(0, Math.max(1, count)))
-  } else if (typeId === 'tcm-add-sub-col-4') {
-    items = normalizeColumnLayouts(generateTcmAddSubColBatch(rng, 4).slice(0, Math.max(1, count)))
-  } else if (typeId === 'tcm-decompose-99') {
-    items = generateTcmDecompose99Batch(rng, count)
-  } else if (typeId === 'tcm-grandes-suites') {
-    items = generateTcmGrandesSuitesBatch(rng).slice(0, Math.max(1, count))
-  } else if (typeId === 'tcm-decompose-9999') {
-    items = generateTcmDecompose9999Batch(rng, count)
-  } else if (typeId === 'tcm-mul-div-col') {
+  if (typeId === 'tpm-comparer') {
+    items = generateTpmComparerBatch(rng, count)
+  } else if (typeId === 'tpm-suite') {
+    items = generateTpmSuiteBatch(rng, count)
+  } else if (typeId === 'tpm-operations') {
+    items = generateTpmOperationsBatch(rng).slice(0, Math.max(1, count))
+  } else if (typeId === 'tpm-quatre-ops') {
+    items = generateTpmQuatreOpsBatch(rng).slice(0, Math.max(1, count))
+  } else if (typeId === 'tpm-add-sub-col-3') {
+    items = normalizeColumnLayouts(generateTpmAddSubColBatch(rng, 3).slice(0, Math.max(1, count)))
+  } else if (typeId === 'tpm-add-sub-col-4') {
+    items = normalizeColumnLayouts(generateTpmAddSubColBatch(rng, 4).slice(0, Math.max(1, count)))
+  } else if (typeId === 'tpm-decompose-99') {
+    items = generateTpmDecompose99Batch(rng, count)
+  } else if (typeId === 'tpm-grandes-suites') {
+    items = generateTpmGrandesSuitesBatch(rng).slice(0, Math.max(1, count))
+  } else if (typeId === 'tpm-decompose-9999') {
+    items = generateTpmDecompose9999Batch(rng, count)
+  } else if (typeId === 'tpm-mul-div-col') {
     // Largeurs imposées (× 5 col · ÷ 5/5) : pas de normalize qui les élargirait.
-    items = generateTcmMulDivColBatch(rng).slice(0, Math.max(1, count))
-  } else if (typeId === 'tcm-rect-peri-aire') {
-    items = [generateTcmRectPeriAire(rng)]
-  } else if (typeId === 'tcm-para-peri-aire') {
-    items = [generateTcmParaPeriAire(rng)]
-  } else if (typeId === 'tcm-tri-peri-aire') {
-    items = [generateTcmTriPeriAire(rng)]
-  } else if (typeId === 'tcm-rhombus-peri-aire') {
-    items = [generateTcmRhombusPeriAire(rng)]
-  } else if (typeId === 'tcm-trap-peri-aire') {
-    items = [generateTcmTrapPeriAire(rng)]
-  } else if (typeId === 'tcm-circle-peri-aire') {
-    items = [generateTcmCirclePeriAire(rng)]
-  } else if (typeId === 'tcm-suites-6') {
-    items = generateTcmSuites6Batch(rng).slice(0, Math.max(1, count))
-  } else if (typeId === 'tcm-ranger') {
-    items = generateTcmRangerBatch(rng).slice(0, Math.max(1, count))
-  } else if (typeId === 'tcm-dec-add-sub') {
+    items = generateTpmMulDivColBatch(rng).slice(0, Math.max(1, count))
+  } else if (typeId === 'tpm-rect-peri-aire') {
+    items = [generateTpmRectPeriAire(rng)]
+  } else if (typeId === 'tpm-para-peri-aire') {
+    items = [generateTpmParaPeriAire(rng)]
+  } else if (typeId === 'tpm-tri-peri-aire') {
+    items = [generateTpmTriPeriAire(rng)]
+  } else if (typeId === 'tpm-rhombus-peri-aire') {
+    items = [generateTpmRhombusPeriAire(rng)]
+  } else if (typeId === 'tpm-trap-peri-aire') {
+    items = [generateTpmTrapPeriAire(rng)]
+  } else if (typeId === 'tpm-circle-peri-aire') {
+    items = [generateTpmCirclePeriAire(rng)]
+  } else if (typeId === 'tpm-suites-6') {
+    items = generateTpmSuites6Batch(rng).slice(0, Math.max(1, count))
+  } else if (typeId === 'tpm-ranger') {
+    items = generateTpmRangerBatch(rng).slice(0, Math.max(1, count))
+  } else if (typeId === 'tpm-dec-add-sub') {
     // Largeur imposée à 6 : ne pas ré-aligner via normalize (sinon > 6 col).
-    items = generateTcmDecAddSubBatch(rng).slice(0, Math.max(1, count))
-  } else if (typeId === 'tcm-mul-mixte') {
-    items = generateTcmMulMixteBatch(rng).slice(0, Math.max(1, count))
-  } else if (typeId === 'tcm-div-mixte') {
-    items = generateTcmDivMixteBatch(rng).slice(0, Math.max(1, count))
-  } else if (typeId === 'tcm-frac-color') {
-    items = generateTcmFracShapeBatch(rng, count, 'color')
-  } else if (typeId === 'tcm-frac-read') {
-    items = generateTcmFracShapeBatch(rng, count, 'read')
-  } else if (typeId === 'tcm-ops-decimales') {
-    items = generateTcmOpsDecimalesBatch(rng).slice(0, Math.max(1, count))
-  } else if (typeId === 'tcm-puissances-mixte') {
-    items = generateTcmPuissancesMixteBatch(rng).slice(0, Math.max(1, count))
-  } else if (typeId === 'tcm-priorite-ops') {
-    items = generateTcmPrioriteBatch(rng).slice(0, Math.max(1, count))
-  } else if (typeId === 'tcm-relatifs-ops') {
-    items = generateTcmRelatifsOpsBatch(rng).slice(0, Math.max(1, count))
-  } else if (typeId === 'tcm-fractions-mixte') {
-    items = generateTcmFractionsMixteBatch(rng).slice(0, Math.max(1, count))
-  } else if (typeId === 'tcm-expressions-reduire') {
-    items = generateTcmReduireBatch(rng).slice(0, Math.max(1, count))
-  } else if (typeId === 'tcm-expressions-evaluer') {
-    items = generateTcmEvaluerBatch(rng).items.slice(0, Math.max(1, count))
-  } else if (typeId === 'tcm-equations') {
-    items = generateTcmEquationsBatch(rng).slice(0, Math.max(1, count))
-  } else if (typeId === 'tcm-conversions-mixte') {
-    items = generateTcmConversionsBatch(rng).slice(0, Math.max(1, count))
-  } else if (typeId === 'tcm-proportion-kg') {
-    items = generateTcmProportionKgBatch(rng, count)
+    items = generateTpmDecAddSubBatch(rng).slice(0, Math.max(1, count))
+  } else if (typeId === 'tpm-mul-mixte') {
+    items = generateTpmMulMixteBatch(rng).slice(0, Math.max(1, count))
+  } else if (typeId === 'tpm-div-mixte') {
+    items = generateTpmDivMixteBatch(rng).slice(0, Math.max(1, count))
+  } else if (typeId === 'tpm-frac-color') {
+    items = generateTpmFracShapeBatch(rng, count, 'color')
+  } else if (typeId === 'tpm-frac-read') {
+    items = generateTpmFracShapeBatch(rng, count, 'read')
+  } else if (typeId === 'tpm-ops-decimales') {
+    items = generateTpmOpsDecimalesBatch(rng).slice(0, Math.max(1, count))
+  } else if (typeId === 'tpm-puissances-mixte') {
+    items = generateTpmPuissancesMixteBatch(rng).slice(0, Math.max(1, count))
+  } else if (typeId === 'tpm-priorite-ops') {
+    items = generateTpmPrioriteBatch(rng).slice(0, Math.max(1, count))
+  } else if (typeId === 'tpm-relatifs-ops') {
+    items = generateTpmRelatifsOpsBatch(rng).slice(0, Math.max(1, count))
+  } else if (typeId === 'tpm-fractions-mixte') {
+    items = generateTpmFractionsMixteBatch(rng).slice(0, Math.max(1, count))
+  } else if (typeId === 'tpm-expressions-reduire') {
+    items = generateTpmReduireBatch(rng).slice(0, Math.max(1, count))
+  } else if (typeId === 'tpm-expressions-evaluer') {
+    items = generateTpmEvaluerBatch(rng).items.slice(0, Math.max(1, count))
+  } else if (typeId === 'tpm-equations') {
+    items = generateTpmEquationsBatch(rng).slice(0, Math.max(1, count))
+  } else if (typeId === 'tpm-conversions-mixte') {
+    items = generateTpmConversionsBatch(rng).slice(0, Math.max(1, count))
+  } else if (typeId === 'tpm-proportion-kg') {
+    items = generateTpmProportionKgBatch(rng, count)
   }
   if (!items) return null
   return items.map((item) => sanitizeItemNumberNoise(item))

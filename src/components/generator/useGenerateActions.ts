@@ -23,7 +23,7 @@ import type {
   PreviewMode,
 } from '@/math/types'
 import type { InstitutionalHeader } from '@/components/math/PrintDocumentChrome'
-import { isTcmFamilyExercise, recalcTcmLibreItems } from '@/tcm/libre-recalc'
+import { isTpmFamilyExercise, recalcTpmLibreItems } from '@/tpm/libre-recalc'
 
 export type UseGenerateActionsParams = {
   pages: PageConfig[]
@@ -106,10 +106,10 @@ export function useGenerateActions({
       }
 
       // Contenu libre déjà saisi : on le fige explicitement (nouvelles refs) pour forcer l’aperçu.
-      // TCM / TCM CFR : recalcule les réponses à partir des valeurs éditées.
+      // TPM / TCM CFR : recalcule les réponses à partir des valeurs éditées.
       if (libreMode && Array.isArray(block.libreItems) && block.libreItems.length > 0) {
-        const frozen = isTcmFamilyExercise(block.exerciseType)
-          ? recalcTcmLibreItems(block.libreItems, block.exerciseType)
+        const frozen = isTpmFamilyExercise(block.exerciseType)
+          ? recalcTpmLibreItems(block.libreItems, block.exerciseType)
           : block.libreItems.map((item) => ({ ...item }))
         return current.map((p, i) =>
           i !== pageIndex
@@ -312,8 +312,8 @@ export function useGenerateActions({
           }
         } else if (
           page.domain === TCF_DOMAIN ||
-          isTcmFamilyExercise(block.exerciseType) ||
-          page.domain === 'tcm' ||
+          isTpmFamilyExercise(block.exerciseType) ||
+          page.domain === 'tpm' ||
           page.domain === 'tcm-cfr' ||
           page.domain === 'tcm-csc'
         ) {

@@ -1,11 +1,11 @@
-# TCM — Test de connaissance de mathématiques
+# TPM — Test de placement de mathématiques
 
 Miroir de `src/tcf/` : domaine à part, **pas** dans `src/math/`.
 
 | Fichier | Rôle |
 |---|---|
-| `test.ts` | Recette multi-pages, consignes, helpers UI (`isTcmDomain`, points…) |
-| `items.ts` | `tryGenerateTcmItems` — tous les générateurs `tcm-*` (dispatch depuis `math/generate.ts`) |
+| `test.ts` | Recette multi-pages, consignes, helpers UI (`isTpmDomain`, points…) |
+| `items.ts` | `tryGenerateTpmItems` — tous les générateurs `tpm-*` (dispatch depuis `math/generate.ts`) |
 | `conversions.ts` | Exercices conversions |
 | `equations.ts` | Équations |
 | `evaluer.ts` | Évaluer des expressions |
@@ -19,4 +19,4 @@ Miroir de `src/tcf/` : domaine à part, **pas** dans `src/math/`.
 - `src/tcm-csc/` / `src/tcm-cfr/` — stubs admin **vides** (pas une copie de cette recette)
 - `src/acm/` — **Activités créatives et manuelles** (domaine distinct, pas un test maths)
 
-Imports : `@/tcm/test`, `@/tcm/items`, `@/tcm/evaluer`, ou `@/tcm`.
+Imports : `@/tpm/test`, `@/tpm/items`, `@/tpm/evaluer`, ou `@/tpm`.

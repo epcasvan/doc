@@ -1,4 +1,4 @@
-import { formatPointsLabel } from '@/tcm/test'
+import { formatPointsLabel } from '@/tpm/test'
 import type { PreviewMode } from '@/math/types'
 import type { TcfChoixRendu, TcfGrille, TcfLigneTableau } from '@/tcf/types'
 import { TcfImage } from './TexteSupport'

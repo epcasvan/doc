@@ -46,9 +46,9 @@ import {
   VOLUME_QUAD_FIGURES,
 } from '@/math/mesures'
 import { TCF_DOMAIN, tcfNiveauFromDifficulty } from '@/tcf/catalog'
-import { isTcmDomain } from '@/tcm/test'
+import { isTpmDomain } from '@/tpm/test'
 import { isTcmCfrDomain } from '@/tcm-cfr/test'
-import { isTcmFamilyConsignesType } from '@/tcm/informations'
+import { isTpmFamilyConsignesType } from '@/tpm/informations'
 import { defaultEntriesFor } from '@/jeux/defaults'
 import { entriesToText } from '@/jeux/parse'
 import { templateFor } from '@/jeux/templates'
@@ -75,14 +75,14 @@ const isJeuxDomain = activePage.domain === 'jeux'
 const isCalliDomain = activePage.domain === 'calligraphie'
 const isSoutienFr = activePage.domain === 'soutien-fr'
 const isAlphabetisation = activePage.domain === 'alphabetisation'
-const isTcm = isTcmDomain(activePage.domain)
+const isTpm = isTpmDomain(activePage.domain)
 const isTcmCfr = isTcmCfrDomain(activePage.domain)
 const isTcmCsc = activePage.domain === 'tcm-csc'
-/** TCM / TCM CFR / TCM CSC : test multi-pages packé, UI simplifiée + mode libre dédié. */
-const isTcmLike = isTcm || isTcmCfr || isTcmCsc
+/** TPM / TCM CFR / TCM CSC : test multi-pages packé, UI simplifiée + mode libre dédié. */
+const isTpmLike = isTpm || isTcmCfr || isTcmCsc
 const isTcf = activePage.domain === TCF_DOMAIN
-/** Page 1 Informations (TCM / CFR / CSC) : pas de Questions ni Colonnes. */
-const isTcmInfoPage = isTcmFamilyConsignesType(activeBlock.exerciseType)
+/** Page 1 Informations (TPM / CFR / CSC) : pas de Questions ni Colonnes. */
+const isTpmInfoPage = isTpmFamilyConsignesType(activeBlock.exerciseType)
 const tcfNiveau = tcfNiveauFromDifficulty(activeBlock.difficulty)
 const soutienParsed = isSoutienFr
   ? parseSoutienType(activeBlock.exerciseType)
@@ -262,11 +262,11 @@ const questionsInputOverflow = questionsOverflow || bankOverflow
     isCalliDomain,
     isSoutienFr,
     isAlphabetisation,
-    isTcm,
+    isTpm,
     isTcmCfr,
-    isTcmLike,
+    isTpmLike,
     isTcf,
-    isTcmInfoPage,
+    isTpmInfoPage,
     tcfNiveau,
     soutienParsed,
     soutienKind,

@@ -41,6 +41,50 @@ function isPage(value: unknown): value is PageConfig {
   return typeof value.domain === 'string' && typeof value.exerciseType === 'string'
 }
 
+/**
+ * Ancien code du test principal (`tcm` → `tpm`).
+ * TCM CSC et TCM CFR restent `tcm-csc` / `tcm-cfr`.
+ */
+export function migrateTpmToken(value: string): string {
+  if (value === 'tpm-csc' || value.startsWith('tpm-csc-') || value.startsWith('tpm-csc_')) {
+    return `tcm${value.slice(3)}`
+  }
+  if (value === 'tpm-cfr' || value.startsWith('tpm-cfr-') || value.startsWith('tpm-cfr_')) {
+    return `tcm${value.slice(3)}`
+  }
+  if (value === 'tcm_csc') return 'tcm-csc'
+  if (value === 'tcm_cfr') return 'tcm-cfr'
+  if (
+    value === 'tcm-csc' ||
+    value.startsWith('tcm-csc-') ||
+    value.startsWith('tcm-csc_') ||
+    value === 'tcm-cfr' ||
+    value.startsWith('tcm-cfr-') ||
+    value.startsWith('tcm-cfr_')
+  ) {
+    return value
+  }
+  if (value === 'tcm' || value.startsWith('tcm-') || value.startsWith('tcm_')) {
+    return `tpm${value.slice(3)}`
+  }
+  return value
+}
+
+function migratePage(page: PageConfig): PageConfig {
+  const extra = page.extraBlocks?.map((block) => ({
+    ...block,
+    topic: migrateTpmToken(block.topic),
+    exerciseType: migrateTpmToken(block.exerciseType),
+  }))
+  return {
+    ...page,
+    domain: migrateTpmToken(page.domain) as Domain,
+    topic: migrateTpmToken(page.topic),
+    exerciseType: migrateTpmToken(page.exerciseType),
+    extraBlocks: extra,
+  }
+}
+
 export function parseFicheRecipe(value: unknown): FicheRecipe | null {
   if (!isRecord(value) || value.version !== 1) return null
   if (!Array.isArray(value.pages) || value.pages.length === 0 || value.pages.length > 60) return null
@@ -55,15 +99,17 @@ export function parseFicheRecipe(value: unknown): FicheRecipe | null {
   if (value.libreSnapshot !== null) {
     if (!Array.isArray(value.libreSnapshot) || !value.libreSnapshot.every(isPage)) return null
   }
+  const pages = (value.pages as PageConfig[]).map(migratePage)
+  const snapshot = (value.libreSnapshot as PageConfig[] | null) ?? null
   return {
     version: 1,
-    pages: value.pages as PageConfig[],
+    pages,
     seed: value.seed,
     institutional: value.institutional as InstitutionalHeader,
     evalMode: value.evalMode,
     pointsPerQuestion: value.pointsPerQuestion,
     libreMode: value.libreMode,
-    libreSnapshot: (value.libreSnapshot as PageConfig[] | null) ?? null,
+    libreSnapshot: snapshot ? snapshot.map(migratePage) : null,
     bookKind: value.bookKind === 'alpha' || value.bookKind === 'soutien' ? value.bookKind : undefined,
   }
 }

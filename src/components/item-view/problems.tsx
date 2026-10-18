@@ -208,7 +208,7 @@ export function TheoryBlockView({ item }: { item: MathItem }) {
   return null
 }
 
-/** TCM ex. 21/22 — formes fractionnaires (port soutien-scolaire). */
+/** TPM ex. 21/22 — formes fractionnaires (port soutien-scolaire). */
 export function FractionShapeBlock({ item, mode }: { item: MathItem; mode: PreviewMode }) {
   const fs = item.fracShape
   if (!fs) return null
@@ -365,7 +365,7 @@ export function InlinePrompt({ item, mode }: { item: MathItem; mode: PreviewMode
   const prompt = item.prompt ?? ''
   const show = mode === 'answers'
 
-  // Fractions (TCM ex. 30) : ne pas passer par EquationRow (qui n’affiche que a op b).
+  // Fractions (TPM ex. 30) : ne pas passer par EquationRow (qui n’affiche que a op b).
   const isFracItem =
     item.labels?.some((l) => l.startsWith('frac-')) ||
     /[-−]?\d+\s*\/\s*[-−]?\d+/.test(prompt)

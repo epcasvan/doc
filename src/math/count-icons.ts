@@ -1,5 +1,5 @@
 /**
- * Compter les icônes (nombres naturels / TCM ex. 1).
+ * Compter les icônes (nombres naturels / TPM ex. 1).
  * Grille 10×8 par cadre : une forme par cellule (certaines vides),
  * tailles 33 %–100 % de la cellule, orientations variées.
  */

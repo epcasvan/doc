@@ -19,8 +19,8 @@ import { tryGeneratePhraseBatch } from '@/francais/phrase'
 import { tryGenerateCalligraphieBatch } from '@/calligraphie/generate'
 import { tryGenerateJeuxBatch } from '@/jeux/generate'
 import { pageAsConfig, pageBlocks } from './page-model'
-import { TCM_MAX_SCORE } from '@/tcm/test'
-import { generateTcmInformations } from '@/tcm/informations'
+import { TPM_MAX_SCORE } from '@/tpm/test'
+import { generateTpmInformations } from '@/tpm/informations'
 import { tryGenerateTcfBlock } from '@/tcf/generate'
 import { isTcfConsignesType, TCF_DOMAIN } from '@/tcf/catalog'
 import { tryGenerateGrammaireBlock } from '@/grammaire/generate'
@@ -62,18 +62,18 @@ function buildSingleBlock(
   const type = exerciseTypeById[config.exerciseType]
   const difficulty = config.difficulty ?? 'moyen'
   const fallbackTitle = type?.label ?? topic?.label ?? 'Exercices'
-  if (config.exerciseType === 'tcm-consignes') {
+  if (config.exerciseType === 'tpm-consignes') {
     return {
       title: 'Informations',
       instruction: type?.instruction ?? 'Lisez les consignes avant de commencer le test.',
-      items: generateTcmInformations('tcm', TCM_MAX_SCORE),
+      items: generateTpmInformations('tpm', TPM_MAX_SCORE),
     }
   }
   if (isTcmCscConsignesType(config.exerciseType)) {
     return {
       title: 'Informations',
       instruction: type?.instruction ?? 'Lisez les consignes avant de commencer le test.',
-      items: generateTcmInformations('tcm-csc', 0),
+      items: generateTpmInformations('tcm-csc', 0),
     }
   }
   const tcf = tryGenerateTcfBlock(config, rng)
@@ -132,7 +132,7 @@ function buildSingleBlock(
     return {
       title: 'Informations',
       instruction: type?.instruction ?? 'Lisez les consignes avant de commencer le test.',
-      items: generateTcmInformations('tcm-cfr', TCM_CFR_MAX_SCORE),
+      items: generateTpmInformations('tcm-cfr', TCM_CFR_MAX_SCORE),
     }
   }
   if (config.exerciseType === 'reperage-droites') {
@@ -301,7 +301,7 @@ function buildSingleBlock(
   }
 }
 
-/** Valeurs des lettres depuis les items libre TCM ex. 33 (évaluer). */
+/** Valeurs des lettres depuis les items libre TPM ex. 33 (évaluer). */
 function givensFromEvaluerLibre(items: MathItem[]): AlgebraGiven[] | undefined {
   const it = items.find(
     (item) => item.labels?.includes('evaluer') && item.unknowns && item.unknowns.length > 0,
@@ -316,10 +316,10 @@ function givensFromEvaluerLibre(items: MathItem[]): AlgebraGiven[] | undefined {
   return givens.length > 0 ? givens : undefined
 }
 
-/** Page « Informations » d’un test (TCM / CFR / CSC / TCF) : ni numéro d’exercice ni points. */
+/** Page « Informations » d’un test (TPM / CFR / CSC / TCF) : ni numéro d’exercice ni points. */
 function isInfoPageType(typeId: string): boolean {
   return (
-    typeId === 'tcm-consignes' ||
+    typeId === 'tpm-consignes' ||
     isTcmCfrConsignesType(typeId) ||
     isTcmCscConsignesType(typeId) ||
     isTcfConsignesType(typeId)
@@ -340,7 +340,7 @@ export function buildPage(
     const result = buildSingleBlock(single, seed + index * 10007 + local, worksheetSeed)
     const isTheory = isGrammarTheoryType(block.exerciseType) || isGrammaireTheoryType(block.exerciseType)
     const isJeux = block.exerciseType.startsWith('jeux-')
-    const isTcmConsignes = isInfoPageType(block.exerciseType)
+    const isTpmConsignes = isInfoPageType(block.exerciseType)
     const libre =
       Array.isArray(block.libreItems) && block.libreItems.length > 0
         ? {
@@ -349,7 +349,7 @@ export function buildPage(
           }
         : null
     let exerciseIndex = 0
-    if (!isTcmConsignes) {
+    if (!isTpmConsignes) {
       if (block.exerciseNo != null) {
         exerciseIndex = block.exerciseNo
         exerciseCursor = Math.max(exerciseCursor, block.exerciseNo + 1)
@@ -361,7 +361,7 @@ export function buildPage(
     const libreGivens = givensFromEvaluerLibre(rawItems)
     return {
       exerciseIndex,
-      title: isTcmConsignes
+      title: isTpmConsignes
         ? 'Informations'
         : isTheory
           ? ((libre?.instruction ?? result.instruction)?.replace(/^Théorie — /, '') || `Théorie`)
@@ -388,10 +388,10 @@ export function buildPage(
   const type = exerciseTypeById[config.exerciseType]
   const isTheoryPage =
     isGrammarTheoryType(config.exerciseType) || isGrammaireTheoryType(config.exerciseType)
-  const isTcmConsignesPage = isInfoPageType(config.exerciseType)
+  const isTpmConsignesPage = isInfoPageType(config.exerciseType)
   return {
     ...config,
-    title: isTcmConsignesPage
+    title: isTpmConsignesPage
       ? 'Informations'
       : isTheoryPage
         ? (first?.title ?? type?.label ?? 'Théorie')

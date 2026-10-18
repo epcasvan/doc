@@ -39,7 +39,7 @@ export type SettingsPanelProps = {
   safeBlockIndex: number
   activeSheet: WorksheetPage | undefined
   firstExerciseNo: number
-  isTcmLike: boolean
+  isTpmLike: boolean
   addPage: () => void
   addExerciseOnPage: () => void
   removePage: (configIdx: number) => void
@@ -122,7 +122,7 @@ export type SettingsPanelProps = {
   bankQuestionCap: number | undefined
   questionsOverflow: boolean
   maxQuestions: number
-  isTcmInfoPage: boolean
+  isTpmInfoPage: boolean
   isSoutienMotsMeles: boolean
 
   isFormes: boolean
@@ -140,7 +140,7 @@ export type SettingsPanelProps = {
   placeOrigin: (col: number, row: number) => void
   removeCoordMark: (x: number, y: number) => void
 
-  setAllTcmDraftGrids: (value: boolean) => void
+  setAllTpmDraftGrids: (value: boolean) => void
   setAllDraftGrids: (value: boolean) => void
 }
 
@@ -159,7 +159,7 @@ export function SettingsPanel(p: SettingsPanelProps) {
         safeBlockIndex={p.safeBlockIndex}
         activeSheet={p.activeSheet}
         firstExerciseNo={p.firstExerciseNo}
-        isTcmLike={p.isTcmLike}
+        isTpmLike={p.isTpmLike}
         addPage={p.addPage}
         addExerciseOnPage={p.addExerciseOnPage}
         removePage={p.removePage}
@@ -178,7 +178,7 @@ export function SettingsPanel(p: SettingsPanelProps) {
           pages={p.pages}
           worksheets={p.worksheets}
           safeSheetIndex={p.safeSheetIndex}
-          isTcmLike={p.isTcmLike}
+          isTpmLike={p.isTpmLike}
           activePage={p.activePage}
           changeDomain={p.changeDomain}
           allowedDomains={p.allowedDomains}
@@ -277,10 +277,10 @@ export function SettingsPanel(p: SettingsPanelProps) {
           isCalliDomain={p.isCalliDomain}
           isSoutienFr={p.isSoutienFr}
           isTcf={p.isTcf}
-          isTcmInfoPage={p.isTcmInfoPage}
+          isTpmInfoPage={p.isTpmInfoPage}
           isSoutienMots={p.isSoutienMots}
           isSoutienMotsMeles={p.isSoutienMotsMeles}
-          isTcmLike={p.isTcmLike}
+          isTpmLike={p.isTpmLike}
           evalMode={p.evalMode}
           activeSheet={p.activeSheet}
           safeBlockIndex={p.safeBlockIndex}
@@ -310,11 +310,11 @@ export function SettingsPanel(p: SettingsPanelProps) {
           safeBlockIndex={p.safeBlockIndex}
         />
         <DraftGridControls
-          isTcmLike={p.isTcmLike}
+          isTpmLike={p.isTpmLike}
           pages={p.pages}
           pageExerciseBlocks={p.pageExerciseBlocks}
           activeBlock={p.activeBlock}
-          setAllTcmDraftGrids={p.setAllTcmDraftGrids}
+          setAllTpmDraftGrids={p.setAllTpmDraftGrids}
           setAllDraftGrids={p.setAllDraftGrids}
         />
       </div>

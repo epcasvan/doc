@@ -51,7 +51,7 @@ export type DomainThemeTypeFieldsProps = {
   pages: PageConfig[]
   worksheets: WorksheetPage[]
   safeSheetIndex: number
-  isTcmLike: boolean
+  isTpmLike: boolean
   activePage: PageConfig
   changeDomain: (next: Domain) => void
   allowedDomains: Domain[]
@@ -102,7 +102,7 @@ export function DomainThemeTypeFields(p: DomainThemeTypeFieldsProps) {
     pages,
     worksheets,
     safeSheetIndex,
-    isTcmLike,
+    isTpmLike,
     activePage,
     changeDomain,
     allowedDomains,
@@ -161,7 +161,7 @@ export function DomainThemeTypeFields(p: DomainThemeTypeFieldsProps) {
                     Évaluation
                   </button>
                 </div>
-                {evalMode && !isTcmLike && (
+                {evalMode && !isTpmLike && (
                   <label>
                     Points par question
                     <input
@@ -215,7 +215,7 @@ export function DomainThemeTypeFields(p: DomainThemeTypeFieldsProps) {
                   ))}
                 </SelectBox>
               ) : null}
-              {isTcmLike ? null : (
+              {isTpmLike ? null : (
                 <SelectBox
                   label={isTcf ? 'Compétence' : 'Thème'}
                   value={soutienSelection?.theme.id ?? activeBlock.topic}
@@ -317,7 +317,7 @@ export function DomainThemeTypeFields(p: DomainThemeTypeFieldsProps) {
                   onChangeInstruction={(phraseInstruction) => updatePage({ phraseInstruction })}
                 />
               ) : null}
-              {isTcmLike || (isTcf && typeChoices.length <= 1) ? null : (
+              {isTpmLike || (isTcf && typeChoices.length <= 1) ? null : (
               <SelectBox
                 label={isTcf ? 'Exercice' : 'Type d’exercice'}
                 value={activeBlock.exerciseType}
@@ -416,7 +416,7 @@ export function DomainThemeTypeFields(p: DomainThemeTypeFieldsProps) {
               isSoutienFr ||
               isAlphabetisation ||
               isTcf ||
-              isTcmLike ? null : (
+              isTpmLike ? null : (
               <>
               <div className={`niveau-row${activeBlock.numberLibre ? ' is-libre' : ''}`}>
                 <SelectBox

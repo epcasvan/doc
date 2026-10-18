@@ -25,7 +25,7 @@ export function ReadPhrasesBlock({ item }: { item: MathItem }) {
   )
 }
 
-/** Silhouettes pleines N&B (réf. TCM ex. 1). */
+/** Silhouettes pleines N&B (réf. TPM ex. 1). */
 export function CountIconGlyph({
   kind,
 }: {

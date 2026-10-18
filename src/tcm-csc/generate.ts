@@ -1,5 +1,5 @@
 import type { MathItem, PageConfig } from '@/math/types'
-import { generateTcmInformations } from '@/tcm/informations'
+import { generateTpmInformations } from '@/tpm/informations'
 import { isTcmCscConsignesType } from './test'
 import { isTcmCscType } from './types'
 
@@ -11,7 +11,7 @@ export function tryGenerateTcmCscBlock(
   if (isTcmCscConsignesType(config.exerciseType)) {
     return {
       instruction: 'Lisez les consignes avant de commencer le test.',
-      items: generateTcmInformations('tcm-csc', 0),
+      items: generateTpmInformations('tcm-csc', 0),
     }
   }
   return {

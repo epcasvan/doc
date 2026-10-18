@@ -1,5 +1,5 @@
 /**
- * Recalcule les réponses des items TCM / TCM CFR après édition libre.
+ * Recalcule les réponses des items TPM / TCM CFR après édition libre.
  * Appelé à la validation (bouton ✓ à côté du téléchargement).
  */
 import { fmt, sanitizeFrNumberNoise } from '@/math/column-arith'
@@ -11,38 +11,38 @@ import {
   convertValue,
   formatConvertNumber,
   inferConvertFamily,
-} from '@/tcm/convert-units'
-import { fractionPartsFromItem, fractionTermFr } from '@/tcm/fraction-words'
+} from '@/tpm/convert-units'
+import { fractionPartsFromItem, fractionTermFr } from '@/tpm/fraction-words'
 import {
   equationKindForTemplate,
   equationTemplateById,
   fillEquationTemplateWithVars,
-} from '@/tcm/equations'
+} from '@/tpm/equations'
 import {
   evaluerKindForTemplate,
   evaluerTemplateById,
   fillEvaluerTemplateWithVars,
-} from '@/tcm/evaluer'
+} from '@/tpm/evaluer'
 import {
   fillPrioriteTemplate,
   fillPrioriteTemplateWithVars,
   prioriteKeysInPattern,
   prioriteTemplateById,
-} from '@/tcm/priorite'
+} from '@/tpm/priorite'
 import { createRng } from '@/math/rng'
 import {
   fillReduireQ1WithVars,
   fillReduireQ2WithVars,
   reduireTemplateById,
-} from '@/tcm/reduire'
-import { TCM_PROPORTION_KG_TEMPLATES } from '@/tcm/proportion-kg'
+} from '@/tpm/reduire'
+import { TPM_PROPORTION_KG_TEMPLATES } from '@/tpm/proportion-kg'
 import {
   columnItem,
   divisionColumnItem,
   withFixedColumnWidth,
   withFixedDivisionWidth,
   withFixedDivisionWorkRows,
-} from '@/tcm/items'
+} from '@/tpm/items'
 import { isCfrProblemExercise, rebuildProblemItems } from '@/tcm-cfr/problems'
 import {
   parseFrInt,
@@ -168,41 +168,41 @@ function isCfrColSeven(exerciseType: string): boolean {
   )
 }
 
-/** TCM CFR 7–8 ou TCM normal 17 : soustraction avec a > b obligatoire. */
+/** TCM CFR 7–8 ou TPM normal 17 : soustraction avec a > b obligatoire. */
 function requiresSubAgtB(exerciseType: string): boolean {
   return (
     exerciseType.includes('ex07') ||
     exerciseType.includes('ex08') ||
-    exerciseType === 'tcm-dec-add-sub'
+    exerciseType === 'tpm-dec-add-sub'
   )
 }
 
-/** TCM CFR 9–10 ou TCM normal 18 : multiplicateur plafonné à 99. */
+/** TCM CFR 9–10 ou TPM normal 18 : multiplicateur plafonné à 99. */
 function capsMulBAt99(exerciseType: string): boolean {
   return (
     exerciseType.includes('ex09') ||
     exerciseType.includes('ex10') ||
-    exerciseType === 'tcm-mul-mixte'
+    exerciseType === 'tpm-mul-mixte'
   )
 }
 
-/** TCM CFR 9–10 ou TCM normal 19 : division à largeurs 4/4 + 8 lignes de travail. */
+/** TCM CFR 9–10 ou TPM normal 19 : division à largeurs 4/4 + 8 lignes de travail. */
 function needsFixedDivisionGrid(exerciseType: string): boolean {
   return (
     exerciseType.includes('ex09') ||
     exerciseType.includes('ex10') ||
-    exerciseType === 'tcm-div-mixte' ||
-    exerciseType === 'tcm-mul-div-col'
+    exerciseType === 'tpm-div-mixte' ||
+    exerciseType === 'tpm-mul-div-col'
   )
 }
 
 /** Largeur de grille imposée après édition libre (+ / − / ×). */
 function fixedColumnWidth(exerciseType: string): number | null {
   if (isCfrColSeven(exerciseType)) return 7
-  if (exerciseType === 'tcm-add-sub-col-3') return 4
-  if (exerciseType === 'tcm-add-sub-col-4') return 5
-  // TCM ex. 17 / 18 : grille vide 6 col.
-  if (exerciseType === 'tcm-dec-add-sub' || exerciseType === 'tcm-mul-mixte') return 6
+  if (exerciseType === 'tpm-add-sub-col-3') return 4
+  if (exerciseType === 'tpm-add-sub-col-4') return 5
+  // TPM ex. 17 / 18 : grille vide 6 col.
+  if (exerciseType === 'tpm-dec-add-sub' || exerciseType === 'tpm-mul-mixte') return 6
   return null
 }
 
@@ -223,7 +223,7 @@ function recalcColumn(item: MathItem, exerciseType = ''): MathItem {
   if (aRaw == null || bRaw == null) return { ...item, libreError: undefined }
   let a = aRaw
   let b = bRaw
-  // Soustraction — le 1er nombre doit être strictement plus grand (CFR 7–8, TCM 17).
+  // Soustraction — le 1er nombre doit être strictement plus grand (CFR 7–8, TPM 17).
   if (requiresSubAgtB(exerciseType) && op === '−' && a <= b) {
     return {
       ...item,
@@ -233,7 +233,7 @@ function recalcColumn(item: MathItem, exerciseType = ''): MathItem {
       libreError: 'Pour une soustraction, le premier nombre doit être plus grand que le second.',
     }
   }
-  // × : le multiplicateur (2ᵉ nombre) ne dépasse pas 99 (CFR 9–10, TCM 18).
+  // × : le multiplicateur (2ᵉ nombre) ne dépasse pas 99 (CFR 9–10, TPM 18).
   if (capsMulBAt99(exerciseType) && op === '×' && b > 99) {
     b = 99
   }
@@ -354,7 +354,7 @@ function formatFracSigned(n: number, d: number): string {
   return n < 0 ? `−${Math.abs(n)}/${d}` : `${n}/${d}`
 }
 
-/** TCM ex. 30 : reduce-partial, reduce, frac-op. */
+/** TPM ex. 30 : reduce-partial, reduce, frac-op. */
 function recalcFractionsMixte(item: MathItem): MathItem {
   const kind =
     item.labels?.find((l) => l.startsWith('frac-')) ??
@@ -461,7 +461,7 @@ function recalcFractionDecimal(item: MathItem): MathItem {
 function recalcFracShape(item: MathItem): MathItem {
   const fs = item.fracShape
   if (!fs) return item
-  // Limites CFR (formes simples) pour TCM 20/21 et CFR 12/13.
+  // Limites CFR (formes simples) pour TPM 20/21 et CFR 12/13.
   const clamped = clampFracShapeCfr(fs.kind, fs.n, fs.d)
   const answer = `${clamped.n}/${clamped.d}`
   return {
@@ -966,7 +966,7 @@ function recalcProportion(item: MathItem): MathItem {
   if (kgA == null || priceA == null || kgB == null || kgA === 0) return item
   const priceB = Math.round(((priceA * kgB) / kgA) * 1000) / 1000
   const tpl =
-    TCM_PROPORTION_KG_TEMPLATES.find((t) => t.id === item.left) ?? TCM_PROPORTION_KG_TEMPLATES[0]!
+    TPM_PROPORTION_KG_TEMPLATES.find((t) => t.id === item.left) ?? TPM_PROPORTION_KG_TEMPLATES[0]!
   return {
     ...item,
     a: kgA,
@@ -981,7 +981,7 @@ function recalcProportion(item: MathItem): MathItem {
 }
 
 /** Recalcule un item selon son layout / type d’exercice. */
-export function recalcTcmLibreItem(item: MathItem, exerciseType: string): MathItem {
+export function recalcTpmLibreItem(item: MathItem, exerciseType: string): MathItem {
   let next = cleanAnswerFloat(item)
 
   if (
@@ -1010,20 +1010,20 @@ export function recalcTcmLibreItem(item: MathItem, exerciseType: string): MathIt
   if (next.convert) return recalcConvert(next)
   if (next.layout === 'place-value') return recalcPlaceValue(next)
   if (
-    exerciseType === 'tcm-puissances-mixte' ||
+    exerciseType === 'tpm-puissances-mixte' ||
     next.labels?.some((l) => l === 'power' || l === 'root' || l === 'sci-mul' || l === 'sci-div')
   ) {
     return recalcPuissances(next)
   }
   if (
-    exerciseType === 'tcm-proportion-kg' ||
+    exerciseType === 'tpm-proportion-kg' ||
     next.labels?.includes('percent') ||
     next.labels?.includes('kg-francs')
   ) {
     return recalcProportion(next)
   }
   if (
-    exerciseType === 'tcm-priorite-ops' ||
+    exerciseType === 'tpm-priorite-ops' ||
     next.labels?.includes('priorite')
   ) {
     const tpl = prioriteTemplateById(next.problemTemplateId ?? '')
@@ -1053,7 +1053,7 @@ export function recalcTcmLibreItem(item: MathItem, exerciseType: string): MathIt
     return next
   }
   if (
-    exerciseType === 'tcm-expressions-evaluer' ||
+    exerciseType === 'tpm-expressions-evaluer' ||
     next.labels?.includes('evaluer')
   ) {
     const tpl = evaluerTemplateById(next.problemTemplateId ?? '')
@@ -1080,7 +1080,7 @@ export function recalcTcmLibreItem(item: MathItem, exerciseType: string): MathIt
     return next
   }
   if (
-    exerciseType === 'tcm-expressions-reduire' ||
+    exerciseType === 'tpm-expressions-reduire' ||
     next.labels?.includes('reduire')
   ) {
     if (next.problemTemplateId === 'sum' || next.labels?.includes('q1')) {
@@ -1090,7 +1090,7 @@ export function recalcTcmLibreItem(item: MathItem, exerciseType: string): MathIt
     if (tpl) return fillReduireQ2WithVars(tpl, next.problemVars ?? {}) ?? next
     return next
   }
-  if (exerciseType === 'tcm-equations' || next.labels?.includes('equations')) {
+  if (exerciseType === 'tpm-equations' || next.labels?.includes('equations')) {
     const tpl = equationTemplateById(next.problemTemplateId ?? '')
     if (tpl) {
       const filled = fillEquationTemplateWithVars(tpl, next.problemVars ?? {})
@@ -1119,7 +1119,7 @@ export function recalcTcmLibreItem(item: MathItem, exerciseType: string): MathIt
     }
     return next
   }
-  if (exerciseType === 'tcm-relatifs-ops' || next.labels?.includes('relatif')) {
+  if (exerciseType === 'tpm-relatifs-ops' || next.labels?.includes('relatif')) {
     const fromPrompt = parseRelatifPrompt(next.prompt ?? '')
     const a =
       typeof next.a === 'number'
@@ -1157,9 +1157,9 @@ export function recalcTcmLibreItem(item: MathItem, exerciseType: string): MathIt
   if (next.layout === 'inline' && exerciseType.includes('ex11')) {
     return recalcFractionWord(next)
   }
-  // TCM ex. 30 — réduction partielle / complète / opérations sur fractions.
+  // TPM ex. 30 — réduction partielle / complète / opérations sur fractions.
   if (
-    exerciseType === 'tcm-fractions-mixte' ||
+    exerciseType === 'tpm-fractions-mixte' ||
     next.labels?.some((l) => l.startsWith('frac-'))
   ) {
     return recalcFractionsMixte(next)
@@ -1167,7 +1167,7 @@ export function recalcTcmLibreItem(item: MathItem, exerciseType: string): MathIt
   if (
     next.layout === 'inline' &&
     /\/\s*\d/.test(next.prompt ?? '') &&
-    exerciseType !== 'tcm-fractions-mixte' &&
+    exerciseType !== 'tpm-fractions-mixte' &&
     !next.labels?.some((l) => l.startsWith('frac-'))
   ) {
     return recalcFractionDecimal(next)
@@ -1236,7 +1236,7 @@ export function recalcTcmLibreItem(item: MathItem, exerciseType: string): MathIt
   return next
 }
 
-export function recalcTcmLibreItems(items: MathItem[], exerciseType: string): MathItem[] {
+export function recalcTpmLibreItems(items: MathItem[], exerciseType: string): MathItem[] {
   if (isCfrProblemExercise(exerciseType) && items.some((it) => it.problemTemplateId)) {
     const templateId = items.find((it) => it.problemTemplateId)?.problemTemplateId
     if (templateId) {
@@ -1248,9 +1248,14 @@ export function recalcTcmLibreItems(items: MathItem[], exerciseType: string): Ma
       if (rebuilt) return rebuilt
     }
   }
-  return items.map((item) => recalcTcmLibreItem(item, exerciseType))
+  return items.map((item) => recalcTpmLibreItem(item, exerciseType))
 }
 
-export function isTcmFamilyExercise(typeId: string): boolean {
-  return typeId.startsWith('tcm-') || typeId === 'nombres-compter-formes'
+export function isTpmFamilyExercise(typeId: string): boolean {
+  return (
+    typeId.startsWith('tpm-') ||
+    typeId.startsWith('tcm-cfr') ||
+    typeId.startsWith('tcm-csc') ||
+    typeId === 'nombres-compter-formes'
+  )
 }

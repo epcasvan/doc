@@ -1,10 +1,10 @@
 /**
- * Page 1 « Informations » partagée par TCM, TCM CFR et TCM CSC.
+ * Page 1 « Informations » partagée par TPM, TCM CFR et TCM CSC.
  * Même structure (niveaux, organisation, consignes) ; textes adaptés au domaine.
  */
 import type { MathItem } from '@/math/types'
 
-export type TcmInfoVariant = 'tcm' | 'tcm-cfr' | 'tcm-csc'
+export type TpmInfoVariant = 'tpm' | 'tcm-cfr' | 'tcm-csc'
 
 type InfoSpec = {
   levels: Array<[string, string]>
@@ -16,7 +16,7 @@ function scoreLabel(maxScore: number): string {
   return Number.isInteger(maxScore) ? String(maxScore) : String(maxScore).replace('.', ',')
 }
 
-function specFor(variant: TcmInfoVariant, maxScore: number): InfoSpec {
+function specFor(variant: TpmInfoVariant, maxScore: number): InfoSpec {
   const points = scoreLabel(maxScore)
   const consignes = [
     'Lisez chaque consigne attentivement avant de répondre.',
@@ -76,7 +76,7 @@ function specFor(variant: TcmInfoVariant, maxScore: number): InfoSpec {
 }
 
 /** Items théorie de la page Informations (pas de questions ni de colonnes). */
-export function generateTcmInformations(variant: TcmInfoVariant, maxScore: number): MathItem[] {
+export function generateTpmInformations(variant: TpmInfoVariant, maxScore: number): MathItem[] {
   const { levels, organisation, consignes } = specFor(variant, maxScore)
   return [
     {
@@ -128,9 +128,9 @@ export function generateTcmInformations(variant: TcmInfoVariant, maxScore: numbe
   ]
 }
 
-export function isTcmFamilyConsignesType(exerciseType: string | undefined): boolean {
+export function isTpmFamilyConsignesType(exerciseType: string | undefined): boolean {
   return (
-    exerciseType === 'tcm-consignes' ||
+    exerciseType === 'tpm-consignes' ||
     exerciseType === 'tcm-cfr-consignes' ||
     exerciseType === 'tcm-csc-consignes'
   )

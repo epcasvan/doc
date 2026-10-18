@@ -13,7 +13,7 @@ export type FracShapeItem = {
   multi: boolean
 }
 
-/** Dénominateurs autorisés (formes simples) — TCM CFR ex. 12 / 13 et TCM 20 / 21. */
+/** Dénominateurs autorisés (formes simples) — TCM CFR ex. 12 / 13 et TPM 20 / 21. */
 const FRAC_SINGLE_D_ALLOWED: Partial<Record<ShapeKind, readonly number[]>> = {
   triangle: [1, 2, 3, 4, 6, 9],
   hexagon: [2, 3, 4, 6, 12],

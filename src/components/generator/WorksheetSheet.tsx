@@ -8,7 +8,7 @@ import {
 } from '@/components/math/PrintDocumentChrome'
 import { isDraftPadExercise } from '@/math/catalog'
 import { TCF_DOMAIN } from '@/tcf/catalog'
-import { blockPointsTotal, formatPointsLabel, isTcmDomain } from '@/tcm/test'
+import { blockPointsTotal, formatPointsLabel, isTpmDomain } from '@/tpm/test'
 import { isTcmCfrDomain } from '@/tcm-cfr/test'
 import { isReperageConstruire } from '@/math/coord-reperage'
 import type {
@@ -122,7 +122,7 @@ export function WorksheetSheet({
   const isJeuxSheet = page.domain === 'jeux'
   const multiExercisePage =
     (page.blocks?.length ?? 0) > 1 ||
-    isTcmDomain(page.domain) ||
+    isTpmDomain(page.domain) ||
     isTcmCfrDomain(page.domain) ||
     page.domain === TCF_DOMAIN ||
     page.domain === 'soutien-fr' ||

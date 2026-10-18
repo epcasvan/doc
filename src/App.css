@@ -675,7 +675,7 @@ html,body,#root{
   box-sizing:border-box;line-height:1.35
 }
 .sequence-term.blank.filled{color:var(--purple)}
-/* Suites TCM : cases à largeur fixe (5 chiffres) + 10 px entre termes. */
+/* Suites TPM : cases à largeur fixe (5 chiffres) + 10 px entre termes. */
 .sequence-row.sequence-digits-5{
   flex-wrap:nowrap;gap:10px;width:100%;justify-content:flex-start
 }
@@ -688,7 +688,7 @@ html,body,#root{
 }
 .sequence-answer-line{display:flex;align-items:center;gap:8px;margin-top:10px}
 
-/* TCM fractions formes (soutien-scolaire ex. 21/22) — cadres à hauteur identique. */
+/* TPM fractions formes (soutien-scolaire ex. 21/22) — cadres à hauteur identique. */
 .frac-shape-card{
   width:100%;min-width:0;height:34mm;min-height:34mm;max-height:34mm;
   border:1px solid #c8c4d0;border-radius:12px;
@@ -1071,7 +1071,7 @@ html,body,#root{
 .draft-pad.draft-pad-geo{--grid-cols:9;--grid-rows:4;margin-top:0}
 .draft-pad.plain{background-image:none;background-color:#fff}
 .algebra-stack{display:flex;flex-direction:column;gap:0;width:100%}
-/* TCM 28 / 32–34 : 15 px sous la donnée / expression, avant le cadre brouillon. */
+/* TPM 28 / 32–34 : 15 px sous la donnée / expression, avant le cadre brouillon. */
 .algebra-stack > .algebra-row{padding-bottom:15px}
 .sheet-instruction-main > .sheet-givens{margin-bottom:15px}
 .exercise-item.layout-inline .item-content > .draft-pad{margin-top:15px}
@@ -1108,7 +1108,7 @@ html,body,#root{
   overflow:auto;aspect-ratio:auto;min-height:4.5cm;height:auto;
   background-image:none;padding:4px 2px
 }
-/* TCM 28–34 : même emprise que la fiche élève ; contenu en colonnes si besoin. */
+/* TPM 28–34 : même emprise que la fiche élève ; contenu en colonnes si besoin. */
 .draft-pad.draft-pad-short.has-correction{
   aspect-ratio:var(--grid-cols) / var(--grid-rows);
   min-height:0;height:auto;overflow:hidden;padding:3px 5px;box-sizing:border-box
@@ -4103,7 +4103,7 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
 .tcf-field>span{font-size:11px;font-weight:700;color:var(--muted)}
 .tcf-field.is-number{flex:0 0 auto}
 .tcf-field.is-number .pill-input{width:6.5em}
-/* Texte long (tous modes libre) : rectangle arrondi comme consignes TCM, pas pastille. */
+/* Texte long (tous modes libre) : rectangle arrondi comme consignes TPM, pas pastille. */
 .tcf-textarea,
 textarea.pill-input,
 .pill-input.tcf-textarea,
@@ -4395,12 +4395,12 @@ textarea.pill-input,
 
   /* Listes / grilles → une colonne sur mobile. */
   .side-tool-panel.is-libre :is(
-    .libre-item-list:not(.is-tcm),.phrase-libre-list,.calli-fields,.tcf-choix-list,
+    .libre-item-list:not(.is-tpm),.phrase-libre-list,.calli-fields,.tcf-choix-list,
     .game-entry-list,.soutien-completer-list,.coord-questions-libre
   ){
     display:flex!important;flex-direction:column;gap:10px;max-height:none;overflow:visible
   }
-  .side-tool-panel.is-libre .libre-item-card:not(.is-tcm-row){
+  .side-tool-panel.is-libre .libre-item-card:not(.is-tpm-row){
     display:flex!important;flex-direction:column;align-items:stretch;gap:8px
   }
   .side-tool-panel.is-libre .libre-options{
@@ -4472,12 +4472,12 @@ textarea.pill-input,
     flex:1 1 4.5em;min-width:4em
   }
 
-  /* TCM cards : colonne n° un peu plus large pour le refresh. */
-  .side-tool-panel.is-libre .libre-item-card.is-tcm-row{
+  /* TPM cards : colonne n° un peu plus large pour le refresh. */
+  .side-tool-panel.is-libre .libre-item-card.is-tpm-row{
     grid-template-columns:2.8em minmax(0,1fr);gap:8px;padding:10px
   }
   .side-tool-panel.is-libre :is(
-    .tcm-libre-editor,.quad-libre-block,.tcf-editor,.phrase-libre-editor,
+    .tpm-libre-editor,.quad-libre-block,.tcf-editor,.phrase-libre-editor,
     .generic-libre-editor,.number-libre-fields,.soutien-mots-libre,
     .soutien-completer-libre,.coord-questions-libre
   ){
@@ -4534,10 +4534,10 @@ textarea.pill-input,
   .workspace.has-libre-panel .side-tool-panel.is-libre .side-tool-panel-head h3{
     font-size:14px
   }
-  .side-tool-panel.is-libre .libre-item-card.is-tcm-row{
+  .side-tool-panel.is-libre .libre-item-card.is-tpm-row{
     grid-template-columns:1fr;gap:8px
   }
-  .side-tool-panel.is-libre .libre-item-card.is-tcm-row>.libre-item-num-col{
+  .side-tool-panel.is-libre .libre-item-card.is-tpm-row>.libre-item-num-col{
     flex-direction:row;justify-content:space-between;align-items:center;
     width:100%;padding-top:0
   }
@@ -4562,17 +4562,17 @@ textarea.pill-input,
 .libre-item-num.is-accent{color:var(--purple);font-size:14px}
 .libre-options{display:flex;flex-direction:column;gap:6px}
 .libre-options>b{font-size:12px;color:var(--ink)}
-/* TCM libre : n° à gauche, champs à droite ; traits (pas pastilles). */
-.libre-item-list.is-tcm{display:flex!important;flex-direction:column;gap:10px}
-.libre-item-card.is-tcm-row{
+/* TPM libre : n° à gauche, champs à droite ; traits (pas pastilles). */
+.libre-item-list.is-tpm{display:flex!important;flex-direction:column;gap:10px}
+.libre-item-card.is-tpm-row{
   display:grid!important;grid-template-columns:2.2em minmax(0,1fr);gap:8px 10px;
   align-items:start;padding:8px 10px;
   background:#fff;border:1px solid var(--line);border-radius:10px
 }
-.libre-item-card.is-tcm-row>.libre-item-num-col{
+.libre-item-card.is-tpm-row>.libre-item-num-col{
   grid-column:1;display:flex;flex-direction:column;align-items:center;gap:6px;padding-top:4px
 }
-.libre-item-card.is-tcm-row>.libre-item-num-col>.libre-item-num{padding-top:0;line-height:1.2}
+.libre-item-card.is-tpm-row>.libre-item-num-col>.libre-item-num{padding-top:0;line-height:1.2}
 .libre-item-reroll{
   display:inline-flex;align-items:center;justify-content:center;
   width:28px;height:28px;padding:0;border:1px solid var(--line);border-radius:8px;
@@ -4684,7 +4684,7 @@ textarea.pill-input,
 .libre-inline-triple.is-frac>.libre-field .libre-line-input.is-num{
   width:100%;max-width:6em
 }
-/* TCM ex. 20 / 21 : forme, n, d, corrigé empilés (pas côte à côte). */
+/* TPM ex. 20 / 21 : forme, n, d, corrigé empilés (pas côte à côte). */
 .libre-frac-stack{
   display:flex;flex-direction:column;gap:8px;align-items:stretch;width:100%
 }
@@ -4706,7 +4706,7 @@ textarea.pill-input,
   border-bottom:1px solid var(--line);padding:4px 8px
 }
 .libre-line-input.is-answer:focus{border-color:var(--purple)}
-/* Corrigé TCM libre : cadre gris non modifiable dans la carte blanche. */
+/* Corrigé TPM libre : cadre gris non modifiable dans la carte blanche. */
 .libre-corrige-box{
   width:100%;min-width:0;box-sizing:border-box;
   background:#e6e4ea;border:1px solid #d0ccd6;border-radius:6px;
@@ -4756,15 +4756,15 @@ textarea.pill-input,
 /* Mode libre (panneau de droite) : les champs suivent la largeur disponible.
    Listes de questions en grille auto (2, 3… colonnes), champs côte à côte s’il y a la place. */
 .side-tool-panel.is-libre .side-tool-panel-body{container-type:inline-size;container-name:libre}
-.side-tool-panel.is-libre :is(.libre-item-list:not(.is-tcm),.phrase-libre-list,.calli-fields,.tcf-choix-list){
+.side-tool-panel.is-libre :is(.libre-item-list:not(.is-tpm),.phrase-libre-list,.calli-fields,.tcf-choix-list){
   display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,260px),1fr));gap:10px 12px;align-items:start
 }
 .side-tool-panel.is-libre .phrase-libre-list{max-height:none;overflow:visible}
-.side-tool-panel.is-libre .libre-item-card:not(.is-tcm-row){
+.side-tool-panel.is-libre .libre-item-card:not(.is-tpm-row){
   display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;align-items:end
 }
-.side-tool-panel.is-libre .libre-item-card:not(.is-tcm-row)>.libre-item-num,
-.side-tool-panel.is-libre .libre-item-card:not(.is-tcm-row)>.libre-options{grid-column:1 / -1}
+.side-tool-panel.is-libre .libre-item-card:not(.is-tpm-row)>.libre-item-num,
+.side-tool-panel.is-libre .libre-item-card:not(.is-tpm-row)>.libre-options{grid-column:1 / -1}
 .side-tool-panel.is-libre .libre-options{
   display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:6px 8px
 }
@@ -4788,10 +4788,10 @@ textarea.pill-input,
   .side-tool-panel.is-libre .libre-frac-op-row{
     flex-wrap:wrap
   }
-  .side-tool-panel.is-libre .libre-item-card.is-tcm-row{
+  .side-tool-panel.is-libre .libre-item-card.is-tpm-row{
     grid-template-columns:1fr
   }
-  .side-tool-panel.is-libre .libre-item-card.is-tcm-row>.libre-item-num-col{
+  .side-tool-panel.is-libre .libre-item-card.is-tpm-row>.libre-item-num-col{
     flex-direction:row;justify-content:space-between;align-items:center;width:100%
   }
   .side-tool-panel.is-libre .tcf-editor{
@@ -4799,11 +4799,11 @@ textarea.pill-input,
   }
   .side-tool-panel.is-libre .tcf-row{flex-direction:column;align-items:stretch}
   .side-tool-panel.is-libre :is(
-    .libre-item-list:not(.is-tcm),.phrase-libre-list,.calli-fields,.game-entry-list
+    .libre-item-list:not(.is-tpm),.phrase-libre-list,.calli-fields,.game-entry-list
   ){
     display:flex!important;flex-direction:column
   }
-  .side-tool-panel.is-libre .libre-item-card:not(.is-tcm-row),
+  .side-tool-panel.is-libre .libre-item-card:not(.is-tpm-row),
   .side-tool-panel.is-libre .number-libre-fields{
     display:flex!important;flex-direction:column
   }
