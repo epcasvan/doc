@@ -244,12 +244,15 @@ export function BookStudio({
           </div>
         </div>
       )}
-      {phase === 'run' && page ? (
+      {phase === 'run' && page && file ? (
         <div className="book-capture" ref={hostRef} aria-hidden>
           <WorksheetSheet
               page={page}
               mode="student"
-              institutional={request.institutional}
+              institutional={{
+                ...request.institutional,
+                documentTitle: file.documentTitle,
+              }}
               evalMode={request.evalMode}
               pageNumber={sheetPos.sheet + 1}
               total={sheets.length}

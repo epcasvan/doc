@@ -1,6 +1,6 @@
 import { buildAlphaSeriesPages } from '@/alphabetisation/series'
-import { ALPHA_THEMES } from '@/alphabetisation/themes'
-import { buildSoutienSeriesPages } from '@/francais/soutien/series'
+import { ALPHA_THEMES, alphaFicheTitle } from '@/alphabetisation/themes'
+import { buildSoutienSeriesPages, soutienFicheTitle } from '@/francais/soutien/series'
 import { SOUTIEN_THEMES, type SoutienLetterOption, type SoutienThemeDef } from '@/francais/soutien/themes'
 import type { PageConfig } from '@/math/types'
 
@@ -10,6 +10,8 @@ export type BookLetterFile = {
   themeDir: string
   fileName: string
   label: string
+  /** Titre imprimé sur la feuille (« Lettre B et le son /b/ », « L’alphabet »…). */
+  documentTitle: string
   pages: PageConfig[]
   seed: number
 }
@@ -58,6 +60,7 @@ export function planBook(kind: BookKind, bookSeed: number): BookLetterFile[] {
         themeDir: `${pad(themeIndex + 1)}_${safeName(theme.label)}`,
         fileName: `${pad(letterIndex + 1)}_${letterTitle(letter, mode)}.pdf`,
         label: letterTitle(letter, mode),
+        documentTitle: kind === 'alpha' ? alphaFicheTitle(letter) : soutienFicheTitle(letter),
         pages,
         seed: bookSeed + files.length * 7919,
       })
