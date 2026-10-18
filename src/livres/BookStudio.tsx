@@ -59,14 +59,16 @@ export function BookStudio({
   request: BookRequest | null
   onClose: () => void
 }) {
-  const [phase, setPhase] = useState<'confirm' | 'run' | 'done' | 'error'>('confirm')
+  const [phase, setPhase] = useState<'confirm' | 'run' | 'done' | 'error' | 'cancelled'>('confirm')
   const [message, setMessage] = useState<string | null>(null)
+  const [askCancel, setAskCancel] = useState(false)
   const [sheetPos, setSheetPos] = useState({ file: 0, sheet: 0 })
   const hostRef = useRef<HTMLDivElement>(null)
   const dirRef = useRef<DirHandle | null>(null)
   const seedRef = useRef(0)
   const folderRef = useRef('')
   const busy = useRef(false)
+  const abortRef = useRef(false)
 
   const files = useMemo(
     () => (request ? planBook(request.kind, seedRef.current || request.seed || 1) : []),
@@ -85,6 +87,8 @@ export function BookStudio({
     folderRef.current = ''
     dirRef.current = null
     busy.current = false
+    abortRef.current = false
+    setAskCancel(false)
   }, [request])
 
   useEffect(() => {
@@ -98,12 +102,12 @@ export function BookStudio({
     const run = async () => {
       try {
         await waitForSheet(host)
-        if (cancelled) return
+        if (cancelled || abortRef.current) return
         const sheet = host.querySelector('.worksheet-sheet')
         if (!(sheet instanceof HTMLElement)) throw new Error('La fiche n’a pas pu être préparée.')
         const { jsPDF } = await import('jspdf')
         const canvas = await rasterWorksheet(sheet)
-        if (cancelled) return
+        if (cancelled || abortRef.current) return
         const key = `${folder}/${file.themeDir}/${file.fileName}`
         const existing = pdfs.get(key)
         const pdf = existing ?? new jsPDF({ unit: 'mm', format: 'a4', orientation: 'portrait' })
@@ -111,6 +115,7 @@ export function BookStudio({
         pdf.addImage(canvas.toDataURL('image/jpeg', 0.92), 'JPEG', 0, 0, 210, 297)
         const last = sheetPos.sheet >= sheets.length - 1
         if (!last) {
+          if (cancelled || abortRef.current) return
           pdfs.set(key, pdf)
           busy.current = false
           setSheetPos((pos) => ({ ...pos, sheet: pos.sheet + 1 }))
@@ -123,8 +128,9 @@ export function BookStudio({
         const writable = await handle.createWritable()
         await writable.write(pdf.output('blob'))
         await writable.close()
+        if (cancelled || abortRef.current) return
         if (sheetPos.file >= files.length - 1) {
-          if (request.saveCopy) {
+          if (request.saveCopy && !abortRef.current && !cancelled) {
             try {
               await createFiche(
                 bookDisplayName(request.kind),
@@ -143,14 +149,17 @@ export function BookStudio({
               setMessage('Le dossier est enregistré. La copie du livre n’a pas pu être ajoutée à la page des livres.')
             }
           }
+          if (cancelled || abortRef.current) return
           setPhase('done')
           busy.current = false
           return
         }
+        if (cancelled || abortRef.current) return
         busy.current = false
         setSheetPos({ file: sheetPos.file + 1, sheet: 0 })
       } catch (error) {
         busy.current = false
+        if (cancelled || abortRef.current) return
         setPhase('error')
         setMessage(error instanceof Error ? error.message : 'Le livre n’a pas pu être enregistré.')
       }
@@ -172,6 +181,17 @@ export function BookStudio({
   if (!request) return null
 
   const title = request.kind === 'alpha' ? 'Livre alphabétisation' : 'Livre soutien'
+  const totalSheets = files.reduce((sum, item) => sum + item.pages.length, 0)
+  const doneBefore = files.slice(0, sheetPos.file).reduce((sum, item) => sum + item.pages.length, 0)
+  const shownSheet = Math.min(totalSheets, doneBefore + sheetPos.sheet + 1)
+  const progress = totalSheets === 0 ? 0 : Math.round((shownSheet / totalSheets) * 100)
+
+  const confirmAbort = () => {
+    abortRef.current = true
+    pdfs.clear()
+    setAskCancel(false)
+    setPhase('cancelled')
+  }
 
   const start = async () => {
     const choose = picker()
@@ -183,6 +203,9 @@ export function BookStudio({
     try {
       dirRef.current = await choose()
       folderRef.current = bookFolderName(request.kind)
+      pdfs.clear()
+      abortRef.current = false
+      setAskCancel(false)
       setPhase('run')
     } catch {
       onClose()
@@ -221,6 +244,11 @@ export function BookStudio({
                 {message ? ` ${message}` : ''}
               </p>
             ) : null}
+            {phase === 'cancelled' ? (
+              <p className="save-fiche-lead">
+                L’impression est annulée. Les fiches déjà enregistrées restent dans le dossier.
+              </p>
+            ) : null}
             {phase === 'error' && message ? (
               <p className="access-error" role="alert">
                 {message}
@@ -238,9 +266,55 @@ export function BookStudio({
           </div>
         </div>
       ) : (
-        <div className="book-run-cover" role="status">
-          <div className="book-progress">
-            {title} — {file?.label ?? 'Préparation'} ({Math.min(sheetPos.file + 1, files.length)}/{files.length})
+        <div className="save-fiche-backdrop book-run-backdrop" role="presentation">
+          <div
+            className="save-fiche-dialog"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="book-run-title"
+          >
+            {askCancel ? (
+              <>
+                <h2 id="book-run-title">Annuler l’impression ?</h2>
+                <p className="save-fiche-lead">
+                  Les fiches déjà enregistrées restent dans le dossier. L’impression du livre s’arrête.
+                </p>
+                <div className="save-fiche-actions">
+                  <button className="button full" type="button" onClick={() => setAskCancel(false)}>
+                    Continuer l’impression
+                  </button>
+                  <button className="button secondary full" type="button" onClick={confirmAbort}>
+                    Annuler l’impression
+                  </button>
+                </div>
+              </>
+            ) : (
+              <>
+                <h2 id="book-run-title">Impression du livre</h2>
+                <p className="save-fiche-lead">{file?.documentTitle ?? 'Préparation de la fiche'}</p>
+                <div className="book-meter-label">
+                  <span>
+                    {shownSheet} / {totalSheets}
+                  </span>
+                  <span>{progress} %</span>
+                </div>
+                <div
+                  className="book-meter"
+                  role="progressbar"
+                  aria-valuemin={0}
+                  aria-valuemax={100}
+                  aria-valuenow={progress}
+                  aria-label="Avancement de l’impression"
+                >
+                  <span style={{ width: `${progress}%` }} />
+                </div>
+                <div className="save-fiche-actions">
+                  <button className="button secondary full" type="button" onClick={() => setAskCancel(true)}>
+                    Annuler
+                  </button>
+                </div>
+              </>
+            )}
           </div>
         </div>
       )}
