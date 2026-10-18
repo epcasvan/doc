@@ -5150,7 +5150,8 @@ textarea.pill-input,
 .fiches-panel{display:flex;flex-direction:column;gap:18px;max-width:920px}
 .fiches-intro h1{margin:0;font-size:clamp(32px,4vw,44px);letter-spacing:-.05em;line-height:1.05}
 .fiches-toolbar{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(160px,.7fr) minmax(140px,.5fr);gap:12px;align-items:end}
-.fiches-toolbar .access-field select,
+.fiches-toolbar .select-shell{min-width:0}
+.fiches-toolbar .select-box,.fiches-toolbar .select-control{width:100%}
 .save-fiche-dialog .access-field input,
 .fiches-toolbar .access-field input{width:100%}
 .access-field select{

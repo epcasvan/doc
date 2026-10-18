@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState, type FormEvent } from 'react'
 import { ACCESS_DOMAIN_OPTIONS, domainsForAccount, readAccessAccount } from '@/access'
 import { Header } from '@/components/generator/Header'
+import { SelectBox } from '@/components/generator/SelectBox'
 import {
   deleteFiche,
   FichesApiError,
@@ -221,28 +222,27 @@ export function SavedFichesPage({
                   placeholder="Saisissez quelques lettres du nom"
                 />
               </label>
-              <label className="access-field">
-                <span>Domaine</span>
-                <select
-                  value={domainFilter}
-                  onChange={(event) => setDomainFilter(event.target.value as Domain | 'tous')}
-                >
-                  <option value="tous">Tous les domaines</option>
-                  {domainOptions.map((option) => (
-                    <option key={option.id} value={option.id}>
-                      {option.label}
-                    </option>
-                  ))}
-                </select>
-              </label>
-              <label className="access-field">
-                <span>Trier</span>
-                <select value={sort} onChange={(event) => setSort(event.target.value as 'domaine' | 'nom' | 'date')}>
-                  <option value="domaine">Domaine</option>
-                  <option value="nom">Nom</option>
-                  <option value="date">Date</option>
-                </select>
-              </label>
+              <SelectBox
+                label="Domaine"
+                value={domainFilter}
+                onChange={(value) => setDomainFilter(value as Domain | 'tous')}
+              >
+                <option value="tous">Tous les domaines</option>
+                {domainOptions.map((option) => (
+                  <option key={option.id} value={option.id}>
+                    {option.label}
+                  </option>
+                ))}
+              </SelectBox>
+              <SelectBox
+                label="Trier"
+                value={sort}
+                onChange={(value) => setSort(value as 'domaine' | 'nom' | 'date')}
+              >
+                <option value="domaine">Domaine</option>
+                <option value="nom">Nom</option>
+                <option value="date">Date</option>
+              </SelectBox>
             </div>
             {error ? (
               <p className="access-error" role="alert">

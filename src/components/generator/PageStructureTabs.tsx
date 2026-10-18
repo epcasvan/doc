@@ -42,10 +42,6 @@ export function PageStructureTabs({
     <>
             <div className="panel-title">
               <h3>Paramètres de l’activité</h3>
-              <span>
-                {worksheets.length} feuille{worksheets.length > 1 ? 's' : ''}
-                {pages.length !== worksheets.length ? ` · ${pages.length} config.` : ''}
-              </span>
             </div>
             <div className="mode-toggle is-tabs page-tabs" role="tablist" aria-label="Feuilles">
               {worksheets.map((sheet, index) => {
