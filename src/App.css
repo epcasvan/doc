@@ -4400,20 +4400,11 @@ textarea.pill-input,
   ){
     display:flex!important;flex-direction:column;gap:10px;max-height:none;overflow:visible
   }
-  .side-tool-panel.is-libre .libre-item-card:not(.is-tpm-row){
-    display:flex!important;flex-direction:column;align-items:stretch;gap:8px
-  }
   .side-tool-panel.is-libre .libre-options{
-    display:flex!important;flex-direction:column;gap:8px
+    display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:8px
   }
   .side-tool-panel.is-libre .number-libre-fields{
-    grid-template-columns:1fr;gap:10px
-  }
-  .side-tool-panel.is-libre .game-entry-row,
-  .side-tool-panel.is-libre .soutien-mots-libre .game-entry-row,
-  .side-tool-panel.is-libre .soutien-completer-row,
-  .side-tool-panel.is-libre .soutien-completer-add{
-    grid-template-columns:1fr!important;gap:8px
+    grid-template-columns:auto auto;justify-content:start;gap:10px 16px
   }
   .side-tool-panel.is-libre .phrase-libre-card{
     display:flex;flex-direction:column;gap:8px;min-width:0
@@ -4753,28 +4744,64 @@ textarea.pill-input,
 .libre-num-add{
   border-color:var(--purple);color:var(--purple);font-size:16px
 }
-/* Mode libre (panneau de droite) : les champs suivent la largeur disponible.
-   Listes de questions en grille auto (2, 3… colonnes), champs côte à côte s’il y a la place. */
+/* Mode libre (sauf TPM / TCF) : une question sous l’autre, n° à gauche, champs liés côte à côte. */
 .side-tool-panel.is-libre .side-tool-panel-body{container-type:inline-size;container-name:libre}
-.side-tool-panel.is-libre :is(.libre-item-list:not(.is-tpm),.phrase-libre-list,.calli-fields,.tcf-choix-list){
-  display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,260px),1fr));gap:10px 12px;align-items:start
+.side-tool-panel.is-libre :is(.phrase-libre-editor,.quad-libre-block){
+  margin:0;padding:0;border:0;background:transparent;border-radius:0
 }
-.side-tool-panel.is-libre .phrase-libre-list{max-height:none;overflow:visible}
-.side-tool-panel.is-libre .libre-item-card:not(.is-tpm-row){
-  display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;align-items:end
+.side-tool-panel.is-libre :is(.libre-item-list:not(.is-tpm),.phrase-libre-list,.calli-fields,.game-entry-list){
+  display:flex;flex-direction:column;gap:10px;max-height:none;overflow:visible
 }
-.side-tool-panel.is-libre .libre-item-card:not(.is-tpm-row)>.libre-item-num,
-.side-tool-panel.is-libre .libre-item-card:not(.is-tpm-row)>.libre-options{grid-column:1 / -1}
+.side-tool-panel.is-libre .libre-pair{
+  display:flex;flex-wrap:wrap;gap:8px 12px;align-items:end
+}
+.side-tool-panel.is-libre .libre-pair>.libre-field{flex:1 1 140px;min-width:0}
+.side-tool-panel.is-libre .libre-item-card.is-libre-row,
+.side-tool-panel.is-libre .phrase-libre-card{
+  display:grid;grid-template-columns:2.2em minmax(0,1fr);gap:8px 10px;align-items:start;
+  background:#fff;border:1px solid var(--line);border-radius:10px;padding:8px 10px
+}
+.side-tool-panel.is-libre .libre-item-card.is-libre-row>.libre-item-num,
+.side-tool-panel.is-libre .phrase-libre-card>.phrase-libre-index{
+  grid-column:1;grid-row:1;padding-top:8px;color:var(--purple);font-weight:800
+}
+.side-tool-panel.is-libre .libre-item-card.is-libre-row>.libre-item-body,
+.side-tool-panel.is-libre .phrase-libre-card>.libre-item-body,
+.side-tool-panel.is-libre .phrase-libre-card>:not(.phrase-libre-index){grid-column:2}
+.side-tool-panel.is-libre .phrase-libre-tokens{display:flex;flex-direction:column;gap:8px}
+.side-tool-panel.is-libre .phrase-libre-token{
+  display:grid;grid-template-columns:minmax(0,1.4fr) minmax(7.5em,.8fr) auto;gap:6px;align-items:center
+}
 .side-tool-panel.is-libre .libre-options{
   display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:6px 8px
 }
 .side-tool-panel.is-libre .libre-options>b{grid-column:1 / -1}
+.side-tool-panel.is-libre .number-libre-fields{
+  display:grid;grid-template-columns:auto auto;justify-content:start;gap:8px 18px;align-items:end
+}
+.side-tool-panel.is-libre .number-libre-fields>b{grid-column:1 / -1}
+.side-tool-panel.is-libre .game-entry-list{counter-reset:libre-line}
+.side-tool-panel.is-libre .game-entry-row,
+.side-tool-panel.is-libre .soutien-completer-row{
+  display:grid;align-items:center;gap:8px;
+  grid-template-columns:1.6em 40px minmax(0,1fr) auto auto;
+  padding:6px 0;border-bottom:1px solid var(--line)
+}
+.side-tool-panel.is-libre .soutien-completer-row{
+  grid-template-columns:1.6em 40px 4.6em minmax(5em,1fr) minmax(8em,1.3fr) 32px
+}
+.side-tool-panel.is-libre .game-entry-row::before,
+.side-tool-panel.is-libre .soutien-completer-row::before{
+  counter-increment:libre-line;content:counter(libre-line) ".";
+  font-weight:800;color:var(--purple);text-align:right
+}
+.side-tool-panel.is-libre .calli-field-num{color:var(--purple);font-weight:800}
+.side-tool-panel.is-libre .libre-section{display:flex;flex-direction:column;gap:8px}
 .side-tool-panel.is-libre .tcf-editor{
   display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:10px 12px;align-items:start
 }
 .side-tool-panel.is-libre .tcf-editor>:not(.tcf-question-editor){grid-column:1 / -1}
 .side-tool-panel.is-libre .tcf-row>.tcf-field{flex:1 1 200px}
-.side-tool-panel.is-libre .number-libre-fields{grid-template-columns:repeat(auto-fill,minmax(160px,1fr))}
 .side-tool-panel.is-libre .libre-textarea,
 .side-tool-panel.is-libre .tcf-textarea{max-width:900px}
 @container libre (min-width:620px){
@@ -4803,10 +4830,15 @@ textarea.pill-input,
   ){
     display:flex!important;flex-direction:column
   }
-  .side-tool-panel.is-libre .libre-item-card:not(.is-tpm-row),
-  .side-tool-panel.is-libre .number-libre-fields{
-    display:flex!important;flex-direction:column
+  .side-tool-panel.is-libre .libre-item-card.is-libre-row,
+  .side-tool-panel.is-libre .phrase-libre-card,
+  .side-tool-panel.is-libre .number-libre-fields,
+  .side-tool-panel.is-libre .game-entry-row,
+  .side-tool-panel.is-libre .soutien-completer-row{
+    display:flex!important;flex-direction:column;align-items:stretch
   }
+  .side-tool-panel.is-libre .game-entry-row::before,
+  .side-tool-panel.is-libre .soutien-completer-row::before{text-align:left}
 }
 /* —— TCM CFR : dictée audio, symétrie, segments, métro —— */
 .tcm-cfr-audio-dictation{display:flex;flex-direction:column;gap:8px;width:100%}

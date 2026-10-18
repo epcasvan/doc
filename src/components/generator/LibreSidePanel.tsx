@@ -121,10 +121,10 @@ export function LibreSidePanel({
         {isNumberLibreDomain ? (
           <div className="number-libre-fields">
             <b>Bornes des nombres</b>
-            <label>
-              Minimum
+            <label className="libre-field is-line">
+              <span>Minimum</span>
               <input
-                className="pill-input"
+                className="libre-line-input is-num"
                 type="number"
                 value={activeBlock.numberMin ?? 0}
                 onChange={(event) =>
@@ -132,10 +132,10 @@ export function LibreSidePanel({
                 }
               />
             </label>
-            <label>
-              Maximum
+            <label className="libre-field is-line">
+              <span>Maximum</span>
               <input
-                className="pill-input"
+                className="libre-line-input is-num"
                 type="number"
                 value={activeBlock.numberMax ?? 100}
                 onChange={(event) =>
@@ -186,7 +186,10 @@ export function LibreSidePanel({
         ) : null}
         {isCalliDomain ? (
           <div className="quad-libre-block">
-            <b>{calliIsPhrases ? 'Phrases' : 'Mots'}</b>
+            <b>{calliIsPhrases ? 'Phrases à recopier' : 'Mots à recopier'}</b>
+            <p className="type-hint muted">
+              Une ligne par modèle. L’ordre ici est l’ordre sur la fiche.
+            </p>
             <ul
               className="calli-fields"
               aria-label={calliIsPhrases ? 'Phrases à recopier' : 'Mots ou phrases à recopier'}
