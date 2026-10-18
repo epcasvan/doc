@@ -244,16 +244,17 @@ export function genKind(
             const type1 = type1Words(bank, rng, Math.max(18, want))
             const built = completesFromType1Words(bank, type1)
             return shuffle(rng, built)
-              .slice(0, Math.min(want, built.length))
               .map((row) => ({
                 article: row.article,
                 before: row.before,
                 blank: row.blank,
                 after: row.after,
                 word: row.word,
-                imageSrc: soutienImageFor(row.word),
+                imageSrc: soutienImageFor(row.word) || resolveGameImageSrc(row.word),
                 audioSrc: soutienAudioFor(row.word),
               }))
+              .filter((row) => row.imageSrc && row.audioSrc)
+              .slice(0, Math.min(want, built.length))
           })()
       const rows = Math.max(1, Math.ceil(pool.length / cols))
       return {
@@ -391,15 +392,27 @@ export function genKind(
             (wordHasLessonLetter(item.word, bank) || wordHasLessonSound(item.word, bank)),
         ),
       )
-      let chosen = pool.slice(0, need)
+      let chosen = pool.filter((item) => {
+        const raw = item.word.trim()
+        const word = displayVocabLabel(raw)
+        return Boolean(
+          resolveGameImageSrc(raw) || soutienImageFor(raw) || soutienImageFor(word),
+        )
+      })
       if (chosen.length < need) {
         const rest = bank.syllableItems.filter(
           (item) =>
             syllabifyFr(item.word).length >= 2 &&
-            !chosen.some((t) => t.word.toLowerCase() === item.word.toLowerCase()),
+            !chosen.some((t) => t.word.toLowerCase() === item.word.toLowerCase()) &&
+            Boolean(
+              resolveGameImageSrc(item.word) ||
+                soutienImageFor(item.word) ||
+                soutienImageFor(displayVocabLabel(item.word)),
+            ),
         )
-        chosen = [...chosen, ...shuffle(rng, rest)].slice(0, need)
+        chosen = [...chosen, ...shuffle(rng, rest)]
       }
+      chosen = chosen.slice(0, need)
       return {
         instruction: `À quelle syllabe entendez-vous le son ${bank.sound} ?`,
         preferredColumns: 1,

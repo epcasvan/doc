@@ -43,6 +43,7 @@ import { isPhraseLibreEditable } from '@/francais/PhraseLibreEditor'
 import type { VocabWordEntry } from '@/francais/vocab-learn'
 import { createFiche, storeSyncPassword, updateFiche } from '@/fiches/api'
 import { buildFicheRecipe, readStagedFiche, rememberFicheOnHistory } from '@/fiches/recipe'
+import { BookStudio, type BookRequest } from '@/livres/BookStudio'
 import { buildWorksheets } from '@/math/generate'
 import {
   blockFromPage,
@@ -94,6 +95,7 @@ export function GeneratorPage({
     openedFiche ? { id: openedFiche.id, name: openedFiche.name } : null,
   )
   const [saveOpen, setSaveOpen] = useState(false)
+  const [bookRequest, setBookRequest] = useState<BookRequest | null>(null)
   const previewFrameRef = useRef<HTMLDivElement>(null)
 
   const applyThemeColor = (color: string) => {
@@ -436,6 +438,14 @@ export function GeneratorPage({
     generate,
     printAll,
     onSaveFiche: () => setSaveOpen(true),
+    onOpenBook: () =>
+      setBookRequest({
+        kind: activePage.domain === 'alphabetisation' ? 'alpha' : 'soutien',
+        institutional,
+        evalMode,
+        pointsPerQuestion,
+        saveCopy: true,
+      }),
     jeuxPreviewSheets,
     previewFrameRef,
     seed,
@@ -611,6 +621,7 @@ export function GeneratorPage({
           onSubmit={persistFiche}
         />
       ) : null}
+      <BookStudio request={bookRequest} onClose={() => setBookRequest(null)} />
     </div>
   )
 }

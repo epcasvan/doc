@@ -2,6 +2,8 @@ import { useEffect, useMemo, useState, type FormEvent } from 'react'
 import { ACCESS_DOMAIN_OPTIONS, domainsForAccount, readAccessAccount } from '@/access'
 import { Header } from '@/components/generator/Header'
 import { SelectBox } from '@/components/generator/SelectBox'
+import { DEFAULT_INSTITUTIONAL } from '@/components/math/PrintDocumentChrome'
+import { BookStudio, type BookRequest } from '@/livres/BookStudio'
 import {
   deleteFiche,
   FichesApiError,
@@ -39,6 +41,8 @@ export function SavedFichesPage({
   const [query, setQuery] = useState('')
   const [domainFilter, setDomainFilter] = useState<Domain | 'tous'>('tous')
   const [sort, setSort] = useState<'domaine' | 'nom' | 'date'>('domaine')
+  const [library, setLibrary] = useState<'fiches' | 'alpha' | 'soutien'>('fiches')
+  const [bookRequest, setBookRequest] = useState<BookRequest | null>(null)
   const [loading, setLoading] = useState(unlocked && configured)
   const [error, setError] = useState<string | null>(null)
   const [pendingDelete, setPendingDelete] = useState<string | null>(null)
@@ -108,8 +112,11 @@ export function SavedFichesPage({
   const visible = useMemo(() => {
     const needle = query.trim().toLowerCase()
     const rows = fiches.filter((fiche) => {
+      const inLibrary =
+        library === 'fiches' ? !fiche.recipe.bookKind : fiche.recipe.bookKind === library
+      if (!inLibrary) return false
       const nameOk = !needle || fiche.name.toLowerCase().includes(needle)
-      const domainOk = domainFilter === 'tous' || fiche.domains.includes(domainFilter)
+      const domainOk = library !== 'fiches' || domainFilter === 'tous' || fiche.domains.includes(domainFilter)
       return nameOk && domainOk
     })
     rows.sort((a, b) => {
@@ -120,7 +127,7 @@ export function SavedFichesPage({
       return a.name.localeCompare(b.name, 'fr')
     })
     return rows
-  }, [domainFilter, fiches, query, sort])
+  }, [domainFilter, fiches, library, query, sort])
 
   const unlock = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
@@ -210,8 +217,23 @@ export function SavedFichesPage({
             <header className="fiches-intro">
               <p className="eyebrow">Bibliothèque</p>
               <h1>Fiches enregistrées</h1>
-              <p className="access-lead">Ouvrez une fiche pour retrouver la même configuration, puis imprimez-la.</p>
+              <p className="access-lead">
+                {library === 'fiches'
+                  ? 'Ouvrez une fiche pour retrouver la même configuration, puis imprimez-la.'
+                  : 'Retrouvez un livre déjà généré et enregistrez à nouveau son dossier.'}
+              </p>
             </header>
+            <div className="mode-toggle is-3" role="tablist" aria-label="Bibliothèque">
+              <button type="button" className={library === 'fiches' ? 'active' : ''} onClick={() => setLibrary('fiches')}>
+                Fiches
+              </button>
+              <button type="button" className={library === 'alpha' ? 'active' : ''} onClick={() => setLibrary('alpha')}>
+                Livre alphabétisation
+              </button>
+              <button type="button" className={library === 'soutien' ? 'active' : ''} onClick={() => setLibrary('soutien')}>
+                Livre soutien
+              </button>
+            </div>
             <div className="fiches-toolbar">
               <label className="access-field fiches-search">
                 <span>Rechercher une fiche</span>
@@ -255,9 +277,13 @@ export function SavedFichesPage({
             {loading ? <p className="fiches-empty">Chargement des fiches…</p> : null}
             {!loading && visible.length === 0 ? (
               <p className="fiches-empty">
-                {fiches.length === 0
-                  ? 'Aucune fiche enregistrée pour le moment.'
-                  : 'Aucune fiche ne correspond à la recherche.'}
+                {library === 'fiches'
+                  ? fiches.some((fiche) => !fiche.recipe.bookKind)
+                    ? 'Aucune fiche ne correspond à la recherche.'
+                    : 'Aucune fiche enregistrée pour le moment.'
+                  : fiches.some((fiche) => fiche.recipe.bookKind === library)
+                    ? 'Aucun livre ne correspond à la recherche.'
+                    : 'Aucun livre enregistré pour le moment.'}
               </p>
             ) : null}
             <ul className="fiches-list">
@@ -282,9 +308,28 @@ export function SavedFichesPage({
                       </>
                     ) : (
                       <>
-                        <button className="button small" type="button" onClick={() => openFiche(fiche)}>
-                          Ouvrir
-                        </button>
+                        {library === 'fiches' ? (
+                          <button className="button small" type="button" onClick={() => openFiche(fiche)}>
+                            Ouvrir
+                          </button>
+                        ) : (
+                          <button
+                            className="button small"
+                            type="button"
+                            onClick={() =>
+                              setBookRequest({
+                                kind: library,
+                                seed: fiche.recipe.seed,
+                                institutional: { ...DEFAULT_INSTITUTIONAL, ...fiche.recipe.institutional },
+                                evalMode: fiche.recipe.evalMode,
+                                pointsPerQuestion: fiche.recipe.pointsPerQuestion,
+                                saveCopy: false,
+                              })
+                            }
+                          >
+                            Enregistrer le dossier
+                          </button>
+                        )}
                         <button className="topbar-text-btn" type="button" onClick={() => setPendingDelete(fiche.id)}>
                           Supprimer
                         </button>
@@ -297,6 +342,7 @@ export function SavedFichesPage({
           </section>
         )}
       </main>
+      <BookStudio request={bookRequest} onClose={() => setBookRequest(null)} />
     </div>
   )
 }

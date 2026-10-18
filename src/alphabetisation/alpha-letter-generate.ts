@@ -263,22 +263,23 @@ function associerSyllabes(
   }
 }
 
-function syllablePool(bank: SoutienVowelBank, rng: Rng, need: number) {
+function syllablePool(bank: SoutienVowelBank, rng: Rng, need: number, requireAudio = false) {
+  const hasAudio = (word: string) =>
+    Boolean(soutienAudioFor(word) || soutienAudioFor(displayVocabLabel(word)))
+  const eligible = (word: string) =>
+    syllabifyFr(word).length >= 2 &&
+    (wordHasLessonLetter(word, bank) || wordHasLessonSound(word, bank)) &&
+    (!requireAudio || hasAudio(word))
   const pool = shuffle(
     rng,
-    bank.syllableItems.filter((item) => {
-      const parts = syllabifyFr(item.word)
-      return (
-        parts.length >= 2 &&
-        (wordHasLessonLetter(item.word, bank) || wordHasLessonSound(item.word, bank))
-      )
-    }),
+    bank.syllableItems.filter((item) => eligible(item.word)),
   )
   let chosen = pool.slice(0, need)
   if (chosen.length < need) {
     const rest = bank.syllableItems.filter(
       (item) =>
         syllabifyFr(item.word).length >= 2 &&
+        (!requireAudio || hasAudio(item.word)) &&
         !chosen.some((t) => t.word.toLowerCase() === item.word.toLowerCase()),
     )
     chosen = [...chosen, ...shuffle(rng, rest)].slice(0, need)
@@ -319,7 +320,7 @@ export function generateAlphaLetterKind(
     case 'syllabe-son-qr': {
       const cols = Math.max(1, Math.min(3, Math.round(options?.columns ?? 3) || 3))
       const need = Math.max(1, Math.min(18, n))
-      const chosen = syllablePool(bank, rng, need)
+      const chosen = syllablePool(bank, rng, need, true)
       return {
         instruction: `À quelle syllabe entendez-vous le son ${bank.sound} ?`,
         preferredColumns: 1,

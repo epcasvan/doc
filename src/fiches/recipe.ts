@@ -11,6 +11,8 @@ export type FicheRecipe = {
   pointsPerQuestion: number
   libreMode: boolean
   libreSnapshot: PageConfig[] | null
+  /** Livre complet : la graine reconstruit toutes les lettres. */
+  bookKind?: 'alpha' | 'soutien'
 }
 
 export type SavedFiche = {
@@ -62,6 +64,7 @@ export function parseFicheRecipe(value: unknown): FicheRecipe | null {
     pointsPerQuestion: value.pointsPerQuestion,
     libreMode: value.libreMode,
     libreSnapshot: (value.libreSnapshot as PageConfig[] | null) ?? null,
+    bookKind: value.bookKind === 'alpha' || value.bookKind === 'soutien' ? value.bookKind : undefined,
   }
 }
 
@@ -81,6 +84,7 @@ export function buildFicheRecipe(input: {
   pointsPerQuestion: number
   libreMode: boolean
   libreSnapshot: PageConfig[] | null
+  bookKind?: 'alpha' | 'soutien'
 }): FicheRecipe {
   return { version: 1, ...input }
 }

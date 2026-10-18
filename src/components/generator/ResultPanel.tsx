@@ -34,6 +34,7 @@ export type ResultPanelProps = {
   generate: () => void
   printAll: () => void
   onSaveFiche: () => void
+  onOpenBook: () => void
   isCalliDomain: boolean
   isJeuxDomain: boolean
   jeuxPreviewSheets: Array<{ sheet: WorksheetPage; index: number }> | null
@@ -98,6 +99,7 @@ export function ResultPanel({
   generate,
   printAll,
   onSaveFiche,
+  onOpenBook,
   isCalliDomain,
   isJeuxDomain,
   jeuxPreviewSheets,
@@ -289,10 +291,26 @@ export function ResultPanel({
                   <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden>
                     <path
                       fill="currentColor"
-                      d="M18 3H6v4h12V3zm1 6H5a3 3 0 0 0-3 3v5h4v4h12v-4h4v-5a3 3 0 0 0-3-3zm-3 11H8v-5h8v5zm3-7.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"
-                    />
-                  </svg>
+                    d="M18 3H6v4h12V3zm1 6H5a3 3 0 0 0-3 3v5h4v4h12v-4h4v-5a3 3 0 0 0-3-3zm-3 11H8v-5h8v5zm3-7.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"
+                  />
+                </svg>
                 </button>
+                {isAlphabetisation || isSoutienFr ? (
+                  <button
+                    className="print-chip is-icon is-generate"
+                    type="button"
+                    onClick={onOpenBook}
+                    aria-label={isAlphabetisation ? 'Générer le livre alphabétisation' : 'Générer le livre soutien'}
+                    title={isAlphabetisation ? 'Générer le livre alphabétisation' : 'Générer le livre soutien'}
+                  >
+                    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden>
+                      <path
+                        fill="currentColor"
+                        d="M5 4.5A2.5 2.5 0 0 1 7.5 2H12v18H7.5A2.5 2.5 0 0 0 5 22.5v-18zM19 4.5A2.5 2.5 0 0 0 16.5 2H12v18h4.5a2.5 2.5 0 0 1 2.5 2.5v-18z"
+                      />
+                    </svg>
+                  </button>
+                ) : null}
               </div>
             </div>
             <div className="sheet-preview-wrap no-print-nav">

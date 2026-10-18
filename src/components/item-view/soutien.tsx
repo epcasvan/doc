@@ -495,7 +495,9 @@ export function SyllableSoundBlock({ item, mode }: { item: MathItem; mode: Previ
           } as CSSProperties
         }
       >
-        {rows.map((row, index) => (
+        {rows.map((row, index) => {
+          if (qrOnly ? !row.audioSrc : !row.imageSrc) return null
+          return (
           <div className="syllable-sound-card" key={`ss-${index}-${row.word}`}>
             <div className="syllable-sound-image">
               {qrOnly ? (
@@ -541,7 +543,8 @@ export function SyllableSoundBlock({ item, mode }: { item: MathItem; mode: Previ
               </table>
             </div>
           </div>
-        ))}
+          )
+        })}
       </div>
     </div>
   )
