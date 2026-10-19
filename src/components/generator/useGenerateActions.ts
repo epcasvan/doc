@@ -108,9 +108,12 @@ export function useGenerateActions({
       // Contenu libre déjà saisi : on le fige explicitement (nouvelles refs) pour forcer l’aperçu.
       // TPM / TCM CFR : recalcule les réponses à partir des valeurs éditées.
       if (libreMode && Array.isArray(block.libreItems) && block.libreItems.length > 0) {
-        const frozen = isTpmFamilyExercise(block.exerciseType)
-          ? recalcTpmLibreItems(block.libreItems, block.exerciseType)
-          : block.libreItems.map((item) => ({ ...item }))
+        const frozen =
+          isTpmFamilyExercise(block.exerciseType) ||
+          page.domain === 'algèbre' ||
+          page.domain === 'géométrie'
+            ? recalcTpmLibreItems(block.libreItems, block.exerciseType)
+            : block.libreItems.map((item) => ({ ...item }))
         return current.map((p, i) =>
           i !== pageIndex
             ? p
@@ -315,7 +318,9 @@ export function useGenerateActions({
           isTpmFamilyExercise(block.exerciseType) ||
           page.domain === 'tpm' ||
           page.domain === 'tcm-cfr' ||
-          page.domain === 'tcm-csc'
+          page.domain === 'tcm-csc' ||
+          page.domain === 'algèbre' ||
+          page.domain === 'géométrie'
         ) {
           // Relâche le tirage figé pour re-mélanger (libre inclus).
           patch = {

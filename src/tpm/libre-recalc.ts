@@ -3,7 +3,7 @@
  * Appelé à la validation (bouton ✓ à côté du téléchargement).
  */
 import { fmt, sanitizeFrNumberNoise } from '@/math/column-arith'
-import type { ArithOp, Figure, MathItem } from '@/math/types'
+import type { ArithOp, Figure, FigureDims, MathItem } from '@/math/types'
 import { mulAudioParts, numberAudioParts } from '@/tcm-cfr/audio-nombres'
 import { clampFracShapeCfr } from '@/math/fraction-shapes'
 import { rebuildCountIconsItem } from '@/math/count-icons'
@@ -177,6 +177,179 @@ function requiresSubAgtB(exerciseType: string): boolean {
   )
 }
 
+const MEASURE_DIM_KEYS = [
+  'side',
+  'length',
+  'width',
+  'base',
+  'height',
+  'a',
+  'b',
+  'c',
+  'top',
+  'bottom',
+  'radius',
+  'diameter',
+  'd1',
+  'd2',
+  'perimeter',
+] as const satisfies readonly (keyof FigureDims)[]
+
+export function hasMeasureDims(dims?: FigureDims): boolean {
+  if (!dims) return false
+  return MEASURE_DIM_KEYS.some((key) => typeof dims[key] === 'number')
+}
+
+function dimNum(dims: FigureDims, key: keyof FigureDims): number | null {
+  const value = dims[key]
+  return typeof value === 'number' && Number.isFinite(value) ? value : null
+}
+
+/** Périmètre, aire ou volume d’une figure d’algèbre / géométrie, à partir des cotes. */
+function recalcSchoolMeasure(item: MathItem): MathItem {
+  const dims = item.dims
+  if (!dims || dims.ask) return item
+  const unit = dims.unit ?? 'cm'
+  const prompt = item.prompt ?? ''
+  const kind = /volume/i.test(prompt) ? 'volume' : /aire/i.test(prompt) ? 'area' : 'peri'
+  const pi = 3.14
+  const round2 = (n: number) => Math.round(n * 100) / 100
+  const fig = item.figure
+  let value: number | null = null
+  let calc = item.calcAnswer
+
+  if (kind === 'peri') {
+    if (fig === 'square' || fig === 'rhombus') {
+      const side = dimNum(dims, 'side')
+      if (side != null) {
+        value = round2(4 * side)
+        calc = `4 × ${fmt(side)}`
+      }
+    } else if (fig === 'rectangle') {
+      const length = dimNum(dims, 'length')
+      const width = dimNum(dims, 'width')
+      if (length != null && width != null) {
+        value = round2(2 * (length + width))
+        calc = `2 × (${fmt(length)} + ${fmt(width)})`
+      }
+    } else if (fig === 'triangle') {
+      const a = dimNum(dims, 'a')
+      const b = dimNum(dims, 'b')
+      const c = dimNum(dims, 'c')
+      if (a != null && b != null && c != null) {
+        value = round2(a + b + c)
+        calc = `${fmt(a)} + ${fmt(b)} + ${fmt(c)}`
+      }
+    } else if (fig === 'parallelogram') {
+      const base = dimNum(dims, 'base')
+      const side = dimNum(dims, 'side')
+      if (base != null && side != null) {
+        value = round2(2 * (base + side))
+        calc = `2 × (${fmt(base)} + ${fmt(side)})`
+      }
+    } else if (fig === 'trapezoid') {
+      const top = dimNum(dims, 'top')
+      const bottom = dimNum(dims, 'bottom')
+      const a = dimNum(dims, 'a')
+      const b = dimNum(dims, 'b')
+      if (top != null && bottom != null && a != null && b != null) {
+        value = round2(top + bottom + a + b)
+        calc = `${fmt(top)} + ${fmt(bottom)} + ${fmt(a)} + ${fmt(b)}`
+      }
+    } else if (fig === 'circle') {
+      const radius = dimNum(dims, 'radius')
+      if (radius != null) {
+        value = round2(2 * pi * radius)
+        calc = `2 × 3,14 × ${fmt(radius)}`
+      }
+    }
+  } else if (kind === 'area') {
+    if (fig === 'square') {
+      const side = dimNum(dims, 'side')
+      if (side != null) {
+        value = round2(side * side)
+        calc = `${fmt(side)} × ${fmt(side)}`
+      }
+    } else if (fig === 'rectangle') {
+      const length = dimNum(dims, 'length')
+      const width = dimNum(dims, 'width')
+      if (length != null && width != null) {
+        value = round2(length * width)
+        calc = `${fmt(length)} × ${fmt(width)}`
+      }
+    } else if (fig === 'triangle') {
+      const base = dimNum(dims, 'base')
+      const height = dimNum(dims, 'height')
+      if (base != null && height != null) {
+        value = round2((base * height) / 2)
+        calc = `(${fmt(base)} × ${fmt(height)}) ÷ 2`
+      }
+    } else if (fig === 'parallelogram' || fig === 'rhombus') {
+      const base = dimNum(dims, fig === 'rhombus' ? 'side' : 'base')
+      const height = dimNum(dims, 'height')
+      if (base != null && height != null) {
+        value = round2(base * height)
+        calc = `${fmt(base)} × ${fmt(height)}`
+      }
+    } else if (fig === 'trapezoid') {
+      const top = dimNum(dims, 'top')
+      const bottom = dimNum(dims, 'bottom')
+      const height = dimNum(dims, 'height')
+      if (top != null && bottom != null && height != null) {
+        value = round2(((top + bottom) * height) / 2)
+        calc = `(${fmt(top)} + ${fmt(bottom)}) × ${fmt(height)} ÷ 2`
+      }
+    } else if (fig === 'circle') {
+      const radius = dimNum(dims, 'radius')
+      if (radius != null) {
+        value = round2(pi * radius * radius)
+        calc = `3,14 × ${fmt(radius)}²`
+      }
+    }
+  } else if (fig === 'cube') {
+    const side = dimNum(dims, 'side')
+    if (side != null) {
+      value = round2(side * side * side)
+      calc = `${fmt(side)}³`
+    }
+  } else if (fig === 'cuboid') {
+    const length = dimNum(dims, 'length')
+    const width = dimNum(dims, 'width')
+    const height = dimNum(dims, 'height')
+    if (length != null && width != null && height != null) {
+      value = round2(length * width * height)
+      calc = `${fmt(length)} × ${fmt(width)} × ${fmt(height)}`
+    }
+  } else if (fig === 'cylinder' || fig === 'cone') {
+    const radius = dimNum(dims, 'radius')
+    const height = dimNum(dims, 'height')
+    if (radius != null && height != null) {
+      const raw = pi * radius * radius * height
+      value = round2(fig === 'cone' ? raw / 3 : raw)
+      calc =
+        fig === 'cone'
+          ? `(3,14 × ${fmt(radius)}² × ${fmt(height)}) ÷ 3`
+          : `3,14 × ${fmt(radius)}² × ${fmt(height)}`
+    }
+  } else if (fig === 'sphere') {
+    const radius = dimNum(dims, 'radius')
+    if (radius != null) {
+      value = round2((4 / 3) * pi * radius * radius * radius)
+      calc = `(4 ÷ 3) × 3,14 × ${fmt(radius)}³`
+    }
+  }
+
+  if (value == null) return item
+  const suffix = kind === 'area' ? `${unit}²` : kind === 'volume' ? `${unit}³` : unit
+  const response = `${fmt(value)} ${suffix}`
+  return {
+    ...item,
+    calcAnswer: calc,
+    responseAnswer: response,
+    answer: response,
+  }
+}
+
 /** TCM CFR 9–10 ou TPM normal 18 : multiplicateur plafonné à 99. */
 function capsMulBAt99(exerciseType: string): boolean {
   return (
@@ -204,7 +377,14 @@ function fixedColumnWidth(exerciseType: string): number | null {
     exerciseType === 'tpm-add-sub-col-4' ||
     exerciseType === 'tpm-dec-add-sub' ||
     exerciseType === 'tpm-mul-mixte' ||
-    exerciseType === 'tpm-mul-div-col'
+    exerciseType === 'tpm-mul-div-col' ||
+    exerciseType.startsWith('addition-colonne') ||
+    exerciseType.startsWith('soustraction-colonne') ||
+    exerciseType.startsWith('multiplication-colonne') ||
+    exerciseType.startsWith('multiplication-2chiffres') ||
+    exerciseType.startsWith('decimaux-add-colonne') ||
+    exerciseType.startsWith('decimaux-sub-colonne') ||
+    exerciseType.startsWith('decimaux-mul-colonne')
   ) {
     return 7
   }
@@ -1207,6 +1387,16 @@ export function recalcTpmLibreItem(item: MathItem, exerciseType: string): MathIt
   }
   if (next.layout === 'geo' && (exerciseType.includes('ex25') || exerciseType.includes('ex26'))) {
     return recalcSideFromPerimeter(next)
+  }
+  if (
+    next.layout === 'geo' &&
+    next.figure &&
+    next.dims &&
+    !next.geoDualPads &&
+    !next.geoNameCard &&
+    hasMeasureDims(next.dims)
+  ) {
+    return recalcSchoolMeasure(next)
   }
   if (next.layout === 'text') return recalcTextProblem(next)
   if (next.layout === 'audio-dictation') {

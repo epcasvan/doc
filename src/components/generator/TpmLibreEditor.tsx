@@ -6,7 +6,7 @@
  * avec brouillon local (retour arrière OK ; vide → valeur précédente).
  */
 import { useEffect, useRef, useState, type ReactNode } from 'react'
-import type { ArithOp, MathItem, MissingPos } from '@/math/types'
+import type { ArithOp, Figure, FigureDims, MathItem, MissingPos } from '@/math/types'
 import { fmt } from '@/math/column-arith'
 import type { ShapeKind } from '@/components/math/FractionShape'
 import {
@@ -37,6 +37,7 @@ import { generateItems } from '@/math/generate-items'
 import type { CountIconKind } from '@/math/types'
 import { RefreshIcon } from '@/components/generator/WorksheetSheet'
 import { fractionPartsFromItem, fractionTermFr } from '@/tpm/fraction-words'
+import { hasMeasureDims } from '@/tpm/libre-recalc'
 import { mulAudioParts, numberAudioParts } from '@/tcm-cfr/audio-nombres'
 import { clampFracShapeCfr } from '@/math/fraction-shapes'
 import {
@@ -619,6 +620,40 @@ export function TpmLibreEditor({
     </div>
   )
 }
+
+const MEASURE_DIM_FIELDS: { key: keyof FigureDims; label: string }[] = [
+  { key: 'side', label: 'Côté' },
+  { key: 'length', label: 'Longueur' },
+  { key: 'width', label: 'Largeur' },
+  { key: 'base', label: 'Base' },
+  { key: 'height', label: 'Hauteur' },
+  { key: 'a', label: 'Côté a' },
+  { key: 'b', label: 'Côté b' },
+  { key: 'c', label: 'Côté c' },
+  { key: 'top', label: 'Base a' },
+  { key: 'bottom', label: 'Base b' },
+  { key: 'radius', label: 'Rayon' },
+  { key: 'diameter', label: 'Diamètre' },
+  { key: 'd1', label: 'Diagonale d₁' },
+  { key: 'd2', label: 'Diagonale d₂' },
+]
+
+const SCHOOL_FIGURES: { figure: Figure; label: string }[] = [
+  { figure: 'square', label: 'carré' },
+  { figure: 'rectangle', label: 'rectangle' },
+  { figure: 'triangle', label: 'triangle' },
+  { figure: 'trapezoid', label: 'trapèze' },
+  { figure: 'parallelogram', label: 'parallélogramme' },
+  { figure: 'rhombus', label: 'losange' },
+  { figure: 'circle', label: 'cercle' },
+  { figure: 'oval', label: 'ovale' },
+  { figure: 'pentagon', label: 'pentagone' },
+  { figure: 'cube', label: 'cube' },
+  { figure: 'cuboid', label: 'pavé droit' },
+  { figure: 'cylinder', label: 'cylindre' },
+  { figure: 'cone', label: 'cône' },
+  { figure: 'sphere', label: 'sphère' },
+]
 
 const POW_SUP = ['', '¹', '²', '³', '⁴'] as const
 const POW_EXP_OPTS = [1, 2, 3, 4].map((n) => ({ value: String(n), label: String(n) }))
@@ -2118,6 +2153,76 @@ function renderFields(
           />
         </Field>
       </div>
+    )
+  }
+
+  if (
+    item.layout === 'geo' &&
+    item.figure &&
+    !item.geoDualPads &&
+    !item.geoNameCard &&
+    hasMeasureDims(item.dims)
+  ) {
+    const dims = item.dims ?? {}
+    const fields = MEASURE_DIM_FIELDS.filter((field) => dims[field.key] != null)
+    return (
+      <>
+        <div className="libre-inline-triple">
+          {fields.map((field) => (
+            <Field key={field.key} label={field.label}>
+              <NumInput
+                compact
+                value={fmt(Number(dims[field.key]))}
+                ariaLabel={`${field.label} ${index + 1}`}
+                onCommit={(raw) => {
+                  const v = Number(raw.replace(',', '.'))
+                  if (!Number.isFinite(v)) return
+                  patch(index, { ...item, dims: { ...dims, [field.key]: v } })
+                }}
+              />
+            </Field>
+          ))}
+        </div>
+        <Field label="Corrigé">
+          <CorrigeBox
+            value={item.responseAnswer ?? item.answer ?? ''}
+            ariaLabel={`Corrigé ${index + 1}`}
+          />
+        </Field>
+      </>
+    )
+  }
+
+  if (item.layout === 'geo' && item.figure && !item.geoDualPads && !item.geoNameCard) {
+    return (
+      <>
+        <Field label="Forme">
+          <LineSelect
+            value={item.figure}
+            ariaLabel={`Forme ${index + 1}`}
+            options={SCHOOL_FIGURES.map((fig) => ({ value: fig.figure, label: fig.label }))}
+            onChange={(figure) => {
+              const label = SCHOOL_FIGURES.find((fig) => fig.figure === figure)?.label
+              patch(index, {
+                ...item,
+                figure: figure as Figure,
+                ...(item.propertyLines ? {} : { answer: label ?? item.answer }),
+              })
+            }}
+          />
+        </Field>
+        {item.propertyLines?.length ? (
+          item.propertyLines.map((line, li) => (
+            <Field key={`prop-${li}`} label={line.label}>
+              <CorrigeBox value={line.answer} ariaLabel={`${line.label} ${index + 1}`} />
+            </Field>
+          ))
+        ) : (
+          <Field label="Corrigé">
+            <CorrigeBox value={item.answer ?? ''} ariaLabel={`Corrigé ${index + 1}`} />
+          </Field>
+        )}
+      </>
     )
   }
 

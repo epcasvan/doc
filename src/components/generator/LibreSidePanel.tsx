@@ -118,32 +118,24 @@ export function LibreSidePanel({
             }
           />
         ) : null}
-        {isNumberLibreDomain ? (
-          <div className="number-libre-fields">
-            <b>Bornes des nombres</b>
-            <label className="libre-field is-line">
-              <span>Minimum</span>
-              <input
-                className="libre-line-input is-num"
-                type="number"
-                value={activeBlock.numberMin ?? 0}
-                onChange={(event) =>
-                  updatePage({ numberMin: Number(event.target.value) })
-                }
-              />
-            </label>
-            <label className="libre-field is-line">
-              <span>Maximum</span>
-              <input
-                className="libre-line-input is-num"
-                type="number"
-                value={activeBlock.numberMax ?? 100}
-                onChange={(event) =>
-                  updatePage({ numberMax: Number(event.target.value) })
-                }
-              />
-            </label>
-          </div>
+        {isNumberLibreDomain && !((isDroites || isConstruire) && activeBlock.coordLibre) ? (
+          <TpmLibreEditor
+            exerciseType={activeBlock.exerciseType}
+            instruction={
+              activeBlock.libreInstruction ??
+              activeSheet?.blocks[safeBlockIndex]?.instruction ??
+              ''
+            }
+            items={
+              activeBlock.libreItems ??
+              activeSheet?.blocks[safeBlockIndex]?.items ??
+              []
+            }
+            onChangeInstruction={(libreInstruction) =>
+              updatePage({ libreInstruction })
+            }
+            onChangeItems={(libreItems) => updatePage({ libreItems })}
+          />
         ) : null}
         {soutienKind === 'mots' ? (
           <SoutienMotsLibreEditor
@@ -290,6 +282,7 @@ export function LibreSidePanel({
         ) : null}
         {/* Un seul éditeur générique — évite le doublon (ex. domaines nombres). */}
         {!isTpmLike &&
+        !isNumberLibreDomain &&
         !isPhraseDomain &&
         !isCalliDomain &&
         !isJeuxDomain &&
