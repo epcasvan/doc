@@ -270,6 +270,29 @@ export type TcfSlotMeta = {
 
 export const TCF_CO_NUMEROS = [1, 2, 3, 4, 5] as const
 
+const CE_A1 = [
+  'Suivre des instructions simples',
+  'Lire pour s’orienter dans l’espace',
+  'Lire pour s’orienter dans le temps',
+  'Lire pour s’informer',
+] as const
+
+const CE_A1_POINTS = [6, 6, 6, 7] as const
+
+const CE_A1_DESC = [
+  'Domaine personnel. Lettre, carte postale, courriel, carte d’invitation ou mode d’emploi. Questionnaire de 5 questions, 6 points.',
+  'Domaine public. Affiche, publicité, brochure, horaires, prospectus ou panneau d’affichage. Questionnaire de 5 questions, 6 points.',
+  'Domaine professionnel. Courrier, instructions, mode d’emploi, brochure ou programme. Questionnaire de 5 questions, 6 points.',
+  'Domaine éducationnel ou public. Affiche, brochure, programme d’un événement ou article de presse. Questionnaire de 5 questions, 7 points.',
+] as const
+
+const CE_A2 = [
+  'Lire pour s’orienter',
+  'Lire une correspondance',
+  'Lire des instructions',
+  'Lire pour s’informer',
+] as const
+
 const CO_DEROULE = [
   'A1 : identifier un événement (messages, questionnaire). A2 : comprendre des annonces et des instructions (6 QCM).',
   'A1 : identifier une activité (météo, radio, annonces). A2 : comprendre une émission de radio (6 QCM).',
@@ -287,13 +310,14 @@ export const TCF_SLOTS: readonly TcfSlotMeta[] = [
     description: CO_DEROULE[numero - 1] ?? `Compréhension orale : exercice ${numero}.`,
     instruction: 'Écoutez le document, puis répondez aux questions.',
   })),
-  {
-    typeId: 'tcf-ce',
-    competence: 'CE',
-    label: 'Exercices de compréhension écrite',
-    description: 'A1 : 4 exercices (instructions, espace, temps, s’informer), QCM. A2 : 4 exercices (s’orienter, correspondance, instructions, s’informer).',
-    instruction: 'Lisez le document, puis répondez aux questions.',
-  },
+  ...([1, 2, 3, 4] as const).map((numero) => ({
+    typeId: `tcf-ce-ex-${numero}`,
+    competence: 'CE' as const,
+    numero,
+    label: `Exercice ${numero}`,
+    description: CE_A1_DESC[numero - 1]!,
+    instruction: 'Lisez le document. Cochez la bonne réponse.',
+  })),
   {
     typeId: 'tcf-pe',
     competence: 'PE',
@@ -310,9 +334,34 @@ export const TCF_SLOTS: readonly TcfSlotMeta[] = [
   },
 ]
 
-export const tcfSlotByTypeId: Readonly<Record<string, TcfSlotMeta>> = Object.fromEntries(
-  TCF_SLOTS.map((slot) => [slot.typeId, slot]),
-)
+const TCF_CE_LEGACY: TcfSlotMeta = {
+  typeId: 'tcf-ce',
+  competence: 'CE',
+  label: 'Exercices de compréhension écrite',
+  description: 'Ancien emplacement unique de compréhension écrite.',
+  instruction: 'Lisez le document, puis répondez aux questions.',
+}
+
+export const tcfSlotByTypeId: Readonly<Record<string, TcfSlotMeta>> = {
+  ...Object.fromEntries(TCF_SLOTS.map((slot) => [slot.typeId, slot])),
+  [TCF_CE_LEGACY.typeId]: TCF_CE_LEGACY,
+}
+
+/** Libellé du menu Exercice pour la compréhension écrite, selon le niveau. */
+export function tcfMenuLabel(typeId: string, niveau: TcfNiveau): string | undefined {
+  const slot = tcfSlotByTypeId[typeId]
+  if (!slot || slot.competence !== 'CE' || slot.numero == null) return undefined
+  if (niveau === 'A0-A1') {
+    const name = CE_A1[slot.numero - 1]
+    const points = CE_A1_POINTS[slot.numero - 1]
+    return name ? `Exercice ${slot.numero} · ${name} (${points} points)` : undefined
+  }
+  if (niveau === 'A1-A2') {
+    const name = CE_A2[slot.numero - 1]
+    return name ? `Exercice ${slot.numero} · ${name}` : undefined
+  }
+  return `Exercice ${slot.numero}`
+}
 
 /** Scénarios qui regroupent les exercices de chaque compétence dans le sélecteur. */
 export const TCF_SCENARIOS: ReadonlyArray<{ id: string; label: string }> = [

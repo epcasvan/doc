@@ -22,6 +22,7 @@ import { TcfBankPicker } from '@/tcf/TcfExerciseEditor'
 import {
   TCF_NIVEAUX,
   tcfDifficultyFromNiveau,
+  tcfMenuLabel,
 } from '@/tcf/catalog'
 import type { TcfNiveau } from '@/tcf/types'
 import type { Dispatch, SetStateAction } from 'react'
@@ -365,7 +366,7 @@ export function DomainThemeTypeFields(p: DomainThemeTypeFieldsProps) {
               >
                 {typeChoices.map((type) => (
                   <option value={type.id} key={type.id}>
-                    {type.label}
+                    {tcfMenuLabel(type.id, tcfNiveau) ?? type.label}
                   </option>
                 ))}
               </SelectBox>
