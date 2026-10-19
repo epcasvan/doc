@@ -5211,11 +5211,15 @@ textarea.pill-input,
 .fiches-page{min-height:100vh;min-height:100dvh;display:flex;flex-direction:column;background:var(--cream)}
 .fiches-main{flex:1;padding:36px 5.5vw 64px}
 .fiches-card{margin:24px auto}
-.fiches-panel{display:flex;flex-direction:column;gap:18px;max-width:920px}
+.fiches-panel{display:flex;flex-direction:column;gap:18px;width:100%;min-width:0}
 .fiches-intro h1{margin:0;font-size:clamp(32px,4vw,44px);letter-spacing:-.05em;line-height:1.05}
 .fiches-libraries.mode-toggle.is-tabs{width:100%}
-.fiches-libraries.mode-toggle.is-tabs button{flex:1 1 auto}
-.fiches-toolbar{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(160px,.7fr) minmax(140px,.5fr);gap:12px;align-items:end}
+.fiches-libraries.mode-toggle.is-tabs button{flex:1 1 auto;min-width:0}
+.fiches-toolbar{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(160px,22vw) minmax(140px,16vw);
+  gap:12px;align-items:end
+}
 .book-run-backdrop{z-index:95;background:#322b1ecc}
 .book-meter-label{
   display:flex;justify-content:space-between;gap:12px;
@@ -5248,9 +5252,9 @@ textarea.pill-input,
   display:flex;align-items:center;justify-content:space-between;gap:16px;
   padding:16px 18px;border:1px solid var(--line);border-radius:16px;background:#fff
 }
-.fiches-row-text{display:flex;flex-direction:column;gap:4px;min-width:0}
-.fiches-row-text strong{font-size:16px;letter-spacing:-.02em}
-.fiches-row-text span{color:var(--muted);font-size:13px}
+.fiches-row-text{display:flex;flex-direction:column;gap:4px;flex:1;min-width:0}
+.fiches-row-text strong{font-size:16px;letter-spacing:-.02em;overflow-wrap:anywhere}
+.fiches-row-text span{color:var(--muted);font-size:13px;overflow-wrap:anywhere}
 .fiches-row-actions{display:flex;align-items:center;gap:8px;flex-shrink:0}
 .fiches-empty{margin:0;color:var(--muted);font-size:15px}
 .save-fiche-backdrop{
