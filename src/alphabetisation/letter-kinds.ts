@@ -96,7 +96,7 @@ export const ALPHA_LETTER_KINDS = [
   {
     id: 'associer-syllabe',
     label: '13 · Classer les syllabes',
-    description: '4 QR + 4 syllabes cadrées ; 2 séries par défaut ; page avec le type 12.',
+    description: '4 QR + 4 syllabes d’au plus 3 lettres ; 2 séries par défaut ; page avec le type 12.',
     instruction: 'Écoutez et classez les syllabes dans l’ordre.',
     preferredColumns: 1 as const,
   },

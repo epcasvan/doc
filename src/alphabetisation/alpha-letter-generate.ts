@@ -215,6 +215,11 @@ function syllabesPrononcer(
   }
 }
 
+/** Nombre de lettres d’une syllabe (accents compris, sans signe). */
+function syllableLetterCount(syll: string): number {
+  return [...syll].filter((ch) => /\p{L}/u.test(ch)).length
+}
+
 function associerSyllabes(
   bank: SoutienVowelBank,
   rng: Rng,
@@ -229,9 +234,8 @@ function associerSyllabes(
       guard += 1
       const raw = pick(rng, type1Words(bank, rng, 24))
       const parts = syllabifyFr(displayVocabLabel(raw))
-      const hitIdx = parts.findIndex((p) => wordHasLessonLetter(p, bank))
-      if (hitIdx < 0) continue
-      const syll = parts[hitIdx]!
+      const syll = parts.find((p) => syllableLetterCount(p) <= 3 && wordHasLessonLetter(p, bank))
+      if (!syll) continue
       const key = syll.toLowerCase()
       if (used.has(key)) continue
       const audioSrc = soutienAudioFor(syll) ?? soutienAudioFor(raw)
