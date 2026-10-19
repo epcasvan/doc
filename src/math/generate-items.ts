@@ -23,6 +23,7 @@ import {
   type NumberRange,
 } from './difficulty'
 import { numberToFrench } from '@/francais/french-numbers'
+import { generateDecomposeItem } from './decompose'
 import { generateOpTableItem } from './op-table'
 import { generatePerimetreCompose } from './perimetre-compose'
 import { generateLengthConversionBatch, tryGenerateConversion } from './conversions'
@@ -271,6 +272,8 @@ function generateOne(
       const p = columnAddPair(rng, difficulty, range)
       return columnItem('+', p.a, p.b, p.result, typeId.endsWith('poser'))
     }
+    case 'addition-decompose':
+      return generateDecomposeItem('+', rng, difficulty, range)
     case 'addition-tableau':
       return generateOpTableItem('+', 'cells', rng, difficulty, range)
     case 'addition-tableau-entetes':
@@ -302,6 +305,8 @@ function generateOne(
       const p = columnSubPair(rng, difficulty, range)
       return columnItem('−', p.a, p.b, p.result, typeId.endsWith('poser'))
     }
+    case 'soustraction-decompose':
+      return generateDecomposeItem('−', rng, difficulty, range)
     case 'soustraction-tableau':
       return generateOpTableItem('−', 'cells', rng, difficulty, range)
     case 'soustraction-tableau-entetes':

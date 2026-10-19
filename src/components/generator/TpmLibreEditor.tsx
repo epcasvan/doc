@@ -38,6 +38,7 @@ import type { CountIconKind } from '@/math/types'
 import { RefreshIcon } from '@/components/generator/WorksheetSheet'
 import { fractionPartsFromItem, fractionTermFr } from '@/tpm/fraction-words'
 import { hasMeasureDims } from '@/tpm/libre-recalc'
+import { buildDecompose, decomposeAnswer, decomposeError } from '@/math/decompose'
 import { opTableAnswer, opTableCell, opTableError } from '@/math/op-table'
 import { mulAudioParts, numberAudioParts } from '@/tcm-cfr/audio-nombres'
 import { clampFracShapeCfr } from '@/math/fraction-shapes'
@@ -672,6 +673,61 @@ function renderFields(
   onChangeItems: (items: MathItem[]) => void,
   items: MathItem[] = [],
 ) {
+  if (item.decompose) {
+    const calc = item.decompose
+    const applyNums = (a: number, b: number) => {
+      const next = buildDecompose(calc.op, a, b)
+      patch(index, {
+        ...item,
+        op: next.op,
+        a: next.a,
+        b: next.b,
+        result: next.result,
+        decompose: next,
+        answer: decomposeAnswer(next),
+        libreError: decomposeError(next),
+      })
+    }
+    return (
+      <>
+        <div className="libre-inline-triple is-op" role="group" aria-label={`Décomposition ${index + 1}`}>
+          <Field label="1er nombre">
+            <NumInput
+              compact
+              value={fmt(calc.a)}
+              ariaLabel={`Premier nombre ${index + 1}`}
+              onCommit={(raw) => {
+                const n = parseFrNumber(raw)
+                if (n == null) return
+                applyNums(n, calc.b)
+              }}
+            />
+          </Field>
+          <Field label="2e nombre">
+            <NumInput
+              compact
+              value={fmt(calc.b)}
+              ariaLabel={`Second nombre ${index + 1}`}
+              onCommit={(raw) => {
+                const n = parseFrNumber(raw)
+                if (n == null) return
+                applyNums(calc.a, n)
+              }}
+            />
+          </Field>
+        </div>
+        {item.libreError ? (
+          <p className="libre-field-error" role="alert">
+            {item.libreError}
+          </p>
+        ) : null}
+        <Field label="Corrigé">
+          <CorrigeBox value={decomposeAnswer(calc)} ariaLabel={`Corrigé ${index + 1}`} />
+        </Field>
+      </>
+    )
+  }
+
   if (item.opTable) {
     const table = item.opTable
     const apply = (next: typeof table) => {

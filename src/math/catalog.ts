@@ -468,6 +468,15 @@ export const exerciseTypes: ExerciseType[] = [
     { preferredColumns: 2 },
   ),
   t(
+    'addition-decompose',
+    'addition',
+    'Calcul mental (décomposition)',
+    'Séparer dizaines et unités, les regrouper, puis écrire le résultat.',
+    'Effectuez les calculs comme dans l’exemple.',
+    'ligne',
+    { preferredColumns: 1 },
+  ),
+  t(
     'addition-tableau-melange',
     'addition',
     'Tableau mélangé',
@@ -499,6 +508,15 @@ export const exerciseTypes: ExerciseType[] = [
     'Retrouvez les en-têtes, puis complétez le tableau. Chaque case est le nombre de la ligne moins celui de la colonne.',
     'ligne',
     { preferredColumns: 2 },
+  ),
+  t(
+    'soustraction-decompose',
+    'soustraction',
+    'Calcul mental (décomposition)',
+    'Séparer dizaines et unités, les regrouper, puis écrire le résultat.',
+    'Effectuez les calculs comme dans l’exemple.',
+    'ligne',
+    { preferredColumns: 1 },
   ),
   t(
     'soustraction-tableau-melange',

@@ -47,6 +47,7 @@ export function applyType(type: ExerciseType, prev?: ExerciseBlock): Partial<Exe
   const isProblem = type.id.includes('problemes')
   const isOpTable =
     type.id.startsWith('addition-tableau') || type.id.startsWith('soustraction-tableau')
+  const isDecompose = type.id.endsWith('-decompose')
   const isEquation = type.id.startsWith('equations-')
   const isLongMul = type.id.startsWith('multiplication-2chiffres')
   const isDivisionCol = type.id.startsWith('division-colonne')
@@ -154,7 +155,9 @@ export function applyType(type: ExerciseType, prev?: ExerciseBlock): Partial<Exe
     topic: type.topic,
     track: type.track,
     columns: type.preferredColumns ?? 2,
-    ...(isOpTable
+    ...(isDecompose
+      ? { count: 6, columns: 1 }
+      : isOpTable
       ? { count: 2 }
       : isProblem || isEquation
       ? { count: 2 }

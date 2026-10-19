@@ -223,6 +223,14 @@ html,body,#root{
 .op-table-row{background:color-mix(in srgb, var(--azure) 18%, #fff);-webkit-print-color-adjust:exact;print-color-adjust:exact}
 .op-table td{background:#fff}
 .op-table .is-answer{color:var(--purple)}
+.decompose-example{margin:2px 0 8px}
+.decompose-line{display:flex;flex-wrap:wrap;align-items:flex-end;gap:0.15em 0.28em;font-weight:600;line-height:2}
+.decompose-line.is-example{font-weight:700}
+.decompose-given,.decompose-op{white-space:nowrap}
+.decompose-term{display:inline-flex;align-items:flex-end;gap:0.2em}
+.decompose-group{display:inline-flex;align-items:flex-end;gap:0.2em;border-bottom:1.5px solid var(--ink);padding:0 0.15em 1px;margin-bottom:2px}
+.decompose-slot{min-width:3em}
+.exercise-item.layout-decompose{min-width:0;max-width:100%}
 .libre-op-table{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:4px 6px;margin-top:4px}
 .libre-op-slot{display:flex;flex-direction:column;gap:2px;min-width:0}
 .libre-op-slot .libre-line-input.is-num{width:100%;min-width:0;padding:4px 2px;text-align:center}

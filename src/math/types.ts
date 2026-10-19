@@ -59,6 +59,7 @@ export type Layout =
   | 'column-empty'
   | 'division-column'
   | 'op-table'
+  | 'decompose'
   | 'text'
   | 'compare'
   | 'sequence'
@@ -297,6 +298,19 @@ export type AlgebraGiven = { letter: string; value: number }
 
 export type ArithOp = '+' | '−' | '×' | '÷'
 
+/** Un terme de la décomposition. `op` est le signe écrit devant, sauf pour le premier. */
+export type DecomposeTerm = { op?: '+' | '−'; value: number }
+
+/** Calcul mental : n op m = quatre termes = deux regroupements = résultat. */
+export type DecomposeCalc = {
+  op: '+' | '−'
+  a: number
+  b: number
+  parts: [DecomposeTerm, DecomposeTerm, DecomposeTerm, DecomposeTerm]
+  partials: [DecomposeTerm, DecomposeTerm]
+  result: number
+}
+
 /** Tableau à compléter : case = ligne + colonne, ou ligne − colonne. */
 export type OpTableVariant = 'cells' | 'headers' | 'mixed'
 
@@ -449,6 +463,8 @@ export type MathItem = {
   libreError?: string
   /** Tableau d’addition ou de soustraction à compléter. */
   opTable?: OpTable
+  /** Décomposition pour le calcul mental (dizaines et unités). */
+  decompose?: DecomposeCalc
   /** Point pour repérage / transformations. */
   point?: { x: number; y: number; label?: string }
   /** Image du point (corrigé ou second point). */

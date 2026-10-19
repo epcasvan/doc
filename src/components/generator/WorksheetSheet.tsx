@@ -8,6 +8,7 @@ import {
   SheetBody,
   type InstitutionalHeader,
 } from '@/components/math/PrintDocumentChrome'
+import { DecomposeExample } from '@/components/item-view/decompose'
 import { isDraftPadExercise } from '@/math/catalog'
 import { TCF_DOMAIN } from '@/tcf/catalog'
 import { blockPointsTotal, formatPointsLabel, isTpmDomain } from '@/tpm/test'
@@ -215,6 +216,8 @@ export function WorksheetSheet({
                     ) : null}
                   </div>
                   {block.instruction ? <p>{renderSoutienInstruction(block.instruction)}</p> : null}
+                  {block.exerciseType === 'addition-decompose' ? <DecomposeExample op="+" /> : null}
+                  {block.exerciseType === 'soustraction-decompose' ? <DecomposeExample op="−" /> : null}
                   {block.givens && block.givens.length > 0 ? (
                     <p className="sheet-givens" aria-label="Valeurs des variables">
                       {block.givens.map((given, index) => (

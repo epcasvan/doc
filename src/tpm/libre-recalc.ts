@@ -3,6 +3,7 @@
  * Appelé à la validation (bouton ✓ à côté du téléchargement).
  */
 import { fmt, sanitizeFrNumberNoise } from '@/math/column-arith'
+import { decomposeAnswer, decomposeError, buildDecompose } from '@/math/decompose'
 import { opTableAnswer, opTableError } from '@/math/op-table'
 import type { ArithOp, Figure, FigureDims, MathItem } from '@/math/types'
 import { mulAudioParts, numberAudioParts } from '@/tcm-cfr/audio-nombres'
@@ -1169,6 +1170,20 @@ function recalcProportion(item: MathItem): MathItem {
 /** Recalcule un item selon son layout / type d’exercice. */
 export function recalcTpmLibreItem(item: MathItem, exerciseType: string): MathItem {
   let next = cleanAnswerFloat(item)
+
+  if (next.decompose) {
+    const rebuilt = buildDecompose(next.decompose.op, next.decompose.a, next.decompose.b)
+    return {
+      ...next,
+      op: rebuilt.op,
+      a: rebuilt.a,
+      b: rebuilt.b,
+      result: rebuilt.result,
+      decompose: rebuilt,
+      answer: decomposeAnswer(rebuilt),
+      libreError: decomposeError(rebuilt),
+    }
+  }
 
   if (next.opTable) {
     return {
