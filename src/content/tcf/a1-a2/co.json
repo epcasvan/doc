@@ -36665,14 +36665,14 @@
   }
 ,
   {
-    "id": "delf-a2-2021-co-01",
+    "id": "delf-a2-2021-co-ex1-01",
     "niveau": "A1-A2",
     "competence": "CO",
     "type_exercice": "complet",
-    "theme": "Piste 01",
+    "theme": "Comprendre des annonces",
     "scenario": "transports",
     "scene": "Piste 01",
-    "consigne": "Écoutez le document. Lisez les questions, puis répondez.",
+    "consigne": "Écoutez les documents sonores et choisissez le lieu qui correspond.",
     "support": {
       "audio": "/lib/audio/tcf/co/temporaire/DELF_A2_2021_Piste_01.mp3",
       "transcription": "1. Il est interdit de courir autour du grand bain.\n2. Moins 30 % sur tous les articles au rayon\nélectroménager.\n3. Les voyageurs sont priés de se rendre au point\ninformation en face de la voie 5.\n4. Les voyageurs en partance pour Rome,\nembarquement immédiat porte 8."
@@ -36844,14 +36844,14 @@
     "consigne_supplementaire": null
   },
   {
-    "id": "delf-a2-2021-co-02",
+    "id": "delf-a2-2021-co-ex1-02",
     "niveau": "A1-A2",
     "competence": "CO",
     "type_exercice": "complet",
-    "theme": "Piste 02",
+    "theme": "Comprendre des annonces",
     "scenario": "transports",
     "scene": "Piste 02",
-    "consigne": "Écoutez le document. Lisez les questions, puis répondez.",
+    "consigne": "Écoutez les messages et mettez une croix dans la colonne qui correspond.",
     "support": {
       "audio": "/lib/audio/tcf/co/temporaire/DELF_A2_2021_Piste_02.mp3",
       "transcription": "1. Le magasin reste ouvert tout le week-end.\n2. Attachez vos ceintures avant le décollage.\n3. Vous êtes au niveau moins 2, parking Hôtel-deVille.\n4. Deux minutes avant le départ du train, les portes\nse ferment automatiquement.\n5. Pour réserver une place, appelez le numéro\nindiqué sur l’écran."
@@ -37068,14 +37068,14 @@
     "consigne_supplementaire": null
   },
   {
-    "id": "delf-a2-2021-co-03",
+    "id": "delf-a2-2021-co-ex1-03",
     "niveau": "A1-A2",
     "competence": "CO",
     "type_exercice": "complet",
-    "theme": "Piste 03",
+    "theme": "Comprendre des annonces",
     "scenario": "transports",
     "scene": "Piste 03",
-    "consigne": "Écoutez le document. Lisez les questions, puis répondez.",
+    "consigne": "Voici quatre annonces entendues dans une gare. Complétez dans le tableau les informations",
     "support": {
       "audio": "/lib/audio/tcf/co/temporaire/DELF_A2_2021_Piste_03.mp3",
       "transcription": "1. Voie 5, le train Thalys n° 6291 pour Bruxelles\npartira à 9 h 10.\n2. Le TGV 7829 entrera en gare de Marseille voie 7.\nArrivée prévue : 12 h 07.\n3. Le train 5957 en provenance de Paris Gare de\nLyon, à destination de Clermont-Ferrand, partira\nquai A à 17 h.\n4. Le train TER numéro 2936, à destination de\nCambrai, départ 10 h 45, va être mis en place voie 8."
@@ -37373,14 +37373,14 @@
     "consigne_supplementaire": null
   },
   {
-    "id": "delf-a2-2021-co-04",
+    "id": "delf-a2-2021-co-ex1-04",
     "niveau": "A1-A2",
     "competence": "CO",
     "type_exercice": "complet",
-    "theme": "Piste 04",
+    "theme": "Comprendre des annonces",
     "scenario": "transports",
     "scene": "Piste 04",
-    "consigne": "Écoutez le document. Lisez les questions, puis répondez.",
+    "consigne": "Vous entendez cette annonce dans le hall de la gare, vous prenez le train pour Rennes.",
     "support": {
       "audio": "/lib/audio/tcf/co/temporaire/DELF_A2_2021_Piste_04.mp3",
       "transcription": "Départ du train 2365 à destination de Rennes à\n13 h 50 voie B. Les voies A à D se situent au premier\nétage par l’escalier roulant."
@@ -37462,86 +37462,45 @@
     "consigne_supplementaire": null
   },
   {
-    "id": "delf-a2-2021-co-05",
+    "id": "delf-a2-2021-co-ex1-05",
     "niveau": "A1-A2",
     "competence": "CO",
     "type_exercice": "complet",
-    "theme": "Piste 05",
+    "theme": "Comprendre des annonces",
     "scenario": "magasins",
     "scene": "Piste 05",
-    "consigne": "Écoutez le document. Lisez les questions, puis répondez.",
+    "consigne": "Vous entendez ce message. Cochez la réponse qui correspond.",
     "support": {
       "audio": "/lib/audio/tcf/co/temporaire/DELF_A2_2021_Piste_05.mp3",
       "transcription": "Chers clients, aujourd’hui, le magasin reste ouvert jusqu’à 21 h. Pour vous éviter une attente\ntrop longue aux caisses du rez-de-chaussée, vous\npouvez régler vos achats au 1er étage. Des caisses\nsupplémentaires sont à votre disposition."
     },
     "questions": [
       {
-        "enonce": "De quel lieu parle-t-on ?",
+        "enonce": "Je peux…",
         "type_reponse": "lignes",
         "points": 1,
         "nb_lignes": 1,
-        "reponse_modele": "Magasin",
+        "reponse_modele": "régler mes achats au 1 étage",
         "formes": {
           "qcm_texte": {
             "melanger": true,
             "choix": [
               {
                 "id": "a",
-                "texte": "Magasin",
-                "correct": true
+                "texte": "avoir une réduction sur les produits"
               },
               {
                 "id": "b",
-                "texte": "Distributeur automatique"
-              },
-              {
-                "id": "c",
-                "texte": "Bureau d information"
-              }
-            ]
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/ville/magasin.webp",
+                "texte": "régler mes achats au 1 étage",
                 "correct": true
               },
               {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/ville/distributeur-automatique.webp"
-              },
-              {
                 "id": "c",
-                "image": "/lib/images/vocabulaire/ville/bureau-d-information.webp"
-              }
-            ]
-          }
-        }
-      },
-      {
-        "enonce": "À quelle heure ?",
-        "type_reponse": "lignes",
-        "points": 1,
-        "nb_lignes": 1,
-        "reponse_modele": "21 h",
-        "formes": {
-          "qcm_texte": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "texte": "21 h",
-                "correct": true
+                "texte": "faire mes courses jusqu’à 22 h"
               },
               {
-                "id": "b",
-                "texte": "7 h"
-              },
-              {
-                "id": "c",
-                "texte": "8 h"
+                "id": "d",
+                "texte": "attendre l’ouverture à 21 h"
               }
             ]
           }
@@ -37551,14 +37510,14 @@
     "consigne_supplementaire": null
   },
   {
-    "id": "delf-a2-2021-co-06",
+    "id": "delf-a2-2021-co-ex1-06",
     "niveau": "A1-A2",
     "competence": "CO",
     "type_exercice": "complet",
-    "theme": "Piste 06",
+    "theme": "Comprendre des annonces",
     "scenario": "loisirs",
     "scene": "Piste 06",
-    "consigne": "Écoutez le document. Lisez les questions, puis répondez.",
+    "consigne": "Écoutez le message et remplissez le tableau.",
     "support": {
       "audio": "/lib/audio/tcf/co/temporaire/DELF_A2_2021_Piste_06.mp3",
       "transcription": "Demain mercredi, la piscine fermera ses portes à\n20 h en raison d’une compétition régionale."
@@ -37640,11 +37599,11 @@
     "consigne_supplementaire": null
   },
   {
-    "id": "delf-a2-2021-co-07",
+    "id": "delf-a2-2021-co-ex1-07",
     "niveau": "A1-A2",
     "competence": "CO",
     "type_exercice": "complet",
-    "theme": "Piste 07",
+    "theme": "Comprendre des annonces",
     "scenario": "vie-quotidienne",
     "scene": "Piste 07",
     "consigne": "Écoutez le document. Lisez les questions, puis répondez.",
@@ -37684,14 +37643,14 @@
     "consigne_supplementaire": null
   },
   {
-    "id": "delf-a2-2021-co-08",
+    "id": "delf-a2-2021-co-ex1-08",
     "niveau": "A1-A2",
     "competence": "CO",
     "type_exercice": "complet",
-    "theme": "Piste 08",
+    "theme": "Comprendre des annonces",
     "scenario": "magasins",
     "scene": "Piste 08",
-    "consigne": "Écoutez le document. Lisez les questions, puis répondez.",
+    "consigne": "Écoutez les messages et reliez chaque message à l’image qui correspond.",
     "support": {
       "audio": "/lib/audio/tcf/co/temporaire/DELF_A2_2021_Piste_08.mp3",
       "transcription": "1. Le bonnet est obligatoire.\n2. La sortie est à gauche de l’écran.\n3. Des étiquettes pour les bagages sont disponibles\nau guichet.\n4. La caisse n° 1 est réservée au paiement par carte."
@@ -37908,14 +37867,14 @@
     "consigne_supplementaire": null
   },
   {
-    "id": "delf-a2-2021-co-09",
+    "id": "delf-a2-2021-co-ex2-09",
     "niveau": "A1-A2",
     "competence": "CO",
     "type_exercice": "complet",
-    "theme": "Piste 09",
+    "theme": "Comprendre des émissions",
     "scenario": "transports",
     "scene": "Piste 09",
-    "consigne": "Écoutez le document. Lisez les questions, puis répondez.",
+    "consigne": "Voici cinq extraits d’émissions radiophoniques. Quel est le genre de l’émission ? Reliez chaque",
     "support": {
       "audio": "/lib/audio/tcf/co/temporaire/DELF_A2_2021_Piste_09.mp3",
       "transcription": "1. Vous cherchez des idées de repas ? Jusqu’à la fin\ndu mois, des surprises vous attendent à Rond-Point\nBoutique : 17 % d’économie sur tous les produits\nalimentaires.\n2. Je me trouve maintenant à l’entrée de l’hôtel.\nBeaucoup de gens sont venus attendre la star.\nCertains sont là depuis 5 h du matin, comme\nMichel et son frère.\n3. Bonjour, le journal de midi. Au sommaire,\nl’accident d’avion de la compagnie Air Villa, le\nrendez-vous des chefs d’État à Versailles, le match\nde tous les dangers pour le Paris Football Club, et\nla météo toujours grise.\n4. Réfléchissez bien, Jérôme il vous reste\n5 secondes pour trouver la bonne réponse et vous\npourrez choisir de continuer ou d’arrêter pour\ngagner 8 jours à la montagne.\n5. Monsieur le ministre, bonjour. Tout d’abord, je\nvous remercie d’être là ce soir. Vous allez nous\nparler d’un sujet qui nous préoccupe tous : la\npollution."
@@ -38186,14 +38145,14 @@
     "consigne_supplementaire": null
   },
   {
-    "id": "delf-a2-2021-co-10",
+    "id": "delf-a2-2021-co-ex2-10",
     "niveau": "A1-A2",
     "competence": "CO",
     "type_exercice": "complet",
-    "theme": "Piste 10",
+    "theme": "Comprendre des émissions",
     "scenario": "vie-quotidienne",
     "scene": "Piste 10",
-    "consigne": "Écoutez le document. Lisez les questions, puis répondez.",
+    "consigne": "Écoutez cet extrait. Quel est le thème de l’émission et à qui s’adresse-t-elle principalement ?",
     "support": {
       "audio": "/lib/audio/tcf/co/temporaire/DELF_A2_2021_Piste_10.mp3",
       "transcription": "Comme Guillaume, d’autres jeunes attendent\nbeaucoup de ce rendez-vous du Salon de\nl’innovation et de l’entreprise. Eux ont créé un\nboîtier intelligent qui diffuse des morceaux de\nmusique sans faire de téléchargement avant…"
@@ -38248,14 +38207,14 @@
     "consigne_supplementaire": null
   },
   {
-    "id": "delf-a2-2021-co-11",
+    "id": "delf-a2-2021-co-ex2-11",
     "niveau": "A1-A2",
     "competence": "CO",
     "type_exercice": "complet",
-    "theme": "Piste 11",
+    "theme": "Comprendre des émissions",
     "scenario": "magasins",
     "scene": "Piste 11",
-    "consigne": "Écoutez le document. Lisez les questions, puis répondez.",
+    "consigne": "Écoutez ce message radiophonique et complétez les notes ci-dessous.",
     "support": {
       "audio": "/lib/audio/tcf/co/temporaire/DELF_A2_2021_Piste_11.mp3",
       "transcription": "Pour jouer à notre jeu et partager avec le candidat\nla somme de 1 000 euros, envoyez un texto avant\n14 h au 3820 en tapant 1 pour la réponse A et\n2 pour la réponse B."
@@ -38319,14 +38278,14 @@
     "consigne_supplementaire": null
   },
   {
-    "id": "delf-a2-2021-co-12",
+    "id": "delf-a2-2021-co-ex2-12",
     "niveau": "A1-A2",
     "competence": "CO",
     "type_exercice": "complet",
-    "theme": "Piste 12",
+    "theme": "Comprendre des émissions",
     "scenario": "actualite",
     "scene": "Piste 12",
-    "consigne": "Écoutez le document. Lisez les questions, puis répondez.",
+    "consigne": "Voici deux extraits de deux émissions radiophoniques. Placez dans le tableau les informations",
     "support": {
       "audio": "/lib/audio/tcf/co/temporaire/DELF_A2_2021_Piste_12.mp3",
       "transcription": "1. Les températures sont très basses pour la\nsaison : en dessous de zéro sur la moitié du\nterritoire. On n’avait pas vu cela depuis 1995.\n5 450 personnes sont privées d’électricité.\n2. Il n’y a plus que 29 km de bouchons en Île-deFrance sur l’A10. En province, on comptait 196 km\nde ralentissements sur les routes."
@@ -38435,59 +38394,45 @@
     "consigne_supplementaire": null
   },
   {
-    "id": "delf-a2-2021-co-13",
+    "id": "delf-a2-2021-co-ex2-13",
     "niveau": "A1-A2",
     "competence": "CO",
     "type_exercice": "complet",
-    "theme": "Piste 13",
+    "theme": "Comprendre des émissions",
     "scenario": "loisirs",
     "scene": "Piste 13",
-    "consigne": "Écoutez le document. Lisez les questions, puis répondez.",
+    "consigne": "Écoutez le message et cochez l’information la plus importante pour l’auditeur de cette radio.",
     "support": {
       "audio": "/lib/audio/tcf/co/temporaire/DELF_A2_2021_Piste_13.mp3",
       "transcription": "En raison de la disparition brutale du chanteur le\nplus populaire, nous changeons notre programme\nde demain soir. À la place de l’émission « La parole\naux jeunes », rediffusion de son dernier concert en\npublic. C’était à Marseille l’année dernière."
     },
     "questions": [
       {
-        "enonce": "De quelle activité parle-t-on ?",
+        "enonce": "Message 1",
         "type_reponse": "lignes",
         "points": 1,
         "nb_lignes": 1,
-        "reponse_modele": "Concert",
+        "reponse_modele": "Diffusion de « La Parole aux jeunes » à Marseille",
         "formes": {
           "qcm_texte": {
             "melanger": true,
             "choix": [
               {
                 "id": "a",
-                "texte": "Concert",
-                "correct": true
+                "texte": "Disparition brutale d’un chanteur"
               },
               {
                 "id": "b",
-                "texte": "Groupe de rock"
+                "texte": "Enregistrement d’un concert en public"
               },
               {
                 "id": "c",
-                "texte": "Instruments"
-              }
-            ]
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
+                "texte": "Changement de programme demain soir"
+              },
               {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/musique/concert.webp",
+                "id": "d",
+                "texte": "Diffusion de « La Parole aux jeunes » à Marseille",
                 "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/musique/groupe-de-rock.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/musique/instruments.webp"
               }
             ]
           }
@@ -38497,14 +38442,14 @@
     "consigne_supplementaire": null
   },
   {
-    "id": "delf-a2-2021-co-14",
+    "id": "delf-a2-2021-co-ex2-14",
     "niveau": "A1-A2",
     "competence": "CO",
     "type_exercice": "complet",
-    "theme": "Piste 14",
+    "theme": "Comprendre des émissions",
     "scenario": "actualite",
     "scene": "Piste 14",
-    "consigne": "Écoutez le document. Lisez les questions, puis répondez.",
+    "consigne": "Écoutez le document radiophonique et classez les informations par ordre d’importance :",
     "support": {
       "audio": "/lib/audio/tcf/co/temporaire/DELF_A2_2021_Piste_14.mp3",
       "transcription": "Nous sommes en direct devant le Palais de justice.\nNous attendons la sortie des avocats. Beaucoup de\nmonde autour de nous malgré le froid et la pluie.\nLes personnes ont été libérées en début d’aprèsmidi."
@@ -38559,14 +38504,14 @@
     "consigne_supplementaire": null
   },
   {
-    "id": "delf-a2-2021-co-15",
+    "id": "delf-a2-2021-co-ex2-15",
     "niveau": "A1-A2",
     "competence": "CO",
     "type_exercice": "complet",
-    "theme": "Piste 15",
+    "theme": "Comprendre des émissions",
     "scenario": "loisirs",
     "scene": "Piste 15",
-    "consigne": "Écoutez le document. Lisez les questions, puis répondez.",
+    "consigne": "Voici deux extraits d’émissions radiophoniques. Où se passe l’émission ?",
     "support": {
       "audio": "/lib/audio/tcf/co/temporaire/DELF_A2_2021_Piste_15.mp3",
       "transcription": "1. Chers habitants de Colmar, bonjour. Nous\nsommes heureux d’être chez vous et de faire\ndécouvrir votre jolie ville à nos auditeurs.\n2. Le responsable des transports parisiens est en\nligne avec nous, je vais lui poser les questions que\nj’ai reçues par texto."
@@ -38648,14 +38593,14 @@
     "consigne_supplementaire": null
   },
   {
-    "id": "delf-a2-2021-co-16",
+    "id": "delf-a2-2021-co-ex2-16",
     "niveau": "A1-A2",
     "competence": "CO",
     "type_exercice": "complet",
-    "theme": "Piste 16",
+    "theme": "Comprendre des émissions",
     "scenario": "vie-quotidienne",
     "scene": "Piste 16",
-    "consigne": "Écoutez le document. Lisez les questions, puis répondez.",
+    "consigne": "Écoutez les trois extraits et reliez les documents au reportage qui correspond.",
     "support": {
       "audio": "/lib/audio/tcf/co/temporaire/DELF_A2_2021_Piste_16.mp3",
       "transcription": "1. Très belle intervention du joueur de Madrid,\nmais ah là là, quel dommage ! la balle passe à côté\ndu but.\n2. Quelle ambiance ce soir dans cette salle ! Tout\nle monde reprend en chœur les plus célèbres\nmorceaux.\n3. Gérard, vous m’entendez ? Je suis en haut de\nl’avenue et des centaines de voitures sont bloquées\ndepuis une heure."
@@ -38782,14 +38727,14 @@
     "consigne_supplementaire": null
   },
   {
-    "id": "delf-a2-2021-co-17",
+    "id": "delf-a2-2021-co-ex3-17",
     "niveau": "A1-A2",
     "competence": "CO",
     "type_exercice": "complet",
-    "theme": "Piste 17",
+    "theme": "Comprendre un message oral",
     "scenario": "travail",
     "scene": "Piste 17",
-    "consigne": "Écoutez le document. Lisez les questions, puis répondez.",
+    "consigne": "Vous entendez quatre messages. À qui s’adresse chaque message ? Remplissez le tableau ci-dessous.",
     "support": {
       "audio": "/lib/audio/tcf/co/temporaire/DELF_A2_2021_Piste_17.mp3",
       "transcription": "1. C’est votre voisine. Ma fille a oublié ses clés chez\nvous. Elle viendra les chercher en fin d’après-midi.\n2. On demande M. Férand chez le directeur dans\nles plus brefs délais.\n3. Les résultats des analyses médicales de M me\nChapry sont disponibles à partir de 17 h.\n4. L’assuré doit prendre un ticket à l’entrée du\nbureau des réclamations."
@@ -38970,14 +38915,14 @@
     "consigne_supplementaire": null
   },
   {
-    "id": "delf-a2-2021-co-18",
+    "id": "delf-a2-2021-co-ex3-18",
     "niveau": "A1-A2",
     "competence": "CO",
     "type_exercice": "complet",
-    "theme": "Piste 18",
+    "theme": "Comprendre un message oral",
     "scenario": "vie-quotidienne",
     "scene": "Piste 18",
-    "consigne": "Écoutez le document. Lisez les questions, puis répondez.",
+    "consigne": "Écoutez ce message et cochez l’image qui correspond.",
     "support": {
       "audio": "/lib/audio/tcf/co/temporaire/DELF_A2_2021_Piste_18.mp3",
       "transcription": "Suite à une erreur informatique, votre commande\nn’a pas été enregistrée. Nous vous demandons de\nnous rappeler avant 10 heures demain au numéro\ngratuit 08 56 43 91 31 pour nous donner votre\nadresse électronique."
@@ -39014,14 +38959,14 @@
     "consigne_supplementaire": null
   },
   {
-    "id": "delf-a2-2021-co-19",
+    "id": "delf-a2-2021-co-ex3-19",
     "niveau": "A1-A2",
     "competence": "CO",
     "type_exercice": "complet",
-    "theme": "Piste 19",
+    "theme": "Comprendre un message oral",
     "scenario": "fetes",
     "scene": "Piste 19",
-    "consigne": "Écoutez le document. Lisez les questions, puis répondez.",
+    "consigne": "Écoutez quatre messages laissés sur un répondeur et cochez dans le tableau l’événement",
     "support": {
       "audio": "/lib/audio/tcf/co/temporaire/DELF_A2_2021_Piste_19.mp3",
       "transcription": "1. Coucou Amélie, prendre un an de plus, ce n’est\npas un problème, mais une fête ! J’espère que tu\npenseras à moi quand tu souffleras tes bougies.\n2. Salut les amis, j’espère que c’est toujours\nd’accord pour samedi soir ? Venez vers 20 h et\nn’oubliez pas le gâteau.\n3. Bravo Fabien ! Sortir premier de cette école,\nc’est vraiment super ! Tu dois être content.\n4. Alors, ça y est, le petit Paul est né ! Toutes mes\nfélicitations à la maman et au papa !"
@@ -39238,14 +39183,14 @@
     "consigne_supplementaire": null
   },
   {
-    "id": "delf-a2-2021-co-20",
+    "id": "delf-a2-2021-co-ex3-20",
     "niveau": "A1-A2",
     "competence": "CO",
     "type_exercice": "complet",
-    "theme": "Piste 20",
+    "theme": "Comprendre un message oral",
     "scenario": "transports",
     "scene": "Piste 20",
-    "consigne": "Écoutez le document. Lisez les questions, puis répondez.",
+    "consigne": "Vous entendez ce message. Répondez aux questions.",
     "support": {
       "audio": "/lib/audio/tcf/co/temporaire/DELF_A2_2021_Piste_20.mp3",
       "transcription": "Tu n’as pas oublié que samedi on fêtait mon\narrivée dans mon nouvel appartement ? La station\nde métro la plus proche est République. Et surtout,\nn’oublie pas le code de la porte d’entrée : 452 T.\nÀ samedi alors !"
@@ -39300,14 +39245,14 @@
     "consigne_supplementaire": null
   },
   {
-    "id": "delf-a2-2021-co-21",
+    "id": "delf-a2-2021-co-ex3-21",
     "niveau": "A1-A2",
     "competence": "CO",
     "type_exercice": "complet",
-    "theme": "Piste 21",
+    "theme": "Comprendre un message oral",
     "scenario": "magasins",
     "scene": "Piste 21",
-    "consigne": "Écoutez le document. Lisez les questions, puis répondez.",
+    "consigne": "Vous entendez quatre documents sonores très courts. Quelle relation ont les différentes personnes",
     "support": {
       "audio": "/lib/audio/tcf/co/temporaire/DELF_A2_2021_Piste_21.mp3",
       "transcription": "1. Je vous ai déjà dit de refermer la porte doucement quand vous entrez dans mon bureau.\n2. Simon, arrête ta musique et viens mettre la\ntable, s’il te plaît.\n3. Le document B n’est pas rempli correctement.\nVotre demande ne pourra pas être acceptée.\n4. Vous avez une réduction de 30 % supplémentaire sur le deuxième article."
@@ -39461,14 +39406,14 @@
     "consigne_supplementaire": null
   },
   {
-    "id": "delf-a2-2021-co-22",
+    "id": "delf-a2-2021-co-ex3-22",
     "niveau": "A1-A2",
     "competence": "CO",
     "type_exercice": "complet",
-    "theme": "Piste 22",
+    "theme": "Comprendre un message oral",
     "scenario": "ecole",
     "scene": "Piste 22",
-    "consigne": "Écoutez le document. Lisez les questions, puis répondez.",
+    "consigne": "Vous entendez ce message téléphonique, répondez à la question ci-dessous.",
     "support": {
       "audio": "/lib/audio/tcf/co/temporaire/DELF_A2_2021_Piste_22.mp3",
       "transcription": "M me Deval ? C’est Arthur Gulvy, le professeur de\nguitare de votre fils. Je ne pourrai pas venir cet\naprès-midi, mais demain après le lycée, Léo peut\nrattraper le cours avec sa cousine Isabelle et Martin."
@@ -39550,14 +39495,14 @@
     "consigne_supplementaire": null
   },
   {
-    "id": "delf-a2-2021-co-23",
+    "id": "delf-a2-2021-co-ex3-23",
     "niveau": "A1-A2",
     "competence": "CO",
     "type_exercice": "complet",
-    "theme": "Piste 23",
+    "theme": "Comprendre un message oral",
     "scenario": "ecole",
     "scene": "Piste 23",
-    "consigne": "Écoutez le document. Lisez les questions, puis répondez.",
+    "consigne": "Écoutez les cinq documents, puis complétez le tableau comme dans l’exemple.",
     "support": {
       "audio": "/lib/audio/tcf/co/temporaire/DELF_A2_2021_Piste_23.mp3",
       "transcription": "1. Allô, je veux parler au responsable. J’attends ma\nlivraison depuis 8 h ce matin, c’est inadmissible !\n2. Tu ne peux pas venir à ma soirée ? Comme c’est\ndommage !\n3. Comment ? Il est déjà directeur du magasin à\nson âge !\n4. Je vous ai déjà dit cent fois d’éteindre vos\ntéléphones pendant le cours.\n5. C’est super de se déplacer à vélo sur ces\nnouvelles pistes cyclables !"
@@ -39765,14 +39710,14 @@
     "consigne_supplementaire": null
   },
   {
-    "id": "delf-a2-2021-co-24",
+    "id": "delf-a2-2021-co-ex3-24",
     "niveau": "A1-A2",
     "competence": "CO",
     "type_exercice": "complet",
-    "theme": "Piste 24",
+    "theme": "Comprendre un message oral",
     "scenario": "vie-quotidienne",
     "scene": "Piste 24",
-    "consigne": "Écoutez le document. Lisez les questions, puis répondez.",
+    "consigne": "Écoutez le document et entourez , parmi les mots ci-dessous, le ou les mots qui le définissent.",
     "support": {
       "audio": "/lib/audio/tcf/co/temporaire/DELF_A2_2021_Piste_24.mp3",
       "transcription": "Mais arrêtez de pousser ! J’étais avant vous dans\nla file. Attendez votre tour comme tout le monde.\nNon mais ce n’est pas possible !"
@@ -39827,11 +39772,11 @@
     "consigne_supplementaire": null
   },
   {
-    "id": "delf-a2-2021-co-25",
+    "id": "delf-a2-2021-co-ex4-25",
     "niveau": "A1-A2",
     "competence": "CO",
     "type_exercice": "complet",
-    "theme": "Piste 25",
+    "theme": "Comprendre une discussion",
     "scenario": "fetes",
     "scene": "Piste 25",
     "consigne": "Écoutez le document. Lisez les questions, puis répondez.",
@@ -40015,14 +39960,14 @@
     "consigne_supplementaire": null
   },
   {
-    "id": "delf-a2-2021-co-26",
+    "id": "delf-a2-2021-co-ex4-26",
     "niveau": "A1-A2",
     "competence": "CO",
     "type_exercice": "complet",
-    "theme": "Piste 26",
+    "theme": "Comprendre une discussion",
     "scenario": "vie-quotidienne",
     "scene": "Piste 26",
-    "consigne": "Écoutez le document. Lisez les questions, puis répondez.",
+    "consigne": "Écoutez cette conversation. Identifiez les sentiments exprimés.",
     "support": {
       "audio": "/lib/audio/tcf/co/temporaire/DELF_A2_2021_Piste_26.mp3",
       "transcription": "– Alors, comme ça, le voyage est annulé ?\n– Eh oui, moi aussi j’étais contente de partir !\n– C’est vraiment dommage ! On allait passer un\nbon moment."
@@ -40077,59 +40022,45 @@
     "consigne_supplementaire": null
   },
   {
-    "id": "delf-a2-2021-co-27",
+    "id": "delf-a2-2021-co-ex4-27",
     "niveau": "A1-A2",
     "competence": "CO",
     "type_exercice": "complet",
-    "theme": "Piste 27",
+    "theme": "Comprendre une discussion",
     "scenario": "ecole",
     "scene": "Piste 27",
-    "consigne": "Écoutez le document. Lisez les questions, puis répondez.",
+    "consigne": "Écoutez le document et cochez la réponse qui correspond.",
     "support": {
       "audio": "/lib/audio/tcf/co/temporaire/DELF_A2_2021_Piste_27.mp3",
       "transcription": "Je vous rappelle que vous avez jusqu’à lundi\nprochain pour me redonner votre travail. Vous\npouvez l’apporter à la prochaine réunion sur le\ncampus, lundi matin, mais le plus simple est de\nl’envoyer avant à mon adresse électronique.\nL’administration de l’établissement m’a confirmé\nque la note comptera pour votre examen final."
     },
     "questions": [
       {
-        "enonce": "De quoi parle-t-on ?",
+        "enonce": "Qui parle ?",
         "type_reponse": "lignes",
         "points": 1,
         "nb_lignes": 1,
-        "reponse_modele": "Reunion",
+        "reponse_modele": "Un directeur de magasin",
         "formes": {
           "qcm_texte": {
             "melanger": true,
             "choix": [
               {
                 "id": "a",
-                "texte": "Reunion",
-                "correct": true
+                "texte": "Un consultant informatique"
               },
               {
                 "id": "b",
-                "texte": "Professeure a la bibliotheque"
-              },
-              {
-                "id": "c",
-                "texte": "Acheter un billet au guichet"
-              }
-            ]
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/actions/reunion.webp",
+                "texte": "Un directeur de magasin",
                 "correct": true
               },
               {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/actions/professeure-a-la-bibliotheque.webp"
+                "id": "c",
+                "texte": "Un secrétaire médical"
               },
               {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/actions/acheter-un-billet-au-guichet.webp"
+                "id": "d",
+                "texte": "Un professeur d’université"
               }
             ]
           }
@@ -40139,14 +40070,14 @@
     "consigne_supplementaire": null
   },
   {
-    "id": "delf-a2-2021-co-28",
+    "id": "delf-a2-2021-co-ex4-28",
     "niveau": "A1-A2",
     "competence": "CO",
     "type_exercice": "complet",
-    "theme": "Piste 28",
+    "theme": "Comprendre une discussion",
     "scenario": "ecole",
     "scene": "Piste 28",
-    "consigne": "Écoutez le document. Lisez les questions, puis répondez.",
+    "consigne": "Vous entendez ces documents sonores. Cochez la colonne du tableau qui qualifie le mieux chacun",
     "support": {
       "audio": "/lib/audio/tcf/co/temporaire/DELF_A2_2021_Piste_28.mp3",
       "transcription": "1. Qu’est-ce que je vous avais dit ? Il ne faut pas\nranger les produits dangereux en bas des rayons.\nVous ne comprenez rien !\n2. Votre promotion est méritée. Vous avez obtenu\nles meilleurs chiffres de vente cette année.\nFélicitations !\n3. Je ne veux plus vous voir dans ma classe. Allezvous-en ! Je fais un rapport au proviseur. Prenez vos\naffaires et sortez !\n4. Mais c’est formidable ! Nous allons recevoir un\ncadeau de la direction ? C’est une bonne surprise."
@@ -40282,14 +40213,14 @@
     "consigne_supplementaire": null
   },
   {
-    "id": "delf-a2-2021-co-29",
+    "id": "delf-a2-2021-co-ex4-29",
     "niveau": "A1-A2",
     "competence": "CO",
     "type_exercice": "complet",
-    "theme": "Piste 29",
+    "theme": "Comprendre une discussion",
     "scenario": "maison",
     "scene": "Piste 29",
-    "consigne": "Écoutez le document. Lisez les questions, puis répondez.",
+    "consigne": "Vous entendez quatre débuts de dialogue. Reliez chaque événement au dialogue qui correspond.",
     "support": {
       "audio": "/lib/audio/tcf/co/temporaire/DELF_A2_2021_Piste_29.mp3",
       "transcription": "1. – Regarde, la voilà. Comme elle est belle ! Sa\nrobe lui va bien, et le bouquet de fleurs, tu as vu,\nces fleurs !\n– Oui, et la lumière est belle. C’est bien de se\nmarier au printemps, les couleurs sont superbes.\n2. – Allez, Mamie, souffle les bougies. Tes petitsenfants vont t’aider.\n– 90 bougies, ça fait beaucoup ! Vite, prépare les\nassiettes pour le gâteau.\n3. – J’espère que tu n’as pas oublié de lui donner\nune bouteille d’eau. C’est long quatre heures sans\nbouger.\n– Je lui ai donné aussi une pomme, en attendant de\npasser l’oral, s’il a faim.\n4. – Allô, Brigitte, ça y est, je suis grand-mère ! Elle\ns’appelle Aurélie et pèse 3,100 kg.\n– Bravo, tu embrasseras la maman pour moi. J’irai\nla voir quand elle rentrera à la maison."
@@ -40533,59 +40464,45 @@
     "consigne_supplementaire": null
   },
   {
-    "id": "delf-a2-2021-co-30",
+    "id": "delf-a2-2021-co-ex4-30",
     "niveau": "A1-A2",
     "competence": "CO",
     "type_exercice": "complet",
-    "theme": "Piste 30",
+    "theme": "Comprendre une discussion",
     "scenario": "fetes",
     "scene": "Piste 30",
-    "consigne": "Écoutez le document. Lisez les questions, puis répondez.",
+    "consigne": "Vous entendez ce document sonore, répondez à la question en cochant la bonne réponse.",
     "support": {
       "audio": "/lib/audio/tcf/co/temporaire/DELF_A2_2021_Piste_30.mp3",
       "transcription": "– Je ne comprends pas, Armand, tu devais venir\npour les vacances de Noël et tu me dis maintenant\nque tu pars avec des copains à la montagne ?\n– Oh papa, s’il te plaît, laisse-moi aller avec mes\ncopains. On va faire du ski pendant huit jours. Je\nfêterai Noël en janvier avec vous !"
     },
     "questions": [
       {
-        "enonce": "De quel lieu parle-t-on ?",
+        "enonce": "Que veut Armand ?",
         "type_reponse": "lignes",
         "points": 1,
         "nb_lignes": 1,
-        "reponse_modele": "Montagne",
+        "reponse_modele": "Fêter Noël en famille",
         "formes": {
           "qcm_texte": {
             "melanger": true,
             "choix": [
               {
                 "id": "a",
-                "texte": "Montagne",
-                "correct": true
+                "texte": "Voir son père à Noël"
               },
               {
                 "id": "b",
-                "texte": "Campagne"
+                "texte": "Partir avec ses copains"
               },
               {
                 "id": "c",
-                "texte": "Ruisseau"
-              }
-            ]
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/nature/montagne.webp",
+                "texte": "Fêter Noël en famille",
                 "correct": true
               },
               {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/nature/campagne.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/nature/ruisseau.webp"
+                "id": "d",
+                "texte": "Skier en janvier"
               }
             ]
           }
@@ -40595,14 +40512,14 @@
     "consigne_supplementaire": null
   },
   {
-    "id": "delf-a2-2021-co-31",
+    "id": "delf-a2-2021-co-ex4-31",
     "niveau": "A1-A2",
     "competence": "CO",
     "type_exercice": "complet",
-    "theme": "Piste 31",
+    "theme": "Comprendre une discussion",
     "scenario": "fetes",
     "scene": "Piste 31",
-    "consigne": "Écoutez le document. Lisez les questions, puis répondez.",
+    "consigne": "Voici cinq extraits de discussions entre deux locuteurs. Retrouvez les personnages de chaque scène",
     "support": {
       "audio": "/lib/audio/tcf/co/temporaire/DELF_A2_2021_Piste_31.mp3",
       "transcription": "1. – Bonjour madame, je viens m’inscrire en 1 re\nannée de licence.\n– Ah ! vous n’êtes pas au bon bureau. Ici, c’est le\nsecrétariat pédagogique. Vous devez aller au\nbureau 417, au secrétariat administratif.\n2. – J’ai une idée pour l’anniversaire de grand-père :\non lui achète une tablette numérique.\n– C’est cher, tu sais ! Même si je te donne un peu\nplus d’argent de poche.\n3. – Attendez, docteur, vous pouvez répéter ? Je\nn’ai pas bien noté l’heure du rendez-vous.\n– Vous avez rendez-vous à mon cabinet, jeudi à\n15 h 30.\n4. – Je vous rapporte cette robe. Ce n’est pas ma\ntaille : vous m’avez donné un 42, c’est trop grand.\n– Donnez-moi le ticket de caisse, je vais voir en\nrayon si je l’ai en 40.\n5. – Vous avez les papiers du véhicule, s’il vous\nplaît ?\n– Oui, oui, je vous les donne tout de suite. Je croyais\nqu’on avait le droit de se garer ici."
@@ -40846,14 +40763,14 @@
     "consigne_supplementaire": null
   },
   {
-    "id": "delf-a2-2021-co-32",
+    "id": "delf-a2-2021-co-ex4-32",
     "niveau": "A1-A2",
     "competence": "CO",
     "type_exercice": "complet",
-    "theme": "Piste 32",
+    "theme": "Comprendre une discussion",
     "scenario": "travail",
     "scene": "Piste 32",
-    "consigne": "Écoutez le document. Lisez les questions, puis répondez.",
+    "consigne": "Écoutez ce document et cochez la case qui correspond.",
     "support": {
       "audio": "/lib/audio/tcf/co/temporaire/DELF_A2_2021_Piste_32.mp3",
       "transcription": "– Allô, c’est Lucile. J’ai un service à te demander,\nmaman : tu peux garder Romain demain matin ? La\ncrèche est fermée exceptionnellement et j’ai une\nréunion importante qui dure toute la matinée au\nbureau.\n– Bon, oui, je vais m’arranger, mais à partir de 14 h,\nje ne suis plus libre. Viens le chercher vers 13 h 30,\nil aura déjeuné."
@@ -40935,11 +40852,11 @@
     "consigne_supplementaire": null
   },
   {
-    "id": "delf-a2-2021-co-33",
+    "id": "delf-a2-2021-co-ex1-33",
     "niveau": "A1-A2",
     "competence": "CO",
     "type_exercice": "complet",
-    "theme": "Piste 33",
+    "theme": "Comprendre une annonce",
     "scenario": "transports",
     "scene": "Piste 33",
     "consigne": "Écoutez le document. Lisez les questions, puis répondez.",
@@ -41042,11 +40959,11 @@
     "consigne_supplementaire": null
   },
   {
-    "id": "delf-a2-2021-co-34",
+    "id": "delf-a2-2021-co-ex1-34",
     "niveau": "A1-A2",
     "competence": "CO",
     "type_exercice": "complet",
-    "theme": "Piste 34",
+    "theme": "Comprendre une annonce",
     "scenario": "ecole",
     "scene": "Piste 34",
     "consigne": "Écoutez le document. Lisez les questions, puis répondez.",
@@ -41056,333 +40973,81 @@
     },
     "questions": [
       {
-        "enonce": "De quel lieu parle-t-on ?",
+        "enonce": "Quand est-ce que la station de métro Gaîté est ouverte ?",
         "type_reponse": "lignes",
         "points": 1,
         "nb_lignes": 1,
-        "reponse_modele": "Cinema",
+        "reponse_modele": "Le lundi et le dimanche de 6 heures à 22 heures",
         "formes": {
           "qcm_texte": {
             "melanger": true,
             "choix": [
               {
                 "id": "a",
-                "texte": "Cinema",
-                "correct": true
+                "texte": "Toute la semaine"
               },
               {
                 "id": "b",
-                "texte": "Distributeur automatique"
+                "texte": "Le lundi et le dimanche"
               },
               {
                 "id": "c",
-                "texte": "Bureau d information"
-              }
-            ]
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/ville/cinema.webp",
+                "texte": "Le lundi et le dimanche de 6 heures à 22 heures",
                 "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/ville/distributeur-automatique.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/ville/bureau-d-information.webp"
               }
             ]
           }
         }
       },
       {
-        "enonce": "Quel nombre entend-on en premier ?",
+        "enonce": "Qu’est-ce qui est exceptionnel ?",
         "type_reponse": "lignes",
         "points": 1,
         "nb_lignes": 1,
-        "reponse_modele": "3",
+        "reponse_modele": "Des soldes dans le rayon CD",
         "formes": {
           "qcm_texte": {
             "melanger": true,
             "choix": [
               {
                 "id": "a",
-                "texte": "3",
+                "texte": "Des soldes dans le rayon CD",
                 "correct": true
               },
               {
                 "id": "b",
-                "texte": "1"
+                "texte": "Des soldes dans tous les rayons"
               },
               {
                 "id": "c",
-                "texte": "2"
+                "texte": "Une semaine de promotions"
               }
             ]
           }
         }
       },
       {
-        "enonce": "De quel lieu parle-t-on ?",
+        "enonce": "Que faut-il faire avec la voiture bleue ?",
         "type_reponse": "lignes",
         "points": 1,
         "nb_lignes": 1,
-        "reponse_modele": "Station",
+        "reponse_modele": "Il faut la déplacer",
         "formes": {
           "qcm_texte": {
             "melanger": true,
             "choix": [
               {
                 "id": "a",
-                "texte": "Station",
+                "texte": "Il faut la déplacer",
                 "correct": true
               },
               {
                 "id": "b",
-                "texte": "Distributeur automatique"
+                "texte": "Il faut la repeindre"
               },
               {
                 "id": "c",
-                "texte": "Bureau d information"
-              }
-            ]
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/ville/station.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/ville/magasin-informatique.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/ville/caisse-automatique.webp"
-              }
-            ]
-          }
-        }
-      },
-      {
-        "enonce": "Quelle heure entend-on en premier ?",
-        "type_reponse": "lignes",
-        "points": 1,
-        "nb_lignes": 1,
-        "reponse_modele": "6 h",
-        "formes": {
-          "qcm_texte": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "texte": "6 h",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "texte": "7 h"
-              },
-              {
-                "id": "c",
-                "texte": "8 h"
-              }
-            ]
-          }
-        }
-      },
-      {
-        "enonce": "Que faut-il retenir ?",
-        "type_reponse": "lignes",
-        "points": 1,
-        "nb_lignes": 1,
-        "reponse_modele": "Mercredi exceptionnel aux Galeries Jitrouvetout.",
-        "formes": {
-          "qcm_texte": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "texte": "Mercredi exceptionnel aux Galeries Jitrouvetout.",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "texte": "Le magasin est fermé le lundi."
-              },
-              {
-                "id": "c",
-                "texte": "Le rendez-vous est annulé."
-              }
-            ]
-          }
-        }
-      },
-      {
-        "enonce": "De quelle activité parle-t-on ?",
-        "type_reponse": "lignes",
-        "points": 1,
-        "nb_lignes": 1,
-        "reponse_modele": "Danse",
-        "formes": {
-          "qcm_texte": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "texte": "Danse",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "texte": "Billets de spectacle"
-              },
-              {
-                "id": "c",
-                "texte": "Cinema en plein air"
-              }
-            ]
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/loisirs/danse.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/loisirs/billets-de-spectacle.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/loisirs/cinema-en-plein-air.webp"
-              }
-            ]
-          }
-        }
-      },
-      {
-        "enonce": "Combien de avec ?",
-        "type_reponse": "lignes",
-        "points": 1,
-        "nb_lignes": 1,
-        "reponse_modele": "5",
-        "formes": {
-          "qcm_texte": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "texte": "5",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "texte": "3"
-              },
-              {
-                "id": "c",
-                "texte": "6"
-              }
-            ]
-          }
-        }
-      },
-      {
-        "enonce": "De quel moyen de transport parle-t-on ?",
-        "type_reponse": "lignes",
-        "points": 1,
-        "nb_lignes": 1,
-        "reponse_modele": "Voiture bleue",
-        "formes": {
-          "qcm_texte": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "texte": "Voiture bleue",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "texte": "Ceinture de sécurité"
-              },
-              {
-                "id": "c",
-                "texte": "Automate a billets"
-              }
-            ]
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/transports/voiture-bleue.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/transports/ceinture-de-sécurité.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/transports/automate-a-billets.webp"
-              }
-            ]
-          }
-        }
-      },
-      {
-        "enonce": "De quel lieu parle-t-on ?",
-        "type_reponse": "lignes",
-        "points": 1,
-        "nb_lignes": 1,
-        "reponse_modele": "Magasin",
-        "formes": {
-          "qcm_texte": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "texte": "Magasin",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "texte": "Distributeur automatique"
-              },
-              {
-                "id": "c",
-                "texte": "Bureau d information"
-              }
-            ]
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/ville/magasin.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/ville/guichet-de-commune.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/ville/salon-de-coiffure.webp"
+                "texte": "Il faut faire le plein"
               }
             ]
           }
@@ -41392,11 +41057,11 @@
     "consigne_supplementaire": null
   },
   {
-    "id": "delf-a2-2021-co-35",
+    "id": "delf-a2-2021-co-ex1-35",
     "niveau": "A1-A2",
     "competence": "CO",
     "type_exercice": "complet",
-    "theme": "Piste 35",
+    "theme": "Comprendre une annonce",
     "scenario": "magasins",
     "scene": "Piste 35",
     "consigne": "Écoutez le document. Lisez les questions, puis répondez.",
@@ -41406,297 +41071,27 @@
     },
     "questions": [
       {
-        "enonce": "De quel lieu parle-t-on ?",
+        "enonce": "Qui est Anna ?",
         "type_reponse": "lignes",
         "points": 1,
         "nb_lignes": 1,
-        "reponse_modele": "Musee",
+        "reponse_modele": "Une guide",
         "formes": {
           "qcm_texte": {
             "melanger": true,
             "choix": [
               {
                 "id": "a",
-                "texte": "Musee",
+                "texte": "Une guide",
                 "correct": true
               },
               {
                 "id": "b",
-                "texte": "Distributeur automatique"
+                "texte": "Une caissière"
               },
               {
                 "id": "c",
-                "texte": "Bureau d information"
-              }
-            ]
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/ville/musee.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/ville/distributeur-automatique.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/ville/bureau-d-information.webp"
-              }
-            ]
-          }
-        }
-      },
-      {
-        "enonce": "De quelle activité parle-t-on ?",
-        "type_reponse": "lignes",
-        "points": 1,
-        "nb_lignes": 1,
-        "reponse_modele": "Spectacle",
-        "formes": {
-          "qcm_texte": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "texte": "Spectacle",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "texte": "Billets de spectacle"
-              },
-              {
-                "id": "c",
-                "texte": "Cinema en plein air"
-              }
-            ]
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/loisirs/spectacle.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/loisirs/billets-de-spectacle.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/loisirs/cinema-en-plein-air.webp"
-              }
-            ]
-          }
-        }
-      },
-      {
-        "enonce": "De quelle activité parle-t-on ?",
-        "type_reponse": "lignes",
-        "points": 1,
-        "nb_lignes": 1,
-        "reponse_modele": "Musique",
-        "formes": {
-          "qcm_texte": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "texte": "Musique",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "texte": "Groupe de rock"
-              },
-              {
-                "id": "c",
-                "texte": "Instruments"
-              }
-            ]
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/musique/musique.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/musique/groupe-de-rock.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/musique/instruments.webp"
-              }
-            ]
-          }
-        }
-      },
-      {
-        "enonce": "Combien de étage ?",
-        "type_reponse": "lignes",
-        "points": 1,
-        "nb_lignes": 1,
-        "reponse_modele": "2",
-        "formes": {
-          "qcm_texte": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "texte": "2",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "texte": "3"
-              },
-              {
-                "id": "c",
-                "texte": "4"
-              }
-            ]
-          }
-        }
-      },
-      {
-        "enonce": "De quel lieu parle-t-on ?",
-        "type_reponse": "lignes",
-        "points": 1,
-        "nb_lignes": 1,
-        "reponse_modele": "Restaurant",
-        "formes": {
-          "qcm_texte": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "texte": "Restaurant",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "texte": "Distributeur automatique"
-              },
-              {
-                "id": "c",
-                "texte": "Bureau d information"
-              }
-            ]
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/ville/restaurant.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/ville/magasin-informatique.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/ville/caisse-automatique.webp"
-              }
-            ]
-          }
-        }
-      },
-      {
-        "enonce": "De quel lieu parle-t-on ?",
-        "type_reponse": "lignes",
-        "points": 1,
-        "nb_lignes": 1,
-        "reponse_modele": "Piscine",
-        "formes": {
-          "qcm_texte": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "texte": "Piscine",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "texte": "Distributeur automatique"
-              },
-              {
-                "id": "c",
-                "texte": "Bureau d information"
-              }
-            ]
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/ville/piscine.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/ville/guichet-de-commune.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/ville/salon-de-coiffure.webp"
-              }
-            ]
-          }
-        }
-      },
-      {
-        "enonce": "De quel lieu parle-t-on ?",
-        "type_reponse": "lignes",
-        "points": 1,
-        "nb_lignes": 1,
-        "reponse_modele": "Supermarche",
-        "formes": {
-          "qcm_texte": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "texte": "Supermarche",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "texte": "Distributeur automatique"
-              },
-              {
-                "id": "c",
-                "texte": "Bureau d information"
-              }
-            ]
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/ville/supermarche.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/ville/salle-d-attente.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/ville/station-service.webp"
+                "texte": "Une visiteuse"
               }
             ]
           }
@@ -41706,14 +41101,14 @@
     "consigne_supplementaire": null
   },
   {
-    "id": "delf-a2-2021-co-36",
+    "id": "delf-a2-2021-co-ex2-36",
     "niveau": "A1-A2",
     "competence": "CO",
     "type_exercice": "complet",
-    "theme": "Piste 36",
+    "theme": "Comprendre des émissions",
     "scenario": "actualite",
     "scene": "Piste 36",
-    "consigne": "Écoutez le document. Lisez les questions, puis répondez.",
+    "consigne": "Lisez les questions. Écoutez le document puis répondez.",
     "support": {
       "audio": "/lib/audio/tcf/co/temporaire/DELF_A2_2021_Piste_36.mp3",
       "transcription": "Vous écoutez Radio Numéro 1, il est 8 h 30. L’une\ndes principales informations, c’est l’incroyable\ndouceur hivernale. Cela fait maintenant presque\nquatre semaines que les températures sont\nau-dessus des températures de saison sur toute la\nFrance."
@@ -41795,203 +41190,122 @@
     "consigne_supplementaire": null
   },
   {
-    "id": "delf-a2-2021-co-37",
+    "id": "delf-a2-2021-co-ex2-37",
     "niveau": "A1-A2",
     "competence": "CO",
     "type_exercice": "complet",
-    "theme": "Piste 37",
+    "theme": "Comprendre des émissions",
     "scenario": "transports",
     "scene": "Piste 37",
-    "consigne": "Écoutez le document. Lisez les questions, puis répondez.",
+    "consigne": "Lisez les questions. Écoutez le document puis répondez.",
     "support": {
       "audio": "/lib/audio/tcf/co/temporaire/DELF_A2_2021_Piste_37.mp3",
       "transcription": "1. Chers auditeurs ! À l’occasion de la sortie de son\nnouvel album Cinq , vous pouvez gagner 2 places\npour le concert de Lisa ! Appelez vite votre radio\npréférée, donnez la bonne réponse à la question\nposée, et c’est gagné !\n2. Du 10 au 18 mars, venez à Saulgé pour découvrir\nson festival du livre ancien. Vous pouvez visiter\nses expositions et rencontrer les auteurs présents.\nL’entrée est payante. Rendez-vous sur le site de la\nmairie pour en savoir plus.\n3. Cet été avec les départs en vacances, les routes\nvont être pleines de vacanciers ! Choisissez le\ntrain plutôt que la voiture. En plus, il y a 20 % de\nréduction sur tous les billets achetés ce week-end !\nN’attendez plus !"
     },
     "questions": [
       {
-        "enonce": "De quelle activité parle-t-on ?",
+        "enonce": "Comment faire pour gagner ?",
         "type_reponse": "lignes",
         "points": 1,
         "nb_lignes": 1,
-        "reponse_modele": "Concert",
+        "reponse_modele": "Aller sur le site internet de la radio",
         "formes": {
           "qcm_texte": {
             "melanger": true,
             "choix": [
               {
                 "id": "a",
-                "texte": "Concert",
-                "correct": true
+                "texte": "Appeler Lisa"
               },
               {
                 "id": "b",
-                "texte": "Groupe de rock"
+                "texte": "Répondre à une question"
               },
               {
                 "id": "c",
-                "texte": "Instruments"
-              }
-            ]
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/musique/concert.webp",
+                "texte": "Aller sur le site internet de la radio",
                 "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/musique/groupe-de-rock.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/musique/instruments.webp"
               }
             ]
           }
         }
       },
       {
-        "enonce": "Combien de places ?",
+        "enonce": "Quel est le thème du festival organisé à Saulgé ?",
         "type_reponse": "lignes",
         "points": 1,
         "nb_lignes": 1,
-        "reponse_modele": "2",
+        "reponse_modele": "La musique",
         "formes": {
           "qcm_texte": {
             "melanger": true,
             "choix": [
               {
                 "id": "a",
-                "texte": "2",
+                "texte": "La musique",
                 "correct": true
               },
               {
                 "id": "b",
-                "texte": "1"
+                "texte": "La peinture"
               },
               {
                 "id": "c",
-                "texte": "3"
+                "texte": "La littérature"
               }
             ]
           }
         }
       },
       {
-        "enonce": "De quelle activité parle-t-on ?",
+        "enonce": "Que devez-vous faire ?",
         "type_reponse": "lignes",
         "points": 1,
         "nb_lignes": 1,
-        "reponse_modele": "Festival",
+        "reponse_modele": "Appeler la mairie",
         "formes": {
           "qcm_texte": {
             "melanger": true,
             "choix": [
               {
                 "id": "a",
-                "texte": "Festival",
-                "correct": true
+                "texte": "Acheter un billet"
               },
               {
                 "id": "b",
-                "texte": "Billets de spectacle"
-              },
-              {
-                "id": "c",
-                "texte": "Cinema en plein air"
-              }
-            ]
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/loisirs/festival.webp",
+                "texte": "Appeler la mairie",
                 "correct": true
               },
               {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/loisirs/billets-de-spectacle.webp"
-              },
-              {
                 "id": "c",
-                "image": "/lib/images/vocabulaire/loisirs/cinema-en-plein-air.webp"
+                "texte": "Visiter une exposition"
               }
             ]
           }
         }
       },
       {
-        "enonce": "Quelle date entend-on ?",
+        "enonce": "Que se passe-t-il bientôt ?",
         "type_reponse": "lignes",
         "points": 1,
         "nb_lignes": 1,
-        "reponse_modele": "Le 18 mars",
+        "reponse_modele": "C’est le début des vacances",
         "formes": {
           "qcm_texte": {
             "melanger": true,
             "choix": [
               {
                 "id": "a",
-                "texte": "Le 18 mars",
-                "correct": true
+                "texte": "C’est la fête nationale"
               },
               {
                 "id": "b",
-                "texte": "le 3 janvier"
+                "texte": "C’est la rentrée des classes"
               },
               {
                 "id": "c",
-                "texte": "le 12 avril"
-              }
-            ]
-          }
-        }
-      },
-      {
-        "enonce": "De quel moyen de transport parle-t-on ?",
-        "type_reponse": "lignes",
-        "points": 1,
-        "nb_lignes": 1,
-        "reponse_modele": "Voiture",
-        "formes": {
-          "qcm_texte": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "texte": "Voiture",
+                "texte": "C’est le début des vacances",
                 "correct": true
-              },
-              {
-                "id": "b",
-                "texte": "Ceinture de sécurité"
-              },
-              {
-                "id": "c",
-                "texte": "Automate a billets"
-              }
-            ]
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/transports/voiture.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/transports/ceinture-de-sécurité.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/transports/automate-a-billets.webp"
               }
             ]
           }
@@ -42001,176 +41315,95 @@
     "consigne_supplementaire": null
   },
   {
-    "id": "delf-a2-2021-co-38",
+    "id": "delf-a2-2021-co-ex2-38",
     "niveau": "A1-A2",
     "competence": "CO",
     "type_exercice": "complet",
-    "theme": "Piste 38",
+    "theme": "Comprendre des émissions",
     "scenario": "magasins",
     "scene": "Piste 38",
-    "consigne": "Écoutez le document. Lisez les questions, puis répondez.",
+    "consigne": "Lisez les questions. Écoutez le document puis répondez.",
     "support": {
       "audio": "/lib/audio/tcf/co/temporaire/DELF_A2_2021_Piste_38.mp3",
       "transcription": "1. Ce week-end, rendez-vous à Bizé, pour son\nfestival de peinture ! Les artistes vous attendent\npour vous montrer leurs œuvres d’art sous la\ngrande tente. Achetez votre billet directement\nà l’entrée du festival. Pour plus d’informations,\nvisitez notre site : www.mairiedebize.fr .\n2. Chers auditeurs, les soldes finissent ce weekend. Alors, n’attendez plus ! Venez vite dans\nvotre magasin de jardinage préféré pour acheter\nvos plantes pour l’été ! Chez Rozam, profitez de\nréductions exceptionnelles : jusqu’à moins 70 % !\n3. Vous aimez la langue française ? Vous écrivez\nbien ? Participez au grand jeu de l’orthographe de\nvotre radio préférée ! Nous offrons au gagnant un\nchèque de 100 €. Inscrivez-vous au 09 50 23 51 89."
     },
     "questions": [
       {
-        "enonce": "De quelle activité parle-t-on ?",
+        "enonce": "Où pouvez-vous acheter les billets ?",
         "type_reponse": "lignes",
         "points": 1,
         "nb_lignes": 1,
-        "reponse_modele": "Festival",
+        "reponse_modele": "Sous la grande tente",
         "formes": {
           "qcm_texte": {
             "melanger": true,
             "choix": [
               {
                 "id": "a",
-                "texte": "Festival",
+                "texte": "Sous la grande tente",
                 "correct": true
               },
               {
                 "id": "b",
-                "texte": "Billets de spectacle"
+                "texte": "À l’entrée du festival"
               },
               {
                 "id": "c",
-                "texte": "Cinema en plein air"
-              }
-            ]
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/loisirs/festival.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/loisirs/billets-de-spectacle.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/loisirs/cinema-en-plein-air.webp"
+                "texte": "Sur le site de la mairie"
               }
             ]
           }
         }
       },
       {
-        "enonce": "De quelle activité parle-t-on ?",
+        "enonce": "Pourquoi le magasin Rozam fait-il des réductions ?",
         "type_reponse": "lignes",
         "points": 1,
         "nb_lignes": 1,
-        "reponse_modele": "Jardinage",
+        "reponse_modele": "Parce que c’est l’anniversaire du magasin",
         "formes": {
           "qcm_texte": {
             "melanger": true,
             "choix": [
               {
                 "id": "a",
-                "texte": "Jardinage",
-                "correct": true
+                "texte": "Parce que ce sont les soldes"
               },
               {
                 "id": "b",
-                "texte": "Billets de spectacle"
+                "texte": "Parce que c’est le début de l’été"
               },
               {
                 "id": "c",
-                "texte": "Cinema en plein air"
-              }
-            ]
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/loisirs/jardinage.webp",
+                "texte": "Parce que c’est l’anniversaire du magasin",
                 "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/loisirs/decoration-de-fete.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/loisirs/parc-d-attractions.webp"
               }
             ]
           }
         }
       },
       {
-        "enonce": "De quoi parle-t-on ?",
+        "enonce": "Quel est le thème du jeu ?",
         "type_reponse": "lignes",
         "points": 1,
         "nb_lignes": 1,
-        "reponse_modele": "Langue",
+        "reponse_modele": "La grammaire",
         "formes": {
           "qcm_texte": {
             "melanger": true,
             "choix": [
               {
                 "id": "a",
-                "texte": "Langue",
+                "texte": "La grammaire",
                 "correct": true
               },
               {
                 "id": "b",
-                "texte": "Moustache"
+                "texte": "L’orthographe"
               },
               {
                 "id": "c",
-                "texte": "Cheville"
-              }
-            ]
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/corps/langue.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/corps/moustache.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/corps/cheville.webp"
-              }
-            ]
-          }
-        }
-      },
-      {
-        "enonce": "Quel numéro de téléphone entend-on ?",
-        "type_reponse": "lignes",
-        "points": 1,
-        "nb_lignes": 1,
-        "reponse_modele": "09.50.23.51.89",
-        "formes": {
-          "qcm_texte": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "texte": "09.50.23.51.89",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "texte": "09.50.23.51.00"
-              },
-              {
-                "id": "c",
-                "texte": "09.50.23.51.12"
+                "texte": "Le vocabulaire"
               }
             ]
           }
@@ -42180,11 +41413,11 @@
     "consigne_supplementaire": null
   },
   {
-    "id": "delf-a2-2021-co-39",
+    "id": "delf-a2-2021-co-ex3-39",
     "niveau": "A1-A2",
     "competence": "CO",
     "type_exercice": "complet",
-    "theme": "Piste 39",
+    "theme": "Comprendre un message oral",
     "scenario": "travail",
     "scene": "Piste 39",
     "consigne": "Écoutez le document. Lisez les questions, puis répondez.",
@@ -42194,72 +41427,54 @@
     },
     "questions": [
       {
-        "enonce": "De quoi parle-t-on ?",
+        "enonce": "Dans quel bureau travaille cette personne ?",
         "type_reponse": "lignes",
         "points": 1,
         "nb_lignes": 1,
-        "reponse_modele": "Machine à café",
+        "reponse_modele": "Bureau 307",
         "formes": {
           "qcm_texte": {
             "melanger": true,
             "choix": [
               {
                 "id": "a",
-                "texte": "Machine à café",
-                "correct": true
+                "texte": "Bureau 207"
               },
               {
                 "id": "b",
-                "texte": "Balance de cuisine"
-              },
-              {
-                "id": "c",
-                "texte": "Plaque de cuisson"
-              }
-            ]
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/electromenager/machine-à-café.webp",
+                "texte": "Bureau 307",
                 "correct": true
               },
               {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/electromenager/balance-de-cuisine.webp"
-              },
-              {
                 "id": "c",
-                "image": "/lib/images/vocabulaire/electromenager/plaque-de-cuisson.webp"
+                "texte": "Bureau 317"
               }
             ]
           }
         }
       },
       {
-        "enonce": "Quel est le numéro de Jérémie ?",
+        "enonce": "Quel est le numéro de téléphone ?",
         "type_reponse": "lignes",
         "points": 1,
         "nb_lignes": 1,
-        "reponse_modele": "01.32.81.06.12",
+        "reponse_modele": "01 32 81 06 12",
         "formes": {
           "qcm_texte": {
             "melanger": true,
             "choix": [
               {
                 "id": "a",
-                "texte": "01.32.81.06.12",
+                "texte": "01 32 81 06 12",
                 "correct": true
               },
               {
                 "id": "b",
-                "texte": "01.32.81.06.00"
+                "texte": "01 32 91 06 12"
               },
               {
                 "id": "c",
-                "texte": "01.32.81.06.47"
+                "texte": "01 32 81 16 12"
               }
             ]
           }
@@ -42269,86 +41484,95 @@
     "consigne_supplementaire": null
   },
   {
-    "id": "delf-a2-2021-co-40",
+    "id": "delf-a2-2021-co-ex3-40",
     "niveau": "A1-A2",
     "competence": "CO",
     "type_exercice": "complet",
-    "theme": "Piste 40",
+    "theme": "Comprendre un message oral",
     "scenario": "transports",
     "scene": "Piste 40",
-    "consigne": "Écoutez le document. Lisez les questions, puis répondez.",
+    "consigne": "Lisez les questions. Écoutez le document puis répondez.",
     "support": {
       "audio": "/lib/audio/tcf/co/temporaire/DELF_A2_2021_Piste_40.mp3",
       "transcription": "Bonjour, ici l’agence de voyages Revatoutprix. J’ai\ndes clients qui devaient partir demain à 10 h 15\npar le vol 541 de Roissy-Charles-de-Gaulle à\ndestination de Varsovie. Malheureusement, ils sont\nbloqués sur une île en Bretagne par une tempête.\nLes communications seront rétablies seulement\ndemain matin. Pouvez-vous me rappeler à l’agence\nle plus vite possible pour trouver ensemble une\nsolution ? L’assurance se charge de l’annulation\nde demain mais, je voudrais réserver un autre vol\naprès-demain même heure sur Air Pologne."
     },
     "questions": [
       {
-        "enonce": "De quel lieu parle-t-on ?",
+        "enonce": "Quelle est l’information principale de ce message ?",
         "type_reponse": "lignes",
         "points": 1,
         "nb_lignes": 1,
-        "reponse_modele": "Destination",
+        "reponse_modele": "Annulation d’un vol",
         "formes": {
           "qcm_texte": {
             "melanger": true,
             "choix": [
               {
                 "id": "a",
-                "texte": "Destination",
+                "texte": "Annulation d’un vol",
                 "correct": true
               },
               {
                 "id": "b",
-                "texte": "Carte d embarquement"
+                "texte": "Annulation d’un voyage"
               },
               {
                 "id": "c",
-                "texte": "Pension complete"
-              }
-            ]
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/voyage/destination.webp",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/voyage/carte-d-embarquement.webp"
-              },
-              {
-                "id": "c",
-                "image": "/lib/images/vocabulaire/voyage/pension-complete.webp"
+                "texte": "Réservation d’un vol"
               }
             ]
           }
         }
       },
       {
-        "enonce": "À quelle heure ?",
+        "enonce": "Qui a laissé ce message ?",
         "type_reponse": "lignes",
         "points": 1,
         "nb_lignes": 1,
-        "reponse_modele": "10 h 15",
+        "reponse_modele": "L’agence de voyages",
         "formes": {
           "qcm_texte": {
             "melanger": true,
             "choix": [
               {
                 "id": "a",
-                "texte": "10 h 15",
+                "texte": "Les clients"
+              },
+              {
+                "id": "b",
+                "texte": "L’aéroport"
+              },
+              {
+                "id": "c",
+                "texte": "L’agence de voyages",
+                "correct": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "enonce": "Quel est le numéro du vol ?",
+        "type_reponse": "lignes",
+        "points": 1,
+        "nb_lignes": 1,
+        "reponse_modele": "Vol 541",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "Vol 541",
                 "correct": true
               },
               {
                 "id": "b",
-                "texte": "7 h"
+                "texte": "Vol 561"
               },
               {
                 "id": "c",
-                "texte": "8 h"
+                "texte": "Vol 581"
               }
             ]
           }
@@ -42358,11 +41582,11 @@
     "consigne_supplementaire": null
   },
   {
-    "id": "delf-a2-2021-co-41",
+    "id": "delf-a2-2021-co-ex3-41",
     "niveau": "A1-A2",
     "competence": "CO",
     "type_exercice": "complet",
-    "theme": "Piste 41",
+    "theme": "Comprendre un message oral",
     "scenario": "fetes",
     "scene": "Piste 41",
     "consigne": "Écoutez le document. Lisez les questions, puis répondez.",
@@ -42372,72 +41596,108 @@
     },
     "questions": [
       {
-        "enonce": "De quoi parle-t-on ?",
+        "enonce": "Pour qui est organisé une fête ?",
         "type_reponse": "lignes",
         "points": 1,
         "nb_lignes": 1,
-        "reponse_modele": "Cafetiere",
+        "reponse_modele": "Nathalie",
         "formes": {
           "qcm_texte": {
             "melanger": true,
             "choix": [
               {
                 "id": "a",
-                "texte": "Cafetiere",
-                "correct": true
+                "texte": "Marc"
               },
               {
                 "id": "b",
-                "texte": "Balance de cuisine"
-              },
-              {
-                "id": "c",
-                "texte": "Plaque de cuisson"
-              }
-            ]
-          },
-          "qcm_image": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "image": "/lib/images/vocabulaire/electromenager/cafetiere.webp",
+                "texte": "Nathalie",
                 "correct": true
               },
               {
-                "id": "b",
-                "image": "/lib/images/vocabulaire/electromenager/balance-de-cuisine.webp"
-              },
-              {
                 "id": "c",
-                "image": "/lib/images/vocabulaire/electromenager/plaque-de-cuisson.webp"
+                "texte": "Le directeur"
               }
             ]
           }
         }
       },
       {
-        "enonce": "Qui parle ?",
+        "enonce": "À quelle heure a lieu la fête ?",
         "type_reponse": "lignes",
         "points": 1,
         "nb_lignes": 1,
-        "reponse_modele": "Marc",
+        "reponse_modele": "À 17 heures",
         "formes": {
           "qcm_texte": {
             "melanger": true,
             "choix": [
               {
                 "id": "a",
-                "texte": "Marc",
-                "correct": true
+                "texte": "À 12 heures"
               },
               {
                 "id": "b",
-                "texte": "Sophie"
+                "texte": "À 17 heures",
+                "correct": true
               },
               {
                 "id": "c",
-                "texte": "Léa"
+                "texte": "À 19 heures"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "enonce": "Où se passe la fête ?",
+        "type_reponse": "lignes",
+        "points": 1,
+        "nb_lignes": 1,
+        "reponse_modele": "Dans une salle de réunion",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "Dans un bureau"
+              },
+              {
+                "id": "b",
+                "texte": "Dans une salle de réunion",
+                "correct": true
+              },
+              {
+                "id": "c",
+                "texte": "Dans le hall d’entrée de l’entreprise"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "enonce": "De quoi devez-vous vous occuper ?",
+        "type_reponse": "lignes",
+        "points": 1,
+        "nb_lignes": 1,
+        "reponse_modele": "Du cadeau",
+        "formes": {
+          "qcm_texte": {
+            "melanger": true,
+            "choix": [
+              {
+                "id": "a",
+                "texte": "Du repas"
+              },
+              {
+                "id": "b",
+                "texte": "Du cadeau",
+                "correct": true
+              },
+              {
+                "id": "c",
+                "texte": "Des invitations"
               }
             ]
           }
@@ -42447,11 +41707,11 @@
     "consigne_supplementaire": null
   },
   {
-    "id": "delf-a2-2021-co-42",
+    "id": "delf-a2-2021-co-ex4-42",
     "niveau": "A1-A2",
     "competence": "CO",
     "type_exercice": "complet",
-    "theme": "Piste 42",
+    "theme": "Comprendre une discussion",
     "scenario": "transports",
     "scene": "Piste 42",
     "consigne": "Écoutez le document. Lisez les questions, puis répondez.",
@@ -42644,11 +41904,11 @@
     "consigne_supplementaire": null
   },
   {
-    "id": "delf-a2-2021-co-43",
+    "id": "delf-a2-2021-co-ex4-43",
     "niveau": "A1-A2",
     "competence": "CO",
     "type_exercice": "complet",
-    "theme": "Piste 43",
+    "theme": "Comprendre une discussion",
     "scenario": "travail",
     "scene": "Piste 43",
     "consigne": "Écoutez le document. Lisez les questions, puis répondez.",
@@ -42841,11 +42101,11 @@
     "consigne_supplementaire": null
   },
   {
-    "id": "delf-a2-2021-co-44",
+    "id": "delf-a2-2021-co-ex4-44",
     "niveau": "A1-A2",
     "competence": "CO",
     "type_exercice": "complet",
-    "theme": "Piste 44",
+    "theme": "Comprendre une discussion",
     "scenario": "ecole",
     "scene": "Piste 44",
     "consigne": "Écoutez le document. Lisez les questions, puis répondez.",
@@ -43074,11 +42334,11 @@
     "consigne_supplementaire": null
   },
   {
-    "id": "delf-a2-2021-co-45",
+    "id": "delf-a2-2021-co-ex4-45",
     "niveau": "A1-A2",
     "competence": "CO",
     "type_exercice": "complet",
-    "theme": "Piste 45",
+    "theme": "Comprendre une discussion",
     "scenario": "ecole",
     "scene": "Piste 45",
     "consigne": "Écoutez le document. Lisez les questions, puis répondez.",
@@ -43253,11 +42513,11 @@
     "consigne_supplementaire": null
   },
   {
-    "id": "delf-a2-2021-co-46",
+    "id": "delf-a2-2021-co-ex4-46",
     "niveau": "A1-A2",
     "competence": "CO",
     "type_exercice": "complet",
-    "theme": "Piste 46",
+    "theme": "Comprendre une discussion",
     "scenario": "travail",
     "scene": "Piste 46",
     "consigne": "Écoutez le document. Lisez les questions, puis répondez.",

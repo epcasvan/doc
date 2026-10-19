@@ -270,20 +270,28 @@ export type TcfSlotMeta = {
 
 export const TCF_CO_NUMEROS = [1, 2, 3, 4, 5] as const
 
+const CO_DEROULE = [
+  'A1 : identifier un événement (messages, questionnaire). A2 : comprendre des annonces et des instructions (6 QCM).',
+  'A1 : identifier une activité (météo, radio, annonces). A2 : comprendre une émission de radio (6 QCM).',
+  'A1 : comprendre des instructions (messages). A2 : comprendre un message sur répondeur (6 QCM).',
+  'A1 : identifier des situations (dialogues et images). A2 : comprendre une discussion (appariement).',
+  'A1 : identifier des objets (messages et images). En A2, l’oral s’arrête à l’exercice 4.',
+] as const
+
 export const TCF_SLOTS: readonly TcfSlotMeta[] = [
   ...TCF_CO_NUMEROS.map((numero) => ({
     typeId: `tcf-co-ex-${numero}`,
     competence: 'CO' as const,
     numero,
     label: `Exercice ${numero}`,
-    description: `Compréhension orale : exercice ${numero} des documents audio.`,
+    description: CO_DEROULE[numero - 1] ?? `Compréhension orale : exercice ${numero}.`,
     instruction: 'Écoutez le document, puis répondez aux questions.',
   })),
   {
     typeId: 'tcf-ce',
     competence: 'CE',
     label: 'Exercices de compréhension écrite',
-    description: 'Tous les exercices de compréhension écrite de la banque.',
+    description: 'A1 : 4 exercices (instructions, espace, temps, s’informer), QCM. A2 : 4 exercices (s’orienter, correspondance, instructions, s’informer).',
     instruction: 'Lisez le document, puis répondez aux questions.',
   },
   {
@@ -331,6 +339,8 @@ export function tcfScenarioLabel(id: string | undefined): string {
 
 /** Numéro de l’exercice dans son document d’origine (`…-co-3`, `…-po-2b` → 3, 2). */
 export function tcfPosition(id: string): number | undefined {
+  const part = id.match(/-ex(\d+)-/)
+  if (part) return Number(part[1])
   const match = id.match(/-(?:co|ce|pe|po)-(\d)[a-z]?$/)
   return match ? Number(match[1]) : undefined
 }

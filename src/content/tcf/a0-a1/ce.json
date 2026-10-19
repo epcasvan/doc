@@ -17942,4 +17942,608 @@
     ],
     "consigne_supplementaire": null
   }
+,
+  {
+    "id": "delf-a1-2022-ce-ex1-auberge",
+    "niveau": "A0-A1",
+    "competence": "CE",
+    "type_exercice": "annonce",
+    "theme": "Suivre des instructions simples",
+    "scenario": "vacances",
+    "scene": "Règlement de l’auberge",
+    "consigne": "Lisez le document, puis répondez.",
+    "support": {
+      "titre": "Message à l’entrée",
+      "texte": "Chers clients,\nDans l’auberge, vous pouvez payer par carte bancaire, mais nous ne prenons pas les chèques. C’est pareil pour les dollars : il y a un bureau de change à 100 mètres.\nDans la cuisine, il faut laver vos plats, verres et assiettes.\nDans les chambres, vous ne devez pas faire de bruit après 21 h.\nDans la salle de bains, vous devez garder les lieux propres.\nLe jour de votre départ, passez à la réception avant 10 h 30.\nRappel : le petit déjeuner est servi de 7 h à 9 h 30.\nBon séjour !\nLa direction",
+      "image": null
+    },
+    "questions": [
+      {
+        "enonce": "Pour qui est ce message ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Les cuisiniers"
+          },
+          {
+            "id": "b",
+            "texte": "Les voyageurs",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "texte": "Les directeurs"
+          }
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Les voyageurs"
+          }
+        }
+      },
+      {
+        "enonce": "Où faut-il faire silence le soir ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Dans la cuisine"
+          },
+          {
+            "id": "b",
+            "texte": "Dans les chambres",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "texte": "Dans la salle de bains"
+          }
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Dans les chambres"
+          }
+        }
+      },
+      {
+        "enonce": "Qu’est-ce que vous devez faire avant de partir ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Passer à la réception",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Ranger votre chambre"
+          },
+          {
+            "id": "c",
+            "texte": "Laver vos plats, verres et assiettes"
+          }
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Passer à la réception"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "delf-a1-2022-ce-ex1-carte",
+    "niveau": "A0-A1",
+    "competence": "CE",
+    "type_exercice": "annonce",
+    "theme": "Suivre des instructions simples",
+    "scenario": "vacances",
+    "scene": "Carte d’Ana",
+    "consigne": "Lisez le document, puis répondez.",
+    "support": {
+      "titre": "Carte postale",
+      "texte": "Salut Mélanie,\nEst-ce que tu passes de belles vacances en Bretagne ? Je suis arrivée lundi dernier à Genève, en Suisse. Il fait un temps magnifique. Je me promène dans le centre-ville, je fais du vélo et je lis des livres dans les cafés. Jeudi, je vais visiter Lausanne et dîner dans un restaurant à côté du lac Léman. Je reviens en train à Paris dimanche soir.\nTéléphone-moi quand tu peux.\nJe t’embrasse,\nAna",
+      "image": null
+    },
+    "questions": [
+      {
+        "enonce": "Qu’est-ce que c’est ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Un courriel"
+          },
+          {
+            "id": "b",
+            "texte": "Une publicité"
+          },
+          {
+            "id": "c",
+            "texte": "Une carte postale",
+            "correct": true
+          }
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Une carte postale"
+          }
+        }
+      },
+      {
+        "enonce": "Où est Mélanie ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "À Paris"
+          },
+          {
+            "id": "b",
+            "texte": "En Suisse"
+          },
+          {
+            "id": "c",
+            "texte": "En Bretagne",
+            "correct": true
+          }
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "En Bretagne"
+          }
+        }
+      },
+      {
+        "enonce": "Quand Ana rentre en France ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Lundi"
+          },
+          {
+            "id": "b",
+            "texte": "Jeudi"
+          },
+          {
+            "id": "c",
+            "texte": "Dimanche",
+            "correct": true
+          }
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Dimanche"
+          }
+        }
+      },
+      {
+        "enonce": "Qu’est-ce que doit faire Mélanie ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Venir"
+          },
+          {
+            "id": "b",
+            "texte": "Écrire"
+          },
+          {
+            "id": "c",
+            "texte": "Appeler",
+            "correct": true
+          }
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Appeler"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "delf-a1-2022-ce-ex1-invitation",
+    "niveau": "A0-A1",
+    "competence": "CE",
+    "type_exercice": "annonce",
+    "theme": "Suivre des instructions simples",
+    "scenario": "fetes",
+    "scene": "Invitation de Laurine et Antoine",
+    "consigne": "Lisez le document, puis répondez.",
+    "support": {
+      "titre": "Faire-part",
+      "texte": "Laurine et Antoine vous attendent le samedi 30 juillet pour fêter leur bonheur.\nCérémonie civile, 14 h 30, mairie, 23 rue Auguste Renoir.\nVin d’honneur, 17 h 30, salle des fêtes, 32 rue Émile Zola.\nDîner, 20 h, salle des fêtes, 32 rue Émile Zola.\nSoirée concert, 22 h 30, salle des fêtes, 32 rue Émile Zola.\nPour réserver une chambre, contactez Marion et Mathieu avant le 25 juin.\nRéponse souhaitée avant le 28 mai.\nLaurine et Antoine, 12 rue de Loire, 37100 Tours.",
+      "image": null
+    },
+    "questions": [
+      {
+        "enonce": "Ce message est une invitation pour quoi ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Un mariage",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Une naissance"
+          },
+          {
+            "id": "c",
+            "texte": "Un anniversaire"
+          }
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Un mariage"
+          }
+        }
+      },
+      {
+        "enonce": "Qui vous invite ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Laurine et Antoine",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Marion et Mathieu"
+          },
+          {
+            "id": "c",
+            "texte": "Laurine et Mathieu"
+          }
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Laurine et Antoine"
+          }
+        }
+      },
+      {
+        "enonce": "Vous êtes invité quand ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Le 28 mai"
+          },
+          {
+            "id": "b",
+            "texte": "Le 25 juin"
+          },
+          {
+            "id": "c",
+            "texte": "Le 30 juillet",
+            "correct": true
+          }
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Le 30 juillet"
+          }
+        }
+      },
+      {
+        "enonce": "Dans combien de lieux différents on vous invite ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "2",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "3"
+          },
+          {
+            "id": "c",
+            "texte": "4"
+          }
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "2"
+          }
+        }
+      },
+      {
+        "enonce": "À quelle heure vous pouvez écouter de la musique et danser ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "À 17 h 30"
+          },
+          {
+            "id": "b",
+            "texte": "À 20 h"
+          },
+          {
+            "id": "c",
+            "texte": "À 22 h 30",
+            "correct": true
+          }
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "À 22 h 30"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "delf-a1-2022-ce-ex2-clinique",
+    "niveau": "A0-A1",
+    "competence": "CE",
+    "type_exercice": "annonce",
+    "theme": "Lire pour s’orienter dans l’espace",
+    "scenario": "sante",
+    "scene": "Entrée de la clinique",
+    "consigne": "Lisez le document, puis répondez.",
+    "support": {
+      "titre": "Message aux visiteurs",
+      "texte": "Chers visiteurs,\nL’entrée principale et le jardin sont fermés cette semaine parce que la clinique loue les lieux à une société de production de cinéma pour faire un film. L’entrée principale ouvre ce week-end.\nPendant ce temps, l’accueil est à côté du bureau des frais de séjour.\nPour aller à la cafétéria (ouverte de 8 h à 18 h), vous devez entrer par la rue d’Arcole. Après, passez par le bureau des admissions et descendez l’escalier.\nPour aller au centre de radiologie (ouvert au public de 9 h à 11 h 30), il faut entrer par la rue de la Cité. Passez devant les urgences et allez dans la galerie A.\nPour aller à la pharmacie (ouverte de 10 h à 18 h), entrez par le quai de la Corse. Après, tournez à droite.\nLa direction de la clinique",
+      "image": null
+    },
+    "questions": [
+      {
+        "enonce": "Par où vous passez pour aller boire un café ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Par la rue d’Arcole",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Par la rue de la Cité"
+          },
+          {
+            "id": "c",
+            "texte": "Par le quai de la Corse"
+          }
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Par la rue d’Arcole"
+          }
+        }
+      },
+      {
+        "enonce": "Par où entrez-vous pour acheter des médicaments ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Par la rue d’Arcole"
+          },
+          {
+            "id": "b",
+            "texte": "Par la rue de la Cité"
+          },
+          {
+            "id": "c",
+            "texte": "Par le quai de la Corse",
+            "correct": true
+          }
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Par le quai de la Corse"
+          }
+        }
+      },
+      {
+        "enonce": "Pour aller au centre de radiologie, par où entrez-vous ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Par la rue d’Arcole"
+          },
+          {
+            "id": "b",
+            "texte": "Par la rue de la Cité",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "texte": "Par le quai de la Corse"
+          }
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Par la rue de la Cité"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "delf-a1-2022-ce-ex4-voisins",
+    "niveau": "A0-A1",
+    "competence": "CE",
+    "type_exercice": "annonce",
+    "theme": "Lire pour s’informer",
+    "scenario": "vie-quotidienne",
+    "scene": "La fête des voisins",
+    "consigne": "Lisez le document, puis répondez.",
+    "support": {
+      "titre": "Fête des voisins",
+      "texte": "En France, il y a la fête des voisins dans toutes les villes. C’est un rendez-vous pour connaître ses voisins. La fête se déroule dans la rue. On installe des tables. Dans les immeubles, on organise la fête dans le jardin ou dans le hall. Tous les voisins apportent de la nourriture et des boissons. Chaque année, des millions de Français participent. L’événement existe depuis 1990. C’est toujours un vendredi, à partir de 19 h.",
+      "image": null
+    },
+    "questions": [
+      {
+        "enonce": "La fête des voisins, c’est quoi ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Un événement pour fêter le week-end"
+          },
+          {
+            "id": "b",
+            "texte": "Un événement pour connaître ses voisins",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "texte": "Un événement pour donner de la nourriture aux voisins"
+          }
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Un événement pour connaître ses voisins"
+          }
+        }
+      },
+      {
+        "enonce": "Qui apporte de la nourriture et des boissons ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Un seul voisin"
+          },
+          {
+            "id": "b",
+            "texte": "Tous les voisins",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "texte": "Les responsables de la ville"
+          }
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Tous les voisins"
+          }
+        }
+      },
+      {
+        "enonce": "Quand a lieu l’événement ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Une fois par an",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Deux fois par an"
+          },
+          {
+            "id": "c",
+            "texte": "Plusieurs fois par an"
+          }
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Une fois par an"
+          }
+        }
+      },
+      {
+        "enonce": "Quel jour de la semaine a lieu l’événement ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": true,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Mardi"
+          },
+          {
+            "id": "b",
+            "texte": "Vendredi",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "texte": "Samedi"
+          }
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Vendredi"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  }
 ]

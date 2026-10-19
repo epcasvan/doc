@@ -355,11 +355,12 @@ function pickByPosition(pool: readonly TcfExercise[], count: number, rng: Rng): 
   for (let position = 1; position <= count; position++) {
     const remaining = pool.filter((ex) => !chosen.includes(ex))
     if (remaining.length === 0) break
+    const tagged = remaining.filter((ex) => /-ex\d+-/.test(ex.id) && tcfPosition(ex.id) === position)
     const atPosition = remaining.filter((ex) => {
       const origin = tcfPosition(ex.id)
       return origin === position || origin == null
     })
-    const candidates = atPosition.length > 0 ? atPosition : remaining
+    const candidates = tagged.length > 0 ? tagged : atPosition.length > 0 ? atPosition : remaining
     const newType = candidates.filter((ex) => !chosen.some((c) => c.type_exercice === ex.type_exercice))
     chosen.push(pick(rng, newType.length > 0 ? newType : candidates))
   }
@@ -368,7 +369,8 @@ function pickByPosition(pool: readonly TcfExercise[], count: number, rng: Rng): 
 
 /**
  * Test complet tiré au hasard dans la banque du niveau : Informations,
- * CO exercices 1 à 4, 4 CE, PE (formulaire, dialogue, message, e-mail),
+ * CO selon le déroulé du niveau (A1 : 5 exercices, A2 : 4), 4 CE,
+ * PE (formulaire, dialogue, message, e-mail),
  * PO (entretien dirigé, questions sur 3 thèmes, image et interaction).
  */
 export function buildTcfRandomTestPages(niveau: TcfNiveau, seed: number): PageConfig[] {
@@ -378,8 +380,11 @@ export function buildTcfRandomTestPages(niveau: TcfNiveau, seed: number): PageCo
   const numberedBank = (n: TcfNiveau, slot: TcfSlotMeta) =>
     tcfSlotBank(n, slot).filter((ex) => !/^tcf-[a-z0-9]+-(?:co|ce|pe|po)-\d{3}$/.test(ex.id))
   const pages: PageConfig[] = [tcfConsignesPage(niveau)]
-  for (const slot of TCF_SLOTS.filter((s) => s.competence === 'CO' && (s.numero ?? 0) <= 4)) {
-    const pool = numberedBank(niveau, slot)
+  const coMax = niveau === 'A0-A1' ? 5 : 4
+  for (const slot of TCF_SLOTS.filter((s) => s.competence === 'CO' && (s.numero ?? 0) <= coMax)) {
+    const all = numberedBank(niveau, slot)
+    const tagged = all.filter((ex) => /-ex\d+-/.test(ex.id))
+    const pool = tagged.length > 0 ? tagged : all
     if (pool.length > 0) pages.push(page(slot.typeId, pick(rng, pool)))
   }
   const slotOf = (competence: TcfCompetence) => TCF_SLOTS.find((s) => s.competence === competence)!
