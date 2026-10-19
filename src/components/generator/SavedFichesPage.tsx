@@ -123,9 +123,6 @@ export function SavedFichesPage({
     }
   }, [allowed, configured, unlocked])
 
-  const canTcf = allowed.has('tcf')
-  const canTpm = [...TPM_DOMAINS].some((domain) => allowed.has(domain))
-
   const domainOptions = useMemo(() => {
     const present = new Set<Domain>()
     for (const fiche of fiches) {
@@ -263,16 +260,12 @@ export function SavedFichesPage({
               <button type="button" className={library === 'fiches' ? 'active' : ''} onClick={() => chooseLibrary('fiches')}>
                 Fiches
               </button>
-              {canTcf ? (
-                <button type="button" className={library === 'tcf' ? 'active' : ''} onClick={() => chooseLibrary('tcf')}>
-                  TCF
-                </button>
-              ) : null}
-              {canTpm ? (
-                <button type="button" className={library === 'tpm' ? 'active' : ''} onClick={() => chooseLibrary('tpm')}>
-                  TCM
-                </button>
-              ) : null}
+              <button type="button" className={library === 'tcf' ? 'active' : ''} onClick={() => chooseLibrary('tcf')}>
+                TCF
+              </button>
+              <button type="button" className={library === 'tpm' ? 'active' : ''} onClick={() => chooseLibrary('tpm')}>
+                TCM
+              </button>
               <button type="button" className={library === 'alpha' ? 'active' : ''} onClick={() => chooseLibrary('alpha')}>
                 Alpha
               </button>

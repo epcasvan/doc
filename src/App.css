@@ -86,7 +86,7 @@
 .select-menu::-webkit-scrollbar-thumb:hover{background:var(--ink)}
 .select-menu li{margin:0;padding:0}
 .select-option{
-  width:100%;border:0;background:transparent;border-radius:999px;padding:10px 14px;text-align:left;
+  width:100%;border:0;background:transparent;border-radius:8px;padding:10px 14px;text-align:left;
   color:var(--ink);font-size:14px;font-weight:500;cursor:pointer
 }
 .select-option:hover,.select-option:focus-visible{background:#f3f5f8;outline:none}
@@ -5213,8 +5213,11 @@ textarea.pill-input,
 .fiches-card{margin:24px auto}
 .fiches-panel{display:flex;flex-direction:column;gap:18px;width:100%;min-width:0}
 .fiches-intro h1{margin:0;font-size:clamp(32px,4vw,44px);letter-spacing:-.05em;line-height:1.05}
-.fiches-libraries.mode-toggle.is-tabs{width:100%}
-.fiches-libraries.mode-toggle.is-tabs button{flex:1 1 auto;min-width:0}
+.fiches-libraries.mode-toggle.is-tabs{
+  display:grid;grid-template-columns:repeat(5,minmax(0,1fr));
+  width:100%;max-width:none
+}
+.fiches-libraries.mode-toggle.is-tabs button{flex:unset;min-width:0;width:100%}
 .fiches-toolbar{
   display:grid;
   grid-template-columns:minmax(0,1fr) minmax(160px,22vw) minmax(140px,16vw);
@@ -5283,6 +5286,7 @@ textarea.pill-input,
 .save-fiche-actions .button.secondary:hover{border-color:var(--purple);color:var(--purple)}
 @media(max-width:720px){
   .fiches-main{padding:28px 16px 48px}
+  .fiches-libraries.mode-toggle.is-tabs{grid-template-columns:repeat(auto-fit,minmax(72px,1fr))}
   .fiches-toolbar{grid-template-columns:1fr}
   .fiches-row{flex-direction:column;align-items:stretch}
   .fiches-row-actions{justify-content:flex-end}
