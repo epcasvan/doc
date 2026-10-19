@@ -336,8 +336,9 @@ export function StackedPrompt({ item, mode }: { item: MathItem; mode: PreviewMod
       </div>
     )
   }
+  const line = item.labels?.includes('societe-line')
   return (
-    <div className="prompt-stack">
+    <div className={`prompt-stack${line ? ' societe-line' : ''}`}>
       <p className="prompt-stack-text">{prompt}</p>
       <span className={`answer-line-field ${show ? 'filled' : ''}`}>
         {show ? lineAnswer : '\u00a0'}

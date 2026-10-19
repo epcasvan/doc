@@ -1,19 +1,13 @@
 import type { MathItem, PageConfig } from '@/math/types'
+import { tryGenerateSuisseBlock } from './suisse'
 import { isSocieteType } from './types'
 
-/** Placeholder déterministe (pas de tirage). */
+/** Fiches Société. La Suisse est un contenu fixe (pas de tirage). */
 export function tryGenerateSocieteBlock(
   config: PageConfig,
 ): { instruction: string; items: MathItem[] } | null {
   if (!isSocieteType(config.exerciseType)) return null
-  return {
-    instruction: 'Contenu pédagogique à venir.',
-    items: [
-      {
-        layout: 'text',
-        prompt: 'Le domaine Société sera bientôt disponible.',
-        answer: '',
-      },
-    ],
-  }
+  const built = tryGenerateSuisseBlock(config.exerciseType)
+  if (!built) return null
+  return { instruction: built.instruction, items: built.items }
 }

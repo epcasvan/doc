@@ -849,6 +849,11 @@ html,body,#root{
   margin:0;font-size:13pt;font-weight:600;line-height:1.45;color:var(--ink);
   text-align:justify;hyphens:auto
 }
+.prompt-stack.societe-line{flex-direction:row;align-items:baseline;gap:8px}
+.prompt-stack.societe-line .prompt-stack-text{
+  flex:0 1 auto;text-align:left;white-space:normal
+}
+.prompt-stack.societe-line .answer-line-field{flex:1 1 auto;min-width:2.5em}
 .proportion-kg-stack{gap:4px}
 .proportion-kg-question{
   display:flex;align-items:baseline;gap:8px;width:100%;min-width:0;flex-wrap:nowrap
