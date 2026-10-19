@@ -3,6 +3,7 @@
  * Appelé à la validation (bouton ✓ à côté du téléchargement).
  */
 import { fmt, sanitizeFrNumberNoise } from '@/math/column-arith'
+import { opTableAnswer, opTableError } from '@/math/op-table'
 import type { ArithOp, Figure, FigureDims, MathItem } from '@/math/types'
 import { mulAudioParts, numberAudioParts } from '@/tcm-cfr/audio-nombres'
 import { clampFracShapeCfr } from '@/math/fraction-shapes'
@@ -1168,6 +1169,15 @@ function recalcProportion(item: MathItem): MathItem {
 /** Recalcule un item selon son layout / type d’exercice. */
 export function recalcTpmLibreItem(item: MathItem, exerciseType: string): MathItem {
   let next = cleanAnswerFloat(item)
+
+  if (next.opTable) {
+    return {
+      ...next,
+      op: next.opTable.op,
+      answer: opTableAnswer(next.opTable),
+      libreError: opTableError(next.opTable),
+    }
+  }
 
   if (
     next.layout === 'count-icons' ||

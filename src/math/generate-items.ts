@@ -23,6 +23,7 @@ import {
   type NumberRange,
 } from './difficulty'
 import { numberToFrench } from '@/francais/french-numbers'
+import { generateOpTableItem } from './op-table'
 import { generatePerimetreCompose } from './perimetre-compose'
 import { generateLengthConversionBatch, tryGenerateConversion } from './conversions'
 import { tryGenerateTpmItems } from '@/tpm/items'
@@ -270,6 +271,12 @@ function generateOne(
       const p = columnAddPair(rng, difficulty, range)
       return columnItem('+', p.a, p.b, p.result, typeId.endsWith('poser'))
     }
+    case 'addition-tableau':
+      return generateOpTableItem('+', 'cells', rng, difficulty, range)
+    case 'addition-tableau-entetes':
+      return generateOpTableItem('+', 'headers', rng, difficulty, range)
+    case 'addition-tableau-melange':
+      return generateOpTableItem('+', 'mixed', rng, difficulty, range)
     case 'addition-comparer': {
       const p = pairAdd(rng, difficulty, range)
       const q = pairAdd(rng, difficulty, range)
@@ -295,6 +302,12 @@ function generateOne(
       const p = columnSubPair(rng, difficulty, range)
       return columnItem('−', p.a, p.b, p.result, typeId.endsWith('poser'))
     }
+    case 'soustraction-tableau':
+      return generateOpTableItem('−', 'cells', rng, difficulty, range)
+    case 'soustraction-tableau-entetes':
+      return generateOpTableItem('−', 'headers', rng, difficulty, range)
+    case 'soustraction-tableau-melange':
+      return generateOpTableItem('−', 'mixed', rng, difficulty, range)
     case 'soustraction-comparer': {
       const p = pairSub(rng, difficulty, range)
       const q = pairSub(rng, difficulty, range)

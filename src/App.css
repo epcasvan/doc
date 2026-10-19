@@ -215,7 +215,20 @@ html,body,#root{
 
 /* Rendu des layouts mathématiques — print-first, N&B */
 .type-hint{margin:0 0 8px;line-height:1.45}
-.column-op,.division-column,.sequence-block,.problem-block,.geo-block,.coord-block{width:100%;max-width:100%;min-width:0}
+.column-op,.division-column,.sequence-block,.problem-block,.geo-block,.coord-block,.op-table{width:100%;max-width:100%;min-width:0}
+.op-table{border-collapse:collapse;table-layout:fixed;font-size:13pt;line-height:1}
+.op-table th,.op-table td{border:1px solid #222;height:9mm;text-align:center;font-weight:700;padding:0}
+.op-table-corner{background:#fff;font-size:14pt}
+.op-table-col{background:color-mix(in srgb, var(--green) 32%, #fff);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.op-table-row{background:color-mix(in srgb, var(--azure) 18%, #fff);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.op-table td{background:#fff}
+.op-table .is-answer{color:var(--purple)}
+.libre-op-table{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:4px 6px;margin-top:4px}
+.libre-op-slot{display:flex;flex-direction:column;gap:2px;min-width:0}
+.libre-op-slot .libre-line-input.is-num{width:100%;min-width:0;padding:4px 2px;text-align:center}
+.libre-op-given{display:flex;align-items:center;justify-content:center;min-height:32px;border-radius:6px;background:#f3f1f6;font-weight:700;font-size:13px}
+.libre-op-table .libre-seq-toggle{font-size:10px;padding:2px 0}
+.libre-op-table .libre-field-error{grid-column:1 / -1;margin:0}
 .column-op.has-partials{margin-bottom:6px}
 .column-prompt{margin:0 0 8px;font-size:13pt;color:var(--ink);font-weight:600}
 .column-grid.school{

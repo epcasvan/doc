@@ -38,6 +38,7 @@ import type { CountIconKind } from '@/math/types'
 import { RefreshIcon } from '@/components/generator/WorksheetSheet'
 import { fractionPartsFromItem, fractionTermFr } from '@/tpm/fraction-words'
 import { hasMeasureDims } from '@/tpm/libre-recalc'
+import { opTableAnswer, opTableCell, opTableError } from '@/math/op-table'
 import { mulAudioParts, numberAudioParts } from '@/tcm-cfr/audio-nombres'
 import { clampFracShapeCfr } from '@/math/fraction-shapes'
 import {
@@ -671,6 +672,111 @@ function renderFields(
   onChangeItems: (items: MathItem[]) => void,
   items: MathItem[] = [],
 ) {
+  if (item.opTable) {
+    const table = item.opTable
+    const apply = (next: typeof table) => {
+      patch(index, {
+        ...item,
+        op: next.op,
+        opTable: next,
+        answer: opTableAnswer(next),
+        libreError: opTableError(next),
+      })
+    }
+    const toggle = (on: boolean) => (on ? 'À saisir' : 'Donné')
+    return (
+      <div className="libre-op-table" role="group" aria-label={`Tableau ${index + 1}`}>
+        <LineSelect
+          value={table.op}
+          ariaLabel={`Opération ${index + 1}`}
+          options={[
+            { value: '+', label: '+' },
+            { value: '−', label: '−' },
+          ]}
+          onChange={(op) => apply({ ...table, op: op === '−' ? '−' : '+' })}
+        />
+        {table.cols.map((col, c) => (
+          <div key={`col-${c}`} className="libre-op-slot">
+            <NumInput
+              compact
+              value={fmt(col)}
+              ariaLabel={`En-tête colonne ${c + 1}`}
+              onCommit={(raw) => {
+                const n = parseFrNumber(raw)
+                if (n == null) return
+                const cols = table.cols.map((value, i) => (i === c ? n : value))
+                apply({ ...table, cols })
+              }}
+            />
+            <button
+              type="button"
+              className={`libre-seq-toggle${table.colBlank[c] ? ' is-on' : ''}`}
+              aria-pressed={table.colBlank[c]}
+              onClick={() => {
+                const colBlank = table.colBlank.map((value, i) => (i === c ? !value : value))
+                apply({ ...table, colBlank })
+              }}
+            >
+              {toggle(Boolean(table.colBlank[c]))}
+            </button>
+          </div>
+        ))}
+        {table.rows.flatMap((row, r) => [
+          <div key={`row-${r}`} className="libre-op-slot">
+            <NumInput
+              compact
+              value={fmt(row)}
+              ariaLabel={`En-tête ligne ${r + 1}`}
+              onCommit={(raw) => {
+                const n = parseFrNumber(raw)
+                if (n == null) return
+                const rows = table.rows.map((value, i) => (i === r ? n : value))
+                apply({ ...table, rows })
+              }}
+            />
+            <button
+              type="button"
+              className={`libre-seq-toggle${table.rowBlank[r] ? ' is-on' : ''}`}
+              aria-pressed={Boolean(table.rowBlank[r])}
+              onClick={() => {
+                const rowBlank = table.rowBlank.map((value, i) => (i === r ? !value : value))
+                apply({ ...table, rowBlank })
+              }}
+            >
+              {toggle(Boolean(table.rowBlank[r]))}
+            </button>
+          </div>,
+          ...table.cols.map((col, c) => {
+            const blank = table.cellBlank[r]?.[c] ?? false
+            return (
+              <div key={`cell-${r}-${c}`} className="libre-op-slot">
+                <span className="libre-op-given">{fmt(opTableCell(table.op, row, col))}</span>
+                <button
+                  type="button"
+                  className={`libre-seq-toggle${blank ? ' is-on' : ''}`}
+                  aria-pressed={blank}
+                  onClick={() => {
+                    const cellBlank = table.cellBlank.map((line, i) =>
+                      i === r ? line.map((value, j) => (j === c ? !value : value)) : line,
+                    )
+                    apply({ ...table, cellBlank })
+                  }}
+                >
+                  {toggle(blank)}
+                </button>
+              </div>
+            )
+          }),
+        ])}
+        {item.libreError ? (
+          <p className="libre-field-error" role="alert">
+            {item.libreError}
+          </p>
+        ) : null}
+      </div>
+    )
+  }
+
   // TPM ex. 1 — compter les icônes : cible, 2 distracteurs, quantités.
   if (
     item.layout === 'count-icons' ||

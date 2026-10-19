@@ -58,6 +58,7 @@ export type Layout =
   | 'column'
   | 'column-empty'
   | 'division-column'
+  | 'op-table'
   | 'text'
   | 'compare'
   | 'sequence'
@@ -295,6 +296,22 @@ export type CoordTransformColumns = {
 export type AlgebraGiven = { letter: string; value: number }
 
 export type ArithOp = '+' | '−' | '×' | '÷'
+
+/** Tableau à compléter : case = ligne + colonne, ou ligne − colonne. */
+export type OpTableVariant = 'cells' | 'headers' | 'mixed'
+
+export type OpTable = {
+  op: '+' | '−'
+  variant: OpTableVariant
+  cols: number[]
+  rows: number[]
+  /** true : l’élève écrit l’en-tête de colonne. */
+  colBlank: boolean[]
+  /** true : l’élève écrit l’en-tête de ligne. */
+  rowBlank: boolean[]
+  /** true : l’élève écrit la case. */
+  cellBlank: boolean[][]
+}
 export type MissingPos = 'a' | 'b' | 'result'
 
 export type Topic = {
@@ -430,6 +447,8 @@ export type MathItem = {
   blankOperands?: boolean
   /** Message d’erreur mode libre (ex. soustraction a ≤ b). */
   libreError?: string
+  /** Tableau d’addition ou de soustraction à compléter. */
+  opTable?: OpTable
   /** Point pour repérage / transformations. */
   point?: { x: number; y: number; label?: string }
   /** Image du point (corrigé ou second point). */

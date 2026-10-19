@@ -10,6 +10,7 @@ import { GlossaryFigure } from './math/GlossaryFigure'
 import { TcfItemView } from './tcf/TcfItemView'
 import { AlgebraRow } from './item-view/algebra'
 import { ColumnOp, DivisionColumn } from './item-view/columns'
+import { OpTableBlock } from './item-view/op-table'
 import { CompareRow, EncadrementRow, OrderRow, SequenceRow } from './item-view/compare'
 import { CoordBlock, GeoBlock } from './item-view/geo-coord'
 import {
@@ -217,6 +218,7 @@ export function ItemView({
       <div className="item-content">
         {(item.layout === 'column' || item.layout === 'column-empty') && <ColumnOp item={item} mode={mode} />}
         {item.layout === 'division-column' && <DivisionColumn item={item} mode={mode} />}
+        {item.layout === 'op-table' && <OpTableBlock item={item} mode={mode} />}
         {item.layout === 'compare' && <CompareRow item={item} mode={mode} />}
         {item.layout === 'encadrement' && <EncadrementRow item={item} mode={mode} />}
         {item.layout === 'select' && <SelectPillsRow item={oralItem} mode={mode} />}

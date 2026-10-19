@@ -45,6 +45,8 @@ import type { ExerciseBlock, ExerciseType } from '@/math/types'
 
 export function applyType(type: ExerciseType, prev?: ExerciseBlock): Partial<ExerciseBlock> {
   const isProblem = type.id.includes('problemes')
+  const isOpTable =
+    type.id.startsWith('addition-tableau') || type.id.startsWith('soustraction-tableau')
   const isEquation = type.id.startsWith('equations-')
   const isLongMul = type.id.startsWith('multiplication-2chiffres')
   const isDivisionCol = type.id.startsWith('division-colonne')
@@ -152,7 +154,9 @@ export function applyType(type: ExerciseType, prev?: ExerciseBlock): Partial<Exe
     topic: type.topic,
     track: type.track,
     columns: type.preferredColumns ?? 2,
-    ...(isProblem || isEquation
+    ...(isOpTable
+      ? { count: 2 }
+      : isProblem || isEquation
       ? { count: 2 }
       : isDivisionCol
         ? { count: 3 }
