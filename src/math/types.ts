@@ -463,6 +463,8 @@ export type MathItem = {
   libreError?: string
   /** Tableau d’addition ou de soustraction à compléter. */
   opTable?: OpTable
+  /** Monnaie à rendre : valeur en centimes et nombre de billets ou de pièces. */
+  changeParts?: { cents: number; count: number }[]
   /** Décomposition pour le calcul mental (dizaines et unités). */
   decompose?: DecomposeCalc
   /** Point pour repérage / transformations. */

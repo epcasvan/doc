@@ -1,4 +1,6 @@
 import { Fragment } from 'react'
+import { fmt } from '@/math/column-arith'
+import { MoneyChangeBoard } from './money-change'
 import type { MathItem, PreviewMode } from '@/math/types'
 import {
   computeScale,
@@ -488,9 +490,23 @@ export function ProblemBlock({
   draftGrid?: boolean
 }) {
   const show = mode === 'answers'
+  const sketch = item.labels?.includes('sketch-vars') ? item.problemVarDefs ?? [] : []
   return (
     <div className="problem-block">
+      {sketch.length > 0 ? (
+        <div className="problem-sketch" aria-label="Données du problème">
+          {sketch.map((def) => (
+            <div key={def.key}>
+              <b>{def.label}</b>
+              <span>{fmt(item.problemVars?.[def.key] ?? 0)}</span>
+            </div>
+          ))}
+        </div>
+      ) : null}
       <p className="problem-prompt">{item.prompt}</p>
+      {item.labels?.includes('sketch-change') ? (
+        <MoneyChangeBoard parts={item.changeParts ?? []} mode={mode} />
+      ) : null}
       <div className="problem-field">
         <span className="field-label">Calcul</span>
         <div className={`draft-pad ${draftGrid ? 'with-grid' : 'plain'}`} aria-label="Zone de calcul">

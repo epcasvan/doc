@@ -39,6 +39,7 @@ import { RefreshIcon } from '@/components/generator/WorksheetSheet'
 import { fractionPartsFromItem, fractionTermFr } from '@/tpm/fraction-words'
 import { hasMeasureDims } from '@/tpm/libre-recalc'
 import { buildDecompose, decomposeAnswer, decomposeError } from '@/math/decompose'
+import { algebraProblemOptions, rebuildAlgebraProblem, rollAlgebraProblem } from '@/math/word-problems'
 import { opTableAnswer, opTableCell, opTableError } from '@/math/op-table'
 import { mulAudioParts, numberAudioParts } from '@/tcm-cfr/audio-nombres'
 import { clampFracShapeCfr } from '@/math/fraction-shapes'
@@ -1969,11 +1970,17 @@ function renderFields(
     const part = item.problemPart ?? 0
     const editDefs = defs.filter((d) => d.editOn === 'both' || d.editOn === part)
     const vars = item.problemVars ?? {}
-    const problemOptions = problemOptionsForExercise(exerciseType)
+    const algebraOptions = algebraProblemOptions(exerciseType)
+    const problemOptions = algebraOptions ?? problemOptionsForExercise(exerciseType)
     const commitVar = (key: string, raw: string) => {
       const n = parseFrNumber(raw)
       if (n == null || !item.problemTemplateId) return
       const nextVars = { ...vars, [key]: n }
+      if (item.problemTemplateId.startsWith('wp-')) {
+        const one = rebuildAlgebraProblem(item.problemTemplateId, nextVars)
+        if (one) patch(index, one)
+        return
+      }
       const rebuilt = rebuildProblemItems(item.problemTemplateId, nextVars)
       if (rebuilt) onChangeItems(rebuilt)
     }
@@ -1987,10 +1994,13 @@ function renderFields(
               options={problemOptions.map((o) => ({ value: o.id, label: o.label }))}
               onChange={(id) => {
                 libreProblemRoll = (libreProblemRoll + 1) >>> 0
-                const rolled = rollProblemItems(
-                  id,
-                  createRng((id.length * 997 + libreProblemRoll * 2654435761) >>> 0),
-                )
+                const rng = createRng((id.length * 997 + libreProblemRoll * 2654435761) >>> 0)
+                if (id.startsWith('wp-')) {
+                  const one = rollAlgebraProblem(id, rng)
+                  if (one) patch(index, one)
+                  return
+                }
+                const rolled = rollProblemItems(id, rng)
                 if (rolled) onChangeItems(rolled)
               }}
             />

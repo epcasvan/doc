@@ -4,6 +4,7 @@
  */
 import { fmt, sanitizeFrNumberNoise } from '@/math/column-arith'
 import { decomposeAnswer, decomposeError, buildDecompose } from '@/math/decompose'
+import { rebuildAlgebraProblem } from '@/math/word-problems'
 import { opTableAnswer, opTableError } from '@/math/op-table'
 import type { ArithOp, Figure, FigureDims, MathItem } from '@/math/types'
 import { mulAudioParts, numberAudioParts } from '@/tcm-cfr/audio-nombres'
@@ -1170,6 +1171,10 @@ function recalcProportion(item: MathItem): MathItem {
 /** Recalcule un item selon son layout / type d’exercice. */
 export function recalcTpmLibreItem(item: MathItem, exerciseType: string): MathItem {
   let next = cleanAnswerFloat(item)
+
+  if (next.problemTemplateId?.startsWith('wp-') && next.problemVars) {
+    return rebuildAlgebraProblem(next.problemTemplateId, next.problemVars) ?? next
+  }
 
   if (next.decompose) {
     const rebuilt = buildDecompose(next.decompose.op, next.decompose.a, next.decompose.b)

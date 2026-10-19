@@ -230,6 +230,17 @@ html,body,#root{
 .decompose-term{display:inline-flex;align-items:flex-end;gap:0.2em}
 .decompose-group{display:inline-flex;align-items:flex-end;gap:0.2em;border-bottom:1.5px solid var(--ink);padding:0 0.15em 1px;margin-bottom:2px}
 .decompose-slot{min-width:3em}
+.problem-sketch{display:flex;flex-wrap:wrap;gap:8px 12px;margin:0 0 8px}
+.problem-sketch div{display:flex;flex-direction:column;align-items:center;gap:3px;min-width:4.2em}
+.problem-sketch b{font-size:10pt;font-weight:600;text-align:center}
+.problem-sketch span{display:flex;align-items:center;justify-content:center;min-width:3em;min-height:1.7em;padding:0 6px;border:1.5px solid #222;font-weight:700}
+.money-change{margin:4px 0 8px}
+.money-change-title{margin:6px 0 3px;font-size:11pt;font-weight:700}
+.money-change-row{display:flex;flex-wrap:wrap;gap:5px 8px}
+.money-change-slot{display:flex;flex-direction:column;align-items:center;gap:2px;width:16mm}
+.money-bill{width:16mm;height:9mm;display:block}
+.money-coin{width:11mm;height:11mm;display:block}
+.money-change-count{min-width:2.2em;text-align:center}
 .exercise-item.layout-decompose{min-width:0;max-width:100%}
 .libre-op-table{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:4px 6px;margin-top:4px}
 .libre-op-slot{display:flex;flex-direction:column;gap:2px;min-width:0}
