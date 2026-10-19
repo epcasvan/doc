@@ -8,10 +8,11 @@ import { describeSwissChange } from './money-change'
 import { int, pick, type Rng } from './rng'
 import type { Difficulty, MathItem } from './types'
 import type { ProblemKind } from './problems'
+import { SUITE_SPECS } from './word-problems-suite'
 
-type Vars = Record<string, number>
+export type Vars = Record<string, number>
 
-type Spec = {
+export type Spec = {
   id: string
   label: string
   kinds: ProblemKind[]
@@ -47,7 +48,7 @@ function itemFrom(spec: Spec, vars: Vars): MathItem {
   }
 }
 
-const SPECS: Spec[] = [
+const BASE_SPECS: Spec[] = [
   {
     id: 'wp-plus-que',
     label: 'En a de plus',
@@ -759,6 +760,8 @@ const SPECS: Spec[] = [
     },
   },
 ]
+
+const SPECS: Spec[] = [...BASE_SPECS, ...SUITE_SPECS]
 
 function pool(kind: ProblemKind, difficulty?: Difficulty): Spec[] {
   const byKind = SPECS.filter((s) => s.kinds.includes(kind))
