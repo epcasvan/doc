@@ -114,12 +114,19 @@ export function PageStructureTabs({
                       <TabRemoveButton
                         label="Retirer cet exercice"
                         onRemove={() => {
+                          const blockIdx = index
+                          const numbers = pageExerciseBlocks.map(
+                            (block, i) =>
+                              activeSheet?.blocks?.[i]?.exerciseIndex ??
+                              block.exerciseNo ??
+                              firstExerciseNo + i,
+                          )
                           setPages((current) =>
                             current.map((page, pageIdx) =>
-                              pageIdx === pageIndex ? removePageBlock(page, index) : page,
+                              pageIdx === pageIndex ? removePageBlock(page, blockIdx, numbers) : page,
                             ),
                           )
-                          setBlockIndex(Math.max(0, index - 1))
+                          setBlockIndex(Math.max(0, blockIdx - 1))
                         }}
                       />
                     ) : null}

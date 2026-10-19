@@ -48,7 +48,7 @@ import {
   soutienExerciseTypeId,
   soutienThemeById,
 } from '@/francais/soutien/themes'
-import { addPageBlock } from '@/math/page-model'
+import { addPageBlock, pageBlocks, stampExerciseNumbers } from '@/math/page-model'
 import type { InstitutionalHeader } from '@/components/math/PrintDocumentChrome'
 import type {
   Domain,
@@ -214,7 +214,19 @@ export function usePageNavigation({
     const newBlock = createNextExerciseBlock()
     if (!newBlock) return
     setPages((current) =>
-      current.map((page, index) => (index === pageIndex ? addPageBlock(page, newBlock) : page)),
+      current.map((page, index) => {
+        if (index !== pageIndex) return page
+        const blocks = pageBlocks(page)
+        const sheet = worksheets.find(
+          (item) => (item.configIndex ?? 0) === pageIndex && item.blocks.length === blocks.length,
+        )
+        const numbers = blocks.map(
+          (block, blockIdx) =>
+            sheet?.blocks[blockIdx]?.exerciseIndex ?? block.exerciseNo ?? blockIdx + 1,
+        )
+        const nextNo = Math.max(0, ...numbers) + 1
+        return addPageBlock(stampExerciseNumbers(page, numbers), { ...newBlock, exerciseNo: nextNo })
+      }),
     )
     setBlockIndex(pageExerciseBlocks.length)
   }
