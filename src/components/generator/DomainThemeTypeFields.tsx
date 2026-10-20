@@ -59,7 +59,6 @@ export type DomainThemeTypeFieldsProps = {
   isTcf: boolean
   tcfNiveau: TcfNiveau
   loadTcfSeries: (niveau: TcfNiveau) => void
-  setPages: Dispatch<SetStateAction<PageConfig[]>>
   soutienSelection:
     | ReturnType<typeof resolveSoutienSelection>
     | ReturnType<typeof resolveAlphaSelection>
@@ -110,7 +109,6 @@ export function DomainThemeTypeFields(p: DomainThemeTypeFieldsProps) {
     isTcf,
     tcfNiveau,
     loadTcfSeries,
-    setPages,
     soutienSelection,
     activeBlock,
     changeTopic,

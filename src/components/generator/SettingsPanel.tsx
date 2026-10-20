@@ -187,7 +187,6 @@ export function SettingsPanel(p: SettingsPanelProps) {
           isTcf={p.isTcf}
           tcfNiveau={p.tcfNiveau}
           loadTcfSeries={p.loadTcfSeries}
-          setPages={p.setPages}
           soutienSelection={p.soutienSelection}
           activeBlock={p.activeBlock}
           changeTopic={p.changeTopic}
