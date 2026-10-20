@@ -723,176 +723,176 @@
     "theme": "Soutien scolaire · Radio 32",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/lieux-publics/conformement-dispositions-reglement-dit-1.mp3",
+      "audio": "/lib/audio/tcf/co/actualite/11-actualité-règlement-protection-des-données.mp3",
       "transcription": "Conformément aux dispositions du règlement n° 2016/679, dit règlement général sur la protection des données (RGPD), vous disposez des droits suivants sur vos données et afin de vous assurer que OUI.sncf respecte ses engagements.\n• Droit d'accès : vous avez la possibilité de nous solliciter afin de savoir de quelles données OUI.sncf dispose à votre sujet.\n• Droit de correction et d'effacement : vous avez la possibilité de corriger les données vous concernant et de demander l'effacement.\n• Droit d'opposition : vous avez la possibilité de vous opposer à ce que OUI.sncf réalise un certain nombre de traitements.\n• Droit à la portabilité : vous avez la possibilité de demander à OUI.sncf que vous soient transmises les données vous concernant, données d'identification et de commande exclusivement, sous un format électronique fichier csv.\nIl est toutefois rappelé que l'exercice de ces droits n'est pas absolu, et peut être limité pour des motifs d'intérêt légitime, litige clients, ou légaux.\nComment puis-je exercer mes droits ?\nDroits d'accès, de correction, d'effacement et à la portabilité : Si vous disposez d'un compte client, vous pouvez procéder à la plupart de ces opérations directement en vous connectant à votre compte client.\nSinon, vous avez la possibilité d'envoyer vos demandes au service clients de OUI.sncf par le formulaire électronique suivant ou par courrier à l'adresse suivante : Service Clients OUI.sncf – 2, place de la Défense – CNIT 1 – BP 440 – 92053 Paris La Défense Cedex.\nDroit d'opposition : Vous pouvez exercer votre droit d'opposition des manières suivantes : • Pour les newsletters commerciales : en cliquant sur le lien de désinscription mentionné dans les newsletters qui vous sont adressées : OUI.sncf s'engage alors à ne plus vous adresser de newsletters commerciales.\n• Pour la personnalisation et les cookies : en utilisant le dispositif de gestion des cookies mis à votre disposition sur oui.sncf/guide/vie-privee-cookies.\n• Pour toute autre demande : en adressant vos demandes au service clients OUI.sncf par le formulaire électronique suivant ou par courrier à l'adresse suivante : Service Clients OUI.sncf – 2, place de la Défense – CNIT 1 – BP 440 – 92053 Paris La Défense Cedex.\nD'après : oui.sncf/guide/droits."
     },
     "questions": [
       {
-        "enonce": "Aujourd'hui, dans le sud de la France, il fait…",
+        "enonce": "De quel texte parle ce document ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Beau et chaud",
+            "texte": "Du règlement sur la protection des données",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Nuageux"
+            "texte": "D'une prévision météo"
           },
           {
             "id": "c",
-            "texte": "Pluvieux"
+            "texte": "D'un titre de séjour"
           }
         ],
         "formes": {
           "lignes": {
             "nb_lignes": 1,
-            "reponse_modele": "Beau et chaud"
+            "reponse_modele": "Du règlement sur la protection des données"
           }
         }
       },
       {
-        "enonce": "Dans le nord, qu'est-ce que vous devez prendre pour sortir le matin ?",
+        "enonce": "Que permet le droit d'accès ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Des lunettes de soleil"
-          },
-          {
-            "id": "b",
-            "texte": "Un parapluie",
+            "texte": "Savoir quelles données sont détenues",
             "correct": true
           },
           {
+            "id": "b",
+            "texte": "Changer de numéro de train"
+          },
+          {
             "id": "c",
-            "texte": "Un manteau"
+            "texte": "Obtenir un remboursement"
           }
         ],
         "formes": {
           "lignes": {
             "nb_lignes": 1,
-            "reponse_modele": "Un parapluie"
+            "reponse_modele": "Savoir quelles données sont détenues"
           }
         }
       },
       {
-        "enonce": "Quelle est la température dans le nord ?",
+        "enonce": "Que peut-on demander avec le droit d'effacement ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "15 °C"
-          },
-          {
-            "id": "b",
-            "texte": "20 °C",
+            "texte": "L'effacement de ses données",
             "correct": true
           },
           {
+            "id": "b",
+            "texte": "Un nouveau mot de passe"
+          },
+          {
             "id": "c",
-            "texte": "28 °C"
+            "texte": "Une carte de réduction"
           }
         ],
         "formes": {
           "lignes": {
             "nb_lignes": 1,
-            "reponse_modele": "20 °C"
+            "reponse_modele": "L'effacement de ses données"
           }
         }
       },
       {
-        "enonce": "Qu'est-ce qu'il va y avoir demain ?",
+        "enonce": "Comment recevoir ses données (portabilité) ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Du soleil"
+            "texte": "Dans un fichier électronique",
+            "correct": true
           },
           {
             "id": "b",
-            "texte": "De la pluie"
+            "texte": "Par SMS"
           },
           {
             "id": "c",
-            "texte": "Du vent",
-            "correct": true
+            "texte": "Par un appel"
           }
         ],
         "formes": {
           "lignes": {
             "nb_lignes": 1,
-            "reponse_modele": "Du vent"
+            "reponse_modele": "Dans un fichier électronique"
           }
         }
       },
       {
-        "enonce": "Quelle température fait-il dans le sud ?",
+        "enonce": "Comment arrêter les newsletters commerciales ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "20 °C"
+            "texte": "En cliquant sur le lien de désinscription",
+            "correct": true
           },
           {
             "id": "b",
-            "texte": "24 °C"
+            "texte": "En allant à la préfecture"
           },
           {
             "id": "c",
-            "texte": "28 °C",
-            "correct": true
+            "texte": "En appelant la mairie"
           }
         ],
         "formes": {
           "lignes": {
             "nb_lignes": 1,
-            "reponse_modele": "28 °C"
+            "reponse_modele": "En cliquant sur le lien de désinscription"
           }
         }
       },
       {
-        "enonce": "Dans le nord, que fait le soleil l'après-midi ?",
+        "enonce": "Avec un compte client, comment faire ces opérations ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Il disparaît"
-          },
-          {
-            "id": "b",
-            "texte": "Il revient",
+            "texte": "En se connectant à son compte",
             "correct": true
           },
           {
+            "id": "b",
+            "texte": "En envoyant un fax"
+          },
+          {
             "id": "c",
-            "texte": "Il ne sort pas"
+            "texte": "En venant au guichet"
           }
         ],
         "formes": {
           "lignes": {
             "nb_lignes": 1,
-            "reponse_modele": "Il revient"
+            "reponse_modele": "En se connectant à son compte"
           }
         }
       }
     ],
     "consigne_supplementaire": null,
-    "scenario": "lieux-publics",
-    "scene": "Conformément dispositions règlement dit"
+    "scenario": "actualite",
+    "scene": "La protection des données"
   },
   {
     "id": "tcf-ss-b1-s2-co-2",

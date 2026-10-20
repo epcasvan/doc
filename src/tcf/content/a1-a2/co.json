@@ -9956,7 +9956,7 @@
     "theme": "Soutien scolaire · Dialogue 025",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/lieux-publics/personne-suivante-2.mp3",
+      "audio": "/lib/audio/tcf/co/administration/01-administration-renouveler-titre-de-séjour.mp3",
       "transcription": "- Personne suivante...\nJ'ai dit : Personne suivante !\nBonjour !\n- Bonjour, je voudrais des informations pour renouveler mon titre de séjour qui expire dans 5 mois.\n- Pour faire une demande de renouvellement, vous devez envoyer votre carte de séjour qui arrive à expiration.\n- Pouvez-vous me donner l'adresse postale ?\n- C'est écrit sur ce papier.\n- Je dois envoyer une lettre recommandée ?\n- Non, utilisez une lettre simple au tarif normal.\nAvec la carte, vous envoyez ce formulaire avec votre nom, celui de votre conjoint et de vos enfants à charge, un justificatif de domicile et 3 photos d'identité.\nN'oubliez pas d'ajouter un timbre fiscal.\n- Quand est-ce que je dois faire ma demande ?\n- N'attendez pas trop !\nEnvoyez votre demande au moins 60 jours avant la date d'expiration de votre carte.\n- Merci pour ces informations, j'ai tout noté."
     },
     "questions": [
@@ -10125,7 +10125,7 @@
     ],
     "consigne_supplementaire": null,
     "scenario": "lieux-publics",
-    "scene": "Personne suivante"
+    "scene": "Le titre de séjour"
   },
   {
     "id": "tcf-ss-a2-s5-co-2",
@@ -10135,176 +10135,122 @@
     "theme": "Soutien scolaire · Dialogue 030",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/lieux-publics/en-plus-votre-compte.mp3",
+      "audio": "/lib/audio/tcf/co/poste/01-poste-envoyer-lettre-recommandée.mp3",
       "transcription": "Je voudrais envoyer une lettre recommandée.\nComment ça fonctionne ?\nAvec une lettre recommandée, vous recevez chez vous un accusé de réception.\nC'est la preuve que le destinataire a bien reçu votre lettre.\nEt c'est combien ?\nC'est 4,55 euros."
     },
     "questions": [
       {
-        "enonce": "Où se passe probablement cette conversation ?",
+        "enonce": "Que veut envoyer la personne ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Dans une banque",
+            "texte": "Une lettre recommandée",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "À la poste"
+            "texte": "Un colis"
           },
           {
             "id": "c",
-            "texte": "Dans un magasin"
+            "texte": "Une carte postale"
           }
         ],
         "formes": {
           "lignes": {
             "nb_lignes": 1,
-            "reponse_modele": "Dans une banque"
+            "reponse_modele": "Une lettre recommandée"
           }
         }
       },
       {
-        "enonce": "À quoi sert le livret A ?",
+        "enonce": "Que reçoit-on chez soi ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "À épargner de l'argent",
+            "texte": "Un accusé de réception",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "À payer ses factures"
+            "texte": "Un remboursement"
           },
           {
             "id": "c",
-            "texte": "À recevoir son salaire"
+            "texte": "Un catalogue"
           }
         ],
         "formes": {
           "lignes": {
             "nb_lignes": 1,
-            "reponse_modele": "À épargner de l'argent"
+            "reponse_modele": "Un accusé de réception"
           }
         }
       },
       {
-        "enonce": "Comment l'argent est-il mis de côté ?",
+        "enonce": "À quoi sert cet accusé ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Automatiquement tous les mois",
+            "texte": "À prouver que la lettre est arrivée",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "En espèces au guichet"
+            "texte": "À payer moins cher"
           },
           {
             "id": "c",
-            "texte": "Une fois par an"
+            "texte": "À suivre un colis"
           }
         ],
         "formes": {
           "lignes": {
             "nb_lignes": 1,
-            "reponse_modele": "Automatiquement tous les mois"
+            "reponse_modele": "À prouver que la lettre est arrivée"
           }
         }
       },
       {
-        "enonce": "Peut-on retirer l'argent du livret ?",
+        "enonce": "Combien coûte la lettre ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Oui, à tout moment",
+            "texte": "4,55 euros",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Non, jamais"
+            "texte": "2 euros"
           },
           {
             "id": "c",
-            "texte": "Seulement après un an"
+            "texte": "10 euros"
           }
         ],
         "formes": {
           "lignes": {
             "nb_lignes": 1,
-            "reponse_modele": "Oui, à tout moment"
-          }
-        }
-      },
-      {
-        "enonce": "Quel est le montant maximum du livret A ?",
-        "type_reponse": "qcm_texte",
-        "points": 1,
-        "melanger": false,
-        "choix": [
-          {
-            "id": "a",
-            "texte": "23 000 €",
-            "correct": true
-          },
-          {
-            "id": "b",
-            "texte": "13 000 €"
-          },
-          {
-            "id": "c",
-            "texte": "32 000 €"
-          }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "23 000 €"
-          }
-        }
-      },
-      {
-        "enonce": "Combien le client va-t-il verser chaque mois ?",
-        "type_reponse": "qcm_texte",
-        "points": 1,
-        "melanger": false,
-        "choix": [
-          {
-            "id": "a",
-            "texte": "Ce n'est pas précisé",
-            "correct": true
-          },
-          {
-            "id": "b",
-            "texte": "100 €"
-          },
-          {
-            "id": "c",
-            "texte": "50 €"
-          }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Ce n'est pas précisé"
+            "reponse_modele": "4,55 euros"
           }
         }
       }
     ],
     "consigne_supplementaire": null,
     "scenario": "lieux-publics",
-    "scene": "En plus votre compte"
+    "scene": "La lettre recommandée"
   },
   {
     "id": "tcf-ss-a2-s5-co-3",
@@ -10314,149 +10260,176 @@
     "theme": "Soutien scolaire · Dialogue 064",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/lieux-publics/nous-sommes-parents-d-alexandre.mp3",
-      "transcription": "Vous voulez organiser une grande fête ?\nC'est simple, avec fête par fête.com.\nNotre site vous permettra de créer un joli blog avec des photos, vos amis et votre famille pour en retrouver beaucoup d'informations pratiques.\nL'adresse est l'heure de la fête, les possibilités de transport et d'hôtel.\nLa fête est un mariage, notre site vous donne des conseils pour trouver run de mariage, alliance ou fleur.\nVous pendez la crème ailleurs ?\nNous vous aidons à réserver un prêteur ou un DJ.\nChoisissez fête par fête.com, 100% gratuit, 100% sécurisé."
+      "audio": "/lib/audio/tcf/co/fetes/24-fêtes-publicité-organiser-fête-parfaite.mp3",
+      "transcription": "Vous voulez organiser une grande fête ?\nC'est simple, avec Fête parfaite.com.\nNotre site vous permettra de créer un joli blog avec des photos.\nVos amis et votre famille pourront retrouver beaucoup d'informations pratiques.\nL'adresse et l'heure de la fête, les possibilités de transport et d'hôtel.\nLa fête est un mariage ? Notre site vous donne des conseils pour trouver une robe de mariée, une alliance ou des fleurs.\nVous préférez la créer ailleurs ?\nNous vous aidons à réserver un traiteur ou un DJ.\nChoisissez Fête parfaite.com, 100 % gratuit, 100 % sécurisé."
     },
     "questions": [
       {
-        "enonce": "Qui vient au rendez-vous ?",
+        "enonce": "Que propose le site ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Les parents d'Alexandre",
+            "texte": "D'organiser une fête",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Les grands-parents d'Alexandre"
+            "texte": "D'acheter un billet de train"
           },
           {
             "id": "c",
-            "texte": "Le frère d'Alexandre"
+            "texte": "D'apprendre une langue"
           }
         ],
         "formes": {
           "lignes": {
             "nb_lignes": 1,
-            "reponse_modele": "Les parents d'Alexandre"
+            "reponse_modele": "D'organiser une fête"
           }
         }
       },
       {
-        "enonce": "Qu'ont reçu les parents ?",
+        "enonce": "Que peut-on créer ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Une convocation",
+            "texte": "Un blog avec des photos",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Une facture"
+            "texte": "Un compte en banque"
           },
           {
             "id": "c",
-            "texte": "Un colis"
+            "texte": "Un CV"
           }
         ],
         "formes": {
           "lignes": {
             "nb_lignes": 1,
-            "reponse_modele": "Une convocation"
+            "reponse_modele": "Un blog avec des photos"
           }
         }
       },
       {
-        "enonce": "Quel est le problème d'Alexandre ?",
+        "enonce": "Quelle information pratique est citée ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Il ne respecte pas les règles du lycée",
+            "texte": "L'adresse et l'heure",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Il a de mauvaises notes"
+            "texte": "Le menu du repas"
           },
           {
             "id": "c",
-            "texte": "Il est souvent absent"
+            "texte": "La météo"
           }
         ],
         "formes": {
           "lignes": {
             "nb_lignes": 1,
-            "reponse_modele": "Il ne respecte pas les règles du lycée"
+            "reponse_modele": "L'adresse et l'heure"
           }
         }
       },
       {
-        "enonce": "Où se passe cette conversation ?",
+        "enonce": "Pour quelle fête y a-t-il des conseils ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Au lycée",
+            "texte": "Un mariage",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "À la mairie"
+            "texte": "Un examen"
           },
           {
             "id": "c",
-            "texte": "À la maison"
+            "texte": "Un match"
           }
         ],
         "formes": {
           "lignes": {
             "nb_lignes": 1,
-            "reponse_modele": "Au lycée"
+            "reponse_modele": "Un mariage"
           }
         }
       },
       {
-        "enonce": "Que sait-on de la classe d'Alexandre ?",
+        "enonce": "Qui peut-on réserver ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Elle n'est pas précisée",
+            "texte": "Un traiteur ou un DJ",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Il est en seconde"
+            "texte": "Un médecin"
           },
           {
             "id": "c",
-            "texte": "Il est en terminale"
+            "texte": "Un professeur"
           }
         ],
         "formes": {
           "lignes": {
             "nb_lignes": 1,
-            "reponse_modele": "Elle n'est pas précisée"
+            "reponse_modele": "Un traiteur ou un DJ"
+          }
+        }
+      },
+      {
+        "enonce": "Combien coûte le site ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Il est gratuit",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "10 euros"
+          },
+          {
+            "id": "c",
+            "texte": "50 euros"
+          }
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Il est gratuit"
           }
         }
       }
     ],
     "consigne_supplementaire": null,
-    "scenario": "lieux-publics",
-    "scene": "Nous sommes parents d'Alexandre"
+    "scenario": "fetes",
+    "scene": "Organiser une fête"
   },
   {
     "id": "tcf-ss-a2-s5-co-4",
@@ -10466,149 +10439,176 @@
     "theme": "Soutien scolaire · Dialogue 166",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/lieux-publics/bonjour-michel-c-est-magali-2.mp3",
-      "transcription": "Tu as trouvé un job pour cet été ?\nNon, je n'ai rien trouvé.\nEt c'est le site Studirama.\nIl y a plein d'offres d'emplois.\nMarie a un contrat en alternance pour la rentrée.\nElle va travailler deux jours par semaine en entreprise.\nOù vas-tu faire ton stage de fin d'étude ?\nJe le fais dans une association.\nJ'ai signé un contrat en alternance de deux ans.\nPaul cherche un emploi de maître-nageur pour cet été.\nIl peut aller au CIDG en parler à un conseiller.\nAlors, comment se passe-t-et-re cherche de stage ?\nJ'ai un entretien la semaine prochaine avec mon futur maître de stage.\nSi tu veux trouver un job pour cet été, va directement dans les entreprises et fait des candidatures spontanées."
+      "audio": "/lib/audio/tcf/co/travail/11-travail-trouver-un-emploi.mp3",
+      "transcription": "Tu as trouvé un job pour cet été ?\nNon, je n'ai rien trouvé.\nEt c'est le site Studirama.\nIl y a plein d'offres d'emplois.\nMarie a un contrat en alternance pour la rentrée.\nElle va travailler deux jours par semaine en entreprise.\nOù vas-tu faire ton stage de fin d'étude ?\nJe le fais dans une association.\nPaul cherche un emploi de maître-nageur pour cet été.\nIl peut aller au CIDJ en parler à un conseiller.\nAlors, comment se passe ta recherche de stage ?\nJ'ai un entretien la semaine prochaine avec mon futur maître de stage.\nSi tu veux trouver un job pour cet été, va directement dans les entreprises et fais des candidatures spontanées."
     },
     "questions": [
       {
-        "enonce": "Qu'est-ce que la personne n'a jamais consulté ?",
+        "enonce": "Que propose Studirama ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Les sites de recherche d'emploi",
+            "texte": "Des offres d'emploi",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Les journaux"
+            "texte": "Des cours de cuisine"
           },
           {
             "id": "c",
-            "texte": "Les annonces de la mairie"
+            "texte": "Des films"
           }
         ],
         "formes": {
           "lignes": {
             "nb_lignes": 1,
-            "reponse_modele": "Les sites de recherche d'emploi"
+            "reponse_modele": "Des offres d'emploi"
           }
         }
       },
       {
-        "enonce": "Pourquoi n'a-t-elle jamais consulté ces sites ?",
+        "enonce": "Combien de jours Marie travaille-t-elle en entreprise ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Elle n'a personne pour l'aider",
+            "texte": "Deux jours par semaine",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Elle n'a pas d'ordinateur"
+            "texte": "Tous les jours"
           },
           {
             "id": "c",
-            "texte": "Elle a déjà un travail"
+            "texte": "Un jour par mois"
           }
         ],
         "formes": {
           "lignes": {
             "nb_lignes": 1,
-            "reponse_modele": "Elle n'a personne pour l'aider"
+            "reponse_modele": "Deux jours par semaine"
           }
         }
       },
       {
-        "enonce": "Est-ce que l'inscription est obligatoire ?",
+        "enonce": "Où se fait le stage de fin d'étude ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Non",
+            "texte": "Dans une association",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Oui"
+            "texte": "À l'hôpital"
           },
           {
             "id": "c",
-            "texte": "Seulement pour les jeunes"
+            "texte": "Dans une banque"
           }
         ],
         "formes": {
           "lignes": {
             "nb_lignes": 1,
-            "reponse_modele": "Non"
+            "reponse_modele": "Dans une association"
           }
         }
       },
       {
-        "enonce": "De quoi parle cette conversation ?",
+        "enonce": "Quel emploi Paul cherche-t-il ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "De la recherche d'un travail",
+            "texte": "Maître-nageur",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "D'un voyage"
+            "texte": "Cuisinier"
           },
           {
             "id": "c",
-            "texte": "D'une recette de cuisine"
+            "texte": "Chauffeur"
           }
         ],
         "formes": {
           "lignes": {
             "nb_lignes": 1,
-            "reponse_modele": "De la recherche d'un travail"
+            "reponse_modele": "Maître-nageur"
           }
         }
       },
       {
-        "enonce": "Est-ce que la personne a un ordinateur ?",
+        "enonce": "Quand a lieu l'entretien de stage ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "On ne sait pas",
+            "texte": "La semaine prochaine",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Oui"
+            "texte": "Demain matin"
           },
           {
             "id": "c",
-            "texte": "Non"
+            "texte": "Dans un an"
           }
         ],
         "formes": {
           "lignes": {
             "nb_lignes": 1,
-            "reponse_modele": "On ne sait pas"
+            "reponse_modele": "La semaine prochaine"
+          }
+        }
+      },
+      {
+        "enonce": "Quel conseil est donné pour un job d'été ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Aller dans les entreprises",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Rester à la maison"
+          },
+          {
+            "id": "c",
+            "texte": "Regarder la télévision"
+          }
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Aller dans les entreprises"
           }
         }
       }
     ],
     "consigne_supplementaire": null,
-    "scenario": "lieux-publics",
-    "scene": "Bonjour Michel c'est Magali"
+    "scenario": "travail",
+    "scene": "Trouver un travail"
   },
   {
     "id": "tcf-ss-a2-s6-co-1",
@@ -10618,39 +10618,12 @@
     "theme": "Soutien scolaire · Dialogue 167",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/lieux-publics/au-revoir-l-achat-distributeur-2.mp3",
-      "transcription": "Max, tu as trouvé un travail pour cet été ?\nNon, je n'ai rien trouvé.\nEt toi, alli ?\nJe suis allé au CIDG, le centre d'information et de documentation jeunesse.\nEt il m'ont aidé ?\nJe vais être maitrenagère."
+      "audio": "/lib/audio/tcf/co/travail/07-travail-job-d-été-Max.mp3",
+      "transcription": "Max, tu as trouvé un travail pour cet été ?\nNon, je n'ai rien trouvé.\nEt toi, Ali ?\nJe suis allé au CIDJ, le centre d'information et de documentation jeunesse.\nIls m'ont aidé.\nJe vais être maître-nageur."
     },
     "questions": [
       {
-        "enonce": "À quoi sert l'inscription ?",
-        "type_reponse": "qcm_texte",
-        "points": 1,
-        "melanger": false,
-        "choix": [
-          {
-            "id": "a",
-            "texte": "À étudier la demande d'allocation chômage",
-            "correct": true
-          },
-          {
-            "id": "b",
-            "texte": "À réserver un billet de train"
-          },
-          {
-            "id": "c",
-            "texte": "À ouvrir un compte bancaire"
-          }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "À étudier la demande d'allocation chômage"
-          }
-        }
-      },
-      {
-        "enonce": "Est-ce qu'il est obligatoire de voir un conseiller ?",
+        "enonce": "Max a-t-il trouvé un travail ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
@@ -10662,11 +10635,11 @@
           },
           {
             "id": "b",
-            "texte": "Oui"
+            "texte": "Oui, dans un magasin"
           },
           {
             "id": "c",
-            "texte": "Seulement le lundi"
+            "texte": "Oui, à la mairie"
           }
         ],
         "formes": {
@@ -10677,90 +10650,90 @@
         }
       },
       {
-        "enonce": "Qui peut-on voir pour être aidé ?",
+        "enonce": "Pour quelle période ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Un conseiller",
+            "texte": "Cet été",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Un médecin"
+            "texte": "L'hiver"
           },
           {
             "id": "c",
-            "texte": "Un avocat"
+            "texte": "Toute l’année"
           }
         ],
         "formes": {
           "lignes": {
             "nb_lignes": 1,
-            "reponse_modele": "Un conseiller"
+            "reponse_modele": "Cet été"
           }
         }
       },
       {
-        "enonce": "Où se passe probablement cette conversation ?",
+        "enonce": "Où Ali est-il allé ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Dans un bureau",
+            "texte": "Au CIDJ",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Dans un restaurant"
+            "texte": "À la piscine"
           },
           {
             "id": "c",
-            "texte": "Dans un magasin"
+            "texte": "À la poste"
           }
         ],
         "formes": {
           "lignes": {
             "nb_lignes": 1,
-            "reponse_modele": "Dans un bureau"
+            "reponse_modele": "Au CIDJ"
           }
         }
       },
       {
-        "enonce": "Est-ce que le montant de l'allocation est indiqué ?",
+        "enonce": "Que va faire Ali ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Non",
+            "texte": "Maître-nageur",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Oui, 500 euros"
+            "texte": "Serveur"
           },
           {
             "id": "c",
-            "texte": "Oui, 1 000 euros"
+            "texte": "Vendeur"
           }
         ],
         "formes": {
           "lignes": {
             "nb_lignes": 1,
-            "reponse_modele": "Non"
+            "reponse_modele": "Maître-nageur"
           }
         }
       }
     ],
     "consigne_supplementaire": null,
-    "scenario": "lieux-publics",
-    "scene": "Au revoir l'achat distributeur"
+    "scenario": "travail",
+    "scene": "Le job d'été"
   },
   {
     "id": "tcf-ss-a2-s6-co-2",
@@ -10770,7 +10743,7 @@
     "theme": "Soutien scolaire · Message 29",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/lieux-publics/bonjour-jerome-formation-abc.mp3",
+      "audio": "/lib/audio/tcf/co/travail/04-travail-confirmation-cours-d-informatique.mp3",
       "transcription": "Bonjour, c’est Jérôme de Formation ABC.\nJe vous appelle pour confirmer votre inscription à la formation d’informatique que nous organisons lundi, pendant 4 jours.\nLa formation est le matin de 9h à midi, puis l’après-midi de 13h15 à 16h15.\nVous pouvez payer par carte bancaire sur Internet ou à l’accueil.\nLe premier jour, nous vous donnerons un stylo et du papier.\nN’oubliez pas votre pièce d’identité.\nPour toute question, contactez-nous au 02 54 18 87 61.\nMerci."
     },
     "questions": [
@@ -10938,8 +10911,8 @@
       }
     ],
     "consigne_supplementaire": null,
-    "scenario": "lieux-publics",
-    "scene": "Bonjour Jérôme Formation ABC"
+    "scenario": "travail",
+    "scene": "La formation d'informatique"
   },
   {
     "id": "tcf-ss-a2-s6-co-3",
@@ -45636,7 +45609,7 @@
     "scene": "L’offre du cinéma",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/lieux-publics/01-cinéma-annonce-réduction-bonbon.mp3",
+      "audio": "/lib/audio/tcf/co/cinema/01-cinéma-annonce-réduction-bonbon.mp3",
       "transcription": "Votre cinéma préféré a décidé de vous faire plaisir.\nAujourd’hui, pour une place achetée, vous avez 50% de réduction sur les bonbons."
     },
     "questions": [
@@ -48086,7 +48059,7 @@
     "scene": "Le salon du tourisme",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/lieux-publics/02-ville-annonce-salon-du-tourisme.mp3",
+      "audio": "/lib/audio/tcf/co/ville/01-ville-annonce-salon-du-tourisme.mp3",
       "transcription": "À l’occasion du salon du tourisme, venez découvrir nos derniers séjours au soleil !\nBalades en bord de mer, baignade, palmiers...\nDécouvrez nos destinations 100% relaxantes !"
     },
     "questions": [
@@ -48282,7 +48255,7 @@
     "scene": "Au bord du bassin",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/lieux-publics/03-piscine-annonce-rappel-du-règlement.mp3",
+      "audio": "/lib/audio/tcf/co/piscine/01-piscine-annonce-rappel-du-règlement.mp3",
       "transcription": "Nous vous rappelons qu’il est interdit de courir ou de consommer de la nourriture autour du grand bassin sous peine d’exclusion.\nMerci de votre compréhension."
     },
     "questions": [
@@ -48478,7 +48451,7 @@
     "scene": "Les règles du musée",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/lieux-publics/04-musée-annonce-rappel-du-règlement.mp3",
+      "audio": "/lib/audio/tcf/co/musee/01-musée-annonce-rappel-du-règlement.mp3",
       "transcription": "Nous rappelons à nos visiteurs qu’il est interdit de consommer de la nourriture à l’intérieur du musée.\nIl est également interdit de courir.\nLes photos sont autorisées."
     },
     "questions": [

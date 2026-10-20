@@ -2277,9 +2277,9 @@
     "consigne": "Observez les situations et écoutez les 4 dialogues. Notez le numéro du dialogue (1 à 4) sous l’image. Attention : il y a 6 situations mais seulement 4 dialogues.",
     "points": 8,
     "support": {
-      "audio": "/lib/audio/tcf/co/lieux-publics/a-la-bibliotheque.mp3",
+      "audio": "/lib/audio/tcf/co/bibliotheque/05-bibliothèque-quatre-dialogues.mp3",
       "nb_dialogues": 4,
-      "transcription": "Il y a 15 secondes de pause après chaque dialogue.\nNotez, sous chaque image, le numéro du dialogue qui correspond.\nPuis vous allez entendre à nouveau les dialogues.\nVous pouvez compléter vos réponses.\nRegardez les images.\nAttention, il y a 6 images à B, C, D, E et F, mais seulement 4 dialogues.\nDialogue 1.\nBonjour, je voudrais inscrire s'il vous plaît.\nVous avez une pièce d'identité ?\nOui, et j'ai aussi une carte d'étudiant.\nDialogue 2.\nVous ne pouvez pas emprunter si DVD.\nAh bon ?\nC'est écrit sur le panel ?\nNon, c'est si livre et 3 DVD.\nDialogue 3.\nBonjour, je cherche une méthode pour apprendre le chinois.\nToutes nos méthodes sont classées au rayon 25 derrière vous.\nAh, merci.\nJe n'avais pas fait attention.\nDialogue 4.\nC'est fermé ?\nMais, ça fait longtemps ?\nNon, regardez le panel.\nC'est une fermeture exceptionnelle.\nAh bon, merci.\nJe reviendrai demain.\nDialogue 1.\nBonjour, je voudrais inscrire s'il vous plaît.\nVous avez une pièce d'identité ?\nOui, et j'ai aussi une carte d'étudiant.\nDialogue 2.\nVous ne pouvez pas emprunter si DVD.\nAh bon ?\nC'est écrit sur le panel ?\nNon, c'est si livre et 3 DVD.\nDialogue 3.\nBonjour, je cherche une méthode pour apprendre le chinois.\nToutes nos méthodes sont classées au rayon 25 derrière vous.\nAh, merci.\nJe n'avais pas fait attention.\nDialogue 4.\nC'est fermé ?\nMais, ça fait longtemps ?\nNon, regardez le panel.\nC'est une fermeture exceptionnelle.\nAh bon, merci.\nJe reviendrai demain."
+      "transcription": "Bonjour, je voudrais m'inscrire, s'il vous plaît.\nVous avez une pièce d'identité ?\nOui, et j'ai aussi une carte d'étudiant.\nVous ne pouvez pas emprunter six DVD.\nAh bon ?\nC'est écrit sur le panneau ?\nNon, c'est six livres et 3 DVD.\nBonjour, je cherche une méthode pour apprendre le chinois.\nToutes nos méthodes sont classées au rayon 25 derrière vous.\nAh, merci.\nJe n'avais pas fait attention.\nC'est fermé ?\nMais ça fait longtemps ?\nNon, regardez le panneau.\nC'est une fermeture exceptionnelle.\nAh bon, merci.\nJe reviendrai demain."
     },
     "questions": [],
     "situations": [
@@ -8177,7 +8177,7 @@
     "theme": "Soutien scolaire · Dialogue 025",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/lieux-publics/personne-suivante-1.mp3",
+      "audio": "/lib/audio/tcf/co/famille/21-famille-appeler-une-amie-Lorie.mp3",
       "transcription": "- Allô Laurie ?\n- Non, je suis sa mère.\n- Pardon madame, bonjour.\nJe suis une amie de Laurie.\nJe m'appelle Laura.\n- Bonjour Laura.\nJ'appelle ma fille."
     },
     "questions": [
@@ -8291,8 +8291,8 @@
       }
     ],
     "consigne_supplementaire": null,
-    "scenario": "lieux-publics",
-    "scene": "Personne suivante"
+    "scenario": "maison",
+    "scene": "L'appel à une amie"
   },
   {
     "id": "tcf-ss-a1-s3-co-4",
@@ -8302,122 +8302,122 @@
     "theme": "Soutien scolaire · Dialogue 166",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/lieux-publics/bonjour-michel-c-est-magali-1.mp3",
+      "audio": "/lib/audio/tcf/co/transports/03-transport-comment-aller-chez-Magali.mp3",
       "transcription": "Bonjour Michel, c'est Magali.\nPour aller chez moi, c'est facile.\nJ'habite à côté du parc Mon Repos.\nÀ pied, c'est long, mais avec le bus 21, c'est plus rapide.\nMon immeuble est en face de l'arrêt.\nÀ demain !"
     },
     "questions": [
       {
-        "enonce": "Qu'est-ce que la personne n'a jamais consulté ?",
+        "enonce": "Qui appelle ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Les sites de recherche d'emploi",
+            "texte": "Magali",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Les journaux"
+            "texte": "Michel"
           },
           {
             "id": "c",
-            "texte": "Les annonces de la mairie"
+            "texte": "Le chauffeur de bus"
           }
         ],
         "formes": {
           "lignes": {
             "nb_lignes": 1,
-            "reponse_modele": "Les sites de recherche d'emploi"
+            "reponse_modele": "Magali"
           }
         }
       },
       {
-        "enonce": "Pourquoi n'a-t-elle jamais consulté ces sites ?",
+        "enonce": "Où habite Magali ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Elle n'a personne pour l'aider",
+            "texte": "À côté du parc Mon Repos",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Elle n'a pas d'ordinateur"
+            "texte": "À la gare"
           },
           {
             "id": "c",
-            "texte": "Elle a déjà un travail"
+            "texte": "Au centre commercial"
           }
         ],
         "formes": {
           "lignes": {
             "nb_lignes": 1,
-            "reponse_modele": "Elle n'a personne pour l'aider"
+            "reponse_modele": "À côté du parc Mon Repos"
           }
         }
       },
       {
-        "enonce": "Est-ce que l'inscription est obligatoire ?",
+        "enonce": "Quel bus est plus rapide ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Non",
+            "texte": "Le bus 21",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Oui"
+            "texte": "Le bus 12"
           },
           {
             "id": "c",
-            "texte": "Seulement pour les jeunes"
+            "texte": "Le métro"
           }
         ],
         "formes": {
           "lignes": {
             "nb_lignes": 1,
-            "reponse_modele": "Non"
+            "reponse_modele": "Le bus 21"
           }
         }
       },
       {
-        "enonce": "De quoi parle cette conversation ?",
+        "enonce": "Où est l'immeuble ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "De la recherche d'un travail",
+            "texte": "En face de l'arrêt",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "D'un voyage"
+            "texte": "Derrière le parc"
           },
           {
             "id": "c",
-            "texte": "D'une recette de cuisine"
+            "texte": "À côté de la mairie"
           }
         ],
         "formes": {
           "lignes": {
             "nb_lignes": 1,
-            "reponse_modele": "De la recherche d'un travail"
+            "reponse_modele": "En face de l'arrêt"
           }
         }
       }
     ],
     "consigne_supplementaire": null,
-    "scenario": "lieux-publics",
-    "scene": "Bonjour Michel c'est Magali"
+    "scenario": "transports",
+    "scene": "Le chemin en bus"
   },
   {
     "id": "tcf-ss-a1-s4-co-1",
@@ -8427,122 +8427,122 @@
     "theme": "Soutien scolaire · Dialogue 167",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/lieux-publics/au-revoir-l-achat-distributeur-1.mp3",
+      "audio": "/lib/audio/tcf/co/actualite/10-actualité-achat-e-ticket.mp3",
       "transcription": "Au revoir l'achat au distributeur, bonjour l'e-ticket !\nAvec votre téléphone portable et un numéro français, vous pouvez payer par SMS et télécharger votre ticket."
     },
     "questions": [
       {
-        "enonce": "À quoi sert l'inscription ?",
+        "enonce": "Que remplace l’e-ticket ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "À étudier la demande d'allocation chômage",
+            "texte": "L'achat au distributeur",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "À réserver un billet de train"
+            "texte": "La carte bancaire"
           },
           {
             "id": "c",
-            "texte": "À ouvrir un compte bancaire"
+            "texte": "Le courrier postal"
           }
         ],
         "formes": {
           "lignes": {
             "nb_lignes": 1,
-            "reponse_modele": "À étudier la demande d'allocation chômage"
+            "reponse_modele": "L'achat au distributeur"
           }
         }
       },
       {
-        "enonce": "Est-ce qu'il est obligatoire de voir un conseiller ?",
+        "enonce": "Avec quoi peut-on payer ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Non",
+            "texte": "Un téléphone portable",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Oui"
+            "texte": "Un chèque"
           },
           {
             "id": "c",
-            "texte": "Seulement le lundi"
+            "texte": "Des espèces seulement"
           }
         ],
         "formes": {
           "lignes": {
             "nb_lignes": 1,
-            "reponse_modele": "Non"
+            "reponse_modele": "Un téléphone portable"
           }
         }
       },
       {
-        "enonce": "Qui peut-on voir pour être aidé ?",
+        "enonce": "Quel numéro faut-il ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Un conseiller",
+            "texte": "Un numéro français",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Un médecin"
+            "texte": "Un numéro étranger"
           },
           {
             "id": "c",
-            "texte": "Un avocat"
+            "texte": "Aucun numéro"
           }
         ],
         "formes": {
           "lignes": {
             "nb_lignes": 1,
-            "reponse_modele": "Un conseiller"
+            "reponse_modele": "Un numéro français"
           }
         }
       },
       {
-        "enonce": "Où se passe probablement cette conversation ?",
+        "enonce": "Comment reçoit-on le ticket ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Dans un bureau",
+            "texte": "On le télécharge",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Dans un restaurant"
+            "texte": "On le reçoit par la poste"
           },
           {
             "id": "c",
-            "texte": "Dans un magasin"
+            "texte": "On le retire au guichet"
           }
         ],
         "formes": {
           "lignes": {
             "nb_lignes": 1,
-            "reponse_modele": "Dans un bureau"
+            "reponse_modele": "On le télécharge"
           }
         }
       }
     ],
     "consigne_supplementaire": null,
-    "scenario": "lieux-publics",
-    "scene": "Au revoir l'achat distributeur"
+    "scenario": "actualite",
+    "scene": "L'e-ticket"
   },
   {
     "id": "tcf-ss-a1-s4-co-2",
@@ -8552,8 +8552,8 @@
     "theme": "Soutien scolaire · Radio 32",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/lieux-publics/conformement-dispositions-reglement-dit-2.mp3",
-      "transcription": "Aujourd'hui, dans le sud de la France, une vraie journée d'été, il fait chaud et beau.\nDans le nord, sortez vos parapluis, il va pleuvoir le matin, mais le soleil revient la prémidie.\nIl va faire 20° au nord et 28° au sud, demain, du vent sur toute la France."
+      "audio": "/lib/audio/tcf/co/radio/11-radio-prévision-météo-2.mp3",
+      "transcription": "Aujourd'hui, dans le sud de la France, une vraie journée d'été, il fait chaud et beau.\nDans le nord, sortez vos parapluies, il va pleuvoir le matin, mais le soleil revient l'après-midi.\nIl va faire 20° au nord et 28° au sud, demain, du vent sur toute la France."
     },
     "questions": [
       {
@@ -8666,8 +8666,8 @@
       }
     ],
     "consigne_supplementaire": null,
-    "scenario": "lieux-publics",
-    "scene": "Conformément dispositions règlement dit"
+    "scenario": "radio",
+    "scene": "La météo"
   },
   {
     "id": "tcf-ss-a1-s4-co-3",
