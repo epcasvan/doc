@@ -6454,48 +6454,174 @@
     "id": "tcf-a1-tpb-co-4",
     "niveau": "A0-A1",
     "competence": "CO",
-    "type_exercice": "association_images",
+    "type_exercice": "complet",
     "theme": "Test blanc A1 tout public · série B · Petits dialogues",
     "scenario": "ecole",
-    "scene": "Les études",
-    "consigne": "Vous allez entendre 4 petits dialogues. Notez, sous chaque image, le numéro du dialogue qui correspond. Attention : il y a 6 images mais seulement 4 dialogues.",
-    "points": 8,
+    "scene": "La piscine",
+    "consigne": "Écoutez le document, puis répondez à la question.",
     "support": {
-      "audio": "/lib/audio/tcf/co/ecole/les-etudes-3.mp3",
-      "nb_dialogues": 4,
-      "transcription": "Il y a 15 secondes de pause après chaque dialogue.\nNoter sous chaque image le numéro du dialogue qui correspond.\nPuis vous allez entendre à nouveau les dialogues.\nVous pouvez compléter vos réponses.\nRegardez les images.\nAttention, il y a 6 images à B, C, D, E et F, mais seulement quatre dialogues.\nDialogue 1.\nExcuse-moi, j'ai cours de sport.\nJe cherche la piscine de l'université.\nOù est-ce qu'elle est ?\nDerrière-toi, regarde.\nOh, merci.\nDialogue 2.\nBonjour, j'ai rendez-vous avec monsieur Richard, le professeur de français de ma fille.\nBonjour.\nOui, il est dans la classe au premier étage à gauche, Sal 25.\nDialogue 3.\nQu'est-ce que tu fais, Sammy ?\nJe cherche mon livre de mathématiques.\nIl n'est pas dans ton sac ?\nNon, je ne le trouve pas.\nIl doit être chez moi.\nDialogue 4.\nAlors, qui veut venir avec moi au tableau pour faire l'exercice ?\nMoi, ma dame, s'il vous plaît.\nD'accord.\nAllez, viens.\nDialogue 1.\nExcuse-moi, j'ai cours de sport.\nJe cherche la piscine de l'université.\nOù est-ce qu'elle est ?\nDerrière-toi, regarde.\nOh, merci.\nDialogue 2.\nBonjour, j'ai rendez-vous avec monsieur Richard, le professeur de français de ma fille.\nBonjour.\nOui, il est dans la classe au premier étage à gauche, Sal 25.\nDialogue 3.\nQu'est-ce que tu fais, Sammy ?\nJe cherche mon livre de mathématiques.\nIl n'est pas dans ton sac ?\nNon, je ne le trouve pas.\nIl doit être chez moi.\nDialogue 4.\nAlors, qui veut venir avec moi au tableau pour faire l'exercice ?\nMoi, ma dame, s'il vous plaît.\nD'accord.\nAllez, viens."
+      "audio": "/lib/audio/tcf/co/ecole/45-école-chercher-où-est-la-piscine.mp3",
+      "transcription": "Excuse-moi, j'ai cours de sport.\nJe cherche la piscine de l'université.\nOù est-ce qu'elle est ?\nDerrière toi, regarde.\nOh, merci."
     },
-    "questions": [],
-    "situations": [
+    "questions": [
       {
-        "id": "s1",
-        "image": "/lib/images/vocabulaire/actions/discuter-entre-amies.webp",
-        "dialogue": null
-      },
+        "enonce": "Que cherche la personne ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "La piscine",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "La bibliothèque"
+          },
+          {
+            "id": "c",
+            "texte": "La cantine"
+          }
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "La piscine"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-a1-tpbb-co-1",
+    "niveau": "A0-A1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Test blanc A1 tout public · série B · Petits dialogues",
+    "scenario": "ecole",
+    "scene": "Le rendez-vous",
+    "consigne": "Écoutez le document, puis répondez à la question.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/ecole/46-école-rendez-vous-professeur-de-français.mp3",
+      "transcription": "Bonjour, j'ai rendez-vous avec monsieur Richard, le professeur de français de ma fille.\nBonjour.\nOui, il est dans la classe au premier étage à gauche, salle 25."
+    },
+    "questions": [
       {
-        "id": "s2",
-        "image": "/lib/images/vocabulaire/actions/lever-la-main.webp",
-        "dialogue": 4
-      },
+        "enonce": "Avec qui a-t-on rendez-vous ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Le professeur de français",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Le directeur"
+          },
+          {
+            "id": "c",
+            "texte": "Le professeur de sport"
+          }
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Le professeur de français"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-a1-tpbb-co-2",
+    "niveau": "A0-A1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Test blanc A1 tout public · série B · Petits dialogues",
+    "scenario": "ecole",
+    "scene": "Le livre de mathématiques",
+    "consigne": "Écoutez le document, puis répondez à la question.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/ecole/47-école-chercher-livre-de-mathématiques.mp3",
+      "transcription": "Qu'est-ce que tu fais, Sammy ?\nJe cherche mon livre de mathématiques.\nIl n'est pas dans ton sac ?\nNon, je ne le trouve pas.\nIl doit être chez moi."
+    },
+    "questions": [
       {
-        "id": "s3",
-        "image": "/lib/images/vocabulaire/actions/chercher-dans-son-sac.webp",
-        "dialogue": 3
-      },
+        "enonce": "Que cherche Sammy ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Son livre de mathématiques",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Ses clés"
+          },
+          {
+            "id": "c",
+            "texte": "Son téléphone"
+          }
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Son livre de mathématiques"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-a1-tpbb-co-3",
+    "niveau": "A0-A1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Test blanc A1 tout public · série B · Petits dialogues",
+    "scenario": "ecole",
+    "scene": "Au tableau",
+    "consigne": "Écoutez le document, puis répondez à la question.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/ecole/48-école-venir-au-tableau.mp3",
+      "transcription": "Alors, qui veut venir avec moi au tableau pour faire l'exercice ?\nMoi, madame, s'il vous plaît.\nD'accord.\nAllez, viens !"
+    },
+    "questions": [
       {
-        "id": "s4",
-        "image": "/lib/images/vocabulaire/actions/chuchoter.webp",
-        "dialogue": null
-      },
-      {
-        "id": "s5",
-        "image": "/lib/images/vocabulaire/actions/montrer-le-chemin.webp",
-        "dialogue": 1
-      },
-      {
-        "id": "s6",
-        "image": "/lib/images/vocabulaire/actions/demander-a-l-accueil.webp",
-        "dialogue": 2
+        "enonce": "Que demande l'enseignante ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "De venir au tableau",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "D'ouvrir le livre"
+          },
+          {
+            "id": "c",
+            "texte": "De ranger le sac"
+          }
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "De venir au tableau"
+          }
+        }
       }
     ],
     "consigne_supplementaire": null
@@ -9051,124 +9177,219 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Conversation 8",
-    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "scenario": "magasins",
+    "scene": "Les céréales",
+    "consigne": "Écoutez le document, puis répondez à la question.",
     "support": {
-      "audio": "/lib/audio/tcf/co/ecole/paris-solidarite-rime-diversite-2.mp3",
-      "transcription": "Situation numéro un.\n— Où sont les céréales ?\n— Au fond du magasin, madame.\n— D'accord, merci.\n\nSituation numéro deux.\n— Oh là là, où sont mes clés ?\n— Elles sont sur la table, comme d'habitude.\n\nSituation numéro trois.\n— Tu veux voir quel film ?\n— Je ne sais pas. Pourquoi pas une comédie ?\n— Une comédie… Pourquoi pas un film d'horreur ?\n— Ah non, je vais mal dormir cette nuit.\n\nSituation numéro quatre.\n— Qu'est-ce que tu veux manger ?\n— Je vais prendre un menu du jour.\n— Moi, je n'ai pas très faim. Je vais prendre un plat du jour.\n\nSituation numéro cinq.\n— Tu es prêt ?\n— Presque ! Je vais chercher mon casque.\n— Pas de problème, on a le temps."
+      "audio": "/lib/audio/tcf/co/magasins/19-magasin-où-sont-céréales.mp3",
+      "transcription": "— Où sont les céréales ?\n— Au fond du magasin, madame.\n— D’accord, merci."
     },
     "questions": [
       {
-        "enonce": "Le groupe d'amis est au restaurant, ils veulent…",
+        "enonce": "Où sont les céréales ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Commander le repas et calculer ce que cela va leur coûter"
-          },
-          {
-            "id": "b",
-            "texte": "Savoir ce qu'ils doivent payer car ils ont terminé",
+            "texte": "Au fond du magasin",
             "correct": true
           },
           {
+            "id": "b",
+            "texte": "À la caisse"
+          },
+          {
             "id": "c",
-            "texte": "Demander une réduction car les plats n'étaient pas bons"
+            "texte": "Dehors"
           }
         ],
         "formes": {
           "lignes": {
             "nb_lignes": 1,
-            "reponse_modele": "Savoir ce qu'ils doivent payer car ils ont terminé"
-          }
-        }
-      },
-      {
-        "enonce": "Qu'a oublié de compter Ludivine ?",
-        "type_reponse": "qcm_texte",
-        "points": 1,
-        "melanger": false,
-        "choix": [
-          {
-            "id": "a",
-            "texte": "Son entrée"
-          },
-          {
-            "id": "b",
-            "texte": "Son dessert",
-            "correct": true
-          },
-          {
-            "id": "c",
-            "texte": "Sa boisson"
-          }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Son dessert"
-          }
-        }
-      },
-      {
-        "enonce": "Pourquoi Ludivine proteste-t-elle ?",
-        "type_reponse": "qcm_texte",
-        "points": 1,
-        "melanger": false,
-        "choix": [
-          {
-            "id": "a",
-            "texte": "Elle ne veut pas payer trop",
-            "correct": true
-          },
-          {
-            "id": "b",
-            "texte": "Le service est trop lent"
-          },
-          {
-            "id": "c",
-            "texte": "Elle a encore faim"
-          }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Elle ne veut pas payer trop"
-          }
-        }
-      },
-      {
-        "enonce": "De quoi Aurore s'aperçoit-elle ?",
-        "type_reponse": "qcm_texte",
-        "points": 1,
-        "melanger": false,
-        "choix": [
-          {
-            "id": "a",
-            "texte": "Que le restaurant est fermé"
-          },
-          {
-            "id": "b",
-            "texte": "Qu'il y a une erreur dans l'addition",
-            "correct": true
-          },
-          {
-            "id": "c",
-            "texte": "Que le serveur a oublié leur table"
-          }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Qu'il y a une erreur dans l'addition"
+            "reponse_modele": "Au fond du magasin"
           }
         }
       }
     ],
-    "consigne_supplementaire": null,
-    "scenario": "ecole",
-    "scene": "Paris solidarité rime diversité"
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ss-a1-s5b-co-1",
+    "niveau": "A0-A1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Conversation 8",
+    "scenario": "maison",
+    "scene": "Les clés",
+    "consigne": "Écoutez le document, puis répondez à la question.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/famille/19-maison-où-sont-clés.mp3",
+      "transcription": "— Oh là là, où sont mes clés ?\n— Elles sont sur la table, comme d’habitude."
+    },
+    "questions": [
+      {
+        "enonce": "Où sont les clés ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Sur la table",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Dans le sac"
+          },
+          {
+            "id": "c",
+            "texte": "À la porte"
+          }
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Sur la table"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ss-a1-s5b-co-2",
+    "niveau": "A0-A1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Conversation 8",
+    "scenario": "loisirs",
+    "scene": "Quel film voir",
+    "consigne": "Écoutez le document, puis répondez à la question.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/cinema/02-cinéma-quel-film-voir.mp3",
+      "transcription": "— Tu veux voir quel film ?\n— Je ne sais pas. Pourquoi pas une comédie ?\n— Une comédie… Pourquoi pas un film d’horreur ?\n— Ah non, je vais mal dormir cette nuit !"
+    },
+    "questions": [
+      {
+        "enonce": "Quel film la personne refuse-t-elle ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Un film d’horreur",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Une comédie"
+          },
+          {
+            "id": "c",
+            "texte": "Un documentaire"
+          }
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Un film d’horreur"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ss-a1-s5b-co-3",
+    "niveau": "A0-A1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Conversation 8",
+    "scenario": "vie-quotidienne",
+    "scene": "Au restaurant",
+    "consigne": "Écoutez le document, puis répondez à la question.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/restaurant/02-restaurant-que-manger.mp3",
+      "transcription": "— Qu’est-ce que tu veux manger ?\n— Je vais prendre un menu du jour.\n— Moi, je n’ai pas très faim. Je vais prendre un plat du jour."
+    },
+    "questions": [
+      {
+        "enonce": "Que prend la première personne ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Un menu du jour",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Une salade"
+          },
+          {
+            "id": "c",
+            "texte": "Un dessert"
+          }
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Un menu du jour"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ss-a1-s5c-co-1",
+    "niveau": "A0-A1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Conversation 8",
+    "scenario": "maison",
+    "scene": "Tu es prêt",
+    "consigne": "Écoutez le document, puis répondez à la question.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/famille/20-maison-tu-es-prêt.mp3",
+      "transcription": "— Tu es prêt ?\n— Presque ! Je vais chercher mon casque.\n— Pas de problème, on a le temps."
+    },
+    "questions": [
+      {
+        "enonce": "Que va chercher la personne ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Son casque",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Ses clés"
+          },
+          {
+            "id": "c",
+            "texte": "Son manteau"
+          }
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Son casque"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
   },
   {
     "id": "tcf-ss-a1-s5-co-2",

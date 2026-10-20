@@ -759,55 +759,169 @@
     "type_exercice": "complet",
     "theme": "Test blanc A2 Junior · série 1 · Conversations à l’école",
     "scenario": "ecole",
-    "scene": "En classe",
-    "consigne": "Vous entendez ces conversations à l’école. Associez chaque dialogue à la bonne situation. Attention : il y a 6 situations mais seulement 4 dialogues.",
+    "scene": "La professeure de mathématiques",
+    "consigne": "Écoutez le document, puis répondez à la question.",
     "support": {
-      "audio": "/lib/audio/tcf/co/ecole/en-classe-1.mp3",
-      "transcription": "Dialogue 1 — Salut !\nTu as vu la prof de maths ?\nJe dois lui donner un document.\n— Oui, elle est dans la salle des professeurs.\n— Ah, très bien, merci, j’y vais.\nDialogue 2 — Salut Pauline, tu vas au cours de tennis ce soir ?\n— Oui, à 18 h.\n— On y va ensemble ?\n— D’accord, avec plaisir.\nDialogue 3 — Bonjour, madame, je voudrais savoir combien coûte la sortie au musée mercredi.\n— C’est 2 euros pour les moins de 15 ans.\n— Et comment je fais pour m’inscrire ?\n— Tu dois demander à tes parents de remplir cette fiche.\nDialogue 4 — Il y a des frites ce midi à la cantine.\nJ’adore ça !\n— Moi aussi.\nEt de la glace en dessert.\n— Super, on va se régaler !"
+      "audio": "/lib/audio/tcf/co/ecole/49-école-où-est-la-professeure-de-mathématiques.mp3",
+      "transcription": "— Salut ! Tu as vu la prof de maths ? Je dois lui donner un document.\n— Oui, elle est dans la salle des professeurs.\n— Ah, très bien, merci, j’y vais."
     },
     "questions": [
       {
-        "enonce": "Écrivez la lettre de la situation à côté de chaque dialogue.\nA. Proposer d’accompagner quelqu’un — B. Exprimer ses goûts — C. Demander des informations — D. S’excuser — E. Proposer de l’aide — F. Chercher quelqu’un",
-        "type_reponse": "lignes",
-        "points": 7,
-        "nb_lignes": 0,
-        "tableau": [
+        "enonce": "Que fait la personne ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
           {
-            "label": "Dialogue 1 (2 points)",
-            "reponse": "F. Chercher quelqu’un"
+            "id": "a",
+            "texte": "Elle cherche quelqu’un",
+            "correct": true
           },
           {
-            "label": "Dialogue 2 (2 points)",
-            "reponse": "A. Proposer d’accompagner quelqu’un"
+            "id": "b",
+            "texte": "Elle s’excuse"
           },
           {
-            "label": "Dialogue 3 (2 points)",
-            "reponse": "C. Demander des informations"
-          },
-          {
-            "label": "Dialogue 4 (1 point)",
-            "reponse": "B. Exprimer ses goûts"
+            "id": "c",
+            "texte": "Elle propose une invitation"
           }
         ],
-        "reponse_modele": "…",
         "formes": {
-          "qcm_texte": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "texte": "F. Chercher quelqu’un · A. Proposer d’accompagner quelqu’un · C. Demander des informations · B. Exprimer ses goûts",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "texte": "2 euros"
-              },
-              {
-                "id": "c",
-                "texte": "18 h"
-              }
-            ]
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Elle cherche quelqu’un"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-a2j-s1b-co-1",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Test blanc A2 Junior · série 1 · Conversations à l’école",
+    "scenario": "ecole",
+    "scene": "Le cours de tennis",
+    "consigne": "Écoutez le document, puis répondez à la question.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/ecole/50-école-aller-ensemble-au-cours-de-tennis.mp3",
+      "transcription": "— Salut Pauline, tu vas au cours de tennis ce soir ?\n— Oui, à 18 h.\n— On y va ensemble ?\n— D’accord, avec plaisir."
+    },
+    "questions": [
+      {
+        "enonce": "Que propose-t-on ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "D’accompagner Pauline",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "De manquer le cours"
+          },
+          {
+            "id": "c",
+            "texte": "De changer d’heure"
+          }
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "D’accompagner Pauline"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-a2j-s1b-co-2",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Test blanc A2 Junior · série 1 · Conversations à l’école",
+    "scenario": "ecole",
+    "scene": "La sortie au musée",
+    "consigne": "Écoutez le document, puis répondez à la question.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/ecole/51-école-combien-coûte-la-sortie-au-musée.mp3",
+      "transcription": "— Bonjour, madame, je voudrais savoir combien coûte la sortie au musée mercredi.\n— C’est 2 euros pour les moins de 15 ans.\n— Et comment je fais pour m’inscrire ?\n— Tu dois demander à tes parents de remplir cette fiche."
+    },
+    "questions": [
+      {
+        "enonce": "Que demande l’élève ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Des informations",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Une excuse"
+          },
+          {
+            "id": "c",
+            "texte": "Un dessert"
+          }
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Des informations"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-a2j-s1b-co-3",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Test blanc A2 Junior · série 1 · Conversations à l’école",
+    "scenario": "ecole",
+    "scene": "À la cantine",
+    "consigne": "Écoutez le document, puis répondez à la question.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/ecole/52-école-frites-à-la-cantine.mp3",
+      "transcription": "— Il y a des frites ce midi à la cantine. J’adore ça !\n— Moi aussi. Et de la glace en dessert.\n— Super, on va se régaler !"
+    },
+    "questions": [
+      {
+        "enonce": "Que font les personnes ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Elles expriment leurs goûts",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Elles s’informent sur un itinéraire"
+          },
+          {
+            "id": "c",
+            "texte": "Elles s’excusent"
+          }
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Elles expriment leurs goûts"
           }
         }
       }
@@ -1627,56 +1741,170 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Test blanc A2 Junior · série 2 · Conversations à l’école",
-    "scenario": "ecole",
-    "scene": "En classe",
-    "consigne": "Vous entendez ces conversations à l’école. Associez chaque dialogue à la bonne situation. Attention : il y a 6 situations mais seulement 4 dialogues.",
+    "scenario": "loisirs",
+    "scene": "L’album de Gims",
+    "consigne": "Écoutez le document, puis répondez à la question.",
     "support": {
-      "audio": "/lib/audio/tcf/co/ecole/en-classe-2.mp3",
-      "transcription": "Dialogue 1 — Tu as écouté le dernier album de Geams ?\n— Non, pas encore.\nIl est comment ?\n— Il est vraiment très bien, tu devrais l’écouter.\n— D’accord, je vais suivre ton conseil.\nMerci.\nDialogue 2 — Tu n’es pas venu hier au cours de natation ?\n— Non, je devais étudier.\n— Ah bon ?\nQu’est-ce que tu devais étudier ?\n— J’avais un contrôle de maths aujourd’hui et je dois absolument avoir une bonne note.\nDialogue 3 — Le mois prochain, j’organise une fête chez moi.\n— Tu fêtes ton anniversaire ?\n— Oui, et tu es invité.\nC’est le 28 mars, à 20 h.\nTu viendras ?\n— Bien sûr, je serai là.\nDialogue 4 — Mon téléphone portable a un problème : la sonnerie ne fonctionne plus.\n— Je connais quelqu’un qui peut le réparer.\n— Tu as son numéro de téléphone ?\n— Si tu veux, je t’accompagne.\nC’est tout près d’ici."
+      "audio": "/lib/audio/tcf/co/loisirs/16-loisirs-dernier-album-de-Gimz.mp3",
+      "transcription": "— Tu as écouté le dernier album de Gims ?\n— Non, pas encore. Il est comment ?\n— Il est vraiment très bien, tu devrais l’écouter.\n— D’accord, je vais suivre ton conseil. Merci."
     },
     "questions": [
       {
-        "enonce": "Écrivez la lettre de la situation à côté de chaque dialogue.\nA. Accepter une invitation — B. Refuser une invitation — C. Donner une opinion — D. Proposer de l’aide à quelqu’un — E. Donner des explications — F. S’informer sur un itinéraire",
-        "type_reponse": "lignes",
-        "points": 7,
-        "nb_lignes": 0,
-        "tableau": [
+        "enonce": "Que fait la personne ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
           {
-            "label": "Dialogue 1 (2 points)",
-            "reponse": "C. Donner une opinion"
+            "id": "a",
+            "texte": "Elle donne une opinion",
+            "correct": true
           },
           {
-            "label": "Dialogue 2 (2 points)",
-            "reponse": "E. Donner des explications"
+            "id": "b",
+            "texte": "Elle refuse une invitation"
           },
           {
-            "label": "Dialogue 3 (2 points)",
-            "reponse": "A. Accepter une invitation"
-          },
-          {
-            "label": "Dialogue 4 (1 point)",
-            "reponse": "D. Proposer de l’aide à quelqu’un"
+            "id": "c",
+            "texte": "Elle s’informe sur un itinéraire"
           }
         ],
-        "reponse_modele": "…",
         "formes": {
-          "qcm_texte": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "texte": "C. Donner une opinion · E. Donner des explications · A. Accepter une invitation · D. Proposer de l’aide à quelqu’un",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "texte": "20 h"
-              },
-              {
-                "id": "c",
-                "texte": "le 28 mars"
-              }
-            ]
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Elle donne une opinion"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-a2j-s2b-co-1",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Test blanc A2 Junior · série 2 · Conversations à l’école",
+    "scenario": "ecole",
+    "scene": "Le cours de natation",
+    "consigne": "Écoutez le document, puis répondez à la question.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/ecole/54-école-absence-au-cours-de-natation.mp3",
+      "transcription": "— Tu n’es pas venu hier au cours de natation ?\n— Non, je devais étudier.\n— Ah bon ? Qu’est-ce que tu devais étudier ?\n— J’avais un contrôle de maths aujourd’hui et je dois absolument avoir une bonne note."
+    },
+    "questions": [
+      {
+        "enonce": "Que fait la personne ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Elle donne des explications",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Elle accepte une invitation"
+          },
+          {
+            "id": "c",
+            "texte": "Elle propose de l’aide"
+          }
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Elle donne des explications"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-a2j-s2b-co-2",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Test blanc A2 Junior · série 2 · Conversations à l’école",
+    "scenario": "fetes",
+    "scene": "La fête d’anniversaire",
+    "consigne": "Écoutez le document, puis répondez à la question.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/fetes/25-invitation-fête-d-anniversaire.mp3",
+      "transcription": "— Le mois prochain, j’organise une fête chez moi.\n— Tu fêtes ton anniversaire ?\n— Oui, et tu es invité. C’est le 28 mars, à 20 h. Tu viendras ?\n— Bien sûr, je serai là."
+    },
+    "questions": [
+      {
+        "enonce": "Que fait la personne invitée ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Elle accepte une invitation",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Elle refuse une invitation"
+          },
+          {
+            "id": "c",
+            "texte": "Elle s’informe sur un itinéraire"
+          }
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Elle accepte une invitation"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-a2j-s2b-co-3",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Test blanc A2 Junior · série 2 · Conversations à l’école",
+    "scenario": "vie-quotidienne",
+    "scene": "Le téléphone",
+    "consigne": "Écoutez le document, puis répondez à la question.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/ecole/53-école-problème-avec-son-téléphone.mp3",
+      "transcription": "— Mon téléphone portable a un problème : la sonnerie ne fonctionne plus.\n— Je connais quelqu’un qui peut le réparer.\n— Tu as son numéro de téléphone ?\n— Si tu veux, je t’accompagne. C’est tout près d’ici."
+    },
+    "questions": [
+      {
+        "enonce": "Que propose-t-on ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "De l’aide",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Une invitation"
+          },
+          {
+            "id": "c",
+            "texte": "Un itinéraire"
+          }
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "De l’aide"
           }
         }
       }
@@ -11906,178 +12134,175 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Conversation 8",
-    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "scenario": "ecole",
+    "scene": "Le livre de maths",
+    "consigne": "Écoutez le document, puis répondez à la question.",
     "support": {
-      "audio": "/lib/audio/tcf/co/ecole/paris-solidarite-rime-diversite-3.mp3",
-      "transcription": "Dialogue 1.\n— Non, j'ai oublié mon livre de maths.\n— Je peux te prêter le mien, si tu veux.\n— Ah oui ! Merci, c'est très gentil.\n— Ne l'oublie pas la prochaine fois.\n\nDialogue 2.\n— On mange ensemble aujourd'hui à la cantine ?\n— Non, je ne peux pas. Je mange chez moi ce midi.\n— Ah, dommage. Une prochaine fois, alors.\n— Désolé. À plus tard.\n\nDialogue 3.\n— Monsieur, excusez-moi. Pourquoi devons-nous faire ces exercices pour mercredi ?\n— Nous devons les faire sur le livre ou sur le cahier ?\n— Sur le cahier, bien sûr.\n\nDialogue 4.\n— Qui est-ce qui t'accompagne mercredi au tournoi de basket ?\n— C'est mon père qui m'accompagne.\n— Tu crois que je pourrais venir avec vous ?\n— Oui, il y a de la place dans la voiture."
+      "audio": "/lib/audio/tcf/co/ecole/26-école-oublier-livre-mathématiques.mp3",
+      "transcription": "— Non, j’ai oublié mon livre de maths.\n— Je peux te prêter le mien, si tu veux.\n— Ah oui ! Merci, c’est très gentil.\n— Ne l’oublie pas la prochaine fois."
     },
     "questions": [
       {
-        "enonce": "Le groupe d'amis est au restaurant, ils veulent…",
+        "enonce": "Que propose l’ami ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Commander le repas et calculer ce que cela va leur coûter"
-          },
-          {
-            "id": "b",
-            "texte": "Savoir ce qu'ils doivent payer car ils ont terminé",
+            "texte": "De prêter son livre",
             "correct": true
           },
           {
+            "id": "b",
+            "texte": "De manger à la cantine"
+          },
+          {
             "id": "c",
-            "texte": "Demander une réduction car les plats n'étaient pas bons"
+            "texte": "D’aller au basket"
           }
         ],
         "formes": {
           "lignes": {
             "nb_lignes": 1,
-            "reponse_modele": "Savoir ce qu'ils doivent payer car ils ont terminé"
-          }
-        }
-      },
-      {
-        "enonce": "Qu'a oublié de compter Ludivine ?",
-        "type_reponse": "qcm_texte",
-        "points": 1,
-        "melanger": false,
-        "choix": [
-          {
-            "id": "a",
-            "texte": "Son entrée"
-          },
-          {
-            "id": "b",
-            "texte": "Son dessert",
-            "correct": true
-          },
-          {
-            "id": "c",
-            "texte": "Sa boisson"
-          }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Son dessert"
-          }
-        }
-      },
-      {
-        "enonce": "Pourquoi Ludivine proteste-t-elle ?",
-        "type_reponse": "qcm_texte",
-        "points": 1,
-        "melanger": false,
-        "choix": [
-          {
-            "id": "a",
-            "texte": "Elle ne veut pas payer trop",
-            "correct": true
-          },
-          {
-            "id": "b",
-            "texte": "Le service est trop lent"
-          },
-          {
-            "id": "c",
-            "texte": "Elle a encore faim"
-          }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Elle ne veut pas payer trop"
-          }
-        }
-      },
-      {
-        "enonce": "De quoi Aurore s'aperçoit-elle ?",
-        "type_reponse": "qcm_texte",
-        "points": 1,
-        "melanger": false,
-        "choix": [
-          {
-            "id": "a",
-            "texte": "Que le restaurant est fermé"
-          },
-          {
-            "id": "b",
-            "texte": "Qu'il y a une erreur dans l'addition",
-            "correct": true
-          },
-          {
-            "id": "c",
-            "texte": "Que le serveur a oublié leur table"
-          }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Qu'il y a une erreur dans l'addition"
-          }
-        }
-      },
-      {
-        "enonce": "Le serveur…",
-        "type_reponse": "qcm_texte",
-        "points": 1,
-        "melanger": false,
-        "choix": [
-          {
-            "id": "a",
-            "texte": "Refuse de vérifier"
-          },
-          {
-            "id": "b",
-            "texte": "Offre le café aux trois amis"
-          },
-          {
-            "id": "c",
-            "texte": "Demande des précisions au patron",
-            "correct": true
-          }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Demande des précisions au patron"
-          }
-        }
-      },
-      {
-        "enonce": "À quoi correspond le « prix du couvert » ?",
-        "type_reponse": "qcm_texte",
-        "points": 1,
-        "melanger": false,
-        "choix": [
-          {
-            "id": "a",
-            "texte": "Aux frais pour le service et le pain",
-            "correct": true
-          },
-          {
-            "id": "b",
-            "texte": "Au prix des desserts"
-          },
-          {
-            "id": "c",
-            "texte": "Au pourboire obligatoire"
-          }
-        ],
-        "formes": {
-          "lignes": {
-            "nb_lignes": 1,
-            "reponse_modele": "Aux frais pour le service et le pain"
+            "reponse_modele": "De prêter son livre"
           }
         }
       }
     ],
-    "consigne_supplementaire": null,
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ss-a2-s8b-co-1",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Conversation 8",
     "scenario": "ecole",
-    "scene": "Paris solidarité rime diversité"
+    "scene": "À la cantine",
+    "consigne": "Écoutez le document, puis répondez à la question.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/ecole/27-école-proposer-manger-cantine.mp3",
+      "transcription": "— On mange ensemble aujourd’hui à la cantine ?\n— Non, je ne peux pas. Je mange chez moi ce midi.\n— Ah, dommage. Une prochaine fois, alors.\n— Désolé. À plus tard."
+    },
+    "questions": [
+      {
+        "enonce": "Pourquoi refuse-t-on ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "La personne mange chez elle",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "La cantine est fermée"
+          },
+          {
+            "id": "c",
+            "texte": "Il n’y a plus de place"
+          }
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "La personne mange chez elle"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ss-a2-s8b-co-2",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Conversation 8",
+    "scenario": "ecole",
+    "scene": "Les exercices",
+    "consigne": "Écoutez le document, puis répondez à la question.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/ecole/28-école-demander-explication-devoir.mp3",
+      "transcription": "— Monsieur, excusez-moi. Pourquoi devons-nous faire ces exercices pour mercredi ?\n— Nous devons les faire sur le livre ou sur le cahier ?\n— Sur le cahier, bien sûr."
+    },
+    "questions": [
+      {
+        "enonce": "Où faut-il faire les exercices ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Sur le cahier",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Sur le livre"
+          },
+          {
+            "id": "c",
+            "texte": "Sur l’ordinateur"
+          }
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Sur le cahier"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ss-a2-s8b-co-3",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Conversation 8",
+    "scenario": "ecole",
+    "scene": "Le tournoi de basket",
+    "consigne": "Écoutez le document, puis répondez à la question.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/ecole/29-école-tournoi-basketball.mp3",
+      "transcription": "— Qui est-ce qui t’accompagne mercredi au tournoi de basket ?\n— C’est mon père qui m’accompagne.\n— Tu crois que je pourrais venir avec vous ?\n— Oui, il y a de la place dans la voiture."
+    },
+    "questions": [
+      {
+        "enonce": "Qui accompagne au tournoi ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Le père",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "La mère"
+          },
+          {
+            "id": "c",
+            "texte": "Le professeur"
+          }
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Le père"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
   },
   {
     "id": "tcf-ss-a2-s8-co-2",
