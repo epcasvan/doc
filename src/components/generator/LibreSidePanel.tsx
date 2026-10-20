@@ -81,7 +81,6 @@ export function LibreSidePanel({
   tcfNiveau,
   updatePage,
   onClose,
-  onRegenerateBlock,
 }: LibreSidePanelProps) {
   return (
     <aside className="side-tool-panel is-libre no-print" aria-label="Mode libre">
@@ -251,9 +250,6 @@ export function LibreSidePanel({
             bankId={activeBlock.tcfBankId}
             shownId={activeSheet?.blocks[safeBlockIndex]?.items.find((item) => item.tcfExerciseId)?.tcfExerciseId}
             onChange={(patch) => updatePage(patch)}
-            onReroll={
-              onRegenerateBlock ? () => onRegenerateBlock(safeBlockIndex) : undefined
-            }
           />
         ) : null}
         {/* TPM / TCM CFR / CSC : éditeur spécialisé (sélecteurs + recalcul). */}

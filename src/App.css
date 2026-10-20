@@ -4148,6 +4148,8 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
 /* —— TCF : panneau admin —— */
 .tcf-editor{gap:8px}
 .tcf-field{display:flex;flex-direction:column;gap:3px;min-width:0;flex:1}
+.tcf-editor .select-box.open{z-index:40}
+.side-tool-panel-body:has(.select-box.open){overflow:visible}
 .tcf-field>span{font-size:11px;font-weight:700;color:var(--muted)}
 .tcf-field.is-number{flex:0 0 auto}
 .tcf-field.is-number .pill-input{width:6.5em}

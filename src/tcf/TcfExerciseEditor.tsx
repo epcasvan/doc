@@ -1,8 +1,10 @@
 import { useMemo, useState } from 'react'
+import { SelectBox } from '@/components/generator/SelectBox'
 import { RefreshIcon } from '@/components/generator/WorksheetSheet'
 import { applyExerciseFromAudioBank, tcfAudioEntries, type TcfAudioEntry } from './audio-bank'
 import { TCF_TYPES, tcfSlotByTypeId, tcfTypeMeta } from './catalog'
 import { AudioField, ImageField, LinesField, NumberField, TextField } from './fields'
+import { drawTcfSeries } from './draw-series'
 import { tcfBank, tcfBankAllLevels, tcfExerciseById, tcfSlotBank } from './loader'
 import { QuestionEditor } from './QuestionEditor'
 import { tcfScenarioGroups, type TcfScenarioGroup } from './sources'
@@ -798,7 +800,6 @@ export function TcfExerciseEditor({
   bankId,
   shownId,
   onChange,
-  onReroll,
 }: {
   niveau: TcfNiveau
   typeId: string
@@ -807,8 +808,6 @@ export function TcfExerciseEditor({
   /** Exercice de banque affiché sur la fiche (tirage selon la graine). */
   shownId?: string
   onChange: (patch: EditorPatch) => void
-  /** Tire un autre exercice / autres contenus au hasard. */
-  onReroll?: () => void
 }) {
   const slot = tcfSlotByTypeId[typeId]
   const bank = useMemo(() => (slot ? tcfSlotBank(niveau, slot) : []), [slot, niveau])
@@ -879,17 +878,15 @@ export function TcfExerciseEditor({
     <div className="quad-libre-block tcf-editor">
       <div className="libre-item-num-col" style={{ alignItems: 'flex-start', marginBottom: 8 }}>
         <b>Exercice TCF</b>
-        {onReroll ? (
-          <button
-            type="button"
-            className="libre-item-reroll no-print"
-            aria-label="Autre exercice au hasard"
-            title="Autre exercice au hasard"
-            onClick={onReroll}
-          >
-            <RefreshIcon />
-          </button>
-        ) : null}
+        <button
+          type="button"
+          className="libre-item-reroll no-print"
+          aria-label="Autre série au hasard"
+          title="Autre série au hasard"
+          onClick={() => set(drawTcfSeries(niveau, slot.competence, exercise.type_exercice))}
+        >
+          <RefreshIcon />
+        </button>
       </div>
       <div className="tcf-row">
         <button type="button" className="tcf-btn" disabled={!edited} onClick={() => onChange({ tcfExercise: undefined })}>
@@ -903,20 +900,18 @@ export function TcfExerciseEditor({
         {edited ? 'Exercice modifié : la fiche affiche cette version.' : 'Exercice de la banque : toute modification crée une version libre.'}
       </small>
       <>
-          <label className="tcf-field">
-            <span>Type d’exercice (le changer vide le contenu)</span>
-            <select
-              className="pill-input"
-              value={exercise.type_exercice}
-              onChange={(event) => startBlank(event.target.value as TcfTypeExercice)}
-            >
-              {types.map((t) => (
-                <option key={t.typeId} value={t.typeExercice}>
-                  {t.label}
-                </option>
-              ))}
-            </select>
-          </label>
+          <SelectBox
+            label="Type d’exercice"
+            value={exercise.type_exercice}
+            onChange={(value) => set(drawTcfSeries(niveau, slot.competence, value as TcfTypeExercice))}
+          >
+            {types.map((t) => (
+              <option key={t.typeId} value={t.typeExercice}>
+                {t.label}
+              </option>
+            ))}
+          </SelectBox>
+          <small className="muted">Choisissez un type : une série est tirée au hasard, avec ses questions.</small>
           {exercise.type_exercice !== 'images_a_reconnaitre' ? (
             <TextField
               label="Consigne (sinon consigne du type)"
