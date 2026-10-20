@@ -182,7 +182,10 @@ export function tcfExerciseItems(
       ]
     case 'formulaire':
       return [scoredItem({ kind: 'formulaire', titre: ex.support.titre, champs: ex.support.champs })]
-    case 'image_question':
+    case 'image_question': {
+      // Le texte à trous se complète dans le document : pas de cadre message.
+      const aCompleter = /complétez/i.test(ex.consigne) || /_{4,}/.test(ex.support.consigne)
+      if (aCompleter) return [support(true)]
       return [
         support(),
         scoredItem({
@@ -193,6 +196,7 @@ export function tcfExerciseItems(
           reponseModele: ex.support.reponse_modele,
         }),
       ]
+    }
     case 'sms_reponse':
     case 'email_reponse':
     case 'question_texte': {

@@ -167,7 +167,14 @@ export type TcfPeFormulaire = TcfBase<'PE', 'formulaire', { titre?: string; cham
 export type TcfPeImageQuestion = TcfBase<
   'PE',
   'image_question',
-  { image: string; consigne: string; nb_mots: TcfNbMots; reponse_modele?: string }
+  {
+    image: string
+    /** Photos vocabulaire numérotées (à la place d’une planche illustrée). */
+    images?: string[]
+    consigne: string
+    nb_mots: TcfNbMots
+    reponse_modele?: string
+  }
 >
 export type TcfPeSmsReponse = TcfBase<
   'PE',

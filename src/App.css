@@ -3927,13 +3927,14 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
 
 /* —— TCF : fiche (support, questions, production) —— */
 .layout-tcf{grid-column:1 / -1}
-.exercise-item.layout-tcf{position:relative;overflow:visible}
-.layout-tcf .item-content{width:100%}
+.exercise-item.layout-tcf{position:relative;overflow:visible;width:100%;align-self:stretch}
+.layout-tcf .item-content{flex:1 1 auto;width:100%;min-width:0}
+.worksheet-sheet .exercise-grid:has(.layout-tcf){grid-template-columns:minmax(0,1fr)!important}
 .tcf-text{margin:0 0 6px;text-align:justify;line-height:1.4}
 .tcf-sms{max-width:78%;margin-bottom:6px}
 .tcf-sms-from{margin:0 0 4px;font-size:.85em;font-weight:700;color:var(--muted)}
 .tcf-sms-bubble{padding:8px 12px;border:1.5px solid var(--purple);border-radius:14px 14px 14px 3px;background:var(--lavender)}
-.tcf-email{border:1px solid var(--ink);margin-bottom:6px}
+.tcf-email{width:100%;max-width:none;box-sizing:border-box;border:1px solid var(--ink);margin-bottom:6px}
 .tcf-email-head{display:grid;grid-template-columns:max-content 1fr;gap:2px 10px;margin:0;padding:6px 10px;border-bottom:1px solid var(--ink);font-size:.9em}
 .tcf-email-head dt{font-weight:700}
 .tcf-email-head dd{margin:0}
@@ -3978,8 +3979,12 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
 .tcf-question-text{margin:4px 0;font-weight:600}
 .tcf-dialogue>.tcf-question-text{white-space:pre-line}
 .tcf-question-text.is-large{font-size:1.1em}
-.tcf-pe-image{display:flex;flex-direction:column;gap:6px}
+.tcf-pe-image{display:flex;flex-direction:column;gap:6px;width:100%}
 .tcf-pe-image .tcf-image{height:60mm}
+.tcf-pe-images{list-style:none;margin:0;padding:0;display:flex;gap:4mm;width:100%}
+.tcf-pe-images li{flex:1 1 0;min-width:0;display:flex;flex-direction:column;align-items:center;gap:1mm}
+.tcf-pe-images .tcf-image{width:100%;height:28mm}
+.tcf-pe-image-num{font-weight:800}
 .tcf-ecriture{display:flex;flex-direction:column;gap:6px}
 .tcf-ecriture.is-fill{flex:1 1 auto;min-height:0}
 .tcf-consigne-supp{margin:0;padding:6px 10px;border-left:3px solid var(--purple);font-size:.9em;font-style:italic}
@@ -4062,15 +4067,17 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
 .tcf-chat{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
 .tcf-chat-row{display:flex;flex-direction:column;max-width:72%}
 .tcf-chat-row.is-examinateur{align-self:flex-start;align-items:flex-start}
+.tcf-dialogue.is-chat{width:100%}
+.tcf-dialogue.is-chat .tcf-chat{width:100%}
 .tcf-dialogue.is-chat .tcf-chat-row.is-eleve{
-  align-self:stretch;align-items:stretch;width:100%;max-width:100%
+  align-self:stretch;align-items:stretch;width:100%;max-width:none
 }
 .tcf-chat-row.is-eleve{align-self:flex-end;align-items:flex-end;width:72%}
 .tcf-chat-name{font-size:.78em;font-weight:700;color:var(--muted);margin:0 6px 1px}
 .tcf-chat-bubble{padding:6px 12px;border:1.5px solid var(--purple);line-height:1.35}
 .tcf-chat-row.is-examinateur .tcf-chat-bubble{border-radius:14px 14px 14px 3px;background:var(--lavender)}
-.tcf-chat-row.is-eleve .tcf-chat-bubble{
-  box-sizing:border-box;width:100%;border-radius:14px 14px 3px 14px;background:#fff;
+.tcf-dialogue.is-chat .tcf-chat-row.is-eleve .tcf-chat-bubble{
+  box-sizing:border-box;width:100%;max-width:none;border-radius:14px 14px 3px 14px;background:#fff;
   display:flex;flex-direction:column;gap:0;padding-bottom:5mm
 }
 .tcf-chat-line{display:block;height:8mm;border-bottom:1px solid var(--purple)}
@@ -4078,8 +4085,8 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
 .tcf-chat-answer{font-weight:600;color:var(--purple)}
 .tcf-phone{position:relative;align-self:center;width:105mm;box-sizing:border-box;padding:9mm 5mm 12mm;border:2px solid var(--ink);border-radius:9mm}
 .tcf-phone.is-fill{
-  width:100%;align-self:stretch;flex:1 1 auto;min-height:0;
-  display:flex;flex-direction:column;padding:8mm 6mm 11mm
+  width:100%;max-width:none;align-self:stretch;flex:1 1 auto;min-height:0;
+  display:flex;flex-direction:column;box-sizing:border-box;padding:8mm 6mm 11mm
 }
 .tcf-phone-speaker{position:absolute;top:3.5mm;left:50%;width:16mm;height:1.6mm;margin-left:-8mm;border:1px solid var(--ink);border-radius:1mm}
 .tcf-phone-button{position:absolute;bottom:3mm;left:50%;width:7mm;height:7mm;margin-left:-3.5mm;border:1px solid var(--ink);border-radius:50%}

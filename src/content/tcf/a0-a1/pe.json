@@ -1061,7 +1061,14 @@
     "consigne": "Vous êtes maintenant en France et vous décrivez vos vacances. Complétez le texte à l’aide des images.",
     "points": 5,
     "support": {
-      "image": "/lib/images/documents/carte-postale-images.webp",
+      "image": "",
+      "images": [
+        "/lib/images/vocabulaire/nature/montagne.webp",
+        "/lib/images/vocabulaire/meteo/soleil.webp",
+        "/lib/images/vocabulaire/loisirs/photo.webp",
+        "/lib/images/vocabulaire/oiseaux/oiseau.webp",
+        "/lib/images/vocabulaire/aliments/poisson.webp"
+      ],
       "consigne": "Madame Rosa,\nJ’espère que tu vas bien. Moi, je passe de très bonnes vacances ! Je suis à la (1) ________. Je reste ici pendant deux semaines. Il y a du (2) ________ tous les matins. Nous prenons beaucoup de (3) ________. Nous aimons écouter les (4) ________ et observer les animaux dans la nature. Hier, j’ai mangé du (5) ________ et des frites au restaurant.\nEt toi, que fais-tu en ce moment ? J’ai hâte d’avoir de tes nouvelles !\nÀ bientôt.",
       "nb_mots": {
         "min": 5,
@@ -1218,7 +1225,14 @@
     "consigne": "Vous êtes inscrit aux cours de musique. Votre assistante vous explique le chemin. Complétez le texte à l’aide des images.",
     "points": 5,
     "support": {
-      "image": "/lib/images/documents/itineraire-images.webp",
+      "image": "",
+      "images": [
+        "/lib/images/vocabulaire/ville/boulangerie.webp",
+        "/lib/images/vocabulaire/vetements/chaussures.webp",
+        "/lib/images/vocabulaire/ville/parc.webp",
+        "/lib/images/vocabulaire/couleurs/vert.webp",
+        "/lib/images/vocabulaire/transports/voiture.webp"
+      ],
       "consigne": "Quand tu sors du foyer, il faut prendre à gauche au bout de la rue. Continue tout droit jusqu’à la (1) ________. Après, tu passes devant le magasin de (2) ________, puis tu traverses le petit (3) ________. Le conservatoire sera sur ta droite. C’est un grand bâtiment (4) ________.\nJe peux t’y emmener en (5) ________ quand j’ai le temps. Tu peux aussi prendre le bus numéro 13.\nBon trajet !",
       "nb_mots": {
         "min": 5,
@@ -1356,7 +1370,14 @@
     "consigne": "Vous écrivez à un ami. Vous lui parlez des 5 choses que vous aimez faire le week-end. Vous pouvez vous aider de l’image.",
     "points": 5,
     "support": {
-      "image": "/lib/images/documents/activites-week-end.webp",
+      "image": "",
+      "images": [
+        "/lib/images/vocabulaire/actions/dormir.webp",
+        "/lib/images/vocabulaire/sports/sport.webp",
+        "/lib/images/vocabulaire/ville/cinema.webp",
+        "/lib/images/vocabulaire/actions/cuisiner.webp",
+        "/lib/images/vocabulaire/loisirs/promenade.webp"
+      ],
       "consigne": "Écrivez à un ami. Commencez par « Salut, » et écrivez 5 choses que vous aimez faire le week-end (une par ligne).",
       "nb_mots": {
         "min": 15,
@@ -1378,7 +1399,14 @@
     "consigne": "Vous allez dans un magasin de vêtements. Vous achetez des habits.",
     "points": 5,
     "support": {
-      "image": "/lib/images/documents/magasin-courses.webp",
+      "image": "",
+      "images": [
+        "/lib/images/vocabulaire/vetements/pantalon.webp",
+        "/lib/images/vocabulaire/vetements/robe.webp",
+        "/lib/images/vocabulaire/vetements/veste.webp",
+        "/lib/images/vocabulaire/vetements/t-shirt.webp",
+        "/lib/images/vocabulaire/vetements/chaussures.webp"
+      ],
       "consigne": "Qu’est-ce que vous achetez ? Écrivez 5 mots.",
       "nb_mots": {
         "min": 5,

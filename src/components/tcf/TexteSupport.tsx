@@ -98,13 +98,27 @@ export function TexteSupport({ exercise: ex, mode }: { exercise: TcfExercise; mo
     case 'complet':
     case 'association_images':
       return <Modele text={ex.support.transcription} mode={mode} title="Transcription" />
-    case 'image_question':
+    case 'image_question': {
+      const photos = (ex.support.images ?? []).map((src) => src.trim()).filter(Boolean)
+      const numbered = /\(1\)/.test(ex.support.consigne)
       return (
         <div className="tcf-pe-image">
-          <TcfImage src={ex.support.image} alt="Image de l’exercice" />
+          {photos.length > 0 ? (
+            <ol className="tcf-pe-images">
+              {photos.map((src, i) => (
+                <li key={src}>
+                  {numbered ? <span className="tcf-pe-image-num">{i + 1}</span> : null}
+                  <TcfImage src={src} alt="" />
+                </li>
+              ))}
+            </ol>
+          ) : (
+            <TcfImage src={ex.support.image} alt="Image de l’exercice" />
+          )}
           <p className="tcf-question-text">{ex.support.consigne}</p>
         </div>
       )
+    }
     case 'sms_reponse':
       return (
         <div>
