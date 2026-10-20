@@ -31653,7 +31653,7 @@
     "theme": "Soutien scolaire · Dialogue 038",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/sante/regarde-mamie-j-ai-photos-1.mp3",
+      "audio": "/lib/audio/tcf/co/logement/02-logement-description-de-l-appartement-2.mp3",
       "transcription": "- Regarde mamie, j'ai des photos de mon nouvel appartement à Annecy !\n- C'est un studio ?\n- Non, un appartement…\n- Montre-moi…\nOh !\nC'est grand et très lumineux !\n- Oui, il y a un salon, une chambre et une cuisine équipée.\nEt puis je n'aime pas les appartements sombres.\n- Il y a un balcon ?\n- Oui, on peut manger sur le balcon !\n- La salle de bains est grande ?\n- Non, elle est petite, mais les toilettes sont très grandes.\n- C'est à quel étage ?\n- Au 3e.\n- L'immeuble est ancien ?\n- Non, il est neuf !\n- Et c'est où ?\n- C'est dans un quartier calme, au centre-ville."
     },
     "questions": [
@@ -31767,8 +31767,8 @@
       }
     ],
     "consigne_supplementaire": null,
-    "scenario": "sante",
-    "scene": "Regarde mamie j'ai photos"
+    "scenario": "maison",
+    "scene": "Le nouvel appartement"
   },
   {
     "id": "tcf-ss-a1-s50-co-3",
@@ -31778,7 +31778,7 @@
     "theme": "Soutien scolaire · Dialogue 114",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/sante/aline-comprends-1.mp3",
+      "audio": "/lib/audio/tcf/co/magasins/21-magasin-pas-comprendre-taille-des-vêtements.mp3",
       "transcription": "- Aline, je ne comprends pas les tailles françaises.\nTu peux m'expliquer ?\n- Pas de problème Katie.\nQuelle est ta taille ?\n- Je fais du L.\n- En France, c'est du 42.\nEssaie ce pantalon."
     },
     "questions": [
@@ -31892,8 +31892,8 @@
       }
     ],
     "consigne_supplementaire": null,
-    "scenario": "sante",
-    "scene": "Aline comprends"
+    "scenario": "magasins",
+    "scene": "Les tailles des vêtements"
   },
   {
     "id": "tcf-ss-a1-s50-co-4",
@@ -31903,149 +31903,149 @@
     "theme": "Soutien scolaire · Dialogue 120",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/sante/c-est-dejeuner-1.mp3",
-      "transcription": "– C'est pour déjeuner ?\n– Oui.\nVous avez une table pour deux ?\n– Qu'est-ce que vous buvez ?\n– Une carave d'eau, s'il vous plaît.\n– Qu'est-ce que tu bois ?\n– Pas d'alcool pour moi aujourd'hui.\nUn jus de range s'il te plaît.\n– Tu prends du poisson ou de la viande ?\n– Je ne mange pas de viande.\nJe suis végétarien.\n– Je peux prendre votre commande ?\n– Oui.\nUne salade, un steak frite et une tarte.\n– Oui.\nJe prends une salade, un steak frite et une tarte.\n– Tout va bien ?\n– C'est excellent.\nC'est délicieux.\n– L'addition s'il vous plaît.\nOn laisse un pour boire ?"
+      "audio": "/lib/audio/tcf/co/restaurant/07-restaurant-le-dejeuner.mp3",
+      "transcription": "— C'est pour déjeuner ?\n— Oui. Vous avez une table pour deux ?\n— Qu'est-ce que vous buvez ?\n— Une carafe d'eau, s'il vous plaît.\n— Qu'est-ce que tu bois ?\n— Pas d'alcool pour moi aujourd'hui. Un jus d'orange, s'il te plaît.\n— Tu prends du poisson ou de la viande ?\n— Je ne mange pas de viande. Je suis végétarien.\n— Je peux prendre votre commande ?\n— Oui. Une salade, un steak-frites et une tarte."
     },
     "questions": [
       {
-        "enonce": "Qui la personne a-t-elle vu ?",
+        "enonce": "Pour quel repas demande-t-on une table ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Le médecin",
+            "texte": "Le déjeuner",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Le dentiste"
+            "texte": "Le petit-déjeuner"
           },
           {
             "id": "c",
-            "texte": "Le pharmacien"
+            "texte": "Le dîner"
           }
         ],
         "formes": {
           "lignes": {
             "nb_lignes": 1,
-            "reponse_modele": "Le médecin"
+            "reponse_modele": "Le déjeuner"
           }
         }
       },
       {
-        "enonce": "Que veut le médecin ?",
+        "enonce": "Pour combien de personnes ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Une prise de sang",
+            "texte": "Deux",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Une radio"
+            "texte": "Trois"
           },
           {
             "id": "c",
-            "texte": "Une opération"
+            "texte": "Quatre"
           }
         ],
         "formes": {
           "lignes": {
             "nb_lignes": 1,
-            "reponse_modele": "Une prise de sang"
+            "reponse_modele": "Deux"
           }
         }
       },
       {
-        "enonce": "Quand la prise de sang aura-t-elle lieu ?",
+        "enonce": "Que commande-t-on d'abord à boire ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Demain",
+            "texte": "Une carafe d'eau",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Aujourd'hui"
+            "texte": "Un café"
           },
           {
             "id": "c",
-            "texte": "La semaine prochaine"
+            "texte": "Un verre de vin"
           }
         ],
         "formes": {
           "lignes": {
             "nb_lignes": 1,
-            "reponse_modele": "Demain"
+            "reponse_modele": "Une carafe d'eau"
           }
         }
       },
       {
-        "enonce": "De quoi parlent les deux personnes ?",
+        "enonce": "Pourquoi la personne refuse-t-elle la viande ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "D'un rendez-vous médical",
+            "texte": "Elle est végétarienne",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "D'un voyage"
+            "texte": "Elle n'a pas faim"
           },
           {
             "id": "c",
-            "texte": "D'un repas"
+            "texte": "Le plat est trop cher"
           }
         ],
         "formes": {
           "lignes": {
             "nb_lignes": 1,
-            "reponse_modele": "D'un rendez-vous médical"
+            "reponse_modele": "Elle est végétarienne"
           }
         }
       },
       {
-        "enonce": "Où se fera la prise de sang ?",
+        "enonce": "Que contient la commande ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "On ne le sait pas",
+            "texte": "Une salade, un steak-frites et une tarte",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "À la maison"
+            "texte": "Une soupe et un dessert"
           },
           {
             "id": "c",
-            "texte": "À l'école"
+            "texte": "Un sandwich et un café"
           }
         ],
         "formes": {
           "lignes": {
             "nb_lignes": 1,
-            "reponse_modele": "On ne le sait pas"
+            "reponse_modele": "Une salade, un steak-frites et une tarte"
           }
         }
       }
     ],
     "consigne_supplementaire": null,
-    "scenario": "sante",
-    "scene": "C'est déjeuner"
+    "scenario": "vie-quotidienne",
+    "scene": "Le déjeuner au restaurant"
   },
   {
     "id": "tcf-ss-a1-s51-co-1",
@@ -32055,7 +32055,7 @@
     "theme": "Soutien scolaire · Dialogue 125",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/sante/02-actualité-le-pourboire-en-France.mp3",
+      "audio": "/lib/audio/tcf/co/actualite/08-actualité-le-pourboire-en-France.mp3",
       "transcription": "Nous recevons beaucoup de questions sur le pourboire en France.\nC'est simple : le pourboire n'est pas obligatoire, mais si vous voulez, vous pouvez laisser environ 5 % de votre addition."
     },
     "questions": [
@@ -32169,8 +32169,8 @@
       }
     ],
     "consigne_supplementaire": null,
-    "scenario": "sante",
-    "scene": "Nous recevons beaucoup questions"
+    "scenario": "actualite",
+    "scene": "Le pourboire en France"
   },
   {
     "id": "tcf-ss-a1-s51-co-2",
@@ -35861,7 +35861,7 @@
     "scene": "L’appartement",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/logement/01-logement-description-de-l-appartement.mp3",
+      "audio": "/lib/audio/tcf/co/logement/01-logement-description-de-l-appartement-1.mp3",
       "transcription": "- Tu habites dans un studio ?\n- Non, dans un appartement.\n- C'est grand ?\n- Oui, il y a un salon, une chambre et une cuisine équipée.\n- Et la salle de bains, elle est grande ?\n- Oui, elle est grande.\n- Tu as un balcon ?\n- Oui, j'ai un petit balcon.\n- Tu habites à quel étage ?\n- J'habite au troisième.\n- C'est où ?\n- C'est au centre-ville."
     },
     "questions": [

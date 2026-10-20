@@ -529,7 +529,7 @@
     "scene": "Chez le dentiste",
     "consigne": "Vous allez écouter un message sur un répondeur. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/sante/chez-le-dentiste.mp3",
+      "audio": "/lib/audio/tcf/co/sante/03-santé-annulation-rendez-vous-dentiste.mp3",
       "transcription": "Bonjour, ici le secrétariat du docteur Ladent.\nJe vous informe que le rendez-vous de Béatrice du vendredi 18 avril à 17 h est annulé, car le dentiste sera absent du 15 au 19 avril.\nPourriez-vous me rappeler au 02 58 62 35 87, au cabinet du docteur, pour prendre un autre rendez-vous ?\nLe secrétariat est ouvert tous les jours de 10 h à 13 h, sauf le dimanche.\nJ’attends votre appel.\nBonne journée !"
     },
     "questions": [
@@ -39382,7 +39382,7 @@
     "theme": "Soutien scolaire · Dialogue 038",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/sante/regarde-mamie-j-ai-photos-2.mp3",
+      "audio": "/lib/audio/tcf/co/actualite/09-actualité-titres-du-jour.mp3",
       "transcription": "Bonjour à tous, vous êtes sur France Inter, il est 8 heures.\nLes titres du jour.\nAccident sur l'autoroute A7 : 30 blessés.\nNouveau projet social du gouvernement contre la crise économique.\nL'épidémie de grippe.\nNeige sur les routes et enfin du football avec le match PSG-OM."
     },
     "questions": [
@@ -39550,8 +39550,8 @@
       }
     ],
     "consigne_supplementaire": null,
-    "scenario": "sante",
-    "scene": "Regarde mamie j'ai photos"
+    "scenario": "actualite",
+    "scene": "Les titres du jour"
   },
   {
     "id": "tcf-ss-a2-s52-co-2",
@@ -39561,149 +39561,149 @@
     "theme": "Soutien scolaire · Dialogue 114",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/sante/aline-comprends-2.mp3",
-      "transcription": "- Docteur, j'ai mal à la tête depuis trois jours.\n- Il faut que vous vous reposiez.\nJe voudrais que vous fassiez des analyses."
+      "audio": "/lib/audio/tcf/co/sante/04-santé-Mme-Deballe-ma-fille-va-mal.mp3",
+      "transcription": "— Cabinet du docteur Benoît, bonjour.\n— Bonjour, c'est madame Deballe. Ma fille de dix mois va mal.\n— Qu'est-ce qu'elle a ?\n— Depuis hier, elle ne mange plus, elle vomit et elle a 39 de fièvre. Ça me fait peur. Il faut que le docteur nous reçoive, c'est urgent.\n— Malheureusement, aujourd'hui, ce n'est pas possible : le docteur est absent. Vous devez aller aux urgences.\n— Il faut qu'on y aille aujourd'hui ?\n— Oui. Il ne faut pas prendre rendez-vous, mais n'oubliez pas votre carte d'assurance.\n— Je veux savoir pourquoi elle est malade. Il faut que le médecin demande des analyses.\n— Ne vous inquiétez pas. Ça va aller. On va soigner votre fille."
     },
     "questions": [
       {
-        "enonce": "Où le patient a-t-il mal ?",
+        "enonce": "Qui appelle le cabinet ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "À la tête",
+            "texte": "Madame Deballe",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Au ventre"
+            "texte": "Le docteur Benoît"
           },
           {
             "id": "c",
-            "texte": "Au dos"
+            "texte": "Une infirmière"
           }
         ],
         "formes": {
           "lignes": {
             "nb_lignes": 1,
-            "reponse_modele": "À la tête"
+            "reponse_modele": "Madame Deballe"
           }
         }
       },
       {
-        "enonce": "Depuis combien de temps le patient a-t-il mal ?",
+        "enonce": "Quel âge a la fille ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Trois jours",
+            "texte": "Dix mois",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Deux jours"
+            "texte": "Dix ans"
           },
           {
             "id": "c",
-            "texte": "Une semaine"
+            "texte": "Trois jours"
           }
         ],
         "formes": {
           "lignes": {
             "nb_lignes": 1,
-            "reponse_modele": "Trois jours"
+            "reponse_modele": "Dix mois"
           }
         }
       },
       {
-        "enonce": "À qui parle le patient ?",
+        "enonce": "Quel symptôme est cité ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "À un docteur",
+            "texte": "39 de fièvre",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "À un pharmacien"
+            "texte": "Mal au dos"
           },
           {
             "id": "c",
-            "texte": "À un dentiste"
+            "texte": "Une toux"
           }
         ],
         "formes": {
           "lignes": {
             "nb_lignes": 1,
-            "reponse_modele": "À un docteur"
+            "reponse_modele": "39 de fièvre"
           }
         }
       },
       {
-        "enonce": "Que doit d'abord faire le patient ?",
+        "enonce": "Où faut-il aller aujourd'hui ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Se reposer",
+            "texte": "Aux urgences",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Travailler plus"
+            "texte": "À la pharmacie"
           },
           {
             "id": "c",
-            "texte": "Faire du sport"
+            "texte": "Chez le dentiste"
           }
         ],
         "formes": {
           "lignes": {
             "nb_lignes": 1,
-            "reponse_modele": "Se reposer"
+            "reponse_modele": "Aux urgences"
           }
         }
       },
       {
-        "enonce": "Que voudrait le docteur ?",
+        "enonce": "Que faut-il apporter ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "Que le patient fasse des analyses",
+            "texte": "La carte d'assurance",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Que le patient prenne un sirop"
+            "texte": "Une ordonnance"
           },
           {
             "id": "c",
-            "texte": "Que le patient revienne demain"
+            "texte": "Le carnet de vaccination"
           }
         ],
         "formes": {
           "lignes": {
             "nb_lignes": 1,
-            "reponse_modele": "Que le patient fasse des analyses"
+            "reponse_modele": "La carte d'assurance"
           }
         }
       }
     ],
     "consigne_supplementaire": null,
     "scenario": "sante",
-    "scene": "Aline comprends"
+    "scene": "Ma fille va mal"
   },
   {
     "id": "tcf-ss-a2-s52-co-3",
@@ -39713,8 +39713,8 @@
     "theme": "Soutien scolaire · Dialogue 118",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/sante/sante-1.mp3",
-      "transcription": "C'est clair, ça te dérange si je fume ?\nNon, bien de cas, ici ce n'est pas possible, il faut que tu sortes.\nBon, d'accord, tu sais que c'est mauvais pour t'ascenter ?\nFais attention, d'accord, d'accord, j'ai compris."
+      "audio": "/lib/audio/tcf/co/sante/06-santé-fumer-c-est-pas-bien.mp3",
+      "transcription": "— Claire, ça te dérange si je fume ?\n— Non, mais ici ce n'est pas possible. Il faut que tu sortes.\n— Bon, d'accord.\n— Tu sais que c'est mauvais pour ta santé ? Fais attention.\n— D'accord, d'accord, j'ai compris."
     },
     "questions": [
       {
@@ -39855,7 +39855,7 @@
     ],
     "consigne_supplementaire": null,
     "scenario": "sante",
-    "scene": "Santé"
+    "scene": "Interdiction de fumer"
   },
   {
     "id": "tcf-ss-a2-s52-co-4",
@@ -39865,7 +39865,7 @@
     "theme": "Soutien scolaire · Dialogue 119",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/sante/sante-2.mp3",
+      "audio": "/lib/audio/tcf/co/sante/05-santé-prise-de-sang.mp3",
       "transcription": "Bonjour, je viens pour une prise de sang.\nJ'ai pris rendez-vous en ligne.\nBonjour.\nVous avez une ordonnance du médecin ?\nOui, voici.\nTrès bien.\nC'est la première fois que vous venez dans notre laboratoire.\nRemplissez ce formulaire et patientez dans la salle d'attente."
     },
     "questions": [
@@ -40007,7 +40007,7 @@
     ],
     "consigne_supplementaire": null,
     "scenario": "sante",
-    "scene": "Santé"
+    "scene": "La prise de sang"
   },
   {
     "id": "tcf-ss-a2-s53-co-1",
@@ -40017,8 +40017,8 @@
     "theme": "Soutien scolaire · Dialogue 120",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/sante/c-est-dejeuner-2.mp3",
-      "transcription": "Comment allez-vous aujourd'hui, M.\nAbrie ?\nBien, mais je touche toujours, je suis en remet, j'ai mal à la tête.\nJ'ai vos résultats d'an l'analyse de sang et la radio des poumons.\nVous avez une bronchite ?\nOuf, ce n'est pas une pneumonie, comment je dois me soigner ?\nVous avez déjà un traitement contre la douleur et la fièvre.\nPrenez aussi cet antibiotique.\nVous fumez toujours ?\nOui, un peu.\nIl faut que vous fassiez attention, M.\nPour guérir rapidement, arrêtez la cigarette."
+      "audio": "/lib/audio/tcf/co/sante/02-santéconsultation-chez-le-docteur-Abri.mp3",
+      "transcription": "— Comment allez-vous aujourd'hui, monsieur Abrie ?\n— Pas très bien. Je tousse toujours, je suis enrhumé et j'ai mal à la tête.\n— J'ai vos résultats d'analyse de sang et la radio des poumons. Vous avez une bronchite. Vous avez déjà un traitement contre la douleur et la fièvre. Prenez aussi cet antibiotique. Vous fumez toujours ?\n— Oui, un peu.\n— Il faut que vous fassiez attention. Pour guérir rapidement, arrêtez la cigarette."
     },
     "questions": [
       {
@@ -40159,7 +40159,7 @@
     ],
     "consigne_supplementaire": null,
     "scenario": "sante",
-    "scene": "C'est déjeuner"
+    "scene": "Chez le docteur Abrie"
   },
   {
     "id": "tcf-ss-a2-s53-co-2",
@@ -40169,8 +40169,8 @@
     "theme": "Soutien scolaire · Dialogue 125",
     "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
     "support": {
-      "audio": "/lib/audio/tcf/co/sante/nous-recevons-beaucoup-questions-1.mp3",
-      "transcription": "- Le parcours de santé, c'était formidable !\n- Je me sens en pleine forme.\n- Vous avez des cours de yoga ?\n- Oui, collectifs ou particuliers.\nL'abonnement annuel est plus intéressant."
+      "audio": "/lib/audio/tcf/co/loisirs/15-loisirs-parcours-yoga-abonnement.mp3",
+      "transcription": "— Alors, le parcours de santé, c'était comment ?\n— C'était formidable !\n— Je voudrais me renseigner sur votre club. Vous avez des cours de yoga ?\n— Nous proposons des cours collectifs ou particuliers, avec un professeur.\n— Je pense prendre un abonnement mensuel. C'est possible ?\n— Bien sûr, mais un abonnement annuel est plus intéressant."
     },
     "questions": [
       {
@@ -40201,29 +40201,29 @@
         }
       },
       {
-        "enonce": "Comment la personne se sent-elle ?",
+        "enonce": "Que veut faire la personne au club ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
         "choix": [
           {
             "id": "a",
-            "texte": "En pleine forme",
+            "texte": "Se renseigner sur les cours de yoga",
             "correct": true
           },
           {
             "id": "b",
-            "texte": "Très fatiguée"
+            "texte": "Arrêter le sport"
           },
           {
             "id": "c",
-            "texte": "Un peu malade"
+            "texte": "S'inscrire à un match"
           }
         ],
         "formes": {
           "lignes": {
             "nb_lignes": 1,
-            "reponse_modele": "En pleine forme"
+            "reponse_modele": "Se renseigner sur les cours de yoga"
           }
         }
       },
@@ -40337,8 +40337,8 @@
       }
     ],
     "consigne_supplementaire": null,
-    "scenario": "sante",
-    "scene": "Nous recevons beaucoup questions"
+    "scenario": "loisirs",
+    "scene": "Le club de sport"
   },
   {
     "id": "tcf-ss-a2-s53-co-3",
