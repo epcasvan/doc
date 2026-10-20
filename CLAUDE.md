@@ -1,6 +1,6 @@
 # ClairFLE Maths — générateur de fiches de maths imprimables
 
-Site où des enseignant·e·s composent des fiches de travail A4 imprimables (avec corrigé) : français (grammaire, vocabulaire, communication), algèbre et géométrie. Tirage déterministe par graine, rendu type cahier scolaire (colonnes, fractions, figures cotées, division posée). Le plan des fiches FLE est dans `docs/plan-fiches-FLE.md`.
+Site où des enseignant·e·s composent des fiches de travail A4 imprimables (avec corrigé) : français (grammaire, vocabulaire, communication), algèbre et géométrie. Tirage déterministe par graine, rendu type cahier scolaire (colonnes, fractions, figures cotées, division posée).
 
 ## Stack et commandes
 
@@ -27,7 +27,7 @@ React + Vite + TypeScript. Styles principaux dans `src/App.css` (variables CSS d
 | `src/acm/` | Activités créatives et manuelles (squelette) — `README.md` |
 | `src/tcm-csc/` | Stub TCM CSC (vide, admin) — `README.md` |
 | `src/tcm-cfr/` | Stub TCM CFR (vide, admin) — `README.md` |
-| `src/jeux/` | Fiches-jeux — planning `docs/plan-domaine-jeux.md` |
+| `src/jeux/` | Fiches-jeux |
 | `src/math/rng.ts` | `createRng`, `int`, `pick`, `shuffle` — jamais `Math.random()` dans un générateur |
 | `src/math/types.ts` | `Layout`, `MathItem`, `PageConfig`, `WorksheetPage`… |
 | `src/components/ItemView.tsx` | Dispatcher ; layouts dans `src/components/item-view/` |
