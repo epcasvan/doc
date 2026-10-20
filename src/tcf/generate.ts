@@ -303,7 +303,7 @@ export function tryGenerateTcfBlock(
         tcfItem(
           {
             kind: 'vide',
-            message: `Aucun exercice « ${(slot ?? legacy)!.label} » en ${niveau} dans la banque. Saisissez-le dans le panneau TCF ou ajoutez-le dans src/content/tcf.`,
+            message: `Aucun exercice « ${(slot ?? legacy)!.label} » en ${niveau} dans la banque. Saisissez-le dans le panneau TCF ou ajoutez-le dans src/tcf/content.`,
           },
           false,
         ),

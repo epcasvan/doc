@@ -15,7 +15,7 @@ if (!existsSync(OVERRIDES)) {
 const overrides = JSON.parse(readFileSync(OVERRIDES, 'utf8'))
 let n = 0
 for (const level of LEVELS) {
-  const path = join(ROOT, 'src/content/tcf', level, 'co.json')
+  const path = join(ROOT, 'src/tcf/content', level, 'co.json')
   if (!existsSync(path)) continue
   const data = JSON.parse(readFileSync(path, 'utf8'))
   let changed = false

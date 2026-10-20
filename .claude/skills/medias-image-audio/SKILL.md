@@ -164,7 +164,7 @@ Reformulation ClairFLE à préfixer **avant** la description de la scène
 
 ### Procédure
 
-1. Lire le support PO dans `src/content/tcf/{niveau}/po.json` (situation,
+1. Lire le support PO dans `src/tcf/content/{niveau}/po.json` (situation,
    questions « Que voyez-vous ? », thème).
 2. Rédiger une **scène** en une ou deux phrases (qui / où / quoi) alignée sur
    la tâche orale, sans spoiler une réponse modèle mot à mot inutile.

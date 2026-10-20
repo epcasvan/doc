@@ -10,7 +10,7 @@ description: >-
 
 ## Images des CE TCF
 
-Les CE TCF (`src/content/tcf/*/ce.json`) prennent leurs images dans
+Les CE TCF (`src/tcf/content/*/ce.json`) prennent leurs images dans
 **`public/lib/images/vocabulaire/{theme}/{slug}.webp`** (chemin absolu dans le JSON :
 `"/lib/images/vocabulaire/vetements/echarpe.webp"`), comme les CO. Même règle que
 la section « Images des CO » du skill `comprehension-orale` :

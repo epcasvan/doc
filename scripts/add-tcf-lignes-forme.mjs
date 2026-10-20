@@ -7,7 +7,7 @@
 import { readFileSync, writeFileSync, readdirSync, statSync } from 'fs'
 import { join } from 'path'
 
-const ROOT = 'src/content/tcf'
+const ROOT = 'src/tcf/content'
 
 function walk(dir, out = []) {
   for (const name of readdirSync(dir)) {

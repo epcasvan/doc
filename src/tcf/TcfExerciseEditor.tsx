@@ -1026,7 +1026,7 @@ export function TcfExerciseEditor({
             </button>
           </div>
           <small className="muted">
-            L’export est bloqué tant qu’il reste des erreurs. Collez le JSON dans src/content/tcf/{niveau.toLowerCase()}/{slot.competence.toLowerCase()}.json.
+            L’export est bloqué tant qu’il reste des erreurs. Collez le JSON dans src/tcf/content/{niveau.toLowerCase()}/{slot.competence.toLowerCase()}.json.
           </small>
       </>
     </div>

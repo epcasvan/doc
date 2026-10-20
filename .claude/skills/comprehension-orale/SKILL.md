@@ -3,7 +3,7 @@ name: comprehension-orale
 description: >-
   Importe et maintient les CO (compréhension orale) TCF depuis le repo
   soutien-scolaire. À utiliser dès qu’on parle de CO TCF, banques
-  src/content/tcf/*/co.json, audios soutien, ou import des questions orales.
+  src/tcf/content/*/co.json, audios soutien, ou import des questions orales.
 ---
 
 # Compréhension orale TCF (soutien-scolaire)
@@ -15,7 +15,7 @@ banques TCF, pas dans le domaine français FLE.
 
 | Élément | Chemin |
 |---|---|
-| Banques | `src/content/tcf/{a0-a1,a1-a2,a2-b1}/co.json` |
+| Banques | `src/tcf/content/{a0-a1,a1-a2,a2-b1}/co.json` |
 | Audios soutien | `public/lib/audio/tcf/co/{thème}/{niveau}__{stem}.mp3` |
 | Audios des tests (séries) | `public/lib/audio/tcf/co/{scénario}/{scène}[-n].mp3` |
 | Manifest | `scripts/audio-theme-manifest.json` |

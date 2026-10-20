@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Importe les CO du repo soutien-scolaire dans les banques TCF
- * (`src/content/tcf/{a0-a1,a1-a2,a2-b1}/co.json`).
+ * (`src/tcf/content/{a0-a1,a1-a2,a2-b1}/co.json`).
  *
  * Sources :
  * - transcriptions + QCM soutien (`SOUTIEN_ROOT`, défaut `/tmp/soutien-scolaire`)
@@ -16,7 +16,7 @@ const ROOT = process.cwd()
 const SOUTIEN = process.env.SOUTIEN_ROOT ?? '/tmp/soutien-scolaire'
 const COMM = join(SOUTIEN, 'lib/curriculum/content/communication')
 const MANIFEST = join(ROOT, 'scripts/audio-theme-manifest.json')
-const CONTENT = join(ROOT, 'src/content/tcf')
+const CONTENT = join(ROOT, 'src/tcf/content')
 
 const LEVEL_TO_NIVEAU = {
   'facile-a1': 'A0-A1',

@@ -1,7 +1,7 @@
 /**
  * TCF — Test de connaissances de français.
  * Types des exercices saisis par l’admin et stockés en JSON
- * (`src/content/tcf/{a0-a1,a1-a2,a2-b1}/{ce,co,pe,po}.json`).
+ * (`src/tcf/content/{a0-a1,a1-a2,a2-b1}/{ce,co,pe,po}.json`).
  * Unions discriminées sur `competence`, `type_exercice` et `type_reponse`.
  */
 
