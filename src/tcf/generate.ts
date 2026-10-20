@@ -184,7 +184,7 @@ export function tcfExerciseItems(
       return [scoredItem({ kind: 'formulaire', titre: ex.support.titre, champs: ex.support.champs })]
     case 'image_question': {
       // Le texte à trous se complète dans le document : pas de cadre message.
-      const aCompleter = /complétez/i.test(ex.consigne) || /_{4,}/.test(ex.support.consigne)
+      const aCompleter = /complétez/i.test(ex.consigne ?? '') || /_{4,}/.test(ex.support.consigne)
       if (aCompleter) return [support(true)]
       return [
         support(),
