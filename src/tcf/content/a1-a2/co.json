@@ -4905,56 +4905,170 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Préparation A2 · série 4 · En vacances chez des amis",
-    "scenario": "vacances",
-    "scene": "En vacances chez des amis",
-    "consigne": "Vous êtes en vacances chez des amis. Vous entendez ces conversations. Il y a 2 écoutes. Associez chaque dialogue à la situation correspondante.",
+    "scenario": "sante",
+    "scene": "Le numéro du spécialiste",
+    "consigne": "Écoutez le document, puis répondez à la question.",
     "support": {
-      "audio": "/lib/audio/tcf/co/vacances/04-vacances-chez-des-amis.mp3",
-      "transcription": "Dialogue 1 — Peux-tu me donner le numéro de ton spécialiste ?\nJe veux prendre rendez-vous pour mon dos.\n— Le docteur Lebrun ?\nOui, bien sûr !\nAttends, je le cherche.\nDialogue 2 — Je ne trouve pas les livres que j’ai pris à la bibliothèque…\n— Tu pourrais ranger ta chambre, ça t’aiderait à les retrouver !\nDialogue 3 — Je ne comprends rien à ce site d’achat en ligne !\n— Est-ce que tu veux que je regarde avec toi ?\n— Oui, merci, c’est gentil !\nDialogue 4 — Je suis vraiment désolé : j’ai oublié d’acheter de la viande en rentrant !\n— Ce n’est pas grave, on va manger autre chose."
+      "audio": "/lib/audio/tcf/co/sante/01-santé-demander-numéro-docteur.mp3",
+      "transcription": "Peux-tu me donner le numéro de ton spécialiste ?\nJe veux prendre rendez-vous pour mon dos.\n— Le docteur Lebrun ?\nOui, bien sûr !\nAttends, je le cherche."
     },
     "questions": [
       {
-        "enonce": "Écrivez la lettre de la situation à côté de chaque dialogue.\nA. Proposer de l’aide — B. Informer — C. S’excuser — D. Conseiller quelque chose",
-        "type_reponse": "lignes",
-        "points": 8,
-        "nb_lignes": 0,
-        "tableau": [
+        "enonce": "Que demande la personne ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
           {
-            "label": "Dialogue 1 (2 points)",
-            "reponse": "B. Informer"
+            "id": "a",
+            "texte": "Le numéro d’un spécialiste",
+            "correct": true
           },
           {
-            "label": "Dialogue 2 (2 points)",
-            "reponse": "D. Conseiller quelque chose"
+            "id": "b",
+            "texte": "L’adresse de la bibliothèque"
           },
           {
-            "label": "Dialogue 3 (2 points)",
-            "reponse": "A. Proposer de l’aide"
-          },
-          {
-            "label": "Dialogue 4 (2 points)",
-            "reponse": "C. S’excuser"
+            "id": "c",
+            "texte": "Un site d’achat"
           }
         ],
-        "reponse_modele": "…",
         "formes": {
-          "qcm_texte": {
-            "melanger": true,
-            "choix": [
-              {
-                "id": "a",
-                "texte": "B. Informer · D. Conseiller quelque chose · A. Proposer de l’aide · C. S’excuser",
-                "correct": true
-              },
-              {
-                "id": "b",
-                "texte": "Dialogue"
-              },
-              {
-                "id": "c",
-                "texte": "Peux"
-              }
-            ]
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Le numéro d’un spécialiste"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-a2p-s4b-co-2",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Préparation A2 · série 4 · En vacances chez des amis",
+    "scenario": "maison",
+    "scene": "Les livres",
+    "consigne": "Écoutez le document, puis répondez à la question.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/famille/16-famille-où-sont-les-livres.mp3",
+      "transcription": "Je ne trouve pas les livres que j'ai pris à la bibliothèque…\n— Tu pourrais ranger ta chambre, ça t'aiderait à les retrouver !"
+    },
+    "questions": [
+      {
+        "enonce": "Que conseille-t-on ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "De ranger la chambre",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "D’acheter de la viande"
+          },
+          {
+            "id": "c",
+            "texte": "D’appeler le docteur"
+          }
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "De ranger la chambre"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-a2p-s4b-co-3",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Préparation A2 · série 4 · En vacances chez des amis",
+    "scenario": "vie-quotidienne",
+    "scene": "Le site d’achat",
+    "consigne": "Écoutez le document, puis répondez à la question.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/famille/17-famille-pas-comprendre-site-internet.mp3",
+      "transcription": "Je ne comprends rien à ce site d'achat en ligne !\n— Est-ce que tu veux que je regarde avec toi ?\n— Oui, merci, c'est gentil !"
+    },
+    "questions": [
+      {
+        "enonce": "Que propose la personne ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "De regarder le site ensemble",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "De ranger la chambre"
+          },
+          {
+            "id": "c",
+            "texte": "D’aller chez le docteur"
+          }
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "De regarder le site ensemble"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-a2p-s4b-co-1",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Préparation A2 · série 4 · En vacances chez des amis",
+    "scenario": "maison",
+    "scene": "La viande oubliée",
+    "consigne": "Écoutez le document, puis répondez à la question.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/famille/15-famille-oublier-acheter-de-la-viande.mp3",
+      "transcription": "Je suis vraiment désolé : j'ai oublié d'acheter de la viande en rentrant !\n— Ce n'est pas grave, on va manger autre chose."
+    },
+    "questions": [
+      {
+        "enonce": "Pourquoi la personne s’excuse-t-elle ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Elle a oublié la viande",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Elle a perdu les livres"
+          },
+          {
+            "id": "c",
+            "texte": "Elle arrive en retard"
+          }
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Elle a oublié la viande"
           }
         }
       }
@@ -10437,10 +10551,12 @@
     "competence": "CO",
     "type_exercice": "complet",
     "theme": "Soutien scolaire · Dialogue 166",
-    "consigne": "Vous allez écouter un document sonore. Il y a 2 écoutes. Lisez les questions, puis répondez.",
+    "scenario": "travail",
+    "scene": "Le site Studirama",
+    "consigne": "Écoutez le document, puis répondez à la question.",
     "support": {
-      "audio": "/lib/audio/tcf/co/travail/11-travail-trouver-un-emploi.mp3",
-      "transcription": "Tu as trouvé un job pour cet été ?\nNon, je n'ai rien trouvé.\nEt c'est le site Studirama.\nIl y a plein d'offres d'emplois.\nMarie a un contrat en alternance pour la rentrée.\nElle va travailler deux jours par semaine en entreprise.\nOù vas-tu faire ton stage de fin d'étude ?\nJe le fais dans une association.\nPaul cherche un emploi de maître-nageur pour cet été.\nIl peut aller au CIDJ en parler à un conseiller.\nAlors, comment se passe ta recherche de stage ?\nJ'ai un entretien la semaine prochaine avec mon futur maître de stage.\nSi tu veux trouver un job pour cet été, va directement dans les entreprises et fais des candidatures spontanées."
+      "audio": "/lib/audio/tcf/co/travail/10-travail-tu-as-trouvé-un-job.mp3",
+      "transcription": "Tu as trouvé un job pour cet été ?\nNon, je n'ai rien trouvé.\nEt c'est le site Studirama.\nIl y a plein d'offres d'emplois."
     },
     "questions": [
       {
@@ -10451,7 +10567,7 @@
         "choix": [
           {
             "id": "a",
-            "texte": "Des offres d'emploi",
+            "texte": "Des offres d’emploi",
             "correct": true
           },
           {
@@ -10466,10 +10582,27 @@
         "formes": {
           "lignes": {
             "nb_lignes": 1,
-            "reponse_modele": "Des offres d'emploi"
+            "reponse_modele": "Des offres d’emploi"
           }
         }
-      },
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ss-a2-s5b-co-1",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Dialogue 166",
+    "scenario": "travail",
+    "scene": "Le contrat en alternance",
+    "consigne": "Écoutez le document, puis répondez à la question.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/travail/05-travail-contrat-en-alternance.mp3",
+      "transcription": "Marie a un contrat en alternance pour la rentrée.\nElle va travailler deux jours par semaine en entreprise."
+    },
+    "questions": [
       {
         "enonce": "Combien de jours Marie travaille-t-elle en entreprise ?",
         "type_reponse": "qcm_texte",
@@ -10496,9 +10629,26 @@
             "reponse_modele": "Deux jours par semaine"
           }
         }
-      },
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ss-a2-s5b-co-2",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Dialogue 166",
+    "scenario": "travail",
+    "scene": "Le stage",
+    "consigne": "Écoutez le document, puis répondez à la question.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/travail/09-travail-stage-de-fin-d-étude.mp3",
+      "transcription": "Où vas-tu faire ton stage de fin d'étude ?\nJe le fais dans une association."
+    },
+    "questions": [
       {
-        "enonce": "Où se fait le stage de fin d'étude ?",
+        "enonce": "Où se fait le stage ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
@@ -10510,7 +10660,7 @@
           },
           {
             "id": "b",
-            "texte": "À l'hôpital"
+            "texte": "À l’hôpital"
           },
           {
             "id": "c",
@@ -10523,7 +10673,24 @@
             "reponse_modele": "Dans une association"
           }
         }
-      },
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ss-a2-s5b-co-3",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Dialogue 166",
+    "scenario": "travail",
+    "scene": "Le maître-nageur",
+    "consigne": "Écoutez le document, puis répondez à la question.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/travail/03-travail-chercher-emploi-maître-nageur.mp3",
+      "transcription": "Paul cherche un emploi de maître-nageur pour cet été.\nIl peut aller au CIDJ en parler à un conseiller."
+    },
+    "questions": [
       {
         "enonce": "Quel emploi Paul cherche-t-il ?",
         "type_reponse": "qcm_texte",
@@ -10550,9 +10717,26 @@
             "reponse_modele": "Maître-nageur"
           }
         }
-      },
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ss-a2-s5c-co-1",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Dialogue 166",
+    "scenario": "travail",
+    "scene": "L’entretien de stage",
+    "consigne": "Écoutez le document, puis répondez à la question.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/travail/08-travail-recherche-de-stage.mp3",
+      "transcription": "Alors, comment se passe ta recherche de stage ?\nJ’ai un entretien la semaine prochaine avec mon futur maître de stage."
+    },
+    "questions": [
       {
-        "enonce": "Quand a lieu l'entretien de stage ?",
+        "enonce": "Quand a lieu l’entretien ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
@@ -10577,9 +10761,26 @@
             "reponse_modele": "La semaine prochaine"
           }
         }
-      },
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-ss-a2-s5c-co-2",
+    "niveau": "A1-A2",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Soutien scolaire · Dialogue 166",
+    "scenario": "travail",
+    "scene": "Les candidatures",
+    "consigne": "Écoutez le document, puis répondez à la question.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/travail/06-travail-job-d-été.mp3",
+      "transcription": "Si tu veux trouver un job pour cet été, va directement dans les entreprises et fais des candidatures spontanées."
+    },
+    "questions": [
       {
-        "enonce": "Quel conseil est donné pour un job d'été ?",
+        "enonce": "Quel conseil est donné ?",
         "type_reponse": "qcm_texte",
         "points": 1,
         "melanger": false,
@@ -10606,9 +10807,7 @@
         }
       }
     ],
-    "consigne_supplementaire": null,
-    "scenario": "travail",
-    "scene": "Trouver un travail"
+    "consigne_supplementaire": null
   },
   {
     "id": "tcf-ss-a2-s6-co-1",

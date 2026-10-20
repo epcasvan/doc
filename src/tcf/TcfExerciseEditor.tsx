@@ -911,7 +911,7 @@ export function TcfExerciseEditor({
               </option>
             ))}
           </SelectBox>
-          <small className="muted">Choisissez un type : une série est tirée au hasard, avec ses questions.</small>
+          <small className="muted">Choisissez un type : un audio est tiré au hasard, avec ses questions.</small>
           {exercise.type_exercice !== 'images_a_reconnaitre' ? (
             <TextField
               label="Consigne (sinon consigne du type)"

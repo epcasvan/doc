@@ -2270,48 +2270,174 @@
     "id": "tcf-a1-s1-co-4",
     "niveau": "A0-A1",
     "competence": "CO",
-    "type_exercice": "association_images",
-    "theme": "Test blanc A1 · série 1 · À la médiathèque",
+    "type_exercice": "complet",
+    "theme": "Test blanc A1 · série 1 · À la bibliothèque",
     "scenario": "lieux-publics",
-    "scene": "À la bibliothèque",
-    "consigne": "Observez les situations et écoutez les 4 dialogues. Notez le numéro du dialogue (1 à 4) sous l’image. Attention : il y a 6 situations mais seulement 4 dialogues.",
-    "points": 8,
+    "scene": "L'inscription",
+    "consigne": "Écoutez le document, puis répondez à la question.",
     "support": {
-      "audio": "/lib/audio/tcf/co/bibliotheque/05-bibliothèque-quatre-dialogues.mp3",
-      "nb_dialogues": 4,
-      "transcription": "Bonjour, je voudrais m'inscrire, s'il vous plaît.\nVous avez une pièce d'identité ?\nOui, et j'ai aussi une carte d'étudiant.\nVous ne pouvez pas emprunter six DVD.\nAh bon ?\nC'est écrit sur le panneau ?\nNon, c'est six livres et 3 DVD.\nBonjour, je cherche une méthode pour apprendre le chinois.\nToutes nos méthodes sont classées au rayon 25 derrière vous.\nAh, merci.\nJe n'avais pas fait attention.\nC'est fermé ?\nMais ça fait longtemps ?\nNon, regardez le panneau.\nC'est une fermeture exceptionnelle.\nAh bon, merci.\nJe reviendrai demain."
+      "audio": "/lib/audio/tcf/co/bibliotheque/03-bibliothèque-inscription.mp3",
+      "transcription": "Bonjour, je voudrais m'inscrire, s'il vous plaît.\nVous avez une pièce d'identité ?\nOui, et j'ai aussi une carte d'étudiant."
     },
-    "questions": [],
-    "situations": [
+    "questions": [
       {
-        "id": "s1",
-        "image": "/lib/images/vocabulaire/actions/porte-fermee.webp",
-        "dialogue": 4
-      },
+        "enonce": "Que veut faire la personne ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "S'inscrire",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Emprunter un DVD"
+          },
+          {
+            "id": "c",
+            "texte": "Chercher un livre"
+          }
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "S'inscrire"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-a1-s1b-co-2",
+    "niveau": "A0-A1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Test blanc A1 · série 1 · À la bibliothèque",
+    "scenario": "lieux-publics",
+    "scene": "L'emprunt",
+    "consigne": "Écoutez le document, puis répondez à la question.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/bibliotheque/04-bibliothèque-règle-pour-emprunter.mp3",
+      "transcription": "Vous ne pouvez pas emprunter six DVD.\nAh bon ?\nC’est écrit sur le panneau ?\nNon, c’est six livres et 3 DVD."
+    },
+    "questions": [
       {
-        "id": "s2",
-        "image": "/lib/images/vocabulaire/actions/s-inscrire-au-guichet.webp",
-        "dialogue": 1
-      },
+        "enonce": "Combien de DVD peut-on emprunter ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "3",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "6"
+          },
+          {
+            "id": "c",
+            "texte": "10"
+          }
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "3"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-a1-s1b-co-3",
+    "niveau": "A0-A1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Test blanc A1 · série 1 · À la bibliothèque",
+    "scenario": "lieux-publics",
+    "scene": "La méthode de chinois",
+    "consigne": "Écoutez le document, puis répondez à la question.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/bibliotheque/01-bibliothèque-chercher-méthode-apprendre-chinois.mp3",
+      "transcription": "Bonjour, je cherche une méthode pour apprendre le chinois.\nToutes nos méthodes sont classées au rayon 25 derrière vous.\nAh, merci.\nJe n'avais pas fait attention."
+    },
+    "questions": [
       {
-        "id": "s3",
-        "image": "/lib/images/vocabulaire/actions/reunion.webp",
-        "dialogue": null
-      },
+        "enonce": "Que cherche la personne ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Une méthode de chinois",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "Une carte d’étudiant"
+          },
+          {
+            "id": "c",
+            "texte": "Un DVD"
+          }
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "Une méthode de chinois"
+          }
+        }
+      }
+    ],
+    "consigne_supplementaire": null
+  },
+  {
+    "id": "tcf-a1-s1b-co-1",
+    "niveau": "A0-A1",
+    "competence": "CO",
+    "type_exercice": "complet",
+    "theme": "Test blanc A1 · série 1 · À la bibliothèque",
+    "scenario": "lieux-publics",
+    "scene": "La fermeture",
+    "consigne": "Écoutez le document, puis répondez à la question.",
+    "support": {
+      "audio": "/lib/audio/tcf/co/bibliotheque/02-bibliothèque-fermeture-exceptionnelle.mp3",
+      "transcription": "C'est fermé ?\nMais ça fait longtemps ?\nNon, regardez le panneau.\nC'est une fermeture exceptionnelle.\nAh bon, merci.\nJe reviendrai demain."
+    },
+    "questions": [
       {
-        "id": "s4",
-        "image": "/lib/images/vocabulaire/actions/salle-informatique.webp",
-        "dialogue": null
-      },
-      {
-        "id": "s5",
-        "image": "/lib/images/vocabulaire/actions/emprunter-des-dvd.webp",
-        "dialogue": 2
-      },
-      {
-        "id": "s6",
-        "image": "/lib/images/vocabulaire/actions/indiquer-un-rayon.webp",
-        "dialogue": 3
+        "enonce": "Pourquoi est-ce fermé ?",
+        "type_reponse": "qcm_texte",
+        "points": 1,
+        "melanger": false,
+        "choix": [
+          {
+            "id": "a",
+            "texte": "C’est une fermeture exceptionnelle",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "texte": "C’est dimanche"
+          },
+          {
+            "id": "c",
+            "texte": "Il n’y a plus de livres"
+          }
+        ],
+        "formes": {
+          "lignes": {
+            "nb_lignes": 1,
+            "reponse_modele": "C’est une fermeture exceptionnelle"
+          }
+        }
       }
     ],
     "consigne_supplementaire": null
