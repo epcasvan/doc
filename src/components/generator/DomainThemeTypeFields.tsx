@@ -21,7 +21,6 @@ import type { GameTemplate } from '@/jeux/templates'
 import { TcfBankPicker } from '@/tcf/TcfExerciseEditor'
 import {
   TCF_NIVEAUX,
-  tcfDifficultyFromNiveau,
   tcfMenuLabel,
 } from '@/tcf/catalog'
 import type { TcfNiveau } from '@/tcf/types'
@@ -59,6 +58,7 @@ export type DomainThemeTypeFieldsProps = {
   accessAccount: string | null
   isTcf: boolean
   tcfNiveau: TcfNiveau
+  loadTcfSeries: (niveau: TcfNiveau) => void
   setPages: Dispatch<SetStateAction<PageConfig[]>>
   soutienSelection:
     | ReturnType<typeof resolveSoutienSelection>
@@ -109,6 +109,7 @@ export function DomainThemeTypeFields(p: DomainThemeTypeFieldsProps) {
     allowedDomains,
     isTcf,
     tcfNiveau,
+    loadTcfSeries,
     setPages,
     soutienSelection,
     activeBlock,
@@ -201,12 +202,8 @@ export function DomainThemeTypeFields(p: DomainThemeTypeFieldsProps) {
                   value={tcfNiveau}
                   onChange={(value) => {
                     const niveau = TCF_NIVEAUX.find((n) => n.id === value)?.id
-                    if (!niveau) return
-                    // Un test TCF a un seul niveau : il s’applique à toutes les pages.
-                    const difficulty = tcfDifficultyFromNiveau(niveau)
-                    setPages((current) =>
-                      current.map((page) => ({ ...page, difficulty, tcfBankId: undefined })),
-                    )
+                    if (!niveau || niveau === tcfNiveau) return
+                    loadTcfSeries(niveau)
                   }}
                 >
                   {TCF_NIVEAUX.map((n) => (

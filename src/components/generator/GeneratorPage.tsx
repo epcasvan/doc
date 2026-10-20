@@ -225,6 +225,7 @@ export function GeneratorPage({
     removePage,
     addExerciseOnPage,
     changeDomain,
+    loadTcfSeries,
     changeTopic,
     changeSoutienLetter,
     changeSoutienSound,
@@ -246,6 +247,7 @@ export function GeneratorPage({
     setPointsPerQuestion,
     setMode,
     setInstitutional,
+    setSeed,
   })
 
   const audio = useGeneratorAudio({
@@ -396,6 +398,7 @@ export function GeneratorPage({
     sheetTotalPoints,
     activePage,
     changeDomain,
+    loadTcfSeries,
     allowedDomains,
     accessAccount,
     activeBlock,

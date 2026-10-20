@@ -14,9 +14,10 @@ import {
 import {
   TCF_DOCUMENT_TITLE,
   TCF_DOMAIN,
-  TCF_SLOTS,
 } from '@/tcf/catalog'
-import { tcfConsignesPage, tcfPage } from '@/tcf/generate'
+import { buildTcfRandomTestPages } from '@/tcf/generate'
+import { randomSeed } from '@/math/rng'
+import type { TcfNiveau } from '@/tcf/types'
 import {
   buildTpmTestPages,
   isTpmDomain,
@@ -78,6 +79,7 @@ export type UsePageNavigationParams = {
   setPointsPerQuestion: Dispatch<SetStateAction<number>>
   setMode: Dispatch<SetStateAction<PreviewMode>>
   setInstitutional: Dispatch<SetStateAction<InstitutionalHeader>>
+  setSeed: Dispatch<SetStateAction<number>>
 }
 
 export function usePageNavigation({
@@ -98,7 +100,23 @@ export function usePageNavigation({
   setPointsPerQuestion,
   setMode,
   setInstitutional,
+  setSeed,
 }: UsePageNavigationParams) {
+  function loadTcfSeries(niveau: TcfNiveau) {
+    const nextSeed = randomSeed()
+    setSeed(nextSeed)
+    setSheetIndex(0)
+    setBlockIndex(0)
+    setPages(buildTcfRandomTestPages(niveau, nextSeed))
+    setEvalMode(true)
+    setPointsPerQuestion(1)
+    setMode('student')
+    setInstitutional((current) => ({
+      ...current,
+      course: 'Français',
+      documentTitle: TCF_DOCUMENT_TITLE,
+    }))
+  }
   /** Prochain type du même thème (même logique que « + Exercice »). */
   const createNextExerciseBlock = (): ExerciseBlock | null => {
     const currentTypes = typesForTopic(
@@ -261,16 +279,7 @@ export function usePageNavigation({
       return
     }
     if (next === TCF_DOMAIN) {
-      setSheetIndex(0)
-      setPages([tcfConsignesPage('A0-A1'), tcfPage(TCF_SLOTS[0]!.typeId, 'A0-A1')])
-      setEvalMode(true)
-      setPointsPerQuestion(1)
-      setMode('student')
-      setInstitutional((current) => ({
-        ...current,
-        course: 'Français',
-        documentTitle: TCF_DOCUMENT_TITLE,
-      }))
+      loadTcfSeries('A0-A1')
       return
     }
     const type = firstTypeFor(next)
@@ -509,6 +518,7 @@ export function usePageNavigation({
     removePage,
     addExerciseOnPage,
     changeDomain,
+    loadTcfSeries,
     changeTopic,
     changeSoutienLetter,
     changeSoutienSound,

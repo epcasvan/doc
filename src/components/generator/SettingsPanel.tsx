@@ -59,6 +59,7 @@ export type SettingsPanelProps = {
   accessAccount: string | null
   isTcf: boolean
   tcfNiveau: TcfNiveau
+  loadTcfSeries: (niveau: TcfNiveau) => void
   soutienSelection: DomainThemeTypeFieldsProps['soutienSelection']
   activeBlock: ExerciseBlock
   changeTopic: (topic: string) => void
@@ -185,6 +186,7 @@ export function SettingsPanel(p: SettingsPanelProps) {
           accessAccount={p.accessAccount}
           isTcf={p.isTcf}
           tcfNiveau={p.tcfNiveau}
+          loadTcfSeries={p.loadTcfSeries}
           setPages={p.setPages}
           soutienSelection={p.soutienSelection}
           activeBlock={p.activeBlock}
