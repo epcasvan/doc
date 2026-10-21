@@ -12,6 +12,7 @@ import { parseCalliLines } from '@/calligraphie/defaults'
 import { reshuffleGameContent } from '@/jeux/bank'
 import { isJeuxType } from '@/jeux/templates'
 import { TCF_DOMAIN } from '@/tcf/catalog'
+import { drawTcfSeries } from '@/tcf/draw-series'
 import { buildTcfRandomTestPages } from '@/tcf/generate'
 import type { TcfNiveau } from '@/tcf/types'
 import { buildWorksheets } from '@/math/generate'
@@ -312,6 +313,15 @@ export function useGenerateActions({
             gameEntries: reshuffled.gameEntries,
             gameText: reshuffled.gameText,
             gameSelectedIds: reshuffled.gameSelectedIds,
+          }
+        } else if (page.domain === TCF_DOMAIN && block.tcfExercise) {
+          const pinned = block.tcfExercise
+          patch = {
+            ...patch,
+            tcfExercise: drawTcfSeries(pinned.niveau, pinned.competence, pinned.type_exercice),
+            tcfBankId: undefined,
+            libreItems: undefined,
+            libreInstruction: undefined,
           }
         } else if (
           page.domain === TCF_DOMAIN ||

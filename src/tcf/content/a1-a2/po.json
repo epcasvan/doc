@@ -18,7 +18,68 @@
         "Comment se passe une journée normale pour vous ?",
         "Qu’avez-vous fait le week-end dernier ?",
         "Quels sont vos loisirs ?",
-        "Quels sont vos projets pour l’année prochaine ?"
+        "Comment vous déplacez-vous en ville ?",
+        "Qu’est-ce que vous aimez en Suisse ?",
+        "Quels sont vos projets pour l’année prochaine ?",
+        "Qu’est-ce que vous faites quand vous avez un jour de congé ?"
+      ],
+      "echanges": [
+        {
+          "question": "Bonjour ! Comment vous appelez-vous ? Quel est votre nom de famille ?",
+          "reponse": "Bonjour. Je m’appelle Malik Ferrier. Ferrier, F, E, deux R, I, E, R."
+        },
+        {
+          "question": "Quelle est votre nationalité ? Parlez-moi de votre pays.",
+          "reponse": "Je suis tunisien. Mon pays est au bord de la mer. Il fait chaud, et on mange beaucoup de poisson."
+        },
+        {
+          "question": "Depuis quand habitez-vous en Suisse ?",
+          "reponse": "J’habite en Suisse depuis trois ans. Je suis arrivé au mois de mars."
+        },
+        {
+          "question": "Où habitez-vous ? Décrivez votre logement.",
+          "reponse": "J’habite à Yverdon, dans un deux-pièces. Il y a une petite cuisine et un balcon."
+        },
+        {
+          "question": "Avec qui vivez-vous ? Parlez-moi de votre famille.",
+          "reponse": "Je vis avec ma femme. Nos parents habitent encore en Tunisie. On les appelle le dimanche."
+        },
+        {
+          "question": "Quelles langues parlez-vous ? Pourquoi apprenez-vous le français ?",
+          "reponse": "Je parle l’arabe et le français. J’apprends le français pour le travail et pour les rendez-vous à l’école de ma nièce."
+        },
+        {
+          "question": "Qu’est-ce que vous faites dans la vie ? Quel métier avez-vous fait avant ?",
+          "reponse": "Je suis magasinier dans un dépôt. Avant, en Tunisie, j’étais vendeur dans une quincaillerie."
+        },
+        {
+          "question": "Comment se passe une journée normale pour vous ?",
+          "reponse": "Je me lève à six heures. Je travaille jusqu’à seize heures. Le soir, je prépare le repas et je lis un peu."
+        },
+        {
+          "question": "Qu’avez-vous fait le week-end dernier ?",
+          "reponse": "Samedi, j’ai fait les courses. Dimanche, nous sommes allés voir un match de football avec des amis."
+        },
+        {
+          "question": "Quels sont vos loisirs ?",
+          "reponse": "J’aime marcher, écouter de la musique et cuisiner le couscous le vendredi."
+        },
+        {
+          "question": "Comment vous déplacez-vous en ville ?",
+          "reponse": "Je prends le train pour le travail et le vélo pour les petites courses."
+        },
+        {
+          "question": "Qu’est-ce que vous aimez en Suisse ?",
+          "reponse": "J’aime les lacs et le calme. Au début, l’hiver était difficile, mais je m’habitue."
+        },
+        {
+          "question": "Quels sont vos projets pour l’année prochaine ?",
+          "reponse": "Je voudrais passer un diplôme et trouver un poste plus stable. Je veux aussi inviter ma mère."
+        },
+        {
+          "question": "Qu’est-ce que vous faites quand vous avez un jour de congé ?",
+          "reponse": "Je range l’appartement, puis je vais au café lire le journal. Parfois je visite une autre ville en train."
+        }
       ]
     },
     "questions": []
@@ -45,11 +106,14 @@
             "/lib/images/vocabulaire/ecole-bureau/examen.webp"
           ],
           "exemples_questions": [
-            "Comment s’appelle votre école ?",
-            "À quelle heure commencent les cours ?",
-            "Qu’est-ce que vous faites pendant la récréation ?",
-            "Combien d’heures de devoirs avez-vous par semaine ?",
-            "Quelle matière aimez-vous le moins et pourquoi ?"
+            "Est-ce que vous aimez l’école ?",
+            "Aimez-vous l’école ?",
+            "Qui aime l’école avec vous ?",
+            "Quand est-ce que vous parlez de l’école ?",
+            "Où allez-vous pour l’école ?",
+            "Comment est-ce que vous organisez l’école ?",
+            "Combien de temps consacrez-vous à l’école ?",
+            "Quel moment préférez-vous pour l’école ?"
           ]
         },
         {
@@ -65,11 +129,14 @@
             "/lib/images/vocabulaire/loisirs/pique-nique.webp"
           ],
           "exemples_questions": [
-            "Que faites-vous pendant votre temps libre ?",
-            "Quel est le dernier film que vous avez vu ?",
-            "Vous allez souvent à des concerts ?",
-            "Avec qui sortez-vous le samedi ?",
-            "Quel livre me conseillez-vous ?"
+            "Est-ce que vous aimez les loisirs ?",
+            "Aimez-vous les loisirs ?",
+            "Qui aime les loisirs avec vous ?",
+            "Quand est-ce que vous parlez des loisirs ?",
+            "Où allez-vous pour les loisirs ?",
+            "Comment est-ce que vous organisez les loisirs ?",
+            "Combien de temps consacrez-vous aux loisirs ?",
+            "Quel moment préférez-vous pour les loisirs ?"
           ]
         },
         {
@@ -85,11 +152,14 @@
             "/lib/images/vocabulaire/maison/escalier.webp"
           ],
           "exemples_questions": [
-            "Combien de pièces y a-t-il dans votre appartement ?",
-            "Comment est votre chambre ?",
-            "Vous connaissez vos voisins ?",
-            "Qu’est-ce que vous aimez dans votre quartier ?",
-            "Qui fait le rangement chez vous ?"
+            "Est-ce que vous aimez la maison ?",
+            "Aimez-vous la maison ?",
+            "Qui aime la maison avec vous ?",
+            "Quand est-ce que vous parlez de la maison ?",
+            "Où allez-vous pour la maison ?",
+            "Comment est-ce que vous organisez la maison ?",
+            "Combien de temps consacrez-vous à la maison ?",
+            "Quel moment préférez-vous pour la maison ?"
           ]
         },
         {
@@ -105,11 +175,14 @@
             "/lib/images/vocabulaire/ville/terrasse.webp"
           ],
           "exemples_questions": [
-            "Quel est votre restaurant préféré ?",
-            "Qu’est-ce que vous commandez d’habitude ?",
-            "Il faut réserver une table ?",
-            "Le plat du jour coûte combien ?",
-            "Vous laissez un pourboire au serveur ?"
+            "Est-ce que vous aimez au restaurant ?",
+            "Aimez-vous au restaurant ?",
+            "Qui aime au restaurant avec vous ?",
+            "Quand est-ce que vous parlez de au restaurant ?",
+            "Où allez-vous pour au restaurant ?",
+            "Comment est-ce que vous organisez au restaurant ?",
+            "Combien de temps consacrez-vous à au restaurant ?",
+            "Quel moment préférez-vous pour au restaurant ?"
           ]
         },
         {
@@ -125,11 +198,14 @@
             "/lib/images/vocabulaire/sports/randonnée.webp"
           ],
           "exemples_questions": [
-            "Où êtes-vous allé pendant les dernières vacances ?",
-            "Comment avez-vous voyagé ?",
-            "Qu’est-ce que vous mettez dans votre valise ?",
-            "Vous préférez le camping ou l’hôtel ?",
-            "Quel pays voulez-vous visiter ?"
+            "Est-ce que vous aimez les vacances ?",
+            "Aimez-vous les vacances ?",
+            "Qui aime les vacances avec vous ?",
+            "Quand est-ce que vous parlez des vacances ?",
+            "Où allez-vous pour les vacances ?",
+            "Comment est-ce que vous organisez les vacances ?",
+            "Combien de temps consacrez-vous aux vacances ?",
+            "Quel moment préférez-vous pour les vacances ?"
           ]
         },
         {
@@ -145,11 +221,14 @@
             "/lib/images/vocabulaire/sports/course.webp"
           ],
           "exemples_questions": [
-            "Quel sport pratiquez-vous ?",
-            "Combien de fois par semaine vous entraînez-vous ?",
-            "Vous jouez dans une équipe ?",
-            "Vous regardez les matchs à la télévision ?",
-            "Depuis quand faites-vous ce sport ?"
+            "Est-ce que vous aimez le sport ?",
+            "Aimez-vous le sport ?",
+            "Qui aime le sport avec vous ?",
+            "Quand est-ce que vous parlez du sport ?",
+            "Où allez-vous pour le sport ?",
+            "Comment est-ce que vous organisez le sport ?",
+            "Combien de temps consacrez-vous au sport ?",
+            "Quel moment préférez-vous pour le sport ?"
           ]
         },
         {
@@ -165,11 +244,14 @@
             "/lib/images/vocabulaire/famille-personnes/enfant.webp"
           ],
           "exemples_questions": [
-            "Combien de personnes y a-t-il dans votre famille ?",
-            "Que font vos parents comme métier ?",
-            "Vous voyez souvent vos cousins ?",
-            "Comment fêtez-vous les anniversaires ?",
-            "Qu’est-ce que vous faites ensemble le dimanche ?"
+            "Est-ce que vous aimez la famille ?",
+            "Aimez-vous la famille ?",
+            "Qui aime la famille avec vous ?",
+            "Quand est-ce que vous parlez de la famille ?",
+            "Où allez-vous pour la famille ?",
+            "Comment est-ce que vous organisez la famille ?",
+            "Combien de temps consacrez-vous à la famille ?",
+            "Quel moment préférez-vous pour la famille ?"
           ]
         },
         {
@@ -185,11 +267,14 @@
             "/lib/images/vocabulaire/ville/arrêt-de-bus.webp"
           ],
           "exemples_questions": [
-            "Comment allez-vous à l’école ou au travail ?",
-            "Combien de temps dure le trajet ?",
-            "Vous avez un abonnement de bus ?",
-            "Le train est souvent en retard ?",
-            "Où est l’arrêt le plus proche de chez vous ?"
+            "Est-ce que vous aimez les transports ?",
+            "Aimez-vous les transports ?",
+            "Qui aime les transports avec vous ?",
+            "Quand est-ce que vous parlez des transports ?",
+            "Où allez-vous pour les transports ?",
+            "Comment est-ce que vous organisez les transports ?",
+            "Combien de temps consacrez-vous aux transports ?",
+            "Quel moment préférez-vous pour les transports ?"
           ]
         },
         {
@@ -205,11 +290,14 @@
             "/lib/images/vocabulaire/ville/fontaine.webp"
           ],
           "exemples_questions": [
-            "Qu’est-ce qu’il y a à visiter dans votre ville ?",
-            "Le marché a lieu quel jour ?",
-            "Comment va-t-on au centre-ville ?",
-            "Vous allez souvent au musée ?",
-            "Qu’est-ce qui manque dans votre quartier ?"
+            "Est-ce que vous aimez la ville ?",
+            "Aimez-vous la ville ?",
+            "Qui aime la ville avec vous ?",
+            "Quand est-ce que vous parlez de la ville ?",
+            "Où allez-vous pour la ville ?",
+            "Comment est-ce que vous organisez la ville ?",
+            "Combien de temps consacrez-vous à la ville ?",
+            "Quel moment préférez-vous pour la ville ?"
           ]
         },
         {
@@ -225,11 +313,14 @@
             "/lib/images/vocabulaire/actions/soldes-de-chaussures.webp"
           ],
           "exemples_questions": [
-            "Où faites-vous vos courses ?",
-            "Vous faites une liste avant de partir ?",
-            "Quel est le prix d’un kilo de pommes ?",
-            "Vous payez en espèces ou par carte ?",
-            "Quelle taille faites-vous pour un pull ?"
+            "Est-ce que vous aimez les courses ?",
+            "Aimez-vous les courses ?",
+            "Qui aime les courses avec vous ?",
+            "Quand est-ce que vous parlez des courses ?",
+            "Où allez-vous pour les courses ?",
+            "Comment est-ce que vous organisez les courses ?",
+            "Combien de temps consacrez-vous aux courses ?",
+            "Quel moment préférez-vous pour les courses ?"
           ]
         },
         {
@@ -245,11 +336,14 @@
             "/lib/images/vocabulaire/meteo/arc-en-ciel.webp"
           ],
           "exemples_questions": [
-            "Quel temps fait-il aujourd’hui ?",
-            "Quelle saison préférez-vous et pourquoi ?",
-            "Que faites-vous quand il pleut ?",
-            "Quelle température fait-il en été chez vous ?",
-            "Vous avez peur des orages ?"
+            "Est-ce que vous aimez la météo ?",
+            "Aimez-vous la météo ?",
+            "Qui aime la météo avec vous ?",
+            "Quand est-ce que vous parlez de la météo ?",
+            "Où allez-vous pour la météo ?",
+            "Comment est-ce que vous organisez la météo ?",
+            "Combien de temps consacrez-vous à la météo ?",
+            "Quel moment préférez-vous pour la météo ?"
           ]
         },
         {
@@ -265,11 +359,14 @@
             "/lib/images/vocabulaire/metiers/boulanger.webp"
           ],
           "exemples_questions": [
-            "Quel métier voulez-vous faire plus tard ?",
-            "Vous avez déjà fait un stage ?",
-            "Quels sont vos horaires de travail ?",
-            "Comment sont vos collègues ?",
-            "Vous portez un uniforme au travail ?"
+            "Est-ce que vous aimez le travail ?",
+            "Aimez-vous le travail ?",
+            "Qui aime le travail avec vous ?",
+            "Quand est-ce que vous parlez du travail ?",
+            "Où allez-vous pour le travail ?",
+            "Comment est-ce que vous organisez le travail ?",
+            "Combien de temps consacrez-vous au travail ?",
+            "Quel moment préférez-vous pour le travail ?"
           ]
         },
         {
@@ -285,11 +382,14 @@
             "/lib/images/vocabulaire/sante/thermometre.webp"
           ],
           "exemples_questions": [
-            "Vous allez souvent chez le médecin ?",
-            "Que faites-vous quand vous avez de la fièvre ?",
-            "Comment prenez-vous rendez-vous chez le dentiste ?",
-            "Combien d’heures dormez-vous par nuit ?",
-            "Qu’est-ce que vous faites pour rester en forme ?"
+            "Est-ce que vous aimez la santé ?",
+            "Aimez-vous la santé ?",
+            "Qui aime la santé avec vous ?",
+            "Quand est-ce que vous parlez de la santé ?",
+            "Où allez-vous pour la santé ?",
+            "Comment est-ce que vous organisez la santé ?",
+            "Combien de temps consacrez-vous à la santé ?",
+            "Quel moment préférez-vous pour la santé ?"
           ]
         },
         {
@@ -305,11 +405,14 @@
             "/lib/images/vocabulaire/metiers/vétérinaire.webp"
           ],
           "exemples_questions": [
-            "Quel animal avez-vous chez vous ?",
-            "Qui promène le chien ?",
-            "Qu’est-ce que votre animal mange ?",
-            "Vous êtes déjà allé dans une ferme ?",
-            "Combien coûte une visite chez le vétérinaire ?"
+            "Est-ce que vous aimez les animaux ?",
+            "Aimez-vous les animaux ?",
+            "Qui aime les animaux avec vous ?",
+            "Quand est-ce que vous parlez des animaux ?",
+            "Où allez-vous pour les animaux ?",
+            "Comment est-ce que vous organisez les animaux ?",
+            "Combien de temps consacrez-vous aux animaux ?",
+            "Quel moment préférez-vous pour les animaux ?"
           ]
         },
         {
@@ -324,11 +427,14 @@
             "/lib/images/vocabulaire/objets/cadeau.webp"
           ],
           "exemples_questions": [
-            "Comment avez-vous fêté votre dernier anniversaire ?",
-            "Combien d’invités y avait-il ?",
-            "Quel cadeau aimeriez-vous recevoir ?",
-            "Qui prépare le repas de fête ?",
-            "Vous portez un costume pour le carnaval ?"
+            "Est-ce que vous aimez les fêtes ?",
+            "Aimez-vous les fêtes ?",
+            "Qui aime les fêtes avec vous ?",
+            "Quand est-ce que vous parlez des fêtes ?",
+            "Où allez-vous pour les fêtes ?",
+            "Comment est-ce que vous organisez les fêtes ?",
+            "Combien de temps consacrez-vous aux fêtes ?",
+            "Quel moment préférez-vous pour les fêtes ?"
           ]
         }
       ]

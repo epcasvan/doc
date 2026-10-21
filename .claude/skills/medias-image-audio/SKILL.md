@@ -127,8 +127,11 @@ de dialogue / interaction), en préparation **fide** ou esprit **DELF**
 
 ### Spécification visuelle
 
-1. **Style** : illustration ou photo **réaliste et sobre** ; traits propres ;
-   couleurs naturelles ; pas de manga, pas de cartoon enfantin.
+1. **Style** : illustration **réaliste peinte**, comme la planche « À la poste »
+   (`public/lib/images/comprehension/po-a1/a-la-poste-4.webp`) : scène semi-illustrée,
+   volumes et lumières crédibles, traits propres, couleurs naturelles.
+   Pas une photographie, pas un fond blanc studio, pas de manga, pas de cartoon enfantin.
+   Toute nouvelle image PO, et toute image PO régénérée, suit **uniquement** ce régime.
 2. **Format** : ratio **4:3** (carré large) — viser **800 × 600** px WebP ~85,
    cohérent avec le stock `public/lib/images/`.
 3. **Lieu** : Suisse romande du quotidien, authentique, non touristique.
@@ -149,14 +152,15 @@ personnages si le support l’exige, sans basculer en style enfantin).
 Reformulation ClairFLE à préfixer **avant** la description de la scène
 (ne pas coller un brief externe non cadré) :
 
-> Illustration réaliste et sobre pour adultes apprenant le français (niveau A2),
-> style manuel de langue moderne, traits propres, couleurs naturelles,
-> format 4:3. Situation du quotidien en Suisse romande, authentique et non
-> touristique : lieux ordinaires (guichet, commerce, bureau, cage d’escalier,
-> cuisine, salle d’attente). Personnages adultes, de tous âges, origines et
-> corps variés, traités avec respect, jamais caricaturés. Deux personnes
-> maximum au premier plan, positions et gestes qui montrent clairement qui
-> fait quoi et pourquoi. Peu d’objets, tous utiles à la tâche communicative.
+> Illustration réaliste peinte pour adultes apprenant le français (niveau A2),
+> style manuel de langue moderne du même registre que la planche « À la poste »
+> (scène semi-illustrée, pas une photo, pas un fond blanc). Traits propres,
+> couleurs naturelles, format 4:3. Situation du quotidien en Suisse romande,
+> authentique et non touristique : lieux ordinaires (guichet, commerce, bureau,
+> cage d’escalier, cuisine, salle d’attente). Personnages adultes, de tous âges,
+> origines et corps variés, traités avec respect, jamais caricaturés. Deux
+> personnes maximum au premier plan, positions et gestes qui montrent clairement
+> qui fait quoi et pourquoi. Peu d’objets, tous utiles à la tâche communicative.
 > Aucun texte, lettre, chiffre ni logo. Pas de chalet, vache ou drapeau en
 > décor, pas de ton enfantin.
 >

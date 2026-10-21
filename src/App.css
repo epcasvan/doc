@@ -1704,7 +1704,8 @@ html,body,#root{
   }
   .sheet-preview-wrap{display:none!important}
   .print-only-sheets{display:block!important}
-  .print-only-sheets .worksheet-sheet{width:210mm;min-height:297mm;max-height:297mm;height:297mm;margin:0;transform:none;border:0;box-shadow:none;display:flex;flex-direction:column;overflow:hidden;position:static}
+  .print-only-sheets .worksheet-sheet{width:210mm;min-height:297mm;max-height:297mm;height:297mm;margin:0;transform:none;border:0;box-shadow:none;display:flex;flex-direction:column;overflow:hidden;position:static;break-after:page;page-break-after:always}
+  .print-only-sheets .worksheet-sheet:last-child{break-after:auto;page-break-after:auto}
   /* Impression : marges miroir (reliure 2,5 cm). */
   .print-only-sheets .worksheet-sheet.sheet-odd{padding:12mm 1cm 10mm 2.5cm!important}
   .print-only-sheets .worksheet-sheet.sheet-even{padding:12mm 2.5cm 10mm 1cm!important}
@@ -4008,7 +4009,7 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
 .tcf-replique .tcf-ligne{flex:1}
 .tcf-variante{font-style:italic;color:var(--muted)}
 .tcf-po{display:flex;flex-direction:column;gap:8px}
-.tcf-po-theme{margin:0;font-weight:700}
+.tcf-po-theme{margin:0;font-weight:700;text-align:center}
 .tcf-mots{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
 .tcf-mot{padding:6px 14px;border:1.5px solid var(--ink)}
 .tcf-sequence{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
@@ -4039,24 +4040,46 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
 .tcf-grille th,.tcf-grille td{border:1px solid var(--ink);padding:4px 10px;text-align:left}
 .tcf-grille th{font-weight:600}
 .tcf-grille-points{width:32%;text-align:center!important;font-weight:700}
-.tcf-po-questions{margin:0;padding-left:1.2em;font-weight:600}
+.tcf-po-questions{margin:0 0 50px;padding-left:1.2em;font-weight:600}
 .tcf-po-images{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
 .tcf-po-images .tcf-image{height:24mm}
 .tcf-trois-themes{
-  gap:8mm;flex:1 1 auto;min-height:0;
-  display:grid;grid-template-rows:repeat(3,minmax(0,1fr))
+  gap:6mm;flex:1 1 auto;min-height:0;
+  display:flex;flex-direction:column;justify-content:flex-start
 }
 .tcf-po-theme-block{
-  display:flex;flex-direction:column;gap:4px;justify-content:center;
-  min-height:0;padding:3.5mm 4mm;border:1.5px solid var(--ink);box-sizing:border-box
+  display:flex;flex-direction:column;gap:4px;justify-content:flex-start;
+  flex:0 0 auto;min-height:0;padding:50px 4mm;border:1.5px solid var(--ink);box-sizing:border-box
 }
+.tcf-po-theme-block .tcf-po-theme{margin-bottom:26px}
 .tcf-trois-themes .tcf-po-images .tcf-image{height:28mm;object-fit:contain}
 .tcf-exemples{margin:2px 0 0;padding:4px 10px 4px 2em;font-size:.88em}
+.tcf-exemples.is-two-cols{columns:2;column-gap:8mm}
+.tcf-exemples.is-two-cols li{break-inside:avoid}
 .tcf-entretien-questions{columns:2;column-gap:10mm}
 .tcf-interaction .tcf-text{margin:2px 0}
+.tcf-interaction-sheet .sheet-body{display:flex;flex-direction:column;gap:4mm;min-height:0}
+.tcf-interaction-sheet .tcf-text{margin:0}
+.tcf-interaction-cols{flex:1 1 auto;display:grid;grid-template-columns:1fr 1fr;gap:8mm;min-height:0}
+.tcf-interaction-cols section{display:flex;flex-direction:column;min-height:0}
+.tcf-interaction-cols ul{
+  flex:1 1 auto;display:flex;flex-direction:column;justify-content:space-between;
+  margin:4mm 0 0;padding-left:1.1em
+}
+.tcf-interaction-cols li{break-inside:avoid}
+.tcf-entretien-dialogue{display:flex;flex-direction:column;flex:1 1 auto;min-height:0}
+.tcf-entretien-dialogue ol{
+  list-style:none;margin:4mm 0 0;padding:0;flex:1 1 auto;
+  display:flex;flex-direction:column;justify-content:space-between
+}
+.tcf-entretien-dialogue p{margin:0 0 1mm}
 /* PO : 4 scènes, 50 px entre chaque image. */
-.tcf-timeline{list-style:none;margin:4px 0 6px;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:50px}
+.tcf-timeline{list-style:none;margin:50px 0 6px;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:50px}
 .tcf-timeline-step{position:relative}
+.tcf-timeline-step:nth-child(2){margin-top:50px}
+.tcf-timeline-step:nth-child(3){margin-top:100px}
+.tcf-timeline-step:nth-child(4){margin-top:150px}
+.tcf-po .tcf-image.is-large{margin-top:50px}
 .tcf-timeline-step .tcf-image{height:42mm;width:100%;object-fit:cover;border:1px solid var(--ink)}
 .tcf-timeline.is-compact .tcf-timeline-step .tcf-image{height:28mm}
 .tcf-timeline-num{position:absolute;top:-2mm;left:-2mm;z-index:1;width:6mm;height:6mm;border-radius:50%;background:#fff;border:1.5px solid var(--ink);display:grid;place-items:center;font-weight:800;font-size:10pt}

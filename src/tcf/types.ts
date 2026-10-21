@@ -229,8 +229,12 @@ export type TcfPoMotsTheme = TcfBase<
   'mots_theme',
   { theme: string; mots: string[]; exemples_questions: string[]; audio?: string }
 >
-/** Entretien dirigé : consigne sur la fiche, questions de l’examinateur au corrigé. */
-export type TcfPoEntretien = TcfBase<'PO', 'entretien', { questions: string[] }>
+/** Entretien dirigé : questions sur la fiche, échange examinateur / candidat au corrigé. */
+export type TcfPoEntretien = TcfBase<
+  'PO',
+  'entretien',
+  { questions: string[]; echanges?: { question: string; reponse: string }[] }
+>
 export type TcfPoTheme = { theme: string; images: string[]; exemples_questions: string[] }
 /** Trois thèmes tirés au hasard (graine), 4 images chacun : l’élève pose des questions. */
 export type TcfPoTroisThemes = TcfBase<'PO', 'trois_themes', { themes: TcfPoTheme[] }>

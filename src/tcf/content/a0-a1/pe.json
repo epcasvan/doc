@@ -112,7 +112,7 @@
         "a": "monami@email.com",
         "objet": "Repas chez moi"
       },
-      "reponse_modele": "Salut Karim,\nJe t’invite à dîner chez moi samedi à 19 heures. J’habite au 5 rue du Lac. Tu prends le bus 2 et tu descends à l’arrêt « Gare ». Ma maison est blanche, à côté de la boulangerie. Qu’est-ce que tu aimes manger ? Tu aimes le poulet ?\nÀ samedi !\nAmina"
+      "reponse_modele": "Salut Karim,\nJe t’invite à dîner chez moi samedi à 19 heures. J’habite au 5 rue du Lac. Je t’explique le chemin : tu prends le bus 2 et tu descends à l’arrêt « Gare ». Ma maison est blanche, à côté de la boulangerie. Qu’est-ce que tu aimes manger ? Tu aimes le poulet ?\nÀ samedi !\nAmina"
     },
     "questions": [],
     "consigne_supplementaire": "Vous lui donnez le jour et l’heure.\nVous lui expliquez comment trouver votre maison.\nVous lui demandez ce qu’il aime manger."
@@ -2004,7 +2004,7 @@
       "nb_mots": {
         "min": 40
       },
-      "reponse_modele": "Salut Marc,\nTu veux manger avec moi demain midi ? Je te propose le restaurant La Terrasse, à côté du bureau. Rendez-vous à 12 h 15 devant l’entrée. Moi, je veux prendre le plat du jour : des filets de perche avec des frites. Ils sont délicieux ! Téléphone-moi pour confirmer, s’il te plaît.\nAlex"
+      "reponse_modele": "Salut Marc,\nJe t’invite à manger avec moi demain midi. Je te propose le restaurant La Terrasse, à côté du bureau. Rendez-vous à 12 h 15 devant l’entrée. Moi, je veux prendre le plat du jour : des filets de perche avec des frites. Ils sont délicieux ! Téléphone-moi pour confirmer, s’il te plaît.\nAlex"
     },
     "questions": [],
     "consigne_supplementaire": null
@@ -2024,7 +2024,7 @@
       "nb_mots": {
         "min": 40
       },
-      "reponse_modele": "Salut Clara,\nUn nouveau musée vient d’ouvrir dans notre ville : le musée de la photo ! Tu veux le visiter avec moi ce dimanche ? Rendez-vous à 14 h devant l’entrée. Le billet coûte 12 francs. Après la visite, qu’est-ce que tu veux faire ? Boire un café ou faire une promenade ?\nBises,\nSam"
+      "reponse_modele": "Salut Clara,\nUn nouveau musée vient d’ouvrir dans notre ville : le musée de la photo ! Je t’invite à le visiter avec moi ce dimanche. Rendez-vous à 14 h devant l’entrée. Le billet coûte 12 francs. Après la visite, qu’est-ce que tu veux faire ? Boire un café ou faire une promenade ?\nBises,\nSam"
     },
     "questions": [],
     "consigne_supplementaire": null
@@ -2104,7 +2104,7 @@
       "nb_mots": {
         "min": 40
       },
-      "reponse_modele": "Salut Paolo,\nTu veux passer un week-end chez moi, à Lausanne ? Le samedi, nous pouvons visiter la cathédrale et faire du vélo au bord du lac. Le soir, je te propose de manger une fondue au restaurant. Le dimanche, nous pouvons prendre le bateau pour Montreux ou aller au Musée olympique.\nÀ bientôt,\nSam"
+      "reponse_modele": "Salut Paolo,\nJe t’invite à passer un week-end chez moi, à Lausanne. Le samedi, nous pouvons visiter la cathédrale et faire du vélo au bord du lac. Le soir, je te propose de manger une fondue au restaurant. Le dimanche, nous pouvons prendre le bateau pour Montreux ou aller au Musée olympique.\nÀ bientôt,\nSam"
     },
     "questions": [],
     "consigne_supplementaire": null
@@ -2995,7 +2995,7 @@
       "nb_mots": {
         "min": 40
       },
-      "reponse_modele": "Bonjour Lucas,\nJ’habite à Nantes, une grande ville de l’ouest de la France. Il y a un beau château, une rivière et beaucoup de parcs. On peut faire du vélo, aller au cinéma ou visiter le musée. Le samedi, je vais souvent au marché avec mes parents. Et ta ville, comment est-elle ?\nÀ bientôt,\nNoa",
+      "reponse_modele": "Bonjour Lucas,\nJ’habite à Nantes, une grande ville de l’ouest de la France. Il y a un beau château, une rivière et beaucoup de parcs. Je t’explique ce qu’on peut y faire : on peut faire du vélo, aller au cinéma ou visiter le musée. Le samedi, je vais souvent au marché avec mes parents. Et ta ville, comment est-elle ?\nÀ bientôt,\nNoa",
       "email": {
         "a": "moncorrespondant@abcdnet.ch",
         "objet": "Ma ville"
@@ -3163,7 +3163,7 @@
       "nb_mots": {
         "min": 40
       },
-      "reponse_modele": "Salut Max,\nTu veux passer le week-end chez moi ? On se retrouve vendredi à 18 h à la gare. Samedi, on va faire du vélo au bord du lac et le soir, on va regarder un film. Dimanche, on va aller à la piscine avec mon frère. Ça va être super !\nÀ bientôt,\nSam",
+      "reponse_modele": "Salut Max,\nJe t’invite à passer le week-end chez moi. On se retrouve vendredi à 18 h à la gare. Samedi, on va faire du vélo au bord du lac et le soir, on va regarder un film. Dimanche, on va aller à la piscine avec mon frère. Ça va être super !\nÀ bientôt,\nSam",
       "email": {
         "a": "monami@mail.ch",
         "objet": "Un week-end chez moi"

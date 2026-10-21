@@ -1,6 +1,8 @@
 import type { RefObject } from 'react'
 import { FormesPalette } from '@/components/generator/FormesPalette'
 import { WorksheetSheet } from '@/components/generator/WorksheetSheet'
+import { InteractionCorrigeSheet } from '@/components/tcf/InteractionCorrigeSheet'
+import { imageInteractionsOf } from '@/tcf/interaction-lines'
 import { isOralComprehensionExercise, isProblemExercise } from '@/components/generator/page-helpers'
 import type { InstitutionalHeader } from '@/components/math/PrintDocumentChrome'
 import type {
@@ -315,7 +317,7 @@ export function ResultPanel({
             </div>
             <div className="sheet-preview-wrap no-print-nav">
               <div className="sheet-preview-cluster">
-                <div className={`sheet-preview-row${jeuxPreviewSheets && jeuxPreviewSheets.length > 1 ? ' is-jeux-duplex' : ''}`}>
+                <div className={`sheet-preview-row${jeuxPreviewSheets && jeuxPreviewSheets.length > 1 ? ' is-jeux-duplex' : ''}${sheetProps.mode === 'answers' && imageInteractionsOf(previewSheet).length ? ' is-po-stack' : ''}`}>
                   {jeuxPreviewSheets && jeuxPreviewSheets.length > 1 ? (
                     <div className="sheet-stage is-jeux-stack">
                       {jeuxPreviewSheets.map(({ sheet, index }, stackIdx) => (
@@ -368,6 +370,13 @@ export function ResultPanel({
                         {...sheetProps}
                       />
                     </div>
+                    {sheetProps.mode === 'answers'
+                      ? imageInteractionsOf(previewSheet).map((exercise) => (
+                          <div className="a4-frame" key={`po-interaction-${exercise.id}`}>
+                            <InteractionCorrigeSheet exercise={exercise} />
+                          </div>
+                        ))
+                      : null}
                   </div>
                   )}
                   {isFormes && activeBlock.coordLibre ? (
@@ -409,6 +418,11 @@ export function ResultPanel({
                       mode="answers"
                     />
                   ))}
+              {previewWorksheets.flatMap((page) =>
+                imageInteractionsOf(page).map((exercise) => (
+                  <InteractionCorrigeSheet key={`print-interaction-${exercise.id}`} exercise={exercise} />
+                )),
+              )}
             </div>
           </section>
 
