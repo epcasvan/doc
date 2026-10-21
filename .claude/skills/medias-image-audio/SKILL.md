@@ -3,8 +3,8 @@ name: medias-image-audio
 description: >-
   Génère ou complète les médias ClairFLE : (1) images vocabulaire réalistes
   (fond blanc, sujet centré, 800×600 WebP) et audios TTS (DeniseNeural −25 %) ;
-  (2) illustrations de scènes pour la production orale TCF / préparation
-  fide·DELF (décors quotidiens Suisse romande, pas de fond blanc studio).
+  (2) scènes PO TCF / fide·DELF en bande dessinée réaliste (réf.
+  comprehension/_style-ref-bd-realiste.webp — pas photo, pas fond blanc).
   À utiliser dès qu’on crée, régénère ou aligne une image / un MP3 de mot
   (Soutien, Voc, Jeux, lecture) ou une image de scène PO TCF.
 ---
@@ -21,7 +21,7 @@ documents TCF sous `public/lib/images/documents/`, audios TCF sous
 | Usage | Fond / décor | Objectif pédagogique |
 |---|---|---|
 | **Vocabulaire** (Soutien, Voc, Jeux, lecture) | Fond **blanc pur**, sujet isolé | Identifier un mot |
-| **Scènes PO TCF** (fide / DELF) | Décor **quotidien réaliste** (Suisse romande) | Décrire une situation, jouer un rôle |
+| **Scènes PO TCF** (fide / DELF) | Décor quotidien en **bande dessinée réaliste** (pas photo) | Décrire une situation, jouer un rôle |
 
 ---
 
@@ -125,75 +125,92 @@ de dialogue / interaction), en préparation **fide** ou esprit **DELF**
   sans infantilisation ni stéréotypes de genre, d’origine ou de corps.
 - Limiter le bruit visuel : peu d’objets, tous utiles à la tâche communicative.
 
+### Style obligatoire — bande dessinée réaliste
+
+**Référence de style** (à passer en `reference_image_paths` pour toute
+génération / régénération) :
+
+`public/lib/images/comprehension/_style-ref-bd-realiste.webp`
+(scène « chez le pédiatre » : médecin, parent, enfant).
+
+Ce n’est **pas** une photographie, **pas** du réalisme pur « comme la vie
+réelle », **pas** un manga, **pas** un cartoon enfantin, **pas** un fond blanc
+studio. C’est une **illustration type bande dessinée réaliste** / manuel de
+langue moderne :
+
+- proportions humaines crédibles, visages doux, expressions lisibles ;
+- contours **souples** (peu ou pas de trait noir dur) ; volumes par la couleur
+  et des ombres légères ;
+- palette chaude, tons naturels (beige, bois, verts doux, peaux réalistes) ;
+- lumière d’intérieur douce et uniforme ;
+- décor de vie quotidienne (cabinet, commerce, guichet, cuisine…) avec peu
+  d’objets, tous utiles à la scène ;
+- **aucun texte**, lettre, chiffre, logo ni panneau lisible.
+
+Toute image sous `public/lib/images/comprehension/` (po-a1, po-a2) suit
+**uniquement** ce régime. Ne plus viser le style photo ni l’ancienne planche
+« À la poste » comme référence de style.
+
 ### Spécification visuelle
 
-1. **Style** : illustration **réaliste peinte**, comme la planche « À la poste »
-   (`public/lib/images/comprehension/po-a1/a-la-poste-4.webp`) : scène semi-illustrée,
-   volumes et lumières crédibles, traits propres, couleurs naturelles.
-   Pas une photographie, pas un fond blanc studio, pas de manga, pas de cartoon enfantin.
-   Toute nouvelle image PO, et toute image PO régénérée, suit **uniquement** ce régime.
-2. **Format** : ratio **4:3** (carré large) — viser **800 × 600** px WebP ~85,
-   cohérent avec le stock `public/lib/images/`.
+1. **Style** : bande dessinée réaliste = référence `_style-ref-bd-realiste.webp`.
+2. **Format** : ratio **4:3** — **800 × 600** px WebP ~85.
 3. **Lieu** : Suisse romande du quotidien, authentique, non touristique.
 4. **Personnages** : adultes (tous âges, origines et corps variés), traités
-   avec respect, jamais caricaturés ; **deux personnes maximum** au premier
-   plan ; positions et gestes qui montrent clairement qui fait quoi et pourquoi.
-5. **Objets** : uniquement ceux nécessaires à la tâche (ticket, formulaire,
-   pain, dossier…).
-6. **Interdits** : aucun texte, lettre, chiffre ni logo incrusté ; pas de
-   décor cliché « Suisse postcard » ; pas de ton enfantin.
+   avec respect ; jusqu’à **trois personnes** si la scène l’exige (ex. parent +
+   enfant + professionnel) ; gestes et postures qui montrent qui fait quoi.
+5. **Objets** : uniquement ceux nécessaires à la tâche.
+6. **Interdits** : texte / logo incrusté ; cliché « Suisse postcard » ;
+   photoréalisme ; fond blanc studio ; ton enfantin caricaturé.
 
-Niveau cible typique des consignes PO A1–A2 : formuler la scène pour un
-public **A2** sauf demande contraire (série junior : adapter l’âge des
-personnages si le support l’exige, sans basculer en style enfantin).
+Niveau cible typique A1–A2 ; séries junior : adapter l’âge des personnages
+sans basculer en style cartoon enfant.
 
 ### Prompt maître (à coller avant chaque scène)
 
-Reformulation ClairFLE à préfixer **avant** la description de la scène
-(ne pas coller un brief externe non cadré) :
+Préfixer **avant** la description (et toujours joindre la référence de style) :
 
-> Illustration réaliste peinte pour adultes apprenant le français (niveau A2),
-> style manuel de langue moderne du même registre que la planche « À la poste »
-> (scène semi-illustrée, pas une photo, pas un fond blanc). Traits propres,
-> couleurs naturelles, format 4:3. Situation du quotidien en Suisse romande,
-> authentique et non touristique : lieux ordinaires (guichet, commerce, bureau,
-> cage d’escalier, cuisine, salle d’attente). Personnages adultes, de tous âges,
-> origines et corps variés, traités avec respect, jamais caricaturés. Deux
-> personnes maximum au premier plan, positions et gestes qui montrent clairement
-> qui fait quoi et pourquoi. Peu d’objets, tous utiles à la tâche communicative.
-> Aucun texte, lettre, chiffre ni logo. Pas de chalet, vache ou drapeau en
-> décor, pas de ton enfantin.
+> Illustration en bande dessinée réaliste pour adultes apprenant le français
+> (niveau A2), même style que la référence « chez le pédiatre » : dessin
+> illustré crédible, pas une photo, pas du réalisme pur. Contours souples,
+> couleurs naturelles et chaleureuses, lumière douce, format 4:3. Situation du
+> quotidien en Suisse romande (guichet, commerce, cabinet, bureau, cuisine,
+> salle d’attente). Personnages de tous âges, origines et corps variés, traités
+> avec respect. Gestes qui montrent clairement qui fait quoi. Peu d’objets,
+> tous utiles. Aucun texte, lettre, chiffre ni logo. Pas de chalet, vache ou
+> drapeau en décor.
 >
-> Scène : [description concrète de la situation PO — lieu, rôles, action]
+> Scène : [description concrète — lieu, rôles, action]
 
-### Procédure
+### Procédure (création ou régénération)
 
-1. Lire le support PO dans `src/tcf/content/{niveau}/po.json` (situation,
-   questions « Que voyez-vous ? », thème).
-2. Rédiger une **scène** en une ou deux phrases (qui / où / quoi) alignée sur
-   la tâche orale, sans spoiler une réponse modèle mot à mot inutile.
-3. Générer avec le **prompt maître** + scène ; exporter WebP 800×600.
-4. Placer l’image « à décrire » (type `image_interaction`) sous :
-   - **A0-A1** : **4 images séquentielles** de la même situation (début → fin),
-     `public/lib/images/comprehension/po-a1/{slug}-{1..4}.webp`. Mêmes personnages
-     (visage, vêtements) et même lieu sur les 4 : générer l’étape 1, puis la passer
-     en image de référence pour les étapes 2 à 4. Rendu en chronologie décalée
-     (1 haut gauche, 2 droite, 3 gauche, 4 bas droite).
-   - **A1-A2** : **une seule image**, `public/lib/images/comprehension/po-a2/{slug}.webp`.
-   - Autres scènes : `public/lib/images/vocabulaire/actions/{slug}.webp` ;
-     documents : `public/lib/images/documents/{slug}.webp`.
-5. Référencer dans `support.images` (ou `support.image` pour les autres types)
-   par chemin absolu. Aucun numéro ni bulle dessiné dans l’image.
-6. Contrôle : rôles lisibles N&B approximatif, pas de texte, pas de cliché
-   touristique, pas de fond blanc studio.
+1. Lire le support PO dans `src/tcf/content/{niveau}/po.json` **ou**, pour une
+   régénération de stock, ouvrir l’image existante sous
+   `public/lib/images/comprehension/`.
+2. Décrire la scène (qui / où / quoi) en une ou deux phrases ; pour une
+   régénération, **conserver la composition et le contenu** de l’image
+   actuelle, changer seulement le style.
+3. Générer avec : `reference_image_paths` =
+   `[…/_style-ref-bd-realiste.webp, <image actuelle si régénération>]` +
+   prompt maître + scène. Export WebP **800×600**.
+4. Chemins :
+   - **A0-A1** : 4 images séquentielles
+     `public/lib/images/comprehension/po-a1/{slug}-{1..4}.webp` — mêmes
+     personnages et même lieu ; étape 1 en référence pour 2–4.
+   - **A1-A2** : une image
+     `public/lib/images/comprehension/po-a2/{slug}.webp`.
+5. Référencer dans `support.images` / `support.image`. Aucun numéro ni bulle
+   dans l’image.
+6. Contrôle : rôles lisibles, style BD réaliste (pas photo), pas de texte,
+   pas de fond blanc studio.
 
 ### Contrôles qualité (PO)
 
-- On comprend l’action et les rôles sans lire la consigne.
+- Style = référence pédiatre (BD réaliste), pas photo.
+- On comprend l’action et les rôles sans la consigne.
 - Décor banal suisse romand, pas postcard.
-- ≤ 2 personnes au premier plan ; diversité respectueuse.
-- Aucun texte / logo ; pas d’infantilisation.
-- Chemin et slug cohérents avec la série TCF voisine.
+- Diversité respectueuse ; aucun texte / logo.
+- Chemin et slug cohérents avec la série TCF.
 
 ---
 
