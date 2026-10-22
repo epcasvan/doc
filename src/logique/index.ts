@@ -5,4 +5,4 @@ export {
 } from './catalog'
 export { tryGenerateLogiqueBlock } from './generate'
 export { isLogiqueType, LOGIQUE_LAYOUT } from './types'
-export type { LogiqueCell, LogiquePuzzle, LogiqueMode } from './types'
+export type { LogiquePuzzle, LogiqueMode } from './types'

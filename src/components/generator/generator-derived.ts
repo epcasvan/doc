@@ -7,6 +7,7 @@ import {
   grammaireTopics,
   jeuxTopics,
   alphabetisationTopics,
+  logiqueTopics,
   santeTopics,
   societeTopics,
   soutienFrTopics,
@@ -69,11 +70,13 @@ export function topicsForDomain(domain: Domain) {
                             ? soutienFrTopics
                             : domain === 'alphabetisation'
                               ? alphabetisationTopics
-                              : isTpmDomain(domain)
-                                ? tpmTopics
-                                : domain === TCF_DOMAIN
-                                  ? tcfTopics
-                                  : algebraTopics
+                              : domain === 'logique'
+                                ? logiqueTopics
+                                : isTpmDomain(domain)
+                                  ? tpmTopics
+                                  : domain === TCF_DOMAIN
+                                    ? tcfTopics
+                                    : algebraTopics
 }
 
 /** Types d’exercice proposés pour le bloc actif. */
