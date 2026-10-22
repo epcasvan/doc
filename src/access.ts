@@ -21,6 +21,7 @@ export const REGULAR_DOMAIN_OPTIONS: readonly { id: Domain; label: string }[] = 
   { id: 'géométrie', label: 'Géométrie' },
   { id: 'grammaire', label: 'Grammaire' },
   { id: 'jeux', label: 'Grilles de cartes' },
+  { id: 'logique', label: 'Logique' },
   { id: 'santé', label: 'Sciences et santé' },
   { id: 'société', label: 'Société' },
   { id: 'soutien-fr', label: 'Soutien FR' },

@@ -310,6 +310,11 @@ export function usePageNavigation({
         current.course === 'Mathématiques' ? { ...current, course: 'Français' } : current,
       )
     }
+    if (next === 'logique') {
+      setInstitutional((current) =>
+        current.course === 'Français' ? { ...current, course: 'Mathématiques' } : current,
+      )
+    }
     if (next === 'jeux' || next === 'calligraphie' || next === 'soutien-fr' || next === 'alphabetisation') {
       setEvalMode(false)
       setMode('student')

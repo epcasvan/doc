@@ -7,6 +7,7 @@ import type { GameBoard } from '@/jeux/types'
 import { CalligraphyView } from './math/CalligraphyView'
 import { GattegnoChart } from './math/GattegnoChart'
 import { GlossaryFigure } from './math/GlossaryFigure'
+import { LogiqueBlock } from './item-view/logique'
 import { TcfItemView } from './tcf/TcfItemView'
 import { AlgebraRow } from './item-view/algebra'
 import { ColumnOp, DivisionColumn } from './item-view/columns'
@@ -299,6 +300,7 @@ export function ItemView({
         {item.layout === 'tcf' && (
           <TcfItemView item={item} mode={mode} tcfFormMode={tcfActiveForm} />
         )}
+        {item.layout === 'logique' && <LogiqueBlock item={item} mode={mode} />}
         {item.layout === 'audio-dictation' && <AudioDictationBlock item={item} mode={mode} />}
         {item.layout === 'symmetry-grid' && <SymmetryGridBlock item={item} mode={mode} />}
         {item.layout === 'segment-measure' && <SegmentMeasureBlock item={item} mode={mode} />}

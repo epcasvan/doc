@@ -12,6 +12,7 @@ export type Domain =
   | 'société'
   | 'santé'
   | 'acm'
+  | 'logique'
   | 'tpm'
   | 'tcm-csc'
   | 'tcm-cfr'
@@ -105,6 +106,7 @@ export type Layout =
   | 'count-icons'
   | 'fraction-shape'
   | 'tcf'
+  | 'logique'
 
 /** Icône à compter (SVG N&B plein) — 16 styles TPM ex. 1. */
 export type CountIconKind =
@@ -771,6 +773,8 @@ export type MathItem = {
   tcf?: import('@/tcf/types').TcfSheetItem
   /** TCF : id de l’exercice de banque affiché (copie modifiable en mode libre). */
   tcfExerciseId?: string
+  /** Domaine Logique : puzzle SVG (suite, intrus, matrice, cubes…). */
+  logique?: import('@/logique/types').LogiquePuzzle
   /** Item non compté dans le total de points (support, message). */
   noPoints?: boolean
   /** Barème propre à l’item (remplace les points par question du bloc). */

@@ -13,6 +13,7 @@ import { defaultEntriesFor } from '@/jeux/defaults'
 import { entriesToText } from '@/jeux/parse'
 import { JEUX_LIBRE_TOPIC, isJeuxTopicId, jeuxTopicsFromFr } from '@/jeux/topics'
 import { ACM_EXERCISE_TYPES, ACM_TOPICS } from '@/acm/catalog'
+import { LOGIQUE_EXERCISE_TYPES, LOGIQUE_TOPICS } from '@/logique/catalog'
 import { SANTE_EXERCISE_TYPES, SANTE_TOPICS } from '@/sante/catalog'
 import { SOCIETE_EXERCISE_TYPES, SOCIETE_TOPICS } from '@/societe/catalog'
 import { TCF_EXERCISE_TYPES, TCF_TOPICS } from '@/tcf/catalog'
@@ -72,6 +73,7 @@ export const topics: Topic[] = [
   ...SOCIETE_TOPICS,
   ...SANTE_TOPICS,
   ...ACM_TOPICS,
+  ...LOGIQUE_TOPICS,
   // —— TCM CSC / TCM CFR (stubs vides, pas une copie de TPM) ——
   ...TCM_CSC_TOPICS,
   ...TCM_CFR_TOPICS,
@@ -94,6 +96,7 @@ export const vocabulaireTopics = topics.filter((topic) => topic.domain === 'voca
 export const societeTopics = topics.filter((topic) => topic.domain === 'société')
 export const santeTopics = topics.filter((topic) => topic.domain === 'santé')
 export const acmTopics = topics.filter((topic) => topic.domain === 'acm')
+export const logiqueTopics = topics.filter((topic) => topic.domain === 'logique')
 export const tcmCscTopics = topics.filter((topic) => topic.domain === 'tcm-csc')
 export const tcmCfrTopics = topics.filter((topic) => topic.domain === 'tcm-cfr')
 export const jeuxTopics = topics.filter((topic) => topic.domain === 'jeux')
@@ -853,6 +856,7 @@ export const exerciseTypes: ExerciseType[] = [
   ...SOCIETE_EXERCISE_TYPES,
   ...SANTE_EXERCISE_TYPES,
   ...ACM_EXERCISE_TYPES,
+  ...LOGIQUE_EXERCISE_TYPES,
   ...TCM_CSC_EXERCISE_TYPES,
   ...TCM_CFR_EXERCISE_TYPES,
 ]
@@ -1012,7 +1016,9 @@ export function firstTypeFor(domain: Domain, topic?: string, track?: FrenchTrack
                     ? 'sante-a-venir'
                     : domain === 'acm'
                       ? 'acm-a-venir'
-                      : domain === 'tcm-csc'
+                      : domain === 'logique'
+                        ? 'logique-simple'
+                        : domain === 'tcm-csc'
                         ? 'tcm-csc-a-venir'
                         : domain === 'tcm-cfr'
                           ? 'tcm-cfr-info'
@@ -1044,11 +1050,13 @@ export function defaultPage(domain: Domain = 'algèbre'): PageConfigLike {
     domain === 'tcm-csc' ||
     domain === 'tcm-cfr'
       ? 1
-      : domain === 'alphabetisation' || domain === 'soutien-fr' || domain === 'gattegno'
+      : domain === 'logique'
         ? 6
-        : isDraftPadExercise(type.id)
-            ? 2
-            : 8
+        : domain === 'alphabetisation' || domain === 'soutien-fr' || domain === 'gattegno'
+          ? 6
+          : isDraftPadExercise(type.id)
+              ? 2
+              : 8
   const gameEntries = domain === 'jeux' ? defaultEntriesFor(type.id) : undefined
   const calliText = domain === 'calligraphie' ? defaultCalliText(type.id) : undefined
   return {

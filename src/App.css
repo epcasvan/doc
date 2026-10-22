@@ -5333,4 +5333,29 @@ textarea.pill-input,
   .fiches-row-actions{justify-content:flex-end}
   .topbar-text-btn{padding:0 10px;font-size:12px}
 }
+/* —— Domaine Logique (suites, intrus, matrices, cubes) —— */
+.logique-block{display:flex;flex-direction:column;gap:8px;width:100%;min-width:0}
+.logique-defs{position:absolute;width:0;height:0;overflow:hidden}
+.logique-prompt{margin:0;font-weight:600;text-align:justify}
+.logique-label{font-size:.9em;font-weight:700;margin-bottom:2px;display:block}
+.logique-stem{display:flex;flex-direction:column;align-items:flex-start;gap:4px}
+.logique-row{
+  list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px;align-items:flex-end
+}
+.logique-row.is-grid{display:grid;gap:8px;justify-content:start}
+.logique-cell,.logique-choice{
+  display:flex;flex-direction:column;align-items:center;gap:2px;
+  padding:4px;border:1.5px solid transparent;border-radius:4px
+}
+.logique-cell.is-answer,.logique-choice.is-answer{
+  border-color:var(--ink);outline:1.5px solid var(--ink)
+}
+.logique-idx,.logique-choice-lab{font-size:10pt;font-weight:700;line-height:1}
+.logique-shape,.logique-cubes{display:block;color:var(--ink)}
+.logique-choices{
+  list-style:none;margin:4px 0 0;padding:0;
+  display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end
+}
+.logique-choice{min-width:48px}
+.logique-block .answer-line-field{margin-top:4px}
 /* End */

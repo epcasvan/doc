@@ -25,6 +25,7 @@ React + Vite + TypeScript. Styles principaux dans `src/App.css` (variables CSS d
 | `src/societe/` | Domaine Société (squelette) — `README.md` |
 | `src/sante/` | Domaine Sciences et santé (squelette) — `README.md` |
 | `src/acm/` | Activités créatives et manuelles (squelette) — `README.md` |
+| `src/logique/` | Logique (suites, intrus, rotations, matrices, cubes…) — `README.md` |
 | `src/tcm-csc/` | Stub TCM CSC (vide, admin) — `README.md` |
 | `src/tcm-cfr/` | Stub TCM CFR (vide, admin) — `README.md` |
 | `src/jeux/` | Fiches-jeux |

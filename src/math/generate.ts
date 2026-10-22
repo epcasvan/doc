@@ -26,6 +26,7 @@ import { isTcfConsignesType, TCF_DOMAIN } from '@/tcf/catalog'
 import { tryGenerateGrammaireBlock } from '@/grammaire/generate'
 import { isGrammaireTheoryType } from '@/grammaire/types'
 import { tryGenerateAcmBlock } from '@/acm/generate'
+import { tryGenerateLogiqueBlock } from '@/logique/generate'
 import { tryGenerateSanteBlock } from '@/sante/generate'
 import { tryGenerateSocieteBlock } from '@/societe/generate'
 import { isTcmCfrConsignesType, TCM_CFR_MAX_SCORE } from '@/tcm-cfr/test'
@@ -118,6 +119,14 @@ function buildSingleBlock(
       title: fallbackTitle,
       instruction: acm.instruction,
       items: acm.items,
+    }
+  }
+  const logique = tryGenerateLogiqueBlock(config, seed)
+  if (logique) {
+    return {
+      title: fallbackTitle,
+      instruction: logique.instruction,
+      items: logique.items,
     }
   }
   const tcmCsc = tryGenerateTcmCscBlock(config)
