@@ -159,9 +159,10 @@ function toWebp(src, dest) {
 
 /**
  * Découpe stem / choices selon le type.
- * Suites : 3 derniers = choix. Intrus : tout = choix.
+ * Suites : 5 dernières = choix, le reste = énoncé (souvent 1 grande image).
+ * Intrus : tout = choix.
  * Rotation : 1er = modèle, reste = choix.
- * Matrice / assemblage / superpo : 3 derniers = choix.
+ * Matrice / assemblage / superpo : 5 derniers = choix si assez d’images.
  * Cube : 1 image → stem seul ; sinon 1er stem + reste choix.
  */
 function splitImages(typeId, paths) {
@@ -176,9 +177,17 @@ function splitImages(typeId, paths) {
     if (n <= 1) return { stem: paths, choices: [] }
     return { stem: paths.slice(0, 1), choices: paths.slice(1) }
   }
-  // suites, matrice, assemblage, superposition
+  const isSuite =
+    typeId === 'logique-suite-graphique' ||
+    typeId === 'logique-suite-logique' ||
+    typeId === 'logique-suite-formes'
+  if (isSuite && n >= 2) {
+    const choiceCount = Math.min(5, n - 1)
+    return { stem: paths.slice(0, n - choiceCount), choices: paths.slice(n - choiceCount) }
+  }
+  // matrice, assemblage, superposition
   if (n >= 4) {
-    const choiceCount = n >= 6 ? 3 : Math.min(3, Math.floor(n / 2))
+    const choiceCount = n >= 6 ? Math.min(5, n - 1) : Math.min(3, Math.floor(n / 2))
     return { stem: paths.slice(0, n - choiceCount), choices: paths.slice(n - choiceCount) }
   }
   return { stem: paths, choices: [] }

@@ -14,9 +14,10 @@ export function LogiqueBlock({ item, mode }: { item: MathItem; mode: PreviewMode
   if (!p) return null
   const show = mode === 'answers'
   const hasChoices = p.choices.length > 0
+  const isSuite = p.mode === 'suite'
 
   return (
-    <div className={`logique-block is-${p.mode}`}>
+    <div className={`logique-block is-${p.mode}${isSuite ? ' is-suite-layout' : ''}`}>
       {p.stem.length ? (
         <ul className={`logique-stem${p.stem.length === 1 ? ' is-single' : ''}`}>
           {p.stem.map((src, i) => (
@@ -31,13 +32,14 @@ export function LogiqueBlock({ item, mode }: { item: MathItem; mode: PreviewMode
         <ul className="logique-choices">
           {p.choices.map((src, i) => {
             const isAnswer = show && p.correctIndex === i
+            const lab = p.choiceLabels?.[i] ?? String.fromCharCode(65 + i)
             return (
               <li key={`c-${i}`} className={`logique-choice${isAnswer ? ' is-answer' : ''}`}>
-                <CheckBox checked={isAnswer} />
-                <span className="logique-choice-lab">
-                  {p.choiceLabels?.[i] ?? String.fromCharCode(65 + i)}
-                </span>
                 <img className="logique-img" src={src} alt="" />
+                <span className="logique-choice-meta">
+                  <span className="logique-choice-lab">{lab}</span>
+                  <CheckBox checked={isAnswer} />
+                </span>
               </li>
             )
           })}

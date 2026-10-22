@@ -1,4 +1,4 @@
-import { createRng, shuffle } from '@/math/rng'
+import { createRng, shuffle, type Rng } from '@/math/rng'
 import type { MathItem, PageConfig } from '@/math/types'
 import bankJson from './bank.json' with { type: 'json' }
 import { isLogiqueType, LOGIQUE_LAYOUT, type LogiqueMode, type LogiquePuzzle } from './types'
@@ -27,23 +27,32 @@ function labelOf(i: number): string {
   return String.fromCharCode(65 + i)
 }
 
-function toItem(entry: BankEntry, mode: LogiqueMode): MathItem {
-  const choices = entry.choices ?? []
-  const answerLine = entry.answerLine || choices.length === 0
+/** Mélange les images-réponses et recalcule l’index du bon choix. */
+function toItem(entry: BankEntry, mode: LogiqueMode, rng: Rng): MathItem {
+  const rawChoices = entry.choices ?? []
+  const answerLine = entry.answerLine || rawChoices.length === 0
+  const correctSrc =
+    rawChoices.length > 0
+      ? rawChoices[Math.max(0, Math.min(entry.correctIndex ?? 0, rawChoices.length - 1))]
+      : undefined
+  const choices = rawChoices.length > 1 ? shuffle(rng, [...rawChoices]) : [...rawChoices]
   const labels = choices.map((_, i) => labelOf(i))
-  const correctIndex = Math.max(0, Math.min(entry.correctIndex ?? 0, Math.max(0, choices.length - 1)))
+  const correctIndex =
+    answerLine || correctSrc == null
+      ? undefined
+      : Math.max(0, choices.indexOf(correctSrc))
   const puzzle: LogiquePuzzle = {
     mode,
     stem: entry.stem ?? [],
     choices,
     choiceLabels: labels,
-    correctIndex: answerLine ? undefined : correctIndex,
+    correctIndex,
     answerLine,
   }
   return {
     layout: LOGIQUE_LAYOUT,
     prompt: '',
-    answer: answerLine ? '…' : labels[correctIndex] ?? 'A',
+    answer: answerLine ? '…' : labels[correctIndex ?? 0] ?? 'A',
     logique: puzzle,
   }
 }
@@ -91,6 +100,6 @@ export function tryGenerateLogiqueBlock(
   const mode = modeOf(config.exerciseType)
   return {
     instruction: INSTRUCTION[config.exerciseType] ?? 'Répondez aux exercices.',
-    items: picked.map((entry) => toItem(entry, mode)),
+    items: picked.map((entry) => toItem(entry, mode, rng)),
   }
 }
