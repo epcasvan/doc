@@ -1,11 +1,11 @@
 # Logique
 
-Domaine ClairFLE pour les fiches de logique scolaire (esprit CSC « Logique et espace ») :
-suites, intrus, rotations, matrices, assemblages, superpositions et cubes.
+Domaine ClairFLE pour les fiches de logique scolaire (esprit CSC « Logique et espace »).
+Chaque **thème** du sélecteur est un type d’exercice (pas de regroupement simple / complexe).
 
 | Fichier | Rôle |
 |---|---|
-| `catalog.ts` | Thèmes `logique-simple` / `logique-complexe` + types |
+| `catalog.ts` | Thèmes = types (suite graphique, intrus, matrice…) |
 | `bank.json` | Banque d’exercices (chemins d’images) |
 | `generate.ts` | Tirage déterministe dans la banque (`createRng`) |
 | `types.ts` | `LogiquePuzzle`, `isLogiqueType` |
@@ -13,19 +13,10 @@ suites, intrus, rotations, matrices, assemblages, superpositions et cubes.
 | `../../public/lib/images/logique/` | Graphiques importés des Word CSC |
 | `../../scripts/tmp-import-logique.mjs` | Réimport Word → webp + bank.json |
 
-## Types
+## Thèmes
 
-### Logique simple
-- **Suite graphique** — continuer une suite de formes
-- **Suite logique** — suites (nombres / symboles / figures)
-- **Suite de formes** — suites de formes géométriques
-- **Trouver l’intrus** — cocher la forme hors règle
-- **Rotation** — retrouver la même forme après rotation
+- Suite graphique · Suite logique · Suite de formes
+- Trouver l’intrus · Rotation
+- Matrice · Assemblage · Superposition · Cube
 
-### Logique complexe
-- **Matrice** — compléter une case manquante
-- **Assemblage** — choisir l’assemblage des pièces
-- **Superposition** — résultat de formes superposées
-- **Cube** — compter / ajouter / enlever des cubes
-
-La consigne est au niveau de l’exercice (une fois) ; chaque item n’affiche que son numéro et les images. Les réponses QCM se cochent ; le corrigé coche la bonne case quand l’index est connu.
+La consigne est au niveau de l’exercice ; chaque item n’affiche que son numéro et les images.

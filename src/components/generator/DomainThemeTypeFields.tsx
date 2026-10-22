@@ -313,7 +313,7 @@ export function DomainThemeTypeFields(p: DomainThemeTypeFieldsProps) {
                   onChangeInstruction={(phraseInstruction) => updatePage({ phraseInstruction })}
                 />
               ) : null}
-              {isTpmLike || (isTcf && typeChoices.length <= 1) ? null : (
+              {isTpmLike || typeChoices.length <= 1 ? null : (
               <SelectBox
                 label={isTcf ? 'Exercice' : 'Type d’exercice'}
                 value={activeBlock.exerciseType}
