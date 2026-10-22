@@ -68,6 +68,11 @@ export type SettingsPanelProps = {
   isAlphabetisation: boolean
   changeSoutienLetter: (letterId: string) => void
   changeSoutienSound: (soundId: string) => void
+  isGrammaireDomain: boolean
+  isLogique: boolean
+  gramSubthemes: Array<{ id: string; label: string }>
+  gramSubtheme: { id: string; label: string } | undefined
+  changeGramSubtheme: (subId: string) => void
   isPhraseDomain: boolean
   isPhraseChart: boolean
   libreMode: boolean
@@ -195,6 +200,11 @@ export function SettingsPanel(p: SettingsPanelProps) {
           isAlphabetisation={p.isAlphabetisation}
           changeSoutienLetter={p.changeSoutienLetter}
           changeSoutienSound={p.changeSoutienSound}
+          isGrammaireDomain={p.isGrammaireDomain}
+          isLogique={p.isLogique}
+          gramSubthemes={p.gramSubthemes}
+          gramSubtheme={p.gramSubtheme}
+          changeGramSubtheme={p.changeGramSubtheme}
           isPhraseDomain={p.isPhraseDomain}
           isPhraseChart={p.isPhraseChart}
           libreMode={p.libreMode}
@@ -266,6 +276,8 @@ export function SettingsPanel(p: SettingsPanelProps) {
           isVocabLearn={p.isVocabLearn}
           isVocabPool={p.isVocabPool}
           isGramTheory={p.isGramTheory}
+          isGrammaireDomain={p.isGrammaireDomain}
+          isLogique={p.isLogique}
           isJeuxDomain={p.isJeuxDomain}
           isCalliDomain={p.isCalliDomain}
           isSoutienFr={p.isSoutienFr}

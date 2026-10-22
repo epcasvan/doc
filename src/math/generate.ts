@@ -87,6 +87,7 @@ function buildSingleBlock(
       title: fallbackTitle,
       instruction: grammaire.instruction,
       items: grammaire.items,
+      bankQuestionCap: grammaire.bankQuestionCap,
     }
   }
   const vocabulaire = tryGenerateVocabulaireBlock(config)

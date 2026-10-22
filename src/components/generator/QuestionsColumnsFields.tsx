@@ -35,6 +35,8 @@ export type QuestionsColumnsFieldsProps = {
   isVocabLearn: boolean
   isVocabPool: boolean
   isGramTheory: boolean
+  isGrammaireDomain: boolean
+  isLogique: boolean
   isJeuxDomain: boolean
   isCalliDomain: boolean
   isSoutienFr: boolean
@@ -77,6 +79,8 @@ export function QuestionsColumnsFields(props: QuestionsColumnsFieldsProps) {
     isVocabLearn,
     isVocabPool,
     isGramTheory,
+    isGrammaireDomain,
+    isLogique,
     isJeuxDomain,
     isCalliDomain,
     isSoutienFr,
@@ -460,6 +464,8 @@ export function QuestionsColumnsFields(props: QuestionsColumnsFieldsProps) {
               isVocabLearn ||
               isVocabPool ||
               isGramTheory ||
+              isGrammaireDomain ||
+              isLogique ||
               isJeuxDomain ||
               isCalliDomain ||
               isSoutienFr ||

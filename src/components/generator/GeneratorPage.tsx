@@ -229,6 +229,7 @@ export function GeneratorPage({
     changeTopic,
     changeSoutienLetter,
     changeSoutienSound,
+    changeGramSubtheme,
   } = usePageNavigation({
     accessAccount,
     allowedDomains,
@@ -406,6 +407,7 @@ export function GeneratorPage({
     available,
     changeSoutienLetter,
     changeSoutienSound,
+    changeGramSubtheme,
     isAlphabetisation: ctx.isAlphabetisation,
     libreMode,
     setVerbGroup,

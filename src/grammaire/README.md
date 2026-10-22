@@ -1,26 +1,34 @@
-# Grammaire — théorie FALC (SCAI)
+# Grammaire — théorie FALC (SCAI) + exercices
 
-Domaine dédié pour les **fiches de théorie** de français en FALC, d’après le programme SCAI.
-Les notions sont **adaptées** (pas copiées) à partir du stock pédagogique soutien-scolaire, avec une **répartition SCAI** différente (parties communicatives + conjugaison au présent).
+Domaine dédié pour les **fiches de théorie** FALC et les **exercices** liés (conjugaison, transformations, PDF).
 
-| Fichier | Rôle |
+| Fichier / dossier | Rôle |
 |---|---|
-| `catalog.ts` | Thèmes (parties) + types « théorie » |
-| `theory/*.ts` | Contenu FALC français (pas de traductions pour l’instant) |
-| `generate.ts` | `tryGenerateGrammaireBlock` → items `layout: 'theory'` |
-| `types.ts` | Doc théorie + helpers `isGrammaireTheoryType` |
+| `catalog.ts` | Thèmes SCAI + types théorie + types exercices |
+| `theory/*.ts` | Contenu FALC français |
+| `exercises/` | 8 kinds, sous-thèmes, banques, générateur |
+| `generate.ts` | Théorie **ou** exercices selon le type |
 
-## Thèmes
+## UI
 
-Se présenter → **Conjuguer au présent** → Entrer en contact → Questions → Activité → Espace → Temps → Demander → Décrire → Conseiller → Aliments → Passé → Pronoms → Action → Avenir → Faits divers → Argumenter → Exprimer → Aide-mémoire.
+1. **Thème** = partie SCAI (ex. Conjuguer au présent)
+2. **Sous-thème** = notion (Être, Avoir, -er… / Passé composé… / fiche PDF)
+3. **Type** = Théorie liée + kinds avec banque non vide
 
-## Usage
+## 8 types d’exercice
 
-- Domaine UI : **Grammaire**
-- Thème = partie SCAI (ou complément ClairFLE, ex. conjugaison au présent)
-- Type = une fiche théorie (une notion)
-- Exercices liés : à ajouter plus tard comme types supplémentaires sur le même thème
+1. Choisissez la bonne conjugaison (QCM)
+2. Conjuguez le verbe (ligne)
+3. Choisissez le verbe correct (QCM)
+4. Mettre au pluriel
+5. Mettre au singulier
+6. Mettre à la forme négative
+7. Mettre à la forme affirmative
+8. Écrire une phrase
 
-## Traductions
+Banques conjugaison : profils issus de soutien-scolaire (`exercises/profiles.ts` + `pools.ts`).  
+Banques PDF : énoncés adaptés dans `exercises/bank/pdf-seed.ts` (pas de copie longue des manuels).
 
-Reportées après validation du français FALC (skill `falc` §7).
+## Déterminisme
+
+Tirage via `createRng(seed)` + `shuffle` ; jamais `Math.random()` dans le générateur.

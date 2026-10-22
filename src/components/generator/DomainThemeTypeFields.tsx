@@ -69,6 +69,11 @@ export type DomainThemeTypeFieldsProps = {
   isAlphabetisation: boolean
   changeSoutienLetter: (letterId: string) => void
   changeSoutienSound: (soundId: string) => void
+  isGrammaireDomain: boolean
+  isLogique: boolean
+  gramSubthemes: Array<{ id: string; label: string }>
+  gramSubtheme: { id: string; label: string } | undefined
+  changeGramSubtheme: (subId: string) => void
   isPhraseDomain: boolean
   isPhraseChart: boolean
   libreMode: boolean
@@ -117,6 +122,11 @@ export function DomainThemeTypeFields(p: DomainThemeTypeFieldsProps) {
     isAlphabetisation,
     changeSoutienLetter,
     changeSoutienSound,
+    isGrammaireDomain,
+    isLogique,
+    gramSubthemes,
+    gramSubtheme,
+    changeGramSubtheme,
     isPhraseDomain,
     isPhraseChart,
     libreMode,
@@ -239,6 +249,19 @@ export function DomainThemeTypeFields(p: DomainThemeTypeFieldsProps) {
                   {soutienSelection.theme.letters.map((letter) => (
                     <option value={letter.id} key={letter.id}>
                       {isAlphabetisation ? letter.label : letter.letterUpper}
+                    </option>
+                  ))}
+                </SelectBox>
+              ) : null}
+              {isGrammaireDomain && gramSubthemes.length > 0 ? (
+                <SelectBox
+                  label="Sous-thème"
+                  value={gramSubtheme?.id ?? gramSubthemes[0]!.id}
+                  onChange={changeGramSubtheme}
+                >
+                  {gramSubthemes.map((sub) => (
+                    <option value={sub.id} key={sub.id}>
+                      {sub.label}
                     </option>
                   ))}
                 </SelectBox>
@@ -409,6 +432,8 @@ export function DomainThemeTypeFields(p: DomainThemeTypeFieldsProps) {
               isCalliDomain ||
               isVocabLearn ||
               isGramTheory ||
+              isGrammaireDomain ||
+              isLogique ||
               isSoutienFr ||
               isAlphabetisation ||
               isTcf ||

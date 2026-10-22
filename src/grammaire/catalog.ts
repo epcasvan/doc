@@ -1,5 +1,6 @@
 import type { ExerciseType, Topic } from '@/math/types'
 import { GRAMMAIRE_THEORY_DOCS } from './theory'
+import { buildGrammairePracticeTypes } from './exercises/catalog-exercises'
 
 export const GRAMMAIRE_DOMAIN = 'grammaire' as const
 
@@ -25,8 +26,8 @@ export const GRAMMAIRE_TOPICS: Topic[] = [
   { id: 'gram-aide', label: 'Aide-mémoire', domain: 'grammaire' },
 ]
 
-/** Un type « Théorie » par fiche ; les exercices liés seront ajoutés ensuite. */
-export const GRAMMAIRE_EXERCISE_TYPES: ExerciseType[] = [
+/** Types « Théorie » (fiches FALC). */
+const GRAMMAIRE_THEORY_TYPES: ExerciseType[] = [
   {
     id: 'gram-a1-theorie',
     topic: 'gram-se-presenter',
@@ -1030,18 +1031,26 @@ export const GRAMMAIRE_EXERCISE_TYPES: ExerciseType[] = [
 
 ]
 
+/** Théorie + exercices (banques conjugaison / PDF). */
+export const GRAMMAIRE_EXERCISE_TYPES: ExerciseType[] = [
+  ...GRAMMAIRE_THEORY_TYPES,
+  ...buildGrammairePracticeTypes(),
+]
+
 /** Vérifie la cohérence catalogue ↔ banques théorie. */
 export function assertGrammaireCatalog(): void {
-  const typeIds = new Set(GRAMMAIRE_EXERCISE_TYPES.map((t) => t.id))
+  const theoryTypeIds = new Set(
+    GRAMMAIRE_EXERCISE_TYPES.filter((t) => t.id.endsWith('-theorie')).map((t) => t.id),
+  )
   const docIds = new Set(GRAMMAIRE_THEORY_DOCS.map((d) => d.typeId))
   for (const doc of GRAMMAIRE_THEORY_DOCS) {
-    if (!typeIds.has(doc.typeId)) {
+    if (!theoryTypeIds.has(doc.typeId)) {
       throw new Error(`Théorie sans type catalogue: ${doc.typeId}`)
     }
   }
-  for (const type of GRAMMAIRE_EXERCISE_TYPES) {
-    if (!docIds.has(type.id)) {
-      throw new Error(`Type catalogue sans théorie: ${type.id}`)
+  for (const typeId of theoryTypeIds) {
+    if (!docIds.has(typeId)) {
+      throw new Error(`Type théorie catalogue sans contenu: ${typeId}`)
     }
   }
 }

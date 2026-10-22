@@ -19,6 +19,11 @@ import {
   type VocabWordEntry,
 } from '@/francais/vocab-learn'
 import { isGrammarTheoryType } from '@/francais/grammar-theory'
+import { isGrammaireTheoryType } from '@/grammaire/types'
+import {
+  resolveGramSubthemeAll,
+  subthemesForTopicAll,
+} from '@/grammaire/exercises'
 import { soutienBankById } from '@/francais/soutien/banks'
 import { type1WordPool, type1Words } from '@/francais/soutien/generate'
 import { parseAlphaType } from '@/alphabetisation/kinds'
@@ -69,7 +74,15 @@ const isPhraseChart =
 const isVocabLearn = isVocabLearnType(activeBlock.exerciseType)
 const isVocabPool = isVocabPoolType(activeBlock.exerciseType)
 const isVocabProd = isVocabProductionType(activeBlock.exerciseType)
-const isGramTheory = isGrammarTheoryType(activeBlock.exerciseType)
+const isGramTheory =
+  isGrammarTheoryType(activeBlock.exerciseType) ||
+  isGrammaireTheoryType(activeBlock.exerciseType)
+const isGrammaireDomain = activePage.domain === 'grammaire'
+const isLogique = activePage.domain === 'logique'
+const gramSubthemes = isGrammaireDomain ? subthemesForTopicAll(activeBlock.topic) : []
+const gramSubtheme = isGrammaireDomain
+  ? resolveGramSubthemeAll(activeBlock.topic, activeBlock.exerciseType)
+  : undefined
 const isPhraseDomain = activePage.domain === 'gattegno'
 const isJeuxDomain = activePage.domain === 'jeux'
 const isCalliDomain = activePage.domain === 'calligraphie'
@@ -257,6 +270,10 @@ const questionsInputOverflow = questionsOverflow || bankOverflow
     isVocabPool,
     isVocabProd,
     isGramTheory,
+    isGrammaireDomain,
+    isLogique,
+    gramSubthemes,
+    gramSubtheme,
     isPhraseDomain,
     isJeuxDomain,
     isCalliDomain,

@@ -49,6 +49,12 @@ import {
   soutienExerciseTypeId,
   soutienThemeById,
 } from '@/francais/soutien/themes'
+import {
+  gramExerciseTypeId,
+  resolveGramSubthemeAll,
+  subthemesForTopicAll,
+} from '@/grammaire/exercises'
+import { GRAM_EXERCISE_KINDS } from '@/grammaire/exercises/kinds'
 import { addPageBlock, pageBlocks, stampExerciseNumbers } from '@/math/page-model'
 import type { InstitutionalHeader } from '@/components/math/PrintDocumentChrome'
 import type {
@@ -448,10 +454,43 @@ export function usePageNavigation({
       })
       return
     }
+    if (activePage.domain === 'grammaire') {
+      const subs = subthemesForTopicAll(topic)
+      const sub = subs[0]
+      const theoryId = sub?.theoryTypeIds[0]
+      const firstPractice = sub
+        ? GRAM_EXERCISE_KINDS.map((k) => gramExerciseTypeId(sub.id, k.id)).find(
+            (id) => exerciseTypeById[id],
+          )
+        : undefined
+      const type =
+        (theoryId ? exerciseTypeById[theoryId] : undefined) ??
+        (firstPractice ? exerciseTypeById[firstPractice] : undefined) ??
+        firstTypeFor('grammaire', topic)
+      updatePage({ topic, ...applyType(type) })
+      return
+    }
     const type =
       typesForTopic(topic, activePage.domain === 'français' ? (activeBlock.track ?? 'voc') : undefined)[0] ??
       firstTypeFor(activePage.domain, topic, activeBlock.track)
     updatePage({ topic, ...applyType(type) })
+  }
+
+  function changeGramSubtheme(subId: string) {
+    if (activePage.domain !== 'grammaire') return
+    const found =
+      subthemesForTopicAll(activeBlock.topic).find((s) => s.id === subId) ??
+      resolveGramSubthemeAll(activeBlock.topic, `gram-ex-${subId}-fill-conj`)
+    if (!found || found.id !== subId) return
+    const theoryId = found.theoryTypeIds[0]
+    const firstPractice = GRAM_EXERCISE_KINDS.map((k) =>
+      gramExerciseTypeId(found.id, k.id),
+    ).find((id) => exerciseTypeById[id])
+    const type =
+      (theoryId ? exerciseTypeById[theoryId] : undefined) ??
+      (firstPractice ? exerciseTypeById[firstPractice] : undefined)
+    if (!type) return
+    updatePage({ ...applyType(type, { ...activeBlock, topic: found.topic }) })
   }
 
   function changeSoutienLetter(letterId: string) {
@@ -527,5 +566,6 @@ export function usePageNavigation({
     changeTopic,
     changeSoutienLetter,
     changeSoutienSound,
+    changeGramSubtheme,
   }
 }
