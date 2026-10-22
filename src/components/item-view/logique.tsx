@@ -9,12 +9,57 @@ function CheckBox({ checked }: { checked?: boolean }) {
   )
 }
 
+function ChoiceCell({
+  src,
+  lab,
+  isAnswer,
+}: {
+  src: string
+  lab: string
+  isAnswer: boolean
+}) {
+  return (
+    <li className={`logique-choice${isAnswer ? ' is-answer' : ''}`}>
+      <img className="logique-img" src={src} alt="" />
+      <span className="logique-choice-meta">
+        <span className="logique-choice-lab">{lab}.</span>
+        <CheckBox checked={isAnswer} />
+      </span>
+    </li>
+  )
+}
+
 export function LogiqueBlock({ item, mode }: { item: MathItem; mode: PreviewMode }) {
   const p = item.logique as LogiquePuzzle | undefined
   if (!p) return null
   const show = mode === 'answers'
   const hasChoices = p.choices.length > 0
   const isSuite = p.mode === 'suite'
+  const isRotation = p.mode === 'rotation'
+
+  if (isRotation) {
+    const model = p.stem[0]
+    return (
+      <div className="logique-block is-rotation">
+        <ul className="logique-rotation-row">
+          <li className="logique-model">
+            {model ? <img className="logique-img" src={model} alt="" /> : null}
+          </li>
+          {p.choices.map((src, i) => {
+            const lab = p.choiceLabels?.[i] ?? String.fromCharCode(65 + i)
+            return (
+              <ChoiceCell
+                key={`c-${i}`}
+                src={src}
+                lab={lab}
+                isAnswer={show && p.correctIndex === i}
+              />
+            )
+          })}
+        </ul>
+      </div>
+    )
+  }
 
   return (
     <div className={`logique-block is-${p.mode}${isSuite ? ' is-suite-layout' : ''}`}>
@@ -31,16 +76,14 @@ export function LogiqueBlock({ item, mode }: { item: MathItem; mode: PreviewMode
       {hasChoices ? (
         <ul className="logique-choices">
           {p.choices.map((src, i) => {
-            const isAnswer = show && p.correctIndex === i
             const lab = p.choiceLabels?.[i] ?? String.fromCharCode(65 + i)
             return (
-              <li key={`c-${i}`} className={`logique-choice${isAnswer ? ' is-answer' : ''}`}>
-                <img className="logique-img" src={src} alt="" />
-                <span className="logique-choice-meta">
-                  <span className="logique-choice-lab">{lab}.</span>
-                  <CheckBox checked={isAnswer} />
-                </span>
-              </li>
+              <ChoiceCell
+                key={`c-${i}`}
+                src={src}
+                lab={lab}
+                isAnswer={show && p.correctIndex === i}
+              />
             )
           })}
         </ul>

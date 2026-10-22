@@ -30,6 +30,7 @@ const KINDS: LogiqueKind[] = [
     label: 'Rotation',
     description: 'Retrouver la même forme après une rotation.',
     instruction: 'Cochez la forme identique au modèle (même après rotation).',
+    preferredColumns: 1,
   },
   {
     id: 'logique-matrice',

@@ -5389,6 +5389,17 @@ textarea.pill-input,
 .logique-block.is-intrus .logique-choices .logique-img{
   max-height:70px;max-width:100%;width:auto;margin:0 auto
 }
+/* Rotation : modèle (col. 1) + 4 réponses (cols 2–5) */
+.logique-rotation-row{
+  list-style:none;margin:0;padding:0;width:100%;
+  display:grid;grid-template-columns:repeat(5,minmax(0,1fr));
+  gap:8px 10px;align-items:start;justify-items:center
+}
+.logique-block.is-rotation .logique-model,
+.logique-block.is-rotation .logique-choice{width:100%;min-width:0;display:flex;flex-direction:column;align-items:center;gap:4px}
+.logique-block.is-rotation .logique-img{
+  max-height:70px;max-width:100%;width:auto;margin:0 auto
+}
 .logique-block.is-matrice .logique-stem .logique-img,
 .logique-block.is-assemblage .logique-stem .logique-img,
 .logique-block.is-superposition .logique-stem .logique-img,
