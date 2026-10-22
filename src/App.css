@@ -5420,25 +5420,27 @@ textarea.pill-input,
 .logique-block.is-matrice .logique-choice .logique-img{
   max-height:56px;max-width:100%;width:auto
 }
-/* Assemblage : 2×4 — énoncé ligne 1 (span 4), 4 réponses ligne 2 */
-.logique-assemblage-grid{
-  list-style:none;margin:0;padding:0;width:100%;
-  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));
-  grid-template-rows:auto auto;gap:8px 10px;
-  align-items:center;justify-items:center
+/* Assemblage : énoncé, puis 4 réponses alignées sur la même largeur */
+.logique-assemblage-stack{
+  display:flex;flex-direction:column;align-items:stretch;gap:8px;
+  width:fit-content;max-width:100%;margin:0 auto
 }
 .logique-block.is-assemblage .logique-model{
-  grid-column:1 / -1;grid-row:1;
-  width:100%;display:flex;justify-content:center;align-items:center
+  display:block;line-height:0
 }
 .logique-block.is-assemblage .logique-model .logique-img{
-  max-height:90px;max-width:100%;width:auto
+  display:block;max-height:100px;max-width:100%;width:auto;height:auto
+}
+.logique-assemblage-choices{
+  list-style:none;margin:0;padding:0;width:100%;
+  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:6px 8px;align-items:start;justify-items:center
 }
 .logique-block.is-assemblage .logique-choice{
   width:100%;min-width:0;display:flex;flex-direction:column;align-items:center;gap:4px
 }
 .logique-block.is-assemblage .logique-choice .logique-img{
-  max-height:64px;max-width:100%;width:auto
+  max-height:72px;max-width:100%;width:auto;height:auto
 }
 /* Case intrus : une seule image (coloriage) */
 .logique-block.is-case-intrus .logique-stem.is-single{

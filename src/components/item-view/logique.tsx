@@ -105,22 +105,24 @@ export function LogiqueBlock({ item, mode }: { item: MathItem; mode: PreviewMode
     const model = p.stem[0]
     return (
       <div className="logique-block is-assemblage">
-        <ul className="logique-assemblage-grid">
-          <li className="logique-model">
+        <div className="logique-assemblage-stack">
+          <div className="logique-model">
             {model ? <img className="logique-img" src={model} alt="" /> : null}
-          </li>
-          {p.choices.map((src, i) => {
-            const lab = p.choiceLabels?.[i] ?? String.fromCharCode(65 + i)
-            return (
-              <ChoiceCell
-                key={`c-${i}`}
-                src={src}
-                lab={lab}
-                isAnswer={show && p.correctIndex === i}
-              />
-            )
-          })}
-        </ul>
+          </div>
+          <ul className="logique-assemblage-choices">
+            {p.choices.map((src, i) => {
+              const lab = p.choiceLabels?.[i] ?? String.fromCharCode(65 + i)
+              return (
+                <ChoiceCell
+                  key={`c-${i}`}
+                  src={src}
+                  lab={lab}
+                  isAnswer={show && p.correctIndex === i}
+                />
+              )
+            })}
+          </ul>
+        </div>
       </div>
     )
   }
