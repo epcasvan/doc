@@ -5400,7 +5400,26 @@ textarea.pill-input,
 .logique-block.is-rotation .logique-img{
   max-height:70px;max-width:100%;width:auto;margin:0 auto
 }
-.logique-block.is-matrice .logique-stem .logique-img,
+/* Matrice : 4 cols × 2 rows — modèle col.1 (span 2), 6 réponses */
+.logique-matrice-grid{
+  list-style:none;margin:0;padding:0;width:100%;
+  display:grid;grid-template-columns:1.4fr repeat(3,minmax(0,1fr));
+  grid-template-rows:auto auto;gap:8px 10px;
+  align-items:center;justify-items:center
+}
+.logique-block.is-matrice .logique-model{
+  grid-column:1;grid-row:1 / span 2;
+  width:100%;min-width:0;display:flex;align-items:center;justify-content:center
+}
+.logique-block.is-matrice .logique-model .logique-img{
+  max-height:140px;max-width:100%;width:auto
+}
+.logique-block.is-matrice .logique-choice{
+  width:100%;min-width:0;display:flex;flex-direction:column;align-items:center;gap:4px
+}
+.logique-block.is-matrice .logique-choice .logique-img{
+  max-height:56px;max-width:100%;width:auto
+}
 .logique-block.is-assemblage .logique-stem .logique-img,
 .logique-block.is-superposition .logique-stem .logique-img,
 .logique-block.is-cube .logique-stem .logique-img{max-height:100px}

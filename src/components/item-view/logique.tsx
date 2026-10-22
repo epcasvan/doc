@@ -36,12 +36,37 @@ export function LogiqueBlock({ item, mode }: { item: MathItem; mode: PreviewMode
   const hasChoices = p.choices.length > 0
   const isSuite = p.mode === 'suite'
   const isRotation = p.mode === 'rotation'
+  const isMatrice = p.mode === 'matrice'
 
   if (isRotation) {
     const model = p.stem[0]
     return (
       <div className="logique-block is-rotation">
         <ul className="logique-rotation-row">
+          <li className="logique-model">
+            {model ? <img className="logique-img" src={model} alt="" /> : null}
+          </li>
+          {p.choices.map((src, i) => {
+            const lab = p.choiceLabels?.[i] ?? String.fromCharCode(65 + i)
+            return (
+              <ChoiceCell
+                key={`c-${i}`}
+                src={src}
+                lab={lab}
+                isAnswer={show && p.correctIndex === i}
+              />
+            )
+          })}
+        </ul>
+      </div>
+    )
+  }
+
+  if (isMatrice) {
+    const model = p.stem[0]
+    return (
+      <div className="logique-block is-matrice">
+        <ul className="logique-matrice-grid">
           <li className="logique-model">
             {model ? <img className="logique-img" src={model} alt="" /> : null}
           </li>

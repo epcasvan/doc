@@ -185,7 +185,11 @@ function splitImages(typeId, paths) {
     const choiceCount = Math.min(5, n - 1)
     return { stem: paths.slice(0, n - choiceCount), choices: paths.slice(n - choiceCount) }
   }
-  // matrice, assemblage, superposition
+  if (typeId === 'logique-matrice' && n >= 2) {
+    const choiceCount = Math.min(6, n - 1)
+    return { stem: paths.slice(0, n - choiceCount), choices: paths.slice(n - choiceCount) }
+  }
+  // assemblage, superposition
   if (n >= 4) {
     const choiceCount = n >= 6 ? Math.min(5, n - 1) : Math.min(3, Math.floor(n / 2))
     return { stem: paths.slice(0, n - choiceCount), choices: paths.slice(n - choiceCount) }

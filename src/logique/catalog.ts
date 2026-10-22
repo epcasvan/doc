@@ -37,6 +37,7 @@ const KINDS: LogiqueKind[] = [
     label: 'Matrice',
     description: 'Compléter une case manquante dans une grille selon les lignes et colonnes.',
     instruction: 'Cochez la forme qui complète la grille.',
+    preferredColumns: 1,
   },
   {
     id: 'logique-assemblage',
