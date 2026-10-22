@@ -23,6 +23,7 @@ const KINDS: LogiqueKind[] = [
     label: 'Trouver l’intrus',
     description: 'Repérer la forme qui ne suit pas la même règle que les autres.',
     instruction: 'Cochez l’intrus.',
+    preferredColumns: 1,
   },
   {
     id: 'logique-rotation',

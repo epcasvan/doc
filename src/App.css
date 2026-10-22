@@ -5380,7 +5380,15 @@ textarea.pill-input,
   font-size:9px;line-height:1;font-weight:700
 }
 .logique-check.is-checked{background:var(--ink);color:#fff}
-.logique-block.is-intrus .logique-choices .logique-img{max-height:64px}
+/* Intrus : 5 colonnes, image puis A. □ */
+.logique-block.is-intrus .logique-choices{
+  display:grid;grid-template-columns:repeat(5,minmax(0,1fr));
+  gap:8px 10px;width:100%;align-items:start;justify-items:center
+}
+.logique-block.is-intrus .logique-choice{width:100%;min-width:0}
+.logique-block.is-intrus .logique-choices .logique-img{
+  max-height:70px;max-width:100%;width:auto;margin:0 auto
+}
 .logique-block.is-matrice .logique-stem .logique-img,
 .logique-block.is-assemblage .logique-stem .logique-img,
 .logique-block.is-superposition .logique-stem .logique-img,

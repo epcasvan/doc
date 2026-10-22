@@ -37,7 +37,7 @@ export function LogiqueBlock({ item, mode }: { item: MathItem; mode: PreviewMode
               <li key={`c-${i}`} className={`logique-choice${isAnswer ? ' is-answer' : ''}`}>
                 <img className="logique-img" src={src} alt="" />
                 <span className="logique-choice-meta">
-                  <span className="logique-choice-lab">{lab}</span>
+                  <span className="logique-choice-lab">{lab}.</span>
                   <CheckBox checked={isAnswer} />
                 </span>
               </li>
