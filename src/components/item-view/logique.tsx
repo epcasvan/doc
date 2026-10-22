@@ -36,8 +36,22 @@ export function LogiqueBlock({ item, mode }: { item: MathItem; mode: PreviewMode
   const hasChoices = p.choices.length > 0
   const isSuite = p.mode === 'suite'
   const isRotation = p.mode === 'rotation'
-  const isMatrice = p.mode === 'matrice'
+  const isMatrice = p.mode === 'matrice' || p.mode === 'case-manquante'
   const isAssemblage = p.mode === 'assemblage'
+  const isCaseIntrus = p.mode === 'case-intrus'
+
+  if (isCaseIntrus) {
+    const src = p.stem[0]
+    return (
+      <div className="logique-block is-case-intrus">
+        {src ? (
+          <div className="logique-stem is-single">
+            <img className="logique-img" src={src} alt="" />
+          </div>
+        ) : null}
+      </div>
+    )
+  }
 
   if (isRotation) {
     const model = p.stem[0]
@@ -66,7 +80,7 @@ export function LogiqueBlock({ item, mode }: { item: MathItem; mode: PreviewMode
   if (isMatrice) {
     const model = p.stem[0]
     return (
-      <div className="logique-block is-matrice">
+      <div className={`logique-block is-matrice${p.mode === 'case-manquante' ? ' is-case-manquante' : ''}`}>
         <ul className="logique-matrice-grid">
           <li className="logique-model">
             {model ? <img className="logique-img" src={model} alt="" /> : null}

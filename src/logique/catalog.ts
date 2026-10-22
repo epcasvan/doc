@@ -47,10 +47,18 @@ const KINDS: LogiqueKind[] = [
     preferredColumns: 1,
   },
   {
-    id: 'logique-superposition',
-    label: 'Superposition',
-    description: 'Imaginer le résultat de deux formes superposées, ou la pièce manquante.',
-    instruction: 'Cochez la bonne figure.',
+    id: 'logique-case-manquante',
+    label: 'Case manquante',
+    description: 'Retrouver la case manquante d’une grille de superposition.',
+    instruction: 'Cochez la figure qui complète la grille.',
+    preferredColumns: 1,
+  },
+  {
+    id: 'logique-case-intrus',
+    label: 'Case intrus',
+    description: 'Repérer la case qui ne suit pas la règle de superposition.',
+    instruction: 'Coloriez la case intrus.',
+    preferredColumns: 1,
   },
   {
     id: 'logique-cube',

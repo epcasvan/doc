@@ -18,7 +18,8 @@ function modeOf(typeId: string): LogiqueMode {
   if (typeId === 'logique-rotation') return 'rotation'
   if (typeId === 'logique-matrice') return 'matrice'
   if (typeId === 'logique-assemblage') return 'assemblage'
-  if (typeId === 'logique-superposition') return 'superposition'
+  if (typeId === 'logique-case-manquante') return 'case-manquante'
+  if (typeId === 'logique-case-intrus') return 'case-intrus'
   if (typeId === 'logique-cube') return 'cube'
   return 'suite'
 }
@@ -30,7 +31,7 @@ function labelOf(i: number): string {
 /** Mélange les images-réponses et recalcule l’index du bon choix. */
 function toItem(entry: BankEntry, mode: LogiqueMode, rng: Rng): MathItem {
   const rawChoices = entry.choices ?? []
-  const answerLine = entry.answerLine || rawChoices.length === 0
+  const answerLine = entry.answerLine || (rawChoices.length === 0 && mode !== 'case-intrus')
   const correctSrc =
     rawChoices.length > 0
       ? rawChoices[Math.max(0, Math.min(entry.correctIndex ?? 0, rawChoices.length - 1))]
@@ -38,7 +39,7 @@ function toItem(entry: BankEntry, mode: LogiqueMode, rng: Rng): MathItem {
   const choices = rawChoices.length > 1 ? shuffle(rng, [...rawChoices]) : [...rawChoices]
   const labels = choices.map((_, i) => labelOf(i))
   const correctIndex =
-    answerLine || correctSrc == null
+    answerLine || correctSrc == null || mode === 'case-intrus'
       ? undefined
       : Math.max(0, choices.indexOf(correctSrc))
   const puzzle: LogiquePuzzle = {
@@ -47,37 +48,40 @@ function toItem(entry: BankEntry, mode: LogiqueMode, rng: Rng): MathItem {
     choices,
     choiceLabels: labels,
     correctIndex,
-    answerLine,
+    answerLine: mode === 'case-intrus' ? false : answerLine,
   }
   return {
     layout: LOGIQUE_LAYOUT,
     prompt: '',
-    answer: answerLine ? '…' : labels[correctIndex ?? 0] ?? 'A',
+    answer:
+      mode === 'case-intrus'
+        ? '…'
+        : answerLine
+          ? '…'
+          : labels[correctIndex ?? 0] ?? 'A',
     logique: puzzle,
   }
 }
 
 const DEFAULT_COUNT: Record<string, number> = {
   'logique-suite-graphique': 6,
-  'logique-suite-logique': 4,
-  'logique-suite-formes': 2,
   'logique-intrus': 6,
   'logique-rotation': 5,
   'logique-matrice': 4,
   'logique-assemblage': 4,
-  'logique-superposition': 5,
+  'logique-case-manquante': 4,
+  'logique-case-intrus': 6,
   'logique-cube': 6,
 }
 
 const INSTRUCTION: Record<string, string> = {
   'logique-suite-graphique': 'Cochez la forme qui continue la suite.',
-  'logique-suite-logique': 'Complétez ou cochez la suite logique.',
-  'logique-suite-formes': 'Cochez la forme qui continue la suite.',
   'logique-intrus': 'Cochez l’intrus.',
   'logique-rotation': 'Cochez la forme identique au modèle (même après rotation).',
   'logique-matrice': 'Cochez la forme qui complète la grille.',
   'logique-assemblage': 'Cochez l’assemblage correct.',
-  'logique-superposition': 'Cochez la bonne figure.',
+  'logique-case-manquante': 'Cochez la figure qui complète la grille.',
+  'logique-case-intrus': 'Coloriez la case intrus.',
   'logique-cube': 'Répondez à chaque question sur les cubes.',
 }
 

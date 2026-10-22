@@ -5440,7 +5440,13 @@ textarea.pill-input,
 .logique-block.is-assemblage .logique-choice .logique-img{
   max-height:64px;max-width:100%;width:auto
 }
-.logique-block.is-superposition .logique-stem .logique-img,
+/* Case intrus : une seule image (coloriage) */
+.logique-block.is-case-intrus .logique-stem.is-single{
+  display:flex;justify-content:center;width:100%
+}
+.logique-block.is-case-intrus .logique-img{
+  max-height:160px;max-width:100%;width:auto
+}
 .logique-block.is-cube .logique-stem .logique-img{max-height:100px}
 .logique-block .answer-line-field{margin-top:4px;width:100%}
 /* End */

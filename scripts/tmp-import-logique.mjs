@@ -62,7 +62,13 @@ const SOURCES = {
   'logique-assemblage': [
     '10 - Logique complex/MATH-S_EX_10.03_Assemblage_01.docx',
   ],
-  'logique-superposition': [
+  /** Même Word : exercices à 1 image → case-intrus ; à ≥6 images → case-manquante. */
+  'logique-case-manquante': [
+    '10 - Logique complex/MATH-S_EX_10.04_Superposition_01.docx',
+    '10 - Logique complex/MATH-S_EX_10.05_Superposition_02.docx',
+    '14 - Logique complex P2/MATH-S_EX_14.05_Superposition_03.docx',
+  ],
+  'logique-case-intrus': [
     '10 - Logique complex/MATH-S_EX_10.04_Superposition_01.docx',
     '10 - Logique complex/MATH-S_EX_10.05_Superposition_02.docx',
     '14 - Logique complex P2/MATH-S_EX_14.05_Superposition_03.docx',
@@ -76,6 +82,10 @@ const SOURCES = {
 }
 
 function folderForType(typeId) {
+  // Case manquante / intrus partagent les Word « Superposition ».
+  if (typeId === 'logique-case-manquante' || typeId === 'logique-case-intrus') {
+    return 'superposition'
+  }
   return typeId.replace(/^logique-/, '')
 }
 
@@ -193,10 +203,14 @@ function splitImages(typeId, paths) {
     const choiceCount = Math.min(4, n - 1)
     return { stem: paths.slice(0, n - choiceCount), choices: paths.slice(n - choiceCount) }
   }
-  // superposition
-  if (n >= 4) {
-    const choiceCount = n >= 6 ? Math.min(5, n - 1) : Math.min(3, Math.floor(n / 2))
+  if (typeId === 'logique-case-manquante') {
+    if (n < 6) return null
+    const choiceCount = Math.min(6, n - 1)
     return { stem: paths.slice(0, n - choiceCount), choices: paths.slice(n - choiceCount) }
+  }
+  if (typeId === 'logique-case-intrus') {
+    if (n !== 1) return null
+    return { stem: paths, choices: [] }
   }
   return { stem: paths, choices: [] }
 }
@@ -244,14 +258,22 @@ for (const [typeId, docs] of Object.entries(SOURCES)) {
         }
       }
       if (!publicPaths.length) continue
-      const { stem, choices } = splitImages(typeId, publicPaths)
+      const split = splitImages(typeId, publicPaths)
+      if (!split) {
+        // Images écrites mais hors critère du type (ex. case-intrus vs case-manquante).
+        rmSync(exDir, { recursive: true, force: true })
+        continue
+      }
+      const { stem, choices } = split
       bank[typeId].push({
         id: `${typeFolder}-p${pack}-e${ex.num}`,
         stem,
         choices,
         /** Index du bon choix (0-based) — inconnu dans le Word élève ; 0 par défaut. */
         correctIndex: 0,
-        answerLine: typeId === 'logique-cube' && choices.length === 0,
+        answerLine:
+          (typeId === 'logique-cube' || typeId === 'logique-case-intrus') &&
+          choices.length === 0,
       })
       total += 1
     }

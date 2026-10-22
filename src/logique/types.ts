@@ -12,7 +12,8 @@ export type LogiqueMode =
   | 'rotation'
   | 'matrice'
   | 'assemblage'
-  | 'superposition'
+  | 'case-manquante'
+  | 'case-intrus'
   | 'cube'
 
 /** Données de rendu d’un exercice logique (images de la banque Word). */

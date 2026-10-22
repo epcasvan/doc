@@ -1,21 +1,21 @@
 # Logique
 
 Domaine ClairFLE pour les fiches de logique scolaire (esprit CSC « Logique et espace »).
-Chaque **thème** du sélecteur est un type d’exercice (pas de regroupement simple / complexe).
+Chaque **thème** du sélecteur est un type d’exercice.
 
 | Fichier | Rôle |
 |---|---|
-| `catalog.ts` | Thèmes = types (suite graphique, intrus, matrice…) |
+| `catalog.ts` | Thèmes = types |
 | `bank.json` | Banque d’exercices (chemins d’images) |
-| `generate.ts` | Tirage déterministe dans la banque (`createRng`) |
+| `generate.ts` | Tirage déterministe (`createRng`), mélange des réponses |
 | `types.ts` | `LogiquePuzzle`, `isLogiqueType` |
 | `../components/item-view/logique.tsx` | Rendu images + cases à cocher |
-| `../../public/lib/images/logique/` | Graphiques importés des Word CSC |
+| `../../public/lib/images/logique/` | Graphiques Word CSC |
 | `../../scripts/tmp-import-logique.mjs` | Réimport Word → webp + bank.json |
 
 ## Thèmes
 
 - Suite graphique · Trouver l’intrus · Rotation
-- Matrice · Assemblage · Superposition · Cube
-
-La consigne est au niveau de l’exercice ; chaque item n’affiche que son numéro et les images.
+- Matrice · Assemblage
+- **Case manquante** (disposition type matrice) · **Case intrus** (1 image, coloriage)
+- Cube
