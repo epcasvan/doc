@@ -17,10 +17,11 @@ function blockToItem(docTitle: string, block: GrammarTheoryBlock, index: number)
 /** Génère une fiche théorie FALC ou un bloc d’exercices (déterministe). */
 export function tryGenerateGrammaireBlock(
   config: PageConfig,
+  seed: number,
 ): { instruction: string; items: MathItem[]; bankQuestionCap?: number } | null {
   const typeId = config.exerciseType
   if (isGrammaireExerciseType(typeId)) {
-    return tryGenerateGrammaireExerciseBlock(config)
+    return tryGenerateGrammaireExerciseBlock(config, seed)
   }
   if (!isGrammaireTheoryType(typeId)) return null
   const doc = theoryDocByTypeId[typeId]

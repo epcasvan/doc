@@ -197,7 +197,6 @@ function buildPluriel(profile: SubProfile): GramBankItem[] {
     const v = profile.verbs[i % profile.verbs.length]!
     const { s, p } = pairs[i % pairs.length]!
     const tail = tailAt(tails, i)
-    const sp = STANDARD_PRONOUNS[s]!
     const pp = STANDARD_PRONOUNS[p]!
     const sing = affirmativeSentence(v, profile.mode, s, tail)
     const plurForm = fullForm(v, profile.mode, p)

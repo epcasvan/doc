@@ -37,6 +37,7 @@ function toItem(
 /** Génère un bloc d’exercices grammaire (déterministe). */
 export function tryGenerateGrammaireExerciseBlock(
   config: PageConfig,
+  seed: number,
 ): { instruction: string; items: MathItem[]; bankQuestionCap?: number } | null {
   const typeId = config.exerciseType
   if (!isGrammaireExerciseType(typeId)) return null
@@ -60,7 +61,7 @@ export function tryGenerateGrammaireExerciseBlock(
     }
   }
 
-  const rng = createRng(config.seed)
+  const rng = createRng(seed)
   const count = Math.min(Math.max(1, config.count), bank.length)
   const order = shuffle(
     rng,
@@ -69,7 +70,7 @@ export function tryGenerateGrammaireExerciseBlock(
 
   const items = order.map((bi, qi) => {
     const row = bank[bi]!
-    return toItem(kind.layout, row.prompt, row.answer, row.options, (config.seed + qi * 17 + bi) >>> 0)
+    return toItem(kind.layout, row.prompt, row.answer, row.options, (seed + qi * 17 + bi) >>> 0)
   })
 
   return {

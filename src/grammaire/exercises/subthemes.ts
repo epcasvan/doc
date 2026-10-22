@@ -175,7 +175,6 @@ export function resolveGramSubtheme(
   const list = subthemesForTopic(topic)
   if (!list.length) return undefined
   if (exerciseType.startsWith('gram-ex-')) {
-    const parts = exerciseType.split('-')
     // gram-ex-{sub…}-{kind} — kinds are single tokens from GRAM_EXERCISE_KINDS
     const kindIds = [
       'qcm-conj',

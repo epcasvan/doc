@@ -81,7 +81,7 @@ function buildSingleBlock(
   if (tcf) {
     return { title: fallbackTitle, instruction: tcf.instruction, items: tcf.items }
   }
-  const grammaire = tryGenerateGrammaireBlock(config)
+  const grammaire = tryGenerateGrammaireBlock(config, seed)
   if (grammaire) {
     return {
       title: fallbackTitle,
