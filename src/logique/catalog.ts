@@ -44,6 +44,7 @@ const KINDS: LogiqueKind[] = [
     label: 'Assemblage',
     description: 'Choisir l’assemblage qui correspond aux pièces données.',
     instruction: 'Cochez l’assemblage correct.',
+    preferredColumns: 1,
   },
   {
     id: 'logique-superposition',

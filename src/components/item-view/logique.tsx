@@ -37,6 +37,7 @@ export function LogiqueBlock({ item, mode }: { item: MathItem; mode: PreviewMode
   const isSuite = p.mode === 'suite'
   const isRotation = p.mode === 'rotation'
   const isMatrice = p.mode === 'matrice'
+  const isAssemblage = p.mode === 'assemblage'
 
   if (isRotation) {
     const model = p.stem[0]
@@ -67,6 +68,30 @@ export function LogiqueBlock({ item, mode }: { item: MathItem; mode: PreviewMode
     return (
       <div className="logique-block is-matrice">
         <ul className="logique-matrice-grid">
+          <li className="logique-model">
+            {model ? <img className="logique-img" src={model} alt="" /> : null}
+          </li>
+          {p.choices.map((src, i) => {
+            const lab = p.choiceLabels?.[i] ?? String.fromCharCode(65 + i)
+            return (
+              <ChoiceCell
+                key={`c-${i}`}
+                src={src}
+                lab={lab}
+                isAnswer={show && p.correctIndex === i}
+              />
+            )
+          })}
+        </ul>
+      </div>
+    )
+  }
+
+  if (isAssemblage) {
+    const model = p.stem[0]
+    return (
+      <div className="logique-block is-assemblage">
+        <ul className="logique-assemblage-grid">
           <li className="logique-model">
             {model ? <img className="logique-img" src={model} alt="" /> : null}
           </li>
