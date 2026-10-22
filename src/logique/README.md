@@ -15,8 +15,7 @@ Chaque **thème** du sélecteur est un type d’exercice (pas de regroupement si
 
 ## Thèmes
 
-- Suite graphique · Suite logique · Suite de formes
-- Trouver l’intrus · Rotation
+- Suite graphique · Trouver l’intrus · Rotation
 - Matrice · Assemblage · Superposition · Cube
 
 La consigne est au niveau de l’exercice ; chaque item n’affiche que son numéro et les images.

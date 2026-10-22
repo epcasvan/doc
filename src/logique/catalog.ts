@@ -19,18 +19,6 @@ const KINDS: LogiqueKind[] = [
     instruction: 'Cochez la forme qui continue la suite.',
   },
   {
-    id: 'logique-suite-logique',
-    label: 'Suite logique',
-    description: 'Compléter une suite selon une règle (nombres, symboles, figures).',
-    instruction: 'Complétez ou cochez la suite logique.',
-  },
-  {
-    id: 'logique-suite-formes',
-    label: 'Suite de formes',
-    description: 'Continuer une suite de formes géométriques.',
-    instruction: 'Cochez la forme qui continue la suite.',
-  },
-  {
     id: 'logique-intrus',
     label: 'Trouver l’intrus',
     description: 'Repérer la forme qui ne suit pas la même règle que les autres.',
