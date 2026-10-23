@@ -51,6 +51,7 @@ export const GRAM_LESSONS_WORD_NEGATION: GramLesson[] = [
       fill('de – Paul – voiture. – pas – a – n’', 'Paul n’a pas de voiture.'),
       fill('après-demain. – ne – Ils – travaillent – pas', 'Ils ne travaillent pas après-demain.'),
       fill('pas – en – êtes – n’ – vous – Aujourd’hui – retard.', 'Aujourd’hui vous n’êtes pas en retard.'),
+      fill('Je – pas – brun. – suis – ne', 'Je ne suis pas brun.'),
     ],
   ),
   lesson(
