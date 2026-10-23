@@ -1,5 +1,5 @@
 /** Exercices CSC leçon 03 Négation-1 / Négation-2 — sans la théorie. */
-import { fill, lesson, qcm } from './helpers'
+import { fill, lesson } from './helpers'
 import type { GramLesson } from '../types'
 
 export const GRAM_LESSONS_WORD_NEGATION: GramLesson[] = [
