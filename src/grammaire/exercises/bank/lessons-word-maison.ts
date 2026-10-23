@@ -1,9 +1,11 @@
-/** Exercices CSC leçon 05 Maison-1 / Maison-2 — sans la théorie. */
-import { fill, lesson } from './helpers'
+/** Exercices CSC leçon 05 Maison-1 à 4 et Évaluation 1A/1B — sans la théorie. */
+import { fill, lesson, writeItem } from './helpers'
 import type { GramLesson } from '../types'
 
 const M1 = '/lib/audio/grammaire/maison/lecon-05-01-01-1-audio-1.mp3'
 const M2 = '/lib/audio/grammaire/maison/lecon-05-01-01-2-audio-1.mp3'
+const M3 = '/lib/audio/grammaire/maison/lecon-05-01-01-3-audio-1.mp3'
+const M4 = '/lib/audio/grammaire/maison/lecon-05-01-01-4-audio-1.mp3'
 
 export const GRAM_LESSONS_WORD_MAISON: GramLesson[] = [
   lesson(
@@ -48,6 +50,39 @@ export const GRAM_LESSONS_WORD_MAISON: GramLesson[] = [
       fill('Numéro 7 (écoute) → ___', 'faire la lessive', { audioSrc: M2 }),
       fill('Numéro 8 (écoute) → ___', 'passer l’aspirateur', { audioSrc: M2 }),
       fill('Numéro 9 (écoute) → ___', 'passer la serpillière', { audioSrc: M2 }),
+      fill('Ana et Lisa nettoient la maison. (écoute) Vrai ou faux ?', 'Faux', { audioSrc: M3 }),
+      fill('Ana est fatiguée. (écoute) Vrai ou faux ?', 'Faux', { audioSrc: M3 }),
+      fill('Le compagnon de Lisa ne l’aide pas pour faire le ménage. (écoute) Vrai ou faux ?', 'Vrai', {
+        audioSrc: M3,
+      }),
+      fill('Le compagnon de Lisa cuisine le week-end. (écoute) Vrai ou faux ?', 'Faux', {
+        audioSrc: M3,
+      }),
+      fill('Lisa sort souvent les poubelles. (écoute) Vrai ou faux ?', 'Faux', { audioSrc: M3 }),
+      fill('Qu’est-ce que Lisa a fait hier ?', 'Elle a fait la lessive, plié le linge et nettoyé la salle de bain.', {
+        audioSrc: M3,
+      }),
+      fill('Le compagnon de Lisa n’aime pas faire …', 'le ménage', { audioSrc: M3 }),
+      fill('Est-ce que Ana est contente ?', 'Non', { audioSrc: M3 }),
+      fill('Dans quelle pièce Amir fait le ménage ?', 'la salle de bain et la cuisine', {
+        audioSrc: M4,
+      }),
+      fill('Quels objets sont dans la chambre des enfants ? A crayons et peluches / B cahiers et habits / C jouets et cahiers', 'C', {
+        audioSrc: M4,
+      }),
+      fill('Est-ce qu’Amir range son bureau ?', 'Non', { audioSrc: M4 }),
+      fill('Qu’est-ce qu’Amir fait dans le garage ?', 'Il range ses outils et passe un coup de balai.', {
+        audioSrc: M4,
+      }),
+      fill('Qui fait le jardinage ? (Amir)', 'sa femme', { audioSrc: M4 }),
+      fill('Chaque matin, je ___ (laver) la vaisselle.', 'lave'),
+      fill('Est-ce que tu ___ (épousseter) les meubles du salon ?', 'époussettes'),
+      fill('Alona et Daryna ___ (nettoyer) quand les toilettes ?', 'nettoient'),
+      fill('Nous ___ (polir) les vitres pour qu’elles soient propres.', 'polissons'),
+      fill('Vous ___ (polir) les vitres au printemps ?', 'polissez'),
+      fill('Le mercredi, il ___ (passer) l’aspirateur dans le salon.', 'passe'),
+      fill('Le soir, tu ___ (jeter) les ordures dans les poubelles ?', 'jettes'),
+      fill('Ivan et Dmytro ___ (balayer) le sol de l’appartement.', 'balayent'),
     ],
   ),
   lesson(
@@ -84,7 +119,7 @@ export const GRAM_LESSONS_WORD_MAISON: GramLesson[] = [
     'e5',
     'fill-conj',
     'Compléter d’abord / ensuite / enfin',
-    'Lisez le texte, puis écrivez d’abord, ensuite, enfin, ou la réponse.',
+    'Écoutez s’il y a un enregistrement, lisez, puis écrivez d’abord, ensuite, enfin, ou la réponse.',
     [
       fill('D’où vient Zahra ?', 'd’Iran'),
       fill('Elle fait quoi le week-end ?', 'le ménage'),
@@ -94,6 +129,60 @@ export const GRAM_LESSONS_WORD_MAISON: GramLesson[] = [
       fill('À qui sont les jouets ?', 'à sa sœur'),
       fill('___ elle lave la vaisselle, puis elle s’occupe de la lessive. (Zahra)', 'D’abord'),
       fill('Elle ___ par laver la vaisselle. (verbe)', 'commence'),
+      fill('Que fait Lisa en premier ? (hier soir)', 'elle fait la lessive', { audioSrc: M3 }),
+      fill('Que fait Lisa ensuite ? (linge)', 'elle plie le linge', { audioSrc: M3 }),
+      fill('Que fait Lisa enfin ? (salle de bain)', 'elle nettoie la salle de bain', {
+        audioSrc: M3,
+      }),
+      fill('Amir commence par quelle pièce ?', 'la salle de bain', { audioSrc: M4 }),
+      fill('Amir fait ensuite le ménage dans ___', 'la cuisine', { audioSrc: M4 }),
+    ],
+  ),
+  lesson(
+    'd1',
+    'negatif',
+    'Conjuguer les tâches à la forme négative',
+    'Conjuguez le verbe au présent et à la forme négative.',
+    [
+      fill('Vous (polir) les vitres au printemps ? → négatif', 'Vous ne polissez pas les vitres au printemps ?'),
+      fill('Le mercredi, il (passer) l’aspirateur dans le salon. → négatif', 'Le mercredi, il ne passe pas l’aspirateur dans le salon.'),
+      fill('Le soir, tu (jeter) les ordures dans les poubelles ? → négatif', 'Le soir, tu ne jettes pas les ordures dans les poubelles ?'),
+      fill('Ivan et Dmytro (balayer) le sol de l’appartement. → négatif', 'Ivan et Dmytro ne balayent pas le sol de l’appartement.'),
+      fill('Chaque matin, je (laver) la vaisselle. → négatif', 'Chaque matin, je ne lave pas la vaisselle.'),
+      fill('Est-ce que tu (épousseter) les meubles du salon ? → négatif', 'Est-ce que tu n’époussettes pas les meubles du salon ?'),
+      fill('Alona et Daryna (nettoyer) les toilettes. → négatif', 'Alona et Daryna ne nettoient pas les toilettes.'),
+      fill('Nous (polir) les vitres pour qu’elles soient propres. → négatif', 'Nous ne polissons pas les vitres pour qu’elles soient propres.'),
+      fill('Il fait le ménage. (compagnon de Lisa)', 'Il ne fait pas le ménage.', { audioSrc: M3 }),
+      fill('Il nettoie souvent. (compagnon d’Ana)', 'Il ne nettoie pas souvent.', { audioSrc: M3 }),
+    ],
+  ),
+  lesson(
+    'd1',
+    'ecrire',
+    'Écrire sur les tâches domestiques',
+    'Écrivez 30 à 40 mots avec le verbe et le mot proposés.',
+    [
+      writeItem('aimer', 'ménage'),
+      writeItem('détester', 'vaisselle'),
+      writeItem('faire', 'lessive'),
+      writeItem('ranger', 'chambre'),
+      writeItem('organiser', 'tâches'),
+    ],
+  ),
+  lesson(
+    'pc-avoir',
+    'fill-conj',
+    'Conjuguer le passé composé avec avoir',
+    'Conjuguez le verbe entre parenthèses au passé composé.',
+    [
+      fill('Hier, Lisa ___ (faire) la lessive.', 'a fait', { audioSrc: M3 }),
+      fill('Lisa ___ (plier) le linge.', 'a plié', { audioSrc: M3 }),
+      fill('Lisa ___ (nettoyer) la salle de bain.', 'a nettoyé', { audioSrc: M3 }),
+      fill('Hier soir, Lisa ___ (travailler) beaucoup à la maison.', 'a travaillé', {
+        audioSrc: M3,
+      }),
+      fill('Amir ___ (passer) la serpillière dans la cuisine.', 'a passé', { audioSrc: M4 }),
+      fill('Amir ___ (essuyer) les plans de travail.', 'a essuyé', { audioSrc: M4 }),
     ],
   ),
 ]

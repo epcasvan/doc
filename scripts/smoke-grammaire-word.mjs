@@ -54,6 +54,9 @@ try {
     'gram-ex-i7-fill-conj',
     'gram-ex-e1-associer',
     'gram-ex-d1-ordre',
+    'gram-ex-d1-negatif',
+    'gram-ex-d1-ecrire',
+    'gram-ex-pc-avoir-fill-conj',
     'gram-ex-f5-qcm-verbe',
   ]
 
