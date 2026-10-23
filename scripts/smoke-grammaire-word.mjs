@@ -30,6 +30,8 @@ try {
     'gram-ex-er-fill-conj',
     'gram-ex-e2-fill-conj',
     'gram-ex-e2-qcm-verbe',
+    'gram-ex-e2-ordre',
+    'gram-ex-e4-qcm-verbe',
     'gram-ex-e4-fill-conj',
     'gram-ex-e5-fill-conj',
     'gram-ex-d1-associer',
