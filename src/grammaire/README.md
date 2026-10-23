@@ -8,7 +8,7 @@ Domaine dédié pour les **fiches de théorie** FALC et les **exercices** liés 
 | `theory/*.ts` | Contenu FALC français |
 | `exercises/` | kinds, sous-thèmes, banques, générateur |
 | `exercises/bank/word-a1.ts` / `word-a2.ts` | Tous les exercices des Word auteur (Grammaire.docx / Grammaire Suite.docx) |
-| `exercises/bank/lessons-word-*.ts` | Relu mot à mot (se présenter, décrire, -er) |
+| `exercises/bank/lessons-word-*.ts` | Relu mot à mot (se présenter, décrire, -er, jours CSC) |
 | `exercises/bank/lessons-core.ts` / `lessons-rest.ts` | Compléments ClairFLE (mêmes types) |
 | `generate.ts` | Théorie **ou** exercices selon le type |
 
@@ -18,7 +18,7 @@ Domaine dédié pour les **fiches de théorie** FALC et les **exercices** liés 
 2. **Sous-thème** = notion (Être, Avoir, -er… / Passé composé… / fiche théorie)
 3. **Type** = **Théorie** + exercices du sous-thème (libellés de leçon)
 
-Les énoncés d’exercices reprennent les phrases des Word auteur (`Grammaire.docx`, `Grammaire Suite.docx`). Les fiches de théorie FALC restent le type **Théorie**. Les banques ClairFLE complètent les mêmes types sans en créer de doublons.
+Les énoncés d’exercices reprennent les phrases des Word auteur (`Grammaire.docx`, `Grammaire Suite.docx`) et des fiches CSC (exercices seulement, pas la théorie). Les MP3 CSC sont dans `public/lib/audio/grammaire/`. Les fiches de théorie FALC restent le type **Théorie**. Les banques ClairFLE complètent les mêmes types sans en créer de doublons.
 
 ## Types d’exercice (kinds)
 

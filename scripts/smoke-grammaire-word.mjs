@@ -28,6 +28,13 @@ try {
     'gram-ex-description-physique-fill-conj',
     'gram-ex-description-physique-ecrire',
     'gram-ex-er-fill-conj',
+    'gram-ex-e2-fill-conj',
+    'gram-ex-e2-qcm-verbe',
+    'gram-ex-e4-fill-conj',
+    'gram-ex-e5-fill-conj',
+    'gram-ex-d1-associer',
+    'gram-ex-d1-fill-conj',
+    'gram-ex-f6-fill-conj',
   ]
 
   const sePresenter = ALL_GRAM_SUBTHEMES.filter((s) => s.topic === 'gram-se-presenter')
@@ -54,6 +61,7 @@ try {
       JSON.stringify(page?.items.map((i) => i.prompt)) ===
       JSON.stringify(page2?.items.map((i) => i.prompt))
     const sample = page?.items[0]
+    const audioCount = les?.items.filter((item) => item.audioSrc).length ?? 0
     console.log(
       [
         n >= 4 ? 'OK' : 'LOW',
@@ -61,7 +69,8 @@ try {
         `n=${n}`,
         `label=${les?.label ?? '?'}`,
         `det=${same}`,
-        `audio=${Boolean(sample?.audioSrc)}`,
+        `audioItems=${audioCount}`,
+        `sampleAudio=${Boolean(sample?.audioSrc)}`,
         `prompt=${JSON.stringify(sample?.prompt ?? '').slice(0, 90)}`,
       ].join(' | '),
     )
