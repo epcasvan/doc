@@ -49,6 +49,12 @@ try {
     'gram-ex-d1-associer',
     'gram-ex-d1-fill-conj',
     'gram-ex-f6-fill-conj',
+    'gram-ex-g1-fill-conj',
+    'gram-ex-g2-fill-conj',
+    'gram-ex-i7-fill-conj',
+    'gram-ex-e1-associer',
+    'gram-ex-d1-ordre',
+    'gram-ex-f5-qcm-verbe',
   ]
 
   const sePresenter = ALL_GRAM_SUBTHEMES.filter((s) => s.topic === 'gram-se-presenter')
