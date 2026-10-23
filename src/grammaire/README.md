@@ -6,8 +6,10 @@ Domaine dédié pour les **fiches de théorie** FALC et les **exercices** liés 
 |---|---|
 | `catalog.ts` | Thèmes SCAI + types théorie + types exercices |
 | `theory/*.ts` | Contenu FALC français |
-| `exercises/` | 8 kinds, sous-thèmes, banques, générateur |
-| `exercises/bank/lessons*.ts` | Banques originales ClairFLE, rangées par sous-thème |
+| `exercises/` | kinds, sous-thèmes, banques, générateur |
+| `exercises/bank/word-a1.ts` / `word-a2.ts` | Tous les exercices des Word auteur (Grammaire.docx / Grammaire Suite.docx) |
+| `exercises/bank/lessons-word-*.ts` | Relu mot à mot (se présenter, décrire, -er) |
+| `exercises/bank/lessons-core.ts` / `lessons-rest.ts` | Compléments ClairFLE (mêmes types) |
 | `generate.ts` | Théorie **ou** exercices selon le type |
 
 ## UI
@@ -16,9 +18,9 @@ Domaine dédié pour les **fiches de théorie** FALC et les **exercices** liés 
 2. **Sous-thème** = notion (Être, Avoir, -er… / Passé composé… / fiche théorie)
 3. **Type** = **Théorie** + exercices du sous-thème (libellés de leçon)
 
-Les énoncés reprennent l’esprit d’un programme de grammaire quotidienne (compléter, choisir la forme, négation, accord…) avec des phrases originales ClairFLE (Suisse romande). Rien n’est copié verbatim d’un manuel.
+Les énoncés d’exercices reprennent les phrases des Word auteur (`Grammaire.docx`, `Grammaire Suite.docx`). Les fiches de théorie FALC restent le type **Théorie**. Les banques ClairFLE complètent les mêmes types sans en créer de doublons.
 
-## 8 types d’exercice (kinds)
+## Types d’exercice (kinds)
 
 1. Choisissez la bonne conjugaison (QCM)
 2. Conjuguez le verbe (ligne)
@@ -28,6 +30,10 @@ Les énoncés reprennent l’esprit d’un programme de grammaire quotidienne (c
 6. Mettre à la forme négative
 7. Mettre à la forme affirmative
 8. Écrire une phrase
+9. Associer
+10. Remettre dans l’ordre
+11. Transformer la phrase
+12. Corriger la phrase
 
 Les libellés du sélecteur viennent de `GramLesson.label` (ex. « Compléter avec être »).
 

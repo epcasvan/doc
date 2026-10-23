@@ -1,4 +1,4 @@
-/** Banques d’exercices originaux ClairFLE (esprit du programme, pas de copie). */
+/** Banques d’exercices ClairFLE (conjugaison et notions hors Word auteur). */
 import { fill, lesson, qcm, writeItem } from './helpers'
 import type { GramLesson } from '../types'
 
@@ -409,38 +409,6 @@ export const GRAM_LESSONS_CORE: GramLesson[] = [
     qcm('Si vous prenez le train, vous ___ à l’heure.', 'serez', ['serez', 'êtes', 'étiez']),
     qcm('S’ils ___ libres, ils viendront.', 'sont', ['sont', 'seront', 'étaient']),
   ]),
-  lesson('a1', 'fill-conj', 'Compléter s’appeler / être / habiter', 'Complétez avec le verbe conjugué (s’appeler, être, habiter, parler).', [
-    fill('Je ___ (s’appeler) Léa.', 'm’appelle'),
-    fill('Tu ___ (être) suisse ?', 'es'),
-    fill('Nous ___ (habiter) à Sion.', 'habitons'),
-    fill('Elle ___ (parler) français.', 'parle'),
-    fill('Vous ___ (s’appeler) comment ?', 'vous appelez'),
-    fill('Ils ___ (être) étudiants.', 'sont'),
-  ]),
-  lesson('a1', 'ecrire', 'Écrire une présentation', 'Écrivez une phrase avec le verbe et le mot proposés.', [
-    writeItem('s’appeler', 'Lina'),
-    writeItem('être', 'étudiant'),
-    writeItem('habiter', 'Sion'),
-    writeItem('parler', 'français'),
-    writeItem('être', 'suisse'),
-    writeItem('s’appeler', 'Omar'),
-  ]),
-  lesson('a2', 'qcm-verbe', 'Accorder la nationalité', 'Choisissez l’adjectif de nationalité accordé.', [
-    qcm('Marie est ___.', 'française', ['française', 'français', 'françaises']),
-    qcm('Paul est ___.', 'suisse', ['suisse', 'suisses', 'suissesse']),
-    qcm('Nous sommes ___ . (masculin)', 'italiens', ['italiens', 'italien', 'italienne']),
-    qcm('Elle est ___.', 'allemande', ['allemande', 'allemand', 'allemands']),
-    qcm('Ils sont ___.', 'portugais', ['portugais', 'portugaise', 'portugaises']),
-    qcm('Léa et Inès sont ___.', 'espagnoles', ['espagnoles', 'espagnol', 'espagnols']),
-  ]),
-  lesson('a2', 'pluriel', 'Nationalité au pluriel', 'Mettez la phrase au pluriel.', [
-    fill('Il est italien.', 'Ils sont italiens.'),
-    fill('Elle est française.', 'Elles sont françaises.'),
-    fill('Tu es suisse.', 'Vous êtes suisses.'),
-    fill('Je suis belge.', 'Nous sommes belges.'),
-    fill('Il est allemand.', 'Ils sont allemands.'),
-    fill('Elle est chinoise.', 'Elles sont chinoises.'),
-  ]),
   lesson('a3', 'qcm-verbe', 'Aller : pays et villes', 'Choisissez en, au, aux ou à.', [
     qcm('Je vais ___ France.', 'en', ['en', 'au', 'à']),
     qcm('Elle va ___ Japon.', 'au', ['au', 'en', 'à']),
@@ -488,48 +456,6 @@ export const GRAM_LESSONS_CORE: GramLesson[] = [
     fill('Je viens ___ Valais.', 'du'),
     fill('Tu viens ___ Lausanne ?', 'de'),
     fill('Nous venons ___ Irlande.', 'd’'),
-  ]),
-  lesson('a6', 'fill-conj', 'Dire son âge avec avoir', 'Complétez avec le verbe avoir au présent.', [
-    fill('J’___ 28 ans.', 'ai'),
-    fill('Tu ___ quel âge ?', 'as'),
-    fill('Lina ___ 34 ans.', 'a'),
-    fill('Nous ___ le même âge.', 'avons'),
-    fill('Vous ___ 40 ans ?', 'avez'),
-    fill('Les jumeaux ___ 10 ans.', 'ont'),
-  ]),
-  lesson('a6', 'qcm-verbe', 'Être ou avoir pour l’âge', 'Choisissez la forme correcte.', [
-    qcm('J’___ 24 ans.', 'ai', ['ai', 'suis', 'est']),
-    qcm('Elle ___ 30 ans.', 'a', ['a', 'est', 'as']),
-    qcm('Nous ___ 18 ans.', 'avons', ['avons', 'sommes', 'êtes']),
-    qcm('Tu ___ 40 ans ?', 'as', ['as', 'es', 'a']),
-    qcm('Ils ___ 12 ans.', 'ont', ['ont', 'sont', 'avez']),
-    qcm('Vous ___ quel âge ?', 'avez', ['avez', 'êtes', 'ont']),
-  ]),
-  lesson('a7', 'negatif', 'Mettre ne … pas', 'Mettez la phrase à la forme négative. Attention à l’élision.', [
-    fill('Je suis fatigué.', 'Je ne suis pas fatigué.'),
-    fill('Tu as un vélo.', 'Tu n’as pas de vélo.'),
-    fill('Elle parle anglais.', 'Elle ne parle pas anglais.'),
-    fill('Nous habitons ici.', 'Nous n’habitons pas ici.'),
-    fill('Ils vont au cinéma.', 'Ils ne vont pas au cinéma.'),
-    fill('Vous travaillez demain.', 'Vous ne travaillez pas demain.'),
-    fill('Il veut un café.', 'Il ne veut pas de café.'),
-    fill('J’ai cours le matin.', 'Je n’ai pas cours le matin.'),
-  ]),
-  lesson('a7', 'qcm-conj', 'Choisir ne ou n’', 'Choisissez la forme négative correcte.', [
-    qcm('Tu ___ pas française ?', 'n’es', ['n’es', 'ne es', 'n’est']),
-    qcm('Il ___ pas anglais.', 'n’est', ['n’est', 'ne est', 'n’es']),
-    qcm('Je ___ pas cours le vendredi.', 'n’ai', ['n’ai', 'ne ai', 'n’as']),
-    qcm('Nous ___ pas à Genève.', 'n’habitons', ['n’habitons', 'ne habitons', 'n’habite']),
-    qcm('Vous ___ pas disponibles ?', 'n’êtes', ['n’êtes', 'ne êtes', 'n’est']),
-    qcm('Ils ___ pas le même âge.', 'n’ont', ['n’ont', 'ne ont', 'n’a']),
-  ]),
-  lesson('a7', 'affirmatif', 'Enlever ne … pas', 'Mettez la phrase à la forme affirmative.', [
-    fill('Je ne suis pas malade.', 'Je suis malade.'),
-    fill('Tu n’as pas de livre.', 'Tu as un livre.'),
-    fill('Elle ne parle pas français.', 'Elle parle français.'),
-    fill('Nous n’habitons pas à Sion.', 'Nous habitons à Sion.'),
-    fill('Ils ne vont pas à l’école.', 'Ils vont à l’école.'),
-    fill('Vous ne travaillez pas le dimanche.', 'Vous travaillez le dimanche.'),
   ]),
   lesson('a8', 'qcm-verbe', 'Choisir jamais, plus, rien, personne', 'Choisissez la négation qui convient.', [
     qcm('Je ne bois ___ de café. (zéro fois)', 'jamais', ['jamais', 'plus', 'rien']),
