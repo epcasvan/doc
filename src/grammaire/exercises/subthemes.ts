@@ -1,3 +1,5 @@
+import { GRAM_KIND_IDS } from './kinds'
+
 /** Sous-thèmes SCAI (3ᵉ menu) — conjugaison + notions théorie. */
 
 export type GramSubtheme = {
@@ -153,6 +155,14 @@ export const GRAM_SUBTHEMES: GramSubtheme[] = [
     topic: 'gram-avenir',
     theoryTypeIds: ['gram-o3-theorie'],
   },
+
+  // —— Décrire (série CSC : description physique) ——
+  {
+    id: 'description-physique',
+    label: 'Description physique',
+    topic: 'gram-decrire',
+    theoryTypeIds: [],
+  },
 ]
 
 /** Sous-thèmes dérivés des fiches théorie (autres thèmes SCAI, PDF). */
@@ -176,17 +186,7 @@ export function resolveGramSubtheme(
   if (!list.length) return undefined
   if (exerciseType.startsWith('gram-ex-')) {
     // gram-ex-{sub…}-{kind} — kinds are single tokens from GRAM_EXERCISE_KINDS
-    const kindIds = [
-      'qcm-conj',
-      'fill-conj',
-      'qcm-verbe',
-      'pluriel',
-      'singulier',
-      'negatif',
-      'affirmatif',
-      'ecrire',
-    ]
-    for (const kind of kindIds) {
+    for (const kind of GRAM_KIND_IDS) {
       const suffix = `-${kind}`
       if (exerciseType.endsWith(suffix)) {
         const subId = exerciseType.slice('gram-ex-'.length, -suffix.length)
@@ -209,17 +209,7 @@ export function parseGramExerciseType(
   typeId: string,
 ): { subId: string; kindId: string } | null {
   if (!typeId.startsWith('gram-ex-')) return null
-  const kindIds = [
-    'qcm-conj',
-    'fill-conj',
-    'qcm-verbe',
-    'pluriel',
-    'singulier',
-    'negatif',
-    'affirmatif',
-    'ecrire',
-  ]
-  for (const kind of kindIds) {
+  for (const kind of GRAM_KIND_IDS) {
     const suffix = `-${kind}`
     if (typeId.endsWith(suffix)) {
       return {

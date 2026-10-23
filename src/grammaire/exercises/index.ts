@@ -15,6 +15,12 @@ export {
   subthemesForTopicAll,
 } from './catalog-exercises'
 export { tryGenerateGrammaireExerciseBlock } from './generate'
-export { bankForType, bankSize, GRAM_EXERCISE_BANKS } from './bank'
+export {
+  bankForType,
+  bankSize,
+  GRAM_EXERCISE_BANKS,
+  GRAM_LESSONS,
+  lessonForType,
+} from './bank'
 export { isGrammaireExerciseType } from './types'
-export type { GramBankItem } from './types'
+export type { GramBankItem, GramLesson } from './types'

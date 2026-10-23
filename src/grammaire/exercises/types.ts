@@ -1,5 +1,14 @@
 import type { GramExerciseKindId } from './kinds'
 
+export type GramLesson = {
+  subId: string
+  kindId: GramExerciseKindId
+  /** Libellé du type dans le sélecteur (sous-thème déjà choisi). */
+  label: string
+  instruction: string
+  items: GramBankItem[]
+}
+
 export type GramBankItem = {
   /** Énoncé (peut contenir ___ pour le blanc). */
   prompt: string
@@ -13,6 +22,8 @@ export type GramBankItem = {
   givenWord?: string
   /** Verbe donné pour « écrire une phrase ». */
   givenVerb?: string
+  /** Enregistrement à écouter (compréhension orale). */
+  audioSrc?: string
 }
 
 export type GramBankFile = {

@@ -61,6 +61,11 @@ export const GRAM_EXERCISE_KINDS = [
 
 export type GramExerciseKindId = (typeof GRAM_EXERCISE_KINDS)[number]['id']
 
+/** Ids du plus long au plus court (parse `gram-ex-{sub}-{kind}`). */
+export const GRAM_KIND_IDS: GramExerciseKindId[] = (
+  [...GRAM_EXERCISE_KINDS].map((k) => k.id) as GramExerciseKindId[]
+).sort((a, b) => b.length - a.length)
+
 export function gramKindById(id: string) {
   return GRAM_EXERCISE_KINDS.find((k) => k.id === id)
 }

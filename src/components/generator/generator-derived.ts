@@ -125,6 +125,7 @@ export function typeChoicesForBlock(
     const theory = sub.theoryTypeIds
       .map((id) => exerciseTypeById[id])
       .filter((t): t is NonNullable<typeof t> => Boolean(t))
+      .map((t) => ({ ...t, label: 'Théorie' }))
     const practice = GRAM_EXERCISE_KINDS.map((kind) => {
       const id = gramExerciseTypeId(sub.id, kind.id)
       return exerciseTypeById[id]

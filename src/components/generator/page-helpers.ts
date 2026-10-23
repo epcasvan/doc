@@ -20,6 +20,7 @@ import {
   vocabLearnWordsFor,
 } from '@/francais/vocab-learn'
 import { isGrammarTheoryType } from '@/francais/grammar-theory'
+import { isGrammaireExerciseType, isGrammaireTheoryType } from '@/grammaire/types'
 import { parseAlphaType } from '@/alphabetisation/kinds'
 import { parseSoutienType } from '@/francais/soutien/kinds'
 import { defaultThemeGameContent, isGameBankType } from '@/jeux/bank'
@@ -67,7 +68,8 @@ export function applyType(type: ExerciseType, prev?: ExerciseBlock): Partial<Exe
   const isFrenchCom = type.track === 'com'
   const isComQcm =
     type.id.includes('-com-orale') || type.id.includes('-com-ecrite')
-  const isTheory = isGrammarTheoryType(type.id)
+  const isTheory = isGrammarTheoryType(type.id) || isGrammaireTheoryType(type.id)
+  const isGramEx = isGrammaireExerciseType(type.id)
   const isFrenchLang = type.track === 'voc' || type.track === 'gram'
   const isVocabLearn = isVocabLearnType(type.id)
   const isVocabPool = isVocabPoolType(type.id)
@@ -167,6 +169,8 @@ export function applyType(type: ExerciseType, prev?: ExerciseBlock): Partial<Exe
           ? { count: 4 }
           : isPhraseChart || isVocabLearn || isJeux || isCalli || isTheory
             ? { count: 1 }
+            : isGramEx
+              ? { count: 6 }
             : isVocabPool
               ? { count: Math.min(6, Math.max(2, vocabSelected.length)) }
               : isPhrase

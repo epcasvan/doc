@@ -1,33 +1,47 @@
-import { buildAllConjBanks } from '../pools'
-import { pdfBankMap } from './pdf-seed'
-import type { GramBankItem } from '../types'
+import { gramExerciseTypeId } from '../subthemes'
+import type { GramBankItem, GramLesson } from '../types'
+import { GRAM_LESSONS } from './lessons'
 
-const CONJ = buildAllConjBanks()
-const PDF = pdfBankMap()
+export { GRAM_LESSONS }
 
-/** Banques fusionnées (conjugaison + PDF) ; clés = typeId `gram-ex-…`. */
-export const GRAM_EXERCISE_BANKS: Record<string, GramBankItem[]> = { ...CONJ }
-
-for (const [typeId, items] of Object.entries(PDF)) {
-  const existing = GRAM_EXERCISE_BANKS[typeId]
-  if (existing) {
-    // Dédupliquer par prompt
-    const seen = new Set(existing.map((i) => i.prompt))
-    for (const item of items) {
-      if (!seen.has(item.prompt)) {
-        existing.push(item)
-        seen.add(item.prompt)
-      }
+function mergeLessons(rows: GramLesson[]): GramLesson[] {
+  const map = new Map<string, GramLesson>()
+  for (const row of rows) {
+    const key = `${row.subId}|${row.kindId}`
+    const prev = map.get(key)
+    if (!prev) {
+      map.set(key, { ...row, items: [...row.items] })
+      continue
     }
-  } else {
-    GRAM_EXERCISE_BANKS[typeId] = items
+    const seen = new Set(prev.items.map((item) => item.prompt))
+    for (const item of row.items) {
+      if (seen.has(item.prompt)) continue
+      prev.items.push(item)
+      seen.add(item.prompt)
+    }
   }
+  return [...map.values()]
+}
+
+const MERGED = mergeLessons(GRAM_LESSONS)
+
+export const GRAM_LESSON_BY_TYPE: Record<string, GramLesson> = Object.fromEntries(
+  MERGED.map((row) => [gramExerciseTypeId(row.subId, row.kindId), row]),
+)
+
+export function lessonForType(typeId: string): GramLesson | undefined {
+  return GRAM_LESSON_BY_TYPE[typeId]
 }
 
 export function bankForType(typeId: string): GramBankItem[] {
-  return GRAM_EXERCISE_BANKS[typeId] ?? []
+  return lessonForType(typeId)?.items ?? []
 }
 
 export function bankSize(typeId: string): number {
   return bankForType(typeId).length
 }
+
+/** Accès plat typeId → items (compatibilité). */
+export const GRAM_EXERCISE_BANKS: Record<string, GramBankItem[]> = Object.fromEntries(
+  Object.entries(GRAM_LESSON_BY_TYPE).map(([id, row]) => [id, row.items]),
+)

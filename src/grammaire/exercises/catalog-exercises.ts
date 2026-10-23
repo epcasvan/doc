@@ -7,7 +7,7 @@ import {
   parseGramExerciseType,
   theorySubthemeId,
 } from './subthemes'
-import { bankSize } from './bank'
+import { bankSize, lessonForType } from './bank'
 
 /** Sous-thèmes dérivés des fiches théorie (PDF / notions hors conjugaison listée). */
 function theoryDerivedSubthemes(): Array<{
@@ -50,12 +50,13 @@ export function buildGrammairePracticeTypes(): ExerciseType[] {
       if (bankSize(id) <= 0) continue
       if (seen.has(id)) continue
       seen.add(id)
+      const les = lessonForType(id)
       types.push({
         id,
         topic: sub.topic,
-        label: kind.label,
-        description: `${sub.label} — ${kind.description}`,
-        instruction: kind.instruction,
+        label: les?.label ?? kind.label,
+        description: `${sub.label} — ${les?.label ?? kind.description}`,
+        instruction: les?.instruction ?? kind.instruction,
         visual: 'texte',
         preferredColumns: 1,
       })

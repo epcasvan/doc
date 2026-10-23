@@ -2,7 +2,7 @@ import { createRng, int, shuffle } from '@/math/rng'
 import type { MathItem, PageConfig } from '@/math/types'
 import { gramKindById } from './kinds'
 import { parseGramExerciseType } from './subthemes'
-import { bankForType } from './bank'
+import { bankForType, lessonForType } from './bank'
 import { isGrammaireExerciseType } from './types'
 
 function toItem(
@@ -11,7 +11,9 @@ function toItem(
   answer: string,
   options: string[] | undefined,
   seed: number,
+  audioSrc?: string,
 ): MathItem {
+  const audio = audioSrc ? { audioSrc } : {}
   if (kindLayout === 'qcm' && options?.length) {
     const rng = createRng(seed)
     const correct = answer
@@ -25,12 +27,14 @@ function toItem(
       answer: correct,
       options: shuffled,
       labels: [correct],
+      ...audio,
     }
   }
   return {
     layout: 'text',
     prompt,
     answer,
+    ...audio,
   }
 }
 
@@ -70,11 +74,18 @@ export function tryGenerateGrammaireExerciseBlock(
 
   const items = order.map((bi, qi) => {
     const row = bank[bi]!
-    return toItem(kind.layout, row.prompt, row.answer, row.options, (seed + qi * 17 + bi) >>> 0)
+    return toItem(
+      kind.layout,
+      row.prompt,
+      row.answer,
+      row.options,
+      (seed + qi * 17 + bi) >>> 0,
+      row.audioSrc,
+    )
   })
 
   return {
-    instruction: kind.instruction,
+    instruction: lessonForType(typeId)?.instruction ?? kind.instruction,
     items,
     bankQuestionCap: bank.length,
   }
