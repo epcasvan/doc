@@ -1,6 +1,7 @@
 import type { GramLesson } from '../types'
 import { GRAM_LESSONS_CORE } from './lessons-core'
 import { GRAM_LESSONS_REST } from './lessons-rest'
+import { GRAM_LESSONS_SOUTIEN } from './lessons-soutien'
 import { GRAM_LESSONS_WORD_DECRIRE } from './lessons-word-decrire'
 import { GRAM_LESSONS_WORD_EVAL03 } from './lessons-word-eval03'
 import { GRAM_LESSONS_WORD_HEURES } from './lessons-word-heures'
@@ -40,7 +41,7 @@ function extraWordLessons(rows: GramLesson[]): GramLesson[] {
     .filter((row) => row.items.length > 0)
 }
 
-/** Word relu d’abord ; ClairFLE complète ; extraction brute des deux manuels ensuite. */
+/** Word relu d’abord ; ClairFLE complète ; extraction brute ; banques soutien-scolaire en dernier. */
 export const GRAM_LESSONS: GramLesson[] = [
   ...GRAM_LESSONS_WORD_PRESENTER,
   ...GRAM_LESSONS_WORD_DECRIRE,
@@ -57,4 +58,5 @@ export const GRAM_LESSONS: GramLesson[] = [
   ...GRAM_LESSONS_REST,
   ...extraWordLessons(GRAM_LESSONS_WORD_A1),
   ...extraWordLessons(GRAM_LESSONS_WORD_A2),
+  ...GRAM_LESSONS_SOUTIEN,
 ]

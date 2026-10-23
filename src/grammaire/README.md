@@ -10,6 +10,8 @@ Domaine dédié pour les **fiches de théorie** FALC et les **exercices** liés 
 | `exercises/bank/word-a1.ts` / `word-a2.ts` | Tous les exercices des Word auteur (Grammaire.docx / Grammaire Suite.docx) |
 | `exercises/bank/lessons-word-*.ts` | Relu mot à mot (CSC : se présenter, décrire, jours / mois / heures / invitation / négation / évaluation / logement / maison) |
 | `exercises/bank/lessons-core.ts` / `lessons-rest.ts` | Compléments ClairFLE (mêmes types) |
+| `exercises/bank/lessons-soutien.ts` | Banques de phrases de la section grammaire soutien-scolaire (fusion unique, en dernier) |
+| `scripts/import-grammaire-soutien-phrases.mjs` | Relance l’import depuis `SOUTIEN_ROOT` |
 | `generate.ts` | Théorie **ou** exercices selon le type |
 
 ## UI
@@ -18,7 +20,7 @@ Domaine dédié pour les **fiches de théorie** FALC et les **exercices** liés 
 2. **Sous-thème** = notion (Être, Avoir, -er… / Passé composé… / fiche théorie)
 3. **Type** = **Théorie** + exercices du sous-thème (libellés de leçon)
 
-Les énoncés d’exercices reprennent les phrases des Word auteur (`Grammaire.docx`, `Grammaire Suite.docx`) et des fiches CSC (exercices seulement, pas la théorie). Les MP3 CSC sont dans `public/lib/audio/grammaire/`. Les fiches de théorie FALC restent le type **Théorie**. Les banques ClairFLE complètent les mêmes types sans en créer de doublons.
+Les énoncés d’exercices reprennent les phrases des Word auteur (`Grammaire.docx`, `Grammaire Suite.docx`) et des fiches CSC (exercices seulement, pas la théorie). Les MP3 CSC sont dans `public/lib/audio/grammaire/`. Les fiches de théorie FALC restent le type **Théorie**. Les banques ClairFLE et les phrases de la section grammaire soutien-scolaire complètent les mêmes types : fusion par `subId` + kind, sans doublon de prompt, libellés du premier lot (Word / ClairFLE).
 
 ## Types d’exercice (kinds)
 

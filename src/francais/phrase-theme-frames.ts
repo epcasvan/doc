@@ -177,18 +177,18 @@ const ADJ_AUTRES: Record<string, readonly string[]> = {
 
 /** Prépositions naturelles (présent 3e personne réel). Un id = un verbe. */
 export const PREP_FRAMES_ER: readonly ThemedFrame[] = [
-  frame('habiter', ['habite/verbe dans/preposition une/determinant maison/nom', 'habite/verbe dans/preposition un/determinant village/nom', 'habite/verbe dans/preposition un/determinant appartement/nom']),
-  frame('jouer', ['joue/verbe dans/preposition le/determinant jardin/nom', 'joue/verbe dans/preposition la/determinant cour/nom', 'joue/verbe avec/preposition un/determinant ami/nom', 'joue/verbe à/preposition la/determinant marelle/nom']),
+  frame('habiter', ['habite/verbe dans/preposition une/determinant maison/nom', 'habite/verbe dans/preposition un/determinant village/nom', 'habite/verbe dans/preposition un/determinant appartement/nom', 'habite/verbe à/preposition Genève/nom', 'habite/verbe à/preposition Paris/nom', 'habite/verbe en/preposition Suisse/nom']),
+  frame('jouer', ['joue/verbe dans/preposition le/determinant jardin/nom', 'joue/verbe dans/preposition la/determinant cour/nom', 'joue/verbe avec/preposition un/determinant ami/nom', 'joue/verbe à/preposition la/determinant marelle/nom', 'joue/verbe au/preposition football/nom', 'joue/verbe au/preposition tennis/nom']),
   frame('rester', ['reste/verbe chez/preposition la/determinant mamie/nom', 'reste/verbe chez/preposition un/determinant ami/nom', 'reste/verbe dans/preposition la/determinant classe/nom', 'reste/verbe après/preposition le/determinant cours/nom']),
   frame('marcher', ['marche/verbe avec/preposition un/determinant ami/nom', 'marche/verbe vers/preposition l’/determinant école/nom', 'marche/verbe dans/preposition le/determinant parc/nom']),
-  frame('travailler', ['travaille/verbe à/preposition l’/determinant école/nom', 'travaille/verbe dans/preposition un/determinant bureau/nom', 'travaille/verbe avec/preposition un/determinant collègue/nom']),
+  frame('travailler', ['travaille/verbe à/preposition l’/determinant école/nom', 'travaille/verbe dans/preposition un/determinant bureau/nom', 'travaille/verbe avec/preposition un/determinant collègue/nom', 'travaille/verbe à/preposition l’/determinant hôpital/nom']),
   frame('arriver', ['arrive/verbe après/preposition le/determinant cours/nom', 'arrive/verbe avant/preposition le/determinant dîner/nom', 'arrive/verbe à/preposition la/determinant gare/nom']),
   frame('passer', ['passe/verbe devant/preposition la/determinant poste/nom', 'passe/verbe par/preposition le/determinant village/nom', 'passe/verbe sous/preposition le/determinant pont/nom', 'passe/verbe chez/preposition le/determinant voisin/nom']),
   frame('rentrer', ['rentre/verbe à/preposition l’/determinant école/nom', 'rentre/verbe chez/preposition sa/determinant maman/nom', 'rentre/verbe dans/preposition la/determinant classe/nom']),
   frame('entrer', ['entre/verbe dans/preposition la/determinant classe/nom', 'entre/verbe dans/preposition le/determinant magasin/nom', 'entre/verbe par/preposition la/determinant porte/nom']),
   frame('monter', ['monte/verbe sur/preposition le/determinant vélo/nom', 'monte/verbe dans/preposition le/determinant bus/nom', 'monte/verbe à/preposition l’/determinant étage/nom']),
   frame('penser', ['pense/verbe à/preposition ses/determinant amis/nom', 'pense/verbe à/preposition la/determinant leçon/nom', 'pense/verbe à/preposition un/determinant cadeau/nom']),
-  frame('parler', ['parle/verbe à/preposition un/determinant ami/nom', 'parle/verbe avec/preposition la/determinant maîtresse/nom', 'parle/verbe de/preposition la/determinant fête/nom']),
+  frame('parler', ['parle/verbe à/preposition un/determinant ami/nom', 'parle/verbe avec/preposition la/determinant maîtresse/nom', 'parle/verbe de/preposition la/determinant fête/nom', 'parle/verbe au/preposition téléphone/nom']),
   frame('téléphoner', ['téléphone/verbe à/preposition sa/determinant maman/nom', 'téléphone/verbe à/preposition un/determinant ami/nom', 'téléphone/verbe chez/preposition le/determinant médecin/nom']),
   frame('rêver', ['rêve/verbe de/preposition la/determinant mer/nom', 'rêve/verbe de/preposition un/determinant voyage/nom', 'rêve/verbe de/preposition son/determinant chien/nom']),
   frame('voyager', ['voyage/verbe en/preposition train/nom', 'voyage/verbe en/preposition bus/nom', 'voyage/verbe vers/preposition la/determinant mer/nom']),
