@@ -751,10 +751,12 @@ export const GRAM_LESSONS_REST: GramLesson[] = [
   lesson('description-physique', 'ecrire', 'Écrire une description', 'Écoutez s’il y a un enregistrement, puis écrivez une phrase avec le verbe et le mot proposés.', [
     writeItem('être', 'grand', { audioSrc: '/lib/audio/grammaire/eval/lecon-02-04-03-a.mp3' }),
     writeItem('avoir', 'les cheveux courts', { audioSrc: '/lib/audio/grammaire/eval/lecon-02-04-03-b.mp3' }),
-    writeItem('porter', 'un manteau'),
-    writeItem('être', 'mince'),
+    writeItem('porter', 'un manteau', { audioSrc: '/lib/audio/grammaire/eval/lecon-02-04-02-a.mp3' }),
+    writeItem('être', 'mince', { audioSrc: '/lib/audio/grammaire/eval/lecon-02-04-02-b.mp3' }),
     writeItem('avoir', 'les yeux verts', { audioSrc: '/lib/audio/grammaire/description-physique/lecon-02-03-02.mp3' }),
     writeItem('porter', 'des lunettes', { audioSrc: '/lib/audio/grammaire/description-physique/lecon-02-03-03.mp3' }),
+    writeItem('être', 'professeure', { audioSrc: '/lib/audio/grammaire/eval/lecon-02-04-01-a.mp3' }),
+    writeItem('avoir', 'deux frères', { audioSrc: '/lib/audio/grammaire/eval/lecon-02-04-01-b.mp3' }),
   ]),
   lesson('f6', 'fill-conj', 'Compléter le possessif', 'Écrivez mon, ma, mes, ton, ta, tes, son, sa, ses, notre, nos, votre, vos, leur ou leurs.', [
     fill('___ cheveux sont longs. (je)', 'Mes'),
