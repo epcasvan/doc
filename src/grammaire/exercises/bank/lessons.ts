@@ -3,6 +3,7 @@ import { GRAM_LESSONS_CORE } from './lessons-core'
 import { GRAM_LESSONS_REST } from './lessons-rest'
 import { GRAM_LESSONS_WORD_DECRIRE } from './lessons-word-decrire'
 import { GRAM_LESSONS_WORD_HEURES } from './lessons-word-heures'
+import { GRAM_LESSONS_WORD_INVITATION } from './lessons-word-invitation'
 import { GRAM_LESSONS_WORD_JOURS } from './lessons-word-jours'
 import { GRAM_LESSONS_WORD_MOIS } from './lessons-word-mois'
 import { GRAM_LESSONS_WORD_PRESENTER } from './lessons-word-presenter'
@@ -43,6 +44,7 @@ export const GRAM_LESSONS: GramLesson[] = [
   ...GRAM_LESSONS_WORD_JOURS,
   ...GRAM_LESSONS_WORD_MOIS,
   ...GRAM_LESSONS_WORD_HEURES,
+  ...GRAM_LESSONS_WORD_INVITATION,
   ...GRAM_LESSONS_CORE,
   ...GRAM_LESSONS_REST,
   ...extraWordLessons(GRAM_LESSONS_WORD_A1),

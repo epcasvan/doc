@@ -206,7 +206,7 @@ export const GRAM_LESSONS_WORD_HEURES: GramLesson[] = [
     'er',
     'fill-conj',
     'Conjuguer les verbes en -er',
-    'Conjuguez commencer ou terminer.',
+    'Conjuguez le verbe entre parenthèses au présent.',
     [
       fill('Tu ___ (commencer) quand ton cours ?', 'commences'),
       fill('À quelle heure vous ___ (terminer) l’école ?', 'terminez'),
