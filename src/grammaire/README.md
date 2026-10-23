@@ -8,7 +8,7 @@ Domaine dédié pour les **fiches de théorie** FALC et les **exercices** liés 
 | `theory/*.ts` | Contenu FALC français |
 | `exercises/` | kinds, sous-thèmes, banques, générateur |
 | `exercises/bank/word-a1.ts` / `word-a2.ts` | Tous les exercices des Word auteur (Grammaire.docx / Grammaire Suite.docx) |
-| `exercises/bank/lessons-word-*.ts` | Relu mot à mot (se présenter, décrire, -er, jours / mois / heures / invitation CSC) |
+| `exercises/bank/lessons-word-*.ts` | Relu mot à mot (se présenter, décrire, -er, jours / mois / heures / invitation / négation / évaluation CSC) |
 | `exercises/bank/lessons-core.ts` / `lessons-rest.ts` | Compléments ClairFLE (mêmes types) |
 | `generate.ts` | Théorie **ou** exercices selon le type |
 
