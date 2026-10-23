@@ -345,21 +345,74 @@ function parseVerbs(src) {
   return verbs
 }
 
-function parseGabarits(src, verbs) {
+function parsePersonsArg(raw, src) {
+  if (!raw) return undefined
+  const named = /[A-Z_]/.test(raw) && !/^\s*\[\s*\d/.test(raw)
+  if (named) {
+    const names = raw.match(/[A-Z][A-Z0-9_]*/g) || []
+    const out = []
+    for (const name of names) {
+      const hit = src.match(new RegExp(`(?:const|let)\\s+${name}\\s*=\\s*\\[([^\\]]*)\\]`))
+      if (!hit) continue
+      const digits = hit[1].match(/\d+/g)
+      if (digits) out.push(...digits.map(Number))
+    }
+    return out.filter((n) => n >= 0 && n <= 7)
+  }
+  const nums = raw.match(/\d+/g)
+  return nums ? nums.map(Number).filter((n) => n >= 0 && n <= 7) : undefined
+}
+
+function parseGabarits(block, verbs, src) {
   const items = []
   const re = /\bg\(\s*([A-Z][A-Z0-9_]*)\s*,\s*"((?:\\.|[^"\\])*)"(?:\s*,\s*(\[[^\]]*\]))?\)/g
   let m
-  while ((m = re.exec(src))) {
+  while ((m = re.exec(block))) {
     const verb = verbs[m[1]]
     if (!verb) continue
-    let persons
-    if (m[3]) {
-      const nums = m[3].match(/\d+/g)
-      persons = nums ? nums.map(Number) : undefined
-    }
-    items.push({ verb, tail: m[2].replace(/\\"/g, '"'), persons })
+    items.push({
+      verb,
+      tail: m[2].replace(/\\"/g, '"'),
+      persons: parsePersonsArg(m[3], src),
+    })
   }
   return items
+}
+
+function extractNamedArray(src, name) {
+  const re = new RegExp(`(?:const|let)\\s+${name}[^=]*=\\s*\\[`)
+  const m = re.exec(src)
+  if (!m) return ''
+  const start = m.index + m[0].length - 1
+  let depth = 0
+  for (let i = start; i < src.length; i++) {
+    if (src[i] === '[') depth++
+    else if (src[i] === ']') {
+      depth--
+      if (depth === 0) return src.slice(start, i + 1)
+    }
+  }
+  return ''
+}
+
+function gabaritsFromProfile(profileBody, src, verbs) {
+  const named = profileBody.match(/gabarits:\s*([A-Z][A-Z0-9_]*)\s*,/)
+  if (named) {
+    const arr = extractNamedArray(src, named[1])
+    return arr ? parseGabarits(arr, verbs, src) : []
+  }
+  const start = profileBody.search(/gabarits:\s*\[/)
+  if (start < 0) return []
+  const open = profileBody.indexOf('[', start)
+  let depth = 0
+  for (let i = open; i < profileBody.length; i++) {
+    if (profileBody[i] === '[') depth++
+    else if (profileBody[i] === ']') {
+      depth--
+      if (depth === 0) return parseGabarits(profileBody.slice(open, i + 1), verbs, src)
+    }
+  }
+  return []
 }
 
 function parseWritePrompts(src) {
@@ -368,17 +421,22 @@ function parseWritePrompts(src) {
   return parseStringArray(`[${m[1]}]`)
 }
 
-function parseVerbChoice(src, verbs) {
+function parseVerbChoice(block, verbs, src) {
   const items = []
   const re =
-    /\bvc\(\s*([A-Z][A-Z0-9_]*)\s*,\s*"((?:\\.|[^"\\])*)"\s*,\s*\[([^\]]*)\]/g
+    /\bvc\(\s*([A-Z][A-Z0-9_]*)\s*,\s*"((?:\\.|[^"\\])*)"\s*,\s*\[([^\]]*)\](?:\s*,\s*(\[[^\]]*\]))?/g
   let m
-  while ((m = re.exec(src))) {
+  while ((m = re.exec(block))) {
     const verb = verbs[m[1]]
     if (!verb) continue
     const distNames = m[3].match(/[A-Z][A-Z0-9_]*/g) || []
     const distractors = distNames.map((n) => verbs[n]).filter(Boolean)
-    items.push({ verb, tail: m[2].replace(/\\"/g, '"'), distractors })
+    items.push({
+      verb,
+      tail: m[2].replace(/\\"/g, '"'),
+      distractors,
+      persons: parsePersonsArg(m[4], src),
+    })
   }
   return items
 }
@@ -434,41 +492,41 @@ function ingestG1() {
     const subId = G1_TO_SUB[code]
     if (!subId) continue
     const b = bank(subId)
-    let gabarits = parseGabarits(p.body, verbs)
-    const ref = p.body.match(/gabarits:\s*([A-Z][A-Z0-9_]*)\s*,/)
-    if (ref && gabarits.length === 0) {
-      const arr = src.match(new RegExp(`(?:const|let)\\s+${ref[1]}[^=]*=\\s*\\[([\\s\\S]*?)\\n\\]`))
-      if (arr) gabarits = parseGabarits(arr[0], verbs)
-    }
-    gabarits.forEach((g, gi) => {
+    const gabarits = gabaritsFromProfile(p.body, src, verbs)
+    gabarits.forEach((g) => {
       const persons = g.persons?.length ? g.persons : [0, 1, 2, 3, 4, 5, 6, 7]
-      const idx = persons[gi % persons.length]
-      const form = conjugated(g.verb, idx)
-      const subj = subjectOf(idx, form)
-      const tail = g.tail.startsWith(' ') ? g.tail : ` ${g.tail}`
-      const prompt = `${subj.display}${subj.sep}___ (${g.verb.infinitive})${cleanFr(tail).replace(/^/, (t) => (t.startsWith(' ') ? t : ` ${t}`))}`.replace(/\s+\./, '.')
-      const prettyTail = cleanFr(tail)
-      const p2 = `${subj.display}${subj.sep}___ (${cleanFr(g.verb.infinitive)})${prettyTail.startsWith(' ') || prettyTail.startsWith('’') ? prettyTail : ` ${prettyTail}`}`
-      addUnique(b.fill, { prompt: p2, answer: cleanFr(form) })
-      const aff = `${subj.display}${subj.sep}${form}${prettyTail.startsWith(' ') ? prettyTail : ` ${prettyTail}`}`
-        .replace(/\s+/g, ' ')
-        .replace(/\s+\./, '.')
-      const neg = toNeg(subj.display, form, prettyTail)
-      addUnique(b.negatif, { prompt: cleanFr(aff.endsWith('.') || aff.endsWith('?') ? aff : `${aff}.`), answer: cleanFr(neg.endsWith('.') || neg.endsWith('?') ? neg : `${neg}.`) })
-      const scrambled = shuffleWords(aff)
-      if (scrambled) addUnique(b.ordre, scrambled)
+      for (const idx of persons) {
+        const form = conjugated(g.verb, idx)
+        const subj = subjectOf(idx, form)
+        if (!form || !subj.display) continue
+        const tail = g.tail.startsWith(' ') ? g.tail : ` ${g.tail}`
+        const prettyTail = cleanFr(tail)
+        const p2 = `${subj.display}${subj.sep}___ (${cleanFr(g.verb.infinitive)})${prettyTail.startsWith(' ') || prettyTail.startsWith('’') ? prettyTail : ` ${prettyTail}`}`
+        addUnique(b.fill, { prompt: p2, answer: cleanFr(form) })
+        const aff = `${subj.display}${subj.sep}${form}${prettyTail.startsWith(' ') ? prettyTail : ` ${prettyTail}`}`
+          .replace(/\s+/g, ' ')
+          .replace(/\s+\./, '.')
+        const neg = toNeg(subj.display, form, prettyTail)
+        addUnique(b.negatif, {
+          prompt: cleanFr(aff.endsWith('.') || aff.endsWith('?') ? aff : `${aff}.`),
+          answer: cleanFr(neg.endsWith('.') || neg.endsWith('?') ? neg : `${neg}.`),
+        })
+        const scrambled = shuffleWords(aff)
+        if (scrambled) addUnique(b.ordre, scrambled)
+      }
     })
     for (const wp of parseWritePrompts(p.body)) {
       const [verb, word] = wp.split('/').map((s) => s.replace(/:$/, '').trim())
       if (verb && word) addUnique(b.ecrire, { verb: cleanFr(verb.toLowerCase()), word: cleanFr(word) })
     }
-    parseVerbChoice(p.body, verbs).forEach((vc, vi) => {
-      const persons = [0, 1, 2, 3, 4, 5, 6, 7]
-      const idx = persons[vi % 8]
+    parseVerbChoice(p.body, verbs, src).forEach((vc, vi) => {
+      const persons = vc.persons?.length ? vc.persons : [0, 1, 2, 3, 4, 5, 6, 7]
+      const idx = persons[vi % persons.length]
       const form = conjugated(vc.verb, idx)
       const subj = subjectOf(idx, form)
+      if (!form || !subj.display) return
       const tail = cleanFr(vc.tail)
-      const options = [form, ...vc.distractors.map((d) => conjugated(d, idx))].map(cleanFr)
+      const options = [form, ...vc.distractors.map((d) => conjugated(d, idx))].map(cleanFr).filter(Boolean)
       const uniq = [...new Set(options)].slice(0, 3)
       if (!uniq.includes(cleanFr(form))) uniq[0] = cleanFr(form)
       while (uniq.length < 3) uniq.push(uniq[0])
@@ -594,11 +652,11 @@ function ingestConjProfiles() {
       const verb = { infinitive: inf, forms }
       const idx = vi % 8
       const form = conjugated(verb, idx)
-      if (!form) {
+      const subj = subjectOf(idx, form)
+      if (!form || !subj.display) {
         vi++
         continue
       }
-      const subj = subjectOf(idx, form)
       const sample = samples[vi % (samples.length || 1)]
       let tail = '.'
       if (sample) {
