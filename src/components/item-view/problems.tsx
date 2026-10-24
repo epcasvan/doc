@@ -235,9 +235,14 @@ function TheoryBlockContent({ block }: { block: GrammarTheoryBlock }) {
       expliquer: 'j-explique.svg',
       retenir: 'je-retiens.svg',
     } as const
+    const iconViewBoxes = {
+      regarder: '54 40 404 432',
+      expliquer: '74 68 364 346',
+      retenir: '48 40 416 456',
+    } as const
     return (
       <section className={`theory-section is-${block.role}`}>
-        <svg className="theory-section-icon" viewBox="0 0 512 512" aria-hidden="true">
+        <svg className="theory-section-icon" viewBox={iconViewBoxes[block.role]} aria-hidden="true">
           <use href={`/lib/images/competences/${iconFiles[block.role]}#icon`} />
         </svg>
         <div className="theory-section-content">
