@@ -93,21 +93,29 @@ try {
       { exerciseType: id, count: 4, topic: 'gram-se-presenter', domain: 'grammaire' },
       42,
     )
-    const same =
-      JSON.stringify(page?.items.map((i) => i.prompt)) ===
-      JSON.stringify(page2?.items.map((i) => i.prompt))
-    const sample = page?.items[0]
+    const enonces = (items) =>
+      (items ?? []).map((item) => item.tcf?.enonce ?? item.prompt ?? item.tcf?.kind ?? '')
+    const same = JSON.stringify(enonces(page?.items)) === JSON.stringify(enonces(page2?.items))
+    const sample = page?.items.find((item) => item.tcf?.kind === 'qcm' || item.tcf?.kind === 'lignes')
+    const dual = (page?.items ?? []).some((item) => {
+      const text = item.tcf?.enonce ?? ''
+      const blanks = text.split('___').length - 1
+      return blanks > 1
+    })
+    const tcfLayout = (page?.items ?? []).every((item) => item.layout === 'tcf' || item.layout === 'text')
     const audioCount = les?.items.filter((item) => item.audioSrc).length ?? 0
     console.log(
       [
-        n >= 4 ? 'OK' : 'LOW',
+        n >= 4 && tcfLayout && !dual ? 'OK' : 'LOW',
         id,
         `n=${n}`,
         `label=${les?.label ?? '?'}`,
         `det=${same}`,
+        `tcf=${tcfLayout}`,
+        `dual=${dual}`,
         `audioItems=${audioCount}`,
-        `sampleAudio=${Boolean(sample?.audioSrc)}`,
-        `prompt=${JSON.stringify(sample?.prompt ?? '').slice(0, 90)}`,
+        `layout=${sample?.layout ?? page?.items[0]?.layout}`,
+        `prompt=${JSON.stringify(sample?.tcf?.enonce ?? '').slice(0, 90)}`,
       ].join(' | '),
     )
   }

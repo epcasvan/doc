@@ -3956,6 +3956,8 @@ select.phrase-libre-word-fill{appearance:auto;cursor:pointer}
 .tcf-audio-list .tcf-audio-qr{width:16mm;height:16mm}
 .tcf-question{display:flex;flex-direction:column;gap:6px;margin-top:4px}
 .tcf-enonce{margin:0;font-weight:600}
+.tcf-verbe-theme{color:var(--purple);font-weight:700}
+.exercise-item.layout-tcf:not(:has(.item-content > *)){display:none;padding:0;margin:0;min-height:0;border:0}
 .tcf-num{margin-right:6px}
 .tcf-audio-tag{display:inline-block;margin-right:6px;padding:0 6px;border:1px solid var(--ink);border-radius:4px;font-size:.8em;font-weight:700}
 .tcf-qcm-texte{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:4px}

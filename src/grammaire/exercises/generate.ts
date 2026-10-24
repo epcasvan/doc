@@ -1,44 +1,19 @@
 import { createRng, int, shuffle } from '@/math/rng'
 import type { MathItem, PageConfig } from '@/math/types'
+import { tcfExerciseItems } from '@/tcf/generate'
 import { gramKindById } from './kinds'
+import {
+  instructionForSingleVerb,
+  normalizeGramBank,
+  stripParenVerb,
+  uniqueSampleVerb,
+} from './normalize-items'
 import { parseGramExerciseType } from './subthemes'
 import { bankForType, lessonForType } from './bank'
+import { gramItemsToTcfExercise } from './to-tcf'
 import { isGrammaireExerciseType } from './types'
 
-function toItem(
-  kindLayout: 'qcm' | 'fill' | 'write',
-  prompt: string,
-  answer: string,
-  options: string[] | undefined,
-  seed: number,
-  audioSrc?: string,
-): MathItem {
-  const audio = audioSrc ? { audioSrc } : {}
-  if (kindLayout === 'qcm' && options?.length) {
-    const rng = createRng(seed)
-    const correct = answer
-    const shuffled = shuffle(rng, [...options])
-    // Garantir que la bonne réponse est dans les options
-    if (!shuffled.includes(correct)) shuffled[0] = correct
-    return {
-      layout: 'select',
-      selectVariant: 'oral',
-      prompt,
-      answer: correct,
-      options: shuffled,
-      labels: [correct],
-      ...audio,
-    }
-  }
-  return {
-    layout: 'text',
-    prompt,
-    answer,
-    ...audio,
-  }
-}
-
-/** Génère un bloc d’exercices grammaire (déterministe). */
+/** Génère un bloc d’exercices grammaire (déterministe), rendu TCF. */
 export function tryGenerateGrammaireExerciseBlock(
   config: PageConfig,
   seed: number,
@@ -50,7 +25,21 @@ export function tryGenerateGrammaireExerciseBlock(
   const kind = gramKindById(parsed.kindId)
   if (!kind) return null
 
-  const bank = bankForType(typeId)
+  const rng = createRng(seed)
+  if (config.tcfExercise) {
+    const ex = config.tcfExercise
+    return {
+      instruction: ex.consigne?.trim() || kind.instruction,
+      items: tcfExerciseItems(ex, rng, config.tcfFormModes).map((item) => ({
+        ...item,
+        tcfExerciseId: ex.id,
+      })),
+      bankQuestionCap: Math.max(ex.questions.length, 1),
+    }
+  }
+
+  const rawBank = bankForType(typeId)
+  const bank = normalizeGramBank(rawBank)
   if (!bank.length) {
     return {
       instruction: kind.instruction,
@@ -65,28 +54,34 @@ export function tryGenerateGrammaireExerciseBlock(
     }
   }
 
-  const rng = createRng(seed)
   const count = Math.min(Math.max(1, config.count), bank.length)
   const order = shuffle(
     rng,
     bank.map((_, i) => i),
   ).slice(0, count)
+  const sampled = order.map((index) => bank[index]!)
 
-  const items = order.map((bi, qi) => {
-    const row = bank[bi]!
-    return toItem(
-      kind.layout,
-      row.prompt,
-      row.answer,
-      row.options,
-      (seed + qi * 17 + bi) >>> 0,
-      row.audioSrc,
-    )
+  const lesson = lessonForType(typeId)
+  let instruction = lesson?.instruction ?? kind.instruction
+  const singleVerb = uniqueSampleVerb(sampled)
+  const items = singleVerb
+    ? sampled.map((item) => ({ ...item, prompt: stripParenVerb(item.prompt) }))
+    : sampled
+  if (singleVerb) instruction = instructionForSingleVerb(instruction, singleVerb)
+
+  const exercise = gramItemsToTcfExercise({
+    typeId,
+    instruction,
+    items,
+    kindId: parsed.kindId,
   })
 
   return {
-    instruction: lessonForType(typeId)?.instruction ?? kind.instruction,
-    items,
+    instruction,
+    items: tcfExerciseItems(exercise, rng, config.tcfFormModes).map((item) => ({
+      ...item,
+      tcfExerciseId: exercise.id,
+    })),
     bankQuestionCap: bank.length,
   }
 }

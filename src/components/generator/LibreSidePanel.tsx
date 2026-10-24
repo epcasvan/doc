@@ -1,4 +1,4 @@
-import type { ExerciseBlock, WorksheetPage } from '@/math/types'
+import type { ExerciseBlock, MathItem, WorksheetPage } from '@/math/types'
 import type { GameTemplate } from '@/jeux/templates'
 import { PhraseLibreEditor, isPhraseLibreEditable } from '@/francais/PhraseLibreEditor'
 import type { SoutienComplete } from '@/francais/soutien/banks'
@@ -17,7 +17,12 @@ import {
 import { GameContentPanel } from '@/jeux/GameContentPanel'
 import { DEFAULT_GAME_FONT_SIZE } from '@/jeux/font-size'
 import { TcfExerciseEditor } from '@/tcf/TcfExerciseEditor'
-import type { TcfNiveau } from '@/tcf/types'
+import type { TcfExercise, TcfNiveau } from '@/tcf/types'
+
+function tcfSupportExercise(items: MathItem[] | undefined): TcfExercise | undefined {
+  const tcf = items?.find((item) => item.tcf?.kind === 'support')?.tcf
+  return tcf?.kind === 'support' ? tcf.exercise : undefined
+}
 import { GenericLibreEditor } from '@/components/generator/GenericLibreEditor'
 import { TpmLibreEditor } from '@/components/generator/TpmLibreEditor'
 import { VocabAddWordRow } from '@/components/generator/VocabAddWordRow'
@@ -32,6 +37,7 @@ export type LibreSidePanelProps = {
   isCalliDomain: boolean
   isJeuxDomain: boolean
   isTcf: boolean
+  isGrammaireExercise: boolean
   isTpmLike: boolean
   isDroites: boolean
   isConstruire: boolean
@@ -63,6 +69,7 @@ export function LibreSidePanel({
   isCalliDomain,
   isJeuxDomain,
   isTcf,
+  isGrammaireExercise,
   isTpmLike,
   isDroites,
   isConstruire,
@@ -80,6 +87,7 @@ export function LibreSidePanel({
   jeuxText,
   tcfNiveau,
   updatePage,
+  onRegenerateBlock,
   onClose,
 }: LibreSidePanelProps) {
   return (
@@ -252,6 +260,17 @@ export function LibreSidePanel({
             onChange={(patch) => updatePage(patch)}
           />
         ) : null}
+        {isGrammaireExercise ? (
+          <TcfExerciseEditor
+            variant="grammaire"
+            niveau={tcfNiveau}
+            typeId={activeBlock.exerciseType}
+            exercise={activeBlock.tcfExercise}
+            fallbackExercise={tcfSupportExercise(activeSheet?.blocks[safeBlockIndex]?.items)}
+            onChange={(patch) => updatePage(patch)}
+            onReroll={() => onRegenerateBlock?.(safeBlockIndex)}
+          />
+        ) : null}
         {/* TPM / TCM CFR / CSC : éditeur spécialisé (sélecteurs + recalcul). */}
         {isTpmLike &&
         !isPhraseDomain &&
@@ -283,6 +302,7 @@ export function LibreSidePanel({
         !isCalliDomain &&
         !isJeuxDomain &&
         !isTcf &&
+        !isGrammaireExercise &&
         soutienKind !== 'mots' &&
         soutienKind !== 'completer' &&
         !(isDroites || isConstruire) ? (

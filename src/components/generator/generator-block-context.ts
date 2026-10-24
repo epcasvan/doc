@@ -19,7 +19,7 @@ import {
   type VocabWordEntry,
 } from '@/francais/vocab-learn'
 import { isGrammarTheoryType } from '@/francais/grammar-theory'
-import { isGrammaireTheoryType } from '@/grammaire/types'
+import { isGrammaireExerciseType, isGrammaireTheoryType } from '@/grammaire/types'
 import {
   resolveGramSubthemeAll,
   subthemesForTopicAll,
@@ -78,6 +78,8 @@ const isGramTheory =
   isGrammarTheoryType(activeBlock.exerciseType) ||
   isGrammaireTheoryType(activeBlock.exerciseType)
 const isGrammaireDomain = activePage.domain === 'grammaire'
+const isGrammaireExercise =
+  isGrammaireDomain && isGrammaireExerciseType(activeBlock.exerciseType)
 const isLogique = activePage.domain === 'logique'
 const gramSubthemes = isGrammaireDomain ? subthemesForTopicAll(activeBlock.topic) : []
 const gramSubtheme = isGrammaireDomain
@@ -271,6 +273,7 @@ const questionsInputOverflow = questionsOverflow || bankOverflow
     isVocabProd,
     isGramTheory,
     isGrammaireDomain,
+    isGrammaireExercise,
     isLogique,
     gramSubthemes,
     gramSubtheme,

@@ -1,7 +1,35 @@
+import { Fragment, type ReactNode } from 'react'
 import { formatPointsLabel } from '@/tpm/test'
 import type { PreviewMode } from '@/math/types'
 import type { TcfChoixRendu, TcfGrille, TcfLigneTableau } from '@/tcf/types'
 import { TcfImage } from './TexteSupport'
+
+/** Verbe entre parenthèses après un blanc : couleur du thème, pas les parenthèses. */
+function highlightThemeVerbs(text: string): ReactNode {
+  const re = /___\s*\(\s*([^)]+?)\s*\)/g
+  const nodes: ReactNode[] = []
+  let last = 0
+  let match: RegExpExecArray | null
+  let key = 0
+  while ((match = re.exec(text))) {
+    if (match.index > last) nodes.push(text.slice(last, match.index))
+    const inner = match[1]!.trim()
+    const comma = inner.indexOf(',')
+    const verb = (comma === -1 ? inner : inner.slice(0, comma)).trim()
+    const extra = comma === -1 ? '' : inner.slice(comma)
+    nodes.push(
+      <Fragment key={key}>
+        ___ (<span className="tcf-verbe-theme">{verb}</span>
+        {extra})
+      </Fragment>,
+    )
+    key += 1
+    last = match.index + match[0].length
+  }
+  if (nodes.length === 0) return text
+  if (last < text.length) nodes.push(text.slice(last))
+  return nodes
+}
 
 /** Barème « / 1 point », visible seulement en mode évaluation (`.is-eval`). */
 export function TcfPoints({ points }: { points?: number }) {
@@ -26,7 +54,7 @@ function Enonce({
       <p className="tcf-enonce">
         <span className="tcf-num">{numero}.</span>
         {audioLabel ? <span className="tcf-audio-tag">{audioLabel}</span> : null}
-        <span className="tcf-enonce-text">{enonce}</span>
+        <span className="tcf-enonce-text">{highlightThemeVerbs(enonce)}</span>
         <TcfPoints points={points} />
       </p>
       {image ? <TcfImage src={image} alt={`Document de la question ${numero}`} className="tcf-image is-question" /> : null}

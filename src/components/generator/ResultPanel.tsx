@@ -17,6 +17,7 @@ export type ResultPanelProps = {
   libreMode: boolean
   validateManual: () => void
   isTcf: boolean
+  isGrammaireExercise?: boolean
   isTcmCfr: boolean
   isSoutienFr: boolean
   isAlphabetisation: boolean
@@ -82,6 +83,7 @@ export function ResultPanel({
   libreMode,
   validateManual,
   isTcf,
+  isGrammaireExercise,
   isTcmCfr,
   isSoutienFr,
   isAlphabetisation,
@@ -168,6 +170,7 @@ export function ResultPanel({
                   </button>
                 )}
                 {isTcf ||
+                isGrammaireExercise ||
                 isTcmCfr ||
                 ((isSoutienFr || isAlphabetisation) &&
                   (isSoutienMots || isSoutienCompleter || isSoutienEcouter)) ? (
@@ -175,7 +178,7 @@ export function ResultPanel({
                     className="print-chip is-icon is-generate"
                     type="button"
                     onClick={() =>
-                      void (isTcf
+                      void (isTcf || isGrammaireExercise
                         ? downloadActiveTcfAudios()
                         : isTcmCfr
                           ? downloadActiveTcmCfrAudios()
@@ -187,7 +190,7 @@ export function ResultPanel({
                     }
                     aria-label="Télécharger les audios de la fiche"
                     title={
-                      isTcf
+                      isTcf || isGrammaireExercise
                         ? 'Télécharger les audios de la fiche'
                         : isTcmCfr
                           ? 'Télécharger les audios (nombres ou multiplications)'
@@ -351,7 +354,7 @@ export function ResultPanel({
                         onToggleDraftGrid={toggleDraftGrid}
                         interactiveOralModes={isOralComprehensionExercise(activeBlock.exerciseType)}
                         onCycleOralAnswerMode={cycleOralAnswerMode}
-                        interactiveTcfOptions={isTcf}
+                        interactiveTcfOptions={isTcf || Boolean(isGrammaireExercise)}
                         onSelectTcfForm={selectTcfForm}
                         onToggleTcfPageBreak={toggleTcfPageBreak}
                         coordEdit={

@@ -11,8 +11,8 @@ export const GRAM_EXERCISE_KINDS = [
   {
     id: 'fill-conj',
     label: 'Conjuguez le verbe',
-    description: 'Verbe entre parenthèses ; écrire la forme conjuguée.',
-    instruction: 'Conjuguez le verbe entre parenthèses.',
+    description: 'Un verbe à conjuguer : consigne, ou infinitif coloré entre parenthèses.',
+    instruction: 'Conjuguez le verbe.',
     layout: 'fill' as const,
   },
   {

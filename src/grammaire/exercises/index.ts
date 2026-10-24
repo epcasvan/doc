@@ -22,5 +22,10 @@ export {
   GRAM_LESSONS,
   lessonForType,
 } from './bank'
+export {
+  normalizeGramBank,
+  splitSingleAnswers,
+  uniqueSampleVerb,
+} from './normalize-items'
 export { isGrammaireExerciseType } from './types'
 export type { GramBankItem, GramLesson } from './types'

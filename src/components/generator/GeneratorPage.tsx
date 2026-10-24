@@ -290,6 +290,7 @@ export function GeneratorPage({
     isCalliDomain: ctx.isCalliDomain,
     isJeuxDomain: ctx.isJeuxDomain,
     isTcf: ctx.isTcf,
+    isGrammaireExercise: ctx.isGrammaireExercise,
     updatePage,
   })
 
@@ -585,6 +586,7 @@ export function GeneratorPage({
               isCalliDomain={ctx.isCalliDomain}
               isJeuxDomain={ctx.isJeuxDomain}
               isTcf={ctx.isTcf}
+              isGrammaireExercise={ctx.isGrammaireExercise}
               isTpmLike={ctx.isTpmLike}
               isDroites={ctx.isDroites}
               isConstruire={ctx.isConstruire}

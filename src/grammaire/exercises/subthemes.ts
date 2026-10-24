@@ -1,4 +1,4 @@
-import { GRAM_KIND_IDS } from './kinds'
+import { GRAM_KIND_IDS, type GramExerciseKindId } from './kinds'
 
 /** Sous-thèmes SCAI (3ᵉ menu) — conjugaison + notions théorie. */
 
@@ -227,7 +227,7 @@ export function gramExerciseTypeId(subId: string, kindId: string): string {
 
 export function parseGramExerciseType(
   typeId: string,
-): { subId: string; kindId: string } | null {
+): { subId: string; kindId: GramExerciseKindId } | null {
   if (!typeId.startsWith('gram-ex-')) return null
   for (const kind of GRAM_KIND_IDS) {
     const suffix = `-${kind}`

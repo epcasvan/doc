@@ -47,6 +47,7 @@ export type UseGenerateActionsParams = {
   isCalliDomain: boolean
   isJeuxDomain: boolean
   isTcf: boolean
+  isGrammaireExercise?: boolean
   updatePage: (patch: Partial<PageConfig>) => void
 }
 
@@ -71,12 +72,13 @@ export function useGenerateActions({
   isCalliDomain,
   isJeuxDomain,
   isTcf,
+  isGrammaireExercise,
   updatePage,
 }: UseGenerateActionsParams) {
   /** Applique les changements manuels (mode libre / réglages) à la fiche. */
   function validateManual() {
     const phraseEditable = isPhraseDomain && isPhraseLibreEditable(activeBlock.exerciseType)
-    const ownEditor = phraseEditable || isCalliDomain || isJeuxDomain || isTcf
+    const ownEditor = phraseEditable || isCalliDomain || isJeuxDomain || isTcf || Boolean(isGrammaireExercise)
     const apply = (current: PageConfig[]): PageConfig[] => {
       const page = current[pageIndex]
       if (!page) return current
