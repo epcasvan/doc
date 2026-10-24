@@ -41,6 +41,18 @@ Les libellés du sélecteur viennent de `GramLesson.label` (ex. « Compléter av
 
 Le rendu des exercices reprend la mise en page TCF : QCM texte / image / phrase (3 icônes), audios comme la CO (téléchargement, pas de lecteur sur la fiche), documents à lire comme la CE, rédaction comme la PE. Une phrase = une réponse (pas de `suis / m’appelle` sur le même item). Un seul verbe à conjuguer va dans la consigne, sans infinitif entre parenthèses dans la phrase ; sinon l’infinitif (pas les parenthèses) est à la couleur du thème. Le mode libre ouvre le même éditeur que le TCF.
 
+## Mise en forme dans une phrase de théorie
+
+Dans un paragraphe, un exemple, une astuce, une attention ou une case de tableau :
+
+| Balise | Effet |
+|---|---|
+| `{g}mot{/g}` | gras |
+| `{c}mot{/c}` | gras et couleur du thème |
+| `{s}mot{/s}` | souligné de la couleur du thème |
+
+Exemple : `J’utilise {c}être{/c}, {g}habiter{/g} et {s}parler{/s}.`
+
 ## Déterminisme
 
 Tirage via `createRng(seed)` + `shuffle` ; jamais `Math.random()` dans le générateur.

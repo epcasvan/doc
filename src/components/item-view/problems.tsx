@@ -1,4 +1,5 @@
 import { Fragment } from 'react'
+import { TheoryRichText } from './theory-marks'
 import { fmt } from '@/math/column-arith'
 import { MoneyChangeBoard } from './money-change'
 import type { MathItem, PreviewMode } from '@/math/types'
@@ -160,12 +161,14 @@ function TheoryExamplesView({
       <ListTag className="theory-examples">
         {entries.map((ex, index) => (
           <li key={`${ex.text}-${index}`}>
-            <span className="theory-ex-ok">{ex.text}</span>
+            <span className="theory-ex-ok">
+              <TheoryRichText text={ex.text} />
+            </span>
             {ex.wrong ? (
               <>
                 {' '}
                 <span className="theory-ex-bad" aria-label="à éviter">
-                  (pas : {ex.wrong})
+                  (pas : <TheoryRichText text={ex.wrong} />)
                 </span>
               </>
             ) : null}
@@ -192,7 +195,7 @@ export function TheoryBlockView({ item }: { item: MathItem }) {
       <div className="theory-text">
         {parts.map((part, index) => (
           <p key={index} className="theory-paragraph">
-            {part}
+            <TheoryRichText text={part} />
           </p>
         ))}
       </div>
@@ -203,7 +206,9 @@ export function TheoryBlockView({ item }: { item: MathItem }) {
       <aside className="theory-attention">
         <p className="theory-attention-label">Attention</p>
         <div className="theory-attention-box">
-          <p className="theory-paragraph">{block.text}</p>
+          <p className="theory-paragraph">
+            <TheoryRichText text={block.text ?? ''} />
+          </p>
         </div>
       </aside>
     )
@@ -214,7 +219,9 @@ export function TheoryBlockView({ item }: { item: MathItem }) {
         <span className="theory-astuce-icon" aria-hidden="true">
           i
         </span>
-        <p className="theory-astuce-text">{block.text}</p>
+        <p className="theory-astuce-text">
+          <TheoryRichText text={block.text ?? ''} />
+        </p>
       </aside>
     )
   }
@@ -225,7 +232,9 @@ export function TheoryBlockView({ item }: { item: MathItem }) {
         <aside className="theory-attention">
           <p className="theory-attention-label">Attention</p>
           <div className="theory-attention-box">
-            <p className="theory-paragraph">{text}</p>
+            <p className="theory-paragraph">
+              <TheoryRichText text={text} />
+            </p>
           </div>
         </aside>
       )
@@ -237,11 +246,17 @@ export function TheoryBlockView({ item }: { item: MathItem }) {
           <span className="theory-astuce-icon" aria-hidden="true">
             i
           </span>
-          <p className="theory-astuce-text">{text}</p>
+          <p className="theory-astuce-text">
+            <TheoryRichText text={text} />
+          </p>
         </aside>
       )
     }
-    return <p className="theory-paragraph">{block.text}</p>
+    return (
+      <p className="theory-paragraph">
+        <TheoryRichText text={block.text ?? ''} />
+      </p>
+    )
   }
   if (block.kind === 'examples' || block.kind === 'rule') {
     return (
@@ -273,7 +288,7 @@ export function TheoryBlockView({ item }: { item: MathItem }) {
             <tr>
               {headers.map((header, index) => (
                 <th key={`${header}-${index}`} scope="col">
-                  {header}
+                  <TheoryRichText text={header} />
                 </th>
               ))}
             </tr>
@@ -285,10 +300,12 @@ export function TheoryBlockView({ item }: { item: MathItem }) {
               {row.map((cell, cellIndex) =>
                 rowHeader && cellIndex === 0 ? (
                   <th key={`${rowIndex}-${cellIndex}`} scope="row">
-                    {cell}
+                    <TheoryRichText text={cell} />
                   </th>
                 ) : (
-                  <td key={`${rowIndex}-${cellIndex}`}>{cell}</td>
+                  <td key={`${rowIndex}-${cellIndex}`}>
+                    <TheoryRichText text={cell} />
+                  </td>
                 ),
               )}
             </tr>

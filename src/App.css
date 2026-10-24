@@ -522,6 +522,15 @@ html,body,#root{
   margin:0 0 1.5em;font-size:var(--theory-size);line-height:1.5;text-align:justify;color:var(--ink);
   text-justify:inter-word
 }
+.theory-mark-bold{font-weight:700}
+.theory-mark-theme{font-weight:700;color:var(--purple);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.theory-mark-under{
+  text-decoration:underline;
+  text-decoration-color:var(--purple);
+  text-decoration-thickness:1.5px;
+  text-underline-offset:.15em;
+  -webkit-print-color-adjust:exact;print-color-adjust:exact
+}
 .theory-text .theory-paragraph:last-child{margin-bottom:1.5em}
 .theory-examples-block{width:100%;margin:0 0 1.5em}
 .theory-examples-label{
