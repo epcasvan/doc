@@ -1,5 +1,5 @@
 import { Fragment } from 'react'
-import { TheoryFlow, TheoryLigne, TheoryRichText, theoryHasLigne, theorySegments } from './theory-marks'
+import { TheoryFlow, TheoryLigne, TheoryRichText, TheoryTabBlock, theoryHasLigne, theorySegments } from './theory-marks'
 import { fmt } from '@/math/column-arith'
 import { MoneyChangeBoard } from './money-change'
 import type { MathItem, PreviewMode } from '@/math/types'
@@ -198,6 +198,15 @@ export function TheoryBlockView({ item }: { item: MathItem }) {
   if (block.kind === 'heading') {
     const Tag = block.sub ? 'h4' : 'h3'
     return <Tag className={`theory-heading${block.sub ? ' is-sub' : ''}`}>{block.text}</Tag>
+  }
+  if (block.kind === 'tab') {
+    return (
+      <TheoryTabBlock
+        items={(block.items ?? []).map((item) => (typeof item === 'string' ? item : item.text))}
+        tab={block.tab}
+        fleche={block.fleche}
+      />
+    )
   }
   if (block.kind === 'paragraph') {
     return (

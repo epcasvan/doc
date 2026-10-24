@@ -1,12 +1,9 @@
-import { Fragment, type ReactNode } from 'react'
+import type { ReactNode } from 'react'
+import { Fragment } from 'react'
 
-/** `{g}…{/g}` gras · `{c}…{/c}` couleur · `{s}…{/s}` souligné · `{ligne}` · `{tab:N}` / `{tab:N>}`. */
+/** `{g}…{/g}` gras · `{c}…{/c}` couleur · `{s}…{/s}` souligné · `{ligne}` ligne vide. */
 const MARK = /\{(g|c|s)\}([\s\S]*?)\{\/\1\}/g
 const LIGNE = /\{ligne\}/gi
-const TAB = /\{tab:(\d+)(?:\s*(>|fleche))?\}/gi
-
-type TabRow = { n: number; arrow: boolean; cells: string[] }
-type TheoryPiece = { kind: 'text'; text: string } | { kind: 'tabs'; rows: TabRow[] }
 
 export function theoryHasLigne(text: string): boolean {
   return /\{ligne\}/i.test(text)
@@ -28,47 +25,38 @@ export function TheoryLigne() {
   return <div className="theory-ligne" aria-hidden="true" />
 }
 
-/** Texte courant, ou lignes `{tab:N}` / `{tab:N>}` regroupées pour l’alignement. */
-function theoryPieces(text: string): TheoryPiece[] {
-  const matches = [...text.matchAll(new RegExp(TAB.source, 'gi'))]
-  if (matches.length === 0) return [{ kind: 'text', text }]
-  const pieces: TheoryPiece[] = []
-  let cursor = 0
-  let rows: TabRow[] = []
-  const flushRows = () => {
-    if (rows.length === 0) return
-    pieces.push({ kind: 'tabs', rows })
-    rows = []
-  }
-  matches.forEach((match, index) => {
-    const start = match.index ?? 0
-    const before = text.slice(cursor, start)
-    if (before.trim()) {
-      flushRows()
-      pieces.push({ kind: 'text', text: before.trim() })
-    }
-    const end = index + 1 < matches.length ? (matches[index + 1]?.index ?? text.length) : text.length
-    const cells = text
-      .slice(start + match[0].length, end)
-      .trim()
-      .split(',')
-      .map((cell) => cell.trim())
-    rows.push({
-      n: Math.max(1, Number(match[1]) || 1),
-      arrow: Boolean(match[2]),
-      cells,
-    })
-    cursor = end
-  })
-  flushRows()
-  if (cursor < text.length && text.slice(cursor).trim()) {
-    pieces.push({ kind: 'text', text: text.slice(cursor).trim() })
-  }
-  return pieces
+/** Paragraphes séparés par une ligne vide `{ligne}`. */
+export function TheoryFlow({ text, className }: { text: string; className?: string }) {
+  const segments = theorySegments(text)
+  if (segments.length === 0) return null
+  return (
+    <>
+      {segments.map((segment, index) =>
+        segment.gap ? (
+          <TheoryLigne key={index} />
+        ) : (
+          <p key={index} className={className}>
+            <TheoryRichText text={segment.text} />
+          </p>
+        ),
+      )}
+    </>
+  )
 }
 
-function TheoryTabs({ rows }: { rows: TabRow[] }) {
-  const cols = Math.max(...rows.map((row) => row.cells.length), 1)
+/** Bloc `tab` : une ligne = une entrée, virgules = colonnes. */
+export function TheoryTabBlock({
+  items,
+  tab = 1,
+  fleche = false,
+}: {
+  items: string[]
+  tab?: number
+  fleche?: boolean
+}) {
+  const rows = items.map((line) => line.split(',').map((cell) => cell.trim()))
+  const cols = Math.max(...rows.map((row) => row.length), 1)
+  const width = `${Math.max(1, tab) * 2}em`
   return (
     <table className="theory-tabs">
       <tbody>
@@ -78,13 +66,13 @@ function TheoryTabs({ rows }: { rows: TabRow[] }) {
               <Fragment key={cellIndex}>
                 {cellIndex > 0 ? (
                   <td
-                    className={`theory-tab${row.arrow ? ' is-arrow' : ''}`}
-                    style={{ width: `${row.n * 2}em`, minWidth: `${row.n * 2}em` }}
+                    className={`theory-tab${fleche ? ' is-arrow' : ''}`}
+                    style={{ width, minWidth: width }}
                     aria-hidden="true"
                   />
                 ) : null}
                 <td className="theory-tab-cell">
-                  <TheoryRichText text={row.cells[cellIndex] ?? ''} />
+                  <TheoryRichText text={row[cellIndex] ?? ''} />
                 </td>
               </Fragment>
             ))}
@@ -92,28 +80,6 @@ function TheoryTabs({ rows }: { rows: TabRow[] }) {
         ))}
       </tbody>
     </table>
-  )
-}
-
-/** Paragraphes séparés par `{ligne}`, colonnes alignées par `{tab:N}`. */
-export function TheoryFlow({ text, className }: { text: string; className?: string }) {
-  const segments = theorySegments(text)
-  if (segments.length === 0) return null
-  return (
-    <>
-      {segments.map((segment, index) => {
-        if (segment.gap) return <TheoryLigne key={index} />
-        return theoryPieces(segment.text).map((piece, pieceIndex) =>
-          piece.kind === 'tabs' ? (
-            <TheoryTabs key={`${index}-${pieceIndex}`} rows={piece.rows} />
-          ) : (
-            <p key={`${index}-${pieceIndex}`} className={className}>
-              <TheoryRichText text={piece.text} />
-            </p>
-          ),
-        )
-      })}
-    </>
   )
 }
 

@@ -436,7 +436,7 @@ export type MathItem = {
   selectVariant?: 'pills' | 'oral' | 'cards'
   /** Bloc de théorie grammaticale (fiche lecture seule). */
   theoryBlock?: {
-    kind: 'heading' | 'paragraph' | 'note' | 'rule' | 'list' | 'table' | 'examples' | 'attention' | 'astuce' | 'page'
+    kind: 'heading' | 'paragraph' | 'note' | 'rule' | 'list' | 'table' | 'examples' | 'attention' | 'astuce' | 'page' | 'tab'
     text?: string
     sub?: boolean
     title?: string
@@ -447,6 +447,10 @@ export type MathItem = {
     rows?: string[][]
     colHeader?: boolean
     rowHeader?: boolean
+    /** Largeur de tabulation du bloc `tab` (défaut 1). */
+    tab?: number
+    /** Flèche après chaque tabulation (défaut : non). */
+    fleche?: boolean
     examples?: Array<{ correct: string; wrong?: string }>
   }
   /** Entrée de glossaire maths (mot + définition + schéma). */
