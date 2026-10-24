@@ -1,4 +1,5 @@
 import { Fragment } from 'react'
+import type { GrammarTheoryBlock } from '@/francais/grammar-theory'
 import {
   TheoryFlow,
   TheoryInlineContent,
@@ -219,6 +220,39 @@ function TheoryExamplesView({
 export function TheoryBlockView({ item }: { item: MathItem }) {
   const block = item.theoryBlock
   if (!block) return null
+  return <TheoryBlockContent block={block} />
+}
+
+function TheoryBlockContent({ block }: { block: GrammarTheoryBlock }) {
+  if (block.kind === 'section') {
+    const sectionLabels = {
+      regarder: 'Je regarde',
+      expliquer: 'J’explique',
+      retenir: 'Je retiens',
+    } as const
+    const iconFiles = {
+      regarder: 'je-regarde.svg',
+      expliquer: 'j-explique.svg',
+      retenir: 'je-retiens.svg',
+    } as const
+    return (
+      <section className={`theory-section is-${block.role}`}>
+        <div className="theory-section-icon">
+          <img
+            src={`/lib/images/competences/${iconFiles[block.role]}`}
+            alt=""
+            aria-hidden="true"
+          />
+        </div>
+        <div className="theory-section-content">
+          <h4 className="theory-heading is-sub">{sectionLabels[block.role]}</h4>
+          {block.blocks.map((child, index) => (
+            <TheoryBlockContent key={`${child.kind}-${index}`} block={child} />
+          ))}
+        </div>
+      </section>
+    )
+  }
   if (block.kind === 'page') return null
   if (block.kind === 'heading') {
     const Tag = block.sub ? 'h4' : 'h3'

@@ -517,6 +517,35 @@ html,body,#root{
   margin:0;padding:0;font-size:calc(var(--theory-size) + 3pt);font-weight:700;
   border:0;line-height:1.3
 }
+.theory-section{
+  --theory-accent:var(--purple);
+  display:grid;grid-template-columns:24mm minmax(0,1fr);align-items:start;
+  gap:0 5mm;width:100%;margin:1.5mm 0;padding:2.5mm 3mm;
+  border:1.25pt solid var(--theory-accent);border-left-width:4pt;
+  -webkit-print-color-adjust:exact;print-color-adjust:exact;
+}
+.theory-section.is-regarder{--theory-accent:var(--theory-regarder,#2563eb)}
+.theory-section.is-expliquer{--theory-accent:var(--theory-expliquer,#18a66a)}
+.theory-section.is-retenir{--theory-accent:var(--theory-retenir,#c45c12)}
+.theory-section-icon{display:flex;justify-content:center;align-items:flex-start;padding-top:1mm}
+.theory-section-icon img{display:block;width:21mm;height:21mm;object-fit:contain}
+.theory-section-content{display:flex;flex-direction:column;gap:1mm;min-width:0;color:var(--ink)}
+.theory-section-content>.theory-heading.is-sub{color:var(--theory-accent)}
+.theory-section .theory-mark-theme,
+.theory-section .theory-tab.is-arrow,
+.theory-section .theory-examples-label,
+.theory-section .theory-examples-block.is-numeros .theory-examples li::before{
+  color:var(--theory-accent)
+}
+.theory-section .theory-mark-under{text-decoration-color:var(--theory-accent)}
+.theory-section .theory-examples-block.is-border .theory-examples{border-left-color:var(--theory-accent)}
+.theory-section .theory-examples-block.is-puces .theory-examples li::before{background:var(--theory-accent)}
+.theory-section .theory-table.has-col-head thead th{
+  background:color-mix(in srgb,var(--theory-accent) 16%,#fff)
+}
+.theory-section .theory-attention-label{color:var(--theory-accent)}
+.theory-section .theory-attention-box{border-color:var(--theory-accent)}
+.theory-section .theory-astuce-icon{border-color:var(--theory-accent);color:var(--theory-accent)}
 .theory-text{width:100%}
 .theory-ligne{display:block;width:100%;height:calc(var(--theory-size) * 1.5)}
 .theory-ligne.is-half{height:calc(var(--theory-size) * .75)}

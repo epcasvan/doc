@@ -6,6 +6,7 @@ export type TheoryExamplesMarker = 'border' | 'puces' | 'numeros'
 export type TheoryExampleItem = string | { text: string; wrong?: string }
 
 export type GrammarTheoryBlock =
+  | { kind: 'section'; role: 'regarder' | 'expliquer' | 'retenir'; blocks: GrammarTheoryBlock[] }
   | { kind: 'heading'; text: string; sub?: boolean }
   | { kind: 'paragraph'; text: string }
   | { kind: 'note'; text: string }
@@ -156,5 +157,50 @@ export function normalizeTheoryBlocks(blocks: GrammarTheoryBlock[]): GrammarTheo
     }
     out.push(block)
   }
-  return out
+  return groupTheorySections(out)
+}
+
+function groupTheorySections(blocks: GrammarTheoryBlock[]): GrammarTheoryBlock[] {
+  const grouped: GrammarTheoryBlock[] = []
+  let section: Extract<GrammarTheoryBlock, { kind: 'section' }> | undefined
+
+  const flush = () => {
+    if (!section) return
+    grouped.push(section)
+    section = undefined
+  }
+
+  for (const block of blocks) {
+    if (block.kind === 'section') {
+      flush()
+      grouped.push(block)
+      continue
+    }
+    if (block.kind === 'heading' && block.sub) {
+      const heading = block.text.trim().toLocaleLowerCase('fr').replace(/[’]/g, "'")
+      const role =
+        heading === 'je regarde'
+          ? 'regarder'
+          : heading === "j'explique"
+            ? 'expliquer'
+            : heading === 'je retiens'
+              ? 'retenir'
+              : undefined
+      if (role) {
+        flush()
+        section = { kind: 'section', role, blocks: [] }
+        continue
+      }
+    }
+    if (block.kind === 'page' || block.kind === 'heading') {
+      flush()
+      grouped.push(block)
+      continue
+    }
+    if (section) section.blocks.push(block)
+    else grouped.push(block)
+  }
+
+  flush()
+  return grouped
 }

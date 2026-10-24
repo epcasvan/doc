@@ -17,7 +17,7 @@ import { Header } from '@/components/generator/Header'
 import { LibreSidePanel } from '@/components/generator/LibreSidePanel'
 import { SettingsPanel } from '@/components/generator/SettingsPanel'
 import { ResultPanel } from '@/components/generator/ResultPanel'
-import { contrastOnTheme, readThemeColor } from '@/components/generator/theme'
+import { contrastOnTheme, readThemeColor, theorySectionColors } from '@/components/generator/theme'
 import {
   ALPHA_SOUTIEN_REFERENCE,
   isAlphaSoutienDomain,
@@ -90,6 +90,7 @@ export function GeneratorPage({
   const [seed, setSeed] = useState(() => openedFiche?.recipe.seed ?? randomSeed())
   const [selectedCoordShape, setSelectedCoordShape] = useState<CoordShape | null>('triangle')
   const [themeColor, setThemeColor] = useState(readThemeColor)
+  const theoryColors = theorySectionColors(themeColor)
   const [footerPanelOpen, setFooterPanelOpen] = useState(false)
   const [libreMode, setLibreMode] = useState(() => openedFiche?.recipe.libreMode ?? false)
   const [ficheRef, setFicheRef] = useState<{ id: string; name: string } | null>(() =>
@@ -487,6 +488,9 @@ export function GeneratorPage({
           '--purple': themeColor,
           '--lavender': `color-mix(in srgb, ${themeColor} 14%, #fff)`,
           '--theme-on': contrastOnTheme(themeColor),
+          '--theory-regarder': theoryColors.regarder,
+          '--theory-expliquer': theoryColors.expliquer,
+          '--theory-retenir': theoryColors.retenir,
         } as CSSProperties
       }
     >

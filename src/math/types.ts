@@ -1,3 +1,5 @@
+import type { GrammarTheoryBlock } from '@/francais/grammar-theory'
+
 export type Domain =
   | 'français'
   | 'algèbre'
@@ -435,24 +437,7 @@ export type MathItem = {
   /** Variante de rendu pour les QCM (orale empilée, cartes vocabulaire). */
   selectVariant?: 'pills' | 'oral' | 'cards'
   /** Bloc de théorie grammaticale (fiche lecture seule). */
-  theoryBlock?: {
-    kind: 'heading' | 'paragraph' | 'note' | 'rule' | 'list' | 'table' | 'examples' | 'attention' | 'astuce' | 'page' | 'tab'
-    text?: string
-    sub?: boolean
-    title?: string
-    label?: string
-    marker?: 'border' | 'puces' | 'numeros'
-    items?: Array<string | { text: string; wrong?: string }>
-    headers?: string[]
-    rows?: string[][]
-    colHeader?: boolean
-    rowHeader?: boolean
-    /** Largeur de tabulation du bloc `tab` (défaut 1). */
-    tab?: number
-    /** Flèche après chaque tabulation (défaut : non). */
-    fleche?: boolean
-    examples?: Array<{ correct: string; wrong?: string }>
-  }
+  theoryBlock?: GrammarTheoryBlock
   /** Entrée de glossaire maths (mot + définition + schéma). */
   glossary?: {
     term: string

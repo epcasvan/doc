@@ -38,6 +38,7 @@ export function contrastOnTheme(hex: string): string {
 }
 
 export function hslToHex(h: number, s: number, l: number): string {
+  h = ((h % 360) + 360) % 360
   const sat = s / 100
   const light = l / 100
   const chroma = sat * Math.min(light, 1 - light)
@@ -49,6 +50,42 @@ export function hslToHex(h: number, s: number, l: number): string {
       .padStart(2, '0')
   }
   return `#${channel(0)}${channel(8)}${channel(4)}`
+}
+
+function hexToHsl(hex: string): { h: number; s: number; l: number } {
+  const value = Number.parseInt(hex.slice(1), 16)
+  const r = ((value >> 16) & 255) / 255
+  const g = ((value >> 8) & 255) / 255
+  const b = (value & 255) / 255
+  const max = Math.max(r, g, b)
+  const min = Math.min(r, g, b)
+  const delta = max - min
+  const l = (max + min) / 2
+  const s = delta === 0 ? 0 : delta / (1 - Math.abs(2 * l - 1))
+  let h = 0
+  if (delta !== 0) {
+    if (max === r) h = ((g - b) / delta) % 6
+    else if (max === g) h = (b - r) / delta + 2
+    else h = (r - g) / delta + 4
+    h *= 60
+    if (h < 0) h += 360
+  }
+  return { h, s: s * 100, l: l * 100 }
+}
+
+/** Accents bleu, vert et orange qui suivent la roue chromatique du thème. */
+export function theorySectionColors(themeColor: string) {
+  const themeHue = hexToHue(themeColor)
+  const baseHue = hexToHue(THEME_COLORS[THEME_COLORS.length - 1].color)
+  const colorFor = (color: string) => {
+    const target = hexToHsl(color)
+    return hslToHex(themeHue + target.h - baseHue, target.s, target.l)
+  }
+  return {
+    regarder: colorFor('#2563eb'),
+    expliquer: colorFor('#18a66a'),
+    retenir: colorFor('#c45c12'),
+  }
 }
 
 export function hexToHue(hex: string): number {
