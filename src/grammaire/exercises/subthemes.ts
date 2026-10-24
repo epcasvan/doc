@@ -16,7 +16,7 @@ export const GRAM_SUBTHEMES: GramSubtheme[] = [
     id: 'famille',
     label: 'Famille',
     topic: 'gram-se-presenter',
-    theoryTypeIds: [],
+    theoryTypeIds: ['gram-famille-theorie'],
   },
 
   // —— Présent ——
@@ -60,14 +60,13 @@ export const GRAM_SUBTHEMES: GramSubtheme[] = [
     id: 'modaux',
     label: 'Pouvoir, devoir, vouloir',
     topic: 'gram-present',
-    /** Théorie détaillée dans Demander / Activité ; ici exercices seulement. */
-    theoryTypeIds: [],
+    theoryTypeIds: ['gram-modaux-theorie'],
   },
   {
     id: 'pronominaux',
     label: 'Verbes pronominaux',
     topic: 'gram-present',
-    theoryTypeIds: [],
+    theoryTypeIds: ['gram-pronominaux-theorie'],
   },
   {
     id: 'pronoms-sujets',
@@ -169,7 +168,7 @@ export const GRAM_SUBTHEMES: GramSubtheme[] = [
     id: 'description-physique',
     label: 'Description physique',
     topic: 'gram-decrire',
-    theoryTypeIds: [],
+    theoryTypeIds: ['gram-f15-theorie'],
   },
 ]
 

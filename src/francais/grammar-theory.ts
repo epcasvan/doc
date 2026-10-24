@@ -32,6 +32,29 @@ export function isGrammarTheoryType(typeId: string): boolean {
   )
 }
 
+/** Gabarit FALC vide : titre, texte, Je regarde, J’explique, astuce, Je retiens, tableau, Attention. */
+export function theoryGabarit(title: string): GrammarTheoryBlock[] {
+  return [
+    { kind: 'heading', text: title },
+    { kind: 'paragraph', text: 'À compléter.' },
+    { kind: 'heading', text: 'Je regarde', sub: true },
+    { kind: 'examples', items: ['À compléter.'] },
+    { kind: 'heading', text: 'J’explique', sub: true },
+    { kind: 'paragraph', text: 'À compléter.' },
+    { kind: 'astuce', text: 'À compléter.' },
+    { kind: 'heading', text: 'Je retiens', sub: true },
+    { kind: 'paragraph', text: 'À compléter.' },
+    {
+      kind: 'table',
+      colHeader: true,
+      rowHeader: true,
+      headers: ['', ''],
+      rows: [['À compléter.', 'À compléter.']],
+    },
+    { kind: 'attention', text: 'À compléter.' },
+  ]
+}
+
 export function exampleItemText(item: TheoryExampleItem): string {
   return typeof item === 'string' ? item : item.text
 }

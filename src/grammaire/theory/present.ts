@@ -1,3 +1,4 @@
+import { theoryGabarit } from '@/francais/grammar-theory'
 import type { GrammaireTheoryDoc } from '../types'
 
 /**
@@ -261,5 +262,25 @@ export const presentDocs: GrammaireTheoryDoc[] = [
       },
       { kind: 'attention', text: 'Vous faites (pas « vous faisez »).' },
     ],
+  },
+  {
+    id: 'modaux',
+    typeId: 'gram-modaux-theorie',
+    index: 8,
+    title: 'Pouvoir, devoir, vouloir',
+    topic: 'gram-present',
+    public: 'A1',
+    objectif: 'À compléter.',
+    blocks: theoryGabarit('Pouvoir, devoir, vouloir'),
+  },
+  {
+    id: 'pronominaux',
+    typeId: 'gram-pronominaux-theorie',
+    index: 9,
+    title: 'Verbes pronominaux',
+    topic: 'gram-present',
+    public: 'A1',
+    objectif: 'À compléter.',
+    blocks: theoryGabarit('Verbes pronominaux'),
   },
 ]

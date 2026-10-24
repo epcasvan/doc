@@ -1,3 +1,4 @@
+import { theoryGabarit } from '@/francais/grammar-theory'
 import type { GrammaireTheoryDoc } from '../types'
 
 /** Théorie FALC — thème gram-se-presenter. Français seul (pas de traductions). */
@@ -188,5 +189,15 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
     { kind: 'table', colHeader: true, rowHeader: true, headers: ['Affirmatif', 'Négatif'], rows: [['déjà / toujours', 'ne … jamais / ne … pas encore'], ['encore', 'ne … plus'], ['tout', 'ne … rien'], ['quelqu’un', 'ne … personne'], ['quelques', 'ne … aucun(e)'], ['avec', 'sans']] },
     { kind: 'attention', text: 'Réponse à une négation : Si = oui malgré le non.' },
     ],
+  },
+  {
+    id: 'famille',
+    typeId: 'gram-famille-theorie',
+    index: 9,
+    title: 'Famille',
+    topic: 'gram-se-presenter',
+    public: 'pré-A1 / A1',
+    objectif: 'À compléter.',
+    blocks: theoryGabarit('Famille'),
   },
 ]

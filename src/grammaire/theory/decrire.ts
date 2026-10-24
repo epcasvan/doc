@@ -1,3 +1,4 @@
+import { theoryGabarit } from '@/francais/grammar-theory'
 import type { GrammaireTheoryDoc } from '../types'
 
 /** Théorie FALC — thème gram-decrire. Français seul (pas de traductions). */
@@ -238,5 +239,15 @@ export const decrireDocs: GrammaireTheoryDoc[] = [
       },
       { kind: 'attention', text: 'Autant de (nom) ≠ aussi (adjectif).' },
     ],
+  },
+  {
+    id: 'description-physique',
+    typeId: 'gram-f15-theorie',
+    index: 10,
+    title: 'Description physique',
+    topic: 'gram-decrire',
+    public: 'A1',
+    objectif: 'À compléter.',
+    blocks: theoryGabarit('Description physique'),
   },
 ]
