@@ -523,6 +523,18 @@ html,body,#root{
   margin:0;font-size:var(--theory-size);line-height:1.5;text-align:justify;color:var(--ink);
   text-justify:inter-word
 }
+.theory-tabs{
+  width:auto;border-collapse:collapse;margin:0;
+  font-size:var(--theory-size);line-height:1.5;color:var(--ink)
+}
+.theory-tabs td{border:0;padding:0;vertical-align:baseline;text-align:left}
+.theory-tab-cell{white-space:nowrap}
+.theory-tab{padding:0}
+.theory-tab.is-arrow{
+  text-align:right;padding-right:.4em;color:var(--purple);font-weight:700;
+  -webkit-print-color-adjust:exact;print-color-adjust:exact
+}
+.theory-tab.is-arrow::after{content:"→"}
 .theory-mark-bold{font-weight:700}
 .theory-mark-theme{font-weight:700;color:var(--purple);-webkit-print-color-adjust:exact;print-color-adjust:exact}
 .theory-mark-under{
