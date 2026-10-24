@@ -519,15 +519,15 @@ html,body,#root{
 }
 .theory-section{
   --theory-accent:var(--purple);
-  display:grid;grid-template-columns:24mm minmax(0,1fr);align-items:start;
-  gap:0 5mm;width:100%;margin:1.5mm 0;padding:2.5mm 3mm;
+  display:grid;grid-template-columns:55px minmax(0,1fr);align-items:start;
+  gap:0;width:100%;margin:1.5mm 0;padding:5px 3mm 2.5mm 5px;
   border:1.25pt solid var(--theory-accent);border-left-width:4pt;
   -webkit-print-color-adjust:exact;print-color-adjust:exact;
 }
 .theory-section.is-regarder{--theory-accent:var(--theory-regarder,#2563eb)}
 .theory-section.is-expliquer{--theory-accent:var(--theory-expliquer,#18a66a)}
 .theory-section.is-retenir{--theory-accent:var(--theory-retenir,#c45c12)}
-.theory-section-icon{display:block;width:40px;height:40px;margin:1mm auto 0;color:var(--theory-accent);overflow:visible}
+.theory-section-icon{display:block;width:40px;height:40px;margin:0;color:var(--theory-accent);overflow:visible}
 .theory-section-icon use{color:inherit}
 .theory-section-content{display:flex;flex-direction:column;gap:1mm;min-width:0;color:var(--ink)}
 .theory-section-content>.theory-heading.is-sub{color:var(--theory-accent)}
