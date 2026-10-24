@@ -57,6 +57,16 @@ Les blocs de théorie sont collés. `{ligne}` ajoute l’espace, seul dans un pa
 Exemple : `J’utilise {c}être{/c}, {g}habiter{/g} et {s}parler{/s}.`  
 Ligne vide : `{ kind: 'paragraph', text: '{ligne}' }` ou `…Martigny.{ligne}Je parle français.`
 
+## Feuille suivante
+
+La théorie n’est plus coupée tous les 6 blocs. Tout reste sur une feuille, sauf si vous insérez un bloc page :
+
+```ts
+{ kind: 'page' },
+```
+
+La suite (tableau, astuce, etc.) commence alors sur la feuille suivante. « Une fiche » dans le panneau ignore ces blocs.
+
 ## Déterminisme
 
 Tirage via `createRng(seed)` + `shuffle` ; jamais `Math.random()` dans le générateur.

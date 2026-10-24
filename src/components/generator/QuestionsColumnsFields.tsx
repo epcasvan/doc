@@ -291,17 +291,17 @@ export function QuestionsColumnsFields(props: QuestionsColumnsFieldsProps) {
                       onClick={() => updatePage({ continueOnNextPage: true })}
                       title={
                         isGramTheory
-                          ? 'La suite de la théorie passe sur la feuille suivante'
+                          ? 'Un bloc page dans la théorie commence la feuille suivante'
                           : 'Les questions au-delà de 4 passent sur la feuille suivante'
                       }
                     >
-                      Suite auto
+                      {isGramTheory ? 'Blocs page' : 'Suite auto'}
                     </button>
                   </div>
                   {activeBlock.continueOnNextPage ? (
                     <small className="muted">
                       {isGramTheory
-                        ? 'Si la théorie dépasse, une feuille « suite » est ajoutée automatiquement.'
+                        ? 'La théorie tient sur une feuille. Un bloc { kind: \'page\' } commence la suivante.'
                         : 'Au-delà de 4 questions, une feuille « suite » est ajoutée automatiquement.'}
                     </small>
                   ) : null}

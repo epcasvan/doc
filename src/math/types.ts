@@ -436,7 +436,7 @@ export type MathItem = {
   selectVariant?: 'pills' | 'oral' | 'cards'
   /** Bloc de théorie grammaticale (fiche lecture seule). */
   theoryBlock?: {
-    kind: 'heading' | 'paragraph' | 'note' | 'rule' | 'list' | 'table' | 'examples' | 'attention' | 'astuce'
+    kind: 'heading' | 'paragraph' | 'note' | 'rule' | 'list' | 'table' | 'examples' | 'attention' | 'astuce' | 'page'
     text?: string
     sub?: boolean
     title?: string

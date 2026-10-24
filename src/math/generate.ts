@@ -610,18 +610,63 @@ export function buildWorksheets(pages: PageConfig[], seed: number): WorksheetPag
       }
     }
 
-    // Théorie : ~6 blocs par feuille A4 (titres + tableaux densent vite).
-    const pageCap = isTheory ? 6 : 4
+    // Théorie : une feuille, sauf aux blocs `{ kind: 'page' }` (pas de plafond de 6).
+    if (isTheory) {
+      const sourceBlock = worksheet.blocks[0]
+      const items = sourceBlock?.items ?? worksheet.items
+      const followBreaks = page.continueOnNextPage !== false
+      const segments: MathItem[][] = [[]]
+      for (const item of items) {
+        if (item.theoryBlock?.kind === 'page') {
+          if (followBreaks) segments.push([])
+          continue
+        }
+        segments[segments.length - 1]!.push(item)
+      }
+      const sheets = segments.filter((slice) => slice.length > 0)
+      if (!sourceBlock || sheets.length <= 1) {
+        const kept = sheets[0] ?? items.filter((item) => item.theoryBlock?.kind !== 'page')
+        out.push({
+          ...worksheet,
+          items: kept,
+          blocks: sourceBlock ? [{ ...sourceBlock, items: kept }] : worksheet.blocks,
+          configIndex: index,
+          isContinuation: false,
+        })
+        return
+      }
+      const suiteInstruction = 'Suite de la théorie.'
+      sheets.forEach((sliceItems, part) => {
+        out.push({
+          ...worksheet,
+          title: part === 0 ? worksheet.title : `${worksheet.title} — suite`,
+          instruction: part === 0 ? worksheet.instruction : suiteInstruction,
+          items: sliceItems,
+          blocks: [
+            {
+              ...sourceBlock,
+              title: part === 0 ? sourceBlock.title : `${sourceBlock.title.replace(/ \(suite\)$/, '')} (suite)`,
+              instruction: part === 0 ? sourceBlock.instruction : suiteInstruction,
+              document: part === 0 ? sourceBlock.document : undefined,
+              items: sliceItems,
+            },
+          ],
+          configIndex: index,
+          isContinuation: part > 0,
+        })
+      })
+      return
+    }
+
+    const pageCap = 4
     const totalItems = worksheet.items.length
-    if (!page.continueOnNextPage || !(isCom || isTheory) || totalItems <= pageCap) {
+    if (!page.continueOnNextPage || !isCom || totalItems <= pageCap) {
       out.push({ ...worksheet, configIndex: index, isContinuation: false })
       return
     }
 
-    const suiteInstruction = isTheory
-      ? 'Suite de la théorie.'
-      : 'Continuez. Répondez aux questions suivantes.'
-    const suiteTitleSuffix = isTheory ? 'Suite de la théorie.' : 'Suite des questions.'
+    const suiteInstruction = 'Continuez. Répondez aux questions suivantes.'
+    const suiteTitleSuffix = 'Suite des questions.'
 
     let offset = 0
     let part = 0

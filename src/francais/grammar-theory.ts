@@ -15,6 +15,8 @@ export type GrammarTheoryBlock =
   | { kind: 'table'; headers: string[]; rows: string[][]; colHeader?: boolean; rowHeader?: boolean }
   | { kind: 'attention'; text: string }
   | { kind: 'astuce'; text: string }
+  /** Coupe manuelle : la suite commence sur la feuille suivante. */
+  | { kind: 'page' }
 
 export type GrammarTheoryDoc = {
   id: string
@@ -129,6 +131,10 @@ export function normalizeTheoryBlocks(blocks: GrammarTheoryBlock[]): GrammarTheo
         marker: block.marker ?? 'border',
         label: block.label?.trim() || 'Exemples',
       })
+      continue
+    }
+    if (block.kind === 'page') {
+      out.push(block)
       continue
     }
     if (block.kind === 'paragraph') {

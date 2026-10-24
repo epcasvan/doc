@@ -194,6 +194,7 @@ function TheoryExamplesView({
 export function TheoryBlockView({ item }: { item: MathItem }) {
   const block = item.theoryBlock
   if (!block) return null
+  if (block.kind === 'page') return null
   if (block.kind === 'heading') {
     const Tag = block.sub ? 'h4' : 'h3'
     return <Tag className={`theory-heading${block.sub ? ' is-sub' : ''}`}>{block.text}</Tag>
