@@ -39,7 +39,7 @@ export const alimentsDocs: GrammaireTheoryDoc[] = [
     { kind: 'examples', items: ['Le pain.', 'La soupe.', 'L’eau.', 'Les fruits.'] },
     { kind: 'heading', text: 'J’explique', sub: true },
     { kind: 'paragraph', text: 'Le / la / l’ / les.' },
-    { kind: 'paragraph', text: 'L’ devant voyelle ou h.' },
+    { kind: 'astuce', text: 'L’ devant voyelle ou h.' },
     { kind: 'heading', text: 'Je retiens', sub: true },
     { kind: 'paragraph', text: 'le / la / l’ / les = défini.' },
     { kind: 'table', colHeader: true, rowHeader: true, headers: ['', 'Masculin', 'Féminin'], rows: [['singulier', 'le / l’', 'la / l’'], ['pluriel', 'les', 'les']] },

@@ -19,7 +19,7 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
     { kind: 'paragraph', text: 'Pour me présenter, je donne des informations simples.' },
     { kind: 'paragraph', text: 'J’utilise les verbes : être, habiter, parler, s’appeler.' },
     { kind: 'paragraph', text: 'Un verbe, c’est un mot d’action ou d’état.' },
-    { kind: 'paragraph', text: 'Devant une voyelle ou un h, j’écris : j’, m’, t’, s’.' },
+    { kind: 'astuce', text: 'Devant une voyelle ou un h, j’écris : j’, m’, t’, s’.' },
     { kind: 'heading', text: 'Je retiens', sub: true },
     { kind: 'paragraph', text: 'être + nationalité. Habiter à + ville. Parler + langue. S’appeler + prénom.' },
     { kind: 'table', colHeader: true, rowHeader: true, headers: ['Personne', 'être', 'habiter', 'parler', 's’appeler'], rows: [['je', 'suis', 'habite', 'parle', 'm’appelle'], ['tu', 'es', 'habites', 'parles', 't’appelles'], ['il / elle / on', 'est', 'habite', 'parle', 's’appelle'], ['nous', 'sommes', 'habitons', 'parlons', 'nous appelons'], ['vous', 'êtes', 'habitez', 'parlez', 'vous appelez'], ['ils / elles', 'sont', 'habitent', 'parlent', 's’appellent']] },
@@ -162,7 +162,7 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
     { kind: 'heading', text: 'Je retiens', sub: true },
     { kind: 'paragraph', text: 'négation de base = ne … pas autour du verbe.' },
     { kind: 'table', colHeader: true, rowHeader: true, headers: ['Cas', 'Forme', 'Exemple'], rows: [['présent', 'ne + verbe + pas', 'Je ne suis pas italien.'], ['composé', 'ne + auxiliaire + pas + participe', 'Je n’ai pas compris.'], ['infinitif', 'ne pas + verbe', 'Ne pas fumer.'], ['impératif', 'ne + verbe + pas', 'Ne fumez pas !']] },
-    { kind: 'attention', text: 'Devant une voyelle : ne → n’.' },
+    { kind: 'astuce', text: 'Devant une voyelle : ne → n’.' },
     ],
   },
   {

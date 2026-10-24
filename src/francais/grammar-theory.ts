@@ -14,6 +14,7 @@ export type GrammarTheoryBlock =
   | { kind: 'list'; title?: string; items: string[] }
   | { kind: 'table'; headers: string[]; rows: string[][]; colHeader?: boolean; rowHeader?: boolean }
   | { kind: 'attention'; text: string }
+  | { kind: 'astuce'; text: string }
 
 export type GrammarTheoryDoc = {
   id: string
@@ -43,7 +44,7 @@ function stripLead(text: string, re: RegExp): string {
   return text.replace(re, '').replace(/^\s+/, '')
 }
 
-/** Aligne les blocs hérités sur les styles unifiés (titre, texte, exemples, tableau, attention). */
+/** Aligne les blocs hérités sur les styles unifiés (titre, texte, exemples, tableau, attention, astuce). */
 export function normalizeTheoryBlocks(blocks: GrammarTheoryBlock[]): GrammarTheoryBlock[] {
   const out: GrammarTheoryBlock[] = []
   for (const block of blocks) {
@@ -72,6 +73,13 @@ export function normalizeTheoryBlocks(blocks: GrammarTheoryBlock[]): GrammarTheo
         out.push({
           kind: 'attention',
           text: stripLead(raw, /^attention\s*[!.]?\s*/i),
+        })
+        continue
+      }
+      if (/^astuce\b/i.test(raw)) {
+        out.push({
+          kind: 'astuce',
+          text: stripLead(raw, /^astuce\s*[!.:]?\s*/i),
         })
         continue
       }

@@ -86,7 +86,7 @@ export const pronomsDocs: GrammaireTheoryDoc[] = [
     { kind: 'heading', text: 'Je retiens', sub: true },
     { kind: 'paragraph', text: 'COD avant le verbe.' },
     { kind: 'table', colHeader: true, rowHeader: true, headers: ['Pronom', 'Exemple'], rows: [['le / la / l’', 'Je le vois.'], ['les', 'Je les mange.'], ['me / te', 'Il me connaît.']] },
-    { kind: 'attention', text: 'Devant voyelle : le/la → l’.' },
+    { kind: 'astuce', text: 'Devant voyelle : le/la → l’.' },
     ],
   },
   {

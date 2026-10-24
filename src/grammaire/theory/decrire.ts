@@ -63,7 +63,7 @@ export const decrireDocs: GrammaireTheoryDoc[] = [
     { kind: 'examples', items: ['Mon livre.', 'Ta sœur.', 'Ses amis.'] },
     { kind: 'heading', text: 'J’explique', sub: true },
     { kind: 'paragraph', text: 'Le possessif s’accorde avec le nom possédé, pas avec le possesseur.' },
-    { kind: 'paragraph', text: 'Devant voyelle : mon / ton / son même au féminin : mon amie.' },
+    { kind: 'astuce', text: 'Devant voyelle : mon / ton / son même au féminin : mon amie.' },
     { kind: 'heading', text: 'Je retiens', sub: true },
     { kind: 'paragraph', text: 'accord avec le nom. mon amie (voyelle).' },
     { kind: 'table', colHeader: true, rowHeader: true, headers: ['', 'masc.', 'fém.', 'pluriel'], rows: [['je', 'mon', 'ma', 'mes'], ['tu', 'ton', 'ta', 'tes'], ['il / elle', 'son', 'sa', 'ses'], ['nous', 'notre', 'notre', 'nos'], ['vous', 'votre', 'votre', 'vos'], ['ils / elles', 'leur', 'leur', 'leurs']] },

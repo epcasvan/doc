@@ -569,6 +569,21 @@ html,body,#root{
   width:100%;border:2pt solid var(--purple);background:transparent;padding:.55em .7em;box-sizing:border-box
 }
 .theory-attention-box .theory-paragraph{margin:0}
+.theory-astuce{
+  display:flex;align-items:flex-start;gap:.45em;width:100%;margin:0 0 1.5em
+}
+.theory-astuce-icon{
+  flex:0 0 1.15em;width:1.15em;height:1.15em;margin-top:.2em;
+  border:1.5pt solid var(--purple);border-radius:50%;box-sizing:border-box;
+  color:var(--purple);font-family:Georgia,"Times New Roman",serif;
+  font-style:italic;font-weight:700;font-size:.72em;line-height:1;
+  display:flex;align-items:center;justify-content:center
+}
+.theory-astuce-text{
+  flex:1;min-width:0;margin:0;
+  font-size:var(--theory-size);font-style:italic;line-height:1.5;
+  text-align:justify;text-justify:inter-word;color:var(--ink)
+}
 
 
 .letter-grid-block{

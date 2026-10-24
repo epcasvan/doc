@@ -208,6 +208,16 @@ export function TheoryBlockView({ item }: { item: MathItem }) {
       </aside>
     )
   }
+  if (block.kind === 'astuce') {
+    return (
+      <aside className="theory-astuce" aria-label="Astuce">
+        <span className="theory-astuce-icon" aria-hidden="true">
+          i
+        </span>
+        <p className="theory-astuce-text">{block.text}</p>
+      </aside>
+    )
+  }
   if (block.kind === 'note') {
     if (/^attention\b/i.test(block.text ?? '')) {
       const text = (block.text ?? '').replace(/^attention\s*[!.]?\s*/i, '')
@@ -217,6 +227,17 @@ export function TheoryBlockView({ item }: { item: MathItem }) {
           <div className="theory-attention-box">
             <p className="theory-paragraph">{text}</p>
           </div>
+        </aside>
+      )
+    }
+    if (/^astuce\b/i.test(block.text ?? '')) {
+      const text = (block.text ?? '').replace(/^astuce\s*[!.:]?\s*/i, '')
+      return (
+        <aside className="theory-astuce" aria-label="Astuce">
+          <span className="theory-astuce-icon" aria-hidden="true">
+            i
+          </span>
+          <p className="theory-astuce-text">{text}</p>
         </aside>
       )
     }

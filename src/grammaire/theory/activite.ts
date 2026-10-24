@@ -38,7 +38,7 @@ export const activiteDocs: GrammaireTheoryDoc[] = [
     { kind: 'examples', items: ['Je me douche.', 'Tu t’appelles Sam.', 'Ils se baignent.'] },
     { kind: 'heading', text: 'J’explique', sub: true },
     { kind: 'paragraph', text: 'Un verbe pronominal a deux pronoms : sujet + me/te/se/nous/vous/se.' },
-    { kind: 'paragraph', text: 'Devant une voyelle : me → m’, te → t’, se → s’.' },
+    { kind: 'astuce', text: 'Devant une voyelle : me → m’, te → t’, se → s’.' },
     { kind: 'heading', text: 'Je retiens', sub: true },
     { kind: 'paragraph', text: 'je me / tu t’ / il se / nous nous / vous vous / ils se.' },
     { kind: 'table', colHeader: true, rowHeader: true, headers: ['Personne', 'Pronom', 'Exemple'], rows: [['je', 'me / m’', 'Je me lave.'], ['tu', 'te / t’', 'Tu t’appelles.'], ['il / elle / on', 'se / s’', 'Elle se couche.'], ['nous', 'nous', 'Nous nous regardons.'], ['vous', 'vous', 'Vous vous levez.'], ['ils / elles', 'se / s’', 'Ils se baignent.']] },
