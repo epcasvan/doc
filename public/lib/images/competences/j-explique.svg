@@ -1,7 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
   <title id="title">J’explique</title>
-  <path fill="#78ad9e" d="M256 68C153 68 74 133 74 218c0 48 25 89 67 116l-36 65c-5 10 5 20 15 15l83-39c17 6 35 9 53 9 103 0 182-65 182-150S359 68 256 68Z"/>
-  <g fill="none" stroke="#fff" stroke-linecap="round" stroke-width="22">
+  <g id="icon">
+    <path fill="currentColor" d="M256 68C153 68 74 133 74 218c0 48 25 89 67 116l-36 65c-5 10 5 20 15 15l83-39c17 6 35 9 53 9 103 0 182-65 182-150S359 68 256 68Z"/>
+    <g fill="none" stroke="#fff" stroke-linecap="round" stroke-width="22">
     <path d="M166 174h180M166 232h180M166 290h120"/>
+    </g>
   </g>
 </svg>

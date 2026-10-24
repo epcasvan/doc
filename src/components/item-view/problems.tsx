@@ -237,13 +237,9 @@ function TheoryBlockContent({ block }: { block: GrammarTheoryBlock }) {
     } as const
     return (
       <section className={`theory-section is-${block.role}`}>
-        <div className="theory-section-icon">
-          <img
-            src={`/lib/images/competences/${iconFiles[block.role]}`}
-            alt=""
-            aria-hidden="true"
-          />
-        </div>
+        <svg className="theory-section-icon" viewBox="0 0 512 512" aria-hidden="true">
+          <use href={`/lib/images/competences/${iconFiles[block.role]}#icon`} />
+        </svg>
         <div className="theory-section-content">
           <h4 className="theory-heading is-sub">{sectionLabels[block.role]}</h4>
           {block.blocks.map((child, index) => (

@@ -527,8 +527,8 @@ html,body,#root{
 .theory-section.is-regarder{--theory-accent:var(--theory-regarder,#2563eb)}
 .theory-section.is-expliquer{--theory-accent:var(--theory-expliquer,#18a66a)}
 .theory-section.is-retenir{--theory-accent:var(--theory-retenir,#c45c12)}
-.theory-section-icon{display:flex;justify-content:center;align-items:flex-start;padding-top:1mm}
-.theory-section-icon img{display:block;width:21mm;height:21mm;object-fit:contain}
+.theory-section-icon{display:block;width:21mm;height:21mm;margin:1mm auto 0;color:var(--theory-accent);overflow:visible}
+.theory-section-icon use{color:inherit}
 .theory-section-content{display:flex;flex-direction:column;gap:1mm;min-width:0;color:var(--ink)}
 .theory-section-content>.theory-heading.is-sub{color:var(--theory-accent)}
 .theory-section .theory-mark-theme,
