@@ -436,13 +436,17 @@ export type MathItem = {
   selectVariant?: 'pills' | 'oral' | 'cards'
   /** Bloc de théorie grammaticale (fiche lecture seule). */
   theoryBlock?: {
-    kind: 'heading' | 'paragraph' | 'note' | 'rule' | 'list' | 'table'
+    kind: 'heading' | 'paragraph' | 'note' | 'rule' | 'list' | 'table' | 'examples' | 'attention'
     text?: string
     sub?: boolean
     title?: string
-    items?: string[]
+    label?: string
+    marker?: 'border' | 'puces' | 'numeros'
+    items?: Array<string | { text: string; wrong?: string }>
     headers?: string[]
     rows?: string[][]
+    colHeader?: boolean
+    rowHeader?: boolean
     examples?: Array<{ correct: string; wrong?: string }>
   }
   /** Entrée de glossaire maths (mot + définition + schéma). */

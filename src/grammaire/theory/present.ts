@@ -18,22 +18,18 @@ export const presentDocs: GrammaireTheoryDoc[] = [
       { kind: 'heading', text: 'Les pronoms sujets' },
       { kind: 'paragraph', text: 'Je remplace une personne ou un groupe devant le verbe.' },
       { kind: 'heading', text: 'Je regarde', sub: true },
-      {
-        kind: 'rule',
-        text: 'Exemple',
-        examples: [
-          { correct: 'Ali parle français. → Il parle français.' },
-          { correct: 'Marie et moi partons. → Nous partons.' },
+      { kind: 'examples', items: [
+          'Ali parle français. → Il parle français.',
+          'Marie et moi partons. → Nous partons.',
         ],
       },
       { kind: 'heading', text: 'J’explique', sub: true },
       { kind: 'paragraph', text: 'Un pronom sujet évite de répéter le nom.' },
       { kind: 'paragraph', text: 'Je, tu, il, elle, on, nous, vous, ils, elles.' },
       { kind: 'paragraph', text: 'On = une personne ou des personnes (souvent « nous » à l’oral).' },
-      { kind: 'note', text: 'Je retiens : un pronom sujet + un verbe conjugué.' },
-      {
-        kind: 'table',
-        headers: ['Pronom', 'Qui ?', 'Exemple'],
+      { kind: 'heading', text: 'Je retiens', sub: true },
+    { kind: 'paragraph', text: 'un pronom sujet + un verbe conjugué.' },
+      { kind: 'table', colHeader: true, rowHeader: true, headers: ['Pronom', 'Qui ?', 'Exemple'],
         rows: [
           ['je', 'moi', 'Je travaille.'],
           ['tu', 'toi (familier)', 'Tu écoutes.'],
@@ -44,7 +40,7 @@ export const presentDocs: GrammaireTheoryDoc[] = [
           ['ils / elles', 'plusieurs', 'Ils arrivent.'],
         ],
       },
-      { kind: 'note', text: 'Attention ! Tu = familier. Vous = politesse ou plusieurs personnes.' },
+      { kind: 'attention', text: 'Tu = familier. Vous = politesse ou plusieurs personnes.' },
     ],
   },
   {
@@ -59,18 +55,14 @@ export const presentDocs: GrammaireTheoryDoc[] = [
       { kind: 'heading', text: 'Le verbe être' },
       { kind: 'paragraph', text: 'Je conjugue être au présent.' },
       { kind: 'heading', text: 'Je regarde', sub: true },
-      {
-        kind: 'rule',
-        text: 'Exemple',
-        examples: [{ correct: 'Je suis fatigué.' }, { correct: 'Ils sont prêts.' }],
+      { kind: 'examples', items: ['Je suis fatigué.', 'Ils sont prêts.'],
       },
       { kind: 'heading', text: 'J’explique', sub: true },
       { kind: 'paragraph', text: 'Être est un verbe irrégulier.' },
       { kind: 'paragraph', text: 'Je l’utilise pour l’identité, l’état, la nationalité, le métier.' },
-      { kind: 'note', text: 'Je retiens : suis, es, est, sommes, êtes, sont.' },
-      {
-        kind: 'table',
-        headers: ['Personne', 'être'],
+      { kind: 'heading', text: 'Je retiens', sub: true },
+    { kind: 'paragraph', text: 'suis, es, est, sommes, êtes, sont.' },
+      { kind: 'table', colHeader: true, rowHeader: true, headers: ['Personne', 'être'],
         rows: [
           ['je', 'suis'],
           ['tu', 'es'],
@@ -80,7 +72,7 @@ export const presentDocs: GrammaireTheoryDoc[] = [
           ['ils / elles', 'sont'],
         ],
       },
-      { kind: 'note', text: 'Attention ! Vous êtes (pas « vous est »).' },
+      { kind: 'attention', text: 'Vous êtes (pas « vous est »).' },
     ],
   },
   {
@@ -95,18 +87,12 @@ export const presentDocs: GrammaireTheoryDoc[] = [
       { kind: 'heading', text: 'Le verbe avoir' },
       { kind: 'paragraph', text: 'Je conjugue avoir au présent.' },
       { kind: 'heading', text: 'Je regarde', sub: true },
-      {
-        kind: 'rule',
-        text: 'Exemple',
-        examples: [{ correct: 'J’ai un billet.' }, { correct: 'Nous avons faim.' }],
+      { kind: 'examples', items: ['J’ai un billet.', 'Nous avons faim.'],
       },
       { kind: 'heading', text: 'J’explique', sub: true },
       { kind: 'paragraph', text: 'Avoir est irrégulier.' },
       { kind: 'paragraph', text: 'Je l’utilise pour la possession et beaucoup d’expressions.' },
-      {
-        kind: 'list',
-        title: 'Expressions fréquentes',
-        items: [
+      { kind: 'examples', marker: 'puces', label: 'Expressions fréquentes', items: [
           'avoir faim / soif',
           'avoir froid / chaud',
           'avoir peur',
@@ -115,10 +101,9 @@ export const presentDocs: GrammaireTheoryDoc[] = [
           'avoir ans (âge)',
         ],
       },
-      { kind: 'note', text: 'Je retiens : ai, as, a, avons, avez, ont.' },
-      {
-        kind: 'table',
-        headers: ['Personne', 'avoir'],
+      { kind: 'heading', text: 'Je retiens', sub: true },
+    { kind: 'paragraph', text: 'ai, as, a, avons, avez, ont.' },
+      { kind: 'table', colHeader: true, rowHeader: true, headers: ['Personne', 'avoir'],
         rows: [
           ['j’', 'ai'],
           ['tu', 'as'],
@@ -128,7 +113,7 @@ export const presentDocs: GrammaireTheoryDoc[] = [
           ['ils / elles', 'ont'],
         ],
       },
-      { kind: 'note', text: 'Attention ! J’ai (apostrophe). Ils ont ≠ ils sont.' },
+      { kind: 'attention', text: 'J’ai (apostrophe). Ils ont ≠ ils sont.' },
     ],
   },
   {
@@ -143,19 +128,15 @@ export const presentDocs: GrammaireTheoryDoc[] = [
       { kind: 'heading', text: 'Les verbes en -er' },
       { kind: 'paragraph', text: 'Je conjugue un verbe du 1er groupe au présent.' },
       { kind: 'heading', text: 'Je regarde', sub: true },
-      {
-        kind: 'rule',
-        text: 'Exemple',
-        examples: [{ correct: 'Je parle français.' }, { correct: 'Nous regardons la télé.' }],
+      { kind: 'examples', items: ['Je parle français.', 'Nous regardons la télé.'],
       },
       { kind: 'heading', text: 'J’explique', sub: true },
       { kind: 'paragraph', text: 'Le présent sert pour maintenant, une habitude, une description.' },
       { kind: 'paragraph', text: 'Radical = infinitif sans -er. Puis j’ajoute la terminaison.' },
       { kind: 'paragraph', text: 'Terminaisons : -e, -es, -e, -ons, -ez, -ent.' },
-      { kind: 'note', text: 'Je retiens : radical + e / es / e / ons / ez / ent.' },
-      {
-        kind: 'table',
-        headers: ['Personne', 'parler'],
+      { kind: 'heading', text: 'Je retiens', sub: true },
+    { kind: 'paragraph', text: 'radical + e / es / e / ons / ez / ent.' },
+      { kind: 'table', colHeader: true, rowHeader: true, headers: ['Personne', 'parler'],
         rows: [
           ['je', 'parle'],
           ['tu', 'parles'],
@@ -165,7 +146,7 @@ export const presentDocs: GrammaireTheoryDoc[] = [
           ['ils / elles', 'parlent'],
         ],
       },
-      { kind: 'note', text: 'Attention ! Aller est en -er mais il est irrégulier (fiche suivante).' },
+      { kind: 'attention', text: 'Aller est en -er mais il est irrégulier (fiche suivante).' },
     ],
   },
   {
@@ -180,13 +161,10 @@ export const presentDocs: GrammaireTheoryDoc[] = [
       { kind: 'heading', text: 'Les verbes en -er particuliers' },
       { kind: 'paragraph', text: 'Certains verbes en -er changent l’écriture.' },
       { kind: 'heading', text: 'Je regarde', sub: true },
-      {
-        kind: 'rule',
-        text: 'Exemple',
-        examples: [
-          { correct: 'Nous mangeons.' },
-          { correct: 'Je jette le papier.' },
-          { correct: 'Je vais au travail.' },
+      { kind: 'examples', items: [
+          'Nous mangeons.',
+          'Je jette le papier.',
+          'Je vais au travail.',
         ],
       },
       { kind: 'heading', text: 'J’explique', sub: true },
@@ -195,10 +173,9 @@ export const presentDocs: GrammaireTheoryDoc[] = [
       { kind: 'paragraph', text: 'Verbes en -cer : nous commençons (ç devant o).' },
       { kind: 'paragraph', text: 'Certains doublent une consonne : jeter → je jette.' },
       { kind: 'paragraph', text: 'Certains changent e → è : acheter → j’achète.' },
-      { kind: 'note', text: 'Je retiens : regarde l’infinitif pour choisir le modèle.' },
-      {
-        kind: 'table',
-        headers: ['Cas', 'Exemple'],
+      { kind: 'heading', text: 'Je retiens', sub: true },
+    { kind: 'paragraph', text: 'regarde l’infinitif pour choisir le modèle.' },
+      { kind: 'table', colHeader: true, rowHeader: true, headers: ['Cas', 'Exemple'],
         rows: [
           ['aller', 'je vais'],
           ['-ger', 'nous mangeons'],
@@ -207,7 +184,7 @@ export const presentDocs: GrammaireTheoryDoc[] = [
           ['e → è', 'j’achète'],
         ],
       },
-      { kind: 'note', text: 'Attention ! Apprendre aller par cœur : il est très fréquent.' },
+      { kind: 'attention', text: 'Apprendre aller par cœur : il est très fréquent.' },
     ],
   },
   {
@@ -222,13 +199,10 @@ export const presentDocs: GrammaireTheoryDoc[] = [
       { kind: 'heading', text: 'Les verbes en -ir' },
       { kind: 'paragraph', text: 'Je conjugue un verbe en -ir selon son modèle.' },
       { kind: 'heading', text: 'Je regarde', sub: true },
-      {
-        kind: 'rule',
-        text: 'Exemple',
-        examples: [
-          { correct: 'Je finis le travail.' },
-          { correct: 'Elle part tôt.' },
-          { correct: 'Nous venons demain.' },
+      { kind: 'examples', items: [
+          'Je finis le travail.',
+          'Elle part tôt.',
+          'Nous venons demain.',
         ],
       },
       { kind: 'heading', text: 'J’explique', sub: true },
@@ -236,10 +210,9 @@ export const presentDocs: GrammaireTheoryDoc[] = [
       { kind: 'paragraph', text: 'Modèle partir / dormir / servir : je pars, tu dors, il sert…' },
       { kind: 'paragraph', text: 'Modèle ouvrir : j’ouvre, tu ouvres, il ouvre (comme un -er).' },
       { kind: 'paragraph', text: 'Modèle venir / tenir : je viens, tu viens, il vient, nous venons…' },
-      { kind: 'note', text: 'Je retiens : un verbe en -ir n’a pas une seule conjugaison.' },
-      {
-        kind: 'table',
-        headers: ['Modèle', 'je', 'nous'],
+      { kind: 'heading', text: 'Je retiens', sub: true },
+    { kind: 'paragraph', text: 'un verbe en -ir n’a pas une seule conjugaison.' },
+      { kind: 'table', colHeader: true, rowHeader: true, headers: ['Modèle', 'je', 'nous'],
         rows: [
           ['finir', 'finis', 'finissons'],
           ['partir', 'pars', 'partons'],
@@ -247,7 +220,7 @@ export const presentDocs: GrammaireTheoryDoc[] = [
           ['venir', 'viens', 'venons'],
         ],
       },
-      { kind: 'note', text: 'Attention ! Venir et tenir changent beaucoup : apprends-les à part.' },
+      { kind: 'attention', text: 'Venir et tenir changent beaucoup : apprends-les à part.' },
     ],
   },
   {
@@ -262,13 +235,10 @@ export const presentDocs: GrammaireTheoryDoc[] = [
       { kind: 'heading', text: 'Les verbes en -re et -oir' },
       { kind: 'paragraph', text: 'Je conjugue des verbes fréquents hors du 1er groupe.' },
       { kind: 'heading', text: 'Je regarde', sub: true },
-      {
-        kind: 'rule',
-        text: 'Exemple',
-        examples: [
-          { correct: 'Je prends le bus.' },
-          { correct: 'Tu lis un livre.' },
-          { correct: 'Il veut un café.' },
+      { kind: 'examples', items: [
+          'Je prends le bus.',
+          'Tu lis un livre.',
+          'Il veut un café.',
         ],
       },
       { kind: 'heading', text: 'J’explique', sub: true },
@@ -277,10 +247,9 @@ export const presentDocs: GrammaireTheoryDoc[] = [
       { kind: 'paragraph', text: 'Faire : je fais, tu fais, il fait, nous faisons, vous faites, ils font.' },
       { kind: 'paragraph', text: 'Vouloir / pouvoir / devoir / savoir : formes irrégulières à mémoriser.' },
       { kind: 'paragraph', text: 'Savoir ≠ connaître : savoir = une info / une compétence ; connaître = une personne / un lieu.' },
-      { kind: 'note', text: 'Je retiens : apprends les verbes fréquents un par un.' },
-      {
-        kind: 'table',
-        headers: ['Verbe', 'je', 'nous', 'ils'],
+      { kind: 'heading', text: 'Je retiens', sub: true },
+    { kind: 'paragraph', text: 'apprends les verbes fréquents un par un.' },
+      { kind: 'table', colHeader: true, rowHeader: true, headers: ['Verbe', 'je', 'nous', 'ils'],
         rows: [
           ['prendre', 'prends', 'prenons', 'prennent'],
           ['lire', 'lis', 'lisons', 'lisent'],
@@ -290,7 +259,7 @@ export const presentDocs: GrammaireTheoryDoc[] = [
           ['devoir', 'dois', 'devons', 'doivent'],
         ],
       },
-      { kind: 'note', text: 'Attention ! Vous faites (pas « vous faisez »).' },
+      { kind: 'attention', text: 'Vous faites (pas « vous faisez »).' },
     ],
   },
 ]

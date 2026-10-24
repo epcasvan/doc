@@ -1,4 +1,4 @@
-import type { GrammarTheoryBlock } from '@/francais/grammar-theory'
+import { normalizeTheoryBlocks, type GrammarTheoryBlock } from '@/francais/grammar-theory'
 import type { MathItem, PageConfig } from '@/math/types'
 import { tryGenerateGrammaireExerciseBlock } from './exercises/generate'
 import { isGrammaireExerciseType } from './exercises/types'
@@ -40,6 +40,6 @@ export function tryGenerateGrammaireBlock(
   }
   return {
     instruction: `Théorie — ${doc.title}`,
-    items: doc.blocks.map((block, index) => blockToItem(doc.title, block, index)),
+    items: normalizeTheoryBlocks(doc.blocks).map((block, index) => blockToItem(doc.title, block, index)),
   }
 }

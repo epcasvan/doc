@@ -133,64 +133,127 @@ export function SelectPillsRow({ item, mode }: { item: MathItem; mode: PreviewMo
   )
 }
 
+function theoryExampleEntries(
+  items?: Array<string | { text: string; wrong?: string }>,
+  examples?: Array<{ correct: string; wrong?: string }>,
+): Array<{ text: string; wrong?: string }> {
+  if (items?.length) {
+    return items.map((item) => (typeof item === 'string' ? { text: item } : item))
+  }
+  return (examples ?? []).map((ex) => ({ text: ex.correct, wrong: ex.wrong }))
+}
+
+function TheoryExamplesView({
+  label,
+  marker,
+  entries,
+}: {
+  label: string
+  marker: 'border' | 'puces' | 'numeros'
+  entries: Array<{ text: string; wrong?: string }>
+}) {
+  if (entries.length === 0) return null
+  const ListTag = marker === 'numeros' ? 'ol' : 'ul'
+  return (
+    <div className={`theory-examples-block is-${marker}`}>
+      <p className="theory-examples-label">{label}</p>
+      <ListTag className="theory-examples">
+        {entries.map((ex, index) => (
+          <li key={`${ex.text}-${index}`}>
+            <span className="theory-ex-ok">{ex.text}</span>
+            {ex.wrong ? (
+              <>
+                {' '}
+                <span className="theory-ex-bad" aria-label="à éviter">
+                  (pas : {ex.wrong})
+                </span>
+              </>
+            ) : null}
+          </li>
+        ))}
+      </ListTag>
+    </div>
+  )
+}
+
 export function TheoryBlockView({ item }: { item: MathItem }) {
   const block = item.theoryBlock
   if (!block) return null
   if (block.kind === 'heading') {
-    return <h3 className={`theory-heading${block.sub ? ' is-sub' : ''}`}>{block.text}</h3>
+    const Tag = block.sub ? 'h4' : 'h3'
+    return <Tag className={`theory-heading${block.sub ? ' is-sub' : ''}`}>{block.text}</Tag>
   }
   if (block.kind === 'paragraph') {
-    return <p className="theory-paragraph">{block.text}</p>
+    const parts = (block.text ?? '')
+      .split(/\n{2,}/)
+      .map((part) => part.trim())
+      .filter(Boolean)
+    return (
+      <div className="theory-text">
+        {parts.map((part, index) => (
+          <p key={index} className="theory-paragraph">
+            {part}
+          </p>
+        ))}
+      </div>
+    )
+  }
+  if (block.kind === 'attention') {
+    return (
+      <aside className="theory-attention">
+        <p className="theory-attention-label">Attention</p>
+        <div className="theory-attention-box">
+          <p className="theory-paragraph">{block.text}</p>
+        </div>
+      </aside>
+    )
   }
   if (block.kind === 'note') {
-    return <p className="theory-note">{block.text}</p>
+    if (/^attention\b/i.test(block.text ?? '')) {
+      const text = (block.text ?? '').replace(/^attention\s*[!.]?\s*/i, '')
+      return (
+        <aside className="theory-attention">
+          <p className="theory-attention-label">Attention</p>
+          <div className="theory-attention-box">
+            <p className="theory-paragraph">{text}</p>
+          </div>
+        </aside>
+      )
+    }
+    return <p className="theory-paragraph">{block.text}</p>
   }
-  if (block.kind === 'rule') {
+  if (block.kind === 'examples' || block.kind === 'rule') {
     return (
-      <div className="theory-rule">
-        <p className="theory-paragraph">{block.text}</p>
-        {block.examples?.length ? (
-          <ul className="theory-examples">
-            {block.examples.map((ex, index) => (
-              <li key={`${ex.correct}-${index}`}>
-                <span className="theory-ex-ok">{ex.correct}</span>
-                {ex.wrong ? (
-                  <>
-                    {' '}
-                    <span className="theory-ex-bad" aria-label="à éviter">
-                      (pas : {ex.wrong})
-                    </span>
-                  </>
-                ) : null}
-              </li>
-            ))}
-          </ul>
-        ) : null}
-      </div>
+      <TheoryExamplesView
+        label={block.kind === 'examples' ? (block.label?.trim() || 'Exemples') : 'Exemples'}
+        marker={block.marker ?? 'border'}
+        entries={theoryExampleEntries(block.items, block.examples)}
+      />
     )
   }
   if (block.kind === 'list') {
     return (
-      <div className="theory-list-block">
-        {block.title ? <p className="theory-list-title">{block.title}</p> : null}
-        <ul className="theory-list">
-          {(block.items ?? []).map((entry, index) => (
-            <li key={`${entry}-${index}`}>{entry}</li>
-          ))}
-        </ul>
-      </div>
+      <TheoryExamplesView
+        label={block.title?.trim() || 'Exemples'}
+        marker="puces"
+        entries={(block.items ?? []).map((text) => ({ text: typeof text === 'string' ? text : text.text }))}
+      />
     )
   }
   if (block.kind === 'table') {
     const headers = block.headers ?? []
     const rows = block.rows ?? []
+    const colHeader = block.colHeader !== false && headers.some(Boolean)
+    const rowHeader = block.rowHeader !== false
     return (
-      <table className="theory-table">
-        {headers.some(Boolean) ? (
+      <table className={`theory-table${colHeader ? ' has-col-head' : ''}${rowHeader ? ' has-row-head' : ''}`}>
+        {colHeader ? (
           <thead>
             <tr>
               {headers.map((header, index) => (
-                <th key={`${header}-${index}`}>{header}</th>
+                <th key={`${header}-${index}`} scope="col">
+                  {header}
+                </th>
               ))}
             </tr>
           </thead>
@@ -198,9 +261,15 @@ export function TheoryBlockView({ item }: { item: MathItem }) {
         <tbody>
           {rows.map((row, rowIndex) => (
             <tr key={rowIndex}>
-              {row.map((cell, cellIndex) => (
-                <td key={`${rowIndex}-${cellIndex}`}>{cell}</td>
-              ))}
+              {row.map((cell, cellIndex) =>
+                rowHeader && cellIndex === 0 ? (
+                  <th key={`${rowIndex}-${cellIndex}`} scope="row">
+                    {cell}
+                  </th>
+                ) : (
+                  <td key={`${rowIndex}-${cellIndex}`}>{cell}</td>
+                ),
+              )}
             </tr>
           ))}
         </tbody>

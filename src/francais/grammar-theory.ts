@@ -1,12 +1,19 @@
 /** Types et helpers pour les fiches de théorie grammaticale. */
 
+/** Marqueur des exemples : bordure gauche, puces rondes, ou numéros. */
+export type TheoryExamplesMarker = 'border' | 'puces' | 'numeros'
+
+export type TheoryExampleItem = string | { text: string; wrong?: string }
+
 export type GrammarTheoryBlock =
   | { kind: 'heading'; text: string; sub?: boolean }
   | { kind: 'paragraph'; text: string }
   | { kind: 'note'; text: string }
   | { kind: 'rule'; text: string; examples?: Array<{ correct: string; wrong?: string }> }
+  | { kind: 'examples'; items: TheoryExampleItem[]; marker?: TheoryExamplesMarker; label?: string }
   | { kind: 'list'; title?: string; items: string[] }
-  | { kind: 'table'; headers: string[]; rows: string[][] }
+  | { kind: 'table'; headers: string[]; rows: string[][]; colHeader?: boolean; rowHeader?: boolean }
+  | { kind: 'attention'; text: string }
 
 export type GrammarTheoryDoc = {
   id: string
@@ -22,4 +29,93 @@ export function isGrammarTheoryType(typeId: string): boolean {
     /^(fr-[a-z]+)-gram-theorie-\d+$/.test(typeId) ||
     /^gram-[a-z0-9]+-theorie$/.test(typeId)
   )
+}
+
+export function exampleItemText(item: TheoryExampleItem): string {
+  return typeof item === 'string' ? item : item.text
+}
+
+export function exampleItemWrong(item: TheoryExampleItem): string | undefined {
+  return typeof item === 'string' ? undefined : item.wrong
+}
+
+function stripLead(text: string, re: RegExp): string {
+  return text.replace(re, '').replace(/^\s+/, '')
+}
+
+/** Aligne les blocs hérités sur les styles unifiés (titre, texte, exemples, tableau, attention). */
+export function normalizeTheoryBlocks(blocks: GrammarTheoryBlock[]): GrammarTheoryBlock[] {
+  const out: GrammarTheoryBlock[] = []
+  for (const block of blocks) {
+    if (block.kind === 'rule') {
+      const items = (block.examples ?? []).map((ex) =>
+        ex.wrong ? { text: ex.correct, wrong: ex.wrong } : ex.correct,
+      )
+      if (items.length === 0 && block.text.trim() && !/^exemples?$/i.test(block.text.trim())) {
+        items.push(block.text.trim())
+      }
+      out.push({ kind: 'examples', items, marker: 'border' })
+      continue
+    }
+    if (block.kind === 'list') {
+      out.push({
+        kind: 'examples',
+        items: block.items,
+        marker: 'puces',
+        label: block.title?.trim() || 'Exemples',
+      })
+      continue
+    }
+    if (block.kind === 'note') {
+      const raw = block.text.trim()
+      if (/^attention\b/i.test(raw)) {
+        out.push({
+          kind: 'attention',
+          text: stripLead(raw, /^attention\s*[!.]?\s*/i),
+        })
+        continue
+      }
+      if (/^je retiens\s*:/i.test(raw)) {
+        out.push({ kind: 'heading', text: 'Je retiens', sub: true })
+        const rest = stripLead(raw, /^je retiens\s*:\s*/i)
+        if (rest) out.push({ kind: 'paragraph', text: rest })
+        continue
+      }
+      out.push({ kind: 'paragraph', text: raw })
+      continue
+    }
+    if (block.kind === 'table') {
+      out.push({
+        ...block,
+        colHeader: block.colHeader ?? true,
+        rowHeader: block.rowHeader ?? true,
+      })
+      continue
+    }
+    if (block.kind === 'examples') {
+      out.push({
+        ...block,
+        marker: block.marker ?? 'border',
+        label: block.label?.trim() || 'Exemples',
+      })
+      continue
+    }
+    if (block.kind === 'paragraph') {
+      const parts = block.text
+        .split(/\n{2,}/)
+        .map((part) => part.trim())
+        .filter(Boolean)
+      const last = out[out.length - 1]
+      if (last?.kind === 'paragraph') {
+        last.text = `${last.text}\n\n${parts.join('\n\n')}`
+        continue
+      }
+      if (parts.length > 1) {
+        out.push({ kind: 'paragraph', text: parts.join('\n\n') })
+        continue
+      }
+    }
+    out.push(block)
+  }
+  return out
 }
