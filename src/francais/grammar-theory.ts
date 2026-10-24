@@ -105,15 +105,15 @@ export function normalizeTheoryBlocks(blocks: GrammarTheoryBlock[]): GrammarTheo
         .split(/\n{2,}/)
         .map((part) => part.trim())
         .filter(Boolean)
+      if (parts.length === 0) continue
+      const joined = parts.join('\n\n')
       const last = out[out.length - 1]
       if (last?.kind === 'paragraph') {
-        last.text = `${last.text}\n\n${parts.join('\n\n')}`
+        out[out.length - 1] = { kind: 'paragraph', text: `${last.text}\n\n${joined}` }
         continue
       }
-      if (parts.length > 1) {
-        out.push({ kind: 'paragraph', text: parts.join('\n\n') })
-        continue
-      }
+      out.push({ kind: 'paragraph', text: joined })
+      continue
     }
     out.push(block)
   }
