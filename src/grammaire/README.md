@@ -59,15 +59,15 @@ Les blocs de théorie sont collés. `{ligne}` ajoute l’espace, seul dans un pa
 Exemple : `J’utilise {c}être{/c}, {g}habiter{/g} et {s}parler{/s}.`  
 Ligne vide : `{ kind: 'paragraph', text: '{ligne}' }` ou `…Martigny.{ligne}Je parle français.`
 
-Colonnes (le nombre est la largeur de chaque tabulation ; `>` ou `fleche` ajoute la flèche ; `|` sépare les colonnes) :
+Colonnes (le nombre est la largeur de chaque tabulation ; `>` ou `fleche` ajoute la flèche ; la virgule sépare les colonnes) :
 
 ```ts
-{ kind: 'paragraph', text: `{tab:2>}Verbe | Être | Nationalité
-{tab:2>} | Habiter à | ville
-{tab:2>} | Parler | langue` }
+{ kind: 'paragraph', text: `{tab:2>}Verbe, Être, Nationalité
+{tab:2>}, Habiter à, ville
+{tab:2>}, Parler, langue` }
 ```
 
-Sans flèche : `{tab:2}Verbe | Être | Nationalité`. `{tab:2 fleche}` est identique à `{tab:2>}`.
+Sans flèche : `{tab:2}Verbe, Être, Nationalité`. `{tab:2 fleche}` est identique à `{tab:2>}`.
 
 ## Feuille suivante
 

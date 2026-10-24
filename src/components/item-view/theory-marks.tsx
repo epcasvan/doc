@@ -51,7 +51,7 @@ function theoryPieces(text: string): TheoryPiece[] {
     const cells = text
       .slice(start + match[0].length, end)
       .trim()
-      .split('|')
+      .split(',')
       .map((cell) => cell.trim())
     rows.push({
       n: Math.max(1, Number(match[1]) || 1),
