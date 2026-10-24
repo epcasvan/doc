@@ -44,17 +44,16 @@ export function TheoryFlow({ text, className }: { text: string; className?: stri
   )
 }
 
-/** Bloc `tab` : une ligne = une entrée, virgules = colonnes. */
+/** Bloc `tab` : `rows` comme un tableau, sans bordures. */
 export function TheoryTabBlock({
-  items,
+  rows,
   tab = 1,
   fleche = false,
 }: {
-  items: string[]
+  rows: string[][]
   tab?: number
   fleche?: boolean
 }) {
-  const rows = items.map((line) => line.split(',').map((cell) => cell.trim()))
   const cols = Math.max(...rows.map((row) => row.length), 1)
   const width = `${Math.max(1, tab) * 2}em`
   return (

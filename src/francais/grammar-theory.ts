@@ -12,7 +12,7 @@ export type GrammarTheoryBlock =
   | { kind: 'rule'; text: string; examples?: Array<{ correct: string; wrong?: string }> }
   | { kind: 'examples'; items: TheoryExampleItem[]; marker?: TheoryExamplesMarker; label?: string }
   /** Colonnes alignées. `tab` vaut 1 et `fleche` est absente tant qu’on n’en a pas besoin. */
-  | { kind: 'tab'; items: string[]; tab?: number; fleche?: boolean }
+  | { kind: 'tab'; rows: string[][]; tab?: number; fleche?: boolean }
   | { kind: 'list'; title?: string; items: string[] }
   | { kind: 'table'; headers: string[]; rows: string[][]; colHeader?: boolean; rowHeader?: boolean }
   | { kind: 'attention'; text: string }

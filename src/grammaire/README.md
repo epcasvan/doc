@@ -59,16 +59,21 @@ Ligne vide : `{ kind: 'paragraph', text: '{ligne}' }` ou `…Martigny.{ligne}Je 
 
 ## Bloc tab
 
-Nouveau style, comme `examples`. Une ligne du tableau `items` est une entrée. La virgule sépare les colonnes. Par défaut : 1 tabulation, sans flèche. On n’écrit `tab` et `fleche` que si on en a besoin.
+Tableau sans bordures. `rows` sépare les lignes, comme pour `table`. Par défaut : 1 tabulation, sans flèche. On n’écrit `tab` et `fleche` que si on en a besoin.
 
 ```ts
-{ kind: 'tab', items: ['Verbe, Être, Nationalité', ', Habiter à, ville'] }
+{ kind: 'tab', rows: [['Verbe', 'Être', 'Nationalité'], ['', 'Habiter à', 'ville']] }
 ```
 
 Deux tabulations et une flèche :
 
 ```ts
-{ kind: 'tab', tab: 2, fleche: true, items: ['Verbe, Être, Nationalité', ', Habiter à, ville'] }
+{
+  kind: 'tab',
+  tab: 2,
+  fleche: true,
+  rows: [['Verbe', 'Être', 'Nationalité'], ['', 'Habiter à', 'ville']],
+}
 ```
 
 ## Feuille suivante

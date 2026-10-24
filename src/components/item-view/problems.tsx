@@ -201,11 +201,7 @@ export function TheoryBlockView({ item }: { item: MathItem }) {
   }
   if (block.kind === 'tab') {
     return (
-      <TheoryTabBlock
-        items={(block.items ?? []).map((item) => (typeof item === 'string' ? item : item.text))}
-        tab={block.tab}
-        fleche={block.fleche}
-      />
+      <TheoryTabBlock rows={block.rows ?? []} tab={block.tab} fleche={block.fleche} />
     )
   }
   if (block.kind === 'paragraph') {
