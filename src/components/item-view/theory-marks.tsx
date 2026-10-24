@@ -1,7 +1,47 @@
 import type { ReactNode } from 'react'
 
-/** `{g}…{/g}` gras · `{c}…{/c}` gras + couleur du thème · `{s}…{/s}` souligné couleur du thème. */
+/** `{g}…{/g}` gras · `{c}…{/c}` gras + couleur du thème · `{s}…{/s}` souligné · `{ligne}` ligne vide. */
 const MARK = /\{(g|c|s)\}([\s\S]*?)\{\/\1\}/g
+const LIGNE = /\{ligne\}/gi
+
+export function theoryHasLigne(text: string): boolean {
+  return /\{ligne\}/i.test(text)
+}
+
+/** Découpe le texte autour de chaque `{ligne}`. */
+export function theorySegments(text: string): Array<{ gap: true } | { gap: false; text: string }> {
+  const parts = text.split(LIGNE)
+  const out: Array<{ gap: true } | { gap: false; text: string }> = []
+  for (let i = 0; i < parts.length; i++) {
+    if (i > 0) out.push({ gap: true })
+    const chunk = parts[i] ?? ''
+    if (chunk.trim()) out.push({ gap: false, text: chunk.trim() })
+  }
+  return out
+}
+
+export function TheoryLigne() {
+  return <div className="theory-ligne" aria-hidden="true" />
+}
+
+/** Paragraphes séparés par une ligne vide `{ligne}`. */
+export function TheoryFlow({ text, className }: { text: string; className?: string }) {
+  const segments = theorySegments(text)
+  if (segments.length === 0) return null
+  return (
+    <>
+      {segments.map((segment, index) =>
+        segment.gap ? (
+          <TheoryLigne key={index} />
+        ) : (
+          <p key={index} className={className}>
+            <TheoryRichText text={segment.text} />
+          </p>
+        ),
+      )}
+    </>
+  )
+}
 
 export function TheoryRichText({ text }: { text: string }) {
   const nodes: ReactNode[] = []

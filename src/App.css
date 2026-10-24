@@ -508,18 +508,19 @@ html,body,#root{
 }
 .exercise-item.layout-theory{padding:0;gap:0;width:100%}
 .theory-heading{
-  margin:0 0 .55em;padding:0 0 .18em;
+  margin:0;padding:0 0 .12em;
   font-size:calc(var(--theory-size) + 5pt);font-weight:700;line-height:1.25;color:var(--ink);
   text-align:left;width:100%;
   border:0;border-bottom:1.5pt solid var(--purple)
 }
 .theory-heading.is-sub{
-  margin:.7em 0 .35em;padding:0;font-size:calc(var(--theory-size) + 3pt);font-weight:700;
+  margin:0;padding:0;font-size:calc(var(--theory-size) + 3pt);font-weight:700;
   border:0;line-height:1.3
 }
 .theory-text{width:100%}
+.theory-ligne{display:block;width:100%;height:calc(var(--theory-size) * 1.5)}
 .theory-paragraph{
-  margin:0 0 1.5em;font-size:var(--theory-size);line-height:1.5;text-align:justify;color:var(--ink);
+  margin:0;font-size:var(--theory-size);line-height:1.5;text-align:justify;color:var(--ink);
   text-justify:inter-word
 }
 .theory-mark-bold{font-weight:700}
@@ -531,8 +532,7 @@ html,body,#root{
   text-underline-offset:.15em;
   -webkit-print-color-adjust:exact;print-color-adjust:exact
 }
-.theory-text .theory-paragraph:last-child{margin-bottom:1.5em}
-.theory-examples-block{width:100%;margin:0 0 1.5em}
+.theory-examples-block{width:100%;margin:0}
 .theory-examples-label{
   margin:0 0 .25em;font-size:var(--theory-size);font-weight:700;color:var(--purple);line-height:1.5
 }
@@ -556,10 +556,14 @@ html,body,#root{
   content:counter(theory-ex) ".";
   flex:0 0 1.4em;font-weight:700;color:var(--purple);line-height:1.5
 }
+.theory-examples-block .theory-examples li.is-ligne{
+  display:block;height:auto;margin:0;padding:0;counter-increment:none
+}
+.theory-examples-block .theory-examples li.is-ligne::before{content:none;display:none}
 .theory-ex-ok{font-weight:400}
 .theory-ex-bad{color:var(--muted);font-weight:400}
 .theory-table{
-  width:100%;border-collapse:collapse;font-size:var(--theory-size);margin:0 0 1.5em;line-height:1.4
+  width:100%;border-collapse:collapse;font-size:var(--theory-size);margin:0;line-height:1.4
 }
 .theory-table th,.theory-table td{
   border:1px solid var(--ink);padding:4px 8px;text-align:left;vertical-align:top
@@ -570,7 +574,7 @@ html,body,#root{
 .theory-table.has-row-head tbody th{
   font-weight:700;background:transparent;text-align:left
 }
-.theory-attention{width:100%;margin:0 0 1.5em}
+.theory-attention{width:100%;margin:0}
 .theory-attention-label{
   margin:0 0 .3em;font-size:var(--theory-size);font-weight:700;color:var(--purple);line-height:1.5
 }
@@ -579,8 +583,9 @@ html,body,#root{
 }
 .theory-attention-box .theory-paragraph{margin:0}
 .theory-astuce{
-  display:flex;align-items:flex-start;gap:.45em;width:100%;margin:0 0 1.5em
+  display:flex;align-items:flex-start;gap:.45em;width:100%;margin:0
 }
+.theory-astuce-body{flex:1;min-width:0}
 .theory-astuce-icon{
   flex:0 0 1.15em;width:1.15em;height:1.15em;margin-top:.2em;
   border:1.5pt solid var(--purple);border-radius:50%;box-sizing:border-box;
@@ -589,7 +594,7 @@ html,body,#root{
   display:flex;align-items:center;justify-content:center
 }
 .theory-astuce-text{
-  flex:1;min-width:0;margin:0;
+  margin:0;
   font-size:var(--theory-size);font-style:italic;line-height:1.5;
   text-align:justify;text-justify:inter-word;color:var(--ink)
 }

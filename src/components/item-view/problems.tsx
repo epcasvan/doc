@@ -1,5 +1,5 @@
 import { Fragment } from 'react'
-import { TheoryRichText } from './theory-marks'
+import { TheoryFlow, TheoryLigne, TheoryRichText, theoryHasLigne, theorySegments } from './theory-marks'
 import { fmt } from '@/math/column-arith'
 import { MoneyChangeBoard } from './money-change'
 import type { MathItem, PreviewMode } from '@/math/types'
@@ -159,7 +159,18 @@ function TheoryExamplesView({
     <div className={`theory-examples-block is-${marker}`}>
       <p className="theory-examples-label">{label}</p>
       <ListTag className="theory-examples">
-        {entries.map((ex, index) => (
+        {entries.map((ex, index) => {
+          if (!ex.wrong && theoryHasLigne(ex.text) && theorySegments(ex.text).every((s) => s.gap)) {
+            const count = ex.text.match(/\{ligne\}/gi)?.length ?? 1
+            return (
+              <li key={`ligne-${index}`} className="is-ligne" aria-hidden="true">
+                {Array.from({ length: count }, (_, n) => (
+                  <TheoryLigne key={n} />
+                ))}
+              </li>
+            )
+          }
+          return (
           <li key={`${ex.text}-${index}`}>
             <span className="theory-ex-ok">
               <TheoryRichText text={ex.text} />
@@ -173,7 +184,8 @@ function TheoryExamplesView({
               </>
             ) : null}
           </li>
-        ))}
+          )
+        })}
       </ListTag>
     </div>
   )
@@ -187,17 +199,9 @@ export function TheoryBlockView({ item }: { item: MathItem }) {
     return <Tag className={`theory-heading${block.sub ? ' is-sub' : ''}`}>{block.text}</Tag>
   }
   if (block.kind === 'paragraph') {
-    const parts = (block.text ?? '')
-      .split(/\n{2,}/)
-      .map((part) => part.trim())
-      .filter(Boolean)
     return (
       <div className="theory-text">
-        {parts.map((part, index) => (
-          <p key={index} className="theory-paragraph">
-            <TheoryRichText text={part} />
-          </p>
-        ))}
+        <TheoryFlow text={block.text ?? ''} className="theory-paragraph" />
       </div>
     )
   }
@@ -206,9 +210,7 @@ export function TheoryBlockView({ item }: { item: MathItem }) {
       <aside className="theory-attention">
         <p className="theory-attention-label">Attention</p>
         <div className="theory-attention-box">
-          <p className="theory-paragraph">
-            <TheoryRichText text={block.text ?? ''} />
-          </p>
+          <TheoryFlow text={block.text ?? ''} className="theory-paragraph" />
         </div>
       </aside>
     )
@@ -219,9 +221,9 @@ export function TheoryBlockView({ item }: { item: MathItem }) {
         <span className="theory-astuce-icon" aria-hidden="true">
           i
         </span>
-        <p className="theory-astuce-text">
-          <TheoryRichText text={block.text ?? ''} />
-        </p>
+        <div className="theory-astuce-body">
+          <TheoryFlow text={block.text ?? ''} className="theory-astuce-text" />
+        </div>
       </aside>
     )
   }
@@ -232,9 +234,7 @@ export function TheoryBlockView({ item }: { item: MathItem }) {
         <aside className="theory-attention">
           <p className="theory-attention-label">Attention</p>
           <div className="theory-attention-box">
-            <p className="theory-paragraph">
-              <TheoryRichText text={text} />
-            </p>
+            <TheoryFlow text={text} className="theory-paragraph" />
           </div>
         </aside>
       )
@@ -246,16 +246,16 @@ export function TheoryBlockView({ item }: { item: MathItem }) {
           <span className="theory-astuce-icon" aria-hidden="true">
             i
           </span>
-          <p className="theory-astuce-text">
-            <TheoryRichText text={text} />
-          </p>
+          <div className="theory-astuce-body">
+            <TheoryFlow text={text} className="theory-astuce-text" />
+          </div>
         </aside>
       )
     }
     return (
-      <p className="theory-paragraph">
-        <TheoryRichText text={block.text ?? ''} />
-      </p>
+      <div className="theory-text">
+        <TheoryFlow text={block.text ?? ''} className="theory-paragraph" />
+      </div>
     )
   }
   if (block.kind === 'examples' || block.kind === 'rule') {

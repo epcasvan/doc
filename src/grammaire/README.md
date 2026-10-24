@@ -50,8 +50,12 @@ Dans un paragraphe, un exemple, une astuce, une attention ou une case de tableau
 | `{g}mot{/g}` | gras |
 | `{c}mot{/c}` | gras et couleur du thème |
 | `{s}mot{/s}` | souligné de la couleur du thème |
+| `{ligne}` | une ligne vide entre deux éléments |
 
-Exemple : `J’utilise {c}être{/c}, {g}habiter{/g} et {s}parler{/s}.`
+Les blocs de théorie sont collés. `{ligne}` ajoute l’espace, seul dans un paragraphe ou dans une phrase.
+
+Exemple : `J’utilise {c}être{/c}, {g}habiter{/g} et {s}parler{/s}.`  
+Ligne vide : `{ kind: 'paragraph', text: '{ligne}' }` ou `…Martigny.{ligne}Je parle français.`
 
 ## Déterminisme
 
