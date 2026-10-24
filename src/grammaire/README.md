@@ -50,9 +50,12 @@ Dans un paragraphe, un exemple, une astuce, une attention ou une case de tableau
 | `{g}mot{/g}` | gras |
 | `{c}mot{/c}` | gras et couleur du thème |
 | `{s}mot{/s}` | souligné de la couleur du thème |
-| `{ligne}` | une ligne vide entre deux éléments |
+| `{ligne}` | un interligne complet entre deux éléments |
+| `{ligne/2}` | un demi-interligne |
+| `{ligne/3}` | un tiers d’interligne |
+| `{ligne/4}` | un quart d’interligne |
 
-Les blocs de théorie sont collés. `{ligne}` ajoute l’espace, seul dans un paragraphe ou dans une phrase.
+Les blocs de théorie sont collés. Ces balises ajoutent l’espace indiqué, seules dans un paragraphe ou dans une phrase.
 
 Exemple : `J’utilise {c}être{/c}, {g}habiter{/g} et {s}parler{/s}.`  
 Ligne vide : `{ kind: 'paragraph', text: '{ligne}' }` ou `…Martigny.{ligne}Je parle français.`

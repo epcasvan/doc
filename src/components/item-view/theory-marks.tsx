@@ -1,20 +1,20 @@
 import type { ReactNode } from 'react'
 import { Fragment } from 'react'
 
-/** `{g}…{/g}` gras · `{c}…{/c}` couleur · `{s}…{/s}` souligné · `{ligne}` / `{ligne/2}` · `{tab:N}` / `{tab:N>}`. */
+/** `{g}…{/g}` gras · `{c}…{/c}` couleur · `{s}…{/s}` souligné · `{ligne}` / `{ligne/N}` · `{tab:N}` / `{tab:N>}`. */
 const MARK = /\{(g|c|s)\}([\s\S]*?)\{\/\1\}/g
-const LIGNE = /\{ligne(\/2)?\}/gi
+const LIGNE = /\{ligne(?:\/([234]))?\}/gi
 const TAB = /\{tab:(\d+)(?:\s*(>|fleche))?\}/gi
 
 export type TheoryTabRow = { n: number; arrow: boolean; cells: string[] }
 type TheoryPiece = { kind: 'text'; text: string } | { kind: 'tabs'; rows: TheoryTabRow[] }
-type TheorySegment = { gap: true; half: boolean } | { gap: false; text: string }
+type TheorySegment = { gap: true; divisor: 1 | 2 | 3 | 4 } | { gap: false; text: string }
 
 export function theoryHasLigne(text: string): boolean {
-  return /\{ligne(?:\/2)?\}/i.test(text)
+  return /\{ligne(?:\/[234])?\}/i.test(text)
 }
 
-/** Découpe le texte autour de `{ligne}` et `{ligne/2}`. */
+/** Découpe le texte autour de `{ligne}` et `{ligne/2}`, `/3` ou `/4`. */
 export function theorySegments(text: string): TheorySegment[] {
   const out: TheorySegment[] = []
   let cursor = 0
@@ -22,7 +22,8 @@ export function theorySegments(text: string): TheorySegment[] {
     const start = match.index ?? 0
     const chunk = text.slice(cursor, start)
     if (chunk.trim()) out.push({ gap: false, text: chunk.trim() })
-    out.push({ gap: true, half: Boolean(match[1]) })
+    const divisor = match[1] === '2' ? 2 : match[1] === '3' ? 3 : match[1] === '4' ? 4 : 1
+    out.push({ gap: true, divisor })
     cursor = start + match[0].length
   }
   const remaining = text.slice(cursor)
@@ -30,8 +31,10 @@ export function theorySegments(text: string): TheorySegment[] {
   return out
 }
 
-export function TheoryLigne({ half = false }: { half?: boolean }) {
-  return <div className={`theory-ligne${half ? ' is-half' : ''}`} aria-hidden="true" />
+export function TheoryLigne({ divisor = 1 }: { divisor?: 1 | 2 | 3 | 4 }) {
+  const sizeClass =
+    divisor === 2 ? ' is-half' : divisor === 3 ? ' is-third' : divisor === 4 ? ' is-quarter' : ''
+  return <div className={`theory-ligne${sizeClass}`} aria-hidden="true" />
 }
 
 /** Découpe le texte courant et les lignes `{tab:N}` / `{tab:N>}`. */
@@ -123,14 +126,14 @@ export function TheoryInlineContent({ text }: { text: string }) {
   )
 }
 
-/** Paragraphes séparés par `{ligne}` / `{ligne/2}`, colonnes par `{tab:N}`. */
+/** Paragraphes séparés par `{ligne}` / `{ligne/N}`, colonnes par `{tab:N}`. */
 export function TheoryFlow({ text, className }: { text: string; className?: string }) {
   const segments = theorySegments(text)
   if (segments.length === 0) return null
   return (
     <>
       {segments.map((segment, index) => {
-        if (segment.gap) return <TheoryLigne key={index} half={segment.half} />
+        if (segment.gap) return <TheoryLigne key={index} divisor={segment.divisor} />
         return theoryPieces(segment.text).map((piece, pieceIndex) =>
           piece.kind === 'tabs' ? (
             <TheoryTabs key={`${index}-${pieceIndex}`} rows={piece.rows} />

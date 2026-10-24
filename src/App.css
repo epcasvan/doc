@@ -520,6 +520,8 @@ html,body,#root{
 .theory-text{width:100%}
 .theory-ligne{display:block;width:100%;height:calc(var(--theory-size) * 1.5)}
 .theory-ligne.is-half{height:calc(var(--theory-size) * .75)}
+.theory-ligne.is-third{height:calc(var(--theory-size) * .5)}
+.theory-ligne.is-quarter{height:calc(var(--theory-size) * .375)}
 .theory-paragraph{
   margin:0;font-size:var(--theory-size);line-height:1.5;text-align:justify;color:var(--ink);
   text-justify:inter-word

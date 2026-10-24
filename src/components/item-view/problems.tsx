@@ -190,7 +190,7 @@ function TheoryExamplesView({
             return (
               <li key={`ligne-${index}`} className="is-ligne" aria-hidden="true">
                 {segments.map((segment, n) =>
-                  segment.gap ? <TheoryLigne key={n} half={segment.half} /> : null,
+                  segment.gap ? <TheoryLigne key={n} divisor={segment.divisor} /> : null,
                 )}
               </li>
             )
