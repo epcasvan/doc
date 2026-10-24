@@ -1,30 +1,64 @@
 import { Fragment, type ReactNode } from 'react'
 import { formatPointsLabel } from '@/tpm/test'
 import type { PreviewMode } from '@/math/types'
+import {
+  answersForInlineBlanks,
+  countInlineBlanks,
+  hasInlineBlank,
+} from '@/tcf/inline-blank'
 import type { TcfChoixRendu, TcfGrille, TcfLigneTableau } from '@/tcf/types'
 import { TcfImage } from './TexteSupport'
 
-/** Verbe entre parenthèses après un blanc : couleur du thème, pas les parenthèses. */
-function highlightThemeVerbs(text: string): ReactNode {
-  const re = /___\s*\(\s*([^)]+?)\s*\)/g
+const INLINE_BLANK_RE = /_{3,}|_ _ _/g
+
+function InlineBlank({ fill }: { fill?: string }) {
+  const shown = fill?.trim()
+  return (
+    <span className={`answer-line-field tcf-blank-inline${shown ? ' filled' : ''}`}>
+      {shown || '\u00a0'}
+    </span>
+  )
+}
+
+function themedParen(inner: string): ReactNode {
+  const trimmed = inner.trim()
+  const comma = trimmed.indexOf(',')
+  const verb = (comma === -1 ? trimmed : trimmed.slice(0, comma)).trim()
+  const extra = comma === -1 ? '' : trimmed.slice(comma)
+  return (
+    <>
+      {' ('}
+      <span className="tcf-verbe-theme">{verb}</span>
+      {extra})
+    </>
+  )
+}
+
+/**
+ * `___` / `_ _ _` → trait continu 50 px (couleur du thème) dans la phrase.
+ * Verbe entre parenthèses après un blanc : couleur du thème, pas les parenthèses.
+ */
+function renderEnonceText(text: string, fills: string[] = []): ReactNode {
   const nodes: ReactNode[] = []
   let last = 0
-  let match: RegExpExecArray | null
+  let blankIndex = 0
   let key = 0
-  while ((match = re.exec(text))) {
+  INLINE_BLANK_RE.lastIndex = 0
+  let match: RegExpExecArray | null
+  while ((match = INLINE_BLANK_RE.exec(text))) {
     if (match.index > last) nodes.push(text.slice(last, match.index))
-    const inner = match[1]!.trim()
-    const comma = inner.indexOf(',')
-    const verb = (comma === -1 ? inner : inner.slice(0, comma)).trim()
-    const extra = comma === -1 ? '' : inner.slice(comma)
-    nodes.push(
-      <Fragment key={key}>
-        ___ (<span className="tcf-verbe-theme">{verb}</span>
-        {extra})
-      </Fragment>,
-    )
+    nodes.push(<InlineBlank key={`b${key}`} fill={fills[blankIndex]} />)
+    blankIndex += 1
+    let end = match.index + match[0].length
+    const after = text.slice(end)
+    const paren = after.match(/^\s*\(\s*([^)]+?)\s*\)/)
+    if (paren) {
+      nodes.push(<Fragment key={`p${key}`}>{themedParen(paren[1]!)}</Fragment>)
+      end += paren[0].length
+      INLINE_BLANK_RE.lastIndex = end
+    }
+    last = end
     key += 1
-    last = match.index + match[0].length
   }
   if (nodes.length === 0) return text
   if (last < text.length) nodes.push(text.slice(last))
@@ -42,19 +76,22 @@ function Enonce({
   audioLabel,
   points,
   image,
+  blankAnswers,
 }: {
   numero: number
   enonce: string
   audioLabel?: string
   points?: number
   image?: string
+  blankAnswers?: string
 }) {
+  const fills = answersForInlineBlanks(blankAnswers, countInlineBlanks(enonce))
   return (
     <>
       <p className="tcf-enonce">
         <span className="tcf-num">{numero}.</span>
         {audioLabel ? <span className="tcf-audio-tag">{audioLabel}</span> : null}
-        <span className="tcf-enonce-text">{highlightThemeVerbs(enonce)}</span>
+        <span className="tcf-enonce-text">{renderEnonceText(enonce, fills)}</span>
         <TcfPoints points={points} />
       </p>
       {image ? <TcfImage src={image} alt={`Document de la question ${numero}`} className="tcf-image is-question" /> : null}
@@ -145,9 +182,10 @@ export function QuestionLignes({
   mode: PreviewMode
 }) {
   const show = mode === 'answers'
+  const inline = hasInlineBlank(head.enonce)
   return (
     <div className="tcf-question">
-      <Enonce {...head} />
+      <Enonce {...head} blankAnswers={show && inline ? reponseModele : undefined} />
       {tableau?.length ? (
         <table className="tcf-tableau">
           <tbody>
@@ -160,7 +198,7 @@ export function QuestionLignes({
           </tbody>
         </table>
       ) : null}
-      {nbLignes > 0 ? (
+      {inline ? null : nbLignes > 0 ? (
         <LignesReponse nbLignes={nbLignes} texte={show ? reponseModele : undefined} />
       ) : show && reponseModele?.trim() ? (
         <p className="tcf-lignes-modele">{reponseModele}</p>

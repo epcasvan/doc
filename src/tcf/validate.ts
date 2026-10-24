@@ -1,4 +1,5 @@
 import { TCF_TYPES } from './catalog'
+import { hasInlineBlank } from './inline-blank'
 import { tcfAudioSequence, tcfAudioSrc, tcfImageSrc } from './media'
 import { TCF_IMAGES_A_COCHER, TCF_QCM_MAX, TCF_QCM_MIN } from './templates'
 import type { TcfExercise, TcfQuestion } from './types'
@@ -34,7 +35,7 @@ function validateQuestion(q: TcfQuestion, label: string, errors: string[]) {
   if (q.points != null && !(q.points > 0)) errors.push(`${label} : barème positif attendu.`)
   if (q.type_reponse === 'lignes') {
     const n = q.nb_lignes ?? 2
-    const min = q.image || q.tableau?.length ? 0 : 1
+    const min = q.image || q.tableau?.length || hasInlineBlank(q.enonce) ? 0 : 1
     if (!Number.isInteger(n) || n < min || n > 12) errors.push(`${label} : nombre de lignes entre ${min} et 12.`)
     q.tableau?.forEach((row, i) => {
       if (blank(row.label)) errors.push(`${label}, tableau ligne ${i + 1} : libellé vide.`)

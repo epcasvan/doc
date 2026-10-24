@@ -1,6 +1,7 @@
+import { countInlineBlanks } from '@/tcf/inline-blank'
+import type { TcfCompetence, TcfExercise, TcfQuestion, TcfTypeExercice } from '@/tcf/types'
 import type { GramExerciseKindId } from './kinds'
 import type { GramBankItem } from './types'
-import type { TcfCompetence, TcfExercise, TcfQuestion, TcfTypeExercice } from '@/tcf/types'
 
 const CHOICE_IDS = ['a', 'b', 'c', 'd'] as const
 
@@ -18,19 +19,15 @@ function uniqueAudios(items: GramBankItem[]): string[] {
 
 function looksLikeDocument(prompt: string): boolean {
   const text = prompt.trim()
-  if (countMarks(text) > 0) return false
+  if (countInlineBlanks(text) > 0) return false
   if (text.length < 90) return false
   return /[.!?].*[.!?]|De\s*:|Objet\s*:|Bonjour|Cher |Chère /.test(text)
-}
-
-function countMarks(prompt: string): number {
-  return prompt.split('___').length - 1
 }
 
 function isPeRedaction(kindId: GramExerciseKindId, instruction: string, items: GramBankItem[]): boolean {
   if (/e-?mail|sms|message|rédigez un texte/i.test(instruction)) return true
   if (kindId !== 'ecrire') return false
-  return items.length <= 2 && items.every((item) => !item.givenVerb && countMarks(item.prompt) === 0)
+  return items.length <= 2 && items.every((item) => !item.givenVerb && countInlineBlanks(item.prompt) === 0)
 }
 
 function padAudios(list: string[], size: number): string[] {
@@ -49,7 +46,8 @@ function questionFromItem(
       ? `Écrivez une phrase avec « ${item.givenVerb} » et « ${item.givenWord} ».`
       : item.prompt
   const lignes = {
-    nb_lignes: kindId === 'ecrire' || Boolean(item.givenVerb) ? 2 : 1,
+    nb_lignes:
+      countInlineBlanks(enonce) > 0 ? 0 : kindId === 'ecrire' || Boolean(item.givenVerb) ? 2 : 1,
     reponse_modele: item.answer,
   }
   const audio = audioIndex != null && audioIndex > 0 ? { audio: audioIndex } : {}

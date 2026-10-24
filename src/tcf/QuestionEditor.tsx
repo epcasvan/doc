@@ -1,6 +1,7 @@
 import { TCF_REPONSES } from './catalog'
 import { ImageField, NumberField, TextField } from './fields'
 import { filledForms, switchQuestionForm, TCF_FORME_LABELS } from './formes'
+import { hasInlineBlank } from './inline-blank'
 import { TCF_LETTRES, TCF_QCM_MAX, TCF_QCM_MIN } from './templates'
 import type { TcfQuestion, TcfTypeReponse } from './types'
 
@@ -109,7 +110,7 @@ export function QuestionEditor({
           <NumberField
             label="Nombre de lignes"
             value={q.nb_lignes ?? 2}
-            min={q.image || q.tableau?.length ? 0 : 1}
+            min={q.image || q.tableau?.length || hasInlineBlank(q.enonce) ? 0 : 1}
             max={12}
             onChange={(nb_lignes) => onChange({ ...q, nb_lignes })}
           />

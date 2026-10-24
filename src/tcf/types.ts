@@ -62,7 +62,7 @@ export type TcfQuestionQcmImage = TcfQuestionBase & {
 
 export type TcfQuestionLignes = TcfQuestionBase & {
   type_reponse: 'lignes'
-  /** Traits pleine largeur (défaut 2 ; 0 si image ou tableau seuls). */
+  /** Traits pleine largeur (défaut 2 ; 0 si image, tableau, ou blanc `___` dans l’énoncé). */
   nb_lignes?: number
   reponse_modele?: string
   /** Tableau à compléter : libellé à gauche, case vide à droite (réponse au corrigé). */
