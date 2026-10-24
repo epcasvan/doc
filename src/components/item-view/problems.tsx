@@ -174,7 +174,7 @@ function TheoryExamplesView({
   ) {
     return (
       <div className={`theory-examples-block is-${marker}`}>
-        <p className="theory-examples-label">{label}</p>
+        {label === 'Exemples' ? null : <p className="theory-examples-label">{label}</p>}
         <div className="theory-examples">
           <TheoryTabs rows={tabularRows.flatMap((rows) => rows ?? [])} />
         </div>
@@ -183,7 +183,7 @@ function TheoryExamplesView({
   }
   return (
     <div className={`theory-examples-block is-${marker}`}>
-      <p className="theory-examples-label">{label}</p>
+      {label === 'Exemples' ? null : <p className="theory-examples-label">{label}</p>}
       <ListTag className="theory-examples">
         {entries.map((ex, index) => {
           const segments = theorySegments(ex.text)
