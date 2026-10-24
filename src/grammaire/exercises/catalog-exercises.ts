@@ -39,8 +39,8 @@ function theoryDerivedSubthemes(): Array<{
 
 export const ALL_GRAM_SUBTHEMES = [...GRAM_SUBTHEMES, ...theoryDerivedSubthemes()]
 
-/** Ordre du menu « Sous-thème » — Se présenter (famille avant la négation a7). */
-const SE_PRESENTER_SUBORDER = ['a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'famille', 'a7', 'a8'] as const
+/** Ordre du menu « Sous-thème » — Se présenter. */
+const SE_PRESENTER_SUBORDER = ['a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'famille', 'a8', 'a9'] as const
 
 function subthemeSortRank(topic: string, subId: string): number {
   if (topic !== 'gram-se-presenter') return 0
