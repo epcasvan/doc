@@ -17,7 +17,7 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
 	  { kind: 'paragraph', text: '{ligne}' },
     { kind: 'paragraph', text: 'J’utilise les {c}verbes{/c} : être, habiter, parler, s’appeler. Un {c}verbe{/c}, c’est un mot d’{c}action{/c} ou d’{c}état{/c}.' },
     { kind: 'paragraph', text: '{ligne/2}' },
-    { kind: 'examples', items: ['Je m’appelle Lisa.', 'Je suis suisse.', 'J’habite à Martigny.', 'Je parle français.'] },
+    { kind: 'examples', items: ['{tab:1>}S’appeler + {c}Prénom{/c}, Je m’appelle {c}Lisa{/c}.', '{tab:1>}Être + {c}nationalité{/c}, Je suis {c}suisse{/c}.', '{tab:1>}Habiter à + {c}ville{/c}, J’habite à {c}Martigny{/c}.', '{tab:1>}Parler + {c}Langue{/c}, Je parle {c}français{/c}.'] },
 	  { kind: 'paragraph', text: '{ligne}' },
     { kind: 'paragraph', text: '{tab:2>}Verbe, Être, Nationalité\n{tab:2>}, Habiter à, ville\n{tab:2>}, Parler, langue' },
     { kind: 'examples', items: ['{tab:2>}Verbe, Être, Nationalité\n{tab:2>}, Habiter à, ville\n{tab:2>}, Parler, langue'] },
