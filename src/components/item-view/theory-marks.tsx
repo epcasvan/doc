@@ -6,8 +6,8 @@ const MARK = /\{(g|c|s)\}([\s\S]*?)\{\/\1\}/g
 const LIGNE = /\{ligne(\/2)?\}/gi
 const TAB = /\{tab:(\d+)(?:\s*(>|fleche))?\}/gi
 
-type TabRow = { n: number; arrow: boolean; cells: string[] }
-type TheoryPiece = { kind: 'text'; text: string } | { kind: 'tabs'; rows: TabRow[] }
+export type TheoryTabRow = { n: number; arrow: boolean; cells: string[] }
+type TheoryPiece = { kind: 'text'; text: string } | { kind: 'tabs'; rows: TheoryTabRow[] }
 type TheorySegment = { gap: true; half: boolean } | { gap: false; text: string }
 
 export function theoryHasLigne(text: string): boolean {
@@ -40,7 +40,7 @@ function theoryPieces(text: string): TheoryPiece[] {
   if (matches.length === 0) return [{ kind: 'text', text }]
   const pieces: TheoryPiece[] = []
   let cursor = 0
-  let rows: TabRow[] = []
+  let rows: TheoryTabRow[] = []
   const flushRows = () => {
     if (rows.length === 0) return
     pieces.push({ kind: 'tabs', rows })
@@ -73,7 +73,12 @@ function theoryPieces(text: string): TheoryPiece[] {
   return pieces
 }
 
-function TheoryTabs({ rows }: { rows: TabRow[] }) {
+export function theoryTabRows(text: string): TheoryTabRow[] | null {
+  const pieces = theoryPieces(text)
+  return pieces.length === 1 && pieces[0]?.kind === 'tabs' ? pieces[0].rows : null
+}
+
+export function TheoryTabs({ rows }: { rows: TheoryTabRow[] }) {
   const cols = Math.max(...rows.map((row) => row.cells.length), 1)
   return (
     <table className="theory-tabs">

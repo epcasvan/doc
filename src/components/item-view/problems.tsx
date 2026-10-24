@@ -4,9 +4,11 @@ import {
   TheoryInlineContent,
   TheoryLigne,
   TheoryRichText,
+  TheoryTabs,
   TheoryTabBlock,
   theoryHasLigne,
   theorySegments,
+  theoryTabRows,
 } from './theory-marks'
 import { fmt } from '@/math/column-arith'
 import { MoneyChangeBoard } from './money-change'
@@ -163,6 +165,21 @@ function TheoryExamplesView({
 }) {
   if (entries.length === 0) return null
   const ListTag = marker === 'numeros' ? 'ol' : 'ul'
+  const tabularRows = entries.map((entry) => theoryTabRows(entry.text))
+  if (
+    marker === 'border' &&
+    entries.every((entry) => !entry.wrong) &&
+    tabularRows.every((rows) => rows !== null)
+  ) {
+    return (
+      <div className={`theory-examples-block is-${marker}`}>
+        <p className="theory-examples-label">{label}</p>
+        <div className="theory-examples">
+          <TheoryTabs rows={tabularRows.flatMap((rows) => rows ?? [])} />
+        </div>
+      </div>
+    )
+  }
   return (
     <div className={`theory-examples-block is-${marker}`}>
       <p className="theory-examples-label">{label}</p>
