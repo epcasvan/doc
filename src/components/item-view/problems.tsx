@@ -1,5 +1,13 @@
 import { Fragment } from 'react'
-import { TheoryFlow, TheoryLigne, TheoryRichText, TheoryTabBlock, theoryHasLigne, theorySegments } from './theory-marks'
+import {
+  TheoryFlow,
+  TheoryInlineContent,
+  TheoryLigne,
+  TheoryRichText,
+  TheoryTabBlock,
+  theoryHasLigne,
+  theorySegments,
+} from './theory-marks'
 import { fmt } from '@/math/column-arith'
 import { MoneyChangeBoard } from './money-change'
 import type { MathItem, PreviewMode } from '@/math/types'
@@ -160,30 +168,30 @@ function TheoryExamplesView({
       <p className="theory-examples-label">{label}</p>
       <ListTag className="theory-examples">
         {entries.map((ex, index) => {
-          if (!ex.wrong && theoryHasLigne(ex.text) && theorySegments(ex.text).every((s) => s.gap)) {
-            const count = ex.text.match(/\{ligne\}/gi)?.length ?? 1
+          const segments = theorySegments(ex.text)
+          if (!ex.wrong && theoryHasLigne(ex.text) && segments.every((segment) => segment.gap)) {
             return (
               <li key={`ligne-${index}`} className="is-ligne" aria-hidden="true">
-                {Array.from({ length: count }, (_, n) => (
-                  <TheoryLigne key={n} />
-                ))}
+                {segments.map((segment, n) =>
+                  segment.gap ? <TheoryLigne key={n} half={segment.half} /> : null,
+                )}
               </li>
             )
           }
           return (
-          <li key={`${ex.text}-${index}`}>
-            <span className="theory-ex-ok">
-              <TheoryRichText text={ex.text} />
-            </span>
-            {ex.wrong ? (
-              <>
-                {' '}
-                <span className="theory-ex-bad" aria-label="à éviter">
-                  (pas : <TheoryRichText text={ex.wrong} />)
-                </span>
-              </>
-            ) : null}
-          </li>
+            <li key={`${ex.text}-${index}`}>
+              <div className="theory-ex-ok">
+                <TheoryInlineContent text={ex.text} />
+              </div>
+              {ex.wrong ? (
+                <>
+                  {' '}
+                  <span className="theory-ex-bad" aria-label="à éviter">
+                    (pas : <TheoryRichText text={ex.wrong} />)
+                  </span>
+                </>
+              ) : null}
+            </li>
           )
         })}
       </ListTag>
