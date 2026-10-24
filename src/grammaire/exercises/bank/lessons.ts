@@ -22,9 +22,7 @@ const CURATED_SUB_IDS = new Set([
   'a2',
   'a6',
   'a7',
-  'identite',
   'famille',
-  'situation-familiale',
   'description-physique',
 ])
 

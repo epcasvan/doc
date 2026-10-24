@@ -39,6 +39,15 @@ function theoryDerivedSubthemes(): Array<{
 
 export const ALL_GRAM_SUBTHEMES = [...GRAM_SUBTHEMES, ...theoryDerivedSubthemes()]
 
+/** Ordre du menu « Sous-thème » — Se présenter (famille avant la négation a7). */
+const SE_PRESENTER_SUBORDER = ['a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'famille', 'a7', 'a8'] as const
+
+function subthemeSortRank(topic: string, subId: string): number {
+  if (topic !== 'gram-se-presenter') return 0
+  const index = SE_PRESENTER_SUBORDER.indexOf(subId as (typeof SE_PRESENTER_SUBORDER)[number])
+  return index === -1 ? 1000 : index
+}
+
 /** Types d’exercice (pas théorie) pour le catalogue. */
 export function buildGrammairePracticeTypes(): ExerciseType[] {
   const types: ExerciseType[] = []
@@ -67,7 +76,13 @@ export function buildGrammairePracticeTypes(): ExerciseType[] {
 }
 
 export function subthemesForTopicAll(topic: string) {
-  return ALL_GRAM_SUBTHEMES.filter((s) => s.topic === topic)
+  const list = ALL_GRAM_SUBTHEMES.filter((s) => s.topic === topic)
+  if (topic !== 'gram-se-presenter') return list
+  return [...list].sort(
+    (a, b) =>
+      subthemeSortRank(topic, a.id) - subthemeSortRank(topic, b.id) ||
+      a.label.localeCompare(b.label, 'fr'),
+  )
 }
 
 export function resolveGramSubthemeAll(topic: string, exerciseType: string) {

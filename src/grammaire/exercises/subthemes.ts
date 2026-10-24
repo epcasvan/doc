@@ -11,22 +11,10 @@ export type GramSubtheme = {
 }
 
 export const GRAM_SUBTHEMES: GramSubtheme[] = [
-  // —— Se présenter (fiches Word : identité, famille, situation) ——
-  {
-    id: 'identite',
-    label: 'Identité',
-    topic: 'gram-se-presenter',
-    theoryTypeIds: [],
-  },
+  // —— Se présenter (famille regroupée ; identité → fiche théorie a1 « Qui suis-je ? ») ——
   {
     id: 'famille',
     label: 'Famille',
-    topic: 'gram-se-presenter',
-    theoryTypeIds: [],
-  },
-  {
-    id: 'situation-familiale',
-    label: 'Situation familiale',
     topic: 'gram-se-presenter',
     theoryTypeIds: [],
   },

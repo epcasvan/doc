@@ -242,7 +242,7 @@ export const GRAM_LESSONS_WORD_PRESENTER: GramLesson[] = [
   ),
 
   lesson(
-    'identite',
+    'a1',
     'qcm-verbe',
     'Associer la question et la réponse',
     'Associez la question et la réponse.',
@@ -263,7 +263,7 @@ export const GRAM_LESSONS_WORD_PRESENTER: GramLesson[] = [
     ],
   ),
   lesson(
-    'identite',
+    'a1',
     'fill-conj',
     'Compléter avec quel / quelle / quels / quelles',
     'Complétez le dialogue avec la forme correcte de quel.',
@@ -278,7 +278,7 @@ export const GRAM_LESSONS_WORD_PRESENTER: GramLesson[] = [
     ],
   ),
   lesson(
-    'identite',
+    'a1',
     'ecrire',
     'Écrire les questions d’identité',
     'Écrivez les questions à partir des réponses.',
@@ -399,7 +399,7 @@ export const GRAM_LESSONS_WORD_PRESENTER: GramLesson[] = [
     writeItem('ressembler', 'à ma mère'),
   ]),
 
-  lesson('situation-familiale', 'qcm-verbe', 'Choisir la situation familiale', 'Choisissez la situation familiale.', [
+  lesson('famille', 'qcm-verbe', 'Choisir la situation familiale', 'Choisissez la situation familiale.', [
     qcm('Nathalie est ___.', 'mariée', ['mariée', 'célibataire', 'pacsée']),
     qcm('John est ___ et roux.', 'grand', ['grand', 'petit', 'brun']),
     qcm('Megan a ___.', 'un fils et une fille', ['un fils et une fille', 'un fils', 'deux filles']),
@@ -411,7 +411,7 @@ export const GRAM_LESSONS_WORD_PRESENTER: GramLesson[] = [
       'seulement féminin',
     ]),
   ]),
-  lesson('situation-familiale', 'fill-conj', 'Accorder marié / célibataire / veuf', 'Complétez avec la forme accordée.', [
+  lesson('famille', 'fill-conj', 'Accorder marié / célibataire / veuf', 'Complétez avec la forme accordée.', [
     fill('Il est marié. Elle est ___.', 'mariée'),
     fill('Il est célibataire. Elle est ___.', 'célibataire'),
     fill('Il est veuf. Ils sont ___.', 'veufs'),
@@ -419,7 +419,7 @@ export const GRAM_LESSONS_WORD_PRESENTER: GramLesson[] = [
     fill('Mon frère est marié. Sa femme est professeure.', 'marié'),
     fill('J’ai deux filles. Elles sont encore étudiantes.', 'étudiantes'),
   ]),
-  lesson('situation-familiale', 'ecrire', 'Dire sa situation familiale', 'Écrivez une phrase avec le verbe et le mot proposés.', [
+  lesson('famille', 'ecrire', 'Dire sa situation familiale', 'Écrivez une phrase avec le verbe et le mot proposés.', [
     writeItem('être', 'marié'),
     writeItem('être', 'célibataire'),
     writeItem('être', 'pacsée'),
