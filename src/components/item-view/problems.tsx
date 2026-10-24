@@ -323,12 +323,28 @@ function TheoryBlockContent({ block }: { block: GrammarTheoryBlock }) {
       </div>
     )
   }
-  if (block.kind === 'examples' || block.kind === 'rule') {
+  if (block.kind === 'examples') {
     return (
       <TheoryExamplesView
-        label={block.kind === 'examples' ? (block.label?.trim() || 'Exemples') : 'Exemples'}
+        label={block.label?.trim() || 'Exemples'}
         marker={block.marker ?? 'border'}
-        entries={theoryExampleEntries(block.items, block.examples)}
+        entries={theoryExampleEntries(block.items)}
+      />
+    )
+  }
+  if (block.kind === 'rule') {
+    return (
+      <TheoryExamplesView
+        label="Exemples"
+        marker="border"
+        entries={theoryExampleEntries(
+          undefined,
+          block.examples?.length
+            ? block.examples
+            : block.text.trim() && !/^exemples?$/i.test(block.text.trim())
+              ? [{ correct: block.text.trim() }]
+              : [],
+        )}
       />
     )
   }
@@ -337,7 +353,7 @@ function TheoryBlockContent({ block }: { block: GrammarTheoryBlock }) {
       <TheoryExamplesView
         label={block.title?.trim() || 'Exemples'}
         marker="puces"
-        entries={(block.items ?? []).map((text) => ({ text: typeof text === 'string' ? text : text.text }))}
+        entries={block.items.map((text) => ({ text }))}
       />
     )
   }
