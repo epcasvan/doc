@@ -374,7 +374,7 @@ function TheoryBlockContent({ block }: { block: GrammarTheoryBlock }) {
             <tr>
               {headers.map((header, index) => (
                 <th key={`${header}-${index}`} scope="col">
-                  <TheoryRichText text={header} />
+                  <TheoryInlineContent text={header} />
                 </th>
               ))}
             </tr>
@@ -386,11 +386,11 @@ function TheoryBlockContent({ block }: { block: GrammarTheoryBlock }) {
               {row.map((cell, cellIndex) =>
                 rowHeader && cellIndex === 0 ? (
                   <th key={`${rowIndex}-${cellIndex}`} scope="row">
-                    <TheoryRichText text={cell} />
+                    <TheoryInlineContent text={cell} />
                   </th>
                 ) : (
                   <td key={`${rowIndex}-${cellIndex}`}>
-                    <TheoryRichText text={cell} />
+                    <TheoryInlineContent text={cell} />
                   </td>
                 ),
               )}
