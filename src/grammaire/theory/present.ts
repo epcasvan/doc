@@ -8,58 +8,6 @@ import type { GrammaireTheoryDoc } from '../types'
  */
 export const presentDocs: GrammaireTheoryDoc[] = [
   {
-    id: 'm1',
-    typeId: 'gram-m1-theorie',
-    index: 1,
-    title: 'Les pronoms sujets',
-    topic: 'gram-present',
-    public: 'pré-A1 / A1',
-    objectif: 'Choisir le bon pronom sujet devant le verbe.',
-    blocks: [
-      { kind: 'heading', text: 'Les pronoms sujets' },
-      { kind: 'paragraph', text: 'Je remplace une personne ou un groupe devant le verbe.' },
-      {
-        kind: 'section',
-        role: 'regarder',
-        blocks: [
-          { kind: 'examples', items: [
-              'Ali parle français. → Il parle français.',
-              'Marie et moi partons. → Nous partons.',
-            ],
-          }
-        ],
-      },
-      {
-        kind: 'section',
-        role: 'expliquer',
-        blocks: [
-          { kind: 'paragraph', text: 'Un pronom sujet évite de répéter le nom.' },
-          { kind: 'paragraph', text: 'Je, tu, il, elle, on, nous, vous, ils, elles.' },
-          { kind: 'paragraph', text: 'On = une personne ou des personnes (souvent « nous » à l’oral).' }
-        ],
-      },
-      {
-        kind: 'section',
-        role: 'retenir',
-        blocks: [
-          { kind: 'paragraph', text: 'un pronom sujet + un verbe conjugué.' },
-          { kind: 'table', colHeader: true, rowHeader: true, headers: ['Pronom', 'Qui ?', 'Exemple'],
-            rows: [
-              ['je', 'moi', 'Je travaille.'],
-              ['tu', 'toi (familier)', 'Tu écoutes.'],
-              ['il / elle', 'une personne', 'Elle lit.'],
-              ['on', 'quelqu’un / nous', 'On mange.'],
-              ['nous', 'moi + d’autres', 'Nous partons.'],
-              ['vous', 'politesse ou pluriel', 'Vous restez.'],
-              ['ils / elles', 'plusieurs', 'Ils arrivent.'],
-            ],
-          },
-          { kind: 'attention', text: 'Tu = familier. Vous = politesse ou plusieurs personnes.' }
-        ],
-      },
-    ],
-  },
-  {
     id: 'm2',
     typeId: 'gram-m2-theorie',
     index: 2,
@@ -465,5 +413,82 @@ export const presentDocs: GrammaireTheoryDoc[] = [
     public: 'A1',
     objectif: 'À compléter.',
     blocks: theoryGabarit('Verbes pronominaux'),
+  },
+  {
+    id: 'a8',
+    typeId: 'gram-a8-theorie',
+    index: 10,
+    title: 'La négation ne … pas',
+    topic: 'gram-present',
+    public: 'A1',
+    objectif: 'Former une phrase négative avec ne … pas.',
+    blocks: [
+    { kind: 'heading', text: 'La négation ne … pas' },
+    { kind: 'paragraph', text: 'Je mets ne et pas autour du verbe.' },
+    {
+      kind: 'section',
+      role: 'regarder',
+      blocks: [
+        { kind: 'examples', items: [{ text: 'Je ne suis pas italien.', wrong: 'Je suis pas italien (à l’écrit)' }] }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'expliquer',
+      blocks: [
+        { kind: 'paragraph', text: 'Ne et pas forment la négation.' },
+        { kind: 'paragraph', text: 'Ils se placent autour du verbe.' },
+        { kind: 'paragraph', text: 'Temps composé : ne + auxiliaire + pas + participe.' }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'retenir',
+      blocks: [
+        { kind: 'paragraph', text: 'négation de base = ne … pas autour du verbe.' },
+        { kind: 'table', colHeader: true, rowHeader: true, headers: ['Cas', 'Forme', 'Exemple'], rows: [['présent', 'ne + verbe + pas', 'Je ne suis pas italien.'], ['composé', 'ne + auxiliaire + pas + participe', 'Je n’ai pas compris.'], ['infinitif', 'ne pas + verbe', 'Ne pas fumer.'], ['impératif', 'ne + verbe + pas', 'Ne fumez pas !']] },
+        { kind: 'astuce', text: 'Devant une voyelle : ne → n’.' }
+      ],
+    },
+    ],
+  },
+  {
+    id: 'a9',
+    typeId: 'gram-a9-theorie',
+    index: 11,
+    title: 'Autres négations',
+    topic: 'gram-present',
+    public: 'A1 / A2',
+    objectif: 'Utiliser jamais, plus, rien, personne…',
+    blocks: [
+    { kind: 'heading', text: 'Autres négations' },
+    { kind: 'paragraph', text: 'Je choisis la bonne négation selon le sens.' },
+    {
+      kind: 'section',
+      role: 'regarder',
+      blocks: [
+        { kind: 'examples', items: ['Je n’ai jamais gagné.', 'Je n’ai plus d’argent.'] }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'expliquer',
+      blocks: [
+        { kind: 'paragraph', text: 'Certaines négations remplacent pas.' },
+        { kind: 'paragraph', text: 'Ne … jamais = aucune fois.' },
+        { kind: 'paragraph', text: 'Ne … plus = avant oui, maintenant non.' },
+        { kind: 'paragraph', text: 'Après sans, le déterminant disparaît.' }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'retenir',
+      blocks: [
+        { kind: 'paragraph', text: 'une idée négative = une négation adaptée.' },
+        { kind: 'table', colHeader: true, rowHeader: true, headers: ['Affirmatif', 'Négatif'], rows: [['déjà / toujours', 'ne … jamais / ne … pas encore'], ['encore', 'ne … plus'], ['tout', 'ne … rien'], ['quelqu’un', 'ne … personne'], ['quelques', 'ne … aucun(e)'], ['avec', 'sans']] },
+        { kind: 'attention', text: 'Réponse à une négation : Si = oui malgré le non.' }
+      ],
+    },
+    ],
   },
 ]

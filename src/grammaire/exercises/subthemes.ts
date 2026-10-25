@@ -75,10 +75,16 @@ export const GRAM_SUBTHEMES: GramSubtheme[] = [
     theoryTypeIds: ['gram-pronominaux-theorie'],
   },
   {
-    id: 'pronoms-sujets',
-    label: 'Pronoms sujets',
+    id: 'a8',
+    label: 'La négation ne … pas',
     topic: 'gram-present',
-    theoryTypeIds: ['gram-m1-theorie'],
+    theoryTypeIds: ['gram-a8-theorie'],
+  },
+  {
+    id: 'a9',
+    label: 'Autres négations',
+    topic: 'gram-present',
+    theoryTypeIds: ['gram-a9-theorie'],
   },
 
   // —— Passé ——

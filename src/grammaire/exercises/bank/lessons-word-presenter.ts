@@ -62,7 +62,7 @@ export const GRAM_LESSONS_WORD_PRESENTER: GramLesson[] = [
   ]),
 
   lesson(
-    'a2',
+    'a3',
     'fill-conj',
     'Compléter les nationalités',
     'Complétez les nationalités (masculin ou féminin).',
@@ -88,7 +88,7 @@ export const GRAM_LESSONS_WORD_PRESENTER: GramLesson[] = [
       fill('Martin — Amy et Michael sont anglai___ ? Tae Hee — Non, ils sont américai___.', 's / ns'),
     ],
   ),
-  lesson('a2', 'qcm-verbe', 'Accorder la nationalité', 'Choisissez l’adjectif de nationalité accordé.', [
+  lesson('a3', 'qcm-verbe', 'Accorder la nationalité', 'Choisissez l’adjectif de nationalité accordé.', [
     qcm('Kumar Suresh est ___.', 'indien', ['indien', 'indienne', 'indiens']),
     qcm('Serena Moretti est ___.', 'italienne', ['italienne', 'italien', 'italiens']),
     qcm('Martin Bauer est ___.', 'allemand', ['allemand', 'allemande', 'allemands']),
@@ -98,7 +98,7 @@ export const GRAM_LESSONS_WORD_PRESENTER: GramLesson[] = [
     qcm('Hiro — Kumar et Shreya, vous êtes ___ ?', 'indiens', ['indiens', 'indien', 'indiennes']),
     qcm('Amy et Michael sont anglais ? Tae Hee — Non, ils sont ___.', 'américains', ['américains', 'américain', 'américaines']),
   ]),
-  lesson('a2', 'pluriel', 'Nationalité au pluriel', 'Mettez la phrase au pluriel.', [
+  lesson('a3', 'pluriel', 'Nationalité au pluriel', 'Mettez la phrase au pluriel.', [
     fill('Il est américain.', 'Ils sont américains.'),
     fill('Elle est américaine.', 'Elles sont américaines.'),
     fill('Le professeur est français.', 'Les professeurs sont français.'),

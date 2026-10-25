@@ -55,7 +55,7 @@ export const GRAM_LESSONS_CORE: GramLesson[] = [
     fill('Vous avez une question.', 'Vous n’avez pas de question.'),
     fill('Ils ont faim.', 'Ils n’ont pas faim.'),
   ]),
-  lesson('pronoms-sujets', 'qcm-verbe', 'Choisir le pronom sujet', 'Complétez avec je, tu, il, elle, nous, vous, ils ou elles.', [
+  lesson('a2', 'qcm-verbe', 'Choisir le pronom sujet', 'Complétez avec je, tu, il, elle, nous, vous, ils ou elles.', [
     qcm('___ m’appelle Léa.', 'Je', ['Je', 'Tu', 'Il']),
     qcm('___ es en classe, Omar ?', 'Tu', ['Tu', 'Vous', 'Il']),
     qcm('Lina est professeure. ___ est à Sion.', 'Elle', ['Elle', 'Il', 'Ils']),
@@ -63,7 +63,7 @@ export const GRAM_LESSONS_CORE: GramLesson[] = [
     qcm('Madame Rossi, comment ___ vous appelez ?', 'vous', ['vous', 'tu', 'ils']),
     qcm('Inès et Chloé, ___ sont suisses.', 'elles', ['elles', 'ils', 'elle']),
   ]),
-  lesson('pronoms-sujets', 'fill-conj', 'Compléter le pronom', 'Écrivez le pronom sujet qui convient.', [
+  lesson('a2', 'fill-conj', 'Compléter le pronom', 'Écrivez le pronom sujet qui convient.', [
     fill('___ suis en formation. (moi)', 'Je'),
     fill('___ as un cours ? (toi)', 'Tu'),
     fill('Karim travaille. ___ travaille à Martigny.', 'Il'),
@@ -409,7 +409,7 @@ export const GRAM_LESSONS_CORE: GramLesson[] = [
     qcm('Si vous prenez le train, vous ___ à l’heure.', 'serez', ['serez', 'êtes', 'étiez']),
     qcm('S’ils ___ libres, ils viendront.', 'sont', ['sont', 'seront', 'étaient']),
   ]),
-  lesson('a3', 'qcm-verbe', 'Aller : pays et villes', 'Choisissez en, au, aux ou à.', [
+  lesson('aller-destination', 'qcm-verbe', 'Aller : pays et villes', 'Choisissez en, au, aux ou à.', [
     qcm('Je vais ___ France.', 'en', ['en', 'au', 'à']),
     qcm('Elle va ___ Japon.', 'au', ['au', 'en', 'à']),
     qcm('Nous allons ___ États-Unis.', 'aux', ['aux', 'au', 'en']),
@@ -417,7 +417,7 @@ export const GRAM_LESSONS_CORE: GramLesson[] = [
     qcm('Ils vont ___ Italie.', 'en', ['en', 'au', 'à']),
     qcm('Vous allez ___ Maroc.', 'au', ['au', 'en', 'aux']),
   ]),
-  lesson('a3', 'fill-conj', 'Compléter la préposition de destination', 'Écrivez en, au, aux ou à.', [
+  lesson('aller-destination', 'fill-conj', 'Compléter la préposition de destination', 'Écrivez en, au, aux ou à.', [
     fill('Je vais ___ Chine.', 'en'),
     fill('Il va ___ Canada.', 'au'),
     fill('Nous allons ___ Pays-Bas.', 'aux'),
