@@ -264,7 +264,7 @@ function TheoryBlockContent({ block }: { block: GrammarTheoryBlock }) {
   }
   if (block.kind === 'tab') {
     return (
-      <TheoryTabBlock rows={block.rows ?? []} tab={block.tab} fleche={block.fleche} />
+      <TheoryTabBlock rows={block.rows ?? []} tab={block.tab} fleche={block.fleche} puce={block.puce} />
     )
   }
   if (block.kind === 'paragraph') {

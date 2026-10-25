@@ -18,8 +18,8 @@ export type GrammarTheoryBlock =
       border?: boolean
       label?: string
     }
-  /** Colonnes alignées. `tab` vaut 1 et `fleche` est absente tant qu’on n’en a pas besoin. */
-  | { kind: 'tab'; rows: string[][]; tab?: number; fleche?: boolean }
+  /** Colonnes alignées. `puce` ajoute une puce devant la deuxième colonne. */
+  | { kind: 'tab'; rows: string[][]; tab?: number; fleche?: boolean; puce?: boolean }
   | { kind: 'list'; title?: string; items: string[] }
   | { kind: 'table'; headers: string[]; rows: string[][]; colHeader?: boolean; rowHeader?: boolean }
   | { kind: 'attention'; text: string }

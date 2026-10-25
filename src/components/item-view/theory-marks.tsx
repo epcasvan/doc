@@ -1,12 +1,12 @@
 import type { ReactNode } from 'react'
 import { Fragment } from 'react'
 
-/** `{g}…{/g}` gras · `{c}…{/c}` couleur · `{s}…{/s}` souligné · `/n` retour · `{ligne}` / `{ligne/N}` · `{tab:N}` / `{tab:N>}`. */
+/** `{g}…{/g}` gras · `{c}…{/c}` couleur · `{s}…{/s}` souligné · `/n` retour · `{ligne}` / `{ligne/N}` · `{tab:N}` / `{tab:N> puce}`. */
 const MARK = /\{(g|c|s)\}([\s\S]*?)\{\/\1\}|\/n/g
 const LIGNE = /\{ligne(?:\/([234]))?\}/gi
-const TAB = /\{tab:(\d+)(?:\s*(>|fleche))?\}/gi
+const TAB = /\{tab:(\d+)(?:\s*(>|fleche))?(?:\s*(puce))?\}/gi
 
-export type TheoryTabRow = { n: number; arrow: boolean; cells: string[] }
+export type TheoryTabRow = { n: number; arrow: boolean; bullet: boolean; cells: string[] }
 type TheoryPiece = { kind: 'text'; text: string } | { kind: 'tabs'; rows: TheoryTabRow[] }
 type TheorySegment = { gap: true; divisor: 1 | 2 | 3 | 4 } | { gap: false; text: string }
 
@@ -64,6 +64,7 @@ function theoryPieces(text: string): TheoryPiece[] {
     rows.push({
       n: Math.max(1, Number(match[1]) || 1),
       arrow: Boolean(match[2]),
+      bullet: Boolean(match[3]),
       cells,
     })
     cursor = end
@@ -104,7 +105,7 @@ export function TheoryTabs({
                     aria-hidden="true"
                   />
                 ) : null}
-                <td className="theory-tab-cell">
+                <td className={`theory-tab-cell${cellIndex === 1 && row.bullet ? ' is-bulleted' : ''}`}>
                   <TheoryRichText text={row.cells[cellIndex] ?? ''} />
                 </td>
               </Fragment>
@@ -160,10 +161,12 @@ export function TheoryTabBlock({
   rows,
   tab = 1,
   fleche = false,
+  puce = false,
 }: {
   rows: string[][]
   tab?: number
   fleche?: boolean
+  puce?: boolean
 }) {
   const cols = Math.max(...rows.map((row) => row.length), 1)
   const width = `${Math.max(1, tab) * 2}em`
@@ -181,7 +184,7 @@ export function TheoryTabBlock({
                     aria-hidden="true"
                   />
                 ) : null}
-                <td className="theory-tab-cell">
+                <td className={`theory-tab-cell${cellIndex === 1 && puce ? ' is-bulleted' : ''}`}>
                   <TheoryRichText text={row[cellIndex] ?? ''} />
                 </td>
               </Fragment>
