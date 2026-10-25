@@ -1,8 +1,8 @@
 import type { ReactNode } from 'react'
 import { Fragment } from 'react'
 
-/** `{g}…{/g}` gras · `{c}…{/c}` couleur · `{s}…{/s}` souligné · `{ligne}` / `{ligne/N}` · `{tab:N}` / `{tab:N>}`. */
-const MARK = /\{(g|c|s)\}([\s\S]*?)\{\/\1\}/g
+/** `{g}…{/g}` gras · `{c}…{/c}` couleur · `{s}…{/s}` souligné · `/n` retour · `{ligne}` / `{ligne/N}` · `{tab:N}` / `{tab:N>}`. */
+const MARK = /\{(g|c|s)\}([\s\S]*?)\{\/\1\}|\/n/g
 const LIGNE = /\{ligne(?:\/([234]))?\}/gi
 const TAB = /\{tab:(\d+)(?:\s*(>|fleche))?\}/gi
 
@@ -193,13 +193,24 @@ export function TheoryRichText({ text }: { text: string }) {
   for (const match of text.matchAll(MARK)) {
     const start = match.index ?? 0
     if (start > last) nodes.push(text.slice(last, start))
+    if (match[0] === '/n') {
+      nodes.push(<br key={key} />)
+      key += 1
+      last = start + match[0].length
+      continue
+    }
     const kind = match[1]
     const inner = match[2] ?? ''
     const className =
       kind === 'g' ? 'theory-mark-bold' : kind === 'c' ? 'theory-mark-theme' : 'theory-mark-under'
     nodes.push(
       <span key={key} className={className}>
-        {inner}
+        {inner.split('/n').map((part, index) => (
+          <Fragment key={index}>
+            {index > 0 ? <br /> : null}
+            {part}
+          </Fragment>
+        ))}
       </span>,
     )
     key += 1
