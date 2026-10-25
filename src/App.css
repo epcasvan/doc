@@ -538,6 +538,7 @@ html,body,#root{
 .theory-section .theory-examples-label,
 .theory-section .theory-examples-block.is-numeros .theory-examples li::before,
 .theory-section .theory-examples-block.is-trait .theory-examples li::before,
+.theory-section .theory-tabs.is-numeros .theory-tab-marker,
 .theory-section .theory-tabs.is-trait .theory-tab-marker::before{
   color:var(--theory-accent)
 }
