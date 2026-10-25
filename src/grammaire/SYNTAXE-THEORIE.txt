@@ -128,8 +128,15 @@ Un sous-titre independant peut utiliser :
 PARAGRAPHE
   { kind: 'paragraph', text: 'Une phrase simple.' }
 
-Texte courant. Plusieurs paragraphes distincts sont possibles.
-Deux retours a la ligne dans text separent aussi des paragraphes.
+Texte courant. Pour separer les idees, utiliser plusieurs blocs paragraph :
+
+  { kind: 'paragraph', text: 'Premiere idee.' },
+  { kind: 'paragraph', text: 'Deuxieme idee.' },
+
+Il n'y a pas de marqueur de retour a la ligne force a l'interieur d'un
+paragraphe. Le texte revient automatiquement a la ligne selon la largeur.
+Ne pas compter sur un retour a la ligne tape dans text : il peut etre
+affiche comme un simple espace.
 
 EXEMPLES
   { kind: 'examples', items: ['Je travaille.', 'Tu ecoutes.'] }
@@ -172,6 +179,12 @@ TABLEAU
 - colHeader : affiche les titres de colonnes ; true par defaut.
 - rowHeader : transforme la premiere cellule de chaque ligne en titre ;
   true par defaut.
+
+Les cellules sont du texte enrichi, mais ne comprennent pas de marqueur de
+retour a la ligne. Un retour tape dans une cellule ne garantit pas une
+nouvelle ligne. Pour separer le contenu, utiliser plusieurs lignes du
+tableau. Un saut force a l'interieur d'une cellule demanderait une nouvelle
+syntaxe et une adaptation du rendu.
 
 Pour ne pas avoir de ligne d'en-tete ou de premiere colonne en titre :
   { kind: 'table', colHeader: false, rowHeader: false,
