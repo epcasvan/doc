@@ -13,13 +13,13 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
     objectif: 'Me présenter avec être, habiter, parler, s’appeler.',
     blocks: [
     { kind: 'heading', text: 'Qui suis-je ?' },
-    { kind: 'paragraph', text: 'Pour me présenter, je donne des informations simples. Je dis mon nom, ma nationalité, ma ville et ma langue.' },
+    { kind: 'paragraph', text: 'Pour me présenter, je donne des {g}informations simples{/g}.' },
 	  { kind: 'paragraph', text: '{ligne/2}' },
     {
       kind: 'section',
       role: 'regarder',
       blocks: [
-        { kind: 'examples', marker: 'puces', items: ['Je m’appelle Lisa.', 'J’ai 17 ans.', 'Je suis belge.', 'Je viens de Belgique.', 'J’habite à Martigny.', 'Je parle français.'] },
+        { kind: 'examples', marker: 'puces', items: ['Je m’appelle Nina.', 'J’ai 17 ans.', 'Je suis belge.', 'Je viens de Belgique.', 'J’habite à Martigny.', 'Je parle français.'] },
       ],
     },
     {
@@ -33,7 +33,8 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
       kind: 'section',
       role: 'retenir',
       blocks: [
-        { kind: 'examples', marker: 'puces', items: ['S’appeler + {c}Prénom{/c}', 'Avoir + {c}âge{/c}', 'Être + {c}nationalité{/c}', 'Venir de + {c}pays{/c}', 'Habiter à + {c}ville{/c}', 'Parler + {c}Langue{/c}'] },
+        { kind: 'paragraph', text: 'J’utilise différents verbes pour décrire qui je suis.' },
+        { kind: 'examples', marker: 'puces', items: ['S’appeler + {c}prénom{/c}', 'Avoir + {c}âge{/c}', 'Être + {c}nationalité{/c}', 'Venir de + {c}pays{/c}', 'Habiter à + {c}ville{/c}', 'Parler + {c}langue{/c}'] },
       ],
     },
   ],
@@ -54,46 +55,34 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
         kind: 'section',
         role: 'regarder',
         blocks: [
-          { kind: 'examples', items: ['{tab:1>}Lisa s’appelle Lisa., Elle s’appelle Lisa.', '{tab:1>}Paul et moi habitons à Sion. → {c}Nous{/c} habitons à Sion.'] },
-          { kind: 'paragraph', text: '{ligne/2}' }
+          { kind: 'examples', items: ['{tab:1>}{c}Ma fille{/c} s’appelle Alicia., {c}Elle{/c} s’appelle Lisa.', '{tab:1>}{c}Paul et moi{/c} habitons à Sion', '{c}Nous{/c} habitons à Sion.'] },
         ],
       },
       {
         kind: 'section',
         role: 'expliquer',
         blocks: [
-          { kind: 'paragraph', text: 'Le pronom sujet se place devant le verbe.' },
+          { kind: 'paragraph', text: 'Le pronom sujet se place {c}devant le verbe{/c}.' },
           { kind: 'paragraph', text: 'Il évite de répéter un nom.' },
-          { kind: 'paragraph', text: '{ligne/2}' }
+          { kind: 'table', colHeader: true, rowHeader: true, headers: ['Singulier', 'Pluriel'], rows: [
+            ['{c}je{/c}/n moi', '{c}nous{/c}/n moi et d’autres personnes'],
+            ['{c}tu{/c}/n un ami à qui je parle', '{c}vous{/c}/n plusieurs personnes ou politesse'],
+            ['{c}il{/c}/n un homme', '{c}ils{/c}/n plusieurs hommes ou un groupe d’hommes et de femmes'],
+            ['{c}elle{/c}/n une femme', '{c}elles{/c}/n plusieurs femmes'],
+          ] },
         ],
       },
+      {kind: 'paragraph', text: '{page}' },
       {
         kind: 'section',
         role: 'retenir',
         blocks: [
           { kind: 'paragraph', text: 'Je choisis le pronom selon la personne ou le groupe.' },
-          { kind: 'table', colHeader: true, rowHeader: true, headers: ['Pronom', 'Qui ?', 'Exemple'], rows: [
-            ['je', 'moi', 'Je parle français.'],
-            ['tu', 'la personne à qui je parle', 'Tu habites à Sion.'],
-            ['il / elle', 'une personne', 'Elle s’appelle Lisa.'],
-            ['nous', 'moi et d’autres personnes', 'Nous sommes amis.'],
-            ['vous', 'politesse ou plusieurs personnes', 'Vous parlez français.'],
-            ['ils / elles', 'plusieurs personnes', 'Ils habitent à Sion.'],
-          ] },
-          { kind: 'attention', text: 'On peut remplacer nous à l’oral : On parle français.' },
-          { kind: 'paragraph', text: '{ligne}' },
-          { kind: 'table', colHeader: true, rowHeader: true, headers: ['Personne', 'être', 'habiter', 'parler', 's’appeler'],
-          rows: [
-          ['je', 'suis', 'habite', 'parle', 'm’appelle'],
-          ['tu', 'es', 'habites', 'parles', 't’appelles'],
-          ['il / elle / on', 'est', 'habite', 'parle', 's’appelle'],
-          ['nous', 'sommes', 'habitons', 'parlons', 'nous appelons'],
-          ['vous', 'êtes', 'habitez', 'parlez', 'vous appelez'],
-          ['ils / elles', 'sont', 'habitent', 'parlent', 's’appellent']] },
-          { kind: 'astuce', text: 'Devant une voyelle ou un h, j’écris : j’, m’, t’, s’.' },
-          { kind: 'paragraph', text: '{ligne}' },
-          { kind: 'attention', text: 'Avec nous et vous, s’appeler garde nous / vous deux fois : nous nous appelons.' }
-        ],
+          { kind: 'attention', text: 'J’utilise {c}on{/c} pour représenter plusieurs personnes (= {c}nous{c}). Il est très utilisé à l’oral familier. Le verbe est toujours au singulier.' },
+          { kind: 'examples', marker: 'puces',items: ['{tab:1>}Nous, {c}On{/c} va au magasin.', '{tab:1>}Les gens, En Suisse, {c}on{/c} parle français.'] },
+          { kind: 'paragraph', text: '{ligne/2}' },
+
+          ],
       },
       
     ],
