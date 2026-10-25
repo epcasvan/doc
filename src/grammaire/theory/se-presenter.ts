@@ -43,12 +43,12 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
     id: 'a2',
     typeId: 'gram-a2-theorie',
     index: 2,
-    title: 'Les pronoms sujets',
+    title: 'Pronoms sujet',
     topic: 'gram-se-presenter',
     public: 'pré-A1 / A1',
     objectif: 'Choisir le pronom sujet qui remplace une personne.',
     blocks: [
-      { kind: 'heading', text: 'Les pronoms sujets' },
+      { kind: 'heading', text: 'Pronoms sujet' },
       { kind: 'paragraph', text: 'Un pronom sujet remplace une personne, un groupe de personnes ou un nom.' },
       { kind: 'paragraph', text: '{ligne/2}' },
       {
@@ -106,12 +106,12 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
     id: 'a3',
     typeId: 'gram-a3-theorie',
     index: 3,
-    title: 'Les adjectifs de nationalité',
+    title: 'Adjectifs de nationalité',
     topic: 'gram-se-presenter',
     public: 'A1',
     objectif: 'Accorder l’adjectif de nationalité.',
     blocks: [
-    { kind: 'heading', text: 'Les adjectifs de nationalité' },
+    { kind: 'heading', text: 'Adjectifs de nationalité' },
     { kind: 'paragraph', text: 'Je dis ma nationalité au masculin ou au féminin.' },
     {
       kind: 'section',
