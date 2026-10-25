@@ -37,7 +37,7 @@ export function TheoryLigne({ divisor = 1 }: { divisor?: 1 | 2 | 3 | 4 }) {
   return <div className={`theory-ligne${sizeClass}`} aria-hidden="true" />
 }
 
-/** Découpe le texte courant et les lignes `{tab:N}` / `{tab:N>}`. */
+/** Découpe les cellules séparées par `|` après `{tab:N}` (virgule héritée tolérée). */
 function theoryPieces(text: string): TheoryPiece[] {
   const matches = [...text.matchAll(new RegExp(TAB.source, 'gi'))]
   if (matches.length === 0) return [{ kind: 'text', text }]
@@ -57,10 +57,9 @@ function theoryPieces(text: string): TheoryPiece[] {
       pieces.push({ kind: 'text', text: before.trim() })
     }
     const end = index + 1 < matches.length ? (matches[index + 1]?.index ?? text.length) : text.length
-    const cells = text
-      .slice(start + match[0].length, end)
-      .trim()
-      .split(',')
+    const rowText = text.slice(start + match[0].length, end).trim()
+    const cells = rowText
+      .split(rowText.includes('|') ? '|' : ',')
       .map((cell) => cell.trim())
     rows.push({
       n: Math.max(1, Number(match[1]) || 1),
