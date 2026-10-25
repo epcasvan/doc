@@ -567,7 +567,7 @@ html,body,#root{
 .theory-tab-cell{white-space:nowrap}
 .theory-tab{padding:0}
 .theory-tabs.is-puces{counter-reset:theory-tab}
-.theory-tabs.is-puces .theory-tab-marker{width:.55em;min-width:.55em}
+.theory-tabs.is-puces .theory-tab-marker{width:1em;min-width:1em}
 .theory-tabs.is-puces .theory-tab-marker::before{
   content:"";display:block;width:.55em;height:.55em;margin-top:.45em;
   border-radius:50%;background:var(--purple)
@@ -583,6 +583,7 @@ html,body,#root{
   -webkit-print-color-adjust:exact;print-color-adjust:exact
 }
 .theory-tab.is-arrow::after{content:"→"}
+.theory-table .theory-tabs.is-arrowed{width:100%;table-layout:fixed}
 .theory-mark-bold{font-weight:700}
 .theory-mark-theme{font-weight:700;color:var(--purple);-webkit-print-color-adjust:exact;print-color-adjust:exact}
 .theory-mark-under{
@@ -627,7 +628,7 @@ html,body,#root{
 .theory-table{
   width:100%;border-collapse:collapse;font-size:var(--theory-size);margin:0;line-height:1.4
 }
-.theory-table th,.theory-table td{
+.theory-table>thead>tr>th,.theory-table>tbody>tr>th,.theory-table>tbody>tr>td{
   border:1px solid var(--ink);padding:4px 8px;text-align:left;vertical-align:top
 }
 .theory-table.has-col-head thead th{

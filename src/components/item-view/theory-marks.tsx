@@ -88,8 +88,9 @@ export function TheoryTabs({
   marker?: 'puces' | 'numeros'
 }) {
   const cols = Math.max(...rows.map((row) => row.cells.length), 1)
+  const hasArrows = rows.some((row) => row.arrow)
   return (
-    <table className={`theory-tabs${marker ? ` is-${marker}` : ''}`}>
+    <table className={`theory-tabs${marker ? ` is-${marker}` : ''}${hasArrows ? ' is-arrowed' : ''}`}>
       <tbody>
         {rows.map((row, rowIndex) => (
           <tr key={rowIndex}>
