@@ -63,13 +63,27 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
         role: 'expliquer',
         blocks: [
           { kind: 'paragraph', text: 'Le pronom sujet se place {c}devant le verbe{/c}.' },
-          { kind: 'paragraph', text: 'Il évite de répéter un nom.' },
-          { kind: 'table', colHeader: true, rowHeader: true, headers: ['Singulier', 'Pluriel'], rows: [
-            ['{c}je{/c}/n moi', '{c}nous{/c}/n moi et d’autres personnes'],
-            ['{c}tu{/c}/n un ami', '{c}vous{/c}/n des personnes ou politesse'],
-            ['{c}il{/c}/n un homme', '{c}ils{/c}/n des hommes ou un groupe d’hommes et de femmes'],
-            ['{c}elle{/c}/n une femme', '{c}elles{/c}/n des femmes'],
-          ] },
+                    
+          { kind: 'paragraph', text: 'J’utilise {c}on{/c} pour représenter plusieurs personnes. Il est très utilisé à l’oral familier. Le verbe est {c}toujours au singulier.{/c}' },
+          { kind: 'examples', marker: 'puces',items: ['{tab:1>}Nous | {c}On{/c} va au magasin.'] },
+          { kind: 'paragraph', text: '{ligne/2}' },
+
+          { kind: 'paragraph', text: 'J’utilise {c}tu{/c} pour parler à une personne que je connaîs, dans une situation familière.' },
+          { kind: 'examples', marker: 'puces',items: ['{tab:1>}Alona ♀ | {c}Tu{/c} es là ?'] },
+          { kind: 'paragraph', text: '{ligne/2}' },
+
+          { kind: 'paragraph', text: 'J’utilise {c}vous{/c} quand on ne connaît pas la personne ou que le statut est différent (élève–professeur). On appelle cela la forme de {c}politesse{/c}.' },
+          { kind: 'examples', marker: 'puces',items: ['{tab:1>}La professeure | Madame | {c}vous{/c} allez bien ?'] },
+          { kind: 'paragraph', text: '{ligne/2}' },
+
+          { kind: 'paragraph', text: 'J’utilise {c}ils{/c} quand il y a un groupe mixte de femmes et d’hommes. Même s’il y a beaucoup de femmes et un seul homme.' },
+          { kind: 'examples', marker: 'puces',items: ['{tab:1>}Mes soeurs et mon frère | {c}Ils{/c} étudient à la bibliothèque.' ] },
+          { kind: 'paragraph', text: '{ligne/2}' },
+
+          { kind: 'attention', text: 'Ne confonds pas tu et vous.' },
+          { kind: 'astuce', text: 'Pour trouver le sujet de la phrase, je regarde le verbe et je pose la question : {c}Qui fait cela ?{c} ou {c}Qui est comme ça ?{c}.' },
+        
+          
         ],
       },
       { kind: 'page' },
@@ -78,22 +92,18 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
         role: 'retenir',
         blocks: [
           { kind: 'paragraph', text: 'Je choisis le pronom selon la personne ou le groupe.' },
-          { kind: 'paragraph', text: 'J’utilise {c}on{/c} pour représenter plusieurs personnes (= {c}nous{c}). Il est très utilisé à l’oral familier. Le verbe est toujours au singulier.' },
-          { kind: 'examples', marker: 'puces',items: ['{tab:1>}Nous | {c}On{/c} va au magasin.', '{tab:1>}Les gens | En Suisse | {c}on{/c} parle français.'] },
           { kind: 'paragraph', text: '{ligne/2}' },
-
-          { kind: 'paragraph', text: 'J’utilise {c}tu{/c} pour parler à une personne qu’on connaît, dans une situation familière.' },
-          { kind: 'examples', marker: 'puces',items: ['{tab:1>}Un ami | {c}Tu{/c} veux venir avec nous?', '{tab:1>}Mon frère | {c}Tu{/c} es là?'] },
+          
+          { kind: 'paragraph', text: 'Il évite de répéter un nom.' },
           { kind: 'paragraph', text: '{ligne/2}' },
-
-          { kind: 'paragraph', text: 'J’utilise {c}vous{/c} quand on ne connaît pas la personne ou que le statut est différent (élève–professeur). On appelle cela la forme de {c}politesse{/c}.' },
-          { kind: 'examples', marker: 'puces',items: ['{tab:1>}La professeure | Madame | {c}vous{/c} allez bien ?'] },
+          { kind: 'table', colHeader: true, rowHeader: true, headers: ['Singulier', 'Pluriel'], rows: [
+            ['{c}je{/c}/n moi', '{c}nous{/c}/n moi et d’autres personnes'],
+            ['{c}tu{/c}/n un ami', '{c}vous{/c}/n des personnes ou politesse'],
+            ['{c}il{/c}/n un homme', '{c}ils{/c}/n des hommes ou un groupe d’hommes et de femmes'],
+            ['{c}elle{/c}/n une femme', '{c}elles{/c}/n des femmes'],
+          ] },
           { kind: 'paragraph', text: '{ligne/2}' },
-
-          { kind: 'paragraph', text: 'J’utilise {c}ils{/c} quand il y a un groupe mixte de femmes et d’hommes. Même s’il y a beaucoup de femmes et un seul homme.' },
-          { kind: 'examples', marker: 'puces',items: ['{tab:1>}Ali ♂ et Alona ♀ | {c}Ils{/c} vont au cinéma.', '{tab:1>}Mes soeurs et mon frère | {c}Ils{/c} étudient à la bibliothèque.' ] },
-          { kind: 'paragraph', text: '{ligne/2}' },
-          ],
+        ],
       },
       
     ],

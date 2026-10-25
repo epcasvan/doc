@@ -540,6 +540,9 @@ html,body,#root{
 .theory-section .theory-mark-under{text-decoration-color:var(--theory-accent)}
 .theory-section .theory-examples-block.is-border .theory-examples{border-left-color:var(--theory-accent)}
 .theory-section .theory-examples-block.is-puces .theory-examples li::before{background:var(--theory-accent)}
+.theory-section .theory-examples-block.is-puces .theory-tabs.is-puces .theory-tab-marker::before{
+  background:var(--theory-accent)
+}
 .theory-section .theory-table.has-col-head thead th{
   background:color-mix(in srgb,var(--theory-accent) 16%,#fff)
 }
