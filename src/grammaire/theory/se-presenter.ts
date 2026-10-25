@@ -15,13 +15,28 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
     { kind: 'heading', text: 'Qui suis-je ?' },
     { kind: 'paragraph', text: 'Pour me présenter, je donne des informations simples. Je dis mon nom, ma nationalité, ma ville et ma langue.' },
 	  { kind: 'paragraph', text: '{ligne/2}' },
-    { kind: 'heading', text: 'Je regarde', sub: true },
-    { kind: 'examples', marker: 'puces', items: ['Je m’appelle Lisa.', 'Je suis suisse.', 'J’habite à Martigny.', 'Je parle français.'] },
-    { kind: 'heading', text: 'J’explique', sub: true },
-    { kind: 'paragraph', text: 'J’utilise les {c}verbes{/c} : être, habiter, parler, s’appeler. Un {c}verbe{/c}, c’est un mot d’{c}action{/c} ou d’{c}état{/c}.' },
-    { kind: 'paragraph', text: '{ligne/2}' },
-    { kind: 'heading', text: 'Je retiens', sub: true },
-    { kind: 'examples', marker: 'puces', items: ['S’appeler + {c}Prénom{/c}', 'Être + {c}nationalité{/c}', 'Habiter à + {c}ville{/c}', 'Parler + {c}Langue{/c}'] },
+    {
+      kind: 'section',
+      role: 'regarder',
+      blocks: [
+        { kind: 'examples', marker: 'puces', items: ['Je m’appelle Lisa.', 'J’ai 17 ans.', 'Je suis belge.', 'Je viens de Belgique.', 'J’habite à Martigny.', 'Je parle français.'] },
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'expliquer',
+      blocks: [
+        { kind: 'paragraph', text: 'J’utilise les {c}verbes{/c} : être, habiter, parler, s’appeler. Un {c}verbe{/c}, c’est un mot d’{c}action{/c} ou d’{c}état{/c}.' },
+        { kind: 'paragraph', text: '{ligne/2}' },
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'retenir',
+      blocks: [
+        { kind: 'examples', marker: 'puces', items: ['S’appeler + {c}Prénom{/c}', 'Avoir + {c}âge{/c}', 'Être + {c}nationalité{/c}', 'Venir de + {c}pays{/c}', 'Habiter à + {c}ville{/c}', 'Parler + {c}Langue{/c}'] },
+      ],
+    },
   ],
   },
   {
