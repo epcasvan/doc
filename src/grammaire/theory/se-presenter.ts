@@ -13,6 +13,7 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
     objectif: 'Me présenter avec être, habiter, parler, s’appeler.',
     blocks: [
     { kind: 'heading', text: 'Qui suis-je ?' },
+    { kind: 'paragraph', text: '{ligne/4}' },
     { kind: 'paragraph', text: 'Pour me présenter, je donne des {g}informations simples{/g}.' },
 	  { kind: 'paragraph', text: '{ligne/2}' },
     {
@@ -49,6 +50,7 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
     objectif: 'Choisir le pronom sujet qui remplace une personne.',
     blocks: [
       { kind: 'heading', text: 'Pronoms sujet' },
+      { kind: 'paragraph', text: '{ligne/4}' },
       { kind: 'paragraph', text: 'Un pronom sujet remplace une personne, un groupe de personnes ou un nom.' },
       { kind: 'paragraph', text: '{ligne/2}' },
       {
@@ -112,12 +114,17 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
     objectif: 'Accorder l’adjectif de nationalité.',
     blocks: [
     { kind: 'heading', text: 'Adjectifs de nationalité' },
+    { kind: 'paragraph', text: '{ligne/4}' },
     { kind: 'paragraph', text: 'Je dis ma nationalité au masculin ou au féminin.' },
     {
       kind: 'section',
       role: 'regarder',
       blocks: [
-        { kind: 'examples', items: ['Paul est allemand.', 'Susanne est allemande.'] }
+        { kind: 'examples', items: [
+          '{tab:1>}Paul est {c}allemand.{/c} | Susanne est {c}allemande.{/c}',
+          '{tab:1>}Il est {c}français.{/c} | Elle est {c}française.{/c}',
+          '{tab:1>}Il est {c}afghan.{/c} | Elle est {c}afghane.{/c}',
+        ] }
       ],
     },
     {
@@ -126,17 +133,34 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
       blocks: [
         { kind: 'paragraph', text: 'Un adjectif de nationalité dit le pays d’une personne.' },
         { kind: 'paragraph', text: 'Souvent, j’ajoute un e au féminin.' },
-        { kind: 'paragraph', text: 'Si le masculin finit déjà par e, le féminin ne change pas.' },
-        { kind: 'paragraph', text: 'Exemple : belge, suisse, russe.' }
+        { kind: 'paragraph', text: 'Si le masculin finit déjà par {c}e{/c}, le féminin ne change pas.' },
+        { kind: 'examples', marker: 'puces', items: [
+          '{tab:1>}Il est {c}belge{/c} | Elle est {c}belge{/c}',
+          '{tab:1>}Il est {c}suisse{/c} | Elle est {c}suisse{/c}',
+          '{tab:1>}Il est {c}russe{/c} | Elle est {c}russe{/c}'
+        ] },
       ],
     },
+    {kind: 'page'},
     {
       kind: 'section',
       role: 'retenir',
       blocks: [
-        { kind: 'paragraph', text: 'féminin souvent + e. Masculin en -e → même forme.' },
-        { kind: 'table', colHeader: true, rowHeader: true, headers: ['Masculin', 'Féminin', 'Exemples'], rows: [['-ais', '-aise', 'français / française'], ['-ois', '-oise', 'chinois / chinoise'], ['-ain', '-aine', 'américain / américaine'], ['-en', '-enne', 'italien / italienne']] },
-        { kind: 'attention', text: 'turc → turque ; grec → grecque. Pays en -e souvent féminins, sauf Mexique, Cambodge, Mozambique, Zimbabwe.' }
+        { kind: 'paragraph', text: 'Pour former le féminin, je rajoute un {c}e{/c}.' },
+        { kind: 'paragraph', text: '{ligne/4}' },
+        { kind: 'paragraph', text: 'Si le masculin finit déjà par {c}e{/c}, le féminin {c}ne change pas{/c}.' },
+        { kind: 'paragraph', text: '{ligne/4}' },
+        { kind: 'paragraph', text: 'Si l\'adjectif finit par {c}en{/c}, je double la consonne et je rajoute un {c}e{/c}.' },
+        { kind: 'paragraph', text: '{ligne/2}' },
+        { kind: 'table', colHeader: true, rowHeader: true, headers: ['Masculin', 'Féminin', 'Exemples'], 
+          rows: [
+            ['-ais', '-aise', '{tab:1>}français | française'], 
+            ['-ois', '-oise', '{tab:1>}chinois | chinoise'], 
+            ['-ain', '-aine', '{tab:1>}américain | américaine'], 
+            ['-en', '-enne', '{tab:1>}italien | italienne']
+          ] },
+        { kind: 'paragraph', text: '{ligne/2}' },
+        { kind: 'attention', text: '{tab:1>}turc | turque\n{tab:1>}grec | grecque' },
       ],
     },
     ],
