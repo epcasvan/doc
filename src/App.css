@@ -621,7 +621,7 @@ html,body,#root{
 .theory-examples-block .theory-examples li.is-ligne::before{content:none;display:none}
 .theory-ex-ok{font-weight:400}
 .theory-ex-bad{color:var(--muted);font-weight:400}
-.theory-ex-bad-icon{color:var(--orange);font-size:.85em;margin-right:.2em}
+.theory-ex-bad-icon{color:var(--red);font-size:.85em;margin-right:.2em}
 .theory-table{
   width:100%;border-collapse:collapse;font-size:var(--theory-size);margin:0;line-height:1.4
 }
