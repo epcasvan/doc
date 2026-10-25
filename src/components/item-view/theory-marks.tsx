@@ -1,12 +1,13 @@
 import type { ReactNode } from 'react'
 import { Fragment } from 'react'
 
-/** `{g}…{/g}` gras · `{c}…{/c}` couleur · `{s}…{/s}` souligné · `/n` retour · `{ligne}` / `{ligne/N}` · `{tab:N>}` flèche · `{tab:N<}` puce · `{tab:N-}` tiret. */
+/** `{g}…{/g}` gras · `{c}…{/c}` couleur · `{s}…{/s}` souligné · `/n` retour · `{ligne}` / `{ligne/N}` · après `{tab:N}`, `+` vide, `>` flèche, `<` puce, `-` tiret, dans l’ordre des colonnes. */
 const MARK = /\{(g|c|s)\}([\s\S]*?)\{\/\1\}|\/n/g
 const LIGNE = /\{ligne(?:\/([234]))?\}/gi
-const TAB = /\{tab:(\d+)(?:\s*(>|fleche|<|-))?(?:\s*(puce))?\}/gi
+const TAB = /\{tab:(\d+)(?:\s*(\+*[><-]+|fleche))?(?:\s*(puce))?\}/gi
 
-export type TheoryTabRow = { n: number; marker: 'arrow' | 'bullet' | 'trait' | null; cells: string[] }
+type TheoryTabMarker = 'arrow' | 'bullet' | 'trait' | null
+export type TheoryTabRow = { n: number; markers: TheoryTabMarker[]; cells: string[] }
 type TheoryPiece = { kind: 'text'; text: string } | { kind: 'tabs'; rows: TheoryTabRow[] }
 type TheorySegment = { gap: true; divisor: 1 | 2 | 3 | 4 } | { gap: false; text: string }
 
@@ -61,18 +62,11 @@ function theoryPieces(text: string): TheoryPiece[] {
     const cells = rowText
       .split(rowText.includes('|') ? '|' : ',')
       .map((cell) => cell.trim())
-    rows.push({
-      n: Math.max(1, Number(match[1]) || 1),
-      marker:
-        match[2] === '>' || match[2]?.toLowerCase() === 'fleche'
-          ? 'arrow'
-          : match[2] === '<' || Boolean(match[3])
-            ? 'bullet'
-            : match[2] === '-'
-              ? 'trait'
-              : null,
-      cells,
-    })
+    const markerSequence = match[2]?.toLowerCase() === 'fleche' ? '>' : match[2] ?? (match[3] ? '<' : '')
+    const markers = [...markerSequence].map((symbol): TheoryTabMarker =>
+      symbol === '>' ? 'arrow' : symbol === '<' ? 'bullet' : symbol === '-' ? 'trait' : null,
+    )
+    rows.push({ n: Math.max(1, Number(match[1]) || 1), markers, cells })
     cursor = end
   })
   flushRows()
@@ -95,7 +89,7 @@ export function TheoryTabs({
   marker?: 'puces' | 'numeros' | 'trait'
 }) {
   const cols = Math.max(...rows.map((row) => row.cells.length), 1)
-  const hasMarkers = rows.some((row) => row.marker !== null)
+  const hasMarkers = rows.some((row) => row.markers.some((tabMarker) => tabMarker !== null))
   return (
     <table className={`theory-tabs${marker ? ` is-${marker}` : ''}${hasMarkers ? ' is-marked' : ''}`}>
       <tbody>
@@ -106,7 +100,7 @@ export function TheoryTabs({
               <Fragment key={cellIndex}>
                 {cellIndex > 0 ? (
                   <td
-                    className={`theory-tab${row.marker ? ` is-${row.marker}` : ''}`}
+                    className={`theory-tab${row.markers[cellIndex - 1] ? ` is-${row.markers[cellIndex - 1]}` : ''}`}
                     style={{ width: `${row.n * 2}em`, minWidth: `${row.n * 2}em` }}
                     aria-hidden="true"
                   />
