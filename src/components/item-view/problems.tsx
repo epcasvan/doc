@@ -158,18 +158,21 @@ function theoryExampleEntries(
 function TheoryExamplesView({
   label,
   marker,
+  border,
   entries,
 }: {
   label: string
   marker: 'border' | 'puces' | 'numeros'
+  border?: boolean
   entries: Array<{ text: string; wrong?: string }>
 }) {
   if (entries.length === 0) return null
   const ListTag = marker === 'numeros' ? 'ol' : 'ul'
+  const className = `theory-examples-block is-${marker}${border ? ' has-border' : ''}`
   const tabularRows = entries.map((entry) => theoryTabRows(entry.text))
   if (entries.every((entry) => !entry.wrong) && tabularRows.every((rows) => rows !== null)) {
     return (
-      <div className={`theory-examples-block is-${marker}`}>
+      <div className={className}>
         {label === 'Exemples' ? null : <p className="theory-examples-label">{label}</p>}
         <div className="theory-examples">
           <TheoryTabs
@@ -181,7 +184,7 @@ function TheoryExamplesView({
     )
   }
   return (
-    <div className={`theory-examples-block is-${marker}`}>
+    <div className={className}>
       {label === 'Exemples' ? null : <p className="theory-examples-label">{label}</p>}
       <ListTag className="theory-examples">
         {entries.map((ex, index) => {
@@ -328,7 +331,8 @@ function TheoryBlockContent({ block }: { block: GrammarTheoryBlock }) {
     return (
       <TheoryExamplesView
         label={block.label?.trim() || 'Exemples'}
-        marker={block.marker ?? 'border'}
+        marker={block.marker ?? 'puces'}
+        border={block.border}
         entries={theoryExampleEntries(block.items)}
       />
     )
@@ -337,7 +341,7 @@ function TheoryBlockContent({ block }: { block: GrammarTheoryBlock }) {
     return (
       <TheoryExamplesView
         label="Exemples"
-        marker="border"
+        marker="puces"
         entries={theoryExampleEntries(
           undefined,
           block.examples?.length

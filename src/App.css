@@ -538,7 +538,8 @@ html,body,#root{
   color:var(--theory-accent)
 }
 .theory-section .theory-mark-under{text-decoration-color:var(--theory-accent)}
-.theory-section .theory-examples-block.is-border .theory-examples{border-left-color:var(--theory-accent)}
+.theory-section .theory-examples-block.is-border .theory-examples,
+.theory-section .theory-examples-block.has-border .theory-examples{border-left-color:var(--theory-accent)}
 .theory-section .theory-examples-block.is-puces .theory-examples li::before{background:var(--theory-accent)}
 .theory-section .theory-examples-block.is-puces .theory-tabs.is-puces .theory-tab-marker::before{
   background:var(--theory-accent)
@@ -598,7 +599,8 @@ html,body,#root{
 .theory-examples{
   margin:0;padding:0;list-style:none;font-size:var(--theory-size);line-height:1.5
 }
-.theory-examples-block.is-border .theory-examples{
+.theory-examples-block.is-border .theory-examples,
+.theory-examples-block.has-border .theory-examples{
   border-left:2pt solid var(--purple);padding-left:.7em
 }
 .theory-examples-block.is-puces .theory-examples li,

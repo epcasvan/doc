@@ -1,6 +1,6 @@
 /** Types et helpers pour les fiches de théorie grammaticale. */
 
-/** Marqueur des exemples : bordure gauche, puces rondes, ou numéros. */
+/** Marqueur des exemples : puces rondes, numéros, ou bordure seule. */
 export type TheoryExamplesMarker = 'border' | 'puces' | 'numeros'
 
 export type TheoryExampleItem = string | { text: string; wrong?: string }
@@ -11,7 +11,13 @@ export type GrammarTheoryBlock =
   | { kind: 'paragraph'; text: string }
   | { kind: 'note'; text: string }
   | { kind: 'rule'; text: string; examples?: Array<{ correct: string; wrong?: string }> }
-  | { kind: 'examples'; items: TheoryExampleItem[]; marker?: TheoryExamplesMarker; label?: string }
+  | {
+      kind: 'examples'
+      items: TheoryExampleItem[]
+      marker?: TheoryExamplesMarker
+      border?: boolean
+      label?: string
+    }
   /** Colonnes alignées. `tab` vaut 1 et `fleche` est absente tant qu’on n’en a pas besoin. */
   | { kind: 'tab'; rows: string[][]; tab?: number; fleche?: boolean }
   | { kind: 'list'; title?: string; items: string[] }
@@ -87,7 +93,7 @@ export function normalizeTheoryBlocks(blocks: GrammarTheoryBlock[]): GrammarTheo
       if (items.length === 0 && block.text.trim() && !/^exemples?$/i.test(block.text.trim())) {
         items.push(block.text.trim())
       }
-      out.push({ kind: 'examples', items, marker: 'border' })
+      out.push({ kind: 'examples', items, marker: 'puces' })
       continue
     }
     if (block.kind === 'list') {
@@ -135,7 +141,7 @@ export function normalizeTheoryBlocks(blocks: GrammarTheoryBlock[]): GrammarTheo
     if (block.kind === 'examples') {
       out.push({
         ...block,
-        marker: block.marker ?? 'border',
+        marker: block.marker ?? 'puces',
         label: block.label?.trim() || 'Exemples',
       })
       continue
