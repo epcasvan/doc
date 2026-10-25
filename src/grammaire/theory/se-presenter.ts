@@ -71,7 +71,7 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
           { kind: 'paragraph', text: '{ligne/2}' },
 
           { kind: 'paragraph', text: 'J’utilise {c}vous{/c} quand on ne connaît pas la personne ou que le statut est différent (élève–professeur). On appelle cela la forme de {c}politesse{/c}.' },
-          { kind: 'examples', marker: 'puces',items: ['{tab:1>}La professeure | Madame | {c}vous{/c} allez bien ?'] },
+          { kind: 'examples', marker: 'puces',items: ['{tab:1>}La professeure | Madame, {c}vous{/c} allez bien ?'] },
           { kind: 'paragraph', text: '{ligne/2}' },
 
           { kind: 'paragraph', text: 'J’utilise {c}ils{/c} quand il y a un groupe mixte de femmes et d’hommes. Même s’il y a beaucoup de femmes et un seul homme.' },
@@ -85,7 +85,7 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
         blocks: [
           { kind: 'paragraph', text: 'Je choisis le pronom selon la personne ou le groupe.' },
           { kind: 'paragraph', text: '{ligne/2}' },
-          { kind: 'table', colHeader: false, rowHeader: true, headers: ['Singulier', 'Pluriel'], rows: [
+          { kind: 'table', colHeader: true, rowHeader: false, headers: ['Singulier', 'Pluriel'], rows: [
             ['{c}je{/c}/n moi', '{c}nous{/c}/n moi et d’autres personnes'],
             ['{c}tu{/c}/n un ami', '{c}vous{/c}/n des personnes ou politesse'],
             ['{c}il{/c}/n un homme', '{c}ils{/c}/n des hommes ou un groupe d’hommes et de femmes'],
@@ -95,8 +95,8 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
 
           { kind: 'paragraph', text: 'Le pronom sujet se place {c}devant le verbe{/c}.' },
           { kind: 'paragraph', text: '{ligne/4}' },
-          { kind: 'paragraph', text: 'Pour trouver le sujet de la phrase :'},
-          { kind: 'examples', marker: 'numeros', items: ['Je regarde le {c}verbe{/c}', 'Je pose la question : {c}Qui fait cela ?{c} ou {c}Qui est comme ça ?{c}.' ] },
+          { kind: 'paragraph', text: 'Pour {c}trouver le sujet{/c} de la phrase :'},
+          { kind: 'examples', marker: 'numeros', items: ['Je regarde le {c}verbe{/c}', 'Je pose la question : {c}Qui fait cela ?{/c} ou {c}Qui est comme ça ?{/c}.' ] },
         ],
       },
       
