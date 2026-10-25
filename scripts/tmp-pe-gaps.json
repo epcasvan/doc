@@ -1,0 +1,432 @@
+[
+  {
+    "file": "src/tcf/content/a0-a1/pe.json",
+    "id": "tcf-a1j-s1-pe-2",
+    "type": "question_texte",
+    "missing": [
+      "expliquer"
+    ],
+    "scene": "Le repas entre amis",
+    "consigne": "Vous invitez un ami à venir dîner chez vous. Écrivez un message de 40 mots.",
+    "extra": "Vous lui donnez le jour et l’heure.\nVous lui expliquez comment trouver votre maison.\nVous lui demandez ce qu’il aime manger.",
+    "model": "Salut Karim,\nJe t’invite à dîner chez moi samedi à 19 heures. J’habite au 5 rue du Lac. Tu prends le bus 2 et tu descends à l’arrêt « Gare ». Ma maison est blanche, à côté de la boulangerie. Qu’est-ce que tu aimes manger ? Tu aimes le poulet ?\nÀ samedi !\nAmina",
+    "nb": {
+      "min": 40
+    }
+  },
+  {
+    "file": "src/tcf/content/a0-a1/pe.json",
+    "id": "delf-a1v-pe-027",
+    "type": "question_texte",
+    "missing": [
+      "inviter"
+    ],
+    "scene": "Au bureau",
+    "consigne": "Vous travaillez à Genève. Vous laissez un mot sur le bureau d’un collègue pour l’inviter à manger. Vous dites où, à quelle heure et quel plat vous voulez prendre. Vous lui demandez de vous téléphoner pour confirmer. (40 mots minimum)",
+    "extra": null,
+    "model": "Salut Marc,\nTu veux manger avec moi demain midi ? Je te propose le restaurant La Terrasse, à côté du bureau. Rendez-vous à 12 h 15 devant l’entrée. Moi, je veux prendre le plat du jour : des filets de perche avec des frites. Ils sont délicieux ! Téléphone-moi pour confirmer, s’il te plaît.\nAlex",
+    "nb": {
+      "min": 40
+    }
+  },
+  {
+    "file": "src/tcf/content/a0-a1/pe.json",
+    "id": "delf-a1v-pe-028",
+    "type": "question_texte",
+    "missing": [
+      "inviter"
+    ],
+    "scene": "Au musée",
+    "consigne": "Un nouveau musée vient d’ouvrir dans votre ville. Vous écrivez à une amie pour l’inviter à la visite de ce dimanche. Vous donnez l’heure du rendez-vous et le prix du billet. Vous lui demandez ce qu’elle veut faire après. (40 mots minimum)",
+    "extra": null,
+    "model": "Salut Clara,\nUn nouveau musée vient d’ouvrir dans notre ville : le musée de la photo ! Tu veux le visiter avec moi ce dimanche ? Rendez-vous à 14 h devant l’entrée. Le billet coûte 12 francs. Après la visite, qu’est-ce que tu veux faire ? Boire un café ou faire une promenade ?\nBises,\nSam",
+    "nb": {
+      "min": 40
+    }
+  },
+  {
+    "file": "src/tcf/content/a0-a1/pe.json",
+    "id": "delf-a1v-pe-032",
+    "type": "question_texte",
+    "missing": [
+      "inviter"
+    ],
+    "scene": "Le week-end",
+    "consigne": "Vous invitez votre correspondant à passer un week-end chez vous. Vous lui proposez plusieurs activités. (40 mots minimum)",
+    "extra": null,
+    "model": "Salut Paolo,\nTu veux passer un week-end chez moi, à Lausanne ? Le samedi, nous pouvons visiter la cathédrale et faire du vélo au bord du lac. Le soir, je te propose de manger une fondue au restaurant. Le dimanche, nous pouvons prendre le bateau pour Montreux ou aller au Musée olympique.\nÀ bientôt,\nSam",
+    "nb": {
+      "min": 40
+    }
+  },
+  {
+    "file": "src/tcf/content/a0-a1/pe.json",
+    "id": "delf-a1s-pe-008",
+    "type": "question_texte",
+    "missing": [
+      "expliquer"
+    ],
+    "scene": "Le correspondant",
+    "consigne": "Vous écrivez à votre correspondant suisse pour lui présenter la ville où vous habitez et lui expliquer ce qu’on peut y faire. (40 mots minimum)",
+    "extra": null,
+    "model": "Bonjour Lucas,\nJ’habite à Nantes, une grande ville de l’ouest de la France. Il y a un beau château, une rivière et beaucoup de parcs. On peut faire du vélo, aller au cinéma ou visiter le musée. Le samedi, je vais souvent au marché avec mes parents. Et ta ville, comment est-elle ?\nÀ bientôt,\nNoa",
+    "nb": {
+      "min": 40
+    }
+  },
+  {
+    "file": "src/tcf/content/a0-a1/pe.json",
+    "id": "delf-a1s-pe-015",
+    "type": "question_texte",
+    "missing": [
+      "inviter"
+    ],
+    "scene": "L’invitation",
+    "consigne": "Vous invitez un ami suisse à passer le week-end chez vous. Vous lui écrivez pour lui dire quand vous vous retrouvez et pour lui proposer des activités. (40 mots minimum)",
+    "extra": "Conseil : Pour parler de vos projets, vous pouvez utiliser le futur proche.",
+    "model": "Salut Max,\nTu veux passer le week-end chez moi ? On se retrouve vendredi à 18 h à la gare. Samedi, on va faire du vélo au bord du lac et le soir, on va regarder un film. Dimanche, on va aller à la piscine avec mon frère. Ça va être super !\nÀ bientôt,\nSam",
+    "nb": {
+      "min": 40
+    }
+  },
+  {
+    "file": "src/tcf/content/a0-a1/pe.json",
+    "id": "delf-a1s-pe-021",
+    "type": "question_texte",
+    "missing": [
+      "expliquer"
+    ],
+    "scene": "En classe",
+    "consigne": "Votre professeur de français vous demande de présenter votre enseignant préféré. (40 mots minimum)",
+    "extra": "Conseil : Décrivez-le, dites quelle matière il enseigne et expliquez pourquoi vous l’appréciez.",
+    "model": "Mon enseignant préféré s’appelle M. Favre. Il est grand, il a les cheveux gris et il porte des lunettes. Il enseigne l’histoire. J’aime ses cours parce qu’il raconte des histoires passionnantes. Il est patient et très drôle. Il nous aide quand nous ne comprenons pas. Avec lui, l’histoire est facile !",
+    "nb": {
+      "min": 40
+    }
+  },
+  {
+    "file": "src/tcf/content/a1-a2/pe.json",
+    "id": "tcf-a2j-s2-pe-2",
+    "type": "email_reponse",
+    "missing": [
+      "expliquer"
+    ],
+    "scene": "L’invitation",
+    "email": {
+      "de": "remilain@gmel.fr",
+      "objet": "Cet été",
+      "texte": "Salut !\nJe t’invite à venir passer une semaine chez moi à Montréal, au Canada, cet été. On pourrait faire plein d’activités ! Qu’est-ce que tu en penses ?\nÀ bientôt !\nRémi"
+    },
+    "consigne": "Vous répondez à Rémi. Vous refusez sa proposition et vous vous excusez. Vous lui expliquez pourquoi vous ne pouvez pas venir. Vous lui proposez de vous voir à un autre moment. (60 mots minimum)",
+    "extra": null,
+    "model": "Salut Rémi,\nMerci beaucoup pour ton invitation, c’est très gentil ! Malheureusement, je ne peux pas venir à Montréal cet été. Je suis vraiment désolée. Je dois suivre un cours de français intensif en juillet et, en août, je pars en vacances avec ma famille. En plus, le billet d’avion est très cher. Tu peux venir chez moi en Suisse pendant les vacances d’automne ? On pourrait aller à la montagne !\nGrosses bises,\nLina",
+    "nb": {
+      "min": 60
+    }
+  },
+  {
+    "file": "src/tcf/content/a1-a2/pe.json",
+    "id": "tcf-a2-s1-pe-3",
+    "type": "email_reponse",
+    "missing": [
+      "expliquer"
+    ],
+    "scene": "L’invitation",
+    "email": {
+      "de": "JB@gmail.com",
+      "objet": "Invitation",
+      "texte": "Cher Gabriel,\nJe vais bientôt me marier et je voudrais te présenter ma future femme. Je t’invite avec ta femme samedi prochain pour dîner à 20 h.\nEst-ce que vous êtes disponibles ?\nRéponds-moi vite.\nÀ bientôt\nJean-Baptiste"
+    },
+    "consigne": "Vous répondez à Jean-Baptiste et vous refusez son invitation. Vous lui expliquez les raisons et vous lui proposez une autre sortie. (60 à 80 mots)",
+    "extra": "Grille (10 points) : consigne – texte compréhensible et qui répond à la tâche (2) ; structure – salutation et longueur (2) ; langue – grammaire, conjugaison, syntaxe (3) ; lexique – vocabulaire (1) ; orthographe – mots corrects, ponctuation (2).",
+    "model": "Cher Jean-Baptiste,\nFélicitations pour ton mariage, c’est une très belle nouvelle ! Merci beaucoup pour ton invitation. Malheureusement, samedi prochain, nous ne pouvons pas venir : nous partons chez les parents de ma femme à Genève pour le week-end. Nous sommes vraiment désolés. Est-ce que vous êtes libres le samedi suivant ? Nous pourrions aller au restaurant tous les quatre ou faire une promenade au bord du lac.\nÀ très bientôt,\nGabriel",
+    "nb": {
+      "min": 60,
+      "max": 80
+    }
+  },
+  {
+    "file": "src/tcf/content/a1-a2/pe.json",
+    "id": "tcf-a2p-s1-pe-1",
+    "type": "question_texte",
+    "missing": [
+      "expliquer"
+    ],
+    "scene": "Le voyage",
+    "consigne": "Vous êtes parti(e) en vacances pendant une semaine. Vous écrivez à un ami pour lui raconter vos vacances. Vous lui expliquez où vous êtes allé(e), avec qui et ce que vous avez fait. (60 mots minimum)",
+    "extra": null,
+    "model": "Salut Lucas,\nJe suis rentrée hier de vacances ! Je suis partie une semaine à Zermatt avec ma sœur et mes cousins. Nous avons fait de belles promenades à la montagne et nous avons vu le Cervin. Un jour, nous avons pris le train pour aller au glacier. Le soir, nous avons mangé une fondue au restaurant. C’était super, mais un peu cher !\nÀ bientôt,\nAmina",
+    "nb": {
+      "min": 60
+    }
+  },
+  {
+    "file": "src/tcf/content/a1-a2/pe.json",
+    "id": "tcf-a2p-s1-pe-2",
+    "type": "email_reponse",
+    "missing": [
+      "expliquer"
+    ],
+    "scene": "L’invitation",
+    "email": {
+      "de": "sarah2587@mel.fr",
+      "objet": "Invitation",
+      "texte": "Salut !\nComment ça va ?\nTu veux venir avec moi demain soir au concert du chanteur M ? Il me reste une place.\nRéponds-moi vite !\nSarah"
+    },
+    "consigne": "Vous répondez à Sarah. Vous ne pouvez pas accepter son invitation. Vous vous excusez et vous lui expliquez pourquoi vous ne pouvez pas venir. Vous lui proposez une autre sortie. (60 mots minimum)",
+    "extra": null,
+    "model": "Salut Sarah,\nMerci beaucoup pour ton invitation ! Je suis vraiment désolé, mais je ne peux pas venir au concert demain soir. Mon frère arrive de Genève et je dois aller le chercher à la gare à 20 h. Mais j’ai une idée : tu veux aller au cinéma avec moi samedi après-midi ? Il y a un nouveau film français. Réponds-moi !\nBises,\nYonas",
+    "nb": {
+      "min": 60
+    }
+  },
+  {
+    "file": "src/tcf/content/a1-a2/pe.json",
+    "id": "tcf-a2p-s2-pe-1",
+    "type": "question_texte",
+    "missing": [
+      "expliquer"
+    ],
+    "scene": "L’anniversaire",
+    "consigne": "Le week-end dernier, vous avez fêté votre anniversaire. Vous écrivez à un ami qui n’était pas là pour lui raconter la fête. Vous lui expliquez où vous avez fait la fête, avec qui, ce que vous avez fait et ce que vous avez reçu comme cadeaux. (60 mots minimum)",
+    "extra": null,
+    "model": "Salut Dawit,\nSamedi, j’ai fêté mes 25 ans ! J’ai invité ma famille et mes amis du cours de français dans la salle du foyer. Ma sœur a préparé un grand gâteau au chocolat et nous avons mangé des plats de mon pays. Après, nous avons dansé et chanté jusqu’à minuit. J’ai reçu un livre, une écharpe et un ballon de football. Dommage que tu n’étais pas là !\nÀ bientôt,\nSamira",
+    "nb": {
+      "min": 60
+    }
+  },
+  {
+    "file": "src/tcf/content/a1-a2/pe.json",
+    "id": "tcf-a2p-s4-pe-1",
+    "type": "question_texte",
+    "missing": [
+      "expliquer"
+    ],
+    "scene": "Le nouveau travail",
+    "consigne": "Vous avez commencé un stage dans une entreprise (un magasin, un restaurant, un garage…). Vous écrivez à un ami pour lui raconter votre première journée. Vous lui expliquez où vous travaillez, ce que vous avez fait et vous lui donnez vos impressions. (60 mots minimum)",
+    "extra": null,
+    "model": "Salut Yonas,\nLundi, j’ai commencé mon stage dans une boulangerie à Martigny ! Je suis arrivé à 6 heures du matin. Le patron m’a montré le magasin et le four. Le matin, j’ai aidé à préparer les croissants et le pain. L’après-midi, j’ai servi les clients et j’ai rangé la cuisine. C’était fatigant, mais très intéressant. Mes collègues sont sympas et j’apprends beaucoup de mots en français !\nÀ bientôt,\nAmir",
+    "nb": {
+      "min": 60
+    }
+  },
+  {
+    "file": "src/tcf/content/a1-a2/pe.json",
+    "id": "tcf-a2p-s4-pe-2",
+    "type": "email_reponse",
+    "missing": [
+      "expliquer"
+    ],
+    "scene": "Le logement",
+    "email": {
+      "de": "karim.benali@mel.ch",
+      "objet": "Je viens habiter dans ta ville !",
+      "texte": "Salut !\nBonne nouvelle : j’ai trouvé un travail dans ta ville et je commence le 1er septembre. Je cherche un petit appartement, pas trop cher. Tu connais un quartier sympa ? Tu peux m’aider ?\nÀ bientôt,\nKarim"
+    },
+    "consigne": "Vous répondez à Karim. Vous le félicitez pour son travail. Vous lui conseillez un quartier et vous expliquez pourquoi. Vous lui proposez de l’aider à chercher un appartement. (60 mots minimum)",
+    "extra": null,
+    "model": "Salut Karim,\nBravo pour ton nouveau travail, c’est une super nouvelle ! Je te conseille le quartier près de la gare. Les appartements ne sont pas trop chers et il y a des magasins, une piscine et un grand parc. En plus, c’est pratique pour prendre le bus. Si tu veux, je peux regarder les annonces sur internet avec toi et visiter les appartements le samedi.\nÀ bientôt,\nLina",
+    "nb": {
+      "min": 60
+    }
+  },
+  {
+    "file": "src/tcf/content/a1-a2/pe.json",
+    "id": "delf-a2j-pe-012",
+    "type": "question_texte",
+    "missing": [
+      "inviter"
+    ],
+    "scene": "Au cinéma",
+    "consigne": "Vous avez été invité(e) à une grande soirée pour la sortie du nouveau film de votre acteur ou actrice préféré(e), et vous l’avez rencontré(e). Écrivez une lettre à un ami suisse pour lui raconter et donner vos impressions. (60 mots minimum)",
+    "extra": null,
+    "model": "Cher Hugo,\nTu ne vas pas me croire : samedi, j’ai assisté à la soirée de sortie du nouveau film de mon acteur préféré, Max Durand ! Il y avait des journalistes, des photographes et beaucoup de fans. Le film est une comédie très drôle. Après la projection, l’acteur est venu parler avec le public. J’ai pu lui serrer la main et prendre une photo avec lui ! Il est très simple et sympa. C’était une soirée incroyable, je n’oublierai jamais ce moment.\nAmitiés,\nSam",
+    "nb": {
+      "min": 60
+    }
+  },
+  {
+    "file": "src/tcf/content/a1-a2/pe.json",
+    "id": "delf-a2j-pe-022",
+    "type": "email_reponse",
+    "missing": [
+      "expliquer"
+    ],
+    "scene": "Les devoirs",
+    "email": {
+      "de": "maeva-gaston@mel.ch",
+      "objet": "Devoir de géographie",
+      "texte": "Bonjour,\nTu n’as pas oublié que nous devons préparer le devoir de géographie ensemble ? On peut se retrouver chez moi samedi après-midi. Tu es libre ?\nÀ bientôt !\nMaeva"
+    },
+    "consigne": "Répondez à Maeva : vous refusez, vous vous excusez, vous expliquez pourquoi vous ne pouvez pas venir et vous proposez un autre jour et une autre heure. (60 mots minimum)",
+    "extra": null,
+    "model": "Salut Maeva,\nMerci pour ton message. Excuse-moi, mais je ne peux pas venir samedi après-midi : je dois aller à l’anniversaire de ma grand-mère à Berne avec mes parents. Nous partons le matin et nous rentrons le soir. Est-ce qu’on peut faire le devoir de géographie dimanche à 14 h ? Ou bien lundi après l’école, vers 16 h 30, chez moi ou à la bibliothèque ? Dis-moi ce qui est le mieux pour toi. Encore pardon !\nÀ bientôt,\nAlex",
+    "nb": {
+      "min": 60
+    }
+  },
+  {
+    "file": "src/tcf/content/a1-a2/pe.json",
+    "id": "delf-a2j-pe-024",
+    "type": "email_reponse",
+    "missing": [
+      "inviter"
+    ],
+    "scene": "Le voyage",
+    "email": {
+      "de": "juju99@courriel.ch",
+      "objet": "Vacances…",
+      "texte": "Salut !\nLes vacances arrivent ! Avec mes parents, nous partons visiter les châteaux du Valais et il reste une place dans la voiture… Tu veux venir avec nous ?\nJulie"
+    },
+    "consigne": "Répondez à Julie : acceptez l’invitation, remerciez-la et demandez-lui plus de détails sur le voyage. (60 mots minimum)",
+    "extra": null,
+    "model": "Salut Julie,\nQuelle super idée ! Merci beaucoup à toi et à tes parents, j’accepte avec plaisir. J’aimerais bien avoir quelques détails sur le voyage. Quand partez-vous et combien de jours dure le séjour ? Quels châteaux allez-vous visiter ? Où est-ce qu’on va dormir : à l’hôtel ou au camping ? Qu’est-ce que je dois prendre dans ma valise ? Et combien ça coûte pour moi ? J’ai hâte de partir avec vous !\nBises,\nAlex",
+    "nb": {
+      "min": 60
+    }
+  },
+  {
+    "file": "src/tcf/content/a1-a2/pe.json",
+    "id": "delf-a2j-pe-025",
+    "type": "email_reponse",
+    "missing": [
+      "expliquer"
+    ],
+    "scene": "Au concert",
+    "email": {
+      "de": "liam@messagerie.net",
+      "objet": "Concert",
+      "texte": "Salut !\nMercredi soir, mon cousin joue avec son groupe à la salle des fêtes. J’y vais avec ma sœur. Tu viens avec nous ?\nÀ bientôt !\nLiam"
+    },
+    "consigne": "Répondez à Liam : remerciez-le, refusez, expliquez pourquoi vous ne pouvez pas venir et proposez une autre sortie. (60 mots minimum)",
+    "extra": null,
+    "model": "Salut Liam,\nMerci pour ton invitation, c’est gentil ! Malheureusement, je ne peux pas venir mercredi soir : j’ai un examen de maths jeudi matin et je dois réviser. Mes parents ne veulent pas que je sorte le soir avant un examen. Mais on peut faire autre chose ensemble : samedi après-midi, il y a un match de basket au gymnase de la ville. Tu veux venir avec moi ? Ta sœur peut venir aussi !\nÀ bientôt,\nSam",
+    "nb": {
+      "min": 60
+    }
+  },
+  {
+    "file": "src/tcf/content/a1-a2/pe.json",
+    "id": "delf-a2j-pe-030",
+    "type": "email_reponse",
+    "missing": [
+      "expliquer"
+    ],
+    "scene": "Les soldes",
+    "email": {
+      "de": "manon2001@courriel.ch",
+      "objet": "Shopping",
+      "texte": "Salut !\nTu veux venir avec moi samedi après-midi acheter des vêtements en centre-ville ? C’est les soldes et il y a de super prix.\nRéponds-moi vite !\nManon"
+    },
+    "consigne": "Répondez à Manon : vous refusez, vous vous excusez, vous expliquez pourquoi vous ne pouvez pas l’accompagner et vous proposez un autre rendez-vous. (60 mots minimum)",
+    "extra": null,
+    "model": "Salut Manon,\nMerci pour ta proposition, j’adore les soldes ! Mais malheureusement, je ne peux pas venir samedi après-midi : j’ai un match de football avec mon club et ensuite je dois garder mon petit frère. Excuse-moi ! Est-ce que tu es libre mercredi après l’école, vers 14 h ? Les soldes durent encore deux semaines, on trouvera sûrement de belles choses. On pourrait aussi boire un thé glacé après les magasins !\nÀ bientôt,\nAlex",
+    "nb": {
+      "min": 60
+    }
+  },
+  {
+    "file": "src/tcf/content/a1-a2/pe.json",
+    "id": "delf-a2j-pe-032",
+    "type": "email_reponse",
+    "missing": [
+      "expliquer"
+    ],
+    "scene": "Le cours de musique",
+    "email": {
+      "de": "vinztop@youpla.ch",
+      "objet": "Cours de guitare",
+      "texte": "Bonjour,\nVeux-tu venir à mon prochain cours de guitare, mardi, pour m’écouter et essayer de jouer avec moi ? J’attends ta réponse.\nÀ bientôt,\nVincent"
+    },
+    "consigne": "Répondez à Vincent : remerciez-le, refusez et expliquez-lui pourquoi vous ne pouvez pas venir. (60 mots minimum)",
+    "extra": null,
+    "model": "Salut Vincent,\nMerci beaucoup pour ton invitation, c’est très gentil ! J’aimerais beaucoup t’écouter jouer de la guitare. Malheureusement, je ne peux pas venir mardi : je suis chez mon correspondant et nous partons trois jours à Zurich avec sa famille. Nous rentrons seulement jeudi soir. C’est vraiment dommage ! Est-ce que tu peux m’envoyer une petite vidéo de ton cours ? Et on peut jouer ensemble la semaine prochaine, si tu veux.\nÀ bientôt,\nAlex",
+    "nb": {
+      "min": 60
+    }
+  },
+  {
+    "file": "src/tcf/content/a1-a2/pe.json",
+    "id": "delf-a2r-pe-032",
+    "type": "sms_reponse",
+    "missing": [
+      "inviter"
+    ],
+    "scene": "La fête de départ",
+    "sms": "Bonjour,\nJ’aimerais organiser une petite fête au travail pour le départ à la retraite de Gérard. Est-ce que tu veux participer ? J’ai pensé à préparer des petits plats chauds à manger. Dis-moi ce que tu en penses.\nDorothée",
+    "consigne": "Vous répondez à Dorothée. Vous la félicitez pour son idée et vous acceptez l’invitation. Vous lui posez des questions et vous proposez des idées pour l’organisation de la fête. (60 mots minimum)",
+    "extra": null,
+    "model": "Bonjour Dorothée,\nBravo pour ton idée, Gérard va être très content ! Je participe avec plaisir. Quel jour veux-tu organiser la fête ? Après le travail, vers 17 heures ? Les petits plats chauds, c’est parfait : je peux préparer des mini-quiches. On peut aussi acheter un cadeau ensemble. Chaque collègue donne dix francs et on lui offre un beau livre sur la montagne, parce qu’il adore la randonnée. Qu’en penses-tu ?\nÀ bientôt,\nSam",
+    "nb": {
+      "min": 60
+    }
+  },
+  {
+    "file": "src/tcf/content/a1-a2/pe.json",
+    "id": "delf-a2r-pe-035",
+    "type": "sms_reponse",
+    "missing": [
+      "expliquer"
+    ],
+    "scene": "Au magasin de vêtements",
+    "sms": "Coucou, ça va ?\nTu veux venir avec moi faire les magasins ce week-end ? J’ai besoin de nouvelles affaires. Réponds-moi vite !\nBises,\nKarina",
+    "consigne": "Vous répondez à Karina. Vous refusez sa proposition. Vous vous excusez et vous lui expliquez pourquoi vous ne pouvez pas venir. Vous lui proposez un autre rendez-vous. (60 mots minimum)",
+    "extra": null,
+    "model": "Coucou Karina,\nMerci pour ta proposition ! Malheureusement, je ne peux pas venir ce week-end. Je dois travailler samedi et dimanche, parce qu’une collègue est malade. Je suis vraiment triste, j’aime beaucoup faire les magasins avec toi ! On peut y aller le week-end prochain ? Les soldes commencent samedi, ce sera parfait pour trouver des affaires pas chères. Ensuite, on pourra boire un chocolat chaud. Dis-moi si ça te va.\nBises,\nSam",
+    "nb": {
+      "min": 60
+    }
+  },
+  {
+    "file": "src/tcf/content/a1-a2/pe.json",
+    "id": "delf-a2r-pe-036",
+    "type": "email_reponse",
+    "missing": [
+      "expliquer"
+    ],
+    "scene": "Le mariage",
+    "email": {
+      "de": "Amina",
+      "objet": "Mariage",
+      "texte": "Coucou !\nTu viens avec moi au mariage de ma sœur, le 10 mai ? C’est à Lausanne. Nous irons à la mairie, puis au Pavillon des fêtes. Il y aura de la musique. On va bien s’amuser !\nRéponds-moi vite.\nAmina"
+    },
+    "consigne": "Vous répondez à Amina. Vous la remerciez. Vous refusez son invitation. Vous vous excusez et vous lui expliquez pourquoi vous ne pouvez pas aller avec elle au mariage. (60 mots minimum)",
+    "extra": null,
+    "model": "Coucou Amina,\nMerci beaucoup pour ton invitation, c’est très gentil de penser à moi. Malheureusement, je ne peux pas venir au mariage de ta sœur le 10 mai. Ce jour-là, je passe mon examen de français à Genève et je ne peux pas changer la date. Je suis vraiment triste de ne pas être avec vous. Félicite ta sœur pour moi et envoie-moi des photos de la fête !\nGros bisous,\nCharlie",
+    "nb": {
+      "min": 60
+    }
+  },
+  {
+    "file": "src/tcf/content/a1-a2/pe.json",
+    "id": "delf-a2r-pe-038",
+    "type": "sms_reponse",
+    "missing": [
+      "expliquer"
+    ],
+    "scene": "Le vélo",
+    "sms": "Coucou !\nJ’ai envie de faire une promenade à vélo ce week-end, le long du lac. Tu viens avec moi ? Nous irons après au cinéma.\nRéponds-moi vite !\nMarie",
+    "consigne": "Vous répondez à Marie. Vous la remerciez, mais vous ne pouvez pas sortir avec elle. Vous vous excusez et vous lui expliquez pourquoi vous refusez. Vous lui proposez une autre activité. (60 mots minimum)",
+    "extra": null,
+    "model": "Coucou Marie,\nMerci pour ta proposition, une promenade à vélo au bord du lac, c’est une super idée ! Malheureusement, je ne peux pas venir ce week-end : je me suis fait mal au genou en jouant au foot et le médecin m’a dit de me reposer. C’est dommage ! Est-ce que tu veux venir chez moi dimanche après-midi ? On peut regarder un film et manger une pizza ensemble.\nBises,\nAlex",
+    "nb": {
+      "min": 60
+    }
+  },
+  {
+    "file": "src/tcf/content/a1-a2/pe.json",
+    "id": "delf-a2r-pe-039",
+    "type": "sms_reponse",
+    "missing": [
+      "expliquer"
+    ],
+    "scene": "La fête de la ville",
+    "sms": "Salut !\nJe participe à l’organisation d’un spectacle pour la fête de la ville. Nous pouvons chanter, danser ou proposer d’autres activités. Tu veux participer avec moi ?\nÀ bientôt !\nClémence",
+    "consigne": "Vous répondez à Clémence. Vous la remerciez pour sa proposition. Vous ne pouvez pas participer au spectacle. Vous lui expliquez pourquoi et vous lui demandez plus d’informations. (60 mots minimum)",
+    "extra": null,
+    "model": "Salut Clémence,\nMerci pour ta proposition, c’est très gentil ! Malheureusement, je ne peux pas participer au spectacle. Je commence un nouveau travail le mois prochain et je travaille aussi le soir et le week-end. Je n’ai donc pas le temps pour les répétitions. Mais je voudrais bien venir voir le spectacle ! Quand a lieu la fête de la ville ? Le spectacle commence à quelle heure, et où ? C’est gratuit ?\nÀ bientôt,\nSam",
+    "nb": {
+      "min": 60
+    }
+  }
+]
