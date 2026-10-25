@@ -20,24 +20,87 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
       kind: 'section',
       role: 'regarder',
       blocks: [
-        { kind: 'examples', marker: 'puces', items: ['Je m’appelle Nina.', 'J’ai 17 ans.', 'Je suis belge.', 'Je viens de Belgique.', 'J’habite à Martigny.', 'Je parle français.'] },
+        { kind: 'examples', marker: 'puces', items: [
+          '{tab:1<}Je m’appelle {c}Nina{/c}. | J’ai {c}17 ans{/c}.', 
+          '{tab:1<}Je suis {c}belge{/c}. | Je viens de {c}Belgique{/c}.', 
+          '{tab:1<}J’habite à {c}Martigny{/c}. | Je parle {c}français{/c}.',
+        ] },
       ],
     },
     {
       kind: 'section',
       role: 'expliquer',
       blocks: [
-        { kind: 'paragraph', text: 'J’utilise les {c}verbes{/c} : être, habiter, parler, s’appeler. Un {c}verbe{/c}, c’est un mot d’{c}action{/c} ou d’{c}état{/c}.' },
+        { kind: 'paragraph', text: 'J’utilise les différents {c}verbes{/c} pour décrire qui je suis. Un {c}verbe{/c}, c’est un mot d’{c}action{/c} ou d’{c}état{/c}.' },
+        { kind: 'paragraph', text: '{ligne/2}' },
+        { kind: 'examples', marker: 'puces', items: [
+          '{tab:2}Verbe | | Mots', 
+        ] },
+        { kind: 'examples', marker: 'puces', items: [
+          '{tab:2<}S’appeler | + {c}prénom{/c} | Je m’appelle {c}Fatima{/c}.', 
+          '{tab:2<}Avoir | + {c}âge{/c} | J’ai {c}16 ans{/c}.', 
+          '{tab:2<}Être | + {c}nationalité{/c} | Je suis {c}syrienne{/c}.', 
+          '{tab:2<}Venir de | + {c}pays{/c} | Je viens de {c}Syrie{/c}.', 
+          '{tab:2<}Habiter à | + {c}ville{/c} | J’habite à {c}Vouvry{/c}.', 
+          '{tab:2<}Parler | + {c}langue{/c} | Je parle {c}arabe{/c}.'
+        ] },
       ],
     },
+    {kind: 'page'},
     {
       kind: 'section',
       role: 'retenir',
       blocks: [
-        { kind: 'paragraph', text: 'J’utilise différents verbes pour décrire qui je suis.' },
-        { kind: 'examples', marker: 'puces', items: ['S’appeler + {c}prénom{/c}', 'Avoir + {c}âge{/c}', 'Être + {c}nationalité{/c}', 'Venir de + {c}pays{/c}', 'Habiter à + {c}ville{/c}', 'Parler + {c}langue{/c}'] },
-      ],
-    },
+        { kind: 'paragraph', text: 'Pour me présenter, je donne mon prénom, mon âge, ma nationalité, mon pays d’origine, ma ville et la langue que je parle.'},
+        { kind: 'paragraph', text: '{ligne/2}' },
+        {
+          kind: 'table',
+          colHeader: true,
+          rowHeader: false,
+          headers: ['Information', 'Structure', 'Exemple'],
+          rows: [
+            [
+              'Mon prénom',
+              '{c}s’appeler{/c}',
+              'Je m’appelle Nina.',
+            ],
+            [
+              'Mon âge',
+              '{c}avoir{/c} + âge',
+              'J’ai 17 ans.',
+            ],
+            [
+              'Ma nationalité',
+              '{c}être{/c} + nationalité',
+              'Je suis belge.',
+            ],
+            [
+              'Mon pays d’origine',
+              '{c}venir de{/c} + pays',
+              'Je viens de Belgique.',
+            ],
+            [
+              'Ma ville',
+              '{c}habiter à{/c} + ville',
+              'J’habite à Martigny.',
+            ],
+            [
+              'Ma langue',
+              '{c}parler{/c} + langue',
+              'Je parle français.',
+            ],
+          ],
+        },
+
+        { kind: 'paragraph', text: '{ligne/2}' },
+
+        { kind: 'paragraph', text: 'Avec {c}je{/c}, le verbe change de forme. Je retiens les expressions suivantes :' },
+        { kind: 'paragraph', text: '{ligne/2}' },
+        { kind: 'paragraph', text: 'Attention'},
+        { kind: 'examples', items: [
+          { text: 'Je dis : « J’ai 17 ans. »', wrong: 'Je suis 17 ans.' },
+        ]},
+    ]},
   ],
   },
   {
@@ -160,12 +223,18 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
       role: 'retenir',
       blocks: [
         { kind: 'paragraph', text: 'Un adjectif de nationalité dit le pays d’une personne.' },
+        { kind: 'paragraph', text: '{ligne/2}' },
         { kind: 'paragraph', text: 'Souvent, j’ajoute un {c}e{/c} au féminin.' },
-        { kind: 'examples', marker: 'puces', items: [
-          '{tab:2}Masculin | | Féminin',
+        { kind: 'paragraph', text: '{ligne/2}' },
+        { kind: 'examples', items: [
+          '{tab:2}{c}Masculin{/c} | | {c}Féminin{/c}',
+        ] },
+        { kind: 'examples', marker: 'numeros', items: [
           '{tab:2}Il est {c}espognol{/c} | + {c}e{/c} | Elle est {c}belge{/c}',
           '{tab:2}Il est {c}ukrainien{/c} | + {c}ne{/c} | Elle est {c}ukrainienne{/c}',
-          '{tab:2}Il est {c}russe{/c} | | Elle est {c}russe{/c}'
+          '{tab:2}Il est {c}tur{c}c{/c} | + {c}que{/c} | {c}tur{c}que{/c}',
+          '{tab:2}Il est {c}russe{/c} | | Elle est {c}russe{/c}',
+
         ] },
       ],
     },
@@ -175,18 +244,24 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
     id: 'a6',
     typeId: 'gram-a6-theorie',
     index: 6,
-    title: 'Venir de : provenance',
+    title: 'Provenance',
     topic: 'gram-se-presenter',
     public: 'A1',
     objectif: 'Dire d’où je viens.',
     blocks: [
-    { kind: 'heading', text: 'Venir de : provenance' },
-    { kind: 'paragraph', text: 'Je dis ma provenance avec venir de.' },
+    { kind: 'heading', text: 'Provenance' },
+    { kind: 'paragraph', text: '{ligne/4}' },
+    { kind: 'paragraph', text: 'Je dis ma provenance avec le verbe {c}venir{/c} et la préposition {c}de{/c}.' },
+    { kind: 'paragraph', text: '{ligne/2}' },
     {
       kind: 'section',
       role: 'regarder',
       blocks: [
-        { kind: 'examples', items: ['Je viens du Sénégal.', 'On vient de Chine.', 'Je viens de chez Sarah.'] }
+        { kind: 'examples', items: [
+          'Mamadou viens {c}du Sénégal{/c}.', 
+          'Mei vient {c}de la Chine{/c}.', 
+          'Julia viens {c}des Pays-Bas{/c}.' ]
+        }
       ],
     },
     {
