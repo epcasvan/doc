@@ -167,16 +167,15 @@ function TheoryExamplesView({
   if (entries.length === 0) return null
   const ListTag = marker === 'numeros' ? 'ol' : 'ul'
   const tabularRows = entries.map((entry) => theoryTabRows(entry.text))
-  if (
-    marker === 'border' &&
-    entries.every((entry) => !entry.wrong) &&
-    tabularRows.every((rows) => rows !== null)
-  ) {
+  if (entries.every((entry) => !entry.wrong) && tabularRows.every((rows) => rows !== null)) {
     return (
       <div className={`theory-examples-block is-${marker}`}>
         {label === 'Exemples' ? null : <p className="theory-examples-label">{label}</p>}
         <div className="theory-examples">
-          <TheoryTabs rows={tabularRows.flatMap((rows) => rows ?? [])} />
+          <TheoryTabs
+            rows={tabularRows.flatMap((rows) => rows ?? [])}
+            marker={marker === 'border' ? undefined : marker}
+          />
         </div>
       </div>
     )

@@ -562,6 +562,18 @@ html,body,#root{
 .theory-tabs td{border:0;padding:0;vertical-align:baseline;text-align:left}
 .theory-tab-cell{white-space:nowrap}
 .theory-tab{padding:0}
+.theory-tabs.is-puces{counter-reset:theory-tab}
+.theory-tabs.is-puces .theory-tab-marker{width:.55em;min-width:.55em}
+.theory-tabs.is-puces .theory-tab-marker::before{
+  content:"";display:block;width:.55em;height:.55em;margin-top:.45em;
+  border-radius:50%;background:var(--purple)
+}
+.theory-tabs.is-numeros{counter-reset:theory-tab}
+.theory-tabs.is-numeros tr{counter-increment:theory-tab}
+.theory-tabs.is-numeros .theory-tab-marker{
+  width:1.4em;min-width:1.4em;font-weight:700;color:var(--purple)
+}
+.theory-tabs.is-numeros .theory-tab-marker::before{content:counter(theory-tab) "."}
 .theory-tab.is-arrow{
   text-align:right;padding-right:.4em;color:var(--purple);font-weight:700;
   -webkit-print-color-adjust:exact;print-color-adjust:exact

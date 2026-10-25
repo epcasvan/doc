@@ -80,13 +80,20 @@ export function theoryTabRows(text: string): TheoryTabRow[] | null {
   return pieces.length === 1 && pieces[0]?.kind === 'tabs' ? pieces[0].rows : null
 }
 
-export function TheoryTabs({ rows }: { rows: TheoryTabRow[] }) {
+export function TheoryTabs({
+  rows,
+  marker,
+}: {
+  rows: TheoryTabRow[]
+  marker?: 'puces' | 'numeros'
+}) {
   const cols = Math.max(...rows.map((row) => row.cells.length), 1)
   return (
-    <table className="theory-tabs">
+    <table className={`theory-tabs${marker ? ` is-${marker}` : ''}`}>
       <tbody>
         {rows.map((row, rowIndex) => (
           <tr key={rowIndex}>
+            {marker ? <td className="theory-tab-marker" aria-hidden="true" /> : null}
             {Array.from({ length: cols }, (_, cellIndex) => (
               <Fragment key={cellIndex}>
                 {cellIndex > 0 ? (
