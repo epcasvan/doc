@@ -131,13 +131,26 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
       kind: 'section',
       role: 'expliquer',
       blocks: [
-        { kind: 'paragraph', text: 'Un adjectif de nationalité dit le pays d’une personne.' },
-        { kind: 'paragraph', text: 'Souvent, j’ajoute un e au féminin.' },
-        { kind: 'paragraph', text: 'Si le masculin finit déjà par {c}e{/c}, le féminin ne change pas.' },
+        { kind: 'paragraph', text: 'En général, pour former le féminin, je rajoute un {c}e{/c}.' },
+        { kind: 'paragraph', text: '{ligne/4}' },
+        { kind: 'paragraph', text: 'Si l’adjectif finit par {c}en{/c}, je double la consonne et je rajoute un {c}e{/c}.' },
+        { kind: 'paragraph', text: '{ligne/4}' },
+        { kind: 'paragraph', text: 'Si le masculin finit déjà par {c}e{/c}, le féminin {c}ne change pas{/c}.' },
+        { kind: 'paragraph', text: '{ligne/2}' },
+        { kind: 'table', colHeader: true, rowHeader: true, headers: ['Masculin', 'Féminin', 'Exemples'], 
+          rows: [
+            ['-ais', '-aise', '{tab:1>}japon{c}ais{/c} | japon{c}aise{/c}'], 
+            ['-ois', '-oise', '{tab:1>}chin{c}ois{/c} | chin{c}oise{/c}'], 
+            ['-ain', '-aine', '{tab:1>}améric{c}ain{/c} | améric{c}aine{/c}'], 
+            ['-en', '-enne', '{tab:1>}itali{c}en{/c} | itali{c}enne{/c}'],
+            ['-e', '-e', '{tab:1>}suiss{c}e{/c} | suiss{c}e{/c}']
+          ] },
+        { kind: 'paragraph', text: '{ligne/2}' },
+        { kind: 'paragraph', text: '{c}Attention :{/c}' },
+        { kind: 'paragraph', text: 'Les adjectifs terminant par {c}c{/c} change en {c}que{/c} ou {c}cque{/c}.' },
         { kind: 'examples', marker: 'puces', items: [
-          '{tab:1>}Il est {c}belge{/c} | Elle est {c}belge{/c}',
-          '{tab:1>}Il est {c}suisse{/c} | Elle est {c}suisse{/c}',
-          '{tab:1>}Il est {c}russe{/c} | Elle est {c}russe{/c}'
+          '{tab:1>}tur{c}c{/c} | tur{c}que{/c}',
+          '{tab:1>}gre{c}c{/c} | gre{c}cque{/c}',
         ] },
       ],
     },
@@ -146,21 +159,14 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
       kind: 'section',
       role: 'retenir',
       blocks: [
-        { kind: 'paragraph', text: 'Pour former le féminin, je rajoute un {c}e{/c}.' },
-        { kind: 'paragraph', text: '{ligne/4}' },
-        { kind: 'paragraph', text: 'Si le masculin finit déjà par {c}e{/c}, le féminin {c}ne change pas{/c}.' },
-        { kind: 'paragraph', text: '{ligne/4}' },
-        { kind: 'paragraph', text: 'Si l\'adjectif finit par {c}en{/c}, je double la consonne et je rajoute un {c}e{/c}.' },
-        { kind: 'paragraph', text: '{ligne/2}' },
-        { kind: 'table', colHeader: true, rowHeader: true, headers: ['Masculin', 'Féminin', 'Exemples'], 
-          rows: [
-            ['-ais', '-aise', '{tab:1>}français | française'], 
-            ['-ois', '-oise', '{tab:1>}chinois | chinoise'], 
-            ['-ain', '-aine', '{tab:1>}américain | américaine'], 
-            ['-en', '-enne', '{tab:1>}italien | italienne']
-          ] },
-        { kind: 'paragraph', text: '{ligne/2}' },
-        { kind: 'attention', text: '{tab:1>}turc | turque\n{tab:1>}grec | grecque' },
+        { kind: 'paragraph', text: 'Un adjectif de nationalité dit le pays d’une personne.' },
+        { kind: 'paragraph', text: 'Souvent, j’ajoute un {c}e{/c} au féminin.' },
+        { kind: 'examples', marker: 'puces', items: [
+          '{tab:2}Masculin | | Féminin',
+          '{tab:2}Il est {c}espognol{/c} | + {c}e{/c} | Elle est {c}belge{/c}',
+          '{tab:2}Il est {c}ukrainien{/c} | + {c}ne{/c} | Elle est {c}ukrainienne{/c}',
+          '{tab:2}Il est {c}russe{/c} | | Elle est {c}russe{/c}'
+        ] },
       ],
     },
     ],
