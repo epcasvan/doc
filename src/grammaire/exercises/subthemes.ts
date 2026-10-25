@@ -45,6 +45,12 @@ export const GRAM_SUBTHEMES: GramSubtheme[] = [
     theoryTypeIds: ['gram-m5-theorie'],
   },
   {
+    id: 'aller-destination',
+    label: 'Aller : destination',
+    topic: 'gram-present',
+    theoryTypeIds: ['gram-a4-theorie', 'gram-a5-theorie'],
+  },
+  {
     id: 'ir',
     label: 'Verbes en -ir',
     topic: 'gram-present',
