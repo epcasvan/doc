@@ -4,7 +4,7 @@ import { Fragment } from 'react'
 /** `{g}…{/g}` gras · `{c}…{/c}` couleur · `{s}…{/s}` souligné · `/n` retour · `{ligne}` / `{ligne/N}` · après `{tab:N}`, `+` vide, `>` flèche, `<` puce, `-` tiret, dans l’ordre des colonnes. */
 const MARK = /\{(g|c|s)\}([\s\S]*?)\{\/\1\}|\/n/g
 const LIGNE = /\{ligne(?:\/([234]))?\}/gi
-const TAB = /\{tab:(\d+)(?:\s*(\+*[><-]+|fleche))?(?:\s*(puce))?\}/gi
+const TAB = /\{tab:(\d+)(?:\s*([+><-]+|fleche))?(?:\s*(puce))?\}/gi
 
 type TheoryTabMarker = 'arrow' | 'bullet' | 'trait' | null
 export type TheoryTabRow = { n: number; markers: TheoryTabMarker[]; cells: string[] }
