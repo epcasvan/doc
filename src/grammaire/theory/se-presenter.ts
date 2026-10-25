@@ -27,7 +27,6 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
       role: 'expliquer',
       blocks: [
         { kind: 'paragraph', text: 'J’utilise les {c}verbes{/c} : être, habiter, parler, s’appeler. Un {c}verbe{/c}, c’est un mot d’{c}action{/c} ou d’{c}état{/c}.' },
-        { kind: 'paragraph', text: '{ligne/2}' },
       ],
     },
     {
@@ -51,36 +50,51 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
       { kind: 'heading', text: 'Les pronoms sujets' },
       { kind: 'paragraph', text: 'Un pronom sujet remplace une personne, un groupe de personnes ou un nom.' },
       { kind: 'paragraph', text: '{ligne/2}' },
-      { kind: 'heading', text: 'Je regarde', sub: true },
-      { kind: 'examples', items: ['{tab:1>}Lisa s’appelle Lisa., Elle s’appelle Lisa.', '{tab:1>}Paul et moi habitons à Sion. → {c}Nous{/c} habitons à Sion.'] },
-      { kind: 'paragraph', text: '{ligne/2}' },
-      { kind: 'heading', text: 'J’explique', sub: true },
-      { kind: 'paragraph', text: 'Le pronom sujet se place devant le verbe.' },
-      { kind: 'paragraph', text: 'Il évite de répéter un nom.' },
-      { kind: 'paragraph', text: '{ligne/2}' },
-      { kind: 'heading', text: 'Je retiens', sub: true },
-      { kind: 'paragraph', text: 'Je choisis le pronom selon la personne ou le groupe.' },
-      { kind: 'table', colHeader: true, rowHeader: true, headers: ['Pronom', 'Qui ?', 'Exemple'], rows: [
-        ['je', 'moi', 'Je parle français.'],
-        ['tu', 'la personne à qui je parle', 'Tu habites à Sion.'],
-        ['il / elle', 'une personne', 'Elle s’appelle Lisa.'],
-        ['nous', 'moi et d’autres personnes', 'Nous sommes amis.'],
-        ['vous', 'politesse ou plusieurs personnes', 'Vous parlez français.'],
-        ['ils / elles', 'plusieurs personnes', 'Ils habitent à Sion.'],
-      ] },
-      { kind: 'attention', text: 'On peut remplacer nous à l’oral : On parle français.' },
-      { kind: 'paragraph', text: '{ligne}' },
-      { kind: 'table', colHeader: true, rowHeader: true, headers: ['Personne', 'être', 'habiter', 'parler', 's’appeler'], 
-      rows: [
-      ['je', 'suis', 'habite', 'parle', 'm’appelle'], 
-      ['tu', 'es', 'habites', 'parles', 't’appelles'], 
-      ['il / elle / on', 'est', 'habite', 'parle', 's’appelle'], 
-      ['nous', 'sommes', 'habitons', 'parlons', 'nous appelons'], 
-      ['vous', 'êtes', 'habitez', 'parlez', 'vous appelez'], 
-      ['ils / elles', 'sont', 'habitent', 'parlent', 's’appellent']] },
-      { kind: 'astuce', text: 'Devant une voyelle ou un h, j’écris : j’, m’, t’, s’.' },
-      { kind: 'paragraph', text: '{ligne}' },
-      { kind: 'attention', text: 'Avec nous et vous, s’appeler garde nous / vous deux fois : nous nous appelons.' },
+      {
+        kind: 'section',
+        role: 'regarder',
+        blocks: [
+          { kind: 'examples', items: ['{tab:1>}Lisa s’appelle Lisa., Elle s’appelle Lisa.', '{tab:1>}Paul et moi habitons à Sion. → {c}Nous{/c} habitons à Sion.'] },
+          { kind: 'paragraph', text: '{ligne/2}' }
+        ],
+      },
+      {
+        kind: 'section',
+        role: 'expliquer',
+        blocks: [
+          { kind: 'paragraph', text: 'Le pronom sujet se place devant le verbe.' },
+          { kind: 'paragraph', text: 'Il évite de répéter un nom.' },
+          { kind: 'paragraph', text: '{ligne/2}' }
+        ],
+      },
+      {
+        kind: 'section',
+        role: 'retenir',
+        blocks: [
+          { kind: 'paragraph', text: 'Je choisis le pronom selon la personne ou le groupe.' },
+          { kind: 'table', colHeader: true, rowHeader: true, headers: ['Pronom', 'Qui ?', 'Exemple'], rows: [
+            ['je', 'moi', 'Je parle français.'],
+            ['tu', 'la personne à qui je parle', 'Tu habites à Sion.'],
+            ['il / elle', 'une personne', 'Elle s’appelle Lisa.'],
+            ['nous', 'moi et d’autres personnes', 'Nous sommes amis.'],
+            ['vous', 'politesse ou plusieurs personnes', 'Vous parlez français.'],
+            ['ils / elles', 'plusieurs personnes', 'Ils habitent à Sion.'],
+          ] },
+          { kind: 'attention', text: 'On peut remplacer nous à l’oral : On parle français.' },
+          { kind: 'paragraph', text: '{ligne}' },
+          { kind: 'table', colHeader: true, rowHeader: true, headers: ['Personne', 'être', 'habiter', 'parler', 's’appeler'],
+          rows: [
+          ['je', 'suis', 'habite', 'parle', 'm’appelle'],
+          ['tu', 'es', 'habites', 'parles', 't’appelles'],
+          ['il / elle / on', 'est', 'habite', 'parle', 's’appelle'],
+          ['nous', 'sommes', 'habitons', 'parlons', 'nous appelons'],
+          ['vous', 'êtes', 'habitez', 'parlez', 'vous appelez'],
+          ['ils / elles', 'sont', 'habitent', 'parlent', 's’appellent']] },
+          { kind: 'astuce', text: 'Devant une voyelle ou un h, j’écris : j’, m’, t’, s’.' },
+          { kind: 'paragraph', text: '{ligne}' },
+          { kind: 'attention', text: 'Avec nous et vous, s’appeler garde nous / vous deux fois : nous nous appelons.' }
+        ],
+      },
       
     ],
   },
@@ -95,17 +109,32 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
     blocks: [
     { kind: 'heading', text: 'Les adjectifs de nationalité' },
     { kind: 'paragraph', text: 'Je dis ma nationalité au masculin ou au féminin.' },
-    { kind: 'heading', text: 'Je regarde', sub: true },
-    { kind: 'examples', items: ['Paul est allemand.', 'Susanne est allemande.'] },
-    { kind: 'heading', text: 'J’explique', sub: true },
-    { kind: 'paragraph', text: 'Un adjectif de nationalité dit le pays d’une personne.' },
-    { kind: 'paragraph', text: 'Souvent, j’ajoute un e au féminin.' },
-    { kind: 'paragraph', text: 'Si le masculin finit déjà par e, le féminin ne change pas.' },
-    { kind: 'paragraph', text: 'Exemple : belge, suisse, russe.' },
-    { kind: 'heading', text: 'Je retiens', sub: true },
-    { kind: 'paragraph', text: 'féminin souvent + e. Masculin en -e → même forme.' },
-    { kind: 'table', colHeader: true, rowHeader: true, headers: ['Masculin', 'Féminin', 'Exemples'], rows: [['-ais', '-aise', 'français / française'], ['-ois', '-oise', 'chinois / chinoise'], ['-ain', '-aine', 'américain / américaine'], ['-en', '-enne', 'italien / italienne']] },
-    { kind: 'attention', text: 'turc → turque ; grec → grecque. Pays en -e souvent féminins, sauf Mexique, Cambodge, Mozambique, Zimbabwe.' },
+    {
+      kind: 'section',
+      role: 'regarder',
+      blocks: [
+        { kind: 'examples', items: ['Paul est allemand.', 'Susanne est allemande.'] }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'expliquer',
+      blocks: [
+        { kind: 'paragraph', text: 'Un adjectif de nationalité dit le pays d’une personne.' },
+        { kind: 'paragraph', text: 'Souvent, j’ajoute un e au féminin.' },
+        { kind: 'paragraph', text: 'Si le masculin finit déjà par e, le féminin ne change pas.' },
+        { kind: 'paragraph', text: 'Exemple : belge, suisse, russe.' }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'retenir',
+      blocks: [
+        { kind: 'paragraph', text: 'féminin souvent + e. Masculin en -e → même forme.' },
+        { kind: 'table', colHeader: true, rowHeader: true, headers: ['Masculin', 'Féminin', 'Exemples'], rows: [['-ais', '-aise', 'français / française'], ['-ois', '-oise', 'chinois / chinoise'], ['-ain', '-aine', 'américain / américaine'], ['-en', '-enne', 'italien / italienne']] },
+        { kind: 'attention', text: 'turc → turque ; grec → grecque. Pays en -e souvent féminins, sauf Mexique, Cambodge, Mozambique, Zimbabwe.' }
+      ],
+    },
     ],
   },
   {
@@ -119,18 +148,33 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
     blocks: [
     { kind: 'heading', text: 'Aller : destination (pays et villes)' },
     { kind: 'paragraph', text: 'Je dis ma destination avec le verbe aller.' },
-    { kind: 'heading', text: 'Je regarde', sub: true },
-    { kind: 'examples', items: ['Je vais au Sénégal.', 'Elle va en Chine.', 'Ils vont à Sion.'] },
-    { kind: 'heading', text: 'J’explique', sub: true },
-    { kind: 'paragraph', text: 'Le verbe aller indique la destination.' },
-    { kind: 'paragraph', text: 'Pays masculin + consonne → au.' },
-    { kind: 'paragraph', text: 'Pays masculin + voyelle → en.' },
-    { kind: 'paragraph', text: 'Pays féminin → en. Pays pluriel → aux.' },
-    { kind: 'paragraph', text: 'Continent → en. Ville → à.' },
-    { kind: 'heading', text: 'Je retiens', sub: true },
-    { kind: 'paragraph', text: 'aller = destination. au / en / aux / à selon le lieu.' },
-    { kind: 'table', colHeader: true, rowHeader: true, headers: ['Lieu', 'Forme', 'Exemple'], rows: [['pays masc. + consonne', 'au', 'Je vais au Sénégal.'], ['pays masc. + voyelle', 'en', 'Tu vas en Irak.'], ['pays féminin', 'en', 'Elle va en Chine.'], ['pays pluriel', 'aux', 'Nous allons aux Pays-Bas.'], ['continent', 'en', 'Vous allez en Europe.'], ['ville', 'à', 'Ils vont à Sion.']] },
-    { kind: 'attention', text: 'Ne confonds pas au et en.' },
+    {
+      kind: 'section',
+      role: 'regarder',
+      blocks: [
+        { kind: 'examples', items: ['Je vais au Sénégal.', 'Elle va en Chine.', 'Ils vont à Sion.'] }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'expliquer',
+      blocks: [
+        { kind: 'paragraph', text: 'Le verbe aller indique la destination.' },
+        { kind: 'paragraph', text: 'Pays masculin + consonne → au.' },
+        { kind: 'paragraph', text: 'Pays masculin + voyelle → en.' },
+        { kind: 'paragraph', text: 'Pays féminin → en. Pays pluriel → aux.' },
+        { kind: 'paragraph', text: 'Continent → en. Ville → à.' }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'retenir',
+      blocks: [
+        { kind: 'paragraph', text: 'aller = destination. au / en / aux / à selon le lieu.' },
+        { kind: 'table', colHeader: true, rowHeader: true, headers: ['Lieu', 'Forme', 'Exemple'], rows: [['pays masc. + consonne', 'au', 'Je vais au Sénégal.'], ['pays masc. + voyelle', 'en', 'Tu vas en Irak.'], ['pays féminin', 'en', 'Elle va en Chine.'], ['pays pluriel', 'aux', 'Nous allons aux Pays-Bas.'], ['continent', 'en', 'Vous allez en Europe.'], ['ville', 'à', 'Ils vont à Sion.']] },
+        { kind: 'attention', text: 'Ne confonds pas au et en.' }
+      ],
+    },
     ],
   },
   {
@@ -144,16 +188,31 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
     blocks: [
     { kind: 'heading', text: 'Aller : lieux et chez' },
     { kind: 'paragraph', text: 'Je vais à un lieu. Je vais chez une personne.' },
-    { kind: 'heading', text: 'Je regarde', sub: true },
-    { kind: 'examples', items: ['Je vais chez Sarah.', 'Elle va à la poste.', 'Ils vont au magasin.'] },
-    { kind: 'heading', text: 'J’explique', sub: true },
-    { kind: 'paragraph', text: 'Chez + personne.' },
-    { kind: 'paragraph', text: 'Lieu féminin → à la. Voyelle ou h → à l’.' },
-    { kind: 'paragraph', text: 'Lieu masculin + consonne → au. Pluriel → aux.' },
-    { kind: 'heading', text: 'Je retiens', sub: true },
-    { kind: 'paragraph', text: 'chez = personne. à la / à l’ / au / aux = lieu.' },
-    { kind: 'table', colHeader: true, rowHeader: true, headers: ['Cas', 'Forme', 'Exemple'], rows: [['personne', 'chez', 'Je vais chez Sarah.'], ['lieu féminin', 'à la', 'Elle va à la poste.'], ['voyelle / h', 'à l’', 'Nous allons à l’école.'], ['lieu masculin', 'au', 'Ils vont au magasin.'], ['pluriel', 'aux', 'Je vais aux Îles.']] },
-    { kind: 'attention', text: 'École est féminin → à l’école.' },
+    {
+      kind: 'section',
+      role: 'regarder',
+      blocks: [
+        { kind: 'examples', items: ['Je vais chez Sarah.', 'Elle va à la poste.', 'Ils vont au magasin.'] }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'expliquer',
+      blocks: [
+        { kind: 'paragraph', text: 'Chez + personne.' },
+        { kind: 'paragraph', text: 'Lieu féminin → à la. Voyelle ou h → à l’.' },
+        { kind: 'paragraph', text: 'Lieu masculin + consonne → au. Pluriel → aux.' }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'retenir',
+      blocks: [
+        { kind: 'paragraph', text: 'chez = personne. à la / à l’ / au / aux = lieu.' },
+        { kind: 'table', colHeader: true, rowHeader: true, headers: ['Cas', 'Forme', 'Exemple'], rows: [['personne', 'chez', 'Je vais chez Sarah.'], ['lieu féminin', 'à la', 'Elle va à la poste.'], ['voyelle / h', 'à l’', 'Nous allons à l’école.'], ['lieu masculin', 'au', 'Ils vont au magasin.'], ['pluriel', 'aux', 'Je vais aux Îles.']] },
+        { kind: 'attention', text: 'École est féminin → à l’école.' }
+      ],
+    },
     ],
   },
   {
@@ -167,15 +226,30 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
     blocks: [
     { kind: 'heading', text: 'Venir de : provenance' },
     { kind: 'paragraph', text: 'Je dis ma provenance avec venir de.' },
-    { kind: 'heading', text: 'Je regarde', sub: true },
-    { kind: 'examples', items: ['Je viens du Sénégal.', 'On vient de Chine.', 'Je viens de chez Sarah.'] },
-    { kind: 'heading', text: 'J’explique', sub: true },
-    { kind: 'paragraph', text: 'Venir de indique la provenance.' },
-    { kind: 'paragraph', text: 'J’utilise du, de, d’, des, de la, de l’, de chez.' },
-    { kind: 'heading', text: 'Je retiens', sub: true },
-    { kind: 'paragraph', text: 'aller = où je vais. Venir de = d’où je viens.' },
-    { kind: 'table', colHeader: true, rowHeader: true, headers: ['Lieu', 'Forme', 'Exemple'], rows: [['pays masc. + consonne', 'du', 'Je viens du Sénégal.'], ['voyelle', 'd’', 'Tu viens d’Irak.'], ['pays féminin', 'de', 'On vient de Chine.'], ['pluriel', 'des', 'Nous venons des Pays-Bas.'], ['personne', 'de chez', 'Je viens de chez le médecin.']] },
-    { kind: 'attention', text: 'Ne mélange pas aller et venir de.' },
+    {
+      kind: 'section',
+      role: 'regarder',
+      blocks: [
+        { kind: 'examples', items: ['Je viens du Sénégal.', 'On vient de Chine.', 'Je viens de chez Sarah.'] }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'expliquer',
+      blocks: [
+        { kind: 'paragraph', text: 'Venir de indique la provenance.' },
+        { kind: 'paragraph', text: 'J’utilise du, de, d’, des, de la, de l’, de chez.' }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'retenir',
+      blocks: [
+        { kind: 'paragraph', text: 'aller = où je vais. Venir de = d’où je viens.' },
+        { kind: 'table', colHeader: true, rowHeader: true, headers: ['Lieu', 'Forme', 'Exemple'], rows: [['pays masc. + consonne', 'du', 'Je viens du Sénégal.'], ['voyelle', 'd’', 'Tu viens d’Irak.'], ['pays féminin', 'de', 'On vient de Chine.'], ['pluriel', 'des', 'Nous venons des Pays-Bas.'], ['personne', 'de chez', 'Je viens de chez le médecin.']] },
+        { kind: 'attention', text: 'Ne mélange pas aller et venir de.' }
+      ],
+    },
     ],
   },
   {
@@ -189,15 +263,30 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
     blocks: [
     { kind: 'heading', text: 'Dire son âge' },
     { kind: 'paragraph', text: 'Je dis mon âge avec le verbe avoir.' },
-    { kind: 'heading', text: 'Je regarde', sub: true },
-    { kind: 'examples', items: ['Quel âge as-tu ?', 'J’ai 25 ans.'] },
-    { kind: 'heading', text: 'J’explique', sub: true },
-    { kind: 'paragraph', text: 'En français, j’utilise avoir + nombre + an(s).' },
-    { kind: 'paragraph', text: 'Je ne dis pas « je suis 25 ans ».' },
-    { kind: 'heading', text: 'Je retiens', sub: true },
-    { kind: 'paragraph', text: 'âge = avoir + nombre + an(s).' },
-    { kind: 'table', colHeader: true, rowHeader: true, headers: ['Personne', 'Forme', 'Exemple'], rows: [['je', 'j’ai', 'J’ai 15 ans.'], ['tu', 'tu as', 'Tu as 12 ans.'], ['il / elle / on', 'a', 'Elle a 45 ans.'], ['nous', 'avons', 'Nous avons 27 ans.'], ['vous', 'avez', 'Vous avez 50 ans.'], ['ils / elles', 'ont', 'Ils ont 20 ans.']] },
-    { kind: 'attention', text: 'Un an → an. Plusieurs années → ans.' },
+    {
+      kind: 'section',
+      role: 'regarder',
+      blocks: [
+        { kind: 'examples', items: ['Quel âge as-tu ?', 'J’ai 25 ans.'] }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'expliquer',
+      blocks: [
+        { kind: 'paragraph', text: 'En français, j’utilise avoir + nombre + an(s).' },
+        { kind: 'paragraph', text: 'Je ne dis pas « je suis 25 ans ».' }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'retenir',
+      blocks: [
+        { kind: 'paragraph', text: 'âge = avoir + nombre + an(s).' },
+        { kind: 'table', colHeader: true, rowHeader: true, headers: ['Personne', 'Forme', 'Exemple'], rows: [['je', 'j’ai', 'J’ai 15 ans.'], ['tu', 'tu as', 'Tu as 12 ans.'], ['il / elle / on', 'a', 'Elle a 45 ans.'], ['nous', 'avons', 'Nous avons 27 ans.'], ['vous', 'avez', 'Vous avez 50 ans.'], ['ils / elles', 'ont', 'Ils ont 20 ans.']] },
+        { kind: 'attention', text: 'Un an → an. Plusieurs années → ans.' }
+      ],
+    },
     ],
   },
   {
@@ -211,16 +300,31 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
     blocks: [
     { kind: 'heading', text: 'La négation ne … pas' },
     { kind: 'paragraph', text: 'Je mets ne et pas autour du verbe.' },
-    { kind: 'heading', text: 'Je regarde', sub: true },
-    { kind: 'examples', items: [{ text: 'Je ne suis pas italien.', wrong: 'Je suis pas italien (à l’écrit)' }] },
-    { kind: 'heading', text: 'J’explique', sub: true },
-    { kind: 'paragraph', text: 'Ne et pas forment la négation.' },
-    { kind: 'paragraph', text: 'Ils se placent autour du verbe.' },
-    { kind: 'paragraph', text: 'Temps composé : ne + auxiliaire + pas + participe.' },
-    { kind: 'heading', text: 'Je retiens', sub: true },
-    { kind: 'paragraph', text: 'négation de base = ne … pas autour du verbe.' },
-    { kind: 'table', colHeader: true, rowHeader: true, headers: ['Cas', 'Forme', 'Exemple'], rows: [['présent', 'ne + verbe + pas', 'Je ne suis pas italien.'], ['composé', 'ne + auxiliaire + pas + participe', 'Je n’ai pas compris.'], ['infinitif', 'ne pas + verbe', 'Ne pas fumer.'], ['impératif', 'ne + verbe + pas', 'Ne fumez pas !']] },
-    { kind: 'astuce', text: 'Devant une voyelle : ne → n’.' },
+    {
+      kind: 'section',
+      role: 'regarder',
+      blocks: [
+        { kind: 'examples', items: [{ text: 'Je ne suis pas italien.', wrong: 'Je suis pas italien (à l’écrit)' }] }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'expliquer',
+      blocks: [
+        { kind: 'paragraph', text: 'Ne et pas forment la négation.' },
+        { kind: 'paragraph', text: 'Ils se placent autour du verbe.' },
+        { kind: 'paragraph', text: 'Temps composé : ne + auxiliaire + pas + participe.' }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'retenir',
+      blocks: [
+        { kind: 'paragraph', text: 'négation de base = ne … pas autour du verbe.' },
+        { kind: 'table', colHeader: true, rowHeader: true, headers: ['Cas', 'Forme', 'Exemple'], rows: [['présent', 'ne + verbe + pas', 'Je ne suis pas italien.'], ['composé', 'ne + auxiliaire + pas + participe', 'Je n’ai pas compris.'], ['infinitif', 'ne pas + verbe', 'Ne pas fumer.'], ['impératif', 'ne + verbe + pas', 'Ne fumez pas !']] },
+        { kind: 'astuce', text: 'Devant une voyelle : ne → n’.' }
+      ],
+    },
     ],
   },
   {
@@ -234,17 +338,32 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
     blocks: [
     { kind: 'heading', text: 'Autres négations' },
     { kind: 'paragraph', text: 'Je choisis la bonne négation selon le sens.' },
-    { kind: 'heading', text: 'Je regarde', sub: true },
-    { kind: 'examples', items: ['Je n’ai jamais gagné.', 'Je n’ai plus d’argent.'] },
-    { kind: 'heading', text: 'J’explique', sub: true },
-    { kind: 'paragraph', text: 'Certaines négations remplacent pas.' },
-    { kind: 'paragraph', text: 'Ne … jamais = aucune fois.' },
-    { kind: 'paragraph', text: 'Ne … plus = avant oui, maintenant non.' },
-    { kind: 'paragraph', text: 'Après sans, le déterminant disparaît.' },
-    { kind: 'heading', text: 'Je retiens', sub: true },
-    { kind: 'paragraph', text: 'une idée négative = une négation adaptée.' },
-    { kind: 'table', colHeader: true, rowHeader: true, headers: ['Affirmatif', 'Négatif'], rows: [['déjà / toujours', 'ne … jamais / ne … pas encore'], ['encore', 'ne … plus'], ['tout', 'ne … rien'], ['quelqu’un', 'ne … personne'], ['quelques', 'ne … aucun(e)'], ['avec', 'sans']] },
-    { kind: 'attention', text: 'Réponse à une négation : Si = oui malgré le non.' },
+    {
+      kind: 'section',
+      role: 'regarder',
+      blocks: [
+        { kind: 'examples', items: ['Je n’ai jamais gagné.', 'Je n’ai plus d’argent.'] }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'expliquer',
+      blocks: [
+        { kind: 'paragraph', text: 'Certaines négations remplacent pas.' },
+        { kind: 'paragraph', text: 'Ne … jamais = aucune fois.' },
+        { kind: 'paragraph', text: 'Ne … plus = avant oui, maintenant non.' },
+        { kind: 'paragraph', text: 'Après sans, le déterminant disparaît.' }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'retenir',
+      blocks: [
+        { kind: 'paragraph', text: 'une idée négative = une négation adaptée.' },
+        { kind: 'table', colHeader: true, rowHeader: true, headers: ['Affirmatif', 'Négatif'], rows: [['déjà / toujours', 'ne … jamais / ne … pas encore'], ['encore', 'ne … plus'], ['tout', 'ne … rien'], ['quelqu’un', 'ne … personne'], ['quelques', 'ne … aucun(e)'], ['avec', 'sans']] },
+        { kind: 'attention', text: 'Réponse à une négation : Si = oui malgré le non.' }
+      ],
+    },
     ],
   },
   {

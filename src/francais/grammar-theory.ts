@@ -76,6 +76,10 @@ function stripLead(text: string, re: RegExp): string {
 export function normalizeTheoryBlocks(blocks: GrammarTheoryBlock[]): GrammarTheoryBlock[] {
   const out: GrammarTheoryBlock[] = []
   for (const block of blocks) {
+    if (block.kind === 'section') {
+      out.push({ ...block, blocks: normalizeTheoryBlocks(block.blocks) })
+      continue
+    }
     if (block.kind === 'rule') {
       const items = (block.examples ?? []).map((ex) =>
         ex.wrong ? { text: ex.correct, wrong: ex.wrong } : ex.correct,

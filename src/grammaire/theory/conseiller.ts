@@ -13,15 +13,30 @@ export const conseillerDocs: GrammaireTheoryDoc[] = [
     blocks: [
     { kind: 'heading', text: 'Devoir et pouvoir au conditionnel' },
     { kind: 'paragraph', text: 'Je donne un conseil poli.' },
-    { kind: 'heading', text: 'Je regarde', sub: true },
-    { kind: 'examples', items: ['Tu devrais te reposer.', 'Vous pourriez appeler demain.'] },
-    { kind: 'heading', text: 'J’explique', sub: true },
-    { kind: 'paragraph', text: 'Conditionnel de devoir / pouvoir = conseil ou suggestion.' },
-    { kind: 'paragraph', text: 'Forme : radical + ais, ais, ait, ions, iez, aient.' },
-    { kind: 'heading', text: 'Je retiens', sub: true },
-    { kind: 'paragraph', text: 'tu devrais / vous pourriez + infinitif.' },
-    { kind: 'table', colHeader: true, rowHeader: true, headers: ['Personne', 'devoir', 'pouvoir'], rows: [['je', 'devrais', 'pourrais'], ['tu', 'devrais', 'pourrais'], ['il / elle', 'devrait', 'pourrait'], ['nous', 'devrions', 'pourrions'], ['vous', 'devriez', 'pourriez'], ['ils / elles', 'devraient', 'pourraient']] },
-    { kind: 'attention', text: 'Après, garde l’infinitif.' },
+    {
+      kind: 'section',
+      role: 'regarder',
+      blocks: [
+        { kind: 'examples', items: ['Tu devrais te reposer.', 'Vous pourriez appeler demain.'] }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'expliquer',
+      blocks: [
+        { kind: 'paragraph', text: 'Conditionnel de devoir / pouvoir = conseil ou suggestion.' },
+        { kind: 'paragraph', text: 'Forme : radical + ais, ais, ait, ions, iez, aient.' }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'retenir',
+      blocks: [
+        { kind: 'paragraph', text: 'tu devrais / vous pourriez + infinitif.' },
+        { kind: 'table', colHeader: true, rowHeader: true, headers: ['Personne', 'devoir', 'pouvoir'], rows: [['je', 'devrais', 'pourrais'], ['tu', 'devrais', 'pourrais'], ['il / elle', 'devrait', 'pourrait'], ['nous', 'devrions', 'pourrions'], ['vous', 'devriez', 'pourriez'], ['ils / elles', 'devraient', 'pourraient']] },
+        { kind: 'attention', text: 'Après, garde l’infinitif.' }
+      ],
+    },
     ],
   },
   {
@@ -35,16 +50,31 @@ export const conseillerDocs: GrammaireTheoryDoc[] = [
     blocks: [
     { kind: 'heading', text: 'L’impératif' },
     { kind: 'paragraph', text: 'Je donne un ordre, un conseil ou une consigne.' },
-    { kind: 'heading', text: 'Je regarde', sub: true },
-    { kind: 'examples', items: ['Écoute !', 'Parlez plus fort !', 'Allons-y !'] },
-    { kind: 'heading', text: 'J’explique', sub: true },
-    { kind: 'paragraph', text: 'Impératif : tu, nous, vous — sans pronom sujet.' },
-    { kind: 'paragraph', text: 'Verbes en -er : tu sans -s : Parle !' },
-    { kind: 'paragraph', text: 'Négation : Ne parle pas !' },
-    { kind: 'heading', text: 'Je retiens', sub: true },
-    { kind: 'paragraph', text: 'impératif = pas de sujet devant le verbe.' },
-    { kind: 'table', colHeader: true, rowHeader: true, headers: ['Personne', 'Exemple'], rows: [['tu', 'Finis !'], ['nous', 'Finissons !'], ['vous', 'Finissez !']] },
-    { kind: 'attention', text: 'À l’impératif, les verbes en -er perdent le s au tu.' },
+    {
+      kind: 'section',
+      role: 'regarder',
+      blocks: [
+        { kind: 'examples', items: ['Écoute !', 'Parlez plus fort !', 'Allons-y !'] }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'expliquer',
+      blocks: [
+        { kind: 'paragraph', text: 'Impératif : tu, nous, vous — sans pronom sujet.' },
+        { kind: 'paragraph', text: 'Verbes en -er : tu sans -s : Parle !' },
+        { kind: 'paragraph', text: 'Négation : Ne parle pas !' }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'retenir',
+      blocks: [
+        { kind: 'paragraph', text: 'impératif = pas de sujet devant le verbe.' },
+        { kind: 'table', colHeader: true, rowHeader: true, headers: ['Personne', 'Exemple'], rows: [['tu', 'Finis !'], ['nous', 'Finissons !'], ['vous', 'Finissez !']] },
+        { kind: 'attention', text: 'À l’impératif, les verbes en -er perdent le s au tu.' }
+      ],
+    },
     ],
   },
 ]

@@ -13,15 +13,30 @@ export const pronomsDocs: GrammaireTheoryDoc[] = [
     blocks: [
     { kind: 'heading', text: 'Les pronoms relatifs' },
     { kind: 'paragraph', text: 'Je relie deux informations dans une phrase.' },
-    { kind: 'heading', text: 'Je regarde', sub: true },
-    { kind: 'examples', items: ['L’homme qui parle est mon père.', 'Le livre que je lis est bien.', 'La ville où j’habite est calme.'] },
-    { kind: 'heading', text: 'J’explique', sub: true },
-    { kind: 'paragraph', text: 'Qui = sujet. Que = complément. Où = lieu ou temps.' },
-    { kind: 'paragraph', text: 'Dont = de + nom (le livre dont je parle).' },
-    { kind: 'heading', text: 'Je retiens', sub: true },
-    { kind: 'paragraph', text: 'qui / que / où / dont.' },
-    { kind: 'table', colHeader: true, rowHeader: true, headers: ['Pronom', 'Rôle', 'Exemple'], rows: [['qui', 'sujet', 'la femme qui chante'], ['que', 'COD', 'le film que je regarde'], ['où', 'lieu / temps', 'le jour où je suis né'], ['dont', 'de + nom', 'l’ami dont je parle']] },
-    { kind: 'attention', text: 'Que → qu’ devant voyelle : l’homme qu’elle connaît.' },
+    {
+      kind: 'section',
+      role: 'regarder',
+      blocks: [
+        { kind: 'examples', items: ['L’homme qui parle est mon père.', 'Le livre que je lis est bien.', 'La ville où j’habite est calme.'] }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'expliquer',
+      blocks: [
+        { kind: 'paragraph', text: 'Qui = sujet. Que = complément. Où = lieu ou temps.' },
+        { kind: 'paragraph', text: 'Dont = de + nom (le livre dont je parle).' }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'retenir',
+      blocks: [
+        { kind: 'paragraph', text: 'qui / que / où / dont.' },
+        { kind: 'table', colHeader: true, rowHeader: true, headers: ['Pronom', 'Rôle', 'Exemple'], rows: [['qui', 'sujet', 'la femme qui chante'], ['que', 'COD', 'le film que je regarde'], ['où', 'lieu / temps', 'le jour où je suis né'], ['dont', 'de + nom', 'l’ami dont je parle']] },
+        { kind: 'attention', text: 'Que → qu’ devant voyelle : l’homme qu’elle connaît.' }
+      ],
+    },
     ],
   },
   {
@@ -35,14 +50,29 @@ export const pronomsDocs: GrammaireTheoryDoc[] = [
     blocks: [
     { kind: 'heading', text: 'Les pronoms possessifs' },
     { kind: 'paragraph', text: 'Je remplace un nom déjà connu.' },
-    { kind: 'heading', text: 'Je regarde', sub: true },
-    { kind: 'examples', items: ['Ce livre est le mien.', 'Cette voiture est la tienne.'] },
-    { kind: 'heading', text: 'J’explique', sub: true },
-    { kind: 'paragraph', text: 'Le mien, le tien, le sien, le nôtre, le vôtre, le leur (+ formes fém./plur.).' },
-    { kind: 'heading', text: 'Je retiens', sub: true },
-    { kind: 'paragraph', text: 'pronom possessif = article + mien / tien…' },
-    { kind: 'table', colHeader: true, rowHeader: true, headers: ['', 'masc. sing.', 'fém. sing.'], rows: [['je', 'le mien', 'la mienne'], ['tu', 'le tien', 'la tienne'], ['il / elle', 'le sien', 'la sienne']] },
-    { kind: 'attention', text: 'Garde l’article : le mien (pas mien seul).' },
+    {
+      kind: 'section',
+      role: 'regarder',
+      blocks: [
+        { kind: 'examples', items: ['Ce livre est le mien.', 'Cette voiture est la tienne.'] }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'expliquer',
+      blocks: [
+        { kind: 'paragraph', text: 'Le mien, le tien, le sien, le nôtre, le vôtre, le leur (+ formes fém./plur.).' }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'retenir',
+      blocks: [
+        { kind: 'paragraph', text: 'pronom possessif = article + mien / tien…' },
+        { kind: 'table', colHeader: true, rowHeader: true, headers: ['', 'masc. sing.', 'fém. sing.'], rows: [['je', 'le mien', 'la mienne'], ['tu', 'le tien', 'la tienne'], ['il / elle', 'le sien', 'la sienne']] },
+        { kind: 'attention', text: 'Garde l’article : le mien (pas mien seul).' }
+      ],
+    },
     ],
   },
   {
@@ -56,15 +86,30 @@ export const pronomsDocs: GrammaireTheoryDoc[] = [
     blocks: [
     { kind: 'heading', text: 'Les pronoms démonstratifs' },
     { kind: 'paragraph', text: 'Je désigne une chose sans répéter le nom.' },
-    { kind: 'heading', text: 'Je regarde', sub: true },
-    { kind: 'examples', items: ['Celui-ci est rouge.', 'Je préfère celle de Marie.'] },
-    { kind: 'heading', text: 'J’explique', sub: true },
-    { kind: 'paragraph', text: 'Celui / celle / ceux / celles.' },
-    { kind: 'paragraph', text: 'Souvent + -ci / -là ou + de / qui / que.' },
-    { kind: 'heading', text: 'Je retiens', sub: true },
-    { kind: 'paragraph', text: 'celui-ci / celle-là…' },
-    { kind: 'table', colHeader: true, rowHeader: true, headers: ['', 'singulier', 'pluriel'], rows: [['masculin', 'celui', 'ceux'], ['féminin', 'celle', 'celles']] },
-    { kind: 'attention', text: 'Accorde avec le nom remplacé.' },
+    {
+      kind: 'section',
+      role: 'regarder',
+      blocks: [
+        { kind: 'examples', items: ['Celui-ci est rouge.', 'Je préfère celle de Marie.'] }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'expliquer',
+      blocks: [
+        { kind: 'paragraph', text: 'Celui / celle / ceux / celles.' },
+        { kind: 'paragraph', text: 'Souvent + -ci / -là ou + de / qui / que.' }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'retenir',
+      blocks: [
+        { kind: 'paragraph', text: 'celui-ci / celle-là…' },
+        { kind: 'table', colHeader: true, rowHeader: true, headers: ['', 'singulier', 'pluriel'], rows: [['masculin', 'celui', 'ceux'], ['féminin', 'celle', 'celles']] },
+        { kind: 'attention', text: 'Accorde avec le nom remplacé.' }
+      ],
+    },
     ],
   },
   {
@@ -78,15 +123,30 @@ export const pronomsDocs: GrammaireTheoryDoc[] = [
     blocks: [
     { kind: 'heading', text: 'Les pronoms COD' },
     { kind: 'paragraph', text: 'Je remplace un nom complément direct.' },
-    { kind: 'heading', text: 'Je regarde', sub: true },
-    { kind: 'examples', items: ['Je regarde le film. → Je le regarde.', 'Tu aimes les pommes. → Tu les aimes.'] },
-    { kind: 'heading', text: 'J’explique', sub: true },
-    { kind: 'paragraph', text: 'me, te, le, la, nous, vous, les.' },
-    { kind: 'paragraph', text: 'Le pronom se place avant le verbe.' },
-    { kind: 'heading', text: 'Je retiens', sub: true },
-    { kind: 'paragraph', text: 'COD avant le verbe.' },
-    { kind: 'table', colHeader: true, rowHeader: true, headers: ['Pronom', 'Exemple'], rows: [['le / la / l’', 'Je le vois.'], ['les', 'Je les mange.'], ['me / te', 'Il me connaît.']] },
-    { kind: 'astuce', text: 'Devant voyelle : le/la → l’.' },
+    {
+      kind: 'section',
+      role: 'regarder',
+      blocks: [
+        { kind: 'examples', items: ['Je regarde le film. → Je le regarde.', 'Tu aimes les pommes. → Tu les aimes.'] }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'expliquer',
+      blocks: [
+        { kind: 'paragraph', text: 'me, te, le, la, nous, vous, les.' },
+        { kind: 'paragraph', text: 'Le pronom se place avant le verbe.' }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'retenir',
+      blocks: [
+        { kind: 'paragraph', text: 'COD avant le verbe.' },
+        { kind: 'table', colHeader: true, rowHeader: true, headers: ['Pronom', 'Exemple'], rows: [['le / la / l’', 'Je le vois.'], ['les', 'Je les mange.'], ['me / te', 'Il me connaît.']] },
+        { kind: 'astuce', text: 'Devant voyelle : le/la → l’.' }
+      ],
+    },
     ],
   },
   {
@@ -100,15 +160,30 @@ export const pronomsDocs: GrammaireTheoryDoc[] = [
     blocks: [
     { kind: 'heading', text: 'Les pronoms COI' },
     { kind: 'paragraph', text: 'Je remplace à + personne.' },
-    { kind: 'heading', text: 'Je regarde', sub: true },
-    { kind: 'examples', items: ['Je parle à Marie. → Je lui parle.', 'Il donne un livre à ses amis. → Il leur donne un livre.'] },
-    { kind: 'heading', text: 'J’explique', sub: true },
-    { kind: 'paragraph', text: 'me, te, lui, nous, vous, leur.' },
-    { kind: 'paragraph', text: 'Lui = à lui / à elle. Leur = à eux / à elles.' },
-    { kind: 'heading', text: 'Je retiens', sub: true },
-    { kind: 'paragraph', text: 'COI avant le verbe. lui / leur sans à.' },
-    { kind: 'table', colHeader: true, rowHeader: true, headers: ['Pronom', 'Remplace'], rows: [['lui', 'à lui / à elle'], ['leur', 'à eux / à elles']] },
-    { kind: 'attention', text: 'Pas de s à leur pronom : je leur parle.' },
+    {
+      kind: 'section',
+      role: 'regarder',
+      blocks: [
+        { kind: 'examples', items: ['Je parle à Marie. → Je lui parle.', 'Il donne un livre à ses amis. → Il leur donne un livre.'] }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'expliquer',
+      blocks: [
+        { kind: 'paragraph', text: 'me, te, lui, nous, vous, leur.' },
+        { kind: 'paragraph', text: 'Lui = à lui / à elle. Leur = à eux / à elles.' }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'retenir',
+      blocks: [
+        { kind: 'paragraph', text: 'COI avant le verbe. lui / leur sans à.' },
+        { kind: 'table', colHeader: true, rowHeader: true, headers: ['Pronom', 'Remplace'], rows: [['lui', 'à lui / à elle'], ['leur', 'à eux / à elles']] },
+        { kind: 'attention', text: 'Pas de s à leur pronom : je leur parle.' }
+      ],
+    },
     ],
   },
   {
@@ -122,15 +197,30 @@ export const pronomsDocs: GrammaireTheoryDoc[] = [
     blocks: [
     { kind: 'heading', text: 'Les pronoms indéfinis' },
     { kind: 'paragraph', text: 'Je parle d’une personne ou d’une chose non précise.' },
-    { kind: 'heading', text: 'Je regarde', sub: true },
-    { kind: 'examples', items: ['Quelqu’un frappe.', 'Je ne vois rien.'] },
-    { kind: 'heading', text: 'J’explique', sub: true },
-    { kind: 'paragraph', text: 'Quelqu’un / quelque chose / tout le monde / rien / personne…' },
-    { kind: 'paragraph', text: 'Rien et personne vont avec ne.' },
-    { kind: 'heading', text: 'Je retiens', sub: true },
-    { kind: 'paragraph', text: 'personne / rien + ne.' },
-    { kind: 'table', colHeader: true, rowHeader: true, headers: ['Pronom', 'Exemple'], rows: [['quelqu’un', 'Quelqu’un appelle.'], ['quelque chose', 'Je veux quelque chose.'], ['personne', 'Je ne vois personne.'], ['rien', 'Je n’ai rien.']] },
-    { kind: 'attention', text: 'Personne n’est là (personne au début + n’).' },
+    {
+      kind: 'section',
+      role: 'regarder',
+      blocks: [
+        { kind: 'examples', items: ['Quelqu’un frappe.', 'Je ne vois rien.'] }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'expliquer',
+      blocks: [
+        { kind: 'paragraph', text: 'Quelqu’un / quelque chose / tout le monde / rien / personne…' },
+        { kind: 'paragraph', text: 'Rien et personne vont avec ne.' }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'retenir',
+      blocks: [
+        { kind: 'paragraph', text: 'personne / rien + ne.' },
+        { kind: 'table', colHeader: true, rowHeader: true, headers: ['Pronom', 'Exemple'], rows: [['quelqu’un', 'Quelqu’un appelle.'], ['quelque chose', 'Je veux quelque chose.'], ['personne', 'Je ne vois personne.'], ['rien', 'Je n’ai rien.']] },
+        { kind: 'attention', text: 'Personne n’est là (personne au début + n’).' }
+      ],
+    },
     ],
   },
   {
@@ -144,15 +234,30 @@ export const pronomsDocs: GrammaireTheoryDoc[] = [
     blocks: [
     { kind: 'heading', text: 'En et y' },
     { kind: 'paragraph', text: 'Je remplace de + chose (en) ou à / dans + lieu (y).' },
-    { kind: 'heading', text: 'Je regarde', sub: true },
-    { kind: 'examples', items: ['Tu veux du pain ? — Oui, j’en veux.', 'Tu vas à l’école ? — Oui, j’y vais.'] },
-    { kind: 'heading', text: 'J’explique', sub: true },
-    { kind: 'paragraph', text: 'En remplace de + nom (quantité, partitif).' },
-    { kind: 'paragraph', text: 'Y remplace à / en / dans + lieu (ou idée).' },
-    { kind: 'heading', text: 'Je retiens', sub: true },
-    { kind: 'paragraph', text: 'en = de. y = à / lieu.' },
-    { kind: 'table', colHeader: true, rowHeader: true, headers: ['Pronom', 'Remplace', 'Exemple'], rows: [['en', 'de + chose', 'J’en mange.'], ['y', 'à / lieu', 'J’y vais.']] },
-    { kind: 'attention', text: 'Place en / y avant le verbe : j’y vais.' },
+    {
+      kind: 'section',
+      role: 'regarder',
+      blocks: [
+        { kind: 'examples', items: ['Tu veux du pain ? — Oui, j’en veux.', 'Tu vas à l’école ? — Oui, j’y vais.'] }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'expliquer',
+      blocks: [
+        { kind: 'paragraph', text: 'En remplace de + nom (quantité, partitif).' },
+        { kind: 'paragraph', text: 'Y remplace à / en / dans + lieu (ou idée).' }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'retenir',
+      blocks: [
+        { kind: 'paragraph', text: 'en = de. y = à / lieu.' },
+        { kind: 'table', colHeader: true, rowHeader: true, headers: ['Pronom', 'Remplace', 'Exemple'], rows: [['en', 'de + chose', 'J’en mange.'], ['y', 'à / lieu', 'J’y vais.']] },
+        { kind: 'attention', text: 'Place en / y avant le verbe : j’y vais.' }
+      ],
+    },
     ],
   },
   {
@@ -166,26 +271,41 @@ export const pronomsDocs: GrammaireTheoryDoc[] = [
     blocks: [
       { kind: 'heading', text: 'Le pronom relatif dont' },
       { kind: 'paragraph', text: 'Je remplace de + nom avec dont.' },
-      { kind: 'heading', text: 'Je regarde', sub: true },
-      { kind: 'examples', items: [
-          'Le livre dont je parle est neuf.',
-          'La femme dont le fils travaille ici.',
+      {
+        kind: 'section',
+        role: 'regarder',
+        blocks: [
+          { kind: 'examples', items: [
+              'Le livre dont je parle est neuf.',
+              'La femme dont le fils travaille ici.',
+            ],
+          }
         ],
       },
-      { kind: 'heading', text: 'J’explique', sub: true },
-      { kind: 'paragraph', text: 'Dont = de + qui / de + que.' },
-      { kind: 'paragraph', text: 'Après un verbe avec de : parler de, avoir besoin de…' },
-      { kind: 'paragraph', text: 'Aussi pour la possession : dont le / la / les…' },
-      { kind: 'heading', text: 'Je retiens', sub: true },
-    { kind: 'paragraph', text: 'vois-tu un de ? → souvent dont.' },
-      { kind: 'table', colHeader: true, rowHeader: true, headers: ['Sans dont', 'Avec dont'],
-        rows: [
-          ['Je parle de ce film.', 'le film dont je parle'],
-          ['J’ai besoin de cette aide.', 'l’aide dont j’ai besoin'],
-          ['Le fils de cette femme…', 'la femme dont le fils…'],
+      {
+        kind: 'section',
+        role: 'expliquer',
+        blocks: [
+          { kind: 'paragraph', text: 'Dont = de + qui / de + que.' },
+          { kind: 'paragraph', text: 'Après un verbe avec de : parler de, avoir besoin de…' },
+          { kind: 'paragraph', text: 'Aussi pour la possession : dont le / la / les…' }
         ],
       },
-      { kind: 'attention', text: 'Pas « de dont » : un seul dont.' },
+      {
+        kind: 'section',
+        role: 'retenir',
+        blocks: [
+          { kind: 'paragraph', text: 'vois-tu un de ? → souvent dont.' },
+          { kind: 'table', colHeader: true, rowHeader: true, headers: ['Sans dont', 'Avec dont'],
+            rows: [
+              ['Je parle de ce film.', 'le film dont je parle'],
+              ['J’ai besoin de cette aide.', 'l’aide dont j’ai besoin'],
+              ['Le fils de cette femme…', 'la femme dont le fils…'],
+            ],
+          },
+          { kind: 'attention', text: 'Pas « de dont » : un seul dont.' }
+        ],
+      },
     ],
   },
   {
@@ -199,28 +319,43 @@ export const pronomsDocs: GrammaireTheoryDoc[] = [
     blocks: [
       { kind: 'heading', text: 'Les pronoms relatifs composés' },
       { kind: 'paragraph', text: 'Je relie deux idées après une préposition.' },
-      { kind: 'heading', text: 'Je regarde', sub: true },
-      { kind: 'examples', items: [
-          'La table sur laquelle j’écris.',
-          'Les amis avec lesquels je sors.',
+      {
+        kind: 'section',
+        role: 'regarder',
+        blocks: [
+          { kind: 'examples', items: [
+              'La table sur laquelle j’écris.',
+              'Les amis avec lesquels je sors.',
+            ],
+          }
         ],
       },
-      { kind: 'heading', text: 'J’explique', sub: true },
-      { kind: 'paragraph', text: 'Lequel / laquelle / lesquels / lesquelles.' },
-      { kind: 'paragraph', text: 'Avec à : auquel, à laquelle, auxquels, auxquelles.' },
-      { kind: 'paragraph', text: 'Avec de : duquel, de laquelle, desquels, desquelles.' },
-      { kind: 'paragraph', text: 'J’accorde avec le nom repris.' },
-      { kind: 'heading', text: 'Je retiens', sub: true },
-    { kind: 'paragraph', text: 'préposition + lequel (accordé).' },
-      { kind: 'table', colHeader: true, rowHeader: true, headers: ['Forme', 'Exemple'],
-        rows: [
-          ['lequel', 'le stylo avec lequel…'],
-          ['laquelle', 'la chaise sur laquelle…'],
-          ['auquel', 'le projet auquel…'],
-          ['desquels', 'les sujets desquels…'],
+      {
+        kind: 'section',
+        role: 'expliquer',
+        blocks: [
+          { kind: 'paragraph', text: 'Lequel / laquelle / lesquels / lesquelles.' },
+          { kind: 'paragraph', text: 'Avec à : auquel, à laquelle, auxquels, auxquelles.' },
+          { kind: 'paragraph', text: 'Avec de : duquel, de laquelle, desquels, desquelles.' },
+          { kind: 'paragraph', text: 'J’accorde avec le nom repris.' }
         ],
       },
-      { kind: 'attention', text: 'Qui ne va pas après toutes les prépositions.' },
+      {
+        kind: 'section',
+        role: 'retenir',
+        blocks: [
+          { kind: 'paragraph', text: 'préposition + lequel (accordé).' },
+          { kind: 'table', colHeader: true, rowHeader: true, headers: ['Forme', 'Exemple'],
+            rows: [
+              ['lequel', 'le stylo avec lequel…'],
+              ['laquelle', 'la chaise sur laquelle…'],
+              ['auquel', 'le projet auquel…'],
+              ['desquels', 'les sujets desquels…'],
+            ],
+          },
+          { kind: 'attention', text: 'Qui ne va pas après toutes les prépositions.' }
+        ],
+      },
     ],
   },
 ]

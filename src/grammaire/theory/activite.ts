@@ -13,14 +13,29 @@ export const activiteDocs: GrammaireTheoryDoc[] = [
     blocks: [
     { kind: 'heading', text: 'Faire une activité' },
     { kind: 'paragraph', text: 'Je parle d’une activité avec faire + du / de la / de l’.' },
-    { kind: 'heading', text: 'Je regarde', sub: true },
-    { kind: 'examples', items: ['Tu fais du piano.', 'Nous faisons de la natation.', 'Ils font de l’équitation.'] },
-    { kind: 'heading', text: 'J’explique', sub: true },
-    { kind: 'paragraph', text: 'Faire au présent + du (masculin), de la (féminin), de l’ (voyelle).' },
-    { kind: 'heading', text: 'Je retiens', sub: true },
-    { kind: 'paragraph', text: 'activité = faire + du / de la / de l’.' },
-    { kind: 'table', colHeader: true, rowHeader: true, headers: ['Genre', 'Forme', 'Exemple'], rows: [['masculin', 'du', 'Il fait du jogging.'], ['féminin', 'de la', 'Vous faites de la musique.'], ['voyelle', 'de l’', 'Elles font de l’équitation.']] },
-    { kind: 'attention', text: 'Sport / instrument : souvent du / de la, pas le.' },
+    {
+      kind: 'section',
+      role: 'regarder',
+      blocks: [
+        { kind: 'examples', items: ['Tu fais du piano.', 'Nous faisons de la natation.', 'Ils font de l’équitation.'] }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'expliquer',
+      blocks: [
+        { kind: 'paragraph', text: 'Faire au présent + du (masculin), de la (féminin), de l’ (voyelle).' }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'retenir',
+      blocks: [
+        { kind: 'paragraph', text: 'activité = faire + du / de la / de l’.' },
+        { kind: 'table', colHeader: true, rowHeader: true, headers: ['Genre', 'Forme', 'Exemple'], rows: [['masculin', 'du', 'Il fait du jogging.'], ['féminin', 'de la', 'Vous faites de la musique.'], ['voyelle', 'de l’', 'Elles font de l’équitation.']] },
+        { kind: 'attention', text: 'Sport / instrument : souvent du / de la, pas le.' }
+      ],
+    },
     ],
   },
   {
@@ -34,15 +49,30 @@ export const activiteDocs: GrammaireTheoryDoc[] = [
     blocks: [
     { kind: 'heading', text: 'Les verbes pronominaux' },
     { kind: 'paragraph', text: 'J’utilise un pronom réfléchi avec le verbe.' },
-    { kind: 'heading', text: 'Je regarde', sub: true },
-    { kind: 'examples', items: ['Je me douche.', 'Tu t’appelles Sam.', 'Ils se baignent.'] },
-    { kind: 'heading', text: 'J’explique', sub: true },
-    { kind: 'paragraph', text: 'Un verbe pronominal a deux pronoms : sujet + me/te/se/nous/vous/se.' },
-    { kind: 'astuce', text: 'Devant une voyelle : me → m’, te → t’, se → s’.' },
-    { kind: 'heading', text: 'Je retiens', sub: true },
-    { kind: 'paragraph', text: 'je me / tu t’ / il se / nous nous / vous vous / ils se.' },
-    { kind: 'table', colHeader: true, rowHeader: true, headers: ['Personne', 'Pronom', 'Exemple'], rows: [['je', 'me / m’', 'Je me lave.'], ['tu', 'te / t’', 'Tu t’appelles.'], ['il / elle / on', 'se / s’', 'Elle se couche.'], ['nous', 'nous', 'Nous nous regardons.'], ['vous', 'vous', 'Vous vous levez.'], ['ils / elles', 'se / s’', 'Ils se baignent.']] },
-    { kind: 'attention', text: 'Négation : Je ne me souviens pas.' },
+    {
+      kind: 'section',
+      role: 'regarder',
+      blocks: [
+        { kind: 'examples', items: ['Je me douche.', 'Tu t’appelles Sam.', 'Ils se baignent.'] }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'expliquer',
+      blocks: [
+        { kind: 'paragraph', text: 'Un verbe pronominal a deux pronoms : sujet + me/te/se/nous/vous/se.' },
+        { kind: 'astuce', text: 'Devant une voyelle : me → m’, te → t’, se → s’.' }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'retenir',
+      blocks: [
+        { kind: 'paragraph', text: 'je me / tu t’ / il se / nous nous / vous vous / ils se.' },
+        { kind: 'table', colHeader: true, rowHeader: true, headers: ['Personne', 'Pronom', 'Exemple'], rows: [['je', 'me / m’', 'Je me lave.'], ['tu', 'te / t’', 'Tu t’appelles.'], ['il / elle / on', 'se / s’', 'Elle se couche.'], ['nous', 'nous', 'Nous nous regardons.'], ['vous', 'vous', 'Vous vous levez.'], ['ils / elles', 'se / s’', 'Ils se baignent.']] },
+        { kind: 'attention', text: 'Négation : Je ne me souviens pas.' }
+      ],
+    },
     ],
   },
   {
@@ -56,17 +86,32 @@ export const activiteDocs: GrammaireTheoryDoc[] = [
     blocks: [
     { kind: 'heading', text: 'Les pronoms toniques' },
     { kind: 'paragraph', text: 'J’utilise moi, toi, lui… après une préposition ou pour insister.' },
-    { kind: 'heading', text: 'Je regarde', sub: true },
-    { kind: 'examples', items: ['Tu viens avec moi ?', 'Moi, je joue au tennis.', 'Qui veut jouer ? — Moi !'] },
-    { kind: 'heading', text: 'J’explique', sub: true },
-    { kind: 'paragraph', text: 'Pronoms toniques : moi, toi, lui, elle, soi, nous, vous, eux, elles.' },
-    { kind: 'paragraph', text: 'Après une préposition : avec moi, chez eux.' },
-    { kind: 'paragraph', text: 'Pour renforcer : Moi, je…' },
-    { kind: 'paragraph', text: 'Sans verbe : — Moi !' },
-    { kind: 'heading', text: 'Je retiens', sub: true },
-    { kind: 'paragraph', text: 'après préposition → pronom tonique.' },
-    { kind: 'table', colHeader: true, rowHeader: true, headers: ['Sujet', 'Tonique'], rows: [['je', 'moi'], ['tu', 'toi'], ['il', 'lui'], ['elle', 'elle'], ['on', 'soi'], ['nous', 'nous'], ['vous', 'vous'], ['ils', 'eux'], ['elles', 'elles']] },
-    { kind: 'attention', text: 'Phrase positive → moi aussi. Phrase négative → moi non plus.' },
+    {
+      kind: 'section',
+      role: 'regarder',
+      blocks: [
+        { kind: 'examples', items: ['Tu viens avec moi ?', 'Moi, je joue au tennis.', 'Qui veut jouer ? — Moi !'] }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'expliquer',
+      blocks: [
+        { kind: 'paragraph', text: 'Pronoms toniques : moi, toi, lui, elle, soi, nous, vous, eux, elles.' },
+        { kind: 'paragraph', text: 'Après une préposition : avec moi, chez eux.' },
+        { kind: 'paragraph', text: 'Pour renforcer : Moi, je…' },
+        { kind: 'paragraph', text: 'Sans verbe : — Moi !' }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'retenir',
+      blocks: [
+        { kind: 'paragraph', text: 'après préposition → pronom tonique.' },
+        { kind: 'table', colHeader: true, rowHeader: true, headers: ['Sujet', 'Tonique'], rows: [['je', 'moi'], ['tu', 'toi'], ['il', 'lui'], ['elle', 'elle'], ['on', 'soi'], ['nous', 'nous'], ['vous', 'vous'], ['ils', 'eux'], ['elles', 'elles']] },
+        { kind: 'attention', text: 'Phrase positive → moi aussi. Phrase négative → moi non plus.' }
+      ],
+    },
     ],
   },
 ]

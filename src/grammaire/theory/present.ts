@@ -18,30 +18,45 @@ export const presentDocs: GrammaireTheoryDoc[] = [
     blocks: [
       { kind: 'heading', text: 'Les pronoms sujets' },
       { kind: 'paragraph', text: 'Je remplace une personne ou un groupe devant le verbe.' },
-      { kind: 'heading', text: 'Je regarde', sub: true },
-      { kind: 'examples', items: [
-          'Ali parle français. → Il parle français.',
-          'Marie et moi partons. → Nous partons.',
+      {
+        kind: 'section',
+        role: 'regarder',
+        blocks: [
+          { kind: 'examples', items: [
+              'Ali parle français. → Il parle français.',
+              'Marie et moi partons. → Nous partons.',
+            ],
+          }
         ],
       },
-      { kind: 'heading', text: 'J’explique', sub: true },
-      { kind: 'paragraph', text: 'Un pronom sujet évite de répéter le nom.' },
-      { kind: 'paragraph', text: 'Je, tu, il, elle, on, nous, vous, ils, elles.' },
-      { kind: 'paragraph', text: 'On = une personne ou des personnes (souvent « nous » à l’oral).' },
-      { kind: 'heading', text: 'Je retiens', sub: true },
-    { kind: 'paragraph', text: 'un pronom sujet + un verbe conjugué.' },
-      { kind: 'table', colHeader: true, rowHeader: true, headers: ['Pronom', 'Qui ?', 'Exemple'],
-        rows: [
-          ['je', 'moi', 'Je travaille.'],
-          ['tu', 'toi (familier)', 'Tu écoutes.'],
-          ['il / elle', 'une personne', 'Elle lit.'],
-          ['on', 'quelqu’un / nous', 'On mange.'],
-          ['nous', 'moi + d’autres', 'Nous partons.'],
-          ['vous', 'politesse ou pluriel', 'Vous restez.'],
-          ['ils / elles', 'plusieurs', 'Ils arrivent.'],
+      {
+        kind: 'section',
+        role: 'expliquer',
+        blocks: [
+          { kind: 'paragraph', text: 'Un pronom sujet évite de répéter le nom.' },
+          { kind: 'paragraph', text: 'Je, tu, il, elle, on, nous, vous, ils, elles.' },
+          { kind: 'paragraph', text: 'On = une personne ou des personnes (souvent « nous » à l’oral).' }
         ],
       },
-      { kind: 'attention', text: 'Tu = familier. Vous = politesse ou plusieurs personnes.' },
+      {
+        kind: 'section',
+        role: 'retenir',
+        blocks: [
+          { kind: 'paragraph', text: 'un pronom sujet + un verbe conjugué.' },
+          { kind: 'table', colHeader: true, rowHeader: true, headers: ['Pronom', 'Qui ?', 'Exemple'],
+            rows: [
+              ['je', 'moi', 'Je travaille.'],
+              ['tu', 'toi (familier)', 'Tu écoutes.'],
+              ['il / elle', 'une personne', 'Elle lit.'],
+              ['on', 'quelqu’un / nous', 'On mange.'],
+              ['nous', 'moi + d’autres', 'Nous partons.'],
+              ['vous', 'politesse ou pluriel', 'Vous restez.'],
+              ['ils / elles', 'plusieurs', 'Ils arrivent.'],
+            ],
+          },
+          { kind: 'attention', text: 'Tu = familier. Vous = politesse ou plusieurs personnes.' }
+        ],
+      },
     ],
   },
   {
@@ -55,25 +70,40 @@ export const presentDocs: GrammaireTheoryDoc[] = [
     blocks: [
       { kind: 'heading', text: 'Le verbe être' },
       { kind: 'paragraph', text: 'Je conjugue être au présent.' },
-      { kind: 'heading', text: 'Je regarde', sub: true },
-      { kind: 'examples', items: ['Je suis fatigué.', 'Ils sont prêts.'],
-      },
-      { kind: 'heading', text: 'J’explique', sub: true },
-      { kind: 'paragraph', text: 'Être est un verbe irrégulier.' },
-      { kind: 'paragraph', text: 'Je l’utilise pour l’identité, l’état, la nationalité, le métier.' },
-      { kind: 'heading', text: 'Je retiens', sub: true },
-    { kind: 'paragraph', text: 'suis, es, est, sommes, êtes, sont.' },
-      { kind: 'table', colHeader: true, rowHeader: true, headers: ['Personne', 'être'],
-        rows: [
-          ['je', 'suis'],
-          ['tu', 'es'],
-          ['il / elle / on', 'est'],
-          ['nous', 'sommes'],
-          ['vous', 'êtes'],
-          ['ils / elles', 'sont'],
+      {
+        kind: 'section',
+        role: 'regarder',
+        blocks: [
+          { kind: 'examples', items: ['Je suis fatigué.', 'Ils sont prêts.'],
+          }
         ],
       },
-      { kind: 'attention', text: 'Vous êtes (pas « vous est »).' },
+      {
+        kind: 'section',
+        role: 'expliquer',
+        blocks: [
+          { kind: 'paragraph', text: 'Être est un verbe irrégulier.' },
+          { kind: 'paragraph', text: 'Je l’utilise pour l’identité, l’état, la nationalité, le métier.' }
+        ],
+      },
+      {
+        kind: 'section',
+        role: 'retenir',
+        blocks: [
+          { kind: 'paragraph', text: 'suis, es, est, sommes, êtes, sont.' },
+          { kind: 'table', colHeader: true, rowHeader: true, headers: ['Personne', 'être'],
+            rows: [
+              ['je', 'suis'],
+              ['tu', 'es'],
+              ['il / elle / on', 'est'],
+              ['nous', 'sommes'],
+              ['vous', 'êtes'],
+              ['ils / elles', 'sont'],
+            ],
+          },
+          { kind: 'attention', text: 'Vous êtes (pas « vous est »).' }
+        ],
+      },
     ],
   },
   {
@@ -87,34 +117,49 @@ export const presentDocs: GrammaireTheoryDoc[] = [
     blocks: [
       { kind: 'heading', text: 'Le verbe avoir' },
       { kind: 'paragraph', text: 'Je conjugue avoir au présent.' },
-      { kind: 'heading', text: 'Je regarde', sub: true },
-      { kind: 'examples', items: ['J’ai un billet.', 'Nous avons faim.'],
-      },
-      { kind: 'heading', text: 'J’explique', sub: true },
-      { kind: 'paragraph', text: 'Avoir est irrégulier.' },
-      { kind: 'paragraph', text: 'Je l’utilise pour la possession et beaucoup d’expressions.' },
-      { kind: 'examples', marker: 'puces', label: 'Expressions fréquentes', items: [
-          'avoir faim / soif',
-          'avoir froid / chaud',
-          'avoir peur',
-          'avoir raison / tort',
-          'avoir besoin de',
-          'avoir ans (âge)',
+      {
+        kind: 'section',
+        role: 'regarder',
+        blocks: [
+          { kind: 'examples', items: ['J’ai un billet.', 'Nous avons faim.'],
+          }
         ],
       },
-      { kind: 'heading', text: 'Je retiens', sub: true },
-    { kind: 'paragraph', text: 'ai, as, a, avons, avez, ont.' },
-      { kind: 'table', colHeader: true, rowHeader: true, headers: ['Personne', 'avoir'],
-        rows: [
-          ['j’', 'ai'],
-          ['tu', 'as'],
-          ['il / elle / on', 'a'],
-          ['nous', 'avons'],
-          ['vous', 'avez'],
-          ['ils / elles', 'ont'],
+      {
+        kind: 'section',
+        role: 'expliquer',
+        blocks: [
+          { kind: 'paragraph', text: 'Avoir est irrégulier.' },
+          { kind: 'paragraph', text: 'Je l’utilise pour la possession et beaucoup d’expressions.' },
+          { kind: 'examples', marker: 'puces', label: 'Expressions fréquentes', items: [
+              'avoir faim / soif',
+              'avoir froid / chaud',
+              'avoir peur',
+              'avoir raison / tort',
+              'avoir besoin de',
+              'avoir ans (âge)',
+            ],
+          }
         ],
       },
-      { kind: 'attention', text: 'J’ai (apostrophe). Ils ont ≠ ils sont.' },
+      {
+        kind: 'section',
+        role: 'retenir',
+        blocks: [
+          { kind: 'paragraph', text: 'ai, as, a, avons, avez, ont.' },
+          { kind: 'table', colHeader: true, rowHeader: true, headers: ['Personne', 'avoir'],
+            rows: [
+              ['j’', 'ai'],
+              ['tu', 'as'],
+              ['il / elle / on', 'a'],
+              ['nous', 'avons'],
+              ['vous', 'avez'],
+              ['ils / elles', 'ont'],
+            ],
+          },
+          { kind: 'attention', text: 'J’ai (apostrophe). Ils ont ≠ ils sont.' }
+        ],
+      },
     ],
   },
   {
@@ -128,26 +173,41 @@ export const presentDocs: GrammaireTheoryDoc[] = [
     blocks: [
       { kind: 'heading', text: 'Les verbes en -er' },
       { kind: 'paragraph', text: 'Je conjugue un verbe du 1er groupe au présent.' },
-      { kind: 'heading', text: 'Je regarde', sub: true },
-      { kind: 'examples', items: ['Je parle français.', 'Nous regardons la télé.'],
-      },
-      { kind: 'heading', text: 'J’explique', sub: true },
-      { kind: 'paragraph', text: 'Le présent sert pour maintenant, une habitude, une description.' },
-      { kind: 'paragraph', text: 'Radical = infinitif sans -er. Puis j’ajoute la terminaison.' },
-      { kind: 'paragraph', text: 'Terminaisons : -e, -es, -e, -ons, -ez, -ent.' },
-      { kind: 'heading', text: 'Je retiens', sub: true },
-    { kind: 'paragraph', text: 'radical + e / es / e / ons / ez / ent.' },
-      { kind: 'table', colHeader: true, rowHeader: true, headers: ['Personne', 'parler'],
-        rows: [
-          ['je', 'parle'],
-          ['tu', 'parles'],
-          ['il / elle / on', 'parle'],
-          ['nous', 'parlons'],
-          ['vous', 'parlez'],
-          ['ils / elles', 'parlent'],
+      {
+        kind: 'section',
+        role: 'regarder',
+        blocks: [
+          { kind: 'examples', items: ['Je parle français.', 'Nous regardons la télé.'],
+          }
         ],
       },
-      { kind: 'attention', text: 'Aller est en -er mais il est irrégulier (fiche suivante).' },
+      {
+        kind: 'section',
+        role: 'expliquer',
+        blocks: [
+          { kind: 'paragraph', text: 'Le présent sert pour maintenant, une habitude, une description.' },
+          { kind: 'paragraph', text: 'Radical = infinitif sans -er. Puis j’ajoute la terminaison.' },
+          { kind: 'paragraph', text: 'Terminaisons : -e, -es, -e, -ons, -ez, -ent.' }
+        ],
+      },
+      {
+        kind: 'section',
+        role: 'retenir',
+        blocks: [
+          { kind: 'paragraph', text: 'radical + e / es / e / ons / ez / ent.' },
+          { kind: 'table', colHeader: true, rowHeader: true, headers: ['Personne', 'parler'],
+            rows: [
+              ['je', 'parle'],
+              ['tu', 'parles'],
+              ['il / elle / on', 'parle'],
+              ['nous', 'parlons'],
+              ['vous', 'parlez'],
+              ['ils / elles', 'parlent'],
+            ],
+          },
+          { kind: 'attention', text: 'Aller est en -er mais il est irrégulier (fiche suivante).' }
+        ],
+      },
     ],
   },
   {
@@ -161,31 +221,46 @@ export const presentDocs: GrammaireTheoryDoc[] = [
     blocks: [
       { kind: 'heading', text: 'Les verbes en -er particuliers' },
       { kind: 'paragraph', text: 'Certains verbes en -er changent l’écriture.' },
-      { kind: 'heading', text: 'Je regarde', sub: true },
-      { kind: 'examples', items: [
-          'Nous mangeons.',
-          'Je jette le papier.',
-          'Je vais au travail.',
+      {
+        kind: 'section',
+        role: 'regarder',
+        blocks: [
+          { kind: 'examples', items: [
+              'Nous mangeons.',
+              'Je jette le papier.',
+              'Je vais au travail.',
+            ],
+          }
         ],
       },
-      { kind: 'heading', text: 'J’explique', sub: true },
-      { kind: 'paragraph', text: 'Aller : je vais, tu vas, il va, nous allons, vous allez, ils vont.' },
-      { kind: 'paragraph', text: 'Verbes en -ger : nous mangeons (e gardé devant o).' },
-      { kind: 'paragraph', text: 'Verbes en -cer : nous commençons (ç devant o).' },
-      { kind: 'paragraph', text: 'Certains doublent une consonne : jeter → je jette.' },
-      { kind: 'paragraph', text: 'Certains changent e → è : acheter → j’achète.' },
-      { kind: 'heading', text: 'Je retiens', sub: true },
-    { kind: 'paragraph', text: 'regarde l’infinitif pour choisir le modèle.' },
-      { kind: 'table', colHeader: true, rowHeader: true, headers: ['Cas', 'Exemple'],
-        rows: [
-          ['aller', 'je vais'],
-          ['-ger', 'nous mangeons'],
-          ['-cer', 'nous commençons'],
-          ['double consonne', 'je jette'],
-          ['e → è', 'j’achète'],
+      {
+        kind: 'section',
+        role: 'expliquer',
+        blocks: [
+          { kind: 'paragraph', text: 'Aller : je vais, tu vas, il va, nous allons, vous allez, ils vont.' },
+          { kind: 'paragraph', text: 'Verbes en -ger : nous mangeons (e gardé devant o).' },
+          { kind: 'paragraph', text: 'Verbes en -cer : nous commençons (ç devant o).' },
+          { kind: 'paragraph', text: 'Certains doublent une consonne : jeter → je jette.' },
+          { kind: 'paragraph', text: 'Certains changent e → è : acheter → j’achète.' }
         ],
       },
-      { kind: 'attention', text: 'Apprendre aller par cœur : il est très fréquent.' },
+      {
+        kind: 'section',
+        role: 'retenir',
+        blocks: [
+          { kind: 'paragraph', text: 'regarde l’infinitif pour choisir le modèle.' },
+          { kind: 'table', colHeader: true, rowHeader: true, headers: ['Cas', 'Exemple'],
+            rows: [
+              ['aller', 'je vais'],
+              ['-ger', 'nous mangeons'],
+              ['-cer', 'nous commençons'],
+              ['double consonne', 'je jette'],
+              ['e → è', 'j’achète'],
+            ],
+          },
+          { kind: 'attention', text: 'Apprendre aller par cœur : il est très fréquent.' }
+        ],
+      },
     ],
   },
   {
@@ -199,29 +274,44 @@ export const presentDocs: GrammaireTheoryDoc[] = [
     blocks: [
       { kind: 'heading', text: 'Les verbes en -ir' },
       { kind: 'paragraph', text: 'Je conjugue un verbe en -ir selon son modèle.' },
-      { kind: 'heading', text: 'Je regarde', sub: true },
-      { kind: 'examples', items: [
-          'Je finis le travail.',
-          'Elle part tôt.',
-          'Nous venons demain.',
+      {
+        kind: 'section',
+        role: 'regarder',
+        blocks: [
+          { kind: 'examples', items: [
+              'Je finis le travail.',
+              'Elle part tôt.',
+              'Nous venons demain.',
+            ],
+          }
         ],
       },
-      { kind: 'heading', text: 'J’explique', sub: true },
-      { kind: 'paragraph', text: 'Modèle finir : je finis, tu finis, il finit, nous finissons…' },
-      { kind: 'paragraph', text: 'Modèle partir / dormir / servir : je pars, tu dors, il sert…' },
-      { kind: 'paragraph', text: 'Modèle ouvrir : j’ouvre, tu ouvres, il ouvre (comme un -er).' },
-      { kind: 'paragraph', text: 'Modèle venir / tenir : je viens, tu viens, il vient, nous venons…' },
-      { kind: 'heading', text: 'Je retiens', sub: true },
-    { kind: 'paragraph', text: 'un verbe en -ir n’a pas une seule conjugaison.' },
-      { kind: 'table', colHeader: true, rowHeader: true, headers: ['Modèle', 'je', 'nous'],
-        rows: [
-          ['finir', 'finis', 'finissons'],
-          ['partir', 'pars', 'partons'],
-          ['ouvrir', 'ouvre', 'ouvrons'],
-          ['venir', 'viens', 'venons'],
+      {
+        kind: 'section',
+        role: 'expliquer',
+        blocks: [
+          { kind: 'paragraph', text: 'Modèle finir : je finis, tu finis, il finit, nous finissons…' },
+          { kind: 'paragraph', text: 'Modèle partir / dormir / servir : je pars, tu dors, il sert…' },
+          { kind: 'paragraph', text: 'Modèle ouvrir : j’ouvre, tu ouvres, il ouvre (comme un -er).' },
+          { kind: 'paragraph', text: 'Modèle venir / tenir : je viens, tu viens, il vient, nous venons…' }
         ],
       },
-      { kind: 'attention', text: 'Venir et tenir changent beaucoup : apprends-les à part.' },
+      {
+        kind: 'section',
+        role: 'retenir',
+        blocks: [
+          { kind: 'paragraph', text: 'un verbe en -ir n’a pas une seule conjugaison.' },
+          { kind: 'table', colHeader: true, rowHeader: true, headers: ['Modèle', 'je', 'nous'],
+            rows: [
+              ['finir', 'finis', 'finissons'],
+              ['partir', 'pars', 'partons'],
+              ['ouvrir', 'ouvre', 'ouvrons'],
+              ['venir', 'viens', 'venons'],
+            ],
+          },
+          { kind: 'attention', text: 'Venir et tenir changent beaucoup : apprends-les à part.' }
+        ],
+      },
     ],
   },
   {
@@ -235,32 +325,47 @@ export const presentDocs: GrammaireTheoryDoc[] = [
     blocks: [
       { kind: 'heading', text: 'Les verbes en -re et -oir' },
       { kind: 'paragraph', text: 'Je conjugue des verbes fréquents hors du 1er groupe.' },
-      { kind: 'heading', text: 'Je regarde', sub: true },
-      { kind: 'examples', items: [
-          'Je prends le bus.',
-          'Tu lis un livre.',
-          'Il veut un café.',
+      {
+        kind: 'section',
+        role: 'regarder',
+        blocks: [
+          { kind: 'examples', items: [
+              'Je prends le bus.',
+              'Tu lis un livre.',
+              'Il veut un café.',
+            ],
+          }
         ],
       },
-      { kind: 'heading', text: 'J’explique', sub: true },
-      { kind: 'paragraph', text: 'Verbes en -dre : je prends, tu prends, il prend, nous prenons…' },
-      { kind: 'paragraph', text: 'Verbes en -ire : je lis, tu lis, il lit, nous lisons…' },
-      { kind: 'paragraph', text: 'Faire : je fais, tu fais, il fait, nous faisons, vous faites, ils font.' },
-      { kind: 'paragraph', text: 'Vouloir / pouvoir / devoir / savoir : formes irrégulières à mémoriser.' },
-      { kind: 'paragraph', text: 'Savoir ≠ connaître : savoir = une info / une compétence ; connaître = une personne / un lieu.' },
-      { kind: 'heading', text: 'Je retiens', sub: true },
-    { kind: 'paragraph', text: 'apprends les verbes fréquents un par un.' },
-      { kind: 'table', colHeader: true, rowHeader: true, headers: ['Verbe', 'je', 'nous', 'ils'],
-        rows: [
-          ['prendre', 'prends', 'prenons', 'prennent'],
-          ['lire', 'lis', 'lisons', 'lisent'],
-          ['faire', 'fais', 'faisons', 'font'],
-          ['vouloir', 'veux', 'voulons', 'veulent'],
-          ['pouvoir', 'peux', 'pouvons', 'peuvent'],
-          ['devoir', 'dois', 'devons', 'doivent'],
+      {
+        kind: 'section',
+        role: 'expliquer',
+        blocks: [
+          { kind: 'paragraph', text: 'Verbes en -dre : je prends, tu prends, il prend, nous prenons…' },
+          { kind: 'paragraph', text: 'Verbes en -ire : je lis, tu lis, il lit, nous lisons…' },
+          { kind: 'paragraph', text: 'Faire : je fais, tu fais, il fait, nous faisons, vous faites, ils font.' },
+          { kind: 'paragraph', text: 'Vouloir / pouvoir / devoir / savoir : formes irrégulières à mémoriser.' },
+          { kind: 'paragraph', text: 'Savoir ≠ connaître : savoir = une info / une compétence ; connaître = une personne / un lieu.' }
         ],
       },
-      { kind: 'attention', text: 'Vous faites (pas « vous faisez »).' },
+      {
+        kind: 'section',
+        role: 'retenir',
+        blocks: [
+          { kind: 'paragraph', text: 'apprends les verbes fréquents un par un.' },
+          { kind: 'table', colHeader: true, rowHeader: true, headers: ['Verbe', 'je', 'nous', 'ils'],
+            rows: [
+              ['prendre', 'prends', 'prenons', 'prennent'],
+              ['lire', 'lis', 'lisons', 'lisent'],
+              ['faire', 'fais', 'faisons', 'font'],
+              ['vouloir', 'veux', 'voulons', 'veulent'],
+              ['pouvoir', 'peux', 'pouvons', 'peuvent'],
+              ['devoir', 'dois', 'devons', 'doivent'],
+            ],
+          },
+          { kind: 'attention', text: 'Vous faites (pas « vous faisez »).' }
+        ],
+      },
     ],
   },
   {
