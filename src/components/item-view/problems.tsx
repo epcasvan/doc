@@ -205,7 +205,7 @@ function TheoryExamplesView({
                   {' '}
                   <span className="theory-ex-bad" aria-label="à éviter">
                     <span className="theory-ex-bad-icon" aria-hidden="true">⚠</span>
-                    Faux : <TheoryRichText text={ex.wrong} />
+                    Faux <TheoryRichText text={ex.wrong} />
                   </span>
                 </>
               ) : null}
