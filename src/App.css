@@ -533,8 +533,12 @@ html,body,#root{
 .theory-section-content>.theory-heading.is-sub{color:var(--theory-accent)}
 .theory-section .theory-mark-theme,
 .theory-section .theory-tab.is-arrow,
+.theory-section .theory-tab.is-bullet,
+.theory-section .theory-tab.is-trait,
 .theory-section .theory-examples-label,
-.theory-section .theory-examples-block.is-numeros .theory-examples li::before{
+.theory-section .theory-examples-block.is-numeros .theory-examples li::before,
+.theory-section .theory-examples-block.is-trait .theory-examples li::before,
+.theory-section .theory-tabs.is-trait .theory-tab-marker::before{
   color:var(--theory-accent)
 }
 .theory-section .theory-mark-under{text-decoration-color:var(--theory-accent)}
@@ -565,10 +569,6 @@ html,body,#root{
 }
 .theory-tabs td{border:0;padding:0;vertical-align:baseline;text-align:left}
 .theory-tab-cell{white-space:nowrap}
-.theory-tab-cell.is-bulleted::before{
-  content:"";display:inline-block;width:.45em;height:.45em;margin-right:.4em;
-  border-radius:50%;background:var(--purple);vertical-align:.05em
-}
 .theory-tab{padding:0}
 .theory-tabs.is-puces{counter-reset:theory-tab}
 .theory-tabs.is-puces .theory-tab-marker{width:1em;min-width:1em}
@@ -582,12 +582,18 @@ html,body,#root{
   width:1.4em;min-width:1.4em;font-weight:700;color:var(--purple)
 }
 .theory-tabs.is-numeros .theory-tab-marker::before{content:counter(theory-tab) "."}
-.theory-tab.is-arrow{
+.theory-tabs.is-trait .theory-tab-marker{width:1.4em;min-width:1.4em;font-weight:700}
+.theory-tabs.is-trait .theory-tab-marker::before{content:"—"}
+.theory-tab.is-arrow,.theory-tab.is-bullet,.theory-tab.is-trait{
   text-align:right;padding-right:.4em;color:var(--purple);font-weight:700;
   -webkit-print-color-adjust:exact;print-color-adjust:exact
 }
 .theory-tab.is-arrow::after{content:"→"}
-.theory-table .theory-tabs.is-arrowed{width:100%;table-layout:fixed}
+.theory-tab.is-bullet::after{
+  content:"";display:inline-block;width:.45em;height:.45em;border-radius:50%;background:currentColor
+}
+.theory-tab.is-trait::after{content:"—"}
+.theory-table .theory-tabs.is-marked{width:100%;table-layout:fixed}
 .theory-mark-bold{font-weight:700}
 .theory-mark-theme{font-weight:700;color:var(--purple);-webkit-print-color-adjust:exact;print-color-adjust:exact}
 .theory-mark-under{
@@ -609,7 +615,8 @@ html,body,#root{
   border-left:2pt solid var(--purple);padding-left:.7em
 }
 .theory-examples-block.is-puces .theory-examples li,
-.theory-examples-block.is-numeros .theory-examples li{
+.theory-examples-block.is-numeros .theory-examples li,
+.theory-examples-block.is-trait .theory-examples li{
   display:flex;align-items:flex-start;gap:.45em
 }
 .theory-examples-block.is-puces .theory-examples li::before{
@@ -621,6 +628,9 @@ html,body,#root{
 .theory-examples-block.is-numeros .theory-examples li::before{
   content:counter(theory-ex) ".";
   flex:0 0 1.4em;font-weight:700;color:var(--purple);line-height:1.5
+}
+.theory-examples-block.is-trait .theory-examples li::before{
+  content:"—";flex:0 0 1.4em;font-weight:700;color:var(--purple);line-height:1.5
 }
 .theory-examples-block .theory-examples li.is-ligne{
   display:block;height:auto;margin:0;padding:0;counter-increment:none

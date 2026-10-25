@@ -162,7 +162,7 @@ function TheoryExamplesView({
   entries,
 }: {
   label: string
-  marker: 'border' | 'puces' | 'numeros'
+  marker: 'border' | 'puces' | 'trait' | 'numeros'
   border?: boolean
   entries: Array<{ text: string; wrong?: string }>
 }) {

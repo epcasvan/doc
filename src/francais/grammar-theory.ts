@@ -1,7 +1,7 @@
 /** Types et helpers pour les fiches de théorie grammaticale. */
 
-/** Marqueur des exemples : puces rondes, numéros, ou bordure seule. */
-export type TheoryExamplesMarker = 'border' | 'puces' | 'numeros'
+/** Marqueur des exemples : puces rondes, tirets, numéros, ou bordure seule. */
+export type TheoryExamplesMarker = 'border' | 'puces' | 'trait' | 'numeros'
 
 export type TheoryExampleItem = string | { text: string; wrong?: string }
 
@@ -18,7 +18,7 @@ export type GrammarTheoryBlock =
       border?: boolean
       label?: string
     }
-  /** Colonnes alignées. `puce` ajoute une puce devant la deuxième colonne. */
+  /** Colonnes alignées. `puce` ajoute une puce dans l’espace de tabulation. */
   | { kind: 'tab'; rows: string[][]; tab?: number; fleche?: boolean; puce?: boolean }
   | { kind: 'list'; title?: string; items: string[] }
   | { kind: 'table'; headers: string[]; rows: string[][]; colHeader?: boolean; rowHeader?: boolean }
