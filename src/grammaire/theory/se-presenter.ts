@@ -223,7 +223,7 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
         { kind: 'paragraph', text: 'Souvent, j’ajoute un {c}e{/c} au féminin.' },
         { kind: 'paragraph', text: '{ligne/2}' },
         { kind: 'examples', marker: 'puces', items: [
-          '{tab:2++}{g}Masculin{/g} | {g}Terminaison{/g} | {g}Féminin{/g}',
+          '{tab:+2++}{g}Masculin{/g} | {g}Terminaison{/g} | {g}Féminin{/g}',
           '{tab:2+>}Il est {c}espognol{/c} | + {c}e{/c} | Elle est {c}belge{/c}',
           '{tab:2+>}Il est {c}ukrainien{/c} | + {c}ne{/c} | Elle est {c}ukrainienne{/c}',
           '{tab:2+>}Il est {c}turc{/c} | + {c}que{/c} | {c}turque{/c}',
@@ -269,11 +269,11 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
         { kind: 'paragraph', text: 'Le mot {c}de{/c} change selon le nom du pays.' },
         { kind: 'paragraph', text: '{ligne/2}' },
         { kind: 'examples', marker: 'puces', items: [
-          '{tab:2++}Nom du pays | Mot à utiliser | Exemples',
+          '{tab:+2++}{g}Nom du pays{/g} | {g}Préposition{/g} | {g}Exemples{/g}',
           '{tab:2+>}Pays masculin | {c}du{/c} | Elle vient {c}du{/c} {c}Brésil{/c}',
           '{tab:2+>}Pays féminin | {c}de{/c} | Elle vient {c}de{/c} {c}Suisse{/c}',
           '{tab:2+>}Pays avec une voyelle | {c}d’{/c} | Elle vient {c}d’{/c} Ukraine',
-          '{tab:2+>}Pays au pluriel{/c} | {c}des{/c} | Elle vient {c}des{/c} Etats-unis',
+          '{tab:2+>}Pays au pluriel | {c}des{/c} | Elle vient {c}des{/c} Etats-unis',
         ] },
       ],
     },
@@ -287,7 +287,7 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
         { kind: 'paragraph', text: 'La préposition {c}de{/c} change de forme selon le genre du pays.' },
         { kind: 'paragraph', text: '{ligne/2}' },
         { kind: 'table', colHeader: true, rowHeader: true, 
-          headers: ['Nom du pays', 'Mots à utiliser', 'Exemples'], 
+          headers: ['Nom du pays', 'Préposition', 'Exemples'], 
           rows: [
           ['Pays masculin', 'du', 'Je viens du Vietnam.'], 
           ['Pays féminin', 'de', 'Je viens de France.'],
