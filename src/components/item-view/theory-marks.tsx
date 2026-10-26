@@ -1,10 +1,10 @@
 import type { ReactNode } from 'react'
 import { Fragment } from 'react'
 
-/** `{g}…{/g}` gras · `{c}…{/c}` couleur · `{s}…{/s}` souligné · `/n` retour · `{ligne}` / `{ligne/N}` · après `{tab:N}`, `+` vide, `>` flèche, `<` puce, `-` tiret, dans l’ordre des colonnes. */
+/** `{g}…{/g}` gras · `{c}…{/c}` couleur · `{s}…{/s}` souligné · `/n` retour · `{ligne}` / `{ligne/N}` · après `{tab:N}`, `+` vide, `>` flèche, `<` puce, `-` tiret, dans l’ordre des colonnes. `+` devant `N` supprime le premier marqueur. */
 const MARK = /\{(g|c|s)\}([\s\S]*?)\{\/\1\}|\/n/g
 const LIGNE = /\{ligne(?:\/([234]))?\}/gi
-const TAB = /\{tab:(\d+)(?:\s*([+><-]+|fleche))?(?:\s*(puce))?\}/gi
+const TAB = /\{tab:(\+?)(\d+)(?:\s*([+><-]+|fleche))?(?:\s*(puce))?\}/gi
 
 type TheoryTabMarker = 'arrow' | 'bullet' | 'trait' | null
 export type TheoryTabRow = { n: number; markers: TheoryTabMarker[]; cells: string[] }
@@ -62,11 +62,12 @@ function theoryPieces(text: string): TheoryPiece[] {
     const cells = rowText
       .split(rowText.includes('|') ? '|' : ',')
       .map((cell) => cell.trim())
-    const markerSequence = match[2]?.toLowerCase() === 'fleche' ? '>' : match[2] ?? (match[3] ? '<' : '')
-    const markers = [...markerSequence].map((symbol): TheoryTabMarker =>
+    const markerSequence = match[3]?.toLowerCase() === 'fleche' ? '>' : match[3] ?? (match[4] ? '<' : '')
+    let markers = [...markerSequence].map((symbol): TheoryTabMarker =>
       symbol === '>' ? 'arrow' : symbol === '<' ? 'bullet' : symbol === '-' ? 'trait' : null,
     )
-    rows.push({ n: Math.max(1, Number(match[1]) || 1), markers, cells })
+    if (match[1] === '+') markers = markers.slice(1)
+    rows.push({ n: Math.max(1, Number(match[2]) || 1), markers, cells })
     cursor = end
   })
   flushRows()
