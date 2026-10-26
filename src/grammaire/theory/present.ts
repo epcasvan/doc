@@ -17,39 +17,67 @@ export const presentDocs: GrammaireTheoryDoc[] = [
     objectif: 'Conjuguer être au présent.',
     blocks: [
       { kind: 'heading', text: 'Le verbe être' },
-      { kind: 'paragraph', text: 'Je conjugue être au présent.' },
+      { kind: 'paragraph', text: '{ligne/4}' },
+      { kind: 'paragraph', text: 'Je conjugue {g}être{/g} au présent.' },
+      { kind: 'paragraph', text: '{ligne/2}' },
       {
         kind: 'section',
         role: 'regarder',
         blocks: [
-          { kind: 'examples', items: ['Je suis fatigué.', 'Ils sont prêts.'],
-          }
+          { kind: 'examples', marker: 'puces', items: [
+            '{tab:1<}Je {c}suis{/c} fatigué. | Vous {c}êtes{/c} française.',
+            '{tab:1<}Tu {c}es{/c} cuisinier. | Nous {c}sommes{/c} à Sion.',
+            '{tab:1<}Il {c}est{/c} prêt. | Ils {c}sont{/c} étudiants.'
+          ]},
         ],
       },
       {
         kind: 'section',
         role: 'expliquer',
         blocks: [
-          { kind: 'paragraph', text: 'Être est un verbe irrégulier.' },
-          { kind: 'paragraph', text: 'Je l’utilise pour l’identité, l’état, la nationalité, le métier.' }
+          { kind: 'paragraph', text: 'Le verbe {c}être{/c} est un verbe irrégulier. Sa forme change selon la personne.' },
+          { kind: 'paragraph', text: '{ligne/4}' },
+          { kind: 'paragraph', text: 'Je l’utilise donner des informations sur une personne.' },
+          { kind: 'paragraph', text: '{ligne/2}' },
+          { kind: 'exemples', marker: 'puces', items : [
+            '{tab:+1+} Je parle de … | Exemples',
+            '{tab:1>}Identité | Je suis {c}Melina{/c}.',
+            '{tab:1>}Nationalité | Je suis {c}suisse{/c}.',
+            '{tab:1>}Métier | Je suis {c}professeure{/c}.',
+            '{tab:1>}Description | Je suis {c}fatigué{/c}.',
+            '{tab:1>}Situation | Je suis {c}à l’école{/c}.',
+          ]},
+          { kind: 'paragraph', text: '{ligne/2}' },
+          { kind: 'paragraph', text: 'Je choisis la {c}bonne forme{/c} du verbe selon la personne.'},
+          { kind: 'paragraph', text: '{ligne/2}' },
+          { kind: 'examples', marker: 'puces', items: [
+            '{tab:+1+} Singulier | Pluriel',
+            '{tab:1<}Je {c}suis{/c} à la maison. | Nous {c}sommes{/c} à la maison.',
+            '{tab:1<}Tu {c}es{/c} à la maison. | Vous {c}êtes{/c} à la maison.',
+            '{tab:1<}Il / Elle {c}est{/c} à la maison. | Ils / Elles {c}sont{/c} à la maison.'
+          ]},
         ],
       },
       {
         kind: 'section',
         role: 'retenir',
         blocks: [
-          { kind: 'paragraph', text: 'suis, es, est, sommes, êtes, sont.' },
-          { kind: 'table', colHeader: true, rowHeader: true, headers: ['Personne', 'être'],
+          { kind: 'paragraph', text: 'Je retiens les six formes du verbe {c}être{/c} au présent.' },
+          { kind: 'paragraph', text: '{ligne/2}' },
+          { kind: 'table', colHeader: true, rowHeader: true, headers: ['Personne', 'Être'],
             rows: [
-              ['je', 'suis'],
-              ['tu', 'es'],
-              ['il / elle / on', 'est'],
-              ['nous', 'sommes'],
-              ['vous', 'êtes'],
-              ['ils / elles', 'sont'],
+              ['je', '{c}suis{/c}'],
+              ['tu', '{c}es{/c}'],
+              ['il / elle / on', '{c}est{/c}'],
+              ['nous', '{c}sommes{/c}'],
+              ['vous', '{c}êtes{/c}'],
+              ['ils / elles', '{c}sont{/c}'],
             ],
           },
-          { kind: 'attention', text: 'Vous êtes (pas « vous est »).' }
+          { kind: 'paragraph', text: '{c}Attention : {/c} Ne pas confondre les formes {c}es{/c}-{c}est{/c} et {c}êtes{/c}-{c}est{/c}.' },
+          { kind: 'examples', items: [
+            { text: 'Je dis : « Vous {c}êtes{/c} ici. »', wrong: 'Vous est ici.' },
+        ]},
         ],
       },
     ],
@@ -64,7 +92,9 @@ export const presentDocs: GrammaireTheoryDoc[] = [
     objectif: 'Conjuguer avoir au présent.',
     blocks: [
       { kind: 'heading', text: 'Le verbe avoir' },
+      { kind: 'paragraph', text: '{ligne/4}' },
       { kind: 'paragraph', text: 'Je conjugue avoir au présent.' },
+      { kind: 'paragraph', text: '{ligne/2}' },
       {
         kind: 'section',
         role: 'regarder',
@@ -120,7 +150,9 @@ export const presentDocs: GrammaireTheoryDoc[] = [
     objectif: 'Conjuguer un verbe régulier en -er au présent.',
     blocks: [
       { kind: 'heading', text: 'Les verbes en -er' },
+      { kind: 'paragraph', text: '{ligne/4}' },
       { kind: 'paragraph', text: 'Je conjugue un verbe du 1er groupe au présent.' },
+      { kind: 'paragraph', text: '{ligne/2}' },
       {
         kind: 'section',
         role: 'regarder',
@@ -168,7 +200,9 @@ export const presentDocs: GrammaireTheoryDoc[] = [
     objectif: 'Reconnaître les changements orthographiques des verbes en -er.',
     blocks: [
       { kind: 'heading', text: 'Les verbes en -er particuliers' },
+      { kind: 'paragraph', text: '{ligne/4}' },
       { kind: 'paragraph', text: 'Certains verbes en -er changent l’écriture.' },
+      { kind: 'paragraph', text: '{ligne/2}' },
       {
         kind: 'section',
         role: 'regarder',
@@ -221,7 +255,9 @@ export const presentDocs: GrammaireTheoryDoc[] = [
     objectif: 'Dire où je vais (pays, continent, ville).',
     blocks: [
       { kind: 'heading', text: 'Aller : destination (pays et villes)' },
+      { kind: 'paragraph', text: '{ligne/4}' },
       { kind: 'paragraph', text: 'Je dis ma destination avec le verbe aller.' },
+      { kind: 'paragraph', text: '{ligne/2}' },
       {
         kind: 'section',
         role: 'regarder',
@@ -261,7 +297,9 @@ export const presentDocs: GrammaireTheoryDoc[] = [
     objectif: 'Dire où je vais (lieux, chez quelqu’un).',
     blocks: [
       { kind: 'heading', text: 'Aller : lieux et chez' },
+      { kind: 'paragraph', text: '{ligne/4}' },
       { kind: 'paragraph', text: 'Je vais à un lieu. Je vais chez une personne.' },
+      { kind: 'paragraph', text: '{ligne/2}' },
       {
         kind: 'section',
         role: 'regarder',
@@ -299,7 +337,9 @@ export const presentDocs: GrammaireTheoryDoc[] = [
     objectif: 'Conjuguer les modèles principaux des verbes en -ir.',
     blocks: [
       { kind: 'heading', text: 'Les verbes en -ir' },
+      { kind: 'paragraph', text: '{ligne/4}' },
       { kind: 'paragraph', text: 'Je conjugue un verbe en -ir selon son modèle.' },
+      { kind: 'paragraph', text: '{ligne/2}' },
       {
         kind: 'section',
         role: 'regarder',
@@ -350,7 +390,9 @@ export const presentDocs: GrammaireTheoryDoc[] = [
     objectif: 'Conjuguer les modèles fréquents en -re et -oir.',
     blocks: [
       { kind: 'heading', text: 'Les verbes en -re et -oir' },
+      { kind: 'paragraph', text: '{ligne/4}' },
       { kind: 'paragraph', text: 'Je conjugue des verbes fréquents hors du 1er groupe.' },
+      { kind: 'paragraph', text: '{ligne/2}' },
       {
         kind: 'section',
         role: 'regarder',
@@ -424,7 +466,9 @@ export const presentDocs: GrammaireTheoryDoc[] = [
     objectif: 'Former une phrase négative avec ne … pas.',
     blocks: [
     { kind: 'heading', text: 'La négation ne … pas' },
+    { kind: 'paragraph', text: '{ligne/4}' },
     { kind: 'paragraph', text: 'Je mets ne et pas autour du verbe.' },
+    { kind: 'paragraph', text: '{ligne/2}' },
     {
       kind: 'section',
       role: 'regarder',
@@ -462,7 +506,9 @@ export const presentDocs: GrammaireTheoryDoc[] = [
     objectif: 'Utiliser jamais, plus, rien, personne…',
     blocks: [
     { kind: 'heading', text: 'Autres négations' },
+    { kind: 'paragraph', text: '{ligne/4}' },
     { kind: 'paragraph', text: 'Je choisis la bonne négation selon le sens.' },
+    { kind: 'paragraph', text: '{ligne/2}' },
     {
       kind: 'section',
       role: 'regarder',
