@@ -34,7 +34,7 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
         { kind: 'paragraph', text: 'J’utilise les différents {c}verbes{/c} pour décrire qui je suis. Un {c}verbe{/c}, c’est un mot d’{c}action{/c} ou d’{c}état{/c}.' },
         { kind: 'paragraph', text: '{ligne/2}' },
         { kind: 'examples', marker: 'puces', items: [
-          '{tab:2++}Verbe | Mots | Exemples',
+          '{tab:2++}{g}Verbe{/g} | {g}Mots{/g} | {g}Exemples{/g}',
           '{tab:2+>}S’appeler | + {c}prénom{/c} | Je m’appelle {c}Fatima{/c}.', 
           '{tab:2+>}Avoir | + {c}âge{/c} | J’ai {c}16 ans{/c}.', 
           '{tab:2+>}Être | + {c}nationalité{/c} | Je suis {c}syrienne{/c}.', 
@@ -156,7 +156,8 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
           { kind: 'paragraph', text: 'Le pronom sujet se place {c}devant le verbe{/c}.' },
           { kind: 'paragraph', text: '{ligne/4}' },
           { kind: 'paragraph', text: 'Pour {c}trouver le sujet{/c} de la phrase :'},
-          { kind: 'examples', marker: 'numeros', items: ['Je regarde le {c}verbe{/c}', 'Je pose la question : {c}Qui fait cela ?{/c} ou {c}Qui est comme ça ?{/c}.' ] },
+          { kind: 'examples', marker: 'numeros', 
+            items: ['Je regarde le {c}verbe{/c}', 'Je pose la question : {c}Qui fait cela ?{/c} ou {c}Qui est comme ça ?{/c}.' ] },
         ],
       },
       
@@ -195,7 +196,8 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
         { kind: 'paragraph', text: '{ligne/4}' },
         { kind: 'paragraph', text: 'Si le masculin finit déjà par {c}e{/c}, le féminin {c}ne change pas{/c}.' },
         { kind: 'paragraph', text: '{ligne/2}' },
-        { kind: 'table', colHeader: true, rowHeader: true, headers: ['Masculin', 'Féminin', 'Exemples'], 
+        { kind: 'table', colHeader: true, rowHeader: true, 
+          headers: ['Masculin', 'Féminin', 'Exemples'], 
           rows: [
             ['-ais', '-aise', '{tab:1>}japon{c}ais{/c} | japon{c}aise{/c}'], 
             ['-ois', '-oise', '{tab:1>}chin{c}ois{/c} | chin{c}oise{/c}'], 
@@ -207,8 +209,7 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
         { kind: 'paragraph', text: '{c}Attention :{/c}' },
         { kind: 'paragraph', text: 'Les adjectifs terminant par {c}c{/c} change en {c}que{/c} ou {c}cque{/c}.' },
         { kind: 'examples', marker: 'puces', items: [
-          '{tab:1>}tur{c}c{/c} | tur{c}que{/c}',
-          '{tab:1>}gre{c}c{/c} | gre{c}cque{/c}',
+          '{tab:3><>}tur{c}c{/c} | tur{c}que{/c} | gre{c}c{/c} | gre{c}cque{/c}',
         ] },
       ],
     },
@@ -222,10 +223,10 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
         { kind: 'paragraph', text: 'Souvent, j’ajoute un {c}e{/c} au féminin.' },
         { kind: 'paragraph', text: '{ligne/2}' },
         { kind: 'examples', marker: 'puces', items: [
-          '{tab:2++}{c}Masculin{/c} | Terminaison | {c}Féminin{/c}',
+          '{tab:2++}{g}Masculin{/g} | {g}Terminaison{/g} | {g}Féminin{/g}',
           '{tab:2+>}Il est {c}espognol{/c} | + {c}e{/c} | Elle est {c}belge{/c}',
           '{tab:2+>}Il est {c}ukrainien{/c} | + {c}ne{/c} | Elle est {c}ukrainienne{/c}',
-          '{tab:2+>}Il est {c}tur{c}c{/c} | + {c}que{/c} | {c}tur{c}que{/c}',
+          '{tab:2+>}Il est {c}turc{/c} | + {c}que{/c} | {c}turque{/c}',
           '{tab:2+>}Il est {c}russe{/c} | | Elle est {c}russe{/c}',
 
         ] },
@@ -262,19 +263,17 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
       role: 'expliquer',
       blocks: [
         { kind: 'paragraph', text: 'Pour dire mon pays d’origine, j’utilise le verbe {c}venir{/c}.' },
-        { kind: 'paragraph', text: '{ligne/4}' },
-        { kind: 'paragraph', text: 'J’utilise {c}du{/c}, {c}de{/c}, {c}d’{/c}, {c}des{/c}, {c}de la{/c}, de l’{/c} .' },
-        { kind: 'paragraph', text: '{ligne/4}' },
         { kind: 'paragraph', text: 'Je dis : je viens du Sénégal, de Chine ou d’Irak.' },
         { kind: 'paragraph', text: '{ligne/4}' },
+        { kind: 'paragraph', text: 'J’utilise {c}du{/c}, {c}de{/c}, {c}d’{/c} ou {c}des{/c}.' },
         { kind: 'paragraph', text: 'Le mot {c}de{/c} change selon le nom du pays.' },
         { kind: 'paragraph', text: '{ligne/2}' },
         { kind: 'examples', marker: 'puces', items: [
           '{tab:2++}Nom du pays | Mot à utiliser | Exemples',
-          '{tab:2+>}Pays masculin | {c}du{/c} | Elle est {c}belge{/c}',
-          '{tab:2+>}Pays féminin | {c}de{/c} | Elle est {c}ukrainienne{/c}',
-          '{tab:2+>}Pays avec une voyelle | {c}d’{/c} | {c}tur{c}que{/c}',
-          '{tab:2+>}Pays au pluriel{/c} | {c}des{/c} | Elle est {c}russe{/c}',
+          '{tab:2+>}Pays masculin | {c}du{/c} | Elle vient {c}du{/c} {c}Brésil{/c}',
+          '{tab:2+>}Pays féminin | {c}de{/c} | Elle vient {c}de{/c} {c}Suisse{/c}',
+          '{tab:2+>}Pays avec une voyelle | {c}d’{/c} | Elle vient {c}d’{/c} Ukraine',
+          '{tab:2+>}Pays au pluriel{/c} | {c}des{/c} | Elle vient {c}des{/c} Etats-unis',
         ] },
       ],
     },
@@ -286,17 +285,21 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
         { kind: 'paragraph', text: 'J’utilise {c}Venir de{/c} pour dire d’où je viens.' },
         { kind: 'paragraph', text: '{ligne/4}' },
         { kind: 'paragraph', text: 'La préposition {c}de{/c} change de forme selon le genre du pays.' },
-        { kind: 'table', colHeader: true, rowHeader: true, headers: ['Lieu', 'Forme', 'Exemple'], rows: [
-          ['pays masc. + consonne', 'du', 'Je viens du Sénégal.'], 
-          ['voyelle', 'd’', 'Tu viens d’Irak.'], 
-          ['pays féminin', 'de', 'On vient de Chine.'], 
-          ['pluriel', 'des', 'Nous venons des Pays-Bas.'], 
-          ['personne', 'de chez', 'Je viens de chez le médecin.']] },
+        { kind: 'paragraph', text: '{ligne/2}' },
+        { kind: 'table', colHeader: true, rowHeader: true, 
+          headers: ['Nom du pays', 'Mots à utiliser', 'Exemples'], 
+          rows: [
+          ['Pays masculin', 'du', 'Je viens du Vietnam.'], 
+          ['Pays féminin', 'de', 'Je viens de France.'],
+          ['Avec une voyelle', 'd’', 'Je viens d’Autriche.'], 
+          ['Pays au pluriel', 'des', 'Je viens des Philippines.'], 
+        ] },
+        { kind: 'paragraph', text: '{ligne/2}' },
         { kind: 'paragraph', text: '{c}Attention :{/c} Il ne faut pas mélanger les verbes {c}aller{/c} et {c}venir de{/c}.' },
         { kind: 'examples', marker: 'puces',
           items: [
-            'Je vais au Sénégal. = Je pars vers le Sénégal.',
-            'Je viens du Sénégal. = Le Sénégal est mon pays d’origine.'
+            '{tab:1+}Je vais au Sénégal. | = Je pars vers le Sénégal.',
+            '{tab:1+}Je viens du Sénégal. | = Le Sénégal est mon pays d’origine.'
           ]
         }
 
@@ -319,14 +322,15 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
       kind: 'section',
       role: 'regarder',
       blocks: [
-        { kind: 'examples', items: ['Quel âge as-tu ?', 'J’ai 25 ans.'] }
+        { kind: 'examples', items: ['{tab:1>}Quel âge as-tu ? | J’ai 25 ans.'] }
       ],
     },
     {
       kind: 'section',
       role: 'expliquer',
       blocks: [
-        { kind: 'paragraph', text: 'En français, j’utilise avoir + nombre + an(s).' },
+        { kind: 'paragraph', text: 'En français, j’utilise {c}avoir{/c} + nombre + an(s).' },
+        { kind: 'paragraph', text: '{ligne/4}' },
         { kind: 'paragraph', text: 'Je ne dis pas « je suis 25 ans ».' }
       ],
     },
@@ -334,9 +338,10 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
       kind: 'section',
       role: 'retenir',
       blocks: [
-        { kind: 'paragraph', text: 'âge = avoir + nombre + an(s).' },
+        { kind: 'paragraph', text: 'Je dis mon âge avec le verbe avoir + nombre + an(s).' },
+        { kind: 'paragraph', text: '{ligne/4}' },
         { kind: 'table', colHeader: true, rowHeader: true, headers: ['Personne', 'Forme', 'Exemple'], rows: [['je', 'j’ai', 'J’ai 15 ans.'], ['tu', 'tu as', 'Tu as 12 ans.'], ['il / elle / on', 'a', 'Elle a 45 ans.'], ['nous', 'avons', 'Nous avons 27 ans.'], ['vous', 'avez', 'Vous avez 50 ans.'], ['ils / elles', 'ont', 'Ils ont 20 ans.']] },
-        { kind: 'attention', text: 'Un an → an. Plusieurs années → ans.' }
+        { kind: 'astuce', text: 'Un an → an. Plusieurs années → an{c}s{/c}.' }
       ],
     },
     ],
