@@ -262,28 +262,44 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
       role: 'expliquer',
       blocks: [
         { kind: 'paragraph', text: 'Pour dire mon pays d’origine, j’utilise le verbe {c}venir{/c}.' },
+        { kind: 'paragraph', text: '{ligne/4}' },
         { kind: 'paragraph', text: 'J’utilise {c}du{/c}, {c}de{/c}, {c}d’{/c}, {c}des{/c}, {c}de la{/c}, de l’{/c} .' }
+        { kind: 'paragraph', text: '{ligne/4}' },
         { kind: 'paragraph', text: 'Je dis : je viens du Sénégal, de Chine ou d’Irak.' },
+        { kind: 'paragraph', text: '{ligne/4}' },
         { kind: 'paragraph', text: 'Le mot {c}de{/c} change selon le nom du pays.' },
-
+        { kind: 'paragraph', text: '{ligne/2}' },
         { kind: 'examples', marker: 'puces', items: [
           '{tab:2++}Nom du pays | Mot à utiliser | Exemples',
           '{tab:2+>}Pays masculin | {c}du{/c} | Elle est {c}belge{/c}',
           '{tab:2+>}Pays féminin | {c}de{/c} | Elle est {c}ukrainienne{/c}',
           '{tab:2+>}Pays avec une voyelle | {c}d’{/c} | {c}tur{c}que{/c}',
           '{tab:2+>}Pays au pluriel{/c} | {c}des{/c} | Elle est {c}russe{/c}',
-
         ] },
-
       ],
     },
+    {kind: 'page'},
     {
       kind: 'section',
       role: 'retenir',
       blocks: [
-        { kind: 'paragraph', text: 'aller = où je vais. Venir de = d’où je viens.' },
-        { kind: 'table', colHeader: true, rowHeader: true, headers: ['Lieu', 'Forme', 'Exemple'], rows: [['pays masc. + consonne', 'du', 'Je viens du Sénégal.'], ['voyelle', 'd’', 'Tu viens d’Irak.'], ['pays féminin', 'de', 'On vient de Chine.'], ['pluriel', 'des', 'Nous venons des Pays-Bas.'], ['personne', 'de chez', 'Je viens de chez le médecin.']] },
+        { kind: 'paragraph', text: 'J’utilise {c}Venir de{/c} pour dire d’où je viens.' },
+        { kind: 'paragraph', text: '{ligne/4}' },
+        { kind: 'paragraph', text: 'La préposition {c}de{/c} change de forme selon le genre du pays.' },
+        { kind: 'table', colHeader: true, rowHeader: true, headers: ['Lieu', 'Forme', 'Exemple'], rows: [
+          ['pays masc. + consonne', 'du', 'Je viens du Sénégal.'], 
+          ['voyelle', 'd’', 'Tu viens d’Irak.'], 
+          ['pays féminin', 'de', 'On vient de Chine.'], 
+          ['pluriel', 'des', 'Nous venons des Pays-Bas.'], 
+          ['personne', 'de chez', 'Je viens de chez le médecin.']] },
         { kind: 'attention', text: 'Ne mélange pas aller et venir de.' }
+        { kind: 'examples', marker: 'puces',
+          items: [
+            'Je vais au Sénégal. = Je pars vers le Sénégal.',
+            'Je viens du Sénégal. = Le Sénégal est mon pays d’origine.'
+          ]
+        }
+
       ],
     },
     ],
