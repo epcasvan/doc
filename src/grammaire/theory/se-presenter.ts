@@ -263,7 +263,7 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
       blocks: [
         { kind: 'paragraph', text: 'Pour dire mon pays d’origine, j’utilise le verbe {c}venir{/c}.' },
         { kind: 'paragraph', text: '{ligne/4}' },
-        { kind: 'paragraph', text: 'J’utilise {c}du{/c}, {c}de{/c}, {c}d’{/c}, {c}des{/c}, {c}de la{/c}, de l’{/c} .' }
+        { kind: 'paragraph', text: 'J’utilise {c}du{/c}, {c}de{/c}, {c}d’{/c}, {c}des{/c}, {c}de la{/c}, de l’{/c} .' },
         { kind: 'paragraph', text: '{ligne/4}' },
         { kind: 'paragraph', text: 'Je dis : je viens du Sénégal, de Chine ou d’Irak.' },
         { kind: 'paragraph', text: '{ligne/4}' },
@@ -292,7 +292,7 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
           ['pays féminin', 'de', 'On vient de Chine.'], 
           ['pluriel', 'des', 'Nous venons des Pays-Bas.'], 
           ['personne', 'de chez', 'Je viens de chez le médecin.']] },
-        { kind: 'attention', text: 'Ne mélange pas aller et venir de.' }
+        { kind: 'paragraph', text: '{c}Attention :{/c} Il ne faut pas mélanger les verbes {c}aller{/c} et {c}venir de{/c}.' },
         { kind: 'examples', marker: 'puces',
           items: [
             'Je vais au Sénégal. = Je pars vers le Sénégal.',
