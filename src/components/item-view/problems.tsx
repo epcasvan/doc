@@ -288,7 +288,7 @@ function TheoryBlockContent({ block }: { block: GrammarTheoryBlock }) {
     return (
       <aside className="theory-astuce" aria-label="Astuce">
         <span className="theory-astuce-icon" aria-hidden="true">
-          i
+          ⚠
         </span>
         <div className="theory-astuce-body">
           <TheoryFlow text={block.text ?? ''} className="theory-astuce-text" />
@@ -313,7 +313,7 @@ function TheoryBlockContent({ block }: { block: GrammarTheoryBlock }) {
       return (
         <aside className="theory-astuce" aria-label="Astuce">
           <span className="theory-astuce-icon" aria-hidden="true">
-            i
+            ⚠
           </span>
           <div className="theory-astuce-body">
             <TheoryFlow text={text} className="theory-astuce-text" />
