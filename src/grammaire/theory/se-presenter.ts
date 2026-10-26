@@ -349,9 +349,9 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
         role: 'regarder',
         blocks: [
           { kind: 'examples', items: [
-            '{tab:1<}C’est {c}mon{/c} frère | C’est {c}ta{/c} soeur ?'
-            '{tab:1<}Ce sont {c}ses{/c} enfants ? | Voici {c}notre{/c} mère.'
-            '{tab:1<}Comment est {c}votre{/c} père ? | {c}Leur{/c} oncle est ici.'
+            '{tab:1<}C’est {c}mon{/c} frère | C’est {c}ta{/c} soeur ?',
+            '{tab:1<}Ce sont {c}ses{/c} enfants ? | Voici {c}notre{/c} mère.',
+            '{tab:1<}Comment est {c}votre{/c} père ? | {c}Leur{/c} oncle est ici.',
           ] },
         ],
       },
@@ -359,10 +359,32 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
         kind: 'section',
         role: 'expliquer',
         blocks: [
-          { kind: 'paragraph', text: 'Le déterminant possessif indique {c}à qui appartient{/c} une personne ou une chose, ou avec qui elle est en relation.' },
-          { kind: 'paragraph', text: 'Je choisis le déterminant selon la personne et le nom qui suit.' },
+          { kind: 'paragraph', text: 'Le {c}déterminant possessif{/c} indique avec qui une personne est en relation.' },
+          { kind: 'paragraph', text: '{ligne/4}' },
+          { kind: 'paragraph', text: 'Je choisis le déterminant selon la personne {c}qui parle{/c} et le {c}nom de la personne{/c} de ma famille.' },
+          { kind: 'paragraph', text: '{ligne/4}' },
+          { kind: 'paragraph', text: 'Le déterminant change selon le nom : masculin, féminin ou pluriel.' },
           { kind: 'paragraph', text: '{ligne/2}' },
-          {kind: 'table', colHeader: true, rowHeader: true,
+          { kind: 'exemples', marker: 'puces', items: [
+            '{tab:+2++}Je parle de…', 'J’utilise…', 'Exemple'
+            '{tab:2+>}Un homme', '{c}mon{/c}', '{c}mon{/c} père',
+            '{tab:2+>}Une femme', '{c}ma{/c}', '{c}ma{/c} mère',
+            '{tab:2+>}Plusieurs personnes', '{c}mes{/c}', '{c}mes{/c} parents',
+          ]},
+        ],
+      },
+      {
+        kind: 'section',
+        role: 'retenir',
+        blocks: [
+          { kind: 'paragraph', text: 'Le déterminant possessif se place {c}devant{/c} le nom.' },
+          { kind: 'paragraph', text: '{ligne/4}' },
+          { kind: 'paragraph', text: 'Pour bien choisir, je regarde : ' },
+          { kind: 'exemples', marker: 'numeros', items: [
+            '{tab:2++}{c}Qui parle{/c} ?| Le pronom sujet | : je, tu, il, elle, nous, vous, ils, elles.',
+            '{tab:2++}{c}Quel est le nom{/c} ? | Le genre du nom | : masculin, féminin, pluriel',
+          ]},
+          { kind: 'table', colHeader: true, rowHeader: true,
             headers: ['Personne', 'Masculin', 'Féminin', 'Pluriel'],
             rows: [
               ['Je', '{c}mon{/c} père', '{c}ma{/c} mère', '{c}mes{/c} parents'],
@@ -373,19 +395,15 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
               ['Ils / Elles', '{c}leur{/c} père', '{c}leur{/c} mère', '{c}leurs{/c} parents'],
             ],
           },
-        ],
-      },
-      {
-        kind: 'section',
-        role: 'retenir',
-        blocks: [
-          {kind: 'astuce', text: 'ma, ta et sa devant une voyelle change en mon, ton et son'},
-          {kind: 'exemples', marker: 'puces', items: [
+          { kind: 'paragraph', text: '{ligne/4}' },
+          { kind: 'astuce', text: 'ma, ta et sa devant une voyelle change en mon, ton et son'},
+          { kind: 'paragraph', text: '{ligne/4}' },
+          { kind: 'exemples', marker: 'puces', items: [
             { text: 'Je dis : « {c}Mon{/c} amie. »', wrong: 'Ma amie.' },
             { text: 'Je dis : « {c}Ton{/c} étudiante. »', wrong: 'Ta étudiante.' },
           ] },
         ],
       },
-    ].
+    ],
   },
 ]
