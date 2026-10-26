@@ -34,7 +34,7 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
         { kind: 'paragraph', text: 'J’utilise les différents {c}verbes{/c} pour décrire qui je suis. Un {c}verbe{/c}, c’est un mot d’{c}action{/c} ou d’{c}état{/c}.' },
         { kind: 'paragraph', text: '{ligne/2}' },
         { kind: 'examples', marker: 'puces', items: [
-          '{tab:2++}Verbe | | Exemples'
+          '{tab:2++}Verbe | Mots | Exemples',
           '{tab:2+>}S’appeler | + {c}prénom{/c} | Je m’appelle {c}Fatima{/c}.', 
           '{tab:2+>}Avoir | + {c}âge{/c} | J’ai {c}16 ans{/c}.', 
           '{tab:2+>}Être | + {c}nationalité{/c} | Je suis {c}syrienne{/c}.', 
@@ -222,7 +222,7 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
         { kind: 'paragraph', text: 'Souvent, j’ajoute un {c}e{/c} au féminin.' },
         { kind: 'paragraph', text: '{ligne/2}' },
         { kind: 'examples', marker: 'puces', items: [
-          '{tab:2++}{c}Masculin{/c} | | {c}Féminin{/c}',
+          '{tab:2++}{c}Masculin{/c} | Terminaison | {c}Féminin{/c}',
           '{tab:2+>}Il est {c}espognol{/c} | + {c}e{/c} | Elle est {c}belge{/c}',
           '{tab:2+>}Il est {c}ukrainien{/c} | + {c}ne{/c} | Elle est {c}ukrainienne{/c}',
           '{tab:2+>}Il est {c}tur{c}c{/c} | + {c}que{/c} | {c}tur{c}que{/c}',
@@ -252,7 +252,7 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
       blocks: [
         { kind: 'examples', items: [
           'Mamadou viens {c}du Sénégal{/c}.', 
-          'Mei vient {c}de la Chine{/c}.', 
+          'Mei vient {c}de Chine{/c}.', 
           'Julia viens {c}des Pays-Bas{/c}.' ]
         }
       ],
@@ -261,8 +261,20 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
       kind: 'section',
       role: 'expliquer',
       blocks: [
-        { kind: 'paragraph', text: 'Venir de indique la provenance.' },
-        { kind: 'paragraph', text: 'J’utilise du, de, d’, des, de la, de l’, de chez.' }
+        { kind: 'paragraph', text: 'Pour dire mon pays d’origine, j’utilise le verbe {c}venir{/c}.' },
+        { kind: 'paragraph', text: 'J’utilise {c}du{/c}, {c}de{/c}, {c}d’{/c}, {c}des{/c}, {c}de la{/c}, de l’{/c} .' }
+        { kind: 'paragraph', text: 'Je dis : je viens du Sénégal, de Chine ou d’Irak.' },
+        { kind: 'paragraph', text: 'Le mot {c}de{/c} change selon le nom du pays.' },
+
+        { kind: 'examples', marker: 'puces', items: [
+          '{tab:2++}Nom du pays | Mot à utiliser | Exemples',
+          '{tab:2+>}Pays masculin | {c}du{/c} | Elle est {c}belge{/c}',
+          '{tab:2+>}Pays féminin | {c}de{/c} | Elle est {c}ukrainienne{/c}',
+          '{tab:2+>}Pays avec une voyelle | {c}d’{/c} | {c}tur{c}que{/c}',
+          '{tab:2+>}Pays au pluriel{/c} | {c}des{/c} | Elle est {c}russe{/c}',
+
+        ] },
+
       ],
     },
     {
