@@ -34,15 +34,13 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
         { kind: 'paragraph', text: 'J’utilise les différents {c}verbes{/c} pour décrire qui je suis. Un {c}verbe{/c}, c’est un mot d’{c}action{/c} ou d’{c}état{/c}.' },
         { kind: 'paragraph', text: '{ligne/2}' },
         { kind: 'examples', marker: 'puces', items: [
-          '{tab:2}Verbe | | Mots', 
-        ] },
-        { kind: 'examples', marker: 'puces', items: [
-          '{tab:2<}S’appeler | + {c}prénom{/c} | Je m’appelle {c}Fatima{/c}.', 
-          '{tab:2<}Avoir | + {c}âge{/c} | J’ai {c}16 ans{/c}.', 
-          '{tab:2<}Être | + {c}nationalité{/c} | Je suis {c}syrienne{/c}.', 
-          '{tab:2<}Venir de | + {c}pays{/c} | Je viens de {c}Syrie{/c}.', 
-          '{tab:2<}Habiter à | + {c}ville{/c} | J’habite à {c}Vouvry{/c}.', 
-          '{tab:2<}Parler | + {c}langue{/c} | Je parle {c}arabe{/c}.'
+          '{tab:2++}Verbe | | Exemples'
+          '{tab:2+>}S’appeler | + {c}prénom{/c} | Je m’appelle {c}Fatima{/c}.', 
+          '{tab:2+>}Avoir | + {c}âge{/c} | J’ai {c}16 ans{/c}.', 
+          '{tab:2+>}Être | + {c}nationalité{/c} | Je suis {c}syrienne{/c}.', 
+          '{tab:2+>}Venir de | + {c}pays{/c} | Je viens de {c}Syrie{/c}.', 
+          '{tab:2+>}Habiter à | + {c}ville{/c} | J’habite à {c}Vouvry{/c}.', 
+          '{tab:2+>}Parler | + {c}langue{/c} | Je parle {c}arabe{/c}.'
         ] },
       ],
     },
@@ -93,10 +91,7 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
         },
 
         { kind: 'paragraph', text: '{ligne/2}' },
-
-        { kind: 'paragraph', text: 'Avec {c}je{/c}, le verbe change de forme. Je retiens les expressions suivantes :' },
-        { kind: 'paragraph', text: '{ligne/2}' },
-        { kind: 'paragraph', text: 'Attention'},
+        { kind: 'paragraph', text: '{c}Attention :{/c}'},
         { kind: 'examples', items: [
           { text: 'Je dis : « J’ai 17 ans. »', wrong: 'Je suis 17 ans.' },
         ]},
@@ -226,14 +221,12 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
         { kind: 'paragraph', text: '{ligne/2}' },
         { kind: 'paragraph', text: 'Souvent, j’ajoute un {c}e{/c} au féminin.' },
         { kind: 'paragraph', text: '{ligne/2}' },
-        { kind: 'examples', items: [
-          '{tab:2}{c}Masculin{/c} | | {c}Féminin{/c}',
-        ] },
-        { kind: 'examples', marker: 'numeros', items: [
-          '{tab:2}Il est {c}espognol{/c} | + {c}e{/c} | Elle est {c}belge{/c}',
-          '{tab:2}Il est {c}ukrainien{/c} | + {c}ne{/c} | Elle est {c}ukrainienne{/c}',
-          '{tab:2}Il est {c}tur{c}c{/c} | + {c}que{/c} | {c}tur{c}que{/c}',
-          '{tab:2}Il est {c}russe{/c} | | Elle est {c}russe{/c}',
+        { kind: 'examples', marker: 'puces', items: [
+          '{tab:2++}{c}Masculin{/c} | | {c}Féminin{/c}',
+          '{tab:2+>}Il est {c}espognol{/c} | + {c}e{/c} | Elle est {c}belge{/c}',
+          '{tab:2+>}Il est {c}ukrainien{/c} | + {c}ne{/c} | Elle est {c}ukrainienne{/c}',
+          '{tab:2+>}Il est {c}tur{c}c{/c} | + {c}que{/c} | {c}tur{c}que{/c}',
+          '{tab:2+>}Il est {c}russe{/c} | | Elle est {c}russe{/c}',
 
         ] },
       ],
