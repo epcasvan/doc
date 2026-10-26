@@ -57,43 +57,19 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
           rowHeader: false,
           headers: ['Information', 'Structure', 'Exemple'],
           rows: [
-            [
-              'Mon prénom',
-              '{c}s’appeler{/c}',
-              'Je m’appelle Nina.',
-            ],
-            [
-              'Mon âge',
-              '{c}avoir{/c} + âge',
-              'J’ai 17 ans.',
-            ],
-            [
-              'Ma nationalité',
-              '{c}être{/c} + nationalité',
-              'Je suis belge.',
-            ],
-            [
-              'Mon pays d’origine',
-              '{c}venir de{/c} + pays',
-              'Je viens de Belgique.',
-            ],
-            [
-              'Ma ville',
-              '{c}habiter à{/c} + ville',
-              'J’habite à Martigny.',
-            ],
-            [
-              'Ma langue',
-              '{c}parler{/c} + langue',
-              'Je parle français.',
-            ],
+            ['Mon prénom', '{c}s’appeler{/c}', 'Je {c}m’appelle{/c} Nina.',],
+            ['Mon âge', '{c}avoir{/c} + âge', 'J’{c}ai{/c} 17 ans.',],
+            ['Ma nationalité', '{c}être{/c} + nationalité', 'Je {c}suis{/c} belge.',],
+            ['Mon pays d’origine', '{c}venir de{/c} + pays', 'Je {c}viens{/c} de Belgique.',],
+            ['Ma ville', '{c}habiter à{/c} + ville', 'J’{c}habite{/c} à Martigny.',],
+            ['Ma langue', '{c}parler{/c} + langue', 'Je {c}parle{/c} français.',],
           ],
         },
 
         { kind: 'paragraph', text: '{ligne/2}' },
-        { kind: 'paragraph', text: '{c}Attention :{/c}'},
+        { kind: 'paragraph', text: '{c}Attention :{/c} Je dit mon âge avec le verbe {c}avoir{/c} !'},
         { kind: 'examples', items: [
-          { text: 'Je dis : « J’ai 17 ans. »', wrong: 'Je suis 17 ans.' },
+          { text: 'Je dis : « J’{c}ai{/c} 17 ans. »', wrong: 'Je suis 17 ans.' },
         ]},
     ]},
   ],
@@ -298,8 +274,8 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
         { kind: 'paragraph', text: '{c}Attention :{/c} Il ne faut pas mélanger les verbes {c}aller{/c} et {c}venir de{/c}.' },
         { kind: 'examples', marker: 'puces',
           items: [
-            '{tab:1+}Je vais au Sénégal. | = Je pars vers le Sénégal.',
-            '{tab:1+}Je viens du Sénégal. | = Le Sénégal est mon pays d’origine.'
+            '{tab:1+}Je {c}vais au{/c} Sénégal. | = Je pars vers le Sénégal.',
+            '{tab:1+}Je {c}viens du{/c} Sénégal. | = Le Sénégal est mon pays d’origine.'
           ]
         }
 
@@ -322,7 +298,7 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
       kind: 'section',
       role: 'regarder',
       blocks: [
-        { kind: 'examples', items: ['{tab:1>}Quel âge as-tu ? | J’ai 25 ans.'] }
+        { kind: 'examples', items: ['{tab:1>}Quel {c}âge{/c} as-tu ? | J’ai {c}25 ans{/a}.'] },
       ],
     },
     {
@@ -331,17 +307,26 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
       blocks: [
         { kind: 'paragraph', text: 'En français, j’utilise {c}avoir{/c} + nombre + an(s).' },
         { kind: 'paragraph', text: '{ligne/4}' },
-        { kind: 'paragraph', text: 'Je ne dis pas « je suis 25 ans ».' }
+        { kind: 'attention', text: 'Je ne dis pas « je suis 25 ans ».' },
       ],
     },
     {
       kind: 'section',
       role: 'retenir',
       blocks: [
-        { kind: 'paragraph', text: 'Je dis mon âge avec le verbe avoir + nombre + an(s).' },
+        { kind: 'paragraph', text: 'Je dis mon âge avec le verbe {c}avoir{/c} + {c}nombre{/c} + {c}an(s){/c}.' },
         { kind: 'paragraph', text: '{ligne/4}' },
-        { kind: 'table', colHeader: true, rowHeader: true, headers: ['Personne', 'Forme', 'Exemple'], rows: [['je', 'j’ai', 'J’ai 15 ans.'], ['tu', 'tu as', 'Tu as 12 ans.'], ['il / elle / on', 'a', 'Elle a 45 ans.'], ['nous', 'avons', 'Nous avons 27 ans.'], ['vous', 'avez', 'Vous avez 50 ans.'], ['ils / elles', 'ont', 'Ils ont 20 ans.']] },
-        { kind: 'astuce', text: 'Un an → an. Plusieurs années → an{c}s{/c}.' }
+        { kind: 'table', colHeader: true, rowHeader: true, 
+          headers: ['Personne', 'Forme', 'Exemple'], 
+          rows: [
+            ['je', '{c}ai{/c}', 'J’{c}ai{/c} 15 ans.'], 
+            ['tu', '{c}as{/c}', 'Tu {c}as{/c} 12 ans.'], 
+            ['il / elle / on', '{c}a{/c}', 'Elle {c}a{/c} 45 ans.'], 
+            ['nous', '{c}avons{/c}', 'Nous {c}avons{/c} 27 ans.'], 
+            ['vous', '{c}avez{/c}', 'Vous {c}avez{/c} 50 ans.'], 
+            ['ils / elles', '{c}ont{/c}', 'Ils {c}ont{/c} 20 ans.']
+          ] },
+        { kind: 'astuce', text: 'Un an → an. Plusieurs années → an{c}s{/c}.' },
       ],
     },
     ],
@@ -353,7 +338,54 @@ export const sePresenterDocs: GrammaireTheoryDoc[] = [
     title: 'Famille',
     topic: 'gram-se-presenter',
     public: 'pré-A1 / A1',
-    objectif: 'À compléter.',
-    blocks: theoryGabarit('Famille'),
+    objectif: 'Parler de sa famille avec les déterminants possessifs.',
+    blocks: [
+      { kind: 'heading', text: 'Parler de sa famille' },
+      { kind: 'paragraph', text: '{ligne/4}' },
+      { kind: 'paragraph', text: 'Pour parler de ma famille, j’utilise les {c}déterminants possessifs{/c}.' },
+      { kind: 'paragraph', text: '{ligne/2}' },
+      {
+        kind: 'section',
+        role: 'regarder',
+        blocks: [
+          { kind: 'examples', items: [
+            '{tab:1<}C’est {c}mon{/c} frère | C’est {c}ta{/c} soeur ?'
+            '{tab:1<}Ce sont {c}ses{/c} enfants ? | Voici {c}notre{/c} mère.'
+            '{tab:1<}Comment est {c}votre{/c} père ? | {c}Leur{/c} oncle est ici.'
+          ] },
+        ],
+      },
+      {
+        kind: 'section',
+        role: 'expliquer',
+        blocks: [
+          { kind: 'paragraph', text: 'Le déterminant possessif indique {c}à qui appartient{/c} une personne ou une chose, ou avec qui elle est en relation.' },
+          { kind: 'paragraph', text: 'Je choisis le déterminant selon la personne et le nom qui suit.' },
+          { kind: 'paragraph', text: '{ligne/2}' },
+          {kind: 'table', colHeader: true, rowHeader: true,
+            headers: ['Personne', 'Masculin', 'Féminin', 'Pluriel'],
+            rows: [
+              ['Je', '{c}mon{/c} père', '{c}ma{/c} mère', '{c}mes{/c} parents'],
+              ['Tu', '{c}ton{/c} père', '{c}ta{/c} mère', '{c}tes{/c} parents'],
+              ['Il / Elle', '{c}son{/c} père', '{c}sa{/c} mère', '{c}ses{/c} parents'],
+              ['Nous', '{c}notre{/c} père', '{c}notre{/c} mère', '{c}nos{/c} parents'],
+              ['Vous', '{c}votre{/c} père', '{c}votre{/c} mère', '{c}vos{/c} parents'],
+              ['Ils / Elles', '{c}leur{/c} père', '{c}leur{/c} mère', '{c}leurs{/c} parents'],
+            ],
+          },
+        ],
+      },
+      {
+        kind: 'section',
+        role: 'retenir',
+        blocks: [
+          {kind: 'astuce', text: 'ma, ta et sa devant une voyelle change en mon, ton et son'},
+          {kind: 'exemples', marker: 'puces', items: [
+            { text: 'Je dis : « {c}Mon{/c} amie. »', wrong: 'Ma amie.' },
+            { text: 'Je dis : « {c}Ton{/c} étudiante. »', wrong: 'Ta étudiante.' },
+          ] },
+        ],
+      },
+    ].
   },
 ]
