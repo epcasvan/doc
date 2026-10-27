@@ -33,14 +33,12 @@ dans le sens.
 | `src/francais/soutien/lecture-word-items-extra.ts` | Mots Voc sans image (filtrés par phonème) |
 | `scripts/build-soutien-sense-phrases.py` | **Générateur** : phrases sensées + variées |
 | `scripts/check-soutien-phrases.mjs` | Validation (compteur site + niveaux) |
-| `scripts/export-soutien-phrases.mjs` | → `public/soutien-phrases/` + `type*-all.json` |
 | `src/francais/soutien/phrases/<bank>.json` | Source de vérité runtime |
 | `src/francais/soutien/phrases-data.ts` | Chargement + filtre de niveau |
 | `src/francais/soutien/gen-kind.ts` | Types 9 / 10 / 12 / 14 |
 
-Ancien pipeline scènes (`soutien-scenes.txt` + `fill-soutien-scenes.py`) :
-**abandonné** pour la rédaction (trop répétitif). Ne plus s’en servir comme
-méthode d’écriture.
+Téléchargement UI : blob depuis `src/francais/soutien/phrases/` (`download-phrases.ts`) —
+pas de miroir `public/soutien-phrases/`.
 
 ### Relancer
 
@@ -48,8 +46,6 @@ méthode d’écriture.
 python3 scripts/build-soutien-sense-phrases.py
 python3 scripts/build-soutien-sense-phrases.py a ch ou   # banques choisies
 node scripts/check-soutien-phrases.mjs --summary
-node scripts/export-soutien-phrases.mjs
-# réécrire public/soutien-phrases/README.txt après export
 ```
 
 ## Niveaux

@@ -12,6 +12,7 @@ import { parseCalliLines } from '@/calligraphie/defaults'
 import { reshuffleGameContent } from '@/jeux/bank'
 import { isJeuxType } from '@/jeux/templates'
 import { TCF_DOMAIN } from '@/tcf/catalog'
+import { drawTcfSeries } from '@/tcf/draw-series'
 import { buildTcfRandomTestPages } from '@/tcf/generate'
 import type { TcfNiveau } from '@/tcf/types'
 import { buildWorksheets } from '@/math/generate'
@@ -23,6 +24,7 @@ import type {
   PreviewMode,
 } from '@/math/types'
 import type { InstitutionalHeader } from '@/components/math/PrintDocumentChrome'
+import { isTpmFamilyExercise, recalcTpmLibreItems } from '@/tpm/libre-recalc'
 
 export type UseGenerateActionsParams = {
   pages: PageConfig[]
@@ -45,6 +47,7 @@ export type UseGenerateActionsParams = {
   isCalliDomain: boolean
   isJeuxDomain: boolean
   isTcf: boolean
+  isGrammaireExercise?: boolean
   updatePage: (patch: Partial<PageConfig>) => void
 }
 
@@ -69,12 +72,13 @@ export function useGenerateActions({
   isCalliDomain,
   isJeuxDomain,
   isTcf,
+  isGrammaireExercise,
   updatePage,
 }: UseGenerateActionsParams) {
   /** Applique les changements manuels (mode libre / réglages) à la fiche. */
   function validateManual() {
     const phraseEditable = isPhraseDomain && isPhraseLibreEditable(activeBlock.exerciseType)
-    const ownEditor = phraseEditable || isCalliDomain || isJeuxDomain || isTcf
+    const ownEditor = phraseEditable || isCalliDomain || isJeuxDomain || isTcf || Boolean(isGrammaireExercise)
     const apply = (current: PageConfig[]): PageConfig[] => {
       const page = current[pageIndex]
       if (!page) return current
@@ -105,13 +109,20 @@ export function useGenerateActions({
       }
 
       // Contenu libre déjà saisi : on le fige explicitement (nouvelles refs) pour forcer l’aperçu.
+      // TPM / TCM CFR : recalcule les réponses à partir des valeurs éditées.
       if (libreMode && Array.isArray(block.libreItems) && block.libreItems.length > 0) {
+        const frozen =
+          isTpmFamilyExercise(block.exerciseType) ||
+          page.domain === 'algèbre' ||
+          page.domain === 'géométrie'
+            ? recalcTpmLibreItems(block.libreItems, block.exerciseType)
+            : block.libreItems.map((item) => ({ ...item }))
         return current.map((p, i) =>
           i !== pageIndex
             ? p
             : setPageBlock(p, safeBlockIndex, {
                 contentSeed: nextLocal,
-                libreItems: block.libreItems!.map((item) => ({ ...item })),
+                libreItems: frozen,
                 libreInstruction: block.libreInstruction,
               }),
         )
@@ -305,8 +316,25 @@ export function useGenerateActions({
             gameText: reshuffled.gameText,
             gameSelectedIds: reshuffled.gameSelectedIds,
           }
-        } else if (page.domain === TCF_DOMAIN) {
-          // Relâche le tirage figé pour re-mélanger (ex. 3 thèmes PO).
+        } else if (page.domain === TCF_DOMAIN && block.tcfExercise) {
+          const pinned = block.tcfExercise
+          patch = {
+            ...patch,
+            tcfExercise: drawTcfSeries(pinned.niveau, pinned.competence, pinned.type_exercice),
+            tcfBankId: undefined,
+            libreItems: undefined,
+            libreInstruction: undefined,
+          }
+        } else if (
+          page.domain === TCF_DOMAIN ||
+          isTpmFamilyExercise(block.exerciseType) ||
+          page.domain === 'tpm' ||
+          page.domain === 'tcm-cfr' ||
+          page.domain === 'tcm-csc' ||
+          page.domain === 'algèbre' ||
+          page.domain === 'géométrie'
+        ) {
+          // Relâche le tirage figé pour re-mélanger (libre inclus).
           patch = {
             ...patch,
             libreItems: undefined,

@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
-"""Génère src/francais/soutien/phrases/<banque>.json (types 9 / 12 / 14, A1/A2/B1).
+"""Helpers + lexique pour les phrases Soutien (types 9 / 12 / 14, A1/A2/B1).
 
-Les phrases viennent de scènes (`soutien-scenes.txt`) : un seul mot variable
-dans une phrase déjà sensée (repas, famille, animaux, maison…).
+Module partagé par `build-soutien-sense-phrases.py` (générateur actuel).
   A1 : 5–7 mots, ≥ 2 sons · A2 : 8–12 mots, ≥ 3 · B1 : 13–15 mots, ≥ 4.
 """
 from __future__ import annotations
@@ -15,7 +14,6 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "src" / "francais" / "soutien" / "phrases"
 DATA = Path(__file__).with_name("soutien-phrase-nouns.txt")
-SCENES = Path(__file__).with_name("soutien-scenes.txt")
 
 VOWELS = {
     "a": set("aàâ"),
@@ -328,8 +326,7 @@ def first_hit_is_whole(sentence: str, word: str) -> bool:
 
 def main():
     raise SystemExit(
-        "Les phrases viennent de scripts/soutien-scenes.txt. "
-        "Lancer : python3 scripts/fill-soutien-scenes.py"
+        "Générateur actuel : python3 scripts/build-soutien-sense-phrases.py"
     )
     nouns = load_nouns()
     OUT.mkdir(parents=True, exist_ok=True)

@@ -13,14 +13,54 @@ export type FracShapeItem = {
   multi: boolean
 }
 
+/** Dénominateurs autorisés (formes simples) — TCM CFR ex. 12 / 13 et TPM 20 / 21. */
+const FRAC_SINGLE_D_ALLOWED: Partial<Record<ShapeKind, readonly number[]>> = {
+  triangle: [1, 2, 3, 4, 6, 9],
+  hexagon: [2, 3, 4, 6, 12],
+}
+
+const FRAC_SINGLE_D_RANGE: Partial<Record<ShapeKind, { min: number; max: number }>> = {
+  rect: { min: 2, max: 20 },
+  square: { min: 2, max: 10 },
+  circle: { min: 2, max: 20 },
+  semicircle: { min: 2, max: 10 },
+  quartercircle: { min: 2, max: 10 },
+}
+
+/** Borne le dénominateur selon la forme (limites CFR). */
+export function clampFracDenom(kind: ShapeKind, d: number): number {
+  const raw = Math.round(d)
+  const allowed = FRAC_SINGLE_D_ALLOWED[kind]
+  if (allowed) {
+    if (allowed.includes(raw)) return raw
+    // Plus proche valeur autorisée.
+    return allowed.reduce((best, v) => (Math.abs(v - raw) < Math.abs(best - raw) ? v : best), allowed[0]!)
+  }
+  const range = FRAC_SINGLE_D_RANGE[kind] ?? { min: 2, max: 20 }
+  return Math.max(range.min, Math.min(range.max, raw))
+}
+
+/** Borne n/d (forme simple CFR) : 1 ≤ n ≤ d−1 (ou n = 1 si d = 1). */
+export function clampFracShapeCfr(
+  kind: ShapeKind,
+  n: number,
+  d: number,
+): { n: number; d: number; copies: 1; multi: false } {
+  const safeD = clampFracDenom(kind, d)
+  const maxN = Math.max(1, safeD - 1)
+  const safeN = Math.max(1, Math.min(maxN, Math.round(n)))
+  return { n: safeN, d: safeD, copies: 1, multi: false }
+}
+
+/** Parts (dénominateur) par forme — TCM CFR ex. 12 / 13. */
 function pickSingleShapeCfg(rng: Rng): { kind: ShapeKind; d: number } {
   const pickers: Array<() => { kind: ShapeKind; d: number }> = [
-    () => ({ kind: 'rect', d: int(rng, 2, 12) }),
-    () => ({ kind: 'square', d: pick(rng, [2, 4, 9, 16] as const) }),
-    () => ({ kind: 'triangle', d: pick(rng, [2, 3, 4, 6, 9] as const) }),
-    () => ({ kind: 'circle', d: int(rng, 2, 10) }),
-    () => ({ kind: 'semicircle', d: int(rng, 2, 8) }),
-    () => ({ kind: 'quartercircle', d: int(rng, 2, 8) }),
+    () => ({ kind: 'rect', d: int(rng, 2, 20) }),
+    () => ({ kind: 'square', d: int(rng, 2, 10) }),
+    () => ({ kind: 'triangle', d: pick(rng, [1, 2, 3, 4, 6, 9] as const) }),
+    () => ({ kind: 'circle', d: int(rng, 2, 20) }),
+    () => ({ kind: 'semicircle', d: int(rng, 2, 10) }),
+    () => ({ kind: 'quartercircle', d: int(rng, 2, 10) }),
     () => ({ kind: 'hexagon', d: pick(rng, [2, 3, 4, 6, 12] as const) }),
   ]
   return shuffle(rng, pickers)[0]!()

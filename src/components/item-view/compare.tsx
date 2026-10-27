@@ -104,7 +104,15 @@ export function SequenceRow({ item, mode }: { item: MathItem; mode: PreviewMode 
         {(item.sequence ?? []).map((term, index) => {
           const isBlank = term === '□' || blanks.has(index)
           if (isBlank) {
-            const value = mode === 'answers' ? answers[blankAt++] ?? '' : null
+            const fromAnswer = answers[blankAt++]
+            const value =
+              mode === 'answers'
+                ? (fromAnswer && fromAnswer.length > 0
+                    ? fromAnswer
+                    : term !== '□'
+                      ? term
+                      : '')
+                : null
             return (
               <span className={`sequence-term blank ${mode === 'answers' ? 'filled' : ''}`} key={index}>
                 {value ?? '\u00a0'}

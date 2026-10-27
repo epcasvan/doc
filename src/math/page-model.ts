@@ -106,13 +106,40 @@ export function addPageBlock(page: PageConfig, block: ExerciseBlock): PageConfig
   return { ...page, extraBlocks: [...(page.extraBlocks ?? []), block] }
 }
 
-export function removePageBlock(page: PageConfig, blockIndex: number): PageConfig {
-  const blocks = pageBlocks(page)
+/** Fige les numéros affichés (1, 2, 3…) pour qu’un retrait ne décale pas les autres. */
+export function stampExerciseNumbers(page: PageConfig, numbers: number[]): PageConfig {
+  const blocks = pageBlocks(page).map((block, index) => {
+    const exerciseNo = numbers[index] ?? block.exerciseNo
+    return exerciseNo != null ? { ...block, exerciseNo } : block
+  })
+  const [first, ...extra] = blocks
+  if (!first) return page
+  return { ...page, ...first, domain: page.domain, extraBlocks: extra.length ? extra : undefined }
+}
+
+export function removePageBlock(
+  page: PageConfig,
+  blockIndex: number,
+  /** Numéros affichés, pour que les exercices restants gardent le leur. */
+  numbers?: number[],
+): PageConfig {
+  const blocks = numbers ? pageBlocks(stampExerciseNumbers(page, numbers)) : pageBlocks(page)
   if (blocks.length <= 1 || blockIndex < 0 || blockIndex >= blocks.length) return page
   const remaining = blocks.filter((_, index) => index !== blockIndex)
   const [first, ...extra] = remaining
   if (!first) return page
-  return { ...page, ...first, extraBlocks: extra.length ? extra : undefined }
+  const next: PageConfig = {
+    ...page,
+    ...first,
+    domain: page.domain,
+    extraBlocks: extra.length ? extra : undefined,
+  }
+  // Ne pas laisser les réglages de l’exercice retiré (mode libre, etc.) sur celui qui prend sa place.
+  const owned = blockFromPage(page)
+  for (const key of Object.keys(owned) as (keyof ExerciseBlock)[]) {
+    if (first[key] === undefined) delete next[key]
+  }
+  return next
 }
 
 export function exerciseStartIndex(pages: PageConfig[], pageIndex: number): number {

@@ -1,6 +1,8 @@
 import type { RefObject } from 'react'
 import { FormesPalette } from '@/components/generator/FormesPalette'
 import { WorksheetSheet } from '@/components/generator/WorksheetSheet'
+import { InteractionCorrigeSheet } from '@/components/tcf/InteractionCorrigeSheet'
+import { imageInteractionsOf } from '@/tcf/interaction-lines'
 import { isOralComprehensionExercise, isProblemExercise } from '@/components/generator/page-helpers'
 import type { InstitutionalHeader } from '@/components/math/PrintDocumentChrome'
 import type {
@@ -15,6 +17,7 @@ export type ResultPanelProps = {
   libreMode: boolean
   validateManual: () => void
   isTcf: boolean
+  isGrammaireExercise?: boolean
   isTcmCfr: boolean
   isSoutienFr: boolean
   isAlphabetisation: boolean
@@ -33,6 +36,8 @@ export type ResultPanelProps = {
   drawAlphaSeries: () => void
   generate: () => void
   printAll: () => void
+  onSaveFiche: () => void
+  onOpenBook: () => void
   isCalliDomain: boolean
   isJeuxDomain: boolean
   jeuxPreviewSheets: Array<{ sheet: WorksheetPage; index: number }> | null
@@ -46,6 +51,7 @@ export type ResultPanelProps = {
     documentTotalPoints: number
     pointsPerQuestion: number
     onRegenerateBlock: (targetBlock: number) => void
+    showExerciseRefresh?: boolean
   }
   chromeProps: {
     institutional: InstitutionalHeader
@@ -77,6 +83,7 @@ export function ResultPanel({
   libreMode,
   validateManual,
   isTcf,
+  isGrammaireExercise,
   isTcmCfr,
   isSoutienFr,
   isAlphabetisation,
@@ -95,6 +102,8 @@ export function ResultPanel({
   drawAlphaSeries,
   generate,
   printAll,
+  onSaveFiche,
+  onOpenBook,
   isCalliDomain,
   isJeuxDomain,
   jeuxPreviewSheets,
@@ -130,6 +139,20 @@ export function ResultPanel({
                 <h2>Votre activité est prête.</h2>
               </div>
               <div className="result-head-actions no-print">
+                <button
+                  className="print-chip is-icon"
+                  type="button"
+                  onClick={onSaveFiche}
+                  aria-label="Enregistrer"
+                  title="Enregistrer"
+                >
+                  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden>
+                    <path
+                      fill="currentColor"
+                      d="M17 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7l-4-4zm-5 16a3 3 0 1 1 0-6 3 3 0 0 1 0 6zM15 5v4H7V5h8z"
+                    />
+                  </svg>
+                </button>
                 {!libreMode ? null : (
                   <button
                     className="print-chip is-icon is-validate"
@@ -147,6 +170,7 @@ export function ResultPanel({
                   </button>
                 )}
                 {isTcf ||
+                isGrammaireExercise ||
                 isTcmCfr ||
                 ((isSoutienFr || isAlphabetisation) &&
                   (isSoutienMots || isSoutienCompleter || isSoutienEcouter)) ? (
@@ -154,7 +178,7 @@ export function ResultPanel({
                     className="print-chip is-icon is-generate"
                     type="button"
                     onClick={() =>
-                      void (isTcf
+                      void (isTcf || isGrammaireExercise
                         ? downloadActiveTcfAudios()
                         : isTcmCfr
                           ? downloadActiveTcmCfrAudios()
@@ -166,7 +190,7 @@ export function ResultPanel({
                     }
                     aria-label="Télécharger les audios de la fiche"
                     title={
-                      isTcf
+                      isTcf || isGrammaireExercise
                         ? 'Télécharger les audios de la fiche'
                         : isTcmCfr
                           ? 'Télécharger les audios (nombres ou multiplications)'
@@ -272,15 +296,31 @@ export function ResultPanel({
                   <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden>
                     <path
                       fill="currentColor"
-                      d="M18 3H6v4h12V3zm1 6H5a3 3 0 0 0-3 3v5h4v4h12v-4h4v-5a3 3 0 0 0-3-3zm-3 11H8v-5h8v5zm3-7.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"
-                    />
-                  </svg>
+                    d="M18 3H6v4h12V3zm1 6H5a3 3 0 0 0-3 3v5h4v4h12v-4h4v-5a3 3 0 0 0-3-3zm-3 11H8v-5h8v5zm3-7.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"
+                  />
+                </svg>
                 </button>
+                {isAlphabetisation || isSoutienFr ? (
+                  <button
+                    className="print-chip is-icon is-generate"
+                    type="button"
+                    onClick={onOpenBook}
+                    aria-label={isAlphabetisation ? 'Générer le livre alphabétisation' : 'Générer le livre soutien'}
+                    title={isAlphabetisation ? 'Générer le livre alphabétisation' : 'Générer le livre soutien'}
+                  >
+                    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden>
+                      <path
+                        fill="currentColor"
+                        d="M5 4.5A2.5 2.5 0 0 1 7.5 2H12v18H7.5A2.5 2.5 0 0 0 5 22.5v-18zM19 4.5A2.5 2.5 0 0 0 16.5 2H12v18h4.5a2.5 2.5 0 0 1 2.5 2.5v-18z"
+                      />
+                    </svg>
+                  </button>
+                ) : null}
               </div>
             </div>
             <div className="sheet-preview-wrap no-print-nav">
               <div className="sheet-preview-cluster">
-                <div className={`sheet-preview-row${jeuxPreviewSheets && jeuxPreviewSheets.length > 1 ? ' is-jeux-duplex' : ''}`}>
+                <div className={`sheet-preview-row${jeuxPreviewSheets && jeuxPreviewSheets.length > 1 ? ' is-jeux-duplex' : ''}${sheetProps.mode === 'answers' && imageInteractionsOf(previewSheet).length ? ' is-po-stack' : ''}`}>
                   {jeuxPreviewSheets && jeuxPreviewSheets.length > 1 ? (
                     <div className="sheet-stage is-jeux-stack">
                       {jeuxPreviewSheets.map(({ sheet, index }, stackIdx) => (
@@ -314,7 +354,7 @@ export function ResultPanel({
                         onToggleDraftGrid={toggleDraftGrid}
                         interactiveOralModes={isOralComprehensionExercise(activeBlock.exerciseType)}
                         onCycleOralAnswerMode={cycleOralAnswerMode}
-                        interactiveTcfOptions={isTcf}
+                        interactiveTcfOptions={isTcf || Boolean(isGrammaireExercise)}
                         onSelectTcfForm={selectTcfForm}
                         onToggleTcfPageBreak={toggleTcfPageBreak}
                         coordEdit={
@@ -333,6 +373,13 @@ export function ResultPanel({
                         {...sheetProps}
                       />
                     </div>
+                    {sheetProps.mode === 'answers'
+                      ? imageInteractionsOf(previewSheet).map((exercise) => (
+                          <div className="a4-frame" key={`po-interaction-${exercise.id}`}>
+                            <InteractionCorrigeSheet exercise={exercise} />
+                          </div>
+                        ))
+                      : null}
                   </div>
                   )}
                   {isFormes && activeBlock.coordLibre ? (
@@ -374,6 +421,11 @@ export function ResultPanel({
                       mode="answers"
                     />
                   ))}
+              {previewWorksheets.flatMap((page) =>
+                imageInteractionsOf(page).map((exercise) => (
+                  <InteractionCorrigeSheet key={`print-interaction-${exercise.id}`} exercise={exercise} />
+                )),
+              )}
             </div>
           </section>
 

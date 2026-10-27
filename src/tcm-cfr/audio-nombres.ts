@@ -3,7 +3,10 @@
  * `public/lib/audio/nombre/{1..100}.mp3` + cent / mille (vocabulaire).
  *
  * Noms de fichiers : voir `@/francais/soutien/download-name`
- * (`TCM-CFR_Exercice-1_NOMBRE_Semestre-1.mp3`, …).
+ * (`TCM-CFR_Exercice-1_NOMBRE_Semestre-1.wav`, …).
+ *
+ * Les playlists groupées sont décodées puis réencodées en un seul WAV :
+ * coller des MP3 bout à bout casse durée / barre de progression.
  */
 import {
   tcmCfrAudioDownloadName,
@@ -31,22 +34,105 @@ export function tcmCfrAudioKindFromParts(parts: readonly string[]): TcmCfrAudioK
     : 'NOMBRE'
 }
 
-/** Concatène des MP3 (mêmes paramètres TTS) en un Blob téléchargeable. */
+function writeString(view: DataView, offset: number, text: string) {
+  for (let i = 0; i < text.length; i++) view.setUint8(offset + i, text.charCodeAt(i))
+}
+
+/** Encode un AudioBuffer en WAV PCM 16-bit. */
+export function encodeWav(buffer: AudioBuffer): Blob {
+  const numChannels = buffer.numberOfChannels
+  const sampleRate = buffer.sampleRate
+  const samples = buffer.length
+  const bytesPerSample = 2
+  const blockAlign = numChannels * bytesPerSample
+  const dataSize = samples * blockAlign
+  const ab = new ArrayBuffer(44 + dataSize)
+  const view = new DataView(ab)
+  writeString(view, 0, 'RIFF')
+  view.setUint32(4, 36 + dataSize, true)
+  writeString(view, 8, 'WAVE')
+  writeString(view, 12, 'fmt ')
+  view.setUint32(16, 16, true)
+  view.setUint16(20, 1, true)
+  view.setUint16(22, numChannels, true)
+  view.setUint32(24, sampleRate, true)
+  view.setUint32(28, sampleRate * blockAlign, true)
+  view.setUint16(32, blockAlign, true)
+  view.setUint16(34, bytesPerSample * 8, true)
+  writeString(view, 36, 'data')
+  view.setUint32(40, dataSize, true)
+
+  const channels: Float32Array[] = []
+  for (let c = 0; c < numChannels; c++) channels.push(buffer.getChannelData(c))
+  let offset = 44
+  for (let i = 0; i < samples; i++) {
+    for (let c = 0; c < numChannels; c++) {
+      const sample = Math.max(-1, Math.min(1, channels[c]![i]!))
+      view.setInt16(offset, sample < 0 ? sample * 0x8000 : sample * 0x7fff, true)
+      offset += 2
+    }
+  }
+  return new Blob([ab], { type: 'audio/wav' })
+}
+
+function createAudioContext(): AudioContext {
+  const AC =
+    window.AudioContext ||
+    (window as unknown as { webkitAudioContext: typeof AudioContext }).webkitAudioContext
+  return new AC()
+}
+
+/**
+ * Concatène des fichiers audio (MP3 TTS) en un seul WAV continu.
+ * Évite le collage binaire MP3 qui fait avancer / reculer la barre de progression.
+ */
 export async function concatMp3(urls: string[]): Promise<Blob> {
-  const buffers: ArrayBuffer[] = []
-  for (const url of urls) {
-    const res = await fetch(url)
-    if (!res.ok) throw new Error(`Audio introuvable : ${url}`)
-    buffers.push(await res.arrayBuffer())
+  if (urls.length === 0) return new Blob([], { type: 'audio/wav' })
+  if (urls.length === 1) {
+    const res = await fetch(urls[0]!)
+    if (!res.ok) throw new Error(`Audio introuvable : ${urls[0]}`)
+    const ab = await res.arrayBuffer()
+    const ctx = createAudioContext()
+    try {
+      const decoded = await ctx.decodeAudioData(ab.slice(0))
+      return encodeWav(decoded)
+    } finally {
+      await ctx.close().catch(() => undefined)
+    }
   }
-  const total = buffers.reduce((n, b) => n + b.byteLength, 0)
-  const out = new Uint8Array(total)
-  let offset = 0
-  for (const buf of buffers) {
-    out.set(new Uint8Array(buf), offset)
-    offset += buf.byteLength
+
+  const ctx = createAudioContext()
+  try {
+    const decoded: AudioBuffer[] = []
+    for (const url of urls) {
+      const res = await fetch(url)
+      if (!res.ok) throw new Error(`Audio introuvable : ${url}`)
+      const ab = await res.arrayBuffer()
+      decoded.push(await ctx.decodeAudioData(ab.slice(0)))
+    }
+    const sampleRate = decoded[0]!.sampleRate
+    const numChannels = Math.max(...decoded.map((b) => b.numberOfChannels))
+    for (const buf of decoded) {
+      if (buf.sampleRate !== sampleRate) {
+        throw new Error(
+          `Fréquences d’échantillonnage incompatibles (${buf.sampleRate} ≠ ${sampleRate}).`,
+        )
+      }
+    }
+    const totalLength = decoded.reduce((n, b) => n + b.length, 0)
+    const out = ctx.createBuffer(numChannels, totalLength, sampleRate)
+    let offset = 0
+    for (const buf of decoded) {
+      for (let c = 0; c < numChannels; c++) {
+        const src = buf.getChannelData(Math.min(c, buf.numberOfChannels - 1))
+        out.getChannelData(c).set(src, offset)
+      }
+      offset += buf.length
+    }
+    return encodeWav(out)
+  } finally {
+    await ctx.close().catch(() => undefined)
   }
-  return new Blob([out], { type: 'audio/mpeg' })
 }
 
 /**
@@ -62,12 +148,7 @@ export async function concatPlaylistsWithGap(
     urls.push(...playlists[i]!)
     if (i < playlists.length - 1) urls.push(gapUrl)
   }
-  if (urls.length === 0) return new Blob([], { type: 'audio/mpeg' })
-  if (urls.length === 1) {
-    const res = await fetch(urls[0]!)
-    if (!res.ok) throw new Error(`Audio introuvable : ${urls[0]}`)
-    return res.blob()
-  }
+  if (urls.length === 0) return new Blob([], { type: 'audio/wav' })
   return concatMp3(urls)
 }
 

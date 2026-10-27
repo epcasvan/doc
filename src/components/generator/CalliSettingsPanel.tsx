@@ -136,19 +136,27 @@ export function CalliSettingsPanel({
                       {calliFields.map((value, index) => (
                         <li className="calli-field-row" key={`calli-field-${index}`}>
                           <span className="calli-field-num">{index + 1}.</span>
-                          <input
-                            className="pill-input"
-                            type="text"
-                            value={value}
-                            spellCheck
-                            aria-label={
-                              calliIsPhrases
-                                ? `Phrase ${index + 1}`
-                                : `Mot ou phrase ${index + 1}`
-                            }
-                            placeholder={calliIsPhrases ? 'Phrase' : 'Mot ou phrase'}
-                            onChange={(event) => setCalliFieldAt(index, event.target.value)}
-                          />
+                          {calliIsPhrases ? (
+                            <textarea
+                              className="pill-input"
+                              rows={2}
+                              value={value}
+                              spellCheck
+                              aria-label={`Phrase ${index + 1}`}
+                              placeholder="Phrase"
+                              onChange={(event) => setCalliFieldAt(index, event.target.value)}
+                            />
+                          ) : (
+                            <input
+                              className="pill-input"
+                              type="text"
+                              value={value}
+                              spellCheck
+                              aria-label={`Mot ou phrase ${index + 1}`}
+                              placeholder="Mot ou phrase"
+                              onChange={(event) => setCalliFieldAt(index, event.target.value)}
+                            />
+                          )}
                           <button
                             type="button"
                             className="calli-field-remove"

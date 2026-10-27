@@ -9,7 +9,7 @@ export const ALPHA_LETTER_KINDS = [
   {
     id: 'mots',
     label: '1 · Mots et images',
-    description: '2–4 colonnes (4 / 6 / 12 mots) ; audio téléchargeable.',
+    description: '3 ou 4 colonnes (9 / 12 mots) ; 3 col. = 3 lignes ; audio téléchargeable.',
     instruction: 'Observez les images et lisez les mots où l’on entend le son.',
     preferredColumns: 3 as const,
   },
@@ -96,7 +96,7 @@ export const ALPHA_LETTER_KINDS = [
   {
     id: 'associer-syllabe',
     label: '13 · Classer les syllabes',
-    description: '4 QR + 4 syllabes cadrées ; 1 série par défaut ; page avec le type 12.',
+    description: '4 QR + 4 syllabes d’au plus 3 lettres ; 2 séries par défaut ; page avec le type 12.',
     instruction: 'Écoutez et classez les syllabes dans l’ordre.',
     preferredColumns: 1 as const,
   },

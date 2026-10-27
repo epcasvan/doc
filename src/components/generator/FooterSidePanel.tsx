@@ -1,4 +1,5 @@
 import {
+  ALPHA_SOUTIEN_REFERENCE,
   CLASS_LEVELS,
   CLASS_NUMBERS,
   COURSES,
@@ -12,6 +13,7 @@ export type FooterSidePanelProps = {
   setInstitutional: (next: InstitutionalHeader) => void
   evalMode: boolean
   activeExerciseLabel: string
+  referenceLocked: boolean
   onClose: () => void
 }
 
@@ -20,6 +22,7 @@ export function FooterSidePanel({
   setInstitutional,
   evalMode,
   activeExerciseLabel,
+  referenceLocked,
   onClose,
 }: FooterSidePanelProps) {
   return (
@@ -193,13 +196,21 @@ export function FooterSidePanel({
             Référence
             <input
               className="pill-input"
-              value={institutional.reference}
-              onChange={(event) =>
+              value={referenceLocked ? ALPHA_SOUTIEN_REFERENCE : institutional.reference}
+              readOnly={referenceLocked}
+              disabled={referenceLocked}
+              aria-readonly={referenceLocked}
+              onChange={(event) => {
+                if (referenceLocked) return
                 setInstitutional({ ...institutional, reference: event.target.value })
-              }
+              }}
               placeholder="Ex. FICHE-12"
             />
-            <small className="muted">Pied de page, à gauche. Vide = rien.</small>
+            <small className="muted">
+              {referenceLocked
+                ? 'Fixe pour l’alphabétisation et le soutien.'
+                : 'Pied de page, à gauche. Vide = rien.'}
+            </small>
           </label>
         </div>
       </div>

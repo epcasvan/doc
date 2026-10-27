@@ -10,7 +10,7 @@ export type AccessAccount = 'admin' | 'full' | 'partial'
 
 /**
  * Domaines « réguliers » — ordre alphabétique par libellé.
- * (Les tests TCF / TCM CSC / TCM CFR / TCM sont pinés en bas de liste.)
+ * (Les tests TCF / TCM CSC / TCM CFR / TPM sont pinés en bas de liste.)
  */
 export const REGULAR_DOMAIN_OPTIONS: readonly { id: Domain; label: string }[] = [
   { id: 'acm', label: 'ACM' },
@@ -21,6 +21,7 @@ export const REGULAR_DOMAIN_OPTIONS: readonly { id: Domain; label: string }[] = 
   { id: 'géométrie', label: 'Géométrie' },
   { id: 'grammaire', label: 'Grammaire' },
   { id: 'jeux', label: 'Grilles de cartes' },
+  { id: 'logique', label: 'Logique' },
   { id: 'santé', label: 'Sciences et santé' },
   { id: 'société', label: 'Société' },
   { id: 'soutien-fr', label: 'Soutien FR' },
@@ -29,13 +30,13 @@ export const REGULAR_DOMAIN_OPTIONS: readonly { id: Domain; label: string }[] = 
 
 /**
  * Domaines réservés au compte admin (tests).
- * Ordre d’affichage exact : tcf → tcm-csc → tcm-cfr → tcm.
+ * Ordre d’affichage exact : tcf → tcm-csc → tcm-cfr → tpm.
  */
 export const ADMIN_ONLY_DOMAIN_OPTIONS: readonly { id: Domain; label: string }[] = [
   { id: 'tcf', label: 'TCF' },
   { id: 'tcm-csc', label: 'TCM CSC' },
   { id: 'tcm-cfr', label: 'TCM CFR' },
-  { id: 'tcm', label: 'TCM' },
+  { id: 'tpm', label: 'TPM' },
 ]
 
 export const ADMIN_ONLY_DOMAINS: readonly Domain[] = ADMIN_ONLY_DOMAIN_OPTIONS.map((d) => d.id)
@@ -58,8 +59,13 @@ const DOMAIN_ALIASES: Readonly<Record<string, Domain>> = {
   sante: 'santé',
   lecture: 'alphabetisation',
   alphabetization: 'alphabetisation',
-  'tcm_csc': 'tcm-csc',
-  'tcm_cfr': 'tcm-cfr',
+  tcm_csc: 'tcm-csc',
+  tcm_cfr: 'tcm-cfr',
+  tpm_csc: 'tcm-csc',
+  tpm_cfr: 'tcm-cfr',
+  'tpm-csc': 'tcm-csc',
+  'tpm-cfr': 'tcm-cfr',
+  tcm: 'tpm',
 }
 
 const ACCESS_COOKIE = 'clairfle-fiche-access'
@@ -112,7 +118,7 @@ function parseDomainList(raw: string | undefined, fallback: Domain[]): Domain[] 
  * Domaines FULL / PARTIAL.
  * - **full** : toujours tous les domaines réguliers du catalogue (alphabetisation,
  *   grammaire, acm…), même si `VITE_ACCESS_DOMAINS_FULL` est une ancienne liste
- *   incomplète. Jamais TCF / TCM / TCM CSC / TCM CFR.
+ *   incomplète. Jamais TCF / TPM / TCM CSC / TCM CFR.
  * - **partial** : liste env (défaut algèbre + géométrie) ; admin-only filtrés.
  */
 function domainsFromEnv(account: 'full' | 'partial'): Domain[] {

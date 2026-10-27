@@ -1,7 +1,11 @@
 import { useMemo, useState } from 'react'
+import { SelectBox } from '@/components/generator/SelectBox'
+import { RefreshIcon } from '@/components/generator/WorksheetSheet'
+import { applyExerciseFromAudioBank, tcfAudioEntries, type TcfAudioEntry } from './audio-bank'
 import { TCF_TYPES, tcfSlotByTypeId, tcfTypeMeta } from './catalog'
 import { AudioField, ImageField, LinesField, NumberField, TextField } from './fields'
-import { tcfBank, tcfExerciseById, tcfSlotBank } from './loader'
+import { drawTcfSeries } from './draw-series'
+import { tcfBank, tcfBankAllLevels, tcfExerciseById, tcfSlotBank } from './loader'
 import { QuestionEditor } from './QuestionEditor'
 import { tcfScenarioGroups, type TcfScenarioGroup } from './sources'
 import { emptyTcfExercise, emptyTcfQuestion, tcfExerciseId } from './templates'
@@ -106,7 +110,19 @@ function RepliquesFields({
 }
 
 /** Champs spécifiques au type d’exercice (support). */
-function SupportEditor({ ex, set }: { ex: TcfExercise; set: (next: TcfExercise) => void }) {
+function SupportEditor({
+  ex,
+  set,
+  audioEntries,
+}: {
+  ex: TcfExercise
+  set: (next: TcfExercise) => void
+  /** Audios CO de la banque : choix → recharge questions + transcription. */
+  audioEntries?: readonly TcfAudioEntry[]
+}) {
+  const pickAudio = (entry: TcfAudioEntry) => set(applyExerciseFromAudioBank(ex, entry.exercise))
+  const audioBank = audioEntries && audioEntries.length > 0 ? audioEntries : undefined
+
   switch (ex.type_exercice) {
     case 'sms':
       return (
@@ -139,7 +155,13 @@ function SupportEditor({ ex, set }: { ex: TcfExercise; set: (next: TcfExercise) 
     case 'images_a_reconnaitre':
       return (
         <>
-          <AudioField label="Audio" value={ex.support.audio} onChange={(audio) => set(withSupport(ex, { audio }))} />
+          <AudioField
+            label="Audio"
+            value={ex.support.audio}
+            onChange={(audio) => set(withSupport(ex, { audio }))}
+            bankEntries={audioBank}
+            onPickFromBank={pickAudio}
+          />
           <TextField
             label="Consigne"
             value={ex.consigne ?? ''}
@@ -225,6 +247,8 @@ function SupportEditor({ ex, set }: { ex: TcfExercise; set: (next: TcfExercise) 
               onChange={(next) =>
                 set(withSupport(ex, { audios: ex.support.audios.map((a, k) => (k === i ? next : a)) }))
               }
+              bankEntries={audioBank}
+              onPickFromBank={pickAudio}
             />
           ))}
         </>
@@ -232,7 +256,13 @@ function SupportEditor({ ex, set }: { ex: TcfExercise; set: (next: TcfExercise) 
     case 'complet':
       return (
         <>
-          <AudioField label="Audio" value={ex.support.audio} onChange={(audio) => set(withSupport(ex, { audio }))} />
+          <AudioField
+            label="Audio"
+            value={ex.support.audio}
+            onChange={(audio) => set(withSupport(ex, { audio }))}
+            bankEntries={audioBank}
+            onPickFromBank={pickAudio}
+          />
           <TextField
             label="Transcription (corrigé)"
             value={ex.support.transcription}
@@ -246,7 +276,13 @@ function SupportEditor({ ex, set }: { ex: TcfExercise; set: (next: TcfExercise) 
       const n = ex.support.nb_dialogues
       return (
         <>
-          <AudioField label="Audio (tous les dialogues)" value={ex.support.audio} onChange={(audio) => set(withSupport(ex, { audio }))} />
+          <AudioField
+            label="Audio (tous les dialogues)"
+            value={ex.support.audio}
+            onChange={(audio) => set(withSupport(ex, { audio }))}
+            bankEntries={audioBank}
+            onPickFromBank={pickAudio}
+          />
           <NumberField
             label="Nombre de dialogues"
             value={n}
@@ -763,7 +799,10 @@ export function TcfExerciseEditor({
   exercise: edits,
   bankId,
   shownId,
+  fallbackExercise,
+  variant = 'tcf',
   onChange,
+  onReroll,
 }: {
   niveau: TcfNiveau
   typeId: string
@@ -771,13 +810,27 @@ export function TcfExerciseEditor({
   bankId?: string
   /** Exercice de banque affiché sur la fiche (tirage selon la graine). */
   shownId?: string
+  /** Grammaire : exercice généré (support TCF) si le panneau n’a pas encore d’édition. */
+  fallbackExercise?: TcfExercise
+  variant?: 'tcf' | 'grammaire'
   onChange: (patch: EditorPatch) => void
+  onReroll?: () => void
 }) {
+  const isGrammaire = variant === 'grammaire'
   const slot = tcfSlotByTypeId[typeId]
   const bank = useMemo(() => (slot ? tcfSlotBank(niveau, slot) : []), [slot, niveau])
-  const types = useMemo(() => TCF_TYPES.filter((t) => t.competence === slot?.competence), [slot])
-  const edited = edits != null && slot != null && edits.competence === slot.competence
+  const types = useMemo(
+    () =>
+      isGrammaire
+        ? TCF_TYPES.filter((t) => t.competence === 'CE' || t.competence === 'CO' || t.competence === 'PE')
+        : TCF_TYPES.filter((t) => t.competence === slot?.competence),
+    [slot, isGrammaire],
+  )
+  const edited = isGrammaire
+    ? edits != null
+    : edits != null && slot != null && edits.competence === slot.competence
   const fallback = useMemo(() => {
+    if (isGrammaire) return fallbackExercise ? structuredClone(fallbackExercise) : undefined
     if (!slot) return undefined
     const source = [tcfExerciseById(bankId), tcfExerciseById(shownId), bank[0]].find(
       (ex) => ex != null && ex.competence === slot.competence,
@@ -785,8 +838,14 @@ export function TcfExerciseEditor({
     if (source) return structuredClone(source)
     const first = TCF_TYPES.find((t) => t.competence === slot.competence)!
     return emptyTcfExercise(niveau, slot.competence, first.typeExercice, tcfExerciseId(niveau, slot.competence, 1))
-  }, [slot, bankId, shownId, bank, niveau])
+  }, [slot, bankId, shownId, bank, niveau, isGrammaire, fallbackExercise])
   const current = edited ? edits : fallback
+  /** Tous les audios CO, tous niveaux : choisir un audio recharge questions + transcription. */
+  const coAudioEntries = useMemo(
+    () =>
+      slot?.competence === 'CO' || isGrammaire ? tcfAudioEntries(tcfBankAllLevels('CO')) : [],
+    [slot?.competence, isGrammaire],
+  )
   // Résultats rattachés à la version de l’exercice : toute modification les efface.
   const [mediaCheck, setMediaCheck] = useState<{ for: TcfExercise; errors: string[] } | null>(null)
   const [copiedFor, setCopiedFor] = useState<TcfExercise | null>(null)
@@ -795,11 +854,23 @@ export function TcfExerciseEditor({
   const meta = current ? tcfTypeMeta(current.competence, current.type_exercice) : undefined
   const validation = useMemo(() => (current ? validateTcfExercise(current) : null), [current])
 
-  if (!slot || !current) return null
+  if (!current || (!isGrammaire && !slot)) return null
 
-  const set = (next: TcfExercise) => onChange({ tcfExercise: { ...next, niveau } })
+  const set = (next: TcfExercise) => onChange({ tcfExercise: { ...next, niveau: next.niveau ?? niveau } })
 
   function startBlank(typeExercice: TcfTypeExercice = types[0]!.typeExercice) {
+    const meta = TCF_TYPES.find((t) => t.typeExercice === typeExercice)
+    if (isGrammaire && meta) {
+      onChange({
+        tcfExercise: emptyTcfExercise(
+          niveau,
+          meta.competence,
+          typeExercice,
+          current?.id ?? `gram-${meta.competence.toLowerCase()}-libre`,
+        ),
+      })
+      return
+    }
     if (!slot) return
     const total = tcfBank(niveau, slot.competence).length
     onChange({ tcfExercise: emptyTcfExercise(niveau, slot.competence, typeExercice, tcfExerciseId(niveau, slot.competence, total + 1)) })
@@ -835,7 +906,25 @@ export function TcfExerciseEditor({
 
   return (
     <div className="quad-libre-block tcf-editor">
-      <b>Exercice TCF</b>
+      <div className="libre-item-num-col" style={{ alignItems: 'flex-start', marginBottom: 8 }}>
+        <b>{isGrammaire ? 'Mode libre' : 'Exercice TCF'}</b>
+        <button
+          type="button"
+          className="libre-item-reroll no-print"
+          aria-label="Autre série au hasard"
+          title="Autre série au hasard"
+          onClick={() => {
+            if (isGrammaire) {
+              onChange({ tcfExercise: undefined })
+              onReroll?.()
+              return
+            }
+            if (slot) set(drawTcfSeries(niveau, slot.competence, exercise.type_exercice))
+          }}
+        >
+          <RefreshIcon />
+        </button>
+      </div>
       <div className="tcf-row">
         <button type="button" className="tcf-btn" disabled={!edited} onClick={() => onChange({ tcfExercise: undefined })}>
           Revenir à la banque
@@ -845,32 +934,40 @@ export function TcfExerciseEditor({
         </button>
       </div>
       <small className="muted">
-        {edited ? 'Exercice modifié : la fiche affiche cette version.' : 'Exercice de la banque : toute modification crée une version libre.'}
+        {edited
+          ? 'Exercice modifié : la fiche affiche cette version.'
+          : isGrammaire
+            ? 'Exercice de la banque Grammaire : toute modification crée une version libre.'
+            : 'Exercice de la banque : toute modification crée une version libre.'}
       </small>
       <>
-          <label className="tcf-field">
-            <span>Type d’exercice (le changer vide le contenu)</span>
-            <select
-              className="pill-input"
-              value={exercise.type_exercice}
-              onChange={(event) => startBlank(event.target.value as TcfTypeExercice)}
-            >
-              {types.map((t) => (
-                <option key={t.typeId} value={t.typeExercice}>
-                  {t.label}
-                </option>
-              ))}
-            </select>
-          </label>
-          <div className="tcf-row">
-            <TextField label="Identifiant" value={exercise.id} onChange={(id) => set({ ...exercise, id })} />
-            <TextField label="Thème" value={exercise.theme ?? ''} onChange={(theme) => set({ ...exercise, theme })} />
-          </div>
+          <SelectBox
+            label="Type d’exercice"
+            value={exercise.type_exercice}
+            onChange={(value) => {
+              const nextType = value as TcfTypeExercice
+              if (isGrammaire) {
+                const meta = TCF_TYPES.find((t) => t.typeExercice === nextType)
+                if (!meta) return
+                const blank = emptyTcfExercise(niveau, meta.competence, nextType, exercise.id)
+                set({ ...blank, consigne: exercise.consigne, questions: exercise.questions })
+                return
+              }
+              if (slot) set(drawTcfSeries(niveau, slot.competence, nextType))
+            }}
+          >
+            {types.map((t) => (
+              <option key={t.typeId} value={t.typeExercice}>
+                {t.label}
+              </option>
+            ))}
+          </SelectBox>
+          <small className="muted">Choisissez un type : un audio est tiré au hasard, avec ses questions.</small>
           {exercise.type_exercice !== 'images_a_reconnaitre' ? (
             <TextField
               label="Consigne (sinon consigne du type)"
               value={exercise.consigne ?? ''}
-              placeholder={meta?.instruction ?? slot.instruction}
+              placeholder={meta?.instruction ?? slot?.instruction ?? ''}
               onChange={(consigne) => set({ ...exercise, consigne: consigne || undefined })}
             />
           ) : null}
@@ -886,7 +983,7 @@ export function TcfExerciseEditor({
             />
           ) : null}
 
-          <SupportEditor ex={exercise} set={set} />
+          <SupportEditor ex={exercise} set={set} audioEntries={coAudioEntries} />
 
           {hasConsigneSupp ? (
             <TextField
@@ -975,7 +1072,9 @@ export function TcfExerciseEditor({
             </button>
           </div>
           <small className="muted">
-            L’export est bloqué tant qu’il reste des erreurs. Collez le JSON dans src/content/tcf/{niveau.toLowerCase()}/{slot.competence.toLowerCase()}.json.
+            {isGrammaire
+              ? 'L’export est bloqué tant qu’il reste des erreurs.'
+              : `L’export est bloqué tant qu’il reste des erreurs. Collez le JSON dans src/tcf/content/${niveau.toLowerCase()}/${slot?.competence.toLowerCase()}.json.`}
           </small>
       </>
     </div>

@@ -1,4 +1,5 @@
 import {
+  useEffect,
   useMemo,
   useRef,
   useState,
@@ -9,17 +10,18 @@ import {
   domainsForAccount,
   readAccessAccount,
 } from '@/access'
+import { SaveFicheDialog } from '@/components/generator/SaveFicheDialog'
 import { TopbarTools } from '@/components/generator/TopbarTools'
 import { FooterSidePanel } from '@/components/generator/FooterSidePanel'
 import { Header } from '@/components/generator/Header'
 import { LibreSidePanel } from '@/components/generator/LibreSidePanel'
 import { SettingsPanel } from '@/components/generator/SettingsPanel'
 import { ResultPanel } from '@/components/generator/ResultPanel'
+import { contrastOnTheme, readThemeColor } from '@/components/generator/theme'
 import {
-  THEME_STORAGE_KEY,
-  contrastOnTheme,
-  readThemeColor,
-} from '@/components/generator/theme'
+  ALPHA_SOUTIEN_REFERENCE,
+  isAlphaSoutienDomain,
+} from '@/components/math/PrintDocumentChrome'
 import {
   sheetTotalPoints as computeSheetTotalPoints,
   topicsForDomain,
@@ -40,6 +42,9 @@ import { defaultPage, exerciseTypeById } from '@/math/catalog'
 import { joinCalliLines } from '@/calligraphie/defaults'
 import { isPhraseLibreEditable } from '@/francais/PhraseLibreEditor'
 import type { VocabWordEntry } from '@/francais/vocab-learn'
+import { createFiche, storeSyncPassword, updateFiche } from '@/fiches/api'
+import { buildFicheRecipe, readStagedFiche, rememberFicheOnHistory } from '@/fiches/recipe'
+import { BookStudio, type BookRequest } from '@/livres/BookStudio'
 import { buildWorksheets } from '@/math/generate'
 import {
   blockFromPage,
@@ -55,42 +60,66 @@ import type {
   PreviewMode,
 } from '@/math/types'
 
-export function GeneratorPage({ onLogout }: { onLogout: () => void }) {
+export function GeneratorPage({
+  onLogout,
+  onOpenFiches,
+}: {
+  onLogout: () => void
+  onOpenFiches: () => void
+}) {
   const accessAccount = readAccessAccount()
   const allowedDomains = useMemo(() => domainsForAccount(accessAccount), [accessAccount])
   const firstAllowedDomain = allowedDomains[0] ?? 'algèbre'
+  const [openedFiche] = useState(readStagedFiche)
   const initial = defaultPage(
     accountCanAccessDomain(accessAccount, 'algèbre') ? 'algèbre' : firstAllowedDomain,
   )
-  const [pages, setPages] = useState<PageConfig[]>([initial])
+  const [pages, setPages] = useState<PageConfig[]>(() => openedFiche?.recipe.pages ?? [initial])
   const [sheetIndex, setSheetIndex] = useState(0)
   const [blockIndex, setBlockIndex] = useState(0)
   const [mode, setMode] = useState<PreviewMode>('student')
-  const [institutional, setInstitutional] = useState<InstitutionalHeader>(DEFAULT_INSTITUTIONAL)
-  const [evalMode, setEvalMode] = useState(false)
-  const [pointsPerQuestion, setPointsPerQuestion] = useState(1)
-  const [seed, setSeed] = useState(randomSeed)
+  const [institutional, setInstitutional] = useState<InstitutionalHeader>(() =>
+    openedFiche
+      ? { ...DEFAULT_INSTITUTIONAL, ...openedFiche.recipe.institutional }
+      : DEFAULT_INSTITUTIONAL,
+  )
+  const [evalMode, setEvalMode] = useState(() => openedFiche?.recipe.evalMode ?? false)
+  const [pointsPerQuestion, setPointsPerQuestion] = useState(
+    () => openedFiche?.recipe.pointsPerQuestion ?? 1,
+  )
+  const [seed, setSeed] = useState(() => openedFiche?.recipe.seed ?? randomSeed())
   const [selectedCoordShape, setSelectedCoordShape] = useState<CoordShape | null>('triangle')
   const [themeColor, setThemeColor] = useState(readThemeColor)
   const [footerPanelOpen, setFooterPanelOpen] = useState(false)
-  const [libreMode, setLibreMode] = useState(false)
+  const [libreMode, setLibreMode] = useState(() => openedFiche?.recipe.libreMode ?? false)
+  const [ficheRef, setFicheRef] = useState<{ id: string; name: string } | null>(() =>
+    openedFiche ? { id: openedFiche.id, name: openedFiche.name } : null,
+  )
+  const [saveOpen, setSaveOpen] = useState(false)
+  const [bookRequest, setBookRequest] = useState<BookRequest | null>(null)
   const previewFrameRef = useRef<HTMLDivElement>(null)
 
   const applyThemeColor = (color: string) => {
     setThemeColor(color)
-    try {
-      window.localStorage.setItem(THEME_STORAGE_KEY, color)
-    } catch {
-      /* ignore */
-    }
   }
 
   const worksheets = useMemo(() => buildWorksheets(pages, seed), [pages, seed])
-  const [libreSnapshot, setLibreSnapshot] = useState<PageConfig[] | null>(null)
+  const [libreSnapshot, setLibreSnapshot] = useState<PageConfig[] | null>(
+    () => openedFiche?.recipe.libreSnapshot ?? null,
+  )
   const safeSheetIndex = Math.min(sheetIndex, Math.max(0, worksheets.length - 1))
   const activeSheet = worksheets[safeSheetIndex] ?? worksheets[0]
   const pageIndex = activeSheet?.configIndex ?? Math.min(sheetIndex, Math.max(0, pages.length - 1))
   const activePage = pages[pageIndex] ?? pages[0]!
+  const referenceLocked = isAlphaSoutienDomain(activePage.domain)
+  useEffect(() => {
+    if (!referenceLocked) return
+    setInstitutional((current) =>
+      current.reference === ALPHA_SOUTIEN_REFERENCE
+        ? current
+        : { ...current, reference: ALPHA_SOUTIEN_REFERENCE },
+    )
+  }, [referenceLocked])
   const pageExerciseBlocks = pageBlocks(activePage)
   const safeBlockIndex = Math.min(blockIndex, Math.max(0, pageExerciseBlocks.length - 1))
   const activeBlock = pageExerciseBlocks[safeBlockIndex] ?? blockFromPage(activePage)
@@ -154,7 +183,7 @@ export function GeneratorPage({ onLogout }: { onLogout: () => void }) {
     selectTcfForm,
     toggleTcfPageBreak,
     setAllDraftGrids,
-    setAllTcmDraftGrids,
+    setAllTpmDraftGrids,
   } = usePageConfig({
     pageIndex,
     safeBlockIndex,
@@ -196,9 +225,11 @@ export function GeneratorPage({ onLogout }: { onLogout: () => void }) {
     removePage,
     addExerciseOnPage,
     changeDomain,
+    loadTcfSeries,
     changeTopic,
     changeSoutienLetter,
     changeSoutienSound,
+    changeGramSubtheme,
   } = usePageNavigation({
     accessAccount,
     allowedDomains,
@@ -217,6 +248,7 @@ export function GeneratorPage({ onLogout }: { onLogout: () => void }) {
     setPointsPerQuestion,
     setMode,
     setInstitutional,
+    setSeed,
   })
 
   const audio = useGeneratorAudio({
@@ -258,6 +290,7 @@ export function GeneratorPage({ onLogout }: { onLogout: () => void }) {
     isCalliDomain: ctx.isCalliDomain,
     isJeuxDomain: ctx.isJeuxDomain,
     isTcf: ctx.isTcf,
+    isGrammaireExercise: ctx.isGrammaireExercise,
     updatePage,
   })
 
@@ -306,10 +339,30 @@ export function GeneratorPage({ onLogout }: { onLogout: () => void }) {
     window.print()
   }
 
+  async function persistFiche(input: { name: string; asNew: boolean; password: string }) {
+    if (input.password) storeSyncPassword(input.password)
+    const recipe = buildFicheRecipe({
+      pages,
+      seed,
+      institutional,
+      evalMode,
+      pointsPerQuestion,
+      libreMode,
+      libreSnapshot,
+    })
+    const saved =
+      !input.asNew && ficheRef
+        ? await updateFiche(ficheRef.id, input.name, recipe)
+        : await createFiche(input.name, recipe)
+    const next = { id: saved.id, name: saved.name }
+    setFicheRef(next)
+    rememberFicheOnHistory({ ...next, recipe: saved.recipe })
+  }
+
   const chromeProps = {
     institutional,
     evalMode,
-    // TCM : total = somme des barèmes de la fiche (plus de plafond fixe à 100).
+    // TPM : total = somme des barèmes de la fiche (plus de plafond fixe à 100).
     documentTotalPoints: sheetTotalPoints,
     pointsPerQuestion,
   } as const
@@ -318,6 +371,8 @@ export function GeneratorPage({ onLogout }: { onLogout: () => void }) {
     mode,
     ...chromeProps,
     onRegenerateBlock: regenerateBlock,
+    // En mode libre : refresh sous la numérotation du panneau (pas sur le titre Exercice).
+    showExerciseRefresh: !libreMode,
   } as const
 
   const settingsPanelProps = {
@@ -345,6 +400,7 @@ export function GeneratorPage({ onLogout }: { onLogout: () => void }) {
     sheetTotalPoints,
     activePage,
     changeDomain,
+    loadTcfSeries,
     allowedDomains,
     accessAccount,
     activeBlock,
@@ -352,6 +408,7 @@ export function GeneratorPage({ onLogout }: { onLogout: () => void }) {
     available,
     changeSoutienLetter,
     changeSoutienSound,
+    changeGramSubtheme,
     isAlphabetisation: ctx.isAlphabetisation,
     libreMode,
     setVerbGroup,
@@ -372,7 +429,7 @@ export function GeneratorPage({ onLogout }: { onLogout: () => void }) {
     placeCoordMark,
     placeOrigin,
     removeCoordMark,
-    setAllTcmDraftGrids,
+    setAllTpmDraftGrids,
     setAllDraftGrids,
   }
 
@@ -391,6 +448,15 @@ export function GeneratorPage({ onLogout }: { onLogout: () => void }) {
     drawAlphaSeries,
     generate,
     printAll,
+    onSaveFiche: () => setSaveOpen(true),
+    onOpenBook: () =>
+      setBookRequest({
+        kind: activePage.domain === 'alphabetisation' ? 'alpha' : 'soutien',
+        institutional,
+        evalMode,
+        pointsPerQuestion,
+        saveCopy: true,
+      }),
     jeuxPreviewSheets,
     previewFrameRef,
     seed,
@@ -428,7 +494,22 @@ export function GeneratorPage({ onLogout }: { onLogout: () => void }) {
         onCreate={() => undefined}
         generator
         rightSlot={
-          <TopbarTools
+          <>
+            <button
+              className="topbar-icon-btn"
+              type="button"
+              aria-label="Fiches enregistrées"
+              title="Fiches enregistrées"
+              onClick={onOpenFiches}
+            >
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden>
+                <path
+                  fill="currentColor"
+                  d="M4 4h6l2 2h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm0 4v10h16V8H4z"
+                />
+              </svg>
+            </button>
+            <TopbarTools
             themeColor={themeColor}
             onThemeColor={applyThemeColor}
             footerOpen={footerPanelOpen}
@@ -474,6 +555,7 @@ export function GeneratorPage({ onLogout }: { onLogout: () => void }) {
             showPreviewToggle={!(ctx.isCalliDomain || ctx.isJeuxDomain)}
             onLogout={onLogout}
           />
+          </>
         }
       />
       <main className="generator-page" id="top">
@@ -504,6 +586,8 @@ export function GeneratorPage({ onLogout }: { onLogout: () => void }) {
               isCalliDomain={ctx.isCalliDomain}
               isJeuxDomain={ctx.isJeuxDomain}
               isTcf={ctx.isTcf}
+              isGrammaireExercise={ctx.isGrammaireExercise}
+              isTpmLike={ctx.isTpmLike}
               isDroites={ctx.isDroites}
               isConstruire={ctx.isConstruire}
               soutienKind={ctx.soutienKind}
@@ -520,6 +604,7 @@ export function GeneratorPage({ onLogout }: { onLogout: () => void }) {
               jeuxText={ctx.jeuxText}
               tcfNiveau={ctx.tcfNiveau}
               updatePage={updatePage}
+              onRegenerateBlock={regenerateBlock}
               onClose={() => {
                 // Ferme le panneau sans effacer le contenu libre ni régénérer la fiche.
                 setLibreMode(false)
@@ -535,11 +620,21 @@ export function GeneratorPage({ onLogout }: { onLogout: () => void }) {
               activeExerciseLabel={
                 exerciseTypeById[activeBlock.exerciseType]?.label ?? ''
               }
+              referenceLocked={referenceLocked}
               onClose={() => setFooterPanelOpen(false)}
             />
           ) : null}
         </div>
       </main>
+      {saveOpen ? (
+        <SaveFicheDialog
+          initialName={ficheRef?.name ?? ''}
+          canUpdate={ficheRef != null}
+          onClose={() => setSaveOpen(false)}
+          onSubmit={persistFiche}
+        />
+      ) : null}
+      <BookStudio request={bookRequest} onClose={() => setBookRequest(null)} />
     </div>
   )
 }

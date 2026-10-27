@@ -12,7 +12,8 @@ export type Domain =
   | 'société'
   | 'santé'
   | 'acm'
-  | 'tcm'
+  | 'logique'
+  | 'tpm'
   | 'tcm-csc'
   | 'tcm-cfr'
   | 'tcf'
@@ -58,6 +59,8 @@ export type Layout =
   | 'column'
   | 'column-empty'
   | 'division-column'
+  | 'op-table'
+  | 'decompose'
   | 'text'
   | 'compare'
   | 'sequence'
@@ -103,16 +106,33 @@ export type Layout =
   | 'count-icons'
   | 'fraction-shape'
   | 'tcf'
+  | 'logique'
 
-/** Icône cible à compter (SVG N&B). */
-export type CountIconKind = 'note' | 'notes' | 'star' | 'heart' | 'leaf' | 'moon' | 'bolt' | 'flower'
+/** Icône à compter (SVG N&B plein) — 16 styles TPM ex. 1. */
+export type CountIconKind =
+  | 'notes'
+  | 'club'
+  | 'diamond'
+  | 'heart'
+  | 'spade'
+  | 'bolt'
+  | 'star'
+  | 'moon'
+  | 'leaf'
+  | 'flower'
+  | 'note'
+  | 'sun'
+  | 'circle'
+  | 'triangle'
+  | 'cross'
+  | 'arrow'
 
 export type CountIconToken = {
-  kind: CountIconKind | 'circle' | 'triangle'
-  /** Position en % dans le cadre (0–100). */
+  kind: CountIconKind
+  /** Position en % dans le cadre (0–100) — centre de cellule grille 10×8. */
   x: number
   y: number
-  /** Taille relative (environ 10–22). */
+  /** Taille en % du cadre : 33 %–100 % de la largeur d’une cellule (max 10). */
   size: number
   /** Rotation en degrés. */
   rot: number
@@ -123,6 +143,11 @@ export type CountIconScene = {
   label: string
   targetKind: CountIconKind
   targetCount: number
+  /** Deux styles distracteurs (à ne pas compter). */
+  distractorA?: CountIconKind
+  distractorB?: CountIconKind
+  distractorACount?: number
+  distractorBCount?: number
   tokens: CountIconToken[]
 }
 
@@ -274,6 +299,35 @@ export type CoordTransformColumns = {
 export type AlgebraGiven = { letter: string; value: number }
 
 export type ArithOp = '+' | '−' | '×' | '÷'
+
+/** Un terme de la décomposition. `op` est le signe écrit devant, sauf pour le premier. */
+export type DecomposeTerm = { op?: '+' | '−'; value: number }
+
+/** Calcul mental : n op m = quatre termes = deux regroupements = résultat. */
+export type DecomposeCalc = {
+  op: '+' | '−'
+  a: number
+  b: number
+  parts: [DecomposeTerm, DecomposeTerm, DecomposeTerm, DecomposeTerm]
+  partials: [DecomposeTerm, DecomposeTerm]
+  result: number
+}
+
+/** Tableau à compléter : case = ligne + colonne, ou ligne − colonne. */
+export type OpTableVariant = 'cells' | 'headers' | 'mixed'
+
+export type OpTable = {
+  op: '+' | '−'
+  variant: OpTableVariant
+  cols: number[]
+  rows: number[]
+  /** true : l’élève écrit l’en-tête de colonne. */
+  colBlank: boolean[]
+  /** true : l’élève écrit l’en-tête de ligne. */
+  rowBlank: boolean[]
+  /** true : l’élève écrit la case. */
+  cellBlank: boolean[][]
+}
 export type MissingPos = 'a' | 'b' | 'result'
 
 export type Topic = {
@@ -306,16 +360,18 @@ export type FigureDims = {
   height?: number
   base?: number
   radius?: number
-  /** Diamètre (cercle TCM / placement). */
+  /** Diamètre (cercle TPM / placement). */
   diameter?: number
   top?: number
   bottom?: number
   a?: number
   b?: number
   c?: number
-  /** Diagonales du losange (placement / TCM). */
+  /** Diagonales du losange (placement / TPM). */
   d1?: number
   d2?: number
+  /** Périmètre donné (ex. 25–26 CFR) — placeholder `[périmètre]` dans l’énoncé. */
+  perimeter?: number
   unit?: string
   triangleKind?: 'equilateral' | 'isosceles' | 'scalene' | 'right'
   trapezoidKind?: 'rectangle' | 'isosceles' | 'scalene'
@@ -405,6 +461,14 @@ export type MathItem = {
   imagesAvailable?: boolean
   /** Grille vide à remplir (poser soi-même les nombres). */
   blankOperands?: boolean
+  /** Message d’erreur mode libre (ex. soustraction a ≤ b). */
+  libreError?: string
+  /** Tableau d’addition ou de soustraction à compléter. */
+  opTable?: OpTable
+  /** Monnaie à rendre : valeur en centimes et nombre de billets ou de pièces. */
+  changeParts?: { cents: number; count: number }[]
+  /** Décomposition pour le calcul mental (dizaines et unités). */
+  decompose?: DecomposeCalc
   /** Point pour repérage / transformations. */
   point?: { x: number; y: number; label?: string }
   /** Image du point (corrigé ou second point). */
@@ -427,6 +491,14 @@ export type MathItem = {
   /** Second calcul (layout geo dual : aire à droite). */
   calcAnswerSecondary?: string
   responseAnswer?: string
+  /** Problème CFR (ex. 15–16) : id du modèle pour reconstruire l’énoncé. */
+  problemTemplateId?: string
+  /** Variables numériques du problème (partagées entre les deux parties). */
+  problemVars?: Record<string, number>
+  /** Métadonnées des champs éditables (libellé + partie). */
+  problemVarDefs?: Array<{ key: string; label: string; editOn: 0 | 1 | 'both' }>
+  /** Index de la partie (0 = 1ʳᵉ question, 1 = 2ᵉ). */
+  problemPart?: 0 | 1
   /** Inconnues à afficher sur les lignes de réponse (équations). */
   unknowns?: string[]
   /** Lignes de développement (corrigé équations, style soutien-scolaire). */
@@ -450,7 +522,7 @@ export type MathItem = {
   /** Cadre forme + traits (TCM CFR ex. 16–17) : figure à gauche, réponses à droite. */
   geoNameCard?: boolean
   /**
-   * Forme fractionnaire (TCM ex. 21/22, port soutien-scolaire).
+   * Forme fractionnaire (TPM ex. 21/22, port soutien-scolaire).
    * `mode: 'color'` = fraction donnée, forme à colorier ;
    * `mode: 'read'` = forme précoloriée, fraction à écrire.
    */
@@ -463,7 +535,20 @@ export type MathItem = {
     mode: 'color' | 'read'
   }
   /** Conversion d’unités : valeur et unités de part et d’autre du signe =. */
-  convert?: { value: string; from: string; to: string }
+  convert?: {
+    value: string
+    from: string
+    to: string
+    /** Famille (poids, litre, longueur…) — TPM ex. 35 / sélecteur libre. */
+    family?:
+      | 'poids'
+      | 'litre'
+      | 'densite'
+      | 'longueur'
+      | 'aire'
+      | 'volume'
+      | 'temps'
+  }
   /** Enregistrement à écouter (compréhension orale). */
   audioSrc?: string
   /** Playlist audio (dictée de nombres / multiplications) — téléchargeable. */
@@ -475,7 +560,11 @@ export type MathItem = {
     rows: number
     axisX: number
     side: 'left' | 'right'
+    /** Rotation horaire de la silhouette (0 = sens normal). */
+    rotation?: 0 | 90 | 180 | 270
     polylines: Array<Array<{ x: number; y: number }>>
+    /** Points marqués (œil, pompon…) sur des intersections. */
+    dots?: Array<{ x: number; y: number }>
   }
   /** Segments à mesurer (TCM CFR). */
   segments?: Array<{ mm: number; unit: 'mm' | 'cm'; display: string }>
@@ -486,7 +575,13 @@ export type MathItem = {
     rows: number[]
     lines: Array<{ id: string; name: string; color: string; cells: string[] }>
   }
-  metroQuestions?: Array<{ prompt: string; answer: string }>
+  metroQuestions?: Array<{
+    prompt: string
+    answer: string
+    kind?: 'crossing' | 'gare-where' | 'gare-which' | 'path' | 'termini'
+    lineNames?: string[]
+    cell?: string
+  }>
   /** Mots étiquetés (grammaire en couleur). */
   tokens?: PhraseToken[]
   /** Séquence de pastilles (type 3). */
@@ -678,6 +773,8 @@ export type MathItem = {
   tcf?: import('@/tcf/types').TcfSheetItem
   /** TCF : id de l’exercice de banque affiché (copie modifiable en mode libre). */
   tcfExerciseId?: string
+  /** Domaine Logique : puzzle SVG (suite, intrus, matrice, cubes…). */
+  logique?: import('@/logique/types').LogiquePuzzle
   /** Item non compté dans le total de points (support, message). */
   noPoints?: boolean
   /** Barème propre à l’item (remplace les points par question du bloc). */
@@ -722,7 +819,7 @@ export type ExerciseBlock = {
   count: number
   columns: number
   /**
-   * N° d’exercice forcé (TCM : ids de recette non contigus, ex. 13 puis 15).
+   * N° d’exercice forcé (TPM : ids de recette non contigus, ex. 13 puis 15).
    * Si absent, numérotation chronologique.
    */
   exerciseNo?: number

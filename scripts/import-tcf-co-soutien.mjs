@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Importe les CO du repo soutien-scolaire dans les banques TCF
- * (`src/content/tcf/{a0-a1,a1-a2,a2-b1}/co.json`).
+ * (`src/tcf/content/{a0-a1,a1-a2,a2-b1}/co.json`).
  *
  * Sources :
  * - transcriptions + QCM soutien (`SOUTIEN_ROOT`, défaut `/tmp/soutien-scolaire`)
@@ -16,7 +16,7 @@ const ROOT = process.cwd()
 const SOUTIEN = process.env.SOUTIEN_ROOT ?? '/tmp/soutien-scolaire'
 const COMM = join(SOUTIEN, 'lib/curriculum/content/communication')
 const MANIFEST = join(ROOT, 'scripts/audio-theme-manifest.json')
-const CONTENT = join(ROOT, 'src/content/tcf')
+const CONTENT = join(ROOT, 'src/tcf/content')
 
 const LEVEL_TO_NIVEAU = {
   'facile-a1': 'A0-A1',
@@ -59,15 +59,52 @@ function norm(s) {
     .trim()
 }
 
-/** ——— Transcripts ——— */
-const transcripts = new Map()
+/**
+ * Transcriptions indexées par niveau pour éviter les collisions A1/A2
+ * (ex. audio `facile-a1__047` ≠ transcript A2 « Tapio » du même numéro).
+ * Clés : `A1` | `A2` | `B1` | `any` (stems nommés scolaire).
+ */
+const transcriptsByLevel = {
+  A1: new Map(),
+  A2: new Map(),
+  B1: new Map(),
+  any: new Map(),
+}
 
-function addTranscript(stem, text) {
+function isStubTranscript(text) {
+  return /parlons du sujet de l'audio/i.test(text)
+}
+
+function addTranscript(stem, text, level = 'any') {
   const key = String(stem).replace(/\.mp3$/i, '')
   const clean = String(text ?? '').trim()
-  if (!clean || clean.length < 20) return
-  const prev = transcripts.get(key)
-  if (!prev || clean.length > prev.length) transcripts.set(key, clean)
+  if (!clean || clean.length < 20 || isStubTranscript(clean)) return
+  const bucket = transcriptsByLevel[level] ?? transcriptsByLevel.any
+  const prev = bucket.get(key)
+  if (!prev || clean.length > prev.length) bucket.set(key, clean)
+}
+
+function stemKeys(stem) {
+  const s = String(stem).replace(/\.mp3$/i, '')
+  const keys = new Set([s])
+  if (/^\d+$/.test(s)) {
+    keys.add(s.padStart(3, '0'))
+    keys.add(String(Number(s)))
+  }
+  return [...keys]
+}
+
+function getTranscript(stem, audioLevel) {
+  const prefer =
+    audioLevel === 'facile-a1' ? ['A1', 'any'] : audioLevel === 'moyen-a2' ? ['A2', 'any'] : ['B1', 'any', 'A2']
+  for (const level of prefer) {
+    const bucket = transcriptsByLevel[level]
+    for (const key of stemKeys(stem)) {
+      const hit = bucket.get(key)
+      if (hit) return hit
+    }
+  }
+  return null
 }
 
 function loadTranscripts() {
@@ -78,14 +115,20 @@ function loadTranscripts() {
   ]) {
     const path = join(COMM, name)
     if (!existsSync(path)) continue
-    for (const [stem, text] of Object.entries(loadJson(path))) addTranscript(stem, text)
+    for (const [stem, text] of Object.entries(loadJson(path))) addTranscript(stem, text, 'any')
   }
-  for (const name of ['a1-transcripts.json', 'a2-transcripts.json']) {
-    const path = join(SOUTIEN, 'scripts/data/express', name)
-    if (!existsSync(path)) continue
-    for (const [stem, text] of Object.entries(loadJson(path))) {
-      addTranscript(stem, text)
-      addTranscript(String(stem).padStart(3, '0'), text)
+  const a1Path = join(SOUTIEN, 'scripts/data/express', 'a1-transcripts.json')
+  if (existsSync(a1Path)) {
+    for (const [stem, text] of Object.entries(loadJson(a1Path))) {
+      addTranscript(stem, text, 'A1')
+      addTranscript(String(stem).padStart(3, '0'), text, 'A1')
+    }
+  }
+  const a2Path = join(SOUTIEN, 'scripts/data/express', 'a2-transcripts.json')
+  if (existsSync(a2Path)) {
+    for (const [stem, text] of Object.entries(loadJson(a2Path))) {
+      addTranscript(stem, text, 'A2')
+      addTranscript(String(stem).padStart(3, '0'), text, 'A2')
     }
   }
   if (!existsSync(COMM)) return
@@ -93,22 +136,24 @@ function loadTranscripts() {
     if (!/^express-.*-listening\.ts$/.test(name)) continue
     const src = readFileSync(join(COMM, name), 'utf8')
     let m
-    const trRe = /const TRANSCRIPT_(\d+)\s*=\s*`([^`]*)`/g
+    // TR_047 / TRANSCRIPT_047 : leçons A1 (e2-1, …)
+    const trRe = /const (?:TR|TRANSCRIPT)_(\d+)\s*=\s*`([^`]*)`/g
     while ((m = trRe.exec(src))) {
-      addTranscript(m[1], m[2])
-      addTranscript(m[1].padStart(3, '0'), m[2])
+      addTranscript(m[1], m[2], 'A1')
+      addTranscript(m[1].padStart(3, '0'), m[2], 'A1')
     }
     const inlineRe =
       /audioSrc:\s*A([12])\(\s*"(\d+)"\s*\)[\s\S]{0,400}?transcript:\s*`([^`]*)`/g
     while ((m = inlineRe.exec(src))) {
-      addTranscript(m[2], m[3])
-      addTranscript(m[2].padStart(3, '0'), m[3])
+      const level = m[1] === '1' ? 'A1' : 'A2'
+      addTranscript(m[2], m[3], level)
+      addTranscript(m[2].padStart(3, '0'), m[3], level)
     }
     const buildRe =
       /buildListeningAudio\(\{\s*id:\s*"[^"]+"\s*,\s*level:\s*"(A1|A2)"\s*,\s*num:\s*(\d+)\s*,\s*transcript:\s*`([^`]*)`/g
     while ((m = buildRe.exec(src))) {
-      addTranscript(String(m[2]), m[3])
-      addTranscript(String(m[2]).padStart(3, '0'), m[3])
+      addTranscript(String(m[2]), m[3], m[1])
+      addTranscript(String(m[2]).padStart(3, '0'), m[3], m[1])
     }
   }
   for (const name of [
@@ -125,19 +170,24 @@ function loadTranscripts() {
     const itemRe =
       /item\(\s*"(?:base|moyen|avance)"\s*,\s*"[^"]+"\s*,\s*"[^"]+"\s*,\s*"([^"]+\.mp3)"\s*,\s*"((?:\\.|[^"\\])*)"\s*\)/g
     while ((m = itemRe.exec(src))) {
-      addTranscript(m[1].replace(/\.mp3$/i, ''), m[2].replace(/\\"/g, '"').replace(/\\n/g, '\n'))
+      addTranscript(m[1].replace(/\.mp3$/i, ''), m[2].replace(/\\"/g, '"').replace(/\\n/g, '\n'), 'any')
     }
     const cRe = /(?:export )?const (CONV|RADIO)_(\d+)\s*=\s*`([^`]*)`/g
     while ((m = cRe.exec(src))) {
       const prefix = m[1] === 'CONV' ? 'conversation' : 'radio'
-      addTranscript(`${prefix}-${m[2]}`, m[3])
+      addTranscript(`${prefix}-${m[2]}`, m[3], 'any')
     }
   }
 }
 
 /** ——— Question pools ——— */
-/** @type {Map<string, Array<{prompt:string,options:string[],answer:string}>>} */
-const pools = new Map()
+/** @type {Record<string, Map<string, Array<{prompt:string,options:string[],answer:string}>>>} */
+const poolsByLevel = {
+  A1: new Map(),
+  A2: new Map(),
+  B1: new Map(),
+  any: new Map(),
+}
 
 function poolKeyVariants(slug) {
   const s = slug.replace(/^scolaire-/, '').replace(/^(base|moyen|avance)-/, '')
@@ -152,11 +202,12 @@ function poolKeyVariants(slug) {
   return [...out]
 }
 
-function pushPool(slug, questions) {
+function pushPool(slug, questions, level = 'any') {
   if (!questions.length) return
+  const bucket = poolsByLevel[level] ?? poolsByLevel.any
   for (const key of poolKeyVariants(slug)) {
-    const prev = pools.get(key) ?? []
-    pools.set(key, prev.length >= questions.length ? prev : questions)
+    const prev = bucket.get(key) ?? []
+    bucket.set(key, prev.length >= questions.length ? prev : questions)
   }
 }
 
@@ -193,16 +244,44 @@ function extractBuildPools(src, fnName = 'buildPool') {
       const q = parseRawQBlock(`{ id:${chunk}`)
       if (q) questions.push(q)
     }
-    pushPool(slug, questions)
+    pushPool(slug, questions, 'any')
   }
 }
 
-function extractExpressPools(src) {
-  const re = /buildExpressPool\(\s*"([^"]+)"\s*,\s*\[([\s\S]*?)\]\s*\)/g
+/** Pools express : niveau déduit de l’id (e2-1 → A1, e10 → A2) ou du contexte buildListeningAudio. */
+function expressPoolLevel(id, fileHint = '') {
+  if (/^e10|^e9|^e11|^e12/i.test(id) || /e10|e9|e11|e12/i.test(fileHint)) return 'A2'
+  if (/^e[1-8]/i.test(id) || /express-e[1-8]/i.test(fileHint)) return 'A1'
+  return 'any'
+}
+
+function extractExpressPools(src, fileHint = '') {
+  // buildListeningAudio({ level, num, questions: qs("047", [...]) })
+  const buildQsRe =
+    /buildListeningAudio\(\{\s*id:\s*"([^"]+)"\s*,\s*level:\s*"(A1|A2)"\s*,\s*num:\s*(\d+)[\s\S]*?questions:\s*qs\(\s*"\d+"\s*,\s*\[([\s\S]*?)\]\s*\)/g
   let m
+  while ((m = buildQsRe.exec(src))) {
+    const level = m[2]
+    const num = String(m[3])
+    const body = m[4]
+    const questions = []
+    const objs = body.split(/\n\s*\{\s*\n/).slice(1)
+    for (const chunk of objs) {
+      const q = parseRawQBlock(`{ id:"${num}",\n${chunk}`)
+      if (q) questions.push(q)
+    }
+    if (questions.length) {
+      pushPool(num, questions, level)
+      pushPool(num.padStart(3, '0'), questions, level)
+      pushPool(String(Number(num)), questions, level)
+    }
+  }
+
+  const re = /buildExpressPool\(\s*"([^"]+)"\s*,\s*\[([\s\S]*?)\]\s*\)/g
   while ((m = re.exec(src))) {
     const id = m[1]
     const body = m[2]
+    const level = expressPoolLevel(id, fileHint)
     const questions = []
     const chunks = body.split(/\{\s*id:/).slice(1)
     for (const chunk of chunks) {
@@ -218,13 +297,14 @@ function extractExpressPools(src) {
     }
     const num = /(\d{2,3})$/.exec(id)?.[1]
     if (num) {
-      pushPool(num, questions)
-      pushPool(num.padStart(3, '0'), questions)
-      pushPool(String(Number(num)), questions)
+      pushPool(num, questions, level)
+      pushPool(num.padStart(3, '0'), questions, level)
+      pushPool(String(Number(num)), questions, level)
     }
-    pushPool(id, questions)
+    pushPool(id, questions, level)
   }
 
+  // qs() hors buildListening (déjà couverts) — fallback any
   const qsRe = /qs\(\s*"(\d+)"\s*,\s*\[([\s\S]*?)\]\s*\)/g
   while ((m = qsRe.exec(src))) {
     const num = m[1]
@@ -235,9 +315,11 @@ function extractExpressPools(src) {
       const q = parseRawQBlock(`{ id:"${num}",\n${chunk}`)
       if (q) questions.push(q)
     }
-    pushPool(num, questions)
-    pushPool(num.padStart(3, '0'), questions)
-    pushPool(String(Number(num)), questions)
+    // Ne pas écraser un pool déjà typé A1/A2 plus riche
+    const prefer = expressPoolLevel(`e${fileHint}`, fileHint)
+    pushPool(num, questions, prefer)
+    pushPool(num.padStart(3, '0'), questions, prefer)
+    pushPool(String(Number(num)), questions, prefer)
   }
 }
 
@@ -281,10 +363,10 @@ function extractMultiQuestionPools(src) {
         answer: options[textC] ?? options[0],
       })
     }
-    pushPool(slug, questions)
+    pushPool(slug, questions, 'any')
     // variante sans préfixe niveau
     const short = slug.replace(/^(base|moyen|avance)-scolaire-/, '').replace(/^(base|moyen|avance)-/, '')
-    pushPool(short, questions)
+    pushPool(short, questions, 'any')
   }
 }
 
@@ -295,15 +377,20 @@ function loadQuestionPools() {
     const src = readFileSync(join(COMM, name), 'utf8')
     extractBuildPools(src, 'buildPool')
     extractBuildPools(src, 'buildScolairePool')
-    extractExpressPools(src)
+    extractExpressPools(src, name)
     extractMultiQuestionPools(src)
   }
 }
 
-function getPoolForStem(stem) {
-  for (const key of poolKeyVariants(stem)) {
-    const q = pools.get(key)
-    if (q?.length) return q
+function getPoolForStem(stem, audioLevel) {
+  const prefer =
+    audioLevel === 'facile-a1' ? ['A1', 'any'] : audioLevel === 'moyen-a2' ? ['A2', 'any'] : ['B1', 'any', 'A2']
+  for (const level of prefer) {
+    const bucket = poolsByLevel[level]
+    for (const key of poolKeyVariants(stem)) {
+      const q = bucket.get(key)
+      if (q?.length) return q
+    }
   }
   return null
 }
@@ -416,17 +503,14 @@ function main() {
     const audioSrc = `/lib/audio/${item.path}`
     if (usedAudio.has(audioSrc)) continue
 
-    const transcript =
-      transcripts.get(stem) ||
-      transcripts.get(stem.padStart(3, '0')) ||
-      (/^\d+$/.test(stem) ? transcripts.get(String(Number(stem))) : null)
+    const transcript = getTranscript(stem, item.level)
 
     if (!transcript) {
       missingTx++
       continue
     }
 
-    const pool = getPoolForStem(stem)
+    const pool = getPoolForStem(stem, item.level)
     if (!pool?.length) {
       missingPool++
       continue
@@ -450,7 +534,14 @@ function main() {
     built++
   }
 
-  const stats = { built, missingTx, missingPool, transcripts: transcripts.size, pools: pools.size, byNiveau: {} }
+  const stats = {
+    built,
+    missingTx,
+    missingPool,
+    transcripts: Object.values(transcriptsByLevel).reduce((n, m) => n + m.size, 0),
+    pools: Object.values(poolsByLevel).reduce((n, m) => n + m.size, 0),
+    byNiveau: {},
+  }
 
   for (const [niveau, docs] of byNiveau) {
     const dossier = NIVEAU_TO_DOSSIER[niveau]
@@ -497,6 +588,33 @@ function main() {
       series: docs.length ? Math.ceil(docs.length / 4) : 0,
     }
   }
+
+  // Candidats pour le réalignement STT (scripts/rematch-tcf-co-transcripts.py)
+  const candidates = { byLevel: { A1: {}, A2: {}, any: {} } }
+  for (const level of ['A1', 'A2', 'any']) {
+    const audioLevel = level === 'A1' ? 'facile-a1' : level === 'A2' ? 'moyen-a2' : 'facile-a1'
+    const stems = new Set([
+      ...transcriptsByLevel[level].keys(),
+      ...poolsByLevel[level].keys(),
+      ...(level === 'any' ? [] : [...transcriptsByLevel.any.keys(), ...poolsByLevel.any.keys()]),
+    ])
+    for (const stem of stems) {
+      const key = /^\d+$/.test(stem) ? stem.padStart(3, '0') : stem
+      if (candidates.byLevel[level][key]) continue
+      const transcript = getTranscript(key, audioLevel)
+      const pool = getPoolForStem(key, audioLevel)
+      if (!transcript || !pool?.length) continue
+      const maxQ = level === 'A2' ? 6 : 4
+      candidates.byLevel[level][key] = {
+        transcript,
+        questions: toTcfQuestions(pool, maxQ),
+      }
+    }
+  }
+  writeFileSync(
+    join(ROOT, 'scripts/tcf-co-transcript-candidates.json'),
+    `${JSON.stringify(candidates, null, 2)}\n`,
+  )
 
   console.log(JSON.stringify(stats, null, 2))
 }

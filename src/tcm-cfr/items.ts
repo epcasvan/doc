@@ -4,21 +4,20 @@
 import { genFracSingleItems } from '@/math/fraction-shapes'
 import { createRng, int, pick, shuffle, type Rng } from '@/math/rng'
 import type { ArithOp, Figure, MathItem } from '@/math/types'
+import { fmt, sanitizeItemNumberNoise } from '@/math/column-arith'
+import { FRACTION_WORDS } from '@/tpm/fraction-words'
 import {
   columnItem,
   divisionColumnItem,
   withFixedColumnWidth,
   withFixedDivisionWidth,
   withFixedDivisionWorkRows,
-} from '@/tcm/items'
+} from '@/tpm/items'
 import { mulAudioParts, numberAudioParts } from './audio-nombres'
 import { generateMetroQuestions, pickMetroMap } from './metro'
+import { genShopProblems, genWorkProblems } from './problems'
 import { pickSymmetryTemplate } from './symetrie'
 import { isTcmCfrType } from './types'
-
-function fmt(n: number): string {
-  return String(n).replace('.', ',')
-}
 
 function gcd(a: number, b: number): number {
   let x = Math.abs(a)
@@ -34,7 +33,12 @@ function gcd(a: number, b: number): number {
 function oneDecimal(rng: Rng, loTenths: number, hiTenths: number): number {
   let t = int(rng, loTenths, hiTenths)
   while (t % 10 === 0) t = int(rng, loTenths, hiTenths)
-  return t / 10
+  return Math.round(t) / 10
+}
+
+/** Construit un décimal scolaire à partir de centièmes entiers (évite le bruit binaire). */
+function fromCents(unit: number, cents: number): number {
+  return (unit * 100 + Math.max(0, Math.round(cents))) / 100
 }
 
 /** Ex. 1 — 5 nombres audio 11–99. */
@@ -62,12 +66,14 @@ function genEx01(rng: Rng, count: number): MathItem[] {
 /** Ex. 2 — 5 multiplications orales 2–12 × 2–12. */
 function genEx02(rng: Rng, count: number): MathItem[] {
   return Array.from({ length: Math.max(1, count) }, () => {
-    const a = int(rng, 2, 12)
-    const b = int(rng, 2, 12)
+    const a = int(rng, 1, 12)
+    const b = int(rng, 1, 12)
     const parts = mulAudioParts(a, b)
     return {
       layout: 'audio-dictation' as const,
       prompt: '',
+      left: String(a),
+      right: String(b),
       audioParts: parts,
       audioSrc: parts[0],
       answer: String(a * b),
@@ -110,12 +116,12 @@ function genEx03(rng: Rng): MathItem[] {
   const unit = int(rng, 2, 9)
   const kinds: Array<() => number> = [
     () => unit,
-    () => unit + int(rng, 1, 9) / 10,
-    () => unit + int(rng, 1, 9) / 100,
-    () => unit + int(rng, 1, 9) / 10 + int(rng, 1, 9) / 100,
-    () => unit + int(rng, 1, 9) / 10,
-    () => unit + int(rng, 10, 99) / 100,
-    () => unit + int(rng, 1, 9) / 100,
+    () => fromCents(unit, int(rng, 1, 9) * 10),
+    () => fromCents(unit, int(rng, 1, 9)),
+    () => fromCents(unit, int(rng, 1, 9) * 10 + int(rng, 1, 9)),
+    () => fromCents(unit, int(rng, 1, 9) * 10),
+    () => fromCents(unit, int(rng, 10, 99)),
+    () => fromCents(unit, int(rng, 1, 9)),
   ]
   const q2vals: number[] = []
   const seen = new Set<string>()
@@ -135,7 +141,7 @@ function genEx03(rng: Rng): MathItem[] {
     if (q2vals.length >= 7) break
   }
   while (q2vals.length < 7) {
-    const v = unit + int(rng, 0, 99) / 100
+    const v = fromCents(unit, int(rng, 0, 99))
     const key = fmt(v)
     if (!seen.has(key)) {
       seen.add(key)
@@ -289,44 +295,11 @@ function genEx10(rng: Rng): MathItem[] {
   return genMulDivPair(rng, true)
 }
 
-const FRACTION_WORDS: Array<{ term: string; n: number; d: number }> = [
-  { term: 'un demi', n: 1, d: 2 },
-  { term: 'trois demis', n: 3, d: 2 },
-  { term: 'cinq demis', n: 5, d: 2 },
-  { term: 'un tiers', n: 1, d: 3 },
-  { term: 'deux tiers', n: 2, d: 3 },
-  { term: 'quatre tiers', n: 4, d: 3 },
-  { term: 'cinq tiers', n: 5, d: 3 },
-  { term: 'un quart', n: 1, d: 4 },
-  { term: 'trois quarts', n: 3, d: 4 },
-  { term: 'cinq quarts', n: 5, d: 4 },
-  { term: 'sept quarts', n: 7, d: 4 },
-  { term: 'un cinquième', n: 1, d: 5 },
-  { term: 'deux cinquièmes', n: 2, d: 5 },
-  { term: 'trois cinquièmes', n: 3, d: 5 },
-  { term: 'quatre cinquièmes', n: 4, d: 5 },
-  { term: 'six cinquièmes', n: 6, d: 5 },
-  { term: 'sept cinquièmes', n: 7, d: 5 },
-  { term: 'un sixième', n: 1, d: 6 },
-  { term: 'cinq sixièmes', n: 5, d: 6 },
-  { term: 'sept sixièmes', n: 7, d: 6 },
-  { term: 'un huitième', n: 1, d: 8 },
-  { term: 'trois huitièmes', n: 3, d: 8 },
-  { term: 'cinq huitièmes', n: 5, d: 8 },
-  { term: 'neuf huitièmes', n: 9, d: 8 },
-  { term: 'un dixième', n: 1, d: 10 },
-  { term: 'trois dixièmes', n: 3, d: 10 },
-  { term: 'sept dixièmes', n: 7, d: 10 },
-  { term: 'neuf dixièmes', n: 9, d: 10 },
-  { term: 'onze dixièmes', n: 11, d: 10 },
-  { term: 'treize dixièmes', n: 13, d: 10 },
-]
-
 /** Ex. 11 — termes → fraction verticale (numérateurs et dénominateurs tous distincts). */
 function genEx11(rng: Rng, count: number): MathItem[] {
   const need = Math.max(1, count)
-  const pool = shuffle(rng, FRACTION_WORDS)
-  const picked: typeof FRACTION_WORDS = []
+  const pool = shuffle(rng, [...FRACTION_WORDS])
+  const picked: Array<(typeof FRACTION_WORDS)[number]> = []
   const usedN = new Set<number>()
   const usedD = new Set<number>()
   for (const entry of pool) {
@@ -350,6 +323,8 @@ function genEx11(rng: Rng, count: number): MathItem[] {
   return picked.map(({ term, n, d }) => ({
     layout: 'inline' as const,
     prompt: `${term} =`,
+    a: n,
+    b: d,
     answer: `${n}/${d}`,
   }))
 }
@@ -363,483 +338,12 @@ function genFracShapes(rng: Rng, count: number, mode: 'color' | 'read'): MathIte
   }))
 }
 
-type ProblemPart = {
-  prompt: string
-  calcAnswer: string
-  responseAnswer: string
-  answer: string
-}
-
-type ProblemTemplate = (rng: Rng) => [ProblemPart, ProblemPart]
-
-function money(n: number): string {
-  return fmt(Math.round(n * 100) / 100)
-}
-
-/**
- * Ex. 14 — pool de 10 problèmes courses (2 parties, 5–8 phrases narratives).
- * Modèle : récit détaillé type Nadia (magasin), nombres variables.
- */
-const EX14_TEMPLATES: readonly ProblemTemplate[] = [
-  (rng) => {
-    const a = oneDecimal(rng, 20, 60)
-    const b = oneDecimal(rng, 30, 90)
-    const c = oneDecimal(rng, 15, 55)
-    const total = Math.round((a + b + c) * 100) / 100
-    const d1 = oneDecimal(rng, 15, 35)
-    const d2 = oneDecimal(rng, 20, 45)
-    const drink = Math.min(d1, d2)
-    const spent = Math.round((total + drink) * 100) / 100
-    const budget = Math.ceil(spent) + pick(rng, [5, 10, 15, 20])
-    const reste = Math.round((budget - spent) * 100) / 100
-    return [
-      {
-        prompt: `Nadia va au magasin avec ${budget} francs dans son porte-monnaie. Dans son panier, elle prend du riz à ${money(a)} francs et du poulet à ${money(b)} francs. Elle ajoute des carottes à ${money(c)} francs dans son panier. Elle se rend à la caisse.\n\nQuelle somme paye-t-elle ?`,
-        calcAnswer: `${money(a)} + ${money(b)} + ${money(c)} = ${money(total)}`,
-        responseAnswer: `Nadia paye ${money(total)} francs.`,
-        answer: money(total),
-      },
-      {
-        prompt: `Nadia sort du magasin mais elle a oublié d’acheter à boire. Elle retourne dans le magasin. Elle hésite entre 2 boissons, un soda à ${money(d1)} francs ou de l’eau gazeuse à ${money(d2)} francs. Elle prend la moins chère.\n\nCombien d’argent reste-t-il après ses courses ?`,
-        calcAnswer: `${budget} − ${money(total)} − ${money(drink)} = ${money(reste)}`,
-        responseAnswer: `Il reste ${money(reste)} francs.`,
-        answer: money(reste),
-      },
-    ]
-  },
-  (rng) => {
-    const pain = oneDecimal(rng, 15, 35)
-    const fromage = oneDecimal(rng, 30, 80)
-    const fruit = oneDecimal(rng, 20, 50)
-    const total = Math.round((pain + fromage + fruit) * 100) / 100
-    const bus = oneDecimal(rng, 25, 45)
-    const spent = Math.round((total + bus) * 100) / 100
-    const budget = Math.ceil(spent) + pick(rng, [5, 10, 15])
-    const reste = Math.round((budget - spent) * 100) / 100
-    return [
-      {
-        prompt: `Omar part faire ses courses avec ${budget} francs dans son portefeuille. Il entre dans la boulangerie du quartier. Il choisit un pain à ${money(pain)} francs. Puis il ajoute du fromage à ${money(fromage)} francs et un sachet de fruits à ${money(fruit)} francs. Il paie à la caisse.\n\nCombien paye-t-il pour ses courses ?`,
-        calcAnswer: `${money(pain)} + ${money(fromage)} + ${money(fruit)} = ${money(total)}`,
-        responseAnswer: `Omar paye ${money(total)} francs.`,
-        answer: money(total),
-      },
-      {
-        prompt: `Omar quitte le magasin et se dirige vers l’arrêt de bus. Il doit rentrer chez lui. Le ticket de bus coûte ${money(bus)} francs. Il paie son ticket avec l’argent qui lui reste.\n\nCombien d’argent lui reste-t-il après le trajet ?`,
-        calcAnswer: `${budget} − ${money(total)} − ${money(bus)} = ${money(reste)}`,
-        responseAnswer: `Il lui reste ${money(reste)} francs.`,
-        answer: money(reste),
-      },
-    ]
-  },
-  (rng) => {
-    const pull = oneDecimal(rng, 250, 450)
-    const chaussettes = oneDecimal(rng, 50, 120)
-    const total = Math.round((pull + chaussettes) * 100) / 100
-    const reduction = oneDecimal(rng, 30, 80)
-    const paye = Math.round((total - reduction) * 100) / 100
-    const budget = Math.ceil(paye) + pick(rng, [10, 20, 30])
-    const reste = Math.round((budget - paye) * 100) / 100
-    return [
-      {
-        prompt: `Léa entre dans un magasin de vêtements. Elle a ${budget} francs sur elle. Elle regarde les rayons pendant un moment. Elle choisit un pull à ${money(pull)} francs. Elle prend aussi des chaussettes à ${money(chaussettes)} francs.\n\nQuel est le prix total avant réduction ?`,
-        calcAnswer: `${money(pull)} + ${money(chaussettes)} = ${money(total)}`,
-        responseAnswer: `Le total est ${money(total)} francs.`,
-        answer: money(total),
-      },
-      {
-        prompt: `À la caisse, la vendeuse annonce une réduction de ${money(reduction)} francs. Léa est contente. Elle paie avec son argent. Elle range le reste dans son porte-monnaie.\n\nCombien lui reste-t-il après l’achat ?`,
-        calcAnswer: `${money(total)} − ${money(reduction)} = ${money(paye)} ; ${budget} − ${money(paye)} = ${money(reste)}`,
-        responseAnswer: `Il lui reste ${money(reste)} francs.`,
-        answer: money(reste),
-      },
-    ]
-  },
-  (rng) => {
-    const n = int(rng, 3, 6)
-    const prix = oneDecimal(rng, 12, 35)
-    const total = Math.round(n * prix * 100) / 100
-    const billet = total <= 20 ? 20 : total <= 50 ? 50 : 100
-    const rendu = Math.round((billet - total) * 100) / 100
-    return [
-      {
-        prompt: `Yanis a besoin de matériel pour l’école. Il se rend à la papeterie près de chez lui. Il regarde les cahiers en rayon. Il décide d’acheter ${n} cahiers. Chaque cahier coûte ${money(prix)} francs.\n\nCombien doit-il payer pour les cahiers ?`,
-        calcAnswer: `${n} × ${money(prix)} = ${money(total)}`,
-        responseAnswer: `Yanis doit payer ${money(total)} francs.`,
-        answer: money(total),
-      },
-      {
-        prompt: `Yanis tend un billet de ${billet} francs à la caissière. La caissière prend le billet. Elle prépare la monnaie. Elle lui rend le reste.\n\nCombien la caissière lui rend-elle ?`,
-        calcAnswer: `${billet} − ${money(total)} = ${money(rendu)}`,
-        responseAnswer: `On lui rend ${money(rendu)} francs.`,
-        answer: money(rendu),
-      },
-    ]
-  },
-  (rng) => {
-    const lait = oneDecimal(rng, 12, 25)
-    const nLait = int(rng, 2, 4)
-    const pain = oneDecimal(rng, 15, 30)
-    const total = Math.round((lait * nLait + pain) * 100) / 100
-    const budget = Math.max(1, Math.floor(total) - int(rng, 1, 3))
-    const manque = Math.round((total - budget) * 100) / 100
-    return [
-      {
-        prompt: `Sara va à l’épicerie du village. Elle prend un panier. Elle met ${nLait} briques de lait à ${money(lait)} francs chacune dans le panier. Elle ajoute un pain à ${money(pain)} francs. Elle se dirige vers la caisse.\n\nQuel est le montant des courses ?`,
-        calcAnswer: `${nLait} × ${money(lait)} + ${money(pain)} = ${money(total)}`,
-        responseAnswer: `Les courses coûtent ${money(total)} francs.`,
-        answer: money(total),
-      },
-      {
-        prompt: `Sara ouvre son porte-monnaie. Elle n’a que ${budget} francs sur elle. Elle compte encore une fois. Il lui manque de l’argent pour payer.\n\nCombien lui manque-t-il ?`,
-        calcAnswer: `${money(total)} − ${budget} = ${money(manque)}`,
-        responseAnswer: `Il lui manque ${money(manque)} francs.`,
-        answer: money(manque),
-      },
-    ]
-  },
-  (rng) => {
-    const a = oneDecimal(rng, 40, 90)
-    const b = oneDecimal(rng, 30, 70)
-    const c = oneDecimal(rng, 20, 60)
-    const total = Math.round((a + b + c) * 100) / 100
-    const share = Math.round((total / 2) * 100) / 100
-    return [
-      {
-        prompt: `Deux amies s’installent à la terrasse d’un café. Elles commandent des boissons pour ${money(a)} francs. Elles ajoutent des gâteaux pour ${money(b)} francs. Elles prennent aussi des thés pour ${money(c)} francs. L’addition arrive sur la table.\n\nQuel est le total de l’addition ?`,
-        calcAnswer: `${money(a)} + ${money(b)} + ${money(c)} = ${money(total)}`,
-        responseAnswer: `L’addition est de ${money(total)} francs.`,
-        answer: money(total),
-      },
-      {
-        prompt: `Les deux amies veulent partager la note. Elles divisent le montant en deux parts égales. Chacune paie la même somme. Elles laissent l’argent sur la table.\n\nCombien chacune paie-t-elle ?`,
-        calcAnswer: `${money(total)} ÷ 2 = ${money(share)}`,
-        responseAnswer: `Chacune paie ${money(share)} francs.`,
-        answer: money(share),
-      },
-    ]
-  },
-  (rng) => {
-    const kg = oneDecimal(rng, 12, 25)
-    const prixKg = oneDecimal(rng, 20, 40)
-    const total = Math.round(kg * prixKg * 100) / 100
-    const billet = total <= 20 ? 20 : total <= 50 ? 50 : 100
-    const rendu = Math.round((billet - total) * 100) / 100
-    return [
-      {
-        prompt: `Hugo va au marché le samedi matin. Il regarde les étals de fruits. Il choisit des pommes. Il en prend ${money(kg)} kg. Le kilo de pommes coûte ${money(prixKg)} francs.\n\nCombien paie-t-il pour les pommes ?`,
-        calcAnswer: `${money(kg)} × ${money(prixKg)} = ${money(total)}`,
-        responseAnswer: `Hugo paie ${money(total)} francs.`,
-        answer: money(total),
-      },
-      {
-        prompt: `Hugo sort un billet de ${billet} francs. Le marchand prend le billet. Il calcule la monnaie. Il rend le reste à Hugo.\n\nCombien le marchand lui rend-il ?`,
-        calcAnswer: `${billet} − ${money(total)} = ${money(rendu)}`,
-        responseAnswer: `On lui rend ${money(rendu)} francs.`,
-        answer: money(rendu),
-      },
-    ]
-  },
-  (rng) => {
-    const livre = oneDecimal(rng, 80, 160)
-    const stylo = oneDecimal(rng, 15, 40)
-    const nStylo = int(rng, 2, 5)
-    const total = Math.round((livre + stylo * nStylo) * 100) / 100
-    const budget = Math.ceil(total) + pick(rng, [5, 10, 15, 20])
-    const reste = Math.round((budget - total) * 100) / 100
-    return [
-      {
-        prompt: `Inès entre dans une librairie. Elle a ${budget} francs dans son sac. Elle cherche un livre pour l’école. Elle trouve un livre à ${money(livre)} francs. Elle prend aussi ${nStylo} stylos à ${money(stylo)} francs chacun.\n\nCombien dépense-t-elle en tout ?`,
-        calcAnswer: `${money(livre)} + ${nStylo} × ${money(stylo)} = ${money(total)}`,
-        responseAnswer: `Inès dépense ${money(total)} francs.`,
-        answer: money(total),
-      },
-      {
-        prompt: `Inès paie à la caisse. Elle range ses achats dans son sac. Elle vérifie l’argent qui lui reste. Elle est contente de ses achats.\n\nCombien lui reste-t-il ?`,
-        calcAnswer: `${budget} − ${money(total)} = ${money(reste)}`,
-        responseAnswer: `Il lui reste ${money(reste)} francs.`,
-        answer: money(reste),
-      },
-    ]
-  },
-  (rng) => {
-    const pizza = oneDecimal(rng, 120, 220)
-    const n = int(rng, 2, 4)
-    const boisson = oneDecimal(rng, 20, 50)
-    const total = Math.round((pizza * n + boisson) * 100) / 100
-    const share = Math.round((total / n) * 100) / 100
-    return [
-      {
-        prompt: `La famille a faim ce soir. Les enfants veulent des pizzas. Les parents commandent ${n} pizzas à ${money(pizza)} francs chacune. Ils ajoutent une grande boisson à ${money(boisson)} francs. Le livreur apporte la commande.\n\nQuel est le prix total ?`,
-        calcAnswer: `${n} × ${money(pizza)} + ${money(boisson)} = ${money(total)}`,
-        responseAnswer: `Le total est ${money(total)} francs.`,
-        answer: money(total),
-      },
-      {
-        prompt: `Les parents décident de partager le montant. Ils divisent le total en ${n} parts égales. Chaque personne paie sa part. Tout le monde est d’accord.\n\nCombien chacune paie-t-elle ?`,
-        calcAnswer: `${money(total)} ÷ ${n} = ${money(share)}`,
-        responseAnswer: `Chacune paie ${money(share)} francs.`,
-        answer: money(share),
-      },
-    ]
-  },
-  (rng) => {
-    const a = oneDecimal(rng, 35, 80)
-    const b = oneDecimal(rng, 40, 90)
-    const c = oneDecimal(rng, 25, 70)
-    const total = Math.round((a + b + c) * 100) / 100
-    const plusCher = Math.max(a, b, c)
-    const moinsCher = Math.min(a, b, c)
-    const ecart = Math.round((plusCher - moinsCher) * 100) / 100
-    return [
-      {
-        prompt: `Sofia fait des courses pour préparer un repas. Elle met trois articles dans son panier. Le premier coûte ${money(a)} francs. Le deuxième coûte ${money(b)} francs. Le troisième coûte ${money(c)} francs. Elle arrive à la caisse.\n\nQuel est le prix total des trois articles ?`,
-        calcAnswer: `${money(a)} + ${money(b)} + ${money(c)} = ${money(total)}`,
-        responseAnswer: `Le total est ${money(total)} francs.`,
-        answer: money(total),
-      },
-      {
-        prompt: `Sofia regarde les prix sur son ticket. Elle compare l’article le plus cher et le moins cher. Elle veut connaître la différence. Elle fait le calcul.\n\nQuelle est la différence entre l’article le plus cher et le moins cher ?`,
-        calcAnswer: `${money(plusCher)} − ${money(moinsCher)} = ${money(ecart)}`,
-        responseAnswer: `La différence est ${money(ecart)} francs.`,
-        answer: money(ecart),
-      },
-    ]
-  },
-]
-
-/**
- * Ex. 15 — pool de 10 problèmes travail / partage (2 parties, 5–8 phrases).
- * Modèle : récit détaillé type Karim (mécanicien), nombres variables.
- */
-const EX15_TEMPLATES: readonly ProblemTemplate[] = [
-  (rng) => {
-    const rate = int(rng, 6, 12)
-    const hours = pick(rng, [4, 8])
-    const gain = rate * hours
-    const half = gain / 2
-    const share = half / 2
-    return [
-      {
-        prompt: `Karim est mécanicien. Il travaille dans un garage et gagne ${rate} francs par heure. Aujourd’hui, il travaille pendant ${hours} heures.\n\nAujourd’hui, combien d’argent a-t-il gagné ?`,
-        calcAnswer: `${rate} × ${hours} = ${gain}`,
-        responseAnswer: `Karim a gagné ${gain} francs.`,
-        answer: String(gain),
-      },
-      {
-        prompt: `Le jour suivant, Karim retrouve Ahmed, Yeva et Danil dans un parc. Il propose de donner la moitié de l’argent gagné à ses 3 amis. Danil refuse, il ne veut pas d’argent. La moitié de l’argent de Karim est donc partagée avec le reste de ses amis. Ils reçoivent le même montant.\n\nCombien d’argent reçoit Yeva ?`,
-        calcAnswer: `${gain} ÷ 2 = ${half} ; ${half} ÷ 2 = ${share}`,
-        responseAnswer: `Yeva reçoit ${share} francs.`,
-        answer: String(share),
-      },
-    ]
-  },
-  (rng) => {
-    const rate = int(rng, 8, 15)
-    const hours = pick(rng, [4, 6, 8])
-    const gain = rate * hours
-    const keep = gain / 2
-    const save = gain - keep
-    return [
-      {
-        prompt: `Maya travaille dans un magasin de vêtements. Elle aide les clients toute la journée. Elle est payée ${rate} francs par heure. Aujourd’hui, elle travaille pendant ${hours} heures.\n\nCombien d’argent a-t-elle gagné aujourd’hui ?`,
-        calcAnswer: `${hours} × ${rate} = ${gain}`,
-        responseAnswer: `Maya a gagné ${gain} francs.`,
-        answer: String(gain),
-      },
-      {
-        prompt: `Le soir, Maya rentre chez elle. Elle compte son argent. Elle décide de garder la moitié pour ses dépenses. Elle place le reste à la banque. Elle fait le calcul soigneusement.\n\nCombien place-t-elle à la banque ?`,
-        calcAnswer: `${gain} − ${keep} = ${save}`,
-        responseAnswer: `Elle place ${save} francs à la banque.`,
-        answer: String(save),
-      },
-    ]
-  },
-  (rng) => {
-    const days = int(rng, 3, 5)
-    const perDay = int(rng, 40, 80)
-    const gain = days * perDay
-    const lunch = int(rng, 8, 15)
-    const reste = gain - lunch * days
-    return [
-      {
-        prompt: `Tom aide dans un magasin pendant les vacances. Il range les rayons et accueille les clients. Il travaille pendant ${days} jours. Chaque jour, il gagne ${perDay} francs.\n\nCombien d’argent gagne-t-il en tout ?`,
-        calcAnswer: `${days} × ${perDay} = ${gain}`,
-        responseAnswer: `Tom gagne ${gain} francs.`,
-        answer: String(gain),
-      },
-      {
-        prompt: `Chaque jour de travail, Tom achète son repas. Le repas coûte ${lunch} francs. Il paie son repas avec son salaire. À la fin des ${days} jours, il regarde ce qui lui reste.\n\nCombien lui reste-t-il à la fin ?`,
-        calcAnswer: `${gain} − ${days} × ${lunch} = ${reste}`,
-        responseAnswer: `Il lui reste ${reste} francs.`,
-        answer: String(reste),
-      },
-    ]
-  },
-  (rng) => {
-    const rate = int(rng, 10, 18)
-    const hours = pick(rng, [4, 6, 8, 10])
-    const gain = rate * hours
-    const gift = int(rng, 10, 25)
-    const reste = gain - gift
-    return [
-      {
-        prompt: `Amina donne des cours de français. Elle prépare ses leçons avec soin. Elle donne des cours pendant ${hours} heures. Elle gagne ${rate} francs par heure.\n\nCombien d’argent a-t-elle gagné ?`,
-        calcAnswer: `${hours} × ${rate} = ${gain}`,
-        responseAnswer: `Amina a gagné ${gain} francs.`,
-        answer: String(gain),
-      },
-      {
-        prompt: `Amina rentre chez elle contente. Elle pense à sa sœur. Elle décide de lui offrir ${gift} francs. Elle garde le reste pour elle.\n\nCombien lui reste-t-il après le cadeau ?`,
-        calcAnswer: `${gain} − ${gift} = ${reste}`,
-        responseAnswer: `Il lui reste ${reste} francs.`,
-        answer: String(reste),
-      },
-    ]
-  },
-  (rng) => {
-    const boxes = int(rng, 4, 9)
-    const perBox = int(rng, 5, 12)
-    const total = boxes * perBox
-    const keep = int(rng, 2, 4)
-    const sold = total - keep
-    return [
-      {
-        prompt: `Un jardinier travaille dans son verger. Il récolte des pommes toute la matinée. Il remplit ${boxes} caisses. Chaque caisse contient ${perBox} pommes.\n\nCombien de pommes a-t-il récoltées en tout ?`,
-        calcAnswer: `${boxes} × ${perBox} = ${total}`,
-        responseAnswer: `Il a récolté ${total} pommes.`,
-        answer: String(total),
-      },
-      {
-        prompt: `Le jardinier garde ${keep} pommes pour sa famille. Il met le reste dans sa camionnette. Il part vendre les pommes au marché. Les clients viennent les acheter.\n\nCombien de pommes vend-il ?`,
-        calcAnswer: `${total} − ${keep} = ${sold}`,
-        responseAnswer: `Il vend ${sold} pommes.`,
-        answer: String(sold),
-      },
-    ]
-  },
-  (rng) => {
-    const rate = int(rng, 7, 14)
-    const hours = pick(rng, [3, 6, 9])
-    const gain = rate * hours
-    const third = gain / 3
-    const reste = gain - third
-    return [
-      {
-        prompt: `Luis travaille dans un atelier de menuiserie. Il fabrique des meubles. Il travaille pendant ${hours} heures aujourd’hui. Il est payé ${rate} francs par heure.\n\nCombien d’argent gagne-t-il aujourd’hui ?`,
-        calcAnswer: `${hours} × ${rate} = ${gain}`,
-        responseAnswer: `Luis gagne ${gain} francs.`,
-        answer: String(gain),
-      },
-      {
-        prompt: `En rentrant, Luis parle avec ses parents. Il décide de leur donner le tiers de son argent. Il garde le reste pour lui. Il range l’argent dans deux enveloppes.\n\nCombien garde-t-il pour lui ?`,
-        calcAnswer: `${gain} ÷ 3 = ${third} ; ${gain} − ${third} = ${reste}`,
-        responseAnswer: `Il garde ${reste} francs.`,
-        answer: String(reste),
-      },
-    ]
-  },
-  (rng) => {
-    const weeks = int(rng, 2, 4)
-    const perWeek = int(rng, 50, 90)
-    const gain = weeks * perWeek
-    const buy = int(rng, 30, 70)
-    const reste = gain - buy
-    return [
-      {
-        prompt: `Nora trouve un travail temporaire dans un supermarché. Elle range les rayons chaque semaine. Elle travaille pendant ${weeks} semaines. Elle gagne ${perWeek} francs par semaine.\n\nCombien gagne-t-elle au total ?`,
-        calcAnswer: `${weeks} × ${perWeek} = ${gain}`,
-        responseAnswer: `Nora gagne ${gain} francs.`,
-        answer: String(gain),
-      },
-      {
-        prompt: `Nora veut s’acheter un livre. Elle entre dans une librairie. Elle trouve un livre à ${buy} francs. Elle paie avec l’argent de son travail.\n\nCombien lui reste-t-il après l’achat ?`,
-        calcAnswer: `${gain} − ${buy} = ${reste}`,
-        responseAnswer: `Il lui reste ${reste} francs.`,
-        answer: String(reste),
-      },
-    ]
-  },
-  (rng) => {
-    const rate = int(rng, 9, 16)
-    const hours = pick(rng, [4, 8])
-    const gain = rate * hours
-    const parts = 4
-    const share = gain / parts
-    return [
-      {
-        prompt: `Paul travaille comme livreur. Il livre des colis dans la ville. Il gagne ${rate} francs par heure. Aujourd’hui, il travaille pendant ${hours} heures.\n\nCombien d’argent a-t-il gagné ?`,
-        calcAnswer: `${rate} × ${hours} = ${gain}`,
-        responseAnswer: `Paul a gagné ${gain} francs.`,
-        answer: String(gain),
-      },
-      {
-        prompt: `Paul rentre chez lui. Il retrouve sa famille. Il propose de partager son argent également entre ${parts} personnes. Chacun reçoit la même somme.\n\nCombien chacune reçoit-elle ?`,
-        calcAnswer: `${gain} ÷ ${parts} = ${share}`,
-        responseAnswer: `Chacune reçoit ${share} francs.`,
-        answer: String(share),
-      },
-    ]
-  },
-  (rng) => {
-    const morning = int(rng, 3, 5)
-    const afternoon = int(rng, 2, 4)
-    const rate = int(rng, 8, 14)
-    const hours = morning + afternoon
-    const gain = hours * rate
-    return [
-      {
-        prompt: `Rita travaille dans un restaurant. Le matin, elle prépare la salle pendant ${morning} heures. L’après-midi, elle sert les clients pendant ${afternoon} heures. Elle est fatiguée mais contente.\n\nCombien d’heures travaille-t-elle en tout ?`,
-        calcAnswer: `${morning} + ${afternoon} = ${hours}`,
-        responseAnswer: `Rita travaille ${hours} heures.`,
-        answer: String(hours),
-      },
-      {
-        prompt: `Rita est payée ${rate} francs par heure. Le patron calcule son salaire. Il lui donne son argent le soir. Rita range l’argent dans son sac.\n\nCombien gagne-t-elle ce jour-là ?`,
-        calcAnswer: `${hours} × ${rate} = ${gain}`,
-        responseAnswer: `Elle gagne ${gain} francs.`,
-        answer: String(gain),
-      },
-    ]
-  },
-  (rng) => {
-    const rate = int(rng, 6, 11)
-    const hours = pick(rng, [6, 8, 10])
-    const gain = rate * hours
-    const tip = int(rng, 5, 15)
-    const total = gain + tip
-    return [
-      {
-        prompt: `Sam aide au restaurant le week-end. Il sert les tables et range la cuisine. Il travaille pendant ${hours} heures. Il gagne ${rate} francs par heure sans le pourboire.\n\nCombien gagne-t-il sans le pourboire ?`,
-        calcAnswer: `${hours} × ${rate} = ${gain}`,
-        responseAnswer: `Sam gagne ${gain} francs.`,
-        answer: String(gain),
-      },
-      {
-        prompt: `Un client est très content du service. Il laisse ${tip} francs de pourboire à Sam. Sam ajoute ce pourboire à son salaire. Il compte tout son argent.\n\nCombien a-t-il en tout ?`,
-        calcAnswer: `${gain} + ${tip} = ${total}`,
-        responseAnswer: `Il a ${total} francs en tout.`,
-        answer: String(total),
-      },
-    ]
-  },
-]
-
-function partsToItems(parts: [ProblemPart, ProblemPart]): MathItem[] {
-  return parts.map((p) => ({
-    layout: 'text' as const,
-    prompt: p.prompt,
-    calcAnswer: p.calcAnswer,
-    responseAnswer: p.responseAnswer,
-    answer: p.answer,
-  }))
-}
-
 function genEx14(rng: Rng): MathItem[] {
-  return partsToItems(pick(rng, EX14_TEMPLATES)(rng))
+  return genShopProblems(rng)
 }
 
 function genEx15(rng: Rng): MathItem[] {
-  return partsToItems(pick(rng, EX15_TEMPLATES)(rng))
+  return genWorkProblems(rng)
 }
 
 type NamedFigure = {
@@ -866,7 +370,7 @@ const FIG_RECT: NamedFigure = {
 const FIG_RHOMBUS: NamedFigure = {
   figure: 'rhombus',
   name: 'losange',
-  props: ['4 côtés égaux', 'diagonales perpendiculaires'],
+  props: ['4 côtés égaux', 'angles opposés égaux'],
   dims: { ...BARE },
 }
 const FIG_PARA: NamedFigure = {
@@ -1139,33 +643,34 @@ function genEx24(rng: Rng): MathItem[] {
   ]
 }
 
-/** Ex. 25 — aire du carré → côté (cote absente ; brouillon comme ex. 22). */
+/** Ex. 25 — périmètre du carré → côté (cote absente ; brouillon comme ex. 22). */
 function genEx25(rng: Rng): MathItem[] {
   const side = int(rng, 3, 12)
-  const area = side * side
+  const perimeter = 4 * side
   return [
     {
       layout: 'geo',
       figure: 'square',
       // Pas de cote affichée : c’est la valeur cherchée.
-      dims: { unit: 'cm' },
-      prompt: `L’aire de ce carré est ${area} cm². Quelle est la longueur d’un côté ?`,
+      dims: { perimeter, unit: 'cm' },
+      prompt:
+        'Le périmètre de ce carré est [périmètre] cm. Quelle est la longueur d’un côté ?',
       geoDualPads: true,
       geoDualTight: true,
       hideItemNumber: true,
-      calcAnswer: `√${area} = ${side}`,
+      calcAnswer: `${perimeter} ÷ 4 = ${side}`,
       propertyLines: [{ label: 'Côté', answer: `${side} cm` }],
       answer: `${side} cm`,
     },
   ]
 }
 
-/** Ex. 26 — aire rectangle + un côté → autre côté (cote cherchée masquée). */
+/** Ex. 26 — périmètre rectangle + un côté → autre côté (cote cherchée masquée). */
 function genEx26(rng: Rng): MathItem[] {
   const length = int(rng, 4, 14)
   let width = int(rng, 2, 10)
   while (width === length) width = int(rng, 2, 10)
-  const area = length * width
+  const perimeter = 2 * (length + width)
   const giveLength = rng() < 0.5
   const known = giveLength ? length : width
   const unknown = giveLength ? width : length
@@ -1175,12 +680,14 @@ function genEx26(rng: Rng): MathItem[] {
       layout: 'geo',
       figure: 'rectangle',
       // Afficher uniquement le côté connu ; masquer celui cherché.
-      dims: giveLength ? { length, unit: 'cm' } : { width, unit: 'cm' },
-      prompt: `L’aire de ce rectangle est ${area} cm². La ${knownLabel} mesure ${known} cm. Quelle est la longueur de l’autre côté ?`,
+      dims: giveLength
+        ? { length, perimeter, unit: 'cm' }
+        : { width, perimeter, unit: 'cm' },
+      prompt: `Le périmètre de ce rectangle est [périmètre] cm. La ${knownLabel} mesure [côté] cm. Quelle est la longueur de l’autre côté ?`,
       geoDualPads: true,
       geoDualTight: true,
       hideItemNumber: true,
-      calcAnswer: `${area} ÷ ${known} = ${unknown}`,
+      calcAnswer: `${perimeter} ÷ 2 − ${known} = ${unknown}`,
       propertyLines: [{ label: 'Côté', answer: `${unknown} cm` }],
       answer: `${unknown} cm`,
     },
@@ -1194,6 +701,8 @@ function genEx27(rng: Rng): MathItem[] {
   // Le nombre de cases positives reste fixe ; seule l’échelle change.
   const unitSquares = rng() < 0.5 ? 1 : 2
   const maxUnit = positiveCells / unitSquares
+  // 1 u/case → entiers ; 1 u/2 cases → demis (ex. 5,5) sur chaque intersection.
+  const step = unitSquares === 2 ? 0.5 : 1
   // Marge négative (−1) toujours 2 cases + trait à −1 + « 0 » au centre — identique
   // pour les deux graduations (1 u/case et 1 u/2 cases). Ne pas lier à unitSquares.
   const originCol = 2
@@ -1217,6 +726,12 @@ function genEx27(rng: Rng): MathItem[] {
     'ABCDEGHJKLMNPQRSTUVWXYZ'.split('').filter((l) => !placeLetters.includes(l)),
   ).slice(0, 3)
 
+  const maxSteps = Math.round(maxUnit / step)
+  const pickUnit = (allowZero: boolean): number => {
+    const minSteps = allowZero ? 0 : 1
+    return Math.round(int(rng, minSteps, maxSteps) * step * 1000) / 1000
+  }
+
   type Pt = { x: number; y: number; label: string }
   const used = new Set<string>()
   const take = (label: string, onAxis: boolean): Pt => {
@@ -1226,15 +741,15 @@ function genEx27(rng: Rng): MathItem[] {
     do {
       if (onAxis) {
         if (rng() < 0.5) {
-          x = int(rng, 1, maxUnit)
+          x = pickUnit(false)
           y = 0
         } else {
           x = 0
-          y = int(rng, 1, maxUnit)
+          y = pickUnit(false)
         }
       } else {
-        x = int(rng, 1, maxUnit)
-        y = int(rng, 1, maxUnit)
+        x = pickUnit(false)
+        y = pickUnit(false)
       }
       g++
     } while (used.has(`${x},${y}`) && g < 60)
@@ -1248,6 +763,7 @@ function genEx27(rng: Rng): MathItem[] {
   const ptsRead: Pt[] = readLetters.map((label, i) =>
     take(label, placeLetters.length + i === axisIndex),
   )
+  const pair = (x: number, y: number) => `(${fmt(x)} ; ${fmt(y)})`
 
   return [
     {
@@ -1272,6 +788,7 @@ function genEx27(rng: Rng): MathItem[] {
         cellMm,
         unitSquares,
         labelStep,
+        step,
         marks: [
           ...ptsPlace.map((p) => ({
             x: p.x,
@@ -1291,17 +808,17 @@ function genEx27(rng: Rng): MathItem[] {
       },
       coordQuestions: [
         ...ptsPlace.map((p) => ({
-          prompt: `Placez ${p.label}(${p.x} ; ${p.y})`,
-          answer: `(${p.x} ; ${p.y})`,
+          prompt: `Placez ${p.label}${pair(p.x, p.y)}`,
+          answer: pair(p.x, p.y),
           reply: 'pair' as const,
         })),
         ...ptsRead.map((p) => ({
           prompt: `Écrivez les coordonnées du point ${p.label}.`,
-          answer: `(${p.x} ; ${p.y})`,
+          answer: pair(p.x, p.y),
           reply: 'pair' as const,
         })),
       ],
-      answer: [...ptsPlace, ...ptsRead].map((p) => `${p.label}(${p.x};${p.y})`).join(' ; '),
+      answer: [...ptsPlace, ...ptsRead].map((p) => `${p.label}${pair(p.x, p.y)}`).join(' ; '),
     },
   ]
 }
@@ -1327,35 +844,37 @@ export function tryGenerateTcmCfrItems(
   worksheetSeed = 0,
 ): MathItem[] | null {
   if (!isTcmCfrType(typeId)) return null
-  // Page Informations : générée via `generateTcmInformations` dans `math/generate.ts`.
+  // Page Informations : générée via `generateTpmInformations` dans `math/generate.ts`.
   if (typeId === 'tcm-cfr-consignes') return []
-  if (typeId === 'tcm-cfr-ex01') return genEx01(rng, count)
-  if (typeId === 'tcm-cfr-ex02') return genEx02(rng, count)
-  if (typeId === 'tcm-cfr-ex03') return genEx03(rng).slice(0, Math.max(1, count))
-  if (typeId === 'tcm-cfr-ex04') return genEx04(rng, count)
-  if (typeId === 'tcm-cfr-ex05') return genEx05(rng).slice(0, Math.max(1, count))
-  if (typeId === 'tcm-cfr-ex06') return genEx06(rng).slice(0, Math.max(1, count))
-  if (typeId === 'tcm-cfr-ex07') return genAddSubFour(rng, false).slice(0, Math.max(1, count))
-  if (typeId === 'tcm-cfr-ex08') return genAddSubFour(rng, true).slice(0, Math.max(1, count))
-  if (typeId === 'tcm-cfr-ex09') return genEx09(rng).slice(0, Math.max(1, count))
-  if (typeId === 'tcm-cfr-ex10') return genEx10(rng).slice(0, Math.max(1, count))
-  if (typeId === 'tcm-cfr-ex11') return genEx11(rng, count)
-  if (typeId === 'tcm-cfr-ex12') return genFracShapes(rng, count, 'color')
-  if (typeId === 'tcm-cfr-ex13') return genFracShapes(rng, count, 'read')
-  if (typeId === 'tcm-cfr-ex14') return genEx14(rng).slice(0, Math.max(1, count))
-  if (typeId === 'tcm-cfr-ex15') return genEx15(rng).slice(0, Math.max(1, count))
-  if (typeId === 'tcm-cfr-ex16') return genEx16(rng, worksheetSeed).slice(0, Math.max(1, count))
-  if (typeId === 'tcm-cfr-ex17') return genEx17(rng, worksheetSeed).slice(0, Math.max(1, count))
-  if (typeId === 'tcm-cfr-ex18') return genEx18(rng)
-  if (typeId === 'tcm-cfr-ex19') return genEx19(rng)
-  if (typeId === 'tcm-cfr-ex20') return genEx20(rng, count)
-  if (typeId === 'tcm-cfr-ex21') return genEx21(rng, count)
-  if (typeId === 'tcm-cfr-ex22') return genEx22(rng)
-  if (typeId === 'tcm-cfr-ex23') return genEx23(rng)
-  if (typeId === 'tcm-cfr-ex24') return genEx24(rng)
-  if (typeId === 'tcm-cfr-ex25') return genEx25(rng)
-  if (typeId === 'tcm-cfr-ex26') return genEx26(rng)
-  if (typeId === 'tcm-cfr-ex27') return genEx27(rng)
-  if (typeId === 'tcm-cfr-ex28') return genEx28(rng)
-  return null
+  let items: MathItem[] | null = null
+  if (typeId === 'tcm-cfr-ex01') items = genEx01(rng, count)
+  else if (typeId === 'tcm-cfr-ex02') items = genEx02(rng, count)
+  else if (typeId === 'tcm-cfr-ex03') items = genEx03(rng).slice(0, Math.max(1, count))
+  else if (typeId === 'tcm-cfr-ex04') items = genEx04(rng, count)
+  else if (typeId === 'tcm-cfr-ex05') items = genEx05(rng).slice(0, Math.max(1, count))
+  else if (typeId === 'tcm-cfr-ex06') items = genEx06(rng).slice(0, Math.max(1, count))
+  else if (typeId === 'tcm-cfr-ex07') items = genAddSubFour(rng, false).slice(0, Math.max(1, count))
+  else if (typeId === 'tcm-cfr-ex08') items = genAddSubFour(rng, true).slice(0, Math.max(1, count))
+  else if (typeId === 'tcm-cfr-ex09') items = genEx09(rng).slice(0, Math.max(1, count))
+  else if (typeId === 'tcm-cfr-ex10') items = genEx10(rng).slice(0, Math.max(1, count))
+  else if (typeId === 'tcm-cfr-ex11') items = genEx11(rng, count)
+  else if (typeId === 'tcm-cfr-ex12') items = genFracShapes(rng, count, 'color')
+  else if (typeId === 'tcm-cfr-ex13') items = genFracShapes(rng, count, 'read')
+  else if (typeId === 'tcm-cfr-ex14') items = genEx14(rng).slice(0, Math.max(1, count))
+  else if (typeId === 'tcm-cfr-ex15') items = genEx15(rng).slice(0, Math.max(1, count))
+  else if (typeId === 'tcm-cfr-ex16') items = genEx16(rng, worksheetSeed).slice(0, Math.max(1, count))
+  else if (typeId === 'tcm-cfr-ex17') items = genEx17(rng, worksheetSeed).slice(0, Math.max(1, count))
+  else if (typeId === 'tcm-cfr-ex18') items = genEx18(rng)
+  else if (typeId === 'tcm-cfr-ex19') items = genEx19(rng)
+  else if (typeId === 'tcm-cfr-ex20') items = genEx20(rng, count)
+  else if (typeId === 'tcm-cfr-ex21') items = genEx21(rng, count)
+  else if (typeId === 'tcm-cfr-ex22') items = genEx22(rng)
+  else if (typeId === 'tcm-cfr-ex23') items = genEx23(rng)
+  else if (typeId === 'tcm-cfr-ex24') items = genEx24(rng)
+  else if (typeId === 'tcm-cfr-ex25') items = genEx25(rng)
+  else if (typeId === 'tcm-cfr-ex26') items = genEx26(rng)
+  else if (typeId === 'tcm-cfr-ex27') items = genEx27(rng)
+  else if (typeId === 'tcm-cfr-ex28') items = genEx28(rng)
+  if (!items) return null
+  return items.map((item) => sanitizeItemNumberNoise(item))
 }

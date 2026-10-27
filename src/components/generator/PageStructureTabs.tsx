@@ -15,7 +15,7 @@ export type PageStructureTabsProps = {
   safeBlockIndex: number
   activeSheet: WorksheetPage | undefined
   firstExerciseNo: number
-  isTcmLike: boolean
+  isTpmLike: boolean
   addPage: () => void
   addExerciseOnPage: () => void
   removePage: (configIdx: number) => void
@@ -33,7 +33,7 @@ export function PageStructureTabs({
   safeBlockIndex,
   activeSheet,
   firstExerciseNo,
-  isTcmLike,
+  isTpmLike,
   addPage,
   addExerciseOnPage,
   removePage,
@@ -42,10 +42,6 @@ export function PageStructureTabs({
     <>
             <div className="panel-title">
               <h3>Paramètres de l’activité</h3>
-              <span>
-                {worksheets.length} feuille{worksheets.length > 1 ? 's' : ''}
-                {pages.length !== worksheets.length ? ` · ${pages.length} config.` : ''}
-              </span>
             </div>
             <div className="mode-toggle is-tabs page-tabs" role="tablist" aria-label="Feuilles">
               {worksheets.map((sheet, index) => {
@@ -76,7 +72,7 @@ export function PageStructureTabs({
                   }
                 >
                   <span className="tab-number">{tabLabel}</span>
-                  {!isTcmLike &&
+                  {!isTpmLike &&
                   pages.length > 1 &&
                   !sheet.isContinuation &&
                   (sheet.configIndex ?? index) === pageIndex &&
@@ -90,7 +86,7 @@ export function PageStructureTabs({
                 )
               })}
             </div>
-            {isTcmLike ? null : (
+            {isTpmLike ? null : (
               <div className="page-structure-actions">
                 <button className="button secondary" type="button" onClick={addPage}>
                   + Page
@@ -114,16 +110,23 @@ export function PageStructureTabs({
                     aria-label={`Exercice ${tabNo}`}
                   >
                     <span className="tab-number">{tabNo}</span>
-                    {!isTcmLike && pageExerciseBlocks.length > 1 && index === safeBlockIndex ? (
+                    {!isTpmLike && pageExerciseBlocks.length > 1 && index === safeBlockIndex ? (
                       <TabRemoveButton
                         label="Retirer cet exercice"
                         onRemove={() => {
+                          const blockIdx = index
+                          const numbers = pageExerciseBlocks.map(
+                            (block, i) =>
+                              activeSheet?.blocks?.[i]?.exerciseIndex ??
+                              block.exerciseNo ??
+                              firstExerciseNo + i,
+                          )
                           setPages((current) =>
                             current.map((page, pageIdx) =>
-                              pageIdx === pageIndex ? removePageBlock(page, index) : page,
+                              pageIdx === pageIndex ? removePageBlock(page, blockIdx, numbers) : page,
                             ),
                           )
-                          setBlockIndex(Math.max(0, index - 1))
+                          setBlockIndex(Math.max(0, blockIdx - 1))
                         }}
                       />
                     ) : null}

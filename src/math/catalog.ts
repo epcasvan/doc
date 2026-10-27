@@ -13,6 +13,7 @@ import { defaultEntriesFor } from '@/jeux/defaults'
 import { entriesToText } from '@/jeux/parse'
 import { JEUX_LIBRE_TOPIC, isJeuxTopicId, jeuxTopicsFromFr } from '@/jeux/topics'
 import { ACM_EXERCISE_TYPES, ACM_TOPICS } from '@/acm/catalog'
+import { LOGIQUE_EXERCISE_TYPES, LOGIQUE_TOPICS } from '@/logique/catalog'
 import { SANTE_EXERCISE_TYPES, SANTE_TOPICS } from '@/sante/catalog'
 import { SOCIETE_EXERCISE_TYPES, SOCIETE_TOPICS } from '@/societe/catalog'
 import { TCF_EXERCISE_TYPES, TCF_TOPICS } from '@/tcf/catalog'
@@ -21,7 +22,7 @@ import { TCM_CSC_EXERCISE_TYPES, TCM_CSC_TOPICS } from '@/tcm-csc/catalog'
 import { VOCABULAIRE_EXERCISE_TYPES, VOCABULAIRE_TOPICS } from '@/vocabulaire/catalog'
 
 export const topics: Topic[] = [
-  { id: 'tcm-info', label: 'Informations', domain: 'tcm' },
+  { id: 'tpm-info', label: 'Informations', domain: 'tpm' },
   ...TCF_TOPICS,
   { id: 'glossaire-algebre', label: 'Glossaire', domain: 'algèbre' },
   { id: 'nombres', label: 'Nombres naturels', domain: 'algèbre' },
@@ -72,7 +73,8 @@ export const topics: Topic[] = [
   ...SOCIETE_TOPICS,
   ...SANTE_TOPICS,
   ...ACM_TOPICS,
-  // —— TCM CSC / TCM CFR (stubs vides, pas une copie de TCM) ——
+  ...LOGIQUE_TOPICS,
+  // —— TCM CSC / TCM CFR (stubs vides, pas une copie de TPM) ——
   ...TCM_CSC_TOPICS,
   ...TCM_CFR_TOPICS,
   // —— Grilles de cartes (thèmes FR + Libre) ——
@@ -94,15 +96,16 @@ export const vocabulaireTopics = topics.filter((topic) => topic.domain === 'voca
 export const societeTopics = topics.filter((topic) => topic.domain === 'société')
 export const santeTopics = topics.filter((topic) => topic.domain === 'santé')
 export const acmTopics = topics.filter((topic) => topic.domain === 'acm')
+export const logiqueTopics = topics.filter((topic) => topic.domain === 'logique')
 export const tcmCscTopics = topics.filter((topic) => topic.domain === 'tcm-csc')
 export const tcmCfrTopics = topics.filter((topic) => topic.domain === 'tcm-cfr')
 export const jeuxTopics = topics.filter((topic) => topic.domain === 'jeux')
 export const calligraphieTopics = topics.filter((topic) => topic.domain === 'calligraphie')
 /** TCF : un thème par compétence (CE, CO, PE, PO). */
 export const tcfTopics = topics.filter((topic) => topic.domain === 'tcf')
-/** Thèmes maths utilisables dans le TCM (intro + algèbre + géométrie). */
-export const tcmTopics = [
-  ...topics.filter((topic) => topic.domain === 'tcm'),
+/** Thèmes maths utilisables dans le TPM (intro + algèbre + géométrie). */
+export const tpmTopics = [
+  ...topics.filter((topic) => topic.domain === 'tpm'),
   ...algebraTopics,
   ...geometryTopics,
 ]
@@ -119,17 +122,17 @@ const t = (
 
 export const exerciseTypes: ExerciseType[] = [
   t(
-    'tcm-consignes',
-    'tcm-info',
+    'tpm-consignes',
+    'tpm-info',
     'Consignes du test',
-    'Page d’informations et consignes du test de connaissance de mathématiques.',
+    'Page d’informations et consignes du test de placement de mathématiques.',
     'Lisez les consignes avant de commencer le test.',
     'texte',
     { preferredColumns: 1 },
   ),
   t(
-    'tcm-comparer',
-    'tcm-info',
+    'tpm-comparer',
+    'tpm-info',
     'Comparer (10–100)',
     'Comparer des nombres entre 10 et 100 (<, =, >).',
     'Coloriez la pastille correcte.',
@@ -137,8 +140,8 @@ export const exerciseTypes: ExerciseType[] = [
     { preferredColumns: 2 },
   ),
   t(
-    'tcm-suite',
-    'tcm-info',
+    'tpm-suite',
+    'tpm-info',
     'Suites (jusqu’à 100)',
     'Compléter une suite de 5 nombres (maximum 100).',
     'Complétez les termes manquants.',
@@ -146,8 +149,8 @@ export const exerciseTypes: ExerciseType[] = [
     { preferredColumns: 2 },
   ),
   t(
-    'tcm-operations',
-    'tcm-info',
+    'tpm-operations',
+    'tpm-info',
     'Additions et soustractions',
     'Trois additions et trois soustractions (résultat ou opérande manquant), nombres entre 10 et 100.',
     'Effectuez les opérations.',
@@ -155,8 +158,8 @@ export const exerciseTypes: ExerciseType[] = [
     { preferredColumns: 2 },
   ),
   t(
-    'tcm-quatre-ops',
-    'tcm-info',
+    'tpm-quatre-ops',
+    'tpm-info',
     'Calcul mixte (+ − × ÷)',
     'Additions, soustractions, multiplications et divisions en ligne (templates à trous).',
     'Effectuez les calculs.',
@@ -164,8 +167,8 @@ export const exerciseTypes: ExerciseType[] = [
     { preferredColumns: 2 },
   ),
   t(
-    'tcm-add-sub-col-3',
-    'tcm-info',
+    'tpm-add-sub-col-3',
+    'tpm-info',
     'Colonnes (+ / −) 3 chiffres',
     'Une addition et une soustraction en colonnes (nombres à 3 chiffres, grille à 4 colonnes).',
     'Effectuez les calculs en colonnes.',
@@ -173,8 +176,8 @@ export const exerciseTypes: ExerciseType[] = [
     { preferredColumns: 2 },
   ),
   t(
-    'tcm-decompose-99',
-    'tcm-info',
+    'tpm-decompose-99',
+    'tpm-info',
     'Décomposer (11–99)',
     'Décomposer un nombre entre 11 et 99 en dizaines et unités.',
     'Décomposez chaque nombre.',
@@ -182,8 +185,8 @@ export const exerciseTypes: ExerciseType[] = [
     { preferredColumns: 1 },
   ),
   t(
-    'tcm-grandes-suites',
-    'tcm-info',
+    'tpm-grandes-suites',
+    'tpm-info',
     'Grandes suites',
     'Compléter des suites (écarts 100–200 puis 200–400, multiples de 5).',
     'Complétez les termes manquants.',
@@ -191,8 +194,8 @@ export const exerciseTypes: ExerciseType[] = [
     { preferredColumns: 1 },
   ),
   t(
-    'tcm-decompose-9999',
-    'tcm-info',
+    'tpm-decompose-9999',
+    'tpm-info',
     'Décomposer (1000–9999)',
     'Décomposer un nombre à 4 chiffres avec un 0 aux centaines ou aux dizaines.',
     'Décomposez chaque nombre.',
@@ -200,8 +203,8 @@ export const exerciseTypes: ExerciseType[] = [
     { preferredColumns: 1 },
   ),
   t(
-    'tcm-add-sub-col-4',
-    'tcm-info',
+    'tpm-add-sub-col-4',
+    'tpm-info',
     'Colonnes (+ / −) 4 chiffres',
     'Une addition et une soustraction en colonnes (nombres à 4 chiffres, grille à 5 colonnes).',
     'Effectuez les calculs en colonnes.',
@@ -209,8 +212,8 @@ export const exerciseTypes: ExerciseType[] = [
     { preferredColumns: 2 },
   ),
   t(
-    'tcm-mul-div-col',
-    'tcm-info',
+    'tpm-mul-div-col',
+    'tpm-info',
     'Multiplication et division en colonnes',
     'Une multiplication (3 chiffres × 3–9) et une division (4 chiffres ÷ 3–9, sans reste).',
     'Effectuez les calculs en colonnes.',
@@ -218,8 +221,8 @@ export const exerciseTypes: ExerciseType[] = [
     { preferredColumns: 2 },
   ),
   t(
-    'tcm-rect-peri-aire',
-    'tcm-info',
+    'tpm-rect-peri-aire',
+    'tpm-info',
     'Rectangle (périmètre et aire)',
     'Rectangle coté : calculer le périmètre et l’aire.',
     'Calculez le périmètre et l’aire.',
@@ -227,8 +230,8 @@ export const exerciseTypes: ExerciseType[] = [
     { figure: 'rectangle', preferredColumns: 1 },
   ),
   t(
-    'tcm-para-peri-aire',
-    'tcm-info',
+    'tpm-para-peri-aire',
+    'tpm-info',
     'Parallélogramme (périmètre et aire)',
     'Parallélogramme coté (base, côté, hauteur) : calculer le périmètre et l’aire.',
     'Calculez le périmètre et l’aire.',
@@ -236,8 +239,8 @@ export const exerciseTypes: ExerciseType[] = [
     { figure: 'parallelogram', preferredColumns: 1 },
   ),
   t(
-    'tcm-tri-peri-aire',
-    'tcm-info',
+    'tpm-tri-peri-aire',
+    'tpm-info',
     'Triangle (périmètre et aire)',
     'Triangle quelconque coté (a, b, c, h) : calculer le périmètre et l’aire.',
     'Calculez le périmètre et l’aire.',
@@ -245,8 +248,8 @@ export const exerciseTypes: ExerciseType[] = [
     { figure: 'triangle', preferredColumns: 1 },
   ),
   t(
-    'tcm-rhombus-peri-aire',
-    'tcm-info',
+    'tpm-rhombus-peri-aire',
+    'tpm-info',
     'Losange (périmètre et aire)',
     'Losange coté (c, d₁, d₂) : calculer le périmètre et l’aire.',
     'Calculez le périmètre et l’aire.',
@@ -254,8 +257,8 @@ export const exerciseTypes: ExerciseType[] = [
     { figure: 'rhombus', preferredColumns: 1 },
   ),
   t(
-    'tcm-trap-peri-aire',
-    'tcm-info',
+    'tpm-trap-peri-aire',
+    'tpm-info',
     'Trapèze (périmètre et aire)',
     'Trapèze isocèle coté (a, b, c, h) : calculer le périmètre et l’aire.',
     'Calculez le périmètre et l’aire.',
@@ -263,8 +266,8 @@ export const exerciseTypes: ExerciseType[] = [
     { figure: 'trapezoid', preferredColumns: 1 },
   ),
   t(
-    'tcm-circle-peri-aire',
-    'tcm-info',
+    'tpm-circle-peri-aire',
+    'tpm-info',
     'Cercle (périmètre et aire)',
     'Cercle avec diamètre : calculer le périmètre et l’aire (π = 3,14).',
     'Calculez le périmètre et l’aire. (π = 3,14)',
@@ -272,8 +275,8 @@ export const exerciseTypes: ExerciseType[] = [
     { figure: 'circle', preferredColumns: 1 },
   ),
   t(
-    'tcm-suites-6',
-    'tcm-info',
+    'tpm-suites-6',
+    'tpm-info',
     'Suites (6 termes)',
     'Suites à 6 termes (4 trous, 2 visibles consécutifs) : grands nombres puis décimaux.',
     'Complétez les suites numériques.',
@@ -281,8 +284,8 @@ export const exerciseTypes: ExerciseType[] = [
     { preferredColumns: 1 },
   ),
   t(
-    'tcm-ranger',
-    'tcm-info',
+    'tpm-ranger',
+    'tpm-info',
     'Trier des nombres',
     '5 grands nombres puis 5 décimaux ; une question croissant, l’autre décroissant (ordre tiré au hasard).',
     'Classez les nombres dans l’ordre demandé.',
@@ -290,8 +293,8 @@ export const exerciseTypes: ExerciseType[] = [
     { preferredColumns: 1 },
   ),
   t(
-    'tcm-dec-add-sub',
-    'tcm-info',
+    'tpm-dec-add-sub',
+    'tpm-info',
     'Additions et soustractions décimales',
     'À poser : + et − décimaux (grille vide 6 col.). Soustraction : 1er nombre 1–2 déc., 2e une décimale de plus.',
     'Posez les nombres dans la grille, puis calculez.',
@@ -299,8 +302,8 @@ export const exerciseTypes: ExerciseType[] = [
     { preferredColumns: 2 },
   ),
   t(
-    'tcm-mul-mixte',
-    'tcm-info',
+    'tpm-mul-mixte',
+    'tpm-info',
     'Multiplications à poser (entier et décimal)',
     'À poser : × entière (3 × 2 chiffres) et × décimale (4 chiffres × 1,1–9,9), grille vide 6 col.',
     'Posez les nombres dans la grille, puis calculez.',
@@ -308,8 +311,8 @@ export const exerciseTypes: ExerciseType[] = [
     { preferredColumns: 2 },
   ),
   t(
-    'tcm-div-mixte',
-    'tcm-info',
+    'tpm-div-mixte',
+    'tpm-info',
     'Divisions posées (entier et décimal)',
     'Une division entière (4 chiffres ÷ 12–19) et une décimale (4 chiffres, 2–3 déc. avec un 0 ÷ 3–9), grilles 4+4.',
     'Effectuez les divisions en colonnes.',
@@ -317,26 +320,26 @@ export const exerciseTypes: ExerciseType[] = [
     { preferredColumns: 2 },
   ),
   t(
-    'tcm-frac-color',
-    'tcm-info',
+    'tpm-frac-color',
+    'tpm-info',
     'Colorier les fractions',
-    'Deux questions : 1 forme simple (tirée parmi 2) et 1 multi-forme (tirée parmi 2).',
+    'Formes simples (mêmes limites que TCM CFR) : colorier la fraction indiquée.',
     'Coloriez les parties pour représenter la fraction demandée.',
     'geo',
     { preferredColumns: 2 },
   ),
   t(
-    'tcm-frac-read',
-    'tcm-info',
+    'tpm-frac-read',
+    'tpm-info',
     'Lire les fractions',
-    'Deux questions : 1 forme simple (tirée parmi 2) et 1 multi-forme (tirée parmi 2).',
+    'Formes simples (mêmes limites que TCM CFR) : lire la fraction coloriée.',
     'Observez les formes coloriées et écrivez la fraction représentée.',
     'geo',
     { preferredColumns: 2 },
   ),
   t(
-    'tcm-ops-decimales',
-    'tcm-info',
+    'tpm-ops-decimales',
+    'tpm-info',
     'Opérations décimales',
     'Une addition, une soustraction, deux multiplications et deux divisions avec décimaux (en ligne).',
     'Effectuez les opérations.',
@@ -344,8 +347,8 @@ export const exerciseTypes: ExerciseType[] = [
     { preferredColumns: 2 },
   ),
   t(
-    'tcm-puissances-mixte',
-    'tcm-info',
+    'tpm-puissances-mixte',
+    'tpm-info',
     'Puissances et racines (mixte)',
     'Puissance (base 1–9), racine carrée (≤ 144), décimal × 10ⁿ, entier ÷ 10ⁿ.',
     'Calculez.',
@@ -353,8 +356,8 @@ export const exerciseTypes: ExerciseType[] = [
     { preferredColumns: 2 },
   ),
   t(
-    'tcm-priorite-ops',
-    'tcm-info',
+    'tpm-priorite-ops',
+    'tpm-info',
     'Priorité des opérations',
     'Deux expressions : () [] avec + − × ÷ ; puis fractions empilées et puissances (50 modèles).',
     'Calculez en respectant les priorités.',
@@ -362,8 +365,8 @@ export const exerciseTypes: ExerciseType[] = [
     { preferredColumns: 1 },
   ),
   t(
-    'tcm-relatifs-ops',
-    'tcm-info',
+    'tpm-relatifs-ops',
+    'tpm-info',
     'Opérations avec relatifs',
     'Quatre opérations (+ − × ÷) sur relatifs : positifs écrits (+n) ; +/− en 10–99 ; ×/÷ (10–25)×(1–9).',
     'Calculez.',
@@ -371,8 +374,8 @@ export const exerciseTypes: ExerciseType[] = [
     { preferredColumns: 2 },
   ),
   t(
-    'tcm-fractions-mixte',
-    'tcm-info',
+    'tpm-fractions-mixte',
+    'tpm-info',
     'Fractions (réduire et calculer)',
     'Réduire (avec ou sans trou), puis + − × ÷ ; multiplication et division avec au moins un relatif.',
     'Réduisez ou calculez. Simplifiez si possible.',
@@ -380,8 +383,8 @@ export const exerciseTypes: ExerciseType[] = [
     { preferredColumns: 2 },
   ),
   t(
-    'tcm-expressions-reduire',
-    'tcm-info',
+    'tpm-expressions-reduire',
+    'tpm-info',
     'Réduction d’expressions',
     'Q1 : somme de monômes sans puissance ; Q2 : produit avec exactement deux · (trois facteurs : monômes / parenthèses), 50 modèles, sans puissance dans l’énoncé.',
     'Réduisez chaque expression.',
@@ -389,8 +392,8 @@ export const exerciseTypes: ExerciseType[] = [
     { preferredColumns: 1 },
   ),
   t(
-    'tcm-expressions-evaluer',
-    'tcm-info',
+    'tpm-expressions-evaluer',
+    'tpm-info',
     'Évaluer des expressions (3 variables)',
     'Q1 : sans puissance ni fraction (≥ 6 termes) ; Q2 : avec puissances et fractions empilées (binômes possibles), ≥ 6 termes dont 2 hors fraction. 50 modèles par question.',
     'Évaluez chaque expression avec les trois valeurs indiquées.',
@@ -398,8 +401,8 @@ export const exerciseTypes: ExerciseType[] = [
     { preferredColumns: 1 },
   ),
   t(
-    'tcm-equations',
-    'tcm-info',
+    'tpm-equations',
+    'tpm-info',
     'Résoudre des équations',
     'Q1 : x d’un seul côté (gauche ou droite), sans fraction — 50 modèles. Q2 : x des deux côtés, fractions possibles — 50 modèles. Grille sous l’équation, 1 colonne.',
     'Résolvez chaque équation.',
@@ -407,8 +410,8 @@ export const exerciseTypes: ExerciseType[] = [
     { preferredColumns: 1 },
   ),
   t(
-    'tcm-conversions-mixte',
-    'tcm-info',
+    'tpm-conversions-mixte',
+    'tpm-info',
     'Conversions d’unités (mixte)',
     'Quatre conversions : masse (kg), capacité (L), temps (h), aire (m²) ou volume (m³). Entier ou décimal au hasard.',
     'Convertissez.',
@@ -416,8 +419,8 @@ export const exerciseTypes: ExerciseType[] = [
     { preferredColumns: 2 },
   ),
   t(
-    'tcm-proportion-kg',
-    'tcm-info',
+    'tpm-proportion-kg',
+    'tpm-info',
     'Pourcentage et règle de trois',
     '1) p % de n est égal à … (p ∈ {10,20,25,40,60,75,80}, n 101–999 non multiple de 10) ; 2) n kg de … → p francs / m kg → ____ (25 produits).',
     'Complétez.',
@@ -430,7 +433,7 @@ export const exerciseTypes: ExerciseType[] = [
     'nombres-compter-formes',
     'nombres',
     'Compter les formes',
-    'Cadre d’icônes (notes, étoiles…) mélangées à des cercles et triangles à ignorer.',
+    'Cadre d’icônes N&B (notes, trèfles, cœurs…) placées au hasard sans se toucher ; deux styles distracteurs à ignorer.',
     'Comptez le nombre de formes.',
     'geo',
     { preferredColumns: 2 },
@@ -449,12 +452,84 @@ export const exerciseTypes: ExerciseType[] = [
   t('addition-colonne', 'addition', 'En colonnes (nombres posés)', 'Les nombres sont déjà alignés dans le tableau.', 'Effectuez les additions en colonnes. Écrivez le résultat et les retenues.', 'colonne', { preferredColumns: 2 }),
   t('addition-colonne-poser', 'addition', 'En colonnes (à poser)', 'Poser soi-même les nombres dans le tableau.', 'Posez les nombres dans le tableau, puis calculez.', 'colonne-vide', { preferredColumns: 2 }),
   t('addition-comparer', 'addition', 'Comparer des sommes', 'Comparer 12 + 8 et 15 + 4.', 'Coloriez la pastille correcte.', 'ligne', { preferredColumns: 2 }),
+  t(
+    'addition-tableau',
+    'addition',
+    'Tableau à compléter',
+    'En-têtes donnés. L’élève écrit chaque somme.',
+    'Complétez le tableau. Chaque case est la somme du nombre de la ligne et de celui de la colonne.',
+    'ligne',
+    { preferredColumns: 2 },
+  ),
+  t(
+    'addition-tableau-entetes',
+    'addition',
+    'En-têtes à trouver',
+    'Une série d’en-têtes est vide. Des résultats permettent de la retrouver.',
+    'Retrouvez les en-têtes, puis complétez le tableau. Chaque case est la somme du nombre de la ligne et de celui de la colonne.',
+    'ligne',
+    { preferredColumns: 2 },
+  ),
+  t(
+    'addition-decompose',
+    'addition',
+    'Calcul mental (décomposition)',
+    'Séparer dizaines et unités, les regrouper, puis écrire le résultat.',
+    'Effectuez les calculs comme dans l’exemple.',
+    'ligne',
+    { preferredColumns: 1 },
+  ),
+  t(
+    'addition-tableau-melange',
+    'addition',
+    'Tableau mélangé',
+    'Des nombres manquent dans les cases et dans les en-têtes de ligne ou de colonne.',
+    'Complétez les nombres manquants, dans les cases et dans les en-têtes. Chaque case est la somme du nombre de la ligne et de celui de la colonne.',
+    'ligne',
+    { preferredColumns: 2 },
+  ),
 
   t('soustraction-ligne', 'soustraction', 'En ligne', 'Calculer 83 − 46 = ?', 'Calculez chaque soustraction.', 'ligne'),
   t('soustraction-trou', 'soustraction', 'En ligne avec des trous', 'Compléter 83 − ? = 46 ou ? − 37 = 46.', 'Complétez le nombre manquant.', 'trou'),
   t('soustraction-colonne', 'soustraction', 'En colonnes (nombres posés)', 'Les nombres sont déjà alignés dans le tableau.', 'Effectuez les soustractions en colonnes. Écrivez le résultat et les emprunts.', 'colonne', { preferredColumns: 2 }),
   t('soustraction-colonne-poser', 'soustraction', 'En colonnes (à poser)', 'Poser soi-même les nombres dans le tableau.', 'Posez les nombres, puis calculez.', 'colonne-vide', { preferredColumns: 2 }),
   t('soustraction-comparer', 'soustraction', 'Comparer des différences', 'Comparer 90 − 12 et 88 − 8.', 'Coloriez la pastille correcte.', 'ligne', { preferredColumns: 2 }),
+  t(
+    'soustraction-tableau',
+    'soustraction',
+    'Tableau à compléter',
+    'En-têtes donnés. L’élève écrit chaque différence.',
+    'Complétez le tableau. Chaque case est le nombre de la ligne moins celui de la colonne.',
+    'ligne',
+    { preferredColumns: 2 },
+  ),
+  t(
+    'soustraction-tableau-entetes',
+    'soustraction',
+    'En-têtes à trouver',
+    'Une série d’en-têtes est vide. Des résultats permettent de la retrouver.',
+    'Retrouvez les en-têtes, puis complétez le tableau. Chaque case est le nombre de la ligne moins celui de la colonne.',
+    'ligne',
+    { preferredColumns: 2 },
+  ),
+  t(
+    'soustraction-decompose',
+    'soustraction',
+    'Calcul mental (décomposition)',
+    'Séparer dizaines et unités, les regrouper, puis écrire le résultat.',
+    'Effectuez les calculs comme dans l’exemple.',
+    'ligne',
+    { preferredColumns: 1 },
+  ),
+  t(
+    'soustraction-tableau-melange',
+    'soustraction',
+    'Tableau mélangé',
+    'Des nombres manquent dans les cases et dans les en-têtes de ligne ou de colonne.',
+    'Complétez les nombres manquants, dans les cases et dans les en-têtes. Chaque case est le nombre de la ligne moins celui de la colonne.',
+    'ligne',
+    { preferredColumns: 2 },
+  ),
 
   t('estimation-dizaine', 'estimation', 'Arrondir à la dizaine', 'Arrondir 47 à la dizaine la plus proche.', 'Arrondissez à la dizaine la plus proche.', 'ligne'),
   t('estimation-centaine', 'estimation', 'Arrondir à la centaine', 'Arrondir 382 à la centaine la plus proche.', 'Arrondissez à la centaine la plus proche.', 'ligne'),
@@ -781,6 +856,7 @@ export const exerciseTypes: ExerciseType[] = [
   ...SOCIETE_EXERCISE_TYPES,
   ...SANTE_EXERCISE_TYPES,
   ...ACM_EXERCISE_TYPES,
+  ...LOGIQUE_EXERCISE_TYPES,
   ...TCM_CSC_EXERCISE_TYPES,
   ...TCM_CFR_EXERCISE_TYPES,
 ]
@@ -898,14 +974,14 @@ export function isDraftPadExercise(typeId: string): boolean {
     typeId.startsWith('perimetres-') ||
     typeId.startsWith('aires-') ||
     typeId.startsWith('volumes-') ||
-    // TCM : géométrie périmètre/aire, priorité, réduction, évaluation, équations.
+    // TPM : géométrie périmètre/aire, priorité, réduction, évaluation, équations.
     // Pas de grille pour ops décimales / puissances / relatifs / fractions (ex. 26, 27, 29, 30).
     typeId.includes('peri-aire') ||
-    typeId === 'tcm-expressions-reduire' ||
-    typeId === 'tcm-expressions-evaluer' ||
-    typeId === 'tcm-equations' ||
+    typeId === 'tpm-expressions-reduire' ||
+    typeId === 'tpm-expressions-evaluer' ||
+    typeId === 'tpm-equations' ||
     typeId === 'expressions-substituer' ||
-    typeId === 'tcm-priorite-ops' ||
+    typeId === 'tpm-priorite-ops' ||
     typeId === 'tcm-cfr-ex14' ||
     typeId === 'tcm-cfr-ex15' ||
     typeId === 'tcm-cfr-ex22' ||
@@ -924,7 +1000,7 @@ export function firstTypeFor(domain: Domain, topic?: string, track?: FrenchTrack
     if (any[0]) return any[0]
   }
   const fallbackTopic =
-    domain === 'algèbre' || domain === 'tcm' || domain === 'français'
+    domain === 'algèbre' || domain === 'tpm' || domain === 'français'
         ? 'addition'
         : domain === 'géométrie'
           ? 'aires'
@@ -935,12 +1011,14 @@ export function firstTypeFor(domain: Domain, topic?: string, track?: FrenchTrack
               : domain === 'vocabulaire'
                 ? 'vocabulaire-a-venir'
                 : domain === 'société'
-                  ? 'societe-a-venir'
+                  ? 'societe-suisse'
                   : domain === 'santé'
                     ? 'sante-a-venir'
                     : domain === 'acm'
                       ? 'acm-a-venir'
-                      : domain === 'tcm-csc'
+                      : domain === 'logique'
+                        ? 'logique-suite-graphique'
+                        : domain === 'tcm-csc'
                         ? 'tcm-csc-a-venir'
                         : domain === 'tcm-cfr'
                           ? 'tcm-cfr-info'
@@ -972,11 +1050,13 @@ export function defaultPage(domain: Domain = 'algèbre'): PageConfigLike {
     domain === 'tcm-csc' ||
     domain === 'tcm-cfr'
       ? 1
-      : domain === 'alphabetisation' || domain === 'soutien-fr' || domain === 'gattegno'
+      : domain === 'logique'
         ? 6
-        : isDraftPadExercise(type.id)
-            ? 2
-            : 8
+        : domain === 'alphabetisation' || domain === 'soutien-fr' || domain === 'gattegno'
+          ? 6
+          : isDraftPadExercise(type.id)
+              ? 2
+              : 8
   const gameEntries = domain === 'jeux' ? defaultEntriesFor(type.id) : undefined
   const calliText = domain === 'calligraphie' ? defaultCalliText(type.id) : undefined
   return {

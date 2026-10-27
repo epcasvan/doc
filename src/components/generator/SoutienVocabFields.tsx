@@ -1,34 +1,17 @@
 import { SelectBox } from '@/components/generator/SelectBox'
 import { VocabAddWordRow } from '@/components/generator/VocabAddWordRow'
 import {
-  defaultSoutienMotsEntries,
-  SoutienMotsLibreEditor,
-} from '@/francais/soutien/SoutienMotsLibreEditor'
-import {
-  defaultSoutienCompleterEntries,
-  SoutienCompleterLibreEditor,
-} from '@/francais/soutien/SoutienCompleterLibreEditor'
-import {
   defaultVocabSelected,
   type VocabWordEntry,
 } from '@/francais/vocab-learn'
-import type { SoutienComplete } from '@/francais/soutien/banks'
 import type { ExerciseBlock } from '@/math/types'
 
 export type SoutienVocabFieldsProps = {
-  isSoutienMots: boolean
-  isSoutienCompleter: boolean
   isVocabPool: boolean
   isVocabLearn: boolean
   isVocabProd: boolean
-  libreMode: boolean
   activeBlock: ExerciseBlock
   updatePage: (patch: Partial<ExerciseBlock>) => void
-  soutienType1Words: string[]
-  soutienType1WordPool: string[]
-  soutienBankSound: string | undefined
-  soutienCompletes: readonly SoutienComplete[]
-  soutienBankWords: readonly string[]
   vocabSubgroups: Array<{ id: string; label: string }>
   activeVocabSubgroup: string | undefined
   vocabLearnWords: VocabWordEntry[]
@@ -37,19 +20,11 @@ export type SoutienVocabFieldsProps = {
 }
 
 export function SoutienVocabFields({
-  isSoutienMots,
-  isSoutienCompleter,
   isVocabPool,
   isVocabLearn,
   isVocabProd,
-  libreMode,
   activeBlock,
   updatePage,
-  soutienType1Words,
-  soutienType1WordPool,
-  soutienBankSound,
-  soutienCompletes,
-  soutienBankWords,
   vocabSubgroups,
   activeVocabSubgroup,
   vocabLearnWords,
@@ -58,104 +33,6 @@ export function SoutienVocabFields({
 }: SoutienVocabFieldsProps) {
   return (
     <>
-              {isSoutienMots ? (
-                <div className="mode-toggle-block">
-                  <b>Contenu</b>
-                  <div className="mode-toggle is-2" role="group" aria-label="Source des mots">
-                    <button
-                      type="button"
-                      className={!activeBlock.soutienMotsLibre ? 'active' : ''}
-                      onClick={() =>
-                        updatePage({ soutienMotsLibre: false, soutienMotsEntries: undefined })
-                      }
-                    >
-                      Banque
-                    </button>
-                    <button
-                      type="button"
-                      className={activeBlock.soutienMotsLibre ? 'active' : ''}
-                      onClick={() => {
-                        const seeded =
-                          activeBlock.soutienMotsEntries?.some((e) => e.label.trim())
-                            ? activeBlock.soutienMotsEntries
-                            : defaultSoutienMotsEntries(soutienType1Words)
-                        updatePage({
-                          soutienMotsLibre: true,
-                          soutienMotsEntries: seeded,
-                        })
-                      }}
-                    >
-                      Libre
-                    </button>
-                  </div>
-                  <small className="muted">
-                    Libre : choisissez d’autres mots du son, ou changez le mot et l’image.
-                  </small>
-                  {!libreMode && activeBlock.soutienMotsLibre ? (
-                    <SoutienMotsLibreEditor
-                      entries={
-                        activeBlock.soutienMotsEntries?.length
-                          ? activeBlock.soutienMotsEntries
-                          : defaultSoutienMotsEntries(soutienType1Words)
-                      }
-                      suggestedWords={soutienType1WordPool}
-                      soundLabel={soutienBankSound}
-                      onChange={(next) => updatePage({ soutienMotsEntries: next })}
-                    />
-                  ) : null}
-                </div>
-              ) : null}
-              {isSoutienCompleter ? (
-                <div className="mode-toggle-block">
-                  <b>Contenu</b>
-                  <div className="mode-toggle is-2" role="group" aria-label="Source des mots à compléter">
-                    <button
-                      type="button"
-                      className={!activeBlock.soutienCompleterLibre ? 'active' : ''}
-                      onClick={() =>
-                        updatePage({
-                          soutienCompleterLibre: false,
-                          soutienCompleterEntries: undefined,
-                        })
-                      }
-                    >
-                      Banque
-                    </button>
-                    <button
-                      type="button"
-                      className={activeBlock.soutienCompleterLibre ? 'active' : ''}
-                      onClick={() => {
-                        const seeded =
-                          activeBlock.soutienCompleterEntries?.some((e) => e.word.trim())
-                            ? activeBlock.soutienCompleterEntries
-                            : defaultSoutienCompleterEntries(soutienCompletes)
-                        updatePage({
-                          soutienCompleterLibre: true,
-                          soutienCompleterEntries: seeded.length
-                            ? seeded
-                            : defaultSoutienCompleterEntries(soutienCompletes),
-                        })
-                      }}
-                    >
-                      Libre
-                    </button>
-                  </div>
-                  <small className="muted">
-                    Libre : choisissez la partie à cacher, ou ajoutez mot + image.
-                  </small>
-                  {!libreMode && activeBlock.soutienCompleterLibre ? (
-                    <SoutienCompleterLibreEditor
-                      entries={
-                        activeBlock.soutienCompleterEntries?.length
-                          ? activeBlock.soutienCompleterEntries
-                          : defaultSoutienCompleterEntries(soutienCompletes)
-                      }
-                      suggestedWords={soutienBankWords}
-                      onChange={(next) => updatePage({ soutienCompleterEntries: next })}
-                    />
-                  ) : null}
-                </div>
-              ) : null}
               {isVocabPool ? (
                 <>
                   {isVocabLearn ? (

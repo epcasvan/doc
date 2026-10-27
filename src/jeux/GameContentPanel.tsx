@@ -940,6 +940,24 @@ export function GameContentPanel({
         </div>
       ) : null}
       <p className="muted game-content-hint">{template.entryHint}</p>
+      {usesSeriesIdentity(typeId) ? (
+        <div className="libre-section">
+          <b>Dos des cartes</b>
+          <SeriesIdentityFields
+            typeId={typeId}
+            seriesName={gameSeriesName}
+            borderRectoId={borderRectoId}
+            borderVersoId={borderVersoId}
+            fontSize={fontSize}
+            alpha={alphaOn}
+            onSeriesName={setSeriesName}
+            onBorderIds={setBorderIds}
+            onFontSize={setFontSize}
+            onAlpha={typeId === 'jeux-vocabulaire' ? setAlpha : undefined}
+          />
+        </div>
+      ) : null}
+      <b>Cartes</b>
       <ul className="game-entry-list" aria-label="Cartes du jeu">
         {slots.map((entry, index) => {
           const inputId = `${baseId}-img-${index}`
@@ -1009,20 +1027,6 @@ export function GameContentPanel({
               : 'JPG, PNG, WebP ou SVG · max. 2,5 Mo'}
         </small>
       )}
-      {usesSeriesIdentity(typeId) ? (
-        <SeriesIdentityFields
-          typeId={typeId}
-          seriesName={gameSeriesName}
-          borderRectoId={borderRectoId}
-          borderVersoId={borderVersoId}
-          fontSize={fontSize}
-          alpha={alphaOn}
-          onSeriesName={setSeriesName}
-          onBorderIds={setBorderIds}
-          onFontSize={setFontSize}
-          onAlpha={typeId === 'jeux-vocabulaire' ? setAlpha : undefined}
-        />
-      ) : null}
     </div>
   )
 }

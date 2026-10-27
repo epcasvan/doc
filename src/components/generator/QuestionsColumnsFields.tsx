@@ -1,8 +1,8 @@
 import {
   blockPointsTotal,
   formatPointsLabel,
-  isTcmConsignesType,
-} from '@/tcm/test'
+  isTpmConsignesType,
+} from '@/tpm/test'
 import { isTcmCfrConsignesType } from '@/tcm-cfr/test'
 import { isTcfConsignesType } from '@/tcf/catalog'
 import { isOralComprehensionExercise } from '@/components/generator/page-helpers'
@@ -35,14 +35,16 @@ export type QuestionsColumnsFieldsProps = {
   isVocabLearn: boolean
   isVocabPool: boolean
   isGramTheory: boolean
+  isGrammaireDomain: boolean
+  isLogique: boolean
   isJeuxDomain: boolean
   isCalliDomain: boolean
   isSoutienFr: boolean
   isTcf: boolean
-  isTcmInfoPage: boolean
+  isTpmInfoPage: boolean
   isSoutienMots: boolean
   isSoutienMotsMeles: boolean
-  isTcmLike: boolean
+  isTpmLike: boolean
   evalMode: boolean
   activeSheet: WorksheetPage | undefined
   safeBlockIndex: number
@@ -77,14 +79,16 @@ export function QuestionsColumnsFields(props: QuestionsColumnsFieldsProps) {
     isVocabLearn,
     isVocabPool,
     isGramTheory,
+    isGrammaireDomain,
+    isLogique,
     isJeuxDomain,
     isCalliDomain,
     isSoutienFr,
     isTcf,
-    isTcmInfoPage,
+    isTpmInfoPage,
     isSoutienMots,
     isSoutienMotsMeles,
-    isTcmLike,
+    isTpmLike,
     evalMode,
     activeSheet,
     safeBlockIndex,
@@ -100,7 +104,7 @@ export function QuestionsColumnsFields(props: QuestionsColumnsFieldsProps) {
               isCalliDomain ||
               isSoutienMots ||
               isTcf ||
-              isTcmInfoPage ||
+              isTpmInfoPage ||
               isSoutienMotsMeles ? null : (
               <label className="select-shell">
                 <span>
@@ -231,9 +235,9 @@ export function QuestionsColumnsFields(props: QuestionsColumnsFieldsProps) {
                 ) : null}
               </label>
               )}
-              {(isTcmLike &&
+              {(isTpmLike &&
                 !(
-                  isTcmConsignesType(activeBlock.exerciseType) ||
+                  isTpmConsignesType(activeBlock.exerciseType) ||
                   isTcmCfrConsignesType(activeBlock.exerciseType)
                 )) ||
               (isTcf && evalMode && !isTcfConsignesType(activeBlock.exerciseType)) ? (
@@ -349,8 +353,8 @@ export function QuestionsColumnsFields(props: QuestionsColumnsFieldsProps) {
               {isAlphaMotsCols ? (
                 <div className="mode-toggle-block">
                   <b>Colonnes</b>
-                  <div className="mode-toggle is-3" role="group" aria-label="Nombre de colonnes">
-                    {[2, 3, 4].map((value) => (
+                  <div className="mode-toggle is-2" role="group" aria-label="Nombre de colonnes">
+                    {[3, 4].map((value) => (
                       <button
                         key={value}
                         type="button"
@@ -358,7 +362,7 @@ export function QuestionsColumnsFields(props: QuestionsColumnsFieldsProps) {
                         onClick={() =>
                           updatePage({
                             columns: value,
-                            count: value === 4 ? 12 : value * 2,
+                            count: value === 3 ? 9 : 12,
                           })
                         }
                       >
@@ -367,7 +371,7 @@ export function QuestionsColumnsFields(props: QuestionsColumnsFieldsProps) {
                     ))}
                   </div>
                   <small className="muted">
-                    2 colonnes = 4 mots · 3 colonnes = 6 mots · 4 colonnes = 12 mots.
+                    3 colonnes = 9 mots · 4 colonnes = 12 mots.
                   </small>
                 </div>
               ) : null}
@@ -460,12 +464,14 @@ export function QuestionsColumnsFields(props: QuestionsColumnsFieldsProps) {
               isVocabLearn ||
               isVocabPool ||
               isGramTheory ||
+              isGrammaireDomain ||
+              isLogique ||
               isJeuxDomain ||
               isCalliDomain ||
               isSoutienFr ||
               isAlphabetisation ||
               isTcf ||
-              isTcmInfoPage ||
+              isTpmInfoPage ||
               hideColumnsOption ||
               isSoutienCols123 ||
               isSoutienCols345 ||

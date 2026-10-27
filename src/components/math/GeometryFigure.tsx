@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react'
+import { fmt } from '@/math/column-arith'
 import type { Figure, FigureDims } from '@/math/types'
 
 const ALL: Figure[] = [
@@ -20,10 +21,6 @@ const ALL: Figure[] = [
 
 function u(dims?: FigureDims) {
   return dims?.unit ?? 'cm'
-}
-
-function fmt(n: number) {
-  return String(n).replace('.', ',')
 }
 
 function L({
@@ -94,7 +91,7 @@ function HeightBracket({
       <line x1={bracketX} y1={yTop} x2={bracketX} y2={yBot} strokeWidth={1.5} />
       <line x1={bracketX - tick} y1={yTop} x2={bracketX + tick} y2={yTop} strokeWidth={1.5} />
       <line x1={bracketX - tick} y1={yBot} x2={bracketX + tick} y2={yBot} strokeWidth={1.5} />
-      <L x={bracketX + tick + 14} y={(yTop + yBot) / 2} anchor="start" baseline="middle">
+      <L x={bracketX + tick + 8} y={(yTop + yBot) / 2} anchor="start" baseline="middle">
         {label}
       </L>
     </g>
@@ -114,7 +111,7 @@ export function GeometryFigure({ type, dims }: { type?: Figure; dims?: FigureDim
   const hasHeight = !bare && d.height != null
   const forArea = !bare && (hasHeight || (type === 'triangle' && d.base != null && d.a == null))
 
-  /** Styles placement TCM : toutes les cotes utiles sur une figure. */
+  /** Styles placement TPM : toutes les cotes utiles sur une figure. */
   const paraPlacement =
     !bare && type === 'parallelogram' && d.base != null && d.side != null && d.height != null
   const triPlacement =
@@ -132,13 +129,13 @@ export function GeometryFigure({ type, dims }: { type?: Figure; dims?: FigureDim
     !bare && type === 'circle' && (d.diameter != null || (d.length != null && d.radius == null))
 
   const viewBox = paraPlacement
-    ? '0 0 350 168'
+    ? '0 0 360 168'
     : triPlacement
-      ? '0 0 390 180'
+      ? '0 0 420 200' /* place pour h à droite ; forme plus étroite */
       : rhombusPlacement
         ? '0 0 340 200'
         : trapPlacement
-          ? '0 0 370 178'
+          ? '0 0 380 178'
           : '0 0 260 190'
 
   return (
@@ -178,19 +175,19 @@ export function GeometryFigure({ type, dims }: { type?: Figure; dims?: FigureDim
 
         {paraPlacement && (
           <>
-            {/* Coords placement soutien Ex. 25 */}
-            <polygon points="76,118 216,118 248,38 108,38" />
-            <L x={(108 + 248) / 2} y={18}>
+            {/* Parallélogramme plus étroit : place pour « h = … » à droite (cotes hors resize). */}
+            <polygon points="70,118 178,118 204,38 96,38" />
+            <L x={(96 + 204) / 2} y={18}>
               {fmt(d.base!)} {unit}
             </L>
-            <L x={50} y={(118 + 38) / 2} anchor="end" baseline="middle">
+            <L x={48} y={(118 + 38) / 2} anchor="end" baseline="middle">
               {fmt(d.side!)} {unit}
             </L>
             <HeightBracket
-              shapeRightX={248}
+              shapeRightX={204}
               yTop={38}
               yBot={118}
-              bracketX={286}
+              bracketX={248}
               label={`h = ${fmt(d.height!)} ${unit}`}
             />
           </>
@@ -231,23 +228,22 @@ export function GeometryFigure({ type, dims }: { type?: Figure; dims?: FigureDim
 
         {triPlacement && (
           <>
-            {/* Scalène + a / b / c / h — b hors figure, h décalé vers la droite (cadre). */}
-            <polygon points="72,28 22,122 185,122" />
-            <L x={(22 + 185) / 2} y={148} baseline="hanging">
-              a = {fmt(d.a!)} {unit}
+            {/* Triangle plus étroit : crochet h entièrement dans le viewBox. */}
+            <polygon points="100,10 40,168 190,168" />
+            <L x={(40 + 190) / 2} y={188} baseline="middle">
+              {fmt(d.a!)} {unit}
             </L>
-            {/* Cote b à l’extérieur du côté droit (hors polygone). */}
-            <L x={(72 + 185) / 2 + 28} y={(28 + 122) / 2 - 14} anchor="start">
-              b = {fmt(d.b!)} {unit}
+            <L x={(100 + 190) / 2 + 22} y={(10 + 168) / 2 - 4} anchor="start">
+              {fmt(d.b!)} {unit}
             </L>
-            <L x={(72 + 22) / 2 - 20} y={(28 + 122) / 2 - 4} anchor="end">
-              c = {fmt(d.c!)} {unit}
+            <L x={(100 + 40) / 2 - 12} y={(10 + 168) / 2} anchor="end">
+              {fmt(d.c!)} {unit}
             </L>
             <HeightBracket
-              shapeRightX={185}
-              yTop={28}
-              yBot={122}
-              bracketX={300}
+              shapeRightX={190}
+              yTop={10}
+              yBot={168}
+              bracketX={250}
               label={`h = ${fmt(d.height!)} ${unit}`}
             />
           </>
@@ -437,22 +433,22 @@ export function GeometryFigure({ type, dims }: { type?: Figure; dims?: FigureDim
 
         {trapPlacement && (
           <>
-            {/* Coords placement soutien Ex. 37 — a / b / c / h */}
-            <polygon points="92,32 202,32 244,120 54,120" />
-            <L x={(92 + 202) / 2} y={16}>
+            {/* Trapèze plus étroit : place pour h à droite. */}
+            <polygon points="88,32 178,32 214,120 58,120" />
+            <L x={(88 + 178) / 2} y={16}>
               a = {fmt(d.top!)} {unit}
             </L>
-            <L x={(54 + 244) / 2} y={146} baseline="hanging">
+            <L x={(58 + 214) / 2} y={146} baseline="hanging">
               b = {fmt(d.bottom!)} {unit}
             </L>
-            <L x={(54 + 92) / 2 - 20} y={(120 + 32) / 2} anchor="end" baseline="middle">
+            <L x={(58 + 88) / 2 - 18} y={(120 + 32) / 2} anchor="end" baseline="middle">
               c = {fmt(d.c ?? d.side!)} {unit}
             </L>
             <HeightBracket
-              shapeRightX={244}
+              shapeRightX={214}
               yTop={32}
               yBot={120}
-              bracketX={270}
+              bracketX={250}
               label={`h = ${fmt(d.height!)} ${unit}`}
             />
           </>
@@ -546,12 +542,13 @@ export function GeometryFigure({ type, dims }: { type?: Figure; dims?: FigureDim
 
         {type === 'rhombus' && !rhombusPlacement && (
           <>
-            <polygon points="130,28 200,95 130,162 60,95" />
+            {/* Diagonales inégales (170 × 90) : losange distinct du carré. */}
+            <polygon points="130,50 215,95 130,140 45,95" />
             {hasHeight && (
               <line
-                x1="200"
+                x1="215"
                 y1="95"
-                x2="60"
+                x2="45"
                 y2="95"
                 fill="none"
                 strokeDasharray="5 4"
@@ -560,12 +557,12 @@ export function GeometryFigure({ type, dims }: { type?: Figure; dims?: FigureDim
               />
             )}
             {(d.side != null || d.ask === 'side') && (
-              <L x={130} y={180}>
+              <L x={130} y={168}>
                 {d.ask === 'side' ? '?' : `${fmt(d.side!)} ${unit}`}
               </L>
             )}
             {(d.height != null || d.ask === 'height') && (
-              <L x={210} y={92} anchor="start">
+              <L x={222} y={92} anchor="start">
                 {d.ask === 'height' ? 'h = ?' : `h = ${fmt(d.height!)} ${unit}`}
               </L>
             )}
@@ -574,7 +571,7 @@ export function GeometryFigure({ type, dims }: { type?: Figure; dims?: FigureDim
 
         {circleDiameter && (
           <>
-            {/* TCM ex. 37 — diamètre (−30 %) ; trait ~équivalent visuel au trapèze (viewBox plus étroit). */}
+            {/* TPM ex. 37 — diamètre (−30 %) ; trait ~équivalent visuel au trapèze (viewBox plus étroit). */}
             <g strokeWidth="1.7" strokeLinejoin="round">
               <circle cx="130" cy="78" r={41} />
               <line x1={130 - 41} y1={78} x2={130 + 41} y2={78} fill="none" strokeWidth={1.1} />

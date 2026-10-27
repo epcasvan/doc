@@ -1,4 +1,4 @@
-import type { ExerciseBlock, WorksheetPage } from '@/math/types'
+import type { ExerciseBlock, MathItem, WorksheetPage } from '@/math/types'
 import type { GameTemplate } from '@/jeux/templates'
 import { PhraseLibreEditor, isPhraseLibreEditable } from '@/francais/PhraseLibreEditor'
 import type { SoutienComplete } from '@/francais/soutien/banks'
@@ -17,8 +17,14 @@ import {
 import { GameContentPanel } from '@/jeux/GameContentPanel'
 import { DEFAULT_GAME_FONT_SIZE } from '@/jeux/font-size'
 import { TcfExerciseEditor } from '@/tcf/TcfExerciseEditor'
-import type { TcfNiveau } from '@/tcf/types'
+import type { TcfExercise, TcfNiveau } from '@/tcf/types'
+
+function tcfSupportExercise(items: MathItem[] | undefined): TcfExercise | undefined {
+  const tcf = items?.find((item) => item.tcf?.kind === 'support')?.tcf
+  return tcf?.kind === 'support' ? tcf.exercise : undefined
+}
 import { GenericLibreEditor } from '@/components/generator/GenericLibreEditor'
+import { TpmLibreEditor } from '@/components/generator/TpmLibreEditor'
 import { VocabAddWordRow } from '@/components/generator/VocabAddWordRow'
 import type { VocabWordEntry } from '@/francais/vocab-learn'
 
@@ -31,6 +37,8 @@ export type LibreSidePanelProps = {
   isCalliDomain: boolean
   isJeuxDomain: boolean
   isTcf: boolean
+  isGrammaireExercise: boolean
+  isTpmLike: boolean
   isDroites: boolean
   isConstruire: boolean
   soutienKind: string | undefined
@@ -48,6 +56,8 @@ export type LibreSidePanelProps = {
   tcfNiveau: TcfNiveau
   updatePage: (patch: Partial<ExerciseBlock>) => void
   onClose: () => void
+  /** Régénère l’exercice actif (autres nombres / autre tirage banque). */
+  onRegenerateBlock?: (blockIndex: number) => void
 }
 
 export function LibreSidePanel({
@@ -59,6 +69,8 @@ export function LibreSidePanel({
   isCalliDomain,
   isJeuxDomain,
   isTcf,
+  isGrammaireExercise,
+  isTpmLike,
   isDroites,
   isConstruire,
   soutienKind,
@@ -75,21 +87,22 @@ export function LibreSidePanel({
   jeuxText,
   tcfNiveau,
   updatePage,
+  onRegenerateBlock,
   onClose,
 }: LibreSidePanelProps) {
   return (
     <aside className="side-tool-panel is-libre no-print" aria-label="Mode libre">
-      <div className="side-tool-panel-head">
-        <h3>Mode libre</h3>
+      <div className="side-tool-panel-head is-libre-head">
         <button
           type="button"
-          className="side-tool-close"
+          className="side-tool-close is-theme"
           aria-label="Fermer le mode libre"
           title="Fermer le mode libre"
           onClick={onClose}
         >
           ×
         </button>
+        <h3>Mode libre</h3>
       </div>
       <div className="side-tool-panel-body">
         {isPhraseDomain &&
@@ -112,32 +125,24 @@ export function LibreSidePanel({
             }
           />
         ) : null}
-        {isNumberLibreDomain ? (
-          <div className="number-libre-fields">
-            <b>Bornes des nombres</b>
-            <label>
-              Minimum
-              <input
-                className="pill-input"
-                type="number"
-                value={activeBlock.numberMin ?? 0}
-                onChange={(event) =>
-                  updatePage({ numberMin: Number(event.target.value) })
-                }
-              />
-            </label>
-            <label>
-              Maximum
-              <input
-                className="pill-input"
-                type="number"
-                value={activeBlock.numberMax ?? 100}
-                onChange={(event) =>
-                  updatePage({ numberMax: Number(event.target.value) })
-                }
-              />
-            </label>
-          </div>
+        {isNumberLibreDomain && !((isDroites || isConstruire) && activeBlock.coordLibre) ? (
+          <TpmLibreEditor
+            exerciseType={activeBlock.exerciseType}
+            instruction={
+              activeBlock.libreInstruction ??
+              activeSheet?.blocks[safeBlockIndex]?.instruction ??
+              ''
+            }
+            items={
+              activeBlock.libreItems ??
+              activeSheet?.blocks[safeBlockIndex]?.items ??
+              []
+            }
+            onChangeInstruction={(libreInstruction) =>
+              updatePage({ libreInstruction })
+            }
+            onChangeItems={(libreItems) => updatePage({ libreItems })}
+          />
         ) : null}
         {soutienKind === 'mots' ? (
           <SoutienMotsLibreEditor
@@ -180,7 +185,10 @@ export function LibreSidePanel({
         ) : null}
         {isCalliDomain ? (
           <div className="quad-libre-block">
-            <b>{calliIsPhrases ? 'Phrases' : 'Mots'}</b>
+            <b>{calliIsPhrases ? 'Phrases à recopier' : 'Mots à recopier'}</b>
+            <p className="type-hint muted">
+              Une ligne par modèle. L’ordre ici est l’ordre sur la fiche.
+            </p>
             <ul
               className="calli-fields"
               aria-label={calliIsPhrases ? 'Phrases à recopier' : 'Mots ou phrases à recopier'}
@@ -252,11 +260,49 @@ export function LibreSidePanel({
             onChange={(patch) => updatePage(patch)}
           />
         ) : null}
+        {isGrammaireExercise ? (
+          <TcfExerciseEditor
+            variant="grammaire"
+            niveau={tcfNiveau}
+            typeId={activeBlock.exerciseType}
+            exercise={activeBlock.tcfExercise}
+            fallbackExercise={tcfSupportExercise(activeSheet?.blocks[safeBlockIndex]?.items)}
+            onChange={(patch) => updatePage(patch)}
+            onReroll={() => onRegenerateBlock?.(safeBlockIndex)}
+          />
+        ) : null}
+        {/* TPM / TCM CFR / CSC : éditeur spécialisé (sélecteurs + recalcul). */}
+        {isTpmLike &&
+        !isPhraseDomain &&
+        !isCalliDomain &&
+        !isJeuxDomain &&
+        !isTcf ? (
+          <TpmLibreEditor
+            exerciseType={activeBlock.exerciseType}
+            instruction={
+              activeBlock.libreInstruction ??
+              activeSheet?.blocks[safeBlockIndex]?.instruction ??
+              ''
+            }
+            items={
+              activeBlock.libreItems ??
+              activeSheet?.blocks[safeBlockIndex]?.items ??
+              []
+            }
+            onChangeInstruction={(libreInstruction) =>
+              updatePage({ libreInstruction })
+            }
+            onChangeItems={(libreItems) => updatePage({ libreItems })}
+          />
+        ) : null}
         {/* Un seul éditeur générique — évite le doublon (ex. domaines nombres). */}
-        {!isPhraseDomain &&
+        {!isTpmLike &&
+        !isNumberLibreDomain &&
+        !isPhraseDomain &&
         !isCalliDomain &&
         !isJeuxDomain &&
         !isTcf &&
+        !isGrammaireExercise &&
         soutienKind !== 'mots' &&
         soutienKind !== 'completer' &&
         !(isDroites || isConstruire) ? (

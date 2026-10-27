@@ -1,4 +1,6 @@
 import { Fragment } from 'react'
+import { fmt } from '@/math/column-arith'
+import { MoneyChangeBoard } from './money-change'
 import type { MathItem, PreviewMode } from '@/math/types'
 import {
   computeScale,
@@ -208,7 +210,7 @@ export function TheoryBlockView({ item }: { item: MathItem }) {
   return null
 }
 
-/** TCM ex. 21/22 — formes fractionnaires (port soutien-scolaire). */
+/** TPM ex. 21/22 — formes fractionnaires (port soutien-scolaire). */
 export function FractionShapeBlock({ item, mode }: { item: MathItem; mode: PreviewMode }) {
   const fs = item.fracShape
   if (!fs) return null
@@ -219,10 +221,10 @@ export function FractionShapeBlock({ item, mode }: { item: MathItem; mode: Previ
         ? preColorFlat(fs.n, fs.d)
         : new Set(Array.from({ length: fs.n }, (_, k) => k))
       : new Set<number>()
-  // Colorier (20) : pas de remplissage pour l’élève ; corrigé plein.
-  // Lire (21) : remplissage clair (pas aussi foncé que la bordure).
+  // Colorier (ex. 12) : pas de remplissage pour l’élève ; corrigé clair (comme lire).
+  // Lire (ex. 13) : remplissage clair (pas aussi foncé que la bordure).
   const fillVariant =
-    fs.mode === 'color' ? (show ? 'solid' : 'none') : 'light'
+    fs.mode === 'color' ? (show ? 'light' : 'none') : 'light'
   const scale = fs.multi ? computeScale(fs.kind, fs.copies) * 0.85 : 0.85
   return (
     <div className="frac-shape-card" aria-label={`Fraction ${fs.n}/${fs.d}`}>
@@ -334,8 +336,9 @@ export function StackedPrompt({ item, mode }: { item: MathItem; mode: PreviewMod
       </div>
     )
   }
+  const line = item.labels?.includes('societe-line')
   return (
-    <div className="prompt-stack">
+    <div className={`prompt-stack${line ? ' societe-line' : ''}`}>
       <p className="prompt-stack-text">{prompt}</p>
       <span className={`answer-line-field ${show ? 'filled' : ''}`}>
         {show ? lineAnswer : '\u00a0'}
@@ -365,7 +368,11 @@ export function InlinePrompt({ item, mode }: { item: MathItem; mode: PreviewMode
   const prompt = item.prompt ?? ''
   const show = mode === 'answers'
 
-  if (item.op && item.a != null && item.b != null) {
+  // Fractions (TPM ex. 30) : ne pas passer par EquationRow (qui n’affiche que a op b).
+  const isFracItem =
+    item.labels?.some((l) => l.startsWith('frac-')) ||
+    /[-−]?\d+\s*\/\s*[-−]?\d+/.test(prompt)
+  if (item.op && item.a != null && item.b != null && !isFracItem) {
     return <EquationRow item={item} mode={mode} />
   }
 
@@ -484,9 +491,23 @@ export function ProblemBlock({
   draftGrid?: boolean
 }) {
   const show = mode === 'answers'
+  const sketch = item.labels?.includes('sketch-vars') ? item.problemVarDefs ?? [] : []
   return (
     <div className="problem-block">
+      {sketch.length > 0 ? (
+        <div className="problem-sketch" aria-label="Données du problème">
+          {sketch.map((def) => (
+            <div key={def.key}>
+              <b>{def.label}</b>
+              <span>{fmt(item.problemVars?.[def.key] ?? 0)}</span>
+            </div>
+          ))}
+        </div>
+      ) : null}
       <p className="problem-prompt">{item.prompt}</p>
+      {item.labels?.includes('sketch-change') ? (
+        <MoneyChangeBoard parts={item.changeParts ?? []} mode={mode} />
+      ) : null}
       <div className="problem-field">
         <span className="field-label">Calcul</span>
         <div className={`draft-pad ${draftGrid ? 'with-grid' : 'plain'}`} aria-label="Zone de calcul">
