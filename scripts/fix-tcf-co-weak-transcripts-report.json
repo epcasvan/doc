@@ -1,0 +1,8 @@
+{
+  "summary": {
+    "tcf_ss_restored_from_soutien": 527,
+    "method": "stem audio d’origine (avant renommage) → candidates soutien transcript+questions",
+    "non_ss_transcriptions": "STT + nettoyage; plus aucune transcription vide",
+    "note": "Le score STT↔texte peut rester bas (bruit Whisper) ; la source de vérité pour tcf-ss est soutien-scolaire."
+  }
+}

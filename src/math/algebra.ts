@@ -1,5 +1,6 @@
+import { fmt } from './column-arith'
 import { int, pick, shuffle, type Rng } from './rng'
-import { generateTcmEvaluerBatch } from '@/tcm/evaluer'
+import { generateTpmEvaluerBatch } from '@/tpm/evaluer'
 import type { AlgebraGiven, Difficulty, MathItem } from './types'
 
 export type { AlgebraGiven }
@@ -21,10 +22,6 @@ function signed(n: number): string {
 
 function compactSigned(n: number): string {
   return n < 0 ? ` - ${Math.abs(n)}` : ` + ${n}`
-}
-
-function fmt(n: number): string {
-  return String(n).replace('.', ',')
 }
 
 function nonzero(rng: Rng, min: number, max: number): number {
@@ -833,8 +830,8 @@ export function tryGenerateAlgebraBatch(
   difficulty: Difficulty = 'moyen',
 ): AlgebraBatch | null {
   switch (exerciseType) {
-    case 'tcm-expressions-evaluer':
-      return generateTcmEvaluerBatch(rng)
+    case 'tpm-expressions-evaluer':
+      return generateTpmEvaluerBatch(rng)
     case 'expressions-substituer':
       return generateEvalOneVar(rng, count)
     case 'expressions-evaluer-2var':

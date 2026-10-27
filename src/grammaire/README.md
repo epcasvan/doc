@@ -1,26 +1,94 @@
-# Grammaire — théorie FALC (SCAI)
+# Grammaire — théorie FALC (SCAI) + exercices
 
-Domaine dédié pour les **fiches de théorie** de français en FALC, d’après le programme SCAI.
-Les notions sont **adaptées** (pas copiées) à partir du stock pédagogique soutien-scolaire, avec une **répartition SCAI** différente (parties communicatives + conjugaison au présent).
+Domaine dédié pour les **fiches de théorie** FALC et les **exercices** liés à chaque sous-thème.
 
-| Fichier | Rôle |
+| Fichier / dossier | Rôle |
 |---|---|
-| `catalog.ts` | Thèmes (parties) + types « théorie » |
-| `theory/*.ts` | Contenu FALC français (pas de traductions pour l’instant) |
-| `generate.ts` | `tryGenerateGrammaireBlock` → items `layout: 'theory'` |
-| `types.ts` | Doc théorie + helpers `isGrammaireTheoryType` |
+| `catalog.ts` | Thèmes SCAI + types théorie + types exercices |
+| `theory/*.ts` | Contenu FALC français |
+| `exercises/` | kinds, sous-thèmes, banques, générateur |
+| `exercises/bank/word-a1.ts` / `word-a2.ts` | Tous les exercices des Word auteur (Grammaire.docx / Grammaire Suite.docx) |
+| `exercises/bank/lessons-word-*.ts` | Relu mot à mot (CSC : se présenter, décrire, jours / mois / heures / invitation / négation / évaluation / logement / maison) |
+| `exercises/bank/lessons-core.ts` / `lessons-rest.ts` | Compléments ClairFLE (mêmes types) |
+| `exercises/bank/lessons-soutien.ts` | Banques de phrases de la section grammaire soutien-scolaire (fusion unique, en dernier) |
+| `scripts/import-grammaire-soutien-phrases.mjs` | Relance l’import depuis `SOUTIEN_ROOT` |
+| `generate.ts` | Théorie **ou** exercices selon le type |
 
-## Thèmes
+## UI
 
-Se présenter → **Conjuguer au présent** → Entrer en contact → Questions → Activité → Espace → Temps → Demander → Décrire → Conseiller → Aliments → Passé → Pronoms → Action → Avenir → Faits divers → Argumenter → Exprimer → Aide-mémoire.
+1. **Thème** = partie SCAI (ex. Conjuguer au présent)
+2. **Sous-thème** = notion (Être, Avoir, -er… / Passé composé… / fiche théorie)
+3. **Type** = **Théorie** + exercices du sous-thème (libellés de leçon)
 
-## Usage
+Les énoncés d’exercices reprennent les phrases des Word auteur (`Grammaire.docx`, `Grammaire Suite.docx`) et des fiches CSC (exercices seulement, pas la théorie). Les MP3 CSC sont dans `public/lib/audio/grammaire/`. Les fiches de théorie FALC restent le type **Théorie**. Les banques ClairFLE et les phrases de la section grammaire soutien-scolaire complètent les mêmes types : fusion par `subId` + kind, sans doublon de prompt, libellés du premier lot (Word / ClairFLE).
 
-- Domaine UI : **Grammaire**
-- Thème = partie SCAI (ou complément ClairFLE, ex. conjugaison au présent)
-- Type = une fiche théorie (une notion)
-- Exercices liés : à ajouter plus tard comme types supplémentaires sur le même thème
+## Types d’exercice (kinds)
 
-## Traductions
+1. Choisissez la bonne conjugaison (QCM)
+2. Conjuguez le verbe (ligne)
+3. Choisissez le verbe correct (QCM)
+4. Mettre au pluriel
+5. Mettre au singulier
+6. Mettre à la forme négative
+7. Mettre à la forme affirmative
+8. Écrire une phrase
+9. Associer
+10. Remettre dans l’ordre
+11. Transformer la phrase
+12. Corriger la phrase
 
-Reportées après validation du français FALC (skill `falc` §7).
+Les libellés du sélecteur viennent de `GramLesson.label` (ex. « Compléter avec être »).
+
+Le rendu des exercices reprend la mise en page TCF : QCM texte / image / phrase (3 icônes), audios comme la CO (téléchargement, pas de lecteur sur la fiche), documents à lire comme la CE, rédaction comme la PE. Une phrase = une réponse (pas de `suis / m’appelle` sur le même item). Un seul verbe à conjuguer va dans la consigne, sans infinitif entre parenthèses dans la phrase ; sinon l’infinitif (pas les parenthèses) est à la couleur du thème. Le mode libre ouvre le même éditeur que le TCF.
+
+## Mise en forme dans une phrase de théorie
+
+Dans un paragraphe, un exemple, une astuce, une attention ou une case de tableau :
+
+| Balise | Effet |
+|---|---|
+| `{g}mot{/g}` | gras |
+| `{c}mot{/c}` | gras et couleur du thème |
+| `{s}mot{/s}` | souligné de la couleur du thème |
+| `{ligne}` | un interligne complet entre deux éléments |
+| `{ligne/2}` | un demi-interligne |
+| `{ligne/3}` | un tiers d’interligne |
+| `{ligne/4}` | un quart d’interligne |
+
+Les blocs de théorie sont collés. Ces balises ajoutent l’espace indiqué, seules dans un paragraphe ou dans une phrase.
+
+Exemple : `J’utilise {c}être{/c}, {g}habiter{/g} et {s}parler{/s}.`  
+Ligne vide : `{ kind: 'paragraph', text: '{ligne}' }` ou `…Martigny.{ligne}Je parle français.`
+
+## Bloc tab
+
+Tableau sans bordures. `rows` sépare les lignes, comme pour `table`. Par défaut : 1 tabulation, sans flèche. On n’écrit `tab` et `fleche` que si on en a besoin.
+
+```ts
+{ kind: 'tab', rows: [['Verbe', 'Être', 'Nationalité'], ['', 'Habiter à', 'ville']] }
+```
+
+Deux tabulations et une flèche :
+
+```ts
+{
+  kind: 'tab',
+  tab: 2,
+  fleche: true,
+  rows: [['Verbe', 'Être', 'Nationalité'], ['', 'Habiter à', 'ville']],
+}
+```
+
+## Feuille suivante
+
+La théorie n’est plus coupée tous les 6 blocs. Tout reste sur une feuille, sauf si vous insérez un bloc page :
+
+```ts
+{ kind: 'page' },
+```
+
+La suite (tableau, astuce, etc.) commence alors sur la feuille suivante. « Une fiche » dans le panneau ignore ces blocs.
+
+## Déterminisme
+
+Tirage via `createRng(seed)` + `shuffle` ; jamais `Math.random()` dans le générateur.

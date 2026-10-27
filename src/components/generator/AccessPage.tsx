@@ -4,6 +4,7 @@ import {
   writeAccessAccount,
   type AccessAccount,
 } from '@/access'
+import { rememberAccessPassword } from '@/fiches/password'
 import { Header } from '@/components/generator/Header'
 
 export function AccessPage({ onSuccess }: { onSuccess: (account: AccessAccount) => void }) {
@@ -18,6 +19,7 @@ export function AccessPage({ onSuccess }: { onSuccess: (account: AccessAccount) 
       return
     }
     writeAccessAccount(account)
+    rememberAccessPassword(password)
     setError(null)
     onSuccess(account)
   }

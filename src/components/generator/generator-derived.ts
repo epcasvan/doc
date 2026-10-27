@@ -7,6 +7,7 @@ import {
   grammaireTopics,
   jeuxTopics,
   alphabetisationTopics,
+  logiqueTopics,
   santeTopics,
   societeTopics,
   soutienFrTopics,
@@ -14,12 +15,12 @@ import {
   tcmCscTopics,
   tcmCfrTopics,
   tcfTopics,
-  tcmTopics,
+  tpmTopics,
   typesForTopic,
   vocabulaireTopics,
 } from '@/math/catalog'
 import { TCF_DOMAIN } from '@/tcf/catalog'
-import { blockPointsTotal, isTcmDomain } from '@/tcm/test'
+import { blockPointsTotal, isTpmDomain } from '@/tpm/test'
 import {
   ALPHA_LETTER_KINDS,
   ALPHA_SPECIAL_KINDS,
@@ -35,6 +36,12 @@ import {
   resolveSoutienSelection,
   soutienExerciseTypeId,
 } from '@/francais/soutien/themes'
+import {
+  gramExerciseTypeId,
+  resolveGramSubthemeAll,
+  subthemesForTopicAll,
+} from '@/grammaire/exercises'
+import { GRAM_EXERCISE_KINDS } from '@/grammaire/exercises/kinds'
 import { COORD_LETTER_MAX, COORD_SHAPES } from '@/math/coord-reperage'
 import { TRANSFORM_MAX_POINTS } from '@/math/coord-transformations'
 import type { Domain, ExerciseBlock, WorksheetPage } from '@/math/types'
@@ -69,11 +76,13 @@ export function topicsForDomain(domain: Domain) {
                             ? soutienFrTopics
                             : domain === 'alphabetisation'
                               ? alphabetisationTopics
-                              : isTcmDomain(domain)
-                                ? tcmTopics
-                                : domain === TCF_DOMAIN
-                                  ? tcfTopics
-                                  : algebraTopics
+                              : domain === 'logique'
+                                ? logiqueTopics
+                                : isTpmDomain(domain)
+                                  ? tpmTopics
+                                  : domain === TCF_DOMAIN
+                                    ? tcfTopics
+                                    : algebraTopics
 }
 
 /** Types d’exercice proposés pour le bloc actif. */
@@ -105,6 +114,23 @@ export function typeChoicesForBlock(
     return kinds
       .map((kind) => exerciseTypeById[alphaExerciseTypeId(bankId, kind.id)])
       .filter((t): t is NonNullable<typeof t> => Boolean(t))
+  }
+  if (domain === 'grammaire') {
+    const sub =
+      resolveGramSubthemeAll(block.topic, block.exerciseType) ??
+      subthemesForTopicAll(block.topic)[0]
+    if (!sub) {
+      return typesForTopic(block.topic)
+    }
+    const theory = sub.theoryTypeIds
+      .map((id) => exerciseTypeById[id])
+      .filter((t): t is NonNullable<typeof t> => Boolean(t))
+      .map((t) => ({ ...t, label: 'Théorie' }))
+    const practice = GRAM_EXERCISE_KINDS.map((kind) => {
+      const id = gramExerciseTypeId(sub.id, kind.id)
+      return exerciseTypeById[id]
+    }).filter((t): t is NonNullable<typeof t> => Boolean(t))
+    return [...theory, ...practice]
   }
   return typesForTopic(
     block.topic,

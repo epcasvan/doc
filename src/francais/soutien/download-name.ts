@@ -1,12 +1,12 @@
 /**
  * Noms de fichiers audio téléchargeables (tous domaines).
  *
- * Soutien FR :
- *   SOUTIEN-FR_VOYELLES_A_Exercice-1_10.10.2026.mp3
+ * Soutien FR (playlist groupée, WAV continu) :
+ *   SOUTIEN-FR_VOYELLES_A_Exercice-1_10.10.2026.wav
  *
- * TCM CFR :
- *   TCM-CFR_Exercice-1_NOMBRE_Semestre-1.mp3
- *   TCM-CFR_Exercice-2_MULTIPLICATION_Semestre-2.mp3
+ * TCM CFR (playlist groupée, WAV continu) :
+ *   TCM-CFR_Exercice-1_NOMBRE_Semestre-1.wav
+ *   TCM-CFR_Exercice-2_MULTIPLICATION_Semestre-2.wav
  *
  * TCF :
  *   TCF_A1-A2_CO_Exercice-1_26-27_Semestre-1.mp3
@@ -87,13 +87,13 @@ export type SoutienAudioDownloadNameOpts = {
 }
 
 /**
- * SOUTIEN-FR_{THEME}_{LETTRE}_Exercice-{n}_{JJ}.{MM}.{AAAA}.mp3
+ * SOUTIEN-FR_{THEME}_{LETTRE}_Exercice-{n}_{JJ}.{MM}.{AAAA}.wav
  */
 export function soutienAudioDownloadName(opts: SoutienAudioDownloadNameOpts): string {
   const theme = audioNameSegment(opts.themeLabel) || 'THEME'
   const letter = audioNameSegment(opts.letterLabel) || 'X'
   const n = exerciseNoSafe(opts.exerciseNo)
-  return `SOUTIEN-FR_${theme}_${letter}_Exercice-${n}_${audioDateDot(opts.date)}.mp3`
+  return `SOUTIEN-FR_${theme}_${letter}_Exercice-${n}_${audioDateDot(opts.date)}.wav`
 }
 
 // ─── TCM CFR ──────────────────────────────────────────────────────────────
@@ -113,12 +113,12 @@ export function tcmCfrSemestre(date = new Date()): 'Semestre-1' | 'Semestre-2' {
 }
 
 /**
- * TCM-CFR_Exercice-{1|2}_{NOMBRE|MULTIPLICATION}_Semestre-{1|2}.mp3
+ * TCM-CFR_Exercice-{1|2}_{NOMBRE|MULTIPLICATION}_Semestre-{1|2}.wav
  */
 export function tcmCfrAudioDownloadName(opts: TcmCfrAudioDownloadNameOpts): string {
   const exerciseNo =
     opts.exerciseNo ?? (opts.kind === 'MULTIPLICATION' ? 2 : 1)
-  return `TCM-CFR_Exercice-${exerciseNoSafe(exerciseNo)}_${opts.kind}_${audioSemestreScolaire(opts.date)}.mp3`
+  return `TCM-CFR_Exercice-${exerciseNoSafe(exerciseNo)}_${opts.kind}_${audioSemestreScolaire(opts.date)}.wav`
 }
 
 // ─── TCF ──────────────────────────────────────────────────────────────────

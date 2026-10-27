@@ -1,3 +1,4 @@
+import { theoryGabarit } from '@/francais/grammar-theory'
 import type { GrammaireTheoryDoc } from '../types'
 
 /** Théorie FALC — thème gram-decrire. Français seul (pas de traductions). */
@@ -13,15 +14,31 @@ export const decrireDocs: GrammaireTheoryDoc[] = [
     blocks: [
     { kind: 'heading', text: 'La météo' },
     { kind: 'paragraph', text: 'Je dis le temps qu’il fait.' },
-    { kind: 'heading', text: 'Je regarde', sub: true },
-    { kind: 'rule', text: 'Exemple', examples: [{ correct: 'Il fait beau.' }, { correct: 'Il pleut.' }, { correct: 'Il y a du vent.' }] },
-    { kind: 'heading', text: 'J’explique', sub: true },
-    { kind: 'paragraph', text: 'Il fait + adjectif : beau, mauvais, chaud, froid.' },
-    { kind: 'paragraph', text: 'Il pleut. Il neige.' },
-    { kind: 'paragraph', text: 'Il y a + du / de la : du soleil, du vent, de la pluie.' },
-    { kind: 'note', text: 'Je retiens : il fait / il pleut / il y a…' },
-    { kind: 'table', headers: ['Forme', 'Exemple'], rows: [['Il fait…', 'Il fait froid.'], ['Il + verbe météo', 'Il pleut.'], ['Il y a…', 'Il y a du brouillard.']] },
-    { kind: 'note', text: 'Attention ! On dit il fait beau, pas il est beau (pour la météo).' },
+    {
+      kind: 'section',
+      role: 'regarder',
+      blocks: [
+        { kind: 'examples', items: ['Il fait beau.', 'Il pleut.', 'Il y a du vent.'] }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'expliquer',
+      blocks: [
+        { kind: 'paragraph', text: 'Il fait + adjectif : beau, mauvais, chaud, froid.' },
+        { kind: 'paragraph', text: 'Il pleut. Il neige.' },
+        { kind: 'paragraph', text: 'Il y a + du / de la : du soleil, du vent, de la pluie.' }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'retenir',
+      blocks: [
+        { kind: 'paragraph', text: 'il fait / il pleut / il y a…' },
+        { kind: 'table', colHeader: true, rowHeader: true, headers: ['Forme', 'Exemple'], rows: [['Il fait…', 'Il fait froid.'], ['Il + verbe météo', 'Il pleut.'], ['Il y a…', 'Il y a du brouillard.']] },
+        { kind: 'attention', text: 'On dit il fait beau, pas il est beau (pour la météo).' }
+      ],
+    },
     ],
   },
   {
@@ -35,15 +52,31 @@ export const decrireDocs: GrammaireTheoryDoc[] = [
     blocks: [
     { kind: 'heading', text: 'C’est, il est, il y a' },
     { kind: 'paragraph', text: 'Je choisis la bonne formule pour présenter ou situer.' },
-    { kind: 'heading', text: 'Je regarde', sub: true },
-    { kind: 'rule', text: 'Exemple', examples: [{ correct: 'C’est un livre.' }, { correct: 'Il est professeur.' }, { correct: 'Il y a une école.' }] },
-    { kind: 'heading', text: 'J’explique', sub: true },
-    { kind: 'paragraph', text: 'C’est + nom (présentation).' },
-    { kind: 'paragraph', text: 'Il / elle est + adjectif ou profession sans article.' },
-    { kind: 'paragraph', text: 'Il y a + nom (existence / présence).' },
-    { kind: 'note', text: 'Je retiens : c’est (présenter) / il est (qualifier) / il y a (il existe).' },
-    { kind: 'table', headers: ['Forme', 'Usage', 'Exemple'], rows: [['c’est', 'présenter', 'C’est mon ami.'], ['il est', 'qualité / métier', 'Il est gentil.'], ['il y a', 'présence', 'Il y a un bus.']] },
-    { kind: 'note', text: 'Attention ! Métier : il est médecin (sans un).' },
+    {
+      kind: 'section',
+      role: 'regarder',
+      blocks: [
+        { kind: 'examples', items: ['C’est un livre.', 'Il est professeur.', 'Il y a une école.'] }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'expliquer',
+      blocks: [
+        { kind: 'paragraph', text: 'C’est + nom (présentation).' },
+        { kind: 'paragraph', text: 'Il / elle est + adjectif ou profession sans article.' },
+        { kind: 'paragraph', text: 'Il y a + nom (existence / présence).' }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'retenir',
+      blocks: [
+        { kind: 'paragraph', text: 'c’est (présenter) / il est (qualifier) / il y a (il existe).' },
+        { kind: 'table', colHeader: true, rowHeader: true, headers: ['Forme', 'Usage', 'Exemple'], rows: [['c’est', 'présenter', 'C’est mon ami.'], ['il est', 'qualité / métier', 'Il est gentil.'], ['il y a', 'présence', 'Il y a un bus.']] },
+        { kind: 'attention', text: 'Métier : il est médecin (sans un).' }
+      ],
+    },
     ],
   },
   {
@@ -57,14 +90,30 @@ export const decrireDocs: GrammaireTheoryDoc[] = [
     blocks: [
     { kind: 'heading', text: 'Les déterminants possessifs' },
     { kind: 'paragraph', text: 'Je dis à qui appartient une chose.' },
-    { kind: 'heading', text: 'Je regarde', sub: true },
-    { kind: 'rule', text: 'Exemple', examples: [{ correct: 'Mon livre.' }, { correct: 'Ta sœur.' }, { correct: 'Ses amis.' }] },
-    { kind: 'heading', text: 'J’explique', sub: true },
-    { kind: 'paragraph', text: 'Le possessif s’accorde avec le nom possédé, pas avec le possesseur.' },
-    { kind: 'paragraph', text: 'Devant voyelle : mon / ton / son même au féminin : mon amie.' },
-    { kind: 'note', text: 'Je retiens : accord avec le nom. mon amie (voyelle).' },
-    { kind: 'table', headers: ['', 'masc.', 'fém.', 'pluriel'], rows: [['je', 'mon', 'ma', 'mes'], ['tu', 'ton', 'ta', 'tes'], ['il / elle', 'son', 'sa', 'ses'], ['nous', 'notre', 'notre', 'nos'], ['vous', 'votre', 'votre', 'vos'], ['ils / elles', 'leur', 'leur', 'leurs']] },
-    { kind: 'note', text: 'Attention ! ma → mon devant voyelle : mon école.' },
+    {
+      kind: 'section',
+      role: 'regarder',
+      blocks: [
+        { kind: 'examples', items: ['Mon livre.', 'Ta sœur.', 'Ses amis.'] }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'expliquer',
+      blocks: [
+        { kind: 'paragraph', text: 'Le possessif s’accorde avec le nom possédé, pas avec le possesseur.' },
+        { kind: 'astuce', text: 'Devant voyelle : mon / ton / son même au féminin : mon amie.' }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'retenir',
+      blocks: [
+        { kind: 'paragraph', text: 'accord avec le nom. mon amie (voyelle).' },
+        { kind: 'table', colHeader: true, rowHeader: true, headers: ['', 'masc.', 'fém.', 'pluriel'], rows: [['je', 'mon', 'ma', 'mes'], ['tu', 'ton', 'ta', 'tes'], ['il / elle', 'son', 'sa', 'ses'], ['nous', 'notre', 'notre', 'nos'], ['vous', 'votre', 'votre', 'vos'], ['ils / elles', 'leur', 'leur', 'leurs']] },
+        { kind: 'attention', text: 'ma → mon devant voyelle : mon école.' }
+      ],
+    },
     ],
   },
   {
@@ -78,14 +127,30 @@ export const decrireDocs: GrammaireTheoryDoc[] = [
     blocks: [
     { kind: 'heading', text: 'Les adjectifs qualificatifs' },
     { kind: 'paragraph', text: 'Je décris avec un adjectif accordé.' },
-    { kind: 'heading', text: 'Je regarde', sub: true },
-    { kind: 'rule', text: 'Exemple', examples: [{ correct: 'Une grande maison.' }, { correct: 'Des enfants heureux.' }] },
-    { kind: 'heading', text: 'J’explique', sub: true },
-    { kind: 'paragraph', text: 'L’adjectif s’accorde en genre et en nombre avec le nom.' },
-    { kind: 'paragraph', text: 'Souvent après le nom. Quelques-uns avant : grand, petit, beau, bon, nouveau…' },
-    { kind: 'note', text: 'Je retiens : adjectif = accord avec le nom.' },
-    { kind: 'table', headers: ['Nom', 'Adjectif'], rows: [['un garçon', 'petit'], ['une fille', 'petite'], ['des livres', 'intéressants']] },
-    { kind: 'note', text: 'Attention ! Beau → bel devant voyelle : un bel homme.' },
+    {
+      kind: 'section',
+      role: 'regarder',
+      blocks: [
+        { kind: 'examples', items: ['Une grande maison.', 'Des enfants heureux.'] }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'expliquer',
+      blocks: [
+        { kind: 'paragraph', text: 'L’adjectif s’accorde en genre et en nombre avec le nom.' },
+        { kind: 'paragraph', text: 'Souvent après le nom. Quelques-uns avant : grand, petit, beau, bon, nouveau…' }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'retenir',
+      blocks: [
+        { kind: 'paragraph', text: 'adjectif = accord avec le nom.' },
+        { kind: 'table', colHeader: true, rowHeader: true, headers: ['Nom', 'Adjectif'], rows: [['un garçon', 'petit'], ['une fille', 'petite'], ['des livres', 'intéressants']] },
+        { kind: 'attention', text: 'Beau → bel devant voyelle : un bel homme.' }
+      ],
+    },
     ],
   },
   {
@@ -99,14 +164,30 @@ export const decrireDocs: GrammaireTheoryDoc[] = [
     blocks: [
     { kind: 'heading', text: 'Les professions' },
     { kind: 'paragraph', text: 'Je dis mon métier avec être.' },
-    { kind: 'heading', text: 'Je regarde', sub: true },
-    { kind: 'rule', text: 'Exemple', examples: [{ correct: 'Je suis boulanger.' }, { correct: 'Elle est infirmière.' }] },
-    { kind: 'heading', text: 'J’explique', sub: true },
-    { kind: 'paragraph', text: 'Être + profession (sans article).' },
-    { kind: 'paragraph', text: 'Avec un adjectif ou un complément : c’est un bon médecin.' },
-    { kind: 'note', text: 'Je retiens : je suis + métier (pas un).' },
-    { kind: 'table', headers: ['Masculin', 'Féminin'], rows: [['boulanger', 'boulangère'], ['infirmier', 'infirmière'], ['vendeur', 'vendeuse']] },
-    { kind: 'note', text: 'Attention ! Pas d’article : Je suis professeur.' },
+    {
+      kind: 'section',
+      role: 'regarder',
+      blocks: [
+        { kind: 'examples', items: ['Je suis boulanger.', 'Elle est infirmière.'] }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'expliquer',
+      blocks: [
+        { kind: 'paragraph', text: 'Être + profession (sans article).' },
+        { kind: 'paragraph', text: 'Avec un adjectif ou un complément : c’est un bon médecin.' }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'retenir',
+      blocks: [
+        { kind: 'paragraph', text: 'je suis + métier (pas un).' },
+        { kind: 'table', colHeader: true, rowHeader: true, headers: ['Masculin', 'Féminin'], rows: [['boulanger', 'boulangère'], ['infirmier', 'infirmière'], ['vendeur', 'vendeuse']] },
+        { kind: 'attention', text: 'Pas d’article : Je suis professeur.' }
+      ],
+    },
     ],
   },
   {
@@ -120,14 +201,30 @@ export const decrireDocs: GrammaireTheoryDoc[] = [
     blocks: [
     { kind: 'heading', text: 'La comparaison' },
     { kind: 'paragraph', text: 'Je compare deux personnes ou deux choses.' },
-    { kind: 'heading', text: 'Je regarde', sub: true },
-    { kind: 'rule', text: 'Exemple', examples: [{ correct: 'Marie est plus grande que Paul.' }, { correct: 'Ce livre est moins cher que l’autre.' }, { correct: 'Il est aussi rapide que toi.' }] },
-    { kind: 'heading', text: 'J’explique', sub: true },
-    { kind: 'paragraph', text: 'Plus … que = supérieur. Moins … que = inférieur. Aussi … que = égal.' },
-    { kind: 'paragraph', text: 'Avec un nom : plus de / moins de + nom.' },
-    { kind: 'note', text: 'Je retiens : plus / moins / aussi + adjectif + que.' },
-    { kind: 'table', headers: ['Forme', 'Exemple'], rows: [['plus … que', 'plus grand que'], ['moins … que', 'moins facile que'], ['aussi … que', 'aussi fort que']] },
-    { kind: 'note', text: 'Attention ! Bon → meilleur. Mauvais → pire (formes spéciales).' },
+    {
+      kind: 'section',
+      role: 'regarder',
+      blocks: [
+        { kind: 'examples', items: ['Marie est plus grande que Paul.', 'Ce livre est moins cher que l’autre.', 'Il est aussi rapide que toi.'] }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'expliquer',
+      blocks: [
+        { kind: 'paragraph', text: 'Plus … que = supérieur. Moins … que = inférieur. Aussi … que = égal.' },
+        { kind: 'paragraph', text: 'Avec un nom : plus de / moins de + nom.' }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'retenir',
+      blocks: [
+        { kind: 'paragraph', text: 'plus / moins / aussi + adjectif + que.' },
+        { kind: 'table', colHeader: true, rowHeader: true, headers: ['Forme', 'Exemple'], rows: [['plus … que', 'plus grand que'], ['moins … que', 'moins facile que'], ['aussi … que', 'aussi fort que']] },
+        { kind: 'attention', text: 'Bon → meilleur. Mauvais → pire (formes spéciales).' }
+      ],
+    },
     ],
   },
   {
@@ -141,31 +238,42 @@ export const decrireDocs: GrammaireTheoryDoc[] = [
     blocks: [
       { kind: 'heading', text: 'La place de l’adjectif' },
       { kind: 'paragraph', text: 'Je place l’adjectif au bon endroit.' },
-      { kind: 'heading', text: 'Je regarde', sub: true },
       {
-        kind: 'rule',
-        text: 'Exemple',
-        examples: [
-          { correct: 'Une voiture rouge.' },
-          { correct: 'Un petit café.' },
-          { correct: 'Un grand homme / un homme grand.' },
+        kind: 'section',
+        role: 'regarder',
+        blocks: [
+          { kind: 'examples', items: [
+              'Une voiture rouge.',
+              'Un petit café.',
+              'Un grand homme / un homme grand.',
+            ],
+          }
         ],
       },
-      { kind: 'heading', text: 'J’explique', sub: true },
-      { kind: 'paragraph', text: 'Souvent, l’adjectif est après le nom.' },
-      { kind: 'paragraph', text: 'Courts adjectifs fréquents avant : beau, bon, grand, petit, joli, mauvais, jeune, vieux…' },
-      { kind: 'paragraph', text: 'Certains changent de sens selon la place.' },
-      { kind: 'note', text: 'Je retiens : après = règle générale. Avant = petite liste fréquente.' },
       {
-        kind: 'table',
-        headers: ['Place', 'Exemple'],
-        rows: [
-          ['après', 'une table ronde'],
-          ['avant', 'un petit chien'],
-          ['sens différent', 'un ancien collègue / un collègue ancien'],
+        kind: 'section',
+        role: 'expliquer',
+        blocks: [
+          { kind: 'paragraph', text: 'Souvent, l’adjectif est après le nom.' },
+          { kind: 'paragraph', text: 'Courts adjectifs fréquents avant : beau, bon, grand, petit, joli, mauvais, jeune, vieux…' },
+          { kind: 'paragraph', text: 'Certains changent de sens selon la place.' }
         ],
       },
-      { kind: 'note', text: 'Attention ! Accorde toujours l’adjectif avec le nom.' },
+      {
+        kind: 'section',
+        role: 'retenir',
+        blocks: [
+          { kind: 'paragraph', text: 'après = règle générale. Avant = petite liste fréquente.' },
+          { kind: 'table', colHeader: true, rowHeader: true, headers: ['Place', 'Exemple'],
+            rows: [
+              ['après', 'une table ronde'],
+              ['avant', 'un petit chien'],
+              ['sens différent', 'un ancien collègue / un collègue ancien'],
+            ],
+          },
+          { kind: 'attention', text: 'Accorde toujours l’adjectif avec le nom.' }
+        ],
+      },
     ],
   },
   {
@@ -179,32 +287,43 @@ export const decrireDocs: GrammaireTheoryDoc[] = [
     blocks: [
       { kind: 'heading', text: 'Le superlatif' },
       { kind: 'paragraph', text: 'Je dis le plus haut degré.' },
-      { kind: 'heading', text: 'Je regarde', sub: true },
       {
-        kind: 'rule',
-        text: 'Exemple',
-        examples: [
-          { correct: 'C’est le plus grand bâtiment.' },
-          { correct: 'Elle est la moins chère.' },
-          { correct: 'C’est le meilleur choix.' },
+        kind: 'section',
+        role: 'regarder',
+        blocks: [
+          { kind: 'examples', items: [
+              'C’est le plus grand bâtiment.',
+              'Elle est la moins chère.',
+              'C’est le meilleur choix.',
+            ],
+          }
         ],
       },
-      { kind: 'heading', text: 'J’explique', sub: true },
-      { kind: 'paragraph', text: 'Le / la / les + plus / moins + adjectif.' },
-      { kind: 'paragraph', text: 'L’article s’accorde avec le nom.' },
-      { kind: 'paragraph', text: 'Formes spéciales : le meilleur, le pire, le moindre…' },
-      { kind: 'note', text: 'Je retiens : le plus / le moins + adjectif.' },
       {
-        kind: 'table',
-        headers: ['Forme', 'Exemple'],
-        rows: [
-          ['le plus…', 'le plus rapide'],
-          ['la moins…', 'la moins difficile'],
-          ['les plus…', 'les plus importants'],
-          ['irrégulier', 'le meilleur / le pire'],
+        kind: 'section',
+        role: 'expliquer',
+        blocks: [
+          { kind: 'paragraph', text: 'Le / la / les + plus / moins + adjectif.' },
+          { kind: 'paragraph', text: 'L’article s’accorde avec le nom.' },
+          { kind: 'paragraph', text: 'Formes spéciales : le meilleur, le pire, le moindre…' }
         ],
       },
-      { kind: 'note', text: 'Attention ! Bon → le meilleur (pas « le plus bon »).' },
+      {
+        kind: 'section',
+        role: 'retenir',
+        blocks: [
+          { kind: 'paragraph', text: 'le plus / le moins + adjectif.' },
+          { kind: 'table', colHeader: true, rowHeader: true, headers: ['Forme', 'Exemple'],
+            rows: [
+              ['le plus…', 'le plus rapide'],
+              ['la moins…', 'la moins difficile'],
+              ['les plus…', 'les plus importants'],
+              ['irrégulier', 'le meilleur / le pire'],
+            ],
+          },
+          { kind: 'attention', text: 'Bon → le meilleur (pas « le plus bon »).' }
+        ],
+      },
     ],
   },
   {
@@ -218,31 +337,52 @@ export const decrireDocs: GrammaireTheoryDoc[] = [
     blocks: [
       { kind: 'heading', text: 'Comparer un nom ou un verbe' },
       { kind: 'paragraph', text: 'Je compare une quantité ou une action.' },
-      { kind: 'heading', text: 'Je regarde', sub: true },
       {
-        kind: 'rule',
-        text: 'Exemple',
-        examples: [
-          { correct: 'J’ai plus de temps que toi.' },
-          { correct: 'Elle travaille autant que lui.' },
-          { correct: 'Nous mangeons moins de pain.' },
+        kind: 'section',
+        role: 'regarder',
+        blocks: [
+          { kind: 'examples', items: [
+              'J’ai plus de temps que toi.',
+              'Elle travaille autant que lui.',
+              'Nous mangeons moins de pain.',
+            ],
+          }
         ],
       },
-      { kind: 'heading', text: 'J’explique', sub: true },
-      { kind: 'paragraph', text: 'Avec un nom : plus de / moins de / autant de + nom.' },
-      { kind: 'paragraph', text: 'Avec un verbe : plus / moins / autant + verbe + que.' },
-      { kind: 'note', text: 'Je retiens : nom → de. Verbe → pas de « de » après plus/moins/autant.' },
       {
-        kind: 'table',
-        headers: ['Cas', 'Forme', 'Exemple'],
-        rows: [
-          ['nom', 'plus de… que', 'plus de livres que'],
-          ['nom', 'autant de… que', 'autant d’amis que'],
-          ['verbe', 'plus… que', 'court plus que'],
-          ['verbe', 'autant… que', 'parle autant que'],
+        kind: 'section',
+        role: 'expliquer',
+        blocks: [
+          { kind: 'paragraph', text: 'Avec un nom : plus de / moins de / autant de + nom.' },
+          { kind: 'paragraph', text: 'Avec un verbe : plus / moins / autant + verbe + que.' }
         ],
       },
-      { kind: 'note', text: 'Attention ! Autant de (nom) ≠ aussi (adjectif).' },
+      {
+        kind: 'section',
+        role: 'retenir',
+        blocks: [
+          { kind: 'paragraph', text: 'nom → de. Verbe → pas de « de » après plus/moins/autant.' },
+          { kind: 'table', colHeader: true, rowHeader: true, headers: ['Cas', 'Forme', 'Exemple'],
+            rows: [
+              ['nom', 'plus de… que', 'plus de livres que'],
+              ['nom', 'autant de… que', 'autant d’amis que'],
+              ['verbe', 'plus… que', 'court plus que'],
+              ['verbe', 'autant… que', 'parle autant que'],
+            ],
+          },
+          { kind: 'attention', text: 'Autant de (nom) ≠ aussi (adjectif).' }
+        ],
+      },
     ],
+  },
+  {
+    id: 'description-physique',
+    typeId: 'gram-f15-theorie',
+    index: 10,
+    title: 'Description physique',
+    topic: 'gram-decrire',
+    public: 'A1',
+    objectif: 'À compléter.',
+    blocks: theoryGabarit('Description physique'),
   },
 ]

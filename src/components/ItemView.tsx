@@ -1,15 +1,18 @@
 import type { CoordShape, MathItem, PreviewMode } from '@/math/types'
 import type { GlossaryFigureId } from '@/math/glossary-banks'
-import { TCF_FORME_LABELS } from '@/tcf/formes'
 import type { TcfTypeReponse } from '@/tcf/types'
+import { TcfFormMarginIcons } from '@/components/tcf/TcfFormIcons'
 import { CardGrid } from '@/jeux/CardGrid'
 import type { GameBoard } from '@/jeux/types'
 import { CalligraphyView } from './math/CalligraphyView'
 import { GattegnoChart } from './math/GattegnoChart'
 import { GlossaryFigure } from './math/GlossaryFigure'
+import { LogiqueBlock } from './item-view/logique'
 import { TcfItemView } from './tcf/TcfItemView'
 import { AlgebraRow } from './item-view/algebra'
 import { ColumnOp, DivisionColumn } from './item-view/columns'
+import { DecomposeBlock } from './item-view/decompose'
+import { OpTableBlock } from './item-view/op-table'
 import { CompareRow, EncadrementRow, OrderRow, SequenceRow } from './item-view/compare'
 import { CoordBlock, GeoBlock } from './item-view/geo-coord'
 import {
@@ -73,7 +76,7 @@ export function ItemView({
   onCycleOralAnswerMode,
   tcfFormMode,
   onSelectTcfForm,
-  tcfPageBreakAfter,
+  tcfPageBreakBefore,
   onToggleTcfPageBreak,
   coordEdit,
 }: {
@@ -90,8 +93,8 @@ export function ItemView({
   /** TCF : forme active Texte / Image / Phrase. */
   tcfFormMode?: TcfTypeReponse
   onSelectTcfForm?: (form: TcfTypeReponse) => void
-  /** TCF : saut de page après cette question. */
-  tcfPageBreakAfter?: boolean
+  /** TCF : cette question (et les suivantes) commence une nouvelle page. */
+  tcfPageBreakBefore?: boolean
   onToggleTcfPageBreak?: () => void
   coordEdit?: {
     selectedKind: CoordShape | null
@@ -119,7 +122,8 @@ export function ItemView({
       ? item.tcf.formSelect
       : undefined
   const tcfActiveForm = tcfFormMode ?? tcfFormSelect?.active
-  const showTcfFormChips = Boolean(tcfFormSelect && onSelectTcfForm)
+  /** Comme Page : toujours en marge dès que la question a un sélecteur de forme. */
+  const showTcfFormIcons = Boolean(tcfFormSelect && onSelectTcfForm && tcfActiveForm)
   const showTcfPageChip = Boolean(
     onToggleTcfPageBreak &&
       item.layout === 'tcf' &&
@@ -188,52 +192,36 @@ export function ItemView({
           {oralModeLabel}
         </button>
       ) : null}
-      {showTcfFormChips || showTcfPageChip ? (
-        <div className="no-print draft-grid-chip-margin tcf-margin-chips" role="group" aria-label="Options TCF">
-          {showTcfFormChips && tcfFormSelect
-            ? (['qcm_texte', 'qcm_image', 'lignes'] as const).map((form) => {
-                const filled = tcfFormSelect.filled.includes(form)
-                const active = tcfActiveForm === form
-                return (
-                  <button
-                    key={form}
-                    type="button"
-                    className={`draft-grid-chip tcf-form-chip ${active ? 'on' : 'off'}`}
-                    disabled={!filled}
-                    aria-pressed={active}
-                    title={
-                      filled
-                        ? `Afficher la réponse « ${TCF_FORME_LABELS[form]} »`
-                        : `Forme « ${TCF_FORME_LABELS[form]} » non renseignée`
-                    }
-                    onClick={() => filled && onSelectTcfForm?.(form)}
-                  >
-                    {TCF_FORME_LABELS[form]}
-                  </button>
-                )
-              })
-            : null}
-          {showTcfPageChip ? (
-            <button
-              type="button"
-              className={`draft-grid-chip tcf-page-chip ${tcfPageBreakAfter ? 'on' : 'off'}`}
-              aria-pressed={Boolean(tcfPageBreakAfter)}
-              title={
-                tcfPageBreakAfter
-                  ? 'Saut de page après cette question (activé)'
-                  : 'Ajouter un saut de page après cette question'
-              }
-              onClick={onToggleTcfPageBreak}
-            >
-              Page
-            </button>
-          ) : null}
-        </div>
+      {showTcfFormIcons && tcfFormSelect && tcfActiveForm && onSelectTcfForm ? (
+        <TcfFormMarginIcons
+          filled={tcfFormSelect.filled}
+          active={tcfActiveForm}
+          onSelect={onSelectTcfForm}
+        />
+      ) : null}
+      {showTcfPageChip ? (
+        <button
+          type="button"
+          className={`no-print draft-grid-chip draft-grid-chip-margin tcf-page-chip ${
+            tcfPageBreakBefore ? 'on' : 'off'
+          }`}
+          aria-pressed={Boolean(tcfPageBreakBefore)}
+          title={
+            tcfPageBreakBefore
+              ? 'Remettre cette question et les suivantes sur la page précédente'
+              : 'Passer cette question et les suivantes sur une nouvelle page'
+          }
+          onClick={onToggleTcfPageBreak}
+        >
+          Page
+        </button>
       ) : null}
       {item.coordScene || hideNumber ? null : <div className="item-number">{index + 1}.</div>}
       <div className="item-content">
         {(item.layout === 'column' || item.layout === 'column-empty') && <ColumnOp item={item} mode={mode} />}
         {item.layout === 'division-column' && <DivisionColumn item={item} mode={mode} />}
+        {item.layout === 'op-table' && <OpTableBlock item={item} mode={mode} />}
+        {item.layout === 'decompose' && <DecomposeBlock item={item} mode={mode} />}
         {item.layout === 'compare' && <CompareRow item={item} mode={mode} />}
         {item.layout === 'encadrement' && <EncadrementRow item={item} mode={mode} />}
         {item.layout === 'select' && <SelectPillsRow item={oralItem} mode={mode} />}
@@ -276,7 +264,7 @@ export function ItemView({
         {item.layout === 'syllable-sound' && (
           <SyllableSoundBlock item={item} mode={mode} />
         )}
-        {item.layout === 'mark-letter' && <MarkLetterBlock item={item} />}
+        {item.layout === 'mark-letter' && <MarkLetterBlock item={item} mode={mode} />}
         {item.layout === 'syllable-pronounce' && (
           <SyllablePronounceBlock item={item} />
         )}
@@ -312,6 +300,7 @@ export function ItemView({
         {item.layout === 'tcf' && (
           <TcfItemView item={item} mode={mode} tcfFormMode={tcfActiveForm} />
         )}
+        {item.layout === 'logique' && <LogiqueBlock item={item} mode={mode} />}
         {item.layout === 'audio-dictation' && <AudioDictationBlock item={item} mode={mode} />}
         {item.layout === 'symmetry-grid' && <SymmetryGridBlock item={item} mode={mode} />}
         {item.layout === 'segment-measure' && <SegmentMeasureBlock item={item} mode={mode} />}

@@ -21,6 +21,13 @@ export type InstitutionalHeader = {
 
 export const DEFAULT_INSTITUTIONAL_LOGO = valaisLogo
 
+/** Référence imposée sur les fiches et livres d’alphabétisation et de soutien. */
+export const ALPHA_SOUTIEN_REFERENCE = 'Melina Schröter et Phuoc Van'
+
+export function isAlphaSoutienDomain(domain: string | undefined): boolean {
+  return domain === 'alphabetisation' || domain === 'soutien-fr'
+}
+
 /**
  * Année scolaire en cours (Suisse / rentrée août) : à partir d’août → A/(A+1),
  * sinon (janvier–juillet) → (A−1)/A. Ex. octobre 2026 → « 2026-2027 ».

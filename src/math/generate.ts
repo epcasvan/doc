@@ -19,13 +19,14 @@ import { tryGeneratePhraseBatch } from '@/francais/phrase'
 import { tryGenerateCalligraphieBatch } from '@/calligraphie/generate'
 import { tryGenerateJeuxBatch } from '@/jeux/generate'
 import { pageAsConfig, pageBlocks } from './page-model'
-import { TCM_MAX_SCORE } from '@/tcm/test'
-import { generateTcmInformations } from '@/tcm/informations'
+import { TPM_MAX_SCORE } from '@/tpm/test'
+import { generateTpmInformations } from '@/tpm/informations'
 import { tryGenerateTcfBlock } from '@/tcf/generate'
 import { isTcfConsignesType, TCF_DOMAIN } from '@/tcf/catalog'
 import { tryGenerateGrammaireBlock } from '@/grammaire/generate'
 import { isGrammaireTheoryType } from '@/grammaire/types'
 import { tryGenerateAcmBlock } from '@/acm/generate'
+import { tryGenerateLogiqueBlock } from '@/logique/generate'
 import { tryGenerateSanteBlock } from '@/sante/generate'
 import { tryGenerateSocieteBlock } from '@/societe/generate'
 import { isTcmCfrConsignesType, TCM_CFR_MAX_SCORE } from '@/tcm-cfr/test'
@@ -33,6 +34,7 @@ import { tryGenerateTcmCscBlock } from '@/tcm-csc/generate'
 import { isTcmCscConsignesType } from '@/tcm-csc/test'
 import { tryGenerateVocabulaireBlock } from '@/vocabulaire/generate'
 import { isGrammarTheoryType } from '@/francais/grammar-theory'
+import { sanitizeItemNumberNoise } from './column-arith'
 import { createRng, shuffle } from './rng'
 import type {
   AlgebraGiven,
@@ -61,30 +63,31 @@ function buildSingleBlock(
   const type = exerciseTypeById[config.exerciseType]
   const difficulty = config.difficulty ?? 'moyen'
   const fallbackTitle = type?.label ?? topic?.label ?? 'Exercices'
-  if (config.exerciseType === 'tcm-consignes') {
+  if (config.exerciseType === 'tpm-consignes') {
     return {
       title: 'Informations',
       instruction: type?.instruction ?? 'Lisez les consignes avant de commencer le test.',
-      items: generateTcmInformations('tcm', TCM_MAX_SCORE),
+      items: generateTpmInformations('tpm', TPM_MAX_SCORE),
     }
   }
   if (isTcmCscConsignesType(config.exerciseType)) {
     return {
       title: 'Informations',
       instruction: type?.instruction ?? 'Lisez les consignes avant de commencer le test.',
-      items: generateTcmInformations('tcm-csc', 0),
+      items: generateTpmInformations('tcm-csc', 0),
     }
   }
   const tcf = tryGenerateTcfBlock(config, rng)
   if (tcf) {
     return { title: fallbackTitle, instruction: tcf.instruction, items: tcf.items }
   }
-  const grammaire = tryGenerateGrammaireBlock(config)
+  const grammaire = tryGenerateGrammaireBlock(config, seed)
   if (grammaire) {
     return {
       title: fallbackTitle,
       instruction: grammaire.instruction,
       items: grammaire.items,
+      bankQuestionCap: grammaire.bankQuestionCap,
     }
   }
   const vocabulaire = tryGenerateVocabulaireBlock(config)
@@ -119,6 +122,14 @@ function buildSingleBlock(
       items: acm.items,
     }
   }
+  const logique = tryGenerateLogiqueBlock(config, seed)
+  if (logique) {
+    return {
+      title: fallbackTitle,
+      instruction: logique.instruction,
+      items: logique.items,
+    }
+  }
   const tcmCsc = tryGenerateTcmCscBlock(config)
   if (tcmCsc) {
     return {
@@ -131,7 +142,7 @@ function buildSingleBlock(
     return {
       title: 'Informations',
       instruction: type?.instruction ?? 'Lisez les consignes avant de commencer le test.',
-      items: generateTcmInformations('tcm-cfr', TCM_CFR_MAX_SCORE),
+      items: generateTpmInformations('tcm-cfr', TCM_CFR_MAX_SCORE),
     }
   }
   if (config.exerciseType === 'reperage-droites') {
@@ -300,10 +311,25 @@ function buildSingleBlock(
   }
 }
 
-/** Page « Informations » d’un test (TCM / CFR / CSC / TCF) : ni numéro d’exercice ni points. */
+/** Valeurs des lettres depuis les items libre TPM ex. 33 (évaluer). */
+function givensFromEvaluerLibre(items: MathItem[]): AlgebraGiven[] | undefined {
+  const it = items.find(
+    (item) => item.labels?.includes('evaluer') && item.unknowns && item.unknowns.length > 0,
+  )
+  if (!it?.unknowns || !it.problemVars) return undefined
+  const givens = it.unknowns
+    .map((letter) => {
+      const value = it.problemVars![letter]
+      return value == null ? null : { letter, value }
+    })
+    .filter((g): g is AlgebraGiven => g != null)
+  return givens.length > 0 ? givens : undefined
+}
+
+/** Page « Informations » d’un test (TPM / CFR / CSC / TCF) : ni numéro d’exercice ni points. */
 function isInfoPageType(typeId: string): boolean {
   return (
-    typeId === 'tcm-consignes' ||
+    typeId === 'tpm-consignes' ||
     isTcmCfrConsignesType(typeId) ||
     isTcmCscConsignesType(typeId) ||
     isTcfConsignesType(typeId)
@@ -324,7 +350,7 @@ export function buildPage(
     const result = buildSingleBlock(single, seed + index * 10007 + local, worksheetSeed)
     const isTheory = isGrammarTheoryType(block.exerciseType) || isGrammaireTheoryType(block.exerciseType)
     const isJeux = block.exerciseType.startsWith('jeux-')
-    const isTcmConsignes = isInfoPageType(block.exerciseType)
+    const isTpmConsignes = isInfoPageType(block.exerciseType)
     const libre =
       Array.isArray(block.libreItems) && block.libreItems.length > 0
         ? {
@@ -333,7 +359,7 @@ export function buildPage(
           }
         : null
     let exerciseIndex = 0
-    if (!isTcmConsignes) {
+    if (!isTpmConsignes) {
       if (block.exerciseNo != null) {
         exerciseIndex = block.exerciseNo
         exerciseCursor = Math.max(exerciseCursor, block.exerciseNo + 1)
@@ -341,9 +367,11 @@ export function buildPage(
         exerciseIndex = exerciseCursor++
       }
     }
+    const rawItems = libre?.items ?? result.items
+    const libreGivens = givensFromEvaluerLibre(rawItems)
     return {
       exerciseIndex,
-      title: isTcmConsignes
+      title: isTpmConsignes
         ? 'Informations'
         : isTheory
           ? ((libre?.instruction ?? result.instruction)?.replace(/^Théorie — /, '') || `Théorie`)
@@ -351,11 +379,12 @@ export function buildPage(
             ? (exerciseTypeById[block.exerciseType]?.label ?? `Jeu ${exerciseIndex}`)
             : `Exercice ${exerciseIndex}`,
       instruction: libre?.instruction ?? result.instruction,
-      items: libre?.items ?? result.items,
+      // Filet anti bruit binaire (7,2700000000000005) sur toutes les fiches.
+      items: rawItems.map((item) => sanitizeItemNumberNoise(item as Record<string, unknown>) as MathItem),
       columns: block.columns,
       exerciseType: block.exerciseType,
       pointsPerQuestion: block.pointsPerQuestion,
-      givens: result.givens,
+      givens: libreGivens ?? result.givens,
       document: result.document,
       problemDraftGrids: block.problemDraftGrids,
       oralAnswerModes: block.oralAnswerModes,
@@ -369,10 +398,10 @@ export function buildPage(
   const type = exerciseTypeById[config.exerciseType]
   const isTheoryPage =
     isGrammarTheoryType(config.exerciseType) || isGrammaireTheoryType(config.exerciseType)
-  const isTcmConsignesPage = isInfoPageType(config.exerciseType)
+  const isTpmConsignesPage = isInfoPageType(config.exerciseType)
   return {
     ...config,
-    title: isTcmConsignesPage
+    title: isTpmConsignesPage
       ? 'Informations'
       : isTheoryPage
         ? (first?.title ?? type?.label ?? 'Théorie')
@@ -581,18 +610,63 @@ export function buildWorksheets(pages: PageConfig[], seed: number): WorksheetPag
       }
     }
 
-    // Théorie : ~6 blocs par feuille A4 (titres + tableaux densent vite).
-    const pageCap = isTheory ? 6 : 4
+    // Théorie : une feuille, sauf aux blocs `{ kind: 'page' }` (pas de plafond de 6).
+    if (isTheory) {
+      const sourceBlock = worksheet.blocks[0]
+      const items = sourceBlock?.items ?? worksheet.items
+      const followBreaks = page.continueOnNextPage !== false
+      const segments: MathItem[][] = [[]]
+      for (const item of items) {
+        if (item.theoryBlock?.kind === 'page') {
+          if (followBreaks) segments.push([])
+          continue
+        }
+        segments[segments.length - 1]!.push(item)
+      }
+      const sheets = segments.filter((slice) => slice.length > 0)
+      if (!sourceBlock || sheets.length <= 1) {
+        const kept = sheets[0] ?? items.filter((item) => item.theoryBlock?.kind !== 'page')
+        out.push({
+          ...worksheet,
+          items: kept,
+          blocks: sourceBlock ? [{ ...sourceBlock, items: kept }] : worksheet.blocks,
+          configIndex: index,
+          isContinuation: false,
+        })
+        return
+      }
+      const suiteInstruction = 'Suite de la théorie.'
+      sheets.forEach((sliceItems, part) => {
+        out.push({
+          ...worksheet,
+          title: part === 0 ? worksheet.title : `${worksheet.title} — suite`,
+          instruction: part === 0 ? worksheet.instruction : suiteInstruction,
+          items: sliceItems,
+          blocks: [
+            {
+              ...sourceBlock,
+              title: part === 0 ? sourceBlock.title : `${sourceBlock.title.replace(/ \(suite\)$/, '')} (suite)`,
+              instruction: part === 0 ? sourceBlock.instruction : suiteInstruction,
+              document: part === 0 ? sourceBlock.document : undefined,
+              items: sliceItems,
+            },
+          ],
+          configIndex: index,
+          isContinuation: part > 0,
+        })
+      })
+      return
+    }
+
+    const pageCap = 4
     const totalItems = worksheet.items.length
-    if (!page.continueOnNextPage || !(isCom || isTheory) || totalItems <= pageCap) {
+    if (!page.continueOnNextPage || !isCom || totalItems <= pageCap) {
       out.push({ ...worksheet, configIndex: index, isContinuation: false })
       return
     }
 
-    const suiteInstruction = isTheory
-      ? 'Suite de la théorie.'
-      : 'Continuez. Répondez aux questions suivantes.'
-    const suiteTitleSuffix = isTheory ? 'Suite de la théorie.' : 'Suite des questions.'
+    const suiteInstruction = 'Continuez. Répondez aux questions suivantes.'
+    const suiteTitleSuffix = 'Suite des questions.'
 
     let offset = 0
     let part = 0

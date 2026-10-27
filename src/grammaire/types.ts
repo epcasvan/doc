@@ -17,7 +17,9 @@ export function isGrammaireTheoryType(typeId: string): boolean {
   return /^gram-[a-z0-9]+-theorie$/.test(typeId)
 }
 
-/** Type d’exercice (théorie ou futur exercice) du domaine. */
+/** Type d’exercice (théorie ou pratique) du domaine. */
 export function isGrammaireType(typeId: string): boolean {
   return typeId.startsWith('gram-')
 }
+
+export { isGrammaireExerciseType } from './exercises/types'

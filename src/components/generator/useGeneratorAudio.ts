@@ -56,6 +56,8 @@ export function useGeneratorAudio({
   /** Exercice TCF courant (banque / édition) pour télécharger ses audios. */
   function currentTcfExercise(): TcfExercise | undefined {
     if (activeBlock.tcfExercise) return activeBlock.tcfExercise
+    const support = activeSheet?.blocks[safeBlockIndex]?.items.find((item) => item.tcf?.kind === 'support')?.tcf
+    if (support?.kind === 'support') return support.exercise
     const niveau = tcfNiveau
     const slot = tcfSlotByTypeId[activeBlock.exerciseType]
     const legacy = slot ? undefined : tcfTypeByTypeId[activeBlock.exerciseType]

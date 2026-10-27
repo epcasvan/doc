@@ -1,0 +1,14 @@
+{
+  "name": "clairfle-fiches",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:apply": "wrangler d1 migrations apply clairfle-fiches --remote",
+    "db:apply:local": "wrangler d1 migrations apply clairfle-fiches --local"
+  },
+  "devDependencies": {
+    "wrangler": "^4.45.0"
+  }
+}

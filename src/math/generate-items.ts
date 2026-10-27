@@ -23,18 +23,19 @@ import {
   type NumberRange,
 } from './difficulty'
 import { numberToFrench } from '@/francais/french-numbers'
+import { generateDecomposeItem } from './decompose'
+import { generateOpTableItem } from './op-table'
 import { generatePerimetreCompose } from './perimetre-compose'
 import { generateLengthConversionBatch, tryGenerateConversion } from './conversions'
-import { tryGenerateTcmItems } from '@/tcm/items'
+import { tryGenerateTpmItems } from '@/tpm/items'
 import { tryGenerateFigure } from './figures-school'
 import { tryGenerateMesure } from './mesures'
 import { makeWordProblem } from './problems'
 import { tryGenerateTcmCfrItems } from '@/tcm-cfr/items'
+import { generateCountIcons } from '@/math/count-icons'
 import { int, pick, shuffle, type Rng } from './rng'
 import type {
   ArithOp,
-  CountIconKind,
-  CountIconToken,
   Difficulty,
   Figure,
   MathItem,
@@ -57,72 +58,6 @@ import {
   twoDigitMulItem,
 } from './column-arith'
 
-const COUNT_ICON_TARGETS: readonly {
-  kind: CountIconKind
-  label: string
-}[] = [
-  { kind: 'note', label: 'notes' },
-  { kind: 'notes', label: 'notes' },
-  { kind: 'star', label: 'étoiles' },
-  { kind: 'heart', label: 'cœurs' },
-  { kind: 'leaf', label: 'feuilles' },
-  { kind: 'moon', label: 'lunes' },
-  { kind: 'bolt', label: 'éclairs' },
-  { kind: 'flower', label: 'fleurs' },
-]
-
-function generateCountIcons(rng: Rng): MathItem {
-  const target = pick(rng, COUNT_ICON_TARGETS)
-  const targetCount = int(rng, 10, 20)
-  const circleCount = int(rng, 4, 10)
-  const triangleCount = int(rng, 4, 10)
-  const total = targetCount + circleCount + triangleCount
-
-  // Grille irrégulière : positions mélangées, tailles variées.
-  const cols = Math.ceil(Math.sqrt(total * 1.35))
-  const rows = Math.ceil(total / cols)
-  const cells: Array<{ c: number; r: number }> = []
-  for (let r = 0; r < rows; r++) {
-    for (let c = 0; c < cols; c++) cells.push({ c, r })
-  }
-  const slots = shuffle(rng, cells).slice(0, total)
-
-  const kinds: Array<CountIconKind | 'circle' | 'triangle'> = [
-    ...Array.from({ length: targetCount }, () => target.kind),
-    ...Array.from({ length: circleCount }, () => 'circle' as const),
-    ...Array.from({ length: triangleCount }, () => 'triangle' as const),
-  ]
-  const orderedKinds = shuffle(rng, kinds)
-
-  const tokens: CountIconToken[] = slots.map((slot, i) => {
-    const padX = 8
-    const padY = 10
-    const cellW = (100 - padX * 2) / cols
-    const cellH = (100 - padY * 2) / rows
-    const x = padX + slot.c * cellW + cellW * (0.25 + rng() * 0.5)
-    const y = padY + slot.r * cellH + cellH * (0.25 + rng() * 0.5)
-    return {
-      kind: orderedKinds[i]!,
-      x: Math.max(6, Math.min(94, x)),
-      y: Math.max(8, Math.min(92, y)),
-      size: int(rng, 11, 20),
-      rot: int(rng, -28, 28),
-    }
-  })
-
-  return {
-    layout: 'count-icons',
-    prompt: `Il y a ____ ${target.label}`,
-    answer: String(targetCount),
-    countIcons: {
-      label: target.label,
-      targetKind: target.kind,
-      targetCount,
-      tokens,
-    },
-  }
-}
-
 const PLACE = ['unités', 'dizaines', 'centaines', 'milliers'] as const
 
 export function generateItems(
@@ -134,8 +69,8 @@ export function generateItems(
   shapes?: Figure[],
   worksheetSeed?: number,
 ): MathItem[] {
-  const tcm = tryGenerateTcmItems(typeId, count, rng)
-  if (tcm) return tcm
+  const tpm = tryGenerateTpmItems(typeId, count, rng)
+  if (tpm) return tpm
   const tcmCfr = tryGenerateTcmCfrItems(typeId, count, rng, worksheetSeed)
   if (tcmCfr) return tcmCfr
   if (typeId === 'conversions-longueur' && count >= 2) {
@@ -176,41 +111,41 @@ function generateOne(
     case 'nombres-compter-formes': {
       return generateCountIcons(rng)
     }
-    case 'tcm-comparer':
-    case 'tcm-suite':
-    case 'tcm-operations':
-    case 'tcm-quatre-ops':
-    case 'tcm-add-sub-col-3':
-    case 'tcm-add-sub-col-4':
-    case 'tcm-decompose-99':
-    case 'tcm-grandes-suites':
-    case 'tcm-decompose-9999':
-    case 'tcm-mul-div-col':
-    case 'tcm-rect-peri-aire':
-    case 'tcm-para-peri-aire':
-    case 'tcm-tri-peri-aire':
-    case 'tcm-rhombus-peri-aire':
-    case 'tcm-trap-peri-aire':
-    case 'tcm-circle-peri-aire':
-    case 'tcm-suites-6':
-    case 'tcm-ranger':
-    case 'tcm-dec-add-sub':
-    case 'tcm-mul-mixte':
-    case 'tcm-div-mixte':
-    case 'tcm-frac-color':
-    case 'tcm-frac-read':
-    case 'tcm-ops-decimales':
-    case 'tcm-puissances-mixte':
-    case 'tcm-priorite-ops':
-    case 'tcm-relatifs-ops':
-    case 'tcm-fractions-mixte':
-    case 'tcm-expressions-reduire':
-    case 'tcm-expressions-evaluer':
-    case 'tcm-equations':
-    case 'tcm-conversions-mixte':
-    case 'tcm-proportion-kg': {
+    case 'tpm-comparer':
+    case 'tpm-suite':
+    case 'tpm-operations':
+    case 'tpm-quatre-ops':
+    case 'tpm-add-sub-col-3':
+    case 'tpm-add-sub-col-4':
+    case 'tpm-decompose-99':
+    case 'tpm-grandes-suites':
+    case 'tpm-decompose-9999':
+    case 'tpm-mul-div-col':
+    case 'tpm-rect-peri-aire':
+    case 'tpm-para-peri-aire':
+    case 'tpm-tri-peri-aire':
+    case 'tpm-rhombus-peri-aire':
+    case 'tpm-trap-peri-aire':
+    case 'tpm-circle-peri-aire':
+    case 'tpm-suites-6':
+    case 'tpm-ranger':
+    case 'tpm-dec-add-sub':
+    case 'tpm-mul-mixte':
+    case 'tpm-div-mixte':
+    case 'tpm-frac-color':
+    case 'tpm-frac-read':
+    case 'tpm-ops-decimales':
+    case 'tpm-puissances-mixte':
+    case 'tpm-priorite-ops':
+    case 'tpm-relatifs-ops':
+    case 'tpm-fractions-mixte':
+    case 'tpm-expressions-reduire':
+    case 'tpm-expressions-evaluer':
+    case 'tpm-equations':
+    case 'tpm-conversions-mixte':
+    case 'tpm-proportion-kg': {
       // Lot complet généré dans generateItems ; repli unitaire.
-      const [item] = tryGenerateTcmItems(typeId, 1, rng) ?? []
+      const [item] = tryGenerateTpmItems(typeId, 1, rng) ?? []
       return item ?? { layout: 'inline', prompt: 'Calculez 1 + 1 =', answer: '2' }
     }
     case 'nombres-position': {
@@ -337,6 +272,14 @@ function generateOne(
       const p = columnAddPair(rng, difficulty, range)
       return columnItem('+', p.a, p.b, p.result, typeId.endsWith('poser'))
     }
+    case 'addition-decompose':
+      return generateDecomposeItem('+', rng, difficulty, range)
+    case 'addition-tableau':
+      return generateOpTableItem('+', 'cells', rng, difficulty, range)
+    case 'addition-tableau-entetes':
+      return generateOpTableItem('+', 'headers', rng, difficulty, range)
+    case 'addition-tableau-melange':
+      return generateOpTableItem('+', 'mixed', rng, difficulty, range)
     case 'addition-comparer': {
       const p = pairAdd(rng, difficulty, range)
       const q = pairAdd(rng, difficulty, range)
@@ -362,6 +305,14 @@ function generateOne(
       const p = columnSubPair(rng, difficulty, range)
       return columnItem('−', p.a, p.b, p.result, typeId.endsWith('poser'))
     }
+    case 'soustraction-decompose':
+      return generateDecomposeItem('−', rng, difficulty, range)
+    case 'soustraction-tableau':
+      return generateOpTableItem('−', 'cells', rng, difficulty, range)
+    case 'soustraction-tableau-entetes':
+      return generateOpTableItem('−', 'headers', rng, difficulty, range)
+    case 'soustraction-tableau-melange':
+      return generateOpTableItem('−', 'mixed', rng, difficulty, range)
     case 'soustraction-comparer': {
       const p = pairSub(rng, difficulty, range)
       const q = pairSub(rng, difficulty, range)
@@ -707,9 +658,9 @@ function generateOne(
       if (!mul && a % b !== 0) {
         const bb = pick(rng, [-4, -3, -2, 2, 3, 4])
         const aa = bb * int(rng, -6, 6) || bb * 2
-        return { layout: 'inline', prompt: `(${aa}) ÷ (${bb}) =`, answer: String(aa / bb) }
+        return { layout: 'inline', prompt: `(${aa}) ÷ (${bb}) =`, answer: fmt(aa / bb) }
       }
-      return { layout: 'inline', prompt: mul ? `(${a}) × (${b}) =` : `(${a}) ÷ (${b}) =`, answer: String(result) }
+      return { layout: 'inline', prompt: mul ? `(${a}) × (${b}) =` : `(${a}) ÷ (${b}) =`, answer: fmt(result) }
     }
     case 'puissances-calcul': {
       const a = range ? pickInRange(rng, range) : int(rng, 2, 9)

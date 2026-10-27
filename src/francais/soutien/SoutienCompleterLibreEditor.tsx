@@ -116,28 +116,10 @@ export function SoutienCompleterLibreEditor({
 
   return (
     <div className="quad-libre-block soutien-completer-libre">
-      {suggestions.length > 0 ? (
-        <>
-          <b>Mots du son (proposer)</b>
-          <div className="soutien-suggest-list" role="group" aria-label="Mots proposés">
-            {suggestions.slice(0, 24).map((word) => (
-              <button
-                key={`sug-${word}`}
-                type="button"
-                className="soutien-suggest-chip"
-                disabled={entries.length >= max}
-                onClick={() => addEntry(entryFromWord(word))}
-              >
-                {word}
-              </button>
-            ))}
-          </div>
-        </>
-      ) : null}
-
-      <b>
-        Mots ({entries.length}/{max})
-      </b>
+      <b>Mots à compléter ({entries.length}/{max})</b>
+      <p className="type-hint muted">
+        Déterminant, mot, puis la partie à cacher. L’image est à gauche.
+      </p>
       <ul className="game-entry-list soutien-completer-list" aria-label="Mots à compléter">
         {entries.map((entry, index) => {
           const inputId = `${baseId}-img-${index}`
@@ -304,6 +286,24 @@ export function SoutienCompleterLibreEditor({
       ) : (
         <small className="muted">Maximum {max} mots.</small>
       )}
+      {suggestions.length > 0 ? (
+        <>
+          <b>Ajouter un mot du son</b>
+          <div className="soutien-suggest-list" role="group" aria-label="Mots proposés">
+            {suggestions.slice(0, 24).map((word) => (
+              <button
+                key={`sug-${word}`}
+                type="button"
+                className="soutien-suggest-chip"
+                disabled={entries.length >= max}
+                onClick={() => addEntry(entryFromWord(word))}
+              >
+                {word}
+              </button>
+            ))}
+          </div>
+        </>
+      ) : null}
       {error ? (
         <p className="questions-overflow-hint" role="alert">
           {error}

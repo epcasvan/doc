@@ -13,14 +13,30 @@ export const alimentsDocs: GrammaireTheoryDoc[] = [
     blocks: [
     { kind: 'heading', text: 'Les articles indéfinis' },
     { kind: 'paragraph', text: 'Je présente une chose non précise.' },
-    { kind: 'heading', text: 'Je regarde', sub: true },
-    { kind: 'rule', text: 'Exemple', examples: [{ correct: 'Un pain.' }, { correct: 'Une pomme.' }, { correct: 'Des œufs.' }] },
-    { kind: 'heading', text: 'J’explique', sub: true },
-    { kind: 'paragraph', text: 'Un (masculin), une (féminin), des (pluriel).' },
-    { kind: 'paragraph', text: 'Négation : un/une/des → de / d’ : Je n’ai pas de pain.' },
-    { kind: 'note', text: 'Je retiens : un / une / des. Négation → de.' },
-    { kind: 'table', headers: ['', 'Masculin', 'Féminin'], rows: [['singulier', 'un', 'une'], ['pluriel', 'des', 'des']] },
-    { kind: 'note', text: 'Attention ! Après négation : pas de, pas d’.' },
+    {
+      kind: 'section',
+      role: 'regarder',
+      blocks: [
+        { kind: 'examples', items: ['Un pain.', 'Une pomme.', 'Des œufs.'] }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'expliquer',
+      blocks: [
+        { kind: 'paragraph', text: 'Un (masculin), une (féminin), des (pluriel).' },
+        { kind: 'paragraph', text: 'Négation : un/une/des → de / d’ : Je n’ai pas de pain.' }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'retenir',
+      blocks: [
+        { kind: 'paragraph', text: 'un / une / des. Négation → de.' },
+        { kind: 'table', colHeader: true, rowHeader: true, headers: ['', 'Masculin', 'Féminin'], rows: [['singulier', 'un', 'une'], ['pluriel', 'des', 'des']] },
+        { kind: 'attention', text: 'Après négation : pas de, pas d’.' }
+      ],
+    },
     ],
   },
   {
@@ -34,14 +50,30 @@ export const alimentsDocs: GrammaireTheoryDoc[] = [
     blocks: [
     { kind: 'heading', text: 'Les articles définis' },
     { kind: 'paragraph', text: 'Je parle d’une chose connue ou générale.' },
-    { kind: 'heading', text: 'Je regarde', sub: true },
-    { kind: 'rule', text: 'Exemple', examples: [{ correct: 'Le pain.' }, { correct: 'La soupe.' }, { correct: 'L’eau.' }, { correct: 'Les fruits.' }] },
-    { kind: 'heading', text: 'J’explique', sub: true },
-    { kind: 'paragraph', text: 'Le / la / l’ / les.' },
-    { kind: 'paragraph', text: 'L’ devant voyelle ou h.' },
-    { kind: 'note', text: 'Je retiens : le / la / l’ / les = défini.' },
-    { kind: 'table', headers: ['', 'Masculin', 'Féminin'], rows: [['singulier', 'le / l’', 'la / l’'], ['pluriel', 'les', 'les']] },
-    { kind: 'note', text: 'Attention ! J’aime le chocolat = en général.' },
+    {
+      kind: 'section',
+      role: 'regarder',
+      blocks: [
+        { kind: 'examples', items: ['Le pain.', 'La soupe.', 'L’eau.', 'Les fruits.'] }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'expliquer',
+      blocks: [
+        { kind: 'paragraph', text: 'Le / la / l’ / les.' },
+        { kind: 'astuce', text: 'L’ devant voyelle ou h.' }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'retenir',
+      blocks: [
+        { kind: 'paragraph', text: 'le / la / l’ / les = défini.' },
+        { kind: 'table', colHeader: true, rowHeader: true, headers: ['', 'Masculin', 'Féminin'], rows: [['singulier', 'le / l’', 'la / l’'], ['pluriel', 'les', 'les']] },
+        { kind: 'attention', text: 'J’aime le chocolat = en général.' }
+      ],
+    },
     ],
   },
   {
@@ -55,14 +87,30 @@ export const alimentsDocs: GrammaireTheoryDoc[] = [
     blocks: [
     { kind: 'heading', text: 'Les articles partitifs' },
     { kind: 'paragraph', text: 'Je parle d’une partie d’un aliment.' },
-    { kind: 'heading', text: 'Je regarde', sub: true },
-    { kind: 'rule', text: 'Exemple', examples: [{ correct: 'Je mange du pain.' }, { correct: 'Je bois de l’eau.' }, { correct: 'Elle prend de la confiture.' }] },
-    { kind: 'heading', text: 'J’explique', sub: true },
-    { kind: 'paragraph', text: 'Du / de la / de l’ = une quantité non précise.' },
-    { kind: 'paragraph', text: 'Négation : du/de la/de l’ → de / d’.' },
-    { kind: 'note', text: 'Je retiens : partitif = du / de la / de l’.' },
-    { kind: 'table', headers: ['Forme', 'Exemple'], rows: [['du', 'du fromage'], ['de la', 'de la salade'], ['de l’', 'de l’huile']] },
-    { kind: 'note', text: 'Attention ! Je ne mange pas de fromage.' },
+    {
+      kind: 'section',
+      role: 'regarder',
+      blocks: [
+        { kind: 'examples', items: ['Je mange du pain.', 'Je bois de l’eau.', 'Elle prend de la confiture.'] }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'expliquer',
+      blocks: [
+        { kind: 'paragraph', text: 'Du / de la / de l’ = une quantité non précise.' },
+        { kind: 'paragraph', text: 'Négation : du/de la/de l’ → de / d’.' }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'retenir',
+      blocks: [
+        { kind: 'paragraph', text: 'partitif = du / de la / de l’.' },
+        { kind: 'table', colHeader: true, rowHeader: true, headers: ['Forme', 'Exemple'], rows: [['du', 'du fromage'], ['de la', 'de la salade'], ['de l’', 'de l’huile']] },
+        { kind: 'attention', text: 'Je ne mange pas de fromage.' }
+      ],
+    },
     ],
   },
   {
@@ -76,14 +124,30 @@ export const alimentsDocs: GrammaireTheoryDoc[] = [
     blocks: [
     { kind: 'heading', text: 'Les quantités' },
     { kind: 'paragraph', text: 'Je dis une quantité avec un nombre ou une expression.' },
-    { kind: 'heading', text: 'Je regarde', sub: true },
-    { kind: 'rule', text: 'Exemple', examples: [{ correct: 'Un kilo de pommes.' }, { correct: 'Beaucoup de riz.' }, { correct: 'Un peu de sel.' }] },
-    { kind: 'heading', text: 'J’explique', sub: true },
-    { kind: 'paragraph', text: 'Nombre + nom. Expression + de + nom : beaucoup de, un peu de, assez de, trop de.' },
-    { kind: 'paragraph', text: 'Après une quantité, souvent de (sans article).' },
-    { kind: 'note', text: 'Je retiens : quantité + de + nom.' },
-    { kind: 'list', title: 'Expressions', items: ['un kilo de', 'une bouteille de', 'beaucoup de', 'un peu de', 'assez de', 'trop de'] },
-    { kind: 'note', text: 'Attention ! Beaucoup de lait (pas du).' },
+    {
+      kind: 'section',
+      role: 'regarder',
+      blocks: [
+        { kind: 'examples', items: ['Un kilo de pommes.', 'Beaucoup de riz.', 'Un peu de sel.'] }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'expliquer',
+      blocks: [
+        { kind: 'paragraph', text: 'Nombre + nom. Expression + de + nom : beaucoup de, un peu de, assez de, trop de.' },
+        { kind: 'paragraph', text: 'Après une quantité, souvent de (sans article).' }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'retenir',
+      blocks: [
+        { kind: 'paragraph', text: 'quantité + de + nom.' },
+        { kind: 'examples', marker: 'puces', label: 'Expressions', items: ['un kilo de', 'une bouteille de', 'beaucoup de', 'un peu de', 'assez de', 'trop de'] },
+        { kind: 'attention', text: 'Beaucoup de lait (pas du).' }
+      ],
+    },
     ],
   },
   {
@@ -97,13 +161,29 @@ export const alimentsDocs: GrammaireTheoryDoc[] = [
     blocks: [
     { kind: 'heading', text: 'Les déterminants indéfinis' },
     { kind: 'paragraph', text: 'Je parle d’une quantité vague.' },
-    { kind: 'heading', text: 'Je regarde', sub: true },
-    { kind: 'rule', text: 'Exemple', examples: [{ correct: 'Chaque élève.' }, { correct: 'Plusieurs livres.' }, { correct: 'Tout le monde.' }] },
-    { kind: 'heading', text: 'J’explique', sub: true },
-    { kind: 'paragraph', text: 'Mots utiles : chaque, plusieurs, quelques, tout / toute / tous / toutes, aucun / aucune.' },
-    { kind: 'note', text: 'Je retiens : indéfini = quantité non exacte.' },
-    { kind: 'table', headers: ['Mot', 'Exemple'], rows: [['chaque', 'chaque jour'], ['plusieurs', 'plusieurs amis'], ['quelques', 'quelques minutes'], ['tout le', 'tout le monde']] },
-    { kind: 'note', text: 'Attention ! Aucun va avec ne : je n’ai aucun ticket.' },
+    {
+      kind: 'section',
+      role: 'regarder',
+      blocks: [
+        { kind: 'examples', items: ['Chaque élève.', 'Plusieurs livres.', 'Tout le monde.'] }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'expliquer',
+      blocks: [
+        { kind: 'paragraph', text: 'Mots utiles : chaque, plusieurs, quelques, tout / toute / tous / toutes, aucun / aucune.' }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'retenir',
+      blocks: [
+        { kind: 'paragraph', text: 'indéfini = quantité non exacte.' },
+        { kind: 'table', colHeader: true, rowHeader: true, headers: ['Mot', 'Exemple'], rows: [['chaque', 'chaque jour'], ['plusieurs', 'plusieurs amis'], ['quelques', 'quelques minutes'], ['tout le', 'tout le monde']] },
+        { kind: 'attention', text: 'Aucun va avec ne : je n’ai aucun ticket.' }
+      ],
+    },
     ],
   },
   {
@@ -117,33 +197,44 @@ export const alimentsDocs: GrammaireTheoryDoc[] = [
     blocks: [
       { kind: 'heading', text: 'Les articles contractés' },
       { kind: 'paragraph', text: 'Je forme au, aux, du, des avec à et de.' },
-      { kind: 'heading', text: 'Je regarde', sub: true },
       {
-        kind: 'rule',
-        text: 'Exemple',
-        examples: [
-          { correct: 'Je vais au marché.' },
-          { correct: 'Le prix du pain.' },
-          { correct: 'Une tasse de thé.' },
+        kind: 'section',
+        role: 'regarder',
+        blocks: [
+          { kind: 'examples', items: [
+              'Je vais au marché.',
+              'Le prix du pain.',
+              'Une tasse de thé.',
+            ],
+          }
         ],
       },
-      { kind: 'heading', text: 'J’explique', sub: true },
-      { kind: 'paragraph', text: 'À + le → au. À + les → aux.' },
-      { kind: 'paragraph', text: 'De + le → du. De + les → des.' },
-      { kind: 'paragraph', text: 'Du / de la / de l’ / des partitifs = une quantité non comptée (fiche partitifs).' },
-      { kind: 'paragraph', text: 'Ici, du / des peuvent aussi venir de de + article défini.' },
-      { kind: 'note', text: 'Je retiens : contracté = à/de collés à le/les.' },
       {
-        kind: 'table',
-        headers: ['Forme', 'Sens', 'Exemple'],
-        rows: [
-          ['au', 'à + le', 'au supermarché'],
-          ['du', 'de + le', 'le goût du fromage'],
-          ['des', 'de + les', 'le prix des fruits'],
-          ['de', 'après quantité', 'un kilo de riz'],
+        kind: 'section',
+        role: 'expliquer',
+        blocks: [
+          { kind: 'paragraph', text: 'À + le → au. À + les → aux.' },
+          { kind: 'paragraph', text: 'De + le → du. De + les → des.' },
+          { kind: 'paragraph', text: 'Du / de la / de l’ / des partitifs = une quantité non comptée (fiche partitifs).' },
+          { kind: 'paragraph', text: 'Ici, du / des peuvent aussi venir de de + article défini.' }
         ],
       },
-      { kind: 'note', text: 'Attention ! Après beaucoup / un kilo : de (pas du).' },
+      {
+        kind: 'section',
+        role: 'retenir',
+        blocks: [
+          { kind: 'paragraph', text: 'contracté = à/de collés à le/les.' },
+          { kind: 'table', colHeader: true, rowHeader: true, headers: ['Forme', 'Sens', 'Exemple'],
+            rows: [
+              ['au', 'à + le', 'au supermarché'],
+              ['du', 'de + le', 'le goût du fromage'],
+              ['des', 'de + les', 'le prix des fruits'],
+              ['de', 'après quantité', 'un kilo de riz'],
+            ],
+          },
+          { kind: 'attention', text: 'Après beaucoup / un kilo : de (pas du).' }
+        ],
+      },
     ],
   },
 ]

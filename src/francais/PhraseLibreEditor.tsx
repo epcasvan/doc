@@ -158,8 +158,8 @@ export function PhraseLibreEditor({
                       Phrase exemple
                       {lineCount > 1 ? ` ${lineIndex + 1}` : ''}
                     </span>
-                    <input
-                      type="text"
+                    <textarea
+                      rows={2}
                       value={answers[lineIndex] ?? ''}
                       onChange={(event) => {
                         const next = [...answers]

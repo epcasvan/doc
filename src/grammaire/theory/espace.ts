@@ -13,14 +13,30 @@ export const espaceDocs: GrammaireTheoryDoc[] = [
     blocks: [
     { kind: 'heading', text: 'Les prépositions de lieu' },
     { kind: 'paragraph', text: 'Je dis où se trouve une personne ou une chose.' },
-    { kind: 'heading', text: 'Je regarde', sub: true },
-    { kind: 'rule', text: 'Exemple', examples: [{ correct: 'Le livre est sur la table.' }, { correct: 'Je suis à côté de toi.' }] },
-    { kind: 'heading', text: 'J’explique', sub: true },
-    { kind: 'paragraph', text: 'Une préposition de lieu indique la place.' },
-    { kind: 'paragraph', text: 'Mots utiles : sur, sous, dans, devant, derrière, entre, près de, loin de, à côté de, au milieu de, au-dessus de, au-dessous de, vers.' },
-    { kind: 'note', text: 'Je retiens : un lieu = une préposition claire.' },
-    { kind: 'list', title: 'Prépositions courantes', items: ['sur', 'sous', 'dans', 'devant', 'derrière', 'entre', 'près de', 'loin de', 'à côté de', 'au milieu de', 'vers'] },
-    { kind: 'note', text: 'Attention ! Près de / loin de / à côté de : garde de.' },
+    {
+      kind: 'section',
+      role: 'regarder',
+      blocks: [
+        { kind: 'examples', items: ['Le livre est sur la table.', 'Je suis à côté de toi.'] }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'expliquer',
+      blocks: [
+        { kind: 'paragraph', text: 'Une préposition de lieu indique la place.' },
+        { kind: 'paragraph', text: 'Mots utiles : sur, sous, dans, devant, derrière, entre, près de, loin de, à côté de, au milieu de, au-dessus de, au-dessous de, vers.' }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'retenir',
+      blocks: [
+        { kind: 'paragraph', text: 'un lieu = une préposition claire.' },
+        { kind: 'examples', marker: 'puces', label: 'Prépositions courantes', items: ['sur', 'sous', 'dans', 'devant', 'derrière', 'entre', 'près de', 'loin de', 'à côté de', 'au milieu de', 'vers'] },
+        { kind: 'attention', text: 'Près de / loin de / à côté de : garde de.' }
+      ],
+    },
     ],
   },
   {
@@ -34,34 +50,45 @@ export const espaceDocs: GrammaireTheoryDoc[] = [
     blocks: [
       { kind: 'heading', text: 'Autres prépositions et adverbes de lieu' },
       { kind: 'paragraph', text: 'Je précise un lieu avec des mots simples.' },
-      { kind: 'heading', text: 'Je regarde', sub: true },
       {
-        kind: 'rule',
-        text: 'Exemple',
-        examples: [
-          { correct: 'Je suis là.' },
-          { correct: 'La voiture est devant la maison.' },
-          { correct: 'Tournez à droite.' },
+        kind: 'section',
+        role: 'regarder',
+        blocks: [
+          { kind: 'examples', items: [
+              'Je suis là.',
+              'La voiture est devant la maison.',
+              'Tournez à droite.',
+            ],
+          }
         ],
       },
-      { kind: 'heading', text: 'J’explique', sub: true },
-      { kind: 'paragraph', text: 'Ici / là / là-bas indiquent la distance.' },
-      { kind: 'paragraph', text: 'Devant ↔ derrière. Près de ↔ loin de.' },
-      { kind: 'paragraph', text: 'À droite / à gauche. En haut / en bas.' },
-      { kind: 'paragraph', text: 'Au milieu de, au bord de, au fond de, jusqu’à.' },
-      { kind: 'note', text: 'Je retiens : un lieu = un mot de place clair.' },
       {
-        kind: 'table',
-        headers: ['Mot', 'Contraire', 'Exemple'],
-        rows: [
-          ['devant', 'derrière', 'devant la maison'],
-          ['près de', 'loin de', 'près du métro'],
-          ['à droite', 'à gauche', 'tournez à droite'],
-          ['en haut', 'en bas', 'en haut de l’escalier'],
-          ['ici', 'là-bas', 'Regardez là-bas.'],
+        kind: 'section',
+        role: 'expliquer',
+        blocks: [
+          { kind: 'paragraph', text: 'Ici / là / là-bas indiquent la distance.' },
+          { kind: 'paragraph', text: 'Devant ↔ derrière. Près de ↔ loin de.' },
+          { kind: 'paragraph', text: 'À droite / à gauche. En haut / en bas.' },
+          { kind: 'paragraph', text: 'Au milieu de, au bord de, au fond de, jusqu’à.' }
         ],
       },
-      { kind: 'note', text: 'Attention ! De + le = du : près du magasin. De + les = des.' },
+      {
+        kind: 'section',
+        role: 'retenir',
+        blocks: [
+          { kind: 'paragraph', text: 'un lieu = un mot de place clair.' },
+          { kind: 'table', colHeader: true, rowHeader: true, headers: ['Mot', 'Contraire', 'Exemple'],
+            rows: [
+              ['devant', 'derrière', 'devant la maison'],
+              ['près de', 'loin de', 'près du métro'],
+              ['à droite', 'à gauche', 'tournez à droite'],
+              ['en haut', 'en bas', 'en haut de l’escalier'],
+              ['ici', 'là-bas', 'Regardez là-bas.'],
+            ],
+          },
+          { kind: 'attention', text: 'De + le = du : près du magasin. De + les = des.' }
+        ],
+      },
     ],
   },
   {
@@ -75,34 +102,45 @@ export const espaceDocs: GrammaireTheoryDoc[] = [
     blocks: [
       { kind: 'heading', text: 'Les articles contractés' },
       { kind: 'paragraph', text: 'Je combine à / de avec le ou les.' },
-      { kind: 'heading', text: 'Je regarde', sub: true },
       {
-        kind: 'rule',
-        text: 'Exemple',
-        examples: [
-          { correct: 'Je vais au magasin.' },
-          { correct: 'Je reviens du travail.' },
-          { correct: 'Nous allons aux toilettes.' },
+        kind: 'section',
+        role: 'regarder',
+        blocks: [
+          { kind: 'examples', items: [
+              'Je vais au magasin.',
+              'Je reviens du travail.',
+              'Nous allons aux toilettes.',
+            ],
+          }
         ],
       },
-      { kind: 'heading', text: 'J’explique', sub: true },
-      { kind: 'paragraph', text: 'À + le → au. À + les → aux.' },
-      { kind: 'paragraph', text: 'De + le → du. De + les → des.' },
-      { kind: 'paragraph', text: 'À la / à l’ et de la / de l’ ne se contractent pas.' },
-      { kind: 'note', text: 'Je retiens : au / aux / du / des = formes collées.' },
       {
-        kind: 'table',
-        headers: ['Forme', 'Origine', 'Exemple'],
-        rows: [
-          ['au', 'à + le', 'au cinéma'],
-          ['aux', 'à + les', 'aux États-Unis'],
-          ['du', 'de + le', 'du bureau'],
-          ['des', 'de + les', 'des toilettes'],
-          ['à la', 'à + la', 'à la poste'],
-          ['de la', 'de + la', 'de la gare'],
+        kind: 'section',
+        role: 'expliquer',
+        blocks: [
+          { kind: 'paragraph', text: 'À + le → au. À + les → aux.' },
+          { kind: 'paragraph', text: 'De + le → du. De + les → des.' },
+          { kind: 'paragraph', text: 'À la / à l’ et de la / de l’ ne se contractent pas.' }
         ],
       },
-      { kind: 'note', text: 'Attention ! Ne dis pas « à le » ni « de le ».' },
+      {
+        kind: 'section',
+        role: 'retenir',
+        blocks: [
+          { kind: 'paragraph', text: 'au / aux / du / des = formes collées.' },
+          { kind: 'table', colHeader: true, rowHeader: true, headers: ['Forme', 'Origine', 'Exemple'],
+            rows: [
+              ['au', 'à + le', 'au cinéma'],
+              ['aux', 'à + les', 'aux États-Unis'],
+              ['du', 'de + le', 'du bureau'],
+              ['des', 'de + les', 'des toilettes'],
+              ['à la', 'à + la', 'à la poste'],
+              ['de la', 'de + la', 'de la gare'],
+            ],
+          },
+          { kind: 'attention', text: 'Ne dis pas « à le » ni « de le ».' }
+        ],
+      },
     ],
   },
 ]

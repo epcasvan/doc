@@ -90,13 +90,15 @@ export function genKind(
               }
             })
         : null
-      /** Alphabétisation : 2→4, 3→6, 4→12 mots ; Soutien : jusqu’à 16. */
+      /** Alphabétisation : 3→9, 4→12 mots ; Soutien : jusqu’à 16. */
       const alphaCols = options?.alphaVocabCount != null
-        ? Math.max(2, Math.min(4, Math.round(options.columns ?? 3) || 3))
+        ? Math.max(3, Math.min(4, Math.round(options.columns ?? 3) || 3))
         : null
+      const alphaDefaultCount =
+        alphaCols === 3 ? 9 : alphaCols === 4 ? 12 : null
       const vocabCap =
         options?.alphaVocabCount ??
-        (alphaCols != null ? (alphaCols === 4 ? 12 : alphaCols * 2) : 16)
+        (alphaDefaultCount != null ? alphaDefaultCount : 16)
       const want = Math.max(1, Math.min(16, vocabCap))
       const rawWords = libreEntries
         ? libreEntries.map((e) => e.label)
@@ -242,16 +244,17 @@ export function genKind(
             const type1 = type1Words(bank, rng, Math.max(18, want))
             const built = completesFromType1Words(bank, type1)
             return shuffle(rng, built)
-              .slice(0, Math.min(want, built.length))
               .map((row) => ({
                 article: row.article,
                 before: row.before,
                 blank: row.blank,
                 after: row.after,
                 word: row.word,
-                imageSrc: soutienImageFor(row.word),
+                imageSrc: soutienImageFor(row.word) || resolveGameImageSrc(row.word),
                 audioSrc: soutienAudioFor(row.word),
               }))
+              .filter((row) => row.imageSrc && row.audioSrc)
+              .slice(0, Math.min(want, built.length))
           })()
       const rows = Math.max(1, Math.ceil(pool.length / cols))
       return {
@@ -273,17 +276,26 @@ export function genKind(
       /** Grille : n° + case + trait (+ QR) ; positifs = son (au/eau admis pour /o/). */
       const cols = Math.max(1, Math.min(3, Math.round(options?.columns ?? 3) || 3))
       const need = Math.max(1, Math.min(30, n))
-      const soundPool = lessonWordsBySound(bank)
+      const withAudio = (list: readonly string[]) => list.filter((w) => Boolean(soutienAudioFor(w)))
+      const soundPool = withAudio(lessonWordsBySound(bank))
+      const negPool = withAudio(otherWords(bank))
       const posCount = Math.max(1, Math.min(need, Math.ceil(need * 0.55)))
       const negCount = Math.max(0, need - posCount)
       const positives = shuffle(rng, soundPool).slice(0, Math.min(posCount, soundPool.length))
-      const negatives = shuffle(rng, otherWords(bank)).slice(0, negCount)
+      const negatives = shuffle(rng, negPool).slice(0, negCount)
       let optionsList = shuffle(rng, [...positives, ...negatives])
       if (optionsList.length < need) {
-        const extra = shuffle(rng, [...soundPool, ...otherWords(bank)]).filter(
+        const extra = shuffle(rng, [...soundPool, ...negPool]).filter(
           (w) => !optionsList.some((p) => p.toLowerCase() === w.toLowerCase()),
         )
         optionsList = [...optionsList, ...extra].slice(0, need)
+      }
+      // Repli si la banque audio est trop petite.
+      if (optionsList.length < need) {
+        const fallback = shuffle(rng, [...lessonWordsBySound(bank), ...otherWords(bank)]).filter(
+          (w) => !optionsList.some((p) => p.toLowerCase() === w.toLowerCase()),
+        )
+        optionsList = [...optionsList, ...fallback].slice(0, need)
       }
       optionsList = optionsList.slice(0, need)
       const positiveSet = new Set(positives.map((w) => w.toLowerCase()))
@@ -380,15 +392,27 @@ export function genKind(
             (wordHasLessonLetter(item.word, bank) || wordHasLessonSound(item.word, bank)),
         ),
       )
-      let chosen = pool.slice(0, need)
+      let chosen = pool.filter((item) => {
+        const raw = item.word.trim()
+        const word = displayVocabLabel(raw)
+        return Boolean(
+          resolveGameImageSrc(raw) || soutienImageFor(raw) || soutienImageFor(word),
+        )
+      })
       if (chosen.length < need) {
         const rest = bank.syllableItems.filter(
           (item) =>
             syllabifyFr(item.word).length >= 2 &&
-            !chosen.some((t) => t.word.toLowerCase() === item.word.toLowerCase()),
+            !chosen.some((t) => t.word.toLowerCase() === item.word.toLowerCase()) &&
+            Boolean(
+              resolveGameImageSrc(item.word) ||
+                soutienImageFor(item.word) ||
+                soutienImageFor(displayVocabLabel(item.word)),
+            ),
         )
-        chosen = [...chosen, ...shuffle(rng, rest)].slice(0, need)
+        chosen = [...chosen, ...shuffle(rng, rest)]
       }
+      chosen = chosen.slice(0, need)
       return {
         instruction: `À quelle syllabe entendez-vous le son ${bank.sound} ?`,
         preferredColumns: 1,

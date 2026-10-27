@@ -13,13 +13,29 @@ export const aideDocs: GrammaireTheoryDoc[] = [
     blocks: [
     { kind: 'heading', text: 'L’apostrophe' },
     { kind: 'paragraph', text: 'Je remplace une voyelle par ’ devant une autre voyelle.' },
-    { kind: 'heading', text: 'Je regarde', sub: true },
-    { kind: 'rule', text: 'Exemple', examples: [{ correct: 'l’école' }, { correct: 'j’aime' }, { correct: 's’appeler' }] },
-    { kind: 'heading', text: 'J’explique', sub: true },
-    { kind: 'paragraph', text: 'Le/la → l’. Je → j’. Me/te/se → m’/t’/s’. De → d’. Que → qu’.' },
-    { kind: 'note', text: 'Je retiens : voyelle + voyelle → apostrophe souvent.' },
-    { kind: 'table', headers: ['Avant', 'Après'], rows: [['le ami', 'l’ami'], ['je ai', 'j’ai'], ['se appelle', 's’appelle']] },
-    { kind: 'note', text: 'Attention ! Pas d’apostrophe au hasard : seulement ces petits mots.' },
+    {
+      kind: 'section',
+      role: 'regarder',
+      blocks: [
+        { kind: 'examples', items: ['l’école', 'j’aime', 's’appeler'] }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'expliquer',
+      blocks: [
+        { kind: 'paragraph', text: 'Le/la → l’. Je → j’. Me/te/se → m’/t’/s’. De → d’. Que → qu’.' }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'retenir',
+      blocks: [
+        { kind: 'paragraph', text: 'voyelle + voyelle → apostrophe souvent.' },
+        { kind: 'table', colHeader: true, rowHeader: true, headers: ['Avant', 'Après'], rows: [['le ami', 'l’ami'], ['je ai', 'j’ai'], ['se appelle', 's’appelle']] },
+        { kind: 'attention', text: 'Pas d’apostrophe au hasard : seulement ces petits mots.' }
+      ],
+    },
     ],
   },
   {
@@ -33,13 +49,29 @@ export const aideDocs: GrammaireTheoryDoc[] = [
     blocks: [
     { kind: 'heading', text: 'Le genre des noms' },
     { kind: 'paragraph', text: 'Je forme le féminin d’un nom.' },
-    { kind: 'heading', text: 'Je regarde', sub: true },
-    { kind: 'rule', text: 'Exemple', examples: [{ correct: 'un boulanger → une boulangère' }, { correct: 'un chanteur → une chanteuse' }] },
-    { kind: 'heading', text: 'J’explique', sub: true },
-    { kind: 'paragraph', text: 'Souvent + e. Autres : -eur → -euse, -teur → -trice, -er → -ère…' },
-    { kind: 'note', text: 'Je retiens : regarde la terminaison pour former le féminin.' },
-    { kind: 'table', headers: ['Masculin', 'Féminin'], rows: [['-ien', '-ienne'], ['-eur', '-euse'], ['-teur', '-trice'], ['-er', '-ère']] },
-    { kind: 'note', text: 'Attention ! Quelques exceptions : un chef → une cheffe.' },
+    {
+      kind: 'section',
+      role: 'regarder',
+      blocks: [
+        { kind: 'examples', items: ['un boulanger → une boulangère', 'un chanteur → une chanteuse'] }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'expliquer',
+      blocks: [
+        { kind: 'paragraph', text: 'Souvent + e. Autres : -eur → -euse, -teur → -trice, -er → -ère…' }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'retenir',
+      blocks: [
+        { kind: 'paragraph', text: 'regarde la terminaison pour former le féminin.' },
+        { kind: 'table', colHeader: true, rowHeader: true, headers: ['Masculin', 'Féminin'], rows: [['-ien', '-ienne'], ['-eur', '-euse'], ['-teur', '-trice'], ['-er', '-ère']] },
+        { kind: 'attention', text: 'Quelques exceptions : un chef → une cheffe.' }
+      ],
+    },
     ],
   },
   {
@@ -53,13 +85,29 @@ export const aideDocs: GrammaireTheoryDoc[] = [
     blocks: [
     { kind: 'heading', text: 'Le nombre des noms' },
     { kind: 'paragraph', text: 'Je mets un nom au pluriel.' },
-    { kind: 'heading', text: 'Je regarde', sub: true },
-    { kind: 'rule', text: 'Exemple', examples: [{ correct: 'un livre → des livres' }, { correct: 'un cheval → des chevaux' }] },
-    { kind: 'heading', text: 'J’explique', sub: true },
-    { kind: 'paragraph', text: 'Souvent + s. -eau / -au / -eu → + x. -al → -aux (souvent).' },
-    { kind: 'note', text: 'Je retiens : pluriel souvent + s.' },
-    { kind: 'table', headers: ['Singulier', 'Pluriel'], rows: [['livre', 'livres'], ['bateau', 'bateaux'], ['journal', 'journaux']] },
-    { kind: 'note', text: 'Attention ! Un œil → des yeux.' },
+    {
+      kind: 'section',
+      role: 'regarder',
+      blocks: [
+        { kind: 'examples', items: ['un livre → des livres', 'un cheval → des chevaux'] }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'expliquer',
+      blocks: [
+        { kind: 'paragraph', text: 'Souvent + s. -eau / -au / -eu → + x. -al → -aux (souvent).' }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'retenir',
+      blocks: [
+        { kind: 'paragraph', text: 'pluriel souvent + s.' },
+        { kind: 'table', colHeader: true, rowHeader: true, headers: ['Singulier', 'Pluriel'], rows: [['livre', 'livres'], ['bateau', 'bateaux'], ['journal', 'journaux']] },
+        { kind: 'attention', text: 'Un œil → des yeux.' }
+      ],
+    },
     ],
   },
   {
@@ -73,13 +121,29 @@ export const aideDocs: GrammaireTheoryDoc[] = [
     blocks: [
     { kind: 'heading', text: 'Le genre des adjectifs' },
     { kind: 'paragraph', text: 'J’accorde l’adjectif au féminin.' },
-    { kind: 'heading', text: 'Je regarde', sub: true },
-    { kind: 'rule', text: 'Exemple', examples: [{ correct: 'petit → petite' }, { correct: 'heureux → heureuse' }] },
-    { kind: 'heading', text: 'J’explique', sub: true },
-    { kind: 'paragraph', text: 'Souvent + e. -eux → -euse. -f → -ve. -er → -ère.' },
-    { kind: 'note', text: 'Je retiens : adjectif féminin = accord avec le nom.' },
-    { kind: 'table', headers: ['Masculin', 'Féminin'], rows: [['grand', 'grande'], ['actif', 'active'], ['premier', 'première']] },
-    { kind: 'note', text: 'Attention ! Beau → belle. Nouveau → nouvelle. Vieux → vieille.' },
+    {
+      kind: 'section',
+      role: 'regarder',
+      blocks: [
+        { kind: 'examples', items: ['petit → petite', 'heureux → heureuse'] }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'expliquer',
+      blocks: [
+        { kind: 'paragraph', text: 'Souvent + e. -eux → -euse. -f → -ve. -er → -ère.' }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'retenir',
+      blocks: [
+        { kind: 'paragraph', text: 'adjectif féminin = accord avec le nom.' },
+        { kind: 'table', colHeader: true, rowHeader: true, headers: ['Masculin', 'Féminin'], rows: [['grand', 'grande'], ['actif', 'active'], ['premier', 'première']] },
+        { kind: 'attention', text: 'Beau → belle. Nouveau → nouvelle. Vieux → vieille.' }
+      ],
+    },
     ],
   },
   {
@@ -93,13 +157,29 @@ export const aideDocs: GrammaireTheoryDoc[] = [
     blocks: [
     { kind: 'heading', text: 'Le nombre des adjectifs' },
     { kind: 'paragraph', text: 'J’accorde l’adjectif au pluriel.' },
-    { kind: 'heading', text: 'Je regarde', sub: true },
-    { kind: 'rule', text: 'Exemple', examples: [{ correct: 'un livre intéressant → des livres intéressants' }] },
-    { kind: 'heading', text: 'J’explique', sub: true },
-    { kind: 'paragraph', text: 'Souvent + s. Adjectifs en -eau → + x.' },
-    { kind: 'note', text: 'Je retiens : pluriel de l’adjectif = accord avec le nom.' },
-    { kind: 'table', headers: ['Singulier', 'Pluriel'], rows: [['petit', 'petits'], ['beau', 'beaux']] },
-    { kind: 'note', text: 'Attention ! Accord en genre et en nombre ensemble.' },
+    {
+      kind: 'section',
+      role: 'regarder',
+      blocks: [
+        { kind: 'examples', items: ['un livre intéressant → des livres intéressants'] }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'expliquer',
+      blocks: [
+        { kind: 'paragraph', text: 'Souvent + s. Adjectifs en -eau → + x.' }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'retenir',
+      blocks: [
+        { kind: 'paragraph', text: 'pluriel de l’adjectif = accord avec le nom.' },
+        { kind: 'table', colHeader: true, rowHeader: true, headers: ['Singulier', 'Pluriel'], rows: [['petit', 'petits'], ['beau', 'beaux']] },
+        { kind: 'attention', text: 'Accord en genre et en nombre ensemble.' }
+      ],
+    },
     ],
   },
   {
@@ -113,14 +193,30 @@ export const aideDocs: GrammaireTheoryDoc[] = [
     blocks: [
     { kind: 'heading', text: 'Les lettres G et C' },
     { kind: 'paragraph', text: 'Je sais quand g et c sont durs ou doux.' },
-    { kind: 'heading', text: 'Je regarde', sub: true },
-    { kind: 'rule', text: 'Exemple', examples: [{ correct: 'garçon (c doux)' }, { correct: 'gateau → gâteau (g dur)' }, { correct: 'girafe (g doux)' }] },
-    { kind: 'heading', text: 'J’explique', sub: true },
-    { kind: 'paragraph', text: 'C/G devant e, i, y → son doux. Devant a, o, u → son dur.' },
-    { kind: 'paragraph', text: 'Ç garde le son s devant a, o, u.' },
-    { kind: 'note', text: 'Je retiens : e/i/y → doux. a/o/u → dur.' },
-    { kind: 'table', headers: ['Lettre', 'Doux', 'Dur'], rows: [['c', 'cerise', 'carotte'], ['g', 'girafe', 'gateau / gâteau']] },
-    { kind: 'note', text: 'Attention ! On ajoute e pour garder le son : nous mangeons.' },
+    {
+      kind: 'section',
+      role: 'regarder',
+      blocks: [
+        { kind: 'examples', items: ['garçon (c doux)', 'gateau → gâteau (g dur)', 'girafe (g doux)'] }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'expliquer',
+      blocks: [
+        { kind: 'paragraph', text: 'C/G devant e, i, y → son doux. Devant a, o, u → son dur.' },
+        { kind: 'paragraph', text: 'Ç garde le son s devant a, o, u.' }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'retenir',
+      blocks: [
+        { kind: 'paragraph', text: 'e/i/y → doux. a/o/u → dur.' },
+        { kind: 'table', colHeader: true, rowHeader: true, headers: ['Lettre', 'Doux', 'Dur'], rows: [['c', 'cerise', 'carotte'], ['g', 'girafe', 'gateau / gâteau']] },
+        { kind: 'attention', text: 'On ajoute e pour garder le son : nous mangeons.' }
+      ],
+    },
     ],
   },
   {
@@ -134,14 +230,30 @@ export const aideDocs: GrammaireTheoryDoc[] = [
     blocks: [
     { kind: 'heading', text: 'Les lettres S et M' },
     { kind: 'paragraph', text: 'Je fais attention aux lettres s et m dans les mots.' },
-    { kind: 'heading', text: 'Je regarde', sub: true },
-    { kind: 'rule', text: 'Exemple', examples: [{ correct: 'poisson (ss = son s)' }, { correct: 'maison (s entre voyelles = son z)' }] },
-    { kind: 'heading', text: 'J’explique', sub: true },
-    { kind: 'paragraph', text: 'S entre deux voyelles → souvent son z.' },
-    { kind: 'paragraph', text: 'Ss → son s. M devant b/p souvent.' },
-    { kind: 'note', text: 'Je retiens : s entre voyelles → souvent z.' },
-    { kind: 'table', headers: ['Cas', 'Exemple'], rows: [['s = z', 'maison'], ['ss = s', 'classe']] },
-    { kind: 'note', text: 'Attention ! Un mot = une règle à la fois en FALC.' },
+    {
+      kind: 'section',
+      role: 'regarder',
+      blocks: [
+        { kind: 'examples', items: ['poisson (ss = son s)', 'maison (s entre voyelles = son z)'] }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'expliquer',
+      blocks: [
+        { kind: 'paragraph', text: 'S entre deux voyelles → souvent son z.' },
+        { kind: 'paragraph', text: 'Ss → son s. M devant b/p souvent.' }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'retenir',
+      blocks: [
+        { kind: 'paragraph', text: 's entre voyelles → souvent z.' },
+        { kind: 'table', colHeader: true, rowHeader: true, headers: ['Cas', 'Exemple'], rows: [['s = z', 'maison'], ['ss = s', 'classe']] },
+        { kind: 'attention', text: 'Un mot = une règle à la fois en FALC.' }
+      ],
+    },
     ],
   },
   {
@@ -155,14 +267,30 @@ export const aideDocs: GrammaireTheoryDoc[] = [
     blocks: [
     { kind: 'heading', text: 'Les accents' },
     { kind: 'paragraph', text: 'Je reconnais é, è, ê, à, ù, ç.' },
-    { kind: 'heading', text: 'Je regarde', sub: true },
-    { kind: 'rule', text: 'Exemple', examples: [{ correct: 'école' }, { correct: 'père' }, { correct: 'forêt' }, { correct: 'à' }] },
-    { kind: 'heading', text: 'J’explique', sub: true },
-    { kind: 'paragraph', text: 'É = accent aigu. È / Ê = grave / circonflexe.' },
-    { kind: 'paragraph', text: 'À et ù : surtout mots courts (à, où).' },
-    { kind: 'note', text: 'Je retiens : l’accent change parfois le son et le sens.' },
-    { kind: 'table', headers: ['Accent', 'Exemple'], rows: [['aigu é', 'été'], ['grave è', 'très'], ['circonflexe ê', 'être']] },
-    { kind: 'note', text: 'Attention ! a (verbe avoir) ≠ à (préposition).' },
+    {
+      kind: 'section',
+      role: 'regarder',
+      blocks: [
+        { kind: 'examples', items: ['école', 'père', 'forêt', 'à'] }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'expliquer',
+      blocks: [
+        { kind: 'paragraph', text: 'É = accent aigu. È / Ê = grave / circonflexe.' },
+        { kind: 'paragraph', text: 'À et ù : surtout mots courts (à, où).' }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'retenir',
+      blocks: [
+        { kind: 'paragraph', text: 'l’accent change parfois le son et le sens.' },
+        { kind: 'table', colHeader: true, rowHeader: true, headers: ['Accent', 'Exemple'], rows: [['aigu é', 'été'], ['grave è', 'très'], ['circonflexe ê', 'être']] },
+        { kind: 'attention', text: 'a (verbe avoir) ≠ à (préposition).' }
+      ],
+    },
     ],
   },
   {
@@ -176,13 +304,29 @@ export const aideDocs: GrammaireTheoryDoc[] = [
     blocks: [
     { kind: 'heading', text: 'Les classes grammaticales' },
     { kind: 'paragraph', text: 'Je reconnais la classe d’un mot.' },
-    { kind: 'heading', text: 'Je regarde', sub: true },
-    { kind: 'rule', text: 'Exemple', examples: [{ correct: 'maison = nom' }, { correct: 'grande = adjectif' }, { correct: 'manger = verbe' }] },
-    { kind: 'heading', text: 'J’explique', sub: true },
-    { kind: 'paragraph', text: 'Noms, adjectifs, déterminants, pronoms, verbes, adverbes, prépositions, conjonctions…' },
-    { kind: 'note', text: 'Je retiens : chaque mot a une classe.' },
-    { kind: 'list', title: 'Classes', items: ['nom', 'adjectif', 'déterminant', 'pronom', 'verbe', 'adverbe', 'préposition', 'conjonction'] },
-    { kind: 'note', text: 'Attention ! Le même mot peut changer de rôle selon la phrase.' },
+    {
+      kind: 'section',
+      role: 'regarder',
+      blocks: [
+        { kind: 'examples', items: ['maison = nom', 'grande = adjectif', 'manger = verbe'] }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'expliquer',
+      blocks: [
+        { kind: 'paragraph', text: 'Noms, adjectifs, déterminants, pronoms, verbes, adverbes, prépositions, conjonctions…' }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'retenir',
+      blocks: [
+        { kind: 'paragraph', text: 'chaque mot a une classe.' },
+        { kind: 'examples', marker: 'puces', label: 'Classes', items: ['nom', 'adjectif', 'déterminant', 'pronom', 'verbe', 'adverbe', 'préposition', 'conjonction'] },
+        { kind: 'attention', text: 'Le même mot peut changer de rôle selon la phrase.' }
+      ],
+    },
     ],
   },
   {
@@ -196,13 +340,29 @@ export const aideDocs: GrammaireTheoryDoc[] = [
     blocks: [
     { kind: 'heading', text: 'La ponctuation' },
     { kind: 'paragraph', text: 'J’utilise les signes pour clarifier.' },
-    { kind: 'heading', text: 'Je regarde', sub: true },
-    { kind: 'rule', text: 'Exemple', examples: [{ correct: 'Bonjour.' }, { correct: 'Tu viens ?' }, { correct: 'Attention !' }] },
-    { kind: 'heading', text: 'J’explique', sub: true },
-    { kind: 'paragraph', text: '. = fin. ? = question. ! = exclamation. , = pause courte.' },
-    { kind: 'note', text: 'Je retiens : une phrase = une ponctuation claire.' },
-    { kind: 'table', headers: ['Signe', 'Usage'], rows: [['.', 'fin de phrase'], ['?', 'question'], ['!', 'exclamation'], [',', 'pause']] },
-    { kind: 'note', text: 'Attention ! Espace avant ? ! ; : en français typographique (selon usage scolaire).' },
+    {
+      kind: 'section',
+      role: 'regarder',
+      blocks: [
+        { kind: 'examples', items: ['Bonjour.', 'Tu viens ?', 'Attention !'] }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'expliquer',
+      blocks: [
+        { kind: 'paragraph', text: '. = fin. ? = question. ! = exclamation. , = pause courte.' }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'retenir',
+      blocks: [
+        { kind: 'paragraph', text: 'une phrase = une ponctuation claire.' },
+        { kind: 'table', colHeader: true, rowHeader: true, headers: ['Signe', 'Usage'], rows: [['.', 'fin de phrase'], ['?', 'question'], ['!', 'exclamation'], [',', 'pause']] },
+        { kind: 'attention', text: 'Espace avant ? ! ; : en français typographique (selon usage scolaire).' }
+      ],
+    },
     ],
   },
   {
@@ -216,13 +376,29 @@ export const aideDocs: GrammaireTheoryDoc[] = [
     blocks: [
     { kind: 'heading', text: 'Les homophones' },
     { kind: 'paragraph', text: 'Je distingue les mots qui se prononcent pareil.' },
-    { kind: 'heading', text: 'Je regarde', sub: true },
-    { kind: 'rule', text: 'Exemple', examples: [{ correct: 'a (verbe avoir) / à (préposition)' }, { correct: 'ou (choix) / où (lieu)' }] },
-    { kind: 'heading', text: 'J’explique', sub: true },
-    { kind: 'paragraph', text: 'Astuce : remplace pour tester (a → avait ; ou → ou bien ; on → il).' },
-    { kind: 'note', text: 'Je retiens : remplace pour choisir le bon mot.' },
-    { kind: 'table', headers: ['Mot', 'Nature', 'Test'], rows: [['a', 'verbe avoir', 'avait'], ['à', 'préposition', 'vers / dans'], ['ou', 'choix', 'ou bien'], ['où', 'lieu', 'là où'], ['son', 'possessif', 'mon'], ['sont', 'verbe être', 'étaient'], ['on', 'pronom', 'il'], ['ont', 'verbe avoir', 'avaient']] },
-    { kind: 'note', text: 'Attention ! Un homophone à la fois dans la fiche.' },
+    {
+      kind: 'section',
+      role: 'regarder',
+      blocks: [
+        { kind: 'examples', items: ['a (verbe avoir) / à (préposition)', 'ou (choix) / où (lieu)'] }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'expliquer',
+      blocks: [
+        { kind: 'paragraph', text: 'Astuce : remplace pour tester (a → avait ; ou → ou bien ; on → il).' }
+      ],
+    },
+    {
+      kind: 'section',
+      role: 'retenir',
+      blocks: [
+        { kind: 'paragraph', text: 'remplace pour choisir le bon mot.' },
+        { kind: 'table', colHeader: true, rowHeader: true, headers: ['Mot', 'Nature', 'Test'], rows: [['a', 'verbe avoir', 'avait'], ['à', 'préposition', 'vers / dans'], ['ou', 'choix', 'ou bien'], ['où', 'lieu', 'là où'], ['son', 'possessif', 'mon'], ['sont', 'verbe être', 'étaient'], ['on', 'pronom', 'il'], ['ont', 'verbe avoir', 'avaient']] },
+        { kind: 'attention', text: 'Un homophone à la fois dans la fiche.' }
+      ],
+    },
     ],
   },
   {
@@ -236,33 +412,44 @@ export const aideDocs: GrammaireTheoryDoc[] = [
     blocks: [
       { kind: 'heading', text: 'Les noms composés' },
       { kind: 'paragraph', text: 'Un nom composé a plusieurs mots.' },
-      { kind: 'heading', text: 'Je regarde', sub: true },
       {
-        kind: 'rule',
-        text: 'Exemple',
-        examples: [
-          { correct: 'un porte-monnaie → des porte-monnaie' },
-          { correct: 'un grand-père → des grands-pères' },
-          { correct: 'un arc-en-ciel → des arcs-en-ciel' },
+        kind: 'section',
+        role: 'regarder',
+        blocks: [
+          { kind: 'examples', items: [
+              'un porte-monnaie → des porte-monnaie',
+              'un grand-père → des grands-pères',
+              'un arc-en-ciel → des arcs-en-ciel',
+            ],
+          }
         ],
       },
-      { kind: 'heading', text: 'J’explique', sub: true },
-      { kind: 'paragraph', text: 'Nom + nom : souvent les deux au pluriel.' },
-      { kind: 'paragraph', text: 'Adjectif + nom : les deux au pluriel.' },
-      { kind: 'paragraph', text: 'Verbe + nom : souvent seul le nom change (ou rien).' },
-      { kind: 'paragraph', text: 'Apprends les formes fréquentes une par une.' },
-      { kind: 'note', text: 'Je retiens : regarde le type de composition.' },
       {
-        kind: 'table',
-        headers: ['Singulier', 'Pluriel'],
-        rows: [
-          ['un grand-père', 'des grands-pères'],
-          ['un coffre-fort', 'des coffres-forts'],
-          ['un portefeuille', 'des portefeuilles'],
-          ['un après-midi', 'des après-midi'],
+        kind: 'section',
+        role: 'expliquer',
+        blocks: [
+          { kind: 'paragraph', text: 'Nom + nom : souvent les deux au pluriel.' },
+          { kind: 'paragraph', text: 'Adjectif + nom : les deux au pluriel.' },
+          { kind: 'paragraph', text: 'Verbe + nom : souvent seul le nom change (ou rien).' },
+          { kind: 'paragraph', text: 'Apprends les formes fréquentes une par une.' }
         ],
       },
-      { kind: 'note', text: 'Attention ! Certains pluriels sont fixes : vérifie dans un modèle.' },
+      {
+        kind: 'section',
+        role: 'retenir',
+        blocks: [
+          { kind: 'paragraph', text: 'regarde le type de composition.' },
+          { kind: 'table', colHeader: true, rowHeader: true, headers: ['Singulier', 'Pluriel'],
+            rows: [
+              ['un grand-père', 'des grands-pères'],
+              ['un coffre-fort', 'des coffres-forts'],
+              ['un portefeuille', 'des portefeuilles'],
+              ['un après-midi', 'des après-midi'],
+            ],
+          },
+          { kind: 'attention', text: 'Certains pluriels sont fixes : vérifie dans un modèle.' }
+        ],
+      },
     ],
   },
   {
@@ -276,32 +463,43 @@ export const aideDocs: GrammaireTheoryDoc[] = [
     blocks: [
       { kind: 'heading', text: 'Les adverbes en -ment' },
       { kind: 'paragraph', text: 'Je forme un adverbe à partir d’un adjectif.' },
-      { kind: 'heading', text: 'Je regarde', sub: true },
       {
-        kind: 'rule',
-        text: 'Exemple',
-        examples: [
-          { correct: 'lent → lentement' },
-          { correct: 'heureux → heureusement' },
-          { correct: 'précis → précisément' },
+        kind: 'section',
+        role: 'regarder',
+        blocks: [
+          { kind: 'examples', items: [
+              'lent → lentement',
+              'heureux → heureusement',
+              'précis → précisément',
+            ],
+          }
         ],
       },
-      { kind: 'heading', text: 'J’explique', sub: true },
-      { kind: 'paragraph', text: 'Souvent : adjectif au féminin + -ment.' },
-      { kind: 'paragraph', text: 'Si l’adjectif finit par -ant / -ent : -amment / -emment.' },
-      { kind: 'paragraph', text: 'L’adverbe ne s’accorde pas.' },
-      { kind: 'note', text: 'Je retiens : féminin de l’adjectif + ment.' },
       {
-        kind: 'table',
-        headers: ['Adjectif', 'Adverbe'],
-        rows: [
-          ['doux / douce', 'doucement'],
-          ['heureux / heureuse', 'heureusement'],
-          ['constant', 'constamment'],
-          ['évident', 'évidemment'],
+        kind: 'section',
+        role: 'expliquer',
+        blocks: [
+          { kind: 'paragraph', text: 'Souvent : adjectif au féminin + -ment.' },
+          { kind: 'paragraph', text: 'Si l’adjectif finit par -ant / -ent : -amment / -emment.' },
+          { kind: 'paragraph', text: 'L’adverbe ne s’accorde pas.' }
         ],
       },
-      { kind: 'note', text: 'Attention ! L’adverbe reste invariable : elle parle doucement.' },
+      {
+        kind: 'section',
+        role: 'retenir',
+        blocks: [
+          { kind: 'paragraph', text: 'féminin de l’adjectif + ment.' },
+          { kind: 'table', colHeader: true, rowHeader: true, headers: ['Adjectif', 'Adverbe'],
+            rows: [
+              ['doux / douce', 'doucement'],
+              ['heureux / heureuse', 'heureusement'],
+              ['constant', 'constamment'],
+              ['évident', 'évidemment'],
+            ],
+          },
+          { kind: 'attention', text: 'L’adverbe reste invariable : elle parle doucement.' }
+        ],
+      },
     ],
   },
   {
@@ -315,32 +513,43 @@ export const aideDocs: GrammaireTheoryDoc[] = [
     blocks: [
       { kind: 'heading', text: 'Les adverbes d’intensité' },
       { kind: 'paragraph', text: 'Je renforce ou j’atténue une idée.' },
-      { kind: 'heading', text: 'Je regarde', sub: true },
       {
-        kind: 'rule',
-        text: 'Exemple',
-        examples: [
-          { correct: 'C’est très bien.' },
-          { correct: 'Je suis un peu fatigué.' },
-          { correct: 'Il parle trop vite.' },
+        kind: 'section',
+        role: 'regarder',
+        blocks: [
+          { kind: 'examples', items: [
+              'C’est très bien.',
+              'Je suis un peu fatigué.',
+              'Il parle trop vite.',
+            ],
+          }
         ],
       },
-      { kind: 'heading', text: 'J’explique', sub: true },
-      { kind: 'paragraph', text: 'Mots utiles : très, trop, assez, un peu, beaucoup, vraiment, surtout.' },
-      { kind: 'paragraph', text: 'Ils se placent souvent devant l’adjectif ou l’adverbe.' },
-      { kind: 'note', text: 'Je retiens : très = fort. Un peu = faible. Trop = trop fort.' },
       {
-        kind: 'table',
-        headers: ['Adverbe', 'Sens', 'Exemple'],
-        rows: [
-          ['très', 'fort', 'très content'],
-          ['un peu', 'faible', 'un peu difficile'],
-          ['assez', 'suffisant', 'assez clair'],
-          ['trop', 'excessif', 'trop cher'],
-          ['beaucoup', 'grande quantité', 'beaucoup travailler'],
+        kind: 'section',
+        role: 'expliquer',
+        blocks: [
+          { kind: 'paragraph', text: 'Mots utiles : très, trop, assez, un peu, beaucoup, vraiment, surtout.' },
+          { kind: 'paragraph', text: 'Ils se placent souvent devant l’adjectif ou l’adverbe.' }
         ],
       },
-      { kind: 'note', text: 'Attention ! Trop ≠ très : trop = trop pour la situation.' },
+      {
+        kind: 'section',
+        role: 'retenir',
+        blocks: [
+          { kind: 'paragraph', text: 'très = fort. Un peu = faible. Trop = trop fort.' },
+          { kind: 'table', colHeader: true, rowHeader: true, headers: ['Adverbe', 'Sens', 'Exemple'],
+            rows: [
+              ['très', 'fort', 'très content'],
+              ['un peu', 'faible', 'un peu difficile'],
+              ['assez', 'suffisant', 'assez clair'],
+              ['trop', 'excessif', 'trop cher'],
+              ['beaucoup', 'grande quantité', 'beaucoup travailler'],
+            ],
+          },
+          { kind: 'attention', text: 'Trop ≠ très : trop = trop pour la situation.' }
+        ],
+      },
     ],
   },
 ]

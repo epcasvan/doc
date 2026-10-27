@@ -123,35 +123,10 @@ export function SoutienMotsLibreEditor({
 
   return (
     <div className="quad-libre-block soutien-mots-libre">
-      {suggestions.length > 0 ? (
-        <>
-          <b>
-            Autres mots{soundLabel ? ` du son ${soundLabel}` : ''}
-            {replaceIndex != null ? ` — remplacer « ${entries[replaceIndex]?.label ?? ''} »` : ''}
-          </b>
-          <div className="soutien-suggest-list" role="group" aria-label="Mots du son à sélectionner">
-            {suggestions.map((word) => (
-              <button
-                key={`sug-${word}`}
-                type="button"
-                className="soutien-suggest-chip"
-                title={
-                  replaceIndex != null
-                    ? `Remplacer par ${word}`
-                    : entries.length >= max
-                      ? `Choisir ${word} (sélectionnez d’abord un mot à remplacer)`
-                      : `Ajouter ${word}`
-                }
-                onClick={() => applySuggestion(word)}
-              >
-                {word}
-              </button>
-            ))}
-          </div>
-        </>
-      ) : null}
-
-      <b>Mots ({entries.length}/{max})</b>
+      <b>Mots de la fiche ({entries.length}/{max})</b>
+      <p className="type-hint muted">
+        Image, puis le mot. ⇄ choisit un autre mot du son à la place de celui-ci.
+      </p>
       <ul className="game-entry-list" aria-label="Mots et images du type 1">
         {entries.map((entry, index) => {
           const inputId = `${baseId}-img-${index}`
@@ -283,11 +258,34 @@ export function SoutienMotsLibreEditor({
         <p className="questions-overflow-hint" role="alert">
           {error}
         </p>
-      ) : (
-        <small className="muted">
-          Libre : choisissez un autre mot du son (pastilles), remplacez avec ⇄, ou saisissez un mot.
-        </small>
-      )}
+      ) : null}
+      {suggestions.length > 0 ? (
+        <>
+          <b>
+            Autres mots{soundLabel ? ` du son ${soundLabel}` : ''}
+            {replaceIndex != null ? ` — remplacer « ${entries[replaceIndex]?.label ?? ''} »` : ''}
+          </b>
+          <div className="soutien-suggest-list" role="group" aria-label="Mots du son à sélectionner">
+            {suggestions.map((word) => (
+              <button
+                key={`sug-${word}`}
+                type="button"
+                className="soutien-suggest-chip"
+                title={
+                  replaceIndex != null
+                    ? `Remplacer par ${word}`
+                    : entries.length >= max
+                      ? `Choisir ${word} (sélectionnez d’abord un mot à remplacer)`
+                      : `Ajouter ${word}`
+                }
+                onClick={() => applySuggestion(word)}
+              >
+                {word}
+              </button>
+            ))}
+          </div>
+        </>
+      ) : null}
     </div>
   )
 }

@@ -338,7 +338,7 @@ function copyComprehension() {
         const text = transcripts.get(stem) ?? stem.replace(/[-_]+/g, ' ')
         const { theme } = scoreText(text)
         const destName = `${job.level}__${basename(file)}`
-        copyTo(file, join(DEST, 'audio/comprehension', theme, destName))
+        copyTo(file, join(DEST, 'audio/tcf/co', theme, destName))
         tally(`audio/${theme}`)
       } else if (isImage(file)) {
         copyTo(file, join(DEST, 'images/comprehension', job.level, basename(file)))

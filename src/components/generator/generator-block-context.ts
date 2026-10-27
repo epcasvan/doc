@@ -19,6 +19,11 @@ import {
   type VocabWordEntry,
 } from '@/francais/vocab-learn'
 import { isGrammarTheoryType } from '@/francais/grammar-theory'
+import { isGrammaireExerciseType, isGrammaireTheoryType } from '@/grammaire/types'
+import {
+  resolveGramSubthemeAll,
+  subthemesForTopicAll,
+} from '@/grammaire/exercises'
 import { soutienBankById } from '@/francais/soutien/banks'
 import { type1WordPool, type1Words } from '@/francais/soutien/generate'
 import { parseAlphaType } from '@/alphabetisation/kinds'
@@ -46,9 +51,9 @@ import {
   VOLUME_QUAD_FIGURES,
 } from '@/math/mesures'
 import { TCF_DOMAIN, tcfNiveauFromDifficulty } from '@/tcf/catalog'
-import { isTcmDomain } from '@/tcm/test'
+import { isTpmDomain } from '@/tpm/test'
 import { isTcmCfrDomain } from '@/tcm-cfr/test'
-import { isTcmFamilyConsignesType } from '@/tcm/informations'
+import { isTpmFamilyConsignesType } from '@/tpm/informations'
 import { defaultEntriesFor } from '@/jeux/defaults'
 import { entriesToText } from '@/jeux/parse'
 import { templateFor } from '@/jeux/templates'
@@ -69,19 +74,30 @@ const isPhraseChart =
 const isVocabLearn = isVocabLearnType(activeBlock.exerciseType)
 const isVocabPool = isVocabPoolType(activeBlock.exerciseType)
 const isVocabProd = isVocabProductionType(activeBlock.exerciseType)
-const isGramTheory = isGrammarTheoryType(activeBlock.exerciseType)
+const isGramTheory =
+  isGrammarTheoryType(activeBlock.exerciseType) ||
+  isGrammaireTheoryType(activeBlock.exerciseType)
+const isGrammaireDomain = activePage.domain === 'grammaire'
+const isGrammaireExercise =
+  isGrammaireDomain && isGrammaireExerciseType(activeBlock.exerciseType)
+const isLogique = activePage.domain === 'logique'
+const gramSubthemes = isGrammaireDomain ? subthemesForTopicAll(activeBlock.topic) : []
+const gramSubtheme = isGrammaireDomain
+  ? resolveGramSubthemeAll(activeBlock.topic, activeBlock.exerciseType)
+  : undefined
 const isPhraseDomain = activePage.domain === 'gattegno'
 const isJeuxDomain = activePage.domain === 'jeux'
 const isCalliDomain = activePage.domain === 'calligraphie'
 const isSoutienFr = activePage.domain === 'soutien-fr'
 const isAlphabetisation = activePage.domain === 'alphabetisation'
-const isTcm = isTcmDomain(activePage.domain)
+const isTpm = isTpmDomain(activePage.domain)
 const isTcmCfr = isTcmCfrDomain(activePage.domain)
-/** TCM / TCM CFR : test multi-pages packé, UI simplifiée. */
-const isTcmLike = isTcm || isTcmCfr
+const isTcmCsc = activePage.domain === 'tcm-csc'
+/** TPM / TCM CFR / TCM CSC : test multi-pages packé, UI simplifiée + mode libre dédié. */
+const isTpmLike = isTpm || isTcmCfr || isTcmCsc
 const isTcf = activePage.domain === TCF_DOMAIN
-/** Page 1 Informations (TCM / CFR / CSC) : pas de Questions ni Colonnes. */
-const isTcmInfoPage = isTcmFamilyConsignesType(activeBlock.exerciseType)
+/** Page 1 Informations (TPM / CFR / CSC) : pas de Questions ni Colonnes. */
+const isTpmInfoPage = isTpmFamilyConsignesType(activeBlock.exerciseType)
 const tcfNiveau = tcfNiveauFromDifficulty(activeBlock.difficulty)
 const soutienParsed = isSoutienFr
   ? parseSoutienType(activeBlock.exerciseType)
@@ -135,7 +151,7 @@ const isSoutienCols123 =
   soutienKind === 'syllabe-son-qr'
 /** Type 7 : grille images 3–5 colonnes. */
 const isSoutienCols345 = soutienKind === 'ecouter-image'
-/** Type 1 Alpha : 2 / 3 / 4 colonnes (4 / 6 / 12 mots). */
+/** Type 1 Alpha : 3 / 4 colonnes (9 / 12 mots). */
 const isAlphaMotsCols = isAlphabetisation && soutienKind === 'mots'
 /** Types 10–11 Alpha : lecture de syllabes 4 / 5 / 6 colonnes. */
 const isAlphaSyllabeTableCols =
@@ -256,16 +272,21 @@ const questionsInputOverflow = questionsOverflow || bankOverflow
     isVocabPool,
     isVocabProd,
     isGramTheory,
+    isGrammaireDomain,
+    isGrammaireExercise,
+    isLogique,
+    gramSubthemes,
+    gramSubtheme,
     isPhraseDomain,
     isJeuxDomain,
     isCalliDomain,
     isSoutienFr,
     isAlphabetisation,
-    isTcm,
+    isTpm,
     isTcmCfr,
-    isTcmLike,
+    isTpmLike,
     isTcf,
-    isTcmInfoPage,
+    isTpmInfoPage,
     tcfNiveau,
     soutienParsed,
     soutienKind,

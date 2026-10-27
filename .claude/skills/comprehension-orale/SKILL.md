@@ -3,7 +3,7 @@ name: comprehension-orale
 description: >-
   Importe et maintient les CO (compréhension orale) TCF depuis le repo
   soutien-scolaire. À utiliser dès qu’on parle de CO TCF, banques
-  src/content/tcf/*/co.json, audios soutien, ou import des questions orales.
+  src/tcf/content/*/co.json, audios soutien, ou import des questions orales.
 ---
 
 # Compréhension orale TCF (soutien-scolaire)
@@ -15,9 +15,9 @@ banques TCF, pas dans le domaine français FLE.
 
 | Élément | Chemin |
 |---|---|
-| Banques | `src/content/tcf/{a0-a1,a1-a2,a2-b1}/co.json` |
-| Audios soutien | `public/lib/audio/comprehension/{thème}/{niveau}__{stem}.mp3` |
-| Audios des tests (séries) | `public/lib/audio/comprehension/{scénario}/{scène}[-n].mp3` |
+| Banques | `src/tcf/content/{a0-a1,a1-a2,a2-b1}/co.json` |
+| Audios soutien | `public/lib/audio/tcf/co/{thème}/{niveau}__{stem}.mp3` |
+| Audios des tests (séries) | `public/lib/audio/tcf/co/{scénario}/{scène}[-n].mp3` |
 | Manifest | `scripts/audio-theme-manifest.json` |
 | Import | `scripts/import-tcf-co-soutien.mjs` |
 | Libellés sélecteur | `src/tcf/sources.ts` (scène, numérotée si elle se répète) |
@@ -32,7 +32,7 @@ Chaque exercice TCF (CO, CE, PE, PO) porte `scenario` (id de `TCF_SCENARIOS` dan
 `vie-quotidienne`, `vacances`, `travail`, `sante`, `transports`, `fetes`, `actualite`) et
 `scene` (« À la plage », courte, sans ville ni prénom). Le sélecteur affiche la scène,
 numérotée quand elle se répète (« À la plage - 2 »). Un nouvel audio de test se nomme
-d’après la scène : `/lib/audio/comprehension/vacances/a-la-plage-2.mp3`.
+d’après la scène : `/lib/audio/tcf/co/vacances/a-la-plage-2.mp3`.
 
 Niveaux : `facile-a1` → `A0-A1`, `moyen-a2` → `A1-A2`, `difficile-b1` → `A2-B1`.
 
@@ -57,7 +57,7 @@ qui ont transcript **et** pool de questions, et écrit des exercices `complet`
 ## Forme d’un exercice
 
 Comme les autres CO TCF `complet` : `support.audio` (chemin absolu
-`/lib/audio/comprehension/…`), `support.transcription`, `questions[]` en
+`/lib/audio/tcf/co/…`), `support.transcription`, `questions[]` en
 `qcm_texte` (3 choix, une bonne réponse).
 
 ## Images des CO (et des CE TCF)

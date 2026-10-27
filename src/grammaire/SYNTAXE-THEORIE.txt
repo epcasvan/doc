@@ -1,0 +1,353 @@
+AIDE-MEMOIRE — CODER UNE FICHE DE THEORIE DE GRAMMAIRE
+======================================================
+
+Les fiches se trouvent dans src/grammaire/theory/.
+Chaque fichier contient une liste de fiches exportee, par exemple :
+
+  export const sePresenterDocs: GrammaireTheoryDoc[] = [
+    { ... },
+    { ... },
+  ]
+
+Les fiches sont rassemblees dans src/grammaire/theory/index.ts.
+Le rendu et les types communs sont definis dans :
+  src/francais/grammar-theory.ts
+  src/grammaire/types.ts
+
+
+1. STRUCTURE D'UNE FICHE
+------------------------
+
+Une fiche est un objet GrammaireTheoryDoc. Tous ces champs sont necessaires :
+
+  {
+    id: 'a1',
+    typeId: 'gram-a1-theorie',
+    index: 1,
+    title: 'Qui suis-je ?',
+    topic: 'gram-se-presenter',
+    public: 'pre-A1 / A1',
+    objectif: 'Me presenter avec etre et habiter.',
+    blocks: [
+      ... contenu de la fiche ...
+    ],
+  }
+
+Champs :
+- id : identifiant court de la fiche dans son fichier. Exemple : 'a1'.
+- typeId : identifiant unique utilise par le generateur. Pour la grammaire,
+  respecter la forme 'gram-IDENTIFIANT-theorie'.
+- index : numero de la fiche dans le theme, a partir de 1.
+- title : titre de la fiche.
+- topic : identifiant du theme, par exemple 'gram-se-presenter'.
+- public : niveau vise, par exemple 'A1'.
+- objectif : competence travaillee.
+- blocks : contenu ordonne. Chaque element est un bloc de theorie.
+
+Conserver un typeId unique. Ajouter la fiche dans le tableau exporte du fichier
+de son theme. Pour un nouveau fichier de theme, l'importer et ajouter son
+tableau dans src/grammaire/theory/index.ts.
+
+
+2. STRUCTURE DE blocks
+---------------------
+
+blocks est un tableau de blocs. L'ordre du tableau est l'ordre de lecture.
+Les blocs peuvent etre ecrits sur plusieurs lignes pour faciliter l'edition.
+Les virgules entre les elements sont obligatoires.
+
+Une fiche commence generalement par son titre et une courte introduction :
+
+  blocks: [
+    { kind: 'heading', text: 'Qui suis-je ?' },
+    { kind: 'paragraph', text: 'Je dis mon nom et ma ville.' },
+    ...
+  ]
+
+
+3. SOUS-BLOCS DE SECTION
+-----------------------
+
+Pour delimiter visuellement une zone, utiliser un bloc section. Son contenu
+est lui-meme un tableau blocks. Le rendu affiche automatiquement le titre et
+l'icone selon role.
+
+  {
+    kind: 'section',
+    role: 'regarder',
+    blocks: [
+      { kind: 'examples', items: ['Je m’appelle Lisa.'] },
+    ],
+  }
+
+Valeurs possibles de role :
+- 'regarder'  : affiche « Je regarde ».
+- 'expliquer' : affiche « J’explique ».
+- 'retenir'   : affiche « Je retiens ».
+
+Mettre tous les blocs de la zone dans le tableau blocks de sa section :
+
+  {
+    kind: 'section',
+    role: 'retenir',
+    blocks: [
+      { kind: 'paragraph', text: 'Un pronom sujet accompagne le verbe.' },
+      {
+        kind: 'table',
+        headers: ['Pronom', 'Exemple'],
+        rows: [['je', 'Je parle.'], ['tu', 'Tu parles.']],
+      },
+      { kind: 'attention', text: 'Tu est familier.' },
+    ],
+  }
+
+Les blocs enfants peuvent etre des paragraphes, exemples, tableaux, astuces,
+attentions, etc. Les sections peuvent contenir d'autres blocs section, mais
+pour une fiche habituelle, garder une seule section par role et par notion.
+
+Ne pas ajouter un heading « Je regarde » / « J’explique » / « Je retiens »
+dans une section : le titre est fourni par le role.
+
+Ancienne syntaxe encore reconnue :
+  { kind: 'heading', text: 'Je regarde', sub: true }
+suivie de blocs a plat. La normalisation peut regrouper ces anciens blocs,
+mais preferer la syntaxe section ci-dessus pour tout nouveau contenu.
+
+
+4. TOUS LES TYPES DE BLOCS
+--------------------------
+
+TITRE
+  { kind: 'heading', text: 'Le titre' }
+
+Titre principal par defaut. Ne pas mettre sub: true pour les sections
+Je regarde / J’explique / Je retiens : utiliser kind: 'section'.
+Un sous-titre independant peut utiliser :
+  { kind: 'heading', text: 'Une precision', sub: true }
+
+PARAGRAPHE
+  { kind: 'paragraph', text: 'Une phrase simple.' }
+
+Texte courant. Pour forcer un retour a la ligne dans le meme bloc, ecrire /n :
+
+  { kind: 'paragraph', text: 'Premiere ligne/nDeuxieme ligne' }
+
+Le marqueur /n fonctionne aussi dans les exemples et les cellules de tableau.
+Dans une cellule, le texte reste dans la meme cellule et passe a la ligne.
+Il fonctionne aussi dans un texte en gras, couleur ou souligne.
+
+Pour separer les idees en paragraphes distincts, utiliser plusieurs blocs :
+
+  { kind: 'paragraph', text: 'Premiere idee.' },
+  { kind: 'paragraph', text: 'Deuxieme idee.' },
+
+Un retour a la ligne tape directement dans la chaine n'est pas le marqueur :
+utiliser /n pour demander un saut force.
+
+EXEMPLES
+  { kind: 'examples', items: ['Je travaille.', 'Tu ecoutes.'] }
+
+Forme d'un exemple : texte simple ou objet avec une forme incorrecte :
+  {
+    kind: 'examples',
+    items: [
+      'Je travaille.',
+      { text: 'Je suis allee.', wrong: 'Je suis alle.' },
+    ],
+  }
+
+Options :
+- marker: 'border'  : exemples avec trait vertical (valeur conseillee).
+- marker: 'puces'   : exemples avec puces.
+- marker: 'numeros' : exemples numerotes.
+- label: 'Exemples' : petit libelle facultatif. Le libelle par defaut est
+  « Exemples » ; il n'est pas affiche lorsqu'il est egal a cette valeur.
+
+  {
+    kind: 'examples',
+    marker: 'puces',
+    label: 'Verbes',
+    items: ['etre', 'avoir', 'aller'],
+  }
+
+TABLEAU
+  {
+    kind: 'table',
+    headers: ['Personne', 'Exemple'],
+    rows: [
+      ['je', 'Je parle.'],
+      ['tu', 'Tu parles.'],
+    ],
+  }
+
+- headers : titres des colonnes.
+- rows : lignes de donnees, chaque cellule est une chaine.
+- colHeader : affiche les titres de colonnes ; true par defaut.
+- rowHeader : transforme la premiere cellule de chaque ligne en titre ;
+  true par defaut.
+
+Les cellules sont du texte enrichi. Utiliser /n pour passer a la ligne
+dans la meme cellule. Pour creer une nouvelle cellule ou une nouvelle ligne,
+editer arrays rows du tableau.
+
+Pour ne pas avoir de ligne d'en-tete ou de premiere colonne en titre :
+  { kind: 'table', colHeader: false, rowHeader: false,
+    headers: ['...', '...'], rows: [['...', '...']] }
+
+COLONNES SANS CADRE
+  {
+    kind: 'tab',
+    rows: [
+      ['Phrase de depart', 'Phrase transformee'],
+      ['Lisa parle.', 'Elle parle.'],
+    ],
+    tab: 1,
+    fleche: false,
+  }
+
+- rows : cellules de chaque ligne.
+- tab : largeur de l'espace entre les cellules, en unites de 2em ; valeur
+  par defaut 1.
+- fleche : met une fleche dans les espaces ; false par defaut.
+
+NOTE (ancienne forme)
+  { kind: 'note', text: 'Texte de la note.' }
+
+La normalisation convertit une note qui commence par « Attention » en bloc
+attention, par « Astuce » en bloc astuce, et par « Je retiens : » en titre
+et paragraphe. Une autre note devient un paragraphe. Preferer les blocs
+attention et astuce explicites.
+
+REGLE (ancienne forme)
+  {
+    kind: 'rule',
+    text: 'Exemples',
+    examples: [
+      { correct: 'Je parle.', wrong: 'Moi parle.' },
+      { correct: 'Tu parles.' },
+    ],
+  }
+
+Convertie en exemples avec marqueur border. Si examples est absent ou vide,
+text devient un exemple, sauf si text vaut « Exemple » ou « Exemples ».
+Pour les nouvelles fiches, utiliser kind: 'examples'.
+
+LISTE (ancienne forme)
+  { kind: 'list', title: 'Verbes', items: ['etre', 'avoir'] }
+
+Convertie en exemples avec puces. Pour les nouvelles fiches, utiliser
+kind: 'examples', marker: 'puces'.
+
+ATTENTION
+  { kind: 'attention', text: 'Ne confonds pas tu et vous.' }
+
+ASTUCE
+  { kind: 'astuce', text: 'Je regarde la terminaison.' }
+
+COUPURE DE PAGE
+  { kind: 'page' }
+
+Marque une coupure manuelle. Le bloc lui-meme ne dessine pas de contenu.
+
+
+5. MISE EN FORME DANS LES TEXTES
+--------------------------------
+
+Ces marqueurs peuvent etre utilises dans les paragraphes, exemples, cellules
+de tableaux et cellules tabulees.
+
+GRAS
+  {g}mot ou groupe de mots{/g}
+
+COULEUR DU THEME
+  {c}mot ou groupe de mots{/c}
+
+SOULIGNE
+  {s}mot ou groupe de mots{/s}
+
+Exemple :
+  { kind: 'paragraph',
+    text: 'Le {g}sujet{/g} accompagne le {c}verbe{/c}.' }
+
+La couleur ne doit jamais porter seule une information.
+
+LIGNES D'ECRITURE
+  {ligne}     ligne standard
+  {ligne/2}   ligne deux fois plus petite
+  {ligne/3}   ligne trois fois plus petite
+  {ligne/4}   ligne quatre fois plus petite
+
+Exemple :
+  { kind: 'paragraph', text: '{ligne/2}' }
+
+ALIGNEMENT EN COLONNES DANS UN TEXTE OU UN EXEMPLE
+  {tab:N}texte de la cellule
+  {tab:N>}texte avec fleche dans l'espace
+
+N est un nombre d'espaces. Chaque unite vaut 2em. Les cellules d'une ligne
+sont separees par |. Un nouveau marqueur {tab:N} commence une
+nouvelle ligne. Pour les anciennes fiches, la virgule reste toleree si aucun
+| n'est present. Ecrire | dans tout nouveau contenu. Exemple :
+
+  { kind: 'examples',
+    items: [
+      '{tab:1}Lisa s’appelle Lisa. | Elle s’appelle Lisa.',
+      '{tab:1>}Paul parle. | Il parle.',
+    ],
+  }
+
+Pour un tableau sans bordures plus complexe, utiliser kind: 'tab'.
+Le symbole | sert uniquement de separateur : eviter de l'ecrire dans le
+texte d'une cellule tabulee.
+Dans kind: 'table' et kind: 'tab', les cellules restent des chaines dans des
+tableaux TypeScript : leurs virgules sont la syntaxe du code, pas un separateur
+de colonnes a remplacer.
+
+
+6. EXEMPLE COMPLET A COPIER
+---------------------------
+
+  {
+    id: 'exemple',
+    typeId: 'gram-exemple-theorie',
+    index: 1,
+    title: 'Le verbe parler',
+    topic: 'gram-present',
+    public: 'A1',
+    objectif: 'Conjuguer parler au present.',
+    blocks: [
+      { kind: 'heading', text: 'Le verbe parler' },
+      { kind: 'paragraph', text: 'Je conjugue parler au present.' },
+      {
+        kind: 'section',
+        role: 'regarder',
+        blocks: [
+          { kind: 'examples', items: ['Je parle français.', 'Tu parles français.'] },
+        ],
+      },
+      {
+        kind: 'section',
+        role: 'expliquer',
+        blocks: [
+          { kind: 'paragraph', text: 'Parler est un verbe en -er.' },
+          { kind: 'paragraph', text: 'Je retire -er et j’ajoute une terminaison.' },
+        ],
+      },
+      {
+        kind: 'section',
+        role: 'retenir',
+        blocks: [
+          { kind: 'paragraph', text: 'parler : parle, parles, parle...' },
+          {
+            kind: 'table',
+            headers: ['Personne', 'Forme'],
+            rows: [['je', 'parle'], ['tu', 'parles']],
+          },
+          { kind: 'attention', text: 'Avec tu, j’ajoute un s.' },
+        ],
+      },
+    ],
+  }
+
+Pour garder l'encodage UTF-8, enregistrer les accents et apostrophes
+directement dans le fichier TypeScript.
