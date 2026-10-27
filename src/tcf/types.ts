@@ -1,7 +1,7 @@
 /**
  * TCF — Test de connaissances de français.
  * Types des exercices saisis par l’admin et stockés en JSON
- * (`src/content/tcf/{a0-a1,a1-a2,a2-b1}/{ce,co,pe,po}.json`).
+ * (`src/tcf/content/{a0-a1,a1-a2,a2-b1}/{ce,co,pe,po}.json`).
  * Unions discriminées sur `competence`, `type_exercice` et `type_reponse`.
  */
 
@@ -42,7 +42,7 @@ type TcfQuestionBase = {
   image?: string
   /**
    * Autres formes de réponse (Texte / Image / Phrase) en plus de `type_reponse`.
-   * Les boutons marge ne proposent que les formes remplies.
+   * Sur la fiche, les 3 icônes sont en marge gauche ; seules les formes remplies sont actives.
    */
   formes?: TcfQuestionFormes
 }
@@ -167,7 +167,14 @@ export type TcfPeFormulaire = TcfBase<'PE', 'formulaire', { titre?: string; cham
 export type TcfPeImageQuestion = TcfBase<
   'PE',
   'image_question',
-  { image: string; consigne: string; nb_mots: TcfNbMots; reponse_modele?: string }
+  {
+    image: string
+    /** Photos vocabulaire numérotées (à la place d’une planche illustrée). */
+    images?: string[]
+    consigne: string
+    nb_mots: TcfNbMots
+    reponse_modele?: string
+  }
 >
 export type TcfPeSmsReponse = TcfBase<
   'PE',
@@ -222,8 +229,12 @@ export type TcfPoMotsTheme = TcfBase<
   'mots_theme',
   { theme: string; mots: string[]; exemples_questions: string[]; audio?: string }
 >
-/** Entretien dirigé : consigne sur la fiche, questions de l’examinateur au corrigé. */
-export type TcfPoEntretien = TcfBase<'PO', 'entretien', { questions: string[] }>
+/** Entretien dirigé : questions sur la fiche, échange examinateur / candidat au corrigé. */
+export type TcfPoEntretien = TcfBase<
+  'PO',
+  'entretien',
+  { questions: string[]; echanges?: { question: string; reponse: string }[] }
+>
 export type TcfPoTheme = { theme: string; images: string[]; exemples_questions: string[] }
 /** Trois thèmes tirés au hasard (graine), 4 images chacun : l’élève pose des questions. */
 export type TcfPoTroisThemes = TcfBase<'PO', 'trois_themes', { themes: TcfPoTheme[] }>

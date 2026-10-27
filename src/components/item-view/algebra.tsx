@@ -1,3 +1,4 @@
+import { fmt } from '@/math/column-arith'
 import type { MathItem, PreviewMode } from '@/math/types'
 import {
   FractionAnswerBlank,
@@ -9,7 +10,7 @@ import {
 
 export function formatOperand(n: number | undefined): string {
   if (n == null) return ''
-  return String(n).replace('.', ',')
+  return fmt(n)
 }
 
 export function parseBinaryEquation(prompt: string): {

@@ -20,7 +20,7 @@ Découpage de l’ancien monolithe `App.tsx` / `GeneratorPage.tsx` pour le déve
 | `SoutienVocabFields.tsx` | Soutien mots / compléter + pool vocabulaire |
 | `QuestionsColumnsFields.tsx` | Questions / points / saut de page / colonnes |
 | `CoordLibreSettings.tsx` | Panneaux formes / cadrans / droites / construire / transform |
-| `DraftGridControls.tsx` | Grilles de brouillon (problèmes / TCM) |
+| `DraftGridControls.tsx` | Grilles de brouillon (problèmes / TPM) |
 | `ResultPanel.tsx` | Actions aperçu + stage A4 + feuilles impression |
 | `TopbarTools.tsx` | Icônes haut : couleur, pied, mode libre, déconnexion |
 | `FooterSidePanel.tsx` | Panneau droit en-tête / pied de page |

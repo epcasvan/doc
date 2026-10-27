@@ -98,13 +98,27 @@ export function TexteSupport({ exercise: ex, mode }: { exercise: TcfExercise; mo
     case 'complet':
     case 'association_images':
       return <Modele text={ex.support.transcription} mode={mode} title="Transcription" />
-    case 'image_question':
+    case 'image_question': {
+      const photos = (ex.support.images ?? []).map((src) => src.trim()).filter(Boolean)
+      const numbered = /\(1\)/.test(ex.support.consigne)
       return (
         <div className="tcf-pe-image">
-          <TcfImage src={ex.support.image} alt="Image de l’exercice" />
+          {photos.length > 0 ? (
+            <ol className="tcf-pe-images">
+              {photos.map((src, i) => (
+                <li key={src}>
+                  {numbered ? <span className="tcf-pe-image-num">{i + 1}</span> : null}
+                  <TcfImage src={src} alt="" />
+                </li>
+              ))}
+            </ol>
+          ) : (
+            <TcfImage src={ex.support.image} alt="Image de l’exercice" />
+          )}
           <p className="tcf-question-text">{ex.support.consigne}</p>
         </div>
       )
+    }
     case 'sms_reponse':
       return (
         <div>
@@ -121,8 +135,30 @@ export function TexteSupport({ exercise: ex, mode }: { exercise: TcfExercise; mo
       )
     case 'question_texte':
       return <p className="tcf-question-text is-large">{ex.support.consigne}</p>
-    case 'entretien':
-      return mode === 'answers' ? (
+    case 'entretien': {
+      if (mode !== 'answers') return null
+      const echanges =
+        ex.support.echanges?.filter((e) => e.question.trim() && e.reponse.trim()) ?? []
+      if (echanges.length) {
+        return (
+          <div className="tcf-modele tcf-entretien-dialogue">
+            <b>Exemple d’entretien</b>
+            <ol>
+              {echanges.map((e, i) => (
+                <li key={i}>
+                  <p>
+                    <b>Examinateur·trice :</b> {e.question}
+                  </p>
+                  <p>
+                    <b>Candidat·e :</b> {e.reponse}
+                  </p>
+                </li>
+              ))}
+            </ol>
+          </div>
+        )
+      }
+      return (
         <div className="tcf-modele">
           <b>Questions possibles de l’examinateur :</b>
           <ul className="tcf-entretien-questions">
@@ -131,7 +167,8 @@ export function TexteSupport({ exercise: ex, mode }: { exercise: TcfExercise; mo
             ))}
           </ul>
         </div>
-      ) : null
+      )
+    }
     case 'trois_themes':
       return (
         <div className="tcf-po tcf-trois-themes">
@@ -148,10 +185,13 @@ export function TexteSupport({ exercise: ex, mode }: { exercise: TcfExercise; mo
                 ))}
               </ul>
               {mode === 'answers' && t.exemples_questions.some((q) => q.trim()) ? (
-                <ul className="tcf-modele tcf-exemples">
-                  {t.exemples_questions.filter((q) => q.trim()).map((q, k) => (
-                    <li key={k}>{q}</li>
-                  ))}
+                <ul className="tcf-modele tcf-exemples is-two-cols">
+                  {t.exemples_questions
+                    .filter((q) => q.trim())
+                    .slice(0, 8)
+                    .map((q, k) => (
+                      <li key={k}>{q}</li>
+                    ))}
                 </ul>
               ) : null}
             </section>
@@ -168,7 +208,7 @@ export function TexteSupport({ exercise: ex, mode }: { exercise: TcfExercise; mo
             ))}
           </ul>
           {s.images.length > 1 ? (
-            <ol className={mode === 'answers' ? 'tcf-timeline is-compact' : 'tcf-timeline'}>
+            <ol className="tcf-timeline">
               {s.images.map((src, i) => (
                 <li key={i} className="tcf-timeline-step">
                   <span className="tcf-timeline-num">{i + 1}</span>
@@ -180,24 +220,6 @@ export function TexteSupport({ exercise: ex, mode }: { exercise: TcfExercise; mo
             <TcfImage src={s.images[0]} alt="Image à décrire" className="tcf-image is-large" />
           )}
           <Modele text={s.description_modele} mode={mode} title="Description possible" />
-          {mode === 'answers' ? (
-            <div className="tcf-modele tcf-interaction">
-              <b>Interaction</b>
-              <p className="tcf-text">Nous allons maintenant passer à l’interaction sur le sujet de cette image.</p>
-              <p className="tcf-text">
-                Je suis {s.je_suis}. Vous êtes {s.vous_etes}. Nous sommes {s.lieu}. Vous voulez {s.vous_voulez}.
-              </p>
-              {s.repliques.length ? (
-                <ol className="tcf-repliques is-compact">
-                  {s.repliques.map((r, i) => (
-                    <li key={i} className={`tcf-replique is-${r.locuteur}`}>
-                      <b className="tcf-locuteur">{r.locuteur === 'eleve' ? 'Candidat·e' : 'Examinateur·trice'} :</b> {r.texte}
-                    </li>
-                  ))}
-                </ol>
-              ) : null}
-            </div>
-          ) : null}
         </div>
       )
     }
@@ -217,9 +239,10 @@ export function TexteSupport({ exercise: ex, mode }: { exercise: TcfExercise; mo
           {mode === 'answers' && ex.support.exemples_questions.some((q) => q.trim()) ? (
             <div className="tcf-modele">
               <b>Exemples de questions :</b>
-              <ul>
+              <ul className="tcf-exemples is-two-cols">
                 {ex.support.exemples_questions
                   .filter((q) => q.trim())
+                  .slice(0, 8)
                   .map((q, i) => (
                     <li key={i}>{q}</li>
                   ))}

@@ -18,7 +18,7 @@ import {
 import { basename, join } from 'node:path'
 
 const SOUTIEN = process.env.SOUTIEN_ROOT ?? '/tmp/soutien-scolaire'
-const ROOT = process.env.LIB_ROOT ?? join(process.cwd(), 'public/lib/audio/comprehension')
+const ROOT = process.env.LIB_ROOT ?? join(process.cwd(), 'public/lib/audio/tcf/co')
 const COMM = join(SOUTIEN, 'lib/curriculum/content/communication')
 
 const LEVELS = new Set(['facile-a1', 'moyen-a2', 'difficile-b1'])

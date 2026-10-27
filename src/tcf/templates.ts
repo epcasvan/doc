@@ -170,6 +170,12 @@ export function emptyTcfExercise(
           repliques: [
             { locuteur: 'examinateur', texte: '' },
             { locuteur: 'eleve', texte: '', variantes: [] },
+            { locuteur: 'examinateur', texte: '' },
+            { locuteur: 'eleve', texte: '', variantes: [] },
+            { locuteur: 'examinateur', texte: '' },
+            { locuteur: 'eleve', texte: '', variantes: [] },
+            { locuteur: 'examinateur', texte: '' },
+            { locuteur: 'eleve', texte: '', variantes: [] },
           ],
         },
       }

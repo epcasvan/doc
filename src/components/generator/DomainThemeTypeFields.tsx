@@ -21,7 +21,7 @@ import type { GameTemplate } from '@/jeux/templates'
 import { TcfBankPicker } from '@/tcf/TcfExerciseEditor'
 import {
   TCF_NIVEAUX,
-  tcfDifficultyFromNiveau,
+  tcfMenuLabel,
 } from '@/tcf/catalog'
 import type { TcfNiveau } from '@/tcf/types'
 import type { Dispatch, SetStateAction } from 'react'
@@ -51,14 +51,14 @@ export type DomainThemeTypeFieldsProps = {
   pages: PageConfig[]
   worksheets: WorksheetPage[]
   safeSheetIndex: number
-  isTcmLike: boolean
+  isTpmLike: boolean
   activePage: PageConfig
   changeDomain: (next: Domain) => void
   allowedDomains: Domain[]
   accessAccount: string | null
   isTcf: boolean
   tcfNiveau: TcfNiveau
-  setPages: Dispatch<SetStateAction<PageConfig[]>>
+  loadTcfSeries: (niveau: TcfNiveau) => void
   soutienSelection:
     | ReturnType<typeof resolveSoutienSelection>
     | ReturnType<typeof resolveAlphaSelection>
@@ -69,6 +69,11 @@ export type DomainThemeTypeFieldsProps = {
   isAlphabetisation: boolean
   changeSoutienLetter: (letterId: string) => void
   changeSoutienSound: (soundId: string) => void
+  isGrammaireDomain: boolean
+  isLogique: boolean
+  gramSubthemes: Array<{ id: string; label: string }>
+  gramSubtheme: { id: string; label: string } | undefined
+  changeGramSubtheme: (subId: string) => void
   isPhraseDomain: boolean
   isPhraseChart: boolean
   libreMode: boolean
@@ -102,13 +107,13 @@ export function DomainThemeTypeFields(p: DomainThemeTypeFieldsProps) {
     pages,
     worksheets,
     safeSheetIndex,
-    isTcmLike,
+    isTpmLike,
     activePage,
     changeDomain,
     allowedDomains,
     isTcf,
     tcfNiveau,
-    setPages,
+    loadTcfSeries,
     soutienSelection,
     activeBlock,
     changeTopic,
@@ -117,6 +122,11 @@ export function DomainThemeTypeFields(p: DomainThemeTypeFieldsProps) {
     isAlphabetisation,
     changeSoutienLetter,
     changeSoutienSound,
+    isGrammaireDomain,
+    isLogique,
+    gramSubthemes,
+    gramSubtheme,
+    changeGramSubtheme,
     isPhraseDomain,
     isPhraseChart,
     libreMode,
@@ -161,7 +171,7 @@ export function DomainThemeTypeFields(p: DomainThemeTypeFieldsProps) {
                     Évaluation
                   </button>
                 </div>
-                {evalMode && !isTcmLike && (
+                {evalMode && !isTpmLike && (
                   <label>
                     Points par question
                     <input
@@ -200,12 +210,8 @@ export function DomainThemeTypeFields(p: DomainThemeTypeFieldsProps) {
                   value={tcfNiveau}
                   onChange={(value) => {
                     const niveau = TCF_NIVEAUX.find((n) => n.id === value)?.id
-                    if (!niveau) return
-                    // Un test TCF a un seul niveau : il s’applique à toutes les pages.
-                    const difficulty = tcfDifficultyFromNiveau(niveau)
-                    setPages((current) =>
-                      current.map((page) => ({ ...page, difficulty, tcfBankId: undefined })),
-                    )
+                    if (!niveau || niveau === tcfNiveau) return
+                    loadTcfSeries(niveau)
                   }}
                 >
                   {TCF_NIVEAUX.map((n) => (
@@ -215,7 +221,7 @@ export function DomainThemeTypeFields(p: DomainThemeTypeFieldsProps) {
                   ))}
                 </SelectBox>
               ) : null}
-              {isTcmLike ? null : (
+              {isTpmLike ? null : (
                 <SelectBox
                   label={isTcf ? 'Compétence' : 'Thème'}
                   value={soutienSelection?.theme.id ?? activeBlock.topic}
@@ -243,6 +249,19 @@ export function DomainThemeTypeFields(p: DomainThemeTypeFieldsProps) {
                   {soutienSelection.theme.letters.map((letter) => (
                     <option value={letter.id} key={letter.id}>
                       {isAlphabetisation ? letter.label : letter.letterUpper}
+                    </option>
+                  ))}
+                </SelectBox>
+              ) : null}
+              {isGrammaireDomain && gramSubthemes.length > 0 ? (
+                <SelectBox
+                  label="Sous-thème"
+                  value={gramSubtheme?.id ?? gramSubthemes[0]!.id}
+                  onChange={changeGramSubtheme}
+                >
+                  {gramSubthemes.map((sub) => (
+                    <option value={sub.id} key={sub.id}>
+                      {sub.label}
                     </option>
                   ))}
                 </SelectBox>
@@ -317,7 +336,7 @@ export function DomainThemeTypeFields(p: DomainThemeTypeFieldsProps) {
                   onChangeInstruction={(phraseInstruction) => updatePage({ phraseInstruction })}
                 />
               ) : null}
-              {isTcmLike || (isTcf && typeChoices.length <= 1) ? null : (
+              {isTpmLike || typeChoices.length <= 1 ? null : (
               <SelectBox
                 label={isTcf ? 'Exercice' : 'Type d’exercice'}
                 value={activeBlock.exerciseType}
@@ -365,7 +384,7 @@ export function DomainThemeTypeFields(p: DomainThemeTypeFieldsProps) {
               >
                 {typeChoices.map((type) => (
                   <option value={type.id} key={type.id}>
-                    {type.label}
+                    {tcfMenuLabel(type.id, tcfNiveau) ?? type.label}
                   </option>
                 ))}
               </SelectBox>
@@ -413,10 +432,12 @@ export function DomainThemeTypeFields(p: DomainThemeTypeFieldsProps) {
               isCalliDomain ||
               isVocabLearn ||
               isGramTheory ||
+              isGrammaireDomain ||
+              isLogique ||
               isSoutienFr ||
               isAlphabetisation ||
               isTcf ||
-              isTcmLike ? null : (
+              isTpmLike ? null : (
               <>
               <div className={`niveau-row${activeBlock.numberLibre ? ' is-libre' : ''}`}>
                 <SelectBox

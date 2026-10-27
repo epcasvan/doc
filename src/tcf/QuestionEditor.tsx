@@ -37,37 +37,39 @@ export function QuestionEditor({
   return (
     <fieldset className="tcf-question-editor">
       <legend>
-        Question {index + 1}
-        <button
-          type="button"
-          className="calli-field-remove"
-          aria-label={`Supprimer la question ${index + 1}`}
-          onClick={onRemove}
-        >
-          ×
-        </button>
-      </legend>
-      <div className="mode-toggle is-3" role="group" aria-label="Type de réponse">
-        {TCF_REPONSES.filter((r) => reponses.includes(r.id)).map((r) => (
+        <span className="tcf-q-legend-title">
+          Question {index + 1}
           <button
-            key={r.id}
             type="button"
-            className={q.type_reponse === r.id ? 'active' : ''}
-            onClick={() => changeType(r.id)}
-            title={
-              filled.includes(r.id) || r.id === q.type_reponse
-                ? `Forme ${TCF_FORME_LABELS[r.id]}`
-                : `Créer la forme ${TCF_FORME_LABELS[r.id]} (vide pour l’instant)`
-            }
+            className="calli-field-remove"
+            aria-label={`Supprimer la question ${index + 1}`}
+            onClick={onRemove}
           >
-            {TCF_FORME_LABELS[r.id]}
-            {filled.includes(r.id) && r.id !== q.type_reponse ? ' ·' : ''}
+            ×
           </button>
-        ))}
-      </div>
+        </span>
+        <div className="mode-toggle is-3" role="group" aria-label="Type de réponse">
+          {TCF_REPONSES.filter((r) => reponses.includes(r.id)).map((r) => (
+            <button
+              key={r.id}
+              type="button"
+              className={q.type_reponse === r.id ? 'active' : ''}
+              onClick={() => changeType(r.id)}
+              title={
+                filled.includes(r.id) || r.id === q.type_reponse
+                  ? `Forme ${TCF_FORME_LABELS[r.id]}`
+                  : `Créer la forme ${TCF_FORME_LABELS[r.id]} (vide pour l’instant)`
+              }
+            >
+              {TCF_FORME_LABELS[r.id]}
+              {filled.includes(r.id) && r.id !== q.type_reponse ? ' ·' : ''}
+            </button>
+          ))}
+        </div>
+      </legend>
       <p className="muted" style={{ margin: 0, fontSize: 11 }}>
-        Trois formes possibles (Texte / Image / Phrase). Basculez pour remplir les autres ; sur la
-        fiche, seuls les boutons des formes remplies sont actifs.
+        Trois formes (Texte / Image / Phrase) : basculez pour les remplir. Sur la fiche, les
+        icônes sont en colonne dans la marge gauche ; seules les formes remplies sont actives.
       </p>
       {audioCount ? (
         <label className="tcf-field is-number">

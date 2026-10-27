@@ -20,6 +20,7 @@ import {
   vocabLearnWordsFor,
 } from '@/francais/vocab-learn'
 import { isGrammarTheoryType } from '@/francais/grammar-theory'
+import { isGrammaireExerciseType, isGrammaireTheoryType } from '@/grammaire/types'
 import { parseAlphaType } from '@/alphabetisation/kinds'
 import { parseSoutienType } from '@/francais/soutien/kinds'
 import { defaultThemeGameContent, isGameBankType } from '@/jeux/bank'
@@ -45,6 +46,9 @@ import type { ExerciseBlock, ExerciseType } from '@/math/types'
 
 export function applyType(type: ExerciseType, prev?: ExerciseBlock): Partial<ExerciseBlock> {
   const isProblem = type.id.includes('problemes')
+  const isOpTable =
+    type.id.startsWith('addition-tableau') || type.id.startsWith('soustraction-tableau')
+  const isDecompose = type.id.endsWith('-decompose')
   const isEquation = type.id.startsWith('equations-')
   const isLongMul = type.id.startsWith('multiplication-2chiffres')
   const isDivisionCol = type.id.startsWith('division-colonne')
@@ -64,7 +68,8 @@ export function applyType(type: ExerciseType, prev?: ExerciseBlock): Partial<Exe
   const isFrenchCom = type.track === 'com'
   const isComQcm =
     type.id.includes('-com-orale') || type.id.includes('-com-ecrite')
-  const isTheory = isGrammarTheoryType(type.id)
+  const isTheory = isGrammarTheoryType(type.id) || isGrammaireTheoryType(type.id)
+  const isGramEx = isGrammaireExerciseType(type.id)
   const isFrenchLang = type.track === 'voc' || type.track === 'gram'
   const isVocabLearn = isVocabLearnType(type.id)
   const isVocabPool = isVocabPoolType(type.id)
@@ -152,7 +157,11 @@ export function applyType(type: ExerciseType, prev?: ExerciseBlock): Partial<Exe
     topic: type.topic,
     track: type.track,
     columns: type.preferredColumns ?? 2,
-    ...(isProblem || isEquation
+    ...(isDecompose
+      ? { count: 6, columns: 1 }
+      : isOpTable
+      ? { count: 2 }
+      : isProblem || isEquation
       ? { count: 2 }
       : isDivisionCol
         ? { count: 3 }
@@ -160,6 +169,8 @@ export function applyType(type: ExerciseType, prev?: ExerciseBlock): Partial<Exe
           ? { count: 4 }
           : isPhraseChart || isVocabLearn || isJeux || isCalli || isTheory
             ? { count: 1 }
+            : isGramEx
+              ? { count: 6 }
             : isVocabPool
               ? { count: Math.min(6, Math.max(2, vocabSelected.length)) }
               : isPhrase
@@ -167,7 +178,7 @@ export function applyType(type: ExerciseType, prev?: ExerciseBlock): Partial<Exe
                 : isLectureDense
                   ? { count: 4 }
                   : alphaKind === 'mots'
-                    ? { count: 6, columns: 3 }
+                    ? { count: 9, columns: 3 }
                     : alphaKind === 'lettres-maj' || alphaKind === 'lettres-min'
                       ? { count: 5, columns: 1 }
                       : alphaKind === 'souligner-maj' || alphaKind === 'souligner-min'
@@ -179,7 +190,7 @@ export function applyType(type: ExerciseType, prev?: ExerciseBlock): Partial<Exe
                             : alphaKind === 'syllabe-son-qr' || alphaKind === 'syllabe-son'
                               ? { count: 18 }
                               : alphaKind === 'associer-syllabe'
-                                ? { count: 1, columns: 1 }
+                                ? { count: 2, columns: 1 }
                                 : alphaKind === 'associer-audio' ||
                                     alphaKind === 'associer-image'
                                   ? { count: 2, columns: 1 }

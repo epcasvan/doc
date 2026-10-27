@@ -3,16 +3,16 @@ import { isTcfExerciseShape, validateTcfExercise } from './validate'
 import type { TcfCompetence, TcfExercise, TcfNiveau, TcfTypeExercice } from './types'
 
 /**
- * Banques TCF : `src/content/tcf/{a0-a1,a1-a2,a2-b1}/{ce,co,pe,po}.json`.
+ * Banques TCF : `src/tcf/content/{a0-a1,a1-a2,a2-b1}/{ce,co,pe,po}.json`.
  * Chaque fichier contient un tableau d’exercices. Les entrées invalides
  * sont écartées (avertissement console) pour ne jamais casser une fiche.
  */
-const FILES = import.meta.glob('../content/tcf/*/*.json', { eager: true, import: 'default' })
+const FILES = import.meta.glob('./content/*/*.json', { eager: true, import: 'default' })
 
 function loadAll(): TcfExercise[] {
   const out: TcfExercise[] = []
   for (const [path, raw] of Object.entries(FILES)) {
-    const match = path.match(/content\/tcf\/([^/]+)\/(ce|co|pe|po)\.json$/)
+    const match = path.match(/\/(a0-a1|a1-a2|a2-b1)\/(ce|co|pe|po)\.json$/)
     const niveau = TCF_NIVEAUX.find((n) => n.dossier === match?.[1])?.id
     if (!match || !niveau) continue
     const competence = match[2]!.toUpperCase()
@@ -51,11 +51,18 @@ export function tcfBank(
   )
 }
 
-/** Exercices proposés pour un emplacement (CO : même numéro que dans l’audio). */
+/** Tous niveaux confondus (A0-A1, A1-A2, A2-B1), dans l’ordre des niveaux. */
+export function tcfBankAllLevels(competence: TcfCompetence): TcfExercise[] {
+  return TCF_NIVEAUX.flatMap((n) => tcfBank(n.id, competence))
+}
+
+/** Exercices proposés pour un emplacement (CO et CE : même numéro d’épreuve). */
 export function tcfSlotBank(niveau: TcfNiveau, slot: TcfSlotMeta): TcfExercise[] {
-  return tcfBank(niveau, slot.competence).filter(
-    (ex) => slot.numero == null || (ex.competence === 'CO' && tcfPosition(ex.id) === slot.numero),
-  )
+  return tcfBank(niveau, slot.competence).filter((ex) => {
+    if (slot.numero == null) return true
+    if (ex.competence !== 'CO' && ex.competence !== 'CE') return true
+    return tcfPosition(ex.id) === slot.numero
+  })
 }
 
 export function tcfExerciseById(id: string | undefined): TcfExercise | undefined {

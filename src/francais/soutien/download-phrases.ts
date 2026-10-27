@@ -60,12 +60,3 @@ export function downloadSoutienType14Phrases(bank: SoutienVowelBank) {
   }
   triggerDownload(`soutien-phrases-${bank.id}.json`, `${JSON.stringify(payload, null, 2)}\n`)
 }
-
-/** Fichiers regroupés servis sous /soutien-phrases/. */
-export function soutienPhrasesPublicUrl(
-  kind: 'type9' | 'type10' | 'type12' | 'type14',
-  all = true,
-): string {
-  if (all) return `/soutien-phrases/${kind === 'type10' ? 'type10' : 'phrases'}-all.json`
-  return `/soutien-phrases/${kind}/`
-}

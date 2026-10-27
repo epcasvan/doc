@@ -1,0 +1,26 @@
+# API fiches enregistrées (Cloudflare Workers + D1).
+#
+# Première mise en place :
+#   cd api/fiches
+#   npm install
+#   npx wrangler d1 create clairfle-fiches
+#   remplacer database_id ci-dessous par l’id affiché
+#   copy .dev.vars.example .dev.vars   (mêmes mots de passe que la connexion)
+#   npx wrangler secret put ACCESS_ADMIN
+#   npx wrangler secret put ACCESS_FULL
+#   npx wrangler secret put ACCESS_PARTIAL
+#   npm run db:apply
+#   npm run deploy
+# Puis VITE_FICHES_API_URL=https://clairfle-fiches.<compte>.workers.dev
+name = "clairfle-fiches"
+main = "src/index.ts"
+compatibility_date = "2026-04-01"
+
+[vars]
+ACCESS_DOMAINS_PARTIAL = "algèbre,géométrie"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "clairfle-fiches"
+database_id = "8a88a507-05e3-485f-8464-f2e1a4309a03"
+migrations_dir = "migrations"

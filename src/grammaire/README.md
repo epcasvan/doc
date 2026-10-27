@@ -1,26 +1,42 @@
-# Grammaire — théorie FALC (SCAI)
+# Grammaire — théorie FALC (SCAI) + exercices
 
-Domaine dédié pour les **fiches de théorie** de français en FALC, d’après le programme SCAI.
-Les notions sont **adaptées** (pas copiées) à partir du stock pédagogique soutien-scolaire, avec une **répartition SCAI** différente (parties communicatives + conjugaison au présent).
+Domaine dédié pour les **fiches de théorie** FALC et les **exercices** liés à chaque sous-thème.
 
-| Fichier | Rôle |
+| Fichier / dossier | Rôle |
 |---|---|
-| `catalog.ts` | Thèmes (parties) + types « théorie » |
-| `theory/*.ts` | Contenu FALC français (pas de traductions pour l’instant) |
-| `generate.ts` | `tryGenerateGrammaireBlock` → items `layout: 'theory'` |
-| `types.ts` | Doc théorie + helpers `isGrammaireTheoryType` |
+| `catalog.ts` | Thèmes SCAI + types théorie + types exercices |
+| `theory/*.ts` | Contenu FALC français |
+| `exercises/` | kinds, sous-thèmes, banques, générateur |
+| `exercises/bank/word-a1.ts` / `word-a2.ts` | Tous les exercices des Word auteur (Grammaire.docx / Grammaire Suite.docx) |
+| `exercises/bank/lessons-word-*.ts` | Relu mot à mot (se présenter, décrire, -er, jours CSC) |
+| `exercises/bank/lessons-core.ts` / `lessons-rest.ts` | Compléments ClairFLE (mêmes types) |
+| `generate.ts` | Théorie **ou** exercices selon le type |
 
-## Thèmes
+## UI
 
-Se présenter → **Conjuguer au présent** → Entrer en contact → Questions → Activité → Espace → Temps → Demander → Décrire → Conseiller → Aliments → Passé → Pronoms → Action → Avenir → Faits divers → Argumenter → Exprimer → Aide-mémoire.
+1. **Thème** = partie SCAI (ex. Conjuguer au présent)
+2. **Sous-thème** = notion (Être, Avoir, -er… / Passé composé… / fiche théorie)
+3. **Type** = **Théorie** + exercices du sous-thème (libellés de leçon)
 
-## Usage
+Les énoncés d’exercices reprennent les phrases des Word auteur (`Grammaire.docx`, `Grammaire Suite.docx`) et des fiches CSC (exercices seulement, pas la théorie). Les MP3 CSC sont dans `public/lib/audio/grammaire/`. Les fiches de théorie FALC restent le type **Théorie**. Les banques ClairFLE complètent les mêmes types sans en créer de doublons.
 
-- Domaine UI : **Grammaire**
-- Thème = partie SCAI (ou complément ClairFLE, ex. conjugaison au présent)
-- Type = une fiche théorie (une notion)
-- Exercices liés : à ajouter plus tard comme types supplémentaires sur le même thème
+## Types d’exercice (kinds)
 
-## Traductions
+1. Choisissez la bonne conjugaison (QCM)
+2. Conjuguez le verbe (ligne)
+3. Choisissez le verbe correct (QCM)
+4. Mettre au pluriel
+5. Mettre au singulier
+6. Mettre à la forme négative
+7. Mettre à la forme affirmative
+8. Écrire une phrase
+9. Associer
+10. Remettre dans l’ordre
+11. Transformer la phrase
+12. Corriger la phrase
 
-Reportées après validation du français FALC (skill `falc` §7).
+Les libellés du sélecteur viennent de `GramLesson.label` (ex. « Compléter avec être »).
+
+## Déterminisme
+
+Tirage via `createRng(seed)` + `shuffle` ; jamais `Math.random()` dans le générateur.

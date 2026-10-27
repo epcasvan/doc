@@ -1,4 +1,4 @@
-import { formatPointsLabel } from '@/tcm/test'
+import { formatPointsLabel } from '@/tpm/test'
 import type { PreviewMode } from '@/math/types'
 import type { TcfChoixRendu, TcfGrille, TcfLigneTableau } from '@/tcf/types'
 import { TcfImage } from './TexteSupport'
@@ -39,7 +39,13 @@ function Lettre({ lettre, on }: { lettre: string; on: boolean }) {
   return <span className={`tcf-lettre${on ? ' is-correct' : ''}`}>{lettre}</span>
 }
 
-type QuestionHead = { numero: number; enonce: string; audioLabel?: string; points?: number; image?: string }
+type QuestionHead = {
+  numero: number
+  enonce: string
+  audioLabel?: string
+  points?: number
+  image?: string
+}
 
 export function QuestionQCMTexte({
   choix,

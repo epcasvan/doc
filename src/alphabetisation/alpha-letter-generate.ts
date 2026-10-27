@@ -48,6 +48,7 @@ function soulignerWords(
       {
         layout: 'mark-letter',
         markLetterWords: words,
+        themeGraphemes: [...bank.graphemes],
         answer: words.join(' · '),
       },
     ],
@@ -214,6 +215,11 @@ function syllabesPrononcer(
   }
 }
 
+/** Nombre de lettres d’une syllabe (accents compris, sans signe). */
+function syllableLetterCount(syll: string): number {
+  return [...syll].filter((ch) => /\p{L}/u.test(ch)).length
+}
+
 function associerSyllabes(
   bank: SoutienVowelBank,
   rng: Rng,
@@ -228,15 +234,17 @@ function associerSyllabes(
       guard += 1
       const raw = pick(rng, type1Words(bank, rng, 24))
       const parts = syllabifyFr(displayVocabLabel(raw))
-      const hitIdx = parts.findIndex((p) => wordHasLessonLetter(p, bank))
-      if (hitIdx < 0) continue
-      const syll = parts[hitIdx]!
+      const syll = parts.find((p) => syllableLetterCount(p) <= 3 && wordHasLessonLetter(p, bank))
+      if (!syll) continue
       const key = syll.toLowerCase()
       if (used.has(key)) continue
+      const audioSrc = soutienAudioFor(syll) ?? soutienAudioFor(raw)
+      if (!audioSrc) continue
       used.add(key)
       clips.push({
         word: syll,
-        audioSrc: soutienAudioFor(raw) ?? undefined,
+        // Audio de la syllabe si dispo, sinon le mot source (QR).
+        audioSrc,
       })
     }
     if (clips.length < AUDIO_ORDER_CLIPS) break
@@ -259,22 +267,23 @@ function associerSyllabes(
   }
 }
 
-function syllablePool(bank: SoutienVowelBank, rng: Rng, need: number) {
+function syllablePool(bank: SoutienVowelBank, rng: Rng, need: number, requireAudio = false) {
+  const hasAudio = (word: string) =>
+    Boolean(soutienAudioFor(word) || soutienAudioFor(displayVocabLabel(word)))
+  const eligible = (word: string) =>
+    syllabifyFr(word).length >= 2 &&
+    (wordHasLessonLetter(word, bank) || wordHasLessonSound(word, bank)) &&
+    (!requireAudio || hasAudio(word))
   const pool = shuffle(
     rng,
-    bank.syllableItems.filter((item) => {
-      const parts = syllabifyFr(item.word)
-      return (
-        parts.length >= 2 &&
-        (wordHasLessonLetter(item.word, bank) || wordHasLessonSound(item.word, bank))
-      )
-    }),
+    bank.syllableItems.filter((item) => eligible(item.word)),
   )
   let chosen = pool.slice(0, need)
   if (chosen.length < need) {
     const rest = bank.syllableItems.filter(
       (item) =>
         syllabifyFr(item.word).length >= 2 &&
+        (!requireAudio || hasAudio(item.word)) &&
         !chosen.some((t) => t.word.toLowerCase() === item.word.toLowerCase()),
     )
     chosen = [...chosen, ...shuffle(rng, rest)].slice(0, need)
@@ -315,7 +324,7 @@ export function generateAlphaLetterKind(
     case 'syllabe-son-qr': {
       const cols = Math.max(1, Math.min(3, Math.round(options?.columns ?? 3) || 3))
       const need = Math.max(1, Math.min(18, n))
-      const chosen = syllablePool(bank, rng, need)
+      const chosen = syllablePool(bank, rng, need, true)
       return {
         instruction: `À quelle syllabe entendez-vous le son ${bank.sound} ?`,
         preferredColumns: 1,
@@ -368,7 +377,7 @@ export function generateAlphaLetterKind(
     case 'associer-image': {
       const soutienKind = kind
       const alphaCols =
-        kind === 'mots' ? Math.max(2, Math.min(4, Math.round(options?.columns ?? 3) || 3)) : null
+        kind === 'mots' ? Math.max(3, Math.min(4, Math.round(options?.columns ?? 3) || 3)) : null
       const merged: SoutienGenerateOptions = {
         ...options,
         columns:

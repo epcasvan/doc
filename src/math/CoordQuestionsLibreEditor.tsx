@@ -58,28 +58,33 @@ export function CoordQuestionsLibreEditor({
       <div className="phrase-libre-list">
         {questions.map((question, index) => (
           <div className="phrase-libre-card" key={`coord-q-${index}`}>
-            <div className="phrase-libre-index">Question {index + 1}</div>
-            <label className="phrase-libre-field">
-              Énoncé
+            <span className="phrase-libre-index">{index + 1}.</span>
+            <div className="libre-item-body">
+            <label className="libre-field is-line">
+              <span>Énoncé</span>
               <textarea
+                className="libre-line-input is-textarea"
                 value={question.prompt}
                 rows={2}
                 onChange={(event) => updateAt(index, { prompt: event.target.value })}
                 aria-label={`Énoncé de la question ${index + 1}`}
               />
             </label>
-            <label className="phrase-libre-field">
-              Réponse (corrigé)
+            <div className="libre-pair">
+            <label className="libre-field is-line">
+              <span>Réponse</span>
               <input
+                className="libre-line-input"
                 type="text"
                 value={question.answer}
                 onChange={(event) => updateAt(index, { answer: event.target.value })}
                 aria-label={`Réponse de la question ${index + 1}`}
               />
             </label>
-            <label className="phrase-libre-field">
-              Type de réponse
+            <label className="libre-field is-line">
+              <span>Type de réponse</span>
               <select
+                className="libre-line-input is-select"
                 value={question.reply ?? defaultReply}
                 onChange={(event) =>
                   updateAt(index, { reply: event.target.value as CoordReply })
@@ -93,6 +98,7 @@ export function CoordQuestionsLibreEditor({
                 ))}
               </select>
             </label>
+            </div>
             <div className="phrase-libre-actions">
               <button
                 type="button"
@@ -121,6 +127,7 @@ export function CoordQuestionsLibreEditor({
               >
                 ×
               </button>
+            </div>
             </div>
           </div>
         ))}

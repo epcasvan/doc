@@ -1,0 +1,9 @@
+{
+  "summary": {
+    "audios_stt": 618,
+    "model": "faster-whisper base (+ small for short/failed)",
+    "replaced_when_mismatch": "transcription banque remplacée si overlap STT < 0.35",
+    "exemple_corrige": "tcf-a1j-s1-co-2 Au magasin de sport → Sport Plus / tennis / ballon"
+  },
+  "note": "Les questions QCM n’ont pas été régénérées dans ce passage ; seules les transcriptions audio."
+}

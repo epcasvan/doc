@@ -1,14 +1,17 @@
 import { type CSSProperties, type ReactNode } from 'react'
 import { ItemView, tokenizeAlgebra } from '@/components/ItemView'
 import {
+  ALPHA_SOUTIEN_REFERENCE,
   DocumentFooter,
   InstitutionalDocumentHeader,
+  isAlphaSoutienDomain,
   SheetBody,
   type InstitutionalHeader,
 } from '@/components/math/PrintDocumentChrome'
+import { DecomposeExample } from '@/components/item-view/decompose'
 import { isDraftPadExercise } from '@/math/catalog'
 import { TCF_DOMAIN } from '@/tcf/catalog'
-import { blockPointsTotal, formatPointsLabel, isTcmDomain } from '@/tcm/test'
+import { blockPointsTotal, formatPointsLabel, isTpmDomain } from '@/tpm/test'
 import { isTcmCfrDomain } from '@/tcm-cfr/test'
 import { isReperageConstruire } from '@/math/coord-reperage'
 import type {
@@ -82,6 +85,7 @@ export function WorksheetSheet({
   onSelectTcfForm,
   onToggleTcfPageBreak,
   onRegenerateBlock,
+  showExerciseRefresh = true,
   coordEdit,
 }: {
   page: WorksheetPage
@@ -101,12 +105,14 @@ export function WorksheetSheet({
   /** Pastille QCM / texte / images pour la compréhension orale. */
   interactiveOralModes?: boolean
   onCycleOralAnswerMode?: (index: number, blockIndex?: number) => void
-  /** TCF : formes Texte/Image/Phrase + saut de page en marge. */
+  /** TCF : icônes formes (marge gauche) + saut de page (marge droite). */
   interactiveTcfOptions?: boolean
   onSelectTcfForm?: (index: number, form: TcfTypeReponse, blockIndex?: number) => void
   onToggleTcfPageBreak?: (index: number, blockIndex?: number) => void
   /** Bouton refresh : régénère uniquement cet exercice. */
   onRegenerateBlock?: (blockIndex: number) => void
+  /** Afficher le refresh à côté du titre (désactivé en mode libre). */
+  showExerciseRefresh?: boolean
   coordEdit?: {
     selectedKind: CoordShape | null
     placingOrigin?: boolean
@@ -119,7 +125,7 @@ export function WorksheetSheet({
   const isJeuxSheet = page.domain === 'jeux'
   const multiExercisePage =
     (page.blocks?.length ?? 0) > 1 ||
-    isTcmDomain(page.domain) ||
+    isTpmDomain(page.domain) ||
     isTcmCfrDomain(page.domain) ||
     page.domain === TCF_DOMAIN ||
     page.domain === 'soutien-fr' ||
@@ -197,7 +203,7 @@ export function WorksheetSheet({
                 <div className="exercise-heading-main">
                   <div className="exercise-heading-title-row">
                     <h3>{blockHeading}</h3>
-                    {onRegenerateBlock ? (
+                    {onRegenerateBlock && showExerciseRefresh ? (
                       <button
                         type="button"
                         className="no-print exercise-refresh-btn"
@@ -210,6 +216,8 @@ export function WorksheetSheet({
                     ) : null}
                   </div>
                   {block.instruction ? <p>{renderSoutienInstruction(block.instruction)}</p> : null}
+                  {block.exerciseType === 'addition-decompose' ? <DecomposeExample op="+" /> : null}
+                  {block.exerciseType === 'soustraction-decompose' ? <DecomposeExample op="−" /> : null}
                   {block.givens && block.givens.length > 0 ? (
                     <p className="sheet-givens" aria-label="Valeurs des variables">
                       {block.givens.map((given, index) => (
@@ -291,8 +299,11 @@ export function WorksheetSheet({
                   const sourceIndex = index + (block.itemOffset ?? 0)
                   const tcfFormMode =
                     block.tcfFormModes?.[sourceIndex] ?? page.tcfFormModes?.[sourceIndex]
-                  const tcfPageBreakAfter =
-                    block.tcfPageBreakAfter?.[sourceIndex] ?? page.tcfPageBreakAfter?.[sourceIndex]
+                  const tcfPageBreakBefore =
+                    sourceIndex > 0 &&
+                    Boolean(
+                      block.tcfPageBreakAfter?.[sourceIndex - 1] ?? page.tcfPageBreakAfter?.[sourceIndex - 1],
+                    )
                   const blockAllowsDraftGrid = isDraftPadExercise(block.exerciseType)
                   const isTcfQuestion =
                     item.layout === 'tcf' &&
@@ -322,9 +333,9 @@ export function WorksheetSheet({
                           ? (form) => onSelectTcfForm(index, form, blockIndex)
                           : undefined
                       }
-                      tcfPageBreakAfter={isTcfQuestion ? Boolean(tcfPageBreakAfter) : undefined}
+                      tcfPageBreakBefore={isTcfQuestion ? tcfPageBreakBefore : undefined}
                       onToggleTcfPageBreak={
-                        interactiveTcfOptions && isTcfQuestion && onToggleTcfPageBreak
+                        interactiveTcfOptions && isTcfQuestion && sourceIndex > 0 && onToggleTcfPageBreak
                           ? () => onToggleTcfPageBreak(index, blockIndex)
                           : undefined
                       }
@@ -341,7 +352,9 @@ export function WorksheetSheet({
         <DocumentFooter
           pageNumber={pageNumber}
           total={total}
-          reference={institutional.reference}
+          reference={
+            isAlphaSoutienDomain(page.domain) ? ALPHA_SOUTIEN_REFERENCE : institutional.reference
+          }
         />
       )}
     </article>

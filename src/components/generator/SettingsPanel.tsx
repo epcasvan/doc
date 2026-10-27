@@ -39,7 +39,7 @@ export type SettingsPanelProps = {
   safeBlockIndex: number
   activeSheet: WorksheetPage | undefined
   firstExerciseNo: number
-  isTcmLike: boolean
+  isTpmLike: boolean
   addPage: () => void
   addExerciseOnPage: () => void
   removePage: (configIdx: number) => void
@@ -59,6 +59,7 @@ export type SettingsPanelProps = {
   accessAccount: string | null
   isTcf: boolean
   tcfNiveau: TcfNiveau
+  loadTcfSeries: (niveau: TcfNiveau) => void
   soutienSelection: DomainThemeTypeFieldsProps['soutienSelection']
   activeBlock: ExerciseBlock
   changeTopic: (topic: string) => void
@@ -67,6 +68,11 @@ export type SettingsPanelProps = {
   isAlphabetisation: boolean
   changeSoutienLetter: (letterId: string) => void
   changeSoutienSound: (soundId: string) => void
+  isGrammaireDomain: boolean
+  isLogique: boolean
+  gramSubthemes: Array<{ id: string; label: string }>
+  gramSubtheme: { id: string; label: string } | undefined
+  changeGramSubtheme: (subId: string) => void
   isPhraseDomain: boolean
   isPhraseChart: boolean
   libreMode: boolean
@@ -122,7 +128,7 @@ export type SettingsPanelProps = {
   bankQuestionCap: number | undefined
   questionsOverflow: boolean
   maxQuestions: number
-  isTcmInfoPage: boolean
+  isTpmInfoPage: boolean
   isSoutienMotsMeles: boolean
 
   isFormes: boolean
@@ -140,7 +146,7 @@ export type SettingsPanelProps = {
   placeOrigin: (col: number, row: number) => void
   removeCoordMark: (x: number, y: number) => void
 
-  setAllTcmDraftGrids: (value: boolean) => void
+  setAllTpmDraftGrids: (value: boolean) => void
   setAllDraftGrids: (value: boolean) => void
 }
 
@@ -159,7 +165,7 @@ export function SettingsPanel(p: SettingsPanelProps) {
         safeBlockIndex={p.safeBlockIndex}
         activeSheet={p.activeSheet}
         firstExerciseNo={p.firstExerciseNo}
-        isTcmLike={p.isTcmLike}
+        isTpmLike={p.isTpmLike}
         addPage={p.addPage}
         addExerciseOnPage={p.addExerciseOnPage}
         removePage={p.removePage}
@@ -178,14 +184,14 @@ export function SettingsPanel(p: SettingsPanelProps) {
           pages={p.pages}
           worksheets={p.worksheets}
           safeSheetIndex={p.safeSheetIndex}
-          isTcmLike={p.isTcmLike}
+          isTpmLike={p.isTpmLike}
           activePage={p.activePage}
           changeDomain={p.changeDomain}
           allowedDomains={p.allowedDomains}
           accessAccount={p.accessAccount}
           isTcf={p.isTcf}
           tcfNiveau={p.tcfNiveau}
-          setPages={p.setPages}
+          loadTcfSeries={p.loadTcfSeries}
           soutienSelection={p.soutienSelection}
           activeBlock={p.activeBlock}
           changeTopic={p.changeTopic}
@@ -194,6 +200,11 @@ export function SettingsPanel(p: SettingsPanelProps) {
           isAlphabetisation={p.isAlphabetisation}
           changeSoutienLetter={p.changeSoutienLetter}
           changeSoutienSound={p.changeSoutienSound}
+          isGrammaireDomain={p.isGrammaireDomain}
+          isLogique={p.isLogique}
+          gramSubthemes={p.gramSubthemes}
+          gramSubtheme={p.gramSubtheme}
+          changeGramSubtheme={p.changeGramSubtheme}
           isPhraseDomain={p.isPhraseDomain}
           isPhraseChart={p.isPhraseChart}
           libreMode={p.libreMode}
@@ -228,19 +239,11 @@ export function SettingsPanel(p: SettingsPanelProps) {
           addCalliExtraWord={p.addCalliExtraWord}
         />
         <SoutienVocabFields
-          isSoutienMots={p.isSoutienMots}
-          isSoutienCompleter={p.isSoutienCompleter}
           isVocabPool={p.isVocabPool}
           isVocabLearn={p.isVocabLearn}
           isVocabProd={p.isVocabProd}
-          libreMode={p.libreMode}
           activeBlock={p.activeBlock}
           updatePage={p.updatePage}
-          soutienType1Words={p.soutienType1Words}
-          soutienType1WordPool={p.soutienType1WordPool}
-          soutienBankSound={p.soutienBankSound}
-          soutienCompletes={p.soutienCompletes}
-          soutienBankWords={p.soutienBankWords}
           vocabSubgroups={p.vocabSubgroups}
           activeVocabSubgroup={p.activeVocabSubgroup}
           vocabLearnWords={p.vocabLearnWords}
@@ -273,14 +276,16 @@ export function SettingsPanel(p: SettingsPanelProps) {
           isVocabLearn={p.isVocabLearn}
           isVocabPool={p.isVocabPool}
           isGramTheory={p.isGramTheory}
+          isGrammaireDomain={p.isGrammaireDomain}
+          isLogique={p.isLogique}
           isJeuxDomain={p.isJeuxDomain}
           isCalliDomain={p.isCalliDomain}
           isSoutienFr={p.isSoutienFr}
           isTcf={p.isTcf}
-          isTcmInfoPage={p.isTcmInfoPage}
+          isTpmInfoPage={p.isTpmInfoPage}
           isSoutienMots={p.isSoutienMots}
           isSoutienMotsMeles={p.isSoutienMotsMeles}
-          isTcmLike={p.isTcmLike}
+          isTpmLike={p.isTpmLike}
           evalMode={p.evalMode}
           activeSheet={p.activeSheet}
           safeBlockIndex={p.safeBlockIndex}
@@ -310,11 +315,11 @@ export function SettingsPanel(p: SettingsPanelProps) {
           safeBlockIndex={p.safeBlockIndex}
         />
         <DraftGridControls
-          isTcmLike={p.isTcmLike}
+          isTpmLike={p.isTpmLike}
           pages={p.pages}
           pageExerciseBlocks={p.pageExerciseBlocks}
           activeBlock={p.activeBlock}
-          setAllTcmDraftGrids={p.setAllTcmDraftGrids}
+          setAllTpmDraftGrids={p.setAllTpmDraftGrids}
           setAllDraftGrids={p.setAllDraftGrids}
         />
       </div>

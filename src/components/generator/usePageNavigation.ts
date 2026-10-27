@@ -14,14 +14,15 @@ import {
 import {
   TCF_DOCUMENT_TITLE,
   TCF_DOMAIN,
-  TCF_SLOTS,
 } from '@/tcf/catalog'
-import { tcfConsignesPage, tcfPage } from '@/tcf/generate'
+import { buildTcfRandomTestPages } from '@/tcf/generate'
+import { randomSeed } from '@/math/rng'
+import type { TcfNiveau } from '@/tcf/types'
 import {
-  buildTcmTestPages,
-  isTcmDomain,
-  TCM_DOCUMENT_TITLE,
-} from '@/tcm/test'
+  buildTpmTestPages,
+  isTpmDomain,
+  TPM_DOCUMENT_TITLE,
+} from '@/tpm/test'
 import {
   buildTcmCfrTestPages,
   isTcmCfrDomain,
@@ -48,7 +49,13 @@ import {
   soutienExerciseTypeId,
   soutienThemeById,
 } from '@/francais/soutien/themes'
-import { addPageBlock } from '@/math/page-model'
+import {
+  gramExerciseTypeId,
+  resolveGramSubthemeAll,
+  subthemesForTopicAll,
+} from '@/grammaire/exercises'
+import { GRAM_EXERCISE_KINDS } from '@/grammaire/exercises/kinds'
+import { addPageBlock, pageBlocks, stampExerciseNumbers } from '@/math/page-model'
 import type { InstitutionalHeader } from '@/components/math/PrintDocumentChrome'
 import type {
   Domain,
@@ -78,6 +85,7 @@ export type UsePageNavigationParams = {
   setPointsPerQuestion: Dispatch<SetStateAction<number>>
   setMode: Dispatch<SetStateAction<PreviewMode>>
   setInstitutional: Dispatch<SetStateAction<InstitutionalHeader>>
+  setSeed: Dispatch<SetStateAction<number>>
 }
 
 export function usePageNavigation({
@@ -98,7 +106,23 @@ export function usePageNavigation({
   setPointsPerQuestion,
   setMode,
   setInstitutional,
+  setSeed,
 }: UsePageNavigationParams) {
+  function loadTcfSeries(niveau: TcfNiveau) {
+    const nextSeed = randomSeed()
+    setSeed(nextSeed)
+    setSheetIndex(0)
+    setBlockIndex(0)
+    setPages(buildTcfRandomTestPages(niveau, nextSeed))
+    setEvalMode(true)
+    setPointsPerQuestion(1)
+    setMode('student')
+    setInstitutional((current) => ({
+      ...current,
+      course: 'Français',
+      documentTitle: TCF_DOCUMENT_TITLE,
+    }))
+  }
   /** Prochain type du même thème (même logique que « + Exercice »). */
   const createNextExerciseBlock = (): ExerciseBlock | null => {
     const currentTypes = typesForTopic(
@@ -195,8 +219,9 @@ export function usePageNavigation({
       ...newBlock,
       extraBlocks: undefined,
     }
-    setPages((current) => [...current, next])
-    setSheetIndex(worksheets.length)
+    // Insérée juste après la page active, pas en fin de document.
+    setPages((current) => [...current.slice(0, pageIndex + 1), next, ...current.slice(pageIndex + 1)])
+    setSheetIndex(worksheets.filter((sheet) => (sheet.configIndex ?? 0) <= pageIndex).length)
     setBlockIndex(0)
   }
 
@@ -213,7 +238,19 @@ export function usePageNavigation({
     const newBlock = createNextExerciseBlock()
     if (!newBlock) return
     setPages((current) =>
-      current.map((page, index) => (index === pageIndex ? addPageBlock(page, newBlock) : page)),
+      current.map((page, index) => {
+        if (index !== pageIndex) return page
+        const blocks = pageBlocks(page)
+        const sheet = worksheets.find(
+          (item) => (item.configIndex ?? 0) === pageIndex && item.blocks.length === blocks.length,
+        )
+        const numbers = blocks.map(
+          (block, blockIdx) =>
+            sheet?.blocks[blockIdx]?.exerciseIndex ?? block.exerciseNo ?? blockIdx + 1,
+        )
+        const nextNo = Math.max(0, ...numbers) + 1
+        return addPageBlock(stampExerciseNumbers(page, numbers), { ...newBlock, exerciseNo: nextNo })
+      }),
     )
     setBlockIndex(pageExerciseBlocks.length)
   }
@@ -221,16 +258,16 @@ export function usePageNavigation({
   function changeDomain(next: Domain) {
     if (!accountCanAccessDomain(accessAccount, next)) return
     setBlockIndex(0)
-    if (isTcmDomain(next)) {
+    if (isTpmDomain(next)) {
       setSheetIndex(0)
-      setPages(buildTcmTestPages())
+      setPages(buildTpmTestPages())
       setEvalMode(true)
       setPointsPerQuestion(1)
       setMode('student')
       setInstitutional((current) => ({
         ...current,
         course: 'Mathématiques',
-        documentTitle: TCM_DOCUMENT_TITLE,
+        documentTitle: TPM_DOCUMENT_TITLE,
       }))
       return
     }
@@ -248,24 +285,15 @@ export function usePageNavigation({
       return
     }
     if (next === TCF_DOMAIN) {
-      setSheetIndex(0)
-      setPages([tcfConsignesPage('A0-A1'), tcfPage(TCF_SLOTS[0]!.typeId, 'A0-A1')])
-      setEvalMode(true)
-      setPointsPerQuestion(1)
-      setMode('student')
-      setInstitutional((current) => ({
-        ...current,
-        course: 'Français',
-        documentTitle: TCF_DOCUMENT_TITLE,
-      }))
+      loadTcfSeries('A0-A1')
       return
     }
     const type = firstTypeFor(next)
-    const leavingTcm =
-      isTcmDomain(activePage.domain) ||
+    const leavingTpm =
+      isTpmDomain(activePage.domain) ||
       isTcmCfrDomain(activePage.domain) ||
       activePage.domain === TCF_DOMAIN
-    if (leavingTcm) {
+    if (leavingTpm) {
       setSheetIndex(0)
       setPages([{ ...defaultPage(next), ...applyType(type), domain: next }])
     } else {
@@ -286,6 +314,11 @@ export function usePageNavigation({
     ) {
       setInstitutional((current) =>
         current.course === 'Mathématiques' ? { ...current, course: 'Français' } : current,
+      )
+    }
+    if (next === 'logique') {
+      setInstitutional((current) =>
+        current.course === 'Français' ? { ...current, course: 'Mathématiques' } : current,
       )
     }
     if (next === 'jeux' || next === 'calligraphie' || next === 'soutien-fr' || next === 'alphabetisation') {
@@ -421,10 +454,43 @@ export function usePageNavigation({
       })
       return
     }
+    if (activePage.domain === 'grammaire') {
+      const subs = subthemesForTopicAll(topic)
+      const sub = subs[0]
+      const theoryId = sub?.theoryTypeIds[0]
+      const firstPractice = sub
+        ? GRAM_EXERCISE_KINDS.map((k) => gramExerciseTypeId(sub.id, k.id)).find(
+            (id) => exerciseTypeById[id],
+          )
+        : undefined
+      const type =
+        (theoryId ? exerciseTypeById[theoryId] : undefined) ??
+        (firstPractice ? exerciseTypeById[firstPractice] : undefined) ??
+        firstTypeFor('grammaire', topic)
+      updatePage({ topic, ...applyType(type) })
+      return
+    }
     const type =
       typesForTopic(topic, activePage.domain === 'français' ? (activeBlock.track ?? 'voc') : undefined)[0] ??
       firstTypeFor(activePage.domain, topic, activeBlock.track)
     updatePage({ topic, ...applyType(type) })
+  }
+
+  function changeGramSubtheme(subId: string) {
+    if (activePage.domain !== 'grammaire') return
+    const found =
+      subthemesForTopicAll(activeBlock.topic).find((s) => s.id === subId) ??
+      resolveGramSubthemeAll(activeBlock.topic, `gram-ex-${subId}-fill-conj`)
+    if (!found || found.id !== subId) return
+    const theoryId = found.theoryTypeIds[0]
+    const firstPractice = GRAM_EXERCISE_KINDS.map((k) =>
+      gramExerciseTypeId(found.id, k.id),
+    ).find((id) => exerciseTypeById[id])
+    const type =
+      (theoryId ? exerciseTypeById[theoryId] : undefined) ??
+      (firstPractice ? exerciseTypeById[firstPractice] : undefined)
+    if (!type) return
+    updatePage({ ...applyType(type, { ...activeBlock, topic: found.topic }) })
   }
 
   function changeSoutienLetter(letterId: string) {
@@ -496,8 +562,10 @@ export function usePageNavigation({
     removePage,
     addExerciseOnPage,
     changeDomain,
+    loadTcfSeries,
     changeTopic,
     changeSoutienLetter,
     changeSoutienSound,
+    changeGramSubtheme,
   }
 }

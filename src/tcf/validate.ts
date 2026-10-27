@@ -147,7 +147,9 @@ export function validateTcfExercise(ex: TcfExercise): TcfValidation {
       })
       break
     case 'image_question':
-      if (blank(ex.support.image)) errors.push('Image manquante.')
+      if (blank(ex.support.image) && !(ex.support.images ?? []).some((src) => !blank(src))) {
+        errors.push('Image manquante.')
+      }
       if (blank(ex.support.consigne)) errors.push('Question / consigne vide.')
       break
     case 'sms_reponse':
@@ -249,6 +251,8 @@ export function tcfMediaPaths(ex: TcfExercise): string[] {
       images.push(...(ex.support.images ?? []))
       break
     case 'image_question':
+      images.push(ex.support.image, ...(ex.support.images ?? []))
+      break
     case 'image_unique':
       images.push(ex.support.image)
       break

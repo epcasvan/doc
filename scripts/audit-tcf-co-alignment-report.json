@@ -1,0 +1,4691 @@
+{
+  "ok": [
+    {
+      "id": "tcf-a1j-s1-co-1",
+      "audio": "/lib/audio/tcf/co/fetes/l-anniversaire-1.mp3",
+      "ss": false,
+      "tx": 0.926,
+      "ans": 0.75,
+      "score": 0.864,
+      "heard": "Delfe blanc, un, exercis, un. Bonjour, c'est drice. Samedi, on fait une fête au restaurant pour l'anniversaire de mon frère, à midi et demi."
+    },
+    {
+      "id": "tcf-a1j-s1-co-2",
+      "audio": "/lib/audio/tcf/co/radio/au-magasin-de-sport.mp3",
+      "ss": false,
+      "tx": 0.826,
+      "ans": 0.25,
+      "score": 0.624,
+      "heard": "Étement de tennis, short, t-shirt, chaussures, vous pouvez aussi participer à notre grande jeu pour gagner le ballon de l'équipe de France d"
+    },
+    {
+      "id": "tcf-a1j-s1-co-3",
+      "audio": "/lib/audio/tcf/co/maison/la-recette-1.mp3",
+      "ss": false,
+      "tx": 0.765,
+      "ans": 0.75,
+      "score": 0.76,
+      "heard": "100g de beurre, 3e et 100g de farine dans un plat. Tu mets 50g de sucre et du jus de citron. Tu mets 30 minutes dans le four. Tu peux manger"
+    },
+    {
+      "id": "tcf-a1j-s1-co-4",
+      "audio": "/lib/audio/tcf/co/ecole/a-l-ecole-1.mp3",
+      "ss": false,
+      "tx": 0.84,
+      "ans": 0.0,
+      "score": 0.546,
+      "heard": "54. Monsieur, je n'ai pas mon livre. Regarde sur le livre de ton voisin. Dialogue 2. Tiens, je te redone ton caillé d'anglais. Merci beaucou"
+    },
+    {
+      "id": "tcf-a1j-s2-co-1",
+      "audio": "/lib/audio/tcf/co/loisirs/a-la-ferme.mp3",
+      "ss": false,
+      "tx": 0.935,
+      "ans": 0.5,
+      "score": 0.783,
+      "heard": "Delve blanc 2. Exercice 1. Bonjour, c'est Martin. C'est après-midi. On va visiter une ferme avec mes parents. On va voir les animaux et mang"
+    },
+    {
+      "id": "tcf-a1j-s2-co-2",
+      "audio": "/lib/audio/tcf/co/loisirs/la-fete-du-sport.mp3",
+      "ss": false,
+      "tx": 0.75,
+      "ans": 0.5,
+      "score": 0.663,
+      "heard": "Exercize-2 Vous avez entre 12 et 17 ans et vous aimez le sport ? Aujourd'hui, vous pouvez essayer tous les sport gratuitement à la fête de l"
+    },
+    {
+      "id": "tcf-a1j-s2-co-3",
+      "audio": "/lib/audio/tcf/co/maison/la-recette-2.mp3",
+      "ss": false,
+      "tx": 0.944,
+      "ans": 0.5,
+      "score": 0.789,
+      "heard": "qu'un couteau, tu les coupes en deux, tu les mets dans un bol. Après, tu fais chauffer 50 g de chocolat pendant 30 secondes et tu mets le ch"
+    },
+    {
+      "id": "tcf-a1j-s2-co-4",
+      "audio": "/lib/audio/tcf/co/ecole/a-l-ecole-2.mp3",
+      "ss": false,
+      "tx": 0.962,
+      "ans": 0.0,
+      "score": 0.625,
+      "heard": "Piscine. Oui, monsieur, on arrive. Dialogue 2. Ouah! Il est super ton téléphone. Il est nouveau? Oui, c'est mon cadeau d'anniversaire. Tu as"
+    },
+    {
+      "id": "tcf-a1j-s3-co-1",
+      "audio": "/lib/audio/tcf/co/loisirs/le-cours-de-musique.mp3",
+      "ss": false,
+      "tx": 0.917,
+      "ans": 0.75,
+      "score": 0.858,
+      "heard": "de piano samedi. C'est à l'école de musique, et c'est 10 euros. Ça commence à 14 heures. Tu veux venir ? Il faut envoyer un mail à la mérit "
+    },
+    {
+      "id": "tcf-a1j-s3-co-2",
+      "audio": "/lib/audio/tcf/co/loisirs/au-musee.mp3",
+      "ss": false,
+      "tx": 0.84,
+      "ans": 0.25,
+      "score": 0.634,
+      "heard": "Eure, vous devez laisser vos sacs à l'entrée et attendre la guide devant la salle douz. Après la visite, vous pouvez manger au reste rendu m"
+    },
+    {
+      "id": "tcf-a1j-s3-co-3",
+      "audio": "/lib/audio/tcf/co/magasins/la-reparation-du-telephone.mp3",
+      "ss": false,
+      "tx": 0.957,
+      "ans": 0.75,
+      "score": 0.884,
+      "heard": "Allez, vous pouvez venir le chercher aujourd'hui au service après vente du magasin, vous devez payer 20 euros pour la réparation. On est au "
+    },
+    {
+      "id": "tcf-a1j-s3-co-4",
+      "audio": "/lib/audio/tcf/co/ecole/a-l-ecole-3.mp3",
+      "ss": false,
+      "tx": 0.828,
+      "ans": 0.0,
+      "score": 0.538,
+      "heard": "Absence. Moi, je commence à huit heures, j'ai cours d'histoire. Dialogue 2 S'il vous plaît, vous ne jouez pas ici. Prenez votre ballon et al"
+    },
+    {
+      "id": "tcf-a1-s1-co-1",
+      "audio": "/lib/audio/tcf/co/vie-quotidienne/le-rendez-vous.mp3",
+      "ss": false,
+      "tx": 0.793,
+      "ans": 0.25,
+      "score": 0.603,
+      "heard": "Bonjour, cher cousine, c'est Jill, je suis dans ta ville pour mon travail avec mon directeur. On peut se voir demain après 19h, je t'invite "
+    },
+    {
+      "id": "tcf-a1-s1-co-2",
+      "audio": "/lib/audio/tcf/co/radio/a-la-librairie.mp3",
+      "ss": false,
+      "tx": 0.793,
+      "ans": 0.25,
+      "score": 0.603,
+      "heard": "Chère Cléan, courrez vite au rayon libréerie. Depuis 14 heures et jusqu'à 16 heures seulement pour un livre acheter un deuxième offert. Et n"
+    },
+    {
+      "id": "tcf-a1-s1-co-3",
+      "audio": "/lib/audio/tcf/co/travail/le-medecin-du-travail.mp3",
+      "ss": false,
+      "tx": 0.95,
+      "ans": 1.0,
+      "score": 0.967,
+      "heard": "Bonjour, c'est Joseph, le secretaire du directeur. Vous avez rendez-vous avec le médecin du travail lundi prochain. Pour votre rendez-vous, "
+    },
+    {
+      "id": "tcf-a1-s2-co-1",
+      "audio": "/lib/audio/tcf/co/loisirs/au-cinema-1.mp3",
+      "ss": false,
+      "tx": 0.926,
+      "ans": 0.75,
+      "score": 0.864,
+      "heard": "C'est Cyril, qu'est-ce que tu fais, vendredi ? Moi, je rentre de vacances, je dis, tu veux aller au cinéma ? Regarde le programme des films "
+    },
+    {
+      "id": "tcf-a1-s2-co-2",
+      "audio": "/lib/audio/tcf/co/radio/la-fete-des-meres.mp3",
+      "ss": false,
+      "tx": 0.833,
+      "ans": 0.5,
+      "score": 0.717,
+      "heard": "Ce week-end, c'est la fête d'hémère, venait dans notre magasin, nous sommes ouvert de 10 heures à 19 heures, et il y a 15% de réduction sur "
+    },
+    {
+      "id": "tcf-a1-s2-co-3",
+      "audio": "/lib/audio/tcf/co/travail/le-nouveau-travail.mp3",
+      "ss": false,
+      "tx": 0.96,
+      "ans": 0.75,
+      "score": 0.886,
+      "heard": "Bienvenue dans l'entreprise. Vous êtes dans le bâtiment principal, rue Louis Pasteur. Pour le restaurant du personnel, allez-vous, rues Napo"
+    },
+    {
+      "id": "tcf-a1-s3-co-1",
+      "audio": "/lib/audio/tcf/co/fetes/l-anniversaire-2.mp3",
+      "ss": false,
+      "tx": 0.714,
+      "ans": 0.5,
+      "score": 0.639,
+      "heard": "Xercize 1. Salut, c'est Gérald. Tu veux venir au restaurant mercredi soir pour mon anniversaire? Charlène et Antoni m'accompagne. On a rende"
+    },
+    {
+      "id": "tcf-a1-s3-co-2",
+      "audio": "/lib/audio/tcf/co/radio/la-meteo.mp3",
+      "ss": false,
+      "tx": 0.833,
+      "ans": 0.75,
+      "score": 0.804,
+      "heard": "25 km par heure sur tout le pays. Le soleil brie, mais il y a des nuages à l'est. Ce matin, il fait 11 degrés à Bruxelles et à L'Iège, 12 de"
+    },
+    {
+      "id": "tcf-a1-s3-co-3",
+      "audio": "/lib/audio/tcf/co/maison/dans-l-immeuble.mp3",
+      "ss": false,
+      "tx": 0.917,
+      "ans": 0.75,
+      "score": 0.858,
+      "heard": "La propriétaire. À partir de la semaine prochaine, les locataires doivent taper un code pour entrer dans l'immobles. Vous devez taper le 51-"
+    },
+    {
+      "id": "tcf-a1-s3-co-4",
+      "audio": "/lib/audio/tcf/co/vie-quotidienne/les-situations-du-quotidien-1.mp3",
+      "ss": false,
+      "tx": 0.8,
+      "ans": 0.0,
+      "score": 0.52,
+      "heard": "C'est mon verre. Peu pardon ? Tu es un train de boire mon jus d'orange. Je suis désolée. C'est une situation numéro 2. Où sont les yaours de"
+    },
+    {
+      "id": "tcf-a1-s4-co-1",
+      "audio": "/lib/audio/tcf/co/loisirs/le-pique-nique.mp3",
+      "ss": false,
+      "tx": 0.857,
+      "ans": 0.75,
+      "score": 0.82,
+      "heard": "Bonsoir, c'est Alexia. Dimanche prochain, je fais un picnic au parc. Océane et quantin viennent avec moi. On peut se donner rendez-vous à 11"
+    },
+    {
+      "id": "tcf-a1-s4-co-2",
+      "audio": "/lib/audio/tcf/co/radio/l-info-trafic.mp3",
+      "ss": false,
+      "tx": 0.737,
+      "ans": 0.75,
+      "score": 0.741,
+      "heard": "Il faut faire attention sur l'autoroute A1. Il y a beaucoup de neige à l'île. La vitesse est limitée à 100 kilomètres heures sur 9 kilomètre"
+    },
+    {
+      "id": "tcf-a1-s4-co-3",
+      "audio": "/lib/audio/tcf/co/magasins/a-la-librairie.mp3",
+      "ss": false,
+      "tx": 0.864,
+      "ans": 0.5,
+      "score": 0.736,
+      "heard": "avant reçue votre dictionnaire, vous pouvez venir le chercher aujourd'hui à partir de 14 heures. Notre magasin est ouvert du lundi au samedi"
+    },
+    {
+      "id": "tcf-a1-s4-co-4",
+      "audio": "/lib/audio/tcf/co/vie-quotidienne/les-situations-du-quotidien-2.mp3",
+      "ss": false,
+      "tx": 0.7,
+      "ans": 0.0,
+      "score": 0.455,
+      "heard": "Oui, il est joli. Joli est pratique. Je peux mettre beaucoup de choses à l'intérieur. Situation numéro 2. Pardon monsieur, le cours d'Italie"
+    },
+    {
+      "id": "tcf-a1p-s4-co-1",
+      "audio": "/lib/audio/tcf/co/loisirs/le-club-de-sport.mp3",
+      "ss": false,
+      "tx": 0.885,
+      "ans": 0.75,
+      "score": 0.837,
+      "heard": "Bonjour, je suis Monsieur Morrell du club de sport. J'appelle pour votre cours de danse du mercredi de 9h à 11h. Merci de venir au premier c"
+    },
+    {
+      "id": "tcf-a1p-s4-co-2",
+      "audio": "/lib/audio/tcf/co/radio/a-l-aeroport-1.mp3",
+      "ss": false,
+      "tx": 0.727,
+      "ans": 0.5,
+      "score": 0.648,
+      "heard": "Attention, ce message est pour les passages du vol AF-79 par il m'adride de 5 or 30. L'avion a retard de 2 heures à cause de la neige. Merci"
+    },
+    {
+      "id": "tcf-a1p-s4-co-3",
+      "audio": "/lib/audio/tcf/co/travail/la-reunion.mp3",
+      "ss": false,
+      "tx": 0.857,
+      "ans": 0.5,
+      "score": 0.732,
+      "heard": "Bonjour, c'est Romain, je ne suis pas au bureau aujourd'hui, j'ai un rendez-vous de travail chez monsieur la Farge. Nous avons une réunion l"
+    },
+    {
+      "id": "tcf-a1p-s3-co-1",
+      "audio": "/lib/audio/tcf/co/fetes/le-repas-entre-amis.mp3",
+      "ss": false,
+      "tx": 0.815,
+      "ans": 0.5,
+      "score": 0.705,
+      "heard": "Allô, c'est solange, je t'appelle pour confirmer le diné samedi soir à la maison. Vous pouvez venir vers 20 heures. Ah, est-ce que vous pouv"
+    },
+    {
+      "id": "tcf-a1p-s3-co-2",
+      "audio": "/lib/audio/tcf/co/radio/a-l-aeroport-2.mp3",
+      "ss": false,
+      "tx": 0.793,
+      "ans": 0.5,
+      "score": 0.691,
+      "heard": "Mesdames, Messieurs, votre attention s'il vous plaît. Le vol AF-335 au départ de Paris et à destination de Nis va partir à 15h40. Nous invit"
+    },
+    {
+      "id": "tcf-a1p-s3-co-3",
+      "audio": "/lib/audio/tcf/co/travail/au-bureau-1.mp3",
+      "ss": false,
+      "tx": 0.893,
+      "ans": 1.0,
+      "score": 0.93,
+      "heard": "Bonsoir, je vous rappelle vous rendez-vous de demain, Mardi. A 11 heures, vous avez rendez-vous chez le dentiste. A 12 heures 30, vous allez"
+    },
+    {
+      "id": "tcf-a1p-s3-co-4",
+      "audio": "/lib/audio/tcf/co/ecole/les-etudes-1.mp3",
+      "ss": false,
+      "tx": 0.895,
+      "ans": 0.0,
+      "score": 0.582,
+      "heard": "Si tu as si on numéro 1, bonjour à tous et bienvenue à la formation, je peux m'asseoir ici. Oui, bien sûr, vous prenez place, à s'ayez vous."
+    },
+    {
+      "id": "tcf-a1-tpa-co-1",
+      "audio": "/lib/audio/tcf/co/vie-quotidienne/la-famille-1.mp3",
+      "ss": false,
+      "tx": 0.905,
+      "ans": 0.8,
+      "score": 0.868,
+      "heard": "bien encore à mon bureau. Est-ce que tu peux aller à l'école à 16h45 pour prendre margot? Après, pas à la boulangerie pour acheter du pain. "
+    },
+    {
+      "id": "tcf-a1-tpa-co-2",
+      "audio": "/lib/audio/tcf/co/radio/au-theatre.mp3",
+      "ss": false,
+      "tx": 0.667,
+      "ans": 0.5,
+      "score": 0.608,
+      "heard": "Villes retrouvaient la première de l'opéra Mosa. L'opéra est présent dans notre ville, seulement sa modille et dimanche. Pour réserver vos p"
+    },
+    {
+      "id": "tcf-a1-tpa-co-3",
+      "audio": "/lib/audio/tcf/co/travail/l-entretien-d-embauche.mp3",
+      "ss": false,
+      "tx": 0.862,
+      "ans": 1.0,
+      "score": 0.91,
+      "heard": "Coute puis 30 secondes pour vérifier vos réponses. Lisez les questions. Bonjour, c'est Monsieur Garcia, le directeur du restaurant au colibr"
+    },
+    {
+      "id": "tcf-a1-tpb-co-1",
+      "audio": "/lib/audio/tcf/co/fetes/l-anniversaire-3.mp3",
+      "ss": false,
+      "tx": 0.76,
+      "ans": 0.4,
+      "score": 0.634,
+      "heard": "Salut ! C'est Annie ! Tu vas bien ? Samdhi, c'est la fête d'anniversaire de l'Ori. Tu te souviens ? On t'attends au restaurant à 13 heures. "
+    },
+    {
+      "id": "tcf-a1-tpb-co-2",
+      "audio": "/lib/audio/tcf/co/radio/a-la-gare.mp3",
+      "ss": false,
+      "tx": 0.95,
+      "ans": 0.2,
+      "score": 0.687,
+      "heard": "Mesdames, messieurs, votre attention s'il vous plaît. Le train TGV numéro 8756 à destination de l'Orient, partira à 9-6, qui est numéro 7. L"
+    },
+    {
+      "id": "tcf-a1-tpb-co-3",
+      "audio": "/lib/audio/tcf/co/travail/l-offre-d-emploi.mp3",
+      "ss": false,
+      "tx": 0.867,
+      "ans": 1.0,
+      "score": 0.913,
+      "heard": "Coute, puis 30 secondes pour vérifier vos réponses, lisez les questions. Bonjour, c'est Madame Le Roi, de la Jance pour l'emploi. Une entrep"
+    },
+    {
+      "id": "tcf-a1-sem1-co-2",
+      "audio": "/lib/audio/tcf/co/vie-quotidienne/les-situations-du-quotidien-3.mp3",
+      "ss": false,
+      "tx": 0.667,
+      "ans": 0.0,
+      "score": 0.433,
+      "heard": "Attention, nous commençons, dialogue numéro 1. Le midi, vous pouvez manger au restaurant de l'entreprise. Ah oui, et le restaurant ouvre à q"
+    },
+    {
+      "id": "tcf-a1-sem1-co-3",
+      "audio": "/lib/audio/tcf/co/fetes/l-anniversaire-4.mp3",
+      "ss": false,
+      "tx": 0.917,
+      "ans": 0.5,
+      "score": 0.771,
+      "heard": "Bonjour Marie, c'est Léa, je t'appelle pour t'inviter samedi à mon anniversaire chez mes grands parents, c'est près du centre, rendez-vous à"
+    },
+    {
+      "id": "tcf-a1-sem1-co-4",
+      "audio": "/lib/audio/tcf/co/radio/au-concert.mp3",
+      "ss": false,
+      "tx": 0.615,
+      "ans": 1.0,
+      "score": 0.75,
+      "heard": "Attention ! Nous commençons ! Chers auditeurs, bons soirs, énergies votre radio préféré offrent 30 places pour le concert de YouTube, vendre"
+    },
+    {
+      "id": "tcf-ss-a1-s1-co-1",
+      "audio": "/lib/audio/tcf/co/achats/facile-a1__annonce-12.mp3",
+      "ss": true,
+      "tx": 0.125,
+      "ans": 0.75,
+      "score": 0.344,
+      "heard": "Mesdames, messieurs, bienvenue à bord du vol 350-4 à destination de Toulouse. Vous pouvez acheter des poissons pour 2 euros et des sandwichs"
+    },
+    {
+      "id": "tcf-ss-a1-s1-co-2",
+      "audio": "/lib/audio/tcf/co/achats/facile-a1__annonce-2.mp3",
+      "ss": true,
+      "tx": 0.926,
+      "ans": 1.0,
+      "score": 0.952,
+      "heard": "Profitez de promotion exceptionnelle à Mégagez, moins 10% sur les jeux vidéo et moins 20% sur les accessoires. Si vous dépensez 150 euros da"
+    },
+    {
+      "id": "tcf-ss-a1-s2-co-1",
+      "audio": "/lib/audio/tcf/co/achats/facile-a1__conversation-5.mp3",
+      "ss": true,
+      "tx": 0.32,
+      "ans": 0.5,
+      "score": 0.383,
+      "heard": "Si tu as si on numéro 1, bonjour mais c'est durant, bonjour Coralis. Est-ce que j'ai des messages ? Oui, me se restant annul sans rendez-vou"
+    },
+    {
+      "id": "tcf-ss-a1-s2-co-2",
+      "audio": "/lib/audio/tcf/co/achats/facile-a1__radio-33.mp3",
+      "ss": true,
+      "tx": 0.308,
+      "ans": 0.75,
+      "score": 0.462,
+      "heard": "Votre magasin vêtimarché place des fleurs est ouvert d'imanche pour la fête d'hémère de 10 heures à 15 heures. Offrez une robe, une jupe, un"
+    },
+    {
+      "id": "tcf-ss-a1-s2-co-3",
+      "audio": "/lib/audio/tcf/co/achats/facile-a1__radio-37.mp3",
+      "ss": true,
+      "tx": 0.72,
+      "ans": 0.5,
+      "score": 0.643,
+      "heard": "De main, venez participer à la grande fête de la lecture à la librée du parc. A 14 heures, vous pouvez écouter des histoires racontés par Ma"
+    },
+    {
+      "id": "tcf-ss-a1-s2-co-4",
+      "audio": "/lib/audio/tcf/co/actualite/facile-a1__033.mp3",
+      "ss": true,
+      "tx": 0.75,
+      "ans": 0.5,
+      "score": 0.663,
+      "heard": "Aujourd'hui, nous parlons de la fête des voisins, cette année, les Français sont invités à organiser la fête le vendredi 29 mai. Pour le but"
+    },
+    {
+      "id": "tcf-ss-a1-s3-co-1",
+      "audio": "/lib/audio/tcf/co/actualite/facile-a1__036.mp3",
+      "ss": true,
+      "tx": 0.714,
+      "ans": 0.5,
+      "score": 0.639,
+      "heard": "Bonjour Marc, tu es libre, je dis. J'organise un aperot chez moi. Je t'invite avec mes amis cristelles et Lorraine. Désolé mode, je ne suis "
+    },
+    {
+      "id": "tcf-ss-a1-s3-co-2",
+      "audio": "/lib/audio/tcf/co/actualite/facile-a1__037.mp3",
+      "ss": true,
+      "tx": 0.815,
+      "ans": 1.0,
+      "score": 0.88,
+      "heard": "Ouf, c'est bon pour ma fête, Dimanche, d'accord, tu as un vite qui, mon ami Silvi et son mari, notre voisine angela avec sa sœur, et mon frè"
+    },
+    {
+      "id": "tcf-ss-a1-s3-co-4",
+      "audio": "/lib/audio/tcf/co/administration/facile-a1__166.mp3",
+      "ss": true,
+      "tx": 0.952,
+      "ans": 0.0,
+      "score": 0.619,
+      "heard": "bonjour Michel, c'est Magalie, pour aller chez moi c'est facile, j'habite à côté du parc mon repos, à pied c'est long, mais avec le bus 21 c"
+    },
+    {
+      "id": "tcf-ss-a1-s4-co-1",
+      "audio": "/lib/audio/tcf/co/administration/facile-a1__167.mp3",
+      "ss": true,
+      "tx": 0.929,
+      "ans": 0.0,
+      "score": 0.604,
+      "heard": "Au revoir l'achat au distributeur, bonjour l'itiquet ! Avec votre téléphone portable et un numéro français, vous pouvez payer par SMS et tél"
+    },
+    {
+      "id": "tcf-ss-a1-s4-co-3",
+      "audio": "/lib/audio/tcf/co/couleurs/facile-a1__objet-6.mp3",
+      "ss": true,
+      "tx": 0.923,
+      "ans": 1.0,
+      "score": 0.95,
+      "heard": "Pour cette activité créative, il nous faut du scotch et des papiers colorées. Nous commençons par découper les formes, puis nous les collons"
+    },
+    {
+      "id": "tcf-ss-a1-s5-co-2",
+      "audio": "/lib/audio/tcf/co/ecole/facile-a1__objet-10.mp3",
+      "ss": true,
+      "tx": 0.273,
+      "ans": 0.5,
+      "score": 0.352,
+      "heard": "Coucou, c'est clair, pour la niversaire de Bastien Samdi, j'apporte son dessert préféré, une tarte au fraise et aussi ma guitare, on va joue"
+    },
+    {
+      "id": "tcf-ss-a1-s5-co-3",
+      "audio": "/lib/audio/tcf/co/ecole/facile-a1__objet-3.mp3",
+      "ss": true,
+      "tx": 0.885,
+      "ans": 0.75,
+      "score": 0.837,
+      "heard": "Pour l'inscription à l'université, il faut ramener vos relevés de note, une carte d'identité et un chac. Vous allez recevoir un message de c"
+    },
+    {
+      "id": "tcf-ss-a1-s5-co-4",
+      "audio": "/lib/audio/tcf/co/famille/facile-a1__016.mp3",
+      "ss": true,
+      "tx": 0.882,
+      "ans": 0.5,
+      "score": 0.749,
+      "heard": "Regarde, j'ai une photo du mariage de ma sœur. Le mariage de ta sœur, sonia, ou de ta sœur, mari. De sonia, mari est célibatère. Et toi, ta "
+    },
+    {
+      "id": "tcf-ss-a1-s6-co-1",
+      "audio": "/lib/audio/tcf/co/famille/facile-a1__026.mp3",
+      "ss": true,
+      "tx": 0.767,
+      "ans": 0.75,
+      "score": 0.761,
+      "heard": "L'air, j'ai une question qui s'est la jeune femme brune là-bas. Mais Agnes regardent bien ses natalies, m'asseurs. Et la quel âge t'asseur, "
+    },
+    {
+      "id": "tcf-ss-a1-s6-co-2",
+      "audio": "/lib/audio/tcf/co/famille/facile-a1__069.mp3",
+      "ss": true,
+      "tx": 0.875,
+      "ans": 0.5,
+      "score": 0.744,
+      "heard": "Alors, ma nom, c'est flou. Ça va ? Non. Mon voisin n'est pas content. J'écoute la musique trop fort. Et je fais du bruit. Et alors ? Alors, "
+    },
+    {
+      "id": "tcf-ss-a1-s6-co-3",
+      "audio": "/lib/audio/tcf/co/famille/facile-a1__072.mp3",
+      "ss": true,
+      "tx": 0.955,
+      "ans": 0.5,
+      "score": 0.795,
+      "heard": "Bonjour monsieur ! Je suis une nouvelle étudiante ! Bonjour ! Vous vous appeliez comment ? Je m'appelle Yoko Sumida ! Vous avez votre carte "
+    },
+    {
+      "id": "tcf-ss-a1-s7-co-1",
+      "audio": "/lib/audio/tcf/co/famille/facile-a1__objet-11.mp3",
+      "ss": true,
+      "tx": 0.828,
+      "ans": 0.5,
+      "score": 0.713,
+      "heard": "L'anniversaire de chanès a lieu samedi prochain, je prépare des pizza, rassime s'occupe du gâteau. L'Ara et Marie vont ramener les cacahuète"
+    },
+    {
+      "id": "tcf-ss-a1-s7-co-2",
+      "audio": "/lib/audio/tcf/co/inviter/facile-a1__057.mp3",
+      "ss": true,
+      "tx": 0.95,
+      "ans": 1.0,
+      "score": 0.967,
+      "heard": "Bonjour monsieur, j'ai un problème avec ma box. Comment ça se passe ? Le technicien vient chez vous, il regarde pourquoi ça ne marche pas et"
+    },
+    {
+      "id": "tcf-ss-a1-s7-co-3",
+      "audio": "/lib/audio/tcf/co/inviter/facile-a1__111.mp3",
+      "ss": true,
+      "tx": 0.769,
+      "ans": 0.75,
+      "score": 0.762,
+      "heard": "C'est l'hiver, à Grenoble, il va faire moins 5°, métélementaux et des chaussures chaude. Et surtout, n'oubliez pas le bonnet, les charpes et"
+    },
+    {
+      "id": "tcf-ss-a1-s7-co-4",
+      "audio": "/lib/audio/tcf/co/inviter/facile-a1__conversation-3.mp3",
+      "ss": true,
+      "tx": 0.286,
+      "ans": 0.75,
+      "score": 0.448,
+      "heard": "Excusez-moi madame, est-ce que le bus numéro 2 est passé ? Non pas encore, il doit arriver dans sa minute. Très bien, merci. Si tu ascien nu"
+    },
+    {
+      "id": "tcf-ss-a1-s8-co-1",
+      "audio": "/lib/audio/tcf/co/inviter/facile-a1__instruction-3.mp3",
+      "ss": true,
+      "tx": 0.778,
+      "ans": 0.5,
+      "score": 0.681,
+      "heard": "Exercie-Stroin. Bonjour, je vous rappelle que vous avez rendez-vous au bureau à 10h30 avec Monsieur et Madame Martin. Vous avez un déjeuner "
+    },
+    {
+      "id": "tcf-ss-a1-s8-co-3",
+      "audio": "/lib/audio/tcf/co/inviter/facile-a1__message-17.mp3",
+      "ss": true,
+      "tx": 0.879,
+      "ans": 0.75,
+      "score": 0.834,
+      "heard": "Salut, c'est Ismail. On fait une sortie à Paris avec l'école, l'indive 25 juin. On va visiter un musée de peinture, le matin, et voir une pi"
+    },
+    {
+      "id": "tcf-ss-a1-s9-co-1",
+      "audio": "/lib/audio/tcf/co/inviter/facile-a1__message-4.mp3",
+      "ss": true,
+      "tx": 0.5,
+      "ans": 0.25,
+      "score": 0.412,
+      "heard": "Bonjour, c'est Madame Touré, la professeur de Piano. Je vais arriver un peu en retard pour le cours à 18h15. Je suis désolé, il y a une pann"
+    },
+    {
+      "id": "tcf-ss-a1-s9-co-2",
+      "audio": "/lib/audio/tcf/co/inviter/facile-a1__message-5.mp3",
+      "ss": true,
+      "tx": 0.875,
+      "ans": 0.5,
+      "score": 0.744,
+      "heard": "Salut ! C'est Alex. Je suis en retard. Je ne peux pas passer chez toi. Je te donne rendez-vous au nouveau cinéma. Prend le bus numéro 16, en"
+    },
+    {
+      "id": "tcf-ss-a1-s9-co-4",
+      "audio": "/lib/audio/tcf/co/inviter/facile-a1__message-8.mp3",
+      "ss": true,
+      "tx": 0.267,
+      "ans": 0.5,
+      "score": 0.348,
+      "heard": "Bonjour, c'est Madame Martin, la directrice des cours de déceint. Votre professeur, Madame Pottier et malade. Le cours d'aujourd'hui est ann"
+    },
+    {
+      "id": "tcf-ss-a1-s10-co-1",
+      "audio": "/lib/audio/tcf/co/inviter/facile-a1__objet-2.mp3",
+      "ss": true,
+      "tx": 0.677,
+      "ans": 0.75,
+      "score": 0.703,
+      "heard": "Exorcise-2 J'ai acheté une jolie robrouge avec un oeuvre en soi pour la faite d'anniversaire de Margot. Saline ma gentiment prétée ses chaus"
+    },
+    {
+      "id": "tcf-ss-a1-s10-co-2",
+      "audio": "/lib/audio/tcf/co/journee/facile-a1__044.mp3",
+      "ss": true,
+      "tx": 0.857,
+      "ans": 0.5,
+      "score": 0.732,
+      "heard": "Vous voulez habiter dans un quartier calme ? Venez visiter les pièces, le minus des studios avec Terras et des appartements de 4 pièces de n"
+    },
+    {
+      "id": "tcf-ss-a1-s10-co-3",
+      "audio": "/lib/audio/tcf/co/journee/facile-a1__080.mp3",
+      "ss": true,
+      "tx": 0.846,
+      "ans": 0.75,
+      "score": 0.812,
+      "heard": "inscrivez-vous à l'association des étudiants de la FACC des Lètre. Nous aidons les étudiants à réussir les examens. Nous organisons des révi"
+    },
+    {
+      "id": "tcf-ss-a1-s10-co-4",
+      "audio": "/lib/audio/tcf/co/journee/facile-a1__136.mp3",
+      "ss": true,
+      "tx": 0.87,
+      "ans": 0.75,
+      "score": 0.828,
+      "heard": "Aujourd'hui, écoutons la recette du Sandwich, le Bocase. C'est très simple. Dans une demi baguette, mettez beaucoup de beurs. Un œuf d'ure, "
+    },
+    {
+      "id": "tcf-ss-a1-s11-co-1",
+      "audio": "/lib/audio/tcf/co/journee/facile-a1__annonce-27.mp3",
+      "ss": true,
+      "tx": 0.591,
+      "ans": 0.75,
+      "score": 0.647,
+      "heard": "Messieurs d'âmes, la piscine ferme ses portes dans 30 minutes. Merci de sortir de l'eau et d'aller vers les douches. La piscine est ouvert d"
+    },
+    {
+      "id": "tcf-ss-a1-s11-co-2",
+      "audio": "/lib/audio/tcf/co/journee/facile-a1__annonce-28.mp3",
+      "ss": true,
+      "tx": 0.667,
+      "ans": 0.0,
+      "score": 0.433,
+      "heard": "Bonjour, le zoo est ouvert de 10h à 18h. Le bassin des deux fins est fermé aujourd'hui. Mais vous pouvez voir nos bébéties, n'oubliez pas vo"
+    },
+    {
+      "id": "tcf-ss-a1-s11-co-3",
+      "audio": "/lib/audio/tcf/co/journee/facile-a1__annonce-5.mp3",
+      "ss": true,
+      "tx": 0.667,
+      "ans": 0.5,
+      "score": 0.608,
+      "heard": "Radio France, il est 10h. Le nouveau Musée d'Armodern va ouvrir je dis prochain. Les horaires sont de 9h à 10h du mardi, au vendredi, et de "
+    },
+    {
+      "id": "tcf-ss-a1-s11-co-4",
+      "audio": "/lib/audio/tcf/co/journee/facile-a1__annonce-7.mp3",
+      "ss": true,
+      "tx": 0.8,
+      "ans": 0.75,
+      "score": 0.782,
+      "heard": "Aujourd'hui, dans l'actualité musicale, nous parlons du festival Solidais. Cette année, le festival d'ur trois jours, du vendre d'invintuïte"
+    },
+    {
+      "id": "tcf-ss-a1-s12-co-1",
+      "audio": "/lib/audio/tcf/co/journee/facile-a1__instruction-5.mp3",
+      "ss": true,
+      "tx": 0.852,
+      "ans": 0.75,
+      "score": 0.816,
+      "heard": "Bonsoir, votre commandé prête à la boulangerie, vous pouvez la récupérer des 15 heures, comme tous les lundies et mardi, la boutique ferma 1"
+    },
+    {
+      "id": "tcf-ss-a1-s12-co-2",
+      "audio": "/lib/audio/tcf/co/journee/facile-a1__message-10.mp3",
+      "ss": true,
+      "tx": 0.68,
+      "ans": 0.75,
+      "score": 0.705,
+      "heard": "Bonsoir, c'est Cristina, je vais à une exposition de peinture avec Armel, je dis soire. Est-ce que tu veux venir avec nous ? On peut se retr"
+    },
+    {
+      "id": "tcf-ss-a1-s12-co-3",
+      "audio": "/lib/audio/tcf/co/journee/facile-a1__message-13.mp3",
+      "ss": true,
+      "tx": 0.9,
+      "ans": 0.0,
+      "score": 0.585,
+      "heard": "Salut, c'est Léa. Sam dit à 11h, on organise un concert dans mon école. Je vais jouer de la guitare et mon frère du piano. Tout le monde est"
+    },
+    {
+      "id": "tcf-ss-a1-s12-co-4",
+      "audio": "/lib/audio/tcf/co/journee/facile-a1__message-14.mp3",
+      "ss": true,
+      "tx": 0.16,
+      "ans": 0.75,
+      "score": 0.366,
+      "heard": "bonjour c'est Anne pour la fête de l'école samedi soin on organise un concert dans la salle de théâtre tu veux jouer avec nous pas les lucia"
+    },
+    {
+      "id": "tcf-ss-a1-s13-co-2",
+      "audio": "/lib/audio/tcf/co/journee/facile-a1__message-19.mp3",
+      "ss": true,
+      "tx": 0.889,
+      "ans": 1.0,
+      "score": 0.928,
+      "heard": "Salut, c'est Jonathan, l'école propose des activités gratuits. Il y a un club photo, le lundi midi, ou un cours de jimme, le mardi soir. Il "
+    },
+    {
+      "id": "tcf-ss-a1-s14-co-1",
+      "audio": "/lib/audio/tcf/co/journee/facile-a1__radio-36.mp3",
+      "ss": true,
+      "tx": 0.32,
+      "ans": 0.5,
+      "score": 0.383,
+      "heard": "Pour rester informe, le club bleu vous propose des cours de jim, de dance ou de yoga. Venez aussi nager dans notre piscine. Le club est ouve"
+    },
+    {
+      "id": "tcf-ss-a1-s14-co-2",
+      "audio": "/lib/audio/tcf/co/logement/facile-a1__022.mp3",
+      "ss": true,
+      "tx": 0.929,
+      "ans": 1.0,
+      "score": 0.954,
+      "heard": "Pâge 21, exercice 1, papa, maman, voici mon ami Fabien. Il est étudiant dans mon université Fabien, voici mes parents, Simon et Flavie. Et l"
+    },
+    {
+      "id": "tcf-ss-a1-s14-co-3",
+      "audio": "/lib/audio/tcf/co/logement/facile-a1__023.mp3",
+      "ss": true,
+      "tx": 0.882,
+      "ans": 0.75,
+      "score": 0.836,
+      "heard": "Regarde. Voici la photo d'anniversaire de mes 18 ans. La jeune fille blonde, c'est moi. Et voici papa, ton papier. Le petit roux, c'est mon "
+    },
+    {
+      "id": "tcf-ss-a1-s14-co-4",
+      "audio": "/lib/audio/tcf/co/logement/facile-a1__024.mp3",
+      "ss": true,
+      "tx": 1.0,
+      "ans": 0.75,
+      "score": 0.912,
+      "heard": "En général, les familles françaises ont un ou deux enfants. Les parents sont jeunes, ils ont entre 30 et 35 ans, et ils sont souvent mariés "
+    },
+    {
+      "id": "tcf-ss-a1-s15-co-1",
+      "audio": "/lib/audio/tcf/co/logement/facile-a1__046.mp3",
+      "ss": true,
+      "tx": 0.727,
+      "ans": 0.5,
+      "score": 0.648,
+      "heard": "Pâge 33, exercice, 3. Tu habites au troisième ? Non, aurait de chocer dans un studio. Il est bien ? Non. La pièce est petite, sombre, et la "
+    },
+    {
+      "id": "tcf-ss-a1-s15-co-2",
+      "audio": "/lib/audio/tcf/co/logement/facile-a1__112.mp3",
+      "ss": true,
+      "tx": 0.667,
+      "ans": 0.75,
+      "score": 0.696,
+      "heard": "La nouvelle collection printemaineté pour enfants est déjà dans notre boutique. L'arge choix de couleur de ticheurte, de nombreuses modèles "
+    },
+    {
+      "id": "tcf-ss-a1-s15-co-3",
+      "audio": "/lib/audio/tcf/co/logement/facile-a1__objet-1.mp3",
+      "ss": true,
+      "tx": 0.875,
+      "ans": 1.0,
+      "score": 0.919,
+      "heard": "5. Identifié des objets. Exercice 1. Les clés de la voiture sont posées sur la table du salon à côté du pot de fleur. N'oublie pas de sortir"
+    },
+    {
+      "id": "tcf-ss-a1-s16-co-1",
+      "audio": "/lib/audio/tcf/co/loisirs/facile-a1__113.mp3",
+      "ss": true,
+      "tx": 1.0,
+      "ans": 1.0,
+      "score": 1.0,
+      "heard": "Pâge 69, exercice 3, bonjour madame, je voudrais voir la montre noire s'il vous plaît. J'aimerais faire un cadeau à ma femme. Bien sûr, mons"
+    },
+    {
+      "id": "tcf-ss-a1-s16-co-2",
+      "audio": "/lib/audio/tcf/co/loisirs/facile-a1__122.mp3",
+      "ss": true,
+      "tx": 0.789,
+      "ans": 1.0,
+      "score": 0.863,
+      "heard": "Je déjeunne tous les jours chez j'en veux. Les plats et les dessers sont excellents. Il y a toujours deux entrées avec des légumes délicieux"
+    },
+    {
+      "id": "tcf-ss-a1-s16-co-3",
+      "audio": "/lib/audio/tcf/co/loisirs/facile-a1__annonce-1.mp3",
+      "ss": true,
+      "tx": 0.714,
+      "ans": 1.0,
+      "score": 0.814,
+      "heard": "de comprendre une annonce à la radio. Le festival de théâtre en Val de Lune fait ses 10 ans le 20 juillet prochain. Au programme, il y a 6 p"
+    },
+    {
+      "id": "tcf-ss-a1-s16-co-4",
+      "audio": "/lib/audio/tcf/co/loisirs/facile-a1__annonce-11.mp3",
+      "ss": true,
+      "tx": 0.071,
+      "ans": 1.0,
+      "score": 0.396,
+      "heard": "Aujourd'hui, votre magasin propose une promotion exceptionnelle au rayon frais, moins 20% sur le poisson. Profitez aussi des fromages, deux "
+    },
+    {
+      "id": "tcf-ss-a1-s17-co-1",
+      "audio": "/lib/audio/tcf/co/loisirs/facile-a1__annonce-13.mp3",
+      "ss": true,
+      "tx": 0.545,
+      "ans": 0.25,
+      "score": 0.442,
+      "heard": "Chers clients, le magasin faire me dans 30 minutes. Merci de vous présenter à la quesse pour payer vos achats. De ma matin, le magasin ouvre"
+    },
+    {
+      "id": "tcf-ss-a1-s17-co-2",
+      "audio": "/lib/audio/tcf/co/loisirs/facile-a1__annonce-3.mp3",
+      "ss": true,
+      "tx": 0.76,
+      "ans": 1.0,
+      "score": 0.844,
+      "heard": "Radiosique, il est 14 heures. Vous pouvez gagner des places pour le festival musical Nui Sonor Allion. Le festival est du 27 au 31 mai. Pour"
+    },
+    {
+      "id": "tcf-ss-a1-s17-co-3",
+      "audio": "/lib/audio/tcf/co/loisirs/facile-a1__annonce-4.mp3",
+      "ss": true,
+      "tx": 0.879,
+      "ans": 0.75,
+      "score": 0.834,
+      "heard": "radios cinéma, bonjour. Aujourd'hui, mercredi, je vous parle des nouveaux films. Pour les enfants, je recommande la petite fabrique du monde"
+    },
+    {
+      "id": "tcf-ss-a1-s17-co-4",
+      "audio": "/lib/audio/tcf/co/loisirs/facile-a1__annonce-6.mp3",
+      "ss": true,
+      "tx": 0.63,
+      "ans": 0.5,
+      "score": 0.584,
+      "heard": "RTS, bonjour. Suivez le sport en direct. La saison de football commence mal. L'équipe de Los Angeles ne va pas participer à la superligge de"
+    },
+    {
+      "id": "tcf-ss-a1-s18-co-1",
+      "audio": "/lib/audio/tcf/co/loisirs/facile-a1__conversation-42.mp3",
+      "ss": true,
+      "tx": 0.387,
+      "ans": 0.5,
+      "score": 0.427,
+      "heard": "Dialogue 1. Monsieur, qu'est-ce qu'on fait aujourd'hui? On va faire du tennis de table. Allez chercher les raquettes. Dialogue 2. Madame, où"
+    },
+    {
+      "id": "tcf-ss-a1-s18-co-2",
+      "audio": "/lib/audio/tcf/co/loisirs/facile-a1__instruction-2.mp3",
+      "ss": true,
+      "tx": 0.906,
+      "ans": 0.75,
+      "score": 0.852,
+      "heard": "Salut, désolé, je dois nuler notre rendez-vous au restaurant semi-dix. J'ai trop de travail, on peut se faire un cinéma demain à 18 heures. "
+    },
+    {
+      "id": "tcf-ss-a1-s18-co-3",
+      "audio": "/lib/audio/tcf/co/nature/facile-a1__146.mp3",
+      "ss": true,
+      "tx": 0.706,
+      "ans": 1.0,
+      "score": 0.809,
+      "heard": "C'est l'hiver, la grippe arrive, mais conseil s'en facile. L'avez-vous les mains à l'eau et au savant. Vous êtes malade, n'allez pas au trav"
+    },
+    {
+      "id": "tcf-ss-a1-s19-co-2",
+      "audio": "/lib/audio/tcf/co/nature/facile-a1__radio-40.mp3",
+      "ss": true,
+      "tx": 0.8,
+      "ans": 1.0,
+      "score": 0.87,
+      "heard": "Aujourd'hui, Radio-Ado vous offre des places de cinéma. Attention, il y a seulement 10 places gagnés. Alors, vite, envoie un courriel à Radi"
+    },
+    {
+      "id": "tcf-ss-a1-s19-co-3",
+      "audio": "/lib/audio/tcf/co/nourriture/facile-a1__082.mp3",
+      "ss": true,
+      "tx": 0.917,
+      "ans": 0.75,
+      "score": 0.858,
+      "heard": "Bonjour madame racine, je peux entrer ? Oui, bonjour. Madame, ma note d'écrit est mauvaise. Vous avez encore un examin ? Vous avez encore de"
+    },
+    {
+      "id": "tcf-ss-a1-s19-co-4",
+      "audio": "/lib/audio/tcf/co/nourriture/facile-a1__090.mp3",
+      "ss": true,
+      "tx": 0.938,
+      "ans": 1.0,
+      "score": 0.959,
+      "heard": "Le lundi n'est pas une journée facile. On se réveille fatigué, on a besoin de temps pour s'habiller. Ce qu'on a fait, prendre le petit déjeu"
+    },
+    {
+      "id": "tcf-ss-a1-s20-co-1",
+      "audio": "/lib/audio/tcf/co/nourriture/facile-a1__101.mp3",
+      "ss": true,
+      "tx": 0.6,
+      "ans": 0.5,
+      "score": 0.565,
+      "heard": "Pas je 63 exercices 2. Bonjour Monsieur le Director, de main votre journée commence à 9 heures. Vous avez une vidéo conférence avec les empl"
+    },
+    {
+      "id": "tcf-ss-a1-s20-co-2",
+      "audio": "/lib/audio/tcf/co/nourriture/facile-a1__102.mp3",
+      "ss": true,
+      "tx": 0.833,
+      "ans": 1.0,
+      "score": 0.892,
+      "heard": "Le restaurant d'entreprise, 1000 repas, cherche un serveur ou une serveuse. Vous êtes dynamique et sérieux, passissez, vous aimez travailler"
+    },
+    {
+      "id": "tcf-ss-a1-s20-co-3",
+      "audio": "/lib/audio/tcf/co/nourriture/facile-a1__138.mp3",
+      "ss": true,
+      "tx": 0.864,
+      "ans": 0.5,
+      "score": 0.736,
+      "heard": "Vous avez mal ou? J'ai mal à la gorge. Vous tous sait? Oui. Je tous beaucoup. Et vous vous sentez comment? J'ai froid. J'ai chaud. Et j'ai t"
+    },
+    {
+      "id": "tcf-ss-a1-s20-co-4",
+      "audio": "/lib/audio/tcf/co/nourriture/facile-a1__annonce-25.mp3",
+      "ss": true,
+      "tx": 0.4,
+      "ans": 0.25,
+      "score": 0.348,
+      "heard": "Bonjour, le bar est ouvert, voiture 15. Vous pouvez acheter des poissons chaudes ou voides, des salades et des sandwichs. Et pour un jus de "
+    },
+    {
+      "id": "tcf-ss-a1-s21-co-1",
+      "audio": "/lib/audio/tcf/co/nourriture/facile-a1__conversation-6.mp3",
+      "ss": true,
+      "tx": 0.286,
+      "ans": 0.5,
+      "score": 0.361,
+      "heard": "Si tu as si on numéro 1. Bonjour, j'ai très mal à la tête. Avez-vous de l'aspirine ? Oui, bien sûr, monsieur. Ça fera deux euros cinq ans de"
+    },
+    {
+      "id": "tcf-ss-a1-s21-co-2",
+      "audio": "/lib/audio/tcf/co/nourriture/facile-a1__objet-7.mp3",
+      "ss": true,
+      "tx": 0.96,
+      "ans": 0.75,
+      "score": 0.886,
+      "heard": "Pour le repas de ce soir, j'ai préparé un gâteau, une salade de fruits et un poulet roti. Je voulais rajouter des carottes et des pommes de "
+    },
+    {
+      "id": "tcf-ss-a1-s21-co-3",
+      "audio": "/lib/audio/tcf/co/nourriture/facile-a1__radio-31.mp3",
+      "ss": true,
+      "tx": 0.348,
+      "ans": 0.75,
+      "score": 0.489,
+      "heard": "Deux à l'Aradio. Exercice 31. Bonjour à tous ! Aujourd'hui, sur Radio-June, vous pouvez gagner deux places pour le concert de Maddo. Pour ga"
+    },
+    {
+      "id": "tcf-ss-a1-s22-co-1",
+      "audio": "/lib/audio/tcf/co/nourriture/facile-a1__radio-39.mp3",
+      "ss": true,
+      "tx": 0.962,
+      "ans": 1.0,
+      "score": 0.975,
+      "heard": "Un nouveau restaurant vient d'ouvrir dans votre ville. Le restaurant, la merbleux, vous propose des plats de poisson et des desserts gourman"
+    },
+    {
+      "id": "tcf-ss-a1-s22-co-2",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__027.mp3",
+      "ss": true,
+      "tx": 0.958,
+      "ans": 0.5,
+      "score": 0.798,
+      "heard": "Bonjour madame Bujier, comment ça va ? Bonjour Thomas, moi ça va et votre famille ? Bien merci, la fête des voisins c'est bientôt non ? Non,"
+    },
+    {
+      "id": "tcf-ss-a1-s22-co-3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__034.mp3",
+      "ss": true,
+      "tx": 0.778,
+      "ans": 1.0,
+      "score": 0.856,
+      "heard": "Bonjour Nicolas ! Le dimanche 14 octobre, nous organisons une fête d'anniversaire pour notre fille. C'est un appéro avec des amis et des voi"
+    },
+    {
+      "id": "tcf-ss-a1-s22-co-4",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__035.mp3",
+      "ss": true,
+      "tx": 0.722,
+      "ans": 0.5,
+      "score": 0.644,
+      "heard": "Ah, Roxanne, pour notre picnic, j'ai besoin de serviette et d'aciette. D'accord Tim, j'apporte aussi des chips et des boissons. Je prépare u"
+    },
+    {
+      "id": "tcf-ss-a1-s23-co-1",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__045.mp3",
+      "ss": true,
+      "tx": 0.938,
+      "ans": 1.0,
+      "score": 0.959,
+      "heard": "Nous sommes d'aujourd'hui dans la maison de Victor Hugo aussi place des veauxges à Paris. Et nous allons visiter ensemble le salon rouge, le"
+    },
+    {
+      "id": "tcf-ss-a1-s23-co-2",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__056.mp3",
+      "ss": true,
+      "tx": 0.667,
+      "ans": 0.75,
+      "score": 0.696,
+      "heard": "La société allopole, répart en cas en tutor, les appareils électriques, les télévision, les frigos, les radiateurs, allopole, la bonne adres"
+    },
+    {
+      "id": "tcf-ss-a1-s23-co-3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__059.mp3",
+      "ss": true,
+      "tx": 0.733,
+      "ans": 0.75,
+      "score": 0.739,
+      "heard": "Bonjour, monsieur du chaud, c'est monsieur du prêt. Je vous appelle pour la panne de chauffage et l'étoilette bouchée. Il y a aussi une fuit"
+    },
+    {
+      "id": "tcf-ss-a1-s23-co-4",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__060.mp3",
+      "ss": true,
+      "tx": 0.72,
+      "ans": 0.25,
+      "score": 0.555,
+      "heard": "Pâge 39, exercice 5. Réparcérure, bonjour. Bonjour, madame. J'ai un problème de sérure. Je ne peux plus ouvrir ma porte. Qu'est-ce qu'il ne "
+    },
+    {
+      "id": "tcf-ss-a1-s24-co-1",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__067.mp3",
+      "ss": true,
+      "tx": 0.889,
+      "ans": 1.0,
+      "score": 0.928,
+      "heard": "1. Tonner les chiens en laisse. 2. Ne fumez pas dans les couloirs. 3. Rangez les vélo dans le local. 4. Mettez votre nom sur la boîte aux le"
+    },
+    {
+      "id": "tcf-ss-a1-s24-co-2",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__068.mp3",
+      "ss": true,
+      "tx": 0.8,
+      "ans": 0.75,
+      "score": 0.782,
+      "heard": "Pâge 45, exercice 2, bonjour, madame signorer, c'est monsieur blanc, votre poubelle est dans le couloir et c'est salle, vous ne respectez pa"
+    },
+    {
+      "id": "tcf-ss-a1-s24-co-3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__081.mp3",
+      "ss": true,
+      "tx": 0.917,
+      "ans": 0.75,
+      "score": 0.858,
+      "heard": "Salut, je cherche le bureau du professeur Martin, il est ou, tu peux m'aider ? Non, désolé, je suis nouveau à la faq, demande au secretariat"
+    },
+    {
+      "id": "tcf-ss-a1-s24-co-4",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__083.mp3",
+      "ss": true,
+      "tx": 0.808,
+      "ans": 0.5,
+      "score": 0.7,
+      "heard": "Sacha, on est hortard. Maman, je prends mon petit déjeuner. Tu te couches trop tard. Après tu as des problèmes pour te réveiller le matin. D"
+    },
+    {
+      "id": "tcf-ss-a1-s25-co-1",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__089.mp3",
+      "ss": true,
+      "tx": 0.833,
+      "ans": 0.5,
+      "score": 0.717,
+      "heard": "D'habitude, tu fais quoi le week-end charlotte ? Dans ma famille, on aime prendre le petit déjeunetard. On se promène, on dit nos restaurant"
+    },
+    {
+      "id": "tcf-ss-a1-s25-co-2",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__091.mp3",
+      "ss": true,
+      "tx": 0.917,
+      "ans": 0.75,
+      "score": 0.858,
+      "heard": "Athletique, le nouveau club sportif dans votre ville. Vous travaillez beaucoup ? Vous êtes fatigué ? Pensez à faire du sport à l'heure du dé"
+    },
+    {
+      "id": "tcf-ss-a1-s25-co-3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__092.mp3",
+      "ss": true,
+      "tx": 0.842,
+      "ans": 1.0,
+      "score": 0.897,
+      "heard": "C'est l'ucrétien, tout jour à l'heure. Oui, je n'aime pas être en retard. Quand je peux, j'arrive en avance à 7 heures 30. Mais comment tu f"
+    },
+    {
+      "id": "tcf-ss-a1-s25-co-4",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__093.mp3",
+      "ss": true,
+      "tx": 0.862,
+      "ans": 0.75,
+      "score": 0.823,
+      "heard": "On prend le petit déjeuner ensemble de ma matin, avec plaisir à quelle heure, à huit heures et demi. Ça va? Mais chantelle, c'est trop tôt. "
+    },
+    {
+      "id": "tcf-ss-a1-s26-co-1",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__094.mp3",
+      "ss": true,
+      "tx": 0.632,
+      "ans": 0.75,
+      "score": 0.673,
+      "heard": "Le sonneuf, page 59, au travail, d'occuement, ah ! Oh, la, la, la, la, la, je suis stressé. Ma présentation pour la réunion de 11 heures n'e"
+    },
+    {
+      "id": "tcf-ss-a1-s26-co-2",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__100.mp3",
+      "ss": true,
+      "tx": 0.8,
+      "ans": 0.5,
+      "score": 0.695,
+      "heard": "Bonjour à tous, je suis Philippe Ugon, spécialiste en outil informatique. Je suis ici pour vous aider à organiser les fichiers et présenter "
+    },
+    {
+      "id": "tcf-ss-a1-s26-co-3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__103.mp3",
+      "ss": true,
+      "tx": 0.842,
+      "ans": 0.75,
+      "score": 0.81,
+      "heard": "Bonjour madame, je viens pour réparer votre machine à café. Elle est où ? Dans le couloir, après la grande salle de réunions. Ah oui, à côté"
+    },
+    {
+      "id": "tcf-ss-a1-s26-co-4",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__105.mp3",
+      "ss": true,
+      "tx": 0.92,
+      "ans": 0.5,
+      "score": 0.773,
+      "heard": "Bonjour madame, je peux vous aider. Oui, bonjour. Je pourrais essayer la robe bleue. Bien sûr. Vous faites quelqu'un. Je fais du 38. Voici d"
+    },
+    {
+      "id": "tcf-ss-a1-s27-co-1",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__115.mp3",
+      "ss": true,
+      "tx": 0.826,
+      "ans": 0.5,
+      "score": 0.712,
+      "heard": "Regarde, la jolie boutique. On entre. D'accord. J'aimerais bien essayer des hupes. Et moi, des pûles. Regarde le plus rouge. Il est super. I"
+    },
+    {
+      "id": "tcf-ss-a1-s27-co-2",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__116.mp3",
+      "ss": true,
+      "tx": 0.944,
+      "ans": 0.75,
+      "score": 0.876,
+      "heard": "Bonjour, c'est pour déjeuner. Oui. Vous avez une table pour deux? Ici. Voici le menu jour. Tu prends du poisson ou de la viande. Mais je sui"
+    },
+    {
+      "id": "tcf-ss-a1-s27-co-3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__123.mp3",
+      "ss": true,
+      "tx": 0.812,
+      "ans": 1.0,
+      "score": 0.878,
+      "heard": "Dès-les-les bonjour, je peux prendre votre commande. Oui, bonjour, je voudrais un menu romain avec une salade italienne et des pattes au lég"
+    },
+    {
+      "id": "tcf-ss-a1-s27-co-4",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__124.mp3",
+      "ss": true,
+      "tx": 0.941,
+      "ans": 1.0,
+      "score": 0.962,
+      "heard": "Bonjour, Messieurs d'Ame. Voici une table pour quatre. Aujourd'hui, pour le déjeuner, le chef vous propose un menu spécial Atlantique avec d"
+    },
+    {
+      "id": "tcf-ss-a1-s28-co-1",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__126.mp3",
+      "ss": true,
+      "tx": 0.905,
+      "ans": 0.5,
+      "score": 0.763,
+      "heard": "Bonjour, nous avons une réservation pour huit. Ah oui, voici une table pour huit, je vous apporte le menu. Je prends votre commande. Oui, no"
+    },
+    {
+      "id": "tcf-ss-a1-s28-co-2",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__133.mp3",
+      "ss": true,
+      "tx": 0.647,
+      "ans": 0.75,
+      "score": 0.683,
+      "heard": "Vous adorez les croissants du Macaron d'Orée ? Venez découvrir maintenant leur tartes au fruit, leur gâteau, leur crape Bretonne, leur Macar"
+    },
+    {
+      "id": "tcf-ss-a1-s28-co-3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__135.mp3",
+      "ss": true,
+      "tx": 0.789,
+      "ans": 0.5,
+      "score": 0.688,
+      "heard": "Salut les gars, c'est maman. Tu connais la pâtisserie le macarron dorée ? Il font de supergâteau maintenant. Pour ton anniversaire, je peux "
+    },
+    {
+      "id": "tcf-ss-a1-s28-co-4",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__148.mp3",
+      "ss": true,
+      "tx": 0.931,
+      "ans": 0.75,
+      "score": 0.868,
+      "heard": "à l'eau, papa, ça va ? Ah, ma chérie, oui, et toi, comment ça va ? Moi, ça va pas du tout. J'ai la jampe cassée. Et, j'ai le pied cassé auss"
+    },
+    {
+      "id": "tcf-ss-a1-s29-co-1",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__149.mp3",
+      "ss": true,
+      "tx": 0.897,
+      "ans": 0.25,
+      "score": 0.67,
+      "heard": "Bonjour, monsieur. Vous avez une ordonnance ? Oui. Et voilà ma carte vitale. Merci. Alors, voilà les antibiotiques. L'aspirine pour la fièvr"
+    },
+    {
+      "id": "tcf-ss-a1-s29-co-2",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__156.mp3",
+      "ss": true,
+      "tx": 0.833,
+      "ans": 1.0,
+      "score": 0.892,
+      "heard": "Les formations sont des professionnels de la santé. Ils ont un rôle important. 4 millions de Français entre dans une pharmacie chaque jour. "
+    },
+    {
+      "id": "tcf-ss-a1-s29-co-3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__157.mp3",
+      "ss": true,
+      "tx": 0.611,
+      "ans": 1.0,
+      "score": 0.747,
+      "heard": "Vous tous est acheté Calmatou pour toute la famille, adulte ou enfants. Des pastilles contre la tou et le mal de gorge a utilisé le jour et "
+    },
+    {
+      "id": "tcf-ss-a1-s29-co-4",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__159.mp3",
+      "ss": true,
+      "tx": 0.833,
+      "ans": 0.5,
+      "score": 0.717,
+      "heard": "Bonjour, monsieur. Bonjour, madame. Ma fille est malade. Elle touche beaucoup et à un peu de fièvre. Est-ce que vous pouvez me donner un méd"
+    },
+    {
+      "id": "tcf-ss-a1-s30-co-1",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__178.mp3",
+      "ss": true,
+      "tx": 0.643,
+      "ans": 0.0,
+      "score": 0.418,
+      "heard": "Pour les vacances, pensez-vous qu'au voitureage avec l'application Covoite. Je vous ai choisi votre trajet, votre horaire et votre conducteu"
+    },
+    {
+      "id": "tcf-ss-a1-s30-co-2",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__180.mp3",
+      "ss": true,
+      "tx": 0.882,
+      "ans": 0.75,
+      "score": 0.836,
+      "heard": "Salut Paul. Finalement, je ne fais pas de covoiturage pour mon trajet Strasbourgnisse. C'est trop long. Je prends le TGV de 6 heures samedi."
+    },
+    {
+      "id": "tcf-ss-a1-s30-co-3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__181.mp3",
+      "ss": true,
+      "tx": 0.692,
+      "ans": 0.75,
+      "score": 0.712,
+      "heard": "Bonjour monsieur, je voudrais le prix d'un billet Marseille Lyon, le 2 décembre s'il vous plaît. Vous voulez un allé retour ou un allé simpl"
+    },
+    {
+      "id": "tcf-ss-a1-s30-co-4",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__188.mp3",
+      "ss": true,
+      "tx": 0.944,
+      "ans": 1.0,
+      "score": 0.964,
+      "heard": "Mesdames et messieurs, votre attention s'il vous plaît. Les passagers du vol à F-416 à destination de Porto sont invités à se présenter Port"
+    },
+    {
+      "id": "tcf-ss-a1-s31-co-1",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__189.mp3",
+      "ss": true,
+      "tx": 0.944,
+      "ans": 0.75,
+      "score": 0.876,
+      "heard": "Bonjour, votre passeport, s'il vous plaît. Qu'elle est votre destination ? Bonjour, je vais aux États-Unis. Un vol direct à destination de B"
+    },
+    {
+      "id": "tcf-ss-a1-s31-co-2",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__192.mp3",
+      "ss": true,
+      "tx": 1.0,
+      "ans": 1.0,
+      "score": 1.0,
+      "heard": "bonjour, votre passeport et votre carte d'embarquement s'il vous plaît. Voilà ! C'est votre bagage, monsieur ? Vous avez un ordinateur dans "
+    },
+    {
+      "id": "tcf-ss-a1-s31-co-3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__200.mp3",
+      "ss": true,
+      "tx": 0.6,
+      "ans": 0.75,
+      "score": 0.652,
+      "heard": "à vos soleils, l'hôtel, la villa, vous propose des chambres à côté de la plage. Du premier mai au 37 ans, la piscine vous attend, avec ses t"
+    },
+    {
+      "id": "tcf-ss-a1-s31-co-4",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__201.mp3",
+      "ss": true,
+      "tx": 0.938,
+      "ans": 0.5,
+      "score": 0.784,
+      "heard": "Au-del de la plage, bonjour. Bonjour. Vous avez une chambre double disponible pour la nuit du 12 au 13 juin, s'il vous plaît? Non. Mais nous"
+    },
+    {
+      "id": "tcf-ss-a1-s32-co-1",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__202.mp3",
+      "ss": true,
+      "tx": 0.75,
+      "ans": 0.75,
+      "score": 0.75,
+      "heard": "Vous aimez le camping, mais quelle destination choisie dans les Alpes, entre montagne et forêt ? La campagne et les rivières de Normandie ? "
+    },
+    {
+      "id": "tcf-ss-a1-s32-co-2",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__203.mp3",
+      "ss": true,
+      "tx": 1.0,
+      "ans": 1.0,
+      "score": 1.0,
+      "heard": "Bonjour, vous proposez la pension complète. Non, nous proposons un petit déjeuner au restaurant du camping et un buffet le soir, mais nous n"
+    },
+    {
+      "id": "tcf-ss-a1-s32-co-3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__204.mp3",
+      "ss": true,
+      "tx": 0.697,
+      "ans": 1.0,
+      "score": 0.803,
+      "heard": "Vous êtes aussi aux campines derrière la plage ? Non, nous sommes à l'hotel, entre la piscine et le parc. Et les chambres sont commandes ? E"
+    },
+    {
+      "id": "tcf-ss-a1-s32-co-4",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__205.mp3",
+      "ss": true,
+      "tx": 0.75,
+      "ans": 0.75,
+      "score": 0.75,
+      "heard": "Ah, il fait beau, j'aurai dit, on joue à Ténis. Ah non, je déteste le Ténis, on peut faire du VTT. Mais il fait trop chaud pour faire du vél"
+    },
+    {
+      "id": "tcf-ss-a1-s33-co-1",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__211.mp3",
+      "ss": true,
+      "tx": 0.579,
+      "ans": 0.75,
+      "score": 0.639,
+      "heard": "Et voici la météo de ce jour de printemps. Apparit en beau et chaud. Abordeau, nuage et vent. A Strasbourg, pluie et vent. Anis, du soleil, "
+    },
+    {
+      "id": "tcf-ss-a1-s33-co-2",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__212.mp3",
+      "ss": true,
+      "tx": 0.882,
+      "ans": 0.5,
+      "score": 0.749,
+      "heard": "Et maintenant, parlons des vacances d'hiver. Il fait froid, il neige, et les pistes ouvrent ce weekend dans les Alpes. Préparer votre luge, "
+    },
+    {
+      "id": "tcf-ss-a1-s33-co-3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__213.mp3",
+      "ss": true,
+      "tx": 0.737,
+      "ans": 0.75,
+      "score": 0.741,
+      "heard": "5% des Français font du sport pendant les vacances d'été. Ma passion rend donné vélo ou vétété. Les jeunes m'aient faire du canoît kayak. Le"
+    },
+    {
+      "id": "tcf-ss-a1-s33-co-4",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__214.mp3",
+      "ss": true,
+      "tx": 0.913,
+      "ans": 0.5,
+      "score": 0.768,
+      "heard": "Allô-la, c'est maman. Écoute, pour notre week-end à la montagne, je réserve 6 activités. VT, pour Bertrand, tennis, pour Tom et toi, canioni"
+    },
+    {
+      "id": "tcf-ss-a1-s34-co-1",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__215.mp3",
+      "ss": true,
+      "tx": 0.741,
+      "ans": 0.75,
+      "score": 0.744,
+      "heard": "bonjour madame. Il ne fait pas très beau aujourd'hui et je voudrais savoir quelle activité vous proposer. Ce matin il ne plus pas et je peux"
+    },
+    {
+      "id": "tcf-ss-a1-s34-co-2",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__216.mp3",
+      "ss": true,
+      "tx": 0.781,
+      "ans": 1.0,
+      "score": 0.858,
+      "heard": "On a une journée libre, on fait quoi ? Ce matin, on peut aller au musée granée, voir cette grande exposition de Paul Sésan. Super, j'adore c"
+    },
+    {
+      "id": "tcf-ss-a1-s34-co-3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__222.mp3",
+      "ss": true,
+      "tx": 0.938,
+      "ans": 0.75,
+      "score": 0.872,
+      "heard": "Et maintenant, le programme culturel de l'été à Avignon, plus de 1.000 pièces de théâtre, 3 grandes expositions et des concerts tous les jou"
+    },
+    {
+      "id": "tcf-ss-a1-s34-co-4",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__223.mp3",
+      "ss": true,
+      "tx": 0.75,
+      "ans": 0.75,
+      "score": 0.75,
+      "heard": "bonjour. Je voudrais huy biais pour l'exposition Picasso. huy biais pour des adultes ? Non. 4 biais adultes à 12 euros ? 3 biais gratuits po"
+    },
+    {
+      "id": "tcf-ss-a1-s35-co-1",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__224.mp3",
+      "ss": true,
+      "tx": 0.857,
+      "ans": 1.0,
+      "score": 0.907,
+      "heard": "Vous adorez le théâtre, vous aimez les salles de spectacle, vous voulez devenir comme édien, comme édienne, chanteur, chanteuse, acteur, act"
+    },
+    {
+      "id": "tcf-ss-a1-s35-co-2",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__225.mp3",
+      "ss": true,
+      "tx": 0.733,
+      "ans": 0.75,
+      "score": 0.739,
+      "heard": "Alors, on va aussi n'est mal au théâtre ce soir. Au cinéma, on va à la séance de 18h, ou de 20h30. 20h30, je prends deux hibisiers et on va "
+    },
+    {
+      "id": "tcf-ss-a1-s35-co-3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__226.mp3",
+      "ss": true,
+      "tx": 0.788,
+      "ans": 0.5,
+      "score": 0.687,
+      "heard": "Je vais Anis pendant les vacances. Il y a des lieux cultures et l'intéressant. Anis, bien sûr, beaucoup. Tu devrais acheter un passe. Super."
+    },
+    {
+      "id": "tcf-ss-a1-s35-co-4",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__227.mp3",
+      "ss": true,
+      "tx": 0.65,
+      "ans": 0.5,
+      "score": 0.598,
+      "heard": "Mais regard de l'air, l'homme, grand et blanc, la bas, c'est notre ami Yarn, mais oui, c'est Yarn ! Il est avec une jeune femme rose, c'est "
+    },
+    {
+      "id": "tcf-ss-a1-s36-co-1",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__228.mp3",
+      "ss": true,
+      "tx": 0.933,
+      "ans": 0.5,
+      "score": 0.782,
+      "heard": "Alors, comment ça se passe dans ton nouvel immeuble? Racconte. Mon appartement égrant et lumineux, il y a une belle terrasse, le quartier et"
+    },
+    {
+      "id": "tcf-ss-a1-s36-co-2",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__229.mp3",
+      "ss": true,
+      "tx": 0.909,
+      "ans": 0.5,
+      "score": 0.766,
+      "heard": "bonjour, je m'appelle Tim et je suis le nouveau serveur. Ah oui, bienvenu, je m'appelle Natasha, super, tu es en avance. Oui, je peux venir "
+    },
+    {
+      "id": "tcf-ss-a1-s36-co-3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__230.mp3",
+      "ss": true,
+      "tx": 0.829,
+      "ans": 0.75,
+      "score": 0.801,
+      "heard": "Salut Emilie, tu vas bien ? Salut Téo, ça va, et toi ? Qu'est-ce que tu fais en ville ? Eh bien, ce matin, je dois acheter des vêtements pou"
+    },
+    {
+      "id": "tcf-ss-a1-s36-co-4",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__231.mp3",
+      "ss": true,
+      "tx": 0.857,
+      "ans": 1.0,
+      "score": 0.907,
+      "heard": "Alors Mathilde, c'est Mathieu. Bonjour Mathieu, tu es ou? Je suis à la maison. Je suis malade, et je ne peux pas venir travailler aujourd'hu"
+    },
+    {
+      "id": "tcf-ss-a1-s37-co-1",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__232.mp3",
+      "ss": true,
+      "tx": 0.862,
+      "ans": 0.75,
+      "score": 0.823,
+      "heard": "Alors, pour notre voyage, on prend le train ou l'avion. Le voyage est méparant en province. Mais non, pas pour le week-end en province. Pour"
+    },
+    {
+      "id": "tcf-ss-a1-s37-co-2",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__233.mp3",
+      "ss": true,
+      "tx": 0.882,
+      "ans": 1.0,
+      "score": 0.924,
+      "heard": "Alors, vous faites quoi cet été ? En juillet, on va au festival Musilac à ex-liban, ça dure qu'à 4 jours, on adore ! C'est un festival de th"
+    },
+    {
+      "id": "tcf-ss-a1-s37-co-3",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__annonce-26.mp3",
+      "ss": true,
+      "tx": 0.533,
+      "ans": 0.75,
+      "score": 0.609,
+      "heard": "Mesdames et messieurs, la visite du musée va bientôt commencer. Vous le devez laisser vos sacs à la keille. Vous le devez aller porte-un pou"
+    },
+    {
+      "id": "tcf-ss-a1-s37-co-4",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__annonce-8.mp3",
+      "ss": true,
+      "tx": 0.0,
+      "ans": 1.0,
+      "score": 0.35,
+      "heard": "Radio-france, bonjour. Il est 11er 17. Aujourd'hui, il fait beau en France. Le soleil brie. La température est de 20 degrés dans le nord, et"
+    },
+    {
+      "id": "tcf-ss-a1-s38-co-1",
+      "audio": "/lib/audio/tcf/co/objets/facile-a1__objet-8.mp3",
+      "ss": true,
+      "tx": 0.897,
+      "ans": 1.0,
+      "score": 0.933,
+      "heard": "J'ai mal ou d'eau à cause de mon travail. Je vais changer de chasse du bureau cette semaine puisque la mienne est ancienne. Mon médecin m'a "
+    },
+    {
+      "id": "tcf-ss-a1-s38-co-2",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__005.mp3",
+      "ss": true,
+      "tx": 0.818,
+      "ans": 1.0,
+      "score": 0.882,
+      "heard": "Bonjour, moi, c'est Paolo, et vous, vous vous appeler comment ? Je m'appelle Nicolas, tu peux dire tu... Enchanté Nicolas, tu as un prenant "
+    },
+    {
+      "id": "tcf-ss-a1-s38-co-3",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__013.mp3",
+      "ss": true,
+      "tx": 0.429,
+      "ans": 0.5,
+      "score": 0.454,
+      "heard": "Pâge 15, exercice 3 Bonjour Monsieur, c'est pour un passeport votre nom de famille, c'est le vous plaît, Zola, Z, O, L, A, mais tu es domimi"
+    },
+    {
+      "id": "tcf-ss-a1-s38-co-4",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__047.mp3",
+      "ss": true,
+      "tx": 0.706,
+      "ans": 0.0,
+      "score": 0.459,
+      "heard": "Bonjour, Marion. C'est Alice. J'habite maintenant dans un immeuble 9 au 4ème étage à tout l'on. Voici mon adresse. Dis-place de la liberté. "
+    },
+    {
+      "id": "tcf-ss-a1-s39-co-1",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__048.mp3",
+      "ss": true,
+      "tx": 0.917,
+      "ans": 1.0,
+      "score": 0.946,
+      "heard": "Bonjour monsieur, je cherche un appartement dans un immeuble calme. Très bien, et vous habité ou maintenant. J'habite boulevard des charmes,"
+    },
+    {
+      "id": "tcf-ss-a1-s39-co-2",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__049.mp3",
+      "ss": true,
+      "tx": 0.826,
+      "ans": 0.75,
+      "score": 0.799,
+      "heard": "Et Suez dépanage j'écoute. Bonjour Monsieur, je vous appelle pour une panne. Je n'ai plus de lumière. Qu'est-ce qu'il ne va pas exactement ?"
+    },
+    {
+      "id": "tcf-ss-a1-s39-co-3",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__058.mp3",
+      "ss": true,
+      "tx": 0.762,
+      "ans": 0.75,
+      "score": 0.758,
+      "heard": "Un problème d'eau ou d'électricité, un problème de seru, vous pouvez appeler l'assistance téléphonique haut, sans 1872, un réparateur, l'omb"
+    },
+    {
+      "id": "tcf-ss-a1-s39-co-4",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__061.mp3",
+      "ss": true,
+      "tx": 0.87,
+      "ans": 0.75,
+      "score": 0.828,
+      "heard": "Bonjour Monsieur ! Bonjour Madame ! Vous êtes nouvelle dans l'immobles ? Non ! Oui ! Je suis votre nouvelle voisine ! Est-ce que votre nom e"
+    },
+    {
+      "id": "tcf-ss-a1-s40-co-1",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__070.mp3",
+      "ss": true,
+      "tx": 0.526,
+      "ans": 0.5,
+      "score": 0.517,
+      "heard": "Pâge, quatre ans. Mon Imeble est très propre. J'ai des voisins calmes, et il ne me fume pas, et il n'y a rien. Et puis, il s'entre vous, et "
+    },
+    {
+      "id": "tcf-ss-a1-s40-co-2",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__071.mp3",
+      "ss": true,
+      "tx": 0.87,
+      "ans": 1.0,
+      "score": 0.915,
+      "heard": "Bonjour Monsieur Garan, vous allez bien ? Ça va, merci. Et vous ? Ça va, mais il y a des vélos dans le haut. Et on ne peut plus passer. Ah b"
+    },
+    {
+      "id": "tcf-ss-a1-s40-co-3",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__078.mp3",
+      "ss": true,
+      "tx": 0.857,
+      "ans": 0.5,
+      "score": 0.732,
+      "heard": "En France, il y a beaucoup d'étudiants étrangers, et il vienne de 1686 pays différents. De facultés sont très populaires, les lettres et les"
+    },
+    {
+      "id": "tcf-ss-a1-s40-co-4",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__079.mp3",
+      "ss": true,
+      "tx": 0.647,
+      "ans": 0.25,
+      "score": 0.508,
+      "heard": "Pâge 51, exercice 2. Maman, je commence la facque lundie, et j'ai déjà un tédé et un tépé. Merdit, le CM et à 8 heures. Merdit, j'ai une éva"
+    },
+    {
+      "id": "tcf-ss-a1-s41-co-1",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__127.mp3",
+      "ss": true,
+      "tx": 0.714,
+      "ans": 0.5,
+      "score": 0.639,
+      "heard": "C'est d'acqu'il m'adame ? Non, c'est à moi. Bonjour. De croissance il vous plaît. Et avec ceci ? Une baguette. Je voudrais aussi une tartosi"
+    },
+    {
+      "id": "tcf-ss-a1-s41-co-2",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__137.mp3",
+      "ss": true,
+      "tx": 0.955,
+      "ans": 1.0,
+      "score": 0.97,
+      "heard": "C'est à qui, monsieur ? Non, c'est à moi, bonjour madame, vous désirez, bonjour. Vous avez des sandwichs ? Oui, bien sûr, au saumon, au poul"
+    },
+    {
+      "id": "tcf-ss-a1-s41-co-3",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__144.mp3",
+      "ss": true,
+      "tx": 0.6,
+      "ans": 0.5,
+      "score": 0.565,
+      "heard": "Kabin et médicales des docteurs blancs et trucs pédiats. Nous recevons les enfants du lundi au vendredi de 9 heures à 19 heures. Si votre en"
+    },
+    {
+      "id": "tcf-ss-a1-s41-co-4",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__158.mp3",
+      "ss": true,
+      "tx": 1.0,
+      "ans": 0.0,
+      "score": 0.65,
+      "heard": "Bonjour, j'ai une brûlure à la main, et j'ai très mal. Vous pouvez m'aider si vous plait ? Oui, bien sûr. Voici une crème à mettre quatre fo"
+    },
+    {
+      "id": "tcf-ss-a1-s42-co-1",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__160.mp3",
+      "ss": true,
+      "tx": 0.879,
+      "ans": 0.75,
+      "score": 0.834,
+      "heard": "Excusez-moi ma dame. Vous pourriez m'aider si vous plaît. Oui. Je peux aller à pied à la place de la mérite. Non, regardez sur le plan c'est"
+    },
+    {
+      "id": "tcf-ss-a1-s42-co-2",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__169.mp3",
+      "ss": true,
+      "tx": 0.842,
+      "ans": 0.0,
+      "score": 0.547,
+      "heard": "Pâge 99. Exercice 4 Bonjour Messieurs, je voudrais détiquer de métro s'il vous plaît. J'ai beaucoup de trajets à faire à Bordeaux aujourd'hu"
+    },
+    {
+      "id": "tcf-ss-a1-s42-co-3",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__170.mp3",
+      "ss": true,
+      "tx": 0.821,
+      "ans": 0.75,
+      "score": 0.796,
+      "heard": "Bonjour Monsieur, vous avez un plan de la ville si le vous plaît, je cherche la préfecture. Oui, bien sûr. Voilà. Pour aller à la préfecture"
+    },
+    {
+      "id": "tcf-ss-a1-s42-co-4",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__175.mp3",
+      "ss": true,
+      "tx": 0.808,
+      "ans": 0.0,
+      "score": 0.525,
+      "heard": "bonjour nous sommes combien dans la voiture il y a deux autres passagers le trajet dure combien de temps le trajet dure six heures je voudra"
+    },
+    {
+      "id": "tcf-ss-a1-s43-co-1",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__179.mp3",
+      "ss": true,
+      "tx": 1.0,
+      "ans": 0.0,
+      "score": 0.65,
+      "heard": "Pardon madame, j'ai la place 46 côté fenêtre, voiture 4. Attendez, je regarde mon billet. Oh, excusez-moi, j'ai la place 46. C'est aussi une"
+    },
+    {
+      "id": "tcf-ss-a1-s43-co-2",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__182.mp3",
+      "ss": true,
+      "tx": 0.909,
+      "ans": 0.75,
+      "score": 0.853,
+      "heard": "Bonjour madame, quelle est votre destination ? Bonjour, je vais abroûselle. Bien. Le vol à destination de Bruxelles, départ, sept heures 15."
+    },
+    {
+      "id": "tcf-ss-a1-s43-co-3",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__197.mp3",
+      "ss": true,
+      "tx": 1.0,
+      "ans": 0.0,
+      "score": 0.65,
+      "heard": "Vous avez des chambres disponibles ? Oui, pour combien de personnes ? Je suis désolé, mais l'hôtel est complet. Je voudrais réserver une cha"
+    },
+    {
+      "id": "tcf-ss-a1-s43-co-4",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__annonce-23.mp3",
+      "ss": true,
+      "tx": 0.56,
+      "ans": 0.75,
+      "score": 0.627,
+      "heard": "Bonjour, votre film va commencer dans 15 minutes. Vous pouvez acheter des boissons au bar du premier étage. Les toilettes sont au deuxième é"
+    },
+    {
+      "id": "tcf-ss-a1-s44-co-4",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__conversation-43.mp3",
+      "ss": true,
+      "tx": 0.125,
+      "ans": 0.75,
+      "score": 0.344,
+      "heard": "Tu as vu la nouvelle preuve de français ? Non, je ne la connais pas, c'est qui ? Elle est très sympa. Regarde, c'est-elle là-bas, assis sur "
+    },
+    {
+      "id": "tcf-ss-a1-s45-co-2",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__instruction-4.mp3",
+      "ss": true,
+      "tx": 0.882,
+      "ans": 0.75,
+      "score": 0.836,
+      "heard": "Salut ! J'ai oublié mes clés sur la table à manger. Tu peux venir me les apporter au bureau ? Je finis à 17h30. On peut aller se promener au"
+    },
+    {
+      "id": "tcf-ss-a1-s45-co-3",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__message-11.mp3",
+      "ss": true,
+      "tx": 0.28,
+      "ans": 0.5,
+      "score": 0.357,
+      "heard": "Deux sur l'école. Exercice 11. Salut, c'est Guillaume. Je ne comprends pas l'exercice de mathématique pour l'indi. Tu peux m'aider? On peut "
+    },
+    {
+      "id": "tcf-ss-a1-s45-co-4",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__message-16.mp3",
+      "ss": true,
+      "tx": 0.292,
+      "ans": 0.5,
+      "score": 0.365,
+      "heard": "Bonjour, c'est Marie, je ne peux pas aller à l'école demain, j'ai un rendez-vous à l'hôpital. Tu peux m'apporter les devoirs chez moi le soi"
+    },
+    {
+      "id": "tcf-ss-a1-s46-co-1",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__message-20.mp3",
+      "ss": true,
+      "tx": 0.97,
+      "ans": 1.0,
+      "score": 0.98,
+      "heard": "Bonjour, c'est Baptiste, je ne comprends pas l'exercice de français, est-ce que tu peux m'aider ? Vient à la maison mercredi à 14 heures, on"
+    },
+    {
+      "id": "tcf-ss-a1-s46-co-2",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__message-6.mp3",
+      "ss": true,
+      "tx": 0.871,
+      "ans": 0.0,
+      "score": 0.566,
+      "heard": "Bonjour, c'est Thomas. Tu veux venir jouer au foot chez moi demain, mais parents m'ont acheté un nouveau ballon. Il est super. Vient à 16h e"
+    },
+    {
+      "id": "tcf-ss-a1-s46-co-3",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__message-9.mp3",
+      "ss": true,
+      "tx": 0.154,
+      "ans": 0.75,
+      "score": 0.362,
+      "heard": "Salut, c'est Nina. Je vais faire des courses avec ma cousine, c'est après midi à 14 heures. On doit acheter un cadeau pour l'anniversaire de"
+    },
+    {
+      "id": "tcf-ss-a1-s46-co-4",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__objet-4.mp3",
+      "ss": true,
+      "tx": 0.828,
+      "ans": 1.0,
+      "score": 0.888,
+      "heard": "Pour ce nouveau projet, je dois être organisé. Je vais acheter un carnet d'estilot de couleur et une règle. J'aimerais noter tous les événem"
+    },
+    {
+      "id": "tcf-ss-a1-s47-co-1",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__objet-9.mp3",
+      "ss": true,
+      "tx": 0.821,
+      "ans": 1.0,
+      "score": 0.884,
+      "heard": "Pour le mariage de Sophie et Lucien, nous allons mettre des fleurs blanches partout. Il y aura des dras en soi, une très grande voiture blan"
+    },
+    {
+      "id": "tcf-ss-a1-s47-co-3",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__radio-38.mp3",
+      "ss": true,
+      "tx": 0.852,
+      "ans": 1.0,
+      "score": 0.904,
+      "heard": "Vous voulez apprendre une langue étrangère, l'école de langue abécée, vous propose d'écours d'anglais, d'espagnol, d'Italiens et d'Allemands"
+    },
+    {
+      "id": "tcf-ss-a1-s47-co-4",
+      "audio": "/lib/audio/tcf/co/sante/facile-a1__038.mp3",
+      "ss": true,
+      "tx": 0.846,
+      "ans": 0.75,
+      "score": 0.812,
+      "heard": "Regarde Mami, j'ai des photos de mon nouvel appartement-à-un si, c'est un studio ? Non, un appartement, montre-moi. Oh, c'est grand et très "
+    },
+    {
+      "id": "tcf-ss-a1-s48-co-1",
+      "audio": "/lib/audio/tcf/co/sante/facile-a1__114.mp3",
+      "ss": true,
+      "tx": 0.667,
+      "ans": 0.75,
+      "score": 0.696,
+      "heard": "Pas, je 69, exercice, quatre. Alline, je ne comprends pas les tailles françaises. Tu peux m'expliquer ? Pas de problèmes catis. Qu'elle est "
+    },
+    {
+      "id": "tcf-ss-a1-s48-co-2",
+      "audio": "/lib/audio/tcf/co/sante/facile-a1__125.mp3",
+      "ss": true,
+      "tx": 1.0,
+      "ans": 0.5,
+      "score": 0.825,
+      "heard": "Nous recevons beaucoup de questions sur le pourboire en France. C'est simple, le pourboire n'est pas obligatoire, mais si vous voulez, vous "
+    },
+    {
+      "id": "tcf-ss-a1-s48-co-3",
+      "audio": "/lib/audio/tcf/co/transports/facile-a1__012.mp3",
+      "ss": true,
+      "tx": 0.632,
+      "ans": 0.5,
+      "score": 0.586,
+      "heard": "Bonjour, vous êtes bien au 0.39, 10, 22, 50. Bienvenue chez Lucie et Thomas, laissez votre nom, prenons et un numéro de téléphone si le vous"
+    },
+    {
+      "id": "tcf-ss-a1-s48-co-4",
+      "audio": "/lib/audio/tcf/co/transports/facile-a1__014.mp3",
+      "ss": true,
+      "tx": 0.444,
+      "ans": 0.5,
+      "score": 0.464,
+      "heard": "Et voici deux amis à ni et Nadine à ni choules, vous avez 37 ans, vous êtes Suisse et vous êtes 22. Et vous, Nadine Gatino, vous êtes Pharma"
+    },
+    {
+      "id": "tcf-ss-a1-s49-co-1",
+      "audio": "/lib/audio/tcf/co/transports/facile-a1__015.mp3",
+      "ss": true,
+      "tx": 0.429,
+      "ans": 0.25,
+      "score": 0.366,
+      "heard": "Mais... c'est Sophie? Sophie? Bonjour. Non. Moi c'est Nina. Pardon. Madame. Tu peux dire Nina, pas Madame. J'ai 25 ans. Et Sophie, ça m'a sœ"
+    },
+    {
+      "id": "tcf-ss-a1-s49-co-2",
+      "audio": "/lib/audio/tcf/co/transports/facile-a1__104.mp3",
+      "ss": true,
+      "tx": 0.903,
+      "ans": 1.0,
+      "score": 0.937,
+      "heard": "Bonjour madame, je viens pour l'emploi de vendeur dans votre entreprise. Ah oui, vous êtes monsieur quand ? Oui, c'est moi, merci de me rece"
+    },
+    {
+      "id": "tcf-ss-a1-s49-co-4",
+      "audio": "/lib/audio/tcf/co/transports/facile-a1__annonce-14.mp3",
+      "ss": true,
+      "tx": 0.96,
+      "ans": 1.0,
+      "score": 0.974,
+      "heard": "Madame, Monsieur, la ligne 4 du tramway est fermée du vin au 23 septembre de 19 heures à 23 heures pour cause de travaux. Pour aller à la ca"
+    },
+    {
+      "id": "tcf-ss-a1-s50-co-1",
+      "audio": "/lib/audio/tcf/co/transports/facile-a1__annonce-16.mp3",
+      "ss": true,
+      "tx": 0.786,
+      "ans": 1.0,
+      "score": 0.861,
+      "heard": "Mesdames, messieurs, le train numéro 8664 à destination de Nantes, départ prévu à 14 heures, 27 et tannulés. Vous pouvez prendre le train su"
+    },
+    {
+      "id": "tcf-ss-a1-s50-co-2",
+      "audio": "/lib/audio/tcf/co/transports/facile-a1__annonce-17.mp3",
+      "ss": true,
+      "tx": 0.897,
+      "ans": 0.75,
+      "score": 0.845,
+      "heard": "Mesdames, messieurs, l'embarquement du vol Air France numéro AF717 commence dans 15 minutes. Ce vol est à destination de Paris. Il par a 8 h"
+    },
+    {
+      "id": "tcf-ss-a1-s50-co-3",
+      "audio": "/lib/audio/tcf/co/transports/facile-a1__annonce-24.mp3",
+      "ss": true,
+      "tx": 0.586,
+      "ans": 0.25,
+      "score": 0.469,
+      "heard": "Mesdames et Messieurs, le train à destination de Paris va partir, voie numéro 10-7. Il s'arrête à la garde Bordeaux et arriva Paris à 15h25."
+    },
+    {
+      "id": "tcf-ss-a1-s50-co-4",
+      "audio": "/lib/audio/tcf/co/transports/facile-a1__annonce-29.mp3",
+      "ss": true,
+      "tx": 0.846,
+      "ans": 0.75,
+      "score": 0.812,
+      "heard": "Mesdames et messieurs, l'astation république est fermé pour travers sur la ligne 8 du métro du lundi au vendredi à partir de 20 heures. Vous"
+    },
+    {
+      "id": "tcf-ss-a1-s51-co-2",
+      "audio": "/lib/audio/tcf/co/transports/facile-a1__conversation-44.mp3",
+      "ss": true,
+      "tx": 0.261,
+      "ans": 0.5,
+      "score": 0.345,
+      "heard": "D'y à log 1, Michael, tu mets d'assortir les courses de la voiture s'il te plaît? Oui, j'arrive. D'y à log 2. Qu'est-ce que tu regardes? Une"
+    },
+    {
+      "id": "tcf-ss-a1-s51-co-3",
+      "audio": "/lib/audio/tcf/co/transports/facile-a1__instruction-1.mp3",
+      "ss": true,
+      "tx": 0.933,
+      "ans": 1.0,
+      "score": 0.957,
+      "heard": "3. Comprendre des instructions. Exercice 1. Bonjour. Ici le cabinet d'entaires. Je vous rappelle que vous avez rendez-vous le 13 janvier à 1"
+    },
+    {
+      "id": "tcf-ss-a1-s52-co-1",
+      "audio": "/lib/audio/tcf/co/travail/facile-a1__168.mp3",
+      "ss": true,
+      "tx": 0.857,
+      "ans": 0.0,
+      "score": 0.557,
+      "heard": "Vous êtes en France et vous avez seulement une journée pour visiter une grande ville, prenez un vélo, ou une trottinette électrique en libre"
+    },
+    {
+      "id": "tcf-ss-a1-s52-co-2",
+      "audio": "/lib/audio/tcf/co/travail/facile-a1__171.mp3",
+      "ss": true,
+      "tx": 0.821,
+      "ans": 0.75,
+      "score": 0.796,
+      "heard": "Alors, Marianne, pourquoi tu ne prends pas le train ? J'adore le covoiturage. Les conducteurs et les passagers sont sympas. Et les voitures "
+    },
+    {
+      "id": "tcf-ss-a1-s52-co-3",
+      "audio": "/lib/audio/tcf/co/travail/facile-a1__177.mp3",
+      "ss": true,
+      "tx": 0.762,
+      "ans": 0.0,
+      "score": 0.495,
+      "heard": "Mesdames, messieurs, bonjour. La vitesse de notre TGV est maintenant de 300 kilomètres heures. La rivée en garde Bordeaux est prévu à 11 heu"
+    },
+    {
+      "id": "tcf-ss-a1-s52-co-4",
+      "audio": "/lib/audio/tcf/co/travail/facile-a1__186.mp3",
+      "ss": true,
+      "tx": 0.826,
+      "ans": 0.0,
+      "score": 0.537,
+      "heard": "Les passagers du vol Air France pour Paris sont invités à se présenter porte-bédouze. Le vol à destination de Paris est retardé. Qu'elle est"
+    },
+    {
+      "id": "tcf-ss-a1-s53-co-1",
+      "audio": "/lib/audio/tcf/co/travail/facile-a1__190.mp3",
+      "ss": true,
+      "tx": 0.889,
+      "ans": 0.0,
+      "score": 0.578,
+      "heard": "pardon monsieur, je ne trouve pas ma valise sur le tapis 4. Votre numéro de vol et le KL-173? Oui, je viens d'amsterdame. Tous les bagages s"
+    },
+    {
+      "id": "tcf-ss-a1-s53-co-2",
+      "audio": "/lib/audio/tcf/co/travail/facile-a1__191.mp3",
+      "ss": true,
+      "tx": 0.895,
+      "ans": 0.0,
+      "score": 0.582,
+      "heard": "Clouée, tu as déjà ta carte d'embarquement ? Non, je dois aller au comptoir d'enregistrement. J'ai deux valises à enregistrer. Tu dois arriv"
+    },
+    {
+      "id": "tcf-ss-a1-s53-co-3",
+      "audio": "/lib/audio/tcf/co/travail/facile-a1__193.mp3",
+      "ss": true,
+      "tx": 0.783,
+      "ans": 0.0,
+      "score": 0.509,
+      "heard": "bonjour et bienvenue au camping boval bonjour on voudrait réserver pour de nuit s'il vous plaît vous avez une tente un camping car une carav"
+    },
+    {
+      "id": "tcf-ss-a1-s53-co-4",
+      "audio": "/lib/audio/tcf/co/travail/facile-a1__message-12.mp3",
+      "ss": true,
+      "tx": 0.88,
+      "ans": 1.0,
+      "score": 0.922,
+      "heard": "Bonjour, ici monsieur Dujardin. Je vous confirme l'heure de la réunion de demain matin. Elle est à 10 heures et demi. Le directeur commercia"
+    },
+    {
+      "id": "tcf-ss-a1-s54-co-1",
+      "audio": "/lib/audio/tcf/co/vetements/facile-a1__134.mp3",
+      "ss": true,
+      "tx": 0.545,
+      "ans": 0.0,
+      "score": 0.355,
+      "heard": "Chérie, j'achète quoi ? De baguette ? De croissons ? Dépanne ou chocolat ? Oui ! Un panne au chocolat, mais pas de panne au raisin. D'accord"
+    },
+    {
+      "id": "tcf-ss-a1-s54-co-2",
+      "audio": "/lib/audio/tcf/co/vetements/facile-a1__145.mp3",
+      "ss": true,
+      "tx": 0.5,
+      "ans": 0.5,
+      "score": 0.5,
+      "heard": "A l'eau, Dr. Rou, c'est Madame Martin, mon fils de cinq ans a une d'encasser. Est-ce que je peux venir au cabinet médical ? Non, appelé le c"
+    },
+    {
+      "id": "tcf-ss-a1-s54-co-3",
+      "audio": "/lib/audio/tcf/co/vetements/facile-a1__147.mp3",
+      "ss": true,
+      "tx": 0.68,
+      "ans": 0.5,
+      "score": 0.617,
+      "heard": "Le nouveau cabinet médical, les trois chaînes, accueillent 5 médecins. Pour vos dons, prenez rendez-vous avec le docteur Martin d'antiste. P"
+    },
+    {
+      "id": "tcf-a2j-s1-co-1",
+      "audio": "/lib/audio/tcf/co/radio/les-annonces-publiques-1.mp3",
+      "ss": false,
+      "tx": 0.677,
+      "ans": 0.0,
+      "score": 0.44,
+      "heard": "Pas bientôt commencer. Merci de présenter votre billet à l'autès, puis d'entrer dans la salle. Ferme-ture des portes dans 10 minutes. Anance"
+    },
+    {
+      "id": "tcf-a2j-s1-co-2",
+      "audio": "/lib/audio/tcf/co/radio/les-annonces-a-la-radio-1.mp3",
+      "ss": false,
+      "tx": 0.829,
+      "ans": 0.333,
+      "score": 0.655,
+      "heard": "Les groupes de rock, de pop, de jazz et de musique électronique, tous les sois raventurent sur la place Saint-Exupérie. Vous pouvez prendre "
+    },
+    {
+      "id": "tcf-a2j-s1-co-3",
+      "audio": "/lib/audio/tcf/co/sante/chez-le-dentiste.mp3",
+      "ss": false,
+      "tx": 0.875,
+      "ans": 0.5,
+      "score": 0.744,
+      "heard": "Exercice 3. Bonjour, ici le secretariat du docteur Ladan. Je vous informe que le rendez-vous de Beatrice de vendredi 18 avril à 17 heures es"
+    },
+    {
+      "id": "tcf-a2j-s1-co-4",
+      "audio": "/lib/audio/tcf/co/ecole/en-classe-1.mp3",
+      "ss": false,
+      "tx": 0.943,
+      "ans": 0.0,
+      "score": 0.613,
+      "heard": "Je dois lui donner un document. Oui, elle est dans la salle des professeurs. Ah, très bien, merci, j'y vais. Dialogue 2 Salut Pauline, tu va"
+    },
+    {
+      "id": "tcf-a2j-s2-co-1",
+      "audio": "/lib/audio/tcf/co/radio/les-annonces-publiques-2.mp3",
+      "ss": false,
+      "tx": 0.7,
+      "ans": 0.0,
+      "score": 0.455,
+      "heard": "Une avec votre professeur de sport, madame la roche, n'oubliez pas de prendre vous, ma yote-bain et vous serviettes. Annance 2 Le rendez-vou"
+    },
+    {
+      "id": "tcf-a2j-s2-co-2",
+      "audio": "/lib/audio/tcf/co/radio/les-annonces-a-la-radio-2.mp3",
+      "ss": false,
+      "tx": 0.892,
+      "ans": 0.0,
+      "score": 0.58,
+      "heard": "Pauline va nous expliquer comment elle réussit toujours de très bonne crepe pour régaler toute sa famille. Alors, sortez vite de quoi écrire"
+    },
+    {
+      "id": "tcf-a2j-s2-co-3",
+      "audio": "/lib/audio/tcf/co/loisirs/le-sport-2.mp3",
+      "ss": false,
+      "tx": 0.795,
+      "ans": 0.333,
+      "score": 0.633,
+      "heard": "Exercie 3. Salut, c'est Léa. De main, je vais voir un match de rugby avec mon frère au Stad Gallo. C'est à 15h30. Tu veux venir? Rendez-vous"
+    },
+    {
+      "id": "tcf-a2j-s2-co-4",
+      "audio": "/lib/audio/tcf/co/ecole/en-classe-2.mp3",
+      "ss": false,
+      "tx": 0.897,
+      "ans": 0.0,
+      "score": 0.583,
+      "heard": "Il est comment ? Il est vraiment très bien, tu devrais l'écouter. D'accord, je vais suivre ton conseil. Merci. Dialogue 2 Tu n'est pas venu "
+    },
+    {
+      "id": "tcf-a2-s1-co-1",
+      "audio": "/lib/audio/tcf/co/radio/les-annonces-publiques-3.mp3",
+      "ss": false,
+      "tx": 0.8,
+      "ans": 0.167,
+      "score": 0.578,
+      "heard": "puis répondez. Le salon de l'automobile est heureux de vous accueillir toute la journée de 10 heures à 10 neveurs. Ne manquez pas la présent"
+    },
+    {
+      "id": "tcf-a2-s1-co-2",
+      "audio": "/lib/audio/tcf/co/radio/les-annonces-a-la-radio-3.mp3",
+      "ss": false,
+      "tx": 0.762,
+      "ans": 0.333,
+      "score": 0.612,
+      "heard": "Le cinéma le dendit rouvre l'indiprochin après cinq mois de travaux. Rendez-vous à 20 heures pour découvrir ses films et ses nouvelles salle"
+    },
+    {
+      "id": "tcf-a2p-s1-co-1",
+      "audio": "/lib/audio/tcf/co/radio/les-annonces-publiques-4.mp3",
+      "ss": false,
+      "tx": 1.0,
+      "ans": 0.0,
+      "score": 0.65,
+      "heard": "Le guichet de la bibliothèque est fermé. Pour rendre vos livres, merci d'utiliser la boîte qui se trouve près de l'entrée à côté des ordinat"
+    },
+    {
+      "id": "tcf-a2p-s1-co-2",
+      "audio": "/lib/audio/tcf/co/radio/les-annonces-a-la-radio-4.mp3",
+      "ss": false,
+      "tx": 0.739,
+      "ans": 0.167,
+      "score": 0.539,
+      "heard": "vendredi prochain, venu écouter le concert des plus belles music de film avec un orchestre de 50 musiciens, réservé sur internet pour payer "
+    },
+    {
+      "id": "tcf-a2p-s1-co-3",
+      "audio": "/lib/audio/tcf/co/loisirs/le-cours-de-theatre.mp3",
+      "ss": false,
+      "tx": 0.833,
+      "ans": 0.167,
+      "score": 0.6,
+      "heard": "Salut ! C'est Malika ! Je te téléphones pour le cours de théâtre, samedi ! Le rachangé, le cours est avancé à 15 heures, parce qu'après, à 1"
+    },
+    {
+      "id": "tcf-a2p-s1-co-4",
+      "audio": "/lib/audio/tcf/co/loisirs/la-sortie-entre-amis.mp3",
+      "ss": false,
+      "tx": 0.926,
+      "ans": 0.0,
+      "score": 0.602,
+      "heard": "Dialog 1 Qu'est-ce que tu fais à samedi ? Je ne sais pas pourquoi. Tu veux venir avec moi voir la nouvelle exposition sur les mangas. Oui av"
+    },
+    {
+      "id": "tcf-a2p-s2-co-1",
+      "audio": "/lib/audio/tcf/co/loisirs/au-theatre.mp3",
+      "ss": false,
+      "tx": 0.833,
+      "ans": 0.2,
+      "score": 0.612,
+      "heard": "Mesdames, mesdames et mesdames, mes yeux, votre attention si vous plait. Le spectacle va commencer dans cinq minutes. Nous vous invitons à v"
+    },
+    {
+      "id": "tcf-a2p-s2-co-2",
+      "audio": "/lib/audio/tcf/co/loisirs/au-cinema-2.mp3",
+      "ss": false,
+      "tx": 0.811,
+      "ans": 0.5,
+      "score": 0.702,
+      "heard": "Salut ! C'est Julie ! Je t'appelle pour te confirmer notre rendez-vous au cinéma, ce soir à 18h. Comme je te l'ai dit, mon père va venir nou"
+    },
+    {
+      "id": "tcf-a2p-s2-co-3",
+      "audio": "/lib/audio/tcf/co/fetes/la-fete-de-la-musique.mp3",
+      "ss": false,
+      "tx": 0.909,
+      "ans": 0.333,
+      "score": 0.708,
+      "heard": "Bonjour à tous, et oui, c'est bien toléter, et le jour de l'été, le 21 juin, il fait chaud, mais qu'est-ce qu'on fait aussi partout en Franc"
+    },
+    {
+      "id": "tcf-a2p-s2-co-4",
+      "audio": "/lib/audio/tcf/co/vie-quotidienne/la-famille-d-accueil.mp3",
+      "ss": false,
+      "tx": 0.935,
+      "ans": 0.0,
+      "score": 0.608,
+      "heard": "Dialogue 1 Tu veux venir avec moi au stade ? Tu vas faire quoi ? Je vais jouer au foot avec mes amis et après on va manger une pizza chez Jo"
+    },
+    {
+      "id": "tcf-a2p-s4-co-1",
+      "audio": "/lib/audio/tcf/co/transports/a-l-aeroport.mp3",
+      "ss": false,
+      "tx": 0.971,
+      "ans": 0.6,
+      "score": 0.841,
+      "heard": "Mais d'un messieurs, votre attention s'il vous plaît. Le vol AF, 438 à destination de Paris, va avoir environ 40 minutes de retard. La raiso"
+    },
+    {
+      "id": "tcf-a2p-s4-co-2",
+      "audio": "/lib/audio/tcf/co/magasins/au-magasin-de-meubles.mp3",
+      "ss": false,
+      "tx": 0.811,
+      "ans": 0.833,
+      "score": 0.819,
+      "heard": "Bonjour, je suis Nicolas DuPont. Je suis vendeur au magasin Buraudéco. Je vous appelle pour vous informer qu'à l'occasion des fêtes de Noël,"
+    },
+    {
+      "id": "tcf-a2p-s4-co-3",
+      "audio": "/lib/audio/tcf/co/actualite/le-salon-de-la-patisserie.mp3",
+      "ss": false,
+      "tx": 0.839,
+      "ans": 0.333,
+      "score": 0.662,
+      "heard": "Ière, c'est terminé le salon de la pâtisserie de Paris. Avant, les gourmands se retrouvaient au salon cuisiner. Mais depuis qu'il a fermé, c"
+    },
+    {
+      "id": "tcf-a2p-s4-co-4",
+      "audio": "/lib/audio/tcf/co/vacances/en-vacances-chez-des-amis.mp3",
+      "ss": false,
+      "tx": 0.9,
+      "ans": 0.0,
+      "score": 0.585,
+      "heard": "Dialogue 1. Faut-tu me donner le numéro de ton spécialiste ? Je veux prendre rendez-vous pour mon dos."
+    },
+    {
+      "id": "tcf-a2-sa-co-1",
+      "audio": "/lib/audio/tcf/co/radio/les-annonces-publiques-5.mp3",
+      "ss": false,
+      "tx": 0.688,
+      "ans": 0.167,
+      "score": 0.505,
+      "heard": "ou qu'humain, puis répondez. Votre attention, s'il vous plaît. Le train numéro 346, annoncer sur la voie 15, à un retard de 20 minutes."
+    },
+    {
+      "id": "tcf-a2-sa-co-2",
+      "audio": "/lib/audio/tcf/co/radio/les-informations-1.mp3",
+      "ss": false,
+      "tx": 0.88,
+      "ans": 0.167,
+      "score": 0.63,
+      "heard": "La Librarie, après l'école, vous propose une soirée spéciale, le mercredi 15 juin. Venez rencontrer l'auteur Marc Gallant qui s'aura un nouv"
+    },
+    {
+      "id": "tcf-a2-sa-co-3",
+      "audio": "/lib/audio/tcf/co/vacances/a-l-hotel.mp3",
+      "ss": false,
+      "tx": 0.824,
+      "ans": 0.333,
+      "score": 0.652,
+      "heard": "Tu y m'as d'amelangloir. Je vous appelle pour réserver deux chambres d'oubles pour 4 personnes du 5 au 7 juin. J'aimerais connaître le prix "
+    },
+    {
+      "id": "tcf-a2-sb-co-1",
+      "audio": "/lib/audio/tcf/co/radio/les-annonces-publiques-6.mp3",
+      "ss": false,
+      "tx": 0.6,
+      "ans": 0.0,
+      "score": 0.39,
+      "heard": "ou tu m'en puer et ponder. Chère Clion, êtes-vous content des services de votre magasin? Nous assistons vont venir vers vous pour vous poser"
+    },
+    {
+      "id": "tcf-a2-sb-co-2",
+      "audio": "/lib/audio/tcf/co/radio/les-informations-2.mp3",
+      "ss": false,
+      "tx": 0.667,
+      "ans": 0.167,
+      "score": 0.492,
+      "heard": "La ville de Toulon organise Samdi 24 septembre, une grande vente publique Place Jean-Jorès. Vous voulez vendre d'étables ou d'échesses que v"
+    },
+    {
+      "id": "tcf-a2-sb-co-3",
+      "audio": "/lib/audio/tcf/co/travail/la-formation-professionnelle.mp3",
+      "ss": false,
+      "tx": 0.833,
+      "ans": 0.5,
+      "score": 0.717,
+      "heard": "A l'eau, c'est Marie du service des ressources humaines. Je te contacte au sujet des cours d'Espagnol professionnel. La directrice a donné s"
+    },
+    {
+      "id": "tcf-a2-sc-co-1",
+      "audio": "/lib/audio/tcf/co/radio/les-annonces-publiques-7.mp3",
+      "ss": false,
+      "tx": 0.882,
+      "ans": 0.0,
+      "score": 0.574,
+      "heard": "Les élèves de la continne peuvent passer maintenant à la cuisine. Les desserts sont finalement arrivés, mais avec du retard. Pour nous exqui"
+    },
+    {
+      "id": "tcf-a2-sc-co-2",
+      "audio": "/lib/audio/tcf/co/radio/les-informations-3.mp3",
+      "ss": false,
+      "tx": 1.0,
+      "ans": 0.333,
+      "score": 0.767,
+      "heard": "Grand projet pour la francophonie. Vous allez fabriquer votre dictionnaire francophone. Vous habitez dans un pays où sur un continent franco"
+    },
+    {
+      "id": "tcf-a2-sc-co-3",
+      "audio": "/lib/audio/tcf/co/vacances/le-voyage.mp3",
+      "ss": false,
+      "tx": 0.844,
+      "ans": 0.0,
+      "score": 0.548,
+      "heard": "Salut Lisa, c'est Miriam. C'est bon. Mais parents sont d'accord pour les vacances. On peut passer deux semaines d'été chez mes cousins au bo"
+    },
+    {
+      "id": "tcf-ss-a2-s1-co-2",
+      "audio": "/lib/audio/tcf/co/achats/moyen-a2__006.mp3",
+      "ss": true,
+      "tx": 0.917,
+      "ans": 0.5,
+      "score": 0.771,
+      "heard": "Bonjour, monsieur. Je viens rapporter ce manteau. Il ne me va pas. D'accord, madame. Nous avons d'autres tailles si vous souhaitez échanger."
+    },
+    {
+      "id": "tcf-ss-a2-s1-co-3",
+      "audio": "/lib/audio/tcf/co/achats/moyen-a2__028.mp3",
+      "ss": true,
+      "tx": 0.417,
+      "ans": 0.333,
+      "score": 0.388,
+      "heard": "Bonjour madame, où se trouve le service des titres de ces jours ? Il faut renouveler votre carte, monsieur. Elle a expié. Voici un récépicé "
+    },
+    {
+      "id": "tcf-ss-a2-s1-co-4",
+      "audio": "/lib/audio/tcf/co/achats/moyen-a2__029.mp3",
+      "ss": true,
+      "tx": 0.909,
+      "ans": 0.667,
+      "score": 0.824,
+      "heard": "Pour ouvrir un compte, il faut un justificatif de domicile et une pièce d'identité. Conté une semaine pour avoir votre carte bancaire et de "
+    },
+    {
+      "id": "tcf-ss-a2-s2-co-1",
+      "audio": "/lib/audio/tcf/co/achats/moyen-a2__039.mp3",
+      "ss": true,
+      "tx": 0.697,
+      "ans": 0.5,
+      "score": 0.628,
+      "heard": "Découvrez notre offre spécial d'abonnements 100% numériques à tout savoir, accès illimité au site et à la plie avec plus de 50 contenus par "
+    },
+    {
+      "id": "tcf-ss-a2-s2-co-2",
+      "audio": "/lib/audio/tcf/co/achats/moyen-a2__annonce-12.mp3",
+      "ss": true,
+      "tx": 0.676,
+      "ans": 0.0,
+      "score": 0.439,
+      "heard": "Bonjour, dans votre supermaché, à tout prix, ne manquez pas les promotions sur les produits de beauté. Pour un gel douche ou un savon acheté"
+    },
+    {
+      "id": "tcf-ss-a2-s2-co-3",
+      "audio": "/lib/audio/tcf/co/achats/moyen-a2__annonce-46.mp3",
+      "ss": true,
+      "tx": 0.897,
+      "ans": 0.5,
+      "score": 0.758,
+      "heard": "3, dans les lieux publics, exercices 46, lisez les questions, écoutez l'enregistrement, puis répondez. Vous êtes dans un grand magasin en Fr"
+    },
+    {
+      "id": "tcf-ss-a2-s2-co-4",
+      "audio": "/lib/audio/tcf/co/achats/moyen-a2__conversation-48.mp3",
+      "ss": true,
+      "tx": 0.829,
+      "ans": 0.5,
+      "score": 0.714,
+      "heard": "Dialogue 1 Wow, sympa, ton nouveau pantalon. Tu l'as acheté au centre commercial ? Ah, merci. Oui, il vient du centre commercial. Et tu l'as"
+    },
+    {
+      "id": "tcf-ss-a2-s3-co-1",
+      "audio": "/lib/audio/tcf/co/achats/moyen-a2__message-30.mp3",
+      "ss": true,
+      "tx": 0.69,
+      "ans": 0.833,
+      "score": 0.74,
+      "heard": "Bonjour, ici le service client du marché de Rajis. Manœurusement, votre commande a pris du retard. Je vous informe aussi que nous n'avons pl"
+    },
+    {
+      "id": "tcf-ss-a2-s3-co-2",
+      "audio": "/lib/audio/tcf/co/achats/moyen-a2__message-37.mp3",
+      "ss": true,
+      "tx": 0.92,
+      "ans": 0.333,
+      "score": 0.715,
+      "heard": "Bonjour, c'est la société FMAC. Vous avez participé à notre grand jeu concours le mois dernier. Je vous informe que vous avez gagné une télé"
+    },
+    {
+      "id": "tcf-ss-a2-s3-co-3",
+      "audio": "/lib/audio/tcf/co/achats/moyen-a2__message-47.mp3",
+      "ss": true,
+      "tx": 0.778,
+      "ans": 0.0,
+      "score": 0.506,
+      "heard": "Lisez les questions, écoutez l'enregistrement, puis répondez. Vous entendez ces annonces dans un centre commercial. répondez aux questions. "
+    },
+    {
+      "id": "tcf-ss-a2-s3-co-4",
+      "audio": "/lib/audio/tcf/co/actualite/moyen-a2__033.mp3",
+      "ss": true,
+      "tx": 0.775,
+      "ans": 0.667,
+      "score": 0.737,
+      "heard": "Tu as regardé les infos, hier soir, ils ont parlé de la crise économique. Non, hier, je suis partie tard du bureau. Tu sais, je ne regarde p"
+    },
+    {
+      "id": "tcf-ss-a2-s4-co-1",
+      "audio": "/lib/audio/tcf/co/actualite/moyen-a2__036.mp3",
+      "ss": true,
+      "tx": 0.357,
+      "ans": 0.5,
+      "score": 0.407,
+      "heard": "Tu as regardé les infos hier soir, ils ont parlé de la crise économique. Non, mais je suis abonné à un journal en ligne, et ils ont aussi pa"
+    },
+    {
+      "id": "tcf-ss-a2-s4-co-2",
+      "audio": "/lib/audio/tcf/co/actualite/moyen-a2__037.mp3",
+      "ss": true,
+      "tx": 0.684,
+      "ans": 1.0,
+      "score": 0.795,
+      "heard": "J'ai acheté trois magasines pour lire à la plage, l'expresse pour l'actualité économique et critique, elle, pour la mode, et télérama pour l"
+    },
+    {
+      "id": "tcf-ss-a2-s4-co-3",
+      "audio": "/lib/audio/tcf/co/actualite/moyen-a2__040.mp3",
+      "ss": true,
+      "tx": 0.964,
+      "ans": 0.667,
+      "score": 0.86,
+      "heard": "Voici le résultat de notre étude, les Français et l'information sur Internet. Les auteurs ont analysé les données de connexion de 2372 perso"
+    },
+    {
+      "id": "tcf-ss-a2-s4-co-4",
+      "audio": "/lib/audio/tcf/co/actualite/moyen-a2__radio-55.mp3",
+      "ss": true,
+      "tx": 0.935,
+      "ans": 0.333,
+      "score": 0.725,
+      "heard": "Lisez les questions, écoutez l'enregistrement, puis répondez. Vous écoutez ces informations à la radio, répondez aux questions. Document 1 C"
+    },
+    {
+      "id": "tcf-ss-a2-s5-co-1",
+      "audio": "/lib/audio/tcf/co/administration/moyen-a2__025.mp3",
+      "ss": true,
+      "tx": 0.912,
+      "ans": 0.5,
+      "score": 0.768,
+      "heard": "Personne suivante, j'ai dit, personne suivante, bonjour, bonjour. Je voudrais des informations pour renouveler mon titre de ces jours qui ex"
+    },
+    {
+      "id": "tcf-ss-a2-s5-co-2",
+      "audio": "/lib/audio/tcf/co/administration/moyen-a2__030.mp3",
+      "ss": true,
+      "tx": 0.944,
+      "ans": 0.6,
+      "score": 0.824,
+      "heard": "Je voudrais envoyer une lettre recommandée. Comment ça fonctionne ? Avec une lettre recommandée, vous recevez chez vous un accusé de récepti"
+    },
+    {
+      "id": "tcf-ss-a2-s5-co-4",
+      "audio": "/lib/audio/tcf/co/administration/moyen-a2__166.mp3",
+      "ss": true,
+      "tx": 0.364,
+      "ans": 0.8,
+      "score": 0.516,
+      "heard": "Tu as trouvé un job pour cet été ? Non, je n'ai rien trouvé. Et c'est le site Studirama, il y a plein d'offres d'emploi. Marie a un contrat "
+    },
+    {
+      "id": "tcf-ss-a2-s6-co-2",
+      "audio": "/lib/audio/tcf/co/administration/moyen-a2__message-29.mp3",
+      "ss": true,
+      "tx": 0.853,
+      "ans": 0.667,
+      "score": 0.788,
+      "heard": "Bonjour, c'est Jérôme de Formation ABC. Je vous appelle pour confirmer votre inscription à la formation d'informatique que nous organisons l"
+    },
+    {
+      "id": "tcf-ss-a2-s7-co-1",
+      "audio": "/lib/audio/tcf/co/ecole/moyen-a2__annonce-36.mp3",
+      "ss": true,
+      "tx": 0.806,
+      "ans": 0.0,
+      "score": 0.524,
+      "heard": "Isé les questions, écoutez l'engestrement, puis répondez. Vous entendez ces annonces dans votre écoute. Repondez aux questions. Anonce 1. Le"
+    },
+    {
+      "id": "tcf-ss-a2-s7-co-2",
+      "audio": "/lib/audio/tcf/co/ecole/moyen-a2__annonce-40.mp3",
+      "ss": true,
+      "tx": 0.711,
+      "ans": 0.0,
+      "score": 0.462,
+      "heard": "vous entendez ses annonces d'un votre école, répondez aux questions. Anonce 1. La Diprochin, la Café Théria ouvrira exceptionnellement à 11h"
+    },
+    {
+      "id": "tcf-ss-a2-s7-co-3",
+      "audio": "/lib/audio/tcf/co/ecole/moyen-a2__conversation-40.mp3",
+      "ss": true,
+      "tx": 0.881,
+      "ans": 0.667,
+      "score": 0.806,
+      "heard": "Bonjour ma lame que désiré vous aujourd'hui. Bonjour, alors je vais prendre le plat d'isour, un jus d'orange et un tir à misseau s'il vous p"
+    },
+    {
+      "id": "tcf-ss-a2-s8-co-1",
+      "audio": "/lib/audio/tcf/co/ecole/moyen-a2__message-45.mp3",
+      "ss": true,
+      "tx": 0.846,
+      "ans": 0.667,
+      "score": 0.783,
+      "heard": "Lisez les questions. Écoutez l'enregistrement, puis répondez. Vous écoutez ce message de votre professeur de tennis sur votre répondaire. Bo"
+    },
+    {
+      "id": "tcf-ss-a2-s8-co-2",
+      "audio": "/lib/audio/tcf/co/famille/moyen-a2__016.mp3",
+      "ss": true,
+      "tx": 0.857,
+      "ans": 1.0,
+      "score": 0.907,
+      "heard": "Salut l'heure. Je viens de partir du bureau. Donc, je vais chercher ma voiture et j'arrive. Très bien. Mais il vienne d'annoncer un véhicule"
+    },
+    {
+      "id": "tcf-ss-a2-s8-co-4",
+      "audio": "/lib/audio/tcf/co/famille/moyen-a2__066.mp3",
+      "ss": true,
+      "tx": 0.357,
+      "ans": 0.4,
+      "score": 0.372,
+      "heard": "Bonjour, je viens chercher au dors. Je suis sa nouvelle babysitter. Oui, j'ai vu l'autorisation que les parents ont signé dans le cahier de "
+    },
+    {
+      "id": "tcf-ss-a2-s9-co-2",
+      "audio": "/lib/audio/tcf/co/famille/moyen-a2__072.mp3",
+      "ss": true,
+      "tx": 1.0,
+      "ans": 0.8,
+      "score": 0.93,
+      "heard": "Bonjour, nous sommes les parents d'Alexandre. Nous avons reçu une convocation. Bonjour, à s'ayez vous s'il vous plaît, Alexandre, tu peux t'"
+    },
+    {
+      "id": "tcf-ss-a2-s9-co-3",
+      "audio": "/lib/audio/tcf/co/famille/moyen-a2__conversation-46.mp3",
+      "ss": true,
+      "tx": 0.867,
+      "ans": 0.5,
+      "score": 0.738,
+      "heard": "Dialogue 1 Alors, cette fête d'anniversaire, c'était comment ? C'était génial. Nous étions 20 personnes, nous avons d'encer toute l'annuie. "
+    },
+    {
+      "id": "tcf-ss-a2-s9-co-4",
+      "audio": "/lib/audio/tcf/co/inviter/moyen-a2__041.mp3",
+      "ss": true,
+      "tx": 0.842,
+      "ans": 0.333,
+      "score": 0.664,
+      "heard": "Dis-moi, Pedro, qu'est-ce que tu fais, je dis, tu es libre ? Bon, pourquoi ? C'est le 14 juillet et on ne travaille pas je dis, tu sais ? Ah"
+    },
+    {
+      "id": "tcf-ss-a2-s10-co-1",
+      "audio": "/lib/audio/tcf/co/inviter/moyen-a2__050.mp3",
+      "ss": true,
+      "tx": 0.733,
+      "ans": 1.0,
+      "score": 0.827,
+      "heard": "Salut, Teresa. Tu as éallé au musée, sa weekend ? Oui. Même à l'heureusement, j'ai su zallé toute seule. Je ne connais personne ici. Mais, p"
+    },
+    {
+      "id": "tcf-ss-a2-s10-co-4",
+      "audio": "/lib/audio/tcf/co/inviter/moyen-a2__111.mp3",
+      "ss": true,
+      "tx": 0.263,
+      "ans": 0.5,
+      "score": 0.346,
+      "heard": "Aujourd'hui, c'est la fête de la mer, c'est l'ébration sur la plage à 11h30, animations musicales, toute la journée, feu d'artifice à 22h30 "
+    },
+    {
+      "id": "tcf-ss-a2-s11-co-1",
+      "audio": "/lib/audio/tcf/co/inviter/moyen-a2__117.mp3",
+      "ss": true,
+      "tx": 0.583,
+      "ans": 0.6,
+      "score": 0.589,
+      "heard": "Ma Thee va mal ! Qu'est-ce qu'elle a ? Il faut que le docteur nous reçoive, c'est durjon. Malheureusement, le docteur est absent aujourd'hui"
+    },
+    {
+      "id": "tcf-ss-a2-s11-co-2",
+      "audio": "/lib/audio/tcf/co/inviter/moyen-a2__conversation-39.mp3",
+      "ss": true,
+      "tx": 0.71,
+      "ans": 0.333,
+      "score": 0.578,
+      "heard": "Fils, tu voudrais venir avec moi à l'exposition musical, ce weekend. Ah oui, pourquoi pas? C'est ou? Pas très loin d'ici, à l'apporte de la "
+    },
+    {
+      "id": "tcf-ss-a2-s11-co-3",
+      "audio": "/lib/audio/tcf/co/inviter/moyen-a2__message-27.mp3",
+      "ss": true,
+      "tx": 0.744,
+      "ans": 0.833,
+      "score": 0.775,
+      "heard": "Salut, c'est Max, ça va ? Je t'appelent pour te confirmer le concert du samedi 18 juin. Le concert commence à 21h, ça va se terminer vers 22"
+    },
+    {
+      "id": "tcf-ss-a2-s11-co-4",
+      "audio": "/lib/audio/tcf/co/inviter/moyen-a2__message-32.mp3",
+      "ss": true,
+      "tx": 0.829,
+      "ans": 0.833,
+      "score": 0.83,
+      "heard": "Bonjour, c'est Marianne. Je t'appelle pour te demander un petit service. Est-ce que tu pourrais aller chercher au le gars à l'école Mardi pr"
+    },
+    {
+      "id": "tcf-ss-a2-s12-co-1",
+      "audio": "/lib/audio/tcf/co/inviter/moyen-a2__radio-50.mp3",
+      "ss": true,
+      "tx": 0.882,
+      "ans": 0.0,
+      "score": 0.574,
+      "heard": "4 à la radio, exercice 50, lisez les questions, écoutez l'enregistrement, puis répondez, vous écoutez ces informations à la radio, répondez "
+    },
+    {
+      "id": "tcf-ss-a2-s12-co-2",
+      "audio": "/lib/audio/tcf/co/journee/moyen-a2__044.mp3",
+      "ss": true,
+      "tx": 0.75,
+      "ans": 0.5,
+      "score": 0.663,
+      "heard": "Cette dix de venir manger à la maison dimanche prochain, le dix. C'est gentil mais je ne suis pas libre. Et le dix mange d'après, le dix sep"
+    },
+    {
+      "id": "tcf-ss-a2-s12-co-4",
+      "audio": "/lib/audio/tcf/co/journee/moyen-a2__098.mp3",
+      "ss": true,
+      "tx": 0.8,
+      "ans": 0.4,
+      "score": 0.66,
+      "heard": "Salut Sophia, tu as passé une bonne soirée ? Oui, j'ai regardé trois épisodes d'enquête numéro 1. J'adore cette série ! C'est la nouvelle sa"
+    },
+    {
+      "id": "tcf-ss-a2-s13-co-2",
+      "audio": "/lib/audio/tcf/co/journee/moyen-a2__153.mp3",
+      "ss": true,
+      "tx": 0.625,
+      "ans": 0.4,
+      "score": 0.546,
+      "heard": "Bon, qu'est-ce qu'on décide de frir à Léa pour cet rentant ? Un week-end de remise en forme ? C'est un peu chère. Alors un soin pour le visa"
+    },
+    {
+      "id": "tcf-ss-a2-s13-co-4",
+      "audio": "/lib/audio/tcf/co/journee/moyen-a2__annonce-37.mp3",
+      "ss": true,
+      "tx": 0.786,
+      "ans": 0.333,
+      "score": 0.627,
+      "heard": "Lisez les questions et coûter l'enregistrement puis répandez. Vous êtes chez votre correspondant en France. Vous entendez cette annonce dans"
+    },
+    {
+      "id": "tcf-ss-a2-s14-co-1",
+      "audio": "/lib/audio/tcf/co/journee/moyen-a2__annonce-39.mp3",
+      "ss": true,
+      "tx": 0.971,
+      "ans": 0.667,
+      "score": 0.864,
+      "heard": "Exercie 39, lisez les questions, écoutez l'enregistrement puis répondez. Vous êtes dans l'école en France, vous entendez cette annonce, répo"
+    },
+    {
+      "id": "tcf-ss-a2-s14-co-3",
+      "audio": "/lib/audio/tcf/co/journee/moyen-a2__conversation-49.mp3",
+      "ss": true,
+      "tx": 0.931,
+      "ans": 0.5,
+      "score": 0.78,
+      "heard": "Excuse-moi Eric, j'ai oublié la date de l'examen, tu peux me rappeler la date, s'il te plaît ? Bien sûr, c'est le mercredi 17. Ah oui, à 9 h"
+    },
+    {
+      "id": "tcf-ss-a2-s14-co-4",
+      "audio": "/lib/audio/tcf/co/journee/moyen-a2__message-34.mp3",
+      "ss": true,
+      "tx": 0.914,
+      "ans": 0.667,
+      "score": 0.828,
+      "heard": "Bonjour et ici m'a d'un bouquin, la directrice de la bibliothèque de Saint-Sovain. Je vous appelle pour prendre rendez-vous cette semaine po"
+    },
+    {
+      "id": "tcf-ss-a2-s15-co-1",
+      "audio": "/lib/audio/tcf/co/journee/moyen-a2__message-44.mp3",
+      "ss": true,
+      "tx": 0.889,
+      "ans": 0.5,
+      "score": 0.753,
+      "heard": "Lisez les questions, écoutez l'enregistrement, puis répondez. Vous écoutez ce message de votre ami Lénin sur votre répondeur. Salut, c'est L"
+    },
+    {
+      "id": "tcf-ss-a2-s15-co-2",
+      "audio": "/lib/audio/tcf/co/journee/moyen-a2__message-49.mp3",
+      "ss": true,
+      "tx": 0.8,
+      "ans": 0.667,
+      "score": 0.753,
+      "heard": "Vous êtes à la piscine, vous entendez ce message. Votre attention, s'il vous plaît. Il est déjà 18h30. La piscine ferme dans 30 minutes. Vou"
+    },
+    {
+      "id": "tcf-ss-a2-s15-co-3",
+      "audio": "/lib/audio/tcf/co/journee/moyen-a2__radio-52.mp3",
+      "ss": true,
+      "tx": 0.846,
+      "ans": 0.333,
+      "score": 0.667,
+      "heard": "Lisez les questions, écoutez l'enregistrement, puis répondez. Vous êtes à Marseille, vous entendez cette annonce à la radiolocale. Le nouvea"
+    },
+    {
+      "id": "tcf-ss-a2-s15-co-4",
+      "audio": "/lib/audio/tcf/co/journee/moyen-a2__radio-54.mp3",
+      "ss": true,
+      "tx": 0.9,
+      "ans": 0.333,
+      "score": 0.702,
+      "heard": "Lisez les questions, écoutez l'enregistrement, puis répandez. Vous êtes en France, vous voulez aller un concert ce soir. Et tout de suite, l"
+    },
+    {
+      "id": "tcf-ss-a2-s16-co-1",
+      "audio": "/lib/audio/tcf/co/logement/moyen-a2__017.mp3",
+      "ss": true,
+      "tx": 0.742,
+      "ans": 0.5,
+      "score": 0.657,
+      "heard": "A chance d'urône, bonjour ! Bonjour, monsieur ! Je cherche un appartement à l'auer. Sur votre site, il y a deux annonces intéressantes. Je v"
+    },
+    {
+      "id": "tcf-ss-a2-s16-co-2",
+      "audio": "/lib/audio/tcf/co/logement/moyen-a2__020.mp3",
+      "ss": true,
+      "tx": 0.808,
+      "ans": 0.5,
+      "score": 0.7,
+      "heard": "Je cherche un appartement à l'oué. Quelle type d'appartement vous intéresse ? Un studio, un T2 ? Est-ce que c'est proche de la gare ? Oui, c"
+    },
+    {
+      "id": "tcf-ss-a2-s16-co-3",
+      "audio": "/lib/audio/tcf/co/logement/moyen-a2__021.mp3",
+      "ss": true,
+      "tx": 0.917,
+      "ans": 0.667,
+      "score": 0.829,
+      "heard": "Vous allez voir c'est un bel appartement, ici un grand salon de 19m². Là vous avez deux chambres et deux salts de bain. La cuisine est équip"
+    },
+    {
+      "id": "tcf-ss-a2-s16-co-4",
+      "audio": "/lib/audio/tcf/co/logement/moyen-a2__022.mp3",
+      "ss": true,
+      "tx": 0.885,
+      "ans": 1.0,
+      "score": 0.925,
+      "heard": "Bonjour, vous êtes Madame Nourin, la gardienne? Oui, c'est moi. Je viens d'avoir votre numéro par l'agence immobilière. Je voudrais visiter "
+    },
+    {
+      "id": "tcf-ss-a2-s17-co-1",
+      "audio": "/lib/audio/tcf/co/logement/moyen-a2__023.mp3",
+      "ss": true,
+      "tx": 0.8,
+      "ans": 0.833,
+      "score": 0.812,
+      "heard": "Une visite d'appartement, c'est rapide, soyez préparés, écoutez les conseils de notre spécialiste. Avant de visiter, étudier le quartier, re"
+    },
+    {
+      "id": "tcf-ss-a2-s17-co-2",
+      "audio": "/lib/audio/tcf/co/logement/moyen-a2__024.mp3",
+      "ss": true,
+      "tx": 0.78,
+      "ans": 0.667,
+      "score": 0.741,
+      "heard": "Salut flou ! Alors, cette visite, tu penses quoi du studio ? Salut à l'âne. C'est un coup de cœur. Il est grand, 35 mètres carrés, et exposé"
+    },
+    {
+      "id": "tcf-ss-a2-s17-co-4",
+      "audio": "/lib/audio/tcf/co/logement/moyen-a2__112.mp3",
+      "ss": true,
+      "tx": 0.375,
+      "ans": 0.4,
+      "score": 0.384,
+      "heard": "Bonjour, je suis ici pour une semaine, et je vous préprendre des cours de surf, mais je suis débutante. Au qu'un problème, vous savez n'agé "
+    },
+    {
+      "id": "tcf-ss-a2-s19-co-1",
+      "audio": "/lib/audio/tcf/co/loisirs/moyen-a2__122.mp3",
+      "ss": true,
+      "tx": 0.688,
+      "ans": 0.4,
+      "score": 0.587,
+      "heard": "Ah ! Tu vois la Christophe ! Alors, le parcours de santé, c'était comment ! Génial, c'était formidable même s'il faisait un peufroid. C'est "
+    },
+    {
+      "id": "tcf-ss-a2-s19-co-3",
+      "audio": "/lib/audio/tcf/co/loisirs/moyen-a2__183.mp3",
+      "ss": true,
+      "tx": 0.636,
+      "ans": 0.6,
+      "score": 0.624,
+      "heard": "Comment s'est passé ton entretien, Sam ? C'était difficile. La recrutuse m'a posée des questions pièges. Ah oui ? Par exemple, elle m'a dema"
+    },
+    {
+      "id": "tcf-ss-a2-s19-co-4",
+      "audio": "/lib/audio/tcf/co/loisirs/moyen-a2__annonce-11.mp3",
+      "ss": true,
+      "tx": 0.719,
+      "ans": 0.167,
+      "score": 0.526,
+      "heard": "La bibliothèque ferme dans cinq minutes, nous vous rappelons que de main jeudi 18, en raison d'une conférence, la bibliothèque fermera excep"
+    },
+    {
+      "id": "tcf-ss-a2-s20-co-1",
+      "audio": "/lib/audio/tcf/co/loisirs/moyen-a2__annonce-13.mp3",
+      "ss": true,
+      "tx": 0.75,
+      "ans": 0.0,
+      "score": 0.488,
+      "heard": "Bienvenue au Barca Stérix, vous allez bientôt entrer dans la traction du train rapide, il y a quelques règles à respecter pour votre sécurit"
+    },
+    {
+      "id": "tcf-ss-a2-s20-co-2",
+      "audio": "/lib/audio/tcf/co/loisirs/moyen-a2__conversation-42.mp3",
+      "ss": true,
+      "tx": 0.846,
+      "ans": 0.333,
+      "score": 0.667,
+      "heard": "Dialogue 1. Bonjour. Je voudrais un sandwich offromage avec une bouteille d'eau, si le vous plaît. Très bien. Est-ce qu'il vous faut autre c"
+    },
+    {
+      "id": "tcf-ss-a2-s20-co-3",
+      "audio": "/lib/audio/tcf/co/loisirs/moyen-a2__conversation-50.mp3",
+      "ss": true,
+      "tx": 0.862,
+      "ans": 0.333,
+      "score": 0.677,
+      "heard": "Dialogue 1 Elisa, tu peux me prêter le DVD du film amour ? Non, désolé. Mais pourquoi ? Je voudrais le regarder sous weekend. Et puis la der"
+    },
+    {
+      "id": "tcf-ss-a2-s21-co-1",
+      "audio": "/lib/audio/tcf/co/loisirs/moyen-a2__radio-53.mp3",
+      "ss": true,
+      "tx": 0.838,
+      "ans": 0.333,
+      "score": 0.661,
+      "heard": "Exercice 53. Lisez les questions. Écoutez l'enregistrement, puis répondez. Vous écoutez ces informations à la radio. Repondez aux questions."
+    },
+    {
+      "id": "tcf-ss-a2-s21-co-2",
+      "audio": "/lib/audio/tcf/co/nature/moyen-a2__146.mp3",
+      "ss": true,
+      "tx": 0.385,
+      "ans": 0.25,
+      "score": 0.338,
+      "heard": "Il vive dans des environnements différents. Est-ce qu'ils sont heureux dans leur vie d'adolescent? Notre journaliste est allé à la rencontre"
+    },
+    {
+      "id": "tcf-ss-a2-s21-co-4",
+      "audio": "/lib/audio/tcf/co/nourriture/moyen-a2__008.mp3",
+      "ss": true,
+      "tx": 0.78,
+      "ans": 0.833,
+      "score": 0.799,
+      "heard": "Bonjour madame, je vous appelle parce que j'ai vu votre annonce pour l'avente d'un réfrigérateur et je voudrais vous poser quelques question"
+    },
+    {
+      "id": "tcf-ss-a2-s22-co-2",
+      "audio": "/lib/audio/tcf/co/nourriture/moyen-a2__055.mp3",
+      "ss": true,
+      "tx": 0.421,
+      "ans": 0.2,
+      "score": 0.344,
+      "heard": "Il est super sympa, ton nouveau copain les ouvres. Tu l'as rencontré ou ? Dans le trauma, on prend le de tous les matins à 8 heures, on a co"
+    },
+    {
+      "id": "tcf-ss-a2-s23-co-1",
+      "audio": "/lib/audio/tcf/co/nourriture/moyen-a2__090.mp3",
+      "ss": true,
+      "tx": 0.444,
+      "ans": 0.2,
+      "score": 0.359,
+      "heard": "Salut ! Tu fais quoi aujourd'hui et les honnors ? Je vais chez Thomas pour un après-midi-jeu. Je vidéo ? Ah non ! Je de société ! Je déteste"
+    },
+    {
+      "id": "tcf-ss-a2-s23-co-2",
+      "audio": "/lib/audio/tcf/co/nourriture/moyen-a2__101.mp3",
+      "ss": true,
+      "tx": 0.7,
+      "ans": 0.4,
+      "score": 0.595,
+      "heard": "J'adore cette série. C'est la nouvelle saison ? Oui. Certains personnages ont changé, mais la deuxième saison est excellent. Je te l'arcoman"
+    },
+    {
+      "id": "tcf-ss-a2-s23-co-3",
+      "audio": "/lib/audio/tcf/co/nourriture/moyen-a2__102.mp3",
+      "ss": true,
+      "tx": 1.0,
+      "ans": 0.6,
+      "score": 0.86,
+      "heard": "Salut, Isa, c'est Marine. J'ai téléphoné à ton prof de guitare, et je lui ai expliqué mon niveau. Il va me donner des cours à partir de la s"
+    },
+    {
+      "id": "tcf-ss-a2-s23-co-4",
+      "audio": "/lib/audio/tcf/co/nourriture/moyen-a2__138.mp3",
+      "ss": true,
+      "tx": 0.444,
+      "ans": 0.2,
+      "score": 0.359,
+      "heard": "Regarde-solène, quel beau gâteau à la crème. J'l'achète. Ah non, merci, Isabelle. Tu fais un régime ou quoi ? Non, non, je n'ai pas besoin d"
+    },
+    {
+      "id": "tcf-ss-a2-s24-co-3",
+      "audio": "/lib/audio/tcf/co/nourriture/moyen-a2__message-26.mp3",
+      "ss": true,
+      "tx": 0.69,
+      "ans": 0.5,
+      "score": 0.624,
+      "heard": "Comprendre un message, activité 26. Salut, c'est Lucie, je pars en vacances de semaine et j'ai besoin de toi pour garder mon chat. Tu pourra"
+    },
+    {
+      "id": "tcf-ss-a2-s24-co-4",
+      "audio": "/lib/audio/tcf/co/nourriture/moyen-a2__message-33.mp3",
+      "ss": true,
+      "tx": 0.842,
+      "ans": 0.5,
+      "score": 0.722,
+      "heard": "Salut, c'est Elsa ! Est-ce que tu veux venir jouer au ténit avec moi de Manhattan ? Amir et Fatima vont venir aussi. Il m'ont proposé de fai"
+    },
+    {
+      "id": "tcf-ss-a2-s25-co-2",
+      "audio": "/lib/audio/tcf/co/nourriture/moyen-a2__radio-35.mp3",
+      "ss": true,
+      "tx": 0.889,
+      "ans": 0.333,
+      "score": 0.694,
+      "heard": "Lisez les questions, écoutez l'enregistrement puis répandez. Vous écoutez cette émission sur une radio francophone. Bonjour. Dans notre émis"
+    },
+    {
+      "id": "tcf-ss-a2-s25-co-3",
+      "audio": "/lib/audio/tcf/co/nourriture/moyen-a2__radio-51.mp3",
+      "ss": true,
+      "tx": 0.897,
+      "ans": 0.167,
+      "score": 0.641,
+      "heard": "Lisez les questions, écoutez l'enregistrement, puis répondez. Vous écoutez ces informations à la radio, répondez aux questions, document 1. "
+    },
+    {
+      "id": "tcf-ss-a2-s25-co-4",
+      "audio": "/lib/audio/tcf/co/objets/moyen-a2__004.mp3",
+      "ss": true,
+      "tx": 0.636,
+      "ans": 0.167,
+      "score": 0.472,
+      "heard": "Mon l'avlan j'ai tombé en panne. Tu vas le faire et parer ? Non, il n'est plus aux garanties. Je préfère acheter un l'avlange d'occasion. T'"
+    },
+    {
+      "id": "tcf-ss-a2-s26-co-1",
+      "audio": "/lib/audio/tcf/co/objets/moyen-a2__007.mp3",
+      "ss": true,
+      "tx": 0.767,
+      "ans": 0.5,
+      "score": 0.673,
+      "heard": "Servi s'apprévente, Mathieu, à votre écoute. Bonjour, monsieur. Je vous appelle parce que j'ai acheté un téléphone portable sur votre site, "
+    },
+    {
+      "id": "tcf-ss-a2-s26-co-2",
+      "audio": "/lib/audio/tcf/co/objets/moyen-a2__031.mp3",
+      "ss": true,
+      "tx": 0.892,
+      "ans": 1.0,
+      "score": 0.93,
+      "heard": "Tu appris ton forfait chez quel opérateur ? Grin mobile, mais c'est un peu chère. Ah bon ? Tu payes combien par mois ? J'ai choisi un forfai"
+    },
+    {
+      "id": "tcf-ss-a2-s26-co-3",
+      "audio": "/lib/audio/tcf/co/objets/moyen-a2__032.mp3",
+      "ss": true,
+      "tx": 0.882,
+      "ans": 0.5,
+      "score": 0.749,
+      "heard": "En plus de votre compte courant, vous pouvez ouvrir un livraier. Qu'est-ce que c'est ? C'est un compte qui permet d'éparnier, déconomisé. Vo"
+    },
+    {
+      "id": "tcf-ss-a2-s26-co-4",
+      "audio": "/lib/audio/tcf/co/objets/moyen-a2__056.mp3",
+      "ss": true,
+      "tx": 0.5,
+      "ans": 0.5,
+      "score": 0.5,
+      "heard": "Alors, clouée, peux-tu parler à nos auditeurs du café des langues ? Oui, j'y suis allée pour la première fois en septembre, et j'y ai rencon"
+    },
+    {
+      "id": "tcf-ss-a2-s27-co-1",
+      "audio": "/lib/audio/tcf/co/objets/moyen-a2__081.mp3",
+      "ss": true,
+      "tx": 0.625,
+      "ans": 0.6,
+      "score": 0.616,
+      "heard": "Dimanche, je me suis promené en montagne avec le club Alpine. Tu es sportif, je vois. Non, pas vraiment. Je me suis investi dans ce club par"
+    },
+    {
+      "id": "tcf-ss-a2-s28-co-2",
+      "audio": "/lib/audio/tcf/co/objets/moyen-a2__103.mp3",
+      "ss": true,
+      "tx": 1.0,
+      "ans": 0.667,
+      "score": 0.883,
+      "heard": "Pâge 87, exercice 2. C'est bon, Clément, j'ai fait les courses pour samedi, mais tu pourrais apporter un dessert parce que je suis nulle en "
+    },
+    {
+      "id": "tcf-ss-a2-s28-co-3",
+      "audio": "/lib/audio/tcf/co/objets/moyen-a2__105.mp3",
+      "ss": true,
+      "tx": 0.889,
+      "ans": 0.4,
+      "score": 0.718,
+      "heard": "Salut Alex, de ma matin, je vais faire une promenade à vélo, ça te dit de venir ? Bien sûr, Diana. Ça fait du bien de passer du temps dehors"
+    },
+    {
+      "id": "tcf-ss-a2-s29-co-1",
+      "audio": "/lib/audio/tcf/co/objets/moyen-a2__135.mp3",
+      "ss": true,
+      "tx": 0.455,
+      "ans": 0.4,
+      "score": 0.435,
+      "heard": "Au bureau, je n'ai jamais le temps de déjeuner normalement. Alors, je mange sur le pouce. Ce n'est pas un mode de vie très équilibré. D'acco"
+    },
+    {
+      "id": "tcf-ss-a2-s29-co-2",
+      "audio": "/lib/audio/tcf/co/objets/moyen-a2__154.mp3",
+      "ss": true,
+      "tx": 0.583,
+      "ans": 0.6,
+      "score": 0.589,
+      "heard": "Bonjour ! Aujourd'hui, nous parlons des insomnies, des mauvais rêves et des cochmards, de tous ceux qui vous empêchent de passer une bonne n"
+    },
+    {
+      "id": "tcf-ss-a2-s29-co-3",
+      "audio": "/lib/audio/tcf/co/objets/moyen-a2__159.mp3",
+      "ss": true,
+      "tx": 0.545,
+      "ans": 0.4,
+      "score": 0.495,
+      "heard": "Pâge, sans vâtre 9, exercice 1, j'ai envie de suivre une formation, elle coûte 2000 de 100 euros mais je ne sais pas comment la financée. Tu"
+    },
+    {
+      "id": "tcf-ss-a2-s29-co-4",
+      "audio": "/lib/audio/tcf/co/objets/moyen-a2__162.mp3",
+      "ss": true,
+      "tx": 1.0,
+      "ans": 0.6,
+      "score": 0.86,
+      "heard": "Si tu veux améliorer ton français, Pedro, je te recommande de suivre une formation dans cet écoles. Comment ça s'est passé pour toi, Kate ? "
+    },
+    {
+      "id": "tcf-ss-a2-s30-co-1",
+      "audio": "/lib/audio/tcf/co/objets/moyen-a2__178.mp3",
+      "ss": true,
+      "tx": 0.917,
+      "ans": 1.0,
+      "score": 0.946,
+      "heard": "votre CV est bien, mais vous pouvez l'améliorer. Pour commencer, votre CV est trop long. Il ne doit pas faire plus d'une page. Ensuite, vous"
+    },
+    {
+      "id": "tcf-ss-a2-s30-co-4",
+      "audio": "/lib/audio/tcf/co/objets/moyen-a2__annonce-8.mp3",
+      "ss": true,
+      "tx": 0.875,
+      "ans": 0.0,
+      "score": 0.569,
+      "heard": "Madame Monsieur, bienvenue dans le train numéro 168 à destination de Paris. Le train partira avec 7 minutes de retard. Il s'arrêtera à la ga"
+    },
+    {
+      "id": "tcf-ss-a2-s31-co-1",
+      "audio": "/lib/audio/tcf/co/objets/moyen-a2__message-48.mp3",
+      "ss": true,
+      "tx": 0.763,
+      "ans": 0.667,
+      "score": 0.729,
+      "heard": "Vous êtes dans un musée, à Bruxelles. Bonjour, bienvenu au musée de la bande dessinée de Bruxelles. Je suis votre guide, à Nyl Greenberg. Av"
+    },
+    {
+      "id": "tcf-ss-a2-s31-co-3",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__005.mp3",
+      "ss": true,
+      "tx": 0.44,
+      "ans": 0.333,
+      "score": 0.403,
+      "heard": "C'est l'essence de chez Boularty, jusqu'au 19e juillet, profitait de l'édiction exceptionnelle sur tous les rayons multimédiares. Ordinateur"
+    },
+    {
+      "id": "tcf-ss-a2-s31-co-4",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__009.mp3",
+      "ss": true,
+      "tx": 0.737,
+      "ans": 0.833,
+      "score": 0.771,
+      "heard": "Salut Vincent ! Tu sais comment aller au mariage de Tomah, le week-end prochain ? Oui, je viens de louer une voiture. Je pensais prendre le "
+    },
+    {
+      "id": "tcf-ss-a2-s32-co-1",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__013.mp3",
+      "ss": true,
+      "tx": 0.947,
+      "ans": 0.667,
+      "score": 0.849,
+      "heard": "Bonjour messieurs, je viens d'avoir un petit accident et le clignotant ne marche plus. D'accord, Madame, je vais regarder et vérifier l'état"
+    },
+    {
+      "id": "tcf-ss-a2-s32-co-2",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__047.mp3",
+      "ss": true,
+      "tx": 0.944,
+      "ans": 0.667,
+      "score": 0.847,
+      "heard": "Léa, tu viens au pique nique samedi ? Je suis désolé, mais je ne pourrais pas venir. C'est dommage, pourquoi ? Mon fils a une compétition sp"
+    },
+    {
+      "id": "tcf-ss-a2-s32-co-3",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__048.mp3",
+      "ss": true,
+      "tx": 0.5,
+      "ans": 0.6,
+      "score": 0.535,
+      "heard": "Bonjour madame du ma, je suis désolé pour mon retard. Bonjour monsieur le clair, entrer. Je vais prendre votre montaut et votre écharpe. Mer"
+    },
+    {
+      "id": "tcf-ss-a2-s32-co-4",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__049.mp3",
+      "ss": true,
+      "tx": 0.718,
+      "ans": 0.833,
+      "score": 0.758,
+      "heard": "Tu peux m'expliquer comment ça se passe, s'il te plaît ? D'accord, Tampio. Alors, tu n'es pas obligé d'être à l'heure. Tu peux arriver 15 mi"
+    },
+    {
+      "id": "tcf-ss-a2-s33-co-2",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__058.mp3",
+      "ss": true,
+      "tx": 0.5,
+      "ans": 0.4,
+      "score": 0.465,
+      "heard": "Dis-moi Philippe. Tu viens de rao-marieage de Sarah et Julien ? Oui, bien sûr, Anna. Je serai là avec Mélani. Il y a une liste de mariage ou"
+    },
+    {
+      "id": "tcf-ss-a2-s34-co-1",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__070.mp3",
+      "ss": true,
+      "tx": 0.625,
+      "ans": 0.4,
+      "score": 0.546,
+      "heard": "Philippe, je suis inquiète pour la gâte. Elle pleure tous les matins avant d'aller au collège. Elle ne fait passer de voir et c'est notre so"
+    },
+    {
+      "id": "tcf-ss-a2-s34-co-2",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__071.mp3",
+      "ss": true,
+      "tx": 0.545,
+      "ans": 0.333,
+      "score": 0.471,
+      "heard": "Papa, tu veux bien accompagner la sortie scolaire, je dis prochain avec le prof d'histoire géaut, il faut deux parents. Volentiel, vous alle"
+    },
+    {
+      "id": "tcf-ss-a2-s34-co-4",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__074.mp3",
+      "ss": true,
+      "tx": 0.5,
+      "ans": 0.2,
+      "score": 0.395,
+      "heard": "Mais on n'y bénévole là, bonjour. Bonjour, Madame. Voilà. Ma copine est moi, on vient d'arriver dans la ville et on voudrait se rendre utile"
+    },
+    {
+      "id": "tcf-ss-a2-s35-co-3",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__079.mp3",
+      "ss": true,
+      "tx": 0.667,
+      "ans": 0.6,
+      "score": 0.643,
+      "heard": "Salut, Camille. Tu vas faire un don à Emmaus? Oui. Je vais donner des vêtements, des chaussures et des livres. Tu crois qu'il peuvent prendr"
+    },
+    {
+      "id": "tcf-ss-a2-s36-co-3",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__096.mp3",
+      "ss": true,
+      "tx": 0.258,
+      "ans": 0.833,
+      "score": 0.459,
+      "heard": "Bonjour, je vous appelle pour l'atelier de fabrication de centures. Je voudrais savoir comment ça marche. Bonjour Monsieur. Alors, c'est un "
+    },
+    {
+      "id": "tcf-ss-a2-s37-co-3",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__137.mp3",
+      "ss": true,
+      "tx": 0.189,
+      "ans": 0.667,
+      "score": 0.356,
+      "heard": "Papa, c'est la semaine du goût. La maîtresse a invité un boulanger. C'est sympa que votre école organise quelque chose pour parler de nourri"
+    },
+    {
+      "id": "tcf-ss-a2-s37-co-4",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__144.mp3",
+      "ss": true,
+      "tx": 0.292,
+      "ans": 0.667,
+      "score": 0.423,
+      "heard": "Salut Maud ! Est-ce que tu viens à la réunion des habitants ce soir ? La poste veut fermer son bureau parce que notre village est trop petit"
+    },
+    {
+      "id": "tcf-ss-a2-s38-co-1",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__151.mp3",
+      "ss": true,
+      "tx": 0.346,
+      "ans": 0.5,
+      "score": 0.4,
+      "heard": "Salut papa et ma main ! Je serai absent pendant quelques jours. J'ai besoin de prendre l'air. Il y a trop de stress au travail. Je commence "
+    },
+    {
+      "id": "tcf-ss-a2-s38-co-2",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__152.mp3",
+      "ss": true,
+      "tx": 0.714,
+      "ans": 0.4,
+      "score": 0.604,
+      "heard": "Thomas, je n'arrive pas à trouver le savon. Oh, il est entre le savon de Marseille et ma mousse a rassé. Et le Déo, il est où ? Je vois seul"
+    },
+    {
+      "id": "tcf-ss-a2-s38-co-3",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__158.mp3",
+      "ss": true,
+      "tx": 0.909,
+      "ans": 0.8,
+      "score": 0.871,
+      "heard": "Quelles sont les formations possibles ? Il y en a beaucoup, des formations diplomantes et des formations qu'à l'IFIENT. Je voudrais développ"
+    },
+    {
+      "id": "tcf-ss-a2-s38-co-4",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__160.mp3",
+      "ss": true,
+      "tx": 0.556,
+      "ans": 0.667,
+      "score": 0.594,
+      "heard": "Vous souhaitez apprendre le métier de graphiste, notre organisme de formation vous propose une formation diplomante, rapide et prise en char"
+    },
+    {
+      "id": "tcf-ss-a2-s39-co-1",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__161.mp3",
+      "ss": true,
+      "tx": 0.273,
+      "ans": 0.6,
+      "score": 0.387,
+      "heard": "Je rêve d'en faire mon métier, et avec mon parcours, ce n'est pas gagné. Vous en êtes capable, vous avez juste besoin de trouver la bonne fo"
+    },
+    {
+      "id": "tcf-ss-a2-s40-co-1",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__175.mp3",
+      "ss": true,
+      "tx": 0.273,
+      "ans": 0.6,
+      "score": 0.387,
+      "heard": "Je ne trouve aucune offre d'emploi intéressante. Mais, Coralie, pourquoi tu ne crêpes pas un profil sur un site d'emploi? Bon idea d'avider."
+    },
+    {
+      "id": "tcf-ss-a2-s40-co-2",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__179.mp3",
+      "ss": true,
+      "tx": 0.867,
+      "ans": 0.667,
+      "score": 0.797,
+      "heard": "Je suis Monsieur Vino. Vous allez faire cet entretien avec moi. Comment vas-tu passer l'entretien? Tout d'abord, vous allez vous présenter. "
+    },
+    {
+      "id": "tcf-ss-a2-s40-co-3",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__182.mp3",
+      "ss": true,
+      "tx": 0.714,
+      "ans": 0.333,
+      "score": 0.581,
+      "heard": "Pâge 145 pour communiquer. Parlez-moi de vous. Je suis diplômé d'une licence et j'ai trois ans d'expérience dans l'avente. Parlez-moi de vos"
+    },
+    {
+      "id": "tcf-ss-a2-s41-co-1",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__197.mp3",
+      "ss": true,
+      "tx": 0.4,
+      "ans": 0.4,
+      "score": 0.4,
+      "heard": "Billent 3, pâge 1508, loisir et vacances. Salut Louis, tu vas faire quoi ce weekend ? Je crois qu'il va faire beau, donc demain je voudrais "
+    },
+    {
+      "id": "tcf-ss-a2-s41-co-3",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__annonce-38.mp3",
+      "ss": true,
+      "tx": 0.743,
+      "ans": 0.0,
+      "score": 0.483,
+      "heard": "vous entendez ses annonces dans votre école, répondez aux questions. Annonce 1. Les enfants, le bucet-là, on va partir. Vous pouvez prendre "
+    },
+    {
+      "id": "tcf-ss-a2-s42-co-2",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__conversation-38.mp3",
+      "ss": true,
+      "tx": 0.765,
+      "ans": 0.333,
+      "score": 0.614,
+      "heard": "comprendra une discussion, activité 38, dialogue 1. Excusez-moi monsieur, bonjour. J'ai oublié à quelle heure doit partir le train pour Bord"
+    },
+    {
+      "id": "tcf-ss-a2-s42-co-3",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__conversation-41.mp3",
+      "ss": true,
+      "tx": 0.804,
+      "ans": 0.333,
+      "score": 0.639,
+      "heard": "Juli, je dois aller au nouveau centre des impôts de main, tu sais comment y aller. Oui, tu dois prendre le but sans soixante et onze, et des"
+    },
+    {
+      "id": "tcf-ss-a2-s42-co-4",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__conversation-43.mp3",
+      "ss": true,
+      "tx": 0.944,
+      "ans": 0.5,
+      "score": 0.789,
+      "heard": "Excusez-moi monsieur, j'essaie de retirer de l'argent au distributeur de billet, mais je n'y arrive pas. Il a un problème technique. Vous po"
+    },
+    {
+      "id": "tcf-ss-a2-s43-co-1",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__conversation-45.mp3",
+      "ss": true,
+      "tx": 0.852,
+      "ans": 0.167,
+      "score": 0.612,
+      "heard": "Dialogue 1 Salut Julie, ça va ? Salut Max, je vais bien merci. Je te présente mon frère, Yannick. Salut Yannick, enchantez. Je l'y m'a beauc"
+    },
+    {
+      "id": "tcf-ss-a2-s43-co-2",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__conversation-47.mp3",
+      "ss": true,
+      "tx": 0.714,
+      "ans": 0.5,
+      "score": 0.639,
+      "heard": "Dialogue 1. Bonjour, et il a encore fait l'hécitation pour ton mariage. Bonjour, Farid, merci beaucoup. C'était une très belle réception. On"
+    },
+    {
+      "id": "tcf-ss-a2-s43-co-3",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__message-28.mp3",
+      "ss": true,
+      "tx": 0.842,
+      "ans": 0.5,
+      "score": 0.722,
+      "heard": "Bonjour, ici le cabinet d'enters du Dr. Mollaire. Je suis désolé, mais nous sommes obligés d'annuler votre rendez-vous de 15h30 préview aujo"
+    },
+    {
+      "id": "tcf-ss-a2-s43-co-4",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__message-31.mp3",
+      "ss": true,
+      "tx": 0.833,
+      "ans": 0.833,
+      "score": 0.833,
+      "heard": "Salut, c'est Thomas. Tu n'es pas venu à l'université aujourd'hui. J'espère que tu vas bien. Je t'appelle parce que nous avons un examen de p"
+    },
+    {
+      "id": "tcf-ss-a2-s44-co-1",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__message-41.mp3",
+      "ss": true,
+      "tx": 0.824,
+      "ans": 0.667,
+      "score": 0.769,
+      "heard": "Deux, au téléphone. Exercise caronté un. Lisez les questions. Écoutez l'enregistrement, puis répondez. Vous habitez en France. Vous entendez"
+    },
+    {
+      "id": "tcf-ss-a2-s44-co-2",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__message-42.mp3",
+      "ss": true,
+      "tx": 0.806,
+      "ans": 0.0,
+      "score": 0.524,
+      "heard": "Lisez les questions, écoutez l'enregistrement, puis répondre. Vous êtes en vacances en France. Vous écoutez ce message sur votre répondre. B"
+    },
+    {
+      "id": "tcf-ss-a2-s44-co-4",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__radio-34.mp3",
+      "ss": true,
+      "tx": 0.909,
+      "ans": 0.333,
+      "score": 0.708,
+      "heard": "4 à la radio. Exercice 34. Lisez les questions. Écoutez l'enregistrement, puis répondez. Vous écoutez cette émission sur une radio francopha"
+    },
+    {
+      "id": "tcf-ss-a2-s45-co-1",
+      "audio": "/lib/audio/tcf/co/sante/moyen-a2__038.mp3",
+      "ss": true,
+      "tx": 0.828,
+      "ans": 0.667,
+      "score": 0.771,
+      "heard": "Bonjour à tous, vous êtes sur France Inter, il est huit heures. L'Etitre du jour, accidents sur l'autoroute A7, 30 blessés. Nouveau projet s"
+    },
+    {
+      "id": "tcf-ss-a2-s45-co-4",
+      "audio": "/lib/audio/tcf/co/sante/moyen-a2__119.mp3",
+      "ss": true,
+      "tx": 0.375,
+      "ans": 0.6,
+      "score": 0.454,
+      "heard": "Bonjour, je viens pour une prise de sang. J'ai pris rendez-vous en ligne. Bonjour, vous avez une ordonnance du médecin ? Oui, voici. Très bi"
+    },
+    {
+      "id": "tcf-ss-a2-s46-co-2",
+      "audio": "/lib/audio/tcf/co/sante/moyen-a2__125.mp3",
+      "ss": true,
+      "tx": 0.938,
+      "ans": 0.6,
+      "score": 0.819,
+      "heard": "Alors, le parcours de santé, c'était comment ? C'était formidable ! J'ai fait du sport en plein air, c'était excellent ! Tu penses quoi du n"
+    },
+    {
+      "id": "tcf-ss-a2-s46-co-3",
+      "audio": "/lib/audio/tcf/co/transports/moyen-a2__012.mp3",
+      "ss": true,
+      "tx": 0.767,
+      "ans": 0.833,
+      "score": 0.79,
+      "heard": "Alors, tu sais comment aller au mariage ? Oui, je viens de louer une voiture. Je pensais prendre le train, mais c'est plus long et plus chèr"
+    },
+    {
+      "id": "tcf-ss-a2-s46-co-4",
+      "audio": "/lib/audio/tcf/co/transports/moyen-a2__014.mp3",
+      "ss": true,
+      "tx": 0.773,
+      "ans": 0.5,
+      "score": 0.677,
+      "heard": "Cher voyageurs, pour améliorer notre réseau de transport, des travaux sur la ligne 5, viennent de débuter. L'astation victorigo n'est plus d"
+    },
+    {
+      "id": "tcf-ss-a2-s47-co-1",
+      "audio": "/lib/audio/tcf/co/transports/moyen-a2__015.mp3",
+      "ss": true,
+      "tx": 0.895,
+      "ans": 0.833,
+      "score": 0.873,
+      "heard": "Bonsoir monsieur, je viens d'entendre la nonce, donc il y a une panne sur la ligne 8. Oui, et malheureusement, le trafic est interrompu. Je "
+    },
+    {
+      "id": "tcf-ss-a2-s47-co-3",
+      "audio": "/lib/audio/tcf/co/transports/moyen-a2__104.mp3",
+      "ss": true,
+      "tx": 1.0,
+      "ans": 0.8,
+      "score": 0.93,
+      "heard": "C'est joli, tu fais du dessin depuis longtemps ? Oui, j'ai commencé les cours quand j'avais 13 ans et maintenant je dessine quand j'ai le te"
+    },
+    {
+      "id": "tcf-ss-a2-s48-co-1",
+      "audio": "/lib/audio/tcf/co/transports/moyen-a2__142.mp3",
+      "ss": true,
+      "tx": 0.714,
+      "ans": 0.4,
+      "score": 0.604,
+      "heard": "J'ai toujours dit que la ville est le meilleur endroit pour vivre. Tu aimes la ville, mais tu as déménagé à la campagne. Oui, j'ai changé d'"
+    },
+    {
+      "id": "tcf-ss-a2-s48-co-2",
+      "audio": "/lib/audio/tcf/co/transports/moyen-a2__annonce-10.mp3",
+      "ss": true,
+      "tx": 0.688,
+      "ans": 0.5,
+      "score": 0.622,
+      "heard": "Les basses âgées du vol Air France n'aimeront 8568 à destination de Berlins sont priés d'aller à la porte d'embarquement n'aimerons 45. Voye"
+    },
+    {
+      "id": "tcf-ss-a2-s48-co-3",
+      "audio": "/lib/audio/tcf/co/transports/moyen-a2__annonce-9.mp3",
+      "ss": true,
+      "tx": 0.871,
+      "ans": 0.0,
+      "score": 0.566,
+      "heard": "Madame Monsieur, vous êtes arrivé à la guerre de Montpellier, avant de décembre du train, vérifiez que vous n'avez rien oublié. Nous vous co"
+    },
+    {
+      "id": "tcf-ss-a2-s48-co-4",
+      "audio": "/lib/audio/tcf/co/transports/moyen-a2__conversation-44.mp3",
+      "ss": true,
+      "tx": 0.875,
+      "ans": 0.333,
+      "score": 0.685,
+      "heard": "Dialogue 1 Bonjour madame, vous désirez ? Je voudrais un café gourmands s'il vous plaît Bien madame, je vous la porte tout de suite Oh je vo"
+    },
+    {
+      "id": "tcf-ss-a2-s49-co-1",
+      "audio": "/lib/audio/tcf/co/transports/moyen-a2__message-35.mp3",
+      "ss": true,
+      "tx": 0.758,
+      "ans": 0.833,
+      "score": 0.784,
+      "heard": "Bonjour, ici Lothel Bolieu, je vous confirme votre réservation. Le SAM-27 vous aurez une chambre doublée avec douche et bevc, un accès à int"
+    },
+    {
+      "id": "tcf-ss-a2-s49-co-2",
+      "audio": "/lib/audio/tcf/co/transports/moyen-a2__message-36.mp3",
+      "ss": true,
+      "tx": 0.897,
+      "ans": 0.5,
+      "score": 0.758,
+      "heard": "Bonjour ici l'agence de voyage lacrosse, je vous appelle à propos de deux changements pour votre voyage en Turquie, le premier changement co"
+    },
+    {
+      "id": "tcf-ss-a2-s49-co-3",
+      "audio": "/lib/audio/tcf/co/transports/moyen-a2__message-43.mp3",
+      "ss": true,
+      "tx": 0.895,
+      "ans": 0.667,
+      "score": 0.815,
+      "heard": "Lisez les questions, écoutez l'enregistrement, puis répondez. Vous écoutez ce message de votre ami Max sur votre répondeur. Salut, c'est Max"
+    },
+    {
+      "id": "tcf-ss-a2-s50-co-1",
+      "audio": "/lib/audio/tcf/co/travail/moyen-a2__155.mp3",
+      "ss": true,
+      "tx": 0.545,
+      "ans": 0.8,
+      "score": 0.635,
+      "heard": "J'ai envie de changer de métier, mais je ne sais pas quoi faire. Ici, à Paul en pleut, nous pouvons vous aider à trouver une formation. Quel"
+    },
+    {
+      "id": "tcf-ss-a2-s50-co-2",
+      "audio": "/lib/audio/tcf/co/travail/moyen-a2__163.mp3",
+      "ss": true,
+      "tx": 0.455,
+      "ans": 0.6,
+      "score": 0.505,
+      "heard": "D'occument, ah ! Bonjour, polemploi à votre écoute. Bonjour, je vous derais faire mon inscription en ligne à polemploi. Mais je n'ai personn"
+    },
+    {
+      "id": "tcf-ss-a2-s50-co-4",
+      "audio": "/lib/audio/tcf/co/travail/moyen-a2__171.mp3",
+      "ss": true,
+      "tx": 0.923,
+      "ans": 1.0,
+      "score": 0.95,
+      "heard": "Alors, Benoît, comment se passe ta recherche d'emploi ? J'ai trouvé une super offre d'emploi, mais je ne sais pas comment il répondra. Peut-"
+    },
+    {
+      "id": "tcf-ss-a2-s51-co-1",
+      "audio": "/lib/audio/tcf/co/travail/moyen-a2__177.mp3",
+      "ss": true,
+      "tx": 0.417,
+      "ans": 0.4,
+      "score": 0.411,
+      "heard": "Pourquoi tu as choisi d'être librières, Julien ? Comme je suis passionné de littérature, j'ai décidé de faire se métier. Qu'est-ce que tu pr"
+    },
+    {
+      "id": "tcf-ss-a2-s52-co-3",
+      "audio": "/lib/audio/tcf/co/travail/moyen-a2__194.mp3",
+      "ss": true,
+      "tx": 0.714,
+      "ans": 0.6,
+      "score": 0.674,
+      "heard": "Bonjour Laurent, parlez-moi de votre première semaine dans notre entreprise. Qu'est-ce que vous avez fait ? J'ai rencontré mes collègues du "
+    },
+    {
+      "id": "tcf-ss-a2-s53-co-1",
+      "audio": "/lib/audio/tcf/co/vetements/moyen-a2__134.mp3",
+      "ss": true,
+      "tx": 0.706,
+      "ans": 0.5,
+      "score": 0.634,
+      "heard": "On peut manger beaucoup et m'égrir. Toi était régime. C'est une question d'équilibre et pas de quantité. Si tu manges trop vite, c'est très "
+    },
+    {
+      "id": "tcf-ss-a2-s53-co-2",
+      "audio": "/lib/audio/tcf/co/vetements/moyen-a2__139.mp3",
+      "ss": true,
+      "tx": 0.6,
+      "ans": 0.6,
+      "score": 0.6,
+      "heard": "Tu sais que l'a ra à déménager ? Ou ça ? À la campagne. Non. Mais elle a toujours dit que la ville est le meilleur endroit pour vivre. Elle "
+    },
+    {
+      "id": "tcf-ss-a2-s53-co-4",
+      "audio": "/lib/audio/tcf/co/vetements/moyen-a2__147.mp3",
+      "ss": true,
+      "tx": 0.929,
+      "ans": 0.5,
+      "score": 0.779,
+      "heard": "C'est décidé. Cette année, je vais changer mon mode de vie. Tu as fait à l'histoire de bonne résolution? Oui. Avant tout, j'ai décidé de pre"
+    },
+    {
+      "id": "tcf-ss-a2-s54-co-1",
+      "audio": "/lib/audio/tcf/co/vetements/moyen-a2__150.mp3",
+      "ss": true,
+      "tx": 0.476,
+      "ans": 0.333,
+      "score": 0.426,
+      "heard": "Tu as faite à l'histoire de bonne résolution? Oui. Avant tout, j'ai décidé d'abandonner mes mauvaises habitudes. C'est décidé. C'est année, "
+    },
+    {
+      "id": "tcf-ss-b1-s1-co-1",
+      "audio": "/lib/audio/tcf/co/achats/difficile-b1__annonce-31.mp3",
+      "ss": true,
+      "tx": 0.786,
+      "ans": 0.5,
+      "score": 0.686,
+      "heard": "C'est R Quand est-ce qu'on achète one machine à l'avé ? Je bien sûr que ce mois-ci on n'est pas le budget. Tu es sûr ? Ils ont fait des prom"
+    },
+    {
+      "id": "tcf-ss-b1-s1-co-4",
+      "audio": "/lib/audio/tcf/co/actualite/difficile-b1__radio-3.mp3",
+      "ss": true,
+      "tx": 0.5,
+      "ans": 0.667,
+      "score": 0.558,
+      "heard": "Depuis quelques temps, on a vu apparaître une étiquette verte sur des centaines d'articles. Dans résalimentaires, mais aussi champoyant, ram"
+    },
+    {
+      "id": "tcf-ss-b1-s2-co-1",
+      "audio": "/lib/audio/tcf/co/administration/difficile-b1__radio-32.mp3",
+      "ss": true,
+      "tx": 0.848,
+      "ans": 0.0,
+      "score": 0.552,
+      "heard": "conformément aux dispositions du règlement numéro 2016 slash 679, dit règlement générale sur la protection des données, RGPD, vous disposez "
+    },
+    {
+      "id": "tcf-ss-b1-s3-co-1",
+      "audio": "/lib/audio/tcf/co/famille/difficile-b1__conversation-16.mp3",
+      "ss": true,
+      "tx": 0.83,
+      "ans": 0.333,
+      "score": 0.656,
+      "heard": "Bonjour madame Thierry. Déjà dans le parc avec votre petite fille, il est à pennuiteur. Oui, il fait six choses depuis deux semaines. Elle a"
+    },
+    {
+      "id": "tcf-ss-b1-s3-co-2",
+      "audio": "/lib/audio/tcf/co/famille/difficile-b1__radio-1.mp3",
+      "ss": true,
+      "tx": 0.658,
+      "ans": 0.333,
+      "score": 0.544,
+      "heard": "Deux, comprendre des émissions de radio et des enregistrements. Activité 1, à l'avais et des premières assises de la fondation n'est-ce que "
+    },
+    {
+      "id": "tcf-ss-b1-s3-co-3",
+      "audio": "/lib/audio/tcf/co/famille/difficile-b1__radio-19.mp3",
+      "ss": true,
+      "tx": 0.727,
+      "ans": 0.167,
+      "score": 0.531,
+      "heard": "Dans la bibliothèque des Adones, vous présentez aujourd'hui comme un orage, et pour parler de ce roman, c'est l'une du souich, nous accompag"
+    },
+    {
+      "id": "tcf-ss-b1-s3-co-4",
+      "audio": "/lib/audio/tcf/co/famille/difficile-b1__radio-4.mp3",
+      "ss": true,
+      "tx": 0.896,
+      "ans": 0.333,
+      "score": 0.699,
+      "heard": "En enfance, c'est une boîte pleine de nos souvenirs. Ainsi, par le narrateur, alors qu'il vient d'intéresser son grand-père. C'est l'occasio"
+    },
+    {
+      "id": "tcf-ss-b1-s4-co-1",
+      "audio": "/lib/audio/tcf/co/inviter/difficile-b1__conversation-3.mp3",
+      "ss": true,
+      "tx": 0.75,
+      "ans": 0.5,
+      "score": 0.663,
+      "heard": "T'as lu sa muelle ? Ça lui a ingréd, tu as l'air de bonne humeur, tu as appris une bonne nouvelle ? Ah oui, je viens d'apprendre que mes par"
+    },
+    {
+      "id": "tcf-ss-b1-s4-co-3",
+      "audio": "/lib/audio/tcf/co/journee/difficile-b1__conversation-11.mp3",
+      "ss": true,
+      "tx": 0.868,
+      "ans": 0.667,
+      "score": 0.797,
+      "heard": "Papa, c'était génial ce stage des escalades. Racconte-moi, j'ai hâte de savoir ce que tu as fait pendant ces quatre jours. C'était hyper int"
+    },
+    {
+      "id": "tcf-ss-b1-s4-co-4",
+      "audio": "/lib/audio/tcf/co/journee/difficile-b1__conversation-15.mp3",
+      "ss": true,
+      "tx": 0.68,
+      "ans": 0.167,
+      "score": 0.5,
+      "heard": "Alors Isabelle, et ce week-end prolongé en oeuvre et en lien. Comment ça s'est passé ? Nous avons eu beau temps et nous en avons bien profit"
+    },
+    {
+      "id": "tcf-ss-b1-s5-co-1",
+      "audio": "/lib/audio/tcf/co/journee/difficile-b1__radio-13.mp3",
+      "ss": true,
+      "tx": 0.684,
+      "ans": 0.5,
+      "score": 0.62,
+      "heard": "De Greta Anita, il n'y a qu'un part. L'ombre de la militante suédoise Greta Thunberg, planne sur Ashtag Anita, un courmétrage, réalisé par F"
+    },
+    {
+      "id": "tcf-ss-b1-s5-co-2",
+      "audio": "/lib/audio/tcf/co/journee/difficile-b1__radio-16.mp3",
+      "ss": true,
+      "tx": 0.774,
+      "ans": 0.167,
+      "score": 0.562,
+      "heard": "Alors, aujourd'hui, dans l'émission Greene de jeunes, on va comparer de mode de vie complètement différent. Nous avons invité Edie, très en,"
+    },
+    {
+      "id": "tcf-ss-b1-s5-co-3",
+      "audio": "/lib/audio/tcf/co/journee/difficile-b1__radio-7.mp3",
+      "ss": true,
+      "tx": 0.75,
+      "ans": 0.833,
+      "score": 0.779,
+      "heard": "Le philosophe Emmanuel Jaffelain vient de publier l'éloge de la gentillesse aux éditions François Bourins. A livre d'actualité en s'est durn"
+    },
+    {
+      "id": "tcf-ss-b1-s6-co-2",
+      "audio": "/lib/audio/tcf/co/loisirs/difficile-b1__annonce-35.mp3",
+      "ss": true,
+      "tx": 0.889,
+      "ans": 0.5,
+      "score": 0.753,
+      "heard": "Elle a été en tête des ventes en 2019 et à quelques jours des victors de la musique où elle a été nomné dans trois catégories, à quelques jo"
+    },
+    {
+      "id": "tcf-ss-b1-s6-co-3",
+      "audio": "/lib/audio/tcf/co/loisirs/difficile-b1__radio-10.mp3",
+      "ss": true,
+      "tx": 0.929,
+      "ans": 0.167,
+      "score": 0.662,
+      "heard": "Nous recevons aujourd'hui dans notre studio Pierre la Verne, un des participants du mondial de la Pétank en juillet dernier à Marseille. Il "
+    },
+    {
+      "id": "tcf-ss-b1-s6-co-4",
+      "audio": "/lib/audio/tcf/co/loisirs/difficile-b1__radio-12.mp3",
+      "ss": true,
+      "tx": 0.674,
+      "ans": 0.167,
+      "score": 0.497,
+      "heard": "Primi-Besons-son possède fois un regard gentiment sarcastique sur le monde de la littérature en adaptant librement le livre-ponyme de David "
+    },
+    {
+      "id": "tcf-ss-b1-s7-co-1",
+      "audio": "/lib/audio/tcf/co/loisirs/difficile-b1__radio-17.mp3",
+      "ss": true,
+      "tx": 0.917,
+      "ans": 0.667,
+      "score": 0.829,
+      "heard": "C'est l'heure de parole d'adou. Un portrait artistique se matin avec Julia, 15 ans, elle se préparait une carrière de danseuse, elle suit po"
+    },
+    {
+      "id": "tcf-ss-b1-s7-co-3",
+      "audio": "/lib/audio/tcf/co/loisirs/difficile-b1__radio-30.mp3",
+      "ss": true,
+      "tx": 0.795,
+      "ans": 0.5,
+      "score": 0.692,
+      "heard": "Parmi ces réseaux sociaux, Instagram a une place à part. Il compte un milliard d'adept sur la planète, dont un bon nombre d'adolescent est p"
+    },
+    {
+      "id": "tcf-ss-b1-s8-co-1",
+      "audio": "/lib/audio/tcf/co/nature/difficile-b1__conversation-7.mp3",
+      "ss": true,
+      "tx": 0.884,
+      "ans": 0.5,
+      "score": 0.749,
+      "heard": "Ah ! Enfin, arrivés à Luxembourgville. J'ai hâte de commencer à visiter. Ah, Faustine, j'aimerais me reposer un peu avant. Je suis hyper fat"
+    },
+    {
+      "id": "tcf-ss-b1-s8-co-2",
+      "audio": "/lib/audio/tcf/co/nature/difficile-b1__radio-2.mp3",
+      "ss": true,
+      "tx": 0.78,
+      "ans": 0.333,
+      "score": 0.624,
+      "heard": "Gérard Mermer, sociologue et hauteur de Franco-Scopie depuis plus de 20 ans, décrit et décripe de les attitudes, les comportements, les opin"
+    },
+    {
+      "id": "tcf-ss-b1-s8-co-4",
+      "audio": "/lib/audio/tcf/co/nourriture/difficile-b1__annonce-32.mp3",
+      "ss": true,
+      "tx": 0.897,
+      "ans": 0.667,
+      "score": 0.817,
+      "heard": "Aujourd'hui, dans notre émission, c'est au vu, nous parlons de l'alimentation à l'école. Conviction religieuse, choix et type, ou encore all"
+    },
+    {
+      "id": "tcf-ss-b1-s9-co-1",
+      "audio": "/lib/audio/tcf/co/nourriture/difficile-b1__conversation-12.mp3",
+      "ss": true,
+      "tx": 0.872,
+      "ans": 0.333,
+      "score": 0.684,
+      "heard": "Exercice, douze. Salut, Antoine. Tu as l'air pensé fin. Salut, Margot. Oui, comme j'ai eu mon exam, mais par an, on dit que je pouvais organ"
+    },
+    {
+      "id": "tcf-ss-b1-s9-co-2",
+      "audio": "/lib/audio/tcf/co/nourriture/difficile-b1__conversation-6.mp3",
+      "ss": true,
+      "tx": 0.16,
+      "ans": 0.833,
+      "score": 0.396,
+      "heard": "Qu'est-ce qu'il se passe les liens, je stress pour le contrôle d'histoire mardi sur l'antiquité. Les jibes tentient, j'adore, tu vas voir ça"
+    },
+    {
+      "id": "tcf-ss-b1-s9-co-3",
+      "audio": "/lib/audio/tcf/co/nourriture/difficile-b1__radio-11.mp3",
+      "ss": true,
+      "tx": 0.795,
+      "ans": 0.167,
+      "score": 0.575,
+      "heard": "Moulon Silicon, boîte, film alimentaire, très présent dans les cuisines jusqu'à ces dernières années, les plastiques n'ont plus la côte. Il "
+    },
+    {
+      "id": "tcf-ss-b1-s9-co-4",
+      "audio": "/lib/audio/tcf/co/nourriture/difficile-b1__radio-20.mp3",
+      "ss": true,
+      "tx": 0.222,
+      "ans": 0.6,
+      "score": 0.354,
+      "heard": "On parle sans que t'es ce je dis trente et un mai, c'est comme chaque année la journée mondiale sans t'abah. A association médecin et hôpita"
+    },
+    {
+      "id": "tcf-ss-b1-s10-co-2",
+      "audio": "/lib/audio/tcf/co/nourriture/difficile-b1__radio-31.mp3",
+      "ss": true,
+      "tx": 0.795,
+      "ans": 0.0,
+      "score": 0.517,
+      "heard": "Le secret, c'est l'anticipation. Établir ses menus pour la semaine et consacre à préparer plusieurs plats et tu ne mettons particulièrement "
+    },
+    {
+      "id": "tcf-ss-b1-s10-co-3",
+      "audio": "/lib/audio/tcf/co/nourriture/difficile-b1__radio-6.mp3",
+      "ss": true,
+      "tx": 0.805,
+      "ans": 0.333,
+      "score": 0.64,
+      "heard": "Dans le futur, gréons, vert ou chenis pourrait devenir une précieuse source de protéines pour une humanité de plus en plus nombreuses. Toujo"
+    },
+    {
+      "id": "tcf-ss-b1-s11-co-2",
+      "audio": "/lib/audio/tcf/co/presenter/difficile-b1__annonce-30.mp3",
+      "ss": true,
+      "tx": 0.737,
+      "ans": 0.333,
+      "score": 0.596,
+      "heard": "Cette semaine, aussi n'est mal le studio de la ville de tour, une super-programmation. Le studio est ouvert tous les jours de 14 heures à mi"
+    },
+    {
+      "id": "tcf-ss-b1-s11-co-3",
+      "audio": "/lib/audio/tcf/co/presenter/difficile-b1__conversation-1.mp3",
+      "ss": true,
+      "tx": 0.864,
+      "ans": 0.333,
+      "score": 0.678,
+      "heard": "Bonjour, tu es nouveau ? Je ne t'ai jamais vu dans le lycée. Oui, salut, je m'appelle Anthony. C'est mon premier jour. J'ai déménagé en mili"
+    },
+    {
+      "id": "tcf-ss-b1-s12-co-1",
+      "audio": "/lib/audio/tcf/co/presenter/difficile-b1__conversation-18.mp3",
+      "ss": true,
+      "tx": 0.814,
+      "ans": 0.5,
+      "score": 0.704,
+      "heard": "J'ai ce qu'il te faut, tiens, voilà, je te l'ai changé bien volontiers. Sur tous, il y a le val de 100 ou 2 000 euros. Tu plaisantes ou quoi"
+    },
+    {
+      "id": "tcf-ss-b1-s12-co-2",
+      "audio": "/lib/audio/tcf/co/presenter/difficile-b1__radio-15.mp3",
+      "ss": true,
+      "tx": 0.889,
+      "ans": 0.0,
+      "score": 0.578,
+      "heard": "Nous avons aujourd'hui le plaisir et la chance d'avoir avec nous le chanteur Empocora pour une interview exclusive. Empocora, bonjour. Bonjo"
+    },
+    {
+      "id": "tcf-ss-b1-s13-co-1",
+      "audio": "/lib/audio/tcf/co/presenter/difficile-b1__radio-9.mp3",
+      "ss": true,
+      "tx": 0.63,
+      "ans": 0.667,
+      "score": 0.643,
+      "heard": "Au rayon alimentaire, les normes officiels en vigueur en France et en Europe permettent de se filer à des produits répondants à des critères"
+    },
+    {
+      "id": "tcf-ss-b1-s13-co-2",
+      "audio": "/lib/audio/tcf/co/transports/difficile-b1__conversation-10.mp3",
+      "ss": true,
+      "tx": 0.186,
+      "ans": 0.667,
+      "score": 0.354,
+      "heard": "Loïc, montre-moi ton bulletin de note. Tiens, ma main. Regardez. Et j'ai eu 16 en anglais. 7 points de plus que le trimestre dernier. C'est "
+    },
+    {
+      "id": "tcf-ss-b1-s13-co-4",
+      "audio": "/lib/audio/tcf/co/transports/difficile-b1__radio-14.mp3",
+      "ss": true,
+      "tx": 0.861,
+      "ans": 0.0,
+      "score": 0.56,
+      "heard": "Un geste désagréable, effectué dans l'intention de mêler l'insolence et le mépris, peu diplomatique en tout cas, et qui ne vous disposera pa"
+    },
+    {
+      "id": "tcf-ss-b1-s14-co-2",
+      "audio": "/lib/audio/tcf/co/transports/difficile-b1__radio-8.mp3",
+      "ss": true,
+      "tx": 0.78,
+      "ans": 0.5,
+      "score": 0.682,
+      "heard": "Et maintenant notre rubrique, idée pour le week-end. Alors Miriam, qu'est-ce que vous nous proposer ? Une visite dans un lieu de prestigie a"
+    },
+    {
+      "id": "tcf-ss-b1-s14-co-3",
+      "audio": "/lib/audio/tcf/co/travail/difficile-b1__radio-5.mp3",
+      "ss": true,
+      "tx": 0.837,
+      "ans": 0.167,
+      "score": 0.603,
+      "heard": "Énergie propre, traitement des déchets, aménagement du territoire, l'environnement est un secteur porteux qui attire et recrute. Mais face à"
+    },
+    {
+      "id": "tcf-ss-b1-s14-co-4",
+      "audio": "/lib/audio/tcf/co/vetements/difficile-b1__conversation-17.mp3",
+      "ss": true,
+      "tx": 0.808,
+      "ans": 0.167,
+      "score": 0.583,
+      "heard": "Je suis désolée, ce matin je ne peux pas, je suis en plein rangement de mes placards, je ne sais plus où mettre mes vêtements, j'en ai que j"
+    },
+    {
+      "id": "tcf-ss-b1-s15-co-1",
+      "audio": "/lib/audio/tcf/co/vetements/difficile-b1__conversation-2.mp3",
+      "ss": true,
+      "tx": 0.152,
+      "ans": 0.833,
+      "score": 0.391,
+      "heard": "L'Ora, j'ai une nouvelle attenancez, raconte aux phéliques et ce qu'il y a. Eh bien, je pars au Mexique avec ma famille. Ouah, la chance ! T"
+    }
+  ],
+  "warn": [
+    {
+      "id": "tcf-ss-a1-s1-co-4",
+      "audio": "/lib/audio/tcf/co/achats/facile-a1__annonce-22.mp3",
+      "ss": true,
+      "tx": 0.233,
+      "ans": 0.5,
+      "score": 0.327,
+      "heard": "Chère client, aujourd'hui, c'est la rentrée des classes. Pour fêter cet événement, les caillers et les crayons sont 50% moins chers. Et si v"
+    },
+    {
+      "id": "tcf-ss-a1-s4-co-2",
+      "audio": "/lib/audio/tcf/co/administration/facile-a1__radio-32.mp3",
+      "ss": true,
+      "tx": 0.367,
+      "ans": 0.25,
+      "score": 0.326,
+      "heard": "Aujourd'hui, dans le sud de la France, une vraie journée d'été, il fait chaud et beau. Dans le nord, sortez vos pares à pluie, il va plus vo"
+    },
+    {
+      "id": "tcf-ss-a1-s4-co-4",
+      "audio": "/lib/audio/tcf/co/ecole/facile-a1__011.mp3",
+      "ss": true,
+      "tx": 0.375,
+      "ans": 0.0,
+      "score": 0.244,
+      "heard": "bonjour à tous, je suis votre professeur, je m'appelle Nail Kervélek, Nail N-A-E-L c'est mon prénom, et Kervélek, K-E-E-R-V-E"
+    },
+    {
+      "id": "tcf-ss-a1-s6-co-4",
+      "audio": "/lib/audio/tcf/co/famille/facile-a1__conversation-46.mp3",
+      "ss": true,
+      "tx": 0.333,
+      "ans": 0.25,
+      "score": 0.304,
+      "heard": "Dialogue 1. Tu sais quel temps il va faire aujourd'hui? Attends, je regarde la météo sur mon téléphone. Oh, il va plus voir toute la journée"
+    },
+    {
+      "id": "tcf-ss-a1-s9-co-3",
+      "audio": "/lib/audio/tcf/co/inviter/facile-a1__message-7.mp3",
+      "ss": true,
+      "tx": 0.226,
+      "ans": 0.5,
+      "score": 0.322,
+      "heard": "Bonjour, c'est Ali. Je pars chez mes grands parents à la montagne, ce week-end. Tu veux venir ? Mais par en me déposant voiture à la gare, p"
+    },
+    {
+      "id": "tcf-ss-a1-s19-co-1",
+      "audio": "/lib/audio/tcf/co/nature/facile-a1__conversation-7.mp3",
+      "ss": true,
+      "tx": 0.417,
+      "ans": 0.0,
+      "score": 0.271,
+      "heard": "C'est une situation numéraux. Je m'amuse beaucoup. Ou aussi, j'adore dans ses ! C'est une situation numéraux 2. Qu'est-ce que tu fais ? Un g"
+    },
+    {
+      "id": "tcf-ss-a1-s44-co-3",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__conversation-41.mp3",
+      "ss": true,
+      "tx": 0.438,
+      "ans": 0.0,
+      "score": 0.284,
+      "heard": "Oui, bien sûr, pas de problème, montre-moi ton livre. Tiens, regarde, c'est cet exercice. Dialogue 2 Qu'elle est relais s'il te plaît ? Il e"
+    },
+    {
+      "id": "tcf-ss-a1-s45-co-1",
+      "audio": "/lib/audio/tcf/co/presenter/facile-a1__conversation-45.mp3",
+      "ss": true,
+      "tx": 0.3,
+      "ans": 0.25,
+      "score": 0.282,
+      "heard": "Dialogue 1 Qu'est-ce que tu fais ? Je prépare une salade de tomate pour ce soir. Tu veux de l'aide ? Oui, tu peux couper ces tomates, s'il t"
+    },
+    {
+      "id": "tcf-ss-a1-s49-co-3",
+      "audio": "/lib/audio/tcf/co/transports/facile-a1__annonce-10.mp3",
+      "ss": true,
+      "tx": 0.391,
+      "ans": 0.0,
+      "score": 0.254,
+      "heard": "B. Dans un lieu publique, activité d'isse. Mesdames, messieurs, le train à destination de tour va partir voir numéro cinq. Il s'arrête à boi"
+    },
+    {
+      "id": "tcf-ss-a1-s51-co-1",
+      "audio": "/lib/audio/tcf/co/transports/facile-a1__annonce-9.mp3",
+      "ss": true,
+      "tx": 0.036,
+      "ans": 0.75,
+      "score": 0.286,
+      "heard": "Activité 9. Les magasins supergi ouvrent exceptionnellement ce samedi et se dimanche de 9h à 19h sans interruption. Il y aura beaucoup de pr"
+    },
+    {
+      "id": "tcf-ss-a1-s54-co-4",
+      "audio": "/lib/audio/tcf/co/vetements/facile-a1__conversation-2.mp3",
+      "ss": true,
+      "tx": 0.241,
+      "ans": 0.5,
+      "score": 0.332,
+      "heard": "Bonjour, je voudrais un billet pour Paris. Vous voulez partir à quel heure ? Verre 14 heures si c'est possible. Situation numéro 2. Bonjour,"
+    },
+    {
+      "id": "tcf-ss-a2-s6-co-1",
+      "audio": "/lib/audio/tcf/co/administration/moyen-a2__167.mp3",
+      "ss": true,
+      "tx": 0.333,
+      "ans": 0.167,
+      "score": 0.275,
+      "heard": "Max, tu as trouvé un travail pour s'attêter. Non, je n'ai rien trouvé. Et toi, allez? Je suis allé au CIDG. Le centre d'information est de d"
+    },
+    {
+      "id": "tcf-ss-a2-s9-co-1",
+      "audio": "/lib/audio/tcf/co/famille/moyen-a2__069.mp3",
+      "ss": true,
+      "tx": 0.214,
+      "ans": 0.4,
+      "score": 0.279,
+      "heard": "Il y a un mot dans le caillé liaisant, n'oubliez pas de le montrer au par an. Vous devez lire régulièrement les demandes de rendez-vous, les"
+    },
+    {
+      "id": "tcf-ss-a2-s17-co-3",
+      "audio": "/lib/audio/tcf/co/logement/moyen-a2__046.mp3",
+      "ss": true,
+      "tx": 0.318,
+      "ans": 0.167,
+      "score": 0.265,
+      "heard": "Didier, nous serions précontents de vous recevoir à dinnée vendredi soire, à save. Est-ce vous disponible ? Merci beaucoup, avec plaisir. À "
+    },
+    {
+      "id": "tcf-ss-a2-s18-co-1",
+      "audio": "/lib/audio/tcf/co/logement/moyen-a2__143.mp3",
+      "ss": true,
+      "tx": 0.231,
+      "ans": 0.5,
+      "score": 0.325,
+      "heard": "Selon une enquête du mois de décembre, les Français sont heureux de l'endroit où il s'habite. 64 % trouve que le lieu de vie est le meilleur"
+    },
+    {
+      "id": "tcf-ss-a2-s18-co-2",
+      "audio": "/lib/audio/tcf/co/logement/moyen-a2__195.mp3",
+      "ss": true,
+      "tx": 0.364,
+      "ans": 0.167,
+      "score": 0.295,
+      "heard": "Billan 1, page 1506, vie quotidienne. C'est y est ma main. Nous venons de signer le bai pour le nouvel appartement. Il est lumineux, proche "
+    },
+    {
+      "id": "tcf-ss-a2-s18-co-4",
+      "audio": "/lib/audio/tcf/co/loisirs/moyen-a2__113.mp3",
+      "ss": true,
+      "tx": 0.4,
+      "ans": 0.167,
+      "score": 0.318,
+      "heard": "Alors Karine, tu passes de bonne vacances ? Oui, je suis ravie d'être au bord de la mer, ça dit temps. Il fait qu'elle tente ? Ça dépend des"
+    },
+    {
+      "id": "tcf-ss-a2-s20-co-4",
+      "audio": "/lib/audio/tcf/co/loisirs/moyen-a2__radio-21.mp3",
+      "ss": true,
+      "tx": 0.29,
+      "ans": 0.333,
+      "score": 0.305,
+      "heard": "Vous avez envie de partir en vacances quelques jours ? Allez, en Belgique ? Et oui, le petit royaume reçoit beaucoup de visiteurs toute l'an"
+    },
+    {
+      "id": "tcf-ss-a2-s22-co-3",
+      "audio": "/lib/audio/tcf/co/nourriture/moyen-a2__082.mp3",
+      "ss": true,
+      "tx": 0.342,
+      "ans": 0.333,
+      "score": 0.339,
+      "heard": "Nina, des copains sont chez moi depuis hier, et il repartent dans trois jours. Est-ce que tu aurais un restaurant me recommandé ? Bien sûr, "
+    },
+    {
+      "id": "tcf-ss-a2-s22-co-4",
+      "audio": "/lib/audio/tcf/co/nourriture/moyen-a2__085.mp3",
+      "ss": true,
+      "tx": 0.4,
+      "ans": 0.2,
+      "score": 0.33,
+      "heard": "Est-ce que tu aurais un restaurant à me recommandé ? Bien sûr, tu cherches quel type de cuisine. Des spécialités du sud-ouest se serait symp"
+    },
+    {
+      "id": "tcf-ss-a2-s24-co-1",
+      "audio": "/lib/audio/tcf/co/nourriture/moyen-a2__conversation-12.mp3",
+      "ss": true,
+      "tx": 0.364,
+      "ans": 0.167,
+      "score": 0.295,
+      "heard": "Vous êtes au restaurant scolaire de votre écoles. Vous entendez ces conversations. Cochet pour associer chaque dialogue à la situation corre"
+    },
+    {
+      "id": "tcf-ss-a2-s25-co-1",
+      "audio": "/lib/audio/tcf/co/nourriture/moyen-a2__radio-24.mp3",
+      "ss": true,
+      "tx": 0.312,
+      "ans": 0.25,
+      "score": 0.291,
+      "heard": "Bonjour et bienvenue sur Radio-Mesic. Nous recevons aujourd'hui le célèbre chantère Guillanae, Chris Lombrette. Bonjour, Chris. Bonjour. Chr"
+    },
+    {
+      "id": "tcf-ss-a2-s27-co-4",
+      "audio": "/lib/audio/tcf/co/objets/moyen-a2__094.mp3",
+      "ss": true,
+      "tx": 0.25,
+      "ans": 0.5,
+      "score": 0.338,
+      "heard": "Ce dimanche, votre vie l'organise une grande randonnée en roller, débutant, intermédiaire, confirmer vous pouvez tous participer. Pas besoin"
+    },
+    {
+      "id": "tcf-ss-a2-s28-co-4",
+      "audio": "/lib/audio/tcf/co/objets/moyen-a2__121.mp3",
+      "ss": true,
+      "tx": 0.375,
+      "ans": 0.2,
+      "score": 0.314,
+      "heard": "Une question d'une auditrice pour vous, Dr. Sophie Forkano. Mon bébé est en bonne santé, mais il pleure beaucoup le soir. Qu'est-ce que je p"
+    },
+    {
+      "id": "tcf-ss-a2-s30-co-2",
+      "audio": "/lib/audio/tcf/co/objets/moyen-a2__185.mp3",
+      "ss": true,
+      "tx": 0.286,
+      "ans": 0.167,
+      "score": 0.244,
+      "heard": "Madame Duran, vous avez travaillé comme vendeuse, par les mois de cette expérience. J'étais chargée d'accueillir et de conseiller les client"
+    },
+    {
+      "id": "tcf-ss-a2-s30-co-3",
+      "audio": "/lib/audio/tcf/co/objets/moyen-a2__192.mp3",
+      "ss": true,
+      "tx": 0.35,
+      "ans": 0.0,
+      "score": 0.227,
+      "heard": "J'ai un problème avec mon responsable. Il n'écoute jamais mes propositions et il me fait toujours travailler très tard. Laura, tu devrais en"
+    },
+    {
+      "id": "tcf-ss-a2-s33-co-1",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__053.mp3",
+      "ss": true,
+      "tx": 0.333,
+      "ans": 0.2,
+      "score": 0.287,
+      "heard": "Je ne connais personne ici. Qu'est-ce que je peux faire ? Inscrit-toi sur le site de la ville pour faire des rencontres amicales. Bonjour, N"
+    },
+    {
+      "id": "tcf-ss-a2-s33-co-3",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__061.mp3",
+      "ss": true,
+      "tx": 0.167,
+      "ans": 0.4,
+      "score": 0.248,
+      "heard": "Sophie et Max pende la crème ailleurs samedi. Il font quoi ? Un grand bufait dans leur jardin. Tu pourres réserver le restaurant pour fêter "
+    },
+    {
+      "id": "tcf-ss-a2-s33-co-4",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__062.mp3",
+      "ss": true,
+      "tx": 0.4,
+      "ans": 0.0,
+      "score": 0.26,
+      "heard": "Dis-moi Martin. Tu pourras réserver le restaurant pour fêter le diplôme de zoué ? Oui, bien sûr. Mais je ne sais pas combien de personnes vi"
+    },
+    {
+      "id": "tcf-ss-a2-s34-co-3",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__073.mp3",
+      "ss": true,
+      "tx": 0.333,
+      "ans": 0.333,
+      "score": 0.333,
+      "heard": "On écoute madame-duke qui va nous expliquer comment se passe les conseils de classe chaque trimestre. Il se déroule en quatre et tâpes. D'ab"
+    },
+    {
+      "id": "tcf-ss-a2-s35-co-1",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__077.mp3",
+      "ss": true,
+      "tx": 0.345,
+      "ans": 0.167,
+      "score": 0.282,
+      "heard": "On vient d'arriver dans la ville, et on voudrait se rendre utile dans une association. Très bien, on a toujours besoin de bénévoles. Nous av"
+    },
+    {
+      "id": "tcf-ss-a2-s36-co-1",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__087.mp3",
+      "ss": true,
+      "tx": 0.278,
+      "ans": 0.333,
+      "score": 0.297,
+      "heard": "portée. Je vais prendre le menu végétarien avec un supplément riz. Oui, à quel nom? Morvant. très bien. Vous pouvez venir chercher la comman"
+    },
+    {
+      "id": "tcf-ss-a2-s39-co-2",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__169.mp3",
+      "ss": true,
+      "tx": 0.4,
+      "ans": 0.0,
+      "score": 0.26,
+      "heard": "Moussa, tu as choisi quoi ? J'ai choisi l'alternance. Je vais deux jours à l'école et trois jours en entreprise chaque semaine. En plus, je "
+    },
+    {
+      "id": "tcf-ss-a2-s41-co-4",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__conversation-1.mp3",
+      "ss": true,
+      "tx": 0.222,
+      "ans": 0.4,
+      "score": 0.284,
+      "heard": "Associez-che dialogue à la situation qui correspond. Vous entendez ces conversations dans la cour de récréation. Dialogue 1 Tu as vu la pièc"
+    },
+    {
+      "id": "tcf-ss-a2-s45-co-2",
+      "audio": "/lib/audio/tcf/co/sante/moyen-a2__114.mp3",
+      "ss": true,
+      "tx": 0.25,
+      "ans": 0.2,
+      "score": 0.232,
+      "heard": "qu'est-ce qu'elle a ? Depuis hier, elle ne mange plus, elle vommie, elle a la diarée, 39 de fièvres, je suis désolé mais ça me fait peur, il"
+    },
+    {
+      "id": "tcf-ss-a2-s45-co-3",
+      "audio": "/lib/audio/tcf/co/sante/moyen-a2__118.mp3",
+      "ss": true,
+      "tx": 0.4,
+      "ans": 0.0,
+      "score": 0.26,
+      "heard": "Claire, sa te dérange, si je fume, non bien car, ici ce n'est pas possible, il faut que tu sortes. Bon, d'accord, tu sais que c'est mauvais "
+    },
+    {
+      "id": "tcf-ss-a2-s46-co-1",
+      "audio": "/lib/audio/tcf/co/sante/moyen-a2__120.mp3",
+      "ss": true,
+      "tx": 0.25,
+      "ans": 0.2,
+      "score": 0.232,
+      "heard": "Comment allez-vous, aujourd'hui, monsieur Abrie? Mais, mais je touche toujours. Je suis en remet, j'ai mal à la tête. J'ai vos résultats d'a"
+    },
+    {
+      "id": "tcf-ss-a2-s47-co-2",
+      "audio": "/lib/audio/tcf/co/transports/moyen-a2__095.mp3",
+      "ss": true,
+      "tx": 0.5,
+      "ans": 0.0,
+      "score": 0.325,
+      "heard": "Salut Thomas, ça te dit de voir un film en plein air, hier j'ai vu un tout chabel au jardin public et j'ai adoré. Demain, le film c'est Orno"
+    },
+    {
+      "id": "tcf-ss-a2-s52-co-4",
+      "audio": "/lib/audio/tcf/co/vetements/moyen-a2__131.mp3",
+      "ss": true,
+      "tx": 0.394,
+      "ans": 0.0,
+      "score": 0.256,
+      "heard": "Tu sais ce que je viens de lire, on peut manger beaucoup et m'égrir. Toi, était régime. Pourquoi tu dis ça ? Ça ne t'intéresse pas de rester"
+    },
+    {
+      "id": "tcf-ss-b1-s1-co-2",
+      "audio": "/lib/audio/tcf/co/achats/difficile-b1__conversation-5.mp3",
+      "ss": true,
+      "tx": 0.159,
+      "ans": 0.667,
+      "score": 0.337,
+      "heard": "Bonjour, et bon entrée. Je suis votre nouvelle professeur d'arplastique. Je m'appelle Lise Barbera, et c'est moi qui vous enseignurais tout "
+    },
+    {
+      "id": "tcf-ss-b1-s2-co-3",
+      "audio": "/lib/audio/tcf/co/ecole/difficile-b1__conversation-8.mp3",
+      "ss": true,
+      "tx": 0.333,
+      "ans": 0.2,
+      "score": 0.287,
+      "heard": "Alors, voici la dixion. Merci. Alors, voyons, ça fait pour nous 3, 40 euros en tout. Tiens, regardez-moi. Bon, on divise en 3, non? Ah non, "
+    },
+    {
+      "id": "tcf-ss-b1-s5-co-4",
+      "audio": "/lib/audio/tcf/co/loisirs/difficile-b1__annonce-33.mp3",
+      "ss": true,
+      "tx": 0.372,
+      "ans": 0.0,
+      "score": 0.242,
+      "heard": "Bienvenu, nous s'allons de l'avant dessiner de Montréal, nous sommes au same d'inventimé, voici le programme du jour. De 9 heures à l'intéri"
+    },
+    {
+      "id": "tcf-ss-b1-s6-co-1",
+      "audio": "/lib/audio/tcf/co/loisirs/difficile-b1__annonce-34.mp3",
+      "ss": true,
+      "tx": 0.314,
+      "ans": 0.167,
+      "score": 0.263,
+      "heard": "Je venais au parc Louping, l'aventure pour douce ou verre pendant l'été de 10 heures à 23 heures, tous les jours du lundi au dimanche. Décou"
+    },
+    {
+      "id": "tcf-ss-b1-s8-co-3",
+      "audio": "/lib/audio/tcf/co/nature/difficile-b1__radio-26.mp3",
+      "ss": true,
+      "tx": 0.161,
+      "ans": 0.667,
+      "score": 0.338,
+      "heard": "Mais que font les jeunes pendant les vacances d'été? C'est ce à quoi nous allons tenter de répondre aujourd'hui? Les vacances d'été arrivent"
+    },
+    {
+      "id": "tcf-ss-b1-s10-co-4",
+      "audio": "/lib/audio/tcf/co/objets/difficile-b1__conversation-13.mp3",
+      "ss": true,
+      "tx": 0.226,
+      "ans": 0.5,
+      "score": 0.322,
+      "heard": "Bienvenue, Louise. Tu as fait bon voyage alors ? Tu vas voir, il y a beaucoup de choses à voir dans ma ville et ma région. Erwan, j'ai très "
+    },
+    {
+      "id": "tcf-ss-b1-s11-co-4",
+      "audio": "/lib/audio/tcf/co/presenter/difficile-b1__conversation-14.mp3",
+      "ss": true,
+      "tx": 0.275,
+      "ans": 0.333,
+      "score": 0.295,
+      "heard": "Salut, papa. Bonjour, Léa. Alors, raconte-moi comment c'est passé cette première journée d'école. Bien, mes profs sont sympas. Par contre, j"
+    }
+  ],
+  "bad": [
+    {
+      "id": "tcf-a1-s1-co-4",
+      "audio": "/lib/audio/tcf/co/lieux-publics/a-la-bibliotheque.mp3",
+      "ss": false,
+      "tx": 0.174,
+      "ans": 0.0,
+      "score": 0.113,
+      "heard": "différentes. Il y a 15 secondes de pause après chaque dialogue. Notez sous chaque image le numéro du dialogue qui correspond. Puis vous alle"
+    },
+    {
+      "id": "tcf-a1-s2-co-4",
+      "audio": "/lib/audio/tcf/co/ecole/a-l-universite.mp3",
+      "ss": false,
+      "tx": 0.043,
+      "ans": 0.0,
+      "score": 0.028,
+      "heard": "différentes. Il y a 15 secondes de pause après chaque dialogue. Notez sous chaque image le numéro du dialogue qui correspond. Puis vous alle"
+    },
+    {
+      "id": "tcf-a1p-s4-co-4",
+      "audio": "/lib/audio/tcf/co/ecole/a-l-ecole-4.mp3",
+      "ss": false,
+      "tx": 0.083,
+      "ans": 0.0,
+      "score": 0.054,
+      "heard": "différentes. Il y a 15 secondes de pause après chaque dialogue, notez sous chaque image le numéro du dialogue qui correspond. Puis, vous all"
+    },
+    {
+      "id": "tcf-a1-tpa-co-4",
+      "audio": "/lib/audio/tcf/co/ecole/les-etudes-2.mp3",
+      "ss": false,
+      "tx": 0.043,
+      "ans": 0.0,
+      "score": 0.028,
+      "heard": "différentes. Il y a 15 secondes de pause après chaque dialogue. Notez sous chaque image le numéro du dialogue qui correspond. Puis vous alle"
+    },
+    {
+      "id": "tcf-a1-tpb-co-4",
+      "audio": "/lib/audio/tcf/co/ecole/les-etudes-3.mp3",
+      "ss": false,
+      "tx": 0.087,
+      "ans": 0.0,
+      "score": 0.057,
+      "heard": "différentes. Il y a 15 secondes de pause après chaque dialogue. Notez sous chaque image le numéro du dialogue qui correspond. Puis vous alle"
+    },
+    {
+      "id": "tcf-a1-sem1-co-1",
+      "audio": "/lib/audio/tcf/co/radio/les-annonces.mp3",
+      "ss": false,
+      "tx": 0.182,
+      "ans": 0.0,
+      "score": 0.118,
+      "heard": "et écoutez et écrivez le numéro du message sous l'image qui correspond. Vous avez 30 secondes pour regarder."
+    },
+    {
+      "id": "tcf-a2-s1-co-3",
+      "audio": "/lib/audio/tcf/co/travail/au-bureau-2.mp3",
+      "ss": false,
+      "tx": 0.0,
+      "ans": 0.0,
+      "score": 0.0,
+      "heard": "Exercice 3. Vous écoutez ce message sur un répondeur téléphonique. Lisez les questions. Ecoutez le document, puis répondez."
+    },
+    {
+      "id": "tcf-a2-s1-co-4",
+      "audio": "/lib/audio/tcf/co/vie-quotidienne/les-dialogues-du-quotidien.mp3",
+      "ss": false,
+      "tx": 0.091,
+      "ans": 0.0,
+      "score": 0.059,
+      "heard": "à la situation correspondante. Attention. Il y a 6 situations mais seulement 4 dialoguees. Lisez les situations. Écoutez les dialoguees, pui"
+    },
+    {
+      "id": "tcf-a2-sa-co-4",
+      "audio": "/lib/audio/tcf/co/vie-quotidienne/les-nouvelles.mp3",
+      "ss": false,
+      "tx": 0.167,
+      "ans": 0.0,
+      "score": 0.108,
+      "heard": "Dialogue à la situation correspondante, attention. Il y a 6 situations mais seulement 4 Dialogues. Lisez les situations, écoutez les dialogu"
+    },
+    {
+      "id": "tcf-a2-sb-co-4",
+      "audio": "/lib/audio/tcf/co/magasins/les-achats.mp3",
+      "ss": false,
+      "tx": 0.083,
+      "ans": 0.0,
+      "score": 0.054,
+      "heard": "Dialogue à la situation correspondante, attention. Il y a 6 situations, mais seulement 4 Dialogues. Lisez les situations, écoutez les Dialog"
+    },
+    {
+      "id": "tcf-a2-sc-co-4",
+      "audio": "/lib/audio/tcf/co/vie-quotidienne/la-famille-2.mp3",
+      "ss": false,
+      "tx": 0.091,
+      "ans": 0.0,
+      "score": 0.059,
+      "heard": "à la situation correspondante. Attention, il y a 6 situations, mais seulement 4 dialogues. Lisez les situations et coûter les dialogues, pui"
+    }
+  ],
+  "fixed": [],
+  "removed": [
+    {
+      "id": "tcf-ss-a1-s1-co-3",
+      "audio": "/lib/audio/tcf/co/achats/facile-a1__annonce-21.mp3",
+      "ss": true,
+      "tx": 0.286,
+      "ans": 0.0,
+      "score": 0.186,
+      "heard": "Partie 2, comprendre des annonces, un dans des lieux publics. Exercice 21."
+    },
+    {
+      "id": "tcf-ss-a1-s8-co-2",
+      "audio": "/lib/audio/tcf/co/inviter/facile-a1__message-1.mp3",
+      "ss": true,
+      "tx": 0.061,
+      "ans": 0.0,
+      "score": 0.039,
+      "heard": "hein, sur les loisirs. Exercice. Salut, c'est Ben. Tu veux venir voir un match de football mercredi au stade. Mon frère nous accompagne. C'e"
+    },
+    {
+      "id": "tcf-ss-a1-s51-co-4",
+      "audio": "/lib/audio/tcf/co/travail/facile-a1__155.mp3",
+      "ss": true,
+      "tx": 0.0,
+      "ans": 0.0,
+      "score": 0.0,
+      "heard": "C'est de quoi vous êtes un très petit peu驚ous, vous ne entendez pas ce problème. C'est-à-dire que la"
+    },
+    {
+      "id": "tcf-ss-a2-s6-co-3",
+      "audio": "/lib/audio/tcf/co/ecole/moyen-a2__128.mp3",
+      "ss": true,
+      "tx": 0.222,
+      "ans": 0.2,
+      "score": 0.214,
+      "heard": "Alors Julie, tu penses quoi du nouvel entraîneur ? Il était bien son cournant ? C'était sportif oui. Je vais avoir des courbatures à Mendes."
+    },
+    {
+      "id": "tcf-ss-a2-s6-co-4",
+      "audio": "/lib/audio/tcf/co/ecole/moyen-a2__130.mp3",
+      "ss": true,
+      "tx": 0.292,
+      "ans": 0.0,
+      "score": 0.19,
+      "heard": "Vous avez des cours de yoga ? Bien sûr, des cours collectifs, particuliers, calc type de cours vous intéresse. Je ne sais pas. Vous n'avez e"
+    },
+    {
+      "id": "tcf-ss-a2-s7-co-4",
+      "audio": "/lib/audio/tcf/co/ecole/moyen-a2__conversation-8.mp3",
+      "ss": true,
+      "tx": 0.143,
+      "ans": 0.0,
+      "score": 0.093,
+      "heard": "Vous entendez ces conversations en classe. Cochez pour associer chaque dialogue à la situation correspondante. Attention, il y a 6 situation"
+    },
+    {
+      "id": "tcf-ss-a2-s10-co-2",
+      "audio": "/lib/audio/tcf/co/inviter/moyen-a2__057.mp3",
+      "ss": true,
+      "tx": 0.289,
+      "ans": 0.0,
+      "score": 0.188,
+      "heard": "Ça va t'es haut ? Non, j'en ai assez de rester chez moi le weekend à regarder des matchs à la télé. Je voudrais trouver des copains pour sor"
+    },
+    {
+      "id": "tcf-ss-a2-s19-co-2",
+      "audio": "/lib/audio/tcf/co/loisirs/moyen-a2__176.mp3",
+      "ss": true,
+      "tx": 0.333,
+      "ans": 0.0,
+      "score": 0.217,
+      "heard": "Tu crois ? Oui ! Tu es accueillant, passion et organisé ? Avec Noël qui arrive, il y a beaucoup d'offres. C'est une très bonne idée."
+    },
+    {
+      "id": "tcf-ss-a2-s27-co-3",
+      "audio": "/lib/audio/tcf/co/objets/moyen-a2__093.mp3",
+      "ss": true,
+      "tx": 0.333,
+      "ans": 0.0,
+      "score": 0.217,
+      "heard": "Je vidéo. Ah non, je te soucietais, je déteste les jeux vidéo. Et vous allez jouer à quoi ? Au carte. Et tu connais les règles ? S'addit de "
+    },
+    {
+      "id": "tcf-ss-a2-s28-co-1",
+      "audio": "/lib/audio/tcf/co/objets/moyen-a2__097.mp3",
+      "ss": true,
+      "tx": 0.286,
+      "ans": 0.0,
+      "score": 0.186,
+      "heard": "Antoine, tu as entendu parler du concours de photo de la ville ? Oui, tu peux gagner un appareil photo ou non ? Exactement, il faut envoyer "
+    },
+    {
+      "id": "tcf-ss-a2-s31-co-2",
+      "audio": "/lib/audio/tcf/co/objets/moyen-a2__radio-22.mp3",
+      "ss": true,
+      "tx": 0.071,
+      "ans": 0.0,
+      "score": 0.046,
+      "heard": "Radio France, il est huit heures. La grève des transports continuent dans toute la France, au niveau national, un train sur 5 circula. Pour "
+    },
+    {
+      "id": "tcf-ss-a2-s37-co-1",
+      "audio": "/lib/audio/tcf/co/presenter/moyen-a2__127.mp3",
+      "ss": true,
+      "tx": 0.333,
+      "ans": 0.0,
+      "score": 0.217,
+      "heard": "Bonjour l'Éticia Beaumont. Bonjour. L'équipe de France féminine de football a fait un match formidable hier appareil. On peut dire que c'éta"
+    },
+    {
+      "id": "tcf-ss-a2-s52-co-1",
+      "audio": "/lib/audio/tcf/co/travail/moyen-a2__191.mp3",
+      "ss": true,
+      "tx": 0.25,
+      "ans": 0.0,
+      "score": 0.163,
+      "heard": "Sonia, j'ai besoin d'aide."
+    },
+    {
+      "id": "tcf-ss-a2-s52-co-2",
+      "audio": "/lib/audio/tcf/co/travail/moyen-a2__193.mp3",
+      "ss": true,
+      "tx": 0.286,
+      "ans": 0.0,
+      "score": 0.186,
+      "heard": "Salut, Adrien. Aujourd'hui, on va travailler ensemble. Je propose qu'on se partage de travail. Bon idée, Patrick. Je peux rédiger le contran"
+    },
+    {
+      "id": "tcf-ss-b1-s4-co-2",
+      "audio": "/lib/audio/tcf/co/inviter/difficile-b1__radio-18.mp3",
+      "ss": true,
+      "tx": 0.333,
+      "ans": 0.0,
+      "score": 0.217,
+      "heard": "Ce soir, sur notre antenne, nous allons parler du look. Nous avons comme invité de jeunes gens, et le dit 16 ans, vivant à tour, et guillote"
+    },
+    {
+      "id": "tcf-ss-b1-s7-co-4",
+      "audio": "/lib/audio/tcf/co/nature/difficile-b1__conversation-4.mp3",
+      "ss": true,
+      "tx": 0.3,
+      "ans": 0.0,
+      "score": 0.195,
+      "heard": "Salut, comment tu t'appelles ? Je suis Noemi et toi ? Je m'appelle Téo. Tu as une nouvelle ici ? Je ne t'ai jamais vu avant. Oui, l'endernie"
+    },
+    {
+      "id": "tcf-ss-b1-s13-co-3",
+      "audio": "/lib/audio/tcf/co/transports/difficile-b1__conversation-9.mp3",
+      "ss": true,
+      "tx": 0.286,
+      "ans": 0.0,
+      "score": 0.186,
+      "heard": "Ah, ça lutte homme ! Quelle surprise d'être retrouvée là ? Tu es venu voir le concert de mystère Gé ? Salut, Sophie. Je ne pensais pas que t"
+    }
+  ],
+  "missing_audio": [
+    {
+      "id": "tcf-ss-a1-s3-co-3",
+      "audio": "/lib/audio/tcf/co/administration/facile-a1__025.mp3",
+      "reason": "stt_failed"
+    }
+  ],
+  "model": "tiny",
+  "post_check": {
+    "test_series_bad_rechecked_ok": 11,
+    "note": "Les co-4 association_images étaient faux négatifs (intro d’épreuve). Après strip Dialogue 1, tx≈0.8+.",
+    "ss_remaining": {
+      "a0-a1": 198,
+      "a1-a2": 166,
+      "a2-b1": 44
+    },
+    "removed_total": 78
+  }
+}
